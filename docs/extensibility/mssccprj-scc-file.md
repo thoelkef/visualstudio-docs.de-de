@@ -1,26 +1,24 @@
 ---
 title: MSSCCPRJ. SCC-Datei | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC-Datei
 Wenn Visual Studio-Projektmappen oder Projekten unter quellcodeverwaltung mithilfe der IDE platziert wird, empfängt die IDE zwei sind wichtige Informationen aus dem Quellsteuerelement-Plug-in Form von Zeichenfolgen. Diese Zeichenfolgen, die "AuxPath" und "Projektname", sind für die IDE nicht transparent, aber sie werden vom plug-in verwendet, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen. Die IDE in der Regel ruft diese Zeichenfolgen erstmalig durch Aufrufen der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), und es dann speichert sie in der Projektmappe bzw. im Projekt-Datei für zukünftige Aufrufe der [SccOpenProject](../extensibility/sccopenproject-function.md). Wenn in den Dateien Projektmappen- und Projektdateien eingebettet wird, werden die Zeichenfolgen "AuxPath" und "Projektname" nicht automatisch aktualisiert, wenn ein Benutzer, Zweige verzweigt, oder Projektmappen- und Projektdateien Dateien kopiert, die in der Versionskontrolle sind. Um sicherzustellen, dass die Projektmappen- und Projektdateien Dateien am richtigen Speicherort in der Versionskontrolle verweisen, müssen Benutzer die Zeichenfolgen manuell aktualisieren. Da die Zeichenfolgen nicht transparent sein sollen, ist es nicht immer klar werden wie sie aktualisiert werden sollen.  
@@ -46,23 +44,23 @@ Wenn Visual Studio-Projektmappen oder Projekten unter quellcodeverwaltung mithil
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Eine Abbildung der MSSCCPRJ. SCC-Dateiformat  
  Es folgt ein Beispiel für die MSSCCPRJ. SCC-Dateiformat (die Zeilennummern werden nur dienen zur Orientierung und sollte nicht in der Datei Text enthalten sein):  
   
- [Zeile 1]`SCC = This is a Source Code Control file`  
+ [Zeile 1] `SCC = This is a Source Code Control file`  
   
  [Zeile 2]  
   
- [Zeile 3]`[TestApp.sln]`  
+ [Zeile 3] `[TestApp.sln]`  
   
- [Zeile 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Zeile 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Zeile 5]`SCC_Project_Name = "$/TestApp"`  
+ [Zeile 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Zeile 6]  
   
- [Zeile 7]`[TestApp.csproj]`  
+ [Zeile 7] `[TestApp.csproj]`  
   
- [Zeile 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Zeile 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Zeile 9]`SCC_Project_Name = "$/TestApp"`  
+ [Zeile 9] `SCC_Project_Name = "$/TestApp"`  
   
  Die erste Zeile gibt den Zweck der Datei und dient als die Signatur für alle Dateien dieses Typs. Diese Zeile sollte genau wie folgt in alle MSSCCPRJ angezeigt werden. SCC-Dateien:  
   

@@ -2,26 +2,22 @@
 title: Die Legacy-API Text Marker mit | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Text Marker mit der Legacy-API
 Ein Marker Text ist, einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige Unterstreichung und nur-Lese Regionen. Text-Marker sind im Grunde Syntaxfarben unterscheiden. Syntaxfarben ist eine schnelle Möglichkeit, die Sprachsyntax kommunizieren, die dem Textbereich zugeordnet ist. Syntaxfarben wird in der Regel angefordert, wenn Windows den Bildschirm aktualisiert, wenn die Geschwindigkeit wichtig ist. Syntaxfarben ändert nur die Farbe des Texts. Text-Marker können viele andere Texteigenschaften ändern. Text-Marker "float" und besonderes Verhalten angewendet werden können und Farbgebung.  
@@ -42,7 +38,7 @@ Ein Marker Text ist, einen unverankerten Textbereich in einem Puffer, der die An
 |[In der Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen des Editors Core und bietet ausführliche Informationen zum Anpassen des Core-Editors.|  
 |[Editor-Funktionen](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen, die verfügbar sind, in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor.|  
   
-## <a name="reference"></a>Verweis  
+## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
  Bietet einen einheitlichen Mechanismus zum Abrufen von Informationen über einen Markertyp bestimmtem Text, ob vom Editor vordefiniert oder durch ein VSPackage registriert.  
   

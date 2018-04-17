@@ -1,27 +1,23 @@
 ---
 title: XML-Befehlstabelle entwerfen (. VSCT)-Dateien | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcb8533dda001d447fd10fcb69b3cccd6d2d91a1
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML-Befehlstabelle entwerfen (. VSCT)-Dateien
 Eine XML-Tabelle (VSCT) Befehlsdatei beschreibt das Layout und die Darstellung der Elemente der Befehl für ein VSPackage. Befehl Elementen zählen Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Elementgruppen Befehl. Dieses Thema beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl und Menüs auswirken und zu deren Erstellung.
@@ -123,7 +119,7 @@ Eine XML-Tabelle (VSCT) Befehlsdatei beschreibt das Layout und die Darstellung d
 
  Während der Entwicklung ist es möglich, dass mehrere VSPackage-Projekte erstellt und in der experimentellen Registrierungsstruktur, die zu verwirrend übersichtliche in der IDE führen kann registriert werden. Um dieses Problem zu beheben, können Sie die experimentelle Struktur zurücksetzen, um die Standardeinstellungen, entfernen Sie alle registrierten VSPackages und alle Änderungen, die sie der IDE möglicherweise vorgenommen hat. Verwenden Sie die experimentelle Struktur zum Zurücksetzen der CreateExpInstance.exe-Tool, das in Visual Studio SDK enthalten ist. Sie finden ihn unter
 
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
+ **% PROGRAMFILES (x 86) %\Visual Studio \<Version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
 
  Führen Sie das Tool mithilfe der Befehlszeile **CreateExpInstance/Reset**. Denken Sie daran, dass dieses Tool aus der experimentellen Struktur allen registrierten VSPackages, die normalerweise nicht mit installierten entfernt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

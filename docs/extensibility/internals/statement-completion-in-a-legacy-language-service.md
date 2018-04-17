@@ -1,26 +1,24 @@
 ---
-title: "Anweisungsvervollständigung im ein Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: 
+title: Anweisungsvervollständigung im ein Legacy-Sprachdienst | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d76face8f43bcb428a9c3b997083f8299d332cc8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung im ein Legacy-Sprachdienst
 Anweisungsvervollständigung ist der Prozess, durch den der Sprachdienst hilft Benutzern, die abgeschlossen wird, ein Schlüsselwort oder ein Element, die sie die Eingabe im Editor Core gestartet wurden. In diesem Thema wird erläutert, wie Anweisungsvervollständigung funktioniert und wie es in Ihrem Sprachdienst implementiert.  

@@ -1,26 +1,24 @@
 ---
 title: Implementierung von "lokal"-Beispiel | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 56ac92989abe929884ac029e3b9c9c7dafad5fd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-locals"></a>Beispielimplementierung von "lokal"
 > [!IMPORTANT]
@@ -30,17 +28,17 @@ ms.lasthandoff: 12/22/2017
   
 1.  Visual Studio ruft das Debuggen Modul (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) zum Abrufen einer [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das alle Eigenschaften des Stapelrahmens, einschließlich der "lokal" darstellt.  
   
-2.  `IDebugStackFrame2::GetDebugProperty`Aufrufe [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) , ein Objekt abzurufen, die die Methode beschreibt, anhand derer der Haltepunkt aufgetreten ist. Die DE bereitstellt, einen Symbol-Anbieter ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), eine Adresse ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)), und ein Binder ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2.  `IDebugStackFrame2::GetDebugProperty` Aufrufe [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) , ein Objekt abzurufen, die die Methode beschreibt, anhand derer der Haltepunkt aufgetreten ist. Die DE bereitstellt, einen Symbol-Anbieter ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), eine Adresse ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)), und ein Binder ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty`Aufrufe [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) mit dem angegebenen `IDebugAddress` abzurufenden Objekts ein [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) , das mit der angegebenen Adresse Methode darstellt.  
+3.  `IDebugExpressionEvaluator::GetMethodProperty` Aufrufe [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) mit dem angegebenen `IDebugAddress` abzurufenden Objekts ein [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) , das mit der angegebenen Adresse Methode darstellt.  
   
 4.  Die `IDebugContainerField` Schnittstelle wird abgefragt, für die [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) Schnittstelle. Diese Schnittstelle, die Zugriff auf die Methode "lokal" möglich ist.  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty`instanziiert eine Klasse (aufgerufen `CFieldProperty` im Beispiel), implementiert die `IDebugProperty2` Schnittstelle, um die Methode "lokal" darzustellen. Die `IDebugMethodField` Objekt befindet sich in diesem `CFieldProperty` -Objekts zusammen mit den `IDebugSymbolProvider`, `IDebugAddress` und `IDebugBinder` Objekte.  
+5.  `IDebugExpressionEvaluator::GetMethodProperty` instanziiert eine Klasse (aufgerufen `CFieldProperty` im Beispiel), implementiert die `IDebugProperty2` Schnittstelle, um die Methode "lokal" darzustellen. Die `IDebugMethodField` Objekt befindet sich in diesem `CFieldProperty` -Objekts zusammen mit den `IDebugSymbolProvider`, `IDebugAddress` und `IDebugBinder` Objekte.  
   
 6.  Wenn die `CFieldProperty` -Objekt initialisiert wird, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) für aufgerufen wird die `IDebugMethodField` Objekt abrufen eine [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur, die alle darstellbaren Informationen über die Methode selbst enthält .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty`Gibt die `CFieldProperty` -Objekt als ein `IDebugProperty2` Objekt.  
+7.  `IDebugExpressionEvaluator::GetMethodProperty` Gibt die `CFieldProperty` -Objekt als ein `IDebugProperty2` Objekt.  
   
 8.  Visual Studio-Aufrufe [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) für das zurückgegebene `IDebugProperty2` Objekt mit dem Filter `guidFilterLocalsPlusArgs`. Dies gibt eine [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) Objekt, das die Methode "lokal" enthält. Diese Enumeration wird durch Aufrufe von ausgefüllt [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) und [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   

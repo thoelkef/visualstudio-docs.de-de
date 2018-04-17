@@ -1,27 +1,23 @@
 ---
-title: "Übersicht über Eigenschaftenfenster | Microsoft Docs"
-ms.custom: 
+title: Übersicht über Eigenschaftenfenster | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 Die **Eigenschaften** Fenster dient zum Anzeigen von Eigenschaften für Objekte, die ausgewählt werden, in der zwei Haupttypen von Windows zur Verfügung, in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Diese beiden Typen von Windows werden zu können:  
@@ -44,7 +40,7 @@ Die **Eigenschaften** Fenster dient zum Anzeigen von Eigenschaften für Objekte,
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Enthält eine Liste der Kategorien auf die **Eigenschaften** Fenster und ordnet jede Eigenschaft eine Kategorie.|  
 |[IDispatch-Schnittstelle](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Macht Methoden und Eigenschaften für die Programmierung von Tools und andere Anwendungen, die Unterstützung der Automatisierung des Objekts.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Schaltflächen mit den Auslassungszeichen (...) bietet *Generatoren* , mit denen modalen Dialogfeldern, die durch das Objekt selbst implementiert geöffnet. Verwendet, wenn ein Wert vom Benutzer in einem Textfeld einfach nicht typisiert ist. Beispielsweise kann verwendet werden, um ein Farbauswahl zu öffnen, die den RGB-Wert für Sie bestimmt.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Bietet Zugriff auf Objekte, die zum Aktualisieren der angezeigten Informationen auf der **Eigenschaften** Fenster. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>wird von VSPackages für jedes Fenster implementiert, auswählbare Objekte mit verwandten Eigenschaften angezeigt werden, enthält.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Bietet Zugriff auf Objekte, die zum Aktualisieren der angezeigten Informationen auf der **Eigenschaften** Fenster. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für jedes Fenster implementiert, auswählbare Objekte mit verwandten Eigenschaften angezeigt werden, enthält.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Bietet Informationen über den Typ eines Objekts, z. B. Methoden einer Schnittstelle und die Felder einer Struktur an.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Ermöglicht VSPackages Auswahl Ereignisse benachrichtigt werden soll und zum Abrufen von Informationen zu den aktuellen Projekthierarchie, Element Elementwert und Benutzeroberflächenkontext Befehl.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Stellt die Umgebung mit Zugriff auf mehrere Auswahlmöglichkeiten bereit.|  

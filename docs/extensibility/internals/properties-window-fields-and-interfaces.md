@@ -1,27 +1,23 @@
 ---
-title: "Felder für die Anwendungseigenschaften Fenster und Schnittstellen | Microsoft Docs"
-ms.custom: 
+title: Felder für die Anwendungseigenschaften Fenster und Schnittstellen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder für die Anwendungseigenschaften Fenster und Schnittstellen
 Das Modell für die Auswahl, um zu bestimmen, welche Informationen angezeigt werden, in der **Eigenschaften** Fenster basiert darauf, dass das Fenster, in der IDE den Fokus besitzt. Jedes Fenster und das Objekt in das ausgewählte Fenster kann ihre Auswahl Context-Objekt an den Kontext der globalen Auswahl abgelegt haben. Die Umgebung aktualisiert den globalen Auswahlkontext mit Werten aus einem Fensterrahmen, wenn das Fenster den Fokus besitzt. Wenn der Fokus geändert wird, gilt dies auch die Auswahlkontext.  
@@ -49,7 +45,7 @@ Das Modell für die Auswahl, um zu bestimmen, welche Informationen angezeigt wer
   
  Schließlich den unteren Rand der **Eigenschaften** Fenster enthält auch eine Beschreibung des Felds im ausgewählten der **Eigenschaften** Fenster Raster. Weitere Informationen finden Sie unter [Abrufen von Feldbeschreibungen im Eigenschaftenfenster](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster
+## <a name="updating-property-values-in-the-properties-window"></a> Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster
 Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderungen von Eigenschaftswerten zu synchronisieren. Der erste Schritt besteht im Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> -Schnittstelle, die Zugriff auf grundlegende fensterverwaltungsfunktionalität bietet, einschließlich Zugriff auf und Erstellung von Tool- und Dokumentfenster Windows, die von der Umgebung bereitgestellt. In den folgenden Schritten ist dieser Synchronisierungsprozess beschrieben.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Aktualisieren von Eigenschaftswerten über IVsUIShell  
@@ -67,7 +63,7 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Aspekte zur Implementierung der IConnection-Schnittstelle  
   
-1.  `IConnection`ermöglicht den Zugriff auf ein enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Schnittstelle. Es bietet außerdem Zugriff auf alle die verbindungspunktunterobjekte, aller implementiert die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle.  
+1.  `IConnection` ermöglicht den Zugriff auf ein enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Schnittstelle. Es bietet außerdem Zugriff auf alle die verbindungspunktunterobjekte, aller implementiert die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle.  
   
 2.  Ein Objekt zum Durchsuchen ist verantwortlich für die Implementierung einer <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> Ereignis. Im **Eigenschaften** -Fenster erfolgt eine Empfehlung für das Ereignis, das über `IConnection`festgelegt ist.  
   
@@ -75,9 +71,9 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
   
 4.  Ein Client aufrufen kann die `IConnection` Schnittstelle zum Abrufen der Zugriff auf ein enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Schnittstelle. Die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Schnittstelle kann dann aufgerufen werden, um Verbindungspunkte für jede Ausgangsschnittstellen-ID (IID) aufgelistet werden.  
   
-5.  `IConnection`kann auch aufgerufen werden, um Zugriff auf verbindungspunktunterobjekte mit erhalten die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle für jede ausgehende IID. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle, ein Client startet oder beendet eine empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch Aufrufen der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle, um ein Enumeratorobjekt mit erhalten die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> Schnittstelle, um die Verbindungen aufgelistet, die es bekannt.  
+5.  `IConnection` kann auch aufgerufen werden, um Zugriff auf verbindungspunktunterobjekte mit erhalten die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle für jede ausgehende IID. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle, ein Client startet oder beendet eine empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch Aufrufen der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle, um ein Enumeratorobjekt mit erhalten die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> Schnittstelle, um die Verbindungen aufgelistet, die es bekannt.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Abrufen von Feldbeschreibungen im Eigenschaftenfenster
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Abrufen von Feldbeschreibungen im Eigenschaftenfenster
 Am unteren Rand des Fensters **Eigenschaften** werden in einem Beschreibungsbereich Informationen angezeigt, die zu dem ausgewählten Eigenschaftenfeld gehören. Diese Funktion ist standardmäßig aktiviert. Wenn Sie das Beschreibungsfeld ausblenden möchten, klicken Sie mit der rechten Maustaste in das Fenster **Eigenschaften** , und klicken Sie auf **Beschreibung**. Dies bewirkt auch, dass das Häkchen neben dem Titel **Beschreibung** im Menüfenster entfernt wird. Sie können das Feld wieder anzeigen, indem die gleichen Schritte ausführen, um **Beschreibung** erneut zu aktivieren.  
   
  Die Informationen im Beschreibungsfeld stammen aus <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Jede Methode, Schnittstelle, Co-Klasse usw. kann ein nicht lokalisiertes `helpstring` Attribut in der Typbibliothek haben. Die **Eigenschaften** Fenster Ruft die Zeichenfolge aus <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

@@ -1,12 +1,10 @@
 ---
 title: Erweitern von SharePoint-Projekten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>Erweitern von SharePoint-Projekten
   Erstellen Sie eine projekterweiterung, wenn Sie auf Projektebene Funktionen von SharePoint-Projekten anpassen möchten. Beispielsweise können Sie benutzerdefinierte Eigenschaften hinzufügen oder reagieren auf Projektebene-Ereignisse, die ausgelöst werden, wenn der Benutzer eine SharePoint-Lösung in Visual Studio entwickelt.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
  Eine exemplarische Vorgehensweise, die veranschaulicht, wie erstellen, bereitstellen und Testen einer projekterweiterung, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Grundlegendes zur Beziehung zwischen Project Extensions und Instanzen von Project  
- Bei der Erstellung einer-projekterweiterung die Erweiterung laden, wenn jede Art von SharePoint-Projekt, in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]enthält mehrere SharePoint-Projektvorlagen, z. B. Listendefinitionen, Inhaltstypen und Ereignisempfänger. Es ist jedoch nur eine Art von SharePoint-Projekt. Die Projekttypen, die in der **neues Projekt** im Dialogfeld werden nur die Vorlagen, die eine oder mehrere SharePoint-Projektelemente zusammenfassen. Da nur ein Typ von SharePoint-Projekt vorhanden ist, gelten Erweiterungen, die für ein Projekt erstellt für alle SharePoint-Projekte. Erstellen nicht möglich ist, z. B. eine Erweiterung, die nur gilt eine **Inhaltstyp** Projekt.  
+ Bei der Erstellung einer-projekterweiterung die Erweiterung laden, wenn jede Art von SharePoint-Projekt, in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält mehrere SharePoint-Projektvorlagen, z. B. Listendefinitionen, Inhaltstypen und Ereignisempfänger. Es ist jedoch nur eine Art von SharePoint-Projekt. Die Projekttypen, die in der **neues Projekt** im Dialogfeld werden nur die Vorlagen, die eine oder mehrere SharePoint-Projektelemente zusammenfassen. Da nur ein Typ von SharePoint-Projekt vorhanden ist, gelten Erweiterungen, die für ein Projekt erstellt für alle SharePoint-Projekte. Erstellen nicht möglich ist, z. B. eine Erweiterung, die nur gilt eine **Inhaltstyp** Projekt.  
   
  Um eine bestimmte Projektinstanz zuzugreifen, behandeln Sie eines der der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Ereignisse der *ProjectService* Parameter in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode. Um zu bestimmen, wenn ein SharePoint-Projekt zu einer Projektmappe hinzugefügt wird, z. B. Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

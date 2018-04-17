@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine Erweiterung für SharePoint-Projekte erstellt werden. Eine projekterweiterung können Sie reagieren auf Ereignisse auf Projektebene, z. B. wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen, oder Antworten, wenn ein Eigenschaftswert ändert. Im Gegensatz zu den Erweiterungen für Project-Element darf nicht Projekt Erweiterungen einen bestimmten Typ von SharePoint-Projekt zugeordnet sein. Bei der Erstellung einer-projekterweiterung die Erweiterung laden, wenn jede Art von SharePoint-Projekt, in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+2.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.  
   
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  In der **Namen** geben **ProjectExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **ProjectExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **ProjectExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei "Source.Extension.vsixmanifest", und wählen Sie dann die **öffnen** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die Datei im manifest-Designer. Die Informationen, die in der **Metadaten** Registerkarte wird auch in der **Erweiterungen und Updates**. Alle VSIX-Pakete erforderlich ist, die Datei "Extension.vsixmanifest". Weitere Informationen zu dieser Datei finden Sie unter [VSIX-Erweiterung Schemareferenz 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Datei im manifest-Designer. Die Informationen, die in der **Metadaten** Registerkarte wird auch in der **Erweiterungen und Updates**. Alle VSIX-Pakete erforderlich ist, die Datei "Extension.vsixmanifest". Weitere Informationen zu dieser Datei finden Sie unter [VSIX-Erweiterung Schemareferenz 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  In der **Produktname** geben **benutzerdefinierte Projekteigenschaft**.  
   
@@ -175,11 +174,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  Starten Sie einen Debugbuild Ihres Projekts entweder durch Auswählen der **F5** -Taste oder wählen Sie auf der Menüleiste **Debuggen**, **Debuggen**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]die Erweiterung %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 Projekt und startet eine experimentelle Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Erweiterung %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 Projekt und startet eine experimentelle Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein SharePoint-Projekt für eine farmlösung und die Standardwerte für die anderen Werte in den Assistenten verwenden.  
   
-    1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+    1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
     2.  Am oberen Rand der **neues Projekt** Dialogfeld Wählen Sie **.NET Framework 3.5** in der Liste der Versionen von .NET Framework.  
   

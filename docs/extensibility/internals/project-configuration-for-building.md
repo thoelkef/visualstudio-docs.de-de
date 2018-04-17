@@ -1,26 +1,24 @@
 ---
 title: Zum Erstellen von Projektkonfiguration | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Konfiguration für die Erstellung des Projekts
 Die Liste der Konfigurationen für Projektmappenbuilds für eine bestimmte Lösung wird durch das Dialogfeld Projektmappenkonfigurationen verwaltet.  
@@ -51,9 +49,9 @@ Projektabhängigkeiten
 > [!NOTE]
 >  Projekte in der Liste, die zugehörigen Kontrollkästchen ausgewählt haben, jedoch werden abgeblendet angezeigt wurden hinzugefügt, von der Umgebung aufgrund eines expliziten Abhängigkeiten, die gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstellen und kann nicht geändert werden. Z. B. Hinzufügen eines Projekt-Verweises aus einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt in ein anderes Projekt fügt automatisch eine Buildabhängigkeit, die nur durch Löschen des Verweises entfernt werden kann. Projekte, deren Kontrollkästchen deaktiviert sind und abgeblendet, können nicht ausgewählt werden, da auf diese Weise eine Abhängigkeit Schleife erstellt würde (z. B. Projekt1 wäre Projekt2 abhängt und Projekt2 wäre Projekt1 abhängt), würde die Builds installieren.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Buildprozesse umfassen die typische kompilieren und Verknüpfen von Operationen, die mit einem einzigen Buildbefehl aufgerufen werden. Zwei andere Buildprozesse können ebenfalls unterstützt: eine saubere Operation zum Löschen von alle Ausgabeelemente aus einem vorherigen Build und eine Überprüfung auf dem neuesten Stand, zu bestimmen, ob ein Ausgabeelement in einer Konfiguration geändert hat.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Buildprozesse umfassen die typische kompilieren und Verknüpfen von Operationen, die mit einem einzigen Buildbefehl aufgerufen werden. Zwei andere Buildprozesse können ebenfalls unterstützt: eine saubere Operation zum Löschen von alle Ausgabeelemente aus einem vorherigen Build und eine Überprüfung auf dem neuesten Stand, zu bestimmen, ob ein Ausgabeelement in einer Konfiguration geändert hat.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>Objekte zurückgeben, eine entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (Merry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) zum Verwalten ihrer Buildprozesse. Um den Status der Buildvorgang zu melden, während er ausgeführt wird, die Konfigurationen die Aufrufe an <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, eine Schnittstelle implementiert, von der Umgebung, und ein anderes Objekt von Interesse Buildereignisse-Status.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Objekte zurückgeben, eine entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (Merry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) zum Verwalten ihrer Buildprozesse. Um den Status der Buildvorgang zu melden, während er ausgeführt wird, die Konfigurationen die Aufrufe an <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, eine Schnittstelle implementiert, von der Umgebung, und ein anderes Objekt von Interesse Buildereignisse-Status.  
   
  Sobald erstellt, können die Konfigurationseinstellungen verwendet werden, um zu bestimmen, und zwar unabhängig davon, ob sie unter der Kontrolle des Debuggers ausgeführt werden können. Implementieren von Konfigurationen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> um Debuggen zu unterstützen.  
   

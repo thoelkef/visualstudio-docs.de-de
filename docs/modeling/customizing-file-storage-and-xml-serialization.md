@@ -1,25 +1,23 @@
 ---
 title: Anpassen von Dateispeicher und XML-Serialisierung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifische Sprache (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], eine XML-Datei erstellt oder aktualisiert wird. Die Datei kann neu geladen werden, um das Modell im Speicher neu zu erstellen.  
@@ -275,7 +273,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
 |Benutzerdefinierte|Legen Sie **"true"** Wenn Sie Ihren eigenen Serialisierung und Deserialisierung für diese Domänenklasse schreiben möchten.<br /><br /> Erstellen Sie die Projektmappe, und untersuchen Sie die Fehler, um detaillierte Informationen zu ermitteln.|  
 |Domänenklasse|Domain-Klasse, für die diese Klasse Datenknoten gilt. Schreibgeschützt.|  
 |Elementname|XML-Knoten-Name für die Elemente dieser Klasse. Der Standardwert ist eine kleingeschriebene Version des Domänennamens-Klasse.|  
-|Monikername-Attribut|Der Name des Attributs in Moniker Elemente verwendet, um den Verweis enthält. Wenn leer, wird der Name der Schlüsseleigenschaft oder -Id verwendet.<br /><br /> In diesem Beispiel ist es "name":`<personMoniker name="/Mike Nash"/>`|  
+|Monikername-Attribut|Der Name des Attributs in Moniker Elemente verwendet, um den Verweis enthält. Wenn leer, wird der Name der Schlüsseleigenschaft oder -Id verwendet.<br /><br /> In diesem Beispiel ist es "name":  `<personMoniker name="/Mike Nash"/>`|  
 |Monikername-Element|Der Name des XML-Elements für Moniker, die Elemente dieser Klasse verweisen, verwendet.<br /><br /> Der Standardwert ist der Klassenname mit dem Suffix "Moniker" in Kleinbuchstaben. Beispielsweise `personMoniker`.|  
 |Typ der Monikername|Der Name des XSD-Typs für Moniker auf Elemente dieser Klasse generiert. XSD-Code befindet sich im **Dsl\Generated Code\\\*Schema.xsd**|  
 |Serialisieren Sie Id|Bei "true", ist die GUID des Elements in der Datei enthalten. Diese Angabe muss "true", wenn keine Eigenschaft, die markiert ist **ist der Moniker-Schlüssel** und der DSL verweisbeziehungen diese Klasse definiert.|  
@@ -300,7 +298,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
-|Has Custom Moniker|Legen Sie diese auf "true", wenn Sie Ihren eigenen Code zum Generieren und Auflösen von Monikern, die diese Beziehung durchlaufen angeben möchten.<br /><br /> Ausführliche Anweisungen erstellen Sie die Projektmappe, und doppelklicken Sie dann auf die Fehlermeldungen.|  
+|Benutzerdefinierte Moniker verfügt|Legen Sie diese auf "true", wenn Sie Ihren eigenen Code zum Generieren und Auflösen von Monikern, die diese Beziehung durchlaufen angeben möchten.<br /><br /> Ausführliche Anweisungen erstellen Sie die Projektmappe, und doppelklicken Sie dann auf die Fehlermeldungen.|  
 |Domänenbeziehung|Gibt die Beziehung zu der diese Optionen gelten. Schreibgeschützt.|  
 |Weglassen von Element|Bei "true", wird der XML-Knoten, der die Rolle "Quelle" entspricht, aus dem Schema weggelassen.<br /><br /> Ist es mehr als eine Beziehung zwischen den Quell- und Zielklassen, unterscheidet sich dieser rollenknoten zwischen Links, die die beiden Beziehungen angehören. Aus diesem Grund wird empfohlen, dass Sie diese Option nicht in diesem Fall festgelegt.|  
 |Rollenname-Element|Gibt den Namen des XML-Elements, das von der Rolle "Quelle" abgeleitet ist. Der Standardwert ist der Rollenname-Eigenschaft.|  

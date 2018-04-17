@@ -1,13 +1,10 @@
 ---
-title: "Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
   Erstellen Sie zum Bereitstellen einer SharePoint-Tools-Erweiterungs ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX), die enthält die Erweiterungsassembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Ein VSIX-Paket ist eine komprimierte Datei, die den Standard (Open Packaging Conventions, OPC) folgt. VSIX-Pakete haben die VSIX-Erweiterung.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt Projektvorlage oder Elementvorlage, und wählen Sie dann **Projekt entladen**.  
   
-7.  Öffnen Sie erneut das Kontextmenü für den Projektknoten, und wählen Sie dann **bearbeiten***NameIhresVorlagenprojekts***csproj** oder **bearbeiten**  *NameIhresVorlagenprojekts***vbproj**.  
+7.  Öffnen Sie erneut das Kontextmenü für den Projektknoten, und wählen Sie dann **bearbeiten***NameIhresVorlagenprojekts***csproj** oder **bearbeiten***NameIhresVorlagenprojekts***. VBPROJ**.  
   
 8.  Suchen Sie das folgende `VSTemplate`-Element in der Projektdatei.  
   

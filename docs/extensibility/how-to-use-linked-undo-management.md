@@ -2,26 +2,22 @@
 title: 'Vorgehensweise: Verwenden Sie die Verwaltung von verknüpfter Rollbackvorgang | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a025cdfc14eb39dad7ea2bc72a69f1f260fb583
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-linked-undo-management"></a>Vorgehensweise: Verwenden Sie die verknüpfter Rollbackvorgang Verwaltung
 Verknüpfter Rollbackvorgang ermöglicht dem Benutzer, die gleichen Änderungen in mehreren Dateien gleichzeitig rückgängig zu machen. Gleichzeitige Text ändert sich über mehrere Programmdateien, z. B. eine Headerdatei und eine Visual C++-Datei ist beispielsweise ein verknüpfter Rollbackvorgang-Transaktion. Verknüpfter Rollbackvorgang-Funktion ist in der Umgebung Implementierung der Rollback-Manager integriert und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> können Sie diese Funktion zu bearbeiten. Verknüpfter Rollbackvorgang wird von einem übergeordneten Rückgängig-Komponente implementiert, die verknüpft sind separate Rückgängig-Stapel zusammen, um als einen einzelnen Rückgängig-Komponente behandelt werden können. Das Verfahren für die Verwendung verknüpften Rollbackvorgang werden im folgenden Abschnitt beschrieben.  

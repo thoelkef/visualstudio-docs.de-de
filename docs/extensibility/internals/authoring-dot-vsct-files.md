@@ -1,27 +1,23 @@
 ---
 title: Erstellen. VSCT-Dateien | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 Dieses Dokument zeigt, wie zum Erstellen einer VSCT-Datei, um die integrierte Entwicklungsumgebung (IDE) von Visual Studio Menüelemente, Symbolleisten und andere Elemente der Benutzeroberfläche (UI) hinzuzufügen. Gehen Sie folgendermaßen vor, wenn Sie Elemente der Benutzeroberfläche eine Visual Studio-Paket (VSPackage) hinzufügen, die nicht bereits über eine VSCT-Datei verfügt.  
@@ -234,7 +230,7 @@ Dieses Dokument zeigt, wie zum Erstellen einer VSCT-Datei, um die integrierte En
  Einige Menüs und Schaltflächen die folgenden Anweisungstypen spezielle Verhaltensweisen. In der folgenden Tabelle werden einige spezielle Menü und die Schaltflächentypen beschrieben. Andere Typen finden Sie unter der `types` -Attribut Beschreibungen in [Menu-Element](../../extensibility/menu-element.md), [Schaltflächenelement](../../extensibility/button-element.md), und [Kombinationsfeld Element](../../extensibility/combo-element.md).  
   
  Kombinationsfeld  
- Ein Kombinationsfeld ist eine Dropdown-Liste, die auf einer Symbolleiste verwendet werden kann. Kombinationsfelder an die Benutzeroberfläche hinzufügen möchten, erstellen Sie eine [Tastenkürzel](../../extensibility/combos-element.md) Element in der `Commands` Element. Fügen Sie dann auf die `Combos` Element ein `Combo` -Element für jedes im Kombinationsfeld hinzufügen. `Combo`Elemente aufweisen, die dieselben Attribute und untergeordneten Elemente als `Button` Elemente und außerdem `DefaultWidth` und `idCommandList` Attribute. Die `DefaultWidth` -Attribut legt die Breite in Pixel und die `idCommandList` -Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinationsfelds verwendet wird. Weitere Informationen finden Sie unter der `Combo` Element-Dokumentation.  
+ Ein Kombinationsfeld ist eine Dropdown-Liste, die auf einer Symbolleiste verwendet werden kann. Kombinationsfelder an die Benutzeroberfläche hinzufügen möchten, erstellen Sie eine [Tastenkürzel](../../extensibility/combos-element.md) Element in der `Commands` Element. Fügen Sie dann auf die `Combos` Element ein `Combo` -Element für jedes im Kombinationsfeld hinzufügen. `Combo` Elemente aufweisen, die dieselben Attribute und untergeordneten Elemente als `Button` Elemente und außerdem `DefaultWidth` und `idCommandList` Attribute. Die `DefaultWidth` -Attribut legt die Breite in Pixel und die `idCommandList` -Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinationsfelds verwendet wird. Weitere Informationen finden Sie unter der `Combo` Element-Dokumentation.  
   
  MenuController  
  Ein Menücontroller ist eine Schaltfläche mit einem Pfeil angezeigt. Durch Klicken auf den Pfeil wird eine Liste. Um die Benutzeroberfläche ein Menücontroller hinzugefügt haben, erstellen Sie eine `Menu` Element, und legen seine `type` -Attribut **MenuController** oder **MenuControllerLatched**, je nachdem, auf das gewünschte Verhalten. Um ein Menücontroller aufzufüllen, legen Sie sie als das übergeordnete Element von einem `Group` Element. Der Menücontroller im werden alle untergeordneten Elemente dieser Gruppe in der Dropdown-Liste angezeigt.  

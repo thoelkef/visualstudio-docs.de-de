@@ -2,32 +2,28 @@
 title: Übersicht über das Steuerelement Integration Datenquelle | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration von Datenquellen-Steuerelement
 In diesem Abschnitt werden die zwei Möglichkeiten zur Integration in Visual Studio-quellcodeverwaltung verglichen; ein Quellcodeverwaltungs-Plug-in und eines VSPackage, das eine Source Control-Lösung bietet und die neuen Funktionen der quellcodeverwaltung hervorgehoben. Visual Studio ermöglicht Manueller Wechsel zwischen den Datenquellen-Steuerelements VSPackages und Datenquellen-Steuerelement-Plug-ins als auch automatische Lösung basierenden Wechsel.  
   
 ## <a name="source-control-integration"></a>Integration der Quellcodeverwaltung  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt zwei Arten von Quellcodeverwaltungsoptionen Integration. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können immer noch ein plug-in basierend auf der Quelle Steuerelement-Plug-in-API (zuvor auch bezeichnet als MSSCCI-API), die grundlegende Quellcodeverwaltungsfunktion bereitstellt, bei der Verwendung von Visual Studio Source Control Benutzer-Schnittstelle (integrieren UI). Ein Datenquellen-Steuerelement VSPackage, andererseits, eine neue, umfassende-Integration bietet [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Integration der quellcodeverwaltung, die eine hohe Wissensstand und Autonomie in seiner Steuerelement Quellmodell gefordert geeignet ist.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten von Quellcodeverwaltungsoptionen Integration. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können immer noch ein plug-in basierend auf der Quelle Steuerelement-Plug-in-API (zuvor auch bezeichnet als MSSCCI-API), die grundlegende Quellcodeverwaltungsfunktion bereitstellt, bei der Verwendung von Visual Studio Source Control Benutzer-Schnittstelle (integrieren UI). Ein Datenquellen-Steuerelement VSPackage, andererseits, eine neue, umfassende-Integration bietet [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Integration der quellcodeverwaltung, die eine hohe Wissensstand und Autonomie in seiner Steuerelement Quellmodell gefordert geeignet ist.  
   
  ![Übersicht über das Steuerelement Datenquelle](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ In diesem Abschnitt werden die zwei Möglichkeiten zur Integration in Visual Stu
 -   Es ist einfacher, ein Quellcodeverwaltungs-Plug-in als ein Datenquellen-Steuerelement VSPackage implementieren.  
   
 ## <a name="source-control-vspackage"></a>Source Control VSPackage  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]enge Integration in Visual Studio mit Vollzugriff auf Quellcodeverwaltungsfunktion und die vollständige Ersetzung der Benutzeroberfläche der quellcodeverwaltung von Visual Studio bereitgestellten ermöglicht. Ein Datenquellen-Steuerelement VSPackage wird in Visual Studio registriert und Quellcodeverwaltungsfunktion bietet. Obwohl mehrere Datenquellen-Steuerelements VSPackages mit Visual Studio registriert werden kann, kann nur einer von ihnen gleichzeitig aktiv sein. Ein VSPackage des Datenquellen-Steuerelement hat vollständige Kontrolle über die Quellcodeverwaltungsfunktion und die Darstellung in Visual Studio, während er aktiv ist. Alle anderen Datenquellen-Steuerelements VSPackages, die möglicherweise im System registriert ist inaktiv sind, und zeigt keine Benutzeroberfläche überhaupt.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enge Integration in Visual Studio mit Vollzugriff auf Quellcodeverwaltungsfunktion und die vollständige Ersetzung der Benutzeroberfläche der quellcodeverwaltung von Visual Studio bereitgestellten ermöglicht. Ein Datenquellen-Steuerelement VSPackage wird in Visual Studio registriert und Quellcodeverwaltungsfunktion bietet. Obwohl mehrere Datenquellen-Steuerelements VSPackages mit Visual Studio registriert werden kann, kann nur einer von ihnen gleichzeitig aktiv sein. Ein VSPackage des Datenquellen-Steuerelement hat vollständige Kontrolle über die Quellcodeverwaltungsfunktion und die Darstellung in Visual Studio, während er aktiv ist. Alle anderen Datenquellen-Steuerelements VSPackages, die möglicherweise im System registriert ist inaktiv sind, und zeigt keine Benutzeroberfläche überhaupt.  
   
  Implementieren ein VSPackage des Datenquellen-Steuerelement erfordert eine Strategie für die "" alle "oder" nichts ". Der Ersteller des ein Datenquellen-Steuerelement VSPackage muss eine beträchtliche Menge an Aufwand bei der Implementierung einer Reihe von Datenquellen-Steuerelement-Schnittstellen und neue Elemente der Benutzeroberfläche (Dialogfelder, Menüs und Symbolleisten), um die gesamte Quellcodeverwaltungsfunktion abzudecken investieren. Finden Sie unter [Erstellen eines Source Control VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md) Weitere Details.  
   

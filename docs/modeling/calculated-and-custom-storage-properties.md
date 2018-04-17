@@ -1,23 +1,21 @@
 ---
 title: Berechnete und benutzerdefinierte Speichereigenschaften | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domäneneigenschaften in eine domänenspezifische Sprache (DSL) für den Benutzer auf das Diagramm und in Ihrer Sprache-Explorer angezeigt werden können und Programmcode zugegriffen werden können. Eigenschaften unterscheiden sich jedoch auf die Weise, dass ihre Werte gespeichert werden.  
@@ -84,7 +82,7 @@ Alle Domäneneigenschaften in eine domänenspezifische Sprache (DSL) für den Be
   
 10. Testen Sie die Eigenschaft an. Stellen Sie sicher, dass Sie versuchen **Rückgängig** und **wiederholen**.  
   
-##  <a name="setters"></a>Transaktionen und benutzerdefinierte Setter  
+##  <a name="setters"></a> Transaktionen und benutzerdefinierte Setter  
  In der Set-Methode des benutzerdefinierten Speichereigenschaft müssen Sie keine Transaktion zu öffnen, da die Methode in der Regel innerhalb einer aktiven Transaktion aufgerufen wird.  
   
  Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer zum Rückgängigmachen oder Wiederholen aufruft oder ein Rollback eine Transaktion ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ist "true", die Set-Methode, verhalten sich wie folgt:  

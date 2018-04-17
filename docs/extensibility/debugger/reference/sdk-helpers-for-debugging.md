@@ -1,12 +1,10 @@
 ---
-title: "SDK-Hilfsprogramme für das Debuggen | Microsoft Docs"
-ms.custom: 
+title: SDK-Hilfsprogramme für das Debuggen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen zum Implementieren von Debugmodule, ausdruckauswertung und Symbol-Anbieter in C++.  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  Alle GUIDs werden gespeichert, in das Format der `{GUID}`. Beispielsweise `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Debuggen von Modulen  
- Im folgenden finden die Organisation von der Debug-Module-Metriken in der Registrierung. `Engine`ist der Metrik Typname für ein Debugging-Modul und entspricht *[Metrik Type]* in der oben genannten Registrierungsteilstruktur.  
+ Im folgenden finden die Organisation von der Debug-Module-Metriken in der Registrierung. `Engine` ist der Metrik Typname für ein Debugging-Modul und entspricht *[Metrik Type]* in der oben genannten Registrierungsteilstruktur.  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[Port Lieferanten Guid]*|Die GUID des Lieferanten Port, sofern vorhanden. Viele Debugmodule verwenden standardmäßig Port Lieferanten und geben Sie daher nicht ihre eigenen Lieferanten. In diesem Fall ist der Unterschlüssel `PortSupplier` abwesend sein wird.|  
   
 ### <a name="port-suppliers"></a>Port-Lieferanten  
- Im folgenden finden die Organisation der Port Lieferanten Metriken in der Registrierung. `PortSupplier`ist der Metrik Typname für einen Port Lieferanten und entspricht *[Metrik Type]*.  
+ Im folgenden finden die Organisation der Port Lieferanten Metriken in der Registrierung. `PortSupplier` ist der Metrik Typname für einen Port Lieferanten und entspricht *[Metrik Type]*.  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[Klasse Guid]*|Die GUID der Klasse, die diesem Port Lieferanten implementiert|  
   
 ### <a name="symbol-providers"></a>Symbol-Anbieter  
- Im folgenden finden die Organisation der Metriken Lieferanten Symbol in der Registrierung. `SymbolProvider`ist der Metrik Typname für den Symbol-Anbieter und entspricht *[Metrik Type]*.  
+ Im folgenden finden die Organisation der Metriken Lieferanten Symbol in der Registrierung. `SymbolProvider` ist der Metrik Typname für den Symbol-Anbieter und entspricht *[Metrik Type]*.  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[Klasse Guid]*|Die GUID der Klasse, die diese Symbol-Anbieter implementiert.|  
   
 ### <a name="expression-evaluators"></a>Ausdrucksauswertungen  
- Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator`ist der Metrik Typname für die ausdrucksauswertung und entspricht *[Metrik Type]*.  
+ Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator` ist der Metrik Typname für die ausdrucksauswertung und entspricht *[Metrik Type]*.  
   
 > [!NOTE]
 >  Der Metrik-Typ für `ExpressionEvaluator` ist im dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen aller metrische Änderungen für ausdruckauswertung durchlaufen werden (das Layout von der `ExpressionEvaluator` Unterschlüssel ist in einem gewissen kompliziert sein muss, damit die Details in dbgmetric.lib ausgeblendet sind).  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[Debuggen Sie Modul-Guid]*|Die GUID des ein Debugmodul, das mit dieser Auswertung eines Ausdrucks verwendet werden kann|  
   
 ### <a name="expression-evaluator-extensions"></a>Expression Evaluator-Erweiterungen  
- Im folgenden finden die Organisation der Expression Evaluator Erweiterung Metriken in der Registrierung. `EEExtensions`ist der Metrik Typname für den Ausdruck Evaluator-Erweiterungen und entspricht *[Metrik Type]*.  
+ Im folgenden finden die Organisation der Expression Evaluator Erweiterung Metriken in der Registrierung. `EEExtensions` ist der Metrik Typname für den Ausdruck Evaluator-Erweiterungen und entspricht *[Metrik Type]*.  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[Erweiterung Guid]*|Die GUID einer Expression Evaluator-Erweiterung|  
   
 ### <a name="exceptions"></a>Ausnahmen  
- Im folgenden finden die Organisation der Metriken Ausnahmen in der Registrierung. `Exception`ist der Metrik Typname für die Ausnahmen und entspricht *[Metrik Type]*.  
+ Im folgenden finden die Organisation der Metriken Ausnahmen in der Registrierung. `Exception` ist der Metrik Typname für die Ausnahmen und entspricht *[Metrik Type]*.  
   
  `Exception`\  
   

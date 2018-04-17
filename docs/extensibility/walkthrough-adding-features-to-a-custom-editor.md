@@ -1,27 +1,23 @@
 ---
-title: "Exemplarische Vorgehensweise: Hinzufügen von Funktionen eines benutzerdefinierten Editors | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktionen eines benutzerdefinierten Editors | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen eines benutzerdefinierten Editors von Funktionen
 Nach der Erstellung eines benutzerdefinierten Editors können Sie weitere Funktionen hinzufügen.  
@@ -148,7 +144,7 @@ Nach der Erstellung eines benutzerdefinierten Editors können Sie weitere Funkti
   
 -   Um in der Benutzeroberfläche Versammeln Menübefehl zu verhindern, sollten Sie die vorhandene Befehle in der IDE verwenden, bevor Sie neue Befehle gleichzeitig. Freigegebene Befehle werden in SharedCmdDef.vsct und ShellCmdDef.vsct definiert. Diese Dateien werden standardmäßig installiert, in das Unterverzeichnis VisualStudioIntegration\Common\Inc Ihrer [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Installation.  
   
--   `ISelectionContainer`können einzelne und mehrere Auswahlmöglichkeiten Ausdrücken. Jedes ausgewählte Objekt wird als implementiert ein `IDispatch` Objekt.  
+-   `ISelectionContainer` können einzelne und mehrere Auswahlmöglichkeiten Ausdrücken. Jedes ausgewählte Objekt wird als implementiert ein `IDispatch` Objekt.  
   
 -   Die IDE implementiert die `IOleUndoManager` als Dienst zugegriffen werden kann, aus einer <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> oder als ein Objekt, das über instanziiert werden kann <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Der Editor implementiert die `IOleUndoUnit` Schnittstelle für die einzelnen `Undo` Aktion.  
   

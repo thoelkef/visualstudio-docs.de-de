@@ -1,26 +1,24 @@
 ---
-title: "Ältere Sprachdienstparser und Scanner | Microsoft Docs"
-ms.custom: 
+title: Ältere Sprachdienstparser und Scanner | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Ältere Sprachdienstparser und Scanner
 Der Parser ist das Kernstück des Sprachdiensts. Das Managed Package Framework (MPF) Sprache-Klassen erfordern eine Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalische Token, und es werden diese Token nach Typ und Funktion identifiziert.  

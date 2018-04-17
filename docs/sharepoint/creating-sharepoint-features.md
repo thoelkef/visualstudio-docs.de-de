@@ -1,12 +1,10 @@
 ---
 title: Erstellen von SharePoint-Funktionen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Erstellen von SharePoint-Funktionen
   Sie können eine SharePoint-Funktion verwenden, um Gruppen von verwandten SharePoint-Projektelemente zur einfacheren Bereitstellung. Sie können Funktionen erstellen, Bereiche festlegen und andere Funktionen wie Abhängigkeiten zu markieren, mit der SharePoint-Funktions-Designer. Der Designer generiert auch ein Manifest, also eine XML-Datei, die einzelnen Funktionen beschreibt.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
-|Titel|Dies ist optional. Der Standardtitel der Funktion festgelegt ist, um *SolutionName**FeatureName*.|  
+|Titel|Dies ist optional. Der Standardtitel der Funktion festgelegt ist, um *SolutionName ** FeatureName*.|  
 |Beschreibung|Dies ist optional. Die Beschreibung der SharePoint-Funktion.|  
 |Bereich|Erforderlich. Wenn eine Funktion erstellt wird **Projektmappen-Explorer**, der Bereich ist standardmäßig auf Web festgelegt.<br /><br /> -Farm: Aktivieren Sie eine Funktion für eine gesamte Serverfarm.<br /><br /> -Website: Aktivieren Sie eine Funktion für alle Websites in einer Websitesammlung.<br /><br /> -Website: Aktivieren Sie eine Funktion für eine bestimmte Website.<br /><br /> -WebApplication: Aktivieren Sie eine Funktion für alle Websites in einer Webanwendung.|  
 |Elemente in der Lösung|Alle SharePoint-Elemente, die die Funktion hinzugefügt werden kann.|  

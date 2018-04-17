@@ -1,27 +1,25 @@
 ---
 title: Registrieren einen Projekttyp | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Registrieren einen Projekttyp
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträge, die es ermöglichen erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erkannt werden und Arbeiten mit Ihrem Project-Typs. Diese Registrierungseinträge wird normalerweise mithilfe einer Registrierung-Skriptdatei (.rgs) erstellen.  
@@ -85,7 +83,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
   
 |name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|`@`(Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisierbare Name dieses registriert VSPackage (Projekttyp).|  
+|`@` (Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisierbare Name dieses registriert VSPackage (Projekttyp).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Pfad der DLL-Projekttyp. Die IDE diese DLL lädt und übergibt die CLSID VSPackage zu `DllGetClassObject` abzurufenden <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> zum Erstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Objekt.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Der Name des Unternehmens, das den Projekttyp entwickelt.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Der Name für den Projekttyp.|  

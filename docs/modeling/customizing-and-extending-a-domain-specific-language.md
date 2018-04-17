@@ -2,22 +2,20 @@
 title: Anpassen und Erweitern einer domänenspezifischen Sprache | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4c1c0301f48997e834e9a707f660db42580ae203
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 Visual Studio zu modellieren und Visualisierung SDK (VMSDK) bietet mehrere Ebenen, die an dem Sie Modellierungstools definieren können:  
@@ -57,7 +55,7 @@ Visual Studio zu modellieren und Visualisierung SDK (VMSDK) bietet mehrere Ebene
 |Löschen Sie, neu zuordnen Sie, oder verknüpfen Sie verwandte Elemente aus, wenn ein Element gelöscht wird.|Legen Sie die **weitergibt löschen** Wert einer Beziehung-Rolle. Für komplexere Effekte überschreiben `ShouldVisitRelationship` und `ShouldVisitRolePlayer` Methoden in der `MyDslDeleteClosure` in definierte Klasse **DomainModel.cs**<br /><br /> Finden Sie unter [Anpassen des Verhaltens löschen](../modeling/customizing-deletion-behavior.md)|  
 |Behalten Sie die Form Layout und die Darstellung auf Kopieren und Drag & Drop.|Fügen Sie die Formen und Konnektoren zu den kopierten `ElementGroupPrototype`. Ist die einfachste Methode zum Überschreiben `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Finden Sie unter [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md).|  
 |Fügen Sie Formen an einer ausgewählten Stelle ein, beispielsweise an der aktuelle Cursorposition.|Überschreiben Sie `ClipboardCommandSet.ProcessOnCopy()` die standortspezifische Version von `ElementOperations.Merge().` finden Sie unter [Kopierverhalten anpassen](../modeling/customizing-copy-behavior.md).|  
-|Erstellen Sie zusätzliche Links einfügen|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Erstellen Sie zusätzliche Links einfügen|ClipboardCommandSet.ProcessOnPasteCommand() überschreiben|  
 |Enable ziehen und Ablegen in diesem Diagramm andere konzentriert und die Windows-Elemente|Finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Zulassen einer Form oder ein Tool, um auf eine Form "Kind", beispielsweise ein Anschluss gezogen werden, als wäre er auf das übergeordnete Element gezogen wurden.|Definieren Sie eine Merge-Element-Direktive für die Ziel-Objektklasse, das gelöschte Objekt an dem übergeordnete Element weitergeleitet. Finden Sie unter [anpassen Element erstellen und die Bewegung](../modeling/customizing-element-creation-and-movement.md).|  
 |Zulassen einer Form oder ein Tool, um auf eine Form gezogen werden und verfügen über zusätzliche Links oder Objekte erstellt. Geben Sie beispielsweise Folgendes ein, um einen Kommentar an, auf ein Element abgelegt werden, ist es verknüpft sein, können.|Definieren Sie eine Element-Direktive zusammenführen, für die Zielklasse für die Domäne, und definieren Sie die Links generiert werden soll. In komplexen Fällen können Sie benutzerdefinierten Code hinzufügen. Finden Sie unter [anpassen Element erstellen und die Bewegung](../modeling/customizing-element-creation-and-movement.md).|  

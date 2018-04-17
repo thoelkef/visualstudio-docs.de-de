@@ -1,23 +1,21 @@
 ---
 title: Erstellen einer Ansicht Randsteuerelement, Befehle und Einstellungen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen einer Ansicht Randsteuerelement, Befehle und Einstellungen (Spalte Handbücher)
 Sie können die Visual Studio-Text oder den Code-Editor mit Befehlen und Anzeigen von Effekten erweitern.  In diesem Thema wird gezeigt, wie eine beliebte Erweiterungsfunktion Spalte Handbücher Einstieg.  Spalte Handbücher werden visuell Licht auf das Text-Editor-Ansicht zur einfacheren Verwaltung des Codes: auf bestimmte Spaltenbreite gezeichneten Linien verwendet.  Speziell formatierte Code kann für die Beispiele sind wichtig sein, in Blogbeiträgen,-Dokumenten enthalten oder Fehlerberichte.  
@@ -54,13 +52,13 @@ Sie können die Visual Studio-Text oder den Code-Editor mit Befehlen und Anzeige
   
 -   Es ist ein `ColumnGuideCommands` -Objekt, das die Benutzerbefehle implementiert und bindet die Befehlshandler für Befehle, die in der VSCT-Datei deklariert.  
   
- **VSIX**.  Verwendung **Datei &#124; Neu...**  Befehl aus, um ein Projekt zu erstellen.  Wählen Sie die Erweiterbarkeit Knoten unter c# im linken Navigationsbereich, und wählen Sie **VSIX-Projekt** im rechten Bereich.  Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.  
+ **VSIX**.  Verwendung **Datei &#124; neu...**  Befehl aus, um ein Projekt zu erstellen.  Wählen Sie die Erweiterbarkeit Knoten unter c# im linken Navigationsbereich, und wählen Sie **VSIX-Projekt** im rechten Bereich.  Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.  
   
- **Anzeigen von Randsteuerelement**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; Neues Element...**  Befehl aus, um ein neues Ansicht Randsteuerelement Element hinzuzufügen.  Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Randsteuerelement** im rechten Bereich.  Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzufügen.  
+ **Anzeigen von Randsteuerelement**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Randsteuerelement Element hinzuzufügen.  Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Randsteuerelement** im rechten Bereich.  Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzufügen.  
   
  Sie sehen, dass diese Elementvorlage zwei Dateien dem Projekt (als auch Verweise und usw.) hinzugefügt: ColumnGuideAdornment.cs und ColumnGuideAdornmentTextViewCreationListener.cs.  Die Vorlagen Zeichnen nur eine violette Rechteck für die Sicht.  Im folgenden Sie ändern eine Reihe von Zeilen in der Ansicht Erstellung-Listener und Ersetzen Sie den Inhalt des ColumnGuideAdornment.cs.  
   
- **Befehle**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; Neues Element...**  Befehl aus, um ein neues Ansicht Randsteuerelement Element hinzuzufügen.  Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierte Befehl** im rechten Bereich.  Geben Sie den Namen ColumnGuideCommands als Name des Elements, und wählen Sie **hinzufügen** hinzufügen.  ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs und ColumnGuideCommandsPackage.vsct sowie mehrere Verweise hinzugefügt hinzufügen, die Befehle und das Paket.  Im folgenden ersetzen Sie den Inhalt der ersten und letzten Dateien definieren und implementieren die Befehle.  
+ **Befehle**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Randsteuerelement Element hinzuzufügen.  Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierte Befehl** im rechten Bereich.  Geben Sie den Namen ColumnGuideCommands als Name des Elements, und wählen Sie **hinzufügen** hinzufügen.  ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs und ColumnGuideCommandsPackage.vsct sowie mehrere Verweise hinzugefügt hinzufügen, die Befehle und das Paket.  Im folgenden ersetzen Sie den Inhalt der ersten und letzten Dateien definieren und implementieren die Befehle.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Der Text anzeigen Erstellung Listener einrichten  
  ColumnGuideAdornmentTextViewCreationListener.cs im Editor zu öffnen.  Dieser Code implementiert einen Handler für bei jedem Text-Ansichten von Visual Studio erstellt.  Attribute, mit denen gesteuert wird, wenn der Handler aufgerufen wird, abhängig von Eigenschaften der Sicht sind vorhanden.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`ein kleines abzurufenden verfeinern Sie die Abfrage muss eine <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> Ansicht des Codes.  Wenn Sie über eine Ablaufverfolgung `GetActiveTextView`, `GetActiveView`, und `GetTextViewFromVsTextView`, sehen Sie, wie das geht.  Im folgenden finden Sie den gewünschten Code abstrahiert, beginnend mit der aktuellen Auswahl dann erste Frame mit der Auswahl des Frames DocView als erste eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, abgerufen werden. dann ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> aus der IVsTextView erhalten einen Host anzeigen und zum Schluss die IWpfTextView:  
+ `GetCurrentEditorColumn` ein kleines abzurufenden verfeinern Sie die Abfrage muss eine <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> Ansicht des Codes.  Wenn Sie über eine Ablaufverfolgung `GetActiveTextView`, `GetActiveView`, und `GetTextViewFromVsTextView`, sehen Sie, wie das geht.  Im folgenden finden Sie den gewünschten Code abstrahiert, beginnend mit der aktuellen Auswahl dann erste Frame mit der Auswahl des Frames DocView als erste eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, abgerufen werden. dann ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> aus der IVsTextView erhalten einen Host anzeigen und zum Schluss die IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Mit der aktuellen Spalte, die der Benutzer geklickt hat, ruft manuell in der Code nur auf einstellungs-Manager hinzufügen oder entfernen Sie die Spalte.  Einstellungs-Manager löst das Ereignis aus, auf dem sich alle `ColumnGuideAdornment` Objekte überwachen.  Wenn das Ereignis ausgelöst wird, aktualisieren Sie diese Objekte ihre Ansichten zugeordneten Text mit neue spalteneinstellungen Handbuch.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Aufrufen der Befehl im Befehlsfenster  
- Die Handbücher spaltenstichprobe kann Benutzer zwei Befehle im Befehlsfenster als eine Form der Erweiterbarkeit aufrufen.  Bei Verwendung der **View &#124; Anderen Windows &#124; Befehlsfenster** Befehl können Sie das Befehlsfenster anzeigen.  Sie können das Befehlsfenster interagieren, durch Eingabe von "Bearbeiten", und mit Befehl Vervollständigung von Objektnamen und das Argument 120 bereitstellen, haben Sie die folgenden:  
+ Die Handbücher spaltenstichprobe kann Benutzer zwei Befehle im Befehlsfenster als eine Form der Erweiterbarkeit aufrufen.  Bei Verwendung der **Ansicht &#124; Weitere Fenster &#124; Befehlsfenster** Befehl können Sie das Befehlsfenster anzeigen.  Sie können das Befehlsfenster interagieren, durch Eingabe von "Bearbeiten", und mit Befehl Vervollständigung von Objektnamen und das Argument 120 bereitstellen, haben Sie die folgenden:  
   
 ```  
 > Edit.AddColumnGuide 120  

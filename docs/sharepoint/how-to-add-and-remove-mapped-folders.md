@@ -1,13 +1,10 @@
 ---
-title: "Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29809344ee8a3f446589ba84f2fc47b1cf407582
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 43ec8b7c18d99880b1ab932ea28a371a7604b636
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und Entfernen zugeordneter Ordner
   Einige verwendete häufig Ordner in SharePoint, z. B. Bilder und Layouts werden in der Dateihierarchie tief eingebettet. Sie können diese Ordner in einem SharePoint-Projekt für den Zugriff leichter zuordnen. Zugeordnete Ordner sind Ordner in der SharePoint-Projekt, die den physischen Speicherort der Dateien bei der Installation von SharePoint-Server entsprechen.  
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-add-mapped-folders-to-a-project"></a>Ein Projekt zugeordnete Ordner hinzu  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  In der **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#-** Knoten, erweitern Sie die **Office/SharePoint** Knoten, und klicken Sie dann Wählen Sie die **SharePoint-Lösungen** Knoten.  
   

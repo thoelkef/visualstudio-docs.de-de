@@ -1,10 +1,8 @@
 ---
-title: "Diagramme von Abhängigkeit: Richtlinien | Microsoft Docs"
-ms.custom: 
+title: 'Diagramme von Abhängigkeit: Richtlinien | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,25 +10,25 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 840758b0b370c452ac4428c6bfdad525662ed420
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 30631a64ce8407e78120cb1cb7a4d9384ee4a384
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeit Diagrammen: Richtlinien
 Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhängigkeit Diagramme* in Visual Studio. Stellen Sie sicher, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, durch Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur von Abhängigkeit Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-dependency-diagram"></a>Was ist ein Diagramm Abhängigkeit?  
  Wie einem herkömmlichen Architekturdiagramm identifiziert ein Diagramm der Abhängigkeit, die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekten oder anderen Artefakten dar. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Abhängigkeit Diagrammen: Verweis](../modeling/layer-diagrams-reference.md).  
   
-##  <a name="Update"></a>So entwerfen oder aktualisieren Sie Ihre app mit Abhängigkeit-Diagramme  
+##  <a name="Update"></a> So entwerfen oder aktualisieren Sie Ihre app mit Abhängigkeit-Diagramme  
  Die folgenden Schritte bieten einen Überblick über die Vorgehensweise Abhängigkeit Diagramme im Entwicklungsprozess verwenden. In späteren Abschnitten dieses Themas werden die einzelnen Schritte ausführlicher beschrieben. Wenn Sie einen neuen Entwurf entwickeln, lassen Sie die Schritte aus, die sich auf vorhandenen Code beziehen.  
   
 > [!NOTE]
@@ -54,7 +52,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
 9. [Schließen Sie ebenenvalidierung im Buildprozess](#BuildValidation) um sicherzustellen, dass der Code weiterhin dem Entwurf entspricht.  
   
-##  <a name="Create"></a>Erstellen Sie ein Diagramm zur Abhängigkeitseigenschaft  
+##  <a name="Create"></a> Erstellen Sie ein Diagramm zur Abhängigkeitseigenschaft  
  Eine Abhängigkeit Diagramm muss in einem Modellierungsprojekt erstellt werden. Sie können einem vorhandenen Modellierungsprojekt ein neues Diagramm der Abhängigkeit hinzufügen, erstellen ein neues Modellierungsprojekt für das Diagramm Abhängigkeit oder ein vorhandene Abhängigkeit Diagramm innerhalb der gleichen Modellierungsprojekt kopieren.  
   
 > [!IMPORTANT]
@@ -62,10 +60,10 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
  Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
-##  <a name="CreateLayers"></a>Definieren Sie Ebenen, um Funktionsbereiche oder Komponenten darzustellen  
+##  <a name="CreateLayers"></a> Definieren Sie Ebenen, um Funktionsbereiche oder Komponenten darzustellen  
  Ebenen stellen logische Gruppen von dar *Elemente*, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual c# und Visual Basic-Projekte erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, z. B. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.  
   
- Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu Ebenenmuster finden Sie auf der Patterns & Practices-Website unter [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
+ Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu Ebenenmuster finden Sie auf der Patterns & Practices-Website unter [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
 >  Es gibt bestimmte Arten von Artefakten, die Sie mit Ebenen verknüpft, aber, die Validierung anhand des Diagramms Abhängigkeit nicht unterstützt. Um festzustellen, ob das Artefakt die Validierung unterstützt, öffnen Sie **Ebenen-Explorer** Untersuchen der **unterstützt die Validierung** Eigenschaft des Artefaktlinks. Finden Sie unter [vorhandene Abhängigkeiten zwischen Ebenen ermitteln](#Generate).  
@@ -80,7 +78,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
 -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
-##  <a name="Generate"></a>Vorhandene Abhängigkeiten zwischen Ebenen ermitteln  
+##  <a name="Generate"></a> Vorhandene Abhängigkeiten zwischen Ebenen ermitteln  
  Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Vorhandene Abhängigkeiten können mittels Reverse Engineering (Zurückentwicklung) ermittelt werden.  
   
 > [!NOTE]
@@ -92,7 +90,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
  In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
   
-##  <a name="EditArchitecture"></a>Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf zu zeigen  
+##  <a name="EditArchitecture"></a> Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf zu zeigen  
  Um die Änderungen zu beschreiben, die Sie an Ihrem System oder der vorgesehenen Architektur zu planen, verwenden Sie die folgenden Schritte aus, um das Dependency-Diagramm zu bearbeiten. Sie können vor dem Erweitern des Codes ggf. auch einige Refactoringänderungen vornehmen, um die Codestruktur zu verbessern. Finden Sie unter [Verbessern der Struktur des Codes](#Improving).  
   
 |**Aktion**|**Führen Sie diese Schritte aus**|  
@@ -104,14 +102,14 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in der Ebene **Unzulässige Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
 |Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
   
-###  <a name="Improving"></a>Verbessern der Struktur des Codes  
+###  <a name="Improving"></a> Verbessern der Struktur des Codes  
  Refactoringänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Gut strukturierter Code verfügt über ein Entwurf, der mit einem Diagramm Abhängigkeit abstrakten einfach ist.  
   
  Wenn Sie z. B. eine Ebene für jeden Namespace im Code erstellen und die Abhängigkeiten dann zurück entwickeln, sollte die Anzahl unidirektionaler Abhängigkeiten zwischen den Ebenen minimal sein. Wenn Sie ein detailliertes Diagramm mit Klassen oder Methoden als Ebenen zeichnen, sollte das Ergebnis dieselben Merkmale aufweisen.  
   
  Wenn dies nicht der Fall ist, wird der Code so ändern Sie während seiner Lebensdauer schwieriger und weniger eignet sich für die Validierung mithilfe von Diagrammen Abhängigkeit.  
   
-##  <a name="NewAreas"></a>Entwerfen Sie neue Bereiche der Anwendung  
+##  <a name="NewAreas"></a> Entwerfen Sie neue Bereiche der Anwendung  
  Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in einem neuen Projekt beginnen, können Sie Ebenen und Abhängigkeiten zeichnen, um die Hauptkomponenten zu identifizieren, bevor Sie mit dem Entwickeln des Codes beginnen.  
   
 -   **Zeigen Sie identifizierbare architektonische Muster** in Abhängigkeit Diagrammen, falls möglich. Beispielsweise könnte eine Abhängigkeit-Diagramm, das eine Desktopanwendung beschreibt z. B. Präsentation, Domänenlogik und Datenspeicher enthalten. Eine Abhängigkeit-Diagramm, das eine einzelne innerhalb einer Anwendung Funktion kann die Ebenen z. B. Modell, Ansicht und Controller enthalten. Weitere Informationen zu Muster dieser Art finden Sie unter [Patterns & Practices: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).  
@@ -124,7 +122,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
      Wenn Sie die Anwendung erstellen, wird der Code sowohl anhand des allgemeinen Diagramms als auch anhand des ausführlicheren Funktionsdiagramms überprüft.  
   
-##  <a name="EditLayout"></a>Das Layout für die Präsentation und Diskussion bearbeiten  
+##  <a name="EditLayout"></a> Das Layout für die Präsentation und Diskussion bearbeiten  
  Bearbeiten Sie Darstellung und Layout des Diagramms, um die Suche nach Ebenen und Abhängigkeiten sowie Diskussionen mit Teammitgliedern zu vereinfachen. Führen Sie hierzu die folgenden Schritte aus:  
   
 -   Ändern der Größe, Formen und Positionen von Ebenen  
@@ -133,7 +131,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
     -   Wählen Sie eine oder mehrere Ebenen oder Abhängigkeiten mit der rechten Maustaste, und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** Fenster Bearbeiten der **Farbe** Eigenschaft.  
   
-##  <a name="Validate"></a>Überprüfen Sie den Code anhand des Diagramms  
+##  <a name="Validate"></a> Überprüfen Sie den Code anhand des Diagramms  
  Wenn Sie das Diagramm bearbeitet haben, können Sie es jederzeit manuell oder automatisch beim Ausführen eines lokalen Builds oder von [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] anhand des Codes überprüfen.  
   
  Thema  
@@ -142,7 +140,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
 -   [Schließen Sie Ebenenvalidierung im Buildprozess](#BuildValidation)  
   
-##  <a name="UpdateCode"></a>Aktualisieren Sie den Code zum Anpassen an die neue Architektur  
+##  <a name="UpdateCode"></a> Aktualisieren Sie den Code zum Anpassen an die neue Architektur  
  In der Regel treten beim ersten, Überprüfen von Code anhand einer aktualisierten Abhängigkeit Diagramm. Diese Fehler können mehrere Ursachen haben:  
   
 -   Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.  
@@ -156,7 +154,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
   
  Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] eine Arbeitsaufgabe zu protokollieren. Um diese Aufgabe ausführen zu können, finden Sie unter [Überprüfen von Code mit der Abhängigkeit Diagramme](../modeling/validate-code-with-layer-diagrams.md).  
   
-##  <a name="BuildValidation"></a>Schließen Sie ebenenvalidierung im Buildprozess  
+##  <a name="BuildValidation"></a> Schließen Sie ebenenvalidierung im Buildprozess  
  Um sicherzustellen, dass zukünftige Änderungen im Code auf die Abhängigkeit Diagramme entsprechen, einschließen von ebenenvalidierung standardmäßigen Buildprozess der Projektmappe. Wenn andere Teammitglieder die Projektmappe zu erstellen, werden keine Unterschiede zwischen den Abhängigkeiten im Code und das Diagramm für die Abhängigkeitseigenschaft als Buildfehler gemeldet. Weitere Informationen zum Einschließen von ebenenvalidierung im Buildprozess finden Sie unter [Überprüfen von Code mit der Abhängigkeit Diagramme](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Siehe auch  

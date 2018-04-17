@@ -1,12 +1,10 @@
 ---
-title: "Erstellen von Wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten | Microsoft Docs"
-ms.custom: 
+title: Erstellen von Wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, user controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4818c9519920d722230b2d8a44d7945511931173
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e76a13174a9ac980644f8f9116c6518fc853028c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten
   In Visual Studio können Sie benutzerdefinierte, wiederverwendbare Steuerelemente erstellen, die von Anwendungsseiten und Webparts, die in SharePoint ausgeführt genutzt werden können. Diese Steuerelemente werden als Benutzersteuerelemente bezeichnet. Ein Benutzersteuerelement ist eine Art von zusammengesetzten Steuerelementen, die ähnlich wie eine ASP.NET-Webseite funktioniert – Sie können vorhandene Webserversteuerelemente und Markup in einem Benutzersteuerelement hinzufügen und Eigenschaften und Methoden für das Steuerelement definieren. Anschließend können Sie sie in ASP.NET Web Pages einbetten, in dem sie als Einheit handeln.  

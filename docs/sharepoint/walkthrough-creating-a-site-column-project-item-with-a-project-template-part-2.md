@@ -1,25 +1,24 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen ein Projekts Websitespalte mit einer Projektvorlage, Teil 2 | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Debuggen und Testen des Assistenten  
   
 > [!NOTE]  
->  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zuerst die Projektmappe SiteColumnProjectItem abschließen, indem erstellen [Exemplarische Vorgehensweise: Erstellen von Projektelement einer Websitespalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Websitespalten in SharePoint Weitere Informationen finden Sie unter [Spalten](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Grundlegendes zu den Assistenten-Komponenten  
+##  <a name="wizardcomponents"></a> Grundlegendes zu den Assistenten-Komponenten  
  Der Assistent, der in dieser exemplarischen Vorgehensweise veranschaulicht wird, enthält mehrere Komponenten. In der folgenden Tabelle werden diese Komponenten beschrieben.  
   
 |Komponente|Beschreibung|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wählen Sie in der Liste der Projektvorlagen **WPF-Benutzersteuerelementbibliothek**, nennen Sie das Projekt **"ProjectTemplateWizard"**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **"ProjectTemplateWizard"** Projekt der Projektmappe und öffnet die Standarddatei "UserControl1.xaml".  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **"ProjectTemplateWizard"** Projekt der Projektmappe und öffnet die Standarddatei "UserControl1.xaml".  
   
 6.  Löschen Sie die Datei UserControl1.xaml aus dem Projekt.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wählen Sie die **-Klassenbibliothek** -Projektvorlage aus, nennen Sie das Projekt **"SharePointCommands"**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **"SharePointCommands"** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **"SharePointCommands"** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Wenn Sie ein Visual Basic-Projekt entwickeln, importieren Sie in Ihr Projekt "ProjectTemplateWizard"-Namespace mithilfe der **Projekt-Designer**.  
   
-     Weitere Informationen finden Sie unter [wie: Hinzufügen oder Entfernen von importierten Namespaces &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Weitere Informationen finden Sie unter [wie: Hinzufügen oder Entfernen von importierten Namespaces &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>So konfigurieren Sie das SharePointCommands-Projekt  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wählen Sie den Pfeil neben der **hinzufügen** aus, und klicken Sie dann die **als Link hinzufügen** im Menü "", der angezeigt wird.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Codedatei, um die **"SharePointCommands"** Projekt als Link. Die Codedatei befindet sich der **"ProjectTemplateWizard"** Projekt, aber der Code in der Datei wird auch im kompiliert die **"SharePointCommands"** Projekt.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Codedatei, um die **"SharePointCommands"** Projekt als Link. Die Codedatei befindet sich der **"ProjectTemplateWizard"** Projekt, aber der Code in der Datei wird auch im kompiliert die **"SharePointCommands"** Projekt.  
   
 5.  In der **"SharePointCommands"** Projekt, fügen Sie eine weitere Codedatei mit dem Namen Befehle hinzu.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Weitere Informationen zu den `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40; Visual Studio-Vorlagen &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Weitere Informationen zu den `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40;Visual Studio-Vorlagen&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Speichern und schließen Sie die Datei.  
   

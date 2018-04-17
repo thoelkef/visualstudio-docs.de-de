@@ -1,27 +1,25 @@
 ---
 title: Mithilfe von Visual Studio-Interopassemblys | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Mithilfe von Visual Studio-Interopassemblys
 Visual Studio-Interopassemblys können verwaltete Anwendungen auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bereitstellen. Es gibt einige Unterschiede zwischen COM-Schnittstellen, die gerade und die Interop-Versionen. Beispielsweise HRESULTs sind in der Regel als Int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden und Parameter (insbesondere out-Parameter) unterschiedlich behandelt.  
@@ -32,7 +30,7 @@ Visual Studio-Interopassemblys können verwaltete Anwendungen auf die COM-Schnit
  Standardmäßig <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> löst eine Ausnahme aus, wenn sie ein HRESULT übergeben wird, die einen Wert kleiner als 0 (null) ist. In Fällen, in denen solche HRESULTs zulässige Werte sind und es werden keine Ausnahmen ausgelöst werden soll, die Werte der zusätzlichen HRESULTS an übergeben werden sollte <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> nach dem Überprüfen der Werte. Wenn das ÜBERPRÜFTE alle HRESULT-Werte, die explizit übergeben entspricht <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, wird keine Ausnahme ausgelöst.  
   
 > [!NOTE]
->  Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse enthält Konstanten für allgemeine HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.S_OK> und <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> und <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>bietet außerdem die <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> und <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> Methoden, die den Makros SUCCEEDED und FAILED in COM entsprechen  
+>  Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse enthält Konstanten für allgemeine HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.S_OK> und <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> und <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> bietet außerdem die <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> und <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> Methoden, die den Makros SUCCEEDED und FAILED in COM entsprechen  
   
  Betrachten Sie beispielsweise den folgenden Funktionsaufruf, bei dem <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> ist ein zulässiger Rückgabewert aber alle anderen HRESULTs kleiner als 0 (null) einen Fehler darstellen.  
   
@@ -47,7 +45,7 @@ Visual Studio-Interopassemblys können verwaltete Anwendungen auf die COM-Schnit
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Von verwaltetem Code an COM zurückgegebene HRESULTS  
  Wenn keine Ausnahme auftritt, gibt der verwaltete Code <xref:Microsoft.VisualStudio.VSConstants.S_OK> an COM-Funktion, die diese aufgerufen. COM-Interop unterstützt allgemeine Ausnahmen, die in verwaltetem Code stark typisiert sind. Angenommen, eine Methode, die ein unzulässiges empfängt `null` Argument löst eine <xref:System.ArgumentNullException>.  
   
- Wenn Sie nicht sicher sind welche Ausnahme ausgelöst, aber Sie wissen, dass das HRESULT zurückgegeben werden soll, COM, können Sie die <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> Methode, um eine entsprechende Ausnahme auszulösen. Dies funktioniert auch bei einem nicht standardmäßigen Fehler, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>versucht, ordnen Sie das HRESULT, die in eine stark typisierte Ausnahme an es übergeben werden. Wenn dies nicht möglich ist, wird stattdessen eine generische COM-Ausnahme ausgelöst. Das endgültige Ergebnis ist, dass das HRESULT an Sie übergeben <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> aus verwaltetem Code wird zurückgegeben, die COM-Funktion, die diese aufgerufen.  
+ Wenn Sie nicht sicher sind welche Ausnahme ausgelöst, aber Sie wissen, dass das HRESULT zurückgegeben werden soll, COM, können Sie die <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> Methode, um eine entsprechende Ausnahme auszulösen. Dies funktioniert auch bei einem nicht standardmäßigen Fehler, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> versucht, ordnen Sie das HRESULT, die in eine stark typisierte Ausnahme an es übergeben werden. Wenn dies nicht möglich ist, wird stattdessen eine generische COM-Ausnahme ausgelöst. Das endgültige Ergebnis ist, dass das HRESULT an Sie übergeben <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> aus verwaltetem Code wird zurückgegeben, die COM-Funktion, die diese aufgerufen.  
   
 > [!NOTE]
 >  Ausnahmen beeinträchtigen die Leistung und dienen als Hinweis auf anormale Programmbedingungen. Häufig auftretende Bedingungen sollten inline behandelt werden, statt eine Ausnahme auszulösen.  

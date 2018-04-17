@@ -1,26 +1,24 @@
 ---
-title: "Konfigurationsoptionen (Übersicht) | Microsoft Docs"
-ms.custom: 
+title: Konfigurationsoptionen (Übersicht) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Optionen (Übersicht)
 Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die von einer debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration handelt es sich um einen Buildtyp mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Projektmappen enthalten standardmäßig zwei Konfigurationen, Debug und Release. Diese Konfigurationen können angewendet werden, deren Standardeinstellungen verwenden oder geändert, um Ihren jeweiligen Lösung und/oder Projekt Anforderungen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine direkte-Komponente. Projekte müssen nicht mehrere Konfigurationen jedoch unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  
@@ -57,15 +55,15 @@ Konfigurationsschnittstellen
   
  Einige Hinweise, die im Zusammenhang mit der vorherigen Abbildung:  
   
--   `IDispatch`wird in das Konfigurationsobjekt als optional gekennzeichnet. Insbesondere ist optional, Sie haben die Konfigurationsschnittstellen auf die Durchsuchen-Objekt.  
+-   `IDispatch` wird in das Konfigurationsobjekt als optional gekennzeichnet. Insbesondere ist optional, Sie haben die Konfigurationsschnittstellen auf die Durchsuchen-Objekt.  
   
--   `IVsDebuggableProjectCfg`ist optional, das Konfigurationsobjekt gekennzeichnet, aber für das debugging-Unterstützung ist erforderlich.  
+-   `IVsDebuggableProjectCfg` ist optional, das Konfigurationsobjekt gekennzeichnet, aber für das debugging-Unterstützung ist erforderlich.  
   
--   `IVsProjectCfg2`ist optional, das Konfigurationsobjekt gekennzeichnet, aber für die Ausgabe gruppieren Support benötigt wird.  
+-   `IVsProjectCfg2` ist optional, das Konfigurationsobjekt gekennzeichnet, aber für die Ausgabe gruppieren Support benötigt wird.  
   
 -   Die `Config Provider` Objekt ist als ein optionales Objekt gekennzeichnet, aber die Option ist, wo Sie sie implementieren. Das Objekt kann auf das Objekt oder ein separates Objekt implementiert werden.  
   
--   `IVsCfgProvider2`für die Plattform-Unterstützung und Bearbeiten der Konfiguration ist erforderlich. `IVsCfgProvider`ist ausreichend, wenn Sie diese Funktion nicht implementieren.  
+-   `IVsCfgProvider2` für die Plattform-Unterstützung und Bearbeiten der Konfiguration ist erforderlich. `IVsCfgProvider` ist ausreichend, wenn Sie diese Funktion nicht implementieren.  
   
 -   Einige dieser Objekte, die im Diagramm angezeigt werden, als separate Objekte in derselben Klasse wo praktikabel kombiniert werden können, basierend auf Ihren bestimmten Designanforderungen. In anderen Themen in diesem Abschnitt werden jedoch die Objekte und Schnittstellen, die diesen Objekten zugeordneten entsprechend in der Abbildung dargestellten Szenario besprochen.  
   

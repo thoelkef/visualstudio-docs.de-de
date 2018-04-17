@@ -2,28 +2,24 @@
 title: 'Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas für | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f329464b37d9b7de037523735cc09ff95dce3bd
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5f72640369152b03ef86383fda1162b1cfbacba8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, das im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
@@ -55,7 +51,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
 
 1.  Erstellen Sie eine besondere Art von Kategorie Registrierungseintrags in folgendem Verzeichnis:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\*\<Kategorie >*]
 
      *\<Kategorie >* der nicht lokalisierte Name der Kategorie.
 
@@ -65,7 +61,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
     |----------|----------|----------|-----------------|
     |Kategorie|REG_SZ|GUID|Eine beliebige GUID, die eine Kategorie identifiziert, die die vordefinierten Schriftarten und Farbschemas enthält.|
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Diese GUID wird von allen VSPackages verwendet, die die Standardkonfigurationen für Schriftart und Farbe zu verwenden.|
-    |NameID|REG_DWORD|Id|Die Ressourcen-ID, der einen lokalisierbaren Kategorienamen im VSPackage.|
+    |"NameID"|REG_DWORD|Id|Die Ressourcen-ID, der einen lokalisierbaren Kategorienamen im VSPackage.|
     |ToolWindowPackage|REG_SZ|GUID|Die GUID der VSPackage-Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.|
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>So initiieren Sie die Verwendung von vom System bereitgestellte Schriftarten und Farben

@@ -1,27 +1,25 @@
 ---
 title: Implementieren von Einzeldatei Generatoren | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom tools, implementing
 - projects [Visual Studio SDK], extensibility
 - projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b9fed2f4118600c48ad6cb769c8e697b06ae77d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71db8036634cfc266db3c585c48317262f48b367
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-single-file-generators"></a>Implementieren von Einzeldatei Generatoren
 Ein benutzerdefiniertes Tool – auch bezeichnet als eine einzelne Datei-Generator – dienen zum Erweitern der [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsysteme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein benutzerdefiniertes Tool ist eine COM‑Komponente, implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Schnittstelle. Verwenden diese Schnittstelle, wandelt ein benutzerdefiniertes Tool eine einzelne Eingabedatei in einer einzigen Ausgabedatei an. Das Ergebnis der Transformation werden Quellcode, oder jede andere Ausgabe, die nützlich ist. Zwei Beispiele für benutzerdefinierte Tools generierten Codedateien werden als Reaktion auf Änderungen in einem visuellen Designer und fügt Dateien mithilfe von Web Services Description Language (WSDL) generiert generierten Code.  

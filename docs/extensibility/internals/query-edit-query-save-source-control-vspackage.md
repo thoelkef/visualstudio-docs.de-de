@@ -1,30 +1,28 @@
 ---
 title: Fragen Sie die Abfrage speichern (Source Control VSPackage) bearbeiten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - QEQS events
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf4fd74544e0646a84e4fdc37f35ba84b301f693
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Edit-Abfrage speichern (Source Control VSPackage)
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Editoren können Ereignisse Abfrage bearbeiten Abfrage speichern (QEQS) übertragen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Source Control Stub implementiert den Dienst QEQS, damit sie die Empfänger von QEQS Ereignissen ist. Diese Ereignisse werden dann an das derzeit aktive Quellsteuerelement VSPackage delegiert. Die aktive Datenquellen-Steuerelements, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editoren können Ereignisse Abfrage bearbeiten Abfrage speichern (QEQS) übertragen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Source Control Stub implementiert den Dienst QEQS, damit sie die Empfänger von QEQS Ereignissen ist. Diese Ereignisse werden dann an das derzeit aktive Quellsteuerelement VSPackage delegiert. Die aktive Datenquellen-Steuerelements, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave-Ereignisse  
  Die Datenquellen-Steuerelements VSPackage muss die QEQS Ereignisse behandeln, durch die Implementierung der `IVsQueryEditQuerySave2` Schnittstelle und die erforderlichen Methoden. Es folgt eine kurze Beschreibung der beiden Methoden, die mindestens das VSPackage implementieren müssen. Die tatsächliche Implementierung muss gemäß der Logik des Quellmodells Steuerelement sein.  

@@ -1,26 +1,24 @@
 ---
 title: Registrieren das Programm | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-the-program"></a>Registrieren das Programm
 Nachdem die Debugging-Modul einen Port abgerufen wurden, dargestellt durch eine [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle im nächsten Schritt aktivieren das Programm, das gedebuggt werden mit dem Port registriert ist. Nach der Registrierung kann das Programm debuggen, indem Sie eine der folgenden Methoden:  
@@ -35,7 +33,7 @@ Nachdem die Debugging-Modul einen Port abgerufen wurden, dargestellt durch eine 
   
 1.  Rufen Sie die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Methode, die vom Port implementiert.  
   
-     `IDebugPortNotify2::AddProgramNode`erfordert einen Zeiger auf eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
+     `IDebugPortNotify2::AddProgramNode` erfordert einen Zeiger auf eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
   
      Wenn das Betriebssystem oder die Laufzeitumgebung einer Anwendung geladen wird, erstellt es in der Regel die Programm-Knoten. Wenn die Debugging-Modul (DE) aufgefordert, laden das Programm anschließend DE erstellt und registriert die Programm-Knoten.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung | Microsoft Docs"
-ms.custom: 
+title: Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ermöglicht Entwicklern das Automatisieren von Tasks über die Befehlszeile beim devenv.exe, die Datei ausführen, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio wird gestartet.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht Entwicklern das Automatisieren von Tasks über die Befehlszeile beim devenv.exe, die Datei ausführen, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio wird gestartet.  
   
  U. a. folgende Aufgaben:  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 -   Beim Laden der IDE in bestimmten Konfigurationen von außerhalb der IDE. Darüber hinaus können Sie die IDE beim Start anpassen.  
   
 ## <a name="guidelines-for-switches"></a>Richtlinien für Switches  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Dokumentation beschreibt die Benutzerebene Devenv-Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Devenv unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen nützlich sind.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dokumentation beschreibt die Benutzerebene Devenv-Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Devenv unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen nützlich sind.  
   
 |Befehlszeilenschalter|Beschreibung|  
 |--------------------------|-----------------|  

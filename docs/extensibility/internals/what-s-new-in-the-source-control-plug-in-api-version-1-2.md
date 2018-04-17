@@ -1,28 +1,26 @@
 ---
-title: Was &#39; s in der Quelle-Plug-in-API-Version 1.2 steuern | Microsoft Docs
-ms.custom: 
+title: Was&#39;s in der Quelle steuern-Plug-in-API-Version 1.2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 409c862244b47970629ab57c6417dfc7f3b10a1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Welche &#39; s in Source Control-Plug-in-API-Version 1.2
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Was&#39;s in der Quelle steuern-Plug-in-API-Version 1.2
 In diesem Abschnitt werden die erweiterten Code Quellcodeverwaltungsfunktion in der Quelle Steuerelement-Plug-in-API Version 1.2 hervorgehoben. Im folgenden werden die neuen Funktionen in Version 1.2 aufgeführt:  
   
 ## <a name="changes"></a>Änderungen  

@@ -1,13 +1,10 @@
 ---
 title: Bereitstellen einer Office-Projektmappe mit Windows Installer | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Bereitstellen einer Office-Lösung mithilfe von Windows Installer
 Erfahren Sie, wie Sie mithilfe von [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]einen Windows Installer für Ihre Office-Projektmappe erstellen.  
@@ -93,7 +90,7 @@ Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limi
   
 #### <a name="to-get-installshield-limited-edition"></a>Abrufen der InstallShield Limited-Edition  
   
-1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
    Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
@@ -239,7 +236,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
   
 6. Navigieren Sie im Dialogfeld **Speichern unter** zu dem Ordner **Desktop** .  
   
-7. In der **Dateityp** wählen **alle Dateien (&#42;. &#42;)**.  
+7. In der **Dateityp** wählen **alle Dateien (&#42;.&#42;)** .  
   
 8. Geben Sie im Feld **Dateiname** **Visual Studio 2010 Tools for Office Runtime.prq**ein, und klicken Sie dann auf die Schaltfläche **Speichern** .  
   
@@ -493,7 +490,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
   
 13. Öffnen Sie die Projektdatei der Projektmappe in Editor. Für Visual Basic-Projekte der Name der Datei "ExcelWorkbook.vbproj". Für C#-Projekte der Name der Datei "ExcelWorkbook.csproj".  
   
-14. Suchen Sie in der Projektdatei die  **&lt;SolutionID&gt;**  -Element, dessen Wert in die Zwischenablage kopieren, und schließen Sie Editor.  
+14. Suchen Sie in der Projektdatei die **&lt;SolutionID&gt;** -Element, dessen Wert in die Zwischenablage kopieren, und schließen Sie Editor.  
   
    Übergeben Sie diesen Wert in der Konsolen-App als Parameter.  
   
@@ -533,7 +530,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
   
 9. Wählen Sie in der Menüleiste **Erstellen**, **OfficeAddInSetup erstellen**aus.  
   
-   Nachdem der Build abgeschlossen ist, finden Sie die Datei setup.exe von der **OfficeAddInSetup** Projekt am folgenden Speicherort: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Nachdem der Build abgeschlossen ist, finden Sie die Datei setup.exe von der **OfficeAddInSetup** Projekt am folgenden Speicherort: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ CD1\**  
   
   
 ## <a name="see-also"></a>Siehe auch  

@@ -1,26 +1,24 @@
 ---
-title: "Verwenden die Text-Manager zum Überwachen von globaler Einstellungen | Microsoft Docs"
-ms.custom: 
+title: Verwenden die Text-Manager zum Überwachen von globaler Einstellungen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - monitor global settings
 - editors [Visual Studio SDK], legacy - text manager
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e6c61a6859a2e8d359b2185ce959aa941944380f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Verwenden die Text-Manager zum Überwachen von globaler Einstellungen
 Wenn Sie einen Editor Core implementieren, müssen Sie die Änderungen an globalen Einstellungen sind überwachen, da diese Änderungen auf Ihre Instanz des Editors auswirken können. Sie können die Änderungen durch Überwachen von Ereignissen, die ausgelöst wird, durch den TextManager nachverfolgen. Beispielsweise, wenn Sie eine globale Einstellung für die Darstellung oder Verhalten einer Komponente in die Core-Editor, z. B. seine dokumentdatenobjekt angeben Text-Manager speichert diese Informationen und wird für alle betroffenen Clients kommuniziert.  

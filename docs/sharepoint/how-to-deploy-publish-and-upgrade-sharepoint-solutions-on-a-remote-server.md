@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Gewusst wie: Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen mit dem lokalen System aus, können Sie die SharePoint-sandkastenlösungen an Remotestandorten oder lokale SharePoint-Websites veröffentlichen. Die publishing Remoteprozess die WSP-Datei auf dem SharePoint-Server kopiert werden, installiert die Lösung, und dann können Sie die Projektmappe zu aktivieren. Sie können auch eine Remoteinstallation der SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen wurden.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Sandkasten SharePoint-Projekt, die Sie veröffentlichen, und wählen Sie dann möchten **veröffentlichen**.  
   
-2.  In der **veröffentlichen** Dialogfeld Wählen Sie die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und geben Sie dann eine URL für eine online veröffentlichen, wie im folgenden Beispiel: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  In der **veröffentlichen** Dialogfeld Wählen Sie die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und geben Sie dann eine URL für eine online veröffentlichen, wie im folgenden Beispiel: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Wählen Sie die **öffnen Sie die Seite für Solution Gallery nach dem Veröffentlichen im Browser** Optionsfeldes zum Anzeigen der Liste der Lösungen in der **Solution Gallery** Seite nach der Veröffentlichung.  
   

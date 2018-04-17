@@ -1,27 +1,25 @@
 ---
-title: "Wie VSPackages Elemente der Benutzeroberfläche hinzufügen | Microsoft Docs"
-ms.custom: 
+title: Wie VSPackages Elemente der Benutzeroberfläche hinzufügen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Wie VSPackages Elemente der Benutzeroberfläche hinzufügen
 Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, Symbolleisten und Toolfenster in Visual Studio mithilfe der VSCT-Datei.  
@@ -64,7 +62,7 @@ Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, 
 </Symbols>  
 ```  
   
- Element der obersten Ebene der `Symbols` Abschnitt ist die [GuidSymbol Element](../../extensibility/guidsymbol-element.md). `GuidSymbol`kartenelemente Namen GUIDs, die von der IDE verwendet werden, um Pakete und ihre Bestandteile zu identifizieren.  
+ Element der obersten Ebene der `Symbols` Abschnitt ist die [GuidSymbol Element](../../extensibility/guidsymbol-element.md). `GuidSymbol` kartenelemente Namen GUIDs, die von der IDE verwendet werden, um Pakete und ihre Bestandteile zu identifizieren.  
   
 > [!NOTE]
 >  GUIDs werden von der Visual Studio-Paketvorlage automatisch generiert. Sie können auch eine eindeutige GUID erstellen, indem Sie auf **GUID erstellen** auf die **Tools** Menü.  
@@ -195,11 +193,11 @@ priority="0x0100" type="Menu">
 |Element|In diesem Abschnitt der Befehlstabelle definierten|Möglicherweise enthalten sein (als übergeordnetes Element oder von der Position in der `CommandPlacements` Abschnitt oder beides)|Darf (bezeichnet als übergeordnetes Element)|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |Gruppieren|[Element für Gruppen](../../extensibility/groups-element.md), die IDE, andere VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|  
-|Menü|[Menüs Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|1 bis  *n*  Gruppen|0 bis  *n*  Gruppen|  
-|Symbolleiste|[Menüs Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|Das Element selbst|0 bis  *n*  Gruppen|  
-|Menübefehl|[Schaltflächen Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis  *n*  gruppiert werden, das Element selbst|-0 bis  *n*  Gruppen|  
-|Schaltfläche|[Schaltflächen Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis  *n*  gruppiert werden, das Element selbst||  
-|Kombinationsfeld|[Tastenkürzel Element](../../extensibility/combos-element.md), die IDE, andere VSPackages|1 bis  *n*  gruppiert werden, das Element selbst||  
+|Menü|[Menüs Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|1 bis *n* Gruppen|0 bis *n* Gruppen|  
+|Symbolleiste|[Menüs Element](../../extensibility/menus-element.md), die IDE, andere VSPackages|Das Element selbst|0 bis *n* Gruppen|  
+|Menübefehl|[Schaltflächen Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis *n* gruppiert werden, das Element selbst|-0 bis *n* Gruppen|  
+|Schaltfläche|[Schaltflächen Element](../../extensibility/buttons-element.md), die IDE, andere VSPackages|1 bis *n* gruppiert werden, das Element selbst||  
+|Kombinationsfeld|[Tastenkürzel Element](../../extensibility/combos-element.md), die IDE, andere VSPackages|1 bis *n* gruppiert werden, das Element selbst||  
   
 ### <a name="menu-command-and-group-placement"></a>Menü, einen Befehl, und Gruppe-Platzierung  
  Ein Menü, eine Gruppe oder ein Befehl kann in mehr als einer Position in der IDE angezeigt. Für ein Element an mehreren Positionen angezeigt, es muss hinzugefügt werden die `CommandPlacements` Abschnitt als eine [CommandPlacement Element](../../extensibility/commandplacement-element.md). Alle im Menü, eine Gruppe oder ein Befehl kann als ein Befehl Platzierung hinzugefügt werden. Allerdings können nicht Symbolleisten auf diese Weise positioniert werden, da sie in mehreren kontextbezogene Speicherorten auftreten können.  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>Sichtbarkeit Einschränkungen  
  Eine Einschränkung für die Sichtbarkeit wird festgelegt, wie eine [VisibilityItem Element](../../extensibility/visibilityitem-element.md) in die `VisibilityConstraints` Abschnitt. Eine Einschränkung Sichtbarkeit definiert bestimmte UI-Kontexten, die in denen des Zielelements sichtbar ist. Ein Menü oder einen Befehl, die in diesem Abschnitt enthalten ist, ist sichtbar, nur, wenn eine der definierten Kontexte aktiv ist. Wenn ein Menü oder einen Befehl nicht in diesem Abschnitt verwiesen wird, ist es immer standardmäßig sichtbar. Dieser Abschnitt gilt nicht für Gruppen.  
   
- `VisibilityItem`Elemente müssen drei Attribute aufweisen, wie folgt: das `guid` und `id` des Ziel-UI-Elements und `context`. Die `context` Attribut gibt an, wann des Zielelements werden angezeigt und akzeptiert gültige Benutzeroberflächenkontext als Wert. Die UI-Kontext-Konstanten für Visual Studio sind Mitglied der <xref:Microsoft.VisualStudio.VSConstants> Klasse. Jede `VisibilityItem` Element kann nur einen Kontextwert annehmen. Um einen zweiten Kontext anzuwenden, erstellen Sie eine zweite `VisibilityItem` Elements, für dasselbe Element verweist, wie im folgenden Beispiel gezeigt.  
+ `VisibilityItem` Elemente müssen drei Attribute aufweisen, wie folgt: das `guid` und `id` des Ziel-UI-Elements und `context`. Die `context` Attribut gibt an, wann des Zielelements werden angezeigt und akzeptiert gültige Benutzeroberflächenkontext als Wert. Die UI-Kontext-Konstanten für Visual Studio sind Mitglied der <xref:Microsoft.VisualStudio.VSConstants> Klasse. Jede `VisibilityItem` Element kann nur einen Kontextwert annehmen. Um einen zweiten Kontext anzuwenden, erstellen Sie eine zweite `VisibilityItem` Elements, für dasselbe Element verweist, wie im folgenden Beispiel gezeigt.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  Menü wird erstellt, selbst wenn er keine Gruppen oder Schaltflächen enthält.  
   
- Gültig für:`Menu`  
+ Gültig für: `Menu`  
   
  CommandWellOnly  
  Dieses Flag, wenn der Befehl nicht auf das Menü der obersten Ebene angezeigt, und es zusätzliche Shell Anpassung, verfügbar machen möchten z. B. angewendet werden, binden es an einen Schlüssel. Nach der Installation des VSPackages kann ein Benutzer diese Befehle anpassen, indem Sie öffnen die **Optionen** (Dialogfeld), und bearbeiten Sie dann die Platzierung der Befehl unter dem **Tastatur Umgebung** Kategorie. Bei der Platzierung in Kontextmenüs, Symbolleisten, Menücontroller oder Untermenüs hat keine Auswirkungen.  
   
- Gültig für: `Button`,`Combo`  
+ Gültig für: `Button`, `Combo`  
   
  DefaultDisabled  
  Der Befehl ist standardmäßig deaktiviert, wenn das VSPackage, die den Befehl nicht geladen wurde oder die QueryStatus-Methode nicht aufgerufen wurde.  
   
- Gültig für: `Button`,`Combo`  
+ Gültig für: `Button`, `Combo`  
   
  DefaultInvisible  
  Standardmäßig ist der Befehl nicht sichtbar, wenn das VSPackage, die den Befehl nicht geladen wurde oder die QueryStatus-Methode nicht aufgerufen wurde.  
   
  Kombiniert werden soll, mit der `DynamicVisibility` Flag.  
   
- Gültig für: `Button`, `Combo`,`Menu`  
+ Gültig für: `Button`, `Combo`, `Menu`  
   
  DynamicVisibility  
  Die Sichtbarkeit des Befehls geändert werden kann, über die QueryStatus-Methode oder einem Kontext GUID, die in enthalten ist das `VisibilityConstraints` Abschnitt.  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  Kombiniert werden soll, mit der `DefaultInvisible` Flag.  
   
- Gültig für: `Button`, `Combo`,`Menu`  
+ Gültig für: `Button`, `Combo`, `Menu`  
   
  NoShowOnMenuController  
  Wenn ein Befehl, der dieses Flag weist auf ein Menücontroller positioniert ist, wird der Befehl nicht in der Dropdown-Liste angezeigt.  
   
- Gültig für:`Button`  
+ Gültig für: `Button`  
   
  Weitere Informationen zu Befehlsflags, finden Sie unter der [Flags Befehlselement](../../extensibility/command-flag-element.md) Dokumentation.  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Darstellung der Schnittstelle-Element  
  Überlegungen für die Auswahl, und positionieren die Befehlselemente lauten wie folgt:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet viele Elemente der Benutzeroberfläche, die abhängig von der Platzierung unterschiedlich angezeigt werden.  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Elemente der Benutzeroberfläche, die abhängig von der Platzierung unterschiedlich angezeigt werden.  
   
 -   Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder angezeigt, durch die VSPackage-Implementierung von der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder in einem bestimmten UI-Kontext zugeordnet der `VisibilityConstraints` Abschnitt.  
   

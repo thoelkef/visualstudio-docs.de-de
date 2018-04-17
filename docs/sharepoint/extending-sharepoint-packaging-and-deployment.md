@@ -1,13 +1,10 @@
 ---
 title: Erweitern von SharePoint-Packen und-bereitstellen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Erweitern von SharePoint-Packen und -Bereitstellen
   Sie können den Paketerstellungs- und Bereitstellungsprozess für SharePoint-Projekte erweitern.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Eine exemplarische Vorgehensweise: erstellen ein Bereitstellungsschritts veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Erstellen von Bereitstellungskonfigurationen  
- Bei einer Bereitstellungskonfiguration handelt es sich um eine Reihe von Bereitstellungsschritten. Sie werden für ein angegebenes Projekt ausgeführt, können sich aber auf alle SharePoint-Projektelemente auswirken. Jede Bereitstellungskonfiguration umfasst einen Satz an Schritten, der beim Bereitstellen des Projekts ausgeführt wird, und einen anderen Satz, der ausgeführt wird, wenn das Projekt zurückgezogen wird. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]enthält zwei integrierte Bereitstellungskonfigurationen, aber Sie können auch eigene erstellen. Beim Erstellen einer Bereitstellungskonfiguration können Sie integrierte und von Ihnen erstellte Bereitstellungsschritte einbeziehen.  
+ Bei einer Bereitstellungskonfiguration handelt es sich um eine Reihe von Bereitstellungsschritten. Sie werden für ein angegebenes Projekt ausgeführt, können sich aber auf alle SharePoint-Projektelemente auswirken. Jede Bereitstellungskonfiguration umfasst einen Satz an Schritten, der beim Bereitstellen des Projekts ausgeführt wird, und einen anderen Satz, der ausgeführt wird, wenn das Projekt zurückgezogen wird. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] enthält zwei integrierte Bereitstellungskonfigurationen, aber Sie können auch eigene erstellen. Beim Erstellen einer Bereitstellungskonfiguration können Sie integrierte und von Ihnen erstellte Bereitstellungsschritte einbeziehen.  
   
  Eine exemplarische Vorgehensweise, die das Erstellen einer Bereitstellungskonfiguration veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

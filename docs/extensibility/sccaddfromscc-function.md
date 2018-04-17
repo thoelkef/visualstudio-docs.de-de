@@ -1,29 +1,25 @@
 ---
 title: SccAddFromScc Funktion | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc-Funktion
 Diese Funktion ermöglicht es dem Benutzer nach Dateien suchen, die bereits in das Quellcodeverwaltungssystem sind, und stellen anschließend diese Dateien Teil des aktuellen Projekts. Diese Funktion kann z. B. eine allgemeinen Headerdatei im aktuellen Projekt abrufen, ohne die Datei zu kopieren. Die zurückgegebenen Array von Dateien, `lplpFileNames`, enthält die Liste der Dateien, die der Benutzer möchte die IDE-Projekt hinzufügen.  
@@ -66,9 +62,9 @@ SCCRTN SccAddFromScc (
   
  Wenn der Aufruf von der `SccAddFromScc` Funktion zurückgibt, das plug-in weist Werte zugewiesen `lpnFiles` und `lplpFileNames`, belegen von Speicher für das Array des Datei-Namen nach Bedarf (Beachten Sie, dass diese Zuweisung den Zeiger im ersetzt `lplpFileNames`). Die Datenquellen-Steuerelement-Plug-in ist verantwortlich für alle Dateien platzieren, in dem Verzeichnis des Benutzers oder im Ordner "angegebenen Bezeichnung". Die IDE fügt dann die Dateien am IDE-Projekt.  
   
- Zum Schluss die IDE ruft diese Funktion ein zweites Mal übergeben `NULL` für `lpnFiles`. Dies wird als eine spezielle Signal interpretiert, von dem Datenquellen-Steuerelement-Plug-in den für das Array von Dateinamen in belegten Arbeitsspeicher freizugeben`lplpFileNames``.`  
+ Zum Schluss die IDE ruft diese Funktion ein zweites Mal übergeben `NULL` für `lpnFiles`. Dies wird als eine spezielle Signal interpretiert, von dem Datenquellen-Steuerelement-Plug-in den für das Array von Dateinamen in belegten Arbeitsspeicher freizugeben `lplpFileNames``.`  
   
- `lplpFileNames`ist eine `char ***` Zeiger. Die Datenquellen-Steuerelement-Plug-in wird einen Zeiger auf ein Array von Zeigern auf den Dateinamen, die Liste daher auf die übliche Weise übergeben, für diese API platziert.  
+ `lplpFileNames` ist eine `char ***` Zeiger. Die Datenquellen-Steuerelement-Plug-in wird einen Zeiger auf ein Array von Zeigern auf den Dateinamen, die Liste daher auf die übliche Weise übergeben, für diese API platziert.  
   
 > [!NOTE]
 >  Ursprüngliche Versionen der API VSSCI bot keine Möglichkeit, das Zielprojekt für die hinzugefügten Dateien anzugeben. Um dies die Semantik der Rechnung zu tragen die `lplpFIleNames` Parameter wurden verbessert, um ein in/Out-Parameter, anstatt ein Output-Parameter zu vereinfachen. Wenn nur eine einzelne Datei angegeben wird, d. h. der Wert verweist `lpnFiles` = 1, und klicken Sie dann auf das erste Element des `lplpFileNames` der Zielordner enthält. Verwenden Sie diese neue Semantik, die IDE-Aufrufe der `SccSetOption` -Funktion mit der `nOption`Parameter festgelegt wird, um `SCC_OPT_SHARESUBPROJ`. Wenn ein Quellcodeverwaltungs-Plug-in die Semantik nicht unterstützt, gibt es `SCC_E_OPTNOTSUPPORTED`. Auf diese Weise so deaktiviert der Verwendung von der **hinzufügen, aus der Quellcodeverwaltung** Funktion. Wenn eine-Plug-in unterstützt die **hinzufügen, aus der Quellcodeverwaltung** Feature (`SCC_CAP_ADDFROMSCC`), müssen sie unterstützen die neue Semantik und zurückgeben `SCC_I_SHARESUBPROJOK`.  

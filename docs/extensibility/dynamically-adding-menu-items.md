@@ -1,29 +1,25 @@
 ---
-title: "Dynamisches Hinzufügen von Menüelementen | Microsoft Docs"
-ms.custom: 
+title: Dynamisches Hinzufügen von Menüelementen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: bf7c9f8da800e827ac4b1993c55d4d96c8ca9d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamisches Hinzufügen von Menüelementen
 Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicItemStart` Befehl Flag für die Definition eines Platzhalter-Schaltfläche in der Visual Studio-Befehlstabelle (VSCT)-Datei, und dann definieren (im Code) die Anzahl der im Menü angezeigt, und behandeln die Befehle Elemente. Wenn das VSPackage geladen wird, wird der Platzhalter für die dynamische Menüelemente ersetzt.  

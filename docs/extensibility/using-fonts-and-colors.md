@@ -1,12 +1,10 @@
 ---
 title: Verwenden von Schriftarten und Farben | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK]
 - text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4415d00e5a1233bfdf14dbc86a3a7ed2f7b8e770
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-fonts-and-colors"></a>Verwenden von Schriftarten und Farben
 Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bietet Unterst체tzung f체r die Verwendung von Schriftarten und Farben zum Anzeigen von Text.  
@@ -46,7 +44,7 @@ Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bietet Unterst�
  [Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Erl채utert das Definieren und registrieren Sie eine Kategorie mit integrierten Schriftarten und Farben, und initiieren die Verwendung von vom System bereitgestellte Schriftarten und Farben.  
   
-## <a name="reference"></a>Verweis  
+## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
  Enth채lt eine Instanz von der `IVsFontAndColorDefaults` oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> Schnittstelle, die ein bestimmtes Element in aufgef체hrten entspricht, der **Einstellungen anzeigen f체r** in Liste der **Schriftarten und Farben** auf der Seite der **Optionen** (Dialogfeld).  
   

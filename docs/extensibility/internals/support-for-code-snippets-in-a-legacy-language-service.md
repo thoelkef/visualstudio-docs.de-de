@@ -1,27 +1,25 @@
 ---
-title: "Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: 
+title: Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: eb62481b9ba2c42ed067275480ba137b151a483b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst
 Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst finden Sie eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und kann haben unterschiedliche Werte je nach Zusammenhang, in der der Codeausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst den Ausschnitt formatieren.  

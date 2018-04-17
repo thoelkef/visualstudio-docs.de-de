@@ -1,27 +1,23 @@
 ---
 title: Text-Puffer-Ereignisse in die Legacy-API | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Text-Puffer-Ereignisse in die Legacy-API
 Die TextBuffer-Objekt gibt verschiedene Ereignisse, mit die verschiedene Situationen reagieren können.  
@@ -52,8 +48,8 @@ Die TextBuffer-Objekt gibt verschiedene Ereignisse, mit die verschiedene Situati
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Benachrichtigt Clients über Änderungen an der zugrunde liegenden Textpuffer in eindimensionale Koordinaten an.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Benachrichtigt Clients über Änderungen an der zugrunde liegenden Textpuffer in einem zweidimensionalen Koordinaten an.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Benachrichtigt Clients über Änderungen an Benutzerdaten.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsPreliminaryTextChangeCommitEvents`vor der anderen Ereignisse, z. B. Einrückung, ausgelöst wird, um sicherzustellen, dass die anderen Ereignisse bevor die Änderungen festgeschrieben werden nicht den Text ändern. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsFinalTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsFinalTextChangeCommitEvents`Dient zur Verwendung nur durch Sprachdienste oder andere Objekte, die vollständige über bearbeiten Kontrolle. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsPreliminaryTextChangeCommitEvents` vor der anderen Ereignisse, z. B. Einrückung, ausgelöst wird, um sicherzustellen, dass die anderen Ereignisse bevor die Änderungen festgeschrieben werden nicht den Text ändern. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsFinalTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsFinalTextChangeCommitEvents` Dient zur Verwendung nur durch Sprachdienste oder andere Objekte, die vollständige über bearbeiten Kontrolle. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Zugreifen auf den Textpuffer mithilfe der Legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

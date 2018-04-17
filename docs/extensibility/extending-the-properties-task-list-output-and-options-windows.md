@@ -1,12 +1,10 @@
 ---
 title: Erweitern die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Erweitern Sie die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows
 Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seiten- und eine neue Einstellung für die **Eigenschaften** Seite sowie Informationen zum Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.  
@@ -150,7 +148,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarische
   
      Wenn das Toolfenster Benutzern zur Verfügung steht, werden die Elemente im Listenfeld durch TodoItems dargestellt werden. Wenn der Benutzer eines dieser Elemente im Listenfeld wählt der **Eigenschaften** Fenster werden Informationen über das Element angezeigt.  
   
-     Um Daten in verfügbar machen die **Eigenschaften** Fenster, wandeln Sie die Daten in öffentlichen Eigenschaften, die zwei spezielle Attribute verfügen, `Description` und `Category`. `Description`ist der Text, der am unteren Rand der **Eigenschaften** Fenster. `Category`Bestimmt, in dem die Eigenschaft angezeigt werden sollte die **Eigenschaften** Fenster wird angezeigt, der **nach Kategorien** anzeigen. In der folgenden Abbildung der **Eigenschaften** Fenster befindet sich im **nach Kategorien** anzeigen, die **Namen** Eigenschaft in der **ToDo Fields** Kategorie ist ausgewählt, und die Beschreibung der **Namen** Eigenschaft wird am unteren Rand des Fensters angezeigt.  
+     Um Daten in verfügbar machen die **Eigenschaften** Fenster, wandeln Sie die Daten in öffentlichen Eigenschaften, die zwei spezielle Attribute verfügen, `Description` und `Category`. `Description` ist der Text, der am unteren Rand der **Eigenschaften** Fenster. `Category` Bestimmt, in dem die Eigenschaft angezeigt werden sollte die **Eigenschaften** Fenster wird angezeigt, der **nach Kategorien** anzeigen. In der folgenden Abbildung der **Eigenschaften** Fenster befindet sich im **nach Kategorien** anzeigen, die **Namen** Eigenschaft in der **ToDo Fields** Kategorie ist ausgewählt, und die Beschreibung der **Namen** Eigenschaft wird am unteren Rand des Fensters angezeigt.  
   
      ![Fenster "Eigenschaften"](../extensibility/media/t5properties.png "T5Properties")  
   

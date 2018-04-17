@@ -1,12 +1,10 @@
 ---
 title: Document-Tabelle mit | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Dokumenttabelle der ausgeführten
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur die Dokumenttabelle der ausgeführten (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument wird jeder, der beibehalten wird, einschließlich Dateien in einem Projekt oder die Haupt-Projektdatei (z. B. eine VCXPROJ-Datei).  
@@ -36,7 +34,7 @@ Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer interne
 |Dokumentmoniker|Eine Zeichenfolge, die das dokumentdatenobjekt eindeutig identifiziert. Dies wäre der absolute Dateipfad für ein Projektsystem, das Dateien (z. B. C:\MyProject\MyFile) verwaltet. Diese Zeichenfolge dient auch für Projekte, die im Speicher als Dateisystemen, z. B. gespeicherte Prozeduren in einer Datenbank gespeichert. In diesem Fall kann das Projektsystem eine eindeutige Zeichenfolge auswählen, die sie erkennen und möglicherweise analysieren, um zu bestimmen, wie Sie das Dokument speichern kann.|  
 |Besitzer der Hierarchie|Die Hierarchy-Objekt, das das Dokument besitzt, dargestellt durch eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle.|  
 |Element-ID|Element-ID für ein bestimmtes Element innerhalb der Hierarchie. Dieser Wert ist für alle Dokumente in der Hierarchie, die Besitzer dieses Dokuments ist, eindeutig dieser Wert wird jedoch nicht garantiert für unterschiedliche Hierarchien eindeutig sein.|  
-|Dokumentdatenobjekt|Die Mindestanforderung ist dies ein`IUnknown`<br /><br /> -Objekts. Die IDE erfordert eine bestimmte Schnittstelle hinter der `IUnknown` Schnittstelle für einen benutzerdefinierten Editor dokumentdatenobjekt. Allerdings für eine standard-Editors Implementierung des Editors die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> Schnittstelle ist erforderlich, um die Datei Persistenz Aufrufe aus dem Projekt zu verarbeiten. Weitere Informationen finden Sie unter [Speichern eines Standarddokumentspeicher-](../../extensibility/internals/saving-a-standard-document.md).|  
+|Dokumentdatenobjekt|Die Mindestanforderung ist dies ein `IUnknown`<br /><br /> -Objekts. Die IDE erfordert eine bestimmte Schnittstelle hinter der `IUnknown` Schnittstelle für einen benutzerdefinierten Editor dokumentdatenobjekt. Allerdings für eine standard-Editors Implementierung des Editors die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> Schnittstelle ist erforderlich, um die Datei Persistenz Aufrufe aus dem Projekt zu verarbeiten. Weitere Informationen finden Sie unter [Speichern eines Standarddokumentspeicher-](../../extensibility/internals/saving-a-standard-document.md).|  
 |Flags|Flags, die steuern, ob eine Sperre lesen oder bearbeiten angewendet wird, ob das Dokument gespeichert wird, usw., können angegeben werden, wenn die RDT Einträge hinzugefügt werden. Weitere Informationen finden Sie unter der <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>-Enumeration.|  
 |Bearbeiten Sie die Anzahl der Sperren|Die Anzahl der Sperren bearbeiten. Eine Sperre bearbeiten gibt an, dass einige Editor das Dokument zum Bearbeiten geöffnet hat. Wenn die Anzahl der Sperren bearbeiten auf Null geht, wird der Benutzer aufgefordert, das Dokument zu speichern, wenn er geändert wurde. Beispielsweise jedes Mal, wenn ein Dokument zu öffnen, in einem Editor mithilfe der **neues Fenster** Befehl, eine Sperre bearbeiten für das Dokument in der RDT hinzugefügt wird. Das Dokument muss in der Reihenfolge für eine Sperre bearbeiten festgelegt werden eine Hierarchie oder Element-ID|  
 |Anzahl von Lesevorgängen Sperre|Anzahl der gelesenen sperren. Eine Lesesperre gibt an, dass das Dokument über einen Mechanismus, z. B. ein Assistenten gelesen wird. Eine Lesesperre besitzt ein Dokument in der RDT aktiv, während gibt an, dass das Dokument nicht bearbeitet werden kann. Sie können eine Lesesperre festlegen, auch wenn das Dokument nicht über eine Hierarchie verfügen oder-ID Element Diese Funktion können Sie ein Dokument im Arbeitsspeicher zu öffnen, und geben ihn in die RDT ohne das Dokument eine beliebige Hierarchie gehört. Diese Funktion wird nur selten verwendet.|  

@@ -1,13 +1,10 @@
 ---
 title: ProjectOutputFile-Element | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b57f00960629d65f264f22532a16202d6ae5d7a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 52898168eb0debf047613a03702647195ab7d3cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile-Element
   Stellt die Ausgabe von einem separaten Projekt mit dem Projektelement eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.  
@@ -46,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|**ProjectId**|Erforderliche **xs: String** Attribut.<br /><br /> Die GUID des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dies entspricht der **ProjectGuid** Element in der abhängigen Projektdatei.|  
+|**projectId**|Erforderliche **xs: String** Attribut.<br /><br /> Die GUID des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dies entspricht der **ProjectGuid** Element in der abhängigen Projektdatei.|  
 |**ProjectPath**|Erforderliche **xs: String** Attribut.<br /><br /> Der relative Pfad, einschließlich des Dateinamens Projekt des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dieser Pfad ist relativ zum Stammordner der SharePoint-Projekt, das die SharePoint-Projektelement enthält.|  
 |**Target**|Optionale **xs: String** Attribut.<br /><br /> Der Pfad, in dem die Ausgabe des abhängigen Projekts ist, auf dem SharePoint-Server, relativ zum Stammordner Bereitstellung bereitgestellt werden. Stammordner der Bereitstellung richtet sich nach den Bereitstellungstyp, der gemäß der **Typ** Attribut.<br /><br /> Weitere Informationen finden Sie die Beschreibungen für die **Bereitstellungspfad** und **Bereitstellungsstamm-** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|Erforderliche **xs: String** Attribut.<br /><br /> Die Art der Bereitstellung für die Ausgabe des abhängigen Projekts verwendet werden soll. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|**Namespace**|http://Schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Schemaname**|SharePoint-Projektelementschema|  
 |**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
 |**Kann leer sein**|Nein|  

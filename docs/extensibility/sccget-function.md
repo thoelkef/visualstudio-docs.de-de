@@ -2,28 +2,24 @@
 title: SccGet Funktion | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie von einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zum Bearbeiten. In den meisten Systemen werden die Dateien als schreibgeschützt gekennzeichnet.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  Die `SCC_GET_ALL` Flag kann zusammen mit den `SCC_GET_RECURSIVE` Flag zum Abrufen aller Dateien in den angegebenen Verzeichnissen und auch alle Unterverzeichnisse.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`sollte nie übergeben werden, ohne dass `SCC_GET_ALL`. Beachten Sie, dass es sich bei Verzeichnissen C:\A und C:\A\B sind beides auf einen rekursiven übergeben, C:\A\B und alle Unterverzeichnisse tatsächlich zweimal abgerufen werden. Es liegt in der IDE Verantwortung – und nicht die Quelle zu steuern,-Plug-ins – um sicherzustellen, dass Duplikate wie diese aus dem Array gespeichert werden.  
+>  `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne dass `SCC_GET_ALL`. Beachten Sie, dass es sich bei Verzeichnissen C:\A und C:\A\B sind beides auf einen rekursiven übergeben, C:\A\B und alle Unterverzeichnisse tatsächlich zweimal abgerufen werden. Es liegt in der IDE Verantwortung – und nicht die Quelle zu steuern,-Plug-ins – um sicherzustellen, dass Duplikate wie diese aus dem Array gespeichert werden.  
   
  Selbst wenn eine Quelle-Plug-in zu steuern, schließlich angegeben die `SCC_CAP_GET_NOUI` Flag bei der Initialisierung, der angibt, dass er verfügt nicht über eine Benutzeroberfläche für einen Get-Befehl, der diese Funktion kann von der IDE zum Abrufen von Dateien weiterhin aufgerufen werden. Das Flag bedeutet lediglich, dass die IDE eine Get-Menüelement nicht angezeigt und, dass das plug-in nicht wird erwartet, dass Benutzeroberfläche bereitstellen.  
   

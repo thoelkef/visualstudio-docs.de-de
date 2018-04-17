@@ -1,13 +1,10 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 235d98ba6a5ca665857b8a18db5ca823ecc0c7c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Wenn der Benutzer eine Quelle-Steuerungsvorgang aus innerhalb der integrierten Entwicklungsumgebung (IDE) ausgeführt wird, sollten die Datenquellen-Steuerelements, das Plug-in-Fehler oder Status-Nachrichten, die im Zusammenhang mit dem Betrieb zu vermitteln. Das plug-in kann einen eigenen Meldungsfelder für diesen Zweck angezeigt. Allerdings können für weitere nahtlose Integration, das plug-in Zeichenfolgen an der IDE übergeben, die klicken Sie dann auf die systemeigene Weise zum Anzeigen von Statusinformationen werden angezeigt. Der Mechanismus dafür ist die `LPTEXTOUTPROC` -Funktionszeiger. Die IDE implementiert diese Funktion (im folgenden ausführlicher beschrieben) für die Anzeige von Fehler- und statusmeldungen.  
@@ -75,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Strukturen  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled  
+###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp  
 typedef struct {  
@@ -85,7 +81,7 @@ typedef struct {
   
  Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_IS_CANCELLED` Nachricht. Es wird verwendet, um die ID des Hintergrundvorgangs im zu kommunizieren, die abgebrochen wurde.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile  
+###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp  
 typedef struct {  
@@ -96,7 +92,7 @@ typedef struct {
   
  Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` Nachricht. Es wird zur Kommunikation der Name der Datei abgerufen werden sollen und die ID des Hintergrundvorgangs im, die das Abrufen von auf diese Weise wird verwendet.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile  
+###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp  
 typedef struct {  
@@ -108,7 +104,7 @@ typedef struct {
   
  Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` Nachricht. Es wird zur Kommunikation des Ergebnis zum Abrufen der angegebenen Datei als auch die ID des Hintergrundvorgangs im, die das Abrufen wurde verwendet. Siehe die Rückgabewerte für die [SccGet](../extensibility/sccget-function.md) für was daher gewährt werden können.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage  
+###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

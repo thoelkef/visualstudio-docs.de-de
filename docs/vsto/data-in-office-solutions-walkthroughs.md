@@ -1,12 +1,10 @@
 ---
 title: Daten in Office-Projektmappen exemplarischen Vorgehensweisen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Exemplarische Vorgehensweisen für Daten in Office-Projektmappen
   In den folgenden exemplarischen Vorgehensweisen wird das Arbeiten mit Daten in Anpassungen auf Dokumentebene und in VSTO-Add-Ins für Microsoft Office Word und Microsoft Office Excel veranschaulicht.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)   
  [Sicherheit und Bereitstellung Exemplarische Vorgehensweisen](../vsto/security-and-deployment-walkthroughs.md)   
  [Office-Entwicklungsbeispiele](../vsto/office-development-samples.md)   
- [Erste Schritte &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
   

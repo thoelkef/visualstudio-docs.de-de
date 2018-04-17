@@ -1,27 +1,25 @@
 ---
 title: Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14ea2e0bcc11324e6529c70c04c11874ec4a3399
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-directory-description-vsdir-files"></a>Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien
 Eine Vorlage Directory Beschreibungsdatei (VSDIR) ist eine Textdatei, mit der integrierten Entwicklungsumgebung (IDE) für die Anzeige Ordnern, Assistenten .vsz-Dateien und Dateien, die Ihr Projekt in Dialogfeldern zugeordnet sind. Den Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Alle VSDIR-Dateien in einer referenzierten Speicherorts werden zusammengeführt, obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben.  

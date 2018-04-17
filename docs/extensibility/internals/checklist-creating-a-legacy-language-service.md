@@ -1,26 +1,24 @@
 ---
-title: "Prüfliste: Erstellen eines Vorgängerversion Sprachdiensts | Microsoft Docs"
-ms.custom: 
+title: 'Prüfliste: Erstellen eines Vorgängerversion Sprachdiensts | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b09176efca3a8839d5e6a741a1e161ff61cdc7ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ad407d85213bf640b8631e9fbcb12b681ac87406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacy-Sprachdiensts
 Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte, die Sie ergreifen müssen, damit erstellen Sie einen Sprachdienst für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Core-Editor. Integrieren Sie Ihre Sprache Service in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in der [Visual Studio-Debugger-Erweiterbarkeits](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

@@ -2,24 +2,20 @@
 title: Schriftarten und Formatierungen für Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 22e765916a19caeff643e25f97f4d0d4f91669c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -415,19 +411,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Syntax:** selten. Eindeutige Branding UI nur.<br /><br /> **Do:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 34 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> *Derzeit verwendet nicht. Kann auf der Startseite verwendet werden.*|  
+|**Syntax:** selten. Eindeutige Branding UI nur.<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 34 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> *Derzeit verwendet nicht. Kann auf der Startseite verwendet werden.*|  
   
 #### <a name="310-environment-font--light"></a>Umgebungsschriftart 310 % + dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Do:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 310 % &#43; Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 310 % &#43; Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Umgebungsschriftart 200 % + halb dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Aufgliederung<br />-Titel in kleinen und mittleren Dialogfelder<br /><br /> **Do:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Verwenden Sie immer Gewichtung halb dünne Darstellung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 200 % &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**Syntax:**<br /><br /> -Aufgliederung<br />-Titel in kleinen und mittleren Dialogfelder<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Verwenden Sie immer Gewichtung halb dünne Darstellung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 200 % &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
   
@@ -451,7 +447,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -"Bezeichnungen" und untergeordnete in Dialogfeldern Signatur<br />-"Bezeichnungen" und untergeordnete in Berichten<br />-"Bezeichnungen" Unterüberschriften im Dokument außerdem UI<br /><br /> **Do:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />– Verwenden Sie die fett formatierten Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Auswahl kursiver oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Überschrift in Fettformatierung](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 F_EFB")|  
+|**Syntax:**<br /><br /> -"Bezeichnungen" und untergeordnete in Dialogfeldern Signatur<br />-"Bezeichnungen" und untergeordnete in Berichten<br />-"Bezeichnungen" Unterüberschriften im Dokument außerdem UI<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />– Verwenden Sie die fett formatierten Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Auswahl kursiver oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Überschrift in Fettformatierung](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 F_EFB")|  
   
 #### <a name="environment-font"></a>Umgebungsschriftart  
   

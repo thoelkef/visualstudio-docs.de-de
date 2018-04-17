@@ -1,29 +1,25 @@
 ---
 title: SccInitialize Funktion | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize-Funktion
 Diese Funktion initialisiert den Datenquellen-Steuerelement-Plug-in und enthält Funktionen und Beschränkungen für die integrierte Entwicklungsumgebung (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  Die `lpCallerName` und `lpSccName` Typparameter ermöglichen es der IDE und die Datenquellen-Steuerelement-Plug-In für den Nachrichtenaustausch Namen. Diese Namen können einfach, zur Unterscheidung zwischen mehreren Instanzen verwendet werden, oder sie möglicherweise tatsächlich in Menüs oder Dialogfeldern angezeigt.  
   
- Die `lpAuxPathLabel` Parameter ist eine Zeichenfolge, die als Kommentar verwendet werden, um den zusätzlichen Projektpfad zu identifizieren, die in der Projektmappendatei gespeichert und übergeben das Quellsteuerelement-Plug-in in einem Aufruf der [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]die Zeichenfolge "SourceSafe-Projekt:"; andere Datenquellen-Steuerelement-Plug-ins muss mit dieser bestimmten Zeichenfolge fest.  
+ Die `lpAuxPathLabel` Parameter ist eine Zeichenfolge, die als Kommentar verwendet werden, um den zusätzlichen Projektpfad zu identifizieren, die in der Projektmappendatei gespeichert und übergeben das Quellsteuerelement-Plug-in in einem Aufruf der [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] die Zeichenfolge "SourceSafe-Projekt:"; andere Datenquellen-Steuerelement-Plug-ins muss mit dieser bestimmten Zeichenfolge fest.  
   
  Die `lpSccCaps` Parameter enthält das Quellsteuerelement-Plug-in einen Ort zum Speichern von Bitflags, der angibt, das Plug-in Funktionen. (Eine vollständige Liste der Funktion Bitflags finden Sie unter [Capability Flags](../extensibility/capability-flags.md)). Für die Instanz, wenn die Plug-in-Pläne, Ergebnisse in eine Rückruffunktion vom Aufrufer bereitgestellter zu schreiben, das plug-in legen die Funktion SCC_CAP_TEXTOUT bit. Dies würde die IDE beim Erstellen eines Fensters für Version Steuerelement Ergebnisse zu signalisieren.  
   

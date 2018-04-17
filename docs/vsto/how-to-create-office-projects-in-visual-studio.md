@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Erstellen von Office-Projekten in Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
 - VST.SelectDocWizard.Http
@@ -23,16 +21,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 60addb19ba78734237e6ccf888cdb69f2629f98c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Gewusst wie: Erstellen von Office-Projekten in Visual Studio
-  Sie können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Erstellen von VSTO-Add-in und auf Dokumentebene Anpassungen für Microsoft Office-Anwendungen. Weitere Informationen zu diesen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Sie können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Erstellen von VSTO-Add-in und auf Dokumentebene Anpassungen für Microsoft Office-Anwendungen. Weitere Informationen zu diesen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -149,7 +148,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Öffnen Sie in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]-Projekt nur in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] erstellte oder in dieses Format konvertierte Dokumente. Öffnen Sie entsprechend in einem Word 2010-Projekt nur in Word 2010 erstellte oder in dieses Format konvertierte Dokumente. Bestimmte Funktionen werden im Dokument deaktiviert, wenn Sie ein Dokument öffnen, das in einer früheren Word-Version erstellt wurde. Wenn Sie Code schreiben, von dem diese Funktionen verwendet werden, können Fehler im Projekt auftreten. Zum Konvertieren eines Dokuments öffnen Sie es in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder Word 2010, auf die **Datei** Menüband auf die Registerkarte, und wählen Sie **Info**, **konvertieren**.  
   
-8.  Wählen Sie **Fertig stellen**.  
+8.  Klicken Sie auf **Fertig stellen**.  
   
 9. Fügen Sie der Liste von vertrauenswürdigen Speicherorten im Sicherheitscenter in Word in den folgenden Fällen den Projektordner und seine Unterordner hinzu:  
   

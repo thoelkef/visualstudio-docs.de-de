@@ -1,27 +1,25 @@
 ---
-title: "Lösung (. Sln) Datei | Microsoft Docs"
-ms.custom: 
+title: Lösung (. Sln) Datei | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>Lösung (. Sln)-Datei
 Eine Lösung ist eine Struktur zum Organisieren von Projekten in Visual Studio. Die Lösung behält die Zustandsinformationen für Projekte in sln (textbasierten, freigegebenen) und .suo (binär, benutzerspezifische Projektmappenoptionen)-Dateien. Weitere Informationen zu SUO-Dateien finden Sie unter [-projektmappenbenutzeroptionen (. Suo) Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -96,7 +94,7 @@ EndGlobal
   
  Wenn Informationen gespeichert werden sollen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> Schnittstelle wird aufgerufen, mit einem Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> Methode. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> aufgerufen wird dann von der Umgebung zum Abrufen von Name / Wert-Paare aus `IPropertyBag` Schnittstelle, und Schreiben der Informationen in der SLN-Datei.  
   
- `SaveSolutionProps`und `WriteSolutionProps` Objekte rekursiv aufgerufen werden, von der Umgebung zum Abrufen von Informationen gespeichert werden, aus der `IPropertyBag` -Schnittstelle, bis alle Änderungen in der SLN-Datei eingegeben wurden. Auf diese Weise können Sie sicherstellen, dass die Informationen mit der Lösung und die verfügbaren beim nächsten der Projektmappe öffnen beibehalten wird.  
+ `SaveSolutionProps` und `WriteSolutionProps` Objekte rekursiv aufgerufen werden, von der Umgebung zum Abrufen von Informationen gespeichert werden, aus der `IPropertyBag` -Schnittstelle, bis alle Änderungen in der SLN-Datei eingegeben wurden. Auf diese Weise können Sie sicherstellen, dass die Informationen mit der Lösung und die verfügbaren beim nächsten der Projektmappe öffnen beibehalten wird.  
   
  Jedes geladene VSPackage wird aufgelistet, um festzustellen, ob alles sln-Datei zu speichern. Es ist nur zur Ladezeit, die die Registrierungsschlüssel abgefragt werden. Die Umgebung weiß über alle geladenen Pakete, da es im Speicher zum Zeitpunkt sind, in die Projektmappe gespeichert wird.  
   

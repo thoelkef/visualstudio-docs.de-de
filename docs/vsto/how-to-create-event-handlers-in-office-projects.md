@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c392d365ca14daeb204f4ee2f331bb1fe86ad304
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 833e41979d1dac9def7e647b396161d0ac5e2b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten
   Es gibt mehrere Möglichkeiten, Ereignishandler in Visual Basic und c# zu erstellen. In der Entwurfsansicht können Sie die Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder verwenden Sie den Ereignisbereich "von der **Eigenschaften** Fenster Handler für jedes Ereignis auf das Steuerelement zu erstellen. Jedoch, wenn Sie in der Codeansicht sind, nicht empfiehlt, wechseln Sie zur Entwurfsansicht, um einen Ereignishandler zu erstellen.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in c#  
   
-1.  Erstellen Sie den Ereignisdelegaten in der **Start** -Ereignis für die Klasse durch den qualifizierten Namen gefolgt von einem Leerzeichen eingeben, und geben dann  **+=**  ohne Leerzeichen im Anschluss. Zum Beispiel:  
+1.  Erstellen Sie den Ereignisdelegaten in der **Start** -Ereignis für die Klasse durch den qualifizierten Namen gefolgt von einem Leerzeichen eingeben, und geben dann **+=** ohne Leerzeichen im Anschluss. Zum Beispiel:  
   
      `this.<object name>.<event name> +=`  
   

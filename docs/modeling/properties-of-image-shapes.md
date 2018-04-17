@@ -1,10 +1,8 @@
 ---
 title: Eigenschaften des Image Formen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
@@ -12,30 +10,30 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d4e2c06252659c126fc2e73b7a90973d3d624636
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b1edd5ffadedd0af66b43902bc865b71243a92d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 Image-Formen können Sie angeben, wie Domänenklassen in einem generierten Designer angezeigt werden. Definieren Sie eine Form "Image", durch Festlegen der `Image` Eigenschaft der Klasse, die ein vordefiniertes Image-Datei. Die folgenden Formate werden unterstützt:  
   
 -   GIF  
   
--   .jpg  
+-   JPG  
   
 -   JPEG  
   
 -   .bmp  
   
--   .wmf  
+-   WMF  
   
--   .emf  
+-   .EMF  
   
 -   .png  
   

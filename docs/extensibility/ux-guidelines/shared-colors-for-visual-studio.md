@@ -1,23 +1,21 @@
 ---
-title: "Freigegebene Farben für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Freigegebene Farben für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 Wenn Sie beim Entwerfen Benutzeroberfläche mit gängigen Visual Studio-Shell-Elementen, Sie möchten oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, verwenden Sie Tokennamen Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.  
@@ -858,7 +856,7 @@ Die Dropdown-suchfeldmenü kann etwas komplexer als andere Dropdownmenüs in Vis
 | Linkhintergrund | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Farbverlaufsstopps für dieses Token in Benutzeroberflächen mit Designs nicht verwendet.) |
 | Vordergrund (Linktext) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Strukturansichten  
+###  <a name="BKMK_TreeView"></a> Strukturansichten  
 Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in gesteuert werden, die `TreeView` Kategorie. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.  
 
 ![Strukturansicht ((rote Linie))](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Strukturansicht ((rote Linie))
@@ -1041,7 +1039,7 @@ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8
 
 ## <a name="command-structures"></a>Befehlsstrukturen  
 
-###  <a name="BKMK_CommandMenus"></a>Menüs  
+###  <a name="BKMK_CommandMenus"></a> Menüs  
 Menüs können an mehreren Stellen in Visual Studio auftreten: der Hauptmenüleiste, eingebettet in Dokument-oder Toolfenstern oder beim Rechtsklicken an verschiedenen Stellen der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.  
 
 ![Visual Studio-Menü ((rote Linie))](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio-Menü ((rote Linie))
@@ -1282,7 +1280,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Vordergrund (Text) | `Environment.CommandBarTextInactive` |
 | Rahmen | Nicht zutreffend |
 
-####  <a name="BKMK_CommandComboBox"></a>Befehlsleiste-Kombinationsfelder
+####  <a name="BKMK_CommandComboBox"></a> Befehlsleiste-Kombinationsfelder
 
 > [!IMPORTANT]
 > Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich keine enthält, verwenden Sie die farbtoken für [Dropdownlisten Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 **Dropdown-Schaltfläche der Befehlsleiste: Standardstatus**  
 
-![Kombinationsfeld Feld Drop &#45; nach-unten-Schaltfläche](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Befehlsleisten-Dropdown-Schaltfläche
+![Kombinationsfeld Feld Drop&#45;gedrückt](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Befehlsleisten-Dropdown-Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Befehlsleiste Dropdowns
+####  <a name="BKMK_CommandDropDown"></a> Befehlsleiste Dropdowns
 
 > [!IMPORTANT]
 >  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die farbtoken für [Kombinationsfelder Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
  **Befehlsleiste Dropdown-Auswahlfeld: gedrückten Zustand**  
 
-![Drop &#45; unten Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Gedrückt Befehl Strich Dropdown-Auswahlfeld
+![Drop&#45;unten Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Gedrückt Befehl Strich Dropdown-Auswahlfeld
 
 | Element | Tokenname: Category.color |
 | --- | --- |

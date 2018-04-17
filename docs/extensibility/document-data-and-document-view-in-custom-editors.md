@@ -2,26 +2,22 @@
 title: Dokumentdaten und Document in benutzerdefinierte Editoren anzeigen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-caps.latest.revision: 23
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb445ca70ac74cf2601e9f1035549bb686fca798
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokumentdaten und Dokumentenansicht in benutzerdefinierten Editoren
 Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt und ein Document-Objekt. Wie die Namen erkennen lassen, das dokumentdatenobjekt stellt die Textdaten, die angezeigt werden, und die dokumentansichtsobjekts (oder "View") stellt ein oder mehrere Fenster, in dem das dokumentdatenobjekt angezeigt.  
@@ -29,9 +25,9 @@ Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt 
 ## <a name="document-data-object"></a>Dokumentdatenobjekt  
  Ein dokumentdatenobjekt ist eine Darstellung der Daten des Texts in den Textpuffer. Es ist ein COM-Objekt, das speichert Dokumenttext und andere Informationen, Dokument Persistenz behandelt und mehrere Ansichten für seine Daten ermöglicht. Weitere Informationen finden Sie unter  
   
- <xref:EnvDTE80.Window2.DocumentData%2A>und [Dokumentfenster](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> und [Dokumentfenster](../extensibility/internals/document-windows.md).  
   
- Benutzerdefinierte Editoren und Designern können wahlweise verwenden die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt oder ihre eigenen benutzerdefinierten Puffer. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>folgt das Einbetten von vereinfachte Modell für eine standard-Editor unterstützt mehrere Ansichten und bietet Ereignisschnittstellen, die verwendet werden, um mehrere Ansichten zu verwalten.  
+ Benutzerdefinierte Editoren und Designern können wahlweise verwenden die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt oder ihre eigenen benutzerdefinierten Puffer. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> folgt das Einbetten von vereinfachte Modell für eine standard-Editor unterstützt mehrere Ansichten und bietet Ereignisschnittstellen, die verwendet werden, um mehrere Ansichten zu verwalten.  
   
 ## <a name="document-view-object"></a>Dokumentansichtsobjekts  
  Ein Fenster, in dem Code und anderer Text angezeigt wird bezeichnet als ein Dokument oder der Ansicht. Wenn Sie einen Editor erstellen, können Sie auswählen, einer einzelnen Ansicht, in der Text in einem einzelnen Fenster angezeigt wird oder eine mehrere Ansichten, in dem Text in mehr als ein Fenster angezeigt wird. Ihre Wahl hängt von der Anwendung ab. Wenn die gewünschte Seite-an-Seite zu bearbeiten, würden Sie z. B. mehrere Ansichten auswählen. Jede Ansicht ist ein Eintrag in der integrierten Entwicklungsumgebung des (IDE) ausgeführt wird (RDT) der Document-Tabelle zugeordnet. Fenster gehören zu einem Projekt oder einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt.  

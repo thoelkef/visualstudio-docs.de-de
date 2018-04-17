@@ -1,27 +1,25 @@
 ---
 title: Aktualisieren von Projekten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 Ändert eine Version der in das Projektmodell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zur nächsten erfordern, dass Projekte und Projektmappen aktualisiert werden, sodass sie auf die neuere Version ausgeführt werden können. Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] stellt Schnittstellen, die zum Implementieren von upgradeunterstützung in Ihren eigenen Projekten verwendet werden können.  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
   
  Weitere Informationen zum Sichern und Aktualisieren von Projekten finden Sie unter die Kommentare für IVsProjectUpgrade in vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>Aktualisieren von benutzerdefinierten Projekten
+## <a name="upgrading-custom-projects"></a> Aktualisieren von benutzerdefinierten Projekten
 Wenn Sie die in der Projektdatei dauerhaft gespeicherten Informationen zwischen verschiedenen Visual Studio-Versionen Ihres Produkts ändern, müssen Sie das Durchführen eines Upgrades der Projektdatei von der alten auf die neue Version unterstützen. Zur Unterstützung der aktualisieren, die Ihnen ermöglicht, die Teilnahme an der **Visual Studio-Konvertierungs-Assistenten**, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Schnittstelle. Diese Schnittstelle stellt das einzige verfügbare Verfahren zum Durchführen von Kopierupgrades dar. Das Upgrade des Projekts erfolgt im Rahmen des Öffnens der Projektmappe. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Schnittstelle wird von der Factory Projekt implementiert oder sollte vom Werk Projekt mindestens erhältlich sein.  
   
  Der alte Mechanismus, verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Schnittstelle wird weiterhin unterstützt, jedoch grundsätzlich aktualisiert das Projektsystem als Teil des Projekts öffnen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Schnittstelle wird daher von aufgerufen, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung erstellen, selbst wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> -Schnittstelle aufgerufen wird oder implementiert. Dieser Ansatz ermöglicht Ihnen die Verwendung <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Projekt nur Teile des Upgrades, implementieren die Kopie und Delegieren der Rest der Arbeit direktes (möglicherweise in den neuen Speicherort) durchgeführt werden, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Schnittstelle.  
@@ -92,7 +90,7 @@ Wenn Sie die in der Projektdatei dauerhaft gespeicherten Informationen zwischen 
   
 5.  Verwenden Sie die Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> Upgrade buchen bezogene Nachrichten für den Benutzer, die mit Visual Studio-Paketmigrations-Assistenten.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>Schnittstelle wird verwendet, um jede Art von dateiupgrade zu implementieren, die im Rahmen eines Projektupgrades erfolgen muss. Diese Schnittstelle wird nicht aufgerufen, von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, jedoch wird angegeben, wie möglicherweise nicht direkt über ein Mechanismus, um Dateien zu aktualisieren, die das Projektsystem, sondern dass das Hauptprojekt System gehören. Diese Situation kann beispielsweise eintreten, wenn die compilerbezogenen Dateien und Eigenschaften nicht vom gleichen Entwicklungsteam wie der Rest des Projektsystems betreut werden.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> Schnittstelle wird verwendet, um jede Art von dateiupgrade zu implementieren, die im Rahmen eines Projektupgrades erfolgen muss. Diese Schnittstelle wird nicht aufgerufen, von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, jedoch wird angegeben, wie möglicherweise nicht direkt über ein Mechanismus, um Dateien zu aktualisieren, die das Projektsystem, sondern dass das Hauptprojekt System gehören. Diese Situation kann beispielsweise eintreten, wenn die compilerbezogenen Dateien und Eigenschaften nicht vom gleichen Entwicklungsteam wie der Rest des Projektsystems betreut werden.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade-Implementierung  
  Wenn Ihr Projektsystem implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> es kann nur nicht Teil der **Visual Studio-Konvertierungs-Assistenten**. Allerdings auch, wenn Sie implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> -Schnittstelle, können Sie weiterhin den dateiupgrade zu delegieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Implementierung.  

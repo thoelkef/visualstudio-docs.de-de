@@ -1,27 +1,23 @@
 ---
-title: "Befehle, die nach der Installation ausgeführt werden müssen | Microsoft Docs"
-ms.custom: 
+title: Befehle, die nach der Installation ausgeführt werden müssen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden muss
 Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie ausführen `devenv /setup` im Rahmen der Installation in der Reihenfolge für Visual Studio, um Ihre Erweiterungen zu ermitteln.  
@@ -73,7 +69,7 @@ Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie aus
  Benutzerdefinierte Aktionen müssen in die Tabelle InstallExecuteSequence so planen Sie sie für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung, um zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist nicht auf dem System installiert.  
   
 > [!NOTE]
->  `Null`Eigenschaften, die zum Auswerten `False` bei der Verwendung in Bedingungen.  
+>  `Null` Eigenschaften, die zum Auswerten `False` bei der Verwendung in Bedingungen.  
   
  Der Wert der Sequence-Spalte für jede benutzerdefinierte Aktion hängt von anderen Sequence-Werte in der Windows Installer-Paket. Sequenzwerte sollte sein, sodass die ausführende devenv.exe für benutzerdefinierte Aktionen als möglich, direkt vor dem die Standardaktionen InstallFinalize schließen.  
   

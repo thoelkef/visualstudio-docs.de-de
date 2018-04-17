@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Schritten zur Bereitstellung in einer bestimmten Reihenfolge. Visual Studio enthält viele integrierte Bereitstellungsschritte, aber Sie können auch eigene erstellen.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+2.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.  
   
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wählen Sie die **VSIX-Projekt** Vorlage, nennen Sie das Projekt **UpgradeDeploymentStep**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **UpgradeDeploymentStep** Projekt **Projektmappen-Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **UpgradeDeploymentStep** Projekt **Projektmappen-Explorer**.  
   
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wählen Sie die **-Klassenbibliothek** -Projektvorlage aus, nennen Sie das Projekt **DeploymentStepExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **DeploymentStepExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **DeploymentStepExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Wählen Sie die **Fertig stellen** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt das Projekt EmployeesListDefinition.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projekt EmployeesListDefinition.  
   
 8.  Öffnen Sie das Kontextmenü für das EmployeesListDefinition-Projekt, wählen Sie **hinzufügen**, und wählen Sie dann **neues Element**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Standardwert (leer)** ausgewählt wird, der **erstellen Sie eine anpassbare Liste basierend auf:** Liste.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Das Listenelement für Mitarbeiter mit einer Titelspalte und eine leere Instanz erstellt und der Liste-Designer geöffnet.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Das Listenelement für Mitarbeiter mit einer Titelspalte und eine leere Instanz erstellt und der Liste-Designer geöffnet.  
   
 12. In den Listen-Designer auf die **Spalten** Registerkarte, und wählen Sie die **Geben Sie einen neuen oder vorhandenen Spaltennamen** Zeile aus, und fügen Sie die folgenden Spalten in der **Spalte Anzeigename** Liste:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Die Eigenschaften-Editor/Designer wird geöffnet.  
   
-4.  Auf der **Ansichten** Registerkarte, und wählen Sie die **E-Mail** Spalte, und wählen Sie dann die  **<**  Taste gedrückt, um diese Spalte aus der **ausgewählte Spalten**Liste der **verfügbaren Spalten** Liste.  
+4.  Auf der **Ansichten** Registerkarte, und wählen Sie die **E-Mail** Spalte, und wählen Sie dann die **<** Taste gedrückt, um diese Spalte aus der **ausgewählte Spalten**Liste der **verfügbaren Spalten** Liste.  
   
      Diese Aktion entfernt diese Felder aus der Standardansicht des der **Mitarbeiter** Liste auf der SharePoint-Website.  
   

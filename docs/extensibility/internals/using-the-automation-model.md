@@ -1,27 +1,23 @@
 ---
-title: "Über das Automatisierungsmodell | Microsoft Docs"
-ms.custom: 
+title: Über das Automatisierungsmodell | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 525ed35f8d015661316bbd7d794cdcb246ba1e96
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 679e9966e66de1c79cb3c6394f1d80ab6d6733bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-automation-model"></a>Mithilfe des Automatisierungsmodells
 Nachdem Sie Ihr VSPackage für die Automatisierung verbunden haben, erhalten Sie die Eigenschaften und Methoden durch Aufrufen der <xref:EnvDTE.DTEClass.GetObject%2A> Methode für die <xref:EnvDTE._DTE> Objekt auf und übergibt eine Zeichenfolge, die das Objekt, das Sie abrufen möchten.  

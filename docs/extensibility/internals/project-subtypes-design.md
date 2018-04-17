@@ -2,26 +2,22 @@
 title: Projekt-Untertypen Entwurf | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 32
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Projekt Untertypen Entwurf
 Projekt Untertypen können VSPackages, Projekte, die basierend auf der Microsoft Build Engine (MSBuild) zu erweitern. Die Verwendung von Aggregation können Sie die Wiederverwendung des Großteil der verwalteten Core Projektsystem implementiert der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] noch immer noch das Verhalten für ein bestimmtes Szenario anpassen.  
@@ -63,7 +59,7 @@ Mit mehreren Ebenen Projektuntertyp
  Eine Projekt mit mehreren Ebenen Untertyp Aggregation besteht aus drei Ebenen, eine Basis-Projekt, das durch einen Projektuntertyp aggregiert ist, dann wird durch ein Projektuntertyp des erweiterten weiter aggregiert. Die Abbildung konzentriert sich auf einige unterstützenden Schnittstellen, die als Teil einer bereitgestellt werden die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt Untertyp-Architektur.  
   
 ##### <a name="deployment-mechanisms"></a>Bereitstellungsmechanismen  
- Von vielen der Basisprojektsystem sind Funktionen erweitert, indem ein Projektuntertyp Bereitstellungsmechanismen. Ein Projektuntertyp beeinflusst Bereitstellungsmechanismen durch Konfigurationsschnittstellen implementieren (z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) abgerufen, die durch Aufrufen von QueryInterface auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. In einem Szenario, in dem andere Konfiguration Implementierungen mit den Untertyp des Projekts und Untertyp des erweiterten Projekts hinzufügen, ruft der Basisprojekt `QueryInterface` im erweiterten Projekt Untertyp `IUnknown`. Wenn der Projektuntertyp des inneren die Konfiguration Implementierung, von der das Basisprojekt angefordert wird enthält, delegiert Untertyp des erweiterten Projekts für die Implementierung von Untertyp des inneren Projekts bereitgestellt. Als Mechanismus, um den Status von einem Aggregationsebene zu einem anderen beibehalten, alle Ebenen der Projekt-Untertypen implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> beziehen Sie XML-Daten in den Projektdateien, Build nicht beibehalten werden. Weitere Informationen finden Sie unter [beibehalten von Daten in der MSBuild-Projektdatei](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>wird als Mechanismus zum Abrufen von Automatisierungsextender aus dem Projekt Untertypen implementiert.  
+ Von vielen der Basisprojektsystem sind Funktionen erweitert, indem ein Projektuntertyp Bereitstellungsmechanismen. Ein Projektuntertyp beeinflusst Bereitstellungsmechanismen durch Konfigurationsschnittstellen implementieren (z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) abgerufen, die durch Aufrufen von QueryInterface auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. In einem Szenario, in dem andere Konfiguration Implementierungen mit den Untertyp des Projekts und Untertyp des erweiterten Projekts hinzufügen, ruft der Basisprojekt `QueryInterface` im erweiterten Projekt Untertyp `IUnknown`. Wenn der Projektuntertyp des inneren die Konfiguration Implementierung, von der das Basisprojekt angefordert wird enthält, delegiert Untertyp des erweiterten Projekts für die Implementierung von Untertyp des inneren Projekts bereitgestellt. Als Mechanismus, um den Status von einem Aggregationsebene zu einem anderen beibehalten, alle Ebenen der Projekt-Untertypen implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> beziehen Sie XML-Daten in den Projektdateien, Build nicht beibehalten werden. Weitere Informationen finden Sie unter [beibehalten von Daten in der MSBuild-Projektdatei](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> wird als Mechanismus zum Abrufen von Automatisierungsextender aus dem Projekt Untertypen implementiert.  
   
  Die folgende Abbildung konzentriert sich auf die Automatisierung Extender Implementierung, das Projekt durchsuchen Konfigurationsobjekt insbesondere vom Projekt Untertypen verwendet, um das Basisprojektsystem zu erweitern.  
   

@@ -1,27 +1,23 @@
 ---
-title: "Angabe Rückgängig-Unterstützung für Designer | Microsoft Docs"
-ms.custom: 
+title: Angabe Rückgängig-Unterstützung für Designer | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Angeben von Rückgängig-Unterstützung für Designer
 Designer, z. B. Editor, festzulegen, müssen in der Regel Rückgängig-Vorgängen zu unterstützen, sodass Benutzer ihre zuletzt vorgenommenen Änderungen umzukehren können ein Codeelement zu ändern.  
@@ -30,7 +26,7 @@ Designer, z. B. Editor, festzulegen, müssen in der Regel Rückgängig-Vorgänge
   
  Designer-Implementierungen, die die Funktion zum Rückgängigmachen unterstützen müssen:  
   
--   Rückgängig-Verwaltung bereitstellt, durch die Implementierung der abstrakten Klasse<xref:System.ComponentModel.Design.UndoEngine>  
+-   Rückgängig-Verwaltung bereitstellt, durch die Implementierung der abstrakten Klasse <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Geben Persistenz und CodeDOM-Unterstützung durch Implementieren der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Klassen.  
   
@@ -73,7 +69,7 @@ Designer, z. B. Editor, festzulegen, müssen in der Regel Rückgängig-Vorgänge
   
  Das SDK-Umgebung bietet CodeDOM und Persistenz durch Angabe:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>als eine Implementierung von der<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> als eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  Ein <xref:System.ComponentModel.Design.IComponentChangeService> gebotenen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' Entwurfshost.  
   
@@ -100,7 +96,7 @@ Designer, z. B. Editor, festzulegen, müssen in der Regel Rückgängig-Vorgänge
   
 -   Eigenschaft Änderungen werden über die <xref:System.ComponentModel.TypeDescriptor> Objekt.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>Ereignisse werden manuell generiert, wenn eine Änderung am undoable ein Commit ausgeführt wird.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> Ereignisse werden manuell generiert, wenn eine Änderung am undoable ein Commit ausgeführt wird.  
   
 -   Änderung im Designer erstellt wurde, im Rahmen einer <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

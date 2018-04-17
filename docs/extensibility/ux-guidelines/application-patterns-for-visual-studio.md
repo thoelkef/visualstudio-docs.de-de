@@ -1,26 +1,24 @@
 ---
-title: "Anwendungsmuster für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Anwendungsmuster für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
-##  <a name="BKMK_WindowInteractions"></a>Fenster Interaktionen  
+##  <a name="BKMK_WindowInteractions"></a> Fenster Interaktionen  
   
 ### <a name="overview"></a>Übersicht  
 In Visual Studio verwendet die beiden im Hauptfenster-Typen sind Dokument-Editoren und Toolfenster. Seltene, aber möglich, sind große nicht modale Dialogfelder. Obwohl es sich alle in der Shell nicht modalen handelt, sind ihre Muster grundlegend. Dieser Abschnitt behandelt den Unterschied zwischen Dokumentfenster und Toolfenster nicht modale Dialogfelder. Modales Dialogfeld Muster finden Sie [Dialoge](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
@@ -42,7 +40,7 @@ Denken Sie an, zu dem Container müssen Sie sorgfältig. Häufige Muster Aspekte
 | **Instanzen** | *Mit mehreren Instanzen*<br /><br /> Einige Editoren können am selben Zeit und Bearbeitung von anderen Dateien, geöffnet sein, während einige Editoren auch die gleiche Datei im Editor für mehrere geöffnet sein können (mithilfe der **Fenster &gt; neues Fenster** Befehl).<br /><br /> Ein einzigen Editor möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer) bearbeiten. | *Einzelne oder mehrere instance*<br /><br /> Inhalt ändern, um widerzuspiegeln Kontext (wie in den Eigenschaftenbrowser) oder den Fokus/Kontext einen push an andere Windows (Aufgabenliste, Projektmappen-Explorer).<br /><br /> Sowohl mit mehreren Instanzen als auch Einzelinstanz-Toolfenster darf das aktive Fenster zugeordnet sein, es sei denn, es ist kein zwingender Grund nicht zu. | *Einfache Instanz* |  
 | **Beispiele** | **Text-Editoren**, wie im Code-Editor<br /><br /> **Entwurfsoberflächen**wie ein Formular-Designer oder eine Fläche, die Modellierung<br /><br /> **Steuern des Layouts Dialoge ähnelt**, wie Sie den Manifest-Designer | Die **Projektmappen-Explorer** bietet eine Lösung und innerhalb der Projektmappe enthaltenen Projekte<br /><br /> Die **Server-Explorer** wird eine hierarchische Ansicht von Servern und Verbindungen, die der Benutzer entscheidet, in das Fenster zu öffnen. Öffnen ein Objekt aus der Datenbank, wie eine Abfrage wird ein Dokumentfenster geöffnet und ermöglicht dem Benutzer, die Abfrage zu bearbeiten.<br /><br /> Die **Eigenschaftenbrowser** zeigt die Eigenschaften für das Objekt entweder in einem Dokumentfenster oder anderen Toolfenster ausgewählt. Die Eigenschaften werden in einer hierarchischen Rasteransicht oder in komplexen Dialogfeld Like-Steuerelementen angezeigt und ermöglicht dem Benutzer die Werte für diese Eigenschaften festzulegen. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Toolfenster  
+##  <a name="BKMK_ToolWindows"></a> Toolfenster  
   
 ### <a name="overview"></a>Übersicht  
 Toolfenster unterstützen des Benutzers arbeiten, die in den Dokumentfenstern geschieht. Sie können verwendet werden, um eine Hierarchie anzuzeigen, die eine grundlegende Stammobjekt darstellt, die Visual Studio bietet, und bearbeiten können.  
@@ -149,7 +147,7 @@ Beispiele für Toolfenster navigierbar Liste sind im Projektmappen-Explorer und 
 | Register ||  
 | Threads ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Dokument-Editor-Konventionen  
+##  <a name="BKMK_DocumentEditorConventions"></a> Dokument-Editor-Konventionen  
   
 ### <a name="document-interactions"></a>Dokument-Interaktionen  
 "Document gut" ist die größte Fläche in der IDE und, in denen der Benutzer in der Regel ihre Aufmerksamkeit liegt der Schwerpunkt um ihre Aufgaben von ergänzenden Toolfenster unterstützt werden. Dokument-Editoren stellen die grundlegenden Arbeitseinheiten, die der Benutzer öffnet und speichert in Visual Studio dar. Behalten sie eine hohe Auswahl mit Projektmappen-Explorer oder anderen Fenstern aktiven Hierarchie verknüpft sind. Der Benutzer sollte sein können, zeigen Sie auf eines der diese Hierarchie-Fenster, und wissen, wo das Dokument enthalten ist und seine Beziehung auf die Projektmappe, das Projekt oder einer anderen Stammobjekt, die von einem Visual Studio-Paket bereitgestellt.  
@@ -257,7 +255,7 @@ Es gibt auch mehrere nicht-Editor-Typen, die das Dokument verwenden. Während si
   
 -   Benutzer müssen mit den Steuerelementen, die über Tastatur, entweder durch Aktivieren des Editors und mit der Tabulatortaste Steuerelemente oder mithilfe von standard Mnemonik interagieren können.  
   
-##  <a name="BKMK_Dialogs"></a>Dialogfelder  
+##  <a name="BKMK_Dialogs"></a> Dialogfelder  
   
 ### <a name="introduction"></a>Einführung  
 Dialogfelder in Visual Studio unterstützen sollte in der Regel eine einzelne Arbeitseinheit des Benutzers und anschließend verworfen werden.  
@@ -313,12 +311,12 @@ Betrachten Sie die Unterschiede zwischen diesen grundlegenden Typen von Dialogfe
   
 -   [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) eignen sich für das Umleiten von des Benutzers über eine logische Sequenz von Schritten, die auf den Abschluss einer Aufgabe. In sequenziellen Bereiche, in einigen Fällen Einführung in anderen Workflows ("Verzweigung") eine Auswahl in der vorherigen Seite abhängig sind eine Reihe von Optionen angeboten.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Einfache Dialogfelder  
+####  <a name="BKMK_SimpleDialogs"></a> Einfache Dialogfelder  
 Ein einfaches Dialogfeld ist eine Präsentation von Steuerelementen in einem einzelnen modale Fenster. In dieser Präsentation kann Variationen des komplexen Steuerelementmuster, z. B. einer Feldauswahl enthalten. Führen Sie für einfache Dialoge das Standardlayout allgemeine als auch bestimmten Layout für komplexe Steuerelement Gruppierungen erforderlich sind.
   
 ![> erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 Artikelnr 01_CreateStrongNameKey")<br />Erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio.
   
-####  <a name="BKMK_LayeredDialogs"></a>Mehrschicht-Dialogfelder  
+####  <a name="BKMK_LayeredDialogs"></a> Mehrschicht-Dialogfelder  
 Überlappende Dialoge enthalten Registerkarten, Dashboards und eingebettete Strukturen. Sie werden verwendet, um die Immobilien zu maximieren, wenn es mehrere Gruppen von Steuerelementen, die in ein einzelnes Stück UI angeboten werden. Die Gruppierungen sind überlagernd, damit der Benutzer die Gruppierung auf einem beliebigen Zeitpunkt sehen kann.  
   
 Im einfachsten Fall ist der Mechanismus für den Wechsel zwischen Gruppierungen ein Registerkarten-Steuerelement. Stehen verschiedene Alternativen zur Verfügung. Festlegen der Priorität und Ebenen für das am besten geeignete Format auswählen angezeigt.  
@@ -327,7 +325,7 @@ Die **Tools &gt; Optionen** Dialog ist ein Beispiel für ein Dialogfeld mit Eben
   
 ![Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 Artikelnr 02_ToolsOptions")<br />Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio.
   
-####  <a name="BKMK_Wizards"></a>Assistenten  
+####  <a name="BKMK_Wizards"></a> Assistenten  
 Assistenten eignen sich für das Umleiten von des Benutzers über eine logische Sequenz von Schritten bei der Durchführung einer Aufgabe. Eine Reihe von Optionen werden in sequenziellen Bereiche angeboten, und der Benutzer muss bei jedem Schritt vor dem Fortfahren auf die nächste folgen. Sobald genügend Standardwerte verfügbar sind, werden die **Fertig stellen** Schaltfläche ist aktiviert.  
   
  Modale-Assistenten für Aufgaben verwendet werden, die:  
@@ -408,7 +406,7 @@ Verwenden Sie keine Zugriffstasten für **OK**, **"Abbrechen"**, oder **Hilfe** 
 #### <a name="imagery"></a>Bilder  
 Verwenden Sie Bilder sparsam in Dialogfeldern. Verwenden Sie keine große Symbole in Dialogfeldern lediglich zum Speicherplatz zu verwenden. Verwenden Sie Bilder aus, nur dann, wenn sie ein wichtiger Bestandteil die Nachricht an den Benutzer wie Warnsymbole oder Status Animationen vermittelt werden.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Priorisieren und Ebenen  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Priorisieren und Ebenen  
   
 #### <a name="prioritizing-your-ui"></a>Priorisieren die Benutzeroberfläche  
 Es möglicherweise erforderlich, weisen Sie bestimmte Elemente der Benutzeroberfläche der Forefront und platzieren Sie erweiterte Verhalten und die Optionen (einschließlich kryptische Befehle) in Dialogfeldern. Plazieren Sie häufig verwendete Funktionen der Forefront durch Platz dafür vornehmen und es sichtbar gemacht wird standardmäßig in der Benutzeroberfläche mit einer textbezeichnung Wenn das Dialogfeld angezeigt wird.  
@@ -423,7 +421,7 @@ Es gibt vor- und Nachteile der verschiedenen Methoden überlagern Benutzeroberfl
 | Mechanismus wechseln | Vorteile und die richtige Verwendung | Nachteile und nicht ordnungsgemäße Verwendung |  
 | --- | --- | --- |  
 | Registersteuerelement | Dialogfelder in Verwandte Gruppen logisch zu gruppieren<br /><br />Für weniger als fünf (oder die Anzahl der Registerkarten, die in einer Zeile entsprechen, über das Dialogfeld ") hilfreich Seiten von verwandten Steuerelementen im Dialogfeld"<br /><br />Registerkartenbezeichnungen müssen kurz sein: ein oder zwei Wörter, die schnell den Inhalt<br /><br />Eine allgemeine System Dialogfeld Stil<br /><br />Beispiel: **-Datei-Explorer &gt; Elementeigenschaften** | Beschreibende kurze Bezeichnungen vornehmen kann schwierig sein<br /><br />In der Regel Skalierung keine nach fünf Registerkarten in einem Dialogfeld<br /><br />Ungeeignete haben zu viele Registerkarten für eine Zeile (verwenden Sie eine alternative Strukturlayout Technik)<br /><br />Nicht erweiterbare |  
-| Seitenleistennavigation | Einfache switching Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste der Kategorien (ohne Hierarchie)<br /><br />Erweiterbare<br /><br />Beispiel: **anpassen... &gt;Hinzufügen (Befehl)** | Nicht für eine gute Verwendung für horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Task möglicherweise besser geeignet, um eine Dropdownliste |  
+| Seitenleistennavigation | Einfache switching Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste der Kategorien (ohne Hierarchie)<br /><br />Erweiterbare<br /><br />Beispiel: **anpassen... &gt; Hinzufügen (Befehl)** | Nicht für eine gute Verwendung für horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Task möglicherweise besser geeignet, um eine Dropdownliste |  
 | Struktursteuerelement | Ermöglicht unbegrenzte Kategorien<br /><br />Ermöglicht die Gruppierung und/oder die Hierarchie der Kategorien<br /><br />Erweiterbare<br /><br />Beispiel: **Tools &gt; Optionen** | Stark geschachtelte Hierarchien, so kann eine übermäßige horizontalen Bildlauf<br /><br />Visual Studio verfügt über eine Overabundance von Strukturansichten |  
 | Assistent | Unterstützt Sie bei Abschluss der Aufgabe von spaltenänderungsattributen des Benutzers über aufgabenbasierte, aufeinander folgende Schritte aus: der Assistent stellt eine übergeordnete Aufgabe und die einzelnen Bereiche darstellen, Unteraufgaben erforderlich, um die gesamte Aufgabe<br /><br />Ist nützlich, wenn die Aufgabe über Ui, mehrere als wenn der Benutzer andernfalls müssten verwenden Sie mehrere Editoren und Toolfenstern zum Abschließen der Aufgabe<br /><br />Ist nützlich, wenn der Task Verzweigung erfordert<br /><br />Ist nützlich, wenn die Aufgabe Abhängigkeiten zwischen den Schritten enthält<br /><br />Ist nützlich, wenn mehrere ähnliche Aufgaben mit einer Entscheidung Verzweigung in einem Dialogfeld zum Reduzieren der Anzahl der verschiedenen ähnliche Dialogfelder angezeigt werden kann | Ungeeignet für jede Aufgabe, die einen sequenziellen Workflow keine erforderlich<br /><br />Benutzer können überschwemmt und von einem Assistenten mit zu viele Schritte verwechselt werden.<br /><br />Assistenten haben grundsätzlich Bildschirmfläche beschränkt. |  
   
@@ -437,7 +435,7 @@ Alternativ können Sie eine Benutzeroberfläche, die alle verfügbaren Funktione
 ##### <a name="adaptive-ui"></a>Adaptive UI  
 Ein- oder Ausblenden der Benutzeroberfläche basierend auf Nutzung oder eine Self-gemeldeten benutzererfahrung ist eine weitere Möglichkeit zur Darstellung der benötigten Benutzeroberfläche und gleichzeitig andere Teile von. Dies wird in Visual Studio, nicht empfohlen, die Algorithmen für die Entscheidung, wann ein- oder Ausblenden der Benutzeroberfläche können kompliziert sein, und die Regeln werden immer in der falschen für einige Satz von Fällen.  
   
-##  <a name="BKMK_Projects"></a>Projekte  
+##  <a name="BKMK_Projects"></a> Projekte  
   
 ### <a name="projects-in-the-solution-explorer"></a>Projekte im Projektmappen-Explorer  
 Die meisten Projekte werden als verweisbasierten, Directory-basierte oder gemischten klassifiziert. Alle drei Typen von Projekten werden im Projektmappen-Explorer gleichzeitig unterstützt. Der Stamm der benutzererfahrung bei der Arbeit mit Projekten findet in diesem Fenster an. Obwohl verschiedene Projektknoten Verweis, Verzeichnis oder im gemischten Modus Typ Projekte sind, besteht ein allgemeines Interaktionsmuster, das als Ausgangspunkt angewendet werden soll, bevor in Mustern für projektspezifische Benutzer gehen auseinander.  
@@ -508,19 +506,19 @@ Der Benutzer sollte immer sein können, um zu bestimmen, die Auswirkungen eines 
 | Kein Modifizierer | Aktion | Verschieben | Link |  
 | Kein Modifizierer | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Verweis auf das ursprüngliche Element hinzugefügt |  
 | Kein Modifizierer | Quelle | Löscht Verweis zum ursprünglichen Element | Behält die ursprünglichen Element |  
-| Kein Modifizierer | Ergebnis | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_LINK`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
+| Kein Modifizierer | Ergebnis | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_LINK` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
 | Umschalt + Ziehen | Aktion | Verschieben | Keine Ablage |  
 | Umschalt + Ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Keine Ablage |  
 | Umschalt + Ziehen | Quelle | Löscht Verweis zum ursprünglichen Element | Keine Ablage |  
-| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | Keine Ablage |  
+| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | Keine Ablage |  
 | STRG + Ziehen | Aktion | Kopieren | Keine Ablage |  
 | STRG + Ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Keine Ablage |  
 | STRG + Ziehen | Quelle | Verweis auf das ursprüngliche Element behält | Keine Ablage |  
-| STRG + Ziehen | Ergebnis | `DROPEFFECT_COPY`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | Keine Ablage |  
+| STRG + Ziehen | Ergebnis | `DROPEFFECT_COPY` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | Keine Ablage |  
 | STRG + UMSCHALT + ziehen | Aktion | Link | Link |  
 | STRG + UMSCHALT + ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Verweis auf das ursprüngliche Element hinzugefügt |  
 | STRG + UMSCHALT + ziehen | Quelle | Verweis auf das ursprüngliche Element behält | Behält die ursprünglichen Element |  
-| STRG + UMSCHALT + ziehen | Ergebnis | `DROPEFFECT_LINK`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_LINK`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
+| STRG + UMSCHALT + ziehen | Ergebnis | `DROPEFFECT_LINK` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_LINK` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
 | STRG + UMSCHALT + ziehen | Hinweis | Identisch mit Drag & Drop-Verhalten für Verknüpfungen im Windows-Explorer. ||  
 | Ausschneiden und einfügen | Aktion | Verschieben | Link |  
 | Ausschneiden und einfügen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Verweis auf das ursprüngliche Element hinzugefügt |  
@@ -538,15 +536,15 @@ In der folgenden Tabelle werden die Drag & Drop (sowie Ausschneiden/Kopieren/Ein
 | --- | --- | --- | --- |  
 | Kein Modifizierer | Aktion | Verschieben | Verschieben |  
 | Kein Modifizierer | Ziel | Kopien Element aus, um den Zielspeicherort an | Kopien Element aus, um den Zielspeicherort an |  
-| Kein Modifizierer | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Verweis zum ursprünglichen Element | | Kein Modifizierer | Ergebnis | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
+| Kein Modifizierer | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Verweis zum ursprünglichen Element | | Kein Modifizierer | Ergebnis | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
 | Umschalt + Ziehen | Aktion | Verschieben | Verschieben |  
 | Umschalt + Ziehen | Ziel | Kopien Element aus, um den Zielspeicherort an | Kopien Element aus, um den Zielspeicherort an |  
 | Umschalt + Ziehen | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Element aus der ursprünglichen Speicherort |
-| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
+| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
 | STRG + Ziehen | Aktion | Kopieren | Kopieren |  
 | STRG + Ziehen | Ziel | Kopien Element aus, um den Zielspeicherort an | Kopien Element aus, um den Zielspeicherort an |  
 | STRG + Ziehen | Quelle | Verweis auf das ursprüngliche Element behält | Verweis auf das ursprüngliche Element behält |  
-| STRG + Ziehen | Ergebnis | `DROPEFFECT_COPY`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_COPY`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
+| STRG + Ziehen | Ergebnis | `DROPEFFECT_COPY` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_COPY` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |  
 | STRG + UMSCHALT + ziehen | | Keine Ablage | Keine Ablage |  
 | Ausschneiden und einfügen | Aktion | Verschieben | Verschieben |  
 | Ausschneiden und einfügen | Ziel | Kopien Element aus, um den Zielspeicherort an | Kopien Element aus, um den Zielspeicherort an |  
@@ -565,19 +563,19 @@ Die folgende Tabelle fasst die Drag & Drop (sowie Ausschneiden/Kopieren/Einfüge
 | Kein Modifizierer | Aktion | Verschieben | Verschieben |
 | Kein Modifizierer | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Kopien Element aus, um den Zielspeicherort an |
 | Kein Modifizierer | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Verweis zum ursprünglichen Element |
-| Kein Modifizierer | Ergebnis | `DROPEFFECT_ MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ MOVE`wird als Aktion zurückgegeben `::Drop` und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird |
+| Kein Modifizierer | Ergebnis | `DROPEFFECT_ MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ MOVE` wird als Aktion zurückgegeben `::Drop` und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird |
 | Umschalt + Ziehen | Aktion | Verschieben | Verschieben |
 | Umschalt + Ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Kopien Element aus, um den Zielspeicherort an |
 | Umschalt + Ziehen | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Element aus der ursprünglichen Speicherort | 
-| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_ MOVE`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ MOVE`wird als Aktion zurückgegeben `::Drop` und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird |
+| Umschalt + Ziehen | Ergebnis | `DROPEFFECT_ MOVE` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ MOVE` wird als Aktion zurückgegeben `::Drop` und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird |
 | STRG + Ziehen | Aktion | Kopieren | Kopieren |
 | STRG + Ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Kopien Element aus, um den Zielspeicherort an |
 | STRG + Ziehen | Quelle | Verweis auf das ursprüngliche Element behält | Behält die ursprünglichen Element |
-| STRG + Ziehen | Ergebnis | `DROPEFFECT_ COPY`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ COPY`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |
+| STRG + Ziehen | Ergebnis | `DROPEFFECT_ COPY` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ COPY` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |
 | STRG + UMSCHALT + ziehen | Aktion | Link | Link |
 | STRG + UMSCHALT + ziehen | Ziel | Verweis auf das ursprüngliche Element hinzugefügt | Fügt der Verweis auf die ursprüngliche Quellelement |
 | STRG + UMSCHALT + ziehen | Quelle | Verweis auf das ursprüngliche Element behält | Behält die ursprünglichen Element |
-| STRG + UMSCHALT + ziehen | Ergebnis | `DROPEFFECT_ LINK`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ LINK`wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |
+| STRG + UMSCHALT + ziehen | Ergebnis | `DROPEFFECT_ LINK` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher | `DROPEFFECT_ LINK` wird als Aktion zurückgegeben `::Drop` und Element bleibt im ursprünglichen Speicherort im Speicher |
 | Ausschneiden und einfügen | Aktion | Verschieben | Verschieben |
 | Ausschneiden und einfügen | Ziel | Kopien Element aus, um den Zielspeicherort an | Kopien Element aus, um den Zielspeicherort an |
 | Ausschneiden und einfügen | Quelle | Löscht Verweis zum ursprünglichen Element | Löscht Element aus der ursprünglichen Speicherort |

@@ -1,26 +1,24 @@
 ---
 title: VSCT-Compiler-Befehlszeilen-Flags | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6e2e1045adb451c7f4dd06b888fca356d26b7ff3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilen-Flags
 Der Visual Studio Befehl Tabelle (VSCT)-Compiler bietet Befehlszeilenschalter, um sicherzustellen, dass erfolgreichen Kompilierung VSCT-Dateien.  
@@ -63,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Geben Sie zusätzliche definierten Symbole.|  
 |-I:|Geben Sie die zusätzliche Pfade enthalten, die beim Auflösen von Dateiverweisen verwendet werden soll.|  
 |-L|Geben Sie die <xref:System.Globalization.CultureInfo> Kulturnamen, z. B. "En-US".|  
-|– E|Ausgeben von C#-Objekte im angegebenen Namespace für Befehl Elemente, gefolgt von [C &#124; H &#124; N]:*Filename*, in dem C = C#-, H = C++-Header, N = Namespace. Der Namespace ist für c# erforderlich.|  
+|-E|Ausgeben von C#-Objekte im angegebenen Namespace für Befehl Elemente, gefolgt von [C&#124;H&#124;N]:*Filename*, C = C#-, H C++-Header, N = Namespace =. Der Namespace ist für c# erforderlich.|  
 |-v|Eine ausführliche Ausgabe.|  
   
  Der -L-Switch weist den Compiler, wählen Sie eine Gruppe von Zeichenfolgen, die den binären CTO-Datei erzeugen, das entspricht, dem angegebenen <xref:System.Globalization.CultureInfo> Kulturname. Der angegebene Kulturname übereinstimmen, die Language-Attribut aus einem oder mehreren [Zeichenfolgen Element](../../extensibility/strings-element.md) in der VSCT-Datei. Wenn ein Zeichenfolgen-Element kein Language-Attribut verfügt, wird Sie aus dem entsprechenden geerbt [CommandTable Element](../../extensibility/commandtable-element.md).  

@@ -1,12 +1,10 @@
 ---
 title: ParameterInfo in ein Legacy-Language "Service1" | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>ParameterInfo in einen Legacy-Sprachdienst
 Die ParameterInfo IntelliSense-QuickInfo Benutzern Hinweise, in denen ein Sprachkonstrukt werden bereitgestellt.  
@@ -40,7 +38,7 @@ Die ParameterInfo IntelliSense-QuickInfo Benutzern Hinweise, in denen ein Sprach
   
  Die ParameterInfo QuickInfos werden von der Sprachdienst, über den Befehl abfangen gestartet. Zum Abfangen von Benutzer-Zeichen, das Language-Dienstobjekt implementieren muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, und übergeben Sie die Ansicht für den einen Zeiger auf die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle. Der Befehlsfilter fängt Befehle, die Sie in das Codefenster eingeben. Überwachen Sie die Befehlsinformationen, um zu erfahren, wann die Parameterinformationen für den Benutzer anzuzeigen. Sie können den gleichen Befehlsfilter für die Anweisungsvervollständigung, den Fehler Marker usw. verwenden.  
   
- Bei der Eingabe ein Schlüsselwort für die der Sprachdienst Hinweise bereitstellen kann, klicken Sie dann der Sprachdienst erstellt ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt und ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle zum Benachrichtigen der IDE einen Hinweis angezeigt. Erstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt mit `VSLocalCreateInstance` und Angeben der Coklasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`ist eine Funktion, die in der vsdoc.h der Header-Datei, die aufruft `QueryService` für die lokale Registrierung und ruft `CreateInstance` für dieses Objekt für die `CLSID_VsMethodTipWindow`.  
+ Bei der Eingabe ein Schlüsselwort für die der Sprachdienst Hinweise bereitstellen kann, klicken Sie dann der Sprachdienst erstellt ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt und ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle zum Benachrichtigen der IDE einen Hinweis angezeigt. Erstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt mit `VSLocalCreateInstance` und Angeben der Coklasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` ist eine Funktion, die in der vsdoc.h der Header-Datei, die aufruft `QueryService` für die lokale Registrierung und ruft `CreateInstance` für dieses Objekt für die `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Bereitstellen eines Methode Tipps  
  Um einen Tipp Methode bereitzustellen, rufen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> Methode in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Schnittstelle, und übergeben sie die Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle.  

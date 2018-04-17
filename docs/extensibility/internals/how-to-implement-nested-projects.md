@@ -2,27 +2,23 @@
 title: 'Vorgehensweise: Implementieren von geschachtelten Projekte | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9e5331ceb1efd9fe26a7d713cd57b735fae2054
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekte
 Bei der Erstellung ein geschachtelten Projekts vorhanden sind eine einige zusätzliche Schritte erforderlich, die implementiert werden müssen. Ein übergeordnetes Projekt werden einige der gleichen Aufgaben, die die Lösung für die geschachtelte (untergeordnete) Projekte hinzugefügt. Übergeordnetes Projekt ist ein Container für Projekte einer Projektmappe ähnelt. Es gibt insbesondere mehrere Ereignisse, die von der Lösung und von den übergeordneten Projekten zum Erstellen der Hierarchie von geschachtelten Projekten potenziert werden müssen. Diese Ereignisse werden in der folgende Vorgang zum Erstellen von geschachtelten Projekten beschrieben.

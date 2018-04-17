@@ -1,23 +1,21 @@
 ---
-title: "Häufig gestellte Fragen: Konvertieren-Add-ins in VSPackage-Erweiterungen | Microsoft Docs"
-ms.custom: 
+title: 'Häufig gestellte Fragen: Konvertieren-Add-ins in VSPackage-Erweiterungen | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier werden die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
@@ -41,7 +39,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Können meine add-in-Projekt in ein VSIX-Projekt werden konvertiert?  
  Ein Add-In Projekt kann nicht direkt in ein VSIX-Projekt konvertiert werden, da die in VSIX-Projekten verwendeten Mechanismen nicht identisch mit den Werten in Add-in-Projekte sind. Haben die VSIX-Projektvorlage sowie die richtige Projektelementvorlagen viel Code, der relativ einfach einrichten und Ausführen als VSIX-Erweiterung ermöglicht.  
   
-##  <a name="BKMK_StartDeveloping"></a>Wie beginne ich VSIX-Erweiterungen entwickeln?  
+##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich VSIX-Erweiterungen entwickeln?  
  Hier ist, wie Sie eine VSIX vornehmen, die einen Menübefehl hat:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu erstellen, auf dem einen Menübefehl  
@@ -56,7 +54,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
      Auf der **Tools** Menü (in der experimentellen Instanz) sehen Sie eine Schaltfläche mit dem Namen **Meine Befehlsname**. Wenn Sie auf diese Schaltfläche auswählen, sollte die Meldung angezeigt: **in TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Wie kann ich meine Add-in-Code in einem VSPackage ausführen?  
+##  <a name="BKMK_RunAddin"></a> Wie kann ich meine Add-in-Code in einem VSPackage ausführen?  
  Add-In-Code kann auf zwei Arten ausgeführt werden:  
   
 -   Ausgelöst durch einen Menübefehl (Der Code befindet sich in der `IDTCommandTarget.Exec`-Methode.)  

@@ -1,24 +1,22 @@
 ---
-title: "Ereignishandler Weitergeben von Änderungen außerhalb des Modells | Microsoft Docs"
-ms.custom: 
+title: Ereignishandler Weitergeben von Änderungen außerhalb des Modells | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c91264d459648315fa7ce2c0d58651383ea9edd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die Weitergabe von Änderungen auf Ressourcen außerhalb des Informationsspeichers, z. B. keine Store-Variablen, Dateien, im anderen Speicher oder anderen Modellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen die auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang rückgängig gemacht bzw. wiederholt ausgeführt werden. Aus diesem Grund sind im Gegensatz zum Speicher-Regeln Speicherereignisse besten zum Aktualisieren von Werten, die sich außerhalb des Informationsspeichers befinden. Im Gegensatz zu .NET Ereignisse, Ereignishandler Store Lauschen auf eine Klasse registriert sind: Sie müssen nicht für jede Instanz einen separaten Handler registriert werden soll. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Behandeln der Änderungen, finden Sie unter [Weitergeben von Änderungen und reagieren auf](../modeling/responding-to-and-propagating-changes.md).  
@@ -29,13 +27,13 @@ In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die 
   
 1.  Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Häufig verwendete die letzte Ereignis-Typen sind:  
   
-    -   `ElementAdded`-ausgelöst, wenn ein Modellelement, Beziehungslink, Form oder den Verbinder erstellt.  
+    -   `ElementAdded` -ausgelöst, wenn ein Modellelement, Beziehungslink, Form oder den Verbinder erstellt.  
   
     -   ElementPropertyChanged - ausgelöst, wenn der Wert des einem `Normal` Eigenschaft "Domain" geändert wird. Das Ereignis wird ausgelöst, nur, wenn die alten und neuen Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.  
   
          Es kann nicht an den Rolleneigenschaften angewendet werden, die beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded` die domänenbeziehung überwachen.  
   
-    -   `ElementDeleted`– nach einem Modellelement ausgelöst, Beziehung, Form oder Connector gelöscht wurde. Die Eigenschaftswerte des Elements können Sie weiterhin zugreifen, aber sie weist keine Beziehungen zu anderen Elementen.  
+    -   `ElementDeleted` – nach einem Modellelement ausgelöst, Beziehung, Form oder Connector gelöscht wurde. Die Eigenschaftswerte des Elements können Sie weiterhin zugreifen, aber sie weist keine Beziehungen zu anderen Elementen.  
   
 2.  Hinzufügen eine partiellen Klassendefinition für *YourDsl *** DocData** in einer separaten Codedatei in der **DslPackage** Projekt.  
   
@@ -43,7 +41,7 @@ In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die 
   
 4.  Überschreiben Sie `OnDocumentLoaded()` Handler registriert werden. Wenn Sie mehrere Handler verfügen, können Sie diese an demselben Ort registrieren.  
   
- Der Speicherort des Registrierungscodes ist nicht wichtig. `DocView.LoadView()`wird von ein anderen Speicherort.  
+ Der Speicherort des Registrierungscodes ist nicht wichtig. `DocView.LoadView()` wird von ein anderen Speicherort.  
   
 ```  
 using System;  
@@ -174,7 +172,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Speichern von Ereignistypen  
  Jedes Ereignis des Typs entspricht einer Auflistung in Store.EventManagerDirectory. Können Sie hinzufügen oder Entfernen von Ereignishandlern zu einem beliebigen Zeitpunkt, aber es ist üblich, die sie hinzufügen, wenn das Dokument geladen wird.  
   
-|`EventManagerDirectory`Eigenschaftenname|Wann ausgeführt|  
+|`EventManagerDirectory` Eigenschaftenname|Wann ausgeführt|  
 |-------------------------------------------|-------------------|  
 |ElementAdded|Eine Instanz einer Domänenklasse, domänenbeziehung, Form, Connector oder Diagramm wird erstellt.|  
 |ElementDeleted|Ein Modellelement wurde aus dem Store Element Verzeichnis entfernt und ist nicht mehr die Quelle oder das Ziel jeder Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, aber bei einem zukünftigen rückgängig beibehalten wird.|  

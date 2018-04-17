@@ -1,21 +1,21 @@
 ---
 title: Generieren von Dateien mit dem Hilfsprogramm "TextTransform" in Visual Studio | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 930d8982f8d34bae2870276623ae2d71a24372d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 
@@ -55,7 +55,7 @@ TextTransform [<options>] <templateName>
 |**Option**|**Beschreibung**|
 |----------------|---------------------|
 |**-out** \<Dateiname >|Die Datei, die in die Ausgabe der Transformation geschrieben wird.|
-|**-r** \<assembly>|Eine Assembly, die für das Kompilieren und Ausführen der Textvorlage verwendet wird.|
+|**R -** \<Assembly >|Eine Assembly, die für das Kompilieren und Ausführen der Textvorlage verwendet wird.|
 |**u -** \<Namespace >|Ein Namespace, der zum Kompilieren der Vorlage verwendet wird.|
 |**-I** \<includedirectory>|Ein Verzeichnis, das die Textvorlagen enthalten in der Vorlage angegebenen Text enthält.|
 |**-P** \<referencepath>|Eine zu durchsuchende Verzeichnis an in der Textvorlage angegebenen Assemblys oder zur Verwendung der **- R** Option.<br /><br /> Verwenden Sie z. B. zum Einschließen von Assemblys, die für die Visual Studio-API verwendet<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|

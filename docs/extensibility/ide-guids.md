@@ -3,22 +3,21 @@ title: IDE-GUIDs | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>IDE-GUIDs
 
@@ -102,15 +101,15 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 
 |Konstante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewAll>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCommentTasks>|18802034-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCompilerTasks>|18802033-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCurrentFileTasks>|18802035-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewHTMLTasks>|36ac1c0d-fe86-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewAll>|1880202e-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCheckedTasks>|18802036-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCommentTasks>|18802034-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCompilerTasks>|18802033-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCurrentFileTasks>|18802035-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewHTMLTasks>|36ac1c0d-fe86-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewShortcutTasks>|18802030-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUncheckedTasks>|18802037-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUserTasks>|1880202f-fc20-11D2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
@@ -126,8 +125,8 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 
 |Konstanten|GUID|
 |---------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsCfgProviderEventsHelper>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsDocOutlinePackage>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsCfgProviderEventsHelper>|99913f1f-1ee3-11D1-8a6e-00c04f682e21|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsDocOutlinePackage>|21af45b0-ffa5-11D0-b63f-00a0c922e851|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider>|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
 ## <a name="see-also"></a>Siehe auch

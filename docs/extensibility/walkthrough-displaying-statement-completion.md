@@ -1,27 +1,23 @@
 ---
-title: "Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdc79275dd99c502533c82665741b84620be928
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können die Sprache basierende Anweisungsvervollständigung implementieren, durch Definieren der Bezeichner für die Sie die Beendigung bereitstellen möchten, und klicken Sie dann auszulösen einer Sitzungs abgeschlossen. Anweisungsvervollständigung im Rahmen einer Sprachdienst definieren, Definieren eigener Dateinamenerweiterung und des Inhaltstyps und zeigt dann Abschluss für nur dieses Typs, oder der Abschluss für einen vorhandenen Inhaltstyp auslösen – z. B. "Text". In dieser exemplarischen Vorgehensweise wird das Auslösen von Anweisungsvervollständigung für den Inhaltstyp "Text", also den Inhaltstyp der Textdateien veranschaulicht. Der Inhaltstyp "Text" ist der Vorgänger von allen anderen Inhaltstypen, einschließlich Code und XML-Dateien.  

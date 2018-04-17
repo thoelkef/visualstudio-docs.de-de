@@ -1,13 +1,10 @@
 ---
-title: "Vorgehensweise: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d951b70566231db956ef8771b022937af5ee5807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern
   Sie können <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente in einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokumentebene hinzufügen. Sie können auch <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelementen zur Laufzeit in VSTO-Add-Ins hinzufügen.  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.Chart> -Steuerelemente finden Sie unter [Diagrammsteuerelement](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a>Hinzufügen von Chart-Steuerelementen zur Entwurfszeit  
+##  <a name="designtime"></a> Hinzufügen von Chart-Steuerelementen zur Entwurfszeit  
  Sie können das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement Ihrem Arbeitsblatt auf die gleiche Weise wie ein Diagramm innerhalb der Anwendung hinzufügen.  
   
 > [!NOTE]  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  In der **Auswählen einer Datenquelle** (Dialogfeld), klicken Sie auf **OK**.  
   
-##  <a name="runtimedoclevel"></a>Hinzufügen von Chart-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene  
+##  <a name="runtimedoclevel"></a> Hinzufügen von Chart-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene  
  Sie können das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement dynamisch zur Laufzeit hinzufügen. Dynamisch erstellte Diagramme werden nicht im Dokument wie Hoststeuerelemente dauerhaft gespeichert, wenn das Dokument geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein Chart-Steuerelement programmgesteuert hinzu  
@@ -70,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a>Hinzufügen von Chart-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt  
+##  <a name="runtimeaddin"></a> Hinzufügen von Chart-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt  
  Sie können ein <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
  Dynamisch erstellte Chart-Steuerelemente werden nicht im Arbeitsblatt wie Hoststeuerelemente dauerhaft gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [Chart-Steuerelement](../vsto/chart-control.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

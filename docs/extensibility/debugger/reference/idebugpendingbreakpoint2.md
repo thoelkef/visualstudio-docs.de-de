@@ -2,28 +2,24 @@
 title: IDebugPendingBreakpoint2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef986bd657a080c08fd0ebb85908ba59757bf207
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3e5e84180747a3e6a3b9e5a34e7694f4cd07867c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Diese Schnittstelle stellt einen Haltepunkt aus, der zum Binden an einen Speicherort bereit ist.  
@@ -58,7 +54,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[Löschen](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Löscht diese ausstehenden Haltepunkts und alle Breakpoints, die von ihm gebunden.|  
   
 ## <a name="remarks"></a>Hinweise  
- `IDebugPendingBreakpoint2`kann der betrachtet werden, als Anbieter von allen erforderlichen Informationen erforderlich, um einen Haltepunkt an Code zu binden, die auf einem oder mehreren Programmen angewendet werden können.  
+ `IDebugPendingBreakpoint2` kann der betrachtet werden, als Anbieter von allen erforderlichen Informationen erforderlich, um einen Haltepunkt an Code zu binden, die auf einem oder mehreren Programmen angewendet werden können.  
   
  Ein ausstehender Haltepunkt kann möglicherweise mehr als einen gebundenen Haltepunkt erzeugen. Beispielsweise konnte ein Haltepunkt in einer C++-Formatvorlage einen gebundenen Haltepunkt für jede eindeutige Instanz dieser Vorlage erstellen.  
   

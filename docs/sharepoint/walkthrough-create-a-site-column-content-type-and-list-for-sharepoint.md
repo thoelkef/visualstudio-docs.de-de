@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte Websitespalten in SharePoint erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet, werden.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Erstellen benutzerdefinierte Websitespalten  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Erstellen benutzerdefinierte Websitespalten  
  In diesem Beispiel wird eine Liste für die Verwaltung von Patienten, die in einem Krankenhaus erstellt. Sie müssen zunächst in einer SharePoint-Projekt erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Hinzufügen von Websitespalten, wie folgt.  
   
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Dieselbe Prozedur, mit dem Projekt zwei weitere Websitespalten hinzugefügt: **Patienten-ID** (Typ = "Integer") und **Doctor Namen** (Type = "Text"). Legen Sie deren Wert Gruppe **Clinic Websitespalten**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Erstellen einen benutzerdefinierten Inhaltstyp  
+##  <a name="BKMK_CreateCustContType"></a> Erstellen einen benutzerdefinierten Inhaltstyp  
  Als Nächstes erstellen Sie einen Inhaltstyp – basierend auf den Inhaltstyp Kontakte –, enthält der Websitespalten, die Sie im vorherigen Verfahren erstellt haben. Durch einen Inhaltstyp auf einen vorhandenen Inhaltstyp basieren, können Sie Zeit sparen, da die grundlegende Inhaltstyp für die Verwendung in der neue Inhaltstyp mehrere Websitespalten bereitstellt.  
   
 #### <a name="to-create-a-custom-content-type"></a>So erstellen einen benutzerdefinierten Inhaltstyp  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Wählen Sie in der Menüleiste **Datei**, **alle speichern**, und schließen Sie den Content-Type-Designer.  
   
-##  <a name="BKMK_CreateList"></a>Erstellen einer Liste  
+##  <a name="BKMK_CreateList"></a> Erstellen einer Liste  
  Erstellen Sie jetzt eine Liste, die die neuen Typ und Standort Inhaltsspalten verwendet.  
   
 #### <a name="to-create-a-list"></a>Um eine Liste erstellen  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. In der **Spaltenname** wählen Sie **Patient Name**, stellen Sie sicher, dass die **sortieren** Spalte **aufsteigend**, und wählen Sie dann die  **OK** Schaltfläche.  
   
-##  <a name="BKMK_TestApp"></a>Testen der Anwendung  
+##  <a name="BKMK_TestApp"></a> Testen der Anwendung  
  Nun, dass die benutzerdefinierte Websitespalten, Inhaltstyp und Liste bereit sind, für SharePoint bereitstellen Sie, und führen Sie die Anwendung testen.  
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  

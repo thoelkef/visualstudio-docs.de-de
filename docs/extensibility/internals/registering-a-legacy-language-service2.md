@@ -1,27 +1,25 @@
 ---
-title: "Registrieren eine Vorgängerversion Sprache Service2 | Microsoft Docs"
-ms.custom: 
+title: Registrieren eine Vorgängerversion Sprache Service2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren einen Sprachdienst Legacy
 Die folgenden Abschnitte enthalten Listen von Registrierungseinträgen für die verschiedenen Sprache Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Die folgenden Abschnitte enthalten Listen von Registrierungseinträgen für die 
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|*\<GUID >*|Die GUID des Sprachdiensts.|  
+|(Standard)|REG_SZ|*\<GUID &GT;*|Die GUID des Sprachdiensts.|  
 |LangResID|REG_DWORD|0 x 0 – 0xffff|Zeichenfolge Ressourcenbezeichner (ResID) für den lokalisierten Textnamen der Sprache an.|  
-|Package|REG_SZ|*\<GUID >*|Die GUID des VSPackage.|  
+|Package|REG_SZ|*\<GUID &GT;*|Die GUID des VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Gibt an, ob die **Anweisungsvervollständigung** Optionen in der **Optionen** Dialogfeld aktiviert sind.|  
 |ShowSmartIndent|REG_DWORD|0-1|Gibt an, ob die Option zur Auswahl **Smart** den Einzug den **Optionen** Dialogfeld aktiviert ist.|  
 |RequestStockColors|REG_DWORD|0-1|Gibt an, ob benutzerdefinierte oder Standardfarben werden verwendet, um die Farbe der Schlüsselwörter.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Der Name der Toolbox-Registerkarte Standard, die bei der Editor aktiv ist.|  
 |DisplayName|REG_SZ|resID|Name, der in der **Öffnen mit** (Dialogfeld). Der Name ist die Zeichenfolgenressource-ID oder einen Namen im Standardformat.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Verwendet für die **Öffnen mit** Menübefehl. Wenn Sie nicht die Standard-Text-Editor in der Liste der verfügbaren Editoren für einen bestimmten Dateityp auflisten möchten, legen Sie diesen Wert auf 1 fest.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Verwendet für alle Sprachdienst, die eine Datei mit Unterstützung für Codepage öffnen können. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editors mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editorfactory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten-Editor in der Liste zu verwenden. Dieser weiter Editor darf nicht der Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde als die Editor-Factory ist, die Fehler.|  
-|Package|REG_SZ|*\<GUID >*|VSPackage-GUID für den Anzeigenamen ResID.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Verwendet für alle Sprachdienst, die eine Datei mit Unterstützung für Codepage öffnen können. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editors mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editorfactory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten-Editor in der Liste zu verwenden. Dieser weiter Editor darf nicht der Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde als die Editor-Factory ist, die Fehler.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage-GUID für den Anzeigenamen ResID.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ||Nicht verwendet.|  
-|*\<GUID >*|REG_SZ|""|Der Schlüssel, die den logischen Ansichten unterstützt. Sie können beliebig viele davon haben, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
+|*\<GUID &GT;*|REG_SZ|""|Der Schlüssel, die den logischen Ansichten unterstützt. Sie können beliebig viele davon haben, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
   
 ### <a name="example"></a>Beispiel  
   

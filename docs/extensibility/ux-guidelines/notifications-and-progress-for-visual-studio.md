@@ -1,28 +1,24 @@
 ---
-title: "Benachrichtigungen und Fortschritt für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Benachrichtigungen und Fortschritt für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
-##  <a name="BKMK_NotificationSystems"></a>Benachrichtigungssystemen  
+##  <a name="BKMK_NotificationSystems"></a> Benachrichtigungssystemen  
   
 ### <a name="overview"></a>Übersicht  
  Es gibt mehrere Möglichkeiten, um den Benutzer zu informieren, was geschieht in Visual Studio hinsichtlich ihrer Software-Entwicklungsaufgaben.  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>Benachrichtigungsmethoden  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Modale Meldung Fehlerdialogfelder  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Modale Meldung Fehlerdialogfelder  
  Eine modale Meldung Fehlerdialogfeld wird verwendet, um eine Fehlermeldung angezeigt, die Bestätigung des Benutzers oder eine Aktion erforderlich sind.  
   
  ![Modale Fehlermeldung](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")  
   
  **Eine modale Meldung Fehlerdialogfeld warnen der Benutzer eine ungültige Verbindungszeichenfolge zu einer Datenbank**  
   
-####  <a name="BKMK_IDEStatusBar"></a>IDE-Statusleiste  
+####  <a name="BKMK_IDEStatusBar"></a> IDE-Statusleiste  
  Die Wahrscheinlichkeit, dass Benutzer Statusleistentext beachten korreliert für ihre Bestrebens Computerfunktionen und bestimmte Kenntnisse in Bezug auf die Windows-Plattform. Visual Studio-Kundenstamm tendenziell erfahrenen in beiden Bereichen werden zwar auch erfahrene Windows-Benutzer Änderungen in der Statusleiste verpassen könnte. Aus diesem Grund wird die Statusleiste am besten für Informationszwecke oder als eine redundante Cue verwendet für Informationen, die an anderer Stelle angezeigt. Jede Art von wichtigen Informationen, den der Benutzer sofort auflösen müssen sollten in einem Dialogfeld oder im Toolfenster Benachrichtigungen angegeben werden.  
   
  Die Statusleiste von Visual Studio wurde entwickelt, um verschiedene Arten von Informationen zu ermöglichen, die angezeigt werden. Er ist in Regionen für das Feedback, Designer, Statusleiste, Animation und Client unterteilt.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **IDE-statusleistenfarben**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Eingebettete Infoleiste  
+####  <a name="BKMK_EmbeddedInfobar"></a> Eingebettete Infoleiste  
  Eine Infoleiste kann am oberen Rand Dokument- oder Toolfenster verwendet werden, um die Benutzer über ein Bundesland oder eine Bedingung zu informieren. Sie können Befehle auch anbieten, so, dass der Benutzer eine Möglichkeit, leicht Maßnahmen ergreifen kann. Infoleiste ist ein standard-Shell-Steuerelement. Erstellen Sie keine eigene, dem fungieren und nicht mit anderen Benutzern in der IDE angezeigt wird. Finden Sie unter [Infoleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) für Implementierungsdetails und Anleitungen.  
   
  ![Eingebettete Infoleiste](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")  
   
  **Infoleiste eingebettet in einem Dokumentfenster warnen der Benutzer, den die IDE befindet sich im verlaufsbezogenen Debugmodus, und der Editor reagiert nicht auf die gleiche Weise wie in debugging Modus "standard".**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Mauszeiger ändert sich  
+####  <a name="BKMK_MouseCursorChanges"></a> Mauszeiger ändert sich  
  Wenn Sie den Cursor zu ändern, verwenden Sie die Farben, die an den Dienst VSColor gebunden werden und sind bereits mit dem Cursor zugeordnet. Cursor Änderungen dient zum Angeben eines laufenden Vorgangs sowie erreicht Zonen, in denen der Benutzer über ein Ziel, das gezogen bewegen, abgelegt oder zum Auswählen eines Objekts verwendet werden kann.  
   
  Verwenden Sie den Mauszeiger gebucht/Wait, nur, wenn alle verfügbaren CPU-Zeit für einen Vorgang, der verhindert, dass des Benutzers keine weitere Eingabe Ausdrücken reserviert werden muss. In den meisten Fällen gut geschriebene Anwendungen, die Verwendung von multithreading sollte selten Zeiten, wenn Benutzer keine andere Operationen durchzuführen.  
   
  Bedenken Sie, dass Cursor Änderungen nützlich sind, wie ein redundanter Cue Informationen, die an anderer Stelle angezeigt. Verlassen Sie sich nicht auf eine Änderung der Cursor als die einzige Möglichkeit der Kommunikation mit dem Benutzer, insbesondere, wenn Sie versuchen, etwas zu vermitteln, die wichtig sind, dass der Benutzer berücksichtigt werden muss.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>Statusanzeigen  
+####  <a name="BKMK_NotSysProgressIndicators"></a> Statusanzeigen  
  Statusanzeigen sind wichtig für das Feedback der Benutzer zu erteilen, während der Prozesse, die mehr als ein paar Sekunden dauert. Statusanzeigen können angezeigt werden direkte (in der Nähe der Ausgangspunkt der Aktion in Bearbeitung), in eine eingebettete Statusleiste, in ein modales Dialogfeld oder in der Statusleiste von Visual Studio. Befolgen Sie die Anleitung in [Status von Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) im Hinblick auf ihre Verwendung und Implementierung.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio-benachrichtigunsfenster  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio-benachrichtigunsfenster  
  Der Visual Studio-benachrichtigunsfenster benachrichtigt Entwickler zu Lizenzierung, Umgebung (Visual Studio), Erweiterungen und Updates. Benutzer können können einzelne Benachrichtigungen verwerfen oder, um bestimmte Arten von Benachrichtigungen zu ignorieren. Die Liste der ignorierten Benachrichtigungen erfolgt einem **Tools > Optionen** Seite.  
   
  Das Fenster Benachrichtigungen ist nicht aktuell erweiterbar.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Toolfenster für Visual Studio-Benachrichtigungen**  
   
-####  <a name="BKMK_ErrorList"></a>Fehlerliste  
+####  <a name="BKMK_ErrorList"></a> Fehlerliste  
  Eine Benachrichtigung in der Fehlerliste anzugeben, Fehler und Warnungen, die bei der Kompilierung und Buildprozess und ermöglicht es dem Benutzer zum Navigieren in Code auf diesen bestimmten Code-Fehler.  
   
  ![Fehlerliste](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")  
   
  **Fehlerliste in Visual Studio**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Eingebettete Statusleisten  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Eingebettete Statusleisten  
  Da die IDE-Statusleiste dynamisch, mit der Region-Clientkontext, die auf das aktive Fenster und die Informationen, die auf dem Kontext des Benutzers und/oder Systemantworten aktualisieren festgelegt ist, ist es schwierig, eine kontinuierliche Anzeige von Informationen zu verwalten, oder gewähren Status für langfristige asynchroner Prozesse. IDE-Statusleiste ist z. B. nicht für Benachrichtigungen des Testlaufergebnisse für mehrere Ausführungen und/oder sofort ausführbares Elementauswahl geeignet. Es ist wichtig, diese Statusinformationen im Kontext des Fensters Dokument- oder Toolfenster beibehalten werden sollen, in denen der Benutzer stellt eine Auswahl oder startet einen Prozess.  
   
  ![Eingebettete Statusleiste](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")  
   
  **Eingebettete Statusleiste in Visual Studio**  
   
-####  <a name="BKMK_WindowsTray"></a>Windows-Taskleiste-Benachrichtigungen  
+####  <a name="BKMK_WindowsTray"></a> Windows-Taskleiste-Benachrichtigungen  
  Die Windows-Infobereich neben dem System ist clock auf der Windows-Taskleiste. Viele Hilfsprogramme und Softwarekomponenten bieten Symbole in diesem Bereich, sodass der Benutzer ein Kontextmenü für eine systemweite Aufgaben, wie z. B. Bildschirmauflösung ändern oder Abrufen von Softwareupdates abrufen kann.  
   
  Umgebung Anwendungsebene Benachrichtigungen sollten auf dem Hub für Visual Studio-Benachrichtigungen, nicht die Windows-Infobereich angefügt werden sollen.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Benachrichtigung Blasen  
+####  <a name="BKMK_NotificationBubbles"></a> Benachrichtigung Blasen  
  Benachrichtigung Blasen können als informativ in eine Editor-Designer oder im Rahmen des Windows-Benachrichtigungsbereich angezeigt werden. Der Benutzer wahrnimmt diese Blasen als Probleme, die sie später zu beheben, können die liegt der Vorteil für nicht kritische Benachrichtigungen. Blasen sind ungeeignet für wichtige Informationen, den der Benutzer sofort gelöst werden muss. Wenn Sie Benachrichtigungen Blasen in Visual Studio verwenden, führen Sie die [Windows-Desktop-Anleitung für die Benachrichtigung Blasen](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Benachrichtigungssprechblase](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")  
   
  **Benachrichtigungssprechblase in der Windows-Infobereich für Visual Studio verwendet**  
   
-##  <a name="BKMK_ProgressIndicators"></a>Statusanzeigen  
+##  <a name="BKMK_ProgressIndicators"></a> Statusanzeigen  
   
 ### <a name="overview"></a>Übersicht  
  Statusanzeigen sind ein wichtiger Teil ein Benachrichtigungssystem für das Feedback der Benutzer zu gewähren. Sie können dem Benutzer mitteilt, wenn die Prozesse und Vorgänge abgeschlossen werden. Vertraute Indikator Anweisungstypen Statusanzeigen Spinvorgänge Cursor und animierte Symbole. Der Typ und die Platzierung des eine Statusanzeige eingeblendet, hängt davon ab, den Kontext, einschließlich was gemeldet wird und wie lange der Prozess oder einen Vorgang bis zum Abschluss.  
@@ -287,12 +283,12 @@ ms.lasthandoff: 02/01/2018
   
  **Ausgabefenster mit dem Status des laufenden Prozess und warten Sie, messaging**  
   
-##  <a name="BKMK_Infobars"></a>Infoleisten  
+##  <a name="BKMK_Infobars"></a> Infoleisten  
   
 ### <a name="overview"></a>Übersicht  
  Infoleisten weisen Sie dem Benutzer einen Indikator nahe dem Zeitpunkt der Aufmerksamkeit, und mit dem freigegebenen Infoleiste-Steuerelement wird sichergestellt, dass die Konsistenz in visuelle Darstellung und Interaktion.  
   
- ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Infoleiste](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904 01_Infobar")  
   
  **Infoleisten in Visual Studio**  
   
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Fehler-Überprüfung  
+##  <a name="BKMK_ErrorValidation"></a> Fehler-Überprüfung  
  Wenn der Benutzer Informationen ein, die nicht zulässig sein, z. B. wenn ein erforderliches Feld ausgelassen wird oder wenn Daten in die falschen Format eingegeben werden, ist es besser, die Validierung von Steuerelementen verwenden oder Feedback neben dem Steuerelement, statt eine blockierende Popupdialogfeld Fehler.  
   
 ### <a name="field-validation"></a>Feldvalidierung  
  Formular und Feld Überprüfung besteht aus drei Komponenten: ein Steuerelement, ein Symbol und eine QuickInfo. Obgleich unterschiedliche Typen von Steuerungsmechanismen dies verwenden können, wird ein Textfeld, das als Beispiel verwendet werden.  
   
- ![Feldvalidierung &#40; leer &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Feld Überprüfung &#40;leere&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
   
  Wenn das Feld erforderlich ist, es darf Wasserzeichen Text, der besagt  **\<erforderlich >** Hintergrund Feld sollte auch hellen Gelb (VSColor: `Environment.ControlEditRequiredBackground`) Vordergrund sollte auch grau (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,13 +511,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Direktes Warnungstext  
  Wird Platz zur Verfügung, die Fehlermeldung in der Nähe des Steuerelements in einem Zustand des Fehlers eingefügt werden soll, ist dies mithilfe der QuickInfo allein vorzuziehen.  
   
- ![In &#45; Ort Warnung](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
+ ![In&#45;platzieren Warnung](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
   
  **Direktes Warnungstext**  
   
 #### <a name="watermarks"></a>Wasserzeichen  
  Manchmal ist eine gesamte Steuerelement oder Fenster im Status "Fehler" ein. Verwenden Sie in diesem Fall ein Wasserzeichen der Fehler an.  
   
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Wasserzeichen](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
   
  **Wasserzeichen feldvalidierung**

@@ -1,12 +1,10 @@
 ---
-title: "Bereitstellen einer Office-Lösung mithilfe von ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Bereitstellen einer Office-Lösung mithilfe von ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Lösung mithilfe von ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (MSI-Format) in Erwägung ziehen, wenn mehrere Benutzer die Projektmappe auf dem gleichen Computer ausführen.  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch das Erstellen einer Windows Installer-Datei finden Sie unter [Bereitstellen einer Office-Lösung mithilfe von Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Veröffentlichen Sie die Projektmappe  
- Veröffentlichen Sie die Projektmappe mit der **Veröffentlichungs-Assistenten** oder **Projekt-Designer**. In diesem Verfahren wird anhand der **Projekt-Designer** da es sich um den vollständigen Satz von Veröffentlichungsoptionen bereitstellt. Finden Sie unter [Veröffentlichen-Assistenten &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Veröffentlichen Sie die Projektmappe  
+ Veröffentlichen Sie die Projektmappe mit der **Veröffentlichungs-Assistenten** oder **Projekt-Designer**. In diesem Verfahren wird anhand der **Projekt-Designer** da es sich um den vollständigen Satz von Veröffentlichungsoptionen bereitstellt. Finden Sie unter [Webpublishing-Assistent &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>So veröffentlichen Sie die Projektmappe  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Kopieren Sie die Projektmappendateien an den Installationspfad, den Sie zuvor in dieser Prozedur angegeben haben.  
   
-##  <a name="Trust"></a>Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.  
+##  <a name="Trust"></a> Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.  
  Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie entweder Vertraulichkeit gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren. Um der Projektmappe Vertraulichkeit zu gewähren, signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Finden Sie unter [vertrauen die Projektmappe durch das Signieren der Anwendung und die Bereitstellung Manifeste](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Wenn Sie eine Anpassung auf Dokumentebene bereitstellen, und Sie das Dokument in einem Ordner auf dem Computer des Benutzers speichern oder das Dokument auf einer SharePoint-Website zur Verfügung stellen möchten, stellen Sie sicher, dass Office dem Speicherort des Dokuments vertraut. Finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Unterstützen von Benutzern, die die Projektmappe installieren  
+##  <a name="Helping"></a> Unterstützen von Benutzern, die die Projektmappe installieren  
  Benutzer können die Projektmappe installieren, indem sie das Setupprogramm ausführen oder das Bereitstellungsmanifest öffnen; im Falle einer Anpassung auf Dokumentebene kann auch das Dokument direkt geöffnet werden. Als empfohlene Vorgehensweise sollten Benutzer die Projektmappe mithilfe des Setupprogramms installieren. Die anderen beiden Methoden ist nicht sichergestellt, dass die erforderliche Software installiert ist. Wenn Benutzer das Dokument vom Installationspfad öffnen möchten, müssen sie ihn der Liste vertrauenswürdiger Speicherorte im Sicherheitscenter der Office-Anwendung hinzufügen.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Öffnen des Dokuments einer Anpassung auf Dokumentebene  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Anschließend müssen Sie den Datenträgercache des Browsers leeren und dann versuchen, die VSTO-Datei erneut zu öffnen.  
   
-##  <a name="Put"></a>Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)  
+##  <a name="Put"></a> Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)  
  Sie können das Dokument der Projektmappe auf dem Computer des Endbenutzers dafür erstellen eine Aktion nach der Bereitstellung markieren. Auf diese Weise wird nicht der Benutzer manuell kopieren, das Dokument vom Installationspfad auf ihren Computer nach der Installation der Projektmappe verfügen. Sie müssen eine Klasse erstellen, die die Aktion nach der Bereitstellung definiert, erstellen und veröffentlichen Sie die Projektmappe das Anwendungsmanifest ändern und die Anwendung und das Bereitstellungsmanifest erneut signieren.  
   
  Die folgenden Verfahren wird davon ausgegangen, dass Ihr Projektname ist **ExcelWorkbook** und dass Sie die Projektmappe veröffentlichen der **C:\publish** Verzeichnis auf Ihrem Computer.  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Kopieren Sie die Datei "ExcelWorkbook.VSTO" die **c:\publish\Application**\__Aktuelleversionsnummer_ Verzeichnis.  
   
-##  <a name="SharePoint"></a>Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)  
+##  <a name="SharePoint"></a> Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)  
  Sie können die Anpassung auf Dokumentebene für Endbenutzer mithilfe von SharePoint veröffentlichen. Wenn Benutzer die SharePoint-Site aufrufen und das Dokument öffnen, installiert die Laufzeit automatisch die Projektmappe aus dem freigegebenen Netzwerkordner auf den lokalen Computer des Benutzers. Nachdem die Projektmappe lokal installiert wurde, funktioniert die Anpassung sogar dann, wenn das Dokument an eine andere Stelle kopiert wird, z. B. auf den Desktop.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>So kopieren Sie das Dokument auf einen Server, auf dem SharePoint ausgeführt wird  
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Wenn Benutzer das Dokument von der SharePoint-Site öffnen, wird das Dokument geöffnet, und die Anpassung wird installiert. Benutzer können das Dokument auf den Desktop kopieren. Die Anpassung wird nach wie vor ausgeführt, da Eigenschaften im Dokument auf den Netzwerkspeicherort des Dokuments verweisen.  
   
-##  <a name="Custom"></a>Erstellen eines benutzerdefinierten Installationsprogramms  
+##  <a name="Custom"></a> Erstellen eines benutzerdefinierten Installationsprogramms  
  Sie können ein benutzerdefiniertes Installationsprogramm erstellen, für die Office-Projektmappe, anstatt das Setupprogramm aus, das für Sie erstellt wird, wenn Sie die Projektmappe veröffentlichen. Beispielsweise können Sie die Installation mit einem Anmeldeskript starten oder mit einer Batchdatei die Projektmappe ohne Benutzerinteraktion installieren. Diese Szenarios funktionieren am besten, wenn die erforderlichen Komponenten bereits auf den Endbenutzercomputern installiert sind.  
   
  Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (VSTOInstaller.exe) auf, das standardmäßig an folgendem Speicherort installiert ist:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|Die Projektmappe konnte nicht deinstalliert werden.|  
 |-500|Der Vorgang wurde abgebrochen, da die Projektmappe nicht installiert oder deinstalliert oder das Bereitstellungsmanifest nicht heruntergeladen werden konnte.|  
   
-##  <a name="Update"></a>Veröffentlichen eines Updates  
+##  <a name="Update"></a> Veröffentlichen eines Updates  
  Um eine Projektmappe zu aktualisieren, veröffentlichen sie erneut mit der **Projekt-Designer** oder **Veröffentlichungs-Assistenten**, und kopieren Sie dann die aktualisierte Lösung für den Installationsspeicherort. Wenn Sie die Dateien an den Installationsort kopieren, müssen Sie die älteren Dateien überschreiben.  
   
  Das nächste Mal, das die Lösung überprüft für ein Update müssen sie suchen und laden die neue Version automatisch.  
   
-##  <a name="Location"></a>Ändern des Installationspfads einer Projektmappe  
+##  <a name="Location"></a> Ändern des Installationspfads einer Projektmappe  
  Sie können den Installationspfad hinzufügen oder ändern, nachdem eine Projektmappe veröffentlicht wurde. Eine Änderung des Installationspfads kann aus einem oder mehreren der folgenden Gründe erforderlich werden:  
   
 -   Das Setupprogramm wurde kompiliert, bevor der Installationspfad bekannt war.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Führen Sie das Setupprogramm ohne den /url-Parameter aus, um die Projektmappe am angegebenen Speicherort zu installieren.  
   
-##  <a name="Roll"></a>Zurücksetzen der Projektmappe auf eine frühere version  
+##  <a name="Roll"></a> Zurücksetzen der Projektmappe auf eine frühere version  
  Wenn Sie eine Projektmappe zurücksetzen, stellen Sie die Benutzer wieder auf eine frühere Version der Projektmappe um.  
   
 #### <a name="to-roll-back-a-solution"></a>So setzen Sie eine Projektmappe zurück  

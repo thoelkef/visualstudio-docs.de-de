@@ -1,26 +1,24 @@
 ---
-title: "Benutzerdefinierte Färbbare Elemente | Microsoft Docs"
-ms.custom: 
+title: Benutzerdefinierte Färbbare Elemente | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78c4823e3644dc755cef518dcbbba5f42c7aebc1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b23ff39abcb9a1354ea28becab3b7df867378ddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte Färbbare Elemente
 Sie können die Liste der Typen überschreiben implementieren benutzerdefinierte färbbare Elemente als Teil der Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  

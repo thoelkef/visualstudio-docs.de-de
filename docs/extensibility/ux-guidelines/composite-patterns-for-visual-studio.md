@@ -1,23 +1,21 @@
 ---
-title: "Zusammengesetzte Muster für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Zusammengesetzte Muster für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in unterschiedlichen Konfigurationen. Die wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz gehören:  
@@ -32,7 +30,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
 -   [Fingereingabe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Datenvisualisierung  
+##  <a name="BKMK_DataVisualization"></a> Datenvisualisierung  
   
 ### <a name="overview"></a>Übersicht  
  Diagramme sind eine visuelle Darstellung zum Aggregieren und Daten anzeigen, um die entscheidungsfindung zu verbessern. Sie können Benutzer mit einer Vielzahl von Daten, sondern nur wenig bedeutet finden Sie in was Aufmerksamkeit erhalten soll und was eine Aktion möglicherweise konfrontiert.  
@@ -85,7 +83,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
 |![Farbfeld 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Farbfeld B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Auf Objekt Benutzeroberfläche und einsehen  
+##  <a name="BKMK_OnObjectUI"></a> Auf Objekt Benutzeroberfläche und einsehen  
  Dieser Abschnitt enthält Kontext zum einsehen, auch bekannt als Peek Codeansicht, eines Typs auf Objekt Benutzeroberflächen für Visual Studio eindeutig.  
   
 ### <a name="overview"></a>Übersicht  
@@ -161,7 +159,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
 4.  Persistenz und Commit-Modell  
   
-    -   Vorübergehend  
+    -   Transient (vorübergehend)  
   
     -   Durable  
   
@@ -251,7 +249,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
 -   **Nie** Inhalt anzeigen, wenn darauf gezeigt wird, die scheinbar bearbeitet werden, oder lädt Eingreifen des Benutzers. Dieses Verhalten kann Benutzer stören, versuchen die Benutzer so verschieben Sie den Cursor über die Inhalte Details wie das Standardverhalten für eine QuickInfo sofort zu schließen, wenn der Cursor nicht mehr über den Master Inhalt handelt, den sie generiert wird.  
   
-##  <a name="BKMK_SelectionModels"></a>Auswahlmodelle  
+##  <a name="BKMK_SelectionModels"></a> Auswahlmodelle  
   
 ### <a name="overview"></a>Übersicht  
  Ein Auswahlmodell ist der Mechanismus verwendet, um anzugeben, und bestätigen Vorgänge für eine oder mehrere Objekte von Interesse sind, in der Benutzeroberfläche. In diesem Thema wird erläutert, Auswahl interaktionsmustern in Visual Studio-Dokument-Editoren: Text-Editoren, Entwurfsoberflächen und Modellierung Flächen.  
@@ -309,7 +307,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
 #### <a name="region-selection-box-selection"></a>Die Auswahl der Region (Auswahl)  
  Visual Studio unterstützt Region Auswahl im Texteditor, und dies wird als Auswahl bezeichnet. Auswahl kann der Benutzer einen Bereich von Text auszuwählen, die nicht die reguläre Textstream folgt. Wie bei der Auswahl der standard-Text, muss die Auswahl zusammenhängend sein. Auswahl wird gestartet, indem Sie die Alt-Taste gedrückt halten, während Sie mit der Maus ziehen. Auswahl kann auch durch gedrückter Alt-Taste oder der UMSCHALTTASTE mithilfe der Pfeiltasten an den Bereich der Auswahl initiiert werden. Auswahl verwendet die Markierung der normalen und der Einfügepunkt blinkt, am Ende den Auswahlbereich zeigt.  
   
- ![Regionale &#40; Feld &#41; Auswahl in Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Land/Region &#40;Feld&#41; Auswahl in Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
  **Die Auswahl der Region (Feld) in Visual Studio**  
   
@@ -394,19 +392,19 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
  **Primäre Auswahl mit zwei sekundäre Auswahl**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Darstellung der Objekt-Auswahl  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der Objekt-Auswahl  
  Ziehpunkte sind Quadrate, die in einem rechteckmuster, um das umgebende Feld des Objekts gezeichnet wird. Das folgende Diagramm zeigt Beispiele für die verschiedenen Status, die ein Objekt mit Handle, Größe und direkte Bearbeitung Darstellung haben kann. Die Größe der Handles gebunden werden sollte, Fensterrahmens und Edge Metriken mithilfe der **GetSystemMetrics** API.  
   
 |Zustand|Darstellung|Visuelle details|  
 |-----------|----------------|--------------------|  
 |**Nicht ausgewählt**|Standard|![Schaltfläche Standardstatus](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Primäre Auswahl**|In der Größe veränderbar|![Primäre Auswahl mit Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Primäre Auswahl mit Größe Handles &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Primäre Auswahl**|Nicht geändert werden kann|![Primäre Auswahl ohne Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Primäre Auswahl ohne Ändern der Größe Handles &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Primäre Auswahl**|Gesperrt|![Primäre Auswahl gesperrt](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Primäre Auswahl gesperrt &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**Sekundäre Auswahl**|In der Größe veränderbar|![Sekundäre Auswahl mit Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Sekundäre Auswahl mit Größe Handles &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**Sekundäre Auswahl**|Nicht geändert werden kann|![Sekundäre Auswahl ohne Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Sekundäre Auswahl ohne Größenänderung &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**Sekundäre Auswahl**|Gesperrt|![Sekundäre Auswahl gesperrt](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Sekundäre Auswahl gesperrt &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**UI aktiv**|Standard|![Benutzeroberfläche im aktiven Status](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![UI Zustand "aktiv" &#40; vergrößert &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Primäre Auswahl**|In der Größe veränderbar|![Primäre Auswahl mit Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Primäre Auswahl mit Handles zur Größenänderung &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Primäre Auswahl**|Nicht geändert werden kann|![Primäre Auswahl ohne Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Primäre Auswahl ohne Handles zur Größenänderung &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Primäre Auswahl**|Gesperrt|![Primäre Auswahl gesperrt](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Primäre Auswahl gesperrt &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**Sekundäre Auswahl**|In der Größe veränderbar|![Sekundäre Auswahl mit Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Sekundäre Auswahl mit Handles zur Größenänderung &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**Sekundäre Auswahl**|Nicht geändert werden kann|![Sekundäre Auswahl ohne Handles zur Größenänderung](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Sekundäre Auswahl ohne Größenänderung &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**Sekundäre Auswahl**|Gesperrt|![Sekundäre Auswahl gesperrt](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Sekundäre Auswahl gesperrt &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**UI aktiv**|Standard|![Benutzeroberfläche im aktiven Status](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Benutzeroberfläche im aktiven Status &#40;vergrößert&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Die Auswahlmodelle anzeigen  
   
@@ -475,7 +473,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
 -   Die F2-Taste wird die direkte Bearbeitung für die derzeit ausgewählte Zelle aktiviert.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistenz und Speichern der Einstellungen  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenz und Speichern der Einstellungen  
   
 ### <a name="overview"></a>Übersicht  
  Obwohl jede Softwarekomponente in Visual Studio in der Regel für einen eigenen Status und Persistenz zuständig ist, speichert Visual Studio-Einstellungen in einigen Fällen wie z. B. mit Fenstergrößen und Positionen. In der folgenden Tabelle ist eine Kombination von Einstellungen, die automatisch gespeichert und Einstellungen, die erfordern, dass einen explizite Benutzer auszuführende Aktion programmiert.  
@@ -510,7 +508,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
 #### <a name="profile-specific-layouts"></a>Profil-spezifische layouts  
  Jedes Profil enthält Tool-Fensterlayouts, auf eine bestimmte Developer Personas vertraut Weise organisiert (Visual C++-Entwickler erwarten die **Projektmappen-Explorer** auf der linken Seite der IDE, während die C#-Entwickler erwarten, dass die findenSieunter **Projektmappen-Explorer** auf der rechten Seite). Profil-spezifische Fensterlayouts werden geladen, nachdem ein Profil beim Start Betätigung. Der Paketautor eines sollte das Fensterlayout für ihre benutzerfreundlichkeit am besten geeigneten bestimmen und zu wissen, dass Änderungen, die der Benutzer auf die Fensterkonfiguration stellt dann persistent ist.  
   
-##  <a name="BKMK_TouchInput"></a>Fingereingabe  
+##  <a name="BKMK_TouchInput"></a> Fingereingabe  
  Benutzer werden zunehmend Produkte für die Entwicklung von Microsoft auf Touch-Geräte verwenden. Es gibt jedoch Barrieren, die Verwenden von Entwicklungstools für Touch-Geräte erschweren. Benutzer erwarten, dass unsere Produkte eine zuverlässige und präzise Toucheingabe zu ermöglichen. Der Zweck dieser Richtlinien besteht darin, Entscheidungen über die Touch-Funktionen integriert und zur Förderung der einer konsistente Touch-Erfahrung in Visual Studio und verwandte Produkte zu informieren.  
   
 ### <a name="levels-of-experience"></a>Ebenen der Benutzeroberfläche  

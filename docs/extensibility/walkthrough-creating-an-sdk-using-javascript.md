@@ -1,23 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SDKS mit JavaScript | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit JavaScript
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie JavaScript verwenden, um eine einfache mathematische SDK als eine Visual Studio-Erweiterung (VSIX) zu erstellen.  Die exemplarische Vorgehensweise ist in folgende Teile gegliedert:  
@@ -31,9 +29,9 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie JavaScript verwend
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Zum Erstellen des SimpleMathVSIX Erweiterung-SDK-Projekts  
+##  <a name="createSimpleMathVSIX"></a> Zum Erstellen des SimpleMathVSIX Erweiterung-SDK-Projekts  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  In der Liste der Vorlagenkategorien unter **Visual C#-**Option **Erweiterbarkeit**, und wählen Sie dann die **VSIX-Projekt** Vorlage.  
   
@@ -142,9 +140,9 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie JavaScript verwend
   
 21. Starten Sie Visual Studio neu.  
   
-##  <a name="createSampleApp"></a>Eine Beispiel-app erstellen, die das SDK verwendet  
+##  <a name="createSampleApp"></a> Eine Beispiel-app erstellen, die das SDK verwendet  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  In der Liste der Vorlagenkategorien unter **JavaScript**Option **Windows Store**, und wählen Sie dann die **leere App** Vorlage.  
   
@@ -315,7 +313,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie JavaScript verwend
   
 11. Wählen Sie die Taste F5, um die app erstellen und ausführen.  
   
-12. Geben Sie in der Benutzeroberfläche der app, alle zwei Zahlen, wählen Sie einen Vorgang, und wählen Sie dann die  **=**  Schaltfläche. Das richtige Ergebnis wird angezeigt.  
+12. Geben Sie in der Benutzeroberfläche der app, alle zwei Zahlen, wählen Sie einen Vorgang, und wählen Sie dann die **=** Schaltfläche. Das richtige Ergebnis wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)

@@ -1,12 +1,10 @@
 ---
-title: "Excel-Übersicht über das Objektmodell | Microsoft Docs"
-ms.custom: 
+title: Excel-Übersicht über das Objektmodell | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  Dieses Thema enthält eine kurze Übersicht über das Excel-Objektmodell. Ressourcen, in dem Sie mehr über das gesamte Excel-Objektmodell erfahren, finden Sie unter [verwenden der Dokumentation zum Excel-Objektmodell](#ExcelOMDocumentation).  
   
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen I: Verwenden von Ereignishandlern in einer Excel 2007-Add-in?](http://go.microsoft.com/fwlink/?LinkID=130291), und [wie: Verwenden von Formen auf eine Blase erstellen Diagramm in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen I: Verwenden von Ereignishandlern in einer Excel 2007-Add-in?](http://go.microsoft.com/fwlink/?LinkID=130291), und [wie: Verwenden von Formen zum Erstellen eines Blasendiagramms in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Zugreifen auf Objekte in einem Excel-Projekt  
  Beim Erstellen eines neuen VSTO-Add-In-Projekts erstellt Visual Studio automatisch die Codedatei „ThisAddIn.vb“ oder „ThisAddIn.cs“. Sie können mithilfe von `Me.Application` oder `this.Application` auf das Anwendungsobjekt zugreifen.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- Mit der `Globals`-Klasse im Projekt können Sie auf `ThisWorkbook`, `Sheet1`, `Sheet2` oder `Sheet3` von außerhalb der jeweiligen Klasse zugreifen. Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md). Im folgenden Beispiel wird die <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> Methode `Sheet1` unabhängig davon, ob der Code in einem der platziert wird die `Sheet`  *n*  Klassen oder `ThisWorkbook` Klasse.  
+ Mit der `Globals`-Klasse im Projekt können Sie auf `ThisWorkbook`, `Sheet1`, `Sheet2` oder `Sheet3` von außerhalb der jeweiligen Klasse zugreifen. Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md). Im folgenden Beispiel wird die <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> Methode `Sheet1` unabhängig davon, ob der Code in einem der platziert wird die `Sheet` *n* Klassen oder `ThisWorkbook` Klasse.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio erweitert das <xref:Microsoft.Office.Interop.Excel.Range>-Objekt durch Bereitstellen des <xref:Microsoft.Office.Tools.Excel.NamedRange>-Typs und des <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Typs. Diese Typen verfügen größtenteils über die gleichen Funktionen wie ein <xref:Microsoft.Office.Interop.Excel.Range>-Objekt sowie über neue Funktionen, z. B. die Datenbindungsfunktion und neue Ereignisse. Weitere Informationen finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md) und [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Verwenden der Dokumentation zum Excel-Objektmodell  
+##  <a name="ExcelOMDocumentation"></a> Verwenden der Dokumentation zum Excel-Objektmodell  
  Ausführliche Informationen zum Excel-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) für Excel und der VBA-Objektmodellreferenz.  
   
 ### <a name="primary-interop-assembly-reference"></a>Referenz für die primäre Interopassembly  

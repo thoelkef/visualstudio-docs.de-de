@@ -2,33 +2,29 @@
 title: Folder-Element (Visual Studio-Projektvorlagen) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder-Element (Visual Studio-Projektvorlagen)
 Gibt einen Ordner, der dem Projekt hinzugefügt werden.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent >  
  \<Project>  
  \<Ordner >  
@@ -56,7 +52,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|`Folder`|Gibt einen Ordner auf dem Projekt hinzugefügt. `Folder`Elemente können untergeordnete enthalten `Folder` Elemente.|  
+|`Folder`|Gibt einen Ordner auf dem Projekt hinzugefügt. `Folder` Elemente können untergeordnete enthalten `Folder` Elemente.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Gibt eine Datei zum Projekt hinzugefügt.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
@@ -66,7 +62,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 |[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales untergeordnetes Element von [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Hinweise  
- `Folder`ist ein optionales untergeordnetes Element des `Project`.  
+ `Folder` ist ein optionales untergeordnetes Element des `Project`.  
   
  Sie können eine der folgenden Methoden, um Projektelemente in Ordnern in einer Vorlage zu organisieren:  
   

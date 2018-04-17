@@ -1,23 +1,21 @@
 ---
-title: "UX: Grundlagen für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: 'UX: Grundlagen für Visual Studio | Microsoft Docs'
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX: Grundlagen für Visual Studio
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Benutzeroberfläche des Benutzers ist ein Antimuster innerhalb von Visual Studio. Ordnungsgemäß entwickelten, video Links sollte eine QuickInfo mit weiteren Informationen angezeigt, wenn darauf gezeigt wird, und auf die "&times;" sollten verworfen werden, die Nachricht ohne weitere Interaktion erforderlich.
 
 
- ![Erläuternden Text anti &#45; Muster &#45; falsche](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolinks-Muster
+ ![Erläuternden Text anti-&#45;Muster &#45; falsch](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolinks-Muster
   
 #### <a name="result"></a>Ergebnis  
  Anstatt eine einfache Schaltfläche "Schließen" (einem Mausklick) wird der Benutzer gezwungen, zwei aufeinander folgende Mausklicks zu verwenden, um die Benutzeroberfläche in jedem Ort einfach zu verwerfen, die Videolinks angezeigt werden.  
@@ -116,7 +114,7 @@ Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Ben
 #### <a name="alternatives"></a>Alternativen  
  Der richtige Entwurf für diese Situation wäre das allgemeine Muster zu Internet Explorer, Office und Visual Studio folgen: Wenn darauf gezeigt wird, sieht der Benutzer kann die QuickInfo-Beschreibung und einem Mausklick Blendet Sie aus der Benutzeroberfläche.  
   
- ![Erläuternden Text anti &#45; Muster &#45; richtige](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti Muster korrigieren")<br />Richtige video Link-Muster
+ ![Erläuternden Text anti-&#45;Muster &#45; richtig](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti Muster korrigieren")<br />Richtige video Link-Muster
   
 ### <a name="using-command-bars-for-settings"></a>Verwenden von Befehlsleisten für Einstellungen  
  **Abbildung A** stellt diese Antimuster: setzen eine Einstellung unter eine Befehlsschaltfläche, die auf mehr als nur den Befehl angewendet wird. In dieser Version stehen die folgenden Befehle neben Debuggen starten – wie im Browser starten ohne Debugging und Einzelschritt – berücksichtigt, die die ausgewählte Einstellung.  

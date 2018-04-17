@@ -1,31 +1,29 @@
 ---
 title: Symbol-Anbieter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a98a5b80126bcb11109acedc2d24f226cde3714a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbol-provider"></a>Symbol-Anbieter
 Eine Expression Evaluator-Implementierung muss die vom Sprachcompiler generiert werden, um zu überprüfen, Variablen und Ausdrücke symbolischen Debuginformationen zugreifen. Dies erfolgt durch die Nutzung von der Schnittstellen von einem Symbol-Anbieter (SP), auch einen Symbol-Handler aufgerufen.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]liefert SPs für verwalteten Code als auch systemeigenen Code mit dem Dateiformat der Programmdatenbank (PDB)-Symbol. Es sei denn, es ist ein sicheres müssen Sie für Ihr Programm die Verwendung von Symbolen, die in einem benutzerdefinierten Format gespeichert ist, wird empfohlen, die vom SPs verwenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] liefert SPs für verwalteten Code als auch systemeigenen Code mit dem Dateiformat der Programmdatenbank (PDB)-Symbol. Es sei denn, es ist ein sicheres müssen Sie für Ihr Programm die Verwendung von Symbolen, die in einem benutzerdefinierten Format gespeichert ist, wird empfohlen, die vom SPs verwenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung  
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugmodule sprechen Sie mit der Common Language Runtime (CLR)-Schnittstellen mit SPs erwarten. Daher muss ein SP, die mit Visual Studio-Debugmodule arbeiten, die CLR unterstützen. Eine vollständige Liste der alle CLR-Debugschnittstellen verwendbaren im debugref.doc, die Teil von der [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  

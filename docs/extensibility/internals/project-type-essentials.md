@@ -2,29 +2,25 @@
 title: Projekt Typ Essentials | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-type-essentials"></a>Projekt Typ Essentials
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]enthält einige Projekttypen für Sprachen wie z. B. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Außerdem können Sie eigene Projekttypen erstellen.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält einige Projekttypen für Sprachen wie z. B. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Außerdem können Sie eigene Projekttypen erstellen.  
   
  Wenn Sie nur benutzerdefinierte Befehle, Editoren und Toolfenster, hinzufügen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], können Sie dies tun, ohne einen neuen Projekttyp erstellen. Weitere Informationen finden Sie unter den folgenden Themen:  
   
@@ -62,11 +58,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Projekttypen können Daten als normale Quellcodedateien unterstützen, die in eine Assembly .exe oder .dll erstellen. Beispielsweise [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenbankprojekte enthalten Verweise auf Skripts und Abfrage-Dateien, die auf dem Datenträger gespeichert und Befehle hinzufügen **Projektmappen-Explorer** zum Ausführen der Skripts und Abfragen für eine Datenbank, aber die Projekte nicht unterstützt Erstellen Sie Verhalten. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Ein Projekt ist keine Dateien überhaupt nicht verwendet. Beispielsweise konnte ein Projekttyp alle ihre Daten in einer Datenbank speichern. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet Projekttypen vollständig selbst bestimmen, wie sie Daten für die Projekte und Projektelemente beizubehalten. Weitere Informationen finden Sie unter [Projekt Typ Entwurfsentscheidungen](../../extensibility/internals/project-type-design-decisions.md).  
+-   Ein Projekt ist keine Dateien überhaupt nicht verwendet. Beispielsweise konnte ein Projekttyp alle ihre Daten in einer Datenbank speichern. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet Projekttypen vollständig selbst bestimmen, wie sie Daten für die Projekte und Projektelemente beizubehalten. Weitere Informationen finden Sie unter [Projekt Typ Entwurfsentscheidungen](../../extensibility/internals/project-type-design-decisions.md).  
   
 -   Projekttypen müssen Bereitstellen einer *Projekt Factory*, ist ein Objekt, das eine Instanz des Projekts erstellt geben bei jedem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird geöffnet oder erstellt ein Projekt, das basierend auf diesen Projekttyp mitgeteilt. Weitere Informationen finden Sie unter [erstellen Instanzen von mithilfe von Project Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Projekttypen müssen Vorlagen für Projekte und Projektelemente angeben. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]die Vorlagen werden verwendet, wenn Benutzer neue Projekte erstellen und neuer Elemente zu vorhandenen Projekten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Projekttypen müssen Vorlagen für Projekte und Projektelemente angeben. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Vorlagen werden verwendet, wenn Benutzer neue Projekte erstellen und neuer Elemente zu vorhandenen Projekten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 -   Projekttypen können mehrere Konfigurationen, z. B. Debug- und unterstützen. Benutzer können die verschiedenen Konfigurationen eines Projekts ändern, mithilfe von Eigenschaftenseiten, die Sie angeben. Weitere Informationen finden Sie unter [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md).  
   

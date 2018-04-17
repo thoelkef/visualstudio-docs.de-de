@@ -1,21 +1,18 @@
 ---
-title: "Vorgehensweise: Verwenden Sie für Visual Studio-Erweiterungen regelbasierte Benutzeroberflächenkontext | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Verwenden Sie für Visual Studio-Erweiterungen regelbasierte Benutzeroberflächenkontext | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden Sie regelbasierte Benutzeroberflächenkontext für Visual Studio-Erweiterungen
 Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberfläche Kontexte sind nicht sehr präzise umfassendere, verlassen Erweiterung Autoren keine andere Möglichkeit jedoch um eine verfügbare Benutzeroberflächenkontext auswählen, die vor dem Punkt, aktiviert sie wollten das VSPackage beim Laden. Eine Liste der bekannten Benutzeroberflächen-Kontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
 |ConfigSettingsStoreQuery:\<Abfrage >|"Abfrage" stellt einen vollständigen Pfad in den Konfigurationsspeicher für die Einstellungen der auf einen Wert ungleich 0 (null) ausgewertet werden muss. Die Abfrage wird in eine "Auflistung" und "PropertyName" auf der letzten Schrägstrich aufgeteilt.|  
 |ActiveProjectFlavor:\<ProjectTypeGuid >|Der Begriff wird "true" werden, wenn das aktuell ausgewählte Projekt flavored ist (aggregiert) und verfügt über ein Flavor entsprechen den jeweiligen Projekttyp GUID.|  
 |ActiveEditorContentType:\<ContentType >|Der Begriff wird "true" sein, wenn das ausgewählte Dokument mit einem Text-Editor mit dem angegebenen Inhaltstyp ist.|  
-|ActiveProjectCapability:\<Ausdruck >|Der Begriff ist "true", wenn aktiven Projektfunktionen mit dem angegebenen Ausdruck übereinstimmt. Ein Ausdruck kann etwas wie VB &#124; CSharp|  
+|ActiveProjectCapability:\<Ausdruck >|Der Begriff ist "true", wenn aktiven Projektfunktionen mit dem angegebenen Ausdruck übereinstimmt. Ein Ausdruck kann etwa VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<Ausdruck >|Oben ähnlich, aber Begriff wird "true", bei der Lösung alle anderen geladenen Projekt aufweist, das dem Ausdruck übereinstimmt.|  
 |SolutionHasProjectFlavor:\<ProjectTypeGuid >|Der Begriff werden "true", eine Lösung Projekt, das flavored ist (aggregiert) hat, und verfügt über ein Flavor entsprechen den jeweiligen Projekttyp GUID.|
 

@@ -1,23 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SDKS mit c# oder Visual Basic | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit c# oder Visual Basic
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen mathematischen Bibliothek SDK mit Visual c# erstellen und dann das SDK als eine Visual Studio-Erweiterung (VSIX) verpacken. Sie müssen die folgenden Verfahren ausführen:  
@@ -31,7 +29,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>So erstellen Sie die SimpleMath Windows-Runtime-Komponente  
+##  <a name="createClassLibrary"></a> So erstellen Sie die SimpleMath Windows-Runtime-Komponente  
   
 1.  Wählen Sie in der Menüleiste **Datei**, **neu**, **neues Projekt**.  
   
@@ -59,7 +57,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 9. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SimpleMath** Projektknoten, und wählen Sie dann **erstellen**.  
   
-##  <a name="createVSIX"></a>So erstellen das Erweiterungsprojekt SimpleMathVSIX  
+##  <a name="createVSIX"></a> So erstellen das Erweiterungsprojekt SimpleMathVSIX  
   
 1.  Das Kontextmenü für die **Lösung "SimpleMath"** Knoten, wählen Sie **hinzufügen**, **neues Projekt**.  
   
@@ -154,7 +152,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 30. Wählen Sie die **installieren** Schaltfläche, warten Sie, bis die Installation abgeschlossen wurde, und starten Sie Visual Studio.  
   
-##  <a name="createSample"></a>Eine Beispiel-app erstellen, die die Class-Bibliothek verwendet  
+##  <a name="createSample"></a> Eine Beispiel-app erstellen, die die Class-Bibliothek verwendet  
   
 1.  Wählen Sie in der Menüleiste **Datei**, **neu**, **neues Projekt**.  
   
@@ -168,7 +166,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 6.  Wählen Sie im Detailbereich die **einfache mathematische SDK** Erweiterung.  
   
-     Weitere Informationen zu Ihrem SDK wird angezeigt. Sie können die **mehr Informationen** Link zum Öffnen von http://www.msdn.microsoft.com, wie Sie in der Datei SDKManifest.xml weiter oben in dieser exemplarischen Vorgehensweise angegeben.  
+     Weitere Informationen zu Ihrem SDK wird angezeigt. Sie können die **mehr Informationen** Link zum Öffnen http://www.msdn.microsoft.com, wie Sie in der Datei SDKManifest.xml weiter oben in dieser exemplarischen Vorgehensweise angegeben.  
   
 7.  In der **Verweis-Manager** wählen Sie im Dialogfeld die **einfache mathematische SDK** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -237,7 +235,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 12. Drücken Sie die Taste F5, um die app auszuführen.  
   
-13. Geben Sie in der app, die zwei Zahlen, wählen Sie einen Vorgang aus, und wählen Sie dann die  **=**  Schaltfläche.  
+13. Geben Sie in der app, die zwei Zahlen, wählen Sie einen Vorgang aus, und wählen Sie dann die **=** Schaltfläche.  
   
      Das richtige Ergebnis wird angezeigt.  
   

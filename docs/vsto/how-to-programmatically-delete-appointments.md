@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Programmgesteuertes Löschen von Terminen | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Programmgesteuertes Löschen von Terminen | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 29847c3a88c04d4d74db88008c97004ab9d648df
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1924605d3cb52f002dc0bc81e17d723e42ef2e38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Gewusst wie: Programmgesteuertes Löschen von Terminen
   In diesem Beispiel wird eine Instanz eines sich wiederholenden Termins gelöscht. Für das Beispiel wird davon ausgegangen, dass am 28. Juni 2006 um 08:00 Uhr eine Instanz eines sich wiederholenden Termins stattfindet.  

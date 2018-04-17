@@ -1,26 +1,24 @@
 ---
 title: Registrieren von Interop-Assembly Befehlshandler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrierung der Befehlshandler der Interop-Assembly
 Eine VSPackage muss mit registrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit der integrierten Entwicklungsumgebung (IDE) die zugehörigen Befehle ordnungsgemäß weiterleitet.  
@@ -58,7 +56,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 |-------------|-----------------|  
 |\<*Pfad zur Ressourcen-DLL*>|Dies ist der vollständige Pfad zu den Ressourcen-DLL, die die Menüressource enthält, oder dies ist leer, gibt an, dass die VSPackage Ressource DLL ist, verwendet werden (gemäß im Unterschlüssel Pakete, in das VSPackage selbst registriert ist).<br /><br /> Es ist üblich, um dieses Feld leer lassen.|  
 |\<*Menü-Ressourcen-ID*>|Dies ist die Ressourcen-ID, der die `CTMENU` Ressource, die alle Elemente der Benutzeroberfläche für das VSPackage enthält, wie aus kompiliert eine [VSCT](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) Datei.|  
-|\<*Menü-Version*>|Dies ist eine Zahl, die als einer Version für die `CTMENU` Ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Dieser Wert verwendet, um festzustellen, ob es muss sich um den Inhalt der erneutes Zusammenführen von der `CTMENU` Ressource mit dem Cache aller `CTMENU` Ressourcen. Ein erneutes Zusammenführen von wird durch Ausführen des Setup-Befehls Devenv ausgelöst.<br /><br /> Dieser Wert anfangs auf 1 festgelegt und nach jeder Änderung erhöht die `CTMENU` Ressource und bevor die erneutes Zusammenführen von auftritt.|  
+|\<*Menü-Version*>|Dies ist eine Zahl, die als einer Version für die `CTMENU` Ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dieser Wert verwendet, um festzustellen, ob es muss sich um den Inhalt der erneutes Zusammenführen von der `CTMENU` Ressource mit dem Cache aller `CTMENU` Ressourcen. Ein erneutes Zusammenführen von wird durch Ausführen des Setup-Befehls Devenv ausgelöst.<br /><br /> Dieser Wert anfangs auf 1 festgelegt und nach jeder Änderung erhöht die `CTMENU` Ressource und bevor die erneutes Zusammenführen von auftritt.|  
   
 ### <a name="example"></a>Beispiel  
  Hier ist ein Beispiel für eine Reihe von Ressourceneinträge:  

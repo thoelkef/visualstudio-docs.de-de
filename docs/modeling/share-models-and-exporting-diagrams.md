@@ -1,29 +1,27 @@
 ---
 title: Freigeben von Modellen und Exportieren von Diagrammen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a615fcbd55d8520e2c340d3b1d0afe0321fd1f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a40e35ef01698639f89aa64cc1494d7721506895
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="working-on-a-model-as-a-team"></a>Arbeiten an einem Modell als Team  
  Benutzer von Visual Studio können erstellen und Bearbeiten von Modellen, Abhängigkeit und gerichtete Diagramme.  
@@ -35,7 +33,7 @@ In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für 
  Vorschläge zum Organisieren von in einem Projekt mittlere oder große Modelle, finden Sie unter [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="reading-and-reviewing-models"></a>Lesen und Überprüfen von Modellen  
- Teammitglieder, die mit einigen Versionen von Visual Studio (die Modelle erstellen können) können Modelle, lesen Modellierungsdiagramme und gerichtete Diagramme, aber nicht bearbeiten.  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Teammitglieder, die mit einigen Versionen von Visual Studio (die Modelle erstellen können) können Modelle, lesen Modellierungsdiagramme und gerichtete Diagramme, aber nicht bearbeiten.  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Eine Abhängigkeit Diagramm kann nur innerhalb des Modells geöffnet werden, in dem es erstellt wurde. Um Zugriff auf ein Diagramm zu gewähren, müssen Sie daher Zugriff auf alle Modellierungsprojektdateien oder auf Kopien von diesen gewähren.  
   

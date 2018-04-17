@@ -1,24 +1,22 @@
 ---
 title: Debuggen einer T4-Textvorlage | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debuggen einer T4-Textvorlage
 Sie können Haltepunkte in den Textvorlagen festlegen. Klicken Sie zum Debuggen einer Textvorlage zur Entwurfszeit speichern Sie die Textvorlagendatei, und wählen Sie dann **T4-Vorlage Debuggen** im Kontextmenü der Datei im Projektmappen-Explorer. Um eine Laufzeit-Textvorlage zu debuggen, müssen Sie einfach die Anwendung debuggen, zu der sie gehört.  
@@ -47,7 +45,7 @@ Sie können Haltepunkte in den Textvorlagen festlegen. Klicken Sie zum Debuggen 
 |Der Pfad "{0}" muss entweder lokal auf diesem Computer oder Teil Ihrer vertrauenswürdigen Zone sein.|Tritt auf, wenn eine Direktive oder Assemblydirektive auf eine Datei verweist, die nicht auf dem lokalen Computer oder in der vertrauenswürdigen Zone des Netzwerks ist.|Stellen Sie sicher, dass das Verzeichnis, in dem sich die Direktive oder Assemblydirektiven befinden, in der vertrauenswürdigen Zone ist. Sie können der vertrauenswürdigen Zone durch Internet Explorer ein Netzwerkverzeichnis hinzufügen.|  
 |Mehrere Syntaxfehler z. B. "Ungültige Token-Erfassung" oder "Ein Namespace kann nicht direkt Member enthalten".|Zu viele schließende geschweifte Klammern im Vorlagencode. Der Compiler verwechselt dies mit dem Standardgenerierungscode.|Überprüfen Sie die Anzahl von schließenden geschweiften Klammern und Klammern in Codetrennzeichen.|  
 |Schleifen oder Bedingungen nicht kompiliert oder korrekt ausgeführt. Beispiel: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Dieser Code gibt immer den Wert i aus. Nur "Nummer ist:" ist bedingt.|Verwenden Sie in C# immer geschweifte Klammern, um Textblöcke zu umgeben, die in Steueranweisungen eingebettet sind.|Fügen Sie geschweifte Klammern hinzu: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|„Ausdruck zu komplex“ beim Bearbeiten einer Entwurfszeitvorlage oder Kompilieren einer (vorverarbeiteten) Laufzeitvorlage.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reagiert beim Versuch, die von einer Laufzeitvorlage generierten Code zu überprüfen.|Textblock ist zu lang. T4 konvertiert Textblöcke in einen Zeichenfolgen-Verkettungsausdruck mit einem Zeichenfolgenliteral für jede Vorlagenzeile. Sehr lange Textblöcke können die Compiler größenbeschränkungen überschreiten.|Teilen Sie den langen Textblock mit einem Ausdrucksblock wie folgt:<br /><br /> `<#= "" #>`|  
+|„Ausdruck zu komplex“ beim Bearbeiten einer Entwurfszeitvorlage oder Kompilieren einer (vorverarbeiteten) Laufzeitvorlage.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] funktioniert nicht mehr, wenn Sie versuchen, von einer Laufzeitvorlage generierten Code zu überprüfen.|Textblock ist zu lang. T4 konvertiert Textblöcke in einen Zeichenfolgen-Verkettungsausdruck mit einem Zeichenfolgenliteral für jede Vorlagenzeile. Sehr lange Textblöcke können die Compiler größenbeschränkungen überschreiten.|Teilen Sie den langen Textblock mit einem Ausdrucksblock wie folgt:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Warnungsbeschreibungen und Korrekturen  
  In der folgenden Tabelle sind die gängigsten Warnungen zusammen mit Patches (sofern verfügbar) aufgeführt.  
@@ -72,7 +70,7 @@ Sie können Haltepunkte in den Textvorlagen festlegen. Klicken Sie zum Debuggen 
 |Die Includedirektive für die Datei "{0}" verursacht eine Endlosschleife.|Wird angezeigt, wenn zirkuläre Includeanweisungen (Datei A enthält z. B. Datei B, die Datei A enthält) angegeben werden.|Geben Sie keine zirkulären Includedirektiven an.|  
 |Ausführen von Transformation:|Stellt diese Zeichenfolge allen Fehlern oder Warnungen voran, die generiert werden, während die Transformation ausgeführt wird.|Nicht zutreffend.|  
 |Ein unerwartetes Start- oder Endtag wurde in einem Block gefunden. Stellen Sie sicher, dass bei keinem Start- oder Endtag ein Schreibfehler vorliegt und dass keine geschachtelten Blöcke in der Vorlage vorhanden sind.|Angezeigt, wenn Sie eine unerwartete \<# or #>. D. h. Sie ggf. eine \<# nach einem anderen geöffneten Tag, die nicht geschlossen worden ist, oder es liegt ein #> Wenn es kein geöffnetes Tag davor gibt. Die Meldung gibt die Zeilennummer des falsch zugewiesenen Tags an.|Entfernen Sie das nicht übereinstimmende Start- oder das Endtag, oder verwenden Sie ein Escape-Zeichen.|  
-|Eine Anweisung wurde im falschen Format angegeben. Die Anweisung wird ignoriert. Geben Sie die Direktive im format`<#@ name [parametername="parametervalue"]*  #>`|Vom Parser angezeigt, wenn eine Anweisung nicht im richtigen Format angegeben wird. Die Meldung gibt die Zeilennummer der falschen Anweisung an.|Sicherzustellen, dass alle Direktiven sind in der Form `<#@ name [parametername="parametervalue"]*  #>`. Weitere Informationen finden Sie unter [T4-Textvorlagendirektiven](../modeling/t4-text-template-directives.md).|  
+|Eine Anweisung wurde im falschen Format angegeben. Die Anweisung wird ignoriert. Geben Sie die Direktive im format `<#@ name [parametername="parametervalue"]*  #>`|Vom Parser angezeigt, wenn eine Anweisung nicht im richtigen Format angegeben wird. Die Meldung gibt die Zeilennummer der falschen Anweisung an.|Sicherzustellen, dass alle Direktiven sind in der Form `<#@ name [parametername="parametervalue"]*  #>`. Weitere Informationen finden Sie unter [T4-Textvorlagendirektiven](../modeling/t4-text-template-directives.md).|  
 |Fehler beim Laden der Assembly "{0}" für den registrierten Direktivenprozessor "{1}"<br /><br /> {2}|Tritt auf, wenn ein Anweisungsprozessor nicht vom Host geladen werden konnte. Die Meldung identifiziert die für den Anweisungsprozessor und den Namen des Anweisungsprozessors bereitgestellte Assembly.|Stellen Sie sicher, dass der Anweisungsprozessor ordnungsgemäß registriert und die Assembly vorhanden ist.|  
 |Fehler beim Suchen des Typs "{0}" in der Assembly "{1}" für den registrierten Direktivenprozessor "{2}"<br /><br /> {3}|Tritt auf, wenn ein Anweisungsprozessortyp nicht von seiner Assembly geladen werden konnte. Die Meldung enthält den Namen des Typs, der Assembly und des Direktivenprozessors.|Der vshost sucht Direktivenprozessorinformationen (Name, Assembly und Typ) in der Registrierung. Stellen Sie sicher, dass der Anweisungsprozessor ordnungsgemäß registriert und der Typ in der Assembly vorhanden ist.|  
 |Es gab ein Problem beim Laden der Assembly "{0}".|Tritt auf, wenn es ein Problem beim Laden einer Assembly gibt. Die Meldung stellt den Namen der Assembly bereit.|Sie können angeben, dass Assemblys in geladen werden \<@# Assembly #>-Direktiven und von Direktivenprozessoren. Die Fehlermeldung, die dieser Zeichenfolge folgt, sollte weitere Daten darüber enthalten, warum die Assemblylast fehlgeschlagen ist.|  

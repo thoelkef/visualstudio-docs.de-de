@@ -1,13 +1,10 @@
 ---
 title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f465deaaca406c28aab177434e72de9746fb101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8779ba4ee4cf9803982d9849b3af7c83930d8a5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen
   Sie können den Bereitstellungsprozess anpassen, indem Sie Befehle vor der Bereitstellung und nach der Bereitstellung festlegen. Diese Befehle führen Sie vor und nach anderen Bereitstellungsaktionen beim Debuggen von SharePoint-Lösungen in Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>So fügen Sie einen Befehl vor der Bereitstellung hinzu  
   
-1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**.  
+1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**.  
   
 2.  Wählen Sie die **SharePoint** Registerkarte.  
   
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-add-a-post-deployment-command"></a>So fügen Sie einen Befehl nach der Bereitstellung hinzu  
   
-1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**.  
+1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**.  
   
 2.  Wählen Sie die **SharePoint** Registerkarte.  
   

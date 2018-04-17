@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Lokalisieren einer Funktion | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Gewusst wie: Lokalisieren einer Funktion
   Standardmäßig verwenden die Funktionstitel und Beschreibungen hartcodierte Zeichenfolgenwerte. Um den Funktionstitel und die Beschreibung lokalisieren möchten, ersetzen Sie die Zeichenfolgen mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Zum Lokalisieren der **Titel** und **Beschreibung** Felder in die Funktion mit der Eingabe von Werten in den Feldern im folgenden Format:  
   
-     `$Resources:`*Zeichenfolgen-ID*  
+     `$Resources:` *Zeichenfolgen-ID*  
   
      Geben Sie z. B. $Resources:**Titel** in der **Funktionstitel** Feld und $Resources:**Beschreibung** in der **Featurebeschreibung** Feld .  
   

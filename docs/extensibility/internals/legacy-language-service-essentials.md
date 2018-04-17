@@ -1,28 +1,26 @@
 ---
-title: "Ältere Language Service Essentials | Microsoft Docs"
-ms.custom: 
+title: Ältere Language Service Essentials | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3323d317ac8b04731d1573d5c1a05150e012cbfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 68b92b821ad77b050ad2116da6fd930b975dad5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-essentials"></a>Ältere Language Service Essentials
 Sie müssen einen Sprachdienst zum Integrieren von eines Programmiersprache Ihrer Wahl in Visual Studio bereitstellen. Dieser Artikel beschreibt die Funktionen, die in älteren Sprachdienste verfügbar.  
@@ -34,7 +32,7 @@ Sie müssen einen Sprachdienst zum Integrieren von eines Programmiersprache Ihre
   
  Dienste für ältere Sprachen bieten folgende Funktionen:  
   
-|Funktion|Beschreibung|  
+|Feature|Beschreibung|  
 |-------------|-----------------|  
 |Farben für Syntax|Bewirkt, dass die Editor-Ansicht, um andere Farben und Schriftarten für die verschiedenen Elemente von einer anderen Sprache anzuzeigen. Diese Unterscheidung erleichtern das Lesen und Bearbeiten von Dateien.<br /><br /> Allgemeine Informationen finden Sie unter [Färbung Syntax in ein Legacy-Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Informationen zu dieser Funktion in des managed Package Framework (MPF) finden Sie unter [farbliche Kennzeichnung von Syntax in ein Legacy-Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
 |Anweisungsvervollständigung|Schließt eine Anweisung oder ein Schlüsselwort, das der Benutzer eingeben gestartet wurde. Anweisungsvervollständigung hilft Benutzern, die schwer Anweisungen leichter, mit weniger Aufwand und weniger potenzielle Fehler eingeben.<br /><br /> Allgemeine Informationen finden Sie unter [Anweisungsvervollständigung in einen Legacy-Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Informationen zu dieser Funktion in des verwalteten Paketframeworks finden Sie unter [Wortvervollständigung in einen Legacy-Sprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
@@ -46,7 +44,7 @@ Sie müssen einen Sprachdienst zum Integrieren von eines Programmiersprache Ihre
   
  Die folgenden Funktionen stehen im Zusammenhang mit der übrigen Programmiersprachen unterstützt, jedoch sind nicht Teil der Dienste für Sprachen:  
   
-|Funktion|Beschreibung|  
+|Feature|Beschreibung|  
 |-------------|-----------------|  
 |Ausdrucksauswertungen|Unterstützt die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger durch Überprüfen von Haltepunkten und Angabe einer Liste von Ausdrücken, die in angezeigt werden die **"Auto"** Debug-Fenster.<br /><br /> Weitere Informationen finden Sie unter [Dienst sprachunterstützung zum Debugging](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Tools zum Durchsuchen des Symbols|Unterstützt **Objektkatalog**, **Klassenansicht**, **Browser aufrufen**, und **Ergebnisse der Symbolsuche**.|

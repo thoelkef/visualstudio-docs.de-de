@@ -1,22 +1,19 @@
 ---
-title: "Manifest für Code | Microsoft Docs"
-ms.custom: 
+title: Manifest für Code | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 Das Manifest, um Code Tool ist eine Konsolenanwendung, die eine .imagemanifest-Datei für den Visual Studio-Image-Dienst akzeptiert und generiert einen Wrapper Datei(en) zum Verweisen auf das Image-Manifest-Werte in C++, c#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Bilder aus der Visual Studio Bilddienst direkt oder für das manifest Werte über APIs übergeben werden, wenn der Code eine eigene Benutzeroberfläche und des Rendering nicht verarbeiten kann.  

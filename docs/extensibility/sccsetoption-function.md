@@ -1,29 +1,25 @@
 ---
 title: SccSetOption Funktion | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption-Funktion
 Diese Funktion legt Optionen, die das Verhalten des Datenquellen-Steuerelements-Plug-in zu steuern.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Wenn `nOption` ist `SCC_OPT_EVENTQUEUE`, die IDE ist deaktivieren (oder erneutes Aktivieren) Verarbeitung im Hintergrund. Während eine Kompilierung weisen die IDE z. B. das Quellsteuerelement-Plug-in bei Leerlauf Verarbeitung jeglicher Art beendet. Nach der Kompilierung würden sie Verarbeitung im Hintergrund, das Plug-in der Ereigniswarteschlange auf dem neuesten Stand zu halten erneut aktivieren. Entspricht der `SCC_OPT_EVENTQUEUE` Wert `nOption`, es gibt zwei mögliche Werte für `dwVal`, nämlich `SCC_OPT_EQ_ENABLE` und `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Wenn der Wert für `nOption` ist `SCC_OPT_HASCANCELMODE`, die IDE ermöglicht Benutzern das langer Vorgänge "Abbrechen". Festlegen von `dwVal` auf `SCC_OPT_HCM_NO` (Standard) gibt an, dass die IDE keine Modus "Abbrechen" verfügt. Die Datenquellen-Steuerelement-Plug-in muss eine eigene Schaltfläche "Abbrechen" anbieten, wenn er möchte, dass den Benutzer auf "Abbrechen" können. `SCC_OPT_HCM_YES`Gibt an, dass die IDE die Möglichkeit bietet, einen Vorgang "Abbrechen" SCC-Plug-in muss sich nicht um eine eigene Schaltfläche "Abbrechen" anzeigen. Die IDE festgelegt `dwVal` auf `SCC_OPT_HCM_YES`, wird er so reagieren Sie auf vorbereitet `SCC_MSG_STATUS` und `DOCANCEL` Nachrichten an die `lpTextOutProc` Rückruffunktion (finden Sie unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Wenn diese Variable in die IDE nicht festgelegt ist, sollten das plug-in nicht diese beiden Meldungen senden.  
+ Wenn der Wert für `nOption` ist `SCC_OPT_HASCANCELMODE`, die IDE ermöglicht Benutzern das langer Vorgänge "Abbrechen". Festlegen von `dwVal` auf `SCC_OPT_HCM_NO` (Standard) gibt an, dass die IDE keine Modus "Abbrechen" verfügt. Die Datenquellen-Steuerelement-Plug-in muss eine eigene Schaltfläche "Abbrechen" anbieten, wenn er möchte, dass den Benutzer auf "Abbrechen" können. `SCC_OPT_HCM_YES` Gibt an, dass die IDE die Möglichkeit bietet, einen Vorgang "Abbrechen" SCC-Plug-in muss sich nicht um eine eigene Schaltfläche "Abbrechen" anzeigen. Die IDE festgelegt `dwVal` auf `SCC_OPT_HCM_YES`, wird er so reagieren Sie auf vorbereitet `SCC_MSG_STATUS` und `DOCANCEL` Nachrichten an die `lpTextOutProc` Rückruffunktion (finden Sie unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Wenn diese Variable in die IDE nicht festgelegt ist, sollten das plug-in nicht diese beiden Meldungen senden.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  Wenn nOption, um festgelegt ist `SCC_OPT_NAMECHANGEPFN`, und sowohl der Source-Plug-in-Steuerelement und die IDE ermöglichen es, das plug-in kann tatsächlich umbenennen oder Verschieben von Dateien während eines Vorgangs des Datenquellen-Steuerelement. Die `dwVal` festgelegt, um einen Funktionszeiger des Typs [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Bei einem Vorgang Source Control können das plug-in dieser Funktion können in drei Parameter übergeben aufrufen. Hierbei handelt es sich um den alten Namen (mit den vollqualifizierten Pfad) von einer Datei, die den neuen Namen (mit den vollqualifizierten Pfad) der Datei und einen Zeiger auf Informationen, die Relevanz der IDE. Die IDE sendet in dieser letzten Zeiger durch Aufrufen von `SccSetOption` mit `nOption` festgelegt `SCC_OPT_USERDATA`, mit `dwVal` verweist auf die Daten. Unterstützung für diese Funktion ist optional. Eine VSSCI-Plug-verwendet diese Fähigkeit Datenvariablen für seine Funktion Zeiger und der Benutzer zum Initialisieren muss `NULL`, und eine Rename-Funktion müssen nicht aufrufen, es sei denn, es einer festgelegt wurde. Es sollte auch vorbereitet werden, um den Wert zu speichern, es wurde angegeben, oder als Antwort auf eine neue Aufruf ändern `SccSetOption`. Dies erfolgt nicht in der Mitte einer Quelle Befehl Steuerungsvorgang, aber es kann vorkommen, zwischen den Befehlen.  

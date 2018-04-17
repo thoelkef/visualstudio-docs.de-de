@@ -1,23 +1,21 @@
 ---
-title: "Übersicht über domänenspezifische Sprachtools | Microsoft Docs"
-ms.custom: 
+title: Übersicht über domänenspezifische Sprachtools | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89ff0565bf33936f15c18c0964fc9fb2f64ab9b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd105ae8553d39a6fe1a1bd23136d5027da17ec3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 Domänenspezifische Sprachtools (DSL Tools), die in gehostet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ermöglichen eine domänenspezifische Sprache zu entwerfen und generieren Sie alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die auf der Sprache basieren.  
@@ -53,7 +51,7 @@ Domänenspezifische Sprachtools (DSL Tools), die in gehostet werden [!INCLUDE[vs
   
  Der Assistent erstellt eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung mit den folgenden Projekten:  
   
--   Dsl  
+-   DSL  
   
      Dsl-Projekt definiert die domänenspezifische Sprache und die zugehörigen Tools bearbeiten und verarbeiten.  
   

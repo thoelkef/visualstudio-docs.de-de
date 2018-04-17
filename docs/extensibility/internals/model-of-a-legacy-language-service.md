@@ -1,27 +1,23 @@
 ---
 title: Modell von einem Legacy-Sprachdienst | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell von einem Legacy-Sprachdienst
 Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und verwendet, um den Editor durch spezifische Informationen zum jeweiligen Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und die Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.  
@@ -52,7 +48,7 @@ Grundlegende Service Sprachmodell
 |Codefenster|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Ein Dokumentfenster, das eine oder mehrere Textansichten enthält. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird im Modus Multiple Document Interface (MDI), ist das Codefenster untergeordnetes MDI-Fenster.|  
 |Textansicht|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Ein Fenster, in dem der Benutzer navigieren und Anzeigen von Text mithilfe der Tastatur und Maus. Eine Textansicht wird dem Benutzer als Editor angezeigt. Sie können Textansichten in normalen-Editor-Fenster, Fenster "Ausgabe" und das "Direktfenster" verwenden. Darüber hinaus können Sie eine oder mehrere Textansichten in einem Fenster des Code konfigurieren.|  
 |Text-manager|Von verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> Dienst, die Sie erhalten eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Zeiger|Eine Komponente, die allgemeine Informationen, die alle Komponenten, die zuvor beschriebenen freigegebenen verwaltet.|  
-|-Sprachdienst|Implementierungsabhängig; implementiert<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Ein Objekt, das sprachspezifische Informationen wie syntaxhervorhebung, Anweisungsvervollständigung und Klammer den Editor bietet.|  
+|-Sprachdienst|Implementierungsabhängig; implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Ein Objekt, das sprachspezifische Informationen wie syntaxhervorhebung, Anweisungsvervollständigung und Klammer den Editor bietet.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../../extensibility/document-data-and-document-view-in-custom-editors.md)

@@ -1,26 +1,24 @@
 ---
-title: "Benutzerdefinierte Oberfläche (Source Control VSPackage) | Microsoft Docs"
-ms.custom: 
+title: Benutzerdefinierte Oberfläche (Source Control VSPackage) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Oberfläche (Source Control VSPackage)
 Eine VSPackage deklariert die Menüelemente und deren Standardstatus über die Visual Studio-Befehlstabelle (VSCT)-Datei. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) werden die Menüelemente in ihrem Standard angezeigt, bis das VSPackage geladen wurde. Anschließend kann die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode wird aufgerufen, um zu aktivieren oder Deaktivieren von Menüelementen.  
@@ -49,7 +47,7 @@ Eine VSPackage deklariert die Menüelemente und deren Standardstatus über die V
   
  Die erforderliche <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, und auch optionalen Schnittstellen zugeordneten Datenquellen-Steuerelements werden nicht aufgerufen, wenn das Quellsteuerelement VSPackage inaktiv ist.  
   
- Wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE gestartet wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des Kontexts Befehl UI auf die ID der Standardeinstellung Quellcodeverwaltungs VSPackage-ID. Dies bewirkt, dass die statische Benutzeroberfläche des aktiven Datenquellen-Steuerelements VSPackage in der IDE angezeigt werden, ohne tatsächlich laden das VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]für das VSPackage zu registrierenden hält [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> vor dem alle Aufrufe an das VSPackage.  
+ Wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE gestartet wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des Kontexts Befehl UI auf die ID der Standardeinstellung Quellcodeverwaltungs VSPackage-ID. Dies bewirkt, dass die statische Benutzeroberfläche des aktiven Datenquellen-Steuerelements VSPackage in der IDE angezeigt werden, ohne tatsächlich laden das VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für das VSPackage zu registrierenden hält [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> vor dem alle Aufrufe an das VSPackage.  
   
  Die folgende Tabelle beschreibt spezifische Details darüber, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Blendet Sie aus verschiedenen UI-Elemente.  
   

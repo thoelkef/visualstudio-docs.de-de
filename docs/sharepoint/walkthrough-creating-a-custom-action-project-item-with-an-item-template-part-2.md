@@ -1,25 +1,24 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2 | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und ordnen es mit einer Elementvorlage in Visual Studio, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, Informationen von Benutzern sammeln, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wählen Sie die **WPF-Benutzersteuerelementbibliothek** -Projektvorlage aus, nennen Sie das Projekt **ItemTemplateWizard**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **ItemTemplateWizard** Projekt der Projektmappe.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **ItemTemplateWizard** Projekt der Projektmappe.  
   
 6.  Löschen Sie das Element "UserControl1" aus dem Projekt ein.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Weitere Informationen zu den `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40; Visual Studio-Vorlagen &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Weitere Informationen zu den `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40;Visual Studio-Vorlagen&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Speichern und schließen Sie die Datei.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      Die **Listeneinstellungen** Seite wird angezeigt.  
   
-4.  Unter den **Kommunikation** Überschrift am oberen Rand der Seite ", wählen Sie die **SharePoint Developer Center** verknüpfen möchten, stellen Sie sicher, dass der Browser die Website http://msdn.microsoft.com/sharepoint/ wird geöffnet. "default.aspx", und schließen Sie den Browser.  
+4.  Unter den **Kommunikation** Überschrift am oberen Rand der Seite ", wählen Sie die **SharePoint Developer Center** verknüpfen möchten, stellen Sie sicher, dass der Browser die Website geöffnet http://msdn.microsoft.com/sharepoint/default.aspx, und schließen Sie den Browser.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Bereinigen des Entwicklungscomputers  
  Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektelementvorlage aus der experimentellen Instanz von Visual Studio.  

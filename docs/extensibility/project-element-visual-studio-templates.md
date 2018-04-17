@@ -1,35 +1,31 @@
 ---
 title: Project-Element (Visual Studio-Vorlagen) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
 Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent >  
  \<Project>  
   
@@ -75,9 +71,9 @@ Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.
   
  Die `Project` Element wird zum Angeben eines Projekts verwendet und ist daher nur in Projektvorlagen gültig.  
   
- `Project`Elemente können besitzen [Ordner](../extensibility/folder-element-visual-studio-project-templates.md) untergeordnete Elemente oder [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) untergeordnete Elemente, aber keine Kombination aus beiden `Folder` und `ProjectItem` untergeordnete Elemente.  
+ `Project` Elemente können besitzen [Ordner](../extensibility/folder-element-visual-studio-project-templates.md) untergeordnete Elemente oder [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) untergeordnete Elemente, aber keine Kombination aus beiden `Folder` und `ProjectItem` untergeordnete Elemente.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Benennt automatisch in der Projektdateiname anhand des Namens eingegeben haben, vom Benutzer in der **neues Projekt** (Dialogfeld). Verwenden der `TargetFileName` Attribut, wenn Sie einen alternativen Dateinamen für die mit der Vorlage erstellten Projektdateien bereitstellen möchten.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Benennt automatisch in der Projektdateiname anhand des Namens eingegeben haben, vom Benutzer in der **neues Projekt** (Dialogfeld). Verwenden der `TargetFileName` Attribut, wenn Sie einen alternativen Dateinamen für die mit der Vorlage erstellten Projektdateien bereitstellen möchten.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  

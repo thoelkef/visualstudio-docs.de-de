@@ -1,13 +1,10 @@
 ---
-title: "Programmierkonzepte und Features für Erweiterungen von SharePoint-Tools | Microsoft Docs"
-ms.custom: 
+title: Programmierkonzepte und Features für Erweiterungen von SharePoint-Tools | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f4ebe2b4233cb42822f0614477dbfec006e37a8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 67aa5bcb83b1ab820286ad70a74cd36c101dbe86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programmierkonzepte und Funktionen für Erweiterungen für SharePoint-Tools
   Es gibt einige wichtige Programmierkonzepte und Funktionen, die auf die SharePoint-Tools in Visual Studio verknüpft sind. Diese Konzepte und Funktionen spielt eine wichtige Rolle in den meisten SharePoint-Tools-Erweiterungen.  

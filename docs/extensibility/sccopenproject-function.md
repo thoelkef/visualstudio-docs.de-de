@@ -1,29 +1,25 @@
 ---
 title: SccOpenProject Funktion | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject-Funktion
 Diese Funktion öffnet ein vorhandenes Projekt des Datenquellen-Steuerelement oder ein neues Zertifikat erstellt.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Eine optionale Rückruffunktion zum Anzeigen von Text, die Ausgabe aus der quellcodeverwaltung-Plug-in.  
   
  dwFlags  
- [in] Signale steuern, ob ein neues Projekt muss erstellt werden, wenn das Projekt an der Quelle unbekannt ist-Plug-in. Wert kann eine Kombination von `SCC_OP_CREATEIFNEW` und`SCC_OP_SILENTOPEN.`  
+ [in] Signale steuern, ob ein neues Projekt muss erstellt werden, wenn das Projekt an der Quelle unbekannt ist-Plug-in. Wert kann eine Kombination von `SCC_OP_CREATEIFNEW` und `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  Die erste Aktion die IDE möglicherweise erforderlich, um durchzuführen ist möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Aus diesem Grund haben beide einen identischen `lpUser` Parameter.  
   
- `lpAuxProjPath`und`lpProjName` sind die Projektmappendatei auslesen oder von einem Aufruf ausgegeben werden die `SccGetProjPath` Funktion. Diese Parameter enthalten die Zeichenfolgen, die das Projekt der quellcodeverwaltung-Plug-in zugeordnet und werden nur für das angegebene plug-in verwertbar. Wenn kein solcher Zeichenfolgen in der Projektmappendatei sind und der Benutzer hat nicht durchsuchen aufgefordert wurde (würde die eine Zeichenfolge durch Zurückgeben der `SccGetProjPath` Funktion), die IDE transferiert leere Zeichenfolgen für beide `lpAuxProjPath` und `lpProjName`, und erwartet, dass diese Werte aktualisiert werden Diese Funktion gibt, durch die When-Plug-in.  
+ `lpAuxProjPath` und`lpProjName` sind die Projektmappendatei auslesen oder von einem Aufruf ausgegeben werden die `SccGetProjPath` Funktion. Diese Parameter enthalten die Zeichenfolgen, die das Projekt der quellcodeverwaltung-Plug-in zugeordnet und werden nur für das angegebene plug-in verwertbar. Wenn kein solcher Zeichenfolgen in der Projektmappendatei sind und der Benutzer hat nicht durchsuchen aufgefordert wurde (würde die eine Zeichenfolge durch Zurückgeben der `SccGetProjPath` Funktion), die IDE transferiert leere Zeichenfolgen für beide `lpAuxProjPath` und `lpProjName`, und erwartet, dass diese Werte aktualisiert werden Diese Funktion gibt, durch die When-Plug-in.  
   
- `lpTextOutProc`ist ein Zeiger auf eine Rückruffunktion, die von der IDE auf die Datenquellen-Steuerelement-Plug-In für die Anzeige von Ausgabe des Befehls Ergebnis bereitgestellt. Dieser Rückruffunktion wird ausführlich beschrieben unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` ist ein Zeiger auf eine Rückruffunktion, die von der IDE auf die Datenquellen-Steuerelement-Plug-In für die Anzeige von Ausgabe des Befehls Ergebnis bereitgestellt. Dieser Rückruffunktion wird ausführlich beschrieben unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Beabsichtigt das Quellsteuerelement-Plug-in profitieren, es muss festgelegt werden die `SCC_CAP_TEXTOUT` -flag in der [SccInitialize](../extensibility/sccinitialize-function.md). Wenn dieses Flag nicht festgelegt wurde, oder wenn die IDE, diese Funktion nicht unterstützt `lpTextOutProc` werden `NULL`.  

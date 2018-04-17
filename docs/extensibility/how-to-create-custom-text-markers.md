@@ -2,26 +2,22 @@
 title: 'Vorgehensweise: Erstellen von benutzerdefinierten Text Marker | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30ad5b61f59e6183067ddcc789b2fc796c7aef9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f5c44a507cc291b203fc9ba330b248a854f61b81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Text-Marker
 Wenn Sie einen benutzerdefinierten Text Marker zum Hervorheben oder Organisieren von Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
@@ -59,13 +55,13 @@ Wenn Sie einen benutzerdefinierten Text Marker zum Hervorheben oder Organisieren
   
     -   Package  
   
-    -   `Default`ist ein optionaler Eintrag vom Typ REG_SZ. Wenn festgelegt ist, ist der Wert des Eintrags, eine Zeichenfolge, enthält hilfreiche identifizierende Informationen, z. B. "benutzerdefinierter Text Marker" auf.  
+    -   `Default` ist ein optionaler Eintrag vom Typ REG_SZ. Wenn festgelegt ist, ist der Wert des Eintrags, eine Zeichenfolge, enthält hilfreiche identifizierende Informationen, z. B. "benutzerdefinierter Text Marker" auf.  
   
-    -   `Service`ein Eintrag vom Typ REG_SZ ist, enthält die GUID-Zeichenfolge des Diensts, der den benutzerdefinierten Text Marker durch proffering bietet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Service` ein Eintrag vom Typ REG_SZ ist, enthält die GUID-Zeichenfolge des Diensts, der den benutzerdefinierten Text Marker durch proffering bietet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName`ist die Ressourcen-ID, der den Namen der benutzerdefinierten Text Markierung, die ein Eintrag vom Typ REG_SZ enthält. Das Format ist #YYYY.  
+    -   `DisplayName` ist die Ressourcen-ID, der den Namen der benutzerdefinierten Text Markierung, die ein Eintrag vom Typ REG_SZ enthält. Das Format ist #YYYY.  
   
-    -   `Package`ist die Eingabe des Typs REG_SZ, enthält die `GUID` VSPackage, das vom Dienst aufgeführt, unter dem Dienst. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Package` ist die Eingabe des Typs REG_SZ, enthält die `GUID` VSPackage, das vom Dienst aufgeführt, unter dem Dienst. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>So erstellen einen benutzerdefinierten Text-marker  
   

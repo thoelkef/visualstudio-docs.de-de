@@ -1,27 +1,23 @@
 ---
 title: Beibehalten von Daten in der MSBuild-Projektdatei | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
 Ein Projektuntertyp möglicherweise untertypspezifischen Daten in der Projektdatei zur späteren Verwendung beizubehalten. Ein Projektuntertyp verwendet projektdauerhaftigkeit-Datei, um die folgenden Anforderungen erfüllen:  
@@ -45,7 +41,7 @@ Ein Projektuntertyp möglicherweise untertypspezifischen Daten in der Projektdat
 ## <a name="persisting-build-related-information"></a>Buildbezogene Informationen beibehalten  
  Dauerhaftigkeit der Daten nützlich zur Erstellung eines Projekts erfolgt über MSBuild. Das MSBuild-System verwaltet eine Mastertabelle mit buildbezogene Informationen. Projekt Untertypen sind verantwortlich für den Zugriff auf diese Daten zum Abrufen und Festlegen von Eigenschaftswerten. Projekt Untertypen ergänzen können auch buildbezogene Datentabelle durch Hinzufügen von zusätzlichen Eigenschaften, die beibehalten werden und Eigenschaften zu entfernen, damit sie nicht persistent gespeichert werden.  
   
- Um die MSBuild-Daten zu ändern, ist ein Projektuntertyp verantwortlich zum Abrufen von MSBuild-Property-Objekt aus der Basisprojektsystem über <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>ist eine für taskklassen implementierte Schnittstelle Projektsystem Core und aggregieren Projekt Untertyp Abfragen dafür Treiberdienst `QueryInterface`.  
+ Um die MSBuild-Daten zu ändern, ist ein Projektuntertyp verantwortlich zum Abrufen von MSBuild-Property-Objekt aus der Basisprojektsystem über <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> ist eine für taskklassen implementierte Schnittstelle Projektsystem Core und aggregieren Projekt Untertyp Abfragen dafür Treiberdienst `QueryInterface`.  
   
  Das folgende Verfahren erläutert die Schritte zum Entfernen einer Eigenschaft mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

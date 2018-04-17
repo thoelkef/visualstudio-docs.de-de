@@ -2,12 +2,9 @@
 title: Schreiben von Code in Office-Projektmappen | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Schreiben von Code in Office-Projektmappen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Überlegungen zu Namespaces in Office-Projektmappen  
- Der *Standardnamespace* (oder *Stammnamespace* in Visual Basic) eines Office-Projekts kann nach dem Erstellen des Projekts nicht mehr geändert werden. Der Standardnamespace entspricht immer dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben. Wenn Sie das Projekt umbenennen, ändert sich der Standardnamespace nicht. Weitere Informationen zum Standardnamespace in Projekten finden Sie unter [Anwendungsseite, Projekt-Designer & #40; C & #35; & #41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) und [Anwendungsseite, Projekt-Designer & #40; Visual Basic & #41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Der *Standardnamespace* (oder *Stammnamespace* in Visual Basic) eines Office-Projekts kann nach dem Erstellen des Projekts nicht mehr geändert werden. Der Standardnamespace entspricht immer dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben. Wenn Sie das Projekt umbenennen, ändert sich der Standardnamespace nicht. Weitere Informationen zum Standardnamespace in Projekten finden Sie unter [Anwendungsseite, Projekt-Designer &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) und [Anwendungsseite, Projekt-Designer &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Ändern des Namespace von Hostelementklassen in C#-Projekten  
  Hostelementklassen (z. B. die `ThisAddIn`-, `ThisWorkbook`- oder `ThisDocument` -Klassen) verfügen über eigene Namespaces in Visual C#-Office-Projekten. Der Namespace für Hostelemente im Projekt entspricht standardmäßig dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben.  
@@ -107,19 +104,19 @@ ms.lasthandoff: 01/10/2018
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Wesentliche Unterschiede zwischen Visual Basic und Visual C#  
  In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Basic und Visual C# bei der Office-Entwicklung angezeigt.  
   
-|Funktion|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|  
+|Feature|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Optionale Parameter|Viele Microsoft Office-Methoden verfügen über Parameter, die nicht erforderlich sind, wenn Sie die Methode aufrufen. Wenn kein Wert für den Parameter übergeben wird, wird ein Standardwert verwendet.|Visual Basic unterstützt optionale Parameter.|Visual C# unterstützt in den meisten Fällen optionale Parameter. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
-|Übergeben von Parametern durch einen Verweis|Optionale Parameter können in den meisten der primären Interopassemblys von Microsoft Office als Wert übergeben werden. In manchen primären Interopassemblys müssen optionale Parameter, die Referenztypen akzeptieren, jedoch als Verweis übergeben werden.<br /><br /> Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Referenz & #40; Visual Basic & #41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern & #40; C & #35; Programmierhandbuch & #41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Es sind keine weiteren Aufgaben erforderlich, um Parameter als Verweis zu übergeben. Der Visual Basic-Compiler übergibt die Parameter automatisch durch einen Verweis, wenn dies erforderlich ist.|In den meisten Fällen übergibt der Visual C#-Compiler automatisch die Parameter durch einen Verweis, wenn dies erforderlich ist. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
+|Übergeben von Parametern durch einen Verweis|Optionale Parameter können in den meisten der primären Interopassemblys von Microsoft Office als Wert übergeben werden. In manchen primären Interopassemblys müssen optionale Parameter, die Referenztypen akzeptieren, jedoch als Verweis übergeben werden.<br /><br /> Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Verweis &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Es sind keine weiteren Aufgaben erforderlich, um Parameter als Verweis zu übergeben. Der Visual Basic-Compiler übergibt die Parameter automatisch durch einen Verweis, wenn dies erforderlich ist.|In den meisten Fällen übergibt der Visual C#-Compiler automatisch die Parameter durch einen Verweis, wenn dies erforderlich ist. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
 |Parametrisierte Eigenschaften|Einige Eigenschaften akzeptieren Parameter und fungieren als schreibgeschützte Funktionen.|Visual Basic unterstützt Eigenschaften, die Parameter akzeptieren.|Visual C# unterstützt Eigenschaften, die Parameter akzeptieren.|  
 |Spätes Binden|Bei der späten Bindung werden die Eigenschaften von Objekten zur Laufzeit bestimmt, statt Variablen zur Entwurfszeit in den Objekttyp umzuwandeln.|Visual Basic führt späte Bindungen aus, wenn **Option Strict** deaktiviert ist. Wenn **Option Strict** aktiviert ist, müssen Objekte explizit konvertiert und Typen im <xref:System.Reflection> -Namespace verwendet werden, um auf spät gebundene Member zugreifen zu können. Weitere Informationen finden Sie unter [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# führt späte Bindungen in Projekten aus, für die als Zielversion [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]festgelegt wurde. Weitere Informationen finden Sie unter [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Hauptunterschiede zwischen Office-Entwicklung und verwaltetem Code  
  In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen der Office-Entwicklung und verwaltetem Code angezeigt, der mit Visual Basic und Visual C# geschrieben wurde.  
   
-|Funktion|Beschreibung|Visual Basic- und Visual C#-Unterstützung|  
+|Feature|Beschreibung|Visual Basic- und Visual C#-Unterstützung|  
 |-------------|-----------------|-----------------------------------------|  
-|Arrayindizes|Die unteren Arraygrenzen der Auflistungen in Microsoft Office-Anwendungen beginnen mit 1. Visual Basic und Visual C# verwenden 0-basierte Arrays. Weitere Informationen finden Sie unter [Arrays & #40; C & #35; Programmierhandbuch & #41; ](/dotnet/csharp/programming-guide/arrays/index) und [Arrays in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Um auf das erste Element einer Auflistung im Objektmodell einer Microsoft Office-Anwendung zuzugreifen, verwenden Sie den Index 1 statt 0.|  
+|Arrayindizes|Die unteren Arraygrenzen der Auflistungen in Microsoft Office-Anwendungen beginnen mit 1. Visual Basic und Visual C# verwenden 0-basierte Arrays. Weitere Informationen finden Sie unter [Arrays &#40;C&#35; Programmierhandbuch&#41; ](/dotnet/csharp/programming-guide/arrays/index) und [Arrays in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Um auf das erste Element einer Auflistung im Objektmodell einer Microsoft Office-Anwendung zuzugreifen, verwenden Sie den Index 1 statt 0.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   

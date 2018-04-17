@@ -1,23 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SDKS mit C++ | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit C++
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ Mathematikbibliothek SDK Paket das SDK als Visual Studio Extension (VSIX) zu erstellen und verwenden dieses dann zum Erstellen einer app. Die exemplarische Vorgehensweise ist in Schritte unterteilt:  
@@ -31,9 +29,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ 
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>So erstellen den einheitlichen und Windows-Runtime-Bibliotheken  
+##  <a name="createClassLibrary"></a> So erstellen den einheitlichen und Windows-Runtime-Bibliotheken  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  Erweitern Sie in der Liste der Vorlagen, **Visual C++**, **universellen Windows-**, und wählen Sie dann die **DLL (Windows Universal-apps)** Vorlage. In der **Namen** geben `NativeMath`, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -59,7 +57,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ 
   
 9. Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
-##  <a name="createVSIX"></a>So erstellen das Erweiterungsprojekt NativeMathVSIX  
+##  <a name="createVSIX"></a> So erstellen das Erweiterungsprojekt NativeMathVSIX  
   
 1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Lösung "NativeMath"**, und wählen Sie dann **hinzufügen**, **neues Projekt**.  
   
@@ -143,9 +141,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ 
   
 18. Wählen Sie die **installieren** Schaltfläche, warten Sie, bis die Installation abgeschlossen wurde, und starten Sie Visual Studio.  
   
-##  <a name="createSample"></a>Eine Beispiel-app erstellen, die die Class-Bibliothek verwendet  
+##  <a name="createSample"></a> Eine Beispiel-app erstellen, die die Class-Bibliothek verwendet  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  Erweitern Sie in der Liste der Vorlagen, **Visual C++**, **universellen Windows-**, und wählen Sie dann **leere App**. In der **Namen** geben **NativeMathSDKSample**, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -171,7 +169,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ 
   
 9. Drücken Sie die Taste F5, um die app auszuführen.  
   
-10. Geben Sie in der app, die zwei Zahlen, wählen Sie einen Vorgang, und wählen Sie dann die  **=**  Schaltfläche.  
+10. Geben Sie in der app, die zwei Zahlen, wählen Sie einen Vorgang, und wählen Sie dann die **=** Schaltfläche.  
   
      Das richtige Ergebnis wird angezeigt.  
   

@@ -1,26 +1,24 @@
 ---
 title: 'Vorgehensweise: Installieren Sie ein Quellcodeverwaltungs-Plug-in | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Vorgehensweise: Installieren Sie ein Quellcodeverwaltungs-Plug-in
 Erstellen ein Quellcodeverwaltungs-Plug-in umfasst drei Schritte:  
@@ -32,7 +30,7 @@ Erstellen ein Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
 3.  Registrieren Sie die DLL, indem Sie die entsprechenden Registrierungseinträge.  
   
 ## <a name="integration-with-visual-studio"></a>Integration in Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt die Datenquellen-Steuerelement-Plug-ins, die die Quelle Steuerelement-Plug-in-API entsprechen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt die Datenquellen-Steuerelement-Plug-ins, die die Quelle Steuerelement-Plug-in-API entsprechen.  
   
 ### <a name="registering-the-source-control-plug-in"></a>Registrieren das Quellsteuerelement-Plug-in  
  Bevor ausgeführten integrierte Entwicklungsumgebung (IDE) in das Quellcodeverwaltungssystem aufrufen kann, müssen sie zuerst suchen Sie die Ursache steuern Sie die Plug-in-DLL, die die API exportiert.  

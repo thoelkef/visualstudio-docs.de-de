@@ -1,26 +1,24 @@
 ---
 title: Visual Studio-Shell | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der primäre Agent der Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Shell stellt die notwendige Funktionalität zum Aktivieren von VSPackages zu gemeinsamer Dienste gemeinsam nutzen. Da das architektonische Ziel des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden primäre Funktionalität steht Ihnen in der VSPackages, zu die Shell ist ein Framework, die grundlegende Funktionalität und Cross-Kommunikation zwischen der Komponente VSPackages unterstützen.  
@@ -44,9 +42,9 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der p
   
     -   Das aktuelle Projekt  
   
-    -   Die aktuelle Projektelement oder das aktuelle Element-ID<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   Die aktuelle Projektelement oder das aktuelle Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Die aktuelle Auswahl für die **Eigenschaften** Fenster oder`SelectionContainer`  
+    -   Die aktuelle Auswahl für die **Eigenschaften** Fenster oder `SelectionContainer`  
   
     -   Die UI-Kontext-IDs oder CmdUIGuids, die steuern, die Sichtbarkeit der Befehle, Menüs und Symbolleisten  
   

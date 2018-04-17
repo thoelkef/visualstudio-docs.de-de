@@ -2,20 +2,18 @@
 title: Mithilfe von Visual Studio-ModelBus in einer Textvorlage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 9a3cca1ed96cc2190ace1c8e1ece0423221f59f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Verwenden von Visual Studio-ModelBus in einer Textvorlage
 Wenn Sie Textvorlagen, der ein Modell zu lesen schreiben, enthält [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus verweist, möglicherweise möchten Sie die Verweise für den Zugriff auf die Ziel-Modelle zu beheben. In diesem Fall müssen Sie die Textvorlagen und die referenzierten domänenspezifische Sprachen (konzentriert) anpassen:  
@@ -215,7 +213,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 7.  In der `T4ModelBusAdapter` Projekt, fügen einen Verweis hinzu: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**  
   
-8.  Open T4ModelBusAdapter\AdapterManager.tt:  
+8.  Öffnen Sie T4ModelBusAdapter\AdapterManager.tt:  
   
     1.  Ändern Sie die Basisklasse von AdapterManagerBase in <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. In diesem Teil der Datei sieht nun etwa folgendermaßen Folgendes.  
   

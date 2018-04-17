@@ -1,27 +1,23 @@
 ---
 title: Source Control VSPackage-Architektur | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002dea54b63a78975d56464319614d369a9b2318
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a423b270eb8a26e9573f957da48915db37bf6851
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-vspackage-architecture"></a>Datenquellen-Steuerarchitektur VSPackage
 Ein Paket für die quellcodeverwaltung ist eine VSPackage verwendet, die Dienste, von denen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE bietet. Im Gegenzug stellt ein Datenquellen-Steuerelement Paket seine Funktionalität als einen quellcodeverwaltungsdienst bereit. Darüber hinaus ein Datenquellen-Steuerelement Paket ist ein flexibler Alternative als ein Quellcodeverwaltungs-Plug-In für die Integration der quellcodeverwaltung in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

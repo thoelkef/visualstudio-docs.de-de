@@ -1,28 +1,26 @@
 ---
 title: Die Struktur der XML-Datei [Content_types] | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Die Struktur der [Content_types] .XML-Datei
 Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio [Content_Types] .xml-Datei zum Installieren des Pakets verwendet, aber die Datei selbst wird nicht installiert.  
@@ -49,7 +47,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|http://Schemas.OpenFormats.org/Package/2006/Content-Types|Der Speicherort des Schemas Inhaltstypen.|  
+|http://schemas.openformats.org/package/2006/content-types|Der Speicherort des Schemas Inhaltstypen.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Die `Types` Element darf eine beliebige Anzahl von `Default` Elemente.  

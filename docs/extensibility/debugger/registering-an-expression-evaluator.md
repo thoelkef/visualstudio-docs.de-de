@@ -1,26 +1,24 @@
 ---
 title: Registrieren eine Ausdrucksauswertung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9a8aa71d6c529aa4d06acf1d887f10a58cd8367e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-an-expression-evaluator"></a>Registrieren eine Ausdrucksauswertung
 > [!IMPORTANT]
@@ -117,7 +115,7 @@ namespace EEMC
   
     |Metrik|Beschreibung|  
     |------------|-----------------|  
-    |`metricCLSID`|`CLSID`der Factory EE-Klasse|  
+    |`metricCLSID`|`CLSID` der Factory EE-Klasse|  
     |`metricName`|Name des der EE als einer darstellbaren Zeichenfolge|  
     |`metricLanguage`|Der Name der Sprache, die die EE ist auswerten soll|  
     |`metricEngine`|`GUID`s der Debugmodule (DE), die mit diesem EE arbeiten|  

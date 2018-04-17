@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aufrufe in die SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in das SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung
   Diese exemplarische Vorgehensweise veranschaulicht, wie aus einer Erweiterung für das SharePoint-Clientobjektmodell Aufrufen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [Aufrufe in die SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -67,7 +66,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+2.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann **Erweiterbarkeit**.  
   
@@ -82,7 +81,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
   
 6.  In der **Namen** geben **WebPartNode**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNode** Projekt **Projektmappen-Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartNode** Projekt **Projektmappen-Explorer**.  
   
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt  
   
@@ -96,7 +95,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
   
 5.  In der **Namen** geben **WebPartNodeExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNodeExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartNodeExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 6.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -287,6 +286,6 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
  [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)   
- [Erstellen ein Symbol oder anderen Bilds &#40; Bildbearbeitung für Symbole &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Erstellen eines Symbols oder anderen Bilds &#40;Bildbearbeitung für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

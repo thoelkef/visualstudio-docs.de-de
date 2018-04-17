@@ -1,23 +1,21 @@
 ---
-title: "Schreiben von Code für eine domänenspezifische Sprache anpassen | Microsoft Docs"
-ms.custom: 
+title: Schreiben von Code für eine domänenspezifische Sprache anpassen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 81d0608189d45ed4ef9770a8fecdc61c7ebb118c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cb058ba2467ae852491339dc64a3fba837249688
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
 In diesem Abschnitt wird gezeigt, wie Sie benutzerdefinierten Code zugreifen, ändern oder erstellen Sie ein Modell in einer domänenspezifischen Sprache.  
@@ -26,7 +24,7 @@ In diesem Abschnitt wird gezeigt, wie Sie benutzerdefinierten Code zugreifen, ä
   
 -   **Benutzerdefinierte Befehle.** Sie können einen Befehl erstellen, Benutzer können aufrufen, indem Sie mit der rechten Maustaste auf das Diagramm, und die können das Modell ändern. Weitere Informationen finden Sie unter [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
--   **Überprüfung.** Sie können Code schreiben, die überprüft, ob das Modell im richtigen Zustand ist. Weitere Informationen finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
+-   **Prüfung** Sie können Code schreiben, die überprüft, ob das Modell im richtigen Zustand ist. Weitere Informationen finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
 -   **Überschreiben des Standardverhaltens.** Sie können zahlreiche Aspekte des Codes ändern, die von DslDefinition.dsl generiert wird. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).  
   

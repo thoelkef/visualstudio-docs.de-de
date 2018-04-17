@@ -2,26 +2,22 @@
 title: 'Vorgehensweise: Migrieren von Erweiterungsprojekte für Visual Studio 2015 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
-caps.latest.revision: 25
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 5adad311c1696d958902d9ad33ed1d1872606458
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungsprojekte für Visual Studio 2015
 Hier wird erklärt, wie die Erweiterung zu aktualisieren.  
@@ -41,7 +37,7 @@ Hier wird erklärt, wie die Erweiterung zu aktualisieren.
   
 4.  Erstellen Sie die Projektmappe. Die erstellten Dateien werden bereitgestellt:  
   
-     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< author Name\>\\< Projektname\>\\< Projektversion\> \\** .  
+     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< author Name\>\\< Projektname\>\\< Projektversion\>\\**.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Um ein Erweiterungsprojekt auf Verweisassemblys NuGet-VS-SDK zu aktualisieren  
   

@@ -1,29 +1,27 @@
 ---
-title: "Liste der verfügbaren Dienste | Microsoft Docs"
-ms.custom: 
+title: Liste der verfügbaren Dienste | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f2caeaee433fc0c47d8332c4443d104e26a7ee7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten eigene Dienste, die hier nicht aufgeführt sind – z. B. Sprachdienste keinen einzigen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts, der in der Registrierung gefunden.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten eigene Dienste, die hier nicht aufgeführt sind – z. B. Sprachdienste keinen einzigen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts, der in der Registrierung gefunden.  
   
  Verwenden Sie den Dienst-GUIDs, die hier aufgeführten oder von einer anderen Quelle (z. B. Sprachdienste) erhalten hat, um die primäre Schnittstelle oder Schnittstellen, die mit jedem Dienst gezeigt abzurufen.  
   

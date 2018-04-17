@@ -1,21 +1,19 @@
 ---
-title: "Vorgehensweise: Migrieren eine domänenspezifischen Sprache auf eine neue Version | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Migrieren eine domänenspezifischen Sprache auf eine neue Version | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f6aa84a55e629f003a1d9b896a5c095dc2d19ac
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d65739aa02f5e5a36f317bd113dd4dc349bde957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprache, migrieren [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] von der Version des [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die mit verteilt wurde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -24,7 +22,7 @@ Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprach
   
  Sie müssen das Migrationstool explizit ausführen: Es wird nicht automatisch gestartet, wenn Sie eine Projektmappe in öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In diesem Pfad können das Tool und detaillierte Guidance-Dokument ermittelt werden:  
   
- **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **% Programm Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Vor dem Migrieren Sie Ihre Projekte DSL  
  Ändert das Migrationstool [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektdateien (**csproj**) und berichtsprojektmappen-Dateien (**sln**).  
@@ -43,7 +41,7 @@ Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprach
   
     -   Sie können Doppelklicken Sie auf das Tool in Windows Explorer (oder Datei-Explorer), oder starten Sie das Tool über eine Eingabeaufforderung. Das Tool ist an diesem Speicherort:  
   
-         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Wählen Sie einen Ordner mit Projektmappen und Projekten, die Sie konvertieren möchten.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten
   Sie können eine projekterweiterung verwenden, zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt. Die Eigenschaft wird in der **Eigenschaften** Fenster beim Erstellen des Projekts ausgewählt ist, in **Projektmappen-Explorer**.  
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
  Beibehalten der Änderungen von Eigenschaftswerten, die **festgelegt** Accessoren für die Eigenschaften verwenden Sie die folgenden APIs:  
   
--   `CustomUserFileProperty`verwendet die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> Eigenschaft, um den Wert in der Benutzerdatei Option Projekt speichern.  
+-   `CustomUserFileProperty` verwendet die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> Eigenschaft, um den Wert in der Benutzerdatei Option Projekt speichern.  
   
--   `CustomProjectFileProperty`verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode, um seinen Wert in der Projektdatei zu speichern.  
+-   `CustomProjectFileProperty` verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode, um seinen Wert in der Projektdatei zu speichern.  
   
  Weitere Informationen zum Beibehalten von Daten in diesen Dateien finden Sie unter [speichern Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   

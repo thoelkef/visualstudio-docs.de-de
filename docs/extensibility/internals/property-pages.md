@@ -1,27 +1,25 @@
 ---
 title: Eigenschaftenseiten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
 Benutzer können anzeigen und ändern die konfigurationsabhängigen "und"-unabhängigen Projekteigenschaften mit Eigenschaftenseiten. Ein **Eigenschaftenseiten** Schaltfläche ist aktiviert, der **Eigenschaften** Fenster oder auf der Symbolleiste des Projektmappen-Explorers für Objekte, die eine Eigenschaft Seitenansicht des ausgewählten Objekts bereitzustellen. Eigenschaftenseiten werden von der Umgebung erstellt und sind für Projektmappen und Projekten verfügbar. Sie können jedoch auch sein zur Verfügung gestellt, für Projektelemente, die stellen die konfigurationsabhängigen Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt anderen Compiler Switch-Einstellungen korrekt erforderlich ist.  
@@ -50,7 +48,7 @@ Projekt-Eigenschaftenseiten-Dialogfeld mit Feld Format und Struktur-Struktur
   
  Jede Kategorie angezeigt, die eine Kategorie der obersten Ebene stellt eine separate Eigenschaftenseite dar. Kategorie und Unterkategorie verfügbaren Einträge im Dialogfeld werden durch Ihre Implementierung von bestimmt `ISpecifyPropertyPages` und `IVsPropertyPage`.  
   
- `IDispatch`Objekte für Elemente im Auswahlcontainer mit Eigenschaften, die auf die Eigenschaft Seiten implementieren angezeigt werden `ISpecifyPropertyPages` eine Liste der Klassen-IDs auflisten. Die Klassen-IDs werden als Variablen übergeben `ISpecifyPropertyPages` und werden verwendet, um die Eigenschaftenseiten zu instanziieren. Die Liste der Klassen-IDs wird auch übergeben `IVsPropertyPage` zum Erstellen der Struktur auf der linken Seite des Dialogfelds. Übergeben von Informationen für die Eigenschaftenseiten anschließend zurück an den `IDispatch` Objekt, das implementiert `ISpecifyPropertyPages` und die Informationen für jede Seite eingetragen.  
+ `IDispatch` Objekte für Elemente im Auswahlcontainer mit Eigenschaften, die auf die Eigenschaft Seiten implementieren angezeigt werden `ISpecifyPropertyPages` eine Liste der Klassen-IDs auflisten. Die Klassen-IDs werden als Variablen übergeben `ISpecifyPropertyPages` und werden verwendet, um die Eigenschaftenseiten zu instanziieren. Die Liste der Klassen-IDs wird auch übergeben `IVsPropertyPage` zum Erstellen der Struktur auf der linken Seite des Dialogfelds. Übergeben von Informationen für die Eigenschaftenseiten anschließend zurück an den `IDispatch` Objekt, das implementiert `ISpecifyPropertyPages` und die Informationen für jede Seite eingetragen.  
   
  Mithilfe der Eigenschaften des Objekts durchsuchen abgerufen `IDispatch` für jedes Objekt in der Auswahlcontainer.  
   
@@ -73,11 +71,11 @@ Dialogfeld-Eigenschaftenseiten mit Eigenschaften (Raster)
   
      Sie können angeben, ein Projekt oder in Projekten auf die Projektmappe-Eigenschaftenseite, die gestartet wird, wenn der Benutzer, drücken F5, oder führen Sie im Buildmenü wählt. Dies funktioniert ähnlich wie das alte aktive Projekt in dem Sinne, dass der Name im Projektmappen-Explorer mit fett angezeigt wird.  
   
-     Sie können das Startup-Projekt als Eigenschaft in das Automatisierungsmodell abrufen, durch den Aufruf `DTE.Solution.SolutionBuild.StartupProjects`. In einem VSPackage, rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methoden. `IVsSolutionBuildManager`steht als einen Dienst durch `QueryService` auf SID_SVsSolutionBuildManager. Weitere Informationen finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
+     Sie können das Startup-Projekt als Eigenschaft in das Automatisierungsmodell abrufen, durch den Aufruf `DTE.Solution.SolutionBuild.StartupProjects`. In einem VSPackage, rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methoden. `IVsSolutionBuildManager` steht als einen Dienst durch `QueryService` auf SID_SVsSolutionBuildManager. Weitere Informationen finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
   
 -   Aktive Projektmappenkonfiguration  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verfügt über eine aktive Projektmappenkonfiguration, verfügbar im Automatisierungsmodell durch die Implementierung `DTE.Solution.SolutionBuild.ActiveConfiguration`. Eine Projektmappenkonfiguration ist eine Auflistung mit einer Projektkonfiguration für jedes Projekt in der Projektmappe (jedes Projekt kann mehrere Konfigurationen auf mehreren Plattformen, sodass unterschiedliche Namen haben). Weitere Informationen im Zusammenhang mit dem Projektmappen-Eigenschaftenseiten finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verfügt über eine aktive Projektmappenkonfiguration, verfügbar im Automatisierungsmodell durch die Implementierung `DTE.Solution.SolutionBuild.ActiveConfiguration`. Eine Projektmappenkonfiguration ist eine Auflistung mit einer Projektkonfiguration für jedes Projekt in der Projektmappe (jedes Projekt kann mehrere Konfigurationen auf mehreren Plattformen, sodass unterschiedliche Namen haben). Weitere Informationen im Zusammenhang mit dem Projektmappen-Eigenschaftenseiten finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
   
 -   Aktuell ausgewählte Projekt  
   

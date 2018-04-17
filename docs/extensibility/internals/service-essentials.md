@@ -2,33 +2,29 @@
 title: Essentials Service | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Dienst-Grundlagen
-Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ist selbst eine Auflistung von VSPackages, die Dienste, die andere VSPackages bereitstellt.  
+Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Auflistung von VSPackages, die Dienste, die andere VSPackages bereitstellt.  
   
  Sie können z. B. die SVsActivityLog-Dienst verwenden, beim Abrufen einer IVsActivityLog-Schnittstelle, die Sie, zum Schreiben in das Aktivitätsprotokoll verwenden können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden Sie das Aktivitätsprotokoll](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet außerdem einige integrierte Dienste, die nicht registriert werden. VSPackages können integrierte oder andere Dienste ersetzen, indem Sie eine Außerkraftsetzung Dienst bereitstellen. Nur ein Dienst Außerkraftsetzung wird für jeden Dienst zulässig.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet außerdem einige integrierte Dienste, die nicht registriert werden. VSPackages können integrierte oder andere Dienste ersetzen, indem Sie eine Außerkraftsetzung Dienst bereitstellen. Nur ein Dienst Außerkraftsetzung wird für jeden Dienst zulässig.  
   
  Dienste verfügen über keine gefunden werden können. Aus diesem Grund benötigen Sie die Dienst-ID (SID) eines Diensts, die Sie nutzen möchten, und Sie müssen wissen, welche Schnittstellen es bietet. Die Referenzdokumentation für den Dienst enthält diese Informationen.  
   
@@ -70,7 +66,7 @@ In einigen Fällen müssen Sie möglicherweise zum Abrufen eines Diensts aus ein
   
 Sie können die meisten Visual Studio-Dienste abrufen, durch Aufrufen der statischen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>stützt sich auf einen Cache Service-Anbieter, der alle VSPackage aus dem Paket abgeleitet zum ersten Mal initialisiert wird positioniert ist. Sie müssen sicherstellen, dass diese Bedingung erfüllt ist, oder für einen null-Dienst vorbereitet werden.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> stützt sich auf einen Cache Service-Anbieter, der alle VSPackage aus dem Paket abgeleitet zum ersten Mal initialisiert wird positioniert ist. Sie müssen sicherstellen, dass diese Bedingung erfüllt ist, oder für einen null-Dienst vorbereitet werden.  
   
 Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ordnungsgemäß in den meisten Fällen funktioniert.  
   

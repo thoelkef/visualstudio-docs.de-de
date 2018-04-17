@@ -1,22 +1,19 @@
 ---
 title: Bild-Dienst und den Katalogsichten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und Katalog
 Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für Visual Studio-Abbilder und Image-Katalog eingeführt in Visual Studio 2015 eingeführt.  
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Proben  
  Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, sodass den Image-Dienst im Rahmen der verschiedenen Visual Studio-Erweiterbarkeitspunkte Funktionsweisen.  
   
- Überprüfen Sie [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) für aktuelle Beispiele.  
+ Überprüfen Sie [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) für aktuelle Beispiele.  
   
 ### <a name="tooling"></a>Tools  
  Eine Reihe von Tools von Unterstützung für den Bild-Dienst wurde erstellt, zur Unterstützung der Benutzeroberfläche, die mit dem Image-Dienst funktioniert erstellt/aktualisiert. Weitere Informationen zu den einzelnen Tools überprüfen Sie die Dokumentation zu den Tools. Die Tools sind Bestandteil der [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  
@@ -951,7 +948,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
         |GlyphGroupError||StatusError|  
         |GlyphBscFile||ClassFile|  
-        |GlyphAssembly||Verweis|  
+        |GlyphAssembly||Referenz|  
         |GlyphLibrary||Bibliothek|  
         |GlyphVBProject||VBProjectNode|  
         |GlyphCoolProject||CSProjectNode|  

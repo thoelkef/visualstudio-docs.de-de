@@ -1,28 +1,26 @@
 ---
-title: "Layout für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Layout für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Sind die meisten der Visual Studio-Dialogfelder [Hilfsprogramm Layout des Dialogfelds](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), wobei es sich um die Unthemed dieses Standards folgen Dialoge [Windows Desktop Dialogfeld Layout Prinzipien](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Visual Studio bewegen, um die Benutzeroberfläche zu aktualisieren, haben einige der wichtigeren Dialoge einen neuen Entwurf, der diese Oberflächen wie aus dem Produkt definieren herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Designs Darstellung aufweisen.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Layout des Hilfsprogramm-Dialogfelds  
+##  <a name="BKMK_UtilityDialogLayout"></a> Layout des Hilfsprogramm-Dialogfelds  
   
 -   Alle Steuerelemente in einem Dialogfeld Hilfsprogramm sollte ausgehend von den oben/links und nach unten fließen.  
   
@@ -104,7 +102,7 @@ Sind die meisten der Visual Studio-Dialogfelder [Hilfsprogramm Layout des Dialog
   
 -   Die Zeilenlänge sollte eine komfortable Breite für einen Benutzer, zu analysieren und zu lesen. Eine mittlere Dialogfeld sollte nicht mehr als 550 Pixel breit sein.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Innere Befehlsschaltflächen  
+####  <a name="BKMK_InteriorCommandButtons"></a> Innere Befehlsschaltflächen  
  In komplexeren Dialogfelder möglicherweise ein internes Steuerelement einen eigenen zugehörigen Schaltflächen auswirken können, wo sich die Dialogfelder Commit befinden.  
   
 -   Eine vertikale Ausrichtung (Spalte) des inneren wann Schaltflächen verwenden **OK**/**"Abbrechen"** sind in der unteren rechten Ecke horizontal ausgerichtet.  
@@ -124,7 +122,7 @@ Sind die meisten der Visual Studio-Dialogfelder [Hilfsprogramm Layout des Dialog
 #### <a name="browse-button"></a>[Durchsuchen...] Schaltfläche  
  **[Durchsuchen...]**  Schaltflächen, die ein Textfeld, das befolgen sollte "Durchsuchen…" vollständig, einschließlich der mit den Auslassungspunkten ausgeschrieben. Wenn ist, oder es mehrere sind **[durchsuchen...]**  Schaltflächen auf der Seite die Schaltfläche "" können auf nur mit den Auslassungspunkten reduziert werden.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Dialogfeldlayout  
+##  <a name="BKMK_ThemedDialogLayout"></a> Dialogfeldlayout  
  Designs Dialogfelder in Visual Studio hat eine hellere Aussehen und bieten weitere Leerzeichen. Typografie bietet weitere Hervorhebung und Interesse sind, bieten mehr öffnen Zeilenabstand und eine Variante der Schriftgrade Ihren Bedürfnissen und Gewichtungen. Wenn möglich, haben Titel-und Chrome reduziert oder entfernt wurde. Das Layout dieser Dialogfelder sollte dieses grundlegende Muster folgen:  
   
 1.  Der Hintergrund des Dialogs ist weiß.  

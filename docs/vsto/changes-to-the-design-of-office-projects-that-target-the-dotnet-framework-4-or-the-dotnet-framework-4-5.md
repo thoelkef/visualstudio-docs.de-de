@@ -1,13 +1,10 @@
 ---
-title: "Änderungen am Entwurf von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 abzielen | Microsoft Docs"
-ms.custom: 
+title: Änderungen am Entwurf von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 abzielen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Änderungen am Entwurf von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 abzielen
   Mit [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]wurden in Visual Studio einige Änderungen am Entwurf von Office-Projekten eingeführt, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielen. Wenn Sie mit Office-Projekten in früheren Versionen von Visual Studio vertraut sind, sollten Sie diese Änderungen beachten, bevor Sie Office-Projekte entwickeln, die für diese Versionen von .NET Framework 4.0 oder höher bestimmt sind. Standardmäßig zielen alle Projekte, die Sie mit Visual Studio 2013 oder höher erstellen, auf .NET Framework 4.0 oder höher ab.  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |Die Syntax der Methoden GetVstoObject und HasVstoObject hat sich geändert.|Wenn Sie in systemeigenen Objekten aus der primären Interop-Assemblys (PIAs) zugreifen oder Sie können diese Methoden für das Objekt, das von der Eigenschaft Globals.Factory im Projekt zurückgegeben wird zugreifen, müssen Sie die Globals.Factory-Objekt an diese Methoden übergeben. Weitere Informationen finden Sie unter [Aktualisieren von Excel- und Word-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Die Ereignisse von Word-Inhaltssteuerelementen sind neuen Delegaten zugeordnet.|Sie müssen Code ändern, in dem Ereignisse von Word-Inhaltssteuerelementen behandelt werden, um die neuen Delegaten anzugeben. Weitere Informationen finden Sie unter [Aktualisieren von Excel- und Word-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Die OLEObject-Klasse und OLEControl-Klasse wurden umbenannt.|Sie müssen Code ändern, in dem Instanzen dieser Klassen verwendet werden, um stattdessen das <xref:Microsoft.Office.Tools.Excel.ControlSite> -Objekt oder <xref:Microsoft.Office.Tools.Word.ControlSite> -Objekt zu verwenden. Weitere Informationen finden Sie unter [Aktualisieren von Excel- und Word-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Hostelementklassen, wie z. B. `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, und `ThisAddIn`, nicht mehr bieten eine Dispose-Methode, die Sie überschreiben können.|Müssen Sie keinen Code in der Überschreibung der Dispose-Methode auf Verschieben der Shutdown-Ereignishandler in der Hostelementklasse, z. B. `ThisAddIn_Shutdown`, und die Außerkraftsetzung der Dispose-Methode aus der Hostelementklasse entfernen.|  
+|Hostelementklassen, wie z. B. `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, und `ThisAddIn`, nicht mehr bieten eine Dispose-Methode, die Sie überschreiben können.|Müssen Sie keinen Code in der Überschreibung der Dispose-Methode auf Verschieben der Shutdown-Ereignishandler in der Hostelementklasse, z. B. `ThisAddIn_Shutdown`, und die Außerkraftsetzung der Dispose-Methode aus der Hostelementklasse entfernen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern des Server-Explorers für die Anzeige von Webparts
   In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten **Server-Explorer** , Komponenten für SharePoint-Websites anzuzeigen. Allerdings **Server-Explorer** einige Komponenten nicht standardmäßig angezeigt. In dieser exemplarischen Vorgehensweise verlängern **Server-Explorer** , damit sie den Webpartkatalog auf zeigt jeweils die SharePoint-Website verbunden.  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+2.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.  
   
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wählen Sie die **VSIX-Projekt** Vorlage, nennen Sie das Projekt **WebPartNode**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNode** Projekt **Projektmappen-Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartNode** Projekt **Projektmappen-Explorer**.  
   
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**, nennen Sie das Projekt **WebPartNodeExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNodeExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartNodeExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**, nennen Sie das Projekt **WebPartCommands**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartCommands** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartCommands** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 6.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wählen Sie den Pfeil neben der **hinzufügen** aus, und klicken Sie dann **als Link hinzufügen** im angezeigten Menü.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt die Codedateien zum Projekt WebPartCommands als Links. Daher befinden sich die Codedateien im Projekt WebPartNodeExtension, aber der Code in den Dateien ebenfalls Projekt kompiliert.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt die Codedateien zum Projekt WebPartCommands als Links. Daher befinden sich die Codedateien im Projekt WebPartNodeExtension, aber der Code in den Dateien ebenfalls Projekt kompiliert.  
   
 5.  Öffnen Sie das Kontextmenü für die **WebPartCommands** Projekt erneut, und wählen **Verweis hinzufügen**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Wählen Sie die **Ressourcen** Registerkarte, und wählen Sie dann die **dieses Projekt enthält keine Standarddatei für die Ressourcen. Klicken Sie hier zum Erstellen eines** Link.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt eine Ressourcendatei, und klicken Sie im Designer geöffnet.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt eine Ressourcendatei, und klicken Sie im Designer geöffnet.  
   
 4.  Wählen Sie im oberen Bereich des Designers den Pfeil neben der **Ressource hinzufügen** Menü Befehl, und wählen Sie dann **Symbol "Neu" hinzufügen** im angezeigten Menü.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Exemplarische Vorgehensweise: Aufrufe in die SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)   
- [Erstellen ein Symbol oder anderen Bilds &#40; Bildbearbeitung für Symbole &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Erstellen eines Symbols oder anderen Bilds &#40;Bildbearbeitung für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

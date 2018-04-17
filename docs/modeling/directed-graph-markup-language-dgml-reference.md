@@ -1,21 +1,19 @@
 ---
 title: Gesteuerte Graph Markup Language (DGML)-Referenz | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenz zur Directed Graph Markup Language (DGML)
 Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und die Komplexitätsanalyse verwendeten Informationen und stellt das zum Beibehalten von Code Maps verwendete Format in Visual Studio dar. DGML beschreibt zyklische und azyklische gerichtete Diagramme mithilfe von einfachem XML. Ein gerichtetes Diagramm ist ein Satz von Knoten, die durch Links bzw. Ränder verbunden sind. Mithilfe von Knoten und Links können Netzwerkstrukturen dargestellt werden, z. B. Elemente in einem Softwareprojekt.  
@@ -25,7 +23,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 > [!NOTE]
 >  Wenn Sie eine DGML-Datei bearbeiten, unterstützt Sie IntelliSense beim Auffinden der für die Elemente verfügbaren Attribute und der zugehörigen Werte. Wenn Sie Farben in Attributen angeben möchten, verwenden Sie Namen für allgemeine Farben (z. B. "Blau") oder ARGB-Hexadezimalwerte (z. B. "#ffa0b1c3"). DGML verwendet eine kleine Teilmenge der WPF (Windows Presentation Foundation)-Farbdefinitionsformate. Weitere Informationen finden Sie unter [Farben Klasse](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>DGML-syntax  
+##  <a name="DGML"></a> DGML-syntax  
  In der folgenden Tabelle werden verschiedene in DGML verwendete Elementtypen beschrieben:  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
   
      In der folgenden Liste werden einige optionale Attribute beschrieben, die eingeschlossen werden können:  
   
-     `Label`– Der Anzeigename des Knotens.  
+     `Label` – Der Anzeigename des Knotens.  
   
      Formatattribute. Siehe [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -301,7 +299,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Aliase für häufig verwendete Pfade  
+###  <a name="AddAlias"></a> Aliase für häufig verwendete Pfade  
  Das Ersetzen häufig verwendeter Pfade durch Aliase trägt dazu bei, die Größe der DGML-Datei und die erforderliche Zeit zum Laden und Speichern der Datei zu reduzieren. Fügen Sie zum Erstellen eines Alias am Ende der DGML-Datei einen `<Paths></Paths>`-Abschnitt hinzu. Fügen Sie in diesem Abschnitt ein `<Path/>`-Element hinzu, um einen Alias für den Pfad zu definieren:  
   
 ```xml  
