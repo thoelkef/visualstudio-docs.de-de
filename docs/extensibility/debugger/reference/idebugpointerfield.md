@@ -2,28 +2,24 @@
 title: IDebugPointerField | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a4f110308ead7fde00528ed0404becd802069f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Diese Schnittstelle stellt einen Zeigertyp.  
@@ -48,7 +44,7 @@ IDebugPointerField : IDebugContainerField
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt das Ziel des Zeigers.|  
   
 ## <a name="remarks"></a>Hinweise  
- In C/C++ kann ein Zeiger auf einen Container sein, wenn er mit der Arraynotation verwendet wird. Angenommen, `char *pString`, `pString` verfügt über einen Typ eines Zeigers auf `char`. `pString[3]`weist den Typ von einem Container ist ein Zeiger auf `char` , verweist das vierte Element des Containers.  
+ In C/C++ kann ein Zeiger auf einen Container sein, wenn er mit der Arraynotation verwendet wird. Angenommen, `char *pString`, `pString` verfügt über einen Typ eines Zeigers auf `char`. `pString[3]` weist den Typ von einem Container ist ein Zeiger auf `char` , verweist das vierte Element des Containers.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

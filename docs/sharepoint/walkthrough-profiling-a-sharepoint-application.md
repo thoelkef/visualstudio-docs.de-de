@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Der Visual Studio-Profiler ermöglicht es Ihnen, Auffinden und beseitigen die teuerste (langsamsten) Bestandteile des Projekts, auch bekannt als die *Langsamster Pfad*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt wird im **Projektmappen-Explorer**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Hinzufügen eines Features und Funktionsereignisempfängers  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Hinzufügen eines Features und Funktionsereignisempfängers  
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>So fügen Sie eine Funktion und den Funktionsereignisempfänger hinzu  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Speichern Sie das Projekt.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Konfigurieren und Bereitstellen der SharePoint-Anwendung  
+##  <a name="BKMK_ConfigSharePointApp"></a> Konfigurieren und Bereitstellen der SharePoint-Anwendung  
  Da das SharePoint-Projekt nun bereit ist, können Sie es konfigurieren und für den SharePoint-Server bereitstellen.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>So konfigurieren und stellen Sie die SharePoint-Anwendung bereit  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      Der Assistent ermöglicht die anwendungsprofilerstellung auf dem Server, zeigt der **Leistungs-Explorer** Fenster erstellt, bereitgestellt und die SharePoint-Anwendung ausgeführt wird.  
   
-##  <a name="BKMK_RunSPApp"></a>Ausführen der SharePoint-Anwendung  
+##  <a name="BKMK_RunSPApp"></a> Ausführen der SharePoint-Anwendung  
  Aktivieren Sie das Feature in SharePoint, wodurch die Auslösung des `FeatureActivation`-Ereigniscodes ausgelöst wird.  
   
 #### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Nach dem Schließen von SharePoint der Profiler erstellt und zeigt ein Beispiel-Profilerstellungsbericht und speichert es als eine VSP-Datei in die **ProfileTest** Ordner des Projekts.  
   
-##  <a name="BKMK_ViewResults"></a>Anzeigen und Interpretieren der Profilerstellungsergebnisse  
+##  <a name="BKMK_ViewResults"></a> Anzeigen und Interpretieren der Profilerstellungsergebnisse  
  Zeigen Sie nun nach der Ausführung und Profilerstellung der SharePoint-Anwendung die Testergebnisse an.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>So zeigen Sie die Profilerstellungsergebnisse an und interpretieren Sie sie  

@@ -2,28 +2,24 @@
 title: IDebugProgramProvider2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2
 helpviewer_keywords:
 - IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37771a5ea9f35075200cd5d5309bc5836afd11bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec46442757d7e4b59437db310a45500b2e9d0906
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Diese registrierten Schnittstelle ermöglicht es der Sitzung Debug Manager (SDM) zum Abrufen von Informationen zu Programmen, die "über veröffentlicht wurden" die [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) Schnittstelle.  
@@ -47,7 +43,7 @@ IDebugProgramProvider2 : IUnknown
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Ruft Informationen über Programme, die ausgeführt werden soll, in verschiedene Arten gefiltert.|  
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Ruft ab einen Knoten Programm, wenn eine bestimmte Prozess-ID.|  
 |[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Richtet einen Rückruf an den Anbieterereignisse im Zusammenhang mit bestimmten Arten von Prozesse überwacht werden soll.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Richtet ein Gebietsschema für sprachspezifische Ressourcen, die von der DE benötigt werden.|  
+|[setLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Richtet ein Gebietsschema für sprachspezifische Ressourcen, die von der DE benötigt werden.|  
   
 ## <a name="remarks"></a>Hinweise  
  In der Regel wird mithilfe ein Prozesses mit dieser Schnittstelle finden Sie im jeweiligen Prozess ausgeführten Programme.  

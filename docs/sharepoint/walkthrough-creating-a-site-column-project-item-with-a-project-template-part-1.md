@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen ein Projekts Websitespalte mit einer Projektvorlage, Teil 1 | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Dies ist eine eigenständige exemplarische Vorgehensweise. Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie das Projektelement erweitern, indem Sie der Projektvorlage einen Assistenten hinzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen von Projektelement einer Websitespalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
@@ -71,7 +70,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+2.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 3.  Am oberen Rand der **neues Projekt** Dialogfeld Feld, stellen Sie sicher, dass **.NET Framework 4.5** ist in der Liste der Versionen von .NET Framework ausgewählt wurde.  
   
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  In der **Namen** geben **SiteColumnProjectItem**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **SiteColumnProjectItem** Projekt **Projektmappen-Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **SiteColumnProjectItem** Projekt **Projektmappen-Explorer**.  
   
 #### <a name="to-create-the-project-template-project"></a>So erstellen Sie das Projektvorlagenprojekt  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  In der **Namen** geben **SiteColumnProjectTemplate**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **SiteColumnProjectTemplate** Projekt der Projektmappe.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **SiteColumnProjectTemplate** Projekt der Projektmappe.  
   
 6.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  In der **Namen** geben **ProjectItemTypeDefinition** und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **ProjectItemTypeDefinition** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **ProjectItemTypeDefinition** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
 5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Fügt die `ProjectItem`-Elemente für alle Dateien hinzu, die in den einzelnen Projektinstanzen enthalten sind.  
   
-    -   Verwendet den Namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Andere Projektdateien in dieser Projektmappe verwenden den Namespace "http://schemas.microsoft.com/developer/msbuild/2003". Daher werden XML-Schema-Warnmeldungen generiert, die Sie aber bei dieser exemplarischen Vorgehensweise ignorieren können.  
+    -   Verwendet den Namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Andere Projektdateien in dieser Projektmappe verwenden den "http://schemas.microsoft.com/developer/msbuild/2003" Namespace. Daher werden XML-Schema-Warnmeldungen generiert, die Sie aber bei dieser exemplarischen Vorgehensweise ignorieren können.  
   
      Weitere Informationen zum Inhalt der VSTEMPLATE-Dateien finden Sie unter [Schemareferenz zu Visual Studio-Vorlage](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

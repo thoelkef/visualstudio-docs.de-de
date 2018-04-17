@@ -1,27 +1,23 @@
 ---
-title: "Projektkonfiguration für die Ausgabe | Microsoft Docs"
-ms.custom: 
+title: Projektkonfiguration für die Ausgabe | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f3927ac9aa9e85be026d2b9a2af1c0c4d956c9f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9bb68812ed9988c9ed18174231ead24f91fcf9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-output"></a>Konfiguration für die Ausgabe des Projekts
 Jede Konfiguration kann es sich um einen Satz von Erstellungsvorgängen unterstützen, die Ausgabeelemente z. B. ausführbare Datei oder Ressource Dateien zu erzeugen. Diese Ausgabeelemente, die dem Benutzer privat sind und in Gruppen, die verknüpft sind verwandte Typen in der Ausgabe z. B. ausführbare Dateien (.exe, DLL, .lib) und Quelldateien (IDL, h-Dateien) platziert werden können.  

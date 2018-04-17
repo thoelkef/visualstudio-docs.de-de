@@ -2,28 +2,24 @@
 title: IDebugProcess3::Execute | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::Execute
 helpviewer_keywords:
 - IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc4728c3c51dc8e206393ccb2a8f27f470a51b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 349f792826bcfaa6ec3af1e10069e9c7182868bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Wird fortgesetzt, das Ausführen dieses Prozesses vom Zustand "beendet". Alle vorherigen Ausführungsstatus (z. B. einem Schritt) deaktiviert ist, und der Prozess gestartet wird, erneut ausführen.  
@@ -61,5 +57,5 @@ int Execute(
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
+ [Setzen Sie fort](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

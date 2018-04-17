@@ -2,28 +2,24 @@
 title: IDebugExceptionEvent2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6dacbac1092e211ba129417bd4e47aea31b733
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f2cb866c12cacc2c0fcc81c3021e7cc5af448d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Die Debugging-Modul (DE) sendet diese Schnittstelle an der Sitzung Debug-Manager (SDM), beim Auftreten einer Ausnahme in der Anwendung, die derzeit ausgeführt wird.  
@@ -45,7 +41,7 @@ IDebugExceptionEvent2 : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Ruft ausführliche Informationen über die Ausnahme, die dieses Ereignis ausgelöst hat.|  
+|[getException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Ruft ausführliche Informationen über die Ausnahme, die dieses Ereignis ausgelöst hat.|  
 |[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Ruft eine lesbare Beschreibung für die ausgelöste Ausnahme, die dieses Ereignis ausgelöst hat.|  
 |[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Legt fest, ob die Debugging-Modul (DE) die Möglichkeit, diese Ausnahme an die Anwendung gedebuggt wird unterstützt, wenn die Ausführung fortsetzt übergeben.|  
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Gibt an, ob die Ausnahme übergeben werden soll, das Programm, das gerade gedebuggt wird, wenn die Ausführung fortsetzt, oder wenn die Ausnahme verworfen werden sollen.|  

@@ -1,32 +1,30 @@
 ---
-title: Was &#39; s in Quellcodeverwaltung | Microsoft Docs
-ms.custom: 
+title: Was&#39;s in Quellcodeverwaltung | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>Welche &#39; s in Datenquellen-Steuerelements
+# <a name="what39s-new-in-source-control"></a>Was&#39;s in Datenquellen-Steuerelements
 In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Sie können eine hochgradig Source Control-Lösung bereitstellen, indem ein Datenquellen-Steuerelement VSPackage implementieren. Dieser Abschnitt beschreibt die Funktionen des Datenquellen-Steuerelements VSPackages und bietet eine Übersicht über die Schritte für die Implementierung.  
   
 ## <a name="the-source-control-vspackage"></a>Das Source Control VSPackage  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt zwei Arten von Datenquellen-Steuerelement-Lösungen. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können weiterhin integrieren, Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-in. Sie können auch eine VSPackage für die Datenquellen-Steuerelements die bietet eine umfassende Integration erstellen [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Datenquellen-Steuerelement-Lösungen, die ein hohes Maß an Komplexität und Autonomie erfordern geeignet ist.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten von Datenquellen-Steuerelement-Lösungen. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können weiterhin integrieren, Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-in. Sie können auch eine VSPackage für die Datenquellen-Steuerelements die bietet eine umfassende Integration erstellen [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Datenquellen-Steuerelement-Lösungen, die ein hohes Maß an Komplexität und Autonomie erfordern geeignet ist.  
   
  Eine VSPackage kann nahezu jede Art von Funktionen zum Hinzufügen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein Datenquellen-Steuerelement VSPackage bietet eine umfassende Quelle Steuerelement für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], über die Benutzeroberfläche für den Benutzer auf die Back-End-Kommunikation mit dem Quellcodeverwaltungssystem dargestellt.  
   
