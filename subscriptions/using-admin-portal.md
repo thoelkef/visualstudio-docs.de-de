@@ -1,19 +1,19 @@
 ---
 title: Verwenden des Administratorportals | Visual Studio Marketplace
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: cf44f74b32bd830c613adcc1ee35a95b97636772
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/06/2018
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Verwenden des Administratorportals für Visual Studio-Abonnements
 
@@ -25,6 +25,7 @@ Beachten Sie beim Verwenden des Portals zur Verwaltung von Visual Studio-Abonnem
 - **Weisen Sie ein Abonnement nicht mehreren Abonnenten zu.** Sie müssen jeder Person, die alle oder einige der Abonnementvorteile nutzt (Software für Entwicklung und Tests, Microsoft Azure, E-Learning usw.), ein Abonnement zuweisen. 
 
 ## <a name="adminstrator-roles"></a>Administratorrollen
+
 Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Volumenlizenz-Kunden existieren zwei verschiedene Rollen. Diese Rollen entsprechen den jetzigen Rollen des „primären Ansprechpartners“ und des „Abonnementverwalters“ im VLSC. 
 
 **Superadministratoren:** Nach dem ersten Einrichten einer Organisation erhält der primäre Ansprechpartner standardmäßig die Befugnisse eines Superadministrators. Der primäre Ansprechpartner kann dann weitere Superadministrator- oder Administratorrollen zuweisen. Ein Superadministrator kann andere Administratoren sowie Abonnenten hinzufügen und entfernen. Wenn im System mehr als zwei Superadministratoren existieren, kann jeder Superadministrator alle anderen bis auf die letzten zwei löschen, da diese aus Sicherheitsgründen nicht gelöscht werden können. 
@@ -32,7 +33,11 @@ Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Volumenlizenz-
 **Administratoren:** Administratoren können nur durch einen Superadministrator eingerichtet werden. Administratoren können Abonnenten innerhalb der Vereinbarungen verwalten, die der Superadministrator diesen zuweist. 
 
 ## <a name="getting-started"></a>Erste Schritte
+
+Damit Sie die Abonnements Ihrer Organisation über das Administratorportal verwalten können, müssen Sie Ihre Organisation zunächst in das Portal einbinden.  Sobald Sie das Onboarding abgeschlossen haben, machen Sie sich mit den Abonnenten- und Detailseiten vertraut, denn dort finden Sie die Tools und Informationen, die Sie für die Verwaltung Ihrer Abonnements benötigen.  
+
 ### <a name="onboarding"></a>Onboarding
+
 Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonnements aufgenommen werden kann, werden die primären Ansprechpartner per E-Mail gebeten, den Onboardingprozess abzuschließen. Unten sind die zum Aufnehmen in das neue Portal erforderlichen Schritte genannt. Wenn Sie gerne schrittweise durch den Prozess geführt werden möchten, sehen Sie sich dieses [Video zum Administrator-Onboarding](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) an, oder lesen Sie sich diesen [Supportartikel](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio-Abonnements: Administrator-Migrationsprozess") durch.   
 1.  **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
     - Die E-Mail an die primären Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer persönlichen öffentlichen Kundennummer (Public Customer Number, PCN). * 
@@ -42,9 +47,10 @@ Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonneme
 2.  **Ihre Administratoren einrichten** Nach dem Eingeben der PCN werden sie im neuen System als Superadministratoren registriert und können weitere Superadministratoren und Administratoren (vormals „Abonnementverwalter“) hinzufügen. Dieser Vorgang sollte abgeschlossen worden sein, bevor Ihre Organisation migriert wird, um einem Zugriffsverlust vorzubeugen. 
 3.  **Auf das neue Portal zur Verwaltung von Abonnements zugreifen**  Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.  
 
-* *Hinweis: Wenn die primären Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCN besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCN abschließen, die jeweils in den E-Mails genannt werden.*
+> [!NOTE]
+> Wenn die primären Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCN besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCN abschließen, die jeweils in den E-Mails genannt werden.*
 
-Wenn Sie dem neuen Portal zur Verwaltung von Visual Studio-Abonnements hinzugefügt werden müssen und nicht sicher sind, wer Ihr primärer Ansprechpartner ist, finden Sie diese Informationen nach dem Anmelden bei dem [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Lesen Sie [diesen Artikel](https://www.visualstudio.com/subscriptions/support/locate-primary-contact/ "Wie ermittle ich meinen „primären Ansprechpartner“?"), um eine ausführliche Anleitung zum Ermitteln Ihres primären Ansprechpartners im VLSC zu erhalten.
+Wenn Sie dem neuen Portal zur Verwaltung von Visual Studio-Abonnements hinzugefügt werden müssen und nicht sicher sind, wer Ihr primärer Ansprechpartner ist, finden Sie diese Informationen nach dem Anmelden bei dem [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Lesen Sie das Thema [Ermitteln Ihres primären Kontakts](/find-primary-contact/), um eine Anleitung zum Ermitteln Ihres primären Ansprechpartners im VLSC zu erhalten.
 Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.
 
 ### <a name="understanding-the-subscribers-page"></a>Grundlegendes zur Seite „Abonnenten“
@@ -62,10 +68,10 @@ Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „A
 
 Auf dieser Seite können Sie links zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen.
 
-![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
+   ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Grundlegendes zur Seite „Details“
 Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erhalten Sie auf der Registerkarte „Details“. Dort werden Vereinbarungsstatus, Einkaufskonto, Organisationsdetails, primäre Ansprechpartner (VLSC), Superadministratoren (falls vorhanden) und andere relevante Informationen angezeigt.
 
-![Seite „Details“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
+   ![Seite „Details“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
 

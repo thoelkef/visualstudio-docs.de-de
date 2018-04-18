@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio-Abonnements – Vorteile für Abonnenten"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Visual Studio-Abonnements – Vorteile für Abonnenten
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -22,7 +22,7 @@ Visual Studio-Abonnements bietet die umfassendste Sammlung von Ressourcen zum Er
 Die Vorteile werden in drei Kategorien unterteilt:
 
 ## <a name="tools"></a>Tools
-Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](/vs-ide-benefit), auf [Visual Studio Team Services](/vs-vsts) und [Azure](/vs-azure).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
+Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](/vs-ide-benefit/), auf [Visual Studio Team Services](/vs-vsts/) und [Azure](/vs-azure/).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
 
 ## <a name="professional-development"></a>Berufliche Entwicklung
 Um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit den neuesten Technologien Schritt zu halten, bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Branchenführern angeboten werden. Hier einige Beispiele für die angebotenen Inhalte:
@@ -33,7 +33,7 @@ Um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit
 - Entwurf von Datenbanklösungen für SQL Server von Microsoft Virtual Academy
 - LinkedIn Learning bietet Zugang zu den Personen, Informationen und Fähigkeiten, mit denen Sie sich von der Masse abheben können. 
 
-## <a name="support"></a>Support 
+## <a name="support"></a>Unterstützung 
 Als Visual Studio-Abonnent haben Sie außerdem Zugriff auf verschiedene Supportangeboten, falls Sie Fragen haben oder technische Unterstützung benötigen. 
 - Kostenpflichtige Abonnements umfassen Zugang zu technischem Support einschließlich Problemlösung für Tools und Anwendungen, die in Entwicklungs-/Testumgebungen ausgeführt werden.  
 - Benötigen Sie technische Dokumentation oder Produktinformationen?  Über den Concierge-Chat-Dienst erhalten Sie sofort Hilfe. 

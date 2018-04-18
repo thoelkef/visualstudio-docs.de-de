@@ -1,23 +1,22 @@
 ---
 title: Verwenden von Product Keys | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
-## <a name="product-keys-overview"></a>Übersicht über Product Keys
 Visual Studio-Abonnements bieten Zugriff auf eine große Auswahl von Microsoft-Produkten zum Entwerfen, Entwickeln, Testen und Vorführen von Anwendungen. Bei einigen dieser Produkte müssen während der Installation Product Keys angegeben werden, und einige müssen aktiviert werden.
 
 Visual Studio-Abonnements enthalten in der Regel fünf Product Keys für aktuelle Versionen von Windows- und Office-Produkten sowie drei Product Keys für ältere Versionen.
@@ -48,7 +47,7 @@ Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abon
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
 Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 
-![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
+   ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
@@ -58,7 +57,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -82,7 +81,7 @@ So nehmen Sie einen Product Key in Anspruch:
 1.  Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können. 
 2.  Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3.  Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.  
-![Suche nach Product Keys](_img\product-keys\visio-product-key-cropped.png)
+    ![Suche nach Product Keys](_img\product-keys\visio-product-key-cropped.png)
 
 In diesem Beispiel wird die Suchleiste verwendet, um einen Product Key für Visio 2010 zu suchen.
 Wie Sie sehen können, werden mehrere Versionen von Visio 2010 aufgeführt.  Jeweils ein Schlüssel ist bereits für Visio Standard 2010 und Visio Premium 2010 in Anspruch genommen worden. Für beide Programme können weitere vier Schlüssel verwendet werden.  Bei den beiden Schlüsseln, die in Anspruch genommen wurden, handelt es sich um Verkaufsschlüssel. Sie werden auf der Seite angezeigt.  Beachten Sie, dass Sie in der Spalte **Hinweise** eine kurze Notiz zu den beanspruchten Schlüsseln hinterlassen können.  Diese können Sie zusammen mit dem Datum in der Spalte **Beansprucht** verwenden, um den Überblick über in Anspruch genommene Schlüssel zu behalten.  Sie könnten beispielsweise Notizen machen, wenn Sie die Installation eines Produkts mit dem Schlüssel aktivieren.  
@@ -91,7 +90,7 @@ Wie Sie sehen können, werden mehrere Versionen von Visio 2010 aufgeführt.  Jew
 Sie können eine Liste mit allen in Anspruch genommenen Schlüsseln exportieren, zusammen mit einer großen Auswahl statischer und anderer Schlüssel, die automatisch mit „In Anspruch genommen“ markiert wurden.  
 
 > [!IMPORTANT] 
-> Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren.** 
+> Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren. 
 
 Klicken Sie zum Exportieren Ihrer Schlüssel einfach ganz rechts auf der Seite „Product Keys“ auf den Link **Alle Schlüssel exportieren**.  Es wird eine XML-Datei mit dem Namen „KeysExport.xml“ erstellt, die Sie öffnen oder speichern können.  Sie müssen die Datei mit einer Anwendung öffnen, die XML-Dateien verarbeiten kann.  Sie können die Datei beispielsweise als schreibgeschützte Arbeitsmappe in Excel öffnen.  
 

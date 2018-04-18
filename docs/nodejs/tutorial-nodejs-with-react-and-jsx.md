@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 Mit Visual Studio können Sie problemlos ein Node.js-Projekt erstellen sowie IntelliSense und andere integrierte Features nutzen, die Node.js unterstützen. In diesem Tutorial für Visual Studio erstellen Sie ein Node.js-Webanwendungsprojekt aus einer Visual Studio-Vorlage. Anschließend erstellen Sie mithilfe von React eine einfache App. 
@@ -349,11 +349,20 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 
     Der Debugger wurde ordnungsgemäß angehängt, wenn DOM Explorer und die JavaScript-Konsole in Visual Studio geöffnet werden. Diese Debugtools ähneln den Chrome-Entwicklertools und den F12-Tools für Edge.
 
+    > [!NOTE]
+    > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen von Chrome zu schließen, bevor Sie Chrome im Debugmodus starten. Möglicherweise werden Chrome-Erweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.
+
 1. Da der Code mit dem Haltepunkt bereits ausgeführt wurde, aktualisieren Sie zum Erreichen des Haltepunkts die Browserseite.
 
     Während der Unterbrechung im Debugger können Sie den App-Status überprüfen, indem Sie mit dem Mauszeiger auf Variablen zeigen und Debuggerfenster verwenden. Sie können den Debugger durch Navigieren im Code nach vorne verschieben (**F5**, **F10** und **F11**).
 
-    Sie können den Haltepunkt je nach Umgebung und Browserstatus entweder in „app-bundle.js“ oder im zugeordneten Speicherort in „app.tsx“ erreichen. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen. (Wenn Sie Code in einer *TSX*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.)
+    Sie können den Haltepunkt je nach Umgebung und Browserstatus entweder in *app-bundle.js* oder im zugeordneten Speicherort in *app.tsx* erreichen. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
+
+    * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren.
+
+        Alternativ, wenn Sie Code in einer *app.tsx*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung in *app.tsx*, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.
+
+    * Wenn Sie Code in *app bundle.js* unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *app bundle.js.map*.
 
     > [!TIP]
     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.

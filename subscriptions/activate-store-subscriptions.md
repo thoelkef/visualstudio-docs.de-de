@@ -1,19 +1,19 @@
 ---
 title: 'Gewusst wie: Aktivieren von Visual Studio-Abonnements, die im Microsoft Store erworben wurden | Microsoft-Dokumentation'
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/25/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to activate Visual Studio subscriptions you purchased in the Microsoft Store.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 5c8809221bcf4cfd2a92ec97411ea60623ee2f93
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/25/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Visual Studio-Abonnements aktiviert werden, die im Microsoft Store erworben wurden.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Wie aktiviere ich ein im Microsoft Store erworbenes Abonnement?
 Wenn Sie über den Microsoft Store ein Visual Studio-Abonnement erworben haben, können die Aktivierungsschritte von der „Bestätigungsseite“ oder „Bestätigungs-E-Mail“, die Sie nach dem Kauf erhalten haben, aus initiiert werden. 
@@ -23,7 +23,7 @@ Wenn Sie über den Microsoft Store ein Visual Studio-Abonnement erworben haben, 
   
 ## <a name="activate-your-subscription"></a>Aktivieren Sie Ihr Abonnement: 
 1. Klicken Sie auf **Click here to sign in** (Klicken Sie hier, um sich anzumelden). 
-2. Sie gelangen zu [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+2. Sie gelangen auf [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 3. Geben Sie die E-Mail-Adresse an, mit der Sie auf das Visual Studio-Abonnement zugreifen, und klicken Sie auf **Fortfahren**.
 4. Je nach Typ des Kontos, das Sie verwenden, können Sie auf eine von zwei verschiedenen Anmeldeseiten umgeleitet werden:
     - Für Abonnenten, die ihr persönliches „Microsoft-Konto“ (MSA) verwenden, wird die Kennwortseite für das Microsoft-Konto angezeigt.

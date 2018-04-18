@@ -1,25 +1,28 @@
 ---
 title: Bearbeiten von Abonnements im Administratorportal | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten können.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 
+Als Abonnementadministrator haben Sie die Möglichkeit, Änderungen an den Abonnements vorzunehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Vornehmen von Änderungen an Abonnenteninformationen
 Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben und Informationen zu aktualisieren. 
-**Beachten Sie, dass durch das Bearbeiten der E-Mail-Adresse eines Abonnenten alle vorhandenen Vorteile zurücksetzt werden.**
+> [!NOTE]
+> Durch das Bearbeiten der E-Mail-Adresse eines Abonnenten werden alle vorhandenen Vorteile zurücksetzt.
 
 Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. Sie können ebenfalls auf die Zeile des Abonnenten im Raster doppelklicken, um das Bearbeitungsfenster zu öffnen.
 
@@ -53,7 +56,7 @@ Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearb
 
     ![Bearbeiten einer Lizenz: Massenbearbeitungen – Dateiupload](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Sobald Sie die Datei hochgeladen haben, wird Ihnen eine Benachrichtigung angezeigt, dass der Upload erfolgreich war. 
+5.  Sobald Sie die Datei hochgeladen haben, wird Ihnen eine Benachrichtigung angezeigt, dass der Upload erfolgreich war. Jetzt sind Ihre Änderungen in den Abonnenteninformationen zu enthalten. 
 
     ![Bearbeiten einer Lizenz: Massenbearbeitungen – Upload abgeschlossen](_img\edit-license\edit-license-bulk-upload-complete.png)
 

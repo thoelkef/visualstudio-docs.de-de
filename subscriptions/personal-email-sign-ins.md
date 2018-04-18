@@ -1,19 +1,19 @@
 ---
-title: "Persönliche E-Mail-Nachrichten, die im VLSC angezeigt werden"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/23/2018
-Ms.topic: Get-Started-Article
-Description: "Visual Studio Subscriptions – Why Am I Seeing Hotmail or Gmail Addresses for My Subscribers?"
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2bfe2f39d432be5fc6ff7b24be2a218d02fce961
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Persönliche E-Mail-Nachrichten, die im VLSC angezeigt werden
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/23/2018
+ms.topic: Get-Started-Article
+description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cfe035d82976e3df683f4e3a35bd9d7f3c8cf9e2
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten? 
 
@@ -25,13 +25,10 @@ Grund für dieses Szenario sind Anmeldeprozesse, die mit dem älteren MSDN-Abonn
 1. Der Administrator „wies“ das Abonnement einem einzelnen Abonnenten unter Verwendung seiner Geschäfts- oder Schul-E-Mail-Adresse zu.
 2. Der Abonnent „aktivierte“ das Abonnement.
 
-Während der Aktivierung des Abonnenten galt:
-1. Ein Microsoft-Konto (MSA) war zum Anmelden erforderlich.
-2. Wenn der Abonnent nicht versuchte, sein Geschäfts- oder Schulkonto (z.B. John@contoso.com) zu einem MSA zu machen, konnte er ein neues MSA erstellen oder ein vorhandenes nutzen.
-3. Dies führte dazu, dass seine „Anmelde-E-Mail-Adresse“ sich von seiner „‘Zugewiesen an‘-E-Mail-Adresse" unterschied.
+Während des Abonnentenaktivierungsprozesses: Für die Anmeldung war ein Microsoft-Konto (MSA) erforderlich. Wenn der Abonnent nicht versuchte, sein Geschäfts- oder Schulkonto (z.B. John@contoso.com) zu einem MSA zu machen, konnte er ein neues MSA erstellen oder ein vorhandenes nutzen. Dies führte dazu, dass seine „Anmelde-E-Mail-Adresse“ sich von seiner „‘Zugewiesen an‘-E-Mail-Adresse" unterschied.
 
 > [!NOTE] 
-> Der neue Abonnentenprozess in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) unterstützt sowohl Geschäfts-/Schulkonto- als auch Microsoft-Kontoidentitätstypen (MSA).
+> Der neue Abonnentenprozess in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) unterstützt sowohl Geschäfts-, Uni- und Schulkonto- als auch Microsoft-Kontoidentitätstypen (MSA).
 
 Da die Administratormigration Daten aus dem VLSC bezüglich der „Anmelde-E-Mail-Adresse“ des Abonnenten für den neuen Abonnentenverwaltungsprozess verwendet, können schließlich möglicherweise vor kurzem migrierte Administratoren diese zuvor nicht bemerkten persönlichen Konten aufgrund von Änderungen an der Benutzeroberfläche sehen, die diese Informationen besser sichtbar machen.
 

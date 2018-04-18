@@ -1,19 +1,19 @@
 ---
 title: Anmelden bei Visual Studio-Abonnements | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Sie sich bei Ihrem Visual Studio-Abonnement anmelden.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Anmelden bei Ihrem Visual Studio-Abonnement
 
@@ -57,7 +57,7 @@ Sie können auch das aktuell ausgewählte Abonnement in der oberen rechten Ecke 
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Verwenden Ihres Microsoft-Kontos zum Anmelden bei einem Geschäfts-, Schul- oder Unikonto
 
-1. Besuchen Sie [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Wechseln Sie zu [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. 
 
    > [!NOTE]

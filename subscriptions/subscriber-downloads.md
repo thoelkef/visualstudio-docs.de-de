@@ -1,19 +1,19 @@
 ---
-title: "Verwenden von Abonnentendownloads für Visual Studio-Abonnements | Microsoft-Dokumentation"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Verwenden von Abonnentendownloads für Visual Studio-Abonnements | Microsoft-Dokumentation
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studio-Abonnement gehören, finden und herunterladen können.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.  
@@ -34,7 +34,7 @@ Es gibt einige Gründe dafür, warum bestimmte Produkte möglicherweise für die
 ## <a name="what-do-i-get"></a>Meine Vorteile
 Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie viele Downloads Ihnen zur Verfügung gestellt werden und um welche Programme es sich dabei handelt.  Für Abonnenten mit Standardabonnements für Visual Studio Enterprise sind möglicherweise andere Downloads verfügbar als für Abonnenten, die Ihre Abonnements über ein Microsoft Partner Network- oder ein BizSpark-Programm-Abonnement erhalten.  Laden Sie die Liste [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) (Produkte nach Vorteilsstufen) herunter, um mehr über die Downloads zu erfahren, die für die jeweilige Abonnementstufe verfügbar sind.
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Website [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Downloads im Abonnentenportal 
 Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite [Downloads](https://my.visualstudio.com/downloads/featured) angezeigt.  Wenn Sie über mehr als ein Abonnement oder mehr als eine Programmmitgliedschaft verfügen, werden die Downloads für Ihr **höchstes Abonnement** angezeigt, auch wenn Sie zu dem Zeitpunkt ein anderes Abonnement abrufen.  Wenn Sie zum Beispiel über ein Professional-Abonnement für Visual Studio und eine Visual Studio Dev Essentials-Mitgliedschaft verfügen, die beide derselben Anmelde-ID zugeordnet sind, werden die Downloads angezeigt, die in dem Abonnement der Professional-Stufe enthalten sind, auch wenn Sie sich zu dem Zeitpunkt die Vorteile der Dev Essentials-Version ansehen.  

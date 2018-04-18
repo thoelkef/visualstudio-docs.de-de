@@ -1,21 +1,21 @@
 ---
 title: Erneutes Senden von Abonnementzuweisungs-E-Mails aus Manage.visualstudio.com oder dem VLSC | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/13/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/13/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Sie die Abonnementzuweisung über manage.visualstudio.com oder das VLSC an Abonnenten senden.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 080ec95c73ed649168838d823a0dcc5d809ee89a
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails"></a>Erneutes Senden von Abonnementzuweisungs-E-Mails
+# <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Erneutes Senden von Abonnementzuweisungs-E-Mails im Verwaltungsportal für Visual Studio-Abonnements
 
 Hier erfahren Sie, welche Schritte je nach verwendetem Portal für die Abonnementverwaltung erforderlich sind, um eine Zuweisungs-E-Mail erneut zu senden. 
 
@@ -29,7 +29,7 @@ Der Vorgang zum erneuten Senden von Zuweisungs-E-Mails aus dem manage.visualstud
 4. Klicken Sie oben in den Suchergebnissen auf **Erneut senden**.  
 
 ## <a name="resending-assignment-emails-from-within-vlsc"></a>Erneutes Senden von Zuweisungs-E-Mails aus dem VLSC
-Wenn ein Abonnement einem Abonnenten im VLSC zugewiesen wurde und der Abonnent das erneute Senden der Zuweisungs-E-Mail anfordert, können Sie hierzu die E-Mail-Daten des Abonnenten bearbeiten und dann wieder in die ursprüngliche Adresse ändern. Dadurch wird automatisch das erneute Senden der Zuweisungs-E-Mail ausgelöst.
+Wenn ein Abonnement einem Abonnenten im VLSC zugewiesen wurde und der Abonnent das erneute Senden der Zuweisungs-E-Mail anfordert, können Sie hierzu die E-Mail-Daten des Abonnenten bearbeiten und dann wieder in die ursprüngliche Adresse ändern. Dadurch wird das erneute Senden der Zuweisungs-E-Mail automatisch ausgelöst.
 
 Befolgen Sie die folgenden Anweisungen, um die Zuweisungs-E-Mail erneut zu senden:
 

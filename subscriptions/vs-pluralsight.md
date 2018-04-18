@@ -1,29 +1,29 @@
 ---
 title: Pluralsight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Pluralsight training subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 118fa74608bc0a36c8ce0a6941915fec535aad84
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 1/4/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie mehr zum Pluralsight-Schulungsabonnements, das in Ihrem Visual Studio-Abonnement enthalten ist.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 973909a6ebc2730bfa7f4b9a0c576960175a8b7e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
-## <a name="overview"></a>Übersicht
+
 Erweitern Sie Ihre Kenntnisse mit von Experten entwickelten Kursen, Lernpfaden, anpassbaren Wissensabfragen und mehr.  Je nachdem, über welche Art von Visual Studio-Abonnement oder Programmmitgliedschaft Sie verfügen, sind Sie möglicherweise berechtigt, sechs Monate lang kostenlos und ohne Einschränkungen auf den gesamten Pluralsight-Katalog zuzugreifen. 
 
 In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvorteile für jede Art von Visual Studio-Abonnement aufgeführt.  Einige Abonnenten können den beschränkten Katalog für einen gewissen Zeitraum nutzen, nachdem der Zugriff auf den vollständigen Katalog abgelaufen ist. Pluralsight führt Sie durch diesen Prozess, wenn Ihr Abonnement für den vollständigen Katalog abgelaufen ist. 
 
  Je nach Art des Abonnements können nicht alle Abonnenten die neuen Angebote für Pluralsight-Vorteile einlösen, die zuvor ein Pluralsight-Abonnement verwendet haben, das über ein Visual Studio-Abonnement bereitgestellt wurde. Wenn Sie nicht für zusätzliche Pluralsight-Schulungsvorteile berechtigt sind, erhalten Sie eine Benachrichtigung, wenn Sie versuchen, den Vorteil auf der Pluralsight-Website zu aktivieren.  
 
-### <a name="eligibility"></a>Berechtigung
+## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe/Programm                                 | Vorteil               | Erneuerbar?                                                         |
 |--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
 | Visual Studio Enterprise Standard                            | Abonnement für 6 Monate | Nein.  Nach Ablauf 12 Monate lang eingeschränkte Katalogverfügbarkeit. |
@@ -47,7 +47,7 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 | Visual Studio Enterprise – MCT Software & Services, Developer | Nicht verfügbar         |                                                                    |
 <sup>1</sup> *Umfasst Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Website [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
  
 
 
@@ -103,8 +103,8 @@ A: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vor
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>F: Was passiert, wenn mein Pluralsight-Abonnement abläuft?  
 A: Am Ende Ihres kostenlosen Pluralsight-Abonnements haben Sie zwei Möglichkeiten:
-1. Je nach Visual Studio-Abonnement steht Ihnen möglicherweise für weitere 12 Monate eine begrenzte Auswahl an Kursen zur Verfügung.  Sehen Sie in der Tabelle [Berechtigung](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
-2. Sie können auch ein Abonnement direkt bei Pluralsight erwerben.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.  
+1. Sie erhalten einen kostenlosen Zugang für ein Jahr (überprüfen Sie die [Berechtigungstabelle](#eligibility), um zu sehen, ob Ihr Abonnement berechtigt ist) zu einem begrenzten Satz von 50 Kursen in einem von drei Hauptbereichen, darunter: App-Entwicklung in der Cloud; KI, maschinelles Lernen und Daten; sowie DevOps in der Cloud. Achten Sie auf eine E-Mail von Pluralsight, um Ihren kostenlosen Zugang nach Ablauf zu erhalten. Sie können unter jeder Teilbibliothek eine [Kursliste](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) sehen.
+2. Sie können ein Abonnement direkt bei Pluralsight mit einem Rabatt von 10% erwerben, wodurch Sie Zugriff auf den gesamten Kurskatalog erhalten.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.  
 
 ## <a name="support-resources"></a>Supportressourcen
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) bietet Hilfe bei der Durchführung von Pluralsight-Kursen und der Verwendung der Pluralsight-Website. 

@@ -2,7 +2,7 @@
 title: Ändern von Visual Studio 2017 | Microsoft-Dokumentation
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
 ms.custom: H1Hack27Feb2017
-ms.date: 11/08/2017
+ms.date: 04/06/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3145b1fef86b6d9540e105557bdf40d291049a52
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
-Wir haben nicht nur das Personalisieren von Visual Studio entsprechend Ihren Aufgaben erleichtert, sondern haben es außerdem für Sie einfacher gemacht, Visual Studio anzupassen. Sie müssen dafür nicht mehr die Systemsteuerung durchsuchen: Starten Sie einfach den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
+Wir haben nicht nur das Personalisieren von Visual Studio entsprechend Ihren Aufgaben erleichtert, sondern haben es außerdem für Sie einfacher gemacht, Visual Studio anzupassen. Hierzu starten Sie den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
 
 Gehen Sie folgendermaßen vor:  
 
@@ -39,7 +39,7 @@ Gehen Sie folgendermaßen vor:
 
 1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.  
 
-     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
+     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
      ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
@@ -48,27 +48,31 @@ Gehen Sie folgendermaßen vor:
 
 2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **Ändern**.  
 
-     ![Starten oder Ändern von Visual Studio](media/vs2017-modify.PNG "Ändern von Visual Studio 2017")  
+     ![Starten oder Ändern von Visual Studio](media/modify-visual-studio.png "Ändern von Visual Studio 2017")
+
+     Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Klicken Sie auf **Mehr**, und wählen Sie dann **Ändern**.   
+
+     ![Aktualisieren oder Ändern von Visual Studio](media/modify-or-update-visual-studio.png "Aktualisieren oder Ändern von Visual Studio 2017")
 
 3.  Aktivieren oder deaktivieren Sie auf dem Bildschirm **Arbeitsauslastungen** die Arbeitsauslastungen, die Sie installieren bzw. deinstallieren möchten.  
 
     ![Visual Studio 2017-Setupdialogfeld](media/vs2017-modify-workloads.PNG "Auswählen einer Arbeitsauslastung in Visual Studio 2017")
 
-4. Klicken oder tippen Sie erneut auf **Ändern**.  
+4. Wählen Sie erneut **Ändern**.  
 
-5. Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, klicken Sie auf **Starten**.
+5. Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, wählen Sie **Starten**.
 
 ## <a name="modify-individual-components"></a>Ändern einzelner Komponenten
 
 Wenn Sie das praktische Arbeitsauslastungsfeature zum Anpassen Ihrer Visual Studio-Installation nicht verwenden möchten, wählen Sie im Visual Studio-Installer die Option **Einzelne Komponenten** und dann die gewünschten Komponenten aus, und folgen Sie den Anweisungen.  
 
 ## <a name="get-support"></a>Support aufrufen
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, finden Sie hilfreiche Informationen im Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn Sie Hilfe bei der Installation benötigen, wenden Sie sich an uns im [Livechat](https://www.visualstudio.com/vs/support/#talktous) (nur in Englisch), oder erhalten Sie weitere Informationen auf der [Seite „Kontakt“ von Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
+* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
 * Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch

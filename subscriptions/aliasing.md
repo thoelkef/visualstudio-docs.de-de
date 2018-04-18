@@ -1,21 +1,21 @@
 ---
-title: "Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements mit Aliasen | Microsoft-Dokumentation"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen | Microsoft-Dokumentation
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements mit Aliasen
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet. 
 
@@ -28,8 +28,8 @@ Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Servi
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Administrator?
 
 Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) erfolgreich ist. 
-1. Die erste (empfohlene) Option ist die Nutzung des Verzeichniskontos als zugewiesene Adresse im Volume Licensing Service Center (VLSC). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Zuweisen von Abonnenten zu einem Verzeichniskonto](#assigning-subscribers-to-a-directory-account).
-2. Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auchMicrosoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
+- Die erste (empfohlene) Option ist die Nutzung des Verzeichniskontos als zugewiesene Adresse im Volume Licensing Service Center (VLSC). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Zuweisen von Abonnenten zu einem Verzeichniskonto](#assigning-subscribers-to-a-directory-account).
+- Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auch Microsoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
 
 > [!NOTE]
 > Sobald Ihr Unternehmen zum neuen [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements migriert ist, können Sie die Vorteile der neuen Administrationsfunktionen nutzen. Diese ermöglichen es Ihnen, sowohl Verzeichnis- als auch E-Mail-Adressen als Teil des Abonnentenprofils anzugeben.  Weitere Informationen zur [Migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -101,7 +101,7 @@ Hallo %ABONNENTENNAME%,
 
 Ihnen wurde ein Visual Studio-Abonnement zugewiesen.  Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen. 
 
-Wenn Sie Probleme bei der Anmeldung haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
+Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
 
 Wählen Sie unten auf der Seite Folgendes aus:
    - Konten, Abonnements und Abrechnungssupport
@@ -161,9 +161,9 @@ Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherwe
 
 6. Ihre Vorteile sollten jetzt angezeigt werden.
 
-Hinweis: Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, dass Sie verwenden möchten (z.B.„Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).   Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
+Hinweis: Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, dass Sie verwenden möchten (z.B. „Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).  Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
 
-Wenn Sie Probleme bei der Anmeldung haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
+Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
 
 Wählen Sie unten auf der Seite Folgendes aus:
    - Konten, Abonnements und Abrechnungssupport

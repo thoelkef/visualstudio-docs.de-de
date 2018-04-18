@@ -1,19 +1,19 @@
 ---
 title: Umgang mit abgelaufenen Lizenzen | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can handle expired Visual Studio subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Administratoren mit abgelaufenen Visual Studio-Abonnements umgehen können.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="handling-expired-subscriptions"></a>Umgang mit abgelaufenen Abonnements
 
@@ -21,4 +21,8 @@ Wenn das Abonnement eines Benutzers abgelaufen ist, wird dies im Portal in einer
 
 ![Liste der abgelaufenen Abonnements](_img\expired-subscriptions\expired-list.png) 
 
-Kontaktieren Sie einen Verkäufer von Volumenlizenzen oder einen Microsoft-Verkäufer, um die Abonnements zu erneuern. Geben Sie Ihre Vertragsnummer und die Nummer Ihres Einkaufskontos an. Der (Microsoft-)Verkäufer unterstützt Sie bei der Erneuerung von Lizenzen oder bei dem Kauf zusätzlicher Abonnements. Sobald die Bestellung aufgegeben oder der Vertrag verlängert wurde, sind die neuen Abonnements verfügbar und können Ihren Abonnenten zugewiesen werden.
+**So erneuern Sie Abonnements**
+1.  Kontaktieren Sie einen Verkäufer von Volumenlizenzen oder einen Microsoft-Verkäufer. 
+2.  Geben Sie Ihre Vertragsnummer und die Nummer Ihres Einkaufskontos an. 
+
+Der (Microsoft-)Verkäufer unterstützt Sie bei der Erneuerung von Lizenzen oder bei dem Kauf zusätzlicher Abonnements. Sobald die Bestellung aufgegeben oder der Vertrag verlängert wurde, sind die neuen Abonnements verfügbar und können [Ihren Abonnenten zugewiesen werden](/assign-license/). 
