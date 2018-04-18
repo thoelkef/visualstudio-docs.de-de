@@ -1,27 +1,23 @@
 ---
-title: "Veröffentlichen einer Website - Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Veröffentlichen einer Website - Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e324869eb90cd60cba68d9ed7b2e3fdb1ebb588d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 43b6bacc45d78d1d246f6a91d13549ccc96b276a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Veröffentlichen Sie eine Web-app oder eine .NET Core-app zu einer Website mit dem Visual Studio Publish-tool
 
@@ -49,9 +45,9 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish-aspnet.png "wählen veröffentlichen")
 
-1. In der **veröffentlichen** Bereich auswählen **IIS, FTP usw.**.
+1. In der **veröffentlichen** Bereich auswählen **IIS, FTP usw**.
 
-    ![Wählen Sie IIS, FTP usw.](../deployment/media/quickstart-publish-iis-ftp.png "wählen Sie IIS, FTP usw.")
+    ![Wählen Sie IIS, FTP usw.](../deployment/media/quickstart-publish-iis-ftp.png "wählen Sie IIS, FTP usw..")
 
 1. Klicken Sie auf **Veröffentlichen**.
 
