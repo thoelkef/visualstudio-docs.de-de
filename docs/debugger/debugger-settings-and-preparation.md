@@ -2,8 +2,7 @@
 title: Debugger, Einstellungen und Vorbereitung | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -21,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb28ee7e64d0e7281ded2443579c5e9be39400af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.  

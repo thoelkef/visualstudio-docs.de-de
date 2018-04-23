@@ -2,8 +2,7 @@
 title: Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -32,11 +31,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02fea4639d130840f3f5dbbd9e77693c676d304
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuvor vorgenommenen Speicherbelegung) zählen zu den heikelsten und am schwierigsten zu erkennenden Fehlern in C/C++-Anwendungen. Ein kleiner Arbeitsspeicherverlust würde möglicherweise zuerst nicht bemerkt werden. Im Laufe der Zeit kann ein fortschreitender Arbeitsspeicherverlust jedoch Symptome verursachen, die von verringerter Leistung bis hin zu einem Absturz reichen, wenn der Anwendung kein Arbeitsspeicher mehr zur Verfügung steht. Schwerwiegender ist hierbei jedoch, dass eine Anwendung mit Arbeitsspeicherverlusten, die den gesamten verfügbaren Arbeitsspeicher aufbraucht, einen Absturz anderer Anwendungen verursachen kann, wodurch das Identifizieren der für den Fehler verantwortlichen Anwendung erschwert wird. Auch scheinbar harmlose Arbeitsspeicherverluste können ein Symptom für andere Probleme sein, die korrigiert werden sollten.  
