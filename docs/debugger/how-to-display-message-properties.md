@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message properties in SpyHelp
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f656f22569b39fc4d305b1ced6e28c3497089375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d3caac9eab324b7656a92cb36e9c36e87d759b9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-message-properties"></a>Gewusst wie: Anzeigen von Meldungseigenschaften
 So ermitteln Sie weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden die [Nachricht Eigenschaftendialogfeld](../debugger/message-properties-dialog-box.md).  
