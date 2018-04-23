@@ -2,8 +2,7 @@
 title: Im Dialogfeld Eigenschaften von Nachrichten | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1264638a911d332929265f5f154d390eba2566
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einer bestimmten Nachricht suchen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Wählen Sie einen beliebigen nachrichtenknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

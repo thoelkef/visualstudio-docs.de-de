@@ -2,8 +2,7 @@
 title: Anzeigen von Arbeitsspeicher für Variablen im Debugger | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-Debugger
 Die **Arbeitsspeicher** Fenster bietet einen Einblick in den belegten Speicherplatz, der von der Anwendung verwendet wird. Die **Überwachen** Fenster **Schnellüberwachung** Dialogfeld **"Auto"** Fenster und **"lokal"** Fenster zeigen Sie den Inhalt von Variablen, die an bestimmten Orten im Arbeitsspeicher gespeichert. Aber die **Arbeitsspeicher** Fenster zeigt das umfangreiche Bild. Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen (beispielsweise Puffer oder umfangreiche Zeichenfolgen), die in den anderen Fenstern nicht gut dargestellt werden. Allerdings die **Arbeitsspeicher** Fenster ist nicht beschränkt auf das Anzeigen von Daten. Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
