@@ -2,8 +2,7 @@
 title: Keine Quelle verfügbar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 022b629076e79dea679541ed301b0a7ff0c7d876
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aae4b2428470e3e33477cfdb36699c2c1da20c1f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
 Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Die übliche Ursache ist Doppelklicken ein Modul, das nicht Quellcode, in verfügt der **Aufruflistenfenster** oder **Fensters "Threads"**. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt festzulegen, verwenden die **Disassemblyfenster** stattdessen.  
