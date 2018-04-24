@@ -1,27 +1,22 @@
 ---
-title: "SDK der Nebenläufigkeitsschnellansicht | Microsoft-Dokumentation"
-ms.custom: 
+title: SDK der Nebenläufigkeitsschnellansicht | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 7268e786c7d68d642778f0c0dca31de170b424b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](http://go.microsoft.com/fwlink/?LinkId=235405).  

@@ -1,32 +1,28 @@
 ---
-title: "Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8def9bb088275cef9f15e4e643d6811feab462
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59afec50a1889b62e6115be44caa116b475a95c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Projekt zu erstellen und dem Formular eine Tabelle hinzuzufügen. Die Tabelle dient dazu, die Symbole in einem regelmäßigen 4x4-Raster auszurichten. Sie legen außerdem einige Eigenschaften fest, um die Darstellung des Spielfelds zu verbessern.  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>So erstellen Sie ein Projekt und fügen dem Formular eine Tabelle hinzu  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  Wenn Sie nicht Visual Studio Express verwenden, müssen Sie zuerst eine Programmiersprache auswählen. Wählen Sie in der Liste **Installierte Vorlagen** entweder **Visual C#** oder **Visual Basic** aus.  
   

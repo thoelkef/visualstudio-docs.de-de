@@ -1,19 +1,19 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Adapters für diagnostische Daten in Visual Studio | Microsoft-Dokumentation'
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 82dbe80529fda8dfa599788766823665e4bee0bb
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 22867cab68497afd54c2ffee30bb9ccc73e90862
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Gewusst wie: Erstellen eines Adapters für diagnostische Daten
 
@@ -44,7 +44,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
  Führen Sie die folgenden Schritte aus, um einen Adapter für diagnostische Daten zu erstellen, der eine Datendatei auf der Basis von Informationen erfasst, die Sie beim Erstellen der Testeinstellungen konfigurieren.
 
- Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Sample Project for Creating a Diagnostic Data Adapter (Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten)](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+ Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="CreateAdapter"></a> Erstellen und Installieren eines Adapters für diagnostische Daten
 
@@ -282,7 +282,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
-- [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Collect diagnostic data while testing (VSTS) (Sammeln von Diagnosedaten beim Testen (VSTS))](/vsts/manual-test/collect-diagnostic-data)
 - [Gewusst wie: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

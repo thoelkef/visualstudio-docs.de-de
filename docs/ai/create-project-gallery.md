@@ -1,22 +1,22 @@
 ---
-title: "Erstellen eines Projekts mit KI-Tools für Visual Studio"
+title: Erstellen eines Projekts mit KI-Tools für Visual Studio
 description: Erstellen eines Projekts mithilfe des Beispiels aus dem Azure Machine Learning-Katalog
 keywords: KI, Visual Studio, Azure Machine Learning
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: how to article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1221459107a807c267583e46b6449dc63be094c1
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 495c0d256fc6c8f36ded67166f7d12aace7a9202
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
 

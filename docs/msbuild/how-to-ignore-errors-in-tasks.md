@@ -1,25 +1,21 @@
 ---
 title: 'Vorgehensweise: Ignorieren von Fehlern in Aufgaben | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: msbuild - "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
-manager: ghogen
-ms.openlocfilehash: 6fbdf661b49fb60ec6b1e18c6886b9bdcc946437
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Gewusst wie: Ignorieren von Fehlern in Aufgaben
 Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.  

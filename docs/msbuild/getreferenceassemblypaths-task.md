@@ -2,28 +2,24 @@
 title: GetReferenceAssemblyPaths-Task | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
 - C++
 - jsharp
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
-caps.latest.revision: 4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6063ca7f69d5dd04c0675090eb6c6deb3075bdf5
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: b21b6bf720a4604d2f7aec2ca717c825c5476db9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths-Aufgabe
 Gibt den Verweisassemblypfad der verschiedenen Frameworks zurück  
@@ -31,7 +27,7 @@ Gibt den Verweisassemblypfad der verschiedenen Frameworks zurück
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `GetReferenceAssemblyPaths` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`ReferenceAssemblyPaths`|Optionaler `String[]`-Ausgabeparameter.<br /><br /> Gibt den Pfad auf Grundlage des `TargetFrameworkMoniker`-Parameters zurück. Wenn `TargetFrameworkMoniker` gleich NULL oder leer ist, ist der Pfad `String.Empty`.|  
 |`FullFrameworkReferenceAssemblyPaths`|Optionaler `String[]`-Ausgabeparameter.<br /><br /> Gibt den Pfad auf Grundlage des `TargetFrameworkMoniker`-Parameters zurück, ohne den Profilteil des Linkpfads zu berücksichtigen. Wenn `TargetFrameworkMoniker` gleich NULL oder leer ist, ist der Pfad `String.Empty`.|  

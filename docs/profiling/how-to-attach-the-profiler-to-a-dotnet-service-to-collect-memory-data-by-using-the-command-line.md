@@ -1,23 +1,20 @@
 ---
-title: "Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ac1157981811338381977e1363f18c94da56b2cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 84e5505b077d4d237ed8f8b2532b4ac2b48544d5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.  

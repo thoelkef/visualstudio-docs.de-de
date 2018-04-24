@@ -1,23 +1,21 @@
 ---
-title: "Entwickeln von Apps für die universelle Windows-Plattform (UWP) | Microsoft-Dokumentation"
-ms.custom: 
+title: Entwickeln von Apps für die universelle Windows-Plattform (UWP) | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 10/24/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eb180dfa5550cf6237697c4e214a3742b195b065
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 Mit Universelle Windows-Plattform und unserem zentralen Windows-Kern können Sie die gleiche App auf jedem Windows 10-Gerät ausführen, egal ob es sich um Smartphones oder Desktop-PCs handelt. Erstellen Sie diese universellen Windows-Apps mit Visual Studio und den universellen Windows-App-Entwicklungstools.  

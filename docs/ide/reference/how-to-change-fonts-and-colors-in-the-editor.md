@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58053640dabb74a8044eeca70f03673656c0bc26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie folgendes bedenken:  

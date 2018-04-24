@@ -1,7 +1,7 @@
 ---
 title: Programmieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -12,13 +12,13 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdc2f2209ccd0aae555783b9fbc9630983731b73
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 748b1f726a74fd0af1545a5bdb9c620b1ffb2a4d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
 
@@ -31,18 +31,18 @@ Sie können eigene Extraktionsregeln erstellen. Leiten Sie hierzu Ihre Regeln vo
 
 1.  Öffnen Sie ein Testprojekt, das einen Webleistungstest enthält.
 
-2.  Optional: Erstellen Sie ein separates Klassenbibliotheksprojekt zum Speichern der Extraktionsregel.
+2.  (Optional) Erstellen Sie ein separates Klassenbibliotheksprojekt zum Speichern der Extraktionsregel.
 
     > [!IMPORTANT]
     > Die Klasse kann im selben Projekt erstellt werden, in dem sich die Tests befinden. Wenn die Regel erneut verwendet werden soll, wird jedoch empfohlen, ein separates Klassenbibliotheksprojekt zu erstellen, in dem die Regel gespeichert wird. Wenn Sie ein separates Projekt erstellen, müssen Sie die optionalen Schritte in dieser Prozedur ausführen.
 
-3.  Optional: Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework dll hinzu.
+3.  (Optional) Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework dll hinzu.
 
 4.  Erstellen Sie eine von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>-Klasse abgeleitete Klasse. Implementieren Sie den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*>-Member und den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>-Member.
 
-5.  Optional: Erstellen Sie das neue Klassenbibliotheksprojekt.
+5.  (Optional) Erstellen Sie das neue Klassenbibliotheksprojekt.
 
-6.  Optional: Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Extraktionsregel hinzu.
+6.  (Optional) Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Extraktionsregel hinzu.
 
 7.  Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
 

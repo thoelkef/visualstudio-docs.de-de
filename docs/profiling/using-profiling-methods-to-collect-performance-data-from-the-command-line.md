@@ -1,23 +1,20 @@
 ---
-title: "Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile | Microsoft-Dokumentation"
-ms.custom: 
+title: Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7acfa376ea805553b931925a2fac0a33b44bb83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2117fc729ef7e7190e5f1a46fe05d0d91daf63c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile
 Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools hängen von verschiedenen Faktoren ab, beispielsweise von der Art der Anwendung, für die ein Profil erstellt werden soll, von der Profilerstellungsmethode, die Sie verwenden möchten, sowie davon, ob die Zielanwendung in nativem Code oder in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Code geschrieben ist.  
@@ -58,7 +55,7 @@ Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprv
   
 -   [Statisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)  
   
--   [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)  
+-   [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)  
   
 -   [.NET-Dienste](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)  
   
@@ -73,7 +70,7 @@ Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprv
 |----------|-----------------------------|  
 |**Starten einer Anwendung**|-   [Eigenständige .NET Framework-Anwendungen](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Anfügen an einen laufenden Prozess**|-   [Eigenständige .NET Framework-Anwendungen](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [ASP.NET-Webanwendungen](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [.NET-Dienste](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentieren von Modulen**|-   [Eigenständige .NET Framework-Komponenten](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Statisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [.NET-Dienste](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Instrumentieren von Modulen**|-   [Eigenständige .NET Framework-Komponenten](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Statisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [.NET-Dienste](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ##  <a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Erfassen von Daten zu Ressourcenkonflikten und Threadaktivitäten mit der Nebenläufigkeitsmethode  
  Mit der Nebenläufigkeitsmethode der Profilerstellungstools können Sie Daten zu Ressourcenkonflikten sowie zu Thread- und Prozessaktivitäten aus Anwendungen mit mehreren Threads sammeln.  

@@ -1,24 +1,22 @@
 ---
 title: Funktionen des Code-Editors in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 02/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b3d1afad30967edb130756843371dc9ec7ed26
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: a7aacedac2045dcf069ea2d8a0f406d6322d7ca6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
@@ -36,7 +34,7 @@ Für die verschiedenen Visual Studio-Sprachen werden unterschiedliche Funktionss
 |-|-|
 |Farben für Syntax|Einige Syntaxelemente in den Code- und Markupdateien sind unterschiedlich gefärbt, damit sie unterschieden werden können. Beispielsweise sind Schlüsselwörter (wie `using` in C# und `Imports` in Visual Basic) in einer Farbe gehalten, jedoch Typen (wie `Console` und `Uri`) haben eine andere Farbe. Andere Syntaxelemente werden auch farbig hervorgehoben, wie zum Beispiel Zeichenfolgenliterale und Kommentare. In C++ werden Farben verwendet, um Typen, Enumerationen und Makros von anderen Token zu unterscheiden.<br /><br /> Sie können die Standardfarbe für jeden Typ sehen, und Sie können die Farbe für spezifische Syntaxelemente im [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)ändern, auf das Sie über das Menü **Extras** zugreifen.|
 |Markierungen für Fehler und Warnungen|Wenn Sie Code hinzufügen und Ihre Projektmappe erstellen, werden möglicherweise (a) verschiedenfarbige Unterstreichungen (sogenannte Wellenlinien) oder (b) Glühbirnen in Ihrem Code angezeigt. Rote Wellenlinien kennzeichnen Syntaxfehler, blaue kennzeichnen Compilerfehler, grüne kennzeichnen Warnungen und lila Wellenlinien kennzeichnen alle anderen Arten von Fehlern. [Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md) schlagen Fehlerbehebungen für Probleme vor und vereinfachen das Anwenden der jeweiligen Fehlerbehebung.<br /><br /> Sie können die Standardfarbe der jeweiligen Wellenlinien für Fehler und Warnungen im Dialogfeld **Tools** > **Optionen** > **Umgebung** > **Schriftarten und Farben** anzeigen. Suchen Sie nach **Syntaxfehler**, **Compilerfehler**, **Warnung**und **Anderer Fehler**.|
-|Zugehörige Klammer|Bei Platzierung der Einfügemarke auf eine öffnende geschweifte Klammer in einer Codedatei werden die öffnende und die schließende Klammer hervorgehoben. Durch diese Funktion erhalten Sie unmittelbar Feedback zu falsch platzierten oder fehlenden geschweiften Klammern. Sie können die Anzeige der zugehörigen Klammer mit der Einstellung **Trennzeichen automatisch hervorheben** aktivieren und deaktivieren (**Tools** > **Optionen** > **Text-Editor**). Sie können die Hervorhebungsfarbe in der Einstellung **Schriftarten und Farben** ändern (**Tools** > **Optionen** > **Umgebung**). Suchen Sie nach **Zugehörige Klammer (Hervorhebung)** oder **Zugehörige Klammer (Rechteck)**.|
+|Überprüfung des Klammergleichgewichts|Bei Platzierung der Einfügemarke auf eine öffnende geschweifte Klammer in einer Codedatei werden die öffnende und die schließende Klammer hervorgehoben. Durch diese Funktion erhalten Sie unmittelbar Feedback zu falsch platzierten oder fehlenden geschweiften Klammern. Sie können die Anzeige der zugehörigen Klammer mit der Einstellung **Trennzeichen automatisch hervorheben** aktivieren und deaktivieren (**Tools** > **Optionen** > **Text-Editor**). Sie können die Hervorhebungsfarbe in der Einstellung **Schriftarten und Farben** ändern (**Tools** > **Optionen** > **Umgebung**). Suchen Sie nach **Zugehörige Klammer (Hervorhebung)** oder **Zugehörige Klammer (Rechteck)**.|
 |Strukturschnellansicht|Gepunktete Linien verbinden passende Klammern in Codedateien, wodurch sich öffnende und schließende Klammerpaare leichter erkennen lassen. Das hilft Ihnen bei der schnelleren Suchen von Code in Ihrer Codebasis. Sie können diese Linien mit der Einstellung **Strukturlinien anzeigen** im Abschnitt **Anzeige** auf der Seite **Tools** > **Optionen** > **Text-Editor** > **Allgemein** aktivieren und deaktivieren.|
 |Zeilennummern|Zeilennummern können im linken Rand des Codefensters angezeigt werden. Standardmäßig werden sie nicht angezeigt. Sie können diese Option in den Einstellungen **Text-Editor –> Alle Sprachen** aktivieren (**Tools** > **Optionen** > **Text-Editor** > **Alle Sprachen**). Sie können Zeilennummern für einzelne Programmiersprachen anzeigen, indem Sie die Einstellungen für diese Sprachen ändern (**Tools** > **Optionen** > **Text-Editor** > **\<Sprache>**). Damit die Zeilennummern ausgedruckt werden, müssen Sie im Dialogfeld **Drucken** die Option **Zeilennummern einschließen** auswählen.|
 |Änderungsnachverfolgung|Durch die Farbe am linken Rand können Sie die Änderungen verfolgen, die Sie an einer Datei vorgenommen haben. Änderungen, die Sie seit dem Öffnen der Datei vorgenommen, jedoch nicht gespeichert haben, werden durch eine gelbe Leiste am linken Rand gekennzeichnet (auch als "Auswahlrand" bezeichnet). Nach dem Speichern der Änderungen (jedoch vor dem Schließen der Datei), wird die Statusleiste grün. Wenn Sie eine Änderung rückgängig machen, nachdem Sie die Datei gespeichert haben, wird die Leiste orange. Um diese Funktion zu aktivieren und zu deaktivieren, ändern Sie die Option **Änderungen nachverfolgen** in den **Text-Editor**-Einstellungen (**Tools** > **Optionen** > **Text-Editor**).|

@@ -2,23 +2,18 @@
 title: Analysieren der Speicherauslastung in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: 13
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profilerstellung zur Speicherauslastung in Visual Studio
 Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem im Debugger integrierten **Speicherauslastungs**-Diagnosetool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und nativen Momentaufnahme-Heaps erstellen, um ein besseres Verständnis darüber zu erlangen, welchen Einfluss die Speicherauslastung von Objekttypen hat. Sie können Momentaufnahmen von .NET-Apps, systemeigenen Apps und Apps in gemischtem Modus (.Net und systemeigen) erfassen.  
@@ -96,7 +91,7 @@ Die Zeilen der Speicherauslastungs-Übersichtstabelle führt die Momentaufnahmen
 
  Der Name der Spalten ist abhängig von dem Debugmodus, den Sie in den Projekteigenschaften gewählt haben: .NET, nativ oder gemischt (sowohl .NET als auch nativ).  
   
--   Die Spalten **Objekte (Diff.)**und **Zuweisungen (Diff.)** zeigen die Anzahl der Objekte im .NET-Speicher und im nativen Speicher zum Zeitpunkt der Erstellung der Momentaufnahme an.  
+-   Die Spalten **Objekte (Diff.)** und **Zuweisungen (Diff.)** zeigen die Anzahl der Objekte im .NET-Speicher und im nativen Speicher zum Zeitpunkt der Erstellung der Momentaufnahme an.  
   
 -   Die Spalte **Heapgröße (Diff)** zeigt die Anzahl der Bytes in den .NET- und nativen Heaps 
 
@@ -159,7 +154,7 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
   
      ![Wählen Sie eine Momentaufnahme aus der Liste „Vergleichen mit“](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- Der Änderungsbericht fügt dem Basisbericht Spalten (durch **(Diff)**gekennzeichnet) hinzu, die den Unterschied zwischen der Basismomentaufnahme und der Vergleichsmomentaufnahme anzeigen. So könnte ein Unterschiedsbericht der Ansicht mit nativen Typen aussehen:  
+ Der Änderungsbericht fügt dem Basisbericht Spalten (durch **(Diff)** gekennzeichnet) hinzu, die den Unterschied zwischen der Basismomentaufnahme und der Vergleichsmomentaufnahme anzeigen. So könnte ein Unterschiedsbericht der Ansicht mit nativen Typen aussehen:  
   
  ![Diff-Ansicht nativer Typen](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   

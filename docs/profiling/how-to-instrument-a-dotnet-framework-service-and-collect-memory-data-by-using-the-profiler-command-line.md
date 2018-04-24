@@ -1,23 +1,20 @@
 ---
-title: "Vorgehensweise: Instrumentieren eines .NET Framework-Diensts und Sammeln von Speicherdaten über die Profiler-Befehlszeile | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Instrumentieren eines .NET Framework-Diensts und Sammeln von Speicherdaten über die Profiler-Befehlszeile | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: bb9a80d81b05f759ef90f292bd4201103876aab3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 03c676100487acb7aff9cb28071192ff6b04ed29
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Gewusst wie: Instrumentieren eines .NET Framework-Diensts und Sammeln von Speicherdaten über die Profiler-Befehlszeile
 In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst instrumentieren und Daten zur Speicherauslastung sammeln können. Sie können nur Daten zur Speicherbelegung oder Daten zur Speicherbelegung und zur Lebensdauer von Objekten sammeln.  
@@ -80,7 +77,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des ASP.NET-Arbeitsprozesses ist. Diese Option ist erforderlich, wenn der Prozess als ein Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt.|  
     |[/crosssession](../profiling/crosssession.md)|Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. Diese Option ist erforderlich, wenn die ASP.NET-Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte „Prozesse“ in der Spalte „Sitzungs-ID“ des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden.|  
     |[/waitstart](../profiling/waitstart.md)[**:**`Interval`]|Gibt die Anzahl der Sekunden an, die auf die Initialisierung des Profilers gewartet werden soll, bevor ein Fehler zurückgegeben wird. Wenn `Interval` nicht angegeben wird, wartet der Profiler unendlich lange. Standardmäßig erfolgt die Rückgabe von **/start** sofort.|  
-    |[/globaloff](../profiling/globalon-and-globaloff.md)|Fügen Sie der Befehlszeile **/start** die Option **globaloff** hinzu, um den Profiler mit angehaltener Datensammlung zu starten. Mit**/globalon** setzen Sie die Profilerstellung fort.|  
+    |[/globaloff](../profiling/globalon-and-globaloff.md)|Fügen Sie der Befehlszeile **/start** die Option **globaloff** hinzu, um den Profiler mit angehaltener Datensammlung zu starten. Mit **/globalon** setzen Sie die Profilerstellung fort.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Sammelt Informationen aus dem in Config angegebenen Prozessorleistungsindikator. Informationen zu Leistungsindikatoren werden den Daten hinzugefügt, die bei jedem Profilerstellungsereignis gesammelt werden.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.|  

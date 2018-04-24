@@ -2,11 +2,8 @@
 title: SignFile-Aufgabe| Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, SignFile task
 - SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-caps.latest.revision: 19
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 020272e3bc90a70c780a614e834fc8b25be62ec4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 55a569a973f874636f1b620f6983c077f177f1ac
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
 Signiert die angegebene Datei mit dem angegebenen Zertifikat.  
@@ -41,11 +37,11 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 > [!WARNING]
 >  Ab Visual Studio 2013 Update 3 hat diese Aufgabe eine neue Signatur, mit der Sie die Zielframeworkversion für die Datei angeben können. Sie sollen die neue Signatur verwenden, wo immer möglich, weil der MSBuild-Prozess SHA-256-Hashes nur dann verwendet, wenn das Zielframework .NET 4.5 oder höher ist. Wenn das Zielframework .NET 4.0 oder älter ist, wird der SHA-256-Hash nicht verwendet.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
-|`CertificateThumbprint`|Erforderlicher `String`-Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|  
-|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|  
-|`TimestampUrl`|Optionaler `String`-Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|  
+|`CertificateThumbprint`|Erforderlicher `String` -Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|  
+|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|  
+|`TimestampUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|  
 |`TargetFrameworkVersion`|Die Version des .NET Framework, die für das Ziel verwendet wird.|  
   
 ## <a name="remarks"></a>Hinweise  

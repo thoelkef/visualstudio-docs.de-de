@@ -2,11 +2,8 @@
 title: ToolTaskExtension-Basisklasse | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-caps.latest.revision: 4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f17c22a4f93be23ba5f29c8a225eef5bdd555c30
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension-Basisklasse
 Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die aus der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt, welche wiederum aus der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Diese Vererbungskette fügt verschiedene Parameter zu den Aufgaben hinzu, die aus ihnen abgeleitet werden. Diese Parameter werden in diesem Dokument aufgeführt.  
@@ -33,7 +29,7 @@ Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klas
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der Basisklassen beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Optionaler <xref:Microsoft.Build.Framework.IBuildEngine> -Parameter.<br /><br /> Gibt die für die Aufgaben verfügbare Buildmodulschnittstelle an. Das Buildmodul legt diesen Parameter automatisch fest, damit Aufgaben zurückgerufen werden können.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Optionaler <xref:Microsoft.Build.Framework.IBuildEngine2> -Parameter.<br /><br /> Gibt die für die Aufgaben verfügbare Buildmodulschnittstelle an. Das Buildmodul legt diesen Parameter automatisch fest, damit Aufgaben zurückgerufen werden können.<br /><br /> Hierbei handelt es sich um eine benutzerfreundliche Eigenschaft. Daher müssen die von dieser Klasse erbenden Aufgabenautoren den Wert nicht von `IBuildEngine` zu `IBuildEngine2` umwandeln.|  

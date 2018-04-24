@@ -1,23 +1,20 @@
 ---
-title: "Vorgehensweise: Hinzufügen des Profilers zu einer ASP.NET-Webanwendung zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Hinzufügen des Profilers zu einer ASP.NET-Webanwendung zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 115b8faf48a45181394c4fc954e5d83348bc7224
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: e45eb3e1ac874343de5a3076a62b89e541f20d75
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools den Profiler an eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung anfügen und Daten zur Anzahl und Größe der .NET Framework-Speicherbelegungen sammeln können. Sie können außerdem Daten zur Lebensdauer von .NET Framework-Arbeitsspeicherobjekten erfassen.  

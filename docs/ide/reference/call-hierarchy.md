@@ -1,26 +1,23 @@
 ---
 title: Anzeigen der Aufrufhierarchie in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15323f5e70d56cc6bdd30afee3671443d039f95f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d18af9f159c663cb061a32a61343eaa0a14d7503
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-call-hierarchy"></a>Anzeigen der Aufrufhierarchie
 
@@ -30,7 +27,7 @@ In Visual Studio können Sie eine Aufrufhierarchie zur Entwurfszeit anzeigen. Si
 
 ## <a name="use-the-call-hierarchy-window"></a>Verwenden des Fensters „Aufrufhierarchie“
 
-Klicken Sie mit der rechten Maustaste auf den Namen einer Methode, einer Eigenschaft oder eines Konstruktoraufrufs, damit das Fenster **Aufrufhierarchie** angezeigt wird, und klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.
+Klicken Sie mit der rechten Maustaste auf Methode, Eigenschaft oder Konstruktoraufruf, damit das Fenster **Aufrufhierarchie** angezeigt wird, und klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.
 
 Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Aufrufe an** *Membername* und **Aufrufe aus** *Membername* angezeigt. In der folgenden Abbildung werden diese Knoten im Fenster **Aufrufhierarchie** angezeigt.
 

@@ -1,23 +1,21 @@
 ---
-title: "Schritt 6: Hinzufügen eines Timers | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Schritt 6: Hinzufügen eines Timers | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 530b57b0f8a39990d37dc8cd25ac4c7bacba5a6e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ce3f89c653672a7e4003d058f8dd07dff7248b85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen eines Timers
 Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.  

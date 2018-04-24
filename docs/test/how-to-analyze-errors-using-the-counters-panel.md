@@ -1,21 +1,21 @@
 ---
 title: Analysieren von Auslastungstestfehlern mit dem Indikatorenfenster in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Load Test Analyzer, counters panel
 ms.assetid: 981b4f1e-505a-4078-a06d-58ae17d996b4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 055925fd626e03df6e80fe02647fc2c1ca67d6ad
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 2705120f5cf0e13e94369140c256bd3c7ae1466b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-analyze-errors-using-the-counters-panel"></a>Vorgehensweise: Analysieren von Fehlern mit dem Indikatorenfenster
+# <a name="how-to-analyze-errors-using-the-counters-panel"></a>How to: Analyze Errors Using the Counters Panel
 
 Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Auslastungstest-Analyzer angezeigt, während ein Auslastungstest ausgeführt wird, oder wenn Sie ein Auslastungstestergebnis analysieren. Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md), [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) und [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
@@ -49,7 +49,7 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
          Weitere Informationen finden Sie unter [How to: Create Custom Graphs (Vorgehensweise: Erstellen benutzerdefinierter Diagramme)](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
-5.  Optional: Wenn Sie einen Fehler im Ergebnis eines abgeschlossenen Auslastungstests analysieren, können Sie beim Anzeigen der Diagramme die Zoomfunktionen verwenden. Weitere Informationen finden Sie unter [How to: Zoom in on a Region of the Graph (Vorgehensweise: Vergrößern eines Diagrammbereichs)](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+5.  (Optional) Wenn Sie einen Fehler im Ergebnis eines abgeschlossenen Auslastungstests analysieren, können Sie beim Anzeigen der Diagramme die Zoomfunktionen verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
     > [!TIP]
     > Wenn während des Auslastungstestlaufs Fehler erkannt wurden, wird ein Fehlerlink mit der Anzahl gefundener Fehler auf der Statusleiste des Auslastungstest-Analyzers angezeigt. Sie können auf den Link klicken, um alle Fehler in der Tabelle **Fehler** der Tabellenansicht anzuzeigen.

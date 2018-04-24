@@ -1,28 +1,24 @@
 ---
 title: 'Vorgehensweise: Inkrementelles Erstellen | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 3fac1ce26c95d0a0c51c77e6ca1525d034a4e01f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-build-incrementally"></a>Gewusst wie: Inkrementelles Erstellen
 Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor erstellte Komponenten, die noch immer auf dem neuesten Stand sind, nicht neu erstellt werden. Wenn alle Ziele jedes mal neu erstellt werden, braucht jeder Build sehr lange, bis er abgeschlossen wird. Um inkrementelle Builds zu aktivieren (es werden nur Builds mit den Zielen neu erstellt, die zuvor noch nicht erstellt wurden oder mit Zielen, die nicht mehr aktuell sind) kann [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) die Zeitstempel der Eingabedateien mit jenen der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Es muss jedoch eine 1:1-Zuordnung zwischen Eingaben und Ausgaben bestehen. Sie können Transformationen verwenden, damit Ziele diese direkte Zuordnung identifizieren können. Weitere Informationen zu Transformationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md).  

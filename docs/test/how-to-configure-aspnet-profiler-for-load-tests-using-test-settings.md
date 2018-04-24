@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren des ASP.NET-Profilers für Auslastungstests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b647b032ced1d0d8faf6d5fd5fd293c42cfbfad9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 68bc1c8b21a2f14ba319792afae0d77f233c5d94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio
 
@@ -62,6 +62,6 @@ Mit dem in der Testeinstellung konfigurierten Adapter für diagnostische Daten d
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
 - [Gewusst wie: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)

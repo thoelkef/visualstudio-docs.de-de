@@ -2,26 +2,22 @@
 title: MSBuild | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 59
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild"></a>MSBuild
 Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Plattform, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie msbuild.exe im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.  
@@ -193,7 +189,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird.|  
 |[Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)|Die Bausteine von MSBuild werden eingeführt, und es wird gezeigt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen.|  

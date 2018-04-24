@@ -1,37 +1,35 @@
 ---
-title: "Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“ | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“ | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 10/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 dev_langs:
 - VB
 - CSharp
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bf7a4a4f78ca0de8594a95681c6a5118f1083cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
-In diesem Thema wird die Verwendung der [Aus Verwendung generieren](../ide/visual-csharp-intellisense.md#generate-from-usage)-Funktion veranschaulicht, die die Test-First-Entwicklung unterstützt.  
+In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage)-Funktion veranschaulicht, die die Test-First-Entwicklung unterstützt.  
   
- Die*Test-First-Entwicklung* ist eine Methode des Softwareentwurfs, bei der zuerst Unittests basierend auf Produktspezifikationen und dann der Quellcode geschrieben wird, der erforderlich ist, damit die Tests erfolgreich ausgeführt werden. Visual Studio unterstützt die Test-First-Entwicklung, indem neue Typen und Members im Quellcode generiert werden, wenn Sie in Ihren Testfällen auf diese verweisen, noch bevor sie definiert werden.  
+ Die*testgetriebene Entwicklung* ist eine Methode des Softwareentwurfs, bei der zuerst Unittests basierend auf Produktspezifikationen und dann der Quellcode geschrieben wird, der erforderlich ist, damit die Tests erfolgreich ausgeführt werden. Visual Studio unterstützt die testgetriebene Entwicklung, indem neue Typen und Members im Quellcode generiert werden, wenn Sie in Ihren Testfällen auf diese verweisen, noch bevor sie definiert werden.  
   
  Visual Studio generiert die neuen Typen und Member mit nur minimaler Unterbrechung des Workflows. Sie können Stubs für Typen, Methoden, Eigenschaften, Felder oder Konstruktoren erstellen, ohne die aktuelle Position im Code zu verlassen. Wenn Sie ein Dialogfeld zum Angeben von Optionen für die Typgenerierung öffnen, kehrt der Fokus sofort zur aktuell geöffneten Datei zurück, wenn das Dialogfeld geschlossen wird.  
   
- Die Funktion „Aus Verwendung generieren“ kann mit Testframeworks verwendet werden, die in Visual Studio integriert werden können. In diesem Thema wird das Microsoft-Unittestframework veranschaulicht.  
+ Die Funktion „Generate From Usage“ kann mit Testframeworks verwendet werden, die in Visual Studio integriert werden können. In diesem Thema wird das Microsoft-Unittestframework veranschaulicht.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -66,13 +64,13 @@ In diesem Thema wird die Verwendung der [Aus Verwendung generieren](../ide/visua
  > [!NOTE]
  >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **STRG+ALT+LEERTASTE**, um bei geöffnetem IntelliSense-Fenster zwischen Beendigungsmodus und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Using IntelliSense](../ide/using-intellisense.md) . Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.  
   
-3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnellaktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.  
+3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.  
   
-     ![Quick Actions in Visual Basic] (Schnellaktionen in Visual Basic)(../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Quick Actions in Visual Basic] (Schnelle Aktionen in Visual Basic)(../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 
-     ![Quick Actions in C#] (Schnellaktionen in C#) (../ide/media/genclass_underline.png "GenClass_UnderlineVB")  
+     ![Quick Actions in C#] (Schnelle Aktionen in C#) (../ide/media/genclass_underline.png "GenClass_UnderlineVB")  
   
-4.  Klicken Sie auf das Glühbirnensymbol für Schnellaktionen. Es wird eine Fehlermeldung angezeigt, die meldet, dass der `Automobile`-Typ nicht definiert ist. Außerdem werden einige Lösungen für das Problem angezeigt.  
+4.  Klicken Sie auf die „Schnelle Aktionen“-Glühbirne. Es wird eine Fehlermeldung angezeigt, die meldet, dass der `Automobile`-Typ nicht definiert ist. Außerdem werden einige Lösungen für das Problem angezeigt.  
   
 5. Sie können auch auf **Neuen Typ generieren...** klicken, um das Dialogfeld **Typ generieren** zu öffnen. In diesem Dialogfeld werden verschiedene Optionen dargestellt. Dies umfasst u. a. die Typgenerierung in einem anderen Projekt.  
 
@@ -92,7 +90,7 @@ Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse übe
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
   
-2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf das Glühbirnensymbol für Schnellaktionen und dann auf **Eigenschaft "Automobile.Model" generieren**.  
+2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die „Schnelle Aktionen“-Glühbirne und dann auf **Generate property 'Automobile.Model'** (Eigenschaft „Automobile.Model“ generieren).  
 
 3. Generieren Sie auf dieselbe Weise einen Eigenschaftenstub für die `TopSpeed`-Eigenschaft.  
   
@@ -106,12 +104,12 @@ Jetzt möchten wir Ihnen zeigen, wie Sie eine Testmethode erstellen, die einen K
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
   
-2.  Klicken Sie auf das Glühbirnensymbol für Schnellaktionen unterhalb der roten Wellenlinie, und klicken Sie anschließend auf **Konstruktor in "Automobile" generieren**.  
+2.  Klicken Sie auf die „Schnelle Aktionen“-Glühbirne unterhalb der roten Wellenlinie, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).  
 
      In der `Automobile` -Klassendatei hat der neue Konstruktor die Namen der lokalen Variablen geprüft, die im Konstruktoraufruf verwendet werden, Eigenschaften gefunden, die die gleichen Namen in der `Automobile` -Klasse aufweisen, und Code im Konstruktortext zum Speichern der Argumentwerte in den Eigenschaften `Model` und `TopSpeed` bereitgestellt.
   
 
-3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf das Glühbirnensymbol für Schnellaktionen und dann auf **Konstruktor in "Automobile" generieren**.  
+3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf die „Schnelle Aktionen“-Glühbirne, und dann auf **Generate constructor in 'Automobile'** (Konstruktorstub in „Automobile“ generieren).  
   
 ### <a name="to-generate-a-stub-for-a-method"></a>So generieren Sie einen Stub für eine Methode  
 Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen Ausführzustand gesetzt werden kann, wenn die zugehörigen Eigenschaften `Model` und `TopSpeed` auf andere als die Standardwerte festgelegt werden.  
@@ -121,9 +119,9 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen Ausf
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
   
-2.  Klicken Sie auf das Glühbirnensymbol für Schnellaktionen für den Methodenaufruf `myAuto.Start` und dann auf **Methode "Automobile.Start" generieren**.  
+2.  Klicken Sie auf die „Schnelle Aktionen“-Glühbirne für den Methodenaufruf `myAuto.Start` und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).  
   
-3.  Klicken Sie auf das Glühbirnensymbol für Schnellaktionen für die `IsRunning`-Eigenschaft und dann auf **Eigenschaft "Automobile.IsRunning" generieren**.  
+3.  Klicken Sie auf die „Schnelle Aktionen“-Glühbirne für die `IsRunning`-Eigenschaft und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).  
 
      Die `Automobile`-Klasse enthält nun eine Methode mit dem Namen `Start()` und eine Eigenschaft mit dem Namen `IsRunning`.  
   
@@ -164,4 +162,4 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen Ausf
  [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Verwenden von IntelliSense](../ide/using-intellisense.md)   
  [Komponententest für Code](../test/unit-test-your-code.md)  
- [Schnellaktionen](../ide/quick-actions.md)  
+ [Schnelle Aktionen](../ide/quick-actions.md)  

@@ -2,11 +2,8 @@
 title: GenerateTemporaryTargetAssembly-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,24 +15,23 @@ helpviewer_keywords:
 - GenerateTemporaryTargetAssembly task [WPF MSBuild], parameters
 - creating an assembly [WPF MSBuild], XAML page refers to a locally declared type
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
-caps.latest.revision: 7
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd570e81198f63a22f196e04a5d0a321fc3c6d21
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: efaeed873630113382630421258338e6624e14ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly-Aufgabe
 Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task generiert eine Assembly, wenn mindestens eine <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>-Seite in einem Projekt auf einen Typ verweist, der lokal in diesem Projekt deklariert ist. Die generierte Assembly wird entfernt, nachdem der Build abgeschlossen ist, oder wenn beim Buildprozess ein Fehler auftritt.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AssemblyName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird, und ist auch der Name der temporär generierten Zielassembly. Wenn ein Projekt z.B. eine ausführbare [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-Datei mit dem Namen **WinExeAssembly.exe** generiert, hat der **AssemblyName**-Parameter den Wert **WinExeAssembly**.|  
 |`CompileTargetName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Namen des [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]-Ziels an, das zum Generieren von Assemblys aus Quellcodedateien verwendet wird. Der typische Wert für **CompileTargetName** ist **CoreCompile**.|  
