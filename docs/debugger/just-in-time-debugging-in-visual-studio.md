@@ -33,7 +33,7 @@ Sie können Maßnahmen, um zu verhindern, dass die Just-in-Time-Debugger-Dialogf
 
 1. (Web-apps) Wenn Sie eine Web-app ausführen möchten, können Sie das Skriptdebugging deaktivieren.
 
-    Deaktivieren Sie für Internet Explorer oder Edge das Skriptdebuggen in das Dialogfeld "Internetoptionen" aus. Sie können diese Einstellungen nicht über Zugriff der **Systemsteuerung** > **Netzwerk und Internet** > **Internetoptionen** (die genauen Schritte hängen Ihre Version von Windows und Ihren Browser).
+    Deaktivieren Sie für Internet Explorer oder Microsoft Edge das Skriptdebuggen in das Dialogfeld "Internetoptionen" aus. Sie können diese Einstellungen nicht über Zugriff der **Systemsteuerung** > **Netzwerk und Internet** > **Internetoptionen** (die genauen Schritte hängen Ihre Version von Windows und Ihren Browser).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
