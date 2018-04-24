@@ -1,10 +1,8 @@
 ---
-title: 'CA2205: Verwenden Sie verwaltete Entsprechungen der Win32-API | Microsoft Docs'
-ms.custom: ''
+title: 'CA2205: Verwaltete Entsprechungen der Win32 API verwenden'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseManagedEquivalentsOfWin32Api
 - CA2205
@@ -17,45 +15,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 54c21ea55b1679e05c46c9cb0105c0418133a3cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e38a985db524b3d95c4f33a4eb4f31c909fd08c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden
-|||  
-|-|-|  
-|TypeName|UseManagedEquivalentsOfWin32Api|  
-|CheckId|CA2205|  
-|Kategorie|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
-  
-## <a name="cause"></a>Ursache  
- Ein Plattformaufruf Methode definiert ist, und eine Methode mit entsprechender Funktionalität vorhanden ist, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klassenbibliothek.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Ein Plattformaufruf-Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufrufen und mithilfe der <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut, oder die `Declare` -Schlüsselwort in Visual Basic. Falsch definierten Plattformaufrufmethode zu Runtime-Ausnahmen führen kann, die aufgrund von Verbindungsproblemen, wie z. B. einen falsch geschriebenen Funktion, die fehlerhafte Zuordnung von Parameter- und Rückgabetypen von Datentypen mit Werten und falschen Feld Spezifikationen, z. B. die Aufrufkonvention und das Zeichen festgelegt. Falls verfügbar, ist es im Allgemeinen einfacher und weniger fehleranfällig, rufen Sie die entsprechende verwaltete Methode als zum Definieren und die nicht verwaltete Methode direkt aufzurufen. Aufrufen einer Plattformaufrufs invoke-Methode kann ebenfalls dazu führen, um zusätzliche Sicherheitsprobleme, die behoben werden müssen.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Aufruf an die nicht verwaltete Funktion durch einen Aufruf in den entsprechenden verwalteten ein.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel, wenn die vorgeschlagene Ersetzungsmethode nicht die erforderliche Funktionalität bereitstellt.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine Plattform rufen Sie die Definition der Methode, die die Regel verletzt. Darüber hinaus die Aufrufe an die Plattform invoke-Methode und die entsprechende verwaltete Methode werden angezeigt.  
-  
+|||
+|-|-|
+|TypeName|UseManagedEquivalentsOfWin32Api|
+|CheckId|CA2205|
+|Kategorie|Microsoft.Usage|
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+
+## <a name="cause"></a>Ursache
+ Ein Plattformaufruf Methode definiert ist, und eine Methode mit entsprechender Funktionalität vorhanden ist, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klassenbibliothek.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Ein Plattformaufruf-Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufrufen und mithilfe der <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut, oder die `Declare` -Schlüsselwort in Visual Basic. Falsch definierten Plattformaufrufmethode zu Runtime-Ausnahmen führen kann, die aufgrund von Verbindungsproblemen, wie z. B. einen falsch geschriebenen Funktion, die fehlerhafte Zuordnung von Parameter- und Rückgabetypen von Datentypen mit Werten und falschen Feld Spezifikationen, z. B. die Aufrufkonvention und das Zeichen festgelegt. Falls verfügbar, ist es im Allgemeinen einfacher und weniger fehleranfällig, rufen Sie die entsprechende verwaltete Methode als zum Definieren und die nicht verwaltete Methode direkt aufzurufen. Aufrufen einer Plattformaufrufs invoke-Methode kann ebenfalls dazu führen, um zusätzliche Sicherheitsprobleme, die behoben werden müssen.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Aufruf an die nicht verwaltete Funktion durch einen Aufruf in den entsprechenden verwalteten ein.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Unterdrücken Sie eine Warnung dieser Regel, wenn die vorgeschlagene Ersetzungsmethode nicht die erforderliche Funktionalität bereitstellt.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel zeigt eine Plattform rufen Sie die Definition der Methode, die die Regel verletzt. Darüber hinaus die Aufrufe an die Plattform invoke-Methode und die entsprechende verwaltete Methode werden angezeigt.
+
  [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
- [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]  
-  
-## <a name="related-rules"></a>Verwandte Regeln  
- [: Ca1404 GetLastError unmittelbar nach P/Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)  
-  
- [CA1060: Move P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
-  
- [CA1400: P/Invoke müssen Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)  
-  
- [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)  
-  
+ [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
+
+## <a name="related-rules"></a>Verwandte Regeln
+ [: Ca1404 GetLastError unmittelbar nach P/Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+
+ [CA1060: Move P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+
+ [CA1400: P/Invoke müssen Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+
+ [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+
  [: Ca2101 Marshalling für P/Invoke-Zeichenfolgenargumente festlegen](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

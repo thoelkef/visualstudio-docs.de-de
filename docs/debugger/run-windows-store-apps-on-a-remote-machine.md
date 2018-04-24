@@ -2,8 +2,7 @@
 title: Uwp-apps auf einem Remotecomputer ausführen | Microsoft Docs
 ms.custom: ''
 ms.date: 01/05/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Führen Sie die uwp-apps auf einem Remotecomputer in Visual Studio
   
@@ -58,7 +57,7 @@ Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitst
   
  ![Wählen Sie Remote Debugger-Verbindung (Dialogfeld)](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
- Im Dialogfeld werden nur die Geräte aufgelistet, die sich im lokalen Teilnetz von Visual Studio-Computers befinden und die den Remotedebugger ausführen.  
+ Im Dialogfeld werden nur die Geräte aufgelistet, die sich im lokalen Teilnetz des Visual Studio-Computers befinden und die den Remotedebugger ausführen.  
   
 > [!TIP]
 >  Sollten Sie Probleme beim Herstellen einer Verbindung mit einem Remotegerät haben, versuchen Sie, die IP-Adresse des Geräts einzugeben. Um die IP-Adresse eines Geräts zu bestimmen, öffnen Sie ein Befehlsfenster, und geben Sie dann **ipconfig**ein. Die IP-Adresse wird als **IPv4 Address**aufgeführt.  

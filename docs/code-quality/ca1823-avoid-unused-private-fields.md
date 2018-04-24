@@ -1,10 +1,8 @@
 ---
-title: 'CA1823: Nicht verwendete private Felder vermeiden | Microsoft Docs'
-ms.custom: ''
+title: 'CA1823: Nicht verwendete private Felder vermeiden'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
 - CA1823
@@ -17,37 +15,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8af282866cd871d2717031091215cb431e1ec0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b8d3e1738b217d836bd0e4ca60178d2d65ac686
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Nicht verwendete private Felder vermeiden
-|||  
-|-|-|  
-|TypeName|AvoidUnusedPrivateFields|  
-|CheckId|CA1823|  
-|Kategorie|Microsoft.Performance|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
-  
-## <a name="cause"></a>Ursache  
- Mit dieser Regel wird gemeldet, wenn ein privates Feld in Ihrem Code vorhanden ist, jedoch nicht von jeder Codepfad verwendet werden.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Es wurden private Felder erkannt, auf die in der Assembly anscheinend kein Zugriff erfolgt.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Feld aus, oder fügen Sie Code, der verwendet wird.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel.  
-  
-## <a name="related-rules"></a>Verwandte Regeln  
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
- [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)  
-  
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)  
-  
+|||
+|-|-|
+|TypeName|AvoidUnusedPrivateFields|
+|CheckId|CA1823|
+|Kategorie|Microsoft.Performance|
+|Unterbrechende Änderung|Nicht unterbrechend|
+
+## <a name="cause"></a>Ursache
+ Mit dieser Regel wird gemeldet, wenn ein privates Feld in Ihrem Code vorhanden ist, jedoch nicht von jeder Codepfad verwendet werden.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Es wurden private Felder erkannt, auf die in der Assembly anscheinend kein Zugriff erfolgt.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Feld aus, oder fügen Sie Code, der verwendet wird.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel.
+
+## <a name="related-rules"></a>Verwandte Regeln
+ [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
+ [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
+
+ [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+
  [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)

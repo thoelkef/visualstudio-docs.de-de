@@ -2,8 +2,7 @@
 title: Registerkarte "Speicherplatz", Prozess-Eigenschaftendialogfeld | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -13,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d5329a694ba032a4dda280cac3a3200081aa77
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee4b5a416c7d3eb466498e7cf4ff727134c0f20f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Registerkarte "Speicherplatz", Dialogfeld "Prozesseigenschaften"
 Verwenden der **Speicherplatz** Tab, um den Adressbereich eines Prozesses zu untersuchen. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), Verschieben des Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die folgenden Einstellungen sind verfügbar, auf die **Speicherplatz** Registerkarte:  
   
-|Eingabe|Beschreibung|  
+|Eintrag|Beschreibung|  
 |-----------|-----------------|  
 |**Für als markierte Speicherplatz anzeigen**|Verwenden Sie im Listenfeld, um die Kategorie des Speicherplatzes (Image, zugeordnet, reserviert oder nicht zugewiesen) auszuwählen.|  
 |**Ausführbare Bytes**|Für die ausgewählte Kategorie der alle Adressräume, den diesen Prozess verwendet wird. Ausführbare Speicher ist Speicher, die von Programmen ausgeführt werden können, aber nicht gelesen oder geschrieben werden kann.|  

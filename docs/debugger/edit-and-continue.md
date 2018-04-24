@@ -2,8 +2,7 @@
 title: Code bearbeiten und fortfahren, Debuggen in Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 05/31/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
@@ -23,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ceb68c74940e079006815101ebd0c0dab39e41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ca5b2f8d144451dcea2dafb30edd072a45c9b96
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten Sie Code und fortfahren Sie Debuggen in Visual Studio (c#, VB, C++)
-Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, indem Sie einen Ausführungsbefehl wie **Fortfahren** oder **Schritt**, bearbeiten und Fortfahren automatisch wendet die codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.  
+Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, indem Sie einen Ausführungsbefehl wie **Fortfahren** oder **Schritt**, bearbeiten und Fortfahren automatisch wendet die codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.  
   
  Dieser Abschnitt schließt folgende Themen ein:   
   

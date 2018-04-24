@@ -2,8 +2,7 @@
 title: Erstellen benutzerdefinierte Ansichten von systemeigenen Objekten im Debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Erstellen Sie benutzerdefinierte Ansichten von systemeigenen Objekten in Visual Studio-debugger
 Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual Studio systemeigene Typen in den Variablenfenstern des Debuggers zeigt (z. B. die **Überwachen** Fenster **"lokal"** Fenster, und klicken Sie in  **DataTips**.
@@ -125,7 +124,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 </Type>  
 ```  
   
- Die Elemente `DisplayString` und `ArrayItems` werden in der standardmäßigen und in der einfachen Ansicht verwendet, während die Elemente `[size]` und `[capacity]` aus dieser einfachen Ansicht ausgeschlossen sind. Sie können den Formatbezeichner **view** verwenden, um eine alternative Ansicht anzugeben. Im Fenster **Überwachen** können Sie die einfache Ansicht als **vec,view(simple)**angeben:  
+ Die Elemente `DisplayString` und `ArrayItems` werden in der standardmäßigen und in der einfachen Ansicht verwendet, während die Elemente `[size]` und `[capacity]` aus dieser einfachen Ansicht ausgeschlossen sind. Sie können den Formatbezeichner **view** verwenden, um eine alternative Ansicht anzugeben. Im Fenster **Überwachen** können Sie die einfache Ansicht als **vec,view(simple)** angeben:  
   
  ![Fenster "überwachen" mit der einfachen Ansicht](../debugger/media/watch-simpleview.png "überwachen SimpleView")  
   
@@ -245,7 +244,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 ```  
   
 ###  <a name="BKMK_Condition_attribute"></a> Condition-Attribut  
- Das optionale `Condition` -Attribut ist für viele Visualisierungselemente verfügbar und gibt an, wenn eine Visualisierungsregel verwendet werden soll. Wenn der Ausdruck im „condition“-Attribut zu `false`aufgelöst wird, wird die vom Element angegebene Visualisierungsregel nicht angewendet. Wenn der Ausdruck als „true“ ausgewertet wird oder wenn es kein `Condition` -Attribut gibt, wird die Visualisierungsregel auf den Typ angewendet. Sie können dieses Attribut für die `if-else` -Logik in den Visualisierungseinträgen verwenden. Die folgende Visualisierung verfügt beispielsweise über zwei `DisplayString` Elemente für einen intelligenten Zeiger vom Typ:  
+ Das optionale `Condition`-Attribut ist für viele Visualisierungselemente verfügbar und gibt an, wenn eine Visualisierungsregel verwendet werden soll. Wenn der Ausdruck im „condition“-Attribut zu `false`aufgelöst wird, wird die vom Element angegebene Visualisierungsregel nicht angewendet. Wenn der Ausdruck als „true“ ausgewertet wird oder wenn es kein `Condition` -Attribut gibt, wird die Visualisierungsregel auf den Typ angewendet. Sie können dieses Attribut für die `if-else` -Logik in den Visualisierungseinträgen verwenden. Die folgende Visualisierung verfügt beispielsweise über zwei `DisplayString` Elemente für einen intelligenten Zeiger vom Typ:  
   
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -282,7 +281,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
  Sie können die Attribute `IncludeView` und `ExcludeView` für Typen und einzelne Member verwenden.  
   
 ###  <a name="BKMK_DisplayString"></a> DisplayString  
- Ein `DisplayString` -Element gibt die Zeichenfolge an, die als Wert der Variable angezeigt werden soll. Beliebige Zeichenfolgen können mit Ausdrücken gemischt werden. Sämtliche Inhalte innerhalb von geschweiften Klammern werden als ein Ausdruck interpretiert. Z. B. eine `DisplayString` Eintrag wie folgt:  
+ Ein `DisplayString`-Element gibt die Zeichenfolge an, die als Wert der Variable angezeigt werden soll. Beliebige Zeichenfolgen können mit Ausdrücken gemischt werden. Sämtliche Inhalte innerhalb von geschweiften Klammern werden als ein Ausdruck interpretiert. Z. B. eine `DisplayString` Eintrag wie folgt:  
   
 ```xml
 <Type Name="CPoint">  
@@ -295,13 +294,13 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
   
  ![Verwenden eines DisplayString-Elements](../debugger/media/dbg_natvis_cpoint_displaystring.png "DBG_NATVIS_CPoint_DisplayString")  
   
- Im `DisplayString` -Ausdruck befinden sich `x` und `y`, die Member von `CPoint`sind, in geschweiften Klammern, sodass ihre Werte ausgewertet werden. Der Ausdruck zeigt auch, wie eine geschweifte Klammer mit doppelten geschweiften Klammern ( `{{` oder `}}` ) mit Escapezeichen versehen werden kann.  
+ Im `DisplayString`-Ausdruck befinden sich `x` und `y`, die Member von `CPoint` sind, in geschweiften Klammern, sodass ihre Werte ausgewertet werden. Der Ausdruck zeigt auch, wie eine geschweifte Klammer mit doppelten geschweiften Klammern ( `{{` oder `}}` ) mit Escapezeichen versehen werden kann.  
   
 > [!NOTE]
 >  Das `DisplayString` -Element ist das einzige Element, das beliebige Zeichenfolgen und die Syntax mit geschweiften Klammern akzeptiert. Alle anderen Visualisierungselemente akzeptieren nur Ausdrücke, die vom Debugger ausgewertet werden.  
   
 ###  <a name="BKMK_StringView"></a> StringView-Element  
- Das `StringView` -Element definiert den Ausdruck, dessen Wert an die integrierte Text-Schnellansicht gesendet wird. Angenommen, es gibt beispielsweise die folgende Visualisierung für den `ATL::CStringT` -Typ:  
+ Das `StringView`-Element definiert den Ausdruck, dessen Wert an die integrierte Text-Schnellansicht gesendet wird. Angenommen, es gibt beispielsweise die folgende Visualisierung für den `ATL::CStringT`-Typ:  
   
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">  
@@ -309,7 +308,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 </Type>
 ```  
   
- Die Visualisierung zeigt ein `CStringT` -Objekt in einem Variablenfenster wie folgt an:   
+ Die Visualisierung zeigt ein `CStringT`-Objekt in einem Variablenfenster wie folgt an:   
   
  ![CStringT-DisplayString-Elements](../debugger/media/dbg_natvis_displaystring_cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
   
@@ -332,14 +331,14 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 ###  <a name="BKMK_Expand"></a> Expand  
  Der `Expand` -Knoten wird verwendet, um die untergeordneten Elemente des Schnellansichtstyps anzupassen, wenn der Benutzer diesen in den Variablenfenstern erweitert. Er akzeptiert eine Liste untergeordneter Knoten, die die untergeordneten Elemente definieren.  
   
- Der `Expand` -Knoten ist optional.  
+ Der `Expand`-Knoten ist optional.  
   
 -   Wenn ein `Expand` -Knoten nicht angegeben ist in einem visualisierungseintrag Standard-Erweiterungsregeln von Visual Studio verwendet werden.  
   
 -   Wenn ein `Expand` angegeben Knoten ohne untergeordnete Knoten, der Typ nicht in den Debuggerfenstern erweitert werden.  
   
 ####  <a name="BKMK_Item_expansion"></a> Item-Erweiterung  
- Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect` -Klasse mit `top`, `left`, `right`und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
+ Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das `Item`-Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect`-Klasse mit `top`, `left`, `right` und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
   
 ```xml
 <Type Name="CRect">  
@@ -356,7 +355,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
   
  ![CRect mit Item-Element-Erweiterung](../debugger/media/dbg_natvis_expand_item_crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
   
- Die Ausdrücke, die in den `Width` - und `Height` -Elementen angegeben werden, werden in der Wertspalte ausgewertet und angezeigt. Der `[Raw View]` -Knoten wird automatisch vom Debugger erstellt, sobald eine benutzerdefinierte Erweiterung verwendet wird. Er wird im oben dargestellten Screenshot erweitert, um anzuzeigen, wie die Rohdatenansicht des Objekts sich von der Visualisierung unterscheidet. Mit der Visual Studio-Standarderweiterung werden eine Teilstruktur für die Basisklasse erstellt und alle Datenmember der Basisklasse als untergeordnete Elemente aufgeführt.  
+ Die Ausdrücke, die in den `Width`- und `Height`-Elementen angegeben werden, werden in der Wertspalte ausgewertet und angezeigt. Der `[Raw View]` -Knoten wird automatisch vom Debugger erstellt, sobald eine benutzerdefinierte Erweiterung verwendet wird. Er wird im oben dargestellten Screenshot erweitert, um anzuzeigen, wie die Rohdatenansicht des Objekts sich von der Visualisierung unterscheidet. Mit der Visual Studio-Standarderweiterung werden eine Teilstruktur für die Basisklasse erstellt und alle Datenmember der Basisklasse als untergeordnete Elemente aufgeführt.  
   
 > [!NOTE]
 >  Wenn der Ausdruck des Item-Elements auf einen komplexen Typ weist, ist der `Item` -Knoten selbst erweiterbar.  
@@ -378,13 +377,13 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 </Type>  
 ```  
   
- Im `std::vector` -Knoten werden die einzelnen Elemente angezeigt, wenn sie im Variablenfenster erweitert werden:  
+ Im `std::vector`-Knoten werden die einzelnen Elemente angezeigt, wenn sie im Variablenfenster erweitert werden:  
   
  ![Std:: Vector mit ArrayItems-Erweiterung](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
   
- Der `ArrayItems` -Knoten muss mindestens über Folgendes verfügen:  
+ Der `ArrayItems`-Knoten muss mindestens über Folgendes verfügen:  
   
-1.  Einen `Size` -Ausdruck (der als ganze Zahl ausgewertet werden muss), damit der Debugger die Länge des Arrays kennt  
+1.  Einen `Size`-Ausdruck (der als ganze Zahl ausgewertet werden muss), damit der Debugger die Länge des Arrays kennt  
   
 2.  Einen `ValuePointer` -Ausdruck, der auf das erste Element verweisen sollte (das ein Zeiger eines Elementtyps sein muss, der nicht `void*`ist).  
   
@@ -409,14 +408,14 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 </Type>  
 ```  
   
- `Direction` gibt an, ob das Array in zeilengerichteter oder spaltengerichteter Reihenfolge angegeben ist. `Rank` gibt den Rang des Arrays an. Die `Size` -Element akzeptiert den impliziten `$i` -Parameter, der durch den Index für die Dimension, die Länge des Arrays in dieser Dimension festzustellen dimensionsindex ersetzt wird. Im vorherigen Beispiel sollte über dem `_M_extent.M_base[0]` -Ausdruck die Länge der nullten Dimension `_M_extent._M_base[1]` , der ersten Dimension usw. angegeben sein.  
+ `Direction` gibt an, ob das Array in zeilengerichteter oder spaltengerichteter Reihenfolge angegeben ist. `Rank` gibt den Rang des Arrays an. Die `Size` -Element akzeptiert den impliziten `$i` -Parameter, der durch den Index für die Dimension, die Länge des Arrays in dieser Dimension festzustellen dimensionsindex ersetzt wird. Im vorherigen Beispiel sollte über dem `_M_extent.M_base[0]`-Ausdruck die Länge der nullten Dimension `_M_extent._M_base[1]`, der ersten Dimension usw. angegeben sein.  
   
  Hier wird gezeigt, wie es ein zweidimensionales `Concurrency::array` Objekt im Debugger dargestellt:  
   
  ![Zweidimensionales Array mit ArrayItems-Erweiterung](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
   
 ####  <a name="BKMK_IndexListItems_expansion"></a> IndexListItems-Erweiterung  
- Sie können die `ArrayItems` -Erweiterung nur dann verwenden, wenn die Arrayelemente im Arbeitsspeicher zusammenhängend angeordnet sind. Der Debugger erreicht das nächste Element, indem einfach der Zeiger auf das aktuelle Element erhöht wird. Für die Fälle, bei denen der Index für Wertknoten bearbeitet werden muss, können Sie die `IndexListItems` -Knoten verwenden. Im folgenden ist eine Visualisierung mithilfe `IndexListItems` Knoten:  
+ Sie können die `ArrayItems` -Erweiterung nur dann verwenden, wenn die Arrayelemente im Arbeitsspeicher zusammenhängend angeordnet sind. Der Debugger erreicht das nächste Element, indem einfach der Zeiger auf das aktuelle Element erhöht wird. Für die Fälle, bei denen der Index für Wertknoten bearbeitet werden muss, können Sie die `IndexListItems`-Knoten verwenden. Im folgenden ist eine Visualisierung mithilfe `IndexListItems` Knoten:  
   
 ```xml
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -436,7 +435,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
  Der einzige Unterschied zwischen `ArrayItems` und `IndexListItems` besteht darin, dass `ValueNode` den vollständigen Ausdruck für das i<sup>th</sup> -Element mit dem impliziten `$i` -Parameter erwartet.  
   
 ####  <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems-Erweiterung  
- Wenn der Schnellansichtstyp eine verknüpfte Liste darstellt, kann der Debugger die untergeordneten Elemente mithilfe eines `LinkedListItems` -Knotens anzeigen. Hier ist die Visualisierung für den `CAtlList` Geben Sie die Verwendung dieses Features:  
+ Wenn der Schnellansichtstyp eine verknüpfte Liste darstellt, kann der Debugger die untergeordneten Elemente mithilfe eines `LinkedListItems`-Knotens anzeigen. Hier ist die Visualisierung für den `CAtlList` Geben Sie die Verwendung dieses Features:  
   
 ```xml
 <Type Name="ATL::CAtlList&lt;*,*&gt;">  
@@ -453,9 +452,9 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 </Type>  
 ```  
   
- Das `Size` -Element bezieht sich auf die Länge der Liste. `HeadPointer` zeigt auf das erste Element, `NextPointer` bezieht sich auf das nächste Element, und `ValueNode` verweist auf den Wert des Elements.  
+ Das `Size`-Element bezieht sich auf die Länge der Liste. `HeadPointer` zeigt auf das erste Element, `NextPointer` bezieht sich auf das nächste Element, und `ValueNode` verweist auf den Wert des Elements.  
   
--   Die `NextPointer` - und `ValueNode` -Ausdrücke werden im Kontext des verknüpften Listenknotenelements und nicht im Kontext des übergeordneten Listentyps ausgewertet. Im vorherigen Beispiel `CAtlList` verfügt über eine `CNode` Klasse (in gefunden `atlcoll.h`), die einen Knoten der verknüpften Liste darstellt. `m_pNext` und `m_element` sind Felder dieser `CNode` -Klasse und nicht der `CAtlList` -Klasse.  
+-   Die `NextPointer`- und `ValueNode`-Ausdrücke werden im Kontext des verknüpften Listenknotenelements und nicht im Kontext des übergeordneten Listentyps ausgewertet. Im vorherigen Beispiel `CAtlList` verfügt über eine `CNode` Klasse (in gefunden `atlcoll.h`), die einen Knoten der verknüpften Liste darstellt. `m_pNext` und `m_element` sind Felder dieser `CNode`-Klasse und nicht der `CAtlList`-Klasse.  
   
 -   Sie können `ValueNode` leer lassen oder mithilfe von `this` auf den verknüpften Listenknoten verweisen.  
   
@@ -514,7 +513,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
   
 ####  <a name="BKMK_TreeItems_expansion"></a> TreeItems-Erweiterung  
- Wenn der Schnellansichtstyp eine Struktur darstellt, kann der Debugger die Struktur durchlaufen und seine untergeordneten Elemente mithilfe eines `TreeItems` -Knotens anzeigen. Hier ist die Visualisierung für den `std::map` Geben Sie die Verwendung dieses Features:  
+ Wenn der Schnellansichtstyp eine Struktur darstellt, kann der Debugger die Struktur durchlaufen und seine untergeordneten Elemente mithilfe eines `TreeItems`-Knotens anzeigen. Hier ist die Visualisierung für den `std::map` Geben Sie die Verwendung dieses Features:  
   
 ```xml
 <Type Name="std::map&lt;*&gt;">  
@@ -533,14 +532,14 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 </Type>  
 ```  
   
- Die Syntax ähnelt der `LinkedListItems` Knoten. `LeftPointer`, `RightPointer`und `ValueNode` werden im Kontext der Strukturknotenklasse ausgewertet, und `ValueNode` können leer gelassen werden oder `this` aufweisen, um auf den Strukturknoten selbst zu verweisen.  
+ Die Syntax ähnelt der `LinkedListItems` Knoten. `LeftPointer`, `RightPointer` und `ValueNode` werden im Kontext der Strukturknotenklasse ausgewertet, und `ValueNode` können leer gelassen werden oder `this` aufweisen, um auf den Strukturknoten selbst zu verweisen.  
   
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem-Erweiterung  
- Das `ExpandedItem` -Element kann verwendet werden, um eine aggregierte untergeordnete Ansicht zu generieren, indem die Eigenschaften von Basisklassen oder Datenmembern so angezeigt werden, als ob sie untergeordnete Elemente des Schnellansichtstyps wären. Der angegebene Ausdruck wird ausgewertet, und die untergeordneten Knoten des Ergebnisses werden an die untergeordnete Liste des Schnellansichtstyps angefügt. Nehmen wir beispielsweise an, wir haben einen intelligenten Zeigertyp `auto_ptr<vector<int>>`, der in der Regel als angezeigt:  
+ Das `ExpandedItem`-Element kann verwendet werden, um eine aggregierte untergeordnete Ansicht zu generieren, indem die Eigenschaften von Basisklassen oder Datenmembern so angezeigt werden, als ob sie untergeordnete Elemente des Schnellansichtstyps wären. Der angegebene Ausdruck wird ausgewertet, und die untergeordneten Knoten des Ergebnisses werden an die untergeordnete Liste des Schnellansichtstyps angefügt. Nehmen wir beispielsweise an, wir haben einen intelligenten Zeigertyp `auto_ptr<vector<int>>`, der in der Regel als angezeigt:  
   
  ![automatische&#95;Ptr&#60;Vektor&#60;Int&#62; &#62; standarderweiterung](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
- Um die Werte des Vektors anzuzeigen, müssen Sie im Variablenfenster einen Drilldown über zwei Ebenen durch den _Myptr-Member ausführen. Durch Hinzufügen eines `ExpandedItem` -Elements können Sie die `_Myptr` -Variable aus der Hierarchie ausschließen und die Vektorelemente direkt anzeigen:  
+ Um die Werte des Vektors anzuzeigen, müssen Sie im Variablenfenster einen Drilldown über zwei Ebenen durch den _Myptr-Member ausführen. Durch Hinzufügen eines `ExpandedItem`-Elements können Sie die `_Myptr`-Variable aus der Hierarchie ausschließen und die Vektorelemente direkt anzeigen:  
   
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -553,7 +552,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
   
  ![automatische&#95;Ptr&#60;Vektor&#60;Int&#62; &#62; ExpandedItem-Erweiterung](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
- Im folgende Beispiel wird gezeigt, wie Eigenschaften der Basisklasse in einer abgeleiteten Klasse zusammengefasst werden. Angenommen, die `CPanel` -Klasse wird von `CFrameworkElement`abgeleitet. Anstatt die Eigenschaften zu wiederholen, die von der `CFrameworkElement` -Basisklasse stammen, ermöglicht der `ExpandedItem` -Knoten das Anfügen dieser Eigenschaften an die untergeordnete Liste der `CPanel` -Klasse. Die **Nd** Formatbezeichner, der Visualisierung Abgleich für die abgeleitete Klasse deaktiviert werden, ist hier erforderlich. Andernfalls, den Ausdruck `*(CFrameworkElement*)this` bewirkt, dass die `CPanel` Visualisierung erneut angewendet werden, da der standardmäßige visualisierungstypenabstimmung halten es für geeignetste. Mithilfe der **Nd** -Formatbezeichner weist den Debugger an die basisklassenvisualisierung oder die basisklassenstandarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung nicht.  
+ Im folgende Beispiel wird gezeigt, wie Eigenschaften der Basisklasse in einer abgeleiteten Klasse zusammengefasst werden. Angenommen, die `CPanel`-Klasse wird von `CFrameworkElement` abgeleitet. Anstatt die Eigenschaften zu wiederholen, die von der `CFrameworkElement`-Basisklasse stammen, ermöglicht der `ExpandedItem`-Knoten das Anfügen dieser Eigenschaften an die untergeordnete Liste der `CPanel`-Klasse. Die **Nd** Formatbezeichner, der Visualisierung Abgleich für die abgeleitete Klasse deaktiviert werden, ist hier erforderlich. Andernfalls, den Ausdruck `*(CFrameworkElement*)this` bewirkt, dass die `CPanel` Visualisierung erneut angewendet werden, da der standardmäßige visualisierungstypenabstimmung halten es für geeignetste. Mithilfe der **Nd** -Formatbezeichner weist den Debugger an die basisklassenvisualisierung oder die basisklassenstandarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung nicht.  
   
 ```xml
 <Type Name="CPanel">  
@@ -566,7 +565,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 ```  
   
 ####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetische Item-Erweiterung  
- Wen das `ExpandedItem` -Element eine flachere Datenansicht durch die Beseitigung von Hierarchien bereitstellt, bewirkt der `Synthetic` -Knoten das Gegenteil. Er ermöglicht es Ihnen, ein künstliches untergeordnetes Element zu erstellen (d. h. ein untergeordnetes Element, das kein Ergebnis eines Ausdrucks ist). Das untergeordnete Element kann eigene untergeordnete Elemente enthalten. Im folgenden Beispiel verwendet die Visualisierung für den `Concurrency::array` -Typ einen `Synthetic` -Knoten, um dem Benutzer eine Diagnosemeldung anzuzeigen:  
+ Wen das `ExpandedItem` -Element eine flachere Datenansicht durch die Beseitigung von Hierarchien bereitstellt, bewirkt der `Synthetic` -Knoten das Gegenteil. Er ermöglicht es Ihnen, ein künstliches untergeordnetes Element zu erstellen (d. h. ein untergeordnetes Element, das kein Ergebnis eines Ausdrucks ist). Das untergeordnete Element kann eigene untergeordnete Elemente enthalten. Im folgenden Beispiel verwendet die Visualisierung für den `Concurrency::array`-Typ einen `Synthetic`-Knoten, um dem Benutzer eine Diagnosemeldung anzuzeigen:  
   
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -589,7 +588,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
  ![Concurrency:: Array mit synthetischen Element-Erweiterung](../debugger/media/dbg_natvis_expand_synthetic.png "DBG_NATVIS_Expand_Synthetic")  
   
 ###  <a name="BKMK_HResult"></a> HResult  
- Das `HResult` -Element ermöglicht Ihnen die Anpassung der Informationen, die für ein HRESULT-Element in den Debuggerfenstern angezeigt werden. Das `HRValue` -Element muss den 32-Bit-Wert des anzupassenden HRESULT-Elements enthalten. Das `HRDescription` -Element enthält Informationen, die im Debugger angezeigt werden.  
+ Das `HResult` -Element ermöglicht Ihnen die Anpassung der Informationen, die für ein HRESULT-Element in den Debuggerfenstern angezeigt werden. Das `HRValue`-Element muss den 32-Bit-Wert des anzupassenden HRESULT-Elements enthalten. Das `HRDescription` -Element enthält Informationen, die im Debugger angezeigt werden.  
   
 ```  
   
@@ -600,7 +599,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 ```  
   
 ###  <a name="BKMK_UIVisualizer"></a> UIVisualizer  
- Ein `UIVisualizer` -Element registriert ein grafisches Schnellansichts-Plug-In mit dem Debugger. Ein Schnellansichts-Plug-In erstellt ein Dialogfeld oder eine andere Benutzeroberfläche, um eine Variable oder ein Objekt auf eine Art anzuzeigen, die für den Datentyp geeignet ist. Das Schnellansichts-Plug-In muss als [VSPackage](../extensibility/internals/vspackages.md) erstellt werden und einen Dienst verfügbar machen, der vom Debugger verwendet werden kann. Die Natvis-Datei enthält Registrierungsinformationen für das Plug-In, z. B. den Namen, die GUID des verfügbar gemachten Diensts und auch die Typen, die sie visualisieren kann.  
+ Ein `UIVisualizer`-Element registriert ein grafisches Schnellansichts-Plug-In mit dem Debugger. Ein Schnellansichts-Plug-In erstellt ein Dialogfeld oder eine andere Benutzeroberfläche, um eine Variable oder ein Objekt auf eine Art anzuzeigen, die für den Datentyp geeignet ist. Das Schnellansichts-Plug-In muss als [VSPackage](../extensibility/internals/vspackages.md) erstellt werden und einen Dienst verfügbar machen, der vom Debugger verwendet werden kann. Die Natvis-Datei enthält Registrierungsinformationen für das Plug-In, z. B. den Namen, die GUID des verfügbar gemachten Diensts und auch die Typen, die sie visualisieren kann.  
   
  Im Folgenden ist ein Beispiel eines UIVisualizer-Elements angegeben:  
   
@@ -618,7 +617,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
   
  Ein `UIVisualizer` -Element wird durch das Attriputpaar `ServiceId` - `Id` identifiziert. `ServiceId` ist die GUID des Diensts, der vom Schnellansichtspaket verfügbar gemacht wird. `Id` ist ein eindeutiger Bezeichner, der zur Unterscheidung von Schnellansichten verwendet werden kann, wenn ein Dienst mehrere Schnellansichten bereitstellt. Im oben genannten Beispiel stellt der gleiche Schnellansichtsdienst zwei Schnellansichten bereit.  
   
- Das `MenuName` -Attribut wird den Benutzern als Namen der Schnellansicht angezeigt, wenn sie das Dropdownmenü neben dem Lupensymbol in den Debuggervariablenfenstern öffnen. Beispiel:  
+ Das `MenuName`-Attribut wird den Benutzern als Namen der Schnellansicht angezeigt, wenn sie das Dropdownmenü neben dem Lupensymbol in den Debuggervariablenfenstern öffnen. Beispiel:  
   
  ![Kontextmenü des UIVisualizer-Menüs](../debugger/media/dbg_natvis_vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
   

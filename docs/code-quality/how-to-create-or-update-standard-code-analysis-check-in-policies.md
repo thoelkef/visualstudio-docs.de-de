@@ -1,6 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien Analyse in der Eincheckrichtlinien | Microsoft Docs'
-ms.custom: ''
+title: 'Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
@@ -50,10 +49,10 @@ Nachdem Sie eine Eincheckrichtlinie für verwalteten Code angeben, können Teamm
 
 Aktivieren Sie oder deaktivieren Sie die folgenden Optionen:
 
-    |Option|Beschreibung|  
-    |------------|-----------------|  
-    |**Erzwingen Sie Check-in, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe sind.**|Codeanalyse kann nur auf Dateien in Projektmappen- und Projektdateien Konfigurationsdateien angegebene ausgeführt. Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Projektmappe ist analysiert wird.|  
-    |**C/C++-Codeanalyse erzwingen (/ analyze)**|Erfordert, dass alle C- oder C++-Projekte erstellt werden, mit der / analyze (Compileroption), um die Codeanalyse ausgeführt werden, bevor sie eingecheckt werden können.|  
+    |Option|Beschreibung|
+    |------------|-----------------|
+    |**Erzwingen Sie Check-in, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe sind.**|Codeanalyse kann nur auf Dateien in Projektmappen- und Projektdateien Konfigurationsdateien angegebene ausgeführt. Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Projektmappe ist analysiert wird.|
+    |**C/C++-Codeanalyse erzwingen (/ analyze)**|Erfordert, dass alle C- oder C++-Projekte erstellt werden, mit der / analyze (Compileroption), um die Codeanalyse ausgeführt werden, bevor sie eingecheckt werden können.|
     |**Codeanalyse für verwalteten Code erzwingen**|Erfordert, dass alle verwalteten Projekte Codeanalyse ausführen und erstellen, bevor sie eingecheckt werden können.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Um einen verwalteten Regelsatz anzugeben.

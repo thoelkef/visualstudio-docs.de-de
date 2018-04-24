@@ -2,8 +2,7 @@
 title: Debugger-Fenster in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779dcc39a18495d1022aaea5e14c8b82432efd53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Erfahren Sie mehr über die Debugger-Fenster in Visual Studio
 
@@ -30,7 +29,7 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Überwachen|STRG+ALT+W, (1, 2, 3, 4)|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|
 |Schnellüberwachung|UMSCHALT+F9|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|
 |Auto|STRG+ALT+V, A|[Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)|
-|Locals|STRG+ALT+V, L|[Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)|
+|Lokale|STRG+ALT+V, L|[Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)|
 |Aufruflisten|STRG+ALT+C|[Gewusst wie: Verwenden des Fensters „Aufrufliste“](../debugger/how-to-use-the-call-stack-window.md)|
 |Direkt|STRG+ALT+I|[Direktfenster](../ide/reference/immediate-window.md)|
 |Parallele Stapel|STRG+UMSCHALT+D, S|[Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)|
@@ -46,7 +45,7 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Echtzeit-Eigenschaften-Explorer|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Prozesse|STRG+ALT+Z|[Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)|
 |Arbeitsspeicher|STRG+ALT+M, (1, 2, 3, 4)|[Fenster "Arbeitsspeicher"](../debugger/memory-windows.md)|
-|Disassemblierung|STRG+ALT+D|[Gewusst wie: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)|
+|Disassembly|STRG+ALT+D|[Gewusst wie: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)|
 |Register|STRG+ALT+G|[Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Siehe auch

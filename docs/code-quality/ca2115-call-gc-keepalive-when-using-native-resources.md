@@ -1,10 +1,8 @@
 ---
-title: 'CA2115: Rufen Sie GC. Der KeepAlive beim Verwenden systemeigener Ressourcen | Microsoft Docs'
-ms.custom: ''
+title: 'CA2115: GC.KeepAlive beim Verwenden systemeigener Ressourcen aufrufen'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 - CA2115
@@ -17,51 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ea82194eced9caed52e75216091060ff9350379
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3eea5a288dc907881b7eb444b26d7018e8008ad2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden systemeigener Ressourcen aufrufen
-|||  
-|-|-|  
-|TypeName|CallGCKeepAliveWhenUsingNativeResources|  
-|CheckId|CA2115|  
-|Kategorie|Microsoft.Security|  
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
-  
-## <a name="cause"></a>Ursache  
- Eine Methode deklariert wird, in einem Typ mit einem Finalizer verweist auf eine <xref:System.IntPtr?displayProperty=fullName> oder <xref:System.UIntPtr?displayProperty=fullName> Feld jedoch nicht aufgerufen, <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Garbagecollection schließt ein Objekt ab, wenn es keine weiteren Verweise darauf in verwaltetem Code sind. Nicht verwaltete Verweise auf Objekte sind keine Garbagecollection verhindern. Diese Regel erkennt Fehler, die auftreten können, wenn eine nicht verwaltete Ressource freigegeben wird, während sie in nicht verwaltetem Code noch verwendet wird.  
-  
- Diese Regel setzt voraus, dass <xref:System.IntPtr> und <xref:System.UIntPtr> Felder Speichern von Zeigern auf nicht verwalteten Ressourcen. Da der Zweck eines Finalizers nicht verwaltete Ressourcen freizugeben ist, wird die Regel davon ausgegangen, dass der Finalizer, die nicht verwaltete Ressource verweist, die Zeiger Felder frei wird zu. Mit dieser Regel wird davon ausgegangen, dass die Methode die Zeigerfeld verweist um nicht verwaltete Ressource an nicht verwalteten Code übergeben.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Aufruf von <xref:System.GC.KeepAlive%2A> übergeben Sie an die Methode die aktuelle Instanz (`this` in c# und C++) als Argument. Positionieren Sie den Aufruf nach der letzten Zeile des Codes, in dem das Objekt von der Garbagecollection geschützt werden muss. Unmittelbar nach dem Aufruf von <xref:System.GC.KeepAlive%2A>, das Objekt wird erneut als bereit für die Garbagecollection betrachtet, vorausgesetzt, dass keine verwalteten Verweise darauf vorhanden sind.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Diese Regel stellt einige Annahmen, die zu falsch positiven Ergebnisse führen können. Sie können eine Warnung dieser Regel gefahrlos unterdrücken, wenn:  
-  
--   Der Finalizer ist nicht frei, den Inhalt der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld verwiesen wird, von der Methode.  
-  
--   Die Methode übergibt keine der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld zu nicht verwaltetem Code.  
-  
- Überprüfen Sie sorgfältig andere Nachrichten, bevor diese ausgeschlossen werden. Diese Regel erkennt Fehler, die schwer zu reproduzieren und zu debuggen.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel `BadMethod` enthält keinen Aufruf von `GC.KeepAlive` und verletzt daher die Regel. `GoodMethod` enthält den korrigierten Code.  
-  
+|||
+|-|-|
+|TypeName|CallGCKeepAliveWhenUsingNativeResources|
+|CheckId|CA2115|
+|Kategorie|Microsoft.Security|
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+
+## <a name="cause"></a>Ursache
+ Eine Methode deklariert wird, in einem Typ mit einem Finalizer verweist auf eine <xref:System.IntPtr?displayProperty=fullName> oder <xref:System.UIntPtr?displayProperty=fullName> Feld jedoch nicht aufgerufen, <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Garbagecollection schließt ein Objekt ab, wenn es keine weiteren Verweise darauf in verwaltetem Code sind. Nicht verwaltete Verweise auf Objekte sind keine Garbagecollection verhindern. Diese Regel erkennt Fehler, die auftreten können, wenn eine nicht verwaltete Ressource freigegeben wird, während sie in nicht verwaltetem Code noch verwendet wird.
+
+ Diese Regel setzt voraus, dass <xref:System.IntPtr> und <xref:System.UIntPtr> Felder Speichern von Zeigern auf nicht verwalteten Ressourcen. Da der Zweck eines Finalizers nicht verwaltete Ressourcen freizugeben ist, wird die Regel davon ausgegangen, dass der Finalizer, die nicht verwaltete Ressource verweist, die Zeiger Felder frei wird zu. Mit dieser Regel wird davon ausgegangen, dass die Methode die Zeigerfeld verweist um nicht verwaltete Ressource an nicht verwalteten Code übergeben.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Aufruf von <xref:System.GC.KeepAlive%2A> übergeben Sie an die Methode die aktuelle Instanz (`this` in c# und C++) als Argument. Positionieren Sie den Aufruf nach der letzten Zeile des Codes, in dem das Objekt von der Garbagecollection geschützt werden muss. Unmittelbar nach dem Aufruf von <xref:System.GC.KeepAlive%2A>, das Objekt wird erneut als bereit für die Garbagecollection betrachtet, vorausgesetzt, dass keine verwalteten Verweise darauf vorhanden sind.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Diese Regel stellt einige Annahmen, die zu falsch positiven Ergebnisse führen können. Sie können eine Warnung dieser Regel gefahrlos unterdrücken, wenn:
+
+-   Der Finalizer ist nicht frei, den Inhalt der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld verwiesen wird, von der Methode.
+
+-   Die Methode übergibt keine der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld zu nicht verwaltetem Code.
+
+ Überprüfen Sie sorgfältig andere Nachrichten, bevor diese ausgeschlossen werden. Diese Regel erkennt Fehler, die schwer zu reproduzieren und zu debuggen.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel `BadMethod` enthält keinen Aufruf von `GC.KeepAlive` und verletzt daher die Regel. `GoodMethod` enthält den korrigierten Code.
+
 > [!NOTE]
->  In diesem Beispiel ist Pseudocode, obwohl der Code kompiliert und ausgeführt wird, die die Warnung wird nicht ausgelöst, da eine nicht verwaltete Ressource nicht erstellt oder freigegeben wird.  
-  
- [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]  
-  
-## <a name="see-also"></a>Siehe auch  
- <xref:System.GC.KeepAlive%2A?displayProperty=fullName>   
- <xref:System.IntPtr?displayProperty=fullName>   
- <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- <xref:System.UIntPtr?displayProperty=fullName>   
- [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)
+>  In diesem Beispiel ist Pseudocode, obwohl der Code kompiliert und ausgeführt wird, die die Warnung wird nicht ausgelöst, da eine nicht verwaltete Ressource nicht erstellt oder freigegeben wird.
+
+ [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]
+
+## <a name="see-also"></a>Siehe auch
+ <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName> <xref:System.Object.Finalize%2A?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName> [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

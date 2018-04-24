@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_hassetjump | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead924405782a6b33e4b930c71571fd00a08c78c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 8e426cad156c79ac532154a201785fed8ed47884
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl (gepaart mit dem [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl diese bilden die C-Format-Methode der Ausnahmebehandlung).  

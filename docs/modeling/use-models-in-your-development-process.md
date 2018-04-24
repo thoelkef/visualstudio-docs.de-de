@@ -1,6 +1,5 @@
 ---
-title: Verwenden von Modellen im Entwicklungsprozess | Microsoft Docs
-ms.custom: ''
+title: Verwenden von Modellen im Entwicklungsprozess
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee68a7db3691c7245dbe17fd4c23b948734f215a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b814f35e8c93ff8204fe39943dbaafbce03376a0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -139,11 +138,11 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Modellen in Agile Development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
-[Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)
-[Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)
-[modellieren Ihrer app Architektur](../modeling/model-your-app-s-architecture.md)
-[Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)
-[Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md)
+- [Verwenden von Modellen in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
+- [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
+- [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)
+- [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)
+- [Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

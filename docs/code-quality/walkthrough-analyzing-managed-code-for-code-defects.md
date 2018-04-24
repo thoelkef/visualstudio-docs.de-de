@@ -1,6 +1,5 @@
 ---
 title: Exemplarische Vorgehensweise Analysieren von verwaltetem Code auf Codefehler | Microsoft Docs
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwalteter Code für Code Fehlern
 
@@ -61,21 +60,21 @@ Diese exemplarische Vorgehensweise führt Sie durch die Verwendung von Codeanaly
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Um ein verwaltetes Projekt Codefehler zu analysieren.
 
 1. Wählen Sie das Projekt CodeAnalysisManagedDemo **Projektmappen-Explorer**.
-  
+
 1. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
-  
+
      Die Eigenschaftenseite CodeAnalysisManagedDemo wird angezeigt.
-  
+
 1. Wählen Sie die **Codeanalyse** Registerkarte.
-  
+
 1. Stellen Sie sicher, dass **Codeanalyse für Build aktivieren** aktiviert ist.
-  
+
 1. Aus der **diesen Regelsatz ausführen** Dropdown-Liste **Microsoft alle Regeln**.
-  
+
 1. Auf der **Datei** Menü klicken Sie auf **ausgewählte Elemente speichern**, und klicken Sie dann die Eigenschaftenseiten zu schließen.
-  
+
 1. Auf der **erstellen** Menü klicken Sie auf **erstellen CodeAnalysisManagedDemo**.
-  
+
     Die CodeAnalysisManagedDemo Projekt Buildwarnungen werden angezeigt, der **Fehlerliste** und **Ausgabe** Windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Beheben Sie die Codeanalysefehler

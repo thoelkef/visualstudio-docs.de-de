@@ -2,8 +2,7 @@
 title: Formatbezeichner im Debugger (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1b6151350faa55b3e2918a45908111ab96edf6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C++ in Visual Studio-debugger
 Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird.  
@@ -58,7 +57,7 @@ int main() {
 }  
 ```  
   
- Hinzufügen der `my_var1` -Variablen an die **Überwachen** Fenster (während des Debuggens, **Debuggen > Windows > Überwachen > Überwachen 1**), und legen Sie die Anzeige auf hexadezimal (in der **Überwachen**mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige**). Im Fenster "Überwachen" wird nun angezeigt, dass der Wert 0x0065 enthalten ist. Um diesen Wert als Zeichen und nicht als ganze Zahl anzuzeigen, geben Sie in der Spalte "Name" hinter dem Variablennamen den Zeichenformatbezeichner **, c**ein. In der Spalte **Wert** wird nun **101 'e'**angezeigt.  
+ Hinzufügen der `my_var1` -Variablen an die **Überwachen** Fenster (während des Debuggens, **Debuggen > Windows > Überwachen > Überwachen 1**), und legen Sie die Anzeige auf hexadezimal (in der **Überwachen**mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige**). Im Fenster "Überwachen" wird nun angezeigt, dass der Wert 0x0065 enthalten ist. Um diesen Wert als Zeichen und nicht als ganze Zahl anzuzeigen, geben Sie in der Spalte "Name" hinter dem Variablennamen den Zeichenformatbezeichner **, c**ein. In der Spalte **Wert** wird nun **101 'e'** angezeigt.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -121,7 +120,7 @@ int main() {
 |su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|L"hello world"|  
 |sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|hello world|  
 |s8|const char*|\<Speicherort >|"hello world"|  
-|hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
+|Std.|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|  
 |!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<benutzerdefinierte Darstellung >|4|  
@@ -133,7 +132,7 @@ int main() {
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 ASCII-Zeichen|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
 |**m**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
-|**mb**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**mb**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
 |**mw**|8 Wörter|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 Doppelwörter|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 Vierfachwörter|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  

@@ -2,8 +2,7 @@
 title: Erstellen benutzerdefinierte Ansichten von Daten im Debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae1f8eb68a0280a643e60d132544de8132c7c75
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ccf8b24618aeb2cb4b8774786bf96b2184f5da9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Erstellen Sie benutzerdefinierte Ansichten von Daten in Visual Studio-debugger
-Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger bietet eine Vielzahl von Tools zum Überprüfen und Ändern des Zustands des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger bietet eine Vielzahl von Tools zum Überprüfen und Ändern des Zustands des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Erstellen Sie benutzerdefinierte Ansichten von Daten in Variablenfenstern und DataTips
  Anzahl der [Debuggerfenster](../debugger/debugger-windows.md), wie z. B. die **"Auto"** und **Überwachen** Windows, können Sie Variablen überprüfen, während des Debuggens. Sie können anpassen, dass die Anzeige von systemeigenen Typen und verwaltete Objekte in den Variablenfenstern des Debuggers und [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Dies kann hilfreich sein, die Typen angezeigt, die Sie in Ihren eigenen Anwendungen erstellen. Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten](../debugger/create-custom-views-of-native-objects.md) und [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).

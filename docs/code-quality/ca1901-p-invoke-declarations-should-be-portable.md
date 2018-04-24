@@ -1,10 +1,8 @@
 ---
-title: 'CA1901: Deklarationen von P / Invoke-müssen portabel sein | Microsoft Docs'
-ms.custom: ''
+title: 'CA1901: Deklarationen von P / Invoke müssen portabel sein.'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -17,65 +15,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c58860c09ab1ef0bb1f6cac15c380fe22dfc93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45adbedf9318c70b1e73088765cf5487d997d1e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarationen von P/Invoke müssen portabel sein
-|||  
-|-|-|  
-|TypeName|PInvokeDeclarationsShouldBePortable|  
-|CheckId|CA1901|  
-|Kategorie|Microsoft.Portability|  
-|Unterbrechende Änderung|Unterbrechend – Wenn P/Invoke außerhalb der Assembly sichtbar ist. Nicht unterbrechend – Wenn P/Invoke nicht außerhalb der Assembly sichtbar ist.|  
-  
-## <a name="cause"></a>Ursache  
- Diese Regel wertet die Größe der einzelnen Parameter und den Rückgabewert einer P/Invoke und stellt sicher, dass ihre Größe beim Marshallen an nicht verwalteten Code auf 32-Bit und 64-Bit-Plattformen richtig ist. Die am häufigsten verwendete Verstoß gegen diese Regel ist eine Ganzzahl mit fester Größe übergeben, eine Variable mit plattformabhängige Zeigergröße erforderlich ist.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Die folgenden beiden Szenarien verstößt gegen diese Regel tritt auf:  
-  
--   Der Rückgabewert oder Parameter als Ganzzahl fester Größe typisiert ist, wenn er als eingegeben werden, sollte ein `IntPtr`.  
-  
--   Der Rückgabewert oder Parameter als typisiert ist, eine `IntPtr` Wenn muss als ganze Zahl fester Größe eingegeben werden.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Sie können diesen Verstoß beheben, indem Sie mithilfe von `IntPtr` oder `UIntPtr` Handles anstelle von darstellen `Int32` oder `UInt32`.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Diese Warnung sollte nicht unterdrückt werden.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt einen Verstoß gegen diese Regel.  
-  
-```csharp  
-internal class NativeMethods  
-{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
-}  
-```  
-  
- In diesem Beispiel wird die `nIconIndex` Parameter deklariert wurde, als ein `IntPtr`, der 4 Bytes, die auf einem 32-Bit-Plattform und 8 Bytes, die auf einer 64-Bit-Plattform breit breit ist. In der folgenden nicht verwalteten Deklaration können Sie sehen, die `nIconIndex` ist auf allen Plattformen eine 4-Byte-Ganzzahl ohne Vorzeichen.  
-  
-```csharp  
-HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
-```  
-  
-## <a name="example"></a>Beispiel  
- Um den Verstoß zu beheben, ändern Sie die Deklaration wie folgt aus:  
-  
-```csharp  
-internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
+|||
+|-|-|
+|TypeName|PInvokeDeclarationsShouldBePortable|
+|CheckId|CA1901|
+|Kategorie|Microsoft.Portability|
+|Unterbrechende Änderung|Unterbrechend – Wenn P/Invoke außerhalb der Assembly sichtbar ist. Nicht unterbrechend – Wenn P/Invoke nicht außerhalb der Assembly sichtbar ist.|
+
+## <a name="cause"></a>Ursache
+ Diese Regel wertet die Größe der einzelnen Parameter und den Rückgabewert einer P/Invoke und stellt sicher, dass ihre Größe beim Marshallen an nicht verwalteten Code auf 32-Bit und 64-Bit-Plattformen richtig ist. Die am häufigsten verwendete Verstoß gegen diese Regel ist eine Ganzzahl mit fester Größe übergeben, eine Variable mit plattformabhängige Zeigergröße erforderlich ist.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Die folgenden beiden Szenarien verstößt gegen diese Regel tritt auf:
+
+-   Der Rückgabewert oder Parameter als Ganzzahl fester Größe typisiert ist, wenn er als eingegeben werden, sollte ein `IntPtr`.
+
+-   Der Rückgabewert oder Parameter als typisiert ist, eine `IntPtr` Wenn muss als ganze Zahl fester Größe eingegeben werden.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Sie können diesen Verstoß beheben, indem Sie mithilfe von `IntPtr` oder `UIntPtr` Handles anstelle von darstellen `Int32` oder `UInt32`.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Diese Warnung sollte nicht unterdrückt werden.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel zeigt einen Verstoß gegen diese Regel.
+
+```csharp
+internal class NativeMethods
+{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, IntPtr nIconIndex);
+}
+```
+
+ In diesem Beispiel wird die `nIconIndex` Parameter deklariert wurde, als ein `IntPtr`, der 4 Bytes, die auf einem 32-Bit-Plattform und 8 Bytes, die auf einer 64-Bit-Plattform breit breit ist. In der folgenden nicht verwalteten Deklaration können Sie sehen, die `nIconIndex` ist auf allen Plattformen eine 4-Byte-Ganzzahl ohne Vorzeichen.
+
+```csharp
+HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
+    UINT nIconIndex);
+```
+
+## <a name="example"></a>Beispiel
+ Um den Verstoß zu beheben, ändern Sie die Deklaration wie folgt aus:
+
+```csharp
+internal class NativeMethods{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, uint nIconIndex);
+}
+```
+
+## <a name="see-also"></a>Siehe auch
  [Portability Warnings](../code-quality/portability-warnings.md)

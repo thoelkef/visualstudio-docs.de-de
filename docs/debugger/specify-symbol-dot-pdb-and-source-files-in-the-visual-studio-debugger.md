@@ -2,8 +2,7 @@
 title: Angeben von Symbol(PDB)- und Quelldateien im Debugger | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2549cfe71ef05d611251bbc8a017bd4891df3e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 Eine Programmdatenbankdatei (.pdb) Datei, auch eine Symboldatei bezeichnet, ordnet die Bezeichner, die Sie erstellen, im Quellcode für Klassen, Methoden und anderen Code für alle Bezeichner, die in den kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei sind wichtige Informationen zu bestimmen:
@@ -192,7 +191,7 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
   
  Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
+ Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
   
  **Webanwendungen**  
   

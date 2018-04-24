@@ -2,8 +2,7 @@
 title: Zeichenfolgen in einen Zeichenfolgen-Schnellansicht anzeigen | Microsoft Docs
 ms.custom: ''
 ms.date: 07/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 637e046ff99bfaee01ec2484c784d69734ff5118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3a0575b02422bf83dd560d3eae5724b0a50d3f3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Anzeigen von Zeichenfolgen in einen Zeichenfolgen-Schnellansicht in Visual Studio
 Während des Debuggens, können Sie eine Zeichenfolgen-Schnellansicht zum Anzeigen von Zeichenfolgen öffnen, die zur Ansicht in einem Daten-QuickInfo oder die Debugger-Fenster zu lang sind. In vielen Fällen können die Schnellansicht falsch formatierte Zeichenfolgen zu identifizieren.

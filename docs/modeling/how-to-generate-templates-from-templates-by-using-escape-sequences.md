@@ -1,6 +1,5 @@
 ---
-title: 'Vorgehensweise: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen | Microsoft Docs'
-ms.custom: ''
+title: 'Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,65 +10,65 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160234b8db7f09d25b22e33fb5bc722e06187ba9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7c53657faa23b57e3aef45ff8c404f2d326e489
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen
-Sie können eine Textvorlage erstellen, die eine andere Textvorlage als die generierte Textausgabe wird erstellt. Zu diesem Zweck müssen Sie Escapesequenzen verwenden, die Text Vorlagentags abgrenzen. Wenn Sie keine Escapesequenzen verwenden, wird die generierte Textvorlage eine vordefinierte Bedeutung haben. Weitere Informationen zum Verwenden von Escapesequenzen in Textvorlagen finden Sie unter [mithilfe von Escapesequenzen in Textvorlagen](../modeling/using-escape-sequences-in-text-templates.md).  
-  
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Eine Textvorlage in einer Textvorlage generieren  
-  
--   Verwenden Sie den umgekehrten Schrägstrich (\\) als Escapezeichen zum Erzeugen der erforderlichen Markuptags innerhalb der Vorlage "Text" für Richtlinien, Anweisungen, Ausdrücke und Funktionen in einer separaten Textvorlagendatei Klasse.  
-  
-    ```  
-    \<#@ directive \#>  
-    \<# statement \#>  
-    \<#= expression \#>  
-    \<#+ classfeature \#>  
-    ```  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird die Escape-Zeichen eine Textvorlage in einer Textvorlage erzeugt. Die `output` Richtlinie legt den Zieltyp für die Datei auf den Dateityp des Text-Vorlage (TT).  
-  
-```csharp  
-\<#@ output extension=".tt" \#>  
-\<#@ assembly name="System.Xml.dll" \#>  
-\<#@ import namespace="System.Xml" \#>  
-\<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {\#>  
-           \<#= attr.Name \#>  
-       \<#}  
-     }  
-\#>  
-```  
-  
- Die generierte Textausgabe wird eine Textvorlage.  
-  
-```  
-<#@ output extension=".tt" #>  
-<#@ assembly name="System.Xml.dll" #>  
-<#@ import namespace="System.Xml" #>  
-<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {#>  
-           <#= attr.Name #>  
-       <#}  
-     }  
-#>  
+Sie können eine Textvorlage erstellen, die eine andere Textvorlage als die generierte Textausgabe wird erstellt. Zu diesem Zweck müssen Sie Escapesequenzen verwenden, die Text Vorlagentags abgrenzen. Wenn Sie keine Escapesequenzen verwenden, wird die generierte Textvorlage eine vordefinierte Bedeutung haben. Weitere Informationen zum Verwenden von Escapesequenzen in Textvorlagen finden Sie unter [mithilfe von Escapesequenzen in Textvorlagen](../modeling/using-escape-sequences-in-text-templates.md).
+
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Eine Textvorlage in einer Textvorlage generieren
+
+-   Verwenden Sie den umgekehrten Schrägstrich (\\) als Escapezeichen zum Erzeugen der erforderlichen Markuptags innerhalb der Vorlage "Text" für Richtlinien, Anweisungen, Ausdrücke und Funktionen in einer separaten Textvorlagendatei Klasse.
+
+    ```
+    \<#@ directive \#>
+    \<# statement \#>
+    \<#= expression \#>
+    \<#+ classfeature \#>
+    ```
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird die Escape-Zeichen eine Textvorlage in einer Textvorlage erzeugt. Die `output` Richtlinie legt den Zieltyp für die Datei auf den Dateityp des Text-Vorlage (TT).
+
+```csharp
+\<#@ output extension=".tt" \#>
+\<#@ assembly name="System.Xml.dll" \#>
+\<#@ import namespace="System.Xml" \#>
+\<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {\#>
+           \<#= attr.Name \#>
+       \<#}
+     }
+\#>
+```
+
+ Die generierte Textausgabe wird eine Textvorlage.
+
+```
+<#@ output extension=".tt" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ import namespace="System.Xml" #>
+<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {#>
+           <#= attr.Name #>
+       <#}
+     }
+#>
 ```

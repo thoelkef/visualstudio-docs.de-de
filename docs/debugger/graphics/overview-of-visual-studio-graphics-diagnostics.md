@@ -2,19 +2,18 @@
 title: Übersicht über Visual Studio-Grafikdiagnose | Microsoft Docs
 ms.custom: ''
 ms.date: 02/09/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9981fe267420a6bc364e23ab5d8e058c87089b98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08a942830893bc7a195c64765f5915df32b5ecfb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für apps verwendet werden, die lokal auf Ihrem Windows-PC oder auf einem remote-PC oder Gerät ausgeführt werden.  
@@ -33,7 +32,7 @@ Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschl
  Windows 10 bietet außerdem weiterhin Unterstützung für ältere Versionen von Direct3D sowie für die Spiele und Anwendungen, die davon abhängig sind. Die Grafikdiagnose in Visual Studio weiterhin Direct3D 10 und Direct3D 11 unter Windows 10 unterstützt.
   
 ### <a name="limited-direct2d-support"></a>Begrenzte Direct2D-Unterstützung  
- Da Direct2D eine Benutzermodus-API, die auf Grundlage von Direct3D erstellt wurde handelt, können Sie die Grafikdiagnose, um Renderingprobleme in apps Debuggen, die Direct2D verwenden. Es werden jedoch nur die zugrunde liegenden Direct3D-Ereignisse und keine Direct2D-Ereignisse auf höherer Ebene erfasst, sodass Direct2D-Ereignisse nicht in der Grafikereignisliste angezeigt werden. Außerdem ist die Beziehung zwischen Direct2D-Ereignissen und den resultierenden Direct3D-Ereignissen nicht immer nachvollziehbar, daher ist die Verwendung der Grafikdiagnose zum Debuggen von Renderingproblemen in Apps, die Direct2D verwenden, nicht ganz einfach. Sie können die Grafikdiagnose aber verwenden, um Informationen zu Problemen abzurufen, die in Direct2D-Apps beim Rendern auf unterster Ebene auftreten.  
+ Da Direct2D eine Benutzermodus-API, die auf Grundlage von Direct3D erstellt wurde handelt, können Sie die Grafikdiagnose, um Renderingprobleme in apps Debuggen, die Direct2D verwenden. Es werden jedoch nur die zugrunde liegenden Direct3D-Ereignisse und keine Direct2D-Ereignisse auf höherer Ebene erfasst, sodass Direct2D-Ereignisse nicht in der Grafikereignisliste angezeigt werden. Außerdem ist die Beziehung zwischen Direct2D-Ereignissen und den resultierenden Direct3D-Ereignissen nicht immer nachvollziehbar, daher ist die Verwendung der Grafikdiagnose zum Debuggen von Renderingproblemen in Apps, die Direct2D verwenden, nicht ganz einfach. Sie können die Grafik-Diagnose aber verwenden, um Informationen zu Problemen abzurufen, die in Direct2D-Apps beim Rendern auf unterster Ebene auftreten.  
   
 ## <a name="graphics-diagnostics-features-in-visual-studio"></a>Funktionen der Grafikdiagnose in Visual Studio  
  Grafikdiagnose verfügt über eine eigene Benutzeroberfläche - das Fenster "Grafikanalyse" - zum Diagnostizieren von Renderingproblemen, jedoch auch einige Tools zur Visual Studio-Benutzeroberfläche.  
@@ -55,10 +54,10 @@ Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschl
   
  Finden Sie unter [GPU-Nutzung](gpu-usage.md) für Weitere Informationen.  
   
-### <a name="directx-control-panel"></a>DirectX-Einstellungen  
+### <a name="directx-control-panel"></a>DirectX-Systemsteuerung  
  Die DirectX-Systemsteuerung ist eine Komponente von DirectX, die Sie verwenden können, um das Verhalten von DirectX zu ändern. Sie können z. B. die Debugversion der DirectX-Laufzeitkomponenten aktivieren, die Art der Debugmeldungen festlegen, oder bestimmte Funktionen der Grafikhardware deaktivieren, um weniger leistungsfähige Hardware zu emulieren. Diese Einflussmöglichkeiten auf DirectX können Ihnen helfen, DirectX-Apps zu debuggen und zu testen. Sie können über Visual Studio auf die DirectX-Systemsteuerung zugreifen.  
   
-#### <a name="to-open-the-directx-control-panel"></a>So öffnen Sie die DirectX-Einstellungen  
+#### <a name="to-open-the-directx-control-panel"></a>So öffnen Sie die DirectX-Systemsteuerung  
   
 -   Wählen Sie in der Menüleiste **Debuggen**, **Grafiken**, **DirectX-Systemsteuerung**.  
   

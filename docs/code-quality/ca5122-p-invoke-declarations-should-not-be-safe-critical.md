@@ -1,71 +1,69 @@
 ---
-title: CA5122 P / Invoke-Deklarationen sollten nicht sichere kritische | Microsoft Docs
-ms.custom: ''
+title: CA5122 P / Invoke-Deklarationen sollten nicht sichere kritisch
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 537c705afa002d4895cf8213acf90be485821fc9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 170a1735299ea1aab6b58e09ee5c40ebef4726fa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke-Deklarationen sollten nicht sicherungskritisch sein
-|||  
-|-|-|  
-|TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|  
-|CheckId|CA5122|  
-|Kategorie|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
-  
-## <a name="cause"></a>Ursache  
- Eine P/Invoke-Deklaration wurde mit <xref:System.Security.SecuritySafeCriticalAttribute> markiert:  
-  
-```csharp  
-[assembly: AllowPartiallyTrustedCallers]  
-  
-// ...  
-public class C  
-{  
-    [SecuritySafeCritical]  
-    [DllImport("kernel32.dll")]  
-    public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke  
-   }  
-  
-```  
-  
- In diesem Beispiel wurde `C.Beep(...)` als sicherungskritische Methode markiert.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Eine der grundlegenden Regeln des Sicherheitstransparenzmodells lautet: Transparenter Code darf systemeigenen Code nie direkt mit P/Invoke aufrufen. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um P/Invoke für transparenten Code verfügbar zu machen, muss eine sicherungskritische Wrappermethode dafür ausgeführt werden:  
-  
-```csharp  
-[assembly: AllowPartiallyTrustedCallers  
-  
-class C  
-{  
-   [SecurityCritical]  
-   [DllImport("kernel32.dll", EntryPoint="Beep")]  
-   private static extern bool BeepPinvoke(int frequency, int duration); // Security Critical P/Invoke  
-  
-   [SecuritySafeCritical]  
-   public static bool Beep(int frequency, int duration)  
-   {  
-      return BeepPInvoke(frequency, duration);  
-   }  
-}  
-  
-```  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+|||
+|-|-|
+|TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
+|CheckId|CA5122|
+|Kategorie|Microsoft.Security|
+|Unterbrechende Änderung|Breaking|
+
+## <a name="cause"></a>Ursache
+ Eine P/Invoke-Deklaration wurde mit <xref:System.Security.SecuritySafeCriticalAttribute> markiert:
+
+```csharp
+[assembly: AllowPartiallyTrustedCallers]
+
+// ...
+public class C
+{
+    [SecuritySafeCritical]
+    [DllImport("kernel32.dll")]
+    public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke
+   }
+
+```
+
+ In diesem Beispiel wurde `C.Beep(...)` als sicherungskritische Methode markiert.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Eine der grundlegenden Regeln des Sicherheitstransparenzmodells lautet: Transparenter Code darf systemeigenen Code nie direkt mit P/Invoke aufrufen. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um P/Invoke für transparenten Code verfügbar zu machen, muss eine sicherungskritische Wrappermethode dafür ausgeführt werden:
+
+```csharp
+[assembly: AllowPartiallyTrustedCallers
+
+class C
+{
+   [SecurityCritical]
+   [DllImport("kernel32.dll", EntryPoint="Beep")]
+   private static extern bool BeepPinvoke(int frequency, int duration); // Security Critical P/Invoke
+
+   [SecuritySafeCritical]
+   public static bool Beep(int frequency, int duration)
+   {
+      return BeepPInvoke(frequency, duration);
+   }
+}
+
+```
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.

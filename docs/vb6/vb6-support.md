@@ -14,10 +14,10 @@ ms.author: paulyuk
 ms.workload:
 - paulyuk
 ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Supportinformationen Sie für Visual Basic 6.0 unter Windows
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 04/16/2018
 Visual Basic-Team zugesichert ist "It Just Works" Kompatibilität mit Visual Basic 6.0-Anwendungen auf der folgenden unterstützten Windows-Betriebssysteme: 
 
 - Windows 10
-- Windows 8.1
-- Windows 7
+- Windows 8.1
+- Windows 7
 - Windows Server 2016
 - Windows Server 2012 R2 einschließlich
 - Windows Server 2008 R2 einschließlich
@@ -82,13 +82,13 @@ Visual Basic 6.0-runtimedateien sind 32-Bit. Diese Dateien ausgeliefert in 64-Bi
 
 Der Visual Basic 6.0-IDE wurde nie in einer systemeigenen 64-Bit-Version bereitgestellt wurde, noch ist die 32-Bit-IDE auf 64-Bit-Windows unterstützt. VB6-Entwicklung unter Windows 64-Bit-oder eine beliebige systemeigene Architektur als 32-Bit-nicht und wird nicht unterstützt.
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde das Betriebssystem Windows 7 freigegeben. Dieses Dokument wurde aktualisiert, um Microsoft Support für VB6 unter Windows 7 zu verdeutlichen.
 
 Die Laufzeit VB6 ausgeliefert und wird für die Lebensdauer des Betriebssystems in Windows 7 unterstützt. Visual Basic 6.0-runtimedateien weiterhin nur 32-Bit-sein und müssen alle Komponenten in Prozessen 32-Bit-Anwendung gehostet werden.
 
-## <a name="windows-81"></a>Windows 8.1
+## <a name="windows-81"></a>Windows 8.1
 
 Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde das Betriebssystem Windows 8.1 freigegeben. Dieses Dokument wurde aktualisiert, um Microsoft Support für VB6 auf Windows 8.1 zu verdeutlichen.
 
@@ -112,7 +112,7 @@ Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde des Be
 
 Die Laufzeit VB6 ausgeliefert und wird für die Lebensdauer des Betriebssystems in Windows Server 2008 R2 unterstützt. Visual Basic 6.0-runtimedateien weiterhin nur 32-Bit-sein und müssen alle Komponenten in Prozessen 32-Bit-Anwendung gehostet werden. Entwickler können sichereres Story Unterstützung für Windows Server 2008 R2 wird die gleiche wie für Windows Server 2008.
 
-## <a name="windows-server-2012"></a>Windows Server 2012
+## <a name="windows-server-2012"></a>Windows Server 2012
 
 Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde des Betriebssystems Windows Server 2012 freigegeben. Dieses Dokument wurde aktualisiert, um Microsoft Support für VB6 unter Windows Server 2012 zu verdeutlichen.
 

@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Debuggen von DLL-Projekt | Microsoft Docs'
 ms.custom: ''
 ms.date: 05/24/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +20,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903723616b55467a49c43986ccd6df63dea71491
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 63581cee8816e72492a67a0981a9077b9fec2935
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Vorgehensweise: Debuggen von DLL-Projekt in Visual Studio
 Eine Möglichkeit zum Debuggen einer DLL-Projekt wird an die aufrufende Anwendung in den Projekteigenschaften der DLL-Projekts, und dann Sie das Debuggen über das DLL-Projekt selbst starten können. Diese Methode funktioniert, muss die Anwendung die DLL aufrufen und die DLL in den Speicherort, an die Anwendung erwartet, gefunden, werden muss (, andernfalls die Anwendung möglicherweise eine andere Version der DLL zu suchen und zu laden, die stattdessen und es wird nicht die Haltepunkte erreicht). Weitere Methoden zum Debuggen von DLLs finden Sie unter [DLL-Projekte Debuggen](../debugger/debugging-dll-projects.md).
   
-Wenn eine verwaltete DLL von nativem Code aufgerufen wird, und Sie sowohl DLL als auch Code debuggen möchten, können Sie dies in den Projekteigenschaften angeben. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).   
+Wenn eine verwaltete DLL von systemeigenem Code aufgerufen wird, und Sie sowohl DLL als auch Code debuggen möchten, können Sie dies in den Projekteigenschaften angeben. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Die Eigenschaftenseiten in C++ unterscheiden sich im Hinblick auf Layout und Inhalt von den Eigenschaftenseiten in C# und Visual Basic. 
   

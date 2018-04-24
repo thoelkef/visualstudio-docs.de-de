@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Festlegen eines Threadnamens in systemeigenem Code | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,16 +21,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a85ad8a81046ca6bc2e602d5449ce7924ad7a4a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2b751451f1362c0ba82871b99b0dbb10434282b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Gewusst wie: Festlegen eines Threadnamens in nativem Code
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Gewusst wie: Festlegen eines Threadnamens in systemeigenem Code
 Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Benennen von Threads ist nützlich zum Nachverfolgen der Threads in der **Threads** Fenster.
 
-Verwenden Sie zum Festlegen eines Threadnamens im Programm die `SetThreadName` -Funktion, wie im folgenden Codebeispiel dargestellt. Der Threadname wird in den Thread kopiert, damit der Arbeitsspeicher für den `threadName` -Parameter freigegeben werden kann.  
+Verwenden Sie zum Festlegen eines Threadnamens im Programm die `SetThreadName`-Funktion, wie im folgenden Codebeispiel dargestellt. Der Threadname wird in den Thread kopiert, damit der Arbeitsspeicher für den `threadName`-Parameter freigegeben werden kann.  
   
 ## <a name="example"></a>Beispiel  
   

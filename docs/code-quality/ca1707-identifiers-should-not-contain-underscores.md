@@ -1,10 +1,8 @@
 ---
-title: 'CA1707: Bezeichner sollten keine Unterstriche enthalten | Microsoft Docs'
-ms.custom: ''
+title: 'CA1707: Bezeichner sollten keine Unterstriche enthalten'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c911f90e4da45ce847654f0c89455375ea478e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4eed69f8c08d6106bf30e9c1884512e384a7a269
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Bezeichner sollten keine Unterstriche enthalten
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotContainUnderscores|  
-|CheckId|CA1707|  
-|Kategorie|Microsoft.Naming|  
-|Unterbrechende Änderung|Unterbrechend – Wenn auf Assemblys ausgelöst<br /><br /> Nicht unterbrechend – Wenn für Typparameter ausgelöst|  
-  
-## <a name="cause"></a>Ursache  
- Der Name eines Bezeichners enthält den Unterstrich (_) enthalten.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Bezeichnernamen dürfen keinen Unterstrich (_) enthalten. Die Regel wird überprüft, Namespaces, Typen, Member und Parameter.  
-  
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Entfernen Sie alle Unterstrichzeichen aus dem Namen ein.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
-  
-## <a name="related-rules"></a>Verwandte Regeln  
- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotContainUnderscores|
+|CheckId|CA1707|
+|Kategorie|Microsoft.Naming|
+|Unterbrechende Änderung|Unterbrechend – Wenn auf Assemblys ausgelöst<br /><br /> Nicht unterbrechend – Wenn für Typparameter ausgelöst|
+
+## <a name="cause"></a>Ursache
+ Der Name eines Bezeichners enthält den Unterstrich (_) enthalten.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Bezeichnernamen dürfen keinen Unterstrich (_) enthalten. Die Regel wird überprüft, Namespaces, Typen, Member und Parameter.
+
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Entfernen Sie alle Unterstrichzeichen aus dem Namen ein.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Unterdrücken Sie keine Warnung dieser Regel.
+
+## <a name="related-rules"></a>Verwandte Regeln
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
  [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

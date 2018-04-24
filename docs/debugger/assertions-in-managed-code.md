@@ -2,8 +2,7 @@
 title: Assertionen in verwaltetem Code | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f682768aeb3f3a0f3cc22da8a68f8db4a225b375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: e5b4c66beba2a4c3953a0720a3f770f7f651db79
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 Mithilfe einer Assertion oder einer `Assert`-Anweisung wird eine Bedingung überprüft, die Sie als Argument der `Assert`-Anweisung angeben. Wenn die Bedingung als "Tue" ausgewertet wird, erfolgt keine Aktion. Wenn die Bedingung auf "False" ausgewertet wird, schlägt die Assertion fehl. Wenn das Programm mit einem Debugbuild ausgeführt wird, wechselt es in den Unterbrechungsmodus.  
@@ -123,7 +122,7 @@ Debug.Assert (meas(i) <> 0 )
 Debug.Assert (meas(i) != 0 );  
 ```  
   
- Diese Verwendung der <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mag auf den ersten Blick sicher erscheinen. Was geschieht jedoch, wenn die Funktion "meas" bei jedem Aufruf einen Zähler aktualisiert? Bei der Erstellung der Releaseversion wird dieser Aufruf der Funktion „meas“ entfernt, sodass der Zähler nicht mehr aktualisiert wird. Dies ist ein Beispiel für eine Funktion mit einem Nebeneffekt. Durch das Entfernen eines Funktionsaufrufs, der Nebeneffekte hat, kann ein Fehler verursacht werden, der ausschließlich in der Releaseversion auftritt. Um derartige Probleme zu vermeiden, sollten Sie keine Funktionsaufrufe in eine <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Anweisung einfügen. Verwenden Sie stattdessen eine temporäre Variable:  
+ Diese Verwendung der <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mag auf den ersten Blick sicher erscheinen. Was geschieht jedoch, wenn die Funktion "meas" bei jedem Aufruf einen Zähler aktualisiert? Bei der Erstellung der Releaseversion wird dieser Aufruf der Funktion "meas" entfernt, sodass der Zähler nicht mehr aktualisiert wird. Dies ist ein Beispiel für eine Funktion mit einem Nebeneffekt. Durch das Entfernen eines Funktionsaufrufs, der Nebeneffekte hat, kann ein Fehler verursacht werden, der ausschließlich in der Releaseversion auftritt. Um derartige Probleme zu vermeiden, sollten Sie keine Funktionsaufrufe in eine <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Anweisung einfügen. Verwenden Sie stattdessen eine temporäre Variable:  
   
 ```VB  
 temp = meas( i )  

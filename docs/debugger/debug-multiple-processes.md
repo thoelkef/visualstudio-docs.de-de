@@ -2,8 +2,7 @@
 title: Debuggen mehrerer Prozesse | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028578d6bcdfc8d5c1ad0d7825b3d91c339c1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08a089feceb6ba66791358096e3c4663df06494e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-multiple-processes"></a>Debuggen mehrerer Prozesse
 Hier wird erklärt, wie Starten von debuggingprozessen, wechseln zwischen Prozessen, unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen des Quellcodes, Anhalten des Debuggings sowie und beenden und Abtrennen von Prozessen.  
@@ -170,15 +169,15 @@ Hier wird erklärt, wie Starten von debuggingprozessen, wechseln zwischen Prozes
   
 ||||  
 |-|-|-|  
-|**Befehl**|**Anhalten Sie alle Prozesse, wenn ein Prozess anhält**<br /><br /> Aktiviert (Standard)|**Anhalten Sie alle Prozesse, wenn ein Prozess anhält**<br /><br /> Deaktiviert|  
+|**Befehl**|**Anhalten Sie alle Prozesse, wenn ein Prozess anhält**<br /><br /> Aktiviert (Standard)|**Anhalten Sie alle Prozesse, wenn ein Prozess anhält**<br /><br /> Gelöscht|  
 |**Debuggen** Menü:<br /><br /> -   **Alle unterbrechen**|Alle Prozesse werden unterbrochen.|Alle Prozesse werden unterbrochen.|  
 |**Debuggen** Menü:<br /><br /> -   **Fortsetzen**|Alle Prozesse werden fortgesetzt.|Alle angehaltenen Prozesse werden fortgesetzt.|  
 |**Debuggen** Menü:<br /><br /> -   **Einzelschritt**<br />-   **Prozedurschritt**<br />-   **Ausführen bis Rücksprung**|Alle Prozesse werden während der aktuellen Prozessschritte ausgeführt.<br /><br /> Anschließend werden alle Prozesse unterbrochen.|Aktuelle Prozessschritte.<br /><br /> Angehaltene Prozesse werden fortgesetzt.<br /><br /> Ausgeführte Prozesse werden fortgesetzt.|  
-|**Debuggen** Menü:<br /><br /> -   **Einzelschritt in aktuellem Prozess**<br />-   **Prozedurschritt in aktuellem Prozess**<br />-   **Ausführen bis Rücksprung aktuellen Prozess**|Nicht zutreffend|Aktuelle Prozessschritte.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
+|**Debuggen** Menü:<br /><br /> -   **Einzelschritt in aktuellem Prozess**<br />-   **Prozedurschritt in aktuellem Prozess**<br />-   **Ausführen bis Rücksprung aktuellen Prozess**|N/V|Aktuelle Prozessschritte.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
 |Quellcodefenster<br /><br /> -   **Haltepunkt**|Alle Prozesse werden unterbrochen.|Nur der Prozess im Quellcodefenster wird unterbrochen.|  
 |Kontextmenü des Quellcodefensters:<br /><br /> -   **Führen bis Cursor aus**<br /><br /> Das Quellcodefenster muss sich im aktuellen Prozess befinden.|Alle Prozesse werden ausgeführt, während der Prozess im Quellcodefenster bis zum Cursor ausgeführt und dann unterbrochen wird.<br /><br /> Anschließend werden alle anderen Prozesse unterbrochen.|Der Prozess im Quellcodefenster wird bis zum Cursor ausgeführt.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
-|**Prozesse** Kontextmenü des Fensters:<br /><br /> -   **Prozess anhalten**|Nicht zutreffend|Der ausgewählte Prozess wird angehalten.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
-|**Prozesse** Kontextmenü des Fensters:<br /><br /> -   **Prozess fortsetzen**|Nicht zutreffend|Der ausgewählte Prozess wird fortgesetzt.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
+|**Prozesse** Kontextmenü des Fensters:<br /><br /> -   **Prozess anhalten**|N/V|Der ausgewählte Prozess wird angehalten.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
+|**Prozesse** Kontextmenü des Fensters:<br /><br /> -   **Prozess fortsetzen**|N/V|Der ausgewählte Prozess wird fortgesetzt.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
   
  ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Wechseln zwischen Prozessen, unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen des Quellcodes](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
