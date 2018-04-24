@@ -1,18 +1,18 @@
 ---
-title: "Beispiel für Excel-Erweiterung: Element-Klassen | Microsoft-Dokumentation"
+title: 'Beispiel für Excel-Erweiterung: Element-Klassen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Sample Excel Extension: Element Classes
 Die Erweiterung verwendet Klassen, die von <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> abgeleitet sind und das Arbeitsblattsteuerelement sowie das Zellsteuerelement in [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] darstellen.
@@ -44,7 +44,7 @@ Die Erweiterung verwendet Klassen, die von <xref:Microsoft.VisualStudio.TestTool
 ## <a name="utilities-and-excelutilities-classes"></a>Utilities- und ExcelUtilities-Klasse
  Die interne `ExcelUtilities`-Klasse stellt einige Konstantenwerte (z.B. den Technologienamen) und eine Methode bereit, die bestimmt, ob das bereitgestellte Fensterhandle ein Excel-Arbeitsblatt darstellt.
 
- Die `Utilities`-Klasse verfügt über Hilfsmethoden, die verschiedene Informationen zur Benutzeroberfläche zurückgeben. Einige Methoden verwenden direkte Aufrufe externer System-DLLs wie **USER32.DLL** und **OLEACC.DLL**, um Fensterhandles aus der UI abzurufen**.**
+ Die `Utilities`-Klasse verfügt über Hilfsmethoden, die verschiedene Informationen zur Benutzeroberfläche zurückgeben. Einige Methoden verwenden direkte Aufrufe externer System-DLLs wie **USER32.DLL** und **OLEACC.DLL**, um Fensterhandles aus der UI abzurufen **.**
 
 ## <a name="see-also"></a>Siehe auch
 

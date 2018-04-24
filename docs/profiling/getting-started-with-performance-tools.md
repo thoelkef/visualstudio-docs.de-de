@@ -2,27 +2,22 @@
 title: Erste Schritte mit Leistungstools | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6fe0a1d3a305ca19b36358ab28fbb794d56df2aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die beim Erfassen, Anzeigen und Analysieren der Codeleistung mithilfe der Visual Studio-Leistungstools angewendet werden.  

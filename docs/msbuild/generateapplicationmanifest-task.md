@@ -2,11 +2,8 @@
 title: GenerateApplicationManifest-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 24
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest. Ein systemeigenes Manifest beschreibt eine Komponente, indem eine eindeutige Identität für die Komponente definiert wird und alle Assemblys und Dateien, aus denen die Komponente besteht, bezeichnet werden. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest erweitert ein systemeigenes Manifest durch die Angabe des Einstiegspunkts und der Sicherheitsebene der Anwendung.  
@@ -37,7 +33,7 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `GenerateApplicationManifest`-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn kein Name erstellt werden kann, löst die Aufgabe einen Fehler aus.|  
 |`AssemblyVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Standardwert "1.0.0.0" verwendet.|  
@@ -78,7 +74,7 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
   
 ## <a name="item-metadata"></a>Elementmetadaten  
   
-|Metadatenname|Beschreibung|  
+|Metadatenname|description|  
 |-------------------|-----------------|  
 |`DependencyType`|Gibt an, ob die Abhängigkeit veröffentlicht und mit der Anwendung installiert wird oder als erforderliche Komponente vorhanden sein muss. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Der Standardwert lautet "Install".|  
 |`AssemblyType`|Gibt an, ob die Abhängigkeit eine verwaltete oder eine systemeigene Assembly ist. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Der Standardwert lautet `Unspecified`. Er gibt an, dass der Manifest-Generator den Assemblytyp automatisch bestimmt.|  

@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Plug-Ins für Auslastungstests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.loadtestplugin
 helpviewer_keywords:
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2de6da0a38bd8ff7568dc102514ac24d4217bbb7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Gewusst wie: Erstellen eines Auslastungstest-Plug-Ins
 
@@ -48,7 +48,7 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
 
 8.  Dem Projektmappen-Explorer wird das neue Klassenbibliotheksprojekt hinzugefügt, und die neue Klasse wird im Code-Editor angezeigt.
 
-9. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Ordner **Verweise** in der neuen Klassenbibliothek, und klicken Sie auf **Verweis hinzufügen**.
+9. Klicken Sie im Projektmappen-Explorer in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und klicken Sie anschließend mit der linken Maustaste auf **Verweis hinzufügen**.
 
 10. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 

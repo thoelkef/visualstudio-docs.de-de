@@ -1,12 +1,9 @@
 ---
-title: "Verwenden der Profilerstellungstools über die Befehlszeile | Microsoft-Dokumentation"
-ms.custom: 
+title: Verwenden der Profilerstellungstools über die Befehlszeile | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
 - command-line tools, performance tools
@@ -14,16 +11,16 @@ helpviewer_keywords:
 - tools, command-line
 - command line, tools
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cf3751eeb7a1e0a41c26bab24425312675921b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b26df4fd2c96d7a18fd553abffc8bb33714d5cfc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Verwenden der Profilerstellungstools über die Befehlszeile
 Mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools können Sie über die Eingabeaufforderung für Anwendungen Profile erstellen und die Profilerstellung mithilfe von Batchdateien und Skripts automatisieren. Darüber hinaus können Sie über eine Eingabeaufforderung auch Berichtsdateien erstellen. Sie können Daten auf Computern, auf denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist, mithilfe des einfachen eigenständigen Profilers sammeln.  
@@ -40,7 +37,7 @@ Mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 |**Erstellen von XML- und CSV-Berichten:** Durch die Profilerstellung über die Eingabeaufforderung werden Datendateien erstellt, die auf der Benutzeroberfläche von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt werden können. Mit dem Befehlszeilentool VSPerfReport können auch XML-Dateien oder CSV-Dateien (Comma-Separated Value) der Daten generiert werden.|-   [Creating Profiler Reports from the Command Line (Erstellen von Profiler-Berichten über die Befehlszeile)](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md)|  
 |**Profilerstellung von Code auf Computern ohne Visual Studio:** Sie können den eigenständigen Profiler der Profilerstellungstools verwenden, um Daten für Anwendungen auf Computern zu sammeln, auf denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist.|-   [How to: Install the Stand-Alone Profiler (Vorgehensweise: Installieren des eigenständigen Profilers)](../profiling/how-to-install-the-stand-alone-profiler.md)|  
   
-## <a name="reference"></a>Verweis  
+## <a name="reference"></a>Referenz  
  [Command-Line Profiling Tools Reference (Referenz zu Profilerstellungstools für die Befehlszeile)](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -1,19 +1,19 @@
 ---
 title: Schwellenwertverletzungen in Auslastungstests in Visual Studio| Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, threshold violations
 ms.assetid: 0126d7b7-0538-4ea9-9046-6556654b3b9d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c511bb3edf8ad8277b367733f85108d9587898e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6acb9eec16107134dc03765da82008a01b599e4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Gewusst wie: Analysieren von Schwellenwertverletzungen mit dem Indikatorbereich im Auslastungstest-Analyzer
 
@@ -66,9 +66,9 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
     3.  (Optional) Klicken Sie mit der rechten Maustaste erneut auf den Leistungsindikator, und wählen Sie **Indikator im Diagramm anzeigen** aus.
 
-         Weitere Informationen finden Sie unter [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md).
+         Weitere Informationen finden Sie unter [How to: Create Custom Graphs (Vorgehensweise: Erstellen benutzerdefinierter Diagramme)](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
-5.  (Optional) Wenn Sie die Schwellenwertverletzung in einem abgeschlossenen Auslastungstestergebnis analysieren, können Sie die Zoomfunktionen in der Diagrammansicht verwenden. Weitere Informationen finden Sie unter [How to: Zoom in on a Region of the Graph (Vorgehensweise: Vergrößern eines Diagrammbereichs)](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+5.  (Optional) Wenn Sie die Schwellenwertverletzung in einem abgeschlossenen Auslastungstestergebnis analysieren, können Sie die Zoomfunktionen in der Diagrammansicht verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
     > [!TIP]
     > Wurden während des Auslastungstests Schwellenwertverletzungen ermittelt, wird auf der Statusleiste des Auslastungstest-Analyzers der Link "Schwellenwertverletzungen" einschließlich der Anzahl der Verletzungen angezeigt. Sie können auf den Link klicken, um alle Schwellenwertverletzungen in der Tabelle **Schwellenwerte** der Tabellenansicht anzuzeigen.

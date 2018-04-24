@@ -1,12 +1,9 @@
 ---
 title: Integration in Visual Studio (MSBuild) | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.  
@@ -54,10 +50,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] werden zu diesem Zweck die Bedingungen für `PropertyGroup`, `ItemGroup`, `Import`sowie für die Eigenschaft und die Elemente überprüft.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] werden zu diesem Zweck die Bedingungen für `PropertyGroup`, `ItemGroup`, `Import`sowie für die Eigenschaft und die Elemente überprüft.  
   
 ## <a name="additional-build-actions"></a>Zusätzliche Buildvorgänge  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Damit können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster [Dateieigenschaften](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) ändern. In diesem Menü werden`Compile`, `EmbeddedResource`, `Content`und `None` sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ `JScript` für alle Projekte eingefügt, die diesen Typ importieren:  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster [Dateieigenschaften](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) ändern. In diesem Menü werden`Compile`, `EmbeddedResource`, `Content`und `None` sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ `JScript` für alle Projekte eingefügt, die diesen Typ importieren:  
   
 ```xml  
 <ItemGroup>  
@@ -127,7 +123,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Zum Suchen und Starten der Ausgabeassembly sowie zum Anhängen des Debuggers müssen die Eigenschaften [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , `OutputPath`und `AssemblyName`in `OutputType` ordnungsgemäß definiert sein. Wenn über den Compiler im Buildprozess keine PDB-Datei generiert wurde, kann der Debugger nicht angehängt werden.  
   
 ## <a name="design-time-target-execution"></a>Zielausführung zur Entwurfszeit  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können jedoch nicht alle Funktionen ausgeführt werden.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können jedoch nicht alle Funktionen ausgeführt werden.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Wenn Sie ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projekt direkt bearbeiten möchten, können Sie die Projektdatei im XML-Editor von Visual Studio von öffnen.  
@@ -136,7 +132,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.  
   
-     Das Projekt ist als **(nicht verfügbar)**gekennzeichnet.  
+     Das Projekt ist als **(nicht verfügbar)** gekennzeichnet.  
   
 2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.  
   
@@ -147,12 +143,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung  
- Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „*\<Visual Studio-Installationsverzeichnis>*\Xml\Schemas\1033\MSBuild“ befindet.  
+ Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „*\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
   
  Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Kerntypen werden in Microsoft.Build.Core.xsd und allgemeine Typen, die von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet werden, wird in Microsoft.Build.CommonTypes.xsd definiert. Zum Anpassen der Schemas für die Bereitstellung von IntelliSense und zur Validierung benutzerdefinierter Elementtypnamen, Eigenschaften und Aufgaben können Sie entweder "Microsoft.Build.xsd" bearbeiten oder ein benutzerdefiniertes Schema erstellen, das das CommonTypes-Schema oder das Core-Schema enthält. Beim Erstellen eines benutzerdefinierten Schemas müssen Sie den XML-Editor so einrichten, dass das **Eigenschaftenfenster** verwendet wird.  
   
 ## <a name="editing-loaded-project-files"></a>Bearbeiten von geladenen Projektdateien  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird der Inhalt von Projektdateien und von über Projektdateien importierten Dateien zwischengespeichert. Beim Bearbeiten einer geladenen Projektdatei werden Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch aufgefordert, das Projekt erneut zu laden, sodass Änderungen wirksam werden. Wenn Sie jedoch eine Datei bearbeiten, die über ein geladenes Projekt importiert wurde, wird keine Meldung zum Neuladen angezeigt. Sie müssen das Projekt dann manuell entladen und anschließend neu laden, damit Änderungen wirksam werden.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird der Inhalt von Projektdateien und von über Projektdateien importierten Dateien zwischengespeichert. Beim Bearbeiten einer geladenen Projektdatei werden Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch aufgefordert, das Projekt erneut zu laden, sodass Änderungen wirksam werden. Wenn Sie jedoch eine Datei bearbeiten, die über ein geladenes Projekt importiert wurde, wird keine Meldung zum Neuladen angezeigt. Sie müssen das Projekt dann manuell entladen und anschließend neu laden, damit Änderungen wirksam werden.  
   
 ## <a name="output-groups"></a>Ausgabegruppen  
  Mehrere in Microsoft.Common.targets definierte Ziele verfügen über Namen, die auf `OutputGroups` oder `OutputGroupDependencies`enden. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ruft diese Ziele auf, um bestimmte Listen von Projektausgaben abzurufen. Das `SatelliteDllsProjectOutputGroup`-Ziel erstellt beispielsweise eine Liste aller in einem Build erstellten Satellitenassemblys. Diese Ausgabegruppen werden bei Features wie Veröffentlichung, Bereitstellung und Verweisen zwischen Projekten verwendet. Projekte, in denen diese Funktionen nicht definiert sind, werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]geladen und erstellt, einige Funktionen werden jedoch möglicherweise nicht ordnungsgemäß ausgeführt.  

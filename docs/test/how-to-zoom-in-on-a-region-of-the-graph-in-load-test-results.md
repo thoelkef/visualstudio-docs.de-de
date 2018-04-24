@@ -1,7 +1,7 @@
 ---
 title: Vergrößern von Diagrammen für Auslastungstestergebnisse in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.graphzoom
 helpviewer_keywords:
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: d5b65107655d27da5ace994ac56fc989fc83004c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e2379161051c821af07b6da5b102177178a0d7f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Gewusst wie: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
 
@@ -55,7 +55,7 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 
      \- oder –
 
-     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
+     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Klicken Sie auf **Diagramme**, wenn die Diagramme nicht angezeigt werden.
 
@@ -112,6 +112,6 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analysieren der Auslastungstestergebnisse in der Diagrammansicht](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [How to: Add and Delete Counters on Graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

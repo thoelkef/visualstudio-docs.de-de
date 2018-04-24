@@ -2,11 +2,8 @@
 title: Csc-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 26
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: d35f1dee5c2f3d4f91a6d59e001bc9f16fd7b52a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link Libraries (DLL-Dateien) und Codemodule (NETMODULE-Dateien). Weitere Informationen zu CSC.exe finden Sie unter [C# Compiler Options (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -36,7 +32,7 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Optionaler `String[]` -Parameter.<br /><br /> Gibt zusätzliche Verzeichnisse an, in denen nach Verweisen gesucht wird. Weitere Informationen finden Sie unter [/lib (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option).|  
 |`AddModules`|Optionaler `String` -Parameter.<br /><br /> Gibt mindestens Modul an, das Bestandteil dieser Assembly sein soll. Weitere Informationen finden Sie unter [/addmodule (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option).|  

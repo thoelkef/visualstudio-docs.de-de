@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Testiterationen für Auslastungstests in Visual Studio| Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9d714723bdd19fae443b19ef293e66c21929c32d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6aac1f950bcfaf4c8308913d389d6fd3dec15c2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
 
@@ -28,7 +28,7 @@ Sie können die maximale Anzahl von Testläufen für ein Szenario angeben, indem
 Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale Anzahl der Testiterationen gesteuert, die für das Szenario ausgeführt werden sollen. Ebenso wie bei der Eigenschaft **Testiterationen** in den Auslastungslaufzeiteinstellungen handelt es sich dabei um das Maximum für alle Benutzer in allen Agents und nicht um eine Pro-Benutzer-Einstellung.
 
 > [!NOTE]
-> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie im Artikel zu [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
 
  Für eine sequenzielle Testmischung ist eine Iteration ein Durchlauf durch alle Tests in der Mischung. Für alle anderen Testmischungen zählt jede Testausführung als Iteration. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 

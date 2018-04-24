@@ -1,20 +1,20 @@
 ---
 title: Emulieren der Verwendung einer Website für Auslastungstests in der Praxis in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b5df4fe7db024ea7d958494faf4f332fc1a30db5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
 
@@ -26,16 +26,16 @@ Mit dem Auslastungstest-Editor oder dem Assistenten für Testmischungsmodelle k�
 
 Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
 
--   **Auf Grundlage der Gesamtzahl der Tests**: Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert. Weitere Informationen finden Sie in [Prozentsatz nach gestarteten Tests](#BasedOnTestsStarted).
+-   **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert. Weitere Informationen finden Sie in [Prozentsatz nach gestarteten Tests](#BasedOnTestsStarted).
 
--   **Auf Grundlage der Anzahl der virtuellen Benutzer**: Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert. Weitere Informationen finden Sie unter [Prozentsatz nach virtuellen Benutzern](#PercentageBasedonVirtualUsers).
+-   **Auf Grundlage der Anzahl der virtuellen Benutzer:** Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert. Weitere Informationen finden Sie unter [Prozentsatz nach virtuellen Benutzern](#PercentageBasedonVirtualUsers).
 
--   **Auf Grundlage der Benutzergeschwindigkeit**: Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen. Weitere Informationen finden Sie unter [Bestimmen der Geschwindigkeit bei der Testmischung](#PacingTestMix).
+-   **Auf Grundlage der Benutzergeschwindigkeit:** Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen. Weitere Informationen finden Sie unter [Bestimmen der Geschwindigkeit bei der Testmischung](#PacingTestMix).
 
     > [!TIP]
     > Wann wählen Sie **Testmischungsprozentsatz** und wann **Prozentsatz nach virtuellen Benutzern** aus? Der Unterschied zwischen diesen beiden Auswahlmöglichkeiten kommt zum Tragen, wenn einige Tests in der Testmischung länger dauern als andere Tests. In dieser Situation sollten Sie vorzugsweise **Prozentsatz nach virtuellen Benutzern** auswählen. Durch diese Auswahl können Sie einen Testlauf vermeiden, bei dem eine hohe Wahrscheinlichkeit besteht, dass zu viele Benutzer Tests von langer Dauer ausführen. Wenn die Tests jedoch alle eine ähnliche Dauer haben, ist die Auswahl von **Testmischungsprozentsatz** sicherer.
 
--   **Auf Grundlage der sequenziellen Reihenfolge**: Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequential Order (Sequenzielle Reihenfolge)](#SequentialOrder).
+-   **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequential Order (Sequenzielle Reihenfolge)](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
  Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:

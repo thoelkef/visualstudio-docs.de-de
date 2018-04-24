@@ -1,19 +1,19 @@
 ---
 title: Indikatorenfenster für die Analyse von Auslastungstests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, counters panel
 ms.assetid: e1a388d7-5d33-4631-931a-5653ac4aefdc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e693872784519f5cdcacbd0691b6f69334af22e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f6543cc42d6ac62a252b450a232700b17f05b719
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Verwenden des Indikatorenfensters in der Diagramm- und Tabellenansicht
 
@@ -37,7 +37,7 @@ Das Indikatorenfenster bietet die folgenden Funktionen:
 
          Eine Szenarioverzweigung enthält Webleistungstestknoten. Die Webleistungstestknoten enthalten Knoten für Seiten, Anforderungen und Transaktionen. Jeder Endknoten in dieser Struktur ist ein Leistungsindikator, der einem Diagramm hinzugefügt werden kann.
 
-    -   **Computer:** Diese Verzweigung enthält eine nach Computer gruppierte Auflistung aller Indikatorinstanzen, die keinem Auslastungstest zugeordnet sind. Der Branch „Computer“ enthält einen Knoten für jeden Computer, der dem im Abschnitt „Rollen“ der ausgewählten Testeinstellungen angegebenen Auslastungstestcontroller zugeordnet ist. Weitere Informationen finden Sie unter [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
+    -   **Computer:** Diese Verzweigung enthält eine nach Computer gruppierte Auflistung aller Indikatorinstanzen, die keinem Auslastungstest zugeordnet sind. Der Branch „Computer“ enthält einen Knoten für jeden Computer, der dem im Abschnitt „Rollen“ der ausgewählten Testeinstellungen angegebenen Auslastungstestcontroller zugeordnet ist. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
          Jeder Computerknoten enthält einen Satz von Leistungsindikatorkategorien, die von diesem Computer erfasst werden. Kategorien enthalten Indikatoren, und Indikatoren enthalten Namen von Leistungsindikatorinstanzen.
 
@@ -72,7 +72,7 @@ Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
 ## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Überlegungen zum Einschließen von Details der zeitlichen Steuerung zur Erfassung von prozentualen Daten
 
-In den Laufzeiteinstellungen im Auslastungstest-Editor ist eine Eigenschaft mit dem Namen **Speicher für Details der zeitlichen Steuerung** verfügbar. Wenn die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aktiviert ist, werden die Zeiten für die Ausführung der einzelnen Tests, Transaktionen und Seiten beim Auslastungstest im entsprechenden Ergebnisrepository gespeichert. Dadurch können Daten für den 90. und 95. Prozentwert im Auslastungstest-Analyzer in den Tabellen „Tests“, „Transaktionen“ und „Seiten“ angezeigt werden.
+In den Laufzeiteinstellungen im Auslastungstest-Editor ist eine Eigenschaft namens **Speicher für Details der zeitlichen Steuerung** verfügbar. Wenn die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aktiviert ist, werden die Zeiten für die Ausführung der einzelnen Tests, Transaktionen und Seiten beim Auslastungstest im entsprechenden Ergebnisrepository gespeichert. Dadurch können Daten für den 90. und 95. Prozentwert im Auslastungstest-Analyzer in den Tabellen „Tests“, „Transaktionen“ und „Seiten“ angezeigt werden.
 
 Zum Aktivieren der Eigenschaft **Speicher für Details der zeitlichen Steuerung** sind zwei Optionen in den Laufzeiteinstellungseigenschaften verfügbar: **StatisticsOnly** und **AllIndividualDetails**. Mit beiden Optionen werden alle Einzeltests, Seiten und Transaktionen zeitlich gesteuert, und prozentuale Daten werden über die einzelnen Zeitsteuerungsdaten erfasst. Der Unterschied besteht darin, dass bei der Option **StatisticsOnly** die einzelnen Daten zur zeitlichen Steuerung aus dem Repository gelöscht werden, sobald die prozentualen Daten berechnet wurden. Dies reduziert den erforderlichen Speicherplatz im Repository, wenn Sie Details der zeitlichen Steuerung verwenden. Fortgeschrittene Benutzer möchten die Detaildaten der zeitlichen Steuerung jedoch möglicherweise mithilfe von SQL-Tools auf andere Weise verarbeiten. Wenn dies der Fall ist, sollte die Option **AllIndividualDetails** verwendet werden, damit die Detaildaten der zeitlichen Steuerung für diese Verarbeitung verfügbar sind. Wenn Sie die Eigenschaft auf **AllIndividualDetails** festlegen, können Sie zudem die Aktivitäten virtueller Benutzer nach Abschluss des Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer im Auslastungstest-Analyzer analysieren. Weitere Informationen finden Sie unter [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 

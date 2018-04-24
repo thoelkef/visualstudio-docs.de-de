@@ -3,28 +3,24 @@ title: Erstellen einer Node.js- und Express-App in Visual Studio | Microsoft-Dok
 description: In diesem Tutorial erstellen Sie eine Node.js- und Express-App in Visual Studio.
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
-In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.  
+In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
 
 In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
-1. Öffnen Sie Visual Studio 2017.  
+1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.  
+1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** im linken Bereich den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Azure Node.js Express 4-Basisanwendung** und anschließend auf **OK**.   
+1. Erweitern Sie im Dialogfeld **Neues Projekt** im linken Bereich den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Azure Node.js Express 4-Basisanwendung** und anschließend auf **OK**.
 
-     Wenn die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht angezeigt wird, müssen Sie zunächst die Workload **Node.js-Entwicklung** installieren. 
+     Wenn die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht angezeigt wird, müssen Sie zunächst die Workload **Node.js-Entwicklung** installieren.
 
     Visual Studio erstellt die neue Projektmappe und öffnet das Projekt. Die Projektdatei *app.js* wird im Editor (linker Bereich) geöffnet.
 
@@ -130,11 +126,11 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 1. Geben Sie nach der `data`-Zeichenfolge `: get` ein. IntelliSense zeigt Ihnen daraufhin die `getData`-Funktion an. Klicken Sie auf `getData`.
 
-    ![Verwendung von IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![Verwendung von IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Wenn Sie das Komma (`,`) vor `"data"` entfernen, wird die Syntax im Ausdruck grün unterkringelt. Zeigen Sie auf die Syntaxhervorhebung.
 
-    ![Syntaxfehler anzeigen](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Syntaxfehler anzeigen](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     Die letzte Zeile dieser Meldung besagt, dass der JavaScript-Interpreter ein Komma erwartet (`,`).
 
@@ -152,15 +148,15 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
-    ![Haltepunkt festlegen](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Haltepunkt festlegen](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
 1. Wählen Sie das Debugziel in der Debug-Symbolleiste aus.
 
-    ![Debugziel auswählen](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Debugziel auswählen](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Drücken Sie **F5** (**Debuggen** > **Debuggen starten**), um die Anwendung auszuführen.
 
@@ -178,15 +174,15 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 1. Klicken Sie auf die Schaltflächen, um verschiedene Bilder anzuzeigen.
 
-    ![Im Browser ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Im Browser ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Schließen Sie den Webbrowser.  
+1. Schließen Sie den Webbrowser.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Optional) Veröffentlichen in Azure App Service
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
 
-   ![Veröffentlichen in Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Veröffentlichen in Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Klicken Sie auf **Microsoft Azure App Service**.
 
@@ -198,11 +194,11 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
     Bei erfolgreicher Bereitstellung wird Ihre App in einem Browser geöffnet, der in Azure App Service ausgeführt wird. Klicken Sie auf eine Schaltfläche, um ein Bild anzuzeigen.
 
-   ![Die in Azure App Service ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Die in Azure App Service ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Damit haben Sie das Tutorial erfolgreich abgeschlossen.
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-steps"></a>Nächste Schritte
 
 In diesem Tutorial haben Sie erfahren, wie Sie mit Express eine Node.js-App erstellen und ausführen und wie Sie mit dem Debugger einen Haltepunkt festlegen.
 

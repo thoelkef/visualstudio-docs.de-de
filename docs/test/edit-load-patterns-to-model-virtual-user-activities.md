@@ -1,7 +1,7 @@
 ---
 title: Auslastungsmuster für Auslastungstests in Visual Studio| Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 - load tests, scenarios
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 986b2e263a5beedf7f40ed36526365735b3ba17f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -34,7 +34,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 #### <a name="constant-load-pattern-considerations"></a>Überlegungen zu konstanten Auslastungsmustern
 
- Ein konstantes Auslastungsmuster wird verwendet, um bei der Ausführung eines Auslastungstests die gleiche Benutzerauslastung auszuführen. Achten Sie darauf, ein konstantes Auslastungsmuster nicht mit einer hohen Benutzeranzahl zu verwenden. Dadurch werden am Anfang des Auslastungstests die Server möglicherweise unangemessen und unrealistisch stark belastet. Wenn der Auslastungstest z. B. einen Webtest enthält, der mit einer Anforderung an eine Homepage beginnt und Sie den Auslastungstest mit einer konstanten Auslastung von 1.000 Benutzern einrichten, sendet der Auslastungstest die ersten 1.000 Anforderungen möglichst schnell an die Homepage. Dies ist möglicherweise keine realistische Simulation von realem Zugriff auf die Website. Um das zu verhindern, können Sie ein schrittweises Auslastungsmuster verwenden, das allmählich auf 1.000 Benutzer ansteigt, oder geben Sie in den Laufzeiteinstellungen für Auslastungstests eine Aufwärmphase an. Wenn eine Aufwärmphase angegeben wird, erhöht der Auslastungstest automatisch allmählich die Auslastung während der Aufwärmphase. Weitere Informationen finden Sie unter [Configuring Scenario Start Delays (Konfigurieren von Szenariostartverzögerungen)](../test/configure-scenario-start-delays.md).
+ Ein konstantes Auslastungsmuster wird verwendet, um bei der Ausführung eines Auslastungstests die gleiche Benutzerauslastung auszuführen. Achten Sie darauf, ein konstantes Auslastungsmuster nicht mit einer hohen Benutzeranzahl zu verwenden. Dadurch werden am Anfang des Auslastungstests die Server möglicherweise unangemessen und unrealistisch stark belastet. Wenn der Auslastungstest z. B. einen Webtest enthält, der mit einer Anforderung an eine Homepage beginnt und Sie den Auslastungstest mit einer konstanten Auslastung von 1.000 Benutzern einrichten, sendet der Auslastungstest die ersten 1.000 Anforderungen möglichst schnell an die Homepage. Dies ist möglicherweise keine realistische Simulation von realem Zugriff auf die Website. Um das zu verhindern, können Sie ein schrittweises Auslastungsmuster verwenden, das allmählich auf 1.000 Benutzer ansteigt, oder geben Sie in den Laufzeiteinstellungen für Auslastungstests eine Aufwärmphase an. Wenn eine Aufwärmphase angegeben wird, erhöht der Auslastungstest automatisch allmählich die Auslastung während der Aufwärmphase. Weitere Informationen finden Sie unter [Konfigurieren von Szenariostartverzögerungen](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Schritt
 

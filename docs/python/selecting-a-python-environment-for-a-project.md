@@ -1,26 +1,21 @@
 ---
-title: Auswählen einer Umgebung für ein Projekt | Microsoft-Dokumentation
+title: Auswählen einer Umgebung für ein Projekt
 description: Im Visual Studio-Projektmappen-Explorer können Sie einen bestimmten Python-Interpreter (eine Umgebung) zuweisen, die immer für alle Projekte verwendet wird. Die Standardumgebung wird ignoriert. Sie können auch virtuelle Umgebungen erstellen und verwalten.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Auswählen eines Python-Interpreters und einer Umgebung zur Verwendung in einem Projekt
 
@@ -111,7 +106,7 @@ Erweitern Sie im Projektmappen-Explorer den Knoten einer bestimmten Umgebung, um
 
 Um neue Pakete zu installieren, klicken Sie mit der rechten Maustaste auf die Umgebung, und wählen Sie **Python-Paket installieren...** aus, um zur Registerkarte **Pakete** im Fenster **Python-Umgebungen** zu wechseln. Geben Sie einen Suchbegriff ein (in der Regel den Paketnamen), und Visual Studio zeigt entsprechende Pakete an.
 
-Pakete (und Abhängigkeiten) werden in Visual Studio vom [Python Package Index (PyPI)](https://pypi.python.org/pypi) heruntergeladen. Dort können Sie auch nach verfügbaren Paketen suchen. Statusleiste und Ausgabefenster von Visual Studio zeigen Informationen zur Installation an. Um ein Paket zu deinstallieren, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Entfernen** aus.
+Pakete (und Abhängigkeiten) werden in Visual Studio vom [Python Package Index (PyPI)](https://pypi.org) heruntergeladen. Dort können Sie auch nach verfügbaren Paketen suchen. Statusleiste und Ausgabefenster von Visual Studio zeigen Informationen zur Installation an. Um ein Paket zu deinstallieren, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Entfernen** aus.
 
 Hinweis: Die angezeigten Einträge sind nicht immer unbedingt richtig, und eine Installation oder Deinstallation ist möglicherweise unzuverlässig oder unmöglich. Visual Studio verwendet den pip-Paket-Manager, falls verfügbar, und lädt ihn bei Bedarf herunter und installiert ihn. Visual Studio kann auch den easy_install-Paket-Manager verwenden. Pakete, die mit `pip` oder `easy_install` über die Befehlszeile installiert wurden, werden ebenfalls angezeigt.
 

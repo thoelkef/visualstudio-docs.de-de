@@ -1,7 +1,7 @@
 ---
 title: Seitenantwortzeit in einem Auslastungstest in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, response times
 - response times in load tests
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 055bb9b9ae369cd6b62741f7d23295c34b7d1d32
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42cde7bda2c97d0e64589d0679b14a93d97c66cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Gewusst wie: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
@@ -37,7 +37,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 ### <a name="to-view-response-time-data-in-a-table"></a>So zeigen Sie Antwortzeitdaten in einer Tabelle an
 
-1.  Wählen Sie im Auslastungstest-Analyzer auf der Symbolleiste die Option **Tabellen** aus, um sicherzustellen, dass das Tabellenraster angezeigt wird.
+1.  Klicken Sie in der Auslastungstestanalyse auf der Symbolleiste auf **Tabellen**, um sicherzustellen, dass das Tabellenraster angezeigt wird.
 
 2.  Wählen Sie im Dropdown-Listenfeld **Tabelle** die Option **Seiten** aus.
 

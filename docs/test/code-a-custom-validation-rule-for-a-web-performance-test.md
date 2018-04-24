@@ -1,7 +1,7 @@
 ---
 title: Programmieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
@@ -14,13 +14,13 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c1c730850eb412ddcceda266cc01bf7360b6b882
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest
 
@@ -33,18 +33,18 @@ Sie können eigene Validierungsregeln erstellen. Dazu leiten Sie Ihre eigene Reg
 
 1.  Öffnen Sie ein Testprojekt, das einen Webleistungstest enthält.
 
-2.  Optional: Erstellen Sie ein separates Klassenbibliotheksprojekt, in dem die Validierungsregel gespeichert wird.
+2.  (Optional) Erstellen Sie ein separates Klassenbibliotheksprojekt, in dem die Validierungsregel gespeichert wird.
 
     > [!IMPORTANT]
     > Die Klasse kann im selben Projekt erstellt werden, in dem sich die Tests befinden. Wenn die Regel erneut verwendet werden soll, wird jedoch empfohlen, ein separates Klassenbibliotheksprojekt zu erstellen, in dem die Regel gespeichert wird. Wenn Sie ein separates Projekt erstellen, müssen Sie die optionalen Schritte in dieser Prozedur ausführen.
 
-3.  Optional: Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework DLL ein.
+3.  (Optional) Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework DLL ein.
 
 4.  Erstellen Sie eine von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>-Klasse abgeleitete Klasse. Implementieren Sie den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*>-Member und den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>-Member.
 
-5.  Optional: Erstellen Sie das neue Klassenbibliotheksprojekt.
+5.  (Optional) Erstellen Sie das neue Klassenbibliotheksprojekt.
 
-6.  Optional: Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Validierungsregel hinzu.
+6.  (Optional) Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Validierungsregel hinzu.
 
 7.  Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
 

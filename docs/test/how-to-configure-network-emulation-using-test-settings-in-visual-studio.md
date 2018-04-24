@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/03/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5fd9fb0f91ee38293c29db78529062a8fd217f01
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 137f1980c53d457ef166008a438fca0effacbf44
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Gewusst wie: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
@@ -82,5 +82,5 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
-- [Ausführen manueller Tests (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Run manual tests (VSTS) (Ausführen manueller Tests (VSTS))](/vsts/manual-test/getting-started/run-manual-tests)

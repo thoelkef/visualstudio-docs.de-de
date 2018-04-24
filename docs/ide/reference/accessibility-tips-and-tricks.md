@@ -1,26 +1,23 @@
 ---
-title: "Tipps und Tricks zur Barrierefreiheit für Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Tipps und Tricks zur Barrierefreiheit für Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 09/15/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 06f378c3ac0cfc808094170c37792399812538bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 > [!TIP]
@@ -45,7 +42,7 @@ Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Si
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Zugreifen auf Symbolleisten mithilfe von Tastenkombinationen
 Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Die folgenden Tastenkombinationen helfen Ihnen, auf diese zuzugreifen.
 
-|Funktion|description|Tastenkombination|  
+|Feature|description|Tastenkombination|  
 |-------------|-----------------|---------------------|  
 |IDE-Symbolleisten|Wählen Sie die erste Schaltfläche in der Standardsymbolleiste.|**ALT**, **STRG** + **TAB**|  
 |Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT** + **ALT**|
@@ -54,7 +51,7 @@ Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolle
 ### <a name="other-useful-shortcut-key-combinations"></a>Andere häufig verwendete Tastenkombinationen  
 Zu diesen Tastenkombinationen gehören:
 
-|Funktion|description|Tastenkombination|  
+|Feature|description|Tastenkombination|  
 |-------------|-----------------|---------------------|  
 |IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LINKE ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|  
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|  

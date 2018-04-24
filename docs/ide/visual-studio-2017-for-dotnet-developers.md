@@ -3,19 +3,19 @@ title: Visual Studio 2017 für .NET-Entwickler | Microsoft-Dokumentation
 description: Übersicht über Features von Visual Studio 2017, mit denen Sie .NET-Code schneller und besser schreiben können.
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Produktivitätsleitfaden für Visual Studio 2017 für .NET-Entwickler
 
@@ -98,31 +98,31 @@ Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codeb
 | Gehe zu Implementierung | **STRG+F12** | Mit „Gehe zu Definition“ für das Schlüsselwort `override` können Sie zum überschriebenen Member navigieren. |
 | Gehe zu Definition | **F12** oder **STRG+Klicken**| Sie können bei gedrückter **STRG**-TASTE klicken, um zur Definition zu navigieren. | 
 | Peek-Definition | **ALT+F12** | Inlineansicht einer Definition |
-| Strukturschnellansicht | Graue, gepunktete Linien zwischen geschweiften Klammern | Zeigen Sie darauf, um die Codestruktur anzuzeigen. |
+| Strukturschnellansicht | Graue, gepunktete Linien zwischen geschweiften Klammern | Zeigen Sie darauf, um Ihre Codestruktur anzuzeigen. |
 | Navigation zu dekompilierten Assemblys | **F12** oder **STRG+Klicken** | Navigieren Sie zur externen Quelle (mit ILSpy dekompiliert), indem Sie folgendes Feature aktivieren: **Extras > Optionen > Text-Editor > C# > Erweitert > Navigation zu dekompilierten Quellen aktivieren**. |
 
 ![„Gehe zu allen“ und „Alle Verweise suchen“](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>Ich möchte meine Komponententests ausführen und anzeigen.
-Wir haben bei den Testfunktionen in Visual Studio 2017 viele Verbesserungen vorgenommen. Verwenden Sie eine unserer Unittestoberflächen mit den Testframeworks MSTest-v1, MSTest v2, NUnit oder XUnit.
-- Die Testermittlung des *Test-Explorers* ist in Version 15.6 schnell. (Führen Sie ein Upgrade auf die neueste Version Ihres Testadapters durch, um optimale Ergebnisse zu erzielen.)
-- Organisieren Sie mit unserer neuen *hierarchischen Sortierung* in Version 15.6 Ihre Tests im Test-Explorer.
-- [Live Unit Testing](../test/live-unit-testing.md) führt ständig Tests aus, die durch Ihre Codeänderungen beeinflusst werden, und aktualisiert Inline-Editor-Symbole, um Sie über den Status Ihres Tests zu informieren. Schließen Sie bestimmte Tests oder Testprojekte in Ihren *Livetestsatz* ein oder von diesem aus.
+Wir haben bei den Testfunktionen in Visual Studio 2017 viele Verbesserungen vorgenommen. Verwenden Sie eine unserer Unittestoberflächen mit den Testframeworks MSTest v1, MSTest v2, NUnit oder XUnit.
+- Die Testermittlung des *Test-Explorers* ist in Version 15.6 schnell. (Führen Sie ein Upgrade auf die neueste Version Ihres Testadapters durch, um optimale Ergebnisse zu erhalten.)
+- Organisieren Sie Ihre Tests im Test-Explorer mit unserer neuen *hierarchischen Sortierung* in Version 15.6.
+- [Live Unit Testing](../test/live-unit-testing.md) führt laufend Tests aus, die durch Ihre Codeänderungen beeinflusst werden, und aktualisiert Inline-Editor-Symbole, um Sie über den Status Ihres Tests zu informieren. Schließen Sie bestimmte Tests oder Testprojekte in Ihren *aktiven Testsatz* ein oder von diesem aus.
 
 ![Hierarchieansicht für den Test-Explorer in Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Ich möchte meinen Code debuggen.
-Wir haben unzählige neue Funktionen zum Debuggen in Visual Studio 2017 hinzugefügt. 
+Wir haben Visual Studio 2017 um unzählige neue Funktionen zum Debuggen erweitert. 
 - Durch *Ausführung bis Klick* können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht. 
 - Die neue *Ausnahmen-Hilfe* setzt die wichtigsten Informationen (z.B. die als NULL festzulegende Variable in NullReferenceException) auf die oberste Ebene im Dialogfeld.
-- Durch die Funktion [Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md) zum Debuggen können Sie zu den vorherigen Haltepunkten oder Schritte zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
-- Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer Livewebanwendung bei Auslösung einer Ausnahme untersuchen (muss in Azure erfolgen).
+- Durch Debuggen mit der Funktion [Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
+- Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 
 ![Neue Ausnahmen-Hilfe in VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Ich möchte die Versionskontrolle bei meinen Projekten verwenden.
 Sie können mithilfe von Git oder der TFVC Ihren Code in Visual Studio speichern und aktualisieren. 
-- Organisieren Sie Ihre lokalen Änderungen mit dem *Team Explorer*, und verfolgen Sie ausstehende Commits und Änderungen über die Statusleiste nach. 
+- Organisieren Sie Ihre lokalen Änderungen mit dem *Team Explorer*, und verfolgen Sie ausstehende Commits und Änderungen mit der Statusleiste nach. 
 - Richten Sie mit unserer Erweiterung [Continuous Delivery Tools für Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) Continuous Integration und Delivery für Ihre Projekte in Visual Studio ein, und führen Sie den agilen Workflow für Entwickler ein.
 
 ![Quellcodeverwaltung in Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
