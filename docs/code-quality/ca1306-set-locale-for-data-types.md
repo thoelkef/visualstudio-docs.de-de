@@ -1,10 +1,8 @@
 ---
-title: 'CA1306: Gebietsschema für Datentypen festlegen | Microsoft Docs'
-ms.custom: ''
+title: 'CA1306: Gebietsschema für Datentypen festlegen'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1306
 - SetLocaleForDataTypes
@@ -17,40 +15,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344b93f6c48ba1848c272522b4580b03ec4f0b5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7c95c72978e3828d566598e6076bde904169f4b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Gebietsschema für Datentypen festlegen
-|||  
-|-|-|  
-|TypeName|SetLocaleForDataTypes|  
-|CheckId|CA1306|  
-|Kategorie|Microsoft.Globalization|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
-  
-## <a name="cause"></a>Ursache  
- Eine Methode oder ein Konstruktor erstellt eine oder mehrere <xref:System.Data.DataTable?displayProperty=fullName> oder <xref:System.Data.DataSet?displayProperty=fullName> Instanzen und die Gebietsschemaeigenschaft nicht explizit festgelegt (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> oder <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Das Gebietsschema bestimmt kulturspezifische Darstellungselemente für Daten, z. B. für Zahlenwerte, Währungssymbole und Sortierreihenfolge verwendete Formatierung. Beim Erstellen einer <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>, sollten Sie das Gebietsschema explizit festlegen. Standardmäßig ist das Gebietsschema für diese Art der aktuellen Kultur. Für Daten, die in einer Datenbank oder Datei gespeichert und Global gemeinsam genutzt wird, sollte das Gebietsschema in der Regel auf die invariante Kultur festgelegt werden (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Wenn Daten über Kulturen hinweg gemeinsam verwendet werden, verwenden das Standardgebietsschema kann dazu führen, dass der Inhalt des der <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> dargestellt oder falsch interpretiert werden.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, legen Sie explizit das Gebietsschema für die <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe ist, die Daten nicht freigegeben werden oder die Standardeinstellung das gewünschte Verhalten in allen unterstützten Szenarien ergibt.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel erstellt zwei <xref:System.Data.DataTable> Instanzen.  
-  
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
-  
-## <a name="see-also"></a>Siehe auch  
- <xref:System.Data.DataTable?displayProperty=fullName>   
- <xref:System.Data.DataSet?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|SetLocaleForDataTypes|
+|CheckId|CA1306|
+|Kategorie|Microsoft.Globalization|
+|Unterbrechende Änderung|Nicht unterbrechend|
+
+## <a name="cause"></a>Ursache
+ Eine Methode oder ein Konstruktor erstellt eine oder mehrere <xref:System.Data.DataTable?displayProperty=fullName> oder <xref:System.Data.DataSet?displayProperty=fullName> Instanzen und die Gebietsschemaeigenschaft nicht explizit festgelegt (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> oder <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Das Gebietsschema bestimmt kulturspezifische Darstellungselemente für Daten, z. B. für Zahlenwerte, Währungssymbole und Sortierreihenfolge verwendete Formatierung. Beim Erstellen einer <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>, sollten Sie das Gebietsschema explizit festlegen. Standardmäßig ist das Gebietsschema für diese Art der aktuellen Kultur. Für Daten, die in einer Datenbank oder Datei gespeichert und Global gemeinsam genutzt wird, sollte das Gebietsschema in der Regel auf die invariante Kultur festgelegt werden (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Wenn Daten über Kulturen hinweg gemeinsam verwendet werden, verwenden das Standardgebietsschema kann dazu führen, dass der Inhalt des der <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> dargestellt oder falsch interpretiert werden.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, legen Sie explizit das Gebietsschema für die <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe ist, die Daten nicht freigegeben werden oder die Standardeinstellung das gewünschte Verhalten in allen unterstützten Szenarien ergibt.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel erstellt zwei <xref:System.Data.DataTable> Instanzen.
+
+ [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+
+## <a name="see-also"></a>Siehe auch
+ <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName> <xref:System.Globalization.CultureInfo?displayProperty=fullName> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>

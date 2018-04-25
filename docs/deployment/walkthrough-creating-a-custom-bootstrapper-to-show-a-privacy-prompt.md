@@ -2,8 +2,7 @@
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Prompt anzeigen | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,23 +16,23 @@ helpviewer_keywords:
 - Windows Installer deployment, prerequisites
 - prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f20389e0487fd548ac239503faae01adb7dbdf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und der Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden dieses Verhalten zustimmen, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob die Berechtigung für die Anwendung für die automatische Aktualisierung verwendet wird. Wenn die Anwendung für die automatische Aktualisierung nicht zulässig ist, wird nicht installiert.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Visual Studio 2010.  

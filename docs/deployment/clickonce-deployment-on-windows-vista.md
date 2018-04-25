@@ -2,8 +2,7 @@
 title: ClickOnce-Bereitstellung unter Windows Vista | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - manifest generation
 - Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe7e05162977daf1e19df6bf1de7402a6163785
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>ClickOnce-Bereitstellung unter Windows Vista
 Erstellen von Anwendungen in Visual Studio codiert für die Benutzerkontensteuerung (UAC) unter Windows Vista normalerweise kein eingebettetes Manifest generiert als binäre XML-Daten in die ausführbare Datei der Anwendung. Da ClickOnce und COM ohne Registrierung Anwendungen ein externes Manifest erforderlich sind, generiert Visual Studio eine Datei für diese Typen von Projekten, die die UAC-Daten, anstatt ein eingebettetes Manifest enthält. Standardmäßig verwendet Visual Studio Informationen aus einer Datei namens app.manifest, zum Generieren von externen UAC-Manifestinformationen (für die Bereitstellung von ClickOnce und COM ohne Registrierung) oder zum Einbetten in ausführbaren Anwendungsdatei (bei allen anderen Fällen). Visual Studio bietet die folgenden Optionen für die manifestgenerierung auf:  

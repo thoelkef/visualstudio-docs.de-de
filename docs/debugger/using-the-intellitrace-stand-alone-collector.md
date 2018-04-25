@@ -2,8 +2,7 @@
 title: Verwenden die eigenständige IntelliTrace Collector | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 410b8a979334edd1c333a43851f996da2b69bd03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.  
@@ -33,7 +32,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
  **Anforderungen**  
   
--   .NET Framework 3.5, 4 oder 4.5  
+-   .NET Framework 3.5, 4 oder 4.5  
   
 -   Visual Studio Enterprise (nicht Professional oder Community Editions) auf einem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien  
   
@@ -54,7 +53,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 -   Auf Internetinformationsdienste (IIS) Version 7.0, 7.5 und 8.0 gehostete ASP.NET-Webanwendungen  
   
--   SharePoint 2010- und SharePoint 2013-Anwendungen  
+-   SharePoint 2010- und SharePoint 2013-Anwendungen  
   
 -   Windows Presentation Foundation (WPF) und Windows Forms-Anwendungen.  
   
@@ -301,11 +300,11 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 -   Überprüfen Sie die Ereignisse im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nicht relevante Ereignisse zu deaktivieren.  
   
-     Um ein Ereignis zu deaktivieren, legen Sie das `enabled` -Attribut für das `<DiagnosticEventSpecification>` -Element auf `false`fest:  
+     Um ein Ereignis zu deaktivieren, legen Sie das `enabled`-Attribut für das `<DiagnosticEventSpecification>`-Element auf `false` fest:  
   
      `<DiagnosticEventSpecification enabled="false">`  
   
-     Wenn das `enabled` -Attribut nicht vorhanden ist, wird das Ereignis aktiviert.  
+     Wenn das `enabled`-Attribut nicht vorhanden ist, wird das Ereignis aktiviert.  
   
      *Wie wird dadurch die Leistung verbessert?*  
   
@@ -315,9 +314,9 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 -   Überprüfen Sie die Module im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nur für Sie interessante Module einzuschließen:  
   
-    1.  Öffnen Sie den Sammlungsplan. Suchen Sie das `<ModuleList>` -Element.  
+    1.  Öffnen Sie den Sammlungsplan. Suchen Sie das `<ModuleList>`-Element.  
   
-    2.  Legen Sie in `<ModuleList>`das `isExclusionList` -Attribut auf `false`fest.  
+    2.  Legen Sie in `<ModuleList>` das `isExclusionList`-Attribut auf `false` fest.  
   
     3.  Verwenden Sie das `<Name>`-Element, um jedes Modul mit einer der folgenden Informationen anzugeben: Dateiname, Zeichenfolgenwert, um jedes Modul einzuschließen, das diese Zeichenfolge enthält, oder öffentlicher Schlüssel.  
   
@@ -362,7 +361,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
      *Warum sollten Module nicht stattdessen ausgeschlossen werden?*  
   
-     Standardmäßig schließen Sammlungspläne Module aus, indem das `isExclusionList` -Attribut auf `true`festgelegt wird. Das Ausschließen von Modulen kann jedoch dazu führen, dass Daten aus Modulen gesammelt werden, die die Kriterien in der Liste nicht erfüllen und für Sie nicht relevant sind, wie etwa Drittanbieter- oder Quellenmodule.  
+     Standardmäßig schließen Sammlungspläne Module aus, indem das `isExclusionList`-Attribut auf `true` festgelegt wird. Das Ausschließen von Modulen kann jedoch dazu führen, dass Daten aus Modulen gesammelt werden, die die Kriterien in der Liste nicht erfüllen und für Sie nicht relevant sind, wie etwa Drittanbieter- oder Quellenmodule.  
   
 -   *Gibt es dabei Daten, die von IntelliTrace nicht gesammelt werden?*  
   
@@ -372,11 +371,11 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-     Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee` - und dem `Address` -Typ.  
+     Der `Employee`-Typ verfügt über die folgenden Attribute: `Id`, `Name` und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee`- und dem `Address`-Typ.  
   
      ![Beziehung zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
-     Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.  
+     Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee`-Objekt auf, das von der `AlterEmployee`-Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address`-Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.  
   
 ##  <a name="WhereElse"></a> Wo kann ich IntelliTrace-Daten außerdem abrufen?  
   

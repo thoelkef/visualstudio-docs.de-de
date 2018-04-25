@@ -1,10 +1,8 @@
 ---
-title: 'CA1006: Generische Typen in Membersignaturen nicht schachteln | Microsoft Docs'
-ms.custom: ''
+title: 'CA1006: Generische Typen in Membersignaturen nicht schachteln'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotNestGenericTypesInMemberSignatures
 - CA1006
@@ -17,52 +15,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a25c19bf6939a0f1f02c60e9be7993894703760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 120acca8486d65962a5d8e3cd26a05ae8cc5ac78
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Generische Typen in Membersignaturen nicht schachteln
-|||  
-|-|-|  
-|TypeName|DoNotNestGenericTypesInMemberSignatures|  
-|CheckId|CA1006|  
-|Kategorie|Microsoft.Design|  
-|Unterbrechende Änderung|Breaking|  
-  
-## <a name="cause"></a>Ursache  
- Ein extern sichtbarer Member verfügt über eine Signatur, die ein geschachteltes Typargument enthält.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Ein geschachteltes Typargument ist ein Typargument, das auch ein generischer Typ ist. Um einen Member aufzurufen, dessen Signatur ein geschachteltes Typargument enthält, muss der Benutzer einen generischen Typ instanziieren und diesen an den Konstruktor eines zweiten generischen Typs übergeben. Die erforderliche Prozedur und die Syntax sind komplex, und diese Vorgehensweise sollte daher vermieden werden.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf an die geschachteltes Typargument entfernen.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in eine Syntax, die leicht zu verstehen und zu verwenden ist, verringert sich die Zeit, die ist erforderlich, um zu erfahren und erhöht die Annahme-Rate der neue Bibliotheken aus.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine Methode, die die Regel verletzt und die Syntax, die zum Aufrufen dieser Methode erforderlich ist.  
-  
+|||
+|-|-|
+|TypeName|DoNotNestGenericTypesInMemberSignatures|
+|CheckId|CA1006|
+|Kategorie|Microsoft.Design|
+|Unterbrechende Änderung|Breaking|
+
+## <a name="cause"></a>Ursache
+ Ein extern sichtbarer Member verfügt über eine Signatur, die ein geschachteltes Typargument enthält.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Ein geschachteltes Typargument ist ein Typargument, das auch ein generischer Typ ist. Um einen Member aufzurufen, dessen Signatur ein geschachteltes Typargument enthält, muss der Benutzer einen generischen Typ instanziieren und diesen an den Konstruktor eines zweiten generischen Typs übergeben. Die erforderliche Prozedur und die Syntax sind komplex, und diese Vorgehensweise sollte daher vermieden werden.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf an die geschachteltes Typargument entfernen.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in eine Syntax, die leicht zu verstehen und zu verwenden ist, verringert sich die Zeit, die ist erforderlich, um zu erfahren und erhöht die Annahme-Rate der neue Bibliotheken aus.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel zeigt eine Methode, die die Regel verletzt und die Syntax, die zum Aufrufen dieser Methode erforderlich ist.
+
  [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
- [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]  
-  
-## <a name="related-rules"></a>Verwandte Regeln  
- [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
-  
- [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
-  
- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
-  
- [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)  
-  
- [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
-  
- [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)  
-  
- [CA1007: Nach Möglichkeit Generika verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)  
-  
-## <a name="see-also"></a>Siehe auch  
+ [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]
+
+## <a name="related-rules"></a>Verwandte Regeln
+ [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+
+ [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+
+ [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+
+ [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
+
+ [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+
+ [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
+
+ [CA1007: Nach Möglichkeit Generika verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
+
+## <a name="see-also"></a>Siehe auch
  [Generika](/dotnet/csharp/programming-guide/generics/index)

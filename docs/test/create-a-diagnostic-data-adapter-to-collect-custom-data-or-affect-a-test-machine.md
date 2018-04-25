@@ -1,20 +1,20 @@
 ---
 title: Erstellen eines Adapters für diagnostische Daten für Tests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - Diagnostic Data Adapter
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91f340fee26b908ea90ad540e9c9fb2fdb1acf81
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0410fd52e115e2c2c257811e088c46a831d0082d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testsystems
 
@@ -22,7 +22,7 @@ Sie können einen eigenen Adapter für diagnostische Daten erstellen, um Daten w
 
 Mithilfe einer Datei mit Konfigurationseinstellungen können Sie Standardeingaben für einen benutzerdefinierten Adapter für diagnostische Daten bereitstellen. So können Sie beispielsweise Informationen zum Speicherort der zu erfassenden Datei angeben, die den Testergebnissen angefügt werden soll, und festlegen, wie viel Speicherplatz auf dem System verbleiben soll. Diese Daten können für alle von Ihnen erstellten Testeinstellungen konfiguriert werden. Sie können mit dem von Microsoft Test Manager bereitgestellten Standard-Editor angezeigt und bearbeitet werden. Es besteht auch die Möglichkeit, ein eigenes Benutzersteuerelement zu erstellen, das als Editor verwendet wird. Alle an der Adapterkonfiguration im Editor vorgenommenen Änderungen werden mit den Testeinstellungen gespeichert.
 
-Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeinstellungen festlegen, dass sie aktiv sind. Weitere Informationen über Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeinstellungen festlegen, dass sie aktiv sind. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
 
 ## <a name="tasks"></a>Aufgaben
 
@@ -38,4 +38,4 @@ Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeins
 ## <a name="see-also"></a>Siehe auch
 
 - [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)

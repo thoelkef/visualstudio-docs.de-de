@@ -1,6 +1,5 @@
 ---
-title: Visual Studio-Tools mit Daten für C++ | Microsoft Docs
-ms.custom: ''
+title: Visual Studio-Tools mit Daten für C++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,11 +11,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: a853edf80cd11400b2e54c17dfe95f1ccfb1c822
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b258db15ddf879e8ef64e442082936d0d37e732
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio-Tools mit Daten für C++
 
@@ -26,22 +25,22 @@ Zur Verbindung mit SQL-Datenbanken können systemeigene C++-Anwendungen, die ODB
 
 Nutzen von benutzerdefinierten Funktionen in SQL Server 2005 und höher, verwenden die [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Der native Client enthält außerdem die SQL Server-ODBC-Treiber und der SQL Server OLE DB-Anbieter in eine systemeigene dynamic Link Library (DLL). Anwendungen mit APIs in systemeigenem Code (ODBC, OLE DB und ADO) für Microsoft SQL Server unterstützt werden.  SQL Server Native Client wird mit SQL Server Data Tools installiert. Die Programmierung Handbuch finden Sie hier: [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
-## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Von einer C++-Anwendung eine Verbindung auf "LocalDB" über ODBC und SQL Native Client  
-  
-1.  Installieren von SQL Server Datatools.  
-  
-2.  Wenn Sie eine SQL-Beispieldatenbank für die Verbindung benötigen, laden Sie die Northwind-Datenbank, und Entpacken Sie es an einem neuen Speicherort.  
-  
-3.  Verwenden Sie SQL Server Management Studio, um die entzippt anzufügende Datei auf "LocalDB" anzufügen. Beim Starten von SQL Server Management Studio eine Verbindung herstellen Sie, um \MSSQLLocalDB (Localdb).  
-  
-     ![Dialogfeld "Verbindung" SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "Raddata SSMS-Verbindungsdialogfeld")  
-  
-     Klicken Sie dann mit der rechten Maustaste auf den Knoten "Localdb" im linken Bereich, und wählen Sie **Anfügen**.  
-  
-     ![Datenbank anfügen SSMS](../data-tools/media/raddata-ssms-attach-database.png "Raddata SSMS Anfügen der Datenbank")  
-  
+## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Von einer C++-Anwendung eine Verbindung auf "LocalDB" über ODBC und SQL Native Client
+
+1.  Installieren von SQL Server Datatools.
+
+2.  Wenn Sie eine SQL-Beispieldatenbank für die Verbindung benötigen, laden Sie die Northwind-Datenbank, und Entpacken Sie es an einem neuen Speicherort.
+
+3.  Verwenden Sie SQL Server Management Studio, um die entzippt anzufügende Datei auf "LocalDB" anzufügen. Beim Starten von SQL Server Management Studio eine Verbindung herstellen Sie, um \MSSQLLocalDB (Localdb).
+
+     ![Dialogfeld "Verbindung" SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "Raddata SSMS-Verbindungsdialogfeld")
+
+     Klicken Sie dann mit der rechten Maustaste auf den Knoten "Localdb" im linken Bereich, und wählen Sie **Anfügen**.
+
+     ![Datenbank anfügen SSMS](../data-tools/media/raddata-ssms-attach-database.png "Raddata SSMS Anfügen der Datenbank")
+
 4.  Herunterladen Sie der ODBC-Windows-SDK-Beispiel und Entpacken Sie es an einem neuen Speicherort. Dieses Beispiel zeigt die grundlegende ODBC-Befehle, die für die Verbindung mit einer Datenbank und Abfragen und Befehle verwendet werden. Weitere Informationen finden Sie Informationen zu diesen Funktionen in der [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Wenn Sie zuerst die Projektmappe laden (er befindet sich im Ordner "C++"), bietet Visual Studio auf die aktuelle Version von Visual Studio die Projektmappe zu aktualisieren. Klicken Sie auf **Ja**.
-  
+
 5.  Um die native Client verwenden zu können, benötigen Sie die Headerdatei und Lib-Datei. Diese Dateien enthalten Funktionen und Definitionen, die spezifisch für SQL Server, über die ODBC-Funktionen in sql.h definiert. In **Projekt** > **Eigenschaften** > **VC++-Verzeichnisse**, fügen Sie die folgenden Includeverzeichnis hinzu:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
@@ -50,25 +49,25 @@ Und das Verzeichnis für diese Bibliothek:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6.  Fügen Sie die folgenden Zeilen in odbcsql.cpp hinzu. Die #define wird verhindert, dass irrelevante OLE DB-Definitionen aus, das kompiliert wird.  
-  
+6.  Fügen Sie die folgenden Zeilen in odbcsql.cpp hinzu. Die #define wird verhindert, dass irrelevante OLE DB-Definitionen aus, das kompiliert wird.
+
     ```cpp
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
-  
-    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorhergehenden Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt jetzt zur Verwendung dieser Funktionen konfiguriert wurde. Weitere Informationen finden Sie unter [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client).  
-  
-7.  Geben Sie den zu verwendenden im Subsystem ODBC-Treiber. Im Beispiel wird der Treiber Verbindungszeichenfolgen-Attribut in als Befehlszeilenargument übergeben. In **Projekt** > **Eigenschaften** > **Debuggen**, fügen Sie dieses Befehlsargument hinzu:  
-  
+    #define _SQLNCLI_ODBC_
+    #include <sqlncli.h>
+    ```
+
+    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorhergehenden Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt jetzt zur Verwendung dieser Funktionen konfiguriert wurde. Weitere Informationen finden Sie unter [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client).
+
+7.  Geben Sie den zu verwendenden im Subsystem ODBC-Treiber. Im Beispiel wird der Treiber Verbindungszeichenfolgen-Attribut in als Befehlszeilenargument übergeben. In **Projekt** > **Eigenschaften** > **Debuggen**, fügen Sie dieses Befehlsargument hinzu:
+
     ```cpp
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
-  
-8.  Drücken Sie F5, um die Anwendung zu erstellen und auszuführen. Ein Dialogfeld aus dem Treiber, die Sie eine Datenbank geben dazu aufgefordert werden, sollte angezeigt werden. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung verwenden**. Press **OK**. Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Es sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:  
-  
-     ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png "Raddata ODBC-Beispiel-Abfrageausgabe")  
-  
+    DRIVER="SQL Server Native Client 11.0"
+    ```
+
+8.  Drücken Sie F5, um die Anwendung zu erstellen und auszuführen. Ein Dialogfeld aus dem Treiber, die Sie eine Datenbank geben dazu aufgefordert werden, sollte angezeigt werden. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung verwenden**. Press **OK**. Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Es sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
+
+     ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png "Raddata ODBC-Beispiel-Abfrageausgabe")
+
 ## <a name="see-also"></a>Siehe auch
 
-[Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

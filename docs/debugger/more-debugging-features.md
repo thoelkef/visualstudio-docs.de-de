@@ -2,8 +2,7 @@
 title: Weitere Debuggingfunktionen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f315a12c9dbe724643f05e17e752a4adfa173ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a46c62c05b762bee3233062a5b84e3ffca20e15a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="more-debugging-features"></a>Weitere Debuggingfunktionen
 Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debugger verwenden können.  
@@ -38,13 +37,13 @@ Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debu
  Beschreibt verschiedene Debugfenster und  
   
  [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)  
- Diskutiert das Just-In-Time-Debuggen, d. h. das automatische Starten des Debuggers, sobald ein Programm bei der Ausführung außerhalb von Visual Studio abstürzt.  
+ Diskutiert das Just-In-Time-Debuggen, d. h. das automatische Starten des Debuggers, sobald ein Programm bei der Ausführung außerhalb von Visual Studio abstürzt.  
   
  [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../debugger/walkthrough-debugging-at-design-time.md)  
- Veranschaulicht, wie Sie über das Direktfenster in Visual Studio eine Funktion oder Unterroutine ausführen können, ohne dass die Anwendung ausgeführt wird. 
+ Veranschaulicht, wie Sie über das Direktfenster in Visual Studio eine Funktion oder Unterroutine ausführen können, ohne dass die Anwendung ausgeführt wird. 
   
  [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)  
- Beschreibt "Bearbeiten und Fortfahren", ein Tool, mit dem Sie den Quellcode bearbeiten können, während sich das Programm im Unterbrechungsmodus befindet. Diese Änderungen können übernommen werden, ohne dass die Debugsitzung beendet und das Programm erneut erstellt werden muss. Darüber hinaus werden die Anweisungen zum Aktivieren und Deaktivieren dieses Features beschrieben.  
+ Beschreibt Bearbeiten und Fortfahren, ein Tool, mit dem Sie den Quellcode bearbeiten können, während sich das Programm im Unterbrechungsmodus befindet. Diese Änderungen können übernommen werden, ohne dass die Debugsitzung beendet und das Programm erneut erstellt werden muss. Darüber hinaus werden die Anweisungen zum Aktivieren und Deaktivieren dieses Features beschrieben.  
   
  [Speichern von Dumpdateien](../debugger/using-dump-files.md)  
  Beschreibt Dumpdateien sowie die Anweisungen zum Speichern und Öffnen. Dumpdateien enthalten eine Momentaufnahme des Programmzustands zu einem bestimmten Zeitpunkt (normalerweise nach einem Absturz). Wenn Sie das Programm auf einem Computer testen, auf dem die Quelldateien oder PDBs nicht installiert sind, können Sie bei einem Absturz eine Dumpdatei speichern und den Absturz dann mithilfe der Dumpdatei auf dem Buildcomputer debuggen, auf dem die Quelldateien und PDBs vorhanden sind. 

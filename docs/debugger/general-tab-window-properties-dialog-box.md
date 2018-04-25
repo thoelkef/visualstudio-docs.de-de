@@ -2,8 +2,7 @@
 title: Registerkarte "Allgemein", Fenstereigenschaften (Dialogfeld) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
@@ -13,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0186b03bd599a3644321b186dbd19c8d7338aca5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f762d935edab5720ccd9add155dac3d0e5f2f186
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Fenstereigenschaften"
 Verwenden der **allgemeine** Registerkarte ", um Informationen über das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md), den Fokus auf die [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die folgenden Einstellungen sind verfügbar, auf die **allgemeine** Registerkarte:  
   
-|Eingabe|Beschreibung|  
+|Eintrag|Beschreibung|  
 |-----------|-----------------|  
 |**Fenstertitel**|Der Text in die fensterbeschriftung, oder in einem Fenster enthalten sind, wenn es sich um ein Steuerelement handelt.|  
 |**Das Fensterhandle**|Die eindeutige ID dieses Fensters. Fenster Nummern werden wiederverwendet. Identifizieren ein Fensters nur für die Lebensdauer des Fensters.|  

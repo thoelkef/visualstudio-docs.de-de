@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Debuggen eines lokal gehosteten WCFS Diensts | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1fcd61c65b29a0ccb262b31a10847ebb80539d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19ce90effca21f6079cc7b569fa6e58f94553627
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts
 Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost ausgeführt werden kann oder der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Die einfachste Möglichkeit zum Debuggen eines lokal gehosteten WCFS ist so konfigurieren Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Starten sowohl Client-als auch bei der Auswahl **Debuggen** auf die **Debuggen** Menü.  

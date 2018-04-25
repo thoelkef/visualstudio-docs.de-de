@@ -2,8 +2,7 @@
 title: Debuggen von Quelle Dateien, allgemeine Eigenschaften Lösung Property Pages Dialog Box | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -25,13 +24,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0d60eef17a6ba92a8346ec6c7ea572aea6297e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)
+# <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Dialogfeld "-Eigenschaftenseiten"
 Auf dieser Eigenschaftenseite wird angegeben, wo der Debugger beim Debuggen der Projektmappe nach Quelldateien sucht.  
   
  Für den Zugriff auf die **Quelldateien debuggen** auf der Seite mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer** , und wählen Sie **Eigenschaften** aus dem Kontextmenü. Erweitern Sie die **allgemeine Eigenschaften** Ordner, und klicken Sie auf die **Quelldateien debuggen** Seite.  

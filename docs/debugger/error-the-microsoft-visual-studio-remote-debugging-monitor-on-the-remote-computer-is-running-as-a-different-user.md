@@ -2,9 +2,8 @@
 title: 'Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer ausgeführt wird als ein anderer Benutzer | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefcb3f358d6dc22b7ea8bcca1c43e79cd9c4414
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2bdc731b65a8d451b6882914e8bed1abca2139b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt
 Wenn Sie versuchen, Remotedebuggen auszuführen, wird möglicherweise folgende Fehlermeldung angezeigt:  

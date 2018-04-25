@@ -2,8 +2,7 @@
 title: Fortsetzen der Ausführung nach einer Ausnahme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,11 +27,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebdb034c85bce6924c90467e0f3cda3bb765832
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 1b26fe427ba83eea9e989e492fde89ade498a114
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbrochen wird, sehen Sie die **Ausnahmen-Hilfe**, in der Standardeinstellung. Wenn Sie deaktiviert haben die **Ausnahmen-Hilfe** in der **Optionen** (Dialogfeld), sehen Sie die **Ausnahmen-Assistent** (C#- oder Visual Basic) oder die **Ausnahme**  (Dialogfeld) (C++).  

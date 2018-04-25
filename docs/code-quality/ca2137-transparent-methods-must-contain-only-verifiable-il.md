@@ -1,10 +1,8 @@
 ---
-title: 'CA2137: Transparente Methoden müssen nur überprüfbare IL enthalten | Microsoft Docs'
-ms.custom: ''
+title: 'CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
@@ -13,35 +11,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c366bb69e25d128b190a9ee8b192f13cf61013
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 647240903ab2ada2e8fb319dca967a346a84b4cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten
-|||  
-|-|-|  
-|TypeName|TransparentMethodsMustBeVerifiable|  
-|CheckId|CA2137|  
-|Kategorie|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
-  
-## <a name="cause"></a>Ursache  
- Eine Methode enthält nicht überprüfbaren Code oder gibt einen Typ nach Verweis zurück.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Diese Regel wird für Versuche durch sicherheitstransparenten Code ausgelöst, nicht überprüfbare MSIL (Microsoft Intermediate Language) auszuführen. Die Regel enthält jedoch kein vollständiges IL-Prüfmodul und verwendet stattdessen Heuristik, um die meisten Verletzungen der MSIL-Überprüfung abzufangen.  
-  
- Um sicher zu sein, dass Ihr Code nur überprüfbare MSIL enthält, führen Sie [Peverify.exe (PEVerify-Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) auf die Assembly. Führen Sie PEVerify mit der **/ transparente** -Option mit der die Ausgabe nur nicht überprüfbare transparente Methoden beschränkt, die einen Fehler verursachen würde. Wenn die / transparent-Option nicht verwendet wird, überprüft PEVerify auch wichtige Methoden, die nicht überprüfbaren Code enthalten dürfen.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode mit dem <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie den nicht überprüfbaren Code.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
-  
-## <a name="example"></a>Beispiel  
- Die Methode in diesem Beispiel wird nicht überprüfbaren Code verwendet und sollte mit markiert werden die <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.  
-  
+|||
+|-|-|
+|TypeName|TransparentMethodsMustBeVerifiable|
+|CheckId|CA2137|
+|Kategorie|Microsoft.Security|
+|Unterbrechende Änderung|Breaking|
+
+## <a name="cause"></a>Ursache
+ Eine Methode enthält nicht überprüfbaren Code oder gibt einen Typ nach Verweis zurück.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Diese Regel wird für Versuche durch sicherheitstransparenten Code ausgelöst, nicht überprüfbare MSIL (Microsoft Intermediate Language) auszuführen. Die Regel enthält jedoch kein vollständiges IL-Prüfmodul und verwendet stattdessen Heuristik, um die meisten Verletzungen der MSIL-Überprüfung abzufangen.
+
+ Um sicher zu sein, dass Ihr Code nur überprüfbare MSIL enthält, führen Sie [Peverify.exe (PEVerify-Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) auf die Assembly. Führen Sie PEVerify mit der **/ transparente** -Option mit der die Ausgabe nur nicht überprüfbare transparente Methoden beschränkt, die einen Fehler verursachen würde. Wenn die / transparent-Option nicht verwendet wird, überprüft PEVerify auch wichtige Methoden, die nicht überprüfbaren Code enthalten dürfen.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode mit dem <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie den nicht überprüfbaren Code.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Unterdrücken Sie keine Warnung dieser Regel.
+
+## <a name="example"></a>Beispiel
+ Die Methode in diesem Beispiel wird nicht überprüfbaren Code verwendet und sollte mit markiert werden die <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+
  [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

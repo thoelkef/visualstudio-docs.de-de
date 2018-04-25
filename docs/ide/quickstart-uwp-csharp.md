@@ -2,11 +2,8 @@
 title: 'Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C# | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 04/04/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7caba5278ec415aec036c501d4911bcd5c7f3c77
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -95,7 +92,7 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
 ### <a name="add-an-event-handler"></a>Hinzufügen eines Ereignishandlers
 
-Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für Code, der aufgerufen wird, wenn ein Ereignis eintritt. In diesem Fall fügt er der Schaltfläche „Hallo Welt!“ eine Aktion hinzu.
+Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für Code, der aufgerufen wird, wenn ein Ereignis eintritt. In diesem Fall fügt er der Schaltfläche „Hallo Welt!“ eine Aktion Schaltfläche.
 
 1. Doppelklicken Sie auf der Entwurfs-Canvas auf das Steuerelement „Schaltfläche“.
 

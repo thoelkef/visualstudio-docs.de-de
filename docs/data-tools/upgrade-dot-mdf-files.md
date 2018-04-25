@@ -1,6 +1,5 @@
 ---
-title: Aktualisieren Sie die MDF-Dateien | Microsoft Docs
-ms.custom: ''
+title: Aktualisieren Sie die MDF-Dateien
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91a58a3605873f309b44f3d22ef4fbc2ca8c12f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c1807614d08d7e3256067fdca2dd0a7fc96277d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren Sie die MDF-Dateien
 
@@ -45,73 +44,73 @@ Sie können außerdem aufgefordert, eine Datenbankdatei zu aktualisieren, die ü
 > Wenn Sie eine MDF-Datei, die in LocalDB 2014 (V12) 32-Bit auf LocalDB 2016 (V13) oder höher erstellt wurde aktualisieren, werden Sie nicht mehr öffnen die Datei in der 32-Bit-Version von LocalDB sein.
 
 Vor dem upgrade einer Datenbank sollten Sie der folgenden Kriterien:
-  
--   Aktualisieren Sie nicht, wenn Sie auf das Projekt in einer älteren Version und eine neuere Version von Visual Studio arbeiten möchten.  
-  
--   Aktualisieren Sie nicht, wenn Ihre Anwendung in Umgebungen verwendet werden, die SQL Server Express statt LocalDB zu verwenden.  
-  
--   Wenn Ihre Anwendung Remoteverbindungen verwendet nicht aktualisiert werden, weil LocalDB anerkennen nicht.  
-  
--   Aktualisieren Sie nicht, wenn Ihre Anwendung auf Internet Information Services (IIS) verwendet.  
-  
--   Erwägen Sie ein Upgrade aus, wenn Sie datenbankanwendungen in einer Sandbox-Umgebung testen möchten, aber nicht zum Verwalten eine Datenbank verwendet werden soll.  
-  
+
+-   Aktualisieren Sie nicht, wenn Sie auf das Projekt in einer älteren Version und eine neuere Version von Visual Studio arbeiten möchten.
+
+-   Aktualisieren Sie nicht, wenn Ihre Anwendung in Umgebungen verwendet werden, die SQL Server Express statt LocalDB zu verwenden.
+
+-   Wenn Ihre Anwendung Remoteverbindungen verwendet nicht aktualisiert werden, weil LocalDB anerkennen nicht.
+
+-   Aktualisieren Sie nicht, wenn Ihre Anwendung auf Internet Information Services (IIS) verwendet.
+
+-   Erwägen Sie ein Upgrade aus, wenn Sie datenbankanwendungen in einer Sandbox-Umgebung testen möchten, aber nicht zum Verwalten eine Datenbank verwendet werden soll.
+
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>So aktualisieren Sie eine Datenbankdatei um die LocalDB-Version zu verwenden.
-  
-1.  In **Server-Explorer**, wählen die **mit Datenbank verbinden** Schaltfläche.  
-  
-2.  In der **Verbindung hinzufügen** Dialogfeld geben die folgende Informationen:  
-  
-    -   **Datenquelle**: `Microsoft SQL Server (SqlClient)`  
-  
-    -   **Servernamen**:  
-  
-        -   Die Standardversion verwendet: `(localdb)\MSSQLLocalDB`.  Dadurch wird die ProjectV12 oder ProjectV13, angegeben, je nachdem welche Version von Visual Studio installiert ist und wann die erste LocalDB-Instanz erstellt wurde. Die **MSSQLLocalDB** Knoten **Objekt-Explorer von SQL Server** zeigt, welche Version ist es auf verweist.  
-  
-        -   Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 und V13 LocalDB 2016 ist.  
-  
-    -   **Anfügen einer Datenbankdatei**: den physischen Pfad der primären MDF-Datei.  
-  
-    -   **Logischer Name**: der Name, den Sie mit der Datei verwenden möchten.  
-  
-3.  Klicken Sie auf die Schaltfläche **OK**.  
-  
-4.  Wenn Sie aufgefordert werden, wählen Sie die **Ja** Schaltfläche, um die Datei zu aktualisieren.  
-  
-    Die Datenbank aktualisiert wird, wird mit dem Datenbankmodul LocalDB angefügt und ist nicht mehr kompatibel mit der älteren Version von LocalDB.  
-  
+
+1.  In **Server-Explorer**, wählen die **mit Datenbank verbinden** Schaltfläche.
+
+2.  In der **Verbindung hinzufügen** Dialogfeld geben die folgende Informationen:
+
+    -   **Datenquelle**: `Microsoft SQL Server (SqlClient)`
+
+    -   **Servernamen**:
+
+        -   Die Standardversion verwendet: `(localdb)\MSSQLLocalDB`.  Dadurch wird die ProjectV12 oder ProjectV13, angegeben, je nachdem welche Version von Visual Studio installiert ist und wann die erste LocalDB-Instanz erstellt wurde. Die **MSSQLLocalDB** Knoten **Objekt-Explorer von SQL Server** zeigt, welche Version ist es auf verweist.
+
+        -   Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 und V13 LocalDB 2016 ist.
+
+    -   **Anfügen einer Datenbankdatei**: den physischen Pfad der primären MDF-Datei.
+
+    -   **Logischer Name**: der Name, den Sie mit der Datei verwenden möchten.
+
+3.  Klicken Sie auf die Schaltfläche **OK**.
+
+4.  Wenn Sie aufgefordert werden, wählen Sie die **Ja** Schaltfläche, um die Datei zu aktualisieren.
+
+    Die Datenbank aktualisiert wird, wird mit dem Datenbankmodul LocalDB angefügt und ist nicht mehr kompatibel mit der älteren Version von LocalDB.
+
 Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen und anschließend ändern **Verbindung ändern**. In der **Verbindung ändern** Dialogfeld Feld, ändern Sie den Namen des `(LocalDB)\MSSQLLocalDB`. In der **erweiterte Eigenschaften** Dialogfeld Feld, stellen Sie sicher, dass **Benutzerinstanz** festgelegt ist, um **"false"**.
 
-### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>So aktualisieren Sie eine Datenbankdatei, um die Version von SQL Server Express verwenden  
-  
-1.  Wählen Sie im Kontextmenü für die Verbindung mit der Datenbank, **Verbindung ändern**.  
-  
-2.  In der **Verbindung ändern** wählen Sie im Dialogfeld die **erweitert** Schaltfläche.  
-  
-3.  In der **erweiterte Eigenschaften** wählen Sie im Dialogfeld die **OK** Schaltfläche ohne Ändern des Servernamens.  
-  
-    Die Datenbankdatei wird aktualisiert, dass die aktuelle Version von SQL Server Express übereinstimmt.  
-  
-### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Mit der Datenbank in Visual Studio arbeiten, aber beibehalten der Kompatibilität mit SQL Server Express  
-  
--   Öffnen Sie das Projekt in Visual Studio ohne dass eine Aktualisierung.  
-  
-    -   Wählen Sie zum Ausführen des Projekts die **F5** Schlüssel.  
-  
-    -   Um die Datenbank zu bearbeiten, öffnen Sie die MDF-Datei in **Projektmappen-Explorer**, und erweitern Sie den Knoten im **Server-Explorer** Arbeit mit Ihrer Datenbank.  
-  
-### <a name="to-make-sql-server-express-the-default-database-engine"></a>Um SQL Server Express, das Standard-Datenbankmodul zu machen.  
-  
-1.  Wählen Sie auf der Menüleiste **Tools**, **Optionen**.  
-  
-2.  In der **Optionen** Dialogfeld erweitern Sie die **Datenbanktools** Optionen, und wählen Sie dann **Datenverbindungen**.  
-  
-3.  In der **SQL Server-Instanzname** Text geben den Namen der Instanz von SQL Server Express oder LocalDB, die Sie verwenden möchten. Wenn die Instanz die Bezeichnung befindet sich nicht, geben Sie `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.  
-  
-4.  Klicken Sie auf die Schaltfläche **OK**.  
-  
+### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>So aktualisieren Sie eine Datenbankdatei, um die Version von SQL Server Express verwenden
+
+1.  Wählen Sie im Kontextmenü für die Verbindung mit der Datenbank, **Verbindung ändern**.
+
+2.  In der **Verbindung ändern** wählen Sie im Dialogfeld die **erweitert** Schaltfläche.
+
+3.  In der **erweiterte Eigenschaften** wählen Sie im Dialogfeld die **OK** Schaltfläche ohne Ändern des Servernamens.
+
+    Die Datenbankdatei wird aktualisiert, dass die aktuelle Version von SQL Server Express übereinstimmt.
+
+### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Mit der Datenbank in Visual Studio arbeiten, aber beibehalten der Kompatibilität mit SQL Server Express
+
+-   Öffnen Sie das Projekt in Visual Studio ohne dass eine Aktualisierung.
+
+    -   Wählen Sie zum Ausführen des Projekts die **F5** Schlüssel.
+
+    -   Um die Datenbank zu bearbeiten, öffnen Sie die MDF-Datei in **Projektmappen-Explorer**, und erweitern Sie den Knoten im **Server-Explorer** Arbeit mit Ihrer Datenbank.
+
+### <a name="to-make-sql-server-express-the-default-database-engine"></a>Um SQL Server Express, das Standard-Datenbankmodul zu machen.
+
+1.  Wählen Sie auf der Menüleiste **Tools**, **Optionen**.
+
+2.  In der **Optionen** Dialogfeld erweitern Sie die **Datenbanktools** Optionen, und wählen Sie dann **Datenverbindungen**.
+
+3.  In der **SQL Server-Instanzname** Text geben den Namen der Instanz von SQL Server Express oder LocalDB, die Sie verwenden möchten. Wenn die Instanz die Bezeichnung befindet sich nicht, geben Sie `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.
+
+4.  Klicken Sie auf die Schaltfläche **OK**.
+
     SQL Server Express wird das Standard-Datenbankmodul für Ihre Anwendungen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Zugreifen auf Daten in Visual Studio](accessing-data-in-visual-studio.md)
+- [Zugreifen auf Daten in Visual Studio](accessing-data-in-visual-studio.md)

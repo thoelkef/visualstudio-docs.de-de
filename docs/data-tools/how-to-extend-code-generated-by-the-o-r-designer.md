@@ -1,6 +1,5 @@
 ---
-title: 'Vorgehensweise: Erweitern von O-R-Designer generierten Code | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Erweitern von O-R-Designer generierten Code'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
@@ -10,43 +9,43 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1c8df8dfeb6f6aec7acaf0545f348e81b97192
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0210037cdd554838c9fe08c424f02b081c6f2e1a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Gewusst wie: Erweitern von durch den O/R-Designer erstellten Code
-Code, der vom [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generiert wurde, wird erneut generiert, wenn Änderungen an der Entitätsklasse und an anderen Objekten auf der Designeroberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] bietet die Möglichkeit, Dateien mit partiellen Klassen zu generieren, denen Code hinzugefügt werden kann, der nicht überschrieben wird. Ein Beispiel für das Hinzufügen eigenen Codes zu dem von [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generierten Code, ist das Hinzufügen der Datenvalidierung zu LINQ to SQL-(Entitäts)-Klassen. Informationen finden Sie unter [wie: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md).  
-  
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-## <a name="adding-code-to-an-entity-class"></a>Hinzufügen von Code zu einer Entitätsklasse  
-  
-#### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einer Entitätsklasse hinzu  
-  
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer**/**Datenbank-Explorer**.)  
-  
-2.  In der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], mit der rechten Maustaste in die Klasse für die Sie möchten, fügen Sie Validierungen hinzu, und klicken Sie dann auf **Code anzeigen**.  
-  
-     Der Code-Editor wird mit einer partiellen Klasse für die ausgewählte Entitätsklasse geöffnet.  
-  
-3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für die Entitätsklasse hinzu.  
-  
-## <a name="adding-code-to-a-datacontext"></a>Hinzufügen von Code zu einem DataContext  
-  
-#### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einem DataContext hinzu  
-  
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer**/**Datenbank-Explorer**.)  
-  
-2.  In der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]mit der rechten Maustaste auf einen leeren Bereich des Designers, und klicken Sie dann auf **Code anzeigen**.  
-  
-     Der Code-Editor wird mit einer partiellen Klasse für den DataContext geöffnet.  
-  
-3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für den DataContext hinzu.  
-  
-## <a name="see-also"></a>Siehe auch  
- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O-R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- 
+Code, der vom [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generiert wurde, wird erneut generiert, wenn Änderungen an der Entitätsklasse und an anderen Objekten auf der Designeroberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] bietet die Möglichkeit, Dateien mit partiellen Klassen zu generieren, denen Code hinzugefügt werden kann, der nicht überschrieben wird. Ein Beispiel für das Hinzufügen eigenen Codes zu dem von [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generierten Code, ist das Hinzufügen der Datenvalidierung zu LINQ to SQL-(Entitäts)-Klassen. Informationen finden Sie unter [wie: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md).
+
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+## <a name="adding-code-to-an-entity-class"></a>Hinzufügen von Code zu einer Entitätsklasse
+
+#### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einer Entitätsklasse hinzu
+
+1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer**/**Datenbank-Explorer**.)
+
+2.  In der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], mit der rechten Maustaste in die Klasse für die Sie möchten, fügen Sie Validierungen hinzu, und klicken Sie dann auf **Code anzeigen**.
+
+     Der Code-Editor wird mit einer partiellen Klasse für die ausgewählte Entitätsklasse geöffnet.
+
+3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für die Entitätsklasse hinzu.
+
+## <a name="adding-code-to-a-datacontext"></a>Hinzufügen von Code zu einem DataContext
+
+#### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einem DataContext hinzu
+
+1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer**/**Datenbank-Explorer**.)
+
+2.  In der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]mit der rechten Maustaste auf einen leeren Bereich des Designers, und klicken Sie dann auf **Code anzeigen**.
+
+     Der Code-Editor wird mit einer partiellen Klasse für den DataContext geöffnet.
+
+3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für den DataContext hinzu.
+
+## <a name="see-also"></a>Siehe auch
+
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O-R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

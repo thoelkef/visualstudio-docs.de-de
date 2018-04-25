@@ -1,9 +1,7 @@
 ---
-title: Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern | Microsoft Docs
-ms.custom: ''
+title: Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -12,54 +10,54 @@ helpviewer_keywords:
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2a9e0259640f0a5f32401e115dfe901250bb17e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4be29e09e58b54ee567514cd0dcbccf1c1c5434e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
-SAL ist die Microsoft Source Code Annotation-Sprache. Verwenden von Source Code Anmerkungen, können Sie die Absicht hinter Ihren Code als explizite Anforderung festgelegt. Diese Anmerkungen können auch die Tools für die automatisierte statische Analyse, die den Code genauer, mit erheblich weniger falsch positive Ergebnisse und falsch negativ klassifizierten Ergebnissen analysiert.  
-  
- Die Artikeln in diesem Abschnitt der Dokumentation erläutern Aspekte SAL, bieten Referenz zum SAL-Syntax und Beispielen für deren Verwendung erhalten.  
-  
--   [Einführung in SAL](../code-quality/understanding-sal.md)  
-  
-     Enthält Informationen und Beispiele, die den Kern SAL-Anmerkungen.  
-  
--   [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
-  
-     Listet die SAL-Anmerkungen für Funktionen und Funktionsparameter.  
-  
--   [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
-  
-     Listet die SAL-Anmerkungen für Funktionen und das Funktionsverhalten.  
-  
--   [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
-  
-     Listet die SAL-Anmerkungen für Strukturen und Klassen.  
-  
--   [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
-  
-     Erläutert die SAL-Anmerkungen mit Sperre Mechanismen verwenden.  
-  
--   [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-  
-     Listet die SAL-Anmerkungen, die die Bedingung oder den Bereich (Position) des anderen SAL-Anmerkungen angeben.  
-  
--   [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
-  
-     Listet die systeminternen SAL-Anmerkungen.  
-  
--   [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)  
-  
-     Enthält Beispiele für die Funktionsweisen SAL-Anmerkungen verwendet. Häufige Probleme wird auch erläutert.  
-  
-## <a name="related-resources"></a>Verwandte Ressourcen  
- [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/?LinkId=251197)  
-  
-## <a name="see-also"></a>Siehe auch  
+SAL ist die Microsoft Source Code Annotation-Sprache. Verwenden von Source Code Anmerkungen, können Sie die Absicht hinter Ihren Code als explizite Anforderung festgelegt. Diese Anmerkungen können auch die Tools für die automatisierte statische Analyse, die den Code genauer, mit erheblich weniger falsch positive Ergebnisse und falsch negativ klassifizierten Ergebnissen analysiert.
+
+ Die Artikeln in diesem Abschnitt der Dokumentation erläutern Aspekte SAL, bieten Referenz zum SAL-Syntax und Beispielen für deren Verwendung erhalten.
+
+-   [Einführung in SAL](../code-quality/understanding-sal.md)
+
+     Enthält Informationen und Beispiele, die den Kern SAL-Anmerkungen.
+
+-   [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)
+
+     Listet die SAL-Anmerkungen für Funktionen und Funktionsparameter.
+
+-   [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)
+
+     Listet die SAL-Anmerkungen für Funktionen und das Funktionsverhalten.
+
+-   [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)
+
+     Listet die SAL-Anmerkungen für Strukturen und Klassen.
+
+-   [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)
+
+     Erläutert die SAL-Anmerkungen mit Sperre Mechanismen verwenden.
+
+-   [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+
+     Listet die SAL-Anmerkungen, die die Bedingung oder den Bereich (Position) des anderen SAL-Anmerkungen angeben.
+
+-   [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)
+
+     Listet die systeminternen SAL-Anmerkungen.
+
+-   [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
+
+     Enthält Beispiele für die Funktionsweisen SAL-Anmerkungen verwendet. Häufige Probleme wird auch erläutert.
+
+## <a name="related-resources"></a>Verwandte Ressourcen
+ [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/?LinkId=251197)
+
+## <a name="see-also"></a>Siehe auch
  [2.0-SAL-Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979)

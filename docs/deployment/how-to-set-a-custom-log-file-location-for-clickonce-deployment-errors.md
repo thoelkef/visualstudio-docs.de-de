@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Festlegen einer benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - ClickOnce deployment, error logging
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a54946f5750e901c937dd91772eb7d7ecb740e48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 647eed5145d9d80f9fc62249763726a5940a7345
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Gewusst wie: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwaltet die Aktivierung von Protokolldateien für alle Bereitstellungen an. Diese Protokolle dokumentieren Fehler bezieht sich auf installieren, und Initialisieren einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung. Standardmäßig [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] erstellt eine einzige Protokolldatei für jede Bereitstellung-Aktivierung. Sie speichert diese Protokolldateien im Ordner "temporäre Internetdateien". Die Protokolldatei für eine Bereitstellung wird dem Benutzer angezeigt, wenn ein Aktivierungsfehler tritt auf, und der Benutzer klickt auf **Details** im Dialogfeld resultierenden Fehler.  

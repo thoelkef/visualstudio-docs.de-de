@@ -16,11 +16,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49008836057ce6e5b67a0795bc5c6572ef6f7935
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4b36800ea291c6f1bc0948a46b67c4e3549f349
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü ist ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, das Textfeld oder Fenster im Hintergrund klickt. Befehle im Kontextmenü Verhalten sich wie die Befehle in anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben sie in der VSCT-Datei, und zeigen Sie es als Reaktion auf der rechten Maustaste.  
@@ -31,7 +31,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
   
  Wenn Ihre Kontextmenü nicht Visual Studio-Funktionalität zugreifen, Sie können auch die <xref:System.Windows.FrameworkElement.ContextMenu%2A> Eigenschaft einem XAML-Elements im Steuerelement. Weitere Informationen finden Sie unter [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  Ab Visual Studio 2015, führen Sie Sie nicht Visual Studio-SDK aus dem Downloadcenter installieren. Sie ist als optionales Feature in Visual Studio-Setup aus. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>Das Fenster Verknüpfung im Menü USMT-Paket erstellen  
@@ -114,7 +114,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
     </Buttons>  
     ```  
   
-5.  Fügen Sie in ShortcutMenuPackageGuids.cs die Definitionen für den Befehl festgelegten GUID und das Kontextmenü Menüelemente hinzu.  
+5.  Fügen Sie in ShortcutMenuCommand.cs die Definitionen für den Befehl festgelegten GUID und das Kontextmenü Menüelemente hinzu.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -143,7 +143,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
     ```csharp  
     protected override void Initialize()  
     {  
-        commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
+        var commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
         Content = new ShortcutMenuControl(commandService);  
     }  
     ```  
@@ -170,12 +170,12 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
         if (null !=commandService)  
         {  
             // Create an alias for the command set guid.  
-            Guid guid = new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet);  
+            Guid guid = new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet);  
   
             // Create the command IDs.   
-            var red = new CommandID(guid, ShortcutMenuPackageGuids.cmdidRed);  
-            var yellow = new CommandID(guid, ShortcutMenuPackageGuids.cmdidYellow);  
-            var blue = new CommandID(guid, ShortcutMenuPackageGuids.cmdidBlue);  
+            var red = new CommandID(guid, ShortcutMenuCommand.cmdidRed);  
+            var yellow = new CommandID(guid, ShortcutMenuCommand.cmdidYellow);  
+            var blue = new CommandID(guid, ShortcutMenuCommand.cmdidBlue);  
   
             // Add a command for each command ID.  
             commandService.AddCommand(new MenuCommand(ChangeColor, red));  
@@ -234,8 +234,8 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
         if (null != commandService)  
         {  
             CommandID menuID = new CommandID(  
-                new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet),  
-                ShortcutMenuPackageGuids.ColorMenu);  
+                new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet),  
+                ShortcutMenuCommand.ColorMenu);  
             Point p = this.PointToScreen(e.GetPosition(this));  
             commandService.ShowContextMenu(menuID, (int)p.X, (int)p.Y);  
         }  
@@ -253,13 +253,13 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
   
         switch (mc.CommandID.ID)  
         {  
-            case ShortcutMenuPackageGuids.cmdidRed:  
+            case ShortcutMenuCommand.cmdidRed:  
                 MyToolWindow.Background = Brushes.Red;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidYellow:  
+            case ShortcutMenuCommand.cmdidYellow:  
                 MyToolWindow.Background = Brushes.Yellow;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidBlue:  
+            case ShortcutMenuCommand.cmdidBlue:  
                 MyToolWindow.Background = Brushes.Blue;  
                 break;  
         }  

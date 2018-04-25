@@ -2,8 +2,7 @@
 title: Erstellen von ClickOnce-Anwendungen für andere bereitstellen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,16 +21,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cd93353cd20ac52f95d7852c306124561cdf0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 Nicht alle Entwickler, die ClickOnce-Bereitstellungen erstellen, planen, die Anwendungen selbst bereitstellen. Viele davon Packen ihre Anwendung einfach mithilfe von ClickOnce und leiten dann die Dateien an einen Kunden, z. B. einem großen Unternehmen. Der Kunde wird zum Hosten der Anwendung in einem Netzwerk zuständig. In diesem Artikel werden einige der in solchen Bereitstellungen in Versionen von .NET Framework vor Version 3.5 auftretenden Probleme. Klicken Sie dann beschrieben eine neue Projektmappe bereitgestellt, mit der neuen Funktion für "Anwendungsmanifest für Vertrauensstellungsinformationen verwenden" in .NET Framework 3.5. Schließlich geht mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.  

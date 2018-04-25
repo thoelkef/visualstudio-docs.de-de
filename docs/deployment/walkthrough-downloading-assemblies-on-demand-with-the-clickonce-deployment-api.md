@@ -2,8 +2,7 @@
 title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9dc200d2dbab68dd3cc4577f5024df4077bfc6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48ed3828f70424ee328c1fc52873e1a0f7e620aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
 Standardmäßig alle Assemblys im enthalten eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile der Anwendung möglicherweise, die von einer kleinen Gruppe Ihrer Benutzer verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie bestimmte Assemblys in der Anwendung als "optional" markieren und zum Herunterladen dieser mithilfe von Klassen der <xref:System.Deployment.Application> -Namespace, wenn die common Language Runtime (CLR) angefordert.  
@@ -31,7 +30,7 @@ Standardmäßig alle Assemblys im enthalten eine [!INCLUDE[ndptecclick](../deplo
 > [!NOTE]
 >  Die Anwendung muss mit voller Vertrauenswürdigkeit ausgeführt werden, um dieses Verfahren zu verwenden.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  Eine der folgenden Komponenten zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie:  
   
 -   Das Windows SDK. Das Windows SDK kann aus dem Microsoft Download Center heruntergeladen werden.  

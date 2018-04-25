@@ -1,28 +1,27 @@
 ---
-title: 'CA3076: Unsichere XSLT-Skriptausführung | Microsoft Docs'
-ms.custom: ''
+title: 'CA3076: Unsichere XSLT-Skriptausführung'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c918f3a69fcafd751dad61b5291db3b891a4ccf9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
 
-|||  
-|-|-|  
-|TypeName|InsecureXSLTScriptExecution|  
-|CheckId|CA3076|  
-|Kategorie|Microsoft.Security|  
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
+|||
+|-|-|
+|TypeName|InsecureXSLTScriptExecution|
+|CheckId|CA3076|
+|Kategorie|Microsoft.Security|
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
 
@@ -49,22 +48,22 @@ Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind g
 ### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Verletzung&mdash;XsltSettings.TrustedXslt verwendet
 
 ```csharp
-using System.Xml;  
-using System.Xml.Xsl;  
-  
-namespace TestNamespace   
-{   
-    class TestClass   
-    {  
+using System.Xml;
+using System.Xml.Xsl;
+
+namespace TestNamespace
+{
+    class TestClass
+    {
          void TestMethod()
-        {    
+        {
              XslCompiledTransform xslCompiledTransform = new XslCompiledTransform();
              var settings = XsltSettings.TrustedXslt;
              var resolver = new XmlUrlResolver();
-             xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn   
-        }  
+             xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn
+        }
     }
-} 
+}
 ```
 
 ### <a name="solutionmdashuse-xsltsettingsdefault"></a>Lösung&mdash;XsltSettings.Default verwenden
@@ -93,15 +92,15 @@ namespace TestNamespace
 ```csharp
 using System.Xml;
 using System.Xml.Xsl;
-  
-namespace TestNamespace   
-{   
-    class TestClass   
-    {   
+
+namespace TestNamespace
+{
+    class TestClass
+    {
         private static void TestMethod(XsltSettings settings)
-        {   
-            try   
-            {   
+        {
+            try
+            {
                 XslCompiledTransform xslCompiledTransform = new XslCompiledTransform();
                 var resolver = new XmlUrlResolver();
                 xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn

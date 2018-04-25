@@ -1,21 +1,21 @@
 ---
 title: Anzeigen von Daten- und Diagnoseanlagen für Auslastungstests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, data and diagnostics attachments
 ms.assetid: 73309bdd-437a-4eb0-88c8-702c3e24b9b0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d955412195a32a69e069ccac2b40456a9ffb986
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 08e4ce09103cd5f06926147ae38b916ae666648b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Vorgehensweise: Anzeigen von Daten- und Diagnoseanlagen mit dem Auslastungstest-Analyzer
+# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>How to: View Data and Diagnostic Attachments Using the Load Test Analyzer
 
 Bevor Sie einen Auslastungstest ausführen, können Sie eine Testeinstellung auswählen, in der die zu verwendenden Diagnose- und Datenadapter angegeben werden. Nach Abschluss des Auslastungstests können Sie die Details für diese Diagnose- und Datenadapter beim Analysieren der Ergebnisse im Auslastungstest-Analyzer anzeigen. Klicken Sie zum Anzeigen der Details für die Daten- und Diagnoseadapter auf der Symbolleiste des Auslastungstest-Analyzers auf die Schaltfläche **Daten- und Diagnoseanlagen anzeigen**. Wenn für den Auslastungstest z. B. der Adapter "Systeminformationen" in der Testeinstellung konfiguriert ist, können Sie die Systeminformationen für den Computer anzeigen, der bei der Ausführung des Auslastungstests verwendet wurde.
 

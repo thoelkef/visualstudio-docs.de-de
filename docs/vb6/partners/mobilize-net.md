@@ -13,10 +13,10 @@ manager: wpickett
 ms.workload:
 - dotnet
 ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>Mobile Verwendung JsonTextWriter Visual Basic-Upgrade Companion (VBUC) einrichten.
 
@@ -53,7 +53,7 @@ Microsoft und Mobilize.Net haben Partner können Sie eine kostenlose VBUC Lizenz
 
 - Erweitern und das Migrationstool Ihren Bedürfnissen entsprechend anpassen: Hinzufügen von Unterstützung für weitere Legacykomponenten und Verbessern von vorhandenen Funktionen zur Einhaltung von Codierungsstandards Enterprise.
 
-## <a name="features"></a>Features
+## <a name="features"></a>Funktionen
 
 Begleithandbuch zum Aktualisieren von Visual Basic beinhaltet einen umfangreichen Satz von leistungsstarken Berichtsfunktionen und Anpassung-Erweiterbarkeit-Optionen, die eine Breite Palette von Optionen für den codeumwandlungsprozess bereitstellen nachfolgende Umfang der erforderlichen manuellen Arbeiten erheblich reduzieren und erzeugen systemeigene .NET Code beim Erstellen der übersetzten Anwendung zu kompilieren und auszuführen, mit der ein Verhalten, das das ursprüngliche VB6 System entspricht.
 

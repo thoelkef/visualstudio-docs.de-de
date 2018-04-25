@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - publishing, ClickOnce
 - ClickOnce deployment, specifying publish page
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a368f3294056df75ca1a780d89079688cdb1ead9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Gewusst wie: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine Standardwebseite (publish.htm) generiert und zusammen mit der Anwendung veröffentlicht wird. Diese Seite enthält den Namen der Anwendung, einen Link zu der Anwendung und/oder alle vorausgesetzten Komponenten installieren und einen Link zu einem Hilfethema [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Die **Seite "Veröffentlichen"** -Eigenschaft für das Projekt bietet die Möglichkeit, geben Sie einen Namen für die Webseite für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  

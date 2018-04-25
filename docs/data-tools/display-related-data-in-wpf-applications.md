@@ -1,6 +1,5 @@
 ---
-title: Anzeigen verknüpfter Daten in WPF-Anwendungen | Microsoft Docs
-ms.custom: ''
+title: Zeigen Sie verknüpfter Daten in WPF-Anwendungen an
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +17,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5258f12a7ede6727736225e1e8308773db3c91c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zeigen Sie verknüpfter Daten in WPF-Anwendungen an
 In einigen Anwendungen empfiehlt es sich zum Arbeiten mit Daten, die stammen aus mehreren Tabellen oder Entitäten, die eine Parent-Child-Beziehung miteinander verbunden sind. Möglicherweise möchten z. B. ein Raster angezeigt werden, die Kunden aus einem `Customers` Tabelle. Wenn der Benutzer einen bestimmten Kunden auswählt, handelt es sich bei einem anderen Raster zeigt die Aufträge dieses Kunden aus einer verknüpften `Orders` Tabelle.
@@ -56,5 +55,6 @@ Erstellen von datengebundenen Steuerelementen, die verknüpfte Daten anzeigen, i
      ![Datenquellenfenster, die mit der Beziehung](../data-tools/media/datasources2.gif "DataSources2")
 
 ## <a name="see-also"></a>Siehe auch
-[Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)
+
+- [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)

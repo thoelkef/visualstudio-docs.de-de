@@ -13,10 +13,10 @@ manager: wpickett
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8e44bf6d4287ff1a82aec3342f089e44e776da6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="great-migrations-studio-gmstudio"></a>Hervorragende Migrationen Studio (GmStudio)
 
@@ -62,7 +62,7 @@ Microsoft und hervorragende Migrationen gemeinsam mit Ihnen eine Lizenz freien G
 
 - **Messen und Nachverfolgen des Fortschritts**: GmStudio der Übersetzung, Build und Code Überprüfen von Berichten können Sie Messen der Qualität und Nachverfolgen des Status.
 
-## <a name="features"></a>Features
+## <a name="features"></a>Funktionen
 
 - **VB6/COM-Compiler-als-einem-Dienst**: GmStudio mithilfe unserer erweiterbare Regeln-Skriptsprache konfigurieren.
 

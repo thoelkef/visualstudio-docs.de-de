@@ -1,6 +1,5 @@
 ---
-title: Neue Verbindungen hinzufügen | Microsoft Docs
-ms.custom: ''
+title: Fügen Sie neue Verbindungen hinzu
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Fügen Sie neue Verbindungen hinzu
 
@@ -37,9 +36,9 @@ Um eine Verbindung mit der Datenbank zu erstellen, klicken Sie auf die **Verbind
 
 ![Symbol "Server-Explorer neue Verbindung"](../data-tools/media/raddata-server-explorer-new-connection-icon.png "Raddata Symbol "neue Verbindung zu Server-Explorer"")
 
-Daraufhin wird die **Verbindung hinzufügen** (Dialogfeld). Hier haben wir den Namen der SQL Server-LocalDB-Instanz eingegeben.  
+Daraufhin wird die **Verbindung hinzufügen** (Dialogfeld). Hier haben wir den Namen der SQL Server-LocalDB-Instanz eingegeben.
 
-![Neue Verbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png "Raddata neue Verbindungsdialogfeld hinzufügen")  
+![Neue Verbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png "Raddata neue Verbindungsdialogfeld hinzufügen")
 
 ## <a name="change-the-provider"></a>Ändern Sie den Anbieter
 
@@ -57,4 +56,4 @@ Wenn der Test erfolgreich ist, sind Sie bereit für die Erstellung einer *Datenq
 
 ## <a name="see-also"></a>Siehe auch
 
-[Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

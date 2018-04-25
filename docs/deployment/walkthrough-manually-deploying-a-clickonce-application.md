@@ -2,8 +2,7 @@
 title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,21 +17,21 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
 Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , oder Sie müssen erweiterte Funktionen verwenden, z. B. Bereitstellung vertrauenswürdiger Anwendungen, sollten Sie das Befehlszeilentool "Mage.exe" verwenden, um das Erstellen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste. In dieser exemplarischen Vorgehensweise wird beschrieben, wie zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe der Befehlszeilenversion (Mage.exe) oder die grafische Version (MageUI.exe), der das Manifest Tool zum Generieren und bearbeiten.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  In dieser exemplarischen Vorgehensweise verfügt über einige erforderliche Komponenten und Optionen, die Sie vor dem Erstellen einer Bereitstellung auswählen müssen.  
   
 -   Installieren Sie Mage.exe und MageUI.exe.  

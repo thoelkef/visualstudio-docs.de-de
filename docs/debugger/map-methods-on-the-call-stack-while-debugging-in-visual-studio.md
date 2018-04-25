@@ -2,8 +2,7 @@
 title: Erstellen Sie eine visuelle Karte der Aufrufliste | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -32,11 +31,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde16c31cfb05c07152bb4c6d40fefa4d44fe256
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9891686206e8780ebd25082cffb7479d26c6dfba
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Erstellen Sie eine visuelle Karte der Aufrufliste beim Debuggen in Visual Studio Enterprise
 Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während Sie debuggen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
@@ -77,7 +76,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
   
      ![Wählen Sie die Code Map, um aufruflistenzuordnung zu starten](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")  
   
-     Die aktuelle Aufrufliste wird in einer neuen Code Map orange dargestellt:  
+     Die aktuelle Aufrufliste wird in einer neuen Codezuordnung orange dargestellt:  
   
      ![Finden Sie in der Aufrufliste in codezuordnung](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")  
   

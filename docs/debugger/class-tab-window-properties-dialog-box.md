@@ -2,8 +2,7 @@
 title: Fenstereigenschaften (Dialogfeld) Registerkarte "-Klasse | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
@@ -13,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 573eb3f9cbcaedddc67524e81b2508df2112de04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 4afce149a2124ba8caa827b73b258fb421792c13
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Registerkarte "Klasse", Dialogfeld "Fenstereigenschaften"
 Verwenden der **Klasse** Registerkarte ", um Informationen für die Klasse für das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md), den Fokus auf die [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die folgenden Einstellungen sind verfügbar, auf die **Klasse** Registerkarte:  
   
-|Eingabe|Beschreibung|  
+|Eintrag|Beschreibung|  
 |-----------|-----------------|  
 |**Klassenname**|Der Name (oder die Ordnungszahl) der Fensterklasse.|  
 |**Klasse Stile**|Eine Kombination von Klassencodes-Stil.|  

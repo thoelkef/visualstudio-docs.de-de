@@ -2,8 +2,7 @@
 title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c# | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7520072d719d7941acff57b871b8b1d1c69d0d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 490c2c2b15eff701cee751b57bbf55024910beab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# #
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.  
@@ -38,7 +37,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Auf der **Datei** Menü wählen **neu > Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld unter **Visual C#-**Option **.NET Standard**.  
+2.  In der **neues Projekt** Dialogfeld unter **Visual C#-** Option **.NET Standard**.  
   
 3.  Wählen Sie im mittleren Bereich **-Klassenbibliothek**.  
   
@@ -233,7 +232,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Auf der **Datei** Menü wählen **neu > Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld unter **Visual C#-**Option **.NET Standard**.  
+2.  In der **neues Projekt** Dialogfeld unter **Visual C#-** Option **.NET Standard**.  
   
 3.  Wählen Sie im mittleren Bereich **-Klassenbibliothek**.   
   

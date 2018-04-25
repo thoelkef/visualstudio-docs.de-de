@@ -1,9 +1,7 @@
 ---
-title: Codeanalyse für C/C++-Übersicht | Microsoft Docs
-ms.custom: ''
+title: Übersicht über die Codeanalyse für C/C++
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -21,40 +19,40 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90b586a9a131e6c1ef19f591f1348ff5125e9701
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4068b4956d0337a3b3c46693b54b0df165439a7f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Codeanalyse für C/C++-Übersicht
 
-Das Codeanalysetool für C/C++ liefert Entwicklern Informationen zu möglichen Fehlern im C/C++-Quellcode. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.  
-  
-## <a name="ide-integrated-development-environment-integration"></a>Integration in die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE)  
- Um die natürliche für Entwickler verwenden das Analysetool gestalten, wird er vollständig innerhalb integriert die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Werden Sie während des Buildprozesses für den Quellcode generierten Warnungen in der Fehlerliste angezeigt. Sie können navigieren, auf den Quellcode, die die Warnung verursacht hat, und können Sie zusätzliche Informationen über die Ursache und mögliche Lösungen des Problems anzeigen.  
-  
-## <a name="pragma-support"></a>#pragma-Unterstützung  
- Entwickler können mithilfe der `#pragma` Richtlinie Warnungen als Fehler behandeln; aktivieren oder Deaktivieren von Warnungen und Unterdrücken von Warnungen für die einzelnen Codezeilen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
-  
-## <a name="annotation-support"></a>Unterstützung von Kommentaren  
- Anmerkungen verbessern, die Genauigkeit für die Codeanalyse. Anmerkungen enthalten zusätzliche Informationen zu vorab und nachträglich Bedingungen zum Funktionsparameter und Rückgabetypen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben zusätzlicher Codeinformationen mit __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
-  
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Ausführen von Analysetool im Rahmen der Eincheckrichtlinie  
- Möglicherweise möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien beachtet werden. Insbesondere, möchten Sie sicherstellen, dass der Analyse als Schritt des letzten lokalen Builds ausgeführt wurde. Weitere Informationen zum Aktivieren der Eincheckrichtlinie für die Analyse finden Sie unter [erstellen und Verwenden von Code Analysis-Eincheckrichtlinien](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
-  
-## <a name="team-build-integration"></a>Team Build-Integration  
- Sie können die integrierten Funktionen des Buildsystems verwenden, um Codeanalysetool als einem Schritt ausgeführt der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Build and release](/vsts/build-release/index) (Build und Release).  
-  
-## <a name="command-line-support"></a>Befehlszeilen-Unterstützung  
- Zusätzlich zu der vollständigen Integration in der Entwicklungsumgebung können Entwickler auch das Analysetool über die Befehlszeile verwenden, wie im folgenden Beispiel gezeigt:  
-  
+Das Codeanalysetool für C/C++ liefert Entwicklern Informationen zu möglichen Fehlern im C/C++-Quellcode. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.
+
+## <a name="ide-integrated-development-environment-integration"></a>Integration in die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE)
+ Um die natürliche für Entwickler verwenden das Analysetool gestalten, wird er vollständig innerhalb integriert die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Werden Sie während des Buildprozesses für den Quellcode generierten Warnungen in der Fehlerliste angezeigt. Sie können navigieren, auf den Quellcode, die die Warnung verursacht hat, und können Sie zusätzliche Informationen über die Ursache und mögliche Lösungen des Problems anzeigen.
+
+## <a name="pragma-support"></a>#pragma-Unterstützung
+ Entwickler können mithilfe der `#pragma` Richtlinie Warnungen als Fehler behandeln; aktivieren oder Deaktivieren von Warnungen und Unterdrücken von Warnungen für die einzelnen Codezeilen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+
+## <a name="annotation-support"></a>Unterstützung von Kommentaren
+ Anmerkungen verbessern, die Genauigkeit für die Codeanalyse. Anmerkungen enthalten zusätzliche Informationen zu vorab und nachträglich Bedingungen zum Funktionsparameter und Rückgabetypen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben zusätzlicher Codeinformationen mit __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Ausführen von Analysetool im Rahmen der Eincheckrichtlinie
+ Möglicherweise möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien beachtet werden. Insbesondere, möchten Sie sicherstellen, dass der Analyse als Schritt des letzten lokalen Builds ausgeführt wurde. Weitere Informationen zum Aktivieren der Eincheckrichtlinie für die Analyse finden Sie unter [erstellen und Verwenden von Code Analysis-Eincheckrichtlinien](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+
+## <a name="team-build-integration"></a>Team Build-Integration
+ Sie können die integrierten Funktionen des Buildsystems verwenden, um Codeanalysetool als einem Schritt ausgeführt der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Build and release](/vsts/build-release/index) (Build und Release).
+
+## <a name="command-line-support"></a>Befehlszeilen-Unterstützung
+ Zusätzlich zu der vollständigen Integration in der Entwicklungsumgebung können Entwickler auch das Analysetool über die Befehlszeile verwenden, wie im folgenden Beispiel gezeigt:
+
  `C:\>cl /analyze Sample.cpp`
 
 ## <a name="see-also"></a>Siehe auch
 
-[Analysieren der Treiberqualität mit Codeanalysetools](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
+[Analysieren der Treiberqualität mit Codeanalysetools](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 [Codeanalyse für Treiberwarnungen](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

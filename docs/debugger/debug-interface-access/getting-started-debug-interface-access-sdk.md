@@ -2,8 +2,7 @@
 title: Erste Schritte (Debug Interface Access SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Erste Schritte (Debug Interface Access SDK)
 Das Debug Interface Access (DIA) SDK liefert Anweisungstext Dokumentation und ein Beispiel, das veranschaulicht, wie die DIA-API verwenden. Verwenden Sie die Schnittstellen und Methoden in DIA-SDK, benutzerdefinierte Anwendungen entwickeln, die die PDB-Datei und .dbg-Dateien öffnen und ihre Inhalte für Symbole, Werte, Attribute, Adressen und andere Debuginformationen zu suchen. Dieses SDK bietet auch Verweistabellen für die Eigenschaften für die Symbole in C++-Anwendungen gefunden wurden.  
@@ -33,7 +32,7 @@ Das Debug Interface Access (DIA) SDK liefert Anweisungstext Dokumentation und ei
   
 -   Visual Studio integrierten Entwicklungsumgebung (IDE) für das Kompilieren der Beispiele  
   
- Das DIA SDK wird normalerweise mit Visual Studio installiert und wird von seinem Standardspeicherort *[Laufwerk]*\Programme\Microsoft Visual Studio 9.0\DIA SDK. Im Rahmen der Installation wird "MSDIA90.dll", das das DIA SDK implementiert, wird automatisch registriert, damit tun können, um es verwenden, müssen Sie lediglich einschließen `dia2.h` in Ihrem Programm und Verknüpfung mit `diaguids.lib`.  
+ Das DIA SDK wird normalerweise mit Visual Studio installiert und wird von seinem Standardspeicherort *[Laufwerk]* \Programme\Microsoft Visual Studio 9.0\DIA SDK. Im Rahmen der Installation wird "MSDIA90.dll", das das DIA SDK implementiert, wird automatisch registriert, damit tun können, um es verwenden, müssen Sie lediglich einschließen `dia2.h` in Ihrem Programm und Verknüpfung mit `diaguids.lib`.  
   
  Header: include\dia2.h  
   

@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: angeben eine Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86d4b765dc5e6c56fdc8e7a3b082afaa72accf49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der Bereitstellung können Sie für eine Reihe von erforderlichen Komponenten, die auf dem Clientcomputer verfügbar sein müssen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt. Dazu gehören die erforderliche Mindestversion von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jedoch nicht installieren diese erforderlichen Komponenten selbst; Wenn eine erforderliche Komponente nicht gefunden wird, einfach Installation anhält und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation gesucht.  

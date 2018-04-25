@@ -1,20 +1,20 @@
 ---
 title: Bearbeiten von Auslastungstests in Visual Studio| Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f8a6d4bbec460103f1e8db596fa5d8b523c1bd92
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6e79dd964593e79c69ec6ec8ab44f10ff4c9ca99
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-load-tests"></a>Bearbeitung von Auslastungstests
 
@@ -37,11 +37,11 @@ Weitere Informationen finden Sie unter [Editing Load Test Scenarios (Szenarios z
 
 Auslastungstests stellen benannte, nach verwendeter Technologie organisierte Indikatorensätze zur Verfügung, die bei der Analyse von Leistungsindikatordaten von Nutzen sind. Die Indikatorensätze enthalten Auslastungstest, IIS, ASP.NET und SQL. Wenn Sie einen Auslastungstest mit dem Assistenten für neuen Auslastungstest erstellen, wird für die Computer, die Sie in den Auslastungstest einschließen, ein Ausgangssatz mit vordefinierten und wichtigen Indikatoren konfiguriert. Sie können die Indikatoren im Auslastungstest-Editor verwalten.
 
-Weitere Informationen finden Sie unter [Specifying the Counter Sets and Threshold Rules for Computers in a Load Test (Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest)](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Weitere Informationen finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>Konfigurieren und Verwalten von Laufzeiteinstellungen von Auslastungstests
 
-Laufzeiteinstellungen stellen Eigenschaften dar, die die Art der Ausführung eines Testlaufs beeinflussen. Run settings are organized by categories in the Properties window.
+Laufzeiteinstellungen stellen Eigenschaften dar, die die Art der Ausführung eines Testlaufs beeinflussen. Testlaufeinstellungen sind im Eigenschaftenfenster nach Kategorien geordnet.
 
 Weitere Informationen finden Sie unter [Configuring Load Test Run Settings (Konfigurieren von Laufzeiteinstellungen von Auslastungstests)](../test/configure-load-test-run-settings.md) und [Load Test Run Settings Properties (Eigenschaften der Laufzeiteinstellungen von Auslastungstests)](../test/load-test-run-settings-properties.md).
 

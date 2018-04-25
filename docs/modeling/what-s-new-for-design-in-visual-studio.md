@@ -1,6 +1,5 @@
 ---
-title: Was&#39;s Entwurf in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Neues beim Entwurf in Visual Studio
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -13,18 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e476e7f5107fb6ecfaced44342179d3365aec98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0367d0b751a5a90f442ca6d670cd1cbe81108d5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="what39s-new-for-design-in-visual-studio"></a>Was&#39;s Entwurf in Visual Studio
+# <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
 
 ## <a name="live-dependency-validation"></a>Live abhängigkeitsüberprüfung
 
-Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Teil Ihrer technische Schulden zu verwalten.
-Live-Überprüfung der Abhängigkeiten ist jetzt enthalten, genaue Informationen über Probleme und profitiert vollständig, die die neuen Funktionen in der Fehlerliste und -Editor.
+Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Teil Ihrer technische Schulden zu verwalten. Live-Überprüfung der Abhängigkeiten ist jetzt enthalten, genaue Informationen über Probleme und profitiert vollständig, die die neuen Funktionen in der Fehlerliste und -Editor.
 
 ![Live abhängigkeitsüberprüfung in Aktion](media/dep-validation-whatsnew-01.png)
 
@@ -40,8 +38,8 @@ Die **Architektur** Menü enthält nun einen Befehl, um eine Abhängigkeit Diagr
 
 Sie sehen nun die Auswirkungen der Änderungen sofort in die Ergebnisse der Analyse für den aktuellen Code in der Projektmappe jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht mehr warten auf den Abschluss des Befehls "Abhängigkeiten überprüfen".
 
-Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/). 
- 
+Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+
 ## <a name="uml-designers-have-been-removed"></a>UML-Designer wurden entfernt
 
 Die UML-Designer wurden aus dieser Version von Visual Studio Enterprise entfernt.
@@ -50,33 +48,33 @@ Die UML-Designer wurden aus dieser Version von Visual Studio Enterprise entfernt
 * UML-Modell-Explorer ist nicht mehr vorhanden.
 * Modellierungsobjekt Verweise sind abhängigkeitsüberprüfung nicht mehr verwendet
 * Der Knoten "Ebenenverweise" im Projektmappen-Explorer wird nicht mehr angezeigt.
-* Die "Überprüfen" Build-Aktion in einem Diagramm Abhängigkeit (Layer) wird nicht mehr verwendet: die Buildaufgabe wurde entfernt 
+* Die "Überprüfen" Build-Aktion in einem Diagramm Abhängigkeit (Layer) wird nicht mehr verwendet: die Buildaufgabe wurde entfernt
 * Die Projektstruktur wird für Roundtrips zwischen den Versionen beibehalten.
 * Sie können weiterhin öffnen, erstellen, bearbeiten, und speichern Sie eine Abhängigkeit (Layer)-Diagramm als XML
 * TFS-Arbeitsaufgaben verknüpft, um eine Abhängigkeit (Layer)-Diagramm ist nicht möglich, auf der Entwurfsoberfläche
-* Back Verknüpfen von DSL oder einer Ebene wird nicht mehr unterstützt. 
+* Back Verknüpfen von DSL oder einer Ebene wird nicht mehr unterstützt.
 * UML-Erweiterungen in der Modellierungs-SDK wird nicht mehr unterstützt.
 
 Unterstützung für die Architektur von .NET- und C++-Code zu visualisieren erhältlich ist jedoch [codezuordnungen](map-dependencies-across-your-solutions.md), und zu den erheblichen Verbesserungen zum oben beschriebenen abhängigkeitsüberprüfung.
 
 Wenn Sie die UML-Designer eine erhebliche Benutzer sind, können Sie weiterhin Visual Studio 2015 oder früher verwenden, während Sie möchten eine alternative Tool für Ihre Anforderungen UML.
 
-Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/). 
+Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 <a name="VersionSupport"></a>
-##  <a name="version-support-for-architecture-and-modeling-tools"></a>Versionsunterstützung für Architektur- und Modellierungstools  
+## <a name="version-support-for-architecture-and-modeling-tools"></a>Versionsunterstützung für Architektur- und Modellierungstools
 
-Visual Studio ist in mehreren Versionen verfügbar. Nicht jede Version bietet Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.  
-  
-|**Funktion**|**Enterprise**|**Professional**|**Community**|**Express**|  
-|-----------------|--------------------|----------------------|-------------------|-----------------|  
-|**Codezuordnungen**|Ja|Siehe Hinweis (1)|-|-|  
-|**Abhängigkeit von Diagrammen**|Ja|Siehe Hinweis (2)|Siehe Hinweis (2)|-|  
-|**Gerichtete Diagramme** (DGML-Diagramme)|Ja|Ja|Ja|-|  
-|**Codeklon**|Ja|-|-|-|  
-  
-Hinweis (1): Unterstützt nur das Lesen und Filtern von Code Maps, das Hinzufügen neuer allgemeiner Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.
+Visual Studio ist in mehreren Versionen verfügbar. Nicht jede Version bietet Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+
+|**Funktion**|**Enterprise**|**Professional**|**Community**|**Express**|
+|-----------------|--------------------|----------------------|-------------------|-----------------|
+|**Codezuordnungen**|Ja|Siehe Hinweis (1)|-|-|
+|**Abhängigkeit von Diagrammen**|Ja|Siehe Hinweis (2)|Siehe Hinweis (2)|-|
+|**Gerichtete Diagramme** (DGML-Diagramme)|Ja|Ja|Ja|-|
+|**Codeklon**|Ja|-|-|-|
+
+Hinweis (1): Unterstützt nur das Lesen und Filtern von Codezuordnungen, das Hinzufügen neuer allgemeiner Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.
 
 Hinweis (2): Unterstützt nur das Lesen der Abhängigkeit Diagramme.

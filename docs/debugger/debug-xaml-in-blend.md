@@ -2,8 +2,7 @@
 title: Debuggen von XAML in Blend | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 Verwenden Sie die Tools in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)], um den XAML-Code in der App zu debuggen. Wenn Sie ein Projekt erstellen, werden Fehler angezeigt, der **Ergebnisse** Bereich. Doppelklicken Sie auf einen Fehler, um das dazugehörige Markup zu suchen. Wenn Sie mehr Platz zum Arbeiten benötigen, können Sie Ausblenden der **Ergebnisse** Bereich durch Drücken von F12.  
@@ -119,7 +118,7 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../debugger/includes/blend_fir
   
      Drücken Sie STRG+UMSCHALT+B, um das Projekt zu erstellen und zu bestätigen, dass es keine weiteren Fehler enthält.  
   
-## <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio  
+## <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio  
  Sie können [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]-Projekte in Visual Studio öffnen, um den App-Code einfacher zu debuggen. So öffnen eine [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] -Projekt in Visual Studio der rechten Maustaste auf das Projekt in der **Projekte** Bereich, und klicken Sie dann auf **in Visual Studio bearbeiten**. Wenn Sie die Debugsitzung in Visual Studio abgeschlossen haben, drücken Sie STRG+UMSCHALT+S, um sämtliche Änderungen zu speichern, und wechseln Sie anschließend zurück zu [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]. Sie werden aufgefordert, das Projekt erneut zu laden. Klicken Sie auf **Ja für alle** weiterarbeiten [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)].  
   
  Weitere Informationen zum Debuggen von Apps finden Sie unter [Debuggen uwp-apps in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).  

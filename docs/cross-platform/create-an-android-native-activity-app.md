@@ -1,26 +1,22 @@
 ---
 title: Erstellen einer Android Native Activity-App | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e03fb8fd62e7f9b2e37dfc2efe8f02580c7b32f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 51555b660b51c227dd7c80da04f2eecd699c5c96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-Entwicklung" kann Visual Studio 2015 verwendet werden, um voll funktionsfähige Android Native Activity-Apps zu erstellen. Das Android Native Development Kit (NDK) ist ein Toolset, mit dem Sie die überwiegende Anzahl von Android-Apps mit reinem C/C++-Code implementieren können. Mancher Java-JNI-Code fungiert als Verbindungscode, der dem C/C++-Code die Interaktion mit Android ermöglicht. Mit dem Android NDK wurde die Fähigkeit zum Erstellen von Native Activity-Apps mit Android-API Level 9 eingeführt. Native Activity-Code wird häufig zum Erstellen von Spielen und grafikintensiven Apps verwendet, die auf Unreal Engine oder OpenGL basieren. Dieses Thema führt Sie durch Erstellung einer einfachen Native Activity-App, die OpenGL verwendet. Zusätzliche Themen führen Sie durch den Entwicklerlebenszyklus bestehend aus dem Bearbeiten, Erstellen, Debuggen und Bereitstellen von Native Activity-Code.  

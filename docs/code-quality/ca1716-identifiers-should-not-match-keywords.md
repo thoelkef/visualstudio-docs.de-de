@@ -1,10 +1,8 @@
 ---
-title: 'CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen | Microsoft Docs'
-ms.custom: ''
+title: 'CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
 - CA1716
@@ -17,38 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c695f66a096614621cee2f38aed3e8fd6d970bed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 079a3502b35807fed39070b59c6ded2e554bf511
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotMatchKeywords|  
-|CheckId|CA1716|  
-|Kategorie|Microsoft.Naming|  
-|Unterbrechende Änderung|Breaking|  
-  
-## <a name="cause"></a>Ursache  
- Ein Namen für einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache Ihrer Wahl.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert werden, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort können Compilerfehlern und -Mehrdeutigkeiten die Verwendung die Bibliothek erschweren.  
-  
- Diese Regel überprüft anhand von Schlüsselwörtern in den folgenden Sprachen:  
-  
--   Visual Basic  
-  
--   C#  
-  
--   C++/CLI  
-  
- Groß-und Kleinschreibung unterschieden wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Schlüsselwörter und Groß-/ kleinschreibungsvergleich für die anderen Sprachen verwendet wird.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotMatchKeywords|
+|CheckId|CA1716|
+|Kategorie|Microsoft.Naming|
+|Unterbrechende Änderung|Breaking|
+
+## <a name="cause"></a>Ursache
+ Ein Namen für einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache Ihrer Wahl.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert werden, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort können Compilerfehlern und -Mehrdeutigkeiten die Verwendung die Bibliothek erschweren.
+
+ Diese Regel überprüft anhand von Schlüsselwörtern in den folgenden Sprachen:
+
+-   Visual Basic
+
+-   C#
+
+-   C++/CLI
+
+ Groß-und Kleinschreibung unterschieden wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Schlüsselwörter und Groß-/ kleinschreibungsvergleich für die anderen Sprachen verwendet wird.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Sie können eine Warnung dieser Regel unterdrücken, wenn Sie überzeugt sind, dass der Bezeichner keine Benutzer der API verwirrt und, dass die Bibliothek verwendet werden, kann in allen verfügbaren Sprachen in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

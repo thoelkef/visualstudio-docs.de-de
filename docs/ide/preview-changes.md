@@ -1,25 +1,22 @@
 ---
-title: "Vorschau von Codeänderungen in Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Vorschau von Codeänderungen in Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 12/16/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e2f681a3c010b8a922c00bf9d79de749880186
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: cc838d55e83a5b606059acbf068639116ab012bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="preview-changes-window"></a>Fenster „Vorschau der Änderungen“
 
@@ -36,4 +33,4 @@ Klicken Sie nach dem Überprüfen der Änderungen auf die Schaltfläche **Übern
 ## <a name="see-also"></a>Siehe auch
 
 [Refactoring in Visual Studio](../ide/refactoring-in-visual-studio.md)  
-[Schnellaktionen](../ide/quick-actions.md)
+[Schnelle Aktionen](../ide/quick-actions.md)

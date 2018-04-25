@@ -2,8 +2,7 @@
 title: Anfügen an laufende Prozesse mit dem Debugger in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: fe345773cfa4a91789681969623e2174db60c54c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, klicken Sie auf **Debuggen > an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**) zum Öffnen der **an den Prozess anhängen** (Dialogfeld).
@@ -143,12 +142,12 @@ Für einige app-Typen (z. B. uwp-apps), nicht direkt auf einen Prozess anfügen,
 |Remotedebuggen ASP.NET 4 oder 4.5 auf einem IIS-server|Remotetools verwenden und an den Prozess anhängen|w3wp.exe|Finden Sie unter [Remote Debuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Remotedebuggen ASP.NET Core, die auf einem IIS-server|Remotetools verwenden und an den Prozess anhängen|dotnet.exe|App-Bereitstellung finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html). Zum Debuggen finden Sie unter [Remote Debuggen von ASP.NET Core auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Debuggen von anderen unterstützten app-Typen für einen Serverprozess|Verwenden von Remotetools (wenn der Server remote verfügbar ist) und an den Prozess anhängen|Iexplore.exe oder andere Prozesse|Verwenden Sie bei Bedarf Task-Manager, um den Prozess zu identifizieren. Finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md) und in späteren Abschnitten dieses Themas|
-|Remote-Debuggen einer Windows-desktop-app|Remotetools und von F5|Nicht zutreffend| Finden Sie unter [des Remotedebuggens](../debugger/remote-debugging.md)|
-|Remote Debuggen eine app auf UWP (Universal), OneCore, HoloLens und IoT|Installierte app-Paket Debuggen|Nicht zutreffend|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|
-|Debuggen Sie Universelle Windows-App (), OneCore, HoloLens und IoT-Apps, die Sie in Visual Studio starten nicht|Installierte app-Paket Debuggen|Nicht zutreffend|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|  
+|Remote-Debuggen einer Windows-desktop-app|Remotetools und von F5|N/V| Finden Sie unter [des Remotedebuggens](../debugger/remote-debugging.md)|
+|Remote Debuggen eine app auf UWP (Universal), OneCore, HoloLens und IoT|Installierte app-Paket Debuggen|N/V|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|
+|Debuggen Sie Universelle Windows-App (), OneCore, HoloLens und IoT-Apps, die Sie in Visual Studio starten nicht|Installierte app-Paket Debuggen|N/V|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|  
   
 > [!NOTE]
->  Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) -Linkeroption herstellen.
+>  Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute` ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) -Linkeroption herstellen.
 
 ## <a name="what-debugger-features-can-i-use"></a>Welche Debuggerfunktionen kann ich verwenden?
 

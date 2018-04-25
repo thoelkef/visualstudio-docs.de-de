@@ -2,8 +2,7 @@
 title: Der Meldungsansicht | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31baccc88b25979dfc92fed6217bec3b0ef16a55
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="messages-view"></a>Meldungsansicht
 Jedes Fenster verfügt über einen Stream zugeordnete Meldung. Fenster mit einer Nachrichten zeigt diese Nachrichtenstream an. Das Fensterhandle, Meldungscode und Meldung werden angezeigt. Sie können eine Ansicht "Nachrichten" für einen Thread oder den Prozess sowie erstellen. Dadurch können Sie Nachrichten an alle Fenster, die einen bestimmten Prozess oder Thread besonders nützlich ist für das Erfassen von fenstermeldungen für die Initialisierung der Besitz anzuzeigen.  

@@ -1,6 +1,5 @@
 ---
-title: Erstellen Sie ein Windows Forms-Benutzersteuerelement mit dem Datenbindung | Microsoft Docs
-ms.custom: ''
+title: Erstellen Sie ein Windows Forms-Benutzersteuerelement mit der Datenbindung
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt
 
@@ -54,7 +53,7 @@ Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 - Fügen Sie das neue Steuerelement durch Ziehen aus dem **Datenquellenfenster** auf **Form1**.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.
 
@@ -111,7 +110,7 @@ Dieser Schritt fügt dem Benutzersteuerelement eine <xref:System.Windows.Forms.D
 ## <a name="add-the-required-data-binding-attribute"></a>Hinzufügen des erforderlichen Datenbindungsattributs
 
 Für komplexe Steuerelemente, die Datenbindung unterstützen, können Sie das <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementieren.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>So implementieren Sie das ComplexBindingProperties-Attribut
 
 1. Wechseln der **ComplexDataGridView** -Steuerelement zur Codeansicht. (Auf der **Ansicht** klicken Sie im Menü **Code**.)
@@ -137,7 +136,7 @@ Dieser Schritt wird mithilfe der **Datenquellenkonfiguration** -Assistenten zum 
 
 4.  Auf der **wählen Sie Ihre Datenverbindung** Seite führen Sie einen der folgenden:
 
-    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.
 
     - Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** (Dialogfeld).
 
@@ -173,7 +172,7 @@ Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Eleme
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular
 
-Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf das Formular. Überprüfen Sie, ob die **ComplexDataGridView** Steuerelement wird verwendet, um die Daten der Tabelle angezeigt.  
+Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf das Formular. Überprüfen Sie, ob die **ComplexDataGridView** Steuerelement wird verwendet, um die Daten der Tabelle angezeigt.
 
 ## <a name="running-the-application"></a>Ausführen der Anwendung
 
@@ -191,6 +190,6 @@ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung
 
 ## <a name="see-also"></a>Siehe auch
 
-[Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/index)
+- [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/index)

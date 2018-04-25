@@ -1,10 +1,8 @@
 ---
-title: 'CA1822: Member als statisch markieren | Microsoft Docs'
-ms.custom: ''
+title: 'CA1822: Member als statisch markieren'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7524db68b984155a8a03f1f0cb1cce0373b382a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19ca5639b72462f49a818b50a9aaae6e795342b9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren
-|||  
-|-|-|  
-|TypeName|MarkMethodsAsStatic|  
-|CheckId|CA1822|  
-|Kategorie|Microsoft.Performance|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn der Member nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung. Nicht unterbrechend – Wenn Sie nur das Element auf ein Instanzmember mit ändern die `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über einen Instanzmember in ein statisches Element ändern, und er außerhalb der Assembly sichtbar ist.|  
-  
-## <a name="cause"></a>Ursache  
- Ein Element, das nicht auf Instanzdaten zugreift, ist nicht als static markiert (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Ausgeben von Aufrufsites verhindert eine Überprüfung zur Laufzeit für jeden Aufruf, der sicherstellt, dass der aktuelle Objektzeiger ungleich Null ist. Dies kann zu eine messbaren Leistungssteigerung für leistungsabhängigen Code erreichen. In einigen Fällen stellt der Fehler auf die aktuelle Objektinstanz ein Problem auf Richtigkeit.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Markieren Sie den Member als statisch (oder im freigegebenen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder verwenden Sie "this" / "Me" in der Methode Anforderungstext, falls zutreffend.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel für zuvor gelieferten Code, für den die Lösung eine unterbrechende Änderung wäre.  
-  
-## <a name="related-rules"></a>Verwandte Regeln  
- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)  
-  
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
+|||
+|-|-|
+|TypeName|MarkMethodsAsStatic|
+|CheckId|CA1822|
+|Kategorie|Microsoft.Performance|
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn der Member nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung. Nicht unterbrechend – Wenn Sie nur das Element auf ein Instanzmember mit ändern die `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über einen Instanzmember in ein statisches Element ändern, und er außerhalb der Assembly sichtbar ist.|
+
+## <a name="cause"></a>Ursache
+ Ein Element, das nicht auf Instanzdaten zugreift, ist nicht als static markiert (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Ausgeben von Aufrufsites verhindert eine Überprüfung zur Laufzeit für jeden Aufruf, der sicherstellt, dass der aktuelle Objektzeiger ungleich Null ist. Dies kann zu eine messbaren Leistungssteigerung für leistungsabhängigen Code erreichen. In einigen Fällen stellt der Fehler auf die aktuelle Objektinstanz ein Problem auf Richtigkeit.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Markieren Sie den Member als statisch (oder im freigegebenen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder verwenden Sie "this" / "Me" in der Methode Anforderungstext, falls zutreffend.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel für zuvor gelieferten Code, für den die Lösung eine unterbrechende Änderung wäre.
+
+## <a name="related-rules"></a>Verwandte Regeln
+ [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+
+ [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
  [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

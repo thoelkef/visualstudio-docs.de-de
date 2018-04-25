@@ -2,8 +2,7 @@
 title: 'Vorgehensweise: Angeben des Speicherorts, in dem Endbenutzer von installieren | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - installation, specifying installation an URL
 - Installation URL property
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3161cfb36c09f78911a762347f9c9ec6d125ee39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0152cf6b03f2e089ee8633ef4abae9043e41bc24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Gewusst wie: Angeben des Speicherorts für die Installation durch Endbenutzer
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, der Speicherort, in dem Benutzer zum Herunterladen und Installieren der Anwendung ist nicht unbedingt der Speicherort, in dem Sie zunächst die Anwendung veröffentlichen. Beispielsweise in einigen Organisationen kann ein Entwickler eine Anwendung auf einem Testserver veröffentlichen, und klicken Sie dann die Anwendung auf einem Webserver ein Administrator verschiebt.  

@@ -1,10 +1,8 @@
 ---
-title: 'CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen | Microsoft Docs'
-ms.custom: ''
+title: 'CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
 - CA1012
@@ -16,40 +14,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b10d41b9671b3f25aea6722835d709b24ab9b12
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf4f29a11a831bd5b7d4860dd15698922df3a2c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen
-|||  
-|-|-|  
-|TypeName|AbstractTypesShouldNotHaveConstructors|  
-|CheckId|CA1012|  
-|Kategorie|Microsoft.Design|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
-  
-## <a name="cause"></a>Ursache  
- Ein öffentlicher Typ ist abstrakt und verfügt über einen öffentlichen Konstruktor.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Konstruktoren von abstrakten Datentypen können nur von abgeleiteten Typen aufgerufen werden. Da öffentliche Konstruktoren Instanzen eines Typs erstellen und Sie keine Instanzen eines abstrakten Datentyps erstellen können, ist ein abstrakter Datentyp mit einem öffentlichen Konstruktor fehlerhaft konzipiert.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, dass der geschützte Konstruktor oder deklarieren Sie den Typ als abstrakt nicht.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel. Der abstrakte Typ verfügt über einen öffentlichen Konstruktor.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel enthält einen abstrakten Typ, der mit dieser Regel verletzt.  
-  
+|||
+|-|-|
+|TypeName|AbstractTypesShouldNotHaveConstructors|
+|CheckId|CA1012|
+|Kategorie|Microsoft.Design|
+|Unterbrechende Änderung|Nicht unterbrechend|
+
+## <a name="cause"></a>Ursache
+ Ein öffentlicher Typ ist abstrakt und verfügt über einen öffentlichen Konstruktor.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Konstruktoren von abstrakten Datentypen können nur von abgeleiteten Typen aufgerufen werden. Da öffentliche Konstruktoren Instanzen eines Typs erstellen und Sie keine Instanzen eines abstrakten Datentyps erstellen können, ist ein abstrakter Datentyp mit einem öffentlichen Konstruktor fehlerhaft konzipiert.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Um einen Verstoß gegen diese Regel zu beheben, dass der geschützte Konstruktor oder deklarieren Sie den Typ als abstrakt nicht.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Unterdrücken Sie keine Warnung dieser Regel. Der abstrakte Typ verfügt über einen öffentlichen Konstruktor.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel enthält einen abstrakten Typ, der mit dieser Regel verletzt.
+
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
- [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]  
-  
-## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird der vorherige Verstoß korrigiert, durch ändern den Zugriff auf den Konstruktor aus `public` auf `protected`.  
-  
+ [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
+
+## <a name="example"></a>Beispiel
+ Im folgende Beispiel wird der vorherige Verstoß korrigiert, durch ändern den Zugriff auf den Konstruktor aus `public` auf `protected`.
+
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
  [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

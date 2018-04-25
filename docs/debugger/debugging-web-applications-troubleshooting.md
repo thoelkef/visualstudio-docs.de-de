@@ -2,8 +2,7 @@
 title: 'Debuggen von Webanwendungen: Problembehandlung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce5fedefc5e99ad0951f10f72777cadfadae8c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Problembehandlung beim Debuggen von Webanwendungen
 Dieser Abschnitt enthält allgemeine Prozeduren, die zur Fehlerbehebung verwendet werden können.  
@@ -35,7 +34,7 @@ Dieser Abschnitt enthält allgemeine Prozeduren, die zur Fehlerbehebung verwende
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
- Erläutert das Behandeln und Auflösen von Fehlern.  
+ Erläutert das Behandeln und Beheben von Fehlern.  
   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)  
  Übersicht über das Debuggen von Webanwendungen wie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], XML-Webdiensten und ATL-Server-Projekten.

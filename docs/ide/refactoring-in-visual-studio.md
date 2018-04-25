@@ -1,24 +1,21 @@
 ---
 title: Umgestalten von Code in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8b88d0bc275d16394fafd559702667b35dbaad
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0ab0fdd2f7b5f5729c37e9c54ae6536688511b87
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="refactoring-code"></a>Umgestalten von Code (Refactoring)
 
@@ -28,7 +25,7 @@ In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Prog
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellaktionen](../ide/quick-actions.md)  
+[Schnelle Aktionen](../ide/quick-actions.md)  
 [Visual Studio-IDE](../ide/visual-studio-ide.md)  
 [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md)  
 [Vorschau der Änderungen](../ide/preview-changes.md)
