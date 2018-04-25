@@ -1,19 +1,19 @@
 ---
 title: Laufzeiteinstellungen für Auslastungstests in Visual Studio | Microsoft-Dokumentation
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: d278323bd816a801d94d2d1c18755111afa43eed
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 498c581d1918fbd4565f821bf516a5301534d733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
@@ -50,7 +50,7 @@ Mit den Laufzeiteinstellungen eines Auslastungstests wird eine Vielzahl anderer 
 |Eigenschaft|Definition|
 |--------------|----------------|
 |**Speichertyp**|Die Art der Speicherung von Leistungsindikatoren, die in einem Auslastungstest abgerufen werden. Dies sind die Optionen:<br /><br /> -   **Datenbank:** Erfordert eine SQL-Datenbank mit einem **Auslastungstest-Ergebnisspeicher**.<br />-   **Keine**.|
-|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das Diagramm für Aktivitäten virtueller Benutzer im Auslastungstest-Analyzer zu verwenden.<br />     Weitere Informationen finden Sie unter [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Releases.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [How to: Specify the Sample Rate (Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“)](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das Diagramm für Aktivitäten virtueller Benutzer im Auslastungstest-Analyzer zu verwenden.<br />     Weitere Informationen finden Sie unter [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Releases.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [How to: Specify the Timing Details Storage Property (Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“)](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Eigenschaften der SQL-Ablaufverfolgung
 
