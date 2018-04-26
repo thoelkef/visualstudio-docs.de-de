@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6fc7190fc8cf2661dd64bbcb6f335d0e63a04e29
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 20c4c9e9c91fd93a190463bc35fe016be4cdf838
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
 Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl schreiben oder [einer domänenspezifischen Sprache](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), Sie können mithilfe des Textvorlagendiensts transformieren von Textvorlagen. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.

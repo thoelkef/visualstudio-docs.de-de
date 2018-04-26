@@ -1,6 +1,7 @@
 ---
 title: Regelsatz für gemischte Mindestregeln
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f5e64c0c8c8893caac738df5616140d7379c56
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 160990ad1e7ffd3dd31e445e167db0e14d08ca99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.

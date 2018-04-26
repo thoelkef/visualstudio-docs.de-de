@@ -1,9 +1,8 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2efa01078cb089055cb48fbb80e9c1ffcde0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 
@@ -415,5 +414,5 @@ Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereit
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)  
-[MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
+- [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)

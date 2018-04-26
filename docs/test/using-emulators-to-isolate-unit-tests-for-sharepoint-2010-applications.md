@@ -1,6 +1,7 @@
 ---
-title: Verwenden von Emulatoren zum Isolieren von Komponententests für SharePoint 2010-Anwendungen | Microsoft-Dokumentation
+title: Verwenden Emulatoren zum Insolieren von Komponententests für SharePoint 2010-Anwendungen
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Verwenden Emulatoren zum Insolieren von Komponententests für SharePoint 2010-Anwendungen
 Das Microsoft.SharePoint.Emulators-Paket stellt eine Reihe von Bibliotheken bereit, die Ihnen helfen, isolierte Komponententests für Microsoft SharePoint 2010-Anwendungen zu erstellen. Emulatoren verwenden [Shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) aus dem Isolationsframework [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md), um einfache Objekte im Arbeitsspeicher zu erstellen, die die gängigsten Objekte und Methoden der SharePoint-API imitieren. Wenn eine SharePoint-Methode nicht emuliert wird oder wenn Sie das Standardverhalten eines Emulators ändern möchten, können Sie Fakes-Shims erstellen, um die gewünschten Ergebnisse bereitzustellen.
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Im Folgenden finden Sie eine Änderung der vorhandenen Testmethode `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, die einen Fälschungsdelegaten implementiert. Die erforderlichen Änderungen werden in den Kommentaren gekennzeichnet:
 
 > [!IMPORTANT]
->  Testmethoden, die explizit Fakes-Shims erstellen, lösen eine `ShimNotSupported`-Ausnahme aus, wenn der Test im `EmulationMode.Passthrough`-Kontext ausgeführt wird. Um dieses Problem zu vermeiden, verwenden Sie eine Variable, um den `EmulationMode`-Wert festzulegen und jeden Fakes-Code in eine `if`-Anweisung einzubinden, die den Wert testet.
+> Testmethoden, die explizit Fakes-Shims erstellen, lösen eine `ShimNotSupported`-Ausnahme aus, wenn der Test im `EmulationMode.Passthrough`-Kontext ausgeführt wird. Um dieses Problem zu vermeiden, verwenden Sie eine Variable, um den `EmulationMode`-Wert festzulegen und jeden Fakes-Code in eine `if`-Anweisung einzubinden, die den Wert testet.
+
 
 ```csharp
 // class level field to set emulation mode

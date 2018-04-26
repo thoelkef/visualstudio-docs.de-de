@@ -1,18 +1,19 @@
 ---
 title: 'Erstellen einer .NET Core-Entwicklungsumgebung mit Containern unter Verwendung von Kubernetes in der Cloud, Schritt 4: Debuggen eines Containers in Kubernetes | Microsoft-Dokumentation'
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Schnelle Kubernetes-Entwicklung mit Containern und Microservices in Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, Container
-manager: ghogen
-ms.openlocfilehash: f06489194f70a3e7e617f4022917cd1d4a96337f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 043052dec78251647a3ef12e0b612355b6334692
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Erste Schritte in Connected Environment mit .NET Core
  
@@ -63,7 +64,7 @@ Anstatt bei jeder Codeänderung ein neues Containerimage zu erstellen und bereit
 
 Aktualisieren Sie die Web-App im Browser, und navigieren Sie zur Seite „Info“. Ihre benutzerdefinierte Nachricht sollte nun auf der Benutzeroberfläche angezeigt werden.
 
-**Sie verfügen jetzt über eine Methode, mit der Sie direkt in Kubernetes schnell auf Ihrem Code aufbauen und diesen debuggen können.** Als Nächstes erfahren Sie, wie Sie einen zweiten Container erstellen und aufrufen.
+**Sie verfügen jetzt über eine Methode, mit der Sie direkt in Kubernetes schnell auf Ihrem Code aufbauen und diesen debuggen können.** Als Nächstes erfahren Sie, wie Sie einen zweiten Container erstellen und aufrufen können.
 
 > [!div class="nextstepaction"]
 > [Aufrufen eines Diensts, der in einem separaten Container ausgeführt wird](get-started-netcore-05.md)

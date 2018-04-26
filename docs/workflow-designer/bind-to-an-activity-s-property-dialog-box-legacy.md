@@ -1,7 +1,9 @@
 ---
-title: Binden an eine Aktivität&#39;s-Eigenschaft (Dialogfeld) (Legacy) | Microsoft Docs
+title: Workflow-Designer - Bindung an eine Aktivität&#39;s-Eigenschaft (Dialogfeld) (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Binden an eine Aktivität&#39;s-Eigenschaft (Dialogfeld) (Vorgängerversion)
-In diesem Thema wird beschrieben, wie die **Binden an die Eigenschaft einer Aktivität** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Dialogfeld "Binden an die Eigenschaft einer Aktivität" (Vorgängerversion)
+
+In diesem Thema wird beschrieben, wie die **Binden an die Eigenschaft einer Aktivität** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
  Ein Instanztyp der Abhängigkeitseigenschaft kann an die öffentliche Eigenschaft oder das Ereignis einer anderen Aktivität gebunden werden. Weitere Informationen zur aktivitätsbindung finden Sie unter [Verwenden von Abhängigkeitseigenschaften](http://go.microsoft.com/fwlink?LinkID=65007).
 

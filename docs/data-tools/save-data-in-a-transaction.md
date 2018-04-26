@@ -15,19 +15,20 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6fd36ace8949774c755a7a192e201b6d9011ff8b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion
 Diese exemplarische Vorgehensweise veranschaulicht, wie zum Speichern von Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Verwenden Sie den Konfigurations-Assistenten so erstellen ein Dataset für zwei Tabellen in der Northwind-Beispieldatenbank. Sie fügen datengebundene Steuerelemente auf einem Windows Form, und ändern Sie den Code für die BindingNavigators speichern Schaltfläche zum Aktualisieren der Datenbank innerhalb einer "TransactionScope".
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.
 
 1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können als Teil des SQL Server Express LocalDB installiert werden die **.NET Desktopentwicklung** arbeitsauslastung oder als eine einzelne Komponente.
@@ -72,7 +73,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 4.  Auf der **wählen Sie Ihre Datenverbindung** Bildschirm führen Sie einen der folgenden:
 
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.
+    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
          - oder - 
 

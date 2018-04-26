@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Ändern Sie die Option zum schrittweisen Debuggen (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Ändern Sie die Option zum schrittweisen Debuggen (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - branch stepping
 - debugging, stepping options
@@ -14,28 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31047cedd4e8772b9ebab4ef238a8fe32bc07663
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Vorgehensweise: Ändern der Option zum schrittweisen Debuggen (Vorgängerversion)
-In diesem Thema wird beschrieben, wie so ändern Sie die Option zum schrittweisen Debuggen [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Anwendungen in älteren Windows Workflow-Designer, die über parallele Aktionen verfügen. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
 
- Beim Debuggen von legacyaktivitäten, die gleichzeitig ausgeführt werden, z. B. auf **ParallelActivity** oder **ConditionedActivityGroup**, können Sie eine der beiden Optionen den Code schrittweise.
+In diesem Thema wird beschrieben, wie so ändern Sie die Option für Windows Workflow Foundation (WF)-Anwendungen in älteren Windows Workflow-Designer, die über parallele Aktionen verfügen schrittweisen Debuggen wird. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
- Führen Sie die nachstehenden Schritte aus, um die Option zum schrittweisen Debuggen in Ihrem Legacyworkflowprojekt zu ändern.
+Beim Debuggen von legacyaktivitäten, die gleichzeitig ausgeführt werden, z. B. auf **ParallelActivity** oder **ConditionedActivityGroup**, können Sie eine der beiden Optionen den Code schrittweise.
+
+Führen Sie die nachstehenden Schritte aus, um die Option zum schrittweisen Debuggen in Ihrem Legacyworkflowprojekt zu ändern.
 
 ## <a name="procedures"></a>Verfahren
 
-#### <a name="to-change-the-debug-stepping-option"></a>So ändern Sie die Option zum schrittweisen Debuggen
+### <a name="to-change-the-debug-stepping-option"></a>So ändern Sie die Option zum schrittweisen Debuggen
 
 1.  Starten Sie Visual Studio.
 
-2.  Öffnen Sie ein vorhandenes Legacyworkflowprojekt, oder erstellen Sie ein neues Projekt, das gleichzeitige Aktivitäten verwendet und auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt.
+2.  Öffnen Sie ein vorhandenes legacyworkflowprojekt, oder erstellen Sie ein neues Projekt, das gleichzeitig ausgeführte Aktivitäten und mit der Zielversion wurden, .NET Framework, Version 3.5 oder die WinFX.
 
-3.  Auf der **Workflow** Menü in der Vorgängerversion [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], zeigen Sie auf **Debuggen**, und zeigen Sie dann auf **Steppingoptionen**.
+3.  Auf der **Workflow** Menü im älteren Workflow-Designer, zeigen Sie auf **Debuggen**, und zeigen Sie dann auf **Steppingoptionen**.
 
 4.  Wählen Sie entweder **Instanz** oder **Verzweigung**.
 

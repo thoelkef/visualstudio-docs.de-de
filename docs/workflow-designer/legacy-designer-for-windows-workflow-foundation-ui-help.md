@@ -1,7 +1,9 @@
 ---
-title: Legacy-Designer für Windows Workflow Foundation – Hilfe zur Benutzeroberfläche | Microsoft Docs
+title: Workflow-Designer - Legacy-Designer für Windows Workflow Foundation – Hilfe zur Benutzeroberfläche
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - UI reference
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, UI reference
@@ -12,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8b3a84926f933e2e7f5d97a6e2f3562f2807560
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Benutzeroberflächenhilfe von Visual Studio Designer für Windows Workflow Foundation (Vorgängerversion)
-Dieser Abschnitt enthält die kontextbezogenen Hilfethemen für die älteren Windows-Workflow-Designer in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Verwenden Sie den Legacydesigner, wenn Sie auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
 
- Sie können diese Themen zugreifen der [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Benutzeroberfläche durch Drücken von **F1** bei einer älteren [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Dialogfeld geöffnet ist.
+Dieser Abschnitt enthält die kontextbezogenen Hilfethemen für die älteren Windows-Workflow-Designer in Visual Studio 2010. Verwenden Sie den Designer den Vorgängerversion, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
+
+Sie können diese Themen über die Benutzeroberfläche von Visual Studio zugreifen, durch Drücken von **F1** Wenn ein legacy-Workflow-Designer-Dialogfeld geöffnet ist.

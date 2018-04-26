@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: IDisposable korrekt implementieren'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
 
@@ -60,21 +61,21 @@ Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.
 
 Überprüfen Sie den Code, und bestimmen Sie, welche der folgenden Lösungen diese Verletzung zu korrigieren.
 
-- Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von {0} implementiert, und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.
+- Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von implementiert werden {0} und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.
 
-- Entfernen Sie den Finalizer von Typ ' {0} ', überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in der Codepfad, in denen "Offen" "false".
+- Entfernen Sie den Finalizer von Typ {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in der Codepfad, in denen "Offen" "false".
 
-- Entfernen von {0}, überschreiben Sie Dispose (Bool disposing) und platzieren Sie die Dispose-Logik in der Codepfad, in denen "Offen" "true".
+- Entfernen Sie {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Dispose-Logik in der Codepfad, in denen "Offen" "true".
 
-- Stellen Sie sicher, dass diese {0} als öffentlich und versiegelt deklariert ist.
+- Sicherstellen, dass {0} als öffentlich deklariert und versiegelt.
 
-- Benennen Sie die {0} in 'Dispose', und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
+- Benennen Sie {0} in 'Dispose', und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
 
-- Stellen Sie sicher, dass diese {0} deklariert wird, als geschützt, virtuelle und nicht versiegelte.
+- Stellen Sie sicher, dass {0} deklariert, wie geschützte, virtuelle und nicht versiegelt ist.
 
-- Ändern Sie {0} so, dass es Dispose(true) und anschließend GC aufruft. SuppressFinalize auf die aktuelle Objektinstanz ('this' oder 'Me' in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), und gibt dann zurück.
+- Ändern Sie {0} , damit es Dispose(true) aufruft, ruft dann GC. SuppressFinalize auf die aktuelle Objektinstanz ('this' oder 'Me' in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), und gibt dann zurück.
 
-- Ändern Sie {0} so, dass Dispose(false) aufgerufen und gibt dann zurück.
+- Ändern Sie {0} , damit Dispose(false) aufgerufen und gibt dann zurück.
 
 - Wenn Sie einem nicht versiegelten Typs, die deklariert und implementiert die IDisposable-Schnittstelle erstellen, stellen Sie sicher, dass die Implementierung von IDisposable dem Muster folgt, das weiter oben in diesem Abschnitt beschrieben wird.
 

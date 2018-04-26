@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2412e50279c646190d1112a42c00da06c75bf794
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 6f3c17a388aa974b78fdecc108891cf3be17c0da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, damit Benutzer für die DSL typische Aufgaben ausführen können. Die Befehle werden im Kontextmenü angezeigt, wenn Benutzer mit der rechten Maustaste auf das Diagramm klicken. Sie können einen Befehl so definieren, dass er nur unter bestimmten Bedingungen im Menü angezeigt wird. Sie können beispielsweise angeben, dass der Befehl nur sichtbar ist, wenn der Benutzer auf bestimmte Typen von Elementen oder auf Elemente in bestimmten Zuständen klickt.
@@ -219,7 +220,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Die folgenden Fragmente sind häufig in OnStatus-Methoden nützlich:
 
--   `this.CurrentSelection`. Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
+-   `this.CurrentSelection` Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
 
 -   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 

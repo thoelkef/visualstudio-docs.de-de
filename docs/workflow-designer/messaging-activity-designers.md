@@ -1,21 +1,24 @@
 ---
-title: Messaging-Aktivitätsdesigner | Microsoft Docs
+title: Workflow-Designer - Messaging-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
-Messaging-Aktivitätsdesigner werden verwendet, um Messaging-Aktivitäten zu erstellen und zu konfigurieren, die [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]-Nachrichten in einer [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Anwendung senden und empfangen. Die [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] führt fünf messaging-Aktivitäten und Windows Workflow-Designer stellt zwei neue Vorlagen-Designer, mit denen Sie messaging innerhalb eines Workflows verwalten können. Die Themen, die in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführt sind, enthalten Anleitungen dazu, wie die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Aktivitäts- und Vorlagen-Designer verwendet werden.
+
+Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messagingaktivitäten, die senden und Empfangen von Nachrichten in einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). .NET Framework 4 führt fünf messaging-Aktivitäten und Windows Workflow-Designer stellt zwei neue Vorlagen-Designer, mit die Sie messaging innerhalb eines Workflows verwalten können. Die Themen in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführten enthalten Anleitungen zum Workflow-Designer-Aktivität und den Vorlagen-Designer verwenden.
 
 ## <a name="reference"></a>Referenz
  <xref:System.Activities.Activity>

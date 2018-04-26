@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5e51eaded4d42d5ca0aafe33ec8e72807afb748
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: d9722bed4bcf20fbdba322bea7cd3aab4328fa7e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Speichern von Dateien und XML-Serialisierung anpassen
 
@@ -57,7 +58,7 @@ Um ein Beispiel für dieses Thema zu erstellen, wurde die folgende DSL-Definitio
 
 Diese DSL wurde verwendet, um ein Modell zu erstellen, die folgende Darstellung auf dem Bildschirm verfügt.
 
-![Stammbaumdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
+![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
 
 Dieses Modell wurde gespeichert, und klicken Sie dann erneut in der XML-Text-Editor geöffnet:
 
@@ -278,7 +279,7 @@ Diese Elemente finden Sie im DSL-Explorer unter **XML-Serialisierungsdaten Behav
 |Typ der Monikername|Der Name des XSD-Typs für Moniker auf Elemente dieser Klasse generiert. XSD-Code befindet sich im **Dsl\Generated Code\\\*Schema.xsd**|
 |Serialisieren Sie Id|Bei "true", ist die GUID des Elements in der Datei enthalten. Diese Angabe muss "true", wenn keine Eigenschaft, die markiert ist **ist der Moniker-Schlüssel** und der DSL verweisbeziehungen diese Klasse definiert.|
 |Typname|Der Name des Xml-Datentyps in der Xsd aus der angegebenen Domänenklasse generiert.|
-|Notizen|Informelle Anmerkungen im Zusammenhang mit diesem element|
+|Hinweise|Informelle Anmerkungen im Zusammenhang mit diesem element|
 
 ### <a name="xml-property-data"></a>XML-Daten
 
@@ -292,7 +293,7 @@ XML-Eigenschaftsknoten befinden sich unter den Knoten für die Klasse.
 |Ist der Moniker-Qualifizierer|Bei "true", wird die Eigenschaft zum Erstellen des Qualifizierers in Moniker verwendet. Wenn "false", und SerializeId nicht für diese Domänenklasse "true" ist, werden Moniker durch den Moniker des übergeordneten Elements in der Struktur einbetten qualifiziert.|
 |Darstellung|Wenn das Attribut, das die Eigenschaft als XML-Attribut serialisiert werden; Element, es wird serialisiert, als ein Element. Falls Sie nicht serialisiert.|
 |XML-Name|Namen für die XML-Attribut oder Element, das die Eigenschaft darstellt. Standardmäßig ist dies eine kleingeschriebene Version des Domänennamens-Eigenschaft.|
-|Notizen|Informelle Anmerkungen im Zusammenhang mit diesem element|
+|Hinweise|Informelle Anmerkungen im Zusammenhang mit diesem element|
 
 ### <a name="xml-role-data"></a>Rolle von XML-Daten
 

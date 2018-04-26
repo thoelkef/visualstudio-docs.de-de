@@ -1,25 +1,25 @@
 ---
-title: 'Fehler: Der Zielprozess wurde beim Auswerten der Funktion &#39;Funktion&#39; | Microsoft Docs'
+title: 'Fehler: Der Zielprozess wurde mit Code beendet &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39; | Microsoft Docs'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde beim Auswerten der Funktion &#39;Funktion&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde mit Code beendet &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39;
 
-Vollständiger Text der Fehlermeldung: der Zielprozess beim Auswerten der Funktion 'Funktion' wurde beendet. Finden Sie im Ausgabefenster der Zielprozess Exitcode.
+Vollständiger Text der Fehlermeldung: der Zielprozess endete mit Code 'Code' beim Auswerten der Funktion 'Funktion'.
 
 Zum Überprüfen des Status von Objekten .NET zu vereinfachen, wird der Debugger automatisch einen debuggten Prozess zum Ausführen zusätzlichen Codes erzwingen (i. d. r. Eigenschaft Abrufmethoden und `ToString` Funktionen). In den meisten Szenarien werden diese Funktionen erfolgreich abgeschlossen oder lösen Ausnahmen, die vom Debugger abgefangen werden können. Es gibt jedoch einige Situationen, in denen Ausnahmen abgefangen werden können, da sie Kernel Grenzen plattformübergreifende, benötigen Benutzer meldungsweiterleitung oder nicht behebbar sind. Als ein Ergebnis, einen Getter für eine Eigenschaft oder der ToString-Methode, die Code ausführt, beendet, entweder explizit den Prozess (z. B. ruft `ExitProcess()`) oder löst eine nicht behandelte Ausnahme, die abgefangen werden kann (z. B. `StackOverflowException`) wird beendet die debuggten Prozess und Ende der Debugsitzung. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.
  

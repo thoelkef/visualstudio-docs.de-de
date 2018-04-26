@@ -6,14 +6,15 @@ ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d086157761bbade92e7b79973876d18bc52f2fd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffec139089f77a1d5c3ffd855e16f12b31e35c17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden zugeordnet werden, um gespeicherte Prozeduren und Funktionen (O/R-Designer)
 Gespeicherte Prozeduren und Funktionen können hinzugefügt werden die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] als <xref:System.Data.Linq.DataContext> Methoden. Aufrufen der Methode und übergeben der erforderlichen Parameter führt die gespeicherte Prozedur oder Funktion für die Datenbank und gibt die Daten im Rückgabetyp von den <xref:System.Data.Linq.DataContext> Methode. Ausführliche Informationen zu <xref:System.Data.Linq.DataContext> Methoden, finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).

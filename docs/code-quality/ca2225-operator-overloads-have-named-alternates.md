@@ -1,6 +1,7 @@
 ---
 title: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6e95f73fbb037041aadcc95eb7336a5744ee2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf
 |||
@@ -41,40 +42,40 @@ ms.lasthandoff: 04/19/2018
 |---------|------------------|-----------|--------------------|
 |+ (binär)|+|+ (binär)|Hinzufügen|
 |+=|+=|+=|Hinzufügen|
-|&|Und|&|BitwiseAnd|
+|&|And|&|BitwiseAnd|
 |&=|' Und ' =|&=|BitwiseAnd|
-|&#124;|Oder|&#124;|BitwiseOr|
+|&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|"Oder" =|&#124;=|BitwiseOr|
-|--|N/V|--|Dekrement|
-|/|/|/|Trennen|
-|/=|/=|/=|Trennen|
+|--|Nicht zutreffend|--|Dekrement|
+|/|/|/|Teilen|
+|/=|/=|/=|Teilen|
 |==|=|==|gleich|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
 |>|>|>|Vergleichen|
 |>=|>=|>=|Vergleichen|
-|++|N/V|++|Inkrement|
+|++|Nicht zutreffend|++|Inkrement|
 |<>|!=|gleich|
 |<<|<<|<<|Linke UMSCHALTTASTE|
 |<<=|<<=|<<=|Linke UMSCHALTTASTE|
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
-|&&|N/V|&&|LogicalAnd|
-|&#124;&#124;|N/V|&#124;&#124;|LogicalOr|
-|!|N/V|!|LogicalNot|
+|&&|Nicht zutreffend|&&|LogicalAnd|
+||||Nicht zutreffend||||LogicalOr|
+|!|Nicht zutreffend|!|LogicalNot|
 |%|Mod|%|MOD oder Rest|
-|%=|N/V|%=|Mod|
+|%=|Nicht zutreffend|%=|Mod|
 |* (binär)|*|*|Multiplizieren|
-|*=|N/V|*=|Multiplizieren|
+|*=|Nicht zutreffend|*=|Multiplizieren|
 |~|Not|~|OnesComplement|
 |>>|>>|>>|Rechte UMSCHALTTASTE|
-=|N/V|>>=|Rechte UMSCHALTTASTE|
+=|Nicht zutreffend|>>=|Rechte UMSCHALTTASTE|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
-|-=|N/V|-=|Subtrahieren|
-|true|IsTrue|N/V|IsTrue (Eigenschaft)|
-|-(Unär)|N/V|-|Negate-|
-|+ (Unär)|N/V|+|Plus|
-|false|IsFalse|False|IsTrue (Eigenschaft)|
+|-=|Nicht zutreffend|-=|Subtrahieren|
+|true|IsTrue|Nicht zutreffend|IsTrue (Eigenschaft)|
+|-(Unär)|Nicht zutreffend|-|Negate-|
+|+ (Unär)|Nicht zutreffend|+|Plus|
+|False|IsFalse|False|IsTrue (Eigenschaft)|
 
  N/v == kann nicht in der ausgewählten Sprache nicht überladen werden.
 

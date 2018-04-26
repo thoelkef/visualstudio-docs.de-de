@@ -1,6 +1,7 @@
 ---
 title: Analysieren und Modellieren der Architektur
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -31,16 +32,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 704eee0122cfa5e0d70c910d4f5e55ff1732e670
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 22a0547374087927e7fc2d3da89c3fe4f2a5c2b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analysieren und Modellieren der Architektur
 Stellen Sie sicher, dass Ihre app architektonische Anforderungen erfüllt, mithilfe von Visual Studio-Architektur und-Modellierungstools zum Entwerfen und modellieren Ihrer app.
 
-* Bei Verwendung von Visual Studio zum Visualisieren der Codestruktur, des -verhaltens und der -beziehungen können Sie vorhandenen Programmcode besser verstehen.
+* Wenn Sie Visual Studio zum Visualisieren von Codestruktur, -verhalten und -beziehungen verwenden, können Sie vorhandenen Programmcode besser verstehen.
 
 * Informieren Sie Ihrem Team in die Notwendigkeit einer ressourcenbezogene architektonische Abhängigkeiten.
 
@@ -48,7 +49,7 @@ Stellen Sie sicher, dass Ihre app architektonische Anforderungen erfüllt, mithi
 
 Finden Sie unter [Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
-## <a name="to"></a>Zum
+## <a name="to"></a>Beschreibung
 
 |||
 |-|-|

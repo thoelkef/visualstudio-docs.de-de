@@ -14,14 +14,15 @@ ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c753c3818ac97fc353a90d4c7ae58f5f84f89b4b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7674656c9a4995b853753e12b19fd71bf77a3c9f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Steuerelemente binden. Um diese datengebundenen Steuerelemente erstellen, können Sie Elemente aus ziehen die **Datenquellen** auf die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, mit denen Sie datengebundene [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Anwendungen erstellen können.
@@ -51,7 +52,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INC
 |DataSet|Ja|Ja|
 |[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Ja|Ja|
 |Dienst|Ja|Nein|
-|Objekt|Ja|Nein|
+|Object|Ja|Nein|
 
 ### <a name="datasets"></a>Datasets
  Beim Ziehen einer Tabelle oder Spalte aus der **Datenquellen** in den Designer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:

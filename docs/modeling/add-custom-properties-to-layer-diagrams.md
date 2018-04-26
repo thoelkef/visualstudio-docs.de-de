@@ -9,15 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2766f6487b6cf2fb39140eb9678afc9999e39545
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeit-Diagramme hinzu
-Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte mit jedem Element in einem Diagramm Abhängigkeit speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Außerdem können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer angezeigt und werden bearbeitet können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Überprüfungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
+Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte mit jedem Element in einem Diagramm Abhängigkeit speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Außerdem können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer angezeigt und werden bearbeitet können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
 
 ## <a name="properties-not-visible-to-the-user"></a>Für den Benutzer nicht sichtbare Eigenschaften
  Wenn Sie nur Code Werte auf jedes Element in einem Diagramm Abhängigkeit anfügen möchten, müssen Sie eine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
@@ -41,7 +42,7 @@ Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte m
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4.  Starten Sie Visual Studio neu.
+> 4.  Starten Sie Visual Studio neu.
 
  **Stellen Sie sicher, dass der Code in einem VSIX-Projekt ist**
 

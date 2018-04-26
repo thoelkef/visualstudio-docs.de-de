@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b70b229d128143a4c61dc9789e3a4797a0317643
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ce0cdb65125dd1a8b17d1c1de9e6f49eb3084b92
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 Diese Tools Architekturrichtlinien ist ein herunterladbares Paket praktische Anleitung zur Verwendung der Modellierungstools in Visual Studio 2010. Es zeigt einen allgemeinen Überblick über die Modellierungstools in einer integrierten Weise verwenden wie, und behandelt die häufigsten Szenarien, in denen die Tools verwendet werden.

@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7046a7c5af51d1d6c7190525b776ee46b1e41f4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ad7f424f9c44623a2112680757598f8076358f36
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert ist und problemlos geändert werden, wenn sich das Quellmodell ändert. Vergleichen Sie dies mit der alternativen Technik für ein vollkommen generisches Programm, das eine Konfigurationsdatei akzeptiert, was flexibler ist, aber zu Code führt, der nicht so einfach zu lesen und zu ändern ist und keine so gute Leistung aufweist. In dieser exemplarischen Vorgehensweise wird dieser Vorteil veranschaulicht.
@@ -153,7 +154,7 @@ namespace MyProject
     <#@ output extension=".cs" #>
     ```
 
- .
+ sein.
 
  Beachten Sie, dass eine CS-Datei im Projektmappen-Explorer als untergeordnete Datei der Vorlagendatei angezeigt wird. Sie können Sie sehen, wenn Sie auf das [+] neben dem Namen der Vorlagendatei klicken. Diese Datei wird aus der Vorlagendatei generiert wenn Sie speichern oder den Fokus von der Vorlagendatei wegnehmen. Die generierte Datei wird als Teil des Projekts kompiliert.
 
@@ -398,7 +399,7 @@ namespace MyProject
 
  Wenn die Beispiel-XML-Datei geändert wurde, können Sie die Klassen neu generieren, indem Sie in der Symbolleiste des Projektmappen-Explorer auf **Alle Vorlagen transformieren** klicken.
 
-## <a name="conclusion"></a>Schlussfolgerung
+## <a name="conclusion"></a>Schlussbemerkung
  In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:
 
 -   *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.

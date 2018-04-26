@@ -1,9 +1,9 @@
 ---
-title: 'Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung |Microsoft-Dokumentation'
+title: 'Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,35 +11,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung
 In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:  
-  
+
 -   Generieren von Zufallszahlen mithilfe der `Random`-Klasse.  
-  
+
 -   Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, indem Sie ein **Timer**-Steuerelement verwenden.  
-  
+
 -   Steuern des Programmablaufs mit `if else`-Anweisungen.  
-  
+
 -   Ausführen grundlegender arithmetischer Operationen im Code.  
-  
+
  Nach Abschluss der Übung sieht das Quiz wie im folgenden Bild dargestellt aus, enthält jedoch andere Zahlen.  
-  
+
  ![Mathetest mit vier Aufgaben](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Quiz, das Sie in diesem Lernprogramm erstellen  
-  
+
  Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
-  
+
 > [!NOTE]
 >  In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  
-  
+
 ## <a name="related-topics"></a>Verwandte Themen  
-  
+
 |Titel|description|  
 |-----------|-----------------|  
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Beginnen Sie, indem Sie das Projekt erstellen, Eigenschaften ändern und `Label`-Steuerelemente hinzufügen.|  

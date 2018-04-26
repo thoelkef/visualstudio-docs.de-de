@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 686adf1eb7696447a77d20d18f48527c7cfaae96
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 34330e4c4b5580c0554585ec88599e2d2e62181d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrieren von Modellen mit Visual Studio-ModelBus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus bietet eine Methode zum Erstellen von Links zwischen Modellen und anderer Tools in Modellen. Sie können z. B. domänenspezifische Sprache (DSL) und UML-Modelle verknüpfen. Sie können einen integrierten Satz von DSLs erstellen.

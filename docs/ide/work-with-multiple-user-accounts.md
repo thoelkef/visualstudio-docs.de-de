@@ -1,7 +1,7 @@
 ---
-title: Arbeiten mit mehreren Benutzerkonten | Microsoft-Dokumentation
-ms.custom: ''
+title: Arbeiten mit mehreren Benutzerkonten
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
 author: TerryGLee
@@ -9,11 +9,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b93a57592ae87daa8d60d5a4d5e7166d26cfe61f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55121b8cdaa55bed158aac25163462705c2aeec8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -78,4 +78,4 @@ Wechseln Sie nun erneut zum **Server Explorer** , klicken Sie mit der rechten Ma
 
 ## <a name="see-also"></a>Siehe auch
 
-[Anmelden bei Visual Studio](signing-in-to-visual-studio.md)
+- [Anmelden bei Visual Studio](signing-in-to-visual-studio.md)

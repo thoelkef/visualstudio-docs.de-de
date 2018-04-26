@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 065d9e23a8ae8b5e328786bb195d191df1388abb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 152f8d656bf83a6ad46770e695cd64c508dcc3bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 
@@ -60,7 +61,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory>|Ein Verzeichnis, das die Textvorlagen enthalten in der Vorlage angegebenen Text enthält.|
 |**-P** \<referencepath>|Eine zu durchsuchende Verzeichnis an in der Textvorlage angegebenen Assemblys oder zur Verwendung der **- R** Option.<br /><br /> Verwenden Sie z. B. zum Einschließen von Assemblys, die für die Visual Studio-API verwendet<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Der Name, die vollständigen Typnamen und die Assembly mit einem Direktivenprozessor, der zum Verarbeiten von benutzerdefinierter Richtlinien in der Vorlage "Text" verwendet werden kann.|
-|**– ein** [ProcessorName]! [ DirectiveName]! \<ParameterName >! \<%ParameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor. Wenn Sie nur den Parameternamen und den Wert angeben, wird der Parameter für alle Direktivenprozessoren verfügbar sein. Wenn Sie einen Direktivenprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Richtlinie Namen angeben, ist der Parameter zur Verfügung, nur, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte aus einem Direktivenprozessor oder die Vorlage "Text" [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). In einer Textvorlage enthalten `hostspecific` in der Template-Direktive und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Geben Sie immer die "!" markiert, auch wenn Sie die optionale Prozessor- und Anweisungsnamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|
+|**– ein** [ProcessorName]! [ DirectiveName]! \<ParameterName >! \<%ParameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor. Wenn Sie nur den Parameternamen und den Wert angeben, wird der Parameter für alle Direktivenprozessoren verfügbar sein. Wenn Sie einen Direktivenprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Richtlinie Namen angeben, ist der Parameter zur Verfügung, nur, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte aus einem Direktivenprozessor oder die Vorlage "Text" [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). In einer Textvorlage enthalten `hostspecific` in der Template-Direktive und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`<br /><br /> Geben Sie immer die "!" markiert, auch wenn Sie die optionale Prozessor- und Anweisungsnamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|
 |**-h**|Enthält die Hilfe.|
 
 ## <a name="related-topics"></a>Verwandte Themen
@@ -68,5 +69,5 @@ TextTransform [<options>] <templateName>
 |Aufgabe|Thema|
 |----------|-----------|
 |Generieren Sie Dateien in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
+|Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
 |Schreiben Sie einen Textvorlagenhost, der Ihnen ermöglicht, Textvorlagen von Ihrer eigenen Anwendung aufrufen.|[Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md)|

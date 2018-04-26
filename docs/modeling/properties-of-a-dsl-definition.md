@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a3a1fa8f1c3b6cce8e9f7d19b8f3a07b9ea42cdf
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: be119703868316f2335f06174c9f21c2dddd2edc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Definitionseigenschaften z. B. versionsnummerierung. DslDefinition Eigenschaften werden in der **Eigenschaften** Fenster, wenn Sie auf einen offenen Bereich des Diagramms in die *einer domänenspezifischen Sprachdesigner*.
@@ -25,19 +26,19 @@ DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Defi
 
 |Eigenschaft|Beschreibung|Standard|
 |--------------|-----------------|-------------|
-|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentliche oder eine interne ist.|öffentlich|
+|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentliche oder eine interne ist.|public|
 |Benutzerdefinierte Attribute|Benutzerdefinierte definiert die Attribute für die Domänenklasse.<br /><br /> **Hinweis** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<keine >|
 |Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Firmenname|
-|Name|Der Name dieser Domäne-Klasse.|Aktuelle name|
+|name|Der Name dieser Domäne-Klasse.|Aktuelle name|
 |Namespace|Der Namespace zugeordnet ist diese Domänenklasse.|Aktuellen namespace|
 |Paket-Guid|Die Guid für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
 |Paket-Namespace|Der Namespace für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
 |Produktname|Der Name des Produkts, das für die zu registrierende der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
-|Notizen|Anmerkungen im Zusammenhang mit dieser Domänenklasse.|\<keine >|
+|Hinweise|Anmerkungen im Zusammenhang mit dieser Domänenklasse.|\<keine >|
 |Beschreibung|Beschreibung für diese Domänenklasse.|\<keine >|
 |Anzeigename|Der Name, der in der generierten Designer für diese Domänenklasse angezeigt wird.|\<keine >|
 |Hilfsschlüsselwort|Das Hilfeschlüsselwort dieser Domänenklasse zugeordnet.|\<keine >|
-|Erstellen|Die Anzahl der inkrementellen Build für diese Definition einer domänenspezifischen Sprache.|0|
+|Build|Die Anzahl der inkrementellen Build für diese Definition einer domänenspezifischen Sprache.|0|
 |Hauptversion|Die inkrementelle Hauptbuildnummer für diese Definition einer domänenspezifischen Sprache.|1|
 |Nebenversion|Die Anzahl der inkrementellen Nebenversionsnummer des Builds für diese Definition einer domänenspezifischen Sprache.|0|
 |Revision|Die inkrementelle Revision Buildnummer für diese Definition einer domänenspezifischen Sprache.|0|

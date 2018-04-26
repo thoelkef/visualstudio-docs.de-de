@@ -1,6 +1,7 @@
 ---
 title: 'CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e00942bbae9dfdb17f60ec6acac1d18772db3c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 669f0ffc2e61d67bd57e965a4030b17af1eb1bb2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern
 |||
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
  Ein Timer verfügt über ein Intervall Ausführung von mehr als einmal pro Sekunde festgelegt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Führen Sie Abrufe nicht öfter als einmal pro Sekunde oder auf Zeitgeber, verwenden, die öfter als einmal auftreten pro Sekunde. Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlaufzeitgeber, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.
+ Führen Sie Abrufe nicht öfter als einmal pro Sekunde oder auf Zeitgeber, verwenden, die öfter als einmal auftreten pro Sekunde. Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlauftimer, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Legen Sie Zeitgeberintervallen kleiner als ein Mal pro Sekunde auftreten.

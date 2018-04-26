@@ -1,6 +1,7 @@
 ---
 title: Codeanalyse für verwalteten Code in Visual Studio
 ms.date: 03/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 727a63d122871ff452365eea66e9a6e63a7c67b0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b7b992dadb703cf1c4f73830324e9934d7525645
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Übersicht über die Codeanalyse für verwalteten code
 
@@ -70,7 +71,7 @@ Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrich
 
 ## <a name="team-build-integration"></a>Team Build-integration
 
-Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [erstellen und freigeben (VSTS)](/vsts/build-release/index).
+Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [erstellen und freigeben (VSTS)](/vsts/build-release/index).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,6 +1,7 @@
 ---
 title: Hinzufügen einer Anmerkung zu Strukturen und Klassen
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -24,11 +25,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 005cbb77fa0c2bc7c1b788b5076b425a2a8e363e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 076631860035e41451741d49843d9282ec4c15f7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="annotating-structs-and-classes"></a>Hinzufügen einer Anmerkung zu Strukturen und Klassen
 Sie können mit einer Anmerkung versehen Struktur- und Elemente mithilfe von Anmerkungen, die als invarianten agieren – sie werden als "true" bei einem beliebigen Funktionsaufruf oder/Beendigung, die die einschließende Struktur als einen Parameter oder einen Ergebniswert umfasst.

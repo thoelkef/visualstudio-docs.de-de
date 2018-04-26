@@ -1,7 +1,9 @@
 ---
-title: Compensate-Aktivitätsdesigner | Microsoft Docs
+title: Workflow-Designer - Compensate-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="compensate-activity-designer"></a>Compensate-Aktivitätsdesigner
+
 Die **kompensieren** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Compensate> Aktivität.
 
 ## <a name="the-compensate-activity"></a>Die Compensate-Aktivität
@@ -25,12 +28,12 @@ Die **kompensieren** Aktivitäts-Designer dient zum Erstellen und Konfigurieren 
  Das vom <xref:System.Activities.Statements.CompensationToken> angegebene <xref:System.Activities.Statements.Compensate.Target%2A>-Token stellt eine Möglichkeit dar, eine <xref:System.Activities.Statements.CompensableActivity>-Instanz explizit zu bestätigen oder zu kompensieren, nachdem der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Teil der <xref:System.Activities.Statements.CompensableActivity>-Instanz erfolgreich beendet wurde.
 
 ### <a name="using-the-compensate-activity-designer"></a>Verwenden des Compensate-Aktivitätsdesigners
- Die **kompensieren** Aktivitäts-Designer finden Sie in der **Transaktion** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** auf der linken Seite der Registerkarte die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)
+ Die **kompensieren** Aktivitäts-Designer finden Sie in der **Transaktion** Kategorie der **Toolbox**. So öffnen **Toolbox**, wählen die **Toolbox** Registerkarte auf der linken Seite im Workflow-Designer (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht**Menüs oder STRG + ALT + X drücken.)
 
- Die **kompensieren** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Daraufhin wird eine <xref:System.Activities.Statements.Compensate>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert Compensate erstellt. Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **kompensieren** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
+ Die **kompensieren** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht wird, wo Aktivitäten platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Löschen die Aktivitäts-Designer erstellt eine <xref:System.Activities.Statements.Compensate> -Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> von kompensieren. Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **kompensieren** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
 
 ### <a name="the-compensate-properties"></a>Die Compensate-Eigenschaften
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.CancellationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A>-Eigenschaften kann im Eigenschaftenraster und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden, die <xref:System.Activities.Statements.Compensate.Target%2A>- Eigenschaften muss jedoch im Eigenschaftenraster bearbeitet werden.
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.CancellationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A> können im Eigenschaftenraster oder auf die Oberfläche des Workflow-Designer bearbeitet werden. Bearbeiten der <xref:System.Activities.Statements.Compensate.Target%2A> Eigenschaft im Eigenschaftenraster.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

@@ -1,5 +1,5 @@
 ---
-title: T4-Vorlagendirektive
+title: T4-Vorlagenanweisung
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,20 +7,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0ff77d259601fbc1688691c36424b99416fa7df2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b26f0a6b58a1851e7e348ff367fe81f31eec4a56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="t4-template-directive"></a>T4-Vorlagendirektive
+# <a name="t4-template-directive"></a>T4-Vorlagenanweisung
 
-Eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
+Eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagenanweisung vorhanden sein.
 
  Eine allgemeine Übersicht über Textvorlagen schreiben, finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
-## <a name="using-the-template-directive"></a>Verwenden der Vorlagendirektive
+## <a name="using-the-template-directive"></a>Verwenden der Vorlagenanweisung
 
 ```
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
@@ -211,7 +212,7 @@ This is the common footer.
 
  `false`
 
- Wenn dieses Attribut auf "false" festgelegt ist, werden die Tags entfernt, die die Zeilennummern im generierten Codes identifizieren. Dies bedeutet, dass der Compiler alle Fehler anhand der Zeilennummern des generierten Codes meldet. Damit erhalten Sie mehr Debugoptionen, da Sie entweder die Textvorlage oder den generierten Code debuggen können.
+ Wenn dieses Attribut auf FALSE festgelegt ist, werden die Tags entfernt, die die Zeilennummern im generierten Codes identifizieren. Dies bedeutet, dass der Compiler alle Fehler anhand der Zeilennummern des generierten Codes meldet. Damit erhalten Sie mehr Debugoptionen, da Sie entweder die Textvorlage oder den generierten Code debuggen können.
 
  Dieses Attribut kann auch hilfreich, wenn Sie erkennen, dass die absoluten Dateinamen in Pragmas irritierende Zusammenführungen unter quellcodeverwaltung verursachen.
 

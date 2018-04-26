@@ -1,6 +1,7 @@
 ---
 title: Verwenden und Konfigurieren von Roslyn-Analyzer in Visual Studio
 ms.date: 03/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2eeebb1fb631c0890c7bcb11160109813a31eef1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e99a98f5ea4cca5891d416bdc13656b3173a40f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurieren und Verwenden von Roslyn Analyzer-Regeln
 
@@ -63,7 +64,7 @@ Sie können den Schweregrad der Analyzer-Regeln konfigurieren oder *Diagnose*, s
 |Warnung|Verletzungen angezeigt werden, als *Warnungen* in der **Fehlerliste** und in der Befehlszeile Buildausgabe, verursachen jedoch keine Builds fehlschlagen.|-Verstoßes Code ist mit einem grünen Wellenlinie und durch ein kleines grünes Feld in der Bildlaufleiste markierte unterstrichen.|
 |Info|Verletzungen angezeigt werden, als *Nachrichten* in der **Fehlerliste**, und im Befehlszeilen Buildausgabe gar nicht.|-Verstoßes Code ist mit einem grau Wellenlinie und durch ein kleines graues Feld in der Bildlaufleiste markierte unterstrichen.|
 |Hidden|Nicht-für Benutzer sichtbar.|Nicht-für Benutzer sichtbar. Die Diagnose ist jedoch mit dem IDE-Diagnose-Datenbankmodul gemeldet.|
-|Keine|Vollständig unterdrückt.|Vollständig unterdrückt.|
+|Keiner|Vollständig unterdrückt.|Vollständig unterdrückt.|
 
 Darüber hinaus, Sie können "Zurücksetzen" Schweregrad der Regel durch Festlegen auf **Standard**. Jeder Diagnose hat einen standardschweregrad, die in angezeigt werden, kann die **Eigenschaften** Fenster.
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
+title: Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 728fba66739bf09cfd1b4181b3347fd2994273ef
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 49a3c24116e6cc78084d0830a662ad7a3522d32c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
+# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 
 Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und eine Textdatei als Ausgabe erzeugt. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und das Modul interagiert mit einem Textvorlagen-Transformationshost und eine oder mehrere Textvorlage *Direktivenprozessoren* um den Vorgang abzuschließen. Weitere Informationen finden Sie unter [der Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).
 

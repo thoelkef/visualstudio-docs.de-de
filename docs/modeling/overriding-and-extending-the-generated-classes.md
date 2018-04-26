@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77a33546d02738ae03e4da5180aa15e2b94f91ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff0f020f2ab7558df6cc6f7865500a9910718145
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 DSL-Definition ist eine Plattform, auf der Sie einen Satz leistungsstarken Tools erstellen können, die für eine domänenspezifische Sprache basieren. Viele Erweiterungen und Anpassung können vorgenommen werden, indem überschreiben und erweitern die Klassen, die aus der Definition der DSL generiert werden. Diese Klassen umfassen nicht nur die Domänenklassen, die Sie explizit in der DSL-Definitionsdiagramm definiert haben, sondern auch anderen Klassen, die Toolbox, -Explorer, Serialisierung und So weiter definieren.

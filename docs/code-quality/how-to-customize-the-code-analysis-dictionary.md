@@ -1,6 +1,7 @@
 ---
 title: 'Gewusst wie: Anpassen des Codeanalysewörterbuchs'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544343a701909957ff0c16a49beeaf081cf256b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1a0ecc19d5648d6ee9454a53c9b0a1ebcb5a2e1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 Codeanalyse verwendet ein integriertes Wörterbuch Bezeichner in den Code auf Fehler hinsichtlich des Verbindungstyps richtig eingegeben haben, Grammatikfehler Groß-/Kleinschreibung und andere Namenskonventionen der Überprüfen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Richtlinien. Sie können eine benutzerdefiniertes Wörterbuch XML-Datei hinzufügen, entfernen oder Ändern von Begriffe und Abkürzungen Akronyme, die dem integrierten Wörterbuch erstellen.

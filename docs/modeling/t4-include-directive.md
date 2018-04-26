@@ -1,5 +1,5 @@
 ---
-title: T4-Include-Direktive
+title: T4-Include-Anweisung
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a7b6d52d89da2b838d580bc2dbad9e36b9c73b9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: d9278d85349ede7ea5f44dce589d6737b64bc83e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="t4-include-directive"></a>T4-Include-Direktive
+# <a name="t4-include-directive"></a>T4-Include-Anweisung
 
 In einer Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie Text aus einer anderen Datei mit einer `<#@include#>`-Direktive einschließen. Sie können `include`-Direktiven an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.
 

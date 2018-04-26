@@ -1,7 +1,9 @@
 ---
-title: Erstellen von Legacyworkflowprojekten | Microsoft Docs
+title: Workflow-Designer - erstellen von Legacyworkflowprojekten
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Erstellen von Legacyworkflowprojekten
-In diesem Abschnitt wird beschrieben, wie zum Erstellen von Workflowprojekten, die mithilfe der Vorgängerversion Windows Workflow-Designer von vs2010 bereitgestellt wird. Die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] zielt auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] ab. Sie finden auch Informationen zur Verwendung der in der nachstehenden Tabelle aufgeführten Workflowprojektvorlagen.
+
+In diesem Abschnitt wird beschrieben, wie Workflowprojekte mithilfe der älteren Windows-Workflow-Designer von Visual Studio 2010 bereitgestellten erstellt wird. Der Designer der Vorgängerversion Workflow Ziel ist .NET Framework, Version 3.5 oder die WinFX. Sie finden auch Informationen zur Verwendung der in der nachstehenden Tabelle aufgeführten Workflowprojektvorlagen.
 
 |Projektvorlage|Beschreibung|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ In diesem Abschnitt wird beschrieben, wie zum Erstellen von Workflowprojekten, d
 |Konsolenanwendung für Zustandsautomatenworkflows|Ein Projekt zur Erstellung einer Konsolenanwendung für Zustandsautomatenworkflows.|
 |Zustandsautomatenworkflowbibliothek|Ein Projekt zur Erstellung einer Zustandsautomatenworkflowbibliothek.|
 |Leeres Workflowprojekt|Ein leeres Projekt zur Erstellung einer Workflowanwendung.|
-
-## <a name="in-this-section"></a>In diesem Abschnitt
- [Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Vorgehensweise: Erstellen von Konsolenanwendungen für sequenzielle Workflows (Vorgängerversion)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Vorgehensweise: Erstellen einer sequenziellen Workflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Vorgehensweise: Erstellen von leeren Workflowprojekten (Vorgängerversion)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Vorgehensweise: Konfigurieren von Workflowprojekteigenschaften (Vorgängerversion)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Siehe auch
 

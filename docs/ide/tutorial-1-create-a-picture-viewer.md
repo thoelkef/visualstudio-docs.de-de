@@ -1,9 +1,9 @@
 ---
-title: 'Tutorial 1: Erstellen eines Bildanzeigeprogramms | Microsoft-Dokumentation'
+title: 'Lernprogramm 1: Erstellen eines Bildanzeigeprogramms'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Lernprogramm 1: Erstellen eines Bildanzeigeprogramms
 In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie Steuerelemente, z. B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars stufenlos ändern können. Sie fangen auch an, Code zu schreiben. Sie lernen Folgendes:  
-  
+
 -   Erstellen Sie ein neues Projekt.  
-  
+
 -   Testen (Debuggen) einer Anwendung  
-  
+
 -   Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular  
-  
+
 -   Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts  
-  
+
 -   Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.  
-  
+
 -   Schreiben von Code mithilfe von IntelliSense und Codeausschnitten  
-  
+
 -   Schreiben von Ereignishandlermethoden  
-  
+
  Am Ende sieht das Programm so aus wie in der folgenden Abbildung.  
-  
+
  ![Bild, das Sie in diesem Tutorial erstellen](../ide/media/express_pictureviewerdone.png "Express_BildanzeigeprogrammFertig")  
 Bild, das Sie in diesem Lernprogramm erstellen  
-  
+
  Informationen zum Herunterladen einer vollständige Version des Beispiels finden Sie unter [Tutorialbeispiel für vollständiges Bildanzeigeprogramm](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![Link zum Video](../data-tools/media/playvideo.gif "Videoabspielen")Eine Videoversion dieses Themas finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Wie erstelle ich eine Bildanzeige in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How Do I: Create a Picture Viewer in C#? (Wie erstelle ich eine Bildanzeige in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  
 >   
 >  Um Code für Visual Basic anzuzeigen, wählen Sie die Registerkarte **VB** oben in den Codeblöcken aus. Um Code für Visual C# anzuzeigen, wählen Sie die Registerkarte **C#** aus. Wenn Sie Informationen zu Visual C++ benötigen, finden Sie diese unter [Erste Schritte](../ide/getting-started-with-cpp-in-visual-studio.md) und im [C++ Sprachtutorial](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Wenn Sie erfahren möchten, wie Sie UWP-Apps in Visual C# oder Visual Basic schreiben, lesen Sie [Entwickeln von UWP-Apps](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Verwandte Themen  
-  
+
 |Titel|description|  
 |-----------|-----------------|  
 |[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)|Beginnen Sie, indem Sie ein Windows Forms-Anwendungsprojekt erstellen.|  

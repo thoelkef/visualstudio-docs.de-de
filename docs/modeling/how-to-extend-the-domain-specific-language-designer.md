@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b68345961e2209506b0c759d7197c1115083446
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 Sie können Erweiterungen in den Designer vornehmen, die mit der DSL-Definitionen bearbeiten. Typen der Erweiterung, die Sie gehören das Hinzufügen von Menübefehlen, vornehmen können, Hinzufügen von Handler für ziehen, und doppelklicken Sie auf Gesten und Regeln, die ausgelöst werden, wenn bestimmte Typen von Werten oder Beziehungen ändern. Die Erweiterungen können als eine Visual Studio Integration Extension (VSIX) verpackt und an andere Benutzer verteilt werden.
