@@ -1,6 +1,7 @@
 ---
 title: Einführung in SAL
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
@@ -9,11 +10,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 928ecfc2ebe652ae307d506d0747746d02c7c269
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 Die Microsoft Source Code Annotation Language (SAL) bietet eine Reihe von Anmerkungen, die Sie verwenden können, um beschreiben, wie eine Funktion verwendet, die zugehörigen Parameter, die Annahmen, die über diese vereinfacht und die Garantien, die sie nach dem Abschluss vereinfacht. Die Anmerkungen werden in der Headerdatei definiert `<sal.h>`. Visual Studio-Codeanalyse für C++ verwendet SAL-Anmerkungen, um die Analyse der Funktionen ändern. Weitere Informationen zu SAL 2.0 für die Entwicklung von Windows-Treiber, finden Sie unter [SAL 2.0 Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979).
@@ -104,7 +105,7 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>Beispiele zu SAL
  In diesem Abschnitt sind Codebeispiele für die grundlegende SAL-Anmerkungen aufgeführt.
 
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio Codeanalysetools
  In den Beispielen wird der Codeanalyse von Visual Studio-Tools zusammen mit SAL-Anmerkungen verwendet, um Codefehler zu suchen. Im folgenden wird erläutert, wie ein.
 
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL

@@ -1,6 +1,5 @@
 ---
-title: Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts | Microsoft Docs
-ms.custom: ''
+title: Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,53 +11,52 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aac285701dae7c17d9398de7de0f778530a0e5ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.openlocfilehash: def1e625df1760728ef71a926671a3c4c4ccbf40
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="processing-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
-Die *Textvorlagentransformation* verarbeiten nimmt eine *Textvorlage* Datei als Eingabe und eine Textdatei als Ausgabe erzeugt. Sie können das Texttransformationsmodul in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterung oder einer eigenständigen Anwendung aufrufen, die auf einem Computer mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird. Sie müssen jedoch Bereitstellen einer *Textvorlagenhost*. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.  
-  
+# <a name="process-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
+
+Die *Textvorlagentransformation* verarbeiten nimmt eine *Textvorlage* Datei als Eingabe und eine Textdatei als Ausgabe erzeugt. Sie können das Texttransformationsmodul in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterung oder einer eigenständigen Anwendung aufrufen, die auf einem Computer mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird. Sie müssen jedoch Bereitstellen einer *Textvorlagenhost*. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.
+
 > [!TIP]
->  Wenn Sie ein Paket oder eine Erweiterung schreiben, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu schreiben. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
-  
+> Wenn Sie ein Paket oder eine Erweiterung schreiben, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu schreiben. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+
 > [!NOTE]
->  Von der Verwendung von Textvorlagentransformationen in Serveranwendungen wird abgeraten. Textvorlagentransformationen sollten nur in einem einzelnen Thread verwendet werden. Dies liegt daran, dass das Textvorlagenmodul eine einzelne AppDomain wieder verwendet, um Vorlagen zu übersetzen, zu kompilieren und auszuführen. Der übersetzte Code ist nicht auf Threadsicherheit hin konzipiert. Das Modul ist für die serielle Verarbeitung von Dateien vorgesehen, so wie dies zur Entwurfszeit in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt der Fall ist.  
->   
->  Für Anwendungen zur Laufzeit, sollten Sie vorverarbeitete Textvorlagen: finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).  
-  
- Wenn in der Anwendung zur Kompilierzeit korrigierte Vorlagen verwendet werden, ist es einfacher, vorverarbeitete Textvorlagen zu verwenden. Sie können diesen Ansatz auch verwenden, wenn die Anwendung auf einem Computer ausgeführt wird, auf dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).  
-  
-## <a name="executing-a-text-template-in-your-application"></a>Ausführen einer Textvorlage in der Anwendung  
- Zum Ausführen einer Textvorlage rufen Sie die ProcessTemplate-Methode von <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> auf:  
-  
-```  
-using Microsoft.VisualStudio.TextTemplating;  
-...  
-Engine engine = new Engine();  
-string output = engine.ProcessTemplate(templateString, host);  
-```  
-  
- Die Anwendung muss die Vorlage finden und bereitstellen und die Ausgabe verarbeiten.  
-  
- Im `host`-Parameter muss eine Klasse angegeben werden, die <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> implementiert. Diese Methode wird vom Modul aufgerufen.  
-  
- Der Host muss in der Lage sein, Fehler zu protokollieren und Verweise auf Assemblys und Includedateien aufzulösen, er muss eine Anwendungsdomäne bereitstellen, in der die Vorlage ausgeführt werden kann, und den entsprechenden Prozessor für jede Anweisung aufrufen.  
-  
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> wird definiert, **Microsoft.VisualStudio.TextTemplating.\*. 0.Dll**, und <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> ist definiert **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0.Dll**.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
- Veranschaulicht die Erstellung eines benutzerdefinierten Textvorlagenhosts, der die Textvorlagenfunktion außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verfügbar macht.  
-  
-## <a name="reference"></a>Referenz  
- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md)  
- Beschreibt die Funktionsweise der Texttransformation und die anpassbaren Teile.  
-  
- [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)  
- Enthält eine Übersicht über Textvorlagen-Anweisungsprozessoren.
+> Von der Verwendung von Textvorlagentransformationen in Serveranwendungen wird abgeraten. Textvorlagentransformationen sollten nur in einem einzelnen Thread verwendet werden. Dies liegt daran, dass das Textvorlagenmodul eine einzelne AppDomain wieder verwendet, um Vorlagen zu übersetzen, zu kompilieren und auszuführen. Der übersetzte Code ist nicht auf Threadsicherheit hin konzipiert. Das Modul ist für die serielle Verarbeitung von Dateien vorgesehen, so wie dies zur Entwurfszeit in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt der Fall ist.
+>
+> Für Anwendungen zur Laufzeit, sollten Sie vorverarbeitete Textvorlagen: finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+Wenn in der Anwendung zur Kompilierzeit korrigierte Vorlagen verwendet werden, ist es einfacher, vorverarbeitete Textvorlagen zu verwenden. Sie können diesen Ansatz auch verwenden, wenn die Anwendung auf einem Computer ausgeführt wird, auf dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+## <a name="execute-a-text-template-in-your-application"></a>Ausführen einer Textvorlage in der Anwendung
+
+Zum Ausführen einer Textvorlage rufen Sie die ProcessTemplate-Methode von <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> auf:
+
+```
+using Microsoft.VisualStudio.TextTemplating;
+...
+Engine engine = new Engine();
+string output = engine.ProcessTemplate(templateString, host);
+```
+
+ Die Anwendung muss die Vorlage finden und bereitstellen und die Ausgabe verarbeiten.
+
+ Im `host`-Parameter muss eine Klasse angegeben werden, die <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> implementiert. Diese Methode wird vom Modul aufgerufen.
+
+ Der Host muss in der Lage sein, Fehler zu protokollieren und Verweise auf Assemblys und Includedateien aufzulösen, er muss eine Anwendungsdomäne bereitstellen, in der die Vorlage ausgeführt werden kann, und den entsprechenden Prozessor für jede Direktive aufrufen.
+
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> wird definiert, **Microsoft.VisualStudio.TextTemplating.\*. 0.Dll**, und <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> ist definiert **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0.Dll**.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md) veranschaulicht Erstellung ein benutzerdefinierten Textvorlagenhosts, mit der Text Vorlage Funktionalität verfügbar außerhalb [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+## <a name="reference"></a>Verweis
+ <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+
+- [Das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md) beschreibt die Funktionsweise der TextTransformation und die Teile anpassen kann.
+- [Erstellen von benutzerdefinierten T4 Text Vorlage Direktivenprozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md) bietet eine Übersicht über Textvorlagen-Direktivenprozessoren für Textvorlagen.

@@ -1,6 +1,7 @@
 ---
 title: Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
@@ -29,11 +30,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f626dfbab7e97159a0dca2b0ab87a2fb29271244
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 83ee400201ff76745612e7fe7ce36020ba5234a8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während Sie debuggen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
@@ -72,7 +73,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während S
 
      ![Wählen Sie die Code Map, um aufruflistenzuordnung zu starten](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
-     Die aktuelle Aufrufliste wird in einer neuen Codezuordnung orange dargestellt:
+     Die aktuelle Aufrufliste wird in einer neuen Code Map orange dargestellt:
 
      ![Finden Sie in der Aufrufliste in codezuordnung](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 

@@ -11,14 +11,15 @@ ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35bcc2ed38a8330e7eb4ab38416c91a5c51ec2d4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Passen Sie an, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt
 Beim Ziehen von Elementen aus der [Datenquellenfenster](add-new-data-sources.md) in einem Designer muss eine besondere kommt es zu einem: die Spaltennamen in der Beschriftung Bezeichnungen werden neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können ändern, wie in der folgenden Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.

@@ -1,6 +1,7 @@
 ---
 title: 'CA1720: Bezeichner dürfen keine Typnamen enthalten'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a981dc4c8ccd016836ea55b2ecd624e781c5a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten
 |||
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/19/2018
 
 -   Ohne Vorzeichen
 
--   Mit Vorzeichen
+-   Signiert
 
 -   Float
 
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
 
  Darüber hinaus werden die Namen der Parameter auch mit den folgenden sprachunabhängige Datentypnamen, unter Beachtung verglichen:
 
--   Objekt
+-   Object
 
 -   obj
 
@@ -123,7 +124,7 @@ ms.lasthandoff: 04/19/2018
 
 -   Decimal
 
--   Guid
+-   GUID
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  **Wenn für einen Parameter ausgelöst:**

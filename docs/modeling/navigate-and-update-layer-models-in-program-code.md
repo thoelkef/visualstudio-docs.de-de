@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 57ba3e2b2df938a41129fdf2d05bfa02690d2cce
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2be7a0fdb3204647f6874d2dceaa81eb8cac3756
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 
@@ -96,7 +97,7 @@ Jede Zeile im Ebenen-Explorer zeigt einen Artefaktverweis an. Weitere Informatio
 
 Folgende hauptsächliche Typen und Methoden sind von Artefaktverweisen betroffen:
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Die Eigenschaft "Kategorien" gibt an, welche Art von Artefakt referenziert wird, z. B. Klasse, ausführbare Datei oder Assembly. Die Eigenschaft "Kategorien" bestimmt, wie der Bezeichner das Zielartefakt identifiziert.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Die Eigenschaft „Kategorien“ gibt an, welche Art von Artefakt referenziert wird, z. B. Klasse, ausführbare Datei oder Assembly. Die Eigenschaft "Kategorien" bestimmt, wie der Bezeichner das Zielartefakt identifiziert.
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> erstellt einen Artefaktverweis über ein <xref:EnvDTE.Project> oder <xref:EnvDTE.ProjectItem>. Das ist ein asynchroner Vorgang. Daher geben Sie in der Regel einen Rückruf, der aufgerufen wird, wenn die Erstellung abgeschlossen ist.
 

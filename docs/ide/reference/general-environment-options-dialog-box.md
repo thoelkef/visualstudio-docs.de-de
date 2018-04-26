@@ -1,10 +1,9 @@
 ---
-title: Allgemein, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation
-ms.custom: ''
+title: Allgemein, Umgebung, Dialogfeld "Optionen"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Allgemein, Umgebung, Dialogfeld "Optionen"
 
@@ -67,17 +66,27 @@ Verwendet Hardwaregrafikbeschleunigung, sofern verfügbar, anstelle von Software
 
 ## <a name="other"></a>Andere
 
-**Im Menü „Fenster“ angezeigte Elemente** Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
+**Im Menü „Fenster“ angezeigte Elemente**
 
-**In den Listen der zuletzt geöffneten Elemente angezeigte Elemente** Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
+Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
 
-**Statusleiste anzeigen** Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
+**In den Listen der zuletzt verwendeten Elemente angezeigte Elemente**
 
-**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster** Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
+Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
 
-**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster** Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
+**Statusleiste anzeigen**
+
+Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
+
+**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster**
+
+Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
+
+**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster**
+
+Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
-[Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+- [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,6 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung | Microsoft Docs'
-ms.custom: H1HackMay2017
+title: Debuggen eine parallele Anwendung | Microsoft Docs
+description: Verwenden das Fenster "Parallele Aufgaben und parallele Stapel" in Visual Studio debuggen
+ms.custom: ''
 ms.date: 03/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aceeb00f81bb858b1cebe19168b7366f08562745
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 055abb1f1c21dd570df954c80ff78a7d926ba23f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio
 Diese exemplarische Vorgehensweise zeigt, wie die **Parallele Aufgaben** und **parallele Stapel** Windows zum Debuggen einer parallelen Anwendung. Diese Windows-Hilfe Sie verstehen, und überprüfen Sie das Laufzeitverhalten des Codes, der verwendet die [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Nachdem der Code unterbrochen wird, die exemplarische Vorgehensweise zeigt, wie die **Parallele Aufgaben** und **parallele Stapel** Windows, um es zu untersuchen.  
@@ -44,7 +45,7 @@ Diese exemplarische Vorgehensweise zeigt, wie die **Parallele Aufgaben** und **p
   
 -   Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Diese exemplarische Vorgehensweise setzt voraus, dass **nur mein Code** aktiviert ist (er ist standardmäßig aktiviert, in neueren Versionen von Visual Studio). Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie die **Debuggen** Knoten **allgemeine**, und wählen Sie dann **aktivieren Nur mein Code (nur verwaltet)**. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
   
 ## <a name="c-sample"></a>C#-Beispiel  

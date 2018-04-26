@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9ffdf12daa93da9a5f7190866682bc60401dbcc
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 75b72d0f999da27a1b663b4aad89e905807fa638
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche werden ein Diagramm in vertikale oder horizontale Bereiche unterteilt. Sie können andere Formen innerhalb Verantwortlichkeitsbereiche anzuzeigende definieren. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -31,16 +32,16 @@ Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlich
 |Linienart Trennzeichen|Der Stil der Linie als Trennzeichen (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, oder `Custom`).|`Dash`|
 |Trennzeichen Stärke|Die Stärke der Linie als Trennzeichen in Zoll.|0.03125|
 |Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die diese Verantwortlichkeitsbereich zugeordnet sind.|Schwarz|
-|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Öffentlich|
+|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|
 |Benutzerdefinierte Attribute|Verwendet, um die Attribute der Klasse Code hinzuzufügen, die von diesem Verantwortlichkeitsbereich generiert wird.|\<keine >|
 |Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Inheritance Modifier|Beschreibt die Art der Vererbung der Source-Code-Klasse, die aus dem Verantwortlichkeitsbereich generiert wird (`none`, `abstract` oder `sealed`).|Keine|
 |Basis Verantwortlichkeitsbereich|Die Basisklasse von diesem Verantwortlichkeitsbereich.|(keine)|
-|Name|Der Name der dieser Verantwortlichkeitsbereich.|Aktuelle name|
+|name|Der Name der dieser Verantwortlichkeitsbereich.|Aktuelle name|
 |Namespace|Der Namespace, der diese Verantwortlichkeitsbereich zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (`fixed`, `variable`, oder `none`). Wenn `fixed`, klicken Sie dann den Wert von der `Fixed Tooltip Text` Eigenschaft verwendet wird, wenn `variable`, und klicken Sie dann die QuickInfo in benutzerdefiniertem Code definiert ist.|\<keine >|
-|Notizen|Informelle Hinweise, die diese Verantwortlichkeitsbereich zugeordnet sind.|\<keine >|
+|Hinweise|Informelle Hinweise, die diese Verantwortlichkeitsbereich zugeordnet sind.|\<keine >|
 |Ausrichtung|Horizontale oder vertikale Ausrichtung.|Vertikal|
 |Anfängliche Höhe|Die anfängliche Höhe dieses Verantwortlichkeitsbereich, in Zoll. Gilt nur für horizontale Verantwortlichkeitsbereiche.|0|
 |Anfängliche Breite|Die anfängliche Breite von diesem Verantwortlichkeitsbereich, in Zoll. Gilt nur für vertikale Verantwortlichkeitsbereiche.|0|

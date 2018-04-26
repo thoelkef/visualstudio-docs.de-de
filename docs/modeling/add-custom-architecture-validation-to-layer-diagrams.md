@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3fbc4762e1bf5f08b81b884d2a8acea2f16283ed
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2599a0c9e4390ed3d25cfc6393a32d72d803bd0e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren, damit sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Diagramm Abhängigkeit entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.
@@ -46,7 +47,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     > [!WARNING]
     >  Makethe Vorlage ordnungsgemäß arbeiten:
     >
-    >  -   Bearbeiten Sie Aufrufe zu `LogValidationError`, um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes` zu entfernen.
+    >  -   Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.
     > -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im genannten [Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeit Diagramme](../modeling/add-custom-properties-to-layer-diagrams.md).
 
 3.  Bearbeiten Sie den Code, um die Validierung zu definieren. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).
@@ -140,7 +141,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
       } }
     ```
 
--   Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()` melden.
+-   Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()`melden.
 
     > [!WARNING]
     >  Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.
@@ -155,14 +156,14 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 
 -   Knoten, die die vom Validierungssteuerelement ermittelten Fehler darstellen.
 
- Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture`-Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.
+ Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.
 
 > [!NOTE]
 >  Dies ist nicht identisch mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.
 
  Validierungsmethoden sollten das zu überprüfende Ebenenmodell oder den Code nicht ändern.
 
- Das Diagrammmodell wird in <xref:Microsoft.VisualStudio.GraphModel> definiert. Seine Prinzipalklassen sind <xref:Microsoft.VisualStudio.GraphModel.GraphNode> und <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.
+ Das Diagrammmodell wird in <xref:Microsoft.VisualStudio.GraphModel>definiert. Seine Prinzipalklassen sind <xref:Microsoft.VisualStudio.GraphModel.GraphNode> und <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.
 
  Jeder Knoten und jeder Link verfügt über mindestens eine Kategorie, die den Typ des Elements oder der Beziehung angibt, die von ihr dargestellt wird. Die Knoten eines typischen Diagramms verfügen über die folgenden Kategorien:
 
@@ -187,7 +188,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
  Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".
 
 ##  <a name="debugging"></a> Debuggen der Validierung
- Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.
+ Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test mit einer Projektmappe, die Abhängigkeiten enthält
  Die Validierung wird erst ausgeführt, wenn die folgenden Eigenschaften vorhanden sind:
@@ -206,7 +207,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 
  Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von Visual Studio.
 
- Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()` einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von Visual Studio und auf die **Debuggen** klicken Sie im Menü **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.
+ Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von Visual Studio und auf die **Debuggen** klicken Sie im Menü **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.
 
  Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debugging**).
 

@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c8c8e6729a06a3d11b17d32128bd418cab102113
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f070d9c8c7283542dc9f2af921698245a2075f66
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-port-shapes"></a>Eigenschaften von Anschlussformen
 Sie können Formen vom Typ Port verwenden, Domänenklassen in der generierten Designer dargestellt.
@@ -35,16 +36,16 @@ Sie können Formen vom Typ Port verwenden, Domänenklassen in der generierten De
 |Dash Umrissstil|Das Gliederung Strichformat dieser Form (durchgezogen, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|
 |Umrissstärke|Die Stärke der Kontur dieser Form.|0.03125|
 |Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die mit dieser Form verknüpft sind.|Schwarz|
-|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Öffentlich|
+|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|
 |Benutzerdefinierte Attribute|Verwendet, um den Code Quellklasse Attribute hinzuzufügen, die von dieser Form generiert wird.|\<keine >|
 |Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md)|False|
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Inheritance Modifier|Beschreibt die Art der Vererbung der Source Code-Klasse, die vom Port generiert wird (`none`, `abstract` oder `sealed`).|Keine|
 |Basis-Port|Die Basisklasse dieser Form.|(keine)|
-|Name|Der Name dieser Form.|Aktuelle name|
+|name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
 |Tool Tipp-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keine|
-|Notizen|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|
+|Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|
 |Anfängliche Höhe|Die anfängliche Höhe dieser Form, in Zoll.|1|
 |Anfängliche Breite|Die anfängliche Breite dieser Form, in Zoll.|1.5|
 |Als Eigenschaft verfügbar gemachte Füllfarbe<br /><br /> Verfügbar gemachten Füllmodus Farbverlauf<br /><br /> Konturfarbe als Eigenschaft verfügbar gemacht.<br /><br /> Gliederung Strichformat als Eigenschaft verfügbar gemacht.<br /><br /> Umrissstärke als Eigenschaft bereitgestellt<br /><br /> Macht die Textfarbe|Wenn `True`, der Benutzer kann die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, mit der rechten Maustaste der Form "Definition, und klicken Sie auf **hinzufügen verfügbar gemachten**.|False|

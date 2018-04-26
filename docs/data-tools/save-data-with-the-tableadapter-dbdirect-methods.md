@@ -14,14 +14,15 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aae296898bfcddfa451875fe78b29f2ae95fc9df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern Sie Daten mit den TableAdapter-DBDirect-Methoden
 Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausführen des SQL-Anweisungen direkt für eine Datenbank mithilfe eines TableAdapter DBDirect-Methoden. DBDirect-Methoden eines TableAdapters bieten ein gut Maß an Kontrolle über Ihre Datenbankupdates. Können Sie Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren ausführen, durch Aufrufen der einzelnen `Insert`, `Update`, und `Delete` Methoden von Ihrer Anwendung nach Bedarf (im Gegensatz zur überladenen `Update` Methode, die das UPDATE ausführt. INSERT- und DELETE-Anweisungen in einem Aufruf).
@@ -38,7 +39,7 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
 
 -   Hinzufügen von Methoden, um direkt auf die Datenbank zugreifen, und führen Sie einfügungen, Updates und löschungen...
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.
 
 1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können SQL Server Express LocalDB installiert werden als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung oder als eine einzelne Komponente.
@@ -83,7 +84,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 4.  Auf der **wählen Sie Ihre Datenverbindung** Bildschirm, führen Sie eine der folgenden:
 
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.
+    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
          - oder - 
 
@@ -114,7 +115,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 2.  Legen Sie den folgenden **Namen** und **Text** Eigenschaften auf jeder Schaltfläche.
 
-    |Name|Text|
+    |name|Text|
     |----------|----------|
     |`InsertButton`|**Einfügen**|
     |`UpdateButton`|**Update (Aktualisieren)**|

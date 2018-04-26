@@ -15,14 +15,15 @@ ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c308169ef8a0f75821c669fb2cf6876d2b91b06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
 Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung für die Datenübergabe von einem Formular zum anderen. Verwenden die Tabellen Customers und Orders von Northwind an, ein Formular ermöglicht Benutzern, einen Kunden auszuwählen, und ein zweites Formulars zeigt die ausgewählte Bestellungen des Kunden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Methode für die zweite Form zu erstellen, die Daten aus dem ersten Formular empfängt.
@@ -46,7 +47,7 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 -   Übergeben von Daten zwischen Formularen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.
 
 1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können SQL Server Express LocalDB installiert werden als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung oder als eine einzelne Komponente.
@@ -91,7 +92,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 5.  Auf der **wählen Sie Ihre Datenverbindung** Seite, führen Sie eine der folgenden:
 
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.
+    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
     -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** (Dialogfeld).
 

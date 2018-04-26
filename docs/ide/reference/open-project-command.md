@@ -1,10 +1,9 @@
 ---
-title: Befehl „Projekt öffnen“ | Microsoft-Dokumentation
-ms.custom: ''
+title: Befehl "Projekt öffnen"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.openproject
 helpviewer_keywords:
@@ -17,41 +16,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba474de9c422031562e97d871cc070365f993cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09241e72119a0a0973995b16152941bbe5272c3f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="open-project-command"></a>Befehl "Projekt öffnen"
-Öffnet ein vorhandenes Projekt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-File.OpenProject filename  
-```  
-  
-## <a name="arguments"></a>Argumente  
- `filename`  
- Erforderlich. Der vollständige Pfad und Dateiname der Projektdatei, die Sie öffnen wollen.  
-  
- Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.  
-  
-## <a name="remarks"></a>Hinweise  
- Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
-  
- Dieser Befehl ist während des Debuggens nicht verfügbar.  
-  
-## <a name="example"></a>Beispiel  
- In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, Test1, geöffnet.  
-  
-```  
->File.OpenProject "C:\My Projects\Test1\Test1.vbproj"  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+Öffnet ein vorhandenes Projekt.
+
+## <a name="syntax"></a>Syntax
+
+```
+File.OpenProject filename
+```
+
+## <a name="arguments"></a>Argumente
+ `filename`
+
+ Erforderlich. Der vollständige Pfad und Dateiname der Projektdatei, die Sie öffnen wollen.
+
+ Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.
+
+## <a name="remarks"></a>Hinweise
+ Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
+
+ Dieser Befehl ist während des Debuggens nicht verfügbar.
+
+## <a name="example"></a>Beispiel
+ In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, Test1, geöffnet.
+
+```
+>File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
+```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
+- [Befehlsfenster](../../ide/reference/command-window.md)
+- [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

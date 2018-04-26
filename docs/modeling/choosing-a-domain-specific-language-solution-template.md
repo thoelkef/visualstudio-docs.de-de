@@ -9,19 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ec2d2210912011e09e439f25ecaa0e21ab6e918
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e0db20e4920f099882fd04d4ba06e65fb9c0c54c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache-Lösung zu erstellen, wählen Sie eine der Projektmappenvorlagen für, die im Assistenten für domänenspezifische Sprache-Designer verfügbar sind. Durch Auswahl der Vorlage, die am ehesten entspricht von der Sprache, die Sie erstellen möchten, können Sie den Änderungsaufwand verringern, die Sie an der ersten Lösung vorzunehmen.
 
  Die folgenden Projektmappenvorlagen sind im einer domänenspezifischen Sprache-Designer-Assistenten verfügbar.
 
-|Vorlage|Funktionen|Beschreibung|
+|Vorlage|Features|Beschreibung|
 |--------------|--------------|-----------------|
 |Klassendiagramme|-Depot shapes<br />-Class-Vererbung<br />-Beziehungsvererbung<br />-Form "" Vererbung<br />-Die Beziehungseigenschaften|Verwenden Sie diese Projektmappe (Vorlage), wenn Ihre einer domänenspezifischen Sprache enthält, Entitäten und Beziehungen, die über Eigenschaften verfügen. Diese Vorlage erstellt eine domänenspezifische Sprache, die UML-Klassendiagramme ähnelt. Die wichtigsten Entitäten sind Klassen und Schnittstellen, zusammen mit der Zuordnung, Generalisierung und Implementierung Beziehungen. Eine Klasse oder Schnittstelle wird als ein Feld, das eine Liste der Attribute enthält.|
 |Komponentendiagramme|-Ports|Verwenden Sie diese Projektmappe (Vorlage), wenn Ihre einer domänenspezifischen Sprache Komponenten, d. h., Teile eines Softwaresystems enthält. Diese Vorlage erstellt eine domänenspezifische Sprache, die UML-Komponentendiagramme ähnelt. Die wichtigsten Entitäten sind Komponenten und Ports, die als kleine Formen außerhalb der Komponenten angezeigt werden.|

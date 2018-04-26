@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7038f1d685fe0f76a9e9dff4026bcf19f9653deb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.
@@ -35,12 +36,12 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, die die grundlegenden Operationen des Erstellens und Verwendens einer domänenspezifischen Sprache in Visual Studio eingeführt werden.
 
-## <a name="prerequisites"></a>Voraussetzungen
- Zum Definieren einer DSL müssen folgende Komponenten installiert sein:
+## <a name="prerequisites"></a>Erforderliche Komponenten
+ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
 |Modeling SDK für Visual Studio||
 
@@ -219,7 +220,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
     2.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer
 
-    3.  Drücken Sie F5. Warten Sie, bis der experimentellen Instanz von Visual Studio wird angezeigt.
+    3.  Drücken Sie F5. Warten Sie, bis der experimentellen Instanz von Visual Studio wird angezeigt.
 
 4.  Öffnen Sie in der Debugging-Lösung in der experimentellen Instanz von Visual Studio eine Testdatei für das Modell ein. Ziehen Sie Elemente auf ihn aus der Toolbox. Beachten Sie, dass das Tool Beschriftungen und den Typnamen im Explorer für DSL geändert wurden.
 

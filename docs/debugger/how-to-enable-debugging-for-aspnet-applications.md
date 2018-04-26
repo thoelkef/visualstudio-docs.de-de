@@ -2,8 +2,7 @@
 title: Das Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debuggen von ASP.NET-Anwendungen in Visual Studio
 
@@ -73,13 +72,13 @@ Für ASP.NET Core aufweist wird die Datei "Web.config" automatisch erstellt, wen
     > [!NOTE]  
     > Sie können nicht remote auf die Datei "Web.config" zuzugreifen, mithilfe eines Webbrowsers. Aus Sicherheitsgründen wird Microsoft IIS durch [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] so konfiguriert, dass ein direkter Browserzugriff auf die Web.config-Dateien nicht möglich ist. Wenn Sie versuchen, eine Konfigurationsdatei, die mithilfe eines Browsers zuzugreifen, erhalten Sie eine HTTP-Zugriffsfehler 403 (Verboten).  
   
-2.  Suchen Sie das Element `configuration/system.web/compilation` . Wenn das compilation-Element nicht den vorhanden ist, erstellen Sie es.
+2.  Suchen Sie das `configuration/system.web/compilation`-Element. Wenn das compilation-Element nicht den vorhanden ist, erstellen Sie es.
 
     Web.config ist eine XML-Datei und enthält daher mit Tags markierte, geschachtelte Abschnitte.
   
-3.  Wenn das `compilation` -Element kein `debug` -Attribut enthält, fügen Sie dem Element das Attribut hinzu.  
+3.  Wenn das `compilation`-Element kein `debug`-Attribut enthält, fügen Sie dem Element das Attribut hinzu.  
   
-4.  Stellen Sie sicher, dass der `debug` -Attributwert auf `true`.  
+4.  Stellen Sie sicher, dass der `debug`-Attributwert auf `true` festgelegt ist.  
   
 Die Datei "Web.config" sollte wie im folgenden Beispiel aussehen:
 

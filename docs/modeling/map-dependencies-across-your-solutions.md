@@ -27,12 +27,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 715d2a3778eaeee839f044b344c50302d3b66964
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7d0b3594c77ac155b9450840c3830a1971b3da1a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 
@@ -52,7 +53,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 **Zur Verwendung von Code Maps benötigen Sie, entweder**:
 
--   Visual Studio Enterprise: Erstellen Sie Code Maps im Code-Editor, Projektmappen-Explorer, Objektkatalog oder in der Klassenansicht.
+-   Visual Studio Enterprise: Erstellen Sie Code Maps im Code-Editor, im Projektmappen-Explorer, in der Klassenansicht oder im Objektbrowser.
 
 -   Visual Studio Professional: Öffnen Sie Code Maps, nehmen Sie eingeschränkte Bearbeitungen vor, und navigieren Sie im Code.
 
@@ -191,7 +192,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 1.  [Erstellen Sie eine leere Code Map](#GetStarted), oder öffnen Sie eine vorhandene Code Map (DGML-Datei).
 
-2.  Ziehen Sie die Assemblys oder Binärdateien, die Sie in der Code Map darstellen möchten, von einem Ort außerhalb von Visual Studio in die Code Map. Ziehen Sie z. B. Assemblys oder Binärdateien aus Windows-Explorer oder Datei-Explorer.
+2.  Ziehen Sie die Assemblys oder Binärdateien, die Sie in der Code Map darstellen möchten, von einem Ort außerhalb von Visual Studio in die Code Map. Ziehen Sie z. B. Assemblys oder Binärdateien aus Windows-Explorer oder Datei-Explorer.
 
 > [!NOTE]
 >  Das Ziehen von Assemblys oder Binärdateien aus Windows-Explorer oder Datei-Explorer ist nur möglich, wenn der betreffende Explorer und Visual Studio auf der gleichen Berechtigungsstufe der Benutzerkontensteuerung (User Account Control, UAC) ausgeführt werden. Beispiel: Wenn Sie Visual Studio bei aktivierter UAC als Administrator ausführen, wird der Ziehvorgang von Windows-Explorer oder Datei-Explorer blockiert. Zur Umgehung dieses Problems stellen Sie sicher, dass beide Programme mit der gleichen Berechtigungsstufe ausgeführt werden, oder deaktivieren Sie UAC.
@@ -213,7 +214,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      ![Ausgewählte Elemente als Gruppen auf der Karte](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")
 
-     Sie können auch Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektkatalog in eine neue oder vorhandene Code Map ziehen. Anweisungen zum Erstellen einer leeren Code Map finden Sie unter [Erstellen einer leeren Code Map](#GetStarted). Um die übergeordnete Hierarchie für die Elemente einzuschließen, halten Sie die **STRG** -TASTE gedrückt, während Sie Elemente ziehen, oder verwenden Sie die Schaltfläche **Übergeordnete Elemente einschließen** auf der Symbolleiste der Code Map, um die Standardaktion anzugeben.
+     Sie können auch Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektbrowser in eine neue oder vorhandene Code Map ziehen. Anweisungen zum Erstellen einer leeren Code Map finden Sie unter [Erstellen einer leeren Code Map](#GetStarted). Um die übergeordnete Hierarchie für die Elemente einzuschließen, halten Sie die **STRG** -TASTE gedrückt, während Sie Elemente ziehen, oder verwenden Sie die Schaltfläche **Übergeordnete Elemente einschließen** auf der Symbolleiste der Code Map, um die Standardaktion anzugeben.
 
     > [!NOTE]
     >  Wenn Sie Elemente aus einem Projekt hinzufügen, das von mehreren Apps wie Windows Phone oder Windows Store gemeinsam genutzt wird, werden diese Elemente mit dem derzeit aktiven App-Projekt in der Zuordnung angezeigt. Wenn Sie den Kontext für ein anderes App-Projekt ändern und mehrere Elemente aus dem freigegebenen Projekt hinzufügen, werden diese Elemente nun mit dem neuen aktiven App-Projekt angezeigt. Vorgänge, die Sie mit einem Element in der Zuordnung ausführen, gelten nur für solche Elemente, die denselben Kontext gemeinsam verwenden.
@@ -273,11 +274,11 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      ![Durch dieses Member aufgerufenen Methoden anzeigen](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")
 
-7.  Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel sind dies die von der `Find`-Methode aufgerufenen Methoden und ihre Position innerhalb oder außerhalb der Projektmappe.
+7.  Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel sind dies die von der `Find` -Methode aufgerufenen Methoden und ihre Position innerhalb oder außerhalb der Projektmappe.
 
      ![Anzeigen bestimmter Abhängigkeiten in einer Code Map](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
 
-8.  Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Deaktivieren Sie z. B. die Anzeige von Projektmappenordnern, Assemblys und Namespaces.
+8.  Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Deaktivieren Sie z. B. die Anzeige von Projektmappenordnern, Assemblys und Namespaces.
 
      ![Verwenden des Filterbereichs zum Vereinfachen der Anzeige](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
@@ -331,7 +332,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
  ![Skip-Build und übergeordnete Elemente einschließen Tasten](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
- Obwohl Visual Studio mit 1 GB Arbeitsspeicher ausgeführt werden kann, wird empfohlen, den Computer mit mindestens 2 GB Arbeitsspeicher auszustatten, um lange Verzögerungen während der Erstellung des Codeindex und der Generierung der Code Map durch Visual Studio zu vermeiden.
+ Obwohl Visual Studio mit 1 GB Arbeitsspeicher ausgeführt werden kann, wird empfohlen, den Computer mit mindestens 2 GB Arbeitsspeicher auszustatten, um lange Verzögerungen während der Erstellung des Codeindex und der Generierung der Code Map durch Visual Studio zu vermeiden.
 
  Es kann mehr Zeit in Anspruch nehmen, im Projektmappen-Explorer Code Maps zu erstellen oder einer Code Map Elemente hinzuzufügen, wenn für die Eigenschaft **In Ausgabeverzeichnis kopieren** eines Projektelements **Immer kopieren**festgelegt wurde. Dies kann zu Problemen mit inkrementellen Builds und Visual Studio führen, das Projekt jedes Mal neu zu erstellen. Ändern Sie diese Eigenschaft in **Kopieren, wenn neuer** oder `PreserveNewest`, um die Leistung zu erhöhen. Siehe [Incremental Builds](../msbuild/incremental-builds.md).
 

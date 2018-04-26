@@ -2,8 +2,7 @@
 title: Verwenden das Fenster "Aufgaben" | Microsoft Docs
 ms.custom: ''
 ms.date: 03/18/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b16a8ea9a9cfc11f3029c88099d7dde479c5f1c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85319575766ca9ff3ace297bf1e4e577d49ee6d9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, dass die It Informationen zu zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. 
@@ -42,14 +41,14 @@ Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, d
 > [!NOTE]
 >  In verwaltetem Code wird ein <xref:System.Threading.Tasks.Task>-Objekt mit dem Status <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> oder <xref:System.Threading.Tasks.TaskStatus> möglicherweise nicht im Aufgabenfenster angezeigt, wenn sich verwaltete Threads in einem Standby- oder Verknüpfungszustand befinden.  
   
-## <a name="tasks-column-information"></a>Informationen in der Spalte „Aufgaben“  
+## <a name="tasks-column-information"></a>Informationen in der Spalte "Aufgaben"  
  Die Spalten in der **Aufgaben** Fenster werden die folgenden Informationen angezeigt.  
   
 |Spaltenname|Beschreibung|  
 |-----------------|-----------------|  
 |**Flags**|Zeigt an, welche Aufgaben gekennzeichnet sind. Zudem können Sie Aufgaben kennzeichnen bzw. deren Kennzeichnung aufheben.|  
 |**Symbole**|Ein gelber Pfeil gibt die aktuelle Aufgabe an. Die aktuelle Aufgabe ist die oberste Aufgabe im aktuellen Thread.<br /><br /> Ein weißer Pfeil gibt die unterbrechende Aufgabe an, d. h., die Aufgabe, die beim Aufrufen des Debuggers aktuell war.<br /><br /> Das Pausensymbol gibt eine Aufgabe an, die vom Benutzer eingefroren wurde. Sie können eine Aufgabe einfrieren und deaktivieren, indem Sie in der Liste mit der rechten Maustaste darauf klicken.|  
-|**ID**|Eine vom System bereitgestellte Nummer für die Aufgabe. In nativem Code ist diese Nummer die Adresse der Aufgabe.|  
+|**ID**|Eine vom System bereitgestellte Nummer für die Aufgabe. In systemeigenem Code ist diese Nummer die Adresse der Aufgabe.|  
 |**Status**|Der aktuelle Status (geplanten, aktiv, blockiert, Deadlock, wartet auf oder abgeschlossen) des Tasks. Eine geplante Aufgabe wurde noch nicht ausgeführt und verfügt daher noch über keine Aufrufliste, keinen zugewiesenen Thread oder weitere Informationen.<br /><br /> Eine aktive Aufgabe hat vor dem Unterbrechen im Debugger Code ausgeführt.<br /><br /> Eine ausstehende oder blockierte Aufgabe ist blockiert, da sie auf ein Ereignis signalisiert werden, eine Sperre aufgehoben wird oder auf den Abschluss einer anderen Aufgabe wartet.<br /><br /> Eine blockierte Aufgabe ist eine wartende Aufgabe, deren Thread an einem anderen Thread blockiert ist.<br /><br /> Zeigen Sie auf die **Status** Zelle für eine Aufgabe blockiert oder wartet auf, um weitere Informationen zum Block anzuzeigen. **Warnung:** der **Aufgaben** Fenster zeigt Deadlocks nur für eine blockierte Aufgabe, der eine Synchronisierungsprimitive verwendet, die von Wait Chain Traversal (WCT) unterstützt wird. Z. B. für einen Deadlock <xref:System.Threading.Tasks.Task> -Objekt, das WCT verwendet, meldet der Debugger **Anwendung wartet auf-deadlocked**. Für eine Aufgabe mit Deadlock, die von der Concurrency Runtime, die nicht WCT verwendet verwaltet wird, meldet der Debugger **warten**. Weitere Informationen zu WCT finden Sie unter [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Startzeit**|Die Uhrzeit, zu der die Aufgabe aktiviert wurde.|  
 |**Dauer**|Die Anzahl von Sekunden, die die Aufgabe aktiv war.|  

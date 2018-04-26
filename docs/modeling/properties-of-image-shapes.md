@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 474dd6e1ec655b27c9b447bcb3197c07dba56ecf
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 780c9c98bc6be110a0c8bc987a70aeea3344d0e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 Image-Formen können Sie angeben, wie Domänenklassen in einem generierten Designer angezeigt werden. Definieren Sie eine Form "Image", durch Festlegen der `Image` Eigenschaft der Klasse, die ein vordefiniertes Image-Datei. Die folgenden Formate werden unterstützt:
@@ -51,16 +52,16 @@ Image-Formen können Sie angeben, wie Domänenklassen in einem generierten Desig
 |Dash Umrissstil|Das Gliederung Strichformat dieser Form (durchgezogen, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|
 |Umrissstärke|Die Stärke der Kontur dieser Form.|0.03125|
 |Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die mit dieser Form verknüpft sind.|Schwarz|
-|Zugriffsmodifizierer|Der Zugriffsmodifizierer der Form "Geometry" ("public" oder "internal").|Öffentlich|
+|Zugriffsmodifizierer|Der Zugriffsmodifizierer der Form "Geometry" ("public" oder "internal").|Public|
 |Benutzerdefinierte Attribute|Verwendet, um den Code Quellklasse Attribute hinzuzufügen, die von dieser Form generiert wird.|\<keine >|
 |Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der von der Form "Image" generiert wird (`none`, `abstract` oder `sealed`).|Keine|
 |Basis-Image-Form|Die Basisklasse dieser Form.|(keine)|
-|Name|Der Name dieser Form.|Aktuelle name|
+|name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Die Stelle, an die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keine|
-|Notizen|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|
+|Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|
 |Anfängliche Höhe|Die anfängliche Höhe dieser Form, in Zoll.|1|
 |Anfängliche Breite|Die anfängliche Breite dieser Form, in Zoll.|1.5|
 |Als Eigenschaft verfügbar gemachte Füllfarbe<br /><br /> Verfügbar gemachten Füllmodus Farbverlauf<br /><br /> Konturfarbe als Eigenschaft verfügbar gemacht.<br /><br /> Gliederung Strichformat als Eigenschaft verfügbar gemacht.<br /><br /> Umrissstärke als Eigenschaft bereitgestellt<br /><br /> Macht die Textfarbe|Wenn `True`, der Benutzer kann die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, mit der rechten Maustaste der Form "Definition, und klicken Sie auf **hinzufügen verfügbar gemachten**.|False|

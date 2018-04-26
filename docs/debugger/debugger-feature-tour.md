@@ -1,6 +1,6 @@
 ---
-title: Debugger-Featuretour – Visual Studio | Microsoft Docs
-description: Tour zu Visual Studio-debugger
+title: Erster Blick auf der debugger
+description: Schnellen Blick auf die verschiedenen Funktionen von Visual Studio-Debugger.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Schnellstart: Uns zunächst an den Visual Studio-Debugger
+# <a name="first-look-at-the-visual-studio-debugger"></a>Erster Blick auf den Visual Studio-Debugger
 
 In diesem Thema werden die Funktionen von Visual Studio-Debugger vorgestellt. Wenn Sie nachvollziehen, die durch Ihre eigene app in Visual Studio öffnen möchten, können Sie dies tun, oder Sie zusammen mit einem Beispiel-app mithilfe führen der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Während des Debuggens, mit der rechten Maustaste in ein Objekt, und wählen Sie
 
 ![Überwachung (Fenster)](../debugger/media/dbg-tour-watch-window.png "Fenster "überwachen"")
 
-In diesem Beispiel haben Sie eine Überwachung, legen Sie für die `File` -Objekt, und Sie sehen den Wert ändern, wie Sie mithilfe des Debuggers verschieben. Im Gegensatz zu den anderen Variablenfenstern die **Überwachen** Windows den Variablen immer anzeigen, dass Sie beobachten sind (sie sind abgeblendet, wenn außerhalb des gültigen Bereichs).
+In diesem Beispiel haben Sie eine Überwachung, legen Sie für die `f` -Objekt, und Sie sehen den Wert ändern, wie Sie mithilfe des Debuggers verschieben. Im Gegensatz zu den anderen Variablenfenstern die **Überwachen** Windows den Variablen immer anzeigen, dass Sie beobachten sind (sie sind abgeblendet, wenn außerhalb des gültigen Bereichs).
 
 Weitere Informationen finden Sie unter [legen Sie eine Überwachung mit der überwachen "und" Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die S
 
 Weitere Informationen finden Sie auf der Seite [View snapshots using IntelliTrace step-back (Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Step-back“)](../debugger/how-to-use-intellitrace-step-back.md).
 
-## <a name="more-features-to-look-at"></a>Weitere Features ansehen
+## <a name="next-steps"></a>Nächste Schritte
 
--   [Debugger, Tipps und Tricks](../debugger/debugger-tips-and-tricks.md) erfahren Sie, wie Ihre Produktivität mit dem Debugger.
+In diesem Lernprogramm haben Sie einen kurzen Blick auf zahlreiche Debuggerfeatures hatten. Sie sollten eine eingehendere Betrachtung diese Funktionen, die mithilfe einer beispielanwendung
 
--   [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md) für eine Teilmenge von Sprachen (C#-, C++, Visual Basic), die Funktion bearbeiten und fortfahren können Sie Code in der Mitte einer Debugsitzung zu bearbeiten.
-
--   [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md) beschreibt das Debuggen von Multithreadanwendungen verwendet werden können. 
-
--   [Remotedebuggen](../debugger/remote-debugging.md) beschreibt das Debuggen von apps, die auf anderen Computern oder Geräten ausgeführt werden. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) beschreibt die Funktion "IntelliTrace" in Visual Studio Enterprise. Sie können es Datensatz und Trace Ausführungsverlauf des Codes verwenden.
-
--   [Netzwerkauslastung](../profiling/network-usage.md) beschreibt ein Profilerstellungstool, die Sie zum Debuggen von Webdiensten und anderen Netzwerkressourcen in universellen Windows-Apps (UWP) verwenden können. Verwenden Sie das Tool, um Nutzlasten zu untersuchen.
-
--   [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) beschreibt das Microsoft Debug Interface Access Software Development Kit (DIA SDK). Das DIA SDK bietet Zugriff auf Debuginformationen, die in von Microsoft-Postcompilertools generierten Programmdatenbankdateien (PDB-Format) gespeichert werden.  
-
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)

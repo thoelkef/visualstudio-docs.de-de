@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 64f20d5cc4014a0fb6cacd3b46ac836e2373112b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 
@@ -52,7 +53,7 @@ Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede An
 |-------------------------|-----------------------------------------------|-------------|
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.||
 |Zusätzliche Dokumente oder Arbeitsaufgaben|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|
-|Zusätzliche Dokumente oder Arbeitsaufgaben|Einschränkungen und Regeln, die nicht spezifisch für einen bestimmten Anwendungsfall sind.|[Anzeigen von Geschäftsregeln](#BusinessRules)|
+|Zusätzliche Dokumente oder Arbeitsaufgaben|Einschränkungen und Regeln, die nicht spezifisch für einen bestimmten Anwendungsfall sind|[Anzeigen von Geschäftsregeln](#BusinessRules)|
 
  Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Einen Überblick über die Diagrammtypen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).
 
@@ -70,9 +71,9 @@ Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsf
 
  Beachten Sie, dass hier zu entscheiden ist, wie Sie die Anforderungen definieren, und dass dies unabhängig von der Implementierung der Anforderungen im Programmcode ist.
 
- Weitere Informationen finden Sie unter den folgenden Themen:
+ Weitere Informationen finden Sie in den folgenden Themen:
 
-|Bereich|Lesen|
+|Thema|Lesen|
 |--------------------|----------|
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
@@ -84,13 +85,13 @@ Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören F
 
 -   Sicherheit
 
--   Nutzbarkeit
+-   Verwendbarkeit
 
 -   Zuverlässigkeit
 
 -   Stabilität
 
-Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter die Titel von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
+Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
 
 Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestellt, werden Bestellpositionen, die sich auf dieses Gericht beziehen, rot angezeigt.
 

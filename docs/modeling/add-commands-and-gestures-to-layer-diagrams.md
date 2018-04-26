@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f9a9893643583ac4b8fc286dd6c00ebe558050f
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 880e50f2b9d16886dddb0248fadc905ec0492595
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen
 Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit von Diagrammen in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
 
- Sie können mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Sie können z. B. eine einzelne VSIX definieren, die Ebenenbefehle, und eine domänenspezifische Sprache enthält.
+ Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Sie können z. B. eine einzelne VSIX definieren, die Ebenenbefehle, und eine domänenspezifische Sprache enthält.
 
 > [!NOTE]
 >  Sie können architekturvalidierung auch anpassen, in welcher Benutzer Quellcode Abhängigkeit Diagrammen verglichen wird. Sie sollten die Architekturvalidierung in einem separaten Visual Studio-Projekt definieren. Sie können sie der gleichen VSIX hinzufügen wie anderen Erweiterungen. Weitere Informationen finden Sie unter [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
@@ -100,7 +101,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit vo
 
      Siehe auch [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen Sie in dieser Instanz oder öffnen Sie ein Diagramm der Abhängigkeit.
+2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen Sie in dieser Instanz oder öffnen Sie ein Diagramm der Abhängigkeit.
 
 3.  Um VSIX-Pakete in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** in der Datei die **"bin"** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
 
@@ -127,7 +128,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit vo
 
     -   `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.
 
--   Sie können `IDiagramContext` importieren, um die aktuelle Auswahl zu bestimmen:
+-   Sie können `IDiagramContext`importieren, um die aktuelle Auswahl zu bestimmen:
 
      `[Import]`
 

@@ -1,5 +1,5 @@
 ---
-title: T4-Assemblydirektive
+title: T4-Assemblyanweisung
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6591f6c2791275f22d1976a9f72e1474309f1f4d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="t4-assembly-directive"></a>T4-Assemblydirektive
+# <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
 
 In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt vergleichbar.
 
@@ -23,7 +24,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
 > [!NOTE]
 >  Die `assembly`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt.
 
-## <a name="using-the-assembly-directive"></a>Verwenden der Assemblydirektive
+## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung
  Die Syntax der Direktive lautet wie folgt:
 
 ```
@@ -42,10 +43,10 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Die assembly-Direktive hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Stattdessen enthalten die notwendigen Verweise in der **Verweise** Teil Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Stattdessen enthalten die notwendigen Verweise in der **Verweise** Teil Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardassemblys
- Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblydirektiven dafür schreiben müssen:
+ Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblyanweisungen dafür schreiben müssen:
 
 -   `Microsoft.VisualStudio.TextTemplating.1*.dll`
 
@@ -53,7 +54,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
 
 -   `WindowsBase.dll`
 
- Wenn Sie eine benutzerdefinierte Direktive verwenden, lädt der Direktivenprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblydirektiven für die folgenden Assemblys schreiben:
+ Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 

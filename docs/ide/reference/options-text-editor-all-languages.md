@@ -1,10 +1,9 @@
 ---
-title: Optionen, Text-Editor, Alle Sprachen | Microsoft-Dokumentation
-ms.custom: ''
+title: Optionen, Text-Editor, Alle Sprachen
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
@@ -22,79 +21,96 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 762fc7ffbf3ca4dbf8cb768ee96f73cb1f9190aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-all-languages"></a>Optionen, Text-Editor, Alle Sprachen
-Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern. Diese Einstellungen gelten auch für andere Editoren, die auf dem Code-Editor basieren, z.B. die Quellansicht des HTML-Designers. Um das Dialogfeld zu öffnen, klicken Sie auf **Optionen** im Menü **Tools**. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und klicken Sie dann auf **Allgemein**.  
-  
+Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern. Diese Einstellungen gelten auch für andere Editoren, die auf dem Code-Editor basieren, z.B. die Quellansicht des HTML-Designers. Um das Dialogfeld zu öffnen, klicken Sie auf **Optionen** im Menü **Tools**. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und klicken Sie dann auf **Allgemein**.
+
 > [!CAUTION]
->  Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Denken Sie daran, dass beim Zurücksetzen einer Option in diesem Dialogfeld die allgemeinen Optionen in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt werden. Um die Optionen des Text-Editors für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.  
-  
- Wenn eine Option auf der Seite der allgemeinen Optionen für manche, aber nicht alle, Programmiersprachen aktiviert wurde, wird ein ausgegrautes Häkchen angezeigt.  
-  
+> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Denken Sie daran, dass beim Zurücksetzen einer Option in diesem Dialogfeld die allgemeinen Optionen in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt werden. Um die Optionen des Text-Editors für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
+
+
+ Wenn eine Option auf der Seite der allgemeinen Optionen für manche, aber nicht alle, Programmiersprachen aktiviert wurde, wird ein ausgegrautes Häkchen angezeigt.
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="statement-completion"></a>Anweisungsvervollständigung  
- Member automatisch auflisten  
- Wenn aktiviert, werden Popuplisten verfügbarer Member, Eigenschaften, Werte oder Methoden von IntelliSense angezeigt, während Sie eine Eingabe machen. Wählen Sie aus der Popupliste ein Element aus, das in den Code eingefügt werden soll. Wenn Sie diese Option auswählen, wird die Option **Erweiterte Member ausblenden** aktiviert  
-  
- Erweiterte Member ausblenden  
- Wenn aktiviert, werden die Popuplisten zur Anweisungsvervollständigung verkürzt, da nur die am häufigsten verwendeten Elemente angezeigt werden. Andere Elemente werden aus der Liste herausgefiltert.  
-  
- Parameterinformationen  
- Wenn diese Option aktiviert ist, wird die vollständige Syntax der aktuellen Deklaration oder Prozedur mit allen verfügbaren Parametern unter der Einfügemarke im Editor angezeigt. Der nächste Parameter, den Sie zuweisen können, ist fett formatiert.  
-  
-## <a name="settings"></a>Einstellungen  
- Virtuellen Bereich aktivieren  
- Wenn dieses Option aktiviert ist und **Zeilenumbruch** deaktiviert wurde, können Sie mit der Maus im Code-Editor auf eine beliebige Stelle nach einem Zeilenende klicken und mit der Eingabe beginnen. Diese Funktion kann verwendet werden, um Kommentare immer an derselben Stelle neben dem Code einzufügen.  
-  
- Zeilenumbruch  
- Wenn aktiviert, wird der Teil einer Zeile, der über den horizontal sichtbaren Bereich des Editors hinausgeht, automatisch in der nächsten Zeile angezeigt. Wenn Sie diese Option auswählen, wird die Option **Visuelle Symbole für Zeilenumbruch** anzeigen aktiviert.  
-  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
+
+
+## <a name="statement-completion"></a>Anweisungsvervollständigung
+ Member automatisch auflisten
+
+ Wenn aktiviert, werden Popuplisten verfügbarer Member, Eigenschaften, Werte oder Methoden von IntelliSense angezeigt, während Sie eine Eingabe machen. Wählen Sie aus der Popupliste ein Element aus, das in den Code eingefügt werden soll. Wenn Sie diese Option auswählen, wird die Option **Erweiterte Member ausblenden** aktiviert
+
+ Erweiterte Member ausblenden
+
+ Wenn aktiviert, werden die Popuplisten zur Anweisungsvervollständigung verkürzt, da nur die am häufigsten verwendeten Elemente angezeigt werden. Andere Elemente werden aus der Liste herausgefiltert.
+
+ Parameterinformationen
+
+ Wenn diese Option aktiviert ist, wird die vollständige Syntax der aktuellen Deklaration oder Prozedur mit allen verfügbaren Parametern unter der Einfügemarke im Editor angezeigt. Der nächste Parameter, den Sie zuweisen können, ist fett formatiert.
+
+## <a name="settings"></a>Einstellungen
+ Virtuellen Bereich aktivieren
+
+ Wenn dieses Option aktiviert ist und **Zeilenumbruch** deaktiviert wurde, können Sie mit der Maus im Code-Editor auf eine beliebige Stelle nach einem Zeilenende klicken und mit der Eingabe beginnen. Diese Funktion kann verwendet werden, um Kommentare immer an derselben Stelle neben dem Code einzufügen.
+
+ Zeilenumbruch
+
+ Wenn aktiviert, wird der Teil einer Zeile, der über den horizontal sichtbaren Bereich des Editors hinausgeht, automatisch in der nächsten Zeile angezeigt. Wenn Sie diese Option auswählen, wird die Option **Visuelle Symbole für Zeilenumbruch** anzeigen aktiviert.
+
 > [!NOTE]
->  Die Funktion **Virtueller Bereich** ist deaktiviert, wenn **Zeilenumbruch** aktiviert ist.  
-  
- Visuelle Symbole für Zeilenumbruch anzeigen  
- Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein Indikator in Form eines Rückwärtspfeils angezeigt.  
-  
- ![Screenshot LineBreakSymbol-Bildschirmabbildung](../../ide/reference/media/linebreak.gif "LineBreak")  
-  
- Deaktivieren Sie diese Option, wenn Sie diese Indikatoren nicht anzeigen möchten.  
-  
+> Die Funktion **Virtueller Bereich** ist deaktiviert, wenn **Zeilenumbruch** aktiviert ist.
+
+
+ Visuelle Symbole für Zeilenumbruch anzeigen
+
+ Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein Indikator in Form eines Rückwärtspfeils angezeigt.
+
+ ![Screenshot LineBreakSymbol-Bildschirmabbildung](../../ide/reference/media/linebreak.gif "LineBreak")
+
+ Deaktivieren Sie diese Option, wenn Sie diese Indikatoren nicht anzeigen möchten.
+
 > [!NOTE]
->  Diese zur Erinnerung dienenden Pfeile werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.  
-  
- Befehle zum Ausschneiden oder Kopieren bei fehlender Auswahl auf leere Zeilen anwenden  
- Diese Option legt das Verhalten des Editors fest, wenn Sie die Einfügemarke in einer leeren Zeile positionieren, keine Auswahl vornehmen und anschließend einen Kopier- oder Ausschneidevorgang ausführen.  
-  
--   Wenn diese Option aktiviert ist, wird die Leerzeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen wird eine neue leere Zeile eingefügt.  
-  
--   Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn vorher nichts kopiert wurde, wird nichts eingefügt.  
-  
-Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den Kopier- oder Ausschneidevorgang. Wenn nichts ausgewählt wurde, wird die gesamte Zeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen werden der Text der gesamten Zeile sowie das Zeilenendezeichen eingefügt.  
-  
+> Diese zur Erinnerung dienenden Pfeile werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
+
+
+ Befehle zum Ausschneiden oder Kopieren bei fehlender Auswahl auf leere Zeilen anwenden
+
+ Diese Option legt das Verhalten des Editors fest, wenn Sie die Einfügemarke in einer leeren Zeile positionieren, keine Auswahl vornehmen und anschließend einen Kopier- oder Ausschneidevorgang ausführen.
+
+-   Wenn diese Option aktiviert ist, wird die Leerzeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen wird eine neue leere Zeile eingefügt.
+
+-   Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn vorher nichts kopiert wurde, wird nichts eingefügt.
+
+Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den Kopier- oder Ausschneidevorgang. Wenn nichts ausgewählt wurde, wird die gesamte Zeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen werden der Text der gesamten Zeile sowie das Zeilenendezeichen eingefügt.
+
 > [!TIP]
->  Zur Unterscheidung von Zeilen mit Einzug und Leerzeilen können Indikatoren für Leerzeichen, Tabulatoren und Zeilenenden angezeigt werden. Wählen Sie dazu im Menü **Bearbeiten** die Option **Erweitert** und anschließend **Leerstelle anzeigen** aus.  
-  
-## <a name="display"></a>Anzeige  
- Zeilennummern  
- Wenn aktiviert, wird eine Zeilennummer neben jeder Codezeile angezeigt.  
-  
+> Zur Unterscheidung von Zeilen mit Einzug und Leerzeilen können Indikatoren für Leerzeichen, Tabulatoren und Zeilenenden angezeigt werden. Wählen Sie dazu im Menü **Bearbeiten** die Option **Erweitert** und anschließend **Leerstelle anzeigen** aus.
+
+
+## <a name="display"></a>Anzeige
+ Zeilennummern
+
+ Wenn aktiviert, wird eine Zeilennummer neben jeder Codezeile angezeigt.
+
 > [!NOTE]
->  Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.  
-  
- Einfaches Klicken für URLs aktivieren  
- Wenn aktiviert, nimmt der Cursor die Form einer Hand an, wenn er im Editor über eine URL bewegt wird. Sie können auf die URL klicken, um die angegebene Seite im Webbrowser anzuzeigen.  
-  
- Navigationsleiste  
- Wenn aktiviert, wird die **Navigationsleiste** am oberen Rand des Code-Editors angezeigt. Mit den Dropdownlisten **Objekte** und **Member** können Sie ein bestimmtes Objekt in Ihrem Code auswählen, seine Member auswählen und zur Deklaration des ausgewählten Members im Code-Editor navigieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
- [Verwenden von IntelliSense](../../ide/using-intellisense.md)
+> Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
+
+
+ Einfaches Klicken für URLs aktivieren
+
+ Wenn aktiviert, nimmt der Cursor die Form einer Hand an, wenn er im Editor über eine URL bewegt wird. Sie können auf die URL klicken, um die angegebene Seite im Webbrowser anzuzeigen.
+
+ Navigationsleiste
+
+ Wenn aktiviert, wird die **Navigationsleiste** am oberen Rand des Code-Editors angezeigt. Mit den Dropdownlisten **Objekte** und **Member** können Sie ein bestimmtes Objekt in Ihrem Code auswählen, seine Member auswählen und zur Deklaration des ausgewählten Members im Code-Editor navigieren.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
+- [Verwenden von IntelliSense](../../ide/using-intellisense.md)

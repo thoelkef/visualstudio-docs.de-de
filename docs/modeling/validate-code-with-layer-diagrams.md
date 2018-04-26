@@ -19,12 +19,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8bf157cd57bb7448006e0ffebc4304c39ec398e0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63dc6c6b1307ae5d8b8be880815f5de5e782c6f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit der Abhängigkeit-Diagramme
 
@@ -48,7 +49,7 @@ Um sicherzustellen dass der Code mit dem Entwurf nicht widerspricht., überprüf
 
  **Anforderungen**
 
--   Visual Studio
+-   Visual Studio
 
 -   Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen
 
@@ -94,10 +95,10 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 
 1.  Wählen Sie auf das Diagramm Abhängigkeit eine oder mehrere Ebenen rechten Maustaste auf die Auswahl, und klicken Sie dann auf **Links anzeigen**.
 
-2.  In **Ebenen-Explorer**, sehen Sie sich die **unterstützt die Validierung** Spalte. Wenn der Wert "false" ist, wird die Überprüfung vom Element nicht unterstützt.
+2.  In **Ebenen-Explorer**, sehen Sie sich die **unterstützt die Validierung** Spalte. Wenn der Wert „false“ ist, wird die Validierung vom Element nicht unterstützt.
 
 ##  <a name="IncludeReferences"></a> Andere .NET-Assemblys und Projekte zur Validierung einschließen
- Wenn Sie Elemente in das Dependency-Diagramm ziehen, werden automatisch zu Verweise auf die entsprechenden .NET-Assemblys oder Projekte hinzugefügt der **Ebenenverweise** Ordner im Modellierungsprojekt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Überprüfung analysiert werden. Sie können weitere .NET-Assemblys und Projekte zur Validierung einschließen, ohne Sie sie manuell das Dependency-Diagramm ziehen.
+ Wenn Sie Elemente in das Dependency-Diagramm ziehen, werden automatisch zu Verweise auf die entsprechenden .NET-Assemblys oder Projekte hinzugefügt der **Ebenenverweise** Ordner im Modellierungsprojekt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Validierung analysiert werden. Sie können weitere .NET-Assemblys und Projekte zur Validierung einschließen, ohne Sie sie manuell das Dependency-Diagramm ziehen.
 
 1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Modellierungsprojekts oder den **Ebenenverweise** Ordner, und klicken Sie dann auf **Verweis hinzufügen**.
 
@@ -166,7 +167,7 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 > [!WARNING]
 >  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.
 
-##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie eine Arbeitsaufgabe für einen Validierungsfehler
+##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie ein Arbeitselement für einen Validierungsfehler
 
 -   In der **Fehlerliste** Fenster mit der rechten Maustaste des Fehlers, zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ der Arbeitsaufgabe, die Sie erstellen möchten.
 
@@ -180,7 +181,7 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 |Ausblenden aller unterdrückten Fehler aus der **Fehlerliste** Fenster|Mit der rechten Maustaste an einer beliebigen Stelle der **Fehlerliste** Fenster, zeigen Sie auf **Validierungsfehler unterdrücken**, und klicken Sie dann auf **Unterdrückte Fehler ausblenden**.|
 
 ##  <a name="ValidateAuto"></a> Code automatisch überprüfen
- Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Team Foundation Build von Ihrem Team verwendet wird, können Sie eine Ebenenvalidierung mit abgegrenzten Eincheckvorgängen durchführen, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe erstellen und Überprüfungsfehler mithilfe von Buildberichten sammeln. Zum Erstellen von abgegrenzten Eincheckbuilds finden Sie unter [verwenden ein abgegrenzten eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+ Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Team Foundation Build von Ihrem Team verwendet wird, können Sie eine Ebenenvalidierung mit Gated-Check-Ins durchführen, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe erstellen und Überprüfungsfehler mithilfe von Buildberichten sammeln. Zum Erstellen von abgegrenzten Eincheckbuilds finden Sie unter [verwenden ein abgegrenzten eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>So überprüfen Sie Code automatisch während eines lokalen Builds
 
@@ -227,14 +228,14 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 -   [Überwachen des Status eines Builds ausgeführt wird](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ##  <a name="TroubleshootingValidation"></a> Ebenenvalidierungsprobleme
- In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Lösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
+ In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
 |**Problem**|**Mögliche Ursache**|**Auflösung**|
 |---------------|------------------------|--------------------|
 |Validierungsfehler treten nicht wie erwartet auf.|Die Validierung funktioniert nicht in Abhängigkeit von Diagrammen, die aus anderen Diagrammen Abhängigkeit im Projektmappen-Explorer kopiert wurden und sich im gleichen Modellierungsprojekt. Abhängigkeit Diagramme, die auf diese Weise kopiert werden, enthalten die gleichen Verweise wie das ursprüngliche Abhängigkeit Diagramm.|Fügen Sie dem Modellierungsprojekt ein neues Diagramm der Abhängigkeit hinzu.<br /><br /> Kopieren Sie die Elemente des Quelldiagramms-Abhängigkeit an, in das neue Diagramm.|
 
 ##  <a name="UnderstandingValidationErrors"></a> Verstehen und Lösen von Ebenenvalidierungsfehlern
- Beim Überprüfen von Code anhand eines Diagramms Abhängigkeit treten Validierungsfehler auf, wenn der Code mit dem Entwurf in Konflikt steht. Überprüfungsfehler können beispielsweise unter folgenden Bedingungen auftreten:
+ Beim Überprüfen von Code anhand eines Diagramms Abhängigkeit treten Validierungsfehler auf, wenn der Code mit dem Entwurf in Konflikt steht. Validierungsfehler können beispielsweise unter folgenden Bedingungen auftreten:
 
 -   Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.
 

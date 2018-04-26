@@ -1,9 +1,9 @@
 ---
-title: Festlegen von sprachspezifischen Editoroptionen | Microsoft-Dokumentation
-ms.custom: ''
+title: Festlegen von sprachspezifischen Editoroptionen
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editor options
 - configure editor
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1882f717d3e1a1cb6aef9a7c52649740c68a089
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="setting-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
 
@@ -25,29 +25,36 @@ Visual Studio bietet eine Vielzahl von Optionen für den Text-Editor, die für b
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Anpassen von Einstellungen im Dialogfeld „Optionen“
 
- [Optionen, Text-Editor, Standard (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
+ [Optionen, Text-Editor, Standard (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+
  Beschreibt für [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Code u. a. Einstellungen für End-Konstrukte, Neuformatierung von Code und Gliederungen sowie Vorschläge zur Fehlerkorrektur.
 
- [Optionen, Text-Editor, C/C++, Formatierung](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
+ [Optionen, Text-Editor, C/C++, Formatierung](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+
  Beschreibt für C- und C++-Code Einstellungen für Gliederungen, Einzüge, QuickInfos usw.
 
- [Optionen, Text-Editor, C/C++, Erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
+ [Optionen, Text-Editor, C/C++, Erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+
  Beschreibt Einstellungen für IntelliSense und Datenbankdateien beim Verwenden von C und C++.
 
- [Optionen, Text-Editor, C#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md)  
+ [Optionen, Text-Editor, C#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md)
+
  Beschreibt für C# u.a. Einstellungen für Einzüge, die Formatierung neuer Zeilen sowie das Umbrechen von Text
 
- [Optionen, Text-Editor, C#, Erweitert](../../ide/reference/options-text-editor-csharp-advanced.md)  
+ [Optionen, Text-Editor, C#, Erweitert](../../ide/reference/options-text-editor-csharp-advanced.md)
+
  Beschreibt für C# Einstellungen für Gliederungen, die Identifikation von Fehlern sowie für XML-Dokumentationskommentare
 
- [Optionen, Text-Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
+ [Optionen, Text-Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)
+
  Beschreibt Einstellungen, mit denen das Verhalten der IntelliSense-Vervollständigungsliste bei der Arbeit in C#-Code angepasst wird
 
- [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md)  
+ [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md)
+
  Beschreibt Einstellungen für die Anordnung von Elementen und Attributen in XAML-Dokumenten.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Anpassen des Editors](../../ide/customizing-the-editor.md)  
-[Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit EditorConfig](../../ide/create-portable-custom-editor-options.md)  
-[Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md) enthält Links zu Themen, in denen das Anpassen von Einstellungen, Tastenbindungen und anderen Features der integrierten Entwicklungsumgebung (IDE) erläutert wird.
+- [Anpassen des Editors](../../ide/customizing-the-editor.md)
+- [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit EditorConfig](../../ide/create-portable-custom-editor-options.md)
+- [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md) enthält Links zu Themen, in denen das Anpassen von Einstellungen, Tastenbindungen und anderen Features der integrierten Entwicklungsumgebung (IDE) erläutert wird.
