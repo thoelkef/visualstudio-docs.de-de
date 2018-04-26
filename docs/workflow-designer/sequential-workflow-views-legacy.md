@@ -1,7 +1,9 @@
 ---
-title: Sequenzielle Workflowansichten (Vorgängerversion) | Microsoft Docs
+title: Workflow-Designer - sequenzielle Workflowansichten (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Sequenzielle Workflowansichten (Vorgängerversion)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Stellt eine ältere Windows-Workflow-Designer, die verwendet werden kann, Ziel der [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder die [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] bietet eine Möglichkeit, [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Anwendungen mithilfe der vertrauten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Benutzeroberfläche grafisch zu erstellen. [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Anwendungen bestehen aus Workflowprozessschritten, den so genannten Aktivitäten. Um einen Workflow zu erstellen, erstellen Sie Aktivitäten auf der Entwurfsoberfläche ziehen Sie die jeweiligen Aktivitätsdesigner aus **Toolbox** auf die Entwurfsoberfläche.
+Visual Studio 2010 enthält eine ältere Windows-Workflow-Designer, die .NET Framework, Version 3.5 oder die WinFX als Ziel verwendet werden kann.
 
- Einen sequenziellen Workflow, also beim Erstellen einer [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), stehen drei Ansichten des Workflows zur Verfügung. Diese Ansichten sind über die **Workflow** Menü und im Kontextmenü auf der Entwurfsoberfläche angezeigt.
+Workflow-Designer bietet eine Möglichkeit zum Erstellen von Windows Workflow Foundation (WF)-Anwendungen, die mithilfe der vertrauten Visual Studio-Benutzeroberfläche grafisch dargestellt. Windows Workflow Foundation (WF)-Anwendungen bestehen aus der genannten Aktivitäten. Um einen Workflow zu erstellen, erstellen Sie Aktivitäten auf der Entwurfsoberfläche ziehen Sie die jeweiligen Aktivitätsdesigner aus **Toolbox** auf die Entwurfsoberfläche.
 
- In der folgenden Tabelle werden die Namen und Beschreibungen der einzelnen Ansichten aufgeführt.
+Einen sequenziellen Workflow, also beim Erstellen einer [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), stehen drei Ansichten des Workflows zur Verfügung. Diese Ansichten sind über die **Workflow** Menü und im Kontextmenü auf der Entwurfsoberfläche angezeigt.
+
+In der folgenden Tabelle werden die Namen und Beschreibungen der einzelnen Ansichten aufgeführt.
 
 |Menü-/Registerkartenoption|Beschreibung|
 |----------------------|-----------------|

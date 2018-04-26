@@ -1,7 +1,9 @@
 ---
-title: Visual Studio-Workflowfenster (Vorgängerversion) | Microsoft Docs
+title: Workflow-Designer - Visual Studio-Workflowfenster (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio-Workflowfenster (Vorgängerversion)
-Die von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] bereitgestellte Vorgängerversion von [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] kann verwendet werden, um auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzuzielen. Der Legacydesigner ist ein visueller Designer, mit dem Sie einen Workflow erstellen können. Ziehen Sie Aktivitäten aus der **Toolbox** auf die Entwurfsoberfläche, und diese dann dort konfigurieren. Als [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Editor-Fenster nimmt dieses den Bereich des Hauptfensters ein, der von anderen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Editor-Fenstern verwendet wird. Der Name des Workflows wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fenstertitelleiste angezeigt.
 
- Dem erfahrenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Benutzer sollten die meisten Legacydesignerfenster vertraut sein. In der folgenden Tabelle werden die wichtigsten Fenster beschrieben.
+Die Vorgängerversion Workflow-Designer bereitgestellter von Visual Studio 2010 kann .NET Framework, Version 3.5 oder die WinFX als Ziel verwendet werden. Der Legacydesigner ist ein visueller Designer, mit dem Sie einen Workflow erstellen können. Ziehen Sie Aktivitäten aus der **Toolbox** auf die Entwurfsoberfläche, und diese dann dort konfigurieren. Als Visual Studio-Editorfenster füllt sie das von anderen Visual Studio-Editorfenstern verwendete Hauptfenster aus. Der Name des Workflows wird in der Visual Studio-Fenstertitelleiste angezeigt.
+
+Die meisten legacydesignerfenster sollten für den erfahrene Benutzer von Visual Studio vertraut sein. In der folgenden Tabelle werden die wichtigsten Fenster beschrieben.
 
 |Fenster|Beschreibung|
 |------------|-----------------|
-|Legacyworkflow-Entwurfsoberfläche|Eine visuelle Designeroberfläche, die zum Erstellen eines Workflows verwendet wird, der auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt. Diese bietet die Möglichkeit, Aktivitäten visuell durch Ziehen von Aktivitätsdesignern aus der **Toolbox** auf die Entwurfsoberfläche.|
+|Legacyworkflow-Entwurfsoberfläche|Eine visuelle Designeroberfläche, die verwendet wird, um einen Workflow zu erstellen, der auf .NET Framework, Version 3.5 oder die WinFX ausgerichtet ist. Diese bietet die Möglichkeit, Aktivitäten visuell durch Ziehen von Aktivitätsdesignern aus der **Toolbox** auf die Entwurfsoberfläche.|
 |Werkzeugkasten|Stellt grafische Darstellungen von Aktivitäten bereit, die Sie in die Entwurfsoberfläche ziehen können.|
 |Eigenschaften|Wird für die Konfiguration von Workflowaktivitätseigenschaften verwendet.|
 |Projektmappen-Explorer|Zeigt Workflowprojekte in einer hierarchischen Strukturansicht an und ermöglicht den Zugriff auf Funktionen zur Verwaltung der Projekte.|

@@ -1,7 +1,9 @@
 ---
-title: Debuggen von Legacyworkflows | Microsoft Docs
+title: Workflow-Designer - Debuggen von Legacyworkflows
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Debuggen von Legacyworkflows
 
-Bei Verwendung von älteren Windows-Workflow-Designer in [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] erstellen [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Anwendungen, anfügungen Framework 3.0 oder 3.5, können Sie die Workflows genau wie jedes andere Programm debuggen, durch Festlegen von Haltepunkten, Anfügen an Prozesse und untersuchen Threads und die Aufrufliste. Sie haben auch die Möglichkeit, remote zu debuggen.
+Wenn Sie die älteren Windows-Workflow-Designer in Visual Studio verwenden, um Windows Workflow Foundation (WF)-Anwendungen, anfügungen Framework 3.0 oder 3.5 zu erstellen, können Sie die Workflows genau wie jedes andere Programm debuggen, durch Festlegen von Haltepunkten, Anfügen an Prozesse werden, und Threads und die Aufrufliste überprüfen. Sie haben auch die Möglichkeit, remote zu debuggen.
 
 > [!NOTE]
 > Wenn mehrere Visual Studio-Versionen auf dem Computer installiert und deinstalliert wurden, kann das WF3-Debuggen aus einem der beiden folgenden Gründe fehlschlagen:
@@ -32,7 +34,7 @@ Bei Verwendung von älteren Windows-Workflow-Designer in [!INCLUDE[vs_current_lo
 >
 > Wenn eines dieser Szenarien beim Debuggen von .NET Framework 3.0- oder 3.5-Workflows auftritt, führen Sie eine Reparatur der Visual Studio-Installation aus.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] kann in die folgenden standardmäßigen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugfenster integriert werden:
+ In Windows Workflow Foundation sind die folgenden Standard-Visual Studio-Debugfenster integriert:
 
 -   **Haltepunkt**: funktioniert wie erwartet, aber Sie geben eine Aktivität für den Namen der Funktion.
 

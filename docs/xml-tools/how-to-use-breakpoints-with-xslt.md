@@ -1,19 +1,19 @@
 ---
-title: 'Vorgehensweise: Verwenden von Haltepunkten bei XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Gewusst wie: Verwenden von Haltepunkten bei XSLT'
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f262fa2b1822f74dc15b6f8599b88161c0a1cf8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Vorgehensweise: Verwenden von Haltepunkten bei XSLT
 
@@ -23,40 +23,40 @@ Weitere Informationen finden Sie unter [Grundlagen des Debuggens: Haltepunkte](.
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Festlegen eines Haltepunkts in einem Stylesheet
 
-Haltepunkte können für Starttags, Endtags und Textknoten eines XSLT-Stylesheets festgelegt werden. Haltepunkte können auch für Code in einem Skriptblock festgelegt werden.  
-  
+Haltepunkte können für Starttags, Endtags und Textknoten eines XSLT-Stylesheets festgelegt werden. Haltepunkte können auch für Code in einem Skriptblock festgelegt werden.
+
 ### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>So legen Sie einen Haltepunkt in einem Stylesheet fest
-  
-1.  Öffnen Sie ein Stylesheet im XML-Editor.  
-  
-2.  Positionieren Sie den Cursor auf die Position des Haltepunkts, mit der rechten Maustaste, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.  
-  
-3.  Klicken Sie auf die Durchsuchen-Schaltfläche (**...** ) auf die **Eingabe** Feld Eigenschaftenfenster des Dokuments.  
-  
-4.  Suchen Sie das XML-Quelldokument, und klicken Sie auf **öffnen**.  
-  
-     Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.  
-  
-5.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.  
+
+1.  Öffnen Sie ein Stylesheet im XML-Editor.
+
+2.  Positionieren Sie den Cursor auf die Position des Haltepunkts, mit der rechten Maustaste, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.
+
+3.  Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Feld Eigenschaftenfenster des Dokuments.
+
+4.  Suchen Sie das XML-Quelldokument, und klicken Sie auf **öffnen**.
+
+     Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.
+
+5.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.
 
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Festlegen eines Haltepunkts in einem XML-Quelldokument
 
-Haltepunkte können für Elemente, Attribute, Namespaceknoten, Kommentare, Verarbeitungsanweisungen und Textknoten eines XML-Quelldokuments festgelegt werden. Für den Dokumentknoten oder einen Namespaceknoten, der vom übergeordneten Element erbt, kann kein Haltepunkt festgelegt werden.  
+Haltepunkte können für Elemente, Attribute, Namespaceknoten, Kommentare, Verarbeitungsanweisungen und Textknoten eines XML-Quelldokuments festgelegt werden. Für den Dokumentknoten oder einen Namespaceknoten, der vom übergeordneten Element erbt, kann kein Haltepunkt festgelegt werden.
 
 ### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>So legen Sie einen Haltepunkt in einem XML-Quelldokument fest
 
-1.  Öffnen Sie das XML-Dokument im XML-Editor.  
-  
-2.  Positionieren Sie den Cursor auf die Position des Haltepunkts, mit der rechten Maustaste, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.  
-  
-3.  Klicken Sie auf die Durchsuchen-Schaltfläche (**...** ) auf die **Stylesheet** Feld Eigenschaftenfenster des Dokuments.  
-  
-4.  Suchen Sie das XML-Quelldokument, und klicken Sie auf **öffnen**.  
-  
-     Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.  
-  
-5.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.  
- 
+1.  Öffnen Sie das XML-Dokument im XML-Editor.
+
+2.  Positionieren Sie den Cursor auf die Position des Haltepunkts, mit der rechten Maustaste, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.
+
+3.  Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Stylesheet** Feld Eigenschaftenfenster des Dokuments.
+
+4.  Suchen Sie das XML-Quelldokument, und klicken Sie auf **öffnen**.
+
+     Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.
+
+5.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.
+
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

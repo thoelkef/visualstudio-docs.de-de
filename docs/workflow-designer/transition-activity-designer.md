@@ -1,7 +1,9 @@
 ---
-title: Ein Übergang erfolgt, Aktivitäts-Designer | Microsoft Docs
+title: Workflow-Designer - Transition-Aktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>Übergangsaktivitäts-Designer
+
 Ein <xref:System.Activities.Statements.Transition> stellt den Übergang zwischen zwei Zuständen dar.
 
 ## <a name="using-the-transition-activity-designer"></a>Verwenden des Transition-Aktivitäts-Designers
- Der Transition-Aktivitäts-Designer ermöglicht es Ihnen, einen Übergang zwischen zwei Zuständen zu konfigurieren.
+
+Der Transition-Aktivitäts-Designer ermöglicht es Ihnen, einen Übergang zwischen zwei Zuständen zu konfigurieren.
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>Transition-Eigenschaften im Workflow-Designer
- In der folgenden Tabelle sind die <xref:System.Activities.Statements.Transition>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden.
+
+In der folgenden Tabelle sind die <xref:System.Activities.Statements.Transition>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ Ein <xref:System.Activities.Statements.Transition> stellt den Übergang zwischen
 |**Ziel**|True|Gibt den Zustand an, in den der Zustandsautomat übergeht, nachdem der Übergang abgeschlossen ist. Dies entspricht der <xref:System.Activities.Statements.Transition.To%2A>-Eigenschaft des Übergangs im Objektmodell. Indem Sie auf den Namen des Zielzustands klicken, wechselt die Designeransicht in eine erweiterte Ansicht dieses Zustands. Dieser Wert wird festgelegt, wenn der Übergang erstellt wird, und kann geändert werden, indem Sie im Designer den Pfeil ziehen, der den Übergang mit dem Zielzustand verbindet.|
 
 ### <a name="creating-transitions"></a>Erstellen von Übergängen
- Übergänge werden erstellt, indem eine Linie von einem Zustand zu einem anderen gezogen wird, oder indem ein Zustand auf den Dreiecken abgelegt wird, die angezeigt werden, wenn ein Zustand über einen anderen Zustand gezogen wird. Um einen Übergang durch Ziehen zu erstellen, zeigen Sie mit der Maus auf den Rand des Quellzustands und ziehen eine Linie vom Quell- zum Zielzustand. Um einen Übergang durch Ablegen zu erstellen, ziehen Sie den Zielzustand auf den Quellzustand und legen ihn auf einem der vier Dreiecke ab, die um den Quellzustand herum angezeigt werden. Der Zielzustand kann entweder ein neuer Zustand gezogen wird, aus der **Toolbox**, oder ein vorhandener Zustand, der aus dem Workflow-Designer gezogen.
+
+Übergänge werden erstellt, indem eine Linie von einem Zustand zu einem anderen gezogen wird, oder indem ein Zustand auf den Dreiecken abgelegt wird, die angezeigt werden, wenn ein Zustand über einen anderen Zustand gezogen wird. Um einen Übergang durch Ziehen zu erstellen, zeigen Sie mit der Maus auf den Rand des Quellzustands und ziehen eine Linie vom Quell- zum Zielzustand. Um einen Übergang durch Ablegen zu erstellen, ziehen Sie den Zielzustand auf den Quellzustand und legen ihn auf einem der vier Dreiecke ab, die um den Quellzustand herum angezeigt werden. Der Zielzustand kann entweder ein neuer Zustand gezogen wird, aus der **Toolbox**, oder ein vorhandener Zustand, der aus dem Workflow-Designer gezogen.
 
 > [!NOTE]
 > Ein einzelner Zustand eines Zustandsautomaten kann bis zu 76 Übergänge aufweisen, die mithilfe des Workflow-Designers erstellt wurden. Die Anzahl der Zustandsübergänge für Workflows, die außerhalb des Designers erstellt werden, wird nur durch die verfügbaren Systemressourcen beschränkt.
 
- Übergänge mit gemeinsamem Trigger sind Übergänge, die dasselbe Triggerereignis verwenden. Ein gemeinsamer Trigger ermöglicht den bedingten Übergang zu einem Zielzustand auf Grundlage der Auswertung von Ausdrücken, die für mehrere Übergänge konfiguriert wurden, die über ein gemeinsames Triggerereignis verfügen. Um einem Übergang zusätzliche Aktionen hinzuzufügen und einen gemeinsamen Übergang zu erstellen, klicken Sie auf den Kreis, der den Anfang des gewünschten Übergangs angibt, und ziehen Sie ihn auf den gewünschten Zustand. Der neue Übergang verwendet denselben Trigger wie der Anfangsübergang, besitzt jedoch eine eindeutige Bedingung und Aktion. Gemeinsame Übergänge können auch aus erstellt werden innerhalb des Übergangs-Designers durch Klicken auf **gemeinsamen triggerübergang hinzufügen** am unteren Rand des Übergangs-Designers, und wählen Sie dann den gewünschten Zielzustand aus der  **Verfügbare Zustände für Verbindung** Dropdownliste aus.
+Übergänge mit gemeinsamem Trigger sind Übergänge, die dasselbe Triggerereignis verwenden. Ein gemeinsamer Trigger ermöglicht den bedingten Übergang zu einem Zielzustand auf Grundlage der Auswertung von Ausdrücken, die für mehrere Übergänge konfiguriert wurden, die über ein gemeinsames Triggerereignis verfügen. Um einem Übergang zusätzliche Aktionen hinzuzufügen und einen gemeinsamen Übergang zu erstellen, klicken Sie auf den Kreis, der den Anfang des gewünschten Übergangs angibt, und ziehen Sie ihn auf den gewünschten Zustand. Der neue Übergang verwendet denselben Trigger wie der Anfangsübergang, besitzt jedoch eine eindeutige Bedingung und Aktion. Gemeinsame Übergänge können auch aus erstellt werden innerhalb des Übergangs-Designers durch Klicken auf **gemeinsamen triggerübergang hinzufügen** am unteren Rand des Übergangs-Designers, und wählen Sie dann den gewünschten Zielzustand aus der  **Verfügbare Zustände für Verbindung** Dropdownliste aus.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d4d15659aaca2b81e2c03ea349f47c05cee1e32b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c7a8d83b36e913467f6c4c62a8452d8d5f15fe6d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 
@@ -35,7 +36,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 -   Testen des benutzerdefinierten Hosts
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
@@ -819,7 +820,7 @@ Zum Testen des benutzerdefinierten Hosts schreiben Sie eine Textvorlage. Anschli
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Direktivenprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herstellen einer Verbindung eines Hosts zu einem Direktivenprozessor generiert](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Anweisungsprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herstellen einer Verbindung eines Hosts zu einem Direktivenprozessor generiert](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Siehe auch
 

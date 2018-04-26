@@ -1,7 +1,9 @@
 ---
-title: Wählen Sie die Regel festlegen (Dialogfeld) (Legacy) | Microsoft Docs
+title: Wählen Sie die Workflow-Designer - Regel festlegen (Dialogfeld) (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor auswählen" (Vorgängerversion)
-In diesem Thema wird beschrieben, wie die **Regelsatz auswählen** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
 
- Die **Regelsatz auswählen** Dialogfeld wird verwendet, um ein Regelsatz ausgewählt, die mit einem [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) Aktivität. Informationen über den Zugriff auf die **Regelsatz auswählen** (Dialogfeld), finden Sie unter [Vorgehensweise: Erstellen einer PolicyActivity Regelsatz (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+In diesem Thema wird beschrieben, wie die **Regelsatz auswählen** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelsatz auswählen** (Dialogfeld).
+Die **Regelsatz auswählen** Dialogfeld wird verwendet, um ein Regelsatz ausgewählt, die mit einem [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) Aktivität. Informationen über den Zugriff auf die **Regelsatz auswählen** (Dialogfeld), finden Sie unter [Vorgehensweise: Erstellen einer PolicyActivity Regelsatz (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelsatz auswählen** (Dialogfeld).
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ In diesem Thema wird beschrieben, wie die **Regelsatz auswählen** in älteren W
  Weitere Informationen zum Erstellen und Bearbeiten von Regelsätzen finden Sie unter [Regelsatz festgelegt-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.
+> Der Regeleditor im älteren Workflow-Designer, mit dem Ziel von .NET Framework, Version 3.5 oder die WinFX, unterstützt Festlegung von Zielversionen nicht.
 
  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://go.microsoft.com/fwlink?LinkID=65009).
 

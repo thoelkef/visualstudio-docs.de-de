@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activity library projects
 - workflow activity libraries
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa570f732f71336ce5a2f5e8e56d1185366afa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 432766e60ee1384db0f8cd5bad1f369e80ddd20a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)
 
-Befolgen Sie diese Schritte zum Erstellen eines Workflowaktivitätsbibliothek-Projekts mit älteren Windows Workflow-Designer bereitgestellten [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
+Führen Sie diese Schritte zum Erstellen einer Workflowaktivitätsbibliothek-Projekt mithilfe der Vorgängerversion Windows Workflow-Designer bereitgestellter von Visual Studio 2010. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
-### <a name="to-create-a-workflow-activity-library-project"></a>So erstellen Sie ein Workflowaktivitätsbibliothekprojekt
+## <a name="to-create-a-workflow-activity-library-project"></a>So erstellen Sie ein Workflowaktivitätsbibliothekprojekt
 
 1.  Starten Sie Visual Studio.
 
@@ -33,7 +35,7 @@ Befolgen Sie diese Schritte zum Erstellen eines Workflowaktivitätsbibliothek-Pr
 3.  Wählen Sie entweder die **.NET Framework 3.0** Option oder der **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.
 
     > [!NOTE]
-    > Die Standardoption in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.
+    > Ist die Standardoption in Visual Studio 2010 **.NET Framework 4**. Diese Option dient zum Erstellen von Windows Workflow Foundation (WF)-Anwendungen, die auf .NET Framework 4 abzielen, und es werden keine der Designer den Vorgängerversion verwendet.
 
 4.  In der **Projekttypen** Bereich, die Option Visual c# oder Visual Basic (unter **andere Sprachen**) und wählen Sie dann **Workflow**.
 

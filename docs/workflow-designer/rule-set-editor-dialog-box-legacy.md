@@ -1,7 +1,9 @@
 ---
-title: Regelsatz-Editor (Dialogfeld) (Legacy) | Microsoft Docs
+title: Workflow-Designer - Regelsatz-Editor (Dialogfeld) (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
-In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
 
- Die **Regelsatz-Editor** Dialogfeld dient zum Erstellen und Ändern von [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) -Regelsätze, die in einer rules-Datei serialisiert werden.
+In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
+
+Die **Regelsatz-Editor** Dialogfeld dient zum Erstellen und Ändern von [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) -Regelsätze, die in einer rules-Datei serialisiert werden.
 
 > [!NOTE]
 > Wenn Sie mit die rules-Datei öffnen möchten die **XML-Editor mit Codierung**, müssen Sie zunächst das zugewiesene Designerfenster für den Workflow oder eine Aktivität schließen.
 
- Informationen über den Zugriff auf die **Regelsatz-Editor** (Dialogfeld), finden Sie unter [Vorgehensweise: Erstellen einer PolicyActivity Regelsatz (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Informationen über den Zugriff auf die **Regelsatz-Editor** (Dialogfeld), finden Sie unter [Vorgehensweise: Erstellen einer PolicyActivity Regelsatz (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.
+> Der Regeleditor im älteren Workflow-Designer, mit dem Ziel von .NET Framework, Version 3.5 oder die WinFX, unterstützt Festlegung von Zielversionen nicht.
 
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelsatz-Editor** (Dialogfeld).
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelsatz-Editor** (Dialogfeld).
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
