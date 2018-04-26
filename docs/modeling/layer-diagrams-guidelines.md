@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 79c13cc878ee97968b82f86e3ba01c7eecd10b0c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9ce90746d89dd41c1f53d7150d83afaa2e2bad46
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeit Diagrammen: Richtlinien
 Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhängigkeit Diagramme* in Visual Studio. Stellen Sie sicher, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, durch Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur von Abhängigkeit Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).
@@ -55,7 +56,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
  Eine Abhängigkeit Diagramm muss in einem Modellierungsprojekt erstellt werden. Sie können einem vorhandenen Modellierungsprojekt ein neues Diagramm der Abhängigkeit hinzufügen, erstellen ein neues Modellierungsprojekt für das Diagramm Abhängigkeit oder ein vorhandene Abhängigkeit Diagramm innerhalb der gleichen Modellierungsprojekt kopieren.
 
 > [!IMPORTANT]
->  Führen Sie nicht fügen Sie hinzu, ziehen Sie oder kopieren Sie ein vorhandene Abhängigkeit Diagramm aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe. Eine Abhängigkeit-Diagramm, die auf diese Weise kopiert werden müssen die gleichen Verweise wie das ursprüngliche Diagramm aus, auch wenn Sie das Diagramm ändern. Dies verhindert die ordnungsgemäße Funktion der Ebenenvalidierung und verursacht möglicherweise andere Probleme, z. B. fehlende Elemente oder andere Fehler beim Versuch, das Diagramm zu öffnen.
+>  Führen Sie nicht fügen Sie hinzu, ziehen Sie oder kopieren Sie ein vorhandene Abhängigkeit Diagramm aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe. Eine Abhängigkeit-Diagramm, die auf diese Weise kopiert werden müssen die gleichen Verweise wie das ursprüngliche Diagramm aus, auch wenn Sie das Diagramm ändern. Dies verhindert das ordnungsgemäße Funktionieren der Ebenenvalidierung und verursacht möglicherweise andere Probleme, z. B. fehlende Elemente oder andere Fehler beim Versuch, das Diagramm zu öffnen.
 
  Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
@@ -90,7 +91,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
  In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.
 
 ##  <a name="EditArchitecture"></a> Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf zu zeigen
- Um die Änderungen zu beschreiben, die Sie an Ihrem System oder der vorgesehenen Architektur zu planen, verwenden Sie die folgenden Schritte aus, um das Dependency-Diagramm zu bearbeiten. Sie können vor dem Erweitern des Codes ggf. auch einige Umgestaltungsänderungen vornehmen, um die Codestruktur zu verbessern. Finden Sie unter [Verbessern der Struktur des Codes](#Improving).
+ Um die Änderungen zu beschreiben, die Sie an Ihrem System oder der vorgesehenen Architektur zu planen, verwenden Sie die folgenden Schritte aus, um das Dependency-Diagramm zu bearbeiten. Sie können vor dem Erweitern des Codes ggf. auch einige Refactoringänderungen vornehmen, um die Codestruktur zu verbessern. Finden Sie unter [Verbessern der Struktur des Codes](#Improving).
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
 |------------|-----------------------------|
@@ -102,7 +103,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
 |Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|
 
 ###  <a name="Improving"></a> Verbessern der Struktur des Codes
- Umgestaltungsänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Gut strukturierter Code verfügt über ein Entwurf, der mit einem Diagramm Abhängigkeit abstrakten einfach ist.
+ Refactoringänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Gut strukturierter Code verfügt über ein Entwurf, der mit einem Diagramm Abhängigkeit abstrakten einfach ist.
 
  Wenn Sie z. B. eine Ebene für jeden Namespace im Code erstellen und die Abhängigkeiten dann zurück entwickeln, sollte die Anzahl unidirektionaler Abhängigkeiten zwischen den Ebenen minimal sein. Wenn Sie ein detailliertes Diagramm mit Klassen oder Methoden als Ebenen zeichnen, sollte das Ergebnis dieselben Merkmale aufweisen.
 

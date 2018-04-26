@@ -1,7 +1,9 @@
 ---
-title: Designs, Workflowdesigner, Optionen (Dialogfeld) (Legacy) | Microsoft Docs
+title: Workflow-Designer - Designs, Workflow-Designer, Dialogfeld "Optionen" (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.ToolsOptionsPages.WorkflowDesigner.Themes
 helpviewer_keywords:
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a603f8b0e6e001e3eb52f2e9fb145e52a41f3dc9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Dialogfeld "Designs, Workflow-Designer, Optionen (Vorgängerversion)
-In diesem Thema wird beschrieben, wie die **Designs, Workflow-Designer, Optionen** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
 
- Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern. Sie können auswählen, Standard- und benutzerdefinierte Designs mit speichern die **Designs, Workflow-Designer, Optionen** (Dialogfeld). Um dieses Dialogfeld zu öffnen, klicken Sie auf **benutzerdefiniertes Design auswählen** auf die **Workflow** Menü. Rechten Maustaste auf die Workflowentwurfsoberfläche und klicken Sie auf **benutzerdefiniertes Design auswählen**.
+In diesem Thema wird beschrieben, wie die **Designs, Workflow-Designer, Optionen** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Designs, Workflow-Designer, Optionen** (Dialogfeld).
+Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern. Sie können auswählen, Standard- und benutzerdefinierte Designs mit speichern die **Designs, Workflow-Designer, Optionen** (Dialogfeld). Um dieses Dialogfeld zu öffnen, klicken Sie auf **benutzerdefiniertes Design auswählen** auf die **Workflow** Menü. Rechten Maustaste auf die Workflowentwurfsoberfläche und klicken Sie auf **benutzerdefiniertes Design auswählen**.
+
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Designs, Workflow-Designer, Optionen** (Dialogfeld).
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|

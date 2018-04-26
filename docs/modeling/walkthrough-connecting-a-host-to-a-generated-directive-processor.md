@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 13573fa6026b11566589a128c35be27fe4719a52
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einfacher benutzerdefinierter Host wird veranschaulicht, [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md). Erweitern Sie die diesem Host zum Hinzufügen von Funktionen, z. B. das Generieren von mehreren Ausgabedateien.
@@ -33,8 +34,8 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 -   Testen des benutzerdefinierten Hosts mit der generierten Direktivenprozessor.
 
-## <a name="prerequisites"></a>Voraussetzungen
- Zum Definieren einer DSL müssen folgende Komponenten installiert sein:
+## <a name="prerequisites"></a>Erforderliche Komponenten
+ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
 |-|-|

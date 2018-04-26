@@ -1,7 +1,9 @@
 ---
-title: Durchsuchen, und wählen Sie ein Dialogfeld | Microsoft Docs
+title: Workflow-Designer - navigieren Sie, und wählen Sie eine .NET (Dialogfeld)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -34,7 +36,7 @@ In der **Eigenschaften** Fenster, Dialogfelder oder Designern, z. B. den Variabl
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Auswählen eines Werts oder eines Verweistyps im Typbrowser
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>So wählen Sie einen Wert- oder Verweistyp im Typbrowser aus
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>So wählen Sie einen Wert- oder Verweistyp im Typbrowser aus
 
 1.  In der **Typnamen** Geben Sie den Namen des Typs, den Sie verwenden möchten.
 
@@ -44,7 +46,7 @@ In der **Eigenschaften** Fenster, Dialogfelder oder Designern, z. B. den Variabl
 
     -   Geben Sie genug Zeichen in der **Typnamen** Feld zur eindeutigen Identifizierung den Typ, die Sie verwenden möchten, und drücken Sie die EINGABETASTE, um den Typ auswählen
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>So wählen Sie einen generischen Typ im Typbrowser aus
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>So wählen Sie einen generischen Typ im Typbrowser aus
 
 1.  In der **Typnamen** Feld den Namen des Typs, die Sie verwenden möchten.
 

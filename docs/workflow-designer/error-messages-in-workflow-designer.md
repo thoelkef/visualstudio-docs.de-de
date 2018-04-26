@@ -1,7 +1,9 @@
 ---
-title: Fehlermeldungen im Workflow-Designer | Microsoft Docs
+title: Fehlermeldungen im Workflow-Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
+
 Dieses Thema beschreibt die Arten von Fehlermeldungen, die bei der Arbeit mit Windows Workflow-Designer gefunden werden können.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situationen, in denen Fehler im Workflow-Designer auftreten
- In den folgenden Situationen treten Fehler im [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] auf:
+
+Fehler im Workflow-Designer werden in den folgenden Situationen auftreten:
 
 1.  In einem Ausdruck liegt ein Fehler vor.
 
@@ -32,12 +36,12 @@ Dieses Thema beschreibt die Arten von Fehlermeldungen, die bei der Arbeit mit Wi
 
 4.  Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
 
- Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich erstellt, zur Laufzeit wird jedoch eine Ausnahme vom Typ <xref:System.Activities.InvalidWorkflowException> ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
+Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich erstellt, zur Laufzeit wird jedoch eine Ausnahme vom Typ <xref:System.Activities.InvalidWorkflowException> ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 
- In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], wenn ein Workflow geladen wird, werden seine Fehler angezeigt, der **Fehlerliste**. Um auf die Aktivität zu navigieren, die die Quelle des Fehlers ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
+Innerhalb von Visual Studio beim Laden eines Workflows seine Fehler werden angezeigt, der **Fehlerliste**. Um auf die Aktivität zu navigieren, die die Quelle des Fehlers ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
 
 ### <a name="expression-errors"></a>Ausdrucksfehler
- Ein ungültiger Ausdruck wird durch einen roten Kreis mit einem weißen Ausrufezeichen neben dem Ausdruck gekennzeichnet. Wenn Sie den Mauszeiger über dieses Symbol bewegen, wird ein QuickInfo angezeigt, in der die Fehlerquelle beschrieben wird. Klicken Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf den Ausdruck, um die Fehlerquelle mit einer Unterstreichung anzuzeigen. Wenn Sie den Mauszeiger über den unterstrichenen Text halten, wird ein QuickInfo mit einer Beschreibung der Fehlerquelle angezeigt.
+ Ein ungültiger Ausdruck wird durch einen roten Kreis mit einem weißen Ausrufezeichen neben dem Ausdruck gekennzeichnet. Wenn Sie den Mauszeiger über dieses Symbol bewegen, wird ein QuickInfo angezeigt, in der die Fehlerquelle beschrieben wird. Klicken Sie auf den Ausdruck so, dass die Zeile anzuzeigen, die die Quelle des Fehlers unterstreicht, innerhalb von Visual Studio. Wenn Sie den Mauszeiger über den unterstrichenen Text halten, wird ein QuickInfo mit einer Beschreibung der Fehlerquelle angezeigt.
 
 ### <a name="activity-validation-errors"></a>Aktivitätsvalidierungsfehler
  Wenn die Validierungseinschränkungen einer Aktivität nicht erfüllt wurden, wird ein roter Kreis mit einem weißen Ausrufezeichen in der obersten richtigen Ecke der Aktivität angezeigt. Wenn Sie den Mauszeiger über dieses Symbol bewegen, wird ein QuickInfo angezeigt, in der die Fehlerquelle beschrieben wird.

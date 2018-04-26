@@ -1,7 +1,9 @@
 ---
-title: Erstellen eines Workflowprojekts | Microsoft Docs
+title: Workflow-Designer - Erstellen eines Workflowprojekts
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - Visual Studio 2010 Workflow Designer, creating a workflow project
@@ -12,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f65cc826b59e7ee5c0645a8c1204a193f58f001
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-workflow-project"></a>Erstellen eines Workflowprojekts
 
-Workflows, [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]-Workflowdienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitätsdesigner können mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagen erstellt werden. In diesem Abschnitt wird beschrieben, wie Bibliotheken und Anwendungen mit den Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt werden.
+Workflows, Windows Communication Foundation (WCF)-Workflowdienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitätsdesigner können mit Visual Studio-Projektvorlagen erstellt werden. In diesem Abschnitt wird beschrieben, wie Bibliotheken und Anwendungen mit den Projektvorlagen in Visual Studio erstellt.
 
-Die ersten vier Themen wird beschrieben, wie die Workflowvorlagen die Verwendung der **neues Projekt** Fenster. Diese Vorlagen zugegriffen werden können, durch Öffnen des [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] auswählen und **Datei** -> **neu** -> **Projekt...** , und klicken Sie dann die **Workflow** Kategorie aus der **installierte Vorlagen** Abschnitt auf der linken Seite unter entweder die **Visual Basic** oder **Visual C#-** Knoten.
+Die ersten vier Themen wird beschrieben, wie die Workflowvorlagen die Verwendung der **neues Projekt** Fenster. Diese Vorlagen möglich, indem Sie Visual Studio 2010 öffnen und auswählen **Datei** > **neu** > **Projekt**, und klicken Sie dann die  **Workflow** Kategorie aus der **installierte Vorlagen** Abschnitt auf der linken Seite unter entweder die **Visual Basic** oder **Visual C#-** Knoten.
 
-Im letzten Thema wird beschrieben, wie einem vorhandenen Workflowprojekt (oder einem anderen Projekt) Workflowaktivitäten, Designer und Dienste oder andere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Elemente hinzugefügt werden.
+Im letzte Thema wird beschrieben, wie Workflowaktivitäten, Designer und Dienste oder andere Visual Studio-Projekt zu einem vorhandenen Workflowprojekt (oder andere) Elemente hinzugefügt.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 

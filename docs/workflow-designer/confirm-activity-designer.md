@@ -1,7 +1,9 @@
 ---
-title: Confirm-Aktivitätsdesigner | Microsoft Docs
+title: Workflow-Designer - Confirm-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0414c45b57a112528aad8488f4c1f69fdf641f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21a4c1b31769387470d58f27a060d4e3ec7ae70c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="confirm-activity-designer"></a>Confirm-Aktivitätsdesigner
+
 Die **bestätigen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Confirm> Aktivität.
 
 ## <a name="the-confirm-activity"></a>Die Confirm-Aktivität
@@ -25,12 +28,12 @@ Die **bestätigen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren e
  Das vom <xref:System.Activities.Statements.CompensationToken> angegebene <xref:System.Activities.Statements.Compensate.Target%2A>-Token stellt eine Möglichkeit dar, eine <xref:System.Activities.Statements.CompensableActivity>-Instanz explizit zu bestätigen oder zu kompensieren, nachdem der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Teil der <xref:System.Activities.Statements.CompensableActivity>-Instanz erfolgreich beendet wurde.
 
 ### <a name="using-the-confirm-activity-designer"></a>Verwenden des Confirm-Aktivitätsdesigners
- Die **bestätigen** Aktivitäts-Designer finden Sie in der **Transaktion** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**auf der linken Seite der Registerkarte die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)
+ Die **bestätigen** Aktivitäts-Designer finden Sie in der **Transaktion** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte auf der linken Seite im Workflow-Designer (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)
 
- Die **bestätigen** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Dadurch wird eine <xref:System.Activities.Statements.Confirm>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert Confirm erstellt. Die <xref:System.Activities.Activity.DisplayName%2A> Werte sind möglich entweder im Header des bearbeitet die **bestätigen** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
+ Die **bestätigen** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht wird, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Dadurch wird eine <xref:System.Activities.Statements.Confirm>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert Confirm erstellt. Die <xref:System.Activities.Activity.DisplayName%2A> Werte sind möglich entweder im Header des bearbeitet die **bestätigen** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
 
 ### <a name="the-confirm-properties"></a>Die Confirm-Eigenschaften
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.Confirm>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A>-Eigenschaften kann im Eigenschaftenraster und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden, die <xref:System.Activities.Statements.Confirm.Target%2A>- Eigenschaften muss jedoch im Eigenschaftenraster bearbeitet werden.
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Confirm>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A> Eigenschaft kann bearbeitet werden, im Eigenschaftenraster oder auf Workflow-Designer-Oberfläche, aber die <xref:System.Activities.Statements.Confirm.Target%2A> Eigenschaft im Eigenschaftenraster bearbeitet werden muss.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

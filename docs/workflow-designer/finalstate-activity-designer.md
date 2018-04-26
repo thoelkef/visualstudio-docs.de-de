@@ -1,27 +1,32 @@
 ---
-title: FinalState-Aktivitäts-Designer | Microsoft Docs
+title: Workflow-Designer - FinalState-Aktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6360be9522fd8a3640780407cb5252da41515536
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d89e9f81bb7dc8237069a79784eadc0e5d375d6e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="finalstate-activity-designer"></a>FinalState-Aktivitäts-Designer
+
 Der <xref:System.Activities.Core.Presentation.FinalState>-Designer wird verwendet, um einen <xref:System.Activities.Statements.State> zu erstellen, der eine Instanz des Zustandsautomaten beendet.
 
 ## <a name="using-the-finalstate-activity-designer"></a>Verwenden des FinalState-Aktivitäts-Designers
- Die **FinalState** -Designer dient zum Erstellen einer <xref:System.Activities.Statements.State> , der als beendender Zustand in einem Zustandsautomaten vorkonfiguriert ist. Ein <xref:System.Activities.Statements.State> , erstellt wird, mithilfe der <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts-Designer hat seine <xref:System.Activities.Statements.State.IsFinal%2A> -Eigenschaftensatz auf **"true"**, hat keine <xref:System.Activities.Statements.State.Exit%2A> Aktivität und keine Übergänge ausgehen. Verwenden der <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts-Designer zum Hinzufügen einer <xref:System.Activities.Statements.State> Aktivität, die in einem Zustandsautomaten in einem beendenden Zustand vorkonfiguriert ist ziehen die **FinalState** Aktivitäts-Designer aus der **Zustandsautomat**Teil der **Toolbox** und legen ihn auf die Workflow-Designer. Der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer abgelegt wird. Weitere Informationen zum Erstellen von Übergängen finden Sie unter [Übergang](../workflow-designer/transition-activity-designer.md).
+
+Die **FinalState** -Designer dient zum Erstellen einer <xref:System.Activities.Statements.State> , der als beendender Zustand in einem Zustandsautomaten vorkonfiguriert ist. Ein <xref:System.Activities.Statements.State> , erstellt wird, mithilfe der <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts-Designer hat seine <xref:System.Activities.Statements.State.IsFinal%2A> -Eigenschaftensatz auf **"true"**, hat keine <xref:System.Activities.Statements.State.Exit%2A> Aktivität und keine Übergänge ausgehen. Verwenden der <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts-Designer zum Hinzufügen einer <xref:System.Activities.Statements.State> Aktivität, die in einem Zustandsautomaten in einem beendenden Zustand vorkonfiguriert ist ziehen die **FinalState** Aktivitäts-Designer aus der **Zustandsautomat**Teil der **Toolbox** und legen ihn auf die Workflow-Designer. Der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer abgelegt wird. Weitere Informationen zum Erstellen von Übergängen finden Sie unter [Übergang](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Zustandsaktivitätseigenschaften im Workflow-Designer
- In der folgenden Tabelle sind die Eigenschaften aufgeführt, die mithilfe des <xref:System.Activities.Core.Presentation.FinalState>-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Einige dieser Eigenschaften können im Eigenschaftenraster und einige auf der Designeroberfläche bearbeitet werden.
+
+In der folgenden Tabelle sind die Eigenschaften aufgeführt, die mithilfe des <xref:System.Activities.Core.Presentation.FinalState>-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Einige dieser Eigenschaften können im Eigenschaftenraster und einige auf der Designeroberfläche bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

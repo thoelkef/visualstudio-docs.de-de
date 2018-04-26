@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 668ef447673897ce02d5d988ce20839006fead09
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 34c8c26343eef22d3b36ad70d4d7d484de76d866
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten eine gute Möglichkeit Text beliebiger Art zu generieren. Textvorlagen können zum Generieren von Text zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit zu Ihrem Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellten "Wie kann ich...?" Fragen.

@@ -1,7 +1,9 @@
 ---
-title: Mithilfe der Vorgängerversion des Zustandsautomatworkflow-Designers | Microsoft Docs
+title: Workflow-Designer - verwenden die Vorgängerversion des Zustandsautomatworkflow-Designers
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Verwenden des Zustandsautomatworkflow-Designers der Vorgängerversion
-Wenn Sie erstellen ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] abzielt die [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder die [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], Sie könne beide verwenden die **Konsolenanwendung für Zustandsautomatenworkflows Status** oder die  **Workflowbibliothek Status** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Informationen zu den Projektvorlagen für legacy-Status-Computer finden Sie unter [Vorgehensweise: Erstellen Zustand Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Ein Zustandsautomatworkflow besteht aus einem Statusset. Ein Status wird als der Ausgangsstatus bezeichnet. Jeder Zustand kann einen bestimmten Satz Ereignisse erhalten. Auf Grundlage eines Ereignisses kann ein Übergang zu einem anderen Zustand erfolgen. Der Zustandsautomatworkflow kann über einen Endzustand verfügen. Beim Übergang zum Endstatus wird der Workflow abgeschlossen.
+Wenn Sie ein neues Zustandsautomat-Workflowprojekt in Visual Studio 2010, die auf .NET Framework, Version 3.5 oder die WinFX ausgerichtet ist erstellen, können Sie auswählen, verwenden die **Konsolenanwendung für Zustandsautomatenworkflows Status** oder die  **Workflowbibliothek Status** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Informationen zu den Projektvorlagen für legacy-Status-Computer finden Sie unter [Vorgehensweise: Erstellen Zustand Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Ein Zustandsautomatworkflow besteht aus einem Statusset. Ein Status wird als der Ausgangsstatus bezeichnet. Jeder Zustand kann einen bestimmten Satz Ereignisse erhalten. Auf Grundlage eines Ereignisses kann ein Übergang zu einem anderen Zustand erfolgen. Der Zustandsautomatworkflow kann über einen Endzustand verfügen. Beim Übergang zum Endstatus wird der Workflow abgeschlossen.
 
 ## <a name="state-machine-designer-views"></a>Zustandsautomaten-Designeransichten
  Der Zustandsautomaten-Designer ist ein Freihand-Designer, das heißt, die Aktivitäten können frei auf der Entwurfsoberfläche verschoben werden. Der Zustandsautomaten-Designer verfügt über zwei Ansichten: *Status* anzeigen und *ereignisgesteuerte* anzeigen.

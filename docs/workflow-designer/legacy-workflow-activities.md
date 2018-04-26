@@ -1,7 +1,9 @@
 ---
-title: Legacyworkflowaktivitäten | Microsoft Docs
+title: Workflow-Designer - Legacy-Workflowaktivitäten
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Legacyworkflowaktivitäten
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] enthält einen Standardsatz von Aktivitäten, die Funktionen für Ablaufsteuerung, Bedingungen, Ereignisbehandlung, Zustandsverwaltung und Kommunikation mit Anwendungen und Diensten bereitstellen. Beim Entwurf von Workflows können Sie die vom System bereitgestellte Aktivitäten, die von der Windows-Workflow-Designer bereitgestellt werden, oder Sie können eigene benutzerdefinierten Aktivitäten erstellen.
+Windows Workflow Foundation (WF) umfasst eine Reihe von Aktivitäten, die Funktionen für ablaufsteuerung, Bedingungen, Ereignisbehandlung, Zustandsverwaltung und Kommunikation mit Anwendungen und Dienste bereitzustellen. Beim Entwurf von Workflows können Sie die vom System bereitgestellte Aktivitäten, die von der Windows-Workflow-Designer bereitgestellt werden, oder Sie können eigene benutzerdefinierten Aktivitäten erstellen.
 
- In der folgenden Tabelle ist der vordefinierte Aktivitätssatz des [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]-Framework aufgeführt. Viele, aber nicht alle dieser Aktivitäten werden dargestellte Aktivitäts-Designer aus zugegriffen werden können die **Toolbox** von der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Um eine Aktivität zu erstellen, ziehen Sie ihren Designer aus der **Toolbox** und legen Sie sie auf der Entwurfsoberfläche angezeigt.
+In der folgenden Tabelle ist der vordefinierte Aktivitätssatz des Windows Workflow Foundation-Framework aufgeführt. Viele, aber nicht alle dieser Aktivitäten werden dargestellte Aktivitäts-Designer aus zugegriffen werden können die **Toolbox** im Workflow-Designer. Um eine Aktivität zu erstellen, ziehen Sie ihren Designer aus der **Toolbox** und legen Sie sie auf der Entwurfsoberfläche angezeigt.
 
 |Aktivität|Beschreibung|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Antwortet auf eine an einen Workflow ausgegebene Webdienstanforderung. Weitere Informationen finden Sie unter [mithilfe der Aktivität "WebServiceOutputActivity"](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Unterstützt das Durchlaufen Ihres Workflows, bis eine Bedingung erfüllt ist. Weitere Informationen finden Sie unter [mithilfe der Aktivität WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Weitere Informationen zum Erstellen von benutzerdefinierter Aktivitäten finden Sie unter [Entwickeln von benutzerdefinierten Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65023) und [Aktivitätsdesigners der Vorgängerversion mit](../workflow-designer/using-the-legacy-activity-designer.md).
+Weitere Informationen zum Erstellen von benutzerdefinierter Aktivitäten finden Sie unter [Entwickeln von benutzerdefinierten Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65023) und [Aktivitätsdesigners der Vorgängerversion mit](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Siehe auch
 

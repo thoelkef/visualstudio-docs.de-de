@@ -10,18 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9895e0cc6cb0b65df51af4ff165d7aa34960763d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1d08aafd31d93c7a07d57dcd5b831b8ae41a6c17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 
 [TextTransformation](../modeling/code-generation-and-t4-text-templates.md) ausgerufen werden als Teil der [Buildprozess](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) von einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
 
-Je nachdem, welches Buildmodul Sie verwenden, können die Buildtasks unterschiedliche Ergebnisse haben. Wenn Sie die Projektmappe in Visual Studio erstellen, eine Textvorlage kann zugreifen, die Visual Studio-API (EnvDTE) Wenn die [Hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Jedoch, die nicht "true", wenn Sie die Projektmappe über die Befehlszeile erstellen oder wenn Sie einen Serverbuild mit Visual Studio starten. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet.
+Je nachdem, welches Buildmodul Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projektmappe in Visual Studio erstellen, eine Textvorlage kann zugreifen, die Visual Studio-API (EnvDTE) Wenn die [Hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Jedoch, die nicht "true", wenn Sie die Projektmappe über die Befehlszeile erstellen oder wenn Sie einen Serverbuild mit Visual Studio starten. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet.
 
 Dies bedeutet, dass Sie Elemente wie Projektdateinamen nicht genauso zugreifen können, bei der Erstellung einer Textvorlage in MSBuild. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und Direktivenprozessoren](#parameters).
 
@@ -179,7 +180,7 @@ Diese Eigenschaften werden nur von MSBuild verwendet. Sie beeinflussen nicht die
 
  Ein hilfreicher Ordner für die Umleitung ist `$(IntermediateOutputPath).`
 
- Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Direktive in den Vorlagen angegeben ist.
+ Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Anweisung in den Vorlagen angegeben ist.
 
 ```xml
 <ItemGroup>

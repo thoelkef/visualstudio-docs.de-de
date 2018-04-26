@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Konfigurieren von Workflowprojekteigenschaften (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Konfigurieren von Workflowprojekteigenschaften (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - workflow
 helpviewer_keywords:
@@ -14,17 +16,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f7ca9271b8f7585e232ca636dcb5e13de3a6eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66589ab34a969290263afba80acaa7aa7273a3fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Vorgehensweise: Konfigurieren von Workflowprojekteigenschaften (Vorgängerversion)
 
 Führen Sie die nachstehenden Schritte zum Anzeigen oder Ändern von Workflowprojekten zugewiesenen Eigenschaften aus.
 
-### <a name="to-view-or-modify-workflow-project-properties"></a>So zeigen Sie Workflowprojekteigenschaften an beziehungsweise ändern sie
+## <a name="to-view-or-modify-workflow-project-properties"></a>So zeigen Sie Workflowprojekteigenschaften an beziehungsweise ändern sie
 
 1.  Wenn **Projektmappen-Explorer** Fenster ist nicht sichtbar ist, wählen **Projektmappen-Explorer** auf die **Ansicht** Menü.
 

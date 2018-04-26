@@ -1,29 +1,32 @@
 ---
-title: 'Vorgehensweise: erstellen eine Konsolenanwendung für Workflows | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: erstellen eine Konsolenanwendung für Workflows'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6461a644bdedd3d391059cd8a3a17f887e77c6b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Vorgehensweise: Erstellen einer Konsolenanwendung für Workflows
-Mit [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] können Sie Workflows zum Ausführen von Systemprozessen oder menschlichen Prozessen erstellen. Windows Workflow-Designer stellt die Entwurfsoberfläche zum Erstellen dieser Workflows an. Der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] kann verwendet werden, um Workflows in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu erstellen, oder er kann in andere Anwendungen integriert werden, die den Designer neu hosten.
 
- In diesem Thema wird beschrieben, wie der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] verwendet wird, um einen Workflow in einer Konsolenanwendung zu erstellen.
+Windows Workflow Foundation (WF) können Sie Workflows zum Ausführen von Systemprozessen oder menschlichen Prozessen erstellen. Windows Workflow-Designer stellt die Entwurfsoberfläche zum Erstellen dieser Workflows an. Workflow-Designer zum Erstellen von Workflows von innerhalb von Visual Studio verwendet werden können, oder er kann in andere Anwendungen, die den Designer neu hosten integriert werden.
 
-### <a name="to-create-a-workflow-console-application"></a>So erstellen Sie eine Konsolenanwendung für Workflows
+In diesem Thema wird beschrieben, wie Workflow-Designer in Visual Studio 2010 verwenden, um einen Workflow in einer Konsolenanwendung zu erstellen.
 
-1.  Starten Sie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-workflow-console-application"></a>So erstellen Sie eine Konsolenanwendung für Workflows
 
-2.  Auf der **Datei** Sie im Menü **neu**, und wählen Sie dann **Projekt...** .
+1.  Starten Sie Visual Studio 2010.
+
+2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -38,9 +41,9 @@ Mit [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] können Sie Workflows
 7.  In der **Lösung** Geben Sie den Namen für die neue Projektmappe. Klicken Sie auf **OK** zum Erstellen der Anwendung.
 
     > [!NOTE]
-    > Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], klicken Sie mit der mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, klicken Sie dann **Neues Projekt...** So öffnen die **neues Projekt** (Dialogfeld). Fahren Sie wie oben in dieser Prozedur beschrieben fort.
+    > Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in Visual Studio 2010, klicken Sie mit der mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, klicken Sie dann  **Neues Projekt** So öffnen die **neues Projekt** (Dialogfeld). Fahren Sie wie oben in dieser Prozedur beschrieben fort.
 
-8.  Die Projektvorlage erstellt eine Workflowdefinition in XAML, und die Konsolenanwendungsdefinition ist in Quellcode. Der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] wird geöffnet und zeigt den Canvas für den Workflow an, den Sie erstellt haben.
+8.  Die Projektvorlage erstellt eine Workflowdefinition in XAML, und die Konsolenanwendungsdefinition ist in Quellcode. Workflow-Designer wird geöffnet und zeigt den Canvas für den Workflow, den Sie erstellt haben.
 
 9. Um einen Workflow zu verfassen, ziehen Sie Aktivitäten oder andere Workflowelemente von der **Toolbox** auf die Entwurfsoberfläche in Ihrem Workflow.
 

@@ -1,37 +1,23 @@
 ---
-title: XML-Editor-Komponenten | Microsoft Docs
-ms.custom: ''
+title: Komponenten des XML-Editors
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c0cdac45c2be8146ff86b7c779165f0d312fec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2da894b45cfe1822de0cf421811e00908c039fce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-editor-components"></a>Komponenten des XML-Editors
 
 Dieser Abschnitt beschreibt die XML-Editor-Fenster und Dialogfelder. Da der XML-Editor auf dem Texteditor basiert, einige der integrierten Entwicklungsumgebung (IDE) wird konfiguriert mithilfe der allgemeinen Text-Editor-Einstellungen.
-
-## <a name="in-this-section"></a>In diesem Abschnitt
-
-[Verschiedenes, XML, Texteditor, Dialogfeld "Optionen"](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
-In diesem Abschnitt werden die Einstellungen für die automatische Vervollständigung und Schemata für den XML-Editor behandelt.
-
-[XML-Dokumenteigenschaften, Eigenschaftenfenster](../xml-tools/xml-document-properties-properties-window.md)  
-In diesem Abschnitt werden die grundlegenden verfügbaren Dokumentinformationen beschrieben.
-
-[Formatierung, XML, Texteditor, Dialogfeld "Optionen"](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
-In diesem Abschnitt werden die Einstellungen erläutert, mit deren Hilfe das Formatieren der Attribute, das Behandeln von gemischtem Inhalt und andere Vorgänge gesteuert werden.
-
-[XML-Schemata (Dialogfeld)](../xml-tools/xml-schemas-dialog-box.md)  
-In diesem Abschnitt wird das Auswählen der XML-Schemas erläutert, die dem XML-Dokument zugeordnet werden sollen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
@@ -39,4 +25,4 @@ In diesem Abschnitt wird das Auswählen der XML-Schemas erläutert, die dem XML-
 
 ## <a name="see-also"></a>Siehe auch
 
-[XML-Editor](../xml-tools/xml-editor.md)
+- [XML-Editor](../xml-tools/xml-editor.md)

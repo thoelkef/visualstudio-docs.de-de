@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox (Vorgängerversion)
-Bei einer Workflowprojektmappe mit der älteren Windows-Workflow-Designer mit der Zielversion von der [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], benutzerdefinierte Aktivitäten können hinzugefügt werden, dem Workflowprojekt und deren Designern platziert, der **Toolbox** für einfacher Zugriff. Sie können auch Aktivitäten direkt hinzufügen der **Toolbox** aus einer Dynamic Link Library (DLL).
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>So fügen Sie eine Aktivität aus einer DLL zur Toolbox hinzu
+Beim Erstellen einer Workflowprojektmappe mit der älteren Windows-Workflow-Designer, die .NET Framework, Version 3.5 oder die WinFX abzielt, können benutzerdefinierte Aktivitäten hinzugefügt werden, dem Workflowprojekt und deren Designern platziert, der **Toolbox** für einfacher Zugriff. Sie können auch Aktivitäten direkt hinzufügen der **Toolbox** aus einer Dynamic Link Library (DLL).
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>So fügen Sie eine Aktivität aus einer DLL zur Toolbox hinzu
 
 1.  Mit der rechten Maustaste der toolboxfensteroberfläche unter **Windows Workflow**, und klicken Sie dann auf **Elemente auswählen**.
 
