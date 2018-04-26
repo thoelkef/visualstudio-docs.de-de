@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)
-Nach der Erstellung eines Workflowprojekts mit älteren Windows Workflow-Designer von bereitgestellten [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] abzielt die [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder die [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], können Sie hinzufügen [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] -Elemente und andere vertraute [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Berichtselemente an Ihre Projekt.
 
- In der folgenden Tabelle werden die [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]-Elemente aufgeführt, die Sie einem Workflowprojekt hinzufügen können.
+Nachdem Sie ein Workflowprojekt mithilfe der Vorgängerversion, die Windows-Workflow-Designer von Visual Studio 2010 vorausgesetzt, die .NET Framework Version 3.5 oder die WinFX abzielt erstellt haben, können Sie Windows Workflow Foundation (WF)-Elemente und andere vertraute Visual Studio hinzufügen. Elemente, die Ihr Projekt.
+
+In der folgenden Tabelle werden die Windows Workflow Foundation-Elemente aufgeführt, die Sie einem Workflowprojekt hinzufügen können.
 
 |Element|Beschreibung|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Nach der Erstellung eines Workflowprojekts mit älteren Windows Workflow-Designe
 |Zustandsautomatenworkflow (Code)|Ein Zustandsautomatenworkflow mit der Workflowdefinition in einer Designercodedatei und Benutzercode in einer eigenen Codedatei.|
 |Zustandsautomatenworkflow (mit getrenntem Code)|Ein Zustandsautomatenworkflow mit der als Workflowmarkup ausgedrückten Workflowdefinition und Benutzercode in einer eigenen Codedatei.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>So fügen Sie ein neues Element zu einem Workflowprojekt hinzu
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>So fügen Sie ein neues Element zu einem Workflowprojekt hinzu
 
 1.  Auf der **Projekt** Menü klicken Sie auf **Hinzufügen eines neuen Elements**.
 

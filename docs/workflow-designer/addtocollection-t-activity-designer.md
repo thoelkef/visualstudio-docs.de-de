@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; Aktivitäts-Designer | Microsoft Docs
+title: Workflow-Designer - AddToCollection<T> Aktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Aktivitäts-Designer
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T >-Aktivitätsdesigners
+
 Die **AddToCollection\<T >** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.AddToCollection%601> Aktivität.
 
-## <a name="the-addtocollectiont-activity"></a>Die AddToCollection < T\> Aktivität
- Die <xref:System.Activities.Statements.AddToCollection%601>-Aktivität fügt einer Auflistung ein Element hinzu.
+## <a name="the-addtocollectiont-activity"></a>Die AddToCollection\<T >-Aktivität
+
+Die <xref:System.Activities.Statements.AddToCollection%601>-Aktivität fügt einer Auflistung ein Element hinzu.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Verwenden die AddToCollection\<T >-Aktivitätsdesigners
- Die **AddToCollection\<T >** Aktivitäts-Designer finden Sie in der **Auflistung** Kategorie von der **Toolbox**, indem Sie auf die zugegriffenwird **Toolbox** auf der Registerkarte die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)
 
- Die **AddToCollection\<T >** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.AddToCollection%601> -Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> von AddToCollection < Int32\>. (Standardmäßig der *TypeArgument* ist **Int32**. Dies kann im Eigenschaftenraster geändert werden.) Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **AddToCollection < T\>**  Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters. Die anderen Eigenschaften müssen im Eigenschaftenraster bearbeitet werden.
+Die **AddToCollection\<T >** Aktivitäts-Designer finden Sie in der **Auflistung** Kategorie von der **Toolbox**, indem Sie auf die zugegriffenwird **Toolbox** Registerkarte im Workflow-Designer (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>Die AddToCollection < T\> Eigenschaften
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.AddToCollection%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
+Die **AddToCollection\<T >** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht wird, wo Aktivitäten platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>. Löschen der **AddToCollection\<T >** Aktivitäts-Designer erstellt eine <xref:System.Activities.Statements.AddToCollection%601> -Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> von AddToCollection < Int32\>. (Standardmäßig der *TypeArgument* ist **Int32**. TypeArgument kann im Eigenschaftenraster geändert werden.) Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **AddToCollection < T\>**  Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters. Die anderen Eigenschaften müssen im Eigenschaftenraster bearbeitet werden.
+
+### <a name="the-addtocollectiont-properties"></a>Die AddToCollection\<T > Eigenschaften
+
+In der folgenden Tabelle werden die <xref:System.Activities.Statements.AddToCollection%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

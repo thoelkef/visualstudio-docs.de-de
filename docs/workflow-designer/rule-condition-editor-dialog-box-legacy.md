@@ -1,7 +1,9 @@
 ---
-title: Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion) | Microsoft Docs
+title: Workflow-Designer - Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f723894f175cbf031c3a2ac61ed9eaec8e1c94f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion)
 
-In diesem Thema wird beschrieben, wie die **Regelbedingungs-Editor** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
+In diesem Thema wird beschrieben, wie die **Regelbedingungs-Editor** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die legacy-Workflow-Designer, wenn Sie .NET Framework, Version 3.5 oder die WinFX abzielen möchten.
 
 Sie erstellen und ändern deklarative regelbedingungen mit dem **Regelbedingungs-Editor** (Dialogfeld). Diese Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten als Eigenschaften angegeben:
 

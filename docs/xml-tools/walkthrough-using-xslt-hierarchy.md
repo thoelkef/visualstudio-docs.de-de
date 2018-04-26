@@ -1,18 +1,17 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie | Microsoft Docs'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4259a06d79588983e3591510c40e119bc4fcb3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 
@@ -24,93 +23,93 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
 
 ## <a name="to-debug-in-a-referenced-style-sheet"></a>In einem referenzierten Stylesheet Debuggen
 
-1. Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.  
-  
+1. Öffnen Sie in Visual Studio ein XML-Dokument. Dieses Beispiel verwendet das folgende Dokument:
+
     ```xml
-    <?xml version="1.0" encoding="utf-8"?>  
-    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
-    <COLLECTION>  
-      <BOOK>  
-        <TITLE>Lover Birds</TITLE>  
-        <AUTHOR>Cynthia Randall</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>The Sundered Grail</TITLE>  
-        <AUTHOR>Eva Corets</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>Splish Splash</TITLE>  
-        <AUTHOR>Paula Thurman</AUTHOR>  
-        <PUBLISHER>Scootney</PUBLISHER>  
-      </BOOK>  
-    </COLLECTION>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>
+    <COLLECTION>
+      <BOOK>
+        <TITLE>Lover Birds</TITLE>
+        <AUTHOR>Cynthia Randall</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>The Sundered Grail</TITLE>
+        <AUTHOR>Eva Corets</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>Splish Splash</TITLE>
+        <AUTHOR>Paula Thurman</AUTHOR>
+        <PUBLISHER>Scootney</PUBLISHER>
+      </BOOK>
+    </COLLECTION>
     ```
 
 1. Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:
 
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-          xml:space="preserve">  
-  
-    <xsl:template match="TITLE">  
-       Title - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="AUTHOR">  
-       Author - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="PUBLISHER">  
-       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->  
-    </xsl:template>  
-  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xml:space="preserve">
+
+    <xsl:template match="TITLE">
+       Title - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="AUTHOR">
+       Author - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="PUBLISHER">
+       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->
+    </xsl:template>
+
+    </xsl:stylesheet>
     ```
-  
-3.  Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:  
-  
+
+3.  Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:
+
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-  
-      <xsl:output method="xml" omit-xml-declaration="yes"/>  
-  
-      <xsl:template match="/">  
-        <xsl:for-each select="COLLECTION/BOOK">  
-          <xsl:apply-templates select="TITLE"/>  
-          <xsl:apply-templates select="AUTHOR"/>  
-          <xsl:apply-templates select="PUBLISHER"/>  
-          <BR/>  
-          <!-- add this -->  
-        </xsl:for-each>  
-      </xsl:template>  
-  
-      <!-- The following template rule will not be called,  
-      because the related template in the including stylesheet  
-      is called. If we move this template so that  
-      it follows the xsl:include instruction, this one  
-      will be called instead.-->  
-      <xsl:template match="TITLE">  
-        <DIV STYLE="color:blue">  
-          Title: <xsl:value-of select="."/>  
-        </DIV>  
-      </xsl:template>  
-  
-      <xsl:include href="xslincludefile.xsl" />  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+      <xsl:output method="xml" omit-xml-declaration="yes"/>
+
+      <xsl:template match="/">
+        <xsl:for-each select="COLLECTION/BOOK">
+          <xsl:apply-templates select="TITLE"/>
+          <xsl:apply-templates select="AUTHOR"/>
+          <xsl:apply-templates select="PUBLISHER"/>
+          <BR/>
+          <!-- add this -->
+        </xsl:for-each>
+      </xsl:template>
+
+      <!-- The following template rule will not be called,
+      because the related template in the including stylesheet
+      is called. If we move this template so that
+      it follows the xsl:include instruction, this one
+      will be called instead.-->
+      <xsl:template match="TITLE">
+        <DIV STYLE="color:blue">
+          Title: <xsl:value-of select="."/>
+        </DIV>
+      </xsl:template>
+
+      <xsl:include href="xslincludefile.xsl" />
+    </xsl:stylesheet>
     ```
-  
+
 4.  Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
-  
-5.  Beginnen Sie mit dem Debuggen.  
-  
-6.  Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.  
-  
+
+5.  Beginnen Sie mit dem Debuggen.
+
+6.  Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)

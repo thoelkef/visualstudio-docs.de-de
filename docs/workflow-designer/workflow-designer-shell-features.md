@@ -1,7 +1,9 @@
 ---
-title: Workflow-Designer-Shellfunktionen | Microsoft Docs
+title: Workflow-Designer-Shellfunktionen
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow-Designer-Shellfunktionen
 
@@ -27,7 +29,7 @@ Windows Workflow-Designer besteht aus drei Hauptbereichen Benutzeroberfläche: d
  Die Übersichtskarte zeigt eine kleine Version der gesamten Aktivität des aktuellen Breadcrumb-Stamms an, einschließlich aller untergeordneten Elemente mit erweiterten untergeordneten Elementen. Der aktuell im Editor angezeigte Teil der Aktivität wird in einem Ansichtsfenster, einem Rechteck mit orangefarbenem Rahmen, hervorgehoben. Durch Ziehen des Rechtecks auf der Übersichtskarte können Sie im Workflow-Designer einen Bildlauf durchführen und die Ansicht des Editors ändern.
 
 > [!NOTE]
-> Die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Benutzeroberfläche ist virtualisiert. Die Aktivitätsdesigner werden nur nach Bedarf gerendert. Die Teile des Workflows, die auf der Designeroberfläche nicht gezeichnet wurden, werden in der Übersichtskarte weiß angezeigt. Um den Workflow vollständig zu zeichnen, führen Sie einen Bildlauf auf der Übersichtskarte durch.
+> Die Workflow-Designer-Benutzeroberfläche ist virtualisiert. Die Aktivitätsdesigner werden nur nach Bedarf gerendert. Die Teile des Workflows, die auf der Designeroberfläche nicht gezeichnet wurden, werden in der Übersichtskarte weiß angezeigt. Um den Workflow vollständig zu zeichnen, führen Sie einen Bildlauf auf der Übersichtskarte durch.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopieren und Speichern von Workflows als Bilder
  Workflows können im Bitmapformat kopiert und im Bitmap- oder Vektorformat gespeichert werden. Das Kopieren bzw. Speichern eines Bilds bietet die Möglichkeit, eine Ansicht der gesamten Aktivität des aktuellen Breadcrumb-Stamms in ein anderes Programm zu exportieren, einschließlich aller untergeordneten Elemente und zugehörigen erweiterten untergeordneten Elemente.
@@ -36,4 +38,4 @@ Windows Workflow-Designer besteht aus drei Hauptbereichen Benutzeroberfläche: d
 
 ## <a name="fonts-and-colors"></a>Schriftarten und Farben
 
-Die im [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] verwendeten Schriftarten hängen von der Umgebungsschriftart ab. Die Farben im [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ändern sich, wenn Sie in den Betriebssystemeinstellungen ein Farbschema mit hohem Kontrast wählen. Sie müssen [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] neu starten, nachdem Sie eine Änderung an den Schriftart- oder Farbeinstellungen vorgenommen haben, damit die Änderungen in den [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] übernommen werden.
+Die im Workflow-Designer in Visual Studio 2010 verwendeten Schriftarten werden von der Umgebungsschriftart gesteuert. Die Farben im Workflow-Designer ändern, wenn Sie ein Farbschema für hohen Kontrast für Ihr Design des Betriebssystems verwenden. Sie müssen Visual Studio 2010 neu starten, nachdem nur eine Änderung an den Schriftart- oder farbeinstellungen vorgenommen, damit die Änderungen im Workflow-Designer wirksam.

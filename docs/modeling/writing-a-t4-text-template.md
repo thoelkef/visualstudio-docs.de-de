@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e41ece25a3dbf3caec47f55c6eb8ec865805d17b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 303e7abfd2ea820de660ed70df915765f11b68a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. Die Vorlage eingefügt werden *Kontrollblöcke*, wobei es sich um Fragmente des Programmcodes. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
@@ -33,10 +34,10 @@ Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise e
 
  Wenn in den Beispielen in diesem Thema testen möchten, kopieren Sie sie in einer Vorlagendatei wie beschrieben in [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Nach dem Bearbeiten der Datei für Prozessvorlagen, speichern und untersuchen Sie die Ausgabe **".txt"** Datei.
 
-## <a name="directives"></a>Direktiven
+## <a name="directives"></a>Anweisungen
  Textvorlagendirektiven stellen allgemeine Anweisungen zum Generieren des Transformationscodes und der Ausgabedatei für das Textvorlagenmodul bereit.
 
- Die folgende Direktive gibt z. B. an, dass die Ausgabedatei die Erweiterung .txt haben soll:
+ Die folgende Anweisung gibt z. B. an, dass die Ausgabedatei die Erweiterung .txt haben soll:
 
 ```
 
@@ -276,4 +277,4 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
 |Generieren Sie Dateien in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Führen Sie die Textgenerierung außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aus.|[Generieren von Dateien mit dem Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
+|Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|

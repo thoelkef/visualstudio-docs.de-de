@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion)
-Führen Sie die folgenden Schritte aus, um ein [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Projekt zu erstellen, das auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt. Diese Prozedur verwendet die ältere Windows Workflow-Designer bereitgestellten [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
 
-### <a name="to-create-a-workflow-project"></a>So erstellen Sie ein Workflowprojekt
+Führen Sie diese Schritte aus, um ein Windows Workflow Foundation (WF)-Projekt erstellen, die auf .NET Framework, Version 3.5 oder die WinFX ausgerichtet ist. Diese Prozedur verwendet die älteren Windows-Workflow-Designer von Visual Studio 2010 bereitgestellt.
 
-1.  Starten Sie [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
+## <a name="to-create-a-workflow-project"></a>So erstellen Sie ein Workflowprojekt
+
+1.  Starten Sie Visual Studio.
 
 2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
@@ -31,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um ein [!INCLUDE[wf](../workflow-designe
 3.  Wählen Sie entweder die **.NET Framework 3.0** Option oder der **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.
 
     > [!NOTE]
-    > Die Standardoption in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.
+    > Ist die Standardoption in Visual Studio 2010 **.NET Framework 4**. Diese Option dient zum Erstellen von Windows Workflow Foundation (WF)-Anwendungen, die auf .NET Framework 4 abzielen, und es werden keine der Designer den Vorgängerversion verwendet.
 
 4.  In der **Projekttypen** Bereich auswählen, Visual C#-Projekte oder Visual Basic-Projekte, und wählen Sie dann **Workflow**.
 

@@ -1,7 +1,9 @@
 ---
-title: Send-Aktivitätsdesigner | Microsoft Docs
+title: Workflow-Designer - Send-Aktivitätsdesigners
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -10,30 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="send-activity-designer"></a>Send-Aktivitätsdesigner
 
 Die **senden** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Send> Aktivität.
 
 ## <a name="the-send-activity"></a>Die Send-Aktivität
+
  Eine <xref:System.ServiceModel.Activities.Send>-Aktivität wird verwendet, um eine Nachricht an einen Dienst zu senden. Eine <xref:System.ServiceModel.Activities.ReceiveReply>-Aktivität kann an eine <xref:System.ServiceModel.Activities.Send>-Aktivität gebunden werden, die eine Nachricht als Teil eines Anforderungs-/Antwort-Nachrichtenaustauschmusters auf dem Client empfängt.
 
 ### <a name="using-the-send-activity-designer"></a>Verwenden des Send-Aktivitätsdesigners
- Die **senden** Aktivitäts-Designer finden Sie in der **Messaging** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)
+ Die **senden** Aktivitäts-Designer finden Sie in der **Messaging** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte "im Workflow-Designer (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)
 
- Die **senden** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden. Daraufhin wird eine <xref:System.ServiceModel.Activities.Send>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert Send erstellt. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **senden** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
+ Die **senden** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht wird, wo Aktivitäten normalerweise platziert werden. Daraufhin wird eine <xref:System.ServiceModel.Activities.Send>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert Send erstellt. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **senden** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.
 
  Zum Erstellen einer <xref:System.ServiceModel.Activities.ReceiveReply> Aktivität und ihn mit dem ausgewählten <xref:System.ServiceModel.Activities.Send> Aktivität, mit der rechten Maustaste die **senden** Aktivität, und klicken Sie die **ReceiveReply erstellen** Element im Kontextmenü und die **ReceiveReplyForSend** Designer wird unterhalb der **senden** Designer. Die <xref:System.ServiceModel.Activities.ReceiveReply>-Aktivität ist eine Aktivität, die eine Nachricht als Teil eines Anforderungs-/Antwort-Nachrichtenaustauschmusters auf dem Client empfängt. Es kann konfiguriert werden, mit der **ReceiveReplyForSend** Designer.
 
  Alternativ können Sie die **SendAndReceiveReply** Dienstvorlagen-Designer in der **Messaging** Kategorie der **Toolbox** können verwendet werden, um ein paar vorkonfigurierter Erstellen<xref:System.ServiceModel.Activities.Send>und <xref:System.ServiceModel.Activities.ReceiveReply> Aktivitäten. Weitere Informationen zur Verwendung von der **SendAndReceiveReply** und **ReceiveReplyForSend** Vorlagen finden Sie unter der [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) Thema.
 
 ### <a name="the-send-activity-properties"></a>Die Eigenschaften der Send-Aktivität
- In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Send>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden.
+ In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Send>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf die Oberfläche des Workflow-Designer bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

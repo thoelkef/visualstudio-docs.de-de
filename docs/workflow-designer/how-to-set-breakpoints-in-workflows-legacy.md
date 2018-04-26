@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorgängerversion)
-In diesem Thema wird beschrieben, wie Festlegen von Haltepunkten [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Anwendungen zu erstellen, verwenden die älteren Windows-Workflow-Designer. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] verwenden, wenn Ihre [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]-Anwendungen auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen muss.
 
- Bei der Verwendung der Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] zum Erstellen einer [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]-Anwendung können Sie genau wie in Visual Studio Haltepunkte im C#- und Visual Basic-Code festlegen. Wie erwartet, hält die Workflowausführung an jedem festgelegten Haltepunkt an.
+Dieses Thema beschreibt, wie Haltepunkte festgelegt werden nach dem Erstellen von Anwendungen mit älteren Windows Workflow-Designer in Windows Workflow Foundation (WF). Verwenden Sie die legacy-Workflow-Designer aus, wenn die Windows Workflow Foundation-Anwendung .NET Framework, Version 3.5 oder die WinFX abzielen muss.
+
+ Wenn Sie die legacy-Workflow-Designer in Visual Studio 2010 verwenden, um einen Windows Workflow Foundation-Anwendung zu erstellen, können Sie Haltepunkte in c# und Visual Basic-Code festlegen, wie Sie in Visual Studio. Wie erwartet, hält die Workflowausführung an jedem festgelegten Haltepunkt an.
 
  Ein Haltepunkt verfügt über drei Zustände: *ausstehende*, *gebunden*, und *Fehler*. Wenn Sie einen Haltepunkt festlegen, erhält dieser den Status "Ausstehend". Dieser wird durch ein hohles rotes Symbol dargestellt. Wurde der Workflowtyp von der Laufzeit geladen, erhält dieser den Status "Gebunden", der mit einem ausgefüllten roten Symbol dargestellt wird. Geben Sie ein falsches Format für den Haltepunkt an, erscheint genau wie bei einem ungültigen Aktivitätsnamen eine Fehlermeldung. Der Haltepunkt wird immer noch dem Haltepunktfenster hinzugefügt, er wird jedoch mit einem kleinen "x" markiert.
 

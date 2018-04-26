@@ -1,7 +1,9 @@
 ---
-title: 'Vorgehensweise: erstellen eine deklarativen Regelbedingung (Vorgängerversion) | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: erstellen eine deklarativen Regelbedingung (Vorgängerversion)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
-In diesem Thema wird beschrieben, wie eine regelbedingung mithilfe der älteren Windows-Workflow-Designer deklariert wird, dessen Ziel die [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Eine bedingungsanweisung ergibt **"true"** oder **"false"**. Eine deklarative regelbedingung ist eine bedingungsanweisung, die erstellt wird die [Regelsatz Bedingung-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) und mit dem Workflow als XML gespeichert. Sie kann Prädikate beinhalten, mit denen Workflowstatus und boolesche Algebra verglichen werden, in der mehrere Prädikate kombiniert sind.
+In diesem Thema wird beschrieben, wie eine regelbedingung mithilfe der älteren Windows-Workflow-Designer mit der Zielversion .NET Framework, Version 3.5 oder die WinFX deklariert wird.
 
- Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:
+Eine bedingungsanweisung ergibt **"true"** oder **"false"**. Eine deklarative regelbedingung ist eine bedingungsanweisung, die erstellt wird die [Regelsatz Bedingung-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) und mit dem Workflow als XML gespeichert. Sie kann Prädikate beinhalten, mit denen Workflowstatus und boolesche Algebra verglichen werden, in der mehrere Prädikate kombiniert sind.
+
+Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ In diesem Thema wird beschrieben, wie eine regelbedingung mithilfe der älteren 
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor
 
 1.  In der Aktivitätssymbols **Eigenschaften** Fenster, klicken Sie auf die **Bedingung** Eigenschaft oder **UntilCondition** -Eigenschaft, abhängig von der Aktivität.
 

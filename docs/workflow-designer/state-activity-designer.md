@@ -1,7 +1,9 @@
 ---
-title: Status der Aktivitäts-Designer | Microsoft Docs
+title: Workflow-Designer - Zustandsaktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 117479e00c8b27617c33a2cce422afe5ab3124aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-activity-designer"></a>Zustandsaktivitäts-Designer
+
 <xref:System.Activities.Statements.State> stellt einen Zustand dar, in dem sich ein Zustandsautomat befinden kann.
 
 ## <a name="using-the-state-activity-designer"></a>Verwenden des Zustandsaktivitäts-Designers
- Hinzufügen einer <xref:System.Activities.Statements.State> für einen Workflow, ziehen Sie die **Status** Aktivitäts-Designer aus der **Zustandsautomat** im Abschnitt der **Toolbox** und legen ihn auf eine <xref:System.Activities.Statements.StateMachine> die Aktivität auf der Windows-Workflow-Designer-Oberfläche. Eine <xref:System.Activities.Statements.State>-Aktivität kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn die <xref:System.Activities.Statements.State>-Aktivität abgelegt wird. Hinzufügen einer <xref:System.Activities.Statements.State> Aktivität und einen Übergang zu erstellen, in einem Schritt, ziehen Sie eine **Status** Aktivität aus der **Zustandsautomat** im Abschnitt der **Toolbox** und zeigen sie auf eine andere Status des Workflow-Designers. Sobald sich der gezogene <xref:System.Activities.Statements.State> über einem anderen <xref:System.Activities.Statements.State> befindet, werden vier Dreiecke um den anderen <xref:System.Activities.Statements.State> herum eingeblendet. Wenn <xref:System.Activities.Statements.State> auf einem der vier Dreiecke abgelegt wird, wird er dem Zustandsautomaten hinzugefügt, und es wird ein Übergang vom Quell-<xref:System.Activities.Statements.State> zum abgelegten Ziel-<xref:System.Activities.Statements.State> erstellt. Weitere Informationen finden Sie unter [Übergang](../workflow-designer/transition-activity-designer.md).
+
+Hinzufügen einer <xref:System.Activities.Statements.State> für einen Workflow, ziehen Sie die **Status** Aktivitäts-Designer aus der **Zustandsautomat** im Abschnitt der **Toolbox** und legen ihn auf eine <xref:System.Activities.Statements.StateMachine> die Aktivität auf der Windows-Workflow-Designer-Oberfläche. Eine <xref:System.Activities.Statements.State>-Aktivität kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn die <xref:System.Activities.Statements.State>-Aktivität abgelegt wird. Hinzufügen einer <xref:System.Activities.Statements.State> Aktivität und einen Übergang zu erstellen, in einem Schritt, ziehen Sie eine **Status** Aktivität aus der **Zustandsautomat** im Abschnitt der **Toolbox** und zeigen sie auf eine andere Status des Workflow-Designers. Sobald sich der gezogene <xref:System.Activities.Statements.State> über einem anderen <xref:System.Activities.Statements.State> befindet, werden vier Dreiecke um den anderen <xref:System.Activities.Statements.State> herum eingeblendet. Wenn <xref:System.Activities.Statements.State> auf einem der vier Dreiecke abgelegt wird, wird er dem Zustandsautomaten hinzugefügt, und es wird ein Übergang vom Quell-<xref:System.Activities.Statements.State> zum abgelegten Ziel-<xref:System.Activities.Statements.State> erstellt. Weitere Informationen finden Sie unter [Übergang](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Zustandsaktivitätseigenschaften im Workflow-Designer
- In der folgenden Tabelle sind die <xref:System.Activities.Statements.State>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Einige dieser Eigenschaften können im Eigenschaftenraster und einige auf der Designeroberfläche bearbeitet werden.
+
+In der folgenden Tabelle sind die <xref:System.Activities.Statements.State>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Einige dieser Eigenschaften können im Eigenschaftenraster und einige auf der Designeroberfläche bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

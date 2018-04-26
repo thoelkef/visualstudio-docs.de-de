@@ -1,27 +1,29 @@
 ---
-title: 'Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek | Microsoft Docs'
+title: 'Workflow-Designer - Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek
-Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozesse in einem Workflow zu modellieren. Die Vorlage Aktivitätsbibliothek in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] wurde bereitgestellt, damit Sie solche benutzerdefinierten Aktivitäten visuell mithilfe der Windows-Workflow-Designer erstellen können.
+Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozesse in einem Workflow zu modellieren. Die Vorlage Aktivitätsbibliothek in Visual Studio 2010 wurde bereitgestellt, damit Sie solche benutzerdefinierten Aktivitäten visuell mithilfe der Windows-Workflow-Designer erstellen können.
 
 ### <a name="to-create-a-workflow-activity-library"></a>So erstellen Sie eine Workflowaktivitätsbibliothek
 
-1.  Starten Sie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Starten Sie Visual Studio 2010.
 
-2.  Auf der **Datei** Sie im Menü **neu**, und wählen Sie dann **Projekt...** .
+2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -36,7 +38,7 @@ Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozess
 7.  In der **Lösung** Feld, geben Sie einen beschreibenden Namen für die Projektmappe, und klicken Sie auf **OK**.
 
     > [!NOTE]
-    > Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], klicken Sie mit der mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, klicken Sie dann **Neues Projekt...** So öffnen die **neues Projekt** (Dialogfeld). Fahren Sie wie oben in dieser Prozedur beschrieben fort.
+    > Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in Visual Studio 2010, klicken Sie mit der mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, klicken Sie dann  **Neues Projekt** So öffnen die **neues Projekt** (Dialogfeld). Fahren Sie wie oben in dieser Prozedur beschrieben fort.
 
 8.  Die Projektvorlage erstellt eine Aktivitätsdefinition im XAML-Format. Windows Workflow-Designer wird geöffnet und zeigt den Zeichenbereich für die benutzerdefinierte Aktivität.
 
