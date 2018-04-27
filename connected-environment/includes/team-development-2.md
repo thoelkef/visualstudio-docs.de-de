@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/27/2018
+---
 2. Drücken Sie die Taste F5 (oder geben Sie `vsce up` im Terminalfenster ein), um den Dienst auszuführen. Dadurch wird er automatisch im neu ausgewählten Bereich `scott` ausgeführt. 
 1. Dies können Sie überprüfen, indem Sie `vsce list` erneut ausführen. Zuerst wird Ihnen auffallen, dass eine Instanz von `mywebapi` nun im Bereich `scott` ausgeführt wird (die Version, die in `mainline` ausgeführt wird, wird weiterhin ausgeführt, aber nicht aufgelistet). Außerdem wird der Zugriffspunkt-URL für `webfrontend` nun der Text „scott-“ vorangestellt. Diese URL ist für den Bereich `scott` eindeutig und gibt an, dass Anforderungen an die „Scott-URL“ zunächst versuchen, an den Bereich `scott` zu routen und dann auf die Dienste im Bereich `mainline` zurückfallen.
 
