@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 502bd8d206b43fc219c850ab870db35e6c3af1c0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="sign-in-to-azure"></a>Melden Sie sich bei Azure an.
 Sie müssen sich bei Azure anmelden, damit Sie Ihre Entwicklungsumgebung erstellen können. Geben Sie den folgenden Befehl in einem Terminalfenster ein:
 ```cmd

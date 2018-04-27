@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>Initialisieren von Code für die Entwicklung in Docker und Kubernetes
 Bisher haben Sie eine einfache Web-App erstellt, die lokal ausgeführt werden kann. Im Folgenden containerisieren Sie diese App, indem Sie Objekte erstellen, die den Container der App und die Art und Weise definieren, wie sie auf Kubernetes bereitgestellt wird. Das ist mit Connected Environment einfach: 
 
