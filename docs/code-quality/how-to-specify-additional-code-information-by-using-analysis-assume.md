@@ -1,39 +1,39 @@
 ---
-title: 'Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume'
+title: 'Vorgehensweise: Angeben zusätzlicher Codeinformationen mit _Analysis_assume'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
-- __analysis_assume
+- _Analysis_assume
 helpviewer_keywords:
-- __analysis_assume
+- _Analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 181f9fb4a1f9f5d653d64fb813b974bad898fe13
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit _Analysis_assume
 Sie können Hinweise an, die das Codeanalysetool für C/C++-Code bereitstellen, die denen des Analysevorgangs und Warnungen zu reduzieren. Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:
 
- `__analysis_assume(`  `expr`  `)`
+ `_Analysis_assume(`  `expr`  `)`
 
  `expr` -Ein Ausdruck, der davon ausgegangen, dass wird "Wahr" ausgewertet.
 
  Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable, Zeitpunkt "true" ist.
 
 > [!NOTE]
->  `__analysis_assume` Code-Optimierung hat keine Auswirkungen. Außerhalb der Codeanalysetool `__analysis_assume` als ein ohne-Op definiert ist.
+>  `_Analysis_assume` Code-Optimierung hat keine Auswirkungen. Außerhalb der Codeanalysetool `_Analysis_assume` als ein ohne-Op definiert ist.
 
 ## <a name="example"></a>Beispiel
- Der folgende code verwendet `__analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):
+ Der folgende code verwendet `_Analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>
@@ -51,7 +51,7 @@ void test( )
 {
   char *pc = (char*)malloc(5);
   FreeAndNull(pc);
-  __analysis_assume(pc == NULL);
+  _Analysis_assume(pc == NULL);
   f(pc);
 }
 ```
