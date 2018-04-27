@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
@@ -30,7 +30,7 @@ Eincheckrichtlinien für die Analyse in den teamprojekteinstellungen festgelegt 
 
 - Für verwalteten Code, Sie der Eincheckrichtlinie festgelegt, indem eine *Regelsatz* , die eine Teilmenge der Codeanalyseregeln enthält.
 
-- Für C/C++-Code erfordert die Eincheckrichtlinie an, dass alle Codeanalyseregeln ausgeführt werden. Sie können die Präprozessordirektiven deaktivieren bestimmte Regeln für die einzelnen Codeprojekte in Ihrem Teamprojekt hinzufügen.
+- Für C/C++-Code in Visual Studio 2017 Version 15.6 und früher erfordert der Eincheckrichtlinie an, dass alle Codeanalyseregeln ausgeführt werden. Sie können die Präprozessordirektiven deaktivieren bestimmte Regeln für die einzelnen Codeprojekte in Ihrem Teamprojekt hinzufügen. In 15.7 und höher können Sie **/ analyze: Ruleset** an, welche Regeln ausgeführt. Weitere Informationen finden Sie unter [Regelsätze verwenden, an die C++-Regeln für die Ausführung](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Nachdem Sie eine Eincheckrichtlinie für verwalteten Code angeben, können Teammitglieder ihre codeanalyseeinstellungen für Codeprojekte an den Richtlinieneinstellungen des Team-Projekt synchronisieren.
 

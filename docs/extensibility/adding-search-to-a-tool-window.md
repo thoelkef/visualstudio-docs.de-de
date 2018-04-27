@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b89cbaa1afa4fd961baf139eeebcff19c8d48f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3b5aa52968be5a2efcf88d7a31505d94f97aaec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="adding-search-to-a-tool-window"></a>Hinzufügen von Suche zu einem Toolfenster
 Beim Erstellen oder aktualisieren ein Toolfenster in der Erweiterung können Sie die gleiche Suche-Funktionalität, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:  
@@ -78,37 +78,6 @@ Beim Erstellen oder aktualisieren ein Toolfenster in der Erweiterung können Sie
      In der **TestSearchControl** Klasse, fügen Sie den folgenden Code hinzu.  
   
      Dieser Code Fügt einen öffentlichen <xref:System.Windows.Controls.TextBox> Eigenschaft mit dem Namen **SearchResultsTextBox** und eine öffentliche Eigenschaft mit dem Namen **SearchContent**. Im Konstruktor SearchResultsTextBox in das Textfeld festgelegt ist, und SearchContent wird initialisiert, um einen Zeilenumbruch getrennten Satz von Zeichenfolgen. Der Inhalt des Textfelds wird auch auf den Satz von Zeichenfolgen initialisiert.  
-  
-    ```csharp  
-    public partial class TestSearchControl : UserControl  
-    {  
-        public TextBox SearchResultsTextBox { get; set; }  
-        public string SearchContent { get; set; }  
-  
-        public TestSearchControl()  
-        {  
-            InitializeComponent();  
-  
-            this.SearchResultsTextBox = resultsTextBox;  
-            this.SearchContent = BuildContent();  
-  
-            this.SearchResultsTextBox.Text = this.SearchContent;  
-        }  
-  
-        private string BuildContent()  
-        {  
-            StringBuilder sb = new StringBuilder();  
-            sb.AppendLine("1 go");  
-            sb.AppendLine("2 good");  
-            sb.AppendLine("3 Go");  
-            sb.AppendLine("4 Good");  
-            sb.AppendLine("5 goodbye");  
-            sb.AppendLine("6 Goodbye");  
-  
-            return sb.ToString();  
-        }  
-    }  
-    ```  
   
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]  
@@ -312,7 +281,7 @@ Beim Erstellen oder aktualisieren ein Toolfenster in der Erweiterung können Sie
     System.Threading.Thread.Sleep(100);  
     ```  
   
-5.  Beim erneuten Erstellen der Projektmappe und deren Debugb, um die neuen Einstellungen zu testen.  
+5.  Testen Sie die neuen Einstellungen, indem beim erneuten Erstellen der Projektmappe und Debuggen.  
   
      Die Statusanzeige wird angezeigt, in das Fenster "Suche" (als blaue Linie unterhalb des Textfelds Suche) jedes Mal, dass Sie eine Suche durchzuführen.  
   
@@ -353,39 +322,11 @@ Beim Erstellen oder aktualisieren ein Toolfenster in der Erweiterung können Sie
     }  
     ```  
   
-2.  In der `TestSearchTask` -Klasse, kommentieren Sie MatchCase Zeile in der `OnStartSearch` Methode:  
+2.  In der `TestSearchTask` Klasse, kommentieren Sie die folgende Zeile in der `OnStartSearch` Methode:  
   
-    ```csharp  
-    private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
-    {  
-        get  
-        {  
-            if (m_optionsEnum == null)  
-            {  
-                List<IVsWindowSearchOption> list = new List<IVsWindowSearchOption>();  
-  
-                list.Add(this.MatchCaseOption);  
-  
-                m_optionsEnum = new WindowSearchOptionEnumerator(list) as IVsEnumWindowSearchOptions;  
-            }  
-            return m_optionsEnum;  
-        }  
-    }  
-  
-    private WindowSearchBooleanOption m_matchCaseOption;  
-    public WindowSearchBooleanOption MatchCaseOption  
-    {  
-        get  
-         {  
-            if (m_matchCaseOption == null)  
-            {  
-                m_matchCaseOption = new WindowSearchBooleanOption("Match case", "Match case", false);  
-            }  
-            return m_matchCaseOption;  
-        }  
-    }  
-    ```  
+    ```csharp
+    matchCase = m_toolWindow.MatchCaseOption.Value;
+    ```
   
 3.  Testen Sie die Option:  
   
