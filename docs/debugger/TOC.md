@@ -295,6 +295,7 @@
 #### [Anfügen an den Prozess nicht möglich](unable-to-attach-to-the-process.md)
 #### [Fehlermeldungs-Dialogfeld für "Bearbeiten und Fortfahren"](edit-and-continue-error-message-dialog-box.md)
 #### [Fehler: Beim Auswerten der Funktion 'Funktion' ist ein Timeout aufgetreten, weshalb ein Abbruch auf unsichere Weise erfolgt ist](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Fehler: Der Zielprozess, der mit dem Code 'code' beendet wurde, während er die Funktion 'funktion' ausgeführt hat](error-evaluating-the-function-process-exited.md)
 #### [Fehler: Mit dem SQL-Server auf dem Remotecomputer konnte keine Verbindung hergestellt werden](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Fehler: SSDEBUGPS wurde von SQL nicht gefunden](error-sql-can-t-find-ssdebugps.md)
