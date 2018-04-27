@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 78de57178350d4317896c41a455efbeeb553c58d
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="install-the-connected-environment-cli"></a>Installieren der CLI für Connected Environment
 Connected Environment erfordert eine minimale Einrichtung auf lokalen Computern. Der Großteil der Konfigurierung Ihrer Entwicklungsumgebung wird in der Cloud gespeichert und kann für andere Benutzer freigegeben werden.
 

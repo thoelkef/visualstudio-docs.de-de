@@ -1,10 +1,18 @@
+---
+ms.topic: include
+ms.openlocfilehash: 30d3f9da291feb52674937d4b2f1b86f3efd0386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/27/2018
+---
 Bisher haben Sie den Code der Anwendung ausgeführt, als wären Sie der einzige Entwickler, der an der App arbeitet. In diesem Abschnitt erfahren Sie, wie die Entwicklung im Team durch Connected Environment optimiert wird:
 * Entwicklerteams können zusammen in einer Entwicklungsumgebung arbeiten.
 * Jeder Entwickler kann seinen Code separat durchlaufen, ohne befürchten zu müssen, dass er den Code von jemand anderem beschädigt.
 * Code kann mithilfe von End-to-End-Tests vor dem Committen des Codes überprüft werden, ohne dass Abhängigkeiten imitiert oder simuliert werden müssen.
 
 ## <a name="challenges-with-developing-microservices"></a>Herausforderungen bei der Entwicklung von Microservices
-Momentan ist die Beispielanwendung nicht sehr komplex. Bei der tatsächlichen Entwicklung entstehen allerdings schnell Probleme, wenn weitere Dienste hinzugefügt werden und das Entwicklungsteam wächst.
+Momentan ist die Beispielanwendung nicht sehr komplex. Bei der tatsächlichen Entwicklung entstehen allerdings schnell Probleme, wenn weitere Dienste hinzugefügt werden und das Entwicklerteam wächst.
 
 Angenommen, Sie arbeiten an einem Dienst, der mit Dutzenden anderen Diensten interagiert.
 
@@ -17,10 +25,10 @@ Angenommen, Sie arbeiten an einem Dienst, der mit Dutzenden anderen Diensten int
 
 
 ## <a name="work-in-a-shared-development-environment"></a>Arbeiten in einer freigegebenen Entwicklungsumgebung
-Mit Connected Environment können Sie eine *freigegebene* Entwicklungsumgebung in Azure einrichten. Jeder Entwickler kann sich auf seinen Teil der Anwendung konzentrieren und *Code vor dem Committen* in einer Umgebung iterativ entwickeln, die alle anderen Dienste und Cloudressourcen bereits enthält, von denen ihre Szenarios abhängig sind. Abhängigkeiten sind immer auf dem neuesten Stand, und die Entwickler arbeiten auf eine Weise, die der Produktion ähnelt.
+Mit Connected Environment können Sie eine *freigegebene* Entwicklungsumgebung in Azure einrichten. Jeder Entwickler kann sich auf seinen Teil der Anwendung konzentrieren und *Code vor dem Committen* in einer Umgebung iterativ entwickeln, die alle anderen Dienste und Cloudressourcen bereits enthält, von denen ihre Szenarios abhängig sind. Abhängigkeiten sind immer aktuell, und die Entwickler arbeiten auf eine Weise, die der Produktion ähnelt.
 
 ## <a name="work-in-your-own-space"></a>Arbeiten in Ihrem eigenen Bereich
-Wenn Sie Code für Ihren Dienst entwickeln, befindet sich dieser die meiste Zeit nicht in einem fehlerfreien Zustand, bevor Sie ihn einchecken. Das Formen, Testen, und Experimentieren mit Projektmappen trägt mit jedem Schritt weiterhin zur Entwicklung Ihres Codes bei. Connected Environment stellt das Konzept eines **Bereichs** bereit, das Ihnen ermöglicht, isoliert zu arbeiten, ohne den Bereich Ihrer Teammitglieder zu beeinträchtigen.
+Wenn Sie Code für Ihren Dienst entwickeln, befindet sich dieser die meiste Zeit nicht in einem fehlerfreien Zustand, bevor Sie ihn einchecken. Das Formen, Testen, und Experimentieren mit Projektmappen trägt iterativ weiterhin zur Entwicklung Ihres Codes bei. Connected Environment stellt das Konzept eines **Bereichs** bereit, das Ihnen ermöglicht, isoliert zu arbeiten, ohne den Bereich Ihrer Teammitglieder zu beeinträchtigen.
 
 > [!Note]
 > Schließen Sie alle Fenster von Visual Studio Code für beide Dienste, und führen Sie dann `vsce up -d` in jedem Stammordner des Diensts aus, bevor Sie fortfahren. (Dies ist eine Einschränkung der Vorschauversion.)
