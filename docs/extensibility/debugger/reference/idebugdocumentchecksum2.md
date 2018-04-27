@@ -29,7 +29,7 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle kann von keiner Komponente, die verfügbar macht implementiert werden die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. Allerdings ist es hauptsächlich durch Debugmodule implementiert, damit die Prüfsumme, eingebettet in eine Symboldatei (.pdb) wieder an der IDE übergeben und beim Suchen einer Quelle verwendet werden kann.  
+ Diese Schnittstelle kann von keiner Komponente, die verfügbar macht implementiert werden die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. Allerdings ist es hauptsächlich durch Debugmodule implementiert, damit die Prüfsumme, eingebettet in eine Symboldatei (*.pdb) wieder an der IDE übergeben und beim Suchen einer Quelle verwendet werden kann.  
   
 ## <a name="methods"></a>Methoden  
  Die folgende Tabelle zeigt die Methoden der `IDebugDocumentChecksum2`.  
