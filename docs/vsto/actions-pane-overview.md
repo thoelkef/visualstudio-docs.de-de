@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="actions-pane-overview"></a>Aktionsbereichsübersicht
-  Ein Aktionsbereich ist ein anpassbarer **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe angefügt ist. Es gehostet wird in den Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen wie dem **XML-Quelle** Aufgabenbereich in Excel oder den **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.  
+  Ein Aktionsbereich ist ein anpassbarer **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe angefügt ist. Aktionsbereich im Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen gehostet wird z. B. die **XML-Quelle** Aufgabenbereich in Excel oder den **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Der Aktionsbereich unterscheidet sich von benutzerdefinierten Aufgabenbereichen. Benutzerdefinierte Aufgabenbereiche sind der Anwendung und keinem bestimmten Dokument zugeordnet. Sie können benutzerdefinierte Aufgabenbereiche in VSTO-Add-Ins für einige Microsoft Office-Anwendungen erstellen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
 
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen I: verwenden WPF-Steuerelemente in einem Excel-Aktionsbereich?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen I: verwenden WPF-Steuerelemente in einem Excel-Aktionsbereich?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="displaying-the-actions-pane"></a>Anzeigen des Aktionsbereichs  
  Der Aktionsbereich wird durch die <xref:Microsoft.Office.Tools.ActionsPane>-Klasse dargestellt. Wenn Sie ein Projekt auf Dokumentebene erstellen, machen Sie eine Instanz dieser Klasse für Ihren Code verfügbar, indem Sie das `ActionsPane`-Feld der `ThisWorkbook`-Klasse (für Excel) oder der `ThisDocument`-Klasse (für Word) im Projekt verwenden. Um den Aktionsbereich anzuzeigen, fügen Sie der <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>-Eigenschaft des `ActionsPane`-Felds ein Windows Forms-Steuerelement hinzu. Durch das folgende Codebeispiel wird dem Aktionsbereich ein Steuerelement namens `actions` hinzugefügt.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
  Der Aktionsbereich wird zur Laufzeit sichtbar, sobald Sie ihm explizit ein Steuerelement hinzufügen. Sobald der Aktionsbereich angezeigt wird, können Sie dynamisch Steuerelemente in Reaktion auf Benutzeraktionen dynamisch hinzufügen oder entfernen. Normalerweise fügen Sie den Code hinzu, um den Aktionsbereich im `Startup`-Ereignishandler von `ThisDocument` oder `ThisWorkbook` anzuzeigen, damit der Aktionsbereich sichtbar ist, wenn der Benutzer das Dokument erstmalig öffnet. Sie können den Aktionsbereich jedoch auch ausschließlich als Reaktion auf eine Benutzeraktion im Dokument anzeigen. Sie können den Code beispielsweise zum `Click`-Ereignis eines Steuerelements im Dokument hinzufügen.  
 
 ### <a name="adding-multiple-controls-to-the-actions-pane"></a>Hinzufügen mehrerer Steuerelemente im Aktionsbereich  
- Wenn Sie mehrere Steuerelemente zum Aktionsbereich hinzufügen, sollten Sie die Steuerelemente in den meisten Fällen in einem Benutzersteuerelement gruppieren und das Benutzersteuerelement dann der <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>-Eigenschaft hinzufügen. Dieser Vorgang umfasst die folgenden Schritte:  
+ Wenn Sie mehrere Steuerelemente zum Aktionsbereich hinzufügen, sollten Sie die Steuerelemente in einem Benutzersteuerelement gruppieren und fügen Sie dann auf das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft. Dieser Vorgang umfasst die folgenden Schritte:  
 
 1.  Erstellen Sie die Benutzeroberfläche (UI) des Aktionsbereichs, indem ein **Aktionsbereich-Steuerelement** oder **Benutzersteuerelement** Element aus, um das Projekt. Beide Elemente umfassen eine benutzerdefinierte Windows Forms-<xref:System.Windows.Forms.UserControl>-Klasse. Die **Aktionsbereich-Steuerelement** und **Benutzersteuerelement** sind gleich; der einzige Unterschied ist, deren Namen.  
 
@@ -79,12 +79,12 @@ ms.lasthandoff: 04/27/2018
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
 ### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Löschen des Aktionsbereichs beim Öffnen des Dokuments  
- Wenn der Benutzer das Dokument speichert, während der Aktionsbereich angezeigt wird, ist der Aktionsbereich bei jedem Öffnen des Dokuments sichtbar, und zwar unabhängig davon, ob der Aktionsbereich Steuerelemente enthält oder nicht. Wenn Sie die Anzeige steuern möchten, rufen Sie die <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A>-Methode des `ActionsPane`-Felds im `Startup`-Ereignishandler von `ThisDocument` oder `ThisWorkbook` ab, um sicherzustellen, dass der Aktionsbereich beim Öffnen des Dokuments nicht sichtbar ist.  
+ Wenn ein Benutzer das Dokument speichert, während der Aktionsbereich sichtbar ist, ist der Aktionsbereich sichtbar jedes Mal, wenn das Dokument geöffnet ist, unabhängig davon, ob der Aktionsbereich Steuerelemente enthält. Wenn Sie die Anzeige steuern möchten, rufen Sie die <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A>-Methode des `ActionsPane`-Felds im `Startup`-Ereignishandler von `ThisDocument` oder `ThisWorkbook` ab, um sicherzustellen, dass der Aktionsbereich beim Öffnen des Dokuments nicht sichtbar ist.  
 
 ### <a name="determining-when-the-actions-pane-is-closed"></a>Festlegen, wann der Aktionsbereich geschlossen wird  
  Es gibt kein Ereignis, das beim Schließen des Aktionsbereichs ausgelöst wird. Obwohl die <xref:Microsoft.Office.Tools.ActionsPane>-Klasse über ein <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>-Ereignis verfügt, wird dieses Ereignis nicht ausgelöst, wenn der Endbenutzer den Aktionsbereich schließt. Stattdessen dieses Ereignis wird ausgelöst, wenn die Steuerelemente im Aktionsbereich, durch Aufrufen ausgeblendet sind der <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> Methode oder durch Festlegen der <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> Eigenschaft **"false"**.  
 
- Wenn der Endbenutzer den Aktionsbereich schließt, kann der Benutzer ihn erneut anzeigen, indem er eines der folgenden Verfahren in der Benutzeroberfläche (UI) der Anwendung ausführt.  
+ Wenn der Benutzer über den Aktionsbereich schließt, kann der Benutzer erneut anzeigen, indem eine der folgenden Verfahren in der Benutzeroberfläche (UI) der Anwendung ausführen.  
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>So zeigen Sie den Aktionsbereich mithilfe der Benutzeroberfläche von Word oder Excel an  
 
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="resizing-the-actions-pane"></a>Ändern der Größe des Aktionsbereichs  
  Sie können die Größe von <xref:Microsoft.Office.Tools.ActionsPane> nicht direkt ändern, weil <xref:Microsoft.Office.Tools.ActionsPane> in den Aufgabenbereich eingebettet ist. Sie können die Breite des Aufgabenbereichs jedoch programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Core.CommandBar.Width%2A>-Eigenschaft der <xref:Microsoft.Office.Core.CommandBar> festlegen, die den Aufgabenbereich darstellt. Sie können die Höhe des Aufgabenbereichs ändern, falls er horizontal angedockt oder unverankert ist.  
 
- Das programmgesteuerte Ändern der Größe des Aufgabenbereichs wird im Allgemeinen nicht empfohlen, da der Benutzer in der Lage sein sollte, die Größe des Aufgabenbereichs gemäß seinen individuellen Anforderungen auszuwählen. Wenn Sie die Breite des Aufgabenbereichs jedoch ändern müssen, können Sie für diese Aufgabe den folgenden Code verwenden.  
+ Programmgesteuerte Ändern der Größe des Aufgabenbereichs wird nicht empfohlen, da der Benutzer sein, sollte die Größe des Aufgabenbereichs auswählen, die ihren Anforderungen am besten entspricht. Wenn Sie die Breite des Aufgabenbereichs jedoch ändern müssen, können Sie für diese Aufgabe den folgenden Code verwenden.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
@@ -145,7 +145,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Endbenutzer können den Aufgabenbereich jederzeit manuell neu positionieren. Es gibt keine Möglichkeit sicherzustellen, dass der Aufgabenbereich an der Position angedockt bleibt, die Sie programmgesteuert festlegen. Allerdings können Sie Änderungen in Bezug auf die Ausrichtung suchen und sicherstellen, dass die Steuerelemente im Aktionsbereich in der richtigen Richtung gestapelt sind. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
 
- Durch das Festlegen der <xref:Microsoft.Office.Tools.ActionsPane.Top%2A>-Eigenschaft und der <xref:Microsoft.Office.Tools.ActionsPane.Left%2A>-Eigenschaft von <xref:Microsoft.Office.Tools.ActionsPane> wird dessen Position nicht geändert, da das <xref:Microsoft.Office.Tools.ActionsPane>-Objekt in den Aufgabenbereich eingebettet ist.  
+ Festlegen der <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> und <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> Eigenschaften der <xref:Microsoft.Office.Tools.ActionsPane> dessen Position nicht geändert werden, da die <xref:Microsoft.Office.Tools.ActionsPane> -Objekt in den Aufgabenbereich eingebettet ist.  
 
  Wenn der Aufgabenbereich nicht angedockt ist, können Sie die <xref:Microsoft.Office.Core.CommandBar.Top%2A>-Eigenschaft und die <xref:Microsoft.Office.Core.CommandBar.Left%2A>-Eigenschaft von <xref:Microsoft.Office.Core.CommandBar> festlegen, der den Aufgabenbereich darstellt. Durch den folgenden Code wird ein nicht angedockter Aufgabenbereich in die obere linke Ecke des Dokuments verschoben.  
 
