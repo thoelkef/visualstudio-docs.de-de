@@ -1,19 +1,19 @@
 ---
 title: VSTS-Vorteile für Visual Studio-Abonnenten | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Sie Visual Studio Team Services (VSTS) als Visual Studio-Abonnent verwenden können.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio Team Services-Vorteile (VSTS) für Visual Studio-Abonnenten
 
@@ -26,12 +26,14 @@ Es wird automatisch erkannt, ob Sie sich bei VSTS mit der Identität anmelden, d
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud, monatliche Cloud)   | VL, Azure, Retail, MPN, BizSpark, NFR<sup>1</sup>, FTE  | Basic, Test-Manager, Paketverwaltung, selbstgehostete CI/CD       |  Ja          |
-| Visual Studio Professional (Standard, jährliche Cloud, monatliche Cloud) | VL, Azure, Retail                                       | Standard                                                            |  Ja          |
+| Visual Studio Enterprise (Standard, jährliche Cloud, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Basic, Test-Manager, Paketverwaltung, selbstgehostete CI/CD       |  Ja          |
+| Visual Studio Professional (Standard, jährliche Cloud, monatliche Cloud) | VL, Azure, Retail,                                        | Standard                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Basic, Test-Manager                                              |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Basic, Test-Manager                                              |  Ja          |
 
-<sup>1</sup> *Umfasst Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*
+<sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services (Developer). Umfasst nicht: MCT Software & Services, Imagine.*
+
+
 
 Weitere Informationen zu den VSTS-Features:
 - [Standard](https://www.visualstudio.com/team-services/compare-features/)

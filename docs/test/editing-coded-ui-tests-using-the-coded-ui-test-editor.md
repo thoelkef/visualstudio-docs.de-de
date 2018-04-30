@@ -2,21 +2,21 @@
 title: Bearbeiten von Tests der programmierten UI in Visual Studio| Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der codierten UI mithilfe des Test-Editors für codierte UI
 Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten von Eigenschaften der Testmethoden und UI-Aktionen. Darüber hinaus können Sie mit der UI-Steuerelementzuordnung die entsprechenden Steuerelemente anzeigen und bearbeiten.
@@ -71,7 +71,7 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
  Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.
 
- Wenn ein Server beispielsweise nicht verfügbar ist und Sie über eine UI-Aktion **Zur Webseite http://Contoso1/default.aspx wechseln** verfügen, die Ihrem Webbrowser zugeordnet ist, können Sie die URL in `'http://Contoso2/default.aspx'` ändern.
+ Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite http://Contoso1/default.aspx wechseln** vorhanden ist, können Sie die URL in `'http://Contoso2/default.aspx'` ändern.
 
  ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 
@@ -140,7 +140,7 @@ Möglicherweise verwenden Sie eine Version von Visual Studio Enterprise, die äl
 
 Wenn Sie die Verschiebung rückgängig machen möchten, wählen Sie **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.
 
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test
+##  <a name="CodedUITestEditor_LocateUIControl"></a> Suchen eines UI-Steuerelements in der getesteten Anwendung
  Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Mit der Funktion **UI-Steuerelemente suchen** in der getesteten Anwendung können auch Änderungen der Sucheigenschaften überprüft werden, die an einem Steuerelement vorgenommen wurden.
 
  ![UI-Steuerelement suchen](../test/media/codeduilocatecontrol.png "CodedUILocateControl")

@@ -1,57 +1,32 @@
 ---
-title: "Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements | Microsoft-Dokumentation"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 11/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Office 365 Developer benefit included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 24d43f71aec3be05809fe79085cd7710f47f99ca
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements | Microsoft-Dokumentation
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 11/12/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, die in Ihrem Visual Studio-Abonnement enthalten sind.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
-## <a name="overview"></a>Übersicht
-
 Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die Office 365-Abonnementvorteile für Entwickler.  Mit dem Office 365-Entwicklerabonnement können Sie Add-Ins für Microsoft Office und Microsoft SharePoint entwickeln, testen und bereitstellen.  Dieser Vorteil gilt für einen Mandanten und bis zu 25 Benutzer.
-
-## <a name="eligibility"></a>Berechtigung
-| Abonnementstufe/Programm                                                  | Vorteil               | Erneuerbar?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Included              |  Ja                                                               |
-| Visual Studio Enterprise – Jahresabonnement                                               | Included              |  Ja                                                               |
-| Visual Studio Enterprise – Monatsabonnement                                              | Nicht verfügbar         |                                                                    |
-| Visual Studio Professional Standard                                           | Nicht verfügbar         |                                                                    |
-| Visual Studio Professional – Jahresabonnement                                             | Nicht verfügbar         |                                                                    | 
-| Visual Studio Professional – Monatsabonnement                                            | Nicht verfügbar         |                                                                    |
-| Visual Studio Test Pro                                                        | Nicht verfügbar         |                                                                    |
-| MSDN Platforms                                                                | Nicht verfügbar         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Included              |  Ja                                                               |
-| Visual Studio Enterprise – FTE                                                | Included              |  Ja                                                               |
-| Visual Studio Enterprise – Microsoft Partner Network                          | Nicht verfügbar         |                                                                    |
-| Visual Studio Professional – Microsoft Partner Network                        | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Included              |  Ja                                                               |
-| Microsoft Certified Trainer – Software & Dienste                             | Included              |  Ja                                                               |
-| Microsoft Certified Trainer – Software & Dienste für Entwickler                   | Included              |  Ja                                                               |
-
-<sup>1</sup> *Umfasst Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
-
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Website [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
-1. Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), um sich beim Abonnentenportal anzumelden.
+1. Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), um sich im Abonnentenportal anzumelden.
+
 2. Je nach Konto werden Sie entweder auf die Anmeldeseite Ihrer Organisation oder die Anmeldeseite für Ihr Microsoft-Konto weitergeleitet.   Geben Sie in beiden Fällen Ihren Benutzernamen und Ihr Kennwort ein, und klicken Sie auf **Weiter**.
+
 3. Sobald der Anmeldevorgang abgeschlossen ist, sollte die Seite mit den Abonnementvorteilen angezeigt werden.  Wenn Sie über mehrere Abonnements verfügen, können Sie dazwischen wechseln, indem Sie auf den Dropdownpfeil in der oberen rechten Ecke unterhalb des schwarzen Menübands klicken.  Die Kachel „Vorteile“ für das Office 365-Entwicklerabonnement finden Sie in der Kategorie „Tools“ (Extras).  Verwenden Sie den Pfeil rechts neben der Zeile mit den Kacheln, und scrollen Sie zur Kachel „Office“. 
+
 4. Suchen Sie im Abschnitt „Tools“ nach der Kachel für das Office 365-Entwicklerabonnement.  Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Wenn der Code abgerufen wurde, klicken Sie auf **Aktivieren**. 
 
     ![Kachel „Vorteile“ für Office 365 für Entwickler](_img\vs-office-dev\vs-office-dev-tile.png)
@@ -60,17 +35,13 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Webs
 
     ![Office 365-Vorteil für Entwickler: Konto](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-
 6.  Stellen Sie die angeforderten Information zur Verwendung des Abonnements bereit, und klicken Sie auf **Weiter**.  Diese Angaben werden verwendet, um die Verfügbarkeit des Abonnements und die Höhe von möglicherweise anfallenden Steuern zu prüfen.  
 
     ![Office 365-Vorteil für Entwickler: Kontaktinformationen](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-
-
 7.  Erstellen Sie einen Benutzernamen und ein Kennwort für Ihr Konto.  
 
     ![Office 365-Vorteil für Entwickler: Benutzername](_img\vs-office-dev\vs-office-dev-username-cropped.png)
-
 
 8.  Geben Sie eine Telefonnummer an, und wählen Sie aus, ob Sie den Bestätigungscode über einen Anruf oder per SMS erhalten möchten.  So wird sichergestellt, dass das Konto von einer echten Person erstellt wird. Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter**.
 
@@ -82,22 +53,36 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Webs
 
 11. Sobald Sie Schritt 3 abgeschlossen haben, werden Sie aufgefordert, eine Zahlungsmethode anzugeben.  Sie können aus zwei Zahlungsoptionen auswählen.  Geben Sie entweder Ihre **Kreditkarteninformationen** ein (in der Abbildung unten dargestellt), oder wählen Sie die Option **Rechnung** aus.  In beiden Fällen wird eine Bestellung über 0 $ aufgegeben, wenn Sie auf **Bestellung aufgeben** klicken.   
 
-> [!NOTE]
-> Wenn Sie keine Kreditkarteninformationen angeben möchten, wählen Sie **Rechnung** als Zahlungsmethode aus.  Sie können **Pay by the year** („Jährliche Zahlung“) auswählen, damit Sie nur einmal im Jahr eine Rechnung erhalten.
+    > [!NOTE]
+    > Wenn Sie keine Kreditkarteninformationen angeben möchten, wählen Sie **Rechnung** als Zahlungsmethode aus.  Sie können **Pay by the year** („Jährliche Zahlung“) auswählen, damit Sie nur einmal im Jahr eine Rechnung erhalten.
 
 12. Nun haben Sie den Vorteil Ihres Office 365-Entwicklerabonnement erfolgreich eingelöst.  Es sollte eine Seite angezeigt werden, auf der Ihre Bestellung bestätigt wird.  Auf der Seite wird ein Link zur [Anmeldeseite](https://portal.office.com "Anmeldeseite für Office 365") zur Verfügung gestellt.  Es wird empfohlen, ein Lesezeichen hinzuzufügen, damit Sie die Seite später nicht suchen müssen.  Sie sollten sich außerdem die Benutzer-ID merken, die auf der Seite angezeigt wird.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Klicken Sie auf **Setup starten**, um fortzufahren.  
 
     ![Office 365-Vorteil für Entwickler: Bestellung wird bestätigt](_img\vs-office-dev\vs-office-dev-confirm.png)
 
-## <a name="faq"></a>FAQ
+## <a name="eligibility"></a>Berechtigung
+| Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included      |  Ja          |
+| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |NA         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  NA         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
+| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA |
+| Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+
+<sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht: Microsoft Partner Network (MPN), Imagine, Microsoft Valued Partner (MVP), Region Director (RD).*
+
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>F: Wie richte ich mein Office 365-Entwicklerabonnement ein, nachdem es aktiviert wurde?
 A: Einrichten der Office 365-Abonnementvorteile für Entwickler
 
-1. Starten Sie die Einrichtung des Office 365-Vorteils durch das Entwicklerabonnement entweder auf der Seite „Danke für Ihren Auftrag“, oder melden Sie sich zu einem späteren Zeitpunkt über [https://portal.office.com](https://portal.office.com) im Office-Portal an.  In diesem Fall wurde **Setup starten** im Anschluss an die Anzeige der Bestätigungsseite ausgewählt.
+1. Starten Sie die Einrichtung des Office 365-Abonnementvorteils für Entwickler entweder auf der Seite „Danke für Ihren Auftrag“, oder melden Sie sich zu einem späteren Zeitpunkt unter [https://portal.office.com](https://portal.office.com) im Office-Portal an.  In diesem Fall wurde **Setup starten** im Anschluss an die Anzeige der Bestätigungsseite ausgewählt.
 
-> [!NOTE]
-> Für die Anmeldung auf https://portal.office.com benötigen Sie Ihre neue Benutzer-ID für Ihr Office 365-Entwicklerabonnement, die Sie in Schritt 7 erstellt haben.
+    > [!NOTE]
+    > Für die Anmeldung unter https://portal.office.com benötigen Sie Ihre neue Benutzer-ID für Ihr Office 365-Entwicklerabonnement, die Sie in Schritt 7 erstellt haben.
 
 2. Nachdem Sie auf **Setup starten** geklickt haben, öffnet sich Schritt 1, in dem Sie entweder aufgefordert werden, eine Verbindung zu einer vorhandenen Domäne herzustellen, die bereits Ihnen gehört, oder Sie werden aufgefordert, während des Einlösevorgangs mit dem Mandantensetup fortzufahren.  In dem untenstehenden Beispiel wurde die Domäne „appsbyjane2017.onmicrosoft.com“ ausgewählt, um fortzufahren.
 
@@ -132,8 +117,8 @@ A: Wenn Sie während des Einlösevorgangs nicht die erforderliche Anzahl von Ben
 
 1. Damit Sie Benutzer nach Abschluss des Einlösevorgangs hinzufügen können, müssen Sie zum Office-Portal ([https://portal.office.com](https://portal.office.com)) wechseln und sich mit der Benutzer-ID anmelden, die Sie bei der Erstellung des Mandanten erstellt haben.
 
-> [!NOTE]
-> Wenn Sie Ihre Anmeldeinformationen nicht finden können, sehen Sie in der E-Mail zur Auftragsbestätigung mit dem Betreff „Bestätigung der Bestellung – vielen Dank für Ihren Auftrag“ nach, die Sie vom Microsoft Online Service Team erhalten haben.  Stattdessen können Sie auch im Posteingang nach „Text:(Office 365 Enterprise E3 Developer MSDN)“ suchen.
+    > [!NOTE]
+    > Wenn Sie Ihre Anmeldeinformationen nicht finden können, sehen Sie in der E-Mail zur Auftragsbestätigung mit dem Betreff „Bestätigung der Bestellung – vielen Dank für Ihren Auftrag“ nach, die Sie vom Microsoft Online Service Team erhalten haben.  Stattdessen können Sie auch im Posteingang nach „Text:(Office 365 Enterprise E3 Developer MSDN)“ suchen.
 
 2. Wählen Sie nach erfolgreicher Anmeldung die Kachel **Administrator** aus. Darüber werden Sie zum Admin Center weitergeleitet.
 
@@ -145,8 +130,8 @@ A: Wenn Sie während des Einlösevorgangs nicht die erforderliche Anzahl von Ben
 
 6. Der Wert „Einkauf“, der auf der Seite „Abonnements“ angezeigt wird, sollte nun mit dem übermittelten Wert übereinstimmen.
 
-> [!NOTE]
-> Wenn für „Benutzer gesamt“ der Wert 25 überschritten wird, tritt ein Fehler auf.
+    > [!NOTE]
+    > Wenn für „Benutzer gesamt“ der Wert 25 überschritten wird, tritt ein Fehler auf.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.

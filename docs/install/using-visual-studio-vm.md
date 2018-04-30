@@ -1,8 +1,9 @@
 ---
-title: Verwenden von Visual Studio auf einem virtuellen Azure-Computer | Microsoft-Dokumentation
+title: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
 description: Erfahren Sie, wie Visual Studio auf einem virtuellen Azure-Computer verwendet wird
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -14,18 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f0c87d482c2bc7ad174f7074091767fb6127bf70
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a id="top"> </a> Visual Studio-Images in Azure
+
 Die Verwendung von Visual Studio in einem vorkonfigurierten virtuellen Azure-Computer (VM) ist eine einfache, schnelle Möglichkeit, von Null zu einer ausführbereiten Entwicklungsumgebung zu gelangen. Im [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) stehen Systemimages mit verschiedenen Visual Studio-Konfigurationen zur Verfügung.
 
 Neu bei Azure? [Kostenloses Azure-Konto erstellen](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>Welche Konfigurationen und Versionen sind verfügbar?
+
 Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual Studio 2017 und Visual Studio 2015. Für jede Hauptversion finden Sie die ursprünglich herausgegebene Version (RTW) und die zuletzt aktualisierten Versionen. Jede dieser Versionen ist in den Editionen Visual Studio Enterprise und Visual Studio Community erhältlich. Diese Images werden mindestens monatlich aktualisiert, sodass sie die neuesten Visual Studio- und Windows-Updates enthalten. Zwar bleiben die Namen der Images unverändert, die Beschreibung zu jedem Image beinhaltet aber dessen installierte Produktversion und das Statusdatum des Images.
 
 | Releaseversion                                              | Editionen                     |     Produktversion     |
@@ -42,6 +45,7 @@ Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual
 Weitere Informationen finden Sie in der [Visual Studio-Wartungsrichtlinie](/visualstudio/productinfo/vs-servicing-vs).
 
 ## <a name="what-features-are-installed"></a>Welche Funktionen sind installiert?
+
 Jedes Image enthält die für die betreffende Visual Studio-Edition empfohlene Featuregruppe. Im Allgemeinen beinhaltet die Installation:
 
 * Alle verfügbaren Workloads einschließlich der jeweils empfohlenen optionalen Komponenten
@@ -67,6 +71,7 @@ Wir verwenden beim Erstellen der Images folgende Befehlszeile zum Installieren v
 Wenn die Images ein Visual Studio-Feature nicht enthalten, das Sie benötigen, geben Sie uns entsprechendes Feedback mithilfe des Feedbacktools in der oberen rechten Ecke der Seite.
 
 ## <a name="what-size-vm-should-i-choose"></a>Welche VM-Größe sollte gewählt werden?
+
 Azure bietet eine umfangreiche Palette an VM-Größen. Da Visual Studio eine leistungsstarke Multithread-Anwendung ist, empfiehlt sich eine VM-Größe von mindestens zwei Prozessoren und 7 GB Arbeitsspeicher. Die folgenden VM-Größen werden für die Visual Studio-Images empfohlen:
 
    * Standard_D2_v3
@@ -82,6 +87,7 @@ Weitere Informationen zu den aktuellen Computergrößen finden Sie unter [Größ
 Bei Azure können Sie Ihre ursprüngliche Wahl neu ausbalancieren, indem Sie die Größe der VM ändern. Sie können entweder eine neue VM mit einer passenderen Größe bereitstellen oder die Größe Ihrer vorhandenen VM gemäß anderer zugrundeliegender Hardware ändern. Weitere Informationen finden Sie unter [Ändern der Größe eines virtuellen Windows-Computers](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Wie geht es weiter, sobald der virtuelle Computer ausgeführt wird?
+
 Visual Studio folgt dem „Bring-your-own-License“-Modell in Azure. Wie bei einer Installation auf eigener Hardware ist also einer der ersten Schritte die Lizenzierung Ihrer Visual Studio-Installation. Sie können Visual Studio auf zwei Arten entsperren:
 - Melden Sie sich mit einem Microsoft-Konto an, das einem Visual Studio-Abonnement zugeordnet ist
 - Entsperren Sie Visual Studio mit dem Product Key, den Sie bei Ihrem ursprünglichen Kauf erhalten haben
@@ -107,6 +113,7 @@ Weitere Informationen finden Sie unter [Erstellen eines verwalteten Images eines
 Darüber hinaus ist für Ihre Entwicklungsaufgaben oder -technologien möglicherweise mehr Skalierbarkeit erforderlich – etwa in Form von Abwandlungen von Entwicklungskonfigurationen und mehreren Computerkonfigurationen. Sie können Azure DevTest Labs verwenden, um _Rezepte_ zu erstellen, mit denen sich die Konstruktion Ihres „goldenen Images“ automatisieren lässt. Sie können auch DevTest-Labs verwenden, um die Richtlinien für die ausgeführten virtuellen Computer Ihres Teams zu verwalten. [Verwenden von Azure DevTest Labs durch Entwickler](/azure/devtest-lab/devtest-lab-developer-lab) stellt die beste Quelle für weitere Informationen zu DevTest Labs dar.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Da Sie nun die vorkonfigurieren Visual Studio-Images kennen, besteht der nächste Schritt im Erstellen eines neuen virtuellen Computers:
 
 * [Erstellen einer Windows-VM im Azure-Portal](/azure/virtual-machines/windows/quick-create-portal)

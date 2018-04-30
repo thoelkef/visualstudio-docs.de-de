@@ -1,48 +1,48 @@
 ---
 title: Reparieren von Visual Studio 2017 | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie eine Installation von Visual Studio 2017 reparieren.
-keywords: Fügen Sie keine Schlüsselwörter hinzu, und bearbeiten Sie diese auch nicht, ohne dies vorher mit der für die Suchmaschinenoptimierung zuständigen Person abzuklären.
+keywords: ''
 author: PoulChapman
 ms.author: tglee
 manager: douge
-ms.reviewer: ''
 ms.date: 09/28/2017
 ms.topic: conceptual
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8697b74a45bcf21eb312c9c3d47e6105646a9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8fbea136f281c20f0e5db7fedf9985d57b266a89
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="repair-visual-studio-2017"></a>Reparieren von Visual Studio 2017
 
 Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fehlerhaft ist. Dies kann durch eine Reparatur behoben werden.
 
-1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
+1. Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
 
      Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
      >[!NOTE]
      Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.<br/><br/> Alternativ dazu finden Sie den Visual Studio-Installer in folgendem Speicherort: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **More** (Mehr) und **Repair** (Reparieren) aus.
+2. Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **More** (Mehr) und **Repair** (Reparieren) aus.
 
 ## <a name="get-support"></a>Support aufrufen
+
 Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
+
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
+* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
+
 * [Installieren von Visual Studio 2017](install-visual-studio.md)
 * [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)

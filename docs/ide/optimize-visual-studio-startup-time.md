@@ -1,10 +1,7 @@
 ---
-title: Optimieren der Leistung von Visual Studio | Microsoft-Dokumentation
+title: Verbessern der Startzeit von Visual Studio | Microsoft-Dokumentation
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -12,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 403bbfff74cfe969a26e12aeb1f4b54ef0473195
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="optimize-visual-studio-performance"></a>Optimieren der Leistung von Visual Studio
+# <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
 Visual Studio wurde dafür entworfen, so schnell und effizient wie möglich zu starten. Das Laden bestimmter Visual Studio-Erweiterungen und -Toolfenster kann die Startzeit jedoch nachteilig beeinflussen. Sie können das Verhalten langsamer Erweiterungen und Toolfenster im Dialogfeld **Visual Studio-Leistung verwalten** steuern. Allgemeine Tipps zum Verbessern der Leistung finden Sie unter [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
@@ -38,7 +35,7 @@ Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezei
 
 Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf die Startleistung auswirken. Sie können die Einstellungen für Erweiterungen und Toolfenster ändern, um die Leistung beim Start zu verbessern.
 
-## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a>Ändern der Erweiterungseinstellungen zum Verbessern der Leistung des Startens, des Ladens von Projekten und der Eingabe
+## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Ändern der Erweiterungseinstellungen zum Verbessern der Leistung des Startens, des Ladens von Projekten und der Eingabe
 
 1. Öffnen Sie das Dialogfeld **Visual Studio-Leistung verwalten**, indem Sie in der Menüleiste auf **Hilfe** > **Visual Studio-Leistung verwalten** klicken.
 
@@ -50,7 +47,7 @@ Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf
 
 Sie können die Erweiterung jederzeit über den Erweiterungs-Manager oder das Dialogfeld „Visual Studio-Leistung verwalten“ für zukünftige Sitzungen wieder aktivieren.
 
-## <a name="to-change-tool-window-settings-to-improve-startup-time"></a>Ändern der Einstellungen für Toolfenster zum Verbessern der Startzeit
+## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Ändern der Einstellungen für Toolfenster zum Verbessern der Startzeit
 
 1. Öffnen Sie das Dialogfeld **Visual Studio-Leistung verwalten**, indem Sie in der Menüleiste auf **Hilfe** > **Visual Studio-Leistung verwalten** klicken.
 
@@ -73,4 +70,6 @@ Sie können die Erweiterung jederzeit über den Erweiterungs-Manager oder das Di
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

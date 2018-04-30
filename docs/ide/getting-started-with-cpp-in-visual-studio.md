@@ -3,20 +3,19 @@ title: Erste Schritte mit C++ in Visual Studio | Microsoft-Dokumentation
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -24,7 +23,7 @@ Arbeiten Sie sich durch diesen Schnellstart, um mit den vielen Tools und Dialogf
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-Sie müssen sich nicht mit C++ auskennen, um diesen Schnellstart durchzuführen, aber Sie sollten grundlegende Programmier- und Debuggingkonzepte kennen. Die Visual Studio-Dokumentation bringt Ihnen nicht bei, wie man mit C++ programmiert. Nützliche Informationen über Lernressourcen zu C++ finden Sie unter [Get Started (Erste Schritte)](https://isocpp.org/get-started) auf der Website von ISO C++.
+Sie müssen sich nicht mit C++ auskennen, um diesen Schnellstart durchzuführen, aber Sie sollten grundlegende Programmier- und Debuggingkonzepte kennen. Die Visual Studio-Dokumentation bringt Ihnen nicht bei, wie man mit C++ programmiert. Nützliche Informationen über Lernressourcen zu C++ finden Sie unter [Erste Schritte](https://isocpp.org/get-started) auf der Website von ISO C++.
 
 Um diesen Schritten folgen zu können, benötigen Sie Visual Studio 2017 Version 15.3 oder höher, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
 
@@ -52,7 +51,7 @@ Visual Studio verwendet *Projekte*, um Code für eine App zu ordnen, und *Projek
 
 1. Klicken Sie auf die Schaltfläche **OK**, um das Projekt und die Projektmappe zu erstellen.
 
-   Das Projekt und die Projektmappe „HelloApp“, mit den grundlegenden Dateien für eine Windows-Konsolenanwendung, werden erstellt und automatisch in den **Projektmappen-Explorer** geladen. Die Datei „HelloApp.cpp“ wird im Code-Editor geöffnet. Diese Elemente werden im **Projektmappen-Explorer** angezeigt:
+   Das Projekt und die Projektmappe „HelloApp“, mit den grundlegenden Dateien für eine Windows-Konsolenanwendung, werden erstellt und automatisch in den **Projektmappen-Explorer** geladen. Die Datei *HelloApp.cpp* wird im Code-Editor geöffnet. Diese Elemente werden im **Projektmappen-Explorer** angezeigt:
 
    ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/get-started-cpp-solution-explorer.png "Files for the solution in Solution Explorer")
 
@@ -62,7 +61,7 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
 
 ### <a name="to-edit-code-in-the-editor"></a>Bearbeiten von Code im Editor
 
-1. Fügen Sie in der Datei „HelloApp.cpp“ eine Leerzeile vor der Zeile `return 0;` ein, und geben Sie dann diesen Code ein:
+1. Fügen Sie in der Datei *HelloApp.cpp* eine Leerzeile vor der Zeile `return 0;` ein, und geben Sie dann diesen Code ein:
 
    ```cpp
    cout << "Hello\n";
@@ -76,16 +75,16 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
 
    ![Fehler im Fenster „Fehlerliste“](../ide/media/get-started-cpp-error-list.png "Error in Error List window")
 
-   In Ihrem Code fehlt eine Deklaration für [std::cout](/cpp/standard-library/iostream), die Sie in der Headerdatei \<iostream> finden können.
+   In Ihrem Code fehlt eine Deklaration für [std::cout](/cpp/standard-library/iostream), die Sie in der Headerdatei *\<iostream>* finden können.
 
-1. Um den iostream-Header einzuschließen, geben Sie den folgenden Code nach `#include "stdafx.h"` ein:
+1. Um den Header *iostream* einzuschließen, geben Sie den folgenden Code nach `#include "stdafx.h"` ein:
 
    ```cpp
    #include <iostream>
    using namespace std;
    ```
 
-   Sie werden vermutlich bereits festgestellt haben, dass ein Feld erschienen ist, während Sie den Code eingegeben haben. Dieses Feld enthält Vorschläge für die automatische Vervollständigung der Zeichen, die Sie eingeben. Es ist Teil von C++ IntelliSense, das Codeeingabeaufforderungen bietet, darunter Klassen- oder Schnittstellenmember sowie Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Using IntelliSense](../ide/using-intellisense.md) und [Code Snippets](../ide/code-snippets.md).
+   Sie werden vermutlich bereits festgestellt haben, dass ein Feld erschienen ist, während Sie den Code eingegeben haben. Dieses Feld enthält Vorschläge für die automatische Vervollständigung der Zeichen, die Sie eingeben. Es ist Teil von C++ IntelliSense, das Codeeingabeaufforderungen bietet, darunter Klassen- oder Schnittstellenmember sowie Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md) und [Codeausschnitte](../ide/code-snippets.md).
 
    ![Der korrigierte Code im Editor](../ide/media/get-started-cpp-cout-fix.png "The fixed code in the editor")
 
@@ -105,11 +104,11 @@ Sie können „HelloApp“ debuggen, um festzustellen, ob das Wort „Hallo“ i
 
 ### <a name="to-debug-the-app"></a>Debuggen der App
 
-1. Wählen Sie auf der Menüleiste **Debuggen > Debuggen starten** aus, um den Debugger zu starten.
+Wählen Sie auf der Menüleiste **Debuggen > Debuggen starten** aus, um den Debugger zu starten.
 
-   ![Befehl „Debuggen starten“ im Debuggermenü](../ide/media/get-started-cpp-start-debugging-menu.png "Start Debugging command on the Debug Menu")
+![Befehl „Debuggen starten“ im Debuggermenü](../ide/media/get-started-cpp-start-debugging-menu.png "Start Debugging command on the Debug Menu")
 
-   Die Debugger wird gestartet und führt den Code aus. Das Konsolenfenster (ein separates Fenster, das wie eine Eingabeaufforderung aussieht) wird ein paar Sekunden lang angezeigt, wird jedoch schnell geschlossen, wenn der Debugger anhält. Um den Text anzuzeigen, müssen Sie einen Haltepunkt festlegen, um die Ausführung des Programms zu beenden.
+Die Debugger wird gestartet und führt den Code aus. Das Konsolenfenster (ein separates Fenster, das wie eine Eingabeaufforderung aussieht) wird ein paar Sekunden lang angezeigt, wird jedoch schnell geschlossen, wenn der Debugger anhält. Um den Text anzuzeigen, müssen Sie einen Haltepunkt festlegen, um die Ausführung des Programms zu beenden.
 
 ### <a name="to-add-a-breakpoint"></a>Hinzufügen eines Haltepunktes
 
@@ -149,12 +148,12 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 Sobald dieser Build fertiggestellt ist, haben Sie eine App erstellt, die Sie in jedes Eingabeaufforderungsfenster kopieren und dort ausführen können. Sie macht zwar nicht viel, aber sie ist der Ausgangspunkt von vielem Anderen.
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio Samples](../ide/visual-studio-samples.md).
+Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio-Beispiele](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 [Verwenden der Visual Studio-IDE für C++-Desktopentwicklung](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
 [Visual Studio-Beispiele](../ide/visual-studio-samples.md)  
-[Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+[Erste Schritte bei der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)

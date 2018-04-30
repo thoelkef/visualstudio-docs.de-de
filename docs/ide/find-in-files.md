@@ -1,12 +1,9 @@
 ---
-title: Suchen in Dateien | Microsoft-Dokumentation
-ms.custom: 
+title: Suchen in Dateien
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-in-files"></a>Suchen in Dateien
 
@@ -37,7 +35,7 @@ Rufen Sie die Option **Suchen in Dateien** im Fenster **Suchen und Ersetzen** mi
 
 ## <a name="to-display-find-in-files"></a>So rufen Sie die Option "In Dateien suchen" auf
 
-1. Wählen Sie in der Menüleiste **Bearbeiten** und **Suchen und Ersetzen** aus.
+1. Klicken Sie in der Menüleiste auf **Bearbeiten** > **Suchen und Ersetzen**.
 
 1. Wählen Sie die Option **Suchen in Dateien** aus.
 
@@ -71,16 +69,20 @@ Gibt an, dass auch die Unterordner des im Feld **Suchen in** angegebenen Ordners
 
 Der Bereich **Suchoptionen** kann erweitert oder reduziert werden. Die folgenden Optionen können aktiviert oder deaktiviert werden:
 
-Groß-/Kleinschreibung beachten  
+**Groß-/Kleinschreibung beachten**
+
 Wenn diese Option ausgewählt ist, wird im Fenster **Suchergebnisse** zwischen Groß- und Kleinschreibung unterschieden.
 
-Nur ganzes Wort suchen  
+**Nur ganzes Wort suchen**
+
 Wenn diese Option ausgewählt ist, werden im Fenster **Suchergebnisse** nur Übereinstimmungen zurückgegeben, bei denen die gefundene Wortfolge vollständig mit der Suchzeichenfolge übereinstimmt.
 
-Reguläre Ausdrücke verwenden  
+**Verwenden von regulären Ausdrücken**
+
 Wenn dieses Kontrollkästchen aktiviert ist, können Sie spezielle Notationen zur Definition von Textmustern verwenden, die mit den Textfeldern **Suchen nach** oder **Ersetzen durch** übereinstimmen. Eine Liste dieser Notationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Nach diesen Dateitypen suchen  
+**Nach diesen Dateitypen suchen**
+
 Diese Liste gibt Dateitypen an, die in den unter **Suchen in** angegebenen Verzeichnissen durchsucht werden sollen. Wenn dieses Feld leer ist, werden alle Dateien in den Verzeichnissen unter **Suchen in** durchsucht.
 
 Wählen Sie ein beliebiges Element aus der Liste aus, um eine vordefinierte Suchzeichenfolge zu übernehmen, mit der nur Dateien des angegebenen Typs durchsucht werden.
@@ -89,20 +91,24 @@ Wählen Sie ein beliebiges Element aus der Liste aus, um eine vordefinierte Such
 
 Der Bereich **Ergebnisoptionen** kann erweitert oder reduziert werden. Die folgenden Optionen können aktiviert oder deaktiviert werden:
 
-Fenster "Suchergebnisse: 1"  
+**Fenster „Suchergebnisse: 1“**
+
 Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 1**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 1** aus.
 
-Fenster "Suchergebnisse: 2"  
+**Fenster „Suchergebnisse: 2“**
+
 Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 2** aus.
 
-Nur Dateinamen anzeigen  
+**Nur Dateinamen anzeigen**
+
 Zeigt eine Liste mit Dateien an, in denen die gefundenen Übereinstimmungen enthalten sind, und nicht die Übereinstimmungen selbst.
 
-Ergebnisse anfügen  
+**Ergebnisse anfügen**
+
 Fügt die Ergebnisse der Suche den Ergebnissen der vorherigen Suche hinzu.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)  
-[Ersetzen in Dateien](../ide/replace-in-files.md)  
-[Visual Studio-Befehle](../ide/reference/visual-studio-commands.md)
+- [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
+- [Ersetzen in Dateien](../ide/replace-in-files.md)
+- [Visual Studio-Befehle](../ide/reference/visual-studio-commands.md)

@@ -1,7 +1,7 @@
 ---
 title: Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“ in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: b313271e29bba660af1aa48654bfdfefb81e39f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -29,7 +29,7 @@ In Visual Studio 2017 können Sie das Codeformat in Ihrer Codebasis mit einer [E
 
 Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
-- [ Sprachkonventionen](#language-conventions)
+- [Sprachkonventionen](#language-conventions)
 
    Regeln für die Sprache C# oder die Sprache Visual Basic. Beispielsweise können Sie Regeln hinsichtlich der Verwendung von `var` oder explizite Typen angeben, wenn Sie Variablen definieren oder Ausdruckskörpermember bevorzugen.
 
@@ -37,7 +37,7 @@ Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
    Regeln für das Layout und die Struktur Ihres Codes, um diesen lesbarer zu machen. Beispielsweise können Sie Regeln hinsichtlich der geschweiften Klammern (Allman) angeben, oder es werden Leerzeichen in Steuerblöcken bevorzugt.
 
-- [Benennungskonventionen](../ide/editorconfig-naming-conventions.md)
+- [Namenskonventionen](../ide/editorconfig-naming-conventions.md)
 
    Regeln für die Benennung von Codeelementen. Sie können beispielsweise angeben, dass die `async`-Methoden mit „Async“ enden müssen.
 
@@ -60,7 +60,7 @@ error | Zeigen Sie einen Compilerfehler an, wenn gegen diese Formatregel versto�
 
 Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
 
-- .NET-Codeformateinstellungen
+- Einstellungen für das .NET-Codeformat
     - [Qualifizierer „This.“ und „Me.“](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
@@ -113,7 +113,7 @@ Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
 
 Die Formatregeln in diesem Abschnitt gelten für C# und für Visual Basic. Wenn Sie Codebeispiele in Ihrer bevorzugten Programmiersprache anzeigen möchten, wählen Sie diese in der oberen rechten Ecke Ihres Browserfensters im Dropdownmenü **Sprache** aus.
 
-#### <a name="this_and_me">Qualifizierer „This.“ und „Me.“</a>
+#### <a name="this_and_me"></a>Die Qualifizierer „This.“ und „Me.“
 
 Diese Formatregel (Regel-IDs IDE0003 und IDE0009) kann auf Felder, Eigenschaften, Methoden oder Ereignisse angewendet werden. Wenn **TRUE** festgelegt ist, wird dem Codesymbol in C# bevorzugt `this.` oder in Visual Basic `Me.` vorangestellt. Wenn **FALSE** festgelegt ist, wird dem Codeelement bevorzugt _nicht_ `this.` oder `Me.` vorangestellt.
 
@@ -218,7 +218,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -229,7 +229,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords">Sprachschlüsselwörter anstelle von Framework-Typnamen für Typverweise</a>
+#### <a name="language_keywords"></a>Sprachschlüsselwörter anstelle von Framework-Typnamen für Typverweise
 
 Diese Formatregel kann auf lokale Variablen, Methodenparameter und Klassenmember oder als separate Regel für Typmemberzugriffsausdrücke angewendet werden. Wenn der Wert **TRUE** festgelegt ist, wird bei Typen, die durch ein Schlüsselwort dargestellt werden, das Sprachschlüsselwort (z.B. `int` oder `Integer`) vor dem Typnamen (z.B. `Int32`) bevorzugt. Wenn der Wert **FALSE** festgelegt ist, wird der Typname vor dem Sprachschlüsselwort bevorzugt.
 
@@ -286,7 +286,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -295,13 +295,13 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers">Einstellungen von Modifizierern</a>
+#### <a name="normalize_modifiers"></a>Einstellungen von Modifizierern
 
 Die Formatregeln in diesem Abschnitt beziehen sich auf die Einstellungen von Modifizierern, einschließlich des Erforderns von Zugriffsmodifizierern und des Angebens der gewünschten Sortierreihenfolge für Modifizierer.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# und Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
@@ -363,7 +363,7 @@ Public Class MyClass
 End Class
 ```
 
-Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -379,13 +379,13 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="expression_level">Einstellungen auf Ausdrucksebene</a>
+#### <a name="expression_level"></a>Einstellungen auf Ausdrucksebene
 
 Die Formatierungsregeln in diesem Abschnitt betreffen Einstellungen auf Ausdrucksebene, einschließlich der Verwendung von Objektinitialisierern, Auflistungsinitialisierern, expliziter oder abgeleiteter Tupelnamen und abgeleiteter anonymer Typen.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
 | dotnet_style_object_initializer | IDE0017 | C# und Visual Basic | true:suggestion | Erste Version |
 | dotnet_style_collection_initializer | IDE0028 | C# und Visual Basic | true:suggestion | Erste Version |
@@ -505,7 +505,7 @@ var anon = new { age = age, name = name };
 
 ```
 
-Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -517,13 +517,13 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
-#### <a name="null_checking">Einstellungen für die NULL-Überprüfung</a>
+#### <a name="null_checking"></a>Einstellungen für die NULL-Überprüfung
 
 Die Formatierungsregeln in diesem Abschnitt betreffen die Einstellungen der NULL-Überprüfung.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
 | dotnet_style_coalesce_expression | IDE0029 | C# und Visual Basic | true:suggestion | Erste Version |
 | dotnet_style_null_propagation | IDE0031 | C# 6.0+ und Visual Basic 14+ | true:suggestion | Erste Version |
@@ -578,7 +578,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -591,7 +591,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Die Formatregeln in diesem Abschnitt gelten nur für C#.
 
-#### <a name="var">Implizite und explizite Typen</a>
+#### <a name="var"></a>Implizite und explizite Typen
 
 Die Formatregeln in diesem Abschnitt (Regel-IDs IDE0007 und IDE0008) betreffen die Verwendung des Schlüsselworts [var](/dotnet/csharp/language-reference/keywords/var) im Vergleich zu einem expliziten Typ in einer Variablendeklaration. Diese Regel kann getrennt auf integrierte Typen angewendet werden, wenn diese Typen offensichtlich sind und sich an einer anderen Position befinden.
 
@@ -648,7 +648,7 @@ var f = this.Init();
 bool f = this.Init();
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -658,13 +658,13 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members">Ausdruckskörpermember</a>
+#### <a name="expression_bodied_members"></a>Ausdruckskörpermember
 
 Die Formatregeln in diesem Abschnitt betreffen die Verwendung von [Ausdruckskörpermember](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members), wenn die Logik aus einem einzelnen Ausdruck besteht. Diese Regel kann auf Methoden, Konstruktoren, Operatoren, Eigenschaften, Indexer und Accessoren angewendet werden.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Sprachversionen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 und höher | false:none | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 und höher | false:none | 15.3 |
@@ -795,7 +795,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -808,7 +808,7 @@ csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
 ```
 
-#### <a name="pattern_matching">Mustervergleich</a>
+#### <a name="pattern_matching"></a>Musterabgleich
 
 Die Formatregeln in diesem Abschnitt betreffen die Verwendung von [Mustervergleich](/dotnet/csharp/pattern-matching) in C#.
 
@@ -850,7 +850,7 @@ var s = o as string;
 if (s != null) {...}
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -859,7 +859,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations">Inline-Variablendeklarationen</a>
+#### <a name="inlined_variable_declarations"></a>Inline-Variablendeklarationen
 
 Diese Formatregel bezieht sich darauf, ob `out`-Variablen inline deklariert werden oder nicht. Ab C# 7 können Sie [in der Argumentliste eines Methodenaufrufs eine out-Variable deklarieren](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), anstatt dies in einer separaten Variablendeklaration zu machen.
 
@@ -885,7 +885,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -893,13 +893,13 @@ if (int.TryParse(value, out i) {...}
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-#### <a name="expression_level_csharp">Einstellungen auf Ausdrucksebene</a>
+#### <a name="expression_level_csharp"></a>Einstellungen auf Ausdrucksebene
 
 Die Stilregeln in diesem Abschnitt beziehen sich auf die Einstellungen auf Ausdrucksebene, einschließlich der Verwendung von [default-Ausdrücken](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), dekonstruierten Variablen und lokalen Funktionen statt anonymen Funktionen.
 
 In der folgenden Tabelle werden der Regelname, Regel-IDs, anzuwendende Sprachversionen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 und höher | true:suggestion | 15.5 |
@@ -967,7 +967,7 @@ fibonacci = (int n) =>
 };
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -977,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking_csharp">Einstellungen für die NULL-Überprüfung</a>
+#### <a name="null_checking_csharp"></a>Einstellungen für die NULL-Überprüfung
 
 Diese Formatregeln beziehen sich auf die Syntax hinsichtlich der `null`-Prüfung, einschließlich der Verwendung von `throw`-Ausdrücken oder `throw`-Anweisungen; ferner bezieht sie sich darauf, ob eine NULL-Überprüfung durchgeführt oder der bedingte Sammeloperator (`?.`) verwendet werden soll, wenn ein [Lambdaausdruck](/dotnet/csharp/lambda-expressions) aufgerufen wird.
 
@@ -1019,7 +1019,7 @@ func?.Invoke(args);
 if (func != null) { func(args); }
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1028,13 +1028,13 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="code_block">Codeblockeinstellungen</a>
+#### <a name="code_block"></a>Codeblockeinstellungen
 
 Diese Formatregel bezieht sich auf die Verwendung der geschweiften Klammern `{ }`, die Codeblöcke umgeben.
 
 In der folgenden Tabelle werden der Regelname, Regel-IDs, anzuwendende Sprachversionen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
 
@@ -1053,7 +1053,7 @@ if (test) { this.Display(); }
 if (test) this.Display();
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1072,10 +1072,10 @@ Sie geben entweder **TRUE** (dieses Format bevorzugen) oder **FALSE** (dieses Fo
 In der folgenden Liste werden die Regeln für Formatierungskonventionen angezeigt, die in Visual Studio verfügbar sind:
 
 - .NET-Formatierungseinstellungen
-    - [Using-Direktiven organisieren](#usings)
+    - [Organisieren von Using-Direktiven](#usings)
         - dotnet_sort_system_directives_first
 - C#-Formatierungseinstellungen
-    - [Zeilenvorschuboptionen](#newline)
+    - [Newline-Optionen](#newline)
         - csharp_new_line_before_open_brace
         - csharp_new_line_before_else
         - csharp_new_line_before_catch
@@ -1087,7 +1087,7 @@ In der folgenden Liste werden die Regeln für Formatierungskonventionen angezeig
         - csharp_indent_case_contents
         - csharp_indent_switch_labels
         - csharp_indent_labels
-    - [Leerzeichenoptionen](#spacing)
+    - [Abstandsoptionen](#spacing)
         - csharp_space_after_cast
         - csharp_space_after_keywords_in_control_flow_statements
         - csharp_space_between_method_declaration_parameter_list_parentheses
@@ -1101,13 +1101,13 @@ In der folgenden Liste werden die Regeln für Formatierungskonventionen angezeig
 
 Die Formatierungsregeln in diesem Abschnitt gelten für C# und für Visual Basic.
 
-#### <a name="usings">Organisieren von Using-Direktiven</a>
+#### <a name="usings"></a>Organisieren von Using-Direktiven
 
 Diese Formatierungsregel bezieht sich auf die Platzierung von System.* using-Direktiven in Bezug auf andere using-Direktiven.
 
 In der folgenden Tabelle werden der Regelname, anzuwendende Sprachen, der Standardwert und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# und Visual Basic | true | 15.3  |
 
@@ -1130,7 +1130,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # .NET formatting settings:
@@ -1142,13 +1142,13 @@ dotnet_sort_system_directives_first = true
 
 Die Formatierungsregeln in diesem Abschnitt gelten nur für C#-Code.
 
-#### <a name="newline">Zeilenvorschuboptionen</a>
+#### <a name="newline"></a>Newline-Optionen
 
 Diese Formatierungsregeln beziehen sich auf die Verwendung neuer Zeilen zur Codeformatierung.
 
 In der folgenden Tabelle werden die Regelnamen für „neue Zeile“, anzuwendende Sprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_new_line_before_open_brace |  C# | alle | 15.3  |
 | csharp_new_line_before_else |  C# | true | 15.3  |
@@ -1327,7 +1327,7 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1341,13 +1341,13 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent">Einzugsoptionen</a>
+#### <a name="indent"></a>Einzugsoptionen
 
 Diese Formatierungsregeln beziehen sich auf die Verwendung von Einzügen zur Codeformatierung.
 
 In der folgenden Tabelle werden die Regelnamen, anzuwendende Sprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_indent_case_contents |  C# | true | 15.3  |
 | csharp_indent_switch_labels |  C# | true | 15.3  |
@@ -1476,7 +1476,7 @@ class C
 }
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1486,13 +1486,13 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 ```
 
-#### <a name="spacing">Leerzeichenoptionen</a>
+#### <a name="spacing"></a>Abstandsoptionen
 
 Diese Formatierungsregeln beziehen sich auf die Verwendung von Leerzeichen zur Codeformatierung.
 
 In der folgenden Tabelle werden die Regelnamen, anzuwendende Sprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_space_after_cast |  C# | False | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
@@ -1585,7 +1585,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1597,13 +1597,13 @@ csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 ```
 
-#### <a name="wrapping">Umbruchoptionen</a>
+#### <a name="wrapping"></a>Umbruchoptionen
 
 Diese Formatierungsregeln beziehen sich auf die Verwendung von einzelnen Zeilen im Vergleich zu separaten Zeilen bei Anweisungen und Codeblöcken.
 
 In der folgenden Tabelle werden die Regelnamen, anzuwendende Sprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
-| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_preserve_single_line_statements |  C# | true | 15.3  |
 | csharp_preserve_single_line_blocks |  C# | true | 15.3  |
@@ -1642,7 +1642,7 @@ public int MyProperty
 }
 ```
 
-.editorconfig-Beispieldatei:
+*EDITORCONFIG-Beispieldatei:*
 
 ```EditorConfig
 # CSharp formatting settings:

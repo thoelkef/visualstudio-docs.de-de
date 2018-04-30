@@ -1,23 +1,21 @@
 ---
-title: 'Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste | Microsoft-Dokumentation'
-ms.custom: 
+title: 'Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Gewusst wie: Verfolgen von Code durch Anpassen der Scrollleiste
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste
 
 Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. Sie können die Bildlaufleiste des Codefensters anpassen, um den Code aus der Vogelperspektive zu betrachten.
 
@@ -25,7 +23,7 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
 1. Sie können die Bildlaufleiste so einrichten, dass Codeänderungen, Haltepunkte, Fehler und Lesezeichen angezeigt werden.
 
-    Öffnen Sie die Optionsseite **Scrollleiste** über **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** oder eine bestimmte Sprache, oder geben Sie **scroll bar** im Schnellstartfenster ein.
+    Öffnen Sie die Optionsseite **Scrollleiste** über **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** oder eine bestimmte Sprache, oder geben Sie **Scrollleiste** im Fenster **Schnellstart** ein.
 
 2. Wählen Sie **Anmerkungen über vertikaler Bildlaufleiste anzeigen** aus, und klicken Sie auf die Anmerkungen, die angezeigt werden sollen.
 
@@ -47,7 +45,7 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
     Wählen Sie auf der Seite mit Optionen der **Bildlaufleiste** entweder **Leistenmodus für vertikale Bildlaufleiste verwenden** oder **Zuordnungsmodus für vertikale Bildlaufleiste** verwenden aus. Sie können die Breite in der Dropdownliste **Quellenübersicht** auswählen.
 
-    Im Folgenden wird gezeigt, wie das Suchbeispiel aussieht, wenn der Zuordnungsmodus aktiviert ist und die Breite auf "Mittel" festgelegt ist:
+    Im Folgenden wird gezeigt, wie das Suchbeispiel aussieht, wenn der Zuordnungsmodus aktiviert und die Breite auf **Mittel** festgelegt ist:
 
     ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -59,4 +57,4 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,27 +1,21 @@
 ---
-title: 'Arbeiten mit Python, Schritt 1: Erstellen eines Projekts | Microsoft-Dokumentation'
+title: 'Arbeiten mit Python, Schritt 1: Erstellen eines Projekts'
 description: Dies ist Schritt 1 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem das gesamte Tutorial zusammengefasst wird, die Voraussetzungen beschrieben werden und das Verfahren zum Erstellen eines neuen Python-Projekts Schritt für Schritt erläutert wird.
-ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
 

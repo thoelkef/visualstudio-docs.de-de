@@ -1,30 +1,28 @@
 ---
-title: ".NET-Namenskonventionen für EditorConfig-Dateien | Microsoft-Dokumentation"
-ms.custom: 
+title: .NET-Namenskonventionen für EditorConfig-Dateien | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
-Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der Fehlerliste oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
+Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
 
-Namenskonventionen sollten in der EDITORCONFIG-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird.
+Namenskonventionen sollten in der *EDITORCONFIG-Datei* von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird.
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 
@@ -147,15 +145,15 @@ Schweregrad | Effekt
 ------------ | -------------
 „none“ oder „silent“ | Wenn dieses Format nicht befolgt wird, wird der Benutzer nicht benachrichtigt. Automatisch generierter Code folgt jedoch diesem Format.
 Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat zur Kompilierzeit keine Auswirkungen.
-warning | Wenn dieses Format nicht eingehalten wird, eine Compilerwarnung in der Fehlerliste anzeigen.
-error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der Fehlerliste anzeigen.
+warning | Wenn dieses Format nicht eingehalten wird, eine Compilerwarnung in der **Fehlerliste** anzeigen.
+error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der **Fehlerliste** anzeigen.
 
 > [!NOTE]
-> Sie müssen keinen Build für Ihr Projekt durchführen, damit Namensregelverstöße angezeigt werden. Sie werden bei der Bearbeitung des Codes angezeigt, entweder in der Fehlerliste oder als Vorschlag.
+> Sie müssen keinen Build für Ihr Projekt durchführen, damit Namensregelverstöße angezeigt werden. Sie werden bei der Bearbeitung des Codes angezeigt, entweder in der **Fehlerliste** oder als Vorschlag.
 
 ## <a name="example"></a>Beispiel
 
-Die folgende EDITORCONFIG-Datei enthält eine Namenskonvention, die angibt, dass öffentliche Eigenschaften, Methoden, Felder, Ereignisse und Delegaten großgeschrieben werden müssen. Beachten Sie, dass diese Namenskonvention mehrere Arten von Symbolen angibt, für die die Regel gelten soll, wobei die Werte durch ein Komma getrennt werden.
+Die folgende *EDITORCONFIG-Datei* enthält eine Namenskonvention, die angibt, dass öffentliche Eigenschaften, Methoden, Felder, Ereignisse und Delegaten großgeschrieben werden müssen. Beachten Sie, dass diese Namenskonvention mehrere Arten von Symbolen angibt, für die die Regel gelten soll, wobei die Werte durch ein Komma getrennt werden.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Der folgende Screenshot zeigt die Auswirkung dieser Namenskonvention im Editor. Zwei öffentliche Variablen wurden ohne Großschreibung des ersten Buchstabens benannt. Die eine ist `const` und die andere `readonly`. Da die Benennungsregel nur für *readonly*-Symbole gilt, wird nur in der Variablen `readonly` ein Vorschlag für eine Benennungsregel angezeigt.
+Der folgende Screenshot zeigt die Auswirkung dieser Namenskonvention im Editor. Zwei öffentliche Variablen wurden ohne Großschreibung des ersten Buchstabens benannt. Die eine ist `const` und die andere `readonly`. Da die Benennungsregel nur für `readonly`-Symbole gilt, wird nur in der Variablen `readonly` ein Vorschlag für eine Benennungsregel angezeigt.
 
 ![Vorschlag für Namensregel](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Lassen Sie uns nun den Schweregrad des Verstoßes in `warning` ändern:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorschlags unter dem Namensverstoß eine grüne Wellenlinie und eine Warnung in der Fehlerliste:
+Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorschlags unter dem Namensverstoß eine grüne Wellenlinie und eine Warnung in der **Fehlerliste**:
 
 ![Namensregelwarnung](media/editorconfig-naming-rule-warning.png)
 

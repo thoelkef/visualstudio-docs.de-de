@@ -1,28 +1,26 @@
 ---
-title: "Administratorhandbuch für Help Viewer | Microsoft-Dokumentation"
-ms.custom: 
+title: Administratorleitfaden für Help Viewer | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dfd290d4395daa6576f4e86d55cdf358a0cf3b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Administratorhandbuch für Help Viewer
 Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzwerkumgebungen mit oder ohne Internetzugriff. Der Inhalt der lokalen Hilfe wird pro Computer konfiguriert. Standardmäßig benötigen Benutzer Administratorrechte, um ihre lokal installierte Hilfe zu aktualisieren.  
   
-Wenn Clients in Ihrer Netzwerkumgebung Internetzugriff haben, können Sie mit der ausführbaren Datei des Hilfeinhalts-Managers lokale Hilfeinhalte über das Internet bereitstellen. Weitere Informationen zur Befehlszeilensyntax von „HlpCtntMgr.exe“ finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
+Wenn Clients in Ihrer Netzwerkumgebung Internetzugriff haben, können Sie mit der ausführbaren Datei des **Hilfeinhalts-Managers** lokale Hilfeinhalte über das Internet bereitstellen. Weitere Informationen zur Befehlszeilensyntax von *HlpCtntMgr.exe* finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
 Weitere Informationen zum Generieren von Inhalten, zum Erstellen eines Endpunkts für den Intranetdienst und zu ähnlichen Aktionen finden Sie unter [Microsoft Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md).  
   
@@ -37,21 +35,22 @@ Wenn Clients in Ihrer Netzwerkumgebung keinen Internetzugriff haben, ermöglicht
 - Verwalten von Inhalten 
   
 ## <a name="deploying-local-help-content-from-the-internet"></a>Bereitstellen lokaler Hilfeinhalte über das Internet  
-Mit dem Hilfeinhalts-Manager („HlpCtntMgr.exe“) lassen sich lokale Hilfeinhalte über das Internet auf Clientcomputern bereitstellen. Verwenden Sie folgende Syntax:  
+Mit dem **Hilfeinhalts-Manager** (*HlpCtntMgr.exe*) lassen sich lokale Hilfeinhalte über das Internet auf Clientcomputern bereitstellen. Verwenden Sie folgende Syntax:  
   
 ```
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
   
-Weitere Informationen zur Befehlszeilensyntax von „HlpCtntMgr.exe“ finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
+Weitere Informationen zur Befehlszeilensyntax von *HlpCtntMgr.exe* finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
 Anforderungen:  
   
 -   Clientcomputer müssen Zugriff auf das Internet haben.  
   
 -   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
-  
- Zu beachten:  
+
+
+Zu beachten:  
   
 -   Die Hilfe bleibt standardmäßig online gespeichert.
   
@@ -64,7 +63,7 @@ Im folgenden Beispiel werden englische Inhalte für Visual Studio auf einem Clie
   
 2.  Geben Sie folgenden Pfad ein:  
   
-     C:\Programme (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us  
+     `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`  
   
 3.  Drücken Sie die **EINGABETASTE**.  
   
@@ -78,7 +77,7 @@ Anforderungen:
 -   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
   
     > [!TIP]
-    >  Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+    >  Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte **Inhalt verwalten** im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
 Zu beachten:
   
@@ -97,7 +96,7 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
   
 4.  Klicken Sie zum Deinstallieren auf **Aktualisieren**.
   
-5.  Navigieren Sie zu „%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15“, und überprüfen Sie, ob der Ordner nur die Datei „catalogType.xml“ enthält.  
+5.  Navigieren Sie zu *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*, und überprüfen Sie, ob der Ordner nur die Datei *catalogType.xml* enthält.  
   
  Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.  
   
@@ -108,20 +107,21 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
 2.  Navigieren Sie unter **Empfohlene Dokumentation** oder **Verfügbare Dokumentation** zu den Dokumentationen, die Sie herunterladen möchten, und klicken Sie auf **Hinzufügen**.  
   
 3.  Klicken Sie auf **Aktualisieren**.  
-  
- Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.  
+
+
+Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.  
   
 #### <a name="to-package-the-content"></a>So verpacken Sie die Inhalte  
   
-1.  Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren. Zum Beispiel C:\VSHelp.  
+1.  Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren. Beispiel: *C:\VSHelp*  
   
-2.  Öffnen Sie "cmd.exe" mit Administratorberechtigungen.  
+2.  Öffnen Sie *cmd.exe* mit Administratorberechtigungen.  
   
 3.  Navigieren Sie zu dem in Schritt 1 erstellten Ordner.  
   
 4.  Geben Sie folgenden Pfad ein:  
   
-     Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*Ordnername*>\ /y /e /k /o  
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o ` 
   
      Beispiel: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
   
@@ -131,9 +131,9 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
   
 1.  Erstellen Sie eine Netzwerkfreigabe, und kopieren Sie die Hilfeinhalte dorthin.  
   
-     Kopieren Sie den Inhalt beispielsweise nach C:\VSHelp to \\\myserver\VSHelp.  
+     Kopieren Sie beispielsweise den Inhalt von *C:\VSHelp* nach *\\\myserver\VSHelp*.  
   
-2.  Erstellen Sie eine BAT-Datei für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Zum Beispiel:  
+2.  Erstellen Sie eine *BAT-Datei* für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Zum Beispiel:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -141,7 +141,7 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```  
   
-3.  Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen Sie die Hilfeinhalte installieren möchten.  
+3.  Führen Sie die *BAT-Datei* auf den lokalen Computern aus, auf denen Sie die Hilfeinhalte installieren möchten.  
   
 ## <a name="see-also"></a>Siehe auch
 [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  

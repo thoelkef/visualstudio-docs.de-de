@@ -1,33 +1,27 @@
 ---
-title: "Tipps und Tricks für die Leistung von Visual Studio | Microsoft-Dokumentation"
+title: Tipps und Tricks für die Leistung von Visual Studio
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3ac89442c7f0242fca3238a32bfb60d1cb2e1b4e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
 Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situationen mit wenig Arbeitsspeicher gedacht, die selten auftreten. In solchen Fällen können Sie bestimmte Funktionen von Visual Studio optimieren, die zu dem Zeitpunkt wahrscheinlich nicht verwendet werden. Die folgenden Tipps sind nicht als allgemeine Empfehlungen gedacht.
 
 > [!NOTE]
-> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das Feedbacktool.
+> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Optimieren der Umgebung
 
@@ -86,7 +80,7 @@ Einige Tools oder Erweiterungen müssen möglicherweise ausgeschaltet werden, um
 
 ### <a name="managed-language-services-roslyn"></a>Dienste für verwaltete Sprachen (Roslyn)
 
-Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Leistungsüberlegungen bei großen Projektmappen)] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Überlegungen zur Leistung bei großen Projektmappen)](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Deaktivieren der vollständige Projektmappenanalyse**
 
@@ -108,7 +102,7 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
     Erweiterungen sind zusätzliche, zu Visual Studio hinzugefügte Softwarekomponenten, die neue Funktionalität bereitstellen oder vorhandene Funktionalität erweitern. Erweiterungen können häufig eine Quelle von Problemen mit Arbeitsspeicherressourcen sein. Wenn bei Ihnen Arbeitsspeicherprobleme auftreten, deaktivieren Sie die Erweiterungen nacheinander, um die Auswirkungen auf das Szenario oder den Workflow zu beobachten.
 
-    Um Erweiterungen zu deaktivieren, wechseln Sie zu **Tools | Erweiterungen und Updates**, und deaktivieren eine bestimmte Erweiterung.
+    Wenn Sie Erweiterungen deaktivieren möchten, navigieren Sie zu **Extras** > **Erweiterungen und Updates**, und deaktivieren Sie eine bestimmte Erweiterung.
 
 - **Deaktivieren des XAML-Designers**
 
@@ -128,8 +122,9 @@ Um eine automatische Speicherbereinigung zu erzwingen, verwenden Sie den Hotkey:
 
 Wenn das Erzwingen der Garbage Collection zur zuverlässigen Funktion Ihres Szenarios führt, übermitteln Sie uns einen Bericht über die Visual Studio-Feedbacktool, denn dieses Verhalten ist wahrscheinlich ein Fehler.
 
-Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fundamental of Garbage Collection (Grundlagen der Garbage Collection)](/dotnet/standard/garbage-collection/fundamentals).
+Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fundamentals of Garbage Collection (Grundlagen der Garbage Collection)](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

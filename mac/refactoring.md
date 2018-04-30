@@ -1,16 +1,15 @@
 ---
-title: "Umgestalten von Code in Visual Studio für Mac | Microsoft-Dokumentation"
-description: "Das Neuorganisieren von Code in Visual Studio für Mac wird durch die Verwendung der Quellanalyse vereinfacht."
+title: Umgestalten von Code in Visual Studio für Mac
+description: Das Neuorganisieren von Code in Visual Studio für Mac wird durch die Verwendung der Quellanalyse vereinfacht.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 325c2c5ab244e9e4fc0aae4dafae7425580c2762
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="refactoring"></a>Umgestaltung
 

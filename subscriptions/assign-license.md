@@ -9,11 +9,11 @@ description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Zuweisen von Lizenzen im Administratorportal für Visual Studio-Abonnements
 
@@ -32,11 +32,13 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
 
     Wenn sich bei Ihrer Organisation die E-Mail-Adresse zum Empfangen von E-Mails von der für die Anmeldung unterscheidet, können Sie beide an dieser Stelle eingeben. Klicken Sie auf den Link „Different email for communication than sign-in?“ („Gibt es eine andere E-Mail-Adresse für die Kommunikation als für die Anmeldung?“). 
 
-    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https:/my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass das Kontrollkästchen „Downloads“ aktiviert ist. Wenn Sie das Kontrollkästchen deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. Wenn Sie fertig sind, klicken Sie auf **Hinzufügen**.
+    **Zugriff auf Downloads:**  
+    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass das Kontrollkästchen „Downloads“ aktiviert ist. Wenn Sie das Kontrollkästchen deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. 
+    
+    Wenn Sie die Optionen für diesen Abonnenten ausgewählt haben, klicken Sie auf **Hinzufügen**.
 
     ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-1.png)
-
-    ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-2.png)
+    ![Enter subscriber information](_img\assign-license-add\add-subscriber-2.png)
 
 4.  Nachdem Sie den Abonnenten hinzugefügt haben, wird automatisch eine E-Mail zur Zuweisung mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die E-Mail zur Zuweisung jederzeit erneut senden, indem Sie den Abonnenten auswählen und auf die Schaltfläche **Erneut senden** im oberen Menü klicken.
 
@@ -55,9 +57,7 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
 **Beachten Sie die im Folgenden aufgelisteten bewährten Methoden, um einen fehlerfreien Upload zu gewährleisten:**
     - Stellen Sie sicher, dass die Formularfelder keine Kommas enthalten.
     - Entfernen Sie Leerzeichen vor und nach Formularfeldern wie z.B. die Benutzernamen.
-    - Stellen Sie sicher, dass die Benutzernamen keine zusätzlichen Leerzeichen zwischen zweiteiligen Vor- und Nachnamen haben (z.B. sollten zweiteilige Namen wie „Maggie May“ nicht mit doppelten Leerzeichen geschrieben werden („Maggie  May“), da das System die überflüssigen Leerzeichen nicht automatisch entfernt).
-
-    ![Vorlage zum Massenhinzufügen](_img\assign-license-add\bulk-template.png)
+    - Stellen Sie sicher, dass die Benutzernamen keine zusätzlichen Leerzeichen zwischen zweiteiligen Vor- und Nachnamen haben (z.B. sollten zweiteilige Namen wie „Maggie May“ nicht mit doppelten Leerzeichen geschrieben werden („Maggie  May“), da das System die überflüssigen Leerzeichen nicht automatisch entfernt). ![Vorlage zum Massenhinzufügen](_img\assign-license-add\bulk-template.png)
 
 4.  Rufen Sie das Administratorportal für Visual Studio-Abonnements auf, und klicken Sie im Dialogfeld „Upload Multiple Subscribers“ („Mehrere Abonnenten hochladen“) auf **Durchsuchen**. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt. 
 

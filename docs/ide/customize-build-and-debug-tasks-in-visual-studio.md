@@ -1,8 +1,8 @@
 ---
-title: "Anpassen von Build- und Debugtasks in Visual Studio mithilfe von „tasks.vs.json“ und „launch.vs.json“ | Microsoft-Dokumentation"
+title: Anpassen von Build- und Debugtasks in Visual Studio mithilfe von „tasks.vs.json“ und „launch.vs.json“ | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -38,7 +38,7 @@ Passen Sie Ihre Codebasis ohne Projekt mithilfe der folgenden *JSON*-Dateien an:
 Diese *JSON*-Dateien befinden sich in einem ausgeblendeten Ordner namens *.vs* im Stammverzeichnis Ihrer Codebasis. Die Dateien *tasks.vs.json* und *launch.vs.json* werden von Visual Studio bei Bedarf erstellt, wenn Sie im **Projektmappen-Explorer** für eine Datei oder einen Ordner die Option **Tasks konfigurieren** oder **Einstellungen für Debuggen und Starten** auswählen. Diese *JSON*-Dateien werden ausgeblendet, da Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Dateien in das Stammverzeichnis Ihrer Codebasis, wo sie sichtbar sind.
 
 > [!TIP]
-> Wählen Sie zum Anzeigen ausgeblendeter Dateien in Visual Studio die Schaltfläche **Alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorers.
+> Klicken Sie zum Anzeigen ausgeblendeter Dateien in Visual Studio auf die Schaltfläche **Alle Dateien anzeigen** auf der Symbolleiste des **Projektmappen-Explorers**.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Definieren von Tasks mit „tasks.vs.json“
 
@@ -54,7 +54,7 @@ Benutzerdefinierte Tasks können zu einzelnen Dateien oder zu allen Dateien eine
 
 Wenn Ihre Codebasis benutzerdefinierte Buildtools verwendet, die von Visual Studio nicht erkannt werden, können Sie den Code in Visual Studio erst ausführen und debuggen, wenn Sie einige Konfigurationsschritte ausgeführt haben. Visual Studio stellt *Buildtasks* bereit, mit denen Sie Visual Studio anweisen können, wie Ihr Code kompiliert, neu kompiliert und bereinigt wird. Die Buildtaskdatei *tasks.vs.json* koppelt die innere Entwicklungsschleife von Visual Studio mit den benutzerdefinierten Buildtools, die Ihre Codebasis verwendet.
 
-Betrachten wir eine Codebasis, die aus einer einzelnen C#-Datei namens *hello.cs* besteht. Das Makefile für eine solche Codebasis könnte wie folgt aussehen:
+Betrachten wir eine Codebasis, die aus einer einzelnen C#-Datei namens *hello.cs* besteht. Das *Makefile* für eine solche Codebasis könnte folgendermaßen aussehen:
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +73,7 @@ bin:
     md bin
 ```
 
-Für ein solches Makefile, das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json*-Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
+Für ein solches *Makefile*, das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json*-Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
 
 ```json
 {
@@ -117,7 +117,7 @@ Für ein solches Makefile, das Ziele für die Kompilierung, Bereinigung und Neuk
 }
 ```
 
-Nachdem Sie Buildtasks in *tasks.vs.json* definiert haben, werden den entsprechenden Dateien im **Projektmappen-Explorer** zusätzliche Kontextmenüelemente hinzugefügt. Bei diesem Beispiel werden die Optionen **Build**, **Rebuild** und **Clean** zum Kontextmenü jeder *makefile*-Datei hinzugefügt.
+Nachdem Sie Buildtasks in *tasks.vs.json* definiert haben, werden den entsprechenden Dateien im **Projektmappen-Explorer** zusätzliche Kontextmenüelemente hinzugefügt. Bei diesem Beispiel werden die Optionen „Erstellen“, „Neu erstellen“ und „Bereinigen“ zum Kontextmenü jedes *Makefiles* hinzugefügt.
 
 ![Kontextmenü für „makefile“ zum Kompilieren, Neukompilieren und Bereinigen](media/customize-build-rebuild-clean.png)
 
@@ -205,23 +205,23 @@ Sie können Tasks für jede Datei und jeden Ordner erstellen, indem Sie den Name
 |-|-|
 |`"*"`| Der Task ist für alle Dateien und Ordner im Arbeitsbereich verfügbar.|
 |`"*/"`| Der Task ist für alle Ordner im Arbeitsbereich verfügbar.|
-|`"*.js"`| Der Task ist für alle Dateien mit der Erweiterung „.js“ im Arbeitsbereich verfügbar.|
-|`"/*.js"`| Der Task ist für alle Dateien mit der Erweiterung „.js“ im Stammverzeichnis des Arbeitsbereichs verfügbar.|
-|`"src/*/"`| Der Task ist für alle Unterordner des Ordners „src“ verfügbar.|
-|`"makefile"`| Der Task ist für alle makefile-Dateien im Arbeitsbereich verfügbar.|
-|`"/makefile"`| Der Task ist nur für die makefile-Datei im Stammverzeichnis des Arbeitsbereichs verfügbar.|
+|`"*.js"`| Der Task ist für alle Dateien mit der Erweiterung *.js* im Arbeitsbereich verfügbar.|
+|`"/*.js"`| Der Task ist für alle Dateien mit der Erweiterung *.js* im Stammverzeichnis des Arbeitsbereichs verfügbar.|
+|`"src/*/"`| Der Task ist für alle Unterordner des Ordners *src* verfügbar.|
+|`"makefile"`| Der Task ist für alle *Makefiles* im Arbeitsbereich verfügbar.|
+|`"/makefile"`| Der Task ist nur für das *Makefile* im Stammverzeichnis des Arbeitsbereichs verfügbar.|
 
 #### <a name="macros-for-tasksvsjson"></a>Makros für „tasks.vs.json“
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| Gibt jede Umgebungsvariable an (z.B. ${env.PATH}, ${env.COMSPEC} usw.), die für die Developer-Eingabeaufforderung festgelegt ist. Weitere Informationen finden Sie unter [Developer-Eingabeaufforderung für Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| Der vollständige Pfad zum Arbeitsbereichsordner (z.B. „C:\sources\hello“).|
-|`${file}`| Der vollständige Pfad der Datei oder des Ordners, für die bzw. den dieser Task ausgeführt werden soll (z.B. „C:\sources\hello\src\hello.js“).|
-|`${relativeFile}`| Der relative Pfad zu der Datei oder dem Ordner (z.B. „src\hello.js“).|
-|`${fileBasename}`| Der Name der Datei ohne Pfad oder Erweiterung (z.B. „hello“).|
-|`${fileDirname}`| Der vollständige Pfad zur Datei ohne den Dateinamen (z.B. „C:\sources\hello\src“).|
-|`${fileExtname}`| Die Erweiterung der ausgewählten Datei (z.B. „.js“).|
+|`${workspaceRoot}`| Der vollständige Pfad zum Arbeitsbereichsordner (z.B. *C:\sources\hello*).|
+|`${file}`| Der vollständige Pfad der Datei oder des Ordners, für die bzw. den dieser Task ausgeführt werden soll (z.B. *C:\sources\hello\src\hello.js*).|
+|`${relativeFile}`| Der relative Pfad zu der Datei oder dem Ordner (z.B. *src\hello.js*).|
+|`${fileBasename}`| Der Name der Datei ohne Pfad oder Erweiterung (z.B. *hello*).|
+|`${fileDirname}`| Der vollständige Pfad zur Datei ohne den Dateinamen (z.B. *C:\sources\hello\src*).|
+|`${fileExtname}`| Die Erweiterung der ausgewählten Datei (z.B. *.js*).|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Konfigurieren des Debuggens mit „launch.vs.json“
 

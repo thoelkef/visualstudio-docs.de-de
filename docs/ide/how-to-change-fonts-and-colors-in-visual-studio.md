@@ -1,30 +1,25 @@
 ---
-title: 'Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio'
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Gewusst wie: Ändern von Schriftarten und Farben in Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio
 
 Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf verschiedene Arten anpassen.
 
@@ -33,11 +28,11 @@ Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf versc
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Ändern des Farbschemas der IDE
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Allgemein**.
 
-1. Wählen Sie in der Liste **Farbdesign** entweder das Standardschema **Blau** oder **Dunkel** oder **Hell**.
+1. Wählen Sie in der Liste **Farbdesign** entweder das Standardschema **Blau** oder **Dunkel** bzw. **Hell** aus.
 
 > [!NOTE]
 > Wenn Sie ein Farbschema ändern, wird der Text in der IDE auf die Standardeinstellung oder zuvor benutzerdefinierte Schriftarten und Größen zurückgesetzt.
@@ -47,7 +42,7 @@ Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf versc
 
 ## <a name="use-windows-high-contrast-colors"></a>Verwenden kontrastreicher Windows-Farben
 
-Drücken Sie die Tasten **Linke ALT** + **Linke UMSCHALT** + **DRUCK**.
+Drücken Sie die Tasten **Linke ALT**+**Linke UMSCHALT**+**DRUCK**.
 
 > [!WARNING]
 > Diese Option legt einen hohen Kontrast für alle Anwendungen und die Benutzeroberfläche auf dem aktuellen Computer fest.
@@ -58,14 +53,14 @@ Sie können die Schriftart und Textgröße für alle Fenster und Dialogfelder in
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Ändern der Schriftart und -größe des gesamten Texts in der IDE
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Schriftarten und Farben**.
 
 1. Wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **Umgebungsschriftart** aus.
 
     > [!TIP]
-    > Wenn Sie die Schriftart nur für die Toolfenster ändern möchten, wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **[Alle Texttoolfenster]** aus.
+    > Wenn Sie die Schriftart nur für die Toolfenster ändern möchten, wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **Alle Texttoolfenster** aus.
 
 1. Wählen Sie in der Liste **Schriftart** eine Schriftart aus.
 
@@ -73,5 +68,5 @@ Sie können die Schriftart und Textgröße für alle Fenster und Dialogfelder in
 
 ## <a name="see-also"></a>Siehe auch
 
-[Eingabehilfen von Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-[Vorgehensweise: Ändern der im Editor verwendeten Schriftart und Farben.](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

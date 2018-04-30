@@ -1,23 +1,20 @@
 ---
-title: "Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity) | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity) | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.
@@ -40,8 +37,11 @@ Dadurch sollte das Problem behoben werden. Wenn Sie immer noch auf Probleme sto�
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Probleme mit VS 2015 und IntelliSense oder der Codeeinfärbung
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Probleme mit Visual Studio 2015 und IntelliSense oder der Codeeinfärbung
 Sie sollten Ihre Version von Visual Studio 2015 auf Update 3 aktualisieren.
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>Shaderdateien ohne Codeeinfärbung bei der Verwendung von Visual Studio 2017
+Stellen Sie sicher, dass die Workload „Desktopentwicklung mit C++“ in Ihrer Instanz von Visual Studio 2017 installiert ist. Der C/C++-Parser, der für die Codeeinfärbung verwendet wird, ist in dieser Workload enthalten.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio reagiert nicht mehr
 Mehrere Unity-Plug-Ins wie Parse, FMOD, UMP (Universal Media Player), ZFBrowser oder Embedded Browser verwenden native Threads. Wenn ein Plug-In der Runtime einen nativen Thread hinzufügt, führt dies zu einem Problem, da die Runtime dann Blockierungsaufrufe an das Betriebssystem ausgibt. Das bedeutet, dass Unity den Thread für den Debugger (oder das Neuladen einer Domäne) nicht unterbrechen kann und nicht mehr reagiert.
@@ -51,6 +51,23 @@ Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initial
 ### <a name="incompatible-project-in-visual-studio"></a>Nicht kompatibles Projekt in Visual Studio
 Überprüfen Sie zunächst, ob Visual Studio als externer Skript-Editor in Unity festgelegt ist (Bearbeiten > Einstellungen > Externe Tools). Überprüfen Sie anschließend, dass das Visual Studio-Plug-In in Unity installiert ist (die Felder „Hilfe“ bzw. „Info“ müssen in der Ansicht im unteren Bereich eine Nachricht wie „Microsoft Visual Studio Tools für Unity ist aktiviert“ anzeigen). Überprüfen Sie dann, ob die Erweiterung korrekt in Visual Studio installiert wurde (Hilfe bzw. Info).
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Zusätzliches Neuladen oder Visual Studio verliert alle geöffneten Fenster
+Stellen Sie sicher, dass Sie Projektdateien nie direkt über Asset Processor oder ein anderes Tool direkt bearbeiten. Wenn Sie die Projektdatei wirklich bearbeiten müssen, verwenden Sie die hierfür verfügbare API. Lesen Sie den Abschnitt zu [Problemen mit Assemblyverweisen](#Assembly-reference-issues).
+
+Wenn zusätzliches Neuladen auftritt oder Visual Studio alle geöffneten Fenster beim Neuladen verliert, stellen Sie sicher, dass die richtigen .NET-Pakete zur Festlegung von Zielversionen installiert sind. Weitere Informationen zu Frameworks finden Sie in folgendem Abschnitt.
+
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>Der Debugger wird bei Ausnahmen nicht unterbrochen
+Wenn Sie die veraltete Unity-Runtime (entspricht .NET 3.5) verwenden, wird der Debugger immer dann unterbrochen, wenn eine Ausnahme nicht behandelt wurde (d.h. außerhalb eines try/catch-Blocks). Wenn eine Ausnahme behandelt wird, verwendet der Debugger das Fenster „Ausnahmeeinstellungen“, um zu bestimmen, ob eine Unterbrechung erforderlich ist.
+
+Mit der neuen Runtime (entspricht .NET 4.6) wurde in Unity eine neue Möglichkeit zum Verwalten von Benutzerausnahmen eingeführt. Dadurch werden alle Ausnahmen als „Vom Benutzer behandelt“ betrachtet, auch wenn diese außerhalb eines try/catch-Blocks auftreten. Deshalb sollten Sie diese explizit im Fenster „Ausnahmeeinstellungen“ überprüfen, wenn Sie möchten, dass der Debugger unterbrochen wird.
+
+Erweitern Sie im Fenster „Ausnahmeeinstellungen“ (Debuggen > Fenster > Ausnahmeeinstellungen) den Knoten für eine Ausnahmekategorie (z.B. Common Language Runtime-Ausnahmen, also .NET-Ausnahmen), und aktivieren Sie das Kontrollkästchen für die Ausnahme, die Sie innerhalb dieser Kategorie abfangen möchten (z.B. „System.NullReferenceException“). Sie können auch eine ganze Kategorie von Ausnahmen auswählen.
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Unter Windows fordert Visual Studio das Herunterladen des Unity-Zielframeworks an.
+Visual Studio-Tools für Unity erfordert .NET Framework 3.5, das nicht standardmäßig unter Windows 8 oder 10 installiert ist. Befolgen Sie die Anweisungen zum Herunterladen und Installieren von .NET Framework 3.5, um dieses Problem zu beheben.
+
+Wenn Sie die neue Unity-Runtime verwenden, sind ebenfalls die Pakete zur Festlegung der Zielversion für Version 4.6 und 4.7.1 von .NET erforderlich. Es ist möglich, diese im Installer von Visual Studio 2017 schnell zu installieren. Wählen Sie hierzu eine benutzerdefinierte Installation von Visual Studio 2017 aus, klicken Sie auf „Einzelne Komponenten“, und wählen Sie in der Kategorie „.NET“ alle Pakete zur Festlegung der Zielversion mit 4.x aus.
+
 ### <a name="assembly-reference-issues"></a>Probleme mit dem Assemblyverweis
 Wenn Ihr Projekt im Hinblick auf Verweise komplex ist, oder wenn Sie diesen Generationsschritt besser steuern möchten, können Sie unsere [API](../cross-platform/customize-project-files-created-by-vstu.md) verwenden, um das generierte Projekt oder den Projektmappeninhalt zu bearbeiten. Sie können auch [Antwortdateien](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) in Ihrem Unity-Projekt verwenden, die dann verarbeitet werden.
 
@@ -58,7 +75,7 @@ Wenn Ihr Projekt im Hinblick auf Verweise komplex ist, oder wenn Sie diesen Gene
 Wenn Visual Studio keinen Quellspeicherort für einen bestimmten Haltepunkt finden kann, wird Ihnen eine Warnung um Ihren Haltepunkt angezeigt. Überprüfen Sie, ob das von Ihnen verwendete Verhalten in der Unity-Szene korrekt geladen bzw. verwendet wird.
 
 ### <a name="breakpoints-not-hit"></a>Haltepunkte werden nicht erreicht.
- Überprüfen Sie, ob das von Ihnen verwendete Verhalten in der Unity-Szene korrekt geladen bzw. verwendet wird. Beenden Sie Visual Studio und Unity, und löschen Sie anschließend alle generierten Dateien (*.csproj, *.sln) sowie den gesamten Bibliotheksordner.
+Überprüfen Sie, ob das von Ihnen verwendete Verhalten in der Unity-Szene korrekt geladen bzw. verwendet wird. Beenden Sie Visual Studio und Unity, und löschen Sie anschließend alle generierten Dateien (*.csproj, *.sln) sowie den gesamten Bibliotheksordner.
 
 ### <a name="unable-to-attach"></a>Anfügen nicht möglich.
 -   Versuchen Sie, Ihr Antivirenprogramm kurzzeitig zu deaktivieren, oder erstellen Sie Ausschlussregeln für Visual Studio und Unity.
@@ -69,22 +86,9 @@ Wenn Visual Studio keinen Quellspeicherort für einen bestimmten Haltepunkt find
 ### <a name="unable-to-debug-android-players"></a>Debuggen von Android Players nicht möglich
 Multicast wird für die Erkennung von Players (der von Unity verwendete Standardmechanismus) verwendet. Anschließend wird allerdings eine gewöhnliche TCP-Verbindung verwendet, um den Debugger anzufügen. Die Erkennungsphase stellt für Android-Geräte das größte Problem dar.
 
-USB ist eine sehr schnelle Möglichkeit zum Debuggen. Allerdings ist diese Methode nicht mit dem Erkennungsmechanismus des Unity-Players kompatibel.
-WLAN ist zwar vielseitiger, aber aufgrund der Wartezeit extrem langsam im Vergleich zu USB. Es wurde mangelnde Unterstützung für einige Router oder Geräte festgestellt (die Nexus-Serien sind dafür besonders bekannt).
+WLAN ist zwar vielseitig, aber aufgrund der Wartezeit extrem langsam im Vergleich zu USB. Es wurde mangelnde Unterstützung für einige Router oder Geräte festgestellt (die Nexus-Serien sind dafür besonders bekannt).
 
-Sie können versuchen, den folgenden USB zu verwenden, um die geöffneten Ports auf dem verbundenen Gerät anzuzeigen (wenn der Player verfügbar ist und ausgeführt wird, sodass Sie den Port zum Debuggen immer im Format 56xxx sehen können):
-
-```shell
-adb shell netstat
-```
-
-Leiten Sie den Port an den lokalen Computer weiter:
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-Verbinden Sie anschließend Visual Studio-Tools für Unity über den weitergeleiteten Port 127.0.0.1:56xxx.
+USB ist für ein schnelles Debuggen geeignet, und Visual Studio-Tools für Unity kann nun USB-Geräte erkennen und mit dem Adb-Server kommunizieren, um die Ports für das Debuggen ordnungsgemäß weiterzuleiten.
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrieren von UnityVS zu Visual Studio-Tools für Unity
  Wenn Sie von UnityVS zu Visual Studio-Tools für Unity migrieren, müssen Sie neue Visual Studio-Projektmappen für Ihre Unity-Projekte generieren.
@@ -96,9 +100,6 @@ Verbinden Sie anschließend Visual Studio-Tools für Unity über den weitergelei
 2.  Importieren Sie das Visual Studio-Tools für Unity-Paket in Ihr Unity-Projekt. Informationen zum Importieren des VSTU-Pakets finden Sie unter "Konfigurieren von Visual Studio-Tools für Unity" auf der Seite [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .
 
 3.  Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Unter Windows fordert Visual Studio das Herunterladen des Unity-Zielframeworks an.
- Visual Studio-Tools für Unity erfordert .NET Framework 3.5, das nicht standardmäßig unter Windows 8 oder 10 installiert ist. Um dieses Problem zu beheben, befolgen Sie die Anweisungen zum Herunterladen und Installieren von .NET Framework 3.5.
 
 ## <a name="known-issues"></a>Bekannte Probleme
  Es gibt bekannte Probleme in Visual Studio-Tools für Unity, deren Ursache die Interaktion des Debuggers mit der älteren Version von Unity des C#-Compilers ist. Wir arbeiten daran, diese Fehler zu beheben, aber in der Zwischenzeit können die folgenden Probleme weiterhin auftreten:

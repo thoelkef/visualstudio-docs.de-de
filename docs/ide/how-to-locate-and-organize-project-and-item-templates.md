@@ -1,12 +1,9 @@
 ---
 title: Organisieren von Vorlagen in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -15,12 +12,12 @@ helpviewer_keywords:
 - templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen
 
@@ -32,15 +29,15 @@ Installierte Vorlagen und Benutzervorlagen werden an unterschiedlichen Orten ges
 
 ### <a name="user-templates"></a>Benutzervorlagen
 
-Wenn Sie eine komprimierte Datei (ZIP), die eine VSTEMPLATE-Datei enthält, zum Verzeichnis mit Benutzervorlagen hinzufügen, wird die Vorlage in den Dialogfeldern **Neues Projekt** bzw. **Neues Element hinzufügen** angezeigt. Benutzervorlagen werden standardmäßig in folgenden Verzeichnissen gespeichert:
+Wenn Sie eine komprimierte Datei (*ZIP*), die eine *VSTEMPLATE*-Datei enthält, zum Verzeichnis mit Benutzervorlagen hinzufügen, wird die Vorlage in den Dialogfeldern **Neues Projekt** bzw. **Neues Element hinzufügen** angezeigt. Benutzervorlagen werden standardmäßig in folgenden Verzeichnissen gespeichert:
 
-- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates“
+- *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*
 
-- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates“
+- *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*
 
 Das folgende Verzeichnis enthält beispielsweise die Benutzerprojektvorlagen für C#:
 
-   „C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\“
+- *C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
 
 > [!TIP]
 > Sie können den Speicherort für Benutzervorlagen unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** festlegen.
@@ -49,13 +46,13 @@ Das folgende Verzeichnis enthält beispielsweise die Benutzerprojektvorlagen fü
 
 Standardmäßig werden Vorlagen, die gemeinsam mit Visual Studio installiert werden, in folgendem Verzeichnis gespeichert:
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Programmiersprache*\\*Gebietsschema-ID*
+- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\<Programming Language\>\\<Locale ID>*
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Programmiersprache*\\*Gebietsschema-ID*
+- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\<Programming Language\>\\<Locale ID>*
 
 Das folgende Verzeichnis enthält beispielsweise die Elementvorlagen für Visual Basic für Englisch (LCID 1033):
 
-   C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+- *C:\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
 
 ## <a name="organize-templates"></a>Organisieren von Vorlagen
 
@@ -68,7 +65,7 @@ Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzuf
 
 1. Erstellen Sie im Verzeichnis für Benutzerprojektvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z.B. die Kategorie **HelloWorld** für C#-Vorlagen einzurichten, erstellen Sie das folgende Verzeichnis:
 
-    „\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld\“
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.
 
@@ -80,7 +77,7 @@ Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzuf
 
 1. Erstellen Sie im Verzeichnis für Benutzerelementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z.B. die Kategorie **HelloWorld** für C#-Elementvorlagen einzurichten, erstellen Sie das folgende Verzeichnis:
 
-    „\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld\“
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.
 
@@ -90,15 +87,15 @@ Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzuf
 
 ### <a name="display-templates-in-parent-categories"></a>Anzeigen von Vorlagen in übergeordneten Kategorien
 
-Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Kategorien anzeigen lassen, indem Sie das `NumberOfParentCategoriesToRollUp`-Element in der VSTEMPLATE-Datei verwenden. Diese Schritte sind für Projektvorlagen und Elementvorlagen identisch.
+Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Kategorien anzeigen lassen, indem Sie das `NumberOfParentCategoriesToRollUp`-Element in der *VSTEMPLATE*-Datei verwenden. Diese Schritte sind für Projektvorlagen und Elementvorlagen identisch.
 
 #### <a name="to-display-templates-in-parent-categories"></a>So zeigen Sie Vorlagen in übergeordneten Kategorien an
 
-1. Suchen Sie die ZIP-Datei, die die Vorlage enthält.
+1. Suchen Sie die *ZIP*-Datei, die die Vorlage enthält.
 
-1. Extrahieren Sie die ZIP-Datei.
+1. Extrahieren Sie die *ZIP*-Datei.
 
-1. Öffnen Sie die VSTEMPLATE-Datei in Visual Studio.
+1. Öffnen Sie die *VSTEMPLATE*-Datei in Visual Studio.
 
 1. Fügen Sie im `TemplateData`-Element ein `NumberOfParentCategoriesToRollUp`-Element hinzu. Durch den folgenden Code wird die Vorlage beispielsweise in der unmittelbar übergeordneten Kategorie, nicht jedoch in höheren Kategorien angezeigt.
 
@@ -112,20 +109,20 @@ Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Katego
     </TemplateData>
     ```
 
-1. Speichern und schließen Sie die VSTEMPLATE-Datei.
+1. Speichern und schließen Sie die *VSTEMPLATE*-Datei.
 
 1. Klicken Sie mit der rechten Maustaste auf die Dateien in der Vorlage, die Sie auswählen möchten, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**.
 
-   Die Dateien werden in eine ZIP-Datei komprimiert.
+   Die Dateien werden in eine *ZIP*-Datei komprimiert.
 
-1. Löschen Sie die extrahierten Vorlagendateien und die alte ZIP-Datei der Vorlage.
+1. Löschen Sie die extrahierten Vorlagendateien und die alte *ZIP*-Datei der Vorlage.
 
-1. Fügen Sie die neue ZIP-Datei in das Verzeichnis ein, in dem sich die gelöschte ZIP-Datei befunden hat.
+1. Fügen Sie die neue *ZIP*-Datei in das Verzeichnis ein, in dem sich die gelöschte *ZIP*-Datei befunden hat.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)  
+[Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)  
 [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)  
 [NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)  
-[Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
-[Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+[Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
+[Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)

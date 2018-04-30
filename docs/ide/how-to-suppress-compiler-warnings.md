@@ -1,27 +1,25 @@
 ---
-title: "Unterdrücken von Compilerwarnungen in Visual Studio für Projekte und NuGet-Pakete | Microsoft-Dokumentation"
-ms.custom: 
+title: Unterdrücken von Compilerwarnungen in Visual Studio für Projekte und NuGet-Pakete | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af162101eb20e018be44480c862192c0c59276a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compilerwarnungen
 
-Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Beispielsweise möchten Sie möglicherweise nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Protokollausführlichkeit auf „Normal“, „Ausführlich“ oder „Diagnose“ generiert wird. Weitere Informationen zur Protokollausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
+Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Protokollausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppressing-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F# #
 
 Verwenden Sie die Eigenschaftenseite **Build**, um bestimmte Warnungen für C#- und F#-Projekte zu unterdrücken.
 
@@ -35,7 +33,7 @@ Verwenden Sie die Eigenschaftenseite **Build**, um bestimmte Warnungen für C#- 
 
 1. Generieren Sie die Projektmappe neu.
 
-## <a name="suppressing-specific-warnings-for-visual-c"></a>Unterdrücken bestimmter Warnungen für Visual C++
+## <a name="suppress-specific-warnings-for-visual-c"></a>Unterdrücken bestimmter Warnungen für Visual C++
 
 Verwenden Sie die Seite **Konfigurationseigenschaften**, um bestimmte Warnungen für C++-Projekte zu unterdrücken.
 
@@ -53,7 +51,7 @@ Verwenden Sie die Seite **Konfigurationseigenschaften**, um bestimmte Warnungen 
 
 1. Wählen Sie die Schaltfläche **OK** aus, und erstellen Sie die Projektmappe dann erneut.
 
-## <a name="suppressing-warnings-for-visual-basic"></a>Unterdrücken von Warnungen für Visual Basic
+## <a name="suppress-warnings-for-visual-basic"></a>Unterdrücken von Warnungen für Visual Basic
 
 Sie können bestimmte Compilerwarnungen für Visual Basic unterdrücken, indem Sie die *VBPROJ*-Datei für das Projekt bearbeiten. Um Warnungen nach *Kategorie* zu unterdrücken, können Sie die Seite [Compilereigenschaften](../ide/reference/compile-page-project-designer-visual-basic.md) verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -65,7 +63,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
 
 1. Wählen Sie in der Menüleiste **Projekt** > **Projekt entladen** aus.
 
-1. Öffnen Sie im **Projektmappen-Explore**r per Rechtsklick das Kontextmenü für das Projekt, und wählen Sie dann *Projekname***.vbproj**  **bearbeiten** aus.
+1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü für das Projekt, und klicken Sie dann auf **<ProjectName>.vbproj bearbeiten**.
 
     Die XML-Projektdatei wird im Code-Editor geöffnet.
 
@@ -89,7 +87,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
     ```
 
    > [!NOTE]
-   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Beispiel:
+   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Zum Beispiel:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -114,7 +112,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
 
 Weitere Informationen finden Sie im Abschnitt zur [Compileroption /nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) für den Visual Basic-Befehlszeilencompiler.
 
-## <a name="suppressing-warnings-for-nuget-packages"></a>Unterdrücken von Warnungen für NuGet-Pakete
+## <a name="suppress-warnings-for-nuget-packages"></a>Unterdrücken von Warnungen für NuGet-Pakete
 
 In einigen Fällen möchten Sie möglicherweise NuGet-Compilerwarnungen nicht für ein gesamtes Projekt, sondern nur für ein einzelnes NuGet-Paket unterdrücken. Diese Warnungen erfüllen einen Zweck, deshalb sollten sie nicht auf Projektebene unterdrückt werden. Beispielsweise könnten Sie in einer der NuGet-Warnungen darüber informiert werden, dass das Paket nicht vollständig mit Ihrem Projekt kompatibel ist. Wenn Sie die Warnung auf Projektebene unterdrücken und später ein weiteres NuGet-Paket hinzufügen, wissen Sie nie, ob die Kompatibilitätswarnung von diesem Paket ausgelöst wurde.
 
@@ -135,5 +133,5 @@ In einigen Fällen möchten Sie möglicherweise NuGet-Compilerwarnungen nicht f�
 ## <a name="see-also"></a>Siehe auch
 
 [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)  
-[Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)  
 [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

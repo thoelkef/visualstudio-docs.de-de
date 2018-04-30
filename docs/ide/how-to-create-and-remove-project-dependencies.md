@@ -1,13 +1,9 @@
 ---
-title: "Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten'
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -18,56 +14,56 @@ helpviewer_keywords:
 - dependencies, project
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8fe1706e6310c077399bb9300d439a7664d21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten
-Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erforderlich sein, bestimmte Projekte zuerst zu erstellen, um Code zu generieren, der von anderen Projekten verwendet wird. Wenn ein Projekt ausführbaren Code verarbeitet, der von einem anderen Projekt generiert wurde, wird auf das generierende Projekt als Projektabhängigkeit des verarbeitenden Projekts verwiesen. Solche Abhängigkeitsbeziehungen können im Dialogfeld **Projektabhängigkeiten** definiert werden.  
+# <a name="how-to-create-and-remove-project-dependencies"></a>Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten
 
-### <a name="to-assign-dependencies-to-projects"></a>So weisen Sie Projekten Abhängigkeiten zu  
+Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erforderlich sein, bestimmte Projekte zuerst zu erstellen, um Code zu generieren, der von anderen Projekten verwendet wird. Wenn ein Projekt ausführbaren Code verarbeitet, der von einem anderen Projekt generiert wurde, wird auf das generierende Projekt als Projektabhängigkeit des verarbeitenden Projekts verwiesen. Solche Abhängigkeitsbeziehungen können im Dialogfeld **Projektabhängigkeiten** definiert werden.
 
-1.  Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
+## <a name="to-assign-dependencies-to-projects"></a>So weisen Sie Projekten Abhängigkeiten zu
 
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
+1.  Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
 
-     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.  
+2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
 
-    > [!NOTE]
-    >  Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
-
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
-
-4.  Aktivieren Sie im Feld **Abhängigkeiten** die Kontrollkästchen für alle weiteren Projekte, die vor Erstellung dieses Projekts erstellt werden müssen.  
-
- Die Projektmappe muss aus mehr als einem Projekt bestehen, bevor Sie Projektabhängigkeiten erstellen können.  
-
-### <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten  
-
-1.  Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
-
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
-
-     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.  
+     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
 
     > [!NOTE]
-    >  Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
+    > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.
 
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
+3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
 
-4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.  
+4.  Aktivieren Sie im Feld **Abhängigkeiten** die Kontrollkästchen für alle weiteren Projekte, die vor Erstellung dieses Projekts erstellt werden müssen.
 
-## <a name="see-also"></a>Siehe auch  
- [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)   
- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
+ Die Projektmappe muss aus mehr als einem Projekt bestehen, bevor Sie Projektabhängigkeiten erstellen können.
 
+## <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten
+
+1.  Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
+
+2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
+
+     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
+
+    > [!NOTE]
+    > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.
+
+3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
+
+4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
+- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)

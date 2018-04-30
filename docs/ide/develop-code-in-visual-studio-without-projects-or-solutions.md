@@ -1,30 +1,29 @@
 ---
-title: Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen | Microsoft-Dokumentation
+title: Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
 In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
 
-Nach dem Öffnen der Codedateien in Visual Studio zeigt der Projektmappen-Explorer alle Dateien im Ordner an. Sie können auf eine beliebige Datei klicken, um mit der Bearbeitung zu beginnen. Visual Studio beginnt im Hintergrund damit, die Dateien zu indizieren, um IntelliSense, Navigation und Refactoringfunktionen zu ermöglichen. Während Sie Dateien bearbeiten, erstellen, verschieben und löschen, verfolgt Visual Studio die Änderungen automatisch nach und aktualisiert den IntelliSense-Index kontinuierlich. Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen eine grundlegende Anweisungsvervollständigung per IntelliSense.
+Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Explorer** alle Dateien im Ordner an. Sie können auf eine beliebige Datei klicken, um mit der Bearbeitung zu beginnen. Visual Studio beginnt im Hintergrund damit, die Dateien zu indizieren, um IntelliSense, Navigation und Refactoringfunktionen zu ermöglichen. Während Sie Dateien bearbeiten, erstellen, verschieben und löschen, verfolgt Visual Studio die Änderungen automatisch nach und aktualisiert den IntelliSense-Index kontinuierlich. Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen eine grundlegende Anweisungsvervollständigung per IntelliSense.
 
 ## <a name="open-any-code"></a>Öffnen von beliebigem Code
 
@@ -32,7 +31,7 @@ Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
 
 - Wählen Sie in der Visual Studio-Menüleiste die Einträge **Datei** > **Öffnen** > **Ordner**, und navigieren Sie zum Codespeicherort.
 - Wählen Sie im Kontextmenü (Rechtsklick) eines Ordners, der Code enthält, den Befehl **In Visual Studio öffnen** .
-- Wählen Sie den Link **Ordner öffnen** auf der Visual Studio-Startseite.
+- Klicken Sie auf der Visual Studio-**Startseite** auf den Link **Ordner öffnen**.
 - Wenn Sie eine Tastatur verwenden, drücken Sie in Visual Studio die Tasten **STRG**+**UMSCHALT**+**ALT**+**O**.
 - Öffnen Sie Code aus einem geklonten GitHub-Repository.
 
@@ -46,7 +45,7 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
 
    ![Klonenschaltfläche in GitHub](./media/VSIDE_Code_Clone.png)
 
-1. Wählen Sie in Visual Studio die Registerkarte **Team Explorer**, um Team Explorer zu öffnen. Wenn die Registerkarte nicht angezeigt wird, öffnen Sie sie über **Ansicht** > **Team Explorer**.
+1. Klicken Sie in Visual Studio auf die Registerkarte **Team Explorer**, um **Team Explorer** zu öffnen. Wenn die Registerkarte nicht angezeigt wird, öffnen Sie sie über **Ansicht** > **Team Explorer**.
 
 1. Wählen Sie in Team Explorer im Abschnitt **Lokale Git-Repositorys** den Befehl **Klonen** aus, und fügen Sie die URL der GitHub-Seite in das Textfeld ein.
 
@@ -54,11 +53,11 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
 
 1. Wählen Sie die Schaltfläche **Klonen**, um die Dateien des Projekts in einem lokalen Git-Repository zu klonen. Dies kann je nach Größe des Repositorys einige Minuten dauern.
 
-1. Wählen Sie nach dem Klonen des Repositorys auf Ihrem System in Team Explorer den Befehl **Öffnen** im Kontextmenü (Rechtsklick) des neu geklonten Repositorys.
+1. Wählen Sie nach dem Klonen des Repositorys auf Ihrem System in **Team Explorer** den Befehl **Öffnen** im Kontextmenü (Rechtsklick) des neu geklonten Repositorys aus.
 
    ![Geklontes Repository](./media/VSIDE_Code_Clone3.png)
 
-1. Wählen Sie den Befehl **Ordneransicht anzeigen** aus, um die Dateien im Projektmappen-Explorer anzuzeigen.
+1. Wählen Sie den Befehl **Ordneransicht anzeigen** aus, um die Dateien im **Projektmappen-Explorer** anzuzeigen.
 
    ![Ordneransicht anzeigen](./media/VSIDE_Code_Clone3_show.png)
 

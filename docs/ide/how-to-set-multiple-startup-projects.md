@@ -1,32 +1,28 @@
 ---
 title: 'Vorgehensweise: Festlegen mehrerer Startprojekte | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 322b82e37851ef78c97664df9c33db9194d9db90
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Gewusst wie: Festlegen mehrerer Startprojekte
+# <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
 In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des Debuggers ausgeführt wird.  
 
-### <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest  
+## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest  
 
 1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (den obersten Knoten).  
 
@@ -36,9 +32,8 @@ In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des 
 
 4.  Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
 
-## <a name="see-also"></a>Siehe auch  
- [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Siehe auch
 
- [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
-
- [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
+- [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
+- [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)

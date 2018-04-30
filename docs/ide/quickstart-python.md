@@ -1,13 +1,10 @@
 ---
-title: 'Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio | Microsoft-Dokumentation'
+title: 'Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio'
 description: In diesem Schnellstart verwenden Sie Visual Studio, um mithilfe des Flask-Frameworks eine einfache Web-App in Python zu erstellen.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -82,7 +79,7 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
 **Frage: Wo erfahre ich mehr über andere verfügbare Python-Pakete?**
 
-**Antwort:** Besuchen Sie die Seite [Python Package Index](https://pypi.python.org/pypi) (pypi.python.org).
+**Antwort:** Besuchen Sie die Seite [Python Package Index](https://pypi.org/) (pypi.org).
 
 ## <a name="add-a-code-file"></a>Hinzufügen einer Codedatei
 
@@ -121,7 +118,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 **Frage: Wo erfahre ich mehr über Flask?**
 
-**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 

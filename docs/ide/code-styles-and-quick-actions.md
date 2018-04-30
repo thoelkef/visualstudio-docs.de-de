@@ -1,24 +1,22 @@
 ---
-title: "Codeformateinstellungen für Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Codeformateinstellungen für Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 03/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.workload: multiple
-ms.openlocfilehash: 741df95afdd7c7e8b6f0ba2de75c1465cd35cc97
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -30,7 +28,7 @@ Sie können für jedes Element über die Dropdownfelder jeder Zeile die Werte f�
 
 Codeformateinstellungen für .NET können auch mithilfe einer [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei verwaltet werden. In diesem Fall haben die Einstellungen in der EDITORCONFIG-Datei Vorrang gegenüber den im Dialogfeld **Optionen** ausgewählten Optionen. Sie können eine EDITORCONFIG-Datei verwenden, um ein Codierungsformat für Ihr gesamtes Repository oder Ihr gesamtes Projekt zu erzwingen oder zu konfigurieren.
 
-## <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Siehe auch
 
-[Schnellaktionen](../ide/quick-actions.md)  
+[Schnelle Aktionen](../ide/quick-actions.md)  
 [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

@@ -1,29 +1,28 @@
 ---
 title: Suchen von Verweisen im Code | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 09/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 92c12e4d51255849843f938c032ca17b611eeeab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c59a73fd0ffa23dd35d989a0fd0a0ae38b2419a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-references-in-your-code"></a>Suchen von Verweisen im Code  
 Mithilfe des Befehls **Alle Verweise suchen** können Sie in Ihrer gesamten Codebasis die Stellen finden, an denen auf bestimmte Codeelemente verwiesen wird. Den Befehl **Alle Verweise suchen** finden Sie im Kontextmenü (Rechtsklick) des Elements, für das Sie Verweise suchen möchten. Wenn Sie eine Tastatur verwenden, können Sie einfach **UMSCHALT+F12** drücken.  
 
-Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **'*element*' references** (<Element>-Verweise) angezeigt, wobei *element* der Name des gesuchten Elements ist. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:  
+Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **<element>-Verweise** angezeigt, wobei *element* dem Namen des gesuchten Elements entspricht. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:  
 - Den Suchbereich über ein Dropdown-Listenfeld ändern. Sie können auswählen, nur in geänderten Dokumenten bis hin zur gesamten Projektmappe zu suchen.  
 - Das ausgewählte Verweiselement durch Auswählen der Schaltfläche **Kopieren** kopieren.  
 - Schaltflächen auswählen, um zum nächsten oder vorherigen Element in der Liste zu wechseln. Drücken Sie dazu alternativ die Tasten **F8** und **UMSCHALT+F8**.  
@@ -36,15 +35,15 @@ Sie können auch mit dem Mauszeiger auf ein Suchergebnis zeigen, um eine Vorscha
 
 ![Toolfenster „Alle Verweise suchen“](../ide/media/vside_findallreferences.png)  
 
-### <a name="navigate-to-references"></a>„Navigieren zu“-Verweise
+## <a name="navigate-to-references"></a>„Navigieren zu“-Verweise
 Mithilfe der folgenden Methoden können Sie zu den **Verweisen** im entsprechenden Fenster wechseln:  
 
 - Drücken Sie **F8**, um zum nächsten Verweis zu springen, oder **UMSCHALT+F8**, um zum vorherigen Verweis zu wechseln.  
 - Drücken Sie auf einem Verweis die **EINGABETASTE**, oder führen Sie einen Doppelklick aus, um zu der entsprechenden Stelle im Code zu wechseln.  
 - Wählen Sie im Kontextmenü eines Verweises den Befehl **Gehe zu vorheriger Position** oder **Gehe zu nächster Position** aus.  
-- Wählen Sie den **Pfeil nach oben** und den **Pfeil nach unten** aus (falls sie im Dialogfeld „Optionen“ aktiviert sind). Um diese Funktionalität zu aktivieren, klicken Sie im Menü auf **Extras** > **Optionen** > **Umgebung** > **Registerkarten und Fenster** > **Vorschauregisterkarte** und anschließend auf die Felder **Das Öffnen neuer Dateien in der Vorschauregisterkarte zulassen** und **Vorschau der ausgewählten Dateien in "Ergebnisse suchen" anzeigen**.  
+- Drücken Sie die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** (falls diese im Dialogfeld **Optionen** aktiviert sind). Klicken Sie zum Aktivieren dieser Funktionalität im Menü auf **Extras** > **Optionen** > **Umgebung** > **Registerkarten und Fenster** > **Vorschauregisterkarte**, und aktivieren Sie anschließend die Kontrollkästchen **Das Öffnen neuer Dateien in der Vorschauregisterkarte zulassen** und **Vorschau der ausgewählten Dateien in „Ergebnisse suchen“ anzeigen**.  
 
-### <a name="change-reference-groupings"></a>Änderung von Verweisgruppierungen  
+## <a name="change-reference-groupings"></a>Änderung von Verweisgruppierungen  
 Standardmäßig werden Verweise vom Projekt dann per Definition gruppiert. Sie können diese Gruppierungsreihenfolge jedoch ändern, indem Sie im Dropdown-Listenfeld auf der Symbolleiste die Einstellung **Gruppieren nach:** ändern. Sie können sie beispielsweise von der Standardeinstellung **Projekt, dann Definition** in **Definition, dann Projekt** ändern.  
 
 **Definition** und **Projekt** sind die beiden verwendeten Standardgruppierungen, aber Sie können andere hinzufügen, indem Sie den Befehl **Gruppierung** im Kontextmenü des ausgewählten Elements auswählen. Das Hinzufügen weiterer Gruppen kann hilfreich sein, wenn Ihre Projektmappe viele Dateien und Pfade enthält.  

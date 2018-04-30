@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Konfigurieren von Projekten für Zielplattformen | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Konfigurieren von Projekten für Zielplattformen | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -17,26 +15,26 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc85686b9b60692a625e3e09403e0e7b571f2b2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Gewusst wie: Konfigurieren von Projekten für Zielplattformen
+# <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es Ihnen, die Anwendungen für unterschiedliche Zielplattformen einzurichten, einschließlich 64-Bit-Plattformen. Weitere Informationen zur Unterstützung von 64-Bit-Plattformen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finden Sie unter [64-Bit-Anwendungen](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
-## <a name="targeting-platforms-with-the-configuration-manager"></a>Festlegen von Zielplattformen mit dem Konfigurations-Manager  
+## <a name="target-platforms-with-the-configuration-manager"></a>Zielplattformen mit dem Konfigurations-Manager  
  Mit dem **Konfigurations-Manager** können Sie für ein Projekt schnell eine neue Zielplattform hinzufügen. Wenn Sie eine der in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] enthaltenen Plattformen auswählen, werden die Projekteigenschaften geändert, um das Projekt unter Berücksichtigung der ausgewählten Plattform zu erstellen.  
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>So konfigurieren Sie ein Projekt für eine 64-Bit-Plattform  
   
-1.  Wählen Sie auf der Menüleiste die Option **Erstellen**und dann **Konfigurations-Manager**aus.  
+1.  Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.  
   
 2.  Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.  
   
@@ -53,19 +51,19 @@ ms.lasthandoff: 12/22/2017
   
  Es werden die Eigenschaften für alle Projekte mit der 64-Bit-Plattform als Zielplattform aktualisiert, und der nächste Build des Projekts wird für 64-Bit-Plattformen optimiert.  
   
-## <a name="targeting-platforms-in-the-project-designer"></a>Festlegen von Zielplattformen im Projekt-Designer  
- Mit dem Projekt-Designer können Sie ebenfalls unterschiedliche Zielplattformen für Ihr Projekt festlegen. Wenn Sie die gewünschte Zielplattform nicht in der Liste im Dialogfeld **Neue Projektmappenplattform** auswählen können, können Sie eine benutzerdefinierte Konfiguration erstellen und benennen und die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.  
+## <a name="target-platforms-in-the-project-designer"></a>Zielplattformen im Projekt-Designer  
+ Mit dem **Projekt-Designer** können Sie ebenfalls unterschiedliche Zielplattformen für Ihr Projekt festlegen. Wenn Sie die gewünschte Zielplattform nicht in der Liste im Dialogfeld **Neue Projektmappenplattform** auswählen können, können Sie eine benutzerdefinierte Konfiguration erstellen und benennen und die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.  
   
  Die für diese Aufgabe erforderlichen Schritte sind je nach Programmiersprache unterschiedlich. Weitere Informationen finden Sie unter den folgenden Links:  
   
 -   Informationen zu -[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Projekten finden Sie unter [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).  
   
--   Informationen zu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Projekten finden Sie unter [Seite „Erstellen“, Projekt-Designer](../ide/reference/build-page-project-designer-csharp.md).  
+-   Informationen zu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Projekten finden Sie unter [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
 -   Informationen zu [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten finden Sie unter [/clr (Common Language Runtime-Kompilierung)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md)   
- [-platform (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
+ [/platform (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64-Bit-Anwendungen](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)

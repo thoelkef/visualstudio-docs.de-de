@@ -1,24 +1,24 @@
 ---
 title: Azure PAYG-Vorteil
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to set up your Azure Pay-As-You-Go account.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>Einrichten eines Dev/Test Pay-As-You-Go-Abonnements
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Einrichten eines Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
 
-1.  Klicken Sie auf den Link **Aktivieren** am unteren Rand der Kachel „Vorteil“, um den Vorteil Ihres Azure-Abonnements mit nutzungsbasierter Bezahlung zu nutzen.   
+1.  Melden Sie sich in [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, klicken Sie auf den Link **Aktivieren** am unteren Rand der Kachel „Vorteil“, um die Vorteile Ihres Azure-Abonnements mit nutzungsbasierter Bezahlung zu nutzen.   
 
     ![Azure PAYG-Kachel](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 

@@ -1,12 +1,8 @@
 ---
-title: Entsperren von Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: 'Vorgehensweise: Entsperren von Visual Studio'
 ms.date: 07/20/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -14,13 +10,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>Vorgehensweise: Entsperren von Visual Studio
 
 Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Durch Anmelden bei der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) verlängert sich der Testzeitraum auf 90 Tage. Um Visual Studio weiterhin zu verwenden, entsperren Sie die IDE-Schnittstelle, indem Sie
 
@@ -32,16 +28,16 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Durch Anmelden b
 
 So entsperren Sie Visual Studio mithilfe eines MSDN- oder Visual Studio Team Service-Onlineabonnements, das mit einem Microsoft-Konto oder einem Geschäfts-, Schul- oder Unikonto verknüpft ist:
 
-1. Klicken Sie auf die Schaltfläche „Anmelden“ in der rechten oberen Ecke der IDE-Schnittstelle (oder wechseln Sie zu „Datei“ > „Kontoeinstellungen“, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf die Schaltfläche „Anmelden“).
+1. Klicken Sie auf die Schaltfläche **Anmelden** in der rechten oberen Ecke der IDE (oder wechseln Sie zu **Datei** >  **Kontoeinstellungen**, um das Dialogfeld **Kontoeinstellungen** zu öffnen, und klicken Sie auf die Schaltfläche **Anmelden**).
 
 1. Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht nach einem Visual Studio- oder Visual Studio Team Services-Abonnement, das mit Ihrem Konto verknüpft ist.
 
 > [!IMPORTANT]
-> Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto im Team Explorer-Toolfenster herstellen. Wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto herstellen, können Sie sich mithilfe von Microsoft- oder Geschäfts- bzw. Schulkonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
+> Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto im **Team Explorer-Toolfenster** herstellen. Wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto herstellen, können Sie sich mithilfe von Microsoft- oder Geschäfts- bzw. Schulkonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>So entsperren Sie Visual Studio mit einem Product Key
 
-1. Wählen Sie **Datei****Kontoeinstellungen** aus, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf den Link **Mit einem Product Key lizenzieren**.
+1. Klicken Sie auf **Datei** > **Kontoeinstellungen**, um das Dialogfeld **Kontoeinstellungen** zu öffnen, und klicken Sie auf den Link **Mit einem Product Key lizenzieren**.
 
 Geben Sie den Product Key an der dafür vorgesehenen Stelle ein.
 
@@ -63,14 +59,14 @@ Geben Sie den Product Key an der dafür vorgesehenen Stelle ein.
 
 Bevor das Lizenztoken abläuft, zeigt Visual Studio eine Warnmeldung an, in der Sie aufgefordert werden, Ihre Anmeldeinformationen erneut einzugeben.
 
-Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, beginnt der Ablaufzeitraum für das Token, und im Dialogfeld mit den Kontoeinstellungen wird angezeigt, wie viele Tage noch verbleiben, bevor das Token vollständig abläuft. Nachdem das Token abgelaufen ist, müssen Sie Ihre Anmeldeinformationen für dieses Konto oder diese Lizenz mithilfe einer anderen der oben genannten Methoden erneut eingeben, bevor Sie Visual Studio weiterhin verwenden können.
+Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, beginnt der Ablaufzeitraum für das Token, und im Dialogfeld **Kontoeinstellungen** wird angezeigt, wie viele Tage noch verbleiben, bevor das Token vollständig abläuft. Nachdem das Token abgelaufen ist, müssen Sie Ihre Anmeldeinformationen für dieses Konto oder diese Lizenz mithilfe einer anderen der oben genannten Methoden erneut eingeben, bevor Sie Visual Studio weiterhin verwenden können.
 
 > [!Important]
 > Bei Verwendung von Visual Studio für einen längeren Zeitraum in Umgebungen mit wenig oder keinem Internetzugang sollten Sie einen Product Key verwenden, um Visual Studio zu entsperren, um Unterbrechungen zu vermeiden.
 
 ### <a name="update-expired-licenses"></a>Aktualisieren abgelaufener Lizenzen
 
- Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie Ihr Abonnement erneuern oder ein anderes Konto hinzufügen, das über ein Abonnement verfügt. Um weitere Informationen über die verwendete Lizenz zu erhalten, wechseln Sie zu **Datei**, **Kontoeinstellungen**. Die Lizenzinformationen werden auf der rechten Seite des Dialogfelds angezeigt. Wenn Sie über ein weiteres Abonnement verfügen, das mit einem anderen Konto verknüpft ist, fügen Sie dieses Konto zur Liste **Alle Konten** auf der linken Seite des Dialogfelds hinzu, indem Sie den Link **Konto hinzufügen…** auswählen.
+ Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie Ihr Abonnement erneuern oder ein anderes Konto hinzufügen, das über ein Abonnement verfügt. Wechseln Sie zu **Datei** > **Kontoeinstellungen**, um weitere Informationen über die verwendete Lizenz zu erhalten. Die Lizenzinformationen werden auf der rechten Seite des Dialogfelds angezeigt. Wenn Sie über ein weiteres Abonnement verfügen, das mit einem anderen Konto verknüpft ist, fügen Sie dieses Konto zur Liste **Alle Konten** auf der linken Seite des Dialogfelds hinzu, indem Sie auf den Link **Konto hinzufügen** klicken.
 
 ## <a name="see-also"></a>Siehe auch
 

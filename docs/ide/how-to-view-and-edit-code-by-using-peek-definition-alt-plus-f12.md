@@ -1,21 +1,19 @@
 ---
-title: "Verwenden von „Code einsehen“ in Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Verwenden von „Code einsehen“ in Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
@@ -23,7 +21,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
 
 Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic zeigt **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten an (z.B. integrierte .NET Framework-Typen).
 
-## <a name="working-with-peek-definition"></a>Arbeiten mit „Definition einsehen“
+## <a name="working-with-peek-definition"></a>Arbeiten mit der Peek-Definition
 
 ### <a name="to-open-a-peek-definition-window"></a>So öffnen Sie ein Fenster "Definition einsehen"
 
@@ -75,18 +73,18 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 
 |Funktionalität|Tastenkombination|
 |-------------------|:-----------------------:|
-|Öffnen des Definitionsfensters|Alt+F12|
-|Schließen des Definitionsfensters|Esc|
-|Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|UMSCHALT+ALT+POS1|
-|Wechseln zwischen Definitionsfenstern|STRG+ALT+- und STRG+ALT+=|
-|Zwischen mehreren Ergebnissen navigieren|F8 und UMSCHALT+F8|
-|Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|UMSCHALT+ESC|
+|Öffnen des Definitionsfensters|**ALT**+**F12**|
+|Schließen des Definitionsfensters|**ESC**|
+|Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**UMSCHALT**+**ALT**+**Start**|
+|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**|
+|Zwischen mehreren Ergebnissen navigieren|**F8** und **UMSCHALT**+**F8**|
+|Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|**UMSCHALT**+**ESC**|
 
 > [!NOTE]
 > Sie können die gleichen Tastenkombinationen zum Bearbeiten in einem **Definition einsehen**-Fenster verwenden, die Sie an anderer Stelle in Visual Studio nutzen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Navigieren im Code](../ide/navigating-code.md)  
+[Navigieren durch den Code](../ide/navigating-code.md)  
 [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)  
 [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)

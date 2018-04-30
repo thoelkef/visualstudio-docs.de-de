@@ -1,13 +1,10 @@
 ---
 title: Globalisieren und Lokalisieren von Anwendungen | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -16,27 +13,25 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c687a7513356a086a231a6b13a1f16112d7d5eea
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 7886b9dfa08882efd372c7c915a1fc2e444e8691
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
 
 Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der Entwicklungs- und Entwurfsphase einige Dinge berücksichtigen. Selbst wenn Sie derzeit keine internationale Anwendung planen, können Sie mit geringem Aufwand dafür sorgen, dass Sie später sehr viel Arbeit sparen, sollten Sie Ihre Meinung doch noch ändern. Dank der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verfügbaren Dienste ist es sehr einfach, mit der verwalteten Entwicklung in Visual Studio eine einzelne Anwendung zu entwickeln, die für verschiedene Gebietsschemas geeignet ist.  
   
- Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. Auf den folgenden Seiten können Sie sich einen Überblick über die in Visual Studio verfügbaren Funktionen für die Internationalisierung verschaffen.  
+ Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. In den folgenden Artikeln können Sie sich einen Überblick über die in Visual Studio verfügbaren Features für die Internationalisierung verschaffen.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt
 
- [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
+ [Einführung in internationale Anwendungen, die auf .NET Framework basieren](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Einführung in die Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Studio und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  [Lokalisieren von Anwendungen](../ide/localizing-applications.md)  
@@ -45,7 +40,7 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  [Globalisieren von Anwendungen](../ide/globalizing-applications.md)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
-## <a name="related-sections"></a>Verwandte Abschnitte
+### <a name="see-also"></a>Siehe auch
   
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Hintergrundinformationen zur Programmierung für den internationalen Markt.  

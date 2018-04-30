@@ -1,12 +1,10 @@
 ---
-title: Vollbildmodus und virtueller Bereich (Modus) in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+title: Vollbildmodus und Modus für virtuelle Leerzeichen in Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e95940eaad599d149e504db9c1d48c5c011409e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-editor-modes"></a>Vorgehensweise: Verwalten von Editormodi
 Sie können den Visual Studio-Code-Editor in verschiedenen Anzeigemodi verwenden.  
@@ -41,7 +39,7 @@ Sie können den Visual Studio-Code-Editor in verschiedenen Anzeigemodi verwenden
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in diesem Artikel beschriebenen. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
   
-## <a name="enabling-full-screen-mode"></a>Aktivieren des Vollbildmodus  
+## <a name="enable-full-screen-mode"></a>Aktivieren des Vollbildmodus  
 Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenster anzeigen, indem Sie den **Vollbildmodus** aktivieren.  
   
 #### <a name="to-enable-full-screen-mode"></a>So können Sie den Vollbildmodus aktivieren  
@@ -52,14 +50,14 @@ Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenste
   
 -   Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.  
   
-## <a name="enabling-virtual-space-mode"></a>Aktivieren des Modus für virtuelle Leerzeichen  
+## <a name="enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
 Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezeile eingefügt. Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Markup einzufügen.  
   
 #### <a name="to-enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
   
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
 
-2.  Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. Klicken Sie auf den Knoten „Basic“ > „Text-Editor“, um beispielsweise Zeilennummern nur für Visual Basic zu aktivieren.
+2.  Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. Klicken Sie auf den Knoten **Basic** > **Text-Editor**, um beispielsweise nur für Visual Basic Zeilennummern zu aktivieren.
   
 3.  Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).  
   

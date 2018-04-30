@@ -1,32 +1,30 @@
 ---
-title: "Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9f56928210eb251ea54205c435c721b62503857f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Gewusst wie: Konfigurieren von Projekten für mehrere Zielplattformen
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es, dass eine Projektmappe mehrere verschiedene CPU-Architekturen oder Plattformen auf einmal ansteuert. Auf die Eigenschaften, die für das Festlegen erforderlich sind, kann über das Dialogfeld **Konfigurations-Manager** zugegriffen werden.  
   
-## <a name="targeting-a-platform"></a>Ansteuern einer Plattform  
- Mit dem Dialogfeld **Konfigurations-Manager** können Sie Konfigurationen und Plattformen auf Projektmappen- und Projektebene erstellen und festlegen. Jeder Kombination von Konfigurationen und Zielen auf Projektmappenebene können eindeutige Eigenschaften zugeordnet sein. Dadurch können Sie beispielsweise einfach zwischen einer Releasekonfiguration, die eine [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]-Plattform ansteuert, einer Releasekonfiguration, die eine x86-Plattform ansteuert, und einer Debugkonfiguration, die eine x86-Plattform ansteuert, wechseln.  
+## <a name="target-a-platform"></a>Ausrichten auf eine Plattform  
+ Mit dem Dialogfeld **Konfigurations-Manager** können Sie Konfigurationen und Plattformen auf Projektmappen- und Projektebene erstellen und festlegen. Jeder Kombination von Konfigurationen und Zielen auf Projektmappenebene können eindeutige Eigenschaften zugeordnet sein. Dadurch können Sie beispielsweise einfach zwischen einer Releasekonfiguration für eine [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]-Plattform, einer Releasekonfiguration für eine x86-Plattform und einer Debugkonfiguration für eine x86-Plattform wechseln.  
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Festlegen der Konfiguration zum Ansteuern einer anderen Plattform  
   
@@ -34,8 +32,8 @@ ms.lasthandoff: 12/22/2017
   
 2.  Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>**, um eine neue Plattform zu erstellen. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.  
   
-## <a name="removing-a-platform"></a>Entfernen einer Plattform  
- Wenn Sie feststellen, dass Sie keine Plattform benötigen, können Sie diese mithilfe des Dialogfelds „Konfigurations-Manager“ entfernen. Dadurch werden alle Projektmappen- und Projekteinstellungen entfernt, die Sie für diese Kombination von Konfiguration und Ziel konfiguriert haben.  
+## <a name="remove-a-platform"></a>Entfernen einer Plattform  
+ Wenn Sie feststellen, dass Sie keine Plattform benötigen, können Sie diese mithilfe des Dialogfelds **Konfigurations-Manager** entfernen. Dadurch werden alle Projektmappen- und Projekteinstellungen entfernt, die Sie für diese Kombination von Konfiguration und Ziel konfiguriert haben.  
   
 #### <a name="to-remove-a-platform"></a>Entfernen einer Plattform  
   
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  Klicken Sie auf die Plattform, die Sie entfernen möchten, und dann auf **Entfernen**.  
   
-## <a name="targeting-multiple-platforms-with-one-solution"></a>Ansteuern mehrerer Plattformen mit einer Projektmappe  
+## <a name="target-multiple-platforms-with-one-solution"></a>Ausrichten auf mehrere Plattformen mit einer Projektmappe  
  Da Sie die Einstellungen basierend auf der Kombination von Konfigurations- und Plattformeinstellungen ändern können, können Sie eine Projektmappe einrichten, die mehr als eine Plattform ansteuern kann.  
   
 #### <a name="to-target-multiple-platforms"></a>Ansteuern mehrerer Plattformen  
@@ -66,5 +64,5 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
+ [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md)   
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
