@@ -1,13 +1,8 @@
 ---
-title: Verwalten von Verweisen in einem Projekt | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 10/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: Verwalten von Verweisen in einem Projekt
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
+# <a name="manage-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
 Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder einen verbundenen Dienst bezieht, müssen Sie zunächst einen Verweis auf diese Komponente im Projekt einrichten. Ein Verweis ist im Prinzip ein Eintrag in einer Projektdatei, der Informationen beinhaltet, die von Visual Studio zum Auffinden der Komponente oder des Diensts benötigt.
 
-Um einen Verweis hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten „Verweise“, und klicken Sie dann auf **Verweis hinzufügen**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Um einen Verweis hinzuzufügen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verweise** oder **Abhängigkeiten**, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Hinzufügen** > **Verweis**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von Verweisen](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Hinzufügen eines Verweises in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Hinzufügen eines Verweises in Visual C++](../ide/media/vs2015_cpp_add_reference.png)
 
-Sie können einen Verweis auf die folgenden Komponenten- und Diensttypen herstellen:
+Sie können einen Verweis zu folgenden Komponenten- und Diensttypen hinzufügen:
 
 - .NET Framework-Klassenbibliotheken oder -Assemblys
 
@@ -81,11 +76,11 @@ Wenn Sie feststellen, dass das Erweiterungs-SDK, auf das von Ihrer Anwendung ver
 
 1. Starten Sie Visual Studio neu, und öffnen Sie Ihre App.
 
-1. Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** und anschließend auf **Verweis hinzufügen**.
+1. Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** oder **Abhängigkeiten** und anschließend auf **Verweis hinzufügen**.
 
 1. Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen**. Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen. Klicken Sie auf **OK**.
 
-## <a name="adding-a-reference-at-design-time"></a>Hinzufügen von Verweisen zur Entwurfszeit
+## <a name="add-a-reference-at-design-time"></a>Hinzufügen von Verweisen zur Entwurfszeit
 
 Wenn Sie im Projekt einen Verweis auf eine Assembly erstellen, sucht Visual Studio die Assembly an den folgenden Speicherorten:
 
@@ -94,7 +89,9 @@ Wenn Sie im Projekt einen Verweis auf eine Assembly erstellen, sucht Visual Stud
 - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie finden diese Assemblys auf der Registerkarte **Projekte** .)
 
 > [!NOTE]
-> Alle Projekte enthalten einen impliziten Verweis auf "mscorlib". Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`. Alle Projekte enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.
+> - Alle Projekte enthalten einen impliziten Verweis auf "mscorlib".
+> - Alle Projekte enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.
+> - Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit
 
@@ -104,9 +101,9 @@ Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registr
 
 Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder eine .NET Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft standardmäßig auf **False** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Verweisen auf ein Projekt oder eine Assembly, die auf eine andere Version von .NET Framework ausgerichtet ist
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Verweisen auf ein Projekt oder eine Assembly, die eine andere Version von .NET Framework anzielt
 
-Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z.B. eine Anwendung für [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] erstellen, die auf eine Assembly verweist, die wiederum auf [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] ausgelegt ist. Wenn Sie ein Projekt für eine frühere Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die auf eine neuere Version ausgerichtet sind.
+Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z.B. eine Anwendung für .NET Framework 4.6 erstellen, die auf eine Assembly verweist, die wiederum .NET Framework 4.5 anzielt. Wenn Sie ein Projekt für eine frühere Version von .NET Framework erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die eine neuere Version anzielen.
 
 Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehreren Zielversionen](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ Dateiverweise sind direkte Verweise auf Assemblys, die sich außerhalb eines Vis
 
 ## <a name="see-also"></a>Siehe auch
 
-[Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md)
-[Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md)
+- [Vorgehensweise: Hinzufügen und Entfernen von Verweisen](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

@@ -1,12 +1,9 @@
 ---
-title: "Installieren einer benutzerdefinierten Startseite oder Ändern des Startelements in Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Installieren einer benutzerdefinierten Startseite oder Ändern des Startelements in Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc22bd23b5b245173321ed3a12379c6fe5622af
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9863fdfbfb73e49d0539ba1060f1e1c56888599c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
 
@@ -30,7 +27,7 @@ Sie können die Visual Studio-Startbenutzeroberfläche auf unterschiedliche Weis
 
 ## <a name="to-change-the-startup-item"></a>So ändern Sie das Startelement
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 1. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
@@ -40,11 +37,11 @@ Sie können die Visual Studio-Startbenutzeroberfläche auf unterschiedliche Weis
 
 Sie können [eine eigene benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md) mit dem Visual Studio SDK erstellen oder eine Startseite verwenden, die bereits von einem anderen Benutzer erstellt wurde. Sie finden benutzerdefinierte Startseiten z.B. in [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-Öffnen Sie zum Installieren einer benutzerdefinierten Startseite eine VSIX-Datei, oder kopieren Sie die Startseitendateien, und fügen Sie sie auf dem Computer in den Ordner **%USERPROFILE%\Dokumente\Visual Studio 2017\StartPages** ein.
+Öffnen Sie zum Installieren einer benutzerdefinierten Startseite eine *VSIX-Datei*, oder kopieren Sie die Startseitendateien, und fügen Sie sie auf dem Computer in den Ordner *%USERPROFILE%\Dokumente\Visual Studio 2017\StartPages* ein.
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>So wählen Sie aus, welche benutzerdefinierte Startseite angezeigt werden soll
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
 1. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 

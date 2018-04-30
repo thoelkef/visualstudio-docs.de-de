@@ -1,24 +1,22 @@
 ---
-title: "Erstellen von Elementvorlagen mit mehreren Dateien für Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Erstellen von Elementvorlagen mit mehreren Dateien für Visual Studio | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
 
@@ -40,7 +38,7 @@ Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie e
 
 1. Erstellen Sie die Elementvorlage auf dieselbe Weise, wie Sie manuell eine Elementvorlage erstellen würden, die nur aus einer Datei besteht. Fügen Sie dabei allerdings jede Datei hinzu, die Bestandteil des Elements mit mehreren Dateien ist.
 
-1. Fügen Sie der VSTEMPLATE-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließen diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie die Werte des `TargetFileName`-Attributs auf „$fileinputname$.*Dateierweiterung*“ fest, wobei *Dateierweiterung* der Erweiterung der Datei entspricht, die in die Vorlage eingefügt wird. Zum Beispiel:
+1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Zum Beispiel:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie e
 
 1. Wählen Sie die Dateien aus, die in die Vorlage eingefügt werden sollen, und klicken Sie mit der rechten Maustaste auf die Auswahl. Klicken Sie dann auf **Senden an** > **ZIP-komprimierter Ordner**.
 
-   Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.
+   Die ausgewählten Dateien werden in eine *ZIP*-Datei komprimiert.
 
-1. Kopieren Sie die ZIP-Datei an den Speicherort der Benutzerelementvorlage. Standardmäßig ist dies das Verzeichnis „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates“. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopieren Sie die *ZIP*-Datei an den Speicherort der Benutzerelementvorlage. Standardmäßig ist dies das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Schließen Sie Visual Studio, und öffnen Sie es anschließend erneut.
 
-1. Erstellen Sie ein neues Projekt, oder öffnen Sie ein vorhandenes Projekt, und wählen Sie anschließend **Projekt** > **Neues Element hinzufügen...** aus, oder drücken Sie **STRG** + **UMSCHALT** + **A**.
+1. Erstellen Sie ein neues Projekt, oder öffnen Sie ein vorhandenes Projekt, und klicken Sie anschließend auf **Projekt** > **Neues Element hinzufügen**, oder drücken Sie **STRG**+**UMSCHALT**+**A**.
 
    Die Elementvorlagen mit mehreren Dateien werden im Dialogfeld **Neues Element hinzufügen** angezeigt.
 
@@ -99,6 +97,6 @@ Das folgende Beispiel zeigt eine Windows Forms-Vorlage. Wenn ein Element basiere
 ## <a name="see-also"></a>Siehe auch
 
 [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
+[Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
 [Vorlagenparameter](../ide/template-parameters.md)  
-[Gewusst wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)
+[Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)

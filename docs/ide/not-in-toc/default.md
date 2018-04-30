@@ -1,18 +1,20 @@
 ---
-title: "Standardseite für F1 in Visual Studio | Microsoft-Dokumentation"
+title: Standardseite für F1 in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: ghogen
+manager: douge
+author: gewarren
+ms.author: gewarren
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2d5b027041e9b5ff31126af5e44e22415240ea55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # F1-Hilfe
 
@@ -20,7 +22,7 @@ Leider konnte der von Ihnen gesuchte Inhalt nicht gefunden werden. Unterstützen
 
 ## Cursorposition
 
-Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten, positionieren Sie den Cursor in das Wort oder direkt rechts neben dem Wort, bevor Sie **F1** drücken. Wenn das Problem weiterhin besteht, wählen Sie eine Option aus der Liste [Nützliche Links](#useful-links) aus, oder führen Sie eine Suche unter „https://docs.microsoft.com“ durch.
+Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten, positionieren Sie den Cursor in das Wort oder direkt rechts neben dem Wort, bevor Sie **F1** drücken. Wenn das Problem weiterhin besteht, wählen Sie eine Option aus der Liste [Nützliche Links](#useful-links) aus, oder führen Sie eine Suche unter https://docs.microsoft.com durch.
 
 ## Nützliche Links
 

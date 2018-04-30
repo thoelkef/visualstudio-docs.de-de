@@ -1,16 +1,15 @@
 ---
-title: "Aktivieren des Abonnements für Visual Studio für Mac | Microsoft-Dokumentation"
-description: "In diesem Artikel wird beschrieben, wie Sie mit Ihrem Microsoft-Konto Ihr Abonnement aktivieren und Features in Visual Studio für Mac entsperren."
+title: Aktivieren des Abonnements für Visual Studio für Mac
+description: In diesem Artikel wird beschrieben, wie Sie mit Ihrem Microsoft-Konto Ihr Abonnement aktivieren und Features in Visual Studio für Mac entsperren.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>Aktivieren des Abonnements
 

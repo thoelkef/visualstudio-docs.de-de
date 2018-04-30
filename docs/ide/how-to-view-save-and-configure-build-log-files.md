@@ -1,44 +1,42 @@
 ---
 title: 'Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aa0a4f458f264bdbdd1f96b414d0cc689bcfeb06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
-Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben. Bei C++-Projekten werden die gleichen Informationen in einer TXT-Datei angezeigt, die automatisch erstellt und gespeichert wird. Bei Projekten mit verwaltetem Code können Sie die Informationen aus dem Fenster **Ausgabe** kopieren, in eine TXT-Datei kopieren und diese manuell speichern. Sie können die IDE ebenfalls verwenden, um anzugeben, welche Informationen zu jedem Build angezeigt werden sollen.  
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
+Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben. Bei C++-Projekten werden die gleichen Informationen auch in einer *TXT*-Datei angezeigt, die automatisch erstellt und gespeichert wird. Bei Projekten mit verwaltetem Code können Sie die Informationen aus dem Fenster **Ausgabe** kopieren, in eine *TXT*-Datei einfügen und diese manuell speichern. Sie können die IDE ebenfalls verwenden, um anzugeben, welche Informationen zu jedem Build angezeigt werden sollen.  
   
- Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine TXT-Datei erstellen, um Informationen zum Build zu speichern. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine *TXT*-Datei erstellen, um Informationen zum Build zu speichern. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Anzeigen der Buildprotokolldatei für ein C++-Projekt  
   
-1.  Öffnen Sie im **Windows-Explorer** oder im **Datei-Explorer** folgende Datei: \\...\Visual Studio *Version*\Projekte\\*Projektname*\\*Projektname*\Debug\\*Projektname*.txt.  
+1.  Öffnen Sie im **Windows-Explorer** oder im **Datei-Explorer** folgende Datei: *\\...\Visual Studio \<Version\>\Projects\\<ProjectName\>\\<ProjectName\>\Debug\\<ProjectName\>.txt*  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Erstellen einer Buildprotokolldatei für ein Projekt mit verwaltetem Code  
   
-1.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
+1.  Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.  
   
-2.  Markieren Sie im Fenster **Ausgabe** die Informationen aus dem Build, und kopieren Sie diese in die Zwischenablage.  
+2.  Markieren Sie im Fenster **Ausgabe** die Informationen aus dem Build, und kopieren Sie diese in die **Zwischenablage**.  
   
-3.  Öffnen Sie einen Text-Editor wie Editor, fügen Sie die Informationen in die Datei ein, und speichern Sie diese anschließend.  
+3.  Öffnen Sie einen Text-Editor (z.B. **Editor**), fügen Sie die Informationen in die Datei ein, und speichern Sie diese anschließend.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll  
   
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
+1.  Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.  
   
 2.  Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.  
   
@@ -46,16 +44,16 @@ Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informat
   
     |Ausführlichkeitsgrad|description|  
     |---------------------|-----------------|  
-    |Quiet|Zeigt ausschließlich eine Zusammenfassung des Builds an.|  
-    |Minimal|Zeigt eine Zusammenfassung des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden.|  
-    |Normal|Zeigt eine Zusammenfassung des Builds, die wichtigsten Schritte des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden. Diese Detailebene verwenden Sie am häufigsten.|  
-    |Detailliert|Zeigt eine Zusammenfassung des Builds, alle Schritte des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden. Außerdem werden Meldungen von normaler Wichtigkeit angezeigt.|  
-    |Diagnose|Zeigt alle Daten an, die für den Build verfügbar sind. Sie können diese Detailebene für das Debuggen von Fehlern bei benutzerdefinierten Buildskripts und anderen Buildfehlern verwenden.|  
+    |**Still**|Zeigt ausschließlich eine Zusammenfassung des Builds an.|  
+    |**Minimal**|Zeigt eine Zusammenfassung des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden.|  
+    |**Normal**|Zeigt eine Zusammenfassung des Builds, die wichtigsten Schritte des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden. Diese Detailebene verwenden Sie am häufigsten.|  
+    |**Detailliert**|Zeigt eine Zusammenfassung des Builds, alle Schritte des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden. Außerdem werden Meldungen von normaler Wichtigkeit angezeigt.|  
+    |**Diagnose**|Zeigt alle Daten an, die für den Build verfügbar sind. Sie können diese Detailebene für das Debuggen von Fehlern bei benutzerdefinierten Buildskripts und anderen Buildfehlern verwenden.|  
   
      Weitere Informationen finden Sie unter [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) und <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (alle Projekte) und in der Datei „*Projektname*.txt“ (nur C++-Projekte) wirksam werden.  
+    >  Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (für alle Projekte) und in der Datei *<ProjectName>.txt* (nur C++-Projekte) wirksam werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   

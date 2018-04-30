@@ -1,12 +1,9 @@
 ---
 title: Erstellen von Projektmappen und Projekten | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -32,7 +29,7 @@ In Visual Studio gelten *Projekte* als logische Container, die die Elemente enth
 
 ![Hierarchie der Projektmappe bzw. des Projekts](./media/vside-proj-soln.png)
 
-Sie können Ihre Projektmappen und Projekte in dem Toolfenster **Projektmappen-Explorer** abrufen. Im untenstehenden Screenshot wird ein Beispiel für eine Projektmappe im Projektmappen-Explorer (BikeSharing.Xamarin-UWP) angezeigt, die zwei Projekte enthält: „BikeSharing.Clients.Core“ und „BikeSharing.Clients.Windows“. In jedem Projekt sind mehrere Dateien, Ordner und Verweise enthalten. Der Name des *Startprojekts* – also das Projekt, das gestartet wird, wenn Sie die App ausführen – ist fett gedruckt. Sie können das Startprojekt selbst festlegen.
+Sie können Ihre Projektmappen und Projekte in dem Toolfenster **Projektmappen-Explorer** abrufen. Im untenstehenden Screenshot wird ein Beispiel für eine Projektmappe im **Projektmappen-Explorer** (**BikeSharing.Xamarin-UWP**) angezeigt, die zwei Projekte enthält: **BikeSharing.Clients.Core** und **BikeSharing.Clients.Windows**. In jedem Projekt sind mehrere Dateien, Ordner und Verweise enthalten. Der Name des *Startprojekts* – also das Projekt, das gestartet wird, wenn Sie die App ausführen – ist fett gedruckt. Sie können das Startprojekt selbst festlegen.
 
 ![Projektmappen-Explorer mit Projekten](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Erstellen eines neuen Projekts aus einer Projektvorlage
 
-1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der Startseite den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste **Datei** > **Neu** > **Projekt...** oder in der Symbolleiste die Schaltfläche **Neues Projekt** auswählen.
+1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der **Startseite** den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste **Datei** > **Neu** > **Projekt...** oder in der Symbolleiste die Schaltfläche **Neues Projekt** auswählen.
 
   ![Startseite](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 1. Klicken Sie auf die Schaltfläche **OK**, um die Projektmappe und das Projekt zu erstellen.
 
-1. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im Projektmappen-Explorer aus und dann in der Menüleiste **Projekt** > **Neues Element hinzufügen**.
+1. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Erstellen eines Projekts aus vorhandenen Codedateien
 
@@ -122,10 +119,10 @@ Gehen Sie zunächst zu **Extras** > **Optionen** > **Projekte und Projektmappen*
 
 ## <a name="delete-a-solution-project-or-item"></a>Löschen einer Projektmappe, eines Projekts oder eines Elements
 
-Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funktioniert dies nicht über die Visual Studio-IDE. Wenn Sie Elemente aus Visual Studio löschen, werden sie nur aus der aktuellen Projektmappe oder dem aktuellen Projekt entfernt. Wenn Sie eine Projektmappe oder andere Komponenten dauerhaft von Ihrem System löschen möchten, verwenden Sie den Datei-Explorer, um den Ordner zu löschen, der SLN- und SUO-Projektmappendateien enthält. Bevor Sie allerdings eine Projektmappe dauerhaft löschen, wird empfohlen, dass Sie sämtliche Projekte oder Dateien sichern, falls Sie diese noch einmal benötigen sollten.
+Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funktioniert dies nicht über die Visual Studio-IDE. Wenn Sie Elemente aus Visual Studio löschen, werden sie nur aus der aktuellen Projektmappe oder dem aktuellen Projekt entfernt. Wenn Sie eine Projektmappe oder andere Komponenten dauerhaft von Ihrem System löschen möchten, verwenden Sie den Datei-Explorer, um den Ordner zu löschen, der die *SLN-* und *SUO-Projektmappendateien* enthält. Bevor Sie allerdings eine Projektmappe dauerhaft löschen, wird empfohlen, dass Sie sämtliche Projekte oder Dateien sichern, falls Sie diese noch einmal benötigen sollten.
 
 > [!NOTE]
-> Die SUO-Datei wird ausgeblendet und nicht in den Standardeinstellungen des Datei-Explorers angezeigt. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
+> Die *SUO-Datei* wird ausgeblendet und nicht in den Standardeinstellungen des Datei-Explorers angezeigt. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
 
 ### <a name="to-permanently-delete-a-solution"></a>Dauerhaftes Löschen einer Projektmappe
 

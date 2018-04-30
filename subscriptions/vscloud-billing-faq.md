@@ -1,22 +1,24 @@
 ---
 title: Häufig gestellte Fragen zur Abrechnung von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://www.visualstudio.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
+
+## <a name="general-purchasing-questions"></a>Allgemeine Fragen zum Kauf
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>F: Kann ich Visual Studio-Cloudabonnements mithilfe einer Bestellung kaufen?
 A: Nein. Alle Visual Studio-Cloudabonnements müssen mithilfe eines Azure-Abonnements gekauft werden. (Betrachten Sie dieses als Ihr Azure-Rechnungskonto.)
@@ -79,7 +81,7 @@ Darüber hinaus gilt der Rabatt nur für die Gebühren in einem angegebenen mona
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>F: Kann ich als Visual Studio-Abonnent monatliche Azure-Gutschriften verwenden, um weitere Visual Studio-Cloudabonnements zu kaufen?
 
-A: Nein, Sie können [als Visual Studio-Abonnent nicht Ihre monatliche Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) verwenden, um Käufe im Visual Studio Marketplace zu bezahlen. Sämtliche Käufe für Visual Studio-Cloudabonnements werden von Ihrer Kreditkarte abgebucht.
+A: Nein, Sie können als Visual Studio-Abonnent nicht Ihre [monatliche Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) verwenden, um Käufe im Visual Studio Marketplace zu bezahlen. Sämtliche Käufe für Visual Studio-Cloudabonnements werden von Ihrer Kreditkarte abgebucht.
 Bevor Sie Käufe tätigen, müssen Sie [Ihr Ausgabenlimit entfernen](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>F: Welche Unterschiede bestehen zwischen jährlichen und monatlichen Cloudabonnements?

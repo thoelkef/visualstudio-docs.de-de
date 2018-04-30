@@ -1,26 +1,23 @@
 ---
 title: Azure-Community-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/8/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Azure Community benefit included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fb8c318d665c5c8b25a245ff304c5b2b9341a1ef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/08/2018
+ms.topic: Get-Started-Article
+description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-community"></a>Azure-Community  
 
-## <a name="overview"></a>Übersicht 
-Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.
-
-Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.  
+Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.  
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -32,35 +29,11 @@ Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu ver
 | [Azure-Verwaltungsportal](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-### <a name="eligibility"></a>Berechtigung
-| Abonnementstufe/Programm                                 | Vorteil               | Erneuerbar?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Included              | Ja                                                                |
-| Visual Studio Enterprise – Jahresabonnement                              | Included              | Ja                                                                |
-| Visual Studio Enterprise – Monatsabonnement                             | Nicht verfügbar         |                                                                    |
-| Visual Studio Professional Standard                          | Included              | Ja                                                                |
-| Visual Studio Professional – Jahresabonnement                            | Included              | Ja                                                                |
-| Visual Studio Professional – Monatsabonnement                           | Nicht verfügbar         |                                                                    |
-| Visual Studio Test Pro                                       | Included              | Ja                                                                |
-| MSDN Platforms                                               | Included              | Ja                                                                |
-| Visual Studio Dev Essentials                                 | Included              | Ja                                                                |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – FTE                               | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – MPN                               | Nicht verfügbar         |                                                                    |
-| Visual Studio Professional – MPN                             | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – MVP/RD                            | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                 | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – MCT Software & Services           | Nicht verfügbar         |                                                                    |
-| Visual Studio Enterprise – MCT Software & Services, Developer | Nicht verfügbar         |                                                                    |
-<sup>1</sup> *Umfasst Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Besuchen Sie die Website [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 Die ersten Schritte mit der Azure-Community sind ganz einfach.  
-1. Melden Sie sich auf [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
+1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
 2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure-Community“, und klicken Sie auf den Link **Hilfe erhalten**. 
 
@@ -74,8 +47,21 @@ Die ersten Schritte mit der Azure-Community sind ganz einfach.
 
    ![Azure-Community – Beispiel](_img/vs-azure-community/vs-azure-community-example.png)
 
-## <a name="faq"></a>FAQ
-*Hier nach Updates suchen*
+## <a name="eligibility"></a>Berechtigung
+Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargestellt von Ihrer Abonnementstufe ab:
+
+| Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail   | Ein Jahr      |  Ja          |
+| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit)  | VL, Azure, Retail                                      | Ein Jahr                                                           |  Ja          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Ein Jahr                                             |  Ja          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              |Ein Jahr                                              |  Ja          |
+| Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup>                                          | Alle                                              |Nicht verfügbar                                              |  Nein          |
+| Visual Studio Dev Essentials                                        | Nicht zutreffend                                              |Nicht verfügbar                                              |  Nein          |
+|
+<sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Weitere Azure-Communityressourcen finden Sie auf der [Supportseite](https://azure.microsoft.com/support/forums/) der Azure-Community.

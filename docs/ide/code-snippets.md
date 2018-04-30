@@ -1,11 +1,9 @@
 ---
 title: Codeausschnitte | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 520aa870f85ddc3768720eafb17b0109fb270393
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -99,7 +97,7 @@ Wenn Sie `newPropertyValue` in `m_property` ändern, wird jede Instanz von `newP
 
 [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)  
 [Vorgehensweise: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)  
-[Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)  
+[Bewährte Methoden für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)  
 [Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)  
 [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)  
 [Visual C#-Codeausschnitte](../ide/visual-cpp-code-snippets.md)  

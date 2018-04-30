@@ -1,8 +1,9 @@
 ---
-title: Durchsuchungsbegrenzungen | Microsoft IntelliTest Test-Tool für Entwickler | Microsoft-Dokumentation
+title: Durchsuchungsbegrenzungen | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -29,7 +30,7 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden.<p />
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
@@ -57,7 +58,7 @@ Normalerweise ist der Grund für ein Timeout, dass IntelliTest versucht, eine Pr
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Die Anzahl von Megabyte, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu berechnen, die dazu führen, dass neue und andere Ausführungspfade befolgt werden Dies ist eine Option von **PexSettingsAttributeBase** und dessen abgeleiteten Typen.
+Die Anzahl von Megabyte, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu berechnen, die dazu führen, dass neue und andere Ausführungspfade befolgt werden Dies ist eine Option von *PexSettingsAttributeBase** und dessen abgeleiteten Typen.
 
 Je tiefer IntelliTest in den Ausführungspfad eines Programms vordringt, desto komplexer werden die Einschränkungssysteme, die IntelliTest aus dem Steuerungs- und Datenfluss des Programms erstellt. Je nach verfügbarem Speicherplatz auf Ihrem Computer können Sie diesen Wert festlegen, um es IntelliTest zu erlauben, sich mit komplexeren Einschränkungssystemen zu befassen.
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 Die maximale Anzahl von Ausführungen, die von IntelliTest während der Durchsuchung eines Tests versucht werden.
 
-Diese Durchsuchungsbegrenzung soll IntelliTest während der [Eingabeerzeugung](input-generation.md) einschränken, da jeder Code, der Schleifen oder Rekursionen enthält, möglicherweise eine unendliche Anzahl von Ausführungspfaden enthält. 
+Diese Durchsuchungsbegrenzung soll IntelliTest während der [Eingabeerzeugung](input-generation.md) einschränken, da jeder Code, der Schleifen oder Rekursionen enthält, möglicherweise eine unendliche Anzahl von Ausführungspfaden enthält.
 
-Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft. 
+Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft.
 
-* IntelliTest ruft eine Methode eine parametrisierte Testmethode so oft auf, wie von **MaxRuns** angegeben. Dabei werden unterschiedliche Testeingaben verwendet.
-* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. 
-  Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben. 
+* IntelliTest ruft eine parametrisierte Testmethode so oft auf, wie von **MaxRuns** angegeben. Dabei werden unterschiedliche Testeingaben verwendet.
+* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben.
 * IntelliTest zählt, wie viele eindeutige Ausführungspfade es findet. Diese Zahl wird durch die Option **MaxRunsWithUniquePaths** eingeschränkt.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgend
 
 Die maximale Anzahl aufeinanderfolgender Ausführungen, ohne dass ein neuer Test ausgegeben wird
 
-Während IntelliTest oft viele interessante Testeingaben in kurzer Zeit findet, findet es jedoch nach längerer Zeit keine neuen Testeingaben mehr und gibt keine Komponententests mehr aus. Diese Konfigurationsoption legt einen Grenzwert für die Zahl der aufeinanderfolgenden Versuche fest, die IntelliTest durchführen kann, ohne neue Tests auszugeben. Wenn dieser Grenzwert erreicht wird, wird die Durchsuchung angehalten. 
+Während IntelliTest oft viele interessante Testeingaben in kurzer Zeit findet, findet es jedoch nach längerer Zeit keine neuen Testeingaben mehr und gibt keine Komponententests mehr aus. Diese Konfigurationsoption legt einen Grenzwert für die Zahl der aufeinanderfolgenden Versuche fest, die IntelliTest durchführen kann, ohne neue Tests auszugeben. Wenn dieser Grenzwert erreicht wird, wird die Durchsuchung angehalten.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ Diese Durchsuchungsbegrenzung soll IntelliTest während der [Eingabeerzeugung](i
 Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft. 
 
 * IntelliTest ruft eine Methode eine parametrisierte Testmethode so oft auf, wie von **MaxRuns** angegeben. Dabei werden unterschiedliche Testeingaben verwendet.
-* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. 
-  Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben. 
+* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben. 
 * IntelliTest zählt, wie viele eindeutige Ausführungspfade es findet. Diese Zahl wird durch die Option **MaxRunsWithUniquePaths** eingeschränkt.
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgend
 
 Die maximale Anzahl von Ausnahmen, die ausgelöst werden dürfen, bevor die Durchsuchung angehalten wird.
 
-Diese Durchsuchungsbegrenzung soll das Durchsuchen von Code verhindern, der viele Fehler enthält.
-Wenn IntelliTest zu viele Fehler im Code findet, wird die Durchsuchung beendet.
+Diese Durchsuchungsbegrenzung soll das Durchsuchen von Code verhindern, der viele Fehler enthält. Wenn IntelliTest zu viele Fehler im Code findet, wird die Durchsuchung beendet.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 Ausführungspfade, die die konfigurierten Pfadbegrenzungen überschreiten, werden [MaxCalls](#maxcalls), [Max Branches](#maxbranches), [MaxStack](#maxstack) und [MaxConditions](#maxconditions) ignoriert.
 
-Diese Durchsuchungsbegrenzung ist zum Behandeln von (hauptsächlich) nicht endenden Test gedacht. Wenn IntelliTest eine Durchsuchungsbegrenzung wie z.B. [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) oder [MaxConditions](#maxconditions) erreicht, geht es davon aus, dass der Test kein nicht endender Prozess ist und verursacht später keinen Stapelüberlauf.
-Derartige Testfälle verursachen möglicherweise Probleme für andere Testframeworks. Dieses Attribut bietet eine Möglichkeit, um zu verhindern, dass IntelliTest Testfälle für potentielle nicht endende Prozesse oder Testfälle ausgibt, die zu einem Stapelüberfluss führen.
+Diese Durchsuchungsbegrenzung ist zum Behandeln von (hauptsächlich) nicht endenden Test gedacht. Wenn IntelliTest eine Durchsuchungsbegrenzung wie z.B. [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) oder [MaxConditions](#maxconditions) erreicht, geht es davon aus, dass der Test kein nicht endender Prozess ist und verursacht später keinen Stapelüberlauf. Derartige Testfälle verursachen möglicherweise Probleme für andere Testframeworks. Dieses Attribut bietet eine Möglichkeit, um zu verhindern, dass IntelliTest Testfälle für potentielle nicht endende Prozesse oder Testfälle ausgibt, die zu einem Stapelüberfluss führen.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ Je nach aktueller [TestEmissionFilter](#testemissionfilter)-Einstellung gibt Int
 
 Die Einstellung **TestEmissionBranchHits** legt fest, ob IntelliTest nur darauf achten soll, ob ein Branch überhaupt abgedeckt wurde (**TestEmissionBranchHits=1**) oder ob ein Test ihn ein- oder zweimal abgedeckt hat (**TestEmissionBranchHits=2**) usw.
 
-**TestEmissionBranchHits=1** erzeugt eine sehr kleine Testsammlung, die alle Branches abdeckt, die IntelliTest erreichen konnte. Diese Testsammlung deckt insbesondere alle grundlegenden Blöcke und Anweisungen ab, die es erreicht hat. 
+**TestEmissionBranchHits=1** erzeugt eine sehr kleine Testsammlung, die alle Branches abdeckt, die IntelliTest erreichen konnte. Diese Testsammlung deckt insbesondere alle grundlegenden Blöcke und Anweisungen ab, die es erreicht hat.
 
 Die Standardeinstellung ist **TestEmissionBranchHits=2**, welche eine ausdrucksstärkere Testsammlung generiert, die sich zudem besser zum Erkennen zukünftiger Regressionsfehler eignet.
 
 ## <a name="got-feedback"></a>Sie möchten Feedback geben?
 
-Posten Sie Ihre Ideen und Clusterfunktion Anforderungen auf **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Posten Sie Ihre Ideen und Funktionsanfragen auf [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

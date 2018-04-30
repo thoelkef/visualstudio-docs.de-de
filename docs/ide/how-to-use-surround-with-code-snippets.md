@@ -1,25 +1,22 @@
 ---
-title: "Vorgehensweise: Verwenden von umschließenden Codeausschnitten | Microsoft-Dokumentation"
-ms.custom: 
+title: 'Vorgehensweise: Verwenden von umschließenden Codeausschnitten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Vorgehensweise: Verwenden von umschließenden Codeausschnitten
 
@@ -29,7 +26,7 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
 1. Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.
 
-1. Wählen Sie im Code-Editor den zu umschließenden Text aus.
+1. Markieren Sie im **Code-Editor** den zu umschließenden Text.
 
 1. Drücken Sie **STRG**+**K** > **STRG**+**S**.
 
@@ -39,7 +36,7 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
 1. Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.
 
-1. Wählen Sie im Code-Editor den zu umschließenden Text aus.
+1. Markieren Sie im **Code-Editor** den zu umschließenden Text.
 
 1. Klicken Sie im Menü **Bearbeiten** auf **IntelliSense** und dann auf **Umgeben mit**.
 
@@ -51,7 +48,7 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
 1. Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.
 
-1. Wählen Sie im Code-Editor den zu umschließenden Text aus.
+1. Markieren Sie im **Code-Editor** den zu umschließenden Text.
 
 1. Klicken Sie mit der rechten Maustaste auf den ausgewählten Text, und klicken Sie anschließend auf den Befehl **Umschließen mit** im Kontextmenü.
 
@@ -61,5 +58,5 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
 ## <a name="see-also"></a>Siehe auch
 
-[C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)  
-[Codeausschnittauswahl](../ide/reference/code-snippet-picker.md)
+- [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
+- [Codeausschnittauswahl](../ide/reference/code-snippet-picker.md)

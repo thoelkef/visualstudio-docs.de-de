@@ -1,26 +1,20 @@
 ---
-title: "Visualisieren von Daten mit R Tools für Visual Studio | Microsoft-Dokumentation"
+title: Visualisieren von Daten mit R
 description: Zeichnen von Daten aus R-Programmen in Visual Studio mithilfe von Plotfenstern.
-ms.custom: 
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -30,7 +24,7 @@ Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenana
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
 
 ## <a name="the-plot-window"></a>Das Plotfenster
 

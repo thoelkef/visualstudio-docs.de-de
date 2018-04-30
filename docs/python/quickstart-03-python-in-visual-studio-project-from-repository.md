@@ -1,15 +1,9 @@
 ---
-title: 'Schnellstart: Klonen eines Python-Coderepositorys | Microsoft-Dokumentation'
+title: 'Schnellstart: Klonen eines Python-Coderepositorys'
 description: In diesem Schnellstart erstellen Sie ein Python-Projekt in Visual Studio, indem Sie das Python Koans-Repository mithilfe von Visual Studio Team Explorer klonen.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -31,7 +25,7 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 
 2. Starten Sie Visual Studio.
 
-3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
+3. Klicken Sie auf **Ansicht > Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
 
     ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media/team-explorer.png)
 
@@ -42,7 +36,7 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 
 5. Wenn das Klonen abgeschlossen ist, erscheint der Name des Repositorys in der Liste **Lokale Git-Repositorys**. Doppelklicken Sie auf den Namen, um zum Repository-Dashboard im **Team Explorer** zu navigieren.
 
-6. Klicken Sie unter **Projektmappen** auf **Neu...**.
+6. Klicken Sie unter **Projektmappen** auf **Neu**.
 
     ![Das Fenster „Team Explorer“, in dem ein neues Projekt aus einem Klon erstellt wird](media/team-explorer-new-project.png)
 

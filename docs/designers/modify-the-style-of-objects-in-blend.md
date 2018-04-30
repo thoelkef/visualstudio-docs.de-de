@@ -1,22 +1,18 @@
 ---
-title: "Ändern des Stils von Objekten in Blend | Microsoft-Dokumentation"
-ms.custom: 
+title: Ändern des Stils von Objekten in Blend
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: dd96bde626f70211e1698227a8f94df75e3bcb3c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 
@@ -27,8 +23,6 @@ Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, e
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Ändern des Erscheinungsbilds einen Objekts
 
 Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden soll.
-
-**Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Pinsel-Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt
 
@@ -47,8 +41,6 @@ Erstellen Sie einen Zeichenpinsel mithilfe eines Vektors, indem Sie z. B. einen 
 Erstellen Sie einen visuellen Pinsel aus einem Steuerelement, z. B. einer Schaltfläche. Die folgenden Abbildungen zeigen den visuellen Pinsel und den visuellen Pinsel mit Kacheleffekt.
 
 ![Visueller Pinsel](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Visueller Pinsel gekachelt](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
-
-**Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gekachelter Pinsel](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
 
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Stile und Vorlagen: Erstellen eines konsistenten Aussehens und Verhaltens für Steuerelemente
 
@@ -82,7 +74,7 @@ Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die
 
 > [!NOTE]
 > Sie können keine Stile oder Vorlagen für jede Art von Steuerelement erstellen. Wenn ein Steuerelement diese nicht unterstützt, wird die Breadcrumb-Schaltfläche nicht oberhalb der Zeichenfläche angezeigt.
-> Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Bereich zurücksetzen auf** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Bereich zurücksetzen auf** ![Symbol für das Zurücksetzen des Bereichs](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Anwenden von Stilen oder Vorlagen für ein Steuerelement
 
@@ -92,7 +84,7 @@ Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](../designers
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements
 
-Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png) und dann auf **Zurücksetzen** im Kontextmenü.
+Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern des Erscheinungsbilds eines Steuerelements basierend auf dessen Status
 
@@ -102,14 +94,12 @@ Steuerelemente können über unterschiedliche visuelle Darstellungen basierend a
 
 **Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Verwalten des Zustands der WPF-Steuerelemente](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a> Ressourcen: Künftige erneute Verwendung von Farben, Stilen und Vorlagen
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressourcen: Künftige erneute Verwendung von Farben, Stilen und Vorlagen
 
 Sie können fast alles in Ihrem Projekt in eine Ressource konvertieren. Eine Ressource ist ein Objekt, das an unterschiedlichen Stellen in Ihrer Anwendung wiederverwendet werden kann. Sie können z. B. eine Farbe einmal erstellen, sie in eine Ressource konvertieren und dann diese Farbe auf mehrere Objekte anwenden. Um die Farbe aller dieser Objekte zu ändern, ändern Sie einfach die Farbressource.
 
 ![Schaltfläche „Farbe in Ressource konvertieren“](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Dialogfeld „Farbressource erstellen“](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-**Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Kurze Erläuterung zu Ressourcen](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
-
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

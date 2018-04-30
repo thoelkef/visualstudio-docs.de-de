@@ -1,13 +1,10 @@
 ---
 title: Verwenden des Inhaltsverzeichnisses von Visual Studio Help Viewer | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
 Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, um Informationen zu suchen. Das Inhaltsverzeichnis ist eine erweiterbare Liste, die alle Themen in den installierten Büchern enthält. Informationen zur Navigation durch das Inhaltsverzeichnis mithilfe von Tastenkombinationen finden Sie unter [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
@@ -35,7 +31,7 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
 >  Der Themenbereich, der im Inhaltsverzeichnis verfügbar ist, ist vom ausgewählten Filter abhängig.  
   
 ## <a name="filter-the-toc"></a>Filtern des Inhaltsverzeichnisses  
-Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden zu einem einzelnen Knoten mit Auslassungszeichen (...) reduziert.  
+Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden auf einem einzelnen Knoten mit Auslassungszeichen (**...**) reduziert.  
   
 #### <a name="to-filter-the-toc"></a>So filtern Sie Inhaltsverzeichnisse  
   
@@ -53,7 +49,7 @@ Wenn Sie ein Thema mithilfe der Index- oder Volltextsuchfunktionen geöffnet hab
   
 1.  Zeigen Sie ein Thema an.  
   
-2.  Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie **STRG+S**.  
+2.  Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie **STRG+**+**S**.  
   
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.  
   

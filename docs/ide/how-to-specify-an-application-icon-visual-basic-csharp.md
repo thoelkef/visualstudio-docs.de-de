@@ -1,31 +1,28 @@
 ---
-title: 'Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#) | Microsoft-Dokumentation'
-ms.custom: 
+title: 'Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#) | Microsoft-Dokumentation'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3309b02a50f3f14d166044c2d1cea35bdab3922f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: bd8616e1f16e12ab07bd30a2d88f728bc79212f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#))
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#)
 
-Die `Icon`-Eigenschaft für ein Projekt gibt die Symboldatei (.ico) an, die für die kompilierte Anwendung im Datei-Explorer und in der Windows-Taskleiste angezeigt wird.
+Die `Icon`-Eigenschaft für ein Projekt gibt die Symboldatei (*.ico*) an, die für die kompilierte Anwendung im **Datei-Explorer** und in der Windows-Taskleiste angezeigt wird.
 
 Auf die `Icon`-Eigenschaft können Sie im **Projekt-Designer** über den Bereich **Anwendung** zugreifen. Dort finden Sie eine Liste der Symbole, die dem Projekt entweder als Ressourcen oder als Inhaltsdateien hinzugefügt wurden.
 
@@ -40,7 +37,7 @@ Auf die `Icon`-Eigenschaft können Sie im **Projekt-Designer** über den Bereich
 
 1. Wählen Sie, wenn der **Projekt-Designer** angezeigt wird, die Registerkarte **Anwendung** aus.
 
-1. **(Visual Basic)**&mdash; Wählen Sie in der Liste **Symbol** eine Symboldatei (ICO) aus.
+1. **(Visual Basic)**&mdash;Wählen Sie in der Liste **Symbol** eine Symboldatei (*ICO*-Datei) aus.
 
     **C#**&mdash; Wählen Sie neben der Liste **Symbol** die Schaltfläche **\<Durchsuchen...>** aus, und navigieren Sie zum Speicherort der gewünschten Symboldatei.
 

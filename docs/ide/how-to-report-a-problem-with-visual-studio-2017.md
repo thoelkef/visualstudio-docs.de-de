@@ -2,9 +2,6 @@
 title: Melden eines Problems mit Visual Studio 2017 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 03/11/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 809f9121be867785e6d92966ccf92b012740daab
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
 
@@ -73,7 +70,7 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Melden eines Problems mithilfe des Visual Studio-Installers
 
-Wenn Sie die Installation von Visual Studio nicht abschließen oder nicht auf das Feedbacktool in Visual Studio zugreifen können, können Sie ein Problem im Visual Studio-Installer melden. Klicken Sie hierfür in der rechten oberen Ecke des Visual Studio-Installers auf das Feedbacksymbol.
+Wenn Sie die Installation von Visual Studio nicht abschließen oder nicht auf das Feedbacktool in Visual Studio zugreifen können, können Sie über den **Visual Studio-Installer** ein Problem melden. Klicken Sie hierfür in der rechten oberen Ecke des **Visual Studio-Installers** auf das Feedbacksymbol.
 
  ![Sie können zur Schaltfläche „Feedback geben“ im Visual Studio-Installer navigieren, um das Feedbacktool zu öffnen](../install/media/report-a-problem.png)
 

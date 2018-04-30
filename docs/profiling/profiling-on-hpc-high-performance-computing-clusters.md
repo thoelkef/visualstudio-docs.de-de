@@ -1,13 +1,9 @@
 ---
 title: Profilerstellung bei HPC-Clustern | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -22,14 +18,14 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 148610eadf05c26247ad813f7be733fade6d4a48
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 
@@ -41,7 +37,7 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie Visual Studio. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.
 
-- Installieren Sie das [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für das [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und vor der Installation der Profilerstellungstools neu starten.
+- Installieren Sie das [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und vor der Installation der Profilerstellungstools neu starten.
 
  So installieren Sie die [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
 
@@ -58,8 +54,8 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 |||
 |-|-|
 |*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|
-|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe|
+|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
+|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe.|
 
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilerstellung auf einem HPC-Berechnungsknoten
 

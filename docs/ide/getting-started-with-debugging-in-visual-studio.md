@@ -1,25 +1,21 @@
 ---
 title: Erste Schritte beim Debuggen in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Erste Schritte beim Debuggen in Visual Studio
 Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild- und Debugtools. Sie erfahren in diesem Thema, wie Sie die grundlegenden Funktionen zum Debuggen von Benutzeroberflächenfunktionen verwenden.  
@@ -49,7 +45,7 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
  ![Visual Studio, Ausgabe und Fehlerliste](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Oder blenden Sie die Zeilennummern ein, indem Sie oben rechts auf die **Schnellstartleiste** klicken, „Zeilennummern“ eingeben und die EINGABETASTE drücken. Dies ist die schnellste Möglichkeit zum Aufrufen des Fensters **Optionen**, in dem Sie Zeilennummern aktivieren können. Machen Sie sich mit der Verwendung der **Schnellstartleiste** vertraut, denn sie erspart Ihnen viele Klicks auf der Benutzeroberfläche!)  
+ Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Blenden Sie alternativ die Zeilennummern ein, indem Sie oben rechts auf die **Schnellstartleiste** klicken, „Zeilennummern“ eingeben und die **EINGABETASTE** drücken. Dies ist die schnellste Möglichkeit zum Aufrufen des Fensters **Optionen**, in dem Sie Zeilennummern aktivieren können. Machen Sie sich mit der Verwendung der **Schnellstartleiste** vertraut, denn sie erspart Ihnen viele Klicks auf der Benutzeroberfläche!)  
 
  ![Visual Studio, Editor mit Zeilennummern](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -74,10 +70,10 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
  Sie können auch auf den als Link formatierten Fehlercode in der Spalte **Code** in der **Fehlerliste** klicken. Hierdurch wird eine Suche in Bing nur nach dem Fehlercode durchgeführt.  
 
-### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Verwenden der Glühbirnen, um Code zu korrigieren oder umzugestalten  
- Glühbirnen sind eine neue Funktion von Visual Studio, mit dem Sie Code inline umgestalten können. Damit können allgemeine Warnungen schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gezackte Linie (oder drücken Sie **STRG+.**, während Sie auf die Wellenlinie zeigen), und wählen Sie dann **Schnelle Aktionen** aus.  
+### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Verwenden von Glühbirnen zum Beheben oder Umgestalten von Code  
+ Glühbirnen sind ein neues Feature von Visual Studio, mit dem Sie Code inline umgestalten können. Damit können allgemeine Warnungen schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gezackte Linie (oder drücken Sie **STRG+.**, während Sie auf die Wellenlinie zeigen), und wählen Sie dann **Schnelle Aktionen** aus.  
 
- ![Visual Studio, Schnelle Optionen für die Glühbirne](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Visual Studio, schnelle Aktionen für die Glühbirne](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  Es wird eine Liste der möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie auf diese Codezeile anwenden können.  
 
@@ -89,7 +85,7 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
  Mit etwas Erfahrung können Sie rasch mithilfe der Pfeiltasten und **STRG+.** überprüfen, ob schnelle Aktionen zur Umgestaltung und Bereinigung Ihres Codes verfügbar sind.  
 
- Weitere Informationen zu Glühbirnen finden Sie unter [Durchführen schneller Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md).  
+ Weitere Informationen zu Glühbirnen finden Sie unter [Ausführen von schnellen Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md).  
 
 ### <a name="debug-your-running-code"></a>Debuggen von ausgeführtem Code  
  Nachdem Sie Code erstellt und einige Bereinigungen durchgeführt haben, führen Sie ihn aus, indem Sie **F5** drücken oder **Debuggen > Debuggen starten** auswählen. Dadurch wird Ihre App in einer Debugumgebung gestartet, damit Sie ihr Verhalten im Detail beobachten können. Die Visual Studio-IDE ändert sich während der Ausführung Ihrer App: Das Fenster **Ausgabe** wird (in der standardmäßigen Fensterkonfiguration) durch zwei neue ersetzt, und zwar die Registerkartenfenster **Auto/Lokal/Module/Überwachung** und **Aufrufliste/Haltepunkte/Ausnahmeeinstellungen/Ausgabe**. Diese Fenster enthalten mehrere Registerkarten, mit denen Sie Variablen, Threads, Aufruflisten und andere Verhaltensweisen während der Ausführung Ihrer App überprüfen und bewerten können.  
@@ -117,7 +113,7 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
 4.  Wenn Sie Code in C# oder C++ schreiben, verwenden Sie Haltepunkte zum Anhalten des Codes, um die Adresswerte (Suche nach NULL) und Verweiszähler beim Debuggen von speicherbezogenen Fehlern zu überprüfen.  
 
- Weitere Informationen finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
+ Weitere Informationen finden Sie unter [Verwenden von Breakpoints](../debugger/using-breakpoints.md).  
 
 ### <a name="inspect-your-code-at-run-time"></a>Überprüfen von Code zur Laufzeit  
  Wenn der ausgeführte Code auf einen Haltepunkt trifft und anhält, wurde die gelb markierte Codezeile (die aktuelle Anweisung) noch nicht ausgeführt. In dieser Situation ist es empfehlenswert, die aktuelle Anweisung auszuführen und anschließend die geänderten Werte zu überprüfen. Sie können mehrere *step*-Befehle zum Ausführen von Code im Debugger verwenden. Ist der gekennzeichnete Code ein Methodenaufruf, durchlaufen Sie diesen schrittweise durch Drücken von **F11**. Sie können die Codezeile durch Drücken von **F10** auch *überspringen*. Zusätzliche Befehle und Details dazu, wie Code schrittweise durchlaufen wird, finden Sie unter [Navigate code with the debugger (Navigieren im Code mit dem Debugger)](../debugger/navigating-through-code-with-the-debugger.md).
@@ -132,14 +128,14 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
  Zeigen Sie auf eine Variable, um die Werte und Verweise anzuzeigen, die sie zurzeit enthält. Wenn Sie einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.  Weitere Informationen finden Sie unter [Learn to debug using Visual Studio (Debuggen mit Visual Studio)](../debugger/getting-started-with-the-debugger.md).
 
- Darüber hinaus zeigt Visual Studio das Fenster mit den Diagnosetools an, in dem Sie den CPU- und Speicherverbrauch Ihrer App im Zeitverlauf beobachten können. In einer späteren Entwicklungsphase können Sie mit diesen Tools nach unvorhergesehen hoher CPU-Auslastung oder Speicherzuweisung suchen. Zusammen mit dem Fenster **Überwachung** und Haltepunkten können Sie so sehr schnell ermitteln, wodurch eine unerwartete Auslastung oder nicht freigegebene Ressourcen verursacht werden.  Weitere Informationen finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
+ Darüber hinaus zeigt Visual Studio das Fenster **Diagnosetools** an, in dem Sie den CPU- und Speicherverbrauch Ihrer App im Zeitverlauf beobachten können. In einer späteren Entwicklungsphase können Sie mit diesen Tools nach unvorhergesehen hoher CPU-Auslastung oder Speicherzuweisung suchen. Zusammen mit dem Fenster **Überwachung** und Haltepunkten können Sie so sehr schnell ermitteln, wodurch eine unerwartete Auslastung oder nicht freigegebene Ressourcen verursacht werden.  Weitere Informationen finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Komponententests ausführen  
  Komponententests sind die erste Maßnahme zur Vorbeugung von Fehlern im Code. Bei korrekter Ausführung wird dabei eine einzelne „Codeeinheit“ getestet, in der Regel ist dies eine einzelne Funktion. Das Debuggen einer einzelnen Codeeinheit ist sehr viel einfacher als das Debuggen eines vollständigen Programms. Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch nativen Code. Verwenden Sie ein Unittest-Framework, um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. Wenn Sie Visual Studio Enterprise Edition verwenden, können die Tests automatisch nach jedem Build ausgeführt werden.  
 
  Weitere Informationen finden Sie unter [Generieren intelligenter Komponententests für Ihren Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).  
 
- Weitere Informationen zu Komponententests in Visual Studio und wie sie Ihnen helfen, besseren Code zu erstellen, finden Sie unter [Unit Test Basics](../test/unit-test-basics.md) (Grundlagen zu Komponententests, in englischer Sprache).  
+ Weitere Informationen zu Komponententests in Visual Studio und wie diese Ihnen helfen, besseren Code zu erstellen, finden Sie unter [Unit Test Basics (Grundlagen zu Komponententests)](../test/unit-test-basics.md).  
 
 ### <a name="perform-static-code-analysis"></a>Ausführen statischer Codeanalysen  
  Die „statische Codeanalyse“ stellt eine praktische Möglichkeit dar, den eigenen Code automatisch auf allgemeine Probleme überprüfen zu lassen, die zu Laufzeitfehlern führen oder Probleme bei der Codeverwaltung verursachen können. Gewöhnen Sie sich die Ausführung an, sobald Sie offensichtliche Fehler behoben haben, die das Erstellen verhindern würden. Nehmen Sie sich etwas Zeit, auch die Warnungen zu behandeln. Sie ersparen sich damit einige spätere Probleme und lernen etwas über Stiltechniken beim Codieren.  

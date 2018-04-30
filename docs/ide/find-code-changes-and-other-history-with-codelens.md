@@ -1,23 +1,20 @@
 ---
-title: "Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens | Microsoft-Dokumentation"
-ms.custom: 
+title: Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1e20081320109e5334360d0cc1f38b187f05d574
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -34,7 +31,7 @@ Diskutieren Sie die Codeänderungen mit Ihrem Team, ohne den Editor verlassen zu
 
 ![CodeLens: Kontaktaufnahme mit dem Team](../ide/media/codelensovervew2.png "CodeLensOvervew2")  
 
-Um die Indikatoren auswählen, die Sie anzeigen möchten, oder CodeLens zu aktivieren bzw. deaktivieren, gehen Sie zu **Tools**, **Optionen**, **Text-Editor**, **Alle Sprachen**, **CodeLens**.  
+Um die Indikatoren auswählen, die Sie anzeigen möchten, oder CodeLens zu aktivieren bzw. deaktivieren, navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens**.  
 
 ## <a name="FindReferences"></a> Referenzen zu Ihrem Code finden
 
@@ -44,7 +41,7 @@ Sie benötigen Folgendes:
 
 -  C#- oder Visual Basic-Code
 
-Wählen Sie den Indikator **Verweise** aus (**Alt+2**). Wenn **0 Verweise** angezeigt werden, bedeutet dies lediglich, dass Sie über keine Verweise aus C#- oder Visual Basic-Code verfügen. Dies beinhaltet keine Verweise aus anderen Elementen wie XAML- und ASPX-Dateien.
+Wählen Sie den Indikator **Verweise** aus (**Alt+2**). Wenn **0 Verweise** angezeigt werden, bedeutet dies lediglich, dass Sie über keine Verweise aus C#- oder Visual Basic-Code verfügen. Dies beinhaltet keine Verweise aus anderen Elementen wie **XAML-** und **ASPX-Dateien**.
 
 ![CodeLens: Auswählen des Verweisindikators](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -78,9 +75,9 @@ Bei alle anderen Dateitypen, die Sie im Visual Studio-Editor öffnen können, fi
 
 ![Dateiebene: CodeLens-Indikatoren](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
 
-Drücken Sie zum Verwenden der Tastatur zum Auswählen von Indikatoren die **ALTTASTE** , um die zugehörigen Nummerntasten anzuzeigen.  
+Drücken Sie zum Verwenden der Tastatur zum Auswählen von Indikatoren die Taste **ALT**, um die zugehörigen Nummerntasten anzuzeigen.  
 
-![Drücken Sie die ALT-TASTE, um die Tastaturzugriffsnummern einzublenden](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+![Drücken Sie ALT, um die Tastaturzugriffsnummern einzublenden](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
 
 ### <a name="find-changes-in-your-code"></a>Suchen nach Änderungen im Code
 
@@ -94,7 +91,7 @@ Zum Anzeigen eines ausführlichen Verlaufs aller Änderungen, einschließlich de
 
 ![Anzeigen aller Codeänderungen](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
 
-Daraufhin wird das Verlaufsfenster für die Changesets geöffnet.  
+Dadurch wird das **Verlaufsfenster** für die Changesets geöffnet.  
 
 ![Verlaufsfenster für alle Codeänderungen](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
 
@@ -191,7 +188,7 @@ Sie können auch auf das Changeset doppelklicken.
 
 ##  <a name="FindRunUnitTests"></a> Komponententests für Ihren Code suchen
 
-Weitere Informationen zu Komponententests, die für Ihren Code vorhanden sind, ohne Test-Explorer zu öffnen. Sie benötigen Folgendes:  
+Weitere Informationen zu Komponententests, die für Ihren Code vorhanden sind, ohne **Test-Explorer** zu öffnen. Sie benötigen Folgendes:  
 
 -   Visual Studio Professional und Visual Studio Enterprise  
   
@@ -223,7 +220,7 @@ Weitere Informationen zu Komponententests, die für Ihren Code vorhanden sind, o
 
 ###  <a name="ChangeOrTurnOff"></a> F: Wie kann ich CodeLens aktivieren oder deaktivieren? Oder wie kann ich auswählen, welche Indikatoren angezeigt werden?
 
-**A:**  Sie können die Indikatoren aktivieren und deaktivieren, mit Ausnahme des Verweisindikators. Gehen Sie zu **Tools**, **Optionen**, **Text-Editor**, **Alle Sprachen**, **CodeLens**.  
+**A:**  Sie können die Indikatoren aktivieren und deaktivieren, mit Ausnahme des Verweisindikators. Navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens**.  
   
  Wenn die Indikatoren aktiviert wurden, können Sie die CodeLens-Optionen auch über die Indikatoren öffnen.  
   
@@ -265,7 +262,7 @@ CodeLens unterstützt nicht die Installation verschiedener Versionen von Lync od
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>F: Wie ändere ich Schriftart und Farbe für CodeLens?
 
-**A:** Wechseln zu **Extras**, **Optionen**, **Umgebung**, **Schriftarten und Farben**.  
+**A:** Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben**.  
 
 ![CodeLens: Ändern der Schriftart- und Farbeinstellungen](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
 
@@ -277,7 +274,7 @@ So verwenden Sie die Tastatur:
 
 3.  Drücken Sie die **NACH-UNTEN-TASTE** , um zu **Schriftarten und Farben**zu wechseln.  
 
-4.  Drücken Sie die **TAB-TASTE** , um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE** , um **CodeLens**auszuwählen.  
+4.  Drücken Sie die **TAB-TASTE**, um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE**, um **CodeLens**auszuwählen.  
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-Heads-up-Display verschieben?
 
@@ -311,4 +308,4 @@ So verwenden Sie die Tastatur:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)
+[Writing code in the editor (Schreiben von Code im Code-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)

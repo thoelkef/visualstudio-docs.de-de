@@ -1,28 +1,26 @@
 ---
 title: 'Vorgehensweise: Suchen nach Themen | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort enthalten. Sie haben außerdem die Möglichkeit, die Suche mithilfe von Platzhalterausdrücken, logischen Operatoren und erweiterten Suchoperatoren einzugrenzen und anzupassen.  
   
-Klicken Sie im Help Viewer-Fenster auf die Registerkarte **Suche**, oder drücken Sie **STRG+E**, wenn Sie eine Tastatur benutzen, um die Registerkarte zu öffnen.  
+Klicken Sie im **Help Viewer**-Fenster auf die Registerkarte **Suche**, oder drücken Sie **STRG**+**E**, wenn Sie eine Tastatur benutzen, um die Registerkarte **Suche** zu öffnen.  
   
 ## <a name="to-perform-a-full-text-search"></a>So führen Sie eine Volltextsuche aus 
 1.  Geben Sie in das Suchfeld das Wort ein, nach dem Sie suchen möchten.  

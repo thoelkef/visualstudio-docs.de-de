@@ -1,19 +1,19 @@
 ---
 title: Erwerben von Visual Studio-Cloudabonnements für CSPs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -78,7 +78,7 @@ So sind die Inhalte der Arbeitsmappe zu interpretieren:
 Es wird ein Rabatt von 5 % auf die sechste Einheit jedes Visual Studio-Abonnements angeboten, die Sie (für einen bestimmten Kunden) in einem bestimmten Monat kaufen. Deshalb werden Ihnen zwei Zeilen für jede Abonnementoption angezeigt. Die eine Zeile zeigt einen „mindestens erforderlichen Wert“ von 0 an, der als Basispreis für die erste bis fünfte Einheit zu interpretieren ist. Die andere Zeile zeigt einen „mindestens erforderlichen Wert“ von 5 an. Dabei handelt es sich also um den Rabattpreis, der ab der sechsten Einheit gilt.
 
 
-## <a name="faq"></a>FAQ
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>F: Wie werden **monatliche** Gebühren für Cloudabonnements verarbeitet?
 A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt. Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
 

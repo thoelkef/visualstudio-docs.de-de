@@ -2,25 +2,24 @@
 title: Tastenkombinationen in Visual Studio | Microsoft-Dokumentation
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Tipps und Tricks für Visual Studio
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
 Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Artikel verwenden.
 
-Die hier aufgelisteten Tastenkombinationen sind nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).
+> [!TIP]
+> Die hier aufgelisteten Tastenkombinationen sind nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="window-management"></a>Fensterverwaltung
 
@@ -78,10 +77,10 @@ Informationen über die Optimierung der Barrierefreiheit von Visual Studio finde
 |Codeausschnittauswahl|STRG+K, X oder ?, Registerkarte (VB)||
 |Umgeben mit|Strg+K, S||
 |Anzeigen der QuickInfo|STRG+K, I||
-|Navigieren zu|Strg+,||
+|Navigieren zu|**STRG**+**,**||
 |Navigieren in markierten Verweisen|STRG+UMSCHALT+NACH-OBEN (vorheriger), STRG+UMSCHALT+NACH-UNTEN (nächster)||
-|Editor-Zoom|STRG+UMSCHALT+> (vergrößern), STRG+UMSCHALT+< (verkleinern)||
-|Blockauswahl|ALT-TASTE gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN||
+|Editor-Zoom|**STRG**+**UMSCHALT**+**>** (Vergrößern), **STRG**+**UMSCHALT**+**<** (Verkleinern)||
+|Blockauswahl|**ALT-TASTE** gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN||
 |Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB||
 |Zeile duplizieren|STRG+E,V|Visual Studio 2017 Version 15.6|
 |Auswahl erweitern|**UMSCHALT**+**ALT**+**=**|Visual Studio 2017 Version 15.5|
@@ -91,16 +90,16 @@ Informationen über die Optimierung der Barrierefreiheit von Visual Studio finde
 |Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)||
 |Schließen des Peek-Definitionsfensters|Esc||
 |Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1||
-|Zwischen mehreren Fenstern der "Peek-Definition" navigieren|STRG+ALT+- und STRG+ALT+=||
-|Navigieren zwischen mehreren Peek-Ergebnissen|F8 und UMSCHALT+F8||
+|Zwischen mehreren Fenstern der "Peek-Definition" navigieren|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**||
+|Navigieren zwischen mehreren Peek-Ergebnissen|**F8** und **UMSCHALT**+**F8**||
 |Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC||
 
 ## <a name="toolbars"></a>Symbolleisten
 
 |||
 |-|-|
-|Hinzufügen von Schaltflächen|Klicken auf die Schaltfläche "Symbolleistenüberlauf"|
-|Suchen des Kombinationsfelds in der Standardsymbolleiste|STRG+D|
+|Hinzufügen von Schaltflächen|Auswählen der Symbolleistenschaltfläche „Überlauf“|
+|Suchen des Kombinationsfelds in der Standardsymbolleiste|**STRG**+**D**|
 |Suchen des Textfeld-Befehlsmodus|Eingeben von „>“|
 |Erstellen eines neuen Alias|>alias NewAlias-Befehl|
 
@@ -125,9 +124,6 @@ Informationen über die Optimierung der Barrierefreiheit von Visual Studio finde
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tastenkombinationen (VSTS und TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)
 - [Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)
-- [Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio-UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)
