@@ -1,6 +1,7 @@
 ---
-title: Debuggen eine Multithreadanwendung mithilfe des Fensters Threads | Microsoft Docs
-ms.custom: H1HackMay2017
+title: Debuggen einer Multithreadanwendung
+description: Debuggen Sie mithilfe des Fensters Threads und die Symbolleiste Debuggen in Visual Studio
+ms.custom: ''
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: HT
+ms.openlocfilehash: 37a9161011031c53ed16a9ab0918eb498f5fa270
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung in Visual Studio mithilfe des Fensters Threads
 Visual Studio bietet eine **Threads** und anderen Elementen können Sie das Debuggen von Multithreadanwendungen der Benutzeroberfläche. Dieses Lernprogramm zeigt, wie die **Threads** Fenster und die **Debugspeicherort** Symbolleiste. Weitere Informationen zu anderen Tools, finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). In diesem Lernprogramm dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen verwendet werden können.   
