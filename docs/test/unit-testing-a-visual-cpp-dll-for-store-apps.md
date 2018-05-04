@@ -1,6 +1,7 @@
 ---
-title: 'Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps in Visual Studio | Microsoft-Dokumentation'
+title: Testen einer Visual C++-DLL für UWP-Apps in Visual Studio
 ms.date: 02/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -236,7 +237,8 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
      Beide Tests sind erfolgreich.
 
 > [!TIP]
->  Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
+> Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
+
 
 ##  <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 

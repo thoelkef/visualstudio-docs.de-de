@@ -1,7 +1,9 @@
 ---
-title: Verwenden von Visual Studio zum Erstellen einer ASP.NET Core-Web-App in C# | Microsoft-Dokumentation
-ms.custom: ''
+title: Verwenden von Visual Studio zum Erstellen einer ASP.NET Core-Web-App in C#
+description: Dieser Artikel enthält eine ausführliche Anleitung zum Erstellen einer ASP.NET Core-Web-App mit C# in Visual Studio.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,17 +14,17 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache C#-ASP.NET Core-Web-Anwendung erstellen.
 
-Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -30,7 +32,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#**, und klicken Sie auf **.NET Core**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
 
@@ -68,7 +70,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
    ![Fehlerliste](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. Platzieren Sie den Cursor im Editor-Fenster auf eine der Zeilen, die den Fehler enthalten, und klicken Sie anschließend am linken Rand auf die Glühbirne für „Schnelle Aktionen“. Klicken Sie im Dropdownmenü auf **using System;**, um diese Anweisung am Anfang der Datei hinzuzufügen und die Fehler zu beheben.
+1. Platzieren Sie den Cursor im Editor-Fenster auf einer der Zeilen, die den Fehler enthalten, und klicken Sie anschließend am linken Rand auf die **Glühbirne für schnelle Aktionen**. Klicken Sie im Dropdownmenü auf **using System;**, um diese Anweisung am Anfang der Datei hinzuzufügen und die Fehler zu beheben.
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
@@ -87,4 +89,4 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit C# und ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Erste Schritte mit C# und ASP.NET in Visual Studio](tutorial-csharp-aspnet-core.md)

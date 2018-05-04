@@ -1,6 +1,7 @@
 ---
-title: Schnelle Aktionen | Microsoft-Dokumentation
+title: Schnelle Aktionen
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
@@ -42,7 +43,7 @@ Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehl
 
 ## <a name="to-see-potential-fixes"></a>So zeigen Sie potenzielle Fehlerbehebungen an
 
-Klicken Sie entweder auf den Pfeil nach unten oder auf den Link zum Anzeigen von potenziellen Fehlerbehebungen, um eine Liste von schnellen Aktionen anzuzeigen, die die Glühbirne für Sie vornehmen kann.
+Klicken Sie entweder auf den Pfeil nach unten oder auf den Link **Mögliche Korrekturen anzeigen**, um eine Liste von schnellen Aktionen anzuzeigen, die die Glühbirne für Sie vornehmen kann.
 
 ![Erweiterte Glühbirne](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

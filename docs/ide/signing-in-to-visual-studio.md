@@ -1,9 +1,9 @@
 ---
-title: Anmelden bei Visual Studio | Microsoft-Dokumentation
+title: Anmelden bei Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -35,7 +35,7 @@ Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 - **Verlängerung des Visual Studio-Testzeitraums:** Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.
 
-- **Entsperrung von Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder Visual Studio Team Services-Abonnement verknüpft ist.** Siehe [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Entsperrung von Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder Visual Studio Team Services-Abonnement verknüpft ist.** Weitere Informationen finden Sie unter [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Stellt eine automatische Verbindung mit Diensten wie Azure und Visual Studio Team Services in der IDE her**, ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
 
@@ -53,7 +53,7 @@ Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual
 
 ## <a name="to-change-your-profile-information"></a>So ändern Sie Profilinformationen
 
-1. Wechseln Sie zu **Datei** **Kontoeinstellungen**, und wählen Sie den Link **Visual Studio-Profil** verwalten aus.
+1. Wechseln Sie zu **Datei** > **Kontoeinstellungen**, und klicken Sie auf den Link **Visual Studio-Profil verwalten**.
 
 1. Wählen Sie im Browserfenster **Profil bearbeiten** aus, und ändern Sie die gewünschten Einstellungen.
 
@@ -61,9 +61,9 @@ Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn es bei der Anmeldung zu Problemen kommen sollte, sehen Sie sich die [Supportseite für Konten](https://www.visualstudio.com/subscriptions/support/) an, um Hilfe zu erhalten.
+Wenn es bei der Anmeldung zu Problemen kommt, erhalten Sie auf der [Supportseite für Konten](https://www.visualstudio.com/subscriptions/support/) Hilfe.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+* [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)

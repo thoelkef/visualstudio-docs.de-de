@@ -1,5 +1,5 @@
 ---
-title: Testmischung für ein Auslastungstestszenario in Visual Studio| Microsoft-Dokumentation
+title: Testmischung für ein Auslastungstestszenario in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zum Angeben, welche Webleistungstests, Komponententests und Tests der programmierten UI in ein Auslastungstestszenario einbezogen werden sollen
 
@@ -77,12 +78,14 @@ Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors 
  Mit der Schaltfläche **Verteilen** werden die Prozentsätze gleichmäßig auf alle Elemente verteilt. Wenn beispielsweise drei Elemente vorhanden sind und Sie auf die Schaltfläche **Verteilen** klicken, werden die Prozentsätze auf 34, 33 und 33 festgelegt.
 
 > [!WARNING]
->  Gesperrte Elemente werden durch Klicken auf die Schaltfläche **Verteilen** überschrieben.
+> Gesperrte Elemente werden durch Klicken auf die Schaltfläche **Verteilen** überschrieben.
+
 
  Statt die Schieberegler zu verwenden, können Sie die Prozentsätze auch direkt in die Spalte **%** eintragen. Wenn Sie einen Prozentsatz direkt eingeben, werden die anderen Elemente nicht automatisch angepasst.
 
 > [!NOTE]
->  Die Schieberegler werden deaktiviert, wenn die Gesamtsumme nicht 100 % ergibt oder Dezimalwerte in die Spalte **%** eingetragen werden.
+> Die Schieberegler werden deaktiviert, wenn die Gesamtsumme nicht 100 % ergibt oder Dezimalwerte in die Spalte **%** eingetragen werden.
+
 
  Wenn Sie Prozentsätze manuell eingeben, sollten Sie sich vergewissern, dass die Summe aller Elemente 100 % ergibt. Wenn Sie eine Mischung speichern, deren Summe nicht 100 % beträgt, werden Sie aufgefordert, die vorhandenen Prozentsätze zu bestätigen oder anzupassen. Wenn Sie die Prozentsätze bestätigen, werden diese anteilsmäßig auf 100 % umgerechnet.  Wenn beispielsweise zwei Elemente vorhanden sind und Sie diese auf 80 % und 40 % festgelegt haben, wird das erste Element auf 66,67 % (80 geteilt durch 120) und das zweite Element auf 33,33 % (40 geteilt durch 120) festgelegt.
 

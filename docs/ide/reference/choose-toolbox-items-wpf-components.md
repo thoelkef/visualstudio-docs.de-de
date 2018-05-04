@@ -1,9 +1,9 @@
 ---
-title: Toolboxelemente auswählen, WPF-Komponenten | Microsoft-Dokumentation
-ms.custom: ''
+title: Toolboxelemente auswählen, WPF-Komponenten
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
 
@@ -36,16 +36,20 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
 
 Die Spalten auf der Registerkarte **WPF-Komponenten** enthalten die folgenden Informationen:
 
-name  
+**Name**
+
 Listet die Namen der WPF-Steuerelemente auf, für die Einträge in der Registrierung des Computers vorhanden sind.
 
-Namespace  
+**Namespace**
+
 Zeigt die Hierarchie des [.NET Framework Class API](/dotnet/api/?view=netframework-4.7)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET Framework-Namespaces aufgeführt.
 
-Assemblyname  
+**Assemblyname**
+
 Zeigt den Namen der .NET Framework-Assembly an, die den Namespace der einzelnen Komponenten enthält. Wenn Sie nach dieser Spalte sortieren, werden die Namespaces innerhalb der einzelnen auf dem Computer installierten .NET Framework-Assemblys aufgeführt.
 
-Verzeichnis  
+**Verzeichnis**
+
 Zeigt den Speicherort der .NET Framework-Assembly an. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache. Weitere Informationen über den globalen Assemblycache finden Sie unter [Arbeiten mit Assemblys und dem globalen Assemblycache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>UIElement-Liste
@@ -54,15 +58,15 @@ Zeigt den Speicherort der .NET Framework-Assembly an. Der Standardspeicherort f�
 
 Filtert die Liste der WPF-Steuerelemente auf Grundlage der Zeichenfolge, die Sie im Textfeld bereitstellen. Alle Übereinstimmungen aus den vier Spalten werden angezeigt.
 
-### <a name="clear"></a>Clear
+**Clear** (Löschen)
 
 Löscht die Filterzeichenfolge.
 
-### <a name="browse"></a>Durchsuchen
+**Browse** (Durchsuchen)
 
 Öffnet das Dialogfeld **Öffnen**, mit dem Sie zu Assemblys navigieren können, die WPF-Steuerelemente enthalten. Hier können Sie Assemblys laden, die sich nicht im globalen Assemblycache befinden.
 
-### <a name="language"></a>Sprache
+**Sprache**
 
 Zeigt die lokalisierte Sprache der Assembly an, die das ausgewählte WPF-Steuerelement enthält.
 
@@ -80,5 +84,5 @@ Sie können direkt in der XAML-Ansicht auf die Steuerelemente verweisen, indem S
 
 ## <a name="see-also"></a>Siehe auch
 
-[Werkzeugkasten](../../ide/reference/toolbox.md)  
-[Erste Schritte mit WPF](../../designers/getting-started-with-wpf.md)
+- [Werkzeugkasten](../../ide/reference/toolbox.md)
+- [Erste Schritte mit WPF](../../designers/getting-started-with-wpf.md)

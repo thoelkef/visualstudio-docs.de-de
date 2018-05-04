@@ -1,10 +1,9 @@
 ---
-title: Befehl „Anweisung auswerten“ | Microsoft-Dokumentation
-ms.custom: ''
+title: Befehl "Anweisung auswerten"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
@@ -16,53 +15,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe960ec84830ce76095577f7d8ee2f0c9c4ccbe8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="evaluate-statement-command"></a>Befehl "Anweisung auswerten"
-Wertet die angegebene Anweisung aus und zeigt sie an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Debug.EvaluateStatement text   
-```  
-  
-## <a name="arguments"></a>Argumente  
- `text`  
- Erforderlich. Die auszuwertende Anweisung.  
-  
-## <a name="remarks"></a>Hinweise  
- Abhängig vom Fenster, das zur Eingabe des Befehls **Anweisung auswerten** verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.  
-  
- Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Wenn die Werte der Variablen `a` und `b` beispielsweise unterschiedlich sind, gibt der Befehl  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- den Wert `false` zurück.  
-  
- Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- der Variablen `a` der Wert von Variable `b` zugewiesen.  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
->Debug.EvaluateStatement(a+b)  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Befehl „Drucken“](../../ide/reference/print-command.md)   
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+Wertet die angegebene Anweisung aus und zeigt sie an.
+
+## <a name="syntax"></a>Syntax
+
+```
+Debug.EvaluateStatement text
+```
+
+## <a name="arguments"></a>Argumente
+ `text` ist erforderlich. Die auszuwertende Anweisung.
+
+## <a name="remarks"></a>Hinweise
+ Abhängig vom Fenster, das zur Eingabe des Befehls **Anweisung auswerten** verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
+
+ Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Wenn die Werte der Variablen `a` und `b` beispielsweise unterschiedlich sind, gibt der Befehl
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ den Wert `false` zurück.
+
+ Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ der Variablen `a` der Wert von Variable `b` zugewiesen.
+
+## <a name="example"></a>Beispiel
+
+```
+>Debug.EvaluateStatement(a+b)
+```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Befehl "Drucken"](../../ide/reference/print-command.md)
+- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
+- [Befehlsfenster](../../ide/reference/command-window.md)
+- [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

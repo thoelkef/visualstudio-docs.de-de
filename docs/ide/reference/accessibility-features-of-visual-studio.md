@@ -1,9 +1,9 @@
 ---
-title: Barrierefreiheitsfeatures in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Barrierefreiheitsfeatures in Visual Studio
+description: Erfahren Sie mehr über die Features und Hilfsprogramme, durch die die Windows-Betriebssysteme und die Visual Studio-Entwicklersuite für alle Benutzer, einschließlich Personen mit Behinderungen, leichter verwendet werden können.
 ms.date: 08/22/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,42 +14,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04312a3de8590637db7ad0c8e794450476eac9c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfunktionen in Visual Studio
+# <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
+
 > [!TIP]
 > Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
 
-Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgenden Funktionen Visual Studio für den Zugang für Personen mit Behinderungen:  
+Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgenden Funktionen Visual Studio für den Zugang für Personen mit Behinderungen:
 
--   Symbolleisten-Schaltfläche und ein Textvergrößerung  
+-   Symbolleisten-Schaltfläche und ein Textvergrößerung
 
--   Textgrößenoptionen in den Editoren  
+-   Textgrößenoptionen in den Editoren
 
--   Anpassen der Farbe in den Editoren  
+-   Anpassen der Farbe in den Editoren
 
--   Anpassen von Tastenkombinationen  
+-   Anpassen von Tastenkombinationen
 
--   Automatische Vervollständigung für Methoden und Parameter  
+-   Automatische Vervollständigung für Methoden und Parameter
 
 > [!IMPORTANT]
->  Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie der Tochtergesellschaft-Karte, die im Lieferumfang des Softwarepakets enthalten ist, verwenden, oder besuchen Sie [Kontaktinformationen für den Microsoft-Support](http://support.microsoft.com/ContactUs) und klicken Sie auf den Link **Microsoft Niederlassungen weltweit suchen** (im unteren Bereich der Seite). Diese Seite enthält eine Liste mit Telefonnummern und Adressen der Microsoft Support Services. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.  
+> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie der Tochtergesellschaft-Karte, die im Lieferumfang des Softwarepakets enthalten ist, verwenden, oder besuchen Sie [Kontaktinformationen für den Microsoft-Support](http://support.microsoft.com/ContactUs) und klicken Sie auf den Link **Microsoft Niederlassungen weltweit suchen** (im unteren Bereich der Seite). Diese Seite enthält eine Liste mit Telefonnummern und Adressen der Microsoft Support Services. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
 
- Weitere Informationen finden Sie unter den folgenden Themen:  
 
--   [Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+ Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Gewusst wie: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+-   [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
+-   [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Tipps und Tricks zu Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)  
+-   [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+-   [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)
 
-## <a name="see-also"></a>Siehe auch  
- [Produkte und Dienste von Microsoft für Barrierefreiheit](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+-   [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Produkte und Dienste von Microsoft für Barrierefreiheit](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

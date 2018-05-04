@@ -1,9 +1,8 @@
 ---
-title: 'Vorgehensweise: Darstellen einer Auflistungszuordnung (Klassen-Designer) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -18,26 +17,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf7f8c7971b78247e87def172eca169b38b6b80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)
-Eigenschaften und Felder, die Auflistungen eines anderen Typs darstellen, können als Auflistungszuordnung im Klassendiagramm angezeigt werden. Anders als bei einer regulären Zuordnung, bei der ein Feld oder eine Eigenschaft als eine Zeile dargestellt wird, welche die Eigentümerklasse mit dem Feldtyp verknüpft, wird eine Auflistungszuordnung als eine Zeile dargestellt, welche die Eigentümerklasse mit dem gesammelten Typ verknüpft.  
-  
-### <a name="to-create-a-collection-association"></a>So erstellen Sie eine Auflistungszuordnung  
-  
-1.  Erstellen Sie verschlüsselt eine Eigenschaft oder ein Feld, deren bzw. dessen Typ selbst eine stark typisierte Auflistung ist.  
-  
-2.  Erweitern Sie im Klassendiagramm die Klasse so, dass Felder und Eigenschaften angezeigt werden.  
-  
-3.  Klicken Sie in der Klasse mit der rechten Maustaste auf das Feld oder die Eigenschaft, und wählen Sie **Als Auflistungszuordnung anzeigen** aus.  
-  
-     Die Eigenschaft oder das Feld wird als Zuordnungslinie dargestellt, die mit dem gesammelten Typ verknüpft ist.  
-  
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>Vorgehensweise: Darstellen einer Auflistungszuordnung (Klassen-Designer)
+
+Eigenschaften und Felder, die Auflistungen eines anderen Typs darstellen, können als Auflistungszuordnung im Klassendiagramm angezeigt werden. Anders als bei einer regulären Zuordnung, bei der ein Feld oder eine Eigenschaft als eine Zeile dargestellt wird, welche die Eigentümerklasse mit dem Feldtyp verknüpft, wird eine Auflistungszuordnung als eine Zeile dargestellt, welche die Eigentümerklasse mit dem gesammelten Typ verknüpft.
+
+## <a name="to-create-a-collection-association"></a>So erstellen Sie eine Auflistungszuordnung
+
+1.  Erstellen Sie verschlüsselt eine Eigenschaft oder ein Feld, deren bzw. dessen Typ selbst eine stark typisierte Auflistung ist.
+
+2.  Erweitern Sie im Klassendiagramm die Klasse so, dass Felder und Eigenschaften angezeigt werden.
+
+3.  Klicken Sie in der Klasse mit der rechten Maustaste auf das Feld oder die Eigenschaft, und wählen Sie **Als Auflistungszuordnung anzeigen** aus.
+
+     Die Eigenschaft oder das Feld wird als Zuordnungslinie dargestellt, die mit dem gesammelten Typ verknüpft ist.
+
 ## <a name="see-also"></a>Siehe auch
-[Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)   
-[Entwerfen von Klassen und Typen](designing-classes-and-types.md)   
-[Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)
+
+- [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)
+- [Entwerfen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
+- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)

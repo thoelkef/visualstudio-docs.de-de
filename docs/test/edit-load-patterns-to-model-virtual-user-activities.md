@@ -1,5 +1,5 @@
 ---
-title: Auslastungsmuster für Auslastungstests in Visual Studio| Microsoft-Dokumentation
+title: Auslastungsmuster für Auslastungstests in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -43,7 +44,8 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
  Sie können beispielsweise die folgenden Informationen angeben: **Benutzeranzahl (ursprünglich)**=1, **Maximale Benutzeranzahl**=100, **Schrittdauer (Sekunden)**=10 und **Benutzeranzahl pro Schritt**=1. In diesem Fall wird ein Auslastungsmuster erstellt, bei dem die Anzahl der Benutzer mit 1 beginnt und alle 10 Sekunden um 1 erhöht wird, bis schließlich eine Auslastung durch 100 Benutzer erreicht wird.
 
 > [!NOTE]
->  Wenn die gesamte Testdauer kürzer ist als die Zeitdauer, die zum Erreichen der maximalen Benutzerauslastung erforderlich ist, wird der Test nach Ablauf der Testdauer beendet, und die maximale Benutzeranzahl wird nicht erreicht.
+> Wenn die gesamte Testdauer kürzer ist als die Zeitdauer, die zum Erreichen der maximalen Benutzerauslastung erforderlich ist, wird der Test nach Ablauf der Testdauer beendet, und die maximale Benutzeranzahl wird nicht erreicht.
+
 
  Sie können die Auslastung schrittweise erhöhen, bis die Leistung des Servers wesentlich beeinträchtigt ist. Wenn die Auslastung zunimmt, stehen dem Server schließlich keine ausreichenden Ressourcen mehr zur Verfügung. Die schrittweise Auslastung bietet eine effektive Möglichkeit, die Anzahl der Benutzer festzustellen, bei der der Server überlastet sein könnte. Des Weiteren müssen Sie bei der schrittweisen Auslastung die Ressourcen der Agents genau überwachen, um sicher zu stellen, dass diese in der Lage sind, die gewünschte Auslastung zu generieren.
 
@@ -117,12 +119,14 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
  Nachdem Sie den Auslastungstest mit dem **Assistenten für neuen Auslastungstest** erstellt haben, können Sie mithilfe des **Auslastungstest-Editors** die Eigenschaften des Auslastungsmusters für ein Szenario Ihren Anforderungen an den Test entsprechend anpassen.
 
 > [!NOTE]
->  Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+
 
  Das Auslastungsmuster gibt die Anzahl der während eines Auslastungstests aktiven virtuellen Benutzer und die Frequenz an, mit der neue Benutzer hinzugefügt werden. Ihnen stehen drei Muster für die Auswahl zur Verfügung: Schrittweise, konstant und zielbasiert. Weitere Informationen finden Sie unter [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario (Angeben der Anzahl virtueller Benutzer mit Auslastungsmustern in einem Auslastungstestszenario)](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  Sie können die Auslastungseigenschaften auch programmgesteuert mit einem Auslastungstest-Plug-In ändern. Weitere Informationen finden Sie unter [How to: Create a Load Test Plug-In (Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins)](../test/how-to-create-a-load-test-plug-in.md).
+> Sie können die Auslastungseigenschaften auch programmgesteuert mit einem Auslastungstest-Plug-In ändern. Weitere Informationen finden Sie unter [How to: Create a Load Test Plug-In (Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins)](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>So ändern Sie das Auslastungsmuster
 

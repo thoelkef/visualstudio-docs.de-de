@@ -1,9 +1,10 @@
 ---
-title: 'Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic | Microsoft-Dokumentation'
+title: 'Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic'
+description: Hier finden Sie eine ausführliche Anleitung zum Erstellen einer einfachen Konsolenanwendung mit Visual Basic in Visual Studio.
 ms.custom: ''
 ms.date: 12/10/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,23 +14,25 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic
+
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache Visual Basic-Anwendung erstellen, die in der Konsole ausgeführt werden kann.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
+
 Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enthält, schon bevor Sie mit der Bearbeitung beginnen, alle Vorlagendateien, die Sie benötigen.
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie dann das Projekt *HalloWelt*.
 
@@ -44,6 +47,7 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
      ![Workload „Plattformübergreifende .NET Core-Entwicklung“ im Visual Studio-Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
+
 Nachdem Sie Ihre Visual Basic-Projektvorlage ausgewählt haben und Ihr Projekt benannt haben, erstellt Visual Studio eine einfache „Hallo Welt“-Anwendung für Sie. Sie ruft die <xref:System.Console.WriteLine%2A>-Methode auf, um die literale Zeichenfolge „Hello World!“ im Konsolenfenster anzuzeigen.
 
 ![Sehen Sie sich den Standardcode für „Hallo Welt“ in der Vorlage an](../ide/media/vb-console-helloworld-template.png)
@@ -55,6 +59,7 @@ Sie können das Programm im Debugmodus ausführen, indem Sie in der IDE auf die 
 Wenn Sie dies tun, öffnet sich das Konsolenfenster nur für einen kurzen Moment, bevor es wieder geschlossen wird. Der Grund dafür ist, dass die Methode `Main` beendet wird, nachdem ihre einzige Anweisung ausgeführt wird, also wird die Anwendung geschlossen.
 
 ### <a name="add-some-code"></a>Hinzufügen von Code
+
 Fügen Sie Code hinzu, um die Anwendung zu pausieren und den Benutzer zur Eingabe aufzufordern.
 
 1. Fügen Sie direkt nach dem Aufruf der <xref:System.Console.WriteLine%2A>-Methode folgenden Code ein:
@@ -70,6 +75,7 @@ Fügen Sie Code hinzu, um die Anwendung zu pausieren und den Benutzer zur Eingab
    Dies kompiliert Ihr Programm in eine Zwischensprache (IL), die dann von einem JIT-Compiler (Just in Time) in Binärcode konvertiert wird.
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
+
 1. Klicken Sie auf der Symbolleiste auf die Schaltfläche **HalloWelt**.
 
    ![Klicken Sie die Schaltfläche „HalloWelt“, um das Programm von der Symbolleiste aus auszuführen](../ide/media/vb-console-hello-world-button.png)
@@ -79,6 +85,7 @@ Fügen Sie Code hinzu, um die Anwendung zu pausieren und den Benutzer zur Eingab
    ![Konsolenfenster mit „Hallo Welt“ und „Drücken Sie eine beliebige Taste um fortzufahren“](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
 
 > [!div class="nextstepaction"]

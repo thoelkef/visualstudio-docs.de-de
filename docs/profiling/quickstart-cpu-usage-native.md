@@ -1,5 +1,6 @@
 ---
-title: Analysieren der CPU-Auslastungsdaten (C++) | Microsoft-Dokumentation
+title: Analysieren der CPU-Auslastungsdaten (C++)
+description: Messen der App-Leistung in C++ mithilfe des Diagnosetools für die CPU-Auslastung
 ms.custom: ''
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
@@ -14,13 +15,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52483a920d47b5728645ae195bc1837c7ccc565b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 
 Visual Studio enthält viele leistungsstarke Features, mit denen Sie Leistungsprobleme in Ihrer Anwendung besser analysieren können. In diesem Thema werden einige der grundlegenden Funktionen erläutert. Außerdem betrachten wir das Tool, mit dem Leistungsengpässe aufgrund hoher CPU-Auslastung erkannt werden können. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 

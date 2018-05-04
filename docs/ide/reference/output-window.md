@@ -1,10 +1,9 @@
 ---
-title: Ausgabefenster | Microsoft-Dokumentation
-ms.custom: ''
+title: Ausgabefenster
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -19,55 +18,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8a075f977746a769fb19bec6eb196e0d338b12
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc34b611a446edea86d3ea5e0c15b72c558d5764
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="output-window"></a>Ausgabefenster
-Das Fenster **Ausgabe** zeigt die Statusmeldungen für verschiedene Funktionen in der integrierten Entwicklungsumgebung (Integrated Development Environment – IDE) an. Um das Fenster **Ausgabe** zu öffnen, wählen Sie in der Menüleiste **Ansicht/Ausgabe** aus (oder drücken Sie STRG+ALT+O).  
-  
+Das Fenster **Ausgabe** zeigt die Statusmeldungen für verschiedene Funktionen in der integrierten Entwicklungsumgebung (Integrated Development Environment – IDE) an. Um das Fenster **Ausgabe** zu öffnen, wählen Sie in der Menüleiste **Ansicht/Ausgabe** aus (oder drücken Sie STRG+ALT+O).
+
 > [!WARNING]
->  In Visual Studio Express-Editionen wird das Fenster "Ausgabe" nicht im Menü "Ansicht" angezeigt. Um es einzublenden, verwenden Sie den Hotkey STRG+ALT+O.  
-  
-## <a name="toolbar"></a>Symbolleiste  
- **Ausgabe anzeigen von**  
- Zeigt einen oder mehrere Ausgabebereiche zur Ansicht an. Je nachdem, welche Tools in der IDE Benutzermeldungen im Fenster **Ausgabe** ausgegeben haben, stehen mehrere Informationsbereiche zur Verfügung.  
-  
- **Suchen der Meldung im Code**  
- Verschiebt die Einfügemarke im Code-Editor in die Zeile, die den ausgewählten Buildfehler enthält.  
-  
- **Gehe zur vorherigen Meldung**  
- Verschiebt den Fokus im Fenster **Ausgabe** zum vorherigen Buildfehler und positioniert die Einfügemarke im Code-Editor in der Zeile mit dem Buildfehler.  
-  
- **Gehe zur nächsten Meldung**  
- Verschiebt den Fokus im Fenster **Ausgabe** zum nächsten Buildfehler und positioniert die Einfügemarke im Code-Editor in der Zeile mit dem Buildfehler.  
-  
- **Alle löschen**  
- Löscht den gesamten Text aus dem Bereich **Ausgabe**.  
-  
- **Umschalten des Zeilenumbruchs**  
- Schaltet die Zeilenumbruchfunktion im Bereich **Ausgabe** ein und aus. Wenn die Zeilenumbruchfunktion aktiviert ist, wird Text in längeren Einträgen, der über den Anzeigebereich hinausgeht, in der nächsten Zeile angezeigt.  
-  
-## <a name="output-pane"></a>Ausgabebereich  
- In dem in der Liste **Ausgabe anzeigen von** ausgewählten Bereich **Ausgabe** werden Ausgabedaten aus der angegebenen Quelle angezeigt.  
-  
-## <a name="routing-messages-to-the-output-window"></a>Meldungsrouting an das Ausgabefenster  
- Um das Fenster **Ausgabe** beim Erstellen eines Projekts anzuzeigen, wählen Sie im Dialogfeld **Allgemein, Projekte und Projektmappen, Optionen** die Option **Ausgabefenster bei Buildbeginn anzeigen** aus. Klicken Sie dann, während eine Codedatei zur Bearbeitung geöffnet ist, auf der Symbolleiste des Fensters **Ausgabe** auf die Schaltflächen **Gehe zur nächsten Meldung** oder **Gehe zur vorherigen Meldung**, um Einträge im Bereich **Ausgabe** auszuwählen. Währenddessen wird die Einfügemarke im Code-Editor in die Codezeile verschoben, in der das jeweilige Problem auftritt.  
-  
- Bei bestimmten im [Befehlsfenster](../../ide/reference/command-window.md) aufgerufenen Funktionen und Befehlen der IDE erfolgt die Ausgabe im Fenster **Ausgabe**. Ausgaben von externen Tools, z.B. BAT- und COM-Dateien, die normalerweise im Eingabeaufforderungsfenster angezeigt werden, werden an einen **Ausgabe**-Bereich geroutet, wenn Sie die Funktion **Ausgabefenster verwende**n im Fenster [Verwalten von externen Tools](../../ide/managing-external-tools.md) auswählen. Viele weitere Meldungstypen können ebenfalls in **Ausgabe**-Bereichen angezeigt werden. Wenn beispielsweise Transact-SQL-Syntax in einer gespeicherten Prozedur anhand einer Zieldatenbank überprüft wird, werden die Ergebnisse im Fenster **Ausgabe** angezeigt.  
-  
- Sie können auch eigene Anwendungen so programmieren, dass sie Diagnosemeldungen zur Laufzeit in einen **Ausgabe**-Bereich ausgeben. Verwenden Sie dazu Member der <xref:System.Diagnostics.Debug>-Klasse oder der <xref:System.Diagnostics.Trace>-Klasse im <xref:System.Diagnostics>-Namespace der .NET Framework-Klassenbibliothek. Wenn Sie Debugkonfigurationen von einer Projektmappe oder einem Projekt erstellen, wird die Ausgabe von Membern der <xref:System.Diagnostics.Debug>-Klasse angezeigt. Beim Erstellen einer Debug- oder Releasekonfiguration wird die Ausgabe von Membern der <xref:System.Diagnostics.Trace>-Klasse angezeigt. Weitere Informationen finden Sie unter [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md).  
-  
- Sie können unter [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von F1 in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts oder eines benutzerdefinierten Buildereignisses](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
-  
-## <a name="scrolling-behavior"></a>Bildlauf-Verhalten  
- Wenn Sie den automatischen Bildlauf im Ausgabefenster verwenden und dann navigieren, indem Sie die Maus oder Pfeiltasten verwenden, wird der automatische Bildlauf beendet. Verwenden Sie zum Fortsetzen des automatischen Bildlaufs STRG+ENDE.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Vorgehensweise: Steuern des Ausgabefensters](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
- [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)   
- [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md)   
- [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview)
+> In Visual Studio Express-Editionen wird das Fenster "Ausgabe" nicht im Menü "Ansicht" angezeigt. Um es einzublenden, verwenden Sie den Hotkey STRG+ALT+O.
+
+
+## <a name="toolbar"></a>Symbolleiste
+ **Ausgabe anzeigen von**
+
+ Zeigt einen oder mehrere Ausgabebereiche zur Ansicht an. Je nachdem, welche Tools in der IDE Benutzermeldungen im Fenster **Ausgabe** ausgegeben haben, stehen mehrere Informationsbereiche zur Verfügung.
+
+ **Suchen der Meldung im Code**
+
+ Verschiebt die Einfügemarke im Code-Editor in die Zeile, die den ausgewählten Buildfehler enthält.
+
+ **Gehe zur vorherigen Meldung**
+
+ Verschiebt den Fokus im Fenster **Ausgabe** zum vorherigen Buildfehler und positioniert die Einfügemarke im Code-Editor in der Zeile mit dem Buildfehler.
+
+ **Gehe zur nächsten Meldung**
+
+ Verschiebt den Fokus im Fenster **Ausgabe** zum nächsten Buildfehler und positioniert die Einfügemarke im Code-Editor in der Zeile mit dem Buildfehler.
+
+ **Alle löschen**
+
+ Löscht den gesamten Text aus dem Bereich **Ausgabe**.
+
+ **Umschalten des Zeilenumbruchs**
+
+ Schaltet die Zeilenumbruchfunktion im Bereich **Ausgabe** ein und aus. Wenn die Zeilenumbruchfunktion aktiviert ist, wird Text in längeren Einträgen, der über den Anzeigebereich hinausgeht, in der nächsten Zeile angezeigt.
+
+## <a name="output-pane"></a>Ausgabebereich
+ In dem in der Liste **Ausgabe anzeigen von** ausgewählten Bereich **Ausgabe** werden Ausgabedaten aus der angegebenen Quelle angezeigt.
+
+## <a name="routing-messages-to-the-output-window"></a>Meldungsrouting an das Ausgabefenster
+ Um das Fenster **Ausgabe** beim Erstellen eines Projekts anzuzeigen, wählen Sie im Dialogfeld **Allgemein, Projekte und Projektmappen, Optionen** die Option **Ausgabefenster bei Buildbeginn anzeigen** aus. Klicken Sie dann, während eine Codedatei zur Bearbeitung geöffnet ist, auf der Symbolleiste des Fensters **Ausgabe** auf die Schaltflächen **Gehe zur nächsten Meldung** oder **Gehe zur vorherigen Meldung**, um Einträge im Bereich **Ausgabe** auszuwählen. Währenddessen wird die Einfügemarke im Code-Editor in die Codezeile verschoben, in der das jeweilige Problem auftritt.
+
+ Bei bestimmten im [Befehlsfenster](../../ide/reference/command-window.md) aufgerufenen Funktionen und Befehlen der IDE erfolgt die Ausgabe im Fenster **Ausgabe**. Ausgaben von externen Tools, z.B. BAT- und COM-Dateien, die normalerweise im Eingabeaufforderungsfenster angezeigt werden, werden an einen **Ausgabe**-Bereich geroutet, wenn Sie die Funktion **Ausgabefenster verwende**n im Fenster [Verwalten von externen Tools](../../ide/managing-external-tools.md) auswählen. Viele weitere Meldungstypen können ebenfalls in **Ausgabe**-Bereichen angezeigt werden. Wenn beispielsweise Transact-SQL-Syntax in einer gespeicherten Prozedur anhand einer Zieldatenbank überprüft wird, werden die Ergebnisse im Fenster **Ausgabe** angezeigt.
+
+ Sie können auch eigene Anwendungen so programmieren, dass sie Diagnosemeldungen zur Laufzeit in einen **Ausgabe**-Bereich ausgeben. Verwenden Sie dazu Member der <xref:System.Diagnostics.Debug>-Klasse oder der <xref:System.Diagnostics.Trace>-Klasse im <xref:System.Diagnostics>-Namespace der .NET Framework-Klassenbibliothek. Wenn Sie Debugkonfigurationen von einer Projektmappe oder einem Projekt erstellen, wird die Ausgabe von Membern der <xref:System.Diagnostics.Debug>-Klasse angezeigt. Beim Erstellen einer Debug- oder Releasekonfiguration wird die Ausgabe von Membern der <xref:System.Diagnostics.Trace>-Klasse angezeigt. Weitere Informationen finden Sie unter [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md).
+
+ Sie können unter [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von F1 in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts oder eines benutzerdefinierten Buildereignisses](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+
+## <a name="scrolling-behavior"></a>Bildlauf-Verhalten
+ Wenn Sie den automatischen Bildlauf im Ausgabefenster verwenden und dann navigieren, indem Sie die Maus oder Pfeiltasten verwenden, wird der automatische Bildlauf beendet. Verwenden Sie zum Fortsetzen des automatischen Bildlaufs STRG+ENDE.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Vorgehensweise: Steuern des Ausgabefensters](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)
+- [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md)
+- [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview)

@@ -1,9 +1,8 @@
 ---
-title: Visual C++-Typedefs im Klassen-Designer | Microsoft-Dokumentation
-ms.custom: ''
+title: Visual C++-Typedefs im Klassen-Designer
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -16,190 +15,190 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91bd88938a093f18ea4f83a41de0972daa35bf6c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-Typedefs im Klassen-Designer
-Typedef-Anweisungen erstellen eine oder mehrere Dereferenzierungsebenen zwischen einem Namen und seinem zugrundeliegenden Typ. Der Klassen-Designer unterstützt C++-typedef-Typen, die mithilfe des Schlüsselworts `typedef` deklariert werden, zum Beispiel:  
-  
+# <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-TypeDefs im Klassen-Designer
+
+Typedef-Anweisungen erstellen eine oder mehrere Dereferenzierungsebenen zwischen einem Namen und seinem zugrundeliegenden Typ. Der **Klassen-Designer** unterstützt z.B. folgende typedef-Typen für C++, die mithilfe des Schlüsselworts `typedef` deklariert werden:
+
 ```cpp
-typedef class coord  
-{  
-   void P(x,y);  
-   unsigned x;  
-   unsigned y;  
-} COORD;  
-```  
-  
-Sie können diesen Typ dann zum Deklarieren einer Instanz verwenden:  
-  
-`COORD OriginPoint;`  
-  
-Zwar können Sie eine typedef ohne Namen deklarieren, der Klassen-Designer verwendet aber nicht den Namen des Tags, den Sie angeben; er verwendet den Namen, den die Klassenansicht generiert. Beispielsweise ist die folgende Deklaration gültig, sie wird aber in der Klassenansicht und im Klassen-Designer als ein Objekt mit dem Namen **__unbenannt** angezeigt:  
-  
+typedef class coord
+{
+   void P(x,y);
+   unsigned x;
+   unsigned y;
+} COORD;
+```
+
+Sie können diesen Typ dann zum Deklarieren einer Instanz verwenden:
+
+`COORD OriginPoint;`
+
+Zwar können Sie eine TypeDef ohne Namen deklarieren, der **Klassen-Designer** verwendet aber nicht den Namen des Tags, den Sie angeben, sondern den Namen, den die Klassenansicht generiert. Beispielsweise ist folgende Deklaration gültig, wird aber in der **Klassenansicht** und im **Klassen-Designer** als ein Objekt namens **__unnamed** angezeigt:
+
 ```cpp
-typedef class coord  
-{  
-   void P(x,y);  
-   unsigned x;  
-   unsigned y;  
-};  
+typedef class coord
+{
+   void P(x,y);
+   unsigned x;
+   unsigned y;
+};
 ```
 
 Weitere Informationen zur Verwendung des `typedef`-Typs finden Sie unter [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs).
 
-Eine C++-typedef-Form weist die Form des in der typedef definierten Typs auf. Wenn die Quelle beispielsweise `typedef class` deklariert, hat die Form abgerundete Ecken und trägt die Bezeichnung **Class**. Für `typedef struct` hat die Form rechtwinklige Ecken und die Bezeichnung **Struct**.  
-  
-Innerhalb von Klassen und Strukturen können geschachtelte typedefs deklariert sein; daher können Formen von Klassen und Strukturen geschachtelte typedef-Deklarationen als geschachtelte Formen anzeigen.  
-  
-Typedef-Formen unterstützen die Befehle **Als Zuordnung anzeigen** und **Als Sammlungszuordnung anzeigen** im Kontextmenü.  
-  
-Es folgen einige Beispiele für typdef-Typen, die vom Klassen-Designer unterstützt werden:  
-  
-`typedef type name`  
-  
-*Name* : *Typ*  
-  
-Typedef  
-  
-Zeichnet eine Zuordnungslinie zur Verbindung mit dem Typ *name*, falls möglich.  
-  
-`typedef void (*func)(int)`  
-  
-`func: void (*)(int)`  
-  
-Typedef  
-  
-Typedef für Funktionszeiger. Es wird keine Zuordnungslinie gezeichnet.  
-  
-Der Klassen-Designer zeigt eine typedef nicht an, wenn deren Quelltyp ein Funktionszeiger ist.  
-  
+Eine C++-typedef-Form weist die Form des in der typedef definierten Typs auf. Wenn die Quelle beispielsweise `typedef class` deklariert, hat die Form abgerundete Ecken und trägt die Bezeichnung **Class**. Für `typedef struct` hat die Form rechtwinklige Ecken und die Bezeichnung **Struct**.
+
+Innerhalb von Klassen und Strukturen können geschachtelte typedefs deklariert sein; daher können Formen von Klassen und Strukturen geschachtelte typedef-Deklarationen als geschachtelte Formen anzeigen.
+
+Typedef-Formen unterstützen die Befehle **Als Zuordnung anzeigen** und **Als Sammlungszuordnung anzeigen** im Kontextmenü.
+
+Es folgen einige Beispiele für typdef-Typen, die vom **Klassen-Designer** unterstützt werden:
+
+`typedef type name`
+
+*Name* : *Typ*
+
+Typedef
+
+Zeichnet eine Zuordnungslinie zur Verbindung mit dem Typ *name*, falls möglich.
+
+`typedef void (*func)(int)`
+
+`func: void (*)(int)`
+
+Typedef
+
+Typedef für Funktionszeiger. Es wird keine Zuordnungslinie gezeichnet.
+
+Der **Klassen-Designer** zeigt eine TypeDef nicht an, wenn deren Quelltyp ein Funktionszeiger ist.
+
 ```cpp
-typedef int MyInt;  
-class A {  
-   MyInt I;  
-};  
-```  
-  
-`MyInt: int`  
-  
-Typedef  
-  
-`A`  
-  
-Klasse  
-  
-Zeichnet eine Zuordnungslinie, die von der Form des Quelltyps auf die Form des Zieltyps zeigt.  
-  
-`Class B {};`  
-  
-`typedef B MyB;`  
-  
-`B`  
-  
-Klasse  
-  
-`MyB : B`  
-  
-Typedef  
-  
-Beim Klicken mit der rechten Maustaste auf eine typedef-Form und anschließendes Klicken auf **Als Zuordnung anzeigen** werden die typedef oder Klasse und eine **Alias von**-Linie angezeigt, die die beiden Formen verbindet (ähnlich einer Zuordnungslinie).  
-  
-`typedef B MyB;`  
-  
-`typedef MyB A;`  
-  
-`MyBar : Bar`  
-  
-Typedef  
-  
-Siehe oben.  
-  
+typedef int MyInt;
+class A {
+   MyInt I;
+};
+```
+
+`MyInt: int`
+
+Typedef
+
+`A`
+
+Klasse
+
+Zeichnet eine Zuordnungslinie, die von der Form des Quelltyps auf die Form des Zieltyps zeigt.
+
+`Class B {};`
+
+`typedef B MyB;`
+
+`B`
+
+Klasse
+
+`MyB : B`
+
+Typedef
+
+Beim Klicken mit der rechten Maustaste auf eine typedef-Form und anschließendes Klicken auf **Als Zuordnung anzeigen** werden die typedef oder Klasse und eine **Alias von**-Linie angezeigt, die die beiden Formen verbindet (ähnlich einer Zuordnungslinie).
+
+`typedef B MyB;`
+
+`typedef MyB A;`
+
+`MyBar : Bar`
+
+Typedef
+
+Siehe oben.
+
 ```cpp
-Class B {};  
-typedef B MyB;  
-  
-class A {  
-   MyB B;  
-};  
-```  
-  
-`B`  
-  
-Klasse  
-  
-`MyB : B`  
-  
-Typedef  
-  
-`A`  
-  
-Klasse  
-  
-`MyB` ist eine geschachtelte typedef-Form.  
-  
-`#include <vector>`  
-  
-`...`  
-  
-`using namespace std;`  
-  
-`...`  
-  
-`typedef vector<int> MyIntVect;`  
-  
-`vector<T>`Klasse  
-  
-`MyIntVect : vector<int>`  
-  
-Typedef  
-  
-`class B {};`  
-  
-`typedef B MyB;`  
-  
-`class A : MyB {};`  
-  
-`MyB : B`  
-  
-Typedef  
-  
-> B  
-  
-`B`  
-  
-`A`  
-  
-Klasse  
-  
-> MyB  
-  
-Der Klassen-Designer unterstützt das Anzeigen dieser Art von Beziehung nicht über Befehle des Kontextmenüs.  
-  
-`#include <vector>`  
-  
-`Typedef MyIntVect std::vector<int>;`  
-  
-`Class MyVect : MyIntVect {};`  
-  
-`std::vector<T>`  
-  
-Klasse  
-  
-`MyIntVect : std::vector<int>`  
-  
-Typedef  
-  
-`MyVect`  
-  
-Klasse  
-  
-> MyIntVect  
-  
+Class B {};
+typedef B MyB;
+
+class A {
+   MyB B;
+};
+```
+
+`B`
+
+Klasse
+
+`MyB : B`
+
+Typedef
+
+`A`
+
+Klasse
+
+`MyB` ist eine geschachtelte typedef-Form.
+
+`#include <vector>`
+
+`...`
+
+`using namespace std;`
+
+`...`
+
+`typedef vector<int> MyIntVect;`
+
+`vector<T>`Klasse
+
+`MyIntVect : vector<int>`
+
+Typedef
+
+`class B {};`
+
+`typedef B MyB;`
+
+`class A : MyB {};`
+
+`MyB : B`
+
+Typedef
+
+> B
+
+`B`
+
+`A`
+
+Klasse
+
+> MyB
+
+Der **Klassen-Designer** unterstützt das Anzeigen dieser Art von Beziehung nicht über Befehle des Kontextmenüs.
+
+`#include <vector>`
+
+`Typedef MyIntVect std::vector<int>;`
+
+`Class MyVect : MyIntVect {};`
+
+`std::vector<T>`
+
+Klasse
+
+`MyIntVect : std::vector<int>`
+
+Typedef
+
+`MyVect`
+
+Klasse
+
+> MyIntVect
+
 ## <a name="see-also"></a>Siehe auch
 
-[Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)  
-[Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)
+- [Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)

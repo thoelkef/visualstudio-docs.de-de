@@ -1,7 +1,7 @@
 ---
-title: Installieren der Visual Studio-Offlinehilfe| Microsoft-Dokumentation
-ms.custom: ''
+title: Installieren der Visual Studio-Offlinehilfe
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
 
@@ -24,7 +24,7 @@ Es gibt mehrere Produkte, die Hilfeinhalt in Microsoft Help Viewer anzeigen kön
 
 Help Viewer ist eine optionale Installationskomponente von Visual Studio. Um diese Komponente über den Visual Studio-Installer zu installieren, führen Sie die folgenden Schritte durch:
 
-1. Öffnen Sie den **Visual Studio-Installer** über das Startmenü. Wenn Sie Visual Studio bereits geöffnet haben, klicken Sie auf **Extras** > **Tools und Features abrufen...**, um den Visual Studio-Installer zu öffnen.
+1. Öffnen Sie den **Visual Studio-Installer** über das Startmenü. Wenn Sie Visual Studio bereits geöffnet haben, klicken Sie auf **Extras** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen.
 
 1. Klicken Sie auf die Registerkarte **Einzelne Komponenten** und anschließend unter **Codetools** auf **Help Viewer**.
 
@@ -50,5 +50,5 @@ Zudem können Sie Microsoft Help Viewer ganz leicht über das Feld **Schnellstar
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[Help Viewer und Offlineinhalt für SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [Help Viewer und Offlineinhalt für SQL Server](/sql/sql-server/sql-server-help-installation)

@@ -1,6 +1,6 @@
 ---
-title: Auswählen einer Umgebung für ein Projekt
-description: Im Visual Studio-Projektmappen-Explorer können Sie einen bestimmten Python-Interpreter (eine Umgebung) zuweisen, die immer für alle Projekte verwendet wird. Die Standardumgebung wird ignoriert. Sie können auch virtuelle Umgebungen erstellen und verwalten.
+title: Auswählen eines Python-Interpreters und einer Umgebung für ein Projekt
+description: Informationen zum Zuweisen einer Python-Umgebung zur Verwendung in einem Visual Studio-Projekt sowie Anweisungen zum Erstellen virtueller Umgebungen
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Auswählen eines Python-Interpreters und einer Umgebung zur Verwendung in einem Projekt
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Zuweisen einer Python-Umgebung für ein Projekt
 
 Der gesamte Code in einem Python-Projekt wird im Kontext einer bestimmten Umgebung ausgeführt. Visual Studio verwendet diese Umgebung auch für das Debugging, für Import- und Membervervollständigungen, für Syntaxüberprüfungen sowie für weitere Tasks, die eine Umgebung erfordern.
 

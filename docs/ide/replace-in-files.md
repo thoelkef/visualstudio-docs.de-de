@@ -1,7 +1,7 @@
 ---
-title: Finden und Ersetzen in Dateien in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Finden und Ersetzen in Dateien in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
 
 **In Dateien ersetzen** ermöglicht Ihnen, nach dem Code eines bestimmten Satzes von Dateien für eine Zeichenfolge oder einen Ausdruck zu suchen und einige oder alle gefundenen Übereinstimmungen zu ändern. Die gefundenen Übereinstimmungen und ausgeführten Aktionen werden im Fenster **Suchergebnisse** angezeigt, das unter **Ergebnisoptionen** ausgewählt wurde.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
 
 Rufen Sie die Option **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** mithilfe einer der folgenden Methoden auf.
 
@@ -39,7 +39,7 @@ Rufen Sie die Option **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** 
 
    - oder -
 
-Wählen Sie auf der Symbolleiste **In Dateien ersetzen** aus, wenn das Fenster **Suchen und Ersetzen** bereits geöffnet ist.
+  Wählen Sie auf der Symbolleiste **In Dateien ersetzen** aus, wenn das Fenster **Suchen und Ersetzen** bereits geöffnet ist.
 
 ## <a name="find-what"></a>Suchen nach
 
@@ -63,34 +63,40 @@ Die in der Dropdownliste **Suchen in** ausgewählte Option bestimmt, ob mit der 
 
 Der Bereich **Suchoptionen** kann erweitert oder reduziert werden. Die folgenden Optionen können aktiviert oder deaktiviert werden:
 
-Groß-/Kleinschreibung beachten  
+**Groß-/Kleinschreibung beachten**
+
 Wenn diese Option aktiviert ist, werden im Fenster **Suchergebnisse** nur Instanzen der Zeichenfolge aus **Suchen nach** angezeigt, bei denen sowohl der Inhalt als auch die Groß-/Kleinschreibung übereinstimmen. Beispielsweise wird eine Suche nach „MyObject“ mit der Option **Groß-/Kleinschreibung beachten** nur „MyObject“ zurückgeben, nicht „myobject“ oder „MYOBJECT“.
 
-Nur ganzes Wort suchen  
+**Nur ganzes Wort suchen**
+
 Wenn diese Option aktiviert ist, werden im Fenster **Suchergebnisse** nur Instanzen der Zeichenfolge aus **Suchen nach** angezeigt, bei denen das ganze Wort übereinstimmt. Beispielsweise wird eine Suche nach „MyObject“ mit dieser Option „MyObject“ zurückgeben, aber nicht „CMyObject“ oder „MyObjectC“.
 
-Reguläre Ausdrücke verwenden  
+**Verwenden von regulären Ausdrücken**
+
 Wenn dieses Kontrollkästchen aktiviert ist, können Sie spezielle Notationen zur Definition von Textmustern in den Textfeldern **Suchen nach** oder **Ersetzen durch** verwenden. Eine Liste dieser Notationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Nach diesen Dateitypen suchen  
-Diese Liste gibt Dateitypen an, die in den unter **Suchen in** angegebenen Verzeichnissen durchsucht werden sollen. Wenn dieses Feld leer bleibt, werden alle Dateien in den Verzeichnissen unter **Suchen in** durchsucht.
+**Nach diesen Dateitypen suchen**
 
-Wählen Sie ein beliebiges Element aus der Liste aus, um eine vordefinierte Suchzeichenfolge zu übernehmen, mit der nur Dateien des angegebenen Typs durchsucht werden.
+Diese Liste gibt Dateitypen an, die in den unter **Suchen in** angegebenen Verzeichnissen durchsucht werden sollen. Wenn dieses Feld leer bleibt, werden alle Dateien in den Verzeichnissen unter **Suchen in** durchsucht. Wählen Sie ein beliebiges Element aus der Liste aus, um eine vordefinierte Suchzeichenfolge zu übernehmen, mit der nur Dateien des angegebenen Typs durchsucht werden.
 
 ## <a name="result-options"></a>Ergebnisoptionen
 
 Der Bereich **Ergebnisoptionen** kann erweitert oder reduziert werden. Die folgenden Optionen können aktiviert oder deaktiviert werden:
 
-Fenster „Suchergebnisse: 1“  
+Fenster **Suchergebnisse: 1**
+
 Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 1**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 1** aus.
 
-Fenster „Suchergebnisse: 2“  
+Fenster **Suchergebnisse: 2**
+
 Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 2** aus.
 
-Nur Dateinamen anzeigen  
-Wenn dieses Kontrollkästchen aktiviert ist, listet das Fenster „Suchergebnisse“ die vollständigen Namen und Pfade für alle Dateien auf, die die Suchzeichenfolge enthalten. Die Ergebnisse enthalten allerdings nicht die Codezeile, in der die Zeichenfolge vorkommt. Dieses Kontrollkästchen ist nur für „Suchen in Dateien“ verfügbar.
+**Nur Dateinamen anzeigen**
 
-Offenlassen von geänderten Daten nach „Alle ersetzen“  
+Wenn dieses Kontrollkästchen aktiviert ist, listet das Fenster **Suchergebnisse** die vollständigen Namen und Pfade für alle Dateien auf, die die Suchzeichenfolge enthalten. Die Ergebnisse enthalten allerdings nicht die Codezeile, in der die Zeichenfolge vorkommt. Dieses Kontrollkästchen ist nur für **In Dateien suchen...** verfügbar.
+
+**Offenlassen von geänderten Daten nach „Alle ersetzen“**
+
 Bei Auswahl dieser Option bleiben alle Dateien geöffnet, in denen Ersetzungen vorgenommen wurden, damit Sie die Änderungen rückgängig machen oder speichern können. Einschränkungen des Speicherplatzes können die Anzahl von Dateien beeinflussen, die nach einem Ersetzungsvorgang geöffnet bleiben können.
 
 > [!CAUTION]
@@ -98,6 +104,6 @@ Bei Auswahl dieser Option bleiben alle Dateien geöffnet, in denen Ersetzungen v
 
 ## <a name="see-also"></a>Siehe auch
 
-[Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)  
-[Suchen in Dateien](../ide/find-in-files.md)  
-[Visual Studio-Befehle](../ide/reference/visual-studio-commands.md)
+- [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
+- [Suchen in Dateien](../ide/find-in-files.md)
+- [Visual Studio-Befehle](../ide/reference/visual-studio-commands.md)

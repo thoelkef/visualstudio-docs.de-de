@@ -2,6 +2,7 @@
 title: 'Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C# | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -31,7 +32,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **Universelles Windows** aus. Wählen Sie im mittleren Bereich **Leere App (universelles Windows)** aus. Benennen Sie das Projekt mit *HalloWelt*, und wählen Sie **OK**.
 
@@ -54,7 +55,7 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Hinzufügen einer Schaltfläche zur Entwurfs-Canvas
 
-1. Doppelklicken Sie im **Projektmappen-Explorer** auf die Datei **MainPage.xaml**, um eine geteilte Ansicht zu öffnen.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *MainPage.xaml*, um eine geteilte Ansicht zu öffnen.
 
   ![Öffnen Sie im Projektmappen-Explorer die Datei „MainPage.xaml“. ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
   ![Klicken Sie auf „Toolbox“, um das Toolbox-Flyoutfenster zu öffnen.](../ide/media/uwp-toolbox.png)
 
-  (Wenn Ihnen die Option „Toolbox“ nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Hierzu wählen Sie **Ansicht** > **Symbolleiste**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
+  (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Hierzu wählen Sie **Ansicht** > **Symbolleiste**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
 
 3. Klicken Sie auf das **Stecknadelsymbol**, um das Toolbox-Fenster anzudocken.
 
@@ -76,17 +77,17 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
    ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Wenn Sie den Code im XAML-Editor betrachten, sehen Sie, dass die Schaltfläche auch dort hinzugefügt wurde:
+  Wenn Sie den Code im **XAML-Editor** betrachten, sehen Sie, dass die Schaltfläche auch dort hinzugefügt wurde:
 
   ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Hinzufügen einer Bezeichnung zur Schaltfläche
 
-1. Ändern Sie im XAML-Editor den Wert für den Schaltflächeninhalt von „Schaltfläche“ in „Hallo Welt!“
+1. Ändern Sie im **XAML-Editor** den Wert für den Schaltflächeninhalt von „Schaltfläche“ in „Hallo Welt!“
 
    ![Ändern Sie den Wert für den Schaltflächeninhalt in „Hallo Welt“.](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Beachten Sie, dass die Schaltfläche auch im XAML-Designer geändert wird.
+2. Beachten Sie, dass die Schaltfläche auch im **XAML-Designer** geändert wird.
 
    ![Die Schaltfläche ändert sich auf der Entwurfs-Canvas in „Hallo Welt“.](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für
 
 1. Doppelklicken Sie auf der Entwurfs-Canvas auf das Steuerelement „Schaltfläche“.
 
-2.  Bearbeiten Sie den Ereignishandlercode in *MainPage.Xaml.cs*, der CodeBehind-Seite.
+2. Bearbeiten Sie den Ereignishandlercode in *MainPage.Xaml.cs*, der CodeBehind-Seite.
 
  An dieser Stelle wird es interessant. Der Standardereignishandler sieht folgendermaßen aus:
 
@@ -121,7 +122,7 @@ Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für
 
 #### <a name="what-did-we-just-do"></a>Was haben wir gerade getan?
 
-Der Code verwendet einige Windows-APIs, um eine Sprachsyntheseobjekt zu erstellen, und weist diesem dann Text für die Ausgabe zu. (Weitere Informationen zur Verwendung von SpeechSynthesis finden Sie unter <xref:System.Speech.Synthesis>.)
+Der Code verwendet einige Windows-APIs, um eine Sprachsyntheseobjekt zu erstellen, und weist diesem dann Text für die Ausgabe zu. (Weitere Informationen zur Verwendung von `SpeechSynthesis` finden Sie unter <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 

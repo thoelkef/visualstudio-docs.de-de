@@ -1,18 +1,19 @@
 ---
 title: 'Erstellen einer .NET Core-Entwicklungsumgebung mit Containern unter Verwendung von Kubernetes in der Cloud mit Visual Studio, Schritt 5: Aufrufen eines weiteren Containers | Microsoft-Dokumentation'
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Schnelle Kubernetes-Entwicklung mit Containern und Microservices in Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, Container
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Erste Schritte in Connected Environment mit .NET Core und Visual Studio
 
@@ -63,7 +64,7 @@ Beachten Sie, wie die DNS-Dienstsuche von Kubernetes genutzt wird, um auf den Di
 Im obenstehenden Codebeispiel wird ebenfalls eine `HeaderPropagatingHttpClient`-Klasse verwendet. Die Hilfsklasse ist in der Datei `HeaderPropagation.cs` enthalten, die zum Projekt hinzugefügt wurde, als Sie dieses für die Verwendung von Connected Environment konfiguriert haben. `HeaderPropagatingHttpClient` wird von der bekannten `HttpClient`-Klasse abgeleitet und fügt die Funktion hinzu, bestimmte Header von einem vorhandenen HttpRequest-Objekt von ASP.NET an ein ausgehendes HttpRequestMessage-Objekt weiterzuleiten. Nachfolgend wird erläutert, wie mithilfe dieses Vorgangs das Entwickeln im Team produktiver gestaltet werden kann.
 
 ## <a name="debug-across-multiple-services"></a>Debuggen für mehrere Dienste
-1. Zum jetzigen Zeitpunkt sollte an das `mywebapi`-Element immer noch der Debugger angefügt sein, und es sollte weiter ausgeführt werden. Wenn dies nicht der Fall ist, drücken Sie im `mywebapi`-Projekt F5.
+1. Zum jetzigen Zeitpunkt sollte an das `mywebapi`-Element immer noch der Debugger angefügt sein. Außerdem sollte es weiterhin ausgeführt werden. Wenn dies nicht der Fall ist, drücken Sie im `mywebapi`-Projekt F5.
 1. Legen Sie in der `Get(int id)`-Methode in der `ValuesController.cs`-Datei, die `api/values/{id}`-GET-Anforderungen verarbeitet, einen Breakpoint fest.
 1. Legen Sie im `webfrontend`-Projekt, in das der oben stehende Code eingefügt wurde, einen Breakpoint fest, bevor eine GET-Anforderung an `mywebapi/api/values` gesendet wird.
 1. Drücken Sie im `webfrontend`-Projekt F5. Visual Studio öffnet erneut einen Browser, der zum entsprechenden localhost-Port navigiert, und die Web-App wird angezeigt.

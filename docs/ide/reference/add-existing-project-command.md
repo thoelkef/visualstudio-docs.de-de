@@ -1,10 +1,9 @@
 ---
-title: Befehl „Vorhandenes Projekt hinzufügen“ | Microsoft-Dokumentation
-ms.custom: ''
+title: Befehl "Vorhandenes Projekt hinzufügen"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.addexistingproject
 helpviewer_keywords:
@@ -16,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 278ed3e13f29746aab963129418dc07f1dcf5234
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72ce42ae8a13decd48e4e41a02b18f5baeb875d6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-existing-project-command"></a>Befehl "Vorhandenes Projekt hinzufügen"
-Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-File.AddExistingProject filename  
-```  
-  
-## <a name="arguments"></a>Argumente  
- `filename`  
- Dies ist optional. Der vollständige Pfad und der Projektname des Projekts mit Erweiterung, die der Projektmappe hinzugefügt werden sollen.  
-  
- Wenn das `filename`-Argument Leerzeichen enthält, muss es in Anführungszeichen stehen.  
-  
- Wenn kein Dateiname angegeben ist, öffnet der Befehl das Dialogfeld „Datei“, damit der Benutzer ein Projekt auswählen kann.  
-  
-## <a name="remarks"></a>Hinweise  
- Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
-  
-## <a name="example"></a>Beispiel  
- In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, TestProject1, der aktuellen Projektmappe hinzugefügt.  
-  
-```  
->File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.
+
+## <a name="syntax"></a>Syntax
+
+```
+File.AddExistingProject filename
+```
+
+## <a name="arguments"></a>Argumente
+ `filename` ist optional. Der vollständige Pfad und der Projektname des Projekts mit Erweiterung, die der Projektmappe hinzugefügt werden sollen.
+
+ Wenn das `filename`-Argument Leerzeichen enthält, muss es in Anführungszeichen stehen.
+
+ Wenn kein Dateiname angegeben ist, öffnet der Befehl das Dialogfeld „Datei“, damit der Benutzer ein Projekt auswählen kann.
+
+## <a name="remarks"></a>Hinweise
+ Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
+
+## <a name="example"></a>Beispiel
+ In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, TestProject1, der aktuellen Projektmappe hinzugefügt.
+
+```
+>File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
+```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
+- [Befehlsfenster](../../ide/reference/command-window.md)
+- [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

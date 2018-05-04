@@ -1,7 +1,7 @@
 ---
-title: Reduzieren und Erweitern von Codebereichen in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Reduzieren und Erweitern von Codebereichen in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,17 +17,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f672f6f9e82bb8fdaef2c159d09bdc95daec40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 62e6d5c7667bf697eeb190d69a996886fbee643f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="outlining"></a>Gliedern
 
-Sie können festlegen, dass bestimmter Code in der Ansicht ausgeblendet wird, indem Sie einen Codebereich reduzieren, der dann unterhalb eines Pluszeichens (+) angezeigt wird. Sie erweitern einen reduzierten Bereich, indem Sie auf das Pluszeichen klicken. Wenn Sie eine Tastatur verwenden, können Sie **STRG** + **M** + **M** drücken, um Bereiche zu reduzieren bzw. zu erweitern. Sie können einen Gliederungsbereich auch reduzieren, indem Sie am Gliederungsrand auf eine beliebige Zeile im Bereich doppelklicken, der direkt auf der linken Seite des Codes angezeigt. Sie können den Inhalt eines reduzierten Bereichs als QuickInfo sehen, wenn Sie auf den reduzierten Bereich zeigen.
+Sie können festlegen, dass bestimmter Code in der Ansicht ausgeblendet wird, indem Sie einen Codebereich reduzieren, der dann unterhalb eines Pluszeichens (**+**) angezeigt wird. Sie erweitern einen reduzierten Bereich, indem Sie auf das Pluszeichen klicken. Wenn Sie eine Tastatur verwenden, können Sie **STRG**+**M**+**M** drücken, um Bereiche zu reduzieren bzw. zu erweitern. Sie können einen Gliederungsbereich auch reduzieren, indem Sie am Gliederungsrand auf eine beliebige Zeile im Bereich doppelklicken, der direkt auf der linken Seite des Codes angezeigt. Sie können den Inhalt eines reduzierten Bereichs als QuickInfo sehen, wenn Sie auf den reduzierten Bereich zeigen.
 
-Bereiche am Gliederungsrand werden auch hervorgehoben, wenn Sie mit der Maus auf den Rand zeigen. Die standardmäßige Hervorhebungsfarbe wird möglicherweise in einigen Farbkonfigurationen etwas schwach angezeigt. Sie können sie unter **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** > **Reduzierbarer Bereich** ändern.
+Bereiche am Gliederungsrand werden auch hervorgehoben, wenn Sie mit der Maus auf den Rand zeigen. Die standardmäßige Hervorhebungsfarbe wird möglicherweise in einigen Farbkonfigurationen etwas schwach angezeigt. Diese können Sie unter **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** > **Reduzierbarer Bereich** ändern.
 
 Wenn Sie mit Code mit Rand arbeiten, können Sie die Bereiche erweitern, an denen Sie arbeiten, sie reduzieren, wenn Sie fertig sind, und dann mit anderen Bereichen fortfahren. Wenn Sie die Gliederung nicht anzeigen möchten, können Sie mit dem Befehl **Gliederung entfernen** die Gliederungsinformationen entfernen, ohne damit zugrunde liegenden Code zu beeinträchtigen.
 
@@ -36,21 +36,21 @@ Diese Aktionen werden durch die Befehle **Rückgängig** und **Wiederholen** im 
 > [!CAUTION]
 > Wenn Sie einen gegliederten Bereich ändern, geht die Gliederung möglicherweise verloren. Beispielsweise wird durch Löschvorgänge oder Suchen und Ersetzen das Ende des Bereichs möglicherweise gelöscht.
 
-Die folgenden Befehle sind im Untermenü **Bearbeiten** > **Gliedern** zu finden.
+Die folgenden Befehle befinden sich im Untermenü **Bearbeiten** > **Gliedern**.
 
 |||
 |-|-|
-|Aktuelles Element umschalten|(STRG+M, STRG+H) – Reduziert einen ausgewählten Codeblock, der normalerweise nicht für eine Gliederung verfügbar wäre, beispielsweise einen `if`-Block. Um den benutzerdefinierten Bereich zu entfernen, verwenden Sie **Gliederung in aktuellem Element entfernen** (oder STRG+M, STRG+U). Nicht in Visual Basic verfügbar.|  
-|Gliederungserweiterung umschalten|- Kehrt den aktuellen Zustand (ausgeblendet oder erweitert) des innersten Gliederungsbereichs um, wenn sich der Cursor in einem verschachtelten reduzierten Bereich befindet.|  
-|Alle Gliederungen umschalten|(STRG+M, STRG+L) – Legt alle Bereiche auf denselben reduzierten oder erweiterten Zustand fest. Wenn einige Bereiche erweitert und andere reduziert sind, werden die reduzierten Bereiche erweitert.|  
-|Gliederung entfernen|(STRG+M, STRG+P) – Entfernt alle Gliederungsinformationen für das gesamte Dokument.|  
-|Gliederung in aktuellem Element entfernen|(STRG+M, STRG+U) – Entfernt die Gliederungsinformationen für den aktuell ausgewählten benutzerdefinierten Bereich. Nicht in Visual Basic verfügbar.|  
-|Nur Definitionen anzeigen|(STRG+M, STRG+O) – Reduziert die Member aller Typen.|  
-|Block zuklappen:\<logische Begrenzung>|(Visual C++) Reduziert einen Bereich in der Funktion mit der Einfügemarke. Wenn beispielsweise die Einfügemarke innerhalb einer Schleife platziert ist, wird die Schleife ausgeblendet.|  
-|Alle zuklappen in: \<logische Strukturen>|(Visual C++) Reduziert alle Strukturen innerhalb der Funktion.|  
+|Aktuelles Element umschalten|(**STRG**+**M**, **STRG**+**H**): Reduziert einen ausgewählten Codeblock, der normalerweise nicht für eine Gliederung verfügbar wäre, beispielsweise einen `if`-Block. Verwenden Sie die Option **Gliederung in aktuellem Element entfernen**, oder drücken Sie **STRG**+**M**, **STRG**+**U**, um den benutzerdefinierten Bereich zu entfernen. Nicht in Visual Basic verfügbar.|
+|Gliederungserweiterung umschalten|- Kehrt den aktuellen Zustand (ausgeblendet oder erweitert) des innersten Gliederungsbereichs um, wenn sich der Cursor in einem verschachtelten reduzierten Bereich befindet.|
+|Alle Gliederungen umschalten|(**STRG**+**M**, **STRG**+**L**): Legt alle Bereiche auf denselben reduzierten oder erweiterten Zustand fest. Wenn einige Bereiche erweitert und andere reduziert sind, werden die reduzierten Bereiche erweitert.|
+|Gliederung entfernen|(**STRG**+**M**, **STRG**+**P**): Entfernt alle Gliederungsinformationen für das gesamte Dokument.|
+|Gliederung in aktuellem Element entfernen|(**STRG**+**M**, **STRG**+**U**): Entfernt die Gliederungsinformationen für den aktuell ausgewählten benutzerdefinierten Bereich. Nicht in Visual Basic verfügbar.|
+|Nur Definitionen anzeigen|(**STRG**+**M**, **STRG**+**O**): Reduziert die Members aller Typen.|
+|Block zuklappen:\<logische Begrenzung>|(Visual C++) Reduziert einen Bereich in der Funktion mit der Einfügemarke. Wenn beispielsweise die Einfügemarke innerhalb einer Schleife platziert ist, wird die Schleife ausgeblendet.|
+|Alle zuklappen in: \<logische Strukturen>|(Visual C++) Reduziert alle Strukturen innerhalb der Funktion.|
 
 Sie können auch das Visual Studio SDK verwenden, um die Textbereiche zu definieren, die Sie erweitern oder reduzieren möchten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Writing code in the editor (Schreiben von Code im Code-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)
