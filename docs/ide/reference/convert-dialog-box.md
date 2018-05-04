@@ -1,10 +1,9 @@
 ---
-title: Dialogfeld „Konvertieren“ | Microsoft-Dokumentation
-ms.custom: ''
+title: Konvertieren (Dialogfeld)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
@@ -17,24 +16,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63e32c53b667667e78b38760f8d4c1ad56dc7f94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35e914b7601538a049a06a0bbdcaac8e1e58be06
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="convert-dialog-box"></a>Dialogfeld "Konvertieren"
-Mithilfe des Dialogfelds **Konvertieren** können Sie ein Konvertierungstool auswählen, um ein neues Projekt aus einem alten zu erstellen. Sie können z.B. ein [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] -Projekt aus einem Visual Basic 6-Projekt erstellen. Sie können auch den [Visual Studio-Projektkonverter](https://github.com/ssvaidya/VSProjectConverter) verwenden, um Projekte zu upgraden, die in früheren Versionen von Visual Studio erstellt wurden.   
-  
-## <a name="opening-the-convert-dialog-box"></a>Öffnen des Dialogfelds „Konvertieren“  
-  
-#### <a name="to-access-the-convert-dialog-box"></a>So greifen Sie auf das Dialogfeld „Konvertieren“ zu  
-  
-1.  Wählen Sie in der Menüleiste **Datei**, **Öffnen**, **Konvertieren**aus.  
-  
-     Es wird eine Liste der Codekonvertierungstools angezeigt, die aktuell verfügbar sind.  
-  
-2.  Wählen Sie das Tool aus, das für Ihre Anwendung geeignet ist.  
-  
-## <a name="see-also"></a>Siehe auch  
-[Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+# <a name="convert-dialog-box"></a>Konvertieren (Dialogfeld)
+
+Mithilfe des Dialogfelds **Konvertieren** können Sie ein Konvertierungstool auswählen, um ein neues Projekt aus einem alten zu erstellen. Sie können z.B. ein [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] -Projekt aus einem Visual Basic 6-Projekt erstellen. Sie können auch den [Visual Studio-Projektkonverter](https://github.com/ssvaidya/VSProjectConverter) verwenden, um Projekte zu upgraden, die in früheren Versionen von Visual Studio erstellt wurden.
+
+## <a name="open-the-convert-dialog-box"></a>Öffnen des Dialogfelds „Konvertieren“
+
+1.  Wählen Sie in der Menüleiste **Datei**, **Öffnen**, **Konvertieren**aus.
+
+     Es wird eine Liste der Codekonvertierungstools angezeigt, die aktuell verfügbar sind.
+
+2.  Wählen Sie das Tool aus, das für Ihre Anwendung geeignet ist.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

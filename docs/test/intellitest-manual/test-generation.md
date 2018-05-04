@@ -1,6 +1,7 @@
 ---
-title: Testerzeugung | Microsoft IntelliTest Test-Tool für Entwickler | Microsoft-Dokumentation
+title: Testgenerierung | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Testerzeugung
 
-Bei herkömmlichen Unittests benötigt man mehrere Komponenten, um einen Test zusammenzustellen:
+Unittests haben in der Regel die folgenden Bestandteile:
+
+* Eine [Sequenz von Methodenaufrufen](test-generation.md#test-generators)
+* Die Argumente, mit denen die Methoden aufgerufen werden, wobei die Argumente [Testeingaben](input-generation.md) sind
+* Überprüfung des beabsichtigten Verhaltens der getesteten Anwendung, indem eine Reihe von [Assertionen](#assumptions-and-assertions) angegeben wird
+
+Im Folgenden finden Sie eine Beispielteststruktur:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Der Test umfasst verschiedene Aspekte:
-
-* Er korrigiert eine [Reihenfolge von Methodenaufrufen](test-generation.md#test-generators)
-* Er korrigiert die Argumente, mit denen die Methoden aufgerufen werden; die Argumente sind die [Testeingaben](input-generation.md)
-* Er überprüft das beabsichtigte Verhalten der getesteten Anwendung, indem es eine Reihe von [Assertionen](#assumptions-and-assertions) angibt
 
 IntelliTest kann relevante Argumentwerte für allgemeinere [parametrisierte Unittests](#parameterized-unit-testing), in welchen die Sequenz der Methodenaufrufe und Assertionen angegeben werden, häufig automatisch bestimmen.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Sie möchten Feedback geben?
 
-Posten Sie Ihre Ideen und Clusterfunktion Anforderungen auf **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Posten Sie Ihre Ideen und Funktionsanfragen auf [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

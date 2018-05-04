@@ -1,9 +1,8 @@
 ---
-title: Refactoring von Klassen und Typen (Klassen-Designer) | Microsoft-Dokumentation
-ms.custom: ''
+title: Refactoring von Klassen und Typen (Klassen-Designer)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -22,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9f84c0b6fe661b480f13f03221360c8f7bc6583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring von Klassen und Typen (Klassen-Designer)
 
@@ -35,59 +34,60 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 > [!NOTE]
 > Die Dateien eines Projekts sind möglicherweise schreibgeschützt, da das Projekt unter Quellcodeverwaltung steht und nicht ausgecheckt ist, auf das Projekt verwiesen wird oder die Dateien auf dem Datenträger als schreibgeschützt markiert sind. Bei der Arbeit an einem Projekt in einem dieser Zustände werden verschiedene Möglichkeiten zum Speichern Ihrer Arbeit je nach Zustand des Projekts angezeigt. Dies gilt für die Umgestaltung eines Codes und für einen Code, den Sie auf andere Weise ändern, z. B. indem Sie ihn direkt bearbeiten.
 
-## <a name="common-tasks"></a>Allgemeine Aufgaben  
-  
-|Aufgabe|Unterstützender Inhalt|  
-|----------|------------------------|  
-|**Umgestaltung von Klassen:** Sie können Umgestaltungsvorgänge zum Aufteilen eine Klasse in Teilklassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](how-to-split-a-class-into-partial-classes.md)|  
-|**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [How to: Implement an Interface (Class Designer) (Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer))](how-to-implement-an-interface.md)|  
-|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [How to: Create a Nullable Type (Class Designer) (Vorgehensweise: Erstellen eines Nullable-Typs (Klassen-Designer))](how-to-create-a-nullable-type.md)|  
-  
-###  <a name="RenamingTypesAndMembers"></a>Umbenennen von Typen und Typmembern  
-Im Klassen-Designer können Sie einen Typ oder einen Member eines Typs im Klassendiagramm oder im Eigenschaftenfenster umbenennen. Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern. Die Umbenennung eines Typs oder Typmember wird an alle Fenster und Codepositionen übergeben, in denen der alte Name auftrat.  
-  
-##### <a name="to-rename-a-name-in-the-class-designer"></a>Um einen Namen im Klassen-Designer umzubenennen,  
-  
-1.  Wählen Sie im Klassendiagramm den Typ oder Member aus, und klicken Sie auf den Namen.  
-  
-     Der Name des Members kann jetzt bearbeitet werden.  
-  
-2.  Geben Sie den neuen Namen für den Typ oder Typmember ein  
-  
-##### <a name="to-rename-a-name-in-the-class-details-window"></a>Um einen Namen im Fenster Klassendetails umzubenennen,  
-  
-1.  Um das Fenster Klassendetails anzuzeigen, klicken Sie mit der rechten Maustaste auf den Typ oder den Typmember und dann auf **Klassendetails**.  
-  
-     Das Fenster Klassendetails wird angezeigt.  
-  
-2.  Ändern Sie in der Spalte **Name** den Namen des Typmembers.  
-  
-3.  Um den Fokus von der Zelle zu verschieben, drücken Sie die **EINGABETASTE** , oder klicken Sie außerhalb der Zelle.  
-  
+## <a name="common-tasks"></a>Allgemeine Aufgaben
+
+|Aufgabe|Unterstützender Inhalt|
+|----------|------------------------|
+|**Umgestaltung von Klassen:** Sie können Umgestaltungsvorgänge zum Aufteilen eine Klasse in Teilklassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](how-to-split-a-class-into-partial-classes.md)|
+|**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [How to: Implement an Interface (Class Designer) (Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer))](how-to-implement-an-interface.md)|
+|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [How to: Create a Nullable Type (Class Designer) (Vorgehensweise: Erstellen eines Nullable-Typs (Klassen-Designer))](how-to-create-a-nullable-type.md)|
+
+### <a name="rename-types-and-type-members"></a>Umbenennen von Typen und Typmembern
+
+Im Klassen-Designer können Sie einen Typ oder einen Member eines Typs im Klassendiagramm oder im Eigenschaftenfenster umbenennen. Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern. Die Umbenennung eines Typs oder Typmember wird an alle Fenster und Codepositionen übergeben, in denen der alte Name auftrat.
+
+#### <a name="to-rename-a-name-in-the-class-designer"></a>Um einen Namen im Klassen-Designer umzubenennen,
+
+1.  Wählen Sie im Klassendiagramm den Typ oder Member aus, und klicken Sie auf den Namen.
+
+     Der Name des Members kann jetzt bearbeitet werden.
+
+2.  Geben Sie den neuen Namen für den Typ oder Typmember ein
+
+#### <a name="to-rename-a-name-in-the-class-details-window"></a>Ändern eines Namens im Fenster „Klassendetails“
+
+1.  Um das Fenster Klassendetails anzuzeigen, klicken Sie mit der rechten Maustaste auf den Typ oder den Typmember und dann auf **Klassendetails**.
+
+     Das Fenster Klassendetails wird angezeigt.
+
+2.  Ändern Sie in der Spalte **Name** den Namen des Typmembers.
+
+3.  Um den Fokus von der Zelle zu verschieben, drücken Sie die **EINGABETASTE** , oder klicken Sie außerhalb der Zelle.
+
     > [!NOTE]
-    >  Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern.  
-  
-##### <a name="to-rename-a-name-in-the-properties-window"></a>Um einen Namen im Eigenschaftenfenster zu ändern  
-  
-1.  Rechtsklicken Sie im Klassendiagramm oder im Fenster Klassendetails  auf Typ oder Member und klicken Sie dann auf **Eigenschaften**.  
-  
-     Das Fenster Eigenschaften wird angezeigt und zeigt die Eigenschaften für den Typ oder Typmember an.  
-  
-2.  In der Eigenschaft **Name** ändern Sie den Namen des Typs bzw. Typmembers.  
-  
-     Der neue Name wird an alle Fenster und Codepositionen im aktuellen Projekt übertragen, in dem der alte Name auftrat.  
-  
-###  <a name="MovingTypeMembers"></a> Typmember von einem Typ in einen anderen verschieben  
-Mit dem **Klassen-Designer**können Sie einen Typmember von einem Typ in einen anderen Typ verschieben, wenn beide Typen im aktuellen Klassendiagramm sichtbar sind.  
-  
-##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Um einen Typmember von einem Typ in einen anderen zu verschieben.  
-  
-1.  Rechtsklicken Sie in einem Typ, der auf der Entwurfsoberfläche angezeigt wird, auf den Member, den Sie in einen anderen Typ verschieben möchten, und klicken Sie dann auf **Aussschneiden**.  
-  
-2.  Rechtsklicken Sie auf den Zieltyp und klicken Sie dann auf **Einfügen**.  
-  
-     Die Eigenschaft wird aus dem Quelltyp entfernt und im Zieltyp angezeigt wird.  
-  
+    > Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern.
+
+#### <a name="to-rename-a-name-in-the-properties-window"></a>Um einen Namen im Eigenschaftenfenster zu ändern
+
+1.  Rechtsklicken Sie im Klassendiagramm oder im Fenster Klassendetails  auf Typ oder Member und klicken Sie dann auf **Eigenschaften**.
+
+     Das Fenster Eigenschaften wird angezeigt und zeigt die Eigenschaften für den Typ oder Typmember an.
+
+2.  In der Eigenschaft **Name** ändern Sie den Namen des Typs bzw. Typmembers.
+
+     Der neue Name wird an alle Fenster und Codepositionen im aktuellen Projekt übertragen, in dem der alte Name auftrat.
+
+### <a name="move-type-members-from-one-type-to-another"></a>Verschieben von Typmembern von einem Typ in einen anderen
+
+Mit dem **Klassen-Designer**können Sie einen Typmember von einem Typ in einen anderen Typ verschieben, wenn beide Typen im aktuellen Klassendiagramm sichtbar sind.
+
+1.  Rechtsklicken Sie in einem Typ, der auf der Entwurfsoberfläche angezeigt wird, auf den Member, den Sie in einen anderen Typ verschieben möchten, und klicken Sie dann auf **Aussschneiden**.
+
+2.  Rechtsklicken Sie auf den Zieltyp und klicken Sie dann auf **Einfügen**.
+
+     Die Eigenschaft wird aus dem Quelltyp entfernt und im Zieltyp angezeigt wird.
+
 ## <a name="see-also"></a>Siehe auch
-[Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)  
-[Entwerfen von Klassen und Typen](designing-classes-and-types.md)
+
+- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)
+- [Entwerfen von Klassen und Typen](designing-classes-and-types.md)

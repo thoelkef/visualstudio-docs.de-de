@@ -1,9 +1,8 @@
 ---
-title: 'Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -14,68 +13,75 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 672f0c5a6170b169e9fcfff6332724e2e1bff62f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)
-Sie können die Deklaration einer Klasse oder Struktur auf mehrere Deklarationen aufteilen, indem Sie das `Partial`-Schlüsselwort in Visual Basic oder das `partial`-Schlüsselwort in C# verwenden. Sie können beliebig viele partielle Deklarationen in beliebig vielen verschiedenen Quelldateien oder in einer Quelldatei verwenden. Alle Deklarationen müssen jedoch in der gleichen Assembly und dem gleichen Namespace enthalten sein.  
-  
-Partielle Klassen sind in vielen Situationen nützlich. Wenn Sie z.B. an großen Projekten arbeiten, können durch Aufteilen einer Klasse in mehr als eine Datei mehrere Programmierer gleichzeitig an diesem Projekt arbeiten. Wenn Sie mit Code arbeiten, der von Visual Studio erstellt wird, können Sie die Klasse ändern, ohne die Quelldatei erneut erstellen zu müssen. (Beispiele von Code, der von Visual Studio erstellt sind u.A. Windows Forms-Code und Webdienst-Wrappercode.) Sie können deshalb Code erstellen, der diese automatisch generierte Klassen verwendet, ohne die von Visual Studio erstellte Datei ändern zu müssen.  
-  
-Es gibt zwei Arten von partiellen Methoden. In C# werden Sie deklarierende und implementierende Methoden genannt. In Visual Basic heißen sie Deklaration und Implementierung.  
-  
-Der Klassen-Designer unterstützt partielle Klassen und Methoden. Die Typform im Klassendiagramm bezieht sich auf einen einzelnen Deklarationsort für die partielle Klasse. Wenn die partielle Klasse in mehreren Dateien definiert ist, können Sie angeben, welchen Deklarationsort der Klassen-Designer durch Festlegen der Eigenschaft **Speicherort für neue Member** im Fenster **Eigenschaften** verwenden wird. Das heißt, wenn Sie einen Doppelklick auf eine Klassenform ausführen, wechselt der Klassen-Designer zur Quelldatei, die die Klassendeklaration enthält, die von der Eigenschaft **Speicherort für neue Member** identifiziert ist. Wenn Sie einen Doppelklick auf eine partielle Methode in einer Klassenform ausführen, wechselt der Klassen-Designer zur Deklaration der partiellen Methode. Im Fenster **Eigenschaften** bezieht sich die Eigenschaft **Dateiname** ebenso auf den Speicherort der Deklaration. Für partielle Klassen führt der **Dateiname** alle Dateien auf, die Deklarations- und Implementierungscode für diese Klasse enthalten. Für partielle Methoden listet der **Dateiname** jedoch nur die Datei auf, die die Deklaration der partiellen Methode enthält.  
-  
-In den folgenden Beispielen wird die Definition der `Employee`-Klasse auf zwei Deklarationen aufgeteilt, die jeweils eine andere Prozedur definieren. Die beiden partiellen Definitionen aus dem Beispiel können in einer Quelldatei oder in zwei unterschiedlichen Quelldateien enthalten sein.  
-  
-> [!NOTE]
->  Visual Basic verwendet partielle Klassendefinitionen, um generierten Code von Visual Studio von Code zu trennen, der vom Benutzer erstellt wurde. Der Code wird in diskrete Quelldateien aufgeteilt. Zum Beispiel definiert der **Windows Form-Designer** partielle Klassen für Steuerelemente, z.B. `Form`. Sie sollten den generierten Code in diesen Steuerelementen nicht ändern.  
-  
-Weitere Informationen über partielle Typen in Visual Basic finden Sie unter [Partial (Partiell)](/dotnet/visual-basic/language-reference/modifiers/partial).  
-  
-## <a name="example"></a>Beispiel  
-Verwenden Sie zum Aufteilen einer Klassendefinition in Visual Basic das Schlüsselwort `Partial`, so wie in folgendem Beispiel dargestellt.  
-  
-```vb  
-' First part of class definition.  
-Partial Public Class Employee  
-    Public Sub CalculateWorkHours()  
-    End Sub  
-End Class  
-  
-' Second part of class definition.  
-Partial Public Class Employee  
-    Public Sub CalculateTaxes()  
-    End Sub  
-End Class  
-```  
+# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)
 
-## <a name="example"></a>Beispiel  
-Verwenden Sie zum Aufteilen einer Klassendefinition in C# das Schlüsselwort `partial`, so wie in folgendem Beispiel dargestellt.  
-  
-```csharp  
-// First part of class definition.  
-public partial class Employee  
-{  
-    public void CalculateWorkHours()  
-    {  
-    }  
-}  
-  
-// Second part of class definition.  
-public partial class Employee  
-{  
-    public void CalculateTaxes()  
-    {  
-    }  
-}  
-```  
-  
+Sie können die Deklaration einer Klasse oder Struktur auf mehrere Deklarationen aufteilen, indem Sie das `partial`-Schlüsselwort (`Partial` in Visual Basic) verwenden. Sie können beliebig viele partielle Deklarationen verwenden.
+
+Die Deklarationen können sich in einer oder in mehreren Quelldateien befinden. Alle Deklarationen müssen jedoch in derselben Assembly und im selben Namespace enthalten sein.
+
+Partielle Klassen sind in vielen Situationen nützlich. Bei einem großen Projekt wird durch das Aufteilen einer Klasse in mehrere Dateien beispielsweise ermöglicht, dass mehr als ein Programmierer gleichzeitig am Projekt arbeiten kann. Wenn Sie mit Code arbeiten, der von Visual Studio erstellt wird, können Sie die Klasse ändern, ohne die Quelldatei erneut erstellen zu müssen. (Beispiele von Code, der von Visual Studio erstellt sind u.A. Windows Forms-Code und Webdienst-Wrappercode.) Sie können deshalb Code erstellen, der diese automatisch generierte Klassen verwendet, ohne die von Visual Studio erstellte Datei ändern zu müssen.
+
+Es gibt zwei Arten von partiellen Methoden. In C# werden Sie deklarierende und implementierende Methoden genannt. In Visual Basic heißen sie Deklaration und Implementierung.
+
+Der **Klassen-Designer** unterstützt partielle Klassen und Methoden. Die Typform im Klassendiagramm bezieht sich auf einen einzelnen Deklarationsort für die partielle Klasse. Wenn die partielle Klasse in mehreren Dateien definiert ist, können Sie angeben, welchen Deklarationsort der **Klassen-Designer** verwenden wird, indem Sie die Eigenschaft **Speicherort** für neue Members im Fenster **Eigenschaften** festlegen. Wenn Sie doppelt auf eine Klassenform klicken, wechselt der **Klassen-Designer** also zur Quelldatei, die die Klassendeklaration enthält, die von der Eigenschaft **Speicherort für neue Members** identifiziert wird. Wenn Sie doppelt auf eine partielle Methode in einer Klassenform klicken, wechselt der **Klassen-Designer** zur Deklaration der partiellen Methode. Im Fenster **Eigenschaften** bezieht sich die Eigenschaft **Dateiname** ebenso auf den Speicherort der Deklaration. Für partielle Klassen führt der **Dateiname** alle Dateien auf, die Deklarations- und Implementierungscode für diese Klasse enthalten. Für partielle Methoden listet der **Dateiname** jedoch nur die Datei auf, die die Deklaration der partiellen Methode enthält.
+
+In den folgenden Beispielen wird die Definition der `Employee`-Klasse auf zwei Deklarationen aufgeteilt, die jeweils eine andere Prozedur definieren. Die beiden partiellen Definitionen aus dem Beispiel können in einer Quelldatei oder in zwei unterschiedlichen Quelldateien enthalten sein.
+
+> [!NOTE]
+> Visual Basic verwendet partielle Klassendefinitionen, um generierten Code von Visual Studio von Code zu trennen, der vom Benutzer erstellt wurde. Der Code wird in diskrete Quelldateien aufgeteilt. Zum Beispiel definiert der **Windows Form-Designer** partielle Klassen für Steuerelemente, z.B. `Form`. Sie sollten den generierten Code in diesen Steuerelementen nicht ändern.
+
+
+Weitere Informationen über partielle Typen in Visual Basic finden Sie unter [Partial (Partiell)](/dotnet/visual-basic/language-reference/modifiers/partial).
+
+## <a name="visual-basic-example"></a>Beispiel für Visual Basic
+
+Verwenden Sie zum Aufteilen einer Klassendefinition in Visual Basic das Schlüsselwort `Partial`, so wie in folgendem Beispiel dargestellt.
+
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
+## <a name="c-example"></a>Beispiel für C#
+
+Verwenden Sie zum Aufteilen einer Klassendefinition in C# das Schlüsselwort `partial`, so wie in folgendem Beispiel dargestellt.
+
+```csharp
+// First part of class definition.
+public partial class Employee
+{
+    public void CalculateWorkHours()
+    {
+    }
+}
+
+// Second part of class definition.
+public partial class Employee
+{
+    public void CalculateTaxes()
+    {
+    }
+}
+```
+
 ## <a name="see-also"></a>Siehe auch
-[Partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
-[partial (Typ)](/dotnet/csharp/language-reference/keywords/partial-type)   
-[partial (Methode) (C#-Referenz)](/dotnet/csharp/language-reference/keywords/partial-method)   
-[Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+
+- [Partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+- [partial (Typ)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (Methode) (C#-Referenz)](/dotnet/csharp/language-reference/keywords/partial-method)
+- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)

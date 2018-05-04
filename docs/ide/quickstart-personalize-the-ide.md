@@ -1,26 +1,25 @@
 ---
-title: Festlegen des Farbdesigns und der Schriftarten in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Festlegen des Farbdesigns und der Schriftarten in Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
 
-In diesem 5- bis 10-minütigen Schnellstart passen Sie das Visual Studio Farbdesign und zwei Textfarben im Text-Editor an.
+In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign und zwei Textfarben im **Text-Editor** anpassen.
 
-Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 
@@ -35,13 +34,13 @@ Das Standardfarbdesign für Visual Studio-2017 heißt **Blau**. Ändern Sie es i
    ![Visual Studio in einem Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der Farbdesign-Dropdownliste angezeigt.
+> Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** (Visual Studio-Editor für Farbdesign) aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.
 
 ## <a name="change-text-color"></a>Ändern der Textfarbe
 
 Nun passen Sie einige Textfarben für den Editor an. Öffnen Sie zunächst eine XML-Datei, um die Standardfarben anzuzeigen.
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Datei...** aus.
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Datei**.
 
 1. Wählen Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** die Option **XML-Datei** aus, und wählen Sie dann **Öffnen** aus.
 

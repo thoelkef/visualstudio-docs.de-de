@@ -1,5 +1,5 @@
 ---
-title: Webleistungstest-API in Visual Studio | Microsoft-Dokumentation
+title: Web-API für Leistungstests in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Gewusst wie: Verwenden der Webleistungstest-API
 
@@ -23,7 +24,8 @@ Sie können Code für die Webleistungstests schreiben. Die Webleistungstest-API 
  Sie können auch die Webleistungstest-API verwenden, um deklarative Webleistungstests programmgesteuert zu erstellen und zu speichern. Dazu verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest>-Klasse und die <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>-Klasse.
 
 > [!TIP]
->  Verwenden Sie den Objektkatalog, um den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace zu durchsuchen. Sowohl der Visual C#- als auch der Visual Basic-Editor bieten IntelliSense-Unterstützung für das Schreiben von Code mit den Klassen im Namespace.
+> Verwenden Sie den Objektkatalog, um den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace zu durchsuchen. Sowohl der Visual C#- als auch der Visual Basic-Editor bieten IntelliSense-Unterstützung für das Schreiben von Code mit den Klassen im Namespace.
+
 
  Sie können auch Plug-Ins für Auslastungstests erstellen. Weitere Informationen finden Sie unter [How to: Use the Load Test API (Vorgehensweise: Verwenden der Auslastungstest-API)](../test/how-to-use-the-load-test-api.md) und [How to: Create a Load Test Plug-In (Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins)](../test/how-to-create-a-load-test-plug-in.md).
 

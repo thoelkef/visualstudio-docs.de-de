@@ -1,6 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle in Visual Studio | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle in Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
@@ -71,7 +72,8 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.c
 ```
 
 > [!NOTE]
->  Der Assemblyname muss mit dem verwendeten Microsoft Visual Studio .NET-Frameworkbuild übereinstimmen. Legen Sie die Version auf 9.0.0.0 fest, wenn Sie Visual Studio .NET Framework 3.5 verwenden. Wenn Sie Visual Studio .NET Framework 2.0 verwenden, legen Sie die Version auf 8.0.0.0 fest.
+> Der Assemblyname muss mit dem verwendeten Microsoft Visual Studio .NET-Frameworkbuild übereinstimmen. Legen Sie die Version auf 9.0.0.0 fest, wenn Sie Visual Studio .NET Framework 3.5 verwenden. Wenn Sie Visual Studio .NET Framework 2.0 verwenden, legen Sie die Version auf 8.0.0.0 fest.
+
 
 ## <a name="define-connection-strings"></a>Definieren von Verbindungszeichenfolgen
  Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für den Zugriff auf Datenquellen. In Konfigurationsdateien definierte Verbindungszeichenfolgen enthalten wiederverwendbare Datenanbieterinformationen für eine Anwendung. In diesem Abschnitt erstellen Sie zwei Verbindungszeichenfolgen, die von den im Abschnitt „Benutzerdefinierte Konfiguration“ definierten Datenquellen verwendet werden.

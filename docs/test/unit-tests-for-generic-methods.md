@@ -1,6 +1,7 @@
 ---
-title: Komponententests für generische Methoden in Visual Studio | Microsoft-Dokumentation
+title: Komponententests für generische Methoden in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
  In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.

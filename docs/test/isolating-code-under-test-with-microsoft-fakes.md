@@ -1,6 +1,7 @@
 ---
-title: Isolieren von getestetem Code mithilfe von Microsoft Fakes in Visual Studio | Microsoft-Dokumentation
+title: Isolieren von getestetem Code mithilfe von Microsoft Fakes in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -32,6 +33,10 @@ Es gibt zwei Arten von Fakes:
 **Anforderungen**
 
 -   Visual Studio Enterprise
+-   Ein .NET Framework-Projekt
+
+> [!NOTE]
+> .NET Standard-Projekte werden nicht unterstützt.
 
 ## <a name="choosing-between-stub-and-shim-types"></a>Auswählen zwischen Stub- und Shim-Typen
 In der Regel lässt sich ein Visual Studio-Projekt als Komponente betrachten, da die Klassen gleichzeitig entwickelt und aktualisiert werden. Sie können Stubs und Shims für Aufrufe verwenden, die das Projekt an andere Projekte in der Projektmappe oder an andere Assemblys, auf die das Projekt verweist, richtet.

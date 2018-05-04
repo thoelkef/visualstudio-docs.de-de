@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den TARGETS-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
@@ -69,9 +69,10 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |FileAlignment|Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter.|  
 |FrameworkPathOverride|Gibt den Speicherort von "mscorlib.dll" und "microsoft.visualbasic.dll" an. Dieser Parameter entspricht dem `/sdkpath`-Schalter des Compilers "vbc.exe".|  
 |GenerateDocumentation|(Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer XML-Datei gespeichert.|
-|IntermediateOutputPath|Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: „\obj\debug\\“. Wenn diese Eigenschaft überschrieben wird, hat das Festlegen von `BaseIntermediateOutputPath` keine Auswirkungen.|  
+|IntermediateOutputPath|Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: „\obj\debug\\“.|  
 |KeyContainerName|Der Name des Containers mit dem Schlüssel für einen starken Namen.|  
 |KeyOriginatorFile|Der Name der Datei mit dem Schlüssel für einen starken Namen.|  
+|MSBuildProjectExtensionsPath|Gibt den Pfad an, unter dem Projekterweiterungen gespeichert sind. Standardmäßig entspricht dies dem Wert von `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Der Name der Assembly, in die das kompilierte Modul integriert werden soll. Die Eigenschaft entspricht dem `/moduleassemblyname`-Compilerschalter.|  
 |NoLogo|Ein boolescher Wert, der angibt, ob das Compilerlogo deaktiviert werden soll. Diese Eigenschaft entspricht dem `/nologo`-Compilerschalter.|  
 |NoStdLib|Ein boolescher Wert, der angibt, ob Verweise auf die Standardbibliothek (mscorlib.dll) vermieden werden sollen. Der Standardwert ist `false`.|  

@@ -1,7 +1,7 @@
 ---
-title: Problembehebung bei Testcontrollern und Test-Agents in Visual Studio | Microsoft-Dokumentation
+title: Problembehebung bei Testcontrollern und Test-Agents in Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategien für die Problembehandlung bei Testcontrollern und Test-Agents in Auslastungstests
 
@@ -27,7 +28,8 @@ Dieser Artikel behandelt einige der häufigsten Probleme, die Ihnen bei der Arbe
  Beim Ausführen eines Auslastungstests können Fehler auftreten, wenn Sie versuchen, eine Verbindung zu einem Test-Agent-Computer herzustellen und Leistungsindikatoren zu erfassen. Der Remoteregistrierungsdienst ist dafür zuständig, einem Remotecomputer Leistungsindikatordaten zur Verfügung zu stellen. Auf manchen Betriebssystemen wird der Remoteregistrierungsdienst nicht automatisch gestartet. Um dieses Problem zu beheben, starten Sie den Remoteregistrierungsdienst manuell.
 
 > [!NOTE]
->  Sie können über die **Systemsteuerung** auf den Remoteregistrierungsdienst zugreifen. Klicken Sie auf **Verwaltung** und dann auf **Dienste**.
+> Sie können über die **Systemsteuerung** auf den Remoteregistrierungsdienst zugreifen. Klicken Sie auf **Verwaltung** und dann auf **Dienste**.
+
 
  Eine weitere Ursache dieses Problems sind unzureichende Berechtigungen zum Lesen von Leistungsindikatoren. Beim Ausführen von lokalen Testläufen muss das Konto des Benutzers, der den Test ausführt, Mitglied der Gruppe Hauptbenutzer (oder höher) oder Mitglied der Gruppe Systemmonitorbenutzer sein. Beim Ausführen von Remotetestläufen muss das Konto, mit dem der Controller ausgeführt wird, Mitglied der Gruppe Hauptbenutzer (oder höher) oder der Gruppe Systemmonitorbenutzer sein.
 
@@ -87,7 +89,8 @@ Dieser Artikel behandelt einige der häufigsten Probleme, die Ihnen bei der Arbe
  Dieser Fehler kann bei der Installation des Testcontrollers auf einem Computer mit mehr als einem Netzwerkadapter auftreten.
 
 > [!NOTE]
->  Es ist auch möglich, dass Test-Agents erfolgreich installiert werden können und das Problem erst bei einem Testlauf auftritt.
+> Es ist auch möglich, dass Test-Agents erfolgreich installiert werden können und das Problem erst bei einem Testlauf auftritt.
+
 
  Um diesen Fehler zu beheben, muss der Testcontroller an einen der Netzwerkadapter gebunden werden. Sie müssen die `BindTo`-Eigenschaft auf dem Testcontroller festlegen und anschließend den Test-Agent so ändern, dass er über die IP-Adresse statt über den Namen auf den Testcontroller verweist. Die Schritte werden in den folgenden Verfahren angegeben.
 

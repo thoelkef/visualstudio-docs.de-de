@@ -1,8 +1,9 @@
 ---
-title: Konfigurationen und Plattformen für Tests der programmierten UI in Visual Studio | Microsoft-Dokumentation
+title: Konfigurationen und Plattformen für Tests der programmierten UI in Visual Studio
 ms.date: 2015-10-04
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
@@ -10,18 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der codierten UI und Aktionsaufzeichnungen
 
 Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI für Visual Studio Enterprise werden in der folgenden Tabelle aufgeführt. Diese Konfigurationen gelten auch für Aktionsaufzeichnungen, die mit [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)]erstellt wurden.
 
 > [!NOTE]
->  Der Prozess für den Test der codierten UI muss über die gleichen Rechte wie die getestete App verfügen.
+> Der Prozess für den Test der codierten UI muss über die gleichen Rechte wie die getestete App verfügen.
+
 
  **Anforderungen**
 
@@ -37,7 +39,8 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 |.NET|.NET 2.0, 3.0, 3.5, 4 und 4.5. **Hinweis:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] und Visual Studio setzen .NET 4 voraus. Mit den aufgeführten .NET-Versionen entwickelte Anwendungen werden jedoch unterstützt.|
 
 > [!NOTE]
->  Die*Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.
+> Die*Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.
+
 
 ## <a name="platform-support"></a>Plattformunterstützung
 

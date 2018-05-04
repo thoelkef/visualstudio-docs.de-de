@@ -1,9 +1,8 @@
 ---
-title: 'Visual Studio-Dokumentation: Offlinehilfe | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Visual Studio-Dokumentation: Offlinehilfe'
 ms.date: 11/02/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 f1_keywords:
 - hv_general
@@ -22,67 +21,74 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c703ee241cac40cdec434957a10c5e64dbb730b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
-Sie können Inhalte aus verschiedenen Produkten und Technologien mithilfe von Microsoft Help Viewer auf Ihrem lokalen Computer installieren und anzeigen, z.B. Visual Studio, .NET Framework, die Sprachreferenz, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:  
 
--   Suchen Sie nach Inhaltssätzen (auch als Bücher bezeichnet), und laden Sie diese herunter.  
+Sie können Inhalte aus verschiedenen Produkten und Technologien mithilfe von Microsoft Help Viewer auf Ihrem lokalen Computer installieren und anzeigen, z.B. Visual Studio, .NET Framework, die Sprachreferenz, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:
 
--   Sie können über eine Suche im Inhaltsverzeichnis Themen anhand von Überschriften finden  
+-   Suchen Sie nach Inhaltssätzen (auch als Bücher bezeichnet), und laden Sie diese herunter.
 
--   Suchen Sie nach Themen im Index.  
+-   Sie können über eine Suche im Inhaltsverzeichnis Themen anhand von Überschriften finden
 
--   Suchen Sie mithilfe der Volltextsuche nach Informationen.  
+-   Suchen Sie nach Themen im Index.
+
+-   Suchen Sie mithilfe der Volltextsuche nach Informationen.
 
 -   Zeigen Sie Themen an, versehen Sie Themen mit Lesezeichen, und drucken Sie Themen aus.
 
-Weitere Informationen zu Help Viewer finden Sie unter [Installieren von Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Um Hilfethemen nicht online, sondern in Help Viewer zu lesen, wechseln Sie zum Menü **Hilfe** in Visual Studio, und klicken Sie auf **Hilfeeinstellungen festlegen** und dann auf **In Help Viewer starten**.
+Weitere Informationen zu Help Viewer finden Sie unter [Installieren von Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Wechseln Sie zum Menü **Hilfe** in Visual Studio, und klicken Sie auf **Hilfeeinstellungen festlegen** > **In Help Viewer starten**, um Hilfethemen nicht online, sondern in Help Viewer zu lesen.
 
 ## <a name="help-viewer-tour"></a>Überblick über Help Viewer
+
 Sie können Informationen im installierten Inhalt suchen, indem Sie die Navigationsregisterkarten verwenden, installierten Inhalt auf der Themenregisterkarte oder den Registerkarten anzeigen und Inhalt mit der Registerkarte **Inhalt verwalten** verwalten. Sie können auch zusätzliche Aufgaben ausführen, indem Sie die Schaltflächen auf der Symbolleiste verwenden. Zusätzliche Informationen finden Sie in der unteren rechten Ecke des Fensters.
 
 ### <a name="navigation-tabs"></a>Registerkarten für die Navigation
 
-|Registerkarte|description|
+|Registerkarte|Beschreibung|
 |---|-----------|
 |Inhalt|Zeigt die installierten Inhalte hierarchisch an (Inhaltsverzeichnis). Sie können Kriterien festlegen, anhand derer Sie die angezeigten Titel filtern können.|
 |Index|Zeigt eine alphabetische Liste der indizierten Begriffe an. Sie können den Index durchsuchen, Kriterien zum Filtern der Einträge angeben und festlegen, dass Indexeinträge entweder eine bestimmte Textzeichenfolge enthalten oder mit dieser beginnen.|
-|Favoriten|Über die Schaltfläche **Zu Favoriten hinzufügen** können Sie interessante Themen speichern. Die Themen werden dann auf dieser Registerkarte angezeigt. Im Abschnitt „Verlauf“ wird eine Liste der Themen angezeigt, die Sie sich zuletzt angesehen haben.|
-|Suchen|Stellt ein Textfeld bereit, über das Sie überall, auch im Code und in den Themenüberschriften, nach Begriffen suchen können.|
+|Favoriten|Über die Schaltfläche **Zu Favoriten hinzufügen** können Sie interessante Themen speichern. Die Themen werden dann auf dieser Registerkarte angezeigt. Im Abschnitt **Verlauf** wird eine Liste der Themen angezeigt, die Sie sich zuletzt angesehen haben.|
+|Suche|Stellt ein Textfeld bereit, über das Sie überall, auch im Code und in den Themenüberschriften, nach Begriffen suchen können.|
 
-### <a name="viewing-topics"></a>Anzeigen von Themen
+### <a name="view-topics"></a>Anzeigen von Themen
+
 Jedes Thema wird auf einer eigenen Registerkarte angezeigt. Sie können mehrere Themen gleichzeitig öffnen.
 
-### <a name="managing-content"></a>Verwalten von Inhalt
+### <a name="manage-content"></a>Verwalten von Inhalten
+
 Sie können Inhalt mit der Registerkarte **Inhalt verwalten** installieren, aktualisieren, verschieben oder löschen. Oben in der Registerkarte können Sie über das Steuerelement **Installation source** (Installationsquelle) angeben, ob Bücher von einer Netzwerkadresse, von einem Datenträger oder von einem URI installiert werden sollen. Im Feld **Local store path** (Lokaler Speicherpfad) wird angezeigt, in welchem Verzeichnis die Bücher auf dem lokalen Computer installiert sind. Mit der Schaltfläche **Verschieben** können Sie die Bücher an einen anderen Speicherort verschieben.
 
 In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw. welche Bücher Sie bereits installiert haben, ob ein Update verfügbar ist und wie groß jedes Buch ist. Sie können ein oder mehrere Bücher mit den Links **Hinzufügen** oder **Entfernen** installieren oder entfernen und dann im Bereich **Ausstehende Änderungen** auf die Schaltfläche **Aktualisieren** klicken. Wenn Updates für bereits installierte Bücher verfügbar sind, können Sie diese Inhalte aktualisieren, indem Sie unten im Fenster auf **Hier klicken, um den Download jetzt zu starten** klicken. Darüber hinaus werden bei der Installation zusätzlicher Bücher alle bereits installierten aktualisiert, falls Updates verfügbar sind.
 
-**Hinweis:** Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Funktionen deaktiviert oder kein Internetzugang verfügbar ist.
+> [!NOTE]
+> Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Features deaktiviert oder kein Internetzugang verfügbar ist.
 
 ### <a name="toolbar-buttons"></a>Schaltflächen der Symbolleiste
-Die Symbolleiste im Help Viewer-Fenster umfasst die folgenden Schaltflächen:  
 
--   Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.  
+Die Symbolleiste im **Help Viewer-Fenster** enthält die folgenden Schaltflächen:
 
--   Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.  
+-   Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.
 
--   Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.  
+-   Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.
 
--   Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.  
+-   Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.
 
--   Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.  
+-   Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.
 
--   Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.  
+-   Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.
 
--   Über das kleine Dreieck rechts wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können einem Registerkartennamen auswählen und die entsprechende Registerkarte zur aktiven Registerkarte machen. 
+-   Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.
+
+-   Über das kleine Dreieck rechts wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können einem Registerkartennamen auswählen und die entsprechende Registerkarte zur aktiven Registerkarte machen.
 
 ## <a name="see-also"></a>Siehe auch
-[Installieren von Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md)  
-[Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)  
-[Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)
+
+- [Installieren von Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md)
+- [Help Viewer-Administratorleitfaden](../ide/help-viewer-administrator-guide.md)
+- [Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)

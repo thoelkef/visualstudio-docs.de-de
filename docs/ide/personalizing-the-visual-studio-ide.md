@@ -1,20 +1,19 @@
 ---
-title: Anpassen der Visual Studio-IDE | Microsoft-Dokumentation
-ms.custom: ''
+title: Anpassen der Visual Studio-IDE
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
@@ -24,7 +23,7 @@ Es gibt verschiedene Möglichkeiten, Visual Studio so zu personalisieren, dass I
 
 Über das Dialogfeld [Umgebungsoptionen](../ide/reference/environment-options-dialog-box.md) sind viele Optionen zur Personalisierung verfügbar. Es gibt zwei Möglichkeiten, um auf dieses Dialogfeld zuzugreifen:
 
-- Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, und erweitern Sie den Knoten **Umgebung**, wenn dieser noch nicht erweitert ist.
+- Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, und erweitern Sie ggf. den Knoten **Umgebung**.
 
 - Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie in der Ergebnisliste auf **Umgebung > Allgemein**.
 
@@ -41,7 +40,7 @@ Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie auf **Umge
 
 Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie `environment` im Feld **Schnellstart** ein, klicken Sie auf **Umgebung > Allgemein**, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
 
-### <a name="customzing-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
+### <a name="customze-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 
 Weitere Informationen zum Hinzufügen oder Entfernen von Menü-oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
@@ -55,9 +54,9 @@ Sie können mehrere Fensterlayouts definieren und speichern und zwischen diesen 
 
 ## <a name="external-tools"></a>Externe Tools
 
-Sie können das Menü **Extras** für das Starten von externen Tools anpassen. Weitere Informationen finden Sie unter [Verwalten externer Tools](../ide/managing-external-tools.md).
+Sie können das Starten externer Tools im Menü **Extras** anpassen. Weitere Informationen finden Sie unter [Verwalten von externen Tools](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)  
-[Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)

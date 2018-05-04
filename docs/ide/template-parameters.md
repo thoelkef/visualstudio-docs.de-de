@@ -1,9 +1,9 @@
 ---
-title: Projekt- und Elementvorlagen für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Projekt- und Elementvorlagenparameter für Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
-Indem Sie Parameter in Ihren Vorlagen verwenden, können Sie die Werte von Schlüsselteilen der Vorlage, wie z. B. Klassennamen und Namespaces, bei Instanziierung die Vorlage ersetzen. Diese Parameter werden durch den Vorlagen-Assistenten ersetzt, der im Hintergrund ausgeführt wird, wenn ein Benutzer in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** auf **OK** oder **Hinzufügen** klickt.
+Wenn die Vorlage instanziiert wird, können Sie die darin erhaltenen Werte ersetzen. Verwenden Sie *Vorlagenparameter*, um diese Funktion einzurichten. Sie können diese Vorlagenparameter dazu verwenden, Werte wie Klassennamen und Namespaces in der Vorlage zu ersetzen. Der Vorlagen-Assistent, der im Hintergrund ausgeführt wird, wenn ein Benutzer ein neues Element oder Projekt hinzufügt, ersetzt diese Parameter.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern
 
@@ -38,7 +38,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
 
 1. Legen Sie das `ReplaceParameters`-Attribut des `ProjectItem`-Elements auf `true` fest.
 
-1. Schließen Sie in der Codedatei für das Projektelement ggf. Parameter ein. Durch den folgenden Parameter wird beispielsweise angegeben, dass der sichere Projektname für den Namespace in einer Datei verwendet werden soll:
+1. Schließen Sie in der Codedatei für das Projektelement ggf. Parameter ein. Durch den folgenden Parameter wird beispielsweise angegeben, dass der sichere Projektname für den Namespace in einer Datei verwendet wird:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ Fügen Sie der VSTEMPLATE-Datei für die Projektvorlage das `ReplaceParameters="
 
 ## <a name="see-also"></a>Siehe auch
 
-[Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)  
-[Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
+- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
