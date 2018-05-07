@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Prompt anzeigen | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen ein benutzerdefiniertes Bootstrappers mit einer datenschutzeingabeaufforderung | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers mit einer datenschutzeingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und der Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden dieses Verhalten zustimmen, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob die Berechtigung für die Anwendung für die automatische Aktualisierung verwendet wird. Wenn die Anwendung für die automatische Aktualisierung nicht zulässig ist, wird nicht installiert.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Erstellen ein Update Zustimmung (Dialogfeld)  
+## <a name="create-an-update-consent-dialog-box"></a>Erstellen Sie ein Update Zustimmung (Dialogfeld)  
  Zum Anzeigen einer datenschutzeingabeaufforderung erstellen Sie eine Anwendung mit der Frage den Reader an die automatischen Updates für die Anwendung zustimmen.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>So erstellen einen Zustimmung (Dialogfeld)  
@@ -136,7 +136,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 26. Auf der **erstellen** Menü klicken Sie auf **Projektmappe erstellen**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Erstellen das benutzerdefinierte Bootstrapperpaket  
+## <a name="create-the-custom-bootstrapper-package"></a>Erstellen Sie das benutzerdefinierte Bootstrapperpaket  
  Sie können zum Anzeigen der datenschutzeingabeaufforderung für Endbenutzer Erstellen eines benutzerdefinierten Bootstrapperpakets für die Update-Zustimmungsdialogfeld-Anwendung und fügen Sie ihn als erforderliche Komponente in allen von ClickOnce-Anwendungen.  
   
  Dieses Verfahren veranschaulicht, wie ein benutzerdefiniertes Bootstrapperpaket erstellen, indem Sie die folgenden Dokumente zu erstellen:  
@@ -228,7 +228,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 6.  Erstellen Sie erforderlichenfalls eine neue Datei "package.xml" manifest und ein neues eula.rtf Dokument für die Software-Lizenzbedingungen für jedes Gebietsschema. Beispielsweise wenn Sie die Unterverzeichnisse für die Gebietsschemas fr "und" de "erstellt haben, erstellen Sie separate" Package.xml "Manifestdateien und Software-Lizenzbedingungen, und speichern Sie sie in den Unterverzeichnissen fr" und "de".  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Festlegen der Zustimmung Updateanwendung als erforderliche Komponente  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Legen Sie die Zustimmung Updateanwendung als erforderliche Komponente  
  In Visual Studio können Sie die Anwendung zustimmen, Update als erforderliche Komponente festlegen.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Die Zustimmung Updateanwendung als erforderliche Komponente festlegen  
@@ -246,7 +246,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 5.  Klicken Sie auf **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Erstellen und testen das Setup-Programm  
+## <a name="create-and-test-the-setup-program"></a>Erstellen Sie und Testen Sie das Setup-Programm  
  Nachdem Sie die Anwendung zustimmen, Update als erforderliche Komponente festgelegt, können Sie den Installer und den Bootstrapper für Ihre Anwendung generieren.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Zum Erstellen und testen das Setup-Programm, indem Sie nicht auf ich stimme zu  

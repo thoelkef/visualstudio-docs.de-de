@@ -1,7 +1,7 @@
 ---
-title: Erstellen von Bootstrapperpaketen | Microsoft Docs
+title: Erstellen von Bootstrapperpaketen
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
@@ -22,81 +22,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 794d569504e46627c9387046b381fdb843a7818e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="creating-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
-Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermittlung und die Installation von weitervertreibbaren Komponenten wie Windows Installer (MSI-Format) und ausführbaren Programmen konfiguriert werden kann. Das Installationsprogramm wird auch als Bootstrapper bezeichnet. Der Bootstrapper wird mithilfe einer Reihe von XML-Manifesten programmiert, mit denen die Metadaten zur Verwaltung der Komponenteninstallation angegeben werden.  
+# <a name="create-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
+Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermittlung und die Installation von weitervertreibbaren Komponenten wie Windows Installer (MSI-Format) und ausführbaren Programmen konfiguriert werden kann. Das Installationsprogramm wird auch als Bootstrapper bezeichnet. Der Bootstrapper wird mithilfe einer Reihe von XML-Manifesten programmiert, mit denen die Metadaten zur Verwaltung der Komponenteninstallation angegeben werden.  Jede verteilbare Komponente oder eine erforderliche Komponente, ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss. 
   
- Der Bootstrapper ermittelt zunächst, ob erforderliche Komponenten bereits installiert sind. Ist dies nicht der Fall, werden vom Bootstrapper die Lizenzverträge angezeigt. Nachdem der Endbenutzer die Lizenzverträge akzeptiert hat, beginnt die Installation der erforderlichen Komponenten. Wurden alle erforderlichen Komponenten ermittelt, wird direkt das Installationsprogramm der Anwendung gestartet.  
+Der Bootstrapper ermittelt zunächst, ob erforderliche Komponenten bereits installiert sind. Ist dies nicht der Fall, werden vom Bootstrapper die Lizenzverträge angezeigt. Nachdem der Endbenutzer die Lizenzverträge akzeptiert hat, beginnt die Installation der erforderlichen Komponenten. Wurden alle erforderlichen Komponenten ermittelt, wird direkt das Installationsprogramm der Anwendung gestartet.  
   
-## <a name="creating-custom-packages"></a>Erstellen von benutzerdefinierten Paketen  
- Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) und [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel für das Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+## <a name="create-custom-bootstrapper-packages"></a>Erstellen Sie benutzerdefinierte Bootstrapperpakete  
+Sie können die Manifeste Bootstrapper generieren, indem Sie mit der XML-Editor in Visual Studio. Ein Beispiel zum Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefiniertes Bootstrappers mit einer datenschutzeingabeaufforderung](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
- Zur Erstellung eines Bootstrapperpakets muss die weitervertreibbare Komponente in Form einer EXE- oder MSI-Datei im Bootstrapper Manifest-Generator angegeben werden. Dann werden vom Bootstrapper Manifest-Generator die folgenden Dateien erstellt:  
+Zum Erstellen eines Bootstrapperpakets Sie zum Erstellen eines Produktmanifests haben und für jede lokalisierte Version einer Komponente, wie gut ein Paketmanifest.
   
--   Das Produktmanifest, product.xml, das alle sprachneutralen Metadaten für das Paket enthält. Es enthält Metadaten, die für alle lokalisierten Versionen der verteilbaren Komponente gleich sind.  
+* Das Produktmanifest, *product.xml*, alle sprachneutralen Metadaten für das Paket enthält. Es enthält Metadaten, die für alle lokalisierten Versionen der verteilbaren Komponente gleich sind.  Um diese Datei zu erstellen, finden Sie unter [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md).
   
--   Das Paketmanifest, package.xml, das sprachspezifische Metadaten und in der Regel auch lokalisierte Fehlermeldungen enthält. Eine Komponente benötigt für jede lokalisierte Version dieser Komponente mindestens ein Paketmanifest.  
+* Das Paketmanifest *"Package.xml"*, enthält sprachspezifische Metadaten; es wird in der Regel lokalisierte Fehlermeldungen enthält. Eine Komponente benötigt für jede lokalisierte Version dieser Komponente mindestens ein Paketmanifest. Um diese Datei zu erstellen, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).
   
- Nachdem diese Dateien erstellt wurden, platzieren Sie die Produktmanifestdatei in einen entsprechend benannten Ordner für den benutzerdefinierten Bootstrapper. Die Paketmanifestdatei muss in einem Ordner, der dem Gebietsschema entsprechend benannt wurde, abgelegt werden. Wenn die Paketmanifestdatei z. B. für die Neuverteilung in englischer Sprache vorgesehen ist, legen Sie die Datei in einen Ordner mit der Bezeichnung "en" ab. Wiederholen Sie diesen Prozess für jedes Gebietsschema, z. B. "ja" für Japanisch und "de" für Deutsch. Das abschließende benutzerdefinierte Bootstrapperpaket könnte beispielsweise über die folgende Ordnerstruktur verfügen.  
+Nachdem diese Dateien erstellt wurden, platzieren Sie die Produktmanifestdatei in einen entsprechend benannten Ordner für den benutzerdefinierten Bootstrapper. Die Paketmanifestdatei muss in einem Ordner, der dem Gebietsschema entsprechend benannt wurde, abgelegt werden. Wenn die Paketmanifestdatei z. B. für die Neuverteilung in englischer Sprache vorgesehen ist, legen Sie die Datei in einen Ordner mit der Bezeichnung "en" ab. Wiederholen Sie diesen Prozess für jedes Gebietsschema, z. B. "ja" für Japanisch und "de" für Deutsch. Das abschließende benutzerdefinierte Bootstrapperpaket könnte beispielsweise über die folgende Ordnerstruktur verfügen.  
+
+    ```
+    CustomBootstrapperPackage
+      product.xml
+      CustomBootstrapper.msi
+      de
+        eula.rtf
+        package.xml
+      en
+        eula.rtf
+        package.xml
+      ja
+        eula.rtf
+        package.xml
+    ```
   
- `CustomBootstrapperPackage`  
+Kopieren Sie anschließend die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+ 
+    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+    
+oder  
+    
+    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
   
- `product.xml`  
+Sie können auch den Speicherort des Bootstrapperordners mithilfe des Werts **Pfad** im folgenden Registrierungsschlüssel bestimmen:  
   
- `CustomBootstrapper.msi`  
+    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
- `de`  
+Verwenden Sie auf 64-Bit-Systemen den folgenden Registrierungsschlüssel:  
   
- `eula.rtf`  
+    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
- `package.xml`  
+Jede verteilbare Komponente wird unter dem Paketverzeichnis in einem eigenen Unterordner angezeigt. Das Produkt Produktmanifest und die verteilbaren Dateien müssen in diesem Unterordner abgelegt werden. Lokalisierte Versionen der Komponente und Paketmanifeste müssen in Unterordnern, die entsprechend dem Kulturnamen benannt abgelegt werden.  
   
- `en`  
+Nachdem diese Dateien in den Bootstrapperordner kopiert wurden, wird das Bootstrapperpaket automatisch in Visual Studio **Voraussetzungen** (Dialogfeld). Wenn das benutzerdefinierte Bootstrapperpaket nicht angezeigt wird, schließen und öffnen Sie dann erneut die **Voraussetzungen** (Dialogfeld). Weitere Informationen finden Sie unter [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
   
- `eula.rtf`  
-  
- `package.xml`  
-  
- `ja`  
-  
- `eula.rtf`  
-  
- `package.xml`  
-  
- Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
-  
-```  
-\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- oder  
-  
-```  
-\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- Sie können auch den Speicherort des Bootstrapperordners mithilfe des Werts **Pfad** im folgenden Registrierungsschlüssel bestimmen:  
-  
-```  
-HKLM\Software\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- Auf 64-Bit-Systemen verwenden Sie den folgenden Registrierungsschlüssel:  
-  
-```  
-HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- Jede verteilbare Komponente wird unter dem Paketverzeichnis in einem eigenen Unterordner angezeigt. Das Produktmanifest und die verteilbaren Dateien werden dann in diesem Unterordner abgelegt. Lokalisierte Versionen der Komponente und Paketmanifeste werden in Unterordner eingefügt, die entsprechend dem Kulturnamen benannt sind.  
-  
- Nachdem diese Dateien in den Bootstrapperordner kopiert wurden, wird das Bootstrapperpaket in Visual Studio automatisch im Dialogfeld für die erforderlichen Komponenten angezeigt. Wird das benutzerdefinierte Bootstrapperpaket nicht angezeigt, schließen Sie das Dialogfeld für die erforderlichen Komponenten, und öffnen Sie es erneut. Weitere Informationen finden Sie unter [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
-  
- In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
+In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
@@ -109,11 +92,11 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |InstallMode|Der Installationsmodus gibt an, von welchem Speicherort die Komponente installiert werden muss. Folgende Werte sind gültig:<br /><br /> -HomeSite: Voraussetzungen werden von der Website des Anbieters installiert.<br />-SpecificSite: Voraussetzungen werden von dem Speicherort installiert, die Sie auswählen.<br />-SameSite: Voraussetzungen sind vom gleichen Speicherort wie die Anwendung installiert.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Trennen von weitervertreibbaren Komponenten von Anwendungsinstallationen  
- Sie können die Bereitstellung von verteilbaren Dateien in Setupprojekten auch deaktivieren. Erstellen Sie hierzu im Ordner "RedistList" im Verzeichnis von .NET Framework eine verteilbare Liste:  
+Sie können die Bereitstellung von verteilbaren Dateien in Setupprojekten auch deaktivieren. Erstellen Sie hierzu im Ordner "RedistList" im Verzeichnis von .NET Framework eine verteilbare Liste:  
   
- `%ProgramFiles%\Microsoft.NET\RedistList`  
+`%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *Company Name*.*Component Name*.RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
+Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *Company Name*.*Component Name*.RedistList.xml. Also z. B. wenn die Komponente versucht, die von der Firma Acme Datawidgets aufgerufen wird, verwenden Sie *Namen Acme.DataWidgets.RedistList.xml*. Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
