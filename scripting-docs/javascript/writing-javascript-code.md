@@ -75,7 +75,7 @@ document.write("the value in meters is " + meters);
 var aGoodIdea = "Comment your code thoroughly."; // This is a single-line comment.  
 ```  
   
- Ein mehrzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Kommentar beginnt mit einem Schrägstrich und einem Sternchen (/\*) und endet mit den gleichen Zeichen in der umgekehrten Reihenfolge („\*/“).  
+ Ein mehrzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Kommentar beginnt mit einem Schrägstrich und einem Sternchen (/\*) und endet mit den gleichen Zeichen in der umgekehrten Reihenfolge (\*/).  
   
 ```JavaScript  
 /*  
