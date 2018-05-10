@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -34,7 +34,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>So aktivieren Sie die Parameterersetzung in Vorlagen
 
-1. Suchen Sie in der VSTEMPLATE-Datei der Vorlage das `ProjectItem`-Element, das dem Element entspricht, für das Sie die Parameterersetzung aktivieren möchten.
+1. Suchen Sie in der *VSTEMPLATE*-Datei der Vorlage das `ProjectItem`-Element, das dem Element entspricht, für das Sie die Parameterersetzung aktivieren möchten.
 
 1. Legen Sie das `ReplaceParameters`-Attribut des `ProjectItem`-Elements auf `true` fest.
 
@@ -63,7 +63,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |SpecificSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `SpecificSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `SpecificSolutionName` leer.|
 |userdomain|Die aktuelle Benutzerdomäne.|
 |username|Der aktuelle Benutzername.|
-|webnamespace|Der Name der aktuellen Website. Dieser Parameter wird in der Web Form-Vorlage verwendet und gewährleistet eindeutige Klassennamen. Wenn sich die Website im Stammverzeichnis des Webservers befindet, wird dieser Vorlagenparameter in das Stammverzeichnis des Webservers aufgelöst.|
+|webnamespace|Der Name der aktuellen Website. Dieser Parameter wird in der Webformularvorlage verwendet und gewährleistet eindeutige Klassennamen. Wenn sich die Website im Stammverzeichnis des Webservers befindet, wird dieser Vorlagenparameter in das Stammverzeichnis des Webservers aufgelöst.|
 |Jahr|Das aktuelle Jahr im Format JJJJ.|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 
 Neben den reservierten Standardvorlagenparametern, die während dem Ersetzen von Parametern verwendet werden, können Sie eigene Vorlagenparameter und -werte angeben. Weitere Informationen finden Sie unter [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für den Dateinamen
+## <a name="example-use-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für einen Dateinamen
 
 Sie können variable Dateinamen für Projektelemente festlegen, indem Sie einen Parameter im `TargetFileName`-Attribut verwenden.
 
@@ -90,7 +90,7 @@ Im folgenden Beispiel wird deutlich, dass der von `$projectname$` angegebene Pro
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Beispiel: Verwenden des sicheren Projektnamens für den Namespacenamen
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Beispiel: Verwenden des sicheren Projektnamens für den Namespacenamen
 
 Verwenden Sie folgende Syntax, um den Projektnamen für den Namespace in einer C#-Klassendatei zu übernehmen:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-Fügen Sie der VSTEMPLATE-Datei für die Projektvorlage das `ReplaceParameters="true"`-Attribut hinzu, wenn Sie auf die Datei verweisen:
+Fügen Sie der *VSTEMPLATE*-Datei für die Projektvorlage das `ReplaceParameters="true"`-Attribut hinzu, wenn Sie auf die Datei verweisen:
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ Fügen Sie der VSTEMPLATE-Datei für die Projektvorlage das `ReplaceParameters="
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
+- [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)

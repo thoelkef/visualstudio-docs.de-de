@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="evaluate-statement-command"></a>Befehl "Anweisung auswerten"
 Wertet die angegebene Anweisung aus und zeigt sie an.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 Debug.EvaluateStatement text
 ```
 
@@ -38,7 +38,7 @@ Debug.EvaluateStatement text
 
  Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Wenn die Werte der Variablen `a` und `b` beispielsweise unterschiedlich sind, gibt der Befehl
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
 
  Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
 ## <a name="example"></a>Beispiel
 
-```
+```cmd
 >Debug.EvaluateStatement(a+b)
 ```
 

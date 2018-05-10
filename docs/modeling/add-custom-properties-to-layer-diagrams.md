@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeit-Diagramme hinzu
+
 Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte mit jedem Element in einem Diagramm Abhängigkeit speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Außerdem können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer angezeigt und werden bearbeitet können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
 
-## <a name="properties-not-visible-to-the-user"></a>Für den Benutzer nicht sichtbare Eigenschaften
- Wenn Sie nur Code Werte auf jedes Element in einem Diagramm Abhängigkeit anfügen möchten, müssen Sie eine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+## <a name="non-visible-properties"></a>Nicht sichtbare Eigenschaften
 
-## <a name="properties-that-the-user-can-edit"></a>Eigenschaften, die der Benutzer bearbeiten kann
- **Erste Vorbereitung**
+Wenn Sie nur Code Werte auf jedes Element in einem Diagramm Abhängigkeit anfügen möchten, müssen Sie eine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+
+## <a name="editable-properties"></a>Bearbeitbaren Eigenschaften
+
+**Erste Vorbereitung**
 
 > [!IMPORTANT]
->  Um Eigenschaften anzuzeigen, müssen Sie die folgende Änderung auf jedem Computer vornehmen, in dem Ebeneneigenschaften sichtbar sein sollen.
+> Um Eigenschaften anzuzeigen, stellen Sie die folgende Änderung auf jedem Computer, auf dem Ebeneneigenschaften sichtbar sein soll:
 >
->  1.  Führen Sie mithilfe von Editor **als Administrator ausführen**. Öffnen Sie `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.
-> 2.  Fügen Sie innerhalb des `Content`-Elements Folgendes hinzu:
+> 1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Open *%ProgramFiles%\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. Innerhalb der **Content** Element hinzuzufügen:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
-> 3.  Klicken Sie unter der **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Entwicklereingabeaufforderung**.
->
->      Geben Sie Folgendes ein:
+> 3. Klicken Sie unter der **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Entwicklereingabeaufforderung**. Geben Sie Folgendes ein:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4.  Starten Sie Visual Studio neu.
+> 4. Starten Sie Visual Studio neu.
 
- **Stellen Sie sicher, dass der Code in einem VSIX-Projekt ist**
+**Stellen Sie sicher, dass der Code in einem VSIX-Projekt ist**
 
- Wenn die Eigenschaft Teil eines Befehls, Gestenhandler oder Validierungsprojekt ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Wenn die Eigenschaft Teil eines Befehls, Gestenhandler oder Validierungsprojekt ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- **Definieren der benutzerdefinierten Eigenschaft**
+**Definieren der benutzerdefinierten Eigenschaft**
 
- Um eine benutzerdefinierte Eigenschaft zu erstellen, definieren Sie eine Klasse folgendermaßen:
+Um eine benutzerdefinierte Eigenschaft zu erstellen, definieren Sie eine Klasse folgendermaßen:
 
-```
+```csharp
 [Export(typeof(IPropertyExtension))]
-public class MyProperty
-      : PropertyExtension<ILayerElement>
+public class MyProperty : PropertyExtension<ILayerElement>
 {
   // Implement the interface.
 }
 ```
 
- Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:
+Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:
 
 -   `ILayerModel` - das Modell
 
@@ -74,9 +74,10 @@ public class MyProperty
 -   `ILayerCommentLink`
 
 ## <a name="example"></a>Beispiel
- Der folgende Code entspricht einem typischen benutzerdefinierten Eigenschaftendeskriptor. Er definiert eine boolesche Eigenschaft für das Ebenenmodell (`ILayerModel`), mit dem der Benutzer Werte für eine benutzerdefinierte Validierungsmethode bereitstellen kann.
 
-```
+Der folgende Code entspricht einem typischen benutzerdefinierten Eigenschaftendeskriptor. Er definiert eine boolesche Eigenschaft für das Ebenenmodell (`ILayerModel`), mit dem der Benutzer Werte für eine benutzerdefinierte Validierungsmethode bereitstellen kann.
+
+```csharp
 using System;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;

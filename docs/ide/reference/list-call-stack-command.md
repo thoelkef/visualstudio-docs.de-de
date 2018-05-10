@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5fb8bd8b0f0f550e6fa1253f778895af0472be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-call-stack-command"></a>Befehl "Aufrufliste auflisten"
 Zeigt die aktuelle Aufrufliste an.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]
 [/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]
@@ -87,7 +87,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="remarks"></a>Hinweise
  Änderungen an den Argumenten oder Schaltern gelten bei zukünftigen Aufrufen dieses Befehls. Wenn Sie Debug.ListCallStackby selbst ausgeben, wird die gesamte Aufrufliste angezeigt. Wenn Sie beispielsweise einen Index angeben
 
-```
+```cmd
 Debug.ListCallStack 2
 ```
 
@@ -95,7 +95,7 @@ Debug.ListCallStack 2
 
  Sie können diesen Befehl auch mit dem vordefinierten Alias „kb“ schreiben. Sie können beispielsweise Folgendes eingeben:
 
-```
+```cmd
 kb 2
 ```
 
@@ -103,7 +103,7 @@ kb 2
 
 ## <a name="example"></a>Beispiel
 
-```
+```cmd
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 

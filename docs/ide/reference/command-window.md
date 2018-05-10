@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
@@ -30,13 +30,13 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
  Verwenden Sie den [Befehl „Drucken“](../../ide/reference/print-command.md), um den Wert einer Variablen `varA` zu überprüfen:
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 ## <a name="parameters-switches-and-values"></a>Parameter, Schalter und Werte
  Einige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle verfügen über erforderliche und optionale Argumente, Schalter und Werte. Für die Verwendung dieser Befehle gelten bestimmte Regeln. Im folgenden Beispiel wird ein umfangreicher Befehl gezeigt, um die Terminologie zu verdeutlichen.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert ver
 ## <a name="escape-characters"></a>Escapezeichen
  Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

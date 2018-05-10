@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf137b699b7a02a0ee79099e937767262fce4e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und -dienste
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 devenv /SafeMode
 ```
 
@@ -37,7 +37,7 @@ devenv /SafeMode
 
 ## <a name="code"></a>Code
 
-```
+```cmd
 Devenv.exe /SafeMode
 ```
 

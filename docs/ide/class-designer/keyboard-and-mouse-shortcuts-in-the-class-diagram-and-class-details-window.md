@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“ (Klassen-Designer)
 
@@ -32,8 +32,8 @@ Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:
 |Mauskombination|Kontext|description|
 |-----------------------|-------------|-----------------|
 |Doppelklicken|Shape-Elemente|Öffnet den Code-Editor.|
-||Lollipop-Connector|Lollipop erweitern/reduzieren.|
-||Lollipop-Connectorbezeichnung|Ruft den Befehl **Schnittstelle anzeigen** auf|
+|Doppelklicken|Lollipop-Connector|Lollipop erweitern/reduzieren.|
+|Doppelklicken|Lollipop-Connectorbezeichnung|Ruft den Befehl **Schnittstelle anzeigen** auf|
 |Mausrad|Klassendiagramm|Vertikaler Bildlauf.|
 |ALT + Mausrad|Klassendiagramm|Horizontaler Bildlauf.|
 |STRG + Mausrad|Klassendiagramm|Zoomen|
@@ -60,12 +60,12 @@ Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 |Key|Kontext|description|
 |---------|-------------|-----------------|
 |Pfeiltasten|In Typformen|Navigation im Strukturstil in Forminhalten (Umschließen einer Form wird unterstützt). Nach-links- und Nach-rechts-Taste erweitern/reduzieren das aktuelle Element, sofern es erweiterbar ist, und navigieren andernfalls zum übergeordneten Element (ausführliches Verhalten entsprechend Navigation in Strukturansicht).|
-||Formen der obersten Ebene|Verschieben von Formen im Diagramm.|
+|Pfeiltasten|Formen der obersten Ebene|Verschieben von Formen im Diagramm.|
 |UMSCHALT + Pfeiltasten|In Typformen|Erstellen einer fortlaufenden Auswahl, die aus Formelementen wie Member, geschachtelte Typen oder Depots besteht. Diese Tastenkombinationen unterstützen kein Umschließen.|
 |START|In Typformen|Navigiert zum Titel der Form der obersten Ebene.|
-||Formen der obersten Ebene|Navigiert zur ersten Form im Diagramm.|
+|START|Formen der obersten Ebene|Navigiert zur ersten Form im Diagramm.|
 |ENDE|In Typformen|Navigiert zum letzten sichtbaren Element in der Form.|
-||Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
+|ENDE|Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
 |UMSCHALT+HOME|In Typform|Wählt Elemente innerhalb der Form aus, beginnend mit dem aktuellen Element und endend mit dem obersten Element in derselben Form.|
 |UMSCHALT+END|In Typform|Identisch mit UMSCHALT + POS1, aber in Von-oben-nach-unten-Richtung.|
 |EINGABETASTE|Alle Kontexte|Ruft die Standardaktion für die Form auf, die auch durch Doppelklicken verfügbar ist. In den meisten Fällen ist dies "Code anzeigen", aber für einige Elemente ist das unterschiedlich definiert (Lollipops, Depot-Header, Lollipop Bezeichnungen).|
@@ -75,7 +75,7 @@ Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 |ALT + UMSCHALT + L|In und auf Typformen.|Navigiert zum Lollipop der aktuell ausgewählten Form (sofern vorhanden).|
 |ALT + UMSCHALT + B|In und auf Typformen.|Wird die Basistypenliste auf der Typform angezeigt, und enthält die Liste mehrere Elemente, wird hiermit der Erweiterungszustand der Liste umgeschaltet (reduzieren/erweitern).|
 |DELETE|Auf Typ- und Kommentarformen|Ruft den Befehl **Aus Diagramm entfernen** auf|
-||Auf irgendeinem anderen Element|Ruft den Befehl **Aus Code löschen** auf (Member, Parameter, Zuordnungen, Vererbung, Lollipop-Bezeichnungen)|
+|DELETE|Auf irgendeinem anderen Element|Ruft den Befehl **Aus Code löschen** auf (Member, Parameter, Zuordnungen, Vererbung, Lollipop-Bezeichnungen)|
 |STRG+ENTF|Alle Kontexte|Ruft den Befehl **Aus Code löschen** für die Auswahl auf|
 |TAB|Alle Kontexte|Navigiert zum nächsten untergeordneten Element desselben übergeordneten Elements (unterstützt Umschließen).|
 |UMSCHALT+TAB|Alle Kontexte|Navigiert zum vorhergehenden untergeordneten Element desselben übergeordneten Elements (unterstützt Umschließen).|

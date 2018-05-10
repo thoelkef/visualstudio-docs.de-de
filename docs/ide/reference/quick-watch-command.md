@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957f521b23bc56a6bfa4f8de315f130d5f82d8d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce3c95591809b847141dde07b2a770d9b4597a5f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quick-watch-command"></a>Befehl "Aktuellen Wert anzeigen"
 Zeigt den ausgewählten oder angegebenen Text im Feld „Ausdruck“ des Fensters [Schnellüberwachung](../../debugger/watch-and-quickwatch-windows.md) an. Sie können dieses Dialogfeld verwenden, um den aktuellen Wert einer Variablen, eines Ausdrucks oder den Inhalt eines Registers zu berechnen, der vom Debugger erkannt wird. Darüber hinaus können Sie den Wert jeder nicht konstanten Variablen oder den Inhalt jedes Registers ändern.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 Debug.QuickWatchq [text]
 ```
 
@@ -40,7 +40,7 @@ Debug.QuickWatchq [text]
 
 ## <a name="example"></a>Beispiel
 
-```
+```cmd
 >Debug.QuickWatch
 ```
 

@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Build- und Projekteinstellungen definieren, die für die Protokollierung, die Leistung sowie unterstützende Dateitypen relevant sind.
@@ -71,10 +71,10 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/v
 ## <a name="extensions-to-hide"></a>Auszublendende Erweiterungen
   Gibt die Dateierweiterungen der Dateien an, die nicht im **Projektmappen-Explorer** angezeigt werden, wenn die Option **Alle Dateien anzeigen** aktiviert ist.
 
- ## <a name="build-customization-search-path"></a>Suchpfad für die Buildanpassung
+## <a name="build-customization-search-path"></a>Suchpfad für die Buildanpassung
   Gibt die Liste der Verzeichnisse mit RULES-Dateien an, die Sie bei der Definition von Buildregeln für Projekte unterstützen.
 
-# <a name="solution-explorer-mode"></a>Projektmappen-Explorer-Modus
+## <a name="solution-explorer-mode"></a>Projektmappen-Explorer-Modus
  **Nur Dateien im Projekt anzeigen**
 
   Konfiguriert den **Projektmappen-Explorer** so, dass nur Dateien im Projekt angezeigt werden.

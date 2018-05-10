@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Tools mit Daten für .NET
 
-Visual Studio und .NET Framework geben zusammen eine umfangreiche API und toolunterstützung ist für das Herstellen einer Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten in Visual Studio-Tools wurde ursprünglich entworfen, in erster Linie zum Unterstützen von relationalen Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbankhersteller oder Drittanbieter, ADO.NET-Anbietern.
+Visual Studio und .NET Framework geben zusammen eine umfangreiche API und toolunterstützung ist für das Herstellen einer Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten in Visual Studio-Tools wurde entwickelt, in erster Linie zum Unterstützen von relationalen Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbankhersteller oder Drittanbieter, ADO.NET-Anbietern.
 
 [.NET Core](/dotnet/core/) ADO.NET, mit Ausnahme von Datasets und verwandte Typen unterstützt. Wenn Sie .NET Core als Ziel dient, erfordern eine ORM (Objektrelationales Mapping)-Ebene verwenden [Entity Framework Core](/ef/core/).
 
 Das folgende Diagramm zeigt eine vereinfachte Ansicht die grundlegende Architektur:
 
 ![ADO.NET-Architektur](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>Typischer workflow
 
 Der typische Arbeitsablauf umfasst dies:
 

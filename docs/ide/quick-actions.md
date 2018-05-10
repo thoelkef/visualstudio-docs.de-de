@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
@@ -24,8 +24,8 @@ Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion u
 
 Schnelle Aktionen können für Folgendes verwendet werden:
 
-- Anwenden einer Codefehlerbehebung für die Verletzung einer [Code-Analyzer-Regel](../code-quality/roslyn-analyzers-overview.md)
-- [Unterdrücken](../code-quality/use-roslyn-analyzers.md) der Verletzung einer Code-Analyzer-Regel
+- Anwenden einer Codefehlerbehebung für eine Verletzung einer Regel des [Codeanalysetools](../code-quality/roslyn-analyzers-overview.md)
+- [Unterdrücken](../code-quality/use-roslyn-analyzers.md) einer Verletzung einer Regel des Codeanalysetools
 - Anwenden eines Refactorings (z.B. [Inlinesetzen einer temporären Variable](../ide/reference/inline-temporary-variable.md))
 - Generieren von Code (z.B. [Einführen einer lokalen Variable](../ide/reference/introduce-local-variable.md))
 

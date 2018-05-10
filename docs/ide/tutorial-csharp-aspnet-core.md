@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Erste Schritte mit C# und ASP.NET Core in Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Erste Schritte mit C# und ASP.NET in Visual Studio
 In diesem Tutorial für die C#-Entwicklung mit ASP.NET Core in Visual Studio werden wir eine C#-ASP.NET Core-Web-App erstellen, Code hinzufügen, einige Funktionen der IDE kennenlernen und die App ausführen.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
@@ -42,7 +42,7 @@ Zunächst erstellen Sie ein ASP.NET Core-Projekt. Der Projekttyp enthält schon 
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#** und anschließend **Web**, und klicken Sie auf **.NET Core**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung**, nennen Sie die erste Datei *MyCoreApp*, und klicken Sie anschließend auf **OK**.   
 
@@ -61,7 +61,7 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
    ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Über die Menüleiste „Extras“
-1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
+1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen**.
 
 2. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung** und anschließend auf **Ändern**.   
 
@@ -86,15 +86,15 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
     ![ASP.NET-Projektmappen-Explorer in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Öffnen Sie im Ordner **Controller** die Datei **HomeController.cs**.
+1. Öffnen Sie im Ordner **Controller** die Datei *HomeController.cs*.
 
       ![Datei „HomeController.cs“ im Projektmappen-Explorer in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Sehen Sie sich den Inhalt von **HomeController.cs** an.
+2. Sehen Sie sich den Inhalt von *HomeController.cs* an.
 
   ![„HomeController.cs“ im Visual Studio-Codefenster](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Das Projekt hat auch einen Ordner **Views** (Ansichten), der andere Ordner enthält, die den Controllern entsprechen, sowie einen namens **Shared** (Freigegeben). Die CSHTML-Ansichtsdatei (eine Erweiterung von HTML) des Pfads **/Home/About** wäre z.B. **Views/Home/About.cshtml**. Öffnen Sie diese Datei.
+4. Das Projekt hat auch einen Ordner **Views** (Ansichten), der andere Ordner enthält, die den Controllern entsprechen, sowie einen namens **Shared** (Freigegeben). Die CSHTML-Ansichtsdatei (eine Erweiterung von HTML) des Pfads */Home/About* wäre z.B. *Views/Home/About.cshtml*. Öffnen Sie diese Datei.
 
   ![Datei „About.cshtml“ im Projektmappen-Explorer in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -105,11 +105,11 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
  >[!NOTE]
  > Weitere Informationen hierzu finden Sie unter [Einführung in die ASP.NET-Webprogrammierung mithilfe der Razor-Syntax (C#)](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-6. Diese Projektmappe enthält auch den Ordner **wwwroot**, der das Stammverzeichnis Ihrer Website ist. Sie können statische Websiteinhalte wie CSS, Bilder und JavaScript-Bibliotheken direkt in den Pfaden einfügen, in denen sie sich bei der Bereitstellung der Website befinden sollen.
+6. Diese Projektmappe enthält auch den Ordner *wwwroot*, der das Stammverzeichnis Ihrer Website ist. Sie können statische Websiteinhalte wie CSS, Bilder und JavaScript-Bibliotheken direkt in den Pfaden einfügen, in denen sie sich bei der Bereitstellung der Website befinden sollen.
 
  ![Ordner „wwwroot“ im Projektmappen-Explorer in Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei **appsettings.json**. Sie können jedoch einige bzw. alle diese Einstellungen umgebungsabhängig überschreiben, d.h. beispielsweise die Datei **appSettings.Development.json** für die Umgebung **Entwicklung** bereitstellen.
+7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei *appsettings.json*. Sie können jedoch einige bzw. alle diese Einstellungen umgebungsabhängig überschreiben, d.h. beispielsweise die Datei *appSettings.Development.json* für die Umgebung **Entwicklung** bereitstellen.
 
  ![Konfigurationsdateien im Projektmappen-Explorer in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
  ![„About“ im Browserfenster für die App auswählen](../ide/media/csharp-aspnet-browser-page.png)
 
- Auf der Seite „About“ im Browser wird u.a. der Text gerendert, der in der Datei „HomeController.cs“ festgelegt ist.
+ Auf der Seite **About** im Browser wird u.a. der Text gerendert, der in der Datei *HomeController.cs* festgelegt ist.
 
    ![Text auf der Seite „About“](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Lassen Sie das Browserfenster geöffnet, und kehren Sie zu Visual Studio zurück. Öffnen Sie **Controllers/HomeController.cs**, wenn es nicht bereits geöffnet ist.
+1. Lassen Sie das Browserfenster geöffnet, und kehren Sie zu Visual Studio zurück. Öffnen Sie *Controllers/HomeController.cs*, wenn es nicht bereits geöffnet ist.
 
  ![Datei „HomeController.cs“ über den Projektmappen-Explorer in Visual Studio öffnen](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Legen Sie in der ersten Zeile der Methode **About** einen Haltepunkt fest. Klicken Sie dazu auf den Rand, oder setzen Sie den Cursor in die Zeile, und drücken Sie **F9**.
 
-  Diese Zeile legt einige Daten der Auflistung **ViewData** fest, die auf der CSHTML-Seite unter **Views/Home/About.cshtml** gerendert wird.
+  Diese Zeile legt einige Daten der Auflistung **ViewData** fest, die auf der CSHTML-Seite unter *Views/Home/About.cshtml* gerendert wird.
 
  ![Legen Sie einen Haltepunkt in der ersten Zeile der „About“-Methode in „About.cshtml“ fest.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Kehren Sie zum Browser zurück, und aktualisieren Sie die Seite „About“. Dadurch wird der Haltepunkt in Visual Studio ausgelöst.
+1. Kehren Sie zum Browser zurück, und aktualisieren Sie die Seite **About**. Dadurch wird der Haltepunkt in Visual Studio ausgelöst.
 
 1. Zeigen Sie in Visual Studio auf den Member **ViewData**, um dessen Daten anzuzeigen.
 
@@ -148,7 +148,7 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
 1. Entfernen Sie den Anwendungshaltepunkt mit derselben Methode, mit der Sie ihn hinzugefügt haben.
 
-1. Öffnen Sie **Views/Home/About.cshtml**.
+1. Öffnen Sie *Views/Home/About.cshtml*.
 
  ![Klicken Sie im Projektmappen-Explorer auf „About.cshtml“.](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 

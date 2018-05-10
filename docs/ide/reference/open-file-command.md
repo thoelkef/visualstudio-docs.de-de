@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd75d32021f2dd3f6ac1ef76772ea30376ea1b8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="open-file-command"></a>Befehl "Datei öffnen"
 Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 File.OpenFile filename [/e:editorname]
 ```
 
@@ -45,7 +45,7 @@ File.OpenFile filename [/e:editorname]
 
  Geben Sie zum Öffnen einer Datei im Quellcode-Editor für das Argument /e:`editorname` beispielsweise Folgendes ein:
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -55,7 +55,7 @@ File.OpenFile filename [/e:editorname]
 ## <a name="example"></a>Beispiel
  In diesem Beispiel wird die Stildatei „Test1.css“ im Quellcode-Editor geöffnet.
 
-```
+```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 

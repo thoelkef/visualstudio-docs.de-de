@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Erstellen eine Erweiterung mit einer Elementvorlage-Editor
 Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK grundlegender Editor-Erweiterungen erstellen, die im Editor Klassifizierern Zusatzelemente und Ränder hinzu. Der Editor Elementvorlagen sind für Visual c# oder Visual Basic-VSIX-Projekte verfügbar.  
@@ -36,7 +36,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK grundle
   
     -   EditorClassifier1.cs enthält die `EditorClassifier1` Klasse.  
   
-    -   EditorClassifier1ClassificationDefinition.cs enthält die `OEditorClassifier1ClassificationDefinition` Klasse.  
+    -   EditorClassifier1ClassificationDefinition.cs enthält die `EditorClassifier1ClassificationDefinition` Klasse.  
   
     -   EditorClassifier1Format.cs enthält die `EditorClassifier1Format` Klasse.  
   
@@ -57,7 +57,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK grundle
   
     -   TextAdornment1.cs enthält die `TextAdornment1` Klasse.  
   
-    -   extAdornment1TextViewCreationListener.cs enthält die `TextAdornment1TextViewCreationListener` Klasse.  
+    -   TextAdornment1TextViewCreationListener.cs enthält die `TextAdornment1TextViewCreationListener` Klasse.  
   
 4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird. Wenn Sie eine Textdatei öffnen, werden die "a" Zeichen im Text rot vor einem blauen Hintergrund beschrieben.  
   
@@ -88,7 +88,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK grundle
   
 1.  In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** klicken Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `MarginExtension`ein. Klicken Sie auf **OK**.  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie zu Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Viewport Randsteuerelement**. Lassen Sie den Standarddateinamen (EditorMargin1.cs/vb).  
+2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie zu Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Rand**. Lassen Sie den Standarddateinamen (EditorMargin1.cs/vb).  
   
 3.  Es gibt zwei Codedateien wie folgt:  
   

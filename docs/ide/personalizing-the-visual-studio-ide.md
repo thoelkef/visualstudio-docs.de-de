@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
@@ -40,7 +40,7 @@ Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie auf **Umge
 
 Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie `environment` im Feld **Schnellstart** ein, klicken Sie auf **Umgebung > Allgemein**, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
 
-### <a name="customze-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
+### <a name="customize-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 
 Weitere Informationen zum Hinzufügen oder Entfernen von Menü-oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
