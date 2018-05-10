@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Direktfenster
 Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.
@@ -32,13 +32,13 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
  Dieses Fenster kann besonders beim Debuggen einer Anwendung von Nutzen sein. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Drucken-Befehl](../../ide/reference/print-command.md) verwenden:
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar,
 
  Im Fenster **Direkt** wird ein Gleichheitszeichen (=) als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar,
 
  Im Fenster **Befehl** wird ein Gleichheitszeichen (=) hingegen als Vergleichsoperator interpretiert. Sie können keine Zuweisungsvorgänge im Fenster **Befehl** ausführen. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

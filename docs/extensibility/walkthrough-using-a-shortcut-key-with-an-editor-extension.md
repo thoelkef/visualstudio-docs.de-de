@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit der Erweiterung-Editor
 Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Randsteuerelement einer Text-Ansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Randsteuerelement-Editor-Vorlage, und können Sie mithilfe der Randsteuerelement hinzufügen das Zeichen + enthält.  
@@ -46,8 +46,21 @@ Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die fol
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
+
+In der Klassendatei KeyBindingTestTextViewCreationListener.cs ändern Sie den Namen des der AdornmentLayer aus **KeyBindingTest** auf **PurpleCornerBox**:
   
-## <a name="defining-the-command-filter"></a>Den Befehlsfilter definieren  
+    ```csharp  
+    [Export(typeof(AdornmentLayerDefinition))]  
+    [Name("PurpleCornerBox")]  
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+    public AdornmentLayerDefinition editorAdornmentLayer;  
+    ```  
+
+## <a name="handling-typechar-command"></a>Behandlung von TYPECHAR-Befehl
+Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln von Befehlen in eine Editor-Erweiterung implementiert ein <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> basierten Befehlsfilter. Visual Studio 2017 Version 15,6, einen modernen vereinfachten Ansatz ein basierend auf den Editor Befehlshandler eingeführt. In den nächsten beiden Abschnitten veranschaulichen, wie mithilfe von sowohl die ältere und moderne Ansatz einen Befehl zu behandeln.
+
+## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definieren den Befehlsfilter (vor Installation von Visual Studio-2017 Version 15,6)
+
  Der Befehlsfilter ist eine Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, den Befehl durch Instanziierung der Zusatzelement (adornment) behandelt.  
   
 1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandFilter`.  
@@ -90,7 +103,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 6.  Implementieren der `QueryStatus()` Methode wie folgt.  
   
-    ```vb  
+    ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
     {  
         return m_nextTarget.QueryStatus(ref pguidCmdGroup, cCmds, prgCmds, pCmdText);  
@@ -121,7 +134,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Hinzufügen des Filters Befehl  
+## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Hinzufügen des Filters Befehl (vor Installation von Visual Studio-2017 Version 15,6)
  Zusatzelement (adornment)-Anbieter muss einen Befehlsfilter Textansicht hinzufügen. In diesem Beispiel wird vom Anbieter implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> , Text-Erstellung sichtereignisse zu überwachen. Dieser Anbieter Randsteuerelement exportiert Zusatzelement (adornment) der Ebene der Z-Reihenfolge von der Zusatzelement (adornment) definiert.  
   
 1.  Fügen Sie in der Datei KeyBindingTestTextViewCreationListener die folgenden using-Anweisungen:  
@@ -139,16 +152,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  In der Definition des Randsteuerelement-Ebene, ändern Sie den Namen des der AdornmentLayer aus **KeyBindingTest** auf **PurpleCornerBox**.  
-  
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
-  
-3.  Um den Text-Ansicht-Adapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+2.  Um den Text-Ansicht-Adapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +160,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Ändern der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode, sodass die It fügt die `KeyBindingCommandFilter`.  
+3.  Ändern der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode, sodass die It fügt die `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +169,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  Die `AddCommandFilter` Handler Ruft den Text anzeigen Adapter ab, und der Befehlsfilter hinzugefügt.  
+4.  Die `AddCommandFilter` Handler Ruft den Text anzeigen Adapter ab, und der Befehlsfilter hinzugefügt.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -188,11 +192,90 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
         }  
     }  
     ```  
+
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Implementieren der Befehlshandler (in Visual Studio 2017 Version 15,6 ab)
+
+Aktualisieren Sie zuerst den Verweisen des Projekts Nuget um den neuesten-Editor-API zu verweisen:
+
+1. Mit der rechten Maustaste auf das Projekt, und wählen **NuGet-Pakete verwalten**.
+
+2. In **Nuget Package Manager**, wählen die **Updates** Registerkarte die **wählen Sie alle Pakete** Kontrollkästchen, und wählen Sie dann **Update**.
+
+Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, den Befehl durch Instanziierung der Zusatzelement (adornment) behandelt.  
   
+1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandHandler`.  
+  
+2.  Fügen Sie die folgenden using-Anweisungen hinzu.  
+  
+    ```csharp  
+    using Microsoft.VisualStudio.Commanding;
+    using Microsoft.VisualStudio.Text.Editor;
+    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+    using Microsoft.VisualStudio.Utilities;
+    using System.ComponentModel.Composition;   
+    ```  
+  
+3.  Die Klasse mit dem Namen KeyBindingCommandHandler Vererben sollte `ICommandHandler<TypeCharCommandArgs>`, und exportieren Sie es als <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+  
+    ```csharp  
+    [Export(typeof(ICommandHandler))]
+    [ContentType("text")]
+    [Name("KeyBindingTest")]
+    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+    ```  
+  
+4.  Fügen Sie einen Anzeigenamen der Befehlshandler hinzu:  
+  
+    ```csharp  
+    public string DisplayName => "KeyBindingTest";
+    ```  
+    
+5.  Implementieren der `GetCommandState()` Methode wie folgt. Da diese Befehlshandler Core Editor TYPECHAR-Befehl verarbeitet, können sie delegieren, aktivieren den Befehl aus, um die Core-Editor.
+  
+    ```csharp  
+    public CommandState GetCommandState(TypeCharCommandArgs args)
+    {
+        return CommandState.Unspecified;
+    } 
+    ```  
+  
+6.  Implementieren der `ExecuteCommand()` Methode, sodass die It eine violette Box auf die Ansicht Wenn Fügt eine + Zeichen eingegeben wird. 
+  
+    ```csharp  
+    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+    {
+        if (args.TypedChar == '+')
+        {
+            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+                "KeyBindingTextAdorned", out bool adorned) && adorned;
+            if (!alreadyAdorned)
+            {
+                new PurpleCornerBox((IWpfTextView)args.TextView);
+                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+            }
+        }
+
+        return false;
+    }
+    ```  
+ 7. Kopieren Sie Zusatzelement (adornment) Ebene Definition aus KeyBindingTestTextViewCreationListener.cs-Datei in die KeyBindingCommandHandler.cs zu und löschen Sie KeyBindingTestTextViewCreationListener.cs-Datei:
+ 
+    ```csharp  
+    /// <summary>
+    /// Defines the adornment layer for the adornment. This layer is ordered
+    /// after the selection layer in the Z-order.
+    /// </summary>
+    [Export(typeof(AdornmentLayerDefinition))]
+    [Name("PurpleCornerBox")]
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+    private AdornmentLayerDefinition editorAdornmentLayer;    
+    ```  
+
 ## <a name="making-the-adornment-appear-on-every-line"></a>Machen die Zusatzelement (adornment) in jeder Zeile angezeigt werden  
- Die ursprüngliche Randsteuerelement schien für jedes Zeichen "a" in eine Textdatei. Nun, dass wir den Code zum Hinzufügen der Randsteuerelement als Antwort auf das Zeichen "+" geändert haben, fügt Sie der Zusatzelement (adornment) nur in der Zeile, in dem die "+" typisiert ist. Wir können den Randsteuerelement-Code ändern, sodass die Randsteuerelement einmal auf angezeigt wird jede "a".  
+
+Die ursprüngliche Randsteuerelement schien für jedes Zeichen "a" in eine Textdatei. Nun, dass wir den Code zum Hinzufügen der Randsteuerelement als Antwort auf das Zeichen "+" geändert haben, fügt Sie der Zusatzelement (adornment) nur in der Zeile, in dem die "+" typisiert ist. Wir können den Randsteuerelement-Code ändern, sodass die Randsteuerelement einmal auf angezeigt wird jede "a".  
   
- Ändern Sie in der Datei KeyBindingTest.cs die CreateVisuals()-Methode, um alle Zeilen in der Sicht ergänzt das Zeichen "a" durchlaufen.  
+Ändern Sie in der Datei KeyBindingTest.cs die CreateVisuals()-Methode, um alle Zeilen in der Sicht ergänzt das Zeichen "a" durchlaufen.  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  

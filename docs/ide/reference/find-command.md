@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31810189ec7127548f68a3732afc701e8a7bac08
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-command"></a>Befehl "Suchen"
 Durchsucht Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien suchen** im Fenster **Suchen und Ersetzen** verfügbar sind.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
@@ -62,7 +62,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="example"></a>Beispiel
  In diesem Beispiel wird eine Suche mit Berücksichtigung der Groß- und Kleinschreibung nach dem Wort „Somestring“ im aktuell ausgewählten Codeabschnitt ausgeführt.
 
-```
+```cmd
 >Edit.Find somestring /sel /case
 ```
 

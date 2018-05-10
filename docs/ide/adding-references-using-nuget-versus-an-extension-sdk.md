@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 
@@ -50,7 +50,7 @@ Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen
 |Der Mechanismus wird in Anwendungsmanifeste integriert.|J|Das SDK muss an [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)]-spezifische Konzepte übergeben werden, damit das Verpacken und die F5-Funktion mit den im [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] verfügbaren SDKs ordnungsgemäß funktionieren.|J|NuGet-Inhalt wird Teil des Projekts. F5 muss nicht speziell berücksichtigt werden.|
 |Der Mechanismus stellt Dateien ohne Verweis bereit (stellen Sie z. B. ein Testframework zum Ausführen von Tests von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps bereit).|J|Wenn Sie die Dateien im Ordner *\redist* ablegen, werden die Dateien automatisch bereitgestellt.|J||
 |Der Mechanismus fügt die Plattform-SDKs automatisch der Visual Studio-IDE hinzu.|J|Wenn Sie das [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK oder das Windows Phone SDK in einem bestimmten Speicherort mit einem bestimmten Layout ablegen, wird das SDK automatisch mit allen Visual Studio-Funktionen integriert.|N||
-|Der Mechanismus unterstützt einen fehlerfreien Entwicklercomputer. (Das heißt, es ist keine Installation erforderlich, und das einfache Abrufen der Quellcodeverwaltung funktioniert.)|N|Da Sie auf ein SDK verweisen, müssen Sie die Projektmappe und das SDK getrennt einchecken. Sie können das SDK von den zwei Nichtregistrierungs-Standardspeicherorten einchecken, die MSBuild beim Durchlaufen der SDKs verwendet (Details finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)). Wenn ein benutzerdefinierter Speicherort der SDKs vorhanden ist, können Sie stattdessen den folgenden Code in der Projektdatei angeben:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Checken Sie die SDKs dann in diesen Speicherort ein.|J|Wenn Sie die Projektmappe auschecken, erkennt Visual Studio die Dateien sofort und bearbeitet sie entsprechend.|
+|Der Mechanismus unterstützt einen fehlerfreien Entwicklercomputer. (Das heißt, es ist keine Installation erforderlich, und das einfache Abrufen der Quellcodeverwaltung funktioniert.)|N|Da Sie auf ein SDK verweisen, müssen Sie die Projektmappe und das SDK getrennt einchecken. Sie können das SDK von den zwei Nichtregistrierungs-Standardspeicherorten einchecken, die MSBuild beim Durchlaufen der SDKs verwendet (Details finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)). Wenn ein benutzerdefinierter Speicherort der SDKs vorhanden ist, können Sie stattdessen den folgenden Code in der Projektdatei angeben:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Checken Sie die SDKs dann in diesen Speicherort ein.|J|Wenn Sie die Projektmappe auschecken, erkennt Visual Studio die Dateien sofort und bearbeitet sie entsprechend.|
 |Sie können einer großen vorhandenen Community von Paketerstellern beitreten.|Nicht zutreffend|Die Community ist neu.|J||
 |Sie können einer großen vorhandenen Community von Paketverbrauchern beitreten.|Nicht zutreffend|Die Community ist neu.|J||
 |Sie können an einem Ökosystem von Partnern (benutzerdefinierte Galerien, Repositorys usw.) teilhaben.|Nicht zutreffend|Die verfügbaren Repositorys umfassen Visual Studio Marketplace, Microsoft Download Center und [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|J||

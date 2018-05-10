@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907ef900283cb3f15d9e65f7196c3cf42e191ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-current-process"></a>Aktuellen Prozess festlegen
 Legt den angegebenen Prozess als aktiven Prozess im Debugger fest.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 Debug.SetCurrentProcess index
 ```
 
@@ -38,7 +38,7 @@ Debug.SetCurrentProcess index
 
 ## <a name="example"></a>Beispiel
 
-```
+```cmd
 >Debug.SetCurrentProcess 1
 ```
 

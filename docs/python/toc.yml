@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Tutorials
   items:
-    - name: 0 – Installieren von Python-Unterstützung
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 – Erstellen eines neuen Python-Projekts
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 – Schreiben und Ausführen von Code
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 – Verwenden des interaktiven REPL-Fensters
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 – Ausführen von Code im Debugger
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 – Installieren von Paketen und Verwalten von Python-Umgebungen
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 – Arbeiten mit Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python in Visual Studio
+      items:
+        - name: 0 – Installieren von Python-Unterstützung
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 – Erstellen eines neuen Python-Projekts
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 – Schreiben und Ausführen von Code
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 – Verwenden des interaktiven REPL-Fensters
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 – Ausführen von Code im Debugger
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 – Installieren von Paketen und Verwalten von Python-Umgebungen
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 – Arbeiten mit Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Informationen zu Django in Visual Studio
+      items:
+        - name: '1: Erstellen Sie ein Projekt und eine Projektmappe.'
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: '2: Erstellen Sie eine Django-App.'
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: '3: Stellen Sie statische Dateien bereit, und fügen Sie Seiten hinzu.'
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: '4: Verwenden Sie die Vorlage „Django-Webprojekt“.'
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: '5: Authentifizieren Sie Benutzer.'
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: '6: Verwenden Sie die Vorlage „Fragt ein Django-Webprojekt ab“.'
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: Konzepte
   items:
     - name: Python-Projekte
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Referenz
   items:
+    - name: Elementvorlagen
+      href: python-item-templates.md
     - name: Optionen
       href: python-support-options-and-settings-in-visual-studio.md

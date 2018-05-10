@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
 
@@ -64,18 +64,13 @@ Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.m
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Versionsunterstützung für Architektur- und Modellierungstools
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Versionsunterstützung für Architektur- und Modellierungstools
 
-Visual Studio ist in mehreren Versionen verfügbar. Nicht jede Version bietet Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+Visual Studio 2015 ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
 |**Funktion**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Codezuordnungen**|Ja|Siehe Hinweis (1)|-|-|
-|**Abhängigkeit von Diagrammen**|Ja|Siehe Hinweis (2)|Siehe Hinweis (2)|-|
+|**Codezuordnungen**|Ja|Nur ordnet unterstützt das Lesen, Filtern von Code, Hinzufügen neuer allgemeiner Knoten und Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.|-|-|
+|**Abhängigkeit von Diagrammen**|Ja|Nur Lesevorgänge Abhängigkeit Diagramme unterstützt.|Nur Lesevorgänge Abhängigkeit Diagramme unterstützt.|-|
 |**Gerichtete Diagramme** (DGML-Diagramme)|Ja|Ja|Ja|-|
 |**Codeklon**|Ja|-|-|-|
-
-Hinweis (1): Unterstützt nur das Lesen und Filtern von Code Maps, das Hinzufügen neuer allgemeiner Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.
-
-Hinweis (2): Unterstützt nur das Lesen der Abhängigkeit Diagramme.

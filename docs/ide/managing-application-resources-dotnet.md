@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="manage-application-resources-net"></a>Verwalten von Anwendungsressourcen (.NET)
 
@@ -35,9 +35,9 @@ Weitere Informationen zu Ressourcen in .NET-Desktop-Apps finden Sie unter [Resou
 
 Öffnen Sie das Projekteigenschaftenfenster in einem Projekt mit verwaltetem Code. Sie können das Eigenschaftenfenster öffnen, indem Sie Folgendes durchführen:
 
-- Klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann auf **Eigenschaften**.
-- Geben Sie „Projekteigenschaften“ in das **Schnellstart**-Fenster ein.
-- Drücken Sie im **Projektmappen-Explorer** die Tasten **ALT**+**EINGABETASTE**.
+- Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Eigenschaften** aus.
+- Eingeben von „Projekteigenschaften“ in das Fenster **Schnellstart**
+- Drücken von **ALT**+**EINGABETASTE** im Fenster **Projektmappen-Explorer**
 
 Wählen Sie die Registerkarte **Ressourcen** aus. Sie können eine *RESX-Datei* hinzufügen, wenn das Projekt noch keine enthält, sowie verschiedene Arten von Ressourcen hinzufügen und löschen und vorhandene Ressourcen ändern.
 

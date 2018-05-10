@@ -1,8 +1,8 @@
 ---
-title: Anzeigen eine Momentaufnahme mit Schritt-Back - Visual Studio IntelliTrace | Microsoft Docs
+title: Anzeigen einer Momentaufnahme mithilfe von IntelliTrace-Schritt-zurück
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
@@ -38,9 +38,20 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     ![Aktivieren Sie den IntelliTrace-Ereignisse und Momentaufnahmen Modus](../debugger/media/intellitrace-enable-snapshots.png "Modus aktivieren von IntelliTrace-Ereignisse und Momentaufnahmen")
 
+1. Wenn Sie Optionen zum Anzeigen von Momentaufnahmen auf Ausnahmen konfigurieren möchten, wählen Sie **IntelliTrace** > **erweitert** aus der **Optionen** (Dialogfeld).
+
+    Diese Optionen stehen in Visual Studio 2017 Enterprise Version 15.7 ab.
+
+    ![Konfigurieren von Verhalten für Momentaufnahmen auf Ausnahmen](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Wenn Sie Ereignisse und Momentaufnahmen aktivieren, ist auch das Erstellen von Momentaufnahmen auf Ausnahmen standardmäßig aktiviert. Sie können Momentaufnahmen auf Ausnahmen deaktivieren, indem Sie wieder deaktivieren **Sammeln von Momentaufnahmen für Ausnahmeereignisse**. Wenn diese Funktion aktiviert ist, werden Momentaufnahmen für nicht behandelte Ausnahmen erstellt. Momentaufnahmen werden für behandelte Ausnahmen erstellt, und nur dann, wenn die Ausnahme ausgelöst wird, ist er nicht erneut Auslösen einer Ausnahme zuvor ausgelöst. Sie können eine maximale Anzahl von Momentaufnahmen für Ausnahmen festlegen, indem Sie einen Wert aus der Dropdown-Liste auswählen. Der Maximalwert gilt für jedes Mal, wenn die app wechselt in den Unterbrechungsmodus (z. B. wenn die app einen Haltepunkt trifft).
+
+    > [!NOTE]
+    > Momentaufnahmen sind nur für Ausnahmeereignisse von IntelliTrace aufgezeichneten erstellt. Welche Ereignisse IntelliTrace aufzeichnet Geben Sie durch Auswahl **Tools** > **Optionen** > **IntelliTrace-Ereignisse**.
+
 1. In Ihrem Projekt einen oder mehrere Haltepunkte festlegen und das Debuggen starten (drücken Sie **F5**), oder starten Sie das Debuggen durch schrittweises Durchlaufen des Codes (**F10** oder **F11**).
 
-    IntelliTrace nimmt eine Momentaufnahme des Prozesses für die Anwendung auf jeder Debugger Schritt und Haltepunkt-Ereignisses. Diese Ereignisse werden aufgezeichnet, der **Ereignisse** Registerkarte der **Diagnosetools** Fenster zusammen mit weiteren IntelliTrace-Ereignissen. Um dieses Fenster zu öffnen, wählen Sie **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
+    IntelliTrace nimmt eine Momentaufnahme der Anwendungsprozess für jeden Debuggerschritt Haltepunktereignis und nicht behandelten Ausnahmeereignisses. Diese Ereignisse werden aufgezeichnet, der **Ereignisse** Registerkarte der **Diagnosetools** Fenster zusammen mit weiteren IntelliTrace-Ereignissen. Um dieses Fenster zu öffnen, wählen Sie **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
 
     Neben den Ereignissen, die für die Momentaufnahmen verfügbar sind, wird ein Kamerasymbol angezeigt. 
 

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9670d5789e57c4a3c156cca0608840762d094b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 48b9bc6f2797a6cf6c87da4e4bc2e2d83f84622a
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-properties-reference"></a>Projekteigenschaftenverweise
 Weitere Informationen zum Konfigurieren und Anpassen von Projekteigenschaften.
@@ -31,11 +31,9 @@ Weitere Informationen zum Konfigurieren und Anpassen von Projekteigenschaften.
 |[Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|Geben Sie in diesem Bereich Anweisungen für Buildkonfigurationen an.|
 |[Seite „Erstellen“, Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md)|Legen Sie in diesem Bereich Buildkonfigurationseigenschaften für ein [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekt fest.|
 |[Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|Geben Sie auf dieser Seite Kompilierungseigenschaften für [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekte an.|
-|||
 |[Seite „Debuggen“, Projekt-Designer](../../ide/reference/debug-page-project-designer.md)|Legen Sie auf dieser Seite Debugeigenschaften für ein Projekt fest.|
 |[Codeanalyse, Projekt-Designer](../../ide/reference/code-analysis-project-designer.md)|Konfigurieren Sie auf dieser Seite das Codeanalysetool.|
 |[Seite „Veröffentlichen“, Projekt-Designer](../../ide/reference/publish-page-project-designer.md)|Konfigurieren Sie auf dieser Seite Eigenschaften für [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|||
 |[Seite „Verweise“, Projekt-Designer (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Verwalten Sie mit dieser Seite von einem Projekt verwendete Verweise.|
 |[Seite „Sicherheit“, Projekt-Designer](../../ide/reference/security-page-project-designer.md)|Konfigurieren Sie auf dieser Seite Einstellungen für die Codezugriffssicherheit von Anwendungen, die mit [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] bereitgestellt werden.|
 |[Seite „Signierung“, Projekt-Designer](../../ide/reference/signing-page-project-designer.md)|Auf dieser Seite können Sie Anwendungs- und Bereitstellungsmanifeste sowie die Assembly signieren.|

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 652305e6d5d360169645e7801e788b39b8982400
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 576146e8bcbc20babff10f2a55d561f532a80723
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="open-solution-command"></a>Befehl "Projektmappe öffnen"
 Öffnet eine vorhandene Projektmappe und schließt alle anderen geöffneten Projektmappen.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cmd
 File.OpenSolution filename
 ```
 
@@ -43,7 +43,7 @@ File.OpenSolution filename
 ## <a name="example"></a>Beispiel
  In diesem Beispiel wird die Projektmappe „Test1.sln“ geöffnet.
 
-```
+```cmd
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"
 ```
 
