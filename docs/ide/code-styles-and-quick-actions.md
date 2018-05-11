@@ -1,7 +1,7 @@
 ---
-title: Codeformateinstellungen für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Codeformateinstellungen für Visual Studio
 ms.date: 03/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -12,11 +12,11 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45039ddc9d00fa32e236a69bfb3afffe70ea2368
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -24,11 +24,15 @@ Codeformateinstellungen können für Ihre C#- und Visual Basic-Projekte festgele
 
 ![Codeformatoptionen](media/code-style-quick-actions-dialog.png)
 
+## <a name="preference-and-severity"></a>Einstellung und Schweregrad
+
 Sie können für jedes Element über die Dropdownfelder jeder Zeile die Werte für **Präferenz** und **Sicherheit** festlegen. Der Schweregrad kann auf **Kein**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Kein** festgelegt ist. Das Glühbirnensymbol für Schnellaktionen ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der Schnellaktionen auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
+
+## <a name="editorconfig"></a>EditorConfig
 
 Codeformateinstellungen für .NET können auch mithilfe einer [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei verwaltet werden. In diesem Fall haben die Einstellungen in der EDITORCONFIG-Datei Vorrang gegenüber den im Dialogfeld **Optionen** ausgewählten Optionen. Sie können eine EDITORCONFIG-Datei verwenden, um ein Codierungsformat für Ihr gesamtes Repository oder Ihr gesamtes Projekt zu erzwingen oder zu konfigurieren.
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
-[Schnelle Aktionen](../ide/quick-actions.md)  
-[Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Schnelle Aktionen](../ide/quick-actions.md)
+- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

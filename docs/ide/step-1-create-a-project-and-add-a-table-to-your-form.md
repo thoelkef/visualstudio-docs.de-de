@@ -11,19 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3982370667ba76f15c5fc0bbcd52e5445d7bc9a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c9f8d42122f5efca57687677b5d10884ec08066
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Projekt zu erstellen und dem Formular eine Tabelle hinzuzufügen. Die Tabelle dient dazu, die Symbole in einem regelmäßigen 4x4-Raster auszurichten. Sie legen außerdem einige Eigenschaften fest, um die Darstellung des Spielfelds zu verbessern.  
 
-### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>So erstellen Sie ein Projekt und fügen dem Formular eine Tabelle hinzu  
-
-1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
-
+## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>So erstellen Sie ein Projekt und fügen dem Formular eine Tabelle hinzu  
+  
+1.  Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.  
+  
 2.  Wenn Sie nicht Visual Studio Express verwenden, müssen Sie zuerst eine Programmiersprache auswählen. Wählen Sie in der Liste **Installierte Vorlagen** entweder **Visual C#** oder **Visual Basic** aus.  
 
 3.  Wählen Sie in der Liste der Projektvorlagen die Vorlage **Windows Forms-Anwendung** aus, nennen Sie das Projekt **MatchingGame**, und wählen Sie anschließend die Schaltfläche **OK** aus.  
@@ -36,13 +36,13 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 5.  Zeigen Sie die Toolbox an, indem Sie die Registerkarte **Toolbox** auf der linken Seite der IDE auswählen.  
 
-6.  Ziehen Sie ein `TableLayoutPanel`-Steuerelement aus der Kategorie **Container** der Toolbox, und legen Sie dann die folgenden Eigenschaften dafür fest.  
+6.  Ziehen Sie ein <xref:System.Windows.Forms.TableLayoutPanel>-Steuerelement aus der Kategorie **Container** der Toolbox, und legen Sie dann die folgenden Eigenschaften dafür fest.  
 
     1.  Legen Sie die Eigenschaft **BackColor** (Hintergrundfarbe) auf **CornflowerBlue** (CornflowerBlue) fest. Dazu öffnen Sie mit dem Dropdownpfeil neben der Eigenschaft **BackColor** im Fenster **Eigenschaften** das Dialogfeld **BackColor**.  Wählen Sie anschließend die Registerkarte **Web** im Dialogfeld **BackColor**, um eine Liste verfügbarer Farbnamen anzuzeigen.  
 
         > [!NOTE]
-        >  Die Farben sind nicht alphabetisch geordnet, und CornflowerBlue steht fast am Ende der Liste.  
-
+        >  Die Farben sind nicht alphabetisch geordnet, und **CornflowerBlue** steht fast am Ende der Liste.  
+  
     2.  Legen Sie die Eigenschaft **Dock** (Andocken) auf **Fill** (Ausfüllen) fest, indem Sie neben der Eigenschaft die Dropdownschaltfläche und dann die große mittlere Schaltfläche wählen. Dadurch wird die Tabelle so vergrößert, dass sie das gesamte Formular ausfüllt.  
 
     3.  Legen Sie die Eigenschaft **CellBorderStyle** (Stil des Zellenrahmens) auf **Inset** (Abgesenkt) fest. Dadurch werden die Zellen auf dem Spielfeld mit Rahmen angezeigt.  
@@ -56,9 +56,9 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
      TableLayoutPanel sollte nun ein 4x4-Raster sein, mit sechzehn quadratischen Zellen gleicher Größe. In diesen Zeilen und Spalten werden später die Symbolbilder angezeigt.  
 
 7.  Stellen Sie sicher, dass TableLayoutPanel im Formular-Editor ausgewählt ist. **tableLayoutPanel1** sollte dann oben im Fenster **Eigenschaften** angezeigt werden. Wenn das TableLayoutPanel-Steuerelement nicht ausgewählt ist, wählen Sie es auf dem Formular oder im Dropdown-Steuerelement oben in **Eigenschaften** aus.  
-
-     Während das TableLayoutPanel-Steuerelement ausgewählt ist, öffnen Sie die Toolbox, und fügen Sie ein **Label**-Steuerelement (aus der Kategorie **Allgemeine Steuerelemente**) in der oberen linken TableLayoutPanel-Zelle hinzu. Das `Label`-Steuerelement sollte jetzt in der IDE ausgewählt sein. Legen Sie die folgenden Eigenschaften für das Bezeichnungsfeld fest:  
-
+  
+     Während das TableLayoutPanel-Steuerelement ausgewählt ist, öffnen Sie die Toolbox, und fügen Sie ein <xref:System.Windows.Forms.Label>-Steuerelement (aus der Kategorie **Allgemeine Steuerelemente**) in der oberen linken TableLayoutPanel-Zelle hinzu. Das Label-Steuerelement sollte jetzt in der IDE ausgewählt sein. Legen Sie die folgenden Eigenschaften für das Bezeichnungsfeld fest:  
+  
     1.  Stellen Sie sicher, dass die Eigenschaft **BackColor** des Bezeichnungsfelds auf **CornflowerBlue** festgelegt ist.  
 
     2.  Legen Sie die **AutoSize**-Eigenschaft auf **False** fest.  
@@ -66,30 +66,30 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
     3.  Legen Sie die Eigenschaft **Dock** auf **Fill** fest.  
 
     4.  Legen Sie die Eigenschaft **TextAlign** (Textausrichtung) auf **MiddleCenter** (Zellenmitte) fest, indem Sie neben der Eigenschaft erst die Dropdownschaltfläche und dann die mittlere Schaltfläche wählen. Dadurch wird sichergestellt, dass das Symbol in der Mitte der Zelle angezeigt wird  
-
-    5.  Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen (…) wird angezeigt.  
-
+  
+    5.  Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen (**…**) wird angezeigt.  
+  
     6.  Wählen Sie die Schaltfläche mit dem Auslassungszeichen aus, und legen Sie **Font** auf **Webdings**, **Font Style** (Schriftschnitt) auf **Bold** (Fett) und **Size** auf **72** fest.  
 
     7.  Legen Sie die Eigenschaft **Text** der Bezeichnung auf den Buchstaben **c** fest.  
-
+  
          Die linke obere Zelle im TableLayoutPanel sollte jetzt einen großen schwarzen Kasten enthalten, der mittig in einem blauen Hintergrund zentriert ist.  
-
+  
         > [!NOTE]
         >  Die Schriftart Webdings ist eine Symbolschriftart, die mit dem Betriebssystem Windows geliefert wird. Im Vergleichsspiel muss der Spieler Symbolpaare finden, und deshalb zeigen Sie die entsprechenden Symbole mithilfe dieser Schriftart an. Probieren Sie anstelle von **c** für die Eigenschaft **Text** andere Buchstaben aus, um herauszufinden, welche Symbole angezeigt werden. Ein Ausrufezeichen ist eine Spinne, ein großes N ist ein Auge, und ein Komma ist eine Chilischote.  
-
-8.  Wählen Sie das Bezeichnungsfeld-Steuerelement aus und kopieren Sie es in die nächste Zelle im TableLayoutPanel. (Wählen Sie die Tasten STRG+C oder auf der Menüleiste **Bearbeiten**, **Kopieren** aus.) Fügen Sie das Steuerelement anschließend ein. (Wählen Sie die Tasten STRG+V oder auf der Menüleiste **Bearbeiten**, **Einfügen** aus.) Eine Kopie des ersten Bezeichnungsfelds wird in der zweiten Zelle im TableLayoutPanel angezeigt. Fügen Sie das Steuerelement erneut ein. In der dritten Zelle wird eine weitere Bezeichnung angezeigt. Fahren Sie mit dem Einfügen der `Label`-Steuerelemente fort, bis alle Zellen ausgefüllt sind.  
-
+  
+8.  Wählen Sie das Label-Steuerelement aus und kopieren Sie es in die nächste Zelle im TableLayoutPanel. (Drücken Sie **STRG**+**C**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Kopieren**.) Fügen Sie das Steuerelement anschließend ein. (Drücken Sie **STRG**+**V**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Einfügen**.) Eine Kopie der ersten Bezeichnung wird in der zweiten Zelle im TableLayoutPanel angezeigt. Fügen Sie das Steuerelement erneut ein. In der dritten Zelle wird eine weitere Bezeichnung angezeigt. Fahren Sie mit dem Einfügen der Label-Steuerelemente fort, bis alle Zellen ausgefüllt sind.  
+  
     > [!NOTE]
-    >  Wenn Sie zu viele Einfügungen vornehmen, fügt die IDE dem TableLayoutPanel eine neue Zeile für das neue Bezeichnungsfeld-Steuerelement hinzu. Sie können dies rückgängig machen. Um die neue Zelle zu entfernen, wählen Sie die Tasten STRG+Z oder auf der Menüleiste **Bearbeiten**, **Rückgängig** aus.  
-
+    >  Wenn Sie zu viele Einfügungen vornehmen, fügt die IDE dem TableLayoutPanel eine neue Zeile für das neue Label-Steuerelement hinzu. Sie können dies rückgängig machen. Drücken Sie die Tasten **STRG**+**Z**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Rückgängig**.  
+  
      Als Nächstes wird das Formular angelegt. Es sollte aussehen wie die folgende Abbildung.  
 
      ![Anfängliches Formular des Memoryspiels](../ide/media/express_tut4step1.png "Express_Tutorial4Schritt1")  
 Anfangszustand des Formulars für das Vergleichsspiel  
 
-### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
-
--   Informationen darüber, wie Sie zum nächsten Schritt des Tutorials gelangen, finden Sie unter [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
-
--   Wie Sie zum Übersichtsthema zurückkehren, erfahren Sie unter [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).
+## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
+  
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+  
+-   Unter [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md) können Sie zur Übersicht zurückkehren.

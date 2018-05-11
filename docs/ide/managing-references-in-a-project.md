@@ -1,6 +1,7 @@
 ---
 title: Verwalten von Verweisen in einem Projekt
 ms.date: 04/11/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -22,11 +23,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -54,7 +55,7 @@ Sie können einen Verweis zu folgenden Komponenten- und Diensttypen hinzufügen:
 
 Projekte von Universellen Windows-Plattform (UWP), können Verweise auf andere UWP-Projekte in der Projektmappe oder auf Windows 8.1-Projekte oder Binärdateien erstellen. Die Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr unterstützt werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](/windows/uwp/porting/w8x-to-uwp-root)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).
 
-Informationen zur Neuausrichtung von Windows 8.1-Projekten auf Windows 10 finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Informationen zur Neuausrichtung von Windows 8.1-Projekten auf Windows 10 finden Sie unter [Übertragung, Migration und Upgrade von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Verweise auf Erweiterungs-SDKs
 
@@ -89,9 +90,9 @@ Wenn Sie im Projekt einen Verweis auf eine Assembly erstellen, sucht Visual Stud
 - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie finden diese Assemblys auf der Registerkarte **Projekte** .)
 
 > [!NOTE]
-> - Alle Projekte enthalten einen impliziten Verweis auf "mscorlib".
+> - Alle Projekte enthalten einen impliziten Verweis auf **mscorlib**.
 > - Alle Projekte enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.
-> - Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.
+> - Visual Basic-Projekte enthalten einen impliziten Verweis auf <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit
 
@@ -111,7 +112,7 @@ Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehr
 
 Verweise zwischen Projekten sind Verweise auf Projekte mit Assemblys, die Sie im Dialogfeld **Projekt** erstellen. Visual Studio kann anhand eines Pfads zum Projekt nach einer Assembly suchen.
 
-Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im BIN-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: „Fehler: Die Abhängigkeit ‚Datei‘ in Projekt ‚Projekt‘ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis ‚Datei‘ überschreiben würde.“ Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md) und [Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md).
+Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im *bin*-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: „Fehler: Die Abhängigkeit ‚Datei‘ in Projekt ‚Projekt‘ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis ‚Datei‘ überschreiben würde.“ Weitere Informationen finden Sie unter [Troubleshooting Broken References (Problembehebung bei Verweisfehlern)](../ide/troubleshooting-broken-references.md) und [How to: Create and Remove Project Dependencies (Vorgehensweise: Erstellen und Löschen von Projektabhängigkeiten)](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Anstelle eines Projekt-zu-Projekt-Verweises wird ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.

@@ -1,24 +1,25 @@
 ---
 title: Django-Webprojektvorlage für Python
 description: Übersicht der Visual Studio-Vorlagen für mithilfe des Django-Frameworks in Python geschriebene Webanwendungen.
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
+author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
-[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält eine Projektvorlage zum Einrichten der Struktur einer Django-basierten Webanwendung. Um die Vorlage in Visual Studio zu verwenden, wählen Sie **Datei > Neu > Projekt**, suchen Sie nach „Django“, und wählen Sie die Vorlage **Django-Webprojekt** aus. Das resultierende Projekt umfasst Codebausteine sowie eine SQLite-Standarddatenbank. Die Vorlage **Leeres Django-Webprojekt** ist ähnlich, enthält jedoch nicht die Datenbank.
+[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält mehrere Projektvorlagen zum Einrichten der Struktur einer Django-basierten Webanwendung. Um eine Vorlage in Visual Studio zu verwenden, wählen Sie **Datei** > **Neu** > **Projekt** aus, suchen Sie nach „Django“, und wählen Sie zwischen den Vorlagen „Leeres Django-Webprojekt“, „Django-Webprojekt“ und „Fragt ein Django-Webprojekt ab“. Eine exemplarische Vorgehensweise für alle Vorlagen finden Sie im [Django-Tutorial](learn-django-in-visual-studio-step-01-project-and-solution.md).
 
 Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
@@ -54,10 +55,14 @@ Die Django-Verwaltungskonsole bietet Zugriff über verschiedene Befehle im Menü
 
     ![Konsole](media/template-django-console-sync-db.png)
 
-- **Statische erfassen**: Führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer `settings.py` zu kopieren. Hinweis: Bei der [Veröffentlichung in Microsoft Azure](python-web-application-project-templates.md#publishing-to-azure-app-service) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
+- **Statische erfassen**: Führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer `settings.py` zu kopieren. Bei der [Veröffentlichung in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
 
     ![Konsole](media/template-django-console-collect-static.png)
 
 - **Überprüfen**: Führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer `settings.py` angegeben wurden:
 
     ![Konsole](media/template-django-console-validate.png)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Django-Tutorial](learn-django-in-visual-studio-step-01-project-and-solution.md)

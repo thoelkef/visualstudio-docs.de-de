@@ -1,6 +1,6 @@
 ---
-title: 'Arbeiten mit Python, Schritt 1: Erstellen eines Projekts'
-description: Dies ist Schritt 1 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem das gesamte Tutorial zusammengefasst wird, die Voraussetzungen beschrieben werden und das Verfahren zum Erstellen eines neuen Python-Projekts Schritt für Schritt erläutert wird.
+title: 'Tutorial: Arbeiten mit Python, Schritt 1: Erstellen eines Projekts'
+description: Dies ist die Übersicht und Schritt 1 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, einschließlich Voraussetzungen und das Erstellen eines neuen Python-Projekts.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio bietet erstklassige Unterstützung für Python. In diesem Tutorial
 - [Step 5: Installing packages and managing Python environments (Schritt 5: Installieren von Paketen und Verwalten von Python-Umgebungen)](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Step 6: Working with Git (Schritt 6: Arbeiten mit Git)](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
-
-- Visual Studio 2017 mit installierter Python-Workload. Anweisungen finden Sie in [Schritt 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Schritt 1: Erstellen eines neuen Python-Projekts
 
@@ -69,7 +67,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
 
     Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf einen beliebigen Knoten oder ein beliebiges Element, um auf ein Menü der entsprechenden Befehle zuzugreifen. Beispielsweise können Sie über den Befehl **Umbenennen** den Namen jedes beliebigen Knotens oder Elements umbenennen, einschließlich des Projekts und der Projektmappe.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
 > [Writing and running code (Schreiben und Ausführen von Code)](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

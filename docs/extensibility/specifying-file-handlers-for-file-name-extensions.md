@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Registrieren Sie andere Anwendungen, die eine bestimmte Dateierweiterung zu öffnen, indem die HKEY_CLASSES_ROOT mit Versionsangabe versionsabhängige Programm-IDs als Werte hinzugefügt werden\\*\<Erweiterung >*\OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateierweiterung verknüpft sind. Die aufgelisteten ProgIDs zugeordneten Anwendungen angezeigt werden, der **Öffnen mit *** Produktname* Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.  
+ Registrieren Sie andere Anwendungen, die eine bestimmte Dateierweiterung zu öffnen, indem die HKEY_CLASSES_ROOT mit Versionsangabe versionsabhängige Programm-IDs als Werte hinzugefügt werden\\*\<Erweiterung >* \OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateierweiterung verknüpft sind. Die aufgelisteten ProgIDs zugeordneten Anwendungen angezeigt werden, der **Öffnen mit *** Produktname* Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.  
   
 > [!NOTE]
 >  Die `OpenWithProgids` Schlüssel wird nur unter Windows XP unterstützt. Da andere Betriebssysteme auf diesen Schlüssel möchten ignorieren, nicht verwenden Sie sie als einzige Registrierung für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP.  

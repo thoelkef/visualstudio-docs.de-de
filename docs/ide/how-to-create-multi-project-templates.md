@@ -1,9 +1,8 @@
 ---
-title: Erstellen von Vorlagen mit mehreren Projekten für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Erstellen von Vorlagen mit mehreren Projekten für Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b3902dd2b6f4dfac72d61d2c4d81937dcbbfdd07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -170,8 +169,8 @@ In diesem Beispiel wird das `SolutionFolder`-Element verwendet, um die Projekte 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
-[Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)  
-[SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
-[ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
+- [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

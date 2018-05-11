@@ -9,20 +9,18 @@ description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 
-Als Abonnementadministrator haben Sie die Möglichkeit, Änderungen an den Abonnements vorzunehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte. 
+Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Vornehmen von Änderungen an Abonnenteninformationen
 Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben und Informationen zu aktualisieren. 
-> [!NOTE]
-> Durch das Bearbeiten der E-Mail-Adresse eines Abonnenten werden alle vorhandenen Vorteile zurücksetzt.
 
 Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. Sie können ebenfalls auf die Zeile des Abonnenten im Raster doppelklicken, um das Bearbeitungsfenster zu öffnen.
 

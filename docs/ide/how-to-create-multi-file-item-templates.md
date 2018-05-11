@@ -1,9 +1,8 @@
 ---
-title: Erstellen von Elementvorlagen mit mehreren Dateien für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Erstellen von Elementvorlagen mit mehreren Dateien für Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
 
@@ -96,7 +95,7 @@ Das folgende Beispiel zeigt eine Windows Forms-Vorlage. Wenn ein Element basiere
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
-[Vorlagenparameter](../ide/template-parameters.md)  
-[Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [Vorlagenparameter](../ide/template-parameters.md)
+- [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)

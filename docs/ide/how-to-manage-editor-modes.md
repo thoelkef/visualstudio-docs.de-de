@@ -1,9 +1,8 @@
 ---
-title: Vollbildmodus und Modus für virtuelle Leerzeichen in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Vollbildmodus und Modus für virtuelle Leerzeichen in Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -27,44 +26,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e95940eaad599d149e504db9c1d48c5c011409e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-editor-modes"></a>Vorgehensweise: Verwalten von Editormodi
-Sie können den Visual Studio-Code-Editor in verschiedenen Anzeigemodi verwenden.  
-  
+
+Sie können den Visual Studio-Code-Editor in verschiedenen Anzeigemodi verwenden.
+
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in diesem Artikel beschriebenen. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
-  
-## <a name="enable-full-screen-mode"></a>Aktivieren des Vollbildmodus  
-Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenster anzeigen, indem Sie den **Vollbildmodus** aktivieren.  
-  
-#### <a name="to-enable-full-screen-mode"></a>So können Sie den Vollbildmodus aktivieren  
-  
--   Drücken Sie auf **ALT**+**UMSCHALT**+**EINGABE**, um den **Vollbildmodus** zu starten oder zu beenden.  
-  
-     – oder –  
-  
--   Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.  
-  
-## <a name="enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
-Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezeile eingefügt. Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Markup einzufügen.  
-  
-#### <a name="to-enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
-  
+
+## <a name="enable-full-screen-mode"></a>Aktivieren des Vollbildmodus
+
+Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenster anzeigen, indem Sie den **Vollbildmodus** aktivieren.
+
+-   Drücken Sie auf **ALT**+**UMSCHALT**+**EINGABE**, um den **Vollbildmodus** zu starten oder zu beenden.
+
+     – oder –
+
+-   Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.
+
+## <a name="enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen
+
+Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezeile eingefügt. Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Markup einzufügen.
+
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
 
 2.  Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. Klicken Sie auf den Knoten **Basic** > **Text-Editor**, um beispielsweise nur für Visual Basic Zeilennummern zu aktivieren.
-  
-3.  Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).  
-  
+
+3.  Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).
+
     > [!NOTE]
-    >  **Virtuelle Leerzeichen** sind im Modus **Spaltenauswahl** aktiviert. Wenn der Modus für **virtuelle Leerzeichen** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten verschoben.  
-  
+    > **Virtuelle Leerzeichen** sind im Modus **Spaltenauswahl** aktiviert. Wenn der Modus für **virtuelle Leerzeichen** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten verschoben.
+
 ## <a name="see-also"></a>Siehe auch
-[Anpassen des Editors](../ide/customizing-the-editor.md)   
-[Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)   
-[Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+
+- [Anpassen des Editors](../ide/customizing-the-editor.md)
+- [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
+- [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

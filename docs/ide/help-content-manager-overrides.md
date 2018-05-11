@@ -1,9 +1,8 @@
 ---
-title: Überschreibungen durch den Hilfeinhalts-Manager | Microsoft-Dokumentation
-ms.custom: ''
+title: Überschreibungen durch den Hilfeinhalts-Manager
 ms.date: 11/01/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -11,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="help-content-manager-overrides"></a>Überschreibungen durch den Hilfeinhalts-Manager
+
 Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Visual Studio-IDE ändern. Einige Optionen werden durch Erstellen einer [PKGDEF](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/)-Datei angegeben, um verschiedene Registrierungsschlüsselwerte festzulegen. Andere werden direkt in der Registrierung festgelegt.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Steuern des Help Viewer-Verhaltens mithilfe der PKGDEF-Datei
@@ -31,8 +31,9 @@ Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Vi
 4. Führen Sie `devenv /updateconfiguration` in einer Developer-Eingabeaufforderung aus.
 
 ### <a name="registry-key-values"></a>Registrierungsschlüsselwerte
-|Registrierungsschlüsselwert|Typ|Daten|description|  
-|------------------|----|----|-----------|  
+
+|Registrierungsschlüsselwert|Typ|Daten|description|
+|------------------|----|----|-----------|
 |NewContentAndUpdateService|Zeichenfolge|\<HTTP-URL für den Dienstendpunkt\>|Definiert einen eindeutigen Dienstendpunkt|
 |UseOnlineHelp|dword|`0`, um lokale Hilfe anzugeben, `1`, um Onlinehilfe anzugeben|Definiert die Online-oder Offlinehilfe (Standard)|
 |OnlineBaseUrl|Zeichenfolge|\<HTTP-URL für den Dienstendpunkt\>|Definiert einen eindeutigen F1-Endpunkt|
@@ -41,6 +42,7 @@ Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Vi
 |DisableFirstRunHelpSelection|dword|`0` zum Aktivieren oder `1` zum Deaktivieren von Hilfefunktionen, die beim ersten Start von Visual Studio konfiguriert werden|Deaktiviert die Installation von Inhalt beim ersten Start von Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Beispielinhalt der PKGDEF-Datei
+
 ```
 [$RootKey$\Help]
 “NewContentAndUpdateService”=”https://some.service.endpoint”
@@ -51,16 +53,18 @@ Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Vi
 “DisableFirstRunHelpSelection”=dword:00000001
 ```
 
-## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>Verwenden des Registrierungs-Editors zum Ändern des Help Viewer-Verhaltens
-Die folgenden zwei Verhalten können durch Festlegen von Registrierungsschlüsselwerten im Registrierungs-Editor gesteuert werden.  
-  
-|Aufgabe|-Registrierungsschlüssel|Wert|Daten|  
+## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Verwenden des Registrierungs-Editors zum Ändern des Help Viewer-Verhaltens
+
+Die folgenden zwei Verhalten können durch Festlegen von Registrierungsschlüsselwerten im Registrierungs-Editor gesteuert werden.
+
+|Aufgabe|-Registrierungsschlüssel|Wert|Daten|
 |----------|-----|------|----|
 |BITS-Auftragspriorität überschreiben|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3 (auf einem 64-Bit-Computer)|BITSPriority|**Vordergrund**, **hoch**, **regulär** oder **niedrig**|
 |Auf den lokalen Inhaltsspeicher auf der Netzwerkfreigabe zeigen|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
-  
+
 ## <a name="see-also"></a>Siehe auch
-[Administratorleitfaden für Help Viewer](../ide/help-viewer-administrator-guide.md)  
-[Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[Ändern von Isolated Shell mithilfe der PKGDEF-Datei](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+
+- [Administratorleitfaden für Help Viewer](../ide/help-viewer-administrator-guide.md)
+- [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [Ändern von Isolated Shell mithilfe der PKGDEF-Datei](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

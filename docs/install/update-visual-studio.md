@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren von Visual Studio 2017
 description: Erfahren Sie, wie Sie Visual Studio auf das neueste Release aktualisieren.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualisieren Sie Visual Studio 2017 auf die neueste Version
 
@@ -53,6 +53,9 @@ Wenn ein Update vorhanden ist, wird ein entsprechendes Benachrichtigungsflag in 
 
      Das Update wird fortgesetzt. Wenn es fertig gestellt ist, wird Visual Studio neu startet.
 
+     > [!NOTE]
+     > Wenn Sie Visual Studio im Administrator-Modus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.    
+
 ### <a name="use-the-ide"></a>Verwenden der IDE
 
 Sie können nach einem Update suchen und das Update dann von der Menüleiste in Visual Studio aus installieren.
@@ -66,6 +69,9 @@ Sie können nach einem Update suchen und das Update dann von der Menüleiste in 
 3. Wenn das **Update**-Dialogfeld geöffnet wird, wählen Sie **Jetzt aktualisieren**.
 
    Das Update wird wie im vorherigen Abschnitt beschrieben durchgeführt, und nachdem das Update erfolgreich abgeschlossen wurde, wird Visual Studio neu gestartet.
+
+   > [!NOTE]
+   > Wenn Sie Visual Studio im Administrator-Modus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.  
 
 ### <a name="use-the-visual-studio-installer"></a>Verwenden des Visual Studio-Installers
 

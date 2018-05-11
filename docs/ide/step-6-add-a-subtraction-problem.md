@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e73d32a3917003fe4c425406faadbc6e303f1eac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Schritt 6: Hinzufügen einer Subtraktionsaufgabe
 Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu und erfahren, wie die folgenden Aufgaben ausgeführt werden:
@@ -26,9 +26,9 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
 
 -   Aktualisieren Sie die Methode, mit der die Antworten überprüft werden, damit auch die neue Subtraktionsaufgabe überprüft wird.
 
--   Aktualisieren Sie den Tick-Ereignishandler des Zeitgebers, damit der Ereignishandler die richtige Antwort ausgibt, wenn die Zeit abgelaufen ist.
+-   Aktualisieren Sie den <xref:System.Windows.Forms.Timer.Tick>-Ereignishandler des Zeitgebers, damit der Ereignishandler die richtige Antwort ausgibt, wenn die Zeit abgelaufen ist.
 
-### <a name="to-add-a-subtraction-problem"></a>So fügen Sie eine Subtraktionsaufgabe hinzu
+## <a name="to-add-a-subtraction-problem"></a>So fügen Sie eine Subtraktionsaufgabe hinzu
 
 1.  Fügen Sie dem Formular zwischen den Ganzzahlvariablen für die Additionsaufgabe und dem Zeitgeber zwei Ganzzahlvariablen für die Subtraktionsaufgabe hinzu. Der Code sollte wie folgt aussehen:
 
@@ -44,18 +44,19 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Um Negativantworten für die Subtraktionsaufgabe zu verhindern, wird in diesem Code die `Next()`-Methode der `Random`-Klasse geringfügig anders verwendet als in der Additionsaufgabe. Wenn Sie der `Next()`-Methode zwei Werte zuweisen, wird eine Zufallszahl ausgewählt, die größer oder gleich dem ersten Wert und kleiner als der zweite Wert ist. Mit dem folgenden Code wird eine Zufallszahl von 1 bis 100 ausgewählt, die in der Minuend-Variablen gespeichert wird.
+     Um Negativantworten für die Subtraktionsaufgabe zu verhindern, wird in diesem Code die <xref:System.Random.Next>-Methode der <xref:System.Random>-Klasse geringfügig anders verwendet als in der Additionsaufgabe. Wenn Sie der `Next()`-Methode zwei Werte zuweisen, wird eine Zufallszahl ausgewählt, die größer oder gleich dem ersten Wert und kleiner als der zweite Wert ist. Mit dem folgenden Code wird eine Zufallszahl von 1 bis 100 ausgewählt, die in der Minuend-Variablen gespeichert wird.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Sie können die `Next()`-Methode der `Random`-Klasse, die zuvor in diesem Lernprogramm "randomizer" genannt wurde, auf unterschiedliche Weise aufrufen. Methoden, für die es mehrere Arten des Aufrufs gibt, werden als "überladene" Methoden bezeichnet. Sie können mithilfe von IntelliSense untersucht werden. Werfen Sie einen weiteren Blick auf die QuickInfo für die `Next()`-Methode im IntelliSense-Fenster.
+     Sie können die `Next()`-Methode der Random-Klasse, die zuvor in diesem Tutorial „randomizer“ genannt wurde, auf unterschiedliche Weise aufrufen. Methoden, für die es mehrere Arten des Aufrufs gibt, werden als "überladene" Methoden bezeichnet. Sie können mithilfe von IntelliSense untersucht werden. Werfen Sie einen weiteren Blick auf die QuickInfo für die `Next()`-Methode im IntelliSense-Fenster.
 
-     ![QuickInfo im IntelliSense-Fenster](../ide/media/express_overloads.png "Express_Overloads") QuickInfo im IntelliSense-Fenster
+     ![QuickInfo im IntelliSense-Fenster](../ide/media/express_overloads.png "Express_Overloads")
+QuickInfo im **IntelliSense**-Fenster
 
-     Die QuickInfo zeigt **(+ 2 Überladung(en))** an, was bedeutet, dass Sie die `Next()`-Methode auf zwei weitere Arten aufrufen können. Überladungen enthalten unterschiedliche Anzahl und Typen von Argumenten, sodass sie alle mit leichten Unterschieden funktionieren. Beispielsweise könnte eine Methode ein Argument mit nur einer ganzen Zahl aufweisen, während eine der entsprechenden Überladungen eine Ganzzahl und eine Zeichenfolge enthalten kann. Wählen Sie die richtige Überladung je nach gewünschter Funktionen aus. Wenn Sie der `StartTheQuiz()`-Methode den Code hinzufügen, werden weitere Informationen im IntelliSense-Fenster angezeigt, sobald Sie `randomizer.Next(` eingeben. Um die Überladungen zu durchlaufen, wählen Sie die Nach-oben-Schaltfläche und die Nach-unten-Schaltfläche aus, wie in der folgenden Abbildung gezeigt:
+     Die QuickInfo zeigt **(+ 2 Überladung(en))** an, was bedeutet, dass Sie die `Next()`-Methode auf zwei weitere Arten aufrufen können. Überladungen enthalten unterschiedliche Anzahl und Typen von Argumenten, sodass sie alle mit leichten Unterschieden funktionieren. Beispielsweise könnte eine Methode ein Argument mit nur einer ganzen Zahl aufweisen, während eine der entsprechenden Überladungen eine Ganzzahl und eine Zeichenfolge enthalten kann. Wählen Sie die richtige Überladung je nach gewünschter Funktionen aus. Wenn Sie der `StartTheQuiz()`-Methode den Code hinzufügen, werden weitere Informationen im IntelliSense-Fenster angezeigt, sobald Sie `randomizer.Next(` eingeben. Um die Überladungen zu durchlaufen, klicken Sie wie in der folgenden Abbildung gezeigt auf die Schaltflächen mit dem **Pfeil nach oben** und dem **Pfeil nach unten**:
 
-     ![Überladung für Next&#40;&#41;-Methode in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Überladung für Next()-Methode in IntelliSense
+     ![Überladung für Next&#40;&#41;-Methode in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Überladung für **Next()**-Methode in **IntelliSense**
 
      In diesem Fall wählen Sie die letzte Überladung aus, da Sie Mindest- und Höchstwerte angeben können.
 
@@ -75,10 +76,11 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
 
      Das Programm enthält eine Subtraktionsaufgabe, wie in der folgenden Abbildung veranschaulicht:
 
-     ![Mathetest mit Subtraktion](../ide/media/express_addsubtract.png "Express_AddSubtract") Mathetest mit Subtraktion
+     ![Mathetest mit Subtraktionsaufgabe](../ide/media/express_addsubtract.png "Express_AddSubtract")
+**Mathetest** mit Subtraktionsaufgabe
 
-### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
+## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).
 
 -   Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

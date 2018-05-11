@@ -1,7 +1,7 @@
 ---
-title: Erstellen von Projektmappen und Projekten | Microsoft-Dokumentation
-ms.custom: ''
+title: Erstellen von Projektmappen und Projekten in Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -134,7 +134,7 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 
 ## <a name="see-also"></a>Siehe auch
 
-[Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)  
-[Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)  
-[Visual Studio-Beispiele](../ide/visual-studio-samples.md)  
-[Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)
+- [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
+- [Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)
+- [Visual Studio-Beispiele](../ide/visual-studio-samples.md)
+- [Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)

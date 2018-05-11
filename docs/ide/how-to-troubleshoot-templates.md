@@ -1,19 +1,19 @@
 ---
 title: Problembehandlung beim Laden von Visual Studio-Projektvorlagen und -Elementvorlagen
-ms.custom: ''
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7e952f8eb445787a2a574ae3431ba6ad8728248
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Vorgehensweise: Problembehandlung bei Vorlagen
 
@@ -52,7 +52,7 @@ Sie können die Diagnoseprotokollierung für die Ermittlung von Vorlagen aktivie
 
 ## <a name="see-also"></a>Siehe auch
 
-[Troubleshooting template discovery (Extensibility) (Problembehandlung bei der Ermittlung von Vorlagen (Erweiterbarkeit))](../extensibility/troubleshooting-template-discovery.md)  
-[Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)  
-[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Troubleshooting template discovery (Extensibility) (Problembehandlung bei der Ermittlung von Vorlagen (Erweiterbarkeit))](../extensibility/troubleshooting-template-discovery.md)
+- [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a033d8b2709a6eaf871758d1bd46a3ad34f7a08f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
@@ -59,7 +59,7 @@ Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](ins
 
 **Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und sogar eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei > Neu > Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
 
-Visual Studio bietet auch unterschiedliche *Datei- und Elementvorlagen* zum schnellen Erstellen einer Python-Klasse, eines Python-Pakets, eines Python-Komponententest, von web.config-Dateien usw. Wenn Sie ein Python-Projekt geöffnet haben, können Sie über den Menübefehl **Projekt > Neues Element hinzufügen...** auf Elementvorlagen zugreifen.
+Visual Studio bietet auch unterschiedliche *Datei- und Elementvorlagen* zum schnellen Erstellen einer Python-Klasse, eines Python-Pakets, eines Python-Komponententest, von `web.config`-Dateien usw. Wenn Sie ein Python-Projekt geöffnet haben, können Sie über den Menübefehl **Projekt > Neues Element hinzufügen...** auf Elementvorlagen zugreifen. Weitere Informationen finden Sie in der [Referenz für Python-Elementvorlagen](python-item-templates.md).
 
 Durch das Verwenden von Vorlagen sparen Sie deutlich Zeit, wenn Sie mit einem Projekt beginnen oder eine Datei erstellen. Zudem können Sie durch Vorlagen neue App-Typen und Codestrukturen kennenlernen. Es kann von Vorteil sein, sich etwas Zeit zu nehmen und Projekte und Elemente mit verschiedenen Vorlagen zu erstellen. So können Sie sich mit den zur Verfügung stehenden Vorlagen vertraut machen.
 
@@ -74,6 +74,6 @@ Durch das Verwenden von Vorlagen sparen Sie deutlich Zeit, wenn Sie mit einem Pr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)
+- [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)
 - [Installationsspeicherorte](installing-python-support-in-visual-studio.md#install-locations)

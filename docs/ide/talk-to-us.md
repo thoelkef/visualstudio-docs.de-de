@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>Sprechen Sie mit uns
 Wir würden gern Ihre Ideen zur Verbesserung unserer Produkte und unserer Dokumentation erfahren. Wir können nicht immer persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person oder das richtige Team weitergeleitet wird.  
@@ -33,9 +33,9 @@ Für Verbesserungsvorschläge sind wir immer offen! Wählen Sie die Option **Hil
 Vorabversionen von Visual Studio weisen das Menüelement **Dieses Produkt bewerten** auf, über das Sie uns Feedback über die Qualität des Builds, den Sie ausführen, senden können. In der endgültigen Produktversion ist diese Option nicht verfügbar.
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Kontakt mit dem Microsoft-Support
-Visual Studio-Supportinformationen finden Sie auf der Seite [Support Lifecycle & Wartung](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs).
+Visual Studio-Supportinformationen finden Sie auf der Seite [Support lifecycle & servicing (Supportlebenszyklus und Wartung)](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs).
 
-Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft Support](http://go.microsoft.com/fwlink/?LinkID=99019).
+Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?LinkID=99019).
 
 > [!NOTE]
 > Die Unterstützung außerhalb der USA und Kanada kann variieren. Eine Liste internationaler Kontakte finden Sie unter [Microsoft Worldwide Sites](http://www.microsoft.com/worldwide/).
@@ -47,10 +47,10 @@ Wenn das Produkt auf einem neuen Computer oder einem Gerät installiert geliefer
 Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und Vertragsbestimmungen. Preise und allgemeine Bedingungen können jederzeit ohne vorherige Ankündigung geändert werden.
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Ich möchte mich an der Entwicklercommunity beteiligen
-Wenn Sie die Fragen und Antworten mit anderen Entwicklern gemeinsam nutzen möchten, verwenden Sie die [Visual Studio Developer Community](https://developercommunity.visualstudio.com/index.html)-Website, die [MSDN-Foren](http://social.msdn.microsoft.com/Forums/home) oder [StackOverflow](http://stackoverflow.com/). Sie können auf der Website [Codebeispiele für Entwickler](http://code.msdn.microsoft.com/) auch Code anderer Entwickler einsehen und eigene Beispiele teilen.
+Wenn Sie Ihre Fragen und Antworten für andere Entwickler freigeben möchten, verwenden Sie die Website [Visual Studio Developer Community (Visual Studio-Entwicklercommunity)](https://developercommunity.visualstudio.com/index.html), die [MSDN-Foren](http://social.msdn.microsoft.com/Forums/home) oder [StackOverflow](http://stackoverflow.com/). Sie können auf der Website [Codebeispiele für Entwickler](http://code.msdn.microsoft.com/) auch Code anderer Entwickler einsehen und eigene Beispiele teilen.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Ich möchte zur Verbesserung der Visual Studio-Dokumentation beitragen
 Verwenden Sie die Feedbackschaltfläche **War diese Seite hilfreich?** am unteren Rand der Seite. Sie finden diese Schaltfläche auf allen unseren Dokumentationsseiten. Sie können auch Feedback zu Visual Studio-Seiten unter [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) hinzufügen, indem Sie ebenfalls am unteren Rand der Seite auf die Schaltfläche **Zum Erteilen von Feedback zur Dokumentation anmelden** klicken.
 
 ## <a name="see-also"></a>Siehe auch
- [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+[Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)

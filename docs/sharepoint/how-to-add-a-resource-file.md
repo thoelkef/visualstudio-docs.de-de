@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  In der **Ressource hinzufügen** Dialogfeld Wählen Sie eine Kultur der Ressourcendatei, z. B. Englisch (Vereinigte Staaten).  
   
-     Dieser Schritt fügt eine globale Ressourcendatei der Projektmappe im Format Ressource * X***.*** Kultur ***.** RESX, z. B. Resource1.en-US.resx.  
+     Dieser Schritt fügt eine globale Ressourcendatei der Projektmappe im Format Ressource * X ***.*** Kultur ***.** RESX, z. B. Resource1.en-US.resx.  
   
 5.  Wenn die **Ressourcen-Editor** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Namen einer Funktion unter den **Funktionen** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.  
   
-     Dieser Schritt fügt eine Ressourcendatei mit der Funktion in das Format * ResourceFileName***.*** Kultur ***.** RESX, z. B. Feature1.en-US.resx.  
+     Dieser Schritt fügt eine Ressourcendatei mit der Funktion in das Format * ResourceFileName ***.*** Kultur ***.** RESX, z. B. Feature1.en-US.resx.  
   
 3.  Wenn die **Ressourcen-Editor** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.  
   

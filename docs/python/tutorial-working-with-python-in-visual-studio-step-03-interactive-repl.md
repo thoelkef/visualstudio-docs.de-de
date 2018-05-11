@@ -1,6 +1,6 @@
 ---
-title: 'Arbeiten mit Python, Schritt 3: Interaktives REPL-Fenster'
-description: Dies ist Schritt 3 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem das interaktive Python-REPL-Fenster erläutert wird.
+title: 'Tutorial: Arbeiten mit Python, Schritt 3: Interaktives REPL-Fenster'
+description: Dies ist Schritt 3 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das interaktive Python-REPL-Fenster erläutert wird.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -89,7 +89,7 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
 
 1. Gerade haben Sie somit die schnelle REPL-Umgebung des interaktiven Fensters verwendet, um die Details für einen kleinen Abschnitt im Code zu erarbeiten. Danach haben Sie diesen Code bequem zur Quelldatei des Projekts hinzugefügt. Wenn Sie nun den Code mit STRG+F5 (oder **Debuggen > Ohne Debugging starten**) erneut ausführen, werden Ihnen die gewünschten exakten Ergebnisse angezeigt.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
 > [Code im Debugger ausführen](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

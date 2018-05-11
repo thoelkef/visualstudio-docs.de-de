@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Problembehandlung bei fehlerhaften Verweisen
 
@@ -42,11 +42,11 @@ Im Folgenden werden Möglichkeiten zur Behebung dieser Probleme beschrieben.
 
 ## <a name="reference-path-is-incorrect"></a>Verweispfad ist falsch
 
-Wenn von verschiedenen Computern aus auf Projekte zugegriffen wird, werden einige Verweise möglicherweise nicht gefunden, wenn sich eine Komponente auf den einzelnen Computern in unterschiedlichen Verzeichnissen befindet. Verweise werden unter dem Namen der Komponentendatei gespeichert (z.B. MeineKomponente). Wenn ein Verweis zu einem Projekt hinzugefügt wird, wird der Speicherort des Ordners der Komponentendatei (z.B. C:\MeineKomponenten\\) an die **Verweispfad**-Eigenschaft des Projekts angefügt.
+Wenn von verschiedenen Computern aus auf Projekte zugegriffen wird, werden einige Verweise möglicherweise nicht gefunden, wenn sich eine Komponente auf den einzelnen Computern in unterschiedlichen Verzeichnissen befindet. Verweise werden unter dem Namen der Komponentendatei gespeichert (z.B. *MeineKomponente*). Wenn ein Verweis einem Projekt hinzugefügt wird, wird der Speicherort des Ordners der Komponentendatei (z.B. *C:\MeineKomponenten*) an die **Verweispfad**-Eigenschaft des Projekts angefügt.
 
-Beim Öffnen versucht das Projekt, diese Komponentendateien in den Verzeichnissen im Verweispfad zu finden. Wenn das Projekt auf einem Computer geöffnet wird, auf dem die Komponente in einem anderen Verzeichnis gespeichert ist (z.B. D:\MeineKomponenten\\), kann der Verweis nicht gefunden werden, und in der Aufgabenliste wird ein Fehler angezeigt.
+Beim Öffnen versucht das Projekt, diese Komponentendateien in den Verzeichnissen im Verweispfad zu finden. Wenn das Projekt auf einem Computer geöffnet wird, auf dem die Komponente in einem anderen Verzeichnis gespeichert ist (z.B. *D:\MeineKomponenten*), kann der Verweis nicht gefunden werden, und in der **Aufgabenliste** wird ein Fehler angezeigt.
 
-Sie können dieses Problem beheben, indem Sie den fehlerhaften Verweis löschen und ihn dann mithilfe des Dialogfelds „Verweis hinzufügen“ ersetzen. Alternativ können Sie auch den **Verweispfad**-Artikel in den Eigenschaftenseiten des Projekts verwenden und die Ordner in der Liste so ändern, dass sie auf die korrekten Speicherorte verweisen. Die **Verweispfad**-Eigenschaft wird für jeden Benutzer auf jedem Computer beibehalten. Deshalb hat eine Änderung Ihres Verweispfads keine Auswirkungen für andere Benutzer des Projekts.
+Sie können dieses Problem beheben, indem Sie den fehlerhaften Verweis löschen und mithilfe des Dialogfelds **Verweis hinzufügen** ersetzen. Alternativ können Sie auch den **Verweispfad**-Artikel in den Eigenschaftenseiten des Projekts verwenden und die Ordner in der Liste so ändern, dass sie auf die korrekten Speicherorte verweisen. Die **Verweispfad**-Eigenschaft wird für jeden Benutzer auf jedem Computer beibehalten. Deshalb hat eine Änderung Ihres Verweispfads keine Auswirkungen für andere Benutzer des Projekts.
 
 > [!TIP]
 > Bei Verweisen zwischen Projekten treten diese Probleme nicht auf. Verwenden Sie daher nach Möglichkeit Verweise zwischen Projekten anstatt Dateiverweise.
@@ -87,7 +87,7 @@ Es kann viele mögliche Ursachen geben, warum auf Dateien nicht zugegriffen werd
 
 ## <a name="com-component-is-not-installed-on-computer"></a>COM-Komponente nicht auf Computer installiert
 
-Wenn ein Benutzer einen Verweis auf eine COM-Komponente hinzugefügt hat und ein anderer Benutzer nun versucht, den Code auf einem Computer auszuführen, auf dem diese Komponente nicht installiert ist, erhält er die Fehlermeldung, dass der Verweis fehlerhaft ist. Der Fehler wird behoben, indem die Komponente auf dem zweiten Computer installiert wird. Weitere Informationen über das Verwenden von Verweisen auf COM-Komponenten in Projekten finden Sie unter [COM Interoperability in .NET Framework Applications (COM-Interoperabilität in .NET Framework-Anwendungen)](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
+Wenn ein Benutzer einen Verweis auf eine COM-Komponente hinzugefügt hat und ein anderer Benutzer nun versucht, den Code auf einem Computer auszuführen, auf dem diese Komponente nicht installiert ist, erhält er die Fehlermeldung, dass der Verweis fehlerhaft ist. Der Fehler wird behoben, indem die Komponente auf dem zweiten Computer installiert wird. Weitere Informationen zur Verwendung von Verweisen auf COM-Komponenten in Projekten finden Sie unter [COM-Interoperabilität in .NET Framework-Anwendungen](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
 ## <a name="see-also"></a>Siehe auch
 

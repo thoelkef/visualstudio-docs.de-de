@@ -1,6 +1,6 @@
 ---
 title: Übersicht zur Python-Unterstützung für Visual Studio unter Windows
-description: Zusammenfassung der Features in Visual Studio, durch die Visual Studio zur besten Python-IDE unter Windows wird (auch bekannt als Python-Tools für Visual Studio, PTVS)
+description: Zusammenfassung der Python-Features in Visual Studio, durch die Visual Studio zur besten Python-IDE unter Windows wird (auch bekannt als Python-Tools für Visual Studio, PTVS).
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Arbeiten mit Python in Visual Studio (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
 Python ist eine beliebte Programmiersprache, die zuverlässig, flexibel, leicht zu erlernen und für alle Betriebssysteme kostenlos ist und sowohl von einer starken Entwicklercommunity als auch vielen kostenlosen Bibliotheken unterstützt wird. Python unterstützt alle Arten von Entwicklung, einschließlich Webanwendungen, Webdienste, Desktop-Apps, Skripts und wissenschaftliche Berechnungen, und wird von vielen Universitäten, Wissenschaftlern, gelegentlichen und professionellen Entwicklern gleichermaßen verwendet. Weitere Informationen zur Sprache finden Sie unter [python.org](https://www.python.org) und [Python for Beginners](https://www.python.org/about/gettingstarted/).
 
@@ -88,6 +88,7 @@ Projekt- und Elementvorlagen automatisieren die Einrichtung unterschiedlicher Ar
 Weitere Informationen finden Sie unter: 
 
 - Dokumentation: [Verwalten von Python-Projekten](managing-python-projects-in-visual-studio.md)
+- Dokumentation: [Referenz für Python-Elementvorlagen](python-item-templates.md)
 - Dokumentation: [Python-Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates)
 - Dokumentation: [Arbeiten mit C++ und Python](working-with-c-cpp-python-in-visual-studio.md)
 - Allgemeine Visual Studio-Featuredokumentation: [Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md#visual-studio-templates)
