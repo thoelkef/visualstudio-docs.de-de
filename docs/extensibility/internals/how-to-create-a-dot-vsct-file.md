@@ -63,7 +63,7 @@ Sie können eine XML-basierte VSCT-Datei anhand einer vorhandenen CTC-Quelldatei
   
 1.  Rufen Sie eine Kopie der Sprache Perl ab.  
   
-2.  Rufen Sie eine Kopie des Perl-Skripts ConvertCTCToVSCT.pl, in der Regel der  *\<Visual Studio SDK-Installationspfad >*\VisualStudioIntegration\Tools\bin Ordner.  
+2.  Rufen Sie eine Kopie des Perl-Skripts ConvertCTCToVSCT.pl, in der Regel der  *\<Visual Studio SDK-Installationspfad >* \VisualStudioIntegration\Tools\bin Ordner.  
   
 3.  Rufen Sie eine Kopie der CTC-Quelldatei ab, die Sie konvertieren möchten.  
   

@@ -1,18 +1,19 @@
 ---
-title: Tastenkombinationen in Visual Studio | Microsoft-Dokumentation
+title: Tastenkombinationen für Visual Studio
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -25,74 +26,74 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 |||
 |-|-|
-|Ziehen von unverankerten Registerkarten|STRG+Klick zur Mehrfachauswahl|
+|Ziehen von unverankerten Registerkarten|**STRG**+Klick zur Mehrfachauswahl|
 |Maximieren eines unverankerten Fensters|Doppelklick auf die Titelleiste|
-|Erneutes Andocken eines unverankerten Fensters|STRG+Doppelklick auf die Titelleiste|
-|Schließen des aktiven Dokuments|Strg+F4|
-|Anzeigen der Liste der geöffneten Dateien|STRG+ALT+BILD-AB|
-|Anzeigen aller unverankerten Fenster|Strg+Umschalt+M|
+|Erneutes Andocken eines unverankerten Fensters|**STRG**+Doppelklick auf die Titelleiste|
+|Schließen des aktiven Dokuments|**STRG**+**F4**|
+|Anzeigen der Liste der geöffneten Dateien|**STRG**+**Alt**+**Nach unten**|
+|Anzeigen aller unverankerten Fenster|**STRG**+**UMSCHALT**+**M**|
 
 ## <a name="window-shortcuts"></a>Tastenkombinationen für Fenster
 
 |||
 |-|-|
-|Verschieben/Andocken von unverankerten Fenstern|WINDOWS-TASTE+NACH-LINKS/WINDOWS-TASTE+NACH-RECHTS|
-|Maximieren/Minimieren von Fenstern|WINDOWS-TASTE+NACH-OBEN/WINDOWS-TASTE+NACH-UNTEN|
-|Anzeigen der Sprungliste|WINDOWS-TASTE+ALT+N|
-|Starten einer neuen Instanz|WINDOWS-TASTE+UMSCHALT+N|
-|Wechseln zwischen Fenstern|WINDOWS-TASTE+N|
+|Verschieben/Andocken von unverankerten Fenstern|**Win**+**Links** / **Win**+**Rechts**|
+|Maximieren/Minimieren von Fenstern|**Win**+**Nach oben** / **Win**+**Nach unten**|
+|Anzeigen der Sprungliste|**Win**+**Alt**+**N**|
+|Starten einer neuen Instanz|**Win**+**UMSCHALT**+**N**|
+|Wechseln zwischen Fenstern|**Win**+**N**|
 
 ## <a name="visual-studio-search"></a>Suche in Visual Studio
 
 |||
 |-|-|
-|Suche in Projektmappen-Explorer|STRG+;|
-|Platzieren des Fokus in das Suchfeld eines beliebigen Toolfensters|ALT+`, wenn sich der Fokus im Toolfenster befindet|
-|Schnellstart|STRG+Q|
+|Suche in Projektmappen-Explorer|**STRG**+**;**|
+|Platzieren des Fokus in das Suchfeld eines beliebigen Toolfensters|**Alt**+**`** wenn sich der Fokus im Toolfenster befindet|
+|Schnellstart|**STRG**+**Q**|
 |Eingrenzen der Schnellstart-Ergebnisbereiche|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
-|Suchen in den Tooloptionen|STRG+E|
+|Suchen in den Tooloptionen|**STRG**+**E**|
 
 ## <a name="editor-find"></a>Suche im Editor
 
 |||
 |-|-|
-|Schnellsuche|STRG+F|
-|Schnellsuche nach nächstem Ergebnis|Eingabe|
-|Schnellsuche nach vorherigem Ergebnis|UMSCHALT+EINGABETASTE|
-|Schnellsuche zur Erweiterung des Dropdowns|ALT+NACH-UNTEN|
-|Schließen der Suche|Esc|
-|Schnellersetzung|STRG+H|
-|Schnellersetzung für "Nächstes ersetzen"|ALT+R|
-|Schnellersetzung für "Alle ersetzen"|ALT+A|
-|Suchen in Dateien|STRG+UMSCHALT+F|
-|In Dateien ersetzen|STRG+UMSCHALT+H|
+|Schnellsuche|**STRG**+**F**|
+|Schnellsuche nach nächstem Ergebnis|**EINGABETASTE**|
+|Schnellsuche nach vorherigem Ergebnis|**UMSCHALT**+**EINGABETASTE**|
+|Schnellsuche zur Erweiterung des Dropdowns|**Alt**+**Nach unten**|
+|Schließen der Suche|**ESC**|
+|Schnellersetzung|**STRG**+**H**|
+|Schnellersetzung für "Nächstes ersetzen"|**Alt**+**R**|
+|Schnellersetzung für "Alle ersetzen"|**Alt**+**A**|
+|Suchen in Dateien|**STRG**+**UMSCHALT**+**F**|
+|In Dateien ersetzen|**STRG**+**UMSCHALT**+**H**|
 
 ##  <a name="BKMK_CodeEditor"></a> Code-Editor
 
 |Befehl|Verknüpfung|Verfügbarkeit der Versionen|
 |-|-|-|
-|IntelliSense-Vorschlagsmodus|STRG+ALT+LEERTASTE (Umschaltfläche)||
-|Anzeigen von IntelliSense erzwingen|STRG+J||
-|Schnelle Aktionen|STRG+.||
-|Codeausschnittauswahl|STRG+K, X oder ?, Registerkarte (VB)||
-|Umgeben mit|Strg+K, S||
-|Anzeigen der QuickInfo|STRG+K, I||
+|IntelliSense-Vorschlagsmodus|**STRG**+**Alt**+**Leerraum** (Umschalten)||
+|Anzeigen von IntelliSense erzwingen|**STRG**+**J**||
+|Schnelle Aktionen|**STRG**+**.**||
+|Codeausschnittauswahl|**STRG**+**K**,**X** oder **?**,**Tabstopp** (VB)||
+|Umgeben mit|**STRG**+**K**,**S**||
+|Anzeigen der QuickInfo|**STRG**+**K**,**I**||
 |Navigieren zu|**STRG**+**,**||
-|Navigieren in markierten Verweisen|STRG+UMSCHALT+NACH-OBEN (vorheriger), STRG+UMSCHALT+NACH-UNTEN (nächster)||
+|Navigieren in markierten Verweisen|**STRG**+**UMSCHALT**+**Nach oben** (Vorheriges), **STRG**+**UMSCHALT**+**Nach unten** (Weiter)||
 |Editor-Zoom|**STRG**+**UMSCHALT**+**>** (Vergrößern), **STRG**+**UMSCHALT**+**<** (Verkleinern)||
-|Blockauswahl|**ALT-TASTE** gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN||
-|Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB||
-|Zeile duplizieren|STRG+E,V|Visual Studio 2017 Version 15.6|
+|Blockauswahl|**ALT-TASTE** gedrückt halten und die Maus ziehen, **UMSCHALT**+**ALT**+**PFEILTASTEN**||
+|Eine Zeile nach oben/unten verschieben|**Alt**+**Nach oben** / **Alt**+**Nach unten**||
+|Zeile duplizieren|**STRG**+**E**,**V**|Visual Studio 2017 Version 15.6|
 |Auswahl erweitern|**UMSCHALT**+**ALT**+**=**|Visual Studio 2017 Version 15.5|
 |Auswahl verkleinern|**UMSCHALT**+**ALT**+**-**|Visual Studio 2017 Version 15.5|
-|Gehe zu Definition|F12||
-|Peek-Definition|Alt+F12||
-|Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)||
-|Schließen des Peek-Definitionsfensters|Esc||
-|Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1||
+|Gehe zu Definition|**F12**||
+|Peek-Definition|**ALT**+**F12**||
+|Gehe zu Definition-Stapel|**STRG**+**UMSCHALT**+**8** (Zurück), **STRG**+**UMSCHALT**+**7** (Vorwärts)||
+|Schließen des Peek-Definitionsfensters|**ESC**||
+|Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|**STRG**+**Alt**+**Pos1**||
 |Zwischen mehreren Fenstern der "Peek-Definition" navigieren|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**||
 |Navigieren zwischen mehreren Peek-Ergebnissen|**F8** und **UMSCHALT**+**F8**||
-|Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC||
+|Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|**UMSCHALT**+**ESC**||
 
 ## <a name="toolbars"></a>Symbolleisten
 
@@ -107,17 +108,17 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 |||
 |-|-|
-|Debugging starten|F5|
-|Debuggen beenden|UMSCHALTTASTE+F5|
-|Erneutes Starten des Debuggings|Ctrl+Shift+F5|
-|Prozedurschritt|F10|
-|Einzelschritt|F11|
-|Ausführen bis Rücksprung|UMSCHALTTASTE+F11|
-|Ausführen bis Cursor|Strg+F10|
-|Festlegen der nächsten Anweisung|Ctrl+Shift+F10|
-|Festlegen und Umschalten des Haltepunkts|F9|
-|Deaktivieren des Haltepunkts|Strg+F9|
-|Direktfenster|Ctrl+Alt+I|
+|Debugging starten|**F5**|
+|Debuggen beenden|**UMSCHALT**+**F5**|
+|Erneutes Starten des Debuggings|**STRG**+**UMSCHALT**+**F5**|
+|Prozedurschritt|**F10**|
+|Einzelschritt|**F11**|
+|Ausführen bis Rücksprung|**UMSCHALT**+**F11**|
+|Ausführen bis Cursor|**STRG**+**F10**|
+|Festlegen der nächsten Anweisung|**STRG**+**UMSCHALT**+**F10**|
+|Festlegen und Umschalten des Haltepunkts|**F9**|
+|Deaktivieren des Haltepunkts|**STRG**+**F9**|
+|Direktfenster|**STRG**+**Alt**+**I**|
 |Direktfenster-Befehlsmodus|Eingeben von „>“|
 |Löschen des Direktfenster-Puffers|>cls|
 |Direktfenster-Druckwert|?varname|

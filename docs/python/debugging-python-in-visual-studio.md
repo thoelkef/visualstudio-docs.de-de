@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
@@ -125,7 +125,7 @@ Der Menübefehl **Debuggen > Fenster > Ausnahmeeinstellungen** öffnet ein Fenst
 
 Das Kontrollkästchen für jede Ausnahme steuert, ob der Debugger *immer* unterbricht, wenn die Ausnahme ausgelöst wird. Aktivieren Sie dieses Kontrollkästchen, wenn Sie bei einer bestimmten Ausnahme häufiger unterbrechen möchten.
 
-Standardmäßig wird bei den meisten Ausnahmen unterbrochen, wenn im Quellcode kein Ausnahmehandler gefunden werden kann. Um dieses Verhalten zu ändern, klicken Sie mit der rechten Maustaste auf eine Ausnahme, und aktivieren bzw. deaktivieren Sie die Option **Continue When Unhandled in User Code** (Fortfahren, wenn in Benutzercode nicht behandelt). Deaktivieren Sie das Kontrollkästchen, wenn bei einer Ausnahme seltener unterbrochen werden soll.
+Standardmäßig wird bei den meisten Ausnahmen unterbrochen, wenn im Quellcode kein Ausnahmehandler gefunden werden kann. Um dieses Verhalten zu ändern, klicken Sie mit der rechten Maustaste auf eine Ausnahme, und passen Sie die Option **Continue When Unhandled in User Code** (Fortfahren, wenn in Benutzercode nicht behandelt) an. Deaktivieren Sie das Kontrollkästchen, wenn bei einer Ausnahme seltener unterbrochen werden soll.
 
 Wenn Sie eine Ausnahme konfigurieren möchten, die in dieser Liste nicht angezeigt wird, klicken Sie auf die Schaltfläche **Hinzufügen**, um sie hinzuzufügen. Der Name muss mit dem vollständigen Namen der Ausnahme übereinstimmen.
 

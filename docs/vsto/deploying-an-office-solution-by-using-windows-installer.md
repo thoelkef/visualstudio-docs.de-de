@@ -298,7 +298,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
   
 3. Legen Sie in für die Eigenschaft **AllUSERS** fest, ob diese Lösung für alle Benutzer des Computers oder nur für den Benutzer installiert werden soll, der die Projektmappe installiert.  
   
-   Um das VSTO-Add-in für den aktuellen Benutzer zu installieren, wählen Sie **"ALLUSERS" = "" (Installation pro Benutzer)**. Um das VSTO-Add-In für alle Benutzer des Computers zu installieren, wählen Sie **ALLUSERS=1 ("Pro Computer"-Installation)**aus.  
+   Um das VSTO-Add-in für den aktuellen Benutzer zu installieren, wählen Sie **"ALLUSERS" = "" (Installation pro Benutzer)**. Um das VSTO-Add-In für alle Benutzer des Computers zu installieren, wählen Sie **ALLUSERS=1 ("Pro Computer"-Installation)** aus.  
   
    Im nächsten Verfahren erstellen Sie Registrierungsschlüssel, um die Office-Anwendung zu ermitteln und laden das VSTO-Add-in aktivieren. Siehe [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
   
@@ -315,7 +315,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
   
    Die Seite **Anwendungsregistrierung** wird angezeigt.  
   
-3. Wählen Sie unter **Möchten Sie die Registrierungsdaten konfigurieren, die die Anwendung installiert?**das Optionsfeld **Ja** aus.  
+3. Wählen Sie unter **Möchten Sie die Registrierungsdaten konfigurieren, die die Anwendung installiert?** das Optionsfeld **Ja** aus.  
   
 4. In der **Registrierungsansicht des Zielcomputers** aufzulisten, fügen Sie die Schlüsselhierarchie, die den Typ des Installationsprogramms aktiviert, Sie erstellen möchten.  
   

@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Erste Schritte mit Visual Basic in Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Erste Schritte mit Visual Basic in Visual Studio
 
-In diesem Tutorial für Visual Basic (VB), lernen Sie die Entwicklung mit Visual Studio kennen und führen verschiedene Konsolen-Apps aus. Außerdem machen Sie sich währenddessen mit einigen Funktionen der [integrierten Entwicklungsumgebung (Integrated Development Environment, IDE)](visual-studio-ide.md) von Visual Studio vertraut.
+In diesem Tutorial für Visual Basic (VB) lernen Sie die Entwicklung mit Visual Studio kennen und erstellen und führen verschiedene Konsolen-Apps aus. Außerdem machen Sie sich währenddessen mit einigen Features der [integrierten Entwicklungsumgebung (Integrated Development Environment, IDE)](visual-studio-ide.md) von Visual Studio vertraut.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
@@ -55,7 +55,7 @@ Erstellen wir zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *HelloWorld*.  
 
@@ -74,7 +74,6 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Über die Menüleiste „Extras“
-
 1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
 
 2. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.   
@@ -107,8 +106,7 @@ Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zus
 5. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen.
 
 ## <a name="create-a-calculate-this-application"></a>Erstellen einer Rechenanwendung
-
-1. Öffnen Sie Visual Studio 2017, und klicken Sie in der Menüleiste oben auf **Datei** > **Neu** > **Projekt…**.
+1. Öffnen Sie Visual Studio 2017, und klicken Sie in der Menüleiste oben auf **Datei** > **Neu** > **Projekt**.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *CalculateThis*.  
 
@@ -145,4 +143,4 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Weitere Informationen zu
 * [Neues in Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense für Visual Basic-Codedateien](visual-basic-specific-intellisense.md)
 * [Sprachreferenz zu Visual Basic](/dotnet/visual-basic/language-reference/index)
-* Videokurs: [Visual Basic Fundamentals for Absolute Beginners (Visual Basic-Grundlagen für Einsteiger)](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+* Videokurs: [Visual Basic-Grundlagen für Einsteiger](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)

@@ -1,9 +1,8 @@
 ---
-title: Hinzufügen von Namensparametern zu Projekt- und Elementvorlagen in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Hinzufügen von Namensparametern zu Projekt- und Elementvorlagen in Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
 
@@ -44,7 +43,7 @@ Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Nam
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Vorlagenparameter](../ide/template-parameters.md)  
-[Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem-Element (Visual Studio-Projektelementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Vorlagenparameter](../ide/template-parameters.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [ProjectItem-Element (Visual Studio-Projektelementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)

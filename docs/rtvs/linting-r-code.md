@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Linting für R-Code in Visual Studio
 
-Linting ist ein Prozess, der Code analysiert, um potenzielle Fehler, Formatierungsprobleme und andere Störfaktoren bei Codes (z.B. falschen Leerraum) aufzudecken. Linting hilft auch dabei, bestimmte Codierungskonventionen zu fördern, wie z.B. die Benennung von Bezeichnern, was in Teams und anderen Zusammenarbeitssituationen sehr hilfreich ist.
+Der Linting-Prozess analysiert Code, um potenzielle Fehler, Formatierungsprobleme und andere Störfaktoren bei Codes (z.B. falschen Leerraum) aufzudecken. Linting hilft auch dabei, bestimmte Codierungskonventionen zu fördern, z.B. die Benennung von Bezeichnern. Konventionen wie diese sind innerhalb von Teams und für andere kooperative Situationen hilfreich.
 
 R Tools für Visual Studio (RTVS) bieten eine integrierte Linting-Funktion für R, deren Verhalten durch eine Vielzahl von Optionen gesteuert wird. Diese werden im vorliegenden Artikel beschrieben. Diese Optionen finden Sie unter **Extras > Optionen > Text-Editor > R > Lint**.
 
@@ -32,7 +30,7 @@ Falls aktiviert, wird Linting während der Eingabe im Editor angewendet. Problem
 
 ![Beispiele für Linting für R-Code](media/linting-01.png)
 
-Sie ändern je nach den Anforderungen eines Projekts oder einer Datei häufig Linting-Optionen. Beispielcode eines Onlinekurses kann beispielsweise `=` anstelle von `<-` zusammen mit Bezeichnern in Pascal-Schreibweise verwenden. Ein solcher Code würde häufig Linting-Warnungen anzeigen, da die Linting-Standardoptionen diese Schreibweisen kennzeichnen. Beim Arbeiten mit diesem Code können Sie die Optionen dann einfach deaktivieren, statt sich mit der Korrektur der einzelnen Instanzen befassen zu müssen.
+Sie ändern je nach den Anforderungen eines Projekts oder einer Datei häufig Linting-Optionen. Beispielcode eines Onlinekurses kann beispielsweise `=` anstelle von `<-` zusammen mit Bezeichnern in Pascal-Schreibweise verwenden. Ein solcher Code würde häufig Linting-Warnungen anzeigen, da die Linting-Standardoptionen diese Schreibweisen kennzeichnen. Beim Arbeiten mit diesem Code können Sie die Optionen dann deaktivieren, statt sich mit der Korrektur der einzelnen Instanzen befassen zu müssen.
 
 ## <a name="assignment-group"></a>Zuweisungsgruppe
 

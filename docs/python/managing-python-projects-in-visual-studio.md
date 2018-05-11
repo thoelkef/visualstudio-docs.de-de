@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
-description: In diesem Artikel werden der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python erläutert.
+description: Der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="python-projects"></a>Python-Projekte
+# <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
 Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber diese Struktur kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Ein Visual Studio-Projekt kann Sie beim Verwalten dieser komplexen Struktur unterstützen. Das Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und unterstützt Sie beim Organisieren Ihrer Anwendung in logische Komponenten.
 
@@ -41,9 +41,9 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
-Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Fügen Sie solche Dateien hinzu, indem Sie mit der rechten Maustaste auf das Projekt klicken, und klicken Sie dann auf **Hinzufügen > Vorhandenes Element...**, um nach Ihrer hinzuzufügenden Datei zu suchen, oder klicken Sie auf **Hinzufügen > Neues Element...**, um ein Dialogfeld mit mehreren Elementvorlagen zu öffnen. Vorlagen enthalten leere Python-Dateien, eine Python-Klasse, einen Komponententest und verschiedene Dateien zu Webanwendungen. Sie können diese Optionen mit einem Testprojekt ausprobieren, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
+Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Fügen Sie solche Dateien hinzu, indem Sie mit der rechten Maustaste auf das Projekt klicken, und klicken Sie dann auf **Hinzufügen** > **Vorhandenes Element**, um nach der hinzuzufügenden Datei zu suchen, oder klicken Sie auf **Hinzufügen** > **Neues Element**, um ein Dialogfeld mit mehreren Elementvorlagen zu öffnen. Wie in der Referenz zu [Elementvorlagen](python-item-templates.md) beschrieben, enthalten Vorlagen leere Python-Dateien, eine Python-Klasse, einen Komponententest und verschiedene Dateien zu Webanwendungen. Sie können diese Optionen mit einem Testprojekt ausprobieren, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
 
-Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (F5 oder **Debuggen > Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (UMSCHALT+ALT+ F5 oder **Debuggen > Projekt in interaktivem Python ausführen**). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
+Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (F5 oder **Debuggen** > **Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (UMSCHALT+ALT+ F5 oder **Debuggen** > **Projekt in interaktivem Python ausführen**). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
 
 > [!Tip]
 > Wenn Sie die ausgewählte Startdatei aus einem Projekt entfernen und keine neue auswählen, weiß Visual Studio nicht, mit welcher Python-Datei gestartet werden soll, wenn Sie versuchen, das Projekt auszuführen. In diesem Fall zeigt Visual Studio 2017 Version 15.6 und höher einen Fehler an; frühere Versionen öffnen entweder ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Wenn eine dieser Verhaltensweisen auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben.
@@ -58,7 +58,7 @@ Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeo
 
 ## <a name="project-templates"></a>Projektvorlagen
 
-Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-Projekts, entweder von Grund auf oder aus vorhandenem Code. Um eine Vorlage zu verwenden, wählen Sie den Menübefehl **Datei > Neu > Projekt...**, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Hinzufügen > Neues Projekt...**. In beiden Fällen rufen Sie so das folgende Dialogfeld **Neues Projekt** auf. Suchen Sie entweder nach „Python“, oder klicken Sie auf den Knoten **Installiert > Python**, um Python-spezifische Vorlagen anzuzeigen:
+Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-Projekts, entweder von Grund auf oder aus vorhandenem Code. Wählen Sie den Menübefehl **Datei** > **Neu** > **Projekt** aus, oder klicken Sie mit der rechten Maustaste auf die Projektmappe im Projektmappen-Explorer und wählen **Hinzufügen** > **Neues Projekt** aus. In beiden Fällen öffnen Sie das unten gezeigte Dialogfeld **Neues Projekt**. Suchen Sie entweder nach „Python“, oder klicken Sie auf den Knoten **Installiert** > **Python**, um Python-spezifische Vorlagen anzuzeigen:
 
 ![Dialogfeld „Neues Projekt“ mit Python-Vorlagen](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |
 | [Azure-Cloud-Dienst](python-azure-cloud-service-project-template.md) | Ein in Python geschriebenes Projekt für einen Azure-Clouddienst |
-| [Webprojekte](python-web-application-project-templates.md) | Auf verschiedenen Frameworks einschließlich Bottle, Django, Flask und Flask/Jade basierende Projekte für Webserver. |
+| [Webprojekte](python-web-application-project-templates.md) | Auf verschiedenen Frameworks einschließlich Bottle, Django und Flask basierende Projekte für Web-Apps. |
 | IronPython-Anwendung | Ähnlich wie die Python-Anwendungsvorlage, verwendet aber IronPython durch standardmäßige Aktivierung .von NET-Interop und Debuggen im gemischten Modus mit .NET-Sprachen. |
 | IronPython-WPF-Anwendung | Eine Projektstruktur mit IronPython mit Windows Presentation Foundation-XAML-Dateien für die Benutzeroberfläche der Anwendung. Visual Studio bietet einen XAML-Benutzeroberflächen-Designer, CodeBehind kann in Python geschrieben werden, und die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | IronPython-Silverlight-Webseite | Ein IronPython-Projekt, das in einem Browser mit Silverlight ausgeführt wird. Der Python-Code für die Anwendung ist auf der Webseite als Skript enthalten. Ein Codebaustein-Skript-Tag übernimmt JavaScript-Code, der die Ausführung von IronPython in Silverlight initialisiert, von wo aus der Python-Code mit dem DOM kommunizieren kann. |
@@ -80,7 +80,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 > [!Note]
 > Da Python eine interpretierte Programmiersprache ist, produzieren Python-Projekte in Visual Studio keine eigenständigen ausführbaren Dateien, wie andere Projekte in kompilierten Sprachen (z.B. C#). Weitere Informationen finden Sie unter [Questions and answers](overview-of-python-tools-for-visual-studio.md#questions-and-answers) (Fragen und Antworten).
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>Erstellen eines Projekts aus vorhandenen Dateien
 

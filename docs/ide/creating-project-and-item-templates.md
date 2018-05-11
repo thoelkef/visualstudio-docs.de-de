@@ -1,7 +1,7 @@
 ---
-title: Visual Studio-Vorlagen für Projekte und Dateien | Microsoft-Dokumentation
-ms.custom: ''
+title: Visual Studio-Vorlagen für Projekte und Dateien
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
 
@@ -52,8 +52,8 @@ Starter Kits sind erweiterte Vorlagen, die mit anderen Mitgliedern der Community
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
-[Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
-[Vorlagenparameter](../ide/template-parameters.md)  
-[Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)  
-[NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [Vorlagenparameter](../ide/template-parameters.md)
+- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
+- [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

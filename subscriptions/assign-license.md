@@ -9,11 +9,11 @@ description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Zuweisen von Lizenzen im Administratorportal für Visual Studio-Abonnements
 
@@ -30,10 +30,10 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
 
 3.  Geben Sie die Informationen in die Formularfelder für den neuen Abonnenten ein. Wenn Ihre Organisation Azure Active Directory verwendet, dient dieses Feld als Suchfunktion, über die Sie Personen in Ihrem aktuellen Verzeichnis finden. So können Sie den richtigen Benutzer aus den Suchergebnissen auswählen. Wenn Sie eine Person ausgewählt haben, werden dessen Name sowie die E-Mail-Adressen für die Anmeldung und die Benachrichtigungen automatisch wie unten dargestellt aufgefüllt. 
 
-    Wenn sich bei Ihrer Organisation die E-Mail-Adresse zum Empfangen von E-Mails von der für die Anmeldung unterscheidet, können Sie beide an dieser Stelle eingeben. Klicken Sie auf den Link „Different email for communication than sign-in?“ („Gibt es eine andere E-Mail-Adresse für die Kommunikation als für die Anmeldung?“). 
+    Wenn Ihre Organisation nicht Azure Active Directory (Azure AD) verwendet, jedoch über eine andere E-Mail-Adresse zum Empfangen von E-Mails als die für die Anmeldung verfügt, können Sie beide an dieser Stelle eingeben. Klicken Sie auf den Hyperlink „Add a different email for receiving communication“ (Andere E-Mail-Adresse für Benachrichtigungen hinzufügen). 
 
     **Zugriff auf Downloads:**  
-    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass das Kontrollkästchen „Downloads“ aktiviert ist. Wenn Sie das Kontrollkästchen deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. 
+    Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass die Umschaltfläche „Downloads“ aktiviert ist. Wenn Sie die Downloads deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. 
     
     Wenn Sie die Optionen für diesen Abonnenten ausgewählt haben, klicken Sie auf **Hinzufügen**.
 
@@ -45,7 +45,7 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
     ![Abonnent hinzugefügt](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Massenzuweisungen
-1.  Navigieren Sie zur Registerkarte **Abonnenten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie im Menüband im oberen Bereich auf **Massenhinzufügen**. 
+1.  Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie im Menüband im oberen Bereich auf **Massenhinzufügen**. 
 
     ![Massenhinzufügen](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
 
     ![Mehrere Abonnenten hochladen](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. Das Ausfüllen des Verweisfelds ist optional. Wenn Sie einen Fehler beim Ausfüllen der Vorlage gemacht haben, sollte eine Fehlermeldung erscheinen, in der das Problem beschrieben wird. Wenn Sie fertig sind, speichern Sie die Datei auf Ihrer Festplatte.
+3.  Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. Das Ausfüllen des Verweisfelds ist optional. Wenn Sie einen Fehler beim Ausfüllen der Vorlage gemacht haben, sollte eine Fehlermeldung erscheinen, in der das Problem beschrieben wird. Sobald Sie fertig sind, speichern Sie die Datei lokal.
 **Beachten Sie die im Folgenden aufgelisteten bewährten Methoden, um einen fehlerfreien Upload zu gewährleisten:**
     - Stellen Sie sicher, dass die Formularfelder keine Kommas enthalten.
     - Entfernen Sie Leerzeichen vor und nach Formularfeldern wie z.B. die Benutzernamen.

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4e8d28bb96fa17a82d758f5708fd592128296e7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Veröffentlichen in Azure App Service
 
@@ -78,7 +78,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt und auf **Hinzufügen > Neues Element…*. Klicken Sie in dem angezeigten Dialogfeld auf die Vorlage „Azure web.config (Fast CGI)“ und dann auf „OK“. Dadurch erstellen Sie eine `web.config`-Datei in Ihrem Projektstamm.
 
-1. Ändern Sie den `PythonHandler`-Eintrag auf `web.config`, damit der Pfad mit der Python-Installation auf dem Server übereinstimmt. Für Python 3.6.1 x64 sollte der Eintrag wie folgt aussehen:
+1. Bearbeiten Sie den `PythonHandler`-Eintrag in `web.config` so, dass der Pfad mit der Python-Installation auf dem Server übereinstimmt (genaue Details finden Sie in der [Referenz zur IIS-Konfiguration](https://www.iis.net/configreference) (iis.net)). Für Python 3.6.1 x64 sollte der Eintrag wie folgt aussehen:
 
     ```xml
     <system.webServer>
@@ -106,7 +106,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django:** Für Django-Apps müssen Sie zwei Änderungen an der `web.config`-Datei vornehmen. Ändern Sie zunächst den `WSGI_HANDLER`-Wert auf `django.core.wsgi.get_wsgi_application()` (das Objekt befindet sich in der `wsgi.py`-Datei):
+    - **Django:** Für Django-Projekte müssen Sie zwei Änderungen an der `web.config`-Datei vornehmen. Ändern Sie zunächst den `WSGI_HANDLER`-Wert auf `django.core.wsgi.get_wsgi_application()` (das Objekt befindet sich in der `wsgi.py`-Datei):
 
         ```xml
         <!-- Django apps only -->
@@ -119,7 +119,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Nur für Django-Apps:** Öffnen Sie im Ordner, der denselben Namen hat wie Ihr Projekt, `settings.py`, und fügen Sie `ALLOWED_HOSTS`, wie unten dargestellt, die Domäne Ihrer Website-URL hinzu. Dabei ersetzen Sie „vspython-test-02.azurewebsites.net“ durch Ihre URL:
+1. **Nur für Django-Apps:** Fügen Sie in der `settings.py`-Datei des Django-Projekts wie unten dargestellt die Domäne Ihrer Website-URL zu `ALLOWED_HOSTS` hinzu. Dabei ersetzen Sie „vspython-test-02.azurewebsites.net“ durch Ihre URL:
 
     ```python
     # Change the URL to your specific site
@@ -128,9 +128,13 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
     Fehler beim Hinzufügen Ihrer URL zu den Arrayergebnissen im Fehler „DisallowedHost at / Invalid HTTP_HOST header:“ \<Website-URL\>. Sie müssen ALLOWED_HOSTS möglicherweise die \<Website-URL\> hinzufügen.
 
+    Beachten Sie, dass wenn das Array leer ist, Django automatisch 'localhost' zulässt. Wenn Sie jedoch Ihre Produktions-URL hinzufügen, werden diese Funktionen entfernt. Aus diesem Grund sollten Sie separate Entwicklungs- und Produktionskopien von `settings.py` beibehalten, oder alternativ die Umgebungsvariablen verwenden, um die Laufzeitwerte zu kontrollieren.
+
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner, der denselben Namen wie Ihr Projekt hat, klicken Sie mit der rechten Maustaste auf den `static`-Ordner und dann auf **Hinzufügen > Neues Element...**, wählen Sie die Vorlage „web.config“ für statische Azure-Dateien“ aus, und klicken Sie auf **OK**. So erstellen Sie eine weitere `web.config`-Datei im `static`-Ordner, die die Python-Verarbeitung für diesen Ordner deaktiviert. Diese Konfiguration sendet Anforderungen für statische Dateien an den Standardwebserver und verwendet nicht die Python-Anwendung.
 
 1. Speichern Sie Ihr Projekt, klicken Sie dann im **Projektmappen-Explorer** mit der rechten Maustaste darauf, und klicken Sie auf **Veröffentlichen**.
+
+    ![Befehl „Veröffentlichen“ im Kontextmenü eines Projekts](media/template-web-publish-command.png)
 
 1. Wählen Sie in der angezeigten Registerkarte **Veröffentlichen** das Ziel für die Veröffentlichung aus:
 
@@ -166,8 +170,8 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
     e. Versuchen Sie, App Service nach der Installation neuer Pakete neu zu starten. Wenn Sie die `web.config`-Datei ändern, ist kein Neustart erforderlich, da App Service bei jeder Änderung von `web.config` einen automatischen Neustart durchführt.
 
-    > [!Tip] 
-    > Wenn Sie Änderungen an der `requirements.txt`-Datei der App vornehmen, verwenden Sie die Kudu-Konsole erneut, um sämtliche Pakete zu installieren, die zu diesem Zeitpunkt in der Datei aufgeführt sind. 
+    > [!Tip]
+    > Wenn Sie Änderungen an der `requirements.txt`-Datei der App vornehmen, verwenden Sie die Kudu-Konsole erneut, um sämtliche Pakete zu installieren, die zu diesem Zeitpunkt in der Datei aufgeführt sind.
 
 1. Sobald Sie die Serverumgebung vollständig konfiguriert haben, aktualisieren Sie die Seite im Browser und die Web-App sollte angezeigt werden.
 
@@ -175,7 +179,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Veröffentlichen in App Service: Visual Studio 2015
 
-> [!Note] 
+> [!Note]
 > Ein kurzes Video zu diesem Prozess finden Sie unter [Visual Studio Python Tutorial: Building a Website (Visual Studio-Python-Tutorial: Erstellen einer Website)](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3 Min. 10 Sek.).
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen**.
@@ -195,7 +199,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
 1. Wählen Sie **Weiter >** nach Bedarf, um zusätzliche Einstellungen zu überprüfen. Wenn Sie planen, [Ihren Python-Code in Azure remote zu debuggen](debugging-remote-python-code-on-azure.md), müssen Sie für **Konfiguration** **Debuggen** festlegen.
 
-1. Wählen Sie **Veröffentlichen**. Sobald Ihre Anwendung in Azure bereitgestellt ist, öffnet Ihr Standardbrowser diese Website. 
+1. Wählen Sie **Veröffentlichen**. Sobald Ihre Anwendung in Azure bereitgestellt ist, öffnet Ihr Standardbrowser diese Website.
 
 Visual Studio führt ebenfalls die folgenden Schritte aus, die Bestandteil dieses Prozesses sind:
 

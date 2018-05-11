@@ -1,6 +1,6 @@
 ---
-title: 'Arbeiten mit Python, Schritt 2: Schreiben und Ausführen von Code'
-description: Dies ist Schritt 2 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem das Bearbeiten und Ausführen eines einfachen Hallo Welt-Programms sowie ein interessanterer Code, der die Bearbeitungs- und IntelliSense-Features von Visual Studio veranschaulicht, erläutert werden.
+title: 'Tutorial: Arbeiten mit Python, Schritt 2: Schreiben und Ausführen von Code'
+description: Dies ist Schritt 2 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Bearbeiten von Code und Ausführen eines Projekts erläutert wird.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -85,7 +85,7 @@ Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie m
 
 1. Führen Sie das Programm erneut mit STRG+F5 oder über **Debuggen > Starten ohne Debuggen** aus. Schließen Sie das Ausgabefenster, wenn Sie fertig sind.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
 > [Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

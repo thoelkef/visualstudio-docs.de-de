@@ -1,6 +1,6 @@
 ---
-title: 'Arbeiten mit Python, Schritt 5: Installieren von Paketen'
-description: Dies ist Schritt 5 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden.
+title: 'Tutorial: Arbeiten mit Python, Schritt 5: Installieren von Paketen'
+description: Dies ist Schritt 5 einer grundlegenden Einführung in die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -66,7 +66,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
 > [Working with Git (Arbeiten mit Git)](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

@@ -58,13 +58,13 @@ interface IManagedAddin : IUnknown
   
 1.  Die Anwendung ermittelt VSTO-Add-Ins, indem sie Einträge unter dem folgenden Registrierungsschlüssel sucht:  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Anwendungsname >*\Addins\  
+     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Anwendungsname >* \Addins\  
   
      Jeder Eintrag unter diesem Registrierungsschlüssel entspricht einer eindeutigen ID des VSTO-Add-Ins. In der Regel ist dies der Name der VSTO-Add-In-Assembly.  
   
 2.  Die Anwendung sucht unter dem Eintrag für jedes VSTO-Add-In nach einem `Manifest` -Eintrag.  
   
-     Verwaltete VSTO-Add-ins können den vollständigen Pfad eines Manifests im Speichern der `Manifest` Eintrag unter HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Anwendungsname >*\Addins\\  *\<Add-in-ID >*. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.  
+     Verwaltete VSTO-Add-ins können den vollständigen Pfad eines Manifests im Speichern der `Manifest` Eintrag unter HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Anwendungsname >* \Addins\\  *\<Add-in-ID >*. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.  
   
 3.  Wenn die Anwendung einen `Manifest` -Eintrag findet, versucht sie, eine Ladekomponenten für verwaltete VSTO-Add-Ins zu laden. Die Anwendung wird bei dem Versuch, ein COM-Objekt zu erstellen, die IManagedAddin-Schnittstelle implementiert.  
   

@@ -1,9 +1,8 @@
 ---
-title: Erstellen einer Webvorlage für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Erstellen einer Webvorlage für Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f7dcc6f14bc631d4d5880d0d7f1ee123bde0306
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>Vorgehensweise: Manuelles Erstellen von Webvorlagen
 
@@ -26,13 +25,13 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
 > [!NOTE]
 > Webvorlagen müssen eine leere *WEBPROJ*-Datei und einen Verweis in der *VSTEMPLATE*-Datei im `File`-Attribut des `Project`-Elements enthalten. Zwar erfordern Webprojekte keine *PROJ*-Projektdatei, jedoch ist es notwendig, diese Stub-Datei zu erstellen, damit die Webvorlage einwandfrei funktionieren kann.
 
-### <a name="to-manually-create-a-web-template"></a>So erstellen Sie eine Webvorlage manuell
+## <a name="to-manually-create-a-web-template"></a>So erstellen Sie eine Webvorlage manuell
 
 1. Erstellen Sie ein Webprojekt.
 
 1. Ändern Sie die Dateien im Projekt, oder löschen Sie sie. Alternativ können Sie auch neue Dateien zum Projekt hinzufügen.
 
-1. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *.vstemplate* in demselben Verzeichnis wie das Projekt. Fügen Sie sie nicht zu dem Projekt in Visual Studio hinzu.
+1. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *vstemplate* in demselben Verzeichnis wie das Projekt. Fügen Sie sie nicht zu dem Projekt in Visual Studio hinzu.
 
 1. Bearbeiten Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Projektvorlagen bereitzustellen. Weitere Informationen finden Sie im [folgenden Beispiel](#example).
 
@@ -85,5 +84,5 @@ Im folgenden Beispiel wird eine einfache *VSTEMPLATE*-Datei für eine Webprojekt
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
-[Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
