@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen in einen lokalen Ordner - Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,17 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bereitstellen einer Web-app oder .NET Core-app in einen lokalen Ordner mit dem Visual Studio Publish-tool
 
 Sie können die **veröffentlichen** Tool zum Veröffentlichen der app in einen lokalen Ordner. 
 
 Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Visual Studio. Für Node.js die Schritte werden unterstützt, aber die Benutzeroberfläche unterscheidet sich.
+
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio 2017 installiert haben und die **.NET Framework** und die **.NET Core** Entwicklungsaufwand installiert.
+
+    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
@@ -40,7 +46,9 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png "wählen veröffentlichen")
 
-1. In der **veröffentlichen** Bereich auswählen **Ordner**.
+1. Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben die **veröffentlichen** Bereich wird angezeigt. Klicken Sie auf **neues Profil erstellen**.
+
+1. In der **Veröffentlichungsziel auswählen** Dialogfeld Wählen Sie **Ordner**.
 
     ![Wählen Sie die Ordner](../deployment/media/quickstart-publish-folder.png "Ordner auswählen")
 

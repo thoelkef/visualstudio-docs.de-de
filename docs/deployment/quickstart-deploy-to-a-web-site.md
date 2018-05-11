@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Veröffentlichen Sie eine Web-app oder eine .NET Core-app zu einer Website mit dem Visual Studio Publish-tool
 
@@ -24,13 +24,19 @@ Sie können die **veröffentlichen** Tool ASP.NET-Apps auf einer Website veröff
 
 Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Visual Studio. Für Node.js die Schritte werden unterstützt, aber die Benutzeroberfläche unterscheidet sich.
 
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio 2017 installiert haben und die **ASP.NET** und **.NET Framework** Entwicklungsaufwand. Für eine .NET Core-app müssen Sie auch die **.NET Core** arbeitsauslastung.
+
+    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
 1. Klicken Sie unter **Visual C#-** oder **Visual Basic**, wählen Sie **Web**, und wählen Sie dann im mittleren Bereich entweder **ASP.NET-Webanwendung ((.NET Framework)** oder (nur c#) **ASP.NET-Webanwendung für Core**, und klicken Sie dann auf **OK**.
 
-1. Wählen Sie **MVC**, stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und klicken Sie dann auf **OK**.
+1. Wählen Sie **MVC** (oder wählen Sie **Webanwendung (Model-View-Controller)** für .NET Core), stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und klicken Sie dann auf **OK** .
 
 1. Geben Sie einen Namen wie **MyWebApp** , und klicken Sie auf **OK**.
 
@@ -44,9 +50,11 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish-aspnet.png "wählen veröffentlichen")
 
-1. In der **veröffentlichen** Bereich auswählen **IIS, FTP usw.**.
+1. Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben die **veröffentlichen** Bereich wird angezeigt. Klicken Sie auf **neues Profil erstellen**.
 
-    ![Wählen Sie IIS, FTP usw.](../deployment/media/quickstart-publish-iis-ftp.png "wählen Sie IIS, FTP usw.")
+1. In der **Veröffentlichungsziel auswählen** Dialogfeld Wählen Sie **IIS, FTP usw**.
+
+    ![Wählen Sie IIS, FTP usw.](../deployment/media/quickstart-publish-iis-ftp.png "wählen Sie IIS, FTP usw..")
 
 1. Klicken Sie auf **Veröffentlichen**.
 
@@ -56,7 +64,7 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
 1. In der **Veröffentlichungsmethode** Feld, und wählen Sie eine Methode wie z. B. **Web Deploy** oder **FTP**.
 
-    Die Einstellungen, die Sie sehen, als Nächstes die publishing-Methode entsprechen.
+    Die Einstellungen, die Sie sehen, als Nächstes die publishing-Methode entsprechen. Web Deploy vereinfacht die Bereitstellung von Webanwendungen und Websites in IIS-Servern und muss als eine Anwendung auf dem Server installiert werden. Verwenden der [Webplattform-Installer](https://www.microsoft.com/web/downloads/platform.aspx) , es zu installieren.
 
 1. Konfigurieren Sie die erforderliche Einstellungen für die Veröffentlichungsmethode, und klicken Sie auf **Validate Connection**.
 
@@ -74,4 +82,7 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Bereitstellen von ASP.NET in IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+In diesem Schnellstart haben Sie gelernt, wie Sie Visual Studio verwenden, um ein Veröffentlichungsprofil zu erstellen. Sie können auch eine Veröffentlichung konfigurieren Profil durch Importieren von veröffentlichungseinstellungen.
+
+> [!div class="nextstepaction"]
+> [Import veröffentlichungseinstellungen und IIS bereitstellen](tutorial-import-publish-settings-iis.md)
