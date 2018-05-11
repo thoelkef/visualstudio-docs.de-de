@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Remotedebuggen ASP.NET Core unter IIS in Azure in Visual Studio 2017
 
@@ -83,18 +83,19 @@ In Visual Studio können Sie schnell veröffentlichen und Debuggen der app auf e
 
 Erstellen ein Azure-VM für Windows Server und dann installieren, und Konfigurieren von IIS und die erforderlichen Softwarekomponenten. Dies dauert länger als die Bereitstellung in Azure App Service und setzt voraus, dass Sie die restlichen Schritte in diesem Lernprogramm ausführen.
 
-Führen Sie zunächst die in beschriebenen Schritte [installieren und Ausführen von IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Führen Sie zunächst die in beschriebenen Schritte [installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Beim Öffnen von Port 80 in der Sicherheitsgruppe "Netzwerk" Öffnen Sie Port 4022 auch für den Remotedebugger. Auf diese Weise müssen Sie es später erneut zu öffnen.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Aktualisieren von Browsersicherheitseinstellungen unter Windows Server
 
-Je nach Ihrer Browsersicherheitseinstellungen kann es Speicherzeit Sie Ihrem Browser die folgenden vertrauenswürdigen Sites hinzugefügt werden, damit Sie problemlos in diesem Lernprogramm beschriebene Software herunterladen können. Möglicherweise müssen Sie den Zugriff auf diese Websites:
+Je nach Ihrer Browsersicherheitseinstellungen kann es Speicherzeit Sie Ihrem Browser die folgenden vertrauenswürdigen Sites hinzugefügt werden, damit Sie schneller in diesem Lernprogramm beschriebene Software herunterladen können. Möglicherweise müssen Sie den Zugriff auf diese Websites:
 
 - microsoft.com
 - go.microsoft.com
 - 0download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich. (Wenn Sie eine ältere Version des Remotedebuggers von my.visualstudio.com herunterladen müssen, sind einige zusätzliche vertrauenswürdige Websites erforderlich, sich anzumelden.)
 
@@ -113,7 +114,7 @@ Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anford
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a> Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
+### <a name="BKMK_deploy_asp_net"></a> Konfigurieren der ASP.NET-Website auf dem Windows Server-computer
 
 1. Öffnen Sie den **Internetinformationsdienste-Manager (IIS)** , und navigieren Sie zu **Websites**.
 

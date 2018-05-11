@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Uns zunächst an die Bereitstellung in Visual Studio
 
@@ -38,7 +38,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 ### <a name="deploy-to-local-folder"></a>Bereitstellen von lokalen Ordner
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Verwenden des Tools zum Veröffentlichen in einen lokalen Ordner bereitgestellt. Die genaue verfügbaren Optionen hängen von Ihrer app-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**, und wählen Sie dann **Ordner**. Weitere Informationen finden Sie unter [Bereitstellen in einen lokalen Ordner](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Verwenden des Tools zum Veröffentlichen in einen lokalen Ordner bereitgestellt. Die genaue verfügbaren Optionen hängen von Ihrer app-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Wählen Sie als Nächstes **Ordner**. Weitere Informationen finden Sie unter [Bereitstellen in einen lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,11 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Sie können mithilfe des Tools zum Veröffentlichen zum Bereitstellen einer die Website über FTP oder Web Deploy. Weitere Informationen finden Sie unter [bereitstellen, um eine Website](quickstart-deploy-to-a-web-site.md).
 
-    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. Wählen Sie das Tool "Veröffentlichen" die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus.
+    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Wählen Sie das Tool "Veröffentlichen" die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus.
 
     ![Wählen Sie IIS, FTP usw. ein.](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    Informationen zum Importieren eines Veröffentlichungsprofils in Visual Studio finden Sie unter [veröffentlichungseinstellungen importieren und Bereitstellen von IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
     Sie können auch ASP.NET-Anwendungen und-Dienste in verschiedene andere Weise bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und-Dienste](http://www.asp.net/aspnet/overview/deployment).
 
@@ -60,18 +62,16 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 ### <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js und .NET Core** Webanwendungen: Sie können mithilfe des Tools zum Veröffentlichen schnell apps nach Azure App Service oder auf einem virtuellen Azure-Computer bereitstellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. Klicken Sie im Dialogfeld "Veröffentlichen" Wählen Sie entweder **Microsoft Azure App Service** oder **Microsoft Azure Virtual Machines**, und befolgen Sie dann die Konfigurationsschritte.
+- **ASP.NET, ASP.NET Core, Python, Node.js und .NET Core** Webanwendungen: Sie können mithilfe des Tools zum Veröffentlichen schnell apps nach Azure App Service oder auf einem virtuellen Azure-Computer bereitstellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Klicken Sie im Dialogfeld "Veröffentlichen" Wählen Sie entweder **Microsoft Azure App Service** oder **Microsoft Azure Virtual Machines**, und befolgen Sie dann die Konfigurationsschritte.
 
     ![Wählen Sie die Azure App Service](../deployment/media/quickstart-publish-azure.png "-Azure App Service auswählen")
 
-    Um auf einem virtuellen Azure-Computer zu veröffentlichen, führen Sie einen Bildlauf nach rechts, und wählen Sie **Microsoft Azure Virtual Machines**.
+    Informationen zum Importieren eines Veröffentlichungsprofils aus Azure App Service zu Visual Studio finden Sie unter [veröffentlichungseinstellungen importieren und Bereitstellen von Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     Eine kurze Einführung finden Sie unter [Publish to Azure](quickstart-deploy-to-azure.md). Siehe auch [eine ASP.NET Core-app in Azure veröffentlichen](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Bereitstellung mit Git, finden Sie unter [fortlaufende Bereitstellung von ASP.NET Core in Azure mit Git](/aspnet/core/publishing/azure-continuous-deployment).
 
     > [!NOTE]
     > Wenn Sie nicht bereits über ein Azure-Konto verfügen, können Sie [registrieren Sie sich hier](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-- Andere **Azure Services**: finden Sie unter den jeweiligen [Azure-Dienst](/azure/#pivot=products) Dokumentation für die verschiedenen Bereitstellungsoptionen, die von Visual Studio unterstützt werden kann.
 
 ### <a name="publish-to-microsoft-store"></a>Microsoft-Datenspeicher veröffentlichen
 
