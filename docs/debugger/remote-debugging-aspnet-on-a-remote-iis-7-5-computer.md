@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remote-IIS-Computer
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -74,11 +74,17 @@ Wenn Sie ausführlichere Informationen zur ASP.NET auf IIS installieren möchten
 
 2. Das System neu starten (oder führen Sie **net Stop wurde/y** gefolgt von **Net start w3svc** über eine Eingabeaufforderung, um eine Änderung am System Pfad übernehmen).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Optional) Installieren Sie Web Deploy 3.6 für Hostserver unter WindowsServer
+
+In einigen Szenarien kann es sein schneller veröffentlichungseinstellungen importieren in Visual Studio anstelle von Optionen für die Bereitstellung manuell konfigurieren. Wenn Sie es vorziehen, importieren Sie anstatt konfigurieren das Veröffentlichungsprofil in Visual Studio veröffentlichen, finden Sie unter [Import veröffentlichungseinstellungen und IIS bereitstellen](../deployment/tutorial-import-publish-settings-iis.md). Andernfalls bleiben Sie in diesem Thema aus, und Lesen Sie weiter. Wenn Sie im Artikel zum Importieren von abschließen veröffentlichungseinstellungen und Bereitstellen der app erfolgreich, und klicken Sie dann zurück zu diesem Thema und starten Sie im Abschnitt auf [Herunterladen der Remoteserver-Verwaltungstools](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
+
+Beim Importieren von veröffentlichungseinstellungen, Sie können diesen Abschnitt überspringen.
 
 1. Öffnen Sie Windows Explorer, und erstellen Sie einen neuen Ordner **C:\Publish**, in dem ASP.NET-Projekt später bereitstellen möchten.
 

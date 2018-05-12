@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Remotedebuggen ASP.NET Core unter IIS in Azure in Visual Studio 2017
 
@@ -110,11 +110,17 @@ Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anford
 
 3. Das System neu starten (oder führen Sie **net Stop wurde/y** gefolgt von **Net start w3svc** über eine Eingabeaufforderung, um eine Änderung am System Pfad übernehmen).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Optional) Installieren Sie Web Deploy 3.6 für Hostserver unter WindowsServer
+
+In einigen Szenarien kann es sein schneller veröffentlichungseinstellungen importieren in Visual Studio anstelle von Optionen für die Bereitstellung manuell konfigurieren. Wenn Sie es vorziehen, importieren Sie anstatt konfigurieren das Veröffentlichungsprofil in Visual Studio veröffentlichen, finden Sie unter [Import veröffentlichungseinstellungen und IIS bereitstellen](../deployment/tutorial-import-publish-settings-iis.md). Andernfalls bleiben Sie in diesem Thema aus, und Lesen Sie weiter. Wenn Sie im Artikel zum Importieren von abschließen veröffentlichungseinstellungen und Bereitstellen der app erfolgreich, und klicken Sie dann zurück zu diesem Thema und starten Sie im Abschnitt auf [Herunterladen der Remoteserver-Verwaltungstools](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Konfigurieren der ASP.NET-Website auf dem Windows Server-computer
+
+Beim Importieren von veröffentlichungseinstellungen, Sie können diesen Abschnitt überspringen.
 
 1. Öffnen Sie den **Internetinformationsdienste-Manager (IIS)** , und navigieren Sie zu **Websites**.
 
