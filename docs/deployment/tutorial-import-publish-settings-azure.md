@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen von einer Anwendung in Azure App Service durch Importieren von veröffentlichungseinstellungen in Visual Studio
 
 Können Sie die **veröffentlichen** Tool zum Importieren von veröffentlichungseinstellungen, und klicken Sie dann die app bereitstellen. In diesem Artikel verwenden wir veröffentlichungseinstellungen für Azure App Service, jedoch können Sie ähnliche Schritte zum Importieren von veröffentlichungseinstellungen aus [IIS](../deployment/tutorial-import-publish-settings-iis.md). In einigen Szenarien ist die Verwendung von veröffentlichen, Einstellungsprofil, das schneller sein kann als das manuelle Konfigurieren der Bereitstellung an den Dienst für jede Installation von Visual Studio, aus.
 
-Diese Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-apps in Visual Studio. Die Schritte entsprechen den Visual Studio 2017 Version 15,6.
+Diese Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-apps in Visual Studio. Sie können auch importieren veröffentlichungseinstellungen für [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) apps. Die Schritte entsprechen den Visual Studio 2017 Version 15,6.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -30,10 +30,10 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Importieren Sie die Datei mit veröffentlichungseinstellungen in Visual Studio
 > * Bereitstellen der app in Azure App Service
 
-Eine Datei mit veröffentlichungseinstellungen (*publishsettings) unterscheidet sich ein Veröffentlichungsprofil angeben (*.pubxml) in Visual Studio erstellt wurden. Eine Datei mit veröffentlichungseinstellungen von Azure App Service erstellt wird, und klicken Sie dann in Visual Studio importiert werden können.
+Eine Datei mit veröffentlichungseinstellungen (*\*publishsettings*) unterscheidet sich ein Veröffentlichungsprofil angeben (*\*pubxml*) in Visual Studio erstellt wurden. Eine Datei mit veröffentlichungseinstellungen von Azure App Service erstellt wird, und klicken Sie dann in Visual Studio importiert werden können.
 
 > [!NOTE]
-> Wenn Sie nur eine Visual Studio Veröffentlichungsprofil kopieren müssen (\*Datei "pubxml") aus einer Installation von Visual Studio in einen anderen finden Sie das Veröffentlichungsprofil  *\<Profilename\>pubxml*, in der  *\\< Projectname\>\Properties\PublishProfiles* Ordner für verwaltete Projekttypen zur Verfügung. Für Websites, suchen Sie unter der *\App_Data* Ordner. Die publishing Profile handelt es sich um MSBuild XML-Dateien.
+> Wenn Sie nur eine Visual Studio Veröffentlichungsprofil kopieren müssen (*\*pubxml* Datei) aus einer Installation von Visual Studio in einen anderen finden Sie das Veröffentlichungsprofil  *\<Profilename\>pubxml*in der  *\\< Projectname\>\Properties\PublishProfiles* Ordner für verwaltete Projekttypen zur Verfügung. Für Websites, suchen Sie unter der *\App_Data* Ordner. Die publishing Profile handelt es sich um MSBuild XML-Dateien.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 

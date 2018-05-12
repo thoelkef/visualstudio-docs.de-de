@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen von einer Anwendung in IIS durch Importieren von veröffentlichungseinstellungen in Visual Studio
 
@@ -31,7 +31,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Importieren Sie die Datei mit veröffentlichungseinstellungen in Visual Studio
 > * Bereitstellen der app in IIS
 
-Eine Datei mit veröffentlichungseinstellungen (\*publishsettings) unterscheidet sich ein Veröffentlichungsprofil angeben (\*.pubxml) in Visual Studio erstellt wurden. Eine Datei mit veröffentlichungseinstellungen wird erstellt, indem der IIS- oder Azure App Service, oder kann manuell erstellt werden, und klicken Sie dann in Visual Studio importiert werden können.
+Eine Datei mit veröffentlichungseinstellungen (*\*publishsettings*) unterscheidet sich ein Veröffentlichungsprofil angeben (*\*pubxml*) in Visual Studio erstellt wurden. Eine Datei mit veröffentlichungseinstellungen wird erstellt, indem der IIS- oder Azure App Service, oder kann manuell erstellt werden, und klicken Sie dann in Visual Studio importiert werden können.
 
 > [!NOTE]
 > Wenn Sie nur eine Visual Studio Veröffentlichungsprofil kopieren müssen (\*Datei "pubxml") aus einer Installation von Visual Studio in einen anderen finden Sie das Veröffentlichungsprofil  *\<Profilename\>pubxml*, in der  *\\< Projectname\>\Properties\PublishProfiles* Ordner für verwaltete Projekttypen zur Verfügung. Für Websites, suchen Sie unter der *\App_Data* Ordner. Die publishing Profile handelt es sich um MSBuild XML-Dateien.
@@ -44,7 +44,7 @@ Eine Datei mit veröffentlichungseinstellungen (\*publishsettings) unterscheidet
 
     Die Schritte in diesem Artikel basieren auf Visual Studio 2017
 
-* Zum Generieren der Datei mit veröffentlichungseinstellungen aus IIS müssen Sie einen anderen Computer unter Windows Server 2012 mit der IIS 8.0-Webserver-Rolle ordnungsgemäß konfiguriert und entweder ASP.NET 4.5 oder ASP.NET Core installiert. ASP.NET Core, finden Sie unter [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Zum Generieren der Datei mit veröffentlichungseinstellungen aus IIS benötigen Sie einen Computer mit Windows Server 2012 mit der IIS 8.0-Webserver-Rolle ordnungsgemäß konfiguriert und ASP.NET 4.5 oder ASP.NET Core installiert. ASP.NET Core, finden Sie unter [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 
