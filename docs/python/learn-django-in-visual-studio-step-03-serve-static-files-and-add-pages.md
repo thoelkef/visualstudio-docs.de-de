@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Tutorial Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -283,4 +283,4 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 - [Writing your first Django app, part 3 (views) (Erstellen Ihrer ersten Django-App – Teil 3: Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Weitere Funktionen von Django-Vorlagen, z.B. die Ablaufsteuerung, finden Sie unter [The Django template language (Django-Vorlagensprache)](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Ausführliche Informationen zur Verwendung des `{% url %}`-Tags finden Sie unter der [URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) innerhalb von [Built-in template tags and filters for Django templates reference (Integrierte Vorlagentags und Filter für die Django-Vorlagenreferenz)](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

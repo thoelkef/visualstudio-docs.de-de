@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d48c8f86d29c990d254b2ed1d0adf471c24d6b8
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutorial, Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 
@@ -217,4 +217,4 @@ Antwort: Das nachgestellte „$“ im regulären Ausdruck wurde in vielen Versio
 ## <a name="going-deeper"></a>Vertiefung
 
 - [Writing your first Django app, part 4 - forms and generic views (Erstellen Ihrer ersten Django-App – Teil 4: Formulare und allgemeine Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- Quellcode des Tutorials auf GitHub unter [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

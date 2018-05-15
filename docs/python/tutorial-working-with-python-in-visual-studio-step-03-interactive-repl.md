@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Arbeiten mit Python, Schritt 3: Interaktives REPL-Fenster'
+title: 'Tutorial: Arbeiten mit Python, Schritt 3: Interaktives REPL'
 description: Dies ist Schritt 3 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das interaktive Python-REPL-Fenster erläutert wird.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 

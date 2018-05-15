@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Tutorial, Schritt 6: Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“
 
@@ -361,7 +361,7 @@ Der Aufruf von `admin.site.register` verbindet dann diese Klasse mit dem Modell 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!Note]
-> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Lösung sollte mit dem Tutorial-Quellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Lösung sollte mit dem Tutorial-Quellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Sie haben jetzt sämtliche Vorlagen, „Leeres Django-Webprojekt“, „Django Webprojekt“ und „Fragt Django-Webprojekt ab“, eingehend in Visual Studio untersucht. Sie haben alle Grundlagen von Django kennen gelernt, z.B. die Verwendung von Ansichten und Vorlagen, und haben sich mit der Weiterleitung, Authentifizierung und Verwendung von Datenbankmodellen näher beschäftigt. Sie sollten nun in der Lage sein, selbst eine Web-App mit allen Ansichten und Modellen zu erstellen, die Sie benötigen.
 
