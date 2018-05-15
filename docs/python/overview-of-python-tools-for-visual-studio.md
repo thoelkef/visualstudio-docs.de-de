@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -46,7 +46,7 @@ Weitere Informationen finden Sie unter:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Vielfältige Funktionen für die Bearbeitung, IntelliSense und Kennzeichnung von Code
 
-Visual Studio bietet einen erstklassigen Python-Editor mit folgenden Funktionen: Syntaxfarben, automatische Vervollständigung für den gesamten Code und alle Bibliotheken, Codeformatierung, Signaturhilfe, Umgestaltung, Typhinweise und Linting (Linting wird unten dargestellt). Visual Studio bietet auch einzigartige Features wie die Klassenansicht, „Zur Definition wechseln“, „Alle Verweise suchen“ und Codeausschnitte. Durch die direkte Integration in das [interaktive-Fenster](#interactive-window) können Sie schnell Python-Code entwickeln, der bereits in einer Datei gespeichert ist.
+Visual Studio bietet einen erstklassigen Python-Editor mit folgenden Funktionen: Syntaxfarben, automatische Vervollständigung für den gesamten Code und alle Bibliotheken, Codeformatierung, Signaturhilfe, Umgestaltung, Linting (unten dargestellt) und Typhinweise. Visual Studio bietet auch einzigartige Features wie die Klassenansicht, „Zur Definition wechseln“, „Alle Verweise suchen“ und Codeausschnitte. Durch die direkte Integration in das [interaktive-Fenster](#interactive-window) können Sie schnell Python-Code entwickeln, der bereits in einer Datei gespeichert ist.
 
 ![Codevervollständigungen für Python-Code in Visual Studio](media/code-editing-completions-simple.png)
 

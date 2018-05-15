@@ -2,16 +2,22 @@
 layout: LandingPage
 title: Bereitstellen von Apps in Visual Studio | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie mit Visual Studio 2017 Anwendungen, Dienste und Komponenten bereitstellen.
+ms.topic: landing-page
 ms.technology: vs-ide-deployment
-ms.openlocfilehash: 269cf84fcb1a1928983c9a9c12f97dd616eae7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: 141348fc5521eb0ffe3989ba5a0d76a251308515
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Bereitstellung in Visual Studio
 
 Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
+
+<h2>Lernen Sie die Bereitstellung mit Visual Studio in fünfminütigen Schnellstarts kennen</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -21,11 +27,11 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Übersicht über Bereitstellungsfunktionen</h3>
+                        <h3>Erster Einblick in die Bereitstellungsoptionen</h3>
                     </div>
                 </div>
             </div>
@@ -39,7 +45,7 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +63,7 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,11 +81,88 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Bereitstellen in Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Vertiefen Sie ihre Kenntnisse mithilfe von Tutorials</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/dotnet/core/deploying/deploy-with-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Bereitstellen einer .NET Core-App</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/packaging/packaging-uwp-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Packen einer UWP-App für den Microsoft Store</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Bereitstellen von ASP.NET in Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/porting/desktop-to-uwp-packaging-dot-net">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)</h3>
                     </div>
                 </div>
             </div>
@@ -93,7 +176,7 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -105,17 +188,35 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bereitstellung in Visual C++</h3>
+                        <h3>Importieren von Veröffentlichungseinstellungen und Bereitstellung in Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Importieren von Veröffentlichungseinstellungen und Bereitstellung in IIS</h3>
                     </div>
                 </div>
             </div>
@@ -129,11 +230,29 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Bereitstellen einer Desktop-App mit ClickOnce</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Erfahren Sie mehr zur Bereitstellung in Visual C++</h3>
                     </div>
                 </div>
             </div>

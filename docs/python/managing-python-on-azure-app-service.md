@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Einrichten einer Python-Umgebung in Azure App Service
 
@@ -46,7 +46,7 @@ Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus m
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Auswählen einer Python-Version über den Azure Resource Manager
 
-Wenn Sie App Service mit einer Azure Resource Manager-Vorlage bereitstellen, fügen Sie die Websiteerweiterung als Ressource hinzu. Die Erweiterung wird als geschachtelte Ressource mit dem Typ `siteextensions` und dem Namen aus [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) angezeigt.
+Wenn Sie App Service mit einer Azure Resource Manager-Vorlage bereitstellen, fügen Sie die Websiteerweiterung als Ressource hinzu. Insbesondere wird die Erweiterung als geschachtelte Ressource (ein `resources`-Objekt unter `resources`) mit dem Typ `siteextensions` und dem Namen aus [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) angezeigt.
 
 Nach dem Hinzufügen eines Verweises auf `python361x64` (Python 3.6.1 x64), sieht Ihre Vorlage in etwa wie folgt aus (einige Eigenschaften werden ausgelassen):
 
