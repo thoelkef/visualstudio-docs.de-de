@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Installieren von Python-Interpretern
 
@@ -27,7 +27,7 @@ Für **Visual Studio 2015 und frühere Versionen** müssen Sie einen der Interpr
 
 Visual Studio (alle Versionen) überprüft die Registrierung (gemäß den Angaben unter [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) ([PEP 514 – Registrieren von Python in der Windows-Registrierung]) und erkennt so automatisch jeden installierten Python-Interpreter und die zugehörige Umgebung.
 
-Wenn Visual Studio keine installierte Umgebung findet, folgen Sie den Anweisungen unter [Manuelles Identifizieren einer vorhandenen Umgebung](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+Wenn Visual Studio keine installierte Umgebung findet, folgen Sie den Anweisungen unter [Manuelles Identifizieren einer vorhandenen Umgebung](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 Visual Studio zeigt im Fenster [Python-Umgebungen](managing-python-environments-in-visual-studio.md) alle bekannten Umgebungen an und erkennt Updates für vorhandene Interpreter automatisch.
 
@@ -45,7 +45,7 @@ Wenn Sie als Entwickler neue Formen der Erkennung für Python-Umgebungen bereits
 
 Wenn Sie einen vorhandenen Interpreter an einen neuen Speicherort im Dateisystem verschieben, erkennt Visual Studio diese Änderung nicht automatisch.
 
-- Wenn Sie den Speicherort des Interpreters ursprünglich über das Fenster **Python-Umgebungen** angegeben haben, verwenden Sie die Registerkarte **Konfigurieren** in diesem Fenster, um den neuen Speicherort zu ermitteln. Weitere Informationen finden Sie unter [Manuelles Identifizieren einer vorhandenen Umgebung](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- Wenn Sie den Speicherort des Interpreters ursprünglich über das Fenster **Python-Umgebungen** angegeben haben, verwenden Sie die Registerkarte **Konfigurieren** in diesem Fenster, um den neuen Speicherort zu ermitteln. Weitere Informationen finden Sie unter [Manuelles Identifizieren einer vorhandenen Umgebung](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Wenn Sie den Interpreter mit einem Installationsprogramm installiert haben, führen Sie die folgenden Schritte aus, um den Interpreter am neuen Speicherort neu zu installieren:
 

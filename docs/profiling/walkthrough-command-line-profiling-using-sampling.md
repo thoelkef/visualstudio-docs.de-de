@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 
@@ -54,13 +54,13 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
 
 4. Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Starten Sie die Profilerstellung, indem Sie VSPerfCmd.exe ausführen. Dies ist das Befehlszeilentool, das den Profiler steuert. Mit dem folgenden Befehl werden Anwendung und Profiler im Samplingmodus gestartet:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
 
 9. Schließen Sie den Profiler. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Verwenden Sie den folgenden Befehl, um die Umgebungsvariablen zurückzusetzen:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
 
     - Generieren Sie mithilfe des Befehlszeilentools "VSPerfReport.exe" eine Datei mit durch Trennzeichen getrennten Werten (CSV-Datei). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE verwendet werden können:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

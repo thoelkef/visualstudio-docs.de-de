@@ -1,19 +1,19 @@
 ---
 title: Anpassen des Buildsystems
-description: ''
+description: In diesem Artikel erhalten Sie eine kurze Einführung in das MSBuild-System, das von Visual Studio für Mac verwendet wird.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 649289700aa984235f432528a59b970762d26be0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
-MSBuild ist ein von Microsoft entwickeltes Buildmodul, mit dem hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung des Buildmoduls von Microsoft mit dem Namen **xbuild**. xbuild wurde allerdings auslaufen gelassen, um auf allen Betriebssystemen Platz für MSBuild zu machen.
+MSBuild ist eine von Microsoft entwickelte Build-Engine, mit der hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung der Build-Engine von Microsoft mit dem Namen **xbuild**. xbuild wurde allerdings auslaufen gelassen, um auf allen Betriebssystemen Platz für MSBuild zu machen.
 
 **MSBuild** wird hauptsächlich für Buildsysteme für Projekte in Visual Studio für Mac verwendet. 
 

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Überschreibungen durch den Hilfeinhalts-Manager
 
@@ -24,7 +24,7 @@ Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Vi
 
 1. Erstellen Sie eine *PKGDEF-Datei* mit `[$RootKey$\Help]` als erste Zeile.
 
-2. Fügen Sie beliebige oder alle Registrierungsschlüsselwerte in verschiedenen Zeilen hinzu, die in der Tabelle unten dargestellt sind, z.B. `“UseOnlineHelp”=dword:00000001`.
+2. Fügen Sie beliebige oder alle Registrierungsschlüsselwerte in verschiedenen Zeilen hinzu, die in der Tabelle unten dargestellt sind, z.B. `"UseOnlineHelp"=dword:00000001`.
 
 3. Kopieren Sie die Datei nach *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<Edition\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Sie können das Standardverhalten von Help Viewer und von Hilfefunktionen der Vi
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Verwenden des Registrierungs-Editors zum Ändern des Help Viewer-Verhaltens
@@ -60,11 +60,11 @@ Die folgenden zwei Verhalten können durch Festlegen von Registrierungsschlüsse
 |Aufgabe|-Registrierungsschlüssel|Wert|Daten|
 |----------|-----|------|----|
 |BITS-Auftragspriorität überschreiben|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3 (auf einem 64-Bit-Computer)|BITSPriority|**Vordergrund**, **hoch**, **regulär** oder **niedrig**|
-|Auf den lokalen Inhaltsspeicher auf der Netzwerkfreigabe zeigen|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Auf den lokalen Inhaltsspeicher auf der Netzwerkfreigabe zeigen|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Administratorleitfaden für Help Viewer](../ide/help-viewer-administrator-guide.md)
+- [Help Viewer-Administratorleitfaden](../ide/help-viewer-administrator-guide.md)
 - [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)
 - [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
 - [Ändern von Isolated Shell mithilfe der PKGDEF-Datei](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

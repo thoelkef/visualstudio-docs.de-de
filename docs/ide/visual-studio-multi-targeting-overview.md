@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht: Ausrichtung auf mehrere Zielframeworkversionen in Visual Studio
 
@@ -50,7 +50,7 @@ Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, 
 
 - Filtern von benutzerdefinierten Steuerelementen in der **Toolbox**, um die Steuerelemente zu entfernen, die in der Zielversion nicht verfügbar sind, und um nur die neuesten Steuerelemente anzuzeigen, wenn mehrere Steuerelemente für die Zielversion verfügbar sind.
 
-- Filtern von IntelliSense, um Sprachfunktionen auszulassen, die in der Zielversion nicht verfügbar sind.
+- Filtern von **IntelliSense**, um Sprachfeatures auszulassen, die in der Zielversion nicht verfügbar sind.
 
 - Filtern von Eigenschaften im Fenster **Eigenschaften**, um die Eigenschaften auszulassen, die in der Zielversion nicht verfügbar sind.
 
@@ -61,7 +61,7 @@ Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, 
 > [!NOTE]
 > Durch Frameworkziele wird nicht garantiert, dass die Anwendung ordnungsgemäß ausgeführt wird. Sie müssen die Anwendung dennoch testen, um sicherzustellen, dass Sie mit der Zielversion ausgeführt wird. Sie können keine Frameworkversionen als Ziel verwenden, die älter als .NET Framework 2.0 sind.
 
-## <a name="selecting-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
+## <a name="select-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
 
 Wenn Sie ein Projekt erstellen, wählen Sie die .NET Framework-Version im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Für Vorlagentypen, die .NET Framework nicht benötigen, z.B. .NET Core-Vorlagen, wird die **Framework**-Dropdownliste ausgeblendet.
 
@@ -69,17 +69,17 @@ Wenn Sie ein Projekt erstellen, wählen Sie die .NET Framework-Version im Dialog
 
 Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
+## <a name="resolve-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
 
 Um eine .NET Framework-Version als Ziel zu verwenden, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Sie können Developer Packs für verschiedene Versionen von .NET Framework auf der Website für [.NET-Downloads](https://www.microsoft.com/net/download/windows) herunterladen.
 
-Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind DLL-Dateien, die in einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-Weitere Informationen zu Assemblyverweisen finden Sie unter [Resolving Assemblies at Design Time (Auflösen von Assemblys zur Entwurfszeit)](../msbuild/resolving-assemblies-at-design-time.md).
+Weitere Informationen zu Assemblyverweisen finden Sie unter [Auflösen von Assemblys zur Entwurfszeit](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>Aktivieren von LINQ
+## <a name="enable-linq"></a>Aktivieren von LINQ
 
-Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf "System.Core" und ein Import auf Projektebene für "System.Linq" (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich Option Infer aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [Arbeiten mit LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf **System.Core** und ein Import auf Projektebene für <xref:System.Linq> (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich `Option Infer` aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [Arbeiten mit LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Siehe auch
 

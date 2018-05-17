@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e18456ad4665359e33d7a9b5f064585f8195be
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5a135115dc6d004e8b853822d4fc6024d5aec84
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="attach"></a>Anfügen
 Die VSPerfCmd.exe-Option **Attach** beginnt die Samplingprofilerstellung für den laufenden Prozess, der von der Prozess-ID (PID) angegeben wird.  
@@ -26,7 +26,7 @@ Die VSPerfCmd.exe-Option **Attach** beginnt die Samplingprofilerstellung für de
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cmd  
 VSPerfCmd.exe /Attach:ProcessID [Options]  
 ```  
   
@@ -69,7 +69,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel wird veranschaulicht, wie eine ausgeführte Instanz einer Anwendung mit der Prozess-ID 12345 angefügt wird.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Attach:12345  
 ```  

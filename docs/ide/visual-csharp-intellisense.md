@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -67,11 +67,11 @@ Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollst�
 
 - **Objektinitialisierer:** Nur Members, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.
 
-- **Neues Schlüsselwort:** Wenn Sie `new` eingeben und dann die LEERTASTE drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.
+- **Neues Schlüsselwort:** Wenn Sie `new` eingeben und dann die **Leertaste** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.
 
-- **enum-Schlüsselwort**: Wenn Sie nach einem Gleichheitszeichen für eine enum-Zuweisung die LEERTASTE drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden automatisch Elemente in der Vervollständigungsliste ausgewählt, nachdem Sie das return-Schlüsselwort eingegeben oder eine Deklaration erstellt haben.
+- **enum-Schlüsselwort**: Wenn Sie nach einem Gleichheitszeichen für eine enum-Zuweisung die **Leertaste** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden automatisch Elemente in der Vervollständigungsliste ausgewählt, nachdem Sie das return-Schlüsselwort eingegeben oder eine Deklaration erstellt haben.
 
-- **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die LEERTASTE drücken.
+- **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die **Leertaste** drücken.
 
 - **Ereignisse:** Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.
 
@@ -83,7 +83,7 @@ IntelliSense speichert, welche Member Sie in der Popupliste [Member auflisten](.
 
 ## <a name="override"></a>override
 
-Bei der Eingabe von [override](/dotnet/csharp/language-reference/keywords/override) und Drücken der LEERTASTE zeigt IntelliSense alle zulässigen Basisklassenmember an, die Sie in einem Popuplistenfeld überschreiben können. Durch die Eingabe des Rückgabetyps der Methode nach `override` wird IntelliSense angewiesen, nur Methoden anzuzeigen, die denselben Typ zurückgeben. Wenn IntelliSense keine Übereinstimmung findet, werden alle Basisklassenmember angezeigt.
+Beim Eingeben von [override](/dotnet/csharp/language-reference/keywords/override) und Drücken der **Leertaste** zeigt IntelliSense alle zulässigen Basisklassenmember an, die Sie in einem Popuplistenfeld überschreiben können. Durch die Eingabe des Rückgabetyps der Methode nach `override` wird IntelliSense angewiesen, nur Methoden anzuzeigen, die denselben Typ zurückgeben. Wenn IntelliSense keine Übereinstimmung findet, werden alle Basisklassenmember angezeigt.
 
 ## <a name="automatic-code-generation"></a>Automatische Codegenerierung
 
@@ -91,7 +91,7 @@ Bei der Eingabe von [override](/dotnet/csharp/language-reference/keywords/overri
 
 Der IntelliSense-Vorgang **Hinzufügen mit** fügt automatisch die erforderliche `using`-Anweisung zu Ihrer Codedatei hinzu. Durch diese Funktion können Sie den Schwerpunkt auf den zu schreibenden Code statt auf einen anderen Teil des Codes legen.
 
-Um den Vorgang "Hinzufügen mit" zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und anschließend `XmlTextReader` zum Text der `Main`-Methode hinzufügen, wird eine rote Wellenlinie in dieser Codezeile angezeigt, da der Typverweis nicht aufgelöst werden kann. Sie können dann „Hinzufügen mit“ über die schnelle Aktion aufrufen. Die schnelle Aktion ist nur sichtbar, wenn der Cursor sich auf dem ungebundenen Typ befindet.
+Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und anschließend `XmlTextReader` zum Text der `Main`-Methode hinzufügen, wird eine rote Wellenlinie in dieser Codezeile angezeigt, da der Typverweis nicht aufgelöst werden kann. Sie können dann **Hinzufügen mit** über die **Schnellaktionen** aufrufen. Die Option **Schnellaktionen** ist nur sichtbar, wenn sich der Cursor auf dem ungebundenen Typ befindet.
 
 ![Darstellung von „Hinzufügen mit“ und der erweiterten schnellen Aktion](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
 
@@ -101,17 +101,17 @@ Klicken Sie auf das Glühbirnensymbol und dann auf **using System.Xml;**, um die
 
 Mit der Option **Using-Direktiven entfernen und sortieren** können Sie `using`- und `extern`-Deklarationen sortieren und entfernen, ohne das Verhalten des Quellcodes zu ändern. Im Laufe der Zeit können Quelldateien aufgrund von nicht benötigten und unorganisierten `using`-Direktiven sehr groß werden und schwer zu lesen sein. Die Option **Using-Direktiven entfernen und sortieren** komprimiert Quellcode, in dem sie nicht verwendete `using`-Direktiven entfernt, und verbessert die Lesbarkeit durch Sortierung. Klicken Sie im Menü **Bearbeiten** auf die Option **IntelliSense** und dann auf **Ausschnitt einfügen**.
 
-### <a name="implement-interface"></a>Schnittstelle implementieren
+### <a name="implement-interface"></a>Implementieren einer Schnittstelle
 
-IntelliSense bietet die Möglichkeit, [Schnittstellen](/dotnet/csharp/language-reference/keywords/interface) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für Schnellaktionen angezeigt. Mithilfe der Glühbirne können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziten Namen weisen die Methodendeklarationen den Namen der Schnittstelle auf, während sie bei impliziten Namen keinen Hinweis auf die Schnittstelle enthalten, der sie angehören. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense bietet die Möglichkeit, eine [Schnittstelle](/dotnet/csharp/language-reference/keywords/interface) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für **Schnellaktionen** angezeigt. Mithilfe der Glühbirne können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziten Namen weisen die Methodendeklarationen den Namen der Schnittstelle auf, während sie bei impliziten Namen keinen Hinweis auf die Schnittstelle enthalten, der sie angehören. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Bei der Schnittstellenimplementierung wird die Mindestanzahl von Methodenstubs generiert, die für die Schnittstelle benötigt werden. Wenn eine Basisklasse Teile der Schnittstelle implementiert, werden diese Stubs nicht neu generiert.
 
 ### <a name="implement-abstract-base-class"></a>Implementieren abstrakter Basisklassen
 
-IntelliSense bietet eine Option zum automatischen Implementieren von Membern einer abstrakten Basisklasse während der Arbeit im Code-Editor. Normalerweise erfordert das Implementieren von Membern einer abstrakten Basisklasse das Erstellen einer neuen Methodendefinition für jede Methode der abstrakten Basisklasse in der abgeleiteten Klasse. Nachdem Sie den Namen einer abstrakten Basisklasse mithilfe von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für Schnellaktionen angezeigt. Durch die Glühbirne können Sie Basisklassenmethoden automatisch implementieren.
+IntelliSense bietet eine Option zum automatischen Implementieren von Membern einer abstrakten Basisklasse während der Arbeit im Code-Editor. Normalerweise erfordert das Implementieren von Membern einer abstrakten Basisklasse das Erstellen einer neuen Methodendefinition für jede Methode der abstrakten Basisklasse in der abgeleiteten Klasse. Nachdem Sie den Namen einer abstrakten Basisklasse mithilfe von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für **Schnellaktionen** angezeigt. Durch die Glühbirne können Sie Basisklassenmethoden automatisch implementieren.
 
-Die durch das Feature zum Implementieren einer abstrakten Basisklasse generierten MethodStubs werden durch den in der Datei „MethodStub.snippet“ definierten Codeausschnitt modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
+Die durch das Feature **Abstrakte Basisklasse implementieren** generierten MethodStubs werden durch den in der Datei *MethodStub.snippet* definierten Codeausschnitt modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Aus Verwendung generieren
 
@@ -119,9 +119,9 @@ Mit der Funktion **Aus Verwendung generieren** können Sie Klassen und Member ve
 
 Unter jedem nicht definierten Bezeichner wird eine rote, wellenförmige Unterstreichung angezeigt. Wenn Sie den Mauszeiger auf den Bezeichner bewegen, wird eine Fehlermeldung als QuickInfo angezeigt. Sie können eines der folgenden Verfahren verwenden, um die entsprechenden Optionen anzuzeigen:
 
-- Klicken Sie auf den nicht definierten Bezeichner. Eine Glühbirne für Schnellaktionen wird unter dem Bezeichner angezeigt. Klicken Sie auf die Glühbirne.
+- Klicken Sie auf den nicht definierten Bezeichner. Unter dem Bezeichner wird eine Glühbirne für **Schnellaktionen** angezeigt. Klicken Sie auf die Glühbirne.
 
-- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG** + **.** (STRG+Punkt).
+- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG**+**.** (**STRG**+Punkt).
 
 - Klicken Sie mit der rechten Maustaste auf den nicht definierten Bezeichner, und klicken Sie auf **Schnellaktionen und Refactorings**.
 
@@ -135,17 +135,17 @@ Die angezeigten Optionen können Folgendes umfassen:
 
 - **Klasse generieren**
 
-- **Neuen Typ generieren...** (für eine Klasse, Struktur, Schnittstelle oder Enumeration)
+- **Neuen Typ generieren** (für Klasse, Struktur, Schnittstelle oder Enumeration)
 
 ## <a name="generate-event-handlers"></a>Ereignishandler generieren
 
 Im Code-Editor kann IntelliSense Sie beim Verknüpfen von Methoden (Ereignishandlern) mit Ereignisfeldern unterstützen.
 
-Wenn Sie den `+=`-Operator nach einem Ereignisfeld in einer CS-Datei eingeben, fordert IntelliSense Sie dazu auf, die **TAB-TASTE** zu drücken. Hierbei wird eine neue Instanz eines Delegaten eingefügt, der auf die Methode zum Behandeln des Ereignisses zeigt.
+Wenn Sie den `+=`-Operator nach einem Ereignisfeld in einer *CS*-Datei eingeben, fordert IntelliSense Sie dazu auf, die **Tab**-Taste zu drücken. Hierbei wird eine neue Instanz eines Delegaten eingefügt, der auf die Methode zum Behandeln des Ereignisses zeigt.
 
 ![Button automatisch verknüpfen](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
-Wenn Sie die **TAB-TASTE** drücken, schließt IntelliSense die Anweisung automatisch für Sie ab und zeigt den Ereignishandlerverweis als ausgewählten Text im Code-Editor an. Um die automatische Ereigniseinbindung abzuschließen, fordert IntelliSense Sie erneut zum Drücken der **TAB-TASTE** auf, um einen leeren Stub für den Ereignishandler zu erstellen.
+Wenn Sie die **Tab**-Taste drücken, schließt IntelliSense die Anweisung automatisch für Sie ab und zeigt den Ereignishandlerverweis als ausgewählten Text im Code-Editor an. Um die automatische Ereigniseinbindung abzuschließen, fordert IntelliSense Sie erneut zum Drücken der **TAB-TASTE** auf, um einen leeren Stub für den Ereignishandler zu erstellen.
 
 ![Ereignishandler generieren](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
@@ -155,9 +155,9 @@ Wenn Sie die **TAB-TASTE** drücken, schließt IntelliSense die Anweisung automa
 Wenn Sie die **TAB-TASTE** drücken, versieht IntelliSense eine Methode per Stub mit der richtigen Signatur und fügt den Cursor in den Text Ihres Ereignishandlers ein.
 
 > [!NOTE]
-> Verwenden Sie im Menü **Ansicht** (**STRG** + **-**) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
+> Verwenden Sie im Menü **Ansicht** (**STRG**+**-**) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von IntelliSense](../ide/using-intellisense.md)
+- [Verwendung von IntelliSense](../ide/using-intellisense.md)
 - [Visual Studio-IDE](../ide/visual-studio-ide.md)

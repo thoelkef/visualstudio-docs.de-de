@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes 
 
@@ -79,7 +79,7 @@ Weitere Informationen dazu, welche Plattformen und Konfigurationen von den Tests
     > [!WARNING]
     > Alle auf dem Desktop ausgeführten Aktionen werden aufgezeichnet. Halten Sie die Aufzeichnung an, wenn Sie Aktionen ausführen, bei denen sensible Daten in die Aufzeichnung gelangen könnten.
 
-     Wählen Sie zum **Löschen von Aktionen**, die Sie versehentlich aufgezeichnet haben, **Aktionen bearbeiten** aus.
+     Wählen Sie zum **Löschen von Aktionen**, die Sie versehentlich aufgezeichnet haben, **Schritte bearbeiten** aus.
 
      Wählen Sie zum **Generieren von Code**, der Ihre Aktionen repliziert, das Symbol **Code generieren** aus, und geben Sie einen Namen und eine Beschreibung für Ihre Testmethode für programmierte UI ein.
 

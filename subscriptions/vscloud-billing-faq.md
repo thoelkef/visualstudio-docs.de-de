@@ -9,11 +9,11 @@ description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://www.visualstudio.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -103,3 +103,9 @@ A: Ja, das ist möglich, wenn Ihr Händler am Cloud Solution Provider-Programm (
 * [Visual Studio Professional: Jahresabonnement](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Visual Studio Enterprise: Monatsabonnement](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
 * [Visual Studio Enterprise: Jahresabonnement](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
+## <a name="related-resources"></a>Weitere Informationen
+
+* [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
+* [Support für Visual Studio-Abonnements](https://www.visualstudio.com/vs/support/)
+* [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)

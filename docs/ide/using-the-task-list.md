@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Verwenden der Aufgabenliste
+# <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
 Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` und `HACK`verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Klicken Sie auf das Element in der Liste, um an die entsprechende Position im Quellcode zu gelangen.
 
@@ -30,29 +30,29 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
 Wird die **Aufgabenliste** geöffnet, wird sie unten im Anwendungsfenster angezeigt.
 
-### <a name="to-open-the-task-list"></a>So öffnen Sie die Aufgabenliste
+### <a name="open-the-task-list"></a>Öffnen der Aufgabenliste
 
-- Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: STRG+\\,T).
+- Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: **STRG**+**\\**,**T**).
 
     ![Fenster mit Aufgabenliste](../ide/media/vs2015_task_list.png "vs2015_Aufgabenliste")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>So ändern Sie die Sortierreihenfolge der Liste
+### <a name="change-the-sort-order-of-the-list"></a>Ändern der Sortierreihenfolge der Liste
 
 - Klicken Sie auf den Header einer beliebigen Spalte. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die UMSCHALTTASTE und klicken auf einen zweiten Spaltenheader.
 
-     Sie können auch im Kontextmenü die Option **Sortieren nach**und dann einen Header auswählen. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die UMSCHALTTASTE, und wählen Sie einen zweiten Header.
+     Sie können auch im Kontextmenü die Option **Sortieren nach**und dann einen Header auswählen. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die **UMSCHALTTASTE**, und wählen Sie einen zweiten Header aus.
 
-### <a name="to-show-or-hide-columns"></a>So blenden Sie Spalten ein oder aus
+### <a name="show-or-hide-columns"></a>Ein- oder Ausblenden von Spalten
 
 - Klicken Sie im Kontextmenü auf **Spalten einblenden**. Wählen Sie die Spalten aus, die Sie ein- oder ausblenden möchten.
 
-### <a name="to-change-the-order-of-the-columns"></a>So ändern Sie die Reihenfolge der Spalten
+### <a name="change-the-order-of-the-columns"></a>Ändern der Reihenfolge der Spalten
 
 - Ziehen Sie einen Spaltenheader an die gewünschte Position.
 
 ## <a name="user-tasks"></a>Benutzeraufgaben
 
-Das Feature „Benutzeraufgabe“ wurde aus Visual Studio 2015 entfernt. Wenn Sie eine Projektmappe mit Benutzeraufgabendaten aus Visual Studio 2013 oder früher öffnen, bleiben die Benutzeraufgabendaten in Ihrer SUO-Datei davon unberührt, aber die Benutzeraufgaben werden nicht in der Aufgabenliste angezeigt.
+Das Feature „Benutzeraufgabe“ wurde aus Visual Studio 2015 entfernt. Wenn Sie eine Projektmappe mit Benutzeraufgabendaten aus Visual Studio 2013 oder früher öffnen, bleiben die Benutzeraufgabendaten in Ihrer *SUO*-Datei davon unberührt, aber die Benutzeraufgaben werden nicht in der Aufgabenliste angezeigt.
 
 Um weiterhin auf Ihre Benutzeraufgabendaten zugreifen und diese aktualisieren zu können, sollten Sie das Projekt in Visual Studio 2013 öffnen und den Inhalt aller Benutzeraufgaben in Ihr bevorzugtes Projektmanagementtool (z. B. Team Foundation Server) kopieren.
 
@@ -74,11 +74,11 @@ Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO`-Au
 
 ###  <a name="customTokens"></a> Benutzerdefinierte Token
 
-Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, UNDONE, NOTE. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.
+Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UNDONE`, `NOTE`. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
 Sie können außerdem eigene benutzerdefinierte Token erstellen.
 
-#### <a name="to-create-a-custom-token"></a>So erstellen Sie ein benutzerdefiniertes Token
+#### <a name="create-a-custom-token"></a>Erstellen eines benutzerdefinierten Tokens
 
 1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
@@ -96,7 +96,7 @@ Sie können außerdem eigene benutzerdefinierte Token erstellen.
 
 Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt. Sie können dieses Verhalten ändern.
 
-#### <a name="to-turn-off-c-todo-comments"></a>So deaktivieren Sie die C++-TODO-Kommentare
+#### <a name="turn-off-c-todo-comments"></a>Deaktivieren von C++-TODO-Kommentaren
 
 Wechseln Sie im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++** > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf FALSE fest.
 
@@ -106,9 +106,9 @@ Eine *Verknüpfung* ist ein Lesezeichen im Code, das in der **Aufgabenliste**nac
 
 ![Visual Studio-Symbol Aufgabenlistenverknüpfung](../ide/media/vs2015_task_list_bookmark.png "vs2015_Aufgabenliste_Lesezeichen")
 
-### <a name="to-create-a-shortcut"></a>So erstellen Sie eine Verknüpfung
+### <a name="create-a-shortcut"></a>Erstellen einer Verknüpfung
 
-Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten, um eine Verknüpfung zu erstellen. Klicken Sie auf **Bearbeiten** > **Lesezeichen** > **Verknüpfung für Aufgabenliste hinzufügen**, oder drücken Sie **STRG** + **K** > **STRG** + **H**.
+Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten, um eine Verknüpfung zu erstellen. Klicken Sie auf **Bearbeiten** > **Lesezeichen** > **Verknüpfung für Aufgabenliste hinzufügen**, oder drücken Sie **STRG**+**K** > **STRG**+**H**.
 
 Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.
 

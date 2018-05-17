@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense für Visual Basic-Codedateien
 
@@ -38,7 +38,7 @@ In den Tipps zur Syntax wird die Syntax der Anweisung angezeigt, die Sie eintipp
 
 Die Vervollständigung kann standardmäßig deaktiviert werden. Wählen Sie hierzu von der Eigenschaftenseite **Allgemein** im Ordner **Visual Basic** **Member automatisch auflisten** aus.
 
-Sie können die Vervollständigung manuell aufrufen, indem Sie auf „Member auflisten“ oder „Wort vervollständigen“ klicken oder ALT+NACH-RECHTS-TASTE drücken. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
+Sie können die Vervollständigung manuell aufrufen, indem Sie auf „Member auflisten“ oder „Wort vervollständigen“ klicken oder **ALT**+**NACH-RECHTS-TASTE** drücken. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense pro Zone
 
@@ -56,4 +56,4 @@ In Visual Basic verfügen IntelliSense-Vervollständigungslisten über zwei Regi
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von IntelliSense](../ide/using-intellisense.md)
+- [Verwendung von IntelliSense](../ide/using-intellisense.md)

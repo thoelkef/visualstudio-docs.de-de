@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac89442c7f0242fca3238a32bfb60d1cb2e1b4e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -29,7 +29,7 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 
     Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-    Weitere Informationen finden Sie unter [Memory limits (Arbeitsspeicherbegrenzungen)](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Using /LARGEADDRESSAWARE on 64-bit Windows (Verwenden von /LARGEADDRESSAWARE unter einer 64-Bit-Version von Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Weitere Informationen finden Sie unter [Speicherlimits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Konfigurieren von Projektmappen und Projekten
 
@@ -37,7 +37,7 @@ Wenn sie eine sehr große Projektmappe mit vielen Projekten haben, können Sie v
 
 - **Projekte entladen**
 
-    Sie können selten verwendete, einzelne Projekte im Projektmappen-Explorer mit einem Rechtsklick über das Kontextmenü manuell entladen.
+    Sie können selten verwendete, einzelne Projekte im **Projektmappen-Explorer** mit einem Rechtsklick über das Kontextmenü manuell entladen.
 
 - **Refactoring der Projektmappe**
 
@@ -51,23 +51,23 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
 
     Die einfachste Optimierung ist die Aktivierung der Funktion **Nur eigenen Code**, die nur Symbole für das Projekt lädt. Die Aktivierung dieser Funktion zu erheblichen Arbeitsspeichereinsparungen für das Debuggen von verwalteten Anwendungen (.NET) führen. Diese Option ist in einigen Projekttypen bereits standardmäßig aktiviert.
 
-    Um **Nur eigenen Code** zu aktivieren, wählen Sie **Extras > Optionen > Debugging > Allgemein** und dann **Nur meinen Code aktivieren** aus.
+    Um **Nur mein Code** zu aktivieren, wählen Sie **Extras** > **Optionen** > **Debuggen** > **Allgemein** und anschließend **Nur meinen Code aktivieren** aus.
 
 - **Angeben der zu ladenden Symbole**
 
-    Für das native Debuggen ist das Laden von Symboldateien (.pdb) im Hinblick auf die Arbeitsspeicherressourcen teuer. Sie können Ihre Debugsymbol-Einstellungen konfigurieren, um Arbeitsspeicher zu sparen. In der Regel konfigurieren Sie die Projektmappe so, dass nur Module aus Ihrem Projekt geladen werden.
+    Für das native Debuggen ist das Laden von Symboldateien (*PDB*) im Hinblick auf die Arbeitsspeicherressourcen teuer. Sie können Ihre Debugsymbol-Einstellungen konfigurieren, um Arbeitsspeicher zu sparen. In der Regel konfigurieren Sie die Projektmappe so, dass nur Module aus Ihrem Projekt geladen werden.
 
-    Wählen Sie zum Laden von Symbolen **Extras > Optionen > Debugging > Symbole** aus.
+    Wählen Sie zum Laden von Symbolen **Extras** > **Optionen** > **Debuggen** > **Symbole** aus.
 
-    Legen Sie die Optionen auf **Nur angegebene Module** anstelle von **Alle Module** fest, und geben Sie die Module an, die geladen werden sollen. Während des Debuggens können Sie im Fenster **Module** auch mit der rechten Maustaste auf bestimmte Module klicken, um ein Modul in den Symbolladeborgang explizit aufzunehmen. Wählen Sie zum Öffnen des Fensters während des Debuggens **Debuggen > Windows > Module** aus.
+    Legen Sie die Optionen auf **Nur angegebene Module** anstelle von **Alle Module** fest, und geben Sie die Module an, die geladen werden sollen. Während des Debuggens können Sie im Fenster **Module** auch mit der rechten Maustaste auf bestimmte Module klicken, um ein Modul in den Symbolladeborgang explizit aufzunehmen. (Wählen Sie zum Öffnen des Fensters während des Debuggens **Debuggen** > **Windows** > **Module** aus.)
 
-    Weitere Informationen finden Sie unter [Understanding symbol files (Grundlegendes zu Symboldateien)](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Weitere Informationen finden Sie unter [Understand symbol files (Grundlegendes zu Symboldateien)](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
 - **Deaktivieren von Diagnosetools**
 
     Es wird empfohlen, die CPU-Profilerstellung nach ihrer Verwendung zu deaktivieren. Diese Funktion kann große Mengen von Ressourcen belegen. Sobald die CPU-Profilerstellung aktiviert ist, wird dieser Status in allen nachfolgenden Debugsitzungen beibehalten. Daher muss sie nach Beendigung explizit deaktiviert werden. Sie können einige Ressourcen speichern, indem Sie während des Debuggens die Diagnosetools deaktivieren, sollten Sie diese Funktionen nicht bereitstellen müssen.
 
-    Um die Diagnosetools zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras > Optionen > Diagnosetools beim Debuggen aktivieren** aus, und deaktivieren Sie die Option.
+    Um die **Diagnosetools** zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras** > **Optionen** > **Diagnosetools beim Debuggen aktivieren** aus, und deaktivieren Sie die Option.
 
     Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-tools.md).
 
@@ -82,17 +82,17 @@ Einige Tools oder Erweiterungen müssen möglicherweise ausgeschaltet werden, um
 
 Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Überlegungen zur Leistung bei großen Projektmappen)](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-- **Deaktivieren der vollständige Projektmappenanalyse**
+- **Deaktivieren der vollständigen Projektmappenanalyse**
 
     Visual Studio analysiert Ihre gesamte Projektmappe, um eine alle Fehler vor dem Erstellen eines Builds zu erfassen. Diese Funktion ist nützlich, um Fehler so früh wie möglich zu identifizieren. Allerdings kann diese Funktion bei sehr großen Projektmappen beträchtliche Arbeitsspeicherressourcen konsumieren. Wenn Sie Arbeitsspeichermangel oder ähnliche Probleme haben, können Sie diese Funktion deaktivieren, um diese Ressourcen freizugeben. Diese Option ist für Visual Basic standardmäßig aktiviert und für C# deaktiviert.
 
-    Um die **vollständige Projektmappenanalyse** zu deaktivieren, wählen Sie **Extras > Optionen > Text-Editor > <Visual Basic oder C#>**. Wählen Sie dann **Erweitert** aus, und deaktivieren das Kontrollkästchen **Enable full solution analysis** (Vollständige Projektmappenanalyse aktivieren).
+    Um die **Vollständige Projektmappenanalyse** zu deaktivieren, wählen Sie **Extras** > **Optionen** > **Text-Editor** > **<Visual Basic oder C#>** aus. Wählen Sie dann **Erweitert** aus, und deaktivieren das Kontrollkästchen **Enable full solution analysis** (Vollständige Projektmappenanalyse aktivieren).
 
 - **Deaktivieren von CodeLens**
 
-    Visual Studio führt eine Aufgabe **Alle Verweise suchen** für jede Methode aus, während sie angezeigt wird. CodeLens bietet Funktionen wie die Inlineanzeige der Anzahl der Verweise. The work is performed in a separate process (for example, ServiceHub.RoslynCodeAnalysisService32). In sehr großen Projektmappen oder auf Systemen mit eingeschränkten Ressourcen kann diese Funktion entscheidenden Einfluss auf die Leistung haben, obwohl die mit niedriger Priorität ausgeführt wird. Wenn bei diesem Prozess eine hohe CPU-Auslastung oder Probleme mit dem Arbeitsspeicher auftreten (z.B. beim Laden von großen Projektmappen auf einem 4-GB-Computer), können Sie versuchen, durch das Deaktivieren dieser Funktion Ressourcen freizugeben.
+    Visual Studio führt eine Aufgabe **Alle Verweise suchen** für jede Methode aus, während sie angezeigt wird. CodeLens bietet Funktionen wie die Inlineanzeige der Anzahl der Verweise. Die Arbeit wird in einem separaten Prozess ausgeführt (z.B. *ServiceHub.RoslynCodeAnalysisService32*). In sehr großen Projektmappen oder auf Systemen mit eingeschränkten Ressourcen kann diese Funktion entscheidenden Einfluss auf die Leistung haben, obwohl die mit niedriger Priorität ausgeführt wird. Wenn bei diesem Prozess eine hohe CPU-Auslastung oder Probleme mit dem Arbeitsspeicher auftreten (z.B. beim Laden von großen Projektmappen auf einem 4-GB-Computer), können Sie versuchen, durch das Deaktivieren dieser Funktion Ressourcen freizugeben.
 
-    Um CodeLens zu deaktivieren, wählen Sie **Extras > Optionen > Text-Editor > Alle Sprachen > CodeLens** aus, und deaktivieren Sie die Funktion.
+    Um **CodeLens** zu deaktivieren, wählen Sie **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens** aus, und deaktivieren Sie das Feature.
 
     Diese Funktion steht in Visual Studio Professional und Visual Studio Enterprise zur Verfügung.
 
@@ -106,9 +106,9 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
 - **Deaktivieren des XAML-Designers**
 
-    Der XAML-Designer ist standardmäßig aktiviert. Es werden aber nur Ressourcen belegt, wenn Sie eine XAML-Datei öffnen. Wenn Sie mit XAML-Dateien arbeiten, den Designer aber nicht verwenden möchten, deaktivieren Sie diese Funktion, um Arbeitsspeicher freizugeben.
+    Der XAML-Designer ist standardmäßig aktiviert. Es werden aber nur Ressourcen belegt, wenn Sie eine *XAML*-Datei öffnen. Wenn Sie mit XAML-Dateien arbeiten, den Designer aber nicht verwenden möchten, deaktivieren Sie diese Funktion, um Arbeitsspeicher freizugeben.
 
-    Um den XAML-Designer zu deaktivieren, wechseln Sie zu **Tools > Optionen > XAML-Designer > XAML-Designer aktivieren**, und deaktivieren Sie die Option.
+    Um den **XAML-Designer** zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **XAML-Designer** > **XAML-Designer aktivieren**, und deaktivieren Sie die Option.
 
 - **Entfernen von Workloads**
 
@@ -116,9 +116,9 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
 ## <a name="force-a-garbage-collection"></a>Erzwingen einer Garbage Collection
 
-Die CLR verwendet eine Arbeitsspeicherverwaltungssystem mit Garbage Collection. In diesem System wird manchmal Speicher von Objekten belegt, die nicht mehr benötigt werden. Dieser Status ist vorübergehend. Der Garbage Collector gibt diesen Arbeitsspeicher basierend auf dessen Leistungs- und Ressourcenverwendungsheuristik frei. Sie können die CLR mit einem Hotkey in Visual Studio zwingen, nicht verwendeten Arbeitsspeicher zu sammeln. Wenn die Menge an nicht verwendeten Objekten bereits sehr groß ist und Sie eine Garbage Collection erzwingen, sollten Sie im Task-Manager sehen können, wie die Arbeitsspeicherauslastung des Prozesses „devenv.exe“ abnimmt. Es ist aber nur selten notwendig, diese Methode anzuwenden. Nachdem jedoch ein teurer Vorgang (z.B. ein vollständiger Build, eine Debugsitzung oder ein Ereignis in einer offenen Projektmappe) abgeschlossen wurde, kann Ihnen die Methode dabei helfen zu bestimmen, wie viel Arbeitsspeicher tatsächlich vom Prozess verwendet wird. Da Visual Studio (verwaltetes & nativ) kombiniert wird, ist es gelegentlich möglich, dass die native Zuweisung und der Garbage Collector um begrenzte Arbeitsspeicherressourcen konkurrieren. Bei hoher Arbeitsspeicherauslastung kann es hilfreich sein, die Ausführung des Garbage Collectors zu erzwingen.
+Die CLR verwendet eine Arbeitsspeicherverwaltungssystem mit Garbage Collection. In diesem System wird manchmal Speicher von Objekten belegt, die nicht mehr benötigt werden. Dieser Status ist vorübergehend. Der Garbage Collector gibt diesen Arbeitsspeicher basierend auf dessen Leistungs- und Ressourcenverwendungsheuristik frei. Sie können die CLR mit einem Hotkey in Visual Studio zwingen, nicht verwendeten Arbeitsspeicher zu sammeln. Wenn die Menge an nicht verwendeten Objekten bereits sehr groß ist und Sie eine automatische Speicherbereinigung erzwingen, sollten Sie im **Task-Manager** sehen können, wie die Arbeitsspeicherauslastung des Prozesses *devenv.exe* abnimmt. Es ist aber nur selten notwendig, diese Methode anzuwenden. Nachdem jedoch ein teurer Vorgang (z.B. ein vollständiger Build, eine Debugsitzung oder ein Ereignis in einer offenen Projektmappe) abgeschlossen wurde, kann Ihnen die Methode dabei helfen zu bestimmen, wie viel Arbeitsspeicher tatsächlich vom Prozess verwendet wird. Da Visual Studio (verwaltetes & nativ) kombiniert wird, ist es gelegentlich möglich, dass die native Zuweisung und der Garbage Collector um begrenzte Arbeitsspeicherressourcen konkurrieren. Bei hoher Arbeitsspeicherauslastung kann es hilfreich sein, die Ausführung des Garbage Collectors zu erzwingen.
 
-Um eine automatische Speicherbereinigung zu erzwingen, verwenden Sie den Hotkey: **STRG+ALT+UMSCHALTTASTE+F12**, **STRG+ALT+UMSCHALTTASTE+F12** (zweimal drücken).
+Um eine automatische Speicherbereinigung zu erzwingen, verwenden Sie den Hotkey: **STRG**+**ALT**+**UMSCHALTTASTE**+**F12**, **STRG**+**ALT**+**UMSCHALTTASTE**+**F12** (zweimal drücken).
 
 Wenn das Erzwingen der Garbage Collection zur zuverlässigen Funktion Ihres Szenarios führt, übermitteln Sie uns einen Bericht über die Visual Studio-Feedbacktool, denn dieses Verhalten ist wahrscheinlich ein Fehler.
 

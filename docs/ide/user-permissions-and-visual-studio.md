@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96835e0f884494f4a6b94aa1a311b40e8a9d8ad9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -33,7 +33,7 @@ Sie können nahezu alles in der Visual Studio-IDE als normaler Benutzer ausführ
 |----------|----------|--------------------------|
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen der lokalen Hilfeinhalte.|[Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)|
-|Anwendungstypen|Entwickeln von Lösungen für SharePoint.|[Anforderungen für die Entwicklung von SharePoint-Projektmappen](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+|Anwendungstypen|Entwickeln von Lösungen für SharePoint.|[Anforderungen für die Entwicklung von SharePoint-Projektmappen](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
 ||Erwerben einer Entwicklerlizenz für [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Anfordern einer Entwicklerlizenz](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|
 |Add-Ins|Installieren und Verwenden von Add-Ins, die mit klassischem COM in der IDE geschrieben wurden.|[Erstellen von Add-Ins und Assistenten](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
@@ -45,13 +45,14 @@ Sie können nahezu alles in der Visual Studio-IDE als normaler Benutzer ausführ
 ||Verwenden des Emulators zum Debuggen von Cloud-Dienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Remotedebuggen](../debugger/remote-debugging.md)|
 |Leistungstools|Profilerstellung für eine Anwendung|[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)|
-|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploy an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploy to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](http://go.microsoft.com/fwlink/?LinkId=266478)|
+>>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
 
-## <a name="running-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator
+## <a name="run-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator
 
 Sie können Visual Studio bei jedem Starten der IDE mit Administratorberechtigungen starten, oder Sie können die Anwendungsverknüpfung so ändern, dass sie immer mit Administratorberechtigungen ausgeführt werden muss. Weitere Informationen finden Sie in der Windows-Hilfe.
 
-### <a name="to-run-visual-studio-with-administrative-permissions"></a>So führen Sie Visual Studio mit Administratorberechtigungen aus
+### <a name="run-visual-studio-with-administrative-permissions"></a>Ausführen von Visual Studio mit Administratorberechtigungen
 
 Diese Anweisungen gelten für Windows 10. Für andere Windows-Versionen lauten die Anweisungen ähnlich.
 
@@ -63,5 +64,5 @@ Diese Anweisungen gelten für Windows 10. Für andere Windows-Versionen lauten d
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Installieren von Visual Studio](../install/install-visual-studio.md)

@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5912e6704a50884df2000afb7c12f82f7a8aa69f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile
 In diesem Thema wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an eine aktive eigenständige .NET Framework-(Client-)Anwendung anzufügen und mithilfe der Samplingmethode Leistungsstatistikdaten zu sammeln.  
@@ -52,7 +52,7 @@ In diesem Thema wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprv
   
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
   
-    |Option|Beschreibung|  
+    |Option|description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Gibt die optionale Domäne und den Benutzernamen des Kontos an, das den profilierten Prozess besitzt. Diese Option ist nur erforderlich, wenn die profilierte Anwendung mit einem anderen Benutzer als dem angemeldeten Benutzer gestartet wurde.|  
     |[/crosssession](../profiling/crosssession.md)|Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird.|  
@@ -74,7 +74,7 @@ In diesem Thema wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprv
   
     |||  
     |-|-|  
-    |Samplingereignis|Beschreibung|  
+    |Samplingereignis|description|  
     |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall auf die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|  
     |[/pf](../profiling/pf.md) [**:**`Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|  
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|  
@@ -89,7 +89,7 @@ In diesem Thema wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprv
   
 -   Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
   
-    |Option|Beschreibung|  
+    |Option|description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den Prozess, der von `PID` angegeben wird, gestartet (**/processon**) oder beendet (**/processoff**).|  

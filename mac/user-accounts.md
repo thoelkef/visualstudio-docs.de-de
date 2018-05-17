@@ -1,15 +1,15 @@
 ---
 title: Benutzerkonten
-description: ''
+description: Informationen zum Anmelden bei Visual Studio für Mac und zum Aktivieren von Abonnements in Visual Studio für Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8326362b9a6aed4bdab3478534bea9aea414b499
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c5f829a9b2f828e4f7b2ef0cf1a410a607bf86b9
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="user-accounts"></a>Benutzerkonten
 
@@ -19,5 +19,5 @@ Durch die Anmeldung erhalten Sie Zugriff auf alle Ihrem Benutzerkonto zugeordnet
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-* [Anmelden bei Visual Studio](signing-in.md)
+* [Anmelden bei Visual Studio für Mac](signing-in.md)
 * [Enable Subscription (Abonnement aktivieren)](activation.md)

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Benutzeroberflächen-Reaktionsfähigkeits-Profilers beschrieben, einem Leistungstool für universelle Windows-Apps.  
@@ -100,7 +100,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
     -   Verwenden Sie die [Anzeigen einer Zeitachse für die Diagnosesitzung](#Ruler) , um [Markieren von Code zur Analyse](#ProfileMark), App-Lebenszyklusereignisse und die zugeordnete Zeitachse für diese Ereignisse sowie die Zeitachse für Daten in den anderen Diagramme anzuzeigen.  
   
-    -   Mit dem [CPU utilization graph](#CPUutilization) können Sie allgemeine Informationen zu CPU-Aktivität und den Typ der Arbeit anzeigen, die in einem bestimmten Zeitraum behandelt wird. Zeiträume übermäßiger CPU-Aktivität führen viel wahrscheinlicher zu Reaktionsfähigkeitsproblemen und abfallende Frames.  
+    -   Mit dem [CPU utilization graph](#CPUUtilization) können Sie allgemeine Informationen zu CPU-Aktivität und den Typ der Arbeit anzeigen, die in einem bestimmten Zeitraum behandelt wird. Zeiträume übermäßiger CPU-Aktivität führen viel wahrscheinlicher zu Reaktionsfähigkeitsproblemen und abfallende Frames.  
   
     -   Wenn Sie ein Spiel oder eine Rich-Media-App entwickeln, verwenden Sie das [Anzeigen des visuellen Durchsatzes (FPS)](#VisualThroughput) , um Zeiträume zu identifizieren, in denen die Framerate abfiel.  
   

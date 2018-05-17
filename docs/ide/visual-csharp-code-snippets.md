@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
 
@@ -26,7 +26,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 
  Sie können einen Codeausschnitt an der Cursorposition einfügen oder einen umgebenden Codeausschnitt einfügen, der den aktuell ausgewählten Code einschließt. Der Codeausschnitteinfüger wird im Menü **IntelliSense** über die Befehle **Codeausschnitt einfügen** oder **Umschließen mit** oder durch die Tastenkombinationen **STRG**+**K**>**X** bzw. **STRG**+**K**>**S** aufgerufen.
 
- Der Codeausschnitteinfüger zeigt den Codeausschnittnamen für alle verfügbaren Codeausschnitte an. Darüber hinaus umfasst der Codeausschnitteinfüger ein Eingabedialogfeld, in dem Sie den Namen des Codeausschnitts vollständig oder teilweise eingeben können. Daraufhin wird im Codeausschnitteinfüger der Eintrag hervorgehoben, der dem Namen eines Codeausschnitts am besten entspricht. Durch Drücken der **TAB-TASTE** können Sie den Codeausschnitteinfüger jederzeit schließen und den zu diesem Zeitpunkt ausgewählten Codeausschnitt einfügen. Durch Drücken der **ESC-TASTE** oder Klicken mit der Maus im Code-Editor wird der Codeausschnitteinfüger geschlossen, ohne dass ein Codeausschnitt eingefügt wird.
+ Der **Codeausschnitteinfüger** zeigt den Codeausschnittnamen für alle verfügbaren Codeausschnitte an. Darüber hinaus umfasst der Codeausschnitteinfüger ein Eingabedialogfeld, in dem Sie den Namen des Codeausschnitts vollständig oder teilweise eingeben können. Daraufhin wird im Codeausschnitteinfüger der Eintrag hervorgehoben, der dem Namen eines Codeausschnitts am besten entspricht. Durch Drücken der **TAB-TASTE** können Sie den Codeausschnitteinfüger jederzeit schließen und den zu diesem Zeitpunkt ausgewählten Codeausschnitt einfügen. Durch Drücken der **ESC-TASTE** oder Klicken mit der Maus im Code-Editor wird der Codeausschnitteinfüger geschlossen, ohne dass ein Codeausschnitt eingefügt wird.
 
 ## <a name="default-code-snippets"></a>Standardcodeausschnitte
 
@@ -57,7 +57,7 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |Iterator|Erstellt einen Iterator.|Innerhalb einer Klasse oder Struktur.|
 |iterindex|Erstellt ein „benanntes“ Iterator-/Indexerpaar unter Verwendung einer geschachtelten Klasse.|Innerhalb einer Klasse oder Struktur.|
 |lock|Erstellt einen [lock](/dotnet/csharp/language-reference/keywords/lock-statement)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf „System.Windows.Forms.dll“ hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf *System.Windows.Forms.dll* hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
 |prop|Erstellt eine Deklaration mit [automatisch implementierter Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Innerhalb einer Klasse oder Struktur.|
 |propfull|Erstellt eine Eigenschaftendeklaration mit `get`-Accessor und `set`-Accessor.|Innerhalb einer Klasse oder Struktur.|
@@ -78,4 +78,4 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 - [Codeausschnittfunktionen](../ide/code-snippet-functions.md)
 - [Codeausschnitte](../ide/code-snippets.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../ide/how-to-use-surround-with-code-snippets.md)
+- [Vorgehensweise: Verwenden von umschließenden Codeausschnitten](../ide/how-to-use-surround-with-code-snippets.md)

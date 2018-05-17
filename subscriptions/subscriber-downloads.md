@@ -9,11 +9,11 @@ description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.  
@@ -24,7 +24,7 @@ Im Allgemeinen werden Visual Studio-Abonnenten alle Microsoft-Produkte für gewe
 
 Es gibt einige Gründe dafür, warum bestimmte Produkte möglicherweise für die Abonnenten nicht verfügbar sind:
 
-- **Das Produkt ist nicht in Ihrer Abonnementstufe oder in Ihrem Abonnementprogramm enthalten.** [Hier](https://www.visualstudio.com/vs/pricing/) können Sie mehr über die in Ihrem Abonnement enthaltene Software und die Vorteile erfahren oder die vollständige Liste der für jede Abonnementstufe erhältlichen Produkte [herunterladen](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_). Einige Programme wie [Microsoft Partner Network](https://partner.microsoft.com/) stellen Visual Studio-Abonnements als Teil Ihrer Vorteile zur Verfügung.  Diese Abonnements enthalten nicht alle Produkte, die die erworbenen Visual Studio-Abonnements umfassen. Abonnenten für diese Programme sollten Fragen zur Verfügbarkeit der Produktdownloads an das Supportteam der jeweiligen Programme stellen.
+- **Das Produkt ist nicht in Ihrer Abonnementstufe oder in Ihrem Abonnementprogramm enthalten.** [Hier](https://www.visualstudio.com/vs/pricing/) können Sie mehr über die in Ihrem Abonnement enthaltene Software und die Vorteile erfahren oder die vollständige Liste der für jede Abonnementstufe erhältlichen Produkte [herunterladen](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx). Einige Programme wie [Microsoft Partner Network](https://partner.microsoft.com/) stellen Visual Studio-Abonnements als Teil Ihrer Vorteile zur Verfügung.  Diese Abonnements enthalten nicht alle Produkte, die die erworbenen Visual Studio-Abonnements umfassen. Abonnenten für diese Programme sollten Fragen zur Verfügbarkeit der Produktdownloads an das Supportteam der jeweiligen Programme stellen.
 - **Das Produkt ist nicht in Abonnements enthalten.** Aufgrund besonderer Lizenzbedingungen, technischer Einschränkungen oder mangelnder Relevanz für Entwickler sind einige Microsoft-Produkte nicht in Abonnements enthalten. Wenn Sie das Hinzufügen eines Produkts zum Abonnement vorschlagen möchten, senden Sie eine E-Mail an den [Kundendienst](https://www.visualstudio.com/subscriptions/support/).
 - **Das Produkt ist frei verfügbar.** Einige Tools, SDKs, DDKs und Service Packs sind über das [Microsoft Download Center](https://www.microsoft.com/download) öffentlich verfügbar. Einige dieser Produkte werden möglicherweise nicht in den Downloads veröffentlicht.
 - **Das Produkt wurde noch nicht veröffentlicht.**  Viele Vorabversionen (Betaversionen) und Release Candidates stehen über die Downloadseite für Abonnenten zur Verfügung. Möglicherweise sind jedoch nicht alle Betaversionen enthalten. Beispielsweise kann für einige Betaversionen eine besondere Registrierung oder Berechtigung erforderlich sein. Weitere Informationen zu offenen technischen Betaprogrammen finden Sie unter [Microsoft Connect](http://connect.microsoft.com/).

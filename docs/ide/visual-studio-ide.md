@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Übersicht über die Visual Studio-IDE
 
@@ -181,7 +181,7 @@ Damit Sie eine visuelle Übersicht von Visual Studio bekommen, zeigt die folgend
 
 Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visual Studio vorgestellt:
 
-- Mit dem Suchfeld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) finden Sie in Visual Studio schnell, was Sie suchen. Geben Sie einfach den Namen dessen ein, was Sie suchen, und Visual Studio führt die Ergebnisse auf, mit denen Sie genau ans gewünschte Ziel gelangen. Der Schnellstart zeigt auch Links an, die den Visual Studio-Installer für jede beliebige Workload oder einzelne Komponente starten.
+- Mit dem Suchfeld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) finden Sie in Visual Studio schnell, was Sie suchen. Geben Sie einfach den Namen dessen ein, was Sie suchen, und Visual Studio führt die Ergebnisse auf, mit denen Sie genau ans gewünschte Ziel gelangen. Der **Schnellstart** zeigt auch Links an, die den Visual Studio-Installer für jede beliebige Workload oder einzelne Komponente starten.
 
   ![Suchfeld „Schnellstart“](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Verarbeiten Ihres Quellcodes und Zusammenarbeiten mit anderen
 
-Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Visual Studio Team Services (VSTS)](/vsts/index), um Code zusammen mit Programmfehlern und Arbeitsaufgaben für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Git and VSTS (Erste Schritte mit Git und VSTS)](/vsts/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Funktionen in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Visual Studio Team Services (VSTS)](/vsts/index), um Code zusammen mit Programmfehlern und Arbeitsaufgaben für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Git and Team Services (VSTS) (Erste Schritte mit Git und Team Services (VSTS))](/vsts/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Features in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Online Team Services ist ein cloudbasierter Dienst zum Hosten von Softwareprojekten und für die Zusammenarbeit in Teams. VSTS unterstützt Git- und Team Foundation-Quellcodeverwaltungssysteme sowie die Scrum-, CMMI- und Agile-Entwicklungsmethoden. Team Foundation-Versionskontrolle (TFVC) verwendet ein einzelnes, zentralisiertes Serverrepository zum Nachverfolgen von Versionsdateien. Lokale Änderungen werden immer beim zentralen Server eingecheckt, damit andere Entwickler die neuesten Änderungen abrufen können.
 
 Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für Visual Studio. Auf diese Weise können alle am Entwicklungsprozess beteiligten Personen mithilfe einer einzigen Projektmappe am Prozess teilnehmen. TFS ist auch nützlich für die Verwaltung heterogener Teams und Projekte.
 
-Wenn Sie in Ihrem Netzwerk über ein Visual Studio Team Services-Konto oder einen Team Foundation Server verfügen, können Sie über das Fenster „Team Explorer“ eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie Team Explorer über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht, Team Explorer** oder **Team, Verbindungen verwalten**.
+Wenn Sie in Ihrem Netzwerk über ein Visual Studio Team Services-Konto oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie **Team Explorer** über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
 
-Die folgende Abbildung zeigt das Team Explorer-Fenster für eine Projektmappe, die in VSTS gehostet wird:
+Die folgende Abbildung zeigt das **Team Explorer**-Fenster für eine Projektmappe, die in VSTS gehostet wird:
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Die Cloud ist wichtig für die moderne Onlinewelt, und Visual Studio bietet Ihne
 
 ![Verbundene Dienste](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Die Auswahl eines Diensts auf der Seite **Verbundene Dienste** ruft den Assistenten zum Hinzufügen eines verbundenen Diensts auf, der Ihr Projekt konfiguriert und die erforderlichen NuGet-Pakete herunterlädt, damit Sie mühelos mit der Programmierung für Ihren Dienst beginnen können.
+Die Auswahl eines Diensts auf der Seite **Verbundene Dienste** ruft den Assistenten zum **Hinzufügen eines verbundenen Diensts** auf, der Ihr Projekt konfiguriert und die erforderlichen NuGet-Pakete herunterlädt, damit Sie mühelos mit der Programmierung für Ihren Dienst beginnen können.
 
-Sie können Ihre Azure-basierten Cloudressourcen innerhalb von Visual Studio mit dem [Cloud-Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) anzeigen und verwalten. Cloud-Explorer zeigt die Azure-Ressourcen aller Konten an, die unter dem Azure-Abonnement, bei dem Sie angemeldet sind, verwaltet werden. Wählen Sie die Workload für die **Azure-Entwicklung** im Visual Studio-Installer aus, um den Cloud-Explorer zu installieren.
+Sie können Ihre Azure-basierten Cloudressourcen innerhalb von Visual Studio mit dem [Cloud-Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) anzeigen und verwalten. Cloud-Explorer zeigt die Azure-Ressourcen aller Konten an, die unter dem Azure-Abonnement, bei dem Sie angemeldet sind, verwaltet werden. Wählen Sie die Workload für die **Azure-Entwicklung** im Visual Studio-Installer aus, um **Cloud-Explorer** zu installieren.
 
 ![Cloud-Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-**Server-Explorer** unterstützt Sie dabei, SQL Server-Instanzen und -Ressourcen lokal, remote, in Azure, Salesforce.com, Office 365 und auf Websites zu suchen und zu verwalten. Wählen Sie zum Öffnen des Server-Explorers im Hauptmenü **Ansicht** > **Server-Explorer**. Unter [Neue Verbindung hinzufügen](../data-tools/add-new-connections.md) finden Sie weitere Informationen zur Verwendung von Server-Explorer.
+**Server-Explorer** unterstützt Sie dabei, SQL Server-Instanzen und -Ressourcen lokal, remote, in Azure, Salesforce.com, Office 365 und auf Websites zu suchen und zu verwalten. Wählen Sie zum Öffnen des **Server-Explorers** im Hauptmenü **Ansicht** > **Server-Explorer** aus. Unter [Neue Verbindung hinzufügen](../data-tools/add-new-connections.md) finden Sie weitere Informationen zur Verwendung von Server-Explorer.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) ist eine leistungsstarke Entwicklungsumgebung für SQL Server, Azure SQL-Datenbank und Azure SQL Data Warehouse. Damit können Sie Datenbanken erstellen, debuggen, verwalten und umgestalten. Sie können mit einem Datenbankprojekt oder direkt mit einer Instanz einer verbundenen Datenbank lokal oder extern arbeiten.
 
@@ -261,7 +261,7 @@ Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweiter
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Weitere Informationen und Neuigkeiten
 
-Wenn Sie Visual Studio noch nie verwendet haben, finden Sie weitere Informationen unter [Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md) oder in den kostenlosen Visual Studio-Kursen der [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Wenn Sie die neuen Funktionen in Visual Studio 2017 RC ausprobieren möchten, finden Sie Informationen unter [Neues in Visual Studio 2017 RC](../ide/whats-new-in-visual-studio.md).
+Wenn Sie Visual Studio noch nie verwendet haben, finden Sie weitere Informationen unter [Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md) oder in den kostenlosen Visual Studio-Kursen der [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Wenn Sie die neuen Features in Visual Studio 2017 ausprobieren möchten, finden Sie Informationen unter [Neues in Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 Sie haben die Führung zu Visual Studio-IDE erfolgreich absolviert! Wir hoffen, dass Sie nützliche Kenntnisse von einigen der wichtigsten Features gewonnen haben.
 

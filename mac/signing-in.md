@@ -1,15 +1,15 @@
 ---
 title: Anmelden bei Visual Studio für Mac
-description: ''
+description: 'Vorgehensweise: Anmelden bei Visual Studio für Mac'
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Anmelden bei Visual Studio für Mac
 
@@ -25,17 +25,17 @@ Führen Sie folgende Schritte aus, um sich bei Visual Studio für Mac anzumelden
 
 1. Klicken Sie auf der Startseite auf den Link „Anmelden“, um das Dialogfeld „Konten“ anzuzeigen, und klicken Sie auf die Schaltfläche **Anmelden**:
 
-    ![](media/signing-in-image12.png)
+    ![Dialogfeld „Konten“ in Visual Studio für Mac](media/signing-in-image12.png)
 
 2. Geben Sie Ihre Microsoft-Anmeldeinformationen ein:
 
-    ![](media/signing-in-image13.png)
+    ![Dialogfeld „Microsoft-Anmeldeinformationen“](media/signing-in-image13.png)
 
     Sie können keine Xamarin-Anmeldeinformationen verwenden, um sich bei Visual Studio für Mac anzumelden.
 
 3.  Sobald Sie sich erfolgreich angemeldet haben, sehen Sie Ihren Lizenztyp. In diesem Dialogfeld können Sie zusätzliche Microsoft-Konten hinzufügen, die Sie möglicherweise verwenden möchten:
 
-    ![](media/signing-in-image14.png)
+    ![Anmeldung erfolgreich](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Hinzufügen von mehreren Benutzerkonten
 

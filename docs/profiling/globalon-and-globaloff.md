@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3009130acbbde431c9751df848eaef252c0bdd04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
 Die VSPerfCmd.exe-Optionen **GlobalOff** und **GlobalOn** halten die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung auf einer Befehlszeile an bzw. setzen sie fort.  
@@ -35,7 +35,7 @@ Die VSPerfCmd.exe-Optionen **GlobalOff** und **GlobalOn** halten die Profilerste
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cmd  
 VSPerfCmd.exe /{GlobalOff|GlobalOn}  
   
 VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]  
@@ -67,7 +67,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel werden die Optionen **GlobalOff** und **GlobalOn** verwendet, um die Sammlung von Profilerstellungsdaten für das Starten und Herunterfahren der Anwendung zu vermeiden.  
   
-```  
+```cmd  
 ; Initialize the profiler with profiling stopped.  
 VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp /GlobalOff  
 ; Start an instrumented application and wait for it to warm up.  

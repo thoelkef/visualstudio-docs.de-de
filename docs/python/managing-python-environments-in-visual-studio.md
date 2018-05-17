@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
-ms.date: 03/21/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fbefd6a09537227f9b2343d2311dd1e68b9f0a23
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 1ba3902fde77e297148c2006f89dd61bca1e902b
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 

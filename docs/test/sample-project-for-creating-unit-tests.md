@@ -1,5 +1,6 @@
 ---
-title: Beispielprojekt zum Erstellen von Komponententests in Visual Studio
+title: Beispielcode zum Erstellen von Komponententests
+description: Dieser Artikel enthält Beispielcode, der zum Testen von Komponententests in Visual Studio verwendet werden kann.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,19 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6ab04990292715932c652e2e275787447761ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="sample-project-for-creating-unit-tests"></a>Beispielprojekt zum Erstellen von Komponententests
+# <a name="sample-code-for-testing"></a>Beispielcode für Tests
 
-Dieser Beispielcode wird zur Verwendung in den folgenden exemplarischen Vorgehensweisen bereitgestellt:
+Dieser Beispielcode enthält die Klasse *BankAccount* mit verschiedenen Methoden, die in Komponententests getestet werden können.
 
-- [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.
+Der Code wird in den folgenden exemplarischen Vorgehensweisen verwendet:
 
-- [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testhilfsprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). In dieser exemplarischen Vorgehensweise verwenden Sie das Befehlszeilenhilfsprogramm MSTest.exe, um Tests auszuführen und Ergebnisse anzuzeigen.
+- [Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md): Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.
+- [Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867): In dieser exemplarischen Vorgehensweise verwenden Sie das Befehlszeilenhilfsprogramm MSTest.exe, um Tests auszuführen und Ergebnisse anzuzeigen.
 
 ## <a name="sample-code"></a>Beispielcode
 
@@ -125,9 +127,9 @@ namespace BankAccountNS
 
 /* Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden. Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E-Mail-Adressen und Logos ist rein zufällig. \*/
 
-## <a name="working-with-the-code"></a>Arbeiten mit dem Code
+## <a name="create-the-project"></a>Erstellen eines Projekts
 
-Um mit diesem Code zu arbeiten, müssen Sie dafür zuerst in Visual Studio ein Projekt erstellen. Führen Sie die Schritte im Abschnitt „Vorbereiten der exemplarischen Vorgehensweise“ unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus.
+Erstellen Sie zum Arbeiten mit diesem Code zunächst ein Projekt dafür in Visual Studio. Führen Sie hierzu die Schritte zum Erstellen eines Projekts in [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test) aus.
 
 ## <a name="see-also"></a>Siehe auch
 

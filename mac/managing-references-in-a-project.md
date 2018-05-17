@@ -1,14 +1,15 @@
 ---
-title: Verwalten von Verweisen in einem Projekt in Visual Studio für Mac
+title: Verwalten von Verweisen in einem Projekt
+description: In diesem Artikel erfahren Sie, wie Sie Verweise in einem Projekt in Visual Studio für Mac verwalten können.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 75395ed0d97eba5203adf7de384bb60f71313916
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: a26c8f4f6a21454610e6bbd9b4bb8a3f48a2a778
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 

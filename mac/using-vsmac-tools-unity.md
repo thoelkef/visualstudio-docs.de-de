@@ -1,14 +1,15 @@
 ---
 title: Verwenden der Visual Studio für Mac-Tools für Unity
+description: In diesem Leitfaden wird erklärt, wie Sie die Erweiterung Visual Studio für Mac-Tools für Unity verwenden.
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: c32b80d64e6b57667a3711e0c08455346782f75a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Verwenden der Visual Studio für Mac-Tools für Unity
 
@@ -27,7 +28,7 @@ Alternativ können Sie Visual Studio für Mac öffnen, während kein Skript im Q
 Die Visual Studio für Mac-Tools für Unity enthalten eine Verknüpfung für den Zugriff auf die Unity-API-Dokumentation. Um auf Unity API-Dokumentation von Visual Studio für Mac zuzugreifen, platzieren Sie den Cursor auf der Unity API, über die Sie mehr erfahren möchten, und drücken Sie **⌘ (cmd)+‘**.
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense für Unity-Nachrichten
-Das Unity-Modul sendet Nachrichten an MonoBehaviour-Skripts, die es Entwicklern ermöglichen, Code zu schreiben, der auf Meldungen wie „OnMouseDown“, „OnTriggerEnter“ usw. reagiert. Da es keine virtuellen Methoden in der Basisklasse von MonoBehaviour gibt, fehlen einigen IDEs wie MonoDevelop die Funktion zur Codevervollständigung für Unity-Nachrichten.
+Die Unity-Engine sendet Nachrichten an MonoBehaviour-Skripts, die es Entwicklern ermöglichen, Code zu schreiben, der auf Meldungen wie „OnMouseDown“, „OnTriggerEnter“ usw. reagiert. Da es keine virtuellen Methoden in der Basisklasse von MonoBehaviour gibt, fehlen einigen IDEs wie MonoDevelop die Funktion zur Codevervollständigung für Unity-Nachrichten.
 
 Die Visual Studio für Mac-Tools für Unity erweitern Ihre IntelliSense-Funktionalität aber auf Unity-Nachrichten. Dies erleichtert das Implementieren von Unity-Nachrichten in MonoBehaviour-Skripts und das Erlernen des Umgangs mit der Unity-API. So verwenden Sie IntelliSense für Unity-Nachrichten:
 

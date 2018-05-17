@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
 
@@ -58,7 +58,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
      Der Pfad dieses Ordners könnte folgendermaßen aussehen:
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
 2. Wechseln Sie zu folgendem Verzeichnis:
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Führen Sie den folgenden Befehl aus:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +100,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
 4. Führen Sie den Befehl aus, um den Zugriff auf die Funktionalität des Profilerstellungstreibers durch einen Benutzer oder eine Gruppe zu gewähren, die keinen Administratorzugriff auf den Computer haben:
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,7 +114,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
 5. Optional: Um die Ergebnisse der vorherigen Schritte nach dem Computerneustart zu erhalten, führen Sie den folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

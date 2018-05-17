@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -36,7 +36,7 @@ Bietet grundlegende Informationen und Befehle für die Umgebung:
 
 | Befehl | description |
 | --- | --- |
-| Diese Umgebung zum Standard für neue Projekte machen | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio kurz nicht mehr reagiert, während die IntelliSense-Datenbank geladen wird. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
+| Diese Umgebung zum Standard für neue Projekte machen | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio (2017 Version 15.5 und früher) kurzzeitig nicht mehr reagiert, während es die IntelliSense-Datenbank lädt. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
 | Website des Verteilers besuchen | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
 | Interaktives Fenster öffnen | Öffnet das [interaktive Fenster (REPL)](python-interactive-repl-in-visual-studio.md) für diese Umgebung in Visual Studio und wendet alle [Startskripts (siehe unten)](#startup-scripts) an. |
 | Interaktive Skripts | Siehe [Startskripte](#startup-scripts). |
@@ -75,7 +75,7 @@ Wenn diese Registerkarte verfügbar ist, enthält sie die in der folgenden Tabel
 
 *In früheren Versionen auch als „pip“ bezeichnet.*
 
-Verwaltet die in der Umgebung installierten Pakete und ermöglicht Ihnen auch, neue Pakete zu suchen und zu installieren (einschließlich dazugehöriger Abhängigkeiten).
+Verwaltet die in der Umgebung installierten Pakete mit pip und ermöglicht Ihnen ferner, neue Pakete zu suchen und zu installieren (einschließlich zugehöriger Abhängigkeiten). In Visual Studio 2017 Version 15.7 und höher wird eine Option **Pakete (Conda)** angezeigt, die stattdessen den Conda-Paket-Manager verwendet. (Wenn diese Option nicht angezeigt wird, legen Sie die Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use conda package manager when available (instead of pip) (Conda-Paket-Manager wenn verfügbar verwenden (anstelle von pip))** fest, und starten Sie dann Visual Studio neu.)
 
 Bereits installierte Pakete werden mit Steuerelementen zum Aktualisieren (nach unten gerichteter Pfeil) und Deinstallieren (X in einem Kreis) des Pakets angezeigt:
 
@@ -105,7 +105,8 @@ Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
 
 ![Registerkarte „IntelliSense“ von Python-Umgebungen](media/environments-intellisense-tab.png)
 
-In **Visual Studio 2017 Version 15.5** und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen. **Visual Studio 2017 Version 15.6** und höher verwendet eine schnellere Methode, um Vervollständigungen durchzuführen, die nicht von der Datenbank abhängen, sofern Sie dies nicht ausdrücklich aktivieren.
+- In **Visual Studio 2017 Version 15.5** und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen.
+- **Visual Studio 2017 Version 15.6** und höher verwendet eine schnellere Methode, um Vervollständigungen bereitzustellen, die nicht standardmäßig von der Datenbank abhängen. Deshalb trägt die Registerkarte die Bezeichnung **IntelliSense [Datenbank deaktiviert]**. Sie können die Datenbank durch Deaktivieren der Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use new style IntelliSense for environments (Neues IntelliSense für Umgebungen verwenden)** aktivieren.
 
 Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
 

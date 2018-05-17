@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-IntelliSense für C++ ist für eigenständige Dateien sowie für Dateien innerhalb eines C++-Projekts verfügbar. In plattformübergreifenden Projekten stehen einige IntelliSense-Funktionen in CPP- und C-Dateien im gemeinsam genutzten Projektcode zur Verfügung, auch wenn Sie sich in einem Android- oder iOS-Kontext befinden.
+IntelliSense für C++ ist für eigenständige Dateien sowie für Dateien innerhalb eines C++-Projekts verfügbar. In plattformübergreifenden Projekten stehen einige IntelliSense-Features in *CPP*- und *C*-Dateien in dem Projekt mit freigegebenem Code zur Verfügung, auch wenn Sie sich in einem Android- oder iOS-Kontext befinden.
 
 ## <a name="intellisense-features-in-c"></a>IntelliSense-Funktionen in C++
 
@@ -73,34 +73,34 @@ Hier ist eine OpenGLES-Anwendung, die zum Erstellen für Android und iOS konfigu
 
 Beachten Sie Folgendes:
 
-- Der #else-Branch in Zeile 8 ist ausgegraut und stellt den aktiven Bereich dar, da __ANDROID\_\_ für das Android-Projekt definiert ist.
+- Der `#else`-Branch in Zeile 8 ist ausgegraut und stellt den inaktiven Bereich dar, da `__ANDROID__` für das Android-Projekt definiert ist.
 
-- Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der eine violette Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell inaktiven iOS-Projekt definiert ist. Während im Android-Projekt Zeile 11 kompilieren wird, ist dies im iOS-Projekt nicht der Fall. Da es sich um freigegebenen Code handelt, sollten Sie diesen auch dann ändern, wenn er in der aktuell aktiven Konfiguration kompiliert wird.
+- Die Variable für die Grußformel in Zeile 11 wird mit dem `HELLO`-Bezeichner initialisiert, der eine violette Wellenlinie hat. Der Grund hierfür ist, dass kein `HELLO`-Bezeichner in dem aktuell inaktiven iOS-Projekt definiert ist. Während im Android-Projekt Zeile 11 kompilieren wird, ist dies im iOS-Projekt nicht der Fall. Da es sich um freigegebenen Code handelt, sollten Sie diesen auch dann ändern, wenn er in der aktuell aktiven Konfiguration kompiliert wird.
 
-- Zeile 12 weist eine rote Wellenlinie am BYE-Bezeichner auf; dieser Bezeichner ist in dem aktuell ausgewählten aktiven Projekt nicht definiert.
+- Zeile 12 weist eine rote Wellenlinie am `BYE`-Bezeichner auf; dieser Bezeichner ist in dem aktuell ausgewählten aktiven Projekt nicht definiert.
 
-Ändern Sie nun das aktive Projekt in iOS.StaticLibrary, und achten Sie auf die Änderungen an den Wellenlinien.
+Ändern Sie nun das aktive Projekt in **iOS.StaticLibrary**, und beobachten Sie, wie sich die Wellenlinien verändern.
 
 ![iOS ist als aktives Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Beachten Sie Folgendes:
 
-- Der #ifdef-Branch in Zeile 6 ist ausgegraut und stellt den inaktiven Bereich dar, da __ANDROID\_\_ für das iOS-Projekt nicht definiert ist.
+- Der `#ifdef`-Branch in Zeile 6 ist ausgegraut und stellt den inaktiven Bereich dar, da `__ANDROID__` nicht für das iOS-Projekt definiert ist.
 
-- Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der nun eine rote Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell aktiven iOS-Projekt definiert ist.
+- Die Variable für die Grußformel in Zeile 11 wird mit dem `HELLO`-Bezeichner initialisiert, der nun eine rote Wellenlinie hat. Der Grund hierfür ist, dass kein `HELLO`-Bezeichner in dem aktuell aktiven iOS-Projekt definiert ist.
 
-- Zeile 12 weist der BYE-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven Android.NativeActivity-Projekt nicht definiert.
+- In Zeile 12 weist der `BYE`-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven **Android.NativeActivity**-Projekt nicht definiert.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense für eigenständige Dateien
 
-Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach dem Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
+Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktivieren oder deaktivieren. Beachten Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, den Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
 
 ![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Standardmäßig verwendet eine einzelne IntelliSense-Datei die standardmäßigen Includeverzeichnisse für die Suche nach Headerdateien. Öffnen Sie zum Hinzufügen weiterer Verzeichnisse das Kontextmenü für den Knoten „Projektmappe“, und fügen Sie Ihr Verzeichnis zur Liste **Quellcode debuggen** hinzu, wie in der folgenden Abbildung dargestellt:
+Standardmäßig verwendet eine einzelne IntelliSense-Datei die standardmäßigen Includeverzeichnisse für die Suche nach Headerdateien. Öffnen Sie zum Hinzufügen weiterer Verzeichnisse das Kontextmenü für den Knoten **Projektmappe**, und fügen Sie Ihr Verzeichnis, wie in der folgenden Abbildung gezeigt, zur Liste **Quellcode debuggen** hinzu:
 
 ![Einen Pfad zu einer Headerdatei hinzufügen](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von IntelliSense](../ide/using-intellisense.md)
+- [Verwendung von IntelliSense](../ide/using-intellisense.md)
