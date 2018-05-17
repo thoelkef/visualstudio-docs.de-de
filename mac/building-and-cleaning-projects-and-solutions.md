@@ -1,15 +1,15 @@
 ---
-title: Erstellen und Bereinigen von Projekten und Projektmappen
-description: ''
+title: Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio für Mac
+description: In diesem Artikel erfahren Sie, wie Sie in Visual Studio für Mac ein Projekt erstellen.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Erstellen und Bereinigen von Projekten und Projektmappen
 
@@ -21,11 +21,11 @@ So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinige
 
 1. Klicken Sie auf den Knoten „Projektmappe“ im Projektmappenpad:
 
-    ![](media/compiling-and-building-image1.png)
+    ![Auswählen des Knotens „Projektmappe“](media/compiling-and-building-image1.png)
 
 2. Klicken Sie in der Menüleiste auf das Menü „Erstellen“, und wählen Sie dann eine der folgenden Optionen:
 
-    ![](media/compiling-and-building-image2.png)
+    ![Auswählen des Menüelements „Build All“](media/compiling-and-building-image2.png)
 
     * **Build All** (Alle erstellen): Versucht, alle Dateien innerhalb des Projekts zu erstellen, die sich seit dem letzten Build geändert haben.
     * **Rebuild All** (Alles neu erstellen): Bereinigt die Projektmappe und erstellt diese dann.

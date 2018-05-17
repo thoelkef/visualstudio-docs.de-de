@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Anzeigen der Codestruktur
 
@@ -56,11 +56,11 @@ Wenn Ihr Projekt in die Quellcodeverwaltung eingecheckt wird, zeigt jedes **Klas
 
 ### <a name="class-view-toolbar"></a>Klassenansicht: Symbolleiste
 
-Die Symbolleiste der Klassenansicht enthält die folgenden Befehle.
+Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle.
 
 |||
 |-|-|
-|**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei (SUO) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
+|**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei (*SUO*) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
 |**Zurück**|Navigiert zum zuvor ausgewählten Element.|
 |**Vorwärts**|Navigiert zum nächsten ausgewählten Element.|
 |**Klassendiagramm anzeigen** (nur Projekte mit verwaltetem Code)|Dieser Befehl wird verfügbar, wenn Sie in der **Klassenansicht** einen Namespace oder Typ auswählen. Wenn ein Namespace ausgewählt ist, zeigt das Klassendiagramm alle darin enthaltenen Typen an. Wenn ein Typ ausgewählt ist, zeigt das Klassendiagramm nur diesen Typ an.|
@@ -90,7 +90,7 @@ Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählt
 |**Gehe zu Definition**|Sucht nach der Definition des Elements im Quellcode oder im **Objektkatalog**, wenn das Element nicht im geöffneten Projekt definiert ist.|
 |**Definition durchsuchen**|Zeigt das ausgewählte Element im **Objektkatalog** an.|
 |**Alle Verweise suchen**|Sucht das aktuell ausgewählte Objektelement und zeigt die Ergebnisse im Fenster **Suchergebnisse** an.|
-|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen** auswählen.|
+|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie auf die Schaltfläche **Suchergebnisse löschen** (**X**) neben dem Feld **Suchen** klicken.|
 |**Kopieren**|Kopiert den vollqualifizierten Namen des Objekts.|
 |**Alphabetisch sortieren**|Listet Typen und Member alphabetisch nach Namen auf.|
 |**Nach Membertyp sortieren**|Listet Typen und Member nach Typ sortiert auf (sodass Klassen vor Schnittstellen, Schnittstellen vor Delegaten und Methoden vor Eigenschaften stehen).|
@@ -130,11 +130,11 @@ Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle.
 
 Das Fenster **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
-Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliotheksassemblys, Typbibliotheken und OCX-Dateien einbeziehen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis „%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat“ gespeichert.
+Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* gespeichert.
 
 Der linke Bereich des **Objektbrowsers** zeigt Assemblys. Sie können die Assemblys erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.
 
-Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Wählen Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen**, um eine Suche zu löschen.
+Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Klicken Sie zum Löschen einer Suche auf die Schaltfläche **Suchergebnisse löschen** (**X**) neben dem Feld **Suchen**.
 
 Der **Objektkatalog** verfolgt die von Ihnen vorgenommene Auswahl, und Sie können zwischen Ihren Auswahlmöglichkeiten navigieren, indem Sie die Schaltflächen **Weiter** und **Zurück** auf der Symbolleiste verwenden.
 
@@ -185,7 +185,7 @@ Im Fenster **Codedefinition** wird die Definition eines ausgewählten C++-Typs o
 Obwohl dieses Fenster schreibgeschützt ist, können Sie darin Haltepunkte oder Lesezeichen festlegen. Wählen Sie im Kontextmenü die Option **Definition bearbeiten** aus, um die angezeigte Definition zu ändern. Daraufhin wird die Quelldatei im Code-Editor geöffnet und die Einfügemarke in die Zeile verschoben, in der die Definition beginnt.
 
 > [!NOTE]
-> Ab Visual Studio 2015 kann das Fenster „Codedefinition“ nur mit C++-Code verwendet werden.
+> Ab Visual Studio 2015 kann das Fenster **Codedefinition** nur mit C++-Code verwendet werden.
 
 ### <a name="code-definition-shortcut-menu"></a>Kontextmenü der Codedefinition
 
@@ -193,8 +193,8 @@ Das Kontextmenü in der **Codedefinition** kann die folgenden Befehle enthalten:
 
 |||
 |-|-|
-|**Schnellaktionen und Refactorings...**||
-|**Umbenennen...**||
+|**Schnellaktionen und Refactorings**||
+|**Umbenennen**||
 |**Diagramm für Includedateien generieren**||
 |**Definition einsehen**||
 |**Gehe zu Definition**|Sucht die Definition (oder Definitionen, für partielle Klassen) und zeigt sie im Fenster **Suchergebnisse** an.|

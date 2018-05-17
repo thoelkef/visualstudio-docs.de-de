@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
@@ -84,7 +84,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Integration:**
 
     -   Nur Projekte bei externer Änderung neu laden (mit Einschränkungen).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Veröffentlichung: 24.01.2018
 
@@ -93,9 +93,9 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Integration:**
 
     -   Automatische Konvertierung des Debugsymbols von „pdb“ zu „mdb“ wurde behoben.
-    
+
     -   Indirekter Aufruf von EditorPrefs.GetBool, der den Inspektor beim Versuch beeinträchtigt, die Größe des Arrays zu ändern, korrigiert.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Veröffentlichung: 10.01.2018
 
@@ -112,7 +112,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Debugger:**
 
     -   Unterstützung für DebuggerHidden/DebuggerStepThrough-Attribute mit der neuen Unity-Runtime hinzugefügt.
-    
+
 -   **Assistenten:**
 
     -   'Latest'-Version für Assistenten eingeführt.
@@ -126,7 +126,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Debugger:**
 
     -   Race bei der Behandlung von Abbruchereignissen korrigiert.
-    
+
 -   **Assistenten:**
 
     -   Aktualisieren des Roslyn-Kontexts vor dem Einfügen der Methode.
@@ -656,7 +656,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Bereinigung von Sockets vor dem Starten des Spiels in Unity, nachdem "Anfügen" und "Wiedergeben" in Visual Studio ausgelöst wurden. Dies beseitigt einige Probleme mit der Stabilität der Verbindung zwischen Unity und VS bei Verwenden von "Anfügen" und "Wiedergeben".
 
--   Vermeiden des Aufrufens von Methoden auf der Debuggeroberfläche des Skriptmoduls von Unity, die anfällig für das Einfrieren von Unity sind. Dadurch wird das Einfrieren von Unity beim Anfügen des Debuggers behoben.
+-   Vermeiden des Aufrufens von Methoden auf der Debuggeroberfläche der Skript-Engine von Unity, die anfällig für das Einfrieren von Unity sind. Dadurch wird das Einfrieren von Unity beim Anfügen des Debuggers behoben.
 
 -   Korrektur der Anzeige von Aufruflisten, wenn keine Symbole verfügbar sind.
 
@@ -783,7 +783,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ### <a name="new-features"></a>Neue Funktionen
 
--   Umgehung eines Problems auf der Vermittlungsschicht im Skriptmodul von Unity für Mavericks für die Remoteerkennung von Editoren.
+-   Umgehung eines Problems auf der Vermittlungsschicht in der Skript-Engine von Unity für Mavericks für die Remoteerkennung von Editoren.
 
 -   Behandlung neuer Ports zum Erkennen von Unity-Remoteplayern.
 
@@ -886,7 +886,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Verarbeitung vollständig qualifizierter Namen in der Ausdrucksauswertung.
 
--   Korrektur des Einfrierens im Zusammenhang mit der Ausnahmebehandlung, bei der das Unity-Skriptmodul uns falsche StackFrame-Daten sendet.
+-   Korrektur des Einfrierens im Zusammenhang mit der Ausnahmebehandlung, bei der die Unity-Skript-Engine uns falsche StackFrame-Daten sendet.
 
 -   Korrektur des Buildprozesses für Webziele.
 
@@ -942,7 +942,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Installation eines benutzerdefinierten Unity-Profil als standardmäßiges .NET-Zielprofil. Dies behebt alle falsch positiven Ergebnisse, die ReSharper anzeigen könnte.
 
--   Umgehung eines Unity-Skriptmodulfehlers, damit der Debugger bei nicht ordnungsgemäß registrierten Threads nicht unterbricht.
+-   Umgehung eines Unity-Skript-Engine-Fehlers, damit der Debugger bei nicht ordnungsgemäß registrierten Threads nicht unterbricht.
 
 -   Überarbeitung der Dateiöffnungsfunktion zum Vermeiden einer Racebedingung, bei der VS vorgab, eine Datei öffnen zu können, es aber bei der Anforderung zum Öffnen der Datei zu einem Absturz kam.
 
@@ -1136,7 +1136,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Automatische Konvertierung von Debugsymbolen in Unity.
 
-     Wenn sich in Ihrem Ordner "Asset" eine .NET-DLL-Assembly mit der zugehörigen PDB-Datei befindet, müssen Sie die Assembly einfach erneut importieren. Daraufhin konvertiert UnityVS die PDB-Datei in eine Debugsymboldatei, die das Unity-Skriptmodul versteht. Sie können anschließend Ihre .NET-Assemblys aus UnityVS schrittweise ausführen.
+     Wenn sich in Ihrem Ordner "Asset" eine .NET-DLL-Assembly mit der zugehörigen PDB-Datei befindet, müssen Sie die Assembly einfach erneut importieren. Daraufhin konvertiert UnityVS die PDB-Datei in eine Debugsymboldatei, die die Unity-Skript-Engine versteht. Sie können anschließend Ihre .NET-Assemblys aus UnityVS schrittweise ausführen.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

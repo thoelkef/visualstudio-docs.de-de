@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d0e459fe1bd9960c46a1816add1f79e4d5507d5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc032fc89b6dee609fa3c69ebd210aa8adefd17c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
 Das VSPerfCLREnv-Tool wird verwendet, um Umgebungsvariablen festzulegen, die für die Profilerstellung einer .NET Framework-Anwendung erforderlich sind. Es verwendet die folgende Syntax:
 
-```
+```cmd
 VsPerfCLREnv [/option]
 ```
 
@@ -45,7 +45,7 @@ Die Optionen **InteractionOn** und **GlobalInteractionOn** aktivieren die Sammlu
 
 Das folgende Beispiel schließt Ebeneninteraktionsdaten in eine Profilerstellung ein, die die Samplingmethode verwendet:
 
-```
+```cmd
 VSPerfCLREnv /SampleOn
 VSPerfCLREnv /InteractionOn
 VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
@@ -53,7 +53,7 @@ VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
 
 Das folgende Beispiel schließt Ebeneninteraktionsdaten in eine Profilerstellung für einen Windows-Dienst ein:
 
-```
+```cmd
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service

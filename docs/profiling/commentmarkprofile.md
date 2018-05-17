@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae602e6f28fc30c20c5b1f3c466d2e7afe458b8f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 Die `CommentMarkProfile`-Funktion fügt der VSP-Datei eine numerische Markierung und eine Textzeichenfolge hinzu. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`-Funktion enthält, auf ON festgelegt sein.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
                                    long lMarker,   
                                    LPCTSTR szComment);  
@@ -74,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="example"></a>Beispiel  
  Der folgende Code stellt den Funktionsaufruf „CommentMarkProfile“ dar. In diesem Beispiel wird vorausgesetzt, dass die Win32-Zeichenfolgenmakros und Unicode-Compilereinstellungen verwendet werden, um zu bestimmen, ob der Code den Funktionsaufruf [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] abruft.  
   
-```  
+```cpp  
 void ExerciseCommentMarkProfile()  
 {  
     // Declare and initalize variables to pass to   

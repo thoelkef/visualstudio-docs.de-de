@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60692f77645857214c12ba04968d9acee0df5008
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bde53a409428d140afe498c2894e93e1355726
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="lineoff"></a>LineOff
 Standardmäßig erfasst der Profiler die Zeilennummer des Quellcodes sowie die Offsetdaten der Zeilennummer, wenn Sie die Sampling-Profilerstellungsmethode verwenden. Die **LineOff**-Option für VSPerfCmd deaktiviert die Datensammlung der Zeilennummern, wenn VSPerfCmd zum Starten der Anwendung verwendet wird. Wenn **LineOff** angegeben ist, werden Profilerstellungsdaten für die Funktionsebene gesammelt.  
@@ -23,7 +23,7 @@ Standardmäßig erfasst der Profiler die Zeilennummer des Quellcodes sowie die O
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cmd  
 VSPerfCmd.exe /Launch:AppName /LineOff [Options]  
 ```  
   
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel werden die Anwendung und der Profiler gestartet, und das Sampling auf Zeilenebene wird deaktiviert.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /LineOff  
 ```  

@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dae1c3d62fce5ba8b3991e41bade1d612b74647
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
+# <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
 Visual Studio verwendet [reguläre Ausdrücke in .NET Framework](/dotnet/standard/base-types/regular-expressions) zum Suchen und Ersetzen von Text.
 
@@ -32,7 +32,7 @@ Visual Studio verwendet [reguläre Ausdrücke in .NET Framework](/dotnet/standar
 
 Umschließen Sie die Gruppe mit Klammern im Muster für reguläre Ausdrücke, um eine nummerierte Erfassungsgruppe zu verwenden. Verwenden Sie `$number`, wenn `number` eine ganze Zahl ist, beginnend mit 1, um eine bestimmte nummerierte Gruppe in einem Ersetzungsmuster anzugeben. Der gruppierte reguläre Ausdruck `(\d)([a-z])` definiert beispielsweise zwei Gruppen: die erste Gruppe enthält eine einzelne Dezimalstelle, und die zweite Gruppe enthält ein einzelnes Zeichen zwischen **a** und **z**. Der Ausdruck findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2b 3c 4d**. Die Ersatzzeichenfolge `z$1` verweist nur auf die erste Gruppe und konvertiert die Zeichenfolge in **z1 z2 z3 z4**.
 
-Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](/dotnet/standard/base-types/substitutions-in-regular-expressions).
+Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken (Leitfaden für .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 

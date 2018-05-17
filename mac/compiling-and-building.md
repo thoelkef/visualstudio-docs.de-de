@@ -1,15 +1,15 @@
 ---
-title: Kompilieren und Generieren in Visual Studio für Mac
-description: ''
+title: Kompilieren und Erstellen
+description: In diesem Artikel erfahren Sie, wie Sie Projekte und Projektmappen in Visual Studio für Mac kompilieren und erstellen können.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 7a7dfaeca45ae157dc9e82b9f8eff54244cbd7ca
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 28127fec86f839110ff53de3e6d7d2466adc3489
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilieren und Generieren in Visual Studio für Mac
 
@@ -39,7 +39,7 @@ Mit Visual Studio für Mac können Sie auch:
 
 ## <a name="building-from-command-line"></a>Erstellen über die Befehlszeile
 
-Sie können Buildmodule von MSBuild verwenden, um Anwendungen über die Befehlszeile zu erstellen.
+Sie können die Build-Engine von MSBuild verwenden, um Anwendungen über die Befehlszeile zu erstellen.
 
 Weitere Informationen zum Verwenden von MSBuild finden Sie in den Artikeln zu [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 

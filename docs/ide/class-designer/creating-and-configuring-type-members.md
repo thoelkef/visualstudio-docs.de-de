@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese Member im Fenster **Klassendetails** konfigurieren:
@@ -57,8 +57,8 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 |Aufgabe|Unterstützender Inhalt|
 |----------|------------------------|
-|**Erste Schritte:** Bevor Sie Typmembers erstellen und konfigurieren, müssen Sie das Fenster **Klassendetails** öffnen.|-   [Öffnen des Fensters „Klassendetails“](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Hinweise zur Verwendung von Klassendetails](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Anzeige schreibgeschützter Informationen](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Erstellen und Ändern von Typmembern:** Sie können neue Members erstellen, Members ändern und einer Methode Parameter hinzufügen, indem Sie das Fenster **Klassendetails** verwenden.|-   [Erstellen von Membern](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Ändern von Typmembern](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Hinzufügen von Parametern zu Methoden](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Erste Schritte:** Bevor Sie Typmembers erstellen und konfigurieren, müssen Sie das Fenster **Klassendetails** öffnen.|-   [Öffnen des Fensters „Klassendetails“](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Hinweise zur Verwendung von Klassendetails](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Anzeigen von schreibgeschützten Informationen](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Erstellen und Ändern von Typmembern:** Sie können neue Members erstellen, Members ändern und einer Methode Parameter hinzufügen, indem Sie das Fenster **Klassendetails** verwenden.|-   [Erstellen von Membern](creating-and-configuring-type-members.md#create-members)<br />-   [Ändern von Typmembern](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Hinzufügen von Parametern zu Methoden](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Öffnen des Fensters „Klassendetails“
 Standardmäßig wird das Fenster **Klassendetails** automatisch angezeigt, wenn Sie ein neues Klassendiagramm öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](how-to-add-class-diagrams-to-projects.md). Sie können das Fenster **Klassendetails** jedoch mit folgenden Methoden auch explizit öffnen.
@@ -157,7 +157,7 @@ In jeder Memberzeile werden die folgenden Elemente angezeigt:
 
 -   **\<Member hinzufügen>**
 
-     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<Member hinzufügen>**. Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#CreateMembers).
+     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<Member hinzufügen>**. Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
 -   **Membereigenschaften im Eigenschaftenfenster**
 
@@ -207,14 +207,14 @@ Parameterzeilen enthalten die folgenden Elemente:
 
 -   **\<Parameter hinzufügen>**
 
-     Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Parametereigenschaften im Eigenschaftenfenster**
 
 Im Eigenschaftenfenster werden die gleichen Parametereigenschaften wie im Fenster **Klassendetails** angezeigt: **Name**, **Type**, **Modifier**, **Summary** sowie **Optional Default**. Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 
 > [!NOTE]
-> Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#CreateMembers).
+> Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

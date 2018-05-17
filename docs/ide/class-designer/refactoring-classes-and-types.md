@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring von Klassen und Typen (Klassen-Designer)
 
@@ -40,8 +40,9 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 |----------|------------------------|
 |**Umgestaltung von Klassen:** Sie können Umgestaltungsvorgänge zum Aufteilen eine Klasse in Teilklassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](how-to-split-a-class-into-partial-classes.md)|
 |**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [How to: Implement an Interface (Class Designer) (Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer))](how-to-implement-an-interface.md)|
-|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [How to: Create a Nullable Type (Class Designer) (Vorgehensweise: Erstellen eines Nullable-Typs (Klassen-Designer))](how-to-create-a-nullable-type.md)|
+|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](refactoring-classes-and-types.md#rename)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](refactoring-classes-and-types.md#move)<br />-   [How to: Create a Nullable Type (Class Designer) (Vorgehensweise: Erstellen eines Nullable-Typs (Klassen-Designer))](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Umbenennen von Typen und Typmembern
 
 Im Klassen-Designer können Sie einen Typ oder einen Member eines Typs im Klassendiagramm oder im Eigenschaftenfenster umbenennen. Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern. Die Umbenennung eines Typs oder Typmember wird an alle Fenster und Codepositionen übergeben, in denen der alte Name auftrat.
@@ -77,6 +78,7 @@ Im Klassen-Designer können Sie einen Typ oder einen Member eines Typs im Klasse
 
      Der neue Name wird an alle Fenster und Codepositionen im aktuellen Projekt übertragen, in dem der alte Name auftrat.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Verschieben von Typmembern von einem Typ in einen anderen
 
 Mit dem **Klassen-Designer**können Sie einen Typmember von einem Typ in einen anderen Typ verschieben, wenn beide Typen im aktuellen Klassendiagramm sichtbar sind.

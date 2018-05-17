@@ -13,59 +13,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
 Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.config* definierte Datenquelle für Komponententests verwendet wird. Sie erfahren, wie die Datei „app.config“ zum Definieren einer Datenquelle erstellt wird, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet werden kann. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:
 
--   Erstellen der Datei „app.config“
+- Erstellen der Datei „app.config“
 
--   Definieren eines benutzerdefinierten Konfigurationsabschnitts
+- Definieren eines benutzerdefinierten Konfigurationsabschnitts
 
--   Definieren von Verbindungszeichenfolgen
+- Definieren von Verbindungszeichenfolgen
 
--   Definieren der Datenquellen
+- Definieren der Datenquellen
 
--   Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse
+- Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
- Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
 
--   Visual Studio Enterprise
+Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
 
--   Microsoft Access oder Microsoft Excel, um Daten für mindestens eine der Testmethoden bereitzustellen
+- Visual Studio Enterprise
 
--   Eine Visual Studio 2012-Projektmappe, die ein Testprojekt enthält.
+- Microsoft Access oder Microsoft Excel, um Daten für mindestens eine der Testmethoden bereitzustellen
 
-## <a name="create-the-appconfig-file"></a>Erstellen der Datei „App.config“
+- Eine Visual Studio 2012-Projektmappe, die ein Testprojekt enthält.
 
-### <a name="to-add-an-appconfig-file-to-the-project"></a>So fügen Sie dem Projekt die Datei „app.config“ hinzu
+## <a name="add-an-appconfig-file-to-the-project"></a>Hinzufügen einer Datei „app.config“ zum Projekt
 
-1.  Wenn für das Testprojekt bereits eine Datei „app.config“ vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationabschnitts](#DefineCustomConfigurationSection) fort.
+1. Wenn für das Testprojekt bereits eine Datei „app.config“ vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationabschnitts](#DefineCustomConfigurationSection) fort.
 
-2.  Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt, wählen Sie **Hinzuzufügen**, und klicken Sie dann auf **Neues Element**.
+2. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt, und wählen Sie dann **Hinzufügen** > **Neues Element** aus.
 
      Das Fenster **Neues Element hinzufügen** wird geöffnet.
 
-3.  Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
+3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
 ##  <a name="DefineCustomConfigurationSection"></a> Definieren eines benutzerdefinierten Konfigurationsabschnitts
- Sehen Sie sich die Datei „app.config“ an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
+
+Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>So fügen Sie der Datei „app.config“ den benutzerdefinierten Konfigurationsabschnitt hinzu
 
-1.  Das Stammelement von app.config sollte das `configuration`-Element sein. Erstellen Sie ein `configSections`-Element innerhalb des `configuration`-Elements. `configSections` sollte das erste Element in der Datei „app.config“ sein.
+1. Das Stammelement von „app.config“ sollte das **configuration**-Element sein. Erstellen Sie ein **configSections**-Element innerhalb des **configuration**-Elements. **configSections** sollte das erste Element in der Datei *app.config* sein.
 
-2.  Erstellen Sie innerhalb des `configSections`-Elements ein `section`-Element.
+2. Erstellen Sie innerhalb des **configSections**-Elements ein **section**-Element.
 
-3.  Fügen Sie dem `section`-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie diesem den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` zu.
+3. Fügen Sie im **section**-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie ihm den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` zu.
 
- Das `section`-Element sollte wie folgt aussehen:
+Das **section**-Element sollte wie folgt aussehen:
 
 ```
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
@@ -74,17 +74,17 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.c
 > [!NOTE]
 > Der Assemblyname muss mit dem verwendeten Microsoft Visual Studio .NET-Frameworkbuild übereinstimmen. Legen Sie die Version auf 9.0.0.0 fest, wenn Sie Visual Studio .NET Framework 3.5 verwenden. Wenn Sie Visual Studio .NET Framework 2.0 verwenden, legen Sie die Version auf 8.0.0.0 fest.
 
-
 ## <a name="define-connection-strings"></a>Definieren von Verbindungszeichenfolgen
- Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für den Zugriff auf Datenquellen. In Konfigurationsdateien definierte Verbindungszeichenfolgen enthalten wiederverwendbare Datenanbieterinformationen für eine Anwendung. In diesem Abschnitt erstellen Sie zwei Verbindungszeichenfolgen, die von den im Abschnitt „Benutzerdefinierte Konfiguration“ definierten Datenquellen verwendet werden.
+
+Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für den Zugriff auf Datenquellen. In Konfigurationsdateien definierte Verbindungszeichenfolgen enthalten wiederverwendbare Datenanbieterinformationen für eine Anwendung. In diesem Abschnitt erstellen Sie zwei Verbindungszeichenfolgen, die von den im Abschnitt „Benutzerdefinierte Konfiguration“ definierten Datenquellen verwendet werden.
 
 ### <a name="to-define-connection-strings"></a>So definieren Sie Verbindungszeichenfolgen
 
-1.  Erstellen Sie hinter dem `configSections`-Element ein `connectionStrings`-Element.
+1. Erstellen Sie nach dem **configSections**-Element ein **connectionStrings**-Element.
 
-2.  Erstellen Sie innerhalb des `connectionStrings`-Elements zwei `add`-Elemente.
+2. Erstellen Sie innerhalb des **connectionStrings**-Elements zwei **Hinzufügen**-Elemente.
 
-3.  Erstellen Sie im ersten `add`-Element die folgenden Attribute und Werte für eine Verbindung mit einer Microsoft Access-Datenbank:
+3. Erstellen Sie im ersten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Verbindung mit einer Microsoft Access-Datenbank:
 
 |Attribut|Werte|
 |---------------|------------|
@@ -92,45 +92,46 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.c
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
 
- Erstellen Sie im zweiten `add`-Element die folgenden Attribute und Werte für eine Verbindung mit einem Microsoft Excel-Arbeitsblatt:
+Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Verbindung mit einem Microsoft Excel-Arbeitsblatt:
 
 |||
 |-|-|
 |`name`|`"MyExcelConn"`|
-|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
+|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
 |`providerName`|`"System.Data.Odbc"`|
 
- Das `connectionStrings`-Element sollte wie folgt aussehen:
+Das **connectionStrings**-Element sollte in etwa wie folgt aussehen:
 
 ```
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
 </connectionStrings>
 ```
 
 ## <a name="define-data-sources"></a>Definieren von Datenquellen
- Der Abschnitt „Datenquellen“ enthält vier Attribute, die vom Testmodul zum Abrufen von Daten aus einer Datenquelle verwendet werden.
 
--   `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.
+Der Abschnitt „Datenquellen“ enthält vier Attribute, die vom Testmodul zum Abrufen von Daten aus einer Datenquelle verwendet werden.
 
--   `connectionString` bezeichnet die im vorhergehenden Abschnitt „Definieren von Verbindungszeichenfolgen“ erstellte Verbindungszeichenfolge.
+- `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.
 
--   `dataTableName` definiert die Tabelle oder das Blatt mit den im Test zu verwendenden Daten.
+- `connectionString` bezeichnet die im vorhergehenden Abschnitt „Definieren von Verbindungszeichenfolgen“ erstellte Verbindungszeichenfolge.
 
--   `dataAccessMethod` definiert die Technik für den Zugriff auf Datenwerte in der Datenquelle.
+- `dataTableName` definiert die Tabelle oder das Blatt mit den im Test zu verwendenden Daten.
 
- In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in einem Komponententest.
+- `dataAccessMethod` definiert die Technik für den Zugriff auf Datenwerte in der Datenquelle.
+
+In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in einem Komponententest.
 
 ### <a name="to-define-data-sources"></a>So definieren Sie Datenquellen
 
-1.  Erstellen Sie hinter dem `connectionStrings`-Element ein `microsoft.visualstudio.testtools`-Element. Dieser Abschnitt wurde im Abschnitt „Definieren eines benutzerdefinierten Konfigurationabschnitts“ erstellt.
+1. Erstellen Sie nach dem **connectionStrings**-Element ein **microsoft.visualstudio.testtools**-Element. Dieser Abschnitt wurde im Abschnitt „Definieren eines benutzerdefinierten Konfigurationabschnitts“ erstellt.
 
-2.  Erstellen Sie innerhalb des `microsoft.visualstudio.testtools`-Elements ein `dataSources`-Element.
+2. Erstellen Sie innerhalb des **microsoft.visualstudio.testtools**-Elements ein **dataSources**-Element.
 
-3.  Erstellen Sie innerhalb des `dataSources`-Elements zwei `add`-Elemente.
+3. Erstellen Sie innerhalb des **dataSources**-Elements zwei **Hinzufügen**-Elemente.
 
-4.  Erstellen Sie im ersten `add`-Element die folgenden Attribute und Werte für eine Microsoft Access-Datenquelle:
+4. Erstellen Sie im ersten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Microsoft Access-Datenquelle:
 
 |Attribut|Werte|
 |---------------|------------|
@@ -139,7 +140,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.c
 |`dataTableName`|`"MyDataTable"`|
 |`dataAccessMethod`|`"Sequential"`|
 
- Erstellen Sie im zweiten `add`-Element die folgenden Attribute und Werte für eine Microsoft Excel-Datenquelle:
+Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Microsoft Excel-Datenquelle:
 
 |||
 |-|-|
@@ -148,7 +149,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.c
 |`dataTableName`|`"Sheet1$"`|
 |`dataAccessMethod`|`"Sequential"`|
 
-Das `microsoft.visualstudio.testtools`-Element sollte wie folgt aussehen:
+Das **microsoft.visualstudio.testtools**-Element sollte in etwa wie folgt aussehen:
 
 ```xml
 <microsoft.visualstudio.testtools>
@@ -159,7 +160,7 @@ Das `microsoft.visualstudio.testtools`-Element sollte wie folgt aussehen:
 </microsoft.visualstudio.testtools>
 ```
 
-Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
+Die endgültige Datei *app.config* sollte in etwa wie folgt aussehen:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -169,7 +170,7 @@ Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
     </configSections>
     <connectionStrings>
         <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
     </connectionStrings>
     <microsoft.visualstudio.testtools>
         <dataSources>
@@ -180,46 +181,47 @@ Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
 </configuration>
 ```
 
-## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Erstellen eines Komponententests mit in der Datei „app.config“ definierten Datenquellen
- Nachdem die Datei „app.config“ definiert ist, erstellen Sie einen Komponententest, für den Daten aus den in der Datei „app.config“ definierten Datenquellen verwendet werden. In diesem Abschnitt wird Folgendes beschrieben:
+## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Erstellen eines Komponententests mit in der Datei „app.config“ definierten Datenquellen
 
--   Erstellen der in der Datei „app.config“ angegebenen Datenquellen
+Nachdem die Datei „app.config“ definiert ist, erstellen Sie einen Komponententest, für den Daten aus den in der Datei „app.config“ definierten Datenquellen verwendet werden. In diesem Abschnitt wird Folgendes beschrieben:
 
--   Verwenden der Datenquellen in zwei Testmethoden, bei denen die Werte der beiden Datenquellen verglichen werden
+- Erstellen der in der Datei „app.config“ angegebenen Datenquellen
+
+- Verwenden der Datenquellen in zwei Testmethoden, bei denen die Werte der beiden Datenquellen verglichen werden
 
 ### <a name="to-create-a-microsoft-access-data-source"></a>So erstellen Sie eine Microsoft Access-Datenquelle
 
-1.  Erstellen Sie eine Microsoft Access-Datenbank mit dem Namen `testdatasource.accdb`.
+1. Erstellen Sie eine Microsoft Access-Datenbank mit dem Namen *testdatasource.accdb*.
 
-2.  Erstellen Sie in `testdatasource.accdb` eine Tabelle mit dem Namen `MyDataTable`.
+2. Erstellen Sie eine Tabelle, und nennen Sie sie `MyDataTable` in *testdatasource.accdb*.
 
-3.  Erstellen Sie in `MyDataTable` zwei Felder mit dem Namen `Arg1` und `Arg2` mit dem Datentyp `Number`.
+3. Erstellen Sie in `MyDataTable` zwei Felder mit dem Namen `Arg1` und `Arg2` mit dem Datentyp `Number`.
 
-4.  Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2`: (10,50), (3,2), (6,0), (0,8) bzw. (12312,1000).
+4. Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2`: (10,50), (3,2), (6,0), (0,8) bzw. (12312,1000).
 
-5.  Speichern und schließen Sie die Datenbank.
+5. Speichern und schließen Sie die Datenbank.
 
-6.  Ändern Sie die Verbindungszeichenfolge, um auf den Speicherort der Datenbank zu verweisen. Ändern Sie den Wert von `Data Source`, um den Speicherort der Datenbank anzugeben.
+6. Ändern Sie die Verbindungszeichenfolge, um auf den Speicherort der Datenbank zu verweisen. Ändern Sie den Wert von `Data Source`, um den Speicherort der Datenbank anzugeben.
 
 ### <a name="to-create-a-microsoft-excel-data-source"></a>So erstellen Sie eine Microsoft Excel-Datenquelle
 
-1.  Erstellen Sie ein Microsoft Excel-Arbeitsblatt mit dem Namen `data.xlsx`.
+1. Erstellen Sie ein Microsoft Excel-Arbeitsblatt mit dem Namen *data.xlsx*.
 
-2.  Erstellen Sie ein Arbeitsblatt mit dem Namen `Sheet1`, falls dieses in `data.xlsx` noch nicht vorhanden ist.
+2. Erstellen Sie ein Arbeitsblatt mit dem Namen `Sheet1`, falls dieses noch nicht in *data.xlsx* vorhanden ist.
 
-3.  Erstellen Sie die zwei Spaltenüberschriften `Val1` und `Val2` in `Sheet1`.
+3. Erstellen Sie die zwei Spaltenüberschriften `Val1` und `Val2` in `Sheet1`.
 
-4.  Fügen Sie `Sheet1` fünf Entitäten mit folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) bzw. (5,0).
+4. Fügen Sie `Sheet1` fünf Entitäten mit folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) bzw. (5,0).
 
-5.  Speichern und schließen Sie das Arbeitsblatt.
+5. Speichern und schließen Sie das Arbeitsblatt.
 
-6.  Ändern Sie die Verbindungszeichenfolge, um auf den Speicherort des Arbeitsblattes zu verweisen. Ändern Sie den Wert von `dbq`, um den Speicherort des Arbeitsblattes anzugeben.
+6. Ändern Sie die Verbindungszeichenfolge, um auf den Speicherort des Arbeitsblattes zu verweisen. Ändern Sie den Wert von `dbq`, um den Speicherort des Arbeitsblattes anzugeben.
 
 ### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>So erstellen Sie einen Komponententest mit in der Datei „app.config“ definierten Datenquellen
 
-1.  Fügen Sie dem Testprojekt einen Komponententest hinzu.
+1. Fügen Sie dem Testprojekt einen Komponententest hinzu.
 
-2.  Ersetzen Sie den automatisch generierten Inhalt des Komponententests durch folgenden Code:
+2. Ersetzen Sie den automatisch generierten Inhalt des Komponententests durch folgenden Code:
 
     ```csharp
     using System;
@@ -259,9 +261,9 @@ Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
     }
     ```
 
-3.  Sehen Sie sich die DataSource-Attribute an. Beachten Sie die Einstellungsnamen aus der Datei „app.config“.
+3. Sehen Sie sich die DataSource-Attribute an. Beachten Sie die Einstellungsnamen aus der Datei „app.config“.
 
-4.  Erstellen Sie die Projektmappe, und führen Sie die Tests „MyTestMethod“ und „MyTestMethod2“ aus.
+4. Erstellen Sie die Projektmappe, und führen Sie die Tests „MyTestMethod“ und „MyTestMethod2“ aus.
 
 > [!IMPORTANT]
 > Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
@@ -33,7 +33,7 @@ Sie können darüber hinaus den Visual Studio-Objektkatalog (**Ansicht > Weitere
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring).
+IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Visual Studio 2017 Version 15.7 und höher unterstützt auch [Typhinweise](#type-hints).
 
 Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Die Eingabe von @ startet einen Decorator und zeigt potenzielle Decorators an. V
 
 > [!Tip]
 > Über **Tools > Optionen > Text-Editor > Python > Erweitert** können Sie das Verhalten von Vervollständigungen konfigurieren. Einige Beispiele: **Liste basierend auf Suchzeichenfolge filtern** filtert die Vorschläge der Vervollständigung während der Eingabe (die Option ist standardmäßig aktiviert). **Membervervollständigung zeigt Schnittmenge der Member an** zeigt nur Vervollständigungen an, die von allen möglichen Typen unterstützt werden (die Option ist standardmäßig deaktiviert). Informationen finden Sie unter [Optionen: Vervollständigungsergebnisse](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Typhinweise
+
+*Visual Studio 2017 Version 15.7 und höher.*
+
+Bei „Typhinweisen“ in Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/), python.org) handelt es sich um eine Anmerkungssyntax für Funktionen und Klassen, die die Typen der Argumente, Rückgabewerte und Klassenattribute angeben. IntelliSense zeigt Typhinweise an, wenn Sie auf Funktionsaufrufe, Argumente und Variablen zeigen, die diese Anmerkungen aufweisen.
+
+Im folgenden Beispiel ist die `Vector`-Klasse als `List[float]` deklariert, und die `scale`-Funktion enthält Typhinweise sowohl für ihre Argumente als auch für ihren Rückgabewert. Wenn mit dem Mauszeiger auf einen Aufruf dieser Funktion gezeigt wird, werden die Typhinweise angezeigt:
+
+![Zeigen mit dem Mauszeiger auf einen Funktionsaufruf, um Typhinweise offenzulegen](media/code-editing-type-hints1.png)
+
+Im folgenden Beispiel sehen Sie, wie die mit Anmerkungen versehenen Attribute der `Employee`-Klasse im IntelliSense-Vervollständigungspopupfenster für ein Attribut angezeigt werden:
+
+![Anzeigen von Typhinweisen in der IntelliSense-Vervollständigung](media/code-editing-type-hints2.png)
+
+Es ist ferner hilfreich, Typhinweise während Ihres Projekts zu überprüfen, da Fehler üblicherweise erst während der Laufzeit zutage treten. Hierzu integriert Visual Studio das Branchenstandard-Tool MyPy über den Kontextmenübefehl **Python > Mypy ausführen** im **Projektmappen-Explorer**:
+
+![Ausführen des MyPy-Kontextmenübefehls im Projektmappen-Explorer](media/code-editing-type-hints-run-mypy.png)
+
+Beim Ausführen des Befehls werden Sie ggf. aufgefordert, das mypy-Paket zu installieren. Visual Studio führt dann mypy aus, um Typhinweise in allen Python-Dateien im Projekt zu überprüfen. Fehler werden im Fenster **Fehlerliste** von Visual Studio angezeigt. Wenn ein Element im Fenster ausgewählt wird, erfolgt der Sprung zur entsprechenden Zeile in Ihrem Code.
+
+Als einfaches Beispiel enthält die folgende Funktionsdefinition einen Typhinweis, um anzugeben, dass es sich bei dem `input`-Argument um den Typ `str` handelt, während der Aufruf der Funktion versucht, eine ganze Zahl zu übergeben:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehler generiert:
+
+![Beispielergebnis für die Mypy-Überprüfung von Typhinweisen](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über *Stub-Dateien* (`.pyi`) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Mypy-Projekt-Wiki.
+>
+> Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
 
 ### <a name="signature-help"></a>Signaturhilfe
 

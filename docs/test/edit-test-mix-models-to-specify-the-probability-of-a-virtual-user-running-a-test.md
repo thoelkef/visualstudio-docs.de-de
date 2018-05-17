@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
 Das *Testmischungsmodell* gibt die Wahrscheinlichkeit dafür an, dass ein virtueller Benutzer einen bestimmten Test in einem Auslastungstestszenario ausführt. Auf diese Weise können Sie Auslastungen realitätsnaher simulieren. Anstatt nur einen Workflow für die Anwendungen zu verwenden können Sie mehrere Workflows simulieren. Dies stellt eine bessere Annäherung an die tatsächliche Interaktion zwischen Endbenutzern und Anwendungen dar.
 
 ## <a name="test-mix-model-options"></a>Testmischungsmodelloptionen
- Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
+
+Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
 
 -   **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert.
 
@@ -79,5 +80,5 @@ Mit dem Auslastungstest-Editor können Sie das Testmischungsmodell in einem Ausl
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)

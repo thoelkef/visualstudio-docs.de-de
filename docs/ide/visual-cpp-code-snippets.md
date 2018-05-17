@@ -1,5 +1,5 @@
 ---
-title: Visual C++-Codeausschnitte
+title: Visual C#-Codeausschnitte
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 
@@ -23,9 +23,9 @@ In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwend
 
 Sie können einen Codeausschnitt an einer bestimmten Stelle im Code hinzufügen (Einfügung) oder ausgewählten Code mit einem Codeausschnitt umschließen.
 
-## <a name="inserting-a-code-snippet"></a>Einfügen eines Codeausschnitts
+## <a name="insert-a-code-snippet"></a>Einfügen eines Codeausschnitts
 
-Zum Einfügen eines Codeausschnitts öffnen Sie eine C++-Codedatei (.cpp oder .h), klicken Sie auf eine beliebige Stelle in der Datei, und führen Sie eine der folgenden Aktionen aus:
+Öffnen Sie zum Einfügen eines Codeausschnitts eine C++-Codedatei (*.cpp* oder *.h*), klicken Sie auf eine beliebige Stelle in der Datei, und führen Sie eine der folgenden Aktionen aus:
 
 - Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Ausschnitt einfügen** auszuwählen.
 
@@ -41,9 +41,9 @@ Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt w
 #endif // 0
 ```
 
-Sie können dann 0 durch die richtige Bedingung ersetzen.
+Sie können dann **0** durch die richtige Bedingung ersetzen.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Verwenden eines Codeausschnitts zum Umschließen von ausgewähltem Code
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Verwenden eines Codeausschnitts zum Umschließen von ausgewähltem Code
 
 Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, wählen Sie eine Zeile (oder mehrere Zeilen) aus, und führen Sie eine der folgenden Aktionen aus:
 
@@ -71,7 +71,7 @@ Die Namen der meisten Codeausschnitte sind selbsterklärend, doch einige Namen s
 
 ## <a name="class-vs-classi"></a>Class im Vergleich zu classi
 
-Der **class**-Ausschnitt stellt die Definition einer Klasse namens „MyClass“ mit dem entsprechenden Standardkonstruktor und -destruktor bereit, wo sich die Definitionen von Konstruktor und Destruktor außerhalb der Klasse befinden:
+Der **class**-Ausschnitt stellt die Definition einer Klasse namens `MyClass` mit dem entsprechenden Standardkonstruktor und -destruktor bereit, wo sich die Definitionen von Konstruktor und Destruktor außerhalb der Klasse befinden:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-Der Codeausschnitt **classi** stellt auch die Definition einer Klasse namens „MyClass“ bereit, aber der Standardkonstruktor und -destruktor werden innerhalb der Klassendefinition definiert:
+Der Codeausschnitt **classi** stellt auch die Definition einer Klasse namens `MyClass` bereit, aber der Standardkonstruktor und -destruktor werden innerhalb der Klassendefinition definiert:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Wenn Sie den Destruktor-Ausschnitt einfügen, wird einen Destruktor für "SomeClass" bereitgestellt:
+Wenn Sie den Destruktor-Ausschnitt einfügen, wird einen Destruktor für `SomeClass` bereitgestellt:
 
 ```cpp
 class SomeClass {

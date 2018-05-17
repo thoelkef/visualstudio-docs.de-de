@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 9d19edb4801ee8af6a18f3e458cd06d0499e0273
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="version-control"></a>Versionskontrolle
 
@@ -23,7 +23,7 @@ Subversion ist ein zentralisiertes Versionskontrollsystem, was bedeutet, dass ei
 
 Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mitglieder eines Teams gleichzeitig an den gleichen Dokumenten arbeiten können. Bei Git kann ein einzelner Server alle Dateien enthalten. Wenn aber ein Repository aus dieser zentralen Quelle ausgecheckt wird, wird das gesamte Repository auf Ihrem Computer lokal geklont.
 
-# <a name="basic-concepts"></a>Grundlegende Konzepte 
+## <a name="basic-concepts"></a>Grundlegende Konzepte 
 
 Visual Studio für Mac bietet Unterstützung für beide Versionskontrollsysteme von Git und Subversion. In den folgenden Artikeln werden das Einrichten von Git- und Subversion-Repositorys über Visual Studio für Mac sowie einfache Funktionen wie das Überprüfen, Committen und Pushen von Änderungen erläutert.
 

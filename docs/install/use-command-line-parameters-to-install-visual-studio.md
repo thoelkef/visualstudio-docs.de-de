@@ -2,7 +2,7 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -101,6 +101,10 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--nocache` | **Neu in 15.2 (optional)**: Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--noUpdateInstaller` | **Neu in 15.2, optional**: Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
 | `--noWeb` | **Neu in Version 15.3 (optional)**: Das Setup lädt jetzt jeden Inhalt herunter, der aus dem Internet installiert wird.  Jeder Inhalt, der installiert wird, muss in einem Offlinelayout verfügbar sein.  Wenn dem Layout Inhalt fehlt, schlägt die Einrichtung fehl.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Neu in 15.7 (optional)**: Zur Angabe der Standardinstallationspfade für die Installation. Unterstützte Pfadnamen lauten: „shared“, „cache“ und „install“. |
+| `--path cache=<path>` | **Neu in 15.7 (optional)**: Verwendet den Speicherort, den Sie beim Herunterladen der Installationsdateien angeben. Dieser Speicherort kann nur bei der ersten Installation von Visual Studio festgelegt werden. Ein Beispiel: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Neu in 15.7 (optional)**: Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **Neu in 15.7 (optional)**: Entspricht `–-installPath`. Besonders `--installPath "C:\VS"` und `--path install="C:\VS"` sind gleichwertig. Es kann jeweils nur eine der beiden Optionen verwendet werden. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
 
@@ -138,7 +142,7 @@ Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf eine
 | 5007 | Der Vorgang wurde blockiert – der Computer entspricht nicht den Anforderungen. |
 | Andere | Es ist ein Fehler aufgetreten – Überprüfen Sie die Protokolle für weitere Informationen |
 
-Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und das Setupmodul, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen.
+Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und die Setup-Engine, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen.
 
 ## <a name="get-support"></a>Support aufrufen
 

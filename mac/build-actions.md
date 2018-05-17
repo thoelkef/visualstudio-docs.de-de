@@ -1,20 +1,21 @@
 ---
 title: Buildvorgänge
+description: In diesem Artikel erfahren Sie mehr über die verschiedenen Buildvorgänge, die für C#-Projekte verwendet werden können.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
 Alle Dateien in einem Projekt in Visual Studio für Mac verfügen über einen Buildvorgang, der steuert, was mit den Dateien während eines Builds geschieht. Diese können festgelegt werden, indem Sie mit der rechten Maustaste auf eine beliebige Datei klicken und wie unten dargestellt zu **Build Action** (Buildvorgang) navigieren:
 
-![](media/projects-and-solutions-image1.png)
+![Auswählen des Buildvorgangs „Compile“ aus dem Projektmappen-Explorer](media/projects-and-solutions-image1.png)
 
 Im Folgenden finden Sie einige gängige Buildvorgänge für C#-Projekte:
 

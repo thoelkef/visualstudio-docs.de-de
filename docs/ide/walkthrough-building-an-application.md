@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccafe38714df4d3851e0f81de0f2b03e9d72db52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -21,15 +21,15 @@ Wenn Sie diese exemplarische Vorgehensweise durchführen, werden Sie mit einigen
 
 ## <a name="install-the-sample-application"></a>Installieren der Beispielanwendung
 
-Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) herunter. Entscheiden Sie sich zwischen C# und Visual Basic. Wenn der Download der ZIP-Datei abgeschlossen ist, extrahieren Sie diese, und öffnen Sie die Datei **ExpenseItIntro.sln** mit Visual Studio.
+Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) herunter. Entscheiden Sie sich zwischen C# und Visual Basic. Wenn der Download der *ZIP*-Datei abgeschlossen ist, extrahieren Sie diese. Öffnen Sie dann die Datei *ExpenseItIntro.sln* mit Visual Studio.
 
 ## <a name="create-a-custom-build-configuration"></a>Erstellen einer benutzerdefinierten Buildkonfiguration
 
-Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../debugger/how-to-set-debug-and-release-configurations.md).
+Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds **Konfigurations-Manager** ändern oder erstellen. In dieser Prozedur erstellen Sie eine Buildkonfiguration zum Testen.
 
-### <a name="to-create-a-build-configuration"></a>So erstellen Sie eine Buildkonfiguration
+### <a name="create-a-build-configuration"></a>Erstellen einer Buildkonfiguration
 
 1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
@@ -37,7 +37,7 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
 1. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<Neu…\>** aus.
 
-1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen Debugkonfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
+1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen **Debug**-Konfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
 
    ![Dialogfeld „Neue Projektmappenkonfiguration“](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
@@ -49,7 +49,7 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
 1. Klicken Sie auf die Schaltfläche **OK** .
 
-   Die aktive Projektmappenkonfiguration wurde für einen Test mit der aktiven, auf x64- festgelegten Projektmappenplattform geändert.
+   Die aktive Projektmappenkonfiguration wurde für einen **Test** mit der aktiven, auf x64 festgelegten Projektmappenplattform geändert.
 
    ![Konfigurations-Manager mit Testkonfiguration](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
@@ -63,7 +63,7 @@ Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder änd
 
 Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfiguration.
 
-### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
+### <a name="build-the-solution"></a>Erstellen der Projektmappe
 
 -   Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
@@ -73,11 +73,11 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
 Als Nächstes wird Code eingeführt, der eine Warnung auslöst und vom Compiler generiert werden soll.
 
-1. Öffnen Sie die Datei **ExpenseReportPage.xaml.cs** im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage**-Methode ein: `int i;`.
+1. Öffnen Sie die Datei *ExpenseReportPage.xaml.cs* im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage**-Methode ein: `int i;`.
 
     ODER
 
-    Öffnen Sie im Visual Basic-Projekt die Datei **ExpenseReportPage.xaml.vb**. Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.
+    Öffnen Sie im Visual Basic-Projekt die Datei *ExpenseReportPage.xaml.vb*. Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.
 
 1. Erstellen Sie die Projektmappe.
 
@@ -89,11 +89,11 @@ Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Build wurde e
 
 Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden, anstatt sie die Buildausgabe durcheinanderbringen zu lassen.
 
-### <a name="to-hide-a-specific-c-warning"></a>So blenden Sie eine bestimmte C#-Warnung aus
+### <a name="hide-a-specific-c-warning"></a>Ausblenden einer bestimmten C#-Warnung
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten der obersten Ebene aus.
 
-1. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaftenseiten**.
+1. Wählen Sie in der Menüleiste **Ansicht** >  **Eigenschaftenseiten** aus.
 
      Der **Projekt-Designer** wird geöffnet.
 
@@ -109,11 +109,11 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
      ![Ausgabefenster, Visual C&#35;-Buildwarnungen](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
-### <a name="to-suppress-all-visual-basic-build-warnings"></a>So unterdrücken Sie alle Visual Basic-Buildwarnungen
+### <a name="suppress-all-visual-basic-build-warnings"></a>Unterdrücken aller Visual Basic-Buildwarnungen
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten der obersten Ebene aus.
 
-1. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaftenseiten**.
+1. Wählen Sie in der Menüleiste **Ansicht** >  **Eigenschaftenseiten** aus.
 
      Der **Projekt-Designer** wird geöffnet.
 
@@ -133,13 +133,13 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Anzeigen zusätzlicher Builddetails im Ausgabefenster
 
-Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über den Buildprozess ändern. Buildausführlichkeit wird normalerweise auf „Minimal“ festgelegt. Das bedeutet, dass im Fenster **Ausgabe** nur eine Zusammenfassung des Buildprozesses zusammen mit allen Warnungen oder Fehlern mit hoher Priorität angezeigt wird. Sie können mithilfe von [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) weitere Informationen zum Build anzeigen lassen.
+Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über den Buildprozess ändern. Die Buildausführlichkeit wird normalerweise auf **Minimal** festgelegt. Im Fenster **Ausgabe** wird somit nur eine Zusammenfassung des Buildprozesses zusammen mit allen Warnungen oder Fehlern mit hoher Priorität angezeigt. Sie können sich mithilfe von [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) weitere Informationen zum Build anzeigen lassen.
 
 > [!IMPORTANT]
 > Wenn Sie weitere Informationen anzeigen, dauert der Abschluss des Builds länger.
 
 
-### <a name="to-change-the-amount-of-information-in-the-output-window"></a>So ändern Sie die Informationsmenge im Ausgabefenster
+### <a name="change-the-amount-of-information-in-the-output-window"></a>Ändern der Informationsmenge im Ausgabefenster
 
 1. Öffnen Sie das Dialogfeld **Optionen**.
 
@@ -149,18 +149,18 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 1. Wählen Sie in der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** und dann die Schaltfläche **OK** aus.
 
-1. Wählen Sie in der Menüleiste **Build**, **Projektmappe bereinigen** aus.
+1. Wählen Sie in der Menüleiste **Build** > **Projektmappe bereinigen** aus.
 
 1. Erstellen Sie die Projektmappe, und überprüfen Sie dann die Informationen im Fenster **Ausgabe**.
 
      Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet wurde (am Anfang), und die Reihenfolge, in der die Dateien verarbeitet wurden. Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.
 
-     Im C#-Build führt die Option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode 1762 zusammen mit drei weiteren Warnungen auf.
+     Im C#-Build führt die Option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode **1762** zusammen mit drei weiteren Warnungen auf.
 
      Im Visual Basic-Build umfasst [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) keine bestimmten auszuschließenden Warnungen, sodass keine Warnungen angezeigt werden.
 
     > [!TIP]
-    > Sie können den Inhalt des Fensters **Ausgabe** durchsuchen, wenn Sie das Dialogfeld **Suchen** mithilfe der Tastenkombination STRG+F anzeigen.
+    > Sie können den Inhalt des Fensters **Ausgabe** durchsuchen, wenn Sie das Dialogfeld **Suchen** mithilfe der Tastenkombination **Strg**+**F** anzeigen.
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -170,7 +170,7 @@ Sie können eine Version der Beispielanwendung erstellen, die für das Versenden
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md) und [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
-### <a name="to-specify-a-release-build-for-visual-basic"></a>So geben Sie einen Releasebuild für Visual Basic an
+### <a name="specify-a-release-build-for-visual-basic"></a>Angeben eines Releasebuilds für Visual Basic
 
 1. Öffnen Sie den **Projekt-Designer**.
 
@@ -184,7 +184,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Geben Sie im Feld **Buildausgabepfad** einem Netzwerkpfad an.
 
-     Sie können z.B. \\\myserver\builds angeben.
+     Sie können z.B. `\\myserver\builds` festlegen.
 
     > [!IMPORTANT]
     > Möglicherweise wird ein Meldungsfeld angezeigt, in dem davor gewarnt wird, dass die von Ihnen angegebene Netzwerkfreigabe eventuell kein vertrauenswürdiger Speicherort ist. Wenn Sie dem angegebenen Speicherort vertrauen, wählen Sie im Meldungsfeld die Schaltfläche **OK** aus.
@@ -193,7 +193,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
      ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-### <a name="to-specify-a-release-build-for-c"></a>So geben Sie einen Releasebuild für C# an #
+### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C# #
 
 1. Öffnen Sie den **Projekt-Designer**.
 
@@ -207,7 +207,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Geben Sie im Feld **Ausgabepfad** einen Netzwerkpfad an.
 
-     Sie könnten z.B. \\\myserver\builds angeben.
+     Sie können z.B. `\\myserver\builds` angeben.
 
     > [!IMPORTANT]
     > Möglicherweise wird ein Meldungsfeld angezeigt, in dem davor gewarnt wird, dass die von Ihnen angegebene Netzwerkfreigabe eventuell kein vertrauenswürdiger Speicherort ist. Wenn Sie dem angegebenen Speicherort vertrauen, wählen Sie im Meldungsfeld die Schaltfläche **OK** aus.
@@ -218,7 +218,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
      ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad ist \\\myserver\builds\\*Dateiname*.exe.
+   Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad wäre `\\myserver\builds\\FileName.exe`.
 
 Herzlichen Glückwunsch: Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.
 

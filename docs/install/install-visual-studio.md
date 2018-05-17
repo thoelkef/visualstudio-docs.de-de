@@ -2,7 +2,7 @@
 title: Installieren von Visual Studio 2017 | Microsoft-Dokumentation
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 
@@ -119,7 +119,15 @@ Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung di
 
 Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des Installers über die Befehlszeile. Mit dem Befehl `vs_installer.exe --locale en-US` können Sie z.B. erzwingen, dass das Installationsprogramm auf Englisch ausgeführt wird. Das Installationsprogramm speichert diese Einstellung für zukünftige Ausführungen. Der Installer unterstützt die folgenden Sprachtoken: zh-CN, zh-TW, cs-CZ, en-US, es-ES, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU und tr-TR.
 
-## <a name="step-7---start-developing"></a>Schritt 7: Mit dem Entwickeln beginnen
+## <a name="step-7---change-the-installation-location-optional"></a>Schritt 7: Ändern des Installationspfads (optional)
+
+**Neues in 15.7:** Der Installationsspeicherbedarf für Visual Studio auf dem Systemlaufwerk kann reduziert werden. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
+
+  ![Visual Studio 2017: Ändern des Installationspfads](media/installation-options-by-location.png "Ändern des Installationspfads")
+
+Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade in Visual Studio](change-installation-locations.md).
+
+## <a name="step-8---start-developing"></a>Schritt 8: Mit dem Entwickeln beginnen
 
 1. Klicken Sie nach Abschluss der Visual Studio-Installation auf **Starten**, um mit dem [Programmieren in Visual Studio zu beginnen](../ide/get-started-developing-with-visual-studio.md).
 

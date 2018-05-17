@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bebc312858e16688598ba289e4c53d93010122b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die Verwendung von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools-APIs zu veranschaulichen. Verwenden Sie die Profiler-APIs, um die bei der Instrumentierungsprofilerstellung erfasste Datenmenge einzuschränken.  
@@ -43,7 +43,7 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
   
  Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  
@@ -62,7 +62,7 @@ DataCollection.CurrentId);
   
 2.  Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:  
   
-    ```  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -131,7 +131,7 @@ DataCollection.CurrentId);
   
  Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  

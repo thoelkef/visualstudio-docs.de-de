@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 
@@ -54,20 +54,20 @@ Im folgenden Beispiel wird das Profil mithilfe der Instrumentierungsmethode für
 
 2. Initialisieren Sie die .TIP-Umgebungsvariablen für die .NET-Profilerstellung. Geben Sie folgende Befehle ein:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Starten Sie die Anwendung mit VSPerfCmd. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ Im folgenden Beispiel wird das Profil mithilfe der Instrumentierungsmethode für
 
 6. Löschen Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 
 3. Initialisieren Sie die .NET-Umgebungsvariablen für die Profilerstellung. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Initialisieren Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 
 7. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 
 9. Fügen Sie den Profiler an den Dienst an. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 
 12. Löschen Sie die Umgebungsvariablen für die .NET- und TIP-Profilerstellung. Geben Sie folgenden Befehl ein:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ Mit dem Befehlszeilentool VSPerfASPNETCmd können Sie problemlos Profile für [!
 
 Um den Profilerstellungsdaten mithilfe von VSPerfASPNETCmd erfasste Ebeneninteraktionsdaten hinzuzufügen, fügen Sie die Option **/TIP** in die Befehlszeile ein. Sie können z.B. folgende Befehlszeile verwenden, um Ebeneninteraktionsdaten für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung mithilfe der Instrumentierungsmethode hinzuzufügen:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

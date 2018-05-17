@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
@@ -30,7 +30,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Eine Ablaufverfolgung mit CVCollectionCmd sammeln  
  Sie können eine Ablaufverfolgung sammeln, indem Sie die App mit CVCollectionCmd starten oder es dieser anhängen. Siehe die Befehlszeilenreferenz unten hinsichtlich Ihrer Optionen. Beispiel:  
   
-```  
+```cmd  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
 ```  
   
