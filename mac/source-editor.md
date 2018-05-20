@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
@@ -24,7 +24,6 @@ In diesem Artikel werden die wichtigsten Funktionen des Quellcode-Editors eingef
 Die Fähigkeit, den Code anzuzeigen und sich schnell darin bewegen zu können, ist wesentlich für den Entwicklungsworkflow. Wie Sie den Code anzeigen und verwalten, ist eine persönliche Entscheidung, die sich je nach Entwickler und Projekt unterscheidet.
 
 Visual Studio für Mac bietet viele leistungsstarke Funktionen, mit denen die plattformübergreifende Entwicklung zugänglich und so übersichtlich wie möglich gestaltet wird. In den folgenden Abschnitten werden einige der Highlights beschrieben.
-
 
 ## <a name="code-folding"></a>Codefaltung
 
@@ -62,25 +61,20 @@ Es ist ebenfalls eine Option zum Anzeigen von Registerkarten, Leerzeichen und Ze
 
  ![Leerzeichen angezeigt](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Lineal
 
 Das Spaltenlineal ist sehr hilfreich für die Bestimmung von Zeilenlängen, insbesondere dann, wenn ein Team Vorgaben für die Zeilenlänge hat. Das Spaltenlineal kann aktiviert oder deaktiviert werden, indem Sie zu **Visual Studio > Einstellungen... > Text-Editor > Markierungen und Lineale** navigieren und **Spaltenlineal anzeigen** wie in der folgenden Abbildung gezeigt aktivieren (bzw. deaktivieren):
 
- ![](media/source-editor-image5.png)
+ ![Dialogfeld „Preferences“ (Einstellungen) mit aktiviertem Kontrollkästchen „Show column ruler“ (Spaltenlineal anzeigen)](media/source-editor-image5.png)
 
  Dadurch wird im Quellcode-Editor eine vertikale, hellgraue Linie angezeigt.
-
 
 ## <a name="highlight-identifier-references"></a>Hervorheben von Bezeichnerverweisen
 
 Wenn die Option „Hervorheben von Bezeichnerverweisen“ aktiviert ist, können Sie jedes Symbol im Quellcode auswählen, und der Quellcode-Editor stellt eine visuelle Anleitung zu allen anderen Verweisen in dieser Datei bereit. Um diese Option zu aktivieren, navigieren Sie zu **Visual Studio > Einstellungen... > Text-Editor > Markierungen und Lineale** und wählen _Hervorheben von Bezeichnerverweisen_ wie in der folgenden Abbildung gezeigt aus:
 
-![](media/source-editor-image6.png)
+![Dialogfeld „Preferences“ (Einstellungen) mit markiertem Kontrollkästchen „Highlight identifier references“ (Hervorheben von Bezeichnerverweisen)](media/source-editor-image6.png)
 
 Die Farbe der Hervorhebung ist auch hilfreich, wenn angegeben werden soll, dass etwas zugewiesen oder darauf verwiesen wird. Wenn etwas zugewiesen wird, wird es in Rot hervorgehoben. Wenn darauf verwiesen wird, ist die Hervorhebung blau:
 
-![](media/source-editor-image7.png)
-
-
-
+![Beispiel, das die Markierungsfarbe anzeigt](media/source-editor-image7.png)

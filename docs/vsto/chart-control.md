@@ -1,5 +1,5 @@
 ---
-title: Diagramm-Steuerelement | Microsoft Docs
+title: Chart-Steuerelement
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c473c026f5d5f9a5919626fb667994e6ffdc01f4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1adf0d961489b09a9dc01775148636e6d2d231a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="chart-control"></a>Chart Control
+# <a name="chart-control"></a>Chart-Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement ist ein Diagrammobjekt, das Ereignisse verfügbar macht. Beim Hinzufügen eines Diagramms zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.Chart>-Objekt, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="creating-the-control"></a>Erstellen des Steuerelements  
- Sie können einem Microsoft Office Excel-Arbeitsblatt in einem Projekt auf Dokumentebene <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen.  
+## <a name="create-the-control"></a>Erstellen des Steuerelements  
+ Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit oder zur Laufzeit in einem Projekt auf Dokumentebene.  
   
- Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Laufzeit in einem VSTO-Add-In hinzufügen. Weitere Informationen finden Sie unter [wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md).  
+ Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen zu einem Arbeitsblatt zur Laufzeit in einem VSTO-Add-in. Weitere Informationen finden Sie unter [wie: Hinzufügen von Chart-Steuerelementen an Arbeitsblätter](../vsto/how-to-add-chart-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Dynamisch erstellte Diagrammobjekte werden nicht im Arbeitsblatt als Hoststeuerelemente dauerhaft gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  

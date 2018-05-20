@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorialschritt 1: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -62,7 +62,7 @@ Beim Arbeiten mit Django über die Befehlszeile wird ein Projekt in der Regel du
     - **Projektmappe**: Behalten Sie die Standardoption „Neue Projektmappe erstellen“ bei.
     - **Projektmappenname**: Legen Sie den Namen auf „LearningDjango“ fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
     - **Projektmappenverzeichnis erstellen**: Behalten Sie die Standardaktivierung bei.
-    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt.
+    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** Git für Windows und die GitHub-Erweiterung für Visual Studio hinzu.
 
 1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld „This project requires external packages (Für dieses Projekt sind externe Pakete erforderlich)“ angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine `requirements.txt`-Datei enthält, die auf das neueste Django-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 

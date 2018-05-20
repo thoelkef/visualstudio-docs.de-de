@@ -1,5 +1,5 @@
 ---
-title: Development best practices für COM, VSTO und VBA-add-ins in Office | Microsoft Docs
+title: Entwicklung von bewährten Methoden für COM, VSTO und VBA-add-ins in Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Entwicklung von bewährten Methoden für COM, VSTO und VBA-add-ins in Office
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Entwicklung von bewährten Methoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die Entwicklung bewährten Methoden in diesem Artikel beschrieben.   Dies hilft sicherzustellen:
 
 -  Ihre Add-Ins über verschiedene Versionen und Bereitstellungen von Office-Kompatibilität.
@@ -43,7 +43,7 @@ Die Lösung Funktionalität verwendet, die nur in neueren Versionen von Office v
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Aktivieren Sie 32-Bit und 64-Bit-Office-Verwendung   
 Der Build-Standardziel sollte (x86) 32-Bit und 64-Bit-(x64) unterstützen, es sei denn, Ihre Lösung von Bibliotheken abhängig ist, die nur für eine bestimmte Bitanzahl verfügbar sind. Die 64-Bit-Version von Office wächst in der Annahme, insbesondere in big Data-Umgebungen. Unterstützung sowohl 32-Bit- und 64-Bit-erleichtert für Ihre Benutzer für den Übergang zwischen 32-Bit und 64-Bit-Versionen von Office.
 
-Beim Schreiben von VBA-Code wird mit 64-Bit-Safe declare-Anweisungen und Variablen nach Bedarf zu konvertieren. Darüber hinaus stellen Sie sicher, dass Dokumente zwischen 32-Bit oder 64-Bit-Versionen von Office ausführen, durch die Bereitstellung von Code für jede Bitanzahl Benutzern gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [64-Bit-Visual Basic for Applications Overview](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+Beim Schreiben von VBA-Code wird mit 64-Bit-Safe declare-Anweisungen und Variablen nach Bedarf zu konvertieren. Darüber hinaus stellen Sie sicher, dass Dokumente zwischen 32-Bit oder 64-Bit-Versionen von Office ausführen, durch die Bereitstellung von Code für jede Bitanzahl Benutzern gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [64-Bit-Visual Basic for Applications (Übersicht)](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
 
 ## <a name="support-restricted-environments"></a>Eingeschränkte Unterstützung Umgebungen   
 Die Projektmappe sollte keine heraufstufung von Benutzerrechten Konto oder Administrator-Berechtigungen erforderlich. Darüber hinaus muss die Lösung hängt nicht festlegen oder ändern:

@@ -1,5 +1,5 @@
 ---
-title: Architektur von Office-Projektmappen in Visual Studio | Microsoft Docs
+title: Architektur von Office-Projektmappen in Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3796ba362102f1628e218a730d10fc600c744262
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektur von Office-Projektmappen in Visual Studio
   Die Themen in diesem Abschnitt enthalten Informationen zur Funktionsweise von Lösungen, die mit den Office Developer Tools in Visual Studio erstellt wurden.  
@@ -36,10 +36,10 @@ ms.lasthandoff: 04/28/2018
  [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)  
  Beschreibt die Komponenten von VSTO-Add-Ins und wie sie von Anwendungen geladen werden.  
   
- [Übersicht über die Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio-Tools für Office-Laufzeit (Übersicht)](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Beschreibt die verschiedenen Versionen der Laufzeit, die für Office-Lösungen verwendet wird.  
   
- [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
+ [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
  Beschreibt die Registrierungsschlüssel, die auf Endbenutzercomputern zum Finden und Laden von VSTO-Add-Ins erforderlich sind.  
   
  [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md)  

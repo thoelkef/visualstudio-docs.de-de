@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Ändern Sie dokumentformatierung mit CheckBox-Steuerelementen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern Sie dokumentformatierung mit CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms-Steuerelemente in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um textformatierung zu ändern.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Formatieren des Texts an, wenn eine Option ausgewählt ist.  
   
- Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel der Word-Steuerelemente unter [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+ Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel der Word-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Erstellen des Projekts  
+## <a name="create-the-project"></a>Erstellen eines Projekts  
  Im ersten Schritt wird ein Word-Dokumentprojekt erstellt.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
   
 1.  Erstellen Sie ein Word-Dokumentprojekt mit dem Namen **My Word Formatting**. Wählen Sie im Assistenten **erstellen Sie ein neues Dokument**.  
   
-     Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekte in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio öffnet das neue Word-Dokument im Designer und fügt die **My Word Formatting** Projekt **Projektmappen-Explorer**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Hinzufügen von Text und Steuerelementen zu Word-Dokument  
+## <a name="add-text-and-controls-to-the-word-document"></a>Hinzufügen von Text und Steuerelementen zum Word-Dokument  
  In dieser exemplarischen Vorgehensweise fügen Sie drei Kontrollkästchen und Text in einem <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement zum Word-Dokument. Die Kontrollkästchen werden Optionen zum Formatieren des Texts für den Benutzer anzuzeigen.  
   
-#### <a name="to-add-three-check-boxes"></a>So fügen Sie drei Kontrollkästchen hinzu  
+### <a name="add-three-check-boxes"></a>Fügen Sie drei Kontrollkästchen hinzu  
   
 1.  Stellen Sie sicher, dass das Dokument im Visual Studio-Designer geöffnet ist.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**Name**|**applyUnderlineFont**|  
     |**Text**|**"Unterstreichen"**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>So fügen Sie Text und Lesezeichen-Steuerelement hinzu  
+### <a name="add-text-and-a-bookmark-control"></a>Hinzufügen von Text und Lesezeichen-Steuerelement  
   
 1.  Verschieben der Einfügemarke unter dem Kontrollkästchen-Steuerelemente, und geben Sie den folgenden Text:  
   
@@ -110,10 +110,10 @@ ms.lasthandoff: 04/16/2018
   
  Anschließend schreiben Sie den Code, um den Text zu formatieren, wenn Sie das Kontrollkästchen aktiviert oder deaktiviert ist.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatieren den Text bei eines Kontrollkästchens ist aktiviert oder deaktiviert  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatieren Sie den Text ein, wenn Sie das Kontrollkästchen aktiviert oder deaktiviert ist  
  Wenn der Benutzer eine Formatierungsoption aus auswählt, wird ändern Sie das Format des Texts im Dokument.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Zum Ändern der Formatierung, wenn Sie das Kontrollkästchen aktiviert ist  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Ändern der Formatierung, wenn Sie das Kontrollkästchen aktiviert ist  
   
 1.  Mit der rechten Maustaste `ThisDocument` in **Projektmappen-Explorer**, und klicken Sie dann auf **Code anzeigen** im Kontextmenü.  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Testen der Anwendung  
+## <a name="test-the-application"></a>Testen der Anwendung  
  Sie können jetzt Ihr Dokument, um sicherzustellen, dass der Text korrekt formatiert ist, wenn Sie aktivieren bzw. Sie das Kontrollkästchen deaktivieren testen.  
   
-#### <a name="to-test-your-document"></a>So testen Sie das Dokument  
+### <a name="test-your-document"></a>Ihr Dokument testen  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um das Projekt auszuführen.  
   
 2.  Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen.  
   
@@ -156,14 +156,13 @@ ms.lasthandoff: 04/16/2018
   
 -   Verwenden Sie eine Schaltfläche, um ein Textfeld aufzufüllen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Auswählen von Diagrammformaten mithilfe von Optionsfeldern. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsschaltflächen](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Auswählen von Diagrammformaten mithilfe von Optionsfeldern. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
--  
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)   
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Einschränkungen von Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

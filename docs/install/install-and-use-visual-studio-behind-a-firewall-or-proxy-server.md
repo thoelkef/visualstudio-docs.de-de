@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -117,7 +117,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Momentaufnahme <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
-|Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen.  Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
+|Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Behandlung netzwerkbezogener Fehler

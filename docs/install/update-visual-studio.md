@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualisieren Sie Visual Studio 2017 auf die neueste Version
 
@@ -54,7 +54,7 @@ Wenn ein Update vorhanden ist, wird ein entsprechendes Benachrichtigungsflag in 
      Das Update wird fortgesetzt. Wenn es fertig gestellt ist, wird Visual Studio neu startet.
 
      > [!NOTE]
-     > Wenn Sie Visual Studio im Administrator-Modus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.    
+     > Wenn Sie Visual Studio im Administratormodus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.
 
 ### <a name="use-the-ide"></a>Verwenden der IDE
 
@@ -71,7 +71,7 @@ Sie können nach einem Update suchen und das Update dann von der Menüleiste in 
    Das Update wird wie im vorherigen Abschnitt beschrieben durchgeführt, und nachdem das Update erfolgreich abgeschlossen wurde, wird Visual Studio neu gestartet.
 
    > [!NOTE]
-   > Wenn Sie Visual Studio im Administrator-Modus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.  
+   > Wenn Sie Visual Studio im Administratormodus ausführen, müssen Sie Visual Studio nach dem Update manuell neu starten.
 
 ### <a name="use-the-visual-studio-installer"></a>Verwenden des Visual Studio-Installers
 

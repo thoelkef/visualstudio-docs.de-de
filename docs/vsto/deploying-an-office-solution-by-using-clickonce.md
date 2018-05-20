@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen einer Office-Lösung mithilfe von ClickOnce | Microsoft Docs
+title: Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29c0e6691f31c6092b9d2222064c59d7fb8839db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Lösung mithilfe von ClickOnce
-  Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (MSI-Format) in Erwägung ziehen, wenn mehrere Benutzer die Projektmappe auf dem gleichen Computer ausführen.  
+# <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce
+  Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Aus diesem Grund sollten Sie mit Windows Installer (*MSI-Datei*), wenn mehr als ein Benutzer die Projektmappe auf dem gleichen Computer ausgeführt wird.  
   
 ## <a name="in-this-topic"></a>In diesem Thema  
   
@@ -45,10 +45,10 @@ ms.lasthandoff: 04/16/2018
   
 -   [Zurücksetzen der Projektmappe auf eine frühere version](#Roll)  
   
- Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch das Erstellen einer Windows Installer-Datei finden Sie unter [Bereitstellen einer Office-Lösung mithilfe von Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch das Erstellen einer Windows Installer-Datei finden Sie unter [bereitstellen eine Office-Projektmappe mit Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Publish"></a> Veröffentlichen Sie die Projektmappe  
- Veröffentlichen Sie die Projektmappe mit der **Veröffentlichungs-Assistenten** oder **Projekt-Designer**. In diesem Verfahren wird anhand der **Projekt-Designer** da es sich um den vollständigen Satz von Veröffentlichungsoptionen bereitstellt. Finden Sie unter [Webpublishing-Assistent &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+ Veröffentlichen Sie die Projektmappe mit der **Veröffentlichungs-Assistenten** oder **Projekt-Designer**. In diesem Verfahren wird anhand der **Projekt-Designer** da es sich um den vollständigen Satz von Veröffentlichungsoptionen bereitstellt. Finden Sie unter [Veröffentlichungs-Assistenten &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>So veröffentlichen Sie die Projektmappe  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  In der **Projekt-Designer**, wählen Sie die **veröffentlichen** Registerkarte, die in die folgende Abbildung dargestellt wird.  
   
-     ![Die Registerkarte "Veröffentlichen" im Projekt-Designer](../vsto/media/vsto-publishtab.png "auf der Registerkarte "Veröffentlichen" im Projekt-Designer")  
+     ![Die Registerkarte "Veröffentlichen" im Projekt-Designer](../vsto/media/vsto-publishtab.png "auf der Registerkarte \"Veröffentlichen\" im Projekt-Designer")  
   
 4.  In der **Speicherort des Veröffentlichungsordners (FTP-Server oder Dateipfad)** Geben Sie den Pfad des Ordners, in dem Sie möchten, die **Projekt-Designer** die Projektmappendateien kopieren.  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/16/2018
 9. Wenn die Projektmappe auf .NET Framework 4.5 abzielt, aktivieren Sie auch die **Visual Studio 2010-Tools für Office-Laufzeit** Kontrollkästchen.  
   
     > [!NOTE]  
-    >  Standardmäßig wird dieses Kontrollkästchen angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Finden Sie unter [zum Erstellen eines Bootstrapperpakets für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Standardmäßig wird dieses Kontrollkästchen angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Finden Sie unter [erstellen Sie ein Bootstrapperpaket für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
 10. Klicken Sie unter **Installationsort für erforderliche Komponenten angeben**, wählen Sie eine der Optionen, die angezeigt werden, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -131,12 +131,12 @@ ms.lasthandoff: 04/16/2018
      ![Struktur des Veröffentlichungsordners](../vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
   
     > [!NOTE]  
-    >  ClickOnce hängt die Erweiterung ".deploy" auf Assemblys, damit eine gesicherte Installation von Internet Information Services (IIS) die Dateien nicht aufgrund einer unsicheren Dateierweiterung blockiert. Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die Erweiterung ".deploy".  
+    >  ClickOnce hängt die *".deploy"* Erweiterung auf Assemblys, damit eine gesicherte Installation von Internet Information Services (IIS) die Dateien nicht aufgrund einer unsicheren Dateierweiterung blockiert. Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die *".deploy"* Erweiterung.  
   
 14. Kopieren Sie die Projektmappendateien an den Installationspfad, den Sie zuvor in dieser Prozedur angegeben haben.  
   
 ##  <a name="Trust"></a> Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.  
- Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie entweder Vertraulichkeit gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren. Um der Projektmappe Vertraulichkeit zu gewähren, signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Finden Sie unter [vertrauen die Projektmappe durch das Signieren der Anwendung und die Bereitstellung Manifeste](../vsto/granting-trust-to-office-solutions.md#Signing).  
+ Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie entweder Vertraulichkeit gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren. Um der Projektmappe Vertraulichkeit zu gewähren, signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Finden Sie unter [die Projektmappe durch das Signieren der Anwendungs- und Bereitstellungsmanifesten vertrauen](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Wenn Sie eine Anpassung auf Dokumentebene bereitstellen, und Sie das Dokument in einem Ordner auf dem Computer des Benutzers speichern oder das Dokument auf einer SharePoint-Website zur Verfügung stellen möchten, stellen Sie sicher, dass Office dem Speicherort des Dokuments vertraut. Finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
@@ -148,16 +148,16 @@ ms.lasthandoff: 04/16/2018
   
  Empfohlen wird, dass Benutzer eine Kopie des Dokuments auf ihrem Computer öffnen, damit nicht mehrere Benutzer gleichzeitig versuchen, die gleiche Kopie zu öffnen. Um diese Methode zu erzwingen, können Sie das Setupprogramm so konfigurieren, dass das Dokument auf die Benutzercomputer kopiert wird. Finden Sie unter [Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)](#Put).  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installieren der Projektmappe durch Öffnen des Bereitstellungsmanifests von einer IIS-Website  
- Benutzer können eine Office-Projektmappe installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Eine gesicherte Installation von Internetinformationsdiensten (IIS) blockiert jedoch Dateien mit der Dateinamenerweiterung ".vsto". Der MIME-Typ muss in IIS definiert werden, bevor Sie Office-Projektmappen mithilfe von IIS bereitstellen können.  
+### <a name="install-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installieren Sie die Projektmappe durch Öffnen des Bereitstellungsmanifests von einer IIS-website  
+ Benutzer können eine Office-Projektmappe installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Eine gesicherte Installation von Internet Information Services (IIS) blockiert jedoch Dateien mit der *".VSTO"* Erweiterung. Der MIME-Typ muss in IIS definiert werden, bevor Sie Office-Projektmappen mithilfe von IIS bereitstellen können.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 6.0 hinzu  
   
-1.  Wählen Sie auf dem Server, auf denen IIS 6.0 ausgeführt wird, **starten**, **Programme**, **Verwaltung**, **(Internet Information Services, IIS) Manager**.  
+1.  Wählen Sie auf dem Server, auf denen IIS 6.0 ausgeführt wird, **starten** > **Programme** > **Verwaltung**  >   **Internetinformation Services (IIS)-Manager**. 
   
 2.  Wählen Sie den Computernamen, den **Websites** Ordner oder die Website, die Sie konfigurieren.  
   
-3.  Wählen Sie in der Menüleiste **Aktion**, **Eigenschaften**.  
+3.  Wählen Sie in der Menüleiste **Aktion** > **Eigenschaften**.  
   
 4.  Auf der **HTTP-Header** Registerkarte, und wählen Sie die **MIME-Typen** Schaltfläche.  
   
@@ -166,28 +166,28 @@ ms.lasthandoff: 04/16/2018
 6.  In der **MIME-Typ** Fenster, geben Sie **".VSTO"** als Erweiterung und geben Sie **Application/X-ms-Vsto** als MIME-Geben Sie an, und klicken Sie dann die neuen Einstellungen anzuwenden.  
   
     > [!NOTE]  
-    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Anschließend müssen Sie den Datenträgercache des Browsers leeren und dann versuchen, die VSTO-Datei erneut zu öffnen.  
+    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Müssen Sie anschließend Datenträgercache des Browsers leeren und dann versuchen, öffnen die *".VSTO"* Datei erneut.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 7,0 hinzu  
   
-1.  Wählen Sie auf dem Server, auf dem IIS 7.0 ausgeführt wird, **starten**, **Programme**, **Zubehör**.  
+1.  Wählen Sie auf dem Server, auf dem IIS 7.0 ausgeführt wird, **starten** > **Programme** > **Zubehör**.  
   
 2.  Öffnen Sie das Kontextmenü für **Eingabeaufforderung**, und wählen Sie dann **als Administrator ausführen.**  
   
 3.  In der **öffnen** Feld, geben Sie den folgenden Pfad aus, und wählen Sie dann die **OK** Schaltfläche.  
   
-    ```  
+    ```cmd
     %windir%\system32\inetsrv   
     ```  
   
 4.  Geben Sie den folgenden Befehl ein, und wenden Sie dann die neuen Einstellungen an.  
   
-    ```  
+    ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Anschließend müssen Sie den Datenträgercache des Browsers leeren und dann versuchen, die VSTO-Datei erneut zu öffnen.  
+    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Müssen Sie anschließend Datenträgercache des Browsers leeren und dann versuchen, öffnen die *".VSTO"* Datei erneut.  
   
 ##  <a name="Put"></a> Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)  
  Sie können das Dokument der Projektmappe auf dem Computer des Endbenutzers dafür erstellen eine Aktion nach der Bereitstellung markieren. Auf diese Weise wird nicht der Benutzer manuell kopieren, das Dokument vom Installationspfad auf ihren Computer nach der Installation der Projektmappe verfügen. Sie müssen eine Klasse erstellen, die die Aktion nach der Bereitstellung definiert, erstellen und veröffentlichen Sie die Projektmappe das Anwendungsmanifest ändern und die Anwendung und das Bereitstellungsmanifest erneut signieren.  
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Erstellen einer Klasse, in der die Aktion nach der Bereitstellung definiert wird  
   
-1.  Wählen Sie auf der Menüleiste **Datei**, **Hinzufügen**, **Neues Projekt**aus.  
+1.  Wählen Sie in der Menüleiste **Datei** > **hinzufügen** > **neues Projekt**.  
   
 2.  In der **neues Projekt hinzufügen** Dialogfeld die **installierte Vorlagen** Bereich, wählen Sie die **Windows** Ordner.  
   
@@ -206,9 +206,9 @@ ms.lasthandoff: 04/16/2018
   
 5.  In **Projektmappen-Explorer**, wählen Sie die **FileCopyPDA** Projekt.  
   
-6.  Wählen Sie in der Menüleiste die Optionen **Projekt** und **Verweis hinzufügen** aus.  
+6.  Wählen Sie in der Menüleiste **Projekt** > **Verweis hinzufügen**.  
   
-7.  Auf der **.NET** Registerkarte, fügen Sie Verweise auf "Microsoft.VisualStudio.Tools.Applications.Runtime" und "Microsoft.VisualStudio.Tools.Applications.ServerDocument" hinzu.  
+7.  Auf der **.NET** Registerkarte, fügen Sie Verweise auf `Microsoft.VisualStudio.Tools.Applications.Runtime` und `Microsoft.VisualStudio.Tools.Applications.ServerDocument`.  
   
 8.  Benennen Sie die Klasse in `FileCopyPDA` um, und ersetzen Sie den Inhalt der Datei durch den Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
@@ -233,13 +233,13 @@ ms.lasthandoff: 04/16/2018
   
 5.  In **Projektmappen-Explorer**, wählen Sie die **ExcelWorkbook** Projekt.  
   
-6.  Wählen Sie in der Menüleiste **Projekt**, **neuer Ordner**.  
+6.  Wählen Sie in der Menüleiste **Projekt** > **neuer Ordner**.  
   
-7.  Geben Sie **Daten**, und wählen Sie dann die EINGABETASTE.  
+7.  Geben Sie **Daten**, und wählen Sie dann die **EINGABETASTE** Schlüssel.  
   
 8.  In **Projektmappen-Explorer**, wählen Sie die **Daten** Ordner.  
   
-9. Wählen Sie in der Menüleiste **Projekt**, **vorhandenes Element hinzufügen**.  
+9. Wählen Sie in der Menüleiste **Projekt** > **vorhandenes Element hinzufügen**.  
   
 10. In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie in das Ausgabeverzeichnis für die **ExcelWorkbook** Projekt, wählen Sie die **ExcelWorkbook.xlsx** , und wählen Sie dann die  **Hinzufügen** Schaltfläche.  
   
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Fügen Sie nach dem `</vstav3:update>`-Element den folgenden Code ein. Für das Klassenattribut des der `<vstav3:entryPoint>` -Element, verwenden Sie die folgende Syntax: *NamespaceName.ClassName*. Im folgenden Beispiel sind der Namespace und die Klassennamen gleich, sodass der Name des resultierenden Einstiegspunkts `FileCopyPDA.FileCopyPDA` lautet.  
   
-    ```  
+    ```xml
     <vstav3:postActions>  
       <vstav3:postAction>  
         <vstav3:entryPoint  
@@ -288,7 +288,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Signieren Sie das geänderte Anwendungsmanifest, indem Sie den folgenden Befehl ausführen:  
   
-    ```  
+    ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Ändern Sie in der **c:\publish** Ordner, und klicken Sie dann aktualisieren und Signieren der Bereitstellung manifest, indem Sie den folgenden Befehl ausführen:  
   
-    ```  
+    ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
     celWorkbookMostRecentVersionNumber>\ExcelWorkbook.dll.manifest" -certfile "Application Files\ExcelWorkbookMostRecentVersionNumber>\ExcelWorkbook_TemporaryKey.pfx"  
     ```  
@@ -306,7 +306,7 @@ ms.lasthandoff: 04/16/2018
   
      Die Meldung „ExcelWorkbook.vsto erfolgreich signiert“ wird angezeigt.  
   
-5.  Kopieren Sie die Datei "ExcelWorkbook.VSTO" die **c:\publish\Application**\__Aktuelleversionsnummer_ Verzeichnis.  
+5.  Kopieren der *"ExcelWorkbook.VSTO"* Datei wird in der **c:\publish\Application**\__Aktuelleversionsnummer_ Verzeichnis.  
   
 ##  <a name="SharePoint"></a> Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)  
  Sie können die Anpassung auf Dokumentebene für Endbenutzer mithilfe von SharePoint veröffentlichen. Wenn Benutzer die SharePoint-Site aufrufen und das Dokument öffnen, installiert die Laufzeit automatisch die Projektmappe aus dem freigegebenen Netzwerkordner auf den lokalen Computer des Benutzers. Nachdem die Projektmappe lokal installiert wurde, funktioniert die Anpassung sogar dann, wenn das Dokument an eine andere Stelle kopiert wird, z. B. auf den Desktop.  
@@ -331,7 +331,7 @@ ms.lasthandoff: 04/16/2018
   
         4.  In der **Pfad** Geben Sie die URL der SharePoint-Dokumentbibliothek, die das Dokument enthält, die Sie hochgeladen haben (z. B. *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             Fügen Sie den Namen der Standardwebseite, z. B. "default.aspx" "oder" AllItems.aspx nicht hinzu.  
+             Fügen Sie den Namen der Standardwebseite, z. B. nicht *"default.aspx"* oder *AllItems.aspx*.  
   
         5.  Wählen Sie die **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -340,13 +340,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Custom"></a> Erstellen eines benutzerdefinierten Installationsprogramms  
  Sie können ein benutzerdefiniertes Installationsprogramm erstellen, für die Office-Projektmappe, anstatt das Setupprogramm aus, das für Sie erstellt wird, wenn Sie die Projektmappe veröffentlichen. Beispielsweise können Sie die Installation mit einem Anmeldeskript starten oder mit einer Batchdatei die Projektmappe ohne Benutzerinteraktion installieren. Diese Szenarios funktionieren am besten, wenn die erforderlichen Komponenten bereits auf den Endbenutzercomputern installiert sind.  
   
- Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (VSTOInstaller.exe) auf, das standardmäßig an folgendem Speicherort installiert ist:  
+ Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (*VSTOInstaller.exe*), das standardmäßig an folgendem Speicherort installiert wird:  
   
- %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*  
   
- Wenn sich das Tool nicht an diesem Speicherort befindet, können Sie den Registrierungsschlüssel "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath" oder "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath" verwenden, um den Pfad zu diesem Tool zu finden.  
+ Wenn das Tool an diesem Speicherort nicht befindet, können Sie mithilfe der **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** oder **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** Registrierungsschlüssel, um den Pfad zu diesem Tool finden.  
   
- Mit VSTOinstaller.exe können Sie die folgenden Parameter verwenden.  
+ Sie können die folgenden Parameter mit *VSTOinstaller.exe*.  
   
 |Parameter|Definition|  
 |---------------|----------------|  
@@ -355,12 +355,12 @@ ms.lasthandoff: 04/16/2018
 |/Silent oder /S|Installation bzw. Deinstallation, ohne dass der Benutzer zu einer Eingabe aufgefordert wird oder Meldungen angezeigt werden. Wenn eine vertrauenswürdige Eingabeaufforderung erforderlich ist, wird die Anpassung ist nicht installiert oder aktualisiert.|  
 |/Help oder /?|Anzeigen der Hilfeinformationen.|  
   
- Wenn Sie "VSTOinstaller.exe" ausführen, werden möglicherweise die folgenden Fehlercodes angezeigt.  
+ Bei der Ausführung *VSTOinstaller.exe*, möglicherweise die folgenden Fehlercodes angezeigt.  
   
 |Fehlercode|Definition|  
 |----------------|----------------|  
 |0|Die Projektmappe wurde erfolgreich installiert oder deinstalliert, oder die VSTOInstaller-Hilfe wurde angezeigt.|  
-|-100|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig oder wurden mehrmals festgelegt. Weitere Informationen geben Sie "Vstoinstaller /?" oder finden Sie unter [erstellen ein benutzerdefiniertes Installationsprogramm für eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig oder wurden mehrmals festgelegt. Weitere Informationen geben Sie "Vstoinstaller /?" oder finden Sie unter [Erstellen eines benutzerdefinierten Installationsprogramms für eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|  
 |-200|Der Bereitstellungsmanifest-URI ist ungültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|  
 |-201|Die Projektmappe konnte nicht installiert werden, da das Bereitstellungsmanifest ungültig ist. Finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
      Das folgende Beispiel zeigt, wie der Installationspfad auf einen Speicherort auf der Fabrikam-Website geändert wird; Sie können diese URL durch den gewünschten Pfad ersetzen:  
   
-    ```  
+    ```cmd  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
@@ -414,7 +414,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Auf der **Datei** Registerkarte **Info**, die in die folgende Abbildung dargestellt wird.  
   
-     ![Registerkarte "Info" in Excel](../vsto/media/vsto-infotab.png "Registerkarte "Info" in Excel")  
+     ![Registerkarte "Info" in Excel](../vsto/media/vsto-infotab.png "Registerkarte \"Info\" in Excel")  
   
 2.  In der **Eigenschaften** wählen **erweiterte Eigenschaften**, die in die folgende Abbildung dargestellt wird.  
   
@@ -441,7 +441,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Öffnen Sie den Installationspfad der Projektmappe.  
   
-2.  Löschen Sie im Veröffentlichungsordner der obersten Ebene das Bereitstellungsmanifest (die Datei .vsto).  
+2.  Im Veröffentlichungsordner der obersten Ebene, löschen Sie das Bereitstellungsmanifest (die *".VSTO"* Datei).  
   
 3.  Suchen Sie nach dem Unterordner für die Version, auf die Sie die Datei zurücksetzen möchten.  
   
@@ -456,14 +456,14 @@ ms.lasthandoff: 04/16/2018
      Wenn ein Benutzer das nächste Mal die Anwendung oder das benutzerdefinierte Dokument öffnet, wird die Änderung des Bereitstellungsmanifests erkannt. Die frühere Version der Office-Projektmappe wird vom ClickOnce-Cache ausgeführt.  
   
 > [!NOTE]  
->  Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie zwei Versionen zurücksetzen, werden lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
+>  Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie zwei Versionen zurücksetzen, werden lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [Zugriff auf lokale und remote-Daten in ClickOnce-Anwendungen](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
+ [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Veröffentlichen von Office-Projektmappen](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
  [Vorgehensweise: installieren eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
- [Vorgehensweise: veröffentlichen eine auf Dokumentebene Office-Projektmappe mit einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Vorgehensweise: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
  [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

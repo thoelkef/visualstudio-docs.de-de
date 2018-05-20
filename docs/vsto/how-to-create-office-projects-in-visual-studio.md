@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Gewusst wie: Erstellen von Office-Projekten in Visual Studio
   Sie können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Erstellen von VSTO-Add-in und auf Dokumentebene Anpassungen für Microsoft Office-Anwendungen. Weitere Informationen zu diesen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      Die Speicherorte haben die folgende Formate:  
   
-    -   [*Laufwerk*\]: \  
+      * [*Laufwerk*\]\:  
   
-    -   \\\\*Server*\\*Freigabe*  
+      * \\\\*Server*\\*Freigabe*  
   
      Verwenden Sie in der Pfadangabe keine der folgenden Zeichen:  
   
-    -   Sternchen (*)  
+      * Sternchen (*)  
   
-    -   Senkrechter Strich (|)  
+      * Senkrechter Strich (|)  
   
-    -   Doppelpunkt (:) (außer nach dem Laufwerkbuchstaben)  
+      * Doppelpunkt (:) (außer nach dem Laufwerkbuchstaben)  
   
-    -   Anführungszeichen (") (bei Pfaden mit Leerzeichen sind keine Anführungszeichen erforderlich)  
+      * Anführungszeichen (") (bei Pfaden mit Leerzeichen sind keine Anführungszeichen erforderlich)  
   
-    -   Kleiner als (\<)  
+      * Kleiner als (\<)  
   
-    -   Größer als (>)  
+      * Größer als (>)  
   
-    -   Fragezeichen (?)  
+      * Fragezeichen (?)  
   
-    -   Prozentzeichen (%)  
+      * Prozentzeichen (%)  
   
-7.  Klicken Sie auf die Schaltfläche **OK** .  
+7. Klicken Sie auf die Schaltfläche **OK** .
   
     > [!NOTE]  
     >  Add-In-Projekte werden immer gespeichert, wenn sie erstellt werden. Sie können nicht als temporäre Projekte erstellt werden. Weitere Informationen zu temporären Projekten finden Sie unter [temporäre Projekte](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      Die Speicherorte haben die folgende Formate:  
   
-    -   [*Laufwerk*\]: \  
+    -   [*Laufwerk*\]\:  
   
     -   \\\\*Server*\\*Freigabe*  
   

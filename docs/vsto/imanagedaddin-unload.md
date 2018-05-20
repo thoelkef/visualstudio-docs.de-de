@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin::Unload | Microsoft Docs
+title: IManagedAddin::Unload
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76070f520e4e9d1f331cf6799c5d751774c37b16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 283fd069e0de72af92f7999871190c6c8a0d345b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   Wird unmittelbar vor dem Entladen eines verwalteten VSTO-Add-Ins aufgerufen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```c++
 HRESULT Unload();  
 ```  
   
@@ -37,7 +37,7 @@ HRESULT Unload();
  Diese Methode wird von aktuellen Versionen von Microsoft Office nicht aufgerufen. Diese Methode ist für eine spätere Verwendung vorgesehen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
+ [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Load](../vsto/imanagedaddin-load.md)  
   
   

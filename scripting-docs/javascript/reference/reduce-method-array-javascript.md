@@ -1,12 +1,13 @@
 ---
 title: reduce-Methode (Array) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce-Methode (Array) (JavaScript)
 Ruft die angegebene Rückruffunktion für alle Elemente in einem Array an. Der Rückgabewert der Rückruffunktion ist das akkumulierte Ergebnis und wird als Argument im folgenden Aufruf der Rückruffunktion bereitgestellt.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Hinweise  
  Wenn ein `initialValue` angegeben ist, die `reduce` Methodenaufrufe der `callbackfn` -Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge. Wenn ein `initialValue` nicht angegeben wird, die `reduce` Methodenaufrufe der `callbackfn` Funktion auf jedes Element, das zweite Element ab.  
   
- Der Rückgabewert der Rückruffunktion bereitgestellt wird, als die `previousValue` Argument, das beim nächsten Aufruf der Rückruffunktion. Der Rückgabewert der dem letzten Aufruf der Rückruffunktion ist der Rückgabewert von der `reduce` Methode.  
+ Der Rückgabewert der Rückruffunktion bereitgestellt wird, als die `accumulator` Argument, das beim nächsten Aufruf der Rückruffunktion. Der Rückgabewert der dem letzten Aufruf der Rückruffunktion ist der Rückgabewert von der `reduce` Methode.  
   
  Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Syntax der Rückruffunktion  
  Die Syntax der Rückruffunktion lautet wie folgt:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Sie können die Rückruffunktion deklarieren, indem Sie bis zu vier Parameter.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Rückrufargument|Definition|  
 |-----------------------|----------------|  
-|`previousValue`|Der Wert aus dem vorherigen Aufruf der Rückruffunktion. Wenn ein `initialValue` wird bereitgestellt, um die `reduce` -Methode, die `previousValue` ist `initialValue` zum ersten Mal die Funktion aufgerufen wird.|  
+|`accumulator`|Der Wert aus dem vorherigen Aufruf der Rückruffunktion. Wenn ein `initialValue` wird bereitgestellt, um die `reduce` -Methode, die `accumulator` ist `initialValue` zum ersten Mal die Funktion aufgerufen wird.|  
 |`currentValue`|Der Wert des aktuellen Arrayelements.|  
 |`currentIndex`|Der numerische Index des aktuellen Arrayelements.|  
 |`array1`|Das Arrayobjekt, in dem das Element enthalten ist.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Wenn ein `initialValue` wird bereitgestellt, um die Reduce-Methode:  
   
--   Das `previousValue`-Argument lautet `initialValue`.  
+-   Das `accumulator`-Argument lautet `initialValue`.  
   
 -   Die `currentValue` Argument ist der Wert des ersten Elements im Array vorhanden.  
   
  Wenn ein `initialValue` nicht zur Verfügung gestellt:  
   
--   Die `previousValue` Argument ist der Wert des ersten Elements im Array vorhanden.  
+-   Die `accumulator` Argument ist der Wert des ersten Elements im Array vorhanden.  
   
 -   Die `currentValue` Argument ist der Wert des zweiten Elements im Array vorhanden.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |Das Element wird aus dem Array gelöscht.|Nein, es sei denn, dieses Element wurde bereits an die Rückruffunktion übergeben.|  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird Arraywerte in eine Zeichenfolge, die einzelnen Werte mit "::". Da kein Anfangswert, um bereitgestellt wird die `reduce` Methode, hat der erste Aufruf der Rückruffunktion wie "Abc" die `previousValue` Argument und "Def" als die `currentValue` Argument.  
+ Im folgende Beispiel wird Arraywerte in eine Zeichenfolge, die einzelnen Werte mit "::". Da kein Anfangswert, um bereitgestellt wird die `reduce` Methode, hat der erste Aufruf der Rückruffunktion wie "Abc" die `accumulator` Argument und "Def" als die `currentValue` Argument.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  Das folgende Beispiel fügt die Werte in einem Array. Die `currentIndex` und `array1` Parameter werden in der Rückruffunktion verwendet.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  Im folgenden Beispiel wird ein Array, das nur die Werte enthält, die zwischen 1 und 10 in einem anderen Array sind. Der Anfangswert bereitgestellt, um die `reduce` Methode ist ein leeres Array.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

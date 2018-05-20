@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>Innerhalb des-Editors
 Der Editor besteht aus einer Reihe von verschiedenen Subsysteme an, denen der Editor Text Modell separaten Textansicht und die Benutzeroberfläche beibehalten werden.  
@@ -59,7 +59,7 @@ Der Editor besteht aus einer Reihe von verschiedenen Subsysteme an, denen der Ed
   
  Das Text-Modell-Subsystem ist kostenlos Benutzer Konzepte, die Benutzeroberfläche (UI). Beispielsweise ist nicht verantwortlich für die textformatierung oder Textlayout, und er hat keine Informationen über visual Zusatzelemente, die den Text zugeordnet werden kann.  
   
- Die öffentlichen Typen des Subsystems Modell Text enthalten sind, in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtilitiy.dll, die nur von der .NET Framework-Basisklassenbibliothek und Managed Extensibility Framework (MEF) abhängig sind.  
+ Die öffentlichen Typen des Subsystems Modell Text enthalten sind, in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtility.dll, die nur von der .NET Framework-Basisklassenbibliothek und Managed Extensibility Framework (MEF) abhängig sind.  
   
 ### <a name="text-view-subsystem"></a>Text-Ansicht-Subsystem  
  Der Text anzeigen Spoolersubsystem ist für das Formatieren und Anzeigen von Text. Die Typen in dieses Subsystems werden in zwei Ebenen, je nachdem, ob die Typen in Windows Presentation Foundation (WPF) beruhen aufgeteilt. Die wichtigsten Typen sind <xref:Microsoft.VisualStudio.Text.Editor.ITextView> und <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, die steuern, den Satz von Textzeilen, die angezeigt werden sollen, und auch das Caretzeichen, die Auswahl und die Funktionen zum Erweitern von Text mithilfe von WPF-UI-Elemente. Dieses Subsystems bietet auch Ränder um den Text im Bereich anzuzeigende. Diese Ränder erweitert werden können, und können verschiedene Arten von Inhalt und visuelle Effekte enthalten. Beispiele für Ränder sind Line Number zeigt und Bildlaufleisten.  

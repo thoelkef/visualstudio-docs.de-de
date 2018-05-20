@@ -1,5 +1,5 @@
 ---
-title: '&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio) | Microsoft Docs'
+title: '&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01e7ee9e7329f46c0a728d48c16fc11eaebea5a8
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio)
-  Das `addin` -Element des `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-Ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurden.  
+  Die **-Add-in** Element von der `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurde.  
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml
 <addIn>  
   <entryPointsCollection>  
     <entryPoints>  
@@ -51,32 +51,32 @@ ms.lasthandoff: 04/27/2018
 ```  
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `addin` -Element des `vstav3` -Namespace enthält Informationen zur Office-Projektmappe und zur Microsoft Office-Anwendung. Dieses Element muss sich im folgenden Namespace befinden: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Untergeordnete Elemente müssen sich ebenfalls in diesem Namespace befinden.  
+ Die **-Add-in** Element von der `vstav3` -Namespace enthält Informationen zu Office-Projektmappe, und Microsoft Office-Anwendung. Dieses Element muss sich im folgenden Namespace befinden: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Untergeordnete Elemente müssen sich ebenfalls in diesem Namespace befinden.  
 
  Das `addin` -Element weist keine Attribute auf.  
 
  Das `addin` -Element weist die folgenden untergeordneten Elemente auf:  
 
 ### <a name="entrypoints"></a>entryPoints  
- Erforderlich. Die `entryPoints` Element wird in der beschriebenen [ &#60;EntryPoints&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **EntryPoints** Element wird in der beschriebenen [ &#60;EntryPoints&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>aktualisieren  
- Erforderlich. Die `update` Element wird in der beschriebenen [ &#60;aktualisieren&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **aktualisieren** Element wird in der beschriebenen [ &#60;aktualisieren&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postActions  
- Dies ist optional. Die `postActions` Element wird in der beschriebenen [ &#60;PostActions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Dies ist optional. Die **PostActions** Element wird in der beschriebenen [ &#60;PostActions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>Anwendung  
- Erforderlich. Die `application` Element wird in der beschriebenen [ &#60;Anwendung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **Anwendung** Element wird in der beschriebenen [ &#60;Anwendung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
 
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht das `addin` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Office-Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer mithilfe von Office-Projektmappe auf Dokumentebene [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Code  
 
-```  
+```xml
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
   <vstav3:entryPointsCollection>  
@@ -133,14 +133,14 @@ ms.lasthandoff: 04/27/2018
 </vstav3:addIn>  
 ```  
 
-## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-In  
+## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
 
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht das `addin` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer mithilfe von Office-Projektmappe auf Anwendungsebene [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Code  
 
-```  
+```xml
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
   <vstav3:entryPointsCollection>  
@@ -192,6 +192,6 @@ ms.lasthandoff: 04/27/2018
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest)  

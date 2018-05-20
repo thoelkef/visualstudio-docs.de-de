@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Vorgehensweise: Anzeigen von vorhandenen Typen im Klassen-Designer
 
 Um einen vorhandenen Typ und die zugehörigen Member anzuzeigen, fügen Sie seine Form einem Klassendiagramm hinzu.
 
@@ -36,13 +36,13 @@ Informationen zum Erstellen neuer Typen in Klassendiagrammen finden Sie unter [V
 
 2.  Ziehen Sie vom Projekt im **Projektmappen-Explorer** eine Quellcodedatei in das Klassendiagramm.
 
-    > [!WARNING]
+    > [!NOTE]
     > Wenn Ihre Projektmappe ein Projekt mit Code enthält, der für mehrere Apps freigegeben ist, können Sie Dateien oder Code nur aus folgenden Quellen in ein Klassendiagramm ziehen:
     >
-    > -   Das App-Projekt, welches das Diagramm enthält
-    > -   Ein freigegebenes Projekt, das vom App-Projekt importiert wurde
-    > -   Ein referenziertes Projekt
-    > -   Eine Assembly
+    > - Das App-Projekt, welches das Diagramm enthält
+    > - Ein freigegebenes Projekt, das vom App-Projekt importiert wurde
+    > - Ein referenziertes Projekt
+    > - Eine Assembly
 
     Daraufhin werden die Formen, die die in der Quellcodedatei definierten Typen darstellen, im Diagramm an der Stelle angezeigt, an die Sie die Datei gezogen haben.
 
@@ -60,9 +60,7 @@ Wenn Sie einen Typ in einem Diagramm zum ersten Mal anzeigen, wird die Form stan
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>So zeigen Sie den Inhalt eines Projekts in einem Klassendiagramm an
 
-- Klicken Sie im **Projektmappen-Explorer** oder in der **Klassenansicht** mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus.
-
-     Daraufhin wird ein automatisch ausgefülltes Klassendiagramm erstellt.
+Klicken Sie im **Projektmappen-Explorer** oder in der **Klassenansicht** mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus. Daraufhin wird ein automatisch ausgefülltes Klassendiagramm erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

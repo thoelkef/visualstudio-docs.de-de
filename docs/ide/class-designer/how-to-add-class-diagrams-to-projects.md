@@ -1,6 +1,6 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
-ms.date: 11/04/2016
+ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,41 +13,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962df3467b8ff37a15c181a764e646ae3fb1e980
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)
+# <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
 
 Fügen Sie Ihrem Projekt in C#, Visual Basic oder C++ ein Klassendiagramm hinzu, damit Sie Klassen und andere Typen entwerfen, bearbeiten und umgestalten können. Sie können verschiedene Teile des Codes in einem Projekt visualisieren, indem Sie dem Projekt mehrere Klassendiagramme hinzufügen.
 
 Sie können Klassendiagramme nicht aus Projekten erstellen, deren Code in mehreren Apps verwendet wird. Informationen zum Erstellen von UML-Klassendiagrammen finden Sie unter [Erstellen von UML-Modellierungsprojekten und -Diagrammen](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="to-add-a-blank-class-diagram-to-a-project"></a>So fügen Sie einem Projekt ein leeres Klassendiagramm hinzu
+## <a name="install-the-class-designer-component"></a>Installieren der Klassen-Designer-Komponente
 
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen. Klicken Sie anschließend auf **Neues Element hinzufügen** oder auf **Hinzufügen** > **Neues Element**.
+Wenn Sie Visual Studio 2017 ausführen und die Komponente **Klassen-Designer** nicht installiert haben, befolgen Sie die nachstehenden Schritte, um sie zu installieren.
 
-2.  Wählen Sie aus der Vorlagenliste das **Klassendiagramm** aus. Bei Visual C++-Projekten finden Sie diese Vorlagen unter **Vorlagen** und dort unter **Dienstprogramm**.
+1. Öffnen Sie den **Visual Studio-Installer** über das Windows-Startmenü der durch Auswahl von **Extras** > **Get Tools and Features** (Tools und Features abrufen) über die Menüleiste in Visual Studio.
 
-     Das Klassendiagramm wird im Klassen-Designer geöffnet. Im Projektmappen-Explorer wird es in der Projekthierarchie als Datei mit der Erweiterung CD angezeigt. Verwenden Sie den Klassen-Designer-Werkzeugkasten, um Formen und Linien in das Diagramm zu ziehen.
+   Der **Visual Studio-Installer** wird geöffnet.
 
-3.  Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
+1. Wählen Sie die Registerkarte **Einzelne Komponenten** aus, und scrollen Sie nach unten zur Kategorie **Codetools**.
 
-## <a name="to-add-a-class-diagram-based-on-existing-types"></a>So fügen Sie ein auf vorhandenen Typen basierendes Klassendiagramm hinzu
+1. Wählen Sie den **Klassen-Designer** aus, und klicken Sie anschließend auf **Ändern**.
 
-- Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü der Klassendatei, und klicken Sie anschließend auf **Klassendiagramm anzeigen**.
+   ![Klassen-Designer-Komponente im Visual Studio-Installer](media/class-designer-component.png)
 
-     - oder - 
+   Die **Klassen-Designer**-Komponente wird daraufhin installiert.
 
-     Öffnen Sie in **Klassenansicht** das Kontextmenü für den Namespace oder Typ, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.
+## <a name="add-a-blank-class-diagram-to-a-project"></a>Hinzufügen eines leeren Klassendiagramms zu einem Projekt
+
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und dann auf **Hinzufügen** > **Neues Element**. Drücken Sie alternativ auf **STRG**+**UMSCHALT**+**A**.
+
+   Das Dialogfeld **Neues Element hinzufügen** wird geöffnet.
+
+2. Erweitern Sie **Gemeinsame Elemente** > **Allgemein**, und wählen Sie dann aus der Vorlagenliste **Klassendiagramm** aus. Suchen Sie für Visual C++-Projekte in der Kategorie **Hilfsprogramm** nach der Vorlage **Klassendiagramm**.
+
+   > [!NOTE]
+   > Wenn Sie die Vorlage **Klassendiagramm** nicht sehen, [befolgen Sie diese Schritte](#install-the-class-designer-component), um die Komponente **Klassen-Designer** für Visual Studio zu installieren.
+
+   Das Klassendiagramm wird im Klassen-Designer geöffnet. Im **Projektmappen-Explorer** wird es als Datei mit der Erweiterung *.cd* angezeigt. Sie können Formen und Linien aus der **Toolbox** in das Diagramm ziehen.
+
+Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
+
+## <a name="add-a-class-diagram-based-on-existing-types"></a>Hinzufügen eines auf vorhandenen Typen basierenden Klassendiagramms
+
+Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü der Klassendatei, und klicken Sie anschließend auf **Klassendiagramm anzeigen**.
+
+- oder - 
+
+Öffnen Sie in **Klassenansicht** das Kontextmenü für den Namespace oder Typ, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>So zeigen Sie alle Inhalte eines Projekts in einem Klassendiagramm an
 
-- Klicken Sie im **Projektmappen-Explorer** oder in der Klassenansicht mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Anzeigen** und anschließend auf **Klassendiagramm anzeigen**.
+Klicken Sie im **Projektmappen-Explorer** oder in der Klassenansicht mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Anzeigen** und anschließend auf **Klassendiagramm anzeigen**.
 
-     Daraufhin wird ein automatisch aufgefülltes Klassendiagramm erstellt.
+Daraufhin wird ein automatisch aufgefülltes Klassendiagramm erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

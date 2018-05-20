@@ -9,11 +9,11 @@ description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivie
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -75,6 +75,20 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 3.  Klicken Sie unter „Support“ auf „Mit Supportvertrag verknüpfen“
 4.  Geben Sie die in Schritt 1 bereitgestellte „Zugriffs-ID“ und „Vertrags-ID“ ein.
 Sobald Sie diese Schritte abgeschlossen haben, können Sie den Supportplan auswählen, der dem Vorteil Ihres Visual Studio-Abonnements zugeordnet ist.  (Der Name des Plans enthält möglicherweise „MSDN“.)
+
+## <a name="eligibility"></a>Berechtigung
+| Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 4 Vorfälle       |  Ja|
+| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail, NFR ausgewählt<sup>2</sup>                                        | 2 Vorfälle                                                          |Ja         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 Vorfälle                                             |  Ja         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 Vorfälle                                               | Ja         |
+| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA|
+| Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+
+<sup>1</sup> *Umfasst: Imagine Premium Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Standard, Microsoft Valued Partner (MVP), Region Director (RD), MCT Software & Services.*
+
+<sup>2</sup> *Umfasst: Imagine Standard*
 
  
 

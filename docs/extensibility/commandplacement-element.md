@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f28c8e2758d2dde9cf38db268abc9fa9b4f863
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="commandplacement-element"></a>CommandPlacement-Element
 Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in mehr als eine Gruppe oder einem Menü eingeschlossen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen vollständig diese Elemente neu definieren, um die Darstellung einer Benutzeroberfläche zu ändern.  
@@ -28,7 +28,7 @@ Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in meh
 ## <a name="syntax"></a>Syntax  
   
 ```  
-<CommandPlacement guid=guidMyCommandSet" id="MyCommand" priority="0x001" >  
+<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >  
   <Parent>... </Parent>  
 </CommandPlacement>  
 ```  
