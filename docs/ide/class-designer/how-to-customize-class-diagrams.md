@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f1453b32052fb50a049f413d05bf562e6d4b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)
+# <a name="how-to-customize-class-diagrams"></a>Vorgehensweise: Anpassen von Klassendiagrammen
 
 Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen angezeigt werden. Sie können das gesamte Diagramm oder die einzelnen Typen auf der Entwurfsoberfläche anpassen.
 
@@ -34,9 +34,9 @@ Abschnitte, die Typmembers enthalten (z.B. der Abschnitt **Eigenschaften** einer
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Vergrößern und Verkleinern der Ansicht des Klassendiagramms
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie auf der Symbolleiste des **Klassen-Designers** auf die Schaltfläche **Vergrößern** oder **Verkleinern**, um den Zoomfaktor der Designer-Oberfläche zu ändern.
+2. Klicken Sie auf der Symbolleiste des **Klassen-Designers** auf die Schaltfläche **Vergrößern** oder **Verkleinern**, um den Zoomfaktor der Designer-Oberfläche zu ändern.
 
      oder
 
@@ -47,82 +47,82 @@ Abschnitte, die Typmembers enthalten (z.B. der Abschnitt **Eigenschaften** einer
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Anpassen der Gruppierung und Sortierung von Typmembern
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste auf einen leeren Bereich auf der Entwurfsoberfläche, und zeigen Sie auf **Member gruppieren**.
+2. Klicken Sie mit der rechten Maustaste auf einen leeren Bereich auf der Entwurfsoberfläche, und zeigen Sie auf **Member gruppieren**.
 
-3.  Wählen Sie eine der verfügbaren Optionen aus:
+3. Wählen Sie eine der verfügbaren Optionen aus:
 
-    1.  **Nach Art gruppieren** unterteilt einzelne Typmember in eine gruppierte Liste von Eigenschaften, Methoden, Ereignissen und Feldern. Die einzelnen Gruppen hängen von der Entitätendefinition ab: Beispielsweise wird in einer Klasse keine Gruppe von Ereignissen angezeigt, wenn noch keine Ereignisse für diese Klasse definiert sind.
+    - **Nach Art gruppieren** unterteilt einzelne Typmember in eine gruppierte Liste von Eigenschaften, Methoden, Ereignissen und Feldern. Die einzelnen Gruppen hängen von der Entitätendefinition ab: Beispielsweise wird in einer Klasse keine Gruppe von Ereignissen angezeigt, wenn noch keine Ereignisse für diese Klasse definiert sind.
 
-    2.  **Nach Zugriff gruppieren** unterteilt einzelne Typmember auf der Grundlage der Zugriffsmodifizierer des Members in eine gruppierte Liste. Beispiel: Public und Private.
+    - **Nach Zugriff gruppieren** unterteilt einzelne Typmember auf der Grundlage der Zugriffsmodifizierer des Members in eine gruppierte Liste. Beispiel: Public und Private.
 
-    3.  **Alphabetisch sortieren** zeigt die Elemente, aus denen eine Entität besteht, als einzelne, alphabetisch sortierte Liste an. Die Liste ist in aufsteigender Reihenfolge sortiert.
+    - **Alphabetisch sortieren** zeigt die Elemente, aus denen eine Entität besteht, als einzelne, alphabetisch sortierte Liste an. Die Liste ist in aufsteigender Reihenfolge sortiert.
 
 ## <a name="hide-compartments-on-a-type"></a>Ausblenden von Depots für einen Typ
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste auf die Memberkategorie in dem Typ, die Sie anpassen möchten (wählen Sie z.B. den Knoten **Methoden** in einer Klasse aus).
+2. Klicken Sie mit der rechten Maustaste auf die Memberkategorie in dem Typ, die Sie anpassen möchten (wählen Sie z.B. den Knoten **Methoden** in einer Klasse aus).
 
-3.  Klicken Sie auf **Depot ausblenden**.
+3. Klicken Sie auf **Depot ausblenden**.
 
      Das ausgewählte Depot wird im Typcontainer ausgeblendet.
 
 ## <a name="hide-individual-members-on-a-type"></a>Ausblenden einzelner Member für einen Typ
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste in dem Typ auf den Member, den Sie ausblenden möchten.
+2. Klicken Sie mit der rechten Maustaste in dem Typ auf den Member, den Sie ausblenden möchten.
 
-3.  Klicken Sie auf **Ausblenden**.
+3. Klicken Sie auf **Ausblenden**.
 
      Der ausgewählte Member wird im Typcontainer ausgeblendet.
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Anzeigen ausgeblendeter Depots und Member für einen Typ
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste auf den Namen des Typs mit dem ausgeblendeten Depot.
+2. Klicken Sie mit der rechten Maustaste auf den Namen des Typs mit dem ausgeblendeten Depot.
 
-3.  Klicken Sie auf **Alle Member anzeigen**.
+3. Klicken Sie auf **Alle Member anzeigen**.
 
      Alle ausgeblendeten Depots und Member werden im Typcontainer angezeigt.
 
 ## <a name="hide-relationships"></a>Ausblenden von Beziehungen
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste auf die Zuordnungs- oder Vererbungszeile, die Sie ausblenden möchten.
+2. Klicken Sie mit der rechten Maustaste auf die Zuordnungs- oder Vererbungszeile, die Sie ausblenden möchten.
 
-3.  Klicken Sie für Zuordnungszeilen auf **Ausblenden**, und klicken Sie für Vererbungszeilen auf **Vererbungszeile ausblenden**.
+3. Klicken Sie für Zuordnungszeilen auf **Ausblenden**, und klicken Sie für Vererbungszeilen auf **Vererbungszeile ausblenden**.
 
-4.  Klicken Sie auf **Alle Member anzeigen**.
+4. Klicken Sie auf **Alle Member anzeigen**.
 
      Alle ausgeblendeten Depots und Member werden im Typcontainer angezeigt.
 
 ## <a name="show-hidden-relationships"></a>Anzeigen ausgeblendeter Beziehungen
 
-1.  Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
+1. Wählen Sie eine Klassendiagrammdatei im **Klassen-Designer** aus, und öffnen Sie diese.
 
-2.  Klicken Sie mit der rechten Maustaste auf den Typ mit der ausgeblendeten Zuordnung oder Vererbung.
+2. Klicken Sie mit der rechten Maustaste auf den Typ mit der ausgeblendeten Zuordnung oder Vererbung.
 
  Klicken Sie für Zuordnungszeilen auf **Alle Member anzeigen**, und klicken Sie für Vererbungszeilen auf **Basisklasse anzeigen** oder **Abgeleitete Klassen anzeigen**.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Entfernen einer Typform aus einem Klassendiagramm
 Sie können eine Typform aus dem Klassendiagramm entfernen, ohne dass dies Auswirkungen auf den zugrunde liegenden Code des Typs hat. Das Entfernen von Typformen aus einem Klassendiagramm wirkt sich nur auf das jeweilige Diagramm aus. Der zugrunde liegende Code, der den Typ definiert, und andere Diagramme, die den Typ anzeigen, sind nicht betroffen.
 
-1.  Wählen Sie im Klassendiagramm die aus dem Diagramm zu entfernende Typform aus.
+1. Wählen Sie im Klassendiagramm die aus dem Diagramm zu entfernende Typform aus.
 
-2.  Klicken Sie im Menü **Bearbeiten** auf **Aus Diagramm entfernen**.
+2. Klicken Sie im Menü **Bearbeiten** auf **Aus Diagramm entfernen**.
 
      Die Typform und sämtliche mit der Form verbundene Assoziations- oder Vererbungslinien werden aus dem Diagramm entfernt.
 
 ## <a name="delete-a-type-shape-and-its-underlying-code"></a>Löschen einer Typform und des zugrunde liegenden Codes
 
-1.  Klicken Sie auf der Entwurfsoberfläche mit der rechten Maustaste auf die Form.
+1. Klicken Sie auf der Entwurfsoberfläche mit der rechten Maustaste auf die Form.
 
-2.  Wählen Sie im Kontextmenü die Option **Code löschen** aus.
+2. Wählen Sie im Kontextmenü die Option **Code löschen** aus.
 
      Die Form wird aus dem Diagramm entfernt, und der zugrunde liegende Code wird aus dem Projekt gelöscht.
 

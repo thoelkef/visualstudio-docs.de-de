@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>Erstellen von SharePoint-Funktionen
   Sie können eine SharePoint-Funktion verwenden, um Gruppen von verwandten SharePoint-Projektelemente zur einfacheren Bereitstellung. Sie können Funktionen erstellen, Bereiche festlegen und andere Funktionen wie Abhängigkeiten zu markieren, mit der SharePoint-Funktions-Designer. Der Designer generiert auch ein Manifest, also eine XML-Datei, die einzelnen Funktionen beschreibt.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
-|Titel|Dies ist optional. Der Standardtitel der Funktion festgelegt ist, um *SolutionName ** FeatureName*.|  
+|Titel|Dies ist optional. Der Standardtitel der Funktion festgelegt ist, um *SolutionName* *FeatureName*.|  
 |Beschreibung|Dies ist optional. Die Beschreibung der SharePoint-Funktion.|  
 |Bereich|Erforderlich. Wenn eine Funktion erstellt wird **Projektmappen-Explorer**, der Bereich ist standardmäßig auf Web festgelegt.<br /><br /> -Farm: Aktivieren Sie eine Funktion für eine gesamte Serverfarm.<br /><br /> -Website: Aktivieren Sie eine Funktion für alle Websites in einer Websitesammlung.<br /><br /> -Website: Aktivieren Sie eine Funktion für eine bestimmte Website.<br /><br /> -WebApplication: Aktivieren Sie eine Funktion für alle Websites in einer Webanwendung.|  
 |Elemente in der Lösung|Alle SharePoint-Elemente, die die Funktion hinzugefügt werden kann.|  

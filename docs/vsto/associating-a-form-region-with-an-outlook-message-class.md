@@ -1,5 +1,5 @@
 ---
-title: Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse | Microsoft Docs
+title: Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -18,45 +18,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e3e3deeb55fb93b1a393d0489213f1d0e7acd85b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d6f48be189b7d7a35f713c224553dc9ad7c8a5c3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="associating-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
-  Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem Sie den Formularbereich der Nachrichtenklasse jedes Elements zuordnen. Wenn Sie einen Formularbereich am Ende eine e-Mail-Nachricht anfügen möchten, können Sie den Formularbereich z. B. mit der IPM zuordnen. Beachten Sie die Message-Klasse.  
+# <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
+  Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem Sie den Formularbereich der Nachrichtenklasse jedes Elements zuordnen. Z. B. Wenn Sie einen Formularbereich am Ende eine e-Mail-Nachricht anfügen möchten, Sie können Zuordnen des Formularbereichs mit der `IPM.Note` message-Klasse.  
   
  Um eine Nachrichtenklasse einen Formularbereich zuzuordnen, geben Sie den Nachrichtenklassennamen in der **neuer Outlook-Formularbereich** Assistenten oder ein Attribut anwenden, um die Formularbereichsfactory-Klasse.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="understanding-outlook-message-classes"></a>Grundlegendes zu Outlook-Nachrichtenklassen  
+## <a name="understand-outlook-message-classes"></a>Verstehen von Outlook-Nachrichtenklassen  
  Eine Outlook-Nachrichtenklasse identifiziert einen Typ von Outlook-Elements. Die folgende Tabelle enthält die acht Standardtypen mit Elementen und deren Nachrichtenklassennamen.  
   
 |Outlook-Elementtyp|Nachrichtenklassennamen|  
 |-----------------------|------------------------|  
-|AppointmentItem|IPM. Termin|  
-|ContactItem|IPM. Wenden Sie sich an|  
-|DistListItem|IPM. DistList|  
-|JournalItem|IPM. Aktivität|  
-|MailItem|IPM. Hinweis|  
-|PostItem|IPM. POST oder IPM. Post.RSS|  
-|TaskItem|IPM. Aufgabe|  
+|AppointmentItem|`IPM.Appointment`|  
+|ContactItem|`IPM.Contact`|  
+|DistListItem|`IPM.DistList`|  
+|JournalItem|`IPM.Activity`|  
+|MailItem|`IPM.Note`|  
+|PostItem|`IPM.Post` oder `IPM.Post.RSS`|  
+|TaskItem|`IPM.Task`|  
   
  Sie können auch die Namen der benutzerdefinierten Nachrichtenklassen angeben. Benutzerdefinierte Nachrichtenklassen identifizieren benutzerdefinierte Formulare, die Sie in Outlook zu definieren.  
   
 > [!NOTE]  
->  Für Formularbereiche Ersetzung und alle ersetzen können Sie einen neuen benutzerdefinierten Meldung Klassennamen angeben. Sie müssen nicht den Nachrichtenklassennamen von einem vorhandenen benutzerdefinierten Formular verwenden. Der Name der benutzerdefinierten Nachrichtenklasse muss eindeutig sein. Eine Möglichkeit, sicherzustellen, dass der Name eindeutig ist. ist die Verwendung eine ähnlich der folgenden Namenskonvention: \< *Standard-Nachrichtenklassenname*>.\< *Unternehmen*>.\< *Nachrichtenklassenname*> (z. B.: IPM. Note.Contoso.MyMessageClass).  
+>  Für Formularbereiche Ersetzung und alle ersetzen können Sie einen neuen benutzerdefinierten Meldung Klassennamen angeben. Sie müssen nicht den Nachrichtenklassennamen von einem vorhandenen benutzerdefinierten Formular verwenden. Der Name der benutzerdefinierten Nachrichtenklasse muss eindeutig sein. Eine Möglichkeit, sicherzustellen, dass der Name eindeutig ist. ist die Verwendung eine ähnlich der folgenden Namenskonvention: \< *Standard-Nachrichtenklassenname*>.\< *Unternehmen*>.\< *Nachrichtenklassenname*> (z. B.: `IPM.Note.Contoso.MyMessageClass`).  
   
-## <a name="associating-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse  
+## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse  
  Es gibt zwei Möglichkeiten, eine Nachrichtenklasse einen Formularbereich zugeordnet werden soll:  
   
 -   Verwenden der **neuer Outlook-Formularbereich** Assistenten.  
   
 -   Anwenden von Klassenattributen.  
   
-### <a name="using-the-new-outlook-form-region-wizard"></a>Mit der Region-Assistenten für neue Outlook-Formular  
+### <a name="use-the-new-outlook-form-region-wizard"></a>Verwenden Sie den Assistenten für neue Outlook-Formularbereichs  
  Auf der letzten Seite des der **neuer Outlook-Formularbereich** Assistenten standard Nachrichtenklassen auswählen und geben Sie die Namen der benutzerdefinierten Meldungsklassen an, die dem Formularbereich zugeordnet werden soll.  
   
  Die standardmäßige Message-Klassen sind nicht verfügbar, wenn die Formularbereich entworfen wurde, um das gesamte Formular oder die Standardseite eines Formulars zu ersetzen. Sie können standardmäßige Nachrichtenklassennamen nur für Formulare angeben, fügen Sie eine neue Seite, die zu einem Formular oder, an das Ende eines Formulars angefügt werden. Weitere Informationen finden Sie unter [wie: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/28/2018
   
  Beim Ausführen des Assistenten die **neuer Outlook-Formularbereich** -Assistent wendet Attribute auf die Klasse, die die angegebenen Nachrichtenklassennamen enthalten. Sie können diese Attribute auch manuell anwenden.  
   
-### <a name="applying-class-attributes"></a>Anwenden von Klassenattributen  
+### <a name="apply-class-attributes"></a>Anwenden von Klassenattributen  
  Sie können ein Formularbereichs zu einer Outlook-Nachrichtenklasse zuordnen, nach Abschluss der **neuer Outlook-Formularbereich** Assistenten. Anwenden von Attributen zu diesem Zweck auf die Formularbereichsfactory-Klasse.  
   
  Das folgende Beispiel zeigt zwei <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> Attribute, die auf eine Formularbereichsfactory-Klasse mit dem Namen angewendet wurden `myFormRegion`. Das erste Attribut ordnet den Formularbereich mit einer standardmeldung-Klasse für ein Formular für e-Mail-Nachrichten. Das zweite Attribut wird eine benutzerdefinierte Nachrichtenklasse, die mit dem Namen des Formularbereichs ordnet `IPM.Task.Contoso`.  
@@ -106,11 +106,11 @@ ms.lasthandoff: 04/28/2018
 >  Visual Studio überprüft nicht, dass die Geben Sie Sie korrekt oder gültig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zugreifen auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Zugriff auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)   
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Richtlinien zum Erstellen von Outlook-Formularbereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Name des Formulars und Message-Klasse – Übersicht](http://msdn.microsoft.com/library/office/ff867629.aspx)   
+ [Name des Formulars und der Meldung Klassenübersicht](http://msdn.microsoft.com/library/office/ff867629.aspx)   
  [Funktionsweise von Outlook-Formulare und Elemente zusammen](http://msdn.microsoft.com/library/office/ff869706.aspx)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Bereitstellungsmanifeste für Office-Projektmappen | Microsoft Docs
+title: Bereitstellungsmanifeste für Office-Projektmappen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1276650d38f16f8ccc36720f7e273472e609367
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungsmanifeste für Office-Projektmappen
   Ein Bereitstellungsmanifest ist eine XML-Datei, die die bereitstellungseinstellungen der Office-Projektmappe beschreibt und identifiziert die aktuelle Anwendungsversion.  
@@ -30,15 +30,15 @@ ms.lasthandoff: 04/16/2018
  Die Office-Entwicklung in Visual Studio verwendet die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Bereitstellung Anwendungsmanifestschema, das definiert, der [ClickOnce-Bereitstellungsmanifest](/visualstudio/deployment/clickonce-deployment-manifest) Verweis.  
   
 ## <a name="remarks"></a>Hinweise  
- Für Office-Projektmappen die Bereitstellungsmanifestdatei identifiziert die aktuelle Version und anderer bereitstellungseinstellungen. Er verweist auf das Anwendungsmanifest, in dem beschrieben wird die aktuelle Version der Projektmappe und alle Dateien, die in der Projektmappe enthalten sind.  
+ Für Office-Projektmappen, die Bereitstellungsmanifestdatei identifiziert die aktuelle Version und anderer bereitstellungseinstellungen. Er verweist auf das Anwendungsmanifest und beschreibt die aktuelle Version der Projektmappe und alle Dateien innerhalb der Projektmappe.  
   
 ## <a name="file-name-syntax"></a>Dateinamensyntax  
- Der Name einer Bereitstellungsmanifestdatei muss mit der Dateinamenerweiterung ".vsto" enden. Obwohl es sich um ein Standard ist [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungsmanifest, die Erweiterung unterscheidet sich um Visual Studio-Tools für Office-Laufzeit, behandeln die Datei zu aktivieren.  
+ Der Name einer Bereitstellungsmanifestdatei muss mit enden die *".VSTO"* Erweiterung. Obwohl es sich um ein Standard ist [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungsmanifest, die Erweiterung unterscheidet sich um Visual Studio-Tools für Office-Laufzeit, behandeln die Datei zu aktivieren.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht ein Bereitstellungsmanifest für eine Visual Studio-Tools für Office-Projektmappe.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  

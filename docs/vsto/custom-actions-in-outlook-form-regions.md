@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Aktionen in Outlook-Formularbereichen | Microsoft Docs
+title: Benutzerdefinierte Aktionen in Outlook-Formularbereichen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec4c6a0ce361102ab216bc0c9f460a0bdd7a4a0d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formularbereichen
   Aktionen werden die Schaltflächen, mit denen Benutzer für die Reaktion auf ein Microsoft Office Outlook-Element angezeigt. Beispielsweise um eine e-Mail-Element zu behandeln, Benutzer klicken auf die **Antwort**, **allen Antworten**, oder **Vorwärts** Aktionsschaltflächen. Jede dieser Aktionen erstellt ein neue e-Mail-Element und füllt die Felder des Elements mithilfe von Informationen aus dem ursprünglichen Element.  
@@ -29,8 +29,8 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-custom-actions-to-a-form-region"></a>Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich  
- Verwenden Sie zum Hinzufügen einer benutzerdefinierten Aktion zu einem Formularbereich der **benutzerdefinierte Aktionen** (Dialogfeld). Öffnen Sie die **benutzerdefinierte Aktionen** im Dialogfeld **Projektmappen-Explorer** durch Erweitern der **Manifest** Knoten auswählen der **CustomActions**-Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")).  
+## <a name="add-custom-actions-to-a-form-region"></a>Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich  
+ Verwenden Sie zum Hinzufügen einer benutzerdefinierten Aktion zu einem Formularbereich der **benutzerdefinierte Aktionen** (Dialogfeld). Öffnen Sie die **benutzerdefinierte Aktionen** im Dialogfeld **Projektmappen-Explorer** durch Erweitern der **Manifest** Knoten auswählen der **CustomActions**-Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")).  
   
  Können Sie die **benutzerdefinierte Aktionen** im Dialogfeld eine *Ziel Formulars*. Ein Zielformular ist das Formular, das angezeigt wird, wenn der Benutzer die benutzerdefinierte Aktion ausführt.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
 |**TargetForm**|Gibt die Namen der Nachrichtenklasse des Zielformulars an. Geben Sie z. B. **IPM. Aufgabe** ein Aufgabenformular zu öffnen.|  
 |**Titel**|Gibt die Bezeichnung der Schaltfläche für benutzerdefinierte Aktionen.|  
   
-## <a name="customizing-a-custom-action-at-run-time"></a>Anpassen einer benutzerdefinierten Aktion zur Laufzeit  
+## <a name="customize-a-custom-action-at-runtime"></a>Anpassen einer benutzerdefinierten Aktion zur Laufzeit  
  Sie können auch die benutzerdefinierte Aktion, die mithilfe von Code Verhalten hinzufügen. Sie können z. B. Code hinzufügen, die die Namen der e-Mail-Empfänger und fügt diesen Namen als Teilnehmer in einen neuen Termin. Behandeln Sie dazu die [CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx) -Ereignis für die [MailItem-Objekt](http://msdn.microsoft.com/library/office/ff861332.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  

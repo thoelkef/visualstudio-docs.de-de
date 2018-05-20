@@ -3,21 +3,21 @@ title: Priority Support-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumen
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Weitere Informationen zum Priority Support-Vorteil, der in Visual Studio-Abonnements enthalten ist.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
 
-Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn Ihre Frage nicht innerhalb von zwei Tagen durch die Community beantwortet wird, stellt das Supportteam von Microsoft eine Antwort bereit.  
+Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.  
 
 Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.
 
@@ -214,7 +214,7 @@ Der Zugriff auf Priority Support ist sehr einfach.
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included       |  Ja          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included       |  Ja          |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Included                                                            |Ja |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Included                                                            |Ja |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Ja |

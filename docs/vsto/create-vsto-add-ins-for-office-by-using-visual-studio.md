@@ -1,5 +1,5 @@
 ---
-title: Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio | Microsoft Docs
+title: Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c935d4b71ccea16c450e65c0a153700bfa889583
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
   Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .  
@@ -25,19 +25,19 @@ ms.lasthandoff: 04/16/2018
  Die Office-Entwicklertools stellen Funktionen zur Verfügung, mit deren Hilfe Sie Office-Lösungen passend zu einer Vielzahl von geschäftlichen Anforderungen erstellen. Die Tools umfassen Projektvorlagen zum Erstellen von Office-Projektmappen mit Visual Basic oder Visual C#, und visuelle Designer, die Sie bei Erstellung benutzerdefinierter Benutzeroberflächen für Office-Projektmappen einsetzen können.  
   
 > [!NOTE]  
->  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
+>  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-Add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
  Die neuesten Informationen zur Entwicklung von Office finden Sie in den folgenden Development Centern auf MSDN:  
   
--   Das Entwicklerportal [Office Development mit Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) enthält Links zu Produktinformationen, Codebeispielen, Videos und Communityressourcen zur Verwendung von Visual Studio zum Anpassen von Office-Anwendungen als Teil der Projektmappen.  
+-   Die [Office-Entwicklung mit Visual Studio-Entwicklerportal](http://go.microsoft.com/fwlink/?LinkId=123844) enthält Links zu Produktinformationen, Codebeispielen, Videos und Communityressourcen zur Verwendung von Visual Studio zum Anpassen von Office-Anwendungen als Teil der Projektmappen .  
   
--   Das [Microsoft Office Developer Center](http://go.microsoft.com/fwlink/?LinkId=83467) enthält Links zu technischen Artikeln, Codebeispiele, Downloads, Informationen zu Communities, Support und weitere Dokumentationen zu Office Business Applications (OBAs) und Office-Anpassungen.  
+-   Die [Microsoft Office Developercenter](http://go.microsoft.com/fwlink/?LinkId=83467) enthält Links zu technischen Artikeln, Codebeispiele, Downloads, Informationen zu Communities, Support und Weitere Dokumentationen zu Office-Anpassungen und Office Business Applications (OBAs ).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Enthält Links zu Informationen zum Konfigurieren eines Entwicklungscomputers zum Erstellen von Office-Lösungen, zum Erstellen von Office-Projektmappen und Neuigkeiten in der Office-Entwicklung in Visual Studio.  
   
- [Upgraden und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Aktualisieren und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md)  
  Enthält Links zu Informationen über den Aktualisierungsvorgang für Projekte, die mit früheren Versionen von Visual Studio erstellt wurden.  
   
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/16/2018
  [Excel-Projektmappen](../vsto/excel-solutions.md)  
  Enthält Informationen über das Automatisieren von Excel, zum Erstellen von Excel-Projektmappen und über für Excel spezifische Globalisierungsprobleme.  
   
- [InfoPath-Projektmappen](../vsto/infopath-solutions.md)  
+ [InfoPath-Lösungen](../vsto/infopath-solutions.md)  
  Enthält Informationen zum Erstellen von Formularvorlagen und VSTO-Add-Ins für InfoPath.  
   
  [Outlook-Projektmappen](../vsto/outlook-solutions.md)  
@@ -61,8 +61,8 @@ ms.lasthandoff: 04/16/2018
  [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md)  
  Enthält Informationen über das Automatisieren von PowerPoint und das Erstellen von PowerPoint-Outlook-Add-ins.  
   
- [Project-Projektmappen](../vsto/project-solutions.md)  
- Enthält Informationen über das Automatisieren von Microsoft Office Project und Erstellen von Project-VSTO-Add-ins.  
+ [Projektmappen](../vsto/project-solutions.md)  
+ Enthält Informationen über das Automatisieren von Microsoft Office Project und Project-VSTO-Add-ins zu erstellen.  
   
  [Visio-Projektmappen](../vsto/visio-solutions.md)  
  Enthält Informationen zum Automatisieren von PowerPoint und Erstellen von Visio-VSTO-Add-ins.  
@@ -86,29 +86,29 @@ ms.lasthandoff: 04/16/2018
  Enthält Links zu Beispielanwendungen und Themen, die Schritt-für-Schritt-Anweisungen für häufige Aufgaben enthalten  
   
  [Allgemeine Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- Enthält Links zu ausführlichen Informationen zu Office Primary Interop-Assemblies, Manifeste, Elemente der Benutzeroberfläche und Fehlermeldungen.  
+ Enthält Links zu ausführlichen Informationen zu Office primary Interop-Assemblys, Manifeste, Elemente der Benutzeroberfläche und Fehlermeldungen.  
   
  [Verwaltete Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Enthält Links zu Informationen über die API-Namespaces und Typen, die in Office-Projekten mit der Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]verwendet werden. API-Referenzdokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden und die auf.NET Framework 3.5 abzielen, finden Sie im folgenden Verweisabschnitt in der Visual Studio 2008-Dokumentation: [2007 Systemverwaltete Referenz](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Enthält Links zu Informationen über die API-Namespaces und Typen, die in Office-Projekten mit der Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]verwendet werden. API-Referenzdokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3.5 abzielen, finden Sie im folgenden Verweisabschnitt in der Visual Studio 2008-Dokumentation: [System 2007 verwaltete Referenz](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [API-Referenz zur nicht verwalteten &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Enthält Links zu Informationen über COM-Schnittstellen, mit denen Sie Aktionen wie Laden und Entladen von verwalteten VSTO-Add-Ins in Office-Anwendungen durchführen können.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Office Development mit Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844)  
+ [Office-Entwicklung mit Visual Studio-Entwicklerportal](http://go.microsoft.com/fwlink/?LinkId=123844)  
  Enthält zusätzliche Ressourcen, z. B. technische Artikel, Videos und Blogs.  
   
- [Visual Studio Developer Center](http://go.microsoft.com/fwlink/?LinkID=99124)  
+ [Visual Studio Developercenter](http://go.microsoft.com/fwlink/?LinkID=99124)  
  Enthält zusätzliche Visual Studio-Ressourcen, z. B. technische Artikel, Videos und Blogs.  
   
- [Entwicklerportal für Office-Geschäftsanwendungen](http://go.microsoft.com/fwlink/?LinkId=99125)  
- Enthält Informationen zu Office Business-Anwendungen (OBAs) und zum Erstellen von OBAs mithilfe der Office Systemplattform.  
+ [Entwicklerportal für Office Business applications](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ Enthält Informationen zu Office Business Applications (OBAs) und zum Erstellen von OBAs mithilfe der Office Systemplattform.  
   
- [Abschnitt der MSDN Library zur Microsoft Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=149870)  
- Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Lösungen für mehrere Versionen von Office finden (nicht spezifisch für Office-Entwicklung mit Visual Studio).  
+ [Microsoft Office Development-Abschnitt der MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  
+ Der Bereich der MSDN Library, in dem Sie finden Artikel und Referenzdokumentation zum Entwickeln von Lösungen für mehrere Versionen von Office (nicht spezifisch für Office-Entwicklung mit Visual Studio) können.  
   
  [Anwendungsentwicklung in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
- Enthält Links zu Themen über die Verwendung von Visual Studio zum Entwerfen, Entwickeln, Debuggen und Bereitstellen von Webanwendungen, XML-Webdiensten und herkömmlichen Clientanwendungen.  
+ Enthält Links zu Themen, die erläutern, wie Sie mithilfe von Visual Studio zum Entwerfen, entwickeln, Debuggen und Bereitstellen von Webanwendungen, XML-Webdiensten und herkömmlichen Clientanwendungen können.  
   
  [.NET Framework-Programmierung in Visual Studio](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
  Erläutert die Anwendungsentwicklung mit dem.NET Framework in Visual Basic und Visual C#.  

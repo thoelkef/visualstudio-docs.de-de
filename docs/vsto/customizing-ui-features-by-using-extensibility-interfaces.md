@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen | Microsoft Docs
+title: Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,13 +23,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59a2eb15dcb21158df33b2f4a8ae138c424795cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d9fd69cb747c235f78be8065d07f03f5b39d66b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen
   Die Office-Entwicklungstools in Visual Studio umfassen Klassen und Designer, mit denen viele Implementierungsdetails behandelt werden können, wenn Sie sie zum Erstellen von benutzerdefinierten Aufgabenbereichen, Menübandanpassungen und Outlook-Formularbereichen in einem VSTO-Add-In verwenden. Sie können jedoch zudem die *Erweiterbarkeitsschnittstelle* manuell für jede Funktion implementieren, wenn Sie über besondere Anforderungen verfügen.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -39,9 +39,9 @@ ms.lasthandoff: 04/16/2018
   
  Wenn Sie ein VSTO-Add-In erstellen, indem Sie die Office-Projektvorlagen in Visual Studio verwenden, müssen Sie nicht die Erweiterbarkeitsschnittstellen implementieren, um Funktionen wie das Menüband anzupassen. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] implementiert diese Schnittstellen für Sie. Sie können stattdessen intuitivere Klassen und Designer verwenden, die Visual Studio bereitstellt. Sie können die Erweiterbarkeitsschnittstellen bei Bedarf jedoch direkt in Ihr VSTO-Add-In implementieren.  
   
- Weitere Informationen über die Klassen und Designer, die Visual Studio für diese Funktionen bereitstellt, finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md), [Menüband-Designer](../vsto/ribbon-designer.md), und [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
+ Weitere Informationen über die Klassen und Designer, die Visual Studio für diese Funktionen bereitstellt, finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md), [Menüband-Designer](../vsto/ribbon-designer.md), und [fürdasErstellenvonOutlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
   
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>In einem VSTO-Add-In implementierbare Erweiterbarkeitsschnittstellen  
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>In einem VSTO-Add-in implementierbare Erweiterbarkeitsschnittstellen  
  Die folgende Tabelle führt die Erweiterbarkeitsschnittstellen auf, die Sie implementieren können, sowie die Anwendungen, die sie unterstützen.  
   
 |Interface|Beschreibung|Anwendungen|  
@@ -52,12 +52,12 @@ ms.lasthandoff: 04/16/2018
   
  Es gibt verschiedene andere Erweiterbarkeitsschnittstellen, die durch Microsoft Office definiert werden, beispielsweise <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>und <xref:Microsoft.Office.Core.SignatureProvider>. Visual Studio unterstützt nicht die Implementierung dieser Schnittstellen in einem VSTO-Add-In, das mithilfe der Office-Projektvorlagen erstellt wurde.  
   
-## <a name="using-extensibility-interfaces"></a>Verwenden von Erweiterbarkeitsschnittstellen  
+## <a name="use-extensibility-interfaces"></a>Verwenden von Erweiterbarkeitsschnittstellen  
  Implementieren Sie zum Anpassen einer Benutzeroberflächenfunktion mithilfe einer Erweiterbarkeitsschnittstelle die entsprechende Schnittstelle in Ihrem VSTO-Add-In-Projekt. Überschreiben Sie anschließend die Methode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> , um eine Instanz der Klasse zurückzugeben, die die Schnittstelle implementiert.  
   
- Eine Beispielanwendung, die die Art und Weise der Implementierung der <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>und <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> -Schnittstellen in einem VSTO-Add-In für Outlook veranschaulicht finden Sie unter „UI-Manager – Beispiel“ in [Office Development Samples](../vsto/office-development-samples.md).  
+ Eine beispielanwendung, die veranschaulicht, wie Sie implementieren die <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, und <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> Schnittstellen in einem VSTO-Add-in für Outlook, finden Sie unter dem UI-Manager-Beispiel in [Office-Entwicklungsbeispiele](../vsto/office-development-samples.md).  
   
-### <a name="example-of-implementing-an-extensibility-interface"></a>Beispiel der Implementierung einer Erweiterbarkeitsschnittstelle  
+### <a name="example-of-implementing-an-extensibility-interface"></a>Beispiel für die Implementierung einer Erweiterbarkeitsschnittstelle  
  Das folgende Codebeispiel veranschaulicht eine einfache Implementierung der <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> -Schnittstelle zum Erstellen eines benutzerdefinierten Aufgabenbereichs. Im Beispiel werden zwei Klassen definiert:  
   
 -   Die `TaskPaneHelper` -Klasse implementiert <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zum Erstellen und Anzeigen eines benutzerdefinierten Aufgabenbereichs.  
@@ -70,9 +70,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Weitere Informationen über die Implementierung von <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in Office (2007)](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) in der Microsoft Office-Dokumentation.  
+ Weitere Informationen zur Implementierung <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in 2007 Office System](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) in der Microsoft Office-Dokumentation.  
   
-### <a name="example-of-overriding-the-requestservice-method"></a>Beispiel der Überschreibung der Methode "RequestService"  
+### <a name="example-of-overriding-the-requestservice-method"></a>Beispiel zum Überschreiben der Methode "RequestService"  
  Das folgende Codebeispiel veranschaulicht, wie die Methode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> überschrieben wird, um eine Instanz der Klasse `TaskPaneHelper` aus dem vorherigen Codebeispiel zurückzugeben. Es prüft die Werte des Parameters *serviceGuid* , um zu bestimmen, welche Schnittstelle angefordert wird, und gibt dann ein Objekt zurück, das diese Schnittstelle implementiert.  
   
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
@@ -80,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
  [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen im Klassen-Designer
 
 Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen finden Sie unter [How to: Create Inheritance Between Types (Class Designer) (Vorgehensweise: Erstellen einer Vererbungsbeziehung zwischen Typen (Klassen-Designer))](how-to-create-inheritance-between-types.md).
 

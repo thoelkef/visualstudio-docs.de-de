@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -37,7 +37,7 @@ Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
      Zum Einfügen eines Ausschnittes wählen Sie in der Menüleiste **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen** oder **Umschließen mit** aus, oder öffnen Sie das Kontextmenü in einer Datei, und wählen Sie **Ausschnitt** > **Ausschnitt einfügen** oder **Umschließen mit** aus. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).
 
-- **Inline-Behebung von Codefehlern**. Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern. Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch Drücken von **ALT**+**EINGABETASTE** oder **STRG**+**.** angewendet werden, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet. Weitere Informationen finden Sie unter [Schnelle Aktionen](quick-actions.md).
+- **Inline-Behebung von Codefehlern**. Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern. Diese Aktionen können mithilfe des Schraubendrehers ![Schraubendrehersymbol](media/screwdriver-icon.png) oder der Glühbirne ![Glühbirnensymbol](media/light-bulb-icon.png) oder durch Drücken der Tasten **Alt**+**EINGABETASTE** oder **STRG**+**.** angewendet werden, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet. Weitere Informationen finden Sie unter [Schnelle Aktionen](quick-actions.md).
 
 - **Anzeigen und Bearbeiten der Definition eines Codeelements**. Sie können das Modul schnell anzeigen und bearbeiten, in dem ein Codeelement, wie ein Member, eine Variable oder eine lokale Variable, definiert ist.
 

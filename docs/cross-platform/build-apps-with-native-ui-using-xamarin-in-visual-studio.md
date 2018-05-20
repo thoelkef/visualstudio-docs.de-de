@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 
@@ -95,7 +95,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
   
     -   Klicken Sie auf **Installieren**.  
   
-7.  Wiederholen Sie Schritt 7, um das **Microsoft.CSharp**-Paket im .NET Standard-Projekt zu suchen und zu installieren. Diese Bibliothek wird benötigt, um den C#-`dynamic`-Datentyp in einer .NET Standard-Bibliothek zu verwenden.
+7.  Wiederholen Sie Schritt 6, um das **Microsoft.CSharp**-Paket im .NET Standard-Projekt zu suchen und zu installieren. Diese Bibliothek wird benötigt, um den C#-`dynamic`-Datentyp in einer .NET Standard-Bibliothek zu verwenden.
   
 8.  Erstellen Sie die Projektmappe, und vergewissern Sie sich, dass keine Buildfehler aufgetreten sind.  
   

@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Aufgabenbereiche | Microsoft Docs
+title: Benutzerdefinierte Aufgabenbereiche
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Features Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.  
@@ -40,10 +40,10 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Ein benutzerdefinierter Aufgabenbereich ist nicht das gleiche wie der Aktionsbereich. Der Aktionsbereich ist Bestandteil von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. Weitere Informationen finden Sie unter [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+>  Ein benutzerdefinierter Aufgabenbereich ist nicht das gleiche wie der Aktionsbereich. Der Aktionsbereich ist Bestandteil von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
   
 ## <a name="benefits-of-custom-task-panes"></a>Vorteile von benutzerdefinierten Aufgabenbereichen  
- Mit benutzerdefinierten Aufgabenbereichen können Sie Features in eine vertraute Benutzeroberfläche integrieren. Sie können mit Visual Studio-Tools schnell einen benutzerdefinierten Aufgabenbereich erstellen.  
+ Mit benutzerdefinierten Aufgabenbereichen können Sie Funktionen in eine vertraute Benutzeroberfläche integrieren. Sie können mit Visual Studio-Tools schnell einen benutzerdefinierten Aufgabenbereich erstellen.  
   
 ### <a name="familiar-user-interface"></a>Vertraute Benutzeroberfläche  
  Benutzer von Anwendungen in Microsoft Office System sind bereits vertraut sind, mit der Verwendung von Aufgabenbereichen wie dem **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Das Verhalten von benutzerdefinierten Aufgabenbereichen entspricht dem Verhalten anderer Aufgabenbereiche in Microsoft Office System. Benutzer können benutzerdefinierte Aufgabenbereiche an verschiedene Seiten des Anwendungsfensters andocken, oder sie können benutzerdefinierte Aufgabenbereiche an eine beliebige Position im Fenster ziehen. Sie können ein VSTO-Add-In erstellen, das mehrere benutzerdefinierte Aufgabenbereiche gleichzeitig anzeigt, wobei die Benutzer jeden Aufgabenbereich einzeln steuern können.  
@@ -51,19 +51,19 @@ ms.lasthandoff: 04/16/2018
 ### <a name="windows-forms-support"></a>Windows Forms-Unterstützung  
  Die Benutzeroberfläche eines benutzerdefinierten Aufgabenbereichs, den Sie mit den Office-Entwicklungstools in Visual Studio erstellen, basiert auf Windows Forms-Steuerelementen. Sie können zum Entwerfen der Benutzeroberfläche für einen benutzerdefinierten Aufgabenbereich den vertrauten Windows Forms-Designer verwenden. Sie können auch die Datenbindungsunterstützung in Windows Forms nutzen, um eine Datenquelle an Steuerelemente im Aufgabenbereich zu binden.  
   
-## <a name="creating-a-custom-task-pane"></a>Erstellen eines benutzerdefinierten Aufgabenbereichs  
+## <a name="create-a-custom-task-pane"></a>Erstellen eines benutzerdefinierten Aufgabenbereichs  
  Ein einfacher benutzerdefinierter Aufgabenbereich kann in zwei Schritten erstellt werden:  
   
 1.  Erstellen Sie eine Benutzeroberfläche für den benutzerdefinierten Aufgabenbereich, indem Sie einem <xref:System.Windows.Forms.UserControl>-Objekt Windows Forms-Steuerelemente hinzufügen.  
   
 2.  Instanziieren Sie den benutzerdefinierten Aufgabenbereich, indem Sie das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>-Objekt im VSTO-Add-In übergeben. Diese Auflistung gibt ein neues <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt zurück, mit dem Sie die Darstellung des Aufgabenbereichs ändern und auf Benutzerereignisse reagieren können.  
   
- Weitere Informationen finden Sie unter [wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+ Weitere Informationen finden Sie unter [wie: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### <a name="creating-the-user-interface"></a>Erstellen der Benutzeroberfläche  
+### <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche  
  Alle benutzerdefinierten Aufgabenbereiche, die mit den Office-Entwicklungstools in Visual Studio erstellt werden, enthalten ein <xref:System.Windows.Forms.UserControl>-Objekt. Dieses Benutzersteuerelement stellt die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs bereit. Sie können das Benutzersteuerelement zur Entwurfszeit oder zur Laufzeit erstellen. Wenn Sie das Benutzersteuerelement zur Entwurfszeit erstellen, können Sie die Benutzeroberfläche des Aufgabenbereichs mit dem Windows Forms-Designer entwerfen.  
   
-### <a name="instantiating-the-custom-task-pane"></a>Instanziieren des benutzerdefinierten Aufgabenbereichs  
+### <a name="instantiate-the-custom-task-pane"></a>Instanziieren des benutzerdefinierten Aufgabenbereichs  
  Nachdem Sie ein Benutzersteuerelement erstellt haben, das die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs enthält, müssen Sie <xref:Microsoft.Office.Tools.CustomTaskPane> instanziieren. Übergeben Sie hierfür das Benutzersteuerelement an <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> im VSTO-Add-In, indem Sie eine der <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>-Methoden aufrufen. Diese Auflistung wird als `CustomTaskPanes`-Feld der `ThisAddIn`-Klasse verfügbar gemacht. Das folgende Codebeispiel sollte von der `ThisAddIn`-Klasse ausgeführt werden.  
   
  [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/16/2018
   
  Die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>-Methoden geben ein neues <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt zurück. Sie können dieses Objekt verwenden, um die Darstellung des Aufgabenbereichs zu ändern und auf Benutzerereignisse zu reagieren.  
   
-### <a name="controlling-the-task-pane-in-multiple-windows"></a>Steuern des Aufgabenbereichs in mehreren Fenstern  
+### <a name="control-the-task-pane-in-multiple-windows"></a>Steuern des Aufgabenbereichs in mehreren Fenstern  
  Benutzerdefinierte Aufgabenbereiche sind einem Dokumentrahmenfenster zugeordnet, das eine Ansicht eines Dokuments oder Elements für den Benutzer darstellt. Der Aufgabenbereich ist nur sichtbar, wenn das zugeordnete Fenster sichtbar ist.  
   
  Um zu bestimmen, in welchem Fenster der benutzerdefinierte Aufgabenbereich angezeigt wird, verwenden Sie die entsprechende <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>-Methodenüberladung beim Erstellen des Aufgabenbereichs:  
@@ -82,24 +82,24 @@ ms.lasthandoff: 04/16/2018
   
  Wenn mehrere Fenster geöffnet sind, erfordern einige Office-Anwendungen explizite Anweisungen dazu, wann der Aufgabenbereich erstellt oder angezeigt werden soll. Daher ist es wichtig, zu entscheiden, wo der benutzerdefinierte Aufgabenbereich im Code instanziiert werden soll, um sicherzustellen, dass der Aufgabenbereich mit den entsprechenden Dokumenten oder Elementen in der Anwendung angezeigt wird. Weitere Informationen finden Sie unter [Verwalten benutzerdefinierter Aufgabenbereiche in Anwendungsfenstern](#Managing).  
   
-## <a name="accessing-the-application-from-the-task-pane"></a>Zugreifen auf die Anwendung vom Aufgabenbereich aus  
+## <a name="access-the-application-from-the-task-pane"></a>Zugriff auf die Anwendung über den Aufgabenbereich  
  Wenn Sie die Anwendung über das Benutzersteuerelement automatisieren möchten, können Sie mithilfe von `Globals.ThisAddIn.Application` im Code direkt auf das Objektmodell zugreifen. Die statische `Globals`-Klasse ermöglicht den Zugriff auf das `ThisAddIn`-Objekt. Das `Application`-Feld dieses Objekts ist der Einstiegspunkt in das Objektmodell der Anwendung.  
   
- Weitere Informationen zu den `Application` Feld der `ThisAddIn` Objekt, finden Sie unter [Programmieren von VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md). Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über einen benutzerdefinierten Aufgabenbereich veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Weitere Informationen zu den `Globals` Klasse, finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+ Weitere Informationen zu den `Application` Feld der `ThisAddIn` Objekt, finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über einen benutzerdefinierten Aufgabenbereich veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Weitere Informationen zu den `Globals` Klasse, finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
-## <a name="managing-the-user-interface-of-the-task-pane"></a>Verwalten der Benutzeroberfläche des Aufgabenbereichs  
+## <a name="manage-the-user-interface-of-the-task-pane"></a>Verwalten der Benutzeroberfläche des Aufgabenbereichs  
  Nachdem Sie den Aufgabenbereich erstellt haben, können Sie Eigenschaften und Ereignisse des <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekts verwenden, um die Benutzeroberfläche des Aufgabenbereichs zu steuern und auf Änderungen des Aufgabenbereichs durch Benutzer zu reagieren.  
   
-### <a name="making-the-custom-task-pane-visible"></a>Sichtbarmachen des benutzerdefinierten Aufgabenbereichs  
+### <a name="make-the-custom-task-pane-visible"></a>Sichtbarmachen des benutzerdefinierten Aufgabenbereichs  
  Der Aufgabenbereich ist standardmäßig nicht sichtbar. Um den Aufgabenbereich sichtbar zu machen, legen Sie die <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> Eigenschaft **"true"**.  
   
  Benutzer können einen Aufgabenbereich jederzeit schließen, indem Sie auf die **schließen** Schaltfläche (X) in der Ecke des Aufgabenbereichs. Es gibt jedoch kein Standardverfahren für das erneute Öffnen des benutzerdefinierten Aufgabenbereichs durch die Benutzer. Wenn ein Benutzer einen benutzerdefinierten Aufgabenbereich schließt, kann dieser Benutzer den benutzerdefinierten Aufgabenbereich nur erneut anzeigen, wenn Sie ein Verfahren zum Anzeigen des Aufgabenbereichs bereitstellen.  
   
- Wenn Sie im VSTO-Add-In einen benutzerdefinierten Aufgabenbereich erstellen, sollten Sie auch ein Benutzeroberflächenelement, z. B. eine Schaltfläche, erstellen, auf das Benutzer klicken können, um den benutzerdefinierten Aufgabenbereich anzuzeigen oder auszublenden. Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Microsoft Office-Anwendung erstellen, die das Anpassen des Menübands unterstützt, können Sie dem Menüband eine Steuerelementgruppe mit einer Schaltfläche hinzufügen, über die der benutzerdefinierte Aufgabenbereich angezeigt und ausgeblendet wird. Eine exemplarische Vorgehensweise veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+ Wenn Sie im VSTO-Add-In einen benutzerdefinierten Aufgabenbereich erstellen, sollten Sie auch ein Benutzeroberflächenelement, z. B. eine Schaltfläche, erstellen, auf das Benutzer klicken können, um den benutzerdefinierten Aufgabenbereich anzuzeigen oder auszublenden. Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Microsoft Office-Anwendung erstellen, die das Anpassen des Menübands unterstützt, können Sie dem Menüband eine Steuerelementgruppe mit einer Schaltfläche hinzufügen, über die der benutzerdefinierte Aufgabenbereich angezeigt und ausgeblendet wird. Eine exemplarische Vorgehensweise veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Synchronisieren ein benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
  Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Microsoft Office-Anwendung erstellen, die das Anpassen des Menübands nicht unterstützt, können Sie eine <xref:Microsoft.Office.Core.CommandBarButton> hinzufügen, mit der der benutzerdefinierte Aufgabenbereich angezeigt oder ausgeblendet wird.  
   
-### <a name="modifying-the-appearance-of-the-task-pane"></a>Ändern der Darstellung des Aufgabenbereichs  
+### <a name="modify-the-appearance-of-the-task-pane"></a>Ändern der Darstellung des Aufgabenbereichs  
  Die Größe und Position eines benutzerdefinierten Aufgabenbereichs können mithilfe der Eigenschaften des <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekts gesteuert werden. Mit den Eigenschaften des <xref:System.Windows.Forms.UserControl>-Objekts, das im benutzerdefinierten Aufgabenbereich enthalten ist, können Sie viele weitere Änderungen an der Darstellung eines benutzerdefinierten Aufgabenbereichs vornehmen. Beispielsweise können Sie mit der <xref:System.Windows.Forms.Control.BackgroundImage%2A>-Eigenschaft des Benutzersteuerelements ein Hintergrundbild für einen benutzerdefinierten Aufgabenbereich angeben.  
   
  In der folgenden Tabelle werden die Änderungen aufgelistet, die Sie mithilfe von <xref:Microsoft.Office.Tools.CustomTaskPane>-Eigenschaften an einem benutzerdefinierten Aufgabenbereich vornehmen können.  
@@ -111,7 +111,7 @@ ms.lasthandoff: 04/16/2018
 |So blenden Sie den Aufgabenbereich aus oder machen ihn sichtbar|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
 |So verhindern Sie das Ändern der Position des Aufgabenbereichs durch Benutzer|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
   
-### <a name="programming-custom-task-pane-events"></a>Programmieren von Ereignissen des benutzerdefinierten Aufgabenbereichs  
+### <a name="program-custom-task-pane-events"></a>Programmieren von Ereignissen des benutzerdefinierten Aufgabenbereichs  
  Sie können festlegen, dass das VSTO-Add-In auf Änderungen des benutzerdefinierten Aufgabenbereichs durch den Benutzer reagiert. Wenn der Benutzer beispielsweise die Ausrichtung des Bereichs von vertikal in horizontal ändert, sollen möglicherweise die Steuerelemente neu positioniert werden.  
   
  In der folgenden Tabelle sind die Ereignisse aufgeführt, die Sie behandeln können, um auf Änderungen von Benutzern am benutzerdefinierten Aufgabenbereich zu reagieren.  
@@ -121,7 +121,7 @@ ms.lasthandoff: 04/16/2018
 |So reagieren Sie, wenn der Benutzer die Position des Aufgabenbereichs ändert|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |So reagieren Sie, wenn der Benutzer den Aufgabenbereich ausblendet oder sichtbar macht|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
   
-## <a name="cleaning-up-resources-used-by-the-task-pane"></a>Bereinigen der vom Aufgabenbereich verwendeten Ressourcen  
+## <a name="clean-up-resources-used-by-the-task-pane"></a>Bereinigen der vom Aufgabenbereich verwendete Ressourcen  
  Nachdem Sie einen benutzerdefinierten Aufgabenbereich erstellt haben, bleibt das <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt so lange im Arbeitsspeicher, wie das VSTO-Add-In ausgeführt wird. Das Objekt im Arbeitsspeicher bleibt, selbst nachdem der Benutzer klickt auf die **schließen** Schaltfläche (X) in der Ecke des Aufgabenbereichs.  
   
  Um vom Aufgabenbereich verwendete Ressourcen zu bereinigen, während das VSTO-Add-In noch ausgeführt wird, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>-Methode. Durch diese Methoden werden das angegebene <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt aus der `CustomTaskPanes`-Auflistung entfernt und die <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A>-Methode des Objekts aufgerufen.  
@@ -139,7 +139,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Word, InfoPath und PowerPoint](#WordAndInfoPath)  
   
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen: Verwalten von Aufgabenbereichen in Word-VSTO-Add-ins?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwalten von Aufgabenbereichen in Word-VSTO-Add-ins?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Wenn Sie einen benutzerdefinierten Aufgabenbereich für Outlook erstellen, wird dieser einem bestimmten Explorer- oder Inspektor-Fenster zugeordnet. Explorer-Fenster sind Fenster, die den Inhalt eines Ordners anzeigen. Inspektor-Fenster sind Fenster, die ein Element, z. B. eine E-Mail oder Aufgabe, anzeigen.  
@@ -148,7 +148,7 @@ ms.lasthandoff: 04/16/2018
   
  Um den Aufgabenbereich einem bestimmten Explorer oder Inspektor zuzuordnen, verwenden die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> Methode zum Erstellen des Aufgabenbereichs, und übergeben der <xref:Microsoft.Office.Interop.Outlook.Explorer> oder <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekt an die *Fenster* Parameter. Weitere Informationen zum Erstellen von benutzerdefinierten Aufgabenbereichen finden Sie unter [Übersicht über benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).  
   
- Eine exemplarische Vorgehensweise, die veranschaulicht das Erstellen eines Aufgabenbereichs für jede e-Mail-Nachricht, die geöffnet wird, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+ Eine exemplarische Vorgehensweise, die veranschaulicht das Erstellen eines Aufgabenbereichs für jede e-Mail-Nachricht, die geöffnet wird, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ### <a name="outlook-events"></a>Outlook-Ereignisse  
  Um den Zustand von Explorer-Fenstern zu überwachen, können Sie die folgenden Explorer-bezogenen Ereignisse behandeln:  
@@ -171,7 +171,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
-### <a name="preventing-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Verhindern von mehreren Instanzen eines benutzerdefinierten Aufgabenbereichs in Outlook  
+### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Zu verhindern, dass mehrere Instanzen eines benutzerdefinierten Aufgabenbereichs in Outlook  
  Um zu verhindern, dass in Outlook-Fenstern mehrere Instanzen eines benutzerdefinierten Aufgabenbereichs angezeigt werden, müssen Sie den benutzerdefinierten Aufgabenbereich explizit aus der `CustomTaskPanes`-Auflistung der `ThisAddIn`-Klasse entfernen, wenn die einzelnen Fenster geschlossen werden. Rufen Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>-Methode in einem Ereignis auf, das beim Schließen eines Fensters ausgelöst wird, z. B. <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> oder <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
   
  Wenn Sie den benutzerdefinierten Aufgabenbereich nicht explizit entfernen, werden in Outlook-Fenstern möglicherweise mehrere Instanzen des benutzerdefinierten Aufgabenbereichs angezeigt. Fenster werden in Outlook gelegentlich wiederverwendet, und in wiederverwendeten Fenstern werden Verweise auf benutzerdefinierte Aufgabenbereiche beibehalten, die an die Fenster angefügt waren.  
@@ -228,4 +228,4 @@ ms.lasthandoff: 04/16/2018
  [Vorgehensweise: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  

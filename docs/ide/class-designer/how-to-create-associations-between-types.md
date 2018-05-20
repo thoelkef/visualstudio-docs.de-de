@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Vorgehensweise: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Vorgehensweise: Erstellen von Zuordnungen zwischen Typen im Klassen-Designer
 
 Anhand von Assoziationslinien im **Klassen-Designer** ist zu erkennen, in welcher Beziehung Klassen in einem Diagramm stehen. Eine Assoziationslinie stellt eine Klasse dar, die der Typ einer Eigenschaft oder eines Felds einer anderen Klasse im Projekt ist. In der Regel dienen Assoziationslinien zur Darstellung der wichtigsten Beziehungen zwischen Klassen im Projekt.
 
@@ -35,25 +35,25 @@ Sie können alle Felder und Eigenschaften als Assoziationen anzuzeigen. Je nachd
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>So definieren Sie im Klassendiagramm eine Assoziationslinie
 
-1.  Wählen Sie in der Toolbox unter **Klassen-Designer** die Option **Zuordnung** aus.
+1. Wählen Sie in der Toolbox unter **Klassen-Designer** die Option **Zuordnung** aus.
 
-2.  Zeichnen Sie eine Linie zwischen den beiden Formen, die Sie mithilfe einer Assoziation miteinander verbinden möchten.
+2. Zeichnen Sie eine Linie zwischen den beiden Formen, die Sie mithilfe einer Assoziation miteinander verbinden möchten.
 
      In der ersten Klasse wird eine neue Eigenschaft erstellt. Diese Eigenschaft wird als Assoziationslinie (nicht als Eigenschaft in einem Depot in der Form) mit einem Standardnamen angezeigt. Der zugehörige Typ ist die Form, auf die die Assoziationslinie weist.
 
 ## <a name="to-change-the-name-of-an-association"></a>So ändern Sie den Namen einer Assoziation
 
--   Klicken Sie auf der Diagrammoberfläche auf die Bezeichnung der Assoziationslinie, und geben Sie eine neue Bezeichnung ein.
+Klicken Sie auf der Diagrammoberfläche auf die Bezeichnung der Assoziationslinie, und geben Sie eine neue Bezeichnung ein.
 
- \- oder –
+Führen Sie alternativ die folgenden Schritte aus:
 
-1.  Klicken Sie auf die Form, in der die als Assoziation angezeigte Eigenschaft enthalten ist.
+1. Wählen Sie die Form aus, in der die als Assoziation angezeigte Eigenschaft enthalten ist.
 
-     Die Form erhält den Fokus, und die zugehörigen Member werden im Klassendetailsfenster und im Eigenschaftenfenster angezeigt.
+   Die Form erhält den Fokus, und die zugehörigen Member werden in den Fenstern **Klassendetails** und **Eigenschaften** angezeigt.
 
-2.  Bearbeiten Sie nun entweder im Klassendetailsfenster oder im Eigenschaftenfenster das Namensfeld der Eigenschaft, und drücken Sie die EINGABETASTE.
+2. Bearbeiten Sie nun entweder im Fenster **Klassendetails** oder **Eigenschaften** das Namensfeld der Eigenschaft, und drücken Sie die **EINGABETASTE**.
 
-     Der Name wird im Fenster **Klassendetails**, auf der Assoziationslinie, im Eigenschaftenfenster und im Code aktualisiert.
+   Der Name wird im Fenster **Klassendetails**, auf der Assoziationslinie, im **Eigenschaftenfenster** und im Code aktualisiert.
 
 ## <a name="see-also"></a>Siehe auch
 

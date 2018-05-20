@@ -9,11 +9,11 @@ description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -40,5 +40,8 @@ Als Visual Studio-Abonnent haben Sie außerdem Zugriff auf verschiedene Supporta
 - Erhalten Sie Hilfe von Communitymitgliedern in den Foren für Priority Support.  Wenn die Communitymitglieder Ihre Frage nicht beantworten können, helfen Ihnen die Microsoft-Experten weiter. 
 - Haben Sie Fragen zu Azure?  Nutzen Sie die Azure-Community und die Azure Advisory-Chatdienste.  
 
-Weitere Informationen zu den Vorteilen, die Ihr Abonnement bietet, finden Sie auf der Seite mit den Visual Studio-Preisen.  Informationen zu spezifischen Vorteilen sowie der Abonnementfeatures, über die diese bereitgestellt werden, finden Sie im Thema **Nutzen der Vorteile für Abonnenten**. 
+> [!NOTE] 
+> Mit Ihrem Abonnement haben Sie möglicherweise auch Zugriff auf Softwaredownloads.  Weitere Informationen zu Downloads, auch darüber, welche Downloads in Ihrem Abonnement enthalten sind, finden Sie unter [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Weitere Informationen zu den Vorteilen, die Ihr Abonnement bietet, finden Sie auf der [Seite mit den Visual Studio-Preisen](https://www.visualstudio.com/vs/pricing/).  Informationen zu spezifischen Vorteilen sowie der Abonnementfeatures, über die diese bereitgestellt werden, finden Sie im Thema **Nutzen der Vorteile für Abonnenten**. 
 
