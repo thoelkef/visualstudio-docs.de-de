@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e6fec89a151525a84349b7019c7569eb752172e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
 Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurückgegeben.  
@@ -29,8 +29,7 @@ Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurü
   
  Für diesen Fehler sind viele Ursachen möglich. Einige der häufigsten Ursachen schließen ein Problem mit der IIS-Installation oder der Konfigurationsroutine, der Websitekonfiguration oder den Berechtigungen im Dateisystem ein. Sie können versuchen, mit einem Browser auf die Ressource zuzugreifen. Abhängig von der IIS-Konfiguration müssen Sie möglicherweise einen lokalen Browser auf dem Server verwenden oder das IIS-Fehlerprotokoll überprüfen, um eine ausführliche Fehlermeldung zu erhalten.  
   
- Weitere Informationen zur Behandlung von IIS finden Sie unter [IIS-Verwaltung und Administration](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Weitere Informationen zur Behandlung von IIS finden Sie unter [IIS-Verwaltung und Administration](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Siehe auch  
- [UrlScan-Sicherheitstool](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

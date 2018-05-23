@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c38e965c5d424c7a3a6ffe4047e9422f1f9bb4f0
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4192460ca7825947c88170b7bd36898595504438
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-attach-to-script"></a>Gewusst wie: Anfügen an ein Skript
 In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen manuell an eine Skriptdatei angefügt wird.  
@@ -35,7 +35,7 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
   
 2.  In der **an den Prozess anhängen** Dialogfeld Betrachtung der **verfügbare Prozesse** Liste und suchen Sie den Skriptprozess, die Sie anfügen möchten. Sie können Skriptprozesse identifizieren, durch einen Blick auf die **Typ** Spalte.  
   
-    1.  Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen. Weitere Informationen finden Sie unter [wie: Auswählen eines Remotecomputers](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+    1.  Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen.
   
     2.  Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .  
   
@@ -64,7 +64,7 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
 > [!NOTE]
 >  Beim Versuch, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess, der im Besitz eines nicht vertrauenswürdigen Benutzers kann riskant sein. Wenn die folgende Informationen verdächtig, oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
- In einigen Fällen werden beim Debuggen in einer Terminaldienstesitzung (Remotedesktop) in der Liste Verfügbare Prozesse nicht alle verfügbaren Prozesse angezeigt. Wenn Visual Studio unter [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] oder höher mit einem eingeschränkten Benutzerkonto ausgeführt wird, werden in der Liste Verfügbare Prozesse keine Prozesse in Sitzung 0 angezeigt, die für Dienste und andere Serverprozesse einschließlich w3wp.exe verwendet wird. Sie können dieses Problem beheben, indem Sie Visual Studio unter einem Administratorkonto oder an der Serverkonsole, und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden problemlösungen möglich ist, wird eine dritte Möglichkeit ist, an den Prozess anfügen, indem Sie vsjitdebugger.exe eingeben --p ProcessId in der Windows-Befehlszeile. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um tlist.exe abzurufen, herunterladen und installieren Sie die Debugtools für Windows auf [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?linkid=1651).  
+ In einigen Fällen werden beim Debuggen in einer Terminaldienstesitzung (Remotedesktop) in der Liste Verfügbare Prozesse nicht alle verfügbaren Prozesse angezeigt. Wenn Visual Studio unter [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] oder höher mit einem eingeschränkten Benutzerkonto ausgeführt wird, werden in der Liste Verfügbare Prozesse keine Prozesse in Sitzung 0 angezeigt, die für Dienste und andere Serverprozesse einschließlich w3wp.exe verwendet wird. Sie können dieses Problem beheben, indem Sie Visual Studio unter einem Administratorkonto oder an der Serverkonsole, und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden problemlösungen möglich ist, wird eine dritte Möglichkeit ist, an den Prozess anfügen, indem Sie vsjitdebugger.exe eingeben --p ProcessId in der Windows-Befehlszeile. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um tlist.exe abzurufen, herunterladen und installieren Sie die Debugtools für Windows auf [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von clientseitigem Skript](../debugger/client-side-script-debugging.md)   

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Auswählen einer Strategie für die ClickOnce-Bereitstellung
 Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen. Folgende Strategien sind verfügbar:  
@@ -46,15 +46,6 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
   
  Dies ist die Standardbereitstellungsstrategie.  
   
-## <a name="install-from-a-cd"></a>Installation von einer CD  
- Bei dieser Strategie wird die Anwendung auf einem Wechseldatenträger bereitgestellt, z. B. auf einer CD-ROM oder einer DVD. Wie bei der vorausgegangenen Option, wenn der Benutzer entscheidet, die Anwendung zu installieren, installiert und gestartet und Elemente hinzugefügt werden die **starten** Menü und **Software** in **Steuerelement Bereich**.  
-  
- Diese Strategie funktioniert am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die nicht dauerhaft über eine Netzwerkverbindung oder über eine Verbindung mit niedriger Bandbreite verfügen. Da die Anwendung von einem Wechseldatenträger installiert wird, ist bei der Installation keine Netzwerkverbindung erforderlich. Sie benötigen jedoch eine Netzwerkverbindung für Anwendungsupdates.  
-  
- So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **von CD-ROM oder DVD-ROM** auf die **Installationsart** Seite des Veröffentlichungs-Assistenten.  
-  
- Um diese Bereitstellungsstrategie manuell zu aktivieren, Ändern der **"deploymentProvider"** -Tag im Bereitstellungsmanifest. (In Visual Studio diese Eigenschaft verfügbar gemacht wird als **Installations-URL** auf die **veröffentlichen** Seite im Projekt-Designer. In Mage.exe lautet **Startspeicherort**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
  Diese Strategie ähnelt der ersten Strategie. Die Anwendung verhält sich jedoch wie eine Webanwendung. Wenn der Benutzer auf einer Webseite auf einen Link klickt (oder in einer Dateifreigabe auf ein Symbol doppelklickt), wird die Anwendung gestartet. Wenn Benutzer die Anwendung schließen, ist nicht mehr auf ihren lokalen Computer verfügbar. nichts hinzugefügt der **starten** Menü oder **Software** in **Systemsteuerung**.  
   
@@ -66,6 +57,15 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
  So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **installieren Sie die Anwendung nicht** auf die **Web installieren oder Ausführen von** Seite des Veröffentlichungs-Assistenten.  
   
  Um diese Bereitstellungsstrategie manuell zu aktivieren, Ändern der **installieren** -Tag im Bereitstellungsmanifest. (Der Wert kann **"true"** oder **"false"**. Verwenden Sie in Mage.exe die **nur Online** -Option in der **Anwendungstyp** Liste.)  
+
+## <a name="install-from-a-cd"></a>Installation von einer CD  
+ Bei dieser Strategie wird die Anwendung auf einem Wechseldatenträger bereitgestellt, z. B. auf einer CD-ROM oder einer DVD. Wie bei der vorausgegangenen Option, wenn der Benutzer entscheidet, die Anwendung zu installieren, installiert und gestartet und Elemente hinzugefügt werden die **starten** Menü und **Software** in **Steuerelement Bereich**.  
+  
+ Diese Strategie funktioniert am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die nicht dauerhaft über eine Netzwerkverbindung oder über eine Verbindung mit niedriger Bandbreite verfügen. Da die Anwendung von einem Wechseldatenträger installiert wird, ist bei der Installation keine Netzwerkverbindung erforderlich. Sie benötigen jedoch eine Netzwerkverbindung für Anwendungsupdates.  
+  
+ So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **von CD-ROM oder DVD-ROM** auf die **Installationsart** Seite des Veröffentlichungs-Assistenten.  
+  
+ Um diese Bereitstellungsstrategie manuell zu aktivieren, Ändern der **"deploymentProvider"** -Tag im Bereitstellungsmanifest. (In Visual Studio diese Eigenschaft verfügbar gemacht wird als **Installations-URL** auf die **veröffentlichen** Seite im Projekt-Designer. In Mage.exe lautet **Startspeicherort**.)  
   
 ## <a name="web-browser-support"></a>Unterstützung für Internetbrowser  
  Anwendungen, die auf .NET Framework 3.5 ausgerichtet sind, können mit jedem Browser installiert werden.  

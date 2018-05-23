@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
 Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektsystem generiert einen Standardnamen für die Vorlage in der **neues Element hinzufügen** oder **neues Projekt** (Dialogfeld).  
@@ -59,7 +59,7 @@ Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projek
   
  Wenn die `ProvideDefaultName` Element ist `false`, die **Namen** Feldern der **neues Element hinzufügen** und **neues Projekt** Dialogfelder enthalten den Wert `<Enter_name>`.  
   
- Verwenden der [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) Elements, geben Sie den Standardnamen des Projekts oder Element in der **neues Element hinzufügen** und **neues Projekt** Dialogfelder.  
+ Verwenden der [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) Elements, geben Sie den Standardnamen des Projekts oder Element in der **neues Element hinzufügen** und **neues Projekt** Dialogfelder. Bei den Wert des der `ProvideDefaultName` Element ist `true`, nicht angegeben die `DefaultName` -Element für Projekte füllt das Dialogfeld mit der Name der Vorlage, d. h. den Wert aus der [Namen](../extensibility/name-element-visual-studio-templates.md) Element.
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird die `ProvideDefaultName` Element `false`.  
