@@ -9,11 +9,11 @@ description: Erfahren Sie mehr zum Pluralsight-Schulungsabonnements, das in Ihre
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -82,7 +82,7 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 | Visual Studio Enterprise (NFR<sup>1</sup>) | Program                                       | Nicht verfügbar                                  |NA|
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services (Developer), MCT Software & Service, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup> *Nach Ablauf der Pluralsight-Abonnements können Sie für 12 Monate Zugriff auf 50 ausgewählte Pluralsight-Kurse in einem von drei Fachbereichen erhalten.  Der Pluralsight-Vorteil kann nur einmal verwendet werden und ist an eine bestimmte Person gebunden.  Sobald der Abonnent den Vorteil nutzt, erfolgt keine Zurücksetzung. Weitere Informationen finden Sie in den häufig gestellten Fragen (FAQ).*
+<sup>2</sup> *Der Pluralsight-Vorteil kann nur einmal verwendet werden und ist an eine bestimmte Person gebunden.  Sobald der Abonnent den Vorteil nutzt, erfolgt keine Zurücksetzung. Weitere Informationen finden Sie nachfolgend in den häufig gestellten Fragen (FAQ).  Nach Ablauf der Pluralsight-Abonnements können Sie für 12 Monate Zugriff auf 50 ausgewählte Pluralsight-Kurse in einem von drei Fachbereichen erhalten.*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
 

@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -60,7 +60,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--installPath <dir>` | Das Installationsverzeichnis für die Instanz, für die der Befehl ausgeführt wird. Für den Befehl „install“ ist dies **optional** und das Verzeichnis, in dem die Instanz installiert wird. Für andere Befehle ist es **erforderlich** und befindet sich dort, wo die vorherige Instanz installiert wurde. |
 | `--addProductLang <language-locale>` | **Optional**: Während einer Installation oder eines Änderungsvorgang, bestimmt dies die UI-Sprachpakete, die für das Produkt installiert werden. Die Option kann mehrfach in der Befehlszeile erscheinen, um mehrere Sprachpakete hinzuzufügen. Wird diese Option nicht angegeben, verwendet die Installation das Gebietsschema des Computers. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
 | `--removeProductLang <language-locale>` | **Optional**: Während einer Installation oder eines Änderungsvorgang, bestimmt dies die UI-Sprachpakete, die vom Produkt entfernt werden sollen. Die Option kann mehrfach in der Befehlszeile erscheinen, um mehrere Sprachpakete hinzuzufügen. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
-| `--add <one or more workload or component IDs>` | **Optional**: Eine oder mehrere hinzuzufügende Arbeitsauslastungs- oder Komponenten-IDs. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeRecommended;includeOptional`). Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017). Sie können dies Option bei Bedarf wiederholen.|
+| `--add <one or more workload or component IDs>` | **Optional**: Eine oder mehrere hinzuzufügende Arbeitsauslastungs- oder Komponenten-IDs. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeRecommended;includeOptional`). Weitere Informationen finden Sie auf der Seite [Workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs). Sie können dies Option bei Bedarf wiederholen.|
 | `--remove <one or more workload or component IDs>` | **Optional**: Eine oder mehrere zu entfernende Arbeitsauslastungs- oder Komponenten-IDs. Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017). Sie können dies Option bei Bedarf wiederholen.|
 | `--in <path>` | **Optional**: Der URI oder Pfad zu einer Antwortdatei.  |
 | `--all` | **Optional**: Gibt an, ob alle Arbeitsauslastungen und Komponenten für ein Produkt installiert werden sollen. |
@@ -80,12 +80,12 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | ----------------------- | --------------- |
 | `--layout <dir>` | Gibt ein Verzeichnis an, in dem der Offlineinstallationscache erstellt wird. Weitere Informationen finden Sie unter [Erstellen einer Netzwerkinstallation von Visual Studio 2017](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Optional**: Wird mit `--layout` zur Vorbereitung eines Offlineinstallationscaches mit Ressourcenpaketen mit angegebenen Sprachen verwendet. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
-| `--add <one or more workload or component IDs>` | **Optional**: Eine oder mehrere hinzuzufügende Arbeitsauslastungs- oder Komponenten-IDs. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeOptional`). Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017). <br/>**Hinweis**: Bei Verwenden von `--add` werden nur die angegebenen Workloads und Komponenten sowie deren Abhängigkeiten heruntergeladen. Wenn `--add` nicht angegeben ist, werden alle Workloads und Komponenten in das Layout heruntergeladen.|
+| `--add <one or more workload or component IDs>` | **Optional**: Eine oder mehrere hinzuzufügende Arbeitsauslastungs- oder Komponenten-IDs. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeOptional`). Weitere Informationen finden Sie auf der Seite [Workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs). <br/>**Hinweis**: Bei Verwenden von `--add` werden nur die angegebenen Workloads und Komponenten sowie deren Abhängigkeiten heruntergeladen. Wenn `--add` nicht angegeben ist, werden alle Workloads und Komponenten in das Layout heruntergeladen.|
 | `--includeRecommended` | **Optional**: Enthält die empfohlenen Komponenten für alle zu installierenden Arbeitsauslastungen, aber keine optionalen Komponenten. Die Workloads werden entweder mit `--allWorkloads` oder `--add` angegeben. |
 | `--includeOptional` | **Optional**: Schließt die empfohlenen *und* optionalen Komponenten für alle Workloads in das Layout ein. Die Workloads werden mit `--add` angegeben.  |
 | `--keepLayoutVersion` | **Neu in Version 15.3 (optional)**: Wenden Sie Änderungen auf das Layout an, ohne die Version des Layouts aktualisieren zu müssen. |
-| `--verify` | **Neu in Version 15.3 (optional)**: Überprüfen Sie die Inhalte eines Layouts.  Beschädigte oder fehlende Dateien werden aufgelistet. |
-| `--fix` | **Neu in Version 15.3 (optional)**: Überprüfen Sie die Inhalte eines Layouts.  Sollten Dateien beschädigt sein oder fehlen, werden sie erneut heruntergeladen.  Für die Korrektur eines Layout ist ein Internetzugriff erforderlich. |
+| `--verify` | **Neu in Version 15.3 (optional)**: Überprüfen Sie die Inhalte eines Layouts. Beschädigte oder fehlende Dateien werden aufgelistet. |
+| `--fix` | **Neu in Version 15.3 (optional)**: Überprüfen Sie die Inhalte eines Layouts.  Sollten Dateien beschädigt sein oder fehlen, werden sie erneut heruntergeladen. Für die Korrektur eines Layout ist ein Internetzugriff erforderlich. |
 | `--clean <one or more paths to catalogs>` | **Neu in Version 15.3 (optional)**: Entfernt alte Versionen der Komponenten aus einem Layout, das auf eine neuere Version aktualisiert wurde. |
 
 | **Erweiterte Installationsoptionen** | **Beschreibung** |
@@ -103,7 +103,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--noWeb` | **Neu in Version 15.3 (optional)**: Das Setup lädt jetzt jeden Inhalt herunter, der aus dem Internet installiert wird.  Jeder Inhalt, der installiert wird, muss in einem Offlinelayout verfügbar sein.  Wenn dem Layout Inhalt fehlt, schlägt die Einrichtung fehl.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Neu in 15.7 (optional)**: Zur Angabe der Standardinstallationspfade für die Installation. Unterstützte Pfadnamen lauten: „shared“, „cache“ und „install“. |
 | `--path cache=<path>` | **Neu in 15.7 (optional)**: Verwendet den Speicherort, den Sie beim Herunterladen der Installationsdateien angeben. Dieser Speicherort kann nur bei der ersten Installation von Visual Studio festgelegt werden. Ein Beispiel: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Neu in 15.7 (optional)**: Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **Neu in 15.7 (optional)**: Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` <br><br>Wichtig: Dies kann nur einmal, bei der ersten Installation von Visual Studio, festgelegt werden. |
 | `--path install=<path>` | **Neu in 15.7 (optional)**: Entspricht `–-installPath`. Besonders `--installPath "C:\VS"` und `--path install="C:\VS"` sind gleichwertig. Es kann jeweils nur eine der beiden Optionen verwendet werden. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
@@ -131,7 +131,7 @@ Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Stu
 
 ## <a name="error-codes"></a>Fehlercodes
 
-Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf einen der folgenden Werte festgelegt.
+Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf einen der folgenden Werte festgelegt:
 
 | **Wert** | **Ergebnis** |
 | --------- | ---------- |

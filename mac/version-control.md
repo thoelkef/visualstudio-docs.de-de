@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b09e776b1cf6726cd13ca8810ed528be12dd969a
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="version-control"></a>Versionskontrolle
 
@@ -27,7 +27,7 @@ Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mi
 
 Visual Studio für Mac bietet Unterstützung für beide Versionskontrollsysteme von Git und Subversion. In den folgenden Artikeln werden das Einrichten von Git- und Subversion-Repositorys über Visual Studio für Mac sowie einfache Funktionen wie das Überprüfen, Committen und Pushen von Änderungen erläutert.
 
-* [Setting Up a Git Repository (Einrichten eines Git-Repository)](~/set-up-git-repository.md) 
-* [Working with Git (Arbeiten mit Git)](~/working-with-git.md)
-* [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](~/set-up-subversion-repository.md)
-* [Working with Subversion (Arbeiten mit Subversion)](~/working-with-subversion.md)
+* [Setting Up a Git Repository (Einrichten eines Git-Repository)](set-up-git-repository.md) 
+* [Working with Git (Arbeiten mit Git)](working-with-git.md)
+* [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](set-up-subversion-repository.md)
+* [Working with Subversion (Arbeiten mit Subversion)](working-with-subversion.md)
