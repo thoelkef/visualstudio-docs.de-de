@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Visual Studio IntelliCode: Häufig gestellte Fragen
 
@@ -40,6 +40,13 @@ Entwickler können für Visual Studio 2017 Version 15.7 und höher [eine experim
 
 Mit IntelliCode schlägt die Vervollständigungsliste das wahrscheinlich richtige API für einen Entwickler vor, anstatt eine einfache alphabetische Liste der Member anzuzeigen. Es verwendet den aktuellen Codekontext des Entwicklers und Muster, die auf 2000 qualitativ hochwertigen Open-Source-Projekten auf GitHub mit jeweils über 100 Sternen basieren, um diese dynamische Liste bereitzustellen. Die Ergebnisse bilden ein Modell, das die wahrscheinlichsten und relevantesten API-Aufrufe vorhersagt.
 
+## F: Wie gut sind die automatischen Vorschläge für IntelliCode?
+
+Die Vorschläge von IntelliCode werden schon seit einiger Zeit intern von Microsoft verwendet. Wir sind der Meinung, dass die Vorschläge nützlich sind. Letztendlich müssen Sie aber selbst beim Codieren testen, wie nützlich die Vorschläge für Sie sind. Probieren Sie die [IntelliCode-Erweiterung](https://go.microsoft.com/fwlink/?linkid=872707) für Visual Studio doch einmal aus. Sie können uns dann gerne Ihre Meinung dazu mitteilen. Wir trainieren auch unser Modell auf der Grundlage davon, welche Vorschläge Sie auswählen. Wir aktualisieren die Erweiterung, wenn sich das Modell verbessert.
+
+> [!NOTE]
+> Ihr benutzerdefinierter Code wird nicht erfasst. Weitere Informationen dazu erhalten Sie in der Frage zum [Datenschutz](#privacy).
+
 ## F. Was ist die Zukunft von IntelliCode?
 
 Eine Vielzahl von Möglichkeiten zur Verbesserung der Produktivität von Entwicklern mithilfe von KI und anderen fortgeschrittenen Verfahren. Bei der Entwicklerkonferenz Build 2018 wurde eine frühe Übersicht zu einigen Szenarios veranschaulicht, bei denen die künstliche Intelligenz Entwicklern helfen kann, aber es gibt noch viele mehr. Wir sind daran interessiert, von Entwicklern zu lernen, die damit experimentieren, melden Sie sich also für Neuigkeiten und Updates unter [https://aka.ms/intellicode](https://aka.ms/intellicode) an.
@@ -52,11 +59,19 @@ Es gibt derzeit noch keine Ankündigungen zu den Preisen.
 
 Das KI-unterstützte IntelliSense von IntelliCode befindet sich derzeit in der ersten experimentellen Vorschauversion. Die experimentelle Erweiterung wird weiterhin aktualisiert, und weitere Funktionen werden hinzugefügt. Es gibt keinen Zeitplan für eine endgültige Veröffentlichung, aber wir freuen uns über Feedback von Entwicklern, damit die bestmöglichen Features geboten werden können. Unter [https://aka.ms/intellicode](https://aka.ms/intellicode) können Sie sich für Neuigkeiten und Updates anmelden.
 
-## F. Ist dieses Feature nur in Visual Studio verfügbar?
+## F. Ist dieses Feature nur in Visual Studio und für C# verfügbar?
 
 Das Feature wurde bei der Entwicklerkonferenz Build 2018 in Visual Studio 2017 auf einer C#-Codebase gezeigt. Allerdings freuen wir uns darauf, IntelliCode für weitere Sprachen und Tools in der Visual Studio-Familie zu erweitern.
 
-## F: Wie sieht es mit dem Datenschutz aus? Senden Sie meinen Code an die Cloud? Welche Kundendaten werden an Microsoft gesendet?
+## F. Für welche Visual Studio-Version muss ich diese Erweiterung ausführen?
+
+Die IntelliCode-Erweiterung für Visual Studio wird in Visual Studio 2017 Version 15.7 Vorschauversion 5 und höher (alle SKUs) unterstützt. Die Installation dieser Erweiterung wird unterbrochen und die Meldung "This extension is not installable on any currently installed products." (Diese Erweiterung kann für die derzeit installierten Produkte nicht installiert werden.) wird angezeigt, wenn Sie nicht die mindestens erforderliche Version installiert haben.
+
+## F. Ist dieses Feature nur auf Englisch verfügbar?
+
+IntelliCode ist derzeit nur die Vorschauversion einer Erweiterung und wir möchten gerne wissen, wie nützlich diese Funktionen für die verschiedenen Kunden sind. Wenn IntelliCode die Phase der Vorschau abgeschlossen hat, werden wir anhand Ihres Feedbacks prüfen, welche Gebiete oder Sprachen zuerst unterstützt und wie diese Unterstützung aussehen sollte. 
+
+## <a name="privacy"/> F: Wie sieht es mit dem Datenschutz aus? Senden Sie meinen Code an die Cloud? Welche Kundendaten werden an Microsoft gesendet?
 
 Entwickler sind dazu eingeladen, Visual Studio IntelliCode noch heute als experimentelle Vorschauerweiterung kennenzulernen. Der Zweck dieser Erweiterung ist es, den Entwicklern zu ermöglichen, die Funktionen von IntelliCode zu testen und Feedback an das Produktteam zu senden.
 

@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
@@ -24,9 +24,13 @@ Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden **Schne
 
 ## <a name="actions-that-fix-errors"></a>Aktionen, die Fehler korrigieren
 
+Über die schnellen Aktionen in diesem Abschnitt werden Fehler in Code behoben, durch die der Build fehlschlagen würde. Wenn schnelle Aktionen zur Behebung eines Fehlers auf einer Codezeile verfügbar sind, wird am Rand oder unterhalb der roten Wellenlinie eine Glühbirne mit einem roten „x“ angezeigt.
+
+![Fehlersymbol und Menü für schnelle Aktionen](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Richtige falsch geschriebenes Symbol oder Schlüsselwort
 
-Wenn Sie aus Versehen einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion den Fehler für Sie automatisch. Sie sehen diese Elemente im Fehlerbehebungsmenü als **"*Falsch geschriebenes Wort*" in "*Richtiges Wort*" ändern**.  Zum Beispiel:
+Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Sie sehen diese Elemente im Fehlerbehebungsmenü als **"*Falsch geschriebenes Wort*" in "*Richtiges Wort*" ändern**.  Zum Beispiel:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# und Visual Basic | Visual Studio 2017 Version 15.3 |
-
-### <a name="make-method-synchronous"></a>Methode als synchron deklarieren
-
-Wenn Sie das Schlüsselwort `async` oder `Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await` oder `Await` auch an irgendeiner Stelle innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async` oder `Async` entfernen und den Rückgabetyp ändern. Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# und Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Methode als asynchron deklarieren
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0 und höher | Visual Studio 2017 V. 15.5 |
+
+### <a name="make-method-synchronous"></a>Methode als synchron deklarieren
+
+Wenn Sie das Schlüsselwort `async` oder `Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await` oder `Await` auch an irgendeiner Stelle innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async` oder `Async` entfernen und den Rückgabetyp ändern. Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# und Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>Siehe auch
 

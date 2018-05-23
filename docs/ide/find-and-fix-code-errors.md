@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -91,17 +91,15 @@ Alle neuen oder aktualisierten Warnungen werden auf der Registerkarte **Fehlerli
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Verwenden von Glühbirnen zum Beheben oder Umgestalten von Code
 
-[Glühbirnen](../ide/quick-actions.md) sind ein relativ neues Feature von Visual Studio, mit dem Sie Code inline umgestalten können. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und wählen Sie **Schnelle Aktionen** aus. Alternativ können Sie **STRG**+**.** drücken, wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
+Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder auf das Glühbirnen- oder Schraubendrehersymbol auf dem rechten Rand klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
 
 ![Visual Studio, Glühbirne mit Vorschau](../ide/media/quick-actions-options.png)
 
-Glühbirnen können überall dort angewendet werden, wo Codeanalysen Möglichkeiten zur Problembehebung, Umgestaltung oder Verbesserung Ihres Codes erkannt haben. Klicken Sie mit der rechten Maustaste auf eine beliebige Codezeile, um das Kontextmenü zu öffnen, und klicken Sie auf **Schnelle Aktionen** (oder drücken Sie **STRG**+**.**). Wenn Optionen zum Umgestalten oder Verbessern verfügbar sind, werden diese angezeigt. Andernfalls wird die Nachricht **No Quick Actions available** (Keine schnellen Aktionen verfügbar) unten links in der IDE angezeigt.
+Schnelle Aktionen können immer dann verwendet werden, wenn Codeanalysetools feststellen, dass es eine Möglichkeit gibt, Fehler Ihres Codes zu beheben, diesen umzugestalten oder diesen zu verbessern. Klicken Sie mit der rechten Maustaste auf eine beliebige Codezeile, um das Kontextmenü zu öffnen, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn Optionen zum Umgestalten oder Verbessern verfügbar sind, werden diese angezeigt. Andernfalls wird die Nachricht **Keine schnellen Aktionen verfügbar** unten links in der IDE angezeigt.
 
-![Visual Studio, Glühbirne mit Text „Keine Option“](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Text „Keine schnellen Aktionen verfügbar“](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Mit etwas Erfahrung können Sie rasch mithilfe der Pfeiltasten und **STRG**+**.** überprüfen, ob schnelle Aktionen zur Umgestaltung und Bereinigung Ihres Codes verfügbar sind.
-
-Weitere Informationen zu Glühbirnen finden Sie unter [Schnelle Aktionen](../ide/quick-actions.md).
+Mit etwas Erfahrung können Sie rasch mithilfe der Pfeiltasten und **STRG**+**.** überprüfen, ob Möglichkeiten zur Umgestaltung und Bereinigung Ihres Codes verfügbar sind.
 
 ## <a name="debug-your-running-code"></a>Debuggen von ausgeführtem Code
 

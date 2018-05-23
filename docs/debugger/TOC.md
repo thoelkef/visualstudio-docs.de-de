@@ -81,7 +81,6 @@
 ##### [Gewusst wie: Debuggen im gemischten Modus](how-to-debug-in-mixed-mode.md)
 #### [Vorbereitung zum Debuggen: Konsolenprojekte](debugging-preparation-console-projects.md)
 #### [Gewusst wie: Debuggen einer ausführbaren Datei, die keiner Visual Studio-Projektmappe angehört](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Gewusst wie: Debuggen mit Code Center Premium-Quellcode](how-to-debug-with-code-center-premium-source.md)
 #### [Debuggen und der Hostprozess](debugging-and-the-hosting-process.md)
 #### [Gewusst wie: Angeben einer .NET Framework-Version für das Debuggen](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Erstellen benutzerdefinierter Ansichten von Daten](viewing-data-in-the-debugger.md)

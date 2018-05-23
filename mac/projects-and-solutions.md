@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: edc9b341a64d22876f52906f2ee92c33a22d420c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 6e99103ee16b56712f8ec979fd8591a20c2feb3c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="projects-and-solutions"></a>Projekte und Projektmappen
 
@@ -17,8 +17,8 @@ Visual Studio für Mac stellt ein _Projektmappenpad_ bereit, um eine Strukturans
 
 ## <a name="using-projects-and-solutions"></a>Verwenden von Projekten und Projektmappen
 
-Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projektmappe finden Sie im Artikel [Erstellen neuer Projekte und Projektmappen](~/create-new-projects.md).
+Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projektmappe finden Sie im Artikel [Erstellen neuer Projekte und Projektmappen](create-new-projects.md).
 
 ## <a name="project-and-solution-options"></a>Projekt- und Projektmappenoptionen
 
-Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](~/managing-solutions-and-project-properties.md).
+Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](managing-solutions-and-project-properties.md).

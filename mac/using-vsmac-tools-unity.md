@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Verwenden der Visual Studio für Mac-Tools für Unity
 
@@ -17,7 +17,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>Öffnen von Unity-Skripts in Visual Studio für Mac
 
-Nachdem Sie Visual Studio für Mac als [externen Skript-Editor für Unity](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac) festgelegt haben, wird durch das Öffnen eines Skripts über den Unity-Editor Visual Studio für Mac automatisch gestartet oder dahin gewechselt, während das ausgewählte Skript geöffnet ist.
+Nachdem Sie Visual Studio für Mac als [externen Skript-Editor für Unity](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac) festgelegt haben, wird durch das Öffnen eines Skripts über den Unity-Editor Visual Studio für Mac automatisch gestartet oder dahin gewechselt, während das ausgewählte Skript geöffnet ist.
 
 Alternativ können Sie Visual Studio für Mac öffnen, während kein Skript im Quellcode-Editor geöffnet ist. Wählen Sie dazu im Menü **Assets** (Bestand) in Unity **Open C# Project** (C#-Projekt öffnen) aus.
 
