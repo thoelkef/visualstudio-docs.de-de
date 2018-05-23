@@ -1,5 +1,5 @@
 ---
-title: '&lt;FriendlyName&gt; -Element (Office-Entwicklung in Visual Studio) | Microsoft Docs'
+title: '&lt;FriendlyName&gt; -Element (Office-Entwicklung in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbf4438b72169218daa6814599fc8c7d11a15aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52a8a34e7469518f2d14bab00df46ce0997343bd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;FriendlyName&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `friendlyName` -Element des `vstov4` Namespace speichert den angezeigten Namen in der Liste der installierten Programme.  
   
 ## <a name="syntax"></a>Syntax  
-  
+
+xml  
 ```  
 <friendlyName>  
 </friendlyName>  
@@ -36,22 +37,21 @@ ms.lasthandoff: 04/16/2018
   
  Das `friendlyName` Element weist keine Attribute oder untergeordnete Elemente auf.  
   
-## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-In  
+## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
   
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht das `friendlyName` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht das `friendlyName` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstov4:friendlyName>  
   ContosoOutlookAddIn  
 </vstov4:friendlyName>  
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest)  
-  
   

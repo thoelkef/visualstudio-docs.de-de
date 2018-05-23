@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte Websitespalten in SharePoint erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet, werden.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Lassen Sie in der Datei "Elements.xml" der Websitespalte, den **Typ** festlegen als **Text**, und ändern Sie die **Gruppe** festlegen auf **Clinic Websitespalten**. Nach Abschluss des Vorgangs sollte die Websitespalte "Elements.xml"-Datei im folgenden Beispiel ähneln.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -200,7 +200,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Kommentare  
   
-14. In der **Eigenschaften** wählen Sie die **sortieren und Gruppieren** -Eigenschaft, und wählen Sie dann die Schaltfläche mit den Auslassungspunkten ![Symbol "Ellipse"](../sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"")zum Anzeigen der **sortieren und Gruppieren** (Dialogfeld).  
+14. In der **Eigenschaften** wählen Sie die **sortieren und Gruppieren** -Eigenschaft, und wählen Sie dann die Schaltfläche mit den Auslassungspunkten ![Symbol "Ellipse"](../sharepoint/media/ellipsisicon.gif "Symbol \"Ellipse\"")zum Anzeigen der **sortieren und Gruppieren** (Dialogfeld).  
   
 15. In der **Spaltenname** wählen Sie **Patient Name**, stellen Sie sicher, dass die **sortieren** Spalte **aufsteigend**, und wählen Sie dann die  **OK** Schaltfläche.  
   

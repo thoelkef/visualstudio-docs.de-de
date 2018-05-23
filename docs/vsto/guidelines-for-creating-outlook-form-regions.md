@@ -1,5 +1,5 @@
 ---
-title: Richtlinien zum Erstellen von Outlook-Formularbereichen | Microsoft Docs
+title: Richtlinien zum Erstellen von Outlook-Formularbereichen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Richtlinien zum Erstellen von Outlook-Formularbereichen
   Anhand der folgenden Informationen können Formularbereiche optimiert und mögliche Probleme vermieden werden:  
   
 -   [Verwenden von Formularbereichsnamen](#UsingFormRegions).  
   
--   [Deaktivieren von Formularbereichsvererbung](#DisablingInheritance).  
+-   [Deaktivieren von formularbereichsvererbung](#DisablingInheritance).  
   
--   [Grundlegendes zu Typen und Nachrichtenklassennamen](#ClassNames).  
+-   [Verstehen von Typen und Klassennamen message](#ClassNames).  
   
 -   [Entwerfen von benachbarten Formularbereichen für den Lesebereich](#ReadingPane).  
   

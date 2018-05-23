@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
   Ersetzbare Parameter oder *Token*, können in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie sind Funktion ähnelt dem Standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Tokenformat  
- Token beginnen und enden mit einem Dollarzeichen ($). Alle Token verwendet werden durch tatsächliche Werte ersetzt, wenn ein Projekt zum Zeitpunkt der Bereitstellung in einer SharePoint-Lösung-Paketdatei (.wsp) verpackt wird. Z. B. das Token **$SharePoint.Package.Name$** möglicherweise behoben, um die Zeichenfolge "Test der SharePoint-Paket".  
+ Token beginnen und enden mit einem Dollarzeichen ($). Bereitstellung werden alle Token verwendet durch tatsächliche Werte ersetzt, wenn ein Projekt, in einer SharePoint-Lösungspaket (WSP-Datei verpackt wird). Z. B. das Token **$SharePoint.Package.Name$** möglicherweise behoben, um die Zeichenfolge "Test der SharePoint-Paket".  
   
 ## <a name="token-rules"></a>Token Regeln  
  Die folgenden Regeln gelten für Token:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Token, die nicht diese Regeln folgen werden ignoriert, ohne eine Warnung oder einen Fehler.  
   
- Das Ersetzen von Token durch Zeichenfolgenwerte erfolgt sofort nach der manifest Transformation, sodass manifest Vorlagen zum Verwenden von Token von einem Benutzer bearbeitet.  
+ Das Ersetzen von Token durch Zeichenfolgenwerte erfolgt sofort nach der manifest-Transformation. Diese Ersetzung kann der Benutzer das Manifesten Vorlagen mit Token zu bearbeiten.  
   
 ### <a name="token-name-resolution"></a>Tokenname Auflösung  
  In den meisten Fällen löst ein Token auf einen bestimmten Wert, unabhängig davon, in dem sie enthalten ist. Wenn das Token auf ein Paket oder eine Funktion verknüpft ist, hängt jedoch das Token-Wert, in dem sie enthalten ist. Beispielsweise ist eine Funktion ein, und klicken Sie dann das Token Packen `$SharePoint.Package.Name$` aufgelöst wird, auf den Wert "Paket a" Wenn die gleiche Funktion klicken Sie dann im Paket-B ist `$SharePoint.Package.Name$` zu "Paket b" aufgelöst.  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Diese Erweiterungen werden definiert, indem die `<TokenReplacementFileExtensions>` Element in der Datei Microsoft.VisualStudio.SharePoint.targets befindet sich in der... \\<-Programmdateien\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools Ordner.  
   
- Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Zu diesem Zweck fügen eine `<TokenReplacementFileExtensions>` Element jeder PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.  
+ Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Hinzufügen einer `<TokenReplacementFileExtensions>` Element jeder PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.  
   
 > [!NOTE]  
 >  Da tokenersetzung tritt auf, nachdem ein Projekt kompiliert ist, sollten Sie nicht für Dateitypen, die kompiliert werden, z. B. cs,. vb oder RESX-Erweiterungen hinzufügen. Token werden nur in Dateien ersetzt, die nicht kompiliert werden.  
   
- Beispielsweise würden Sie zum Hinzufügen der Datei Name Extensions ".myextension" und ".yourextension" zur Liste der Dateinamenerweiterungen tokenersetzung Folgendes in einer CSPROJ-Datei hinzufügen:  
+ Um die Datei namens Extensions ".myextension" und ".yourextension" die Liste der Dateinamenerweiterungen tokenersetzung hinzuzufügen, fügen Sie beispielsweise Folgendes verwenden, um eine `.csproj` Datei:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Alternativ können Sie die Erweiterung direkt an die TARGETS-Datei hinzufügen. Allerdings auf diese Weise die Liste der Erweiterungen für alle SharePoint-Projekte, die nicht nur auf dem lokalen System verpackt ändert eigene. Dies kann praktisch sein, wenn Sie der einzige Entwickler im System sind oder Großteil Ihrer Projekte erforderlich. Jedoch hinzugefügt werden, da es systemspezifische ist, diese Vorgehensweise nicht sehr leicht portieren ist und aus diesem Grund empfohlen, die wird Sie alle Erweiterungen an der Projektdatei stattdessen.  
+ Sie können die Erweiterung direkt an die TARGETS-Datei hinzufügen. Allerdings auf diese Weise die Liste der Erweiterungen für alle SharePoint-Projekte, die nicht nur auf dem lokalen System verpackt ändert eigene. Dies kann praktisch sein, wenn Sie der einzige Entwickler im System sind oder Großteil Ihrer Projekte erforderlich. Jedoch hinzugefügt werden, da es systemspezifische ist, diese Vorgehensweise nicht sehr leicht portieren ist und aus diesem Grund empfohlen, die wird Sie alle Erweiterungen an der Projektdatei stattdessen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  

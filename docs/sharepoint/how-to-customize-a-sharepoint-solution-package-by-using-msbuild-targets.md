@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90358624f5de8fc7c90e3424f04617acab4388a4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Gewusst wie: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Zielen
   Mithilfe von MSBuild-Ziele an der Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien (.wsp) erstellt. Beispielsweise können Sie anpassen, die MSBuild-Eigenschaften zum Ändern der Verpackung Zwischenverzeichnis befinden und die MSBuild-Element-Gruppen, die aufgelisteten Dateien angeben.  
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Öffnen eines Editors, z. B. Notepad, und fügen Sie den folgenden Code hinzu.  
   
-    ```  
+    ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <Target Name="BeforeLayout">  
         <Message Importance="high" Text="In the BeforeLayout Target"></Message>  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Nach der `Import` Zeile am Ende der Projektdatei, fügen Sie die folgende Zeile hinzu.  
   
-    ```  
+    ```xml  
     <Import Project="CustomLayout.SharePoint.targets" />  
     ```  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Kurz vor dem Ausführen der `</Project>` zu kennzeichnen, fügen Sie den folgenden Code hinzu:  
   
-    ```  
+    ```xml  
     <Target Name="AfterLayout">  
       <Message Importance="high" Text="In the AfterLayout Target"></Message>  
     </Target>  

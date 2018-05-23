@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xml-editor"></a>XML-editor
 
@@ -53,11 +53,8 @@ Die [XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md) erstellt ausführ
 
 Die [XSLT-hierarchietool](../xml-tools/walkthrough-using-xslt-hierarchy.md) können Sie Haltepunkte in eingeschlossenen Stylesheets und/oder integrierten Vorlagenregeln hinzufügen.
 
-## <a name="related-sections"></a>Verwandte Abschnitte
-
-- [Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md) enthält Informationen zu den Text-Editor.
-- [Referenzen zu XML-Standards](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) enthält Informationen zu XML-Technologien, einschließlich XML, Document Type Definition (DTD), XML Schema Definition Language (XSD) und XSLT.
-
 ## <a name="see-also"></a>Siehe auch
 
+- [Funktionen im Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md) enthält Informationen zu den Text-Editor.
+- [Referenzen zu XML-Standards](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) enthält Informationen zu XML-Technologien, einschließlich XML, Document Type Definition (DTD), XML Schema Definition Language (XSD) und XSLT.
 - [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
