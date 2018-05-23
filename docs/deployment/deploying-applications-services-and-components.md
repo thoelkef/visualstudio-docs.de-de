@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Uns zunächst an die Bereitstellung in Visual Studio
 
@@ -86,6 +86,8 @@ In Visual Studio können Sie app-Pakete für die Bereitstellung in Microsoft Sto
     ![Desktop-bridge](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Erstellen Sie ein Installationspaket (Windows-Client)
+
+Wenn Sie mehr über eine komplexe Installation einer desktop-Anwendung als benötigen [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) bereitstellen können, können Sie ein Installationspaket, ein Setup-Projekt oder einer benutzerdefinierten Bootstrapper erstellen.
 
 - Ein Installer MSI-basierte WiX kann erstellt werden, mithilfe der [WiX-Toolset 2017 Erweiterung für Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

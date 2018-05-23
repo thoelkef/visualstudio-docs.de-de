@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen von Variablen in der "Auto" und "lokal" Fenstern in Visual Studio
 Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr hilfreich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  
@@ -28,9 +28,9 @@ Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Deb
 Wenn Sie weitere Informationen zu den Grundlagen des Debuggens benötigen, lesen Sie [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Betrachten von Objekten in den Fenstern „Auto“ und „Lokal“  
-Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Dies ist ein Beispiel für ein [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) -Objekt im Fenster **Lokal** :  
+Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Hier ist ein Beispiel für eine [FileStream](/dotnet/api/system.io.filestream) Objekt in der **"lokal"** Fenster:  
   
-!["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png ""lokal" FileStream")  
+!["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png "\"lokal\" FileStream")  
   
 ## <a name="bkmk_whatvariables"></a> Welche Variablen werden im Fenster „Auto“ angezeigt?  
  Sie können das Fenster **Auto** für C#-, Visual Basic- und C++-Code verwenden. Das Fenster **Auto** unterstützt weder JavaScript noch F#-.  
@@ -50,7 +50,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `c = 3`festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
 
- !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png ""Auto" CSharp")  
+ !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png "\"Auto\" CSharp")  
 
  `c` hat den Wert 0, weil die Zeile `c = 3` noch nicht ausgeführt wurde.  
 
@@ -70,7 +70,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `e = 5;` festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
   
- !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png ""Auto" Cplus")  
+ !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png "\"Auto\" Cplus")  
   
  Sie sehen, dass die Variable „e“ nicht initialisiert ist. Dies liegt daran, dass der Code in der Zeile `e = 5;` noch nicht ausgeführt wurde.  
   

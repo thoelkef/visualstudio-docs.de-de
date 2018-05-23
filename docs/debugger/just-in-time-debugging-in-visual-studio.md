@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Vorgehensweise: Reagieren auf das Just-in-Time-Debugger
 
@@ -25,7 +25,7 @@ Die Aktionen, die Sie durchführen soll, wenn Sie das Just-in-Time finden Sie un
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Wenn Sie zu beheben oder den Fehler (Visual Studio-Benutzer) debuggen möchten
 
-- Sie benötigen [Visual Studio installiert](https://www.microsoft.com/en-us/download/details.aspx?id=48146) um die ausführlichen Informationen zu diesem Fehler anzuzeigen und zu debuggen. Weitere Informationen finden Sie unter [mithilfe der Just-in-Time-Debugger Debuggen](../debugger/debug-using-the-just-in-time-debugger.md). Wenn Sie nicht den Fehler beheben, und beheben Sie die app, wenden Sie sich an den Besitzer der app zum Beheben des Fehlers.
+- Sie benötigen [Visual Studio installiert](http://www.visualstudio.com) um die ausführlichen Informationen zu diesem Fehler anzuzeigen und zu debuggen. Weitere Informationen finden Sie unter [mithilfe der Just-in-Time-Debugger Debuggen](../debugger/debug-using-the-just-in-time-debugger.md). Wenn Sie nicht den Fehler beheben, und beheben Sie die app, wenden Sie sich an den Besitzer der app zum Beheben des Fehlers.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Wenn Sie, dass das Just-in-Time-Debugger-Dialogfeld angezeigt wird verhindern möchten
 
