@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Debuggen von SharePoint-Lösungen
   SharePoint-Lösungen können mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers gedebuggt werden. Beim Starten des Debuggens, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektdateien auf dem SharePoint-Server bereitgestellt, und klicken Sie dann eine Instanz der SharePoint-Website im Webbrowser geöffnet. In den folgenden Abschnitte wird erklärt, wie SharePoint-Anwendungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gedebuggt werden.  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Wenn Sie Workflowprojekte debuggen, fügt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Workflowvorlage (abhängig von deren Typ) einer Bibliothek oder einer Liste hinzu. Sie können dann die Workflowvorlage manuell oder durch Hinzufügen oder Aktualisieren eines Elements starten. Anschließend können Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwenden, um den Workflow zu debuggen.  
   
 > [!NOTE]  
->  Wenn Sie anderen Assemblys Verweise hinzufügen, stellen Sie sicher, dass diese Assemblys im globalen Assemblycache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]) installiert werden. Andernfalls tritt bei der Workflowlösung ein Fehler auf. Informationen zum Installieren von Assemblys finden Sie unter [manuell starten eines Workflows für ein Dokument oder Element](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Wenn Sie anderen Assemblys Verweise hinzufügen, stellen Sie sicher, dass diese Assemblys im globalen Assemblycache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]) installiert werden. Andernfalls tritt bei der Workflowlösung ein Fehler auf. Informationen zum Installieren von Assemblys finden Sie unter [manuell starten eines Workflows für ein Dokument oder Element](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Der Workflow wird jedoch nicht vom Bereitstellungsprozess gestartet. Der Workflow muss von der SharePoint-Site gestartet werden. Der Workflow kann auch mithilfe einer Clientanwendung wie Microsoft Office Word 2010 oder mithilfe eines gesonderten serverseitigen Codes gestartet werden. Verwenden Sie eine der im angegebenen Ansätze der **Assistent zum Anpassen von SharePoint**.  
   
- Wenn Sie beispielsweise angegeben haben, dass der Workflow manuell gestartet werden kann, starten Sie den Workflow direkt vom Element in der Bibliothek oder der Liste. Weitere Informationen zum manuellen Starten eines Workflows finden Sie unter [starten ein Workflows auf einem Dokumentelement](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Wenn Sie beispielsweise angegeben haben, dass der Workflow manuell gestartet werden kann, starten Sie den Workflow direkt vom Element in der Bibliothek oder der Liste. Weitere Informationen zum manuellen Starten eines Workflows finden Sie unter [starten ein Workflows auf einem Dokumentelement](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Debuggen von Funktionsereignisempfängern  
  Wenn Sie eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-SharePoint-Anwendung ausführen, werden deren Funktionen standardmäßig automatisch auf dem SharePoint-Server aktiviert. Dies verursacht jedoch Probleme, wenn Sie Funktionsereignisempfänger debuggen, da bei eine Funktion, durch aktiviert ist [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], in einem anderen Prozess als der Debugger ausgeführt wird. Dies bedeutet, dass einige Debugfunktionen, z. B. Haltepunkte, nicht ordnungsgemäß funktionieren.  
