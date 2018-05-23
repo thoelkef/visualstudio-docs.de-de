@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen sowie die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst auch die **Assistent zum Anpassen von SharePoint**, damit die erstellen und Konfigurieren von Workflows.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Workflows in SharePoint  
  Wenn Sie einen Workflow zu einer SharePoint-Bibliothek oder Liste hinzufügen, erzwingen Sie einen Geschäftsprozess für alle Elemente in der Liste oder Bibliothek an. Ein Workflow beschreibt die Aktionen, die vom System oder Benutzer ausführen müssen, für jedes Element, wie etwa das Versenden des Elements bearbeitet und anschließend überprüft werden. Diese Aktionen, die genannte *Aktivitäten*, sind die Bausteine des Workflows.  
   
- Sie können im SharePoint-Workflows erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und für eine SharePoint-Website bereitstellen. Nachdem ein Workflow in SharePoint bereitgestellt wird, ordnen Sie es mit einer Bibliothek oder der Liste ein. Es kann dann automatisch von einem Prozess oder manuell von einem Benutzer gestartet werden. Weitere Informationen zu Workflowvorgang, finden Sie unter [mithilfe von Workflows zum Verwalten von Prozessen](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Sie können im SharePoint-Workflows erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und für eine SharePoint-Website bereitstellen. Nachdem ein Workflow in SharePoint bereitgestellt wird, ordnen Sie es mit einer Bibliothek oder der Liste ein. Es kann dann automatisch von einem Prozess oder manuell von einem Benutzer gestartet werden. Weitere Informationen zu Workflowvorgang, finden Sie unter [Entwickeln von SharePoint-Workflows, die mit Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Erstellen von benutzerdefinierten SharePoint-Workflows  
  Zwei SharePoint-Workflowprojekte stehen Ihnen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **sequenzieller Workflow** und **Zustandsautomatenworkflow**.  

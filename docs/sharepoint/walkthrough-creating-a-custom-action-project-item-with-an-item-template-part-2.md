@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und ordnen es mit einer Elementvorlage in Visual Studio, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, Informationen von Benutzern sammeln, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Debuggen und Testen des Assistenten  
   
 > [!NOTE]  
->  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [Projektdateien für Erweiterbarkeit Exemplarische Vorgehensweisen zu SharePoint-Tools](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Sie können aus einem Beispiel herunterladen [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) veranschaulicht, wie benutzerdefinierte Aktivitäten für einen Workflow zu erstellen.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zuerst die Projektmappe CustomActionProjectItem abschließen, indem erstellen [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
