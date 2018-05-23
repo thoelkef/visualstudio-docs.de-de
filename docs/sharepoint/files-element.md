@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d75041c1b0202eecd5769773efbcfce9c53ec4ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15d771a53c0fb364aa363db8b6709257f41b9188
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="files-element"></a>Files-Element
   Gibt die Dateien, die mit der SharePoint-Projektelement, z. B. featuredateien-Element und die Ausgabe der abhängigen nicht-SharePoint-Projekten bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Files>  
   <ProjectItemFile.../>  
   <ProjectOutputFile.../>  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dies ist das erforderliche Stammelement der SPDATA-Datei.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dieses Element das erforderliche Stammelement von der `.spdata` Datei.|  
   
 ## <a name="element-information"></a>Elementinformationen  
   

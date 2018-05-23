@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Verwenden von Modulen zum Einfügen von Dateien in die Projektmappe
   Möglicherweise gibt es Zeiten, wenn Sie Dateien auf dem SharePoint-Server unabhängig von deren Dateityp, z. B. neue Gestaltungsvorlagen bereitstellen möchten. Zu diesem Zweck können Sie *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Codemodule). Module sind Container für Dateien in einer SharePoint-Lösung. Wenn die Lösung bereitgestellt wird, werden die Dateien in das Modul für die angegebenen Ordner auf dem SharePoint-Server kopiert.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  Hier ist ein Beispiel der Datei "Elements.xml" für ein Modul:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
     <Module Name="Module1">  

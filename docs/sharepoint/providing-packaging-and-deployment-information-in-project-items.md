@@ -29,11 +29,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0c12c01566011ed93d83cd9ecc0dd417edd0b1b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen
   Alle SharePoint-Projektelemente im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, die Sie verwenden können, um zusätzliche Daten bereitzustellen, wenn das Projekt für SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
  Wenn Sie ein Projektelement Wert einer Funktion hinzufügen, wird der Wert als ein Element in das Manifest der Funktion für das Element hinzugefügt. In einem Business Data Connectivity (BDC) Modellprojekt z. B. die ModelFileName Funktionseigenschaft folgendermaßen angezeigt:  
   
-```  
+```xml  
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />   
 ```  
   

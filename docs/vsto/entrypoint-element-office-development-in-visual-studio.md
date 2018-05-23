@@ -1,5 +1,5 @@
 ---
-title: '&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio) | Microsoft Docs'
+title: '&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio)
   Durch jedes `entryPoint` -Element im `vstav3` -Namespace wird eine Anpassungsassembly gekennzeichnet, die bei Installation dieser [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendung ausgeführt werden sollte.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <entryPoint class>  
     <assemblyIdentity />  
 </entryPoint>  
@@ -55,11 +55,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
   
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht `entryPoint` -Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht `entryPoint` -Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstav3:entryPoint   
   class="ContosoExcelWorkbook.ThisWorkbook">  
   <assemblyIdentity   
@@ -94,14 +94,14 @@ ms.lasthandoff: 04/16/2018
 </vstav3:entryPoint>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-In  
+## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
   
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht ein `entryPoint` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht ein `entryPoint` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml
 <vstav3:entryPoint   
   class="ContosoOutlookAddIn.ThisAddIn">  
   <assemblyIdentity   
@@ -113,7 +113,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest)  
   

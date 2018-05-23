@@ -1,5 +1,5 @@
 ---
-title: GetAutoInsertExtensions-Methode | Microsoft Docs
+title: GetAutoInsertExtensions-Methode
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions-Methode
   Ruft Informationen zu den apps für Office, die während des Debuggens automatisch eingefügt werden sollen.  
@@ -26,13 +26,13 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameter  
+### <a name="parameters"></a>Parameter  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
@@ -42,6 +42,6 @@ HRESULT GetAutoInsertExtensions(
  Ein HRESULT-Wert, der angibt, ob die Methode erfolgreich abgeschlossen wurde.  
   
 ## <a name="remarks"></a>Hinweise  
- Jede app für Office einzufügenden wird als einen Erweiterungsnamen der Office-Anwendung zurückgegeben, die auf einen Wert unter HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer entspricht. Der Host muss diese Werte in der Registrierung suchen, und fügen Sie dann die Erweiterungen automatisch.  
+ Jede app für Office einzufügenden wird zurückgegeben, wie ein Office-Anwendung Erweiterungsname, der auf einen Wert unter entspricht **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Der Host muss diese Werte in der Registrierung suchen, und fügen Sie dann die Erweiterungen automatisch.  
   
   

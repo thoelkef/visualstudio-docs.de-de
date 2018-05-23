@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Gewusst wie: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben
   Sie können zu erstellen, bereinigen und überprüfen ein SharePoint-Paket (.wsp) mithilfe von Befehlszeilen MSBuild-Aufgaben auf einem Entwicklungscomputer. Diese Befehle können auch um während des Erstellungsprozesses mithilfe von Team Foundation Server auf einem Buildcomputer zu automatisieren.  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Geben Sie den folgenden Befehl zum Erstellen eines Pakets für das Projekt aus. Ersetzen Sie *ProjectFileName* mit dem Namen des Projekts.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      Beispielsweise könnten Sie die folgenden Befehle auf einem SharePoint-Projekt namens "ListDefinition1" Paket ausführen.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Geben Sie den folgenden Befehl aus, um ein Paket für das Projekt zu bereinigen. Ersetzen Sie *ProjectFileName* mit dem Namen des Projekts.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      Beispielsweise könnten Sie die folgenden Befehle auf einem SharePoint-Projekt namens ListDefinition1 bereinigen ausführen.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Geben Sie den folgenden Befehl zum Überprüfen von Paketen für das Projekt aus. Ersetzen Sie *ProjectFileName* mit dem Namen des Projekts.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      Beispielsweise könnten Sie die folgenden Befehle auf einem SharePoint-Projekt namens ListDefinition1 überprüfen ausführen.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Geben Sie den folgenden Befehl zum Festlegen einer Eigenschaft in ein Paket für das Projekt aus. Ersetzen Sie *PropertyName* mit der Eigenschaft, die Sie festlegen möchten.  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      Beispielsweise können Sie den folgenden Befehl aus, um die Warnstufe festlegen ausführen.  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

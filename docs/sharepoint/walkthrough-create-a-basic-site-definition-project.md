@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegenden Websitedefinition erstellt, die ein visuelles Webpart mit einigen Steuerelementen enthält. Aus Gründen der Übersichtlichkeit weist das visuelle Webpart, das Sie erstellen nur wenige Steuerelemente. Allerdings können Sie komplexere Websitedefinitionen für SharePoint erstellen, die weitere Funktionen enthalten.  
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Fügen Sie am unteren Rand VisualWebPart1.ascx, das folgende Markup zum Hinzufügen von drei Steuerelementen zum Formular: ein Textfeld, eine Schaltfläche und eine Bezeichnung:  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Öffnen Sie die Seite "default.aspx", und fügen Sie dann die folgende Zeile unter der `WebPartPages` Tag:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Nach der `</asp:Content>` Element ersetzen den gesamten `ContentPlaceHolderId="PlaceHolderMain"` Abschnitt und seines Inhalts durch den folgenden Code:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

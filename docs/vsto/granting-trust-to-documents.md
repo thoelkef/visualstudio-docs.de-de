@@ -1,5 +1,5 @@
 ---
-title: Gewähren von Vertrauenswürdigkeit für Dokumente | Microsoft Docs
+title: Gewähren von Vertrauenswürdigkeit für Dokumente
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Granting Trust to Documents
+# <a name="grant-trust-to-documents"></a>Gewähren von Vertrauenswürdigkeit für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -34,20 +34,20 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen über das Trust Center finden Sie unter [Sicherheitsrichtlinien und-Einstellungen unter Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Weitere Informationen zum Erstellen, verwalten, entfernen und Konfigurieren von vertrauenswürdigen Ordnern finden Sie unter [vertrauenswürdige Speicherorte und Einstellungen für vertrauenswürdige Herausgeber in 2007 Office System konfigurieren](http://go.microsoft.com/fwlink/?LinkId=89203) und [erstellen, entfernen oder Ändern einer vertrauenswürdigen Speicherort für Ihre Dateien](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
-## <a name="security-considerations-for-office-solutions"></a>Überlegungen zur Sicherheit von Office-Projektmappen  
+## <a name="security-considerations-for-office-solutions"></a>Sicherheitsüberlegungen für Office-Projektmappen  
  Es gibt mehrere Sicherheitsaspekte, wenn man überlegt, welche Ordner den vertrauenswürdigen Speicherorten hinzugefügt werden sollen:  
   
 -   Lokale Ordner werden als sicherer und implizit vertrauenswürdig betrachtet. Remotespeicherorte, wie beispielsweise Dateifreigaben, müssen als vertrauenswürdige Speicherorte festgelegt werden.  
   
--   Wenn Sie den vertrauenswürdigen Speicherorten ein Verzeichnis hinzufügen, wird auf diese Weise nicht nur den Office-Projektmappen, sondern auch dem VBA- und ActiveX-Code die volle Vertrauenswürdigkeit gewährt. Aus diesem Grund dürfen das Stammverzeichnis und die Ordner "Eigene Dateien" nicht als vertrauenswürdig festgelegt werden.  
+-   Wenn Sie den vertrauenswürdigen Speicherorten ein Verzeichnis hinzufügen, wird auf diese Weise nicht nur den Office-Projektmappen, sondern auch dem VBA- und ActiveX-Code die volle Vertrauenswürdigkeit gewährt. Aus diesem Grund ist das Stammverzeichnis und die *eigene* Ordner sollte nicht festgelegt werden als vertrauenswürdig eingestuft.  
   
--   Obwohl das Dokument selbst durch die Verwendung der vertrauenswürdigen Speicherorte vertrauenswürdig ist, sind zusätzliche Berechtigungen erforderlich, damit die Anpassung als vertrauenswürdig eingestuft wird. Sie können der Anpassung volle Vertrauenswürdigkeit gewähren, indem Sie das Signieren der Manifeste mit einem Zertifikat verwenden, durch Klicken auf die vertrauenswürdige Eingabeaufforderung oder durch Installieren der Office-Projektmappe im Verzeichnis "Programme".  
+-   Obwohl das Dokument selbst durch die Verwendung der vertrauenswürdigen Speicherorte vertrauenswürdig ist, sind zusätzliche Berechtigungen erforderlich, damit die Anpassung als vertrauenswürdig eingestuft wird. Sie können der Anpassung volle Vertrauenswürdigkeit gewähren, Signieren der Manifeste mit einem Zertifikat, klicken Sie auf die vertrauenswürdige Eingabeaufforderung oder installieren die Office-Lösung mit der *Programmdateien* Verzeichnis.  
   
 -   Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md)   
- [Problembehandlung bei Office-Projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
+ [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
   
   

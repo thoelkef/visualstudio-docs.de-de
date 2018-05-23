@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08f981c5dbbf5ae380e782c03553a8f249f41e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99235ad0852ab211a93fa2241d0d86ccb2fd8b51
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="safecontrols-element"></a>SafeControls-Element
-  Stellt eine Auflistung von ASPX-Steuerelementen und Webparts, die als sichere für alle Benutzer Zugriff auf alle ASPX-Seite auf der SharePoint-Website festgelegt werden.  
+  Eine Auflistung von ASPX-Steuerelemente und Webparts, die für alle Benutzer Zugriff auf alle ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <SafeControls>  
   <SafeControl.../>  
 </SafeControls>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dies ist das erforderliche Stammelement der SPDATA-Datei.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dieses Element das erforderliche Stammelement von der `.spdata` Datei.|  
   
 ## <a name="remarks"></a>Hinweise  
  Weitere Informationen zu sicheren Steuerelementen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  

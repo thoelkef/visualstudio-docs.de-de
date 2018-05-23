@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d28d178e5592d9cdf6d4aba6f642a869c12cc78f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Gewusst wie: Erstellen einer Masterseite oder eines Designs
   Sie können Seiten auf der SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und dann importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 10. Ersetzen Sie das vorhandene Modulmarkup für eine Gestaltungsvorlage durch Folgendes Markup.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/masterpage">  
         <File Path="[Module Name]\[Master Page Name].master"   
           Url="[Master Page Name].master" Type="GhostableInLibrary" />  
@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
      Ersetzen Sie das vorhandene Modulmarkup für ein Design durch Folgendes Markup.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/theme"   
         <File Path="[Module Name]\[Theme Name].thmx" Url="[Theme     
           Name].thmx" Type="GhostableInLibrary" />  

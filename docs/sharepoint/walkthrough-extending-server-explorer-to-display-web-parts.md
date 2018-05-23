@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern des Server-Explorers für die Anzeige von Webparts
   In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten **Server-Explorer** , Komponenten für SharePoint-Websites anzuzeigen. Allerdings **Server-Explorer** einige Komponenten nicht standardmäßig angezeigt. In dieser exemplarischen Vorgehensweise verlängern **Server-Explorer** , damit sie den Webpartkatalog auf zeigt jeweils die SharePoint-Website verbunden.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wählen Sie am oberen Rand des Dialogfelds, **.NET Framework 3.5** in der Liste der Versionen von .NET Framework.  
   
-4.  
-  
-5.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**, nennen Sie das Projekt **WebPartCommands**, und wählen Sie dann die **OK** Schaltfläche.  
+4.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**, nennen Sie das Projekt **WebPartCommands**, und wählen Sie dann die **OK** Schaltfläche.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **WebPartCommands** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
   
-6.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
+5.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
   
 ## <a name="configuring-the-projects"></a>Konfigurieren der Projekte  
  Vor dem Schreiben von Code zum Erstellen der Erweiterung müssen Sie Codedateien und Assemblyverweise hinzufügen und Konfigurieren der Einstellungen für Projektdateien.  

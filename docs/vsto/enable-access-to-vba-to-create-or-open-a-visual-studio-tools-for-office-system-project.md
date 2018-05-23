@@ -1,6 +1,6 @@
 ---
 title: Aktivieren des Zugriffs auf VBA erstellen oder Öffnen ein Visual Studio-Tools für Microsoft Office System-Projekt
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Aktivieren des Zugriffs auf VBA erstellen oder Öffnen ein Visual Studio-Tools für Microsoft Office System-Projekt
 
@@ -47,7 +47,7 @@ Sie müssen explizit Zugriff auf das Visual Basic for Applications (VBA)-Projekt
 
  Sie können die Office-Installation reparieren, wenn VBA- oder COM-Fehler angezeigt werden.
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>So aktivieren oder deaktivieren Sie den Zugriff auf Visual Basic-Projekte
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>So aktivieren oder deaktivieren den Zugriff auf Visual Basic-Projekte
 
 1. Klicken Sie auf die Registerkarte **Datei** .
 
@@ -61,7 +61,7 @@ Sie müssen explizit Zugriff auf das Visual Basic for Applications (VBA)-Projekt
 
 6. Klicken Sie auf **OK**.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>So aktivieren oder deaktivieren den Zugriff auf Visual Basic-Projekte mit 2007 Microsoft Office system
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>So aktivieren oder deaktivieren den Zugriff auf Visual Basic-Projekte, 2007 Microsoft Office System
 
 1. Auf der **Tools** Menü in Word oder Excel, zeigen Sie auf **Makro**, und klicken Sie dann auf **Sicherheit**.
 

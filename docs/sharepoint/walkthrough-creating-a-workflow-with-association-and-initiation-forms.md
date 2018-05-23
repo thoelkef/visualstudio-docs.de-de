@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen
   Diese exemplarische Vorgehensweise veranschaulicht die Erstellung ein grundlegenden sequenziellen Workflows, das die Verwendung von Zuordnungs-und Initiierungsformularen integriert. Hierbei handelt es sich um ASPX-Formulare, die Parameter eines Workflows hinzugefügt werden, wenn es zuerst vom SharePoint-Administrator (Form Zuordnung) zugewiesen ist und der Workflow gestartet wird, vom Benutzer (Initiierung Form) aktivieren.  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Fügen Sie direkt nach der ersten Zeile in diesem Inhaltselement den folgenden Code zum Erstellen, eine Bezeichnung und ein Textfeld, das für die Ausgaben genehmigungsgrenzwert auffordert (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Direkt nach der ersten Zeile in diesem Inhaltselement, fügen Sie folgenden Code zum Erstellen einer Bezeichnung und ein Textfeld, das die Ausgaben genehmigungsgrenzwert anzeigt (*AutoApproveLimit*), die im Zuordnungsformular und eine andere Bezeichnung eingegeben wurde und Textfeld für die Gesamtausgaben aufgefordert (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

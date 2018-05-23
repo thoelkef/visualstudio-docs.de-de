@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6af9ef6114a3ac187c50d17f16c39c89b08370dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: daea134298e84e7ddddf419da2124924fe9ef121
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Gewusst wie: Einschließen von Dateien mithilfe eines Moduls
   *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, mit denen Sie z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen können.  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Für alle Dateien, die in einer Dokumentbibliothek angezeigt werden sollen, fügen die `Type="GhostableInLibrary"` -Attributs auf ihren Eintrag in der Datei "Elements.xml". Ein auf ein Objekt angewendeter  
   
-    ```  
+    ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
     ```  
   

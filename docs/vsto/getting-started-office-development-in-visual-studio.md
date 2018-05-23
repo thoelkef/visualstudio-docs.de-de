@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte (Office-Entwicklung in Visual Studio) | Microsoft Docs
+title: Abrufen Sie gestarteten (Office-Entwicklung in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 194e98578125a41c1db5d54b4b9d4e5767c27a9a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="getting-started-office-development-in-visual-studio"></a>Erste Schritte (Office-Entwicklung in Visual Studio)
+# <a name="get-started-office-development-in-visual-studio"></a>Abrufen Sie gestarteten (Office-Entwicklung in Visual Studio)
   Dieser Abschnitt enthält Themen, anhand derer Sie die ersten Schritte mit Microsoft Office Developer Tools in Visual Studio ausführen können.  
   
 > [!NOTE]  
@@ -31,25 +31,25 @@ ms.lasthandoff: 04/16/2018
  [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Bietet Hintergrundinformationen zum Entwickeln von Office-Projektmappen in Visual Studio.  
   
- [Änderungen am Entwurf von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 ausgerichtet sind](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+ [Änderungen am Entwurf von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
  Beschreibt den neuen Entwurf von Office-Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, und listet wichtige Änderungen für den Code in Office-Projekten auf, die Sie zu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher migrieren.  
   
- [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md)  
+ [Geben Sie verfügbare Funktionen nach Office-Anwendung und Projekt](../vsto/features-available-by-office-application-and-project-type.md)  
  Hier wird beschrieben, welche Anwendungen und Projekte für die Verwendung der Office-Entwicklungsfunktionen erforderlich sind: Erweiterbarkeit des Menübands, benutzerdefinierte Aufgabenbereiche, Aktionsbereiche und Formularbereiche.  
   
  [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
  Bietet Informationen und Schritt-für-Schritt-Anweisungen zum Installieren der Office-Entwicklungstools, der Laufzeit, mit der Office-Projektmappen auf Endbenutzercomputern ausgeführt werden, sowie der primären Interopassemblys von Office.  
   
- [Erste Schritte beim Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+ [Abrufen Sie gestarteten Programms von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
  Enthält eine Zusammenfassung wichtiger Konzepte, die Sie zum Erstellen von Anpassungen auf Dokumentebene für Excel mit Visual Studio benötigen.  
   
- [Erste Schritte: Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
+ [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
  Enthält eine Zusammenfassung wichtiger Konzepte, die Sie zum Erstellen von Anpassungen auf Dokumentebene für Word mit Visual Studio benötigen.  
   
- [Erste Schritte: Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
  Enthält eine Zusammenfassung wichtiger Konzepte, die Sie zum Erstellen von Visual Studio-Tools für Office (VSTO)-Add-Ins auf Anwendungsebene für Microsoft Office-Anwendungen benötigen.  
   
- [Vergleich von VBA- und Office-Projektmappen in Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
+ [VBA- und Office-Projektmappen in Visual Studio, die im Vergleich](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  Hierin werden die relativen Vorteile von Visual Basic for Applications und der Office-Entwicklungstools von Visual Studio beim Entwickeln von Microsoft Office-Lösungen beschrieben.  
   
  [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
  Enthält Links zu Beispielanwendungen und Themen, die Schritt-für-Schritt-Anweisungen für häufige Aufgaben enthalten  
   
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
- Beschreibt die Komponenten von Office-Projektmappen und deren Funktionsweise zur Entwurfszeit und zur Laufzeit.  
+ Beschreibt die Komponenten von Office-Projektmappen und deren Funktionsweise zur Entwurfszeit und Laufzeit.  
   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
  Bietet Informationen zum Erstellen eines Office-Projekts und zum Konfigurieren des Projekts in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/16/2018
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
  Enthält Informationen zum Bereitstellen von Office-Projektmappen für Benutzer und beschreibt wichtige Aspekte, die beim Auswählen der Bereitstellungsmethode und beim Festlegen der Sicherheitseinstellungen zu berücksichtigen sind.  
   
- [Technische Artikel und Videos für Visual Studio-Tools für Office](http://go.microsoft.com/fwlink/?LinkID=106640)  
+ [Visual Studio-Tools für Office technische Artikel und Visual-wie-Videos](http://go.microsoft.com/fwlink/?LinkID=106640)  
  Enthält Links auf Videos und technische Artikel zu mit Visual Studio erstellten Office-Projektmappen.  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Allgemeine Referenz (Office-Entwicklung in Visual Studio) | Microsoft Docs
+title: Allgemeine Referenz (Office-Entwicklung in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91c8f8003f610e9cf4aa440fa0175bb13267896e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Allgemeine Referenz (Office-Entwicklung in Visual Studio)
   Dieser Abschnitt enthält technische Details zu Microsoft Office-Projekten in Visual Studio.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 >  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Primäre Interopassemblys in Office](../vsto/office-primary-interop-assemblies.md)  
+ [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)  
  Listet die primären Interop-Assemblys, die mit Office installiert und enthält eine kurze Beschreibung der einzelnen an.  
   
  [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)  
