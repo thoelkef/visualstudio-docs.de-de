@@ -1,6 +1,6 @@
 # Übersicht
 ## [Zugreifen auf Daten in Visual Studio](accessing-data-in-visual-studio.md)
-# Lernprogramme
+# Tutorials
 ## [Erstellen einer einfachen Daten-App mit ADO.NET](create-a-simple-data-application-by-using-adonet.md)
 ## [Erstellen einer einfachen Daten-App mit WPF und Entity Framework](create-a-simple-data-application-with-wpf-and-entity-framework-6.md)
 ## [Verbinden mit Daten aus einer C++-App](visual-studio-data-tools-for-cpp.md)
@@ -94,7 +94,7 @@
 ### [Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 ## [Aktualisieren von MDF-Dateien](upgrade-dot-mdf-files.md)
 ## [Beheben von Datenzugriffsfehlern](additional-resources-for-troubleshooting-data-access-errors.md)
-# Verweis
+# Referenz
 ## O/R-Designer (Linq to SQL)
 ### [DataContext-Methoden](datacontext-methods-o-r-designer.md)
 ### [Datenklassenvererbung](data-class-inheritance-o-r-designer.md)
