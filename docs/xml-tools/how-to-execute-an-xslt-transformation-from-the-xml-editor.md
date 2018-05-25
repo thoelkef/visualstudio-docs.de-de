@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Gewusst wie: Ausführen einer XSLT-Transformation im XML-Editor
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Vorgehensweise: Ausführen eine XSLT-Transformation im XML-Editor
 
 Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, die Transformation ausführen und die Ausgabe anzeigen. Die aus der XSLT-Transformation resultierende Ausgabe wird in einem neuen Dokumentfenster angezeigt.
 
-Die **Ausgabe** Eigenschaft gibt den Dateinamen für die Ausgabe. Wenn die **Ausgabe** Eigenschaft leer ist, wird ein Dateiname in einem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf dem `xsl:output`-Element im Stylesheet and kann XML, TXT oder HTM sein.
+Die **Ausgabe** Eigenschaft gibt den Dateinamen für die Ausgabe. Wenn die **Ausgabe** Eigenschaft leer ist, wird ein Dateiname in einem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf der `xsl:output` -Element im Stylesheet and kann sein. *XML*,. *TXT* oder. *Htm*.
 
-Wenn die **Ausgabe** -Eigenschaft ein Dateiname mit einer HTM- oder HTML-Erweiterung der XSLT-Ausgabe wird in der Vorschau angezeigt mit [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Bei Dateien mit der Erweiterung XML wird beispielsweise von Visual Studio der XML-Editor verwendet.
+Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *HTML* -Erweiterung der XSLT-Ausgabe wird in der Vorschau angezeigten mit [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Wenn z. B. die Erweiterung der Ausgabedatei lautet. *Xml*, verwendet Visual Studio der XML-Editor.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>So führen Sie eine XSLT-Transformation in einem XML-Dokument aus
 

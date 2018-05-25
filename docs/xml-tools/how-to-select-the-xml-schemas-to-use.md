@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Gewusst wie: Auswählen der zu verwendenden XML-Schemas
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Auswählen der zu verwendenden XML-Schemas
 
-Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas" bereit. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.
+Der XML-Editor bietet einen Schemacache im Verzeichnis der *%InstallDir%\Xml\Schemas* Verzeichnis. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.
 
 Die **Schemas** Dokumenteigenschaft wird verwendet, um Wählen Sie eine oder mehrere XML-Schema Definition Language (XSD) Schemas verwenden. Sie können damit Schemas aus dem Schemacache auswählen oder ein Schema angeben, das sich nicht im Cache befindet.
 
-Die von Ihnen ausgewählten Schemas werden zusammen mit den anderen XML-Dokumenteigenschaften in der versteckten Projektmappen-Benutzeroptionendatei (.suo) abgespeichert. Daher müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.
+Die Schemas, die Sie angeben, werden in der versteckten Projektmappen Benutzer gespeichert (. *Suo*), zusammen mit anderen XML-Dokumenteigenschaften. Daher müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.
 
 > [!NOTE]
 > Der Editor kann mithilfe eines Inlineschemas oder eines Schemas, auf das von dem `xsd:schemaLocation`-Attribut verwiesen wird, die Validierung vornehmen. Weitere Informationen finden Sie unter [Validierung von XML-Dokumenten](../xml-tools/xml-document-validation.md).
 
-## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>So wählen Sie ein XML-Schema aus dem Schemacache aus
+## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Ein XML-Schema aus dem Schemacache auswählen
 
 1.  Öffnen Sie eine Datei im XML-Editor.
 
 2.  Klicken Sie im Eigenschaftenfenster Dokuments auf die Schaltfläche auf der **Schemas** Feld.
 
-     Die **XML-Schemas** Dialogfeld wird angezeigt. Im Dialogfeld werden alle Schemata mit einer XSD-Erweiterung im Schemacache (einschließlich Schemata, die in der Datei catalog.xml verwiesen wird), sowie alle Schemata, in der aktuellen Projektmappe geöffnet in Visual Studio verwiesen wird, eine `xsd:schemaLocation` -Attribut oder in verwiesen wird die **Schemas** Eigenschaft.
+     Die **XML-Schemas** Dialogfeld wird angezeigt. Das Dialogfeld listet alle Schemata mit ein. *Xsd* Erweiterung im Schemacache (einschließlich Schemata, auf die verwiesen wird der *catalog.xml* Datei), und auch alle Schemata, die in der aktuellen Projektmappe, die in Visual Studio geöffnet, in verwiesen wird eine `xsd:schemaLocation` Attribut, oder auf die verwiesen wird der **Schemas** Eigenschaft.
 
 3.  Wählen Sie Schemata zu Validierungszwecken aus, indem Sie eine der folgenden Methoden verwenden:
 
@@ -47,7 +47,7 @@ Die von Ihnen ausgewählten Schemas werden zusammen mit den anderen XML-Dokument
 
      Die Liste der ausgewählten Schemata wird zurück an kopiert die **Schemas** -Dokumenteigenschaft.
 
-## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>So fügen Sie dem Schemacache ein XML-Schema hinzu
+## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Der Schemacache ein XML-Schema hinzu
 
 1.  Klicken Sie im Eigenschaftenfenster Dokuments auf die Schaltfläche auf der **Schemas** Feld.
 

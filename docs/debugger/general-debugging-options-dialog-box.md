@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 Die **Extras > Optionen > Debugging > Allgemein** Seite können Sie die folgenden Optionen festlegen:  
@@ -94,11 +94,11 @@ Weist den Visual Studio-Debugger an, die Quelldateien aus den Quellservern abzur
 - **Quellserver für teilweise vertrauenswürdige Assemblys (nur verwaltet) zulassen**  
     Wenn die Quellserverunterstützung aktiviert ist, überschreibt diese Einstellung das Standardverhalten beim Nichtabrufen von Quellen für teilweise vertrauenswürdige Assemblys.  
 
-- **Unterstützung für Datenquellen Link aktivieren**  
+**Unterstützung für die Quelllink aktivieren**  
     Weist den Visual Studio-Debugger zum Herunterladen von Quelldateien nach PDB-Dateien, die Quelle Linkinformationen enthalten. Weitere Informationen zu Quelllink finden Sie unter der [Link Quellspezifikation](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Da die Quelllink Dateien, die über http oder Https heruntergeladen wird, stellen Sie sicher, dass Sie die PDB-Datei als vertrauenswürdig einstufen.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Markieren Sie bei Haltepunkten und aktueller Anweisung (nur C++) gesamte Zeile**  
 Wenn der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, wird die ganze Zeile hervorgehoben.  
@@ -129,13 +129,13 @@ Steuert die Richtung, in der Stapel, in angezeigt werden, der **parallele Stapel
 Ignoriert Racebedingungen, die erkannt wurden, während des Debuggens, wenn die Daten nicht geändert haben. Weitere Informationen finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md).  
   
 **Verwalteten Kompatibilitätsmodus verwenden**  
-Ersetzt das Standarddebugmodul durch eine Legacyversion, um die folgenden Szenarien zu ermöglichen:  
+Ersetzt die Standarddebug-Engine durch eine Legacyversion, um die folgenden Szenarien zu ermöglichen:  
   
 - Sie verwenden eine andere .NET Framework-Sprache als C#, VB oder F#, die einen eigenen Expression Evaluator bereitstellt (dies schließt C++/CLI mit ein).  
   
 - Sie möchten „Bearbeiten und Fortfahren“ für C++-Projekte beim Debuggen im gemischten Modus aktivieren.  
   
-Beachten Sie, dass durch Auswählen des verwalteten Kompatibilitätsmodus einige Funktionen deaktiviert werden, die nur im standardmäßigen Debugmodul implementiert werden. 
+Beachten Sie, dass durch Auswählen des verwalteten Kompatibilitätsmodus einige Funktionen deaktiviert werden, die nur in der standardmäßigen Debug-Engine implementiert werden. 
 
 **Verwenden Sie die älteren c# und VB-ausdrucksauswertungen**  
 Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.    
@@ -196,7 +196,7 @@ Zeigt ein Warnungsdialogfeld an, wenn der Debugger mit deaktiviertem Skriptdebug
 **Systemeigenen Kompatibilitätsmodus verwenden**  
 Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
   
-Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da das neue Debugmodul das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Beispielsweise legacymodul sind viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.
+Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Beispielsweise legacymodul sind viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/index.md)  

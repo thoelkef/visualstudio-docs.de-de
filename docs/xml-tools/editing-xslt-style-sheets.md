@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
+# <a name="edit-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 
 Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können die Vorteile der Standardfeatures des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Features, die die Entwicklung in XSLT erleichtern.
 
@@ -29,7 +29,7 @@ Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können 
 
  **Wellenförmige unterstreichungen**
 
- Der XML-Editor validiert mithilfe der installierten XSLT.XSD-Datei die XSLT-Stylesheets. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder -warnungen mit entsprechenden wellenförmigen Unterstreichungen.
+ Der XML-Editor verwendet die installierte *xslt.xsd* Datei zum Überprüfen der XSLT-Stylesheets. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder -warnungen mit entsprechenden wellenförmigen Unterstreichungen.
 
  **Unterstützung von Skriptblöcken**
 
@@ -37,7 +37,7 @@ Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können 
 
  **Die XSLT-Ausgabe anzeigen**
 
- Sie können eine XSL-Transformation ausführen und die Ausgabe im XML-Editor anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen einer XSLT-Transformation im XML-Editor](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+ Sie können eine XSL-Transformation ausführen und die Ausgabe im XML-Editor anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen eine XSLT-Transformation im XML-Editor](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
  **Debuggen von XSLT**
 

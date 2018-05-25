@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: aeb74bac5196450ec98426727a1456a009adb5c1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Lernprogramm: Debuggen von verwaltetem und systemeigenem Code in Visual Studio
 
@@ -116,7 +116,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 1. In *"Program.cs"*, ersetzen Sie den Standardcode durch folgenden Code:
 
-    ```c#
+    ```csharp
     using System;
     using System.Runtime.InteropServices;
     
@@ -183,7 +183,7 @@ In den meisten Versionen von Visual Studio 2017, müssen Sie aktivieren, für sy
 
 1. Öffnen Sie im C#-Projekt, *"Program.cs"* und legen Sie einen Haltepunkt in der folgenden Zeile des Codes, indem Sie am linken Rand auf:
 
-    ```c#
+    ```csharp
     int result = Multiply(7, 7);
     ```
 

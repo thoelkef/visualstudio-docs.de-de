@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Vorgehensweise: Erstellen und bearbeiten eine XSD-Schemadatei
 
@@ -22,11 +22,11 @@ In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt u
 
 ## <a name="to-create-a-new-xml-schema-file"></a>So erstellen Sie eine neue XML-Schemadatei
 
-1. Öffnen Sie in Visual Studio die **Datei** Menü **neu** > **Datei**. Sie können stattdessen auch die Tastenkombination STRG+N verwenden.
+1. Öffnen Sie in Visual Studio die **Datei** Menü **neu** > **Datei**. Alternativ können Sie verwenden die **STRG**+**N** Tastenkombination.
 
 2. In der **neue Datei** wählen Sie im Dialogfeld **XML-Schema** und wählen Sie dann **öffnen**.
 
-   Eine neue Datei wird erstellt. Die Ausgangsansicht und ein leeres XML-Schema-Explorer-Fenster werden in Visual Studio angezeigt.
+   Eine neue Datei wird erstellt. Die Ausgangsansicht und ein leeres **XML-Schema-Explorer** Fenster in Visual Studio angezeigt.
 
 ## <a name="to-edit-a-file"></a>So bearbeiten Sie eine Datei
 
@@ -36,7 +36,7 @@ In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt u
 
 2. Kopieren Sie die XML-schemabeispielcode aus [Bestellungsschema](../xml-tools/sample-xsd-file-simple-schema.md) und fügen Sie ihn, um den Standardcode zu ersetzen, der die neue XSD-Datei hinzugefügt wurde.
 
-   Der XML-Schema-Explorer wird mit dem neuen Schemaset aktualisiert.
+   Die **XML-Schema-Explorer** wird mit dem neuen Schemaset aktualisiert.
 
 ## <a name="see-also"></a>Siehe auch
 

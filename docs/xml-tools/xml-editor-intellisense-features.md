@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-editor-intellisense-features"></a>IntelliSense-Funktionen des XML-Editors
+# <a name="xml-editor-intellisense-features"></a>XML-Editor IntelliSense-Funktionen
 
-Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio vollständige IntelliSense-Funktionen bereit. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.
+Der XML-Editor stellt die vollständigen IntelliSense-Funktionen bereit, vergleichbar mit anderen verfügbaren Spracheditoren in Visual Studio. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in einem XSD-Dokument
  Nachdem ein Schema mit dem Dokument zugeordnet ist, Sie erhalten eine Dropdownliste Erwarteter Elemente jederzeit eingegebenen `"<"` oder klicken Sie auf die **Memberliste für Objekt anzeigen** Schaltfläche auf der Symbolleiste des XML-Editors. Informationen über das Zuordnen von Schemas mit XML-Dokumenten finden Sie unter [Validierung von XML-Dokumenten](../xml-tools/xml-document-validation.md).
@@ -73,14 +73,14 @@ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verwenden 
 
 -   Beenden einer DTD-Deklaration: `>`
 
-Der XML-Editor verfügt auch über die Fähigkeit, eine Namespacedeklaration einzufügen, wenn Sie ein durch einen Namespace qualifiziertes Element oder Attribut aus einer IntelliSense-Liste auswählen und der Namespace für dieses Element oder Attribut sich noch nicht im Gültigkeitsbereich befindet.
+Der XML-Editor verfügt auch über die Möglichkeit, eine Namespacedeklaration einzufügen-Deklaration an, wenn Sie wählen Sie einen Namespace qualifiziertes Element oder Attribut aus einer IntelliSense-Liste und den Namespace für dieses Element oder Attribut befindet sich noch nicht im Gültigkeitsbereich.
 
 Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und das Präfix an den `http://books`-Namespace gebunden ist, der im Dokument noch nicht deklariert wurde, wird die erforderliche Namespacedeklaration vom XML-Editor automatisch eingefügt. Daraus ergibt sich der folgende XML-Text:
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>Überprüfung des Klammergleichgewichts
- Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch mithilfe der Tastenkombination (STRG+]) von einer Klammer zur zugehörigen Klammer springen.
+## <a name="brace-matching"></a>Zugehörige Klammer
+ Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch die Tastenkombination (**STRG**+**]**) von einer Klammer zur zugehörigen Klammer springen.
 
  Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
@@ -98,8 +98,8 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 
 -   Öffnende und schließende Anführungszeichen für Attribute.
 
-## <a name="modifying-the-intellisense-options"></a>Ändern der IntelliSense-Optionen
- Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für Extras/Optionen geändert werden.
+## <a name="modify-the-intellisense-options"></a>Ändern Sie die IntelliSense-Optionen
+ Die IntelliSense-Funktionen und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Sie können jedoch ändern dies durch Ändern der **Tools** > **Optionen** Einstellungen.
 
  Die **Automatisches Einfügen** Teil der **Sonstiges** -Seite steuert das folgende Verhalten:
 
@@ -109,7 +109,7 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 |Attributanführungszeichen|Fügt beim Eingeben eines neuen Attributnamens Anführungszeichen für den Attributwert ein.|
 |Sonstige Markups|Vervollständigt Kommentare, CDATA-, DOCTYPE-, Verarbeitungsanweisungen und sonstige Markupdeklarationen.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>So ändern Sie das Verhalten bezüglich der automatischen Vervollständigung
+### <a name="to-change-the-auto-completion-behavior"></a>So ändern Sie das Verhalten bezüglich der automatischen Vervollständigung
 
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
 
@@ -119,6 +119,6 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Editor](../xml-tools/xml-editor.md)
+- [XML-editor](../xml-tools/xml-editor.md)
 - [Verwenden von IntelliSense](../ide/using-intellisense.md)
 - [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

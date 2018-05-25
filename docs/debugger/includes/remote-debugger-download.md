@@ -1,32 +1,26 @@
 ---
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+title: Remotedebugger-download
+description: Links für den Remotedebugger herunterladen
+services: ''
+author: mikejo5000
+ms.service: ''
+ms.topic: include
+ms.date: 05/23/2018
+ms.author: mikejo
+ms.custom: include file
+ms.openlocfilehash: 358dc0b457381bb56532e6cae1156aac9ea2dba2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 1.  Erhalten Sie auf dem Gerät oder Server Computer, den Sie debuggen möchten (statt dem Computer mit Visual Studio) die richtige Version der Remotetools.
 
     |Version|Link|Hinweise|
     |-|-|-|
-    |Visual Studio 2017 (neueste Version)|[Remotetools](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Herunterladen Sie die Betriebssystem Ihres Geräts (X86 oder X64) Abgleich Version immer. Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
-    |Visual Studio-2017 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Remoteserver-Verwaltungstools für frühere Versionen von Visual Studio 2017 sind My.VisualStudio.com verfügbar. Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
-    |Visual Studio 2015 Update 3|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
-    |Visual Studio 2015 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
+    |Visual Studio 2017 (neueste Version)|[Remotetools](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Herunterladen Sie die Betriebssystem Ihres Geräts (X86 oder X64) Abgleich Version immer. Unter Windows Server finden Sie unter [entsperren den Dateidownload](../../debugger/remote-debugging.md#unblock_msvsmon) Anleitung zum Herunterladen der Remoteserver-Verwaltungstools.|
+    |Visual Studio-2017 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Remoteserver-Verwaltungstools für frühere Versionen von Visual Studio 2017 sind My.VisualStudio.com verfügbar. Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Unter Windows Server finden Sie unter [entsperren den Dateidownload](../../debugger/remote-debugging.md#unblock_msvsmon) Anleitung zum Herunterladen der Remoteserver-Verwaltungstools.|
+    |Visual Studio 2015 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Unter Windows Server finden Sie unter [entsperren den Dateidownload](../../debugger/remote-debugging.md#unblock_msvsmon) Anleitung zum Herunterladen der Remoteserver-Verwaltungstools.|
     |Visual Studio 2013|[Remotetools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Downloadseite für Visual Studio 2013-Dokumentation|
     |Visual Studio 2012|[Remotetools](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Downloadseite für Visual Studio 2012-Dokumentation|
   
