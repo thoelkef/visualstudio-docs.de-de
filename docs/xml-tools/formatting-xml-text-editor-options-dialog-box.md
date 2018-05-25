@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, XML, Texteditor, Dialogfeld "Optionen"
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, Optionen XML, Text-Editor, (Dialogfeld)
 
 In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Editor angeben. Sie erreichen die **Optionen** (Dialogfeld), aus der **Tools** Menü.
 
@@ -51,7 +51,7 @@ In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Edi
 
  Formatiert das Element neu, wenn das Endtag vervollständigt wird.
 
-## <a name="mixed-content"></a>	Gemischter Inhalt
+## <a name="mixed-content"></a>Gemischter Inhalt
  **Gemischten Inhalt standardmäßig beibehalten**
 
  Bestimmt, ob der Editor gemischten Inhalt neu formatiert. Der Editor versucht standardmäßig, gemischten Inhalt neu zu formatieren, es sei denn, der Inhalt befindet sich in einem `xml:space="preserve"`-Gültigkeitsbereich.

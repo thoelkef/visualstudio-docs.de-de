@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über das Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Primäre Interop-Assembly-Verweis  
  In der Referenzdokumentation für die Excel-PIA werden die Typen in der primären Interopassembly für Excel beschrieben. In dieser Dokumentation wird von folgendem Speicherort verfügbar: [Referenz für die primäre Interop-Assembly von Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Weitere Informationen zum Entwurf der Excel-PIA, z. B. zu Unterschieden zwischen Klassen und Schnittstellen in der PIA und zur Implementierung von Ereignissen in der PIA, finden Sie unter [Übersicht über Klassen und Schnittstellen in den Office Primary Interopassemblys](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Weitere Informationen zum Entwurf der Excel-PIA, z. B. zu Unterschieden zwischen Klassen und Schnittstellen in der PIA und zur Implementierung von Ereignissen in der PIA, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären InteropassemblysfürOffice](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>VBA-Objektmodellreferenz  
  Die VBA-Objektmodellreferenz dokumentiert das Excel-Objektmodell, das für VBA (Visual Basic for Applications) verfügbar gemacht wird. Weitere Informationen finden Sie unter [Excel 2010-Objektmodellreferenz](http://go.microsoft.com/fwlink/?LinkId=199768).  

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen | Microsoft Docs'
+title: 'Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
   Um ein Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, müssen Sie zunächst erstellen Sie ein Windows Forms-Benutzersteuerelement. Fügen Sie dann auf das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft von der `ThisDocument.ActionsPane` Feld (Wort) oder `ThisWorkbook.ActionsPane` Feld (Excel) in Ihrem Projekt.  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>Hinzufügen des Benutzersteuerelements zum Aktionsbereich  
+## <a name="add-the-user-control-to-the-actions-pane"></a>Fügen Sie das Benutzersteuerelement dem Aktionsbereich  
  Um den Aktionsbereich anzuzeigen, fügen Sie das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft von der `ThisDocument.ActionsPane` Feld (Wort) oder `ThisWorkbook.ActionsPane` Feld (Excel).  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>Der Aktionsbereich das Benutzersteuerelement hinzu  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>Der Aktionsbereich das Benutzersteuerelement hinzu  
   
 1.  Fügen Sie folgenden Code, der `ThisDocument` oder `ThisWorkbook` Klasse als eine Deklaration auf Klassenebene (Fügen Sie diesen Code nicht auf eine Methode).  
   
@@ -79,8 +79,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   
- [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Exemplarische Vorgehensweise: Einfügen von Text in einem Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Exemplarische Vorgehensweise: Einfügen von Text in einem Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

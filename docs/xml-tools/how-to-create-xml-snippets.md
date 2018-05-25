@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
+# <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitte
 
 Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.
 
@@ -30,7 +30,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 
 3.  Mit der rechten Maustaste in den Editorbereich, und wählen Sie **Ausschnitt einfügen**.
 
-4.  Wählen Sie **Ausschnitt** aus der Liste aus und drücken Sie die EINGABETASTE.
+4.  Wählen Sie **Ausschnitt** aus der Liste aus und drücken Sie **EINGABETASTE**.
 
 5.  Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.
 
@@ -40,11 +40,11 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 
 7.  Geben Sie den Namen für den neuen Ausschnitt, und wählen Sie **Codeausschnittdateien** aus der **Dateityp** Dropdown-Fenster.
 
-8.  Verwenden der **speichern im** Dropdown-Liste den Dateispeicherort auf die Ordner Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML-Ausschnitte ändern, und drücken dann die **speichern**.
+8.  Verwenden der **speichern im** Dropdown-Liste so ändern Sie den Speicherort der *Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML-Ausschnitte* Ordner, und drücken Sie dann die **speichern**.
 
 ## <a name="snippet-description"></a>Ausschnittbeschreibung
 
- In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema-Elemente, die von der XML-Ausschnitte verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).
+ In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema-Elemente, die von der XML-Ausschnitte verwendet, finden Sie unter [Code Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>SnippetType-Element
 
@@ -83,7 +83,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 
 -   $selected$ ist eine vordefinierte Variable. Sie stellt den Text dar, der im XML-Editor vor dem Aufrufen des Ausschnitts ausgewählt wurde. Die Positionierung dieser Variablen bestimmt, an welcher Position der ausgewählte Text im Codeausschnitt angezeigt wird, der die Auswahl umgibt.
 
--   $end$ ist eine vordefinierte Variable. Wenn der Benutzer die EINGABETASTE drückt, um die Bearbeitung der Codeausschnittfelder zu beenden, bestimmt diese Variable, an welche Position das Caretzeichen (^) verschoben wird.
+-   $end$ ist eine vordefinierte Variable. Wenn der Benutzer drückt **EINGABETASTE** zur Bearbeitung der Codeausschnittfelder abgeschlossen haben, dieser Variablen wird festgelegt, an das Caretzeichen (^) verschoben wird.
 
  Das obige `Code`-Element fügt den folgenden XML-Text ein:
 
@@ -120,5 +120,5 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Gewusst wie: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)
-- [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Vorgehensweise: Verwenden von XML Ausschnitte](../xml-tools/how-to-use-xml-snippets.md)
+- [Vorgehensweise: generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

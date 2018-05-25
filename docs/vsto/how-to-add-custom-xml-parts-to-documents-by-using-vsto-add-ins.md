@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 803a0c146bbf17ee79f79fe5de95fdf2ee2151da
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins
   Sie können XML-Daten in folgenden Dokumenttypen speichern, indem Sie ein benutzerdefiniertes XML-Element in einem VSTO-Add-In erstellen:  
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/17/2018
   
  **Betrifft:** Die Informationen in diesem Thema betreffen Projekte auf Anwendungsebene für Excel, PowerPoint und Word. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../vsto/features-available-by-office-application-and-project-type.md).  
   
-### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>So fügen Sie einer Excel-Arbeitsmappe ein benutzerdefiniertes XML-Element hinzu  
+## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>So fügen Sie einer Excel-Arbeitsmappe ein benutzerdefiniertes XML-Element hinzu  
   
 1.  Fügen Sie der <xref:Microsoft.Office.Core.CustomXMLPart> -Auflistung in der Arbeitsmappe ein neues <xref:Microsoft.Office.Interop.Excel._Workbook.CustomXMLParts%2A> -Objekt hinzu. Die XML-Zeichenfolge, die Sie in der Arbeitsmappe speichern möchten, ist in <xref:Microsoft.Office.Core.CustomXMLPart> enthalten.  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Rufen Sie die Methode aus anderem Code in Ihrem Projekt auf. Um das benutzerdefinierte XML-Element beispielsweise zu erstellen, wenn der Benutzer eine Arbeitsmappe öffnet, rufen Sie die Methode von einem Ereignishandler für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> -Ereignis auf.  
   
-### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>So fügen Sie einem Word-Dokument ein benutzerdefiniertes XML-Element hinzu  
+## <a name="to-add-a-custom-xml-part-to-a-word-document"></a>So fügen Sie einem Word-Dokument ein benutzerdefiniertes XML-Element hinzu  
   
 1.  Fügen Sie der <xref:Microsoft.Office.Core.CustomXMLPart> -Auflistung im Dokument ein neues <xref:Microsoft.Office.Interop.Word._Document.CustomXMLParts%2A> -Objekt hinzu. Die XML-Zeichenfolge, die Sie im Dokument speichern möchten, ist in <xref:Microsoft.Office.Core.CustomXMLPart> enthalten.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Rufen Sie die Methode aus anderem Code in Ihrem Projekt auf. Um das benutzerdefinierte XML-Element beispielsweise zu erstellen, wenn der Benutzer ein Dokument öffnet, rufen Sie die Methode von einem Ereignishandler für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis auf.  
   
-### <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>So fügen Sie einer PowerPoint-Präsentation ein benutzerdefiniertes XML-Element hinzu  
+## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>So fügen Sie einer PowerPoint-Präsentation ein benutzerdefiniertes XML-Element hinzu  
   
 1.  Fügen Sie der <xref:Microsoft.Office.Core.CustomXMLPart> -Auflistung in der Präsentation ein neues <xref:Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts%2A> -Objekt hinzu. Die XML-Zeichenfolge, die Sie in der Präsentation speichern möchten, ist in <xref:Microsoft.Office.Core.CustomXMLPart> enthalten.  
   

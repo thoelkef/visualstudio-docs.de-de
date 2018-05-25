@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab09bec8f2fc7d75ab21c3635f34069ad613b3e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -26,13 +26,13 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 ## <a name="design-surface"></a>Entwurfsoberfläche
 
- Die Entwurfsoberfläche der Diagrammansicht zeigt den Inhalt der [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md). Wenn der Arbeitsbereich globale Knoten aus dem Schemaset enthält, werden die Knoten auf der Entwurfsoberfläche der Diagrammansicht angezeigt, und zwischen Knoten mit Beziehungen werden Pfeile gezeichnet.
+ Die Entwurfsoberfläche der Diagrammansicht zeigt den Inhalt der [XML-Schema-Designer-Arbeitsbereich](../xml-tools/xml-schema-designer-workspace.md). Wenn der Arbeitsbereich globale Knoten aus dem Schemaset enthält, werden die Knoten auf der Entwurfsoberfläche der Diagrammansicht angezeigt, und zwischen Knoten mit Beziehungen werden Pfeile gezeichnet.
 
  Per Doppelklick auf einen Knoten in der Diagrammansicht öffnen Sie den XML-Editor.
 
- Verwenden Sie die XSD-Designer-Symbolleiste oder die ENTF-TASTE, um ausgewählte Knoten aus dem Arbeitsbereich zu löschen.
+ Verwenden Sie zum ausgewählte Knoten aus dem Arbeitsbereich löschen die XSD-Designer-Symbolleiste oder die **löschen** Schlüssel.
 
- Wenn die Entwurfsoberfläche leer ist, werden der XML-Editor, der XML-Schema-Explorer und das Wasserzeichen angezeigt. Die *Wasserzeichen* ist eine Liste mit Links zu allen Ansichten des XSD-Designer.
+ Wenn die Entwurfsoberfläche leer ist, wird der XML-Editor die **XML-Schema-Explorer**, und das Wasserzeichen angezeigt werden. Die *Wasserzeichen* ist eine Liste mit Links zu allen Ansichten des XSD-Designer.
 
  ![XSD-Designer; Diagrammansicht](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
 
@@ -54,9 +54,9 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 |**Arbeitsbereich löschen**|Löscht den Arbeitsbereich und die Entwurfsoberfläche.|
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
-|**Exportieren Sie Diagramm als Bild...**|Speichert die Entwurfsoberfläche in einer XPS-Datei.|
+|**Diagramm als Bild exportieren**|Speichert die Entwurfsoberfläche in einer XPS-Datei.|
 |**Alle auswählen**|Wählt alle Knoten auf der Entwurfsoberfläche aus.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das Element, das ausgewählt ist die **XML-Schema-Explorer** auch in der XML-Editor ausgewählt ist.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Elemente die folgenden Optionen:
@@ -102,20 +102,20 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 1**.|
-|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalte Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 2**.|
-|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 3**.|
+|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**1**.|
+|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalte Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**2**.|
+|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**3**.|
 |**Arbeitsbereich löschen**|Löscht den Arbeitsbereich und die Entwurfsoberfläche.|
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche. Diese Option ist in der Inhaltsmodellansicht und der Diagrammansicht aktiviert.|
-|**Von links nach rechts**|Ändert das Layout in der Diagrammansicht in eine von links nach rechts angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt + nach-rechts-**.|
-|**Von rechts nach links**|Ändert das Layout in der Diagrammansicht in eine von rechts nach links angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt + nach-links**.|
-|**Von oben nach unten**|Ändert das Layout in der Diagrammansicht in eine von oben nach unten angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt + nach-unten-Taste**.|
-|**Von unten nach oben**|Ändert das Layout in der Diagrammansicht in eine von unten nach oben angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt + nach-oben-Taste**.|
+|**Von links nach rechts**|Ändert das Layout in der Diagrammansicht in eine von links nach rechts angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt**+**Pfeil nach rechts**.|
+|**Von rechts nach links**|Ändert das Layout in der Diagrammansicht in eine von rechts nach links angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt**+**-links-Taste**.|
+|**Von oben nach unten**|Ändert das Layout in der Diagrammansicht in eine von oben nach unten angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt**+**Pfeil nach unten**.|
+|**Von unten nach oben**|Ändert das Layout in der Diagrammansicht in eine von unten nach oben angeordnete hierarchische Darstellung der Knoten. Diese Option kann mithilfe der Tastenkombination zugegriffen werden: **Alt**+**-oben-Taste**.|
 
 ## <a name="panscroll"></a>Schwenken/Bildlauf
 
- Sie können die Entwurfsoberfläche mit den Bildlaufleisten oder durch Drücken der STRG-TASTE und gleichzeitiges Klicken und Ziehen der Maus schwenken. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
+ Sie können die Entwurfsoberfläche ziehen schwenken, mit den Bildlaufleisten oder durch halten die **STRG** gedrückt, während Sie klicken und die Maus ziehen. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen
 
@@ -133,17 +133,17 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Der Zoomfaktor kann wie folgt gesteuert werden:
 
--   Halten Sie die STRG-TASTE gedrückt, und drehen Sie das Mausrad, während Sie die Maus über die Oberfläche der Diagrammansicht bewegen.
+-   Halten die **STRG** Schlüssel, und drehen Sie die Maus Mausrad, während Sie die Maus über die Oberfläche der Diagrammansicht bewegen.
 
 -   Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
-Der Zoomschieberegler ist nicht transparent, wenn Sie ihn auswählen, mit der Maus darauf zeigen oder mit der STRG-TASTE und dem Mausrad zoomen. Ansonsten ist er transparent.
+Der Zoomschieberegler ist nicht transparent, wenn Sie wählen es, zeigen Sie darauf, oder verwenden **STRG** mit dem Mausrad Zoomen; in allen anderen Fällen ist er transparent.
 
-## <a name="xml-editor-integration"></a>Integration des XML-Editors
+## <a name="xml-editor-integration"></a>Integration des XML-editor
 
  Klicken Sie auf einen Knoten, und wählen Sie das Kontextmenüelement "Code anzeigen" aus, um zwischen der Diagrammansicht und dem XML-Editor hin- und herzuwechseln.
 
- Wenn Sie im XML-Editor Änderungen am Schemaset vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert. Weitere Informationen finden Sie unter [Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
+ Wenn Sie im XML-Editor Änderungen am Schemaset vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert. Weitere Informationen finden Sie unter [Integration in XML-Editor](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 

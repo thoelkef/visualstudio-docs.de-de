@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d29515e9e8a1320975fb343ae101db21924d9767
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Vorgehensweise: benutzerdefinierte XML-Teile hinzufügen, um Anpassungen auf Dokumentebene
   Sie können XML-Daten in einer Microsoft Office Excel-Arbeitsmappe oder in einem Microsoft Office Word-Dokument speichern, indem Sie einen benutzerdefinierten XML-Abschnitt in einer Anpassung auf Dokumentebene erstellen. Weitere Informationen finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).  
@@ -62,5 +62,4 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)   
  [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  
   

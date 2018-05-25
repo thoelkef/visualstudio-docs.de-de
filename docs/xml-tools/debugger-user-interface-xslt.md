@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b2767a952c566359b1c61bbdc83060bf905e99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="debugger-user-interface-xslt"></a>Benutzeroberfläche des XSLT-Debuggers
+# <a name="debugger-user-interface-xslt"></a>Debuggerbenutzeroberfläche (XSLT)
 
 In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. Es werden nur die Elemente der Benutzeroberfläche erläutert, die ein XSLT-spezifisches Debugverhalten aufweisen.
 
-Weitere Informationen finden Sie unter der [Benutzeroberflächenreferenz Debuggen](../debugger/debugging-user-interface-reference.md).
+Weitere Informationen finden Sie unter der [Debuggen Benutzeroberflächenreferenz](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Lokalfenster
  Im Lokalfenster werden Informationen zu allen im Stylesheet definierten Variablen angezeigt. Das Lokalfenster enthält drei Spalten mit Informationen:
@@ -51,19 +51,19 @@ Weitere Informationen finden Sie unter der [Benutzeroberflächenreferenz Debugge
  Die Debuggerausgabe wird vom XSLT-Debugger in einem separaten Fenster angezeigt. Dies ist das gleiche Fenster zur Anzeige der Ausgabe einer **XSL-Ausgabe anzeigen** Befehl.
 
 ## <a name="task-list"></a>Aufgabenliste
- In der Aufgabenliste werden alle Kompilierungsfehler im Stylesheet aufgelistet. Durch Doppelklicken auf den Fehler wird der Cursor auf der fehlerhaften Zeile platziert.
+ Die **Aufgabenliste** werden alle Kompilierungsfehler im Stylesheet aufgelistet. Durch Doppelklicken auf den Fehler wird der Cursor auf der fehlerhaften Zeile platziert.
 
- Die Aufgabenliste enthält alle Fehler, die in den Skriptblöcken in der XSLT-Datei auftreten.
+ Die **Aufgabenliste** auftretende Fehler in den Skriptblöcken in der XSLT-Datei enthält.
 
 > [!NOTE]
-> Der XSLT-Debugger gibt keine Warnungen aus. Daher werden keine Warnungen in der Aufgabenliste angezeigt.
+> Der XSLT-Debugger gibt keine Warnungen aus, sodass sie nie angezeigt, in werden der **Aufgabenliste**.
 
-## <a name="breakpoints-window"></a>Fenster "Haltepunkte"
+## <a name="breakpoints-window"></a>"Haltepunkte" (Fenster)
  Im Fenster Haltepunkte werden alle im aktuellen Projekt festgelegten Haltepunkte angezeigt. Wenn während der Anzeige dieses Fensters ein Haltepunkt hinzugefügt wird, wird das Fenster automatisch aktualisiert, sodass der neue Haltepunkt ebenfalls angezeigt wird.
 
  Das Fenster Haltepunkte weist dasselbe Verhalten wie andere Debuggern von Visual Studio auf.
 
-## <a name="command-windowimmediate-window"></a>Befehlsfenster/Direktfenster
+## <a name="command-windowimmediate-window"></a>Fenster/Direktfenster Befehlsfenster
  In diesem Release des XSLT-Debuggers nicht implementiert.
 
 ## <a name="watch-window"></a>Überwachungsfenster
@@ -72,15 +72,15 @@ Weitere Informationen finden Sie unter der [Benutzeroberflächenreferenz Debugge
  Die im Überwachungsfenster angezeigten Variablen beziehen sich auf den aktuellen Kontext (auf das oberste Element in der Aufrufliste). Beim Ändern des Kontexts wird das Überwachungsfenster aktualisiert, und es werden die für den betreffenden Kontext festgelegten Variablen angezeigt.
 
 ## <a name="call-stack-window"></a>Aufruflistenfenster
- Im Aufruflistenfenster werden die Namen der Funktionen in der Aufrufliste, die Parametertypen und Parameterwerte angezeigt. Aufruflisteninformationen werden nur angezeigt, wenn sich das derzeit debuggte Programm im Haltezustand befindet.
+ Die **Aufrufliste** Fenster wird verwendet, um die Namen der Funktionen in der Aufrufliste, Parametertypen und Parameterwerte anzuzeigen. Aufruflisteninformationen werden nur angezeigt, wenn sich das derzeit debuggte Programm im Haltezustand befindet.
 
- Die Aufrufliste stellt die verschiedenen Kontexte dar, die bei der XSLT-Ausführung durchlaufen werden. Wenn beispielsweise ein Aufruf der Vorlage "b" von der Vorlage "a" aus erfolgt, werden die Vorlagen "a" und "b" im Aufruflistenfenster mit dem aktuellen Kontext in der Liste an oberster Position angezeigt. Für den Benutzer wird die derzeit ausgeführte Abfrage angezeigt.
+ Die Aufrufliste stellt die verschiedenen Kontexte dar, die bei der XSLT-Ausführung durchlaufen werden. Angenommen, erfolgt ein Aufruf aus der Vorlage "a" in Vorlage "b" "," Vorlage "a" und die Vorlage "b" angezeigt, der **Aufrufliste** Fenster mit dem aktuellen Kontext oben in der Liste. Für den Benutzer wird die derzeit ausgeführte Abfrage angezeigt.
 
  Wenn die Vorlagen in der XSLT-Datei keinen Namen aufweisen, werden die vom XSLT-Prozessor generierten Namen verwendet.
 
- Wenn auf ein anderes Element als das Element an oberster Position in der Liste geklickt wird, wird dem Betrachter mithilfe der standardmäßigen grünen Hervorhebung und grünen Pfeile angezeigt, welche XSLT-Verzweigung gerade ausgeführt wird.
+ Wenn auf ein anderes Element als das Element an oberster Position in der Liste geklickt wird, wird dem Betrachter mithilfe der standardmäßigen grünen Hervorhebung und grünen Pfeile angezeigt, welcher XSLT-Branch gerade ausgeführt wird.
 
-## <a name="quickwatch-dialog-box"></a>Dialogfeld "Schnellüberwachung"
+## <a name="quickwatch-dialog-box"></a>Schnellüberwachung (Dialogfeld)
  Die **Schnellüberwachung** Dialogfeld wird verwendet, um XPath 1.0-Ausdrücke ausgewertet werden. Der Kontextknoten (der `self::node()`-Knoten im Lokalfenster) stellt den Kontext für die Ausführung des XPath-Ausdrucks bereit. Das Ergebnis der Ausführung des XPath-Ausdrucks wird im Überwachungsfenster angezeigt.
 
  In der folgenden Liste werden einige Einschränkungen für die Auswertung von XPath-Ausdrücken beschrieben.
@@ -93,7 +93,7 @@ Weitere Informationen finden Sie unter der [Benutzeroberflächenreferenz Debugge
 
 Weitere Informationen finden Sie unter [wie: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
-## <a name="disassembly-window"></a>Disassemblyfenster
+## <a name="disassembly-window"></a>"Disassemblierung" (Fenster)
  Im Disassemblyfenster wird der vom XSLT-Compiler generierte Assemblycode angezeigt. Dieser Fenster kann in gleicher Weise wie alle anderen Disassemblyfenster in Visual Studio verwendet werden.
 
  Weitere Informationen [wie: Verwenden des Fensters Disassembly](../debugger/how-to-use-the-disassembly-window.md).
@@ -102,4 +102,4 @@ Weitere Informationen finden Sie unter [wie: Auswerten eines XPath-Ausdrucks](..
 
 - [Debuggen von XSLT](../xml-tools/debugging-xslt.md)
 - [Debugger – Grundlagen](../debugger/debugger-basics.md)
-- [Untersuchen von Variablen in der "Auto" und "lokal" Fenstern in Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Prüfen Sie die Variablen in den Fenstern "Auto" und "lokal" in Visual Studio](../debugger/autos-and-locals-windows.md)

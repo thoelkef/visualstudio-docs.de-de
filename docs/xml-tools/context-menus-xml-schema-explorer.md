@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 
@@ -104,7 +104,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |**Alle Member anzeigen**|Sucht nach allen Mitgliedern der Attributgruppe und hebt sie hervor.|
 |**Alle Verweise anzeigen**|Sucht nach allen Verweisen auf die ausgewählte Attributgruppe (Attributgruppen mit `ref="selectedAttributeGroup"`) und hebt sie hervor.|
 
-## <a name="node-type-named-group"></a>Knotentyp: Benannte Gruppe
+## <a name="node-type-named-group"></a>Knotentyp: benannte Gruppe
  Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für benannte Gruppenknoten die folgenden Optionen:
 
 |Option|Beschreibung|
