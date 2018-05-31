@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21a4916e9e8398096e239ca1736238b0ffe8145
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336031"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen zu sammeln.  
   
  In diesem Thema wird beschrieben, wie die Konfigurationsdatei „web.config“ zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen geändert werden kann.  
@@ -75,15 +76,16 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
   
      `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, sollte der Wert **href** `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
             <assemblyBinding   
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"
+                        culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  
@@ -110,7 +112,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
     |--------------------|---------------------|  
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -126,7 +128,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
     <configuration>  
 ```  
   
-### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>So fügen Sie Profiler-Speicherorteinstellungen zum Element „configuration/appSettings“ hinzu  
+### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>So fügen Sie Profilerspeicherorteinstellungen zum Element „configuration/appSettings“ hinzu  
   
 1.  Fügen Sie, wenn notwendig, das Element **appSettings** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
@@ -152,7 +154,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
   
      `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdatei. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installiert ist im Standardspeicherort installiert ist, entspricht der Wert **C:\Program Files\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools**  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -176,7 +178,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 ## <a name="example"></a>Beispiel  
  Im Folgenden finden Sie eine vollständige web.config-Datei, die die Instrumentierung und Profilerstellung von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen ermöglicht. In diesem Beispiel wird davon ausgegangen, dass es keine anderen Einstellungen in der Datei vor der Änderung gab.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
     <configuration>  
         <runtime>  
@@ -220,5 +222,5 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Speicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+ [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
+ [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Arbeitsspeicherdaten über die Profiler-Befehlszeile](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

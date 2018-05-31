@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266340"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
 Legt das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Verhalten im Zusammenhang mit Projekten und Projektmappen fest. Wählen Sie zum Zugriff auf diese Optionen **Extras > Optionen** aus, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
@@ -70,6 +71,12 @@ Wenn diese Option aktiviert ist, werden Sie in einer Meldung gefragt, ob [!INCLU
 **Aufforderung vor der Verschiebung von Dateien zu einem neuen Speicherort**
 
 Wenn diese Option aktiviert ist, zeigt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein Bestätigungsmeldungsfeld an, bevor die Speicherorte von Dateien durch Aktionen im Projektmappen-Explorer verändert werden.
+
+**Reopen documents on solution load** (Dokumente beim Laden der Projektmappe erneut öffnen) (Visual Studio 2017, Version 15.8 (Vorschau 2) und höher)
+ 
+Während des Ladens einer Projektmappe können Dokumente, die in der vorherigen Sitzung geöffnet waren, automatisch erneut geöffnet werden. Wenn diese Option aktiviert ist, werden die Dokumente, die beim letzten Schließen dieser Projektmappe geöffnet waren, automatisch geöffnet, wenn die Projektmappe geladen wird.
+
+Das erneute Öffnen von bestimmten Dateitypen oder Designern kann das Laden von Projektmappen verzögern. Deaktivieren Sie diese Option, um die Leistung beim Laden von Projektmappen zu verbessern, wenn Sie den vorherigen Kontext der Projektmappe nicht wiederherstellen möchten.
 
 ## <a name="locations-tab-options"></a>Optionen der Registerkarte „Speicherorte“
 

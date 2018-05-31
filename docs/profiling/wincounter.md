@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4751d44afc2f54ea57866e3674a5bc150444088b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9778504cb95371a95e6e25ca6a76c7d96a648a62
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446529"
 ---
 # <a name="wincounter"></a>WinCounter
 Über die Option **WinCounter** wird ein Leistungsindikator für Windows oder die Anwendung angegeben, um bei der Profilerstellung festgelegte Intervalle zu erfassen. Leistungsindikatoren für Windows und die Anwendung werden als Markierungen in den Profilerstellungs-Datendateien aufgeführt. Sie können mehrere Leistungsindikatoren angeben, die in separaten Optionen erfasst werden sollen.  
@@ -41,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
  **Start:** `Method`  
  Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
   
-## <a name="exclusive-options"></a>Ausschließliche Optionen  
+## <a name="exclusive-options"></a>Ausschließende Optionen  
  Die Option **AutoMark** kann nur mit der Option **WinCounter** verwendet werden.  
   
  **AutoMark:** `Milliseconds`  
@@ -58,4 +59,4 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\%
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

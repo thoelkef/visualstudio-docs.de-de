@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269189"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML, im Code oder mit dem XAML-Designer hinzufügen. Dieses Thema beschreibt, wie Elemente im XAML-Designer in Visual Studio oder in Blend für Visual Studio verwendet werden.
@@ -53,7 +54,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
         -   **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
 
-     Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem niedrigeren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
+     Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Ändern der Ausrichtung eines Elements
  Sie können Elemente auf der Zeichenfläche mit Menübefehlen oder durch Ziehen von Elementen an Ausrichtungslinien ausrichten.
@@ -74,7 +75,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
      Wenn die Kanten ausgerichtet sind, wird eine *Ausrichtungsgrenze* angezeigt, um die Ausrichtung anzugeben. Die Ausrichtungsgrenze ist eine rote gestrichelte Linie. Ausrichtungsgrenzen werden nur angezeigt, wenn **Andocken an Ausrichtungslinien** aktiviert ist. Eine Abbildung der Zeichenfläche, die eine Ausrichtungsgrenze zeigt, finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Ändern der Ränder eines Elements
+## <a name="changing-an-elements-margins"></a>Ändern der Ränder eines Elements
  Die Ränder im XAML-Designer bestimmen die Menge an leerem Platz um ein Element in der Zeichenfläche. Ränder geben beispielsweise an, wie viel Platz zwischen den äußeren Kanten eines Elements und den Begrenzungen eines `Grid`-Bereichs frei bleibt, der das Objekt enthält. Durch Ränder wird auch die Größe des Abstands zwischen Elementen angegeben, die in einem `StackPanel`-Element enthalten sind.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>So ändern Sie die Ränder eines Elements im Eigenschaftenfenster

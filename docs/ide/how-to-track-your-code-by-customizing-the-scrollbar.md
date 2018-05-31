@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445970"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste
 
@@ -57,4 +58,4 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

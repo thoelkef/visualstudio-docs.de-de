@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78c983943f7cf99bf9dbe7ee60df06b033404719
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448609"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -149,5 +150,5 @@ Sie können Informationen über bestimmten Code, wie Änderungen und wer diese �
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Anzeigen der Aufrufhierarchie](../ide/reference/call-hierarchy.md)

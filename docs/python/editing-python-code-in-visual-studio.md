@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449139"
 ---
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
@@ -27,7 +28,7 @@ Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio int
 |---|---|
 | ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
 
-Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
+Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
 
 Sie können darüber hinaus den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J) verwenden, um die in den einzelnen Modulen definierten Python-Klassen und die in diesen Klassen definierten Funktionen zu überprüfen.
 

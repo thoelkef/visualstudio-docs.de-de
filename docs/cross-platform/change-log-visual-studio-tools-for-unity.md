@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,53 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266075"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="3701"></a>3.7.0.1
+ Veröffentlichung: 7.5.2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Installer:**
+
+    -   Ein Abhängigkeitsproblem bei der Verwendung des experimentellen Builds wurde behoben.
+
+## <a name="3700"></a>3.7.0.0
+ Veröffentlichung: 7.5.2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Debuggen:**
+
+    -   Unterstützung für orchestriertes Debuggen wurde hinzugefügt (Debuggen von mehreren Playern/Editors in derselben Visual Studio-Sitzung).
+    
+    -   Unterstützung für das Debuggen von Android USB-Player wurde hinzugefügt.
+    
+    -   Unterstützung für das Debuggen von UWP/IL2CPP-Player wurde hinzugefügt.
+
+-   **Auswertung:**
+
+    -   Unterstützung für hexadezimale-Spezifizierer wurden hinzugefügt.
+    
+    -   Evaluierung des Überwachungsfensters wurde verbessert
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Verwendung der Ausnahmeeinstellungen wurde behoben
+
+-   **Projektgenerierung:**
+
+    -   Der Paket-Manager wird aus der Kompilierung von Einheiten aus der Generierung ausgeschlossen.
 
 ## <a name="3605"></a>3.6.0.5
  Veröffentlichung: 13.03.2018
@@ -26,7 +65,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   **Projektgenerierung:**
 
-    -   Unterstützung für den neuen Projektgenerator in Unity 2018.1 wurde hinzugefügt.
+    -   Es wurde Unterstützung für den neuen Projektgenerator in Unity 2018.1 hinzugefügt.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

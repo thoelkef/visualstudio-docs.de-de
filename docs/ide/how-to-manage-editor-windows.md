@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b10bb58420b09bc184ef447503ca90acc7574f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446958"
 ---
 # <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von Editorfenstern
 
@@ -58,5 +59,5 @@ Sie können auch mehrere Instanzen eines Editorfensters erstellen. Mithilfe dies
 ## <a name="see-also"></a>Siehe auch
 
 - [Anpassen des Editors](../ide/customizing-the-editor.md)
-- [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)

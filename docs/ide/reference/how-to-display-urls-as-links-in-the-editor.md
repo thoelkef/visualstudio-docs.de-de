@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3e7a300570cb16757c70b42db932d8af061be1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448051"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
 Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ihrem Code als aktive Links behandelt. Wenn Sie diese Funktion verwenden, zeigen URLs das folgende Verhalten:
@@ -53,4 +54,4 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
 - [Anpassen des Editors](../../ide/customizing-the-editor.md)
 - [Text-Editor, Dialogfeld „Optionen“](../../ide/reference/text-editor-options-dialog-box.md)
-- [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
