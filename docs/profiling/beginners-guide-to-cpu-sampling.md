@@ -16,14 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267948"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
-Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in einer Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung von **Sampling**-Daten.
+Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung von **Sampling**-Daten.
 
 > [!NOTE]
 >  Es wird empfohlen, das Tool [CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md) im Fenster „Diagnosetools“ anstelle des Legacy-CPU-Samplingtools zu verwenden, außer wenn Sie spezielle Funktionen benötigen, wie z.B. Instrumentierungsunterstützung.
@@ -125,7 +126,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
   
 ## <a name="see-also"></a>Siehe auch  
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
- [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md)   
+ [Erste Schritte](../profiling/getting-started-with-performance-tools.md)   
  [Übersichten](../profiling/overviews-performance-tools.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
  [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)

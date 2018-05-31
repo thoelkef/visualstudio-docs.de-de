@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264430"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische Aufruflisten zu den einzelnen Blockierungskategorien (wie „E/A“ oder „Synchronisierung“). Der Bericht zur vorzeitigen Entfernung listet die Prozesse auf, die den aktuellen Prozess vorzeitig entfernt haben, und gibt die Anzahl der Instanzen für die vorzeitige Entfernung an. Um den Blockierungsprofilbericht zu erstellen, sammelt das Tool blockierende API-Aufrufe und stellt sie in einer Struktur von Aufruflisten zusammen. In diesen Berichten angezeigte Daten hängen vom aktuellen Zeitraum, von ausgeblendeten Threads und den beiden folgenden Filtern ab, die angewendet werden können:  
@@ -34,15 +35,15 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
   
 |Spaltenname|description|  
 |-----------------|-----------------|  
-|name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
-|Instanzen|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|  
-|Inklusive Blockierungszeit|Die Gesamtblockierungszeit, die für alle Stapel angefallen ist, für die bis zu dieser Ebene der Aufruflistenstruktur ein Rollup ausgeführt wird. Die inklusive Zahl ist die Summe aus der exklusiven Blockierungszeit für diese Funktion und der exklusiven Blockierungszeit für alle untergeordneten Knoten.|  
-|Exklusive Blockierungszeit|Die aufgewendete Gesamtblockierungszeit, während der sich diese Funktion auf der untersten Ebene der Aufrufliste befand. Ein eindeutiger Eintrag in der Aufrufliste, der eine hohe exklusive Blockierungszeit aufweist, kann eine interessante Funktion sein.|  
-|API-/Warte-Kategorie|Wird nur für Funktionen auf der untersten Ebene der Aufrufliste angezeigt. Wenn die Signatur des blockierenden Aufrufs erkannt wird, wird der Name der blockierenden API angezeigt. Wird die Signatur nicht erkannt, werden vom Kernel gemeldete Informationen bereitgestellt.|  
-|Details|Vollqualifizierter Name der Funktion. Dies umfasst die Zeilenanzahl, sofern verfügbar.|  
+|**Name**|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
+|**Instanzen**|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|  
+|**Inklusive Blockierungszeit**|Die Gesamtblockierungszeit, die für alle Stapel angefallen ist, für die bis zu dieser Ebene der Aufruflistenstruktur ein Rollup ausgeführt wird. Die inklusive Zahl ist die Summe aus der exklusiven Blockierungszeit für diese Funktion und der exklusiven Blockierungszeit für alle untergeordneten Knoten.|  
+|**Exklusive Blockierungszeit**|Die aufgewendete Gesamtblockierungszeit, während der sich diese Funktion auf der untersten Ebene der Aufrufliste befand. Ein eindeutiger Eintrag in der Aufrufliste, der eine hohe exklusive Blockierungszeit aufweist, kann eine interessante Funktion sein.|  
+|**API-/Warte-Kategorie**|Wird nur für Funktionen auf der untersten Ebene der Aufrufliste angezeigt. Wenn die Signatur des blockierenden Aufrufs erkannt wird, wird der Name der blockierenden API angezeigt. Wird die Signatur nicht erkannt, werden vom Kernel gemeldete Informationen bereitgestellt.|  
+|**Details**|Vollqualifizierter Name der Funktion. Dies umfasst die Zeilenanzahl, sofern verfügbar.|  
   
 ### <a name="synchronization"></a>Synchronisierung  
- Der Synchronisierungsbericht enthält die Aufrufe, die für bei der Synchronisierung blockierte Segmente verantwortlich sind, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Synchronisierungszeit](../profiling/synchronization-time.md)  
+ Der Synchronisierungsbericht enthält die Aufrufe, die für bei der Synchronisierung blockierte Segmente verantwortlich sind, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Synchronisierungszeit](../profiling/synchronization-time.md).  
   
 ### <a name="sleep"></a>Sleep  
  Der Standbybericht enthält die Aufrufe, die für Blockierungszeit verantwortlich sind, die im Standbymodus verbracht wurde, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Standbyzeit](../profiling/sleep-time.md).  
@@ -60,4 +61,4 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
  Der E/A-Verarbeitungsbericht enthält die Aufrufe, die für bei der Benutzeroberflächenverwaltung blockierte Segmente verantwortlich sind, und die Gesamtblockierungszeit der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+ [Threadansicht](../profiling/threads-view-parallel-performance.md)

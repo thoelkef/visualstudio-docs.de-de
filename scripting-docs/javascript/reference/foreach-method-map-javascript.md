@@ -1,27 +1,29 @@
 ---
 title: foreach-Methode (Map) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335800"
 ---
 # <a name="foreach-method-map-javascript"></a>forEach-Methode (Map) (JavaScript)
 Führt die angegebene Aktion für jedes Element in einer Zuordnung aus.  
@@ -37,7 +39,7 @@ mapObj.forEach(callbackfn[, thisArg])
  Erforderlich. Ein `Map`-Objekt.  
   
  `callbackfn`  
- Erforderlich. Die Funktion, die `forEach` einmal für jedes Element in der Zuordnung aufruft. `callbackfn`bis zu drei Argumente akzeptiert. `forEach` ruft die `callbackfn`-Funktion für jedes Element in der Zuordnung einmal auf.  
+ Erforderlich. Die Funktion, die `forEach` einmal für jedes Element in der Zuordnung aufruft. `callbackfn` bis zu drei Argumente akzeptiert. `forEach` ruft die `callbackfn`-Funktion für jedes Element in der Zuordnung einmal auf.  
   
  `thisArg`  
  Dies ist optional. Ein Objekt, auf das das `this`-Schlüsselwort in der `callbackfn`-Funktion verweisen kann. Wird `thisArg` nicht angegeben, wird `undefined` als `this`-Wert verwendet.  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

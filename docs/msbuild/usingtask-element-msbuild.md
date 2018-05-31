@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269140"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzierten Task der Assembly zu, die die Taskimplementierung enthält.  
@@ -68,10 +69,10 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 
 ## <a name="remarks"></a>Hinweise  
- Umgebungsvariablen, Befehlszeileneigenschaften und Eigenschaften auf Projektebene können im gesamten `UsingTask`-Element referenziert werden, wenn es in der Projektdatei angezeigt wird, und zwar entweder explizit oder mithilfe einer importierten Projektdatei. Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben).  
+ Auf Umgebungsvariablen, Befehlszeileneigenschaften sowie auf Eigenschaften und Elemente auf Projektebene kann in den `UsingTask`-Elementen, die in der Projektdatei enthalten sind, entweder direkt oder über eine importierte Projektdatei verwiesen werden. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Eigenschaften auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der TASKS-Dateien stammt, die global im MSBuild-Modul registriert sind. Eigenschaften auf Projektebene sind nicht global in MSBuild.  
+>  Eigenschaften und Elemente auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der TASKS-Dateien stammt, die global in der MSBuild-Engine registriert sind. Werte auf Projektebene sind in MSBuild nicht global.  
 
  In MSBuild 4.0 kann das Laden mithilfe von Aufgaben aus .overridetask-Dateien erfolgen.  
 

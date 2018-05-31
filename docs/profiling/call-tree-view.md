@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262446"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von ihnen aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.  
@@ -45,11 +46,11 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
  [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
  [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)   
- [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
+ [Leistungsberichtansichten](../profiling/performance-report-views.md)   
+ [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

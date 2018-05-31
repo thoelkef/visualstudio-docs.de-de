@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449025"
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
+# <a name="visualize-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden. Registrieren Sie die ETW-Anbieter-GUID über das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), um die EventSource-Marker anzuzeigen. In der Nebenläufigkeitsschnellansicht werden für die Darstellung von EventSource-Ereignissen als [Flag-Marker](../profiling/flag-markers.md), [Bereichsmarker](../profiling/span-markers.md) und [Meldungsmarker](../profiling/message-markers.md) Standardkonventionen verwendet. Durch Hinzufügen von benutzerdefinierten Feldern zu den Ereignissen, können Sie festlegen, wie EventSource-Ereignisse angezeigt werden. Weitere Informationen zu Markern finden Sie unter [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md). Weitere Informationen zu EventSource-Ereignissen finden Sie unter <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Standardvisualisierung von EventSource-Ereignissen  
@@ -52,7 +53,7 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 ### <a name="text"></a>Text  
  Wenn für das Ereignis eine formatierte printf-type-Textmeldung definiert wurde, wird diese als Beschreibung für den Marker angezeigt. Andernfalls besteht die Beschreibung aus dem Namen des Ereignisses und dem Wert der einzelnen Nutzlastfeldern.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Anpassen der Visualisierung von EventSource-Ereignissen  
+## <a name="customize-visualization-of-eventsource-events"></a>Anpassen der Visualisierung von EventSource-Ereignissen  
  Sie können die Anzeige von EventSource-Ereignissen anpassen, indem Sie die entsprechenden Felder wie in den folgenden Abschnitten beschrieben zum Ereignis hinzufügen.  
   
 ### <a name="marker-type"></a>Markertyp  
@@ -95,4 +96,4 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 >  Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)
+ [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

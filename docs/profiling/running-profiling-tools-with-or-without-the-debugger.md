@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268268"
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige (z.B. **CPU-Auslastung** und **Speicherauslastung**) mit oder ohne den Debugger ausgeführt werden können. Leistungstools ohne Debugger sind für Releasekonfigurationen gedacht, während die Tools mit integriertem Debugger zur Ausführung auf Debugkonfigurationen vorgesehen sind.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Sollte ich das Tool mit oder ohne Debugger ausführen?  
@@ -39,9 +40,9 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
  Der folgende Abschnitt beschreibt das lokale Debuggen. Informationen zum Debuggen auf einem Gerät oder zum Remotedebuggen erhalten Sie in späteren Abschnitten.  
   
-1.  Öffnen Sie das Projekt, das Sie debuggen möchten, und klicken Sie anschließend auf **Debuggen / Debugging starten** (oder klicken Sie auf der Symbolleiste auf **Starten** , oder drücken Sie **F5**).  
+1.  Öffnen Sie das Projekt, das Sie debuggen möchten, und klicken Sie anschließend auf **Debuggen** > **Debugging starten** (oder klicken Sie auf der Symbolleiste auf **Starten**, oder drücken Sie **F5**).  
   
-2.  Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.  
+2.  Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.  
   
 3.  Führen Sie die Szenarien aus, für die Sie Daten erfassen möchten.  
   
@@ -51,11 +52,11 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Mithilfe der Einstellung **Tools auswählen** auf der Symbolleiste können Sie auswählen, ob Sie die **Speicherauslastung** oder die **CPU-Auslastung** (oder beides) anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Tools / Optionen / IntelliTrace** aktivieren oder deaktivieren.  
+4.  Mithilfe der Einstellung **Tools auswählen** auf der Symbolleiste können Sie auswählen, ob Sie die **Speicherauslastung** oder die **CPU-Auslastung** (oder beides) anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter**Extras** > **Optionen** > **IntelliTrace** aktivieren oder deaktivieren.  
   
 5.  Die Diagnosesitzung endet, wenn Sie das Debugging beenden.  
   
- In Visual Studio 2015 Update 1 können Sie sich im Fenster **Diagnosetools** einfach auf die Ereignisse konzentrieren, die für Sie von Interesse sind.   Die Ereignisnamen werden nun mit den Kategoriepräfixen (**Bewegung**, **Programmausgabe**, **Haltepunkt**, **Datei** usw.) angezeigt, damit Sie die Liste schnell nach einer bestimmten Kategorie durchsuchen oder die Kategorien überspringen können, die Sie nicht interessieren.  
+ In Visual Studio 2015 Update 1 können Sie sich im Fenster **Diagnosetools** einfach auf die Ereignisse konzentrieren, die für Sie von Interesse sind.   Die Ereignisnamen werden nun mit den Kategoriepräfixen (**Bewegung**, **Programmausgabe**, **Breakpoint**, **Datei** usw.) angezeigt, damit Sie die Liste schnell nach einer bestimmten Kategorie durchsuchen oder die Kategorien überspringen können, die Sie nicht interessieren.  
   
  Das Fenster hat jetzt ein Suchfeld, damit Sie nach einer bestimmten Zeichenfolge in der Ereignisliste suchen können. Folgende Abbildung zeigt beispielsweise die Ergebnisse der Suche nach der Zeichenfolge "install", der vier Ereignisse entsprechen:  
   
@@ -72,7 +73,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 1.  Öffnen Sie das Projekt in Visual Studio.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: Alt + F2).  
+2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler** (Tastenkombination: **ALT**+**F2**).  
   
 3.  Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Für eine C#-UWP-App kann die Auswahl zum Beispiel folgendermaßen aussehen:  
   
@@ -106,7 +107,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
 |![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
 |![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Festlegen des Analyseziels auf ein anderes Gerät  
+## <a name="set-the-analysis-target-to-another-device"></a>Festlegen des Analyseziels auf ein anderes Gerät  
  Sie können nicht nur Ihre App im Visual Studio-Projekt starten, sondern auch Diagnosesitzungen auf alternativen Zielen ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen mit einer Version Ihrer App auszuführen, die aus dem Windows App Store installiert wurde.  
   
  ![Analyseziel für Diagnosetools auswählen](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

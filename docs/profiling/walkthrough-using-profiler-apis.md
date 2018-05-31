@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448921"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die Verwendung von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools-APIs zu veranschaulichen. Verwenden Sie die Profiler-APIs, um die bei der Instrumentierungsprofilerstellung erfasste Datenmenge einzuschränken.  
@@ -39,7 +40,7 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
   
  [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
   
- [Gewusst wie: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
   
@@ -51,7 +52,7 @@ DataCollection.CurrentId);
   
  Sie können die Datenerfassung über die Befehlszeile ausschalten, ohne einen API-Aufruf verwenden zu müssen. In den folgenden Schritten wird angenommen, dass die Buildumgebung der Befehlszeile so konfiguriert ist, dass sie die Profilerstellungstools und Entwicklungstools ausführt. Dies umfasst die für VSInstr und VSPerfCmd benötigten Schritte. Weitere Informationen finden Sie unter „Command-Line Profiling Tools“ („Profilerstellungstools für die Befehlszeile“).  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Einschränken der Datenerfassung mithilfe von Profiler-APIs  
+## <a name="limit-data-collection-using-profiler-apis"></a>Einschränken der Datenerfassung mithilfe von Profiler-APIs  
   
 #### <a name="to-create-the-code-to-profile"></a>So erstellen Sie Code für die Profilerstellung  
   
@@ -162,5 +163,5 @@ DataCollection.CurrentId);
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)   
- [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md)   
- [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Erste Schritte](../profiling/getting-started-with-performance-tools.md)   
+ [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

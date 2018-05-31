@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447987"
 ---
 # <a name="utilization-view"></a>Auslastungsansicht
 In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu anderen Systemressourcen angezeigt, die vom aktuellen Prozess beansprucht werden (wählen Sie **Analysieren** > **Nebenläufigkeitsschnellansicht** aus, um die Nebenläufigkeitsschnellansicht zu starten). Hier wird die durchschnittliche Kernauslastung durch den analysierten Prozess, den Leerlaufprozess, den Systemprozess und andere Prozesse angezeigt, die auf dem System im Verlauf der Zeit ausgeführt werden. Es wird jedoch nicht angezeigt, welcher Kern zu einem bestimmten Zeitpunkt aktiv ist. Wenn beispielsweise zwei Kerne mit einer Kapazität von 50% während eines bestimmten Zeitraums aktiv sind, zeigt diese Ansicht einen logischen Kern, der verwendet wird. Die Ansicht wird generiert, indem die Profilerstellungszeit in kurze Zeitsegmente unterteilt wird. Für jedes Segment wird im Diagramm die durchschnittliche Anzahl von Prozessthreads ausgegeben, die während des Intervalls auf logischen Kernen ausgeführt werden.  
@@ -29,7 +30,7 @@ In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu and
   
  Die Anzahl der logischen Kerne wird auf der y-Achse angezeigt. Die Hardwareunterstützung von simultanem Multithreading (beispielsweise Hyper-Threading) wird von Windows wie logische Kerne behandelt. Deshalb wird ein System mit einem Prozessor mit vier Kernen, bei dem jeweils zwei Hardwarethreads pro Kern unterstützt werden, als System mit acht logischen Kernen angezeigt. Dies gilt auch für die Kernansicht. Weitere Informationen finden Sie unter [Cores View (Kernansicht)](../profiling/cores-view.md).  
   
- Im GPU-Aktivitätsdiagramm wird die Anzahl der im Verlauf der Zeit genutzten DirectX-Module angezeigt.  Ein Modul ist aktiv, wenn ein DAM-Paket verarbeitet wird.  Im Diagramm werden keine bestimmten DirectX-Module (z.B. 3D-Modul, Videomodul und andere Module) angezeigt.  
+ Im GPU-Aktivitätsdiagramm wird die Anzahl der im Verlauf der Zeit genutzten DirectX-Engines angezeigt.  Eine Engine ist aktiv, wenn ein DAM-Paket verarbeitet wird.  Im Diagramm werden keine bestimmten DirectX-Engines (z.B. 3D-Engine, Video-Engine und andere Engines) angezeigt.  
   
 ## <a name="purpose"></a>Zweck  
  Die Auslastungsansicht ist der empfohlene Ausgangspunkt für Leistungsuntersuchungen mit der Nebenläufigkeitsschnellansicht. Hier steht eine Übersicht über den Parallelitätsgrad der Anwendung im Zeitverlauf zur Verfügung, wodurch sich schnell Bereiche ermitteln lassen, die eine Leistungsoptimierung oder Parallelisierung erfordern.  
@@ -44,11 +45,11 @@ In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu and
   
  Wenn Sie ein relevantes Verhalten ermittelt haben, können Sie die Ansicht der entsprechenden Region vergrößern, indem Sie sie auswählen. Nach dem Vergrößern können Sie zur Threadansicht oder zur Kernansicht wechseln, um eine ausführlichere Analyse vorzunehmen.  
   
- Wenn Sie die GPU mithilfe von C++ AMP oder DirectX verwenden, möchten Sie möglicherweise die Anzahl der ausgelasteten GPU-Module oder die Bereiche ermitteln, in denen sich die GPU unerwartet im Leerlauf befindet.  
+ Wenn Sie die GPU mithilfe von C++ AMP oder DirectX verwenden, möchten Sie möglicherweise die Anzahl der ausgelasteten GPU-Engines oder die Bereiche ermitteln, in denen sich die GPU unerwartet im Leerlauf befindet.  
   
 ## <a name="zooming"></a>Zoomen  
  Wählen Sie zum Vergrößern der Ansicht des CPU-Auslastungsdiagramms oder des GPU-Aktivitätsdiagramms einen Abschnitt aus oder verwenden Sie den Zoomschieberegler über dem Diagramm. Die Zoomeinstellung bleibt erhalten, wenn Sie zu anderen Ansichten wechseln. Wenn Sie die Ansicht wieder verkleinern möchten, verwenden Sie den Zoomschieberegler. Alternativ können Sie auch Zoomen, indem Sie die STRG-TASTE drücken und Scrollen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Concurrency Visualizer (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-visualizer.md)   
- [Cores View (Kernansicht)](../profiling/cores-view.md)
+ [Kernansicht](../profiling/cores-view.md)

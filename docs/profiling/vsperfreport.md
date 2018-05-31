@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448073"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist .csv.  
@@ -91,4 +92,4 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**QueryDiffTables**|Listet die gültigen Tabellen und Spalten für die beiden bereitgestellten Berichtsdateien auf.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)
+ [Leistungsberichtansichten](../profiling/performance-report-views.md)

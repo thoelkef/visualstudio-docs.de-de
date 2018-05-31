@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262906"
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 
 Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den Ausführungszeiten der [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]-Aufrufe von Anwendungen mit mehreren Ebenen, die mit einer oder mehreren Datenbanken kommunizieren.
 
@@ -38,17 +39,17 @@ Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die 
 
 Ebeneninteraktionsdaten können nur in Visual Studio Enterprise angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfCmd
 
 Mit dem Befehlszeilentool VSPerfASPNETCmd können Sie auf die vollständige, im Profilerstellungstool verfügbare Funktionalität zugreifen. Sie können den mit VSPerfCmd erfassten Profilerstellungsdaten Interaktionsebene hinzufügen, indem Sie das Hilfsprogramm **VSPerfCLREnv** verwenden, um Umgebungsvariablen festzulegen oder zu entfernen. Dieses Programm aktiviert Ebeneninteraktionsdaten. Die von Ihnen vorgenommenen Optionen und die für das Erfassen von Daten erforderlichen Prozeduren sind von der Art der Anwendung, für die Sie gerade ein Profil erstellen, abhängig.
 
-## <a name="profiling-stand-alone-applications"></a>Profilerstellung für eigenständige Anwendungen
+## <a name="profile-stand-alone-applications"></a>Profilerstellung für eigenständige Anwendungen
 
 Um Ebeneninteraktionsdaten einer Anwendung hinzuzufügen, die nicht von einem anderen Prozess, wie z.B. einer Windows-Desktopanwendung, die synchrone [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]-Aufrufe an eine SQLServer-Datenbank durchführt, ausgeführt wird, verwenden Sie die Option **VSPerfClrEnv /InteractionOn**, um Umgebungsvariablen festzulegen, und die Option **VSPerfClrEnv /InteractionOff**, um diese zu entfernen.
 
 Im folgenden Beispiel wird das Profil mithilfe der Instrumentierungsmethode für eine Windows-Desktopanwendung erstellt und Ebeneninteraktionsdaten werden erfasst.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Beispiel für die Profilerstellung einer Windows-Desktopanwendung
+### <a name="profile-a-windows-desktop-application-example"></a>Beispiel für die Profilerstellung einer Windows-Desktopanwendung
 
 1. Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten. Klicken Sie auf **Start**, zeigen Sie auf **Alle Programme**, und zeigen Sie dann auf **Zubehör**. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und klicken Sie dann auf **Als Administrator ausführen**.
 
@@ -81,7 +82,7 @@ Im folgenden Beispiel wird das Profil mithilfe der Instrumentierungsmethode für
 
 Weitere Informationen finden Sie unter [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Erstellen von Dienstprofilen
+## <a name="profile-services"></a>Profilerstellung für Dienste
 
 Um Dienstprofile, einschließlich [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen, zu erstellen,verwenden Sie die Option **VSPerfClrEnv /GlobalInteractionOn**, um Umgebungsvariablen festzulegen, und verwenden Sie die Option **VSPerfClrEnv /GlobalInteractionOff**, um diese zu entfernen.
 
@@ -89,7 +90,7 @@ Während Sie Dienstprofile erstellen, einschließlich [!INCLUDE[vstecasp](../cod
 
 Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für einen Windows-Dienst erstellt, und Ebeneninteraktionsdaten werden erfasst.
 
-### <a name="profiling-a-windows-service-example"></a>Profilerstellung für einen Windows-Dienst
+### <a name="profile-a-windows-service-example"></a>Beispiel für die Profilerstellung für einen Windows-Dienst
 
 1. Installieren Sie den Dienst, falls notwendig.
 
@@ -145,7 +146,7 @@ Weitere Informationen finden Sie in einem der folgenden Themen:
 
 [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfASPNETCmd
 
 Mit dem Befehlszeilentool VSPerfASPNETCmd können Sie problemlos Profile für [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen erstellen. Verglichen mit dem Befehlszeilentool **VSPerfCmd** stehen weniger Optionen zur Verfügung, es müssen keine Umgebungsvariablen festgelegt werden, und ein Neustart des Computers ist nicht erforderlich. Die Features von VSPerfASPNETCmd ermöglichen ein besonders einfaches Erfassen von Ebeneninteraktionsdaten.
 

@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448440"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
 
@@ -46,24 +47,24 @@ Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale An
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>So geben Sie die maximale Anzahl von Testiterationen an
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Der Auslastungstest-Editor wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
+2. Der Auslastungstest-Editor wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-3.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
+3. Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
 
-4.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+4. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
 
-5.  Geben Sie im Textfeld für die Eigenschaft **Maximale Anzahl von Testiterationen** einen Wert an, der die maximale Anzahl von Tests angibt, die bei Ausführung des Auslastungstests für das Szenario ausgeführt werden sollen.
+5. Geben Sie im Textfeld für die Eigenschaft **Maximale Anzahl von Testiterationen** einen Wert an, der die maximale Anzahl von Tests angibt, die bei Ausführung des Auslastungstests für das Szenario ausgeführt werden sollen.
 
     > [!NOTE]
     > Wenn Sie für die Eigenschaft **Maximale Anzahl von Testiterationen** den Wert 0 verwenden, wird keine maximale Anzahl von Iterationen angegeben.
 
-6.  Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Maximale Anzahl von Testiterationen** ausführen.
+6. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Maximale Anzahl von Testiterationen** ausführen.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Angeben von Reaktionszeiten zwischen Testiterationen in einem Szenario
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Angeben von Reaktionszeiten zwischen Testiterationen in einem Szenario
 
 Die Eigenschaft **Reaktionszeit zwischen Testiterationen** wird im Eigenschaftenfenster festgelegt, während die Eigenschaften von Auslastungstestszenarios im Auslastungstest-Editor angegeben werden.
 
@@ -72,21 +73,21 @@ Mit der Eigenschaft **Reaktionszeit zwischen Testiterationen** wird die Wartezei
 > [!NOTE]
 > Eine vollständige Liste der Auslastungstest-Szenarioeigenschaften finden Sie unter [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>So geben Sie die Reaktionszeiten zwischen Testiterationen an
+### <a name="to-specify-the-think-time-between-test-iterations"></a>So geben Sie die Reaktionszeiten zwischen Testiterationen an
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, den die Agents verwenden sollen.
+2. Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den die Reaktionszeit angegeben werden soll.
 
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
 
-4.  Geben Sie im Wert für die Eigenschaft **Reaktionszeit zwischen Testiterationen** eine Zahl ein, die die Anzahl von Sekunden vor dem Starten der nächsten Testiteration darstellt.
+4. Geben Sie im Wert für die Eigenschaft **Reaktionszeit zwischen Testiterationen** eine Zahl ein, die die Anzahl von Sekunden vor dem Starten der nächsten Testiteration darstellt.
 
-5.  Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Sie können den Auslastungstest anschließend mit dem neuen Wert für **Reaktionszeit zwischen Testiterationen** ausführen.
+5. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, wählen Sie im Menü **Datei** die Option **Speichern** aus. Sie können den Auslastungstest anschließend mit dem neuen Wert für **Reaktionszeit zwischen Testiterationen** ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

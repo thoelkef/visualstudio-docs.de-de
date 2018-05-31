@@ -9,11 +9,12 @@ description: Häufig gestellte Fragen zur Migration der Volume License Service C
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336125"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -78,7 +79,7 @@ Sie verwalten Abonnements weiterhin über das VLSC, bis Sie die E-Mail zu Visual
 Melden Sie sich beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und folgen Sie dem folgenden Pfad: **Abonnements** > **Visual Studio-Abonnements**. Die PCN befindet sich unterhalb der **Ergebnisse für Vereinbarung/öffentliche Kundennummer**. Eine ausführliche Anleitung zum Suchen Ihrer PCN finden Sie in diesem [Hilfeartikel](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Wie finde ich heraus, wer mein primärer Kontakt oder Ansprechpartner ist?
-Melden Sie sich beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und folgen Sie dem folgenden Pfad: **Lizenzen > Beziehungszusammenfassung**. Wählen Sie Ihre **Lizenzierungs-ID > Kontakte** aus. Eine ausführliche Anleitung zum Suchen Ihres primären Kontakts oder Ansprechpartners finden Sie in diesem [Hilfeartikel](/find-primary-contact/). 
+Melden Sie sich beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und folgen Sie dem folgenden Pfad: **Lizenzen > Beziehungszusammenfassung**. Wählen Sie Ihre **Lizenzierungs-ID > Kontakte** aus. Eine ausführliche Anleitung zum Suchen Ihres primären Kontakts oder Ansprechpartners finden Sie in diesem [Hilfeartikel](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Was geschieht, wenn mein primärer Kontakt oder Ansprechpartner nicht mehr im Unternehmen oder nicht verfügbar ist, um das Onboarding durchzuführen?
 Sie müssen sich [an den Support wenden](https://www.visualstudio.com/subscriptions/support/#talktous) und die E-Mail-Adresse angeben, die Sie zum Verwalten von Abonnements im VLSC verwendet haben. Nach der Überprüfung kann der Support Sie beim Onboardingprozess unterstützen. 
@@ -106,8 +107,8 @@ Aktuelle Informationen bezüglich dieser Migration finden Sie auf unserer [Webse
 
 - [Support](https://www.visualstudio.com/subscriptions/support/) für Visual Studio-Abonnements und die Verwaltung. 
 
-- [Suchen der PCN](/find-pcn/)
+- [Suchen der PCN](find-pcn.md)
 
-- [Suchen des primären Kontakts oder des Ansprechpartners](/find-primary-contact/) 
+- [Suchen des primären Kontakts oder des Ansprechpartners](find-primary-contact.md) 
 
 - [Video](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) für das Onboarding Ihrer Organisation und die Verwaltung von Administratoren 

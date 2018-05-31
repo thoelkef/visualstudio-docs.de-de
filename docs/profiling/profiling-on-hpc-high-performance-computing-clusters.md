@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267844"
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
-Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die Visual Studio-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) auf der Microsoft-Website.
+Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die Visual Studio-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -57,7 +58,7 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 |*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
 |*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe.|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Profilerstellung auf einem HPC-Berechnungsknoten
+## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten
 
 Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistenten, um die Informationen des HPC-Cluster und -Ziel anzugeben. Sie können zusätzliche Optionen in der Eigenschaftenseiten der Leistungssitzung festlegen. Die Profilerstellungstools stellen automatisch die erforderlichen Zielbinärdateien bereit und starten den Profiler und die HPC-Anwendung.
 
@@ -105,7 +106,7 @@ Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistente
 
 10. Klicken Sie auf **Fertig stellen**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Festlegen von HPC-Profilerstellungseigenschaften mithilfe von Seiten für Leistungssitzungseigenschaften
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Festlegen von HPC-Profilerstellungseigenschaften mithilfe von Eigenschaftenseiten der Leistungssitzung
 
 Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den HPC-Assistenten der Profilerstellungstools auf der Seite HPC-Starteigenschaften der Eigenschaftenseite der Leistungssitzung festlegen. Sie können zusätzliche Optionen auf der erweiterten HPC-Eigenschaftenseite festlegen.
 

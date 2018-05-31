@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447816"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie folgendes bedenken:
@@ -56,5 +57,5 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 
 - [Anpassen des Editors](../../ide/customizing-the-editor.md)
 - [Text-Editor, Dialogfeld „Optionen“](../../ide/reference/text-editor-options-dialog-box.md)
-- [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -13,17 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854598e6eccfe32cfd74c0c62d25796fed2e9a66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 516f9addb9dc5ca5f7cc8eac87ec1ce97b0e8415
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262256"
 ---
 # <a name="net-memory-data-views"></a>.NET-Arbeitsspeicherdatenansichten
 Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Berichte von Profiler-Datendateien, die Profilerstellungsdaten für den .NET-Arbeitsspeicher enthalten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Summary View (Zusammenfassungsansicht)](../profiling/summary-view-dotnet-memory-data.md)  
+ [Zusammenfassungsansicht](../profiling/summary-view-dotnet-memory-data.md)  
  Führt die Funktionen und Typen auf, die den meisten Speicher belegen.  
   
  [Allocations View (Zuordnungsansicht)](../profiling/dotnet-memory-allocations-view.md)  
