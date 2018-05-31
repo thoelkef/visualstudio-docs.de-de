@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265043"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Datenansichten der Profiler-Samplingmethode
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Samplingmethode generiert werden.  
@@ -35,7 +36,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Modulansicht](../profiling/modules-view-sampling-data.md)  
  Organisiert Profilerstellungsdaten nach Modul, und führt die Funktionen, Quellcodezeilen und Anweisungen auf, die bei der Sammlung von Samplings ausgeführt wurden.  
   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)  
+ [Caller / Callee view – Sampling Data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten)](../profiling/caller-callee-view-sampling-data.md)  
  Zeigt Profilerstellungsdaten für eine ausgewählte Funktion und die Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)  
@@ -51,7 +52,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Prozessansicht](../profiling/process-view.md)  
  Führt Start- und Endzeiten von Prozessen und Threads auf.  
   
- [Marks View (Markierungsansicht)](../profiling/marks-view.md)  
+ [Markierungsansicht](../profiling/marks-view.md)  
  Führt in eine Profilerstellungs-Datendatei eingefügte ETW- und Samplingereignisse auf.  
   
  [Funktionsdetailansicht](../profiling/function-details-view.md)  

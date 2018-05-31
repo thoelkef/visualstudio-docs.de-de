@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448336"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -160,7 +161,7 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
 ## <a name="see-also"></a>Siehe auch
 
 - [Aus Verwendung generieren](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Verwendung von IntelliSense](../ide/using-intellisense.md)
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Schnelle Aktionen](../ide/quick-actions.md)

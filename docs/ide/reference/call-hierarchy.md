@@ -1,6 +1,6 @@
 ---
-title: Anzeigen der Aufrufhierarchie in Visual Studio
-ms.date: 01/10/2018
+title: Suchen der Aufrufe einer Methode
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448349"
 ---
 # <a name="view-call-hierarchy"></a>Anzeigen der Aufrufhierarchie
 
-Durch Anzeigen der Aufrufhierarchie für Ihren Code können Sie in allen Aufrufen an und aus einer ausgewählten Methode, einer ausgewählten Eigenschaft oder einem ausgewählten Konstruktor navigieren. So verstehen Sie, wie der Code funktioniert und können die Auswirkungen von Codeänderungen besser bewerten. Sie können mehrere Codeebenen überprüfen, um komplexe Methodenaufrufketten und zusätzliche Einstiegspunkte in den Code anzuzeigen. So können Sie sämtliche möglichen Ausführungswege erkunden.
+Durch Anzeigen der Aufrufhierarchie für Ihren Code können Sie in allen Aufrufen an und manchmal aus einer ausgewählten Methode, einer ausgewählten Eigenschaft oder einem ausgewählten Konstruktor navigieren. So verstehen Sie, wie der Code funktioniert und können die Auswirkungen von Codeänderungen besser bewerten. Sie können mehrere Codeebenen überprüfen, um komplexe Methodenaufrufketten und zusätzliche Einstiegspunkte in den Code anzuzeigen. So können Sie sämtliche möglichen Ausführungswege erkunden.
 
 In Visual Studio können Sie eine Aufrufhierarchie zur Entwurfszeit anzeigen. Sie müssen also keinen Haltepunkt setzen und den Debugger starten, um die Laufzeit-Aufrufliste anzuzeigen.
 
 ## <a name="use-the-call-hierarchy-window"></a>Verwenden des Fensters „Aufrufhierarchie“
 
-Klicken Sie mit der rechten Maustaste auf Methode, Eigenschaft oder Konstruktoraufruf, damit das Fenster **Aufrufhierarchie** angezeigt wird, und klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.
+Klicken Sie mit der rechten Maustaste im Code-Editor auf den Namen einer Methode, Eigenschaft oder eines Konstruktoraufrufs, damit das Fenster **Aufrufhierarchie** angezeigt wird. Klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.
 
-Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Aufrufe an** *Membername* und **Aufrufe aus** *Membername* angezeigt. In der folgenden Abbildung werden diese Knoten im Fenster **Aufrufhierarchie** angezeigt.
+Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Calls To** (Aufrufe an) *Membername* und in C++ **Calls From** (Aufrufe von) *Membername* angezeigt.
 
-![Aufrufhierarchie mit einem geöffneten Knoten](../../ide/reference/media/onenode.png "OneNode")
+In C++-Code können Sie Aufrufe sowohl an als auch von einem Member anzeigen:
+
+![Aufrufhierarchie für C++-Code in Visual Studio](media/call-hierarchy-cpp.png)
+
+In C#- und Visual Basic-Code können Sie Aufrufe an einen Member sehen, aber keine Aufrufe von diesem:
+
+![Aufrufhierarchie für C#-Code in Visual Studio](media/call-hierarchy-csharp.png)
 
 - Wenn Sie den **Calls To**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.
 
-- Wenn Sie den **Calls From**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.
+- Wenn Sie in C++ den **Calls From**-Knoten erweitern, werden alle Member angezeigt, die den ausgewählten Member aufrufen.
 
-Anschließend können Sie sämtliche dieser Unterknotenmembers auf **Calls To**- und **Calls From**-Knoten erweitern. Dadurch können Sie, wie in der folgenden Abbildung dargestellt, in den Aufruferstapel navigieren.
+Sie können jeden aufrufenden Member erweitern, um die **Calls To**-Knoten sowie in C++ die **Call From**-Knoten anzeigen zu lassen. Dadurch können Sie, wie in der folgenden Abbildung dargestellt, in den Aufruferstapel navigieren:
 
-![Aufrufhierarchie: Mehrere Knoten geöffnet](../../ide/media/multiplenodes.png "MultipleNodes")
+![Fenster Aufrufhierarchie mit mehreren erweiterten Ebenen](media/call-hierarchy-csharp-expanded.png)
 
 Für Members, die als virtuell oder abstrakt definiert sind, wird ein **Overrides method name**-Knoten (Knoten zur Außerkraftsetzung des Methodennamens) angezeigt. Für Schnittstellenmember wird ein Knoten zum **Implementieren des Methodennamens** angezeigt. Diese erweiterbaren Knoten erscheinen auf derselben Ebene wie **Calls To**- und **Calls From**-Knoten.
 
@@ -52,9 +59,9 @@ Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten M
 - Wenn das **Codedefinitionsfenster** geöffnet ist, zeigt es den Code für den ausgewählten Member an (nur C++). Weitere Informationen zu diesem Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.
+> Die **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.
 
-### <a name="shortcut-menu-items"></a>Kontextmenüelemente
+## <a name="shortcut-menu-items"></a>Kontextmenüelemente
 
 In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.
 

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79399ebea9fd5dedd645b148910d6a4ced47902
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447660"
 ---
-# <a name="visual-studio-profiler-api-reference-native"></a>Referenz zu Profiler-APIs in Visual Studio (nativ)
+# <a name="visual-studio-profiler-api-reference-native"></a>Referenz für Profiler-APIs in Visual Studio (nativ)
 Visual Studio-Profiler-APIs ermöglichen Ihnen das programmgesteuerte Bestimmen der gesammelten Datenmenge und Einfügen von Zeitstempel- und Profilmarkierungen bei der Profilerstellung. Um native APIs verwenden zu können, beziehen Sie die Headerdatei „VSPerf.h“ ein und fügen „VSPerf.lib“ Ihrem Projekt hinzu.  
   
 > [!NOTE]

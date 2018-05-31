@@ -2,16 +2,16 @@
 ## Benutzeroberflächen für Abonnenten
 ### [Verwenden des Abonnentenportals](using-the-subscriber-portal.md)
 #### [Aktivieren von Einzelhandelsabonnements](activate-store-subscriptions.md)
-#### [Signing In (Anmelden)](signing-in.md)
+#### [Anmelden](signing-in.md)
 #### [Alternative Identitäten](vs-alternate-identity.md)
 ##### [Anmeldung mit Aliasen](aliasing.md)
-#### [Verwalten Ihres Abonnements](manage-vs-subscriptions.md)
+#### [Verwalten Ihrer Abonnements](manage-vs-subscriptions.md)
 ### [Herunterladen von Software](subscriber-downloads.md)
 #### [Liste der verfügbaren Softwaredownloads](software-download-list.md)
-### [Abrufen und Verwalten von Product Keys](product-keys.md)
+### [Abrufen & Verwalten von Product Keys](product-keys.md)
 ### Visual Studio Dev Essentials
-#### [Beitreten zu Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Verlassen von Visual Studio Dev Essentials](leave-vsde.md)
+#### [Einstieg in Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [Kündigen vom Visual Studio Dev Essentials-Abonnement](leave-vsde.md)
 ### [Vorteile für Abonnenten](subscriber-benefits.md)
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
@@ -74,10 +74,9 @@
 #### [Verwalten von Abonnements für MPN](manage-mpn-subscriptions.md)
 #### [Microsoft für Startups](program-startups.md)
 ## Ressourcen
-### [Visual Studio-Lizenzbedingungen](vs-license-terms.md)
 ### [Whitepaper zur Visual Studio-Lizenzierung](http://aka.ms/vslicensing)
 ### [Vergleich von Abonnementoptionen und -preisen](https://www.visualstudio.com/vs/pricing)
 ### [Vergleich von Visual Studio-IDE-Features](https://www.visualstudio.com/vs/compare)
 ### [Support für die Verwaltung von Visual Studio und Abonnements](https://www.visualstudio.com/support/support-overview-vs)
-### [Volumenlizenzen und Produktnutzungsrechte (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft-Vereinbarung für Produkte und Dienste (Microsoft Products and Services Agreement, MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

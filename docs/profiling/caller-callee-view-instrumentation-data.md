@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8048d7dfd54627394705b2ca9e2ba9949f2bca1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8a24d19fabc3cb82dbb4004ec71b6fa00bc470c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336112"
 ---
-# <a name="callercallee-view---instrumentation-data"></a>Aufrufer-/Aufgerufener-Ansicht – Instrumentationsdaten
+# <a name="callercallee-view---instrumentation-data"></a>Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu einer ausgewählten Funktion und ihren übergeordneten und untergeordneten Funktionen in der Aufrufstruktur angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
   
  **Aktuelle Funktion** wird im mittleren Raster angezeigt und gibt Profilerstellungsinformationen zu der ausgewählten Funktion an. Die Werte enthalten alle Aufrufe an die Funktion.  
@@ -46,7 +47,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 |**Type**|Der Kontext der Funktion:<br /><br /> **0** – die aktuelle Funktion<br /><br /> **1** – eine Funktion, die die aktuelle Funktion aufruft<br /><br /> **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Name der Stammfunktion**|Der Name der aktuellen Funktion. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
   
-## <a name="elapsed-inclusive-values"></a>Verstrichene inklusive Zeit  
+## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in untergeordneten Funktionen und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabevorgänge.  
   
 |Spalte|description|  
@@ -57,7 +58,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
 |**Maximal verstrichene inklusive Zeit**|Die maximale verstrichene inklusive Zeit eines Aufrufs dieser Funktion in diesem Kontext.|  
 |**Mindestens verstrichene inklusive Zeit**|Die mindestens verstrichene inklusive Zeit eines Aufrufs dieser Funktion in diesem Kontext.|  
   
-## <a name="elapsed-exclusive-values"></a>Verstrichene exklusive Zeit  
+## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit  
  Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.  
   
 |Spalte|description|  
@@ -92,6 +93,6 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen zu e
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten im Profiler](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten im Profiler](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+ [Caller/Callee view – sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten)](../profiling/caller-callee-view-sampling-data.md)   
+ [Caller/Callee view – .NET memory sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

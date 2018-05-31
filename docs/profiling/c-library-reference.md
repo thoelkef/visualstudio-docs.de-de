@@ -12,39 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 077ae868561f58596955ce39a9335f845f00f8b5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e48a9b5f601994a7a32aae38bdafbfdce6da22e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266371"
 ---
-# <a name="c-library-reference"></a>C Bibliotheksverweis
-Dieser Abschnitt enthält Referenzinformationen für die Parallelitätsschnellansicht SDK.  
+# <a name="c-library-reference"></a>C Bibliotheksreferenz
+Dieser Abschnitt enthält Referenzinformationen für das Nebenläufigkeitsschnellansichts-SDK.  
   
 > [!NOTE]
 >  Der C-Sprachstandard reserviert die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, für Implementierungen wie Bibliotheken. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [CvCreateDefaultMarkerSeriesOfDefaultProvider-Funktion](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
-  
- [CvCreateMarkerSeries-Funktion](../profiling/cvcreatemarkerseries-function.md)  
-  
- [CvCreateMarkerSeriesWithCodePageA-Funktion](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
-  
- [CvEnterSpan-Funktion](../profiling/cventerspan-function.md)  
-  
- [CvInitProvider-Funktion](../profiling/cvinitprovider-function.md)  
-  
- [CvIsEnabled-Funktion](../profiling/cvisenabled-function.md)  
-  
- [CvLeaveSpan-Funktion](../profiling/cvleavespan-function.md)  
-  
- [CvReleaseMarkerSeries-Funktion](../profiling/cvreleasemarkerseries-function.md)  
-  
- [CvReleaseProvider-Funktion](../profiling/cvreleaseprovider-function.md)  
-  
- [CvWriteAlert-Funktion](../profiling/cvwritealert-function.md)  
-  
- [CvWriteFlag-Funktion](../profiling/cvwriteflag-function.md)  
-  
- [CvWriteMessage-Funktion](../profiling/cvwritemessage-function.md)

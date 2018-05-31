@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fee1d5174115d95718fd9468b2b5770275ae99
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8e011dfd56adeaa832a1925e20e246fb66ce7979
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264520"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Beispiele für die Befehlszeilenparameter für die Installation von Visual Studio 2017
 
@@ -110,7 +111,7 @@ In jedem Beispiel stellen `vs_enterprise.exe`, `vs_professional.exe` und `vs_com
 
 ## <a name="using---path"></a>Verwenden von „--path“
 
-Diese Befehlszeilenparameter sind **neu in 15.7**. Weitere Informationen zu Befehlszeilenparametern finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+Diese Befehlszeilenparameter sind **neu in Version 15.7**. Weitere Informationen zu Befehlszeilenparametern finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
 
 * Verwenden der Pfade „install“, „cache“ und „shared“:
 

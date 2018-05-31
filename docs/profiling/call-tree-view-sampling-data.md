@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7c15cb1e363a00f3d330a0c5cc5c9927c7e2b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90035daf13008122e7d529408a6de0389b311628
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262368"
 ---
-# <a name="call-tree-view---sampling-data"></a>Aufrufstrukturansicht – Samplingdaten
+# <a name="call-tree-view---sampling-data"></a>Aufrufstrukturansicht: Samplingdaten
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden.  
   
 > [!NOTE]
@@ -29,10 +30,10 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
  Die Werte in der Aufrufstrukturansicht beziehen sich auf die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden. Prozentwerte werden berechnet, indem der Funktionsinstanzwert mit der Gesamtzahl der Samplings in der Profilerstellung verglichen wird.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
+## <a name="highlight-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad des Prozesses oder der Funktion hervorheben, für die die meisten Samplings durchgeführt wurden. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf den Prozess oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Festlegen des Stammknotens der Aufrufstruktur  
+## <a name="set-the-call-tree-root-node"></a>Festlegen des Stammknotens der Aufrufstruktur  
  Jeder Prozess in der Profilerstellung wird als Stammknoten angezeigt. Sie können den Startknoten der Aufrufstrukturansicht festlegen, indem Sie mit der rechten Maustaste auf den Knoten klicken, der als Startknoten festgelegt werden soll, und dann **Stamm festlegen** auswählen.  
   
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste auf das Fenster der Aufrufstrukturansicht, und wählen Sie dann **Stamm zurücksetzen** aus.  
@@ -55,7 +56,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-sampling-data.md)   
- [Aufrufstrukturansicht – .NET-Speichersamplingdaten im Profiler](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Aufrufstrukturansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-instrumentation-data.md)
+ [Aufrufstrukturansicht: Profiler-Samplingdaten](../profiling/call-Tree-view-sampling-data.md)   
+ [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Aufrufstrukturansicht: .NET-Speicherinstrumentationsdaten](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)

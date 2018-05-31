@@ -9,11 +9,12 @@ description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Ad
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335719"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten? 
 
@@ -34,6 +35,6 @@ Da die Administratormigration Daten aus dem VLSC bezüglich der „Anmelde-E-Mai
 
 ## <a name="solution"></a>Lösung
 
-Um das Problem zu beheben, müssen Sie Abonnenteninformationen bearbeiten, um ihre Anmelde-E-Mail-Adressen zu aktualisieren.  Bearbeitungen können für einzelne Abonnenten oder mehrere gleichzeitig vorgenommen werden. Ausführliche Informationen finden Sie unter [Bearbeiten von Visual Studio-Abonnementzuweisungen](/visualstudio/subscriptions/edit-license).  
+Um das Problem zu beheben, müssen Sie Abonnenteninformationen bearbeiten, um ihre Anmelde-E-Mail-Adressen zu aktualisieren.  Bearbeitungen können für einzelne Abonnenten oder mehrere gleichzeitig vorgenommen werden. Ausführliche Informationen finden Sie unter [Bearbeiten von Visual Studio-Abonnementzuweisungen](edit-license.md).  
 
 Nachdem Sie die E-Mail-Adressen der Abonnenten aktualisiert haben, sollten Sie ihnen mitteilen, dass ihre Anmeldeinformationen geändert wurden.  Sie erhalten auch eine E-Mail mit den aktualisierten Informationen.   

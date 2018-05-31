@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Szenariostartverzögerungen für Auslastungstests in Visual Studio
+title: Konfigurieren des Szenarios „Startverzögerungen für Auslastungstests“
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448479"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurieren des Szenarios „Startverzögerungen in Auslastungstests“
 
@@ -72,11 +73,11 @@ Die Eigenschaft **Während Aufwärmdauer deaktivieren** wird über das Eigenscha
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2. Klicken Sie im Ordner **Szenarios** der Auslastungsteststrukturen auf den Szenarioknoten, den die Agents verwenden sollen.
+2. Wählen Sie im Ordner **Szenarios** den Szenarioknoten aus, für den Sie das Aufwärmverhalten ändern möchten.
 
 3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im **Eigenschaftenfenster** angezeigt.
 
      Wählen Sie in der Eigenschaft **Während Aufwärmdauer deaktivieren** entweder die Option **TRUE** oder **FALSE** aus.
 

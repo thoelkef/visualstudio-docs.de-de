@@ -1,6 +1,6 @@
 ---
-title: Anzeigen der Codestruktur in Visual Studio
-ms.date: 11/04/2016
+title: Anzeigen von Codestruktur mithilfe von Klassenansicht, Aufrufhierarchie, Objektkatalog und Codedefinition (Fenster)
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -27,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336138"
 ---
-# <a name="view-the-structure-of-code"></a>Anzeigen der Codestruktur
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
-Sie können die Objekte und Member in Visual Studio-Projekten, .NET Framework-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLL) und Typbibliotheken (TLB) untersuchen.
+Sie können in Visual Studio Klassen und deren Member mithilfe verschiedener Toolfenster untersuchen, darunter **Klassenansicht**, **Aufrufhierarchie**, **Objektkatalog** und **Codedefinition** (nur C++). Mit diesen Tools können Sie Code in Visual Studio-Projekten, .NET Framework-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLLs) und Typbibliotheken (TLB) untersuchen.
 
-Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren zuvor aufgelisteten Toolfenstern wechseln zu müssen.
+Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren Toolfenstern wechseln zu müssen.
 
-Wenn Sie Visual Studio Enterprise verwenden, können Sie zum Visualisieren der Struktur des Codes und seiner Abhängigkeiten in der gesamten Projektmappe entsprechende Code Maps verwenden und Detailinformationen zu Codekomponenten anzeigen, die Sie interessieren. Weitere Informationen finden Sie unter [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).
-
-> [!NOTE]
-> Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.
+Wenn Sie über die Edition Visual Studio Enterprise verfügen, können Sie zum Visualisieren der Struktur des Codes und seiner Abhängigkeiten in der gesamten Projektmappe entsprechende *Code Maps* verwenden. Weitere Informationen finden Sie unter [Map dependencies with code maps (Zuordnen von Abhängigkeiten mit Code Maps)](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Klassenansicht (Visual Basic, C#, C++)
 
-Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** sowie in einem separaten Fenster angezeigt. Das Fenster **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).
+Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** und in einem separaten Fenster angezeigt. **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).
 
 Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.
 
@@ -56,7 +54,7 @@ Wenn Ihr Projekt in die Quellcodeverwaltung eingecheckt wird, zeigt jedes **Klas
 
 ### <a name="class-view-toolbar"></a>Klassenansicht: Symbolleiste
 
-Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle.
+Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle:
 
 |||
 |-|-|
@@ -67,7 +65,7 @@ Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle.
 
 ### <a name="class-view-settings"></a>Klassenansicht: Einstellungen
 
-Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf.
+Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf:
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist d
 
 ### <a name="class-view-shortcut-menu"></a>Klassenansicht: Kontextmenü
 
-Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten.
+Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten:
 
 |||
 |-|-|
@@ -103,11 +101,11 @@ Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählt
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Fenster „Aufrufhierarchie“ (Visual Basic, C#, C++)
 
-Das Fenster **Aufrufhierarchie** zeigt an, wo eine bestimmte Methode (oder Eigenschaft oder ein Konstruktor) aufgerufen wird, und listet die von dieser Methode aufgerufenen Methoden auf. Sie können mehrere Ebenen des Aufrufdiagramms anzeigen, in dem die Aufrufer/Aufgerufenem-Beziehung zwischen den Methoden in einem angegebenen Bereich angezeigt wird.
+Das Fenster **Aufrufhierarchie** zeigt, wo eine bestimmte Methode oder Eigenschaft aufgerufen wird. Außerdem werden die Methoden aufgeführt, die von dieser Methode aufgerufen werden. Sie können mehrere Ebenen des Aufrufdiagramms anzeigen, in dem die Beziehung zwischen Aufrufer und Aufgerufenem zwischen den Methoden in einem angegebenen Bereich angezeigt wird.
 
-Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) und dann im Kontextmenü **Aufrufhierarchie anzeigen** auswählen. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen.
+Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) im Editor auswählen und dann im Kontextmenü auf **Aufrufhierarchie anzeigen** klicken. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen:
 
-![Aufrufhierarchie: Mehrere Knoten geöffnet](../ide/media/multiplenodes.png "MultipleNodes")
+![Fenster „Aufrufhierarchie“ in Visual Studio](../ide/media/multiplenodes.png)
 
 Mithilfe der Dropdownliste auf der Symbolleiste können Sie den Bereich der Hierarchie angeben: die Projektmappe, das aktuelle Projekt oder das aktuelle Dokument.
 
@@ -115,7 +113,7 @@ Im Hauptbereich werden die Aufrufe zur und von der Methode angezeigt. Im Bereich
 
 Das Fenster **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um diese Verweise zu suchen.
 
-Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle.
+Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
 |||
 |-|-|
@@ -142,7 +140,7 @@ Sie können den **Objektkatalog** zum Hinzufügen eines Assemblyverweises auf ei
 
 ### <a name="object-browser-settings"></a>Objektkatalog: Einstellungen
 
-Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten festlegen.
+Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten festlegen:
 
 |||
 |-|-|
@@ -160,7 +158,7 @@ Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Objektkatalog: Kontextmenübefehle
 
-Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit vom Typ des ausgewählten Objekts die folgenden Befehle enthalten.
+Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit vom Typ des ausgewählten Objekts die folgenden Befehle enthalten:
 
 |||
 |-|-|
@@ -214,7 +212,7 @@ Das Kontextmenü in der **Codedefinition** kann die folgenden Befehle enthalten:
 |**Definition bearbeiten**|Verschiebt die Einfügemarke an die Definition im Codefenster.|
 |**Codierung auswählen**|Öffnet das Fenster **Codierung**, damit Sie eine Codierung für die Datei festlegen können.|
 
-### <a name="document-outline-window"></a>Fenster Dokumentgliederung
+## <a name="document-outline-window"></a>Fenster Dokumentgliederung
 
 Sie können das Fenster **Dokumentgliederung** in Verbindung mit Designeransichten verwenden, z.B. mit dem Designer für XAML-Seiten oder einem Windows Form-Designer oder mit HTML-Seiten. Dieses Fenster zeigt die Elemente in einer Strukturansicht an, damit Sie die logische Struktur des Formulars oder der Seite betrachten und Steuerelemente finden können, die tief eingebettet oder ausgeblendet sind.
 
