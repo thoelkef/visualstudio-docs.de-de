@@ -9,11 +9,12 @@ description: Lizenzbedingungen für Visual Studio-Abonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454713"
 ---
 **MICROSOFT-SOFTWARE-LIZENZBEDINGUNGEN FÜR DIE FOLGENDEN VISUAL STUDIO-ABONNEMENTS:**
 
@@ -128,7 +129,7 @@ WENN SIE DIESE LIZENZBEDINGUNGEN EINHALTEN, ERHALTEN SIE DIE FOLGENDEN RECHTE.
     (manchmal als „Multiplexing“ oder „Pooling“ bezeichnet) verwenden, verringert sich nicht die Anzahl der erforderlichen Lizenzen eines beliebigen Typs.
 
 
-8. **OBLIGATORISCHE AKTIVIERUNG.** Durch die Aktivierung wird die Nutzung der Software einem bestimmten Gerät zugeordnet. Während der Aktivierung sendet die Software Informationen zur Software und zum Gerät an Microsoft. Zu diesen Informationen zählen die Version, die Sprache und der Product Key der Software, die IP-Adresse des Geräts sowie von der Hardwarekonfiguration des Geräts abgeleitete Informationen. Weitere Informationen finden Sie unter [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)]. Durch Verwendung der Software willigen Sie in die Übermittlung dieser Informationen ein. Vor der Aktivierung dürfen Sie die während des Installationsprozesses installierte Softwareversion verwenden. **Ihr Recht zur Nutzung der Software nach dem im Installationsprozess angegebenen Zeitraum ist beschränkt, es sei denn, sie wird aktiviert.** Dadurch soll eine nicht lizenzierte Verwendung der Software verhindert werden. Wenn Sie die Software nicht aktivieren, können Sie sie nach diesem Zeitpunkt nicht mehr verwenden. Wenn das Gerät mit dem Internet verbunden ist, stellt die Software für die Aktivierung möglicherweise automatisch eine Verbindung zu Microsoft her. Sie können die Software auch manuell über das Internet oder telefonisch aktivieren. In diesem Fall können Servicegebühren für Internet und Telefon anfallen. Bei einigen an Ihren Computerkomponenten oder der Software vorgenommenen Änderungen kann eine erneute Aktivierung der Software erforderlich sein. **Die Software erinnert Sie so lange an die Aktivierung, bis Sie diese durchführen.**
+8. **OBLIGATORISCHE AKTIVIERUNG.** Durch die Aktivierung wird die Nutzung der Software einem bestimmten Gerät zugeordnet. Während der Aktivierung sendet die Software Informationen zur Software und zum Gerät an Microsoft. Zu diesen Informationen zählen die Version, die Sprache und der Product Key der Software, die IP-Adresse des Geräts sowie von der Hardwarekonfiguration des Geräts abgeleitete Informationen. Weitere Informationen finden Sie unter [Microsoft-Produktaktivierung](https://www.microsoft.com/en-us/piracy/mpa.aspx). Durch Verwendung dieser Software willigen Sie in die Übermittlung dieser Informationen ein. Vor der Aktivierung dürfen Sie die während des Installationsprozesses installierte Softwareversion verwenden. **Ihr Recht zur Nutzung der Software nach dem im Installationsprozess angegebenen Zeitraum ist beschränkt, es sei denn, sie wird aktiviert.** Dadurch soll eine nicht lizenzierte Verwendung der Software verhindert werden. Wenn Sie die Software nicht aktivieren, können Sie sie nach diesem Zeitpunkt nicht mehr verwenden. Wenn das Gerät mit dem Internet verbunden ist, stellt die Software für die Aktivierung möglicherweise automatisch eine Verbindung zu Microsoft her. Sie können die Software auch manuell über das Internet oder telefonisch aktivieren. In diesem Fall können Servicegebühren für Internet und Telefon anfallen. Bei einigen an Ihren Computerkomponenten oder der Software vorgenommenen Änderungen kann eine erneute Aktivierung der Software erforderlich sein. **Die Software erinnert Sie so lange an die Aktivierung, bis Sie diese durchführen.**
 
 9. **VALIDIERUNG.**
 

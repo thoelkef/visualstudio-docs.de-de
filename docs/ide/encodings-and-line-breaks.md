@@ -19,25 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446692"
 ---
-# <a name="encodings-and-line-breaks"></a>Codierungen und Zeilenumbrüche
+# <a name="encodings-and-line-endings"></a>Codierungen und Zeilenenden
 
 In Visual Studio werden die folgenden Zeichen als Zeilenumbrüche interpretiert:
 
--   CR LF: Wagenrücklauf und Zeilenvorschub, Unicode-Zeichen 000D und 000A
+- CR LF: Wagenrücklauf und Zeilenvorschub, Unicode-Zeichen 000D und 000A
 
--   LF: Zeilenvorschub, Unicode-Zeichen 000A
+- LF: Zeilenvorschub, Unicode-Zeichen 000A
 
--   NEL: Nächste Zeile, Unicode-Zeichen 0085
+- NEL: Nächste Zeile, Unicode-Zeichen 0085
 
--   LS: Zeilentrennzeichen, Unicode-Zeichen 2028
+- LS: Zeilentrennzeichen, Unicode-Zeichen 2028
 
--   PS: Absatztrennzeichen, Unicode-Zeichen 2029
+- PS: Absatztrennzeichen, Unicode-Zeichen 2029
 
 In Text, der aus anderen Anwendungen kopiert wurde, bleiben die Codierungen und Zeilenumbruchzeichen unverändert. Wenn Sie beispielsweise Text aus Windows-Editor kopieren und in eine Textdatei in Visual Studio einfügen, weist der Text dieselben Einstellungen auf wie in Windows-Editor.
 
@@ -56,4 +57,4 @@ Klicken Sie auf **Datei** > **Erweiterte Speicheroptionen**. Über das sich öff
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Writing code in the editor (Schreiben von Code im Code-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

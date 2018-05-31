@@ -9,11 +9,12 @@ description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335592"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -22,7 +23,7 @@ Visual Studio-Abonnements bietet die umfassendste Sammlung von Ressourcen zum Er
 Die Vorteile werden in drei Kategorien unterteilt:
 
 ## <a name="tools"></a>Tools
-Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](/vs-ide-benefit/), auf [Visual Studio Team Services](/vs-vsts/) und [Azure](/vs-azure/).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
+Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](vs-ide-benefit.md), auf [Visual Studio Team Services](vs-vsts.md) und [Azure](vs-azure.md).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
 
 ## <a name="professional-development"></a>Berufliche Entwicklung
 Um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit den neuesten Technologien Schritt zu halten, bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Branchenführern angeboten werden. Hier einige Beispiele für die angebotenen Inhalte:

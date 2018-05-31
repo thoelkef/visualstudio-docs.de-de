@@ -9,11 +9,12 @@ description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgew�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448687"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -64,7 +65,7 @@ Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetz
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, | 3 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, | 3 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | 3 Monate                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
@@ -83,6 +84,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei der Verwendung von DataCamp?  Sehen Sie sich diese Ressourcen an:
     - [DataCamp Community](https://www.datacamp.com/community/tutorials) mit Foren und Tutorials.
-    - [FAQ](https://datacamp.groovehq.com/help_center).  Auf der Seite mit häufig gestellten Fragen haben Sie auch die Möglichkeit, eine E-Mail mit einer Supportanfrage zu senden.
+    - Im [DataCamp-Hilfecenter](https://support.datacamp.com/hc) können Sie Hilfethemen durchsuchen und sich Fragen anderer Benutzer ansehen.  
+    - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
 -  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 

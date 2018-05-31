@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262230"
 ---
-# <a name="call-tree-view---instrumentation-data"></a>Aufrufstrukturansicht – Instrumentationsdaten
+# <a name="call-tree-view---instrumentation-data"></a>Aufrufstrukturansicht: Instrumentationsdaten
 Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktionsinstanzen an, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden. Prozentwerte werden berechnet, indem der Wert der Funktionsinstanzen mit der gesamten verstrichenen inklusiven Zeit aller Funktionen in der Profilerstellung verglichen wird.  
   
 ## <a name="general"></a>Allgemein  
@@ -39,7 +40,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 |**Inklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentation verursachte zusätzliche Zeitaufwand für diese Funktion und ihre untergeordneten Funktionen. Der zusätzliche Testaufwand wurde von allen inklusiven Zeiten subtrahiert.|  
 |**Ebene**|Die Tiefe der Funktion in der Aufrufstruktur. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
   
-## <a name="elapsed-inclusive-values"></a>Verstrichene inklusive Zeit  
+## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Die Werte für die verstrichene inklusive Zeit geben die Zeit an, die sich Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden, in der Aufrufliste befanden. Die Zeit umfasst die Zeit in untergeordneten Funktionen, die von der Funktion aufgerufen wurden, und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.  
   
 |Spalte|description|  
@@ -50,7 +51,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 |**Maximal verstrichene inklusive Zeit**|Die maximale verstrichene inklusive Zeit eines Aufrufs dieser Funktion in diesem Kontext.|  
 |**Mindestens verstrichene inklusive Zeit**|Die mindestens verstrichene inklusive Zeit eines Aufrufs dieser Funktion in diesem Kontext.|  
   
-## <a name="elapsed-exclusive-values"></a>Verstrichene exklusive Zeit  
+## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit  
  Die Werte für die verstrichene exklusive Zeit geben die Zeit an, die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden, Code im Funktionsrumpf ausgeführt haben, d.h., als sich die Funktion an erster Stelle der Aufrufliste befunden hat. Die Zeit beinhaltet die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde, wird jedoch nicht berücksichtigt.  
   
 |Spalte|description|  
@@ -72,7 +73,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 |**Maximale inklusive Anwendungszeit**|Die maximale inklusive Anwendungszeit eines Aufrufs dieser Funktion in diesem Kontext.|  
 |**Minimale inklusive Anwendungszeit**|Die minimale inklusive Anwendungszeit eines Aufrufs dieser Funktion in diesem Kontext.|  
   
-## <a name="application-exclusive-values"></a>Exklusive Anwendungszeit  
+## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Die Werte für die exklusive Anwendungszeit geben die Zeit an, die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde, direkt Code im Funktionsrumpf ausgeführt haben, d.h., als sich die Funktion an erster Stelle der Aufrufliste befunden hat. Die Zeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Auch die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde, wird nicht berücksichtigt.  
   
 |Spalte|description|  
@@ -86,5 +87,5 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)   
- [Aufrufstrukturansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Aufrufstrukturansicht: .NET-Speicherinstrumentationsdaten](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

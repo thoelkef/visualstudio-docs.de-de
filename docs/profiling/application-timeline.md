@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264455"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
-Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bezug auf die Anwendungsinteraktion in XAML-Anwendungen zu suchen und zu beheben. Mit diesem Tool können Sie die Leistung von XAML-Anwendungen verbessern, indem Sie eine detaillierte Ansicht des Ressourcenverbrauchs einer Anwendung bereitstellen. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Anordnen und Rendern), zum Verarbeiten von Netzwerk- und Datenträgeranforderungen sowie in Szenarien wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt.  
+Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bezug auf die Anwendungsinteraktion in XAML-Anwendungen zu suchen und zu beheben. Mit diesem Tool können Sie die Leistung von XAML-Anwendungen verbessern, indem Sie eine detaillierte Ansicht des Ressourcenverbrauchs einer Anwendung bereitstellen. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Anordnen und Rendern), zum Verarbeiten von Netzwerk- und Datenträgeranforderungen sowie in Szenarios wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt.  
   
- Die **Anwendungszeitachse** ist eines der Tools, die Sie mit dem Befehl **Debuggen/Leistungsprofiler...** starten können.  
+ Die **Anwendungszeitachse** ist eines der Tools, die Sie mit dem Befehl **Debuggen** > **Leistungsprofiler** starten können.  
   
  Dieses Tool ersetzt das Tool **XAML-UI-Reaktionsfähigkeit** , das zum Diagnosetoolset für Visual Studio 2013 gehört.  
   
@@ -36,7 +37,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
 > [!NOTE]
 >  Zusätzlich zu den Daten der **Anwendungszeitachse** können Sie Daten zu CPU-Auslastung und Energieverbrauch sammeln und analysieren. Sie [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Erfassen von Anwendungszeitachsen-Daten  
+##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a>Erfassen von Anwendungszeitachsen-Daten  
  Sie können Profile für die Reaktionsfähigkeit Ihrer App auf dem lokalen Computer, einem angeschlossenen Gerät, dem Visual Studio-Simulator bzw. -Emulatoren sowie auf einem Remotegerät erstellen. Sie [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -46,7 +47,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
 1.  Öffnen Sie die XAML-App.  
   
-2.  Klicken Sie auf **Debuggen/Leistungsprofiler...**. Im Fenster ".diagsession" sollte eine Liste der Profilerstellungstools angezeigt werden.  
+2.  Klicken Sie auf **Debuggen/Leistungsprofiler**. Im Fenster ".diagsession" sollte eine Liste der Profilerstellungstools angezeigt werden.  
   
 3.  Wählen Sie **Anwendungszeitachse** aus, und klicken Sie unten im Fenster auf **Starten** .  
   
@@ -61,7 +62,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
      ![Zeitachsenprofiler-Bericht](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analysieren von Zeitachsen-Profilerstellungsdaten  
+##  <a name="BKMK_Analyze_Timeline_profiling_data"></a>Analysieren von Zeitachsen-Profilerstellungsdaten  
  Nachdem Sie die Profilerstellungsdaten gesammelt haben, können Sie diese Schritte ausführen, um mit der Analyse zu beginnen:  
   
 1.  Überprüfen Sie die Informationen in den Diagrammen **Auslastung des UI-Threads** und **Visueller Durchsatz (FPS)** , und wählen Sie dann über die Navigationsleisten der Zeitachse den Zeitraum aus, den Sie analysieren möchten.  
@@ -96,7 +97,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
 |||  
 |-|-|  
 |**Analyse**|Für das Analysieren von XAML-Dateien und Erstellen von Objekten benötigte Zeit.<br /><br /> Beim Erweitern eines Knotens **Analyse** im Bereich **Zeitachsendetails** wird die Abhängigkeitskette aller XAML-Dateien anzeigt, die als Ergebnis des Ausgangsereignisses analysiert wurden. Dadurch können Sie unnötige Dateianalysen und Objekterstellungen in leistungssensiblen Szenarien ausmachen und entfernen.|  
-|**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Dies kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d. h. die Zeit, die für Arrange-, Measure-, ApplyTemplate- und ArrangeOverride-Vorgänge aufgewendet wird) und erstellt die visuelle Struktur, die an einem Layoutdurchlauf beteiligt war. Sie können diese Visualisierung verwenden, um zu ermitteln, welche Ihrer logischen Strukturen bereinigt werden muss, oder um andere Verzögerungsmechanismen auszuwerten, um den Layoutdurchlauf zu optimieren.|  
+|**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Dies kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d. h. die Zeit, die für Arrange-, Measure-, ApplyTemplate- und ArrangeOverride-Vorgänge aufgewendet wird) und erstellt die visuelle Struktur, die an einem Layoutdurchlauf beteiligt war. Sie können diese Visualisierung verwenden, um zu bestimmen, welche Ihrer logischen Strukturen bereinigt werden müssen, oder um andere Mechanismen mit Verzögerungen auszuwerten, um Ihren Layoutdurchlauf zu optimieren.|  
 |**Rendern**|Zeitaufwand für das Zeichnen von XAML-Elementen auf dem Bildschirm.|  
 |**E/A**|Zeitaufwand für das Abrufen von Daten vom lokalen Datenträger oder von Netzwerkressourcen, auf die über die [Microsoft Windows Internet-API (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)zugegriffen wird.|  
 |**App-Code**|Zeitaufwand für die Ausführung von Anwendungs- bzw. Benutzercode, der nicht mit der Analyse oder dem Layout im Zusammenhang steht.|  

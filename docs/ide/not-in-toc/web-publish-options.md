@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263088"
 ---
 # Welche Optionen für die Veröffentlichung sind für mich geeignet?
 
@@ -98,7 +99,7 @@ Sie können in Visual Studio beliebig viele benutzerdefinierte Bereitstellungspr
 
 ### Wann sollten Sie die benutzerdefinierte Bereitstellung wählen?
 
-- Sie verwenden Clouddienste in einer anderen als einer auf Azure-Bereitstellung, auf die über URLs zugegriffen werden kann.
+- Sie verwenden Clouddienste auf einem anderen Anbieter als Azure, auf den über URLs zugegriffen werden kann.
 - Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
 - Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
 

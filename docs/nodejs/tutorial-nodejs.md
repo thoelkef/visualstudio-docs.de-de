@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454609"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
@@ -32,7 +33,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
+* Sie müssen Visual Studio 2017 und die Workload für die Node.js-Entwicklung installiert haben.
 
     Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
 
@@ -95,6 +96,8 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    Der vorhergehende Code fügt Markup hinzu, um dynamisch eine HTML-Seite mit einem Titel und einer Begrüßungsnachricht zu generieren. Die Seite enthält auch Code zum Anzeigen eines Images, das sich mit jedem Drücken einer Schaltfläche verändert.
+
 1. Öffnen Sie im Ordner „routes“ die Datei *index.js*.
 
 1. Fügen Sie direkt vor dem Aufruf von `router.get` den folgenden Code hinzu:
@@ -110,6 +113,8 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
     }
     ````
 
+    Dieser Code erstellt ein Datenobjekt, das an die dynamisch generierte HTML-Seite weitergegeben wird.
+
 1. Ersetzen Sie den Funktionsaufruf `router.get` durch den folgenden Code:
 
     ```js
@@ -117,14 +122,16 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    Der vorangehende Code legt die aktuelle Seite mithilfe des Routerobjekts „Express“ fest und rendert die Seite. Dabei werden Titel- und Datenobjekte an die Seite weitergegeben.
 
-    In der Codezeile mit `res.render` befindet sich ein Fehler. Dieser muss behoben werden, bevor die App ausgeführt werden kann. Wir beheben den Fehler im nächsten Abschnitt.
+    Zur Veranschaulichung zahlreicher Features von Visual Studio, wurde ein Fehler in die Codezeile eingefügt, die `res.render` enthält. Dieser Fehler muss behoben werden, bevor die App ausgeführt werden kann. Wir beheben den Fehler im nächsten Abschnitt.
 
 ## <a name="use-intellisense"></a>Verwendung von IntelliSense
 
 1. Gehen Sie in der Datei *index.js* zur Codezeile mit `res.render`.
 
-1. Geben Sie nach der `data`-Zeichenfolge `: get` ein. IntelliSense zeigt Ihnen daraufhin die `getData`-Funktion an. Klicken Sie auf `getData`.
+1. Platzieren Sie Ihren Cursor hinter der `data`-Zeichenfolge, und geben Sie `: get` ein. IntelliSense zeigt Ihnen daraufhin die `getData`-Funktion an. Klicken Sie auf `getData`.
 
     ![Verwendung von IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34920cfd91c236df4fc88d671d3cac48ebf02252
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264293"
 ---
 # <a name="callercallee-view"></a>Aufrufer-/Aufgerufener-Ansicht
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster:  
@@ -39,8 +40,8 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
  Sie können die Daten durch Klicken auf die Spaltennamen sortieren. Der Aufrufer-/Aufgerufener-Ansicht können zusätzliche Spalten hinzugefügt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht der Profilerstellungstools](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Instrumentationsdaten](../profiling/caller-callee-view-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten im Profiler](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Konfliktdaten](../profiling/caller-callee-view-contention-data.md)
+ [Caller/Callee view – sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten)](../profiling/caller-callee-view-sampling-data.md)   
+ [Caller/Callee view – instrumentation data (Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten)](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Caller/Callee view – .NET memory instrumentation data (Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Caller/Callee view – .NET memory sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Caller/Callee view –  contention data (Ansicht der Aufrufer/Aufgerufenen – Konfliktdaten)](../profiling/caller-callee-view-contention-data.md)

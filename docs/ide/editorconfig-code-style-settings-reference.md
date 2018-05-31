@@ -18,11 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266000"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -84,7 +85,7 @@ Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Einstellungen für das C#-Codeformat
-    - [Implizite und explizite Typen](#var)
+    - [Implizite und explizite Typen](#implicit-and-explicit-types)
         - csharp\_style\_var\_for\_built\_in_types
         - csharp\_style\_var\_when\_type\_is_apparent
         - csharp\_style\_var_elsewhere
@@ -592,7 +593,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Die Formatregeln in diesem Abschnitt gelten nur für C#.
 
-#### <a name="var"></a>Implizite und explizite Typen
+#### <a name="implicit-and-explicit-types"></a>Implizite und explizite Typen
 
 Die Formatregeln in diesem Abschnitt (Regel-IDs IDE0007 und IDE0008) betreffen die Verwendung des Schlüsselworts [var](/dotnet/csharp/language-reference/keywords/var) im Vergleich zu einem expliziten Typ in einer Variablendeklaration. Diese Regel kann getrennt auf integrierte Typen angewendet werden, wenn diese Typen offensichtlich sind und sich an einer anderen Position befinden.
 

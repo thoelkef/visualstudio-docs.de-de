@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265967"
 ---
-# <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
+# <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
   
  Der JavaScript-Arbeitsspeicheranalyse bietet folgende Möglichkeiten:  
@@ -50,7 +51,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 2.  Wenn Sie die App aus Visual Studio heraus ausführen, klicken Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** auf ein Debugziel für Ihr Projekt: entweder **Lokaler Computer** oder **Gerät**.  
   
-3.  Wählen Sie im Menü **Debuggen**, **Leistungsprofiler...** aus.  
+3.  Klicken Sie auf der Menüleiste auf **Debuggen** > **Leistungsprofiler**.  
   
      Standardmäßig wird das aktuelle Startprojekt analysiert. Wenn Sie das Analyseziel ändern möchten, wählen Sie **Ziel ändern**aus.  
   
@@ -190,7 +191,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 -   Anzahl der potenziellen Probleme (gekennzeichnet durch ein blaues Informationssymbol). Diese Zahl, sofern vorhanden, identifiziert alle potenziellen Arbeitsspeicherprobleme, wie z. B. Knoten, die nicht am DOM angefügt sind. Die Zahl ist mit der Typenansicht der Momentaufnahme verknüpft. Diese ist nach Problemtyp sortiert, um die potenziellen Probleme hervorzuheben. Es wird eine QuickInfo mit einer Beschreibung des Problems angezeigt.  
   
--   Heapgröße. Diese Zahl umfasst DOM-Elemente und Objekte, die dem JavaScript-Heap vom JavaScript-Laufzeitmodul hinzugefügt werden. Die Heapgröße ist mit der Typenansicht der Momentaufnahme verknüpft.  
+-   Heapgröße. Diese Zahl umfasst DOM-Elemente und Objekte, die dem JavaScript-Heap von der JavaScript-Runtime-Engine hinzugefügt werden. Die Heapgröße ist mit der Typenansicht der Momentaufnahme verknüpft.  
   
 -   Differenzielle Heapgröße. Dieser Wert stellt den Unterschied zwischen der Heapgröße der aktuellen Momentaufnahme und der Heapgröße der vorherigen Momentaufnahme dar. Hinter dem Wert sehen Sie einen roten Pfeil nach oben, falls der Arbeitsspeicher angestiegen ist, bzw. einen grünen Pfeil nach unten, wenn der Arbeitsspeicher gesunken ist. Wenn die Heapgröße sich zwischen den Momentaufnahmen nicht geändert hat, wird der Text **Keine Änderung** anstelle einer Zahl angezeigt. Für die erste Momentaufnahme sehen Sie den Text **Basislinie**. Die differenzielle Heapgröße ist mit der Ansicht "Typen" des Momentaufnahmevergleichs verknüpft.  
   

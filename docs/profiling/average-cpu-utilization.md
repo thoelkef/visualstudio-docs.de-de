@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c34293a140ca82918c1bd3d03ae9c83eab8665a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262312"
 ---
 # <a name="average-cpu-utilization"></a>Durchschnittliche CPU-Auslastung
 Zeigt die durchschnittliche Auslastung der logischen Kerne des Systems durch den Prozess während seiner gesamten Dauer. Im Diagramm ist nicht ersichtlich, welcher bestimmte Kern zu einem bestimmten Zeitpunkt aktiv ist. Wenn beispielsweise zwei Kerne mit einer Kapazität von 50 % während eines bestimmten Zeitraums ausgeführt werden, zeigt diese Ansicht einen logischen Kern, der verwendet wird.  

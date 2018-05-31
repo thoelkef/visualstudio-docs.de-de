@@ -1,0 +1,284 @@
+- name: Entwickeln von Anwendungen mit dem Workflow-Designer
+  href: developing-applications-with-the-workflow-designer.md
+  items:
+    - name: Workflow Designer verwenden
+      href: using-the-workflow-designer.md
+      items:
+        - name: Erstellen eines Workflowprojekts
+          href: creating-a-workflow-project.md
+          items:
+            - name: Erstellen einer Konsolenanwendung für Workflows
+              href: how-to-create-a-workflow-console-application.md
+            - name: Erstellen einer Dienstanwendung für WCF-Workflows
+              href: how-to-create-a-wcf-workflow-service-application.md
+            - name: Erstellen einer Aktivitätsbibliothek
+              href: how-to-create-an-activity-library.md
+            - name: Erstellen einer Aktivitätsdesignerbibliothek
+              href: how-to-create-an-activity-designer-library.md
+            - name: Hinzufügen eines neuen Elements zu einem Workflowprojekt
+              href: how-to-add-a-new-item-to-a-workflow-project.md
+        - name: Hinzufügen von Aktivitäten zur Toolbox
+          href: how-to-add-activities-to-the-toolbox.md
+        - name: Verwenden des Argument-Designers
+          href: how-to-use-the-argument-designer.md
+        - name: Verwenden des Variablen-Designers
+          href: how-to-use-the-variable-designer.md
+        - name: Verwenden des Ausdrucks Editors
+          href: how-to-use-the-expression-editor.md
+        - name: Verwenden des Imports-Designers
+          href: how-to-use-the-imports-designer.md
+        - name: Verwenden der Brotkrümelnavigation
+          href: how-to-use-breadcrumb-navigation.md
+        - name: Verwenden der Suche im Workflow-Designer
+          href: how-to-use-search-in-the-workflow-designer.md
+        - name: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
+          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+        - name: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
+          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: Verwenden der Aktivitätsdesigner
+      href: using-the-activity-designers.md
+      items:
+        - name: Ablaufsteuerungsaktivitätsdesigner
+          href: control-flow-activity-designers.md
+          items:
+            - name: DoWhile-Aktivitätsdesigner
+              href: dowhile-activity-designer.md
+            - name: ForEach<T>-Aktivitätsdesigner
+              href: foreach-t-activity-designer.md
+            - name: If-Aktivitätsdesigner
+              href: if-activity-designer.md
+            - name: Parallel-Aktivitätsdesigner
+              href: parallel-activity-designer.md
+            - name: ParallelForEach<T>-Aktivitätsdesigner
+              href: parallelforeach-t-activity-designer.md
+            - name: Pick-Aktivitätsdesigner
+              href: pick-activity-designer.md
+            - name: PickBranch-Aktivitätsdesigner
+              href: pickbranch-activity-designer.md
+            - name: Sequence-Aktivitätsdesigner
+              href: sequence-activity-designer.md
+            - name: Switch<T>-Aktivitätsdesigner
+              href: switch-t-activity-designer.md
+            - name: While-Aktivitätsdesigner
+              href: while-activity-designer.md
+        - name: Flussdiagramm-Aktivitätsdesigner
+          href: flowchart-activity-designers.md
+          items:
+            - name: Flussdiagramm-Aktivitätsdesigner
+              href: flowchart-activity-designer.md
+            - name: FlowDecision-Aktivitätsdesigner
+              href: flowdecision-activity-designer.md
+            - name: FlowSwitch<T>-Aktivitätsdesigner
+              href: flowswitch-t-activity-designer.md
+        - name: Zustandsautomatenaktivitäts-Designer
+          href: state-machine-activity-designers.md
+          items:
+            - name: StateMachine-Aktivitäts-Designer
+              href: statemachine-activity-designer.md
+            - name: Zustandsaktivitäts-Designer
+              href: state-activity-designer.md
+            - name: FinalState-Aktivitäts-Designer
+              href: finalstate-activity-designer.md
+            - name: Übergangsaktivitäts-Designer
+              href: transition-activity-designer.md
+        - name: Messaging-Aktivitätsdesigner
+          href: messaging-activity-designers.md
+          items:
+            - name: CorrelationScope-Aktivitätsdesigner
+              href: correlationscope-activity-designer.md
+            - name: InitializeCorrelation-Aktivitätsdesigner
+              href: initializecorrelation-activity-designer.md
+            - name: Receive-Aktivitätsdesigner
+              href: receive-activity-designer.md
+            - name: ReceiveAndSendReply-Vorlagendesigner
+              href: receiveandsendreply-template-designer.md
+            - name: Send-Aktivitätsdesigner
+              href: send-activity-designer.md
+            - name: SendAndReceiveReply-Vorlagendesigner
+              href: sendandreceivereply-template-designer.md
+            - name: TransactedReceiveScope-Aktivitätsdesigner
+              href: transactedreceivescope-activity-designer.md
+        - name: Laufzeit-Aktivitätsdesigner
+          href: runtime-activity-designers.md
+          items:
+            - name: Persist-Aktivitätsdesigners
+              href: persist-activity-designer.md
+            - name: TerminateWorkflow-Aktivitätsdesigner
+              href: terminateworkflow-activity-designer.md
+        - name: Primitive Aktivitätsdesigner
+          href: primitives-activity-designers.md
+          items:
+            - name: Assign-Aktivitätsdesigner
+              href: assign-activity-designer.md
+            - name: Delay-Aktivitätsdesigner
+              href: delay-activity-designer.md
+            - name: InvokeDelegate
+              href: invokedelegate.md
+            - name: InvokeMethod-Aktivitätsdesigner
+              href: invokemethod-activity-designer.md
+            - name: WriteLine-Aktivitätsdesigner
+              href: writeline-activity-designer.md
+        - name: Transaktionsaktivitätsdesigner
+          href: transaction-activity-designers.md
+          items:
+            - name: CancellationScope-Aktivitätsdesigner
+              href: cancellationscope-activity-designer.md
+            - name: CompensableActivity-Aktivitätsdesigner
+              href: compensableactivity-activity-designer.md
+            - name: Compensate-Aktivitätsdesigner
+              href: compensate-activity-designer.md
+            - name: Confirm-Aktivitätsdesigner
+              href: confirm-activity-designer.md
+            - name: TransactionScope-Aktivitätsdesigner
+              href: transactionscope-activity-designer.md
+        - name: Auflistungsaktivitätsdesigner
+          href: collection-activity-designers.md
+          items:
+            - name: AddToCollection<T>-Aktivitätsdesigner
+              href: addtocollection-t-activity-designer.md
+            - name: ClearCollection<T>-Aktivitätsdesigner
+              href: clearcollection-t-activity-designer.md
+            - name: ExistsInCollection<T>-Aktivitätsdesigner
+              href: existsincollection-t-activity-designer.md
+            - name: RemoveFromCollection<T>-Aktivitätsdesigner
+              href: removefromcollection-t-activity-designer.md
+        - name: Fehlerbehandlungsaktivitätsdesigner
+          href: error-handling-activity-designers.md
+          items:
+            - name: Rethrow-Aktivitätsdesigner
+              href: rethrow-activity-designer.md
+            - name: Throw-Aktivitätsdesigner
+              href: throw-activity-designer.md
+            - name: TryCatch-Aktivitätsdesigner
+              href: trycatch-activity-designer.md
+        - name: Migrationsaktivitätsdesigner
+          href: migration-activity-designers.md
+          items:
+            - name: Interop-Aktivitätsdesigner
+              href: interop-activity-designer.md
+    - name: Debuggen von Workflows mit dem Workflow-Designer
+      href: debugging-workflows-with-the-workflow-designer.md
+      items:
+        - name: Aufrufen des Workflow-Debuggers
+          href: how-to-invoke-the-workflow-debugger.md
+        - name: Festlegen von Haltepunkten in Workflows
+          href: how-to-set-breakpoints-in-workflows.md
+        - name: Debuggen von XAML mit dem Workflow-Designer
+          href: how-to-debug-xaml-with-the-workflow-designer.md
+        - name: Im Workflow-Designer nicht unterstützte Debugszenarien
+          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+    - name: Workflow-Designer-Benutzeroberflächenhilfe
+      href: workflow-designer-ui-help.md
+      items:
+        - name: Dialogfeld '.NET-Typ suchen und auswählen'
+          href: browse-and-select-a-dotnet-type-dialog-box.md
+        - name: CorrelatesOn-Definition (Dialogfeld)
+          href: correlateson-definition-dialog-box.md
+        - name: CorrelationInitializers hinzufügen (Dialogfeld)
+          href: add-correlationinitializers-dialog-box.md
+        - name: Dialogfelder Parameter hinzufügen und Argumente hinzufügen
+          href: add-parameters-and-add-arguments-dialog-boxes.md
+        - name: Typauflistungs-Editor (Dialogfeld)
+          href: type-collection-editor-dialog-box.md
+        - name: Inhaltsdefinition (Dialogfeld)
+          href: content-definition-dialog-box.md
+        - name: Korrelation initialisieren (Dialogfeld)
+          href: initialize-correlation-dialog-box.md
+        - name: 'System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)'
+          href: system-activities-tab-choose-toolbox-items-dialog-box.md
+        - name: Workflow-Designer-Shellfunktionen
+          href: workflow-designer-shell-features.md
+        - name: Tastenkombinationen im Workflow-Designer
+          href: keyboard-shortcuts-in-the-workflow-designer.md
+        - name: Fehlermeldungen im Workflow-Designer
+          href: error-messages-in-workflow-designer.md
+    - name: 'Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen'
+      href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
+      items:
+        - name: Debuggen von Legacyworkflows
+          href: debugging-legacy-workflows.md
+          items:
+            - name: Debuggen von ASP.NET-basierten Workflows (Vorgängerversion)
+              href: how-to-debug-aspnet-based-workflows-legacy.md
+            - name: Festlegen von Haltepunkten in Workflows (Vorgängerversion)
+              href: how-to-set-breakpoints-in-workflows-legacy.md
+            - name: Debuggen von Workflows von einem Remotecomputer (Vorgängerversion)
+              href: debugging-workflows-from-a-remote-computer-legacy.md
+            - name: Optionen zum schrittweisen Debuggen (Vorgängerversion)
+              href: debug-stepping-options-legacy.md
+            - name: Ändern der Option zum schrittweisen Debuggen (Vorgängerversion)
+              href: how-to-change-the-debug-stepping-option-legacy.md
+            - name: Deaktivieren des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
+              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+            - name: Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
+              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+        - name: Verwenden des Legacyworkflow-Designers
+          href: using-the-legacy-workflow-designer.md
+          items:
+            - name: Visual Studio-Workflowfenster (Vorgängerversion)
+              href: visual-studio-workflow-windows-legacy.md
+            - name: Erstellen von Legacyworkflowprojekten
+              href: creating-legacy-workflow-projects.md
+              items:
+                - name: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)
+                  href: how-to-create-a-workflow-activity-library-legacy.md
+                - name: Erstellen von leeren Workflowprojekten (Vorgängerversion)
+                  href: how-to-create-an-empty-workflow-project-legacy.md
+                - name: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)
+                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
+                - name: Konfigurieren von Workflowprojekteigenschaften (Vorgängerversion)
+                  href: how-to-configure-workflow-project-properties-legacy.md
+                - name: Erstellen von Konsolenanwendungen für sequenzielle Workflows (Vorgängerversion)
+                  href: how-to-create-sequential-workflow-console-applications-legacy.md
+                - name: Erstellen von Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)
+                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
+                - name: Erstellen von Workflowprojekten (Vorgängerversion)
+                  href: how-to-create-workflow-projects-legacy.md
+                - name: Erstellen einer sequenziellen Workflowbibliothek (Vorgängerversion)
+                  href: how-to-create-a-sequential-workflow-library-legacy.md
+                - name: Erstellen einer Zustandsautomatworkflow-Bibliothek (Vorgängerversion)
+                  href: how-to-create-a-state-machine-workflow-library-legacy.md
+            - name: Sequenzielle Workflowansichten (Vorgängerversion)
+              href: sequential-workflow-views-legacy.md
+            - name: Legacyworkflowaktivitäten
+              href: legacy-workflow-activities.md
+              items:
+                - name: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
+                  href: how-to-create-a-declarative-rule-condition-legacy.md
+                - name: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion)
+                  href: how-to-create-a-policyactivity-rule-set-legacy.md
+                - name: Aktivitätsansichten (Vorgängerversion)
+                  href: activity-views-legacy.md
+                - name: Hinzufügen von Aktivitäten zur Toolbox (Vorgängerversion)
+                  href: how-to-add-activities-to-the-toolbox-legacy.md
+                - name: Implementieren eines Windows Communication Foundation-Vertragsvorgangs (Vorgängerversion)
+                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
+                - name: Aufrufen eines Windows Communication Foundation-Vertragsvorgangs (Vorgängerversion)
+                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
+            - name: Verwenden von Designs in Workflows (Vorgängerversion)
+              href: using-themes-in-workflows-legacy.md
+            - name: Verwenden des Zustandsautomatworkflow-Designers der Vorgängerversion
+              href: using-the-legacy-state-machine-workflow-designer.md
+            - name: Verwenden des Aktivitätsdesigners der Vorgängerversion
+              href: using-the-legacy-activity-designer.md
+            - name: Benutzeroberflächenhilfe von Visual Studio Designer für Windows Workflow Foundation (Vorgängerversion)
+              href: legacy-designer-for-windows-workflow-foundation-ui-help.md
+              items:
+                - name: Dialogfeld "Binden an die Eigenschaft einer Aktivität" (Vorgängerversion)
+                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
+                - name: Dialogfeld '.NET-Typ suchen und auswählen' (Vorgängerversion)
+                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
+                - name: Dialogfeld "Vorgang auswählen" (Vorgängerversion)
+                  href: choose-operation-dialog-box-legacy.md
+                - name: Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion)
+                  href: rule-condition-editor-dialog-box-legacy.md
+                - name: Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
+                  href: rule-set-editor-dialog-box-legacy.md
+                - name: Dialogfeld "Regelbedingungs-Editor auswählen" (Vorgängerversion)
+                  href: select-condition-dialog-box-legacy.md
+                - name: Dialogfeld "Regelsatz-Editor auswählen" (Vorgängerversion)
+                  href: select-rule-set-dialog-box-legacy.md
+                - name: Dialogfeld "Designkonfiguration" (Vorgängerversion)
+                  href: theme-configuration-dialog-box-legacy.md
+                - name: 'Dialogfeld "Designs, Workflow-Designer, Optionen (Vorgängerversion)'
+                  href: themes-workflow-designer-options-dialog-box-legacy.md

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9206798c11fa0e5f63245235d633b755317e3cd2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263149"
 ---
-# <a name="caller--callee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen – Konfliktdaten
+# <a name="callercallee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten
 In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
   
  **Aktuelle Funktion** wird im mittleren Raster angezeigt, und zeigt Konfliktinformationen für die ausgewählte Funktion an. Die Werte umfassen alle blockierenden Konflikte der Funktion.  
@@ -50,8 +51,8 @@ In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine 
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Ansicht der aufrufenden/aufgerufenen Funktionen](../profiling/caller-callee-view.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten im Profiler](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Instrumentationsdaten](../profiling/caller-callee-view-instrumentation-data.md)
+ [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md)   
+ [Aufrufer-/Aufgerufener-Ansicht: Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht: .NET-Speicherinstrumentationsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht: .NET-Speichersamplingdaten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht: Instrumentationsdaten](../profiling/caller-callee-view-instrumentation-data.md)

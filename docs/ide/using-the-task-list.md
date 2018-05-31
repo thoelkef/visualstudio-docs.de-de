@@ -16,49 +16,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336070"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
-Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` und `HACK`verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Klicken Sie auf das Element in der Liste, um an die entsprechende Position im Quellcode zu gelangen.
+Verwenden Sie die **Aufgabenliste**, um Codekommentare, die Token wie `TODO` und `HACK` verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Klicken Sie auf das Element in der Liste, um an die entsprechende Position im Quellcode zu gelangen.
 
 ## <a name="the-task-list-window"></a>Das Fenster "Aufgabenliste"
 
 Wird die **Aufgabenliste** geöffnet, wird sie unten im Anwendungsfenster angezeigt.
 
-### <a name="open-the-task-list"></a>Öffnen der Aufgabenliste
+Wählen Sie zum Öffnen der **Aufgabenliste** **Ansicht** > **Aufgabenliste** aus, oder drücken Sie auf der Tastatur **STRG**+**\\**,**T**.
 
-- Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: **STRG**+**\\**,**T**).
+![Aufgabenliste (Fenster)](../ide/media/vs2015_task_list.png)
 
-    ![Fenster mit Aufgabenliste](../ide/media/vs2015_task_list.png "vs2015_Aufgabenliste")
+Wählen Sie den Header einer beliebigen Spalte aus, um die Sortierreihenfolge der Liste zu verändern. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die **UMSCHALTTASTE**, und klicken Sie auf einen zweiten Spaltenheader. Sie können auch im Kontextmenü die Option **Sortieren nach** und dann einen Header auswählen. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die **UMSCHALTTASTE**, und wählen Sie einen zweiten Header aus.
 
-### <a name="change-the-sort-order-of-the-list"></a>Ändern der Sortierreihenfolge der Liste
+Klicken Sie im Kontextmenü auf **Spalten einblenden**, um Spalte ein- oder auszublenden. Wählen Sie die Spalten aus, die Sie ein- oder ausblenden möchten.
 
-- Klicken Sie auf den Header einer beliebigen Spalte. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die UMSCHALTTASTE und klicken auf einen zweiten Spaltenheader.
-
-     Sie können auch im Kontextmenü die Option **Sortieren nach**und dann einen Header auswählen. Um die Suchergebnisse weiter zu verfeinern, drücken Sie die **UMSCHALTTASTE**, und wählen Sie einen zweiten Header aus.
-
-### <a name="show-or-hide-columns"></a>Ein- oder Ausblenden von Spalten
-
-- Klicken Sie im Kontextmenü auf **Spalten einblenden**. Wählen Sie die Spalten aus, die Sie ein- oder ausblenden möchten.
-
-### <a name="change-the-order-of-the-columns"></a>Ändern der Reihenfolge der Spalten
-
-- Ziehen Sie einen Spaltenheader an die gewünschte Position.
+Ziehen Sie zum Ändern der Spaltenreihenfolge einen Spaltenheader an die gewünschte Position.
 
 ## <a name="user-tasks"></a>Benutzeraufgaben
 
 Das Feature „Benutzeraufgabe“ wurde aus Visual Studio 2015 entfernt. Wenn Sie eine Projektmappe mit Benutzeraufgabendaten aus Visual Studio 2013 oder früher öffnen, bleiben die Benutzeraufgabendaten in Ihrer *SUO*-Datei davon unberührt, aber die Benutzeraufgaben werden nicht in der Aufgabenliste angezeigt.
 
-Um weiterhin auf Ihre Benutzeraufgabendaten zugreifen und diese aktualisieren zu können, sollten Sie das Projekt in Visual Studio 2013 öffnen und den Inhalt aller Benutzeraufgaben in Ihr bevorzugtes Projektmanagementtool (z. B. Team Foundation Server) kopieren.
+Um weiterhin auf Ihre Benutzeraufgabendaten zugreifen und diese aktualisieren zu können, sollten Sie das Projekt in Visual Studio 2013 öffnen und den Inhalt aller Benutzeraufgaben in Ihr bevorzugtes Projektmanagementtool (z.B. Team Foundation Server) kopieren.
 
 ## <a name="tokens-and-comments"></a>Token und Kommentare
 
-Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vorangestellt ist, wird auch im Fenster **Aufgabenliste** angezeigt. Der folgende C#-Kommentar setzt sich beispielsweise aus drei verschiedenen Teilen zusammen:
+Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vorangestellt ist, wird ebenfalls in der **Aufgabenliste** angezeigt. Der folgende C#-Kommentar setzt sich beispielsweise aus drei verschiedenen Teilen zusammen:
 
 - Kommentarzeichen (`//`)
 
@@ -72,39 +63,35 @@ Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vor
 
 Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO`-Aufgabe in der Liste angezeigt.
 
-###  <a name="customTokens"></a> Benutzerdefinierte Token
+### <a name="custom-tokens"></a>Benutzerdefinierte Token
 
-Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UNDONE`, `NOTE`. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.
+Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UNDONE` und `NOTE`. Bei ihnen wird nicht zwischen Groß-/Kleinschreibung unterschieden.
 
-Sie können außerdem eigene benutzerdefinierte Token erstellen.
-
-#### <a name="create-a-custom-token"></a>Erstellen eines benutzerdefinierten Tokens
+Sie können außerdem eigene benutzerdefinierte Token erstellen. So erstellen Sie ein benutzerdefiniertes Token:
 
 1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
 2. Öffnen Sie den Ordner **Umgebung** , und wählen Sie dann **Aufgabenliste**aus.
 
-     [Die Seite „Aufgabenlistenoptionen“](../ide/reference/task-list-environment-options-dialog-box.md) wird angezeigt.
+   [Die Seite „Aufgabenlistenoptionen“](../ide/reference/task-list-environment-options-dialog-box.md) wird angezeigt.
 
-     ![Visual Studio – Aufgabenliste](../ide/media/vs2015_task_list_options.png "vs2015_Aufgabenliste_Optionen")
+   ![Visual Studio – Aufgabenliste](../ide/media/vs2015_task_list_options.png)
 
-3. Geben Sie in der Kategorie **Token** im Textfeld **Name** den Tokennamen ein, z. B. „BUG“.
+3. Geben Sie in der Kategorie **Token** im Textfeld **Name** den Tokennamen ein, z.B. **BUG**.
 
 4. Wählen Sie in der Dropdownliste **Priorität** eine Standardpriorität für das neue Token aus. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-###  <a name="cppComments"></a> C++-TODO-Kommentare
+### <a name="c-todo-comments"></a>C++-TODO-Kommentare
 
-Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt. Sie können dieses Verhalten ändern.
+Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt.
 
-#### <a name="turn-off-c-todo-comments"></a>Deaktivieren von C++-TODO-Kommentaren
-
-Wechseln Sie im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++** > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf FALSE fest.
+Wechseln Sie zum Deaktivieren der C++-TODO-Kommentare im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++** > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf **FALSE** fest.
 
 ## <a name="shortcuts"></a>Verknüpfungen
 
-Eine *Verknüpfung* ist ein Lesezeichen im Code, das in der **Aufgabenliste**nachverfolgt wird. Es weist ein anderes Symbol als ein reguläres Lesezeichen auf. Doppelklicken Sie auf die Verknüpfung in der **Aufgabenliste** , um an die entsprechende Position im Code zu gelangen.
+Eine *Verknüpfung* ist eine Textmarke im Code, die in der **Aufgabenliste** nachverfolgt wird. Sie hat ein anderes Symbol als eine reguläre Textmarke. Doppelklicken Sie auf die Verknüpfung in der **Aufgabenliste**, um an die entsprechende Position im Code zu gelangen.
 
-![Visual Studio-Symbol Aufgabenlistenverknüpfung](../ide/media/vs2015_task_list_bookmark.png "vs2015_Aufgabenliste_Lesezeichen")
+![Visual Studio – Aufgabenliste – Symbol „Verknüpfung“](../ide/media/vs2015_task_list_bookmark.png)
 
 ### <a name="create-a-shortcut"></a>Erstellen einer Verknüpfung
 

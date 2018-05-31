@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449181"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -31,7 +32,7 @@ Visual Studio umfasst diese C++-Testframeworks ohne zusätzliche erforderliche D
 
 Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als auch für ein beliebiges anderes Framework zur Verwendung in Visual Studio schreiben. Ein Testadapter kann Komponententests in das Fenster **Test-Explorer** integrieren. Im [Visual Studio Marketplace](https://marketplace.visualstudio.com) sind einige Adapter von Drittanbietern verfügbar. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 Version 15.5**
+**Visual Studio 2017, Version 15.5**
 
 - Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** hinzufügen können, sowie Optionen, die Sie über **Extras > Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
 
@@ -74,7 +75,7 @@ Die CPP-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, 
 
 ![Hinzufügen von Include-Direktiven](media/cpp-write-test-methods.png "C++-Test: Hinzufügen von Includes für Headerdateien")
 
-Die Makros TEST_CLASS und TEST_METHOD sind Bestandteile des nativen Testframeworks von Microsoft (microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Der **Test-Explorer** erkennt Testmethoden in anderen unterstützten Frameworks auf dieselbe Weise.
+TEST_CLASS und TEST_METHOD sind Teil des [nativen Microsoft-Testframeworks](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Der **Test-Explorer** erkennt Testmethoden in anderen unterstützten Frameworks auf dieselbe Weise.
 
 Das Makro TEST_METHOD gibt „Void“ zurück. Verwenden Sie die statische Methode in der `Assert`-Klasse, um die tatsächlichen Ergebnisse im Vergleich zu den erwarteten Ergebnissen zu vergleichen und um ein Testergebnis zu erzeugen. Im folgenden Beispiel wird angenommen, dass `MyClass` über einen Konstruktor verfügt, der einen `std::string` akzeptiert. Es kann getestet werden, ob der Konstruktor die Klasse wie erwartet initialisiert:
 

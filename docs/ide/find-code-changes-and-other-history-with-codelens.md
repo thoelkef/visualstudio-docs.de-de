@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21724619a0dd3b89582c716a5df0fdff6041b682
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446737"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -324,4 +325,4 @@ So verwenden Sie die Tastatur:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Writing code in the editor (Schreiben von Code im Code-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

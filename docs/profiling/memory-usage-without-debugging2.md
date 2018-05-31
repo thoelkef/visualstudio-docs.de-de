@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265723"
 ---
-# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analysieren der Speicherauslastung ohne Visual Studio-Debugger
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analysieren der Arbeitsspeicherauslastung ohne Visual Studio-Debugger
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
   
 -   Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  
@@ -35,7 +36,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
 1.  Öffnen Sie ein universelles Windows-C#-Projekt in Visual Studio.  
   
-2.  Wählen Sie im Menü **Debuggen / Leistungsprofiler...** aus.  
+2.  Klicken Sie auf der Menüleiste auf **Debuggen** > **Leistungsprofiler**.  
   
 3.  Wählen Sie **Speicherauslastung** aus, und klicken Sie dann auf die Schaltfläche **Start** ganz unten auf der Seite.  
   
@@ -48,7 +49,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  ![Übersichtsseite „Speicherauslastung“](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
- Die Zeitachse der zeigt Schwankungen im Speicher Ihrer App an, während diese ausgeführt wird. Spitzen in der Zeitachse weisen normalerweise darauf hin, dass Code in der App Daten erfasst oder erstellt und diese dann verwirft, wenn die Verarbeitung abgeschlossen ist. Hohe Spitzen weisen auf Bereiche hin, die Sie ggf. optimieren können. Problematischer ist ein Anstieg in der Auslastung von Speicher, der nicht zurückgegeben wird, denn dies kann auf ineffiziente Speicherverwendung oder sogar einen Speicherverlust hindeuten.  
+ Die Zeitachse zeigt Schwankungen im Arbeitsspeicher Ihrer App an, während diese ausgeführt wird. Spitzen in der Zeitachse weisen normalerweise darauf hin, dass Code in der App Daten erfasst oder erstellt und diese dann verwirft, wenn die Verarbeitung abgeschlossen ist. Hohe Spitzen weisen auf Bereiche hin, die Sie ggf. optimieren können. Problematischer ist ein Anstieg in der Auslastung von Speicher, der nicht zurückgegeben wird, denn dies kann auf ineffiziente Speicherverwendung oder sogar einen Speicherverlust hindeuten.  
   
 ###  <a name="BKMK_Close_a_monitoring_session"></a> Schließen der Überwachungssitzung  
  ![Auflistung anhalten](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
@@ -200,7 +201,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |**Inklusive Größe (Bytes)**|Die Größe der Objekte in der primären Momentaufnahme einschließlich der Größe der in den Objekten enthaltenen Objekte.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [JavaScript-Memory](../profiling/javascript-memory.md)  
+ [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
  [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)  
  [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   

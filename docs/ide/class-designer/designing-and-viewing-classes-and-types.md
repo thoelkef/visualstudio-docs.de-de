@@ -18,11 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447959"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Entwerfen und Anzeigen von Klassen und Typen mit dem Klassen-Designer
 
@@ -58,5 +59,5 @@ Nach dem Tunen eines oder mehrerer Klassendiagramme können Sie sie in Microsoft
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schreiben von Code im Editor](../writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../writing-code-in-the-code-and-text-editor.md)
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../../modeling/map-dependencies-across-your-solutions.md)

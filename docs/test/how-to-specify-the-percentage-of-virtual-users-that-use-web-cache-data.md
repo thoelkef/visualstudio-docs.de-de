@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447257"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen
 
@@ -29,25 +30,25 @@ Die Eigenschaft **Prozentsatz neuer Benutzer** wirkt sich auf die Simulation der
 
 Wenn Sie einen Auslastungstest für eine Website ausführen, die eine erhebliche Anzahl von regelmäßigen Besuchern aufweist, bei denen der lokale Browsercache wahrscheinlich Bilder und andere zwischenspeicherbare Inhalte enthält, erfolgen durch die Verwendung der Einstellung „100%“ für die Eigenschaft **Prozentsatz neuer Benutzer** mehr Downloadanforderungen als in einer realistischen Umgebung. In diesem Fall sollten Sie einen prozentualen Schätzwert für die erstmaligen Websiteaufrufe festlegen und die Eigenschaft **Prozentsatz neuer Benutzer** entsprechend festlegen.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>So geben Sie die Agents an, die für ein Szenario verwendet werden sollen
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>So geben Sie den Prozentsatz neuer Benutzer für ein Szenario an
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, den die Agents verwenden sollen.
+2. Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie den Prozentsatzwert neuer Benutzer ändern möchten.
 
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
 
-4.  Legen Sie den Wert für die Eigenschaft **Prozentsatz neuer Benutzer** fest, indem Sie eine Zahl für den prozentualen Anteil neuer Benutzer eingeben.
+4. Legen Sie den Wert für die Eigenschaft **Prozentsatz neuer Benutzer** fest, indem Sie eine Zahl für den prozentualen Anteil neuer Benutzer eingeben.
 
-5.  Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Prozentsatz neuer Benutzer** ausführen.
+5. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Prozentsatz neuer Benutzer** ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)

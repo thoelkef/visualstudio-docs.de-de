@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262622"
 ---
-# <a name="filtering-report-views"></a>Filtern von Berichtsansichten
+# <a name="filter-report-views"></a>Filtern von Berichtsansichten
 Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberichtansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken. Sie können einen Bericht auf die Daten zwischen Zeitstempelwerten einschränken, Sie können die Daten aber auch auf bestimmte Prozesse und Threads einschränken. Sie können Filter in einer Datei speichern und dann durch Importieren des gespeicherten Filters einen Filter für eine andere Profilerstellungs-Datendatei erstellen.  
   
  Mithilfe der grafischen Zeitachse in der Zusammenfassungsansicht können Sie einen Bericht auch auf ein Zeitsegment beschränken. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -42,7 +43,6 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
     |**Operator**|Wählen Sie den Operator aus, der die Beziehung angibt, die Sie in der Klausel zwischen dem Feld und dem Wert herstellen möchten.<br /><br /> = Gleich<br /><br /> <> Ungleich<br /><br /> < Kleiner als<br /><br /> > Größer als<br /><br /> <= Kleiner als oder gleich<br /><br /> >= Größer als oder gleich|  
     |**Wert**|Wählen Sie den Wert aus, nach dem gesucht werden soll, oder geben Sie den Wert ein. In einigen Feldern werden die verfügbaren Werte für das Feld aufgeführt.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>So erstellen Sie in der Ansicht für Markierungsberichte einen Profilerberichtsfilter  
   

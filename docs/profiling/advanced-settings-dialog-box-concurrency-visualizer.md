@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262775"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
 Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschnellansicht können Sie steuern, wie Ablaufverfolgungen erfasst werden.  Das Dialogfeld enthält Registerkarten für Symbole, „Nur eigenen Code“, Pufferung, Filterung, CLR-Ereignisse, Marker, Anbieter und Dateien.  
@@ -38,7 +39,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
 ### <a name="clr-events"></a>CLR-Ereignisse  
  Durch die Common Language Runtime (CLR) generierte Ereignisse ermöglichen der Parallelitätsschnellansicht, verwaltete Aufruflisten aufzulösen.  Wenn Sie das Erfassen von CLR-Ereignissen deaktivieren, wird die Größe der Ablaufverfolgung reduziert, aber einige Aufruflisten können nicht aufgelöst werden.  Infolge dessen könnte manche CPU-Threadaktivität falsch kategorisiert werden.  
   
-### <a name="collect-for-native-processes"></a>Erfassen für native Prozesse  
+### <a name="collect-for-native-processes"></a>Erfassen nativer Prozesse  
  Standardmäßig werden CLR-Ereignisse nur erfasst, wenn ein verwalteter Prozess geprofilet wird, da sie normalerweise für native Prozesse nicht erforderlich sind.  In einigen Fällen (wenn z.B. ein nativer Prozess die CLR hostet) müssen Sie möglicherweise CLR-Ereignisse für einen nativen Prozess erfassen.  Wenn dies der Fall ist, aktivieren Sie das Kontrollkästchen **Für systemeigene Prozesse auflisten**.  
   
 ### <a name="disable-rundown-events"></a>Deaktivieren von Rundown-Ereignissen  
@@ -48,7 +49,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
  Sie können Samplingereignisse verwenden, um Aufruflisten zu erfassen, die der Threadausführung zugeordnet sind. Diese Ereignisse werden ungefähr einmal pro Millisekunde für Threads erfasst, die im aktuellen Prozess ausgeführt werden. Wenn Sie die Erfassung von Samplingereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können keine Aufruflisten anzeigen, die der Threadausführung zugeordnet sind.  
   
 ### <a name="gpu-events"></a>GPU-Ereignisse  
- GPU-Ereignisse werden von DirectX generiert. Wenn Sie die Erfassung der GPU-Ereignisse deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können weder GPU-Aktivität in der Auslastungsansicht noch DirectX-Modul-Aktivität in der Threadansicht anzeigen.  
+ GPU-Ereignisse werden von DirectX generiert. Wenn Sie die Erfassung der GPU-Ereignisse deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können weder GPU-Aktivität in der Auslastungsansicht noch DirectX-Engine-Aktivität in der Threadansicht anzeigen.  
   
 ### <a name="file-io-events"></a>Datei-E/A-Ereignisse  
  Datei-E/A-Ereignisse stellen Zugriffe auf den Datenträger durch den aktuellen Prozess dar.  Wenn Sie „Datei-E/A-Ereignisse“ deaktivieren, wird die Größe der Ablaufverfolgung reduziert, aber die Threadansicht meldet keine Informationen über Datenträgerkanäle oder Datenträgervorgänge.  
@@ -65,7 +66,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
   
  Mit dieser Wichtigkeitsstufenliste können Sie Ereignisse herausfiltern, deren Wichtigkeits- oder ETW-Stufe unter dem angegebenen Wert liegt.  
   
-### <a name="configuring-an-existing-provider"></a>Konfigurieren eines vorhandenen Anbieters  
+### <a name="configure-an-existing-provider"></a>Konfigurieren eines vorhandenen Anbieters  
  Um Einstellungen zu bearbeiten, die einem vorhandenen Anbieter zugeordnet sind, wählen Sie sie in der Liste aus, und wählen Sie dann die Schaltfläche **Anbieter bearbeiten**.  Sie können Namen, GUID und Filterungseinstellungen ändern.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Herausfiltern von Markerdaten aus den Parallelitätsschnellansicht-Berichten  

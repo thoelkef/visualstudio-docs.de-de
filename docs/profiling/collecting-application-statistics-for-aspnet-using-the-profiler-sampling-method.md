@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9be304398fcefaf6a38ca7e1d557f2c9146b4872
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263028"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Erfassen von Statistiken für ASP.NET-Web-Apps
 
@@ -37,20 +38,20 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungs
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben  
   
-### <a name="profiling-aspnet-web-applications"></a>Profilerstellung für ASP.NET-Webanwendungen  
+### <a name="profile-aspnet-web-applications"></a>Profilerstellung für ASP.NET-Webanwendungen  
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten für eine ASP.NET-Webanwendung über die Befehlszeile mit der Profiler-Instrumentationsmethode](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
-|**Profilerstellung der Speicherbelegung und Garbage Collection**|-   [Sammeln von Speicherdaten aus einer ASP.NET-Webanwendung über die Profiler-Befehlszeile](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profilerstellung für Ressourcenkonflikte und Threadaktivität**|-   [Sammeln von Parallelitätsdaten für einen Dienst über die Profiler-Befehlszeile](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
+|**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**Profilerstellung der Speicherbelegung und Garbage Collection**|-   [Sammeln von Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Profilerstellung für Ressourcenkonflikte und Threadaktivität**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="sampling-method"></a>Samplingmethode  
+### <a name="sample-method"></a>Samplingmethode  
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profiler-Befehlszeile](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|-   **Profilerstellung für Dienste**|-   [Sammeln von Anwendungsstatistiken für Dienste mithilfe der Profiler-Samplingmethode](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
+|**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|-   **Profilerstellung für Dienste**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für Samplingdaten  
- [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+### <a name="analyze-sampling-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für Samplingdaten  
+ [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
