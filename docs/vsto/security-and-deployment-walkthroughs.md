@@ -1,5 +1,5 @@
 ---
-title: Sicherheit und exemplarische Vorgehensweisen für Bereitstellungen | Microsoft Docs
+title: Sicherheit und Bereitstellung Exemplarische Vorgehensweisen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,27 +18,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 724050648aa7190844bad1e751d75fa22ccdebc8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693142"
 ---
-# <a name="security-and-deployment-walkthroughs"></a>Exemplarische Vorgehensweisen für Sicherheit und Bereitstellung
+# <a name="security-and-deployment-walkthroughs"></a>Sicherheit und Bereitstellung Exemplarische Vorgehensweisen
   In den folgenden Themen veranschaulichen das Festlegen der Sicherheitsrichtlinie, um die Projektmappe ausführen zu können, und wie Sie die Office-Projektmappe bereitstellen können.  
   
 ## <a name="security-topics"></a>Themen zur Sicherheit  
  [Vorgehensweise: Signieren von Office-Projektmappen](../vsto/how-to-sign-office-solutions.md)  
  Informationen dazu, wie Sie der Projektmappe Vertrauenswürdigkeit zu gewähren, mithilfe eines Zertifikats.  
   
- [Vorgehensweise: Konfigurieren der Aufnahmelistensicherheit](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Vorgehensweise: Konfigurieren der aufnahmelistensicherheit](../vsto/how-to-configure-inclusion-list-security.md)  
  Erläutert das Konfigurieren der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung steuern, ob Endbenutzer die Möglichkeit, installieren Office-Projektmappen angegeben werden.  
   
 ## <a name="deployment-topics"></a>Themen zur Bereitstellung  
  [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  Enthält Informationen zur Verwendung der **Veröffentlichungs-Assistenten** oder **veröffentlichen** Seite im Projekt-Designer zum Veröffentlichen von Office-Projektmappen.  
   
- [Vorgehensweise: veröffentlichen eine auf Dokumentebene Office-Projektmappe mit einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [Vorgehensweise: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)  
  Beschreibt die Schritte zum Bereitstellen auf einem SharePoint-Server.  
   
  [Vorgehensweise: installieren eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  [Vorgehensweise: Vorbereiten von IIS für die Bereitstellung von Office-Projektmappen](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  Beschreibt, wie den MIME-Typ für das Bereitstellungsmanifest auf Microsoft Internet Information Services (IIS) konfigurieren.  
   
- [Vorgehensweise: Aktualisieren von bereitgestellten Office-Projektmappen](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [Vorgehensweise: Aktualisieren bereitgestellten Office-Projektmappen](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  Bietet Informationen zum Aktualisieren einer Office-Projektmappe mithilfe der **Veröffentlichungs-Assistenten**.  
   
  [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/16/2018
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)  
  Enthält schrittweise Anleitungen, die eine Einführung in die Office-Projektmappen in Visual Studio und veranschaulichen, wie Sie Anwendungen erstellen können, die von Excel nutzen.  
   
- [Exemplarische Vorgehensweisen für Daten in Office-Projektmappen](../vsto/data-in-office-solutions-walkthroughs.md)  
+ [Daten in Office-Projektmappen Exemplarische Vorgehensweisen](../vsto/data-in-office-solutions-walkthroughs.md)  
  Enthält Anleitungen, die Schritt für Schritt das Arbeiten mit Daten in Projektmappen veranschaulichen.  
   
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  

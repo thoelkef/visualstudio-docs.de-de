@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693720"
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
 
@@ -35,7 +36,7 @@ Folgende zusätzlichen Features sind verfügbar:
 
 - Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.
 
-- XML-Schema-Explorer
+- **XML-Schema-Explorer**.
 
 ## <a name="xml-schema-designer"></a>XML-Schema-designer
 

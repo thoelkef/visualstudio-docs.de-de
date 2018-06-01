@@ -1,5 +1,5 @@
 ---
-title: Besondere Sicherheitsüberlegungen für Office-Projektmappen | Microsoft Docs
+title: Besondere sicherheitsüberlegungen für Office-Projektmappen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f799a0ef393def5c77249f51a26278bd419ac523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7da9446a4a5e4538164b09d1f11733f7bde3de24
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693356"
 ---
-# <a name="specific-security-considerations-for-office-solutions"></a>Überlegungen zur Sicherheit von Office-Projektmappen
+# <a name="specific-security-considerations-for-office-solutions"></a>Besondere sicherheitsüberlegungen für Office-Projektmappen
   Die von Microsoft .NET Framework und Microsoft Office bereitgestellten Sicherheitsfeatures können in Office-Projektmappen zum Schutz vor möglichen Sicherheitsbedrohungen beitragen. In diesem Thema werden einige dieser Bedrohungen erläutert und Empfehlungen bereitgestellt, wie sich vor diesen Bedrohungen schützen lässt. Es beinhaltet auch Informationen dazu, wie sich Microsoft Office-Sicherheitseinstellungen auf Office-Projektmappen auswirken.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Vertrauenswürdiger Code wird in einem neuen, schädlichen Dokument für einen anderen Zweck ausgenutzt  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Vertrauenswürdiger Code wird in einem neuen, schädlichen Dokument erledigen.  
  Ein Angreifer könnte vertrauenswürdigen Code, der für einen bestimmten Zweck vorgesehen ist, etwa Herunterladen persönlicher Daten für eine Bewerbung, übernehmen und in einem anderen Dokument, z. B. einem Arbeitsblatt, erneut verwenden. Der Code weiß nicht, dass nicht das Originaldokument ausgeführt wird, und begünstigt möglicherweise andere Bedrohungen, etwa Offenlegung persönlicher Daten oder Ausführen von Code mit erweiterten Berechtigungen, wenn er von einem anderen Benutzer geöffnet wird. Alternativ kann der Angreifer einfach die Daten auf dem Arbeitsblatt so ändern, dass sich dieses Arbeitsblatt nach dem Empfang durch das Opfer auf unerwartete Weise verhält. Durch Ändern der Werte, Formeln oder Darstellungsmerkmale eines mit Code verknüpften Arbeitsblatts wird es einem böswilligen Benutzer ermöglicht, einen anderen Benutzer durch Senden einer geänderten Datei anzugreifen. Außerdem können Benutzer durch Ändern von Werten auf dem Arbeitsblatt möglicherweise auf Informationen zugreifen, die nicht für sie bestimmt sind.  
   
  Da sowohl der Speicherort der Assembly als auch der des Dokuments über ausreichende Beweise verfügen müssen, damit die Ausführung erfolgt, ist dieser Angriff nicht leicht zu bewerkstelligen. Beispielsweise haben Dokumente in E-Mail-Anhängen oder auf nicht vertrauenswürdigen Intranetservern nicht genügend Berechtigungen, um ausgeführt zu werden.  
@@ -49,28 +50,28 @@ ms.lasthandoff: 04/16/2018
   
 -   Eventuell ist es sinnvoll, beim Öffnen des Dokuments eine Warnung anzuzeigen, wenn Ihre Anwendung privilegierte Aktionen ausführt. Sie können zum Beispiel einen Begrüßungsbildschirm oder ein Startdialogfeld erstellen, in dem mitgeteilt wird, dass die Anwendung auf persönliche Daten zugreift, und dem Benutzer die Entscheidung zum Fortsetzen oder Abbrechen überlassen. Wenn ein Endbenutzer eine solche Warnung aus einem scheinbar unverfänglichen Dokument erhält, kann er die Anwendung beenden, bevor es irgendeine Beeinträchtigung gibt.  
   
-## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Code wird durch den Outlook-Objektmodellschutz gesperrt  
- In Microsoft Office kann verhindert werden, dass Code bestimmte Eigenschaften, Methoden und Objekte im Objektmodell verwendet. Durch Einschränken des Zugriffs auf diese Objekte verhindert Outlook, dass E-Mail-Würmer und -Viren das Objektmodell zu bösartigen Zwecken verwenden können. Dieses Sicherheitsfeature wird als Outlook-Objektmodellschutz bezeichnet. Wenn ein VSTO-Add-In versucht, eine beschränkte Eigenschaft oder Methode zu verwenden, während der Objektmodellschutz aktiviert ist, zeigt Outlook eine Sicherheitswarnung an, mit der der Benutzer den Vorgang abbrechen kann, oder gibt Outlook dem Benutzer die Möglichkeit, für eine begrenzte Zeit Zugriff auf die Eigenschaft oder Methode zuzulassen. Wenn der Benutzer den Vorgang beendet, lösen Outlook-VSTO-Add-Ins, die als Office-Projektmappen in Visual Studio erstellt wurden, eine <xref:System.Runtime.InteropServices.COMException>aus.  
+## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Code wird durch den Outlook-Objektmodellschutz blockiert.  
+ In Microsoft Office kann verhindert werden, dass Code bestimmte Eigenschaften, Methoden und Objekte im Objektmodell verwendet. Einschränken des Zugriffs auf diese Objekte aus, kann um zu verhindern, dass e-Mail-Würmer und-Viren mithilfe des Objektmodells für böswillige Zwecke Outlook. Dieses Sicherheitsfeature wird als Outlook-Objektmodellschutz bezeichnet. Wenn ein VSTO-Add-In versucht, eine beschränkte Eigenschaft oder Methode zu verwenden, während der Objektmodellschutz aktiviert ist, zeigt Outlook eine Sicherheitswarnung an, mit der der Benutzer den Vorgang abbrechen kann, oder gibt Outlook dem Benutzer die Möglichkeit, für eine begrenzte Zeit Zugriff auf die Eigenschaft oder Methode zuzulassen. Wenn der Benutzer den Vorgang beendet, lösen Outlook-VSTO-Add-Ins, die als Office-Projektmappen in Visual Studio erstellt wurden, eine <xref:System.Runtime.InteropServices.COMException>aus.  
   
  Der Objektmodellschutz kann VSTO-Add-Ins auf unterschiedliche Weise beeinflussen, abhängig davon, ob Outlook mit Microsoft Exchange Server verwendet wird:  
   
 -   Wird Outlook ohne Exchange verwendet, kann ein Administrator den Objektmodellschutz für alle VSTO-Add-Ins auf dem Computer aktivieren bzw. deaktivieren.  
   
--   Wenn Outlook mit Exchange verwendet wird, kann ein Administrator den Objektmodellschutz für alle VSTO-Add-Ins auf dem Computer aktivieren bzw. deaktivieren, oder er kann angeben, dass bestimmte VSTO-Add-Ins unabhängig vom Objektmodellschutz ausgeführt werden können. Administratoren können auch das Verhalten des Objektmodellschutzes für bestimmte Bereiche des Objektmodells ändern. So können Administratoren beispielsweise VSTO-Add-Ins automatisch erlauben, programmgesteuert E-Mail-Nachrichten zu senden, auch wenn der Objektmodellschutz aktiviert ist.  
+-   Wenn Outlook mit Exchange verwendet wird, kann ein Administrator den Objektmodellschutz für alle VSTO-Add-Ins auf dem Computer aktivieren bzw. deaktivieren, oder er kann angeben, dass bestimmte VSTO-Add-Ins unabhängig vom Objektmodellschutz ausgeführt werden können. Administratoren können auch das Verhalten des Objektmodellschutzes für bestimmte Bereiche des Objektmodells ändern. Beispielsweise können Administratoren automatisch VSTO-Add-ins, programmgesteuert e-Mail zu senden, auch wenn der Objektmodellschutz aktiviert ist.  
   
  Beginnend mit Outlook 2007 wurde das Verhalten des Objektmodellschutzes geändert, um die Entwickler- und Benutzerfreundlichkeit zu verbessern, aber gleichzeitig Outlook zu schützen. Weitere Informationen finden Sie unter [Code Security Changes in Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
-### <a name="minimizing-object-model-guard-warnings"></a>Minimieren der Warnungen vom Objektmodellschutz  
- Damit Sicherheitswarnungen vermieden werden, wenn Sie beschränkte Eigenschaften und Methoden verwenden, müssen Sie sicherstellen, dass das VSTO-Add-In Outlook-Objekte aus dem `Application` -Feld der `ThisAddIn` -Klasse im Projekt abruft. Weitere Informationen über dieses Feld finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+### <a name="minimize-object-model-guard-warnings"></a>Minimieren der Warnungen vom Objektmodellschutz Objekt  
+ Damit Sicherheitswarnungen vermieden werden, wenn Sie beschränkte Eigenschaften und Methoden verwenden, müssen Sie sicherstellen, dass das VSTO-Add-In Outlook-Objekte aus dem `Application` -Feld der `ThisAddIn` -Klasse im Projekt abruft. Weitere Informationen zu diesem Feld finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- Nur Outlook-Objekten, die aus diesem Objekt abgerufen wurden, kann vom Objektmodellschutz vertraut werden. Im Gegensatz dazu wurden Objekte, die von einem neuen Microsoft.Office.Interop.Outlook.Application-Objekt abgerufen werden, nicht vertrauenswürdig, und die beschränkten Eigenschaften und Methoden Sicherheitswarnungen auslösen, wenn der Objektmodellschutz aktiviert ist.  
+ Nur Outlook-Objekten, die aus diesem Objekt abgerufen wurden, kann vom Objektmodellschutz vertraut werden. Im Gegensatz dazu Objekte, die von einem neuen ermittelt werden `Microsoft.Office.Interop.Outlook.Application` Objekt wurden, nicht vertrauenswürdig, und die beschränkten Eigenschaften und Methoden Sicherheitswarnungen auslösen, wenn der Objektmodellschutz aktiviert ist.  
   
- Im folgenden Codebeispiel wird eine Sicherheitswarnung angezeigt, wenn der Objektmodellschutz aktiviert wird. Die Eigenschaft der Klasse Microsoft.Office.Interop.Outlook.MailItem wird durch den Objektmodellschutz beschränkt. Das Microsoft.Office.Interop.Outlook.MailItem-Objekt ist nicht vertrauenswürdig, da der Code es von Microsoft.Office.Interop.Outlook.Application, die erstellt wird abruft, mit der **neue** -Operator, anstatt es aus der Abrufen`Application` Feld.  
+ Im folgenden Codebeispiel wird eine Sicherheitswarnung angezeigt, wenn der Objektmodellschutz aktiviert wird. Die `To` Eigenschaft von der `Microsoft.Office.Interop.Outlook.MailItem` Klasse durch den Objektmodellschutz beschränkt ist. Die `Microsoft.Office.Interop.Outlook.MailItem` Objekt ist nicht vertrauenswürdig, da der Code es von ruft einer `Microsoft.Office.Interop.Outlook.Application` , erstellt wird, mithilfe der **neue** Operator, erhalten sie über die `Application` Feld.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie die eingeschränkte für die Eigenschaft eines Objekts Microsoft.Office.Interop.Outlook.MailItem verwendet, die den Objektmodellschutz vertrauenswürdig ist. Der Code verwendet das vertrauenswürdige `Application` Microsoft.Office.Interop.Outlook.MailItem abzurufenden Felds.  
+ Im folgenden Codebeispiel wird veranschaulicht, wie mit den eingeschränkten Eigenschaft von einem `Microsoft.Office.Interop.Outlook.MailItem` -Objekt, das den Objektmodellschutz vertrauenswürdig ist. Der Code verwendet das vertrauenswürdige `Application` Feld zum Abrufen der `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -78,17 +79,17 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Wenn Outlook mit Exchange verwendet wird, ist es nicht möglich, durch ein Abrufen aller Outlook-Objekte aus `ThisAddIn.Application` sicherzustellen, dass Ihr VSTO-Add-In auf das gesamte Outlook-Objektmodell zugreifen kann. Z. B. Wenn Exchange-Administrator Outlook wird automatisch auf Verweigern Sie alle Zugriffsversuche auf Adressinformationen über das Outlook-Objektmodell, und klicken Sie dann Outlook, obwohl das Codebeispiel verwendet keine im vorangehenden Codebeispiel wird die Eigenschaft für den Zugriff auf zulassen das vertrauenswürdige `ThisAddIn.Application` Feld.  
   
-### <a name="specifying-which-add-ins-to-trust-when-using-exchange"></a>Angeben, welche Add-Ins vertrauenswürdig sind, wenn Exchange verwendet wird  
+### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Geben Sie die Add-ins vertraut, wenn Exchange verwendet wird  
  Wenn Outlook mit Exchange verwendet wird, können Administratoren angeben, dass bestimmte VSTO-Add-Ins unabhängig vom Objektmodellschutz ausgeführt werden können. Outlook-VSTO-Add-Ins, die als Office-Projektmappen in Visual Studio erstellt wurden, können nicht einzeln als vertrauenswürdig festgelegt werden, sondern nur als Gruppe.  
   
- Outlook vertraut einem VSTO-Add-In anhand eines Hashcodes der Einstiegspunkt-DLL des VSTO-Add-Ins. Für alle Outlook-VSTO-Add-Ins, die für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vorgesehen sind, wird dieselbe Einstiegspunkt-DLL (VSTOLoader.dll) verwendet. Daraus folgt, wenn ein Administrator irgendeinem VSTO-Add-In, das für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vorgesehen ist, vertraut, sodass es ohne Berücksichtigung des Objektmodellschutz ausgeführt wird, wird auch allen anderen VSTO-Add-Ins vertraut, die für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vorgesehen sind. Weitere Informationen zu Vertrauensstellungen für spezielle VSTO-Add-Ins, damit diese unabhängig vom Objektmodellschutz ausgeführt werden können, finden Sie unter [Angeben der Methode zur Verwaltung von Virenschutzfeatures in Outlook](http://go.microsoft.com/fwlink/?LinkId=128773).  
+ Outlook vertraut einem VSTO-Add-In anhand eines Hashcodes der Einstiegspunkt-DLL des VSTO-Add-Ins. Alle Outlook-VSTO-Add-ins, die als Ziel der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] verwenden dieselbe Einstiegspunkt-DLL (*"VSTOLoader.dll"*). Daraus folgt, wenn ein Administrator irgendeinem VSTO-Add-In, das für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vorgesehen ist, vertraut, sodass es ohne Berücksichtigung des Objektmodellschutz ausgeführt wird, wird auch allen anderen VSTO-Add-Ins vertraut, die für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vorgesehen sind. Weitere Informationen zu Vertrauensstellungen für spezielle VSTO-Add-Ins, damit diese unabhängig vom Objektmodellschutz ausgeführt werden können, finden Sie unter [Angeben der Methode zur Verwaltung von Virenschutzfeatures in Outlook](http://go.microsoft.com/fwlink/?LinkId=128773).  
   
 ## <a name="permission-changes-do-not-take-effect-immediately"></a>Berechtigungsänderungen werden nicht sofort wirksam  
  Wenn der Administrator Berechtigungen für ein Dokument oder eine Assembly ändert, müssen die Benutzer alle Office-Anwendungen beenden und dann neu starten, damit die Änderungen wirksam werden.  
   
  Andere Anwendungen, die als Host für Microsoft Office-Anwendungen fungieren, können ebenfalls verhindern, dass die neuen Berechtigungen wirksam werden. Benutzer sollten alle Anwendungen beenden, die Office verwenden (gehostete oder eigenständige), wenn die Sicherheitsrichtlinien geändert wurden.  
   
-## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Trust Center-Einstellungen im Microsoft Office-System wirken sich weder auf Add-Ins noch auf Anpassungen auf Dokumentebene aus  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Trust Center-Einstellungen in Microsoft Office System wirken-Add-ins oder Anpassungen auf Dokumentebene sich nicht  
  Benutzer können verhindern, dass VSTO-Add-Ins geladen werden, indem sie eine Option im **Trust Center**festlegen. Allerdings wirken sich diese Vertrauenseinstellungen nicht auf VSTO-Add-Ins aus, die als Office-Projektmappen in Visual Studio erstellt wurden.  
   
  Wenn Benutzer das Laden von VSTO-Add-Ins über das **Trust Center**verhindern, werden die folgenden Typen von VSTO-Add-Ins nicht geladen:  

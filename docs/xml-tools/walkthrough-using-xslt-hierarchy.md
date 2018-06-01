@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693444"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
+# <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden Sie XSLT-Hierarchie
 
 Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSLT-Stylesheet werden oft `includes`- und `imports`-Anweisungen verwendet. Die Kompilierung beginnt mit dem Hauptstylesheet. Wenn in Folge der Kompilierung eines XSLT-Stylesheets ein Fehler angezeigt wird, kann dieser jedoch aus einer anderen Quelle als dem Hauptstylesheet stammen. Zum Beheben des Fehlers oder Bearbeiten des Stylesheets müssen Sie möglicherweise auf eingeschlossene oder importierte Stylesheets zugreifen. Beim schrittweisen Ausführen des Stylesheets im Debugger werden ggf. eingeschlossene und importierte Stylesheets geöffnet, und Sie können einen Haltepunkt in den eingeschlossenen Stylesheets hinzufügen.
 
@@ -47,7 +48,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </COLLECTION>
     ```
 
-1. Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:
+1. Fügen Sie die folgenden *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-3.  Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:
+3.  Fügen Sie die folgenden *xslinclude.xsl* Datei:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [Exemplarische Vorgehensweise: XSLT-profiler](../xml-tools/walkthrough-xslt-profiler.md)

@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693668"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und Gruppieren (XML-Schema-Explorer)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und gruppieren (XML-Schema-Explorer)
 
-In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sortieren, Filtern und Gruppierungsoptionen** Menü auf der Symbolleiste des XML-Schema-Explorer.
+In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sortieren, Filtern und Gruppierungsoptionen** Menü auf die **XML-Schema-Explorer** Symbolleiste.
 
 ## <a name="filter-options"></a>Filteroptionen
 
@@ -30,9 +31,9 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
 
 -   **Anzeigen von Compositors (Sequence/Choice/All)**.
 
-## <a name="sorting-options"></a>Sortierungsoptionen
+## <a name="sorting-options"></a>Sortieroptionen
 
- Die folgenden Sortierungsoptionen sind verfügbar. Die Standardeinstellung ist **nach Sortiertyp**. Die "Sortieren nach"-Optionen gelten nicht für Dateien und Namespaces.
+ Die folgenden Sortierungsoptionen sind verfügbar. Die Standardeinstellung ist **nach Sortiertyp**. **Sortieren nach** Optionen gelten nicht für Dateien und Namespaces.
 
 -   **Nach Typ sortieren**.
 
@@ -78,6 +79,6 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
 
  Die **Dokumentreihenfolge** Option ist verfügbar, wenn die **Schemadateien anzeigen** ausgewählt ist. Wenn **Dokumentreihenfolge** ausgewählt ist, werden globale Knoten in der Reihenfolge, in der sie in der Schemadatei erscheinen, angezeigt.
 
-## <a name="persisting-sortfilter-options"></a>Speichern von Sortierungs-/Filteroptionen
+## <a name="persisting-sortfilter-options"></a>Beibehalten von sortierungs-/Filteroptionen
 
  Die Sortierungs-, Filter- und Gruppierungsoptionen werden in der Registrierung für jeden Benutzer gespeichert, unabhängig davon, welche Projektmappe oder welche Dateien beim Ändern der Einstellungen geöffnet waren.

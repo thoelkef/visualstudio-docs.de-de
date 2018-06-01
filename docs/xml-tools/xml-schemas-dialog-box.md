@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693639"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML-Schemata (Dialogfeld)
 
@@ -52,5 +53,5 @@ Entfernt das ausgewählte Schema aus dem Schemaset. Dies entfernt das Schema aus
 ## <a name="see-also"></a>Siehe auch
 
 - [Komponenten des XML-Editors](../xml-tools/xml-editor-components.md)
-- [Gewusst wie: Auswählen der zu verwendenden XML-Schemas](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Vorgehensweise: Auswählen der zu verwendenden XML-Schemas](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Schemacache](../xml-tools/schema-cache.md)

@@ -1,5 +1,5 @@
 ---
-title: Sichern von Office-Projektmappen | Microsoft Docs
+title: Sichern von Office-Projektmappen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd86b7c15fa198b37ce15c75b13d2863f56ca3ba
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693369"
 ---
-# <a name="securing-office-solutions"></a>Sichern von Office-Projektmappen
+# <a name="secure-office-solutions"></a>Sichern von Office-Projektmappen
   Das Sicherheitsmodell für Office-Projektmappen beinhaltet verschiedene Technologien: die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], das Vertrauensstellungscenter in Microsoft Office und die Internet Explorer-Zone eingeschränkter Sites. In den folgenden Abschnitten wird die Funktionsweise der verschiedenen Sicherheitsfunktionen beschrieben:  
   
 -   [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](#GrantingTrustToSolutions)  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Gewähren von Vertrauenswürdigkeit beim Verwenden von Windows Installer](#GrantingTrustWindowsInstaller)  
   
--   [Überlegungen zur Sicherheit von Office-Projektmappen](#Security)  
+-   [Besondere sicherheitsüberlegungen für Office-Projektmappen](#Security)  
   
 -   [Sicherheit während der Entwicklung](#SecurityDuringDeployment)  
   
@@ -50,13 +51,13 @@ ms.lasthandoff: 04/16/2018
  Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Gewähren von Vertrauenswürdigkeit für Dokumente  
- Eine Anpassung auf Dokumentebene erfordert, dass sich das Dokument in einem Verzeichnis befindet, das als vertrauenswürdiger Speicherort festgelegt ist. Weitere Informationen finden Sie unter [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
+ Eine Anpassung auf Dokumentebene erfordert, dass sich das Dokument in einem Verzeichnis befindet, das als vertrauenswürdiger Speicherort festgelegt ist. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
 ##  <a name="GrantingTrustWindowsInstaller"></a> Gewähren von Vertrauenswürdigkeit beim Verwenden von Windows Installer  
  Sie können Windows Installer verwenden, um eine MSI-Datei zum Installieren von Office-Projektmappen in das Verzeichnis "Programme" zu erstellen, wofür Administratorrechte erforderlich sind. Für Office-Projektmappen in das Verzeichnis für Programmdateien Visual Studio 2010-Tools für Office-Laufzeit betrachtet diese Office-Projektmappen, vertrauenswürdig sind und nicht die ClickOnce-vertrauensaufforderung.  
   
-##  <a name="Security"></a> Besondere Sicherheitsüberlegungen für Office-Projektmappen  
- Die Sicherheitsfeatures, die von [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] und Microsoft Office bereitgestellt werden, können zum Schutz vor verschiedenen Sicherheitsbedrohungen in Office-Projektmappen beitragen. Weitere Informationen finden Sie unter [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md).  
+##  <a name="Security"></a> Besondere sicherheitsüberlegungen für Office-Projektmappen  
+ Die Sicherheitsfeatures, die von [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] und Microsoft Office bereitgestellt werden, können zum Schutz vor verschiedenen Sicherheitsbedrohungen in Office-Projektmappen beitragen. Weitere Informationen finden Sie unter [besondere sicherheitsüberlegungen für Office-Projektmappen](../vsto/specific-security-considerations-for-office-solutions.md).  
   
 ##  <a name="SecurityDuringDeployment"></a> Sicherheit während der Entwicklung  
  Um Ihren Entwicklungsprozess zu vereinfachen, legt Visual Studio die Sicherheitsrichtlinie, die zum Ausführen und Debuggen der Projektmappe auf dem Computer benötigt wird, bei jedem Erstellen eines Projekts fest. In einigen Szenarien müssen Sie möglicherweise zusätzliche Schritte zum Entwickeln des Projekts ausführen.  
@@ -66,29 +67,29 @@ ms.lasthandoff: 04/16/2018
   
 -   Die Lösungen auf einer Dateifreigabe im Netzwerk wie z. B. auf Dokumentebene  *\\\servername\sharename*.  
   
--   Projektmappen auf Anwendungsebene für Word, die DOC- oder DOCM-Dateien verwenden.  
+-   Dokument-Projektmappen auf Anwendungsebene für Word, mit denen *.doc* oder *.docm* Dateien.  
   
  Schließen Sie die Unterverzeichnisse ein, wenn Sie den Dokumentspeicherort der Liste vertrauenswürdiger Speicherorte hinzufügen, oder schließen Sie insbesondere die Debug- und Buildordner ein. Weitere Informationen finden Sie in der Microsoft Office Online-Hilfeartikel [erstellen, entfernen oder Ändern eines vertrauenswürdigen Speicherorts für Ihre Dateien](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate  
  Visual Studio erstellt ein temporäres Zertifikat, wenn ein signierendes Zertifikat nicht bereits vorhanden ist. Sie sollten dieses temporäre Zertifikat nur während der Entwicklung verwenden und ein offizielles Zertifikat für die Bereitstellung erwerben.  
   
- Das temporäre Zertifikat wird nach dem ersten Erstellen eines Office-Projekts generiert. Beim nächsten Drücken der Taste F5 wird das Projekt neu erstellt, da das Projekt als geändert markiert wird, wenn das Zertifikat hinzugefügt wird.  
+ Das temporäre Zertifikat wird nach dem ersten Erstellen eines Office-Projekts generiert. Das nächste Mal drücken **F5**, das Projekt wird neu erstellt werden, da das Projekt als geändert, wenn das Zertifikat hinzugefügt wird gekennzeichnet ist.  
   
  Nach einer Weile kann es zahlreiche temporäre Zertifikate geben, sodass Sie sie gelegentlich löschen sollten.  
   
 ##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio-Tools für Office-Laufzeit  
  Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] verfügt über Funktionen zur Überprüfung der Identität des Herausgebers und der Berechtigungen, die einer Anpassung gewährt werden. Diese Berechtigungen werden mithilfe einer Reihe von Sicherheitsüberprüfungen verifiziert.  
   
-### <a name="security-during-customization-loading"></a>Sicherheit beim Laden der Anpassung  
+### <a name="security-during-customization-loading"></a>Sicherheit während der Anpassung laden  
  Beim Laden einer Anpassung auf Dokumentebene, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] immer überprüft, ob das Dokument in der Liste vertrauenswürdiger Speicherorte befindet. Außerdem überprüft die Common Language Runtime an, ob die Projektmappe im Anwendungsmanifest FullTrust anfordert. Beim Laden der Anpassung werden keine zusätzlichen Sicherheitsüberprüfungen durchgeführt.  
   
-### <a name="sequence-of-security-checks-during-installation"></a>Abfolge der Sicherheitsüberprüfungen während der Installation  
+### <a name="sequence-of-security-checks-during-installation"></a>Abfolge der sicherheitsüberprüfungen während der installation  
  Wenn eine Office-Projektmappe installiert oder aktualisiert wird, führt [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] eine Reihe von Sicherheitsüberprüfungen in einer bestimmten Reihenfolge aus, um eine Entscheidung über die Vertrauenswürdigkeit zu treffen. Eine Projektmappe wird nur dann installiert oder aktualisiert, wenn die Laufzeit bestimmt, dass die Projektmappe vertrauenswürdig ist.  
   
- Sie können den Installationsvorgang auf vier Arten starten: durch Ausführen des Setupprogramms, durch Öffnen des Bereitstellungsmanifests, durch Öffnen des Microsoft Office-Anwendungshosts oder durch Ausführen von VSTOInstaller.exe.  
+ Sie können den Installationsvorgang auf vier Arten starten: durch Ausführen des Setupprogramms, durch Öffnen des Bereitstellungsmanifests, durch Öffnen des Microsoft Office-Anwendungshosts oder durch Ausführen von *VSTOInstaller.exe*.  
   
- Die erste Sicherheitsüberprüfung gilt nur für Projektmappen auf Dokumentebene. Das Dokument einer Projektmappe auf Dokumentebene muss sich an einem vertrauenswürdigen Speicherort befinden. Wenn sich das Dokument in einer Remotenetzwerk-Dateifreigabe befindet oder eine Dateierweiterung .doc oder .docm aufweist, muss der Speicherort des Dokuments der Liste vertrauenswürdiger Speicherorte hinzugefügt werden. Weitere Informationen finden Sie unter [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
+ Die erste Sicherheitsüberprüfung gilt nur für Projektmappen auf Dokumentebene. Das Dokument einer Projektmappe auf Dokumentebene muss sich an einem vertrauenswürdigen Speicherort befinden. Wenn das Dokument in einer Remotenetzwerk-Dateifreigabe oder hat ein *.doc* oder *.docm* Dateinamenerweiterung, muss der Speicherort des Dokuments der Liste vertrauenswürdiger Speicherorte hinzugefügt werden. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
  ![VSTO-Sicherheit – Installation aus Microsoft Office](../vsto/media/host-install.png "VSTO-Sicherheit – Installation aus Microsoft Office")  
   
@@ -98,18 +99,18 @@ ms.lasthandoff: 04/16/2018
   
  Wenn die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust-Eingabeaufforderung zulässig ist und die Projektmappe nicht noch Vertrauenswürdigkeit gewährt wurde, die Common Language Runtime lässt die Entscheidung über die Vertrauenswürdigkeit vom Benutzer vorgenommen werden. Wenn der Benutzer der Projektmappe Vertrauenswürdigkeit gewährt, wird der Benutzeraufnahmeliste ein Eintrag hinzugefügt. Alle Projektmappen in der Benutzeraufnahmeliste haben volle Vertrauenswürdigkeit und können installiert und ausgeführt werden.  
   
- Ab Visual Studio 2010 wird die Aufnahmeliste umgangen, wenn die Office-Projektmappe mithilfe von Windows Installer (MSI) in das Verzeichnis "Programme" installiert wurde. Weitere Informationen finden Sie unter [vertrauen Office-Projektmappen mithilfe von Benutzeraufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+ Ab Visual Studio 2010 wird die Aufnahmeliste umgangen, wenn die Office-Projektmappe mithilfe von Windows Installer (MSI) in das Verzeichnis "Programme" installiert wurde. Weitere Informationen finden Sie unter [vertrauen Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  ![VSTO-Sicherheit – verwenden das Setupprogramm zur Installation](../vsto/media/setup-vstoinstaller.png "VSTO-Sicherheit – verwenden das Setupprogramm zur Installation")  
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md)   
  [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md)   
- [Gewähren von Vertrauenswürdigkeit Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Vorgehensweise: Konfigurieren der Aufnahmelistensicherheit](../vsto/how-to-configure-inclusion-list-security.md)   
+ [Vertrauen Sie Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Vorgehensweise: Konfigurieren der aufnahmelistensicherheit](../vsto/how-to-configure-inclusion-list-security.md)   
  [Vorgehensweise: Signieren von Office-Projektmappen](../vsto/how-to-sign-office-solutions.md)   
- [Problembehandlung bei Office-Projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
+ [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce-Referenz](/visualstudio/deployment/clickonce-reference)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  

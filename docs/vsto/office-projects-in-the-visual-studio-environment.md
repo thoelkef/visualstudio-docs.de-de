@@ -1,5 +1,5 @@
 ---
-title: Office-Projekte in Visual Studio-Umgebung | Microsoft Docs
+title: Office-Projekte in Visual Studio-Umgebung
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -44,13 +44,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693285"
 ---
-# <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekte in der Visual Studio-Umgebung
+# <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekte in Visual Studio-Umgebung
   Microsoft Office-Projekte verfügen über eine ähnliche Entwicklungsumgebung wie andere Projekttypen in Visual Studio, z. B. Windows Forms-Projekte. Wenn Sie ein Office-Projekt erstellen oder öffnen, werden die Projektelemente im **Projektmappen-Explorer**angezeigt. Bei Projekten auf Dokumentebene wird das Dokument (d. h. das Word-Dokument oder die Excel-Arbeitsmappe) in Visual Studio geöffnet, und das Dokument verhält sich wie ein visueller Designer.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -66,9 +67,9 @@ ms.lasthandoff: 04/16/2018
   
  In einem VSTO-Add-In-Projekt werden im **Projektmappen-Explorer** die folgenden Standardelemente angezeigt:  
   
--   Der Anwendungsknoten Dieser Knoten verfügt über den gleichen Namen wie die Hostanwendung, z. B. **Word**, **Excel**oder **Outlook**. Der Anwendungsknoten enthält die ThisAddIn-Codedatei. Er stellt auch die Eigenschaft **Namespace für Hostelement** bereit. Weitere Informationen zu dieser Eigenschaft finden Sie unter [Properties in Office Projects](../vsto/properties-in-office-projects.md).  
+-   Der Anwendungsknoten Dieser Knoten verfügt über den gleichen Namen wie die Hostanwendung, z. B. **Word**, **Excel**oder **Outlook**. Der Anwendungsknoten enthält die ThisAddIn-Codedatei. Er stellt auch die Eigenschaft **Namespace für Hostelement** bereit. Weitere Informationen zu dieser Eigenschaft finden Sie unter [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md).  
   
--   Die ThisAddIn-Codedatei Diese Datei enthält die generierte `ThisAddIn` -Klasse für das VSTO-Add-In. Weitere Informationen zu dieser Klasse finden Sie unter [Programmieren von VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Die ThisAddIn-Codedatei Diese Datei enthält die generierte `ThisAddIn` -Klasse für das VSTO-Add-In. Weitere Informationen zu dieser Klasse finden Sie unter [Programm VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
 -   Ausgeblendete Projektdateien, die nicht für eine direkte Bearbeitung vorgesehen sind. Weitere Informationen finden Sie unter [Ausgeblendete Projektdateien](#hiddenfiles).  
   
@@ -90,29 +91,29 @@ ms.lasthandoff: 04/16/2018
 ### <a name="controls-on-documents"></a>Steuerelemente in Dokumenten  
  Sie können *Hoststeuerelemente* und Windows Forms-Steuerelemente aus der Visual Studio- **Toolbox** auf die Dokumentdesignoberfläche ziehen. Hoststeuerelemente sind spezialisierte Versionen von Office-Objekten, z. B. Word-Inhaltssteuerelemente und Excel-Bereiche, die in mit Visual Studio erstellten Office-Projekten verwendet werden können. Hoststeuerelemente haben zusätzliche Funktionen, die in den entsprechenden Office-Objekten nicht verfügbar sind, z. B. Datenbindung und zusätzliche Ereignisse.  
   
- Weitere Informationen finden Sie unter [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) und [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Weitere Informationen finden Sie unter [Hostelemente und Hosten von Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md) und [Windows forms-Steuerelemente in Office-Dokumente (Übersicht)](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Excel-Arbeitsblätter und Arbeitsmappen im Designer  
- Wenn Sie im Designer ein Arbeitsblatt öffnen, können Sie das Arbeitsblatt genauso ändern, wie wenn es direkt in Excel geöffnet wäre. Nach dem Doppelklicken auf eine Arbeitsblattzelle wechselt diese in den Bearbeitungsmodus. Wenn Sie auf eine Zelle mit einem Hoststeuerelement doppelklicken, öffnet sich der Code-Editor, und der Standardereignishandler für das Steuerelement wird von Visual Studio generiert. Um zu anderen Arbeitsblättern zu navigieren, können Sie auf die Arbeitsblattregisterkarten am unteren Rand des Designers klicken.  
+ Wenn Sie im Designer ein Arbeitsblatt öffnen, können Sie das Arbeitsblatt genauso ändern, wie wenn es direkt in Excel geöffnet wäre. Nach dem Doppelklicken auf eine Arbeitsblattzelle wechselt diese in den Bearbeitungsmodus. Wenn Sie auf eine Zelle, die einem Hoststeuerelement doppelklicken, wird im Code-Editor wird geöffnet, und Visual Studio generiert den Standardereignishandler für das Steuerelement. Um zu anderen Arbeitsblättern zu navigieren, können Sie auf die Arbeitsblattregisterkarten am unteren Rand des Designers klicken.  
   
  Wenn Sie die Arbeitsmappe im Designer öffnen, gibt es keine Designoberfläche. Die Entwurfsansicht für die Arbeitsmappe ist eine große Komponentenleiste, die den Designer ausfüllt.  
   
  Die Arbeitsmappe und die einzelnen Blätter in der Arbeitsmappe verfügen über eine zugeordnete Codedatei. Jede Codedatei enthält eine generierte *Hostelementklasse* , die die Arbeitsmappe oder das Blatt darstellt. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).  
   
-### <a name="word-documents-in-the-designer"></a>Word-Dokumente im Designer  
+### <a name="word-documents-in-the-designer"></a>Word-Dokumente im designer  
  Wenn Sie das Dokument im Designer öffnen, können Sie es genauso ändern, wie wenn es direkt in Word geöffnet wäre. Wenn Sie auf ein Wort in dem Dokument doppelklicken, wird das Wort ausgewählt. Wenn sich das Wort allerdings innerhalb eines Hoststeuerelements befindet, wird der Code-Editor geöffnet, und der Standardereignishandler des Steuerelements wird von Visual Studio generiert.  
   
- Das Dokument verfügt über eine zugeordnete Codedatei. Die Codedatei enthält eine generierte *Hostelementklasse* , die das Dokument darstellt. Weitere Informationen finden Sie unter [Document Host Item](../vsto/document-host-item.md).  
+ Das Dokument verfügt über eine zugeordnete Codedatei. Die Codedatei enthält eine generierte *Hostelementklasse* , die das Dokument darstellt. Weitere Informationen finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md).  
   
-### <a name="design-mode-vs-run-time-mode"></a>Vergleich von Entwurfsmodus und Laufzeitmodus  
+### <a name="design-mode-vs-runtime-mode"></a>Entwurfsmodus im Vergleich zu Laufzeitmodus  
  Dokumente werden in der Visual Studio-Umgebung grundsätzlich im *Entwurfsmodus*geöffnet. Einige Aufgaben, z. B. das Ziehen eines Hoststeuerelements auf die Dokumentoberfläche, können nur im Entwurfsmodus ausgeführt werden.  
   
- Um ein Dokument im *Laufzeitmodus*anzuzeigen, müssen Sie die Anwendung und das Dokument außerhalb von Visual Studio öffnen. Wenn Sie das Projekt erstellen und ausführen, werden das Dokument und die Anwendung automatisch außerhalb von Visual Studio geöffnet.  
+ Zum Anzeigen des Dokuments in *Laufzeitmodus*, müssen Sie die Anwendung und das Dokument außerhalb von Visual Studio öffnen. Wenn Sie das Projekt erstellen und ausführen, werden das Dokument und die Anwendung automatisch außerhalb von Visual Studio geöffnet.  
   
 ## <a name="code-editor"></a>Code-Editor  
  Mithilfe des Code-Editors können sie die sichtbaren Codedateien in der Projektmappe anzeigen und ändern. Diese Dateien enthalten den Code, in dem das Verhalten der Projektmappe definiert wird.  
   
- Weitere Informationen zum Code-Editor finden Sie unter [Schreiben von Code im Code- und Text-Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Weitere Informationen zum Schreiben von Code in Office-Projekten finden Sie unter [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+ Weitere Informationen zum Code-Editor finden Sie unter [Schreiben von Code im Code- und Text-Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Weitere Informationen über das Schreiben von Code in Office-Projekten finden Sie unter [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md).  
   
 ## <a name="properties-window"></a>Eigenschaftenfenster  
  Im Fenster **Eigenschaften** werden Eigenschaften für Projektelemente angezeigt, die im **Projektmappen-Explorer**ausgewählt werden, sowie für Benutzeroberflächenelemente, die im Designer ausgewählt werden, z. B. Steuerelemente oder das Dokument in einem Projekt auf Dokumentebene. Einige der Eigenschaften sind spezifisch für die Anwendung und das Dokument, andere Eigenschaften sind für alle Projekte gleich.  
