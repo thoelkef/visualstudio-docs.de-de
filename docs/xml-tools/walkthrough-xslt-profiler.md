@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693798"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Exemplarische Vorgehensweise: XSLT-Profiler
 
@@ -88,7 +89,7 @@ Die Prozeduren in der folgenden exemplarischen Vorgehensweise ist erforderlich, 
 
 5.  Sie können die Daten auch durch Klicken auf die Spaltennamen sortieren.
 
-### <a name="select-calltree-view"></a>Auswählen der Ansicht "Aufrufstruktur"
+### <a name="select-call-tree-view"></a>Wählen Sie die Aufrufstrukturansicht
 
 1.  Wählen Sie **Call Tree View** in der **aktuelle Ansicht** Dropdown-Liste. Diese Ansicht ist eine Strukturansicht der Programmausführung.
 
@@ -110,4 +111,4 @@ Die Prozeduren in der folgenden exemplarischen Vorgehensweise ist erforderlich, 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie](../xml-tools/walkthrough-using-xslt-hierarchy.md)

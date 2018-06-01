@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693785"
 ---
 # <a name="xml-editor"></a>XML-editor
 
@@ -39,7 +40,7 @@ Der XML-Editor basiert auf der Visual Studio-Texteditor und bietet zusätzliche 
 
 - Integration in die [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Dies bietet eine hierarchische Ansicht von XML-Schemas.
 
-Der XML-Editor wird für bekannte Dateierweiterungen wie .xml, .xsd, .xsl und .config aufgerufen. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch eine beliebige Datei im XML-Editor öffnen, mit der **Öffnen mit** Option und den XML-Editor aus der Liste auswählen.
+Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*, *XSD*, *.xsl*, und *config*. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch eine beliebige Datei im XML-Editor öffnen, mit der **Öffnen mit** Option und den XML-Editor aus der Liste auswählen.
 
 ## <a name="xslt-intellisense"></a>XSLT-IntelliSense
 

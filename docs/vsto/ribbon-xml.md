@@ -1,5 +1,5 @@
 ---
-title: Multifunktionsleisten-XML | Microsoft Docs
+title: Multifunktionsleisten-XML
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -26,50 +26,51 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c93553535ca85f63db64be773afa76711a38359b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693129"
 ---
 # <a name="ribbon-xml"></a>Multifunktionsleisten-XML
-  Das Element "Menüband (XML)" ermöglicht das Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element "Menüband (XML)", wenn Sie das Menüband auf eine Weise anpassen möchten, die nicht vom Element "Menüband (Visual Designer)" unterstützt wird. Einen Vergleich der was Sie mit jedem Element ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
+  Das Element "Menüband (XML) ermöglicht das Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Menüband (XML)-Element, wenn zum Anpassen des Menübands auf eine Weise, die vom Element "Menüband (visueller Designer)" nicht unterstützt werden sollen. Einen Vergleich der was Sie mit jedem Element ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Hinzufügen eines Elements "Menüband (XML)" zu einem Projekt  
+## <a name="add-a-ribbon-xml-item-to-a-project"></a>Hinzufügen eines Elements von Menüband (XML) zu einem Projekt  
  Können Sie einem Office-Projekt ein Element **Menüband (XML)** über das Dialogfeld **Neues Element hinzufügen** hinzufügen. Visual Studio fügt die folgenden Dateien automatisch hinzu:  
   
--   Eine Menüband-XML-Datei. Diese Datei definiert die Menüband-Benutzeroberfläche (User Interface, UI). Verwenden Sie diese Datei, um Benutzeroberflächenelemente (z. B. Registerkarten, Gruppen und Steuerelemente) hinzuzufügen. Details finden Sie unter [Referenz zur Menüband-XML-Datei](#RibbonDescriptorFile) weiter unten in diesem Thema.  
+-   Eine Menüband-XML-Datei. Diese Datei definiert die Menüband-Benutzeroberfläche (User Interface, UI). Verwenden Sie diese Datei, um Benutzeroberflächenelemente (z. B. Registerkarten, Gruppen und Steuerelemente) hinzuzufügen. Weitere Informationen finden Sie unter [Menüband-XML-Konfigurationsdatei Referenz](#RibbonDescriptorFile) weiter unten in diesem Thema.  
   
--   Eine Menüband-Codedatei. Diese Datei enthält die *Klasse "Menüband"*. Diese Klasse trägt den Namen, den Sie im Dialogfeld **Neues Element hinzufügen** für das Element **Menüband (XML)** angeben. Microsoft Office-Anwendungen verwenden eine Instanz dieser Klasse, um das benutzerdefinierte Menüband zu laden. Details finden Sie unter [Referenz zur Klasse "Menüband"](#RibbonExtensionClass) weiter unten in diesem Thema.  
+-   Eine Menüband-Codedatei. Diese Datei enthält die *Klasse "Menüband"*. Diese Klasse trägt den Namen, den Sie im Dialogfeld **Neues Element hinzufügen** für das Element **Menüband (XML)** angeben. Microsoft Office-Anwendungen verwenden eine Instanz dieser Klasse, um das benutzerdefinierte Menüband zu laden. Weitere Informationen finden Sie unter [Multifunktionsleisten-Klassenreferenz](#RibbonExtensionClass) weiter unten in diesem Thema.  
   
- Standardmäßig fügen diese Dateien der Registerkarte **Add-Ins** im Menüband eine benutzerdefinierte Gruppe hinzu.  
+ Standardmäßig fügen diese Dateien eine benutzerdefinierte Gruppe, die **-Add-Ins** Registerkarte im Menüband.  
   
-## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Anzeigen des benutzerdefinierten Menübands in einer Microsoft Office-Anwendung  
- Nach dem Hinzufügen einer **Menüband (XML)** Element dem Projekt müssen Sie Code zum Hinzufügen der **"ThisAddIn"**, **ThisWorkbook**, oder **ThisDocument** Klasse überschreibt die CreateRibbonExtensibilityObject-Methode und die Office-Anwendung die Menüband-XML-Klasse zurückgegeben.  
+## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Anzeigen des benutzerdefinierten Menübands in Microsoft Office-Anwendung  
+ Nach dem Hinzufügen einer **Menüband (XML)** Element dem Projekt müssen Sie Code zum Hinzufügen der **"ThisAddIn"**, **ThisWorkbook**, oder **ThisDocument** Klasse überschreibt die `CreateRibbonExtensibilityObject` -Methode und gibt die Menüband-XML-Klasse an die Office-Anwendung.  
   
- Im folgenden Codebeispiel wird die CreateRibbonExtensibilityObject-Methode überschreibt und gibt eine Menüband-XML-Klasse mit dem Namen "MyRibbon" zurück.  
+ Der folgende Codebeispiel setzt die Methode `CreateRibbonExtensibilityObject` außer Kraft und gibt eine Klasse "Menüband-XML" namens "MyRibbon" zurück.  
   
  [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Definieren des Verhaltens des benutzerdefinierten Menübands  
- Sie können die auf Benutzeraktionen (z. B. das Klicken auf eine Schaltfläche auf dem Menüband) durch Erstellen von *Rückrufmethoden*reagieren. Rückrufmethoden ähneln Ereignissen in Windows Forms-Steuerelementen, werden jedoch durch ein Attribut im XML-Code des Benutzeroberflächenelements identifiziert. Sie schreiben Methoden in der Klasse "Menüband", und ein Steuerelement ruft die Methode auf, die den gleichen Namen wie der Attributwert aufweist. Beispielsweise können Sie eine Rückrufmethode erstellen, die aufgerufen wird, wenn ein Benutzer auf eine Schaltfläche auf dem Menüband klickt. Zum Erstellen einer Rückrufmethode sind zwei Schritte erforderlich:  
+## <a name="define-the-behavior-of-the-custom-ribbon"></a>Hiermit wird das Verhalten des benutzerdefinierten Menübands  
+ Sie können Reaktionen auf Benutzeraktionen, wie z. B. das Klicken auf eine Schaltfläche auf dem Menüband durch Erstellen *Rückrufmethoden*. Rückrufmethoden ähneln Ereignissen in Windows Forms-Steuerelementen, werden jedoch durch ein Attribut im XML-Code des Benutzeroberflächenelements identifiziert. Sie schreiben Methoden in der Klasse "Menüband", und ein Steuerelement ruft die Methode auf, die den gleichen Namen wie der Attributwert aufweist. Beispielsweise können Sie eine Rückrufmethode erstellen, die aufgerufen wird, wenn ein Benutzer eine Schaltfläche im Menüband klickt. Zum Erstellen einer Rückrufmethode sind zwei Schritte erforderlich:  
   
 -   Zuweisen eines Attributs zu einem Steuerelement in der Menüband-XML-Datei, die eine Rückrufmethode in Ihrem Code identifiziert.  
   
 -   Definieren der Rückrufmethode in der Klasse "Menüband".  
   
 > [!NOTE]  
->  Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über das Menüband veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über das Menüband veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: erstellen eine benutzerdefinierte Registerkarte mit Menüband-XML-](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
-### <a name="assigning-callback-methods-to-controls"></a>Zuweisen von Rückrufmethoden zu Steuerelementen  
+### <a name="assign-callback-methods-to-controls"></a>Zuweisen von Rückrufmethoden zu Steuerelementen  
  Wenn Sie einem Steuerelement eine Rückrufmethode in der Menüband-XML-Datei zuzuweisen möchten, fügen Sie ein Attribut hinzu, das den Typ der Rückrufmethode und den Namen der Methode angibt. Das folgende Element definiert z. B. eine Umschaltfläche, die über eine **onAction** -Rückrufmethode mit dem Namen `OnToggleButton1`.  
   
-```  
+```xml  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Die Methode, die Sie im Attribut angeben, kann einen beliebigen Namen besitzen. Er muss jedoch mit dem Namen der Methode übereinstimmen, den Sie in der Menüband-Codedatei definieren.  
   
- Es gibt viele verschiedene Typen von Rückrufmethoden, die Sie Menüband-Steuerelementen zuweisen können. Eine vollständige Liste der für jedes Steuerelement verfügbaren Rückrufmethoden finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 3 von 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ Es gibt viele verschiedene Typen von Rückrufmethoden, die Sie Menüband-Steuerelementen zuweisen können. Eine vollständige Liste der für jedes Steuerelement verfügbaren Rückrufmethoden, finden Sie im technischen Artikel [Anpassen der Benutzeroberfläche des Menübands für Office (2007) für Entwickler (Teil 3 von 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
 ###  <a name="CallBackMethods"></a> Definieren von Rückrufmethoden  
  Definieren Sie die Rückrufmethoden in der Klasse "Menüband" in der Menüband-Codedatei. Für eine Rückrufmethode gelten mehrere Anforderungen:  
@@ -88,17 +89,17 @@ ms.lasthandoff: 04/16/2018
   
 -   Ihre Signatur muss mit die Signatur eines Typs einer Rückrufmethode übereinstimmen, die für das zugehörige Menüband-Steuerelement verfügbar ist.  
   
- Eine vollständige Liste der Rückrufmethodensignaturen für Menüband-Steuerelemente finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 3 von 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio bietet keine IntelliSense-Unterstützung für Rückrufmethoden, die Sie in der Menüband-Codedatei erstellen. Wenn Sie eine Rückrufmethode erstellen, die nicht mit einer gültigen Signatur übereinstimmt, wird der Code zwar kompiliert. Es geschieht jedoch nichts, wenn der Benutzer auf das Steuerelement klickt.  
+ Eine vollständige Liste der Rückrufmethodensignaturen für Menüband-Steuerelemente finden Sie im technischen Artikel [Anpassen der Benutzeroberfläche des Menübands für Office (2007) für Entwickler (Teil 3 von 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio bietet keine IntelliSense-Unterstützung für Rückrufmethoden, die Sie in der Menüband-Codedatei erstellen. Wenn Sie eine Rückrufmethode erstellen, die nicht mit einer gültigen Signatur übereinstimmt, wird der Code zwar kompiliert. Es geschieht jedoch nichts, wenn der Benutzer auf das Steuerelement klickt.  
   
  Alle Rückrufmethoden verfügen über einen Parameter <xref:Microsoft.Office.Core.IRibbonControl> , der das Steuerelement darstellt, das die Methode aufgerufen hat. Sie können diesen Parameter verwenden, um die gleiche Rückrufmethode für mehrere Steuerelemente wiederzuverwenden. Das folgende Codebeispiel veranschaulicht eine **onAction** -Rückrufmethode, die verschiedene Aufgaben abhängig davon ausführt, auf welches Steuerelement der Benutzer klickt.  
   
  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Referenz zur Menüband-XML-Datei  
- Sie können Ihr benutzerdefiniertes Menüband durch Hinzufügen von Elementen und Attributen zur Menüband-XML-Datei definieren. Standardmäßig enthält die Menüband-XML-Datei die folgenden XML-Elemente.  
+##  <a name="RibbonDescriptorFile"></a> Referenz zur Menüband XML-Datei  
+ Sie können das benutzerdefinierte Menüband durch Hinzufügen von Elementen und Attributen zur Menüband-XML-Datei definieren. Standardmäßig enthält die Menüband-XML-Datei die folgenden XML-Elemente.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">  
   <ribbon>  
@@ -117,32 +118,32 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|**customUI**|Stellt das benutzerdefinierte Menüband im VSTO-Add-In-Projekt dar.|  
+|**customUI**|Stellt das benutzerdefinierte Menüband im VSTO-Add-in-Projekt dar.|  
 |**ribbon**|Stellt das Menüband dar.|  
 |**Registerkarten**|Stellt eine Sammlung von Registerkarten des Menübands dar.|  
 |**Registerkarte "**|Stellt eine einzelne Registerkarte des Menübands dar.|  
 |**group**|Stellt eine Gruppe von Steuerelementen auf der Registerkarte des Menübands dar.|  
   
- Diese Elemente verfügen über Attribute, die das Aussehen und das Verhalten des benutzerdefinierten Menübands angeben. In der folgende Tabelle werden die Standardattribute in der Menüband-XML-Datei beschrieben.  
+ Diese Elemente verfügen über Attribute, die das Aussehen und Verhalten des benutzerdefinierten Menübands angeben. In der folgende Tabelle werden die Standardattribute in der Menüband-XML-Datei beschrieben.  
   
 |Attribut|Übergeordnetes Element|Beschreibung|  
 |---------------|--------------------|-----------------|  
-|**onLoad**|**customUI**|Gibt eine Methode an, die aufgerufen wird, wenn die Anwendung das Menüband lädt.|  
-|**idMso**|**Registerkarte "**|Gibt eine integrierte Registerkarte an, die im Menüband angezeigt wird.|  
+|**onLoad**|**customUI**|Gibt eine Methode, die aufgerufen wird, wenn die Anwendung das Menüband lädt.|  
+|**idMso**|**Registerkarte "**|Gibt eine integrierte Registerkarte an, in der Multifunktionsleiste angezeigt.|  
 |**ID**|**group**|Gibt die Gruppe an.|  
 |**label**|**group**|Gibt den Text an, der für die Gruppe angezeigt wird.|  
   
- Die Standardelemente und -attribute in der Menüband-XML-Datei sind eine kleine Teilmenge der Elemente und Attribute, die verfügbar sind. Eine vollständige Liste der verfügbaren Elemente und Attribute finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 2 von 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
+ Die Standardelemente und -attribute in der Menüband-XML-Datei sind eine kleine Teilmenge der Elemente und Attribute, die verfügbar sind. Eine vollständige Liste der verfügbaren Elemente und Attribute, finden Sie im technischen Artikel [Anpassen der Benutzeroberfläche des Menübands für Office (2007) für Entwickler (Teil 2 von 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a> Referenz zur Klasse "Menüband"  
- Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Fügen Sie dieser Klasse die Rückrufmethoden für Steuerelemente auf dem Menüband hinzu. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility> -Schnittstelle.  
+##  <a name="RibbonExtensionClass"></a> Referenz zur Menüband-Klasse  
+ Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Diese Klasse die Rückrufmethoden für Steuerelemente auf dem Menüband hinzugefügt haben. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility> -Schnittstelle.  
   
  Die folgende Tabelle beschreibt die Standardmethoden in dieser Klasse.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|`GetCustomUI`|Gibt den Inhalt der Menüband-XML-Datei zurück. Microsoft Office-Anwendungen rufen diese Methode auf, um eine XML-Zeichenfolge abzurufen, die die Benutzeroberfläche Ihres benutzerdefinierten Menübands definiert. Diese Methode implementiert die Methode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Hinweis:** `GetCustomUI` sollten implementiert werden, nur um den Inhalt der Menüband-XML-Datei zurückzugeben sollte nicht initialisiert werden, Ihr VSTO-Add-in verwendet werden.   Insbesondere sollten nicht versuchen, Dialogfelder oder andere Fenster in Ihrer `GetCustomUI` Implementierung anzuzeigen. Andernfalls verhält sich das benutzerdefinierte Menüband ggf. nicht ordnungsgemäß. Wenn Sie Code ausführen müssen, der Ihr VSTO-Add-In initialisiert, fügen Sie den Code dem `ThisAddIn_Startup` -Ereignishandler hinzu.|  
-|`OnLoad`|Weist den Parameter <xref:Microsoft.Office.Core.IRibbonControl> dem Feld `ribbon` zu. Microsoft Office-Anwendungen rufen diese Methode beim Laden des benutzerdefinierten Menübands auf. Sie können dieses Feld verwenden, um das benutzerdefinierte Menüband dynamisch zu aktualisieren. Weitere Informationen finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 1 von 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetCustomUI`|Gibt den Inhalt der Menüband-XML-Datei zurück. Microsoft Office-Anwendungen rufen diese Methode, um eine XML-Zeichenfolge abzurufen, die die Benutzeroberfläche Ihres benutzerdefinierten Menübands definiert. Diese Methode implementiert die Methode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Hinweis:** `GetCustomUI` sollten implementiert werden, nur um den Inhalt der Menüband-XML-Datei zurückzugeben sollte nicht initialisiert werden, Ihr VSTO-Add-in verwendet werden. Insbesondere sollten nicht versuchen, Dialogfelder oder andere Fenster in Ihrer `GetCustomUI` Implementierung anzuzeigen. Andernfalls kann das benutzerdefinierte Menüband verhält sich nicht ordnungsgemäß. Wenn Sie Code ausführen müssen, der Ihr VSTO-Add-In initialisiert, fügen Sie den Code dem `ThisAddIn_Startup` -Ereignishandler hinzu.|  
+|`OnLoad`|Weist den Parameter <xref:Microsoft.Office.Core.IRibbonControl> dem Feld `Ribbon` zu. Microsoft Office-Anwendungen rufen diese Methode auf, wenn sie das benutzerdefinierte Menüband geladen. Sie können dieses Feld verwenden, um das benutzerdefinierte Menüband dynamisch zu aktualisieren. Weitere Informationen finden Sie im technischen Artikel [Anpassen der Benutzeroberfläche des Menübands für Office (2007) für Entwickler (Teil 1 von 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Wird von der Methode `GetCustomUI` aufgerufen, um den Inhalt der Menüband-XML-Datei abzurufen.|  
   
 ## <a name="see-also"></a>Siehe auch  

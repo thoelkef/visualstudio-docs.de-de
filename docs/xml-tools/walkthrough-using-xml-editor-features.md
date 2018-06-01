@@ -10,20 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693824"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden der Funktionen des XML-Editors
+# <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden Sie die Funktionen des XML-Editor
 
-Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Bei der exemplarischen Vorgehensweise werden auch die Features des XML-Editors verwendet, die für das Verfassen von XML nützlich sind.
+Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Bei der exemplarischen Vorgehensweise werden auch die Funktionen des XML-Editors verwendet, die für das Verfassen von XML nützlich sind.
 
 > [!NOTE]
-> Speichern Sie vor dem Starten der exemplarischen Vorgehensweise die Datei hireDate.xsd (weiter unten in diesem Thema aufgeführt) auf dem lokalen Computer.
+> Vor dem Start der exemplarischen Vorgehensweise: Speichern der *hireDate.xsd* Datei (unten in diesem Thema erörtert) auf dem lokalen Computer.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen ihr ein XML-Schema zu
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen ihr ein XML-Schema
 
 1.  Auf der **Datei** Sie im Menü **neu**, und klicken Sie auf **Datei**.
 
@@ -39,7 +40,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
      Die **XSD-Schema öffnen** Dialogfeld wird angezeigt.
 
-5.  Wählen Sie die hireDate.xsd-Datei, und klicken Sie auf **öffnen**.
+5.  Wählen Sie die *hireDate.xsd* Datei, und klicken Sie auf **öffnen**.
 
 6.  Klicken Sie auf **OK**.
 
@@ -59,7 +60,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
     -   **Mitarbeiter** zum Hinzufügen eines Stammelements.
 
-2.  Wählen Sie **<!--** einen Kommentarknoten hinzuzufügen, und drücken die EINGABETASTE.
+2.  Wählen Sie **<!--** ein Kommentarknoten und drücken Sie die hinzuzufügenden **EINGABETASTE**.
 
      Der Editor fügt ein Kommentar-Endtag ein und platziert den Cursor zwischen dem Start- und Endtag des Kommentars.
 
@@ -71,7 +72,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 5.  Geben Sie `>` ein, um das Tag zu schließen.
 
-6.  Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die QuickInfo zeigt an, dass der Inhalt des 'employee'-Elements unvollständig ist. Erwartet wurde 'ID'.
+6.  Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die **QuickInfo** wird die Meldung angezeigt: **'Employee'-Elements Inhalt ist unvollständig. "ID" erwartet**.
 
 7.  Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.
 
@@ -79,17 +80,17 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 8.  Typ **Abc**.
 
-     Die **Abc** Text weist eine wellenförmige Unterstreichung. Die QuickInfo zeigt an, dass das 'ID'-Element einen für seinen Datentyp ungültigen Wert hat.
+     Die **Abc** Text weist eine wellenförmige Unterstreichung. Die **QuickInfo** wird die Meldung angezeigt: **das Element "ID" weist einen ungültigen Wert gemäß seinem Datentyp**.
 
-9. Klicken Sie mit der rechten Maustaste auf das ID-Element, und wählen Sie **Gehe zu Definition**.
+9. Mit der rechten Maustaste auf das ID-Element, und wählen Sie **Gehe zu Definition**.
 
-     Der Editor öffnet die Datei hireDate.xsd in einem neuen Dokumentfenster und platziert den Cursor auf der ID-Schemaelementdefinition.
+     Der Editor wird geöffnet. die *hireDate.xsd* -Datei in einem neuen Dokumentfenster angezeigt und platziert den Cursor auf die ID-Element-Schemadefinition.
 
 10. Zurückgeben der XML-Datei, und Ersetzen Sie die **Abc** Text mit **123**.
 
-     Die wellenförmige Unterstreichung und die Quickinfo unter dem ID-Elementwert werden gelöscht. Die QuickInfo für das 'employee'-Endtag zeigt an, dass der Inhalt des 'employee'-Elements unvollständig ist. Erwartet wurde 'hire-date'.
+     Die wellenförmige Unterstreichung und **QuickInfo** unter den ID-Elementwert deaktiviert sind. Die **QuickInfo** für das Ende der Mitarbeiter Tag zeigt jetzt die Meldung: **'Employee'-Elements Inhalt ist unvollständig. Erwartet 'Hire-Date'**.
 
-11. Positionieren Sie den Cursor hinter dem ID-Endtag, geben Sie `<` ein, wählen Sie 'hire-date' in der Memberliste aus, und geben Sie anschließend `>` ein.
+11. Platzieren Sie den Cursor hinter dem ID-Endtag, geben Sie im `<`Option **' Hire-Date** aus der Memberliste aus, und geben Sie dann im `>`.
 
      Der Editor fügt das XML-Element `<hire-date></hire-date>` hinzu und platziert den Cursor hinter dem 'hire-date'-Starttag.
 
@@ -105,11 +106,11 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 1.  Aus der **Datei** klicken Sie im Menü **speichern unter**.
 
-     Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet 'XMLFile1'.
+     Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet *'XMLFile1'*.
 
 2.  Geben Sie den Dateinamen und Speicherort für das XML-Dokument, und klicken Sie auf **speichern**.
 
-## <a name="hiredatexsd-file"></a>Die Datei "hireDate.xsd"
+## <a name="hiredatexsd-file"></a>hireDate.xsd-Datei
  Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
 
 ```xml

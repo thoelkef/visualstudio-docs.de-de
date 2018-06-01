@@ -1,5 +1,5 @@
 ---
-title: Multifunktionsleisten-Objektmodellübersicht | Microsoft Docs
+title: Übersicht über das Menüband-Objektmodell
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692960"
 ---
-# <a name="ribbon-object-model-overview"></a>Multifunktionsleisten-Objektmodellübersicht
-  Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt ein stark typisiertes Objektmodell, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Informationen finden Sie unter [Festlegen von Eigenschaften, die schreibgeschützt](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Übersicht über das Menüband-Objektmodell
+  Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt ein stark typisiertes Objektmodell, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Dieses Menüband-Objektmodell besteht hauptsächlich aus der [Menübandklasse](#RibbonClass), [Menübandereignisse](#RibbonEvents), und [Menüband-Steuerelementklassen](#RibbonControlClasses).  
+ Dieses Menüband-Objektmodell besteht hauptsächlich aus der [Multifunktionsleisten-Klasse](#RibbonClass), [Ereignisse des Menübands](#RibbonEvents), und [Menüband-Steuerelementklassen](#RibbonControlClasses).  
   
 ##  <a name="RibbonClass"></a> Ribbon-Klasse  
  Beim Hinzufügen einer neuen **Menüband (visueller Designer)** Element zu einem Projekt, fügt Visual Studio eine **Menüband** Ihrem Projekt. Die **Menüband** Klasse erbt von der <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> Klasse.  
@@ -38,8 +39,8 @@ ms.lasthandoff: 04/16/2018
   
 |event|Beschreibung|  
 |-----------|-----------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Wird ausgelöst, wenn die Menübandanpassung von der Office-Anwendung geladen wird. Der <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>-Ereignishandler wird automatisch der Menüband-Codedatei hinzugefügt. Führen Sie beim Laden des Menübands mithilfe dieses Ereignishandlers benutzerdefinierten Code aus.|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Ermöglicht beim Laden des Menübands die Zwischenspeicherung von Images in der Menübandanpassung. Eine leichte Leistungsverbesserung wird erzielt, wenn zum Zwischenspeichern der Menüband-Images in diesem Ereignishandler Code geschrieben wird. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Wird ausgelöst, wenn die Office-Anwendung die Menüband-Anpassung lädt. Die <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> -Ereignishandler wird automatisch der Menüband-Codedatei hinzugefügt. Führen Sie beim Laden des Menübands mithilfe dieses Ereignishandlers benutzerdefinierten Code aus.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Können Sie in der menübandanpassung Zwischenspeicherung von Images beim Laden des Menübands. Sie können eine leichte leistungsverbesserung abrufen, wenn Sie Code zum Zwischenspeichern der Menüband-Images in diesem Ereignishandler schreiben. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Wird ausgelöst, wenn die Menübandinstanz geschlossen wird.|  
   
 ##  <a name="RibbonControlClasses"></a> Menübandsteuerelemente  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Trennzeichen**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**"SplitButton"**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Registerkarte "**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**TAB**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  Der <xref:Microsoft.Office.Tools.Ribbon>-Namespace verwendet für diese Typen das Ribbon-Präfix, um einen Namenskonflikt mit den Namen der Steuerelementklassen im <xref:System.Windows.Forms>-Namespace zu verhindern.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Allgemeine Aufgaben mithilfe der Eigenschaften von Menübandsteuerelementen  
  Jedes `Ribbon`-Steuerelement beinhaltet Eigenschaften, mit denen Sie verschiedene Aufgaben ausführen können, wie das Zuweisen einer Bezeichnung zu einem Steuerelement oder das Ausblenden und Anzeigen von Steuerelementen.  
   
- In einigen Fällen sind Eigenschaften schreibgeschützt, nachdem das Menüband geladen oder einem Steuerelement ein dynamisches Menü hinzugefügt wurde. Weitere Informationen finden Sie unter [Festlegen von Eigenschaften, die schreibgeschützt](#SettingReadOnlyProperties).  
+ In einigen Fällen werden Eigenschaften schreibgeschützt, nachdem das Menüband geladen oder ein Steuerelement ein dynamisches Menü hinzugefügt wird. Weitere Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).  
   
  In der folgenden Tabelle werden einige der Aufgaben beschrieben, die Sie mithilfe der Eigenschaften des `Ribbon`-Steuerelements ausführen können.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
 |Hinzufügen von benutzerdefinierten Daten zu einem Steuerelement.|Verwenden Sie die Tag-Eigenschaft.|  
 |Abrufen der Elemente in einem <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>-Steuerelement, einem <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>-Steuerelement, einem <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>-Steuerelement oder einem<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>-Steuerelement|Verwenden der Items-Eigenschaft.|  
 |Hinzufügen eines <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>-Steuerelements, eines <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>-Steuerelements oder eines <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>-Steuerelements.|Verwenden der Items-Eigenschaft.|  
-|Hinzufügen von Steuerelementen zu <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Verwenden der Items-Eigenschaft.<br /><br /> Zum Hinzufügen von Steuerelementen an die <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> nach dem Laden des Menübands in die Office-Anwendung ist, müssen Sie festlegen der <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> Eigenschaft, um **"true"** vor dem Laden des Menübands in die Office-Anwendung. Informationen finden Sie unter [Festlegen von Eigenschaften, die schreibgeschützt](#SettingReadOnlyProperties).|  
+|Hinzufügen von Steuerelementen zu <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Verwenden der Items-Eigenschaft.<br /><br /> Zum Hinzufügen von Steuerelementen an die <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> nach dem Laden des Menübands in die Office-Anwendung ist, müssen Sie festlegen der <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> Eigenschaft, um **"true"** vor dem Laden des Menübands in die Office-Anwendung. Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).|  
 |Abrufen des ausgewählten Elements von <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> oder <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Verwenden Sie die Eigenschaft "SelectedItem". Verwenden Sie für <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> die <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>-Eigenschaft.|  
 |Abrufen der Gruppen auf <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>-Eigenschaft.|  
 |Angeben der Anzahl der Zeilen und Spalten, die in <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> angezeigt werden.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>-Eigenschaft und die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>-Eigenschaft.|  
@@ -98,38 +99,38 @@ ms.lasthandoff: 04/16/2018
   
 -   Im Konstruktor der **Menüband** Klasse.  
   
--   In der CreateRibbonExtensibilityObject-Methode der `ThisAddin`, `ThisWorkbook`, oder `ThisDocument` -Klasse des Projekts.  
+-   In der `CreateRibbonExtensibilityObject`-Methode der `ThisAddin`, `ThisWorkbook`- Klasse oder `ThisDocument`-Klasse des Projekts.  
   
- Dynamische Menüs bieten einige Ausnahmen. Sie können neue Steuerelemente erstellen, deren Eigenschaften festlegen und sie dann während der Laufzeit einem dynamischen Menü hinzufügen, und zwar auch nach dem Laden des Menübands mit dem Menü.  
+ Dynamische Menüs bieten einige Ausnahmen. Sie können neue Steuerelemente erstellen, deren Eigenschaften festlegen und fügen Sie ihn dann zur Laufzeit einem dynamischen Menü auch nach dem Laden des Menübands mit dem Menü.  
   
  Eigenschaften von Steuerelementen, die Sie einem dynamischen Menü hinzufügen, können jederzeit festgelegt werden.  
   
- Weitere Informationen finden Sie unter [Eigenschaften, die schreibgeschützt](#ReadOnlyProperties).  
+ Weitere Informationen finden Sie unter [Eigenschaften, die schreibgeschützt werden](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Festlegen von Eigenschaften im Konstruktor des Menübands  
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Legen Sie Eigenschaften im Konstruktor des Menübands  
  Sie können die Eigenschaften festlegen eine `Ribbon` im Konstruktor des Steuerelements die **Menüband** Klasse. Dieser Code muss nach dem Aufruf der `InitializeComponent`-Methode angezeigt werden. Im folgenden Beispiel wird einer Gruppe eine neue Schaltfläche hinzugefügt, falls die aktuelle Uhrzeit 17:00 Pacific Time (UTC-8) oder später ist.  
   
  Fügen Sie den folgenden Code hinzu.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
- In Visual C#-Projekten, die Sie von Visual Studio 2008 aktualisiert haben, wird der Konstruktor in der Menüband-Codedatei angezeigt.  
+ In Visual C#-Projekten, die von Visual Studio 2008 aktualisiert haben, wird der Konstruktor in der Menüband-Codedatei angezeigt.  
   
  In Visual Basic-Projekten oder in Visual C#-Projekten, die Sie in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellt haben, wird der Konstruktor in der Menüband-Designer-Codedatei angezeigt. Diese Datei heißt *YourRibbonItem*. Designer.cs oder *YourRibbonItem*. Designer.vb. Sie müssen zuerst klicken, um diese Datei in Visual Basic-Projekten anzuzeigen, die **alle Dateien anzeigen** Schaltfläche im Projektmappen-Explorer.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Festlegen der Eigenschaften in der CreateRibbonExtensibilityObject-Methode  
- Sie können die Eigenschaften festlegen eine `Ribbon` -Steuerelements beim Überschreiben der CreateRibbonExtensibilityObject-Methode in der `ThisAddin`, `ThisWorkbook`, oder `ThisDocument` -Klasse des Projekts. Weitere Informationen zu der CreateRibbonExtensibilityObject-Methode, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Legen Sie Eigenschaften in der CreateRibbonExtensibilityObject-Methode  
+ Sie können die Eigenschaften eines `Ribbon`-Steuerelements beim Überschreiben der `CreateRibbonExtensibilityObject`-Methode in der `ThisAddin`-, der `ThisWorkbook`-oder der `ThisDocument`-Klasse des Projekts festlegen. Weitere Informationen zu den `CreateRibbonExtensibilityObject` -Methode finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
- Im folgende Beispiel werden die Menübandeigenschaften in der CreateRibbonExtensibilityObject-Methode von der `ThisWorkbook` -Klasse eines Excel-Arbeitsmappenprojekts.  
+ Im folgende Beispiel werden die Menübandeigenschaften in der `CreateRibbonExtensibilityObject` Methode von der `ThisWorkbook` -Klasse eines Excel-Arbeitsmappenprojekts.  
   
  Fügen Sie den folgenden Code hinzu.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
 ###  <a name="ReadOnlyProperties"></a> Eigenschaften, die schreibgeschützt werden  
- In der folgenden Tabelle werden Eigenschaften angezeigt, die nur vor dem Laden des Menübands festgelegt werden können.  
+ Die folgende Tabelle zeigt die Eigenschaften, die nur vor dem Laden des Menübands festgelegt werden können.  
   
 > [!NOTE]  
 >  Sie können Sie die Eigenschaften der Steuerelemente in dynamischen Menüs jederzeit festlegen. Diese Tabelle ist in diesem Fall nicht gültig.  
@@ -159,13 +160,13 @@ ms.lasthandoff: 04/16/2018
 |**Registerkarten**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Titel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Festlegen von Eigenschaften für in Outlook-Inspektoren angezeigte Menübänder  
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Festlegen der Eigenschaften für, die in Outlook-Inspektoren angezeigte Menübänder  
  Bei jedem Öffnen eines Inspektors, in dem das Menüband angezeigt wird, wird eine neue Instanz des Menübands erstellt. Allerdings können die in der Tabelle oben aufgeführten Eigenschaften nur vor dem Erstellen der ersten Instanz des Menübands festgelegt werden. Nach dem Erstellen der ersten Instanz werden diese Eigenschaften schreibgeschützt, da die erste Instanz die XML-Datei definiert, die von Outlook zum Laden des Menübands verwendet wird.  
   
  Sofern Sie über bedingte Logik verfügen, mit der alle diese Eigenschaften auf einen anderen Wert festgelegt werden, wenn andere Instanzen des Menübands erstellt werden, bleibt dieser Code ohne Wirkung.  
   
 > [!NOTE]  
->  Sicherstellen, dass die **Namen** Eigenschaftensatz für jedes Steuerelement, das Sie einem Outlook-Menüband hinzugefügt haben. Wird einem Outlook-Menüband während der Laufzeit ein Steuerelement hinzugefügt, muss diese Eigenschaft im Code festgelegt werden. Wenn Sie einem Outlook-Menüband zur Entwurfszeit ein Steuerelement hinzufügen, wird die Name-Eigenschaft automatisch festgelegt.  
+>  Sicherstellen, dass die **Namen** Eigenschaftensatz für jedes Steuerelement, das Sie einem Outlook-Menüband hinzugefügt haben. Wenn Sie einem Outlook-Menüband zur Laufzeit ein Steuerelement hinzugefügt haben, müssen Sie diese Eigenschaft im Code festlegen. Wenn Sie einem Outlook-Menüband zur Entwurfszeit ein Steuerelement hinzufügen, wird die Name-Eigenschaft automatisch festgelegt.  
   
 ## <a name="ribbon-control-events"></a>Menüband-Steuerelementereignisse  
  Jede Steuerelementklasse beinhaltet mindestens ein Ereignis. In der folgenden Tabelle werden diese Ereignisse beschrieben.  
@@ -187,7 +188,7 @@ ms.lasthandoff: 04/16/2018
 |*e*|Ein <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>, das ein <xref:Microsoft.Office.Core.IRibbonControl> enthält. Greifen Sie mithilfe dieses Steuerelements auf eine beliebige Eigenschaft zu, die im von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellten Menüband-Objektmodell nicht verfügbar ist.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Zugriff auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Menüband-Designer](../vsto/ribbon-designer.md)   
@@ -196,7 +197,6 @@ ms.lasthandoff: 04/16/2018
  [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)   
  [Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Multifunktionsleisten-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Vorgehensweise: Anzeigen von Add-In-Benutzeroberflächenfehlern](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  
+ [Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Vorgehensweise: Anzeigen-Add-in-Benutzeroberflächenfehler](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ 
