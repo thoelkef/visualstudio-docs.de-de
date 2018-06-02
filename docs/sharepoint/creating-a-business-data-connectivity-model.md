@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691495"
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>Erstellen eines Business Data Connectivity-Modells
   Sie können ein Business Data Connectivity (BDC)-Modell erstellen oder Anpassen ein vorhandenes BDC-Modell mithilfe von Visual Studio. Jede SharePoint-Projekt kann nur ein Modell enthalten. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="creating-a-new-model"></a>Erstellen ein neues Modell  
+## <a name="create-a-new-model"></a>Erstellen eines neuen Modells
  Um ein neues Modell zu erstellen, erstellen eine **Business Data Connectivity-Modell** oder zum Hinzufügen einer **Business Data Connectivity-Modell** Element zum ein **leeres SharePoint-Projekt**.  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Visual Studio kopiert die Assembly in beide Speicherorte auf dem lokalen Computer an, wenn Sie das Debuggen des Projekts.  
   
-## <a name="adding-an-existing-model"></a>Hinzufügen eines vorhandenen Modells  
+## <a name="add-an-existing-model"></a>Fügen Sie ein vorhandenes Modell hinzu.
  Sie können ein Modell importieren, die mit anderen Tools wie dem SharePoint-Designer erstellt wurde. Sie können auswählen, importieren Sie ein vorhandenes Modell in das Projekt in den folgenden Situationen:  
   
 -   Um ein Modell anpassen, die bereits mit einer SharePoint-Serverfarm bereitgestellt wird.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  Sie können eine LOB-System vom Typ .NET Framework-Assembly importierten Modell hinzufügen, durch Auswahl einer Option in der **Hinzufügen von .NET Framework-Assembly LobSystem**. Dadurch können Sie benutzerdefinierten Code schreiben und verwenden Sie einen Designer, um die Metadaten für die importierte Modelle zu definieren.  
   
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[Vorgehensweise: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Beschreibt, wie Zeichenfolgen, die zusammengeführt werden die darin enthaltenen Modellmetadaten bereitzustellen, wenn das Modell von einem Webpart oder einer Webseite genutzt wird.|  
 |[Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Zeigt, wie die Funktion eine benutzerdefinierte Assembly einschließt.|  
   
-  
+ 

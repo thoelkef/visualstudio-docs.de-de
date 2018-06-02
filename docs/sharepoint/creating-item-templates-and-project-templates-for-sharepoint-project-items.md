@@ -20,11 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691962"
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
   Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie eine Elementvorlage oder einer Projektvorlage zuordnen, damit andere Entwickler das Projektelement in Visual Studio verwenden können. Sie können auch einen Assistenten für die Vorlage erstellen.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
  Elementvorlagen und Projektvorlagen sind ZIP-Dateien, die Dateien enthalten, die zum Erstellen eines Projektelements oder ein Projekt von Visual Studio verwendet werden. Weitere Informationen zu den Grundlagen von Elementvorlagen und Projektvorlagen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Erstellen von Elementvorlagen  
+## <a name="create-item-templates"></a>Erstellen von Elementvorlagen
  Wenn Sie eine Elementvorlage für eine SharePoint-Projektelement erstellen, gibt es einige Dateien, die immer erforderlich sind, und optionale Dateien, die von bestimmten Typen von Projektelementen verwendet werden können. Eine exemplarische Vorgehensweise, die veranschaulicht, wie einen SharePoint-Projektelementtyp definieren und erstellen eine Elementvorlage für finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Die folgende Tabelle enthält die erforderlichen Dateien, um eine Elementvorlage für eine SharePoint-Projektelements zu erstellen.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |aspx|Eine Auslagerungsdatei für ASP.NET. Diese Datei enthält XML-Markup, das einer Seite "Anwendung" definiert.|  
 |cs- oder VB-Dateien|Diese Dateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell aufweisen, die von Visual c# oder Visual Basic-Code, wie Anwendungsseiten, Webparts und Workflows zugegriffen werden kann.|  
   
-## <a name="creating-project-templates"></a>Erstellen von Projektvorlagen  
+## <a name="create-project-templates"></a>Erstellen von Projektvorlagen
  Wenn Sie eine SharePoint-Projektvorlage erstellen, sind einige Dateien, die immer erforderlichen und optionalen Dateien sind, die von bestimmten Typen von Projekten verwendet werden kann. SharePoint-Projekte enthalten in der Regel über mindestens ein SharePoint-Projektelement. Allerdings ist dies nicht erforderlich. Beispielsweise können Sie eine SharePoint-Projektvorlage definieren, die nur zur Bereitstellung von SharePoint-Lösungen, die in anderen Projekten erstellt verwendet werden sollen.  
   
  Eine exemplarische Vorgehensweise, die veranschaulicht, wie einen SharePoint-Projektelementtyp definieren und das Erstellen einer Projektvorlage für finden Sie unter [Exemplarische Vorgehensweise: Erstellen von Projektelement einer Websitespalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*FeatureName*Ereignisempfängers|Diese Datei definiert eine SharePoint-Funktion, die verwendet wird, um mehrere Projektelemente für die Bereitstellung zu gruppieren. Wenn Sie dem Funktions-Designer verwenden, um eine Funktion in Ihrem Projekt anzupassen, speichert Visual Studio Daten über die Funktion in dieser Datei. Wenn Sie die Projektelemente in andere Funktionen gruppieren möchten, können Sie mehrere Feature-Dateien einschließen.<br /><br /> Wenn Sie eine benutzerdefinierte SharePoint-Projektvorlage erstellen, es wird empfohlen, dass Sie nur den mindestens erforderlichen Inhalt in jeder Datei des Ereignisempfängers einschließen und der Features, zu konfigurieren, mithilfe der APIs in der <xref:Microsoft.VisualStudio.SharePoint.Features> -Namespace in eine Erweiterung, die mit zugeordnetem der Projektvorlage. Wenn Sie dies tun, ist die Projektvorlage aus zukünftigen Änderungen an der Struktur der Datei des Ereignisempfängers geschützt. Ein Beispiel, das veranschaulicht, wie eine Datei des Ereignisempfängers mit nur den erforderlichen Inhalt erstellen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen von Projektelement einer Websitespalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Wenn Sie eine Datei des Ereignisempfängers direkt ändern möchten, können Sie den Inhalt überprüfen, unter Verwendung des Schemas auf %Programme (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd.|  
 |*FeatureName*. Template.Xml|Diese Datei bildet die Grundlage für die Feature-Manifestdatei (Feature.xml) für jede Funktion, die aus dem Projekt generiert wird. Wenn einige Verhaltensweisen, die nicht von Benutzern des Project-Typs geändert werden sollen, angeben möchten, können Sie Inhalt an dieser Datei hinzufügen. Weitere Informationen finden Sie unter [Baustein: Funktionen](http://go.microsoft.com/fwlink/?LinkId=169183) und [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) Dateien.<br /><br /> Wenn Sie ein Lösungspaket aus dem Projekt erstellen, führt Visual Studio den Inhalt jedes Paars aus *FeatureName*Feature-Datei und *FeatureName*. Template.XML-Dateien in einer Funktion-Manifestdatei. Weitere Informationen zum Erstellen von Lösungspaketen finden Sie unter [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets (Wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Erstellen von Assistenten für Elementvorlagen und Projektvorlagen  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Assistenten für Elementvorlagen und Projektvorlagen erstellen
  Nachdem Sie einen SharePoint-Projektelementtyp definieren und ein Element oder einer Projektvorlage zuordnen, können Sie auch einen Assistenten erstellen. Der Assistent wird angezeigt, wenn ein Entwickler die Elementvorlage verwendet, um die SharePoint-Projektelement einem Projekt hinzufügen, oder wenn ein Entwickler die Projektvorlage verwendet, um ein neues Projekt erstellen, das die SharePoint-Projektelement enthält. Der Assistent kann zum Sammeln von Informationen von Entwicklern und die neue SharePoint-Projektelement initialisiert werden, verwendet werden.  
   
  Exemplarische Vorgehensweisen, die zum Erstellen der Assistenten für Elementvorlagen und Projektvorlagen zu veranschaulichen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) und [Exemplarische Vorgehensweise: Erstellen einer Website Projektelement mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Definieren von benutzerdefinierten SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Exemplarische Vorgehensweise: Erstellen eines Projektelements für die benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [Exemplarische Vorgehensweise: Erstellen ein Projekts Websitespalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Erstellen von Projekt- und Elementvorlagen](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

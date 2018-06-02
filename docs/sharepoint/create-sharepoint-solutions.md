@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691603"
 ---
 # <a name="create-sharepoint-solutions"></a>Erstellen von SharePoint-Lösungen
   Visual Studio bietet eine Alternative zur Erstellung von SharePoint-Anwendungen mithilfe von SharePoint Designer. Mit Funktionen wie erweiterten Debugtools, IntelliSense, Anweisungsvervollständigung und Projektvorlagen ermöglicht Visual Studio eine schnelle SharePoint-Entwicklung. Visual Studio nutzt auch erweiterte .NET Framework-basierte Tools und Sprachen. Sie können SharePoint-Projekte mit Visual Basic oder Visual C# entwickeln, und Sie können Apps für SharePoint-Projekte entwickeln, indem Sie JavaScript verwenden.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![MSDN Developer Center](../sharepoint/media/vs-icon-msdndevcenter.gif "MSDN Developer Center")|**MSDN Developer Center**<br /><br /> -   [Visual Studio Development Center](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [SharePoint Developer Center](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [SharePoint Server Developer Center](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [SharePoint Designer Developer Center](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [ASP.NET Developer Center](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Bereitstellen von Feedback](../sharepoint/media/vs-icon-feedback.gif "Bereitstellen von Feedback")|**Bereitstellen von Feedback**<br /><br /> Feedback zu Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Feedback zur Dokumentation für Visual Studio:<br /><br /> -   **Einfache Ansicht.** Am Anfang eines jeden Themas gelangen Sie über den Link **Dieses Thema bewerten** an das Ende dieses Themas, wo Sie die Frage **Fanden Sie dies hilfreich?** mit **Ja** oder **Nein** beantworten können Sie können eines oder mehrere Kontrollkästchen aktivieren, die angezeigt werden, wenn Sie **Ja**ausgewählt haben, weitere Informationen im Textfeld eingeben, oder beides. Wenn Sie fertig sind, klicken Sie **Senden** .<br />-   **Ansicht ohne Skripts.** Wählen Sie am Anfang des Themas den Link **Feedback** aus, um im MSDN-, TechNet- und Expression Library Feedback-Forum Feedback zu geben.<br />-   **Klassische Ansicht.** Wählen Sie am Anfang des Themas den Link **Per Mausklick bewerten und Feedback geben** aus, um dem Dokumentationsteam Feedback zum Thema zu geben.|  
   
-  
+ 

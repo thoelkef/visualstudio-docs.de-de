@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691803"
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Die Definition des SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht die Erstellung einer *Websitedefinition*, dem dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten von der SharePoint-Website jedoch auch den Standardinhalt und Funktionalität. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint schließt einige Websitedefinitionen wie BLOG verwenden, z. B. aus. Wenn Sie einen Standort basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.  
   
  Weitere Informationen zu Websitedefinitionen, finden Sie unter [Websitevorlagen und Definitionen](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Definition Websiteprojekten  
+## <a name="site-definition-projects"></a>Definition Websiteprojekten
  Definition Websiteprojekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nur die grundlegenden Dateien, die eine SharePoint-Website muss, sondern sie keinen keine Standardfunktionen. Sie müssen die Dateien und der Inhalt der Funktionalität bereit, die gewünschten hinzufügen. Sie können den Standort erstellen und Hinzufügen der Dateien, die Sie benötigen, manuell erstellen.  
   
-## <a name="feature-stapling"></a>Heften Funktion  
+## <a name="feature-stapling"></a>Heften Funktion
  Ein Vorteil beim Erstellen von Websitedefinitionen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ist, dass automatisch *Feature Heften*. Feature Heften Fügt eine Funktion an einer Websitedefinition anstatt seine Funktionalität in die Sitedefinition einzubetten. Auf diese Weise können Sie die Funktion mit einem beliebigen Standort mithilfe der Sitedefinition ohne Ändern der Standortdefinition des ursprünglichen erstellt hinzufügen. Weitere Informationen finden Sie unter [Feature Heften](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Standortkomponenten Definition-Projekt  
+## <a name="site-definition-project-components"></a>Standortkomponenten Definition-Projekt
  Wenn Sie eine sitedefinitionslösung erstellen, die folgenden Standarddateien hinzugefügt werden seine **SiteDefinition** Knoten.  
   
 |Dateiname|Beschreibung|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |onet.Xml|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Definition der Websitevorlage und Standardverhalten. Diese Einstellungen umfassen Attribute wie z. B. die Inhaltstypen, die aktiviert und den standardmäßigen Listenansichten Dokument Vorlagendateien zu und Webparts mit dem Standort enthalten. Wird standardmäßig die `Modules` Abschnitt listet die Dateien hinzugefügt werden, um die SharePoint-Website und wie diese konfiguriert werden.|  
 |Webtemp_*SiteDefinitionName*XML|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird der **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
   
- Standardmäßig werden alle Websitedefinitionen gespeichert, der *Laufwerk:*\Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates-Ordner. Jedes Site-Definition verfügt über einen eigenen Unterordner.  
+ Standardmäßig werden alle Websitedefinitionen gespeichert, der *Laufwerk:* \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates-Ordner. Jedes Site-Definition verfügt über einen eigenen Unterordner.  
   
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Programmieren von ASP.NET Web Pages](http://go.microsoft.com/fwlink/?LinkId=178728)|Enthält Informationen über das Erstellen von Ereignishandlern in [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten und zum Arbeiten mit Clientskripts.|  
 |[In Windows SharePointServices-Programmierung](http://go.microsoft.com/fwlink/?LinkId=178729)|Beschreibt, wie das verwaltete Objektmodell verwenden, die in bereitgestellten [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

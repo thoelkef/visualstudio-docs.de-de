@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichungsassistent (Office-Entwicklung in Visual Studio) | Microsoft Docs
+title: Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692719"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
   Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einem bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien, und ein Setupprogramm erstellen.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Geben Sie den Speicherort als Datenträgerpfad, Dateifreigabe, FTP-Site oder URL der Website, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um den Speicherort zu navigieren. Der Pfad kann in diesen Formaten sein:  
   
--   Ein relativer oder absoluter Pfad im Windows-Standardformat, z. B. C:\Deploy\MyApplication oder \MyApplication.  
+-   Ein relativer oder absoluter Pfad im Standard Windows format, z. B. *C:\Deploy\MyApplication* oder *\MyApplication*.  
   
--   Einen Pfad (UNC = Universal Naming Convention) wie z. B. \\\ServerName\MyApplication\\.  
+-   Einen Pfad (UNC = Universal Naming Convention) wie z. B.  *\\\ServerName\MyApplication\\*.  
   
 -   Eine URL einer Website, z. B. http://www.microsoft.com/MyApplication.  
   
@@ -68,8 +69,8 @@ ms.lasthandoff: 04/16/2018
  Visual Studio ist nicht die CD oder DVD zu brennen. Sie müssen die Ausgabe mit einer CD oder DVD manuell kopieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Seite "Veröffentlichen", Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Veröffentlichungsseite, Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   
   

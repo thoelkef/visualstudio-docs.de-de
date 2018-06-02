@@ -16,23 +16,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e67073d1a12a9412b153adc0c06471c4d39ff15a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0fd1a6f424e45b8982d4e05ea501186c45b96aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692001"
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungspaketen
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.  
   
-## <a name="packaging-tools"></a>Tools zum Packen  
+## <a name="packaging-tools"></a>Tools zum Packen
  Sie können die **Paket-Designer** auf das Paket anzupassen und das Manifest zu generieren. Sie können SharePoint-Projektelemente einschließen, konfigurieren, ob der Webserver zurückgesetzt werden soll, und den Bereitstellungsservertyp festlegen. Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
  Alternativ können Sie die **Paket-Explorer** so ändern Sie die Funktionen und Elemente in der Paketdatei (.wsp). Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
  Mithilfe von Visual Studio und MSBuild können Sie Paketdateien (.wsp) erstellen, die für die SharePoint-Lösung bereitgestellt werden sollen. Bei diesem Vorgang werden die für die SharePoint-Bereitstellung benötigten Manifestdateien generiert. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie ein SharePoint-Paket](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b) und [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets von mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
-## <a name="package-designer-options"></a>Optionen des Paket-Designers  
+## <a name="package-designer-options"></a>Optionen des Paket-Designers
  Die folgende Tabelle zeigt den Eigenschaften, die Sie in SharePoint-Paketen mit anpassen können die **Paket-Designer**.  
   
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|  
 |Elemente in diesem Paket|Dies ist optional. Alle SharePoint-Elemente und -Funktionen, die Sie im Paket bereitstellen möchten.|  
   
-## <a name="configuring-the-packaging-process"></a>Konfigurieren des Verpackungsprozesses  
+## <a name="configure-the-packaging-process"></a>Konfigurieren des Verpackungsprozesses
  Nachdem Sie SharePoint-Lösungen in Visual Studio entwickelt haben, können Sie anpassen, wie die Projekte gepackt werden.  
   
  In der folgenden Tabelle werden die zwei MSBuild-Ziele gezeigt, mit denen Sie anpassen können, wie die WSP-Datei erstellt wird.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen [wie: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
-## <a name="packaging-architecture"></a>Verpackungsarchitektur  
+## <a name="packaging-architecture"></a>Verpackungsarchitektur
  Die folgenden Schritte werden ausgeführt, wenn Sie in Visual Studio ein SharePoint-Paket (.wsp) erstellen.  
   
 1.  Der Funktionen und Pakete werden überprüft, um sicherzustellen, dass die physikalische und semantische Struktur des Pakets richtig ist.  
@@ -70,14 +71,14 @@ ms.lasthandoff: 04/16/2018
   
 6.  Die Dateien im Zwischenverzeichnis werden der WSP-Datei hinzugefügt.  
   
-## <a name="package-folder-structure"></a>Paketordnerstruktur  
+## <a name="package-folder-structure"></a>Paketordnerstruktur
  Wenn Sie das SharePoint-Projekt packen, WSP-Datei wird erstellt in der SolutionFolder\bin\\*BuildConfiguration* Ordner. Angenommen, wenn die Projektmappe in ist *Laufwerk*: \Visual Studio 2013\Projects\ListDefinition1 und die Buildkonfiguration auf Version festgelegt ist, wird die WSP-Datei befindet sich im *Laufwerk*: \Visual Studio 2013\ Projects\ListDefinition1\bin\Release.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [Vorgehensweise: Erstellen eines SharePoint-Pakets](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
  [Vorgehensweise: erstellen ein SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
  [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Zielen](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
-  
+ 

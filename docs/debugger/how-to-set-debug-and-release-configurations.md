@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690665"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  
@@ -60,7 +61,7 @@ Sie können die Buildkonfiguration aus ändern die **erstellen** im Menü auf de
   
      Diese Symbolleiste ist in Express-Editionen nicht verfügbar. Können Sie die **erstellen Lösung F6** und **Debuggen F5 starten** Menüelemente, um die Konfiguration auszuwählen.
 
-## <a name="BKMK_symbols_release"></a>Generieren Sie Symboldateien (.pbd) für einen build
+## <a name="BKMK_symbols_release"></a>Generieren von Symboldateien (.pdb) für einen build
 
 Für die meisten Projekttypen die PDB-Dateien werden generiert, wird standardmäßig sowohl Debug- und Releasebuilds, aber die Standardeinstellungen unterscheiden sich je nach Ihrer bestimmten Projekttyp und die Version von Visual Studio. Sie können konfigurieren, ob der Compiler die PDB-Dateien generiert und welche Art von Debuginformationen einschließen.
 

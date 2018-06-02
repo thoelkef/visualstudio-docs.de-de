@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691354"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>Zusätzliche Informationen über SharePoint-Fehler
+# <a name="additional-information-for-sharepoint-errors"></a>Weitere Informationen über SharePoint-Fehler
   Sie erhalten Unterstützung nach "bei der Problembehandlung [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fehler und Warnungen bei der Behandlung von Themen und den öffentlichen Foren von Microsoft Developer Network (MSDN) von SharePoint-tools.  
   
-## <a name="troubleshooting-errors-and-issues"></a>Problembehandlung bei Fehlern und Problemen  
+## <a name="troubleshoot-errors-and-issues"></a>Problembehandlung bei Fehlern und Problemen
  Unterstützung für einige häufige Fehler und andere Probleme in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Tools finden Sie unter den folgenden Themen:  
   
 -   [Problembehandlung bei SharePoint-Projektmappen](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Problembehandlung beim SharePoint-Packen und -Bereitstellen](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>Weitere Ressourcen  
+## <a name="other-resources"></a>Weitere Ressourcen
  Die folgende Tabelle enthält die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-tools-Foren und andere Ressourcen, die auf MSDN zur Verfügung.  
   
 |Begriff|Definition|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Wenn Sie weiterhin die Antworten, die Sie benötigen finden können, können Sie die online-Support-Optionen, z. B. Wenden Sie sich an Microsoft Product Support Services, oder suchen die Knowledge Base-Artikel zugreifen. Weitere Informationen finden Sie unter der [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) Seite.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erstellen und Debuggen von SharePoint-Projektmappen](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 

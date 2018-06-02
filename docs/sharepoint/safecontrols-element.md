@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99235ad0852ab211a93fa2241d0d86ccb2fd8b51
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 85b0d1884812c4846d78804b34d50986140bf29e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692027"
 ---
 # <a name="safecontrols-element"></a>SafeControls-Element
   Eine Auflistung von ASPX-Steuerelemente und Webparts, die für alle Benutzer Zugriff auf alle ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.  
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Schemaname**|SharePoint-Projektelementschema|  
 |**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
 |**Kann leer sein**|Nein|  

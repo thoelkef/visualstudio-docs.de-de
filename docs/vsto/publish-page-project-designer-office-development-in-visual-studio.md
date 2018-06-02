@@ -1,5 +1,5 @@
 ---
-title: Seite "Veröffentlichen", Projekt-Designer (Office-Entwicklung in Visual Studio) | Microsoft Docs
+title: Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692843"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
  Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer**aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.  
   
 > [!NOTE]  
->  Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Gewusst wie: Veröffentlichen einer Office-Projektmappe mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Speicherort des Veröffentlichungsordners (Website, FTP-Server oder Dateipfad)**  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokalen sein (*c:\foldername\publishfolder*), einen relativen (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\servername\foldername* oder http://*Servername/Ordnername*).  
   
- Speicherort für die Veröffentlichung ist standardmäßig *http://localhost/projectname/* Wenn auf dem IIS installiert, oder das Verzeichnis publish, wenn Sie dies tun müssen IIS nicht installiert.  
+ Speicherort für die Veröffentlichung ist standardmäßig *http://localhost/projectname/* Wenn IIS installiert ist, oder die *veröffentlichen\\*  Verzeichnis, wenn Sie nicht, dass IIS installiert verfügen.  
   
  **URL des Installationsordners**  
  Dies ist optional.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
  Lassen Sie dieses Feld leer, wenn sich die Installationsdateien an einem Speicherort befinden, der relativ zum Dokument oder Setupprogramm angegeben ist, z. B. bei der Option „CD“.  
   
- Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Gewusst wie: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Erforderliche Komponenten**  
  Die erforderlichen Komponenten können in das Setupprogramm einbezogen oder bei Bedarf während der Installation heruntergeladen werden.  
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/16/2018
  **Sprache für Veröffentlichung**  
  Diese Option legt die Sprache für die Microsoft-Softwarelizenzbedingungen fest und bezieht die Language Packs in die Liste der erforderlichen Komponenten ein. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.  
   
- Weitere Informationen zum Ändern der **Sprache für Veröffentlichung**finden Sie unter [Gewusst wie: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Weitere Informationen zum Ändern der **Sprache für Veröffentlichung**, finden Sie unter [Vorgehensweise: Ändern der Sprache für Veröffentlichung für eine ClickOnce-Anwendung](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Veröffentlichungsversion**  
  Legt die Versionsnummer für die Anpassung fest. Wenn die Versionsnummer geändert wird, erfolgt die Veröffentlichung der Anwendung als Update. Für jede Version wird während des Buildprozesses ein neuer Ordner erstellt, um das Überschreiben der zuvor veröffentlichten Version zu verhindern. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann bis zu fünf Ziffern umfassen.  
@@ -111,8 +112,8 @@ ms.lasthandoff: 04/16/2018
  Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertig stellen** im **Veröffentlichungs-Assistent**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
- [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
+ [Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

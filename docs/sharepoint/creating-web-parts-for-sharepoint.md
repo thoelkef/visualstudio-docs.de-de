@@ -28,23 +28,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691531"
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
   Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern. Webparts sind serverseitige Steuerelemente, die in einer Webpartseite ausgeführt werden. Diese sind die Bausteine der Seiten, die auf einer SharePoint-Website angezeigt werden. Finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Sie können Webparts in einer SharePoint-Website unter Verwendung von Vorlagen aus Visual Studio erstellen und debuggen.  
   
-## <a name="creating-a-web-part-in-visual-studio"></a>Erstellen eines Webparts in Visual Studio  
+## <a name="create-a-web-part-in-visual-studio"></a>Erstellen eines Webparts in Visual Studio
  Erstellen Sie ein Webpart durch Hinzufügen einer **Webpart** Element zu einem SharePoint-Projekt. Sie können eine **Webpart** Element in einer sandkastenlösung oder einer farmlösung.  
   
  Wenn Sie ein Webpart mit einem Designer visuell zu entwerfen, erstellen Sie möchten eine **visuelles Webpart** oder zum Hinzufügen von **visuelles Webpart** Element zu einem SharePoint-Projekt. Sie können eine **visuelles Webpart** Element in einer farmlösung.  
   
-### <a name="web-part-item"></a>Webpartelement  
+### <a name="web-part-item"></a>WebPartElement
  Ein **Webpart** Element enthält Dateien, die Sie verwenden können, um ein Webpart für eine SharePoint-Website zu entwerfen. Beim Hinzufügen einer **Webpart** item, Visual Studio erstellt einen Ordner in Ihrem Projekt, und klicken Sie dann den Ordner mehrere Dateien hinzugefügt. In der folgenden Tabelle werden die einzelnen Dateien beschrieben.  
   
 |Datei|Beschreibung|  
@@ -55,10 +56,10 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### <a name="visual-web-part-item"></a>Element Visuelles Webpart  
+### <a name="visual-web-part-item"></a>Element visuelles Webpart
  Ein visuelles Webpart ist ein Webpart, das Sie mit dem Visual Web Developer-Designer in Visual Studio erstellen. Ein visuelles Webpart funktioniert genauso wie jedes andere Webpart. Um einem Webpart Steuerelemente wie Schaltflächen und Textfelder hinzuzufügen, fügen Sie einer XML-Datei Code hinzu. Allerdings Sie Steuerelemente hinzufügen einer visuellen Webparts durch Ziehen oder kopieren sie in das Webpart im Visual Studio **Toolbox**. Der Designer generiert dann den erforderlichen Code in der XML-Datei. Finden Sie unter [Vorgehensweise: erstellen ein SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-## <a name="sharepoint-controls"></a>SharePoint-Steuerelemente  
+## <a name="sharepoint-controls"></a>SharePoint-Steuerelemente
  Visual Studio stellt einige Steuerelemente zum Erstellen von SharePoint-Seiten (beispielsweise Anwendungsseiten) bereit. Diese Steuerelemente werden der **Toolbox** unter **SharePoint-Steuerelemente**. Die Funktionalität für diese Steuerelemente leitet sich von der [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) -Namespace, der ASP.NET-Serversteuerelemente enthält, die auf SharePoint-Websites und Listen-Seiten verwendet werden.  
   
 |Steuerelementname|Beschreibung|  
@@ -73,14 +74,14 @@ ms.lasthandoff: 04/16/2018
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Stellt Eigenschaften und Methoden zum Registrieren von Ressourcen (beispielsweise Skripts) auf einer Seite bereit, sodass sie angefordert werden können, wenn die Seite gerendert wird.|  
 |[Design](http://go.microsoft.com/fwlink/?LinkId=235314)|Wendet ein Design auf die ASPX-Seite an.|  
   
-## <a name="debugging-a-web-part"></a>Debuggen eines Webparts  
+## <a name="debug-a-web-part"></a>Debuggen eines Webparts
  Sie können ein SharePoint-Projekt, das ein Webpart enthält, auf dieselbe Weise debuggen wie andere Visual Studio-Projekte. Wenn Sie den Visual Studio-Debugger starten, wird von Visual Studio die SharePoint-Website geöffnet.  
   
  Um mit dem Debuggen des Codes zu beginnen, fügen Sie das Webpart einer Webpartseite in SharePoint hinzu.  
   
  Weitere Informationen zum Debuggen von SharePoint-Projekten finden Sie unter [SharePoint-Lösungen zur Problembehandlung](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="visual-web-part-limitations"></a>Einschränkungen für visuelle Webparts  
+## <a name="visual-web-part-limitations"></a>Einschränkungen für visuelle Webparts
  Ab Visual Studio können Sie visuelle Webparts zu SharePoint-Sandkastenlösungen und -Farmlösungen hinzufügen. Allerdings weisen visuelle Webparts die folgenden Einschränkungen auf:  
   
 -   Visuelle Webparts unterstützen keine ersetzbare Parameter. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).  
@@ -103,14 +104,14 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen über sandkastenlösungen finden Sie unter [Unterschiede zwischen Sandkasten- und Farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## <a name="creating-older-style-sharepoint-based-web-parts"></a>Erstellen von SharePoint-basierten Webparts im älteren Format  
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Erstellen Sie SharePoint-basierten Webparts im älteren Format
  Sie können die Vorlagen in Visual Studio verwenden, um benutzerdefinierte [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]-Webparts für SharePoint zu erstellen. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]-Webparts werden auf Grundlage der [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Webpartinfrastruktur erstellt und werden als Typ für neue Projekte empfohlen.  
   
  In seltenen Fällen müssen Sie möglicherweise ein Webpart mit dem SharePoint-basierten Webpart im älteren Format erstellen. Sie können diese Typen von Webparts mithilfe von Visual Studio erstellen, jedoch stellt Visual Studio keine Vorlagen bereit, die speziell für das Erstellen dieser Webparts ausgelegt sind.  
   
  Weitere Informationen, wenn Sie eine SharePoint-basierten Webpart im älteren Format erstellen möchten, finden Sie unter [Infrastruktur in Windows SharePoint Services Web](http://go.microsoft.com/fwlink/?LinkId=169290). Weitere Informationen zum Erstellen eines Webparts mit der SharePoint-basierten Webpart im älteren Format finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer grundlegenden SharePoint-Webpart](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
@@ -120,5 +121,4 @@ ms.lasthandoff: 04/16/2018
 |[Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Beschreibt, wie ein Webpart für SharePoint entworfen wird.|  
 |[Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Beschreibt, wie ein Webpart für SharePoint durch Ziehen von Steuerelementen auf eine visuelle Entwurfsoberfläche entworfen wird.|  
 |[Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Beschreibt, wie ein Webpart für SharePoint entworfen wird, das eine Silverlight-Anwendung hostet und Daten aus SharePoint-Listen anzeigt.|  
-  
   
