@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691369"
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen
   Sie können benutzerdefinierte Daten an bestimmte Objekte in der SharePoint-Tools-Erweiterungen hinzufügen. Dies ist hilfreich, wenn Daten in einem Teil der Erweiterung, die Sie später aus anderem Code in der Erweiterung zugreifen möchten. Anstatt zu implementieren eine benutzerdefinierte Methode zum Speichern und den Zugriff auf Daten, können die Daten mit einem Objekt in der Erweiterung zuordnen und klicken Sie dann die Daten aus dem gleichen Objekt später abrufen.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  In die Erweiterungen des SharePoint-Projektsystem können Sie auch Zeichenfolgendaten speichern, die erhalten bleibt, nachdem eine Erweiterung entladen wird. Weitere Informationen finden Sie unter [speichern Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Objekte, die benutzerdefinierte Daten enthalten kann  
+## <a name="objects-that-can-contain-custom-data"></a>Objekte, die benutzerdefinierte Daten enthalten kann
  Sie können benutzerdefinierte Daten hinzufügen, auf ein beliebiges Objekt in der SharePoint-Tools-Objektmodell, das implementiert die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> Schnittstelle. Diese Schnittstelle definiert nur eine der Eigenschaften <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, dies ist eine Auflistung von benutzerdefinierten Datenobjekte. Die folgenden Typen implementieren <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Hinzufügen und Abrufen von benutzerdefinierten Daten  
+## <a name="add-and-retrieve-custom-data"></a>Hinzufügen und Abrufen von benutzerdefinierten Daten
  Um benutzerdefinierte Daten zu einem Objekt in einer SharePoint-Tools-Erweiterung hinzufügen, erhalten die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> -Eigenschaft des Objekts, das Sie verwenden möchten, fügen Sie die Daten auf, und verwenden Sie dann die <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> Methode, um die Daten auf das Objekt hinzuzufügen.  
   
  Um benutzerdefinierte Daten aus einem Objekt in einer SharePoint-Tools-Erweiterung abzurufen, rufen die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft des Objekts und verwenden Sie dann eine der folgenden Methoden:  
@@ -81,10 +82,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Programmierkonzepte und Features für SharePoint-Tools-Erweiterungen](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [Exemplarische Vorgehensweise: Erstellen eines Projektelements für die benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projektelementtyp] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-Type.MD   
-  
+ 

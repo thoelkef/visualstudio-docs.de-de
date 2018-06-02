@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Office-Projektvorlagen | Microsoft Docs
+title: Übersicht über Office-Projektvorlagen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692612"
 ---
 # <a name="office-project-templates-overview"></a>Übersicht über Office-Projektvorlagen
   Die Entwicklertools für Microsoft Office in Visual Studio enthalten Projektvorlagen für das Erstellen folgender Typen von Office-Lösungen:  
@@ -50,12 +51,12 @@ ms.lasthandoff: 04/16/2018
   
  Die Office-Projektvorlagen sind im Dialogfeld **Neues Projekt** unter dem Knoten **Office** im **Visual C#** -Sprachknoten und im **Visual Basic** -Sprachknoten verfügbar. Jede Vorlage generiert ein Projekt mit der entsprechenden Konfiguration für die Zielanwendung, einschließlich der Assemblyverweise und Debugeinstellungen.  
   
- Jedes Projekt enthält Dateien und Code, die bzw. der Ihnen als Ausgangspunkt für eine bestimmte Art von Projektmappe dienen. Der generierte Code für jedes Projekt schließt Ereignishandler zum Starten und Herunterfahren ein. Sie können diesen Ereignishandlern Code hinzufügen, um die Projektmappe zu initialisieren, wenn sie geladen wird, und um die Projektmappe zu bereinigen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Office Projects in the Visual Studio Environment](../vsto/office-projects-in-the-visual-studio-environment.md) und [Events in Office Projects](../vsto/events-in-office-projects.md).  
+ Jedes Projekt enthält Dateien und Code, die bzw. der Ihnen als Ausgangspunkt für eine bestimmte Art von Projektmappe dienen. Der generierte Code für jedes Projekt schließt Ereignishandler zum Starten und Herunterfahren ein. Sie können diesen Ereignishandlern Code hinzufügen, um die Projektmappe zu initialisieren, wenn sie geladen wird, und um die Projektmappe zu bereinigen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Office-Projekte in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md) und [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
->  Die Office-Entwicklertools sind in bestimmten Editionen von Visual Studio enthalten. Weitere Informationen finden Sie unter [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+>  Die Office-Entwicklertools sind in bestimmten Editionen von Visual Studio enthalten. Weitere Informationen finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a> Document-Level Customizations  
+##  <a name="DocLevel"></a> Anpassungen auf Dokumentebene  
  Der **Office** -Knoten im Dialogfeld **Neues Projekt** stellt die folgenden Projektvorlagen bereit, um Ihnen den Einstieg für Anpassungen auf Dokumentebene für Word und Excel zu erleichtern:  
   
 -   **Word 2013- und 2016-VSTO-Dokument**  
@@ -79,11 +80,11 @@ ms.lasthandoff: 04/16/2018
  Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen verhalten sich ebenso wie die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen. Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen erleichtern Benutzern jedoch die Erstellung neuer lokaler Dokumente oder Arbeitsmappenkopien der benutzerdefinierten Vorlage in der Projektmappe. Die Funktionen in der Projektmappe sind in dem neuen Dokument verfügbar, das der Benutzer aus der Vorlage erstellt.  
   
 > [!NOTE]  
->  Word-Vorlagen, die auf Erweiterungen durch verwalteten Code verweisen, können nicht als globale VSTO-Add-Ins verwendet werden. Die Assembly wird nicht aufgerufen, wenn die Vorlage aus dem Word-Verzeichnis „Startup“ geladen wird. Weitere Informationen finden Sie unter [Einschränkungen bei globalen Vorlagen und Excel-Add-Ins (XLA-Dateien)](#Limitations)  
+>  Word-Vorlagen, die auf Erweiterungen durch verwalteten Code verweisen, können nicht als globale VSTO-Add-Ins verwendet werden. Die Assembly wird nicht aufgerufen, wenn die Vorlage aus dem Word-Verzeichnis „Startup“ geladen wird. Weitere Informationen finden Sie unter [Einschränkungen bei globalen Vorlagen und Excel-Add-ins (XLA-Dateien)](#Limitations)  
   
  Weitere Informationen für die ersten Schritte mit diesen Projekttypen finden Sie in den folgenden Themen:  
   
--   [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+-   [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)  
   
 -   [Word-Projektmappen](../vsto/word-solutions.md)  
   
@@ -128,9 +129,9 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen für die ersten Schritte mit diesen Projekttypen finden Sie in den folgenden Themen:  
   
--   [Erste Schritte: Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
+-   [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)  
   
 -   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
@@ -142,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>Dokument- und Vorlagenprojektmappen  
+## <a name="document-vs-template-solutions"></a>Im Vergleich zu Vorlagenprojektmappen dokumentieren  
  Wenn Sie eine Projektmappe für ein Word-Dokument oder eine Excel-Arbeitsmappe entwerfen, müssen Sie sich entscheiden, wie Sie dieses Dokument am besten für Benutzer zur Verfügung stellen.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/16/2018
 |Benutzer können ein Dokument öffnen und ändern, sofern es nicht schreibgeschützt ist. Alle gespeicherten Änderungen werden im Original beibehalten.|Benutzer können eine Vorlage öffnen, um eine lokale Kopie als neues Dokument zu erstellen. Das Original kann nur mit besonderen Berechtigungen geändert werden.|  
 |Beim Öffnen löst das Dokument das <xref:Microsoft.Office.Tools.Word.Document.Open> -Ereignis aus.|Beim Öffnen löst die Vorlage das <xref:Microsoft.Office.Tools.Word.Document.New> -Ereignis aus.|  
   
-##  <a name="Limitations"></a> Einschränkungen bei globalen Vorlagen und Excel-Add-Ins (XLA-Dateien)  
+##  <a name="Limitations"></a> Einschränkungen bei globalen Vorlagen und Excel-Add-ins (XLA-Dateien)  
  Dokumente, Arbeitsmappen und Vorlagen funktionieren als globale Vorlagen oder Excel-VSTO-Add-Ins (XLA-Dateien) möglicherweise nicht ordnungsgemäß.  
   
 ## <a name="word-templates"></a>Word-Vorlagen  
@@ -172,8 +173,8 @@ ms.lasthandoff: 04/16/2018
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Erste Schritte Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [Erste Schritte Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Erste Schritte: Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
+ [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

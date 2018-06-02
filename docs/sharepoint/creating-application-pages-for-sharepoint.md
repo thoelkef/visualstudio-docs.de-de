@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68731e2a0c933f3f48f3a2211a9d17ca21e50242
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691978"
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Ein *Seite "Anwendung"* ist eine ASP.NET-Webseite, die für die Verwendung in einer SharePoint-Website entwickelt wurde. Anwendungsseiten sind ein spezialisierter Typ von ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite ist, dass eine Anwendungsseite Inhalt enthält, die mit einer SharePoint-Masterseite zusammengeführt wird. Eine Masterseite ermöglicht dienstanwendungsseiten, um das gleiche Erscheinungsbild und Verhalten wie andere Seiten auf einer Website freigeben.  
   
  Visual Studio ermöglicht Ihnen Anwendungsseiten, die mit einem Designer entworfen. Der Designer zeigt einen Inhaltsbereich für jeden Inhaltsplatzhalter, die auf einer Masterseite definiert ist. Sie können die Seite "Anwendung" durch Ziehen von Steuerelementen in diese Inhaltsbereiche entwerfen.  
   
-## <a name="application-pages"></a>Anwendungsseiten  
+## <a name="application-pages"></a>Anwendungsseiten
  Anwendungsseiten sind in allen Standorten auf dem Server freigegeben, während eine Websiteseite mit einem Standort spezifisch ist. Weitere Informationen [SharePoint Seitentypen](http://go.microsoft.com/fwlink/?LinkID=211584).  
   
  Standardmäßig sind die meisten der Seiten, die beim Erstellen einer SharePoint-Websites angezeigt Seiten der Website. Eine Websiteseite kann in einer SharePoint-Seite-Bibliothek hinzugefügt werden. Benutzer können eine Websiteseite mit Tools wie SharePoint Designer anpassen. Eine Websiteseite kann auch Funktionen wie dynamische Webparts und Web Teil Zonen hosten.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Visual Studio bietet keine Vorlagen, mit denen Sie Seiten der Website für eine SharePoint-Website zu erstellen. Weitere Informationen finden Sie unter [SharePoint Seitentypen](http://go.microsoft.com/fwlink/?LinkID=211584).  
   
-## <a name="creating-an-application-page"></a>Erstellen einer Anwendungsseite  
+## <a name="create-an-application-page"></a>Erstellen einer Anwendungsseite
  Fügen Sie zum Erstellen einer Anwendungsseite einer **Anwendungsseite** einem SharePoint-Projekt. Wenn Sie eine Anwendungsseite erstellen, fügt Visual Studio die folgenden Ordner zu Ihrem Projekt hinzu:  
   
 |Ordner|Beschreibung|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 |Die Codedatei Anwendungsseite|Enthält die CodeBehind-Seite "Anwendung". Fügen Sie Code, der Ereignisse in dieser Datei behandelt.|  
 |Application-Designer-Codedatei|Enthält Code, der vom Designer generiert wird. Bearbeiten Sie diese Datei nicht direkt.|  
   
-## <a name="designing-and-debugging-an-application-page"></a>Entwerfen und Debuggen einer Anwendungsseite  
+## <a name="design-and-debug-an-application-page"></a>Entwerfen und Debuggen von einer Anwendungsseite
  Entwerfen Sie den Inhalt einer Anwendungsseite mithilfe der Designeransicht in Visual Studio. Dieser Designer wird angezeigt, wenn Sie die Seite "Anwendung" in Ihrem Projekt öffnen (indem Sie darauf doppelklicken oder indem Sie das Kontextmenü öffnen und auswählen, **öffnen**) und wählen Sie dann die **Entwurf** Schaltfläche am unteren Rand der Editor.  
   
 > [!NOTE]  
@@ -70,14 +71,13 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen zum Debuggen von SharePoint-Projekten finden Sie unter [SharePoint-Lösungen zur Problembehandlung](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="choosing-a-master-page"></a>Auswählen einer Masterseite  
+## <a name="choose-a-master-page"></a>Wählen Sie eine Gestaltungsvorlage
  Wird standardmäßig ein **Anwendungsseite** Element verweist auf die Gestaltungsvorlage der Site, die Sie verwenden, um das Debuggen des Projekts. Seite heißt v4.master und können dort aufgeführt, die der **Master Page Gallery** der SharePoint-Website.  
   
  Sie können explizit ändern, welche Masterseite von der Seite "Anwendung" verwendet wird, durch Festlegen der `MasterPageFile` Attribut der Anwendung `Page` Element. (Zum Beispiel: `MasterPageFile="~/_layouts/applicationv4.master"`). Tatsächlich müssen Sie dieses Attribut festlegen, wenn dynamische Masterseiten nicht auf dem SharePoint-Server aktiviert sind. Weitere Informationen zu master Seiten in SharePoint finden Sie unter [Masterseiten](http://go.microsoft.com/fwlink/?LinkID=169281).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [SharePoint Foundation-Entwicklung im Detail](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [Übersicht über ASP.NET](/aspnet/overview)   
  [ASP.NET-Webseiten 2](/aspnet/web-pages/index)   
-  
   

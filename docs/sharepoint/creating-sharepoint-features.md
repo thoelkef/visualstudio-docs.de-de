@@ -16,26 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692014"
 ---
 # <a name="creating-sharepoint-features"></a>Erstellen von SharePoint-Funktionen
   Sie können eine SharePoint-Funktion verwenden, um Gruppen von verwandten SharePoint-Projektelemente zur einfacheren Bereitstellung. Sie können Funktionen erstellen, Bereiche festlegen und andere Funktionen wie Abhängigkeiten zu markieren, mit der SharePoint-Funktions-Designer. Der Designer generiert auch ein Manifest, also eine XML-Datei, die einzelnen Funktionen beschreibt.  
   
-## <a name="adding-features-to-the-sharepoint-solution"></a>Hinzufügen von Funktionen zu der SharePoint-Lösung  
+## <a name="add-features-to-the-sharepoint-solution"></a>Hinzufügen von Funktionen zu der SharePoint-Lösung
  Sie können die SharePoint-Lösung mithilfe des Projektmappen-Explorer oder dem Paket-Explorer eine Funktion hinzuzufügen. Sie können eine der folgenden Methoden verwenden, eine Funktion hinzu.  
   
 -   In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Funktionen**, und wählen Sie dann **Funktion hinzufügen**.  
   
 -   In **Paket-Explorer**, öffnen Sie das Kontextmenü für das Paket, und wählen Sie dann **Funktion hinzufügen**.  
   
-## <a name="using-the-feature-designer"></a>Mithilfe der Funktions-Designer  
+## <a name="using-the-feature-designer"></a>Mithilfe der Funktions-designer
  Eine SharePoint-Lösung kann eine oder mehrere SharePoint-Funktionen, enthalten, die unter dem Knoten "Funktion" im Projektmappen-Explorer gruppiert werden. Jede Funktion verfügt über eine eigene **Funktions-Designer** , dass Sie verwenden können, um die Funktionseigenschaften anzupassen. Weitere Informationen finden Sie unter [wie: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md). Um Funktionen voneinander zu unterscheiden, können Sie die Eigenschaften wie z. B. Titel, Beschreibung, Version und Bereich konfigurieren.  
   
-### <a name="feature-designer-options"></a>Feature-Designeroptionen  
+### <a name="feature-designer-options"></a>Feature-Designeroptionen
  Nach dem Erstellen einer Funktion können Sie die Funktions-Designer, um ihn anzupassen.  
   
  Die folgende Tabelle beschreibt die Eigenschaften, die in der Funktions-Designer angezeigt werden.  
@@ -48,13 +49,13 @@ ms.lasthandoff: 05/17/2018
 |Elemente in der Lösung|Alle SharePoint-Elemente, die die Funktion hinzugefügt werden kann.|  
 |Elemente in der Funktion|Die SharePoint-Projektelemente, die auf die Funktion hinzugefügt wurden.|  
   
-## <a name="adding-and-removing-sharepoint-project-items"></a>Hinzufügen und Entfernen von SharePoint-Projektelemente  
+## <a name="add-and-remove-sharepoint-project-items"></a>Hinzufügen und Entfernen von SharePoint-Projektelemente
  Sie können die SharePoint-Projektelemente auswählen, dass Sie eine SharePoint-Funktion zur Bereitstellung hinzufügen möchten. Verwenden der **Funktions-Designer** hinzufügen und Entfernen von Elementen in Funktionen und das Funktionsmanifest anzeigen. Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).  
   
-## <a name="adding-feature-dependencies"></a>Hinzufügen von Funktionsabhängigkeiten  
+## <a name="add-feature-dependencies"></a>Hinzufügen von funktionsabhängigkeiten
  Sie können das Funktionsmanifest konfigurieren, sodass die SharePoint-Server bestimmte Funktionen aktiviert, bevor die Funktion aktiviert ist. Z. B. wenn die SharePoint-Funktion auf andere Funktionen für Funktionen oder Daten abhängig ist, kann die SharePoint-Server zuerst versuchen, keines der Features zu aktivieren, die von die Funktion abhängig ist. Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Funktionsabhängigkeiten](../sharepoint/how-to-add-and-remove-feature-dependencies.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
  [Vorgehensweise: Hinzufügen und Entfernen von Funktionsabhängigkeiten](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  

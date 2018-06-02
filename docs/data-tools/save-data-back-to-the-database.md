@@ -1,5 +1,5 @@
 ---
-title: Speichern von Daten in der Datenbank
+title: Rückspeichern von Daten in der Datenbank
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691133"
 ---
-# <a name="save-data-back-to-the-database"></a>Speichern von Daten in der Datenbank
+# <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 Das Dataset ist ein in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie dazu auf eine der drei Arten:
 
 -   Durch einen Aufruf der Update-Methoden eines TableAdapters
@@ -221,7 +222,7 @@ Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenqu
 
  Als eine Abbildung wie Aktualisierungen durchgeführt werden nehmen Sie an, dass Ihre Anwendung ein Dataset verwendet, die eine einzelnen Tabelle enthält. Die Anwendung ruft zwei Zeilen aus der Datenbank ab. Nach dem Abruf sieht die Datentabelle im Arbeitsspeicher wie folgt aus:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenqu
 
  Die Anwendung ändert Nancy Buchanans Status in "Preferred". Durch diese Änderung wird der Wert der <xref:System.Data.DataRow.RowState%2A>-Eigenschaft von <xref:System.Data.DataRowState.Unchanged> in <xref:System.Data.DataRowState.Modified> geändert. Der Wert der <xref:System.Data.DataRow.RowState%2A>-Eigenschaft für die erste Zeile behält den Wert <xref:System.Data.DataRowState.Unchanged> bei. Die Datentabelle sieht nun wie folgt aus:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

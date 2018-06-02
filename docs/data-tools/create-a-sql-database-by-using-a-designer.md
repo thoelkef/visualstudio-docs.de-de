@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690925"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 Sie können Visual Studio verwenden, erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB. Sie können auch eine Datenbank erstellen, durch das Ausführen von Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio. In diesem Thema wird eine MDF-Datei erstellen und Hinzufügen von Tabellen und Schlüsseln mit dem Tabellen-Designer.
@@ -88,7 +89,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
 6.  Benennen Sie die Tabelle "Customers", indem Sie die erste Zeile im Skriptbereich entsprechend dem folgenden Beispiel aktualisieren:
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 

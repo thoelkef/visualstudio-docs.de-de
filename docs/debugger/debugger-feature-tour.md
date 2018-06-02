@@ -1,6 +1,6 @@
 ---
-title: Erster Blick auf der debugger
-description: Schnellen Blick auf die verschiedenen Funktionen von Visual Studio-Debugger.
+title: Erster Einblick in den Debugger
+description: Nehmen Sie einen Überblick über die verschiedenen Funktionen von Visual Studio-Debugger.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,15 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691091"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Erster Blick auf den Visual Studio-Debugger
 
-In diesem Thema werden die Funktionen von Visual Studio-Debugger vorgestellt. Wenn Sie nachvollziehen, die durch Ihre eigene app in Visual Studio öffnen möchten, können Sie dies tun, oder Sie zusammen mit einem Beispiel-app mithilfe führen der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
+In diesem Thema werden die Features des Visual Studio-Debuggers vorgestellt. Wenn Sie nachvollziehen, die durch Ihre eigene app in Visual Studio öffnen möchten, können Sie dies tun, oder Sie zusammen mit einem Beispiel-app mithilfe führen der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
 
 Die hier beschriebenen Funktionen gelten für c#, C++, Visual Basic, JavaScript und anderen Sprachen, die von Visual Studio unterstützt (falls nicht anders) zur Verfügung.
 
@@ -76,7 +77,7 @@ Im Debugger, zeigen Sie auf eine Codezeile, bis die **ausführen, klicken Sie au
 
 ![Klicken Sie auf Ausführen](../debugger/media/dbg-tour-run-to-click-2.png "ausführen, klicken Sie auf")
 
->  [!NOTE] 
+> [!NOTE]
 > Die **ausführen, klicken Sie auf** (Ausführung hier)-Schaltfläche ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Klicken Sie auf die **ausführen, klicken Sie auf** (Ausführung hier)-Schaltfläche. Der Debugger setzt die Codezeile, auf Sie geklickt.
@@ -104,7 +105,6 @@ Wenn Sie die Breakpoints festgelegt haben, hält der Debugger für den ersten Ha
 Drücken Sie F5, bis Sie die Codezeile erreichen, in dem ausgewählten **Ausführen bis Cursor**.
 
 Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporären Haltepunkt festlegen und den Debugger starten möchten.
-
 
 > [!NOTE]
 > Sie können **Ausführen bis Cursor** in der **Aufrufliste** Fenster, die während des Debuggens.
@@ -136,7 +136,7 @@ Häufig beim Debuggen, möchten Sie eine schnelle Möglichkeit zum Überprüfen 
 
 Während des Debuggens, sehen Sie sich die **"Auto"** -Fensters am unteren Rand der Code-Editor.
 
-![Fenster Fenster Auto](../debugger/media/dbg-tour-autos-window.png "Fenster "Auto"")
+![Fenster Fenster Auto](../debugger/media/dbg-tour-autos-window.png "Fenster \"Auto\"")
 
 In der **"Auto"** Fenster finden Sie unter Variablen zusammen mit ihren aktuellen Wert und Typ. Die **"Auto"** Fenster enthält alle Variablen, die in der aktuellen Zeile oder die vorangehende Zeile verwendet wird (In C++ wird das Fenster zeigt Variablen in der vorhergehenden drei Codezeilen. In der Dokumentation für die sprachspezifisches Verhalten).
 
@@ -145,7 +145,7 @@ In der **"Auto"** Fenster finden Sie unter Variablen zusammen mit ihren aktuelle
 
 Betrachten Sie als Nächstes die **"lokal"** Fenster. Die **"lokal"** Fenster zeigt die Variablen, die derzeit im Gültigkeitsbereich befinden.
 
-![Fenster "lokal"](../debugger/media/dbg-tour-locals-window.png "Fenster "lokal"")
+![Fenster "lokal"](../debugger/media/dbg-tour-locals-window.png "Fenster \"lokal\"")
 
 In diesem Beispiel wird die `this` und das Objekt `f` befinden sich im Gültigkeitsbereich. Weitere Informationen finden Sie unter [Untersuchen von Variablen im Fenster "lokal" und "Auto"](../debugger/autos-and-locals-windows.md).
 
@@ -155,7 +155,7 @@ Können Sie eine **Überwachen** Fenster auf angeben, eine Variable (oder ein Au
 
 Während des Debuggens, mit der rechten Maustaste in ein Objekt, und wählen Sie **Überwachung hinzufügen**.
 
-![Überwachung (Fenster)](../debugger/media/dbg-tour-watch-window.png "Fenster "überwachen"")
+![Überwachung (Fenster)](../debugger/media/dbg-tour-watch-window.png "Fenster \"überwachen\"")
 
 In diesem Beispiel haben Sie eine Überwachung, legen Sie für die `f` -Objekt, und Sie sehen den Wert ändern, wie Sie mithilfe des Debuggers verschieben. Im Gegensatz zu den anderen Variablenfenstern die **Überwachen** Windows den Variablen immer anzeigen, dass Sie beobachten sind (sie sind abgeblendet, wenn außerhalb des gültigen Bereichs).
 
@@ -179,7 +179,7 @@ Sie können auch Kontextmenüs aus der **Aufrufliste** Fenster aus, um andere Au
 ## <a name="examine-an-exception"></a>Eine Ausnahme zu untersuchen
 
 Wenn Ihre app eine Ausnahme auslöst, wechselt der Debugger an die Codezeile, die die Ausnahme ausgelöst hat.
-     
+
 ![Ausnahmen-Hilfe](../debugger/media/dbg-tour-exception-helper.png "Ausnahmen-Hilfe")
 
 In diesem Beispiel wird die **Ausnahmen-Hilfe** erfahren Sie, eine `System.Argument` Ausnahme und eine Fehlermeldung, die besagt, dass der Pfad nicht um ein ungültiges Format ist. Daher wissen, dass der Fehler aufgetreten ist, auf eine Methode oder Funktion-Argument.
@@ -188,7 +188,7 @@ In diesem Beispiel wird die `DirectoryInfo` Aufruf der angegebene Fehler trat au
 
 Ausnahmen-Hilfe ist eine großartige Funktion, die Sie beim Debuggen von Fehlern helfen. Sie können auch Aktionen wie die Ansicht Fehlerdetails und Hinzufügen einer Überwachung von Ausnahmen-Hilfe. Oder, bei Bedarf können Sie Bedingungen für die bestimmte Ausnahme ändern.
 
->  [!NOTE] 
+>  [!NOTE]
 > Ausnahmen-Hilfe ersetzt der Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Erweitern Sie die **Ausnahmeeinstellungen** Knoten, um weitere Optionen zum Behandeln dieser Ausnahmetyp, aber Sie müssen nicht ändert nichts für diesen Überblick!
@@ -209,7 +209,7 @@ Weitere Informationen finden Sie unter [live ASP.NET-apps, die mit der Snapshot-
 
 Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
 
-![Schrittweise rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png  "Schritt rückwärts und Vorwärts-Schaltflächen")  
+![Schrittweise rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png  "Schritt rückwärts und Vorwärts-Schaltflächen")
 
 Weitere Informationen finden Sie auf der Seite [View snapshots using IntelliTrace step-back (Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Step-back“)](../debugger/how-to-use-intellitrace-step-back.md).
 

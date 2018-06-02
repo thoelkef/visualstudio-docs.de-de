@@ -28,18 +28,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691478"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Übersicht über Entwurfstools für BDC-Modelle
+# <a name="bdc-model-design-tools-overview"></a>Übersicht über Entwurfstools für BDC-Modell
   Sie können einem Business Data Connectivity (BDC)-Modell entwerfen, mit dem BDC-Designer, der **BDC-Methodendetails** Fenster, und die **BDC-Explorer**.  
   
  Die **BDC-Explorer** ermöglicht es Ihnen, das Modell durchsuchen, suchen das Modell und Typdeskriptoren zu definieren.  
   
-## <a name="bdc-designer"></a>BDC-Designer  
+## <a name="bdc-designer"></a>BDC-Designer
  BDC-Designer können Sie die Entitäten im Modell zu definieren und visuell ihrer Beziehungen untereinander anordnen. Verwenden Sie den BDC-Designer die folgenden Aufgaben ausgeführt:  
   
 -   Fügen Sie dem Modell Entitäten hinzu.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Um den BDC-Designer zu öffnen, doppelklicken Sie auf die Modelldatei im Projekt, oder öffnen Sie das Kontextmenü für die Berichtsmodelldatei, und wählen Sie dann **öffnen**. Hinzufügen einer Entität für das Modell durch Ziehen oder Kopieren einer **Entität** aus der **Toolbox** in den Designer. Um eine Zuordnung zwischen zwei Entitäten zu erstellen, wählen Sie die **Zuordnung** steuern, der **Toolbox**, wählen Sie die erste Entität, und wählen Sie dann die zweite Entität.  
   
-## <a name="bdc-method-details-window"></a>Fenster "Klassendetails" der BDC-Methode  
+## <a name="bdc-method-details-window"></a>Fenster "Klassendetails" der BDC-Methode
  Verwenden der **BDC-Methodendetails** Fenster definieren die Parameter, Instanzen und Filterdeskriptoren einer Methode.  
   
  Sie können schnell generieren Finder, spezifischer Finder Ersteller, Updater und Deleter-Methoden in der **BDC-Methodendetails** Fenster. Wenn Sie diese Methoden generieren, fügt Visual Studio Metadaten, z. B. Parameter, Instanzen und Typdeskriptoren, an die Methode an. Sie können diese Metadaten zur Erfüllung von Ihr konkretes Szenario ändern.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
  Erweitern oder Reduzieren von Knoten in der **BDC-Methodendetails** Fenster zum Definieren von Parametern, Instanzen und Filterdeskriptoren. Verwenden der **BDC-Explorer** Typdeskriptoren zu definieren.  
   
-## <a name="bdc-explorer"></a>BDC-Explorer  
+## <a name="bdc-explorer"></a>BDC-Explorer
  Die **BDC-Explorer** zeigt die Elemente, die das Modell bilden. So öffnen die **BDC-Explorer**, wählen Sie in der Menüleiste **Ansicht**, **Weitere Fenster**, **BDC-Explorer**. Um das Modell zu durchsuchen, erweitern Sie im Knoten der **BDC-Explorer**. Jeder Knoten stellt ein Element im XML-Datei des Modells.  
   
  Auswählen von Knoten in der **BDC-Explorer**, die Eigenschaften der einzelnen Knoten, die Sie auswählen, werden in der **Eigenschaften** Fenster. Viele dieser Eigenschaften entsprechen den Attributen in der Modelldatei. Sie können das Modell durchsuchen, indem Sie mithilfe des Suchfelds am oberen Rand der **BDC-Explorer**.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Die **BDC-Explorer** zeigt keine Bezeichner, benutzerdefinierten Eigenschaften, lokalisierte Zeichenfolgen, Zuordnungsgruppen, Aktionen, Filterdeskriptoren, Zugriffssteuerungslisten Aktion und die Standardwerte für Parameter.  
   
-### <a name="defining-type-descriptors"></a>Definieren von Typdeskriptoren  
+### <a name="define-type-descriptors"></a>Definieren von Typdeskriptoren
  Verwenden der **BDC-Explorer** Typdeskriptoren zu definieren. BDC-Explorer können Sie definieren einen Typdeskriptor einmal, und klicken Sie dann wiederzuverwenden, Typdeskriptor an anderer Stelle in Ihrem Modell. Zu diesem Zweck einen Typdeskriptor kopieren und fügen Sie ihn auf einem Parameter oder Typdeskriptor.  
   
 > [!NOTE]  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors eines Parameters](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)   
  [Vorgehensweise: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
@@ -91,4 +92,4 @@ ms.lasthandoff: 04/16/2018
  [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
-  
+ 
