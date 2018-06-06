@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691478"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765751"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Übersicht über Entwurfstools für BDC-Modell
   Sie können einem Business Data Connectivity (BDC)-Modell entwerfen, mit dem BDC-Designer, der **BDC-Methodendetails** Fenster, und die **BDC-Explorer**.  
@@ -51,19 +51,19 @@ ms.locfileid: "34691478"
   
  Um den BDC-Designer zu öffnen, doppelklicken Sie auf die Modelldatei im Projekt, oder öffnen Sie das Kontextmenü für die Berichtsmodelldatei, und wählen Sie dann **öffnen**. Hinzufügen einer Entität für das Modell durch Ziehen oder Kopieren einer **Entität** aus der **Toolbox** in den Designer. Um eine Zuordnung zwischen zwei Entitäten zu erstellen, wählen Sie die **Zuordnung** steuern, der **Toolbox**, wählen Sie die erste Entität, und wählen Sie dann die zweite Entität.  
   
-## <a name="bdc-method-details-window"></a>Fenster "Klassendetails" der BDC-Methode
+## <a name="bdc-method-details-window"></a>BDC-Methodendetails Fenster
  Verwenden der **BDC-Methodendetails** Fenster definieren die Parameter, Instanzen und Filterdeskriptoren einer Methode.  
   
  Sie können schnell generieren Finder, spezifischer Finder Ersteller, Updater und Deleter-Methoden in der **BDC-Methodendetails** Fenster. Wenn Sie diese Methoden generieren, fügt Visual Studio Metadaten, z. B. Parameter, Instanzen und Typdeskriptoren, an die Methode an. Sie können diese Metadaten zur Erfüllung von Ihr konkretes Szenario ändern.  
   
- So öffnen die **BDC-Methodendetails** Fenster, in der Menüleiste auswählen **Ansicht**, **Weitere Fenster**, **BDC-Methodendetails**.  
+ So öffnen die **BDC-Methodendetails** Fenster, in der Menüleiste auswählen **Ansicht** > **Weitere Fenster** > **BDC-Methodendetails** .  
   
  Anzeigen von Methoden in der **BDC-Methodendetails** Fenster, wählen Sie die Entität im BDC-Designer. Die Methoden der ausgewählten Entität angezeigt, der **BDC-Methodendetails** Fenster. Wenn Sie keine Entität im BDC-Designer die **BDC-Methodendetails** Fenster werden keine Informationen angezeigt.  
   
  Erweitern oder Reduzieren von Knoten in der **BDC-Methodendetails** Fenster zum Definieren von Parametern, Instanzen und Filterdeskriptoren. Verwenden der **BDC-Explorer** Typdeskriptoren zu definieren.  
   
 ## <a name="bdc-explorer"></a>BDC-Explorer
- Die **BDC-Explorer** zeigt die Elemente, die das Modell bilden. So öffnen die **BDC-Explorer**, wählen Sie in der Menüleiste **Ansicht**, **Weitere Fenster**, **BDC-Explorer**. Um das Modell zu durchsuchen, erweitern Sie im Knoten der **BDC-Explorer**. Jeder Knoten stellt ein Element im XML-Datei des Modells.  
+ Die **BDC-Explorer** zeigt die Elemente, die das Modell bilden. So öffnen die **BDC-Explorer**, wählen Sie in der Menüleiste **Ansicht** > **Weitere Fenster** > **BDC-Explorer**. Um das Modell zu durchsuchen, erweitern Sie im Knoten der **BDC-Explorer**. Jeder Knoten stellt ein Element im XML-Datei des Modells.  
   
  Auswählen von Knoten in der **BDC-Explorer**, die Eigenschaften der einzelnen Knoten, die Sie auswählen, werden in der **Eigenschaften** Fenster. Viele dieser Eigenschaften entsprechen den Attributen in der Modelldatei. Sie können das Modell durchsuchen, indem Sie mithilfe des Suchfelds am oberen Rand der **BDC-Explorer**.  
   

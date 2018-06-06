@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690925"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747039"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 Sie können Visual Studio verwenden, erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB. Sie können auch eine Datenbank erstellen, durch das Ausführen von Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio. In diesem Thema wird eine MDF-Datei erstellen und Hinzufügen von Tabellen und Schlüsseln mit dem Tabellen-Designer.
@@ -36,7 +36,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die optiona
 
 3.  In der Liste von Elementvorlagen, einen Bildlauf nach unten, und wählen Sie **Dienstbasierte Datenbank**.
 
-     ![Das Dialogfeld "Vorlagen" Element](../data-tools/media/raddata-vsitemtemplates.png "Raddata VSItemTemplates")
+     ![Dialogfeld "Elementvorlagen"](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
@@ -95,7 +95,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
     Folgendes sollte angezeigt werden:
 
-    ![Tabellen-Designer](../data-tools/media/raddata-table-designer.png "Raddata Tabellen-Designer")
+    ![Tabellen-Designer](../data-tools/media/raddata-table-designer.png)
 
 7.  In der oberen linken Ecke des der **Tabellen-Designer**, wählen die **Update** Schaltfläche.
 
@@ -130,7 +130,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 ### <a name="to-create-a-foreign-key"></a>So erstellen Sie einen Fremdschlüssel
 1.  Wählen Sie im Bereich "Kontext" auf der rechten Seite des Rasters öffnen Sie das Kontextmenü für **Fremdschlüssel**, und wählen Sie dann **neuen Fremdschlüssel hinzufügen**, wie in die folgende Abbildung dargestellt.
 
-     ![Hinzufügen eines Fremdschlüssels im Tabellen-Designer](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Hinzufügen eines Fremdschlüssels im Tabellen-Designer](../data-tools/media/foreignkey.png)
 
 2.  Ersetzen Sie in das Textfeld, das angezeigt wird, **ToTable** mit `Customers`.
 

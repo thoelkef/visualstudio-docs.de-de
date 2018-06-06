@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746545"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zeigen Sie verknüpfter Daten in WPF-Anwendungen an
 In einigen Anwendungen empfiehlt es sich zum Arbeiten mit Daten, die stammen aus mehreren Tabellen oder Entitäten, die eine Parent-Child-Beziehung miteinander verbunden sind. Möglicherweise möchten z. B. ein Raster angezeigt werden, die Kunden aus einem `Customers` Tabelle. Wenn der Benutzer einen bestimmten Kunden auswählt, handelt es sich bei einem anderen Raster zeigt die Aufträge dieses Kunden aus einer verknüpften `Orders` Tabelle.
@@ -53,7 +54,7 @@ Erstellen von datengebundenen Steuerelementen, die verknüpfte Daten anzeigen, i
 
      Die folgende Abbildung veranschaulicht den zugehörigen **Aufträge** Tabelle mit den **Kunden** Tabelle in einem Dataset in die **Datenquellen** Fenster.
 
-     ![Datenquellenfenster, die mit der Beziehung](../data-tools/media/datasources2.gif "DataSources2")
+     ![Relation im Datenquellenfenster](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Siehe auch
 

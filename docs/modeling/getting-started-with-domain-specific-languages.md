@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750258"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.
@@ -28,7 +29,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Wenn Sie eine DSL entworfen haben, können Sie ihn als Teil eines Pakets für Visual Studio Integration Extension (VSIX) verteilen. Benutzer arbeiten mit der DSL in Visual Studio:
 
- ![Stammbaumdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
 
  Die Notation ist nur ein Teil der DSL. Zusammen mit der Schreibweise enthält des VSIX-Pakets Tools, die Benutzer dabei unterstützen, bearbeiten und Generieren von Material aus ihrer Modelle beschränkt werden können.
 
@@ -60,7 +61,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 3.  Klicken Sie auf **einer domänenspezifischen Sprachdesigner**.
 
-     ![DSL-Dialogfeld "erstellen"](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
 
 4.  In der **Namen** geben **FamilyTree**. Klicken Sie auf **OK**.
 
@@ -87,7 +88,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Die Benutzeroberfläche gleicht nun der folgenden Abbildung.
 
- ![DSL-Designer](../modeling/media/dsl_designer.png "Dsl_designer")
+ ![DSL-Designer](../modeling/media/dsl_designer.png)
 
  Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche von einer domänenspezifischen Sprache Tools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Die experimentelle Visual Studio wird im folgende Beispiel ähneln:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Der Inhalt eines Modells
  Wird aufgerufen, der Inhalt der Datei, die eine Instanz eine DSL ist eine *Modell*. Das Modell enthält *Modell ** Elemente* und *Links* zwischen den Elementen. DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sein. Z. B. in eine DSL, die aus der Vorlage für die minimale Sprache erstellt, besteht eine Art von Modellelement und einen Typ des Links.
@@ -196,7 +197,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 1.  Benennen Sie das Diagramm DslDefinition **ExampleModel** auf **FamilyTreeModel**, **ExampleElement** auf **Person**,  **Ziele** auf **Eltern**, und **Quellen** auf **Kinder**. Sie können jede Bezeichnung, um ihn zu ändern klicken.
 
-     ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png)
 
 2.  Benennen Sie die Element- und Connector-Tools.
 
@@ -255,7 +256,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
     4.  Wählen Sie jede neue Decorator-Element, und legen Sie im Fenster Eigenschaften die **Position** Feld. Dies bestimmt, in der Eigenschaftswert für die Domäne auf der Form angezeigt werden soll. Legen Sie z. B. **InnerBottomLeft** und **InnerBottomRight**.
 
-         ![Depot-Form "Definition](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Definition einer Depot-Form](../modeling/media/familyt_compartment.png)
 
 3.  Die Eigenschaften der Decorator-Elementen zugeordnet.
 
@@ -271,7 +272,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 6.  In einer TT-Datei können Sie Code hinzufügen, die die Eigenschaften von jeder Person abruft.
 
- ![Stammbaumdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Neue Klassen definieren
  Sie können die Domänenklassen und Beziehungen zu einem Modell hinzufügen. Beispielsweise können Sie eine neue Klasse darstellt, Städte und eine neue Beziehung aus, um darzustellen, dass eine Person in einer Stadt entsprechen erstellen.
@@ -297,7 +298,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
     1.  Klicken Sie auf die **Verweisbeziehung** tool Person auf und klicken Sie dann auf Stadt.
 
-         ![DSL-definitionsfragment: stammbaumstamm](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![DSL-Definitionsfragment: Stammstrukturstamm](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Verweisbeziehungen stellen Querverweise von einem Teil der Modellstruktur dar, in eine andere.
@@ -322,7 +323,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
     2.  Verwenden der **Diagramm Element Zuordnung** Tool, um den neuen Connector mit der Beziehung zwischen "Person" und Stadt zu verknüpfen.
 
-         ![Stammbaumdefinition mit formzuordnung](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Stammstrukturdefinition mit Formzuordnung](../modeling/media/familyt_shapemap.png)
 
 6.  Erstellen Sie eine Elementtool zum Durchführen einer Stadt neu.
 

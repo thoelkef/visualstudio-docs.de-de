@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4937bcdef14cadccfa940b2176cf002a976fa16d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692212"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766414"
 ---
-# <a name="debugging-sharepoint-solutions"></a>Debuggen von SharePoint-Lösungen
+# <a name="debug-sharepoint-solutions"></a>Debuggen von SharePoint-Lösungen
   SharePoint-Lösungen können mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers gedebuggt werden. Beim Starten des Debuggens, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektdateien auf dem SharePoint-Server bereitgestellt, und klicken Sie dann eine Instanz der SharePoint-Website im Webbrowser geöffnet. In den folgenden Abschnitte wird erklärt, wie SharePoint-Anwendungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gedebuggt werden.  
   
 -   [Aktivieren des Debuggens](#EnableDebug)  
@@ -40,7 +40,7 @@ ms.locfileid: "34692212"
   
 -   [Aktivieren von erweiterten Debuginformationen](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a> Aktivieren des Debuggens  
+## <a name="enable-debugging"></a>Debuggen aktivieren
  Wenn Sie eine SharePoint-Lösung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstmals debuggen, werden Sie in einem Dialogfeld darauf hingewiesen, dass die Datei web.config nicht zum Aktivieren des Debuggens konfiguriert ist. (Die Datei web.config wird erstellt, wenn Sie SharePoint-Server installieren. Weitere Informationen finden Sie unter [arbeiten mit "Web.config"-Dateien](http://go.microsoft.com/fwlink/?LinkID=149266).) Das Dialogfeld bietet die Optionen, das Projekt entweder ohne Debugging auszuführen oder die Datei web.config so zu ändern, dass das Debuggen aktiviert wird. Wenn Sie die erste Option auswählen, wird das Projekt normal ausgeführt. Bei Auswahl der zweiten Option wird die Datei "web.config" für Folgendes konfiguriert:  
   
 -   Aktivieren der Aufrufliste (`CallStack="true"`)  
@@ -86,7 +86,7 @@ ms.locfileid: "34692212"
   
 -   Deaktivieren von Kompilierungsdebugging (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a> F5-Debugging und der Bereitstellungsprozess  
+## <a name="f5-debug-and-deployment-process"></a>F5 Debug- und Bereitstellungsoptionen-Prozess
  Wenn Sie das SharePoint-Projekt im Debugmodus ausführen, werden im SharePoint-Bereitstellungsprozess die folgenden Aufgaben ausgeführt:  
   
 1.  Die anpassbaren Befehle vor der Bereitstellung werden ausgeführt.  
@@ -110,7 +110,7 @@ ms.locfileid: "34692212"
   
 9. Die anpassbaren Befehle nach der Bereitstellung werden ausgeführt.  
   
-10. Fügt den [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debugger an den [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]-Prozess (w3wp.exe) an. Wenn der Typ für Projekte, die Sie ändern kann die *Sandkastenlösung* Eigenschaft und ihr Wert wird festgelegt, um **"true"**, und klicken Sie dann den Debugger an einen anderen Prozess (SPUCWorkerProcess.exe) angehängt. Weitere Informationen finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+10. Fügt der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an die [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] Prozess (*w3wp.exe*). Wenn der Typ für Projekte, die Sie ändern kann die *Sandkastenlösung* Eigenschaft und ihr Wert wird festgelegt, um **"true"**, und klicken Sie dann den Debugger an einen anderen Prozess angehängt (*SPUCWorkerProcess.exe*). Weitere Informationen finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
 11. Der JavaScript-Debugger wird gestartet, wenn die SharePoint-Lösung eine Farmlösung ist.  
   
@@ -118,14 +118,14 @@ ms.locfileid: "34692212"
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zeigt nach der Ausführung der einzelnen Aufgaben eine Statusmeldung im Ausgabefenster an. Wenn eine Aufgabe nicht abgeschlossen werden kann, zeigt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine Fehlermeldung im Fenster Fehlerliste an.  
   
-##  <a name="Features"></a> SharePoint-Projektfunktionen  
+## <a name="sharepoint-project-features"></a>SharePoint-Projektfunktionen
  Bei einer Funktion handelt es sich um eine portable und modulare Funktionseinheit, die das Ändern von Websites mithilfe von Websitedefinitionen vereinfacht. Es ist auch ein Paket [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS)-Elemente, die für einen bestimmten Gültigkeitsbereich aktiviert werden kann und, mit dem Benutzer eines bestimmten Ziels bzw. Vorgang zu erreichen. Vorlagen werden als Funktionen bereitgestellt.  
   
- Wenn Sie ein Projekt im Debugmodus ausführen, des Bereitstellungsprozesses erstellt einen Ordner in der *Feature* unter %COMMONPROGRAMFILES%\Microsoft Shared\web Server extensions\14\TEMPLATE\FEATURES Verzeichnis. Featurenamen haben das Format *Projektname*_Feature*x*, z. B. TestProject_Feature1.  
+ Wenn Sie ein Projekt im Debugmodus ausführen, des Bereitstellungsprozesses erstellt einen Ordner in der *Feature* Verzeichnis am *%COMMONPROGRAMFILES%\Microsoft Shared\web Server extensions\14\TEMPLATE\FEATURES*. Featurenamen haben das Format *Projektname*_Feature*x*, z. B. TestProject_Feature1.  
   
- Ordner der Projektmappe im Featureverzeichnis beinhaltet eine *Featuredefinition* Datei und ein *Workflowdefinition* Datei. Die Funktionsdefinitionsdatei (Feature.xml) beschreibt die Dateien in das Projekt Feature Projektdefinitionsdatei (Elements.xml) wird die Projektvorlage beschrieben. "Elements.xml" finden Sie im **Projektmappen-Explorer**, aber "Feature.xml" wird beim Erstellen des Lösungspakets generiert. Weitere Informationen zu diesen Dateien finden Sie unter [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Ordner der Projektmappe im Featureverzeichnis beinhaltet eine *Featuredefinition* Datei und ein *Workflowdefinition* Datei. Die Funktionsdefinitionsdatei (Feature.xml) beschreibt die Dateien in das Projekt Feature Projektdefinitionsdatei (*"Elements.xml"*) wird die Projektvorlage beschrieben. *"Elements.xml"* finden Sie im **Projektmappen-Explorer**, aber "Feature.xml" wird beim Erstellen des Lösungspakets generiert. Weitere Informationen zu diesen Dateien finden Sie unter [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a> Debuggen von Workflows  
+## <a name="debug-workflows"></a>Debuggen von workflows
  Wenn Sie Workflowprojekte debuggen, fügt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Workflowvorlage (abhängig von deren Typ) einer Bibliothek oder einer Liste hinzu. Sie können dann die Workflowvorlage manuell oder durch Hinzufügen oder Aktualisieren eines Elements starten. Anschließend können Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwenden, um den Workflow zu debuggen.  
   
 > [!NOTE]  
@@ -135,15 +135,15 @@ ms.locfileid: "34692212"
   
  Wenn Sie beispielsweise angegeben haben, dass der Workflow manuell gestartet werden kann, starten Sie den Workflow direkt vom Element in der Bibliothek oder der Liste. Weitere Informationen zum manuellen Starten eines Workflows finden Sie unter [starten ein Workflows auf einem Dokumentelement](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
-##  <a name="FeatureEvents"></a> Debuggen von Funktionsereignisempfängern  
+## <a name="debug-feature-event-receivers"></a>Debuggen von Funktionsereignisempfängern
  Wenn Sie eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-SharePoint-Anwendung ausführen, werden deren Funktionen standardmäßig automatisch auf dem SharePoint-Server aktiviert. Dies verursacht jedoch Probleme, wenn Sie Funktionsereignisempfänger debuggen, da bei eine Funktion, durch aktiviert ist [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], in einem anderen Prozess als der Debugger ausgeführt wird. Dies bedeutet, dass einige Debugfunktionen, z. B. Haltepunkte, nicht ordnungsgemäß funktionieren.  
   
  Um die automatische Aktivierung der Funktion in SharePoint zu deaktivieren und ordnungsgemäße Debuggen von Funktionsereignisempfängern zu ermöglichen, legen Sie den Wert des Projekts auf der **aktive Bereitstellungskonfiguration** Eigenschaft **keine Aktivierung** vor dem Debuggen. Wenn Sie Ihre SharePoint-Anwendung dann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuggen, aktivieren Sie die Funktion manuell in SharePoint. Um die Funktion zu aktivieren, öffnen Sie die **Websiteaktionen** in SharePoint im Menü **Standorteinstellungen**, wählen Sie die **Websitefunktionen** verknüpfen, und wählen Sie dann die **Aktivieren** Schaltfläche neben der Funktion, um das Debuggen wie gewohnt fortsetzen.  
   
-##  <a name="EnhancedDebug"></a> Aktivieren von erweiterten Debuginformationen  
- Aufgrund der manchmal komplexen Interaktionen zwischen dem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Prozess (devenv.exe), dem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-SharePoint-Hostprozess (vssphost4.exe), SharePoint und der WCF-Ebene kann das Diagnostizieren von Fehlern, die beim Erstellen, Bereitstellen usw. auftreten, schwierig sein. Um Unterstützung beim Beheben solcher Fehler zu erhalten, können Sie erweiterte Debuginformationen aktivieren. Wechseln Sie hierzu in die Windows-Registrierung zum folgenden Registrierungsschlüssel:  
+## <a name="enable-enhanced-debug-information"></a>Aktivieren von erweiterten Debuginformationen
+ Aufgrund der manchmal komplexen Interaktionen zwischen dem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Prozess (devenv.exe), die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Hostprozess (*vssphost4.exe*), SharePoint, und der WCF-Ebene kann das Diagnostizieren von Fehlern, die auftreten, während Erstellen, bereitstellen und So weiter können eine Herausforderung darstellen. Um Unterstützung beim Beheben solcher Fehler zu erhalten, können Sie erweiterte Debuginformationen aktivieren. Wechseln Sie hierzu in die Windows-Registrierung zum folgenden Registrierungsschlüssel:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**  
   
  Wenn die "EnableDiagnostics" **REG_DWORD** Wert noch nicht vorhanden ist, erstellen Sie ihn manuell. Legen Sie den Wert "EnableDiagnostics" auf "1".  
   
@@ -151,7 +151,6 @@ ms.locfileid: "34692212"
   
  Weitere Informationen zu anderen SharePoint-Registrierungsschlüssel, finden Sie unter [Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Problembehandlung bei SharePoint-Projektmappen](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
   

@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691803"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765491"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
+# <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Die Definition des SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht die Erstellung einer *Websitedefinition*, dem dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten von der SharePoint-Website jedoch auch den Standardinhalt und Funktionalität. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint schließt einige Websitedefinitionen wie BLOG verwenden, z. B. aus. Wenn Sie einen Standort basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.  
   
  Weitere Informationen zu Websitedefinitionen, finden Sie unter [Websitevorlagen und Definitionen](http://go.microsoft.com/fwlink/?LinkId=179134).  
@@ -41,11 +41,11 @@ ms.locfileid: "34691803"
   
 |Dateiname|Beschreibung|  
 |---------------|-----------------|  
-|"default.aspx"|Die standardmäßige ASPX-Homepage für die neue SharePoint-Website.|  
-|onet.Xml|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Definition der Websitevorlage und Standardverhalten. Diese Einstellungen umfassen Attribute wie z. B. die Inhaltstypen, die aktiviert und den standardmäßigen Listenansichten Dokument Vorlagendateien zu und Webparts mit dem Standort enthalten. Wird standardmäßig die `Modules` Abschnitt listet die Dateien hinzugefügt werden, um die SharePoint-Website und wie diese konfiguriert werden.|  
-|Webtemp_*SiteDefinitionName*XML|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird der **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
+|*"default.aspx"*|Die standardmäßige ASPX-Homepage für die neue SharePoint-Website.|  
+|*onet.Xml*|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Definition der Websitevorlage und Standardverhalten. Diese Einstellungen umfassen Attribute wie z. B. die Inhaltstypen, die aktiviert und den standardmäßigen Listenansichten Dokument Vorlagendateien zu und Webparts mit dem Standort enthalten. Wird standardmäßig die `Modules` Abschnitt listet die Dateien hinzugefügt werden, um die SharePoint-Website und wie diese konfiguriert werden.|  
+|*Webtemp_ {SiteDefinitionName} .xml*|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird der **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
   
- Standardmäßig werden alle Websitedefinitionen gespeichert, der *Laufwerk:* \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates-Ordner. Jedes Site-Definition verfügt über einen eigenen Unterordner.  
+ Standardmäßig werden alle Websitedefinitionen gespeichert, der *{Laufwerk:} \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* Ordner. Jedes Site-Definition verfügt über einen eigenen Unterordner.  
   
 ## <a name="related-topics"></a>Verwandte Themen
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691803"
 |-----------|-----------------|  
 |[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Führt Sie schrittweise durch die Erstellung einer einfachen Projekts Websitedefinition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Vorgehensweise: Erstellen einer benutzerdefinierten Sitedefinition und Konfiguration](http://go.microsoft.com/fwlink/?LinkId=183309)|Beschreibt, wie eine Websitedefinition für die benutzerdefinierte in SharePoint erstellen, durch Kopieren einer vorhandenen Websitedefinition und diese dann ändern.|  
-|[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|Beschreibt die ursprüngliche Datei, die in verfügbaren Websitedefinitionen gibt die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Beschreibt die ursprüngliche Datei, die in verfügbaren Websitedefinitionen gibt die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
 |[Lokalisieren von SharePoint-Projektmappen](../sharepoint/localizing-sharepoint-solutions.md)|Beschreibt, wie die SharePoint-Lösungen für die globale Verwendung vorbereiten.|  
 |[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt, wie Sie Teile einer SharePoint-Seite erstellen können, die Benutzer ändern können.|  
 |[Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Beschreibt, wie Sie wiederverwendbare Steuerelemente erstellen können, die in Anwendungsseiten und Webparts ausgeführt.|  

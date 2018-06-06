@@ -48,7 +48,7 @@ ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693285"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekte in Visual Studio-Umgebung

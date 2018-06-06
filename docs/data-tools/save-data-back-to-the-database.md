@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691133"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748058"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 Das Dataset ist ein in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie dazu auf eine der drei Arten:
@@ -60,7 +60,7 @@ Wenn Sie mit TableAdapters vertraut sind, können Sie direkt auf einen der folge
 
  Wenn Sie die Änderungen zurück an die Datenbank senden, ist ein zweiter Schritt erforderlich. Wenn Sie datengebundene Steuerelemente verwenden, müssen Sie manuell die TableAdapter (oder Datenadapters) die Update-Methode aufzurufen, mit denen Sie das Dataset zu füllen. Allerdings können Sie verschiedene Adaptern, z. B. auch zum Verschieben von Daten aus einer Datenquelle in eine andere oder zum Aktualisieren mehrerer Datenquellen verwenden. Wenn Sie sind nicht mit der Datenbindung und Änderungen für verknüpfte Tabellen speichern, müssen Sie manuell eine Variable, der automatisch generierten TableAdapterManager-Klasse instanziieren, und rufen Sie ihre UdpateAll-Methode.
 
- ![Visual Basic-Dataset-Aktualisierungen](../data-tools/media/vbdatasetupdates.gif "VbDatasetUpdates") einem zweistufigen Prozess und die Rolle des "DataRowVersion" in einer erfolgreichen Aktualisierung zu aktualisieren
+ ![Visual Basic-Dataset-Aktualisierungen](../data-tools/media/vbdatasetupdates.gif) einem zweistufigen Prozess und die Rolle des "DataRowVersion" in einer erfolgreichen Aktualisierung zu aktualisieren
 
  Ein Dataset enthält Auflistungen von Tabellen, die eine Sammlung von Zeilen enthalten. Wenn Sie beabsichtigen, eine zugrunde liegende Datenquelle später aktualisieren, müssen Sie die Methoden für die Eigenschaft DataTable.DataRowCollection beim Hinzufügen oder Entfernen von Zeilen verwenden. Diese Methoden führen Sie das Nachverfolgen von Änderungen, das zum Aktualisieren der Datenquelle erforderlich ist. Wenn Sie auf der Rows-Eigenschaft die Auflistung RemoveAt aufrufen, wird nicht die Löschung an die Datenbank übermittelt werden.
 

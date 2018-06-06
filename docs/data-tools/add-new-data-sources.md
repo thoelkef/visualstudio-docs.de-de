@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745593"
 ---
 # <a name="add-new-data-sources"></a>Neue Datenquellen hinzufügen
 Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekten, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer nutzen können die Ausgabe von der Datenquelle, um den Standardcode zu generieren, die die Daten an Formulare bindet, beim Ziehen und Ablegen von Datenbankobjekte aus der **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:
@@ -39,11 +40,11 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 
  Sie erstellen und Bearbeiten von Datenquellen mithilfe der **Data Source Configuration Wizard** in einer Windows Forms- oder Windows Presentation Foundation-Anwendung. Erstellen Sie zunächst die Entitätsklassen für Entity Framework, und starten Sie den Assistenten durch auswählen **Projekt** > **neue Datenquelle hinzufügen** (ausführlicher weiter unten in diesem Artikel beschrieben).
 
- ![Datenquellen Konfigurationsassistenten](../data-tools/media/data-source-configuration-wizard.png "Datenquellen Konfigurationsassistenten")
+ ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png)
 
  Nachdem Sie eine Datenquelle erstellt haben, erscheint in der **Datenquellen** Toolfenster (Umschalt + Alt + D oder **Ansicht** > **Weitere Fenster**  >  **Datenquelle**). Ziehen Sie eine Datenquelle aus der **Datenquellen** auf einem Formularentwurfsoberfläche oder Steuerelement. Dies bewirkt, dass Standardcode generiert werden – Code, der die Daten anzeigt, die im Datenspeicher für den Benutzer stammt. Die folgende Abbildung zeigt ein Dataset, das auf einem Windows Form gelöscht wurde. Wenn Sie F5 für die Anwendung ausgewählt haben, würden die Daten aus der zugrunde liegenden Datenbank in die Steuerelemente des Formulars angezeigt.
 
- ![Datenquelle ziehen Vorgang](../data-tools/media/raddata-data-source-drag-operation.png "Raddata Datenquelle ziehen Vorgang")
+ ![Ziehen Sie von Datenquellenvorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Datenquelle für eine Datenbank oder Datenbankdatei
 
@@ -53,15 +54,15 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 ### <a name="entity-classes"></a>Entitätsklassen
  Um eine Entity Framework-Modell als Datenquelle zu erstellen, führen Sie zuerst die **Entity Data Model-Assistenten** an die Entitätsklassen erstellt wurden (**Projekt** > **neues Element hinzufügen**  >  **ADO.NET Entity Data Model**).
 
- ![Neues Projektelement für Entity Framework-Modell](../data-tools/media/raddata-new-entity-framework-model-project-item.png "Raddata neue Entity Framework Model-Projektelement")
+ ![Neues Projektelement für Entity Framework-Modell](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Wählen Sie die Methode, die mit der Sie das Modell generieren möchten.
 
- ![Assistent für Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png "Raddata Entity Data Model-Assistenten")
+ ![Entity Data Model-Assistent](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Fügen Sie das Modell als Datenquelle. Die generierten Klassen angezeigt, der **Datenquellen Konfigurations-Assistenten** bei Auswahl der **Objekte** Kategorie.
 
- ![Datenquellen-Assistenten mit Entitätsklassen Konfiguration](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "Raddata Datenquellen-Assistenten mit Entitätsklassen Konfiguration")
+ ![Datenquellen-Assistenten mit Entitätsklassen Konfiguration](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Datenquelle für einen Dienst
  Führen Sie zum Erstellen einer Datenquelle von einem Dienst die **Datenquellen Konfigurations-Assistenten** , und wählen Sie die **Service** Datenquellentyp. Dies ist genau genommen nur eine Verknüpfung zu den **Hinzufügen eines Dienstverweises** (Dialogfeld), die Sie auch zugreifen können, mit der rechten Maustaste das Projekt im **Projektmappen-Explorer** auswählen und **Hinzufügen eines Dienstverweises** .

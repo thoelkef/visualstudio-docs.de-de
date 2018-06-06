@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750427"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage aus. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
@@ -48,7 +49,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 1.  Erstellen Sie eine Projektmappe mit der **einer domänenspezifischen Sprache** Vorlage, die sich unter **andere Projekttypen/Erweiterungen** in der **neues Projekt** (Dialogfeld).
 
-     ![DSL-Dialogfeld "erstellen"](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
 
      Beim Klicken auf **OK**, **einer domänenspezifischen Sprache Assistenten** wird geöffnet und zeigt eine Liste der DSL Vorlagenprojektmappen.
 
@@ -86,7 +87,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Die Benutzeroberfläche gleicht nun der folgenden Abbildung.
 
- ![DSL-Designer](../modeling/media/dsl_designer.png "Dsl_designer")
+ ![DSL-Designer](../modeling/media/dsl_designer.png)
 
  Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche von einer domänenspezifischen Sprache Tools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Wenn Sie eine Projektmappe ausführen haben Sie aus der **minimale Sprache** der experimentellen Visual Studio-Vorlage wird im folgende Beispiel ähneln:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Experimentieren Sie mit den Werkzeugen. Erstellen Sie Elemente, und verbinden Sie sie.
 
@@ -139,11 +140,11 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  In der folgenden Abbildung sind die Klassen und Beziehungen der DSL dargestellt, die in diesem Thema als Beispiel verwendet wird.
 
- ![Einbetten von und verweisen auf Beziehungen](../modeling/media/music_classes.png "Music_Classes")
+ ![Einbetten von und Verweisen auf Beziehungen](../modeling/media/music_classes.png)
 
  Die nächste Abbildung zeigt ein Beispielmodell dieser DSL:
 
- ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.
@@ -235,7 +236,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>So definieren Sie eine Klasse von Elementen, die in einem Diagramm als Formen dargestellt werden
 
-1.  **Definieren und testen eine Domänenklasse wie beschrieben in**[Domänenklassen definieren](#classes) **.** 
+1.  **Definieren und testen eine Domänenklasse wie beschrieben in**[Domänenklassen definieren](#classes) **.**
 
     -   Das übergeordnete Element der Klasse sollte die Stammklasse sein. Es sollte also eine einbettende Beziehung zwischen der Stammklasse und der neuen Domänenklasse bestehen.
 
@@ -285,7 +286,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
     4.  Stellen Sie sicher, dass neben jedem Decorator-Namen ein Häkchen angezeigt wird.
 
-     ![Formzuordnungen und DSL-Detailfenster](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Formzuordnungen und DSL-Detailfenster](../modeling/media/dsldetailswindow.png)
 
 7.  **Stellen Sie ein Toolboxelement zum Erstellen von Elementen der Domänenklasse.**
 
@@ -331,7 +332,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  Wenn beispielsweise Alben und Interpreten als Formen in einem Diagramm dargestellt werden, könnten Sie eine Beziehung namens "ArtistsAppearedOnAlbums" definieren, die Interpreten mit den Alben verknüpft, an denen sie mitgewirkt haben. Siehe das Beispiel in der Abbildung.
 
- ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png)
 
  Verweisbeziehungen können auch Elemente desselben Typs verbinden. So ist in einer DSL, die einen Familienstammbaum darstellt, die Beziehung zwischen Eltern und Kindern eine Verweisbeziehung von Person zu Person.
 
@@ -348,7 +349,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
  **Legen Sie die Eigenschaft ermöglicht es, um Duplikate der Beziehung,** Wenn mehr als einen Link in der gleichen Klasse zwischen demselben Dateipaar Modellelemente vorhanden sein kann. Beispielsweise könnten Sie zulassen, dass ein Lehrer einen Schüler in mehreren Fächern unterrichtet.
 
- ![Strukturieren Sie Zuordnungen für Connectors](../modeling/media/music_connector.png "Music_Connector")
+ ![Formzuordnungen für Verbindungen](../modeling/media/music_connector.png)
 
  Weitere Informationen finden Sie unter [Eigenschaften Domänenbeziehungen](../modeling/properties-of-domain-relationships.md) und [Eigenschaften Domänenfunktionen](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 ##  <a name="compartments"></a> Definieren von Formen, die Listen enthalten:-Fach Formen
  Eine Depot-Form enthält mindestens eine Liste von Elementen. In einer DSL für eine Musikbibliothek würden Sie z. B. Depot-Formen verwenden, um Musikalben darzustellen. Jedes Album enthält eine Liste von Songs.
 
- ![Depot-Form](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Depot-Form](../modeling/media/compartmentshape.png)
 
  Am einfachsten erzielen Sie diesen Effekt in einer DSL-Definition, indem Sie eine Domänenklasse für den Container und eine Domänenklasse für jede Liste definieren. Die Containerklasse wird der Depot-Form zugeordnet.
 
- ![Flächenkartogramm](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Formzuordnung](../modeling/media/music_mapcomp.png)
 
  Weitere Informationen finden Sie unter [Eigenschaften von Depot Formen](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten 
 
 7.  Öffnen Sie den Sprach-Explorer. Überprüfen Sie, ob die Containerknoten mit darin enthaltenen Listenelementknoten angezeigt werden.
 
- ![Generierter Explorer für DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Generierter Explorer für DSL](../modeling/media/music_explorer.png)
 
  Nach dem ersten Test einer Depot-Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

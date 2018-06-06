@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746815"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Verbinden Sie mit Daten in einer Access-Datenbank (Windows Forms)
 Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-Datei) mithilfe von Visual Studio verbinden. Nachdem Sie die Verbindung definiert, die Daten angezeigt, der **Datenquellen** Fenster. Von dort können Sie Tabellen oder Ansichten auf die Formulare ziehen.
@@ -37,7 +38,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
 
 2.  Auf der **Ansicht** klicken Sie im Menü **Weitere Fenster** > **Datenquellen**.
 
-     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
 3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
@@ -59,7 +60,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
 
 9. In der **Verbindung hinzufügen** wählen Sie im Dialogfeld **Microsoft Office 12.0 Access Database Engine OLE DB Provider** aus der **OLE DB-Anbieter** Dropdown-Menü.
 
-     ![OLE DB-Anbieter Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB-Anbieter Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Wenn Sie nicht sehen **Microsoft Office 12.0 Access Database Engine OLE DB Provider** in OLE DB-Anbieter, Dropdown-Menü, müssen Sie möglicherweise Installieren der [2007 Office System Driver: Data Connectivity Components](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
 
 2.  Auf der **Ansicht** klicken Sie im Menü **Weitere Fenster** > **Datenquellen**.
 
-     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
 3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
@@ -103,7 +104,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
 
 8.  In der **Datenbankdateiname**, geben Sie den Pfad und Namen der MDB-Datei, die Sie verwenden möchten, Herstellen einer Verbindung mit, und wählen Sie dann **OK**.
 
-     ![Verbindungszugriff-Datenbankdatei hinzufügen](../data-tools/media/dataaddconnectionaccessmdb.png "DataAddConnectionAccessMDB")
+     ![Verbindungszugriff-Datenbankdatei hinzufügen](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Wählen Sie **Weiter** auf die **wählen Sie Ihre Datenverbindung** Seite.
 

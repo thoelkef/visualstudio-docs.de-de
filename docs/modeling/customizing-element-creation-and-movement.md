@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748658"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 Sie können ein Element auf eine andere gezogen werden, aus der Toolbox oder in einem einfügen bzw. Verschiebevorgang ab. Können die verschobenen Elemente, die mit der Zielelemente verknüpft mit den Beziehungen, die Sie angeben.
@@ -38,7 +39,7 @@ Sie können ein Element auf eine andere gezogen werden, aus der Toolbox oder in 
 
  Die Zuständigkeit für ein EMD besteht darin, entscheiden, wie ein Objekt oder eine Gruppe von Objekten in einer bestimmten Stelle im Modell zusammengeführt werden sollen. Insbesondere können sie entscheidet, welche Beziehungen instanziiert werden sollte, um der Gruppe "zusammengeführte" in das Modell zu verknüpfen. Sie können auch zum Festlegen von Eigenschaften und zum Erstellen zusätzlicher Objekte anpassen.
 
- ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge") die Rolle des eine Merge-Element-Direktive
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png) die Rolle des eine Merge-Element-Direktive
 
  Ein EMD wird automatisch generiert, wenn Sie eine Einbetten von Beziehung definieren. Diese Standardeinstellung EMD erstellt eine Instanz der Beziehung an, wenn Benutzer neue Instanzen der untergeordneten zum übergeordneten Element hinzufügen. Sie können diese Standardeinstellung EMDs z. B. durch Hinzufügen von benutzerdefiniertem Code ändern.
 
@@ -47,7 +48,7 @@ Sie können ein Element auf eine andere gezogen werden, aus der Toolbox oder in 
 ## <a name="defining-an-element-merge-directive"></a>Definieren eine Element-Merge-Anweisung
  Sie können Element Merge Direktiven Domänenklassen, domänenbeziehungen, Formen, Connectors und Diagrammen hinzufügen. Sie können finden sie unter der empfangenden Domänenklasse im Explorer für DSL oder hinzufügen. Die empfangende Klasse ist die Domänenklasse des Elements, das bereits im Modell, und klicken Sie auf dem das neue oder kopierte Element zusammengeführt werden.
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
  Die **Indizierung Klasse** ist die Domänenklasse von Elementen, die Mitglieder der empfangenden Klasse zusammengeführt werden können. Instanzen einer Unterklasse von der Indizierung-Klasse werden auch von diesem EMD zusammengeführt werden, es sei denn, Sie legen **gilt für Unterklassen** auf "false".
 

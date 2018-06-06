@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747000"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung
 *N-Tier-* -datenanwendungen sind Anwendungen, die auf Daten zugreifen und werden in mehrere logische Ebenen unterteilt oder *Ebenen*. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenebene enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-Tier Applications](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Schritte au
 
 -   Schreiben von Code zum Füllen der Datentabellen.
 
-![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") eine Videoversion dieses Themas, finden Sie unter [Video How to: Erstellen einer N-Tier-Datenanwendung](http://go.microsoft.com/fwlink/?LinkId=115188).
+![Link zu Video](../data-tools/media/playvideo.gif) eine Videoversion dieses Themas, finden Sie unter [Video How to: Erstellen einer N-Tier-Datenanwendung](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.
@@ -78,7 +79,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **-Klassenbibliothek** Projekttyp.
 
@@ -289,7 +290,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie auf die Datenzugriffsebe
 
 1.  Mit der rechten Maustaste auf die Projektmappe im Projektmappen-Explorer, und wählen Sie **hinzufügen**, **neues Projekt...** .
 
-2.  In der **neues Projekt** im linken Bereich, wählen Sie im Dialogfeld **klassische Windows-Desktop**. Wählen Sie im mittleren Bereich **Windows Forms-Anwendung**.
+2.  In der **neues Projekt** im linken Bereich, wählen Sie im Dialogfeld **Windows Desktop**. Wählen Sie im mittleren Bereich **Windows Forms-Anwendung**.
 
 3.  Nennen Sie das Projekt **PresentationTier** , und klicken Sie auf **OK**.
 

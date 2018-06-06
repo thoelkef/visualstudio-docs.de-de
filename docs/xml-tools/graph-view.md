@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751701"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -22,7 +23,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Das folgende Bild zeigt die Diagrammansicht mit sechs globalen Knoten auf der Entwurfsoberfläche.
 
- ![Diagrammansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Diagrammansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Entwurfsoberfläche
 
@@ -34,7 +35,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Wenn die Entwurfsoberfläche leer ist, wird der XML-Editor die **XML-Schema-Explorer**, und das Wasserzeichen angezeigt werden. Die *Wasserzeichen* ist eine Liste mit Links zu allen Ansichten des XSD-Designer.
 
- ![XSD-Designer; Diagrammansicht](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![XSD-Designer, Diagrammansicht](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Wenn das Schemaset Fehler enthält, wird der folgende Text am Ende der Liste angezeigt: "Verwenden Sie die Fehlerliste, um die Fehler im Schemaset anzuzeigen und zu beheben."
 
@@ -98,7 +99,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die folgenden XSD-Symbolleistenschaltflächen sind aktiviert, wenn die Diagrammansicht aktiv ist.
 
- ![XML-Schema-Designer-Symbolleiste](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Option|Beschreibung|
 |------------|-----------------|

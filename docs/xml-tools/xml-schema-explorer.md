@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693941"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751588"
 ---
 # <a name="xml-schema-explorer"></a>XML-Schema-Explorer
 
@@ -60,7 +60,7 @@ Die **XML-Schema-Explorer** bietet eine hierarchische Ansicht des Schemasets ein
 
 Im Folgenden Sie ein Beispiel für eine Struktur:
 
-![XML-Schema-Explorer](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![XML-Schema-Explorer](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Auswahl und Aktivierung
  Klicken Sie im Schema-Explorer einmal auf einen Knoten, um ihn hervorzuheben und auszuwählen.

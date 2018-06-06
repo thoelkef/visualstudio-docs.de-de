@@ -1,5 +1,5 @@
 ---
-title: Visio-Projektmappen | Microsoft Docs
+title: Visio-Projektmappen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,23 +20,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5cf82776989d21be60c38aff280d7f9613327c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c583108d1cc7aca35b8df4f20d787571c865e400
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767815"
 ---
 # <a name="visio-solutions"></a>Visio-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Visio verwenden können. Mit VSTO-Add-Ins können Sie Visio automatisieren, Visio -Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Visio anpassen.  
   
- Weitere Informationen zu VSTO-Add-Ins finden Sie unter [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) und [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Wenn Sie mit Microsoft Office-Programmierung noch nicht vertraut sind, finden Sie unter [Einstieg &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Weitere Informationen zu VSTO-Add-ins finden Sie unter [Einstieg in das Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) und [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md). Wenn Sie mit Microsoft Office-Programmierung noch nicht vertraut sind, finden Sie unter [Einstieg in die &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  **Betrifft:** Die Informationen in diesem Thema betreffen VSTO-Add-In-Projekte für Visio 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
-## <a name="automating-visio-by-using-the-visio-object-model"></a>Automatisieren von Visio mithilfe des Visio-Objektmodells  
+## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatisieren von PowerPoint mithilfe von Visio-Objektmodell  
  Das Visio-Objektmodell stellt zahlreiche Klassen bereit, die Sie verwenden können, um Visio zum Erstellen von Diagrammen für Organigramme, Flussdiagramme, Projektzeitachsen, Netzwerkdiagramme, Büroräume und mehr automatisieren können. Die API ermöglicht Ihnen das Schreiben von Code zum Ausführen häufige anfallender Aufgaben:  
   
 -   Erstellen und Positionieren von Shapes und Text in Diagrammen.  
@@ -49,16 +50,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Importieren externer Daten in Visio, Verknüpfen dieser Daten mit Shapes und grafische Darstellung auf einer Seite.  
   
- Sie können schrittweise Anleitungen und Codebeispiele für die Verwendung des Visio-Objektmodells zum Arbeiten mit Dokumenten und Shapes in [Working with Visio Documents](../vsto/working-with-visio-documents.md) und [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)anzeigen.  
+ Sie können anzeigen schrittweise Anleitungen und Codebeispiele für die Verwendung von Visio-Objektmodell zum Arbeiten mit Dokumenten und Shapes in [arbeiten mit Visio-Dokumenten](../vsto/working-with-visio-documents.md) und [arbeiten mit Visio-Shapes](../vsto/working-with-visio-shapes.md).  
   
- Für den Zugriff auf das Visio-Objektmodell aus einem VSTO-Add-In verwenden Sie das Feld `Application` der Klasse `ThisAddIn` in Ihrem Projekt. Die `Application` Feld gibt ein Microsoft.Office.Interop.Visio.Application-Objekt, das die aktuelle Instanz von Visio darstellt. Weitere Informationen finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+ Für den Zugriff auf das Visio-Objektmodell aus einem VSTO-Add-In verwenden Sie das Feld `Application` der Klasse `ThisAddIn` in Ihrem Projekt. Das Feld `Application` gibt ein `Microsoft.Office.Interop.Visio.Application`-Objekt zurück, das die aktuelle Instanz von Visio darstellt. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- Bei einem Aufruf des Visio-Objektmodells verwenden Sie Typen, die in der primären Interopassembly (PIA) für Visio bereitgestellt werden. Die primäre Interopassembly (PIA) dient als Brücke zwischen verwaltetem Code im VSTO-Add-In und dem COM-Objektmodell in Visio. Alle Typen in der Visio-PIA werden im Microsoft.Office.Interop.Visio-Namespace definiert. Weitere Informationen zu primären Interopassemblys finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [Office Primary Interopassemblys](../vsto/office-primary-interop-assemblies.md).  
+ Bei einem Aufruf des Visio-Objektmodells verwenden Sie Typen, die in der primären Interopassembly (PIA) für Visio bereitgestellt werden. Die primäre Interopassembly (PIA) dient als Brücke zwischen verwaltetem Code im VSTO-Add-In und dem COM-Objektmodell in Visio. Alle Typen in der Visio-PIA werden im Namespace `Microsoft.Office.Interop.Visio` definiert. Weitere Informationen zu primären Interopassemblys finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [primären Interopassemblys von Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="visio-object-model-overview"></a>Übersicht über das Visio-Objektmodell  
- Eine Übersicht über das Visio-Objektmodell finden Sie unter [Visio Object Model Overview](../vsto/visio-object-model-overview.md)– einschließlich Links zur Visio-Objektmodellreferenz und der SDKs.  
+ Sie erhalten einen Überblick über das Visio-Objektmodell auf [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md), einschließlich Links zur Visio-Objektmodellreferenz und der SDKs.  
   
-## <a name="customizing-the-user-interface-of-visio"></a>Anpassen der Benutzeroberfläche von Visio  
+## <a name="customize-the-user-interface-of-visio"></a>Anpassen der Benutzeroberfläche von Visio  
  Die Benutzeroberfläche von Visio weist die folgenden Anpassungsoptionen auf.  
   
 |Aufgabe|Weitere Informationen|  
@@ -68,15 +69,14 @@ ms.lasthandoff: 04/16/2018
  Informationen zum Anpassen der Benutzeroberfläche von Visio finden Sie in der VBA-Referenzdokumentation für die Klasse [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) .  
   
 ## <a name="see-also"></a>Siehe auch  
- [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)   
  [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
- [Visio-Objektmodellübersicht](../vsto/visio-object-model-overview.md)   
+ [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
  [Visio 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199017)  
-  
   

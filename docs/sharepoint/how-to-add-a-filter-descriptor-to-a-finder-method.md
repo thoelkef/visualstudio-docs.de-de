@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 185876ec788bc3fcba917df77a7044a395bc8375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766613"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Gewusst wie: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Vorgehensweise: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode
   Filterdeskriptoren ermöglichen Consumern des Modells, Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Ein häufiges Szenario ist, dass Benutzer in SharePoint beim Abrufen von Instanzen von einem externen Inhaltstyp, die bestimmte Kriterien erfüllen. Hinzufügen eines Filterdeskriptors zu einer Finder-Methode, um dieses Szenario zu unterstützen.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  In der **Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.  
   
-3.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
+3.  Wählen Sie in der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.  
   
 4.  In der **Eigenschaften** legen die **Typnamen** Eigenschaft in einen Datentyp, der für den Filter geeignet ist.  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
      Eine neue Filterdeskriptors wird unterhalb der **Filterdeskriptoren** Knoten.  
   
-7.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
+7.  Wählen Sie in der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.  
   
 8.  In der **Eigenschaften** Fenster, wählen Sie die **Typ** Eigenschaft.  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
  [Vorgehensweise: hinzufügen eine bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Vorgehensweise: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749940"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Benutzer und der Architektur des Systems in Einklang zu bringen.
@@ -34,7 +35,7 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sieben: Verstehen von Code und System-Entwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Architektur einer Anwendung mit einer Abhängigkeit-Diagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Serie: So überprüfen Sie Code, die mithilfe von Abhängigkeit-Diagramme](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif) [Channel 9: Doug sieben: Verstehen von Code und System-Entwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif) [Channel 9: Architektur einer Anwendung mit einer Abhängigkeit-Diagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif) [MSDN-Serie: So überprüfen Sie Code, die mithilfe von Abhängigkeit-Diagramme](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|

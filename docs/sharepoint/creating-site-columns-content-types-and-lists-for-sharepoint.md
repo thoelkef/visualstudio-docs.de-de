@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692521"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764919"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
   Visual Studio bietet Projektelementvorlagen für viele verschiedene grundlegende SharePoint-Elemente, einschließlich *listet* und *Inhaltstypen*, können beide integrieren, Websitespalten (oder  *Felder*). Die neuen Designer für Listen und Inhaltstypen vornehmen, erstellen diese Elemente einfacher als je zuvor.  
   
 ## <a name="site-columns"></a>Websitespalten
  Websitespalten sind eines der grundlegendsten Elemente, die Sie zu einem SharePoint-Projekt hinzufügen können. Eine Websitespalte stellt einen Typ von Daten, z. B. eine Telefonnummer, einen Kommentar oder Name der Stadt eines Kontakts in einer Kontaktliste.  
   
- Neue Projektelementvorlage der Website-Spalte ist in der früheren Version von Visual Studio erstellen von Websitespalten einfacher. Nach dem Erstellen einer neuen Websitespalte, können Sie die XML in die Websitespalte "Elements.xml"-Datei ein, um die Informationen enthalten, die Sie möchten z. B. den Anzeigenamen, Datentyp und die Gruppe in der die Websitespalte in SharePoint angezeigt werden sollen, ändern. Weitere Informationen zu Websitespalten, finden Sie unter [Einführung in die Spalten](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Neue Projektelementvorlage der Website-Spalte ist in der früheren Version von Visual Studio erstellen von Websitespalten einfacher. Nach dem Erstellen einer neuen Websitespalte, können Sie die XML-Code in der Websitespalte ändern *"Elements.xml"* Datei, die Informationen enthalten, die Sie möchten z. B. den Anzeigenamen, Datentyp und die Gruppe, in der die Websitespalte im angezeigt werden sollen, SharePoint. Weitere Informationen zu Websitespalten, finden Sie unter [Einführung in die Spalten](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Inhaltstypen und Listen
  Inhaltstypen und Listen sind für die am häufigsten verwendeten Elemente in SharePoint.  

@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766323"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
 
 Der Debugger Momentaufnahme nimmt eine Momentaufnahme Ihrer Anwendungen in Produktion, bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
 Snappoints und Logpoints sind Haltepunkte ähnlich, aber im Gegensatz zu Haltepunkten anhalten Snappoints nicht die Anwendung bei Treffer. In der Regel wird die Erstellung einer Momentaufnahme für eine Snappoint 10 bis 20 Millisekunden. 
-
-Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
-
-- ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
-- ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
-
-Darüber hinaus wird der Momentaufnahme-Debugger nur für Visual Studio 2017 Enterprise Version 15.5 oder höher und Basic "oder" höher App Service-Plänen verfügbar. 
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -40,16 +34,27 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Festlegen Sie einer Snappoint und zeigen Sie eine Momentaufnahme an.
 > * Legen Sie eine logpoint
 
-## <a name="start-the-snapshot-debugger"></a>Starten Sie den Momentaufnahme-Debugger
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
-1. Installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://www.visualstudio.com/downloads/) oder höher. Wenn Sie von einer vorherigen Installation von Visual Studio 2017 aktualisieren, führen Sie den Installer für Visual Studio, und überprüfen Sie die Snapshot-Debugger-Komponente in der arbeitsauslastung für ASP.NET und Entwicklung.
+* Momentaufnahme-Debugger ist nur verfügbar für Visual Studio 2017 Enterprise Version 15.5 oder höher mit der **ASP.NET- und Webdienst Entwicklungsaufwand**. Für ASP.NET Core, müssen Sie auch die. **NET Core Entwicklung** arbeitsauslastung installiert.
 
-2. Öffnen Sie das Projekt, Momentaufnahme debuggen möchten. 
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder höher. Wenn Sie von einer vorherigen Installation von Visual Studio 2017 aktualisieren, führen Sie den Installer für Visual Studio, und überprüfen Sie die Snapshot-Debugger-Komponente der **ASP.NET- und Webdienst Entwicklungsaufwand**.
+
+* Grundlegende oder höher Azure App Service-Plan.
+
+* Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
+
+    * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
+    * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Öffnen Sie das Projekt, und starten Sie den Momentaufnahme-Debugger
+
+1. Öffnen Sie das Projekt, Momentaufnahme debuggen möchten. 
 
     > [!IMPORTANT] 
     > Momentaufnahme Debuggen, müssen Sie öffnen die **dieselbe Version des Quellcodes** , die in Ihren Azure App Service veröffentlicht wird. 
 
-3. In der Cloud-Explorer (**Ansicht > Cloud Explorer**) mit der rechten Maustaste auf die Azure App Service, die für das Projekt bereitgestellt wird, und wählen Sie **Snapshot-Debugger anfügen**.
+1. In der Cloud-Explorer (**Ansicht > Cloud Explorer**) mit der rechten Maustaste auf die Azure App Service, die für das Projekt bereitgestellt wird, und wählen Sie **Snapshot-Debugger anfügen**.
 
    ![Starten Sie den Momentaufnahme-debugger](../debugger/media/snapshot-launch.png)
 

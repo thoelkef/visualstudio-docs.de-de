@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747091"
 ---
 # <a name="add-new-connections"></a>Fügen Sie neue Verbindungen hinzu
 
@@ -35,23 +36,23 @@ Sie können testen Sie die Verbindung mit einer Datenbank oder den Dienst und Du
 
 Um eine Verbindung mit der Datenbank zu erstellen, klicken Sie auf die **Verbindung hinzufügen** Symbol **Server-Explorer**, oder mit der rechten Maustaste im **Server-Explorer** auf die **Daten Verbindungen** Knoten, und wählen **Verbindung hinzufügen**. Von hier aus können Sie auch mit einer Datenbank auf einem anderen Server, SharePoint-Dienst oder ein Azure-Dienst verbinden.
 
-![Symbol "Server-Explorer neue Verbindung"](../data-tools/media/raddata-server-explorer-new-connection-icon.png "Raddata Symbol "neue Verbindung zu Server-Explorer"")
+![Symbol "Server-Explorer neue Verbindung"](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 Daraufhin wird die **Verbindung hinzufügen** (Dialogfeld). Hier haben wir den Namen der SQL Server-LocalDB-Instanz eingegeben.
 
-![Neue Verbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png "Raddata neue Verbindungsdialogfeld hinzufügen")
+![Neue Verbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Ändern Sie den Anbieter
 
 Wenn die Datenquelle nicht wünschen ist, klicken Sie auf die **Änderung** Schaltfläche, um eine neue Datenquelle und/oder einen neuen ADO.NET-Datenanbieter auszuwählen. Der neue Anbieter ggf. aufgefordert, Ihre Anmeldeinformationen, abhängig von der Konfiguration.
 
-![Datenanbieter AD0.NET ändern](../data-tools/media/raddata-change-ad0.net-data-provider.png "Raddata ändern AD0.NET-Datenanbieter")
+![Änderung AD0.NET-Datenanbieter](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Testen der Verbindung
 
 Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Testverbindung**. Wenn es nicht erfolgreich, müssen Sie zur Problembehandlung bei basierend auf der Dokumentation des Herstellers.
 
-![Verbindung testen](../data-tools/media/raddata-test-connection.png "Raddata Verbindung testen")
+![Testverbindung](../data-tools/media/raddata-test-connection.png)
 
 Wenn der Test erfolgreich ist, sind Sie bereit für die Erstellung einer *Datenquelle*, also in ein Visual Studio-Begriff, der tatsächlich bedeutet eine *Datenmodell* auf Grundlage der zugrunde liegenden Datenbank oder der Dienst.
 

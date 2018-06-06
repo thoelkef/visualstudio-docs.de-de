@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8cbe95887e9a29fa98932a18c240bc558201fc43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746571"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
 
@@ -31,37 +32,37 @@ Erstellen Sie eine typisierte <xref:System.Data.DataSet> Klasse in Visual Studio
 
 2.  Wählen Sie den Typ der Datenquelle, die Sie mit herstellen möchte.
 
-     ![Datenquellen Konfigurationsassistenten](../data-tools/media/data-source-configuration-wizard.png "Datenquellen Konfigurationsassistenten")
+     ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png)
 
 3.  Wählen Sie für Datenbanken Datenbanken, die die Datenquelle für das Dataset ein.
 
-     ![Auswählen der Datenquelle eine Verbindung](../data-tools/media/data-source-choose-a-connection.png "-Datenquelle wählen Sie eine Verbindung")
+     ![Auswählen der Datenquelle eine Verbindung](../data-tools/media/data-source-choose-a-connection.png)
 
 4.  Wählen Sie die Tabellen (oder einzelne Spalten), gespeicherte Prozeduren, Funktionen und Sichten aus der Datenbank, die im Dataset dargestellt werden soll.
 
-     ![Wählen Sie Datenbankobjekte](../data-tools/media/raddata-chose-objects.png "Raddata ausgewählten Objekte")
+     ![Wählen Sie Datenbankobjekte](../data-tools/media/raddata-chose-objects.png)
 
 5.  Klicken Sie auf **Fertig stellen**.
 
 6.  Das Dataset wird als Knoten in **Projektmappen-Explorer**:
 
-     ![Datasets im Projektmappen-Explorer](../data-tools/media/dataset-in-solution-explorer.png "Datasets im Projektmappen-Explorer")
+     ![Datasets im Projektmappen-Explorer](../data-tools/media/dataset-in-solution-explorer.png)
 
      Klicken Sie auf diesem Knoten und das Dataset wird in der **DataSet-Designer**. Beachten Sie, dass jede Tabelle im Dataset ein zugeordneten TableAdapter-Objekt verfügt, die im unteren Bereich dargestellt wird. Der Tabellenadapter wird an das Dataset zu füllen und optional zum Senden von Befehlen in der Datenbank verwendet.
 
-     ![DataSet-Designer](../data-tools/media/dataset-designer.png "DataSet-Designer")
+     ![DataSet-Designer](../data-tools/media/dataset-designer.png)
 
 7.  Die Relation-Zeilen, die Tabellen verbinden darstellen tabellenbeziehungen, wie in der Datenbank definiert. Standardmäßig foreign Key-Einschränkungen in einer Datenbank werden als nur eine Beziehung dargestellt, mit dem Aktualisieren und Löschen von Regeln, die auf none festgelegt. In der Regel ist, was Sie möchten. Sie können jedoch klicken, die Zeilen aus, um die **Beziehung** Dialogfeld, in dem Sie das Verhalten hierarchischer Aktualisierungen ändern können. Weitere Informationen finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md) und [hierarchische Aktualisierung](../data-tools/hierarchical-update.md).
 
-     ![DataSet-Beziehung Dialogfeld](../data-tools/media/raddata-relation-dialog.png "Raddata Beziehung Dialogfeld")
+     ![DataSet-Relation-Dialogfeld](../data-tools/media/raddata-relation-dialog.png)
 
 8.  Klicken Sie auf eine Tabelle, Tabellenadapters oder Spaltennamen in einer Tabelle, um seine Eigenschaften im finden Sie unter der **Eigenschaften** Fenster. Sie können einige der Werte hier ändern. Bedenken Sie, dass Sie das Dataset, die nicht in der Quelldatenbank gewählt haben.
 
-     ![DataSet-Spalteneigenschaften](../data-tools/media/dataset-column-properties.png "DataSet Spalteneigenschaften")
+     ![DataSet-Spalteneigenschaften](../data-tools/media/dataset-column-properties.png)
 
 9. Sie können neue Tabellen oder TableAdapter zum Dataset hinzufügen oder fügen Sie neue Abfragen für vorhandene TableAdapter, oder geben Sie neue Beziehungen zwischen Tabellen ziehen Sie diese Elemente aus der **Toolbox** Registerkarte. Auf dieser Registerkarte wird angezeigt, wenn die **DataSet-Designer** im Fokus ist.
 
-     ![DataSet-Toolbox](../data-tools/media/raddata-dataset-toolbox.png "Raddata Dataset-Toolbox")
+     ![DataSet-Toolbox](../data-tools/media/raddata-dataset-toolbox.png)
 
 10. Als Nächstes möchten Sie möglicherweise angeben, wie das Dataset mit Daten zu füllen. Verwenden Sie dazu die **TableAdapter-Konfigurations-Assistenten**. Weitere Informationen finden Sie unter [Datasets mit TableAdapters füllen](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -75,7 +76,7 @@ Diese Prozedur zeigt, wie eine Tabelle aus der gleichen Datenbank hinzuzufügen,
 
 3.  Mit der rechten Maustaste des Dataset-Knotens, und wählen Sie **Datenquelle konfigurieren, mit dem Assistenten**.
 
-     ![Datenquelle-Kontextmenü](../data-tools/media/data-source-context-menu.png "Datenquelle-Kontextmenü")
+     ![Datenquelle-Kontextmenü](../data-tools/media/data-source-context-menu.png)
 
 4.  Mithilfe des Assistenten an, welche zusätzlichen Tabellen oder gespeicherte Prozeduren oder anderen Datenbankobjekt, das Dataset hinzu.
 

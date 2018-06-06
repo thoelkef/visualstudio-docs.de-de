@@ -17,23 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0eabca43f604d92ecab78dccae281a450f7c0400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766271"
 ---
-# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des SharePoint-Verbindungsknotens im Server-Explorer
-  In Visual Studio können Sie mit der lokalen SharePoint-Websites auf dem Entwicklungscomputer verbinden, mithilfe der **SharePoint-Verbindungen** Knoten in der**Server-Explorer** Fenster. Dieser Knoten zeigt viele der Komponenten der lokalen SharePoint-Websites in einer hierarchischen Strukturansicht an. Beispielsweise können Sie die Listen, Dokumentbibliotheken und Inhaltstypen auf lokalen Standorten anzeigen. Weitere Informationen zur Verwendung von **Server-Explorer** zur Verbindung mit lokalen SharePoint-Websites finden Sie unter [Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des SharePoint-Verbindungsknotens im Server-Explorer
+  In Visual Studio können Sie mit der lokalen SharePoint-Websites auf dem Entwicklungscomputer verbinden, mithilfe der **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Dieser Knoten zeigt viele der Komponenten der lokalen SharePoint-Websites in einer hierarchischen Strukturansicht an. Beispielsweise können Sie die Listen, Dokumentbibliotheken und Inhaltstypen auf lokalen Standorten anzeigen. Weitere Informationen zur Verwendung von **Server-Explorer** zur Verbindung mit lokalen SharePoint-Websites finden Sie unter [Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Sie erweitern die **SharePoint-Verbindungen** Knoten durch Erstellen von Erweiterungen für vorhandene Knoten oder durch Erstellen eines benutzerdefinierten Knotentyps und der Hierarchie von Knoten hinzufügen.  
   
-## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Aufgaben zum Erweitern des SharePoint-Verbindungsknotens  
+## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Aufgaben zum Erweitern des SharePoint-Verbindungsknotens
  Um einen vorhandenen Knoten zu erweitern, erstellen Sie eine Visual Studio-Erweiterung, implementiert die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Schnittstelle. Wenn Sie einen Knoten erweitern, können Sie Funktionen auf den Knoten wie Kontextmenüeinträge oder benutzerdefinierte Eigenschaften hinzufügen. Weitere Informationen finden Sie unter [wie: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
  Um einen benutzerdefinierten Knotentyp zu erstellen, erstellen Sie eine Visual Studio-Erweiterung, implementiert die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Schnittstelle. Erstellen Sie einen benutzerdefinierten Knoten aus, wenn Sie Komponenten von SharePoint-Websites anzuzeigen, die nicht in angezeigt werden soll **Server-Explorer** standardmäßig. Beispielsweise **Server-Explorer** wird nicht angezeigt, die der Webpartkatalog von einer SharePoint-Website vom Standardwert zu verwenden, aber Sie können hinzufügen einen benutzerdefinierten Knoten, die dies tut. Weitere Informationen finden Sie unter [wie: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zum Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) und [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="adding-custom-properties-to-nodes"></a>Hinzufügen von benutzerdefinierten Eigenschaften zu Knoten  
+## <a name="add-custom-properties-to-nodes"></a>Fügen benutzerdefinierter Eigenschaften zu Knoten hinzu
  Wenn Sie einen Knoten zu erweitern oder erstellen einen benutzerdefinierten Knotentyp, können Sie benutzerdefinierte Eigenschaften auf den Knoten hinzufügen. Die Eigenschaften werden der **Eigenschaften** Fenster, wenn der Knoten ausgewählt ist.  
   
  Es gibt zwei Arten von benutzerdefinierten Eigenschaften, die Sie auf einen Knoten hinzufügen können:  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Eigenschaften, die benutzerdefinierte Lese/Schreib-Daten anzuzeigen. Ein Codebeispiel, das veranschaulicht, wie Sie dies tun, finden Sie unter [wie: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="getting-data-for-built-in-nodes"></a>Abrufen von Daten für integrierte Knoten  
+## <a name="get-data-for-built-in-nodes"></a>Abrufen von Daten für integrierte Knoten
  Alle von Visual Studio bereitgestellten integrierten Knoten enthalten einige Daten über die SharePoint-Komponente, die sie darstellen. So enthält beispielsweise ein Knoten, der eine Liste auf der SharePoint-Website stellt einige Daten über die Liste, z. B. den Titel und die URL der Standardansicht für die Liste.  
   
  Auf diese Daten zuzugreifen, rufen Sie ein Datenobjekt aus dem <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft von der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> Objekt, das den Knoten darstellt, Sie von Interesse sind. Der Typ des Datenobjekts hängt vom Typ des Knotens ab.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen zum Verwenden der <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft finden Sie unter [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   

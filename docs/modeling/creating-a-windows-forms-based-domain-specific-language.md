@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749475"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifische Sprache (DSL), anstatt einen DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch ein, Binden von Windows Forms an eine DSL, indem Sie die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") ein DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer anzeigt.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) ein DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer anzeigt.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Erstellen einer Windows Forms DSL
  Die **minimale WinForm-Designer** DSL-Vorlage erstellt eine minimale DSL, die Sie ändern können, um Ihren eigenen Anforderungen anzupassen.
@@ -68,7 +69,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifi
 ## <a name="updating-the-dsl-definition"></a>Aktualisieren der DSL-Definition
  Die folgenden DSL-Definition in dieser exemplarischen Vorgehensweise verwendet wird.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Zum Aktualisieren der DSL-definition
 
@@ -127,7 +128,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifi
 
      Die Eigenschaften und Beziehungen der Modellklasse werden im Fenster "Datenquellen" angezeigt.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Verbindung von Ihrem Modell zu einem Formular
 
@@ -172,7 +173,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifi
 
 -   Dadurch wird sichergestellt, dass, wenn der Benutzer eine Zeile auswählt, werden im Eigenschaftenfenster die Eigenschaften des entsprechenden Modellelements, statt die Rasterzeile Daten angezeigt.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") Schema von Links zwischen Datenquellen und Ansichten.
+ ![DslWpf4](../modeling/media/dslwpf4.png) Schema von Links zwischen Datenquellen und Ansichten.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Die Bindungen für die DSL abgeschlossen
 
@@ -301,7 +302,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifi
 
      Sie sollten den Namen des Elements in der Rasteransicht der Daten bearbeiten können. Sie können auch dort löschen.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Über den Code zum Hinzufügen eines Elements
  Für das neue Element Schaltflächen ist der folgende alternative Code etwas einfacher.

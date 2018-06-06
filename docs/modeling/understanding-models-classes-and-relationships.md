@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748487"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zusammen mit benutzerdefinierten Programmcode definiert, den Sie schreiben können. Die meisten der Programmcode der DSL-Lösung wird aus dieser Datei generiert.
@@ -25,13 +26,13 @@ Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zu
 ## <a name="the-dsl-definition"></a>DSL-Definition
  Beim erneuten Öffnen `Dsl\DslDefinition.dsl`muss Ihr [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fenster ähnelt die folgenden Abbildung.
 
- ![DSL-Designer](../modeling/media/dsl_designer.png "Dsl_designer")
+ ![DSL-Designer](../modeling/media/dsl_designer.png)
 
  Die wichtigste Informationen in der DSL-Definition wird in der DSL-Definitionsdiagramm angezeigt. Zusätzliche Informationen, die auch DslDefinition.dsl gehört, wird im DSL-Explorer angezeigt, das in der Regel auf der Seite des Diagramms angezeigt wird. Sie arbeiten mit dem Diagramm für die häufigsten Aufgaben, und klicken Sie mit der DSL-Explorer für erweiterten Anpassung.
 
  DSL-Definitionsdiagramm zeigt die Domänenklassen, die betroffenen Modellelemente und deren Beziehungen, die Verknüpfungen zwischen Modellelementen definieren definiert. Es zeigt auch die Formen und Konnektoren, die verwendet werden, um die betroffenen Modellelemente, die dem Benutzer anzuzeigen.
 
- ![DSL-Designer mit Verantwortlichkeitsbereich](../modeling/media/dsl_desinger.png "Dsl_desinger")
+ ![DSL-Designer mit Swimlane](../modeling/media/dsl_desinger.png)
 
  Bei der Auswahl eines Elements in der DSL-Definition im Diagramm oder im Explorer für DSL, wird die Informationen im Fenster Eigenschaften angezeigt. Zusätzliche Informationen können in der DSL-Detailfenster angezeigt werden.
 
@@ -45,13 +46,13 @@ Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zu
 
  Diese Abbildung zeigt ein Modell, das vom Benutzer von einer Bibliothek "Musik" DSL erstellt wurde. Musikalben werden durch Felder dargestellt, die Listen von Songs ermöglicht enthalten. Nach Feldern mit abgerundeten Ecken dargestellt werden und verbunden sind, auf die Alben, zu denen sie beigetragen haben.
 
- ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instanzmodell für generierte DSL](../modeling/media/music_instance.png)
 
  DSL-Definition werden zwei Aspekte getrennt. Die Darstellung der Elemente von Modellelementen im Modell-Diagramm wird mithilfe der Form und Connector Klassen definiert. Die Informationen im Modell durchgeführt wird mit Domänenklassen und zwischen Domänen definiert.
 
  Die folgende Abbildung zeigt die Domänenklassen und Beziehungen in der DSL-Definition von der Bibliothek "Musik".
 
- ![Einbetten von und verweisen auf Beziehungen](../modeling/media/music_classes.png "Music_Classes")
+ ![Einbetten von und Verweisen auf Beziehungen](../modeling/media/music_classes.png)
 
  Die Abbildung zeigt vier Domänenklassen: Musik, Album, Interpret und Titel. Die Domänenklassen definieren Domäneneigenschaften z. B. Name, Titel und So weiter. Im Modell werden die Werte für einige dieser Eigenschaften im Diagramm angezeigt.
 
@@ -104,7 +105,7 @@ Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zu
 ### <a name="the-explorer-displays-the-embedding-tree"></a>Der Explorer zeigt das Einbetten von Struktur
  DSL-Definition erstellt auch ein Explorer, der Benutzer zusammen mit ihren Modelldiagramm finden Sie unter.
 
- ![Generierter Explorer für DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Generierter Explorer für DSL](../modeling/media/music_explorer.png)
 
  Der Explorer zeigt alle Elemente im Modell, auch die für die Sie keine Formen definiert haben. Es zeigt Elemente und Beziehungen einbetten, aber nicht verweisen auf Beziehungen.
 
@@ -122,7 +123,7 @@ Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zu
 
  In der folgenden Abbildung, die Zeile zwischen den **Publisher** Domänenklasse und die **PublisherCatalog** domänenbeziehung wird die Rolle "Quelle". Die Linie zwischen den domänenbeziehung und die **Album** Domänenklasse ist die Rolle "Ziel".
 
- ![Rollen und Eigenschaften. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Rollen und Eigenschaften](../modeling/media/propertycode.png)
 
  Die mit einer Beziehung zu verknüpften Namen sind besonders wichtig, wenn Sie Programmcode schreiben, der das Modell durchläuft. Die DSL-Projektmappe zu erstellen, hat die generierte Klasse Verleger beispielsweise eine Eigenschaft enthalten, der eine Auflistung von Alben ist. Die Klasse Album hat es sich um eine Eigenschaft Verleger, die eine einzelne Instanz der Klasse Verleger ist.
 

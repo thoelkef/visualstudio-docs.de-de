@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748526"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 Sie müssen Toolboxelemente für die Elemente definieren, die die Benutzer ihren Modellen hinzufügen dürfen. Es gibt zwei Arten von Tools: Elementtools und Verbindungstools. Im generierten Designer kann ein Benutzer ein Elementtool auswählen, um Formen auf das Diagramm zu ziehen. Dann kann der Benutzer ein Verbindungstool auswählen, um die Verbindungen zwischen den Formen zu zeichnen. Im Allgemeinen können Benutzer mit Elementtools ihren Modellen Instanzen von Domänenklassen hinzufügen, und mit Verbindungstools können sie Instanzen von Domänenbeziehungen hinzufügen.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Verbindung zu einer OutPort aus einer geschachtelten Komponente eingehen**
 
- ![Verbindungsgenerator](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Verbindungsgenerator](../modeling/media/connectionbuilder_3.png)
 
  Daher könnten Sie angeben, dass eine Verbindung aus einer geschachtelten Komponente mit "OutPort" zulässig ist. Wenn eine solche Verbindung angeben, legen Sie **verwendet benutzerdefinierte akzeptieren** auf die **InPort** Typ wie die Rolle "Quelle" und die **OutPort** Typ als Zielrolle in die **DSL-Detailfenster**  wie in der folgenden Abbildung gezeigt:
 
  **Verknüpfung verbinden Richtlinie im Explorer für DSL**
 
- ![Verbindungsgenerator-Abbild](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Verbindungsgenerator-Abbild](../modeling/media/connectionbuilder_4a.png)
 
  **Verknüpfung verbinden Richtlinie im Fenster "Klassendetails" DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  Dann müssen Sie die Methoden in der ConnectionBuilder-Klasse angeben:
 
