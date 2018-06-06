@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766258"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Lernprogramm: Weitere Informationen Sie zum Debuggen mit Visual Studio
 
@@ -39,6 +40,14 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Überprüfen Sie die Variablen in den Datentipps und Debugger-Fenster
 > * Die Aufrufliste überprüfen
 > * Verwenden des Ausnahmen-Hilfe
+
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio 2017 installiert haben und die. **NET Desktopentwicklung** arbeitsauslastung.
+
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+
+    Wenn müssen Sie die arbeitsauslastung zu installieren, weisen aber bereits Visual Studio, klicken Sie auf die **Installer für Visual Studio öffnen** Link im linken Bereich des der **neues Projekt** Dialogfeld (Wählen Sie **Datei**  >  **Neue** > **Projekt**). Der Visual Studio-Installer wird gestartet. Wählen Sie die. **NET Desktopentwicklung** arbeitsauslastung, wählen Sie dann **ändern**.
 
 ## <a name="start-the-debugger"></a>Starten Sie den Debugger an!
 
@@ -232,7 +241,7 @@ Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möch
 
 1. Betrachten Sie die **"Auto"** -Fensters am unteren Rand der Code-Editor.
 
-     ![Prüfen Sie die Variablen im Fenster "Auto"](../debugger/media/dbg-tour-autos-window.png "Fenster "Auto"")
+     ![Prüfen Sie die Variablen im Fenster "Auto"](../debugger/media/dbg-tour-autos-window.png "Fenster \"Auto\"")
 
     In der **"Auto"** Fenster Variablen und der aktuelle Wert angezeigt. Die **"Auto"** Fenster enthält alle Variablen, die in der aktuellen Zeile oder die vorangehende Zeile verwendet wird (In C++ wird das Fenster zeigt Variablen in der vorhergehenden drei Codezeilen. In der Dokumentation für die sprachspezifisches Verhalten).
 
@@ -243,7 +252,7 @@ Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möch
 
     Die **"lokal"** Fenster zeigt die Variablen, die sich im aktuellen Gültigkeitsbereich befinden.
 
-    ![Prüfen Sie die Variablen im Fenster "lokal"](../debugger/media/dbg-tour-locals-window.png "Fenster "lokal"")
+    ![Prüfen Sie die Variablen im Fenster "lokal"](../debugger/media/dbg-tour-locals-window.png "Fenster \"lokal\"")
 
     Derzeit ist die `this` -Objekt und das Objekt "Datei" (`f`) befinden sich im aktuellen Gültigkeitsbereich. Weitere Informationen finden Sie unter [Untersuchen von Variablen im Fenster "lokal" und "Auto"](../debugger/autos-and-locals-windows.md).
 
@@ -257,7 +266,7 @@ Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möch
 
 2. Auf der `Add` -Methode, klicken Sie auf die grüne ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png "RunToClick") erneut (oder drücken Sie F11 einige Male) zum Fortsetzen der Verarbeitung der `foreach` Schleife.
 
-    ![Legen Sie eine Überwachung auf eine Variable](../debugger/media/dbg-tour-watch-window.png "Fenster "überwachen"")
+    ![Legen Sie eine Überwachung auf eine Variable](../debugger/media/dbg-tour-watch-window.png "Fenster \"überwachen\"")
 
     Darüber hinaus möglicherweise das erste Bild, um das Hauptfenster der ausgeführten hinzugefügt werden Beispiel-app, aber dies erfolgt auf eine andere app-Thread, damit Bilder noch möglicherweise nicht sichtbar.
 

@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691531"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765725"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
   Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern. Webparts sind serverseitige Steuerelemente, die in einer Webpartseite ausgeführt werden. Diese sind die Bausteine der Seiten, die auf einer SharePoint-Website angezeigt werden. Finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Sie können Webparts in einer SharePoint-Website unter Verwendung von Vorlagen aus Visual Studio erstellen und debuggen.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691531"
   
 |Datei|Beschreibung|  
 |----------|-----------------|  
-|Elements.xml|Enthält Informationen, die von der Funktionsdefinitionsdatei im Projekt verwendet werden, um das Webpart bereitzustellen.|  
+|*"Elements.xml"*|Enthält Informationen, die von der Funktionsdefinitionsdatei im Projekt verwendet werden, um das Webpart bereitzustellen.|  
 |WEBPART-Datei|Stellt Informationen bereit, die SharePoint benötigt, um das Webpart in einem Webpartkatalog anzuzeigen.|  
 |Codedatei|Enthält Methoden, die Steuerelemente zum Webpart hinzufügen und benutzerdefinierten Inhalt innerhalb des Webparts generieren.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691531"
 |Steuerelementname|Beschreibung|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Fügt ein ASP-Menü ein. Weitere Informationen finden Sie unter [Übersicht über das Menü](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Fügt eine **LINK** Element in der ASPX-Seite und wendet eine oder mehrere externe Stylesheets definiert durch **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Fügt ein DateTime-Steuerelement in der ASPX-Seite ein.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Fügt eine Sicherheitsvalidierung in der ASPX-Seite ein.|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Fügt eine **LINK** Element in der *aspx* Seite und wendet eine oder mehrere externe Stylesheets definiert durch **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Fügt ein DateTime-Steuerelement in der *aspx* Seite.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Fügt eine sicherheitsvalidierung in der *aspx* Seite|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Gibt eine Eigenschaft einer angegebenen Liste zurück.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Gibt eine globale Eigenschaft der aktuellen Website zurück.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Fügt einen Link zu einem RSS-Feed in der ASPX-Seite ein.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Fügt einen Link zu einem RSS-feed in der *aspx* Seite.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Stellt Eigenschaften und Methoden zum Registrieren von Ressourcen (beispielsweise Skripts) auf einer Seite bereit, sodass sie angefordert werden können, wenn die Seite gerendert wird.|  
-|[Design](http://go.microsoft.com/fwlink/?LinkId=235314)|Wendet ein Design auf die ASPX-Seite an.|  
+|[Design](http://go.microsoft.com/fwlink/?LinkId=235314)|Wendet ein Design für die *aspx* Seite.|  
   
 ## <a name="debug-a-web-part"></a>Debuggen eines Webparts
  Sie können ein SharePoint-Projekt, das ein Webpart enthält, auf dieselbe Weise debuggen wie andere Visual Studio-Projekte. Wenn Sie den Visual Studio-Debugger starten, wird von Visual Studio die SharePoint-Website geöffnet.  

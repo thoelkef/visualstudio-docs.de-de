@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766284"
 ---
-# <a name="developing-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
+# <a name="develop-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sind mehrere SharePoint-Projekttypvorlagen zum Erstellen von SharePoint-Websites und -Websiteelementen verfügbar. Eine Liste der verfügbaren Projekttypen, finden Sie unter [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md). Im Folgenden finden Sie eine Beschreibung der Elemente und Eigenschaften eines SharePoint-Projekts.  
   
  Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) und [Erstellen von SharePoint-Add-Ins](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Elemente eines SharePoint-Projekts  
+## <a name="elements-of-a-sharepoint-project"></a>Elemente eines SharePoint-Projekts
  Die Knoten unter einem SharePoint-Projekt werden als *SharePoint-Elemente*bezeichnet. SharePoint-Elemente können auch eine oder mehrere Unterdateien enthalten, so genannte *SharePoint-Elementdateien*, wie z. B. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Konfigurationsdateien, aspx-Formulare und mehr.  
   
  Statt Projekte mithilfe von Projektvorlagen zu erstellen, die bereits mit Projektelementdateien aufgefüllt sind, können Sie die Vorlage **Leeres Projekt** verwenden, um ein leeres SharePoint-Projekt zu erstellen, und dann manuell Projektelemente hinzufügen. SharePoint-Projekte können optional auch eine oder mehrere Funktionsdateien (zur Aktivierung in SharePoint) und eine Paketdatei enthalten, in der das Projekt verteilt wird.  
   
-### <a name="special-nodes"></a>Spezifische Knoten  
+### <a name="special-nodes"></a>Spezifische Knoten
  Jedes SharePoint-Projekt enthält zwei Knoten, die nicht umbenannt, gelöscht, ausgeschnitten, kopiert oder aus dem Projekt gezogen werden können. Diese Knoten lauten wie folgt:  
   
--   Features  
-  
+-   Features    
 -   Package  
   
  Beide Knoten werden in allen SharePoint-Projekten stets angezeigt, auch wenn keine Funktionen oder Pakete für das Projekt definiert werden.  
   
-#### <a name="features-node"></a>Knoten Funktionen  
+#### <a name="features-node"></a>Knoten "Funktionen"
  Der Knoten **Funktionen** enthält eine oder mehrere SharePoint-Projektfunktionen. Eine Funktion ist ein Container mit Erweiterungen für SharePoint. Nachdem eine Funktion auf einem SharePoint-Server bereitgestellt wurde, kann sie in Websitedefinitionen eingeschlossen oder von SharePoint-Administratoren auf SharePoint-Websites einzeln aktiviert werden. Weitere Informationen finden Sie unter [Verwenden von Features](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  Wenn Sie ein Element zu einem SharePoint-Projekt hinzufügen, z. B. einen Inhaltstyp oder eine Listeninstanz, wird dieses einer Funktion im Knoten **Funktionen** hinzugefügt. Der Gültigkeitsbereich des Elements bestimmt, ob es einer neuen oder einer vorhandene Funktion hinzugefügt wird. Wenn das neue Element denselben Gültigkeitsbereich wie eine vorhandene Funktion aufweist, wird es der betreffenden Funktion hinzugefügt. Andernfalls wird das Element einer neuen Funktion hinzugefügt.  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  Wenn einem SharePoint-Projekt eine Funktion hinzugefügt wird, wird diese im **Projektmappen-Explorer** als Knoten mit dem Standardnamen Funktion*x*.feature angezeigt, wobei *x* eine eindeutige Zahl ist. Nachdem eine Funktion auf dem SharePoint-Server bereitgestellt wurde, kann sie von einem SharePoint-Administrator aktiviert und somit für SharePoint-Websitebenutzer verfügbar gemacht werden.  
   
-#### <a name="package-node"></a>Knoten Paket  
+#### <a name="package-node"></a>Paketknoten
  Der Knoten **Paket** enthält eine einzelne Datei, die als Verteilungsmechanismus für das SharePoint-Projekt fungiert. Diese Datei als ein *Lösungspaket*, ist. CAB-basiert und ein. Bereitstellungsanweisungen. Ein Lösungspaket ist eine zur Bereitstellung geeignete, wiederverwendbare Datei, die einen Satz von Funktionen, Websitedefinitionen und Assemblys enthält, die für SharePoint-Websites gelten, und die Sie einzeln aktivieren oder deaktivieren können. Die **Paket** Knoten enthält darüber hinaus immer eine Datei mit dem Namen Package.wspdef, eine [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Definitionsdatei für das Paket. Sobald ein Paket auf dem Server bereitgestellt wurde, auf dem SharePoint ausgeführt wird, kann der SharePoint-Administrator es installieren und die zugehörigen Funktionen aktivieren.  
   
  Sie können anzeigen oder ändern Sie den Inhalt des Pakets im Paket-Designer, durch den Paketknoten doppelklicken oder indem Sie das Kontextmenü öffnen, und drücken Sie dann die **öffnen**. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Lösungspakete](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>Eigenschaften von SharePoint-Projekten und -Projektelementen  
+## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint-Projekte und Projektelementeigenschaften
  Die Eigenschaften von SharePoint-Projekten werden wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Projekten im Eigenschaftenfenster und auf der Eigenschaftenseite angezeigt. Welche Eigenschaften angezeigt werden, hängt vom ausgewählten Knoten ab.  
   
  Wenn ein SharePoint-Projekt, Projektelement, oder Projektelementdateiknoten im **Projektmappen-Explorer**ausgewählt wird, werden die folgenden Eigenschaften im Eigenschaftenfenster oder auf der Eigenschaftenseite angezeigt:  
   
-### <a name="project-properties"></a>Projekteigenschaften  
+### <a name="project-properties"></a>Projekteigenschaften
   
 |Eigenschaftenname|Beschreibung|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  Wenn eine SharePoint-Elementdatei (beispielsweise ein Workflow oder eine Funktion im Knoten "Funktionen") ausgewählt wird, werden die folgenden Eigenschaften im Eigenschaftenfenster angezeigt:  
   
-### <a name="project-item-properties"></a>Eigenschaften von Projektelementen  
+### <a name="project-item-properties"></a>Eigenschaften von Projektelementen
   
 |Eigenschaftenname|Beschreibung|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |Projektausgabeverweise|Gibt eine Abhängigkeit (z. B. eine Assembly) an, die zum Ausführen des Projektelements benötigt wird. Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Einträge für sicheres Steuerelement|Gibt Steuerelemente an, die sicher sind und von nicht vertrauenswürdigen Benutzern bearbeitet werden können. Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Eigenschaften von Projektelementdateien  
+### <a name="project-item-file-properties"></a>Eigenschaften von Projektelementdateien
   
 |Eigenschaftenname|Beschreibung|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |Bereitstellungsspeicherort|Der vollqualifizierte Pfad der Datei auf dem SharePoint-Server. Dieser Pfad setzt sich aus den untergeordneten Bereitstellungsstamm- und Bereitstellungspfadeigenschaften zusammen.|  
 |Bereitstellungspfad|Der relative Pfad der Datei auf dem SharePoint-Serverdatei, z. B. Workflow1\\. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Auswählen eines Werts von *RootFile* für die *Bereitstellungstyp* eigenschaftenänderungen der *Bereitstellungsstamm-* -Eigenschaft in {SharePointRoot}\\, wodurch eine den vollqualifizierten Pfad {SharePointRoot} \Workflow1\\. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Z. B. {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|  
-|Deployment Type|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Kann einer der folgenden Werte sein:<br /><br /> NoDeployment: \<kein Wert ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Kann einer der folgenden Werte sein:<br /><br /> NoDeployment:  *\<kein Wert >*<br /><br /> ElementManifest: *{SharePointRoot} \Template\Features\\{FeatureName}*\\<br /><br /> ElementFile: *{SharePointRoot} \Template\Features\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *{SharePointRoot} \Resources\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Dateiname|Der Name der Datei oder des Ordners für die Elementdatei.|  
 |Vollständiger Pfad|Der Speicherort der Datei für das Element. (Schreibgeschützt.)|  
   
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[Sicherheit für SharePoint-Projektmappen](../sharepoint/security-for-sharepoint-solutions.md)|Erläutert Sicherheitsaspekte bei der Entwicklung von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[URL-Auswahldialogfeld &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Beschreibt ein Dialogfeld, mit dem Sie Pfadverweise auf Ressourcen im Projekt oder auf dem lokalen SharePoint-Server hinzufügen können.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erste Schritte &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

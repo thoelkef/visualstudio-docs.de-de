@@ -1,5 +1,5 @@
 ---
-title: VBA- und Office-Projektmappen in Visual Studio im Vergleich | Microsoft Docs
+title: VBA- und Office-Projektmappen in Visual Studio, die im Vergleich
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768052"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Vergleich von VBA- und Office-Projektmappen in Visual Studio
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>VBA- und Office-Projektmappen in Visual Studio, die im Vergleich
   In Microsoft Visual Basic for Applications (VBA) wird nicht verwalteter Code verwendet, der eng in Office-Anwendungen integriert ist. Mit Microsoft Office-Projekten, die mit Visual Studio erstellt wurden, können Sie .NET Framework und Visual Studio-Entwurfstools nutzen.  
   
  Informationen zu den Typen von Office-Projektmappen können Sie mithilfe von Visual Studio erstellen, finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -44,8 +45,8 @@ ms.lasthandoff: 04/16/2018
   
 -   Aufzeichnen von Makros  
   
-## <a name="combining-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Kombinieren von VBA-Projektmappen und Office-Projektmappen, die mit Visual Studio erstellt wurden  
- Sie können VBA-Code aus Office-Projektmappen aufrufen, die mit Visual Studio erstellt wurden, und Sie können auch Code in Office-Projektmappen aus VBA aufrufen, die mit Visual Studio erstellt wurden. Das Verfahren richtet sich jeweils danach, ob es sich bei der Office-Projektmappe um ein VSTO-Add-In oder eine Anpassung auf Dokumentebene handelt. Weitere Informationen finden Sie unter [Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) und [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Kombinieren von VBA-Projektmappen und Office-Projektmappen mit Visual Studio erstellt wurden  
+ Sie können VBA-Code aus Office-Projektmappen aufrufen, die mit Visual Studio erstellt wurden, und Sie können auch Code in Office-Projektmappen aus VBA aufrufen, die mit Visual Studio erstellt wurden. Das Verfahren richtet sich jeweils danach, ob es sich bei der Office-Projektmappe um ein VSTO-Add-In oder eine Anpassung auf Dokumentebene handelt. Weitere Informationen finden Sie unter [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) und [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   

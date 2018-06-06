@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63d3153bfcc38b28ace3db5ad976a2c2a6a650fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f0d7962446d5cf21822a101354284c63a7df98c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749927"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.
@@ -140,7 +141,7 @@ public partial class ParentsHaveChildren
 
  Das Beispiel gilt für das folgende Domänenmodell. Die ParentsHaveChildren-Beziehung weist die Rollen "Child" und "Parent" auf.
 
- ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Validierungskategorien
  Im Attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> geben Sie an, wann die Validierungsmethode ausgeführt werden soll.

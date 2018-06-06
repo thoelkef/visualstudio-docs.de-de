@@ -19,18 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767776"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Gewusst wie: Hinzufügen und Entfernen zusätzlicher Assemblys
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys
   Wenn ein SharePoint-Paket im Hinblick auf Funktionen oder Daten von anderen Assemblys abhängig ist, können Sie die Assemblys dem Lösungspaket (.wsp) hinzufügen. Auf diese Weise stellt der SharePoint-Server sicher, dass benutzerdefinierte Assemblys mit einem Paket installiert werden.  
   
  Sie können auch die zugeordneten sicheren Steuerelemente und Klassenressourcendateien der Assemblys hinzufügen und ändern.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Hinzufügen von zusätzlichen Assemblys, sicheren Steuerelementen und Klassenressourcen  
+## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Hinzufügen von zusätzlichen Assemblys sichere Steuerelemente und Klassenressourcen  
  Sie können im SharePoint-Lösungspaket zusätzliche Assemblys hinzufügen. Zusätzliche Assemblys in einer Sandkastenlösung werden im globalen Assemblycache bereitgestellt, die SharePoint-Projektelemente in einer Sandkastenlösung werden jedoch der Inhaltsdatenbank hinzugefügt. Darüber hinaus können Sie diesen zusätzlichen Assemblys sichere Steuerelemente und Klassenressourcen hinzufügen. Weitere Informationen zu sicheren Steuerelementen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) oder "Erstellen einer SafeControl Entry" im [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>So fügen Sie eine vorhandene Assembly hinzu  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wählen Sie die ENTF-TASTE aus.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erstellen von SharePoint-Funktionen](../sharepoint/creating-sharepoint-features.md)   
  [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

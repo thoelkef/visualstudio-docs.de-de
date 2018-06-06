@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691978"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765004"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Ein *Seite "Anwendung"* ist eine ASP.NET-Webseite, die für die Verwendung in einer SharePoint-Website entwickelt wurde. Anwendungsseiten sind ein spezialisierter Typ von ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite ist, dass eine Anwendungsseite Inhalt enthält, die mit einer SharePoint-Masterseite zusammengeführt wird. Eine Masterseite ermöglicht dienstanwendungsseiten, um das gleiche Erscheinungsbild und Verhalten wie andere Seiten auf einer Website freigeben.  
   
  Visual Studio ermöglicht Ihnen Anwendungsseiten, die mit einem Designer entworfen. Der Designer zeigt einen Inhaltsbereich für jeden Inhaltsplatzhalter, die auf einer Masterseite definiert ist. Sie können die Seite "Anwendung" durch Ziehen von Steuerelementen in diese Inhaltsbereiche entwerfen.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691978"
   
 |Datei|Beschreibung|  
 |----------|-----------------|  
-|Datei der ASP.NET-Seite (.aspx)|Enthält XML-Markup, das die Seite definiert.|  
+|Datei der ASP.NET-Seite (*aspx*)|Enthält XML-Markup, das die Seite definiert.|  
 |Die Codedatei Anwendungsseite|Enthält die CodeBehind-Seite "Anwendung". Fügen Sie Code, der Ereignisse in dieser Datei behandelt.|  
 |Application-Designer-Codedatei|Enthält Code, der vom Designer generiert wird. Bearbeiten Sie diese Datei nicht direkt.|  
   

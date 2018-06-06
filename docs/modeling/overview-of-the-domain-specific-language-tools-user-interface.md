@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748724"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tools) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], die Benutzeroberfläche die folgenden Abbildung ähneln.
 
- ![DSL-Designer](../modeling/media/dsl_designer.png "Dsl_designer")
+ ![DSL-Designer](../modeling/media/dsl_designer.png)
 
  In der folgenden Tabelle wird erläutert, wie die Teile der Benutzeroberfläche verwendet werden.
 
@@ -36,7 +37,7 @@ Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tool
 ## <a name="the-domain-model-diagram"></a>Die Domäne Modelldiagramms
  Die Domäne Modelldiagramm ist in zwei Bereiche unterteilt. Eine Seite des Diagramms zeigt die Elemente und Beziehungen im Modell an. Die andere Seite wird gezeigt, wie das Modell ist, die angezeigt werden, sowie die Formen, die verwendet werden, um die Elemente und die Eigenschaften des Modelldiagramms anzuzeigen. Das folgende Bild zeigt die Elemente des Diagramms.
 
- ![DSL-Designer mit Verantwortlichkeitsbereich](../modeling/media/dsl_desinger.png "Dsl_desinger")
+ ![DSL-Designer mit Swimlane](../modeling/media/dsl_desinger.png)
 
  In der folgenden Tabelle werden einige der Elemente des Diagramms Modell Domäne erläutert.
 

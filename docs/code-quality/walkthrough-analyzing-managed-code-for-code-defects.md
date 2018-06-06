@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746558"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwalteter Code für Code Fehlern
 
@@ -30,7 +31,7 @@ Diese exemplarische Vorgehensweise führt Sie durch die Verwendung von Codeanaly
 
 1. Wählen Sie im Menü **Datei** die Befehlsfolge **Neu** > **Projekt...** aus.
 
-1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-**, und wählen Sie dann **klassische Windows-Desktop**.
+1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-**, und wählen Sie dann **Windows Desktop**.
 
 1. Wählen Sie die **-Klassenbibliothek ((.NET Framework)** Vorlage.
 

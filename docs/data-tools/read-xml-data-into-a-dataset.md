@@ -1,5 +1,5 @@
 ---
-title: Lesen von XML-Daten in ein dataset
+title: Laden von Daten in ein Dataset
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745935"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>Lesen von XML-Daten in ein dataset
+# <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die XML-Daten in ein Dataset lädt. Das Dataset wird dann angezeigt, einem <xref:System.Windows.Forms.DataGridView> Steuerelement. Schließlich wird ein XML-Schema basierend auf dem Inhalt der XML-Datei in einem Textfeld angezeigt.
 
  In dieser exemplarischen Vorgehensweise besteht aus fünf wichtigen Schritte durchführen:
@@ -53,7 +54,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
 
 1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 

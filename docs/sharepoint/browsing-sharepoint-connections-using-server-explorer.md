@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691416"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765855"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen, die mithilfe von Server-Explorer
-  Sie können lokale SharePoint-Verbindungen in Durchsuchen **Server-Explorer**. Mithilfe dieser Technik können Sie auf Ihrem System durch die Komponenten einer SharePoint-Website navigieren. SharePoint-Website-Komponenten, z. B. Listendefinitionen und Inhaltstypen, angezeigt werden, in einem Knoten mit dem Namen **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorer**. Anzuzeigende **Server-Explorer**, wählen Sie in der Menüleiste **Ansicht**, **Server-Explorer**. Zusätzlich zur Anzeige der SharePoint-Website-Komponenten, Sie Entfernen von Elementen, zugehörigen Eigenschaften anzeigen oder Aktualisieren mithilfe von Befehlen im Kontextmenü die Strukturansicht.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer
+  Sie können lokale SharePoint-Verbindungen in Durchsuchen **Server-Explorer**. Mithilfe dieser Technik können Sie auf Ihrem System durch die Komponenten einer SharePoint-Website navigieren. SharePoint-Website-Komponenten, z. B. Listendefinitionen und Inhaltstypen, angezeigt werden, in einem Knoten mit dem Namen **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorer**. Anzuzeigende **Server-Explorer**, wählen Sie in der Menüleiste **Ansicht** > **Server-Explorer**. Zusätzlich zur Anzeige der SharePoint-Website-Komponenten, Sie Entfernen von Elementen, zugehörigen Eigenschaften anzeigen oder Aktualisieren mithilfe von Befehlen im Kontextmenü die Strukturansicht.  
   
 > [!IMPORTANT]  
 >  Informationen zum Durchsuchen einer SharePoint-Websites müssen Sie Administrator der SharePoint-Websitesammlung sein, und sein muss Visual Studio als Administrator des lokalen Computers ausgeführt. Andernfalls wird der Standort im **Server-Explorer**, aber Sie können nicht den Knoten erweitern. Öffnen Sie die Website in einem Webbrowser öffnen, um zu überprüfen, ob Sie einen Administrator der Websitesammlung, die **Websiteaktionen** Menü Wählen Sie **Websiteberechtigungen**, und klicken Sie auf die **Berechtigungen: Team Standort** Seite, und wählen Sie die **Websitesammlungs-Administratoren** Befehl die **verwalten** Gruppe auf dem Menüband. Der Name wird im Textfeld angezeigt, wenn Sie Administrator einer Websitesammlung sind. Wenn die **Websitesammlungs-Administratoren** Befehl nicht in der Gruppe verwalten, auf dem Menüband angezeigt wird, Sie sind kein Administrator für die Websitesammlung nicht und Sie benötigen die entsprechenden Berechtigungen vom Administrator Standorts.  

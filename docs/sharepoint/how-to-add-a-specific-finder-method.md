@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767649"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Gewusst wie: Hinzufügen einer bestimmten Finder-Methode
+# <a name="how-to-add-a-specific-finder-method"></a>Vorgehensweise: hinzufügen eine bestimmte Finder-Methode
   Sie können eine einzelne Entitätsinstanz zurückgeben, durch das Erstellen einer *spezifischer Finder* Methode. Business Data Connectivity (BDC)-Dienst führt die spezifischer Finder-Methode auf, wenn ein Benutzer eine Entität in einem Business Data-Webpart oder eine externe Liste auswählt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Erstellen eine bestimmten Finder-Methode  
+### <a name="to-create-a-specific-finder-method"></a>Zum Erstellen einer bestimmten Finder-Methode
   
-1.  Wählen Sie eine Entität, auf dem BDC-Designer.  
+1.  Auf der **BDC-Designer**, wählen Sie eine Entität.  
   
-     Informationen zur Vorgehensweise beim Hinzufügen einer Entität in den BDC-Designer in Visual Studio finden Sie unter [wie: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Informationen zur Vorgehensweise beim Hinzufügen einer Entität für die **BDC-Designer** in Visual Studio finden Sie unter [wie: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Wählen Sie in der Menüleiste **Ansicht**, **Weitere Fenster**, **BDC-Methodendetails**.  
+2.  Wählen Sie in der Menüleiste **Ansicht** > **Weitere Fenster**, **BDC-Methodendetails**.  
   
      Die **BDC-Methodendetails** Fenster wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  In der **Methodendetails** Fenster, wählen Sie die Methodeninstanz der Methode.  
   
-7.  In der **Fenster "Eigenschaften"**legen die **Parametername zurückgeben** -Eigenschaft auf den Namen des Parameters der Methode zurück. Weitere Informationen zur Methode-Instanzeigenschaften finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
+7.  In der **Fenster "Eigenschaften"** legen die **Parametername zurückgeben** -Eigenschaft auf den Namen des Parameters der Methode zurück. Weitere Informationen zur Methode-Instanzeigenschaften finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
   
 8.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü der Dienstcodedatei, die generiert wurde für die Entität, und wählen Sie dann **Code anzeigen**.  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
  [Vorgehensweise: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)   
  [Vorgehensweise: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

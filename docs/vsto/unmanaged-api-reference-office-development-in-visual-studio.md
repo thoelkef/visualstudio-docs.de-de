@@ -1,5 +1,5 @@
 ---
-title: Nicht verwaltete API-Referenz (Office-Entwicklung in Visual Studio) | Microsoft Docs
+title: Referenz zur nicht verwalteten API (Office-Entwicklung in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06ec998dc4b9c23b38526563ce8b501866769b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97388073d63b25bb17a7f49f4e2c5fb96bf2f572
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767896"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Referenz zur nicht verwalteten API (Office-Entwicklung in Visual Studio)
   Office-Anwendungen ab 2007 Microsoft Office System, verwenden Sie die [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md) Schnittstelle in einem VSTO-Add-in-Ladekomponente aufrufen, die enthalten ist das [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Mithilfe dieser Komponente wird das Laden verwalteter VSTO-Add-Ins unterstützt. Sie können eine eigene VSTO-Add-In-Ladekomponente erstellen, indem Sie diese Schnittstelle implementiert.  

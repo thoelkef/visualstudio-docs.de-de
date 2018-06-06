@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aae6789d9961fa3cbf63ce073a33251465ee308a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357730c8095e9449e9556fd4926afa0bbd53fb30
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767295"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Gewusst wie: Erstellen eines BDC-Modells
+# <a name="how-to-create-a-bdc-model"></a>Vorgehensweise: Erstellen eines BDC-Modells
   Sie können ein BDC (Business Data Connectivity)-Modell erstellen, indem Sie die Vorlage für diesen Vorlagentyp verwenden und dann das Modell zu einem SharePoint-Projekt hinzufügen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md). Weitere Informationen zum Entwerfen des Modells finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>So erstellen Sie ein BDC-Projekt  
   
-1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1.  Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.  
   
     > [!NOTE]  
-    >  Wenn die IDE für die Verwendung von Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei**, **neues Projekt**.  
+    >  Wenn die IDE für die Verwendung von Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei** > **neues Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      Ein leeres SharePoint-Projekt wurde erstellt.  
   
-5.  Wählen Sie in der Menüleiste **Projekt**, **neues Element hinzufügen**.  
+5.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.  
   
 6.  In der **neues Element hinzufügen** Dialogfeld Wählen Sie die **Office/SharePoint** Knoten.  
   
@@ -61,11 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      Ein **Business Data Connectivity-Modell** Element wird dem Projekt hinzugefügt. Standardmäßig wird das Modell im BDC-Designer angezeigt. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Vorgehensweise: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Vorgehensweise: Verwenden Sie eine Ressourcendatei lokalisierten Namen, Eigenschaften und Berechtigungen angeben.](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
   

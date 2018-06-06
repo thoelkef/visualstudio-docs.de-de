@@ -24,14 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b96a316e451528b886dd1eba0840a3212678e922
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692170"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766346"
 ---
-# <a name="creating-an-association-between-entities"></a>Erstellen einer Assoziation zwischen Entitäten
+# <a name="create-an-association-between-entities"></a>Erstellen einer Assoziation zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Modell Business Data Connectivity (BDC) durch das Erstellen von Zuordnungen definieren. Methoden, die Consumern des Modells mit Informationen über jede Zuordnung bereitstellen, generiert Visual Studio. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen zum Anzeigen von datenbeziehungen in einer Benutzeroberfläche (UI) verwendet werden.  
   
 ## <a name="create-an-association"></a>Erstellen Sie eine Zuordnung

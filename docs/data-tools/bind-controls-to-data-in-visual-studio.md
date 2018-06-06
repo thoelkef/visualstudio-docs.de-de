@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747390"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steuerelemente binden. Sie können diese datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf einer Entwurfsoberfläche oder Steuerelemente auf einer Entwurfsoberfläche in Visual Studio.
@@ -33,7 +34,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
 |DataSet|Ja|Ja|Nein|
 |Entity Data Model|Ja<sup>1</sup>|Ja|Ja|
-|LINQ to SQL-Klassen|Nicht<sup>2</sup>|Nicht<sup>2</sup>|Nicht<sup>2</sup>|
+|LINQ to SQL-Klassen|Nein<sup>2</sup>|Nein<sup>2</sup>|Nein<sup>2</sup>|
 |Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Web Services)|Ja|Ja|Ja|
 |Object|Ja|Ja|Ja|
 |SharePoint|Ja|Ja|Ja|
@@ -45,7 +46,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 ## <a name="data-sources-window"></a>Datenquellenfenster
  Datenquellen stehen dem Projekt als Elemente in der **Datenquellen** Fenster. Dieses Fenster sichtbar ist, oder es wird über die **Ansicht** Menü, wenn eine Form-Entwurfsoberfläche in Ihrem Projekt das aktive Fenster ist. Sie können Elemente auch ziehen, über dieses Fenster, um Steuerelemente zu erstellen, die an den zugrunde liegenden Daten gebunden sind, und Sie können auch die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste.
 
- ![Datenquellenfenster](../data-tools/media/raddata-data-sources-window.png "Raddata Fenster "Datenquellen"")
+ ![Datenquellenfenster](../data-tools/media/raddata-data-sources-window.png)
 
  Für jeden Datentyp, der in der **Datenquellen** Fenster, ein Standardsteuerelement wird erstellt, wenn Sie das Element in den Designer ziehen. Vor dem Ziehen eines Elements aus der **Datenquellen** Fenster, ändern Sie das Steuerelement, das erstellt wird. Weitere Informationen finden Sie unter [festlegen, welches Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

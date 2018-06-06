@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745697"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen Sie Datasets, indem Sie mithilfe von TableAdapters
 Ein TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf eine oder mehrere Abfragen oder gespeicherte Prozeduren, die Sie angeben. TableAdapters können auch ausführen, fügt, Aktualisierungen und löschungen in der Datenbank, um Änderungen persistent zu speichern, die Sie auf das Dataset vornehmen. Sie können auch globale Befehle ausgeben, die nicht mit einer bestimmten Tabelle verbunden sind.
@@ -49,7 +50,7 @@ Ein TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf e
 ## <a name="tableadapter-overview"></a>Übersicht über TableAdapters
  TableAdapters werden vom Designer generierte Komponenten, die Herstellen einer Verbindung mit einer Datenbank, ausgeführte Abfragen oder gespeicherte Prozeduren und deren DataTable mit den zurückgegebenen Daten zu füllen. TableAdapters zusätzlich die aktualisierte Daten aus der Anwendung wieder in die Datenbank gesendet. Sie können beliebig viele Abfragen, die Sie für einen TableAdapter möchten, solange sie Daten, die entsprechen dem Schema der Tabelle zurückgeben, die der TableAdapter zugeordnet ist, ausführen. Das folgende Diagramm zeigt, wie TableAdapters mit Datenbanken und anderen Objekten im Arbeitsspeicher zu interagieren:
 
- ![Datenfluss in einer Clientanwendung](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Datenfluss in einer Clientanwendung](../data-tools/media/clientdatadiagram.gif)
 
  Während TableAdapters mit vorgesehen sind die **Dataset-Designer**, die TableAdapter-Klassen werden nicht als geschachtelte Klassen von generiert <xref:System.Data.DataSet>. Sie befinden sich separaten Namespaces, die für jedes Dataset spezifisch sind. Angenommen, Sie haben ein Dataset namens `NorthwindDataSet`, die TableAdapters, die zugeordnet sind <xref:System.Data.DataTable>s in der `NorthwindDataSet` wird in der `NorthwindDataSetTableAdapters` Namespace. Um programmgesteuert auf einen speziellen TableAdapter zuzugreifen, müssen Sie eine neue Instanz des TableAdapter deklarieren. Zum Beispiel:
 
@@ -63,7 +64,7 @@ Ein TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf e
  Die Aktualisierungsfunktionalität eines TableAdapter hängt der Umfang der Informationen in der Hauptabfrage des TableAdapter-Assistenten verfügbar ist. Beispielsweise sind TableAdapters, die so konfiguriert sind, dass sie Werte aus mehreren Tabellen (JOINs), Skalarwerte, Ansichten oder die Ergebnisse von Aggregatfunktionen abrufen, bei der Erstellung anfänglich nicht in der Lage, Aktualisierungen an die zugrunde liegende Datenbank zurückzusenden. Allerdings können Sie konfigurieren, die INSERT-, Update- und DELETE-Befehle manuell in die **Eigenschaften** Fenster.
 
 ## <a name="tableadapter-queries"></a>TableAdapter-Abfragen
- ![TableAdapter mit mehreren Abfragen](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter mit mehreren Abfragen](../data-tools/media/tableadapter.gif)
 
  TableAdapters können mehrere Abfragen, um ihre zugeordneten Datentabellen aufzufüllen enthalten. Sie können so viele Abfragen für einen TableAdapter definieren, wie für die Anwendung erforderlich sind, solange jede Abfrage Daten zurückgibt, die demselben Schema entsprechen wie die zugeordnete Datentabelle. Diese Funktion ermöglicht es einen TableAdapter unterschiedliche Ergebnisse basierend auf unterschiedlichen Kriterien zu laden.
 

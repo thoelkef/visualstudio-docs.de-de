@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748933"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren eines Modells im Programmcode
+# <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
 Sie können Code zum Erstellen und Löschen von Modellelementen, Festlegen ihrer Eigenschaften und erstellen und Löschen von Verknüpfungen zwischen den Elementen schreiben. Alle Änderungen müssen innerhalb einer Transaktion ausgeführt werden. Wenn die Elemente in einem Diagramm angezeigt werden, wird das Diagramm "automatisch am Ende der Transaktion behoben einrichten".
 
@@ -55,11 +56,11 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, Festlegen ihrer
 ##  <a name="example"></a> Bibliotheksbeispiel DSL-Definition
  Dies ist der Hauptteil der DslDefinition.dsl bei den Beispielen in diesem Thema:
 
- ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png)
 
  Dieses Modell ist eine Instanz dieser DSL:
 
- ![Tudor-Stammbaummodell](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Tudor-Stammstrukturmodell](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Verweise und Namespaces
  Zum Ausführen des Codes in diesem Thema sollten Sie verweisen:
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  In eine DSL ist die Domäne Modellelement, das ein Konzept wie z. B. die Person oder Musiktitel darstellt, aus dem FormElement, das darstellt, sehen Sie im Diagramm getrennt. Das Modellelement Domäne speichert die wichtigen Eigenschaften und die Beziehungen der Konzepte erläutert. Das FormElement speichert die Größe, Position und Farbe der Ansicht des Objekts, auf das Diagramm, und das Layout seiner Komponenten.
 
 ### <a name="presentation-elements"></a>Presentation-Elemente
- ![Klassendiagramm für grundlegende Form- und Elementtypen](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Klassendiagramm für grundlegende Form- und Elementtypen](../modeling/media/dslshapesandelements.png)
 
  In der DSL-Definition erstellt jedes Element, das Sie angeben, eine Klasse, die von einer der folgenden standard-Klassen abgeleitet ist.
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  Formen, Connectors und Diagramme werden Untertypen von <xref:Microsoft.VisualStudio.Modeling.ModelElement> und live im Speicher. Sie müssen daher werden nur innerhalb einer Transaktion ändern. Weitere Informationen finden Sie unter [wie: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Ansicht des Dokuments und Dokumentdaten
- ![Klassendiagramm für Standarddiagrammtypen](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Klassendiagramm für Standarddiagrammtypen](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Speichern von Partitionen
  Wenn ein Modell geladen wird, wird das begleitende Diagramm zur gleichen Zeit geladen. In der Regel das Modell in Store.DefaultPartition geladen werden, und der Inhalt des Diagramms in einer anderen Partition geladen wird. In der Regel wird der Inhalt der einzelnen Partitionen geladen und in einer separaten Datei gespeichert.

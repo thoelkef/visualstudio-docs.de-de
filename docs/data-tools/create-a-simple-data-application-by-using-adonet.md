@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745801"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
 
@@ -83,7 +84,7 @@ Erstellen Sie die Beispieldatenbank, indem Sie die folgenden Schritte:
 
  **Navigationsformular**
 
- ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png)
 
 |Steuerelemente für das Navigationsformular|Eigenschaften|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ Erstellen Sie die Beispieldatenbank, indem Sie die folgenden Schritte:
 
  **NewCustomer-Formular**
 
- ![Fügen Sie einen neuen Kunden hinzu, und eine Bestellung aufgeben](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![Neuen Kunden hinzufügen und eine Bestellung aufgeben](../data-tools/media/simpleappnewcust.png)
 
 |Steuerelemente für das NewCustomer-Formular|Eigenschaften|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ Erstellen Sie die Beispieldatenbank, indem Sie die folgenden Schritte:
 
  **FillOrCancel-Formular**
 
- ![Bestellungen erfüllen oder widerrufen](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![Bestellungen erfüllen oder widerrufen](../data-tools/media/simpleappcancelfill.png)
 
 |Steuerelemente für das FillOrCancel-Formular|Eigenschaften|
 |----------------------------------------|----------------|

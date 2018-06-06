@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691211"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746177"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
 Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung für die Datenübergabe von einem Formular zum anderen. Verwenden die Tabellen Customers und Orders von Northwind an, ein Formular ermöglicht Benutzern, einen Kunden auszuwählen, und ein zweites Formulars zeigt die ausgewählte Bestellungen des Kunden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Methode für die zweite Form zu erstellen, die Daten aus dem ersten Formular empfängt.
@@ -71,7 +71,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 

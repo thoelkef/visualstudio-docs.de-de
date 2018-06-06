@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aea2dd600548d76d57d58c8cfc0313c92ccb9f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f29465ca696617982a700a04b72c42b478933620
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766785"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen eines Kontextmenüelements zu SharePoint-Projekten
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Vorgehensweise: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten
   Sie können jedem SharePoint-Projekt ein Kontextmenüelement hinzufügen. Das Menüelement wird angezeigt, wenn ein Benutzer einen Projektknoten klickt **Projektmappen-Explorer**.  
   
  Die folgenden Schritte wird davon ausgegangen, dass Sie bereits eine projekterweiterung erstellt haben. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -45,16 +46,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Kompilieren des Codes  
  Dieses Beispiel benötigen Sie ein Klassenbibliotheksprojekt mit Verweisen auf die folgenden Assemblys:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
+-   Microsoft.VisualStudio.SharePoint
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Bereitstellen der Erweiterung  
  Zum Bereitstellen der Erweiterung erstellen Sie eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Projekten](../sharepoint/extending-sharepoint-projects.md)   
  [Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
   

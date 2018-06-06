@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dafa11c17968eb5468ecd4eff462ff9474ce5131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767441"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Explorer
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Explorer
   Um ein Paket zum Bereitstellen von SharePoint-Projektelemente und-Funktionen zu konfigurieren, können Sie dem Paket-Explorer verwenden. Sie können die SharePoint-Projektelemente und-Funktionen in der WSP-Datei anpassen.  
   
  Alternativ können Sie die Paket-Designer verwenden, anzeigen und sortieren Sie die Funktionen, die die Aktivierungsreihenfolge zu ändern. Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-open-the-packaging-explorer"></a>Um dem Paket-Explorer zu öffnen.  
   
-1.  Wählen Sie in der Menüleiste **Ansicht**, **Weitere Fenster**, **Paket-Explorer**.  
+1.  Wählen Sie in der Menüleiste **Ansicht** > **Weitere Fenster** > **Paket-Explorer**.  
   
      Die **Paket-Explorer** wird angezeigt, der **Toolbox**.  
   
 ## <a name="adding-a-feature-to-a-package"></a>Hinzufügen einer Funktion zu einem Paket  
  Sie können neue und vorhandene Funktionen zu einem Paket hinzufügen, indem Sie mit der Paket-Explorer.  
   
-#### <a name="to-add-a-sharepoint-feature"></a>Hinzufügen einer SharePoint-Funktion  
+#### <a name="to-add-a-sharepoint-feature"></a>Hinzufügen eine SharePoint-Funktion
   
 1.  Öffnen Sie die **Paket-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **Funktion hinzufügen**.  
   
@@ -60,13 +61,12 @@ ms.lasthandoff: 04/16/2018
 ## <a name="validating-a-feature-or-package"></a>Überprüfen einer Funktion oder eines Pakets  
  Sie können ermitteln potenzieller Probleme in der SharePoint-Funktionen und Pakete überprüfen die Dateien. Warnungen und Fehler werden im Fenster "Ausgabe" und Fenster "Fehlerliste" angezeigt.  
   
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>So überprüfen Sie eine SharePoint-Funktion oder eines Pakets  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>So überprüfen Sie eine SharePoint-Funktion oder eines Pakets
   
 1.  Öffnen der **Paket-Explorer**.  
   
 2.  Öffnen Sie ein Kontextmenü für eine Funktion oder ein Paket, und wählen Sie dann **Validate**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

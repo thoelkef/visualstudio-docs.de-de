@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747468"
 ---
 # <a name="hierarchical-update"></a>Hierarchische Aktualisierung
 *Hierarchische Aktualisierung* bezieht sich auf das Zurückspeichern der aktualisierten Daten (aus einem Dataset mit zwei oder mehr verknüpfte Tabellen) in einer Datenbank beim Verwalten von Regeln für die referenzielle Integrität. *Referenzielle Integrität* bezieht sich auf die Konsistenzregeln, angegeben durch die Einschränkungen in einer Datenbank, die das Verhalten des einfügen, aktualisieren und Löschen von verknüpften Datensätzen zu steuern. Beispielsweise ist es die referenzielle Integrität, der die Erstellung eines Kundendatensatzes zuzulassen Aufträge erstellt werden für diesen Kunden erzwingt.  Weitere Informationen zu Beziehungen in Datasets, finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Aktivieren der hierarchischen Aktualisierung in einem dataset
  Standardmäßig wird die hierarchische Aktualisierung für alle neuen DataSets aktiviert, die in einem Projekt hinzugefügt oder erstellt werden. Aktivieren oder deaktivieren Sie hierarchische Aktualisierung, durch Festlegen der **hierarchische Aktualisierung** Eigenschaft eines typisierten Datasets im Dataset **"true"** oder **"false"**:
 
- ![Hierarchische aktualisierungseinstellung](../data-tools/media/hierarchical-update-setting.png "Einstellung hierarchische Aktualisierung")
+ ![Hierarchische Aktualisierung-Einstellung](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Erstellen Sie eine neue Beziehung zwischen Tabellen
  Um eine neue Beziehung zwischen zwei Tabellen zu erstellen, wählen Sie in der Dataset-Designer die Titelleiste jeder Tabelle, klicken Sie dann mit der rechten Maustaste und wählen Sie **Beziehung hinzufügen**.
 
- ![Hierarchische Aktualisierung, Relation-Menü "hinzufügen"](../data-tools/media/hierarchical-update-add-relation-menu.png "hierarchische Aktualisierung, Relation-Menü "hinzufügen"")
+ ![Hierarchische Aktualisierung, Relation-Menü "hinzufügen"](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Verstehen der foreign Key-Einschränkungen, updateweitergaben und löschungen
  Es ist wichtig zu verstehen, wie foreign Key-Einschränkungen und weitergabeverhalten in der Datenbank in den generierten Dataset-Code erstellt werden.

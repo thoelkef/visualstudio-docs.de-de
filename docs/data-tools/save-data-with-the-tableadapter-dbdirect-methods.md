@@ -1,5 +1,5 @@
 ---
-title: Speichern Sie Daten mit den TableAdapter-DBDirect-Methoden
+title: Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747546"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern Sie Daten mit den TableAdapter-DBDirect-Methoden
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausführen des SQL-Anweisungen direkt für eine Datenbank mithilfe eines TableAdapter DBDirect-Methoden. DBDirect-Methoden eines TableAdapters bieten ein gut Maß an Kontrolle über Ihre Datenbankupdates. Können Sie Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren ausführen, durch Aufrufen der einzelnen `Insert`, `Update`, und `Delete` Methoden von Ihrer Anwendung nach Bedarf (im Gegensatz zur überladenen `Update` Methode, die das UPDATE ausführt. INSERT- und DELETE-Anweisungen in einem Aufruf).
 
  Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
@@ -63,7 +64,7 @@ In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB un
 
 1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 

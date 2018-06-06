@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767620"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte
   Sie können eine projekterweiterung verwenden, zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt. Die Eigenschaft wird in der **Eigenschaften** Fenster beim Erstellen des Projekts ausgewählt ist, in **Projektmappen-Explorer**.  
   
  Die folgenden Schritte wird davon ausgegangen, dass Sie bereits eine projekterweiterung erstellt haben. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -37,12 +38,12 @@ ms.lasthandoff: 04/16/2018
 3.  In den Ereignishandler für das <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> Ereignis, fügen Sie eine Instanz dieser Eigenschaftenklasse der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> Auflistung von Parameters für die Ereignisargumente.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, wie zwei Eigenschaften für SharePoint-Projekte hinzufügen. Eine Eigenschaft weiterhin besteht, die Daten in der Projektdatei des Benutzers Option (die. csproj.user-Datei oder. vbproj.user-Datei). Die Eigenschaft speichert die Daten in der Projektdatei (CSPROJ oder VBPROJ-Datei).  
+ Im folgenden Codebeispiel wird veranschaulicht, wie zwei Eigenschaften für SharePoint-Projekte hinzufügen. Eine Eigenschaft weiterhin besteht, die Daten in der Projektdatei des Benutzers Option (die *. csproj.user* Datei oder *. vbproj.user* Datei). Die Eigenschaft weiterhin besteht, die Daten in der Projektdatei (*csproj* Datei oder *vbproj* Datei).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
   
-### <a name="understanding-the-code"></a>Grundlegendes zum Code  
+### <a name="understanding-the-code"></a>Grundlegendes zum code  
  Um sicherzustellen, dass die gleiche Instanz von der `CustomProjectProperties` Klasse wird jedes Mal verwendet die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> Ereignis tritt auf, die im Codebeispiel des Eigenschaften-Objekts, das die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft, der das Projekt das erste Mal dieses Ereignis tritt auf. Der Code ruft dieses Objekt ab, wenn dieses Ereignis erneut auftritt. Weitere Informationen zum Verwenden der <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft zuordnen von Daten mit Projekten finden Sie unter [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
  Beibehalten der Änderungen von Eigenschaftswerten, die **festgelegt** Accessoren für die Eigenschaften verwenden Sie die folgenden APIs:  
@@ -69,20 +70,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Kompilieren des Codes  
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Bereitstellen der Erweiterung  
  Zum Bereitstellen der Erweiterung erstellen Sie eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Projekten](../sharepoint/extending-sharepoint-projects.md)   
  [Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Vorgehensweise: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

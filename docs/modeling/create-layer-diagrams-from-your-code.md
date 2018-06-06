@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Diagrammen Abhängigkeit aus Ihrem code
+title: Erstellen von Abhängigkeitsdiagrammen aus dem Code
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a34d52bb4b9af535d1b11843967ac5b9619a153
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f3cf2bbb5903a3c2dda8c531f28e9aa81facad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749700"
 ---
-# <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Diagrammen Abhängigkeit aus Ihrem code
+# <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
 Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren, erstellen Sie eine *Abhängigkeit Diagramm* in Visual Studio. Um sicherzustellen, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können die Abhängigkeit Diagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-![Erstellen Sie ein Diagramm Abhängigkeit](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+![Erstellen Sie ein Diagramm zur Abhängigkeitseigenschaft](../modeling/media/layerdiagramvisualizecode.png)
 
 Eine Abhängigkeit Diagramm können Sie die Visual Studio-Projektmappenelemente in logische Gruppen an, die sog. organisieren *Ebenen*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch angeben, die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.
 

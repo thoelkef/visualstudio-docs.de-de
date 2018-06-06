@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764218"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bereitstellen einer Web-app oder .NET Core-app in einen lokalen Ordner mit dem Visual Studio Publish-tool
 
@@ -26,9 +27,9 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 installiert haben und die **.NET Framework** und die **.NET Core** Entwicklungsaufwand installiert.
+* Sie müssen Visual Studio 2017 installiert haben und die. **NET Desktopentwicklung** Arbeitslast und die. **NET Core** arbeitsauslastung.
 
-    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
@@ -40,7 +41,7 @@ Diese Schritte gelten für ASP.NET, ASP.NET Core .NET Core und Python-apps in Vi
 
     Visual Studio erstellt daraufhin das Projekt.
 
-## <a name="deploy-to-a-local-folder"></a>Bereitstellen Sie auf einem lokalen Ordner
+## <a name="deploy-to-a-local-folder"></a>Bereitstellen in einem lokalen Ordner
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
 

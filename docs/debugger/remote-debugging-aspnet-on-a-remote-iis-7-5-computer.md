@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: dddbe20c36aac6bc1c21cc2e29e59231c5b8feaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 759615311478f1b428edc2a800c61b9252a3a84a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746857"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remote-IIS-Computer
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -183,7 +184,7 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 
 ## <a name="BKMK_attach"></a> Anfügen an die ASP.NET-Anwendung vom Visual Studio-Computer aus
 
-1. Öffnen Sie auf dem Visual Studio-Computer die **MyASPApp** Lösung.
+1. Öffnen Sie auf dem Computer Visual Studio die Projektmappe, den Sie debuggen möchten (**MyASPApp** , wenn Sie die Schritte in diesem Artikel folgen).
 2. Klicken Sie in Visual Studio auf **Debuggen > an den Prozess anhängen** (Strg + Alt + P).
 
     > [!TIP]

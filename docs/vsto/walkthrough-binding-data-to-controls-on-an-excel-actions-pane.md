@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767909"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Exemplarische Vorgehensweise: Bindung von Daten an Steuerelemente in einem Excel-Aktionsbereich
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich
   In dieser exemplarischen Vorgehensweise veranschaulicht das Binden von Daten an Steuerelemente in einem Aktionsbereich in Microsoft Office Excel. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.  
   
-## <a name="creating-the-project"></a>Erstellen des Projekts  
+## <a name="create-the-project"></a>Erstellen eines Projekts  
  Zunächst müssen Sie ein Excel-Arbeitsmappenprojekt erstellen.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine Excel-Aktionsbereich**. Wählen Sie im Assistenten **erstellen Sie ein neues Dokument**. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine Excel-Aktionsbereich**. Wählen Sie im Assistenten **erstellen Sie ein neues Dokument**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekte in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **meine Excel-Aktionsbereich** Projekt **Projektmappen-Explorer**.  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>Hinzufügen einer neuen Datenquelle zum Projekt  
+## <a name="add-a-new-data-source-to-the-project"></a>Fügen Sie dem Projekt eine neue Datenquelle  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>Um dem Projekt eine neue Datenquelle hinzufügen  
+### <a name="to-add-a-new-data-source-to-the-project"></a>Um dem Projekt eine neue Datenquelle hinzufügen  
   
-1.  Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie in der Menüleiste **Ansicht**, **Weitere Fenster**und **Datenquellen**wählen.  
+1.  Wenn die **Datenquellen** Fenster nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste **Ansicht** > **Weitere Fenster**  >   **Datenquellen**.  
   
 2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  Fügt der Assistent die **Lieferanten** Tabelle und **Produkte** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
+## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
  Als Nächstes fügen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement und ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf das erste Arbeitsblatt.  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>So fügen Sie ein NamedRange-Steuerelement und ein ListObject-Steuerelement hinzu  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>So fügen Sie ein NamedRange-Steuerelement und ein ListObject-Steuerelement hinzu  
   
 1.  Überprüfen Sie, ob die **meine Excel Aktionen Pane.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  Wählen Sie nur für c#, **SuppliersBindingSource** auf der Komponentenleiste, und ändern Sie die **Modifizierer** Eigenschaft **intern** in der **Eigenschaften** Fenster.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Hinzufügen von Steuerelementen zum Aktionsbereich  
- Als Nächstes benötigen Sie ein Aktionsbereich-Steuerelement, das ein Kombinationsfeld enthält.  
+## <a name="add-controls-to-the-actions-pane"></a>Hinzufügen von Steuerelementen zum Aktionsbereich  
+ Als Nächstes benötigen Sie ein Aktionsbereich-Steuerelement, das ein Kombinationsfeld hat.  
   
-#### <a name="to-add-an-actions-pane-control"></a>So fügen Sie einem Aktionsbereich-Steuerelement hinzu  
+### <a name="to-add-an-actions-pane-control"></a>So fügen Sie einem Aktionsbereich-Steuerelement hinzu  
   
 1.  Wählen Sie die **meine Excel-Aktionsbereich** Projekt **Projektmappen-Explorer**.  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Aktionsbereich-Steuerelement**, nennen Sie sie **ActionsControl**, und klicken Sie auf **hinzufügen**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Hinzufügen von datengebundenen Windows Forms-Steuerelementen zu einem Aktionsbereich-Steuerelement  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Hinzufügen von datengebundenen Windows Forms-Steuerelementen zu einem Aktionsbereich-Steuerelement  
   
 1.  Aus der **Standardsteuerelementen** Registerkarten für die **Toolbox**, ziehen Sie ein <xref:System.Windows.Forms.ComboBox> Steuerelement, um den Aktionsbereich-Steuerelement.  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Ändern Sie die Größe des Benutzersteuerelements im Kombinationsfeld entsprechen.  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Das Steuerelement in einem Aktionsbereich an Daten gebunden  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Binden des Steuerelements in einem Aktionsbereich an Daten  
  In diesem Abschnitt legen Sie die Datenquelle der <xref:System.Windows.Forms.ComboBox> auf derselben Datenquelle wie die <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf das Arbeitsblatt.  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>Um die Datenbindungseigenschaften des Steuerelements festlegen  
+### <a name="to-set-data-binding-properties-of-the-control"></a>Um die Datenbindungseigenschaften des Steuerelements festlegen  
   
 1.  Mit der rechten Maustaste in den Aktionsbereich-Steuerelement, und klicken Sie dann auf **Code anzeigen**.  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>Anzeigen des Aktionsbereichs  
+## <a name="show-the-actions-pane"></a>Anzeigen des Aktionsbereichs  
  Der Aktionsbereich ist nicht sichtbar, bis Sie das Steuerelement zur Laufzeit hinzufügen.  
   
 #### <a name="to-show-the-actions-pane"></a>Um den Aktionsbereich anzuzeigen  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf ThisWorkbook.vb oder ThisWorkbook.cs, und klicken Sie dann auf **Code anzeigen**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste *ThisWorkbook.vb* oder *ThisWorkbook.cs*, und klicken Sie dann auf **Code anzeigen**.  
   
 2.  Erstellen Sie eine neue Instanz des Benutzersteuerelements in die `ThisWorkbook` Klasse.  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>Testen der Anwendung  
+## <a name="test-the-application"></a>Testen der Anwendung  
  Sie können jetzt testen, dass das Dokument, um sicherzustellen, dass der Aktionsbereich wird geöffnet, wenn das Dokument geöffnet wird und die Steuerelemente eine Master/Detail-Beziehung enthalten.  
   
-#### <a name="to-test-your-document"></a>So testen Sie das Dokument  
+### <a name="to-test-your-document"></a>So testen Sie das Dokument  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um das Projekt auszuführen.  
   
 2.  Vergewissern Sie sich, dass der Aktionsbereich sichtbar ist.  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Binden von Daten an Steuerelemente in Word. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
--   Beim Bereitstellen des Projekts. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Beim Bereitstellen des Projekts. Weitere Informationen finden Sie unter [bereitstellen eine Office-Projektmappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   

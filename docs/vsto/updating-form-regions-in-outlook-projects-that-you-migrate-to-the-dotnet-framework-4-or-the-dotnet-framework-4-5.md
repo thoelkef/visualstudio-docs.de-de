@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert | Microsoft Docs
+title: Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5195e9a268a38212f12d554eb5a86f4e923af421
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767974"
 ---
-# <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Formularbereichen in Outlook-Projekten, die zu .NET Framework 4 oder .NET Framework 4.5 migriert werden
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn das Zielframework eines Outlook VSTO-Add-In-Projekts mit einem Formularbereich in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie einige Änderungen am generierten Formularbereichscode und an Code vornehmen, durch den bestimmte Formularbereichsklassen zur Laufzeit instanziiert werden.  
   
-## <a name="updating-the-generated-form-region-code"></a>Aktualisieren des generierten Formularbereichscodes  
- Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie den generierten Formularbereichscode ändern. Die vorgenommenen Änderungen sind bei Formularbereichen, die Sie in Visual Studio entworfen haben, und Formularbereichen, die Sie aus Outlook importiert haben, unterschiedlich. Weitere Informationen zu den Unterschieden zwischen diesen Formularbereichstypen finden Sie unter [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
+## <a name="update-the-generated-form-region-code"></a>Aktualisieren des generierten formularbereichscodes  
+ Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie den generierten Formularbereichscode ändern. Die vorgenommenen Änderungen sind bei Formularbereichen, die Sie in Visual Studio entworfen haben, und Formularbereichen, die Sie aus Outlook importiert haben, unterschiedlich. Weitere Informationen zu den Unterschieden zwischen diesen Typen von Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
   
-#### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>So aktualisieren Sie den generierten Code für einen in Visual Studio entworfenen Formularbereich  
+### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>So aktualisieren Sie den generierten Code für einen in Visual Studio entworfenen Formularbereich  
   
 1.  Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.  
   
-2.  Ändern Sie die Deklaration der Formularbereichsklasse, sodass es abgeleitet <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> statt Microsoft.Office.Tools.Outlook.FormRegionControl.  
+2.  Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> statt von `Microsoft.Office.Tools.Outlook.FormRegionControl` abgeleitet wird.  
   
 3.  Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.  
   
-2.  Ändern Sie die Deklaration der Formularbereichsklasse, sodass es abgeleitet <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> statt Microsoft.Office.Tools.Outlook.ImportedFormRegion.  
+2.  Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> statt von `Microsoft.Office.Tools.Outlook.ImportedFormRegion` abgeleitet wird.  
   
 3.  Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Ändern Sie für jede Codezeile in der `InitializeControls` -Methode, die ein Steuerelement in der Formularbereichsklasse initialisiert, den Code wie unten dargestellt.  
   
-     Im folgenden Codebeispiel wird veranschaulicht, wie ein Steuerelement in einem Projekt initialisiert wird, das auf .NET Framework 3.5 ausgerichtet ist. In diesem Code verfügt die GetFormRegionControl-Methode einen Typparameter, der den Typ des Steuerelements angibt, der zurückgegeben wird.  
+     Im folgenden Codebeispiel wird veranschaulicht, wie ein Steuerelement in einem Projekt initialisiert wird, das auf .NET Framework 3.5 ausgerichtet ist. In diesem Code verfügt die `GetFormRegionControl`-Methode über einen Typparameter, der den Typ des Steuerelements angibt, das zurückgegeben wird.  
   
     ```vb  
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")  
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/16/2018
     this.olkTextBox1 = this.GetFormRegionControl<Microsoft.Office.Interop.Outlook.OlkTextBox>("OlkTextBox1");  
     ```  
   
-     Im folgenden Codebeispiel wird veranschaulicht, wie ein Steuerelement in einem Projekt initialisiert wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]ausgerichtet ist. In diesem Code weist die <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> -Methode keinen Typparameter auf. Sie müssen den Rückgabewert in den Typ des Steuerelements umwandeln, das Sie initialisieren.  
+     Im folgenden Codebeispiel wird veranschaulicht, wie ein Steuerelement in einem Projekt initialisiert wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ausgerichtet ist. In diesem Code weist die <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> -Methode keinen Typparameter auf. Sie müssen den Rückgabewert in den Typ des Steuerelements umwandeln, das Sie initialisieren.  
   
     ```vb  
     Me.olkTextBox1 = CType(GetFormRegionControl("OlkTextBox1"), Microsoft.Office.Interop.Outlook.OlkTextBox)  
@@ -185,10 +186,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Suchen Sie in den *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen alle Verweise auf die *YourNewFormRegion* -Klasse, und ändern Sie jeden Verweis stattdessen in die *YourOriginalFormRegion* -Kasse. Wenn der aktualisierte Formularbereich z. B. `SalesDataFormRegion` und der neue in Schritt 5 erstellte Formularbereich `FormRegion1`heißt, ändern Sie alle Verweise von `FormRegion1` in `SalesDataFormRegion`.  
   
-## <a name="instantiating-form-region-classes"></a>Instanziieren von Formularbereichklassen  
- Sie müssen jeden Code ändern, durch den bestimmte Formularbereichsklassen dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 abzielen, können Sie Formularbereichklassen wie z. B. Microsoft.Office.Tools.Outlook.FormRegionManifest nicht direkt instanziieren. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind diese Klassen Schnittstellen, die Sie nicht direkt instanziieren können.  
+## <a name="instantiate-form-region-classes"></a>Instanziieren von Formularbereichklassen  
+ Sie müssen jeden Code ändern, durch den bestimmte Formularbereichsklassen dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 ausgerichtet sind, können Sie Formularbereichklassen wie `Microsoft.Office.Tools.Outlook.FormRegionManifest` direkt instanziieren. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind diese Klassen Schnittstellen, die Sie nicht direkt instanziieren können.  
   
- Wenn das Zielframework des Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher müssen Sie die Schnittstellen instanziieren, mithilfe der Methoden, die von der Eigenschaft Globals.Factory bereitgestellt werden. Weitere Informationen zur Eigenschaft Globals.Factory finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+ Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie die Schnittstellen mithilfe von Methoden instanziieren, die von der `Globals.Factory`-Eigenschaft bereitgestellt werden. Weitere Informationen zu den `Globals.Factory` Eigenschaft finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
  In der folgenden Tabelle sind die Formularbereichstypen und die Methode aufgeführt, die zum Instanziieren der Typen in Projekten verwendet wird, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind.  
   

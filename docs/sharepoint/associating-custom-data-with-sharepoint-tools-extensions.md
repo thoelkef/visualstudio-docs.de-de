@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691369"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764874"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Verknüpfen Sie benutzerdefinierte Daten zu SharePoint-Tools-Erweiterungen
   Sie können benutzerdefinierte Daten an bestimmte Objekte in der SharePoint-Tools-Erweiterungen hinzufügen. Dies ist hilfreich, wenn Daten in einem Teil der Erweiterung, die Sie später aus anderem Code in der Erweiterung zugreifen möchten. Anstatt zu implementieren eine benutzerdefinierte Methode zum Speichern und den Zugriff auf Daten, können die Daten mit einem Objekt in der Erweiterung zuordnen und klicken Sie dann die Daten aus dem gleichen Objekt später abrufen.  
   
  Hinzufügen von benutzerdefinierten Daten zu Objekten ist auch nützlich, wenn die Daten, die für ein bestimmtes Element in Visual Studio relevant ist, erhalten bleiben sollen. SharePoint-Tools-Erweiterungen werden geladen, nur einmal in Visual Studio, also die Erweiterung mit mehreren anderen Elementen funktionieren (z. B. Projekte, Projektelemente oder **Server-Explorer** Knoten) zu einem beliebigen Zeitpunkt. Wenn Sie benutzerdefinierte Daten, die nur für ein bestimmtes Element relevant ist verfügen, können Sie auf das Objekt, die dieses Element darstellt, die die Daten hinzufügen.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691369"
  [Exemplarische Vorgehensweise: Erstellen eines Projektelements für die benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projektelementtyp] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-Type.MD   
+ [Vorgehensweise: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

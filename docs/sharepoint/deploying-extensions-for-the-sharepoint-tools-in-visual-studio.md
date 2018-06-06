@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767259"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
-  Erstellen Sie zum Bereitstellen einer SharePoint-Tools-Erweiterungs ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX), die enthält die Erweiterungsassembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Ein VSIX-Paket ist eine komprimierte Datei, die den Standard (Open Packaging Conventions, OPC) folgt. VSIX-Pakete haben die VSIX-Erweiterung.  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio
+  Erstellen Sie zum Bereitstellen einer SharePoint-Tools-Erweiterungs ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX), die enthält die Erweiterungsassembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Ein VSIX-Paket ist eine komprimierte Datei, die den Standard (Open Packaging Conventions, OPC) folgt. VSIX-Pakete haben die *VSIX* Erweiterung.  
   
  Nachdem Sie ein VSIX-Paket erstellt haben, können andere Benutzer die VSIX-Datei, um die Erweiterung installieren ausführen. Wenn ein Benutzer die Erweiterung installiert, werden alle Dateien in den Ordner %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions installiert. Zum Bereitstellen der Erweiterung können Sie das VSIX-Paket zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website, oder Sie können verteilen Sie das Paket an Ihre Kunden durch andere Weise, wie z. B. das Paket auf einer Netzwerkfreigabe oder eine andere Website hostet.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  Sie können ein VSIX-Paket erstellen, mit der **VSIX-Projekt** Vorlage in Visual Studio, oder Sie können ein VSIX-Paket manuell erstellen.  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>VSIX-Pakete erstellen mithilfe von VSIX-Projekte  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>Verwenden Sie die VSIX-Projekte VSIX-Pakete erstellen
  Sie können die **VSIX-Projekt** Vorlage, die von der Visual Studio-SDK zum Erstellen von VSIX-Pakete, für die SharePoint-tools-Erweiterungen bereitgestellt. Mithilfe eines VSIX-Projekts bietet mehrere Vorteile, über das manuelle Erstellen eines VSIX-Pakets:  
   
 -   Wenn Sie das Projekt erstellen, generiert Visual Studio automatisch das VSIX-Paket. Aufgaben wie das Hinzufügen der Bereitstellungsdateien zum Paket und die [Content_Types] .xml-Datei für das Paket erstellen, sind für Sie erledigt.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  Weitere Informationen zur Verwendung eines VSIX-Projekts finden Sie unter [VSIX-Projektvorlage](/visualstudio/extensibility/vsix-project-template).  
   
-### <a name="organizing-your-projects"></a>Organisieren von Projekten  
+### <a name="organize-your-projects"></a>Organisieren von Projekten
  VSIX-Projekten generiert standardmäßig nur VSIX-Pakete, nicht-Assemblys. Aus diesem Grund Sie in der Regel keine SharePoint-Tools-Erweiterung in ein VSIX-Projekt implementieren. Im Allgemeinen arbeiten Sie mit mindestens zwei Projekte:  
   
 -   Ein VSIX-Projekt.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  Wenn Sie alle Projekte in der gleichen Visual Studio-Projektmappe einschließen, können Sie die Datei "Source.Extension.vsixmanifest" im VSIX-Projekt, um die Buildausgabe der Klassenbibliotheksprojekte einzuschließen ändern.  
   
-### <a name="editing-the-vsix-manifest"></a>Das VSIX-Manifest bearbeiten  
+### <a name="edit-the-vsix-manifest"></a>Das VSIX-Manifest bearbeiten
  Bearbeiten Sie die Datei "Source.Extension.vsixmanifest" im VSIX-Projekt, um die Einträge für alle Elemente einzuschließen, die in der Erweiterung enthalten sein sollen. Wenn Sie die Datei "Source.Extension.vsixmanifest" aus dem Kontextmenü öffnen, wird die Datei in einem Designer, der eine Benutzeroberfläche zum Bearbeiten der XML-Codes in der Datei enthält. Weitere Informationen finden Sie unter [VSIX-Manifest-Designer](/visualstudio/extensibility/vsix-manifest-designer).  
   
  Sie müssen die Einträge in die Datei "Source.Extension.vsixmanifest" für die folgenden Elemente hinzufügen:  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*ZIP  
   
-     Angenommen, Sie haben eine Elementvorlage, die mit dem Namen ContosoCustomAction.zip, die das Gebietsschema Englisch (Vereinigte Staaten) unterstützt, möglicherweise der vollständige Pfad ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip sein.  
+     Z. B. Wenn Sie eine Elementvorlage, die mit dem Namen ContosoCustomAction.zip, die das Gebietsschema Englisch (Vereinigte Staaten) unterstützt, der vollständige Pfad möglicherweise *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.  
   
 3.  In **Projektmappen-Explorer**, wählen Sie die Vorlagendatei (*YourTemplateName*.zip).  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  In der **Quelle** wählen **Datei im Dateisystem**.  
   
-9. In der **Pfad** Feld, geben Sie den vollständigen Pfad zu der Assembly (z. B. **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**, oder verwenden Sie die **Durchsuchen**Schaltfläche Suchen, und wählen die Assembly, und wählen Sie dann die **OK** Schaltfläche.  
+9. In der **Pfad** Feld, geben Sie den vollständigen Pfad zu der Assembly (z. B. *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, oder verwenden Sie die **Durchsuchen**Schaltfläche Suchen, und wählen die Assembly, und wählen Sie dann die **OK** Schaltfläche.  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Um einen Assistenten für eine Projektvorlage oder Elementvorlage einzuschließen.  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  Klicken Sie auf die Schaltfläche **OK** .  
   
-### <a name="related-walkthroughs"></a>Verwandte Exemplarische Vorgehensweisen  
+### <a name="related-walkthroughs"></a>Verwandte Exemplarische Vorgehensweisen
  Die folgende Tabelle enthält die exemplarischen Vorgehensweisen, die veranschaulichen, wie ein VSIX-Projekt zu verwenden, um verschiedene Typen von SharePoint-Tools-Erweiterungen bereitzustellen.  
   
 |Erweiterungstyp|Verwandte Exemplarische Vorgehensweisen|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |Eine Erweiterung, die Visual Studio-Vorlage enthält.|[Exemplarische Vorgehensweise: Erstellen eines Projektelements „Benutzerdefinierte Aktion“ mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Exemplarische Vorgehensweise: Erstellen eines Projektelements „Websitespalte“ mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |Eine Erweiterung, die Vorlagen-Assistenten enthält|[Exemplarische Vorgehensweise: Erstellen eines Projektelements „Benutzerdefinierte Aktion“ mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Exemplarische Vorgehensweise: Erstellen eines Projektelements „Websitespalte“ mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>Manuelles Erstellen von VSIX-Pakete  
+## <a name="create-vsix-packages-manually"></a>Erstellen Sie manuell die VSIX-Pakete
  Wenn Sie das VSIX-Paket für die SharePoint-Tools-Erweiterung manuell erstellen möchten, führen Sie die folgenden Schritte aus:  
   
 1.  Erstellen Sie die Datei "Extension.vsixmanifest" und der [Content_Types] .xml-Datei in einen neuen Ordner ein. Weitere Informationen finden Sie unter [Aufbau eines VSIX-Pakets](/visualstudio/extensibility/anatomy-of-a-vsix-package).  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Aufrufe in die SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   
