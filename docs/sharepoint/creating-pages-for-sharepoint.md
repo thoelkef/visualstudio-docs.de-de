@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694045"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765527"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
+# <a name="create-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
   Sie können die Anwendungsseiten, Websiteseiten, Gestaltungsvorlagen und Seitenlayouts für eine SharePoint-Website erstellen.  
   
  Sie können Anwendungsseiten mithilfe einer Vorlage in Visual Studio erstellen. Erstellen Sie mithilfe von SharePoint Designer Websiteseiten, Gestaltungsvorlagen und Seitenlayouts. Anschließend können Sie diese Seiten in Visual Studio Ihre Verwendung in einem SharePoint-Projekt importieren.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694045"
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt, wie Anwendungsseiten hinzufügen: aspx-Inhalt, der mit einer SharePoint-Masterseite zusammengeführt wird.|  
+|[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt, wie Anwendungsseiten hinzufügen: *aspx* Inhalte, die mit einer SharePoint-Masterseite zusammengeführt wird.|  
 |[Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Zeigt, wie ASP.NET-Seiten erstellen, die auf einer SharePoint-Website ausgeführt.|  
 |[Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Zeigt, wie das Entwerfen und Debuggen einer ASP.NET-Webseite für eine SharePoint-Website.|  
   

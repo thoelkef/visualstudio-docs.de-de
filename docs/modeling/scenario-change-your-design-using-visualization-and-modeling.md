@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750167"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 
@@ -150,13 +151,13 @@ Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. 
 
  Beispiel: Die Entwicklerin erstellt eine Code Map. Sie passt den Umfang an, um sich auf die Bereiche zu konzentrieren, die von dem neuen Szenario betroffen sind. Diese Bereiche werden ausgewählt und auf der Code Map hervorgehoben:
 
- ![Namespace-Abhängigkeitsdiagramm](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Abhängigkeitsdiagramm für Namespaces](../modeling/media/namespace_reviewsystem.png)
 
  **Namespace-Code Map**
 
  Die Entwicklerin erweitert die ausgewählten Namespaces, um die zugehörigen Klassen, Methoden und Beziehungen anzuzeigen:
 
- ![Abhängigkeitsdiagramm für Namespaces erweiterten](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Erweitertes Abhängigkeitsdiagramm für Namespaces](../modeling/media/dep_reviewsystem.png)
 
  **Erweiterte Code Map für Namespaces mit sichtbaren gruppenübergreifenden Links**
 
@@ -177,7 +178,7 @@ Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. 
 
  Das folgende Diagramm für die Abhängigkeitseigenschaft beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Artefakte, die jeder Ebene zugeordnet sind:
 
- ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramm zur Abhängigkeitseigenschaft**
 
@@ -277,19 +278,19 @@ Dinner Now muss z. B. die Kosten für die Aktualisierung der PaymentProcessing-K
 
 Die folgende Code Map zeigt die Abhängigkeiten zwischen der PaymentProcessing-Klasse und anderen Teilen des Dinner Now-Systems, die markiert dargestellt werden:
 
-![Abhängigkeitsdiagramm für das Zahlungssystem von Dinner Now](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Abhängigkeitsdiagramm für das Zahlungssystem von Dinner Now](../modeling/media/dep_dnpayment.png)
 
 **Code Map für das Zahlungssystem von Dinner Now**
 
 Der Entwickler untersucht die Code Map, indem er die PaymentProcessing-Klasse erweitert und die zugehörigen Member auswählt, um die potenziell betroffenen Bereiche anzuzeigen:
 
-![Methoden in "PaymentProcessing" und Abhängigkeiten](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Methoden in der PaymentProcessing-Klasse und ihre Abhängigkeiten](../modeling/media/depgraph_expandeddn.png)
 
 **Methoden in der PaymentProcessing-Klasse und ihre Abhängigkeiten**
 
 Für das Zahlungssystem von Lucerne wird die folgende Code Map generiert, um die zugehörigen Klassen, Methoden und Abhängigkeiten zu untersuchen. Das Team erkennt, dass das Lucerne-System auch Arbeit erfordern könnte, damit es mit anderen Teilen von Dinner Now interagieren kann:
 
-![Abhängigkeitsdiagramm für das Zahlungssystem von Lucerne](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Abhängigkeitsdiagramm für das Zahlungssystem von Lucerne](../modeling/media/depgraph_lucernepay.png)
 
 **Code Map für das Zahlungssystem von Lucerne**
 
@@ -297,7 +298,7 @@ Beide Teams arbeiten zusammen, um die Änderungen zu ermitteln, die zum Integrie
 
 Nach der Neuorganisation des Codes generieren die Teams eine neue Code Map, um die aktualisierte Struktur und die Beziehungen anzuzeigen:
 
-![Abhängigkeitsdiagramm mit neu organisiertem Code](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Abhängigkeitsdiagramm mit neu organisiertem Code](../modeling/media/depgraph_integrated.png)
 
 **Code Map mit neu organisiertem Code**
 
@@ -338,7 +339,7 @@ Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Bu
 
  Um die am Anwendungsfall "Process Payment" (Zahlung verarbeiten) beteiligten Entitäten zu erläutern und zu besprechen, zeichnet Lucerne das folgende Klassendiagramm:
 
- ![Process Payment-Entitäten im Klassendiagramm](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Process Payment-Entitäten in einem Klassendiagramm](../modeling/media/uml_payentities.png)
 
  **Process Payment-Entitäten in einem Klassendiagramm**
 
@@ -346,7 +347,7 @@ Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Bu
 
  Während der Entwicklung verwendet Lucerne das folgende Klassendiagramm, um die Details der einzelnen Klassen zu beschreiben und zu besprechen:
 
- ![Verarbeiten der Payment-Entitätsdetails in einem Klassendiagramm](../modeling/media/uml_payment.png "UML_Payment")
+ ![Process Payment-Entitätsdetails in einem Klassendiagramm](../modeling/media/uml_payment.png)
 
  **Process Payment-Details im Klassendiagramm**
 
@@ -407,7 +408,7 @@ Als Ausgangspunkt für die Untersuchung und Besprechung bestehender Klassen kön
 
  Dinner Now und Lucerne verwenden die folgende Abhängigkeit Diagramm um den Code mit dem Entwurf konsistent zu halten, um ihren Code zu überprüfen, während der Entwicklung:
 
- ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Abhängigkeit-Diagramm für Dinner Now nach der Integration mit Lucerne**
 
@@ -417,13 +418,13 @@ Als Ausgangspunkt für die Untersuchung und Besprechung bestehender Klassen kön
 
  Die folgende Code Map zeigt die neuen Aufrufe zwischen Dinner Now und "PaymentApprover":
 
- ![Aktualisiertes Abhängigkeitsdiagramm mit integriertem System](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Aktualisiertes Abhängigkeitsdiagramm mit integriertem System](../modeling/media/depgraph_intsystem.png)
 
  **Code Map mit aktualisierten Methodenaufrufen**
 
  Nachdem bestätigt wurde, dass das System wie erwartet funktioniert, wird der PaymentProcessing-Code von Dinner Now auskommentiert. Die Ebenenvalidierungsberichte sind einwandfrei, und die resultierende Code Map zeigt, dass keine PaymentProcessing-Abhängigkeiten mehr vorhanden sind:
 
- ![Abhängigkeitsdiagramm ohne PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Abhängigkeitsdiagramm ohne PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Code Map ohne "PaymentProcessing"**
 
