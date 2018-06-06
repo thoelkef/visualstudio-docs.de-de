@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746714"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
@@ -29,7 +30,7 @@ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwende
 
      Diese Abbildung zeigt das Fenster **Definition einsehen** für eine Methode mit dem Namen `Print()`:
 
-     ![Peek-Fenster](../ide/media/peekwindow.png "PeekWindow")
+     ![Peek-Fenster](../ide/media/peekwindow.png)
 
      Das Definitionsfenster wird unter der `printer.Print("Hello World!")`-Zeile in der ursprünglichen Datei angezeigt. Das Fenster blendet keinen Code in der ursprünglichen Datei aus. Die Zeilen, die auf den Aufruf `printer.Print("Hello World!")` folgen, werden unter dem Definitionsfenster angezeigt.
 
@@ -43,19 +44,19 @@ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwende
 
 Wenn bereits ein Fenster **Definition einsehen** geöffnet ist, können Sie **Definition ansehen** für den Code in diesem Fenster erneut aufrufen. Ein weiteres Definitionsfenster wird geöffnet. Ein Satz von Breadcrumbpunkten wird neben der Definitionsfensterregisterkarte, die Sie zum Navigieren zwischen Definitionsfenstern verwenden können, angezeigt. Die QuickInfo für die einzelnen Punkte zeigt jeweils den Namen und den Pfad der von den Punkten dargestellten Definitionsdatei an.
 
-   ![Peek-Fenster innerhalb eines Peek-Fensters](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Peek-Fenster innerhalb eines Peek-Fensters](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>„Definition einsehen“ mit mehreren Ergebnissen
 
 Wenn Sie **Definition einsehen** für Code verwenden, für den mehrere Definitionen vorliegen, (z.B. bei einer partiellen Klasse), wird rechts neben der Codedefinitionsansicht eine Ergebnisliste angezeigt. Sie können jedes Ergebnis in der Liste auswählen, um dessen Definition anzuzeigen.
 
-   ![Peek-Fenster aus verschiedenen Ergebnissen](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Peek-Fenster aus verschiedenen Ergebnissen](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Bearbeitung im Fenster „Definition einsehen“
 
 Wenn Sie die Bearbeitung innerhalb eines **Definition einsehen**-Fensters beginnen, wird die Datei, die Sie ändern, automatisch als separate Registerkarte im Code-Editor geöffnet. Die Datei spiegelt dann die von Ihnen vorgenommenen Änderungen wider. Sie können weiterhin Änderungen im **Definition einsehen**-Fenster vornehmen, rückgängig machen und speichern, und die Registerkarte spiegelt weiterhin diese Änderungen wider. Auch wenn Sie das Fenster **Definition einsehen** schließen, ohne die Änderungen zu speichern, können Sie weitere Änderungen auf der Registerkarte vornehmen, rückgängig machen und speichern, indem Sie genau da weitermachen, wo Sie im Fenster **Definition einsehen** aufgehört hatten.
 
-   ![Bearbeiten innerhalb eines Peek-Fensters](../ide/media/peekedit.png "PeekEdit")
+   ![Bearbeiten innerhalb eines Peek-Fensters](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>So ändern Sie die Optionen für „Definition einsehen“
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268151"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690899"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.  
@@ -26,7 +26,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicher
 |----------|---------------------|  
 |**Anfügen des Profilers an einen .NET-Dienst**|-   [Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentieren eines .NET-Diensts und Erfassen von .NET-Arbeitsspeicherdaten**|-   [Vorgehensweise: Instrumentieren eines .NET Framework-Diensts und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben
   

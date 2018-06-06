@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750934"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zum Angeben, welche Webleistungstests, Komponententests und Tests der programmierten UI in ein Auslastungstestszenario einbezogen werden sollen
 
@@ -36,7 +37,7 @@ Sie können beim Erstellen eines neuen Szenarios mithilfe des Assistenten für n
 
 Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors weitere Webleistungs- und Komponententests hinzufügen.
 
-![Hinzufügen eines Tests zu einem bestehenden Auslastungstest](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Hinzufügen eines Tests zu einem bestehenden Auslastungstest](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>So fügen Sie einem vorhandenen Szenario weitere Tests hinzu
 
@@ -55,7 +56,7 @@ Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors 
 5.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Entfernen von Tests aus einem Szenario
- ![Entfernen eines Tests aus einem bestehenden Auslastungstest](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Entfernen eines Tests aus einem bestehenden Auslastungstest](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>So entfernen Sie Tests aus einem Szenario
 

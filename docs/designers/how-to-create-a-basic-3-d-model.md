@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceeb6bdd5acb878ceb2f3cd6e6e38dada607e1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745684"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Vorgehensweise: Erstellen eines einfachen 3D-Modells
 
@@ -35,7 +36,7 @@ In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfac
 
  Das Modell sollte dann etwa so aussehen:
 
- ![Das fertige Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png)
 
  Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
@@ -49,27 +50,27 @@ In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfac
 
 4.  Unterteilen Sie die Oberseite des Würfels. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn auswählen zu können. Klicken Sie anschließend auf die Oberfläche des Würfels, um die Anfangsfläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche des Würfels hinzugefügt, die ihn in vier gleichgroße Teile aufteilen.
 
-     ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")
+     ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx_model_demo_house_subdiv.png)
 
 5.  Extrudieren Sie zwei angrenzende Seiten des Würfels, z.B. die Vorderseite und die rechte Seite. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn zu aktivieren, und klicken Sie anschließend auf eine Seite des Würfels. Drücken und halten Sie die STRG-Taste gedrückt, klicken Sie auf eine andere Seite des Würfels, die an der zuerst ausgewählten Seite angrenzt, und klicken anschließend auf der Symbolleiste des Editors auf **Fläche extrudieren**.
 
-     ![Die Würfelseiten wurden extrudiert ](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")
+     ![Die Seiten des Würfels wurden extrudiert](../designers/media/gfx_model_demo_house_extrude.png)
 
 6.  Erweitern Sie eine der Extrusionen. Wählen Sie eine der Flächen aus, die sie gerade extrudiert haben, und klicken in der Symbolleiste des Modell-Editors anschließend auf das Tool **Verschieben**. Bewegen Sie den Verschiebungsmanipulator in die gleiche Richtung wie die Extrusion.
 
-     ![Eine Würfelseite wurde noch weiter extrudiert](../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")
+     ![Eine Seite des Würfels wurde noch weiter extrudiert.](../designers/media/gfx_model_demo_house_extend.png)
 
 7.  Triangulieren Sie das Modell. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Erweitert** > **Tools** > **Triangulieren**.
 
 8.  Erstellen Sie das Dach des Hauses. Wechseln Sie zum Kantenauswahlmodus, indem Sie auf der Symbolleiste des Modell-Editors auf **Kante auswählen** klicken. Klicken Sie anschließend auf den Würfel, um ihn zu aktivieren. Halten Sie die STRG-Taste gedrückt, während Sie die Kanten auswählen, die hier gezeigt werden:
 
-     ![Die Kanten, die die Dachspitze bilden werden](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")
+     ![Die Kanten, die die Spitze des Dachs bilden sollen](../designers/media/gfx_model_demo_house_edges.png)
 
      Nachdem die Kanten ausgewählt sind klicken sie auf der Symbolleiste des Modell-Editors auf **Verschieben** und bewegen Sie den Verschiebungsmanipulator nach oben, um das Dach des Hauses zu erstellen.
 
  Das Modell des vereinfachten Hauses ist abgeschlossen. Hier ist noch einmal das fertige Modell, bei dem eine flache Schattierung angewandt wurde.
 
- ![Das fertige Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png)
 
  Im nächsten Schritt können Sie einen Shader auf dieses 3D-Modell anwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

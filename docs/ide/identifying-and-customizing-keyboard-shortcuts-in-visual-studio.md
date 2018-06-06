@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747228"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 
@@ -48,7 +49,7 @@ Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem and
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
-   ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Tastenkombinationen im Dialogfeld "Optionen" anzeigen](../ide/media/optionskeyboard.png)
 
 3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
@@ -60,7 +61,7 @@ Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem and
 
 5. Wenn dem Befehl eine Tastenkombination zugeordnet ist, wird sie in der Liste **Shortcut(s) for selected command** (Tastenkombination für ausgewählten Befehl) aufgeführt.
 
-   ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "TastenkombinationAnzeigen")
+   ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Anpassen einer Tastenkombination
 
@@ -86,7 +87,7 @@ Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem and
 
      Wenn eine Tastenkombination bereits einem anderen Befehl zugeordnet ist, wird sie im Feld **Tastenkombination wird momentan verwendet von** angezeigt. Löschen Sie in diesem Fall die Tastenkombination mit der **RÜCKTASTE**, und versuchen Sie es mit einer anderen Tastenkombination.
 
-    ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "TastenkombinationNeuZuweisen")
+    ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png)
 
 7. Klicken Sie auf **Zuweisen**.
 
@@ -107,7 +108,7 @@ Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie 
 
 4. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
 
-    ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "TastenkombinationenExportieren")
+    ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png)
 
 5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
 
@@ -129,7 +130,7 @@ Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie 
 
 7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
 
-    ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "TastenkombinationenImportieren")
+    ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Siehe auch
 

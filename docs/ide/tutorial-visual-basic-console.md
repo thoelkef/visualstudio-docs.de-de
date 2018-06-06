@@ -13,17 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764932"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Erste Schritte mit Visual Basic in Visual Studio
 
 In diesem Tutorial für Visual Basic (VB) lernen Sie die Entwicklung mit Visual Studio kennen und erstellen und führen verschiedene Konsolen-Apps aus. Außerdem machen Sie sich währenddessen mit einigen Features der [integrierten Entwicklungsumgebung (Integrated Development Environment, IDE)](visual-studio-ide.md) von Visual Studio vertraut.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -62,9 +63,11 @@ Erstellen wir zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 #### <a name="add-a-workgroup-optional"></a>Hinzufügen einer Workgroup (optional)
+
 Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Sie haben folgende Möglichkeiten für das Hinzufügen der Workload, je nachdem, welche Visual Studio 2017-Updates auf dem Computer installiert sind.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Über das Dialogfeld „Neues Projekt“
+
 1. Klicken Sie im Dialogfeld **Neues Projekt** im linken Bereich auf den Link **Visual Studio-Installer öffnen**.
 
   ![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/vs-open-visual-studio-installer-generic.png)
@@ -74,9 +77,10 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Über die Menüleiste „Extras“
+
 1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
 
-2. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.   
+2. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
 ## <a name="create-a-what-is-your-name-application"></a>Erstellen einer „What is your name“-Anwendung
 
@@ -106,6 +110,7 @@ Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zus
 5. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen.
 
 ## <a name="create-a-calculate-this-application"></a>Erstellen einer Rechenanwendung
+
 1. Öffnen Sie Visual Studio 2017, und klicken Sie in der Menüleiste oben auf **Datei** > **Neu** > **Projekt**.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *CalculateThis*.  

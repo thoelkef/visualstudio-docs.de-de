@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446997"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747494"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Gewusst wie: Anzeigen von Zeilennummern im Editor
 Sie können die Zeilennummerierung im Code ein- oder ausblenden.
@@ -38,7 +38,7 @@ Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 
 2.  Aktivieren Sie das Kontrollkästchen **Zeilennummer**.
 
-    ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")
+    ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs_displaylinenumbers.png)
 
 > [!NOTE]
 > Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.

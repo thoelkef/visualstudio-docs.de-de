@@ -1,8 +1,9 @@
 ---
-title: Optionen, Text-Editor, Allgemein | Microsoft-Dokumentation
+title: Optionen, Text-Editor, Allgemein
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -48,11 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d215503d182078196337e6ad1110e41b0e888865
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747814"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 
@@ -87,7 +89,7 @@ Wenn diese Option aktiviert ist, wird ein vertikaler Rand am linken Rand des Tex
 
 |Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|
 |-------------------------|--------------------------|
-|![HTMLpageSelectionMarginOn-Bildschirmabbildung](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff-Bildschirmabbildung](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
+|![HTMLpageSelectionMarginOn-Bildschirmabbildung](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff-Bildschirmabbildung](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Indikatorrand
 

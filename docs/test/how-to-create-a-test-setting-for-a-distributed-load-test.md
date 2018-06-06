@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751818"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>How to: Create a Test Setting for a Distributed Load Test
 
@@ -74,7 +75,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die Seite **Rollen** wird angezeigt.
 
-     ![Testeinstellungsrolle](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Testeinstellungsrolle](../test/media/load_testtestrole.png)
 
 10. Um die Tests remote auszuführen oder um die Tests remote auszuführen und Daten remote zu sammeln, wählen Sie im Dropdownelement **Testausführungsmethode** die Option **Remoteausführung** aus.
 
@@ -108,7 +109,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die Seite **Daten und Diagnose** wird angezeigt.
 
-     ![Testeinstellungsdaten und -diagnose](../test/media/load_testtest.png "Load_TestTest")
+     ![Testeinstellungsdaten und -diagnose](../test/media/load_testtest.png)
 
 18. Auf der Seite **Daten und Diagnosen** definieren Sie, was die Rolle bewirkt, indem Sie die von der Rolle für die Datensammlung verwendeten *Adapter für diagnostische Daten* auswählen. Wenn mindestens ein Adapter für diagnostische Daten oder Datenadapter für die Rolle aktiviert ist, wird vom Testcontroller daher ein verfügbarer Test-Agent-Computer zur Datenerfassung für die angegebenen Datenadapter und Adapter für diagnostische Daten basierend auf den für die Rolle festgelegten Attributen ausgewählt. Zur Auswahl der Datenadapter und Adapter für diagnostische Daten, die Sie für jede Rolle sammeln möchten, wählen Sie die Rolle aus. Wählen Sie für jede Rolle die Adapter für diagnostische Daten gemäß den Anforderungen der Tests aus. Klicken Sie Konfiguration der einzelnen Diagnosedatenadapter, die Sie für jede Rolle ausgewählt haben, auf **Konfigurieren**.
 

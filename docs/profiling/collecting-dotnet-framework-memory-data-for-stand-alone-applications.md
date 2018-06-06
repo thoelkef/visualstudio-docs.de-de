@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab274f76463c8a58203c9e004a3727b7ed2ed59e
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335904"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549063"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Sammeln von .NET Framework-Arbeitsspeicherdaten über die Profilerbefehlszeile
 
@@ -46,7 +46,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
 |**Profilerstellung für ASP.NET-Anwendungen**|-   [Sammeln von Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profilerstellung von Diensten**|-   [Sammeln von .NET-Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+|**Profilerstellung für Dienste**|-   [Sammeln von .NET-Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für .NET-Arbeitsspeicherdaten  
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  

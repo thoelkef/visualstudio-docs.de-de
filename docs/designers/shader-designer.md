@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746779"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -66,7 +67,7 @@ Befehle, die den Zustand des Shader-Designers beeinflussen, finden Sie auf der *
 
 So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
-![Die Shader-Designer-Modus-Symbolleiste](../designers/media/digit-dsd-modal-toolbar.png "Ziffer-DSD-Modale-Symbolleiste")
+![Modale Shader-Designer-Symbolleiste](../designers/media/digit-dsd-modal-toolbar.png)
 
 In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
@@ -85,7 +86,8 @@ In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste
 |**Vorschau mit Ebene**|Wenn diese aktiviert ist, wird ein Modell einer Ebene für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafikmodule**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> 
+  **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
 
 > [!TIP]
 > Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.

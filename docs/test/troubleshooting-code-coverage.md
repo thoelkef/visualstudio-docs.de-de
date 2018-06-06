@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751565"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -23,7 +24,7 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
 
 Wenn Sie Im Menü „Test“ den Befehl **Code Coverage analysieren** auswählen und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster „Code Coverage“ eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
 
-![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png "CodeCoverage1")
+![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png)
 
 Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -58,7 +59,7 @@ Die PDB-Datei und die DLL- oder EXE-Datei müssen im selben Buildvorgang generie
 
 Lösung&mdash;Stellen Sie sicher, dass die Buildeinstellungen so konfiguriert sind, dass die PDB-Datei generiert wird. Wenn die PDB-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie die **Debuginformationen**.
 
-Wenn sich die PDB-Datei und die DLL- oder EXE-Datei an verschiedenen Speicherorten befinden, kopieren Sie die PDB-Datei in dasselbe Verzeichnis. Es ist auch möglich, das Code Coverage-Modul so zu konfigurieren, dass an anderen Speicherorten nach PDB-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Wenn sich die PDB-Datei und die DLL- oder EXE-Datei an verschiedenen Speicherorten befinden, kopieren Sie die PDB-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach PDB-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>Verwenden einer instrumentierten oder optimierten Binärdatei
 

@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750837"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyzing Load Test Virtual User Activity in the Details View of the Load Test Analyzer
 
 **Diagramm für Aktivitäten virtueller Benutzer**
 
- ![Diagramm für Aktivitäten virtueller Benutzer](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Diagramm für Aktivitäten virtueller Benutzer](../test/media/virtual_actchart.png)
 
  In der Detailansicht wird das Diagramm für Aktivitäten virtueller Benutzer angezeigt, das zur visuellen Analyse der Aktivitäten verwendet wird, die die einzelnen virtuellen Benutzer während des Auslastungstests ausgeführt haben. Im Diagramm für Aktivitäten virtueller Benutzer können Sie Benutzeraktivitäts- und Auslastungsmuster erkennen, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen bei anderen Aktivitäten virtueller Benutzer anzeigen. Anhand des Diagramms für die Aktivitäten virtueller Benutzer können Sie auch Spitzen in der CPU-Auslastung und Tiefstände bei den Anforderungen pro Sekunde erkennen und nachvollziehen, welche Tests oder Seiten während der Spitzen und Tiefstände ausgeführt wurden.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Bereich „Detaillegende“**
 
- ![Bereich „Detaillegende“](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
 
  Der Bereich "Detaillegende" wird im Diagramm für Aktivitäten virtueller Benutzer angezeigt. Im Bereich "Detaillegende" können Sie Tests, Seiten und Transaktionen auf Grundlage unterschiedlicher Kriterien herausfiltern. Sie können z. B. bestimmte Tests aus der Ansicht bzw. alle erfolgreich verlaufenen Tests oder Tests entfernen, die aufgrund bestimmter Fehler fehlgeschlagen sind. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Bereich „Filterergebnisse“**
 
- ![Bereich „Filterergebnisse“](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
 
  Der Bereich "Filterergebnisse" wird im Diagramm für Aktivitäten virtueller Benutzer angezeigt. Im Bereich "Filterergebnisse" können Sie Ergebnisse wie folgt filtern:
 

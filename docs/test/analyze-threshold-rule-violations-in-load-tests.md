@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750908"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verstößen gegen Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -53,15 +54,15 @@ Wenn Verletzungen aufgetreten sind, wird ein **Schwellenwertverletzungen**-Link 
 
  Folgende Symbole werden verwendet:
 
- ![Keine Schwellenwertverletzungen](../test/media/icon_ltest_1.gif "Icon_LTest_1") Keine Schwellenwertverletzungen
+ ![Keine Schwellenwertverletzung](../test/media/icon_ltest_1.gif) Keine Schwellenwertverletzung.
 
- ![Eine kritische Schwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_2.gif "Icon_LTest_2") Eine kritische Schwellenwertverletzung im letzten Intervall
+ ![Kritische Schwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_2.gif) Eine kritische Schwellenwertverletzung ist im letzten Intervall aufgetreten.
 
- ![Eine kritische Schwellenwertverletzung im vorherigen Intervall](../test/media/icon_ltest_3.gif "Icon_LTest_3") Eine kritische Schwellenwertverletzung im vorherigen Intervall
+ ![Kritische Schwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_3.gif) Eine kritische Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
 
- ![Eine Warnschwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_4.gif "Icon_LTest_4") Eine Warnschwellenwertverletzung im letzten Intervall
+ ![Warnschwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_4.gif) Eine Warnung für eine Schwellenwertverletzung ist im letzten Intervall aufgetreten.
 
- ![Eine Warnschwellenwertverletzung im vorherigen Intervall](../test/media/icon_ltest_5.gif "Icon_LTest_5") Eine Warnschwellenwertverletzung im vorherigen Intervall
+ ![Warnschwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_5.gif) Eine Warnung für eine Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
 
  Optional können Schwellenwertverletzungen auch im Diagramm angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist.
 

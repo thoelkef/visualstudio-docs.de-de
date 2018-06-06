@@ -9,11 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e725cb311a6ca07325be0b118687641ed4ecdc
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749170"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -27,17 +28,17 @@ Diese exemplarische Vorgehensweise zeigt, wie Sie mehrere Konten zu Visual Studi
 
 - Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visual Studio an. Ihr Benutzername sollte oben im Fenster angezeigt werden, etwa folgendermaßen:
 
-     ![Aktuell angemeldeter Benutzer](../ide/media/vs2015_username.png "VS2015_UserName")
+     ![Aktuell angemeldeter Benutzer](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Zugreifen auf Ihr Azure-Konto in Server-Explorer
 
 Drücken Sie **Strg**+**Alt**+**S**, um **Server-Explorer** zu öffnen. Wählen Sie das **Azure**-Symbol aus. Wenn es aufgeklappt wird, sehen Sie die verfügbaren Ressourcen in dem Azure-Konto, das mit der ID verknüpft ist, die Sie zum Anmelden bei Visual Studio verwendet haben. Es sollte etwa Folgendes angezeigt werden (davon abgesehen, dass Sie Ihre eigenen Ressourcen sehen).
 
-![Server-Explorer zeigt den aufgeklappten „Azure Tools“-Knoten](../ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")
+![Server-Explorer zeigt den erweiterten "Azure Tools"-Knoten](../ide/media/vs2015_serverexplorer.png)
 
 Wenn Sie Visual Studio auf einem bestimmten Gerät zum ersten Mal verwenden, zeigt das Dialogfeld nur die Abonnements an, die unter der ID registriert sind, mit der Sie sich bei der IDE angemeldet haben. Auf die Ressourcen Ihrer anderen Konten können Sie direkt über den **Server-Explorer** zugreifen, indem Sie mit der rechten Maustaste auf den **Azure**-Knoten klicken, **Abonnements verwalten und filtern** auswählen und Ihre Konten über das Kontoauswahl-Steuerelement hinzufügen. Um ein anderes Konto auszuwählen, klicken Sie auf den Pfeil nach unten, und wählen Sie das gewünschte Konto aus der Liste aus. Nach dem Auswählen des Kontos können Sie auswählen, welche Abonnements dieses Kontos im **Server-Explorer** angezeigt werden sollen.
 
-![Dialogfeld „Azure-Abonnements verwalten“](../ide/media/vs2015_manage_subs.png "vs2015_manage_subs")
+![Dialogfeld "Azure-Abonnements verwalten"](../ide/media/vs2015_manage_subs.png)
 
 Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Ressourcen für diese(s) Abonnement(s) angezeigt.
 
@@ -54,7 +55,7 @@ Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Resso
 
 Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Um diesen Vorgang zu sehen, erstellen Sie eine Webanwendung (**Datei** > **Neues Projekt** > **C#** > **Cloud** > **ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
 
-![Dialogfeld „Authentifizierung ändern“ für ASP.NET](../ide/media/vs2015_change_authentication.png "VS2015_change_authentication")
+![Dialogfeld "Authentifizierung ändern" für ASP.NET](../ide/media/vs2015_change_authentication.png)
 
 Weitere Informationen zu den verschiedenen Arten der Authentifizierung in ASP.NET finden Sie unter [Erstellen von ASP.NET-Webprojekten in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (die Informationen zur Authentifizierung gelten auch noch für die aktuellen Versionen von Visual Studio).
 
@@ -66,11 +67,11 @@ Wählen Sie im Hauptmenü **Team** > **Verbindung mit Team Foundation Server her
 
 Klicken Sie auf den Abwärtspfeil neben Ihrem Benutzernamen oben in Visual Studio. Wählen Sie dann das Menüelement **Kontoeinstellungen** aus. Im Dialogfeld **Konto-Manager** wird das Konto angezeigt, mit dem Sie sich angemeldet haben. Wählen Sie den Link **Konto hinzufügen** unten im Dialogfeld aus, um ein neues Microsoft-Konto oder ein neues Geschäfts- bzw. Schulkonto hinzuzufügen.
 
-![Visual Studio-Kontoauswahl](../ide/media/vs2015_acct_picker.png "VS2015_acct_picker")
+![Visual Studio-Kontoauswahl](../ide/media/vs2015_acct_picker.png)
 
 Folgen Sie den Anweisungen, um die neuen Anmeldeinformationen für das Konto einzugeben. Die folgende Abbildung zeigt den **Konto-Manager**, nachdem ein Benutzer sein *Contoso.com*-Geschäftskonto hinzugefügt hat.
 
-![Konto-Manager](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![Konto-Manager](../ide/media/vs2015_accountmanager.gif)
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Erneutes Aufrufen des Assistenten zum Hinzufügen verbundener Dienste und des Server-Explorers
 

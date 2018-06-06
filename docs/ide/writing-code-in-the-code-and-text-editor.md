@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572390"
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
@@ -87,6 +88,6 @@ Weitere Informationen zum Anpassen des Editors finden Sie unter [Anpassen des Ed
 ## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-IDE](../ide/visual-studio-ide.md)
-- [Erste Schritte mit C++ in Visual Studio](../ide/quickstart-cpp.md)
+- [Erste Schritte mit C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Erste Schritte mit C# und ASP.NET in Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Erste Schritte mit Python in Visual Studio](../ide/quickstart-python.md)

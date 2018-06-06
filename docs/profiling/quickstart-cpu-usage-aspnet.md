@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477287"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET)
 
@@ -49,13 +50,13 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 
 1. Öffnen Sie im Projektmappen-Explorer `Models/Data.cs`, und fügen Sie am Anfang der Datei die folgende `using`-Anweisung hinzu:
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. Ersetzen Sie in „Data.cs“ den folgenden Code:
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -63,7 +64,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 
     durch den folgenden:
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -133,7 +134,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 
 1. Öffnen Sie im Projektmappen-Explorer „Controller/HomeControllers.cs“, und ersetzen Sie den folgenden Code:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -144,7 +145,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 
     durch den folgenden:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();

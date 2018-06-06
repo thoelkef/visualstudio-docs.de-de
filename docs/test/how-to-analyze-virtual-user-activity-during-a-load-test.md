@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751233"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>How to: Analyze What Virtual Users Are Doing During a Load Test Using the Virtual User Activity Chart
 
@@ -75,7 +76,7 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
 
      **Bereich „Detaillegende“**
 
-     ![Bereich „Detaillegende“](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
 
 2.  Aktivieren oder deaktivieren Sie die Kontrollkästchen für die Fehler, Protokolle, Tests, Suchvorgänge und ASPX-Seiten, die dem Auslastungstest zugeordnet sind.
 
@@ -87,7 +88,7 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
 
      **Bereich „Filterergebnisse“**
 
-     ![Bereich „Filterergebnisse“](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
 
 3.  Aktivieren bzw. deaktivieren Sie in den Filterergebnissen die Kontrollkästchen für die folgenden Filteroptionen:
 

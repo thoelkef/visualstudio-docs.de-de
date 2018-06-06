@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765166"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der Profilerstellung erstellt wurden. Jeder Typ ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, anhand derer die Speicherbelegung des Typs bestimmt wurde.  
@@ -34,7 +35,7 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
   
  In den Daten einer Funktion wird die Anzahl der erstellten Objekte sowie der dem Objekt des übergeordneten Typs zugeordneten Bytes angezeigt.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
+## <a name="highlight-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Sie können den Ausführungspfad der Aufrufliste ermitteln, der die meisten Objekte des übergeordneten Typs erstellt hat.  
   
 -   Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.  

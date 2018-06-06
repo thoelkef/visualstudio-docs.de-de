@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750726"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -72,17 +73,17 @@ Wenn Sie einen Test der programmierten Benutzeroberfläche mit der modifizierten
 
 4.  Wählen Sie den Link **Ausgabe** in den Test-Explorer-Ergebnissen.
 
-     ![Ausgabelink im Test-Explorer](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Ausgabelink im Test-Explorer](../test/media/cuit_htmlactionlog1.png)
 
      Damit wird die Ausgabe für den Test angezeigt, in der ein Link zum Aktionsprotokoll enthalten ist.
 
-     ![Ergebnisse und Ausgabelinks aus Test der programmierten Benutzeroberfläche](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Ergebnisse und Ausgabelinks aus Test der programmierten UI](../test/media/cuit_htmlactionlog2.png)
 
 5.  Wählen Sie den Link *UITestActionLog.html* aus.
 
      Das Protokoll wird im Webbrowser angezeigt.
 
-     ![Protokolldatei des Tests der programmierten Benutzeroberfläche](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Protokolldatei aus Test der programmierten UI](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Siehe auch
 

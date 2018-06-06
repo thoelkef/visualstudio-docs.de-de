@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751532"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Gewusst wie: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
@@ -39,7 +40,7 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
 
  Die folgende Abbildung zeigt ein Beispiel für einen Bericht, in dem ein Zusammenhang zwischen einer Abnahme der Transaktionsgeschwindigkeit (Einkaufskorb aktualisieren) und der rückläufigen Entwicklung des Indikators „% Prozessor“ dargestellt wird. Dies weist auf ein potenzielles Problem im Anwendungscode hin (nicht in der Datenbank oder im Netzwerk) und eignet sich für die Diagnose mit dem ASP.NET-Profiler.
 
- ![Mögliches Problem im Anwendungscode](../test/media/lt_excel.png "LT_Excel")
+ ![Mögliches Problem im Anwendungscode](../test/media/lt_excel.png)
 
  Excel-Berichte können entweder im Auslastungstest-Analyzer durch Klicken auf die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste oder in Excel mit der Option **Auslastungstestbericht** auf der Registerkarte **Auslastungstest** des Office-Menübands generiert werden.
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751883"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>How to: Analyze Errors Using the Counters Panel
 
@@ -22,7 +23,7 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
  Der Knoten **Fehler** im Indikatorenfenster enthält alle Fehler, die während des Auslastungstests erkannt wurden. Der Knoten "Fehler" enthält mehrere spezifische Unterkategorie-Fehlerknoten für andere Arten von Fehlern, z.B. **Ausnahmen** und **HTTP-Fehler**.
 
- ![Fehlerknoten des Indikatorenfensters](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Fehlerknoten des Zählerbereichs](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>So analysieren Sie Fehler im Indikatorenfenster
 

@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573257"
 ---
 # <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
 
@@ -46,14 +47,10 @@ Wenn diese Dateien in eine *ZIP-Datei* komprimiert sind und sich im richtigen Or
 
 Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>Starter Kits
-
-Starter Kits sind erweiterte Vorlagen, die mit anderen Mitgliedern der Community gemeinsam genutzt werden können. Starter Kits enthalten kompilierbare Codebeispiele, Dokumentationen und andere Ressourcen, die den Benutzern den Einstieg in neue Tools und Programmiertechniken erleichtern, während diese nützliche und reale Anwendungen erstellen. Die grundlegende Inhalte und Verfahren für Starter Kits sind identisch mit denen für Vorlagen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md).
-
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 - [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
+- [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

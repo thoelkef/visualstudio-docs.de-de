@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751341"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
@@ -51,7 +52,7 @@ Indikatordaten werden für den Server und alle Computer erfasst, auf denen ein T
 
 Es gibt drei Indikatorkategorien: Prozentwerte, Zähler und Mittelwerte. Beispiele hierfür sind die prozentuale CPU-Auslastung, die Anzahl der SQL Server-Sperren und die IIS-Anforderungen pro Sekunde.
 
-![Indikatorensätze des Auslastungstests](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Auslastungstest-Indikatorensätze](../test/media/loadtestcountersets.png)
 
 Leistungsdaten für einzelne HTTP-Anforderungen werden von dem Computer gemeldet, auf dem der Test ausgeführt wird, beispielsweise von einem Agent-Computer. Für Anforderungen können Sie Daten wie Durchschn. Zeit bis zum ersten Byte, Antwortzeit und Anforderungen pro Sekunde überwachen.
 

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745749"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mit der Sie XAML-basierte Windows- und Web-Apps entwerfen können. Sie können Benutzeroberflächen für Ihre Apps erstellen, indem Sie Steuerelemente aus der **Toolbox** ziehen und Eigenschaften im Fenster **Eigenschaften** festlegen. Sie können XAML-Code auch direkt in der XAML-Ansicht bearbeiten.
@@ -34,7 +35,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der Entwurfsansicht ist das Fenster, welches die *Zeichenfläche* enthält, das aktive Fenster, und Sie können es als primäre Arbeitsoberfläche verwenden. Sie können es verwenden, um eine Seite Ihrer App visuell zu entwerfen, indem Sie Elemente hinzufügen oder zeichnen, und indem Sie diese dann ändern. Weitere Informationen finden Sie unter [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Diese Abbildung zeigt die Zeichenfläche in der Entwurfsansicht.
 
- ![Designansicht des XAML-Designers](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Entwurfsansicht XAML-Designer](../designers/media/xaml_editor_design_view.png)
 
  Diese Funktionen sind auf der Zeichenfläche verfügbar:
 
@@ -56,7 +57,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der Entwurfsansicht sind zusätzliche Zeichenflächenbefehle im unteren linken Bildschirmbereich verfügbar, wie hier gezeigt wird:
 
- ![Designansicht-Befehle](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Entwurfsansicht-Befehle](../designers/media/xaml_editor_design_controls.png)
 
  Diese Befehle sind auf dieser Symbolleiste verfügbar:
 
@@ -70,7 +71,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  In der XAML-Ansicht ist das Fenster, welches den XAML-Editor enthält, das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. Diese Abbildung zeigt die XAML-Ansicht:
 
- ![XAML-Ansicht](../designers/media/xaml_editor.png "xaml_editor")
+ ![XAML-Ansicht](../designers/media/xaml_editor.png)
 
  **Leiste für geteilte Ansicht** Die Leiste für geteilte Ansicht wird am oberen Rand der XAML-Ansicht angezeigt, wenn sich der XAML-Editor im unteren Fenster befindet. Mit der Leiste für geteilte Ansicht können Sie die relative Größe der Entwurfsansicht und der XAML-Ansicht steuern. Sie können auch die Positionen der Ansichten austauschen (mithilfe der Schaltfläche **Bereiche austauschen** ). Außerdem können Sie angeben, ob die Ansichten horizontal oder vertikal angeordnet werden und jede dieser Ansichten reduzieren.
 
@@ -79,7 +80,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 ## <a name="device-window"></a>Gerätefenster
  Das Gerätefenster im XAML-Designer ermöglicht es Ihnen, während der Entwurfszeit verschiedene Ansichten, Anzeigevarianten und Anzeigeoptionen für Ihr Projekt zu simulieren. Das Gerätefenster ist im Menü **Entwurf** verfügbar, wenn Sie im XAML-Designer arbeiten. Hier sehen Sie, wie es aussieht:
 
- ![Geräte-Fenster](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Gerätefenster](../designers/media/xaml_editor_device_panel.png)
 
  Dies sind die Optionen, die im Gerätefenster verfügbar sind:
 
@@ -114,7 +115,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  Wählen Sie zum Anzeigen des Dokumentgliederungsfensters auf der Menüleiste **Ansicht**, **Weitere Fenster**, **Dokumentgliederung**.
 
- ![Fenster Dokumentgliederung](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Fenster Dokumentgliederung](../designers/media/xaml_editor_doc_outline.png)
 
  Dies sind die verfügbaren Optionen im Dokumentgliederungsfenster:
 
@@ -129,7 +130,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 ## <a name="properties-window"></a>Eigenschaftenfenster
  Mit dem Eigenschaftenfenster können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:
 
- ![Fenster Eigenschaften](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Eigenschaftenfenster](../designers/media/xaml_editor_prop_window.png)
 
  Oben im Eigenschaftenfenster gibt es verschiedene Optionen. Sie können den Namen des aktuell ausgewählten Elements ändern, indem Sie das Feld **Name** verwenden. In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt. Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** . Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** , wodurch ein Blitzschlagsymbol angezeigt wird. Um nach einer Eigenschaft zu suchen, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Feld **Eigenschaften durchsuchen** . Das Eigenschaftenfenster zeigt die mit Ihrer Suche übereinstimmenden Eigenschaften an, während Sie Ihre Eingabe vornehmen. Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen. Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Schnellstart: Hinzufügen von Steuerelementen und Behandeln von Ereignissen](http://go.microsoft.com/fwlink/?LinkID=247983).
 

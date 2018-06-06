@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262151"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692199"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurieren von Leistungssitzungen
 Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie den Leistungsassistententen und die Eigenschaften der Leistungssitzung sowie der Zielbinärdatei einsetzen, um Profilerstellungstools für das Sammeln von für Sie interessanten Daten zu konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Control data collection (Steuern der Datensammlung)](../profiling/controlling-data-collection.md).  
@@ -40,4 +40,4 @@ Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilers
  [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+ [Leistungs-Explorer](../profiling/performance-explorer.md)
