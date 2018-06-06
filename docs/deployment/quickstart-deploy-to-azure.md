@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765374"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen Sie eine ASP.NET oder ASP.NET Core-app in Azure App Service mithilfe von Visual Studio
 
@@ -26,9 +27,9 @@ Wenn Sie nicht bereits über ein Azure-Konto verfügen, können Sie [registriere
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 installiert haben und die **ASP.NET** und **.NET Framework** Entwicklungsaufwand. Für eine .NET Core-app müssen Sie auch die **.NET Core** arbeitsauslastung.
+* Sie müssen Visual Studio 2017 installiert haben und die **ASP.NET und zur Webentwicklung** Arbeitslast und. **NET Desktopentwicklung** arbeitsauslastung. Für eine app .NET Core müssen Sie die. **NET Core** arbeitsauslastung.
 
-    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
@@ -81,4 +82,4 @@ Wenn Sie nicht bereits über ein Azure-Konto verfügen, können Sie [registriere
 In diesem Schnellstart haben Sie gelernt, wie Sie Visual Studio verwenden, um ein Veröffentlichungsprofil für die Bereitstellung in Azure zu erstellen. Sie können auch eine Veröffentlichung konfigurieren Profil durch Importieren von veröffentlichungseinstellungen aus Azure App Service.
 
 > [!div class="nextstepaction"]
-> [Importieren von veröffentlichungseinstellungen und in Azure bereitstellen](tutorial-import-publish-settings-azure.md)
+> [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure](tutorial-import-publish-settings-azure.md)
