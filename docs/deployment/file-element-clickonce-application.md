@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1e744071219426c751576f8ca781ad27dfedb61
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815850"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; Element (ClickOnce-Anwendung)
 Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <file  
     name  
     size  
@@ -187,7 +188,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, `file` Elemente in einer Anwendung für eine Anwendung mit bereitgestellte manifest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
-```  
+```xml  
 <file name="Icon.ico" size="9216">  
   <hash>  
     <dsig:Transforms>  

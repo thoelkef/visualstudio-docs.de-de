@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815768"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Gewusst wie: Erstellen eines Produktmanifests
 Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelne Produktmanifestdatei aber ein Paketmanifest für jedes Gebietsschema. Das Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, die Endbenutzer-Lizenzverträge und die Language Packs.  
@@ -41,7 +42,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 3.  Fügen Sie die folgenden XML-Code, um den XML-Namespace und Produkt-Code für das Paket beschreiben. Ersetzen Sie den Produktcode durch einen eindeutigen Bezeichner für das Paket an.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 4.  Fügen Sie XML-Code, um anzugeben, dass das Paket eine Abhängigkeit aufweist. Dieses Beispiel verwendet eine Abhängigkeit auf Microsoft Windows Installer 3.1 oder höher.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 5.  Fügen Sie XML-Code, um alle Dateien aufgelistet, die in die Bootstrapper-Pakets sind. Dieses Beispiel verwendet den Namen der Paketdatei "CorePackage.msi".  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 7.  Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** Flag in der MSI-Datei, die automatisch installiert wird. Wenn die Datei eine .exe ist, wird der Bootstrapper die .exe-Datei über die Befehlsshell ausgeführt. Das folgende XML zeigt keine Argumente für "CorePackage.msi", aber die "Arguments"-Attributs Befehlszeilenargument abgelegt.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Fügen Sie die folgenden XML-Code, um festzustellen, ob diese Bootstrapper-Pakets installiert ist. Ersetzen Sie den Produktcode durch die GUID für die weitervertreibbare Komponente.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 9. Fügen Sie XML-Code, um das Bootstrapperverhalten abhängig zu ändern, wenn die Bootstrapperkomponente bereits installiert ist. Wenn die Komponente installiert ist, wird das Bootstrapperpaket nicht ausgeführt. Das folgende XML wird überprüft, ob der aktuelle Benutzer ein Administrator ist, da diese Komponente sind Administratorrechte erforderlich.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 10. Fügen Sie XML-Code, um Exitcodes festzulegen, wenn die Installation erfolgreich ist und ob ein Neustart erforderlich ist. Das folgende XML zeigt, dass die schlägt fehl und FailReboot Exitcodes an, dass der Bootstrapper Installieren von Paketen nicht fortgesetzt werden.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
   
 11. Fügen Sie das folgende XML, um den Abschnitt für die Bootstrapperbefehle zu beenden.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
 ## <a name="example"></a>Beispiel  
  Das Produktmanifest enthält installationsanweisungen für benutzerdefinierte erforderliche Komponenten.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

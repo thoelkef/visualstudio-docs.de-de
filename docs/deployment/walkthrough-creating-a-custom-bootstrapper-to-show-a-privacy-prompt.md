@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816041"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers mit einer datenschutzeingabeaufforderung
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und der Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden dieses Verhalten zustimmen, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob die Berechtigung für die Anwendung für die automatische Aktualisierung verwendet wird. Wenn die Anwendung für die automatische Aktualisierung nicht zulässig ist, wird nicht installiert.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 2.  Fügen Sie den folgenden XML-Code in der Datei product.xml hinzu. Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 2.  Fügen Sie den folgenden XML-Code zum Definieren des Gebietsschemas und die Software-Lizenzbedingungen enthalten, in der Datei "Package.xml". Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  
