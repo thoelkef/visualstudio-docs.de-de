@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750882"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>How to: Manually Create a Load Test Performance Report Using Microsoft Word
 
@@ -45,7 +46,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 2.  (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png)
 
 3.  Klicken Sie im Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, mit der rechten Maustaste, und wählen Sie **Kopieren** aus.
 

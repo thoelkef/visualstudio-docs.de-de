@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336099"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548116"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten
 In der Aufrufer-/Aufgerufener-Ansicht werden .NET-Speicherdaten einer Profilerstellung für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -53,6 +53,6 @@ In der Aufrufer-/Aufgerufener-Ansicht werden .NET-Speicherdaten einer Profilerst
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
+ [Caller/Callee view – .NET memory instrumentation data (Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Caller/Callee view – sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten)](../profiling/caller-callee-view-sampling-data.md)   
  [Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten](../profiling/caller-callee-view-instrumentation-data.md)

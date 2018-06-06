@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573283"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Schnellstart: Verwenden des Code-Editors
 
@@ -23,7 +24,7 @@ In dieser Einführung in den Editor, die etwa zehn Minuten Ihrer Zeit in Anspruc
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
-Bei diesem Schnellstart wird davon ausgegangen, dass Sie bereits mit einer Programmiersprache vertraut sind. Sollte dies nicht der Fall sein, empfehlen wir Ihnen, sich zuerst einen der Schnellstarts zum Thema Programmierung anzusehen, beispielsweise zum Erstellen einer Web-App mit [Python](../ide/quickstart-python.md) oder [C#](../ide/tutorial-csharp-aspnet-core.md) oder zum Erstellen einer Konsolen-App mit [Visual Basic](../ide/quickstart-visual-basic-console.md) oder [C++](../ide/quickstart-cpp.md).
+Bei diesem Schnellstart wird davon ausgegangen, dass Sie bereits mit einer Programmiersprache vertraut sind. Sollte dies nicht der Fall sein, empfehlen wir Ihnen, sich zuerst einen der Schnellstarts zum Thema Programmierung anzusehen, beispielsweise zum Erstellen einer Web-App mit [Python](../ide/quickstart-python.md) oder [C#](../ide/tutorial-csharp-aspnet-core.md) oder zum Erstellen einer Konsolen-App mit [Visual Basic](../ide/quickstart-visual-basic-console.md) oder [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Erstellen einer neuen Codedatei
 

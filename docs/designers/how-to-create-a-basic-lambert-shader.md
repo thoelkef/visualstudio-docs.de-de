@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748204"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Gewusst wie: Erstellen eines Lambert-Shaders
 
@@ -41,13 +42,13 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 > [!NOTE]
 > Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders angegeben, um den Effekt des Shaders in dieser Abbildung besser veranschaulichen. Ein Spiel oder eine Anwendung kann diesen Parameter verwenden, um für jedes Objekt einen eindeutigen Farbwert bereitzustellen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
- ![Shader-Diagramm und eine Vorschau seiner Effekte.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lambert-effect-graph.png)
 
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
  In der folgenden Abbildung wird der auf ein 3D-Modell angewendete Shader dargestellt, der in diesem Dokument beschrieben wurde.
 
- ![Lambert-Beleuchtung in einem Modell.](../designers/media/digit-lambert-effect-result.png "Digital-Lambert-Effect-Result")
+ ![Lambert-Beleuchtung in einem Modell](../designers/media/digit-lambert-effect-result.png)
 
  Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

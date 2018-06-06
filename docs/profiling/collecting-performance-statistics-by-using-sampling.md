@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fea27cdfbcc843b30fbb4500dd9528df5b65c3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548257"
 ---
-# <a name="collecting-performance-statistics-by-using-sampling"></a>Sammeln von Leistungsstatistiken durch Sampling
+# <a name="collect-performance-statistics-by-using-sampling"></a>Sammeln von Leistungsstatistiken durch Sampling
 
 Standardmäßig werden Profilinformationen durch die Samplingmethode der Visual Studio-Profilerstellungstools alle 10.000.000 Prozessorzyklen erfasst (ungefähr jede Hundertstelsekunde auf einem 1-GHz-Computer). Die Samplingmethode ist nützlich für das Auffinden von Prozessornutzungsproblemen und ist die vorgeschlagene Methode zum Starten der meisten Leistungsuntersuchungen.
 

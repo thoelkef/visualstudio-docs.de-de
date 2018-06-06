@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745723"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Entwerfen von XAML-Code in Visual Studio
 
@@ -37,7 +38,7 @@ Für die meisten grundlegenden Aufgaben teilen sich die IDE für Visual Studio u
 
 - **Eine einheitliche Benutzeroberfläche:** Sie können Ihre Anwendungen innerhalb der vertrauten Umgebung der Visual Studio-Benutzeroberfläche entwickeln, was den Wechsel zwischen den IDEs zu einem angenehmeren und produktiveren Erlebnis macht. Blend für Visual Studio nutzt das „dunkle Design“ von Visual Studio, mit dem Sie sich durch eine Optimierung des Kontrasts zwischen Ihren Inhalten und der Benutzeroberfläche besser auf die entwickelten Inhalte konzentrieren können. Informationen hierzu finden Sie unter [Creating a UI by using XAML Designer (Erstellen einer Benutzeroberfläche mit XAML-Designer)](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![Die Blend-IDE für Visual Studio](../designers/media/blendide.png "BlendIDE")
+     ![Die Blend für Visual Studio-IDE](../designers/media/blendide.png)
 
 - **XAML IntelliSense:** Beide IDEs unterstützen alle gemeinsamen Funktionen, die Sie von IntelliSense erwarten würden, einschließlich einer Anweisungsvervollständigung, der Unterstützung für gemeinsame Editoraktionen, wie z. B. Kommentieren und Formatieren von Code sowie die Navigation zu Ressourcen, zur Bindung und zum Code.
 
@@ -45,7 +46,7 @@ Für die meisten grundlegenden Aufgaben teilen sich die IDE für Visual Studio u
 
 - **Oberfläche für erneutes Laden einer Datei:** Sie können die XAML-Dateien sowohl in Blend für Visual Studio als auch in Visual Studio bearbeiten und dafür sorgen, dass die bearbeiteten Dateien automatisch beim Wechsel zwischen ihnen neu geladen werden. Um Workflow-Unterbrechungen zu minimieren, können Sie jetzt Ihre Datei-Neuladeeinstellungen im Dialogfeld „Datei neu laden“ festlegen.
 
-     ![Oberfläche für erneutes Laden einer Datei](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Oberfläche für erneutes Laden einer Datei](../designers/media/blendfilereload.png)
 
 - **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Tool-Fensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen sowohl für Visual Studio als auch für Blend für Visual Studio computerübergreifend, wenn Sie sich bei demselben Microsoft-Konto anmelden. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 

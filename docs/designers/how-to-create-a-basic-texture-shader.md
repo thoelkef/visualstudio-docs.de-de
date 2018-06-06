@@ -1,6 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen eines Basistextur-Shaders'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe0031eed40424dbe9dc0219ecf82c69e44b33c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747052"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Gewusst wie: Erstellen eines Basistextur-Shaders
 
@@ -46,7 +48,7 @@ In der folgenden Abbildung wird das fertige Shaderdiagramm sowie eine Vorschau e
 > [!NOTE]
 > In dieser Abbildung wird eine Ebene als Vorschauform verwendet, und eine Textur wurde angegeben, um den Effekt des Shaders besser zu veranschaulichen.
 
-![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-texture-effect.png "Digit-Texture-Graph")
+![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-texture-effect.png)
 
 Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Shader-Designer](../designers/shader-designer.md).
 

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750824"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -143,11 +144,11 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
-     ![Neues Element zum Datenordner hinzufügen](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Neues Element zum Datenordner hinzufügen](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Erstellen einer Textdatei
 
-     ![Nennen Sie die neue Textdatei „ColorData.csv“](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Nennen Sie die neue Textdatei "ColorData.csv"](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Bearbeiten Sie die Textdatei, und fügen Sie folgenden Text hinzu:
 
@@ -159,7 +160,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 4. Befolgen Sie die Schritte unter [Binden der SQL-Daten](#AddingDataBindingWebTest_BindSQLData), wählen Sie jedoch CSV-Datei als Datenquelle aus.
 
-     ![Namen eingeben und CSV-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Namen eingeben und CSV-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>F: Was muss ich tun, wenn die vorhandene CSV-Datei keine Spaltenüberschriften enthält?
 
@@ -167,7 +168,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 1. Fügen Sie eine neue Textdatei mit dem Namen "schema.ini" hinzu.
 
-     ![Eine schema.ini-Datei hinzufügen](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Eine schema.ini-Datei hinzufügen](../test/media/web_test_databinding_schemafile.png)
 
 2. Bearbeiten Sie die Datei schema.ini, um die Informationen hinzuzufügen, mit denen die Struktur der Daten beschrieben wird. Eine Schemadatei, die die CSV-Datei beschreibt, kann folgendermaßen aussehen:
 
@@ -178,39 +179,39 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 3. Fügen Sie dem Test eine Datenquelle hinzu.
 
-     ![Datenquelle zum Webleistungstest hinzufügen](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Datenquelle zum Webleistungstest hinzufügen](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Wenn Sie die Datei "schema.ini" verwenden, wählen Sie "Datenbank" (nicht die CSV-Datei) als Datenquelle aus, und geben Sie ihr einen Namen.
 
-     ![Datenbankdatenquelle hinzufügen](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Datenbankdatenquelle hinzufügen](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Erstellen Sie eine neue Verbindung.
 
-     ![Neue Verbindung auswählen](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Wählen Sie "Neue Verbindung" aus](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Wählen Sie den .NET Framework-Datenanbieter für OLE DB aus.
 
-     ![.NET Framework-Datenanbieter für OLE DB auswählen](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![.NET Framework-Datenanbieter für OLE DB auswählen](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Wählen Sie Erweitert aus.
 
-     ![„Erweitert“ auswählen](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     !["Erweitert" auswählen](../test/media/web_test_databinding_advanced.png)
 
 8. Wählen Sie für die Eigenschaft "Anbieter" die Option "Microsoft.Jet.OLEDB.4.0" aus, und legen anschließend die erweiterten Eigenschaften auf "Text; HDR=NO" fest.
 
-     ![Erweiterte Eigenschaften anwenden](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Erweiterte Eigenschaften anwenden](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Geben Sie den Namen des Ordners ein, der die Schemadatei enthält, und testen Sie die Verbindung.
 
-     ![Pfad zum Datenordner eingeben](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Pfad zum Datenordner eingeben](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Wählen Sie die CSV-Datei aus, die Sie verwenden möchten.
 
-     ![Textdatei auswählen](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Textdatei auswählen](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Wenn Sie damit fertig sind, wird die CSV-Datei als Tabelle angezeigt.
 
-     ![Zum Test hinzugefügte Datenquelle](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Zum Test hinzugefügte Datenquelle](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>F: Wie verwende ich eine XML-Datei als Datenquelle?
 
@@ -218,11 +219,11 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
-     ![Neues Element zum Datenordner hinzufügen](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Neues Element zum Datenordner hinzufügen](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Erstellen Sie eine XML-Datei.
 
-     ![ColorData.xml-Datei hinzufügen](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![ColorData.xml-Datei hinzufügen](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Bearbeiten Sie die XML-Datei, und fügen Sie die Daten hinzu:
 
@@ -242,7 +243,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 4. Befolgen Sie die Schritte unter [Binden der SQL-Daten](#AddingDataBindingWebTest_BindSQLData), wählen Sie aber „XML-Datei“ als Datenquelle aus.
 
-     ![Namen eingeben und XML-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Namen eingeben und XML-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>F: Kann ich einer Webdienstanforderung, die SOAP verwendet, eine Datenbindung hinzufügen?
 
@@ -250,7 +251,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 1. Wählen Sie in der Anforderungsstruktur die Webdienstanforderung und im Fenster „Eigenschaften“ die Auslassungszeichen (...) in der Eigenschaft „Zeichenfolgentext“.
 
-     ![Zeichenfolgentext des Webdiensts bearbeiten](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Zeichenfolgentext des Webdiensts bearbeiten](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Ersetzen Sie die Werte im SOAP-Text durch datengebundene Werte, und verwenden Sie dabei folgende Syntax:
 

@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571613"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -136,5 +137,4 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 
 - [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
 - [Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)
-- [Visual Studio-Beispiele](../ide/visual-studio-samples.md)
 - [Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)

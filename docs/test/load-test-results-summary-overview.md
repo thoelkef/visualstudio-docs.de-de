@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751857"
 ---
 # <a name="load-test-results-summary-overview"></a>Load Test Results Summary Overview
 
 Nachdem Sie einen Auslastungstest ausgeführt haben, können Sie die Zusammenfassung des Auslastungstests anzeigen, um einen schnellen Überblick über die Ergebnisse zu erhalten. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt. Sie können die Zusammenfassung des Auslastungstests auch ausdrucken. Dies ist hilfreich, wenn Sie Ergebnisse an Projektbeteiligte weitergeben möchten. Die Zusammenfassung des Auslastungstests ist auch die Standardansicht, wenn Sie das Auslastungstestergebnis eines zuvor ausgeführten Auslastungstest öffnen. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Zusammenfassungsansicht](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Zusammenfassungsansicht](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Zusammenfassung des Auslastungstests
 

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752662"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -69,7 +70,7 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
 - **Suchen von Dialogfeldern, Menübefehlen und Optionen**. Geben Sie im Feld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie `new project` eingeben:
 
-    ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity_quicklaunch.png)
 
     **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Seite **Projekt- und Projektmappen** im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
 
@@ -79,7 +80,7 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 
 - **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
 
-    ![Debuggingoptionen für Webbrowser auswählen](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Debuggingoptionen für Webbrowser auswählen](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Legen Sie temporäre Haltepunkte fest**. Sie können einen temporären Haltepunkt in der aktuellen Zeile des Codes erstellen und gleichzeitig den Debugger starten. Wenn Sie diese Codezeile erreicht haben, gibt der Debugger Unterbrechungsmodus ein. Weitere Informationen finden Sie unter [Navigate through code with the debugger (Navigieren im Code mit dem Debugger)](../debugger/navigating-through-code-with-the-debugger.md).
 

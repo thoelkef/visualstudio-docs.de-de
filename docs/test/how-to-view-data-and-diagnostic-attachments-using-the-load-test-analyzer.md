@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751364"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>How to: View Data and Diagnostic Attachments Using the Load Test Analyzer
 
 Bevor Sie einen Auslastungstest ausführen, können Sie eine Testeinstellung auswählen, in der die zu verwendenden Diagnose- und Datenadapter angegeben werden. Nach Abschluss des Auslastungstests können Sie die Details für diese Diagnose- und Datenadapter beim Analysieren der Ergebnisse im Auslastungstest-Analyzer anzeigen. Klicken Sie zum Anzeigen der Details für die Daten- und Diagnoseadapter auf der Symbolleiste des Auslastungstest-Analyzers auf die Schaltfläche **Daten- und Diagnoseanlagen anzeigen**. Wenn für den Auslastungstest z. B. der Adapter "Systeminformationen" in der Testeinstellung konfiguriert ist, können Sie die Systeminformationen für den Computer anzeigen, der bei der Ausführung des Auslastungstests verwendet wurde.
 
-![Dialogfeld „Auswählen von Anlagen für Adapter für diagnostische Daten“](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Dialogfeld "Auswählen von Anlagen für Adapter für diagnostische Daten"](../test/media/load_adapterdialog.png)
 
 Ein weiteres Beispiel ist ein Auslastungstest, dessen Testeinstellung den Adapter "IntelliTrace" enthält. Der Adapter "IntelliTrace" ermöglicht es Ihnen, die Seite "IntelliTrace-Zusammenfassung" zu öffnen.
 
-![IntelliTrace-Zusammenfassung](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![IntelliTrace-Zusammenfassung](../test/media/load_intellitrace.png)
 
 Weitere Informationen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md) und [Collect IntelliTrace data (Erfassen von IntelliTrace-Daten)](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 

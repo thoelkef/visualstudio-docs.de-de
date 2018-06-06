@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745629"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Gewusst wie: Erstellen einer Basistextur
 In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Basistextur verwendet wird.
@@ -36,7 +37,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
  In den folgenden Schritten wird gezeigt, wie eine Textur erstellt wird, die einer Zielscheibe darstellt. Wenn Sie fertig sind, sollte die Textur wie im folgenden Bild aussehen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
 
- ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png "Digital-Bullseye-Texture-In-Editor")
+ ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften**, um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
 
@@ -84,7 +85,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
  Die vollständige Textur der Zielscheibe Hier ist das endgültige Bild, das mit Transparenz gezeigt wird.
 
- ![Die vollständige Textur der Zielscheibe](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Die vollständige Textur der Zielscheibe](../designers/media/gfx_image_demo_bullseye.png)
 
  Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
 

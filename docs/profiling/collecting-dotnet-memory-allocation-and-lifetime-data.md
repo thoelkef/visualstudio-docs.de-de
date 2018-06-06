@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548634"
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
 
 Von den Visual Studio-Profilerstellungstools wird das Sammeln von Daten zur .NET-Speicherbelegung und zur Objektlebensdauer unterstützt, damit Leistungsprobleme im Zusammenhang mit dem Arbeitsspeicher in der Anwendung erkannt werden können.
 
@@ -60,12 +61,12 @@ Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfel
 
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
-|Geben Sie auf der Seite **Allgemein** Namensdetails für die generierte Profilerstellungs-Datendatei (VSP) an.|- [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [How to: Set Performance Data File Name Option (Vorgehensweise: Festlegen von Dateinamenoptionen für Profilerstellungsdaten)](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Wählen Sie auf der Seite **Starten** die Anwendung aus, die gestartet werden soll, wenn mehrere EXE-Projekte in der Codeprojektmappe vorhanden sind.|- [Erfassen von Ebeneninteraktionsdaten mit der Visual Studio-IDE](../profiling/collecting-tier-interaction-data.md)|
-|Fügen Sie der Profilerstellung auf der Seite **Ebeneninteraktion** ADO.NET-Aufrufdaten hinzu.|- [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/collecting-tier-interaction-data.md)|
+|Geben Sie auf der Seite **Allgemein** Namensdetails für die generierte Profilerstellungs-Datendatei (VSP) an.|- [Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Wählen Sie auf der Seite **Starten** die Anwendung aus, die gestartet werden soll, wenn mehrere EXE-Projekte in der Codeprojektmappe vorhanden sind.|- [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)|
+|Fügen Sie der Profilerstellung auf der Seite **Ebeneninteraktion** ADO.NET-Aufrufdaten hinzu.|- [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)|
 |Geben Sie auf der Seite **Windows-Ereignisse** ein oder mehrere ETW-Ereignisse (Ereignisse der Ereignisablaufverfolgung für Windows) an, die mit den Samplingdaten erfasst werden sollen.|- [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |Geben Sie auf der Seite **Windows-Indikatoren** einen oder mehrere Betriebssystem-Leistungsindikatoren an, die den Profilerstellungsdaten als Markierungen hinzugefügt werden sollen.|- [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)|
-|Geben Sie auf der Seite **Erweitert** die Version der .NET Framework-Laufzeit für die Profilerstellung an, wenn die Anwendungsmodule mehrere Versionen verwenden. Standardmäßig wird die zuerst geladene Version für die Profilerstellung verwendet.|- [How to: Specify the .NET Framework Runtime (Vorgehensweise: Angeben der .NET Framework-Laufzeit)](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Geben Sie auf der Seite **Erweitert** die Version der .NET Framework-Laufzeit für die Profilerstellung an, wenn die Anwendungsmodule mehrere Versionen verwenden. Standardmäßig wird die zuerst geladene Version für die Profilerstellung verwendet.|- [Vorgehensweise: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Instrumentierungsaufgaben
 
@@ -74,9 +75,9 @@ Die Aufgaben in der folgenden Tabelle sind Optionen im Dialogfeld **Eigenschafte
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
 |Geben Sie auf der Seite **Binärdateien** einen Speicherort für die instrumentierten Kopien der Module an. Standardmäßig werden die ursprünglichen Binärdateien in einen Sicherungsordner verschoben.|- [Vorgehensweise: Verschieben instrumentierter Binärdateien](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Schließen Sie auf der Seite **Instrumentation** kleine Funktionen von der Profilerstellung aus, um den Profilerstellungsaufwand zu reduzieren, erstellen Sie für JavaScript-Code in ASP.NET-Webseiten ein Profil, und geben Sie Befehle an, die vor und nach der Instrumentation über eine Eingabeaufforderung ausgeführt werden sollen.|- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Vorgehensweise: Profilerstellung für JavaScript-Code (ECMA) in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Schließen Sie auf der Seite **Instrumentation** kleine Funktionen von der Profilerstellung aus, um den Profilerstellungsaufwand zu reduzieren, erstellen Sie für JavaScript-Code in ASP.NET-Webseiten ein Profil, und geben Sie Befehle an, die vor und nach der Instrumentation über eine Eingabeaufforderung ausgeführt werden sollen.|- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [How to: Profile JavaScript Code in Web Pages (Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten)](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |Geben Sie auf der Seite **CPU-Indikatoren** einen oder mehrere Prozessorleistungsindikatoren an, die den Profilerstellungsdaten hinzugefügt werden sollen.|- [Vorgehensweise: Sammeln von CPU-Indikatordaten mit der Instrumentationsmethode](../profiling/how-to-collect-cpu-counter-data.md)|
-|Geben Sie auf der Seite **Erweitert** zusätzliche gewünschte VSInstr.exe-Optionen an, z.B. Optionen zum Ein- oder Ausschließen bestimmter Funktionen. Weitere Informationen zu diesen VSInstr-Optionen finden Sie unter [VSInstr](../profiling/vsinstr.md).|- [Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [How to: Limit Instrumentation to Specific Functions (Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen)](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
+|Geben Sie auf der Seite **Erweitert** zusätzliche gewünschte VSInstr.exe-Optionen an, z.B. Optionen zum Ein- oder Ausschließen bestimmter Funktionen. Weitere Informationen zu diesen VSInstr-Optionen finden Sie unter [VSInstr](../profiling/vsinstr.md).|- [Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Siehe auch
 

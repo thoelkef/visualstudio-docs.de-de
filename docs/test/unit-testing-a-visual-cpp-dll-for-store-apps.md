@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751870"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -31,11 +32,11 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 3.  Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
 
-     ![Projektmappe, Projektname und Speicherort angeben](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Name und Speicherort für Projektmappe und Projekt angeben](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  Öffnen Sie im neuen Projekt **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Hinweis:
 
@@ -64,13 +65,13 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
      Das Testprojekt wird erstellt und ausgeführt. Das Test-Explorer-Fenster wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
 
-     ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
 1.  Wählen Sie im Projektmappen-Explorer den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
 
-     ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
 
@@ -104,7 +105,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     1.  Wählen Sie im Projektmappen-Explorer das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
 
-         ![Präprozessorsymboldefinition hinzufügen](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Präprozessorsymboldefinition hinzufügen](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  Erweitern Sie im Dialogfeld „Eigenschaftenseite“ für RooterLib die Option **Konfigurationseigenschaften** und dann **C++**, und wählen Sie **Präprozessor**.
 
@@ -175,7 +176,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
-     ![BasicTest bestanden](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Einfacher Test bestanden](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
@@ -206,7 +207,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 3.  Der Test schlägt fehl.
 
-     ![Fehler beim RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Fehler beim RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
@@ -278,7 +279,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
      Der Test schlägt fehl. Wählen Sie den Testnamen im Test-Explorer aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
 
-     ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
@@ -308,7 +309,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
  Alle Tests sind nun erfolgreich.
 
- ![Alle Tests bestanden](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
 

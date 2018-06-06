@@ -9,11 +9,12 @@ description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477651"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -48,25 +49,26 @@ Führen Sie die folgenden Schritte aus, um einen neuen Abonnenten mit einem Verz
 1. Besuchen Sie das [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC), und melden Sie sich an.
 2. Klicken Sie auf der VLSC-Administratorseite auf **Abonnements** und dann auf **Visual Studio-Abonnements**.
 
-    ![Menü „Abonnements“](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Klicken Sie auf die mit dem Visual Studio-Abonnement verknüpfte **Vertragsnummer**.
 
-    ![Auswählen des Vertrags](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Klicken Sie auf **Abonnement zuweisen**.
 
-    ![Zuweisen eines Abonnements](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Wählen Sie die gewünschte **Abonnementstufe**.
 
-    ![Abonnementstufe](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Stellen Sie sicher, dass Abonnements für eine Zuweisung vorhanden sind, und klicken Sie auf **Weiter**.
 7.  Geben Sie die Abonnentendetails und die Verzeichnisadresse im Feld „E-Mail-Adresse“ ein, und klicken Sie auf **Weiter**.
 
-    ![E-Mail-Adresse](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Überprüfen Sie die Abonnenteninformationen, und klicken Sie auf **Fertig stellen**.
 
 9. Benachrichtigen Sie den Abonnenten mithilfe der folgenden [Vorlage](#notifying-your-subscribers-with-directory-addresses) darüber, dass sein Abonnement bereitgestellt wurde.

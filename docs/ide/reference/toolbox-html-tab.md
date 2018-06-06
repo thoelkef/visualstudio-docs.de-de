@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752695"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
 
@@ -33,13 +34,13 @@ Die folgenden Tools sind standardmäßig auf der Registerkarte „HTML“ verfü
 
 **Pointer**
 
-![ASP.NET Mobile-Designer, HTML-Seite, Zeiger](../../ide/reference/media/vxpointer.gif "vxPointer")
+![ASP.NET Mobile-Designer, HTML-Seite, Zeiger](../../ide/reference/media/vxpointer.gif)
 
 Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Es kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [Toolbox](../../ide/reference/toolbox.md).
 
 **Input (Button)**
 
-![Schaltfläche auf HTML-Webseite](../../ide/reference/media/vxbutton.gif "vxButton")
+![Schaltfläche auf HTML-Webseite](../../ide/reference/media/vxbutton.gif)
 
 Fügt ein `input`-Element vom Typ `type="button"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Button1"` für die erste Schaltfläche eingefügt, `id="Button2"` für die zweite usw.
 
@@ -51,7 +52,7 @@ Wenn Sie **Input (Button)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Ma
 
 **Input (Reset)**
 
-![HTMLpageResetButton-Bildschirmabbildung](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton-Bildschirmabbildung](../../ide/reference/media/vxreset.gif)
 
 Fügt ein `input`-Element vom Typ `type="reset"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Reset1"` für die erste Reset-Schaltfläche eingefügt, `id="Reset2"` für die zweite usw.
 
@@ -63,7 +64,7 @@ Wenn Sie **Input (Reset)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Mar
 
 **Input (Submit)**
 
-![HTMLpageToolbarSubmitButton-Bildschirmabbildung](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton-Bildschirmabbildung](../../ide/reference/media/vxsubmit.gif)
 
 Fügt ein `input`-Element vom Typ `type="submit"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Submit1"` für die erste Submit-Schaltfläche eingefügt, `id="Submit2"` für die zweite usw.
 
@@ -75,7 +76,7 @@ Wenn Sie **Input (Submit)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Ma
 
 **Input (Text)**
 
-![HTMLpageToolbarTextField-Bildschirmabbildung](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField-Bildschirmabbildung](../../ide/reference/media/vxtextfield.gif)
 
 Fügt ein `input`-Element vom Typ `type="text"` in das Dokument ein. Bearbeiten Sie das `value`-Attribut, um den angezeigten Standardtext zu ändern. In der Standardeinstellung wird `id="Text1"` für das erste Textfeld eingefügt, `id="Text2"` für das zweite usw.
 
@@ -90,7 +91,7 @@ Wenn Sie **Input (Text)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Mark
 
 **Input (File)**
 
-![HTML-Seite, Dateifeld](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![HTML-Seite, Dateifeld](../../ide/reference/media/vxfilefield.gif)
 
 Fügt ein `input`-Element vom Typ `type="file"` in das Dokument ein. In der Standardeinstellung wird `id="File1"` für das erste Dateifeld eingefügt, `id="File2"` für das zweite usw.
 
@@ -105,7 +106,7 @@ Wenn Sie **Input (File)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Mark
 
 **Input (Password)**
 
-![Visual Studio, Password Field](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Visual Studio, Password Field](../../ide/reference/media/vxpassword.gif)
 
 Fügt ein `input`-Element vom Typ `type="password"` ein. In der Standardeinstellung wird `id="Password1"` für das erste Kennwortfeld eingefügt, `id="Password2"` für das zweite usw.
 
@@ -120,7 +121,7 @@ Wenn Sie **Input (Password)** auf die Entwurfsoberfläche ziehen, wird ein HTML-
 
 **Input (Check box)**
 
-![HTML-Webseiten-Toolbox, Kontrollkästchenoption](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![HTML-Webseiten-Toolbox, Option „Checkbox“](../../ide/reference/media/vxcheckbox.gif)
 
 Fügt ein `input`-Element vom Typ `type="checkbox"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Checkbox1"` für das erste Kontrollkästchen eingefügt, `id="Checkbox2"` für das zweite usw.
 
@@ -132,7 +133,7 @@ Wenn Sie **Input (Check box)** auf die Entwurfsoberfläche ziehen, wird ein HTML
 
 **Input (Radio)**
 
-![VisualStudioHTMLpageRadioButton-Bildschirmabbildung](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton-Bildschirmabbildung](../../ide/reference/media/vxradio.gif)
 
 Fügt ein `input`-Element vom Typ `type="radio"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Radio1"` für das erste Optionsfeld eingefügt, `id="Radio2"` für das zweite usw.
 
@@ -144,7 +145,7 @@ Wenn Sie **Input (Radio)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Mar
 
 **Input (Hidden)**
 
-![HTML-Seite, Hidden-Element](../../ide/reference/media/vxhidden.gif "vxhidden")
+![HTML-Seite, Hidden-Element](../../ide/reference/media/vxhidden.gif)
 
 Fügt ein `input`-Element vom Typ `type="hidden"` ein. In der Standardeinstellung wird `id="Hidden1"` für das erste ausgeblendete Feld eingefügt, `id="Hidden2"` für das zweite usw.
 
@@ -156,7 +157,7 @@ Wenn Sie **Input (Hidden)** auf die Entwurfsoberfläche ziehen, wird ein HTML-Ma
 
 **Textarea**
 
-![HTML-Seiten-Toolbox, Text Area](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![HTML-Seiten-Toolbox, Text Area](../../ide/reference/media/vxtextarea.gif)
 
 Fügt ein `textarea`-Element ein. Sie können die Größe des Textbereichs ändern oder die Bildlaufleisten verwenden, um Text außerhalb des Anzeigebereichs anzuzeigen. Bearbeiten Sie das `value`-Attribut, um den angezeigten Standardtext zu ändern. In der Standardeinstellung wird `id="textarea1"` für den ersten Textbereich eingefügt, `id=" textarea 2"` für den zweiten usw.
 
@@ -171,7 +172,7 @@ Wenn Sie **Textarea** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup �
 
 **Table**
 
-![HTMLpageToolbarTable-Bildschirmabbildung](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable-Bildschirmabbildung](../../ide/reference/media/vxtable.gif)
 
 Fügt ein `table`-Element ein.
 
@@ -183,7 +184,7 @@ Wenn Sie **Table** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähn
 
 **Image**
 
-![HTML-Seite, Image-Element](../../ide/reference/media/vximage.gif "vxImage")
+![HTML-Seite, Image-Element](../../ide/reference/media/vximage.gif)
 
 Fügt ein `img`-Element ein. Bearbeiten Sie dieses Element, und geben Sie dessen `src` und `alt`-Text an.
 
@@ -195,7 +196,7 @@ Wenn Sie **Image** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähn
 
 **Auswählen**
 
-![HTML-Seiten-Toolbox, Dropdownfeld](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![HTML-Seiten-Toolbox, Dropdownfeld](../../ide/reference/media/vxdropdown.gif)
 
 Fügt ein Dropdown-`select`-Element ein (ohne `size`-Attribut). In der Standardeinstellung wird `id="select1"` für das erste Listenfeld eingefügt, `id="select2"` für das zweite usw.
 
@@ -209,7 +210,7 @@ Sie können ein mehrzeiliges `select`-Element erstellen, indem Sie den Wert der 
 
 **Horizontal Rule**
 
-![HTML-Seite, Horizontal Rule-Element](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![HTML-Seite, Horizontal Rule-Element](../../ide/reference/media/vxhorizontal.gif)
 
 Fügt ein `hr`-Element ein. Um die Stärke der Linie zu erhöhen, bearbeiten Sie das `size`-Attribut.
 
@@ -221,7 +222,7 @@ Wenn Sie **Horizontal Rule** auf die Entwurfsoberfläche ziehen, wird ein HTML-M
 
 **Div**
 
-![HTML-Seite, Label](../../ide/reference/media/vxlabel.gif "vxLabel")
+![HTML-Seite, Label](../../ide/reference/media/vxlabel.gif)
 
 Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `class="stylename"`-Attribut hinzu, um den Text zu formatieren, der im `div`-Element enthalten ist.
 

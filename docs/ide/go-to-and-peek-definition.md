@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745762"
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
@@ -61,7 +62,7 @@ Wenn Sie den Befehl **Gehe zu Definition** oder **Definition einsehen** für ein
 
 Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Console>ausführen, werden Metadaten für <xref:System.Console> im Code-Editor als C#-Quellcode angezeigt. Der Code entspricht seiner Deklaration, zeigt jedoch keine Implementierung an.
 
-![Metadaten als Quelle](../ide/media/metadatasource.png "MetadataSource")
+![Metadaten als Quelle](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Wenn Sie versuchen, den Befehl **Gehe zu Definition** oder **Code einsehen** für Typen oder Member auszuführen, die als intern gekennzeichnet sind, zeigt die Visual Studio ihre Metadaten nicht als Quellcode an, unabhängig davon, ob die referenzierende Assembly ein Friend ist oder nicht.

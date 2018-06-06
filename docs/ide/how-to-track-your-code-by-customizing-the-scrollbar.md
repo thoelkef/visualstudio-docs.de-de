@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34445970"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745736"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste
 
@@ -34,11 +34,11 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
     So sieht die Bildlaufleiste aus, nachdem eine Zeichenfolge gesucht wurde. Sie Sie sehen, werden alle Instanzen der Zeichenfolge angezeigt.
 
-    ![Bildlaufleiste nach der Suche nach einer Zeichenfolge.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Bildlaufleiste nach der Suche nach einer Zeichenfolge](../ide/media/enhancedscrollbarsearch.png)
 
     So sieht die Bildlaufleiste aus, nachdem alle Instanzen der Zeichenfolge ersetzt wurden. Sie können sofort sehen, dass der Vorgang Probleme verursacht hat.
 
-    ![Bildlaufleiste nach dem Ersetzen einer Zeichenfolge mit Fehlern](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Bildlaufleiste nach dem Ersetzen einer Zeichenfolge mit Fehlern](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>So legen Sie den Anzeigemodus für die Bildlaufleiste fest
 
@@ -48,14 +48,14 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
 
     Im Folgenden wird gezeigt, wie das Suchbeispiel aussieht, wenn der Zuordnungsmodus aktiviert und die Breite auf **Mittel** festgelegt ist:
 
-    ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png)
 
 2. Wählen Sie im Zuordnungsmodus die Option **Vorschau-QuickInfo anzeigen** aus, um eine Vorschau des Codes zu aktivieren, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Hier das Ergebnis:
 
-    ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Wenn Sie das Scrollverhalten im Zuordnungsmodus beibehalten und die Vorschau-QuickInfo anzeigen möchten, nicht aber die Quellcodeübersicht, dann legen Sie die Option für **Quellenübersicht** auf **Off** (aus) fest.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448440"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751604"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
 
@@ -43,7 +43,7 @@ Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale An
 
  Die Eigenschaft **Maximale Anzahl von Testiterationen** ist für eine Vielzahl von Situationen nützlich. Einige Auslastungstester bevorzugen iterationsbasierte Tests, andere hingegen auf der Dauer basierende Tests.
 
- ![Angeben von Testiterationen in einem Szenario](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Angeben von Testiterationen in einem Szenario](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>So geben Sie die maximale Anzahl von Testiterationen an
 

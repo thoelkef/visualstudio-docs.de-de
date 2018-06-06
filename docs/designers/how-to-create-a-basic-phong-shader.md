@@ -1,6 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f81d6e34a6fe0932a8bccae2202c1640b8befb76
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746584"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders
 
@@ -42,9 +44,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
  In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Teekannenmodells gezeigt, auf dem der Shader angewandt wurde.
 
 > [!NOTE]
-> Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
+> Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
- ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png)
 
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
@@ -55,7 +57,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 >
 > Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind. Hohe Glanzkräfte simulieren stumpfere, lokalisiertere Glanzlichter. Sehr niedrige Glanzkräfte simulieren intensive, auffällige Glanzlichter, die die Farbe der ganzen Oberfläche übersättigen und verbergen können.
 
- ![Phong-Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![Phong-Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png)
 
  Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

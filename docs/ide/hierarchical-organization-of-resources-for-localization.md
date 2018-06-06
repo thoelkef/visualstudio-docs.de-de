@@ -1,9 +1,8 @@
 ---
-title: Hierarchische Organisation der Ressourcen für die Lokalisierung | Microsoft-Dokumentation
-ms.custom: ''
+title: Hierarchische Organisation der Ressourcen für die Lokalisierung
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, localized
@@ -21,36 +20,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 704282bc169971e0ecd62285c748af75bed41c41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752319"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchische Organisation der Ressourcen für die Lokalisierung
-In Visual Studio werden lokalisierte Ressourcen (kulturspezifische Daten wie Zeichenfolgen und Bilder) in separaten Dateien gespeichert und je nach Kultureinstellung der Benutzeroberfläche geladen. Um zu verstehen, wie lokalisierte Ressourcen geladen werden, ist es hilfreich, sie als auf hierarchische Weise organisiert zu betrachten.  
-  
-## <a name="kinds-of-resources-in-the-hierarchy"></a>Arten von Ressourcen in der Hierarchie  
-  
--   Ganz oben in der Hierarchie befinden sich die Fallbackressourcen für Ihre Standardkultur, zum Beispiel Englisch („en“). Diese Fallbackressourcen sind die einzigen Ressourcen, die keine eigene Datei haben. Sie sind in der Hauptassembly gespeichert.  
-  
--   Unterhalb der Fallbackressourcen befinden sich die Ressourcen für die neutralen Kulturen. Eine neutrale Kultur ist nicht einem Land/einer Region, sondern einer Sprache zugeordnet. Eine neutrale Kultur zum Beispiel Französisch („fr“). (Die Fallbackressourcen gelten zwar auch für neutrale Kulturen, jedoch nur für spezielle.)  
-  
--   Unterhalb der Ressourcen für neutrale Kulturen befinden sich die Ressourcen für die spezifischen Kulturen. Eine spezifische Kultur ist einer Sprache und einem Land/einer Region zugeordnet. Eine spezifische Kultur ist zum Beispiel kanadisches Französisch („fr-CA“).  
-  
- Wenn eine Anwendung versucht, eine lokalisierte Ressource, zum Beispiel eine Zeichenfolge, zu laden, diese aber nicht finden kann, wird die Hierarchie durchsucht, bis eine Ressourcendatei gefunden wird, die die angeforderte Ressource enthält.  
-  
- Die beste Möglichkeit, Ihre Ressourcen zu speichern, ist sie so weit wie möglich zu generalisieren. Das bedeutet, dass lokalisierte Zeichenfolgen, Bilder usw. nach Möglichkeit in Ressourcendateien für neutrale und nicht für spezifische Kulturen gespeichert werden. Beispiel: Wenn Sie über Ressourcen für belgisches Französisch („fr-BE“) verfügen und die unmittelbar darüber liegenden Ressourcen die Fallbackressourcen in Englisch sind, könnte möglicherweise ein Problem entstehen, wenn jemand Ihre Anwendung auf einem für kanadisches Französisch konfigurierten System verwendet. Das System sucht nach einer Satellitenassembly für „fr-CA“, findet jedoch keine. Daraufhin wird die Hauptassembly geladen, die die Fallbackressource (Englisch) enthält, statt die französischen Ressourcen zu laden. In der folgenden Abbildung wird dieses unerwünschte Szenario dargestellt.  
-  
- ![Nur bestimmte Ressourcen](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
-  
- Wenn Sie der empfohlenen Vorgehensweise folgen und möglichst viele Ressourcen in einer neutralen Ressourcendatei für die Kultur „fr“ speichern, werden einem kanadisch-französischen Benutzer keine für die Kultur „fr-BE“ gekennzeichneten Ressourcen, sondern französische Zeichenfolgen angezeigt. In der folgenden Abbildung wird dieses bevorzugte Szenario dargestellt.  
-  
- ![Grafik zu NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
-  
+
+In Visual Studio werden lokalisierte Ressourcen (kulturspezifische Daten wie Zeichenfolgen und Bilder) in separaten Dateien gespeichert und je nach Kultureinstellung der Benutzeroberfläche geladen. Um zu verstehen, wie lokalisierte Ressourcen geladen werden, ist es hilfreich, sie als auf hierarchische Weise organisiert zu betrachten.
+
+## <a name="kinds-of-resources-in-the-hierarchy"></a>Arten von Ressourcen in der Hierarchie
+
+-   Ganz oben in der Hierarchie befinden sich die Fallbackressourcen für Ihre Standardkultur, zum Beispiel Englisch („en“). Diese Fallbackressourcen sind die einzigen Ressourcen, die keine eigene Datei haben. Sie sind in der Hauptassembly gespeichert.
+
+-   Unterhalb der Fallbackressourcen befinden sich die Ressourcen für die neutralen Kulturen. Eine neutrale Kultur ist nicht einem Land/einer Region, sondern einer Sprache zugeordnet. Eine neutrale Kultur zum Beispiel Französisch („fr“). (Die Fallbackressourcen gelten zwar auch für neutrale Kulturen, jedoch nur für spezielle.)
+
+-   Unterhalb der Ressourcen für neutrale Kulturen befinden sich die Ressourcen für die spezifischen Kulturen. Eine spezifische Kultur ist einer Sprache und einem Land/einer Region zugeordnet. Eine spezifische Kultur ist zum Beispiel kanadisches Französisch („fr-CA“).
+
+ Wenn eine Anwendung versucht, eine lokalisierte Ressource, zum Beispiel eine Zeichenfolge, zu laden, diese aber nicht finden kann, wird die Hierarchie durchsucht, bis eine Ressourcendatei gefunden wird, die die angeforderte Ressource enthält.
+
+ Die beste Möglichkeit, Ihre Ressourcen zu speichern, ist sie so weit wie möglich zu generalisieren. Das bedeutet, dass lokalisierte Zeichenfolgen, Bilder usw. nach Möglichkeit in Ressourcendateien für neutrale und nicht für spezifische Kulturen gespeichert werden. Beispiel: Wenn Sie über Ressourcen für belgisches Französisch („fr-BE“) verfügen und die unmittelbar darüber liegenden Ressourcen die Fallbackressourcen in Englisch sind, könnte möglicherweise ein Problem entstehen, wenn jemand Ihre Anwendung auf einem für kanadisches Französisch konfigurierten System verwendet. Das System sucht nach einer Satellitenassembly für „fr-CA“, findet jedoch keine. Daraufhin wird die Hauptassembly geladen, die die Fallbackressource (Englisch) enthält, statt die französischen Ressourcen zu laden. In der folgenden Abbildung wird dieses unerwünschte Szenario dargestellt.
+
+ ![Nur bestimmte Ressourcen](../ide/media/vbspecificresourcesonly.gif)
+
+ Wenn Sie der empfohlenen Vorgehensweise folgen und möglichst viele Ressourcen in einer neutralen Ressourcendatei für die Kultur „fr“ speichern, werden einem kanadisch-französischen Benutzer keine für die Kultur „fr-BE“ gekennzeichneten Ressourcen, sondern französische Zeichenfolgen angezeigt. In der folgenden Abbildung wird dieses bevorzugte Szenario dargestellt.
+
+ ![Grafik zu NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif)
+
 ## <a name="see-also"></a>Siehe auch
 
-[Neutrale Ressourcensprachen für die Lokalisierung](../ide/neutral-resources-languages-for-localization.md)  
-[Sicherheit und lokalisierte Satellitenassemblys](../ide/security-and-localized-satellite-assemblies.md)  
-[Lokalisieren von Anwendungen](../ide/localizing-applications.md)  
-[Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)
+- [Neutrale Ressourcensprachen für die Lokalisierung](../ide/neutral-resources-languages-for-localization.md)
+- [Sicherheit und lokalisierte Satellitenassemblys](../ide/security-and-localized-satellite-assemblies.md)
+- [Lokalisieren von Anwendungen](../ide/localizing-applications.md)
+- [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

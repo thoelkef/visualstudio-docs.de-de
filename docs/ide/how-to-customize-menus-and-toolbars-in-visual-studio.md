@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745948"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
 
@@ -52,7 +53,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     -   Um ein Menü hinzuzufügen, klicken Sie auf die Schaltfläche **Neues Menü hinzufügen** und anschließend auf die Schaltfläche **Auswahl ändern**, und benennen Sie das Menü, das Sie hinzufügen möchten.
 
-        ![Dialogfeld „Anpassen“ zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
+        ![Dialogfeld "Anpassen" zum Hinzufügen eines Menüs](../ide/media/addmenu.png)
 
     -   Um ein Menü zu entfernen, wählen Sie es in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
@@ -68,7 +69,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     -   Um eine Symbolleiste hinzufügen, klicken Sie auf die Schaltfläche **Neu**, geben Sie einen Namen für die Symbolleiste ein, die Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
 
-        ![Dialogfeld „Anpassen“ zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolbar")
+        ![Dialogfeld "Anpassen" zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png)
 
     -   Um eine benutzerdefinierte Symbolleiste zu entfernen, wählen Sie sie in der Liste **Symbolleisten** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
@@ -96,7 +97,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
         Wählen Sie im Dialogfeld **Befehl hinzufügen** ein Element in der Liste **Kategorien** aus, wählen Sie ein Element in der Liste **Befehle** aus, und klicken Sie dann auf **OK**.
 
-        ![Dialogfeld „Befehl hinzufügen“ in Visual Studio](../ide/media/addcommand.png "AddCommand")
+        ![Dialogfeld "Befehl hinzufügen" in Visual Studio](../ide/media/addcommand.png)
 
     -   Um einen Befehl zu löschen, wählen Sie ihn in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 

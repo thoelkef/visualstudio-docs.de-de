@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4b8bb09795f35e3ae67065322e926a09dda0f19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691858"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testtools, -szenarios und -funktionen für Entwickler
 
@@ -47,8 +48,7 @@ Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für g
 
 * [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](use-ui-automation-to-test-your-code.md)
 * [Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testen von UWP-Apps mit Tests der programmierten UI](test-windows-store-8-1-apps-with-coded-ui-tests.md)
-* [Testen von Windows Phone-Apps mit Tests der programmierten UI](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
+* [Testen von UWP-Apps mit Tests der programmierten UI](test-uwp-app-with-coded-ui-test.md)
 * [Testen von SharePoint-Anwendungen mit Tests der programmierten UI](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction to Creating Coded UI Tests with Visual Studio Enterprise (Einführung in die Erstellung programmierter UI-Tests mit Visual Studio Enterprise)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
