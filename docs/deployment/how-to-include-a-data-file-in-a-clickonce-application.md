@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815544"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung
 Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten: Textdateien, XML-Dateien oder sogar Microsoft Access-Datenbankdateien (.mdb). Nachfolgend wird erläutert, wie eines beliebigen Typs in eine Datendatei hinzufügen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
@@ -35,7 +36,7 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
   
 2.  Aktualisieren Sie das Anwendungsmanifest zur Liste der Datendatei an.  
   
-     **Mage -u v1.0.0.0\Application.manifest - FromDirectory v. 1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Zum Ausführen dieser Aufgabe erneut erstellt die Liste der Dateien im Anwendungsmanifest und die Hashsignaturen ebenfalls automatisch generiert.  
   
@@ -53,13 +54,11 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
   
      Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
   
-     **Mage -s-app-manifest - Cf Cert_file Pwd - Kennwort**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **Mage -u Bereitstellung manifest Appm - app-manifest**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **Mage -s-Bereitstellungsmanifest - Cf Zertifikatdatei Pwd - Kennwort**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Um eine Datei einschließen, indem Sie MageUI.exe verwenden  
   

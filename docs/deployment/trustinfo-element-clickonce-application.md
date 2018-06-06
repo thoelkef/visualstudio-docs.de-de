@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816002"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml
   
       <trustInfo>  
    <security>  
@@ -104,7 +105,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
      Erforderlich. Bestimmt, ob für die Anwendung eine unbeschränkte Erteilung dieser Berechtigung erforderlich ist. Bei `true`ist die Erteilung der Berechtigung ohne Bedingungen. Bei `false`oder nicht definiertem Attribut erfolgt die Erteilung gemäß den berechtigungsspezifischen Attributen, die im `IPermission` -Tag definiert sind. Betrachten wir die folgenden Berechtigungen:  
   
-    ```  
+    ```xml  
     <IPermission  
       class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"   
       version="1"   
@@ -169,7 +170,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
  Das erste Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Internet“ verfügbaren Standardberechtigungen.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -205,7 +206,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
  Das zweite Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Lokales Intranet“ verfügbaren Standardberechtigungen.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -257,7 +258,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
  Das dritte Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Vertrauenswürdige Sites“ verfügbaren Standardberechtigungen.  
   
-```  
+```xml  
 <trustInfo>  
   <security>  
     <applicationRequestMinimum>  

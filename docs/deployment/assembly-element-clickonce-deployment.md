@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab58cb90f9486c3a233d5173db340be3ee5f034
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815664"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; Element (ClickOnce-Bereitstellung)
 Das Element der obersten Ebene für das Bereitstellungsmanifest.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
   
       <assembly    
    manifestVersion  
@@ -48,7 +49,7 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht eine `assembly` Element in ein Bereitstellungsmanifest für eine Anwendung bereitgestellt, mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.  
   
-```  
+```xml  
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  
