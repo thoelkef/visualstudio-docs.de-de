@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752397"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio-Tools mit Daten für C++
 
@@ -34,11 +35,11 @@ Nutzen von benutzerdefinierten Funktionen in SQL Server 2005 und höher, verwend
 
 3.  Verwenden Sie SQL Server Management Studio, um die entzippt anzufügende Datei auf "LocalDB" anzufügen. Beim Starten von SQL Server Management Studio eine Verbindung herstellen Sie, um \MSSQLLocalDB (Localdb).
 
-     ![Dialogfeld "Verbindung" SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "Raddata SSMS-Verbindungsdialogfeld")
+     ![Dialogfeld "Verbindung" SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Klicken Sie dann mit der rechten Maustaste auf den Knoten "Localdb" im linken Bereich, und wählen Sie **Anfügen**.
 
-     ![Datenbank anfügen SSMS](../data-tools/media/raddata-ssms-attach-database.png "Raddata SSMS Anfügen der Datenbank")
+     ![Datenbank Anfügen von SSMS](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Herunterladen Sie der ODBC-Windows-SDK-Beispiel und Entpacken Sie es an einem neuen Speicherort. Dieses Beispiel zeigt die grundlegende ODBC-Befehle, die für die Verbindung mit einer Datenbank und Abfragen und Befehle verwendet werden. Weitere Informationen finden Sie Informationen zu diesen Funktionen in der [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Wenn Sie zuerst die Projektmappe laden (er befindet sich im Ordner "C++"), bietet Visual Studio auf die aktuelle Version von Visual Studio die Projektmappe zu aktualisieren. Klicken Sie auf **Ja**.
 
@@ -67,7 +68,7 @@ Und das Verzeichnis für diese Bibliothek:
 
 8.  Drücken Sie F5, um die Anwendung zu erstellen und auszuführen. Ein Dialogfeld aus dem Treiber, die Sie eine Datenbank geben dazu aufgefordert werden, sollte angezeigt werden. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung verwenden**. Press **OK**. Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Es sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
 
-     ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png "Raddata ODBC-Beispiel-Abfrageausgabe")
+     ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Siehe auch
 

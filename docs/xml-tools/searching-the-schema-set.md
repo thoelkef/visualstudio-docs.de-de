@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751740"
 ---
 # <a name="search-the-schema-set"></a>Das Schemaset suchen
 
@@ -28,7 +29,7 @@ Die **XML-Schema-Explorer** können Sie das Schemaset auf folgende Weise zu such
 
  Sie Schlüsselwort-Suchvorgänge ausführen, indem eine Teilzeichenfolge in der **Schlüsselwortsuche** Textfeld mit der die **XML-Schema-Explorer** Symbolleiste.
 
- ![Schlüsselwortsuche im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Schlüsselwortsuche im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
  Die **XML-Schema-Explorer** durchsucht das Schemaset für die folgenden Attribute:
 
@@ -48,7 +49,7 @@ Die **XML-Schema-Explorer** können Sie das Schemaset auf folgende Weise zu such
 
  Sie können die Suchergebnisse dem Arbeitsbereich hinzufügen, durch Klicken auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** Schaltfläche im Bereich Zusammenfassung der Ergebnisse.
 
- ![Suchergebnis des XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Suchergebnis im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Löschen der Suchergebnisse
 

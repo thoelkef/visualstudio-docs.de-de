@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751792"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 
@@ -22,7 +23,7 @@ Die Inhaltsmodellansicht bietet eine grafische Darstellung lokaler und globaler 
 
  In der folgenden Abbildung ist die **Arbeitsbereich** Bereich enthält sechs Schemaknoten. Die `purchaseOrder` Knoten ausgewählt ist, der **Arbeitsbereich** Bereich und in der Entwurfsoberfläche angezeigt wird.
 
- ![XML-Schema-Designer-Inhaltsmodellansicht](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Inhaltsmodellansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Arbeitsbereichspanels
 
@@ -78,7 +79,7 @@ Die Inhaltsmodellansicht bietet eine grafische Darstellung lokaler und globaler 
 
  Die folgenden XSD-Designer-Symbolleistenschaltflächen sind aktiviert, wenn die Inhaltsmodellansicht aktiv ist.
 
- ![XML-Schema-Designer-Symbolleiste](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Option|Beschreibung|
 |------------|-----------------|

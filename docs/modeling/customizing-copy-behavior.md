@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748373"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 In einer domänenspezifischen Sprache (Domain-Specific Language, DSL), die mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-SDK für Visualisierung und Modellierung erstellt wurde, können Sie ändern, was beim Kopieren und Einfügen von Elementen passiert.
@@ -29,7 +30,7 @@ In einer domänenspezifischen Sprache (Domain-Specific Language, DSL), die mit d
 
  Diese Regel gilt rekursiv für die kopierten Elemente und Links.
 
- ![Kopierte und eingefügte Elemente](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Kopierte und eingefügte Elemente](../modeling/media/dslcopypastedefault.png)
 
  Die kopierten Elemente und Links werden serialisiert und in einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) gespeichert, der in der Zwischenablage platziert wird.
 
@@ -217,7 +218,7 @@ Finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../mode
 ##  <a name="customizeLinks"></a> Anpassen des Verhaltens von Link kopieren
  Wenn der Benutzer ein Element kopiert, ist das Standardverhalten, dass etwaige eingebettete Elemente ebenfalls kopiert werden. Sie können das standardmäßige Kopierverhalten ändern. Wählen Sie in der DSL-Definition eine Rolle auf einer Seite einer Beziehung und Fenster in den Eigenschaften der **Kopie überträgt** Wert.
 
- ![Gibt die Eigenschaft "Kopie" der Rolle "Domäne" Weiter](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Überträgt die Eigenschaft einer Domänenrolle zum Kopieren](../modeling/media/dslpropagatescopy.png)
 
  Es gibt drei Werte:
 
@@ -227,7 +228,7 @@ Finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../mode
 
 -   Kopie an Link und Inhaber der Gegenrolle übertragen – Die kopierte Gruppe enthält eine Kopie des Elements am anderen Ende des Links.
 
- ![Auswirkungen des Kopiervorgangs mit PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Auswirkungen des Kopiervorgangs mit PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Die Änderungen, die Sie vornehmen, haben Auswirkungen auf die Elemente und das kopierte Bild.
 
@@ -237,9 +238,9 @@ Finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../mode
 > [!TIP]
 >  Weitere Informationen zum Anpassen des Modells mithilfe von Programmcode finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png "DslCopySeqDiagram")
+ ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png)
 
- ![Sequenzdiagramm für den Einfügevorgang](../modeling/media/dslpasteseqdiagram.png "DslPasteSeqDiagram")
+ ![Sequenzdiagramm für den Einfügevorgang](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>So definieren Sie eine eigene ElementOperations-Klasse
 

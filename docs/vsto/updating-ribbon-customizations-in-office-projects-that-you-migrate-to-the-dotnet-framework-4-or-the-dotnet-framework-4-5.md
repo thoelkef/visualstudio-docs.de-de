@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert | Microsoft Docs
+title: Aktualisieren von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,29 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767636"
 ---
-# <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren der Anpassungen von Menübändern in Office-Projekten, die zu .NET Framework 4 oder .NET Framework 4.5 migriert werden
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn Ihr Projekt eine menübandanpassung enthält, das erstellt wurde die **Menüband (visueller Designer)** Projektelement, müssen Sie die folgenden Änderungen an Ihrem Projektcode vornehmen, wenn das Zielframework geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder weiter unten.  
   
 -   Ändern Sie den generierten Menübandcode.  
   
 -   Ändern Sie Code, in dem Menüband-Steuerelemente zur Laufzeit instanziiert werden, Menübandereignisse behandelt werden oder die Position einer Menübandkomponente programmgesteuert festgelegt wird.  
   
-## <a name="updating-the-generated-ribbon-code"></a>Aktualisieren des generierten Menübandcodes  
+## <a name="update-the-generated-ribbon-code"></a>Aktualisieren Sie den generierten Menübandcode  
  Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie den generierten Code für das Menübandelement ändern, indem Sie die folgenden Schritte ausführen. Die zu aktualisierenden Codedateien hängen von der Programmiersprache ab und davon, wie Sie das Projekt erstellt haben:  
   
 -   In Visual Basic-Projekten oder in Visual C#-Projekten, die Sie in beiden erstellt [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] oder [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] führen Sie alle Schritte in der Menüband-Code-Behind-Datei (*YourRibbonItem*. Designer.cs oder *YourRibbonItem*. Designer.vb). Um den Code-Behind-Datei in Visual Basic-Projekten anzuzeigen, klicken Sie auf die **alle Dateien anzeigen** Schaltfläche **Projektmappen-Explorer**.  
   
 -   In Visual C#-Projekten, die Sie in Visual Studio 2008 erstellt wurden, und klicken Sie dann ein Upgrade auf [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], führen Sie die ersten beiden Schritte in der Menüband-Codedatei (*YourRibbonItem*.cs oder *YourRibbonItem*. vb), und Führen Sie die verbleibenden Schritte aus, in der Menüband-Code-Behind-Datei.  
   
-#### <a name="to-change-the-generated-ribbon-code"></a>So ändern Sie den generierten Menübandcode  
+### <a name="to-change-the-generated-ribbon-code"></a>So ändern Sie den generierten Menübandcode  
   
-1.  Ändern Sie die Deklaration der Ribbon-Klasse, sodass es abgeleitet <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> statt Microsoft.Office.Tools.Ribbon.OfficeRibbon.  
+1.  Ändern Sie die Deklaration der Ribbon-Klasse so, dass sie von <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> statt von `Microsoft.Office.Tools.Ribbon.OfficeRibbon` abgeleitet wird.  
   
 2.  Ändern Sie den Konstruktor der Ribbon-Klasse, wie unten dargestellt. Ändern Sie den Code nicht, wenn Sie dem Konstruktor eigenen Code hinzugefügt haben. Ändern Sie in Visual Basic-Projekten nur den parameterlosen Konstruktor. Ignorieren Sie den anderen Konstruktor.  
   
@@ -99,19 +100,19 @@ ms.lasthandoff: 04/16/2018
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
-     Eine vollständige Liste der Hilfsmethoden für die Menübandsteuerelemente finden Sie unter [Instanziieren von Menübandsteuerelementen](#ribboncontrols).  
+     Eine vollständige Liste der Hilfsmethoden für die Menübandsteuerelemente finden Sie unter [instanziieren Menüband steuert](#ribboncontrols).  
   
 4.  Ändern Sie in Visual C#-Projekten jede Codezeile in der `InitializeComponent`-Methode, die einen <xref:System.EventHandler%601>-Delegaten verwendet, um stattdessen einen bestimmten Menübanddelegaten zu verwenden.  
   
      Angenommen, die Datei enthält die folgende Codezeile, die das <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>-Ereignis in einem Projekt behandelt, das auf .NET Framework 3.5 abzielt.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
      In einem Projekt, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist, müssen Sie stattdessen den folgenden Code verwenden.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
      Eine vollständige Liste der Menübanddelegaten finden Sie unter [Behandeln von Menübandereignissen](#ribbonevents).  
   
-5.  Suchen Sie in Visual Basic-Projekten die `ThisRibbonCollection`-Klasse am Ende der Datei. Ändern Sie die Deklaration dieser Klasse, sodass sie nicht mehr von Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection erbt.  
+5.  Suchen Sie in Visual Basic-Projekten die `ThisRibbonCollection`-Klasse am Ende der Datei. Ändern Sie die Deklaration dieser Klasse, sodass sie nicht mehr von `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` erbt.  
   
 ##  <a name="ribboncontrols"></a> Instanziieren von Menübandsteuerelementen  
  Sie müssen jeden Code ändern, in dem Menübandsteuerelemente dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 abzielen, sind Menübandsteuerelemente Klassen, die Sie in bestimmten Szenarien direkt instanziieren können. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, fungieren diese Steuerelemente als Schnittstellen, die Sie nicht direkt instanziieren können. Sie müssen die Steuerelemente mit Methoden erstellen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt werden.  
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Mithilfe der Factory-Eigenschaft der Ribbon-Klasse. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.  
   
--   Mithilfe der Globals.Factory.GetRibbonFactory-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+-   Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
  Im folgenden Codebeispiel wird dargestellt, wie ein <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> in einer Menübandklasse eines Projekts erstellt wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist.  
   
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   
-## <a name="setting-the-position-of-a-ribbon-component-programmatically"></a>Programmgesteuertes Festlegen der Position einer Menübandkomponente  
- Sie müssen Code ändern, in dem die Position von Menübandgruppen, Registerkarten oder Steuerelementen festgelegt wird. In Projekten, die .NET Framework 3.5 abzielen die AfterOfficeId und BeforeOfficeId-Methode der statischen Microsoft.Office.Tools.Ribbon.RibbonPosition können Sie die Position-Eigenschaft für eine Gruppe, Registerkarten oder Steuerelementen zuweisen. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, müssen Sie auf diese Methoden mit der <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A>-Eigenschaft zugreifen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt wird.  
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Die Position einer Menübandkomponente programmgesteuert festgelegt  
+ Sie müssen Code ändern, in dem die Position von Menübandgruppen, Registerkarten oder Steuerelementen festgelegt wird. In Projekten, die auf .NET Framework 3.5 abzielen, können Sie mithilfe der `AfterOfficeId`-Methode und der `BeforeOfficeId`-Methode der statischen `Microsoft.Office.Tools.Ribbon.RibbonPosition`-Klasse die `Position`-Eigenschaft von Gruppen, Registerkarten oder Steuerelementen zuweisen. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, müssen Sie auf diese Methoden mit der <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A>-Eigenschaft zugreifen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt wird.  
   
  Es gibt zwei Möglichkeiten, um auf das <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt zuzugreifen:  
   
--   Mithilfe der Factory-Eigenschaft der Ribbon-Klasse. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.  
+-   Mithilfe der `Factory`-Eigenschaft der Ribbon-Klasse. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.  
   
--   Mithilfe der Globals.Factory.GetRibbonFactory-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+-   Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie die Position einer Registerkarte in einer Ribbon-Klasse in einem Projekt, das .NET Framework 3.5 abzielt Eigenschaftensatz.  
+ Im folgenden Codebeispiel wird dargestellt, wie die `Position`-Eigenschaft einer Registerkarte in einer Ribbon-Klasse in einem Projekt festgelegt wird, das auf .NET Framework 3.5 abzielt.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  

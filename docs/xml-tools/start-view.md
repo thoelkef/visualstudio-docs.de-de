@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751844"
 ---
 # <a name="start-view"></a>Ausgangsansicht
 
@@ -22,7 +23,7 @@ Die Ausgangsansicht ist der Ausgangspunkt für die Arbeit mit dem XML-Schema-Des
 
 Die Ausgangsansicht enthält zwei Hauptabschnitte der *Wasserzeichen* und **Details zum Schemaset** Bereich. Sie enthält auch die Symbolleiste, die in allen Ansichten des XSD-Designers verfügbar ist.
 
-![Ausgangsansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Ausgangsansicht im XML-Schema-Designer](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Wasserzeichen
 
@@ -36,7 +37,7 @@ Die **Details zum Schemaset** Bereich listet die globalen Schemaknotentypen und 
 
 Sie können zwischen der Ausgangsansicht, Navigieren der [Inhaltsmodellansicht](../xml-tools/content-model-view.md) und die [Diagrammansicht](../xml-tools/graph-view.md) aus der XML-Schema-Designer-Symbolleiste.
 
-![XML-Schema-Designer-Symbolleiste](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Die folgenden Schaltflächen sind auf der XSD-Designer-Symbolleiste aktiviert, wenn die Ausgangsansicht aktiv ist:
 

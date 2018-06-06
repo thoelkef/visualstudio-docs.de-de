@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766673"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen von einer Anwendung in IIS durch Importieren von veröffentlichungseinstellungen in Visual Studio
 
@@ -40,7 +41,7 @@ Eine Datei mit veröffentlichungseinstellungen (*\*publishsettings*) unterscheid
 
 * Sie müssen Visual Studio 2017 installiert haben und die **ASP.NET** und **.NET Framework** Entwicklungsaufwand. Für eine .NET Core-app müssen Sie auch die **.NET Core** arbeitsauslastung.
 
-    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 * Zum Generieren der Datei mit veröffentlichungseinstellungen aus IIS benötigen Sie einen Computer mit Windows Server 2012 oder Windows Server 2016 und benötigen Sie die IIS-Webserver-Rolle ordnungsgemäß konfiguriert. ASP.NET 4.5 oder ASP.NET Core muss installiert sein. ASP.NET Core, finden Sie unter [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -66,17 +67,17 @@ Eine Datei mit veröffentlichungseinstellungen (*\*publishsettings*) unterscheid
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Erstellen Sie die Datei mit veröffentlichungseinstellungen in IIS unter Windows Server
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Die Einstellungen für die Veröffentlichung in Visual Studio importieren und bereitstellen
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
 Nachdem die app erfolgreich bereitgestellt hat, sollte er automatisch gestartet. Wenn sie nicht über Visual Studio startet, starten Sie die app in IIS. Für ASP.NET Core, müssen Sie sicherstellen, dass der Anwendungspool für Feld der **DefaultAppPool** festgelegt ist, um **kein verwalteter Code**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Lernprogramm erstellt eine Datei mit veröffentlichungseinstellungen, Visual Studio importiert und eine ASP.NET app in IIS bereitgestellt.
+In diesem Lernprogramm erstellt eine Datei mit veröffentlichungseinstellungen, Visual Studio importiert und eine ASP.NET app in IIS bereitgestellt. Sie sollten einen Überblick über die anderen Optionen für die Veröffentlichung in Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md)

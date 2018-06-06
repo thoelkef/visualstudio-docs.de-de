@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749543"
 ---
 # <a name="domain-path-syntax"></a>Domänenpfadsyntax
 In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten Elementen in einem Modell verwendet.
@@ -26,7 +27,7 @@ In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten
 
  *RelationshipName.PropertyName/! Rolle ""*
 
- ![CommentReferencesSubjects-verweisbeziehung](../modeling/media/dsl_reference.png "Dsl_reference")
+ ![CommentReferencesSubjects-Verweisbeziehung](../modeling/media/dsl_reference.png)
 
  Die Syntax durchläuft die Baumstruktur des Modells. Z. B. die domänenbeziehung **CommentReferencesSubjects** in der Abbildung oben wurde eine **Themen** Rolle. Das Pfadsegment **/! Subjectt** gibt an, dass der Pfad für Elemente, die Zugriff über abgeschlossen ist die **Themen** Rolle.
 
