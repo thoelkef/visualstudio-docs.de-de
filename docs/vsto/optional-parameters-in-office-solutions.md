@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571983"
 ---
-# <a name="optional-parameters-in-office-solutions"></a>Optionale Parameter in Office-Lösungen
+# <a name="optional-parameters-in-office-solutions"></a>Optionale Parameter in Office-Projektmappen
   Viele der Methoden in den Objektmodellen von Microsoft Office-Anwendungen akzeptieren optionale Parameter. Wenn Sie mithilfe von Visual Basic eine Office-Lösung in Visual Studio entwickeln, muss kein Wert für optionale Parameter übergeben werden, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden. In den meisten Fällen können Sie optionale Parameter in Visual C#-Projekten auch weggelassen. Nicht jedoch optionale weggelassen **Ref** Parameter von der `ThisDocument` -Klasse im Word-Projekten auf Dokumentebene.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Verwenden von optionalen Parametern von Methoden in der ThisDocument-Klasse in Visual C#-Projekten auf Dokumentebene für Word  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Verwenden von optionalen Parametern von Methoden in der ThisDocument-Klasse in Projekten auf Dokumentebene Visual c# für Word  
  Word-Objektmodell enthält zahlreiche Methoden mit optionalen **Ref** Parameter, akzeptieren <xref:System.Object> Werte. Nicht jedoch optionale weggelassen **Ref** Parameter der Methoden der generierten `ThisDocument` Klasse in Visual C#-Projekten auf Dokumentebene für Word. Visual c# ermöglicht es Ihnen, optional weglassen **Ref** Parameter nur für Methoden von Schnittstellen, jedoch nicht von Klassen. Z. B. im folgenden Codebeispiel wird nicht kompiliert werden, da Sie optional weglassen können **Ref** Parameter von der <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> Methode der `ThisDocument` Klasse.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -72,6 +73,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)  
   
   

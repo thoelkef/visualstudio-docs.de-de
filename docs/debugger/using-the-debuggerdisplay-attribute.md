@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573244"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
 Die [DebuggerDisplayAttribute-Klasse](/dotnet/api/system.diagnostics.debuggerdisplayattribute) steuert, wie ein Objekt, eine Eigenschaft oder ein Feld in den Debuggervariablenfenstern angezeigt wird. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
@@ -87,9 +88,10 @@ public sealed class MyClass
     }  
 }  
 ```  
+Die ", Nq" Suffix weist die ausdrucksauswertung die Anführungszeichen entfernen, wenn den endgültigen Wert anzeigen (Nq = ohne Anführungszeichen). 
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, wie `DebuggerDisplay` zusammen mit `DebuggerBrowseable` und `DebuggerTypeProxy` verwendet wird. Bei der Anzeige in einem Variablenfenster des Debuggers (z. B. im Fenster **Überwachen** ) wird dadurch eine Erweiterung erzeugt, die folgendermaßen aussieht:  
+ Im folgenden Codebeispiel wird veranschaulicht, wie `DebuggerDisplay`zusammen mit `DebuggerBrowseable` und `DebuggerTypeProxy`verwendet wird. Bei der Anzeige in einem Variablenfenster des Debuggers (z. B. im Fenster **Überwachen** ) wird dadurch eine Erweiterung erzeugt, die folgendermaßen aussieht:  
   
 |**Name**|**Wert**|**Type**|  
 |--------------|---------------|--------------|  

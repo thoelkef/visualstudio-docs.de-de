@@ -23,23 +23,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 5b7af8c68764b3a9ed85bf6a52a3a6c4a0568203
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572049"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
-Die **Extras > Optionen > Debugging > Allgemein** Seite können Sie die folgenden Optionen festlegen:  
+Die **Extras > Optionen > Debugging > Allgemein** Seite ermöglicht Ihnen das in diesem Artikel beschriebenen Optionen festlegen.
+
+Wenn Sie die Standardeinstellungen wiederherstellen müssen, erreichen Sie, dass die Verwendung **Tools** > **Einstellungen importieren und exportieren** > **alle Einstellungen zurücksetzen**. Wenn Sie nur eine Teilmenge der Einstellungen zurücksetzen möchten, speichern Sie die Einstellungen in der **-Import / Export-Assistent** vornehmen der Änderungen, die Sie testen möchten, klicken Sie dann die gespeicherten Einstellungen später importieren.
   
-**Vor dem Löschen aller Haltepunkte Fragen**  
-Erfordert eine Bestätigung vor dem Abschluss der **alle Breakpoints löschen** Befehl.  
+**Vor dem Löschen aller Haltepunkte Fragen** erfordert eine Bestätigung vor dem Abschluss der **alle Breakpoints löschen** Befehl.  
   
-**Anhalten Sie alle Prozesse, wenn ein Prozess anhält**  
-Hält im Falle einer Unterbrechung alle Prozesse gleichzeitig an, an die der Debugger angefügt ist.  
+**Alle Prozesse anhalten, wenn ein Prozess anhält** gleichzeitig hält alle Prozesse, die auf die der Debugger wird, angefügt, wenn eine Unterbrechung auftritt.  
   
-**Überschreitenden Ausnahmen bei Anwendungsdomänengrenzen oder verwaltete/systemeigene unterbrechen**  
-Beim Debuggen im verwalteten oder gemischten Modus kann die Common Language Runtime die Ausnahmen auffangen, die die Grenzen zwischen Anwendungsdomänen oder Grenzen zwischen verwaltetem und systemeigenem Code überschreiten, wenn die folgenden Bedingungen erfüllt sind:  
+**Überschreitenden Ausnahmen bei Anwendungsdomänengrenzen oder verwaltete/systemeigene unterbrechen** beim Debuggen im verwalteten oder gemischten Modus die common Language Runtime kann Ausnahmen auffangen, die cross Anwendungsdomänengrenzen oder verwaltete/systemeigene bei folgenden Bedingungen sind erfüllt:  
   
 1\) bei systemeigenem Code verwalteter Code mit COM-Interop aufgerufen und der verwaltete Code löst eine Ausnahme aus. Finden Sie unter [Einführung in COM-Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop).  
   
@@ -49,131 +49,97 @@ Beim Debuggen im verwalteten oder gemischten Modus kann die Common Language Runt
   
 In der Bedingung 2 und 3, wird die Ausnahme gelegentlich von verwaltetem Code in abgefangen `mscorlib` anstelle der common Language Runtime. Diese Option beeinträchtigt nicht das Unterbrechen bei von `mscorlib` aufgefangenen Ausnahmen.  
   
-**Debuggen auf Adressebene aktivieren**  
- Aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das **Disassembly** Fenster die **registriert** Fenster und Adresshaltepunkte).  
+**Debuggen auf Adressebene aktivieren** aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das **Disassembly** Fenster die **registriert** Fenster und Adresshaltepunkte).  
   
-- **Zeigen Sie Disassembly an, wenn die Quelle nicht verfügbar ist.**  
-    Zeigt automatisch das **Disassembly** Fenster, wenn Sie versuchen, das Debuggen von Code für den der Quellcode nicht verfügbar ist.  
+- **Disassembly anzeigen, wenn die Quelle nicht verfügbar ist** zeigt automatisch das **Disassembly** Fenster, wenn Sie versuchen, das Debuggen von Code für den der Quellcode nicht verfügbar ist.  
   
-**Haltepunktfilter aktivieren**  
-Mit dieser Option können Sie Filter an Haltepunkten festlegen, damit diese nur für bestimmte Prozesse, Threads oder Computer gelten.  
+**Haltepunktfilter aktivieren** können Sie Filter an Haltepunkten festlegen, damit diese nur bestimmte Prozesse, Threads oder Computer gelten.  
  
-**Verwenden Sie die neue Ausnahmen-Hilfe**  
-Ermöglicht es dem Ausnahmen-Hilfe (Visual Studio 2017), der Ausnahmen-Assistent ersetzt.
+**Verwenden Sie die neue Ausnahmen-Hilfe** ermöglicht es dem Ausnahmen-Hilfe (Visual Studio 2017), der Ausnahmen-Assistent ersetzt.
   
 > [!NOTE]
 > Bei verwaltetem Code ist diese Option hieß früher **des Ausnahmen-Assistenten aktivieren** . 
   
-**Nur meinen Code aktivieren**  
-Der Debugger zeigt nur Benutzercode („Mein Code“) an und durchläuft ihn schrittweise, während systemeigener und sonstiger Code, der optimiert ist oder keine Debugsymbole aufweist, ignoriert wird.
+**Nur meinen Code aktivieren** der Debugger zeigt an, und in Einzelschritten aus Benutzercode ("Mein Code"), wird ignoriert, systemeigener und sonstiger Code, der optimiert ist oder ist und keine Debugsymbole.
 
-- **Warnhinweis anzeigen Sie, wenn kein Benutzercode beim Start (nur verwaltet)**  
-    Wenn beim Debuggen am Anfang "Nur mein Code" aktiviert ist, warnt diese Option Sie, wenn kein Benutzercode ("Eigener Code") vorhanden ist. 
+- **Warnhinweis anzeigen, wenn kein Benutzercode beim Start (nur verwaltet)** beim Debuggen beginnt mit nur mein Code aktiviert diese Option warnt Sie, wenn kein Benutzercode ("Mein Code") vorhanden ist. 
 
-**Aktivieren von .NET Framework-Quellcodes**  
-Ermöglicht es dem Debugger, die .NET Framework-Quelle schrittweise auszuführen. Durch Aktivieren dieser Option wird "Nur mein Code" automatisch deaktiviert. .NET Framework-Symbole werden an einen Cachespeicherort heruntergeladen. Sie können den Cachespeicherort im Ändern der **Optionen** Dialogfeld **Debuggen** Kategorie **Symbole** Seite.  
+**Aktivieren von .NET Framework-Quellcodes** kann der Debugger einen Einzelschritt in .NET Framework-Quelle. Durch Aktivieren dieser Option wird "Nur mein Code" automatisch deaktiviert. .NET Framework-Symbole werden an einen Cachespeicherort heruntergeladen. Sie können den Cachespeicherort im Ändern der **Optionen** Dialogfeld **Debuggen** Kategorie **Symbole** Seite.  
   
-**Prozedurschritt für Eigenschaften und Operatoren (nur verwaltet)**  
-Verhindert, dass der Debugger Eigenschaften und Operatoren in verwaltetem Code schrittweise ausführt.  
+**Eigenschaften und Operatoren (nur verwaltet) überspringen** verhindert, dass den Debugger Eigenschaften und Operatoren in verwaltetem Code schrittweise.  
   
-**Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**  
-Aktiviert die automatische Auswertung von Eigenschaften und impliziten Funktionsaufrufen in Variablenfenstern und **Schnellüberwachung** (Dialogfeld).  
+**Eigenschaftenauswertung und andere implizite Funktionsaufrufe** aktiviert die automatische Auswertung von Eigenschaften und impliziten Funktionsaufrufen in Variablenfenstern und **Schnellüberwachung** (Dialogfeld).  
   
-- **Zeichenfolgenkonvertierungsfunktion für Objekte in Variablenfenstern (C#- und JavaScript nur) aufrufen.**  
-    Führt einen impliziten Zeichenkonvertierungsaufruf beim Auswerten von Objekten in Variablenfenstern aus. Deshalb wird dieses Ergebnis nicht als Typname, sondern als Zeichenfolge angezeigt. Gilt nur für Debuggen in C#-Code. Diese Einstellung kann vom DebuggerDisplay-Attribut überschrieben werden (siehe [mithilfe des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)).  
+- **Zeichenfolgenkonvertierungsfunktion für Objekte in Variablenfenstern (C#- und JavaScript nur) aufrufen** führt einen impliziten Zeichenkonvertierungsaufruf beim Auswerten von Objekten in Variablenfenstern. Das Ergebnis wird als eine Zeichenfolge anstelle der Typname angezeigt. Gilt nur für Debuggen in C#-Code. Diese Einstellung kann vom DebuggerDisplay-Attribut überschrieben werden (siehe [mithilfe des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Quellserverunterstützung aktivieren**  
-Weist den Visual Studio-Debugger an, die Quelldateien aus den Quellservern abzurufen, die das SrcSrv-Protokoll (`srcsrv.dll`) implementieren. Team Foundation Server und die Debugtools für Windows sind zwei Quellserver, die das Protokoll implementieren. Weitere Informationen zum SrcSrv-Setup finden Sie unter der [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) Dokumentation. Darüber hinaus finden Sie unter [angeben von Symboldateien (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Quellserverunterstützung aktivieren** weist den Visual Studio-Debugger an die Quelldateien aus den Quellservern abzurufen, die das SrcSrv implementieren (`srcsrv.dll`) Protokoll. Team Foundation Server und die Debugtools für Windows sind zwei Quellserver, die das Protokoll implementieren. Weitere Informationen zum SrcSrv-Setup finden Sie unter der [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) Dokumentation. Darüber hinaus finden Sie unter [angeben von Symboldateien (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  Da das Lesen von PDB-Dateien beliebigen Code in den Dateien ausführen kann, vergewissern Sie sich, dass Sie dem Server vertrauen können.  
   
-- **Drucken Sie Quelle diagnosemeldungen im Ausgabefenster**  
-    Wenn die Quellserverunterstützung aktiviert ist, aktiviert diese Einstellung die diagnostische Anzeige.  
+- **Quelle diagnosemeldungen im Ausgabefenster Drucken** Wenn die quellserverunterstützung aktiviert ist, aktiviert diese Einstellung die diagnostische Anzeige.  
   
-- **Quellserver für teilweise vertrauenswürdige Assemblys (nur verwaltet) zulassen**  
-    Wenn die Quellserverunterstützung aktiviert ist, überschreibt diese Einstellung das Standardverhalten beim Nichtabrufen von Quellen für teilweise vertrauenswürdige Assemblys.  
+- **Quellserver für teilweise vertrauenswürdige Assemblys (nur verwaltet) zulassen** Wenn die quellserverunterstützung aktiviert ist, wird diese Einstellung überschreibt das Standardverhalten beim Nichtabrufen von Quellen für teilweise vertrauenswürdige Assemblys.  
 
-**Unterstützung für die Quelllink aktivieren**  
-    Weist den Visual Studio-Debugger zum Herunterladen von Quelldateien nach PDB-Dateien, die Quelle Linkinformationen enthalten. Weitere Informationen zu Quelllink finden Sie unter der [Link Quellspezifikation](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
+**Aktivieren der Unterstützung von Quelllink** weist den Visual Studio-Debugger an Quelldateien für die PDB-Dateien herunterladen, die Quelle Linkinformationen enthalten. Weitere Informationen zu Quelllink finden Sie unter der [Link Quellspezifikation](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
     >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
-**Markieren Sie bei Haltepunkten und aktueller Anweisung (nur C++) gesamte Zeile**  
-Wenn der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, wird die ganze Zeile hervorgehoben.  
+**Bei Haltepunkten und aktueller Anweisung (nur C++) gesamte Zeile markieren** der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, die die ganze Zeile hervorgehoben.  
   
-**Quelldateien Sie müssen exakt der Originalversion übereinstimmen**  
-Fordert den Debugger auf, zu prüfen, ob die Quelldatei mit der Version des Quellcodes übereinstimmt, mit dem die ausführbare Datei erstellt wurde, die Sie debuggen. Wenn die Version nicht übereinstimmt, werden Sie aufgefordert, eine übereinstimmende Quelle zu suchen. Wenn keine übereinstimmende Quelle gefunden wird, wird der Quellcode während des Debuggens nicht angezeigt. 
+**"Quelldateien" auf genau die ursprüngliche Version erfordern** weist den Debugger an, ob eine Quelldatei übereinstimmt, die Version des Quellcodes verwendet, um die ausführbare Datei erstellt, die Sie debuggen. Wenn die Version nicht übereinstimmt, werden Sie aufgefordert, eine übereinstimmende Quelle zu suchen. Wenn keine übereinstimmende Quelle gefunden wird, wird der Quellcode während des Debuggens nicht angezeigt. 
   
-**Umleiten Sie gesamten Text aus Ausgabefenster an das Direktfenster**  
-Sendet alle Debuggermeldungen, die normalerweise in der **Ausgabe** Fenster aus, um die **Direktfenster** Fenster stattdessen.  
+**Gesamten Text aus Ausgabefenster an das Direktfenster umleiten** sendet alle Debuggermeldungen, die normalerweise in der **Ausgabe** Fenster aus, um die **Direktfenster** Fenster stattdessen.  
   
-**Unformatierte Struktur von Objekten in Variablenfenstern anzeigen**  
-Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen zu ansichtsanpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von .managed Objekte](../debugger/create-custom-views-of-dot-managed-objects.md).  
+**Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** deaktiviert alle Anpassungen von objektstrukturansichten. Weitere Informationen zu ansichtsanpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von .managed Objekte](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
-**Unterdrücken der JIT-Optimierung beim Laden von Modulen (nur verwaltet)**  
-Deaktiviert die JIT-Optimierung von verwaltetem Code, wenn ein Modul geladen und JIT kompiliert wird, während der Debugger angefügt ist. Durch das Deaktivieren der Optimierung kann das Debuggen einiger Probleme vereinfacht werden, allerdings auf Kosten der Leistung. Die Verwendung von "Nur mein Code" bei unterdrückter JIT-Optimierung kann dazu führen, dass Nichtbenutzercode als Benutzercode (Nur eigenen Code) angezeigt wird. Weitere Informationen finden Sie unter [JIT-Optimierung und Debugging](../debugger/jit-optimization-and-debugging.md).
+**JIT-Optimierung beim Laden von Modulen (nur verwaltet) unterdrücken** deaktiviert die JIT-Optimierung von verwaltetem Code aus, wenn ein Modul geladen und JIT kompiliert wird, während der Debugger angefügt ist. Durch das Deaktivieren der Optimierung kann das Debuggen einiger Probleme vereinfacht werden, allerdings auf Kosten der Leistung. Die Verwendung von "Nur mein Code" bei unterdrückter JIT-Optimierung kann dazu führen, dass Nichtbenutzercode als Benutzercode (Nur eigenen Code) angezeigt wird. Weitere Informationen finden Sie unter [JIT-Optimierung und Debugging](../debugger/jit-optimization-and-debugging.md).
 
 **Aktivieren Sie JavaScript-debugging für ASP.NET (Chrome und Internet Explorer)** ermöglicht es den Skriptdebugger für ASP.NET-Apps. Bei der ersten Verwendung in Chrome müssen Sie möglicherweise melden Sie sich der Browser bei der ersten Verwendung Aktivieren von Chrome-Erweiterungen, die Sie installiert haben. Deaktivieren Sie diese Option, um Legacyverhalten wiederherzustellen.    
 
-**DLL‑Exporte laden**  
-Lädt DLL‑Exporttabellen. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.  
+**DLL‑Exporte laden** Dll-Exporttabellen lädt. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.  
   
 Um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind, verwenden Sie `dumpbin /exports`. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
-**Parallele Stapel Diagramm von unten nach oben anzeigen**  
-Steuert die Richtung, in der Stapel, in angezeigt werden, der **parallele Stapel** Fenster.  
+**Anzeigen parallelen Stapeln von unten nach oben im Diagramm** steuert die Richtung, in der Stapel, in angezeigt werden, der **parallele Stapel** Fenster.
   
-**Ignorieren Sie GPU Ausnahmen Speicherzugriff, wenn die geschriebenen Daten der Wert geändert wurde**  
-Ignoriert Racebedingungen, die erkannt wurden, während des Debuggens, wenn die Daten nicht geändert haben. Weitere Informationen finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md).  
+**GPU Ausnahmen Speicherzugriff ignorieren, wenn die geschriebenen Daten nicht, den Wert geändert haben** ignoriert Racebedingungen, die erkannt wurden, während des Debuggens, wenn die Daten nicht geändert haben. Weitere Informationen finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md).  
   
-**Verwalteten Kompatibilitätsmodus verwenden**  
-Ersetzt die Standarddebug-Engine durch eine Legacyversion, um die folgenden Szenarien zu ermöglichen:  
+**Verwalteten Kompatibilitätsmodus verwenden** ersetzt das standarddebugmodul durch eine Legacyversion, um diese Szenarien zu ermöglichen:  
   
 - Sie verwenden eine andere .NET Framework-Sprache als C#, VB oder F#, die einen eigenen Expression Evaluator bereitstellt (dies schließt C++/CLI mit ein).  
   
 - Sie möchten „Bearbeiten und Fortfahren“ für C++-Projekte beim Debuggen im gemischten Modus aktivieren.  
   
-Beachten Sie, dass durch Auswählen des verwalteten Kompatibilitätsmodus einige Funktionen deaktiviert werden, die nur in der standardmäßigen Debug-Engine implementiert werden. 
+> [!NOTE]
+> Auswählen des verwalteten Kompatibilitätsmodus deaktiviert den einige Funktionen, die nur im standardmäßigen Debugmodul implementiert werden. 
 
-**Verwenden Sie die älteren c# und VB-ausdrucksauswertungen**  
-Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.    
+**Verwenden Sie die älteren c# und VB-ausdrucksauswertungen** der Debugger wird anstelle der Visual Studio 2015 Roslyn-basierten ausdrucksauswertungen die Visual Studio 2013 C#/VB-ausdrucksauswertungen verwenden.    
   
-**Warnhinweis anzeigen Sie, bei Verwendung von benutzerdefinierten Debuggerschnellansichten gegen potenziell unsichere Prozesse (nur verwaltet)**  
-Visual Studio warnt Sie bei Verwendung einer benutzerdefinierten Debuggerschnellansicht, die im zu debuggenden Prozess Code ausführt, da es sich um unsicheren Code handeln könnte.  
+**Warnen, wenn benutzerdefinierte Debuggerschnellansichten gegen potenziell unsichere Prozesse (nur verwaltet) mit** Visual Studio warnt Sie bei Verwendung eine benutzerdefinierten Debuggerschnellansicht, die in der zu debuggenden Prozess Code ausgeführt wird, da er nicht sicher ausgeführt werden konnte Code.  
   
-**Aktivieren der Windows Debug Heap reserviert wurde (nur systemeigen)**  
-Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
+**Aktivieren der Windows Debug Heap reserviert wurde (nur systemeigen)** können Sie den Windows-Debugheap heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
   
-**Aktivieren von UI-Debugtools für XAML**  
-Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
+**Aktivieren von UI-Debugtools für XAML** der Live Visual Tree und die Windows Live-Eigenschaften-Explorer werden angezeigt, wenn Sie eines unterstützten Projekttyps beginnen (F5) Debuggen. Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
   
-- **Voransicht für ausgewählte Elemente in Live Visual Tree anzeigen**  
-    Das XAML-Element, dessen Kontext ausgewählt ist, wird auch ausgewählt der **Live Visual Tree** Fenster.  
+- **Vorschau der ausgewählten Elemente in Live Visual Tree** der XAML-Element, dessen Kontext ausgewählt ist, wird ebenfalls ausgewählt, der **Live Visual Tree** Fenster.  
   
-- **Common Language Runtime-Tools in der Anwendung anzeigen**  
-    Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste auf das Hauptfenster der Verwendung von XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt. 
+- **Anzeigen von Laufzeittools in Anwendung** zeigt die **Live Visual Tree** Befehle in einer Symbolleiste auf das Hauptfenster der Verwendung von XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt. 
 
 - **XAML-Code bearbeiten und Fortfahren aktivieren** bietet die Möglichkeit zum Verwenden von bearbeiten und Fortfahren-Funktion für die Verwendung von XAML-Code. 
   
-**Aktivieren der Diagnosetools während des Debuggens**  
-Die **Diagnosetools** Fenster wird angezeigt, während des Debuggens.
+**Aktivieren der Diagnosetools während des Debuggens** der **Diagnosetools** Fenster wird angezeigt, während des Debuggens.
   
-**Perftip für verstrichene Zeit beim Debuggen anzeigen**  
-Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  
+**Perftip für verstrichene Zeit beim Debuggen anzeigen** das Codefenster zeigt die verstrichene Zeit von einem bestimmten Methodenaufruf während des Debuggens.  
   
-**Bearbeiten und Fortfahren aktivieren**  
-Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens verwenden.  
+**Bearbeiten und Fortfahren aktivieren** mithilfe von bearbeiten und Fortfahren Funktionalität während des Debuggens.  
   
-- **Aktivieren Sie systemeigene bearbeiten und fortfahren**  
-    Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+- **Bearbeiten und Fortfahren aktivieren** mit bearbeiten und Fortfahren Funktionalität während des Debuggens von systemeigenem C++-Code. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-- **Anwenden von Änderungen beim fortfahren (nur systemeigen)**  
-    Beim Fortsetzen eines unterbrochenen Prozesses kompiliert Visual Studio automatisch alle ausstehenden Codeänderungen und wendet sie an. Wenn nicht ausgewählt ist, können Sie beim Übernehmen der Änderungen, die mithilfe des Elements "Codeänderungen übernehmen" im Menü "Debuggen" auswählen.  
+- **Anwenden von Änderungen beim fortfahren (nur systemeigen)** Visual Studio automatisch kompiliert und wendet alle ausstehenden codeänderungen, die Sie vorgenommen haben, wenn den Prozess vom Zustand "Break" zu fortfahren. Wenn nicht ausgewählt ist, können Sie beim Übernehmen der Änderungen, die mithilfe des Elements "Codeänderungen übernehmen" im Menü "Debuggen" auswählen.  
   
-- **Warnung bei veraltetem Code (nur systemeigen)**  
-    Ruft Warnungen über veralteten Code ab.    
+- **Warnung bei veraltetem Code (nur systemeigen)** Warnungen über veralteten Code zu erhalten.    
 
 **Anzeigen auf Schaltfläche im Editor während des Debuggens ausführen** Wenn diese Option aktiviert ist, die [ausführen, klicken Sie auf](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) Schaltfläche wird während des Debuggens angezeigt.
 
@@ -181,22 +147,17 @@ Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens 
 
 Wenn Sie eine ältere Version von Visual Studio verwenden, können einige zusätzlichen Optionen vorhanden sein.
 
-**Aktivieren des Ausnahmen-Assistenten**  
-Für verwalteten Code aktiviert des Ausnahmen-Assistenten. In Visual Studio 2017 ersetzt den Ausnahmen-Hilfe des Ausnahmen-Assistenten.
+**Aktivieren des Ausnahmen-Assistenten** für verwalteten Code aktiviert des Ausnahmen-Assistenten. In Visual Studio 2017 ersetzt den Ausnahmen-Hilfe des Ausnahmen-Assistenten.
 
-**Aufrufliste für Ausnahmefehler entladen**  
-Bewirkt, dass die **Aufrufliste** Fenster aus, um die Aufrufliste an den Punkt zurücksetzt, bevor der Ausnahmefehler aufgetreten ist. 
+**Aufrufliste für Ausnahmefehler entladen** bewirkt, dass die **Aufrufliste** Fenster aus, um die Aufrufliste an den Punkt zurücksetzt, bevor der Ausnahmefehler aufgetreten ist. 
 
-**Warnhinweis anzeigen Sie, wenn keine Symbole beim Starten (nur systemeigen)**  
-Zeigt eine Warnungsdialogfeld an, wenn Sie ein Programm debuggen, für das der Debugger keine Symbolinformationen hat. 
+**Warnhinweis anzeigen, wenn keine Symbole beim Starten (nur systemeigen)** wird ein Warnungsdialogfeld angezeigt, wenn Sie versuchen, ein Programm debuggen, für das der Debugger keine Symbolinformationen hat. 
 
-**Warnhinweis anzeigen Sie, wenn Skriptdebugging beim Start deaktiviert ist**  
-Zeigt ein Warnungsdialogfeld an, wenn der Debugger mit deaktiviertem Skriptdebuggen gestartet wird.
+**Warnhinweis anzeigen, wenn Skriptdebugging beim Start deaktiviert ist** wird ein Warnungsdialogfeld angezeigt, wenn der Debugger mit deaktiviertem Skriptdebuggen gestartet wird.
 
-**Systemeigenen Kompatibilitätsmodus verwenden**  
-Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
+**Verwenden von systemeigenen Kompatibilitätsmodus** , wenn diese Option ausgewählt ist, verwendet der Debugger den systemeigenen Debugger von Visual Studio 2010 anstelle des neuen systemeigenen Debuggers.  
   
-Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Beispielsweise legacymodul sind viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.
+Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Beispielsweise legacymodul sind viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie Visual Studio 2013-Projekte für optimales debugging in diesen Fällen.
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/index.md)  

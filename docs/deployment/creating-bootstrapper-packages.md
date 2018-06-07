@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572724"
 ---
 # <a name="create-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermittlung und die Installation von weitervertreibbaren Komponenten wie Windows Installer (MSI-Format) und ausführbaren Programmen konfiguriert werden kann. Das Installationsprogramm wird auch als Bootstrapper bezeichnet. Der Bootstrapper wird mithilfe einer Reihe von XML-Manifesten programmiert, mit denen die Metadaten zur Verwaltung der Komponenteninstallation angegeben werden.  Jede verteilbare Komponente, oder eine erforderliche Komponente, angezeigt, die der **Voraussetzungen** im Dialogfeld für ClickOnce ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss. 
@@ -77,7 +78,7 @@ Verwenden Sie auf 64-Bit-Systemen den folgenden Registrierungsschlüssel:
   
 Jede verteilbare Komponente wird unter dem Paketverzeichnis in einem eigenen Unterordner angezeigt. Das Produkt Produktmanifest und die verteilbaren Dateien müssen in diesem Unterordner abgelegt werden. Lokalisierte Versionen der Komponente und Paketmanifeste müssen in Unterordnern, die entsprechend dem Kulturnamen benannt abgelegt werden.  
   
-Nachdem diese Dateien in den Bootstrapperordner kopiert wurden, wird das Bootstrapperpaket automatisch in Visual Studio **Voraussetzungen** (Dialogfeld). Wenn das benutzerdefinierte Bootstrapperpaket nicht angezeigt wird, schließen und öffnen Sie dann erneut die **Voraussetzungen** (Dialogfeld). Weitere Informationen finden Sie unter [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
+Nachdem diese Dateien in den Bootstrapperordner kopiert wurden, wird das Bootstrapperpaket automatisch in Visual Studio **Voraussetzungen** (Dialogfeld). Wenn das benutzerdefinierte Bootstrapperpaket nicht angezeigt wird, schließen und öffnen Sie dann erneut die **Voraussetzungen** (Dialogfeld). Weitere Informationen finden Sie unter [Dialogfeld "Erforderliche Komponenten"](../ide/reference/prerequisites-dialog-box.md).  
   
 In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
   
@@ -86,7 +87,7 @@ In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom
 |ApplicationName|Der Name der Anwendung.|  
 |ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Die Versionsnummer für Microsoft Windows 95, Windows 98 oder Windows ME. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Die Versionsnummer für Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 oder Windows 7. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Die Versionsnummer für Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 oder Windows 7. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Die Version der Windows Installer-Assembly (msi.dll), die während der Installation ausgeführt wird.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Diese Eigenschaft wird festgelegt, wenn der Benutzer über Administratorrechte verfügt. Gültige Werte sind "true" und "false".|  
 |InstallMode|Der Installationsmodus gibt an, von welchem Speicherort die Komponente installiert werden muss. Folgende Werte sind gültig:<br /><br /> -HomeSite: Voraussetzungen werden von der Website des Anbieters installiert.<br />-SpecificSite: Voraussetzungen werden von dem Speicherort installiert, die Sie auswählen.<br />-SameSite: Voraussetzungen sind vom gleichen Speicherort wie die Anwendung installiert.|  
