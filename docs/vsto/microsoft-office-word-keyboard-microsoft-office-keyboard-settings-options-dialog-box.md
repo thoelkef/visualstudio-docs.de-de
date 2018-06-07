@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8747485ced6309bf9e63ecf864c67a111ce6c47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9edd5cd987eb6a4e93b02c8e774adefbc7f969d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572110"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word-Tastatur, Microsoft Office-Tastatureinstellungen, Dialogfeld "Optionen"
+# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word-Tastatur, Microsoft Office-Tastatureinstellungen, Optionen (Dialogfeld)
   Microsoft Office Word und Visual Studio behandelt sowohl Tastenkombinationen. Die gleichen Tastenkombination kann für unterschiedliche Befehle in Word und Visual Studio verwendet. Wenn Sie Word in einem Projekt auf Dokumentebene in Visual Studio geöffnet ist, empfängt nur eine Anwendung zu einem Zeitpunkt Befehle der Tastenkombination. Standardmäßig wird die Visual Studio alle Befehle für Tastenkombination geschickt, jedoch können Sie Word, die sie erhalten, wenn das Dokument durch Auswahl den Fokus besitzt vornehmen **dynamische Folgendes zusätzliches Tastaturzuordnungsschema**.  
   
  Wenn Sie eine Tastenkombination, die nicht an einen Befehl in der Anwendung zugewiesen wird, die zurzeit die Tastenkombinationen bearbeitet verwenden, wird die Tastenkombination auf auf die andere Anwendung übergeben.  
@@ -34,12 +35,12 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Visual Studio Folgendes zusätzliches Tastaturzuordnungsschema**  
- Visual Studio empfängt alle Tastenkombinationsbefehle, selbst wenn das Word-Dokument den Fokus besitzt. Beispielsweise, wenn Sie mit der Taste F5 drücken, während das Dokument den Fokus hat, startet Visual Studio Debuggen der Projektmappe.  
+ Visual Studio empfängt alle Tastenkombinationsbefehle, selbst wenn das Word-Dokument den Fokus besitzt. Angenommen, Sie mit der Taste drücken **F5** während das Dokument den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
   
  **Dynamische Folgendes zusätzliches Tastaturzuordnungsschema**  
- Visual Studio empfängt Tastenkombinationsbefehle nur, wenn es den Fokus hat. Wenn Sie das Word-Dokument den Fokus besitzt, empfängt Word alle Befehle für Tastenkombination. Beispielsweise, wenn Sie mit der Taste F5 drücken, während das Word-Dokument den Fokus besitzt, Word öffnet die **suchen und Ersetzen** Dialogfeld mit den **Gehe zu** Registerkarte ausgewählt. Wenn Sie F5 drücken, während Visual Studio den Fokus hat, startet Visual Studio mit dem Debuggen der Projektmappe.  
+ Visual Studio empfängt Tastenkombinationsbefehle nur, wenn es den Fokus hat. Wenn Sie das Word-Dokument den Fokus besitzt, empfängt Word alle Befehle für Tastenkombination. Angenommen, Sie mit der Taste drücken **F5** Word geöffnet wird, während das Word-Dokument den Fokus besitzt, die **suchen und Ersetzen** Dialogfeld mit der **Gehe zu** Registerkarte ausgewählt. Wenn Sie drücken **F5** während Visual Studio den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen, Dialogfeld „Optionen“](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen, Optionen (Dialogfeld)](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

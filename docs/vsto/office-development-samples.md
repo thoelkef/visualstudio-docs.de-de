@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571416"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungsbeispiele
   Visual Studio enthält Beispielanwendungen, die veranschaulichen, wie die Microsoft Office Developer Tools verwendet werden, um Office-Projektmappen zu erstellen. Im Code dieser Beispiele werden die Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen veranschaulicht.  
   
- Die aktuellen Beispiele finden Sie unter [MSDN Developer Samples: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
+ Die aktuellen Beispiele finden Sie unter [MSDN-Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |Beispiel für VBA- und VSTO-Interoperabilität|Veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Excel in VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird.<br /><br /> Das Beispiel steht nur online zur Verfügung.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSDN-Codebeispiele für Entwickler: Lernen Sie durch Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [MSDN-Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
   
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573127"
 ---
 # <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML Ausschnitte
 
@@ -49,7 +50,7 @@ Die folgenden Verfahren wird beschrieben, wie den Zugriff auf die **Ausschnitt e
 
 3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch Eingabe des Namens der Ausschnitt und drücken **Registerkarte** oder **EINGABETASTE**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>So fügen Sie Ausschnitte über die "Wort vervollständigen"-Liste von IntelliSense ein
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Das einzufügende Ausschnitte über das IntelliSense-Liste Wort vervollständigen
 
 1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.
 
@@ -79,7 +80,7 @@ Die folgenden Verfahren wird beschrieben, wie den Zugriff auf die **Umschließen
 > [!NOTE]
 > Die **Umschließen mit** Befehl steht auch über die Tastenkombination (**STRG**+**K**, klicken Sie dann **STRG** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>So verwenden Sie "Umgeben mit" über das Kontextmenü
+### <a name="to-use-surround-with-from-the-context-menu"></a>Umschließen mit aus dem Kontextmenü verwenden
 
 1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.
 
@@ -89,7 +90,7 @@ Die folgenden Verfahren wird beschrieben, wie den Zugriff auf die **Umschließen
 
 3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch den Namen des Ausschnitts und drücken **Registerkarte** oder **EINGABETASTE**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Umgeben mit über das IntelliSense-Menü verwenden
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Umschließen mit aus dem IntelliSense-Menü verwenden
 
 1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.
 
@@ -99,7 +100,7 @@ Die folgenden Verfahren wird beschrieben, wie den Zugriff auf die **Umschließen
 
 3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch den Namen des Ausschnitts und drücken **Registerkarte** oder **EINGABETASTE**.
 
-## <a name="using-xml-snippets"></a>Verwenden von XML-Ausschnitten
+## <a name="use-xml-snippets"></a>Verwenden von XML-Ausschnitte
 
 Wenn Sie einen XML-Ausschnitt ausgewählt haben, wird der Text des Codeausschnitts automatisch an der Cursorposition eingefügt. Alle editierbaren Felder im Ausschnitt sind hervorgehoben, und das erste editierbare Feld wird automatisch markiert. Das aktuell markierte Feld ist geschachtelt.
 
@@ -109,10 +110,10 @@ Nur die erste Instanz des jeweiligen Feldes ist editierbar. Wenn dieses Feld her
 
 Drücken **EINGABETASTE** oder **Esc** feldbearbeitung beendet und gibt den Editor normal zurück.
 
-Die Standardfarben für den bearbeitbaren Code Snippet Felder können geändert werden, indem die Codeausschnittfeld-Einstellung in der **Schriftarten und Farben** im Bereich der **Optionen** (Dialogfeld). Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Die Standardfarben für den bearbeitbaren Code Snippet Felder können geändert werden, indem die **Codeausschnittfeld** festlegen in der **Schriftarten und Farben** im Bereich der **Optionen** (Dialogfeld). Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Vorgehensweise: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md)
+- [Vorgehensweise: generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Vorgehensweise: Erstellen von XML-Ausschnitte](../xml-tools/how-to-create-xml-snippets.md)

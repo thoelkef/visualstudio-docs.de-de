@@ -23,13 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dae0594107d4ffbfa09d33a3e5bff20f65ea48ba
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572685"
 ---
-# <a name="office-development-samples-and-walkthroughs"></a>Beispiele und exemplarische Vorgehensweisen für die Programmierung mit Office
+# <a name="office-development-samples-and-walkthroughs"></a>Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen
   Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Erstellen von Microsoft Office-Projektmappen benötigen.  
   
  Der Beispielcode dient nur der Veranschaulichung und sollte nicht unverändert in bereitgestellten Lösungen verwendet werden. Vor allem müssen Sicherheitsaspekte stärker berücksichtigt werden.  
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/16/2018
 |[Office-Entwicklungsbeispiele](../vsto/office-development-samples.md)|Stellt Links zu Beispielanwendungen bereit, die die Verwendung der Office- und SharePoint-Entwicklung in Visual Studio veranschaulichen.|  
 |[Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)|Enthält schrittweise Anleitungen, die Sie in die Office-Entwicklung in Visual Studio einführen und veranschaulichen, wie Sie Word in Office Business Applications integrieren können.|  
 |[Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)|Enthält schrittweise Anleitungen, die Sie in die Office-Entwicklung in Visual Studio einführen und veranschaulichen, wie Sie Excel in Office Business Applications integrieren können.|  
-|[Exemplarische Vorgehensweisen für Daten in Office-Projektmappen](../vsto/data-in-office-solutions-walkthroughs.md)|Enthält Anleitungen, die Schritt für Schritt das Arbeiten mit Daten in Projektmappen veranschaulichen.|  
-|[Exemplarische Vorgehensweisen für Anpassungen der Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)|Führt schrittweise Anweisungen auf, in denen gezeigt wird, wie Sie die Benutzeroberfläche (UI) von Microsoft Office-Anwendungen anpassen können.|  
-|[Exemplarische Vorgehensweisen für Sicherheit und Bereitstellung](../vsto/security-and-deployment-walkthroughs.md)|Enthält eine Liste von Anleitungen, die Schritt für Schritt veranschaulichen, wie Sie Sicherheitsrichtlinien festlegen können, um das Ausführen der Projektmappe zuzulassen, und in denen gezeigt wird, wie Sie die Projektmappe bereitstellen können.|  
+|[Daten in Office-Projektmappen Exemplarische Vorgehensweisen](../vsto/data-in-office-solutions-walkthroughs.md)|Enthält Anleitungen, die Schritt für Schritt das Arbeiten mit Daten in Projektmappen veranschaulichen.|  
+|[Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)|Führt schrittweise Anweisungen auf, in denen gezeigt wird, wie Sie die Benutzeroberfläche (UI) von Microsoft Office-Anwendungen anpassen können.|  
+|[Sicherheit und Bereitstellung Exemplarische Vorgehensweisen](../vsto/security-and-deployment-walkthroughs.md)|Enthält eine Liste von Anleitungen, die Schritt für Schritt veranschaulichen, wie Sie Sicherheitsrichtlinien festlegen können, um das Ausführen der Projektmappe zuzulassen, und in denen gezeigt wird, wie Sie die Projektmappe bereitstellen können.|  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
   
@@ -58,6 +59,6 @@ ms.lasthandoff: 04/16/2018
 |[Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Erläutert die Funktionsweise von Office-Projektmappen mit verwaltetem Code aus der Sicht des Entwicklers und des Endbenutzers und enthält Informationen zum Zusammenwirken von verwaltetem Code und Office-Dokumenten sowie -Anwendungen.|  
 |[Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)|Enthält eine Liste häufig gestellter Fragen zum Programmieren mit der Office-Entwicklung in Visual Studio sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.|  
 |[Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Microsoft Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|  
-|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|Bietet eine Übersicht über den Aufgabenbereich auf Dokumentebene, der Aktionsbereich genannt wird.|  
+|[Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)|Bietet eine Übersicht über den Aufgabenbereich auf Dokumentebene, der Aktionsbereich genannt wird.|  
   
   
