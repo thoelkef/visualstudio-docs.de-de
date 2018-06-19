@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561661"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung können Sie konfigurieren, wie eine Anwendung aktualisiert wird. Wenn Sie verwenden und anpassen müssen jedoch eine erweiterte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsfeatures, müssen die Bereitstellung-Objektmodell bereitgestellt werden, indem Sie den Zugriff auf <xref:System.Deployment.Application>. Sie können die <xref:System.Deployment.Application> -APIs für erweiterte Aufgaben wie z. B.:  

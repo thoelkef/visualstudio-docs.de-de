@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116190"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 Diese Schnittstelle ist eine Erweiterungsschnittstelle implementiert [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Implementierer. Dadurch kann die Implementierung zum Abrufen von Informationen über die Prozess-Debugumgebung.  

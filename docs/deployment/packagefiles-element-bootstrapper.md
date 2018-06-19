@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560907"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; Element (Bootstrapper)
 Die `PackageFiles` Element enthält `PackageFile` -Elemente, die die als Ergebnis des ausgeführten Installationspakete definieren die `Command` Element.  

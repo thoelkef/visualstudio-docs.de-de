@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120948"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Diese Schnittstelle wird durch die Debugging-Modul (DE) gesendet, um anzugeben, dass die Debugsymbole für ein Modul, das gerade gedebuggt wird geladen wurden.  

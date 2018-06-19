@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548387"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Vorgehensweise: Hinzufügen ein Dialogfeld-Startprogramms zu einer Menübandgruppe
   Sie können eine beliebige Gruppe auf einem Menüband ein Dialogfeld-Startprogramms hinzufügen. Ein Dialogfeld-Startprogramm ist ein kleines Symbol, das in einer Gruppe angezeigt wird. Benutzer klicken Sie auf dieses Symbol zum Öffnen der zugehörigen Dialogfeldern oder Aufgabenbereiche, die mehr Optionen angeben, die auf die Gruppe beziehen.  

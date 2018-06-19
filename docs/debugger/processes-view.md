@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474845"
 ---
 # <a name="processes-view"></a>Prozessansicht
 Die Prozesse zeigt eine Strukturansicht aller aktiven Prozesse auf Ihrem System. Die Prozess-ID und den Modulnamen werden angezeigt. Verwenden Sie die Prozessansicht aus, wenn Sie möchten einen bestimmte Systemprozess zu überprüfen, die zum Ausführen eines Programms in der Regel entspricht. Prozesse werden durch Modulnamen identifiziert, oder sie werden als "Systemprozesse."  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454637"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen von Variablen in der "Auto" und "lokal" Fenstern in Visual Studio
 Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr hilfreich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  

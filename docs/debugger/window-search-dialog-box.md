@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476630"
 ---
 # <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
 Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für ein bestimmtes Fenster in [Fensteransicht](../debugger/windows-view.md). Um dieses Dialogfeld anzuzeigen, den Fokus auf das Windows-Fenster an. Wählen Sie dann **"Fenster Suchen"** aus der **Suche** Menü.  

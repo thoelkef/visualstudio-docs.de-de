@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473159"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 Definiert durch das Vorhandensein, ob eine Standardinstanz von die [VsgDbg-Klasse](vsgdbg-class.md) Klasse – stellt die programmgesteuerte erfassungsschnittstelle – angegeben wird.  

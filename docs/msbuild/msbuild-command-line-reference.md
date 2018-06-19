@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576013"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 Wenn Sie mithilfe von MSBUILD.EXE ein Projekt oder eine Projektmappendatei erstellen, können Sie diverse Schalter verwenden, um verschiedene Aspekte des Prozesses festzulegen.  

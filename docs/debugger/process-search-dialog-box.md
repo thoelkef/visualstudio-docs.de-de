@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475508"
 ---
 # <a name="process-search-dialog-box"></a>Dialogfeld "Prozesssuche"
 Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für einen bestimmten Prozess in [Prozessansicht](../debugger/processes-view.md). Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein **Prozesse** Fenster "anzeigen". Wählen Sie dann **Prozess suchen** aus der **Suche** Menü.  

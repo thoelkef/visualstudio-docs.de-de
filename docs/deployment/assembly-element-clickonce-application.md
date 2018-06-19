@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704222"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly&gt; Element (ClickOnce-Anwendung)
 Das Element der obersten Ebene für das Anwendungsmanifest.  

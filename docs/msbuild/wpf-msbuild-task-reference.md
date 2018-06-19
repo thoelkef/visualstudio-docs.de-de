@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573137"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Aufgaben für WPF
 Der Buildprozess von WPF erweitert das Microsoft-Buildmodul (MSBuild) durch einen zusätzlichen Satz an Buildtasks, einschließlich Tasks zum Kompilieren von Markup- und Prozessressourcen.  

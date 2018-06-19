@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473217"
 ---
 # <a name="how-to-display-thread-properties"></a>Gewusst wie: Anzeigen von Threadeigenschaften
 So ermitteln Sie weitere Informationen zu einem Thread in aufgeführten [Threadansicht](../debugger/threads-view.md), verwenden die [Thread Eigenschaftendialogfeld](../debugger/thread-properties-dialog-box.md).  
