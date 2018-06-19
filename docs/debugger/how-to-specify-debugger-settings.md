@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472723"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Gewusst wie: Angeben von Debuggereinstellungen
 Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Angeben von Debuggereinstellungen in der **Optionen** (Dialogfeld).  

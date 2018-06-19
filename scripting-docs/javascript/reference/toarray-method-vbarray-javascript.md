@@ -1,13 +1,13 @@
 ---
 title: ToArray-Methode (VBArray) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toArray
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toArray method
 ms.assetid: 664de44c-2039-4289-82f6-948e9d744d80
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641770"
 ---
 # <a name="toarray-method-vbarray-javascript"></a>toArray-Methode (VBArray) (JavaScript)
 Gibt ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Standardarray zurück, das aus einem VBArray konvertiert wurde.  

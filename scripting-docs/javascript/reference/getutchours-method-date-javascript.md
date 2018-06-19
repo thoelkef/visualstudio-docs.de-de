@@ -1,13 +1,13 @@
 ---
 title: GetUTCHours-Methode (Datum) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getUTCHours
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - UTC times, returning
 - getUTCHours method
 ms.assetid: 7c9825dd-4b3a-4614-8e09-f40df123b630
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28943848"
 ---
 # <a name="getutchours-method-date-javascript"></a>getUTCHours-Methode (Datum) (JavaScript)
 Ruft den Wert der Stunden einer `Date` -Objekt unter Verwendung der koordinierten Weltzeit (UTC).  

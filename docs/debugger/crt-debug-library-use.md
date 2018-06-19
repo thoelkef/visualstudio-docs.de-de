@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467955"
 ---
 # <a name="crt-debug-library-use"></a>Verwenden der CRT-Debugbibliothek
 Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-Debugbibliotheken verwenden zu können, müssen Sie eine Verknüpfung mit [/DEBUG](/cpp/build/reference/debug-generate-debug-info) und kompilieren Sie mit **/MDd**, **/MTd**, oder **"/ LDD"**.  

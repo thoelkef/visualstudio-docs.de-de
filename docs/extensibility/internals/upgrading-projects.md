@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148245"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 Ändert eine Version der in das Projektmodell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zur nächsten erfordern, dass Projekte und Projektmappen aktualisiert werden, sodass sie auf die neuere Version ausgeführt werden können. Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] stellt Schnittstellen, die zum Implementieren von upgradeunterstützung in Ihren eigenen Projekten verwendet werden können.  

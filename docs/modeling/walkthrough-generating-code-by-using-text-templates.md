@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979385"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert ist und problemlos geändert werden, wenn sich das Quellmodell ändert. Vergleichen Sie dies mit der alternativen Technik für ein vollkommen generisches Programm, das eine Konfigurationsdatei akzeptiert, was flexibler ist, aber zu Code führt, der nicht so einfach zu lesen und zu ändern ist und keine so gute Leistung aufweist. In dieser exemplarischen Vorgehensweise wird dieser Vorteil veranschaulicht.

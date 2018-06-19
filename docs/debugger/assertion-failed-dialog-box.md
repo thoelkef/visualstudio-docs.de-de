@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456424"
 ---
 # <a name="assertion-failed-dialog-box"></a>Dialogfeld "Assertionsfehler"
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm true lauten muss. Hat diese Bedingung nicht den Wert "true", schlägt die Assertion fehl, die Programmausführung wird unterbrochen, und das Dialogfeld "Assertionsfehler" wird geöffnet.  

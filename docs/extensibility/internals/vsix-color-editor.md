@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147947"
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
 Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von benutzerdefinierten Farben für Visual Studio. Generiert das Tool kann auch designschlüssel-Ressource so, dass die Farben im Code verwendet werden können. Dieses Tool eignet sich zum treffen von Farben für eine Visual Studio-Erweiterung, die Designs unterstützt. Mit diesem Tool kann PKGDEF und XML-Dateien öffnen. Visual Studio-Designs (.vstheme-Dateien) können mit Farben-Editor von Visual Studio Erweiterung verwendet werden, indem Sie die Erweiterung in XML ändern. Darüber hinaus können .vstheme Dateien in eine aktuelle XML-Datei importiert werden.  

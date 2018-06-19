@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464796"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Ruft ein Flag, das angibt, ob das Datensymbol in einer Aggregation oder eine Auflistung von anderen Symbolen aufgeteilt wurde; der Compiler behandelt die Symbole als separate Entitäten, obwohl sie eigentlich Teil eines größeren Symbols sind.  

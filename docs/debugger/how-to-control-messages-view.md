@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473198"
 ---
 # <a name="how-to-control-messages-view"></a>Gewusst wie: Steuern der Meldungsansicht
 Mit Spy++, haben Sie erhebliche Kontrolle über den Inhalt einer [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Sie können [starten und beenden](../debugger/how-to-start-and-stop-the-message-log-display.md) Anzeigen von Nachrichten an einem beliebigen Zeitpunkt, und Sie können angeben:  

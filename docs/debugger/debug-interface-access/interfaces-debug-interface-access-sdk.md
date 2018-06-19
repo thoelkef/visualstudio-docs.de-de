@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474741"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Schnittstellen (Debug Interface Access SDK)
 Methoden werden unter jede Schnittstelle in der Tabelle der Inhalte und auf der Seite "Schnittstelle" in Vtable-Reihenfolge in alphabetischer Reihenfolge aufgeführt.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32065077"
 ---
 # <a name="step-9-try-other-features"></a>Schritt 9: Ausprobieren weiterer Features
 Um den Lerneffekt zu erhöhen, können Sie das Ändern von Symbolen und Farben, das Hinzufügen eines Spieltimers und das Hinzufügen von Sounds ausprobieren. Versuchen Sie, die Spielfläche zu vergrößern und den Timer anzupassen, um das Spiel anspruchsvoller zu machen.  

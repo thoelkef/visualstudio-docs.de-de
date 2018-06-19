@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148597"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Sprachdienst und Erweiterungspunkten-Editor
 Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framework (MEF) Komponenten, z. B. die meisten Language Service-Funktionen erweitern können. Dies sind die haupterweiterung Punkt Kategorien:  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468527"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Ruft ein Flag, das angibt, ob das Modul ist eine NETMODULE-Datei (ein Microsoft Intermediate Language (MSIL)-Modul, das nur die Metadaten und keine systemeigenen Symbole enthält) ab.  

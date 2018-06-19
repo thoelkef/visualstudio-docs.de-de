@@ -5,13 +5,15 @@ ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
 title: Visual Studio-Dokumentation zur Erweiterbarkeit | Microsoft-Dokumentation
-description: "Informieren Sie sich über die Erweiterbarkeit von Visual Studio."
-ms.workload: apexprodleads
+description: Informieren Sie sich über die Erweiterbarkeit von Visual Studio.
+ms.workload:
+- apexprodleads
 ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/22/2017
+ms.locfileid: "27246546"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentation zur Visual Studio-Erweiterbarkeit
 

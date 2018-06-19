@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145411"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Das Schreiben in den Speicher des Benutzers-Einstellungen
 Benutzereinstellungen werden beschreibbaren Einstellungen wie den Werten in der **Extras / Optionen** Dialogfeld Eigenschaftenfenstern und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen, die diese verwenden können, um kleine Mengen von Daten zu speichern. In dieser exemplarischen Vorgehensweise zeigt, wie durch Auslesen und Schreiben in den Speicher des Benutzers Einstellungen Editor in Visual Studio als ein externes Tool hinzufügen.  

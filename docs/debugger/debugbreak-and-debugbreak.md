@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470472"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak und "_debugbreak"
 Sie können die DebugBreak Win32-Funktion aufrufen oder die [__debugbreak](/cpp/intrinsics/debugbreak) systeminterne an einem beliebigen Punkt im Code. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.  

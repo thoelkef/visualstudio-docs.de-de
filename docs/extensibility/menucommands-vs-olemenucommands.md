@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147189"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
 Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  

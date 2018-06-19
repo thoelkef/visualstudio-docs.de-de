@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144368"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Quellcodeverwaltungsfunktionen-Plug-in-API
 Die Datenquellen-Steuerelement-Plug-in-API bietet die folgenden Funktionen, die von der quellcodeverwaltung-Plug-in in Übereinstimmung mit dieser API implementiert werden müssen. Die Signaturen für jede Funktion und die Semantik von der Bitflags zugeordnet ist und andere Parameter werden in dieser Referenz im Detail beschrieben.  
@@ -85,7 +86,7 @@ Die Datenquellen-Steuerelement-Plug-in-API bietet die folgenden Funktionen, die 
 ## <a name="requirements"></a>Anforderungen  
  Header: scc.h  
   
- (Angegeben im SDK-Umgebung gemeinsam enthält Ordner standardmäßig *[Laufwerk]*\Program Files\VSIP 8.0\EnvSDK\common\inc; auch im Ordner "VSIP" mit dem MSSCCI-Beispiel bereitgestellten *[Laufwerk]*\Programme Files\VSIP 8.0\MSSCCI).  
+ (Angegeben im SDK-Umgebung gemeinsam enthält Ordner standardmäßig *[Laufwerk]* \Program Files\VSIP 8.0\EnvSDK\common\inc; auch im Ordner "VSIP" mit dem MSSCCI-Beispiel bereitgestellten *[Laufwerk]* \Programme Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Datenquellen-Steuerelement-Plug-ins](../extensibility/source-control-plug-ins.md)   

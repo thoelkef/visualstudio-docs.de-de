@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144894"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung
 Sie können eigene Inhaltstyp definieren und verknüpfen Sie eine Dateinamenerweiterung darauf mit Managed Extensibility Framework (MEF) editorerweiterungen. In einigen Fällen wurde die Erweiterung bereits durch einen Sprachdienst definiert. dennoch müssen für die Verwendung mit MEF Sie weiterhin es einem Inhaltstyp verknüpfen.  

@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460107"
 ---
 # <a name="allocation-hook-functions"></a>Hookfunktionen für Reservierungen
 Einer Reservierungshookfunktion, installiert mit [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), wird jedes Mal, wenn Arbeitsspeicher belegt, erneut reserviert oder freigegeben wird, aufgerufen. Dieser Hooktyp ist vielseitig verwendbar. Sie können damit beispielsweise testen, wie eine Anwendung auf Speichermangel reagiert, Reservierungsmuster überprüfen oder Reservierungsinformationen für die spätere Analyse protokollieren.  

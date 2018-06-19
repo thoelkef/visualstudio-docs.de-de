@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473637"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Gewusst wie: Erweitern und Reduzieren von Spy++-Strukturen
 Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die über zwei Methoden: durch Klicken auf die Symbole im Fenster oder mithilfe der **Struktur** Menü. Der + "und"-Symbole in der Struktur fungieren, wie in das Fenster der Visual C++-Projekt.  

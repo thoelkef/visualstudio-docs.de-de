@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148193"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen einer Ansicht Randsteuerelement, Befehle und Einstellungen (Spalte Handbücher)
 Sie können die Visual Studio-Text oder den Code-Editor mit Befehlen und Anzeigen von Effekten erweitern.  In diesem Thema wird gezeigt, wie eine beliebte Erweiterungsfunktion Spalte Handbücher Einstieg.  Spalte Handbücher werden visuell Licht auf das Text-Editor-Ansicht zur einfacheren Verwaltung des Codes: auf bestimmte Spaltenbreite gezeichneten Linien verwendet.  Speziell formatierte Code kann für die Beispiele sind wichtig sein, in Blogbeiträgen,-Dokumenten enthalten oder Fehlerberichte.  

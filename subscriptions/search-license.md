@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031181"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
 Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können Sie anhand verschiedener Kriterien bestimmte Abonnenten suchen. Sie können die Abonnentenliste nach Name, E-Mail-Adresse, Abonnementebene und vielen anderen Informationen filtern. 

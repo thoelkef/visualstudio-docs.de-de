@@ -1,6 +1,6 @@
 ---
 title: Lokales Trainieren eines TensorFlow-Modells
-description: "Lokales Ausführen eines TensorFlow-Modells in KI-Tools für Visual Studio"
+description: Lokales Ausführen eines TensorFlow-Modells in KI-Tools für Visual Studio
 keywords: ki, visual studio, tensorflow, lokal
 author: lisawong19
 ms.author: liwong
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708932"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Lokales Trainieren eines TensorFlow-Modells
 
