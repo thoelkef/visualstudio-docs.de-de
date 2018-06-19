@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fde51de5e63a0cde9adebd28ad29fc295c6e9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704266"
 ---
 # <a name="help-viewer-administrator-guide"></a>Administratorhandbuch für Help Viewer
 
@@ -38,7 +39,7 @@ Wenn Clients in Ihrer Netzwerkumgebung keinen Internetzugriff haben, ermöglicht
 
 Mit dem **Hilfeinhalts-Manager** (*HlpCtntMgr.exe*) lassen sich lokale Hilfeinhalte über das Internet auf Clientcomputern bereitstellen. Verwenden Sie folgende Syntax:
 
-```
+```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
@@ -137,7 +138,7 @@ Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern b
 
 2.  Erstellen Sie eine *BAT-Datei* für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Zum Beispiel:
 
-    ```
+    ```cmd
     REM - copy pre-ripped content to ProgramData
     Xcopy %~dp0HelpLibrary2 %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2\ /y /e /k /o
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)

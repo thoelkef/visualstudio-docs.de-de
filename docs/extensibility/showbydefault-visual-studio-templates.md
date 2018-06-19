@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137930"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio-Vorlagen)
 Wenn `false`, gibt an, dass die Vorlage nur angezeigt wird, unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  

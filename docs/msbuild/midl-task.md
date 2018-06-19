@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575724"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137601"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager-Objekt
 Der Sprachdienst den Fenster-Manager implementiert und ist zuständig für das Verwalten von randsteuerelementen (z. B. die Dropdownliste Strich). Weitere Informationen finden Sie unter [Codefenster über die Legacy-API anpassen](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

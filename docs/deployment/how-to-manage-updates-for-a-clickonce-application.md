@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562545"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Gewusst wie: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder programmgesteuert nach Updates suchen. Als Entwickler haben Sie große Flexibilität bei der Angabe, wann und wie die Überprüfung auf Updates ausgeführt werden und gibt an, ob Updates erforderlich sind, in dem die Anwendung auf Updates überprüfen soll.  

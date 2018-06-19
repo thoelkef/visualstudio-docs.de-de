@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262032"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Vorgehensweise: Anpassen der mehrsprachige Benutzeroberfläche von Office
   Die Multilingual User Interface (MUI) ist eine Microsoft Office-Funktion, die der Endbenutzer die Möglichkeit zum Ändern der Sprache der Benutzeroberfläche (UI) bietet. Ein Endbenutzer mit einer englischen Benutzeroberfläche arbeiten können z. B. die Sprache der Benutzeroberfläche auf Spanisch ändern.  

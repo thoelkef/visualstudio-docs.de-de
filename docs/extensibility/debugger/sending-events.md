@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125760"
 ---
 # <a name="sending-events"></a>Senden von Ereignissen
 Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debugging-Modul (DE) ist ein Ereignismodell, basierend auf DCOM. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die Folgendes angeben:  

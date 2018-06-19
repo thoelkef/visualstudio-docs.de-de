@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111190"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Diese Schnittstelle wird verwendet, kritische Debuginformationen, z. B. an einem Haltepunkt beendet und nicht kritische Informationen, z. B. einer Debugmeldung kommunizieren.  

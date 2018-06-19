@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476951"
 ---
 # <a name="visualizer-api-reference"></a>Referenz zur Schnellansicht-API
 Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellansicht für den Visual Studio-Debugger schreiben möchten. Eine Schnellansicht ist eine kleine Anwendung, die die Funktionalität der Benutzeroberfläche des Visual Studio-Debuggers erweitert. Eine Schnellansicht kann angezeigt (und bei Bedarf bearbeiten) ein Datenobjekt eines bestimmten Typs für den die Schnellansicht vorgesehen ist.  

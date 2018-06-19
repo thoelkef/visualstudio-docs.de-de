@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268376"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem server
   Sie können die Daten in einer Anpassung auf Dokumentebene programmieren, ohne das Objektmodell der Microsoft Office Word oder Microsoft Office Excel verwenden. Dies bedeutet, dass Sie erreichen die Daten, die in einem Dokument auf einem Server befindet, die über keinen Word oder Excel installiert. Code beispielsweise auf einem Server (z. B. in einer [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seite ") können die Daten in einem Dokument anpassen und angepasste Dokument an Endbenutzer gesendet. Wenn der Endbenutzer das Dokument geöffnet wird, bindet Datenbindungscode in die Projektmappenassembly angepassten Daten in das Dokument. Dies ist möglich, da die Daten im Dokument über die Benutzeroberfläche getrennt ist. Weitere Informationen finden Sie unter [zwischengespeicherten Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md).  

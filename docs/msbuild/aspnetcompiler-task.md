@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567953"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler-Aufgabe
 Die `AspNetCompiler`-Aufgabe umschließt „aspnet_compiler.exe“, ein Hilfsprogramm zum Vorkompilieren von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen.  

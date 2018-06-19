@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466152"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Das DIA Symbol Suchen von Prozedur, sodass eine neue Benutzeroberfläche Auskunft über den Fortschritt des Versuchs Speicherort auf Empfangsvorgänge Rückrufe.  

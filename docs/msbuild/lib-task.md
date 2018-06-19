@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574219"
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe"). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](/cpp/build/reference/lib-reference) und [Ausführen von LIB](/cpp/build/reference/running-lib).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548475"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;FriendlyName&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `friendlyName` -Element des `vstov4` Namespace speichert den angezeigten Namen in der Liste der installierten Programme.  

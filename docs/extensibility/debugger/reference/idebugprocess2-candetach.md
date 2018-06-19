@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114442"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 Bestimmt, ob die Sitzung Debug-Manager (SDM) den Prozess trennen kann.  

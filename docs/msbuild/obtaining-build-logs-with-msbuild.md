@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574684"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in eine oder mehrere Dateien speichern möchten. Sie können auch eine benutzerdefinierte Protokollierung zum Sammeln von Builddaten angeben. Weitere Informationen zu MSBuild-Befehlszeilenschalter, die in diesem Thema nicht behandelt werden, finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  

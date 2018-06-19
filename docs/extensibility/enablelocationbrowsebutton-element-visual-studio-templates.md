@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126844"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton-Element (Visual Studio-Vorlagen)
 Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar, in der **neues Projekt** Dialogfeld, sodass Benutzer können problemlos ändern, das Standardverzeichnis, in dem ein neues Projekt gespeichert ist.  

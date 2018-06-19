@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127098"
 ---
 # <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden Sie das Aktivitätsprotokoll
 VSPackages können Meldungen im Aktivitätsprotokoll schreiben. Diese Funktion ist besonders nützlich zum Debuggen von VSPackages im Einzelhandel Umgebungen.  
@@ -48,7 +49,7 @@ VSPackages können Meldungen im Aktivitätsprotokoll schreiben. Diese Funktion i
   
 1.  Führen Sie Visual Studio mit der [/Log](../ide/reference/log-devenv-exe.md) Befehlszeilenschalter ActivityLog.xml während der Sitzung auf dem Datenträger speichert.
 
-2.  Nach dem Schließen von Visual Studio, suchen Sie das Aktivitätsprotokoll im Unterordner "" für Visual Studio-Daten: *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Nach dem Schließen von Visual Studio, suchen Sie das Aktivitätsprotokoll im Unterordner "" für Visual Studio-Daten: *%appdata%* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor. Hier ist ein typische Eintrag:  
   

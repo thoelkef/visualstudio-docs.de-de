@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478030"
 ---
 # <a name="windows-view"></a>Fensteransicht
 Wenn Sie erstmalig Spy++ öffnen, zeigt Fensteransicht eine Struktur mit allen Windows- und Steuerelemente im System an. Der Fenstername Handle- und Klasse werden angezeigt. Das aktuelle Desktopfenster wird am oberen Rand der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops und anhand der Hierarchie Standardfenster aufgeführt sind. Nebengeordnete Fenster werden in erweiterbaren Listen unter ihre übergeordneten Elemente eingezogen angezeigt.  

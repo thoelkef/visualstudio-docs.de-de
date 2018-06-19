@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478762"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Legen Sie eine Überwachung auf Variablen mithilfe der überwachen "und" Schnellüberwachung Fenstern in Visual Studio
 Während des Debuggens, können Sie die **Überwachen** und **Schnellüberwachung** Windows, Variablen und Ausdrücke zu beobachten.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable. 

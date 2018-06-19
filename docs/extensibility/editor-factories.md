@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128247"
 ---
 # <a name="editor-factories"></a>Editor-Factorys
 Eine Editorfactory-Editor-Objekte erstellt und schreibt sie in einen Fensterrahmen als physische Sicht bezeichnet. Erstellt die Dokumentdaten und Ansicht Document-Objekte, die zum Erstellen von Editoren und Designern erforderlich sind. Eine Editorfactory ist erforderlich, um die Visual Studio-Core-Editor und alle standard-Editors zu erstellen. Ein benutzerdefinierter Editor kann optional auch eine Editor-Factory erstellt werden.  

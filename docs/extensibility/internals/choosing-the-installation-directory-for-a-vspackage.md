@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134438"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Das Installationsverzeichnis auswählen für ein VSPackage
 Dateisystem des Benutzers muss ein VSPackage und die unterstützenden Dateien. Der Speicherort hängt davon ab, ob das VSPackage wird verwaltet oder nicht verwaltet, die Seite-an-Seite-Versionsschema und Benutzerauswahl.  

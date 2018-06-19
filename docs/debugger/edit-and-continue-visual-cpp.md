@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474547"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Finden Sie unter [unterstützt Code Änderungen (C++)](../debugger/supported-code-changes-cpp.md) für Informationen zu den Einschränkungen von bearbeiten und fortfahren.

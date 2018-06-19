@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142876"
 ---
 # <a name="wizard-vsz-file"></a>Assistenten (. VSZ)-Datei
 Die integrierte Entwicklungsumgebung (IDE) verwendet .vsz-Dateien um den Assistenten zu starten. Diese VSZ-Dateien enthalten Informationen, die die IDE verwendet, um zu bestimmen, welche Assistenten aufrufen und welche Informationen an den Assistenten übergeben.  

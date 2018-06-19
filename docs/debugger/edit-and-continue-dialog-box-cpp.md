@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481787"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
 Mit der Funktion "Bearbeiten und Fortfahren" konnten die von Ihnen vorgenommenen Änderungen am systemeigenem Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit "Bearbeiten und Fortfahren" Änderungen an systemeigenem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  

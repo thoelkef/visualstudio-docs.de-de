@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562831"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine bereitstellungstechnologie, mit dem Sie selbstaktualisierung Windows-basierten Anwendungen erstellen, die installiert und mit minimaler Benutzerinteraktion ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

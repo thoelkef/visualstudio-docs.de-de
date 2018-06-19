@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471163"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Dialogfeld "Schriftart" (Hilfe zu Microsoft Spy++)
 Mithilfe dieses Dialogfelds konfigurieren Sie die Schriftart in verwendet eine [Spy++-Ansichten](../debugger/spy-increment-views.md) Fenster. Um dieses Dialogfeld anzuzeigen, erweitern Sie die **Ansicht** Menü, und wählen Sie **Schriftart**.  

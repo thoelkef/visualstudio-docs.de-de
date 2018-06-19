@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Importieren von Veröffentlichungseinstellungen und Bereitstellung in IIS
           href: tutorial-import-publish-settings-iis.md
+        - name: Bereitstellen in IIS mithilfe von Web Deploy
+          href: deploy-iis-with-web-deploy.md
         - name: Continuous Deployment von ASP.NET Core in Azure mit Git
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: Bereitstellen von ASP.NET in IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: Veröffentlichen in Kubernetes mit Kubernetes-Tools für Visual Studio
+          href: tutorial-kubernetes-tools.md
     - name: Systemeigen
       items:
         - name: Bereitstellung in Visual C++

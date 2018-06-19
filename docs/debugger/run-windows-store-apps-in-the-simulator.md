@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480660"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uwp-apps im Simulator ausführen
 Visual Studio-Simulator für uwp-apps ist eine Desktopanwendung, die eine uwp-app simuliert. In der Regel sollten Sie auf dem lokalen Computer, einem angeschlossenen Gerät oder einem Remotecomputer zu debuggen. In einigen Szenarien möchten Sie jedoch Visual Studio-Simulator zu verwenden, um eine andere physische Bildschirmgröße und-Auflösung zu emulieren. Sie können auch typische Touch- und rotationsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.

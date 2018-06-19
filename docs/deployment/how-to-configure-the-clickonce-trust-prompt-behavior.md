@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561554"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Gewusst wie: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit
 Sie können die ClickOnce-vertrauensaufforderung Steuerelement konfigurieren Sie, ob Endbenutzer die Möglichkeit, installieren die ClickOnce-Anwendungen, z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, WPF-Browser angegeben werden Anwendungen und Office-Projektmappen. Konfigurieren Sie die vertrauenswürdige Eingabeaufforderung durch Festlegen von Registrierungsschlüsseln auf jedes Endbenutzers Computer.  

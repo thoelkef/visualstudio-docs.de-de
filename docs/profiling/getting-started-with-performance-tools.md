@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576442"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die beim Erfassen, Anzeigen und Analysieren der Codeleistung mithilfe der Visual Studio-Leistungstools angewendet werden.  

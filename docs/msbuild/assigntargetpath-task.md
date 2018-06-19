@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568922"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath-Aufgabe
 Diese Aufgabe akzeptiert Listendateien und fügt `<TargetPath>`-Attribute hinzu, wenn sie nicht bereits angegeben wurden.  

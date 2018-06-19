@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139639"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Exemplarische Vorgehensweise: Zugreifen auf DTE-Objekt aus einer-Editor-Erweiterung
 In VSPackages, erhalten Sie das DTE-Objekt durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> Methode mit dem Typ des DTE-Objekts. In Managed Extensibility Framework (MEF)-Erweiterungen, importieren Sie <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> und rufen Sie anschließend die <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> Methode mit einem <xref:EnvDTE.DTE>.  

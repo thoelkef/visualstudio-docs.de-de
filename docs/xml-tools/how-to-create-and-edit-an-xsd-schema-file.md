@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477456"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Vorgehensweise: Erstellen und bearbeiten eine XSD-Schemadatei
 

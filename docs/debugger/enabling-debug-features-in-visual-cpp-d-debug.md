@@ -31,6 +31,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472577"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Aktivieren von Debugfeatures in Visual C++ (/D_DEBUG)
 In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], Debugfunktionen, z. B. Assertionen aktiviert werden, wenn Sie das Programm mit dem Symbol Kompilieren **_DEBUG** definiert. Sie können definieren, **_DEBUG** auf zwei Arten:  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480266"
 ---
 # <a name="symbol-locations"></a>Symbolspeicherorte
 Die meisten Symbole haben eine definierte Position innerhalb der Bilddatei. Speicherort des Symbols wird angegeben, mit einem Wert aus der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) Enumeration. Das Symbol unterstützen möglicherweise weitere Eigenschaften abhängig von ihrem Speicherort.  

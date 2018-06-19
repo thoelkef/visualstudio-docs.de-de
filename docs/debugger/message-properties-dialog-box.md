@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481540"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einer bestimmten Nachricht suchen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Wählen Sie einen beliebigen nachrichtenknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
