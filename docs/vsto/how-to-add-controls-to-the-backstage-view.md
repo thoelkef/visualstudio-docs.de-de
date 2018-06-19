@@ -28,6 +28,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549076"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht
   Können Sie dem Menüband-Designer zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei** Registerkarte. Beim Ausführen der Anwendung, Steuerelemente, die Sie zum Hinzufügen der **Datei** Registerkarte angezeigt werden, eine Gruppe namens **-Add-ins**.  

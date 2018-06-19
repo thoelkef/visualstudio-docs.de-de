@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135821"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützung für das Fenster "Auto" in einen Legacy-Sprachdienst
 Die **"Auto"** Fenster zeigt Ausdrücke wie z. B. Variablen und Parametern, die im Bereich befinden, wenn das Programm, das gerade gedebuggt wird (entweder aufgrund von einem Haltepunkt oder einer Ausnahme) angehalten wird. Lokale oder globale, Variablen und Parametern, die im lokalen Bereich geändert wurden, können die Ausdrücke enthalten. Die **"Auto"** Fenster kann auch Instanziierungen von einer Klasse, Struktur oder einem anderen Typ enthalten. Elemente, die eine ausdrucksauswertung auswerten kann potenziell angezeigt werden kann die **"Auto"** Fenster.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140494"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize-Funktion
 Diese Funktion werden alle Zuweisungen oder geöffneten Verbindungen, die von einem vorherigen Aufruf erstellt bereinigt die [SccInitialize](../extensibility/sccinitialize-function.md) als Vorbereitung für das Herunterfahren der Datenquellen-Steuerelement-Plug-in.  

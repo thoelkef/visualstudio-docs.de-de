@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139850"
 ---
 # <a name="web-site-support"></a>Der Support-Website
 Ein Projektsystem Website ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Ein Website-Projekt generiert eine ausführbare Datei für jede Webseite, die Code verknüpft ist. Zusätzliche ausführbare Dateien werden aus der Quellcodedateien im Ordner "App_Code" generiert.  

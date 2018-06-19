@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454514"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Verwenden der Visual Studio für Mac-Tools für Unity
 

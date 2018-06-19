@@ -25,6 +25,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704485"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Gibt eine Datei an, die Fehler speichern und anzeigen soll, wenn Sie eine Projektmappe ausführen, erstellen, erneut erstellen oder bereitstellen.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135753"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Senden von Startereignisse nach einem starten
 Sobald die Debugging-Modul (DE) an die Anwendung angefügt ist, sendet er eine Reihe von Startereignisse die Debugsitzung an.  

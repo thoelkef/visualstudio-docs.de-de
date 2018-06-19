@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469161"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Ruft ein Flag, das angibt, ob ein Zeigertyp einen Rvalue-Verweis ist. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) in einen Zeigertyp festgelegt ist.  

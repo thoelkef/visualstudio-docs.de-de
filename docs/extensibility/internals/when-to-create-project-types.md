@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140419"
 ---
 # <a name="when-to-create-project-types"></a>Wenn Projekttypen erstellen
 Erstellen einen neuen Projekttyp bietet eine Grundlage für die Anpassung von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Ihre Benutzer. Erstellen einen neuen Projekttyp ist jedoch nicht erforderlich, damit alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anpassungen. Die folgenden Richtlinien können Ihnen helfen zu bestimmen, ob für ein neuen Projekttyp für Ihr Szenario erforderlich ist.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471111"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat
 Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Überprüfen Sie, dass der Dienst ausgeführt wird, mithilfe der **Services** -tool vom **Verwaltung**.  

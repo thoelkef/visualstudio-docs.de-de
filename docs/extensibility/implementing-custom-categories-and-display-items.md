@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134882"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementieren benutzerdefinierte Kategorien und Anzeigeelemente
 Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) durch benutzerdefinierte Kategorien und Anzeigeelemente.
@@ -47,7 +48,7 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
 
 ## <a name="to-create-or-identify-categories"></a>Zum Erstellen oder Identifizieren von Kategorien
 
--   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\`<Category>`]
+-   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >* \FontAndColors\\`<Category>`]
 
      *\<Kategorie >* der nicht lokalisierte Name der Kategorie.
 
@@ -62,7 +63,7 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
 
 ## <a name="to-create-or-identify-groups"></a>Zum Erstellen oder identifizieren Gruppen
 
--   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\  *\<Gruppe >*]
+-   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >* \FontAndColors\\  *\<Gruppe >*]
 
      *\<Gruppe >* der nicht lokalisierte Name der Gruppe.
 

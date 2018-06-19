@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142576"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Manifest Visual Studio-Schemareferenz
 Dieses Schema beschreibt das Format von der Visual Studio-Manifest (.vstman) Vorlagendateien für Visual Studio Projekt- oder Elementvorlagen generiert und beschreibt den Speicherort und andere relevante Informationen über die Vorlage.  

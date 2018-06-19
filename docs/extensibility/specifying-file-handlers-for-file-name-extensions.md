@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140686"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateinamenerweiterungen
 Es gibt zahlreiche Möglichkeiten, um die Anwendung zu bestimmen, die eine Datei verarbeitet, besitzt eine bestimmte Dateierweiterung an. Die Verben OpenWithList und "OpenWithProgIds" sind zwei Möglichkeiten, unter dem Registrierungseintrag für die Dateierweiterung dateihandlern anzugeben.  

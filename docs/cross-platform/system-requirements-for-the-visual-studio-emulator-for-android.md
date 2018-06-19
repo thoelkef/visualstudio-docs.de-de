@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068660"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer ausgeführt, die Virtualisierungstechnologie für Windows 8 und höhere Versionen. Um den Emulator ausführen, muss der Computer die in diesem Thema beschriebenen Voraussetzungen zum Ausführen von Hyper-V erfüllen.  

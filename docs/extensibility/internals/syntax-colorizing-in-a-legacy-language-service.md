@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135947"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Farbliche Kennzeichnung von Syntax in ein Legacy-Sprachdienst
 Syntaxhervorhebung ist ein Feature, das bewirkt, dass andere Elemente von einer Programmiersprache Ihrer Wahl, die in einer Quelldatei in verschiedenen Farben und Formaten angezeigt werden. Um dieses Feature zu unterstützen, müssen Sie angeben, ein Parser oder Scanner, die die lexikalische Elemente oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden, Schlüsselwörter, Trennzeichen (z. B. runden oder geschweiften Klammern) und Kommentaren farbliche Kennzeichnung von ihnen auf unterschiedliche Weise.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135367"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Vorgehensweise: Listen von Symbolen, die von der Bibliothek bereitgestellt, den Objekt-Manager verfügbar machen
 Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, übergeben Sie die Anforderungen für neue Daten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen. Die Bibliotheken zu reagieren, indem Sie die angeforderte Daten zum Bereitstellen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objektmanager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager Ruft die Methoden in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle zum Abrufen der Daten und zum Auffüllen von oder aktualisieren die Ansichten der Symbolsuche Tools verwendet.  

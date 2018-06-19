@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110626"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 Legt fest, ob die Debugging-Modul (DE) die Möglichkeit, diese Ausnahme an die Anwendung gedebuggt wird unterstützt, wenn die Ausführung fortsetzt übergeben.  

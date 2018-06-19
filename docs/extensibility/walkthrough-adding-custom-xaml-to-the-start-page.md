@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140058"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML an die Startseite
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine benutzerdefinierte Visual Studio-Startseite zu erstellen, die einen Webbrowser enthält.  

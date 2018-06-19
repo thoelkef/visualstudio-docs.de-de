@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142629"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Exemplarische Vorgehensweise: Erstellen eines Symbols Rand
 Sie können die Darstellung der Editor Ränder anpassen, mithilfe von benutzerdefinierten Editor-Erweiterungen. In dieser exemplarischen Vorgehensweise wird ein benutzerdefiniertes Symbol Indikatorrand versehen, wenn das Wort "Todo" in einem Codekommentar angezeigt wird.  

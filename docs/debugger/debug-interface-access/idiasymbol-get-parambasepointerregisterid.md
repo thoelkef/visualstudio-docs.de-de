@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469811"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 Ruft die ID des Registers, die einen Basis Zeiger auf die Parameter enthält. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) festgelegt ist, um `SymTagFunction`.  
