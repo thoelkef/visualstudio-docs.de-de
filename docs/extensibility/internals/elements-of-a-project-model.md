@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135558"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projekt-Modells
 Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Teilen Sie Basisstruktur: das Projektmodell für den Projekttyp. In Ihrem Projektmodell, das das VSPackage ist, Sie entwickeln, erstellen Sie Objekte, die gemeinsam mit globalen Funktionen, die von der IDE bereitgestellt und mit entwurfsentscheidungen übereinstimmen. Obwohl Sie steuern, wie ein Projektelement beibehalten wird, können z. B. Sie keine Benachrichtigung gesteuert werden, dass eine Datei beibehalten werden muss. Wenn ein Benutzer den Fokus auf ein Projekt öffnen Element platziert und wählt **speichern** auf die **Datei** Menü auf die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menü Projektcode Typ muss Balken-, den Befehl in der IDE abzufangen, persistent speichern die Datei und Benachrichtigungen der IDE an, dass die Datei nicht mehr geändert wird.  

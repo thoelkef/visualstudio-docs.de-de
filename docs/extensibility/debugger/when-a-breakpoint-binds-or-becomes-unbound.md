@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134407"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Wenn ein Haltepunkt bindet, oder es wird aufgehoben
 Wenn Sie ein Haltepunkt zu dem Zeitpunkt nicht gebunden werden kann, erfolgt ein Aufruf an, die [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) -Methode, die Bindung Zeit und die Erstellungszeit des Haltepunkts unterscheiden.  

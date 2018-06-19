@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134336"
 ---
 # <a name="custom-parameters"></a>Benutzerdefinierte Parameter
 Benutzerdefinierte Parameter Steuerung der Arbeitsweise eines Assistenten, nachdem ein Assistent gestartet wurde. Eine verwandte VSZ-Datei enthält ein Array der benutzerdefinierten Parameter, die von der integrierten Entwicklungsumgebung (IDE) gepackt und beim Start des Assistenten als ein Array von Zeichenfolgen an den Assistenten übergeben werden. Der Assistent analysiert das Array von Zeichenfolgen und verwendet die Informationen zum Steuern der tatsächlichen Ausführung des Assistenten. Auf diese Weise kann anpassen, ein Assistenten Funktionalität abhängig vom Inhalt der VSZ-Datei.  

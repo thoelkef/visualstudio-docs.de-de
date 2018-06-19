@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130773"
 ---
 # <a name="error-codes"></a>Fehlercodes
 Wenn eine Quelle Steuerelement-Plug-in-API-Funktion einen Fehler zurückgibt, muss es eine der folgenden Fehlercodes werden. Alle Fehler werden Warnungen oder nur zu Informationszwecken Fehlercodes sind positiv, negativ ist, und Erfolg ist 0.  

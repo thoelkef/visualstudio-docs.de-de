@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948261"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Gewusst wie: Ändern des Namespace einer domänenspezifischen Sprache
 Sie können den Namespace einer domänenspezifischen Sprache ändern. Sie müssen die Änderungen in der **Explorer für DSL**, in den Eigenschaften des Projekts Dsl-Paket und die Assemblyinformationen.

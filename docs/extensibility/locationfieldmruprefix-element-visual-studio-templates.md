@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136338"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen)
 Gibt die zuletzt verwendeten (MRU) Pfade in der **neues Projekt** und **neues Element hinzufügen** (Dialogfeld).  

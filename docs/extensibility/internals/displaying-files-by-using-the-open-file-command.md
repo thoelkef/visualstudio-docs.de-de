@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130892"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl Open File
 Die folgenden Schritte beschreiben, wie die IDE behandelt die **Dateiöffnungsmodus** Befehl, der verfügbar ist die **Datei** im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Schritte werden auch beschrieben, wie Projekte auf Aufrufe reagieren soll, die von diesem Befehl stammen.  

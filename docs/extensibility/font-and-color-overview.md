@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130224"
 ---
 # <a name="font-and-color-overview"></a>Schriftart und Farbe (Übersicht)
 In diesem Thema wird erläutert, Schriftart und Farbe Einstellungen für Text in die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Es führt auch zu die Konzepten der Kategorien und Elemente anzeigen, und es wird beschrieben, wie VSPackages und die Core-Editor Textattribute.  

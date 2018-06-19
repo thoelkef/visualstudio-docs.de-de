@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128771"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Dateiänderungsbenachrichtigungen unterdrücken
 Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld angezeigt, mit der Meldung **möchten Sie die Änderungen auf die folgenden Elemente zu speichern?** Dies wird als Datei-änderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld anzeigen immer wieder schnell lästig werden.  

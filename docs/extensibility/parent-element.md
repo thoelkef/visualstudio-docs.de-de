@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137104"
 ---
 # <a name="parent-element"></a>Parent-Element
 Das übergeordnete Element eines Felds Schaltfläche oder Kombinationsfeld kann nur eine Gruppe sein. Das übergeordnete Element eines Menüs oder einer Gruppe kann eine beliebige andere Menü bzw. Gruppe sein. In einem [CommandPlacement Element](../extensibility/commandplacement-element.md), dieses Element ist erforderlich; in allen anderen Fällen ist er optional. Wenn dieses Element nicht angegeben ist, das übergeordnete Element des `Group_Undefined:0` wird impliziert werden.  

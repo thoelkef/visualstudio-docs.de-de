@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133996"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien
 Eine Vorlage Directory Beschreibungsdatei (VSDIR) ist eine Textdatei, mit der integrierten Entwicklungsumgebung (IDE) für die Anzeige Ordnern, Assistenten .vsz-Dateien und Dateien, die Ihr Projekt in Dialogfeldern zugeordnet sind. Den Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Alle VSDIR-Dateien in einer referenzierten Speicherorts werden zusammengeführt, obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben.  

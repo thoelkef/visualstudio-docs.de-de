@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475793"
 ---
 # <a name="using-spy"></a>Verwenden von Spy++
 Spy++-(SPYXX. EXE-Datei) ist ein Win32-basierte-Hilfsprogramm, das Sie eine grafische Ansicht der des Systems Prozesse, Threads, Fenster und fenstermeldungen bietet. Dieser Abschnitt der Spy++-Hilfe enthält den folgenden Hilfethemen:  

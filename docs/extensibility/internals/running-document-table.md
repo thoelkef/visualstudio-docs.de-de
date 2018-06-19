@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134092"
 ---
 # <a name="running-document-table"></a>Dokumenttabelle der ausgeführten
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur die Dokumenttabelle der ausgeführten (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument wird jeder, der beibehalten wird, einschließlich Dateien in einem Projekt oder die Haupt-Projektdatei (z. B. eine VCXPROJ-Datei).  

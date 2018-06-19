@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132262"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Text-Marker
 Wenn Sie einen benutzerdefinierten Text Marker zum Hervorheben oder Organisieren von Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
@@ -34,9 +35,9 @@ Wenn Sie einen benutzerdefinierten Text Marker zum Hervorheben oder Organisieren
   
 1.  Erstellen Sie einen Registrierungseintrag wie folgt:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >*\Text Editor\External Marker\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*ist eine `GUID` zur Identifizierung der Markierung hinzugefügt wird  
+     *\<MarkerGUID >* ist eine `GUID` zur Identifizierung der Markierung hinzugefügt wird  
   
      *\<Version >* ist die Version des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], z. B. 8.0  
   
@@ -45,7 +46,7 @@ Wenn Sie einen benutzerdefinierten Text Marker zum Hervorheben oder Organisieren
     > [!NOTE]
     >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann mit einem anderen Stamm überschrieben werden, wenn die Visual Studio-Shell, müssen Sie weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Erstellen Sie die vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >*\Text Editor\External Marker\\*\<MarkerGUID >*  
+2.  Erstellen Sie die vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
   
     -   (Standard)  
   

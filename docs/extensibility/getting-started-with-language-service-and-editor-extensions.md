@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131579"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Sprachdienst und -Editor-Erweiterungen
 Editorerweiterungen können Sie den Dienst neue Sprachfunktionen wie gliedern, Klammer, IntelliSense und Glühbirnen einer beliebigen Programmiersprache oder andere Inhaltstypen hinzufügen. Sie können auch das Aussehen und Verhalten von Visual Studio-Editor, z. B. Text Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente anpassen. Sie können auch einen eigenen Typ des Inhalts definieren und geben Sie das Aussehen und Verhalten des Text-Ansichten, in denen Ihre Inhalte angezeigt wird.  
@@ -66,7 +67,7 @@ Editorerweiterungen können Sie den Dienst neue Sprachfunktionen wie gliedern, K
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ausführen von Erweiterungen in der experimentellen Instanz  
  Sie können Ihre funktionierenden Version von Visual Studio isolieren, während Sie eine Erweiterung entwickeln, durch die Bereitstellung in der folgenden experimentellen Ordner (unter Windows Vista und Windows 7):  
   
- *%LocalAppData%*\VisualStudio\10.0Exp\Extensions\\*Unternehmen*\\*ExtensionID*  
+ *%LocalAppData%* \VisualStudio\10.0Exp\Extensions\\*Unternehmen*\\*ExtensionID*  
   
  wobei *%LocalAppData%* ist der Name des angemeldeten Benutzers *Unternehmen* ist der Name des Unternehmens, das die Erweiterung besitzt und *ExtensionID* ist die ID der Erweiterung.  
   

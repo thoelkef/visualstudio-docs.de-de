@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133269"
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
 Benutzer können anzeigen und ändern die konfigurationsabhängigen "und"-unabhängigen Projekteigenschaften mit Eigenschaftenseiten. Ein **Eigenschaftenseiten** Schaltfläche ist aktiviert, der **Eigenschaften** Fenster oder auf der Symbolleiste des Projektmappen-Explorers für Objekte, die eine Eigenschaft Seitenansicht des ausgewählten Objekts bereitzustellen. Eigenschaftenseiten werden von der Umgebung erstellt und sind für Projektmappen und Projekten verfügbar. Sie können jedoch auch sein zur Verfügung gestellt, für Projektelemente, die stellen die konfigurationsabhängigen Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt anderen Compiler Switch-Einstellungen korrekt erforderlich ist.  

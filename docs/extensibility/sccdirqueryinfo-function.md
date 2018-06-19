@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140367"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo-Funktion
 Diese Funktion überprüft eine Liste der vollständig qualifizierte Verzeichnisse für ihren aktuellen Status an.  

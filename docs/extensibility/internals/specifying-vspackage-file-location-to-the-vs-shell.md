@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132001"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Angeben der VSPackage-Dateispeicherort für die Visual Studio-Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss zum Suchen der Assembly-DLL für das VSPackage lädt, können. Sie können ihn auf verschiedene Weise finden, wie in der folgenden Tabelle beschrieben.  

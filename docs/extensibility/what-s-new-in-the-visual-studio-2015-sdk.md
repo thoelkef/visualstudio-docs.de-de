@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144706"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Was&#39;s in der Visual Studio 2015 SDK
 Das Visual Studio SDK hat die folgenden neuen und aktualisierten Features für Visual Studio 2015 und Visual Studio 2015, aktualisiert Visual Studio 2017.  

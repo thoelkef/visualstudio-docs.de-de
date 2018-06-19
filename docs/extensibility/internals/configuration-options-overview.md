@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132468"
 ---
 # <a name="configuration-options-overview"></a>Optionen (Übersicht)
 Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die von einer debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration handelt es sich um einen Buildtyp mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Projektmappen enthalten standardmäßig zwei Konfigurationen, Debug und Release. Diese Konfigurationen können angewendet werden, deren Standardeinstellungen verwenden oder geändert, um Ihren jeweiligen Lösung und/oder Projekt Anforderungen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine direkte-Komponente. Projekte müssen nicht mehrere Konfigurationen jedoch unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  

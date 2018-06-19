@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129708"
 ---
 # <a name="solutions"></a>Projektmappen
 Eine Lösung ist eine Gruppierung von einem oder mehreren Projekten, die zum Erstellen einer Anwendung zusammenarbeiten. Die Projekt- und Status Informationen, die die Projektmappe betreffen, werden in zwei Projektmappendateien, einer textbasierten Projektmappendatei (sln) und eine binäre Projektmappendatei Benutzer Option (.suo) gespeichert.  

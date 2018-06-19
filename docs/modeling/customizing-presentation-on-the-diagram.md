@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946831"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
 Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprach-Designers. Normalerweise konstruieren die Benutzer ihre Modelle mit dem Diagramm. Sie können das Diagramm wie in den folgenden Themen beschrieben anpassen.

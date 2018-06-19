@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476184"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Gewusst wie: Verwenden des Suchtools
 Können Sie das Suchtool in der **"Fenster Suchen"** Dialogfeld zum Anzeigen von Fenstereigenschaften oder Nachrichten. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, untergeordnete Fenster überlappen deaktiviert.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142899"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im Editor
 Sie können die Visual Studio-Editor von legacy-Schnittstellen zugreifen. Das Visual Studio SDK enthält Adapter, die genannte *Shims*, die diese Schnittstellen für die Interaktion mit dem neuen Editor ermöglichen. Dennoch wird empfohlen, dass Sie Ihren Legacycode, um den neuen Editor API aktualisieren. Codes bieten eine bessere Leistung, und Sie können neue Technologien wie Windows Presentation Foundation (WPF) und Managed Extensibility Framework (MEF) verwenden.  

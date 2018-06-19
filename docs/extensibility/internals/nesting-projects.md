@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131159"
 ---
 # <a name="nesting-projects"></a>Schachtelung-Projekte
 Enterprise-Anwendungsentwickler, die Ihre VS-Paket verwenden, können ähnliche Arten von Projekten, die zusammen in bequem gruppieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit *Projekt Schachtelung*. Beispielsweise verwendet die Enterprise-Vorlagenprojekt geschachtelte Projekte zum Gruppieren von Projekten in Kategorien. Business Fassade Projekte, Webbenutzeroberfläche Projekte usw. werden in einer Kategorie gruppiert.  

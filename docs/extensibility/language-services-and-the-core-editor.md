@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138479"
 ---
 # <a name="language-services-and-the-core-editor"></a>Language-Dienste und die Core-Editor
 In Visual Studio-Editoren sind häufig einen Sprachdienst zugeordnet. Unter anderem bietet ein Sprachdienst Syntaxfarben, Anweisungsvervollständigung, IntelliSense und Formatieren von Text.  

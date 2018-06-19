@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128941"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Erstellen eines Source Control VSPackage
 Diese Dokumentation enthält Links zu den Architekturübersicht über eine quellcodeverwaltung Paket integriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], die API, die durch die Schnittstellen implementiert werden und die Dienste zu konsumierende definiert ist, und ein Beispiel, das veranschaulicht eine einfache Quelle Steuern Sie die paketimplementierung.  

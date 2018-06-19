@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130582"
 ---
 # <a name="project-modeling"></a>Projekt Modellierung
 Der nächste Schritt bei der Bereitstellung von Automation für Ihr Projekt besteht darin, die standard-Projekt-Objekte implementieren: die <xref:EnvDTE.Projects> und `ProjectItems` Sammlungen; das `Project` und <xref:EnvDTE.ProjectItem> Objekte und die übrigen Objekte, die für Ihre Implementierung eindeutig. Diese standard-Objekte werden in Dteinternal.h-Datei definiert. Im Beispiel für den BscPrj wird eine Implementierung der standardmäßigen Objekte bereitgestellt. Sie können diese Klassen als Modelle eigene Objekte standard-Projekt erstellen, die Seite-an-Seite des eigenständigen Bandlaufwerks mit Projektobjekte von anderen Projekttypen.  

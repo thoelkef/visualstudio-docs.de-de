@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144355"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der primäre Agent der Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Shell stellt die notwendige Funktionalität zum Aktivieren von VSPackages zu gemeinsamer Dienste gemeinsam nutzen. Da das architektonische Ziel des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden primäre Funktionalität steht Ihnen in der VSPackages, zu die Shell ist ein Framework, die grundlegende Funktionalität und Cross-Kommunikation zwischen der Komponente VSPackages unterstützen.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103226"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Diese Schnittstelle weist dem Sitzungs-Manager (SDM), dass ein ausstehender Haltepunkt erfolgreich an ein Programm geladenen gebunden wurde.  

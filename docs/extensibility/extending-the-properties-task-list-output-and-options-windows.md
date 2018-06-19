@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135539"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Erweitern Sie die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows
 Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seiten- und eine neue Einstellung für die **Eigenschaften** Seite sowie Informationen zum Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.  

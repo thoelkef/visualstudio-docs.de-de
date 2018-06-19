@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134439"
 ---
 # <a name="delayed-document-loading"></a>Verzögertes Laden von Dokument
 Wenn ein Benutzer eine Visual Studio-Projektmappe erneut öffnet, werden die meisten der zugehörigen Dokumente nicht sofort geladen werden. Die dokumentfensterrahmen in einem ausstehenden Initialisierung Zustand erstellt wird, und ein Platzhalterdokument (einen Stub-Frame genannt) wird in der Ausführung-Dokument-Tabelle (RDT) platziert.  
@@ -64,4 +65,4 @@ Wenn ein Benutzer eine Visual Studio-Projektmappe erneut öffnet, werden die mei
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testen von Erweiterungen, um festzustellen, ob sie erzwingen, dass die Initialisierung  
  Es gibt keinen sichtbaren Hinweis an, ob ein Dokument initialisiert wurde, sodass es schwierig sein kann, um festzustellen, ob die Erweiterung Initialisierung erzwungen wird. Sie können einen Registrierungsschlüssel, die Überprüfung erleichtert festlegen, den Titel des jedes Dokument verursacht werden, die um den Text nicht vollständig initialisiert ist `[Stub]` im Titel.  
   
- In **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**legen **StubTabTitleFormatString** auf **{0} [Stub]**.
+ In **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** legen **StubTabTitleFormatString** auf **{0} [Stub]**.

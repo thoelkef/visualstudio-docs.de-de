@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135677"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst
 Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst finden Sie eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und kann haben unterschiedliche Werte je nach Zusammenhang, in der der Codeausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst den Ausschnitt formatieren.  
@@ -52,7 +53,7 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
   
  Es gibt in der Regel zwei Orte, auf die Snippet-Vorlagendateien gespeichert sind: (1), in denen Ihre Sprache installiert wurde, und (2) in den Ordner des Benutzers. Diese Speicherorte werden zur Registrierung hinzugefügt daher, Visual Studio **Codeausschnitt-Manager** Ausschnitte finden. Der Ordner des Benutzers ist, wo die Ausschnitte, die vom Benutzer erstellten gespeichert werden.  
   
- Das typische Ordner Layout für die Vorlagendateien installierten Ausschnitt sieht wie folgt aus: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ Das typische Ordner Layout für die Vorlagendateien installierten Ausschnitt sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[InstallRoot]*  ist der Ordner, die in Ihrer Sprache installiert ist.  
   
@@ -60,7 +61,7 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
   
  *[LCID]*  die Gebietsschema-ID. Hierbei handelt es sich um Ausschnitte wie lokalisierte Versionen gespeichert werden. Z. B. die Gebietsschema-ID für Englisch gleich 1033 ist, also *[LCID]* durch 1033 ersetzt wird.  
   
- Eine weitere Datei muss angegeben werden, und eine Indexdatei, die in der Regel aufgerufen SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen Endziffern XML verwenden). Diese Datei befindet sich in der Regel in der *[InstallRoot]*\\*[TestLanguage]* Ordner und gibt den genauen Speicherort der Ausschnitte Ordner als auch die Sprach-ID und die GUID der Sprache Dienst, der die Ausschnitte verwendet. Der genaue Pfad, der die Indexdatei ist in der Registrierung belasten, da weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei ein:  
+ Eine weitere Datei muss angegeben werden, und eine Indexdatei, die in der Regel aufgerufen SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen Endziffern XML verwenden). Diese Datei befindet sich in der Regel in der *[InstallRoot]*\\ *[TestLanguage]* Ordner und gibt den genauen Speicherort der Ausschnitte Ordner als auch die Sprach-ID und die GUID der Sprache Dienst, der die Ausschnitte verwendet. Der genaue Pfad, der die Indexdatei ist in der Registrierung belasten, da weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei ein:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
   
  In diesem Beispiel wird davon ausgegangen, dass Sie Ihre Sprachdienst in Visual Studio-Installationsordner installiert haben. Der % LCID % wird durch das aktuelle Gebietsschema-ID des Benutzers ersetzt. Mehrere \<SnippetDir > Tags hinzugefügt werden können, eine für jeden anderen Verzeichnis und Gebietsschema. Darüber hinaus darf ein ausschnittordners Unterordner, von denen jede wird in die Indexdatei mit identifiziert die \<SnippetSubDir >-Tag, das in eingebettet ist eine \<SnippetDir > Tag.  
   
- Benutzer können auch eigene Ausschnitte für Ihre Sprache erstellen. Diese werden in der Regel gespeichert im Ordner "Einstellungen" des Benutzers, z. B. *[TestDocs]*\Code Ausschnitte\\*[TestLanguage]*\Test Codeausschnitte, wobei *[TestDocs]* ist der Speicherort des Ordners für die Einstellungen des Benutzers für Visual Studio.  
+ Benutzer können auch eigene Ausschnitte für Ihre Sprache erstellen. Diese werden in der Regel gespeichert im Ordner "Einstellungen" des Benutzers, z. B. *[TestDocs]* \Code Ausschnitte\\ *[TestLanguage]* \Test Codeausschnitte, wobei *[TestDocs]* ist der Speicherort des Ordners für die Einstellungen des Benutzers für Visual Studio.  
   
  Die folgenden Ersetzungselemente platziert werden können, in dem Pfad gespeichert, der \<DirPath >-Tag in der Indexdatei.  
   
@@ -91,7 +92,7 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
 |"% InstallRoot"|Stamminstallationsordners für Visual Studio, z. B. C:\Program Files\Microsoft Visual Studio 8.|  
 |"% ProjDir"|Dieser Ordner enthält das aktuelle Projekt.|  
 |"% ProjItem"|Dieser Ordner enthält das aktuelle Projektelement.|  
-|"% TestDocs"|Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\*[Username]*\My Documents\Visual Studio\8.|  
+|"% TestDocs"|Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihre-Sprachdienst  
  Können Sie Codeausschnitte für Ihre Sprachdienst aktivieren, durch Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> -Attribut auf das VSPackage (finden Sie unter [registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten berücksichtigen die `SearchPaths` benannter Parameter um informiert die **Codeausschnitt-Manager** des Speicherorts der Ausschnitte.  

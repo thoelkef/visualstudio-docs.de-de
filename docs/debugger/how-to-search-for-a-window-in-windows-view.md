@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473435"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Gewusst wie: Suchen nach einem Fenster in der Fensteransicht
 Sie können mithilfe des Handles, Beschriftung, Klasse oder eine Kombination von Beschriftung und Klasse als Suchkriterium für ein bestimmtes Fenster in der Fensteransicht suchen. Sie können auch die ausgangsrichtung der Suche angeben. Die Felder im Dialogfeld werden die Attribute des das ausgewählte Fenster in der Fensterstruktur im angezeigt.  

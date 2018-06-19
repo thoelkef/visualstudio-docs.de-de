@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131146"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, das im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
@@ -38,7 +39,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
 
 1.  Erstellen Sie eine beliebige GUID.
 
-     Diese GUID dient zur eindeutigen Identifizierung eine Kategorie**.** Diese Kategorie wird wiederverwendet, die IDE standardmäßig Schriftarten und Farben-Spezifikation.
+     Diese GUID dient zur eindeutigen Identifizierung eine Kategorie **.** Diese Kategorie wird wiederverwendet, die IDE standardmäßig Schriftarten und Farben-Spezifikation.
 
     > [!NOTE]
     >  Beim Abrufen von Schriftart und Farbe Daten mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder anderen Schnittstellen verwenden, VSPackages diesen GUID um integrierte Informationen verweisen.
@@ -51,7 +52,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
 
 1.  Erstellen Sie eine besondere Art von Kategorie Registrierungseintrags in folgendem Verzeichnis:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\*\<Kategorie >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >* \FontAndColors\\*\<Kategorie >*]
 
      *\<Kategorie >* der nicht lokalisierte Name der Kategorie.
 

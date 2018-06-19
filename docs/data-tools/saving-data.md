@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923428"
 ---
 # <a name="saving-data"></a>Speichern von Daten
 Speichern von Daten ist der Prozess einer persistenten Speicherung Daten im Datenmodell für eine Anwendung zurück an den ursprünglichen Datenspeicher, in der Regel eine relationale Datenbank wie SQL Server geändert.

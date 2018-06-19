@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140290"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList-Funktion
 Diese Funktion wird eine Liste der Dateien für eine bestimmte Quelle steuerungsbefehls aktualisiert und Source Control Status für alle angegebenen Dateien bereitstellt.  

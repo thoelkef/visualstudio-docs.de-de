@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131732"
 ---
 # <a name="legacy-language-service-features"></a>Legacy-Dienst-Sprachfunktionen
 Mindestens ein verwalteten Package Framework (MPF)-Sprachdienst unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Funktionen, z. B. syntaxhervorhebung, IntelliSense und Validierung der Haltepunkt. Jede Funktion kann unabhängig von den anderen implementiert werden, aber alle erfordern einen Parser und einen Scanner mit Ausnahme von syntaxhervorhebung, der nur einen Scanner erforderlich ist.  

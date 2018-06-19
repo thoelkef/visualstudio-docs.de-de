@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131493"
 ---
 # <a name="command-routing-algorithm"></a>Befehl-Routing-Algorithmus
 In Visual Studio werden die Befehle durch eine Reihe von anderen Komponenten verarbeitet. Befehle werden aus dem innersten Kontext, die auf die aktuelle Auswahl basiert, an der äußerste Kontext angegeben (auch bekannt als global) weitergeleitet. Weitere Informationen finden Sie unter [Verfügbarkeit](../../extensibility/internals/command-availability.md).  

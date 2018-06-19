@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130755"
 ---
 # <a name="how-to-implement-undo-management"></a>Vorgehensweise: Implementieren von Rückgängig-Management
 Ist die primäre Schnittstelle zum Rückgängigmachen Management <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, die von der Umgebung implementiert wird. Rückgängig-Verwaltung unterstützt, implementieren Sie separate Rückgängig (d. h. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, können auch mehrere einzelne Schritte enthalten.  

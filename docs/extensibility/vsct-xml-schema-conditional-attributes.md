@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138355"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Bedingte VSCT-XML-Schema-Attribute
 Bedingte Attribute möglicherweise für alle Listen und Elemente angewendet werden. Logische Operatoren und Ausdrücke der Symbol-Erweiterung, die zu "true" oder "false" ausgewertet werden. Bei "true", ist der zugeordneten Liste oder ein Element in der Ausgabe enthalten.  
