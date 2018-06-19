@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571500"
 ---
 # <a name="writing-javascript-code"></a>Schreiben von JavaScript-Code
 Wie jede andere Programmiersprache auch ist [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] in Anweisungen, Blocks, die aus verschiedenen miteinander verknüpften Anweisungen bestehen, und Kommentare unterteilt. In einer Anweisung können Sie Variablen, Zeichenfolgen, Nummern und Ausdrücke verwenden.  

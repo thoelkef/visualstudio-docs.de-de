@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633700"
 ---
 # <a name="unterminated-comment"></a>Nicht abgeschlossener Kommentar
 Sie begonnen hat einen mehrzeiligen Kommentar-Block, jedoch nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit einem "/\*" Kombination und mit der umgekehrten "\*/" Kombination. Im Folgenden finden Sie ein Beispiel dazu:  

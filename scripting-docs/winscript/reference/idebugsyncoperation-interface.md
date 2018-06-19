@@ -1,16 +1,16 @@
 ---
 title: IDebugSyncOperation-Schnittstelle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSyncOperation interface
 ms.assetid: 8d714492-1836-462c-980a-c99e91a2c81b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727010"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation-Schnittstelle
 Ermöglicht es, einen Vorgang (z. B. die Auswertung von Ausdrücken) zu abstrahieren, der ausgeführt werden, während in einem bestimmten blockierten Thread geschachtelt muss ein Skriptmodul. Die Schnittstelle bietet außerdem einen Mechanismus zum Abbrechen von Vorgängen nicht reagiert.  

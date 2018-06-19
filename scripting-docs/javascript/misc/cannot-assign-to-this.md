@@ -1,13 +1,13 @@
 ---
 title: Kann nicht zuweisen &#39; dies &#39; | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633160"
 ---
 # <a name="cannot-assign-to-39this39"></a>Kann nicht zuweisen &#39; dies &#39;
 Sie haben versucht, einen Wert zuzuweisen **dies**. **Dies** ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Schlüsselwort, das entweder verweist:  
@@ -39,7 +40,7 @@ Sie haben versucht, einen Wert zuzuweisen **dies**. **Dies** ist eine [!INCLUDE[
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Versuchen Sie nicht zuzuweisende **dies**. Um eine Eigenschaft oder Methode eines instanziierten Objekts zuzugreifen, verwenden Sie den Punktoperator (z. B. circle**.** RADIUS).  
+-   Versuchen Sie nicht zuzuweisende **dies**. Um eine Eigenschaft oder Methode eines instanziierten Objekts zuzugreifen, verwenden Sie den Punktoperator (z. B. circle **.** RADIUS).  
   
     > [!NOTE]
     >  Sie können nicht den Namen einer benutzerdefinierten Variablen **dies**; es ist ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] reservierten Wort.  

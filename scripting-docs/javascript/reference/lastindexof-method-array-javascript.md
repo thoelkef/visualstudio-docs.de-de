@@ -1,12 +1,13 @@
 ---
 title: LastIndexOf-Methode (Array) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], lastIndexOf method
 - lastIndexOf method [JavaScript]
 ms.assetid: 04f5145d-007e-498f-b06f-11ab384c2968
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638060"
 ---
 # <a name="lastindexof-method-array-javascript"></a>lastIndexOf-Methode (Array) (JavaScript)
 Gibt den Index des letzten Vorkommens eines angegebenen Werts in einem Array zurück.  

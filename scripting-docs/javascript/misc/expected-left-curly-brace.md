@@ -1,13 +1,13 @@
 ---
 title: Erwartete &#39; {&#39; | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1008
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ffdb55c0-e361-4bcd-b1a6-6158e7d9b557
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632770"
 ---
 # <a name="expected-3939"></a>Erwartete &#39; {&#39;
 Sie haben nicht die linke geschweifte Klammer eingeschlossen, die den Anfang des Funktionstexts markiert. Code, der den Text einer Funktion macht, auch wenn es sich um eine einzelne Zeile ist, muss im linken und rechten geschweiften Klammern enthalten sein. Beachten Sie, dass die Verwendung von Klammern in Funktionsrümpfen mindestens so streng wie in Schleifen.  

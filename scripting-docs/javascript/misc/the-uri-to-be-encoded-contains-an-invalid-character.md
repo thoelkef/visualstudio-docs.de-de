@@ -1,13 +1,13 @@
 ---
-title: "Der zu codierende URI enthält ein ungültiges Zeichen | Microsoft Docs"
-ms.custom: 
+title: Der zu codierende URI enthält ein ungültiges Zeichen | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5024
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632930"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Der zu codierende URI enthält ein ungültiges Zeichen.
 Sie haben versucht, eine Zeichenfolge zu codieren, als URI (Uniform Resource Identifier), aber es ungültige Zeichen enthalten. Obwohl die meisten Zeichen in Zeichenfolgen zu konvertierenden URIs gültig sind, sind einige Unicode-Zeichenfolgen nicht zulässig.  

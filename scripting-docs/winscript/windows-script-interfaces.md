@@ -1,14 +1,14 @@
 ---
 title: Windows-Skriptschnittstellen | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571850"
 ---
 # <a name="windows-script-interfaces"></a>Windows-Skriptschnittstellen
 Microsoft Windows-Skriptschnittstellen ermöglichen es Anwendungen, Skripterstellung und OLE-Automatisierung hinzuzufügen. Skript-Hosts, die von Windows Script abhängig sind, können Skriptmodule aus mehreren Quellen und von mehreren Herstellern nutzen, um die Skripterstellung zwischen Komponenten zu verwalten. Die Implementierung des Skripts an sich – Sprache, Syntax, persistentes Format, Ausführungsmodell, usw. – obliegt dem Skripthersteller.  

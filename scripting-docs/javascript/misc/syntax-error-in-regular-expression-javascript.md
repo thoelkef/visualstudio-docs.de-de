@@ -1,13 +1,13 @@
 ---
-title: "Syntaxfehler in regulärem Ausdruck (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Syntaxfehler in regulärem Ausdruck (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5017
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632920"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Syntaxfehler im regulären Ausdruck (JavaScript)
 Die Struktur des Suchbegriffs verstößt gegen eine oder mehrere der Grammatikregeln für eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] regulären Ausdruck.  

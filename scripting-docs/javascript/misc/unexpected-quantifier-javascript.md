@@ -1,13 +1,13 @@
 ---
 title: Unerwarteter Quantifizierer (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5018
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633250"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Unerwarteter Quantifizierer (JavaScript)
 Beim Verfassen Ihre Suche Musters eines regulären Ausdrucks, haben Sie ein Muster-Element mit einer unzulässige Wiederholung Authentifizierungsstufe erstellt. Zum Beispiel das Muster  
