@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104150"
 ---
 # <a name="binding-breakpoints"></a>Bindung von Haltepunkten
 Wenn der Benutzer einen Breakpoint festzulegen, z. B. durch Drücken F9, die IDE formuliert die Anforderung und fordert die Debugsitzung, um den Haltepunkt zu erstellen.  

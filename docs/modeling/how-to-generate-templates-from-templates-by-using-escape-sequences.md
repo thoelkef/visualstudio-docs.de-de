@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947481"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen
 Sie können eine Textvorlage erstellen, die eine andere Textvorlage als die generierte Textausgabe wird erstellt. Zu diesem Zweck müssen Sie Escapesequenzen verwenden, die Text Vorlagentags abgrenzen. Wenn Sie keine Escapesequenzen verwenden, wird die generierte Textvorlage eine vordefinierte Bedeutung haben. Weitere Informationen zum Verwenden von Escapesequenzen in Textvorlagen finden Sie unter [mithilfe von Escapesequenzen in Textvorlagen](../modeling/using-escape-sequences-in-text-templates.md).

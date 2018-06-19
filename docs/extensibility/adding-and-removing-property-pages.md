@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101289"
 ---
 # <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaften, Einstellungen und Ressourcen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Es wird als ein einzelnes Fenster in den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) und enthält eine Reihe von Bereichen auf der rechten Seite, die über die Registerkarten auf der linken Seite zugegriffen wird. Die Bereiche (häufig als Eigenschaftenseiten bezeichnet) im Projekt-Designer variieren je nach Projekttyp und Programmiersprache. Projekt-Designer möglich, die mit der **Eigenschaften** Befehl die **Projekt** Menü.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925975"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 Ein *Dienstverweis* kann ein Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projektmappe, lokal auf einem lokalen Netzwerk oder im Internet.

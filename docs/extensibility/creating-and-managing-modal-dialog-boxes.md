@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102199"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
 Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster des Dialogfelds deaktiviert ist, während das Dialogfeld angezeigt wird und dann das übergeordnete Fenster erneut aktivieren, nachdem Sie das Dialogfeld geschlossen wurde. Wenn Sie dies tun, kann die Fehlermeldung: "Microsoft Visual Studio kann nicht beendet, da ein modales Dialogfeld aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut."  

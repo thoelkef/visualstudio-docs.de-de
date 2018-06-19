@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952714"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup Language) einer Map bearbeiten. Sie können beispielsweise Elemente bearbeiten, um benutzerdefinierte Stile anzugeben, Codeelementen und Links Eigenschaften und Kategorien zuzuweisen oder Dokumente bzw. URLs mit Codeelementen oder Links zu verknüpfen. Weitere Informationen zu DGML-Elemente, finden Sie unter [geleitet Graph Markup Language (DGML) Verweis](../modeling/directed-graph-markup-language-dgml-reference.md).

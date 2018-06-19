@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098417"
 ---
 # <a name="adding-command-line-switches"></a>Hinzufügen von Befehlszeilenoptionen
 Sie können Befehlszeilenoptionen hinzufügen, die für Ihr VSPackage gelten, wenn devenv.exe ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die Eigenschaften deklariert. In diesem Beispiel wird der MySwitch Schalter für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und mit dem VSPackage automatisch geladen.  

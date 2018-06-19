@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925624"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Gewusst wie: Erstellen und Ändern von MIP-Ebenen
 Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *MIP-Ebenen* für den Detaillierungsgrad (LOD) des Texturraums zu generieren und zu ändern.

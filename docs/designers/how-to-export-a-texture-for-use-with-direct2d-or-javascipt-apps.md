@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925011"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Gewusst wie: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps
 Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den internen Renderingkonventionen von Direct2D kompatibel sind. Texturen dieser Art eignen sich für Apps, die Direct2D verwenden, und für UWP-Apps, die mit JavaScript erstellt wurden.

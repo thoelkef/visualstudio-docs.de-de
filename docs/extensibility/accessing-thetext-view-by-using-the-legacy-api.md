@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097782"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Zugreifen auf TheText Ansicht über die Legacy-API
 Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeichert ist. Sie können die Textansicht zugreifen, mithilfe der legacy-API, wie im folgenden Abschnitt gezeigt.

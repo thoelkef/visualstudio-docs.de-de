@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106902"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Diese Schnittstelle bietet mehrere Methoden für den Zugriff auf einen Port Server- und Notification-Funktionen.  

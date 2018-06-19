@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098185"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Befehlszeilenoptionen (Visual Studio SDK)
 Devenv.exe, die ausführbare Datei, die beginnt, den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE), unterstützt die Befehlszeilenoptionen für die Entwicklung von VSPackages. VSPackages können auch eigene Schalter in der Befehlszeile Devenv zur Verfügung. Die folgenden Themen enthalten Informationen zu Befehlszeilenoptionen in der IDE verwenden.  

@@ -1,0 +1,27 @@
+---
+title: 'Erstellen einer Node.js-Entwicklungsumgebung mit Containern unter Verwendung von Kubernetes in der Cloud, Schritt 7: Zusammenfassung | Microsoft-Dokumentation'
+author: ghogen
+ms.author: ghogen
+ms.date: 02/20/2018
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+description: Schnelle Kubernetes-Entwicklung mit Containern und Microservices in Azure
+keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, Container
+manager: douge
+ms.openlocfilehash: 0c3ecddde0fa8af674d4f2e477f1252dda50395a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31883461"
+---
+# <a name="get-started-on-connected-environment-with-nodejs"></a>Erste Schritte in Connected Environment mit Node.js
+
+Vorheriger Schritt: [Informationen zur Entwicklung im Team](get-started-nodejs-06.md)
+
+[!INCLUDE[](includes/well-done.md)]
+
+[!INCLUDE[](includes/take-survey.md)]
+
+[!INCLUDE[](includes/clean-up.md)]

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927099"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 Der Regelsatz Microsoft erweiterten Entwurfsrichtlinienregeln erweitert die einfachen Entwurfsrichtlinienregeln bezüglich Verwendbarkeit und wartbarkeit und maximieren die gemeldeten. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.

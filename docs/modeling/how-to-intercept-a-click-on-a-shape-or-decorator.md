@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952299"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen, wie Sie mit einem Klick auf eine Form vom Typ oder ein Symbol Decorator abfangen. Kann Klicks abfangen, doppelklickt, zieht, und andere Aktionen, und stellen Sie das Element zu reagieren.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945739"
 ---
 # <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
 Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit bestimmten Dateierweiterungen von der integrierten Entwicklungsumgebung (IDE) in Visual Studio behandelt werden. Für jede **Erweiterung**, die Sie eingeben, können Sie eine Bearbeitungsmöglichkeit auswählen. Dadurch können Sie auf den Editor oder Designer der integrierten Entwicklungsumgebung zugreifen, in dem Dokumente eines bestimmten Typs geöffnet werden. Wählen Sie zum Anzeigen dieser Optionen im Menü **Extras** **Optionen** aus, erweitern Sie den Knoten **Text-Editor**, und wählen Sie **Dateierweiterung** aus.

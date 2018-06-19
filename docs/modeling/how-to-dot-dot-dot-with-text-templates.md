@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953978"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten eine gute Möglichkeit Text beliebiger Art zu generieren. Textvorlagen können zum Generieren von Text zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit zu Ihrem Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellten "Wie kann ich...?" Fragen.

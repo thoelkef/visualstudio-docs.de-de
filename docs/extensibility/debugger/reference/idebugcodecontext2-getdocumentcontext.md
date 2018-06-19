@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105631"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Ruft den Dokumentenkontext, der diesem Codekontext entspricht. Der Dokumentenkontext darstellt, eine Position in der Quelldatei, die auf den Quellcode entspricht, die diese Anweisung generiert wird.  

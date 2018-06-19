@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102381"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Anpassen von Editor-Steuerelemente und Menüs, über die Legacy-API
 Einen Sprachdienst oder einer Textansicht kann die Kontextmenüs und Steuerelemente im Editor steuern. Die Seiten in diesem Abschnitt beschrieben, wie Sie mit diesen Features funktionieren.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102791"
 ---
 # <a name="evaluating-expressions"></a>Auswerten von Ausdrücken
 Ausdrücke werden von Zeichenfolgen dar, die von "Auto", Überwachung, Schnellüberwachung oder sofortige Windows übergeben, erstellt. Wenn ein Ausdruck ausgewertet wird, generiert es eine druckbare Zeichenfolge, die den Namen und Typ der Variable "oder" Argument "und" den Wert enthält. Diese Zeichenfolge wird in das entsprechende Fenster der IDE angezeigt.  

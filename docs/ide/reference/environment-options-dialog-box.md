@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947936"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.

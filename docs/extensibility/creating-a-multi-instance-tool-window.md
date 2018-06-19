@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097795"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Erstellen ein Toolfenster mit mehreren Instanzen
 Sie können ein Toolfenster programmieren, sodass mehrere Instanzen gleichzeitig geöffnet sein können. Standardmäßig können Toolfenster nur eine Instanz zu öffnen.  

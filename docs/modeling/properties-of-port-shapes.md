@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951244"
 ---
 # <a name="properties-of-port-shapes"></a>Eigenschaften von Anschlussformen
 Sie können Formen vom Typ Port verwenden, Domänenklassen in der generierten Designer dargestellt.

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949591"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Definitionseigenschaften z. B. versionsnummerierung. DslDefinition Eigenschaften werden in der **Eigenschaften** Fenster, wenn Sie auf einen offenen Bereich des Diagramms in die *einer domänenspezifischen Sprachdesigner*.

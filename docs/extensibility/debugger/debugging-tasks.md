@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101143"
 ---
 # <a name="debugging-tasks"></a>Debugging-Aufgaben
 Um ein Programm debuggen, er gestartet werden muss und ein Debugging-Modul (DE) muss an sie angefügt werden, da andernfalls die DE muss angefügt werden, um eine zuvor gestartete Programm. Nachdem angehängt wird, muss die DE bestimmte Startereignisse generieren. Reaktion versucht das debugpaket in der IDE festgelegten Breakpoints Bindung. Wenn das Programm einen gebundenen Haltepunkt trifft, hält an und wartet auf eine Benutzereingabe.  

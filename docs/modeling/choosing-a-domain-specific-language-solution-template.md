@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949642"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache-Lösung zu erstellen, wählen Sie eine der Projektmappenvorlagen für, die im Assistenten für domänenspezifische Sprache-Designer verfügbar sind. Durch Auswahl der Vorlage, die am ehesten entspricht von der Sprache, die Sie erstellen möchten, können Sie den Änderungsaufwand verringern, die Sie an der ersten Lösung vorzunehmen.

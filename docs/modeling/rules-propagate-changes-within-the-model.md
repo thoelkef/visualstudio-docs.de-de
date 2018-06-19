@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952758"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Erstellen Sie eine Store-Regel, um eine Änderung von einem Element zu einem anderen in Visualization and Modeling SDK (VMSDK) weitergegeben werden. Wenn eine Änderung auf jedes Element im Speicher erfolgt, sind Regeln ausgeführt werden, in der Regel auf, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzufügen oder löschen. Sie können Regeln für bestimmte Typen von Elementen, Formen oder Diagramme anfügen. Viele integrierte Funktionen werden durch Regeln definiert: beispielsweise Regeln dafür sorgen, dass ein Diagramm aktualisiert wird, wenn das Modell ändert. Sie können Ihre einer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.

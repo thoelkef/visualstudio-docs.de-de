@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099882"
 ---
 # <a name="breakpoint-errors"></a>Haltepunkt-Fehler
 Die folgenden beschreibt den Prozess aus, wenn ein Haltepunkt an Code binden möchte jedoch ein Fehler auftritt:  

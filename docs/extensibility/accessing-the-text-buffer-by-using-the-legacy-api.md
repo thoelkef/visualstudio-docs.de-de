@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099472"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Zugreifen auf den Textpuffer mithilfe der Legacy-API
 Der Text ist zuständig für das Verwalten von Textstreams und Datei-Dauerhaftigkeit. Obwohl der Puffer Lese- oder Schreibzugriff anderen Formaten alle normalen Kommunikation mit dem Puffer mithilfe von Unicode ausgeführt wird. In die legacy-APIs können die den Textpuffer ein- oder in einem zweidimensionalen Koordinatensystem um Zeichenpositionen im Puffer zu identifizieren.  

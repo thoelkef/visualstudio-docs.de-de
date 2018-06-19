@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926698"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 Zum Suchen bestimmter Datensätze in einem Dataset verwenden Sie die FindBy-Methode in das DataTable-Objekt, Schreiben Sie eine eigene Foreach-Anweisung aus, um die Tabelle Zeilen Auflistung durchlaufen werden soll, oder verwenden Sie [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949523"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 Domänenspezifische Sprachtools (DSL Tools), die in gehostet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ermöglichen eine domänenspezifische Sprache zu entwerfen und generieren Sie alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die auf der Sprache basieren.

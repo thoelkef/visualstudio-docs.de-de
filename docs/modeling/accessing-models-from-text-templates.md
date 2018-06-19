@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952325"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 Mithilfe von Textvorlagen können Sie erstellen Berichtsdateien, Quellcodedateien und anderen Textdateien, die auf einer domänenspezifischen sprachenmodelle basieren. Grundlegende Informationen zu den Textvorlagen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Textvorlagen funktionieren in der experimentellen Modus während des Debuggens der DSL und funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107497"
 ---
 # <a name="creating-a-settings-category"></a>Erstellen einer Einstellungskategorie
 In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und verwendet, um Werte zu speichern und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe verwandter Eigenschaften, die als "Benutzerdefinierte Einstellungen Verwaltungspunkt;" angezeigt werden. d. h. als ein Kontrollkästchen in der **Einstellungen importieren und Exporten** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen gespeichert werden, oder als Kategorie wiederhergestellt und individuelle Einstellungen im Assistenten nicht angezeigt werden. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  

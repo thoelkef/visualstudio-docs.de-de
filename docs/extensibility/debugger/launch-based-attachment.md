@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099375"
 ---
 # <a name="launch-based-attachment"></a>Start-basierte Anlage
 Start-basierte das Anfügen an ein Programm wird automatisch wiederhergestellt. Wenn der Hostprozess für das Programm durch die SDM gestartet wird, folgt Launch-basierte Anlage einen Pfad, der ähnlich dem Konzept der manuellen Methode. Informationen finden Sie unter [Anfügen an das Programm](../../extensibility/debugger/attaching-to-the-program.md).  

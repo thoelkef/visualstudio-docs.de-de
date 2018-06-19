@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927294"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio
 Diese exemplarische Vorgehensweise zeigt, wie die **Parallele Aufgaben** und **parallele Stapel** Windows zum Debuggen einer parallelen Anwendung. Diese Windows-Hilfe Sie verstehen, und überprüfen Sie das Laufzeitverhalten des Codes, der verwendet die [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Nachdem der Code unterbrochen wird, die exemplarische Vorgehensweise zeigt, wie die **Parallele Aufgaben** und **parallele Stapel** Windows, um es zu untersuchen.  

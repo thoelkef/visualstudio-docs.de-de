@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946363"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 Diese Tools Architekturrichtlinien ist ein herunterladbares Paket praktische Anleitung zur Verwendung der Modellierungstools in Visual Studio 2010. Es zeigt einen allgemeinen Überblick über die Modellierungstools in einer integrierten Weise verwenden wie, und behandelt die häufigsten Szenarien, in denen die Tools verwendet werden.

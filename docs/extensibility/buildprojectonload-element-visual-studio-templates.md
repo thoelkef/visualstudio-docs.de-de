@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097821"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload-Element (Visual Studio-Vorlagen)
 Erstellt nur neue Projekte, erstellen und diese zu einer Projektmappe hinzufügen. Es wird nicht die gesamte Projektmappe erstellt.  
