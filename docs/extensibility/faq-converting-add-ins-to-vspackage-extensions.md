@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134044"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier werden die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
@@ -67,7 +68,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 1.  Erstellen Sie ein VSPackage, das über einen Menübefehl verfügt. (Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >*Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
   
 3.  Fügen Sie folgende `using`-Anweisungen in die Datei ein:  
   
@@ -129,7 +130,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Abrufen des DTE-Objekts aus einem VSPackage  
   
-1.  Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage Visual Studio-Paket für die  *\<Projektname >*Package.cs-Datei. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
+1.  Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage Visual Studio-Paket für die  *\<Projektname >* Package.cs-Datei. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
   
 2.  Fügen Sie diese `using`-Anweisungen hinzu:  
   
@@ -161,7 +162,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 1.  Erstellen Sie ein VSPackage, das einen Menübefehl, als in hat die [wie beginne ich beim Entwickeln von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >*Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
   
 3.  Fügen Sie diese `using`-Anweisungen hinzu:  
   
@@ -209,7 +210,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 1.  Erstellen Sie ein VSPackage, das einen Menübefehl, als in hat die [wie beginne ich beim Entwickeln von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >*Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
   
 3.  Fügen Sie diese `using`-Anweisungen hinzu:  
   

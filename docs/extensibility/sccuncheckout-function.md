@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137339"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout-Funktion
 Diese Funktion macht einen vorherigen Auscheckvorgang, wiederherstellen und den Inhalt der ausgewählten Datei oder Dateien in den Zustand vor dem Auschecken rückgängig. Alle an der Datei seit dem Auschecken vorgenommenen Änderungen gehen verloren.  

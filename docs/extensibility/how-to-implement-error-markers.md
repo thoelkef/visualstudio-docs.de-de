@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127851"
 ---
 # <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehler Marker
 Fehler Marker (oder roten Wellenlinien) werden am schwierigsten der Text-Editor Anpassungen implementieren. Allerdings können die Vorteile, die sie an Benutzer Ihres VSPackage weitergeben der Kosten für die Angabe von Anmeldeinformationen weit überwiegen. Fehler-Marker markieren leicht Text, der Ihre Sprachenparser mit einer roten Wellenlinie oder wellenförmige falsch erachtet. Dieser Indikator kann Programmierer von fehlerhaftem Code visuell angezeigt.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132641"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Vorgehensweise: unterstützen ausgeblendetem Text in einen Legacy-Sprachdienst
 Sie können ausgeblendete Textbereiche neben Gliederungsbereiche erstellen. Ausgeblendeten Text Regionen können es sich um Client gesteuert oder Editor gesteuert und werden verwendet, um einen Bereich der Text vollständig ausblenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist, die nur Skript-Ansicht im HTML-Editor.  

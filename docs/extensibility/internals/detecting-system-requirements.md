@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128703"
 ---
 # <a name="detecting-system-requirements"></a>Ermitteln von Systemanforderungen
 Eine VSPackage kann nicht ausgeführt werden, es sei denn, die Visual Studio installiert ist. Wenn Sie Microsoft Windows Installer verwenden, um die Installation von Ihr VSPackage zu verwalten, können Sie das Installationsprogramm aus, um festzustellen, ob die Installation von Visual Studio konfigurieren. Sie können auch auf das System für andere Anforderungen, z. B. Überprüfen einer bestimmten Version von Windows oder eine bestimmte Menge an RAM konfigurieren.  

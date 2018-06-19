@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130008"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Bestimmen daraufhin-Editor eine Datei in einem Projekt
 Wenn ein Benutzer eine Datei in einem Projekt geöffnet wird, wechselt die Umgebung durch einen Abruf-Prozess, schließlich Öffnen der entsprechenden Editor bzw. Designer für diese Datei. Das erste Verfahren eingesetzt werden, von der Umgebung entspricht dem standardmäßigen und benutzerdefinierten Editoren. Die Umgebung verwendet eine Vielzahl von Kriterien aus, wenn der Editor zum Öffnen einer Datei abrufen und das VSPackage muss die Umgebung koordinieren, während dieses Vorgangs.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919676"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Codeanalyse für C/C++-Warnungen
 Dieser Abschnitt enthält die C-/C++-codeanalysewarnungen mit Ausnahme derjenigen, die vom ausgelöst werden die [C++ Core Richtlinien Prüfer](code-analysis-for-cpp-corecheck.md). Informationen zur Codeanalyse finden Sie unter [/ analyze (Codeanalyse)](/cpp/build/reference/analyze-code-analysis) und [Schnellstart: Codeanalyse für C/C++-](../code-quality/quick-start-code-analysis-for-c-cpp.md).

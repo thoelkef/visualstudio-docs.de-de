@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130728"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimieren der Menü- und Symbolleiste
 Das Hinzufügen von VSPackages und ihre entsprechenden Befehle zum [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann dazu führen, dass ein Rechenzentrum weiter aufzurüsten UI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet Möglichkeiten zur Unterstützung von UI-Befehl verwirrungen zu vermeiden.  

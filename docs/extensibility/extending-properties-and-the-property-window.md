@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126070"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Erweitern von Eigenschaften und des Fensters Eigenschaften
 Die **Eigenschaften** Fenster anzeigen und bearbeiten, die während der Entwurfszeit-Eigenschaften und Ereignisse der ausgewählten Objekte verwendet wird.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267974"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement-Element
 Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in mehr als eine Gruppe oder einem Menü eingeschlossen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen vollständig diese Elemente neu definieren, um die Darstellung einer Benutzeroberfläche zu ändern.  

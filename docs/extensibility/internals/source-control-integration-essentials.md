@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132033"
 ---
 # <a name="source-control-integration-essentials"></a>Source Control Integration Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration der quellcodeverwaltung: ein Quellcodeverwaltungs-Plug-Ins, die grundlegende Funktionalität bereitstellt und basiert auf der Quelle-Plug-in-API mit dem (früher als MSSCCI-API) und eine VSPackage-basierten Datenquellen-Steuerelement-integrationslösung, Stellt eine robustere Funktionalität bereit.  

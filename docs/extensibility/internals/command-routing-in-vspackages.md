@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135802"
 ---
 # <a name="command-routing-in-vspackages"></a>Befehlsrouting in VSPackages
 Ein Befehl weitergeleitet wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auf Grundlage des Kontexts, in dem er ausgeführt wird. Es wird auf den globalen Kontext nach außen Anfangskontext weitergeleitet.  

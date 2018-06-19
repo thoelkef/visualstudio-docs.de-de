@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132014"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE-definierte Befehle zum Erweitern von Projektsystemen
 Wenn Sie Projektsystemen erweitern möchten, können Sie Befehle verwenden und Gruppen bereitgestellt, die vom Befehl die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  

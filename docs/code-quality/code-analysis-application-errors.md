@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921022"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 Dieser Abschnitt ist eine Referenz zu Fehlermeldungen, die von verwaltetem Code Analysis-Tool generiert werden. Um Hilfe zu einer bestimmten Fehlermeldung zu erhalten, geben Sie die Fehlernummer in der **gesucht** Feld im Index.

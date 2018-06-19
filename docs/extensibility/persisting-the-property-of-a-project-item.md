@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138053"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Die Eigenschaft eines Projektelements beibehalten
 Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzufügen. Dazu können Sie die Eigenschaft in der Projektdatei gespeichert.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134656"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützung für die Navigationsleiste in einen Legacy-Sprachdienst
 Die Navigationsleiste am oberen Rand der Editor-Ansicht zeigt die Typen und Member in der Datei an. Typen in der linken Dropdownliste angezeigt werden, und Elemente werden in der rechten Dropdownliste angezeigt. Wenn der Benutzer einen Typ auswählt, wird das Caretzeichen auf der ersten Zeile des Typs platziert. Wenn der Benutzer ein Element auswählt, wird das Caretzeichen auf der Definition des Elements eingefügt. Die Dropdown-Felder werden entsprechend die aktuelle Position des Caretzeichens aktualisiert.  

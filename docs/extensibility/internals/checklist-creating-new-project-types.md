@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131988"
 ---
 # <a name="checklist-creating-new-project-types"></a>Prüfliste: Erstellen neuen Projekttypen
 Sie müssen mehrere Aufgaben zum Erstellen eines neuen Projekttyps. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben.  

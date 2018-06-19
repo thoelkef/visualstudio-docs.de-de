@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132906"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 Das Manifest, um Code Tool ist eine Konsolenanwendung, die eine .imagemanifest-Datei für den Visual Studio-Image-Dienst akzeptiert und generiert einen Wrapper Datei(en) zum Verweisen auf das Image-Manifest-Werte in C++, c#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Bilder aus der Visual Studio Bilddienst direkt oder für das manifest Werte über APIs übergeben werden, wenn der Code eine eigene Benutzeroberfläche und des Rendering nicht verarbeiten kann.  

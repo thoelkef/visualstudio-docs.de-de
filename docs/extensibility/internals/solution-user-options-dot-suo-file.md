@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130846"
 ---
 # <a name="solution-user-options-suo-file"></a>Benutzeroptionen bei Projektmappen (. Suo)-Datei
 Der Projektmappen-Benutzeroptionendatei (.suo) enthält benutzerspezifische Projektmappenoptionen. Diese Datei sollte nicht Quellcodeverwaltungssystem eingecheckt werden.  

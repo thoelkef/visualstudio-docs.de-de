@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134606"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>ParameterInfo in einen Legacy-Sprachdienst
 IntelliSense-ParameterInfo wird als QuickInfo angezeigt, in dem die Signatur einer Methode angezeigt, bei der Eingabe der Benutzer die Parameterliste starten Zeichen (in der Regel eine öffnende Klammer) für die Parameterliste der Methode. Jeder Parameter eingegeben wird und die Trennzeichen (in der Regel ein Komma) für den Parameter typisiert ist, wird die QuickInfo aktualisiert, um den nächsten Parameter in Fettdruck angezeigt.  

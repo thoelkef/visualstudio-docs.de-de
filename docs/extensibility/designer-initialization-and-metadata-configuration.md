@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132746"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Konfigurieren von Metadaten
 Bearbeitung von einem Designer oder Designer-Komponente zugeordneten Metadaten "und" Filtern Attribute bietet einen Mechanismus für Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, andere behandeln <xref:System.Type> Objekte (z. B. Datenstrukturen Klassen oder grafische Entitäten), wenn der Designer verfügbar ist, und wie der Visual Studio-IDE für die vom Designer unterstützt konfiguriert ist (für die Instanz die **Toolbox** -Kategorie oder-Registerkarte zur Verfügung steht).  

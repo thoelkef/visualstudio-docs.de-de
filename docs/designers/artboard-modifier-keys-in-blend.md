@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923096"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Zusatztasten der Zeichenflächen in Blend
 Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können daher nicht über die [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]-Benutzeroberfläche ermittelt werden. In der folgenden Tabelle werden Tastenkombinationen aufgeführt, die eine Aktion ändern wie z. B. die Anpassung der Größe eines Objekts.

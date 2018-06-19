@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130668"
 ---
 # <a name="supporting-source-control"></a>Unterstützung von Datenquellen-Steuerelements
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Auschecken von Dateien, Check-ins und andere Quellcodeverwaltungsvorgänge für das Projekt oder die-Editor unterstützt. Als einem Quellcodeverwaltungsclient [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dient für die Interaktion mit einem Steuerelement-Quellpaket [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Archivierung, versionsverwaltung und Steuerung Einrichtungen für eine dynamisch definierte Gruppe von Dateien bietet.  

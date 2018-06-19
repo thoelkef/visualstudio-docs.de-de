@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917155"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel
 In dieser exemplarischen Vorgehensweise wird das <legacyBold>LinqToXmlDataBinding</legacyBold>-Beispiel beschrieben, und es werden einige wichtige Aspekte seiner beiden primären Quelldateien <legacyBold>L2DBForm.xaml</legacyBold> und <legacyBold>L2DBForm.xaml.cs</legacyBold> erläutert.

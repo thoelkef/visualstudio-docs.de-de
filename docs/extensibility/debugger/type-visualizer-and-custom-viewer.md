@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126909"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typ-Schnellansicht und den benutzerdefinierten Viewer
 Eine Typ-Schnellansicht ist eine Komponente, die einen Teil der Daten in einem sehr spezifischen Format angezeigt. Dieses Format wird vom Implementierer der Schnellansicht vollständig, die es dem Endbenutzer oder einem Drittanbieter von Schnellansichten werden.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132426"
 ---
 # <a name="project-property-user-interface"></a>Benutzeroberfläche von Project-Eigenschaft
 Ein Projektuntertyp mithilfe der Elemente im Projekt **Eigenschaftenseiten** (Dialogfeld), wie sie mit der Basis-Projekt bereitgestellt werden ausblenden stellen schreibgeschützte Steuerelemente und die komplette Seiten angegeben oder die ProjektUntertyp-spezifischeSeitenhinzufügen**Eigenschaftenseiten** (Dialogfeld).

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139369"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Überprüfen die Haltepunkte in einem Legacy-Sprachdienst
 Ein Haltepunkt gibt an, dass die Ausführung des Programms zu einem bestimmten Zeitpunkt beendet werden soll, während er in einem Debugger ausgeführt wird. Benutzer kann einen Haltepunkt für jede beliebige Zeile in der Quelldatei platziert werden, da der Editor keine Kenntnis hat von was einen gültigen Speicherort für einen Breakpoint ausmacht. Wenn der Debugger gestartet wird, werden alle markierten Haltepunkte (ausstehenden Haltepunkte genannt) an die gewünschte Position in der ausgeführten Anwendung gebunden. Markieren Sie zum gleichen Zeitpunkt Breakpoints überprüft werden, um sicherzustellen, dass sie gültige Codepositionen aus. Beispielsweise ist ein Breakpoint für einen Kommentar ungültig, da es an dieser Stelle im Quellcode kein Code ist. Der Debugger deaktiviert ungültige Haltepunkte.  

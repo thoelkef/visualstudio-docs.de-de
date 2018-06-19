@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133785"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass der Benutzer sie auf die gleiche Weise zu bearbeiten, wie Visual Studio würden zu suchen. Der Benutzer kann im Hintergrund, Größe, DPI, hoher Kontrast und andere Einstellungen ändern. Das Tool auch zeigt für jede bildmanifest von ladeinformationen und Quellinformationen für jedes Bild in das bildmanifest angezeigt. Dieses Tool ist nützlich für:  
@@ -200,7 +201,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
   
  Der angezeigten Informationen für jede Bildquelle enthält Hintergrund angezeigt, welche, ob Designs möglich oder unterstützt das hoher Kontrast, welche Größe, die es gültig ist oder gibt an, ob es ist Größe Neutral und gibt an, ob das Bild stammen aus einem systemeigenen Assembly.  
   
- ![Bildbibliotheks-Viewer "Dose"](../../extensibility/internals/media/image-library-viewer-can-theme.png "Bildbibliotheks-Viewer "Dose"")  
+ ![Bildbibliotheks-Viewer "Dose"](../../extensibility/internals/media/image-library-viewer-can-theme.png "Bildbibliotheks-Viewer \"Dose\"")  
   
  Bei der Validierung einer bildmanifest wird empfohlen, dass Sie das Manifest und Image-DLL in ihre Speicherorte realen bereitstellen. Hierdurch wird sichergestellt, dass relative Pfade ordnungsgemäß ausgeführt werden und die Bildbibliothek finden und das Manifest und Image-DLL laden kann.  
   

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127855"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Erstellen ein Quellcodeverwaltungs-Plug-in
 Das Visual Studio SDK enthält Ressourcen, die Ihnen ermöglichen, Quelle Steuerungsfunktionen für das Hinzufügen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Es können Sie alle Plug-in-DLL, der kompatibel mit der Quelle-Plug-in-API mit dem in dieser Dokumentation beschriebenen Schritte aus.  

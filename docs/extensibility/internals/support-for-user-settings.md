@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134088"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 Eine VSPackage definieren möglicherweise eine oder mehrere Einstellungskategorien, d. h. Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer die **Import-und Exporteinstellungen** Befehl die **Tools** Menü. Um diese Persistenz aktivieren, verwenden Sie die Einstellungen APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Eine VSPackage definieren möglicherweise eine oder mehrere Einstellungskategori
      Wenn eine einzelne VSPackage mehrere einen benutzerdefinierten Einstellungspunkt unterstützt, jede benutzerdefinierte Einstellungspunkte durch eine separate Klasse implementiert wird und jede, indem eine eindeutige Instanz registriert wird der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse. Folglich können eine Klasse implementieren Einstellungen mehrere Einstellungskategorie unterstützen.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Benutzerdefinierte Einstellungen Punkt Eintrag Registrierungsdetails  
- Einen benutzerdefinierten Einstellungspunkt werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungen auf der VSPackage-unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 8.0.  
+ Einen benutzerdefinierten Einstellungspunkt werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungen auf der VSPackage-unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 8.0.  
   
 > [!NOTE]
 >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen root, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ist Initialisiert. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Nachstehend ist die Struktur des Registrierungseintrags dargestellt:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\usersettings\coreui_mypackage  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \usersettings\coreui_mypackage  
   
  `<CSPName`> = s "#12345"  
   

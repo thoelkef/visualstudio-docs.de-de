@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131035"
 ---
 # <a name="extending-the-output-window"></a>Erweitern Sie im Fenster "Ausgabe"
 Die **Ausgabe** Fenster ist ein Satz von Lese-/Schreibzugriff Textbereiche. Visual Studio umfasst diese integrierten Bereiche: **erstellen**, Meldungen zu Builds, in welche Projekte zu kommunizieren und **allgemeine**, in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Meldungen über die IDE kommuniziert. Projekte Abrufen eines Verweises auf die **erstellen** Bereich automatisch durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellenmethoden und Visual Studio bietet direkten Zugriff auf die **allgemeine** Bereich über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> -Dienst. Zusätzlich zu den integrierten Bereichen können Sie erstellen und verwalten Ihre eigenen benutzerdefinierten Bereiche.  

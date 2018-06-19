@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129805"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente
 Bevor Sie ein Projekt mit einem Dokumentfenster geöffnet wird, muss das Projekt zuerst feststellen, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist. Datei kann es sich entweder in einem projektspezifischen-Editor zu öffnen, oder eine der standard-Editoren registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

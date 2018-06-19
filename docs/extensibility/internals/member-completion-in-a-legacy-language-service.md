@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134031"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Member-Abschluss in einen Legacy-Sprachdienst
 Die IntelliSense-Anweisungsvervollständigung Mitglied wird eine QuickInfo, die zeigt eine Liste der möglichen Elemente eines bestimmten Bereichs z. B. eine Klasse, Struktur, Enumeration oder Namespace an. Beispielsweise in C# geschrieben, wenn der Benutzer, "this eingibt" gefolgt von einem Punkt eine Liste aller Member der Klasse oder Struktur im aktuellen Bereich in einer Liste erhält in dem der Benutzer auswählen kann.  

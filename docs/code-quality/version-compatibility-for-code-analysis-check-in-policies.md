@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915814"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Versionskompatibilität für die Eincheckrichtlinien der Codeanalyse
 Wenn Sie auswerten und erstellen Einchecken Codeanalyserichtlinien mit verschiedenen Versionen des müssen [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)], benötigen Sie die Unterschiede bei der Art [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] und [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] Eincheckrichtlinien auswerten.

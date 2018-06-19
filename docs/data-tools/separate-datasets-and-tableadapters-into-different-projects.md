@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921444"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separate Datasets und TableAdapters in verschiedene Projekte
 Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](create-and-configure-tableadapters.md) und Dataset-Klassen in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.

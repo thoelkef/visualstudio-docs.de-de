@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129362"
 ---
 # <a name="implementing-single-file-generators"></a>Implementieren von Einzeldatei Generatoren
 Ein benutzerdefiniertes Tool – auch bezeichnet als eine einzelne Datei-Generator – dienen zum Erweitern der [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsysteme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein benutzerdefiniertes Tool ist eine COM‑Komponente, implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Schnittstelle. Verwenden diese Schnittstelle, wandelt ein benutzerdefiniertes Tool eine einzelne Eingabedatei in einer einzigen Ausgabedatei an. Das Ergebnis der Transformation werden Quellcode, oder jede andere Ausgabe, die nützlich ist. Zwei Beispiele für benutzerdefinierte Tools generierten Codedateien werden als Reaktion auf Änderungen in einem visuellen Designer und fügt Dateien mithilfe von Web Services Description Language (WSDL) generiert generierten Code.  
