@@ -1,13 +1,13 @@
 ---
-title: "IgnoreCase-Eigenschaft (regulärer Ausdruck) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: IgnoreCase-Eigenschaft (regulärer Ausdruck) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ignoreCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - IgnoreCase property
 ms.assetid: 816f0df5-5a82-44a5-a4ab-dbc91fa76e61
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637860"
 ---
 # <a name="ignorecase-property-regular-expression-javascript"></a>ignoreCase-Eigenschaft (regulärer Ausdruck) (JavaScript)
 Gibt einen booleschen Wert, der angibt, des Status der IgnoreCase-Flags (**ich**) mit einem regulären Ausdruck verwendet. Standardmäßig wird **"false"**. Schreibgeschützt.  

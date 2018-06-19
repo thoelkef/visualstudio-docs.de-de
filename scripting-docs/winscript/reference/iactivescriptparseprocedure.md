@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptParseProcedure | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptParseProcedure interface
 ms.assetid: 741a35bb-5b92-489e-ba8a-a406b42125fc
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724380"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
 Wenn das Windows-Skriptmodul des Quelltexts Code, Prozeduren, die das Skript hinzugefügt werden kann, implementiert die `IActiveScriptParseProcedure` Schnittstelle. Für interpretierte Skriptsprachen, die über keine unabhängig erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse` oder `IPersist`*) Skript Prozeduren auf den Namespace hinzufügen.  

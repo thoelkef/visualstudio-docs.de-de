@@ -1,15 +1,16 @@
 ---
 title: Spezielle Fehlereigenschaften asynchroner Windows-Runtime-Methoden | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -18,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571410"
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>Spezielle Fehlereigenschaften asynchroner Windows-Runtime-Methoden
 Beim Debuggen asynchroner Windows-Runtime-Methoden kann es in JavaScript zu Problemen kommen, da der Fehler tief in der Aufrufliste ausgelöst werden kann. Das `Error`-Objekt von JavaScript verfügt über zusätzliche Eigenschaften, die sich nur zeigen, wenn der Fehler von einer asynchronen Windows-Runtime-Methode ausgelöst wird, wenn die App im Debugmodus ausgeführt wird.  

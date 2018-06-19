@@ -1,12 +1,13 @@
 ---
 title: Filter-Methode (Array) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], filter method
 - filter method [JavaScript]
 ms.assetid: 1d260370-9e6e-43fc-870f-2d35850db7ee
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637780"
 ---
 # <a name="filter-method-array-javascript"></a>filter-Methode (Array) (JavaScript)
 Gibt die Elemente eines Arrays, die in einer Rückruffunktion angegebene Bedingung erfüllen.  

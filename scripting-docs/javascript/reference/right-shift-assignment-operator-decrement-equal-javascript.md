@@ -1,13 +1,13 @@
 ---
 title: Rightshiftzuweisungsoperator (&gt;&gt;=) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>='
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - right shift operators [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: 8c1f7f90-e3ac-42ee-94f2-5ccc47d7aef6
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640440"
 ---
 # <a name="right-shift-assignment-operator-gtgt-javascript"></a>Rightshiftzuweisungsoperator (&gt;&gt;=) (JavaScript)
 Verschiebt den Wert einer Variablen um die Anzahl der Bits, die im Wert eines Ausdrucks angegeben sind, unter Beibehaltung des Vorzeichens nach rechts und weist das Ergebnis der Variablen zu.  

@@ -1,16 +1,16 @@
 ---
-title: "Active Script-Profilerstellung – Übersicht | Microsoft-Dokumentation"
-ms.custom: 
+title: Active Script-Profilerstellung – Übersicht | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Active Script Profiling
 ms.assetid: eec2f413-6605-4df4-a86f-4919755e9358
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571440"
 ---
 # <a name="active-script-profiling-overview"></a>Active Script-Profilerstellung - Übersicht
 Die [Active Script Profiler-Schnittstelle](../winscript/reference/active-script-profiler-interfaces.md) erlaubt die Profilerstellung eines Skriptmoduls. Die Active Script-Profilerstellung umfasst folgende Teile:  

@@ -1,19 +1,20 @@
 ---
 title: Number.isSafeInteger (Zahl) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: c7ef6ce8-fe71-4e53-be44-4dd440aef21d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638350"
 ---
 # <a name="numberissafeinteger-number-javascript"></a>Number.isSafeInteger (Zahl) (JavaScript)
 Gibt einen booleschen Wert zurück, der angibt, ob eine Zahl gefahrlos in JavaScript dargestellt werden kann.  

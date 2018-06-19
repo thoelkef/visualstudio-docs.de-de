@@ -1,13 +1,13 @@
 ---
 title: SetDate-Methode (Datum) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setDate
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - setDate method
 - dates, setting
 ms.assetid: a84b9b01-a6d0-489f-8a13-e7af9e9630b2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640310"
 ---
 # <a name="setdate-method-date-javascript"></a>setDate-Methode (Datum) (JavaScript)
 Legt den numerischen Tag des Monats-Wert, der die `Date` -Objekt unter Verwendung der Ortszeit.  

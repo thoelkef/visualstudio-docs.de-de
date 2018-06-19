@@ -1,13 +1,13 @@
 ---
 title: JSON-Objekt (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638050"
 ---
 # <a name="json-object-javascript"></a>JSON-Objekt (JavaScript)
 Ein systeminternes Objekt, das Funktionen zum Konvertieren von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Werten in das und aus dem JSON-Format (JavaScript Objekt Notation) bereitstellt. Die `JSON.stringify`-Funktion serialisiert einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Wert in JSON-Text. Die `JSON.parse`-Funktion deserialisiert JSON-Text, um einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Wert zu erzeugen.  

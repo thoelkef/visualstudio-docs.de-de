@@ -1,13 +1,13 @@
 ---
 title: DecodeURIComponent-Funktion (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - decodeURIComponent
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - decodeURIComponent method
 ms.assetid: 486ccee2-afd7-4863-97ce-4adb50cf39c0
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636190"
 ---
 # <a name="decodeuricomponent-function-javascript"></a>decodeURIComponent-Funktion (JavaScript)
 Ruft ab, der nicht codierte Version einer codierten Komponente Uniform Resource Identifier (URI).  

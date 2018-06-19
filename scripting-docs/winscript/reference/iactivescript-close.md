@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::Close | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Close
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Close
 ms.assetid: cc7dd63b-1d7e-410a-857b-09ea3aade275
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640970"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Bewirkt, dass das Skriptmodul in verwerfen Sie alle derzeit geladenes Skript, verlieren den Zustand, und lassen Sie alle Schnittstellenzeiger er für andere Objekte, daher eingeben Zustand "geschlossen" aufweist. Ereignissenken, sofort ausgeführte Skripttext und -Makroaufrufe, die bereits in Bearbeitung sind werden abgeschlossen, bevor die statusänderungen (verwenden Sie [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) zu einen ausgeführten Skriptthread "Abbrechen"). Diese Methode muss durch den Host erstellen aufgerufen werden, bevor die Schnittstelle freigegeben wird, um Zirkelverweis Problemen vorzubeugen.  

@@ -1,13 +1,13 @@
 ---
 title: JavaScript-Versionsinformationen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, version information
 ms.assetid: 440f4924-f7a9-48e0-873e-bd599a93b437
-caps.latest.revision: 
+caps.latest.revision: 93
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753496"
 ---
 # <a name="javascript-version-information"></a>JavaScript-Versionsinformationen
 Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze von JavaScript-Elementen. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] -Apps unterstützen einen etwas anderen Satz von Funktionen als Internet Explorer.  
