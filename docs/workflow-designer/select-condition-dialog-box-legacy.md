@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976474"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogfeld "Regelbedingungs-Editor auswählen" (Vorgängerversion)
 

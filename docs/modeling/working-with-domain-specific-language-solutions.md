@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965978"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Arbeiten mit domänenspezifischen Sprachlösungen
 Erstellt eine domänenspezifische Sprache (DSL) mit einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Dieser Abschnitt enthält Informationen zum Einrichten und Anpassen der Lösung.

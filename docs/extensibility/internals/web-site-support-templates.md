@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147127"
 ---
 # <a name="web-site-support-templates"></a>Unterstützung für Websitevorlagen
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Website Projekt- und Elementvorlagen bieten wiederverwendbare und anpassbare Website Projekt- und elementeigenschaftenänderungen Stubs, die den Entwicklungsprozess beschleunigen, durch das Entfernen der neuen Website-Projekten und Elementen von Grund auf neu erstellen zu müssen. Weitere Informationen zu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Vorlagen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../../ide/creating-project-and-item-templates.md).

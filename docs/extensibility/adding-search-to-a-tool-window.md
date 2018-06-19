@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032069"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Hinzufügen von Suche zu einem Toolfenster
 Beim Erstellen oder aktualisieren ein Toolfenster in der Erweiterung können Sie die gleiche Suche-Funktionalität, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:  

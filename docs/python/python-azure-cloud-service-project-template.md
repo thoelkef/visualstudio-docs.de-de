@@ -12,17 +12,18 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 2acaa7a8012d8ef411eed065d8b4e134b4e52c1e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031812"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
 Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Services mithilfe von Python helfen.
 
-Ein [Clouddienst](https://docs.microsoft.com/en-us/azure/cloud-services/) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. In der Regel verwenden sie die Pakete im Paket „azure“, das mit [`pip install azure`](http://pypi.org/project/azure) installiert wird.
+Ein [Clouddienst](https://docs.microsoft.com/azure/cloud-services/) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. In der Regel verwenden sie die Pakete im Paket „azure“, das mit [`pip install azure`](http://pypi.org/project/azure) installiert wird.
 
 Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 

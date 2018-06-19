@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977269"
 ---
 # <a name="iterators-and-generators-javascript"></a>Iteratoren und Generatoren (JavaScript)
 Ein Iterator ist ein Objekt, das verwendet wird, um ein Containerobjekt wie eine Liste zu durchlaufen. In JavaScript ist ein Iterator-Objekt kein bestimmtes, integriertes Objekt, ist jedoch ein Objekt, das eine `next`Methode implementiert, um auf das nächste Element im Container-Objekt zuzugreifen.  

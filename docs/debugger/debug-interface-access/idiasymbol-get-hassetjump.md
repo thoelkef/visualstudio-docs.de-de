@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464286"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl (gepaart mit dem [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl diese bilden die C-Format-Methode der Ausnahmebehandlung).  

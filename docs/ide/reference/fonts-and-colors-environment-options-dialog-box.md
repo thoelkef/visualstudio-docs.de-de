@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954228"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.

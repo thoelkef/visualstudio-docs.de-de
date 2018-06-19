@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143886"
 ---
 # <a name="strings-element"></a>Zeichenfolgen-Element
 Das Zeichenfolgen-Element muss mindestens eine enthalten **ButtonText** untergeordnetes Element. Alle untergeordneten Elemente sind optional. Ungültiges XML-Zeichen wie '&' und ' <' als Entitäten codiert werden ("&amp;'und'&lt;" usw.).  

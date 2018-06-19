@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146805"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Seite-an-Seite Dateizuordnungen verwalten
 Wenn Ihr VSPackage dateizuordnungen bereitstellt, müssen Sie entscheiden, Behandeln von Seite-an-Seite-Installationen in der eine bestimmte Version [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aufgerufen werden soll, um eine Datei zu öffnen. Nicht kompatiblen Dateiformate zusammengesetzte das Problem.  

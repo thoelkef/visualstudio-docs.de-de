@@ -1,19 +1,20 @@
 ---
 title: Auflistungen (JavaScript) | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783051"
 ---
 # <a name="collections-javascript"></a>Auflistungen (JavaScript)
 Sie können die Auflistungsobjekte [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) und [WeakMap](../../javascript/reference/weakmap-object-javascript.md) verwenden, um Werte und Objekte zu speichern. Diese Objekte stellen einfache Methoden zum Hinzufügen und Abrufen von Member bereit, indem sie entweder einen Schlüssel oder einen Wert anstelle eines Index verwenden. Um mithilfe eines Index auf Member einer Auflistung zuzugreifen, verwenden Sie stattdessen ein `Array`-Objekt. Weitere Informationen finden Sie unter [Verwenden von Arrays (JavaScript)](../../javascript/advanced/using-arrays-javascript.md).  

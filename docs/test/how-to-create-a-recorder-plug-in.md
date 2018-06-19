@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978176"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>How to: Create a Recorder Plug-In
 

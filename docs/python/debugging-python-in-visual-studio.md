@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032254"
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 

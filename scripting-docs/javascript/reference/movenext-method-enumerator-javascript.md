@@ -1,13 +1,13 @@
 ---
 title: MoveNext-Methode (Enumerator) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - moveNext
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - MoveNext method
 ms.assetid: 59aa339b-f375-450a-8276-37896a55a824
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639770"
 ---
 # <a name="movenext-method-enumerator-javascript"></a>moveNext-Methode (Enumerator) (JavaScript)
 Verschiebt das aktuelle Element zum nächsten Element in der Auflistung  
