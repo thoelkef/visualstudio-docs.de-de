@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558866"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Gewusst wie: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
 Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung für die Verwendung von Online- und Offlineanalyse installiert ist, ein Eintrag hinzugefügt wird die **starten** im Menü und die **Software** Liste. Wird standardmäßig der angezeigte Name ist der Name der Anwendungsassembly identisch, aber Sie können den Anzeigenamen ändern, indem Sie festlegen **Produktname** in der **Veröffentlichungsoptionen** (Dialogfeld).  

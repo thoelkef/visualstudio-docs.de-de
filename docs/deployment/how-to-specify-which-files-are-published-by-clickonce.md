@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561414"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Gewusst wie: Angeben der mit ClickOnce veröffentlichten Dateien
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, alle ohne Code-Dateien im Projekt werden zusammen mit der Anwendung bereitgestellt. In einigen Fällen möglicherweise nicht möchten oder müssen, um bestimmte Dateien zu veröffentlichen, oder Sie möchten bestimmte Dateien basierend auf Bedingungen zu installieren. Visual Studio stellt die Funktionen zum Ausschließen von Dateien, kennzeichnen Dateien als Datendateien oder erforderliche Komponenten und erstellen Sie Gruppen von Dateien für die bedingte Installation bereit.  

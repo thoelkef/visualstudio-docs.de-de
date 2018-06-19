@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548424"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Allgemeine Referenz (Office-Entwicklung in Visual Studio)
   Dieser Abschnitt enthält technische Details zu Microsoft Office-Projekten in Visual Studio.  

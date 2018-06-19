@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125902"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referenz (Visual Studio-Debug-APIs)
 Die Visual Studio Debugging-SDK-Verweise werden das grundlegende Modell für die Laufzeit-Architektur und die Funktionen des Debuggers und zugehörigen Komponenten. Die Dokumentation Annahmen aus so wenig wie möglich über die Komponenten und Schnittstellen, die, außer das Verhalten beschrieben, die sie über die Schnittstellen definiert.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566133"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Gewusst wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
 Nachdem Sie die Bereitstellungseigenschaften in das Anwendungsmanifest für Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen (Xbap) und Office-Projektmappen ändern, müssen Sie sowohl die Anwendung erneut anmelden und die Bereitstellungsmanifeste mit einem Zertifikat. Dieser Prozess trägt dazu bei, dass manipulierte Dateien nicht auf Endbenutzercomputern installiert sind.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116996"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Diese Schnittstelle kann einen Aufrufer bestimmen, ob ein Port Lieferant Ports (indem sie auf den Datenträger geschrieben wird) zwischen den Aufrufen des Debuggers beibehalten und Sie anschließend eine Liste mit diesen beibehaltenen Ports rufen kann.  

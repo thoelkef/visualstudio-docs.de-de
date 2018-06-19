@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113343"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Diese Schnittstelle stellt einen Fehler oder Warnung Haltepunkt, z. B. einen ungültigen Speicherort, ein ungültiger Ausdruck oder die Gründe, warum die ausstehende Haltepunkt (Code nicht geladen werden, noch usw.) nicht gebunden wurde.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567992"
 ---
 # <a name="logging-in-msbuild"></a>Protokollierung in MSBuild
 Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die Protokollierung erfasst Buildereignisse, Benachrichtigungen, Warnungen und Fehler in einer Protokolldatei.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448427"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel
   Wenn Sie nur die ersten Schritte Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Excel mithilfe von Visual Studio machen, ist hier was Sie wissen müssen.  

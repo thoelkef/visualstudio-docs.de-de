@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120662"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 Diese Schnittstelle wird von Debugging-Modul (DE) gesendet, auf die Sitzung Debug-Manager (SDM), wird eine Eigenschaft, die einem bestimmten Dokument zugeordnet ist, die gelöscht werden.  

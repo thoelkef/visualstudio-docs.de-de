@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113044"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Erstellt eine eindeutige ID oder Alias für dieses Objekt ab oder gibt einen vorhandenen Alias.  

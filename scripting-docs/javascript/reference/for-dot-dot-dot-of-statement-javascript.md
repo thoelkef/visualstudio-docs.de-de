@@ -23,6 +23,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454595"
 ---
 # <a name="forof-statement-javascript"></a>for...of-Anweisung (JavaScript)
 Führt eine oder mehrere Anweisungen für jeden Wert eines Iterators aus, der von einem iterable-Wert abgerufen wurde.  
