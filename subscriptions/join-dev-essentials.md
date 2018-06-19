@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863637"
 ---
 # <a name="how-to-join-visual-studio-dev-essentials"></a>Teilnahme an Visual Studio Dev Essentials
 

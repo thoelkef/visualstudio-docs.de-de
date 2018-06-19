@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148625"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe
 Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer, das Zeichen für den Parameter Liste (in der Regel eine öffnende Klammer eingibt). Wie ein Parameter und Parametertrennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, um den nächsten Parameter in Fettdruck angezeigt. Signaturhilfe können Sie im Kontext eines Diensts Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und Signaturhilfe für nur dieses Typs angezeigt oder Signaturhilfe können Sie für einen vorhandenen Inhaltstyp (z. B. "Text") angezeigt. Diese exemplarischen Vorgehensweise beim Anzeigen von Signaturhilfe für den Inhaltstyp "Text".  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135650"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung im ein Legacy-Sprachdienst
 Gliederung erleichtert möglich, ein komplexes Programm in eine Übersicht über oder Gliederung zu reduzieren. In c# können z. B. alle Methoden einer einzelnen Zeile eine zeigt nur die Methodensignatur reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. Innerhalb einer einzelnen Methode, eine komplexe Logik reduziert werden kann, um den Gesamtablauf anzuzeigen nur die erste Zeile von Anweisungen wie z. B. `foreach`, `if`, und `while`.  

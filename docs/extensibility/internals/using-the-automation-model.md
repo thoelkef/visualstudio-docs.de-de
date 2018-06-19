@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136535"
 ---
 # <a name="using-the-automation-model"></a>Mithilfe des Automatisierungsmodells
 Nachdem Sie Ihr VSPackage für die Automatisierung verbunden haben, erhalten Sie die Eigenschaften und Methoden durch Aufrufen der <xref:EnvDTE.DTEClass.GetObject%2A> Methode für die <xref:EnvDTE._DTE> Objekt auf und übergibt eine Zeichenfolge, die das Objekt, das Sie abrufen möchten.  

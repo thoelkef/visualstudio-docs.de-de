@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139460"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
 Visual Studio-Umgebung SDK-Editoren, darunter auch die Core-Editor mithilfe Sprachdienste bestimmte syntaktische Elemente zu identifizieren und mit angegebenen Farben für ein bestimmtes Dokument-Ansicht anzeigen.

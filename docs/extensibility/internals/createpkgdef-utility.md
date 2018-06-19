@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135783"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef-Hilfsprogramm
 Eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter akzeptiert, und erstellt eine PKGDEF-Datei, um die DLL-Datei zu begleiten. Die PKGDEF-Datei enthält alle Informationen, die in der systemregistrierung andernfalls geschrieben werden würde, wenn die Erweiterung installiert ist.  

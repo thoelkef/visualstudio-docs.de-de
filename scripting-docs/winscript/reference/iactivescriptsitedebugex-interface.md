@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSiteDebugEx-Schnittstelle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebugEx Interface
 ms.assetid: 76869378-1a7b-47bd-8cd0-acc31f91d58d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725040"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx-Schnittstelle
 Implementieren Sie diese Schnittstelle zusammen mit der `IActiveScriptSiteDebug` Schnittstelle, wenn Sie einen Host schreiben, die muss eine Benachrichtigung über einen Laufzeitfehler in einer Anwendung abrufen und optional an die Anwendung zum Debuggen anzufügen. Der Debug-Prozess-Manager stellt eine Benachrichtigung über bereit `IActiveScriptDebug` Wenn Skript für eine Just-In-Time-Debugger ist auf dem Computer gefunden. Wenn keine Just-in-Time-Skriptdebugger wird gefunden, die PDM stellt die Benachrichtigung über `IActiveScriptDebugEx` stattdessen.  

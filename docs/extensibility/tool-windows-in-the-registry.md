@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138446"
 ---
 # <a name="tool-windows-in-the-registry"></a>Toolfenster in der Registrierung
 VSPackages, die Toolfenster bereitstellen müssen bei registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] als tool Anbietern für Fenster. Toolfenster, die mithilfe der Visual Studio-Paketvorlage erstellt dazu standardmäßig. Tool-Fenster-Anbieter haben Systemregistrierungsschlüssel, die Sichtbarkeitsattribute, z. B. Standardgröße Tool-Fenster und die Position der GUID des Fensters, das als Toolfensterbereich und andockstil dient angeben.  

@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Versionskontrolle in Visual Studio | VSTS und TFS
-description: "Leitfaden für die ersten Schritte mit der Versionskontrolle in Visual Studio"
+description: Leitfaden für die ersten Schritte mit der Versionskontrolle in Visual Studio
 keywords: VSTS, TFS, Versionskontrolle
 author: steved0x
 ms.manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795351"
 ---
 # <a name="version-control-in-visual-studio"></a>Versionskontrolle in Visual Studio
 

@@ -1,13 +1,13 @@
 ---
 title: Rest-Zuweisungsoperator (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '%='
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - remainder assignment operator [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: 9147ffbc-b598-4c44-b8f3-7b57914f6e9f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753522"
 ---
 # <a name="remainder-assignment-operator--javascript"></a>Restzuweisungsoperator (JavaScript)
 Dividiert den Wert einer Variablen durch den Wert eines Ausdrucks und weist den Divisionsrest der Variablen zu.  

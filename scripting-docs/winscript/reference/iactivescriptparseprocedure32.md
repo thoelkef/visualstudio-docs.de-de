@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645870"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Wenn das Windows-Skriptmodul des Quelltexts Code, Prozeduren, die das Skript hinzugefügt werden kann, implementiert die `IActiveScriptParseProcedure32` Schnittstelle. Für interpretierte Skriptsprachen, die über keine unabhängig erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse32` oder `IPersist`*) Skript Prozeduren auf den Namespace hinzufügen.  

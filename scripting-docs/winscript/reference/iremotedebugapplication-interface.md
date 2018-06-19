@@ -1,16 +1,16 @@
 ---
 title: IRemoteDebugApplication-Schnittstelle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IRemoteDebugApplication interface
 ms.assetid: 96bf2a3f-049f-46ba-86ad-57fc184343a2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729600"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication-Schnittstelle
 Stellt eine ausgeführte Anwendung dar. Es muss nicht zu einem Betriebssystem-Prozess entsprechen. Das Ziel in der Regel ein Debugger eine Anwendung für das Debuggen ist. Der Debug-Prozess-Manager implementiert in der Regel das Anwendungsobjekt.  

@@ -1,16 +1,16 @@
 ---
 title: IEnumRemoteDebugApplications-Schnittstelle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IEnumRemoteDebugApplications interface
 ms.assetid: ceb5fbe7-d131-4352-9dd1-af80acd3f3f7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728330"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>IEnumRemoteDebugApplications-Schnittstelle
 Listet Objekte auf. Diese Schnittstelle kann verwendet werden, um der ausgeführten Anwendung auf einem Computer für ein Dialogfeld "Anwendung" Anfügen"aufgelistet werden.  
