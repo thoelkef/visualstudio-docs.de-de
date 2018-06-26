@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750479"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -57,7 +58,7 @@ Im Anschluss finden Sie ausführlichere Informationen zu einigen der wichtigsten
 
 Wählen Sie die benötigten Arbeitsauslastungen, und ändern Sie sie bei Bedarf.
 
- ![Visual Studio 2017 Setupdialogfeld](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 Setupbildschirm")
+ ![Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-enterprise.png)
 
 Und Sie verfügen ferner über Optionen, um die Installation zu optimieren:
 
@@ -89,7 +90,7 @@ Das neue Leistungscenter von Visual Studio kann Ihnen helfen, die IDE-Startzeit 
 
 Visual Studio verschiebt seine Erweiterungen (und arbeitet auch mit Erweiterungen von Drittanbietern zusammen), damit sie erst bei Bedarf geladen werden, statt gleich beim IDE-Start. Möchten Sie wissen, welche Erweiterungen sich auf den Start, das Laden von Projektmappen und die Leistung bei der Eingabe auswirken? Sie finden diese Informationen unter **Hilfe** > **Visual Studio-Leistung verwalten**.
 
-  ![Dialogfeld „Optionen“ in Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio-Dialogfeld „Hilfe“ – Leistungsverwaltung")
+  ![Dialogfeld „Optionen“ in Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Verwalten von Erweiterungen mit dem Roaming-Erweiterungs-Manager
 
@@ -97,19 +98,19 @@ Es ist einfacher, jede Entwicklungsumgebung mit Ihren bevorzugten Erweiterungen 
 
 Um eine Liste Ihrer Erweiterungen in Visual Studio anzuzeigen, klicken Sie auf **Extras** > **Erweiterungen und Updates**, und klicken Sie dann auf den **Roaming-Erweiterungs-Manager**.
 
-![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 – „Extras“ > Dialogfeld „Erweiterungen und Updates“")
+![Visual Studio 2017: Dialogfeld „Erweiterungen und Updates“](../ide/media/vs2017ide-extensions-and-updates.png)
 
 Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiterungen nach, Sie können aber wählen, welche Ihrer Roamingliste hinzugefügt werden sollen.
 
-![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 – Roaming-Erweiterungs-Manager")
+![Visual Studio 2017: Dialogfeld „Erweiterungen und Updates“](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roaming erfolgt“](../ide/media/vs2017ide-roamedicon.png "Symbol für „Roaming erfolgt“") ***Roaming erfolgt***: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](../ide/media/vs2017ide-roamedicon.png) ***Roaming erfolgt:*** Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „Roaming und Installation erfolgt“](../ide/media/vs2017ide-roamedinstalledicon.png "Symbol für „Roaming und Installation erfolgt“") ***Roaming und Installation erfolgt***: Alle Erweiterungen, die Teil dieser Roamingliste und in Ihrer Entwicklungsumgebung installiert sind.
+* ![Symbol für „Roaming und Installation erfolgt“](../ide/media/vs2017ide-roamedinstalledicon.png) ***Roaming und Installation erfolgt:*** Alle Erweiterungen, die Teil dieser Roamingliste und in Ihrer Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](../ide/media/vs2017ide-installedicon.png "Symbol für „Installiert“") ***Installiert***: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol für „Installiert“](../ide/media/vs2017ide-installedicon.png) ***Installiert:*** Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -118,7 +119,7 @@ Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu I
 
 In Visual Studio Enterprise 2017 liefern Ihnen Livekomponententests Livekomponententest-Ergebnisse und Codeabdeckung im Editor währende der Codierung. Dies funktioniert mit C#- und Visual Basic-Projekten für .NET Framework und .NET Core und unterstützt Testframeworks von MSTest, xUnit und NUnit.
 
-![Live Unit Testing](../ide/media/lut-codewindow.png "Ein Beispiel für das neue Live Unit Testing-Feature in der Enterprise Edition von Visual Studio")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 Weitere Informationen finden Sie unter [Introducing Live Unit Testing (Einführung in Live Unit Testing)](../test/live-unit-testing-intro.md). Eine Liste der neuen Funktionen, die in jedem Release von Visual Studio Enterprise 2017 hinzugefügt werden, finden Sie unter [What's new in Live Unit Testing (Neuerungen in Live Unit Testing)](../test/live-unit-testing-whats-new.md).
 
@@ -153,27 +154,27 @@ Weitere Informationen finden Sie unter [Schnelle Aktionen](../ide/common-quick-a
 
 Wenn Sie in Visual Studio an einem Projekt arbeiten, können Sie Ihren Code für einen Git-Dienst einrichten, ihn schnell dahin übertragen und dort veröffentlichen. Sie können Ihre Git-Repositorys auch mit Menüklicks auf Schaltflächen in der unteren rechten Ecke der IDE verwalten.
 
-![Visual Studio 2017 interagiert mit dem Git-Dialogfeld](../ide/media/vsIDE-GitInteraction.png "Git-Tools in der Visual Studio-IDE")
+![Interaktion von Visual Studio 2017 mit dem Git-Dialogfeld](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>Benutzerfreundlichere Navigationssteuerelemente
 
 Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit größerer Sicherheit und weniger Ablenkung von A nach B gelangen.
 
-* **Neu in 15.4:** **Gehe zu Definition** (**Strg**+**Klicken** oder **F12**) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **Strg** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](../ide/go-to-and-peek-definition.md).  
+* **Neu in 15.4:** **Gehe zu Definition** (**Strg**+**Klicken** oder **F12**) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **Strg** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](../ide/go-to-and-peek-definition.md).
 
 * **Zur Implementierung wechseln** (**Strg**+**F12**) &ndash; Navigieren Sie von jedem Basistyp oder Member zu dessen verschiedenen Implementierungen.
 
 * **Go To All** (**Strg**+**T** oder **Strg**+**,**) &ndash; ( Gehe zu allen) Navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
 
-  ![Verbessertes „Gehe zu allen“](../ide/media/vs2017ide-navigation-go-to.png "Beispiel für verbesserte „Gehe zu allen“-Funktion")
+  ![Verbesserte Option „Gehe zu allen“](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **Alle Verweise suchen** (**Umschalt**+**F12**) &ndash; Mit Syntaxfarbgebung können Sie „Alle Verweise suchen“-Ergebnisse nach einer Kombination aus Projekt, Definition und Pfad gruppieren. Sie können auch Ergebnisse „sperren“, damit Sie die Suche nach anderen Verweisen fortsetzen können, ohne die ursprünglichen Ergebnisse zu verlieren.
 
-  ![Neues „Alle Verweise suchen“-Tool](../ide/media/vs2017ide-find-all-references.png "Beispiel für neues „Alle Verweise suchen“-Tool")
+  ![Neues Tool „Alle Verweise suchen“](../ide/media/vs2017ide-find-all-references.png)
 
-* **Strukturschnellansicht** &ndash; Punktierte, graue, vertikale Linien (Einzugsführungslinien) dienen nun als Orientierungshilfen im Code, um Kontext innerhalb Ihres Bezugssystems bereitzustellen. Vielleicht kennen Sie sie von den beliebten Produktivitäts-Power Tools. Damit können Sie jederzeit ohne zu scrollen visuell darstellen und ermitteln, in welchem Codeblock Sie sich befinden. Wenn Sie den Mauszeiger über die Zeilen bewegen, werden QuickInfos angezeigt, die Ihnen die Öffnung dieses Blocks und seine übergeordneten Elemente anzeigen. Dies ist sowohl für alle Sprachen verfügbar, die über TextMate-Grammatiken unterstützt werden, als auch für C#, Visual Basic und XAML.  
+* **Strukturschnellansicht** &ndash; Punktierte, graue, vertikale Linien (Einzugsführungslinien) dienen nun als Orientierungshilfen im Code, um Kontext innerhalb Ihres Bezugssystems bereitzustellen. Vielleicht kennen Sie sie von den beliebten Produktivitäts-Power Tools. Damit können Sie jederzeit ohne zu scrollen visuell darstellen und ermitteln, in welchem Codeblock Sie sich befinden. Wenn Sie den Mauszeiger über die Zeilen bewegen, werden QuickInfos angezeigt, die Ihnen die Öffnung dieses Blocks und seine übergeordneten Elemente anzeigen. Dies ist sowohl für alle Sprachen verfügbar, die über TextMate-Grammatiken unterstützt werden, als auch für C#, Visual Basic und XAML.
 
-  ![Visual Studio 2017 Strukturschnellansicht](../ide/media/vsIDE-StructureVisualizer.png "Strukturschnellansicht in Visual Studio")
+  ![Strukturschnellansicht in Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png)
 
 Weitere Informationen zu den neuen Produktivitätsfeatures finden Sie im Blogbeitrag [Productivity in Visual Studio 2017 (Produktivität in Visual Studio 2017)](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) von Mark Wilson-Thomas.
 
@@ -191,13 +192,13 @@ Ausführliche Angaben finden Sie auf der Seite [Neuerungen bei Visual C++ in Vis
 
 Nun können Sie leichter während des Debuggens vorwärts springen, ohne einen Haltepunkt festlegen zu müssen, um in der gewünschten Zeile zu stoppen. Wenn Sie im Debugger angehalten werden, klicken Sie einfach auf das Symbol, das neben der Codezeile angezeigt wird. Die nächste Codeausführung wird nun an dieser Zeile anhalten, sobald sie im Codepfad erreicht wird.
 
-![Visual Studio 2017-Debuggen – Ausführung bis Klick](../ide/media/vs2017ide-RunToClick.png "Ausführung bis Klick in Visual Studio-Debuggen und Diagnose")
+![Debuggen in Visual Studio 2017: Ausführung bis Klick](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Die neue Ausnahmen-Hilfe
 
 Die neue Ausnahmen-Hilfe hilft Ihnen, Ihre Ausnahmeinformationen auf einen Blick anzeigen. Die Informationen werden in einem kompakten Format mit unmittelbarem Zugriff auf die inneren Ausnahmen angezeigt. Wenn Sie eine NullReferenceException diagnostizieren, können Sie direkt in der Ausnahme-Hilfe schnell sehen, was NULL war.
 
-![Das neue Dialogfeld „Ausnahmehilfsprogramm“ in Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "Das neue Dialogfeld „Ausnahmehilfsprogramm“")
+![Dialogfeld der neuen Ausnahmen-Hilfe in Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
 Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio)](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
@@ -247,7 +248,7 @@ Weitere Informationen finden Sie unter [Debug live ASP.NET apps using snappoints
 
 Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie können Apps für UWP mit nur einem API-Satz, einem App-Paket und einem Store entwickeln, um alle Windows 10-Geräte (PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw.) zu erreichen. UWP unterstützt verschiedene Bildschirmgrößen und eine Vielzahl von Interaktionsmodellen, z.B. Fingereingabe, Maus und Tastatur, Gamecontroller oder Stifteingabe. Hinter UWP-Apps steht die Idee, dass Benutzer ihre Funktionen mobil auf ALLEN Geräten verwenden und jeweils das Gerät verwenden möchten, das am praktischsten und produktivsten für die vorliegende Aufgabe ist.
 
- ![Universelle Windows-Plattform](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![Universelle Windows-Plattform](../cross-platform/media/uwp_coreextensions.png)
 
 Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
 
@@ -270,7 +271,7 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](../cross-plat
 
 **Neues in Version 15.3:** Für Ihre iOS-Entwicklungsanforderungen haben wir einen eigenständigen Berechtigungs-Editor hinzugefügt. Er enthält eine benutzerfreundliche Benutzeroberfläche, die problemlos durchsucht werden kann. Doppelklicken Sie auf die Datei *entitlements.plist*, um ihn zu starten.
 
-![Berechtigungs-Editor für Xamarin](../ide/media/xamarin-entitlements-editor.png "Entitlement editor for Xamarin")
+![Berechtigungs-Editor für Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio-Tools für Xamarin
 
@@ -309,9 +310,9 @@ Weitere Informationen finden Sie im Blogbeitrag [Redgate Data Tools in Visual St
 
 Die .NET Core-Plattform besteht aus mehreren Komponenten, die den verwalteten Compiler, die Runtime, die Basisklassenbibliotheken sowie zahlreiche Anwendungsmodelle wie ASP.NET Core umfassen. .NET Core unterstützt derzeit die drei Hauptbetriebssysteme: Windows, Linux und macOS. Sie können .NET Core in Geräte-, Cloud- und eingebetteten/IoT-Szenarien verwenden.
 
-Außerdem enthält es nun Unterstützung für Docker.  
+Außerdem enthält es nun Unterstützung für Docker.
 
-**Neues in Version 15.3**: Visual Studio 2017 Version 15.3 unterstützt die .NET Core 2.0-Entwicklung. Wenn .NET Core 2.0 verwendet wird, muss das .NET Core 2.0 SDK separat heruntergeladen und installiert werden.  
+**Neues in Version 15.3**: Visual Studio 2017 Version 15.3 unterstützt die .NET Core 2.0-Entwicklung. Wenn .NET Core 2.0 verwendet wird, muss das .NET Core 2.0 SDK separat heruntergeladen und installiert werden.
 
 Weitere Informationen finden Sie im [Leitfaden für .NET Core](/dotnet/core/index).
 

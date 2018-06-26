@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei der Installation
+title: Behandlung von Installationsproblemen mit Visual Studio 2017
 description: Manchmal kann etwas schiefgehen. Wenn die Installation oder das Upgrade von Visual Studio fehlschlägt, kann diese Seite Ihnen helfen.
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766037"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern
 
@@ -112,4 +113,5 @@ Hier sind einige weitere Optionen:
 
 * [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
 * [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)
+* [Installieren von Visual Studio hinter einer Firewall oder einem Proxyserver](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Entfernen von Visual Studio 2017](remove-visual-studio.md)

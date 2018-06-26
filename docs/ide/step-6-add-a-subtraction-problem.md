@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747892"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Schritt 6: Hinzufügen einer Subtraktionsaufgabe
 Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu und erfahren, wie die folgenden Aufgaben ausgeführt werden:
@@ -51,12 +52,12 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
 
      Sie können die `Next()`-Methode der Random-Klasse, die zuvor in diesem Tutorial „randomizer“ genannt wurde, auf unterschiedliche Weise aufrufen. Methoden, für die es mehrere Arten des Aufrufs gibt, werden als "überladene" Methoden bezeichnet. Sie können mithilfe von IntelliSense untersucht werden. Werfen Sie einen weiteren Blick auf die QuickInfo für die `Next()`-Methode im IntelliSense-Fenster.
 
-     ![QuickInfo im IntelliSense-Fenster](../ide/media/express_overloads.png "Express_Overloads")
-QuickInfo im **IntelliSense**-Fenster
+     ![QuickInfo im IntelliSense-Fenster](../ide/media/express_overloads.png)
+ QuickInfo im **IntelliSense-Fenster**
 
      Die QuickInfo zeigt **(+ 2 Überladung(en))** an, was bedeutet, dass Sie die `Next()`-Methode auf zwei weitere Arten aufrufen können. Überladungen enthalten unterschiedliche Anzahl und Typen von Argumenten, sodass sie alle mit leichten Unterschieden funktionieren. Beispielsweise könnte eine Methode ein Argument mit nur einer ganzen Zahl aufweisen, während eine der entsprechenden Überladungen eine Ganzzahl und eine Zeichenfolge enthalten kann. Wählen Sie die richtige Überladung je nach gewünschter Funktionen aus. Wenn Sie der `StartTheQuiz()`-Methode den Code hinzufügen, werden weitere Informationen im IntelliSense-Fenster angezeigt, sobald Sie `randomizer.Next(` eingeben. Um die Überladungen zu durchlaufen, klicken Sie wie in der folgenden Abbildung gezeigt auf die Schaltflächen mit dem **Pfeil nach oben** und dem **Pfeil nach unten**:
 
-     ![Überladung für Next&#40;&#41;-Methode in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Überladung für **Next()**-Methode in **IntelliSense**
+     ![Überladung für die Next&#40;&#41;-Methode in IntelliSense](../ide/media/express_nextoverload.png) Überladung für die **Next()**-Methode in **IntelliSense**
 
      In diesem Fall wählen Sie die letzte Überladung aus, da Sie Mindest- und Höchstwerte angeben können.
 
@@ -76,8 +77,8 @@ QuickInfo im **IntelliSense**-Fenster
 
      Das Programm enthält eine Subtraktionsaufgabe, wie in der folgenden Abbildung veranschaulicht:
 
-     ![Mathetest mit Subtraktionsaufgabe](../ide/media/express_addsubtract.png "Express_AddSubtract")
-**Mathetest** mit Subtraktionsaufgabe
+     ![Mathetest mit Subtraktionsaufgabe](../ide/media/express_addsubtract.png)
+ **Mathetest** mit Subtraktion
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 

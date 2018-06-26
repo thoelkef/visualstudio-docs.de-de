@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45306283d6aaa2346b121455cca398e918b66e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764529"
 ---
 # <a name="empty-timeline-segment"></a>Leeres Zeitachsensegment
 In der Nebenläufigkeitsschnellansicht hängt der Grund dafür, dass ein Abschnitt der Zeitachse leer ist (einen weißen Hintergrund aufweist) von der Art des Kanals ab.  
@@ -32,5 +33,5 @@ In der Nebenläufigkeitsschnellansicht hängt der Grund dafür, dass ein Abschni
 -   Bei einem Markerkanal ist der Grund der, dass keine Marker generiert wurden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)   
- [Zoom Control (Threads View) (Zoomsteuerelement (Threadansicht))](../profiling/zoom-control-threads-view.md)
+ [Threadansicht](../profiling/threads-view-parallel-performance.md)   
+ [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)

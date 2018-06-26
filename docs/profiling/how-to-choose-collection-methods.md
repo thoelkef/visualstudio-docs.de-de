@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765387"
 ---
-# <a name="how-to-choose-collection-methods"></a>Gewusst wie: Auswählen von Sammlungsmethoden
+# <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
 Die Visual Studio-Profilerstellungstools unterstützen drei Methoden zum Sammeln von Leistungsdaten: Sampling, Instrumentierung und Parallelität. Sie können zum Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauerdaten entweder die Sampling- oder Instrumentierungsmethode verwenden.
 
@@ -52,7 +53,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 1. Klicken Sie im **Leistungs-Explorer** auf die Leistungssitzung.
 
-     Ein Dateiname einer Leistungssitzung hat die Dateiendung „.psess“.
+     Dateinamen von Leistungssitzungen verfügen über die Erweiterung *.psess*.
 
 2. Klicken Sie im mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.
 

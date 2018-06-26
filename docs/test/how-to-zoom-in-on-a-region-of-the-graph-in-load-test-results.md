@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750970"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Gewusst wie: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
 
@@ -39,7 +40,7 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 > [!TIP]
 > Mit dem Symbolleistenbefehl **Horizontale Zoomsteuerelemente synchronisieren** kann die automatische horizontale Zoomsynchronisierung aktiviert bzw. deaktiviert werden. Wenn die Synchronisierung aktiviert ist, gelten alle Zoomeinstellungen, die Sie für ein Diagramm vornehmen, auch für alle anderen Diagramme in der Diagrammansicht.
 
- ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") Zoomsteuerelement der Diagrammansicht
+ ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png) Graph View Zoom Control
 
  In der obigen Abbildung wurde das Diagramm "Getestetes System" vergrößert, um Schwellenwertverletzungen zu untersuchen. Die Schwellenwertverletzungen wurden mit dem Befehl **Schwellenwertverletzungen im Diagramm anzeigen** in der Dropdownliste **Diagrammoptionen** auf der Symbolleiste aktiviert.
 

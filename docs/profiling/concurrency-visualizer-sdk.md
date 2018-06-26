@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691185"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -72,7 +73,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
     ```  
   
-## <a name="custom-usage"></a>Benutzerdefinierte Auslastung  
+## <a name="custom-usage"></a>Benutzerdefinierte Verwendung  
  Bei erweiterten Szenarios macht das SDK der Nebenläufigkeitsschnellansicht weitere Steuerelemente verfügbar.  Mit erweiterten Szenarios sind zwei wesentliche Konzepte verbunden: Markeranbieter und Markerserien. Markeranbieter sind verschiedene ETW-Anbieter (jeder verfügt über eine andere GUID). Markerserien sind serielle Kanäle von Ereignissen, die von einem Anbieter generiert werden. Sie können sie verwenden, um die Ereignisse zu organisieren, die von einem Markeranbieter generiert werden.  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C#- oder Visual Basic-Projekt  
@@ -120,11 +121,11 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="see-also"></a>Siehe auch  
   
 |Titel|description|  
 |-----------|-----------------|  
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|  
-|[C Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|  
+|[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|  
 |[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|

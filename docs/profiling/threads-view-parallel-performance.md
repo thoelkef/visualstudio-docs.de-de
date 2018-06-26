@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573166"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 Die **Threadansicht** ist die ausführlichste und detaillierteste Ansicht in der Nebenläufigkeitsschnellansicht (wählen Sie **Analysieren** > **Nebenläufigkeitsschnellansicht** aus, um die Nebenläufigkeitsschnellansicht zu starten). Mithilfe dieser Ansicht können Sie ermitteln, ob die Threads ausgeführt werden oder aufgrund von Synchronisierung, E/A oder aus anderen Gründen blockiert werden.  
@@ -54,7 +55,7 @@ Die **Threadansicht** ist die ausführlichste und detaillierteste Ansicht in der
   
 -   Abhängigkeiten zwischen Arbeitsthreads und kritischen Pfaden der Ausführung verstehen.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Untersuchen von bestimmten Zeitintervallen und Threads  
+## <a name="examine-specific-time-intervals-and-threads"></a>Untersuchen von bestimmten Zeitintervallen und Threads  
  In der Threadansicht wird eine Zeitachse angezeigt. Sie können in der Zeitachse vergrößern und schwenken, um bestimmte Intervalle und Threads der Anwendung zu überprüfen. Die x-Achse gibt die Zeit an und auf der y-Achse gibt es verschiedene Kanäle:  
   
 -   Zwei E/A-Kanäle für jedes Laufwerk im System, einen Kanal für Lesevorgänge und einen für Schreibvorgänge.  

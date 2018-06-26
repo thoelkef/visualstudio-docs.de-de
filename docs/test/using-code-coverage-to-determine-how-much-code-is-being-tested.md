@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752091"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -84,7 +85,7 @@ In einigen Situationen werden abhängig von den Testdaten andere Blöcke im Code
 
  Bei einem Test mit der Eingabe "2 " stellen Sie beispielsweise fest, dass 50 % einer bestimmten Funktion abgedeckt werden. Wenn Sie den Test ein zweites Mal mit der Eingabe "– 2 " ausführen, sehen Sie in der Ansicht der Abdeckungsfärbung, dass die anderen 50 % der Funktion abgedeckt werden. Führen Sie nun die Ergebnisse aus den zwei Testläufen zusammen. Die Berichtsansicht und die Ansicht der Abdeckungsfärbung zeigen nun an, dass 100 % der Funktion ausgeführt wurden.
 
- Verwenden Sie hierzu das ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Codeabdeckung“](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Codeabdeckungsergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
+ Klicken Sie hierzu auf ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png)**Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
 
  Speichern Sie die Ergebnisse eines Zusammenführungsvorgangs mithilfe der Option **Export Code Coverage Results** (Codeabdeckungsergebnisse exportieren).
 
@@ -258,7 +259,7 @@ Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von
 
    Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.
 
-   ![Festlegen der Builddefinition für Code Coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Festlegen der Builddefinition für Code Coverage](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Falls kein Feld mit dem Namen **Type of Run Settings File** (Typ der Laufzeiteinstellungsdatei) vorhanden ist, ändern Sie die **Test Runner**-Eigenschaft. Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.

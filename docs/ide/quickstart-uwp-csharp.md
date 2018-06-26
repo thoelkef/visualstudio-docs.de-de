@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765868"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, erstellen Sie eine „Hallo Welt“-App, die auf jedem beliebigen Windows 10-Gerät ausgeführt werden kann. Zu diesem Zweck verwenden Sie eine UWP-Projektvorlage (Universelle Windows-Plattform), XAML (Extensible Application Markup Language) und die C#-Programmiersprache.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -59,7 +60,7 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
   ![Öffnen Sie im Projektmappen-Explorer die Datei „MainPage.xaml“. ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Sie sehen zwei Bereiche: den **XAML-Designer** mit einer Entwurfs-Canvas und den **XAML-Editor** zum Hinzufügen oder Ändern von Code.    
+  Sie sehen zwei Bereiche: den **XAML-Designer** mit einer Entwurfs-Canvas und den **XAML-Editor** zum Hinzufügen oder Ändern von Code.
 
   ![Der XAML-Designer-Bereich im XAML-Editor](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und star
 
 1. Wählen Sie **Lokaler Computer**, um die Anwendung zu starten.
 
-   ![Klicken Sie auf „Lokaler Computer“, um die UWP-App zu starten und zu debuggen.](../ide/media/uwp-start-or-debug.png "Klicken Sie auf „Lokaler Computer“, um die UWP-App zu starten und zu debuggen.")
+   ![Klicken Sie auf lokaler Computer, um Ihre UWP-App zu starten und zu debuggen.](../ide/media/uwp-start-or-debug.png)
 
    (Alternativ können Sie in der Menüleiste **Debuggen** > **Debugging starten** wählen oder **F5** drücken, um Ihre App zu starten.)
 

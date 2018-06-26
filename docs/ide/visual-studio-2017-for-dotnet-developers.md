@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748750"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Produktivitätsleitfaden für Visual Studio 2017 für .NET-Entwickler
 
@@ -69,7 +70,7 @@ Sie können eine *EDITORCONFIG*-Datei zum Codieren von Codierungskonventionen ve
 ![Codeformaterzwingung in Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Ich benötige weitere Refactorings und Codekorrekturen.
-Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generieren von Code und Codekorrekturen. Rote Wellenlinien stellen Fehler dar, grüne Wellenlinien Warnungen, und drei graue Punkte stellen Codevorschläge dar. Sie erhalten Zugang zu Codekorrekturen, indem Sie auf das Glühbirnen- bzw. Schraubendrehersymbol klicken oder **Strg**+**.** oder **Alt**+**Eingabetaste** drücken. Jede Korrektur enthält ein Vorschaufenster, das einen Livecodevergleich und die Funktionsweise der Lösung anzeigt.
+Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generieren von Code und Codekorrekturen. Rote Wellenlinien stellen Fehler dar, grüne Wellenlinien Warnungen, und drei graue Punkte stellen Codevorschläge dar. Sie erhalten Zugang zu Codekorrekturen, indem Sie auf das Glühbirnen- bzw. Schraubendrehersymbol klicken oder **STRG**+**.** oder **ALT**+**EINGABETASTE** drücken. Jede Korrektur enthält ein Vorschaufenster, das einen Livecodevergleich und die Funktionsweise der Lösung anzeigt.
 
 - Zu gängigen schnellen Problembehebungen und Refactorings zählen Folgende:
   - *Umbenennen*
@@ -88,7 +89,7 @@ Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generiere
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Refactorings in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Refactorings in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Ich benötige die Features „Find Usages“ (Verwendungen finden), „Gehe zu Implementierung“, „Navigate To Decompiled Assemblies“ (Navigieren zu dekompilierten Assemblys)
 Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codebasis auf. Erfahren Sie mehr über die [Features zum Navigieren in Code](../ide/navigating-code.md).
@@ -119,7 +120,7 @@ Wir haben Visual Studio 2017 um unzählige neue Funktionen zum Debuggen erweiter
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 
-![Neue Ausnahmen-Hilfe in VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Das neue Ausnahmen-Hilfsprogramm in Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Ich möchte die Versionskontrolle bei meinen Projekten verwenden.
 Sie können mithilfe von Git oder der TFVC Ihren Code in Visual Studio speichern und aktualisieren.

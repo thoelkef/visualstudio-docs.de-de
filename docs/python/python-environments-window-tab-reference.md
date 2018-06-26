@@ -1,7 +1,7 @@
 ---
 title: Referenz zum Fenster „Python-Umgebungen“
 description: Dieser Artikel beschreibt jede der Registerkarten, die im Fenster „Python-Umgebungen“ in Visual Studio angezeigt werden.
-ms.date: 05/07/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572123"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -75,7 +76,7 @@ Wenn diese Registerkarte verfügbar ist, enthält sie die in der folgenden Tabel
 
 *In früheren Versionen auch als „pip“ bezeichnet.*
 
-Verwaltet die in der Umgebung installierten Pakete mit pip und ermöglicht Ihnen ferner, neue Pakete zu suchen und zu installieren (einschließlich zugehöriger Abhängigkeiten). In Visual Studio 2017 Version 15.7 und höher wird eine Option **Pakete (Conda)** angezeigt, die stattdessen den Conda-Paket-Manager verwendet. (Wenn diese Option nicht angezeigt wird, legen Sie die Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use conda package manager when available (instead of pip) (Conda-Paket-Manager wenn verfügbar verwenden (anstelle von pip))** fest, und starten Sie dann Visual Studio neu.)
+Verwaltet die in der Umgebung installierten Pakete mit pip und ermöglicht Ihnen ferner, neue Pakete zu suchen und zu installieren (einschließlich zugehöriger Abhängigkeiten). In Visual Studio 2017 Version 15.7 und höher wird die Registerkarte **Pakete (Conda)** angezeigt, die stattdessen den Conda-Paket-Manager verwendet. (Wenn diese Option nicht angezeigt wird, legen Sie die Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use conda package manager when available (instead of pip) (Conda-Paket-Manager wenn verfügbar verwenden (anstelle von pip))** fest, und starten Sie dann Visual Studio neu.)
 
 Bereits installierte Pakete werden mit Steuerelementen zum Aktualisieren (nach unten gerichteter Pfeil) und Deinstallieren (X in einem Kreis) des Pakets angezeigt:
 
@@ -85,11 +86,19 @@ Bei Eingabe eines Suchbegriffs werden sowohl die Liste der installierten Pakete 
 
 ![Registerkarte mit Python-Umgebungspaketen mit einer Suche nach „num“](media/environments-pip-tab.png)
 
-Sie können auch einen `pip install`-Befehl direkt in das Suchfeld eingeben, einschließlich der Flags wie z.B. `--user` oder `--no-deps`.
+In der obigen Abbildung können Sie erkennen, dass die Suchergebnisse einige Pakete anzeigt, die dem Suchbegriff entsprechen. Der erste Eintrag in der Liste ist jedoch ein Befehl, um `pip install <name>` direkt auszuführen. Wenn Sie sich auf der Registerkarte **Pakete (Conda)** befinden, wird Ihnen stattdessen `conda install <name>` angezeigt:
+
+![Registerkarte „Pakete (Conda)“, auf der ein Conda-Installationsbefehl angezeigt wird](media/environments-conda-tab-install.png)
+
+In beiden Fällen können Sie die Installation anpassen, indem Sie im Suchfeld Argumente nach dem Paketnamen hinzufügen. Wenn Sie Argumente einschließen, zeigen die Suchergebnisse `pip install` oder `conda install` gefolgt von den Inhalten des Suchfelds an:
+
+![Verwenden von Argumenten in pip- und Conda-Installationsbefehlen](media/environments-pip-tab-arguments.png)
 
 Durch das Installieren eines Pakets wird ein Unterordner im `Lib`-Ordner der Umgebung im Dateisystem erstellt. Wenn Sie z.B. Python 3.6 in `c:\Python36` installiert haben, werden Pakete in `c:\Python36\Lib` installiert. Wenn Sie Anaconda 3 in `c:\Program Files\Anaconda3` installiert haben, werden Pakete in `c:\Program Files\Anaconda3\Lib` installiert.
 
-Im letzteren Fall muss Visual Studio `pip install` erhöht ausführen, damit es Unterordner erstellen kann, da die Umgebung sich in einem geschützten Bereich des Dateisystems befindet `c:\Program Files`. Wenn erhöhte Rechte erforderlich sind, zeigt Visual Studio folgende Aufforderung an: „Es sind möglicherweise Administratorberechtigungen erforderlich, um Pakete für diese Umgebung zu installieren, zu aktualisieren oder zu entfernen“:
+### <a name="granting-administrator-privileges-for-package-install"></a>Erteilen von Administratorrechten für die Paketinstallation
+
+Wenn Sie Pakete in einer Umgebung installieren, die sich in einem geschützten Bereich des Dateisystems befindet (z.B. `c:\Program Files\Anaconda3\Lib`), muss Visual Studio `pip install` mit erhöhten Rechten ausführen, damit die Unterordner des Pakets erstellt werden können. Wenn erhöhte Rechte erforderlich sind, zeigt Visual Studio folgende Aufforderung an: „Es sind möglicherweise Administratorberechtigungen erforderlich, um Pakete für diese Umgebung zu installieren, zu aktualisieren oder zu entfernen“:
 
 ![Eingabeaufforderung für erhöhte Rechte](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ Im letzteren Fall muss Visual Studio `pip install` erhöht ausführen, damit es 
 Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras > Optionen > Python Tools > Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**.
 
 Auf der gleichen Optionsregisterkarte können Sie auf **" pip" immer als Administrator ausführen** klicken, um das Dialogfeld für alle Umgebungen zu unterdrücken. Weitere Informationen finden Sie unter [Optionen > Registerkarte „Allgemein“](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Sicherheitseinschränkungen bei älteren Versionen von Python
+
+Wenn Sie Python 2.6, 3.1 oder 3.2 verwenden, zeigt Visual Studio die Warnung „Aufgrund neuer Sicherheitseinschränkungen funktioniert die Installation über das Internet bei dieser Version von Python möglicherweise nicht.“ an:
+
+![Warnung zu pip-Installationseinschränkungen mit älteren Versionen von Python](media/environments-old-version-restriction.png)
+
+Die Warnung wird angezeigt, weil `pip install` für ältere Versionen von Python keine Unterstützung für TLS 1.2 (Transport Layer Security) enthält. Dieses Protokoll ist jedoch erforderlich, um Pakete von der Paketquelle „pypi.org“ herunterzuladen. Benutzerdefinierte Python-Builds unterstützen TLS 1.2 möglicherweise. In diesem Fall kann `pip install` funktionieren.
+
+Möglicherweise können Sie das entsprechende `get-pip.py`-Skript für ein Paket von [bootstrap.pypa.io](https://bootstrap.pypa.io/) herunterladen, ein Paket von [pypi.org](https://pypi.org/) manuell herunterladen und das Paket dann über die lokale Kopie installieren.
+
+Es wird jedoch empfohlen, einfach ein Upgrade auf Python 2.7 oder 3.3 oder höher durchzuführen. In diesem Fall wird die Warnung nicht angezeigt.
 
 ## <a name="intellisense-tab"></a>Registerkarte „IntelliSense“
 

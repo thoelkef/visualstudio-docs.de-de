@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba328ae4b54728422e032741e20543b99f49d5ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 862e70c104db08f147c6a608adf1cf022b642025
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749778"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird mit den vom Prozess verwalteten Speicherlimits ausgeführt
 |||  
 |-|-|  
 |Regel-ID|DA0018|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/19/2018
   
  Wenn sich die Gesamtgröße der verwalteten Heaps dem Standardlimit nähert, nimmt der Mehraufwand für die Speicherverwaltung häufig so weit zu, dass sich dies negativ auf die Reaktionszeit und die Skalierbarkeit der Anwendung auswirkt.  
   
-## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
+## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) zu navigieren. Suchen Sie die Spalten **.NET CLR-Speicher\\Anzahl der Bytes in den Heaps** und **Festgelegte Bytes insgesamt**. Überprüfen Sie, ob die Zuordnung von verwaltetem Speicher in bestimmten Phasen der Programmausführung besonders häufig auftritt. Vergleichen Sie die Werte der Spalte **Anzahl der Bytes in den Heaps**  der Garbage Collection-Rate aus den Spalten **.NET CLR-Speicher\\Auflistungsanzahl der Generation 0**, **.NET CLR-Speicher\\der Generation 1** und **.NET CLR-Speicher\\der Generation 2**, um zu ermitteln, ob sich das Muster der verwalteten Speicherbelegung auf die Garbage Collection-Rate auswirkt.  
   
  In einer .NET Framework-Anwendung wird die Gesamtgröße der verwalteten Heaps durch die Common Language Runtime auf einen Wert beschränkt, der knapp der halben Maximalgröße des privaten Teils eines Prozessadressbereichs entspricht. Bei einem 32-Bit-Prozess, die auf einem 32-Bit-Computer ausgeführt werden, beträgt die Obergrenze des privaten Teils des Prozessadressbereichs 2 GB. Wenn sich die Gesamtgröße der verwalteten Heaps dem Standardlimit nähert, nimmt unter Umständen der Mehraufwand für die Verwaltung des Arbeitsspeichers zu, während die Leistung der Anwendung abnimmt.  

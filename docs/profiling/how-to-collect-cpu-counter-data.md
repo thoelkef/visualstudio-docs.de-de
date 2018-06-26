@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765098"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Gewusst wie: Sammeln von CPU-Indikatordaten
+# <a name="how-to-collect-cpu-counter-data"></a>Vorgehensweise: Sammeln von CPU-Indikatordaten
 
-Ein CPU-Ereignisindikator wird zum Sammeln von hardwarespezifischen Leistungsdaten verwendet. In diesem Thema erfahren Sie, wie Sie Ereignisindikatordaten sammeln, wenn Sie die Instrumentierungs-Profilerstellungs-Methode verwenden.
+Ein CPU-Ereignisindikator wird zum Sammeln von hardwarespezifischen Leistungsdaten verwendet. In diesem Artikel erfahren Sie, wie Sie Ereignisindikatordaten sammeln, wenn Sie die Instrumentierungsprofilerstellungs-Methode verwenden.
 
 Es treten zwei Typen von CPU-Indikatorereignissen auf:
 
@@ -40,11 +41,11 @@ Es treten zwei Typen von CPU-Indikatorereignissen auf:
 
 - Verzweigungsereignisse
 
- Sie können die Leistungsindikatordaten auf Zwei Arten im Profiler sammeln:
+ Sie können Leistungsindikatordaten auf zwei Arten im Profiler sammeln:
 
 - Sammeln Sie Daten aus einem oder mehrere Leistungsindikatoren, wenn Sie ein Profil durch Instrumentation erstellen.
 
-- Geben Sie ein Leistungsindikatorereignis als Samplingintervall an, wenn Sie das Profil durch Sampling erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
+- Geben Sie ein Leistungsindikatorereignis als Samplingintervall an, wenn Sie das Profil durch Sampling erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>So sammeln Sie CPU-Leistungsindikatordaten, wenn Sie ein Profil durch Instrumentation erstellen.
 
@@ -64,4 +65,4 @@ Es treten zwei Typen von CPU-Indikatorereignissen auf:
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
 [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
 [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)  
-[Gewusst wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
+[Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)

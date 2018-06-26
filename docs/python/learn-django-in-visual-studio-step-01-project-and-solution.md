@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750297"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorialschritt 1: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -33,11 +34,13 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio 2017 mit den folgenden Optionen:
+- Visual Studio 2017 unter Windows mit den folgenden Optionen:
   - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git für Windows** und **GitHub-Erweiterung für Visual Studio** auf der Registerkarte **Einzelne Komponenten** unter **Codetools**.
 
 Django-Projektvorlagen sind auch in allen früheren Versionen von Python-Tools für Visual Studio enthalten. In einzelnen Aspekten können sie sich allerdings von diesem Tutorial unterscheiden, insbesondere bei früheren Versionen des Django-Frameworks.
+
+Die Python-Entwicklung wird in Visual Studio für Mac derzeit nicht unterstützt. Verwenden Sie unter Mac und Linux die [Python-Erweiterung in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>„Visual Studio-Projekte“ und „Django-Projekte“
 
@@ -116,7 +119,7 @@ Antwort: Ja. Wenn Sie die automatische Ausführung eines Commits deaktivieren m�
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Schritt 1-3: Erstellen der virtuellen Umgebung und Ausschließen aus der Quellcodeverwaltung
 
-Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können Sie die virtuelle Umgebung mit den für das Projekt erforderlichen Django-Paketen erstellen. Anschließend können Sie im **Team Explorer** den Umgebungsordner aus der Quellcodeverwaltung ausschließen.
+Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können Sie die virtuelle Umgebung erstellen, die die für das Projekt erforderlichen Django-Pakete enthält. Anschließend können Sie im **Team Explorer** den Umgebungsordner aus der Quellcodeverwaltung ausschließen.
 
 1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Knoten **Python-Umgebungen**, und wählen Sie **Virtuelle Umgebung hinzufügen** aus.
 

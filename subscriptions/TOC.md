@@ -1,4 +1,5 @@
 # [Visual Studio-Abonnements](index.md)
+## [Neuigkeiten](whats-new-in-subscriptions.md)
 ## Benutzeroberflächen für Abonnenten
 ### [Verwenden des Abonnentenportals](using-the-subscriber-portal.md)
 #### [Aktivieren von Einzelhandelsabonnements](activate-store-subscriptions.md)

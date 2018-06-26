@@ -2,7 +2,7 @@
 title: Erstellen von Node.js- und Express-Apps
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454622"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765842"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 Mit Visual Studio können Sie problemlos ein Node.js-Projekt erstellen sowie IntelliSense und andere integrierte Features nutzen, die Node.js unterstützen. In diesem Tutorial für Visual Studio erstellen Sie ein Node.js-Webanwendungsprojekt aus einer Visual Studio-Vorlage. Anschließend erstellen Sie mithilfe von React eine einfache App.
@@ -35,22 +35,22 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 * Sie müssen Visual Studio 2017 und die Workload für die Node.js-Entwicklung installiert haben.
 
-    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
     Falls Sie über Visual Studio bereits verfügen, aber die Workload noch installieren müssen, klicken Sie auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
 * Die Node.js-Laufzeit muss installiert sein.
 
-    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+    Dieses Tutorial wurde mit der Version 8.11.2 getestet.
 
-    Dieses Tutorial wurde mit der Version 8.9.4 getestet.
+    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 Erstellen Sie zunächst ein Projekt für die Node.js-Webanwendung.
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 1. Erweitern Sie im Dialogfeld **Neues Projekt** im linken Bereich den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Leere Node.js-Webanwendung**, geben Sie den Namen **NodejsWebAppBlank** ein, und klicken Sie anschließend auf **OK**.
 
@@ -89,7 +89,7 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
     ![NPM-Pakete installieren](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    Im Fenster **Ausgabe** wird der Fortschritt beim Installieren des Pakets angezeigt. Nach dem Installieren wird das Paket unter dem **NPM**-Knoten angezeigt.
+    Klicken Sie auf das **Ausgabefenster**, um den Fortschritt der Paketinstallation anzuzeigen (Wählen Sie **NPM** im Feld **Ausgabe anzeigen von** aus). Nach dem Installieren wird das Paket unter dem **NPM**-Knoten angezeigt.
 
     Die *package.json*-Datei des Projekts wird mit den neuen Paketinformationen einschließlich der Paketversion aktualisiert.
 
@@ -99,8 +99,8 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -108,9 +108,9 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
     }
     ```
 
-1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **Fehlende NPM-Pakete installieren** aus.
+1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **NPM-Pakete aktualisieren** aus.
 
-    Im Fenster **Ausgabe** wird der Fortschritt beim Installieren der Pakete angezeigt.
+    Klicken Sie auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Dies kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt.
 
     Die folgenden NPM-Module werden im Projektmappen-Explorer angezeigt, nachdem sie installiert wurden.
 
@@ -134,7 +134,7 @@ Fügen Sie für diese einfache App die neuen Projektdateien dem Projektstammverz
 
 1. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **TypeScript JSX-Datei**, geben Sie den Namen *app.tsx* ein, und klicken Sie auf **OK**.
 
-1. Wiederholen Sie diese Schritte, um die Datei *webpack-config.js* hinzuzufügen.
+1. Wiederholen Sie diese Schritte, um die Datei *webpack-config.js* hinzuzufügen. Wählen Sie anstelle einer TypeScript-JSX-Datei eine **JavaScript-Datei** aus.
 
 1. Wiederholen Sie dieselben Schritte, um dem Projekt die Datei *index.html* hinzuzufügen. Wählen Sie anstelle einer JavaScript-Datei die Option **HTML-Datei** aus.
 
@@ -230,7 +230,7 @@ In den vorherigen Schritten haben Sie dem Projekt die Datei *webpack-config.js* 
 
     Durch den Webpack-Konfigurationscode verwendet Webpack das TypeScript-Ladeprogramm, um JSX zu transpilieren.
 
-1. Öffnen Sie „tsconfig.json“, und fügen Sie den folgenden Code hinzu, der die TypeScript-Compileroptionen angibt:
+1. Öffnen Sie *tsconfig.json*, und ersetzen Sie den Standardcode durch den folgenden Code, der die TypeScript-Compileroptionen angibt:
 
     ```json
     {
@@ -252,7 +252,7 @@ In den vorherigen Schritten haben Sie dem Projekt die Datei *webpack-config.js* 
     }
     ```
 
-    „app.tsx“ wird als Quelldatei angegeben.
+    *app.tsx* wird als Quelldatei angegeben.
 
 ## <a name="transpile-the-jsx"></a>Transpilieren von JSX
 
@@ -332,7 +332,7 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 
     ![Haltepunkt festlegen](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Wenn Chrome bereits als Debugziel in Visual Studio ausgewählt wurde, drücken Sie **STRG+F5** (**Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
+1. Wenn Chrome bereits als Debugziel in Visual Studio ausgewählt wurde, drücken Sie **STRG**+**F5** (**Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
 
     Die App wird daraufhin in einer neuen Registerkarte im Browser geöffnet.
 
@@ -355,7 +355,7 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 
     Sie können den Haltepunkt je nach Umgebung und Browserstatus entweder in *app-bundle.js* oder im zugeordneten Speicherort in *app.tsx* erreichen. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
 
-    * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren.
+    * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren (legen Sie den Haltepunkt in einer Codezeile fest, die Haltepunkte zulässt, z.B die `return`-Anweisung oder eine `var`-Deklaration).
 
         Alternativ, wenn Sie Code in einer *app.tsx*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung in *app.tsx*, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.
 
@@ -369,4 +369,4 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 In diesem Tutorial haben Sie erfahren, wie eine Node.js- und React-App erstellt, JSX transpiliert und Debugging ausgeführt wird. Weitere Informationen zu den Node.js-Tools für Visual Studio finden Sie auf der entsprechenden Wiki-Seite.
 
 > [!div class="nextstepaction"]
-> [Node.js-Tools für Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Node.js tools for Visual Studio (Node.js-Tools für Visual Studio)](https://github.com/Microsoft/nodejstools)

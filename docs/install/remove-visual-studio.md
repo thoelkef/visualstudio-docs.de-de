@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b32fc71efadbf319f3d713c3eaf4d86f382646a5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34476832"
 ---
 # <a name="remove-visual-studio"></a>Entfernen von Visual Studio
 
@@ -40,7 +41,7 @@ Für die folgenden Schritte können Sie das Tool mit verschiedenen Befehlszeilen
 
 1. Schließen Sie den Visual Studio-Installer.
 2. Öffnen Sie eine Eingabeaufforderung als Administrator. Wenn Sie eine Eingabeaufforderung als Administrator öffnen möchten, führen Sie diese Schritte aus:
-   * Klicken Sie im **Startmenü** auf **Ausführen** (START+R).
+   * Klicken Sie auf das **Startmenü**.
    * Geben Sie **cmd** ein.
    * Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung** und dann auf **Als Administrator ausführen**.
 3. Geben Sie den vollständigen Pfad des Hilfsprogramms `InstallCleanup.exe` ein, und übergeben Sie den gewünschten Befehlszeilenschalter. Der Pfad des Hilfsprogramms ist standardmäßig wie folgt:

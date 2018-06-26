@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751422"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -28,7 +29,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 -   Sie können alle benötigten Informationen in einem Fenster anzeigen.
 
 ## <a name="using-test-explorer"></a>Verwenden des Test-Explorers
- ![Komponententest-Explorer zeigt die Schaltfläche „Alles ausführen“ an](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Komponententest-Explorer zeigt die Schaltfläche "Alles ausführen" an](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
 
@@ -44,7 +45,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
     2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
 
-2.  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+2.  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 3.  Wählen Sie in der Menüleiste **Test**, **Komponententests ausführen**, **Alle Tests**aus.
 
@@ -79,7 +80,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
     -   Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.
 
-         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
 
 3.  Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
 
@@ -125,7 +126,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 7.  Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.
 
- ![Komponententest-Explorer zeigt fehlerhaften Test an] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Komponententest-Explorer zeigt fehlerhaften Test an](../test/media/unittestexplorerwalkthrough2.png)
 
  Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.
 
@@ -146,7 +147,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
      Der Test wurde erfolgreich ausgeführt.
 
-     ![Komponententest-Explorer zeigt einen bestandenen Test an] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Komponententest-Explorer zeigt einen bestandenen Test an](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern
 
@@ -288,4 +289,4 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
      Alle Tests sind weiterhin erfolgreich.
 
-     ![Komponententest-Explorer zeigt 3 bestandene Tests an] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Komponententest-Explorer zeigt 3 bestandene Tests an](../test/media/unittestexplorerwalkthrough4.png)

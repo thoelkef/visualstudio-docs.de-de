@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746207"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)
 
@@ -128,7 +129,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 1.  Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
 
-2.  Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Klassischer Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
+2.  Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
 3.  Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
 4.  Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.

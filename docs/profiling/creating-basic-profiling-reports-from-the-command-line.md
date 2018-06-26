@@ -10,26 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764906"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>Erstellen einfacher Profilerstellungsberichte über die Befehlszeile
-In diesem Thema werden die grundlegenden VSPerfReport-Befehle beschrieben, über die durch Trennzeichen getrennte Berichtdateien (CSV) aus einer VSP- oder VSPS-Profilerstellungs-Datendatei erstellt werden. Eine Beschreibung aller Berichtsoptionen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>Erstellen einfacher Profilerstellungsberichte über die Befehlszeile
+In diesem Artikel werden die grundlegenden VSPerfReport-Befehle beschrieben, über die durch Trennzeichen getrennte Berichtdateien (*CSV*) aus einer *VSP*- oder *VSPS*-Profilerstellungs-Datendatei erstellt werden. Eine Beschreibung aller Berichtsoptionen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="report-commands"></a>Berichtsbefehle  
  Verwenden Sie einen der folgenden Befehle, um für eine angegebene Profilerstellungs-Datendatei einen Bericht zu erstellen.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- Generiert alle für die VSP- oder VSPS-Datei verfügbaren Berichte.  
+ Generiert alle für die *VSP*- oder *VSPS*-Datei verfügbaren Berichte.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  Generiert die angegebenen Berichtstypen.  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
- Generiert einen Bericht, in dem jedes Datensammlungsereignis aufgeführt ist. Nur bei der Instrumentation.  
+ Generiert einen Bericht, in dem jedes Datensammlungsereignis aufgeführt ist. Nur bei der Instrumentierung.  
   
 ## <a name="summary-report-type-parameters"></a>Zusammenfassungsbericht für Typparameter  
  In der folgenden Tabelle werden die Berichte beschrieben, die von der angegebenen Berichtstypoption generiert werden. Die Spalten eines Berichts sind von der Profilerstellungsmethode abhängig, die zur Datensammlung verwendet wurde.  

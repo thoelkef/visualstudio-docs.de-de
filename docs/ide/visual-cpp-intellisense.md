@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748084"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ Wenn Sie beginnen, ein Schlüsselwort, einen Typ, eine Funktion, einen Variablen
 
 Eine Liste der Symbole und ihrer Bedeutungen finden Sie unter [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43;&#43; vollständiges Word-Fenster](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43;&#43;-Fenster „Wort vervollständigen“](../ide/media/vs2015_cpp_complete_word.png)
 
 Wenn zum ersten Mal die Memberliste aufgerufen wird, zeigt sie nur Member am, auf die für den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Allgemein** > **Member automatisch auflisten** deaktivieren.
 
-![Visual C&#43;&#43- Memberliste](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43;&#43;-Memberliste](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Parameterhilfe
 
 Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der current-Parameter, der &mdash;auf der Cursorposition basiert&mdash;, wird in Fettformatierung angezeigt. Sie können Parameterinformationen im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Parameterinformationen** deaktivieren.
 
-![Visual C&#43;&#43;-Parameterhilfe](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Hilfe zu Visual C&#43;&#43;-Parametern](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>QuickInfo
 
 Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Automatische QuickInfo** deaktivieren.
 
-![Visual C&#43;&#43;-QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43;&#43;-QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Fehlerwellenlinien
 
 Wellenlinien unter einem Programmelement (Variable, Schlüsselwort, geschweifte Klammer, Typname usw.) weisen auf einen Fehler oder einen möglichen Fehler im Code hin. Beim Schreiben einer Vorwärtsdeklaration wird eine grüne Wellenlinie eingeblendet, um Sie daran zu erinnern, dass Sie immer noch die Implementierung schreiben müssen. Eine violette Wellenlinie wird in einem freigegebenen Projekt eingeblendet, wenn ein Fehler im Code vorliegt, der gerade nicht aktiv ist, z. B. wenn Sie im Windows-Kontext arbeiten, aber etwas eingeben, das in einem Android-Kontext einen Fehler auslösen würde. Eine rote Wellenlinie weist auf einen Compilerfehler oder eine Warnung im aktiven Code hin, den bzw. die Sie behandeln müssen.
 
-![Visual C&#43;&#43;-Fehlerwellenlinien](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43;&#43;-Fehlerwellenlinien](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Farbliche Kennzeichnung von Code und Schriftarten
 
@@ -69,7 +70,7 @@ In einem Projekt mit freigegebenem Code stehen einige IntelliSense-Funktionen, w
 
 Hier ist eine OpenGLES-Anwendung, die zum Erstellen für Android und iOS konfiguriert ist. Die Abbildung veranschaulicht den bearbeiteten freigegebenen Code. In der ersten Abbildung stellt Android das aktive Projekt dar:
 
-![Das Android-Projekt ist das aktive Projekt.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Das Android-Projekt ist das aktive Projekt.](../ide/media/intellisensecppcrossplatform.png)
 
 Beachten Sie Folgendes:
 
@@ -81,7 +82,7 @@ Beachten Sie Folgendes:
 
 Ändern Sie nun das aktive Projekt in **iOS.StaticLibrary**, und beobachten Sie, wie sich die Wellenlinien verändern.
 
-![iOS ist als aktives Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS ist als das aktive Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png)
 
 Beachten Sie Folgendes:
 
@@ -95,11 +96,11 @@ Beachten Sie Folgendes:
 
 Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktivieren oder deaktivieren. Beachten Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, den Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
 
-![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 Standardmäßig verwendet eine einzelne IntelliSense-Datei die standardmäßigen Includeverzeichnisse für die Suche nach Headerdateien. Öffnen Sie zum Hinzufügen weiterer Verzeichnisse das Kontextmenü für den Knoten **Projektmappe**, und fügen Sie Ihr Verzeichnis, wie in der folgenden Abbildung gezeigt, zur Liste **Quellcode debuggen** hinzu:
 
-![Einen Pfad zu einer Headerdatei hinzufügen](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Hinzufügen eines Pfads in eine Headerdatei.](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>Siehe auch
 

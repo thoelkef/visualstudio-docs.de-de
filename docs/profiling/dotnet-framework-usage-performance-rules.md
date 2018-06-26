@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766021"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Leistungsregeln für die .NET Framework-Verwendung
 Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestimmte Methoden, die optimiert werden können, sowie allgemeinere Verwendungsschemas, z.B. die Garbage Collection und Sperrkonflikte, die auf Leistungsprobleme überprüft werden können.  

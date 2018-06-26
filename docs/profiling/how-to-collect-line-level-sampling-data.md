@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765699"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Gewusst wie: Sammeln von Samplingdaten auf Zeilenebene
+# <a name="how-to-collect-line-level-sampling-data"></a>Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene
 Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine prozessorintensive Funktion im Code ist, z.B. eine Funktion mit äußerst exklusiven Stichproben, die vom Prozessor die meiste Zeit beanspruchen.  
   
 ## <a name="overview"></a>Übersicht  
@@ -47,8 +48,8 @@ Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine proze
   
  Wenn eine Funktion über Statistiken auf Zeilenebene in der Ansicht **Module** verfügt, schachteln sich die Statistiken unter jeder Funktion ein. Darüber hinaus werden Statistiken auf IP-Ebene angezeigt, die unter jeder Zeile geschachtelt werden.  
   
-### <a name="turn-off-line-level-sampling-for-managed-code"></a>Deaktivieren Sie das Sampling auf Zeilenebene für verwalteten Code  
- Sampling auf Zeilenebene ist standardmäßig aktiviert. Sie können die Datensammlung auf Zeilenebene für verwalteten Code deaktivieren, indem Sie einen der folgenden Schritte durchführen:  
+### <a name="turn-off-line-level-sampling-for-managed-code"></a>Deaktivieren des Samplings auf Zeilenebene für verwalteten Code  
+ Sampling auf Zeilenebene ist standardmäßig aktiviert. Sie können die Datensammlung auf Zeilenebene für verwalteten Code deaktivieren, indem Sie einen der folgenden Befehle verwenden:  
   
 -   Bevor Sie ein Profil erstellen, geben Sie **VSPerfCLREnv /samplelineoff** ein. Dies wirkt sich auf Anwendungen und Dienste aus.  
   

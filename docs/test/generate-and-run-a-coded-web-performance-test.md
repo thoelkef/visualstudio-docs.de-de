@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 97c7728cf784c3ef11bb72cdb7abc9b441cd68cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750853"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
@@ -75,11 +76,11 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
 6.  Führen Sie den Test aus.
 
-     ![Ausführen des codierten Webleistungstests](../test/media/web_test_coded_generate_run.png "Web_Test_Coded_Generate_Run")
+     ![Ausführung des codierten Webleistungstests](../test/media/web_test_coded_generate_run.png)
 
      Und da der Tag, am dem dies ausgeführt wurde, ein Mittwoch war...
 
-     ![Ergebnisse des codierten Webleistungstests](../test/media/web_test_coded_generate_results.png "Web_Test_Coded_Generate_Results")
+     ![Ergebnisse des codierten Webleistungstests](../test/media/web_test_coded_generate_results.png)
 
 ## <a name="qa"></a>Fragen und Antworten
 

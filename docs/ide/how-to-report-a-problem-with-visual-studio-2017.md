@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745994"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
 
@@ -30,14 +31,14 @@ Melden Sie sich bei Visual Studio an, sofern Sie dies noch nicht getan haben, be
 2. Wenn Sie nicht angemeldet sind, wählen Sie auf der rechten Seite des Tools **Anmelden** aus, wie im folgenden Screenshot gezeigt.
 3. Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
 
- ![Anmelden zum Berichten eines Problems](../ide/media/sign-in-new-ux.png "Anmelden zum Berichten eines Problems")
+ ![Anmelden zum Melden eines Problems](../ide/media/sign-in-new-ux.png)
 
 ## Suchen nach ähnlichen Problemen und Abstimmen für diese <a name="search_and_vote"></a>
 
 1. Suchen Sie nach Ihrem Problem, und finden Sie heraus, ob andere es bereits gemeldet haben.
 2. Wenn es bereits gemeldet wurde, stimmen Sie dafür, um uns zu informieren.
 
-  ![Nach ähnlichen Problemen suchen und dafür abstimmen](../ide/media/search-and-vote.png "Search and vote for similar problems")
+  ![Ähnliche Probleme suchen und für sie abstimmen](../ide/media/search-and-vote.png)
 
 ## Melden eines neuen Problems <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Melden Sie sich bei Visual Studio an, sofern Sie dies noch nicht getan haben, be
 2. Geben Sie einen aussagekräftigen Titel für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.
 3. Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.
 
-  ![Neues Problem melden](../ide/media/report-new-problem.png "Report a new Problem")
+  ![Neues Problem melden](../ide/media/report-new-problem.png)
 
 ## Bereitstellen von Screenshots und Anlagen (optional) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 1. Klicken Sie auf die Registerkarte **Aufzeichnen**.
 2. Klicken Sie auf **Aufzeichnung starten**. Erteilen Sie die Berechtigung zum Ausführen des Tools.
 
-  ![Bereitstellen einer Ablaufverfolgungs- und Heapabbilddatei über „Aufzeichnung starten“](../ide/media/record-dialog-box.png "Provide trace and heap dump files")
+  ![Bereitstellen einer Ablaufverfolgungs- und Heap-Dumpdatei über „Aufzeichnung starten“ ](../ide/media/record-dialog-box.png)
 
 3. Wenn das Tool **Problemaufzeichnung** angezeigt wird, führen Sie die Schritte zum Reproduzieren des Problems aus.
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Aufzeichnung beenden**.

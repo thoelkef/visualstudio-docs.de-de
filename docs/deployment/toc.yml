@@ -8,12 +8,12 @@
   items:
     - name: Erster Einblick in die Bereitstellung
       href: deploying-applications-services-and-components.md
-    - name: Bereitstellen in einem lokalen Ordner
-      href: quickstart-deploy-to-local-folder.md
+    - name: Bereitstellen in Azure App Service
+      href: quickstart-deploy-to-azure.md
     - name: Bereitstellen auf einer Website
       href: quickstart-deploy-to-a-web-site.md
-    - name: Bereitstellung in Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Bereitstellen in einem lokalen Ordner
+      href: quickstart-deploy-to-local-folder.md
 - name: Tutorials
   items:
     - name: .NET

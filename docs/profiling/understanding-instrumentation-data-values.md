@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477547"
 ---
-# <a name="understanding-instrumentation-data-values"></a>Grundlagen zu Instrumentationsdatenwerten
+# <a name="understand-instrumentation-data-values"></a>Grundlagen zu Instrumentierungsdatenwerten
 
 Die Profilerstellungsmethode *Instrumentierung* von Visual Studio zeichnet detaillierte Informationen zur zeitlichen Steuerung für die Funktionsaufrufe, Zeilen und Anweisungen in der Anwendung auf, für die ein Profil erstellt wurde.
 
-Die Instrumentierungsmethode fügt Code am Anfang und Ende der Zielfunktionen in der profilierten Binärdatei ein sowie vor und nach jedem Aufruf von diesen Funktionen an andere Funktionen. Der eingefügte Code zeichnet Folgendes auf:
+Die Instrumentierungsmethode fügt Code am Anfang und Ende der Zielfunktionen in der profilierten Binärdatei ein sowie vor und nach jedem Aufruf von diesen Funktionen an andere Funktionen. Der eingefügte Code zeichnet die folgenden Informationen auf:
 
 - Das Intervall zwischen diesem Auflistungsereignis und dem vorherigen.
 

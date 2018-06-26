@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77f9240b223ad903cc89be0e49f3b0ea46d2fe3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2a22c413c7f27b5aff14fa21d28163963a7351
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477027"
 ---
-# <a name="unblocking-stack"></a>Stapelblockierung wird aufgehoben
+# <a name="unblock-stack"></a>Aufheben der Stapelblockierung
 Wenn das derzeit ausgewählte Threadelement ein blockiertes Segment darstellt, das später mit der Ausführung begonnen hat, nachdem seine Blockierung von einem anderen Thread im aktuellen Prozess aufgehoben wurde, wird die Aufrufliste für den Thread, der die Blockierung aufgehoben hat, auf dieser Registerkarte angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
