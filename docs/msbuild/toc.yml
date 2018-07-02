@@ -84,6 +84,8 @@
               items:
                 - name: 'Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe'
                   href: walkthrough-creating-an-inline-task.md
+            - name: MSBuild-Inlinetasks mit RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Vergleich von Eigenschaften und Elementen
           href: comparing-properties-and-items.md
         - name: MSBuild-Sonderzeichen
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete-Aufgabe
               href: delete-task.md
+            - name: DownloadFile-Task
+              href: downloadfile-task.md
             - name: Error-Aufgabe
               href: error-task.md
             - name: Exec-Aufgabe
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly-Aufgabe
               href: unregisterassembly-task.md
+            - name: Unzip-Task
+              href: unzip-task.md
             - name: UpdateManifest-Aufgabe
               href: updatemanifest-task.md
             - name: Vbc-Aufgabe
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation-Aufgabe
               href: xsltransformation-task.md
+            - name: ZipDirectory-Task
+              href: zipdirectory-task.md
         - name: MSBuild-Bedingungen
           href: msbuild-conditions.md
         - name: MSBuild Conditional Constructs

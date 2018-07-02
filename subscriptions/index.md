@@ -1,26 +1,28 @@
 ---
 title: Visual Studio-Abonnements
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327189"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946925"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
+
 Visual Studio-Abonnements sind eine umfassende Sammlung von Ressourcen zum Erstellen, Bereitstellen und Verwalten großartiger Anwendungen auf Ihren bevorzugten Plattformen und Geräten, einschließlich Windows, iOS, Android und Linux.  Abonnements bieten u.a. folgende Vorteile: Zugriff auf Entwicklertools, Clouddienste, Software, Schulungen sowie Unterstützung für Ihre Entwicklungs- und Testanforderungen.
 
-##  <a name="get-started"></a>Erste Schritte
+## <a name="get-started"></a>Erste Schritte
+
 Als Administrator melden Sie sich bei [https://manage.visualstudio.com](https://manage.visualstudio.com) an, um Ihrem Team Abonnements zuzuweisen.<br>
 Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visualstudio.com) an, um auf Ihre Abonnementvorteile zuzugreifen.
 
@@ -134,6 +136,12 @@ Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visual
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Neuigkeiten
+
+Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefügt und häufig aktualisiert. Weitere Informationen finden Sie auf der Seite [What's new in subscriptions (Neues bei Abonnements)](whats-new-in-subscriptions.md).
 
 ---
 
