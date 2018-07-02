@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752000"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Gewusst wie: Auswählen eines Ergebnisrepositorys für Auslastungstests
 
@@ -37,7 +38,7 @@ Weitere Informationen zu Test-Agent-Controllern und Agents finden Sie unter [Tes
 
 2.  Klicken Sie auf der Symbolleiste **Auslastungstest** auf **Testcontroller verwalten**. Das Dialogfeld "Testcontroller verwalten" wird angezeigt. Wenn Sie einen Agent remote verwenden, müssen Sie einen Controller auswählen.
 
-     ![Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests
+     ![Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests](../test/media/loadtestconnectionproperties.png) Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests
 
 3.  Klicken Sie unter **Auslastungstest-Ergebnisspeicher** auf „(…)“, um das Dialogfeld **Verbindungseigenschaften** anzuzeigen.
 

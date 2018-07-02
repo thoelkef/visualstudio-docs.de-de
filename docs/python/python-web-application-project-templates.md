@@ -1,7 +1,7 @@
 ---
 title: Webanwendungsvorlagen für Python
 description: Eine Übersicht der Visual Studio-Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen, einschließlich Debugkonfigurationen und Veröffentlichung im Azure App Service.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752039"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -41,7 +42,7 @@ Alle Vorlagen für „leere (Framework)-Webprojekte“ erstellen ein Projekt mit
 | --- | --- |
 | Leeres Bottle-Webprojekt | Generiert eine minimale App in `app.py` mit einer Homepage für `/` und einer `/hello/<name>`-Seite, die `<name>` mithilfe einer sehr kurzen Vorlage für eine Inline-Seite wiederholt. |
 | Leeres Django-Webprojekt | Generiert ein Django-Projekt mit der grundlegenden Django-Websitestruktur, aber ohne Django-Apps. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 1 (Schritt 1 des Django-Tutorials)](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Leeres Flask-Webprojekt | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Leeres Flask-Webprojekt | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default). Siehe auch [Learning Flask Step 1 (Flask-Tutorial: Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md)
 
 ### <a name="web-group"></a>Web-Gruppe
 
@@ -51,19 +52,19 @@ Alle Vorlagen für „(Framework)-Webprojekte“ erstellen eine Web-App mit eine
 | --- | --- |
 | Bottle-Webprojekt | Generiert eine App, bei der die statischen Dateien im Ordner `static` enthalten und durch den Code in `app.py` verarbeitet werden. Das Routing für die individuellen Seiten wird in `routes.py` enthalten, und der Ordner `views` enthält die Seitenvorlagen.|
 | Django-Webprojekt | Generiert ein Django-Projekt und eine Django-App mit drei Seiten, Authentifizierungsunterstützung und einer SQLite-Datenbank (jedoch ohne Datenmodelle). Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 4 (Schritt 4 des Django-Tutorials)](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Flask-Webprojekt | Generiert eine App, bei der die statischen Dateien im Ordner `static` enthalten werden. Der Code in `views.py` verarbeitet das Routing mithilfe von Seitenvorlagen, die die Jinja-Engine im Ordner `templates` verwenden. Die Datei `runserver.py` enthält den Startcode. |
-| Flask/Jade-Webprojekt | Generiert dieselbe App wie die Vorlage „Flask-Webprojekt“, verwendet jedoch die Jade-Vorlagen-Engine. |
+| Flask-Webprojekt | Generiert eine App, bei der die statischen Dateien im Ordner `static` enthalten werden. Der Code in `views.py` verarbeitet das Routing mithilfe von Seitenvorlagen, die die Jinja-Engine im Ordner `templates` verwenden. Die Datei `runserver.py` enthält den Startcode. Siehe [Learning Flask Step 4 (Flask-Tutorial: Schritt 4)](learn-flask-visual-studio-step-04-full-flask-project-template.md) |
+| Flask/Jade-Webprojekt | Generiert dieselbe App wie die Vorlage „Flask-Webprojekt“, verwendet jedoch die Jade-Erweiterung für die Jinja-Vorlagen-Engine. |
 
 ### <a name="polls-group"></a>Umfragen-Gruppe
 
-Die Vorlagen „(Framework)-Webprojekt für Umfragen“ erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von Webprojektvorlagen auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite („/seed“), die Umfragen aus einer `samples.json`-Datei lädt.
+Die Vorlagen „(Framework)-Webprojekt für Umfragen“ erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von Webprojektvorlagen auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer `samples.json`-Datei lädt.
 
 | Vorlage | description |
 | --- | --- |
 | Bottle-Webprojekt für Umfragen | Generiert eine App, die für eine In-Memory Database, für MongoDB oder für Azure Table Storage ausgeführt werden kann, die mithilfe der Umgebungsvariable `REPOSITORY_NAME` konfiguriert wird. Die Codes für Datenmodelle und Datenspeicher werden in dem Ordner `models` enthalten. Die Datei `settings.py` enthält Code, um zu bestimmen, welcher Datenspeicher verwendet wird. |
 | Django-Webprojekt für Umfragen | Generiert ein Django-Projekt und eine Django-App mit drei Seiten und einer SQLite-Datenbank. Enthält Anpassungen an der Django-Verwaltungsschnittstelle, um einem authentifizierten Administrator zu berechtigen, Umfragen zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 6 (Schritt 6 des Django-Tutorials)](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Flask-Webprojekt für Umfragen | Generiert eine App, die für eine In-Memory Database, für MongoDB oder für Azure Table Storage ausgeführt werden kann, die mithilfe der Umgebungsvariable `REPOSITORY_NAME` konfiguriert wird. Die Codes für Datenmodelle und Datenspeicher werden in dem Ordner `models` enthalten. Die Datei `settings.py` enthält Code, um zu bestimmen, welcher Datenspeicher verwendet wird. Die App verwendet die Jinja-Engine für Seitenvorlagen. |
-| Flask/Jade-Webprojekt für Umfragen | Generiert dieselbe App wie die Vorlage „Flask-Webprojekt für Umfragen“, verwendet jedoch die Jade-Vorlagen-Engine. |
+| Flask-Webprojekt für Umfragen | Generiert eine App, die für eine In-Memory Database, für MongoDB oder für Azure Table Storage ausgeführt werden kann, die mithilfe der Umgebungsvariable `REPOSITORY_NAME` konfiguriert wird. Die Codes für Datenmodelle und Datenspeicher werden in dem Ordner `models` enthalten. Die Datei `settings.py` enthält Code, um zu bestimmen, welcher Datenspeicher verwendet wird. Die App verwendet die Jinja-Engine für Seitenvorlagen. Siehe [Learning Flask Step 5 (Flask-Tutorial: Schritt 5)](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) |
+| Flask/Jade-Webprojekt für Umfragen | Generiert dieselbe App wie die Vorlage „Flask-Webprojekt für Umfragen“, verwendet jedoch die Jade-Erweiterung für die Jinja-Vorlagen-Engine. |
 
 ## <a name="installing-project-requirements"></a>Installieren von Projektanforderungen
 
@@ -71,7 +72,7 @@ Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein
 
 ![Dialogfeld, über das die erforderlichen Pakete für eine Projektvorlage installiert werden](media/template-web-requirements-txt-wizard.png)
 
-Wenn Sie die Quellcodeverwaltung verwenden, lassen Sie in der Regel den Ordner für virtuelle Umgebungen aus, da diese Umgebung mithilfe von `requirements.txt` wiederhergestellt werden kann. Der beste Weg zum Auslassen des Ordners ist, zunächst **Ich führe die Installation selbst durch** in der oben gezeigt Eingabeaufforderung auszuwählen und dann den automatischen Commit zu deaktivieren, bevor Sie die virtuelle Umgebung erstellen. Ausführliche Informationen finden Sie unter [Learning Django Tutorial - Steps 1-2 and 1-3 (Django-Tutorial: Schritte 1-2 und 1-3)](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Wenn Sie die Quellcodeverwaltung verwenden, lassen Sie in der Regel den Ordner für virtuelle Umgebungen aus, da diese Umgebung mithilfe von `requirements.txt` wiederhergestellt werden kann. Der beste Weg zum Auslassen des Ordners ist, zunächst **Ich führe die Installation selbst durch** in der oben gezeigt Eingabeaufforderung auszuwählen und dann den automatischen Commit zu deaktivieren, bevor Sie die virtuelle Umgebung erstellen. Ausführliche Informationen finden Sie im [Django-Tutorial: Schritte 1-2 und 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) und unter [Learning Flask Tutorial - Steps 1-2 and 1-3 (Flask-Tutorial: Schritte 1-2 und 1-3)](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
 Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version von Python als [Websiteerweiterung](https://aka.ms/PythonOnAppService), und installieren Sie Pakete manuell. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer `requirements.txt`-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 

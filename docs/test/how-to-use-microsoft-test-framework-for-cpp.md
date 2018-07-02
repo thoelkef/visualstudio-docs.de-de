@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751688"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -55,7 +56,7 @@ Verwenden Sie die statischen Methoden der [Assert](microsoft-visualstudio-testto
 2.  Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
 3. Wählen Sie **Tests** aus dem Dropdownmenü im **Ausgabefenster** aus, um die von der `Logger`-Klasse geschriebenen Meldungen anzuzeigen.
 
-  ![C++-Ausgabefenster, das Testmeldungen anzeigt](media/cpp-test-output-window.png "Ausgabefenster")
+  ![Testmeldungen im C++-Ausgabefenster](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definieren von Merkmalen für das Aktivieren der Gruppierung
 Sie können Merkmale für Testmethoden definieren, um Tests im **Test-Explorer** zu kategorisieren und zu gruppieren. Verwenden Sie zum Definieren eines Merkmals das `TEST_METHOD_ATTRIBUTE` -Makro. Beispiel – Definieren eines Merkmals mit dem Namen `TEST_MY_TRAIT`:

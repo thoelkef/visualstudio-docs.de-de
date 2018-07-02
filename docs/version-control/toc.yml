@@ -18,7 +18,7 @@
       href: /vsts/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
     - name: Freigeben eines Codes in der TFVC
       href: /vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Git
       href: /vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
@@ -77,7 +77,7 @@
       href: /vsts/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
     - name: Authentifizieren mit der Git-Anmeldeinformationsverwaltung
       href: /vsts/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-- name: Verweis
+- name: Referenz
   items:
     - name: Befehlszeilenreferenz
       href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Ressourcen
   items:
-    - name: Informationen zu Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Was ist Git?
+      href: /azure/devops/git/what-is-git

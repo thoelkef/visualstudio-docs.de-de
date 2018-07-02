@@ -13,19 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549005"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 
 Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellung des Verhaltens einer Multithreadanwendung. Dieses Tool enthält einen Katalog mit häufigen Mustern von Multithreadanwendungen mit unerwünschtem Verhalten. Der Katalog umfasst typische und erkennbare visuelle Muster, die durch das Tool sichtbar gemacht werden. Außerdem wird das Verhalten erläutert, das durch das jeweilige Muster dargestellt wird, und das wahrscheinliche Ergebnis des Verhaltens und der gängigste Ansatz zu seiner Lösung werden aufgezeigt.
 
-## <a name="lock-contention-and-serialized-execution"></a>Sperrenkonflikte und serialisierte Ausführung
+## <a name="lock-contention-and-serialized-execution"></a>Sperrkonflikte und serialisierte Ausführung
 
-![Sperrenkonflikte, die zu serialisierter Ausführung führen](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
+![Sperrkonflikte, die zu serialisierter Ausführung führen](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
 Eine parallelisierte Anwendung wird manchmal weiter seriell ausgeführt, obwohl mehrere Threads vorhanden sind und der Computer über eine ausreichende Anzahl von logischen Kernen verfügt. Das erste Symptom ist eine schlechte Multithreadleistung – unter Umständen sogar noch etwas schlechter als bei der seriellen Implementierung. In der Threadansicht werden keine parallel ausgeführten Threads angezeigt. Stattdessen sehen Sie, dass immer nur ein einzelner Thread ausgeführt wird. Wenn Sie an diesem Punkt in einem Thread auf ein Synchronisierungssegment klicken, werden eine Aufrufliste für den blockierten Thread (Aufrufliste für Blockierungen) sowie der Thread angezeigt, von dem die Blockierbedingung entfernt wurde (Aufrufliste für Blockierungsaufhebungen). Wenn die Aufrufliste für die Blockierungsaufhebung Teil des zu analysierenden Prozesses ist, wird auch ein threadkompatibler Konnektor angezeigt. Von hier können Sie zum Code der Aufruflisten für die Blockierung und für die Blockierungsaufhebung navigieren, um die Ursache der Serialisierung genauer zu untersuchen.
 

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751675"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Gewusst wie: Erstellen eines Visual Studio Add-Ins für die Webleistungstest-Ergebnisansicht
 
@@ -135,7 +136,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 6.  Ziehen Sie aus der Toolbox <xref:System.Windows.Forms.DataGridView> auf die userControl1-Oberfläche.
 
-7.  Klicken Sie auf die Aktionstagglyphe (![Smarttagglyphe](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) in der oberen rechten Ecke von <xref:System.Windows.Forms.DataGridView>, und führen Sie die folgenden Schritte aus:
+7.  Klicken Sie auf das Aktionstagsymbol (![Smarttag-Glyphe](../test/media/vs_winformsmttagglyph.gif)) in der oberen rechten Ecke von <xref:System.Windows.Forms.DataGridView>, und führen Sie die folgenden Schritte aus:
 
     1.  Klicken Sie auf **In übergeordnetem Container andocken**.
 

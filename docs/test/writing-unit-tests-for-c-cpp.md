@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449181"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752078"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -52,19 +52,19 @@ Im folgenden Abschnitt werden die grundlegenden ersten Schritte für C++-Kompone
 
 Sie definieren Tests für mindestens ein Testprojekt und führen diese aus. Das Testprojekt (bzw. die Testprojekte) muss (bzw. müssen) in derselben Projektmappe gespeichert sein wie der Code, den Sie testen möchten. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten und dann auf **Hinzufügen > Neues Projekt**, um ein neues Testprojekt hinzuzufügen. Klicken sie dann im linken Bereich auf **Visual C++ Test** und anschließend auf einen der Projekttypen im mittleren Bereich. In der folgenden Abbildung werden Testprojekte dargestellt, auf die Sie zugreifen können, wenn die Workload **Desktop Development mit C++** installiert ist:
 
-![C++-Testprojekte](media/cpp-new-test-project.png "C++-Vorlagen für neue Testprojekte")
+![C++-Testprojekte](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Erstellen von Verweisen auf andere Projekte in der Projektmappe
 
 Fügen Sie einen Verweis auf das Projekt in Ihrem Testprojekt hinzu, damit der Testcode auf die Funktionen in dem zu testenden Projekt zugreifen kann. Klicken Sie im **Projektmappen-Explorer** zunächst mit der rechten Maustaste auf den Knoten für das Testprojekt und dann auf **Hinzufügen > Verweis**. Wählen Sie dann in dem Dialogfeld das Projekt bzw. die Projekte aus, das bzw. die Sie testen möchten.
 
-![Verweis hinzufügen](media/cpp-add-ref-test-project.png "C++-Test: Hinzufügen eines Verweises auf das zu testende Projekt")
+![Verweis hinzufügen](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Hinzufügen von #include-Direktiven für Headerdateien
 
 Fügen Sie als Nächstes der CPP-Datei in Ihrem Komponententest eine `#include`-Direktive für sämtliche Headerdateien hinzu, die die Typen und Funktionen deklarieren, die Sie testen möchten. Geben Sie `#include "` ein, um IntelliSense zu aktivieren, damit es Ihnen bei der Auswahl hilft. Wiederholen Sie diesen Vorgang für alle zusätzlichen Header.
 
-![Hinzufügen von Include-Direktiven](media/cpp-add-includes-test-project.png "C++-Test: Hinzufügen von Includes für Headerdateien")
+![Hinzufügen von include-Anweisungen](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Schreiben von Testmethoden
 
@@ -73,7 +73,7 @@ Fügen Sie als Nächstes der CPP-Datei in Ihrem Komponententest eine `#include`-
 
 Die CPP-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, die als Beispiel für das Schreiben von Testcode definiert sind. Beachten Sie, dass die Signaturen die Makros TEST_CLASS und TEST_METHOD verwenden, wodurch Sie die Methoden über das Fenster „Test-Explorer“ finden können.
 
-![Hinzufügen von Include-Direktiven](media/cpp-write-test-methods.png "C++-Test: Hinzufügen von Includes für Headerdateien")
+![Hinzufügen von include-Anweisungen](media/cpp-write-test-methods.png)
 
 TEST_CLASS und TEST_METHOD sind Teil des [nativen Microsoft-Testframeworks](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Der **Test-Explorer** erkennt Testmethoden in anderen unterstützten Frameworks auf dieselbe Weise.
 
@@ -95,7 +95,7 @@ Sie können der Testmethode *Merkmale* hinzufügen, um Testbesitzer, die Priorit
 
 1. Klicken Sie im Menü **Test** auf **Windows** > **Test-Explorer**. In der folgenden Abbildung wird ein Testprojekt dargestellt, für das noch keine Tests ausgeführt wurden.
 
-   ![Test-Explorer vor dem Ausführen von Tests](media/cpp-test-explorer.png "C++-Test-Explorer")
+   ![Test-Explorer vor dem Ausführen von Tests](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > Die CTest-Integration für den **Test-Explorer** ist noch nicht verfügbar. Führen Sie CTest-Tests über das Hauptmenü von CMake aus.
@@ -104,7 +104,7 @@ Sie können der Testmethode *Merkmale* hinzufügen, um Testbesitzer, die Priorit
 
 1. Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test. Wenn alle Tests ausgeführt wurden, wird in dem Fenster dargestellt, welche Tests erfolgreich waren und welche fehlgeschlagen sind:
 
-![Test-Explorer nachdem die Tests ausgeführt wurden](media/cpp-test-explorer-passed.png "C++-Test-Explorer nach dem Ausführen der Tests")
+![Test-Explorer nach dem Ausführen von Tests](media/cpp-test-explorer-passed.png)
 
 Bei fehlgeschlagenen Tests werden in einer Meldung Details angezeigt, die Ihnen dabei helfen sollen, den Grund für das Problem zu finden. Sie können mit der rechten Maustaste erst auf den fehlgeschlagenen Test klicken und dann auf **Ausgewählte Tests debuggen**, um die Funktion, bei der der Fehler aufgetreten ist, genau zu überprüfen.
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd868c55e62f673e8818126f791c889380548e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bb8cf383008a45fee678b6d52909e14c4f060f1b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750401"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Hohes Maß an Garbage Collections der Generation 2
 |||  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/19/2018
   
  Diese Regel wird ausgelöst, wenn anteilsmäßig zu viele Garbage Collections der Generation 2 aufgetreten sind. Bei gut konzipierten .NET Framework-Anwendungen findet die Garbage Collection der Generation 1 mehr als fünfmal so häufig statt wie die Garbage Collection der Generation 2. (Der Faktor "10" ist wohl ideal.)  
   
-## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
+## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie die Spalten **.NET CLR-Speicher\\Auflistungsanzahl der Generation 0** und **.NET CLR-Speicher\\Auflistungsanzahl der Generation 1**. Überprüfen Sie, ob die Garbage Collection in bestimmten Phasen der Programmausführung besonders häufig auftritt. Vergleichen Sie diese Werte mit den Werten der Spalte **GC-Zeitdauer in Prozent**, um zu überprüfen, ob das Muster für verwaltete Speicherbelegungen einen übermäßig hohen Speicherverwaltungsaufwand verursacht.  
   
  Ein hoher Anteil an Garbage Collections der Generation 2 muss nicht unbedingt ein Problem darstellen. Dies kann auch durch den Entwurf bedingt sein. Diese Regel kann durch eine Anwendung ausgelöst werden, von der große Datenstrukturen zugeordnet werden, die während der Ausführung lange aktiv bleiben müssen. Wenn für eine solche Anwendung nicht genügend Arbeitsspeicher zur Verfügung steht, müssen unter Umständen häufig Garbage Collections ausgeführt werden. Wenn durch die weniger aufwändigen Garbage Collections der Generationen 0 und 1 nur ein kleiner Teil des verwalteten Arbeitsspeichers freigegeben werden kann, werden Garbage Collections der Generation 2 in kürzeren Abständen geplant.  

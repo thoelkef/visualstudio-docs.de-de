@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f2b7f930a4e58eb3c14380df16892e92a870f5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749358"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries-Funktion
 Gibt Markerreihen frei. Verwenden Sie keine freigegebenen Markerreihenobjekte, da die Anwendung andernfalls möglicherweise abstürzt. Wenn Markerreihen nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.  
@@ -39,7 +40,7 @@ HRESULT CvReleaseMarkerSeries(
  S_OK, wenn Markerreihen erfolgreich freigegeben wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** cvmarkers.h  
+ **Header:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Siehe auch  
  [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

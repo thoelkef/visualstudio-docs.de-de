@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262906"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548660"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 
@@ -144,7 +144,7 @@ Weitere Informationen finden Sie in einem der folgenden Themen:
 
 [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+[Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)
 
 ## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfASPNETCmd
 

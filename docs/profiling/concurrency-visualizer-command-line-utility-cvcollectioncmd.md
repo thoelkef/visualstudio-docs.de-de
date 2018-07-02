@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691146"
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
-Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
+Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CVCollectionCmd.exe*) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in der Parallelitätsschnellansicht für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
 > [!NOTE]
 >  Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
   
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Befehlszeilenprogramm Concurrency Visualizer herunterladen  
- Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Herunterladen des Befehlszeilenprogramms für die Parallelitätsschnellansicht  
+ Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird *CVCollectionCmd.exe* in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf 64-Bit-Computern) installiert.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Eine Ablaufverfolgung mit CVCollectionCmd sammeln  
  Sie können eine Ablaufverfolgung sammeln, indem Sie die App mit CVCollectionCmd starten oder es dieser anhängen. Siehe die Befehlszeilenreferenz unten hinsichtlich Ihrer Optionen. Beispiel:  
@@ -51,13 +52,13 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |Prozess|Legt den anfügenden Prozess fest, wenn der Befehl "Anfügen" ausgeführt wird oder den zu analysierenden Prozesses in einer Ablaufverfolgung, wenn der Befehl "Analysieren" ausgeführt wird. Gilt für die Befehle "Anfügen" und "Analysieren".|PID oder Name des Prozesses.|Keine|  
 |Konfigurationen|Legt den Pfad der Konfigurationsdatei fest, wenn Sie andere Auflistungeinstellungen als die standardmäßigen möchten.   Gilt für die Befehle "Starten", "Anfügen" und "Analysieren".|Der Verzeichnispfad oder relative Pfad der XML-Konfigurationsdatei.|Keine|  
   
-## <a name="customizing-configuration-settings"></a>Konfigurationseinstellungen anpassen  
+## <a name="customize-configuration-settings"></a>Anpassen von Konfigurationseinstellungen  
  Wenn Sie CVCollectionCmd für die Auflistung der Ablaufverfolgung verwenden und die Einstellungen anpassen möchten, dann verwenden Sie eine Konfigurationsdatei, um diese festzulegen.  
   
 > [!NOTE]
 >  Wenn Sie Visual Studio für die Auflistung der Ablaufverfolgung verwenden, dann verändern Sie die Konfigurationsdatei nicht direkt.  Nutzen Sie stattdessen das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dafür.  
   
- Erstellen Sie für Änderungen an den Auflistungseinstellung eine Konfigurationsdatei auf dem Rechner, auf dem das Dienstprogramm CVCollectionCmd ausgeführt wird. Sie können die Konfigurationsdatei neu erstellen oder auf den Computer kopieren, auf dem Visual Studio installiert ist und sie anschließend anpassen. Die Datei heißt `UserConfig.xml` und befindet sich im Ordner **Local AppData** . Wenn Sie das Dienstprogramm ausführen, verwenden Sie die Option "Config" zusammen mit dem Befehl "Starten", "Anfügen" oder "Analysieren".  Geben Sie in dem der Option "Config" zugeordneten Parameter den Pfad zur Konfigurationsdatei an.  
+ Erstellen Sie für Änderungen an den Auflistungseinstellung eine Konfigurationsdatei auf dem Rechner, auf dem das Dienstprogramm CVCollectionCmd ausgeführt wird. Sie können die Konfigurationsdatei neu erstellen oder auf den Computer kopieren, auf dem Visual Studio installiert ist und sie anschließend anpassen. Die Datei heißt *UserConfig.xml* und befindet sich im Ordner *Local AppData*. Wenn Sie das Dienstprogramm ausführen, verwenden Sie die Option "Config" zusammen mit dem Befehl "Starten", "Anfügen" oder "Analysieren".  Geben Sie in dem der Option "Config" zugeordneten Parameter den Pfad zur Konfigurationsdatei an.  
   
 ### <a name="configuration-file-tags"></a>Tags der Konfigurationsdatei  
  Die Konfigurationsdatei ist XML-basiert. Hier sind die gültigen Tags und Werte:  

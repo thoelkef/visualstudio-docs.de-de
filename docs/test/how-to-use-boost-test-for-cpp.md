@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751623"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Verwenden von Boost.Test für C++ in Visual Studio
 
 In **Visual Studio 2017 Version 15.5** und höher ist der Testadapter Boost.Test als Standardkomponente der Workload **Desktopentwicklung mit C++** in die Visual Studio-IDE integriert.
 
-![Testadapter für Boost.Test](media/cpp-boost-component.png "Testadapter für die Boot.Test-Komponente")
+![Testadapter für Boost.Test](media/cpp-boost-component.png)
 
 Wenn die Workload **Desktopentwicklung mit C++** nicht installiert ist, öffnen Sie **Visual Studio-Installer**, und wählen Sie **Ändern** aus. Wählen Sie zunächst die Workload **Desktopentwicklung mit C++** und anschließend die Schaltfläche **Ändern** aus.
 
@@ -43,7 +44,7 @@ Boost.Test erfordert [Boost](http://www.boost.org/). Wenn Sie Boost noch nicht i
 
 1. Um eine CPP-Datei für Ihre Tests zu erstellen, klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und klicken Sie dann auf **Neues Element hinzufügen**.
 
-   ![Elementvorlage „Boost.Test“](media/boost_test_item_template.png "Boost.Test-Elementvorlage")
+   ![Boost.Test-Elementvorlage](media/boost_test_item_template.png)
 
 1. Die neue Datei enthält eine Beispieltestmethode. Erstellen Sie Ihr Projekt, damit der **Test-Explorer** die Methode ermitteln kann.
 
@@ -87,7 +88,7 @@ Visual Studio 2017 Version 15.5 enthält keine vorkonfigurierten Testprojekte od
 
 1. Fügen Sie Ihrer CPP-Testdatei alle erforderlichen `#include`-Anweisungen hinzu, um die Typen und Funktionen Ihres Programms für den Testcode sichtbar zu machen. In der Regel befindet sich das Programm in der Ordnerhierarchie eine Ebene darüber. Wenn Sie `#include "../"` eingeben, wird ein IntelliSense-Fenster angezeigt, und Sie können den vollständigen Pfad zur Headerdatei auswählen.
 
-   ![Hinzufügen von #include-Direktiven](media/cpp-gtest-includes.png "Hinzufügen von include-Anweisungen zur CPP-Testdatei")
+   ![Hinzufügen von #include-Direktiven](media/cpp-gtest-includes.png)
 
    Sie können die eigenständige Bibliothek wie folgt verwenden:
 

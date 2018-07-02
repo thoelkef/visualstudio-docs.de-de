@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748737"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 
@@ -45,9 +46,9 @@ Visual Studio-Profiler unterstützt weiterhin bestimmte Ereignisse für eine bes
 
 Bei übertragbaren Ereignissen handelt es sich um eine Gruppe von CPU-Indikatoren, die nicht spezifisch für einen bestimmten Prozessor sind. Alle anderen CPU-Indikatoren werden als Plattformereignisse bezeichnet, die möglicherweise auf verschiedenen Plattformen nicht unterstützt werden.
 
- Indikatoren für übertragbare Ereignisse und Plattformereignisse werden in XML-Dateien definiert, die auch bestimmte Werte in Bezug auf die Indikatoren enthalten. Da die Daten für Intel- und AMD-CPUs beispielsweise unterschiedlich sind, werden mehrere Dateien für die verschiedenen CPUs bereitgestellt. Der [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]-Profiler nutzt diese Informationen, um dem Benutzer für Leistungsmessungen die geeigneten Indikatoren – sowohl portable Indikatoren als auch Plattformindikatoren – zur Verfügung zu stellen.
+ Indikatoren für übertragbare Ereignisse und Plattformereignisse werden in *XML*-Dateien definiert, die auch bestimmte Werte in Bezug auf die Indikatoren enthalten. Da die Daten für Intel- und AMD-CPUs beispielsweise unterschiedlich sind, werden mehrere Dateien für die verschiedenen CPUs bereitgestellt. Der [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]-Profiler nutzt diese Informationen, um dem Benutzer für Leistungsmessungen die geeigneten Indikatoren – sowohl portable Indikatoren als auch Plattformindikatoren – zur Verfügung zu stellen.
 
-### <a name="portable-events"></a>Portable Ereignisse
+### <a name="portable-events"></a>Übertragbare Ereignisse
 
 Übertragbare Ereignisse enthalten die folgenden Ereignisse:
 
@@ -78,7 +79,7 @@ Bei übertragbaren Ereignissen handelt es sich um eine Gruppe von CPU-Indikatore
 |E2-Cachelesefehler|Gibt die Anzahl der Lesefehler im Cache der 2. Ebene an|
 |E2-Cacheleseverweise|Gibt die Anzahl der Leseverweise im Cache der 2. Ebene an. Dies schließt Ladefehler sowie RFO-Fehler und -Treffer (Read For Ownership) ein.|
 
-## <a name="viewing-available-counters"></a>Anzeigen verfügbarer Indikatoren
+## <a name="view-available-counters"></a>Anzeigen verfügbarer Indikatoren
 
 Sie können die verfügbaren CPU-Indikatoren in der Visual Studio-IDE in einem Eingabeaufforderungsfenster aufführen.
 
@@ -126,13 +127,13 @@ Mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) können Sie die
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     Dabei ist  **\<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise
+     Dabei ist  *\<Visual Studio Performance Tools Directory >* der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise
 
-     C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools
+     *C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>Siehe auch
 
 [Übersichten](../profiling/overviews-performance-tools.md)  
-[Gewusst wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
-[Gewusst wie: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)  
-[Gewusst wie: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)
+[Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
+[Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)  
+[Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)

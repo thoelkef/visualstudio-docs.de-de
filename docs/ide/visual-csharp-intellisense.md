@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748230"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -93,7 +94,7 @@ Der IntelliSense-Vorgang **Hinzufügen mit** fügt automatisch die erforderliche
 
 Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und anschließend `XmlTextReader` zum Text der `Main`-Methode hinzufügen, wird eine rote Wellenlinie in dieser Codezeile angezeigt, da der Typverweis nicht aufgelöst werden kann. Sie können dann **Hinzufügen mit** über die **Schnellaktionen** aufrufen. Die Option **Schnellaktionen** ist nur sichtbar, wenn sich der Cursor auf dem ungebundenen Typ befindet.
 
-![Darstellung von „Hinzufügen mit“ und der erweiterten schnellen Aktion](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![Darstellung vom Hinzufügen der using-Anweisung über eine schnelle Aktion](../ide/media/addusing-quickaction.png)
 
 Klicken Sie auf das Glühbirnensymbol und dann auf **using System.Xml;**, um die using-Anweisung automatisch hinzuzufügen.
 
@@ -143,11 +144,11 @@ Im Code-Editor kann IntelliSense Sie beim Verknüpfen von Methoden (Ereignishand
 
 Wenn Sie den `+=`-Operator nach einem Ereignisfeld in einer *CS*-Datei eingeben, fordert IntelliSense Sie dazu auf, die **Tab**-Taste zu drücken. Hierbei wird eine neue Instanz eines Delegaten eingefügt, der auf die Methode zum Behandeln des Ereignisses zeigt.
 
-![Button automatisch verknüpfen](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Button automatisch verknüpfen](../ide/media/vxautohookup.gif)
 
 Wenn Sie die **Tab**-Taste drücken, schließt IntelliSense die Anweisung automatisch für Sie ab und zeigt den Ereignishandlerverweis als ausgewählten Text im Code-Editor an. Um die automatische Ereigniseinbindung abzuschließen, fordert IntelliSense Sie erneut zum Drücken der **TAB-TASTE** auf, um einen leeren Stub für den Ereignishandler zu erstellen.
 
-![Ereignishandler generieren](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Ereignishandler generieren](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Wenn ein neuer Delegat, der von IntelliSense erstellt wird, auf einen vorhandenen Ereignishandler verweist, vermittelt IntelliSense diese Informationen über die QuickInfo. Sie können diesen Verweis dann ändern. Der Text ist im Code-Editor bereits ausgewählt. Andernfalls ist die automatische Ereigniseinbindung an diesem Punkt abgeschlossen.
