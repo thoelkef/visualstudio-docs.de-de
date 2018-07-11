@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692368"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668817"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -92,9 +92,9 @@ Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen i
 
 - Mit der Schaltfläche **Suchen** in der Symbolleiste des Editors für Tests der programmierten UI können Sie das Tool zum Suchen und Ersetzen in Visual Studio öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z.B. die Option „Auf die Schaltfläche ‚Anmelden‘ klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Sie können die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden. Weitere Informationen finden Sie unter „Steuerelement ‚Suchen‘“ in [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
-- Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Weitere Information finden Sie unter [Suchen eines UI-Steuerelements in der getesteten Anwendung](#CodedUITestEditor_LocateUIControl) im weiteren Verlauf dieses Artikels.
+- Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Weitere Information finden Sie unter [Suchen eines UI-Steuerelements in der getesteten Anwendung](#locate-a-ui-control-in-the-application-under-test) im weiteren Verlauf dieses Artikels.
 
-- Möglicherweise müssen Sie das Containersteuerelement erweitern, das das zu bearbeitende Steuerelement enthält. Weitere Informationen finden Sie unter [Suchen eines Steuerelements und seiner Nachfolgerelemente](#CodedUITestEditor_LocateDecendants) im weiteren Verlauf dieses Artikels.
+- Möglicherweise müssen Sie das Containersteuerelement erweitern, das das zu bearbeitende Steuerelement enthält. Weitere Informationen finden Sie unter [Suchen eines Steuerelements und seiner Nachfolgerelemente](#locate-a-control-and-its-descendants) im weiteren Verlauf dieses Artikels.
 
 ## <a name="delete-unwanted-ui-actions"></a>Unerwünschte UI-Aktionen löschen
 
