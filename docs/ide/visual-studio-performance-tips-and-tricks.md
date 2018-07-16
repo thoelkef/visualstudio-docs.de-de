@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37433534"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -23,25 +24,23 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 > [!NOTE]
 > Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Optimieren der Umgebung
+## <a name="use-a-64-bit-os"></a>Verwenden eines 64-Bit-Betriebssystems
 
-- **Verwenden eines 64-Bit-Betriebssystems**
+Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-    Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
+Weitere Informationen finden Sie unter [Speicherlimits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Weitere Informationen finden Sie unter [Speicherlimits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Deaktivieren der automatischen Dateiwiederherstellung
 
-## <a name="configure-solution-and-projects"></a>Konfigurieren von Projektmappen und Projekten
+Visual Studio öffnet Dokumente, die in der vorherigen Sitzung geöffnet waren, automatisch beim erneuten Öffnen. Dadurch kann sich die Ladezeit einer Projektmappe um bis zu 30 % oder mehr verlängern, je nach geöffnetem Projekttyp und geladenen Dokumenten. Auch Designer wie Windows Forms und XAML sowie einige JavaScript und Typescript-Dateien werden möglicherweise langsam geöffnet.
 
-Wenn sie eine sehr große Projektmappe mit vielen Projekten haben, können Sie von den folgenden Optimierungen profitieren:
+Visual Studio benachrichtigt Sie in einer gelben Leiste, wenn die automatische Wiederherstellung dazu führt, dass eine Projektmappe deutlich langsamer geladen wird. Die automatische Dateiwiederherstellung lässt sich wie folgt deaktivieren:
 
-- **Projekte entladen**
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen.
 
-    Sie können selten verwendete, einzelne Projekte im **Projektmappen-Explorer** mit einem Rechtsklick über das Kontextmenü manuell entladen.
+1. Deaktivieren Sie auf der Seite **Projects and Solution** (Projekte und Projektmappen)  > **Allgemein** das Kontrollkästchen **Reopen documents on solution load** (Dokumente beim Laden der Projektmappe erneut öffnen).
 
-- **Refactoring der Projektmappe**
-
-    Sie können die Projektmappe in mehrere kleinere Projektmappendateien mit häufig verwendeten Projekte aufteilen. Dieses Refactoring sollte den Arbeitsspeicherverbrauch des Workflows erheblich reduzieren. Außerdem werden kleinere Projektmappen schneller geladen.
+Wenn Sie die automatische Wiederherstellung deaktivieren, können Sie mit [Gehe zu](../ide/go-to.md) schnell zu Dateien navigieren. Klicken Sie einfach auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen...**, oder drücken Sie **STRG**+**T**.
 
 ## <a name="configure-debugging-options"></a>Konfigurieren von Debugoptionen
 
@@ -69,32 +68,33 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
 
     Um die **Diagnosetools** zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras** > **Optionen** > **Diagnosetools beim Debuggen aktivieren** aus, und deaktivieren Sie die Option.
 
-    Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-tools.md).
+    Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-feature-tour.md).
 
 ## <a name="disable-tools-and-extensions"></a>Deaktivieren von Tools und Erweiterungen
 
-Einige Tools oder Erweiterungen müssen möglicherweise ausgeschaltet werden, um die Leistung zu verbessern.
+Einige Tools oder Erweiterungen können ausgeschaltet werden, um die Leistung zu verbessern.
 
 > [!TIP]
 > Häufig können Sie Leistungsprobleme isolieren, indem Sie Erweiterungen eine nach der anderen deaktivieren und die Leistung immer wieder überprüfen.
 
-### <a name="managed-language-services-roslyn"></a>Dienste für verwaltete Sprachen (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Dienste für verwaltete Sprachen (Roslyn)
 
 Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Überlegungen zur Leistung bei großen Projektmappen)](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Deaktivieren der vollständigen Projektmappenanalyse**
 
-    Visual Studio analysiert Ihre gesamte Projektmappe, um eine alle Fehler vor dem Erstellen eines Builds zu erfassen. Diese Funktion ist nützlich, um Fehler so früh wie möglich zu identifizieren. Allerdings kann diese Funktion bei sehr großen Projektmappen beträchtliche Arbeitsspeicherressourcen konsumieren. Wenn Sie Arbeitsspeichermangel oder ähnliche Probleme haben, können Sie diese Funktion deaktivieren, um diese Ressourcen freizugeben. Diese Option ist für Visual Basic standardmäßig aktiviert und für C# deaktiviert.
+    Visual Studio analysiert Ihre gesamte Projektmappe, um eine alle Fehler vor dem Erstellen eines Builds zu erfassen. Diese Funktion ist nützlich, um Fehler so früh wie möglich zu identifizieren. Allerdings kann diese Funktion bei großen Projektmappen beträchtliche Arbeitsspeicherressourcen konsumieren. Wenn Sie Arbeitsspeichermangel oder ähnliche Probleme haben, können Sie diese Funktion deaktivieren, um diese Ressourcen freizugeben. Diese Option ist für Visual Basic standardmäßig aktiviert und für C# deaktiviert.
 
-    Um die **Vollständige Projektmappenanalyse** zu deaktivieren, wählen Sie **Extras** > **Optionen** > **Text-Editor** > **<Visual Basic oder C#>** aus. Wählen Sie dann **Erweitert** aus, und deaktivieren das Kontrollkästchen **Enable full solution analysis** (Vollständige Projektmappenanalyse aktivieren).
+    Klicken Sie zum Deaktivieren der **vollständigen Projektmappenanalyse** auf **Extras** > **Optionen** > **Text-Editor**, und wählen Sie **Visual Basic** oder **C#** aus. Klicken Sie dann auf **Erweitert**, und deaktivieren das Kontrollkästchen **Enable full solution analysis** (Vollständige Projektmappenanalyse aktivieren).
 
 - **Deaktivieren von CodeLens**
 
-    Visual Studio führt eine Aufgabe **Alle Verweise suchen** für jede Methode aus, während sie angezeigt wird. CodeLens bietet Funktionen wie die Inlineanzeige der Anzahl der Verweise. Die Arbeit wird in einem separaten Prozess ausgeführt (z.B. *ServiceHub.RoslynCodeAnalysisService32*). In sehr großen Projektmappen oder auf Systemen mit eingeschränkten Ressourcen kann diese Funktion entscheidenden Einfluss auf die Leistung haben, obwohl die mit niedriger Priorität ausgeführt wird. Wenn bei diesem Prozess eine hohe CPU-Auslastung oder Probleme mit dem Arbeitsspeicher auftreten (z.B. beim Laden von großen Projektmappen auf einem 4-GB-Computer), können Sie versuchen, durch das Deaktivieren dieser Funktion Ressourcen freizugeben.
+    Visual Studio führt eine Aufgabe **Alle Verweise suchen** für jede Methode aus, während sie angezeigt wird. CodeLens bietet Funktionen wie die Inlineanzeige der Anzahl der Verweise. Die Arbeit wird in einem separaten Prozess ausgeführt, z.B. *ServiceHub.RoslynCodeAnalysisService32*. In großen Projektmappen oder auf Systemen mit eingeschränkten Ressourcen kann diese Funktion entscheidenden Einfluss auf die Leistung haben. Wenn beim Laden von großen Projektmappen auf einem 4-GB-Computer beispielsweise Probleme mit dem Arbeitsspeicher auftreten oder wenn es bei diesem Prozess zu hoher CPU-Auslastung kommt, können Sie CodeLens deaktivieren, um Ressourcen freizugeben.
 
     Um **CodeLens** zu deaktivieren, wählen Sie **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens** aus, und deaktivieren Sie das Feature.
 
-    Diese Funktion steht in Visual Studio Professional und Visual Studio Enterprise zur Verfügung.
+    > [!NOTE]
+    > CodeLens ist in den Visual Studio-Editionen „Professional“ und „Enterprise“ verfügbar.
 
 ### <a name="other-tools-and-extensions"></a>Andere Tools und Erweiterungen
 
@@ -127,4 +127,4 @@ Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fun
 ## <a name="see-also"></a>Siehe auch
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

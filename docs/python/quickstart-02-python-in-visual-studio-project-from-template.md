@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957336"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37057023"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
@@ -37,11 +37,31 @@ Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](ins
     > [!Tip]
     > Wenn Sie mit einem neuen Projekt beginnen, wird dringend empfohlen, zu Beginn eine virtuelle Umgebung zu erstellen. Dazu werden Sie auch von den meisten Visual Studio-Vorlagen aufgefordert. Virtuelle Umgebungen behalten die genauen Anforderungen Ihres Projekts im Laufe der Zeit bei, wenn Bibliotheken hinzugefügt und entfernt werden. Dann können Sie mühelos eine `requirements.txt`-Datei erstellen, die Sie zur erneuten Installation dieser Abhängigkeiten auf anderen Entwicklungscomputern verwenden können (wie bei der Quellcodeverwaltung). Außerdem können Sie diese Datei verwenden, wenn Sie das Projekt auf einem Produktionsserver bereitstellen. Weitere Informationen zu virtuellen Umgebungen und deren Vorzügen finden Sie in den Artikeln [Auswählen eines Python-Interpreters und einer Umgebung zur Verwendung in einem Projekt](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) und [Verwalten von erforderlichen Paketen mit „requirements.txt“](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Nachdem Visual Studio diese Umgebung erstellt hat, sehen Sie im **Projektmappen-Explorer** neben `requirements.txt` auch eine `app.py`-Datei. Öffnen Sie `app.py`. Dann sehen Sie, dass die Vorlage Code bereitgestellt hat, der dem unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) ähnelt, mit zwei zusätzlichen Bereichen.
+1. Nachdem Visual Studio diese Umgebung erstellt hat, sehen Sie im **Projektmappen-Explorer** neben `requirements.txt` auch eine `app.py`-Datei. Öffnen Sie `app.py`. Dann sehen Sie, dass die Vorlage Code bereitgestellt hat, der dem unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md) ähnelt. Er enthält nur einige zusätzliche Bereiche. Der gesamte, unten angezeigte Code wird von der Vorlage erstellt. Sie müssen daher nichts selbst in `app.py` einfügen.
 
-    Oben sehen Sie die Zeile `wsgi_app = app.wsgi_app`, die beim Bereitstellen einer App für einen Webhost nützlich sein kann.
+    Der Code beginnt mit den erforderlichen Importvorgängen:
 
-    Darunter sehen Sie den Startcode, mit dem Sie den Host und Port anhand von Umgebungsvariablen festlegen können statt sie zu hartcodieren. Mit derartigem Code können Sie die Konfiguration auf Entwicklungs- und Produktionscomputern steuern, ohne den Code ändern zu müssen:
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    Darauf folgt diese Zeile, die beim Bereitstellen einer App auf einem Webhost nützlich sein kann:
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    Anschließend kommt das Decorator-Element der Route als einfache Funktion, die eine Ansicht definiert:
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    Aufgrund des abschließenden Startcodes können Sie Host und Port anhand von Umgebungsvariablen festlegen, statt sie hartzucodieren. Mit derartigem Code können Sie die Konfiguration auf Entwicklungs- und Produktionscomputern steuern, ohne den Code ändern zu müssen:
 
     ```python
     if __name__ == '__main__':

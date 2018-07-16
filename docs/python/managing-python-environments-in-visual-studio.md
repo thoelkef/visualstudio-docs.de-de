@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
-ms.date: 05/22/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477573"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342757"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -87,7 +87,7 @@ In jedem Fall wird das Fenster **Python-Umgebungen** als gleichgeordnete Registe
 
 ![Fenster „Python-Umgebungen“](media/environments-default-view.png)
 
-Wenn eine Umgebung wider Erwarten nicht in der Liste angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
+Visual Studio folgt [PEP 514](https://www.python.org/dev/peps/pep-0514/) beim Identifizieren von installierten Umgebungen mithilfe der Registrierung. Wenn eine Umgebung wider Erwarten nicht in der Liste angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
 
 Wenn Sie eine Umgebung in der Liste auswählen, werden verschiedene Eigenschaften und Befehle der Umgebung auf der Registerkarte **Übersicht** angezeigt. Wie Sie beispielsweise im obigen Bild sehen können, ist der Speicherort des Interpreters `C:\Python36-32`. Verwenden Sie die Dropdownliste unter der Liste von Umgebungen, um zu verschiedenen Registerkarten wie **Pakete** oder **IntelliSense** zu wechseln. Diese Registerkarten werden in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben.
 
@@ -118,7 +118,27 @@ Wenn Sie wissen, dass ein Python-Interpreter auf Ihrem Computer vorhanden ist, V
 >
 > Wenn Sie jedoch einen Interpreter und dessen Umgebung manuell über das Dateisystem verschieben, ist Visual Studio der neue Speicherort nicht bekannt. Weitere Informationen finden Sie unter [Verschieben eines Interpreters](installing-python-interpreters.md#moving-an-interpreter).
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>Korrigieren ungültiger Umgebungen
+
+Wenn Visual Studio Registrierungseinträge für eine Umgebung sucht, der Pfad zum Interpreter jedoch ungültig ist, zeigt das Fenster „Python-Umgebungen“ den Namen durchgestrichen an:
+
+![Das Fenster „Python-Umgebungen“ mit einer ungültigen Umgebung](media/environments-invalid-entry.png)
+
+Umgebungen, die Sie behalten möchten, lassen sich korrigieren, indem Sie zunächst den **Reparaturvorgang** des Installers starten. Die Installer für die Standardversion von Python 3.x beispielsweise enthält diese Option.
+
+Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption verfügt, oder eine ungültige Umgebung entfernen, führen Sie die folgenden Schritte aus, um die Registrierung direkt zu ändern. Visual Studio aktualisiert das Fenster „Python-Umgebungen“ automatisch, wenn Sie Änderungen an der Registrierung vornehmen.
+
+1. Führen Sie aus `regedit.exe`.
+1. Navigieren Sie zu `HKEY_LOCAL_MACHINE\SOFTWARE\Python` für 32-Bit-Interpreter oder zu `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` für 64-Bit-Interpreter. Für IronPython müssen Sie stattdessen nach `IronPython` suchen.
+1. Erweitern Sie den Knoten, der der Verteilung entspricht, z.B. `PythonCore` für CPython oder `ContinuumAnalytics` für Anaconda. Erweitern Sie für IronPython den Versionsnummerknoten.
+1. Überprüfen Sie die Werte im `InstallPath`-Knoten:
+
+    ![Registrierungseinträge für eine Standardinstallation von CPython](media/environments-registry-entries.png)
+
+    - Wenn die Umgebung weiterhin auf dem Computer vorhanden ist, ändern Sie den Wert von `ExecutablePath` in den richtigen Speicherort. Korrigieren Sie auch die Werte `(Default)` und `WindowedExecutablePath` nach Bedarf.
+    - Wenn die Umgebung nicht mehr auf Ihrem Computer vorhanden ist und Sie sie aus dem Fenster „Python-Umgebungen“ entfernen möchten, löschen Sie den übergeordneten `InstallPath`-Knoten, z.B. `3.6` in der Abbildung oben.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>Manuelles Identifizieren einer vorhandenen Umgebung
 

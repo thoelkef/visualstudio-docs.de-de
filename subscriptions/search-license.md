@@ -1,28 +1,31 @@
 ---
 title: Suchen und Filtern | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.author: tglee
+manager: douge
+ms.date: 06/27/2018
+ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren einzelne Abonnenten oder Gruppen im Administratorportal suchen können.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031181"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37089723"
 ---
-# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
-Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können Sie anhand verschiedener Kriterien bestimmte Abonnenten suchen. Sie können die Abonnentenliste nach Name, E-Mail-Adresse, Abonnementebene und vielen anderen Informationen filtern. 
+# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
 
-1.  Klicken Sie am oberen Rand der Tabelle auf **Filter**, um nach einer bestimmten Gruppe von Abonnenten zu suchen.
+Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können Sie anhand verschiedener Kriterien bestimmte Abonnenten suchen. Sie können die Abonnentenliste nach Name, E-Mail-Adresse, Abonnementstufe und vielen anderen Informationen filtern.
 
-    ![Abonnenten filtern](_img\edit-license\filter-list.png)
+1. Klicken Sie zum Filtern nach einer bestimmten Abonnentengruppe auf **Filter**.
 
-2.  Es werden viele Felder angezeigt, die Sie als Suchkriterien verwenden können. Wählen Sie die gewünschten Kriterien aus, die Sie als Basis für die Suche verwenden möchten, und klicken Sie auf **Filter**. Daraufhin wird eine Liste der Abonnenten angezeigt, die den angegebenen Kriterien entsprechen.
-![Abonnenten suchen](_img\search-filter\search-filter-find.png)
+   ![Auf „Filter“ klicken, um eine Abonnentenliste zu durchsuchen](media\filter-list.png)
 
+2. Geben Sie die Kriterien ein, anhand derer Sie suchen möchten, und klicken Sie auf **Filter**.
+
+   ![Verfügbare Felder zum Filtern der Abonnentendaten verwenden](media\filter-subscribers.png)
+
+   Die ausgegebene Abonnentenliste entspricht dann den Kriterien, die Sie ausgewählt haben.
