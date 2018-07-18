@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668586"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -109,7 +110,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 |Aufgaben|Verwandte Themen|
 |-----------|-----------------------|
-|**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem Assistenten für neue Auslastungstests einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#EditingLoadPatternsChanging)|
+|**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem Assistenten für neue Auslastungstests einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
 |**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im Auslastungstest-Editor bearbeiten.|-   [How to: Specify the Step Ramp Time Property for a Step Load Pattern (Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster)](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [How to: Specify the Percentage of Virtual Users that Use Web Cache Data (Vorgehensweise: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen)](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Angeben der Schrittverlaufszeit für ein schrittweises Auslastungsmuster**: Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z.B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht.|-   [How to: Specify the Step Ramp Time Property for a Step Load Pattern (Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster)](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|

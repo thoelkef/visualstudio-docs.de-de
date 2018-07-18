@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668595"
 ---
 # <a name="edit-load-test-scenarios"></a>Bearbeiten von Auslastungstestszenarios
 
@@ -32,9 +33,8 @@ Alle Erstkonfigurationsoptionen und -einstellungen, die Sie angeben, wenn Sie ei
 
 Szenarien enthalten folgende Komponenten:
 
-|||
-|-|-|
 |Begriff|Definition|
+|-|-|
 |Browsermix|Simuliert den Zugriff virtueller Benutzer auf eine Website über verschiedene Webbrowser.|
 |Auslastungsmuster|Gibt die Anzahl von während eines Auslastungstests aktiven virtuellen Benutzern sowie die Rate an, mit der neue Benutzer gestartet werden. Zum Beispiel Einzelschritt, Konstante oder Zielbasiert.|
 |Testmischungsmodell|Gibt die Wahrscheinlichkeit an, dass ein virtueller Benutzers einen bestimmten Test in einem Auslastungstestszenario ausführt. Zum Beispiel 20% Wahrscheinlichkeit der Ausführung von TestA und 80% Wahrscheinlichkeit der Ausführung von TestB. Das Testmischungsmodell sollte den Zielen des Tests für ein bestimmtes Szenario entsprechen.|

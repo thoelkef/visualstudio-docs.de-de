@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844237"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>How to: Prevent Time-Outs for Diagnostic Data Adapters
 
@@ -63,7 +64,7 @@ Wenn Sie Adapter für diagnostische Daten in den Testeinstellungen verwenden, ka
 
 4.  Zum Erhöhen der Timeoutwerte müssen Sie den Abschnitt mit den Testausführungseinstellungen ändern. Dieser Abschnitt hat das folgende Format:
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -81,7 +82,7 @@ Wenn Sie Adapter für diagnostische Daten in den Testeinstellungen verwenden, ka
 
 7.  Sie müssen zum Verlängern des Timeouts für das Übertragen der für einen Fehler oder am Ende eines Tests gesammelten Daten auf den Computer, auf dem die Tests ausgeführt werden, das folgende Timeout zu **mtm.exe.config** im appSettings-Abschnitt der Datei hinzufügen:
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```
