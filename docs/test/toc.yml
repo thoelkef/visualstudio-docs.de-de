@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Erstellen eines Add-Ins für den Ergebnis-Viewer
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
+- name: Automatisierung von UI-Tests
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI'
+    - name: 'Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines codierten UI-Tests'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Testen von Windows UWP-Apps mit Tests der programmierten UI
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests
+    - name: Testen von UWP-Apps mit Tests der codierten UI
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Erstellen eines datengesteuerten Tests für die programmierte UI
       href: creating-a-data-driven-coded-ui-test.md
-    - name: 'Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird'
+    - name: Warten auf bestimmte Ereignisse während der Wiedergabe
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Verwenden verschiedener Webbrowser mit Tests der programmierten UI
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Unterstützte Konfigurationen und Plattformen für Tests der codierten UI und Aktionsaufzeichnungen
+    - name: Unterstützte Konfigurationen und Plattformen
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
+    - name: Erweitern des Frameworks für codierte UI-Tests
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Sample Excel Add-In for Coded UI Testing
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Beispiel für Excel-Communicator-Schnittstelle
-          href: sample-excel-communicator-interface.md
-        - name: Beispielerweiterung für Tests der programmierten Benutzeroberfläche für Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Sample Excel Extension: ExtensionPackage Class'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Sample Excel Extension: TechnologyManager Class'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Beispiel für Excel-Erweiterung: PropertyProvider-Klasse'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Sample Excel Extension: Element Classes'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Sample Excel Extension: ActionFilter Class'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Testen von Lab Management
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

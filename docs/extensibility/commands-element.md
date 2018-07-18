@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108481"
 ---
 # <a name="commands-element"></a>Commands-Element
 Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage. Die Auflistung kann bis zu fünf Unterabschnitte haben, wie folgt: Gruppen, Menüs, Schaltflächen, Tastenkürzel und Bitmaps.  

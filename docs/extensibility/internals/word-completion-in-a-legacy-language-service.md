@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141512"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einen Legacy-Sprachdienst
 Wortvervollständigung füllt die fehlenden Zeichen für eine teilweise typisiertes Wort. Ist nur eine mögliche Abschluss, ist das Wort abgeschlossen, wenn die Beendigung Zeichen eingegeben wird. Wenn die partielle Wort mehr als eine Möglichkeit übereinstimmt, wird eine Liste von möglichen Abschlüssen angezeigt. Ein Abschluss Zeichen kann jedes Zeichen sein, die nicht für Bezeichner verwendet wird.  

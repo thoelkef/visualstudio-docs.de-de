@@ -1,4 +1,5 @@
 # [Visual Studio-Abonnements](index.md)
+## [Neuigkeiten](whats-new-in-subscriptions.md)
 ## Benutzeroberflächen für Abonnenten
 ### [Verwenden des Abonnentenportals](using-the-subscriber-portal.md)
 #### [Aktivieren von Einzelhandelsabonnements](activate-store-subscriptions.md)
@@ -64,7 +65,7 @@
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
 ## Erwerben von Visual Studio-Abonnements
-### [Vergleich von Abonnementoptionen](https://www.visualstudio.com/vs/pricing)
+### [Vergleich von Abonnementoptionen](https://visualstudio.microsoft.com/vs/pricing)
 ### Kaufen von Cloudabonnements
 #### [Übersicht](vscloud-overview.md)
 #### [Abrechnung – Häufig gestellte Fragen](vscloud-billing-faq.md)
@@ -75,8 +76,8 @@
 #### [Microsoft für Startups](program-startups.md)
 ## Ressourcen
 ### [Whitepaper zur Visual Studio-Lizenzierung](http://aka.ms/vslicensing)
-### [Vergleich von Abonnementoptionen und -preisen](https://www.visualstudio.com/vs/pricing)
-### [Vergleich von Visual Studio-IDE-Features](https://www.visualstudio.com/vs/compare)
-### [Support für die Verwaltung von Visual Studio und Abonnements](https://www.visualstudio.com/support/support-overview-vs)
+### [Vergleich von Abonnementoptionen und -preisen](https://visualstudio.microsoft.com/vs/pricing)
+### [Vergleich von Visual Studio-IDE-Features](https://visualstudio.microsoft.com/vs/compare)
+### [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft-Vereinbarung für Produkte und Dienste (Microsoft Products and Services Agreement, MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

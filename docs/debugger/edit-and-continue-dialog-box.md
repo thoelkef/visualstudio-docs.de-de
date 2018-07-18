@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473136"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogfeld "Bearbeiten und Fortfahren"
 (Nur systemeigen) Dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und **bearbeiten und Fortfahren** erkennt, dass Änderungen am Code angewendet werden kann. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  

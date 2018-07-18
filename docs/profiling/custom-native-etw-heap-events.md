@@ -12,13 +12,14 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749459"
 ---
-# <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heap
+# <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
 Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-tools.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
 
@@ -48,7 +49,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 Eine Momentaufnahme aus dem [Speicherauslastungstool](../profiling/memory-usage.md) ohne benutzerdefinierte Heap-Nachverfolgung würde nur einfach die einzelne 8.192 Byte-Zuordnung und keine der benutzerdefinierten Zuordnungen, die vom Pool vorgenommen wurden, anzeigen:
 
-![Windows-Heap-Zuordnung](media/heap-example-windows-heap.png)
+![Windows-Heapzuordnung](media/heap-example-windows-heap.png)
 
 Durch die folgenden Schritte können wir dieses Tool zum Nachverfolgen von Speicherauslastung in unserem benutzerdefinierten Heap verwenden.
 
@@ -136,7 +137,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Nachverfolgung der Speicherauslastung
+## <a name="track-memory-usage"></a>Nachverfolgen der Speicherauslastung
 Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
 
 ![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Verwenden Sie zum Anzeigen Ihrer benutzerdefinierten Heap-Nachverfolgung den **H
 
 ![Heap-Auswahl](media/heap-example-custom-heap.png)
 
-Mithilfe des obigen Codebeispiels, mit `MemoryPool` zum Erstellen eines `VSHeapTracker::CHeapTracker`-Objekts, und unserer eigenen `allocate`-Methode, die nun die `AllocateEvent`-Methode aufruft, können Sie das Ergebnis der benutzerdefinierten Zuordnung sehen, die 3 Instanzen mit insgesamt 24 Bytes zeigt, alle vom Typ `Foo`.
+Mithilfe des obigen Codebeispiels, mit `MemoryPool` zum Erstellen eines `VSHeapTracker::CHeapTracker`-Objekts, und unserer eigenen `allocate`-Methode, die nun die `AllocateEvent`-Methode aufruft, können Sie das Ergebnis der benutzerdefinierten Zuordnung sehen, die drei Instanzen mit insgesamt 24 Bytes zeigt, alle sind vom Typ `Foo`.
 
 Das Standardheap *NT-Heap* sieht genauso aus wie vorher, außer dass das `CHeapTracker`-Objekt hinzugefügt wurde.
 
@@ -154,7 +155,7 @@ Das Standardheap *NT-Heap* sieht genauso aus wie vorher, außer dass das `CHeapT
 Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwenden, um Momentaufnahmen zu vergleichen und um nach Verlusten und Beschädigung in Ihrem benutzerdefinierten Heap zu suchen, das in der Hauptdokumentation [Speicherauslastung](../profiling/memory-usage.md) beschrieben wird.
 
 > [!TIP]
-> Visual Studio enthält auch ein **Speicherauslastungs**tool im **Leistungsprofilerstellungs**-Toolset, das in der Menüoption **Debuggen > Leistungsprofilerstellung** oder über die Tastenkombination **Alt+F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen > Windows > Diagnosetools anzeigen** oder mit der Tastenkombination **STRG+Alt+F2** aktiviert werden kann, enthält diese Funktion.
+> Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen**>**Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen**>**Windows**>**Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
 [Profilerstellungstools](../profiling/profiling-tools.md)  

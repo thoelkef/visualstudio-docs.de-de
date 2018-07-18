@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924809"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
 Den Regelsatz Microsoft verwaltete empfohlene Regeln auf die kritischsten Probleme in verwaltetem Code, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern konzentrieren können. Sie sollten diesen Regelsatz in allen benutzerdefinierten Regelsätzen, die Sie für Ihre Projekte erstellen, berücksichtigen.

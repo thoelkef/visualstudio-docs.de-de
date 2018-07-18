@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446724"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477391"
 ---
 # <a name="vsperf"></a>VSPerf
 Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:  
@@ -26,16 +26,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
   
  Weitere Informationen zu Ihren Profilerstellungsoptionen finden Sie unter [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- Dieses Thema beschreibt die Optionen, die Sie mit dem Befehlszeilentool `vsperf.exe` verwenden können. Dieses Thema enthält folgende Abschnitte:  
-  
- [Nur UWP-Apps](#BKMK_windows_store_apps_only)  
-  
- [Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Alle Anwendungen](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Nur UWP-Apps  
+## <a name="uwp-apps-only"></a>Nur UWP-Apps  
  Diese Optionen gelten nur für UWP-Apps.  
   
 |||  
@@ -46,7 +37,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/noclr**|Dies ist optional. Es werden keine CLR-Daten gesammelt.<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.<br /><br /> Optimierung, es werden keine verwalteten Symbole aufgelöst.|  
 |**/listapps**|Listet Namen installierter Apps und PackageFullNames auf.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen  
  Diese Optionen funktionieren nicht mit UWP-Apps.  
   
 |||  
@@ -55,7 +46,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/args:{ExecutableArguments}**|Gibt Befehlszeilenargumente an, um das **/launch**-Ziel zu erreichen.|  
 |**/console**|Führt das **/launch**-Ziel in einem neuen Befehlsfenster aus.|  
   
-##  <a name="BKMK_All_applications"></a> Alle Anwendungen  
+## <a name="all-applications"></a>Alle Anwendungen  
  Diese Option gilt für jede Windows 8- oder Windows Server 2012-Anwendung.  
   
 |||  

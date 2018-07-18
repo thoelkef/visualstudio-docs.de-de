@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130244"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Vorgehensweise: unterstützen Gliederung im ein Legacy-Sprachdienst
 Gliederung dient zum Erweitern oder reduzieren die verschiedenen Bereiche des Texts. Die Weise Gliederung wird verwendet, kann von verschiedenen Sprachen unterschiedlich definiert werden. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md).  

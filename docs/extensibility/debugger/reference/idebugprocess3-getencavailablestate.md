@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122167"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Diese Methode ruft die aktuellen bearbeiten und Fortfahren Zustand des Prozesses ab. Ein benutzerdefinierten Port Lieferanten sollten stets `E_NOTIMPL`.  

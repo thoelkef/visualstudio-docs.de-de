@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138105"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateinamenerweiterungen
 Die Zuordnung der Dateinamenerweiterung mit einer Anwendung wurde in der Regel eine bevorzugte Maßnahme, das auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies bevorzugte ein Verb, z. B. open Aktion verknüpft ist, die der Aktion entspricht.  

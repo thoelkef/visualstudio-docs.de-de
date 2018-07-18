@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134632"
 ---
 # <a name="registering-a-project-type"></a>Registrieren einen Projekttyp
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträge, die es ermöglichen erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erkannt werden und Arbeiten mit Ihrem Project-Typs. Diese Registrierungseinträge wird normalerweise mithilfe einer Registrierung-Skriptdatei (.rgs) erstellen.  

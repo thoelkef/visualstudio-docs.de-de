@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953991"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 Sie können das Aussehen und Verhalten des Eigenschaftenfensters in Ihrer domänenspezifische Sprache (DSL) anpassen, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In der DSL-Definition definieren Sie Domäneneigenschaften für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jeder Eigenschaft "Domain" standardmäßig im Eigenschaftenfenster aufgeführt. Dadurch sehen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie keine Form von Feldern im Diagramm zugeordnet haben.

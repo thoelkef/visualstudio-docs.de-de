@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454687"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750505"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Tutorial, Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -107,7 +107,7 @@ Wenn Sie an diesem Punkt das Projekt in Visual Studio erneut ausführen (über d
 
 Da Sie Änderungen an Ihrem Code vorgenommen und erfolgreich getestet haben, ist jetzt ein guter Zeitpunkt zum Überprüfen und Fortschreiben von Änderungen der Quellcodeverwaltung. Spätere Schritte in diesem Tutorial erinnern Sie an den geeigneten Zeitpunkt für ein erneutes Commit für die Quellcodeverwaltung und verweisen wieder auf diesen Abschnitt.
 
-1. Wählen Sie die Schaltfläche „Änderungen“ am unteren Rand von Visual Studio (Kreise weiter unten). Sie gelangen zu **Team Explorer**.
+1. Klicken Sie auf die Schaltfläche „Änderungen“ am unteren Rand von Visual Studio (unten eingekreist), mit dem Sie zum **Team Explorer** gelangen.
 
     ![Schaltfläche für Änderungen der Quellcodeverwaltung in der Statusleiste von Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
 1. Führen Sie das Projekt aus, und berücksichtigen Sie die Ausgabe. Sie sollten eine mit der Meldung aus Schritt 2-2 vergleichbare Meldung sehen, die angibt, dass die Vorlage funktioniert.
 
-    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Obwohl Sie ohne Escapezeichen auskommen können, sollten Sie vor allem die Verwendung von Inline-HTML vermeiden. Formatierung und Stile verbleiben am besten in der Seitenvorlage, nicht im Code. Zusätzliche Variablen können dann, wo erforderlich, erstellt werden.
-
-    Ändern Sie z.B. `templates/index.html` entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage behält:
+    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern versehentliche Sicherheitslücken für Angriffe durch Einschleusung: Entwickler sammeln häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Escapezeichen sind auch eine Erinnerung daran, dass es am besten ist, HTML-Code außerhalb des Codes in der Seitenvorlage zu schreiben. Glücklicherweise ist es eine einfache Angelegenheit, bei Bedarf zusätzliche Variablen zu erstellen. Ändern Sie z.B. `templates/index.html` entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage behält:
 
     ```html
     <html>

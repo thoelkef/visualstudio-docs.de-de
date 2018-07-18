@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951371"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in eine domänenspezifische Sprache (DSL) angezeigt wird. Sie können die Decorator-angezeigt und nicht mehr angezeigt, je nach den Status der Eigenschaften im Modell. Auf eine Form, die eine Person darstellt, konnte Sie z. B. unterschiedliche Symbole verfügen, die angezeigt werden, abhängig von der Person Geschlecht, Anzahl der untergeordneten Elemente, und so weiter.

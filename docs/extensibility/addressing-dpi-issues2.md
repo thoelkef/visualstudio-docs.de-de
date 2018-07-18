@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108442"
 ---
 # <a name="addressing-dpi-issues"></a>Adressieren von DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "Auflösung" Bildschirme geliefert werden. Diese Seiten sind in der Regel über 200 Pixel pro Zoll (Ppi). Arbeiten mit einer Anwendung auf diesen Computern ist Inhalt skaliert werden, um den Bedürfnissen Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät erforderlich. Stand 2014 ist die primäre Zielgruppe für PHP-zeigt mobiler Geräte (Tablets, Laptops Schalenkoffer und Telefone) berechnen.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099837"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Ereignisquellen (Visual Studio SDK)
 Es gibt zwei Quellen von Ereignissen: Debuggen von Debugging-Modul (Deutschland) und die Sitzung Manager (SDM). Aus einer bereitgestellten Kompatibilitätsrichtlinie gesendete Ereignisse sind ein Modul ungleich NULL aus dem SDM gesendete Ereignisse ein NULL-Modul vorhanden.  

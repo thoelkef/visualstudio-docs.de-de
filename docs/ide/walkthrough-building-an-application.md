@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748217"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -33,31 +34,31 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
 1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-   ![Menü „Build“, Konfigurations-Manager-Befehl](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Menü "Erstellen", Konfigurations-Manager-Befehl](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<Neu…\>** aus.
 
 1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen **Debug**-Konfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
 
-   ![Dialogfeld „Neue Projektmappenkonfiguration“](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Dialogfeld "Neue Projektmappenkonfiguration"](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **\<Neu…\>** aus.
 
 1. Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.
 
-   ![Dialogfeld „Neue Projektmappenplattform“](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Dialogfeld "Neue Projektmappenplattform"](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Klicken Sie auf die Schaltfläche **OK** .
 
    Die aktive Projektmappenkonfiguration wurde für einen **Test** mit der aktiven, auf x64 festgelegten Projektmappenplattform geändert.
 
-   ![Konfigurations-Manager mit Testkonfiguration](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Konfigurations-Manager mit Testkonfiguration](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Klicken Sie auf **Schließen**.
 
 Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder ändern, indem Sie die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** verwenden.
 
-![Standardsymbolleiste der Projektmappenkonfiguration](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Standardsymbolleiste der Projektmappenkonfiguration](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Erstellen der Anwendung
 
@@ -83,9 +84,9 @@ Als Nächstes wird Code eingeführt, der eine Warnung auslöst und vom Compiler 
 
 Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Build wurde erfolgreich abgeschlossen, aber es wurden Warnungen ausgelöst:
 
-![Ausgabefenster Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Ausgabefenster Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Ausgabefenster Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Ausgabefenster Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden, anstatt sie die Buildausgabe durcheinanderbringen zu lassen.
 
@@ -99,7 +100,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 1. Klicken Sie auf die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer **0168** an.
 
-     ![Seite „Erstellen“, Projekt-Designer](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Seite "Erstellen", Projekt-Designer](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Weitere Informationen finden Sie unter [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
      Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
 
-     ![Ausgabefenster, Visual C&#35;-Buildwarnungen](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Ausgabefenster, Visual C&#35;-Buildwarnungen](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Unterdrücken aller Visual Basic-Buildwarnungen
 
@@ -119,7 +120,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 1. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
 
-     ![Seite „Kompilieren“, Projekt-Designer](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Seite "Kompilieren", Projekt-Designer](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
  Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
 
- ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 1. Öffnen Sie das Dialogfeld **Optionen**.
 
-     ![Befehl „Optionen“ im Menü „Tools“](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+     ![Befehl "Optionen" im Menü "Tools"](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Wählen Sie die Kategorie **Projekte und Projektmappen**, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
@@ -174,7 +175,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Öffnen Sie den **Projekt-Designer**.
 
-     ![Menü „Ansicht“, Befehl „Eigenschaftenseiten“](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menü "Ansicht", Befehl "Eigenschaftenseiten"](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Wählen Sie die Seite **Kompilieren** aus.
 
@@ -191,13 +192,13 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Erstellen Sie die Anwendung.
 
-     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Befehl "Projektmappe erstellen" im Menü "Erstellen"](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C# #
 
 1. Öffnen Sie den **Projekt-Designer**.
 
-     ![Menü „Ansicht“, Befehl „Eigenschaftenseiten“](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menü "Ansicht", Befehl "Eigenschaftenseiten"](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Wählen Sie die Seite **Erstellen** aus.
 
@@ -216,7 +217,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Erstellen Sie die Anwendung.
 
-     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Befehl "Projektmappe erstellen" im Menü "Erstellen"](../ide/media/exploreide-buildsolution.png)
 
    Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad wäre `\\myserver\builds\\FileName.exe`.
 

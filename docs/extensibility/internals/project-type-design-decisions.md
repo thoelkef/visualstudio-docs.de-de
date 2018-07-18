@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131492"
 ---
 # <a name="project-type-design-decisions"></a>Projekt Typ Entwurfsentscheidungen
 Bevor Sie einen neuen Projekttyp erstellen, müssen Sie mehrere entwurfsentscheidungen hinsichtlich Ihres Projekttyps. Sie müssen entscheiden, welche Arten von Projekten enthaltenen Elemente, wie die Projektdateien beibehalten werden und welche Verpflichtung Modell Sie verwenden möchten.  

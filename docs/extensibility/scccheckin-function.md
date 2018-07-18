@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138853"
 ---
 # <a name="scccheckin-function"></a>SccCheckin-Funktion
 Diese Funktion überprüft in zuvor ausgecheckten Dateien auf dem Quellcodeverwaltungssystem, speichern die Änderungen und Erstellen einer neuen Version. Diese Funktion wird mit einer Anzahl und ein Array von Namen der Dateien eingecheckt werden aufgerufen.  

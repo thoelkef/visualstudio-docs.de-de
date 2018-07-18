@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144933"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Exemplarische Vorgehensweise: Erstellen eines Legacy-Sprachdiensts
 Verwenden der verwalteten Package Framework (MPF)-Language-Klassen zum Implementieren Sie eines Sprachdiensts in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ist einfach. Sie benötigen eine VSPackage zum Hosten des Sprachdiensts, der Sprachdienst selbst und einen Parser für Ihre Sprache aus.  

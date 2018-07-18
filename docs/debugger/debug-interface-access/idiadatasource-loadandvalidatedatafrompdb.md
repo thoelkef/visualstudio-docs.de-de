@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460136"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) bereitgestellte Signaturinformationen übereinstimmt, und bereitet die PDB-Datei als Datenquelle Debuggen.  

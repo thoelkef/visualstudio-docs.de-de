@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105264"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Liste aus, um ein Untermenü verwendet eine vor kurzem hinzufügen
 Diese exemplarische Vorgehensweise basiert auf den Demos in [ein Menü ein Untermenü hinzugefügt](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie eine dynamische Liste ein Untermenü hinzugefügt. Die dynamische Liste bildet die Grundlage für die Erstellung einer Liste der zuletzt verwendeten (MRU).  

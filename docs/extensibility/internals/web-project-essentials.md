@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140994"
 ---
 # <a name="web-project-essentials"></a>Web Project Essentials
 Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung zu erstellen, die verfügt der intelligenten Webseiten. Eine intelligente Webseite wurde serverseitigen Code, der die Webseite bedarfsgesteuert gerendert wird.  
@@ -34,7 +35,7 @@ Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um e
   
     -   Ein Webanwendungsprojekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle intelligenten Webseiten als auch alle Dateien im Ordner "App_Code" kombiniert.  
   
--   Die Projektmappendatei für ein Webprojekt ist separat von der Website selbst gespeichert. Standardmäßig befinden sich Projektmappendateien am \Documents and Settings\\*Ihr Konto*\My Dokumente\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
+-   Die Projektmappendatei für ein Webprojekt ist separat von der Website selbst gespeichert. Standardmäßig befinden sich Projektmappendateien am \Documents and Settings\\*Ihr Konto*\My Dokumente\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Wenn Sie die Projektmappendatei mit der Website beibehalten möchten, verschieben Sie sie nur vorhanden, und öffnen Sie es erneut.  

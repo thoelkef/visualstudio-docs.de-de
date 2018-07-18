@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129192"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Erste Schritte mit dem VSIX-Projektvorlage
 Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen oder eine vorhandene Erweiterung für die Bereitstellung zu verpacken. Die VSIX-Projektvorlage weist Visual Basic und Visual C#-Versionen und als Teil der Visual Studio-SDK installiert ist.  
@@ -35,7 +36,7 @@ Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen 
   
     2.  Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**. Führen Sie die Schritte des Assistenten.  
   
-         Eine ZIP-Datei wird erstellt, in %USERPROFILE%\My Dateien\Visual Studio  *\<Version >*\My Exported Templates\\.  
+         Eine ZIP-Datei wird erstellt, in %USERPROFILE%\My Dateien\Visual Studio  *\<Version >* \My Exported Templates\\.  
   
 2.  Erstellen Sie ein leeres VSIX-Projekt.  
   

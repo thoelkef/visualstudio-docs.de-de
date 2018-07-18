@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104094"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Hinzufügen des Benutzersteuerelements an die Startseite
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie einen DLL-Verweis auf eine benutzerdefinierte Startseite hinzufügen. Im Beispiel wird ein Benutzersteuerelement der Lösung auf das Benutzersteuerelement erstellt und anschließend verweist auf die erstellte Assembly aus der Startseite auf XAML-Datei hinzugefügt. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen, wie eine grundlegende Webbrowser.  

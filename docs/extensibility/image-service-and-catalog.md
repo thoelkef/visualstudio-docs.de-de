@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134670"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und Katalog
 Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für Visual Studio-Abbilder und Image-Katalog eingeführt in Visual Studio 2015 eingeführt.  
@@ -165,7 +166,7 @@ Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für 
 |-|-|  
 |**Attribut**|**Definition**|  
 |URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden kann. Es kann einer der folgenden sein:<br /><br /> – Ein [Paket-URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) mithilfe der Anwendung: / / / Autorität<br />-Ein Ressourcenverweis absolute Komponente<br />– Ein Pfad zu einer Datei mit einer systemeigenen Ressource|  
-|Hintergrund|[Optional] Gibt an, was auf die Art der Hintergrund, die die Quelle verwendet werden soll.<br /><br /> Es kann einer der folgenden sein:<br /><br /> *Light:* die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:*die Quelle kann auf einem dunklen Hintergrund verwendet werden.<br /><br /> *Hoher Kontrast:* die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* kann die Quelle eines dunklen Hintergrunds im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut nicht angegeben ist, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, die Quelle Farben sind niemals umgekehrt. Wenn im Hintergrund weggelassen oder auf festgelegt *hoher Kontrast*, der die Umkehrung der Farben der Quelle wird gesteuert, von des Abbild **AllowColorInversion** Attribut.|  
+|Hintergrund|[Optional] Gibt an, was auf die Art der Hintergrund, die die Quelle verwendet werden soll.<br /><br /> Es kann einer der folgenden sein:<br /><br /> *Light:* die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* die Quelle kann auf einem dunklen Hintergrund verwendet werden.<br /><br /> *Hoher Kontrast:* die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* kann die Quelle eines dunklen Hintergrunds im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut nicht angegeben ist, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, die Quelle Farben sind niemals umgekehrt. Wenn im Hintergrund weggelassen oder auf festgelegt *hoher Kontrast*, der die Umkehrung der Farben der Quelle wird gesteuert, von des Abbild **AllowColorInversion** Attribut.|  
 |||  
   
  Ein \<Source >-Element kann nur eines der folgenden optionalen untergeordneten Elemente verfügen:  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132194"
 ---
 # <a name="project-configuration-for-output"></a>Konfiguration für die Ausgabe des Projekts
 Jede Konfiguration kann es sich um einen Satz von Erstellungsvorgängen unterstützen, die Ausgabeelemente z. B. ausführbare Datei oder Ressource Dateien zu erzeugen. Diese Ausgabeelemente, die dem Benutzer privat sind und in Gruppen, die verknüpft sind verwandte Typen in der Ausgabe z. B. ausführbare Dateien (.exe, DLL, .lib) und Quelldateien (IDL, h-Dateien) platziert werden können.  

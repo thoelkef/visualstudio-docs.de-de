@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129257"
 ---
 # <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen Sie die Standard-Editoren
 Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Editor für einen designierten Dateityp einen projektspezifischen-Editor für die Datei angeben, statt zu ermitteln.  

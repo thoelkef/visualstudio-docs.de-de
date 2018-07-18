@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107945"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Erstellen eine grundlegende Projektsystem, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen eine grundlegende Projektsystem, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), zeigt, wie eine grundlegende Projektsystem zu erstellen. In dieser exemplarischen Vorgehensweise baut auf das grundlegende Projektsystem eine Visual Studio-Vorlage, einer Eigenschaftenseite und andere Funktionen. Bevor Sie dieses Objekt starten, müssen Sie die erste exemplarischen Vorgehensweise ausführen.  

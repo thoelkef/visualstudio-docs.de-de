@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927467"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen Sie die Daten in datasets
 Validieren von Daten ist der Prozess der bestätigt, den die Werte, die in Datenobjekte eingegeben werden, die diese Einschränkungen in einer Dataset-Schemas entsprechen. Dieser Vorgang wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es wird empfohlen, überprüfen Sie die Daten vor dem Senden von Updates der zugrunde liegenden Datenbank. Dies reduziert die Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.

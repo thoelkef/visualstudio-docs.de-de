@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923838"
 ---
 # <a name="customize-the-help-viewer"></a>Anpassen von Help Viewer
 Sie können das Layout des Help Viewer-Fensters sowie weitere Optionen wie den Schriftgrad, die Höchstzahl an Ergebnissen und das Einbeziehen von englischen Inhalt anpassen.

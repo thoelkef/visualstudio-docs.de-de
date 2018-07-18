@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129695"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen zur Schriftart und Farbe für die farbliche Kennzeichnung von Text
 Der Prozess, der gerendert wird, oder zeigt Farbdruckoption Text in die Elemente der Benutzeroberfläche (UI) hängt vom Typ von Projekt, dessen Technologie und Developer-Einstellungen. Die **Schriftarten und Farben** Eigenschaftenseite speichert die Einstellungen.

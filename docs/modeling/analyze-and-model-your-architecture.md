@@ -37,6 +37,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106959"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analysieren und Modellieren der Architektur
 Stellen Sie sicher, dass Ihre app architektonische Anforderungen erfüllt, mithilfe von Visual Studio-Architektur und-Modellierungstools zum Entwerfen und modellieren Ihrer app.

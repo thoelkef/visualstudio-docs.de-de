@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750362"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutorial, Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 
 **Vorheriger Schritt: [Serve static files, add pages, and use template inheritance (Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung)](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Nachdem Sie sich mit den grundlegenden Funktionen von Django vertraut gemacht und eine App auf Grundlage der Vorlage „Leeres Django-App-Projekt“ in Visual Studio erstellt haben, erhalten Sie nun weitere Informationen zu umfangreicheren Funktionen der App über die Vorlage „Django-Webprojekt“.
+Nachdem Sie sich mit den grundlegenden Funktionen von Django vertraut gemacht und eine App auf Grundlage der Vorlage „Leeres Django-Webprojekt“ in Visual Studio erstellt haben, erhalten Sie nun weitere Informationen zu umfangreicheren Funktionen der App über die Vorlage „Django-Webprojekt“.
 
 In diesem Schritt werden Sie Informationen zu folgenden Inhalten erhalten:
 
@@ -40,7 +41,7 @@ Durch die Vorlage wird auch eine Standardauthentifizierung bereitgestellt, die i
 
 1. Da die Vorlage erneut eine `requirements.txt`-Datei enthält, werden Sie von Visual Studio gefragt, wohin die Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen.
 
-1. Sobald das Einrichten der virtuellen Umgebung durch Python beendet wurde, befolgen Sie die Anweisungen im angezeigten `readme.html`, um einen Django-Administrator zu erstellen. Klicken Sie dazu mit der rechten Maustaste auf das Visual Studio-Projekt, wählen Sie den Befehl **Python** > **Django-Administrator erstellen** aus, und befolgen Sie die Anweisungen. Stellen Sie sicher, dass Sie Ihren Benutzernamen und das Kennwort für die Nutzung der Authentifizierungsfeatures der App sicher aufbewahren.
+1. Sobald das Einrichten der virtuellen Umgebung durch Visual Studio beendet wurde, befolgen Sie die Anweisungen im angezeigten `readme.html`, um einen Django-Administrator zu erstellen. Klicken Sie dazu mit der rechten Maustaste auf das Visual Studio-Projekt, wählen Sie den Befehl **Python** > **Django-Administrator erstellen** aus, und befolgen Sie die Anweisungen. Stellen Sie sicher, dass Sie Ihren Benutzernamen und das Kennwort für die Nutzung der Authentifizierungsfeatures der App sicher aufbewahren.
 
 1. Legen Sie das Projekt „DjangoWeb“ als Standardprojekt für die Visual Studio-Projektmappe fest. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
 

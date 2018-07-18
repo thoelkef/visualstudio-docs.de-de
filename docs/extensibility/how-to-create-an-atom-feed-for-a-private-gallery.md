@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127476"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: erstellen ein Atom-Feed für einen privaten Katalog
 Sie erstellen eine Atom (RSS-Feeds) in einem Intranetspeicherort, die Erweiterungen enthält, und fügen den Feed auf **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Galleries](../extensibility/private-galleries.md).  

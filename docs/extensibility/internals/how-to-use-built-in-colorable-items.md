@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129682"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Vorgehensweise: Verwenden von integrierten Färbbare Elemente
 Vor der Verwendung der integrierten färbbare Elemente Sie müssen zuerst darauf hinweisen, der integrierten Entwicklungsumgebung (IDE), dass Sie keine eigene benutzerdefinierte färbbare Elemente bereitstellen, der in diesem Fall wäre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Objekte. Dazu müssen Sie einen Registrierungseintrag für den Sprachdienst festlegen.  

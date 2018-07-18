@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458244"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Dialogfeld "Haltepunkte wählen"
 Die **Haltepunkte wählen** Dialogfeld wird geöffnet, wenn Sie versuchen, einen Haltepunkt von mehrdeutigen Eingaben im Festlegen der **Neuer Haltepunkt** (Dialogfeld). Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.  

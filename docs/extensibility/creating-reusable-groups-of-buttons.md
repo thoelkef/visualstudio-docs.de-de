@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102979"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Erstellen von Wiederverwendbaren Gruppen von Schaltflächen
 Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem Menü oder die Symbolleiste angezeigt werden. Alle Befehlsgruppe kann erneut verwendet werden, indem anderen übergeordneten Menüs im Abschnitt CommandPlacements der VSCT-Datei zuweisen.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131577"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell von einem Legacy-Sprachdienst
 Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und verwendet, um den Editor durch spezifische Informationen zum jeweiligen Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und die Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.  

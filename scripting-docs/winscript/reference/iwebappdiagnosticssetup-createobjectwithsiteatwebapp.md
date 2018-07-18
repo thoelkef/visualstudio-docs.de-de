@@ -1,16 +1,16 @@
 ---
 title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 ms.assetid: 30975973-acb1-48f4-8266-5e097a57db22
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733940"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 Diese Methode erstellt zusammen die Klasse, deren ID, die Sie sich mit übergeben `rclsid` mithilfe der `dwClsContext`. Dies ist ähnlich wie bei [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) funktioniert, außer dass im Fall von `CreateObjectWithSiteAtWebApp` das Objekt asynchron an die Webanwendung-UI-Thread erstellt wird. Das durch die Klassen-ID angegebene Objekt implementieren sollten [IWebAppDiagnosticsObjectInitialization-Schnittstelle](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Nachdem das Objekt erstellt wurde, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) mit einem Verweis auf die PDM-Debug-Anwendung aufgerufen wird und die `hPassToObject` Parameter `CreateObjectWithSiteAtWebApp`. Verwenden Sie diese Methode in der app ein Handle auf eine anonyme Pipe übergeben, die Sie kopiert haben, mit [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  

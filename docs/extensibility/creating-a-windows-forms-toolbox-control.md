@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107750"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Erstellen ein Windows Forms-Toolbox-Steuerelement
 Die Elementvorlage für Windows Forms-Toolbox-Steuerelement, das in Visual Studio-Erweiterbarkeitstools (VS SDK) enthalten ist ermöglicht die Erstellung ein Steuerelements, das automatisch hinzugefügt wird, die **Toolbox** bei Installation der Erweiterung. In diesem Thema zeigt, wie Sie die Vorlage verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie an andere Benutzer verteilen können.  

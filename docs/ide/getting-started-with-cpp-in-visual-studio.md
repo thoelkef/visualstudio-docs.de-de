@@ -1,7 +1,9 @@
 ---
-title: Erste Schritte mit C++ in Visual Studio | Microsoft-Dokumentation
+title: Erste Schritte mit C++ in Visual Studio
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
@@ -11,11 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747351"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -31,7 +34,7 @@ Um diesen Schritten folgen zu können, benötigen Sie Visual Studio 2017 Version
 
 Starten Sie Visual Studio, falls es noch nicht ausgeführt wird.
 
-![IDE mit angewendeten Visual C++-Einstellungen](../ide/media/get-started-cpp-ide-layout.png "IDE with Visual C++ settings applied")
+![IDE mit angewendeten Visual C&#43;&#43;-Einstellungen](../ide/media/get-started-cpp-ide-layout.png)
 
 Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile der IDE sehen: Toolsfenster, Menüs und Symbolleisten und den Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Feld **Schnellstart**, die Menüleiste und die Standardsymbolleiste finden Sie oben. In der Mitte des Fensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt öffnen, werden Editoren und Designer in diesem Bereich angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
@@ -41,11 +44,11 @@ Visual Studio verwendet *Projekte*, um Code für eine App zu ordnen, und *Projek
 
 1. Wählen Sie auf der Menüleiste die Optionen **Datei > Neu > Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen.
 
-   ![Wählen Sie auf der Menüleiste die Optionen Datei > Neu > Projekt aus](../ide/media/get-started-cpp-file-new-project-menu.png "On the menu bar, choose File > New > Project")
+   ![Klicken Sie in der Menüleiste auf „Datei > Neu > Projekt“.](../ide/media/get-started-cpp-file-new-project-menu.png)
 
 1. Wählen Sie im Dialogfeld **Neues Projekt** **Installiert > Visual C++** aus, sofern es noch nicht ausgewählt ist. Wählen Sie im mittleren Bereich die Vorlage **Windows-Konsolenanwendung** aus. Geben Sie *HelloApp* im Bearbeitungsfeld **Name** ein.
 
-   ![Erstellen Ihres Anwendungsprojekts mit dem Dialogfeld „Neues Projekt“](../ide/media/get-started-cpp-new-project-dialog.png "Use the New Project dialog to create your app project")
+   ![Verwenden Sie das Dialogfeld „Neues Projekt“, um Ihr App-Projekt zu erstellen.](../ide/media/get-started-cpp-new-project-dialog.png)
 
    Abhängig von Ihren installierten Visual Studio-Workloads und Komponenten kann Ihr Dialogfeld andere Auswahlmöglichkeiten enthalten. Falls Ihnen keine Visual C++-Projektvorlagen angezeigt werden, müssen Sie den Visual Studio-Installer erneut ausführen, und die Workload **Desktopentwicklung mit C++** installieren. Sie können dies direkt im Dialogfeld **Neues Projekt** durchführen. Klicken Sie im Dialogfeld auf den Link **Visual Studio-Installer öffnen**, um den Installer zu starten.
 
@@ -53,7 +56,7 @@ Visual Studio verwendet *Projekte*, um Code für eine App zu ordnen, und *Projek
 
    Das Projekt und die Projektmappe „HelloApp“, mit den grundlegenden Dateien für eine Windows-Konsolenanwendung, werden erstellt und automatisch in den **Projektmappen-Explorer** geladen. Die Datei *HelloApp.cpp* wird im Code-Editor geöffnet. Diese Elemente werden im **Projektmappen-Explorer** angezeigt:
 
-   ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/get-started-cpp-solution-explorer.png "Files for the solution in Solution Explorer")
+   ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/get-started-cpp-solution-explorer.png)
 
 ## <a name="add-code-to-the-app"></a>Hinzufügen von Code zu einer App
 
@@ -69,11 +72,11 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
 
    Eine rote Wellenlinie wird unter `cout`angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, erscheint eine Fehlermeldung.
 
-   ![Fehlertext für cout](../ide/media/get-started-cpp-intellisense-error.png "Error text for cout")
+   ![Fehlertext für "cout"](../ide/media/get-started-cpp-intellisense-error.png)
 
    Die Fehlermeldung wird auch im Fenster **Fehlerliste** angezeigt. Sie können dieses Fenster anzeigen, indem Sie in der Menüleiste auf **Ansicht > Fehlerliste** klicken.
 
-   ![Fehler im Fenster „Fehlerliste“](../ide/media/get-started-cpp-error-list.png "Error in Error List window")
+   ![Fehler im Fenster „Fehlerliste“](../ide/media/get-started-cpp-error-list.png)
 
    In Ihrem Code fehlt eine Deklaration für [std::cout](/cpp/standard-library/iostream), die Sie in der Headerdatei *\<iostream>* finden können.
 
@@ -86,7 +89,7 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
 
    Sie werden vermutlich bereits festgestellt haben, dass ein Feld erschienen ist, während Sie den Code eingegeben haben. Dieses Feld enthält Vorschläge für die automatische Vervollständigung der Zeichen, die Sie eingeben. Es ist Teil von C++ IntelliSense, das Codeeingabeaufforderungen bietet, darunter Klassen- oder Schnittstellenmember sowie Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md) und [Codeausschnitte](../ide/code-snippets.md).
 
-   ![Der korrigierte Code im Editor](../ide/media/get-started-cpp-cout-fix.png "The fixed code in the editor")
+   ![Der geänderte Code im Editor](../ide/media/get-started-cpp-cout-fix.png)
 
    Die rote Wellenlinie unter `cout` wird ausgeblendet, wenn Sie den Fehler korrigieren.
 
@@ -96,7 +99,7 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
 
 Es ist einfach, Ihren Code zu erstellen. Klicken Sie in der Menüleiste auf **Erstellen > Projektmappe erstellen**. Visual Studio erstellt die Projektmappe „HelloApp“, und informiert über den Fortschritt im **Ausgabefenster**.
 
-   ![Erstellen der HelloApp-Projektmappe](../ide/media/get-started-cpp-build-solution.gif "Build the HelloApp solution")
+   ![Erstellen der HelloApp-Projektmappe](../ide/media/get-started-cpp-build-solution.gif)
 
 ## <a name="debug-and-test-the-app"></a>Debuggen und Testen der App
 
@@ -106,7 +109,7 @@ Sie können „HelloApp“ debuggen, um festzustellen, ob das Wort „Hallo“ i
 
 Wählen Sie auf der Menüleiste **Debuggen > Debuggen starten** aus, um den Debugger zu starten.
 
-![Befehl „Debuggen starten“ im Debuggermenü](../ide/media/get-started-cpp-start-debugging-menu.png "Start Debugging command on the Debug Menu")
+![Befehl "Debugging starten" im Menü "Debuggen"](../ide/media/get-started-cpp-start-debugging-menu.png)
 
 Die Debugger wird gestartet und führt den Code aus. Das Konsolenfenster (ein separates Fenster, das wie eine Eingabeaufforderung aussieht) wird ein paar Sekunden lang angezeigt, wird jedoch schnell geschlossen, wenn der Debugger anhält. Um den Text anzuzeigen, müssen Sie einen Haltepunkt festlegen, um die Ausführung des Programms zu beenden.
 
@@ -114,17 +117,17 @@ Die Debugger wird gestartet und führt den Code aus. Das Konsolenfenster (ein se
 
 1. Bewegen Sie den Mauszeiger im Editor auf die Zeile `return 0;`. Wählen Sie auf der Menüleiste **Debuggen > Haltepunkt umschalten** aus. Sie können auch auf den linken Rand klicken, um einen Haltepunkt zu setzen.
 
-     ![Befehl „Haltepunkt umschalten“ im Debuggermenü](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "Toggle Breakpoint command on the Debug menu")
+     ![Befehl "Haltepunkt umschalten" im Menü "Debuggen"](../ide/media/get-started-cpp-toggle-breakpoint-menu.png)
 
      Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.
 
-     ![Am Fensterrand gekennzeichneter Haltepunkt](../ide/media/get-started-cpp-breakpoint-set.png "Breakpoint indicated in window margin")
+     ![Am Rand des Fensters angegebener Breakpoint](../ide/media/get-started-cpp-breakpoint-set.png)
 
 1. Drücken Sie **F5**, um mit dem Debuggen zu beginnen.
 
    Der Debugger wird gestartet, und ein Konsolenfenster mit dem Wort **Hello**wird angezeigt.
 
-   ![Text „Hallo“ im Konsolenfenster](../ide/media/get-started-cpp-helloapp-window.png "Hello text in the console window")
+   ![Text „Hello“ im Konsolenfenster](../ide/media/get-started-cpp-helloapp-window.png)
 
 1. Drücken Sie **UMSCHALT+F5**, um das Debuggen zu beenden.
 
@@ -138,11 +141,11 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 1. Klicken Sie in der Menüleiste auf **Erstellen > Projektmappe bereinigen**, um Zwischendateien und Ausgabedateien zu löschen, die bei vorherigen Builds erstellt wurden.
 
-   ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE-CleanSolution")
+   ![Befehl "Projektmappe bereinigen" im Menü "Erstellen"](../ide/media/get-started-cpp-clean-solution-menu.png)
 
 1. Um die Projektmappenkonfiguration für „HelloApp“ von **Debuggen** auf **Release** zu ändern, klicken Sie auf das Dropdown-Feld in der Projektmappenkonfiguration, und wählen Sie dann **Release** aus.
 
-   ![Erstellen einer Releaseversion der Anwendung](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
+   ![Version der Anwendung erstellen](../ide/media/get-started-cpp-set-release-configuration.png)
 
 1. Erstellen Sie die Projektmappe. Klicken Sie in der Menüleiste auf **Erstellen > Projektmappe erstellen**.
 
@@ -152,8 +155,6 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Weitere Beispiele zu
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden der Visual Studio-IDE für C++-Desktopentwicklung](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Visual Studio-Beispiele](../ide/visual-studio-samples.md)  
-[Erste Schritte bei der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Verwenden der Visual Studio-IDE für C++-Desktopentwicklung](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md)

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105865"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Ein Debugging-Modul (DE), die angegebene Programm ungewöhnlich beendet wurde und die DE sollten bereinigen Sie alle Verweise auf das Programm, informiert, und Senden eines Programms zerstört Ereignis.  

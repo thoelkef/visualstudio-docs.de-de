@@ -9,17 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751649"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Presentation Foundation (WPF)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der programmierten UI für eine WPF-App (Windows Presentation Foundation) erstellen, bearbeiten und verwalten. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und dem Refactoring von Steuerelementen nicht mehr funktionieren.
 
-## <a name="create-a-simple-wpf-application"></a>Erstellen einer einfachen WPF-Anwendung
+## <a name="create-a-wpf-app"></a>Erstellen einer WPF-App
 
 1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
@@ -49,7 +50,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 12. Wählen Sie das Checkbox-Steuerelement aus. Ändern Sie im Eigenschaftenfenster den Wert für die Eigenschaft **Name** von \<Ohne Namen> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
 
-     ![Einfache WPF-Anwendung](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![Einfache WPF-Anwendung](../test/media/codedui_wpfapp.png)
 
 13. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um einen Click-Ereignishandler hinzuzufügen.
 
@@ -96,7 +97,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 16. Speichern Sie die Datei.
 
-### <a name="verify-the-wpf-application-runs-correctly"></a>Überprüfen der ordnungsgemäßen Ausführung der WPF-Anwendung
+### <a name="run-the-wpf-app"></a>Ausführen der WPF-App
 
 1.  Wählen Sie im Menü **Debuggen** die Option **Debuggen starten** aus, oder drücken Sie **F5**.
 
@@ -108,83 +109,88 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 4.  Schließen Sie "SimpleWPFApp".
 
-### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Erstellen und Ausführen eines Tests der codierten UI für "SimpleWPFApp"
+## <a name="create-a-shortcut-to-the-wpf-app"></a>Erstellen einer Verknüpfung zur WPF-App
 
-1.  Suchen Sie die zuvor erstellte Anwendung "SimpleWPFApp". Standardmäßig befindet sich die Anwendung unter folgendem Pfad: C:\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1.  Suchen Sie die zuvor erstellte Anwendung "SimpleWPFApp".
 
-2.  Erstellen Sie eine Desktopverknüpfung zur SimpleWPFApp-Anwendung. Klicken Sie mit der rechten Maustaste auf „SimpleWPFApp.exe“, und wählen Sie **Kopieren** aus. Klicken Sie auf dem Desktop mit der rechten Maustaste, und wählen Sie die Option **Verknüpfung einfügen** aus.
+2.  Erstellen Sie eine Desktopverknüpfung zur SimpleWPFApp-Anwendung. Klicken Sie mit der rechten Maustaste auf *SimpleWPFApp.exe*, und wählen Sie **Kopieren** aus. Klicken Sie auf dem Desktop mit der rechten Maustaste, und wählen Sie die Option **Verknüpfung einfügen** aus.
 
     > [!TIP]
     > Über eine Verknüpfung zur Anwendung können Tests der programmierten UI für die Anwendung leichter hinzugefügt und geändert werden, da die Anwendung schnell gestartet werden kann.
 
-3.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Erstellen und Ausführen eines Tests der programmierten UI für „SimpleWPFApp“
+
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
-4.  Erweitern Sie im Bereich **Installiert** den Eintrag **Visual C#**, und wählen Sie **Test** aus.
+1. Erweitern Sie im Bereich **Installiert** den Eintrag **Visual C#**, und wählen Sie **Test** aus.
 
-5.  Wählen Sie im mittleren Bereich die Vorlage **Testprojekt der programmierten UI** aus.
+1. Wählen Sie im mittleren Bereich die Vorlage **Testprojekt der programmierten UI** aus.
 
-6.  Klicken Sie auf **OK**.
+   > [!NOTE]
+   > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
-     In Projektmappen-Explorer wird das neue Testprojekt der programmierten UI mit der Bezeichnung **CodedUITestProject1** der Lösung hinzugefügt.
+1. Klicken Sie auf **OK**.
+
+     Das neue Testprojekt der programmierten UI namens **CodedUITestProject1** wird zur Projektmappe hinzugefügt.
 
      Das Dialogfeld **Code für den Test der programmierten UI generieren** wird angezeigt.
 
-7.  Wählen Sie die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus, und klicken Sie auf **OK**.
+1. Wählen Sie die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus, und klicken Sie auf **OK**.
 
-     Der UIMap – Test-Generator der programmierten UI wird angezeigt, und das Visual Studio-Fenster wird minimiert.
+     Das Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) wird angezeigt, und das Visual Studio-Fenster wird minimiert.
 
      Weitere Informationen zu den Optionen im Dialogfeld finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).
 
-8.  Klicken Sie auf dem UIMap – Test-Generator der programmierten UI auf **Aufzeichnung starten**.
+1. Klicken Sie im Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) auf **Aufzeichnung starten**.
 
-     ![Starten der Aufzeichnung](../test/media/cuit_builder_record.png "CUIT_Builder_Record")
+     ![Starten der Aufzeichnung](../test/media/cuit_builder_record.png)
 
      Sie können die Aufzeichnung bei Bedarf anhalten, etwa wenn Sie eine eingehende E-Mail lesen möchten.
 
-     ![Aufzeichnung anhalten](../test/media/cuit_.png "CUIT_")
+     ![Aufzeichnung anhalten](../test/media/cuit_.png)
 
     > [!WARNING]
     > Alle auf dem Desktop ausgeführten Aktionen werden aufgezeichnet. Halten Sie die Aufzeichnung an, wenn Sie Aktionen ausführen, bei denen sensible Daten in die Aufzeichnung gelangen könnten.
 
-9. Starten Sie SimpleWPFApp mithilfe der Desktopverknüpfung.
+1. Starten Sie SimpleWPFApp mithilfe der Desktopverknüpfung.
 
      Beachten Sie wie bereits zuvor, dass das Steuerelement Kontrollkästchen deaktiviert ist.
 
-10. Klicken Sie in SimpleWPFApp auf **Start**.
+1. Klicken Sie in SimpleWPFApp auf **Start**.
 
      Die Statusanzeige sollte innerhalb einiger Sekunden vollständig abgeschlossen sein.
 
-11. Aktivieren Sie das Kontrollkästchen-Steuerelement, das jetzt aktiviert ist.
+1. Aktivieren Sie das Kontrollkästchen-Steuerelement, das jetzt aktiviert ist.
 
-12. Schließen Sie die SimpleWPFApp-Anwendung.
+1. Schließen Sie die SimpleWPFApp-Anwendung.
 
-13. Klicken Sie auf dem „UIMap – Test-Generator der programmierten UI“ auf **Code generieren**.
+1. Klicken Sie im Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) auf **Code generieren**.
 
-14. Geben Sie im Feld "Methodenname" den Namen **SimpleAppTest** ein, und klicken Sie auf **Hinzufügen und generieren**. Der Test der programmierten UI wird nach wenigen Sekunden angezeigt und der Projektmappe hinzugefügt.
+1. Geben Sie im Feld **Methodenname** den Namen **SimpleAppTest** ein, und klicken Sie auf **Hinzufügen und generieren**. Der Test der programmierten UI wird nach wenigen Sekunden angezeigt und der Projektmappe hinzugefügt.
 
-15. Schließen Sie den UIMap – Test-Generator der programmierten UI.
+1. Schließen Sie das Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI).
 
-     Die Datei "CodedUITest1.cs" wird im Code-Editor geöffnet.
+     Die Datei *CodedUITest1.cs* wird im Code-Editor geöffnet.
 
-16. Speichern Sie das Projekt.
+1. Speichern Sie das Projekt.
 
-### <a name="run-the-coded-ui-test"></a>Ausführen des Tests der programmierten UI
+### <a name="run-the-test"></a>Ausführen des Tests
 
-1.  Wählen Sie im Menü **Test** **Windows** aus, und klicken Sie dann auf **Test-Explorer**.
+1. Wählen Sie im Menü **Test** **Windows** aus, und klicken Sie dann auf **Test-Explorer**.
 
-2.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
+2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
 
-3.  Finden Sie in der Datei „CodedUITest1.cs“ die Methode **CodedUITestMethod**, klicken Sie mit der rechten Maustaste, und wählen Sie **Test ausführen**aus, oder führen Sie den Test mit Test-Explorer aus.
+3. Finden Sie in der Datei *CodedUITest1.cs* die Methode **CodedUITestMethod**, klicken Sie mit der rechten Maustaste, und wählen Sie **Test ausführen** aus, oder führen Sie den Test mit dem **Test-Explorer** aus.
 
-     Während der Test der programmierten UI ausgeführt wird, wird „SimpleWPFApp“ angezeigt. Die Schritte, die Sie in der vorherigen Prozedur ausgeführt haben, werden ausgeführt. Beim Versuch, das Kontrollkästchen für das Kontrollkästchen-Steuerelement zu aktivieren, wird jedoch im Fenster "Testergebnisse" angezeigt, dass der Test fehlgeschlagen ist. Dies liegt daran, dass beim Test versucht wird, das Kontrollkästchen zu aktivieren, obwohl das Kontrollkästchen-Steuerelement deaktiviert ist, bis die Statusanzeige 100 Prozent abgeschlossen ist. Sie können dieses und ähnliche Probleme mit den `UITestControl.WaitForControlXXX()`-Methoden korrigieren, die für Tests der codierten UI verfügbar sind. Bei der nächsten Prozedur wird veranschaulicht, wie Sie das Problem, das bei diesem Test zu einem Fehler geführt hat, mit der `WaitForControlEnabled()`-Methode korrigieren können. Weitere Informationen finden Sie unter [Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Während der Test der programmierten UI ausgeführt wird, wird „SimpleWPFApp“ angezeigt. Die Schritte, die Sie in der vorherigen Prozedur ausgeführt haben, werden ausgeführt. Beim Versuch, das Kontrollkästchen für das Kontrollkästchen-Steuerelement zu aktivieren, wird jedoch im Fenster **Testergebnisse** angezeigt, dass der Test fehlgeschlagen ist. Dies liegt daran, dass beim Test versucht wird, das Kontrollkästchen zu aktivieren, obwohl das Kontrollkästchen-Steuerelement deaktiviert ist, bis die Statusanzeige 100 Prozent abgeschlossen ist. Sie können dieses und ähnliche Probleme mit den `UITestControl.WaitForControlXXX()`-Methoden korrigieren, die für Tests der codierten UI verfügbar sind. Bei der nächsten Prozedur wird veranschaulicht, wie Sie das Problem, das bei diesem Test zu einem Fehler geführt hat, mit der `WaitForControlEnabled()`-Methode korrigieren können. Weitere Informationen finden Sie unter [Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-### <a name="edit-and-rerun-the-coded-ui-test"></a>Bearbeiten und erneutes Ausführen des Tests der programmierten UI
+## <a name="edit-and-rerun-the-coded-ui-test"></a>Bearbeiten und erneutes Ausführen des Tests der programmierten UI
 
-1.  Wählen Sie im Test-Explorer den fehlgeschlagenen Test aus und im Abschnitt **StackTrace** den ersten Link zu **UIMap.SimpleAppTest()**.
+1.  Wählen Sie im **Test-Explorer** den fehlgeschlagenen Test aus, und klicken Sie im Abschnitt **StackTrace** auf den ersten Link zu **UIMap.SimpleAppTest()**.
 
-2.  Die Datei "UIMap.Designer.cs" wird geöffnet. Die fehlerhafte Stelle wird im Code hervorgehoben:
+2.  Die Datei *UIMap.Designer.cs* wird geöffnet. Die fehlerhafte Stelle wird im Code hervorgehoben:
 
     ```csharp
     // Select 'CheckBox' check box
@@ -194,25 +200,25 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 3.  Um dieses Problem zu korrigieren, können Sie mithilfe der `WaitForControlEnabled()`-Methode festlegen, dass beim Test der codierten UI gewartet werden soll, bis das CheckBox-Steuerelement aktiviert ist, bevor mit dieser Zeile fortgefahren wird.
 
     > [!WARNING]
-    > Ändern Sie die Datei "UIMap.Designer.cs" nicht. Alle Codeänderungen, die Sie an der Datei "UIMapDesigner.cs" vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für codierte UI generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
+    > Ändern Sie die Datei *UIMap.Designer.cs* nicht. Alle vorgenommenen Codeänderungen werden jedes Mal überschrieben, wenn Sie Code mithilfe des Dialogfelds **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, kopieren Sie sie in die Datei *UIMap.cs*, und benennen Sie sie um. Die Datei *UIMap.cs* kann verwendet werden, um Methoden und Eigenschaften in der Datei *UIMapDesigner.cs* zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei *CodedUITest.cs* entfernen und ihn durch den umbenannten Methodennamen ersetzen.
 
-4.  Klicken Sie im Projektmappen-Explorer im Testprojekt der programmierten UI auf **UIMap.uitest**.
+4.  Klicken Sie im **Projektmappen-Explorer** im Testprojekt der programmierten UI auf *UIMap.uitest*.
 
-5.  Öffnen Sie das Kontextmenü **UIMap.uitest**, und wählen Sie **Öffnen** aus.
+5.  Öffnen Sie das Kontextmenü *UIMap.uitest*, und wählen Sie **Öffnen** aus.
 
      Der Test der codierten UI wird im Editor für den Test der codierten UI angezeigt. Sie können nun den Test der programmierten UI anzeigen und bearbeiten.
 
-6.  Wählen Sie im Bereich **UI-Aktion** die Testmethode (SimpleAppTest) aus, die Sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird.
+6.  Wählen Sie im Bereich **UI-Aktion** die Testmethode (SimpleAppTest) aus, die Sie in die Datei *UIMap.cs* oder *UIMap.vb* verschieben möchten. Das Verschieben der Methode in eine andere Datei ermöglicht, dass benutzerdefinierter Code hinzufügt wird, der beim erneuten Kompilieren des Testcodes nicht überschrieben wird.
 
-7.  Klicken Sie auf der Symbolleiste des Editors für den Test der programmierten UI auf die Schaltfläche **Code verschieben**.
+7.  Klicken Sie auf der Symbolleiste des **Editors für den Test der programmierten UI** auf die Schaltfläche **Code verschieben**.
 
-8.  Ein Microsoft Visual Studio-Dialogfeld wird angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der UIMap.uitest-Datei in die Datei „UIMap.cs“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.
+8.  Ein Microsoft Visual Studio-Dialogfeld wird angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei *UIMap.uitest* in die Datei *UIMap.cs* verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.
 
-     Die Testmethode wird aus der UIMap.uitest-Datei entfernt und nicht mehr im Bereich der UI-Aktionen angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei "UIMap.cs" mit Projektmappen-Explorer.
+     Die Testmethode wird aus der Datei *UIMap.uitest* entfernt und nicht mehr im Bereich der UI-Aktionen angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei *UIMap.cs* über den **Projektmappen-Explorer**.
 
-9. Klicken Sie auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Symbolleiste auf **Speichern**.
+9. Klicken Sie auf der Visual Studio-Symbolleiste auf **Speichern**.
 
-     Die Aktualisierungen der Testmethode werden in der UIMap.Designer-Datei gespeichert.
+     Die Updates der Testmethode werden in der Datei *UIMap.Designer* gespeichert.
 
     > [!WARNING]
     > Nach dem Verschieben der Methode kann sie mit dem Editor für Tests der codierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten.
@@ -234,7 +240,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. Suchen Sie in der Datei „CodedUITest1.cs“ die **CodedUITestMethod**-Methode, und kommentieren Sie den Verweis auf die ursprüngliche SimpleAppTest()-Methode aus, oder benennen Sie ihn um. Ersetzen Sie ihn dann durch die neue ModifiedSimpleAppTest()-Methode:
+13. Suchen Sie in der Datei *CodedUITest1.cs* die Methode **CodedUITestMethod**, und kommentieren Sie den Verweis auf die ursprüngliche Methode „SimpleAppTest()“ aus, oder benennen Sie ihn um. Ersetzen Sie ihn dann durch die neue Methode „ModifiedSimpleAppTest()“:
 
     ```csharp
     [TestMethod]
@@ -251,23 +257,23 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 15. Klicken Sie mit der rechten Maustaste auf die **CodedUITestMethod**-Methode, und wählen Sie **Tests ausführen** aus.
 
-16. Dieses Mal führt der Test der programmierten UI alle Schritte des Tests erfolgreich durch, und im Fenster „Test-Explorer“ wird **Erfolgreich** angezeigt.
+16. Dieses Mal führt der Test der programmierten UI alle Schritte des Tests erfolgreich durch, und im Fenster **Test-Explorer** wird **Erfolgreich** angezeigt.
 
-### <a name="refactor-a-control-in-the-simplewpfapp"></a>Umgestalten eines Steuerelements in "SimpleWPFApp"
+## <a name="refactor-a-control-in-simplewpfapp"></a>Umgestalten eines Steuerelements in „SimpleWPFApp“
 
-1.  Wählen Sie in der Datei "MainWindow.xaml" im Designer das Schaltflächen-Steuerelement aus.
+1.  Klicken Sie in der Datei *MainWindow.xaml* im Designer auf das Schaltflächen-Steuerelement.
 
-2.  Ändern Sie oben im Fenster „Eigenschaften“ den Wert der Eigenschaft **Name** von „Button1“ auf „ButtonA“.
+2.  Ändern Sie oben im Fenster **Eigenschaften** den Wert der Eigenschaft **Name** von **button1** in **buttonA**.
 
 3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
 
-4.  Führen Sie **CodedUITestMethod1** in Test-Explorer aus.
+4.  Führen Sie **CodedUITestMethod1** in **Test-Explorer** aus.
 
      Der Test schlägt fehl, da der Test der programmierten UI das Schaltflächen-Steuerelement, das ursprünglich im UIMap als „button1“ zugeordnet wurde, nicht finden kann. Auf diese Weise kann sich die Umgestaltung auf Tests der programmierten UI auswirken.
 
-5.  Wählen Sie im Fenster „Test-Explorer“ im Abschnitt **StackTrace** den ersten Link zu **UIMpa.ModifiedSimpleAppTest()** aus.
+5.  Klicken Sie im **Test-Explorer** im Abschnitt **StackTrace** auf den ersten Link zu **UIMpa.ModifiedSimpleAppTest()**.
 
-     Die Datei "UIMap.cs" wird geöffnet. Die fehlerhafte Stelle wird im Code hervorgehoben:
+     Die Datei *UIMap.cs* wird geöffnet. Die fehlerhafte Stelle wird im Code hervorgehoben:
 
     ```csharp
     // Click 'Start' button
@@ -276,19 +282,19 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
      Beachten Sie, dass in der Codezeile dieser Prozedur zuvor `UiStartButton` verwendet wurde. Dies war der UIMap-Name vor der Umgestaltung.
 
-     Zur Behebung des Problems können Sie dem UIMap das umgestaltete Steuerelement mit dem Test-Generator für codierte UI hinzufügen. Sie können den Code des Tests wie in der nächsten Prozedur veranschaulicht aktualisieren.
+     Zur Behebung des Problems können Sie dem UIMap das umgestaltete Steuerelement mit dem **Generator für Tests der programmierten UI** hinzufügen. Sie können den Code des Tests wie in der nächsten Prozedur veranschaulicht aktualisieren.
 
-### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Zuordnen des umgestalteten Steuerelements und Bearbeiten und erneutes Ausführen des Tests der programmierten UI
+## <a name="map-refactored-control-rerun-the-test"></a>Zuordnen des umgestalteten Steuerelements und erneutes Ausführen des Tests
 
-1.  Klicken Sie in der Datei „CodedUITest1.cs“ in der **CodedUITestMethod1()**-Methode mit der rechten Maustaste, wählen Sie **Code für den Test der programmierten UI generieren** aus, und klicken Sie dann auf **Test-Generator für programmierte UI verwenden**.
+1.  Klicken Sie in der Datei *CodedUITest1.cs* in der Methode **CodedUITestMethod1()** mit der rechten Maustaste, wählen Sie **Code für den Test der programmierten UI generieren** aus, und klicken Sie dann auf **Use Coded UI Test Builder** (Generator für Tests der programmierten UI verwenden).
 
-     Der UIMap – Test-Generator der programmierten UI wird angezeigt.
+     Das Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) wird angezeigt.
 
 2.  Führen Sie mithilfe der zuvor erstellten Desktopverknüpfung die Anwendung "SimpleWPFApp" aus, die Sie ebenfalls zuvor erstellt haben.
 
-3.  Ziehen Sie auf dem UIMap – Test-Generator der programmierten UI das Fadenkreuztool auf die Schaltfläche **Start** in „SimpleWPFApp“.
+3.  Ziehen Sie im Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) das Fadenkreuztool auf die Schaltfläche **Start** von „SimpleWPFApp“.
 
-     Die Schaltfläche **Start** ist mit einem blauen Rahmen versehen, und der Test-Generator der programmierten UI braucht einige Sekunden, um die Daten für das ausgewählte Steuerelement zu verarbeiten. Dann werden die Steuerelementeigenschaften angezeigt. Beachten Sie, dass **AutomationUId** die Bezeichnung **buttonA** trägt.
+     Die Schaltfläche **Start** wird mit einem blauen Rahmen versehen. Der **Generator für Tests der programmierten UI** benötigt einige Sekunden, um die Daten für das ausgewählte Steuerelement zu verarbeiten. Dann werden die Steuerelementeigenschaften angezeigt. Beachten Sie, dass **buttonA** der Wert von **AutomationUId** ist.
 
 4.  Klicken Sie in den Eigenschaften für das Steuerelement auf den Pfeil in der linken oberen Ecke, um die UI-Steuerelementzuordnung zu erweitern. Beachten Sie, dass **UIStartButton1** ausgewählt ist.
 
@@ -296,21 +302,19 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
      Durch den Status am unteren Rand des Fensters wird die Aktion bestätigt, indem **Das ausgewählte Steuerelement wurde der UI-Steuerelementzuordnung hinzugefügt** angezeigt wird.
 
-6.  Klicken Sie auf dem „UIMap – Test-Generator der programmierten UI“ auf **Code generieren**.
+6.  Klicken Sie im Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI) auf **Code generieren**.
 
-     Das Dialogfeld „Test-Generator der programmierten UI – Code generieren“ wird mit einem Hinweis angezeigt, dass keine neue Methode erforderlich ist und dass Code nur für die Änderungen an der UI-Steuerelementzuordnung generiert wird.
+     Das Dialogfeld **Coded UI Test Builder - Generate Code** (Generator für Tests der programmierten UI – Code generieren) wird mit einem Hinweis angezeigt, dass keine neue Methode erforderlich ist und dass Code nur für die Änderungen an der UI-Steuerelementzuordnung generiert wird.
 
 7.  Wählen Sie **Generieren** aus.
 
-8.  Schließen Sie "SimpleWPFApp.exe".
+8.  Schließen Sie "SimpleWPFApp".
 
-9. Schließen Sie den UIMap – Test-Generator für programmierte UI.
+9. Schließen Sie das Dialogfeld **UIMap - Coded UI Test Builder** (UIMap: Generator für Tests der programmierten UI).
 
-     Der UIMap – Test-Generator für programmierte UI benötigt einige Sekunden für die Verarbeitung der Änderungen an den UI-Steuerelementzuordnungen.
+10. Öffnen Sie im **Projektmappen-Explorer** die Datei *UIMap.Designer.cs*.
 
-10. Öffnen Sie im Projektmappen-Explorer die Datei "UIMap.Designer.cs".
-
-11. Suchen Sie in der Datei "UIMap.Designer.cs" die Eigenschaft "UIStartButton1". Beachten Sie, dass `SearchProperties` auf `"buttonA"` festgelegt ist:
+11. Suchen Sie in der Datei „UIMap.Designer.cs“ die Eigenschaft **UIStartButton1**. Beachten Sie, dass `SearchProperties` auf `"buttonA"` festgelegt ist:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -332,7 +336,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
      Jetzt können Sie den Test der codierten UI ändern, um das neu zugeordnete Steuerelement zu verwenden. Wie in der vorherigen Prozedur angemerkt wurde, können Sie Methoden oder Eigenschaften im Test der codierten UI nur in der Datei "UIMap.cs" überschreiben.
 
-12. Fügen Sie in der Datei "UIMap.cs" einen Konstruktor hinzu, und geben Sie die `SearchProperties`-Eigenschaft der `UIStartButton`-Eigenschaft an, um die `AutomationID`-Eigenschaft mit dem Wert `"buttonA":` zu verwenden.
+12. Fügen Sie in der Datei *UIMap.cs* einen Konstruktor hinzu, und geben Sie die `SearchProperties`-Eigenschaft der `UIStartButton`-Eigenschaft an, um die `AutomationID`-Eigenschaft mit dem Wert `"buttonA":` zu verwenden.
 
     ```csharp
     public UIMap()
@@ -343,21 +347,19 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 13. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
 
-14. Führen Sie CodedUITestMethod1 in Test-Explorer aus.
+14. Führen Sie **CodedUITestMethod1** in **Test-Explorer** aus.
 
-     Dieses Mal führt der Test der programmierten UI alle Schritte im Test erfolgreich aus.  Im Fenster „Testergebnisse“ wird der Status **Erfolgreich** angezeigt.
+     Dieses Mal führt der Test der programmierten UI alle Schritte im Test erfolgreich aus. Im Fenster **Testergebnisse** wird der Status **Erfolgreich** angezeigt.
 
-## <a name="external-resources"></a>Externe Ressourcen
+## <a name="videos"></a>Videos
 
-### <a name="videos"></a>Videos
+![Link zu Video](../data-tools/media/playvideo.gif) [Erste Schritte mit Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Erste Schritte mit Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230573)
+![Link zu Video](../data-tools/media/playvideo.gif) [Wartung und Debuggen von Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Wartung und Debuggen von Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230574)
+![Link zu Video](../data-tools/media/playvideo.gif) [Manuelles Programmieren von Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230575)
 
-![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") [Manuelles Codieren von Tests der programmierten UI](http://go.microsoft.com/fwlink/?LinkID=230575)
-
-### <a name="faq"></a>FAQ
+## <a name="faq"></a>FAQ
 
 [Tests der programmierten UI – FAQ](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
 

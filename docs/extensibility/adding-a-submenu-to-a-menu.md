@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102420"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Ein Menü hinzugefügt ein Untermenü
 Diese exemplarische Vorgehensweise basiert auf der Demo in [der Visual Studio-Menüleiste ein Menü hinzugefügt](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) durch Hinzufügen ein Untermenüs zum Veranschaulichen der **TestMenu** Menü.  

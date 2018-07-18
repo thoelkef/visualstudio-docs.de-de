@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473653"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Fehler: Debuggen im gemischten Modus wird nur bei Verwendung von Microsoft .NET Framework, Version 2.0 oder höher, unterstützt
 Um gemischten systemeigenen und verwalteten Code zu debuggen, müssen Sie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Version 2.0, 3.0, 3.5 oder 4 verwenden. Debuggen im gemischten Modus mit früheren Versionen von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wird nicht unterstützt.  

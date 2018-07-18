@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927545"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 Die Microsoft Source Code Annotation Language (SAL) bietet eine Reihe von Anmerkungen, die Sie verwenden können, um beschreiben, wie eine Funktion verwendet, die zugehörigen Parameter, die Annahmen, die über diese vereinfacht und die Garantien, die sie nach dem Abschluss vereinfacht. Die Anmerkungen werden in der Headerdatei definiert `<sal.h>`. Visual Studio-Codeanalyse für C++ verwendet SAL-Anmerkungen, um die Analyse der Funktionen ändern. Weitere Informationen zu SAL 2.0 für die Entwicklung von Windows-Treiber, finden Sie unter [SAL 2.0 Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979).

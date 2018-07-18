@@ -5,18 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/08/2018
+ms.date: 05/31/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb35eed401701aecc27797e6e0382364836838c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c349b31070b93945db84997b52d35bf73d44701a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691198"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
 
@@ -24,6 +25,10 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.3 | Release | 31. Mai 2018 | 15.7.27703.2026 |
+| 15.0.14 | Release | 31. Mai 2018 | 15.0.26228.37 |
+| 15.8.0 Vorschauversion 2.0 | Vorschau | 31. Mai 2018 | 15.8.27729.1 |
+| 15.7.2 | Release | 21. Mai 2018 | 15.7.27703.2018 |
 | 15.8.0 Vorschauversion 1.1 | Vorschau | 8. Mai 2018 | 15.8.27705.2000 |
 | 15.7.1 | Release | 8. Mai 2018 | 15.7.27703.2000 |
 | 15.8.0 Vorschauversion 1.0 | Vorschau | 7. Mai 2018 | 15.8.27705.0 |

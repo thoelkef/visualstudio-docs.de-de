@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129957"
 ---
 # <a name="creating-project-types"></a>Erstellen von Projekttypen
 Sie können erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einen neuen Projekttyp erstellen. Um einen neuen Projekttyp erstellen möchten, müssen Sie sich mit mehreren Konzepten vertraut, und führen eine Reihe von Schritten. Die folgenden Themen enthalten eine Übersicht über Projekttypen erstellen.  

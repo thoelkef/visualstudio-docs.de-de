@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457838"
 ---
 # <a name="compiland"></a>Compiland
 Es ist eine `SymTagCompiland` symbol für jede Kompiliereinheit zur .exe-Datei verknüpft. Compiland Informationen Symbole mit aufgeteilt wird eine `SymTagCompiland` Tags, das abgerufen werden kann, ohne zusätzliche Kompiliereinheit Symbole laden und Symbole mit einer `SymTagCompilandDetails` Tag, die erfordern möglicherweise zusätzliche Symbole laden.  

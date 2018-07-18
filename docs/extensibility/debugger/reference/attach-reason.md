@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099521"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Gibt den Grund für das Debugging-Modul (DE) für die Verbindung mit einem Programm Knoten an.  

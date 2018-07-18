@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926259"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Erste Schritte zum Debuggen von Multithreadanwendungen in Visual Studio
 Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. Dieses Lernprogramm zeigt, wie Threadmarker, die **parallele Stapel** Fenster die **parallele Überwachung** für Fenster, bedingte Haltepunkte und Filter Haltepunkte. In diesem Lernprogramm dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen verwendet werden können.

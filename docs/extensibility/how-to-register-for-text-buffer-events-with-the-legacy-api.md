@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127234"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API
 Wenn Sie den Textpuffer mithilfe der legacy-API zugreifen, sollten Sie für Ereignisse des Text-Puffer wie im folgenden Verfahren gezeigt registrieren.  

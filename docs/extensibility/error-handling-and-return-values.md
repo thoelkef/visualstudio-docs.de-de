@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135502"
 ---
 # <a name="error-handling-and-return-values"></a>Fehlerbehandlung und Rückgabewerte
 VSPackages und COM-verwenden die gleiche Architektur auf Fehler. Die `SetErrorInfo` und `GetErrorInfo` Funktionen sind Teil der Win32-Anwendungsprogrammierschnittstelle (API). Alle VSPackage in der integrierten Entwicklungsumgebung (IDE) kann diese global Win32-APIs, um ausführliche Fehlerinformationen Datensatz aufrufen, beim Empfangen einer benachrichtigungs über einen Fehler. Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Interop-Assemblys zum Verwalten von Fehlerinformationen enthält.  

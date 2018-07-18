@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128939"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Vorgehensweise: Implementieren von Suchen und Ersetzen Sie Mechanismus
 Visual Studio bietet zwei Möglichkeiten zum Implementieren von Suchen/Ersetzen. Eine Möglichkeit besteht darin textimages an die Shell übergeben, und lassen Sie ihn suchen, Hervorhebung und Ersetzen von Text zu behandeln. Dadurch können Benutzer mehrere unzusammenhängende angeben. Alternativ kann das VSPackage selbst gesteuert werden. In beiden Fällen müssen Sie die Befehlsshell über das aktuelle Ziel und die Ziele für alle geöffneten Dokumente benachrichtigen.  

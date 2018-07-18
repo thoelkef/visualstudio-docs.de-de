@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446542"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572152"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 
@@ -43,7 +43,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schrit
 Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Prozess periodisch zum Bestimmen der aktiven Funktion überprüft wird. Die resultierenden Daten enthalten Angaben dazu, wie häufig die Funktion sich während des Samplings des Prozesses in der Aufrufliste ganz oben befunden hat.
 
 > [!NOTE]
-> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis „\Team Tools\Performance Tools“ des Visual Studio-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax ist eine 32-Bit-Anwendung.
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des Visual Studio-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax ist eine 32-Bit-Anwendung.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>So erstellen Sie ein Profil für die Anwendung "PeopleTrax" mithilfe der Samplingmethode
 
@@ -59,13 +59,13 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
     VSPerfCLREnv /sampleon
     ```
 
-5. Starten Sie die Profilerstellung, indem Sie VSPerfCmd.exe ausführen. Dies ist das Befehlszeilentool, das den Profiler steuert. Mit dem folgenden Befehl werden Anwendung und Profiler im Samplingmodus gestartet:
+5. Starten Sie die Profilerstellung, indem Sie *VSPerfCmd.exe* ausführen. Dies ist das Befehlszeilentool, das den Profiler steuert. Mit dem folgenden Befehl werden Anwendung und Profiler im Samplingmodus gestartet:
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     Der Profilerprozess startet und wird an den PeopleTrax.exe-Prozess angefügt. Der Profilerprozess beginnt, die erfassten Profilerstellungsdaten in die Berichtsdatei zu schreiben.
+     Der Profilerprozess startet und wird an den *PeopleTrax.exe*-Prozess angefügt. Der Profilerprozess beginnt, die erfassten Profilerstellungsdaten in die Berichtsdatei zu schreiben.
 
 6. Klicken Sie auf **Get People** (Personen abrufen).
 
@@ -87,13 +87,13 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
     VSPerfCLREnv /sampleoff
     ```
 
-11. Die Profilerstellungsdaten werden in der VSP-Datei gespeichert. Analysieren Sie die Ergebnisse mit einer der folgenden Methoden:
+11. Die Profilerstellungsdaten werden in der *VSP*-Datei gespeichert. Analysieren Sie die Ergebnisse mit einer der folgenden Methoden:
 
-    - Öffnen Sie die VSP-Datei in der Visual Studio-IDE.
+    - Öffnen Sie die *VSP*-Datei in der Visual Studio-IDE.
 
          - oder -
 
-    - Generieren Sie mithilfe des Befehlszeilentools "VSPerfReport.exe" eine Datei mit durch Trennzeichen getrennten Werten (CSV-Datei). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE verwendet werden können:
+    - Generieren Sie mithilfe des Befehlszeilentools *VSPerfReport.exe* eine Datei mit durch Trennzeichen getrennten Werten (*CSV-Datei*). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE verwendet werden können:
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

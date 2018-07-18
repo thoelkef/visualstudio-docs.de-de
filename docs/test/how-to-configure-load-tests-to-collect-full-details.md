@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967095"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Gewusst wie: Konfigurieren von Auslastungstests zum Erfassen aller Details, um Aktivitäten virtueller Benutzer in Testergebnissen zu ermöglichen
 

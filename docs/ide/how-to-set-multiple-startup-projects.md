@@ -1,9 +1,8 @@
 ---
-title: 'Vorgehensweise: Festlegen mehrerer Startprojekte | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Festlegen mehrerer Startprojekte'
 ms.date: 06/21/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
@@ -13,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 322b82e37851ef78c97664df9c33db9194d9db90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942740"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
-In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des Debuggers ausgeführt wird.  
 
-## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest  
+In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des Debuggers ausgeführt wird.
 
-1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (den obersten Knoten).  
+## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest
 
-2.  Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.  
+1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (den obersten Knoten).
 
-3.  Erweitern Sie den Knoten **Allgemeine Eigenschaften**, und klicken Sie auf **Startprojekt**.  
+2.  Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
+
+3.  Erweitern Sie den Knoten **Allgemeine Eigenschaften**, und klicken Sie auf **Startprojekt**.
 
 4.  Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
 

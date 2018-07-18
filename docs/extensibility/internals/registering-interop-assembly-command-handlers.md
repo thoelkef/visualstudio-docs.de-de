@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131909"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrierung der Befehlshandler der Interop-Assembly
 Eine VSPackage muss mit registrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit der integrierten Entwicklungsumgebung (IDE) die zugehörigen Befehle ordnungsgemäß weiterleitet.  
@@ -30,7 +31,7 @@ Eine VSPackage muss mit registrieren [!INCLUDE[vsprvs](../../code-quality/includ
  [Befehl Format Tabellenverweis](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich in nicht verwalteten Satelliten-Dlls UI.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Befehl-Registrierung von VSPackages  
- Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle ist erforderlich, einen Registrierungeintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >*\Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.  
+ Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle ist erforderlich, einen Registrierungeintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.  
   
 > [!NOTE]
 >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen root, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

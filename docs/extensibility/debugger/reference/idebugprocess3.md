@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121091"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Diese Schnittstelle stellt einen laufenden Prozess und seine Programme dar. Diese Schnittstelle vorhanden ist, als Ersatz für einige Methoden in der [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle. Er ermöglicht die Steuerung über alle Programme im Prozess.  

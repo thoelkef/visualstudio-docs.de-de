@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752065"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -29,13 +30,13 @@ Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektma
 
 Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
-![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
 
 Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
 
 Über die Test-Explorer-Symbolleiste können Sie die meisten Aktionen zum Suchen, Organisieren und Ausführen von Tests ausführen.
 
-![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Tests durchführen
 
@@ -47,7 +48,7 @@ Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder eine
 
 - Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen**aus.
 
-- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 Während der Testausführung wird die oben im Fenster "Test-Explorer" angezeigte Erfolgreich/Fehler-Leiste animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich verlaufen, oder rot, falls ein beliebiger Test fehlschlägt.
 
@@ -65,7 +66,7 @@ Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnis
 
 Zum Anzeigen der Details eines einzelnen Tests wählen Sie den jeweiligen Test aus.
 
-![Details zur Testausführung](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Details zur Testausführung](../test/media/ute_testdetails.png)
 
 Im Testdetailbereich werden folgende Informationen angezeigt:
 
@@ -91,9 +92,9 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 
 ### <a name="group-tests-in-the-test-list"></a>Gruppieren von Tests in der Testliste
 
- Zum Ändern der Testunterteilung wählen Sie den neben der Schaltfläche **Gruppieren nach** angezeigten Pfeil nach unten ![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") und anschließend neue Gruppierungskriterien aus.
+ Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Gruppieren nach** auf den Pfeil nach unten (![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png)), und wählen Sie anschließend neue Gruppierungskriterien aus.
 
- ![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
@@ -135,7 +136,7 @@ Filtern nach einem anderen Kriterium:
 
 3. Geben Sie zwischen den Anführungszeichen den Filterwert ein.
 
-![Tests im Test-Explorer filtern](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Tests im Test-Explorer filtern](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
@@ -162,7 +163,7 @@ Zum Beispiel gibt `FullName:"MyClass" - FullName:"PerfTest"` alle Tests mit „M
 
  Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen, und bei Auswahl der Standardwiedergabeliste **Alle Tests** sind alle Tests im Projekt verfügbar.
 
- ![Wiedergabeliste auswählen](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Wiedergabeliste auswählen](../test/media/ute_playlist.png)
 
  Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Neue Wiedergabeliste**und dann **Zu Wiedergabeliste hinzufügen**aus. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
 
@@ -170,7 +171,7 @@ Zum Beispiel gibt `FullName:"MyClass" - FullName:"PerfTest"` alle Tests mit „M
 
  Wählen Sie zum**Öffnen einer Wiedergabeliste**im Visual Studio-Menü "Test" aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option "Wiedergabelistendatei öffnen" auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+ Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Debugging und Analyse von Komponententests
 

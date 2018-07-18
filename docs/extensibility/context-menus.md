@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108559"
 ---
 # <a name="context-menus"></a>Kontextmenüs
 Kontextmenüs werden angezeigt, wenn ein Benutzer in einem aktiven Bereich des Clientbereichs klickt und zu löschen, wenn die rechte Maustaste losgelassen wird.  

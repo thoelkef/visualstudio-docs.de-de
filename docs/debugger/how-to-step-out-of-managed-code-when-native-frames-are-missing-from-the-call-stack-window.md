@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472941"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Gewusst wie: Ausführen von verwaltetem Code bis zum Rücksprung, wenn systemeigene Rahmen im Aufruflistenfenster fehlen
 Wenn der Code systemeigene Rahmen enthält, die in nicht sichtbar sind die **Aufrufliste** Fenster, die beim Ausführen von verwalteten Codes kann zu unerwarteten Ergebnissen führen. Dieses Problem zu umgehen, können Sie einen Haltepunkt anstelle von **Ausführen bis Rücksprung**.  

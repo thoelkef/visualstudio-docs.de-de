@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474605"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread finden. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Threadansicht](../debugger/threads-view.md) Fenster, oder öffnen Sie [Ansicht "Nachrichten"](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

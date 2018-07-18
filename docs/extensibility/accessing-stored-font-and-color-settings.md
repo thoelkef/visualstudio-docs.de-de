@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105792"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) Speichert geänderte Einstellungen für Schriftarten und Farben in der Registrierung. Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle, um diese Einstellungen zuzugreifen.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>So initiieren Sie Statuspersistenz von Schriftarten und Farben
- Schriftart und Farbe Informationen werden nach Kategorie im folgenden Registrierungsschlüssel gespeichert: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\  *\<CategoryGUID >*], wobei  *\<CategoryGUID >* Kategorie-GUID ist.
+ Schriftart und Farbe Informationen werden nach Kategorie im folgenden Registrierungsschlüssel gespeichert: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >* \FontAndColors\\  *\<CategoryGUID >*], wobei  *\<CategoryGUID >* Kategorie-GUID ist.
 
  Aus diesem Grund, um Persistenz zu initiieren, muss eine VSPackage:
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139772"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilen-Flags
 Der Visual Studio Befehl Tabelle (VSCT)-Compiler bietet Befehlszeilenschalter, um sicherzustellen, dass erfolgreichen Kompilierung VSCT-Dateien.  

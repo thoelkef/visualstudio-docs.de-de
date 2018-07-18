@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131648"
 ---
 # <a name="solutions-overview"></a>Übersicht über Projektmappen
 Eine Lösung ist eine Gruppierung von einem oder mehreren Projekten, die zum Erstellen einer Anwendung zusammenarbeiten. Projekt- und Status Informationen zu der Projektmappe werden in zwei verschiedenen Projektmappendateien gespeichert. Die Projektmappendatei (sln) basiert auf Text und Quellcodeverwaltungssystem platziert und mehreren Benutzern gemeinsam verwendet werden können. Die Benutzer-Option (.suo) Projektmappendatei ist binär. Daher wird die SUO-Datei kann nicht unter quellcodeverwaltung platziert werden und benutzerspezifische Informationen enthält.  

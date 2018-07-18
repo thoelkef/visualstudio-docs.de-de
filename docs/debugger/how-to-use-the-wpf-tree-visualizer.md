@@ -23,11 +23,12 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475466"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Gewusst wie: Verwenden des WPF Tree Visualizer (WPF-Strukturschnellansicht)
 Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Strukturen finden Sie unter [Strukturen in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen über Abhängigkeitseigenschaften finden Sie unter [Übersicht über Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- Wenn Sie die WPF-Strukturschnellansicht öffnen, sehen Sie zwei Bereiche: den **visuellen Struktur** auf der linken Seite und die **Eigenschaften des** *Namen***:***Typ* Bereich auf der rechten Seite. Wählen Sie ein Objekt in der **visuellen Struktur** Bereich und die **Eigenschaften des** *Namen***:***Typ* Bereich wird automatisch aktualisiert, um anzuzeigen die Eigenschaften für dieses Objekt.  
+ Wenn Sie die WPF-Strukturschnellansicht öffnen, sehen Sie zwei Bereiche: den **visuellen Struktur** auf der linken Seite und die **Eigenschaften des** *Namen ***:*** Typ* Bereich auf der rechten Seite. Wählen Sie ein Objekt in der **visuellen Struktur** Bereich und die **Eigenschaften des** *Namen ***:*** Typ* Bereich wird automatisch aktualisiert, um anzuzeigen die Eigenschaften für dieses Objekt.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>So öffnen Sie den WPF Tree visualizer (WPF-Strukturschnellansicht)  
   
@@ -51,7 +52,7 @@ Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um d
   
 ### <a name="to-search-the-properties-list"></a>So durchsuchen Sie die Eigenschaftenliste  
   
--   In der **Eigenschaften des** *Namen***:***Typ* Bereich geben Sie die Zeichenfolge die suchen möchten, in der **Filter** Feld.  
+-   In der **Eigenschaften des** *Namen ***:*** Typ* Bereich geben Sie die Zeichenfolge die suchen möchten, in der **Filter** Feld.  
   
      Der WPF Tree visualizer (WPF-Strukturschnellansicht) zeigt sofort die Eigenschaften an, die zur eingegebenen Zeichenfolge passen, und in der Liste werden nur die Eigenschaften angezeigt, die zur eingegebenen Zeichenfolge passen. Geben Sie mehr Zeichen ein, um eine genauere Übereinstimmung zu erzielen.  
   

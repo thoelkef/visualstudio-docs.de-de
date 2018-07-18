@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263489"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungsmanifeste für Office-Projektmappen
   Ein Bereitstellungsmanifest ist eine XML-Datei, die die bereitstellungseinstellungen der Office-Projektmappe beschreibt und identifiziert die aktuelle Anwendungsversion.  

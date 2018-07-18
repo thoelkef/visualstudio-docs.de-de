@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147580"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit C++
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ Mathematikbibliothek SDK Paket das SDK als Visual Studio Extension (VSIX) zu erstellen und verwenden dieses dann zum Erstellen einer app. Die exemplarische Vorgehensweise ist in Schritte unterteilt:  

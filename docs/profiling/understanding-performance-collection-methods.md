@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5a584402473d9576376d6357dd67e6c47f391c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477482"
 ---
-# <a name="understanding-performance-collection-methods"></a>Grundlagen zu Leistungserfassungsmethoden
+# <a name="understand-performance-collection-methods"></a>Grundlagen zu Leistungsauflistungsmethoden
 
 Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Sammeln von Leistungsdaten bereitgestellt. In diesem Thema werden die verschiedenen Methoden beschrieben sowie einige Szenarien aufgeführt, in denen die Datensammlung mithilfe einer bestimmten Methode erfolgen kann.
 
@@ -36,7 +37,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
 
 Mit einigen Profilerstellungsmethoden können auch weitere Daten gesammelt werden, z. B. Software- und Hardwareleistungsindikatoren. Weitere Informationen finden Sie unter [Sammeln zusätzlicher Leistungsdaten](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a> Sampling
+## <a name="sampling"></a>Sampling
 
 Bei der Samplingmethode für die Profilerstellung werden statistische Daten zu den Aufgaben gesammelt, die während einer Profilerstellung von einer Anwendung ausgeführt wurden. Die Samplingmethode ist einfach und wirkt sich kaum auf die Ausführung der Anwendungsmethoden aus.
 
@@ -53,9 +54,9 @@ Das Samplingintervall wird vom Profiler standardmäßig auf CPU-Zyklen festgeleg
 
 [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 
-[Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+[Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
 
-## <a name="instrumentation"></a> Instrumentierung
+## <a name="instrumentation"></a>Instrumentierung
 
 Bei der Instrumentierungsmethode zur Profilerstellung werden ausführliche Zeitsteuerungsinformationen für die Funktionsaufrufe in der Anwendung gesammelt, für die das Profil erstellt wird. Mögliche Anwendungsbereiche der instrumentierten Profilerstellung:
 
@@ -80,7 +81,7 @@ Mithilfe der Instrumentierungsmethode können auch CPU- sowie Softwareleistungsi
 
 [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a> Parallelität
+## <a name="concurrency"></a>Parallelität
 
 Bei der Parallelitätsprofilerstellung werden Informationen zu Multithreadanwendungen gesammelt. Bei der Profilerstellung für Ressourcenkonflikte werden immer dann ausführliche Aufruflisteninformationen gesammelt, wenn von konkurrierenden Threads auf den Zugriff auf eine freigegebene Ressource gewartet werden muss. Bei der Parallelitätsschnellansicht werden zusätzlich allgemeinere Informationen zur Interaktion der Multithreadanwendung mit sich selbst, der Hardware, dem Betriebssystem und anderen Prozessen auf dem Hostcomputer gesammelt:
 
@@ -88,7 +89,7 @@ Bei der Parallelitätsprofilerstellung werden Informationen zu Multithreadanwend
 
 - In der Parallelitätsschnellansicht werden grafische Informationen angezeigt, die Sie verwenden können, um Leistungsengpässe, CPU-Unterauslastungen, Threadkonflikte, Threadmigration, Synchronisierungsverzögerungen, Bereiche überlappender E/A und andere Informationen zu suchen. Gegebenenfalls wird die grafische Ausgabe mit Aufruflisten- und Quellcodedaten verknüpft. Die Daten für die Parallelitätsschnellansicht können nur für Befehlszeilen- und Windows-Anwendungen gesammelt werden.
 
-[Grundlagen zu Datenwerten der Ressourcenkonflikten](../profiling/understanding-resource-contention-data-values.md)
+[Grundlagen zu Ressourcenkonflikt-Datenwerten](../profiling/understanding-resource-contention-data-values.md)
 
 [Sammeln von Parallelitätsdaten zu Threads und Prozessen](../profiling/collecting-thread-and-process-concurrency-data.md)
 
@@ -96,7 +97,7 @@ Bei der Parallelitätsprofilerstellung werden Informationen zu Multithreadanwend
 
 [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
 
-## <a name="net_memory"></a> .NET-Arbeitsspeicher
+## <a name="net-memory"></a>.NET-Speicher
 
 Bei der .NET-Speicherbelegungsmethode zur Profilerstellung wird der Prozessor des Computers bei jeder Belegung eines .NET Framework-Objekts in einer Anwendung unterbrochen, für die das Profil erstellt wird. Wenn auch Objektlebensdauerdaten erfasst werden, unterbricht der Profiler den Prozessor nach jeder .NET Framework-Garbage Collection.
 
@@ -118,7 +119,7 @@ Die .NET-Speicherprofilerstellung kann sowohl im Sampling- als auch im Instrumen
 
 [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
 
-## <a name="tier_interaction"></a> Ebeneninteraktion
+## <a name="tier-interaction"></a>Ebeneninteraktion
 
 Bei der Profilerstellung für die Ebeneninteraktion werden einer Profilerstellungsdatendatei Informationen zu synchronen [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]-Aufrufen zwischen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Seite oder einer anderen Anwendung und einer [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]-Datenbank hinzugefügt. Die Daten umfassen Anzahl und Zeit der Aufrufe sowie die höchsten und niedrigsten Zeiten. Ebeneninteraktionsdaten können den Profilerstellungsdaten hinzugefügt werden, die mithilfe der Sampling-, Instrumentierungs-, .NET-Speicher- oder Parallelitätsmethode gesammelt wurden.
 

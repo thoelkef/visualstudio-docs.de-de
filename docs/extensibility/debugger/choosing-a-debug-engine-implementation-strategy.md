@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098068"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Auswählen einer Strategie für Debug-Engine-Implementierung
 Verwenden Sie die Architektur zur Laufzeit zum Bestimmen der Strategie für die Implementierung der Debug-Modul (DE). Debugging-Modul kann im Prozess an das Programm debuggten, als in-Process-Debug-Manager für Visual Studio-Sitzung (SDM) oder Out-of-Process, beide Zertifikate erstellt werden. Die folgenden Richtlinien sollten Sie eines der folgenden drei Strategien auswählen können.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102147"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Erstellen eine Erweiterung mit einem Toolfenster
 In diesem Verfahren erfahren Sie, wie Sie die VSIX-Projektvorlage verwenden und die **benutzerdefinierte Toolfenster** Elementvorlage, um eine Erweiterung mit einem Toolfenster zu erstellen.  

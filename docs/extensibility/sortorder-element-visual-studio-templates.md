@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140322"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder-Element (Visual Studio-Vorlagen)
 Gibt einen Wert an, die zum Anordnen der Vorlage gegenüber anderen Vorlagen in der gleichen Kategorie verwendet wird, wie er im entweder enthalten die **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  

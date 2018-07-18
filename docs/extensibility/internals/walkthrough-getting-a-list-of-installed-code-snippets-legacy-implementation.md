@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141352"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacy-Implementierung)
 Ein Codeausschnitt ist ein Programmcode, die eingefügt werden können, in der Quellpuffer mit einem Menübefehl (dadurch eine Liste der installierten Codeausschnitte ganz) oder durch eine ausschnittsverknüpfung aus einer IntelliSense-Vervollständigungsliste auswählen.  

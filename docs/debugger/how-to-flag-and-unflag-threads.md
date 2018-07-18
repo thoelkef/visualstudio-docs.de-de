@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477601"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung
 Kennzeichnen Sie einen Thread, der besondere Aufmerksamkeit erhalten, markieren Sie es mit einem Symbol in der **Threads**, **parallele Stapel** (thread anzeigen), **parallele Überwachung**, und  **GPU-Threads** Windows. Anhand dieses Symbols können Sie gekennzeichnete Threads von anderen Threads unterscheiden.  

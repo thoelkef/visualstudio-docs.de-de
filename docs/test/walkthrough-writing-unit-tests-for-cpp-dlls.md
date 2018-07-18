@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751831"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -45,11 +46,11 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      In dieser exemplarischen Vorgehensweise wird das Testprojekt `NativeRooterTest`benannt.
 
-     ![Erstellen eines C++-Komponententestprojekts](../test/media/utecpp01.png "UteCpp01")
+     ![Erstellen eines C++-Komponententestprojekts](../test/media/utecpp01.png)
 
 2.  Überprüfen Sie im neuen Projekt **unittest1.cpp**.
 
-     ![Testprojekt mit TEST&#95;CLASS und TEST&#95;METHOD](../test/media/utecpp2.png "UteCpp2")
+     ![Testprojekt mit TEST&#95;CLASS und TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Beachten Sie Folgendes:
 
@@ -82,7 +83,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          Der Test wird unter **Bestandene Tests**angezeigt.
 
-         ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png "UteCpp04")
+         ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Erstellen eines DLL-Projekts
 
@@ -90,17 +91,17 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
-     ![Erstellen eines C++-Win32-Projekts](../test/media/utecpp05.png "UteCpp05")
+     ![Erstellen eines C++-Win32-Projekts](../test/media/utecpp05.png)
 
 2.  Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.
 
      Die Option **Symbole exportieren** generiert ein komfortables Makro, das Sie verwenden können, um exportierte Methoden zu deklarieren.
 
-     ![C++-Projekt-Assistent mit den Einstellungen „DLL“ und „Symbole exportieren“](../test/media/utecpp06.png "UteCpp06")
+     ![C++-Projektassistent mit den Einstellungen "DLL" und "Symbole exportieren"](../test/media/utecpp06.png)
 
 3.  Deklarieren Sie eine exportierte Funktion in der wichtigsten .h-Datei:
 
-     ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png "UteCpp07")
+     ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png)
 
      Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
     1.  Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.
 
-         ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png "UteCpp08")
+         ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
 
     2.  Wählen Sie **Neuen Verweis hinzufügen**.
 
          Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
 
-         ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png "UteCpp09")
+         ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png)
 
 2.  Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:
 
@@ -160,7 +161,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
-     ![Komponententest-Explorer &#45; einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")
+     ![Komponententest-Explorer – einfacher Test bestanden](../test/media/utecpp10.png)
 
  Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
@@ -189,7 +190,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      Beim neuen Test tritt ein Fehler auf.
 
-     ![Fehler beim RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Fehler beim RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
@@ -217,7 +218,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      Beide Tests sind erfolgreich.
 
-     ![Komponententest-Explorer &#45; Bereichstest bestanden](../test/media/utecpp12.png "UteCpp12")
+     ![Komponententest-Explorer – Bereichstest bestanden](../test/media/utecpp12.png)
 
     > [!TIP]
     > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
@@ -263,7 +264,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
 
-     ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
@@ -291,10 +292,10 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 6.  Alle Tests sind nun erfolgreich.
 
-     ![Alle Tests bestanden](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+> Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 
 ##  <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern

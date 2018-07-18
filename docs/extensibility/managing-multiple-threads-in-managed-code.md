@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139665"
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Vorgehensweise: Verwalten von mehreren Threads in verwaltetem Code
 Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchronen Methoden aufruft oder Vorgänge, die Threads als dem Visual Studio-UI-Thread ausgeführt hat haben, sollten Sie die unten angegebenen Richtlinien befolgen. Da nicht für die Arbeit in einem anderen Thread abgeschlossen warten muss, können Sie den UI-Thread reaktionsfähig bleibt. Sie können Lesbarkeit Ihres Codes erschweren effizienter, da Sie nicht über zusätzliche Threads verfügen, die Stapelspeicher einnehmen, und können zuverlässiger und einfacher zu debuggen, da Sie, Deadlocks und Blockaden vermeiden vornehmen.  

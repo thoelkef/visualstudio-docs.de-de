@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475682"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Vorgehensweise: Wechseln Sie zu einem anderen Thread während des Debuggens in Visual Studio
 Beim Debuggen einer Multithreadanwendung können Sie eine von mehreren Methoden verwenden, um als den Thread zu wechseln, die Sie an einen anderen Thread gearbeitet haben.

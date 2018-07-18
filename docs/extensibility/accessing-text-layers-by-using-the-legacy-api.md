@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098666"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Zugreifen auf Textebenen über die Legacy-API
 Eine Ebene kapselt normalerweise einige Aspekte der TextLayout. Eine Ebene "-Funktion-am-a-Time" Blendet z. B. Text, vor und nach einer Funktion, die das Caretzeichen (Texteinfügemarke) enthält.  

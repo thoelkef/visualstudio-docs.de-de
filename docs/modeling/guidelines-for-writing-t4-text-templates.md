@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953615"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 Diese allgemeinen Richtlinien sind möglicherweise hilfreich, wenn beim Generieren von Programmcode oder anderen Anwendungsressourcen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sie können Regeln werden nicht behoben.

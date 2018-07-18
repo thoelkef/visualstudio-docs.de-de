@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130662"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Wichtig-Befehle für Language Service-Filter
 Wenn Sie einen voll funktionsfähiges Sprachfilter für den Dienst erstellen möchten, erwägen Sie, behandeln die folgenden Befehle. Die vollständige Liste der Befehls-IDs wird definiert, der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> bei nicht verwalteten Enumeration für verwalteten Code und den Stdidcmd.h-Header-Datei [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Code. Sie finden die Datei Stdidcmd.h in *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc.  

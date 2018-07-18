@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902271"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
 Sie können die einfachen Entwurfsrichtlinienregeln Microsoft Regelsatz, der Schwerpunkt auf Ihren Code zu verstehen und zu verwenden, einfacher zu machen. Sie sollten berücksichtigen, dass diese Regel festgelegt, wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie bewährte Methoden für Code, der leicht zu warten ist, erzwingen möchten.

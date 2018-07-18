@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138827"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
 Gibt an, ob die Web-Elementvorlage für mehrere Programmiersprachen identisch ist und ob die **Sprache** Option ist für die **neues Element hinzufügen** (Dialogfeld).  

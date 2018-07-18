@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262314"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
   Microsoft Visual Studio und Microsoft Office enthalten zahlreiche Funktionen zur Barrierefreiheit, mit denen Sie benutzerdefinierte Lösungen zu erstellen, die die standard-Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Eingabehilfen im Web. Einzelheiten finden Sie in der [-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).  

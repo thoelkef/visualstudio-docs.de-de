@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943201"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoWiederherstellen, Umgebung, Dialogfeld "Optionen"
 Verwenden Sie diese Seite des Dialogfelds „Optionen“, um anzugeben, ob Dateien automatisch gesichert werden sollen oder nicht. Auf dieser Seite können Sie auch angeben, ob modifizierte Dateien wiederhergestellt werden sollen, wenn die integrierte Entwicklungsumgebung (IDE) unerwartet heruntergefahren wird. Sie können auf dieses Dialogfeld zugreifen, indem Sie das Menü **Extras** und anschließend **Optionen** auswählen und dann im Ordner **Umgebung** die Seite **AutoWiederherstellen** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.

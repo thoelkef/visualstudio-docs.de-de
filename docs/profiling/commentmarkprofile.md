@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691042"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-Die `CommentMarkProfile`-Funktion fügt der VSP-Datei eine numerische Markierung und eine Textzeichenfolge hinzu. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`-Funktion enthält, auf ON festgelegt sein.  
+Die `CommentMarkProfile`-Funktion fügt der *VSP*-Datei eine numerische Markierung und eine Textzeichenfolge hinzu. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`-Funktion enthält, auf ON festgelegt sein.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,12 +56,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Hinweise  
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ („Profil markieren“) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare über den Mark-Befehl „VSInstr“ oder über Funktionen („CommentMarkAtProfile“, „CommentMarkProfile“, oder „MarkProfile“) eingefügt werden.  
   
- Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.  
+ Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der *VSP*-Datei zu markieren.  
   
 > [!IMPORTANT]
 >  CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
   
-## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
+## <a name="net-framework-equivalent"></a>.NET Framework-Entsprechung  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Funktionsinformationen  
@@ -111,4 +112,4 @@ void ExerciseCommentMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

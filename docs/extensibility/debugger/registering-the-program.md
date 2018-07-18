@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126300"
 ---
 # <a name="registering-the-program"></a>Registrieren das Programm
 Nachdem die Debugging-Modul einen Port abgerufen wurden, dargestellt durch eine [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle im nächsten Schritt aktivieren das Programm, das gedebuggt werden mit dem Port registriert ist. Nach der Registrierung kann das Programm debuggen, indem Sie eine der folgenden Methoden:  

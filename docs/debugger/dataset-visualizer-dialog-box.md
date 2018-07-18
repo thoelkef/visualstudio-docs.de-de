@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457266"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogfeld "DataSet-Schnellansicht"
 Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen. Sie können auf diese Schnellansicht zugreifen, indem Sie auf das Symbol mit dem Vergrößerungsglas klicken, das neben dem Wert eines dieser Objekte in einem Debuggervariablenfenster oder in einem DataTip angezeigt wird.  

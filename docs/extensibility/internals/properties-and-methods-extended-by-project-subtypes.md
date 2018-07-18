@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132090"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Eigenschaften und Methoden, die vom Projekt Untertypen erweitert
 Ein Projektuntertyp hat viel Energie, die das Verhalten des Projekts zu beeinflussen, da er als Aggregator eines Basis-Projekts erstellt wird. Dieser Abschnitt fasst einige der Funktionen, die erweitert oder Untertypen des Projekts geändert werden können.  

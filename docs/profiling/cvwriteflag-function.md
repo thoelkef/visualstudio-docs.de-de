@@ -20,14 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac01c1fab1c1ef0ce2c7846bad56491fa03765f
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749371"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag-Funktion
-Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht.  
+Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -83,7 +84,7 @@ HRESULT CvWriteFlagExVA(
  S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** cvmarkers.h  
+ **Header:** *cvmarkers.h*  
   
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   

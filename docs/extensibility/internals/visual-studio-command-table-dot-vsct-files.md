@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140468"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio-Befehlstabelle (. VSCT)-Dateien
 Eine Befehl Tabelle-Konfigurationsdatei ist eine Textdatei, die den Satz von Befehlen zu beschreiben, die eine VSPackage enthält. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Befehl Tabelle (VSCT)-Compiler kompiliert XML-basierte Konfigurationsdateien (VSCT-Dateien) in binäre Befehl Tabelle Ausgabedateien (CTO). Die resultierenden CTO-Dateien sind identisch mit denen, die mit dem Befehl-Tabelle (CTC)-Compiler zum Kompilieren der CTC-Konfigurationsdateien erstellt werden. XML-basierte VSCT-Dateien hat jedoch einige Vorteile, z. B. einem XML-Editor, und IntelliSense für XML.  

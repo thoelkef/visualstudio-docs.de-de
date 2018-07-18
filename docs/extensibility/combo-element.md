@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100938"
 ---
 # <a name="combo-element"></a>Kombinationsfeld-Element
 Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es vier Arten von Kombinationsfelder, wie folgt: Kombinationsfeld, DynamicCombo IndexCombo und MRUCombo.  

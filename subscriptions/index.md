@@ -1,25 +1,28 @@
 ---
 title: Visual Studio-Abonnements
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946925"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
+
 Visual Studio-Abonnements sind eine umfassende Sammlung von Ressourcen zum Erstellen, Bereitstellen und Verwalten großartiger Anwendungen auf Ihren bevorzugten Plattformen und Geräten, einschließlich Windows, iOS, Android und Linux.  Abonnements bieten u.a. folgende Vorteile: Zugriff auf Entwicklertools, Clouddienste, Software, Schulungen sowie Unterstützung für Ihre Entwicklungs- und Testanforderungen.
 
-##  <a name="get-started"></a>Erste Schritte
+## <a name="get-started"></a>Erste Schritte
+
 Als Administrator melden Sie sich bei [https://manage.visualstudio.com](https://manage.visualstudio.com) an, um Ihrem Team Abonnements zuzuweisen.<br>
 Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visualstudio.com) an, um auf Ihre Abonnementvorteile zuzugreifen.
 
@@ -136,6 +139,12 @@ Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visual
 
 ---
 
+## <a name="whats-new"></a>Neuigkeiten
+
+Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefügt und häufig aktualisiert. Weitere Informationen finden Sie auf der Seite [What's new in subscriptions (Neues bei Abonnements)](whats-new-in-subscriptions.md).
+
+---
+
 <h2>Vorteile</h2>
 <ul class="cardsD cols cols3">
     <li>
@@ -148,7 +157,6 @@ Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visual
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio für Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server und TFS CAL</li>
                         </ul>                        
                     </div>
@@ -165,8 +173,8 @@ Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visual
                         <p>Mit Ihrem Visual Studio-Abonnement erhalten Sie ein monatliches Azure-Guthaben, kostenlosen Zugriff auf Azure-Dienste, Rabatt auf Entwicklungs- und Testtarife und exklusiven Zugriff auf einen nur für Abonnenten verfügbaren Katalog mit Images vorkonfigurierter virtueller Computer. Je nach Abonnement können folgende Clouddienste enthalten sein:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365-Entwicklerabonnement</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows-Entwicklerkonto</a></li>
                             <li>PowerBI Pro</li>

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923680"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bewährte Methoden für die Verwendung von Codeausschnitten
 

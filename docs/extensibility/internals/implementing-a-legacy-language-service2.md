@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134990"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementieren einen Sprachdienst Legacy
 Um einen Sprachdienst mithilfe des managed Package Frameworks (MPF) zu implementieren, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und implementieren Sie die folgenden abstrakten Methoden und Eigenschaften:  

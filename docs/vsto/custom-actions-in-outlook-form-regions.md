@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264088"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formularbereichen
   Aktionen werden die Schaltflächen, mit denen Benutzer für die Reaktion auf ein Microsoft Office Outlook-Element angezeigt. Beispielsweise um eine e-Mail-Element zu behandeln, Benutzer klicken auf die **Antwort**, **allen Antworten**, oder **Vorwärts** Aktionsschaltflächen. Jede dieser Aktionen erstellt ein neue e-Mail-Element und füllt die Felder des Elements mithilfe von Informationen aus dem ursprünglichen Element.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fbb4138c03f613e6e0d6fd1c07f7e759d07700
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476650"
 ---
 # <a name="thread-ready-connector"></a>Threadbereiter Konnektor
 Wenn Sie auf ein Blockierungssegment klicken, um eine Aufrufliste und deren aufgehobene Stapelblockierung anzuzeigen, wird der threadbereite Connector womöglich ebenfalls angezeigt. Wenn das Ereignis zur Aufhebung der Blockierung auf einem anderen Thread im aktuellen Prozess aufgetreten ist, identifiziert der threadbereite Connector visuell den Thread sowie das Ausführungssegment, das den blockierten Thread aktiviert hat, um die Ausführung fortzusetzen.

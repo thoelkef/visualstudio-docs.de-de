@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459596"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Ruft die Programm-Zeichenfolge, die verwendet wird, um den Registersatz vor dem Aufruf an die aktuelle Funktion zu berechnen.  

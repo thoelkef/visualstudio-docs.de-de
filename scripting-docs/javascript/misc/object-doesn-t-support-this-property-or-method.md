@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633410"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>Objekt ist nicht&#39;t unterstützen diese Eigenschaft oder Methode
 Sie haben eine Eigenschaft oder eine Methode angegeben, die für dieses Objekt nicht vorhanden ist. Nicht alle Objekte unterstützen alle Eigenschaften und Methoden.  

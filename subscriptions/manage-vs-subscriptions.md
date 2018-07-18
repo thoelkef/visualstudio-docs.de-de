@@ -9,11 +9,12 @@ description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nut
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548722"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -118,3 +119,21 @@ So fügen Sie ein alternatives Konto hinzu:
 ![Alternatives Konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.  
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>F: Wie lange behält Microsoft meine Daten bei, wenn ich mein Abonnement nicht verlängere?
+A: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gespeichert.
+
+| Kanal                                                | Dauer (Tage) |
+|--------------------------------------------------------|-----------------|
+|    Einzelhandel (z.B. Microsoft Store)               |    360          |
+|    Microsoft Business Center              |    180          |
+|    Microsoft Produkt- und Servicevertrag (MSPA)    |    180          |
+|    Visual Studio-Cloudabonnements                   |    180          |
+|    Programm (z.B. MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Nicht zum Weiterverkauf bestimmt (z.B. MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Wenn Sie Ihr Microsoft-Konto oder Azure AD schließen, werden Ihre personenbezogenen Daten sofort anonymisiert.  
+> - Wenn Sie über aktive Abonnements verfügen, werden Ihre personenbezogenen Daten nicht vollständig entfernt. 

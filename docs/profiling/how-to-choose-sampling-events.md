@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765631"
 ---
-# <a name="how-to-choose-sampling-events"></a>Gewusst wie: Auswählen von Samplingereignissen
+# <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
 Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:  
   
 -   Taktzyklen: bei CPU-Problemen  
@@ -60,8 +61,8 @@ Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 5.  Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen für Profilerstellungstools](../profiling/configuring-performance-sessions.md)   
+ [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)   
  [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131882"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Oberfläche (Source Control VSPackage)
 Eine VSPackage deklariert die Menüelemente und deren Standardstatus über die Visual Studio-Befehlstabelle (VSCT)-Datei. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) werden die Menüelemente in ihrem Standard angezeigt, bis das VSPackage geladen wurde. Anschließend kann die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode wird aufgerufen, um zu aktivieren oder Deaktivieren von Menüelementen.  

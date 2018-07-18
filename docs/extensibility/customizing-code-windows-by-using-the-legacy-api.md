@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109963"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Anpassen von Code-Fenster mit der Legacy-API
 Ein Codefenster ist ein Dokumentobjekt für das Fenster, das eine oder mehrere Textansichten unterstützt. Die genaue Features von einem Fenster des Code hängen von dem Dienst zugeordnete Sprache ab. Im Multiple Document Interface (MDI) Modus ist das Codefenster der untergeordneten MDI-Rahmens.  

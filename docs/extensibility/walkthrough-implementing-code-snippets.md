@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148687"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 Sie können Codeausschnitte erstellen und sie in eine Editor-Erweiterung einfügen, sodass Benutzer die Erweiterung sie ihren eigenen Code hinzufügen können.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132077"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
 Ein Projektuntertyp möglicherweise untertypspezifischen Daten in der Projektdatei zur späteren Verwendung beizubehalten. Ein Projektuntertyp verwendet projektdauerhaftigkeit-Datei, um die folgenden Anforderungen erfüllen:  

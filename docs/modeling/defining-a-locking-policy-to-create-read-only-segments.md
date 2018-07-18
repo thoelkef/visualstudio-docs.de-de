@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953596"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK ermöglicht ein Programm, um die Sperre Teils oder aller eine domänenspezifische Sprache (DSL)-Modell, damit sie gelesen aber nicht geändert werden kann. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer kann Kollegen dazu ein, mit einer Anmerkung versehen, und überprüfen einen DSL-Modell bitten, jedoch kann verhindern, dass sie die ursprüngliche ändern.

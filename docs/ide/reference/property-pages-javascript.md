@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949500"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.

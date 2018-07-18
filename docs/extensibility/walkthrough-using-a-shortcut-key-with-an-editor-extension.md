@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704024"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit der Erweiterung-Editor
 Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Randsteuerelement einer Text-Ansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Randsteuerelement-Editor-Vorlage, und können Sie mithilfe der Randsteuerelement hinzufügen das Zeichen + enthält.  

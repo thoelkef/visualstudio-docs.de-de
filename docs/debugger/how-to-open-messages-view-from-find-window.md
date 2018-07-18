@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473844"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Gewusst wie: Öffnen der Meldungsansicht aus "Fenster suchen"
 Möglicherweise praktisch sein, verwenden Sie die **"Fenster Suchen"** (Dialogfeld), wählen Sie ein Zielfenster, und öffnen Sie eine Ansicht "Nachrichten" in diesem Fenster.  

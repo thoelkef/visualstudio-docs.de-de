@@ -1,13 +1,13 @@
 ---
 title: JsSerializedScriptUnloadCallback-Typdef | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d18c392-cca0-411e-9f2b-0d788b16161a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568570"
 ---
 # <a name="jsserializedscriptunloadcallback-typedef"></a>JsSerializedScriptUnloadCallback-Typdef
 Wird von der Laufzeit aufgerufen, wenn sie mit allen Ressourcen fertig ist, die sich auf die Skriptausführung beziehen.     Der Aufrufer muss die Quelle (sofern geladen), den Bytecode und den Kontext zu diesem Zeitpunkt freigeben.  

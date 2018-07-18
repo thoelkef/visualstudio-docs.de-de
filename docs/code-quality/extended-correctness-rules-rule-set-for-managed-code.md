@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926552"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
 Der Regelsatz erweiterte Microsoft-Regeln für Richtigkeit maximiert die Logik und Fehler, die von der Codeanalyse gemeldet werden. Besonderes Augenmerk wird auf bestimmte Szenarien, z. B. COM-Interoperabilität und mobilen Anwendungen. Sie sollten diesen Regelsatz trifft eine der folgenden Szenarien zu Ihrem Projekt oder zusätzliche Probleme in Ihrem Projekt zu suchen.

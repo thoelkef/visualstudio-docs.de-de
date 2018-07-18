@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140071"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Bereitstellen von Language Dienstkontext über die Legacy-API
 Es gibt zwei Optionen für einen Sprachdienst Benutzer Kontext mit Bereitstellen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor: Text Marker Kontext bereitzustellen, oder geben Sie alle Benutzerkontext. Hier werden die Unterschiede zwischen den einzelnen beschrieben.  

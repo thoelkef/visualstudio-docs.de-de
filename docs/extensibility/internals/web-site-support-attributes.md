@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140835"
 ---
 # <a name="web-site-support-attributes"></a>Attribute für Website-Unterstützung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Website-Projekt kann zum Bereitstellen von Unterstützung für das Web erweitert Programmiersprachen zu vergleichen. Die Sprache muss selbst registrieren, mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit Projektvorlagen angezeigt werden können, in der **neue Website** (Dialogfeld), wenn die Sprache ausgewählt ist.

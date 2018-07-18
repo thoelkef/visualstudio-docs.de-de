@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126287"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrieren einer benutzerdefinierten Debugmodul
 Debugging-Modul muss registriert sich selbst als Klassenfactory gemäß COM-Konventionen sowie mit Visual Studio über den Visual Studio-Registrierungsunterschlüssel registrieren.  

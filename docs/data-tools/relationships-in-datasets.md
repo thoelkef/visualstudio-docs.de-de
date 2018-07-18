@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927203"
 ---
 # <a name="create-relationships-between-datasets"></a>Beziehungen zwischen Datasets erstellen
 Datasets, die verknüpfte Daten enthalten Tabellen <xref:System.Data.DataRelation> Objekte, um eine über-/unterordnungsbeziehung zwischen den Tabellen darzustellen und um verknüpfte Datensätze von den anderen zurückzugeben. Hinzufügen verknüpfte Tabellen zu Datasets mithilfe der **Datenquellen Konfigurations-Assistenten**, oder die **Dataset-Designer**, erstellt und konfiguriert die <xref:System.Data.DataRelation> Objekt für Sie.

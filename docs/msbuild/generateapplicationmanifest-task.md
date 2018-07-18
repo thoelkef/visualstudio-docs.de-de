@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575318"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest. Ein systemeigenes Manifest beschreibt eine Komponente, indem eine eindeutige Identität für die Komponente definiert wird und alle Assemblys und Dateien, aus denen die Komponente besteht, bezeichnet werden. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest erweitert ein systemeigenes Manifest durch die Angabe des Einstiegspunkts und der Sicherheitsebene der Anwendung.  

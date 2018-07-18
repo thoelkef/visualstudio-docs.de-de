@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902015"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Auflistungen müssen eine generische Schnittstelle implementieren
 |||

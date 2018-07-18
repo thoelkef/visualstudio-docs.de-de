@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144329"
 ---
 # <a name="vsix-color-compiler"></a>Die Farbe Compiler VSIX
 Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, die eine XML-Datei, die Farben für vorhandene Visual Studio-Designs darstellt akzeptiert und wandelt es eine PKGDEF-Datei, damit diese Farben in Visual Studio verwendet werden können. Da es Unterschiede zwischen XML-Dateien einfach ist, eignet sich dieses Tool zum Verwalten von benutzerdefinierten Farben in der quellcodeverwaltung. Es kann auch in Buildumgebungen eingebunden werden soll, sodass die Ausgabe des Builds eine gültige PKGDEF-Datei ist.  

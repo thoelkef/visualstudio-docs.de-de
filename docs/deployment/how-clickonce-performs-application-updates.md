@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557696"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Wie ClickOnce Anwendungsupdates ausführt
 ClickOnce verwendet die Dateiversionsinformationen im Bereitstellungsmanifest der Anwendung angegebenen entscheiden, ob Sie die Dateien der Anwendung zu aktualisieren. Nach dem Beginn der Aktualisierung verwendet ClickOnce ein Verfahren namens *Patchen* vermeiden redundante Herunterladen von Dateien.  

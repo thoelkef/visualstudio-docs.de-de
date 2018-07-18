@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133574"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für das Projekt und Konfigurationseigenschaften
 Die **Eigenschaften** Fenster in den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE)-Projekt und den Konfigurationseigenschaften anzeigen kann. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, damit der Benutzer die Eigenschaften für die Anwendung festlegen kann.  

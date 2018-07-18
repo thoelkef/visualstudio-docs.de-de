@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751714"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps
 
@@ -45,11 +46,11 @@ Im folgenden sind Schritte zum Erstellen, zum Ausführen und zum Debuggen von Ko
 
 6.  Vergewissern Sie sich, dass die Option **Projektmappenverzeichnis erstellen** ausgewählt ist, und klicken Sie auf **OK** .
 
-     ![Angepasste Komponententestbibliothek](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Angepasste Komponententestbibliothek](../test/media/unit_test_win8_1.png)
 
      Der Projektmappen-Explorer wird mit dem UWP-Komponententestprojekt ausgefüllt, und der Code-Editor zeigt den Standardkomponententest „UnitTest1“ an.
 
-     ![Neues angepasstes Komponententestprojekt](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Neues angepasstes Komponententestprojekt.](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Bearbeiten der UWP-Anwendungsmanifestdatei für das Komponententestprojekt
 
@@ -99,7 +100,7 @@ Bearbeiten Sie im Code-Editor den Komponententest und fügen Sie die Bestätigun
     >
     > Außerdem können Sie die Optionen **Ausgewählte Tests debuggen**, **Test öffnen**und **Eigenschaften** auswählen.
     >
-    > ![Komponententest-Explorer &#45; Komponententest-Kontextmenü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Komponententest-Explorer > Kontextmenü für Komponententest](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Der Komponententest läuft. Nach Abschluss zeigt der Komponententest-Explorer den Teststatus und die verstrichene Zeit an und stellt einen Link zur Quelle bereit.
 

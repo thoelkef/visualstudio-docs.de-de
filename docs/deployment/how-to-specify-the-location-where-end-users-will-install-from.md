@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559594"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Gewusst wie: Angeben des Speicherorts für die Installation durch Endbenutzer
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, der Speicherort, in dem Benutzer zum Herunterladen und Installieren der Anwendung ist nicht unbedingt der Speicherort, in dem Sie zunächst die Anwendung veröffentlichen. Beispielsweise in einigen Organisationen kann ein Entwickler eine Anwendung auf einem Testserver veröffentlichen, und klicken Sie dann die Anwendung auf einem Webserver ein Administrator verschiebt.  

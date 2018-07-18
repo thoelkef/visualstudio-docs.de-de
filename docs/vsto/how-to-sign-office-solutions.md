@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262190"
 ---
 # <a name="how-to-sign-office-solutions"></a>Vorgehensweise: Signieren von Office-Projektmappen
   Wenn Sie eine Projektmappe anmelden, können Sie der Projektmappe mithilfe des Zertifikats als Beweis Vertrauenswürdigkeit zu gewähren. Sie können das gleiche Zertifikat für mehrere Lösungen verwenden, und aller Lösungen werden keine richtlinienupdates Sicherheitsvorkehrungen vertrauenswürdig sein.  

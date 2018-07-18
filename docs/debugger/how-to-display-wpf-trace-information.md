@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476223"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Gewusst wie: Anzeigen von WPF-Ablaufverfolgungsinformationen
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] kann debugablaufverfolgungs-Informationen von WPF-Anwendungen empfangen und diese Informationen im Anzeigen der **Ausgabe** Fenster. Zum Anzeigen von debugablaufverfolgungs-Informationen muss die WPF-Ablaufverfolgung aktiviert werden.  

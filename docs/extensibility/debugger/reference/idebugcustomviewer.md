@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107539"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Diese Schnittstelle ermöglicht eine ausdrucksauswertung (EE) zum Anzeigen der Wert einer Eigenschaft in dem Format erforderlich ist.  

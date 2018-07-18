@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953130"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 Wenn Sie einen Text-Decorator-Element in einer Form definieren, wird er durch ein Textfeld dargestellt. Beispiele für die Initialisierung des TextFields und andere ShapeFields überprüfen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.

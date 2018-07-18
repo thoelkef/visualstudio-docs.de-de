@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578054"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  

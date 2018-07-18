@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134964"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testbereich 3: Auschecken / rückgängig: Auschecken
 Dieser Bereich der quellcodeverwaltung für die Test-Plug-in behandelt, bearbeiten und Zurücksetzen der Elemente aus dem Versionsspeicher über die **Auschecken** und **Rückgängig: Auschecken** Befehle.  

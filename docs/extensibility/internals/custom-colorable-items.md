@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133371"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte Färbbare Elemente
 Sie können die Liste der Typen überschreiben implementieren benutzerdefinierte färbbare Elemente als Teil der Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  

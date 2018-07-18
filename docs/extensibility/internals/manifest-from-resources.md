@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134280"
 ---
 # <a name="manifest-from-resources"></a>Assemblymanifest aus Ressourcen
 Die Manifestdatei aus Ressourcen Tool ist eine Konsolenanwendung, die eine Liste von Bildressourcen (PNG oder XAML-Dateien) und generiert eine .imagemanifest-Datei, die diesen Images, die mit der Visual Studio-Image-Dienst verwendet werden kann. Darüber hinaus kann dieses Tool verwendet werden, um eine vorhandene .imagemanifest Bilder hinzufügen. Dieses Tool eignet sich für Unterstützung hoher DPI-Einstellung und Designs für die Bilder für ein Visual Studio-Erweiterung hinzufügen. Die generierte .imagemanifest-Datei sollte in enthalten und als Teil einer Visual Studio-Erweiterung (VSIX) bereitgestellt werden.  

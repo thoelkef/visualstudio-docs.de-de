@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144017"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName-Element (Visual Studio-Vorlagen)
 Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wird angegeben, dass eine Projektvorlage zum Erstellen von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Apps verwendet wird.  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844741"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Gewusst wie: Erstellen eines Adapters für diagnostische Daten
 
@@ -31,7 +32,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
  Nachfolgend sehen Sie eine partielle Liste mit Schlüsselereignissen, die Sie beim Erstellen des Adapters für diagnostische Daten verwenden können. Eine vollständige Liste von Ereignissen in Zusammenhang mit Adaptern für diagnostische Daten finden Sie in der abstrakten <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>-Klasse.
 
-|event|description|
+|event|Beschreibung |
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Start des Testlaufs|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Ende des Testlaufs|
@@ -92,13 +93,13 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 5.  Fügen Sie das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> der Klasse für Ihren Adapter für diagnostische Daten hinzu, damit dieser als Adapter für diagnostische Daten identifiziert werden kann, und ersetzen Sie dabei **Firma**, **Produkt** und **Version** durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>-Attribut hinzu, und ersetzen Sie dabei die Parameter durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

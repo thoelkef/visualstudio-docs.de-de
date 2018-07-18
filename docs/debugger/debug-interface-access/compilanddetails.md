@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468807"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Symbole mit Kompiliereinheit Informationen aufgeteilt ist ein `SymTagCompiland` Tag (wenig Details) und ein `SymTagCompilandDetails` Tag (hohe Detail). `SymTagCompilandDetails` erfordert zusätzliche Symbole laden. Sie bietet jedoch eine Fülle von Informationen zu den Kompiliereinheit, die nicht mit verfügbar ist ein `SymTagCompiland` Symbol.  

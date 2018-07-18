@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556591"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Gewusst wie: Angeben eines Links für technischen Support
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die **Support-URL** Eigenschaft identifiziert, einer Webseite oder Dateifreigabe, in dem Benutzer beim Abrufen von Informationen zur Anwendung wechseln können. Diese Eigenschaft ist optional. Wenn angegeben, wird die URL in der Eintrag der Anwendung angezeigt werden **Software** (Dialogfeld).  

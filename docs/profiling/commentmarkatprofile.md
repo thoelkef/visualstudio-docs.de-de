@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bd01f6ad180c85e48c51925de094df94aaa335
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690974"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-Die `CommentMarkAtProfile`-Methode fügt der VSP-Datei einen Zeitstempelwert, eine numerische Markierung und eine Kommentarzeichenfolge hinzu. Der Zeitstempelwert kann verwendet werden, um externe Ereignisse zu synchronisieren. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die Funktion CommentMarkAtProfile enthält, auf ON festgelegt sein.  
+Die `CommentMarkAtProfile`-Methode fügt der *VSP-Datei* einen Zeitstempelwert, eine numerische Markierung und eine Kommentarzeichenfolge hinzu. Der Zeitstempelwert kann verwendet werden, um externe Ereignisse zu synchronisieren. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die Funktion CommentMarkAtProfile enthält, auf ON festgelegt sein.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -63,7 +64,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 > [!IMPORTANT]
 >  CommentMarkAtProfile-Methoden sollten nur mit der Instrumentierung verwendet werden.  
   
-## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
+## <a name="net-framework-equivalent"></a>.NET Framework-Entsprechung  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Funktionsinformationen  
@@ -116,4 +117,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

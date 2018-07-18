@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136828"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Überprüft, ob Untertypen von einem Projekt zur Laufzeit
 Eine VSPackage, von die eine benutzerdefinierte Untertyp abhängt sollte Logik zu suchen, die Untertyp, damit Sie ordnungsgemäß ausgeführt werden kann, wenn der Untertyp nicht vorhanden ist enthalten. Das folgende Verfahren veranschaulicht, wie das Vorhandensein eines angegebenen Untertyps überprüfen.  

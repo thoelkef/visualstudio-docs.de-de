@@ -1,16 +1,16 @@
 ---
 title: IDebugApplicationThreadEvents110-Schnittstelle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThreadEvents110 Interface
 ms.assetid: 91a98b0e-7c81-4118-af75-82f75fd4f25a
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726270"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110-Schnittstelle
 Fügt Weitere Threadereignisse hinzu. Diese Ereignisse sind nur lokal. Also können Sie abonnieren sie nur in dem Prozess zu debuggen, indem Sie die [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) anmelden und Methoden auf PDM Anwendung Threadobjekte (Objekte implementiert, [IDebugApplicationThread Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)). Die Zeitpunkte für den Thread, der von kommen.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952543"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren, damit sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Diagramm Abhängigkeit entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.

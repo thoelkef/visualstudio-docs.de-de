@@ -2,7 +2,7 @@
 title: Administratorhandbuch für Visual Studio
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691117"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Administratorhandbuch für Visual Studio 2017
 
-In Unternehmensumgebungen ist es üblich, dass Systemadministratoren Installationen für Endbenutzer über eine Netzwerkfreigabe oder mithilfe von Systemverwaltungssoftware bereitstellen. Wir haben das Visual Studio-Setupprogramm so gestaltet, dass es die unternehmensweite Bereitstellung unterstützt. Systemadministratoren können einen Speicherort für die Netzwerkinstallation erstellen, Standardwerte für die Installation vorkonfigurieren, Product Keys während des Installationsvorgangs bereitstellen und nach erfolgreicher Einführung Produktupdates verwalten. Dieses Handbuch für Administratoren bietet vom jeweiligen Szenario abhängige Anleitungen für die Unternehmensbereitstellung in Netzwerkumgebungen.
+In Unternehmensumgebungen ist es üblich, dass Systemadministratoren Installationen für Endbenutzer über eine Netzwerkfreigabe oder mithilfe von Systemverwaltungssoftware bereitstellen. Wir haben die Visual Studio-Setup-Engine so gestaltet, dass sie die unternehmensweite Bereitstellung unterstützt. Systemadministratoren können einen Speicherort für die Netzwerkinstallation erstellen, Standardwerte für die Installation vorkonfigurieren, Product Keys während des Installationsvorgangs bereitstellen und nach erfolgreicher Einführung Produktupdates verwalten. Dieses Handbuch für Administratoren bietet vom jeweiligen Szenario abhängige Anleitungen für die Unternehmensbereitstellung in Netzwerkumgebungen.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Bereitstellen von Visual Studio 2017 in einer Unternehmensumgebung
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Bereitstellen von Visual Studio 2017 in einer Unternehmensumgebung
 
 Sie können Visual Studio 2017 auf Clientarbeitsstationen bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs) erfüllt. Egal, ob Sie über Software, z.B. System Center oder über eine Batchdatei bereitstellen, Sie sollten in der Regel die folgenden Schritte durchlaufen:
 
@@ -49,12 +50,26 @@ Sie können Visual Studio 2017 auf Clientarbeitsstationen bereitstellen, solange
 > [!IMPORTANT]
 > Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort „merken“. Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio 2017-Clients in Ihrer Organisation entspricht.
 
-## <a name="visual-studio-tools"></a>Visual Studio Tools
+## <a name="use-visual-studio-tools"></a>Verwenden von Visual Studio-Tools
 
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md) können:
 
 > [!TIP]
 > Zusätzlich zur Dokumentation im Administratorhandbuch ist der [Blog von Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) eine gute Quelle für Informationen zum Setup von Visual Studio 2017.
+
+## <a name="specify-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen
+
+Standardmäßig ermöglicht die Visual Studio-Installation Kundenfeedback. Wenn Sie die Gruppenrichtlinie aktivieren, können Sie Visual Studio konfigurieren, um Kundenfeedback auf einzelnen Computern zu deaktivieren. Legen Sie hierzu eine registrierungsbasierte Richtlinie für den folgenden Schlüssel fest:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Eintrag = **OptIn**
+
+Wert = (DWORD)
+* **0** = deaktiviert
+* **1** = aktiviert
+
+Weitere Informationen über Kundenfeedbackeinstellungen finden Sie auf der Seite [Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio](../ide/visual-studio-experience-improvement-program.md).
 
 ## <a name="get-support"></a>Support aufrufen
 

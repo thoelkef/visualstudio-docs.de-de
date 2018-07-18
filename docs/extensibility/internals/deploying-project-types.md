@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127973"
 ---
 # <a name="deploying-project-types"></a>Bereitstellen von Projekttypen
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] installiert einen neuen Projekttyp Aggregator (ProjectAggregator2.dll) und auch ein Windows Installer-Paket für die Verteilung (ProjectAggregator2.msi). Sie müssen den neuen Aggregator für Projekttypen von verwaltetem Code verwenden. ProjectAggregator2 funktioniert Scanning Einschränkungen in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt Aggregator, die Projekttypen von verwaltetem Code zu verhindern, dass nicht mehr ordnungsgemäß funktionieren. Die folgenden Schritte beschreiben, wie so ändern Sie das VSPackage, um den neuen Aggregator zu verwenden.  

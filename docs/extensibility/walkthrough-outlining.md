@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143890"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Sie können die Sprache basierende Funktionen wie das Gliedern von definieren die Arten von Textbereiche, die Sie erweitern oder reduzieren möchten implementieren. Sie können Bereiche im Kontext eines Diensts Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und die Region-Definition auf nur diesen Typ gelten oder Sie können die Definitionen für die Region anwenden, um einen vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarische Vorgehensweise zeigt, wie definieren und Gliederungsbereiche anzeigen.  

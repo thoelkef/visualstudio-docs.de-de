@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475661"
 ---
 # <a name="sdi-server-applications"></a>SDI-Serveranwendungen
 Wenn Sie eine Server SDI-Anwendung debuggen, müssen Sie angeben `/Embedding` oder `/Automation` in der **Befehlszeilenargumente** Eigenschaft in der *Projekt* Eigenschaftenseiten (Dialogfeld) für C/C++, C#-, oder Visual Basic-Projekte.  

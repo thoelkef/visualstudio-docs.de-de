@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130041"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Die Richtlinie und des Eigenschaftenfensters
 Wenn ein Projekt in einem Enterprise-Vorlagen-Projekt enthalten ist, kann diese Enterprise-Vorlagenprojekt Richtlinie erzwingen. Die Richtlinie wird ein einschränkenden System, das zum Festlegen der Standardwerte für Eigenschaften, Eigenschaften ausblenden, Hinzufügen von Eigenschaften und usw. verwendet werden kann.  

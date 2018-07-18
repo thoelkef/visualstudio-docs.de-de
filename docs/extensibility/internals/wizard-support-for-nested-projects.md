@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137494"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Assistentenunterstützung für geschachtelte-Projekte
 Die IDE führt zwei Assistenten, die das übergeordnete-Projekt für geschachtelte Projekte implementieren können: die **neues Projekt** Assistenten und die **Element hinzufügen** Assistenten.  

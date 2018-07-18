@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147114"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können die Sprache basierende Anweisungsvervollständigung implementieren, durch Definieren der Bezeichner für die Sie die Beendigung bereitstellen möchten, und klicken Sie dann auszulösen einer Sitzungs abgeschlossen. Anweisungsvervollständigung im Rahmen einer Sprachdienst definieren, Definieren eigener Dateinamenerweiterung und des Inhaltstyps und zeigt dann Abschluss für nur dieses Typs, oder der Abschluss für einen vorhandenen Inhaltstyp auslösen – z. B. "Text". In dieser exemplarischen Vorgehensweise wird das Auslösen von Anweisungsvervollständigung für den Inhaltstyp "Text", also den Inhaltstyp der Textdateien veranschaulicht. Der Inhaltstyp "Text" ist der Vorgänger von allen anderen Inhaltstypen, einschließlich Code und XML-Dateien.  

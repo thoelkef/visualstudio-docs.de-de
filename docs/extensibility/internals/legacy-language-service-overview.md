@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131736"
 ---
 # <a name="legacy-language-service-overview"></a>Übersicht über die Legacy-Language-Dienst
 Ein Sprachdienst bietet Unterstützung für Editor, in dem Sie bestimmte implementieren kann [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Funktionen. Die Dienstklassen des Managed Package Framework (MPF) Sprachen bieten vollständige Unterstützung für häufig verwendete Funktionen und teilweise Unterstützung für andere Funktionen.  

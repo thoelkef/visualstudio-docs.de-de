@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129442"
 ---
 # <a name="model-for-source-control-packages"></a>Modell für die Quellpakete-Steuerelement
 Die folgenden Modell stellt ein Beispiel für ein Steuerelement Source-Implementierung. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die Umgebung-Dienste, die Sie aufrufen müssen. Wie alle Dienste rufen Sie tatsächlich auf die Methoden der einer bestimmten Schnittstelle, die Sie über den Dienst zu erhalten. Die Namen der Klassen werden identifiziert, damit sie einfacher sehen, wie Datenquellen-Steuerelements durchgeführt wird.  

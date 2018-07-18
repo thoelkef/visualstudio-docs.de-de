@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128653"
 ---
 # <a name="language-service-support-for-debugging"></a>Language Service unterstützt das Debuggen
 Geben Sie ein Sprachdienst kann Funktionen, die einen Debugger über unterstützen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> Schnittstelle. Zu diesen Funktionen gehören Haltepunkte überprüfen und die Angabe einer Liste mit Ausdrücken, die die **"Auto"** Fenster.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926378"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in datasets
 Ähnlich wie die Daten in einer Tabelle in einer Datenbank zu bearbeiten, bearbeiten Sie die Daten in Datentabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitet werden. In diesen Fällen behandelt die Infrastruktur für die Datenbindung alle der änderungsnachverfolgung, damit die Änderungen später wieder in die Datenbank gesendet werden können. Wenn Sie programmgesteuert Bearbeitungen, um Daten vornehmen und die Änderungen zurück an die Datenbank gesendet werden sollen, müssen Sie verwenden, die Objekte und Methoden, die die änderungsnachverfolgung für Sie übernimmt.

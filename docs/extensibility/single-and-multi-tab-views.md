@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142976"
 ---
 # <a name="single-and-multi-tab-views"></a>Ansichten für einzelne und Registerkarte "Multi"
 Erstellen eines Editors kann verschiedene Arten von Ansichten. Ein Beispiel ist ein Code-Editor-Fenster, ein weiterer Vorteil ist ein Forms-Designer.  

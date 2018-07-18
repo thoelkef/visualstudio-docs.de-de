@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565080"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce-Anwendungsmanifest
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest ist eine XML-Datei, die eine Anwendung, die mit bereitgestellt wird, beschreibt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  

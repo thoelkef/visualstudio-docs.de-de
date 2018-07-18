@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448336"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748191"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -42,7 +42,7 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 3.  Wählen Sie im mittleren Bereich **Komponententestprojekt** aus, und übernehmen Sie den Standardnamen `UnitTestProject1`. Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.
 
-     ![Dialogfeld „Neues Testprojekt“](../ide/media/newproject_test.png "NewProject_Test")
+     ![Dialogfeld "Neues Testprojekt"](../ide/media/newproject_test.png)
 
 4.  Klicken Sie auf **OK**, um das Dialogfeld **Neues Projekt** zu schließen.
 
@@ -67,9 +67,9 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
 
-     ![Quick Actions in Visual Basic] (Schnelle Aktionen in Visual Basic)(../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Schnellaktionen in Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Quick Actions in C#] (Schnelle Aktionen in C#) (../ide/media/genclass_underline.png "GenClass_UnderlineVB")
+     ![Schnellaktionen in C&#35;](../ide/media/genclass_underline.png)
 
 4.  Klicken Sie auf die Glühbirne **Schnellaktionen**. Es wird eine Fehlermeldung angezeigt, die meldet, dass der `Automobile`-Typ nicht definiert ist. Außerdem werden einige Lösungen für das Problem angezeigt.
 
@@ -77,7 +77,7 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 6. Klicken Sie in der **Projekt**-Liste auf **GFUDemo\_VB** oder **GFUDemo_CS**, um Visual Studio anzuweisen, anstelle des Testprojekts dem Klassenbibliotheksprojekt die Datei hinzuzufügen. Klicken Sie, falls noch nicht geschehen, auf **Neue Datei erstellen** und nennen Sie diese Datei *Automobile.cs* oder *Automobile.vb*.
 
-     ![Dialogfeld „Neuen Typ generieren“](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Dialogfeld "Neuen Typ generieren"](../ide/media/genotherdialog.png)
 
 6.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.
 
@@ -134,7 +134,7 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
 
      Das Fenster **Testergebnisse** wird in der folgenden Abbildung gezeigt.
 
-     ![Testergebnisse mit Fehlern](../ide/media/testsfailed.png "TestsFailed")
+     ![Testergebnisse mit Fehlern](../ide/media/testsfailed.png)
 
 2.  Doppelklicken Sie im Fenster **Testergebnisse** auf jede Testergebniszeile, um zum Speicherort der einzelnen Tests zu gelangen.
 
@@ -156,7 +156,7 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
 
      Dieses Mal werden die Tests bestanden. Das Fenster **Testergebnisse** wird in der folgenden Abbildung gezeigt.
 
-     ![Testergebnisse ohne Fehler](../ide/media/testspassed.png "TestsPassed")
+     ![Testergebnisse ohne Fehler](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Siehe auch
 

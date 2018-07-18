@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101793"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehle auf einer Startseite
 Wenn Sie eine benutzerdefinierte Startseite erstellen, können Sie Visual Studio-Befehle hinzufügen. Dieses Dokument beschreibt die verschiedenen Methoden zum Binden von Visual Studio-Befehle auf die Verwendung von XAML-Objekte auf einer Startseite.  

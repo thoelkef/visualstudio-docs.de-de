@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133184"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Hinter den Kulissen Teil 2
 In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) wurde erläutert, wie die **neues Projekt** Dialogfeld Feld wird aufgefüllt. Angenommen, Sie haben ausgewählt, eine **Visual C#-Windows-Anwendung**, ausgefüllten der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  

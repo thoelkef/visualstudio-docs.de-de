@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135412"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATIDs für Objekte, die in der Regel verwendet werden, um Projekte zu erweitern.
 Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `ProjectItem` Automatisierung von Objekten für die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], und [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte. Diese CATIDs werden in VSLangProj.olb definiert.  

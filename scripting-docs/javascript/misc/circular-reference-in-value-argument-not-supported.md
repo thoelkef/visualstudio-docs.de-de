@@ -1,13 +1,13 @@
 ---
-title: "Zirkelverweis in Wertargument nicht unterstützt | Microsoft Docs"
-ms.custom: 
+title: Zirkelverweis in Wertargument nicht unterstützt | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 5d06f0fa-86f5-49d1-8d50-af1759990f43
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633140"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Wert, der ungültig ist. Die `value` Argument, ein Array oder Objekt enthält einen Zirkelverweis.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127925"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Erstellen ein Windows Installer-Paket
 Daten auf den Laufwerken des Windows Installer-Modells. Anstatt ein prozeduralen Skript zum Kopieren von Dateien und Schreiben Registrierungseinträge geschrieben, dienstautor z. B. Zeilen und Spalten in Datenbanktabellen, die Datei- und Registrierungsberechtigungen Daten enthalten.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481475"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Dialogfeld "Warnung: Veralteter Code"
 Dieses Dialogfeld wird angezeigt, wenn Sie vorgenommen haben Änderungen an systemeigenem code, der **bearbeiten und Fortfahren** konnte nicht sofort übernommen werden. Dadurch ist ein Teil des systemeigenen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [Vorgehensweise: Arbeiten mit veraltetem Code](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

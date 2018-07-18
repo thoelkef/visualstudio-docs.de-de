@@ -1,6 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b386e3a607101774d755d8673e76557b0ef66ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745775"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders
 
@@ -48,13 +50,13 @@ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau 
 > [!NOTE]
 > In dieser Abbildung wird eine orangene Farbe ausgewählt, um den Effekt des Shaders besser zu veranschaulichen. Da die Vorschauform jedoch keine Position im Raum hat, kann der Shader nicht vollständig im Voraus im Shader-Designer angeschaut werden. Der Shader muss in einer echten Szene vorausgeschaut werden, um den vollen Effekt zu demonstrieren.
 
- ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-gradient-effect-graph.png)
 
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.
 
  In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben unter [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md) gezeigt wird, auf die 3D-Szene angewandt wurde. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
 
- ![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png)
 
  Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

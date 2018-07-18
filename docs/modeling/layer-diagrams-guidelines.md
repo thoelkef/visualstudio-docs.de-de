@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954391"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeit Diagrammen: Richtlinien
 Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhängigkeit Diagramme* in Visual Studio. Stellen Sie sicher, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, durch Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur von Abhängigkeit Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).

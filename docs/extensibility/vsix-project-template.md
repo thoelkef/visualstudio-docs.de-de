@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142392"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studio-Erweiterungen in einem VSIX-Projekt zu umschließen, und veröffentlichen Sie das Paket auf die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106980"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Gewusst wie: Debuggen einer benutzerdefinierten Debugmodul
 Ein Projekttyp startet die Debugging-Modul (DE) aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode. Dies bedeutet, dass die DE, unter der Kontrolle der Instanz von gestartet wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Steuern des Projekttyps. Allerdings diese Instanz von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE kann nicht gedebuggt werden. Im folgenden sind die Schritte, die Ihre benutzerdefinierte DE Debuggen können.  
@@ -59,7 +60,7 @@ Ein Projekttyp startet die Debugging-Modul (DE) aus der <xref:Microsoft.VisualSt
   
 1.  Starten Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Geben Sie im normalen Registrierungsstruktur und laden das Projekt Projekt (Dies ist, die Quelle der Projekttyp keine Instanziierung des Project-Typs).  
   
-2.  Öffnen Sie die Projekteigenschaften, und wechseln Sie zu der **Debuggen** Seite. Für die **Befehl**, geben Sie den Pfad zu der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (Standardmäßig ist dies *[Laufwerk]*\Programme\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Öffnen Sie die Projekteigenschaften, und wechseln Sie zu der **Debuggen** Seite. Für die **Befehl**, geben Sie den Pfad zu der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (Standardmäßig ist dies *[Laufwerk]* \Programme\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Für die **Befehlsargumente**, Typ `/rootsuffix exp` für die experimentelle Registrierungsstruktur (erstellt als VSIP installiert wurde).  
   

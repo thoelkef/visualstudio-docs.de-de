@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668706"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategien für die Problembehandlung bei Testcontrollern und Test-Agents in Auslastungstests
 
@@ -44,7 +45,7 @@ Dieser Artikel behandelt einige der häufigsten Probleme, die Ihnen bei der Arbe
 
 3.  Bearbeiten Sie den Eintrag für den `EqtTraceLevel`-Schalter im Abschnitt Systemdiagnose der Datei. Der Code sollte diesem ähneln:
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ Dieser Artikel behandelt einige der häufigsten Probleme, die Ihnen bei der Arbe
 
 -   Installieren Sie den Test-Agent erneut. Geben Sie dieses Mal die IP-Adresse des Testcontrollers anstelle des Namens des Testcontrollers an.
 
- Dies gilt für den Testcontroller, den Test-Agent-Dienst und den Test-Agent-Prozess. Die `BindTo`-Eigenschaft muss für jeden Prozess festgelegt werden, der auf einem Computer mit mehr als einem Netzwerkadapter ausgeführt wird. Die Vorgehensweise zum Festlegen der `BindTo`-Eigenschaft entspricht für alle drei Prozesse der Vorgehensweise, die zuvor für den Testcontroller beschrieben wurde. Zum Festlegen der Protokollierungsebenen für den Test-Agent-Dienst und den Test-Agent-Prozess verwenden Sie die Konfigurationsdateien, die in [Festlegen der Protokollierungsebene auf einem Testcontrollercomputer](#Logging) aufgeführt sind.
+ Dies gilt für den Testcontroller, den Test-Agent-Dienst und den Test-Agent-Prozess. Die `BindTo`-Eigenschaft muss für jeden Prozess festgelegt werden, der auf einem Computer mit mehr als einem Netzwerkadapter ausgeführt wird. Die Vorgehensweise zum Festlegen der `BindTo`-Eigenschaft entspricht für alle drei Prozesse der Vorgehensweise, die zuvor für den Testcontroller beschrieben wurde. Zum Festlegen der Protokollierungsebenen für den Test-Agent-Dienst und den Test-Agent-Prozess verwenden Sie die Konfigurationsdateien, die in [Festlegen der Protokollierungsebene auf einem Testcontrollercomputer](#setting-the-logging-level-on-a-test-controller-computer) aufgeführt sind.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263225"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690851"
 ---
 # <a name="analyze-performance-tools-data"></a>Analysieren der durch Leistungstools erstellten Daten
 Leistungsberichte der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ermöglichen es Ihnen, Leistungsprobleme der Anwendung einzusehen und zu analysieren. Dieser Bereich gibt Ihnen einen Überblick über Leistungsberichte und -ansichten, die Sie verwenden können, um Leistungsdaten zu untersuchen.  

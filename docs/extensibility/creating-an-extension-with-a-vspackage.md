@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109450"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Erstellen eine Erweiterung mit einem VSPackage
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie ein VSIX-Projekt erstellen, und fügen Sie ein VSPackage-Projektelement hinzu. Den UI-Shell-Dienst abrufen, um ein Meldungsfeld anzuzeigen, verwenden Sie das VSPackage.  

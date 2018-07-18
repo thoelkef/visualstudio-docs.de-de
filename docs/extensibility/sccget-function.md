@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140651"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie von einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zum Bearbeiten. In den meisten Systemen werden die Dateien als schreibgeschützt gekennzeichnet.  

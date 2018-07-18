@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466178"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbrochen wird, sehen Sie die **Ausnahmen-Hilfe**, in der Standardeinstellung. Wenn Sie deaktiviert haben die **Ausnahmen-Hilfe** in der **Optionen** (Dialogfeld), sehen Sie die **Ausnahmen-Assistent** (C#- oder Visual Basic) oder die **Ausnahme**  (Dialogfeld) (C++).  

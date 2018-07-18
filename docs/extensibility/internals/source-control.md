@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129627"
 ---
 # <a name="source-control"></a>Quellcodeverwaltung
 Dieser Abschnitt beschreibt die Optionen für die Implementierung von Datenquellen-Steuerelements als eine integrierte Funktion von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], durch den ein Quellcodeverwaltungs-Plug-in oder ein Datenquellen-Steuerelement VSPackage.  

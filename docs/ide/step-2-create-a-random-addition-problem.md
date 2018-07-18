@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747866"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Schritt 2: Erstellen einer zufälligen Additionsaufgabe
 Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem Sie mathematische Aufgaben hinzufügen, die auf Zufallszahlen basieren. Sie erstellen außerdem eine Methode mit dem Namen `StartTheQuiz()`, mit der die Aufgaben ausgefüllt und der Countdownzeitgeber gestartet wird. Später in diesem Lernprogramm fügen Sie die Subtraktions-, die Multiplikations- und Divisionsaufgaben hinzu.
@@ -59,7 +60,7 @@ Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem
 
      Wenn Sie im Code den Punkt (.) nach `randomizer`randomizer eingeben, wird ein IntelliSense-Fenster geöffnet, in dem alle Methoden des Zufallsobjekts angezeigt werden, die Sie aufrufen können. Beispielsweise führt IntelliSense die `Next()`-Methode wie folgt auf.
 
-     ![Next-Methode](../ide/media/express_randomwhite.png "Express_RandomWhite") Next-Methode
+     ![Next-Methode](../ide/media/express_randomwhite.png) Next-Methode
 
      Wenn Sie einen Punkt nach einem Objekt eingeben, zeigt IntelliSense eine Liste der Member des Objekts an, wie Eigenschaften, Methoden und Ereignisse.
 
@@ -88,7 +89,7 @@ Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem
 
      Eine zufällige Additionsaufgabe wird, wie die folgende Abbildung veranschaulicht, angezeigt.
 
-     ![Problem bei der Addition von Zufallszahlen](../ide/media/express_additionproblem.png "Express_AdditionProblem") Problem bei der Addition von Zufallszahlen
+     ![Problem bei der Addition von Zufallszahlen](../ide/media/express_additionproblem.png) Problem bei der Addition von Zufallszahlen
 
      Im nächsten Lernprogrammschritt fügen Sie die Summe hinzu.
 

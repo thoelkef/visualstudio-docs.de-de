@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581031"
 ---
 # <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profilerdatendateien, die Profilerstellungsdaten für Threadkonflikte enthalten.  

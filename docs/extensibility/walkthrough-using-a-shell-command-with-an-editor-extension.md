@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148378"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shell-Befehls mit der Erweiterung-Editor
 Aus einem VSPackage können Sie Funktionen, z. B. Menübefehlen in den Editor hinzufügen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Textansicht im Editor ein Randsteuerelement hinzugefügt, durch den Aufruf eines Menübefehls.  

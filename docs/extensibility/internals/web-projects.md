@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141118"
 ---
 # <a name="web-projects"></a>Webprojekte
 Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mithilfe von herkömmlichen Programmiersprachen, z. B. Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu erfassen und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw. Webseiten mit zugeordneten Codes werden als intelligente Webseiten bezeichnet.  

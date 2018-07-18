@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951309"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domäneneigenschaften in eine domänenspezifische Sprache (DSL) für den Benutzer auf das Diagramm und in Ihrer Sprache-Explorer angezeigt werden können und Programmcode zugegriffen werden können. Eigenschaften unterscheiden sich jedoch auf die Weise, dass ihre Werte gespeichert werden.

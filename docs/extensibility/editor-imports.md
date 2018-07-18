@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132733"
 ---
 # <a name="editor-imports"></a>Imports-Editor
 Sie können eine Reihe von Editor-Dienste, Factorys und Makler, die die Erweiterung verschiedene Arten des Zugriffs auf dem Core-Editor bieten importieren. Sie können z. B. Importieren der <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> mit stellen eine <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> für einen bestimmten Inhaltstyp. (Dieser Navigator können Sie verschiedene Arten von Suchvorgängen in einem Textpuffer ausführen.)  

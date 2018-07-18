@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33881223"
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
@@ -55,7 +56,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     Neben den Ereignissen, die für die Momentaufnahmen verfügbar sind, wird ein Kamerasymbol angezeigt. 
 
-    ![Ereignisse mit Momentaufnahmen Registerkarte](../debugger/media/intellitrace-events-tab-with-snapshots.png "Registerkarte "Ereignisse" mit Momentaufnahmen Haltepunkte und Schritte")
+    ![Ereignisse mit Momentaufnahmen Registerkarte](../debugger/media/intellitrace-events-tab-with-snapshots.png "Registerkarte \"Ereignisse\" mit Momentaufnahmen Haltepunkte und Schritte")
 
     Aus Gründen der Leistung werden Momentaufnahmen nicht implementiert, wenn Sie sich sehr schnell. Wenn kein Kamerasymbol neben dem Schritt angezeigt wird, versuchen Sie es ausführen in Einzelschritten langsamer.
 

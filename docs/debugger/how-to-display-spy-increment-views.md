@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471686"
 ---
 # <a name="how-to-display-spy-views"></a>Gewusst wie: Anzeigen von Spy++-Ansichten
 Spy++-gestartet wird, öffnet [Fensteransicht](../debugger/windows-view.md), eine Strukturansicht aller Windows und auf dem Computer verfügbaren Steuerelemente. In diesem Fenster Stamm beschriftete ist "Windows 1". Es sind auch drei weitere Spy++-Ansichten verfügbar: [Ansicht "Nachrichten"](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md), und [Threadansicht](../debugger/threads-view.md). Sie können anzeigen, die gewünschte Ansicht aus der **Spy++** Menü. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).  

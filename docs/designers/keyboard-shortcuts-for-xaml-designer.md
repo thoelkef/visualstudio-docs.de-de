@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922441"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
 Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird.

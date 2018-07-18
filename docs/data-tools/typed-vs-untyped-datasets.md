@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922322"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte im Vergleich zu nicht typisierten datasets
 Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleitet wird <xref:System.Data.DataSet> Klasse, und klicken Sie dann mithilfe von Informationen aus der **Dataset-Designer**, die in einer XSD-Datei zum Generieren einer neuen gespeichert wird stark typisierten Dataset-Klasse. Informationen aus dem Schema (Tabellen, Spalten usw.) generiert und in diese neue Datasetklasse als einen Satz von Eigenschaften und Objekte erster Klasse kompiliert. Da ein typisiertes Dataset von der Basisklasse erbt <xref:System.Data.DataSet> -Klasse, übernimmt die typisierte Klasse die Funktionalität der <xref:System.Data.DataSet> Klasse und kann mit Methoden, die eine Instanz von verwendet werden eine <xref:System.Data.DataSet> Klasse als Parameter.

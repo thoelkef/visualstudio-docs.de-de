@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480084"
 ---
 # <a name="how-to-refresh-the-view"></a>Gewusst wie: Aktualisieren der Ansicht
 Spy++-erstellt eine "Momentaufnahme" der Systemtabellen und aktualisiert eine Ansicht auf Grundlage dieser Informationen. Es ist wichtig, dass Sie Ihre Systemsichten in regelmäßigen Abständen aktualisieren. Wenn Sie verfügen über eine Spy++-Ansicht öffnen und die Ansicht nicht aktualisiert haben, sehen Sie nicht die Prozesse, Threads und Fenstern, die anschließend erstellt werden. Darüber hinaus möglicherweise Elemente angezeigt, die nicht mehr vorhanden sind. Die **aktualisieren** Befehl steht für alle Ansichten mit Ausnahme der Ansicht "Nachrichten".  

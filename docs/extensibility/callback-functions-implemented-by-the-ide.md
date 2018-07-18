@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109687"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Rückruffunktionen implementiert, die von der IDE
 Stellen Sie die Integration mit der integrierten Entwicklungsumgebung (IDE) als eine nahtlose möglichst und eine einheitliche benutzererfahrung das Quellsteuerelement-Plug-in Rückruffunktionen können, die von der IDE implementiert werden. Das plug-in kann diese Funktionen zu geeigneten Zeitpunkten während einer Quelle-Steuerungsvorgang zum Weiterleiten von Informationen an den IDE aufrufen; die IDE können Sie diese Informationen als eingebettete Elemente in der systemeigenen Benutzeroberfläche anzeigen. Der Benutzer hat eine weniger fragmentierte Experience in diesem Szenario als wenn das plug-in eine eigene Benutzeroberfläche beschäftigt.  

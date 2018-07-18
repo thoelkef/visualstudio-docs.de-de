@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862997"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
 Als Administrator haben Sie die Möglichkeit, Abonnements für Ihre Organisation zu verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.

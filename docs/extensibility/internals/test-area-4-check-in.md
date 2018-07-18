@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133126"
 ---
 # <a name="test-area-4-check-in"></a>Testbereich 4: Melden Sie sich
 Dieser Bereich der quellcodeverwaltung für die Test-Plug-in behandelt Senden der aktualisierten Elemente in den Versionsspeicher über die **Einchecken** Befehl.  

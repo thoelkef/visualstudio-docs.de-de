@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746311"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
 Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen. Alternativ können Sie „Eigenschaften“ in das Suchfeld **Schnellstart** auf der Menüleiste eingeben.
 
-![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif)
 
 .NET-Projekte haben womöglich außerdem einen Eigenschaftenknoten in der Projektstruktur selbst.
 
-![Knoten „Eigenschaften“ in der Struktur des Projektmappen-Explorers](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Knoten "Eigenschaften" in der Struktur des Projektmappen-Explorers](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
@@ -33,7 +34,7 @@ Projekteigenschaften werden in Gruppen organisiert, und jede Gruppe hat eine eig
 
 In C#-, Visual Basic- und F#-Projekten sind Eigenschaften im **Projekt-Designer** verfügbar. Folgende Abbildung zeigt die Eigenschaftsseite **Build** für ein WPF-Projekt in C#:
 
-![Visual Studio-Projekt-Designer](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Visual Studio-Projekt-Designer](../ide/media/vs2015_proppage_build.png)
 
 Informationen zu den einzelnen Eigenschaftsseiten im **Projekt-Designer** finden Sie unter [Project properties reference (Referenz zu Projekteigenschaften)](../ide/reference/project-properties-reference.md).
 
@@ -44,7 +45,7 @@ Informationen zu den einzelnen Eigenschaftsseiten im **Projekt-Designer** finden
 
 C++- und JavaScript-Projekte haben eine andere Benutzeroberfläche zum Verwalten von Projekteigenschaften. Die folgende Abbildung zeigt eine Eigenschaftenseite für ein C++-Projekt (JavaScript-Seiten sind ähnlich):
 
-![Visual C&#43;&#43;-Projekteigenschaften](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C&#43;&#43;-Projekteigenschaften](../ide/media/vs2015_projprops_cpp.png)
 
 Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften (C++)](/cpp/ide/working-with-project-properties). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).
 

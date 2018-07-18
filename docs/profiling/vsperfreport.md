@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448073"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572214"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist .csv.  
+Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist eine *CSV-Datei*.  
   
  VSPerfReport verwendet die folgende Syntax:  
   
@@ -33,15 +33,15 @@ Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Bitte beachten Sie, dass es sich bei `filename` um eine gültige VSP- oder VSPS-Datei handeln muss.  
+ Bitte beachten Sie, dass es sich bei `filename` um eine gültige *VSP-* oder *VSPS-Datei* handeln muss.  
   
- Das VSPerfReport-Befehlszeilentool wird ebenfalls verwendet, um VSP- oder VSPS-Dateien miteinander zu vergleichen. Verwenden Sie die folgende Syntax, um einen Unterschiedebericht („Diff“) zu generieren:  
+ Das VSPerfReport-Befehlszeilentool wird ebenfalls verwendet, um *VSP-* oder *VSPS-Dateien* miteinander zu vergleichen. Verwenden Sie die folgende Syntax, um einen Unterschiedebericht („Diff“) zu generieren:  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- Es muss sich bei `vspfilename1 and vspfilename2` um gültige VSP- oder VSPS-Dateien handeln.  
+ Es muss sich bei `vspfilename1 and vspfilename2` um gültige *VSP-* oder *VSPS-Dateien* handeln.  
   
 ## <a name="symbol-files"></a>Symboldateien  
  Das VSPerfReport-Befehlszeilentool benötigt Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien, um Symbolinformationen wie Funktionsnamen und Zeilennummern anzuzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
@@ -58,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|Entfernt zuvor eingebettete Symbole aus einer Profilerdatendatei. Führen Sie diesen Befehl aus, bevor Sie PackSymbols ein zweites Mal ausführen.|  
 |**SymbolPath:** `path`|Gibt mindestens einen Suchpfad oder Symbolserver an, die Symbole für die Profilerdatendatei enthalten.|  
 |**DebugSymPath**|Listet die Speicherorte auf, die nach den Symbolen durchsucht werden, und gibt an, ob diese gefunden werden. Diese Option ist nützlich für das Beheben von Problemen mit der Symbolauflösung.|  
-|**PackSymbols**|Speichert Symbole in der Profilerdatendatei (.vsp.), damit keine Symboldateien (.pdb) für die Analyse benötigt werden|  
+|**PackSymbols**|Speichert Symbole in der Profilerdatendatei (VSP), damit keine Symboldateien (*PDB*) für die Analyse benötigt werden.|  
 |**Ausgabe:** *Pfad*|*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
 |**SummaryFile**|Analysieren und speichern Sie die analysierten Informationen in einer VSPS-Zusammenfassungsdatei|  
 |**PrintMarks**|Zeigt die Namen und Zeitstempel sämtlicher Markierungen in einer Berichtsdatei an.|  
@@ -85,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Optionen|description|  
 |-------------|-----------------|  
-|**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (VSP- oder VSPS-Dateien). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|  
+|**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (*VSP-* oder *VSPS-Dateien*). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|  
 |**Diff:**[*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|  
 |**DiffTable:**[*Tabellenname*]|Verwendet die angegebene Tabelle zum Vergleichen von Dateien. Standardmäßig wird die Funktionstabelle verwendet.|  
 |**DiffColumn:**[*Spaltenname*]|Verwendet diese angegebene Spalte zum Vergleichen von Werten. Standardmäßig handelt es sich dabei um die Spalte mit dem prozentualen Anteil exklusiver Stichproben.|  

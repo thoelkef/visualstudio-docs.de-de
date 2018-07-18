@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563673"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Gewusst wie: Erstellen eines Paketmanifests
 Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie ein Bootstrapperpaket verwenden. Ein Bootstrapperpaket enthält eine einzelne Produktmanifestdatei aber ein Paketmanifest für jedes Gebietsschema. Gemeinsam genutzte Funktionen in den verschiedenen lokalisierten Versionen sollte in das Produktmanifest wechseln.  

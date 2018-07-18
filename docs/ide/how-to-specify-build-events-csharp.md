@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd11f5b7db7272a453ec2ebb5c8a0a794498e517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746259"
 ---
 # <a name="how-to-specify-build-events-c"></a>Vorgehensweise: Angeben von Buildereignissen (C#)
 
@@ -80,7 +81,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 3.  Fügen Sie in *program.cs* die folgende Zeile in die andere `using`-Anweisung am Anfang der Datei ein:
 
-    ```
+    ```csharp
     using System.Xml;
     ```
 
@@ -148,7 +149,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 1.  Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** **Visual C#**, klicken Sie auf **Klassischer Windows-Desktop** und dann auf die Vorlage **Windows Forms-Anwendung**. Benennen Sie das Projekt mit `CSWinApp`.
+2.  Erweitern Sie im Dialogfeld **Neues Projekt** **Visual C#**, klicken Sie auf **Windows-Desktop** und dann auf die Vorlage **Windows Forms-App**. Benennen Sie das Projekt mit `CSWinApp`.
 
 3.  Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
@@ -160,7 +161,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
      Durchsuchen Sie die Datei nach dem `<osVersionInfo>`-Element. Die Version kann z.B. folgende sein:
 
-    ```
+    ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
@@ -180,7 +181,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
      Jetzt sollte die Version folgendermaßen lauten:
 
-    ```
+    ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 

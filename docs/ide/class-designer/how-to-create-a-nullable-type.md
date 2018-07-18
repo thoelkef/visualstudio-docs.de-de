@@ -21,6 +21,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957365"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Vorgehensweise: Erstellen eines Typs im Klassen-Designer, der NULL-Werte zulässt
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577495"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
 Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Thema werden die Gründe hierfür beschrieben. Zudem wird die Prozedur erläutert.  

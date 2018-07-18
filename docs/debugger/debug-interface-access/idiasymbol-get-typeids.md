@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470669"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 Ruft ein Array von Werten compilerspezifisch Bezeichner für dieses Symbol ab.  

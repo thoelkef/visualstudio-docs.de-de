@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131571"
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automation für VSPackages
 Es gibt zwei Hauptmethoden, um Automatisierung Ihrer VSPackages bereitzustellen: durch die Implementierung des VSPackage-Objekten und durch die Implementierung von Automation standard-Objekte. Im Allgemeinen werden diese zusammen verwendet, um das Automatisierungsmodell der Umgebung zu erweitern.  

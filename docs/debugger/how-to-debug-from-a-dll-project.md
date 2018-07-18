@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475810"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Vorgehensweise: Debuggen von DLL-Projekt in Visual Studio
 Eine Möglichkeit zum Debuggen einer DLL-Projekt wird an die aufrufende Anwendung in den Projekteigenschaften der DLL-Projekts, und dann Sie das Debuggen über das DLL-Projekt selbst starten können. Diese Methode funktioniert, muss die Anwendung die DLL aufrufen und die DLL in den Speicherort, an die Anwendung erwartet, gefunden, werden muss (, andernfalls die Anwendung möglicherweise eine andere Version der DLL zu suchen und zu laden, die stattdessen und es wird nicht die Haltepunkte erreicht). Weitere Methoden zum Debuggen von DLLs finden Sie unter [DLL-Projekte Debuggen](../debugger/debugging-dll-projects.md).

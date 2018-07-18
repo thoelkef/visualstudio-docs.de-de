@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129471"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Vorgehensweise: Bereitstellen von Automation für Windows
 Sie können die Automatisierung Dokument-und Toolfenstern bereitzustellen. Mit der Automatisierung ist ratsam, wenn Sie in einem Fenster Automatisierungsobjekte verfügbar machen möchten, und die Umgebung noch nicht bieten Sie eine vorgefertigte Automatisierungsobjekt wie bei eine Aufgabenliste.

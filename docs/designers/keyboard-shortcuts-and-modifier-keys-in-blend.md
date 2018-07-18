@@ -1,6 +1,7 @@
 ---
 title: Tastenkombinationen und Zusatztasten in Blend
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd5299a9384e672f00150997ee4310de6c3282c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747416"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
 Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird. Bei Tastenkombinationen gibt es in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] die beiden folgenden Kategorien:
@@ -22,13 +24,13 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 
      Drücken Sie zum Verwenden der Zugriffstasten zuerst die ALT-TASTE oder F10, um die Unterstriche anzuzeigen, und drücken Sie dann den entsprechenden Buchstaben des Menü- oder Dialogfeldelements. Alternativ dazu können Sie auch durch ein Menü oder Dialogfeld navigieren, indem Sie die TAB-TASTE oder die Pfeiltasten verwenden. Wenn Sie in [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] z.B. die ALT-TASTE drücken, wird im Menü **Datei** unter dem Buchstaben **D** ein Unterstrich angezeigt, um die Zugriffstaste anzugeben. Um ein Projekt zu öffnen, können Sie die ALT-TASTE gedrückt halten, den Buchstaben D drücken und dann den Buchstaben F drücken.
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Zugriffstasten, die nach dem Drücken der ALT-Taste mit einem Unterstrich dargestellt werden
+     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) Zugriffstasten, die nach dem Drücken der ALT-TASTE mit einem Unterstrich dargestellt werden
 
 -   **Tastenkombinationen** Sie können Tastenkombinationen verwenden, um eine Aktion auszuführen (z.B. das Auswählen eines Menübefehls oder das Ändern des Verhaltens eines Werkzeugs), indem Sie eine Tastenkombination drücken.
 
      Auf der Benutzeroberfläche von [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] können Sie die meisten Tastenkombinationen leicht identifizieren. Sie werden jeweils rechts von den Menübefehlen angezeigt. Im Menü **Datei** wird für den Menübefehl **Projekt öffnen** beispielsweise die Tastenkombination STRG+UMSCHALT+O angezeigt. Zeigen Sie mit der Maus auf das Tool, um die Tastenkombinationen für ein Tool im Bereich **Werkzeuge** anzuzeigen.
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Tastenkombinationen, die neben Menüelementen angezeigt werden, für die Tastenkombinationen verfügbar sind
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) Tastenkombinationen, die neben relevanten Menübefehlen angezeigt werden
 
  Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](http://go.microsoft.com/fwlink/?LinkId=75069).
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135595"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt, oder den Fokus hat, unmittelbar vor dem Ausführen der Fokus auf ein Toolfenster verschoben wurde. Sie können den Kontext für einen Editor angeben, wie folgt:  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481800"
 ---
 # <a name="message-search-dialog-box"></a>Meldungssuche (Dialogfeld)
 Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für eine bestimmte Nachricht in [Ansicht "Nachrichten"](../debugger/messages-view.md). Zum Anzeigen dieses Dialogfelds verschieben Sie den Fokus auf ein Nachrichten anzeigen. Wählen Sie dann **Nachricht suchen** aus der **Suche** Menü.  

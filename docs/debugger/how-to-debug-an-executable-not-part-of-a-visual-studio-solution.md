@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476246"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Vorgehensweise: Debuggen eine ausführbaren Datei, die nicht Teil einer Visual Studio-Projektmappe ist
 Sie möchten manchmal eine ausführbare Datei (.exe-Datei) zu debuggen, die nicht Teil einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Die ausführbare Datei wurde möglicherweise außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt, oder sie stammt von einem anderen Entwickler.  

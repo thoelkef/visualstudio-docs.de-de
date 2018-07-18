@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747507"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
@@ -57,7 +58,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Klassischer Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich **Leeres Projekt (.NET Framework)** aus. Weisen Sie dem Projekt den Namen „QuickDate“ zu, und klicken Sie anschließend auf **OK**.
+1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich **Leeres Projekt (.NET Framework)** aus. Weisen Sie dem Projekt den Namen „QuickDate“ zu, und klicken Sie anschließend auf **OK**.
 
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 

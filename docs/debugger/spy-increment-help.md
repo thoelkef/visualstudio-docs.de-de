@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476604"
 ---
 # <a name="spy-help"></a>Spy++-Hilfe
 Die Dokumentation für das Hilfsprogramm Spy++ enthält zwei Gruppen von allgemeinen Themen auf mithilfe von Spy++ und für das Spy++-Ansichten. Danach folgt von Spy++-Referenz, die weitere Details für jede im Kontextmenü verfügbaren Befehl und das Dialogfeld bereitstellt.  

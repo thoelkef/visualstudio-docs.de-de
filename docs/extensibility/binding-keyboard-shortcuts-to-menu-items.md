@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103356"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Bindung von Tastenkombinationen auf Menüelemente
 Um eine Tastenkombination zu einem benutzerdefinierten Menübefehl zu binden, fügen Sie nur einen Eintrag zur VSCT-Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Befehle der Hilfesymbolleiste eine Tastenkombination zugeordnet, und wie Sie das Tastaturzuordnungsschema im Standardeditor anwenden oder nur für einen benutzerdefinierten Editor.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950542"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
 Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in angezeigt wird der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fenster.

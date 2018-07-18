@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750869"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generieren von Komponententests für Code mit IntelliTest
 IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponententests zu erzeugen. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Für jede bedingte Verzweigung im Code wird eine Fallanalyse ausgeführt. Beispielsweise werden `if`-Anweisungen, Assertionen und alle Vorgänge analysiert, die Ausnahmen auslösen können. Auf Basis dieser Analyse werden Testdaten für einen parametrisierten Einheitstest jeder Ihrer Methoden erzeugt, wobei Komponententests mit einer hohen Codeabdeckung erstellt werden.
@@ -41,15 +42,15 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
 
 2.  Klicken Sie mit der rechten Maustaste auf eine Methode im Code, und wählen Sie **IntelliTest ausführen** , um Komponententests für den Code in der Methode zu generieren.
 
-     ![Klicken Sie mit der rechten Maustaste auf Ihrer Methode zum Generieren der Komponententests](../test/media/runpex.png "RunPEX")
+     ![Klicken Sie mit der rechten Maustaste auf Ihre Methode, um Komponententests zu generieren.](../test/media/runpex.png)
 
      IntelliTest führt den Code mehrfach mit unterschiedlichen Eingaben aus. Zu jedem Durchlauf werden in der Tabelle die Testeingabedaten und die resultierende Ausgabe oder Ausnahme aufgeführt.
 
-     ![Das Fenster „Erkundungsergebnisse“ wird mit Tests angezeigt](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![Das Fenster "Erkundungsergebnisse" wird mit Tests angezeigt](../test/media/pexexplorationresults.png)
 
      Um Komponententests für alle öffentlichen Methoden in einer Klasse zu generieren, klicken Sie einfach mit der rechten Maustaste auf die Klasse anstatt auf eine bestimmte Methode. Wählen Sie dann **IntelliTest ausführen**. Verwenden Sie die Dropdownliste im Fenster "Exploration Results", um die Komponententests und die Eingabedaten für jede Methode der Klasse anzuzeigen.
 
-     ![Wählen Sie die anzuzeigenden Testergebnisse aus der Liste aus](../test/media/selectpextest.png "SelectPEXTest")
+     ![Wählen Sie die anzuzeigenden Testergebnisse aus der Liste aus](../test/media/selectpextest.png)
 
      Prüfen Sie bei bestandenen Tests, ob die gemeldeten Ergebnisse in der Ergebnisspalte den Erwartungen an den Code entsprechen. Korrigieren Sie bei nicht bestandenen Tests den Code entsprechend. Führen Sie dann IntelliTest noch einmal aus, um die Korrekturen zu überprüfen.
 
@@ -57,11 +58,11 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
 
 1.  Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.
 
-     ![Wählen Sie „Tests“ aus, klicken Sie mit der rechten Maustaste, und klicken auf „Speichern“](../test/media/savepextests.png "SavePEXTests")
+     ![Wählen Sie „Tests“ aus, klicken Sie mit der rechten Maustaste, und wählen Sie „Speichern“ aus.](../test/media/savepextests.png)
 
      Sie können das Testprojekt und den erstellten parametrisierten Komponententest anzeigen. Die einzelnen Komponententests, die jeweils einer Zeile entsprechen, werden in der .g.cs-Datei im Testprojekt gespeichert, und ein parametrisierter Komponententest wird in der entsprechenden .cs-Datei gespeichert. Sie können die Komponententests wie bei manuell erstellten Komponententests im Test-Explorer ausführen und die Ergebnisse anzeigen.
 
-     ![Öffnen Sie eine Klassendatei in der Testmethode zum Anzeigen des Komponententests](../test/media/testmethodpex.png "TestMethodPEX")
+     ![Öffnen Sie eine Klassendatei in der Testmethode zum Anzeigen des Komponententests](../test/media/testmethodpex.png)
 
      Dem Testprojekt werden auch alle erforderlichen Verweise hinzugefügt.
 
@@ -73,11 +74,11 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
 
      Rufen Sie die Warnungen auf, um zu entscheiden, was zu tun ist.
 
-     ![Rufen Sie die Warnungen auf](../test/media/pexviewwarning.png "PEXViewWarning")
+     ![Warnungen anzeigen](../test/media/pexviewwarning.png)
 
 2.  Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.
 
-     ![Klicken Sie mit der rechten Maustaste auf die Warnung, und wählen Sie die Option zum Beheben aus](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![Fix (Beheben)Klicken Sie mit der rechten Maustaste auf die Warnung, und wählen „Beheben“ aus.](../test/media/pexfixwarning.png)
 
      Diese Wahlmöglichkeit wird der Datei PexAssemblyInfo.cs hinzugefügt.
 
@@ -85,7 +86,7 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
 
 3.  Jetzt können Sie IntelliTest erneut ausführen, um einen parametrisierten Komponententest und Testdaten zu generieren, wobei nur die korrigierte Klasse verwendet wird.
 
-     ![IntelliTest zum Generieren der Testdaten erneut ausführen](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![IntelliTest zum Generieren der Testdaten erneut ausführen](../test/media/pexwarningsfixed.png)
 
 ## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Angeben: Verwenden Sie IntelliTest, um Eigenschaften für die Richtigkeit zu überprüfen, die Sie im Code angeben.
 
@@ -131,11 +132,11 @@ Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von de
 
 **A:** Ja, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus.
 
- ![Klicken Sie mit der rechten Maustaste auf „Editor“ und wählen Sie „IntelliTest erstellen“](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![Klicken Sie mit der rechten Maustaste auf „Editor“, und wählen Sie „IntelliTest erstellen“ aus.](../test/media/pexcreateintellitest.png)
 
  Übernehmen Sie das Standardformat, um Ihre Tests zu generieren, oder ändern Sie die Benennung von Projekten und Tests. Sie können ein neues Testprojekt erstellen oder die Tests in einem vorhandenen Projekt speichern.
 
- ![Erstellen Sie IntelliTest mit standardmäßigen MSTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![Erstellen von IntelliTest mit MSTest-Standardeinstellungen](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>F: Kann ich andere Komponententestframeworks mit IntelliTest verwenden?
@@ -149,7 +150,7 @@ Testframeworkerweiterungen sind auch in Visual Studio Marketplace verfügbar:
 
 Wenn Sie Visual Studio neu gestartet und Ihre Projektmappe geöffnet haben, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus. Wählen Sie hier das installierte Framework aus:
 
-![Wählen Sie anderen Komponententest-Framework für IntelliTest aus](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+![Auswählen eines anderen Komponententest-Frameworks für IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Führen Sie dann IntelliTest aus, um einzelne Komponententests in den zugehörigen .g.cs-Dateien zu generieren.
 

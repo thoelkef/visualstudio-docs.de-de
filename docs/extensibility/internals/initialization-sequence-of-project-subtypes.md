@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131607"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz Projekt Untertypen
 Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimplementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Die zur Erstellung eines Untertyps Projekt beginnt, wenn die Umgebung bestimmt, dass das Projekt GUID Typliste für ein Projekt die Dateierweiterung nicht leer ist. Die Projekt-Dateierweiterung und der Projekt-GUID angeben, ob das Projekt ist eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp. Z. B. die vbproj-Erweiterung und {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifiziert eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.

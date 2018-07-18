@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141648"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework im Editor
 Der Editor wird erstellt, mit Komponenten des Managed Extensibility Framework (MEF). Sie können eigene MEF-Komponenten zum Erweitern des Editors erstellen und Code kann auch Komponenten-Editors nutzen.  

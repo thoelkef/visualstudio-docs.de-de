@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137130"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles-Funktion
 Basierend auf einer Liste von lokalen Dateien, bestimmt diese Funktion, welche Dateien in der Quellcode-Verwaltungsdatenbank Code die entsprechenden Versionen unterscheiden.  

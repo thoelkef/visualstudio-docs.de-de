@@ -9,24 +9,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766674"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Speicherdaten über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Speicherdaten über die Befehlszeile
 
-In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools der Visual Studio-Profilerstellungstools an eine aktive eigenständige .NET Framework-Clientanwendung angefügt wird und Arbeitsspeicherdaten erfasst werden können.
+In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der Visual Studio-Profilerstellungstools an eine aktive eigenständige .NET Framework-Clientanwendung angefügt wird und Arbeitsspeicherdaten erfasst werden können.
 
 > [!NOTE]
-> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Zum Anfügen an eine .NET Framework-Anwendung und Sammeln von Arbeitsspeicherdaten müssen Sie mit dem Tool [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) die entsprechenden Umgebungsvariablen initialisieren, bevor die Zielanwendung gestartet wird. Wenn der Profiler an die Anwendung angefügt ist, können Sie die Datensammlung mit dem **VSPerfCmd.exe**-Tool anhalten und fortsetzen.
+Zum Anfügen an eine .NET Framework-Anwendung und Sammeln von Arbeitsspeicherdaten müssen Sie mit dem Tool [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) die entsprechenden Umgebungsvariablen initialisieren, bevor die Zielanwendung gestartet wird. Wenn der Profiler an die Anwendung angefügt ist, können Sie die Datensammlung mit dem *VSPerfCmd.exe*-Tool anhalten und fortsetzen.
 
 Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profilierten Prozessen getrennt und explizit beendet werden. In den meisten Fällen empfiehlt es sich, die Umgebungsvariablen für die Profilerstellung am Ende einer Sitzung zu entfernen.
 
-## <a name="attaching-the-profiler"></a>Anfügen des Profilers
+## <a name="attach-the-profiler"></a>Anfügen des Profilers
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>So fügen Sie den Profiler an eine aktive .NET Framework-Anwendung an
 
@@ -72,9 +73,9 @@ Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profili
 
     - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
 
-## <a name="controlling-data-collection"></a>Steuern der Datenauflistung
+## <a name="control-data-collection"></a>Steuern der Datensammlung
 
-Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Optionen **VSPerfCmd.exe** starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
+Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Optionen *VSPerfCmd.exe* starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
 ### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
@@ -86,7 +87,7 @@ Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steue
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den Prozess, der von `PID` angegeben wird, gestartet (**/processon**) oder beendet (**/processoff**).|
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der `PID` oder des Prozessnamens (ProcName) angegeben wurde. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|
 
-## <a name="ending-the-profiling-session"></a>Beenden der Profilerstellungssitzung
+## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
 
 Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profilierten Prozessen getrennt und explizit beendet werden. Den Profiler können Sie von einer Anwendung trennen, für die ein Profil mit der Samplingmethode erstellt wurde, indem Sie die Anwendung schließen oder die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd /shutdown** auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Mit dem Befehl **VSPerfClrEnv /off** werden die Umgebungsvariablen für die Profilerstellung gelöscht.
 

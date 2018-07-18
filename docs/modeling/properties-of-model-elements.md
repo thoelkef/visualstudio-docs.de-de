@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947715"
 ---
 # <a name="properties-of-model-elements"></a>Eigenschaften von Modellelementen
 Dieser Abschnitt enthält die Eigenschaften, die Sie im Eigenschaftenfenster angezeigt, wenn Sie ein Element in der DSL-Definitionsdiagramm oder in der DSL-Explorer auswählen.

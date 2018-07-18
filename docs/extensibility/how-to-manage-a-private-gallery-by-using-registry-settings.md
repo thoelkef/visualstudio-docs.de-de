@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126782"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten von privaten Katalog mithilfe von Registrierungseinstellungen
 Wenn Sie ein Administrator oder Entwickler einer isolierten Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, Samples Gallery oder private Kataloge steuern. Damit einen Katalog verfügbar oder nicht verfügbar ist, erstellen Sie eine PKGDEF-Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.  

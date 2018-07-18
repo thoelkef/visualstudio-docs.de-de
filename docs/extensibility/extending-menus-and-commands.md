@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128031"
 ---
 # <a name="extending-menus-and-commands"></a>Erweitern von Menüs und Befehle
 Befehle sind die Möglichkeit, die Sie Aktionen und Prozesse zu Visual Studio hinzufügen. In den meisten Fällen werden die Befehle in Menüs oder Symbolleisten angezeigt. Die VSPackage-Projektvorlage veranschaulicht, wie einen sehr grundlegenden Befehl zu implementieren. Eine Implementierung, aber etwas länger, weiterhin grundlegende finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  

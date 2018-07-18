@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565418"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung
 Alle ClickOnce-Anwendung auf Grundlage eine .exe-Datei kann werden im Hintergrund installiert und durch ein benutzerdefiniertes Installationsprogramm aktualisiert. Ein benutzerdefiniertes Installationsprogramm kann benutzerdefinierte Benutzeroberfläche während der Installation, einschließlich der benutzerdefinierten Dialogfelder für Sicherheit und Wartungsvorgänge implementieren. Zum Ausführen der Installation erforderlichen Vorgänge benutzerdefinierte Installer nutzt die <xref:System.Deployment.Application.InPlaceHostingManager> Klasse. Diese exemplarische Vorgehensweise veranschaulicht, wie ein benutzerdefiniertes Installationsprogramm erstellen, das eine ClickOnce-Anwendung im Hintergrund installiert wird.  

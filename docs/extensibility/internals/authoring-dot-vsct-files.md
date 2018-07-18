@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134772"
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 Dieses Dokument zeigt, wie zum Erstellen einer VSCT-Datei, um die integrierte Entwicklungsumgebung (IDE) von Visual Studio Menüelemente, Symbolleisten und andere Elemente der Benutzeroberfläche (UI) hinzuzufügen. Gehen Sie folgendermaßen vor, wenn Sie Elemente der Benutzeroberfläche eine Visual Studio-Paket (VSPackage) hinzufügen, die nicht bereits über eine VSCT-Datei verfügt.  

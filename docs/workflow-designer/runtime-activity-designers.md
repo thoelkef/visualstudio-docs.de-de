@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971544"
 ---
 # <a name="runtime-activity-designers"></a>Laufzeit-Aktivitätsdesigner
 Laufzeitaktivitätsdesigner werden verwendet, um Workflowaktivitäten zu speichern und zu beenden. Die Themen in diesem Abschnitt enthalten Anleitungen zum Workflow-Designer-Aktivitäts-Designer zu verwenden.

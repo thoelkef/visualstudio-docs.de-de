@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102368"
 ---
 # <a name="adding-commands-to-toolbars"></a>Hinzufügen von Befehlen zu Symbolleisten
 Eine Symbolleiste ist einer horizontalen oder vertikalen Leiste, die Schaltflächen Befehlen gebunden sind. Sie können eigene Befehle zu Symbolleisten auf vielen verschiedenen Fenstern in Visual Studio hinzufügen: Hauptfenster von Visual Studio im Projektmappen-Explorer und eigene benutzerdefinierte Toolfenster.  

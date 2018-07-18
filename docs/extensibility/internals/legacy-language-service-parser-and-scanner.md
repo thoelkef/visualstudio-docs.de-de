@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134578"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Ältere Sprachdienstparser und Scanner
 Der Parser ist das Kernstück des Sprachdiensts. Das Managed Package Framework (MPF) Sprache-Klassen erfordern eine Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalische Token, und es werden diese Token nach Typ und Funktion identifiziert.  

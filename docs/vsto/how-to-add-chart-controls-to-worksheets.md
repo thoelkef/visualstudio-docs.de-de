@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548735"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern
   Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokumentebene. Sie können auch hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelemente zur Laufzeit in VSTO-Add-ins.  

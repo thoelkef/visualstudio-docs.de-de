@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126227"
 ---
 # <a name="session-debug-manager"></a>Sitzungs-Debug-Manager
 Die Sitzungs-Debug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodule (DE), die eine beliebige Anzahl von Programmen in mehreren Prozessen in einer beliebigen Anzahl von Computern zu debuggen. Abgesehen davon, dass ein Debugmodul multiplexer, bietet die SDM einen schnellen Überblick über die Debugsitzung der IDE an.  

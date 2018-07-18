@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108785"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags, die von bestimmten Befehlen verwendet
 Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API kann geändert werden, durch einen oder mehrere Bits in einem einzelnen Wert festlegen. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle Steuerelement-Plug-in-API verwendet werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.  

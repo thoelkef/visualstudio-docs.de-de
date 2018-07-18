@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142752"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Versand von Visual Studio-Erweiterungen
 Nachdem Sie die Erweiterung entwickeln abgeschlossen haben, können Sie auf anderen Computern zu installieren, Ihren Freunden und Ihrer Kollegen freigeben oder auf Visual Studio Marketplace zu veröffentlichen. In diesem Abschnitt erläutern wir die Dinge, die Sie zum Veröffentlichen und verwalten die Erweiterung ausführen müssen: Arbeiten mit VSIX-Dateien, Veröffentlichung, zu lokalisieren und zu aktualisieren.  

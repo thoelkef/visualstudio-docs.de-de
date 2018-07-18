@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751753"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
 Steuerelemente können besser getestet werden, wenn Sie Unterstützung für das Testframework der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Beginnen Sie mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung. Konfigurieren Sie anschließend den Test-Generator der programmierten UI so, dass die benutzerdefinierten Eigenschaften des Steuerelements erkannt werden. Stellen Sie benutzerdefinierte Klassen bereit, um den Zugriff auf diese Eigenschaften aus generiertem Code zu ermöglichen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Unterstützen von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung durch Implementieren von Barrierefreiheit
 
 Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator der programmierten UI Aktionen wie z.B. Mausklicks anhand von Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Aktionen vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn das Steuerelement bei der Wiedergabe des Tests an einer anderen Stelle auf dem Bildschirm angezeigt wird, kann der generierte Code die entsprechende Aktion nicht ausführen. Wenn Sie Barrierefreiheit für das Steuerelement nicht implementieren, kann dies möglicherweise zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in unterschiedlichen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  Wenn Sie Barrierefreiheit implementieren, wird diese vom Test-Generator der programmierten UI im Rahmen der Testaufzeichnung für das Erfassen von Informationen zum Steuerelement verwendet. Bei der anschließenden Ausführung des Tests erfolgt die Wiedergabe der entsprechenden Ereignisse durch den generierten Code auf dem Steuerelement, auch wenn sich dieses an einer anderen Stelle der Benutzeroberfläche befindet. Testautoren können mithilfe der grundlegenden Eigenschaften des Steuerelements auch Assert-Vorgänge erstellen.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>So unterstützen Sie Aufzeichnung und Wiedergabe, Eigenschaftenvalidierung und Navigation für ein Windows Forms-Steuerelement
  Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
 
@@ -74,11 +75,11 @@ Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelem
 
 Nach dem Implementieren grundlegender Unterstützung für die Aufzeichnung und Wiedergabe sowie die Eigenschaftenvalidierung können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der programmierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>-Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>So unterstützen Sie die Validierung benutzerdefinierter Eigenschaften
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. Überschreiben Sie die zugängliche <xref:System.Windows.Forms.AccessibleObject.Description%2A>-Eigenschaft des Kurvenlegendenobjekts, um Werte von Rich-Eigenschaften in der Beschreibungszeichenfolge zu übergeben. Trennen Sie mehrere Werte per Semikolon (;) voneinander ab.
 
@@ -146,7 +147,7 @@ Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eige
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>So fügen Sie eine spezialisierte Klasse zum Zugriff auf das Steuerelement hinzu
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> abgeleitete Klasse, und fügen in der Sucheigenschaftenauflistung des Konstruktors den Typ des Steuerelements hinzu.
 
@@ -162,7 +163,7 @@ Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eige
 
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
 1. Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> abgeleitete Aktionsfilterklasse, von der die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> und <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> überschrieben werden.
 

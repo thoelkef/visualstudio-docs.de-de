@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101377"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debugmodul
 Ein Debugging-Modul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten-Laufzeit-Architekturen. Es ist in der Regel nur ein DE-Implementierung pro-Umgebung ausgeführt.  

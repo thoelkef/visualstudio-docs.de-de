@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134746"
 ---
 # <a name="automation-model-overview"></a>Übersicht über die Benutzeroberflächenautomatisierungs-Modell
 Das Automatisierungsmodell besteht aus einem Satz von Objekten, die für die Sie eine Visual Studio-add-in oder eine Erweiterung schreiben können. Ein Add-in ist eine Anwendung, die Visual Studio-Umgebung bearbeiten kann, und Automatisieren allgemeiner Aufgaben. Eine Visual Studio-Erweiterung kann erstellen benutzerdefinierte Komponenten für Visual Studio oder die Funktionalität des standard-Komponenten, z. B. den Texteditor hinzufügen.  

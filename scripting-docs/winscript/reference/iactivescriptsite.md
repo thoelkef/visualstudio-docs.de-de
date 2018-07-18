@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSite | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSite interface
 ms.assetid: 4d604a11-5365-46cf-ab71-39b3dbbe9f22
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725010"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Vom Host zum Erstellen einer Website für die Windows-Skriptmodul implementiert. In der Regel werden diese Website mit dem Container aller Objekte verknüpft, die für das Skript (z. B. ActiveX-Steuerelemente) sichtbar sind. In der Regel entspricht dieses Containers in das Dokument oder die Seite angezeigt wird. Microsoft Internet Explorer, würden z. B. solche einen Container für jede HTML-Seite angezeigt wird erstellen. Jede ActiveX-Steuerelement (oder andere Automatisierungsobjekt) auf der Seite und dem Skriptmodul selbst innerhalb dieses Containers aufzählbare wäre.  

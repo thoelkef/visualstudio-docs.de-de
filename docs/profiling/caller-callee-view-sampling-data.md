@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e964ec877b791fc3058068e2f89706cc5826e0f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335969"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548709"
 ---
-# <a name="caller--callee-view---sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht – Samplingdaten
+# <a name="callercallee-view---sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht: Samplingdaten
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
   
  **Aktuelle Funktion** wird im mittleren Raster angezeigt und gibt Profilerstellungsinformationen für die ausgewählte Funktion an. Die Werte umfassen alle Samplingaufrufe der Funktion.  
@@ -30,7 +30,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
  **Funktionen, die von der aktuellen Funktion aufgerufen wurden** wird im untersten Raster angezeigt und gibt Profilerstellungsinformationen für die aufgerufenen (untergeordneten) Funktionen der ausgewählten Funktion an, wenn die untergeordnete Funktion von der aktuellen Funktion aufgerufen wurde.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Weitere Informationen finden Sie unter [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Weitere Informationen finden Sie unter [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Spalte|description|  
 |------------|-----------------|  
@@ -50,6 +50,6 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
 |**Exklusive Samplings %**|Der Prozentsatz aller Samplings während der Profilerstellung, die exklusive Samplings dieser Funktion waren.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Caller/Callee view – .NET memory sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Aufrufer-/Aufgerufener-Ansicht – Instrumentierungsdaten](../profiling/caller-callee-view-instrumentation-data.md)

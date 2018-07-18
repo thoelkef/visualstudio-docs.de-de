@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448492"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573205"
 ---
 # <a name="vsinstr"></a>VSInstr
 Das VSInstr-Tool wird zum Instrumentieren von Binärdateien verwendet. Es wird mithilfe der folgenden Syntax aufgerufen:  
@@ -44,7 +44,7 @@ VSInstr [/U] filename [/options]
 |**Exclude** `:funcspec`|Gibt eine Funktionsspezifikation zum Ausschließen von der Instrumentierung durch Überprüfungen an. Dies ist hilfreich, wenn die Profilerstellung zum Einfügen der Überprüfung in einer Funktion unvorhersehbare oder unerwünschte Ergebnisse verursacht.<br /><br /> Verwenden Sie keine **Exclude**- und **Include**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Exclude**-Optionen angeben.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> **Exclude** wird mit Code Coverage unterstützt.<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace auszuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|  
 |**Include** `:funcspec`|Gibt eine Funktionsspezifikation in einer Binärdatei an, um mit Überprüfungen zu instrumentieren. Alle anderen Funktionen in den Binärdateien werden nicht instrumentiert.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Include**-Optionen angeben.<br /><br /> Verwenden Sie keine **Include**- und **Exclude**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> **Include** wird mit Code Coverage nicht unterstützt.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace einzuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|  
 |**DumpFuncs**|Listet die Funktionen innerhalb des angegebenen Images auf. Es wird keine Instrumentierung durchgeführt.|  
-|**ExcludeSmallFuncs**|Schließt kleine Funktionen, also kurze Funktionen, die keine Funktionsaufrufe ausführen, aus der Instrumentierung aus. Die Option **ExcludeSmallFuncs** bietet bei weniger Instrumentierungsoverhead eine daher verbesserte Instrumentierungsgeschwindigkeit.<br /><br /> Der Ausschluss kleiner Funktionen reduziert auch die Größe der VSP-Datei und den Zeitaufwand für die Analyse.|  
+|**ExcludeSmallFuncs**|Schließt kleine Funktionen, also kurze Funktionen, die keine Funktionsaufrufe ausführen, aus der Instrumentierung aus. Die Option **ExcludeSmallFuncs** bietet bei weniger Instrumentierungsoverhead eine daher verbesserte Instrumentierungsgeschwindigkeit.<br /><br /> Der Ausschluss kleiner Funktionen reduziert auch die Größe der *VSP-Datei* und den Zeitaufwand für die Analyse.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Fügt eine Profilmarkierung (ein Bezeichner, der zum Einschränken der Daten in Berichten verwendet wird) ein, die Sie zum Identifizieren des Beginns oder des Endes eines Datenbereichs in der VSP-Berichtsdatei verwenden können.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion<br /><br /> `Markid`: Eine positive ganze Zahl (lang), die als Bezeichner der Profilmarkierung verwendet werden soll.|  
 |**Coverage**|Führt die Coverage-Instrumentierung durch. Kann nur mit den folgenden Optionen verwendet werden: **Verbose**, **OutputPath**, **Exclude** und **Logfile**.|  
 |**Verbose**|Die **Verbose**-Option wird verwendet, um detaillierte Informationen zum Instrumentierungsprozess anzuzeigen.|  

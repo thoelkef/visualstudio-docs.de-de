@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132481"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisieren und Anzeigen von Daten
 Typ-Schnellansichten und benutzerdefinierten Viewer Darstellung der Daten in einer Weise, die schnell ein Entwickler von Bedeutung ist. Die ausdrucksauswertung (EE) kann Drittanbieter-Typ-Schnellansichten unterstützen als auch einen eigenen benutzerdefinierten Viewer angeben.  

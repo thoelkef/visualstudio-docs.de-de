@@ -1,7 +1,7 @@
 ---
-title: Codeausschnitte | Microsoft-Dokumentation
-ms.custom: ''
+title: Codeausschnitte
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -19,11 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 520aa870f85ddc3768720eafb17b0109fb270393
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924471"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -95,10 +96,10 @@ Wenn Sie `newPropertyValue` in `m_property` ändern, wird jede Instanz von `newP
 
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)  
-[Vorgehensweise: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)  
-[Bewährte Methoden für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)  
-[Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)  
-[C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)  
-[Visual C#-Codeausschnitte](../ide/visual-cpp-code-snippets.md)  
-[Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
+- [Vorgehensweise: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)
+- [Bewährte Methoden für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)
+- [Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)
+- [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
+- [Visual C#-Codeausschnitte](../ide/visual-cpp-code-snippets.md)
+- [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

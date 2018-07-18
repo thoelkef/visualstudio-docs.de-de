@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951179"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Eingabe und generiert eine neue Textdatei als Ausgabe. Beispielsweise können Sie Textvorlagen um Visual Basic- oder C#-Code zu generieren, oder können Sie einen HTML-Bericht generieren.

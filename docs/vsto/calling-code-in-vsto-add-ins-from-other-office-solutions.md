@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265327"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen
   Sie können ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen, einschließlich anderer Microsoft Office-Projektmappen, verfügbar machen. Dies ist hilfreich, wenn Ihr VSTO-Add-In einen Dienst bereitstellt, der durch andere Projektmappen verwendet werden soll. Z. B. Wenn Sie ein VSTO-Add-in für Microsoft Office Excel, die Berechnungen auf finanzielle Daten von einem Webdienst vornimmt verfügen, können andere Projektmappen diese Berechnungen durch Aufrufen der Excel-VSTO-Add-in zur Laufzeit ausführen.  

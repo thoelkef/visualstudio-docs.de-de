@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747455"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
@@ -34,13 +35,13 @@ Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sp
 
 Einige Personen haben Schwierigkeiten damit, manche Farben zu erkennen. Wenn Sie beim Schreiben von Code einen höheren Kontrast wünschen, aber nicht die üblichen Themen für hohen Kontrast verwenden möchten, bieten wir nun das Design „Blau (zusätzlicher Kontrast)“ an.
 
-  ![Vergleich der Designs „Blau“ und „Blau (zusätzlicher Kontrast)“](media/blue-extra-contrast-theme.png "Beachten Sie den Unterschied zwischen den Designs „Blau“ und „Blau (zusätzlicher Kontrast)“")
+  ![Vergleich der Designs „Blau“ und „Blau (zusätzlicher Kontrast)“](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Verwenden von Anmerkungen, um nützliche Informationen über Ihren Code anzuzeigen
 
 Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z.B. Glühbirnen, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
 
-  ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png "Zeigt, wie der Befehlssatz „Zeilenanmerkungen anzeigen“ festgelegt wird")
+  ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Zugreifen auf Symbolleisten mithilfe von Tastenkombinationen
 
@@ -82,18 +83,18 @@ Gehen Sie folgendermaßen vor:
 
 1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
 
-  ![Suchfeld in Windows 10](media/type-here-to-search.png "Eingeben von „Sounds“ in das Suchfeld auf einem Computer mit Windows 10")
+  ![Suchfeld in Windows 10](media/type-here-to-search.png)
 
   (Falls Sie Cortana aktiviert haben, können Sie alternativ „Hey Cortana“ und anschließend „Systemsounds ändern“ sagen.)
 
 2. Doppelklicken Sie auf **Systemsounds ändern**.
 
-  ![Suchergebnisse in Windows 10](media/change-system-sounds.png "Doppelklicken auf „Systemsounds ändern“ in den Suchergebnissen")
+  ![Suchergebnisse in Windows 10](media/change-system-sounds.png)
 
 3. Klicken Sie im Dialogfeld **Sound** auf die Registerkarte **Sounds**. <br><br>
  Scrollen Sie dann in **Programmereignisse** zu **Microsoft Visual Studio**, und wählen Sie die Sounds aus, die Sie auf die gewünschten Ereignisse anwenden möchten.
 
-  ![Registerkarte „Sounds“ des Sound-Applets in Windows 10](media/sound-applet.png "Doppelklicken auf „Systemsounds ändern“ in den Suchergebnissen")
+  ![Registerkarte „Sounds“ des Sound-Applets in Windows 10](media/sound-applet.png)
 
 4. Klicken Sie auf **OK**.
 

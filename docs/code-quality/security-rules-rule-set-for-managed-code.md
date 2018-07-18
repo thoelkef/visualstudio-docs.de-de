@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925041"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Regelsatz für Sicherheitsregeln für verwalteten Code
 Sie sollten berücksichtigen, dass den Microsoft-Sicherheitsregeln Regelsatz, um die Anzahl der potenziellen Sicherheitsprobleme zu maximieren, die gemeldet werden.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148661"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Neue oder geänderte Verhalten mit Editor-Adaptern
 Wenn aktualisiert werden soll, Code, die auf früheren Versionen von Visual Studio Core Editor geschrieben wurde, und Sie die Editor-Adapter (oder Shims) statt der neuen API verwenden möchten, sollten Sie beachten Sie die folgenden Unterschiede im Verhalten der Editor Adapter sein. in Bezug auf den vorherigen Core-Editor.  

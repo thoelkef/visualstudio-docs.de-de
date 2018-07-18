@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475534"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Disassembly-Code im Visual Studio-Debugger anzeigen
 Diese Funktion ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten. Es ist jedoch nicht für das Skript- oder SQL-Debuggen verfügbar.  

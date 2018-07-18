@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565639"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Gewusst wie: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, Ändern der `Publish Version` -Eigenschaft bewirkt, dass die Anwendung als Update veröffentlicht werden. Standardmäßig Visual Studio automatisch inkrementiert die `Revision` Anzahl der `Publish Version` bei jedem veröffentlichen Sie die Anwendung.  

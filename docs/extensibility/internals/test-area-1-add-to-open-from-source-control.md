@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134733"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie hinzu, / Open-aus der Quellcodeverwaltung
 Dieses Plug-in-Quelle-Steuerelement testen Bereich deckt Projektmappen oder Projekten unter quellcodeverwaltung platzieren und aus der quellcodeverwaltung abrufen.  

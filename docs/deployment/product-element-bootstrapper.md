@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559438"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; Element (Bootstrapper)
 Die `Product` Element ist das XML-Element der obersten Ebene innerhalb einer Produktdatei.  

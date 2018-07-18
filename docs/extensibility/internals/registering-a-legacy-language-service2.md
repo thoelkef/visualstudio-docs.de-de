@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134138"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren einen Sprachdienst Legacy
 Die folgenden Abschnitte enthalten Listen von Registrierungseinträgen für die verschiedenen Sprache Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|Text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name der dieser Schlüssel ist eine GUID, der eine ausdrucksauswertung, der einen entsprechenden Eintrag in  *\<VS Reg-Stamm >*\AD7Metrics\Expression bei der Ausdrucksauswertung.|  
+|(Standard)|REG_SZ|Text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name der dieser Schlüssel ist eine GUID, der eine ausdrucksauswertung, der einen entsprechenden Eintrag in  *\<VS Reg-Stamm >* \AD7Metrics\Expression bei der Ausdrucksauswertung.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für logische Ansichtsoptionen  
- Die *VS Reg Stamm*\Editors\\*GUI-Editor >*\LogicalViews Schlüssel kann die folgenden Werte enthalten.  
+ Die *VS Reg Stamm*\Editors\\*GUI-Editor >* \LogicalViews Schlüssel kann die folgenden Werte enthalten.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
@@ -181,7 +182,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für Editor-Erweiterung  
- Die *VS Reg Stamm*\Editors\\*-Editor-GUID*\Extensions Schlüssel kann die folgenden Werte enthalten. Die Dateinamenerweiterung umfasst nicht die führenden Punkt.  
+ Die *VS Reg Stamm*\Editors\\ *-Editor-GUID*\Extensions Schlüssel kann die folgenden Werte enthalten. Die Dateinamenerweiterung umfasst nicht die führenden Punkt.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  

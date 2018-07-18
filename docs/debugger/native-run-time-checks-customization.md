@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480901"
 ---
 # <a name="native-run-time-checks-customization"></a>Anpassen der systemeigenen Laufzeitüberprüfung
 Beim Kompilieren mit **/RTC** (laufzeitfehlerüberprüfungen), oder verwenden Sie die `runtime_checks` Pragma stellt die C-Laufzeitbibliothek systemeigene laufzeitüberprüfungen bereit. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:  

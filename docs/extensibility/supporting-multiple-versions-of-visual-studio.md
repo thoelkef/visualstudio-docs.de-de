@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137819"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Unterstützung von mehreren Versionen von Visual Studio
 Der Begriff *Side-by-Side* bedeutet, dass Sie installieren und mehrere Versionen eines Produkts auf dem gleichen Computer verwalten können. Für VSPackages bedeutet, dass ein Benutzer mehrere Versionen von Visual Studio auf demselben Computer installiert haben kann. Allerdings können nicht Sie Seite-an-Seite-Versionen Ihre VSPackages, die in eine einzelne Version von Visual Studio geladen haben.  

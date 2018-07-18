@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474023"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.  

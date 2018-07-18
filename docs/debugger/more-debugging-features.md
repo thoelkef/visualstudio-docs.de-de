@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482125"
 ---
 # <a name="more-debugging-features"></a>Weitere Debuggingfunktionen
 Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debugger verwenden können.  

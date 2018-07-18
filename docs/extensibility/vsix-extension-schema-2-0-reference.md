@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148648"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX-Erweiterung Schemareferenz 2.0
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt eines VSIX-Pakets. Das Dateiformat wird durch ein Schema gesteuert. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das manifest Ladeprogramm ignoriert XML-Elemente und Attribute, die sie nicht kennen.  

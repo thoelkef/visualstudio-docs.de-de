@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863650"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio-Abonnements, die für Startups angeboten werden
 Qualifizierte Startups, die dem Microsoft für Startups-Programm beitreten, können fünf [monatliche Cloud-Abonnements für Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/) verdienen. Dabei handelt es sich um die gleichen Abonnements, die auch kommerziell angeboten werden, jedoch ohne spezielle Einschränkungen. Jedes Abonnement muss einem Endbenutzer (der dem lizenzierten Benutzer entspricht) zugewiesen werden, bevor ein Benutzer Visual Studio ausführen kann und in VSTS als Visual Studio Enterprise-Abonnent erkannt wird.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148859"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-in wechseln
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie den Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess der Entnahme das plug-in für die quellcodeverwaltung des Projektmappen verwenden.  

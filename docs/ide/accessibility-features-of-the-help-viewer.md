@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917093"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Barrierefreiheitsfunktionen von Help Viewer
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Dieses Thema enthält Informationen zu Funktionen, Produkten und Diensten, durch die Benutzer barrierefrei auf Microsoft Help Viewer und die dazugehörigen Funktionen zugreifen können.

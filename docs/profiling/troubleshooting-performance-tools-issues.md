@@ -10,21 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572344"
 ---
-# <a name="troubleshooting-performance-tools-issues"></a>Problembehandlung bei Leistungstools
+# <a name="troubleshoot-performance-tools-issues"></a>Problembehandlung bei Leistungstools
 Bei der Verwendung der Profilerstellungstools tritt möglicherweise eines der folgenden Probleme auf:  
   
--   [Von den Profilerstellungstools werden keine Daten gesammelt](#NoDataCollected)  
+-   [Von den Profilerstellungstools werden keine Daten gesammelt.](#NoDataCollected)  
   
--   [Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an](#NoSymbols)  
+-   [Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an.](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a> Von den Profilerstellungstools werden keine Daten gesammelt  
- Nachdem Sie ein Profil für eine Anwendung erstellt haben, wird keine Profilerstellungsdatendatei (.vsp) erstellt, und Sie erhalten im Ausgabefenster oder im Befehlsfenster die folgende Warnung:  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>Von den Profilerstellungstools werden keine Daten gesammelt  
+ Nachdem Sie ein Profil für eine Anwendung erstellt haben, wird keine Profilerstellungsdatendatei (*VSP*) erstellt, und Sie erhalten im **Ausgabefenster** oder im Befehlsfenster die folgende Warnung:  
   
  PRF0025: Es wurden keine Daten gesammelt.  
   
@@ -34,16 +35,16 @@ Bei der Verwendung der Profilerstellungstools tritt möglicherweise eines der fo
   
      Zum Sammeln von Profilerstellungsdaten in einem solchen Fall starten Sie die Anwendung nicht mit dem Profiler, sondern fügen Sie den Profiler an den untergeordneten Prozess an. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen von Leistungstools an einen laufenden Prozess und Trennen von Leistungstools von einem laufenden Prozess](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) und [Attach (VSPerfCmd)](../profiling/attach.md).  
   
-##  <a name="NoSymbols"></a> Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an  
  Nachdem Sie für eine Anwendung ein Profil erstellt haben, werden in Berichten und Ansichten statt der Funktionsnamen Nummern angezeigt.  
   
- Dieses Problem wird durch das Analysemodul des Profilerstellungstools verursacht, das die PDB-Dateien mit den Symbolinformationen nicht finden kann, durch die Quellcodeinformationen wie z.B. Funktionsnamen und Zeilennummern der kompilierten Datei zugeordnet werden. Standardmäßig erstellt der Compiler bei der Erstellung der Anwendungsdatei die PDB-Datei. Ein Verweis auf das lokale Verzeichnis der PDB-Datei wird in der kompilierten Anwendung gespeichert. Das Analysemodul sucht nach der PDB-Datei in dem Verzeichnis, auf das verwiesen wird, und dann in der Datei, die derzeit die Anwendungsdatei enthält. Wenn die PDB-Datei nicht gefunden wird, verwendet das Analysemodul statt der Funktionsnamen die Funktionsoffsets.  
+ Dieses Problem wird durch die Analyse-Engine des Profilerstellungstools verursacht, die die *PDB-Dateien* mit den Symbolinformationen nicht finden kann, durch die Quellcodeinformationen wie z.B. Funktionsnamen und Zeilennummern der kompilierten Datei zugeordnet werden. Standardmäßig erstellt der Compiler bei der Erstellung der Anwendungsdatei die *PDB-Datei*. Ein Verweis auf das lokale Verzeichnis der *PDB-Datei* wird in der kompilierten Anwendung gespeichert. Die Analyse-Engine sucht nach der *PDB-Datei* in dem Verzeichnis, auf das verwiesen wird, und dann in der Datei, die derzeit die Anwendungsdatei enthält. Wenn die *PDB-Datei* nicht gefunden wird, verwendet die Analyse-Engine statt der Funktionsnamen die Funktionsoffsets.  
   
  Sie können das Problem auf zwei Arten beheben:  
   
--   Suchen Sie die PDB-Dateien und platzieren Sie sie im selben Verzeichnis wie die Anwendungsdateien.  
+-   Suchen Sie die *PDB-Dateien*, und platzieren Sie sie im selben Verzeichnis wie die Anwendungsdateien.  
   
--   Betten Sie die Symbolinformationen in die Profilerstellungsdatendatei (.vsp) ein. Weitere Informationen finden Sie unter [Speichern von Symbolinformationen mittels Leistungsdatendateien](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Betten Sie die Symbolinformationen in die Profilerstellungsdatendatei (*VSP*) ein. Weitere Informationen finden Sie unter [Speichern von Symbolinformationen mittels Leistungsdatendateien](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Für das Analysemodul muss die PDB-Datei die gleiche Version wie die kompilierte Anwendungsdatei aufweisen. Eine PDB-Datei aus einem früheren oder späteren Build der Anwendungsdatei kann nicht verwendet werden.
+>  Für die Analyse-Engine muss die *PDB-Datei* die gleiche Version wie die kompilierte Anwendungsdatei aufweisen. Eine *PDB-Datei* aus einem früheren oder späteren Build der Anwendungsdatei kann nicht verwendet werden.

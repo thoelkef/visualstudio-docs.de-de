@@ -10,22 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ef28b3bace1e8a9f43c53acf269009e37691db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cf6c17430c4f56ae1821a149d4a7cc5f82f0028e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571429"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Gewusst wie: Angeben von Symboldateispeicherorten über die Befehlszeile
-Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:  
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile
+Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (*PDB*) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:  
   
 -   Angegeben Pfade in der **/SymbolPath**-Option oder in der **_NT_SYMBOL_PATH**-Umgebungsvariable.  
   
 -   Der genaue lokale Pfad, in dem eine Komponente kompiliert wurde.  
   
--   Das Verzeichnis, das die Profilerstellungsdatendatei (.vsp oder .vsps) enthält.  
+-   Das Verzeichnis, das die Profilerstellungsdatendatei (*VSP* oder *VSPS*) enthält.  
   
- Microsoft stellt die PDB-Dateien für viele seiner Produkte online auf einem Symbolserver bereit. Wenn der Computer, den Sie für die Berichterstattung verwenden, mit dem Internet verbunden ist, verbindet sich VSPerfReport mit dem Online-Symbolserver, um automatisch nach Symbolinformationen zu suchen und die Dateien in einem lokalen Speicher zu speichern.  
+ Microsoft stellt die *PDB-Dateien* für viele seiner Produkte online auf einem Symbolserver bereit. Wenn der Computer, den Sie für die Berichterstattung verwenden, mit dem Internet verbunden ist, verbindet sich VSPerfReport mit dem Online-Symbolserver, um automatisch nach Symbolinformationen zu suchen und die Dateien in einem lokalen Speicher zu speichern.  
   
  Sie können den Speicherort der Symboldateien und den Microsoft-Symbolserver folgendermaßen angeben:  
   
@@ -38,7 +39,7 @@ Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, be
 > [!NOTE]
 >  Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf dem lokalen Computer installiert ist, wurde wahrscheinlich bereits ein Speicherort für die Windows-Symboldateien angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md). Sie müssen VSPerfReport dennoch konfigurieren, um den Speicherort und den Server, wie weiter unten in diesem Thema beschrieben, zu verwenden.  
   
-## <a name="specifying-windows-symbol-files"></a>Angeben von Windows-Symboldateien  
+## <a name="specify-windows-symbol-files"></a>Angeben von Windows-Symboldateien  
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>So konfigurieren Sie die Verwendung des Windows-Symbolservers  
   
@@ -50,8 +51,8 @@ Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, be
   
      wobei *LocalStore* der Pfad des lokalen Verzeichnisses ist, das Sie erstellt haben.  
   
-## <a name="specifying-component-symbol-files"></a>Angeben von Komponentensymboldateien  
- Profilerstellungstools suchen nach den PDB-Dateien der Komponenten, die Sie in ihren ursprünglichen Speicherorten erstellen möchten, die in den Komponenten oder in den Ordnern mit der Profilerstellungsdatendatei gespeichert werden. Sie können andere Speicherorte zum Suchen angeben, indem Sie eine oder mehrere Pfade zu **_NT_SYMBOL_PATH** oder der **/SymbolPath**-Option hinzufügen. Separate Pfade mit Semikolons.  
+## <a name="specify-component-symbol-files"></a>Angeben von Komponentensymboldateien  
+ Profilerstellungstools suchen nach den *PDB-Dateien* der Komponenten, die Sie in ihren ursprünglichen Speicherorten erstellen möchten, die in den Komponenten oder in den Ordnern mit der Profilerstellungsdatendatei gespeichert werden. Sie können andere Speicherorte zum Suchen angeben, indem Sie eine oder mehrere Pfade zu **_NT_SYMBOL_PATH** oder der **/SymbolPath**-Option hinzufügen. Separate Pfade mit Semikolons.  
   
 ## <a name="example"></a>Beispiel  
  Die folgende Befehlszeile legt die **_NT_SYMBOL_PATH**-Umgebungsvariable auf den Windows-Symbolserver und das lokale Verzeichnis auf **C:\Symbols**.  

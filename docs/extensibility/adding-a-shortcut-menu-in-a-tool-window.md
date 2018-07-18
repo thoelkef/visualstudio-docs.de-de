@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568668"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü ist ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, das Textfeld oder Fenster im Hintergrund klickt. Befehle im Kontextmenü Verhalten sich wie die Befehle in anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben sie in der VSCT-Datei, und zeigen Sie es als Reaktion auf der rechten Maustaste.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263453"
 ---
 # <a name="data-in-office-solutions"></a>Daten in Office-Projektmappen
   Viele Office-Projektmappen ermöglichen Benutzern das Abrufen und Ändern von Daten. Wenn Sie Office-Projektmappen mithilfe von Visual Studio erstellen, gibt es mehrere verschiedene Verfahren, wie Sie mit Daten arbeiten können.  

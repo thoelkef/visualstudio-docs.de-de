@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132573"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Erweitern des Editors und des Language-Dienste
 Sie können Ihren eigenen Editor Dienst Sprachfunktionen (z. B. IntelliSense) hinzu, und Sie können die meisten Features von Visual Studio Code-Editor erweitern.  Eine vollständige Liste von was Sie erweitern können, finden Sie unter [Sprachdienst und Erweiterungspunkten Editor](../extensibility/language-service-and-editor-extension-points.md).  

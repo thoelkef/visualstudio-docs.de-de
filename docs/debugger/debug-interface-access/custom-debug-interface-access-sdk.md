@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458452"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Benutzerdefiniert (Debug Interface Access SDK)
 Bei einigen Compilern einführen, Symbole, die nicht von einer standardmäßigen lexikalischen Symboltypen identifiziert werden. Diese Symbole werden identifiziert, indem eine `SymTagCustom` Tag.  

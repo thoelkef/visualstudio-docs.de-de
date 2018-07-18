@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750333"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Tutorial Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
 **Vorheriger Schritt:[Erstellen einer Django-App mit Ansichten und Seitenvorlagen](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Django-App mit einer einzelnen eigenständige HTML-Seite zu erstellen. Moderne Web-Apps bestehen jedoch in der Regel aus vielen Seiten und verwenden freigegebene Ressourcen, z.B. CSS und JavaScript und Dateien, um ein einheitliches Aussehen und Verhalten bereitzustellen.
+In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Django-App mit einer einzelnen eigenständige HTML-Seite zu erstellen. Moderne Web-Apps bestehen jedoch in der Regel aus vielen Seiten und verwenden freigegebene Ressourcen, z.B. CSS- und JavaScript-Dateien, um ein einheitliches Aussehen und Verhalten bereitzustellen.
 
 In diesem Schritt wird Folgendes erläutert:
 
@@ -40,8 +41,6 @@ Um die verfügbaren Vorlagen anzuzeigen, wechseln Sie zum **Projektmappen-Explor
 ![Dialogfeld „Neues Element hinzufügen“ in Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Um eine Vorlage zu verwenden, wählen Sie die gewünschte Vorlage aus, geben Sie einen Namen für die Datei an, und klicken Sie auf **OK**. Wenn Sie ein Element auf diese Weise hinzufügen, wird die Datei automatisch zum Visual Studio-Projekt hinzugefügt und die Änderungen der Quellcodeverwaltung markiert.
-
-Visual Studio fügt auch einige häufig verwendete Optionen direkt zum Menü **Hinzufügen** hinzu. In einem Python-Projekt sehen Sie möglicherweise die Befehle **HTML-Seite** oder **Stylesheet** am unteren Rand des Menüs **Hinzufügen**, die Sie dazu auffordern, einen Namen einzugeben und die Datei zu erstellen.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Frage: Woher weiß Visual Studio, welche Elementvorlagen angeboten werden sollen?
 
@@ -187,7 +186,7 @@ Eine Basisvorlage grenzt Blöcke mit `{% block <block_name> %}`- und `{% endbloc
 
 Die folgenden Schritte veranschaulichen die Vererbung:
 
-1. Erstellen Sie im `templates/HelloDjangoApp`-Ordner der App eine neue HTML-Datei (mit dem Kontextmenü **Hinzufügen** > **Neues Element** oder durch **Hinzufügen** > **HTML-Seite**) namens `layout.html`, und fügen Sie den folgenden Inhalt ein. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
+1. Erstellen Sie im `templates/HelloDjangoApp`-Ordner der App eine neue HTML-Datei (mit dem Kontextmenü **Hinzufügen** > **Neues Element** oder durch **Hinzufügen** > **HTML-Seite**) namens `layout.html`, und fügen Sie den folgenden Markupcode ein. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
 
     ```html
     <!DOCTYPE html>

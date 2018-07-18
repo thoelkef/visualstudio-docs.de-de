@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144436"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID-Element (Visual Studio-Vorlagen)
 Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) festgelegt ist, um `false`. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) festgelegt ist, um `true`, und klicken Sie dann eine Elementvorlage in allen Projekttypen verfügbar ist.  
@@ -58,7 +59,7 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
 ## <a name="remarks"></a>Hinweise  
  `TemplateGroupID` ist ein Element.  
   
- Der Wert, der die `TemplateGroupID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Versionsnummer >*\Projects\\) Filterung von Vorlagen, die in der **neues Element hinzufügen** (Dialogfeld).  
+ Der Wert, der die `TemplateGroupID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Versionsnummer >* \Projects\\) Filterung von Vorlagen, die in der **neues Element hinzufügen** (Dialogfeld).  
   
 |Visual C++-Wert|Bedeutung|  
 |------------------------|-------------|  

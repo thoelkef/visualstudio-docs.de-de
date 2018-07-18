@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143318"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von Klammern
 Sie können die Sprache basierende Funktionen wie z. B. die Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen soll, und klicken Sie dann hinzugefügt Marker Texttag die übereinstimmenden geschweiften Klammern wird das Caretzeichen auf einem der Klammern implementieren. Sie können geschweifte Klammern im Kontext einer Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und die Tags auf nur diesen Typ gelten oder Sie können die Tags anwenden, um einen vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise veranschaulicht die Zuordnung von geschweiften Klammern Tags aus, um den Inhaltstyp "Text" angewendet.  

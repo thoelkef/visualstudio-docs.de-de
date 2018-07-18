@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135534"
 ---
 # <a name="extending-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und Optionen
 Sind in Visual Studio gibt es zwei Hauptmethoden, um die Pflege der benutzereinstellungen. Die **Extras / Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festlegen. Benutzereinstellungen ermöglichen Benutzern die Angabe der allgemeine Eigenschaften für die Konfiguration von Visual Studio. Weitere Informationen zu Optionsseiten finden Sie unter [Optionen und Seiten für Optionen](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  

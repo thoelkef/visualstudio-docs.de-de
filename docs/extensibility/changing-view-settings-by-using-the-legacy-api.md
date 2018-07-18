@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099336"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Ändern Einstellungen anzeigen, über die Legacy-API
 Einstellungen für Core-Editor-Funktionen, z. B. Zeilenumbruch, Auswahlrahmen und virtuellen Adressraum können geändert werden, vom Benutzer über die **Optionen** (Dialogfeld). Es ist jedoch auch möglich, zum Ändern der Einstellungen programmgesteuert.  

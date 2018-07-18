@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112469"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Vergleicht den Speicherkontext, um jeden Kontext, in dem angegebenen Array in der Weise, angegeben durch Vergleichen-Flags, die einen Index der ersten Kontext, der mit übereinstimmt zurückgeben.  

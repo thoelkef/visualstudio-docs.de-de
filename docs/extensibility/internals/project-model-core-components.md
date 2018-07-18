@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133109"
 ---
 # <a name="project-model-core-components"></a>Projekt-Modell-Kernkomponenten
 In den folgenden Tabellen, die auf das Projektmodell erweitert werden. In den Tabellen vorhanden, kurze Beschreibung der Schnittstellen und Dienste, die in das Modell und die Schnittstellen und Dienste, mit spezifischen Objekten verknüpft sind. Darüber hinaus enthalten die Tabellen Details anderer Schnittstellen, die im projekterstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.  

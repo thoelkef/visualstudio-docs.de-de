@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133707"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden Sie regelbasierte Benutzeroberflächenkontext für Visual Studio-Erweiterungen
 Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberfläche Kontexte sind nicht sehr präzise umfassendere, verlassen Erweiterung Autoren keine andere Möglichkeit jedoch um eine verfügbare Benutzeroberflächenkontext auswählen, die vor dem Punkt, aktiviert sie wollten das VSPackage beim Laden. Eine Liste der bekannten Benutzeroberflächen-Kontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

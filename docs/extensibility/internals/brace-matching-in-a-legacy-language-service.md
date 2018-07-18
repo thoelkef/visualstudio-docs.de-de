@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131962"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Zuordnung von geschweiften Klammern in einem Legacy-Sprachdienst
 Klammer hilft den Entwickler Sprachelemente zu verfolgen, die zusammen, z. B. Klammern und geschweifte Klammern sein müssen. Wenn ein Entwickler eine schließende Klammer eingibt, wird der öffnenden geschweiften Klammer hervorgehoben.  

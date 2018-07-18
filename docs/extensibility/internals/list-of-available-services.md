@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135909"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten eigene Dienste, die hier nicht aufgeführt sind – z. B. Sprachdienste keinen einzigen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts, der in der Registrierung gefunden.  

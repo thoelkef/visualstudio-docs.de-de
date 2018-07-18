@@ -23,6 +23,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548556"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
   Um ein Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, müssen Sie zunächst erstellen Sie ein Windows Forms-Benutzersteuerelement. Fügen Sie dann auf das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft von der `ThisDocument.ActionsPane` Feld (Wort) oder `ThisWorkbook.ActionsPane` Feld (Excel) in Ihrem Projekt.  

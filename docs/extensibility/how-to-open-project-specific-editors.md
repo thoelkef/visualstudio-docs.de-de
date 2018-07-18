@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129041"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Vorgehensweise: Öffnen von Editoren projektspezifische
 Wenn eine Elementdatei, die von einem Projekt geöffnet wird, auf den bestimmten Editor für dieses Projekt systemintern gebunden ist, muss das Projekt zu die Datei mit einem projektspezifischen-Editor öffnen. Die Datei kann nicht auf den Mechanismus der IDE für die Auswahl eines Editors delegiert werden. Anstatt einen standard-Bitmap-Editor, können Sie z. B. diese projektspezifische Editoroption verwenden, an einem bestimmten Bitmap-Editor, der Informationen in der Datei, die dem Projekt eindeutig ist, erkennt.  

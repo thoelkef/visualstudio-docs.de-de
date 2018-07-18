@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132547"
 ---
 # <a name="saving-a-custom-document"></a>Speichern eine benutzerdefinierte Dokumenteigenschaften
 Umgebungshandles der **speichern**, **speichern unter**, und **alle speichern** Befehle. Wenn ein Benutzer klickt **speichern**, **speichern unter**, **oder alle speichern** auf die **Datei** Menü oder schließt die Projektmappe, wodurch alle speichern, die folgenden erfolgt.  

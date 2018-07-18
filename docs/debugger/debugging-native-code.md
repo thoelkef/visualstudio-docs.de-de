@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472905"
 ---
 # <a name="debugging-native-code"></a>Debuggen von nativem Code
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Zum Verwenden von Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/debugger-basics.md).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099082"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 Ändern der Darstellung eines Befehls können Sie Feedback, die für Benutzer bereitstellen. Beispielsweise sollten Sie einen Befehl zum anders aussehen, wenn sie nicht verfügbar ist. Sie können damit Befehle verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.  

@@ -826,3 +826,5 @@
   items:
     - name: Neues im Debugger in Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Debuggen für Einsteiger
+      href: debugging-absolute-beginners.md

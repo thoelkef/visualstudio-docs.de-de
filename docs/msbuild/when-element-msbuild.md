@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577788"
 ---
 # <a name="when-element-msbuild"></a>When-Element (MSBuild)
 Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.  

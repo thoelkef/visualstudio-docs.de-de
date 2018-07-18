@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135705"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren einen Sprachdienst Legacy
 In des managed Package Framework (MPF), wird der Sprachdienst verzichten, durch ein VSPackage (finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md)) und ist mit registrierten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch Hinzufügen von Registrierungsschlüsseln und Einträge. Dieses Registrierungsprozesses teilweise während der Installation und teilweise zur Laufzeit erfolgt in.  

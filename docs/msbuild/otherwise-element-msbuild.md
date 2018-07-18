@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570079"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise-Element (MSBuild)
 Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden.  

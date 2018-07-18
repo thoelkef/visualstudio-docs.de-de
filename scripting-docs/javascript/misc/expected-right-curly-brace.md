@@ -1,13 +1,13 @@
 ---
 title: Erwartete &#39;} &#39; | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632820"
 ---
 # <a name="expected-3939"></a>Erwartete &#39;} &#39;
 Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objekt-Initialisierer. Ein Beispiel für diesen Fehler wäre eine **für** Schleife mit nur die linke geschweifte Klammer der Text der Schleife markiert.  

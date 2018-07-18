@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128872"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Bestimmen, ob eine Datenquellen-Steuerelement VSPackage implementieren
 In diesem Abschnitt werden die Optionen des Datenquellen-Steuerelement-Plug-ins und quellcodeverwaltung VSPackages zum Erweitern der quellcodeverwaltung Projektmappen und bietet umfassende Richtlinien zum Auswählen eines geeigneten Integration Pfads näher erläutert.  

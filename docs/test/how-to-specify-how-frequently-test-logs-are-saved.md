@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966653"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>How to: Specify How Frequently Test Logs are Saved Using the Load Test Editor
 

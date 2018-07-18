@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480888"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Debuggen, Dialogfeld "Optionen"
 Für den Zugriff auf die **Just-in-Time** Seite, wechseln Sie zu der **Tools** Menü, und klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie die **Debuggen** Knoten, und wählen **Just-in-Time**. Auf dieser Seite können Sie das Just-In-Time-Debuggen für verwalteten Code, systemeigenen Code und Skripts aktivieren. Weitere Informationen finden Sie unter [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md).  

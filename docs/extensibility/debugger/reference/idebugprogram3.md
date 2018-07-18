@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121764"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Diese Schnittstelle stellt ein Programm, das in einem Prozess ausgeführt wird und erweitert [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) durch Threadinformationen bereitstellen.  
