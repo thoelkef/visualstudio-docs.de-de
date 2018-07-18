@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft Docs'
+title: 'Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566016"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785237"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Gewusst wie: Erstellen eines lokalisierten Bootstrapperpakets
 Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Bootstrapperpakets erstellen, indem Sie mindestens zwei Dateien für jedes Gebietsschema erstellen: eine Datei mit Softwarelizenzbedingungen (z. B. eula.rtf) und ein Paketmanifest (package.xml).  
@@ -33,7 +33,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 3.  Erstellen Sie ein Paketmanifest mit dem Namen "package.xml", aktualisieren Sie die Zeichenfolgen und die Kultur, und legen Sie die Datei in dem neuen Ordner ab. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei "package.xml" kopieren und in diesem Schritt ändern.  
   
 > [!NOTE]
->  Wenn Sie ein Setup-Projekt zum Bereitstellen von Anwendungen verwenden, können Sie die Anwendung lokalisieren, indem Sie ändern die **Lokalisierung** Eigenschaft.  
+>  Wenn Sie ein Setup-Projekt zum Bereitstellen von Anwendungen verwenden, können Sie Ihre Anwendung lokalisieren, indem Sie ändern die **Lokalisierung** Eigenschaft.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -43,7 +43,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
   
      Erstellen Sie auf 32-Bit-Computern den Ordner im \Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Bootstrapperpaketname*\ Ordner.  
   
-     Erstellen Sie auf 64-Bit-Computern den Ordner, in der \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Bootstrapperpaketname*\ Ordner.  
+     Erstellen Sie den Ordner auf 64-Bit-Computern in der \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Bootstrapperpaketname*\ Ordner.  
   
      In der folgenden Tabelle sind die Ordnernamen dargestellt, die Sie für die Übereinstimmung mit einem Gebietsschema verwenden können.  
   

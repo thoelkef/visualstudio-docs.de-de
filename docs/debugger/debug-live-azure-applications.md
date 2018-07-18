@@ -14,137 +14,137 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766323"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281549"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
+# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug live ASP.NET-Azure-apps, die mit dem Momentaufnahmedebugger
 
-Der Debugger Momentaufnahme nimmt eine Momentaufnahme Ihrer Anwendungen in Produktion, bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps in der Produktion aus, bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
-Snappoints und Logpoints sind Haltepunkte ähnlich, aber im Gegensatz zu Haltepunkten anhalten Snappoints nicht die Anwendung bei Treffer. In der Regel wird die Erstellung einer Momentaufnahme für eine Snappoint 10 bis 20 Millisekunden. 
+Andockpunkte und protokollpunkte ähneln Haltepunkte, aber im Gegensatz zu Haltepunkten, andockpunkte nicht die Anwendung anhalten, wenn Sie getroffen. Erfassen eine Momentaufnahme auf einen andockpunkt dauert normalerweise 10 bis 20 Millisekunden.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
-> * Starten Sie den Momentaufnahme-Debugger
-> * Festlegen Sie einer Snappoint und zeigen Sie eine Momentaufnahme an.
-> * Legen Sie eine logpoint
+> * Starten Sie den Snapshot-Debugger
+> * Legen Sie einen andockpunkt und zeigen eine Momentaufnahme an
+> * Legen Sie eine protokollpunkt
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Momentaufnahme-Debugger ist nur verfügbar für Visual Studio 2017 Enterprise Version 15.5 oder höher mit der **ASP.NET- und Webdienst Entwicklungsaufwand**. Für ASP.NET Core, müssen Sie auch die. **NET Core Entwicklung** arbeitsauslastung installiert.
+* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **ASP.NET und Web-entwicklungsworkload**. Für ASP.NET Core, müssen Sie auch die. **NET-Core-Entwicklung** arbeitsauslastung installiert.
 
-    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder höher. Wenn Sie von einer vorherigen Installation von Visual Studio 2017 aktualisieren, führen Sie den Installer für Visual Studio, und überprüfen Sie die Snapshot-Debugger-Komponente der **ASP.NET- und Webdienst Entwicklungsaufwand**.
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise-Version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aktualisieren, führen Sie den Visual Studio-Installer, und überprüfen Sie die Snapshot-Debugger-Komponente in der **ASP.NET und Web-entwicklungsworkload**.
 
-* Grundlegende oder höher Azure App Service-Plan.
+* Azure App Service-Plan Basic oder höher.
 
 * Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
 
     * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
     * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Öffnen Sie das Projekt, und starten Sie den Momentaufnahme-Debugger
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Öffnen Sie das Projekt, und starten Sie den Snapshot-Debugger
 
-1. Öffnen Sie das Projekt, Momentaufnahme debuggen möchten. 
+1. Öffnen Sie das Projekt, für die Momentaufnahme debuggen möchten.
 
-    > [!IMPORTANT] 
-    > Momentaufnahme Debuggen, müssen Sie öffnen die **dieselbe Version des Quellcodes** , die in Ihren Azure App Service veröffentlicht wird. 
+    > [!IMPORTANT]
+    > Momentaufnahme Debuggen, müssen Sie öffnen die **dieselbe Version des Quellcodes** , die in Azure App Service veröffentlicht wird.
 
-1. In der Cloud-Explorer (**Ansicht > Cloud Explorer**) mit der rechten Maustaste auf die Azure App Service, die für das Projekt bereitgestellt wird, und wählen Sie **Snapshot-Debugger anfügen**.
+1. In der Cloud-Explorer (**Ansicht > Cloud-Explorer**) mit der rechten Maustaste auf das Projekt, um bereitgestellt wird Azure App Service, und wählen Sie **Momentaufnahmedebugger Anfügen**.
 
-   ![Starten Sie den Momentaufnahme-debugger](../debugger/media/snapshot-launch.png)
+   ![Starten Sie den Snapshot-debugger](../debugger/media/snapshot-launch.png)
 
-    Die zum ersten Mal auswählen **Snapshot-Debugger anfügen**, Sie werden aufgefordert, die websiteerweiterung Momentaufnahme Debugger auf Ihren Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Ihren Azure App Service. 
+    Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen**, Sie werden aufgefordert, um die websiteerweiterung des Momentaufnahmedebuggers in Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.
 
    Visual Studio ist jetzt im Debugmodus Momentaufnahme.
 
     > [!NOTE]
-    > Die websiteerweiterung Application Insights unterstützt auch die Momentaufnahme zu debuggen. Wenn Sie eine Fehlermeldung "websiteerweiterung veraltet" auftreten, finden Sie unter [Problembehandlung, Tipps und bekannte Probleme für das Debuggen von Momentaufnahme](../debugger/debug-live-azure-apps-troubleshooting.md) zum Aktualisieren von Details.
+    > Die Application Insights-websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine Fehlermeldung "websiteerweiterung veraltet" auftreten, finden Sie unter [zur Problembehandlung, Tipps und bekannte Probleme beim Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-troubleshooting.md) zum Aktualisieren von Informationen.
 
-   ![Momentaufnahme-Debugmodus](../debugger/media/snapshot-message.png)
+   ![Momentaufnahme-debugging-Modus](../debugger/media/snapshot-message.png)
 
-   Die **Module** Fenster erfahren Sie, wenn alle Module geladen haben, für die Azure App Service (Wählen Sie **Debuggen / Windows / Module** zum Öffnen des Fensters).
+   Die **Module** Fenster erfahren Sie, wenn alle Module für Azure App Service geladen wurden (Wählen Sie **Debuggen / Windows / Module** zum Öffnen des Fensters).
 
    ![Überprüfen Sie das Fenster "Module"](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint"></a>Legen Sie eine snappoint
+## <a name="set-a-snappoint"></a>Legen Sie einen andockpunkt
 
-1. Klicken Sie im linken Bundsteg neben einer Codezeile, die Sie einem Snappoint festzulegende interessiert sind, im Code-Editor. Stellen Sie sicher, dass es sich um Code handelt, die Sie kennen ausgeführt wird.
+1. Klicken Sie im linken Bundsteg neben einer Codezeile, die Sie interessieren, um einen andockpunkt festgelegt, im Code-Editor. Stellen Sie sicher, dass es sich um Code handelt, die Sie kennen ausgeführt wird.
 
-   ![Legen Sie eine snappoint](../debugger/media/snapshot-set-snappoint.png)
+   ![Legen Sie einen andockpunkt](../debugger/media/snapshot-set-snappoint.png)
 
-2. Klicken Sie auf **Sammlung starten** um die Snappoint zu aktivieren.  
+2. Klicken Sie auf **Sammlung starten** um die andockpunkt zu aktivieren.
 
-   ![Aktivieren Sie die snappoint](../debugger/media/snapshot-start-collection.png)
+   ![Aktivieren Sie die andockpunkt](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
-    > Sie können nicht schrittweise, wenn Sie eine Momentaufnahme anzeigen, aber Sie können mehrere Snappoints platzieren, im Code, um die Ausführung auf anderen Codezeilen folgen. Wenn Sie mehrere Snappoints in Ihrem Code verfügen, wird der Snapshot-Debugger sicher, dass die entsprechenden Momentaufnahmen aus der gleichen Sitzung für die Endbenutzer sind. Der Momentaufnahme-Debugger wird auch wenn viele Benutzer, die Ihre app vorhanden sind.
+    > Sie können nicht schrittweise, wenn Sie eine Momentaufnahme anzeigen, aber Sie können mehrere andockpunkte platzieren, im Code, um die Ausführung auf verschiedene Codezeilen folgen. Wenn Sie mehrere andockpunkte in Ihrem Code verfügen, wird der Snapshot Debugger sichergestellt, dass die zugehörigen Momentaufnahmen aus der gleichen endbenutzersitzung. Der Momentaufnahmedebugger wird auch wenn viele Benutzer, die Ihrer app vorhanden sind.
 
-## <a name="take-a-snapshot"></a>Erstellen Sie eine Momentaufnahme
+## <a name="take-a-snapshot"></a>Erstellen einer Momentaufnahme
 
-Wenn ein Snappoint aktiviert ist, wird der eine Momentaufnahme erfasst werden immer ausgeführt, wird die Codezeile, in denen die Snappoint platziert wird. Diese Ausführung kann von einer echten Anforderung auf dem Server verursacht werden. Zum Erzwingen der Snappoint erreicht, wechseln zur Browseransicht, Ihrer Website und keine Aktionen erforderlich, die dazu führen, dass Ihre Snappoint erreicht wird.
+Wenn Sie ein andockpunkt aktiviert ist, wird es eine Momentaufnahme erfasst wird, wenn die Codezeile aus der Platzierung der andockpunkt ausgeführt wird. Diese Ausführung kann von einer echten Anforderung auf dem Server verursacht werden. Erforderlich, um Ihre andockpunkt erreicht, wechseln zu der Browseransicht Ihrer Website und keine Aktionen zu erzwingen, dass dazu führen, dass Ihre andockpunkt erreicht wird.
 
 ## <a name="inspect-snapshot-data"></a>Überprüfen von momentaufnahmedaten
 
-1. Wenn die Snappoint erreicht wird, wird eine Momentaufnahme im Fenster "Diagnosetools" angezeigt. Um dieses Fenster zu öffnen, wählen Sie **Debuggen / Windows / Diagnosetools anzeigen**.
+1. Wenn die andockpunkt erreicht wird, wird eine Momentaufnahme im Fenster "Diagnosetools" angezeigt. Wählen Sie zum Öffnen dieses Fensters **Debuggen / Windows / Diagnosetools anzeigen**.
 
-   ![Öffnen Sie eine snappoint](../debugger/media/snapshot-diagsession-window.png)
+   ![Öffnen Sie einen andockpunkt](../debugger/media/snapshot-diagsession-window.png)
 
-1. Doppelklicken Sie auf die Snappoint, um die Momentaufnahme im Code-Editor zu öffnen.
+1. Doppelklicken Sie auf der andockpunkt, um die Momentaufnahme im Code-Editor zu öffnen.
 
    ![Überprüfen von momentaufnahmedaten](../debugger/media/snapshot-inspect-data.png)
 
-   In dieser Ansicht können Sie Variablen verwenden Sie zum Anzeigen von DataTips zeigen die **"lokal"**, **Überwachungen**, und **Aufrufliste** Windows und auch Auswerten von Ausdrücken.
+   In dieser Ansicht können Sie auf Variablen verwenden Sie zum Anzeigen von DataTips zeigen die **"lokal"**, **Überwachungen**, und **Aufrufliste** Windows und auch Auswerten von Ausdrücken.
 
-    Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Nur eine Momentaufnahme ist pro Snappoint standardmäßig erfasst: nach dem Erfassen einer Momentaufnahme der Snappoint deaktiviert. Wenn Sie eine andere Momentaufnahme auf die Snappoint aufzeichnen möchten, können Sie die Snappoint wieder aktivieren, indem Sie auf **Sammlung aktualisieren**.
+    Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Nur eine Momentaufnahme ist pro andockpunkt standardmäßig erfasst: Nachdem eine Momentaufnahme erfasst wurde der andockpunkt deaktiviert. Wenn Sie eine andere Momentaufnahme an die andockpunkt erfassen möchten, können Sie die andockpunkt wieder aktivieren, indem Sie auf **Upgradesammlung**.
 
-Sie können auch weitere Snappoints der app hinzufügen und aktivieren Sie diese mithilfe der **Sammlung aktualisieren** Schaltfläche.
+Sie können auch weitere andockpunkte Ihrer app hinzufügen und aktivieren sie mit der **Upgradesammlung** Schaltfläche.
 
-**Benötigen Sie Hilfe?** Finden Sie unter der [Problembehandlung und bekannte Probleme](../debugger/debug-live-azure-apps-troubleshooting.md) und [– häufig gestellte Fragen zum Debuggen von Momentaufnahme](../debugger/debug-live-azure-apps-faq.md) Seiten.
+**Benötigen Sie Hilfe?** Finden Sie unter den [Problembehandlung und bekannte Probleme](../debugger/debug-live-azure-apps-troubleshooting.md) und [– häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md) Seiten.
 
-## <a name="set-a-conditional-snappoint"></a>Legen Sie eine bedingte snappoint
+## <a name="set-a-conditional-snappoint"></a>Legen Sie einen bedingten andockpunkt
 
-Ist es schwierig, die einen bestimmten Status in der app erneut erstellen, erwägen Sie, ob die Verwendung einer bedingten Snappoint helfen kann. Bedingte Snappoints vermeiden Sie eine Momentaufnahme erstellen, bis die app wechselt in den gewünschten Zustand, beispielsweise wenn eine Variable einen bestimmten Wert besitzt, den Sie untersuchen möchten. Sie können Bedingungen, die mithilfe von Ausdrücken, filtern, festlegen oder Trefferanzahlen.
+Ist es schwierig, einen bestimmten Status in Ihrer app neu zu erstellen, berücksichtigen Sie, ob die Verwendung von einem bedingten andockpunkt kann ein. Bedingte andockpunkte-Hilfe, die Sie vermeiden, Erstellen einer Momentaufnahme, bis die app wechselt in einen gewünschten Status, z. B. wenn eine Variable einen bestimmten Wert aufweist, den Sie untersuchen möchten. Sie können Bedingungen, die mithilfe von Ausdrücken, filtern, festlegen oder Trefferanzahlen.
 
-#### <a name="to-create-a-conditional-snappoint"></a>So erstellen eine bedingte snappoint
+#### <a name="to-create-a-conditional-snappoint"></a>Erstellen Sie einen bedingten andockpunkt
 
-1. Mit der rechten Maustaste ein Snappoint-Symbol (leeres Ball), und wählen Sie **Einstellungen**.
+1. Mit der rechten Maustaste ein andockpunkt-Symbol (der Ball), und wählen Sie **Einstellungen**.
 
    ![Wählen Sie die Einstellungen](../debugger/media/snapshot-snappoint-settings.png)
 
-1. Geben Sie im Fenster für die Einstellungen von Snappoint einen Ausdruck ein.
+1. Geben Sie im Fenster andockpunkt einen Ausdruck ein.
 
    ![Geben Sie einen Ausdruck](../debugger/media/snapshot-snappoint-conditions.png)
 
-   In der vorherigen Abbildung wird die Momentaufnahme nur für die Snappoint erstellt beim `visitor.FirstName == "Dan"`.
+   In der vorherigen Abbildung wird die Momentaufnahme nur für die andockpunkt erstellt bei `visitor.FirstName == "Dan"`.
 
-## <a name="set-a-logpoint"></a>Legen Sie eine logpoint
+## <a name="set-a-logpoint"></a>Legen Sie eine protokollpunkt
 
-Zusätzlich zum Erstellen einer Momentaufnahme aus, wenn eine Snappoint erreicht wird, können Sie auch eine Snappoint um eine Meldung Protokollieren konfigurieren (d. h. eine Logpoint erstellen). Sie können Logpoints festlegen, ohne die app erneut bereitstellen. Logpoints praktisch ausgeführt werden und verursacht keine Auswirkungen oder Nebeneffekte der laufenden Anwendung.
+Zusätzlich zum Erstellen einer Momentaufnahme aus, wenn Sie einen andockpunkt erreicht ist, können Sie auch einen andockpunkt zum Protokollieren einer Meldung konfigurieren (d. h. eine protokollpunkt erstellen). Sie können die protokollpunkte festlegen, ohne dass Ihre app erneut bereitstellen. Protokollpunkte praktisch ausgeführt und dazu führen, dass keine Auswirkungen oder Nebeneffekte der ausgeführten Anwendung.
 
-#### <a name="to-create-a-logpoint"></a>So erstellen eine logpoint
+#### <a name="to-create-a-logpoint"></a>Erstellen Sie eine protokollpunkt
 
-1. Mit der rechten Maustaste ein Snappoint-Symbol (die blaue Sechseck), und wählen Sie **Einstellungen**.
+1. Mit der rechten Maustaste ein andockpunkt-Symbol (die blaue Sechseck), und wählen Sie **Einstellungen**.
 
-1. Wählen Sie im Fenster Snappoint **Aktionen**.
+1. Wählen Sie im Fenster andockpunkt **Aktionen**.
 
-    ![Erstellen Sie eine logpoint](../debugger/media/snapshot-logpoint.png)
+    ![Erstellen Sie eine protokollpunkt](../debugger/media/snapshot-logpoint.png)
 
-1. Im Feld "Nachricht" können Sie die neue protokollmeldung eingeben, die protokolliert werden soll. Sie können auch Variablen in Ihrer protokollmeldung auswerten, indem sie in geschweiften Klammern platziert werden.
+1. In das Nachrichtenfeld können Sie die neue Nachricht eingeben, die Sie protokollieren möchten. Sie können auch Variablen in der protokollmeldung auswerten, indem Sie sie in geschweiften Klammern platzieren.
 
-    Falls gewünscht **senden an das Fenster "Ausgabe"**, wenn die Logpoint die Meldung im Fenster "Diagnosetools" angezeigt erreicht wird,.
+    Auf Wunsch **an Ausgabefenster senden**, wenn die protokollpunkt die Meldung im Fenster "Diagnosetools" angezeigt erreicht wird,.
 
-    ![Logpoint Daten im Fenster diagsession](../debugger/media/snapshot-logpoint-output.png)
+    ![Protokollpunkt Daten im Fenster diagsession](../debugger/media/snapshot-logpoint-output.png)
 
-    Falls gewünscht **-Anwendungsprotokoll gesendet**, wenn die Logpoint erreicht wird, die Meldung wird an einer beliebigen Stelle angezeigt, Sie, dass Nachrichten vom sehen können `System.Diagnostics.Trace` (oder `ILogger` in .NET Core), wie z. B. [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
+    Auf Wunsch **an Anwendungsprotokoll senden**, wenn die protokollpunkt erreicht wird, die Meldung angezeigt, dass Sie Meldungen anzuzeigen, können an einer beliebigen Stelle wird `System.Diagnostics.Trace` (oder `ILogger` in .NET Core), wie z. B. [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Lernprogramm haben Sie gelernt, wie der Momentaufnahme-Debugger verwendet wird. Sie möchten möglicherweise weitere Informationen zu diesem Feature gelesen.
+In diesem Tutorial haben Sie gelernt, wie der Snapshot-Debugger verwendet wird. Sie sollten, lesen Weitere Informationen zu diesem Feature.
 
 > [!div class="nextstepaction"]
 > [Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)

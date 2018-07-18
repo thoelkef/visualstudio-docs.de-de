@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10a710af8120ab789ec3a9c3ccb2b7e4398e82f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256681"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Gewusst wie: Programmgesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern
-  Sie können Daten in die anderen Blätter in einer Arbeitsmappe aus einem Bereich auf einem Blatt kopieren, mithilfe der <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> Methode. Geben Sie einen Bereich, und gibt an, ob Sie Daten, formatieren oder beides kopieren möchten.  
+  Sie können Kopieren von Daten aus einem Bereich auf einem Blatt in alle übrigen Arbeitsblätter in einer Arbeitsmappe mithilfe der <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> Methode. Geben Sie einen Bereich, und Kopieren von Daten, formatieren oder beides werden sollen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -33,13 +34,13 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]  
   
-## <a name="compiling-the-code"></a>Kompilieren des Codes  
- Dieses Beispiel benötigen Sie einen Bereich mit dem Namen `rangeData` in einem Arbeitsblatt.  
+## <a name="compile-the-code"></a>Kompilieren des Codes  
+ Dieses Beispiel erfordert einen Bereich mit dem Namen `rangeData` in einem Arbeitsblatt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Vorgehensweise: Programmgesteuertes Hinzufügen neuer Arbeitsblätter zu Arbeitsmappen](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Ändern der Formatierung in Arbeitsblattzeilen, die ausgewählte Zellen enthalten](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Gewusst wie: Programmgesteuertes Hinzufügen neuer Arbeitsblätter zu Arbeitsmappen](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Gewusst wie: Programmgesteuertes Ändern der Formatierung in Arbeitsblattzeilen, die ausgewählte Zellen enthalten](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

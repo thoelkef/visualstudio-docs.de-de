@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Multifunktionsleisten-XML | Microsoft Docs'
+title: 'Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,37 +21,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7aff56d1d7ee3533a83ef3edbdd8ba9271efd862
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b9e988ce6d1ad722766f3994c39827cc4272a3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255076"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren einer Multifunktionsleiste aus dem Multifunktionsleisten-Designer in Multifunktionsleisten-XML
-  Die **Menüband (visueller Designer)** Element unterstützt nicht alle Mögliche Typen der menübandanpassung. Zum Anpassen des Menübands auf eine innovative Weise können Sie im Menüband vom Designer in Menüband-XML exportieren und den XML-Code direkt bearbeiten.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML
+  Die **Menüband (visueller Designer)** Element unterstützt nicht alle mögliche Arten von Multifunktionsleisten-Anpassung. Zum Anpassen des Menübands auf eine innovative Weise können Sie exportieren im Menüband vom Designer in Menüband-XML und den XML-Code direkt bearbeiten.  
   
 > [!NOTE]  
 >  Nicht alle Eigenschaftswerte, die in der Menüband-XML-Datei angezeigt werden. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Zum Exportieren eines Menübands vom Menüband-Designer in Menüband-XML  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Um eines Menübands vom Menüband-Designer in Menüband-XML exportieren  
   
-1.  Mit der rechten Maustaste in der Menüband-Codedatei **Projektmappen-Explorer**, und klicken Sie dann auf **Sicht-Designer**.  
+1.  Mit der rechten Maustaste in der Menüband-Codedatei **Projektmappen-Explorer**, und klicken Sie dann auf **Ansicht-Designer**.  
   
 2.  Mit der rechten Maustaste in der Menüband-Designer, und klicken Sie dann auf **Menüband nach XML exportieren**.  
   
      Visual Studio fügt eine Menüband-XML-Datei und eine Codedatei des Menüband-XML zu Ihrem Projekt.  
   
-3.  Suchen Sie in der Menübandklasse Code Kommentare, die mit beginnt `TODO:`.  
+3.  Suchen Sie in der Menüband-Code-Klasse, die Kommentare, die mit beginnen `TODO:`.  
   
-4.  Kopieren Sie den Codeblock in diese Kommentare an die **"ThisAddIn"**, **ThisWorkbook**, oder **ThisDocument** Klasse, je nachdem, welche Art von Lösung, die Sie entwickeln.  
+4.  Kopieren Sie den Codeblock in diesen Kommentaren in der **ThisAddin**, **ThisWorkbook**, oder **ThisDocument** Klasse, je nachdem, welche Art von Lösung, die Sie entwickeln.  
   
-     Dieser Code ermöglicht es, die Microsoft Office-Anwendung zu ermitteln und laden das benutzerdefinierte Menüband. Weitere Informationen finden Sie unter [Ribbon XML](../vsto/ribbon-xml.md).  
+     Dieser Code ermöglicht, Microsoft Office-Anwendung zu ermitteln und laden das benutzerdefinierte Menüband. Weitere Informationen finden Sie unter [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  In der **"ThisAddIn"**, **ThisWorkbook**, oder **ThisDocument** Klasse, kommentieren Sie den Codeblock.  
+5.  In der **ThisAddin**, **ThisWorkbook**, oder **ThisDocument** Klasse, heben Sie die auskommentierung des Codeblocks.  
   
-     Nachdem Sie den Code kommentieren, sollte es im folgende Beispiel ähneln. In diesem Beispiel heißt der Ribbon-Klasse `MyRibbon`.  
+     Nachdem Sie den Code auskommentiert haben, sollte es im folgende Beispiel entsprechen. In diesem Beispiel heißt die Ribbon-Klasse `MyRibbon`.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/16/2018
   
      Dies ist das Schreiben Sie Rückrufmethoden Benutzeraktionen wie das Klicken auf eine Schaltfläche zu behandeln.  
   
-7.  Erstellen Sie eine Rückrufmethode für jeden Ereignishandler, die Sie in der Menüband-Designer-Code geschrieben hat.  
+7.  Erstellen Sie eine Rückrufmethode für jeden Ereignishandler, die Sie in der Menüband-Designer-Code geschrieben haben.  
   
-8.  Verschieben Sie alle Ereignishandlercode aus den Ereignishandlern zu Rückrufmethoden, und ändern Sie den Code mit dem Programmmodell für die menübanderweiterung (RibbonX) Programmiermodell arbeiten.  
+8.  Verschieben Sie alle den Ereignishandlercode aus den Ereignishandlern in die Rückrufmethoden, und ändern Sie den Code zum Arbeiten mit den für die menübanderweiterung (RibbonX) Programmiermodell.  
   
      Informationen zum Schreiben von Rückrufmethoden, und verwenden das RibbonX-Programmiermodell finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md).  
   

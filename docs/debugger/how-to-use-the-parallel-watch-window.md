@@ -1,5 +1,5 @@
 ---
-title: Legen Sie eine Überwachung auf Variablen in parallelen Threads | Microsoft Docs
+title: Festlegen eines Überwachungselements für Variablen in parallelen Threads | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -20,23 +20,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475946"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808073"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Legen Sie eine Überwachung auf Variablen in parallelen Threads in Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Festlegen eines Überwachungselements für Variablen in parallelen Threads in Visual Studio
 Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, die ein Ausdruck auf mehreren Threads enthält. Jede Zeile stellt einen Thread in einer Anwendung ausgeführten dar. Allerdings wird ein Thread möglicherweise in mehreren Zeilen angezeigt werden. Genauer gesagt stellt jede Zeile einen Funktionsaufruf dar, dessen Funktionssignatur der Funktion auf dem aktuellen Stapelrahmen entspricht. Sie können die Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads kennzeichnen bzw. die Kennzeichnung aufheben, ihn einfrieren (anhalten) und reaktivieren (fortsetzen). Die folgenden Spalten werden angezeigt, der **parallele Überwachung** Fenster:  
   
 -   Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  
   
--   Der aktuelle Thread-Spalte, in der ein gelber Pfeil den aktuellen Thread gibt (ein grüner Pfeil in Form einer Welle gibt an, dass ein nicht-aktuellen Thread der aktuelle Kontext des Debuggers hat).  
+-   Der aktuelle Thread-Spalte, in der ein gelber Pfeil den aktuellen Thread gibt (ein grüner Pfeil in Form einer Welle gibt an, dass eine nicht-aktuellen Threads den aktuellen Debuggerkontext hat).  
   
 -   Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.  
   
     > [!TIP]
-    >  Um dislay Aufgabeninformationen in der **parallele Überwachung** Fenster müssen Sie zuerst öffnen die **Aufgabe** Fenster.  
+    >  Um dislay Aufgabeninformationen im der **parallele Überwachung** Fenster müssen Sie zuerst öffnen die **Aufgabe** Fenster.  
   
 -   Die leere *Überwachung hinzufügen* Spalten, in dem Sie Ausdrücke zur Überwachung eingeben können.  
   
@@ -48,11 +48,11 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 2.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
   
-3.  Wählen Sie in der Menüleiste **Debuggen**, **Windows**, **parallele Überwachung**, und wählen Sie dann ein Fenster "überwachen". Sie können bis zu vier Fenster öffnen.  
+3.  Wählen Sie auf der Menüleiste **Debuggen**, **Windows**, **parallele Überwachung**, und wählen Sie dann ein Fenster "überwachen". Sie können bis zu vier Fenster öffnen.  
   
 ### <a name="to-add-a-watch-expression"></a>So fügen Sie einen Überwachungsausdruck hinzu  
   
--   Wählen Sie die leere *Überwachung hinzufügen* Spalten und geben Sie einen Überwachungsausdruck.  
+-   Wählen Sie eine vom leer *Überwachung hinzufügen* Spalten und geben Sie einen Überwachungsausdruck.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf  
   
@@ -60,11 +60,11 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
--   Wählen Sie die **nur gekennzeichnete Elemente anzeigen** Schaltfläche in der oberen linken Ecke des der **parallele Überwachung** Fenster.  
+-   Wählen Sie die **nur gekennzeichnete Elemente anzeigen** -Schaltfläche in der oberen linken Ecke des der **parallele Überwachung** Fenster.  
   
 ### <a name="to-switch-to-another-thread"></a>So wechseln Sie zu einem anderen thread  
   
--   Doppelklicken Sie auf die Spalte mit dem aktuellen Thread (die zweite Spalte). (Tastatur: Wählen Sie die Zeile aus, und drücken Sie EINGABETASTE.)  
+-   Doppelklicken Sie auf die Spalte mit dem aktuellen Thread (zweite Spalte). (Tastatur: Wählen Sie die Zeile aus, und drücken Sie EINGABETASTE.)  
   
 ### <a name="to-sort-a-column"></a>So sortieren Sie eine Spalte  
   
@@ -72,15 +72,15 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads  
   
--   Öffnen Sie das Kontextmenü für das parallele Überwachungsfenster, wählen Sie **Group By**, und wählen Sie dann das entsprechende Untermenüelement.  
+-   Öffnen Sie das Kontextmenü für das parallele Überwachungsfenster, wählen **Group By**, und wählen Sie dann das entsprechende Untermenüelement.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>So frieren Sie Threads ein oder reaktivieren sie  
   
--   Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie **fixieren** oder **reaktivieren**.  
+-   Öffnen Sie das Kontextmenü für die Zeile, und wählen **fixieren** oder **reaktivieren**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>So exportieren Sie Daten in das parallele Überwachungsfenster  
   
--   Wählen Sie die **in Excel öffnen** Schaltfläche und wählen Sie dann **in Excel öffnen** oder **in CSV exportieren**.  
+-   Wählen Sie die **in Excel öffnen** Schaltfläche, und wählen Sie dann **in Excel öffnen** oder **exportieren nach CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>So filtern Sie nach einem booleschen Ausdruck  
   

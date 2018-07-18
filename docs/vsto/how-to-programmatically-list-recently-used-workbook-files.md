@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Liste zuletzt verwendeter Arbeitsmappendateien | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Liste zuletzt verwendeter Arbeitsmappendateien'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2d9c333b6d96329abec3fd52ecaa5da1cf97c74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257588"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programmgesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien
-  Die <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> -Eigenschaft gibt eine Auflistung, die die Namen aller Dateien enthält, die in der Microsoft Office Excel-Liste der zuletzt verwendeten Dateien angezeigt werden. Die Länge der Liste variiert abhängig von der Anzahl der Dateien an, die der Benutzer ausgewählt hat, beibehalten werden sollen. Sie können die Ergebnisse in einem Bereich angezeigt.  
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programmgesteuertes Liste zuletzt verwendeter Arbeitsmappendateien
+  Die <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> -Eigenschaft gibt eine Auflistung, die die Namen aller Dateien enthält, die in der Microsoft Office Excel-Liste der zuletzt geöffneten Dateien angezeigt werden. Die Länge der Liste variiert abhängig von der Anzahl der Dateien, die der Benutzer ausgewählt hat, beibehalten werden sollen. Sie können die Ergebnisse in einem Bereich anzeigen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Auf die Liste zuletzt verwendete Arbeitsmappen eines Range-Objekts  
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Auf die Liste der zuletzt verwendete Arbeitsmappen eines Range-Objekts  
   
 1.  Durchlaufen Sie die Liste der zuletzt verwendeten Dateien und die Anzeigenamen in den Zellen relativ zu einem <xref:Microsoft.Office.Interop.Excel.Range> Objekt.  
   
@@ -39,6 +40,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

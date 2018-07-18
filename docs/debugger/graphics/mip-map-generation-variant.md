@@ -1,5 +1,5 @@
 ---
-title: MipMap-Generierungsvariante | Microsoft Docs
+title: MipMap-Generierungsvariante | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475718"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433167"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.  
@@ -45,9 +45,9 @@ Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
  Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
   
 ## <a name="example"></a>Beispiel  
- Die **MipMap-Erzeugung** Variante durch Verwendung eines Codes reproduziert werden kann:  
+ Die **MipMap-Erzeugung** Variante reproduziert werden kann, mithilfe von Code wie folgt:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
