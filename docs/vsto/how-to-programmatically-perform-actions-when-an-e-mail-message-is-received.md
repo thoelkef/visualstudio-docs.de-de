@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b9936d1d3e1ffd3b4ec04af6719d0699000f8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb3ab28a70904d7f7bedbf126dc5fcdce77f176a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257386"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Gewusst wie: Programmgesteuertes Ausführen von Aktionen beim Empfang einer E-Mail-Nachricht
-  In diesem Beispiel werden benutzerdefinierte Aktionen ausgeführt, wenn der Benutzer eine E-Mail empfängt.  
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Gewusst wie: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht
+  In diesem Beispiel werden benutzerdefinierte Aktionen ausgeführt, wenn der Benutzer eine e-Mail-Nachricht empfängt.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -34,8 +35,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md)   
+ [Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
- [Erste Schritte: Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

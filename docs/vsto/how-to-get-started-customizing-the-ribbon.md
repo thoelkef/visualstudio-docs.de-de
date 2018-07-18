@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erste Schritte beim Anpassen des Menübands | Microsoft Docs'
+title: 'Gewusst wie: Erste Schritte beim Anpassen des Menübands'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 304cf3e9d445bcb655e27e8e35605549f489155c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254604"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste
-  Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element aus, um ein Office-Projekt.  
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Erste Schritte beim Anpassen des Menübands
+  Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  In der **Namen** geben einen Namen für das Element "Menüband".  
   
-     Dürfen enthalten nicht die folgenden Zeichen:  
+     Dürfen enthalten keine die folgenden Zeichen:  
   
     -   Nummernzeichen (#)  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Umgekehrter Schrägstrich (\\)  
   
-    -   Doppelpunkt (:))  
+    -   Doppelpunkt (:)  
   
     -   Doppeltes Anführungszeichen (")  
   
@@ -65,14 +66,14 @@ ms.lasthandoff: 04/16/2018
   
     -   Führende oder nachfolgende Leerzeichen ("")  
   
-    -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) von Windows oder DOS reservierte Namen  
+    -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen  
   
 4.  Klicken Sie auf **OK**.  
   
- Das Element "Menüband" wird im **Projektmappen-Explorer**. Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
+ Das Element "Menüband" wird im **Projektmappen-Explorer**. Weitere Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Menüband-Designer](../vsto/ribbon-designer.md)   
  [Menüband-XML](../vsto/ribbon-xml.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

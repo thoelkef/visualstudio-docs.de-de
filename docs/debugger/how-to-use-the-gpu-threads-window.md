@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von GPU-Threads im Debugger | Microsoft Docs
+title: Anzeigen von GPU-Threads im Debugger | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476727"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800918"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Gewusst wie: Verwenden des Fensters "GPU-Threads"
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf dem GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -40,13 +40,13 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 -   Die **Zeile** Spalte, die die Zeile des Codes angezeigt wird, in dem jede Gruppe von Threads befindet.  
   
--   Die **Adresse** Spalte, der die Anweisungsadresse angezeigt, wobei jede Gruppe von Threads befindet. Standardmäßig ist diese Spalte ausgeblendet.  
+-   Die **Adresse** Spalte, in der die Anweisungsadresse angezeigt wird, in dem jede Gruppe von Threads befindet. Standardmäßig ist diese Spalte ausgeblendet.  
   
--   Die **Speicherort** Spalte, die die Position im Quellcode ist.  
+-   Die **Speicherort** Spalte, die die Position in der Quellcode ist.  
   
--   Die **Status** Spalte, die zeigt, ob der Thread aktiv, blockiert, nicht gestartet oder abgeschlossen ist.  
+-   Die **Status** Spalte, die anzeigt, ob der Thread aktiv, blockiert, nicht gestartet oder abgeschlossen ist.  
   
--   Die **Kachel** Spalte, der der kachelindex für die Threads in der Zeile angezeigt wird.  
+-   Die **Kachel** Spalte, in der der kachelindex für die Threads in der Zeile anzeigt.  
   
  Im Header der Tabelle werden die Kachel und der Thread, die dargestellt werden, angezeigt.  
   
@@ -66,7 +66,7 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 6.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
   
-7.  Eine der Menüleiste auswählen **Debuggen**, **Windows**, **GPU-Threads**.  
+7.  Eine Menüleiste den Menüpunkt wählen **Debuggen**, **Windows**, **GPU-Threads**.  
   
 ### <a name="to-switch-to-a-different-thread"></a>So wechseln Sie zu einem anderen thread  
   
@@ -82,7 +82,7 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 ### <a name="to-display-or-hide-a-column"></a>So blenden Sie Spalten ein oder aus  
   
--   Öffnen Sie das Kontextmenü für den GPU-Threadfenster, wählen Sie **Spalten**, und wählen Sie dann die Spalte, die Sie anzeigen oder ausblenden möchten.  
+-   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, und wählen **Spalten**, und wählen Sie dann auf die Spalte, die Sie anzeigen oder ausblenden möchten.  
   
 ### <a name="to-sort-by-a-column"></a>So sortieren Sie nach Spalte  
   
@@ -90,11 +90,11 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads  
   
--   Öffnen Sie das Kontextmenü für den GPU-Threadfenster, wählen Sie **Group By**, und wählen Sie dann eine der angezeigten Spaltennamen. Wählen Sie **keine** Threads aufheben.  
+-   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, und wählen **Group By**, und wählen Sie dann eine der angezeigten Spaltennamen. Wählen Sie **keine** auf die Gruppierung der Threads aufzuheben.  
   
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>So können Sie eine Threadzeile einfrieren oder reaktivieren  
   
--   Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie **fixieren** oder **reaktivieren**.  
+-   Öffnen Sie das Kontextmenü für die Zeile, und wählen **fixieren** oder **reaktivieren**.  
   
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>So können Sie Threadzeile kennzeichnen oder die Kennzeichnung aufheben  
   

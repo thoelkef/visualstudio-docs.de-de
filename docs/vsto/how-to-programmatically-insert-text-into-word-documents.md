@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Einfügen von Text in Word-Dokumente | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Einfügen von Text in Word-Dokumente'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257211"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programmgesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
 -   Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> -Methode eines <xref:Microsoft.Office.Interop.Word.Selection> -Objekts, um Text an der Cursor- oder Auswahlposition einzufügen.  
   
 > [!NOTE]  
->  Sie können auch Text in Inhaltssteuerelemente und Lesezeichen einfügen. Weitere Informationen finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md) und [Lesezeichen-Steuerelement](../vsto/bookmark-control.md).  
+>  Sie können auch Text in Inhaltssteuerelemente und Lesezeichen einfügen. Weitere Informationen finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md) und [Bookmark-Steuerelement](../vsto/bookmark-control.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Einfügen von Text in einen Bereich  
+## <a name="insert-text-in-a-range"></a>Fügen Sie Text in einem Bereich  
  Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Range.Text%2A> -Eigenschaft eines <xref:Microsoft.Office.Interop.Word.Range> -Objekts, um Text in ein Dokument einzufügen.  
   
-#### <a name="to-insert-text-in-a-range"></a>So fügen Sie Text in einen Bereich ein  
+### <a name="to-insert-text-in-a-range"></a>So fügen Sie Text in einen Bereich ein  
   
 1.  Geben Sie einen Bereich am Anfang eines Dokuments an, und fügen Sie den Text **New Text**ein.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Ersetzen von Text in einem Bereich  
+## <a name="replace-text-in-a-range"></a>Ersetzen von Text in einem Bereich  
  Wenn der angegebene Bereich Text enthält, wird der gesamte Text im Bereich durch den eingefügten Text ersetzt.  
   
-#### <a name="to-replace-text-in-a-range"></a>So ersetzen Sie Text in einem Bereich  
+### <a name="to-replace-text-in-a-range"></a>So ersetzen Sie Text in einem Bereich  
   
 1.  Erstellen Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt, das aus den ersten 12 Zeichen des Dokuments besteht.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>Einfügen von Text mithilfe von TypeText  
+## <a name="insert-text-using-typetext"></a>Fügen Sie Text mithilfe von TypeText  
  Durch die <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> -Methode wird Text an der Auswahlposition eingefügt. Je nach den auf dem Benutzercomputer festgelegten Optionen verhält sich<xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> unterschiedlich. Durch den Code in der folgenden Prozedur wird eine <xref:Microsoft.Office.Interop.Word.Selection> -Objektvariable deklariert und die **Overtype** -Option deaktiviert, sofern sie aktiviert war. Wenn die **Overtype** -Option aktiviert ist, wird sämtlicher Text neben dem Cursor überschrieben.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>So fügen Sie Text mithilfe der TypeText-Methode ein  
+### <a name="to-insert-text-using-the-typetext-method"></a>So fügen Sie Text mithilfe der TypeText-Methode ein  
   
 1.  Deklarieren Sie eine <xref:Microsoft.Office.Interop.Word.Selection> -Objektvariable.  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Sie können auch die <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> -Methode des <xref:Microsoft.Office.Interop.Word.Selection> -Objekts verwenden, die die Funktionalität der RÜCKTASTE auf der Tastatur imitiert. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.  
+ Können Sie auch die <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> Methode der <xref:Microsoft.Office.Interop.Word.Selection> -Objekt, das die Funktionalität von imitiert die **RÜCKTASTE** auf der Tastatur die Taste. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.  
   
  Das folgende Beispiel enthält den vollständigen Code. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisDocument` -Klasse oder `ThisAddIn` -Klasse im Projekt aus.  
   
@@ -128,8 +129,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Programmgesteuertes Formatieren von Text in Dokumenten](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Vorgehensweise: Programmgesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+ [Gewusst wie: Programmgesteuertes Formatieren von Text in Dokumenten](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Gewusst wie: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Gewusst wie: Programmgesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

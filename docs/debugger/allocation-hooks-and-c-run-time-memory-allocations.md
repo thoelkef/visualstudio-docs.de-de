@@ -1,5 +1,5 @@
 ---
-title: Reservierungshooks und Speicherbelegungen für C Run-Time | Microsoft Docs
+title: Reservierungshooks und Speicherreservierungen von C-Laufzeit | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,24 +22,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0d4a14ff8df32ea783f74bd911ba97fa179563
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7e4c631b72ae9b12f77daf2ddd49919651c0b3e5
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458072"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433105"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
-Eine äußerst wichtige Einschränkung für Reservierungshookfunktionen besteht darin, dass `_CRT_BLOCK`-Blöcke (die von C-Laufzeitbibliotheken intern vorgenommenen Speicherbelegungen) ignoriert werden müssen, falls Aufrufe an C-Bibliotheksfunktionen gesendet werden, durch die interner Speicher belegt wird. Die `_CRT_BLOCK`-Blöcke können ignoriert werden, wenn Sie am Anfang der Reservierungshookfunktion z. B. folgenden Code einfügen:  
+Eine äußerst wichtige Einschränkung für Reservierungshookfunktionen ist, dass sie explizit ignoriert werden `_CRT_BLOCK` Blöcke. Diese Blöcke sind, die intern vorgenommenen speicherbelegungen von C-Laufzeitbibliotheksfunktionen, wenn sie alle Aufrufe von Funktionen der C-Laufzeitbibliothek ausmachen, die interner Speicher belegt wird. Sie können ignorieren `_CRT_BLOCK` Blöcke durch Einschließen des folgende Codes an den Anfang der Reservierungshookfunktion:  
   
-```  
+```cpp
 if ( nBlockUse == _CRT_BLOCK )  
     return( TRUE );  
 ```  
   
- Werden `_CRT_BLOCK`-Blöcke nicht vom Reservierungshook ignoriert, kann es vorkommen, dass eine im Hook aufgerufene C-Laufzeitbibliotheksfunktion das Programm in eine Endlosschleife führt. Beispielsweise nimmt `printf` eine interne Reservierung vor. Wenn Hookcode aufruft `printf`, und klicken Sie dann die daraus resultierende Reservierung Hook erneut aufgerufen werden bewirkt aufgerufen wird **Printf** erneut, und so weiter bis ein Stapelüberlauf auftritt. Wenn Sie `_CRT_BLOCK`-Reservierungsoperationen in einem Bericht ausgeben möchten, können Sie diese Beschränkung umgehen, indem Sie für die Formatierung und die Ausgabe anstelle der C-Laufzeitfunktionen Windows-API-Funktionen verwenden. Da der Heap der C-Laufzeitbibliothek nicht von Windows-APIs verwendet wird, führen sie den Reservierungshook nicht in eine Endlosschleife.  
+ Wenn der Reservierungshook ignoriert nicht `_CRT_BLOCK` blockiert wird, und klicken Sie dann alle im Hook aufgerufene C-Laufzeitbibliothek-Funktion, die Anwendung in einer Endlosschleife Auffangen kann. Beispielsweise nimmt `printf` eine interne Reservierung vor. Wenn Sie den Hookcode `printf`, und klicken Sie dann die daraus resultierende Reservierung der Hook erneut aufgerufen wird wiederum führt **Printf** erneut aus, und so weiter, bis ein Stapelüberlauf auftritt. Wenn Sie `_CRT_BLOCK`-Reservierungsoperationen in einem Bericht ausgeben möchten, können Sie diese Beschränkung umgehen, indem Sie für die Formatierung und die Ausgabe anstelle der C-Laufzeitfunktionen Windows-API-Funktionen verwenden. Da die Windows-APIs den C-Laufzeitbibliothek Heap nicht verwenden, werden sie nicht der Reservierungshook in einer Endlosschleife überfüllt.  
   
- Wenn Sie die Quelldateien der Laufzeitbibliothek untersuchen, sehen Sie, dass die standardmäßige Reservierungshookfunktion, **CrtDefaultAllocHook** (welche gibt einfach **"true"**), befindet sich in einer separaten Datei selbst, DBGHOOK. C. Wenn Sie möchten die Hookfunktion aufgerufen werden, dies gilt auch für die Zuweisung vorgenommen, durch den Laufzeit-Startcode, die vor der Anwendungsverzeichnis ausgeführt wird **main** -Funktion können Sie durch ein eigenes, statt diese Funktion standardmäßig ersetzen mit [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
+ Wenn Sie die Quelldateien der Laufzeitbibliothek untersuchen, sehen Sie, dass die standardmäßige Reservierungshookfunktion **CrtDefaultAllocHook** (gibt einfach **"true"**), befindet sich in einer separaten Datei mit ihren eigenen DBGHOOK. C. Wenn der Reservierungshook auch für die Zuordnungen, die von der Laufzeit-Startcode, die ausgeführt wird, bevor Sie Ihrer Anwendungsverzeichnis aufgerufen werden soll **main** -Funktion können Sie diese Standardfunktion durch eine eigene, anstelle von ersetzen Mithilfe von [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)   

@@ -1,5 +1,5 @@
 ---
-title: Folder-Element (Visual Studio-Projektvorlagen) | Microsoft Docs
+title: Folder-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132814"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234922"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder-Element (Visual Studio-Projektvorlagen)
 Gibt einen Ordner, der dem Projekt hinzugefügt werden.  
@@ -47,27 +47,27 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projektordners.|  
-|`TargetFolderName`|Optionales Attribut.<br /><br /> Gibt den Namen für den Ordner, wenn ein Projekt aus der Vorlage erstellt wurde. Dieses Attribut ist nützlich für die Verwendung von parameterersetzung So erstellen einen Ordnernamen ein, oder benennen einen Ordner mit einer internationalen Zeichenfolge, die nicht direkt in der ZIP-Datei verwendet werden kann.|  
+|`TargetFolderName`|Optionales Attribut.<br /><br /> Gibt den Namen, um den Ordner zu gewähren, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich für die Verwendung von parameterersetzungen erstellen Sie einen Ordnernamen ein, oder benennen einen Ordner mit einer internationalen Zeichenfolge ein, kann nicht direkt in die ZIP-Datei verwendet werden.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |`Folder`|Gibt einen Ordner auf dem Projekt hinzugefügt. `Folder` Elemente können untergeordnete enthalten `Folder` Elemente.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Gibt eine Datei zum Projekt hinzugefügt.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Gibt eine Datei zum Projekt hinzufügen.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales untergeordnetes Element von [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales untergeordnetes Element des [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Hinweise  
  `Folder` ist ein optionales untergeordnetes Element des `Project`.  
   
- Sie können eine der folgenden Methoden, um Projektelemente in Ordnern in einer Vorlage zu organisieren:  
+ Sie können eine der folgenden Methoden verwenden, so organisieren Projektelemente in Ordnern in einer Vorlage:  
   
--   Schließen Sie die Ordner in die ZIP-Datei der Vorlage, und das Projekt in der VSTEMPLATE-Datei hinzufügen, indem angeben des Pfads zur Datei in die `ProjectItem` Elementen, die keine `Folder` Elemente. Dies ist die empfohlene Methode. Zum Beispiel:  
+-   Schließen Sie die Ordner, in der ZIP-Vorlagendatei und dem Projekt in der VSTEMPLATE-Datei hinzufügen, indem Sie die Angabe des Pfads zur Datei in die `ProjectItem` Elemente ohne `Folder` Elemente. Dies ist die empfohlene Methode. Zum Beispiel:  
   
      `...`  
   
@@ -77,7 +77,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
   
      `...`  
   
--   Schließen Sie die Ordner in die ZIP-Datei der Vorlage, und fügen sie das Projekt in der VSTEMPLATE-Datei mit hinzu `Folder` Elemente. Zum Beispiel:  
+-   Schließen Sie die Ordner, in der ZIP-Vorlagendatei, und fügen Sie sie dem Projekt in der VSTEMPLATE-Datei mit `Folder` Elemente. Zum Beispiel:  
   
      `...`  
   
@@ -91,7 +91,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
   
      `...`  
   
--   Schließen Sie Ordner nicht in der ZIP-Vorlagendatei, aber Hinzufügen von Ordnern, die mit der `TargetFileName` Attribut von der `ProjectItem` Element. Zum Beispiel:  
+-   Schließen Sie Ordner nicht in die ZIP-Datei der Vorlage, aber fügen Sie Ordner mit der `TargetFileName` Attribut der `ProjectItem` Element. Zum Beispiel:  
   
      `...`  
   
@@ -102,7 +102,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
      `...`  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung.  
+ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

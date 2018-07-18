@@ -1,5 +1,5 @@
 ---
-title: Fügen Sie Code hinzu, um Datasets in n-Tier-Anwendungen
+title: Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,38 +15,39 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6de192b07552b4516aa8289e2a68fa90830b7fe8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4c5fbbbe878e14c6c88c872ece2b3d492e3ea7c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844032"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Fügen Sie Code hinzu, um Datasets in n-Tier-Anwendungen
-Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstatt zum Hinzufügen von Code, um die *DatasetName*. Dataset.Designer-Datei). Partielle Klassen können Sie Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [partielle](/dotnet/visual-basic/language-reference/modifiers/partial) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
+Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName*. Dataset.Designer-Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](/dotnet/visual-basic/language-reference/modifiers/partial) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
-Der Code, der ein Dataset definiert wird generiert, jedes Mal, wenn die Definition des Datasets (in das typisierte Dataset) geändert werden. Dieser Code wird auch generiert, wenn Sie während der Ausführung des Assistenten für alle Änderungen vornehmen, die die Konfiguration eines Datasets ändert. Um zu verhindern, dass Ihr Code während der erneuten Generierung eines Datasets gelöscht wird, fügen Sie Code partiellen Klassendatei für das Dataset ein.
+Jedes Mal, wenn der datasetdefinition (im typisierten Dataset) geändert wird, wird der Code, der ein Dataset definiert, generiert. Dieser Code wird auch generiert, wenn Sie während der Ausführung des Assistenten für alle Änderungen vornehmen, die die Konfiguration eines Datasets ändert. Um zu verhindern, dass Ihr Code beim erneuten Generieren eines Dataset gelöscht wird, fügen Sie Code des Datasets partiellen Klassendatei hinzu.
 
-Standardmäßig ist bei einer Trennung von Dataset und TableAdapter-Code wird eine separate Klassendatei in jedem Projekt angelegt. Das ursprüngliche Projekt enthält eine Datei namens *DatasetName*. Designer.vb (oder *DatasetName*. Designer.cs), die den TableAdapter-Code enthält. Das Projekt, das in festgelegten der **Dataset-Projekt** Eigenschaft verfügt über eine Datei mit dem Namen *DatasetName*. DataSet.Designer.vb (oder *DatasetName*. (DataSet.Designer.cs). Diese Datei enthält den Dataset-Code.
-
-> [!NOTE]
->  Beim Trennen von Datasets und TableAdaptern (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
+Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standardmäßig eine separate Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei namens *dem Namen DatasetName.Designer.vb* (oder *DatasetName.Designer.cs*), die den TableAdapter-Code enthält. Das Projekt, das angegeben die **Dataset-Projekt** Eigenschaft verfügt über eine Datei mit dem Namen *dem Namen DatasetName.DataSet.Designer.vb* (oder *DatasetName.DataSet.Designer.cs*) . Diese Datei enthält den Dataset-Code.
 
 > [!NOTE]
->  Wenn Validierungscode hinzugefügt werden muss, enthält das typisierte Dataset Funktionen zum Generieren von <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> -Ereignishandler. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).
+>  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu Datasets in n-Tier-Anwendungen
+> [!NOTE]
+>  Wenn Code für die Überprüfung hinzugefügt werden muss, bietet das typisierte Dataset Funktionen zum Generieren von <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> -Ereignishandler. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
-1.  Suchen Sie das Projekt, das die XSD-Datei enthält.
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu Datasets in n-schichtige Anwendungen
 
-2.  Wählen Sie die **XSD** Datei, um das Dataset zu öffnen.
+1.  Suchen Sie das Projekt mit der *XSD* Datei.
 
-3.  Mit der rechten Maustaste in der Datentabelle, Sie fügen Code (der Tabellenname in der Titelleiste), und wählen Sie dann möchten **Code anzeigen**.
+2.  Wählen Sie die **XSD** Datei, um das Dataset öffnen.
+
+3.  Mit der rechten Maustaste in der Datentabelle, Sie fügen Sie Code (den Tabellennamen in der Titelleiste), und wählen Sie dann möchten **Ansichtscode**.
 
      Eine partielle Klasse wird erstellt und im Code-Editor geöffnet.
 
-4.  Fügen Sie Code innerhalb der Deklaration der partiellen Klasse hinzu.
+4.  Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.
 
-     Das folgende Beispiel zeigt, wo der CustomersDataTable im NorthwindDataSet Code hinzufügen:
+     Das folgende Beispiel zeigt, wo die CustomersDataTable NorthwindDataSet Code hinzufügen:
 
     ```vb
     Partial Public Class CustomersDataTable
@@ -64,8 +65,8 @@ Standardmäßig ist bei einer Trennung von Dataset und TableAdapter-Code wird ei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Gewusst wie: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Erstellen und Konfigurieren von TableAdapters](create-and-configure-tableadapters.md)
+- [Erstellen und Konfigurieren eines TableAdapters](create-and-configure-tableadapters.md)
 - [Übersicht über die hierarchische Aktualisierung](hierarchical-update.md)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

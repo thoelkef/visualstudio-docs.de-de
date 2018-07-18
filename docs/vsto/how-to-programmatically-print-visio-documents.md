@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,33 +16,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6efaffb9f8b3a9842528765d43f065acb314025f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257504"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten
   Sie können ein vollständiges Microsoft Office Visio-Dokument oder nur eine bestimmte Seite drucken.  
   
  Ausführliche Informationen zu den Druckmethoden finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) -Methode und [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) -Methode.  
   
-## <a name="printing-a-visio-document"></a>Drucken eines Visio-Dokuments  
+## <a name="print-a-visio-document"></a>Drucken von Visio-Dokumenten  
   
-#### <a name="to-print-a-complete-document"></a>So drucken Sie ein vollständiges Dokument  
+### <a name="to-print-a-complete-document"></a>So drucken Sie ein vollständiges Dokument  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Document.Print-Methode des Microsoft.Office.Interop.Visio.Document-Objekts, das Sie drucken möchten.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Print`-Methode des `Microsoft.Office.Interop.Visio.Document`-Objekts auf, das Sie drucken möchten.  
   
      Im folgenden Codebeispiel wird das aktive Dokument gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#8)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#8)]  
   
-## <a name="printing-a-page-of-a-visio-document"></a>Drucken einer Seite eines Visio-Dokuments  
+## <a name="print-a-page-of-a-visio-document"></a>Drucken Sie eine Seite eines Visio-Dokuments  
   
-#### <a name="to-print-a-page-of-a-document"></a>So drucken Sie eine Seite eines Dokuments  
+### <a name="to-print-a-page-of-a-document"></a>So drucken Sie eine Seite eines Dokuments  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Pages.Print-Methode des Microsoft.Office.Interop.Visio.Pages-Objekts, das Sie drucken möchten.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Pages.Print`-Methode des `Microsoft.Office.Interop.Visio.Pages`-Objekts auf, das Sie drucken möchten.  
   
      Im folgenden Codebeispiel wird die erste Seite des aktiven Dokuments gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.  
   
@@ -51,10 +52,10 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Visio-Projektmappen](../vsto/visio-solutions.md)   
- [Visio-Objektmodellübersicht](../vsto/visio-object-model-overview.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)  
+ [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
+ [Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)  
   
   

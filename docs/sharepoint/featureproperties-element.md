@@ -1,5 +1,5 @@
 ---
-title: FeatureProperties-Element | Microsoft Docs
+title: FeatureProperties-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766713"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36324996"
 ---
 # <a name="featureproperties-element"></a>Element „FeatureProperties“
-  Eine Auflistung von Eigenschaftswerten, die in eine Funktion eingeschlossen werden, wenn er für SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaftswerte in Ihrem Code zugreifen.  
+  Eine Auflistung von Eigenschaftswerten, die mit einer Funktion enthalten sind, wenn sie in SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaftswerte in Ihrem Code zugreifen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,22 +49,22 @@ ms.locfileid: "34766713"
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dieses Element das erforderliche Stammelement von der `.spdata` Datei.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dieses Element die Erforderliches Stammelement von der `.spdata` Datei.|  
   
 ## <a name="remarks"></a>Hinweise  
- Weitere Informationen zu Eigenschaften finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Weitere Informationen zu Feature-Eigenschaften finden Sie unter [Angaben zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Elementinformationen
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Schemaname**|SharePoint-Projektelementschema|  
+|**Name des Schemas**|SharePoint-Projektelementschema|  
 |**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
-|**Kann leer sein**|Nein|  
+|**Kann leer sein.**|Nein|  
   
 ## <a name="see-also"></a>Siehe auch
  [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

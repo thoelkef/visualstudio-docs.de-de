@@ -15,28 +15,28 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e0ee905cf4ddaec6a05d5c0722b80c345489acd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979034"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234423"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
-*Direktivenprozessoren* fügen Sie Code, um die *generierten Transformationsklasse*. Beim Aufrufen einer *Richtlinie* aus einem *Textvorlage*, kann der Rest des Codes, den Sie in der Textvorlage schreiben, die, auf die Direktive bereitgestellten Funktion basieren.
+*Direktivenprozessoren* fügen Sie Code für die *generierten Transformationsklasse*. Aufrufen einer *Richtlinie* aus einer *Textvorlage*, der Rest des Codes, den Sie in der Textvorlage schreiben, kann die Funktionalität von der Anweisung bereitgestellten abhängig.
 
 Sie können eigene benutzerdefinierte Anweisungsprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Direktivenprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
 
 In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:
 
-- Erstellen eines benutzerdefinierten Direktivenprozessors
+- Erstellen eines benutzerdefinierten anweisungsprozessors
 
-- Registrieren des Direktivenprozessors komplizierter
+- Registrieren des anweisungsprozessors
 
-- Testen des Direktivenprozessors
+- Testen des anweisungsprozessors
 
-## <a name="create-a-custom-directive-processor"></a>Erstellen eines benutzerdefinierten Direktivenprozessors
+## <a name="create-a-custom-directive-processor"></a>Erstellen eines benutzerdefinierten Anweisungsprozessors
 
 In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten Anweisungsprozessor. Sie fügen eine benutzerdefinierte Direktive hinzu, von der eine XML-Datei gelesen, in einer <xref:System.Xml.XmlDocument>-Variable gespeichert und durch eine Eigenschaft verfügbar gemacht wird. Im Abschnitt "Testen des Anweisungsprozessors" verwenden Sie diese Eigenschaft in einer Textvorlage, um auf die XML-Datei zuzugreifen.
 
@@ -44,7 +44,7 @@ Der Aufruf der benutzerdefinierten Anweisung sieht folgendermaßen aus:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Direktive, die Sie hier erstellen, wird der vom Modul zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom> Klassen erstellen Sie Code in Visual c# oder Visual Basic, abhängig von der Sprache, die im angegebenen der `language` Parameter von der `template` Richtlinie. Die Sprache des Anweisungsprozessors und die Sprache der Textvorlage, die auf den Anweisungsprozessor zugreift, müssen nicht identisch sein.
+Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Anweisung, die Sie hier erstellen, wird der von der Engine zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom> Klassen abhängig von der Sprache, die im angegebenen Code in Visual c# oder Visual Basic erstellen die `language` Parameter, der die `template` Richtlinie. Die Sprache des Anweisungsprozessors und die Sprache der Textvorlage, die auf den Anweisungsprozessor zugreift, müssen nicht identisch sein.
 
 Der von der Anweisung erstellte Code sieht folgendermaßen aus:
 
@@ -82,9 +82,9 @@ End Property
 1. Erstellen Sie in Visual Studio ein Visual C#- oder Visual Basic-Klassenbibliothekprojekt mit dem Namen "CustomDP".
 
     > [!NOTE]
-    > Wenn Sie den Direktivenprozessor auf mehreren Computern installieren möchten, ist es besser, ein Projekt von Visual Studio-Erweiterung (VSIX) zu verwenden und eine PKGDEF-Datei in die Erweiterung einzuschließen. Weitere Informationen finden Sie unter [Bereitstellen einer benutzerdefinierten Direktivenprozessor](../modeling/deploying-a-custom-directive-processor.md).
+    > Wenn Sie den anweisungsprozessor auf mehreren Computern installieren möchten, ist es besser, verwenden Sie ein Projekt von Visual Studio-Erweiterung (VSIX) und eine PKGDEF-Datei in der Erweiterung. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).
 
-2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
+2. Fügen Sie Verweise auf diese Assemblys hinzu:
 
     - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
@@ -127,7 +127,7 @@ End Property
 
             // These are the errors that occur during processing. The engine passes
             // the errors to the host, and the host can decide how to display them,
-            // for example the the host can display the errors in the UI
+            // for example the host can display the errors in the UI
             // or write them to a file.
             // ---------------------------------------------------------------------
             private CompilerErrorCollection errorsValue;
@@ -386,7 +386,7 @@ End Property
 
             ' These are the errors that occur during processing. The engine passes
             ' the errors to the host, and the host can decide how to display them,
-            ' for example the the host can display the errors in the UI
+            ' for example the host can display the errors in the UI
             ' or write them to a file.
             ' ---------------------------------------------------------------------
             Private errorsValue As CompilerErrorCollection
@@ -601,9 +601,9 @@ End Property
     End Namespace
     ```
 
-4. Öffnen Sie für Visual Basic die **Projekt** und auf **CustomDP-Eigenschaften**. Auf der **Anwendung** Registerkarte **Stammnamespace**, löschen Sie den Standardwert `CustomDP`.
+4. Öffnen Sie Visual Basic die **Projekt** und auf **CustomDP-Eigenschaften**. Auf der **Anwendung** Registerkarte **Stammnamespace**, löschen Sie den Standardwert `CustomDP`.
 
-5. Auf der **Datei** Menü klicken Sie auf **alle speichern**.
+5. Auf der **Datei** Menü klicken Sie auf **Alles speichern**.
 
 6. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
@@ -611,12 +611,12 @@ End Property
 
 Erstellen Sie das Projekt. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-## <a name="register-the-directive-processor"></a>Registrieren des Direktivenprozessors komplizierter
+## <a name="register-the-directive-processor"></a>Registrieren des Anweisungsprozessors
 
-Bevor Sie eine Richtlinie aus einer Textvorlage in Visual Studio aufrufen können, müssen Sie einen Registrierungsschlüssel für den Direktivenprozessor hinzufügen.
+Bevor Sie eine Richtlinie aus einer Textvorlage in Visual Studio aufrufen können, müssen Sie einen Registrierungsschlüssel für den anweisungsprozessor hinzufügen.
 
 > [!NOTE]
-> Wenn Sie den Direktivenprozessor auf mehreren Computern installieren möchten, ist es besser, Visual Studio-Erweiterung (VSIX) zu definieren, enthält eine *PKGDEF* Datei und die Assembly. Weitere Informationen finden Sie unter [Bereitstellen einer benutzerdefinierten Direktivenprozessor](../modeling/deploying-a-custom-directive-processor.md).
+> Wenn Sie den anweisungsprozessor auf mehreren Computern installieren möchten, ist es besser, ein Visual Studio-Erweiterung (VSIX) zu definieren, enthält eine *PKGDEF* Datei und die Assembly. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).
 
 Schlüssel für Anweisungsprozessoren befinden sich unter folgendem Pfad in der Registrierung:
 
@@ -637,11 +637,11 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 ### <a name="to-add-a-registry-key-for-the-directive-processor"></a>So fügen Sie einen Registrierungsschlüssel für den Anweisungsprozessor hinzu
 
-1. Führen Sie die `regedit` -Befehl über das Startmenü oder der Befehlszeile.
+1. Führen Sie die `regedit` -Befehl über das Startmenü oder der Befehlszeile aus.
 
 2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**, und klicken Sie auf den Knoten.
 
-   Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+   Auf 64-Bit-Systemen verwenden **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
 3. Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.
 
@@ -652,7 +652,7 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 5. Fügen Sie einen neuen Zeichenfolgenwert mit dem Namen "CodeBase" hinzu, dessen Wert dem Pfad der zuvor in dieser exemplarischen Vorgehensweise erstellten CustomDP.dll entspricht.
 
-     Der Pfad kann z. B. wie folgt aussehen `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.
+     Der Pfad sieht beispielsweise wie `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.
 
      Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:
 
@@ -672,15 +672,15 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 6. Starten Sie Visual Studio neu.
 
-## <a name="test-the-directive-processor"></a>Testen des Direktivenprozessors
+## <a name="test-the-directive-processor"></a>Testen des Anweisungsprozessors
 
 Zum Testen des Anweisungsprozessors müssen Sie eine Textvorlage erstellen, in der der Prozessor aufgerufen wird.
 
-In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen eine XML-Datei, die Dokumentation für eine Klassendatei enthält. Die Vorlage "Text" verwendet die <xref:System.Xml.XmlDocument> -Eigenschaft, die die Richtlinie erstellt, um den XML-Code navigieren und die Dokumentationskommentare auszugeben.
+In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen eine XML-Datei, die Dokumentation für eine Klassendatei enthält. Die Textvorlage verwendet die <xref:System.Xml.XmlDocument> -Eigenschaft, die die Richtlinie erstellt wird, um den XML-Code navigieren und die Dokumentationskommentare auszugeben.
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>So erstellen Sie eine XML-Datei zum Testen des Anweisungsprozessors
 
-1. Erstellen Sie eine Datei mit dem Namen *DocFile.xml* mithilfe eines Text-Editors (z. B. Editor).
+1. Erstellen Sie eine Datei mit dem Namen *DocFile.xml* mit einem Text-Editor (z. B. Editor).
 
     > [!NOTE]
     > Sie können diese Datei an einem beliebigen Speicherort erstellen (z. B. *C:\Test\DocFile.xml*).
@@ -734,7 +734,7 @@ In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen
 
 2. Fügen Sie eine neue Textvorlagendatei mit dem Namen "TestDP.tt" hinzu.
 
-3. Stellen Sie sicher, dass die **benutzerdefiniertes Tool** Eigenschaft von "TestDP.tt" festgelegt ist, um `TextTemplatingFileGenerator`.
+3. Stellen Sie sicher, dass die **benutzerdefiniertes Tool** von "TestDP.tt"-Eigenschaftensatz auf `TextTemplatingFileGenerator`.
 
 4. Ändern Sie den Inhalt von "TestDP.tt" in den folgenden Text ein.
 
@@ -828,13 +828,13 @@ In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen
     > [!NOTE]
     > In diesem Beispiel ist der Wert des `Processor`-Parameters `CustomDirectiveProcessor`. Der Wert des `Processor`-Parameters muss dem Namen des Registrierungsschlüssels des Prozessors entsprechen.
 
-5. Auf der **Datei** Menü wählen **alle speichern**.
+5. Auf der **Datei** Menü wählen **Alles speichern**.
 
 ### <a name="to-test-the-directive-processor"></a>So testen Sie den Anweisungsprozessor
 
 1. In **Projektmappen-Explorer**mit der rechten Maustaste auf "TestDP.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
 
-   Für Visual Basic-Benutzer "TestDP.txt" möglicherweise nicht angezeigt werden **Projektmappen-Explorer** standardmäßig. Um alle Dateien, die dem Projekt zugewiesen anzuzeigen, öffnen Sie die **Projekt** Menü, und klicken Sie auf **alle Dateien anzeigen**.
+   Für Visual Basic-Benutzer "TestDP.txt" möglicherweise nicht angezeigt werden **Projektmappen-Explorer** standardmäßig. Um alle Dateien, die dem Projekt zugewiesen anzuzeigen, öffnen Sie die **Projekt** Menü **alle Dateien anzeigen**.
 
 2. In **Projektmappen-Explorer**, erweitern Sie den Knoten "TestDP.txt", und doppelklicken Sie dann auf "TestDP.txt", um sie im Editor zu öffnen.
 
@@ -961,8 +961,8 @@ Nachdem Sie den benutzerdefinierten Anweisungsprozessor getestet haben, können 
     </body></html>
     ```
 
-2. Auf der **Datei** Menü klicken Sie auf **"TestDP.txt speichern"**.
+2. Auf der **Datei** Menü klicken Sie auf **TestDP.txt speichern**.
 
 3. Zum Anzeigen der Ausgabe in einem Browser im **Projektmappen-Explorer**mit der rechten Maustaste auf "TestDP.htm", und klicken Sie auf **In Browser anzeigen**.
 
-   Die Ausgabe sollte den Originaltext identisch sein, außer es HTML-Format angewendet wurde. Jeder Elementname wird fett formatiert angezeigt.
+   Die Ausgabe sollte der ursprüngliche Text, identisch sein, aber das HTML-Format angewendet. Jeder Elementname wird in Fettdruck angezeigt.

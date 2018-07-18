@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio | Microsoft Docs'
+title: 'Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,31 +17,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629149eab19dbd717cdc663a58a53659ae18a4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3bec0437fb9bcd55821e27b22b118430024f751
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255430"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio
-  **Wichtige** die Informationen in diesem Thema nach Microsoft Word wird dargestellten ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden, oder verwenden, oder entwickeln Programme, die unter ausgeführt, im Zusammenhang mit benutzerdefinierten XML-Code von Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn eine Implementierung der einzelnen Funktionen von Microsoft entfernt. Diese Informationen bezüglich Microsoft Word kann nicht gelesen oder von Einzelpersonen oder Organisationen aus, in den Vereinigten Staaten oder die Vertriebsgebiete, denen der verwenden, oder entwickeln Programme, die auf Microsoft Word-Produkte ausgeführt, die von Microsoft nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält sich nicht wie Produkte, die vor diesem Datum lizenziert oder erworben und lizenziert für die Verwendung außerhalb der Vereinigten Staaten.  
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio
+  **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Sie können ein XML-Schema zu einem Dokument zuzuordnen, während das Dokument im Visual Studio geöffnet ist. Sie verwenden den gleichen Microsoft Office Word-Tools, die Sie verwenden, wenn das Dokument außerhalb von Visual Studio geöffnet ist. Die Office-Projekt erstellt dieselben Objekte, ob Sie das Schema, das Dokument vor dem zuordnen oder nach der Erstellung der Word-Projektmappe.  
+ Sie können ein XML-Schema in ein Dokument zuordnen, während das Dokument in Visual Studio geöffnet ist. Sie verwenden den gleichen Microsoft Office Word-Tools, die Sie verwenden, wenn das Dokument außerhalb von Visual Studio geöffnet ist. Das Office-Projekt erstellt die gleichen Objekte, ob Sie das Schema, das Dokument vor dem zuordnen oder nach der Erstellung der Word-Projektmappe.  
   
-### <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Zuordnen ein XML-Schemas zu einem Word-Dokument in Visual Studio  
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Ordnen Sie eine XML-Schema in ein Word-Dokument in Visual Studio  
   
-1.  Öffnen Sie das Word-Dokument oder einem Vorlagenprojekt-Projekt, innerhalb von Visual Studio.  
+1.  Öffnen Sie das Word-Dokument oder einer Vorlage-Projekt, in Visual Studio.  
   
-2.  Klicken Sie in das Dokument den Fokus auf den Designer.  
+2.  Klicken Sie auf das Dokument, das den Fokus auf den Designer.  
   
-3.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
+3.  Klicken Sie auf dem Menüband auf die **Developer** Registerkarte.  
   
     > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-4.  In der **XML** zu gruppieren, klicken Sie auf **Schema**.  
+4.  In der **XML** auf **Schema**.  
   
      Die **Vorlagen und Add-Ins** Dialogfeld wird geöffnet.  
   
@@ -51,20 +52,20 @@ ms.lasthandoff: 04/16/2018
   
      Die **Schema hinzufügen** Dialogfeld wird geöffnet.  
   
-7.  Navigieren Sie zu der Schemadatei, wählen Sie diese, und klicken Sie dann auf **öffnen**.  
+7.  Navigieren Sie zu der Schemadatei, wählen Sie ihn, und klicken Sie dann auf **öffnen**.  
   
-     Die **Schemaeinstellungen** Dialogfeld wird geöffnet.  
+     Die **Schema Einstellungen** Dialogfeld wird geöffnet.  
   
-8.  Weisen Sie einen Alias ein, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.  
+8.  Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.  
   
 9. Klicken Sie auf **OK**.  
   
      Die **XML-Struktur** Fenster wird geöffnet.  
   
-10. Ziehen Sie Elemente aus der **XML-Struktur** Fenster aus, um den Stellen in Ihrem Dokument, in dem die entsprechenden Steuerelemente erstellt werden sollen.  
+10. Ziehen Sie Elemente aus der **XML-Struktur** Fenster aus, um den Stellen in Ihrem Dokument, in denen die entsprechenden Steuerelemente erstellt werden sollen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
- [XML-Schemas und -Daten in Anpassungen auf Dokumentebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [XML-Schemas und Daten in Anpassungen auf Dokumentebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

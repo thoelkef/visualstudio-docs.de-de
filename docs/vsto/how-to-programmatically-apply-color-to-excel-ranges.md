@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,23 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b518cfb4f1ef7c5d757e4a68bbc12b51c6c61ae3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256239"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Gewusst wie: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche
-  Um Text in einem Zellbereich eine Farbe zuzuweisen, verwenden Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Range-Objekt.  
+  Verwenden Sie zum Anwenden einer Farbe Sie Text in einem Zellbereich eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Verwenden ein NamedRange-Steuerelement  
- Dieses Beispiel gilt für Anpassungen auf Dokumentebene.  
+## <a name="use-a-namedrange-control"></a>Verwenden Sie ein NamedRange-Steuerelement  
+ In diesem Beispiel ist für Anpassungen auf Dokumentebene.  
   
-#### <a name="to-apply-color-to-a-namedrange-control"></a>Angewendet auf ein NamedRange-Steuerelement  
+### <a name="to-apply-color-to-a-namedrange-control"></a>Farbe auf ein NamedRange-Steuerelement anwenden  
   
-1.  Erstellen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerung auf die Zelle A1.  
+1.  Erstellen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle A1.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]  
@@ -43,11 +44,11 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]  
   
-## <a name="using-native-excel-ranges"></a>Verwenden von systemeigenen Excel-Bereichen  
+## <a name="use-native-excel-ranges"></a>Verwenden Sie systemeigene Excel-Bereiche  
   
-#### <a name="to-apply-color-to-a-native-excel-range-object"></a>Angewendet auf ein systemeigenes Excel-Range-Objekt  
+### <a name="to-apply-color-to-a-native-excel-range-object"></a>Farbe auf ein systemeigenes Excel-Bereich-Objekt anwenden  
   
-1.  Erstellen Sie einen Bereich in der Zelle A1 aus, und legen Sie dann die Farbe des Texts.  
+1.  Erstellen Sie einen Bereich in Zelle A1 aus, und legen Sie dann die Farbe des Texts.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]  
@@ -55,9 +56,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

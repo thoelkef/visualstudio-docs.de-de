@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258440"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche
-  Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Office Excel-Arbeitsblättern und Excel-Projekten, die mit Office-Entwicklungstools in Visual Studio zu erstellen. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel der Excel-Steuerelemente unter [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche
+  In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Office Excel-Arbeitsblättern, und Erstellen von Excel-Projekten, die mit Office-Entwicklungstools in Visual Studio. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -33,9 +34,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Hinzufügen von Steuerelementen zu einem Arbeitsblatt.  
   
--   Füllen Sie ein Textfeld aus, wenn auf eine Schaltfläche geklickt wird.  
+-   Füllen Sie das Textfeld aus, wenn auf eine Schaltfläche geklickt wird.  
   
--   Testen des Projekts.  
+-   Testen Sie das Projekt ein.  
   
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
@@ -47,27 +48,27 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Erstellen des Projekts  
- In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt mit Visual Studio.  
+## <a name="create-the-project"></a>Erstellen eines Projekts  
+ In diesem Schritt erstellen Sie ein Excel-Workbook-Projekt, das mithilfe von Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine Excel-Schaltfläche**. Stellen Sie sicher, dass **erstellen Sie ein neues Dokument** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine Schaltfläche "Excel"**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **meine Excel-Schaltfläche** Projekt **Projektmappen-Explorer**.  
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine Schaltfläche "Excel"** Projekt **Projektmappen-Explorer**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
+## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
  In dieser exemplarischen Vorgehensweise benötigen Sie eine Schaltfläche und ein Textfeld auf das erste Arbeitsblatt.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>So fügen Sie eine Schaltfläche und ein Textfeld hinzu  
+### <a name="to-add-a-button-and-a-text-box"></a>So fügen Sie eine Schaltfläche und ein Textfeld hinzu  
   
-1.  Überprüfen Sie, ob die **meine Excel Button.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.  
+1.  Überprüfen Sie, ob die **Mein Excel Button.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.  
   
-2.  Aus der **Standardsteuerelementen** Registerkarte Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> zu `Sheet1`.  
+2.  Von der **Standardsteuerelementen** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> zu `Sheet1`.  
   
-3.  Aus der **Ansicht** klicken Sie im Menü **Fenster "Eigenschaften"**.  
+3.  Von der **Ansicht** , wählen Sie im Menü **Fenster "Eigenschaften"**.  
   
-4.  Stellen sicher, dass **TextBox1** wird angezeigt, in der **Eigenschaften** Fenster Dropdown-Feld und Ändern der **Namen** Eigenschaft des Textfelds um **DisplayText**.  
+4.  Achten Sie darauf, **TextBox1** werden in der **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds, das auf **DisplayText**.  
   
 5.  Ziehen Sie eine **Schaltfläche** -Steuerelement auf `Sheet1` , und ändern Sie die folgenden Eigenschaften:  
   
@@ -76,16 +77,16 @@ ms.lasthandoff: 04/16/2018
     |**Name**|**insertText**|  
     |**Text**|**Einfügen von Text**|  
   
- Schreiben Sie jetzt den Code ausführen, wenn die Schaltfläche geklickt wird.  
+ Jetzt schreiben Sie Code ausführen, wenn die Schaltfläche geklickt wird.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Füllen das Textfeld aus, auf die Schaltfläche geklickt wird  
- Jedes Mal, die der Benutzer klickt auf die Schaltfläche **Hello World!** wird in das Textfeld angefügt.  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Füllen Sie im Textfeld aus, wenn die Schaltfläche geklickt wird  
+ Jedes Mal, die der Benutzer klickt auf die Schaltfläche **Hello World!** in das Textfeld wird angefügt werden.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>So schreiben Sie beim Klicken auf die Schaltfläche in das Textfeld  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>So schreiben Sie beim Klicken auf die Schaltfläche in das Textfeld  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **"Sheet1"**, und klicken Sie dann auf **Code anzeigen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.  
   
-2.  Fügen Sie folgenden Code, der <xref:System.Windows.Forms.Control.Click> -Ereignishandler der Schaltfläche:  
+2.  Fügen Sie den folgenden Code der <xref:System.Windows.Forms.Control.Click> -Ereignishandler der Schaltfläche:  
   
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
@@ -94,27 +95,27 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Testen der Anwendung  
- Sie können jetzt Testen Ihrer Arbeitsmappe, um sicherzustellen, dass die Nachricht **Hello World!** wird im Textfeld angezeigt, wenn Sie die Schaltfläche klicken.  
+## <a name="test-the-application"></a>Testen der Anwendung  
+ Sie können nun testen, die Arbeitsmappe, um sicherzustellen, dass die Nachricht **Hello World!** wird in das Textfeld angezeigt, wenn Sie die Schaltfläche klicken.  
   
-#### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe  
+### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um Ihr Projekt auszuführen.  
   
 2.  Klicken Sie auf die Schaltfläche.  
   
-3.  Überprüfen Sie, ob **Hello World!** wird in das Textfeld angezeigt.  
+3.  Überprüfen Sie, ob **Hallo Welt!** wird in das Textfeld angezeigt.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Excel-Arbeitsblättern. Die folgenden Aufgaben könnten sich daran anschließen:  
+ In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Excel-Arbeitsblättern. Die folgenden Aufgaben könnten sich daran anschließen:  
   
--   Beim Bereitstellen des Projekts. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md).  
+-   Bereitstellen des Projekts an. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
--   Verwenden Kontrollkästchen, um die Formatierung zu ändern. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ändern von Arbeitsblatt Formatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Verwenden Sie die Kontrollkästchen zum Ändern der Formatierung. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Änderung arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)   
- [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   
