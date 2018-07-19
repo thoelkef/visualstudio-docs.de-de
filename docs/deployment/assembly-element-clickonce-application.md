@@ -1,5 +1,5 @@
 ---
-title: '&lt;Assembly&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+title: '&lt;Assembly&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704222"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077089"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly&gt; Element (ClickOnce-Anwendung)
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly&gt; -Element (ClickOnce-Anwendung)
 Das Element der obersten Ebene für das Anwendungsmanifest.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -38,7 +38,7 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `assembly` Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Die Elemente von Manifesten muss sich in einem der folgenden Namespaces:  
+ Die `assembly` -Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Die Elemente von Manifesten muss sich in einem der folgenden Namespaces:  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -46,9 +46,9 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, durch Vererbung oder durch tagging.  
+ Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, die durch Vererbung oder durch markieren.  
   
- Die `assembly` Element hat das folgende Attribut.  
+ Die `assembly` Element weist das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -57,7 +57,7 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht eine `assembly` Element in einem Anwendungsmanifest für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

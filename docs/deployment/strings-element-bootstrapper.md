@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zeichenfolgen&gt; Element (Bootstrapper) | Microsoft Docs'
+title: '&lt;Zeichenfolgen&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815443"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077671"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; Element (Bootstrapper)
-Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installationsfehlermeldungen.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; -Element (Bootstrapper)
+Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehlermeldungen für die Installation.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,19 +42,19 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Insta
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Strings` Element ist ein untergeordnetes Element von der `Package` Element. Es wurden keine Attribute.  
+ Die `Strings` Element ist ein untergeordnetes Element des der `Package` Element. Es besitzt keine Attribute.  
   
 ## <a name="string"></a>Zeichenfolge  
- Die `String` Element ist ein untergeordnetes Element von der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.  
+ Die `String` Element ist ein untergeordnetes Element des der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.  
   
- `String` hat das folgende Attribut.  
+ `String` weist das folgende Attribut an.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Name`|Erforderlich. Der Name der Zeichenfolge.|  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel gibt alle englischen Zeichenfolgen für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Installer.  
+ Im folgenden Codebeispiel gibt alle von der englischsprachigen Zeichenfolgen für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Installer.  
   
 ```xml  
 <Strings>  

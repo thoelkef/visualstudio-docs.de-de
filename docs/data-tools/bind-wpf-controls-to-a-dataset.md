@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38801122"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131959"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -240,7 +240,7 @@ Erstellen Sie die Anwendung, und führen Sie sie aus. Stellen Sie sicher, dass S
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach Abschluss dieser exemplarischen Vorgehensweise können Sie Sie möglicherweise versuchen Sie Folgendes im Zusammenhang Aufgaben:
+Nach Abschluss dieser exemplarischen Vorgehensweise können Sie die nachstehenden verwandten Aufgaben versuchen:
 
 - Erfahren Sie, wie Sie mit der **Datenquellen** Fenster in Visual Studio zum Binden von WPF-Steuerelementen an andere Typen von Datenquellen. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 

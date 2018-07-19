@@ -1,5 +1,4 @@
-# [Introducing Visual Studio for Mac (Einführung in Visual Studio für Mac)](index.md)
-## [Benefits of Visual Studio for Mac over Xamarin Studio (Vorteile von Visual Studio für Mac gegenüber Xamarin Studio)](benefits-vsmac-over-xs.md)
+# [Einführung in Visual Studio für Mac](index.md)
 # [IDE Tour (IDE-Tour)](ide-tour.md)
 
 # [Installation](installation.md)

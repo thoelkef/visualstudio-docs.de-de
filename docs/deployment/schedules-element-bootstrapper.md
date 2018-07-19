@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zeitpläne&gt; Element (Bootstrapper) | Microsoft Docs'
+title: '&lt;Zeitpläne&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c551bc9335dc41f82800e2c3435d8508967a6db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815469"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078253"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Zeitpläne&gt; Element (Bootstrapper)
-Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten, an welche Befehle definiert, indem Sie definieren die `Command` Element ausgeführt werden soll.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Zeitpläne&gt; -Element (Bootstrapper)
+Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten, auf welche Befehle, die definiert, durch Definieren der `Command` Element ausgeführt werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,28 +42,28 @@ Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Schedules` Element ist ein untergeordnetes Element von der `Product` Element. Jede `Product` Element möglicherweise höchstens ein `Schedules` Element. Die `Schedules` -Element weist keine Attribute.  
+ Die `Schedules` Element ist ein untergeordnetes Element des der `Product` Element. Jede `Product` Element möglicherweise mindestens eine `Schedules` Element. Die `Schedules` Element besitzt keine Attribute.  
   
 ## <a name="schedule"></a>Zeitplan  
- Die `Schedule` Element ist ein untergeordnetes Element von der `Schedules` Element. Ein `Schedules` -Element muss mindestens eine aufweisen `Schedule` Element.  
+ Die `Schedule` Element ist ein untergeordnetes Element des der `Schedules` Element. Ein `Schedules` Element benötigen mindestens einen `Schedule` Element.  
   
- `Schedule` hat das folgende Attribut.  
+ `Schedule` weist das folgende Attribut an.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Name`|Erforderlich. Der Name des Zeitplanelements. Dies entspricht der `ScheduleName` Eigenschaft von der `Command` Element. Wenn eine `Command` verweist auf den benannten Zeitplan wird nur die zum Zeitpunkt der erkennbar, die ausgeführt werden `Schedule` Element. Zeitpläne können auch zugeordnete der `FailIf` und `BypassIf` -Elemente, die diese bedingten Tests zu beschränken, auf dem angegebenen Zeitplan ausgeführt. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Erforderlich. Der Name des Zeitplanelements. Dies entspricht der `ScheduleName` Eigenschaft der `Command` Element. Wenn eine `Command` verweist auf den benannten Zeitplan wird nur von der angegebenen Zeiten ausgeführt werden `Schedule` Element. Zeitpläne können auch zugewiesen werden, mit der `FailIf` und `BypassIf` -Elemente, die diese bedingte Tests zu beschränken, auf dem angegebenen Zeitplan ausgeführt. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
   
  Ein angegebener `Schedule` Element möglicherweise genau eines der folgenden untergeordneten Elemente.  
   
 ## <a name="buildlist"></a>BuildList  
- Die `BuildList` -Element weist das Installationsprogramm zur Ausführung eines Befehls unmittelbar nach die bootstrapping-Anwendung gestartet wird.  
+ Die `BuildList` -Element weist das Installationsprogramm aus, um einen Befehl auszuführen, sobald die bootstrapping-Anwendung gestartet wird.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- Die `BeforePackage` Element weist den Installer, um einen Befehl ausführen, bevor das angegebene Paket installiert wird.  
+ Die `BeforePackage` -Element weist das Installationsprogramm aus, um einen Befehl auszuführen, bevor das angegebene Paket installiert wird.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- Die `AfterPackage` Element weist den Installer, um einen Befehl ausführen, nachdem das angegebene Paket installiert ist.  
+ Die `AfterPackage` -Element weist das Installationsprogramm aus, um einen Befehl auszuführen, nachdem das angegebene Paket installiert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [\<Product >-Element](../deployment/product-element-bootstrapper.md)   
- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+ [\<Produkt >-Element](../deployment/product-element-bootstrapper.md)   
+ [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
