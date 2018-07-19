@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297625"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Installieren von Visual Studio 2017 in Umgebungen mit niedriger Bandbreite oder unzuverlässigem Netzwerk
 
 Sie sollten den Visual Studio-Webinstaller ausprobieren. Er ist in den meisten Fällen die passende Lösung.
 
  > [!div class="button"]
- > [Visual Studio 2017 herunterladen](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Wenn Ihre Internetverbindung jedoch unterbrochen wurde oder unzuverlässig ist, können Sie über die Befehlszeile einen lokalen Cache der Dateien erstellen, die Sie für eine Offlineinstallation benötigen. Gehen Sie folgendermaßen vor:
@@ -46,7 +47,7 @@ Ihre Setupdatei, &mdash;oder genauer gesagt eine Bootstrapperdatei &mdash;, ents
 
 ## <a name="step-2---create-a-local-install-cache"></a>Schritt 2: Erstellen eines lokalen Installationscaches
 
-Zum Ausführen dieses Beispiels muss Ihr Computer eine Internetverbindung haben. Öffnen Sie zum Erstellen eines lokalen Layouts eine Eingabeaufforderung, und geben Sie einen der folgenden Befehle ein. In diesen Beispielen wird vorausgesetzt, dass Sie die Community-Version von Visual Studio verwenden. Passen Sie den Befehl also Ihrer Edition entsprechend an.
+Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein. Zum Erstellen eines lokalen Layouts öffnen Sie eine Eingabeaufforderung, und rufen einen der Befehle in den folgenden Beispielen auf. Bei den hier aufgeführten Beispielen wird davon ausgegangen, dass Sie die Community-Edition von Visual Studio verwenden. Passen Sie den Befehl nach Bedarf für Ihre Edition an.
 
 - Führen Sie für die .NET-Web- und .NET-Desktopentwicklung Folgendes aus:
 
@@ -106,7 +107,7 @@ Mit dem folgenden Befehl führen Sie die Installation aus:
 
 ## <a name="get-support"></a>Support aufrufen
 
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
 
@@ -120,3 +121,4 @@ Hier sind einige weitere Supportoptionen:
 * [Installieren von Visual Studio](install-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)

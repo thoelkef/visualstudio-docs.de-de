@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118914"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
 
-Wenn Sie Webparts für eine SharePoint-Website erstellen, können Benutzer Inhalt, Darstellung und Verhalten der Seiten auf dieser Website direkt mithilfe eines Browsers ändern. Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines Webparts visuell mithilfe der SharePoint **visuelles Webpart** -Projektvorlage in Visual Studio.
+Wenn Sie Webparts für eine SharePoint-Website erstellen, können Benutzer Inhalt, Darstellung und Verhalten der Seiten auf dieser Website direkt mithilfe eines Browsers ändern. In dieser exemplarischen Vorgehensweise erfahren Sie, wie ein Webpart visuell zu erstellen, mit dem SharePoint **visuelles Webpart** Projektvorlage in Visual Studio.
 
 Das erstellte Webpart zeigt eine monatliche Kalenderansicht und ein Kontrollkästchen für jede Kalenderliste auf der Website an. Die Benutzer können angeben, welche Kalenderlisten in die monatliche Kalenderansicht eingeschlossen werden, indem sie die Kontrollkästchen aktivieren.
 
 In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- Erstellen eines Webparts mit der **visuelles Webpart** -Projektvorlage.
+- Erstellen ein Webpart mithilfe der **visuelles Webpart** Projektvorlage.
 - Entwerfen des Webparts mit dem Visual Web Developer-Designer in Visual Studio
 - Hinzufügen von Code, um die Ereignisse der Steuerelemente des Webparts zu behandeln
 - Testen des Webparts in SharePoint
@@ -47,49 +48,49 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 - Unterstützte Editionen von Windows und SharePoint. Finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-web-part-project"></a>Erstellen eines Webpartprojekts
+## <a name="create-a-web-part-project"></a>Erstellen eines Webpartprojekts
 
-Erstellen Sie zunächst ein Webpartprojekts mithilfe der **visuelles Webpart** -Projektvorlage.
+Erstellen Sie ein Webpartprojekt zunächst mithilfe der **visuelles Webpart** Projektvorlage.
 
 1. Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mithilfe der **als Administrator ausführen** Option.
 
-2. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+2. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
 3. In der **neues Projekt** im Dialogfeld unter entweder **Visual C#-** oder **Visual Basic**, erweitern Sie **Office/SharePoint**, und wählen Sie dann die  **SharePoint-Lösungen** Kategorie.
 
-4. Wählen Sie in der Liste der Vorlagen, die **SharePoint 2013 - visuelles Webpart** Vorlage, und wählen Sie dann die **OK** Schaltfläche.
+4. Wählen Sie in der Liste der Vorlagen, die **SharePoint 2013 - Visual Web Part** Vorlage, und wählen Sie dann die **OK** Schaltfläche.
 
-     Die **Assistent zum Anpassen von SharePoint** angezeigt wird. Mit diesem Assistenten können Sie die Website, die Sie zum Debuggen des Projekts verwenden, sowie die Vertrauensebene der Projektmappe angeben.
+     Die **SharePoint Customization Wizard** angezeigt wird. Mit diesem Assistenten können Sie die Website, die Sie zum Debuggen des Projekts verwenden, sowie die Vertrauensebene der Projektmappe angeben.
 
-5. In der **neuerungen die Vertrauensebene für diese SharePoint-Lösung?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld.
+5. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.
 
-6. Wählen Sie die **Fertig stellen** Schaltfläche, um die standardmäßige lokale SharePoint-Website zu übernehmen.
+6. Wählen Sie die **Fertig stellen** Schaltfläche, um die standardmäßige lokale SharePoint-Website zu akzeptieren.
 
 ## <a name="designing-the-web-part"></a>Entwerfen des Webparts
 
-Entwerfen des Webparts durch Hinzufügen von Steuerelementen aus dem **Toolbox** auf die Oberfläche des Visual Web Developer-Designer.
+Entwerfen des Webparts durch Hinzufügen von Steuerelementen aus der **Toolbox** auf die Oberfläche des Visual Web Developer-Designer.
 
-1. Wählen Sie in Visual Web Developer-Designer, der **Entwurf** Registerkarte ", um zur Entwurfsansicht zu wechseln.
+1. Wählen Sie auf dem Visual Web Developer-Designer die **Entwurf** Registerkarte, um zur Entwurfsansicht zu wechseln.
 
-2. Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.
+2. Wählen Sie auf der Menüleiste **Ansicht** > **Toolbox**.
 
-3. In der **Standard** Knoten der **Toolbox**, wählen Sie die **CheckBoxList** steuern, und führen Sie einen der folgenden Schritte aus:
+3. In der **Standard** Knoten die **Toolbox**, wählen Sie die **"CheckBoxList"** steuern, und führen Sie die folgenden Schritte aus:
 
-    - Öffnen Sie das Kontextmenü für die **CheckBoxList** steuern, wählen Sie **Kopie**, öffnen Sie das Kontextmenü für die erste Zeile im Designer, und wählen Sie dann **einfügen**.
+    - Öffnen Sie das Kontextmenü für die **"CheckBoxList"** steuern, wählen Sie **Kopie**, öffnen Sie das Kontextmenü für die erste Zeile im Designer, und wählen Sie dann **einfügen**.
 
-    - Ziehen Sie die **CheckBoxList** -Steuerelement aus der **Toolbox**, und verbinden Sie das Steuerelement mit der ersten Zeile im Designer.
+    - Ziehen Sie die **"CheckBoxList"** -Steuerelement aus der **Toolbox**, und verbinden Sie das Steuerelement, mit der ersten Zeile im Designer.
 
 4. Wiederholen Sie den vorherigen Schritt, aber verschieben Sie eine Schaltfläche in die nächste Zeile des Designers.
 
-5. Wählen Sie im Designer die **Button1** Schaltfläche.
+5. Wählen Sie im Designer die **"Button1"** Schaltfläche.
 
-6. Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.
+6. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
 
      Die **Eigenschaften** Fenster wird geöffnet.
 
-7. In der **Text** Geben Sie die Eigenschaft der Schaltfläche **Update**.
+7. In der **Text** -Eigenschaft der Schaltfläche, geben Sie **Update**.
 
 ## <a name="handling-the-events-of-controls-on-the-web-part"></a>Behandeln der Ereignisse von Steuerelementen des Webparts
 
@@ -101,7 +102,7 @@ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansich
 
     - In der **Eigenschaften** Fenster für die **Update** Schaltfläche der **Ereignisse** Schaltfläche. In der **klicken Sie auf** -Eigenschaft, geben Sie **Button1_Click**, und wählen Sie dann die EINGABETASTE.
 
-     Die Benutzersteuerelement-Codedatei wird im Code-Editor geöffnet, und der `Button1_Click`-Ereignishandler wird angezeigt. Später fügen Sie diesem Ereignishandler Code.
+     Die Benutzersteuerelement-Codedatei wird im Code-Editor geöffnet, und der `Button1_Click`-Ereignishandler wird angezeigt. Später fügen Sie Code an diesen Ereignishandler.
 
 2. Fügen Sie am Anfang der Benutzersteuerelement-Codedatei die folgenden Anweisungen hinzu.
 
@@ -129,7 +130,7 @@ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansich
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="testing-the-web-part"></a>Testen des Webparts
+## <a name="test-the-web-part"></a>Testen Sie das Webpart
 
 Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webpart wird automatisch dem Webpartkatalog in SharePoint hinzugefügt. Um dieses Projekt zu testen, müssen Sie die folgenden Aufgaben ausführen:
 
@@ -139,31 +140,31 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
 
 ### <a name="to-add-events-to-calendar-lists-on-the-site"></a>So fügen Sie Kalenderlisten der Website Ereignisse hinzu
 
-1. In Visual Studio drücken Sie die Taste F5.
+1. Wählen Sie in Visual Studio die **F5** Schlüssel.
 
-     Die SharePoint-Website wird geöffnet, und die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] -Schnellstartleiste wird auf der Seite angezeigt.
+     Die SharePoint-Website geöffnet wird, und die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Schnellstartleiste auf der Seite angezeigt.
 
-2. Auf der Schnellstartleiste unter **listet**, wählen Sie die **Kalender** Link.
+2. Klicken Sie auf der Schnellstartleiste unter **listet**, wählen Sie die **Kalender** Link.
 
      Die **Kalender** Seite wird angezeigt.
 
-     Wenn Sie kein Link "Kalender" auf der Schnellstartleiste angezeigt wird, wählen Sie die **Websiteinhalte** Link. Die Seite "Websiteinhalte" angezeigt ein **Kalender** Element, erstellen Sie einen.
+     Wenn Sie keine Link "Kalender" auf der Schnellstartleiste angezeigt wird, wählen Sie die **Websiteinhalte** Link. Wenn die Seite "Websiteinhalte" nicht angezeigt wird eine **Kalender** Element, erstellen Sie eine.
 
-3. Klicken Sie auf der Seite "Kalender" Wählen Sie ein Tag aus, und wählen Sie dann die **hinzufügen** Link in der ausgewählten Tag um ein Ereignis hinzuzufügen.
+3. Klicken Sie auf der Seite "Kalender", wählen Sie ein Tag aus, und wählen Sie dann die **hinzufügen** -Link in der ausgewählten Tag ein Ereignis hinzuzufügen.
 
-4. In der **Titel** geben **Ereignis im Standardkalender**, und wählen Sie dann die **speichern** Schaltfläche.
+4. In der **Titel** geben **Ereignis in den Standardkalender**, und wählen Sie dann die **speichern** Schaltfläche.
 
-5. Wählen Sie die **Websiteinhalte** verknüpfen, und wählen Sie dann die **app hinzufügen** Kachel.
+5. Wählen Sie die **Websiteinhalte** verknüpfen, und wählen Sie dann die **fügen Sie eine app** Kachel.
 
-6. Auf der **erstellen** Seite, und wählen Sie die **Kalender** geben, benennen Sie den Kalender, und wählen Sie dann die **erstellen** Schaltfläche.
+6. Auf der **erstellen** Seite die **Kalender** geben, benennen Sie den Kalender, und wählen Sie dann die **erstellen** Schaltfläche.
 
-7. Dem neuen Kalender ein Ereignis hinzugefügt haben, benennen Sie das Ereignis **Ereignis im benutzerdefinierten Kalender**, und wählen Sie dann die **speichern** Schaltfläche.
+7. Fügen Sie ein Ereignis an den neuen Kalender, benennen Sie das Ereignis **Ereignis im benutzerdefinierten Kalender**, und wählen Sie dann die **speichern** Schaltfläche.
 
 ### <a name="to-add-the-web-part-to-a-web-part-page"></a>So fügen Sie das Webpart einer Webpartseite hinzu
 
-1. Auf der **Websiteinhalte** Seite öffnen die **Websiteseiten** Ordner.
+1. Auf der **Websiteinhalte** öffnen die **Websiteseiten** Ordner.
 
-2. Wählen Sie auf dem Menüband der **Dateien** Registerkarte Öffnen der **neues Dokument** im Menü, und wählen Sie dann die **Webpartseite** Befehl.
+2. Wählen Sie auf dem Menüband der **Dateien** Registerkarte Öffnen der **neues Dokument** Menü und wählen Sie dann die **Clientwebpart-Seite** Befehl.
 
 3. Auf der **neue Webpartseite** Seite, nennen Sie die Seite **SampleWebPartPage.aspx**, und wählen Sie dann die **erstellen** Schaltfläche.
 
@@ -192,6 +193,5 @@ Die Ereignisse aus allen angegebenen Kalendern werden in der monatlichen Kalende
 ## <a name="see-also"></a>Siehe auch
 
 [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Vorgehensweise: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Gewusst wie: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

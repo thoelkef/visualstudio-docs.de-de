@@ -22,21 +22,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c27cb590b5a8a4b38a143de5e6faba80414f97ba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926140"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117237"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Deaktivieren von Einschränkungen beim Auffüllen von Datasets
 
-Wenn ein Dataset Einschränkungen (z. B. foreign Key-Einschränkungen) enthält, können sie Fehler im Zusammenhang Sequenznummern für das Dataset ausgeführten Vorgänge auslösen. Z. B. im Zusammenhang mit untergeordnete Datensätze vor dem Laden übergeordnete Datensätze können eine Einschränkung verletzt und verursacht einen Fehler. Sobald Sie einen untergeordneten Datensatz laden, wird die Einschränkung für den zugehörigen übergeordneten Datensatz überprüft, und löst einen Fehler aus.
+Wenn Sie ein Dataset Einschränkungen (z. B. fremdschlüsseleinschränkungen) enthält, können sie Fehler im Zusammenhang Sequenznummern für das Dataset ausgeführten Vorgänge für das auslösen. Beispielsweise im Zusammenhang mit untergeordnete Datensätze vor dem Laden übergeordneten Datensätzen eine Einschränkung verletzt und einen Fehler verursachen können. Sobald Sie einen untergeordneten Datensatz laden, wird die Einschränkung für den zugehörigen übergeordneten Datensatz überprüft und ein Fehler ausgelöst.
 
 Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zulässt, würde der Fehler bei jedem Versuch ausgelöst, einen Datensatz in die untergeordnete Tabelle zu laden. Es besteht außerdem die Möglichkeit, alle Einschränkungen in einem Dataset mit der <xref:System.Data.DataRow.BeginEdit%2A>-Eigenschaft und der <xref:System.Data.DataRow.EndEdit%2A>-Eigenschaft aufzuheben.
 
 > [!NOTE]
-> Validierungsereignisse (z. B. <xref:System.Data.DataTable.ColumnChanging> und<xref:System.Data.DataTable.RowChanging>) werden nicht ausgelöst, wenn Einschränkungen deaktiviert sind.
+> Validierungsereignisse (z. B. <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging>) wird nicht ausgelöst, wenn Einschränkungen deaktiviert sind.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>So heben Sie Aktualisierungseinschränkungen programmgesteuert auf
 
@@ -47,7 +47,7 @@ Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zul
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>So heben Sie Aktualisierungseinschränkungen mit dem Dataset-Designer auf
 
-1.  Öffnen Sie das Dataset in die **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  In der **Eigenschaften** legen die <xref:System.Data.DataSet.EnforceConstraints%2A> Eigenschaft `false`.
 

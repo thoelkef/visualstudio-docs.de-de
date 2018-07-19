@@ -1,5 +1,5 @@
 ---
-title: VSIX-Erweiterung Schemareferenz 2.0 | Microsoft Docs
+title: Referenz zum VSIX-Erweiterung 2.0-Schema | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,94 +14,94 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7459b4292220e6bb1e5a00b912efe7eb99cce825
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148648"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089369"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>VSIX-Erweiterung Schemareferenz 2.0
-Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt eines VSIX-Pakets. Das Dateiformat wird durch ein Schema gesteuert. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das manifest Ladeprogramm ignoriert XML-Elemente und Attribute, die sie nicht kennen.  
+# <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterungsschema 2.0
+Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.  
   
-## <a name="package-manifest-schema"></a>Paket-Manifestschema  
- Ist das Stammelement der XML-Manifestdatei `<PackageManifest>`, mit einem einzelnen Attribut `Version`, dies ist die Version des manifest-Formats. Wenn größere Änderungen in das Format vorliegen, wird das Standardformat der Produktversion geändert werden. In diesem Thema wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert Version = "2.0".  
+## <a name="package-manifest-schema"></a>Paket-Manifest-Schema  
+ Das Stammelement der XML-Manifestdatei ist `<PackageManifest>`, mit einem einzelnen Attribut `Version`, dies ist die Version des Manifests-Formats. Wenn das Format wesentliche Änderungen vorgenommen werden, wird das Versionsformat geändert werden. In diesem Thema wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert Version = "2.0".  
   
 ### <a name="packagemanifest-element"></a>PackageManifest-Element  
- Innerhalb der `<PackageManifest>` "Root"-Element können Sie die folgenden Elemente:  
+ In der `<PackageManifest>` "Root"-Element können Sie die folgenden Elemente:  
   
--   `<Metadata>` -Metadaten und Werbung Informationen zu dem Paket selbst. Nur ein `Metadata` Element ist im Manifest zulässig.  
+-   `<Metadata>` -Metadaten und Werbung Informationen für das Paket selbst. Nur ein `Metadata` Element ist im Manifest zulässig.  
   
--   `<Installation>` – In diesem Abschnitt definiert die Art, die dieses Erweiterungspaket installiert werden kann, einschließlich der Anwendung-SKUs, die in die Installation durchführen können. Nur ein einzelner `Installation` Element ist im Manifest zulässig. Ein Manifest benötigen eine `Installation` Element oder dieses Paket kann nicht in einer anderen SKU installiert.  
+-   `<Installation>` : In diesem Abschnitt werden die Möglichkeit, die dieses Erweiterungspaket installiert werden kann, einschließlich der Anwendung-SKUs, die sie installieren kann, die definiert. Nur eine einzige `Installation` Element ist im Manifest zulässig. Ein Manifest benötigen eine `Installation` Element oder das Paket kann nicht in einer anderen SKU installiert.  
   
--   `<Dependencies>` – Hier werden eine optionale Liste von Abhängigkeiten für dieses Paket definiert.  
+-   `<Dependencies>` – Eine optionale Liste von Abhängigkeiten für dieses Paket sind hier definiert.  
   
--   `<Assets>` – Dieser Abschnitt enthält alle Objekte in diesem Paket enthalten sind. Dieses Paket wird keine Inhalte, die Entwurfsoberfläche, ohne in diesem Abschnitt.  
+-   `<Assets>` – Dieser Abschnitt enthält alle Ressourcen in diesem Paket enthalten sind. Dieses Paket wird keine Inhalte auftreten, ohne zu diesem Abschnitt.  
   
--   `<AnyElement>*` -Die Manifestschema ist flexibel genug, um andere Elemente zu ermöglichen. Alle untergeordneten Elemente, die nicht vom Ladeprogramm Bereitstellungsmanifests erkannt werden als zusätzliche XmlElement-Objekte in der Erweiterungs-Manager-API verfügbar gemacht. Verwenden diese untergeordneten Elemente, können VSIX-Erweiterungen, zusätzliche Daten in der Manifestdatei definieren, die in Visual Studio ausgeführte Code zur Laufzeit zugreifen können. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> und <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
+-   `<AnyElement>*` – Die manifest-Schema ist flexibel genug ist, um andere Elemente zu ermöglichen. Keine untergeordneten Elemente, die vom manifest-Ladeprogramm nicht erkannt werden als zusätzliche XmlElement-Objekte in der Erweiterungs-Manager-API verfügbar gemacht. Verwenden diese untergeordneten Elemente, können VSIX-Erweiterungen zusätzliche Daten in der Manifestdatei definieren, die Ausführung in Visual Studio Code zur Laufzeit zugreifen können. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> und <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
   
-### <a name="metadata-element"></a>Metadaten-Element  
- In diesem Abschnitt sind die Metadaten zum Paket, dessen Identität und Informationen ankündigen. `<Metadata>` enthält die folgenden Elemente:  
+### <a name="metadata-element"></a>Metadata-Element  
+ Dieser Abschnitt enthält die Metadaten zum Paket, dessen Identität und Informationen ankündigen. `<Metadata>` enthält die folgenden Elemente:  
   
--   `<Identity>` -Dies Identifikationsinformationen für dieses Paket definiert und enthält die folgenden Attribute:  
+-   `<Identity>` – Dies definiert die Identifikationsinformationen für dieses Paket und umfasst die folgenden Attribute:  
   
-    -   `Id` – Dieses Attribut muss es sich um eine eindeutige ID für das Paket vom Autor ausgewählt sein. Der Name sollte die gleiche Weise wie CLR-Typen Serversteuerelement sind qualifiziert werden: Company.Product.Feature.Name. Die `Id` -Attribut darf maximal 100 Zeichen lang ist.  
+    -   `Id` – Dieses Attribut muss es sich um eine eindeutige ID für das Paket von dessen Autor ausgewählt sein. Der Name sollte die gleiche Weise wie CLR-Typen Namespaces sind qualifiziert werden: Company.Product.Feature.Name. Die `Id` -Attribut ist auf maximal 100 Zeichen umfassen.  
   
-    -   `Version` – Hiermit wird die Version der dieses Paket und dessen Inhalt definiert. Dieses Attribut weist das folgende CLR-Assembly Versioning Format: "Hauptversion.Nebenversion.Build.Revision" vorliegen (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt und kann über die vorhandene installierte Version installiert werden.  
+    -   `Version` – Dies definiert die Version der dieses Paket und dessen Inhalt. Dieses Attribut entspricht dem CLR-Assembly-versionsverwaltung-Format: Hauptversion.Nebenversion.Build.Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt, und kann über die vorhandene installierte Version installiert werden.  
   
-    -   `Language` – Dieses Attribut ist die Standardsprache für das Paket und dieses Manifest Textdaten entspricht. Dieses Attribut folgt die CLR Gebietsschema Code Konvention für Ressourcenassemblys, z. B.: de-de, En, fr-fr. Sie können angeben, `neutral` sinnvolles sprachneutrale deklarieren, die auf eine beliebige Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`.  
+    -   `Language` – Dieses Attribut ist die Standardsprache für das Paket und die Textdaten in diesem Manifest entspricht. Dieses Attribut folgt der CLR Gebietsschema Code-Konvention für Ressourcenassemblys, zum Beispiel: En-us, En, fr-fr. Sie können angeben, `neutral` eine sprachneutrale-Erweiterung zu deklarieren, die auf eine beliebige Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`.  
   
-    -   `Publisher` – Dieses Attribut identifiziert den Herausgeber des Pakets, ein Unternehmen oder die individuellen Namen. Die `Publisher` -Attribut darf maximal 100 Zeichen lang ist.  
+    -   `Publisher` – Dieses Attribut identifiziert den Herausgeber der dieses Paket, ein Unternehmen oder eine einzelne Name. Die `Publisher` -Attribut ist auf maximal 100 Zeichen umfassen.  
   
--   `<DisplayName>` -Dieses Element gibt den benutzerfreundlichen Paketnamen, der in der Erweiterungs-Manager-UI angezeigt wird. Die `DisplayName` Inhalt ist auf 50 Zeichen begrenzt.  
+-   `<DisplayName>` : Dieses Element gibt den benutzerfreundlichen Paketnamen an, der in der Erweiterungs-Manager-UI angezeigt wird. Die `DisplayName` Inhalt ist auf 50 Zeichen begrenzt.  
   
--   `<Description>` -Dieses optionale Element ist eine kurze Beschreibung des Pakets und dessen Inhalt, die in UI Erweiterungs-Manager angezeigt wird. Die `Description` Inhalt kann Text, den Sie möchten, verfügt aber über enthalten auf 1000 Zeichen beschränkt.  
+-   `<Description>` – Dieses optionale Element ist eine kurze Beschreibung des Pakets und dessen Inhalt, die im Erweiterungs-Manager-UI angezeigt wird. Die `Description` Inhalt kann einen beliebigen Text ein, die Sie möchten, aber hat enthalten auf 1000 Zeichen begrenzt.  
   
--   `<MoreInfo>` -Dieses optionale Element ist eine URL zu einer Seite online, die eine vollständige Beschreibung der dieses Paket enthält. Das Protokoll muss als http angegeben werden.  
+-   `<MoreInfo>` – Dieses optionale Element ist eine URL zu einer Seite online, die eine vollständige Beschreibung der dieses Paket enthält. Das Protokoll muss als http angegeben werden.  
   
--   `<License>` -Dieses optionale Element ist ein relativer Pfad auf eine im Paket enthaltenen Lizenzdatei (".txt", RTF).  
+-   `<License>` – Dieses optionale Element ist ein relativer Pfad in eine Lizenzdatei (".txt", "RTF") im Paket enthalten.  
   
--   `<ReleaseNotes>` -Dieses optionale Element ist ein relativer Pfad zu einer Release Notes-Datei in das Paket (".txt", RTF), da sonst eine URL zu einer Website handeln, die Anmerkungen zu dieser Version sind, enthalten.  
+-   `<ReleaseNotes>` – Dieses optionale Element ist entweder einen relativen Pfad zu einer Release Notes-Datei, die innerhalb des Pakets (".txt", "RTF"), oder andernfalls eine URL zu einer Website, in dem die Anmerkungen zu dieser Version angezeigt.  
   
--   `<Icon>` -Dieses optionale Element ist ein relativer Pfad zu einer Bilddatei (Png, Bmp, Jpeg, Ico), der im Paket enthalten sind. Das Symbolbild muss 32 x 32 Pixel (oder wird auf diese Größe verkleinert werden) und in der Listenansicht UI wird angezeigt. Wenn kein `Icon` -Element angegeben wird, die Benutzeroberfläche verwendet den Standardwert.  
+-   `<Icon>` – Dieses optionale Element ist ein relativer Pfad zu einer Bilddatei (Png, Bmp, Jpeg, Ico), der im Paket enthalten sind. Das Symbolbild muss 32 x 32 Pixel (oder wird auf diese Größe verkleinert werden kann) und in "ListView"-Benutzeroberfläche angezeigt wird. Wenn kein `Icon` -Element angegeben wird, der Benutzeroberfläche verwendet den Standardwert.  
   
--   `<PreviewImage>` -Dieses optionale Element ist ein relativer Pfad zu einer Bilddatei (Png, Bmp, Jpeg), der im Paket enthalten sind. Das Vorschaubild sollten 200 x 200 Pixel, und in den Details UI angezeigt. Wenn kein `PreviewImage` -Element angegeben wird, die Benutzeroberfläche verwendet den Standardwert.  
+-   `<PreviewImage>` – Dieses optionale Element ist ein relativer Pfad zu einer Bilddatei (Png, Bmp, Jpeg), der im Paket enthalten sind. Das Vorschaubild sollte 200 x 200 Pixel und in den Details-Benutzeroberfläche angezeigt. Wenn kein `PreviewImage` -Element angegeben wird, der Benutzeroberfläche verwendet den Standardwert.  
   
--   `<Tags>` -Dieses optionale Element listet zusätzlichen Text ein durch Semikolons getrennte-Tags, die für suchhinweise verwendet werden. Die `Tags` -Elements ist auf 100 Zeichen beschränkt.  
+-   `<Tags>` – Dieses optionale Element enthält zusätzliche durch Semikolons getrennten Text-Tags, die für suchhinweise verwendet werden. Die `Tags` -Elements ist auf 100 Zeichen beschränkt.  
   
--   `<GettingStartedGuide>` -Dieses optionale Element ist entweder ein relativer Pfad in eine HTML-Datei oder eine URL zu einer Website, die Informationen zur Verwendung der Erweiterung oder dem Inhalt innerhalb dieses Paket enthält. Dieses Handbuch ist als Teil einer Installation gestartet.  
+-   `<GettingStartedGuide>` – Dieses optionale Element ist entweder einen relativen Pfad zu einer HTML-Datei oder eine URL zu einer Website, die Informationen zur Verwendung der Erweiterung oder der Inhalt dieses Pakets enthält. Dieses Handbuch ist als Teil einer Installation gestartet.  
   
--   `<AnyElement>*` -Die Manifestschema ist flexibel genug, um andere Elemente zu ermöglichen. All seine untergeordneten Elemente, die vom Ladeprogramm Bereitstellungsmanifests erkannt werden, werden als eine Liste von Objekten XmlElement verfügbar gemacht. Verwenden diese untergeordneten Elemente, VSIX-Erweiterungen definieren zusätzliche Daten in der Manifestdatei und zur Laufzeit aufzulisten.  
+-   `<AnyElement>*` – Die manifest-Schema ist flexibel genug ist, um andere Elemente zu ermöglichen. Keine untergeordneten Elemente, die vom manifest-Ladeprogramm erkannt werden nicht werden als eine Liste der XmlElement-Objekte verfügbar gemacht. Verwenden diese untergeordneten Elemente, VSIX-Erweiterungen definieren zusätzliche Daten in der Manifestdatei und zur Laufzeit aufzulisten.  
   
-### <a name="installation-element"></a>Installation-Element  
- Dieser Abschnitt definiert die Möglichkeit, die dieses Paket installiert werden kann, und die Anwendung-SKUs, die in die Installation durchführen können. Dieser Abschnitt enthält die folgenden Attribute:  
+### <a name="installation-element"></a>Installationselement  
+ Dieser Abschnitt definiert die Möglichkeit, die dieses Paket installiert werden kann und die Anwendung-SKUs, die sie installieren kann. Dieser Abschnitt enthält die folgenden Attribute:  
   
--   `Experimental` – Legen Sie dieses Attribut auf "true", wenn Sie eine Erweiterung, die zurzeit für alle Benutzer installiert wird, aber Sie eine aktualisierte Version auf demselben Computer entwickeln. Beispielsweise, wenn MyExtension 1.0 für alle Benutzer installiert haben, aber möchten MyExtension 2.0 auf dem gleichen Computer Debuggen, legen Sie die experimentelle = "true". Dieses Attribut ist in Visual Studio 2015 Update 1 und höher verfügbar.  
+-   `Experimental` – Legen Sie dieses Attribut auf "true", wenn Sie eine Erweiterung, die derzeit für alle Benutzer installiert ist, aber Sie eine aktualisierte Version auf demselben Computer entwickeln. Zum Beispiel, wenn MyExtension 1.0 für alle Benutzer installiert haben, aber Sie debuggen möchten MyExtension 2.0 auf dem gleichen Computer, legen Sie experimentell = "true". Dieses Attribut ist in Visual Studio 2015 Update 1 und höher verfügbar.  
   
 -   `Scope` – Dieses Attribut kann den Wert "Global" oder "ProductExtension" annehmen:  
   
-    -   "Global" gibt an, dass die Installation nicht auf eine bestimmte SKU begrenzt ist. Beispielsweise wird dieser Wert verwendet, wenn eine Erweiterungs-SDK installiert ist.  
+    -   "Global" gibt an, dass die Installation nicht für eine bestimmte SKU begrenzt ist. Beispielsweise wird dieser Wert verwendet, wenn eine Erweiterungs-SDK installiert ist.  
   
-    -   "ProductExtension" gibt an, dass eine einzelne Visual Studio-SKUs Bereich herkömmlichen VSIX-Erweiterung (Version 1.0) installiert ist. Dies ist der Standardwert.  
+    -   "ProductExtension" gibt an, dass eine herkömmliche VSIX-Erweiterung (Version 1.0) auf den einzelnen Visual Studio-SKUs begrenzt installiert ist. Dies ist der Standardwert.  
   
--   `AllUsers` -Dieses optionale Attribut gibt an, ob dieses Paket für alle Benutzer installiert werden soll. Standardmäßig ist dieses Attribut "false" gibt an, dass das Paket pro Benutzer. (Wenn Sie diesen Wert auf "true" festlegen, muss der installierende Benutzer Administratorberechtigungen auf die resultierenden VSIX installieren erhöhen.  
+-   `AllUsers` – Dieses optionale Attribut gibt an, ob dieses Paket für alle Benutzer installiert werden soll. Standardmäßig ist dieses Attribut false gibt an, der angibt, dass das Paket pro Benutzer ist. (Wenn Sie diesen Wert auf "true" festlegen, muss der installierende Benutzer Administratorrechte auf die resultierende VSIX installiert erhöhen.  
   
--   `InstalledByMsi` -Dieses optionale Attribut gibt an, ob dieses Paket, indem eine MSI-Datei installiert ist. Pakete installiert, indem Sie eine MSI-Datei installiert und von MSI-Datei (Programme und Funktionen) und nicht durch den Visual Studio Erweiterungs-Manager verwaltet werden.  Standardmäßig ist dieses Attribut "false", der angibt, dass das Paket nicht durch eine MSI-Datei installiert wird.  
+-   `InstalledByMsi` – Dieses optionale Attribut gibt an, ob dieses Paket von einem MSI installiert ist. Pakete installiert, indem Sie eine MSI-Datei installiert und von MSI-Datei (Programme und Funktionen) und nicht von der Visual Studio Erweiterungs-Manager verwaltet werden.  Standardmäßig ist dieses Attribut false gibt an, der angibt, dass das Paket nicht von einem MSI installiert ist.  
   
--   `SystemComponent` -Dieses optionale Attribut gibt an, ob dieses Paket eine Systemkomponente berücksichtigt werden sollten. Systemkomponenten nicht mehr in der Erweiterungs-Manager-UI anzeigen und können nicht aktualisiert werden. Standardmäßig ist dieses Attribut "false" gibt an, dass das Paket keine Systemkomponente ist.  
+-   `SystemComponent` – Dieses optionale Attribut gibt an, ob dieses Paket eine Systemkomponente berücksichtigt werden soll. Komponenten des Informationssystems nicht in der Erweiterungs-Manager-UI anzeigen und können nicht aktualisiert werden. Standardmäßig ist dieses Attribut false gibt an, die angibt, dass das Paket eine Systemkomponente ist.  
   
--   `AnyAttribute*` – Der `Installation` -Element akzeptiert einen offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch von Name / Wert-Paar verfügbar gemacht werden.  
+-   `AnyAttribute*` – Die `Installation` -Element akzeptiert einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht werden.  
   
--   `<InstallationTarget>` -Dieses Element steuert den Speicherort, in dem das VSIX-Installationsprogramm für das Paket installiert. Wenn der Wert der `Scope` -Attribut ist "ProductExtension" das Paket muss als Ziel eine SKU, die eine Manifestdatei als Teil des Inhalts in seine Verfügbarkeit Erweiterungen ankündigen installiert wurde. Die `<InstallationTarget>` Element verfügt über die folgenden Attribute, wenn die `Scope` Attribut hat den expliziten oder Standardwert "ProductExtension":  
+-   `<InstallationTarget>` : Dieses Element steuert den Speicherort, in dem das VSIX-Installationsprogramm für das Paket installiert. Wenn der Wert des der `Scope` -Attribut ist "ProductExtension" das Paket muss als Ziel eine SKU, die eine Manifestdatei im Rahmen der Inhalt in seine Verfügbarkeit Erweiterungen ankündigen installiert wurde. Die `<InstallationTarget>` Element verfügt über die folgenden Attribute, wenn die `Scope` Attribut hat den expliziten oder Standardwert "ProductExtension":  
   
-    -   `Id` – Dieses Attribut identifiziert das Paket.  Das Attribut folgt der Konvention für den Verweisnamespace: Company.Product.Feature.Name. Die `Id` Attribut darf nur alphanumerische Zeichen und darf maximal 100 Zeichen lang ist. Erwartete Werte:  
+    -   `Id` – Dieses Attribut identifiziert das Paket.  Das Attribut folgt der Konvention: Company.Product.Feature.Name. Die `Id` -Attribut darf nur alphanumerische Zeichen und maximal 100 Zeichen umfassen. Erwartete Werte:  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
-        -   Microsoft.VisualStudio.Pro  
+        -   "Microsoft.VisualStudio.pro"  
   
         -   Microsoft.VisualStudio.Premium  
   
@@ -117,56 +117,56 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt eines VSIX-Pakets. 
   
         -   My.Shell.App  
   
-    -   `Version` – Dieses Attribut gibt einen Versionsbereich mit den minimalen und maximalen unterstützten Versionen dieser SKU. Ein Paket kann die Versionen von SKUs ausführlich beschrieben, die es unterstützt. Die Version bereichsschreibweise ist [10.0-11.0], in dem  
+    -   `Version` – Dieses Attribut gibt einen Versionsbereich, mit der minimalen und maximalen unterstützten Versionen dieser SKU. Ein Paket kann die Versionen der SKUs ausführlich beschrieben, die es unterstützt. Die Bereichsangabe Version ist [10.0-11.0], wo  
   
         -   [-Mindestversion inklusive.  
   
         -   ]-Maximalversion inklusive.  
   
-        -   (-exklusive Mindestversion.  
+        -   (-Mindestversion, die exklusiv.  
   
-        -   )-Maximalversion exklusiv.  
+        -   ) – maximale Version des exklusiven.  
   
-        -   Die Version mit einem # - nur die angegebene Version.  
+        -   Einzelne Version # - nur die angegebene Version.  
   
         > [!IMPORTANT]
-        >  Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und mit der VSIXInstaller.exe, das Bestandteil des Produkts ist. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIXInstaller, jedoch nur mithilfe der höheren Versionen des Installationsprogramms.  
+        >  Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.  
   
-    -   `AnyAttribute*` – Der `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch von Name / Wert-Paar verfügbar gemacht werden müssen.  
+    -   `AnyAttribute*` – Die `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht werden müssen.  
   
-### <a name="dependencies-element"></a>Dependencies-Element  
- Dieses Element enthält eine Liste der Abhängigkeiten, die dieses Paket deklariert. Wenn keine Abhängigkeiten angegeben sind, diese Pakete (identifizierte ihre `Id`) muss installiert wurde, bevor Sie.  
+### <a name="dependencies-element"></a>Abhängigkeitselement  
+ Dieses Element enthält eine Liste der Abhängigkeiten, die dieses Paket deklariert. Wenn Abhängigkeiten angegeben werden, diese Pakete (identifiziert durch ihre `Id`) muss installiert wurde, bevor Sie.  
   
--   `<Dependency>` Element - dieses untergeordnete Element weist folgende Attribute:  
+-   `<Dependency>` Element - hat dieses untergeordnete Element die folgenden Attribute:  
   
-    -   `Id` – Dieses Attribut muss eine eindeutige ID für das abhängige Paket. Dieser Identitätswert übereinstimmen der `<Metadata><Identity>Id` Attribut eines Pakets, das dieses Paket abhängig ist. Die `Id` Attribut folgt der Konvention für den Verweisnamespace: Company.Product.Feature.Name. Das Attribut darf nur alphanumerische Zeichen und darf maximal 100 Zeichen lang ist.  
+    -   `Id` – Dieses Attribut muss es sich um eine eindeutige ID für das abhängige Paket sein. Dieser Identitätswert muss übereinstimmen der `<Metadata><Identity>Id` Attribut eines Pakets, das dieses Paket abhängig ist. Die `Id` folgt der Konvention Namespace, Attribut: Company.Product.Feature.Name. Das Attribut darf nur alphanumerische Zeichen enthalten und ist auf 100 Zeichen beschränkt.  
   
-    -   `Version` – Dieses Attribut gibt einen Versionsbereich mit den minimalen und maximalen unterstützten Versionen dieser SKU. Ein Paket kann die Versionen von SKUs ausführlich beschrieben, die es unterstützt. Ist die Version bereichsschreibweise [12.0, 13.0], wobei:  
+    -   `Version` – Dieses Attribut gibt einen Versionsbereich, mit der minimalen und maximalen unterstützten Versionen dieser SKU. Ein Paket kann die Versionen der SKUs ausführlich beschrieben, die es unterstützt. Die Version Bereich Notation ist [12.0, 13.0], wobei:  
   
         -   [-Mindestversion inklusive.  
   
         -   ]-Maximalversion inklusive.  
   
-        -   (-exklusive Mindestversion.  
+        -   (-Mindestversion, die exklusiv.  
   
-        -   )-Maximalversion exklusiv.  
+        -   ) – maximale Version des exklusiven.  
   
-        -   Die Version mit einem # - nur die angegebene Version.  
+        -   Einzelne Version # - nur die angegebene Version.  
   
-    -   `DisplayName` – Dieses Attribut ist der Anzeigename, der das abhängige Paket die im UI-Elemente, z. B. Dialogfelder und Fehlermeldungen verwendet wird. Das Attribut ist optional, es sei denn, das abhängige Paket von MSI-Datei installiert wird.  
+    -   `DisplayName` – Dieses Attribut ist der Anzeigename des abhängigen Pakets die im UI-Elemente wie z. B. Dialogfelder und Fehlermeldungen verwendet wird. Das Attribut ist optional, es sei denn, das abhängige Paket von MSI-Datei installiert wird.  
   
-    -   `Location` -Dieses optionale Attribut gibt an, entweder der relative Pfad innerhalb dieser VSIX zu einem geschachtelten VSIX-Paket oder eine URL auf den Downloadpfad für die Abhängigkeit. Dieses Attribut wird verwendet, zu der Benutzer, die das erforderliche Paket zu suchen.  
+    -   `Location` – Dieses optionale Attribut gibt an, entweder den relativen Pfad innerhalb dieser VSIX zu einem geschachtelten VSIX-Paket oder eine URL zu den Downloadpfad für die Abhängigkeit. Dieses Attribut wird verwendet, damit der Benutzer, die das erforderliche Paket suchen kann.  
   
-    -   `AnyAttribute*` – Der `Dependency` -Element akzeptiert einen offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch von Name / Wert-Paar verfügbar gemacht werden.  
+    -   `AnyAttribute*` – Die `Dependency` -Element akzeptiert einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht werden.  
   
-### <a name="assets-element"></a>Anlagen-Element  
- Dieses Element enthält eine Liste der `<Asset>` Tags für jedes Element-Erweiterung oder den Inhalt von diesem Paket angefügt.  
+### <a name="assets-element"></a>Ressourcen-Element  
+ Dieses Element enthält eine Liste der `<Asset>` Tags für jedes Element Erweiterung oder des Inhalts, die von diesem Paket verfügbar gemacht.  
   
--   `<Asset>` -Dieses Element enthält die folgenden Attribute und Elemente:  
+-   `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
   
-    -   `Type` -Dies ist der Typ der Erweiterung oder des Inhalts von diesem Element dargestellt. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut sollte ein vollqualifizierter Name gemäß Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
+    -   `Type` : Dies ist der Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+        1.  "Microsoft.VisualStudio.VSPackage"  
   
         2.  Microsoft.VisualStudio.MefComponent  
   
@@ -180,15 +180,17 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt eines VSIX-Pakets. 
   
         7.  Microsoft.VisualStudio.Assembly  
   
-         Sie können eigene erstellen und ihnen eindeutige Namen zuweisen. Zur Laufzeit innerhalb von Visual Studio kann Codes auflisten und Zugriff auf diese benutzerdefinierten Typen über die Erweiterungs-Manager-API.  
+         Sie können eigene Typen erstellen, und geben sie eindeutige Namen. Zur Laufzeit in Visual Studio kann Ihr Code auflisten und Zugriff auf diese benutzerdefinierte Typen über die Erweiterungs-Manager-API.  
   
-    -   Pfad - der relative Pfad auf die Datei oder einen Ordner innerhalb des Pakets, das das Medienobjekt enthält.  
+    -   `Path` -der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
+    
+    -   `TargetVersion` -der Versionsbereich, in dem sich das angegebene Objekt gilt. Wird verwendet, um den rückversand für mehrere Versionen der Objekte auf verschiedene Versionen von Visual Studio. Erfordert Visual Studio 2017.3 oder höher angewendet werden kann.
   
-    -   `AnyAttribute*` -Einen offenen Satz Attribute, die zur Laufzeit als Name / Wert-Paar Wörterbuch verfügbar gemacht werden müssen.  
+    -   `AnyAttribute*` -Eine offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht werden müssen.  
   
-         `<AnyElement>*` – Beliebige strukturierter Inhalt ist zulässig, zwischen einer `<Asset>` beginnen und enden Tag. Alle Elemente werden als eine Liste von Objekten XmlElement verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten in der Manifestdatei definieren und zur Laufzeit aufzulisten.  
+         `<AnyElement>*` – Beliebige strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
   
-### <a name="sample-manifest"></a>Beispiel-Manifest  
+### <a name="sample-manifest"></a>Beispielmanifest  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

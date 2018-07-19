@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von optimiertem Code | Microsoft Docs'
+title: 'Vorgehensweise: Debuggen von optimiertem Code | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,19 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478079"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058509"
 ---
 # <a name="how-to-debug-optimized-code"></a>Gewusst wie: Debuggen von optimiertem Code
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!NOTE]
->  Die [/zo (optimiertes Debuggen verbessern)](/cpp/build/reference/zo-enhance-optimized-debugging)(eingeführt in Visual Studio Update 3)-Compileroption generiert umfangreichere Debuginformationen für optimierten Code (Projekte, die nicht erstellt werden, mit der **/Od** Compileroption. Finden Sie unter [/o-Optionen (Code optimieren)](/cpp/build/reference/o-options-optimize-code)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
+>  Die [/zo (optimiertes Debuggen verbessern)](/cpp/build/reference/zo-enhance-optimized-debugging)(in Visual Studio Update 3 eingeführte)-Compileroption generiert umfangreichere Debuginformationen für optimierten Code (Projekte, die nicht mit basieren die **/Od** Compileroption. Finden Sie unter [/o-Optionen (Code optimieren)](/cpp/build/reference/o-options-optimize-code)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
 >   
 >  [Bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md) ist deaktiviert, wenn die **/zo** -Compileroption verwendet wird.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "31478079"
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>So aktivieren Sie die Optimierung in einer Debugbuildkonfiguration  
   
-1.  Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden der `Win32``Debug` Ziel, bis das Programm vollständig debuggt wird, und Sie bereit sind, erstellen Sie eine `Win32 Release` Ziel. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.  
+1.  Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden der `Win32``Debug` Ziel, bis das Programm vollständig debuggt ist und Sie bereit sind, erstellen Sie eine `Win32 Release` Ziel. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.  
   
 2.  Wählen Sie das Projekt im Projektmappen-Explorer aus.  
   
@@ -67,15 +67,15 @@ ms.locfileid: "31478079"
   
 4.  In der **Eigenschaftenseiten** Dialogfeld stellen Sie sicher, dass `Debug` ausgewählt ist, der **Konfiguration** Dropdown-Liste.  
   
-5.  Wählen Sie in der Ordneransicht auf der linken Seite, die **C/C++-** Ordner.  
+5.  Wählen Sie in den Ordner auf der linken Seite die **C/C++-** Ordner.  
   
-6.  Klicken Sie unter der **C++** Ordner wählen `Optimization`.  
+6.  Unter den **C++** Ordner `Optimization`.  
   
-7.  Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet wahrscheinlich `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Wählen Sie eine der anderen Optionen (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, oder `Custom`).  
+7.  Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet wahrscheinlich `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Wählen Sie eine der anderen Optionen (`Minimum Size``(`["/ O1"](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` ["/ O2"](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, oder `Custom`).  
   
 8.  Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.  
   
-9. Wählen Sie die Befehlszeilenknoten "Konfigurationseigenschaften" C/C++-Befehlszeile Knoten der Eigenschaftenseite des Projekts und hinzufügen `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` auf die **Zusatzoptionen** Textfeld.  
+9. Wählen Sie den Remotedebugger-Eigenschaften, C/C++ Knoten der Seite mit den Projekteigenschaften, Befehlszeile und hinzufügen `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` auf die **zusätzliche Optionen** Textfeld.  
   
     > [!WARNING]
     >  Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.  
@@ -84,11 +84,11 @@ ms.locfileid: "31478079"
   
  Verwenden Sie beim Debuggen von optimiertem Code die **Disassembly** Fenster, um festzustellen, welche Anweisungen tatsächlich erstellt und ausgeführt werden. Beim Festlegen von Haltepunkten sollten Sie beachten, dass der Haltepunkt zusammen mit einer Anweisung verschoben werden kann. Beachten Sie z. B. folgenden Code:  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   
- Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Beim Anzeigen der **Disassembly** Fenster die [Schritteinheit](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) wird automatisch festgelegt, der Anweisung zur besseren Steuerung nützlich, ist Wenn Sie optimierten Code durchlaufen schrittweise.  
+ Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Beim Anzeigen der **Disassembly** Fenster die [Schritteinheit](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) wird automatisch festgelegt, der Anweisung zur besseren Steuerung nützlich, ist Wenn Sie optimierte Code durchlaufen schrittweise.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   

@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576000"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327153"
 ---
 # <a name="msbuild"></a>MSBuild
-Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Plattform, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie msbuild.exe im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.  
+Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie msbuild.exe im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.  
   
  Visual Studio verwendet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Die Projektdateien in Visual Studio (CSPROJ-, VBPROJ-, VCXPROJ-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Alle erforderlichen Einstellungen und Buildprozesse werden für die reguläre Entwicklungsarbeit in Visual Studio-Projekte importiert. Sie können diese jedoch in Visual Studio oder mithilfe eine XML-Editors erweitern oder ändern.  
   
@@ -64,7 +64,7 @@ Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]
   
     -   [Aufgaben](#BKMK_Tasks)  
   
-    -   [Targets](#BKMK_Targets) (MSBuild-Ziele)  
+    -   [Ziele](#BKMK_Targets)  
   
 -   [Buildprotokolle](#BKMK_BuildLogs)  
   
@@ -75,7 +75,7 @@ Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]
 ##  <a name="BKMK_CommandPrompt"></a> Verwenden von MSBuild an einer Eingabeaufforderung  
  Übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an MSBuild.exe, um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] an einer Eingabeaufforderung auszuführen. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei `MyProj.proj`, deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.  
   
-```  
+```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
 ```  
   
@@ -190,14 +190,14 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|description|  
+|Titel|Beschreibung |  
 |-----------|-----------------|  
 |[Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird.|  
 |[Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)|Die Bausteine von MSBuild werden eingeführt, und es wird gezeigt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen.|  
 |[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)|Stellt die vier Bausteine von MSBuild dar: Eigenschaften, Elemente, Ziele und Aufgaben.|  
 |[Elemente](../msbuild/msbuild-items.md)|Hierin werden die allgemeinen Konzepte hinter dem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateiformat sowie das Zusammenwirken der einzelnen Teile beschrieben.|  
 |[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)|Hierin werden Eigenschaften und Eigenschaftenauflistungen eingeführt. Eigenschaften sind Schlüssel/Wert-Paare, die zur Konfiguration von Builds verwendet werden können.|  
-|[Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele)|Es wird erläutert, wie Aufgaben in einer bestimmten Reihenfolge gruppiert werden und wie Sie es ermöglichen, dass Abschnitte des Buildprozesses über die Befehlszeile aufgerufen werden.|  
+|[Ziele](../msbuild/msbuild-targets.md)|Es wird erläutert, wie Aufgaben in einer bestimmten Reihenfolge gruppiert werden und wie Sie es ermöglichen, dass Abschnitte des Buildprozesses über die Befehlszeile aufgerufen werden.|  
 |[Aufgaben](../msbuild/msbuild-tasks.md)|Hierin wird gezeigt, wie eine Einheit von ausführbarem Code erstellt wird, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Ausführen unteilbarer Buildvorgänge verwendet werden kann.|  
 |[Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen)|Hier wird erläutert, wie das `Condition`-Attribut in einem MSBuild-Element verwendet wird.|  
 |[Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Erweiterte MSBuild-Grundlagen)|Hier werden die Batchverarbeitung, das Ausführen von Transformationen, die Festlegung von Zielversionen sowie andere erweiterte Verfahren veranschaulicht.|  

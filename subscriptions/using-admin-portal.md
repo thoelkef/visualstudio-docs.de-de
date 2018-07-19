@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327391"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Verwenden des Administratorportals für Visual Studio-Abonnements
 
@@ -48,9 +49,9 @@ Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonneme
 3.  **Auf das neue Portal zur Verwaltung von Abonnements zugreifen**  Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.  
 
 > [!NOTE]
-> Wenn die primären Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCN besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCN abschließen, die jeweils in den E-Mails genannt werden.*
+> Wenn die primären Kontakte oder Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCNs besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCN abschließen, die jeweils in den E-Mails genannt werden.*
 
-Wenn Sie dem neuen Portal zur Verwaltung von Visual Studio-Abonnements hinzugefügt werden müssen und nicht sicher sind, wer Ihr primärer Ansprechpartner ist, finden Sie diese Informationen nach dem Anmelden bei dem [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Lesen Sie das Thema [Ermitteln Ihres primären Kontakts](/find-primary-contact/), um eine Anleitung zum Ermitteln Ihres primären Ansprechpartners im VLSC zu erhalten.
+Wenn Sie dem neuen Portal zur Verwaltung von Visual Studio-Abonnements hinzugefügt werden müssen und nicht sicher sind, wer Ihr primärer Ansprechpartner ist, finden Sie diese Informationen nach dem Anmelden bei dem [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Lesen Sie das Thema [Ermitteln Ihres primären Kontakts](find-primary-contact.md), um eine Anleitung zum Ermitteln Ihres primären Ansprechpartners im VLSC zu erhalten.
 Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.
 
 ### <a name="understanding-the-subscribers-page"></a>Grundlegendes zur Seite „Abonnenten“
@@ -67,11 +68,9 @@ Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „A
 - Ein optionales Feld für eine weitere E-Mail-Adresse, die zur E-Mail-Kommunikation, aber nicht zum Einloggen genutzt wird 
 
 Auf dieser Seite können Sie links zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen.
-
-   ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
+    ![Abonnentenseite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Grundlegendes zur Seite „Details“
 Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erhalten Sie auf der Registerkarte „Details“. Dort werden Vereinbarungsstatus, Einkaufskonto, Organisationsdetails, primäre Ansprechpartner (VLSC), Superadministratoren (falls vorhanden) und andere relevante Informationen angezeigt.
-
-   ![Seite „Details“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
+    ![Details-Seite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
 

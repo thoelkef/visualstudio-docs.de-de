@@ -1,5 +1,5 @@
 ---
-title: Workflow-Designer - navigieren Sie, und wählen Sie eine .NET (Dialogfeld)
+title: Workflow-Designer - navigieren Sie, und wählen Sie ein Dialogfeld
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973914"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117016"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
-In der **Eigenschaften** Fenster, Dialogfelder oder Designern, z. B. den Variablen-Designer, bei der Auswahl **nach Typen suchen...**  wird aus einer Liste der Datentypen, die **durchsuchen, und wählen Sie einen .NET-Typ** (Dialogfeld) (in abgekürzter Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.
+In der **Eigenschaften** Fenster, Dialogfelder und Designern, z. B. den Variablen-Designer, bei der Auswahl **nach Typen suchen** ist eine Liste der Datentypen, die **durchsuchen, und wählen Sie einen .NET-Typ** (Dialogfeld) (in abgekürzter Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.
 
  Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem eingesetzt:
 
@@ -39,35 +39,35 @@ In der **Eigenschaften** Fenster, Dialogfelder oder Designern, z. B. den Variabl
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>So wählen Sie einen Wert- oder Verweistyp im Typbrowser aus
 
-1.  In der **Typnamen** Geben Sie den Namen des Typs, den Sie verwenden möchten.
+1.  In der **Typnamen** Geben Sie den Namen des Typs, die Sie verwenden möchten.
 
 2.  Führen Sie einen der folgenden Schritte aus:
 
-    -   Wenn der Name des Typs, den Sie verwenden möchten in der Struktur angezeigt wird der **Typnamen** Feld, doppelklicken Sie auf den Typ, um ihn auszuwählen.
+    -   Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Feld, doppelklicken Sie auf den Typ, um es auszuwählen.
 
-    -   Geben Sie genug Zeichen in der **Typnamen** Feld zur eindeutigen Identifizierung den Typ, die Sie verwenden möchten, und drücken Sie die EINGABETASTE, um den Typ auswählen
+    -   Geben Sie genug Zeichen in der **Typnamen** Feld zur eindeutigen Identifizierung den Typ, die Sie verwenden möchten, und drücken Sie die EINGABETASTE, um den Typ auszuwählen
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>So wählen Sie einen generischen Typ im Typbrowser aus
 
 1.  In der **Typnamen** Feld den Namen des Typs, die Sie verwenden möchten.
 
-2.  Wenn der Name des Typs, den Sie verwenden möchten in der Struktur angezeigt wird der **Typnamen** Box, klicken Sie auf den Typ, um ihn dazu führen, dass Dropdownfelder auszuwählen anzuzeigen.
+2.  Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Box, klicken Sie auf der Typ auswählen, die dazu führen, dass der Dropdown-Felder angezeigt werden.
 
-     Wählen Sie den Typ, den Sie verwenden, um aus den Dropdownfeldern schließen, und klicken Sie dann auf möchten **OK**.
+     Wählen Sie den Typ, den Sie verwenden, um die generische über die Dropdownfelder zu schließen, und klicken Sie dann auf möchten **OK**.
 
 ## <a name="types-displayed-in-the-type-browser"></a>Typen, die im Typbrowser angezeigt werden
- Welche Typen im Typbrowser angezeigt werden, hängt davon ab, wie der Typbrowser aufgerufen wurde. Wenn der Typbrowser, aus einem Workflowprojekt innerhalb eines aufgerufen wurde **vs2010**, werden standardmäßig alle Typen in referenzierten Assemblys und referenzierte Projekten werden angezeigt. Wenn der Typbrowser von außerhalb von gestartet wurde eine **vs2010** -Projektsystems (z. B. in einer neu gehosteten workflowanwendung oder einer eigenständigen Workflowdatei), und klicken Sie dann in der Standardeinstellung die Typen aller in der Anwendungsdomäne geladenen Assemblys angezeigt werden .
+ Welche Typen im Typbrowser angezeigt werden, hängt davon ab, wie der Typbrowser aufgerufen wurde. Wenn der Typbrowser, aus einem Workflowprojekt innerhalb von aufgerufen wurde **vs2010**, werden standardmäßig alle Typen in referenzierten Assemblys und referenzierten Projekte werden angezeigt. Wenn der Typbrowser von außerhalb der gestartet wurde eine **vs2010** -Projektsystems (z. B. in einer neu gehosteten workflowanwendung oder einer eigenständigen Workflowdatei), und klicken Sie dann in der Standardeinstellung die Typen aller in der Anwendungsdomäne geladenen Assemblys angezeigt werden .
 
  Die Typen im Typbrowser können von den Aktivitätsdesignerentwicklern gefiltert werden. Für jede gegebene Aktivität wird möglicherweise nur eine Teilmenge der Typen angezeigt. Zum Beispiel werden in der <xref:System.Activities.Statements.TryCatch>-Aktivität nur die Typen, die von <xref:System.Exception> abgeleitet sind, im Typbrowser angezeigt.
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filter von Suchergebnissen im Typbrowser
- Die Liste der Typen in der **Typnamen** Feld wird kürzer, während der Eingabe von mehr Zeichen, um eine Übereinstimmung zu erzielen. Nur Typen, deren vollqualifizierte Namen mit der eingegebenen Zeichenfolge beginnen, oder Typen, deren Kurzname mit der eingegebenen Zeichenfolge beginnen, erscheinen in der gefilterten Liste.
+ Die Liste der Typen in der **Typnamen** Feld wird kürzer, während der Eingabe von mehr Zeichen ein, um eine Übereinstimmung zu finden. Nur Typen, deren vollqualifizierte Namen mit der eingegebenen Zeichenfolge beginnen, oder Typen, deren Kurzname mit der eingegebenen Zeichenfolge beginnen, erscheinen in der gefilterten Liste.
 
  Zum Beispiel:
 
-1.  Geben Sie **Vorgang** entspricht <xref:System.OperationCanceledException> , aber nicht <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
+1.  Eingabe **Vorgang** entspricht <xref:System.OperationCanceledException> , nicht jedoch <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
 
-2.  Geben Sie **generische** entspricht <xref:System.GenericUriParser> aber nicht Typen die <xref:System.Collections.Generic> Namespace. Um nach Typen im <xref:System.Collections.Generic>-Namespace zu suchen, geben Sie den vollqualifizierten Namen des Namespaces ein.
+2.  Eingabe **generische** entspricht <xref:System.GenericUriParser> aber nicht Typen die <xref:System.Collections.Generic> Namespace. Um nach Typen im <xref:System.Collections.Generic>-Namespace zu suchen, geben Sie den vollqualifizierten Namen des Namespaces ein.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Auswählen eines Dienstvertrags mithilfe des Typbrowserdialogfelds
  Beim Auswählen eines Dienstvertragstyps zeigt der Typbrowser nur Typen an, die über das <xref:System.ServiceModel.ServiceContractAttribute>-Attribut verfügen.

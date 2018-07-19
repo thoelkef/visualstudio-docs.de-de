@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5d60d41c7c7866ed396a90eacec4ba61a05238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 183e549f6f582593915a89b7b0e907aa97253b17
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574840"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326639"
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sequenziell ausführt.  
@@ -35,7 +35,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <Target Name="Target Name"  
         Inputs="Inputs"  
         Outputs="Outputs"  
@@ -58,7 +58,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels.|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +73,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Aufgabe](../msbuild/task-element-msbuild.md)|Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. Ein Ziel kann null oder mehrere Elemente enthalten.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Enthält eine Reihe von benutzerdefinierten `Property`-Elementen. Seit .NET Framework 3.5 enthält ein `Target`-Element möglicherweise `PropertyGroup`-Elemente.|  
@@ -82,12 +82,12 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 
 ## <a name="remarks"></a>Hinweise  
- Das erste auszuführende Ziel wird zur Laufzeit angegeben. Ziele können von anderen Zielen abhängig sein. Ein Ziel für die Bereitstellung beispielsweise ist von einem Ziel für die Kompilierung abhängig. Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul führt Abhängigkeiten in der Reihenfolge aus, in der sie im `DependsOnTargets`-Attribut erscheinen, d.h. von links nach rechts. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).  
+ Das erste auszuführende Ziel wird zur Laufzeit angegeben. Ziele können von anderen Zielen abhängig sein. Ein Ziel für die Bereitstellung beispielsweise ist von einem Ziel für die Kompilierung abhängig. Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine führt Abhängigkeiten in der Reihenfolge aus, in der sie im `DependsOnTargets`-Attribut erscheinen, d.h. von links nach rechts. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).  
 
  Ein Ziel wird nur einmal während eines Builds ausgeführt, auch wenn mehrere Ziele eine Abhängigkeit aufweisen.  
 

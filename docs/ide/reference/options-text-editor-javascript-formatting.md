@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950880"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800619"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Optionen, Text-Editor, JavaScript, Formatierung
 Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** und **Optionen** klicken und anschließend **Text-Editor**, **JavaScript** und **Formatierung** erweitern.
@@ -31,7 +31,7 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-|Option|description|
+|Option|Beschreibung |
 |------------|-----------------|
 |**Abgeschlossene Zeile durch Eingabe formatieren**|Wenn diese Option ausgewählt ist, formatiert der Code-Editor nach Drücken der EINGABETASTE automatisch die Zeile.|
 |**Abgeschlossene Anweisung bei ";" formatieren**|Wenn diese Option ausgewählt ist, formatiert der Code-Editor nach Drücken der SEMIKOLONTASTE automatisch die Zeile.|
@@ -43,7 +43,7 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-|Option|description|
+|Option|Beschreibung |
 |------------|-----------------|
 |**Öffnende geschweifte Klammer für Funktionen in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einer Funktion verknüpfte öffnende geschweifte Klammer in eine neue Zeile.|
 |**Öffnende geschweifte Klammer für Kontrollblöcke in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einem Kontrollblock verknüpfte öffnende geschweifte Klammer (z. B. `if`- und `while`-Kontrollblöcke) in eine neue Zeile.|
@@ -53,7 +53,7 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-|Option|description|
+|Option|Beschreibung |
 |------------|-----------------|
 |**Leerzeichen nach Trennzeichen einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen nach einem Kommatrennzeichen eingefügt.|
 |**In for-Anweisung Leerzeichen nach Semikolon einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor hinter jedem Semikolon in der ersten Zeile einer `for`-Schleife ein Leerzeichen eingefügt.|

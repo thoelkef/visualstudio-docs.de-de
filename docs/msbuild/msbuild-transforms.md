@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571619"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325289"
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
 Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zur effizienteren Erstellung von Projekten verwendet werden.  
@@ -28,7 +28,7 @@ Transformationen werden nicht auf willkürliche Art und Weise erstellt, sondern 
   
 Im folgenden Beispiel wird eine Liste mit *RESX*-Dateien in eine Liste mit *RESOURCES*-Dateien transformiert. Der Transformationsmodifizierer %(dateiname) gibt an, dass jeder *RESOURCES*-Datei derselbe Dateiname wie der zugehörigen *RESX*-Datei zugeordnet wird.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
 ## <a name="using-multiple-modifiers"></a>Verwenden mehrerer Modifizierer  
  Ein Tranformationsausdruck kann mehrere Modifizierer enthalten, die in einer beliebigen Reihenfolge kombiniert und wiederholt werden können. Im folgenden Beispiel wird der Name des Verzeichnisses geändert, das die Dateien enthält. Dabei behalten die Dateien allerdings ihren ursprünglichen Namen und ihre Erweiterungen.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
@@ -66,7 +66,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Im folgenden Beispiel wird eine [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine XSD-Datei im Verzeichnis C:\sub0\sub1\sub2\sub3 vorhanden ist, und dass das Arbeitsverzeichnis C:\sub0 lautet.  
   
 ### <a name="code"></a>Code  

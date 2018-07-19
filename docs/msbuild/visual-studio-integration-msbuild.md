@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9cddadd65628e23ee6be366edbc72edb82498be
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575935"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327049"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.  
@@ -45,7 +45,7 @@ Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
 ## <a name="configurations-and-platforms"></a>Konfigurationen und Plattformen  
  Konfigurationen werden in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projekten durch Eigenschaften dargestellt, die in einem `PropertyGroup` -Element gruppiert werden, das ein `Condition` -Attribut enthält. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prüft diese Bedingungen, um eine Liste der anzuzeigenden Projektkonfigurationen und Plattformen zu erstellen. Damit diese Liste erfolgreich extrahiert werden kann, müssen die Bedingungen in einem Format vorliegen, das dem folgenden Format ähnelt:  
   
-```  
+```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
 Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  

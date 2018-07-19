@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources | Microsoft Docs
+title: IDiaEnumInjectedSources | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7467ce576e8e99213242733ca7b1cad3cb2dc98
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0abebe14f0ab4c36d0833edb099d71f09843ea22
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466538"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057269"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Auflisten von den verschiedenen eingefügten Quellen, die in der Datenquelle enthalten sind.  
@@ -35,21 +35,21 @@ IDiaEnumInjectedSources : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version des Enumerators.|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) Version von diesem Enumerator.|  
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Ruft die Anzahl der eingefügten Quellen ab.|  
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Ruft eine eingefügten Datenquelle mithilfe eines Indexes ab.|  
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Ruft eine angegebene Anzahl von eingefügtem Quellen in die Enumerationsfolge ab.|  
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Überspringt eine angegebene Anzahl von eingefügtem Quellen in ein Enumerationsfolge an.|  
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Ruft eine eingefügte Quelle über einen Index ab.|  
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Ruft eine angegebene Anzahl der eingefügten Quellen in der Enumerationsfolge ab.|  
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Überspringt eine angegebene Anzahl der eingefügten Quellen in einer Enumerationsfolge.|  
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird durch den Aufruf abgerufen der [idiasession:: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) Methode mit dem Namen einer bestimmten Quelldatei oder durch Aufrufen der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) Methode durch die GUID der der `IDiaEnumInjectedSources` Schnittstelle.  
+ Diese Schnittstelle wird abrufen durch Aufrufen der [idiasession:: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) Methode mit dem Namen einer bestimmten Quell-Datei oder durch Aufrufen der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) -Methode mit der GUID des der `IDiaEnumInjectedSources` Schnittstelle.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Abrufen (das `GetEnumInjectedSources` Funktion) und verwenden (die `DumpAllInjectedSources` Funktion) die `IDiaEnumInjectedSources` Schnittstelle. Finden Sie unter der [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) für eine Implementierung der Schnittstelle die `PrintPropertyStorage` Funktion. Eine alternative Ausgabe finden Sie unter der [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Schnittstelle.  
+ Dieses Beispiel zeigt, wie Sie erhalten (das `GetEnumInjectedSources` Funktion), und verwenden (die `DumpAllInjectedSources` Funktion) der `IDiaEnumInjectedSources` Schnittstelle. Finden Sie unter den [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) Schnittstelle für eine Implementierung der `PrintPropertyStorage` Funktion. Finden Sie in einer alternativen Ausgabe, die [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Schnittstelle.  
   
 ```C++  
   

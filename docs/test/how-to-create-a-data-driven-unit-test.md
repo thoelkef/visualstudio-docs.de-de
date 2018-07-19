@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117593"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
 
@@ -113,13 +114,13 @@ Die Methode `Assert` enthält eine Nachricht, die die Werte `x` und `y` einer fe
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute
  Das Attribut `DataSource` gibt die Verbindungszeichenfolge für die Datenquelle den Tabellennamen an, die Sie in der Testmethode verwenden. Die genaue Information in der Verbindungszeichenfolge ist unterschiedlich, je nachdem welche Datenquelle Sie verwenden. In diesem Beispiel wurde eine Datenbank „SqlServerCe“ verwendet.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 Das DataSource-Attribut hat drei Konstruktoren.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ Das DataSource-Attribut hat drei Konstruktoren.
 
  Eine app.config-Datei hilft Ihnen dabei, den Speicherort der Datenquelle zu ändern, ohne den Komponententest selbst zu ändern. Weitere Informationen zum Erstellen und Verwenden einer app.config-Datei finden Sie unter [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ Das DataSource-Attribut hat drei Konstruktoren.
 
  Die Verbindungszeichenfolgen hängen vom Typ der Datenquelle ab, er sollte jedoch ein Anbieterelement enthalten, das den unveränderlichen Namen des Datenanbieters angibt.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -152,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Ausführen des Tests und Anzeigen der Ergebnisse
- Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster „Test-Explorer“ in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** sowie **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen von** auswählen, um eine Teilmenge der Tests auszuführen.
+ Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster „Test-Explorer“ in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** sowie **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen.
 
  Während Ihr Test ausgeführt wird, wird die Testergebnisleiste im oberen Bereich des Explorers animiert. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich waren, oder rot, wenn einer der Tests fehlgeschlagen ist. Im Detailbereich unten im Fenster des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen.
 

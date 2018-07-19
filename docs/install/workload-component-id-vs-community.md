@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 027f7d43ec9b9bcd9297cc62a2af522707b8dc9c
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16eb34236ea57cdce8a817e96a8012dfbfa16841
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865726"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283509"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017-Komponentenverzeichnis
 
@@ -1025,7 +1025,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK
 
 ## <a name="get-support"></a>Support aufrufen
 
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
 

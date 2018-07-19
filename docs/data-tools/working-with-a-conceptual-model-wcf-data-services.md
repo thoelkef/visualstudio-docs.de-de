@@ -14,14 +14,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e109092764cbe377daa3928454f4e33e8ff44701
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922350"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116834"
 ---
-# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Arbeiten mit einem konzeptionellen Modell (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten Sie mit einem konzeptionellen Modell (WCF Data Services)
 
 Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell verwenden, können Sie Daten über Objekte abfragen, statt zwischen Datenbankschema und Objektmodell zu übersetzen.
 
@@ -29,8 +29,8 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Ausführen von Datendienstabfragen](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird.|
-|[Vorgehensweise: Projizieren von Abfrageergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird.|
+|[Gewusst wie: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird.|
+|[Gewusst wie: Projizieren von Abfrageergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird.|
 
  Wenn Sie ein konzeptionelles Modell verwenden, können Sie definieren, welche Art von Daten in der Sprache für Ihre Domäne gültig ist. Sie können gültige Daten im Modell definieren, oder Sie können Vorgängen, die für eine Entität oder einen Datendienst ausgeführt werden, Validierung hinzufügen.
 
@@ -38,14 +38,14 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Abfangen von Datendienstnachrichten](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Zeigt, wie einem Datendienstvorgang Validierung hinzugefügt wird.|
+|[Gewusst wie: Abfangen Data Service-Nachrichten](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Zeigt, wie einem Datendienstvorgang Validierung hinzugefügt wird.|
 
  In den folgenden Themen wird veranschaulicht, wie durch das Ausführen von Vorgängen für Entitäten Daten erstellt, aktualisiert und gelöscht werden.
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Hinzufügen, Ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|
-|[Vorgehensweise: Definieren von Entitätsbeziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|
+|[Gewusst wie: hinzufügen, ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|
+|[Gewusst wie: Definieren von entitätsbeziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|
 
 ## <a name="see-also"></a>Siehe auch
 

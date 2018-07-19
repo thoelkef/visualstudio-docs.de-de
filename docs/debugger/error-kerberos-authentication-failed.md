@@ -1,5 +1,5 @@
 ---
-title: ': Fehler Fehler beim Kerberos-Authentifizierung | Microsoft Docs'
+title: 'Fehler: Fehler bei der Kerberosauthentifizierung | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b3ed3349403bef0c85af9775f77cc980fc4e63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474215"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056856"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Fehler: Fehler bei der Kerberos-Authentifizierung
 Beim Versuch, das Remotedebuggen auszuführen, kann die folgende Fehlermeldung ausgegeben werden:  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
 ```  
   
@@ -40,23 +40,23 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 -   Kerberos wurde auf dem Domänencontroller deaktiviert  
   
- Wenn die Kerberos-Authentifizierung nicht verfügbar ist, ändern Sie das zum Ausführen des Visual Studio-Remotedebugmonitors verwendete Konto. Das Verfahren finden Sie unter [Fehler: der Visual Studio-Remotedebugger-Dienst auf dem Zielcomputer kann keine Verbindung hergestellt, wieder auf diesen Computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+ Wenn die Kerberos-Authentifizierung nicht verfügbar ist, ändern Sie das zum Ausführen des Visual Studio-Remotedebugmonitors verwendete Konto. Die Prozedur finden Sie unter [Fehler: die Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann keine Verbindung hergestellt, rückverbindung mit diesem Computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
  Wenn beide Computer mit derselben Domäne verbunden sind und weiterhin diese Meldung ausgegeben wird, stellen Sie sicher, dass der Name des Debuggerhostcomputers vom DNS auf dem Zielcomputer ordnungsgemäß aufgelöst wird. Siehe folgendes Verfahren.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>So überprüfen Sie, ob der Name des Debuggerhostcomputers vom DNS auf dem Zielcomputer ordnungsgemäß aufgelöst wird  
   
-1.  Öffnen Sie auf dem Zielcomputer die **starten** Sie im Menü **Zubehör** , und klicken Sie dann auf **Eingabeaufforderung**.  
+1.  Öffnen Sie auf dem Zielcomputer die **starten** Startmenü **Zubehör** , und klicken Sie dann auf **Eingabeaufforderung**.  
   
 2.  In der **Eingabeaufforderung** geben:  
   
-    ```  
+    ```cmd
     ping <debugger_host_computer_name>  
     ```  
   
 3.  Die erste Zeile der `ping`-Antwort enthält den vollständigen Computernamen und die vollständige IP-Adresse, die vom DNS für den angegebenen Computer zurückgegeben wurden.  
   
-4.  Öffnen Sie auf der Debugger-Hostcomputer einer **Eingabeaufforderung** Fenster und führen Sie `ipconfig`.  
+4.  Öffnen Sie auf den Hostcomputer des Debuggers, eine **Eingabeaufforderung** Fenster, und führen `ipconfig`.  
   
 5.  Vergleichen Sie die IP-Adresswerte.  
   

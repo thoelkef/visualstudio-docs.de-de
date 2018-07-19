@@ -1,7 +1,7 @@
 ---
 title: Optionen und Einstellungen für Python
 description: Eine Referenz zu den verschiedenen Einstellungen in Visual Studio, die sich auf Python-Code und -Projekte beziehen.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23f78c754a9dc0f72e896128d857b70a49e8b09a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 33c519d737f510e3c987d791e420f1bd6c2d39d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032121"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117757"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -41,7 +41,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras > Optionen > Python**.)
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
 | Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
@@ -60,7 +60,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras > Optionen > Python > Debuggen**.)
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Eingabeaufforderung vor der Ausführung, wenn Fehler vorliegen | Ein | Wenn diese Option aktiviert ist, werden Sie aufgefordert zu bestätigen, dass Sie Code ausführen möchten, der Fehler enthält. Deaktivieren Sie diese Option, um das Warnen auszuschalten. |
 | Auf Eingabe warten, wenn der Prozess abnormal beendet wird<br/><br/>Auf Eingabe warten, wenn der Prozess normal beendet wird | Ein (für beide) | Ein aus Visual Studio gestartetes Python-Programm wird in seinem eigenen Konsolenfenster ausgeführt. Standardmäßig wartet das Fenster, bis Sie eine Taste drücken, bevor es schließt, unabhängig davon, wie das Programm beendet wird. Um diese Aufforderung zu deaktivieren und das Fenster automatisch zu schließen, deaktivieren Sie mindestens eine dieser beiden Optionen. |
@@ -74,7 +74,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras > Optionen > Python > Diagnose**.)
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Einbeziehen von Analyseprotokollen | Ein | Enthält ausführliche Protokolle zur Analyse von installierten Python-Umgebungen beim Speichern von Diagnosen in Dateien oder beim Kopieren dieser in die Zwischenablage mithilfe von Schaltflächen. Die Option kann die Größe der generierten Datei deutlich erhöhen, ist aber häufig für das Diagnostizieren von Problemen bei IntelliSense erforderlich. |
 | Diagnose in Datei speichern (Schaltfläche) | n/v | Erfordert einen Dateinamen und speichert das Protokoll anschließend in einer Textdatei |
@@ -86,11 +86,12 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras > Optionen > Python > Interaktive Fenster**.)
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Skripts | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf interaktive Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments-window-tab-reference.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im interaktiven Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im interaktiven Fenster zu verwenden. |
-| Beendigungsmodus | Nur Ausdrücke ohne Funktionsaufrufe auswerten | Für das Bestimmen der verfügbaren Member in einem Ausdruck im interaktiven Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung *Nur Ausdrücke ohne Funktionsaufrufe auswerten* schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  *Ausdrücke nie auswerten* verhindert alle Nebenwirkungen, indem nur das gängige IntelliSense-Modul für Vorschläge verwendet wird. *Alle Ausdrücke auswerten* wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
+| Beendigungsmodus | Nur Ausdrücke ohne Funktionsaufrufe auswerten | Für das Bestimmen der verfügbaren Member in einem Ausdruck im interaktiven Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung *Nur Ausdrücke ohne Funktionsaufrufe auswerten* schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  
+  *Ausdrücke nie auswerten* verhindert alle Nebenwirkungen, indem nur die gängige IntelliSense-Engine für Vorschläge verwendet wird. *Alle Ausdrücke auswerten* wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
 | Vorschläge zur statischen Analyse ausblenden | Aus | Wenn diese Option aktiviert ist, werden nur Vorschläge angezeigt, die durch das Abrufen von Ausdrücken entstanden sind. Wenn diese Option mit der Option *Ausdrücke nie auswerten* im Beendigungsmodus kombiniert wird, werden keine brauchbaren Vervollständigungen im interaktiven Fenster angezeigt. |
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Interaktives Fenster“](media/options-interactive-windows.png)
@@ -101,7 +102,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="completion-results"></a>Vervollständigungsergebnisse
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Membervervollständigung zeigt Schnittmenge der Member an | Aus | Wenn diese Option aktiviert ist, werden nur die Vervollständigungen angezeigt, die von allen möglichen Typen unterstützt werden. |
 | Liste basierend auf Suchzeichenfolge filtern | Ein | Wendet den Filter auf Vervollständigungsvorschläge an, während Sie eine Eingabe machen (Standard ist aktiviert). |
@@ -109,7 +110,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="selection-in-completion-list"></a>Auswahl in Vervollständigungslisten
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Commit bei Eingabe der folgenden Zeichen | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | Bei EINGABE wird die aktuelle Vervollständigung übernommen | Ein | Wenn diese Option aktiviert ist, wählt die EINGABE-TASTE die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für EINGABE, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
@@ -117,7 +118,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="miscellaneous-options"></a>Sonstige Optionen
 
-| Option | Standard | description |
+| Option | Standard | Beschreibung  |
 | --- | --- | --- |
 | Beim Öffnen von Dateien in Gliederungsmodus wechseln | Ein | Aktivieren Sie die Gliederungsfunktion von Visual Studio automatisch im Editor, wenn Sie eine Python-Codedatei öffnen. |
 | Entfernte REPL-Aufforderungen einfügen | Ein | Entfernt „>>>“ und „...“ aus eingefügtem Text, sodass Code leicht aus dem interaktiven Fenster in den Editor übertragen werden kann. Deaktivieren Sie diese Option, wenn Sie diese Zeichen behalten möchten, wenn Sie aus anderen Quellen einfügen. |

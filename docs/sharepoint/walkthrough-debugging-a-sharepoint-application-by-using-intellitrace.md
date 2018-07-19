@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,17 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119205"
 ---
-# <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mit IntelliTrace
 
 Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmliche Debugger erstellen lediglich eine aktuelle Momentaufnahme der Lösung. Sie können mithilfe von IntelliTrace jedoch in der Lösung aufgetretene Ereignisse sowie den Kontext, in dem sie aufgetreten sind, überprüfen und zum Code navigieren.
 
- Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint 2010 oder SharePoint 2013-Projekt in Visual Studio debuggen, indem Sie die Verwendung von Microsoft Monitoring Agent zum Sammeln von IntelliTrace-Daten aus bereitgestellten Anwendungen. Um diese Daten zu analysieren, müssen Sie Visual Studio Enterprise verwenden. Dieses Projekt integriert einen Funktionsempfänger, der bei aktivierter Funktion der Liste „Aufgaben“ eine Aufgabe und der Liste „Ankündigungen“ eine Ankündigung hinzufügt. Wenn die Funktion deaktiviert wird, wird die Aufgabe als abgeschlossen gekennzeichnet, und der Liste "Ankündigungen" wird eine zweite Ankündigung hinzugefügt. Die Prozedur enthält jedoch einen logischen Fehler, der verhindert, dass das Projekt ordnungsgemäß ausgeführt wird. Mit IntelliTrace können Sie den Fehler suchen und korrigieren.
+ Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine SharePoint 2010 oder SharePoint 2013-Projekt in Visual Studio zu debuggen, indem Sie mit Microsoft Monitoring Agent zum Sammeln von IntelliTrace-Daten bereitgestellter Anwendungen. Um diese Daten zu analysieren, müssen Sie Visual Studio Enterprise verwenden. Dieses Projekt integriert einen Funktionsempfänger, der bei aktivierter Funktion der Liste „Aufgaben“ eine Aufgabe und der Liste „Ankündigungen“ eine Ankündigung hinzufügt. Wenn die Funktion deaktiviert wird, wird die Aufgabe als abgeschlossen gekennzeichnet, und der Liste "Ankündigungen" wird eine zweite Ankündigung hinzugefügt. Die Prozedur enthält jedoch einen logischen Fehler, der verhindert, dass das Projekt ordnungsgemäß ausgeführt wird. Mit IntelliTrace können Sie den Fehler suchen und korrigieren.
 
  **Gilt für:** die Informationen in diesem Thema gelten für SharePoint 2010 und SharePoint 2013-Lösungen, die in Visual Studio erstellt wurden.
 
@@ -55,25 +56,25 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver"></a> Einen Funktionsempfänger erstellen
+## <a name="create-a-feature-receiver"></a>Einen Funktionsempfänger erstellen
 
 Erstellen Sie zunächst ein leeres SharePoint-Projekt mit einem Funktionsempfänger.
 
-1. Erstellen Sie ein Projekt für SharePoint 2010 oder SharePoint 2013-Projektmappe, und nennen Sie sie **IntelliTraceTest**.
+1. Erstellen Sie ein Projekt für SharePoint 2010 oder SharePoint 2013-Lösung, und nennen Sie es **IntelliTraceTest**.
 
-     Die **Assistent zum Anpassen von SharePoint** angezeigt wird, in dem Sie die SharePoint-Website für das Projekt und die Vertrauensebene der Projektmappe angeben können.
+     Die **SharePoint Customization Wizard** angezeigt wird, in dem Sie die SharePoint-Website für Ihr Projekt und die Vertrauensebene der Projektmappe angeben können.
 
 2. Wählen Sie die **als farmlösung bereitstellen** Optionsfeld aus, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
      IntelliTrace kann nur für Farmlösungen verwendet werden.
 
-3. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Funktionen** Knoten, und wählen Sie dann **Funktion hinzufügen**.
+3. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Features** Knoten, und wählen Sie dann **Feature hinzufügen**.
 
-     „Feature1.feature“ wird angezeigt.
+     *"Feature1.Feature"* angezeigt wird.
 
-4. Öffnen Sie das Kontextmenü für "Feature1.Feature", und wählen Sie dann **Ereignisempfänger hinzufügen** , um die Funktion ein Codemodul hinzuzufügen.
+4. Öffnen Sie das Kontextmenü für "Feature1.Feature", und wählen Sie dann **Ereignisempfänger hinzufügen** ein Codemodul mit dem Feature hinzufügen.
 
-## <a name="BKMK_AddCode"></a> Fügen Sie dem Funktionsempfänger Code hinzu
+## <a name="add-code-to-the-feature-receiver"></a>Fügen Sie dem Funktionsempfänger Code hinzu
 
 Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `FeatureActivated` und `FeatureDeactivating`. Diese Methoden lösen immer dann aus, wenn eine Funktion in SharePoint aktiviert bzw. deaktiviert wird.
 
@@ -247,7 +248,7 @@ Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `Featu
     }
     ```
 
-## <a name="BKMK_Test1"></a> Testen Sie das Projekt
+## <a name="test-the-project"></a>Testen Sie das Projekt
 
 Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler ausgeführt wird, stellen Sie die SharePoint-Lösung bereit. Führen Sie sie aus, um die ordnungsgemäße Funktion zu testen.
 
@@ -260,79 +261,79 @@ Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler au
 
 2. Zeigen Sie den Inhalt der Listen mit Ankündigungen und Aufgaben an.
 
-     Ankündigungen müssen eine neue Ankündigung mit dem Namen **Activated Feature: IntelliTraceTest_Feature1**, und die Aufgabenliste sollte eine neue Aufgabe mit dem Namen **Deactivate Feature: IntelliTraceTest_ Feature1**. Wenn eines der Elemente fehlt, überprüfen Sie, ob die Funktion aktiviert ist. Aktivieren Sie sie andernfalls.
+     Die Liste der Ankündigungen müssen eine neue Ankündigung mit dem Namen **Activated Feature: IntelliTraceTest_Feature1**, und die Aufgabenliste sollte eine neue Aufgabe mit dem Namen **Deactivate Feature: IntelliTraceTest_ Feature1**. Wenn eines der Elemente fehlt, überprüfen Sie, ob die Funktion aktiviert ist. Aktivieren Sie sie andernfalls.
 
 3. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
-    1. Auf der **Websiteaktionen** in SharePoint im Menü **Standorteinstellungen**.
+    1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
 
-    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefunktionen verwalten** Link.
+    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
 
     3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
 
-    4. Wählen Sie auf der Seite "Warnungen" die **Deaktivieren dieser Funktion** Link.
+    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
      Vom Ereignishandler „FeatureDeactivating()“ wird ein Fehler ausgelöst.
 
-## <a name="BKMK_CollectDiagnosticData"></a> Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent
+## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent
 
-Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgeführt wird installieren, können Sie SharePoint-Lösungen Debuggen, mit Daten, die genauer als die allgemeinen Informationen, die IntelliTrace zurückgibt. Der Agent funktioniert außerhalb von Visual Studio, indem PowerShell-Cmdlets verwendet werden, um Debuginformationen zu sammeln, während die SharePoint-Lösung ausgeführt wird.
+Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgeführt wird installieren, können Sie die SharePoint-Lösungen Debuggen, mit Daten, die präziser als die allgemeine Informationen, die von IntelliTrace zurückgegeben. Der Agent funktioniert außerhalb von Visual Studio, indem PowerShell-Cmdlets verwendet werden, um Debuginformationen zu sammeln, während die SharePoint-Lösung ausgeführt wird.
 
 > [!NOTE]
-> Die Konfigurationsinformationen in diesem Abschnitt beziehen sich auf dieses Beispiel. Weitere Informationen zu anderen Konfigurationsoptionen finden Sie unter [verwenden die eigenständige IntelliTrace Collector](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Die Konfigurationsinformationen in diesem Abschnitt beziehen sich auf dieses Beispiel. Weitere Informationen über andere Konfigurationsoptionen finden Sie unter [mit den eigenständigen IntelliTrace Collector](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
 
-1. Auf dem Computer mit SharePoint, [Microsoft Monitoring Agent installieren und starten Sie zum Überwachen der Projektmappe](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. Auf dem Computer, auf dem SharePoint ausgeführt wird [Microsoft Monitoring Agent installieren und starten Sie zum Überwachen Ihrer Lösung](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
 
 2. Deaktivieren Sie die Funktion:
 
-    1. Auf der **Websiteaktionen** in SharePoint im Menü **Standorteinstellungen**.
+    1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
 
-    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefunktionen verwalten** Link.
+    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
 
     3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
 
-    4. Wählen Sie auf der Seite "Warnungen" die **Deaktivieren dieser Funktion** Link.
+    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
      Ein Fehler tritt auf (in diesem Fall aufgrund des Fehlers im Ereignishandler „FeatureDeactivating()“).
 
-3. Führen Sie im PowerShell-Fenster die [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, die Überwachung beenden und starten die SharePoint-Lösung.
+3. Führen Sie im PowerShell-Fenster, das [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, Überwachung zu beenden und starten Sie die SharePoint-Lösung neu.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution"></a> Debuggen Sie und korrigieren Sie die SharePoint-Lösung
+## <a name="debug-and-fix-the-sharepoint-solution"></a>Debuggen Sie und korrigieren Sie die SharePoint-Lösung
 
 Jetzt können Sie die IntelliTrace-Protokolldatei in Visual Studio anzeigen, um den Fehler in der SharePoint-Lösung zu suchen und zu beheben.
 
 1. Öffnen Sie im Ordner "\IntelliTraceLogs" die ITRACE-Datei-Datei in Visual Studio.
 
-     Die **IntelliTrace-Zusammenfassung** Seite wird angezeigt. Da der Fehler nicht behandelt wurde, eine SharePoint-Korrelations-ID (eine GUID) angezeigt wird, nicht behandelte Ausnahme in der im Bereich der **Analyse** Abschnitt. Wählen Sie die **Aufrufliste** Schaltfläche, wenn Sie möchten die Aufrufliste anzeigen, in dem der Fehler aufgetreten ist.
+     Die **IntelliTrace-Zusammenfassung** Seite wird angezeigt. Da der Fehler nicht behandelt wurde, eine SharePoint-Korrelations-ID (eine GUID) wird angezeigt, im Bereich nicht behandelte Ausnahme die **Analysis** Abschnitt. Wählen Sie die **Aufrufliste** Schaltfläche sollten Sie die Aufrufliste anzuzeigen, in dem der Fehler aufgetreten ist.
 
 2. Wählen Sie die **Debugausnahme** Schaltfläche.
 
-     Wenn Sie dazu aufgefordert werden, laden Sie Symboldateien. In der **IntelliTrace** Fenster, die Ausnahme vom Typ "ausgelöst: Schwerwiegender Fehler!".
+     Wenn Sie dazu aufgefordert werden, laden Sie Symboldateien. In der **IntelliTrace** Fenster die Ausnahme wird hervorgehoben, wenn "ausgelöst: Schwerwiegender Fehler aufgetreten!".
 
      Wählen Sie die Ausnahme im IntelliTrace-Fenster aus, um den Code mit dem Fehler anzuzeigen.
 
-3. Die Fehler beheben, indem Sie die SharePoint-Lösung öffnen und dann entweder auskommentieren oder Entfernen der **auslösen** -Anweisung am Anfang der Prozedur FeatureDeactivating()").
+3. Die Fehler beheben, indem Sie die SharePoint-Projektmappe öffnen, und klicken Sie dann entweder auskommentieren oder Entfernen der **auslösen** -Anweisung am Anfang der Prozedur FeatureDeactivating().
 
 4. Erstellen Sie die Projektmappe in Visual Studio neu, und stellen Sie sie dann erneut für SharePoint bereit.
 
 5. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
-    1. Auf der **Websiteaktionen** in SharePoint im Menü **Standorteinstellungen**.
+    1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
 
-    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefunktionen verwalten** Link.
+    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
 
     3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
 
-    4. Wählen Sie auf der Seite "Warnungen" die **Deaktivieren dieser Funktion** Link.
+    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
-6. Öffnen Sie die Taskliste aus, und überprüfen Sie, ob die **Status** des Tasks "deaktivieren" Wert "abgeschlossen" und die zugehörige **% abgeschlossen** Wert beträgt 100 %.
+6. Öffnen Sie die Aufgabenliste, und überprüfen Sie, ob die **Status** Wert des Tasks "deaktivieren" "abgeschlossen" und die zugehörige **% abgeschlossen** Wert beträgt 100 %.
 
      Der Code wird jetzt ordnungsgemäß ausgeführt.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Überprüfen und Debuggen von SharePoint-Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
+[Überprüfen und Debuggen von SharePoint-code](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Exemplarische Vorgehensweise: Überprüfen Sie, ob es sich bei SharePoint-Code mithilfe von Komponententests](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[Exemplarische Vorgehensweise: Überprüfen Sie, ob es sich bei SharePoint-Code mit Komponententests](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)

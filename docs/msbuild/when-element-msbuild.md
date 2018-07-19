@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a1587a429c92fe1bac5d2cd0bcd63c0f27a68c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577788"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303334"
 ---
 # <a name="when-element-msbuild"></a>When-Element (MSBuild)
 Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.  
@@ -41,7 +41,7 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <When Condition="'StringA'=='StringB'">  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -54,13 +54,13 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |Bedingung|Erforderliches Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Auswählen](../msbuild/choose-element-msbuild.md)|Optionales Element.<br /><br /> Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen. Es kann keine oder mehrere `Choose`-Elemente in einem `When`-Element geben.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Optionales Element.<br /><br /> Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Es kann keine oder mehrere `ItemGroup`-Elemente in einem `When`-Element geben.|  
@@ -68,7 +68,7 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Choose-Element (MSBuild)](../msbuild/choose-element-msbuild.md)|Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen.|  
 

@@ -1,5 +1,5 @@
 ---
-title: Makros für die Berichterstellung | Microsoft Docs
+title: Makros für die Berichterstellung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,24 +24,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476909"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056601"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
-Sie können die **_RPTn**, und **_RPTFn** Makros, die in CRTDBG.H definiert. H, ersetzen Sie die Verwendung von `printf` Anweisungen für das Debuggen. Diese Makros automatisch dem Releasebuild entfernt erstellen, wenn **_DEBUG** nicht definiert ist, daher keine Notwendigkeit zum Einschließen in besteht **#ifdef**s.  
+Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen. Sie müssen nicht in inclose **#ifdef**s, da sie nicht mehr automatisch in Ihrer Version angezeigt erstellen, wenn **_DEBUG** ist nicht definiert.  
   
 |Makro|Beschreibung|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4**, fungiert die Meldungszeichenfolge als Printf-Style-Formatzeichenfolge für die Argumente.|  
-|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Identisch mit **_RPTn**, aber diese Makros auch ausgegeben werden die Namen und die Zeilennummer Dateinummer in der sich das Makro befindet.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4**, fungiert die Meldungszeichenfolge als Printf-Style-Formatierung Zeichenfolge für die Argumente.|  
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**, aber diese Makros auch ausgeben, die Datei Dateiname und Zeilennummer angegeben, wo das Makro befindet.|  
   
  Betrachten Sie das folgende Beispiel:  
   
-```  
+```cpp
 #ifdef _DEBUG  
     if ( someVar > MAX_SOMEVAR )  
         printf( "OVERFLOW! In NameOfThisFunc( ),  
@@ -50,15 +50,15 @@ Sie können die **_RPTn**, und **_RPTFn** Makros, die in CRTDBG.H definiert. H, 
 #endif  
 ```  
   
- Dieser Code gibt die Werte der `someVar` und `otherVar` auf **"stdout"**. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:  
+ Dieser Code gibt die Werte der `someVar` und `otherVar` zu **"stdout"**. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:  
   
-```  
+```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- Wenn Sie für eine bestimmte Anwendung Debugberichte benötigen, die mit den Makros aus der C-Laufzeitbibliothek nicht erstellt werden können, können Sie selbst ein geeignetes Makro schreiben. In einem der Headerdateien ein, z. B. Sie konnte vergleichbaren Code Folgendes verwenden, um ein Makro definieren aufgerufen **ALERT_IF2**:  
+Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. In einem der Headerdateien, z. B. Sie können Code einfügen wie im folgenden ein Makro aufgerufen **ALERT_IF2**:  
   
-```  
+```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
 #define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
 #else                           /* For DEBUG builds   */  
@@ -72,14 +72,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Ein Aufruf von **ALERT_IF2** konnte ausgeführt werden, die Funktionen des die **Printf** Code am Anfang dieses Themas:  
+ Ein Aufruf von **ALERT_IF2** möglich, dass alle Funktionen von der **Printf** Code:  
   
-```  
+```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- Da benutzerdefinierte Makros problemlos geändert werden können, um bedarfsabhängig mehr oder auch weniger Informationen an bestimmte Ziele zu senden, kann sich dieser Ansatz insbesondere bei steigenden Debuganforderungen als nützlich erweisen.  
+ Sie können ganz einfach ein benutzerdefiniertes Makro, um mehr oder weniger Informationen an verschiedenen Ziele melden ändern. Dieser Ansatz ist besonders nützlich, da es sich bei steigenden Debuganforderungen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)

@@ -20,35 +20,35 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fba0258839af6675f07c0962ee4281516dce3295
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88d4da868174396bfed148fc6088e5675e1198b2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921575"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116892"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualisieren von Daten mit einem TableAdapter
 
-Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten zurück an eine Datenbank senden, durch Aufrufen der `Update` Methode von einer [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Die `Update` Methode aktualisiert eine einzelne Datentabelle und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates ausführen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den foreign Key-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der Klasse TableAdapterManager TableAdapterManager aufgerufen.
+Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten in einer Datenbank senden, durch den Aufruf der `Update` Methode eine [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Die `Update` Methode eine einzelnen Datentabelle aktualisiert und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn Sie ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates führen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den Fremdschlüssel-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der TableAdapterManager namens TableAdapterManager-Klasse.
 
 > [!NOTE]
-> Wenn Sie versuchen, eine Datenquelle mit dem Inhalt eines Datasets zu aktualisieren, erhalten Sie Fehler. Um Fehler zu vermeiden, wird empfohlen, dass Sie den Code einfügen, das des Adapters ruft `Update` Methode innerhalb einer `try` / `catch` Block.
+> Wenn Sie versuchen, eine Datenquelle mit dem Inhalt eines Datasets zu aktualisieren, können Sie Fehler abrufen. Um Fehler zu vermeiden, wird empfohlen, dass Sie den Code einfügen, die Aufrufe des Adapters `Update` Methode innerhalb einer `try` / `catch` Block.
 
- Die genaue Verfahrensweise zum Aktualisieren einer Datenquelle kann je nach unternehmensanforderungen variieren, aber enthält die folgenden Schritte aus:
+ Das genaue Verfahren zum Aktualisieren einer Datenquelle kann je nach unternehmensanforderungen variieren, aber es enthält die folgenden Schritte aus:
 
-1.  Rufen Sie des Adapters `Update` Methode in einer `try` / `catch` Block.
+1.  Aufrufen des Adapters `Update` -Methode in einer `try` / `catch` Block.
 
 2.  Lokalisieren der fehlerhaften Datenzeile, falls eine Ausnahme abgefangen wird.
 
-3.  Beheben Sie das Problem in der Datenzeile (programmgesteuert oder durch die Bereitstellung der ungültigen Zeile dem Benutzer zur Änderung angezeigt wird), und wiederholen Sie dann das Update (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3.  Beheben Sie das Problem in der Zeile (programmgesteuert oder durch die Bereitstellung der ungültigen Zeile dem Benutzer zur Änderung angezeigt wird), und wiederholen Sie dann das Update (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Speichern von Daten in einer Datenbank
 
 Rufen Sie die `Update` -Methode eines TableAdapter. Übergeben Sie den Namen der Datentabelle, die die Werte enthält, in die Datenbank geschrieben werden sollen.
 
-### <a name="to-update-a-database-by-using-a-tableadapter"></a>So aktualisieren Sie eine Datenbank mit einem TableAdapter
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>Zum Aktualisieren einer Datenbank mit einem TableAdapter
 
--   Schließen Sie des TableAdapters`Update` Methode in einer `try` / `catch` Block. Das folgende Beispiel zeigt, wie Sie den Inhalt des Aktualisieren der `Customers` in Tabelle `NorthwindDataSet` innerhalb einer `try` / `catch` Block.
+-   Schließen Sie der TableAdapters`Update` -Methode in einer `try` / `catch` Block. Das folgende Beispiel zeigt, wie Sie den Inhalt des Aktualisieren der `Customers` in Tabelle `NorthwindDataSet` innerhalb einer `try` / `catch` Block.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

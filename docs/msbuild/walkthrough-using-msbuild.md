@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575844"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327036"
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:
@@ -129,7 +129,7 @@ MSBuild verfolgt die Ziele eines Builds nach und garantiert, dass jedes Ziel nic
 
 3.  Führen Sie msbuild mit dem Befehlsschalter /t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ MSBuild verfolgt die Ziele eines Builds nach und garantiert, dass jedes Ziel nic
 ## <a name="examining-a-property-value"></a>Untersuchen eines Eigenschaftswerts
  Den Wert einer Eigenschaft rufen Sie mit der folgenden Syntax ab, wobei PropertyName den Namen der Eigenschaft darstellt:
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>Untersuchen von Elementtypwerten
  Werte eines Elementtyps rufen Sie mit der folgenden Syntax ab, wobei ItemType den Name des Elementtyps darstellt:
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie die folgende Syntax, wobei ItemType den Elementtyp und Separator eine Zeichenfolge aus einem oder mehreren Trennzeichen darstellt:
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  Den Metadatenwert eines Elementtyps rufen Sie mit der folgenden Syntax ab, wobei ItemType den Namen des Elementtyps darstellt und MetaDataName den Namen der Metadaten:
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>Transformationen von Metadaten
  Elementlisten können in neue Elementlisten umgewandelt werden. Eine Elementliste transformieren Sie mit der folgenden Syntax, wobei ItemType den Namen des Elementtyps darstellt und MetadataName den Namen der Metadaten:
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

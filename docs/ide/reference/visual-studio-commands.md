@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951790"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924265"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , das Fenster **Direkt** oder das Feld **Suchen/Befehl** aufrufen. In jedem Fall wird das Größer-als-Zeichen (`>`) verwendet, um anzugeben, dass ein Befehl folgt und kein Such- oder Debugvorgang.
@@ -40,7 +40,7 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 
  Die folgenden Befehle verwenden Argumente und/oder Schalter.
 
-|Befehlsname|description|
+|Befehlsname|Beschreibung |
 |------------------|-----------------|
 |[Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md)|Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.|
 |[Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md)|Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.|
@@ -61,7 +61,6 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 |[Neue Datei](../../ide/reference/new-file-command.md)|Erstellt eine neue Datei und fügt sie dem aktuell ausgewählten Projekt hinzu.|
 |[Datei öffnen](../../ide/reference/open-file-command.md)|Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors.|
 |[Projekt öffnen](../../ide/reference/open-project-command.md)|Öffnet ein vorhandenes Projekt und ermöglicht das Hinzufügen des Projekts zur aktuellen Projektmappe.|
-|[Projektmappe öffnen](../../ide/reference/open-solution-command.md)|Öffnet eine vorhandene Projektmappe.|
 |[Print](../../ide/reference/print-command.md)|Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an.|
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an.|
 |[Ersetzen](../../ide/reference/replace-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|

@@ -10,21 +10,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf8a8fc3bb024c1eb8ee7baf91856a54dcb9d21f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcd459208529441022669e799e3c59b16b4ef682
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922611"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174074"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und verwendet keine integrierte Sicherheit.
 
-Möchten Sie die Verbindungszeichenfolge mit vertraulichen Informationen in der aktuellen DBML-Datei und in den Anwendungskonfigurationsdateien speichern?  Klicken Sie auf Nein, um die Verbindungszeichenfolge ohne die vertraulichen Informationen zu speichern.
+Möchten Sie die Verbindungszeichenfolge mit vertraulichen Informationen in der aktuellen DBML-Datei und in den Anwendungskonfigurationsdateien speichern?  Klicken Sie auf **keine** um die Verbindungszeichenfolge ohne die vertraulichen Informationen zu speichern.
 
 Beim Arbeiten mit Datenverbindungen, die vertrauliche Informationen enthalten (in der Verbindungszeichenfolge enthaltene Kennwörter) haben Sie die Option, die Verbindungszeichenfolge mit den vertraulichen Informationen oder ohne diese in der DBML-Datei und der Anwendungskonfigurationsdatei des Projekts zu speichern.
 
 > [!WARNING]
-> Das explizite Festlegen der **Verbindung** Eigenschaften **Anwendungseinstellungen** Eigenschaft **"false"** wird das Kennwort der DBML-Datei hinzugefügt.
+> Explizites Festlegen der **Verbindung** Eigenschaften **Anwendungseinstellungen** Eigenschaft **"false"** das Kennwort der DBML-Datei hinzugefügt wird.
 
 ## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>So speichern Sie die Verbindungszeichenfolge mit den vertraulichen Informationen in den Anwendungseigenschaften des Projekts
 
@@ -34,11 +34,11 @@ Beim Arbeiten mit Datenverbindungen, die vertrauliche Informationen enthalten (i
 
 ## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>So speichern Sie die Verbindungszeichenfolge ohne die vertraulichen Informationen in den Anwendungseigenschaften des Projekts
 
-- Click **No**.
+- Klicken Sie auf **keine**.
 
    Die Verbindungszeichenfolge wird als Anwendungseinstellung gespeichert, jedoch ohne das Kennwort.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6fdb894c7dd2177afc7ced375b575de7d9532
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9f870842427549c81f161b3f18b3ff846f974d3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575194"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326906"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.  
@@ -367,7 +367,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 1.  Fügen Sie in der Projektdatei dem ersten Build-Ziel die folgenden Attribute hinzu:  
   
-    ```  
+    ```xml  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
     ```  
   
@@ -400,7 +400,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  
@@ -440,7 +440,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  

@@ -1,7 +1,7 @@
 ---
 title: VCMessage-Aufgabe| Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8ef67a4fa19bd715e73e50fcc268aee7a4df5d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1b95d6e0e03aa0ed9aeb84a1709c5806c13946c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574522"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058333"
 ---
 # <a name="vcmessage-task"></a>VCMessage-Aufgabe
 Protokolliert Warn- und Fehlermeldungen während eines Builds  
@@ -37,7 +37,7 @@ Protokolliert Warn- und Fehlermeldungen während eines Builds
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **VCMessage**-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |**Argumente**|Optionaler **String**-Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Nachrichten, die angezeigt werden sollen|  
 |**Code**|Erforderlicher **String**-Parameter.<br /><br /> Eine Fehlernummer, die die Nachricht identifiziert|  

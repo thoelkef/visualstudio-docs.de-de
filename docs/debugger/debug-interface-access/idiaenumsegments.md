@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments | Microsoft Docs
+title: IDiaEnumSegments | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa63e85a19a1aec5102d3f59b027e3cddf849a62
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 30e359192ea6d19d6bc6e31de3c91943bda2deee
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468748"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056869"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Listet die verschiedenen Segmente, die in der Datenquelle enthalten sind.  
@@ -35,21 +35,21 @@ IDiaEnumSegments : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version des Enumerators.|  
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) Version von diesem Enumerator.|  
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Ruft die Anzahl der Segmente ab.|  
 |[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Ruft ein Segment mithilfe eines Indexes ab.|  
-|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.|  
-|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einem Enumerationsfolge an.|  
-|[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.|  
+|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.|  
+|[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` Methode auf eine [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekt. Siehe das Beispiel für Details.  
+ Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` Methode für ein [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekt. Siehe das Beispiel für Details.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Abrufen der `IDiaEnumSections` Schnittstelle aus einer Tabelle. Ein vollständigeres Beispiel der Verwendung von Segmenten, finden Sie unter der [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Schnittstelle.  
+ Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumSections` Schnittstelle aus einer Tabelle. Ein vollständigeres Beispiel der Verwendung von Segmenten, finden Sie unter den [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Schnittstelle.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  

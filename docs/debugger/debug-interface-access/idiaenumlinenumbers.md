@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers | Microsoft Docs
+title: IDiaEnumLineNumbers | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0b457a0efef1c860be7174f012575aec64f99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463275"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057320"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Listet die verschiedenen Zeilennummern, in der Datenquelle enthalten sind.  
@@ -35,18 +35,18 @@ IDiaEnumLineNumbers : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version des Enumerators.|  
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Ruft die Anzahl der Zeilennummern ab.|  
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Ruft eine Zeilennummer mithilfe eines Indexes ab.|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Ruft eine angegebene Anzahl von Zeilennummern im die Enumerationsfolge ab.|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Überspringt eine angegebene Anzahl von Zeilennummern im ein Enumerationsfolge an.|  
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) Version von diesem Enumerator.|  
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Ruft die Anzahl der Zeilennummern.|  
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Ruft die Nummer einer Zeile mithilfe eines Indexes ab.|  
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Ruft eine angegebene Anzahl von Zeilennummern, in der Enumerationsfolge ab.|  
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Überspringt eine angegebene Anzahl von Zeilennummern in einer Enumerationsfolge.|  
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird abgerufen, durch den Aufruf einer der folgenden Methoden in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle:  
+ Diese Schnittstelle wird abrufen durch Aufrufen einer der folgenden Methoden in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle:  
   
 -   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
@@ -59,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Abrufen der `IDiaEnumLineNumbers` Schnittstelle aus einer Sitzung. In diesem Fall wird im Beispiel wird gezeigt, wie zum Abrufen der Anzahl Line-Enumeration für eine Funktion (dargestellt durch `pSymbol`). Ein vollständigeres Beispiel der Verwendung von Zeilennummern, finden Sie unter der [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Schnittstelle.  
+ Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumLineNumbers` Schnittstelle aus einer Sitzung. In diesem Fall zeigt das Beispiel zum Abrufen der Anzahl Line-Enumeration für eine Funktion (dargestellt durch `pSymbol`). Ein vollständigeres Beispiel der Verwendung von Zeilennummern, finden Sie unter den [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Schnittstelle.  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  

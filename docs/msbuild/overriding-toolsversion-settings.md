@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d4254e8f45da6a476207740cfa28e1db2253e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571554"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327088"
 ---
 # <a name="overriding-toolsversion-settings"></a>Überschreiben von ToolsVersion-Einstellungen
 Sie können das Toolset für Projekte und Projektmappen auf drei verschiedene Arten ändern:  
@@ -32,7 +32,7 @@ Sie können das Toolset für Projekte und Projektmappen auf drei verschiedene Ar
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Überschreiben der ToolsVersion-Einstellungen von Projekten und Projektmappen in Befehlszeilenbuilds  
  Obwohl Visual Studio-Projekte normalerweise mit der in der Projektdatei angegebenen ToolsVersion erstellt werden, können Sie den Schalter `/ToolsVersion` (oder `/tv`) in der Befehlszeile verwenden, um diesen Wert zu überschreiben und so alle Projekte und deren projektübergreifende Abhängigkeiten mit einem anderen Toolset zu erstellen. Zum Beispiel:  
   
-```  
+```cmd  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
@@ -77,7 +77,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 3.  Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:  
   
-    ```  
+    ```cmd  
     msbuild projectA.proj /t:go /toolsversion:3.5  
     ```  
   

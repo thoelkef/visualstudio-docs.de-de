@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktivieren Sie Pluralisierung ein, und deaktivieren (O-R-Designer)'
+title: 'Gewusst wie: Aktivieren/Deaktivieren der Pluralisierung (O / R Designer)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -10,15 +10,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8c477ac276ce0ff9c292dc42ba2f5f7d1e53dd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921682"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089382"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Vorgehensweise: Aktivieren Sie Pluralisierung ein, und deaktivieren (O/R-Designer)
-Standardmäßig, wenn Sie Datenbankobjekte ziehen, deren Namen Endziffern s oder Datenreihen aus **Server-Explorer**/**Datenbank-Explorer** auf die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), die Namen der generierten Entitätsklassen von plural in Singular geändert werden. Damit soll verdeutlicht werden, dass die instanziierte Entitätsklasse einem einzigen Datensatz zugeordnet ist. Wird dem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] beispielsweise die Tabelle Customers hinzugefügt, erhält die Entitätsklasse den Namen Customer, da die Klasse die Daten eines einzigen Kunden enthält.
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Gewusst wie: Aktivieren/Deaktivieren der Pluralisierung (O/R Designer)
+In der Standardeinstellung beim Ziehen Datenbankobjekte, deren Namen auf s oder ies enden, aus **Server-Explorer** oder **Datenbank-Explorer** auf die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), Namen der generierten Entitätsklassen werden von der plural-in einzelne geändert. Damit soll verdeutlicht werden, dass die instanziierte Entitätsklasse einem einzigen Datensatz zugeordnet ist. Beispielsweise durch Hinzufügen einer `Customers` Tabelle, auf die **O/R Designer** führt zu einer Entitätsklasse, die mit dem Namen `Customer` , da die Klasse die Daten für nur einen einzelnen Kunden enthält.
 
 > [!NOTE]
 >  Pluralisierung ist standardmäßig nur in der englischsprachigen Version von Visual Studio aktiviert.
@@ -36,9 +36,9 @@ Standardmäßig, wenn Sie Datenbankobjekte ziehen, deren Namen Endziffern s oder
 
 3.  Klicken Sie auf **O/R-Designer**.
 
-4.  Festlegen **Pluralisierung von Namen** auf **aktiviert** = **"false"** Festlegen der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] , damit es Klassennamen nicht geändert wird.
+4.  Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"false"** Festlegen der **O/R Designer** , damit es Klassennamen nicht geändert wird .
 
-5.  Legen Sie **Pluralisierung von Namen** auf **aktiviert** = **"true"** anzuwendende Pluralisierungsregeln auf die Klassennamen von Objekten hinzugefügt der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+5.  Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"true"** anzuwendende Pluralisierungsregeln auf die Klassennamen von Objekten, die hinzugefügt, die **O/R Designer**.
 
 ## <a name="see-also"></a>Siehe auch
 
