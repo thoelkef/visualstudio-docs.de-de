@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747429"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757252"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 
@@ -50,7 +50,7 @@ Zum Erstellen müssen Sie die folgenden Schritte ausführen:
 >  -   Xamarin-Apps mit systemeigener Benutzeroberfläche:
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (einfache App mit einem Bildschirm)
 >     -   [Hello, Android multiscreen](/xamarin/android/get-started/hello-android-multiscreen/) (App mit Navigation zwischen Bildschirmen)
->     -   [Android Fragments Walkthrough](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)
+>     -   [Android Fragments Walkthrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS Multiscreen](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 

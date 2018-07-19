@@ -1,5 +1,5 @@
 ---
-title: Beispiele für die Entwicklung von SharePoint | Microsoft Docs
+title: Beispiele für die SharePoint-Entwicklung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57ae572d6377ceef221c5040086e3418eb87b991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f1e41056fd0cbadb863a918182bc76ad2c91c29
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118875"
 ---
 # <a name="sharepoint-development-samples"></a>Beispiele für die SharePoint-Entwicklung
-  Sie können Visual Studio verwenden, herunterladen und Installieren der Beispiele für SharePoint-Anwendungen aus dem [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  
+  Sie können Visual Studio verwenden, herunterladen und Installieren der Beispiele für SharePoint-Anwendungen von der [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  
   
- Sie können jedes Beispiel einzeln oder aber ein Beispielpaket herunterladen, das Beispiele enthält, die eine Technologie oder ein Thema gemeinsam haben. Sie erhalten eine Benachrichtigung, wenn Quellcodeänderungen für ein Beispiel veröffentlicht werden, das Sie herunterladen.  
+ Sie können jedes Beispiel einzeln herunterladen. Sie können auch ein Beispielpaket herunterladen, die Beispiele, die gemeinsam eine Technologie oder einen Artikel über verknüpfte hat. Sie erhalten eine Benachrichtigung, wenn Quellcodeänderungen für ein Beispiel veröffentlicht werden, das Sie herunterladen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)   
  [Visual Studio-Beispiele](http://go.microsoft.com/fwlink/?LinkId=150928)   
  [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
-  
   

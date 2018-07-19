@@ -1,5 +1,5 @@
 ---
-title: Workflow-Designer - Ablaufsteuerungsaktivitätsdesigner
+title: Workflow-Designer - Ablaufsteuerungs-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967399"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758393"
 ---
 # <a name="control-flow-activity-designers"></a>Ablaufsteuerungsaktivitätsdesigner
 
-Windows Workflow-Designer umfasst eine Reihe von vom System bereitgestellte Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
+Workflow-Designer enthält eine Reihe von vom System bereitgestellten Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
 
 ## <a name="reference"></a>Referenz
 
@@ -47,7 +47,7 @@ Windows Workflow-Designer umfasst eine Reihe von vom System bereitgestellte Akti
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-Andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
+Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
 
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
 

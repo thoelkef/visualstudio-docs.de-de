@@ -12,32 +12,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b7eb7586eeb746bdeb3d28dfcc5fb14fe7bd6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976604"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117061"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope-Aktivitätsdesigner
 
-Die **CorrelationScope** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.CorrelationScope> Aktivität, die implizite Verwaltung untergeordneter messagingaktivitäten mithilfe einer <xref:System.ServiceModel.Activities.CorrelationHandle> Objekt.
+Die **CorrelationScope** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.CorrelationScope> Aktivität, die implizite Verwaltung untergeordneter messagingaktivitäten mithilfe bietet eine <xref:System.ServiceModel.Activities.CorrelationHandle> Objekt.
 
 ## <a name="the-correlationscope-activity"></a>Die CorrelationScope-Aktivität
 
 Die <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>-Eigenschaft gibt das <xref:System.ServiceModel.Activities.CorrelationHandle>-Handle an, das zum Verwalten der untergeordneten Messagingaktivitäten verwendet wird. Die <xref:System.ServiceModel.Activities.Send>-Aktivität und die <xref:System.ServiceModel.Activities.Receive>-Aktivität, die im <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>-Objekt enthalten sind, werden so konfiguriert, dass sie die <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>-Eigenschaft der übergeordneten <xref:System.ServiceModel.Activities.CorrelationScope>-Aktivität verwenden, um die Korrelation auszuführen.
 
-### <a name="using-the-correlationscope-activity-designer"></a>Verwenden des CorrelationScope-Aktivitätsdesigners
- Die **CorrelationScope** Aktivitäts-Designer finden Sie in der **Messaging** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte auf der linken Seite im Workflow-Designer (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)
+### <a name="use-the-correlationscope-activity-designer"></a>Verwenden des CorrelationScope-Aktivitätsdesigners
 
- Die **CorrelationScope** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht. Dies erstellt eine <xref:System.ServiceModel.Activities.CorrelationScope> -Aktivität mit dem standardmäßigen **DisplayName** des CorrelationScope. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **CorrelationScope** Aktivitäts-Designer oder in der **DisplayName** im Feld der **Eigenschaften** Fenster.
+Die **CorrelationScope** Aktivitäts-Designer finden Sie in der **Messaging** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte auf der linken Seite des Workflow-Designers. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
 
- Angeben der <xref:System.ServiceModel.Activities.CorrelationHandle> von untergeordneten messagingaktivitäten verwendet, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **CorrelatesWith** Feld **Eigenschaften** Fenster zum Anzeigen der **Ausdrucks-Editor**  (Dialogfeld). Diese Eigenschaft kann auch in der Aktivitätsdesigneroberfläche festgelegt werden.
+Die **CorrelationScope** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht. Dies erstellt eine <xref:System.ServiceModel.Activities.CorrelationScope> -Aktivität mit dem standardmäßigen **"DisplayName"** -Standardwert CorrelationScope. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **CorrelationScope** Aktivitäts-Designer oder in der **"DisplayName"** im Feld der **Eigenschaften** Fenster.
 
- Die Aktivitäten, die innerhalb der Korrelation werden angegeben, indem ihre Designer innerhalb der **Text** Feld innerhalb der **CorrelationScope** Designer.
+Angeben der <xref:System.ServiceModel.Activities.CorrelationHandle> von untergeordneten messagingaktivitäten verwendet wird, wählen Sie die Schaltfläche mit den Auslassungspunkten neben der **CorrelatesWith** Feld **Eigenschaften** Fenster zum Anzeigen der **Ausdruck Editor** Dialogfeld. Diese Eigenschaft kann auch in der Aktivitätsdesigneroberfläche festgelegt werden.
+
+Die Aktivitäten innerhalb der Korrelation werden angegeben, indem ihre Designer innerhalb der **Text** Feld innerhalb der **CorrelationScope** Designer.
 
 ### <a name="the-correlationscope-properties"></a>Die CorrelationScope-Eigenschaften
- In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.CorrelationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können werden bearbeitet, entweder in **Eigenschaften** Fenster oder auf die Designeroberfläche Workflow-Designer, und oft in beiden.
+
+In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.CorrelationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können werden entweder in bearbeitet **Eigenschaften** Fenster oder auf der Oberfläche des Workflow-Designer, und oft in beiden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|

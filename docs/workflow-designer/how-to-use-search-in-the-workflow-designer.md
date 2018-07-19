@@ -10,20 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751662"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757967"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Vorgehensweise: Verwenden der Suche im Workflow-Designer
 
-Um das Erstellen größerer, komplexerer Workflows zu erleichtern, können Elemente im Workflow-Designer nach Schlüsselwort gesucht werden. Beachten Sie, dass Ersetzen vom Designer nicht unterstützt wird. Die Suche findet folgende Elemente im Designer:
+Um zu ermöglichen, größerer, komplexerer Workflows zu erstellen, können Sie im Workflow-Designer zum Suchen von Elementen nach Schlüsselwort suchen. Beachten Sie, dass Ersetzen vom Designer nicht unterstützt wird.
 
 ## <a name="quick-find"></a>Schnellsuche
 
-Schnellsuche findet folgende im Designer:
+Schnellsuche findet der Designer die folgenden:
 
 -   Eigenschaften von <xref:System.Activities.Activity>-Objekten, <xref:System.Activities.Statements.FlowNode>-Objekten, <xref:System.Activities.Statements.State>-Objekten, Übergängen und anderen benutzerdefinierten Flusssteuerungselementen.
 
@@ -33,24 +33,24 @@ Schnellsuche findet folgende im Designer:
 
 -   Ausdrücke
 
-### <a name="using-quick-find"></a>Verwenden der Schnellsuche
+### <a name="use-quick-find"></a>Verwenden der Schnellsuche
 
-1.  Mit dem Workflowdesigner öffnen, drücken Sie die **STRG + F**, oder wählen Sie **bearbeiten**, **suchen und Ersetzen**, **Schnellsuche**.
+1.  Mit dem Workflow-Designer öffnen, drücken Sie die **STRG + F**, oder wählen Sie **bearbeiten** > **suchen und Ersetzen** > **Schnellsuche**.
 
 2.  Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **Weitersuchen**.
 
-3.  Der Suchbegriff wird im aktuellen Workflow gesucht. Im folgenden Screenshot wird der Anzeigenamen einer gesuchten Aktivität im Designer angezeigt.
+3.  Der Suchbegriff befindet sich im aktuellen Workflow. Die folgende Abbildung zeigt ein aktivitätsanzeigename im Designer gefunden werden:
 
-     ![Suchergebnisse im Workflow Designer](../workflow-designer/media/designersearch.png)
+   ![Suchergebnisse im Workflow Designer](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Suchen in Dateien
 
-Verwenden Sie "In Dateien suchen", um Zeichenfolgen in Workflowdateien, einschließlich XAML-Dateien, zu suchen.
+Suche in Dateien sucht Zeichenfolgen in Workflowdateien, einschließlich XAML-Dateien.
 
-### <a name="using-find-in-files"></a>Verwenden von In Dateien suchen
+### <a name="use-find-in-files"></a>Verwenden Sie in Dateien suchen
 
-1.  Drücken Sie in Visual Studio **STRG + UMSCHALT + F**, oder wählen Sie **bearbeiten**, **suchen und Ersetzen**, **in Dateien suchen**
+1.  Drücken Sie in Visual Studio **STRG**+**UMSCHALT**+**F**, oder wählen Sie **bearbeiten**  >   **Suchen und Ersetzen** > **in Dateien suchen**.
 
-2.  Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **alle suchen**
+2.  Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **alle suchen**.
 
-3.  Das Suchergebnis wird in Visual Studio angezeigt**Suchergebnisse** anzeigen. Durch Doppelklicken auf ein Ergebniselement navigieren Sie im Workflow-Designer zu der Aktivität, in der die Übereinstimmung enthalten ist.
+3.  Das Suchergebnis wird angezeigt, der **Suchergebnisse** anzeigen. Durch Doppelklicken auf ein Ergebniselement navigieren, auf die Aktivität, die die Übereinstimmung im Workflow-Designer enthält.

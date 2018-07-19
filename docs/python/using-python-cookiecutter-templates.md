@@ -1,7 +1,7 @@
 ---
 title: CookieCutter-Erweiterung für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2f3851d479a976d4e43317f94aa7a5328deb4fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584658"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058463"
 ---
 # <a name="using-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -36,7 +36,7 @@ Beim Arbeiten mit Cookiecutter durchsuchen Sie Vorlagen, wählen eine Vorlage au
 
 Die Startseite von Cookiecutter zeigt eine Liste der auswählbaren Vorlagen an, unterteilt in die folgenden Gruppen:
 
-| Gruppieren | description |
+| Gruppieren | Beschreibung  |
 | --- | --- |
 | Installiert | Vorlagen, die auf Ihrem lokalen Computer installiert wurden. Bei Verwendung einer Onlinevorlage wird das zugehörige Repository automatisch in einen Unterordner von`~/.cookiecutters` geklont. Sie können eine ausgewählte installierte Vorlage löschen, indem Sie die Taste **ENTF** drücken. |
 | Empfohlen | Aus dem empfohlenen Feed geladene Vorlagen. Der Standardfeed wird von Microsoft kuratiert. Informationen zum Anpassen des Feeds finden Sie weiter unten im Abschnitt [Cookiecutter-Optionen](#cookiecutter-options). |
@@ -80,7 +80,7 @@ Cookiecutter-Optionen stehen über **Tools > Optionen > Cookiecutter** zur Verf�
 
 ![Cookiecutter-Optionen](media/cookiecutter-tools-options.png)
 
-| Option | description |
+| Option | Beschreibung  |
 | --- | --- |
 | URL des empfohlenen Feeds | Der Speicherort des empfohlenen Vorlagenfeeds. Hierbei kann es sich um eine URL oder den Pfad zu einer lokalen Datei handeln. Lassen Sie die URL leer, um den standardmäßigen, von Microsoft kuratierten Feed zu verwenden. Der Feed bietet eine einfache, durch Zeilenumbrüche getrennte Liste mit Vorlagenspeicherorten. Um Änderungen am kuratierten Feed anzufordern, führen Sie eine Pullanforderung in der [Quelle in GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) aus. |
 | Hilfe anzeigen | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
@@ -96,10 +96,10 @@ Die standardmäßige Umsetzung von Vorlagenvariablen hängt vom Datentyp ab (Zei
 
 Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihrer `cookiecutter.json`-Datei angeben, die speziell für Visual Studio eingerichtet wurde (und von der Cookiecutter-Befehlszeilenschnittstelle ignoriert wird). Alle Eigenschaften sind optional:
 
-| Eigenschaft | description |
+| Eigenschaft | Beschreibung  |
 | --- | --- |
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
-| description | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
+| Beschreibung  | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
 | URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
 | Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer „...“-Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 

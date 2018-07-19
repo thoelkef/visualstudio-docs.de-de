@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft Docs'
+title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,36 +17,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8779ba4ee4cf9803982d9849b3af7c83930d8a5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119248"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen
-  Sie können den Bereitstellungsprozess anpassen, indem Sie Befehle vor der Bereitstellung und nach der Bereitstellung festlegen. Diese Befehle führen Sie vor und nach anderen Bereitstellungsaktionen beim Debuggen von SharePoint-Lösungen in Visual Studio.  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Gewusst wie: Set SharePoint-Bereitstellungsbefehlen
+  Sie können während des Bereitstellungsvorgangs anpassen, indem Sie Befehle für vor und nach der Bereitstellung festlegen. Diese Befehle führen vor und nach anderen Bereitstellungsaktionen, beim Debuggen von SharePoint-Lösungen in Visual Studio.  
   
-### <a name="to-add-a-pre-deployment-command"></a>So fügen Sie einen Befehl vor der Bereitstellung hinzu  
+### <a name="to-add-a-pre-deployment-command"></a>Befehl vor der Bereitstellung hinzufügen  
   
-1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**.  
-  
-2.  Wählen Sie die **SharePoint** Registerkarte.  
-  
-3.  In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS- oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
-  
-     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalt vor dem Abschluss der Bereitstellung **Dir**.  
-  
-### <a name="to-add-a-post-deployment-command"></a>So fügen Sie einen Befehl nach der Bereitstellung hinzu  
-  
-1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**.  
+1.  Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.  
   
 2.  Wählen Sie die **SharePoint** Registerkarte.  
   
-3.  In der **nach der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS- oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
+3.  In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
   
-     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalt nach Abschluss der Bereitstellung **Dir**. Um einer MSBuild-Variablen verwenden, um die Assembly aus dem Verzeichnis "Build" zu kopieren, geben Sie **kopieren $(TargetPath) c:\DeploymentDirectory**.  
+     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, bevor die Bereitstellung abgeschlossen ist, **Dir**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+### <a name="to-add-a-post-deployment-command"></a>Hinzufügen eines Befehls nach der Bereitstellung  
   
+1.  Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.  
+  
+2.  Wählen Sie die **SharePoint** Registerkarte.  
+  
+3.  In der **Befehlszeile nach der Bereitstellung** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
+  
+     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, nachdem die Bereitstellung abgeschlossen ist, **Dir**. Um eine MSBuild-Variable verwenden, um die Assembly aus dem Buildverzeichnis zu kopieren, geben Sie **kopieren $(TargetPath) c:\DeploymentDirectory**.  
+  
+## <a name="see-also"></a>Siehe auch
+ [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

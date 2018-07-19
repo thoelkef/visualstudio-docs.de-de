@@ -1,5 +1,5 @@
 ---
-title: Verwenden des DebuggerDisplay-Attributs | Microsoft Docs
+title: Verwenden des DebuggerDisplay-Attributs | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573244"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057582"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
-Die [DebuggerDisplayAttribute-Klasse](/dotnet/api/system.diagnostics.debuggerdisplayattribute) steuert, wie ein Objekt, eine Eigenschaft oder ein Feld in den Debuggervariablenfenstern angezeigt wird. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
+Die [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) steuert, wie ein Objekt, eine Eigenschaft oder ein Feld in den Variablenfenstern des Debuggers angezeigt wird. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
   
  Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.  
   
@@ -35,7 +35,7 @@ Die [DebuggerDisplayAttribute-Klasse](/dotnet/api/system.diagnostics.debuggerdis
   
  In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.  
   
-|Attribut|Ausgabe, die in der Wertspalte angezeigt werden|  
+|Attribut|Ausgabe in der Wertspalte angezeigt werden|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Angewendet auf einen Typ mit den Feldern `x` und `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Die Parametersyntax kann je nach Sprache unterschiedlich sein. Achten Sie deshalb besonders auf die Syntax.|`String value is [5, 6, 6]`|  
@@ -51,7 +51,7 @@ Die [DebuggerDisplayAttribute-Klasse](/dotnet/api/system.diagnostics.debuggerdis
   
  Um „autoexp.cs“ zu erstellen, öffnen Sie die Developer-Eingabeaufforderung für VS2015, und führen Sie die folgenden Befehle aus.  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -61,7 +61,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Verwenden von Ausdrücken in DebuggerDisplay  
  Obwohl ein allgemeiner Ausdruck zwischen den geschweiften Klammern in einem DebuggerDisplay-Attribut verwendet werden kann, wird diese Vorgehensweise nicht empfohlen.  
   
- Ein allgemeiner Ausdruck in DebuggerDisplay hat nur für die aktuelle Instanz des Zieltyps impliziten Zugriff auf den `this` -Zeiger. Der Ausdruck hat keinen Zugriff auf Aliase, lokale Variablen oder Zeiger. Wenn der Ausdruck auf Eigenschaften verweist, werden deren Attribute nicht verarbeitet. Z. B. den C#-Code `[DebuggerDisplay("Object {count - 2}")]` anzeigen würde `Object 6` Wenn das Feld `count` 8 wäre.  
+ Ein allgemeiner Ausdruck in DebuggerDisplay hat nur für die aktuelle Instanz des Zieltyps impliziten Zugriff auf den `this` -Zeiger. Der Ausdruck hat keinen Zugriff auf Aliase, lokale Variablen oder Zeiger. Wenn der Ausdruck auf Eigenschaften verweist, werden deren Attribute nicht verarbeitet. Z. B. der C#-Code `[DebuggerDisplay("Object {count - 2}")]` visualisierungselements `Object 6` Wenn das Feld `count` 8 wäre.  
   
  Die Verwendung von Ausdrücken in DebuggerDisplay kann zu folgenden Problemen führen:  
   
@@ -88,7 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
-Die ", Nq" Suffix weist die ausdrucksauswertung die Anführungszeichen entfernen, wenn den endgültigen Wert anzeigen (Nq = ohne Anführungszeichen). 
+Die ", Nq" Suffix weist die ausdrucksauswertung die Anführungszeichen entfernen, bei der Anzeige des Endwert (Nq = ohne Anführungszeichen). 
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, wie `DebuggerDisplay`zusammen mit `DebuggerBrowseable` und `DebuggerTypeProxy`verwendet wird. Bei der Anzeige in einem Variablenfenster des Debuggers (z. B. im Fenster **Überwachen** ) wird dadurch eine Erweiterung erzeugt, die folgendermaßen aussieht:  

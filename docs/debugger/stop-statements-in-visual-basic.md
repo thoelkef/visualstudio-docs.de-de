@@ -1,5 +1,5 @@
 ---
-title: Stop-Anweisungen in Visual Basic | Microsoft Docs
+title: Stop-Anweisungen in Visual Basic | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474894"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056142"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Stop-Anweisungen in Visual Basic
 Die Stop-Anweisung in Visual Basic bietet eine Alternative zum Festlegen eines Haltepunktes. Wenn der Debugger auf eine Stop-Anweisung trifft, wird die Programmausführung unterbrochen (der Unterbrechungsmodus wird aktiviert). C#-Programmierer erzielen den gleichen Effekt mit einem Aufruf von System.Diagnostics.Debugger.Break.  
@@ -39,7 +39,7 @@ Die Stop-Anweisung in Visual Basic bietet eine Alternative zum Festlegen eines 
   
  Damit Sie Stop-Anweisungen nicht explizit entfernen müssen, können Sie die bedingte Kompilierung nutzen:  
   
-```  
+```cpp
 #If DEBUG Then  
    Stop  
 #Else  
@@ -49,13 +49,13 @@ Die Stop-Anweisung in Visual Basic bietet eine Alternative zum Festlegen eines 
   
  Eine Alternative besteht darin, eine Assert-Anweisung anstelle der Stop-Anweisung zu verwenden. Durch eine Debug.Assert-Anweisung wird die Ausführung nur unterbrochen, wenn eine bestimmte Bedingung nicht erfüllt wird. Außerdem wird sie beim Erstellen einer Releaseversion automatisch entfernt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md). Wenn Sie eine Assert-Anweisung benötigen, durch die die Ausführung in der Debugversion immer unterbrochen wird, verfahren Sie wie folgt:  
   
-```  
+```csharp
 Debug.Assert(false)  
 ```  
   
  Eine weitere Alternative ist die Verwendung der Debug.Fail-Methode:  
   
-```  
+```csharp
 Debug.Fail("a clever output string goes here")  
 ```  
   

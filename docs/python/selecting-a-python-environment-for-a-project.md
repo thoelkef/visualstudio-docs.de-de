@@ -1,7 +1,7 @@
 ---
 title: Auswählen eines Python-Interpreters und einer Umgebung für ein Projekt
 description: Informationen zum Zuweisen einer Python-Umgebung zur Verwendung in einem Visual Studio-Projekt sowie Anweisungen zum Erstellen virtueller Umgebungen
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976688"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117107"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Zuweisen einer Python-Umgebung für ein Projekt
 
@@ -38,7 +38,7 @@ Klicken Sie mit der rechten Maustaste auf den Namen der Umgebung, und wählen Si
 
 Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche Befehle bereit:
 
-| Befehl | description |
+| Befehl | Beschreibung  |
 | --- | --- |
 | Virtuelle Umgebung hinzufügen... | Startet den Prozess zum Erstellen einer neuen virtuellen Umgebung im Projekt Weitere Informationen finden Sie unter [Create a virtual environment (Erstellen einer virtuellen Umgebung)](#create-a-virtual-environment). |
 | Vorhandene virtuelle Umgebung hinzufügen... | Fordert Sie dazu auf, einen Ordner auszuwählen, der eine virtuelle Umgebung enthält, und fügt diese der Liste unter **Python-Umgebungen** hinzu, ohne diese zu aktivieren Weitere Informationen finden Sie unter [ActivateAdd an existing virtual environment (Aktivieren einer vorhandenen virtuellen Umgebung)](#activate-an-existing-virtual-environment). |

@@ -1,7 +1,7 @@
 ---
 title: Verwenden einer requirements.txt-Datei zum Verwalten von Paketanforderungen
 description: Sie können eine requirements.txt-Datei verwenden, um die Abhängigkeiten eines Projekts zu verwalten. Wenn Sie ein Projekt erhalten, das eine requirements.txt-Datei enthält, können Sie diese Abhängigkeiten ganz einfach in nur einem Schritt installieren.
-ms.date: 02/20/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 447eda835a9ea3114f06a6f1a854475191934fad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a97a274053f95aac3cc676c17e50e23906fea377
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583930"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117000"
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>Verwalten von erforderlichen Paketen mit „requirements.txt“
 

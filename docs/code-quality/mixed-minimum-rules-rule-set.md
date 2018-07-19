@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160990ad1e7ffd3dd31e445e167db0e14d08ca99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927268"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945987"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
-Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
+Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen zu unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -85,13 +85,13 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|_Success\_ oder _On_failure\_ wurde in einem illegalen Kontext verwendet|
+|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_auf\_Fehler\_ in einem illegalen Kontext verwendet|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die _Use_decl_annotations\_-Anmerkung muss ohne Änderung zum Verweisen auf eine vorherige Deklaration verwendet werden.|
+|[C28213](../code-quality/c28213.md)|Die \_verwenden\_Decl\_Anmerkungen\_ -Anmerkung muss ohne Änderung eine vorherige Deklaration verweisen verwendet werden.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
@@ -133,26 +133,26 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter für _Macro_value\_ ist NULL|
+|[C28275](../code-quality/c28275.md)|Der Parameter für \_Makro\_Wert\_ ist null.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
 |[C28285](../code-quality/c28285.md)|Syntaxfehler im Parameter für Funktion|
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
-|[C28287](../code-quality/c28287.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (unbekannter Parametername)|
-|[C28288](../code-quality/c28288.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (ungültiger Parametername)|
+|[C28287](../code-quality/c28287.md)|Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Unbekannter Parametername)|
+|[C28288](../code-quality/c28288.md)|Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Ungültiger Parametername)|
 |[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
 |[C28301](../code-quality/c28301.md)|Keine Anmerkungen für die erste Deklaration der Funktion.|
-|[C28302](../code-quality/c28302.md)|Ein zusätzlicher _Deref\_-Operator wurde in der Anmerkung gefunden.|
-|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger _Deref\_-Operator wurde in der Anmerkung gefunden.|
-|[C28304](../code-quality/c28304.md)|Ein falsch platzierter _Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.|
+|[C28302](../code-quality/c28302.md)|Ein zusätzliches \_Deref\_ -Operator wurde in der Anmerkung gefunden.|
+|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger \_Deref\_ -Operator wurde in der Anmerkung gefunden.|
+|[C28304](../code-quality/c28304.md)|Ein falsch platzierter \_Notref\_ -Operator wurde gefunden, auf das Token angewendet.|
 |[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|
 |[C28350](../code-quality/c28350.md)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|
 |[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen müssen gelöscht werden können.|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen sollten verworfen werden.|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen des Gleichheitsoperators beim Überschreiben von ValueType.Equals|

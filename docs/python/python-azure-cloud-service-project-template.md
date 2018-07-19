@@ -1,7 +1,7 @@
 ---
 title: Projektvorlage für Azure-Clouddienste für Python
 description: Übersicht der in Python geschriebenen Visual Studio-Vorlage für Azure-Clouddienste einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031812"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058658"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
@@ -29,7 +29,7 @@ Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstüt
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Installieren Sie das [Azure .NET SDK für Visual Studio](https://www.visualstudio.com/vs/azure-tools/), das für die Clouddienstvorlage erforderlich ist.
+1. Installieren Sie das [Azure .NET SDK für Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), das für die Clouddienstvorlage erforderlich ist.
 1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus, suchen Sie nach „Azure Python“, und wählen Sie **Azure-Clouddienst** aus der Liste aus:
 
     ![Azure-Cloudprojektvorlage für Python](media/template-azure-cloud-project.png)

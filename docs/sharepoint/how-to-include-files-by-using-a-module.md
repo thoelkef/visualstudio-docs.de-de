@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Einschließen von Dateien mithilfe eines Moduls | Microsoft Docs'
+title: 'Vorgehensweise: Einschließen von Dateien mithilfe eines Moduls | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,46 +18,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: daea134298e84e7ddddf419da2124924fe9ef121
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118863"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Gewusst wie: Einschließen von Dateien mithilfe eines Moduls
-  *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, mit denen Sie z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen können.  
+  *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, die Ihnen ermöglichen, z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen.  
   
- Sie können zum Bereitstellen einer Datei in einer Dokumentbibliothek oder als eine normale Datei (z. B. "default.aspx") außerhalb einer Dokumentbibliothek auswählen. Geben Sie zum Hinzufügen einer Datei in eine Dokumentbibliothek `Type="GhostableInLibrary"` als ein Attribut in der **Datei** Element. Diese Einstellung wird angewiesen, SharePoint, erstellen Sie ein Listenelement aus, um mit Ihrer Datei zu wechseln, wenn sie in der Bibliothek hinzugefügt wird. Um eine Datei außerhalb einer Dokumentbibliothek bereitstellen möchten, geben Sie entweder `Type="Ghostable"` , oder lassen Sie nur die **Typ** Attribut.  
+ Sie können auch eine Datei in einer Dokumentbibliothek oder als normale Datei (z. B. "default.aspx") bereitstellen außerhalb einer Dokumentbibliothek. Geben Sie zum Hinzufügen einer Datei in eine Dokumentbibliothek `Type="GhostableInLibrary"` als Attribut in der **Datei** Element. Diese Einstellung weist SharePoint erstellen Sie ein Listenelement, um mit der Datei zu wechseln, wenn es in der Bibliothek hinzugefügt wird. Geben Sie zum Bereitstellen einer Datei außerhalb einer Dokumentbibliothek `Type="Ghostable"` oder lassen Sie nur die **Typ** Attribut.  
   
-## <a name="adding-a-module-to-a-sharepoint-solution"></a>Hinzufügen eines Moduls zu einer SharePoint-Lösung  
+## <a name="add-a-module-to-a-sharepoint-solution"></a>Fügen Sie ein Modul auf einer SharePoint-Lösung  
   
-#### <a name="to-add-a-module"></a>So fügen Sie ein Modul hinzu  
+#### <a name="to-add-a-module"></a>Ein Modul hinzufügen  
   
 1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]öffnen oder erstellen Sie ein SharePoint-Projekt.  
   
-     Weitere Informationen finden Sie unter [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Weitere Informationen finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-2.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten, und wählen Sie dann auf der Menüleiste **Projekt**, **neues Element hinzufügen**.  
+2.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.  
   
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.  
   
 3.  Wählen Sie in der Liste der SharePoint-Vorlagen, die **Modul** Vorlage, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-     Dieser Schritt erstellt einen Knoten in das Projekt mit dem Namen Module1.  
+     Dieser Schritt erstellt einen Knoten in das Projekt mit dem Namen "Module1".  
   
-4.  Löschen Sie unter Module1 die Datei "Sample.txt".  
+4.  Löschen Sie unter "Module1", die *"Sample.txt"* Datei.  
   
-     "Sample.txt" ist in allen neuen Modulen z. B. Zwecke enthalten, und es ist nicht erforderlich. (Beachten Sie, dass einen Eintrag Löschen der Datei auch aus dem Modul "Elements.xml"-Datei entfernt werden.).  
+     "Sample.txt" befindet sich auf alle neuen Module z. B. Zweck und ist nicht erforderlich. (Beachten Sie, dass einen Eintrag löschen Sie die Datei auch vom des Moduls entfernt werden. *"Elements.xml"* Datei.)  
   
-5.  Wenn Sie Ihre Dateien auf einer bestimmten Ordnerstruktur in SharePoint bereitstellen möchten, erstellen Sie diesen Ordner unter Module1 in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] durch Auswählen des Module1-Knotens, klicken Sie dann auf der Menüleiste **Projekt**, **neu Ordner**.  
+5.  Wenn Sie Ihre Dateien auf einer bestimmten Ordnerstruktur in SharePoint bereitstellen möchten, erstellen Sie diese Ordner unter "Module1" im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] durch Auswählen der Knoten Module1, und klicken Sie dann auf der Menüleiste die Optionen **Projekt**, **neu Ordner**.  
   
-6.  Wählen Sie den Ordner, in dem die Datei hinzufügen und anschließend auf der Menüleiste die Optionen werden sollen **Projekt**, **vorhandenes Element hinzufügen**.  
+6.  Wählen Sie den Ordner, in dem Sie fügen der Datei, und anschließend auf der Menüleiste die Optionen möchten **Projekt**, **vorhandenes Element hinzufügen**.  
   
 7.  Wählen Sie eine oder mehrere Dateien, die Sie verwenden möchten, für SharePoint bereitzustellen, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-     Wenn Sie eine Datei zum Projekt hinzufügen, wird ein entsprechender Eintrag automatisch an das Modul "Elements.xml"-Datei hinzugefügt. Wenn das Projekt bereitgestellt wird, werden die Dateien auf SharePoint-Server, relativ zum Stammverzeichnis des Projekts, das durch angegeben wird kopiert die **Datei** des Elements **Url** Attribut, z. B. `Url="Module1/New Folder/SomeFile.doc`. Wenn Sie den Bereitstellungsspeicherort für eine Datei ändern möchten, entweder verschieben Sie sie in einen anderen Ordner im **Projektmappen-Explorer** oder ändern dessen **Url** Einstellung.  
+     Wenn Sie eine Datei zum Projekt hinzufügen, wird ein entsprechender Eintrag vorgenommen des Moduls "Elements.xml"-Datei automatisch hinzugefügt. Wenn das Projekt bereitgestellt wird, werden die Dateien auf SharePoint-Server, relativ zum Stammverzeichnis des Projekts, die von angegeben wird kopiert die **Datei** des Elements **Url** Attribut, z. B. `Url="Module1/New Folder/SomeFile.doc`. Wenn Sie den Speicherort für die Bereitstellung für eine Datei ändern möchten, entweder verschieben Sie sie in einen anderen Ordner in **Projektmappen-Explorer** oder ändern Sie seine **Url** festlegen.  
   
-8.  Für alle Dateien, die in einer Dokumentbibliothek angezeigt werden sollen, fügen die `Type="GhostableInLibrary"` -Attributs auf ihren Eintrag in der Datei "Elements.xml". Ein auf ein Objekt angewendeter  
+8.  Fügen Sie für alle Dateien, die in einer Dokumentbibliothek angezeigt werden sollen, die `Type="GhostableInLibrary"` -Attribut auf den entsprechenden Eintrag unter *"Elements.xml"*. Ein auf ein Objekt angewendeter  
   
     ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
@@ -65,10 +66,9 @@ ms.lasthandoff: 05/22/2018
   
 9. Bereitstellen des Projekts.  
   
-     Die Dateien an den angegebenen Speicherorten in SharePoint kopieren.  
+     Die Dateien kopieren, für die angegebenen Orte in SharePoint.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
+## <a name="see-also"></a>Siehe auch
+ [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

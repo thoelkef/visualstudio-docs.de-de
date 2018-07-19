@@ -1,5 +1,5 @@
 ---
-title: Über das Fenster "Register" | Microsoft Docs
+title: Über das Fenster "Register" | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474413"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056296"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Über das Fenster "Register" in Visual Studio
 Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten.  
@@ -37,22 +37,18 @@ Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im
   
  Ein Prozessor verfügt in der Regel über zwei Gruppen von Allzweckregistern, wobei eine für Gleitkommaoperationen und die andere für Ganzzahloperationen optimiert ist. Es ist daher nahe liegend, dass diese Register als Gleitkommaregister und als Ganzzahlregister bezeichnet werden.  
   
- Verwalteter Code wird zur Laufzeit in systemeigenen Code kompiliert, der auf die physischen Register des Mikroprozessors zugreift. Die **registriert** Fenster zeigt diese physischen Register für die common Language Runtime oder systemeigenen Code. Die **registriert** Fenster zeigt keine Registerinformationen für Skript- oder SQL-Anwendung aus, da Skriptsprachen und SQL-Sprachen sind, die das Konzept der Register nicht unterstützen.  
+ Verwalteter Code wird zur Laufzeit in nativen Code kompiliert, der auf die physischen Register des Mikroprozessors zugreift. Die **registriert** diese physischen Register für common Language Runtime oder nativen Code angezeigt. Die **registriert** Fenster zeigt keine Registerinformationen für Skript- oder SQL-Anwendung, da Skriptsprachen und SQL Sprachen sind, die das Konzept der Register nicht unterstützen.  
   
  Weitere Informationen zum Anzeigen der **registriert** Fenster finden Sie unter [mithilfe des Fensters "Register"](../debugger/how-to-use-the-registers-window.md).  
   
- Bei Betrachtung der **registriert** Fenster finden Sie Einträge wie das folgende Beispiel:  
+ Bei näherer Betrachtung der **registriert** Fenster finden Sie Einträge wie z. B. `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
+ Das Symbol links neben der `=` Anmeldung ist der Registername `EAX`, in diesem Fall. Die Zahl, die rechts neben der `=` anmelden stellt den Registerinhalt dar.  
   
- Das Symbol auf der linken Seite des Gleichheitszeichens (=) ist der Registername (in diesem Fall EAX). Die Zahl auf der rechten Seite des Gleichheitszeichens stellt den Registerinhalt dar.  
-  
- Die **registriert** Fenster ermöglicht es Ihnen, führen Sie den Inhalt eines Registers mehr als nur anzeigen. Wenn Sie sich im Unterbrechungsmodus befinden, können Sie im systemeigenen Code auf den Inhalt eines Registers klicken und den jeweiligen Wert bearbeiten. Dies sollten Sie jedoch nicht willkürlich machen. Solange Sie das zu bearbeitende Register und die darin enthaltenen Daten nicht vollständig verstehen, werden achtlose Bearbeitungen vermutlich einen Systemabsturz oder andere unerwünschte Konsequenzen zur Folge haben. Leider würden detailliertere Erklärungen der Registergruppen der verschiedenen Intel- bzw. Intel-kompatiblen Prozessoren den Rahmen dieser kurzen Einführung sprengen.  
+ Die **registriert** Fenster können Sie mehr als nur View den Inhalt eines Registers zur Verfügung. Wenn Sie sich im Unterbrechungsmodus befinden, können Sie im nativen Code auf den Inhalt eines Registers klicken und den jeweiligen Wert bearbeiten. Dies sollten Sie jedoch nicht willkürlich machen. Solange Sie das zu bearbeitende Register und die darin enthaltenen Daten nicht vollständig verstehen, werden achtlose Bearbeitungen vermutlich einen Systemabsturz oder andere unerwünschte Konsequenzen zur Folge haben. Leider würden detailliertere Erklärungen der Registergruppen der verschiedenen Intel- bzw. Intel-kompatiblen Prozessoren den Rahmen dieser kurzen Einführung sprengen.  
   
 ## <a name="register-groups"></a>Registergruppen  
- Übersichtlichkeit der **registriert** Fenster Register in Gruppen organisiert. Wenn Sie mit der rechten Maustaste auf die **registriert** Fenster sehen Sie ein Kontextmenü mit einer Liste von Gruppen, die Sie anzeigen oder Ausblenden nach Bedarf können.  
+ Übersichtlichkeit der **registriert** in Gruppen organisiert Fenster. Wenn Sie mit der rechten Maustaste auf die **registriert** Fenster sehen Sie ein Kontextmenü mit einer Liste von Gruppen, die Sie anzeigen oder ausblenden, ganz nach Wunsch können.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)   

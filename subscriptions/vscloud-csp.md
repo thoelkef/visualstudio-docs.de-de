@@ -9,21 +9,21 @@ description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199078"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283376"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
-Partner im [Cloud Solution Provider](https://partner.microsoft.com/en-US/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen. 
+Partner im [Cloud Solution Provider](https://partner.microsoft.com/en-US/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen.
 
-[Vergleich von Optionen für Cloudabonnements](https://www.visualstudio.com/vs/pricing)
+[Vergleich von Optionen für Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
-Sie müssen Ihren Kundenmandanten zunächst im Partner Center einrichten und ein Azure-Abonnement für diesen Mandanten erstellen. 
+Sie müssen Ihren Kundenmandanten zunächst im Partner Center einrichten und ein Azure-Abonnement für diesen Mandanten erstellen.
 [Weitere Informationen](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Informationen zum Kauf
@@ -58,9 +58,10 @@ Sobald Sie den Kauf bestätigt haben, können Sie auf **Verwalten** klicken, um 
 
 Wenn mehr als ein Azure-Abonnement für diesen Kunden vorhanden ist, verwenden Sie das Dropdownmenü, um das Azure-Abonnement auszuwählen, über das Sie den Kauf getätigt haben.  Die **Lizenzzusammenfassung** zeigt Ihnen die Anzahl der Abonnements an, die zugewiesen wurden, und wie viele für jede Visual Studio-Cloudabonnementoption verfügbar sind.  Über die Zusammenfassung können Sie ebenfalls weitere Abonnements erwerben oder die Anzahl von Abonnements verringern.
 
-Klicken Sie auf **Hinzufügen**, um ein Abonnement einem neuen Benutzer zuzuweisen.  Die angezeigte Anzahl wird aktualisiert, und der Endbenutzer erhält eine E-Mail-Benachrichtigung. Der Endbenutzer kann sich dann mithilfe der E-Mail-Adresse anmelden, die von Ihnen bereitgestellt wurde, um das Visual Studio-Abonnement im [Visual Studio-Portal für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs) zu aktivieren.
+Klicken Sie auf **Hinzufügen**, um ein Abonnement einem neuen Benutzer zuzuweisen.  Die angezeigte Anzahl wird aktualisiert, und der Endbenutzer erhält eine E-Mail-Benachrichtigung.
+Der Endbenutzer kann sich dann mithilfe der E-Mail-Adresse anmelden, die von Ihnen bereitgestellt wurde, um das Visual Studio-Abonnement im [Visual Studio-Portal für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs) zu aktivieren.
 
-Sie können den aktuellen Abonnenten löschen und einen neuen Abonnenten hinzufügen, um ein Visual Studio-Abonnent einem anderen Benutzer zuzuweisen. 
+Sie können den aktuellen Abonnenten löschen und einen neuen Abonnenten hinzufügen, um ein Visual Studio-Abonnent einem anderen Benutzer zuzuweisen.
 
 Wenn ein Abonnent sein Visual Studio-Abonnement nicht aktiviert hat, ist dies möglicherweise darauf zurückzuführen, dass die Einladungs-E-Mail fehlt.  Sie können über das Visual Studio-Verwaltungsportal ebenfalls anfordern, dass die Einladung zur Aktivierung erneut an den Benutzer gesendet wird.
 
@@ -81,15 +82,17 @@ Es wird ein Rabatt von 5 % auf die sechste Einheit jedes Visual Studio-Abonnemen
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>F: Wie werden **monatliche** Gebühren für Cloudabonnements verarbeitet?
-A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt. Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
+A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt.
+Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
 
-Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai). 
+Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>F: Wie werden **jährliche** Gebühren für Cloudabonnements verarbeitet?
 A: Bei jedem Kauf wird die vollständige Menge sofort in Rechnung gestellt. Die Gebühren werden nicht über das Jahr verteilt, und es erfolgt keine anteilige Berechnung. Wenn Sie jährliche Cloudabonnements zu unterschiedlichen Zeitpunkten im Jahr kaufen, werden die Abonnements in unterschiedlichen Monaten verlängert. Die Laufzeit aller jährlichen Cloudabonnements des Kunden wird nicht aneinander angepasst, wie es bei Käufen mit dem Microsoft-Volumenlizenzvertrag üblich ist.
 
 ### <a name="q-how-do-cancelations-work"></a>F: Wie funktioniert die Kündigung?
-A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab. Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
+A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab.
+Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
 
 Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächsten Monats wirksam. Wenn Sie nur manche der monatlichen Cloudabonnements Ihres Kunden kündigen, entfernen Sie die Benutzer am ersten Tag des nächsten Monats, um sicherzustellen, dass den richtigen Personen weiterhin aktive Abonnements zugewiesen sind.
 
@@ -108,7 +111,7 @@ Wenn Sie also beispielsweise sechs monatliche Visual Studio Professional-Abonnem
 
 Darüber hinaus gilt der Rabatt nur für die Gebühren in einem angegebenen monatlichen Abrechnungszeitraum. Wenn Sie also fünf jährliche Visual Studio Professional-Abonnements in einem Monat und fünf weitere im nächsten Monat kaufen, zahlen Sie für alle zehn Abonnements den regulären Preis.
 
-Diese Rabatte werden in den Preisdaten in [Partner Center](https://partnercenter.microsoft.com) berücksichtigt. 
+Diese Rabatte werden in den Preisdaten in [Partner Center](https://partnercenter.microsoft.com) berücksichtigt.
 
 ### <a name="q-are-there-renewal-discounts"></a>F: Gibt es Rabatte auf Verlängerungen?
 

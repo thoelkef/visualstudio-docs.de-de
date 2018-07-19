@@ -1,5 +1,5 @@
 ---
-title: Einschränkungen beim Skriptdebugging | Microsoft Docs
+title: Einschränkungen beim Skriptdebugging | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6679e781e564a58d6a98b7d0190f2f2b4e9fa74
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9c85f990d08a41bd4b4ee25190d0c5b6bd99d340
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476834"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058021"
 ---
 # <a name="limitations-on-script-debugging"></a>Einschränkungen beim Skriptdebugging
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von clientseitigem Skript. Dabei gelten die in diesem Thema erörterten Einschränkungen.  
@@ -34,7 +34,7 @@ ms.locfileid: "31476834"
   
 -   Haltepunkte müssen innerhalb von `<script>`-Blöcken festgelegt werden. Haltepunkte in eingebetteten Skripts oder `<% %>`-Blöcken können nicht zugeordnet werden.  
   
--   Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispielsweise http://microsoft.com/default.apsx. Zuordnung von Haltepunkten nicht wie z. B. eine Umleitung von einer Adresse erkannt http://microsoft.com die Standardseite.  
+-   Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispielsweise http://microsoft.com/default.apsx. Zuordnung von Haltepunkten kann keine Umleitung von einer Adresse erkennen, z. B. http://microsoft.com die Standardseite.  
   
 -   Der Haltepunkt muss in der Seite festgelegt werden, die in der Browser-URL angegeben ist, und nicht in einer ASPX-Steuerelementdatei (ascx), Masterseite oder einer anderen auf dieser Seite enthaltenen Datei. Haltepunkte in eingeschlossenen Seiten können nicht zugeordnet werden.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "31476834"
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Zuordnung von Haltepunkten und doppelte Zeilen  
  Um die entsprechende Stelle in serverseitigen und clientseitigen Skripts zu finden, wird der Code durch den Algorithmus für die Zuordnung von Haltepunkten zeilenweise überprüft. Beim Algorithmus wird davon ausgegangen, dass jede Zeile einmal vorkommt. Wenn mindestens zwei Zeilen denselben Code enthalten und Sie einen Haltepunkt für eine dieser doppelten Zeilen festlegen, wird vom Algorithmus für die Zuordnung von Haltepunkten möglicherweise die falsche Entsprechung in der clientseitigen Datei ausgewählt. Um das zu verhindern, fügen Sie der Zeile mit dem festgelegten Haltepunkt einen Kommentar hinzu. Zum Beispiel:  
   
-```  
+```csharp
 i++ ;  
 i ++; // I added a comment, so this line is now unique  
 i ++;  

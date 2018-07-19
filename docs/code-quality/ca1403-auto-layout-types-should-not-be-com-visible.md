@@ -14,16 +14,20 @@ ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 056b1d254b8544f9a1f0abe364bcb40f15235e64
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d84fdd4f352a823614832cc8d5d1b9e57c7a9dfb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899479"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058073"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein
+
 |||
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
@@ -32,27 +36,35 @@ ms.locfileid: "31899479"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein sichtbar Werttyp Component Object Model (COM) wird gekennzeichnet, mit der <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> -Attributsatz zur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
+
+Ein Werttyp der Component Object Model (COM) sichtbar ist mit markiert die <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> -Attributsatz auf <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Runtime.InteropServices.LayoutKind> Layout-Typen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen verschiedenen Versionen von .NET Framework geändert, was die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. Beachten Sie, dass bei der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben wird, die C#-, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], und geben Sie die C++-Compiler die <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen.
 
- Sofern nicht anders markiert ist, sind alle öffentliche, nicht generische Typen für COM sichtbar. alle nicht öffentliche und generischen Typen sind nicht für COM sichtbar Allerdings erfordert diese Regel um falsch positive Ergebnisse zu reduzieren, die COM-Sichtbarkeit des Typs explizit angegeben werden; die enthaltende Assembly muss mit dem gekennzeichnet werden die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
+<xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen Versionen von .NET Framework, Ändern der COM-Clients unterbricht, die ein bestimmtes Layout erwarten. Wenn die <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben ist, geben Sie die C#-, Visual Basic und C++-Compiler [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) für Werttypen.
+
+Sofern nicht anders markiert ist, werden alle öffentliche, nicht generischen Typen für COM sichtbar, und alle nicht öffentliche und generische Typen sind für COM nicht sichtbar Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden. Die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert von der <xref:System.Runtime.InteropServices.StructLayoutAttribute> -Attribut <xref:System.Runtime.InteropServices.LayoutKind> oder <xref:System.Runtime.InteropServices.LayoutKind>, oder machen Sie den Typ für COM nicht sichtbar
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert von der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut [mich LayoutKind.explizit zuwenden musste](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) oder [LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), oder ändern Sie den Typ für COM nicht sichtbar
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird ein Typ, der die Regel verletzt und ein Typ, der die Regel erfüllt.
 
- [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
+Das folgende Beispiel zeigt ein Typ, der gegen die Regel verstößt und ein Typ, der die Regel erfüllt.
+
+[!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1408: AutoDual ClassInterfaceType nicht verwenden](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+
+[CA1408: AutoDual ClassInterfaceType nicht verwenden](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation) [Interoperation mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+
+- [Qualifizieren von .NET Datentypen für die interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [Interoperabilität mit nicht verwaltetem code](/dotnet/framework/interop/index)
