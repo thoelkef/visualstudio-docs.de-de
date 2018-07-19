@@ -1,5 +1,5 @@
 ---
-title: '&lt;Befehle&gt; Element (Bootstrapper) | Microsoft Docs'
+title: '&lt;Befehle&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3ae61012bec5f8134a48714678110951c03b76
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 785df23b3d76573182eeb97efc5b359e7298a009
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566198"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077954"
 ---
-# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Befehle&gt; Element (Bootstrapper)
-Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben die `InstallChecks` Element, und welches Paket deklariert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bootstrapper sollten installiert werden, wenn der Test fehlschlägt.  
+# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Befehle&gt; -Element (Bootstrapper)
+Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben die `InstallChecks` -Element, und welches Paket deklariert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bootstrapper sollten installiert werden, wenn der Test fehlschlägt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Commands  
     Reboot  
 >  
@@ -72,65 +72,65 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn eines der Pakete ein Neustart-Exitcode zurückgegeben. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Defer` Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate` Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None` Bewirkt, dass alle Anforderungen Neustart, ignoriert werden sollen.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
+|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn keines der Pakete einen Neustart-Exitcode zurückgeben. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Defer` Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate` Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None` Bewirkt, dass alle Anforderungen Neustart ignoriert werden soll.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
   
 ## <a name="command"></a>Befehl  
- Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein `Commands` Element haben eine oder mehrere `Command` Elemente. Das Element weist folgende Attribute.  
+ Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein `Commands` Element haben eine oder mehrere `Command` Elemente. Das-Element weist die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`PackageFile`|Erforderlich. Der Name des zu installierenden Pakets sollte mindestens eine der Bedingungen gemäß `InstallConditions` "false" zurückgeben. Das Paket muss in derselben Datei definiert werden, mithilfe einer `PackageFile` Element.|  
-|`Arguments`|Dies ist optional. Ein Satz von Befehlszeilenargumenten, die an die Paketdatei übergeben.|  
-|`EstimatedInstallSeconds`|Dies ist optional. Die geschätzte Zeit in Sekunden, dauert es zum Installieren des Pakets. Dieser Wert bestimmt die Größe der Statusanzeige, die der Bootstrapper, an den Benutzer angezeigt. Der Standardwert ist 0 (null) in diesem Fall keine Uhrzeit Schätzung angegeben wird.|  
-|`EstimatedDiskBytes`|Dies ist optional. Der geschätzte Umfang der Speicherplatz in Bytes, der belegt das Paket nach der Installation ist abgeschlossen. Dieser Wert ist in Anforderungen an den Festplattenspeicherplatz verwendet, die der Bootstrapper dem Benutzer angezeigt. Der Standardwert ist 0 (null) und in der der Bootstrapper alle Anforderungen an den Festplattenspeicherplatz nicht angezeigt wird.|  
-|`EstimatedTempBytes`|Dies ist optional. Der geschätzte Umfang an Speicherplatz in Bytes, der das Paket benötigen.|  
+|`PackageFile`|Erforderlich. Der Name des zu installierenden Pakets sollte mindestens eine der Bedingungen gemäß `InstallConditions` "false" zurückgegeben. Das Paket muss in derselben Datei definiert werden, mithilfe einer `PackageFile` Element.|  
+|`Arguments`|Dies ist optional. Ein Satz von Befehlszeilenargumenten, die Paketdatei übergeben.|  
+|`EstimatedInstallSeconds`|Dies ist optional. Die geschätzte Zeit in Sekunden, dauert es, um das Paket installieren zu können. Dieser Wert bestimmt die Größe der Statusanzeige, die der Bootstrapper, die dem Benutzer angezeigt. Der Standardwert ist 0 (null) in diesem Fall keine Zeit, die Schätzung angegeben wird.|  
+|`EstimatedDiskBytes`|Dies ist optional. Die geschätzte Dauer des Speicherplatzes in Bytes, die das Paket nach der Installation belegt wird, ist abgeschlossen. Dieser Wert wird in den Anforderungen an den Festplattenspeicherplatz verwendet, in der der Bootstrapper, die dem Benutzer angezeigt. Der Standardwert ist 0 (null) und in der der Bootstrapper alle erforderlichen Festplattenspeicherplatz nicht angezeigt wird.|  
+|`EstimatedTempBytes`|Dies ist optional. Die geschätzte Dauer des temporären Speicherplatzes, in Bytes, die das Paket benötigen.|  
 |`Log`|Dies ist optional. Der Pfad zur Protokolldatei, die das Paket generiert wird, relativ zum Stammverzeichnis des Pakets.|  
   
 ## <a name="installconditions"></a>InstallConditions  
- Die `InstallConditions` Element ist ein untergeordnetes Element von der `Command` Element. Jede `Command` Element kann höchstens eine haben `InstallConditions` Element. Wenn kein `InstallConditions` Element vorhanden ist, das Paket vom angegebenen `Condition` wird immer ausgeführt.  
+ Die `InstallConditions` Element ist ein untergeordnetes Element des der `Command` Element. Jede `Command` Element kann höchstens ein verfügen `InstallConditions` Element. Wenn kein `InstallConditions` Element vorhanden ist, das angegebene Paket `Condition` wird immer ausgeführt.  
   
 ## <a name="bypassif"></a>BypassIf  
- Die `BypassIf` Element ist ein untergeordnetes Element von der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter dem der Befehl nicht ausgeführt werden sollte. Jede `InstallConditions` haben Element 0 (null) oder mehrere `BypassIf` Elemente.  
+ Die `BypassIf` Element ist ein untergeordnetes Element des der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter dem der Befehl nicht ausgeführt werden sollte. Jede `InstallConditions` haben Element 0 (null) oder mehrere `BypassIf` Elemente.  
   
- `BypassIf` verfügt über die folgenden Attribute aus.  
+ `BypassIf` hat die folgenden Attribute an.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Property`|Erforderlich. Der Name der zu überprüfenden Eigenschaft. Die Eigenschaft muss zuvor definiert wurden durch ein untergeordnetes Element von der `InstallChecks` Element. Weitere Informationen finden Sie unter [ \<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Erforderlich. Der Typ des auszuführenden Vergleichs an. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Property`|Erforderlich. Der Name des zu überprüfenden Eigenschaft. Die Eigenschaft muss zuvor definiert wurden durch ein untergeordnetes Element des der `InstallChecks` Element. Weitere Informationen finden Sie unter [ \<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Erforderlich. Der Typ des Vergleichs. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|Erforderlich. Der Wert, mit der Eigenschaft verglichen werden soll.|  
-|`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tags, das definiert, wann diese Regel ausgewertet werden sollen.|  
+|`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tag, das definiert, wenn diese Regel ausgewertet werden soll.|  
   
 ## <a name="failif"></a>FailIf  
- Die `FailIf` Element ist ein untergeordnetes Element von der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter denen die Installation beendet werden soll. Jede `InstallConditions` haben Element 0 (null) oder mehrere `FailIf` Elemente.  
+ Die `FailIf` Element ist ein untergeordnetes Element des der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter denen die Installation beendet werden soll. Jede `InstallConditions` haben Element 0 (null) oder mehrere `FailIf` Elemente.  
   
- `FailIf` verfügt über die folgenden Attribute aus.  
+ `FailIf` hat die folgenden Attribute an.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Property`|Erforderlich. Der Name der zu überprüfenden Eigenschaft. Die Eigenschaft muss zuvor definiert wurden durch ein untergeordnetes Element von der `InstallChecks` Element. Weitere Informationen finden Sie unter [ \<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Erforderlich. Der Typ des auszuführenden Vergleichs an. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Property`|Erforderlich. Der Name des zu überprüfenden Eigenschaft. Die Eigenschaft muss zuvor definiert wurden durch ein untergeordnetes Element des der `InstallChecks` Element. Weitere Informationen finden Sie unter [ \<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Erforderlich. Der Typ des Vergleichs. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|Erforderlich. Der Wert, mit der Eigenschaft verglichen werden soll.|  
-|`String`|Dies ist optional. Der Text, der Benutzer bei einem Fehler angezeigt.|  
-|`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tags, das definiert, wann diese Regel ausgewertet werden sollen.|  
+|`String`|Dies ist optional. Der Text, der für den Benutzer bei einem Fehler anzuzeigen.|  
+|`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tag, das definiert, wenn diese Regel ausgewertet werden soll.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Die `ExitCodes` Element ist ein untergeordnetes Element von der `Command` Element. Die `ExitCodes` Element enthält eine oder mehrere `ExitCode` Elemente, die bestimmen, was die Installation als Antwort auf einen Exitcode von einem Paket ausführen soll. Es kann eine optionale `ExitCode` Element unterhalb einer `Command` Element. `ExitCodes` Weist keine Attribute.  
+ Die `ExitCodes` Element ist ein untergeordnetes Element des der `Command` Element. Die `ExitCodes` Element enthält ein oder mehrere `ExitCode` Element, das bestimmt, was die Installation als Reaktion auf einen Exitcode aus einem Paket tun sollten. Es kann eine optionale `ExitCode` untergeordnete Element einer `Command` Element. `ExitCodes` besitzt keine Attribute.  
   
-## <a name="exitcode"></a>exitCode  
- Die `ExitCode` Element ist ein untergeordnetes Element von der `ExitCodes` Element. Die `ExitCode` Element bestimmt, was die Installation als Antwort auf einen Exitcode von einem Paket tun sollten. `ExitCode` enthält keine untergeordneten Elemente und weist folgende Attribute.  
+## <a name="exitcode"></a>ExitCode  
+ Die `ExitCode` Element ist ein untergeordnetes Element des der `ExitCodes` Element. Die `ExitCode` Element bestimmt, was die Installation als Reaktion auf einen Exitcode aus einem Paket tun sollten. `ExitCode` enthält keine untergeordneten Elemente ein, und weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Value`|Erforderlich. Den Exitcodewert, der diese `ExitCode` Element angewendet wird.|  
-|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Success` Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot` Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail` Kennzeichnet das Paket aus, als fehlgeschlagen eingestuft.<br /><br /> `FailReboot` Kennzeichnet das Paket als fehlgeschlagen eingestuft, und weist das System neu starten.|  
-|`String`|Dies ist optional. Der Wert für den Benutzer als Antwort auf diese Exitcode anzuzeigen.|  
-|`FormatMessageFromSystem`|Dies ist optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung für den Exitcode, oder verwenden Sie den Wert im bereitgestellten `String`. Gültige Werte sind `true`, was bedeutet den Fehler vom System bereitgestellte verwenden und `false`, d. h., die vom bereitgestellten Zeichenfolge verwenden `String`. Die Standardeinstellung ist `false`. Wenn diese Eigenschaft ist `false`, aber `String` ist nicht festgelegt ist, wird der Fehler vom System bereitgestellte verwendet werden.|  
+|`Value`|Erforderlich. Der Wert für den Exitcode an den diese `ExitCode` Element angewendet wird.|  
+|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Success` Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot` Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail` Kennzeichnet das Paket an, wie Fehler.<br /><br /> `FailReboot` Kennzeichnet das Paket als Fehler, und weist das System neu starten.|  
+|`String`|Dies ist optional. Der Wert, der für den Benutzer als Reaktion auf diese Exitcode anzuzeigen.|  
+|`FormatMessageFromSystem`|Dies ist optional. Bestimmt, ob anhand der vom System bereitgestellten Fehlermeldung, die für den Exitcode ein, oder verwenden Sie den Wert im bereitgestellten `String`. Gültige Werte sind `true`, das bedeutet, dass den Fehler vom System bereitgestellten und `false`, das bedeutet, dass die vom bereitgestellten Zeichenfolge `String`. Die Standardeinstellung ist `false`. Wenn diese Eigenschaft `false`, aber `String` ist nicht festgelegt ist, wird vom System bereitgestellten Fehlermeldung verwendet werden.|  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel definiert die Befehle zum Installieren von .NET Framework 2.0.  
   
-```  
+```xml  
 <Commands Reboot="Immediate">  
     <Command PackageFile="instmsia.exe"  
              Arguments= ' /q /c:"msiinst /delayrebootq"'  
@@ -206,5 +206,5 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Produkt- und Paketschemareferenz](../deployment/product-and-package-schema-reference.md)   
+ [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)

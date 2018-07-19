@@ -1,5 +1,5 @@
 ---
-title: Lokalisieren von ClickOnce-Anwendungen | Microsoft Docs
+title: Lokalisieren von ClickOnce-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d7ebc762c7b1feb895323f7ef9ee0180ce954e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5e8341568fdc272bcb45184d9d263bceae792036
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31562181"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078965"
 ---
-# <a name="localizing-clickonce-applications"></a>Lokalisieren von ClickOnce-Anwendungen
+# <a name="localize-clickonce-applications"></a>Lokalisieren von ClickOnce-Anwendungen
 Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultur anpassen. Dieser Prozess umfasst die Übersetzung des Textes der Benutzeroberfläche in eine regionsspezifische Sprache, die Verwendung der richtigen Datums- und Währungsformate, die Anpassung der Größe von Steuerelementen in einem Formular und, sofern erforderlich, die Spiegelung von Steuerelementen von rechts nach links.  
   
  Das Lokalisieren Ihrer Anwendung führt zur Erstellung von einer oder mehreren Satellitenassemblys. Jede Assembly enthält Benutzeroberflächenzeichenfolgen, Bilder und andere spezielle Ressourcen für eine bestimmte Kultur. (Die zentrale ausführbare Datei der Anwendung enthält die Zeichenfolgen für die Standardkultur für die Anwendung.)  
@@ -48,7 +48,7 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
   
  Diese Methode ist die Standardmethode in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Um diese Methode in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu verwenden, sind keine weiteren Schritte erforderlich.  
   
- Zur Verwendung dieser Methode mit MageUI.exe müssen Sie die Kultur festlegen, damit Ihre Anwendung **neutrale** in MageUI.exe. Danach müssen alle Satellitenassemblys manuell in die Bereitstellung eingeschlossen werden. In MageUI.exe können Sie die Satellitenassemblys hinzufügen, indem Sie mit der **Auffüllen** Schaltfläche auf der **Dateien** Registerkarte des Anwendungsmanifests.  
+ Verwenden Sie diese Methode mit *MageUI.exe*, müssen Sie die Kultur festlegen, damit Ihre Anwendung **neutrale** in *MageUI.exe*. Danach müssen alle Satellitenassemblys manuell in die Bereitstellung eingeschlossen werden. In *MageUI.exe*, Sie können die Satellitenassemblys hinzufügen, mit der **Auffüllen** auf auf die Schaltfläche der **Dateien** Registerkarte des Anwendungsmanifests.  
   
  Der Vorteil dieses Ansatzes besteht darin, dass mit ihm eine einzelne Bereitstellung erstellt und der Verlauf der lokalisierten Bereitstellung vereinfacht wird. Zur Laufzeit wird die richtige Satellitenassembly verwendet, und zwar basierend auf der vom Benutzer für das Windows-Betriebssystem angegebenen Standardkultur. Ein Nachteil dieses Ansatzes besteht darin, dass bei jeder Installation oder jedem Update der Anwendung auf einem Clientcomputer alle Satellitenassemblys heruntergeladen werden. Wenn Ihre Anwendung eine große Zahl von Zeichenfolgen aufweist oder Ihre Kunden nur über eine langsame Netzwerkverbindung verfügen, kann dieser Prozess während des Anwendungsupdates zu Leistungseinbußen führen.  
   
@@ -58,16 +58,16 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
 ## <a name="generate-one-deployment-for-each-culture"></a>Generieren einer Bereitstellung für jede Kultur  
  In dieser Bereitstellungsstrategie generieren Sie mehrere Bereitstellungen. Sie nehmen in jede Bereitstellung nur die Satellitenassembly auf, die für eine bestimmte Kultur benötigt wird, und kennzeichnen die Bereitstellung als die für diese Kultur spezifische Bereitstellung.  
   
- Verwenden Sie diese Methode in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]legen die **Publish Language** Eigenschaft auf die **veröffentlichen** Tab, um die gewünschte Region. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schließt automatisch die für die ausgewählte Region erforderliche Satellitenassembly ein und schließt alle anderen Satellitenassemblys aus der Bereitstellung aus.  
+ Verwenden Sie diese Methode in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]legen die **Publish Language** Eigenschaft für die **veröffentlichen** Tab, um die gewünschte Region. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schließt automatisch die für die ausgewählte Region erforderliche Satellitenassembly ein und schließt alle anderen Satellitenassemblys aus der Bereitstellung aus.  
   
- Sie können die gleiche Aufgabe auch mit dem Tool MageUI.exe in Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] ausführen. Verwenden der **Auffüllen** Schaltfläche auf der **Dateien** Registerkarte des Anwendungsmanifests können Sie alle anderen Satellitenassemblys aus dem Anwendungsverzeichnis ausschließen, und legen Sie dann die **Kultur**Feld der **Namen** Registerkarte für das Bereitstellungsmanifest in MageUI.exe. Auf diese Weise wird nicht nur die richtige Satellitenassembly eingeschlossen, sondern es wird auch das `language`-Attribut im `assemblyIdentity`-Element für das Bereitstellungsmanifest auf die entsprechende Kultur festgelegt.  
+ Sie können die gleiche Aufgabe mithilfe der *MageUI.exe* Tool in der Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Verwenden der **Auffüllen** Schaltfläche der **Dateien** Registerkarte des Anwendungsmanifests können Sie alle anderen Satellitenassemblys aus dem Anwendungsverzeichnis ausschließen, und legen Sie die **Kultur**Feld der **Namen** Registerkarte für das Bereitstellungsmanifest in *MageUI.exe*. Auf diese Weise wird nicht nur die richtige Satellitenassembly eingeschlossen, sondern es wird auch das `language`-Attribut im `assemblyIdentity`-Element für das Bereitstellungsmanifest auf die entsprechende Kultur festgelegt.  
   
  Nachdem Sie die Anwendung veröffentlicht haben, müssen Sie diesen Schritt für jede zusätzliche Kultur wiederholen, die die Anwendung unterstützt. Sie müssen sicherstellen, dass Sie zu einem anderen Webserververzeichnis oder Dateifreigabeverzeichnis veröffentlichen, da jedes Anwendungsmanifest auf eine andere Satellitenassembly verweist, und jedes Bereitstellungsmanifest einen anderen Wert für die hat`language`Attribut.  
   
-## <a name="downloading-satellite-assemblies-on-demand"></a>Herunterladen von Satellitenassemblys bei Bedarf  
+## <a name="download-satellite-assemblies-on-demand"></a>Herunterladen von Satellitenassemblys bei Bedarf  
  Wenn Sie alle Satellitenassemblys in eine einzelne Bereitstellung aufnehmen möchten, können Sie die Leistung mit Herunterladen bei Bedarf verbessern. Damit können Sie Assemblys als optional kennzeichnen. Die gekennzeichneten Assemblys werden nicht heruntergeladen, wenn die Anwendung installiert oder aktualisiert wird. Wenn Sie die Assemblys benötigen, können Sie sie durch Aufruf der <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>-Methode in der <xref:System.Deployment.Application.ApplicationDeployment>-Klasse installieren.  
   
- Das Herunterladen von Satellitenassemblys bei Bedarf unterscheidet sich geringfügig vom Herunterladen anderer Typen von Assemblys bei Bedarf. Weitere Informationen und Codebeispiele zum Aktivieren dieses Szenarios mithilfe der [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] tools für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], finden Sie unter [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys bei Bedarf mit der ClickOnce-Bereitstellung-API](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Das Herunterladen von Satellitenassemblys bei Bedarf unterscheidet sich geringfügig vom Herunterladen anderer Typen von Assemblys bei Bedarf. Weitere Informationen und Codebeispiele zum Aktivieren dieses Szenarios mit dem [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -tools für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], finden Sie unter [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys bei Bedarf mit der ClickOnce-Bereitstellung-API](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
  Sie können dieses Szenario auch in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aktivieren.  Siehe auch [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) oder [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
@@ -82,5 +82,5 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
   
 ## <a name="see-also"></a>Siehe auch  
  [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
- [Globalisieren von Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)
+ [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [Globalisieren von Windows forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

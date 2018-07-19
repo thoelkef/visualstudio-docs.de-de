@@ -1,5 +1,5 @@
 ---
-title: ClickOnce-Referenz | Microsoft Docs
+title: ClickOnce-Referenz | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d73cb7aa647a3ee6adbf7d06d832fe3b59c5ed8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557033"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081565"
 ---
 # <a name="clickonce-reference"></a>ClickOnce-Referenz
-Die folgenden Seiten beschreiben die Struktur der XML-Dateien verwendet, um die ClickOnce-Anwendung darstellen.  
+Die folgenden Seiten beschreiben die Struktur der XML-Dateien verwendet, um ClickOnce-Anwendungen darzustellen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)  
@@ -38,16 +38,16 @@ Die folgenden Seiten beschreiben die Struktur der XML-Dateien verwendet, um die 
  Produkt- und Paketdateien Dateielemente aufgeführt.  
   
  [Referenz zur nicht verwalteten API für ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
- Listen nicht verwaltete öffentliche APIs aus dfshim.dll.  
+ Enthält nicht verwaltete öffentliche APIs aus dfshim.dll.  
   
-## <a name="reference"></a>Verweis  
+## <a name="reference"></a>Referenz  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)  
- Enthält ausführliche grundlegende Informationen zur ClickOnce-Bereitstellung.  
+ [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)  
+ Enthält ausführliche konzeptionelle Informationen zur ClickOnce-Bereitstellung.  
   
  <xref:System.Deployment.Application>  
- Enthält Links zur Referenzdokumentation der öffentlichen Klassen, die ClickOnce in verwaltetem Code zu unterstützen.  
+ Enthält Links zur Dokumentation der öffentlichen Klassen verweisen, die ClickOnce-in verwaltetem Code Unterstützung.  
   
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)  
- Stellt Exemplarische Vorgehensweisen und wie-auf der, die ClickOnce-Aufgaben ausführen.
+ Stellt Exemplarische Vorgehensweisen bereit und wie – um die, die ClickOnce-Aufgaben ausführen.

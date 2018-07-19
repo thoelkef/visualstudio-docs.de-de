@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produkt&gt; Element (Bootstrapper) | Microsoft Docs'
+title: '&lt;Produkt&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559438"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080404"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; Element (Bootstrapper)
-Die `Product` Element ist das XML-Element der obersten Ebene innerhalb einer Produktdatei.  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; -Element (Bootstrapper)
+Die `Product` Element ist das XML-Element der obersten Ebene innerhalb der einer Produktdatei.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -140,16 +140,16 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Product` -Element muss sich in einer Datei für das Produkt. Er hat das folgende Attribut.  
+ Die `Product` -Element muss in einer Produktdatei. Er hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`ProductCode`|Ein eindeutiger Bezeichner für das Produkt.|  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel zeigt eine vollständige Produktdokumentation-Datei für die Installation der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ Das folgende Codebeispiel zeigt eine vollständige Produktdatei für die Installation der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -252,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+ [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)

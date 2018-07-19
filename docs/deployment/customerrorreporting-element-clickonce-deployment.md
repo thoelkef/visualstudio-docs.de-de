@@ -1,5 +1,5 @@
 ---
-title: '&lt;CustomErrorReporting&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+title: '&lt;CustomErrorReporting&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c060c419fa72bb5914491a8ee666a9b1a2c6a622
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556341"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080352"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;CustomErrorReporting&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;CustomErrorReporting&gt; -Element (ClickOnce-Bereitstellung)
 Gibt einen URI an, der bei einem Fehler angezeigt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <customErrorReporting  
    uri  
 />  
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Dieses Element ist optional. Ohne diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ausnahmestapels ein Fehlerdialogfeld angezeigt. Wenn die `customErrorReporting` Element vorhanden ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt den URI angegeben, indem Sie stattdessen die `uri` Parameter. Der Ziel-URI enthält äußere Exception-Klasse, die innere Ausnahme-Klasse und der Meldung der inneren Ausnahme als Parameter.  
+ Dieses Element ist optional. Ohne diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt ein Fehlerdialogfeld mit den Ausnahmestapel. Wenn die `customErrorReporting` Element vorhanden ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt den URI angegeben werden, indem Sie stattdessen die `uri` Parameter. Der Ziel-URI wird die äußere Exception-Klasse, die innere Ausnahme-Klasse und die Meldung der inneren Ausnahme als Parameter enthalten.  
   
- Verwenden Sie dieses Element, um Fehlerberichte Funktionen an Ihre Anwendung hinzuzufügen. Da der generierte URI Informationen über den Typ des Fehlers enthält, können Ihre Website Informationen und anzeigen, z. B. eine entsprechende Problembehandlung Bildschirm analysieren.  
+ Verwenden Sie dieses Element, um Windows-Fehlerberichterstattung von Funktionen zu Ihrer Anwendung hinzuzufügen. Da der generierte URI Informationen zu den Typ des Fehlers enthält, können Ihre Website, Informationen und die Anzeige, z. B. eine entsprechende Problembehandlung Bildschirm analysieren.  
   
 ## <a name="example"></a>Beispiel  
- Der folgende Codeausschnitt zeigt die `customErrorReporting` -Element zusammen mit der generierte URI es möglicherweise zu erzeugen.  
+ Der folgende Codeausschnitt zeigt die `customErrorReporting` -Element zusammen mit der generierte URI, der es möglicherweise zu erzeugen.  
   
-```  
+```xml
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
   
 Example Generated Error:  

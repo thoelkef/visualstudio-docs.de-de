@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signatur&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+title: '&lt;Signatur&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814959"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081513"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signatur&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signatur&gt; -Element (ClickOnce-Bereitstellung)
 Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.  
   
 ## <a name="syntax"></a>Syntax  
@@ -36,12 +36,12 @@ Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digita
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Signieren ein Bereitstellungsmanifest mithilfe eines Umschlags-Signatur ist optional, jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie unter der World Wide Web Consortium Empfehlung, "XML Signature Syntax and Processing" beschriebenen [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Signieren ein Bereitstellungsmanifest mithilfe eines Signatur-Envelope ist optional, jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie die Empfehlung des World Wide Web Consortium "XML Signature Syntax and Processing" die am beschrieben [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
- Wenn Sie das Manifest signieren möchten, müssen die Hashes für alle Dateien angegeben werden. Ein Manifest mit Dateien, die nicht gehasht kann nicht signiert werden, da Benutzer den Inhalt von nicht gehashten Format vorliegen Dateien überprüft werden können.  
+ Wenn Sie das Manifest signieren möchten, müssen die Hashes für alle Dateien angegeben werden. Ein Manifest mit Dateien, die nicht hinzugefügt werden kann nicht signiert werden, da der Benutzer den Inhalt nicht gehashten Format vorliegen Dateien nicht überprüfen können.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel veranschaulicht eine `Signature` Element in einem Bereitstellungsmanifest verwendet eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.  
+ Im folgenden Codebeispiel wird veranschaulicht, eine `Signature` Element in einem Bereitstellungsmanifest verwendet eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.  
   
 ```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

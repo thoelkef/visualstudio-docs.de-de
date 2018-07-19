@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: angeben eine Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft Docs'
+title: 'Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02dfd64d7a6b3a2ffae49e5693bdac8ebdf2ad0f
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 3c4102decf844d70d85342aae9f140610102ff58
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815648"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077782"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
-Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der Bereitstellung können Sie für eine Reihe von erforderlichen Komponenten, die auf dem Clientcomputer verfügbar sein müssen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt. Diese Abhängigkeiten enthalten, die erforderliche Mindestversion von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jedoch nicht installieren diese erforderlichen Komponenten selbst; Wenn eine erforderliche Komponente nicht gefunden wird, einfach Installation anhält und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation gesucht.  
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: angeben ein Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
+Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der Bereitstellung können Sie für eine Reihe von Voraussetzungen, die auf dem Clientcomputer für verfügbar sein müssen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt. Diese Abhängigkeiten enthalten, die mindestens erforderliche Version von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], kann jedoch nicht installiert diese erforderlichen Komponenten selbst Wenn eine erforderliche Komponente nicht gefunden wird, wird die Installation angehalten es einfach an und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation an.  
   
- Es gibt zwei Methoden für die Installation der erforderlichen Komponenten. Sie können sie mit einem Bootstrapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die Benutzern im Dialogfeld angezeigt wird, wenn die erforderliche Komponente nicht gefunden wird. Die Seite, die auf diese URL verweist, kann Links zu Anweisungen zum Installieren der erforderlichen Komponente enthalten. Wenn eine Anwendung keine Support-URL für eine einzelne erforderliche Komponente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt die Support-URL angegeben, die im Bereitstellungsmanifest für die Anwendung als Ganzes, wenn er definiert ist.  
+ Es gibt zwei Methoden zum Installieren der erforderlichen Komponenten. Sie können sie mit der eine Bootstrapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die für Benutzer im Dialogfeld angezeigt wird, wenn die erforderliche Komponente nicht gefunden wird. Die Seite, die auf diese URL verweist, kann Links zu Anweisungen zum Installieren der erforderlichen Komponente enthalten. Wenn eine Anwendung eine Support-URL für eine einzelne erforderliche Komponente, nicht angeben, wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt die Support-URL in das Bereitstellungsmanifest für die Anwendung als Ganzes angegeben, wenn er definiert ist.  
   
- Während [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Mage.exe und MageUI.exe alle dienen zum Generieren von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen keines dieser Tools direkt unterstützen eine Support-URL für einzelne erforderliche Komponenten angeben. Dieses Dokument wird beschrieben, wie so ändern Sie Ihre Bereitstellung Anwendungsmanifest und das Bereitstellungsmanifest, dazu gehören support-URLs.  
+ Während [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *Mage.exe*, und *MageUI.exe* alle dienen zum Generieren von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen keines dieser Tools direkt unterstützt angeben eines Support-URLs für einzelne Erforderliche Komponenten. In diesem Dokument wird beschrieben, wie so ändern Sie der Bereitstellung des Anwendungs- und Bereitstellungsmanifest, dazu gehören support-URLs.  
   
-### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Angeben einer Support-URL für eine einzelne erforderliche Komponente  
+### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Geben Sie eine Support-URL für eine einzelne erforderliche Komponente  
   
-1.  Öffnen Sie das Anwendungsmanifest (die `.manifest` Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
+1.  Öffnen Sie das Anwendungsmanifest (die *". manifest"* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
   
 2.  Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
   
@@ -47,7 +47,7 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der
       </dependency>  
     ```  
   
-3.  Fügen Sie für eine Voraussetzung für eine bestimmte Version der common Language Runtime, die `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
+3.  Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
   
     ```xml  
       <dependency>  
@@ -67,9 +67,9 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der
       </dependency>  
     ```  
   
-5.  Dies ist optional. Für Anwendungen, die auf .NET Framework 4 abzielen öffnen Sie das Bereitstellungsmanifest (die `.application` Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
+5.  Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die *.application* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
   
-6.  Erforderliche .NET Framework 4, fügen die `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
+6.  Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
   
     ```xml  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -78,10 +78,10 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der
     </compatibleFrameworks>  
     ```  
   
-7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut die Anwendungsmanifestdatei mithilfe Ihrer digitale Zertifikat signieren und dann zu aktualisieren und als auch das Bereitstellungsmanifest erneut signieren. Verwenden Sie Mage.exe oder MageUI.exe SDK-Tools für diese Aufgabe als Neugenerieren diese Dateien mithilfe [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] löscht manuellen Änderungen. Weitere Informationen zur Verwendung von Mage.exe zum Manifest neu signieren finden Sie unter [wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden der *Mage.exe* oder *MageUI.exe* SDK-Tools für diese Aufgabe als neu generiert diese Dateien mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
- Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit gekennzeichnet ist.  
+## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
+ Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890213"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131868"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Gewusst wie: Debuggen für absolute Anfänger
 
@@ -41,7 +41,7 @@ Es hilft, um das Problem zu ermitteln, dem Sie in ausgeführt haben, bevor Sie v
 
 ## <a name="examine-your-assumptions"></a>Überprüfen Sie Ihre Annahmen
 
-Bevor Sie einen Fehler oder einen Fehler untersuchen, stellen Sie die Annahmen, die Sie erwarten, dass eine bestimmte Ergebnis vorgenommen. Können zugreifbarkeitsmodifizierer machen es ausgeblendet oder unbekannte Annahmen Identifizieren eines Problems, selbst wenn Sie rechts auf die Ursache des Problems in einem Debugger suchen. Sie müssen möglicherweise eine lange Liste von möglichen Annahmen! Hier sind einige Fragen helfen Ihnen, Ihre Annahmen Herausforderung werden.
+Bevor Sie einen Fehler oder einen Fehler untersuchen, stellen Sie die Annahmen, die Sie erwarten, dass eine bestimmte Ergebnis vorgenommen. Können zugreifbarkeitsmodifizierer machen es ausgeblendet oder unbekannte Annahmen Identifizieren eines Problems, selbst wenn Sie rechts auf die Ursache des Problems in einem Debugger suchen. Sie müssen möglicherweise eine lange Liste von möglichen Annahmen! Hier sind einige Fragen helfen Ihnen, Ihre Annahmen Herausforderung.
 
 * Verwenden Sie die richtige-API (d. h. die Rechte Objekt, -Funktion, Methode oder Eigenschaft)? Eine API, die Sie verwenden möglicherweise nicht, was Sie denken, dass dies der Fall ist. (Nach dem Sie den API-Aufruf im Debugger untersuchen, kann deren Behebung eine Reise in der Dokumentation zur Identifizierung, dass die richtige API erfordern.)
 
@@ -322,7 +322,7 @@ Wenn Sie den Codebereich mit dem Problem finden, verwenden Sie den Debugger unte
 
 * [Untersuchen Sie Variablen](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) und überprüfen Sie, ob sie den Typ der Werte enthalten, die sie enthalten soll. Wenn Sie einen falschen Wert finden, herauszufinden, wo der ungültige Wert festgelegt wurde (um zu suchen, in denen der Wert festgelegt wurde, müssen möglicherweise entweder den Debugger starten, sehen Sie sich die [Aufrufliste](../debugger/how-to-use-the-call-stack-window.md), oder beides).
 
-* Überprüfen Sie, ob Ihre Anwendung den Code ausführt, den Sie erwarten. (Z. B. in der beispielanwendung, erwartet wurde den Code für die Switch-Anweisung für den Typ des Galaxy festzulegen, irregulär, aber die app wurde übersprungen, den Code der Tippfehler.)
+* Überprüfen Sie, ob Ihre Anwendung den Code ausführt, den Sie erwarten. (Z. B. in der beispielanwendung, erwartet wurde des Codes für die Switch-Anweisung beim Festlegen des Galaxy-Typs, unregelmäßige, aber die app wurde übersprungen, den Code der Tippfehler.)
 
 > [!TIP]
 > Sie können einen Debugger verwenden, können Sie die Fehler zu finden. Ein Tool zum Debuggen finden Fehler *für Sie* nur dann, wenn die Absicht des Codes bekannt ist. Ein Tool kann nur die Absicht des Codes bekannt, wenn Sie als Entwickler können diese Absicht Ausdrücken. Schreiben von [Komponententests](../test/improve-code-quality.md) ist, wie Sie dies tun.
