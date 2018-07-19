@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297595"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurieren von Ports für Testcontroller und Test-Agents
 
@@ -33,22 +34,22 @@ Sie können die vom Testcontroller, Test-Agent und Client verwendeten Standardpo
 
 Der vom Testcontroller verwendete Standardport ist 6901, und der Standardport des Test-Agents ist 6910. Der Client verwendet standardmäßig einen zufälligen Port, mit dem die Testergebnisse vom Testcontroller empfangen werden. Für alle eingehenden Verbindungen authentifiziert der Testcontroller die aufrufende Partei und überprüft, ob sie zu einer bestimmten Sicherheitsgruppe gehört.
 
-- **Testcontroller** Für eingehende Verbindungen wird TCP-Port 6901 verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren eingehender Ports](#ConfigurePorts).
+- **Testcontroller** Für eingehende Verbindungen wird TCP-Port 6901 verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren der eingehenden Ports](#configure-the-incoming-ports).
 
     Der Testcontroller muss ausgehende Verbindungen mit Test-Agents und dem Client herstellen können.
 
     > [!NOTE]
     > Für den Testcontroller muss die eingehende Verbindung für **Datei- und Druckerfreigabe** geöffnet sein.
 
-- **Test-Agent** Für eingehende Verbindungen wird TCP-Port 6910 verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren eingehender Ports](#ConfigurePorts).
+- **Test-Agent** Für eingehende Verbindungen wird TCP-Port 6910 verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren der eingehenden Ports](#configure-the-incoming-ports).
 
    Der Test-Agent muss ausgehende Verbindungen mit dem Testcontroller herstellen können.
 
-- **Client** Standardmäßig wird ein zufälliger TCP-Port für eingehende Verbindungen verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren eingehender Ports](#ConfigurePorts).
+- **Client** Standardmäßig wird ein zufälliger TCP-Port für eingehende Verbindungen verwendet. Konfigurieren Sie ggf. den eingehenden Port. Weitere Informationen finden Sie unter [Konfigurieren der eingehenden Ports](#configure-the-incoming-ports).
 
    Möglicherweise erhalten Sie Firewallbenachrichtigungen, wenn vom Testcontroller das erste Mal eine Verbindung mit dem Client hergestellt wird.
 
-   Unter Windows Server 2008 werden die Firewallbenachrichtigungen standardmäßig deaktiviert. Sie müssen Firewallausnahmen für Clientprogramme (devenv.exe, mstest.exe, mlm.exe) manuell hinzufügen, damit eingehende Verbindungen akzeptiert werden.
+   Unter Windows Server 2008 werden die Firewallbenachrichtigungen standardmäßig deaktiviert. Sie müssen Firewallausnahmen für Clientprogramme (*devenv.exe*, *mstest.exe*, *mlm.exe*) manuell hinzufügen, damit eingehende Verbindungen akzeptiert werden.
 
 ## <a name="outgoing-connections"></a>Ausgehende Verbindungen
 
@@ -64,7 +65,7 @@ Für alle ausgehenden Verbindungen werden zufällige TCP-Ports verwendet.
 
 Folgen Sie diesen Anweisungen, um die Ports für einen Testcontroller und Test-Agents zu konfigurieren.
 
-- **Controllerdienst** Ändern Sie den Wert des Ports, indem Sie die Datei „%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config“ bearbeiten:
+- **Controllerdienst**: Ändern Sie den Wert des Ports, indem Sie die Datei *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* bearbeiten:
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ Folgen Sie diesen Anweisungen, um die Ports für einen Testcontroller und Test-A
     </appSettings>
     ```
 
-- **Agent-Dienst** Ändern Sie den Port, indem Sie die Datei „%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config“ bearbeiten:
+- **Agent-Dienst**: Ändern Sie den Port, indem Sie die Datei *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* bearbeiten:
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ Folgen Sie diesen Anweisungen, um die Ports für einen Testcontroller und Test-A
     </appSettings>
     ```
 
-- **Client** Fügen Sie die folgenden Registrierungswerte (DWORD) mithilfe des Registrierungs-Editors hinzu. Der Client verwendet einen der Ports aus dem angegebenen Bereich zum Empfangen von Daten vom Testcontroller:
+- **Client**: Fügen Sie die folgenden Registrierungswerte (**DWORD**) mithilfe des Registrierungs-Editors hinzu. Der Client verwendet einen der Ports aus dem angegebenen Bereich zum Empfangen von Daten vom Testcontroller:
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>Siehe auch
 

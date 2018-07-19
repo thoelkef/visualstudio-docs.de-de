@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668604"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Gewusst wie: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
@@ -44,7 +45,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 3.  Die Daten für jede Seite werden im Raster angezeigt. Normalerweise werden die nachfolgend aufgeführten Spalten angezeigt.
 
-    |||
+    |Spaltenüberschrift|Beschreibung |
     |-|-|
     |**Seite**|Der Name der Website.|
     |**Szenario**|Der Name des Szenarios. Wichtig, wenn mehr als ein Szenario im Webleistungstest enthalten ist.|
@@ -63,11 +64,11 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
     |**Ziel**|Das Seitenzeitziel. Dies ist ein konstanter Wert für die Seite. **Hinweis**: Das Seitenzeitziel wird nur angezeigt, wenn für die Anforderung ein Ziel im Webleistungstest definiert wurde.|
     |**%: Ziel erreicht**|Prozentualer Anteil der für die Webseite ausgeführten Anforderungen, die dem Antwortzeitziel entsprachen.|
 
- Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+ Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Anzeigen von Antwortzeitdaten in einem Diagramm
 
-Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können Sie die Änderungen während des Auslastungstests verfolgen. Diese Funktion ist besonders hilfreich, wenn sich das Auslastungsmuster im Verlauf des Tests erhöht (was z. B. bei einem schrittweisen Auslastungsmuster der Fall ist). Weitere Informationen finden Sie unter [Editing Load Patterns to Model Virtual User Activities (Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten)](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können Sie die Änderungen während des Auslastungstests verfolgen. Diese Funktion ist besonders hilfreich, wenn sich das Auslastungsmuster im Verlauf des Tests erhöht (was z. B. bei einem schrittweisen Auslastungsmuster der Fall ist). Weitere Informationen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>So zeigen Sie Antwortzeitdaten in einem Diagramm an
 
@@ -90,10 +91,10 @@ Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können
     > [!NOTE]
     > Seitenantwortzeitziel ist ein konstanter Wert.
 
- Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen in der Diagrammansicht](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [Gewusst wie: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
