@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, di
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199867"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280545"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
@@ -26,21 +26,21 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
 
 2. Je nach Konto werden Sie entweder auf die Anmeldeseite Ihrer Organisation oder die Anmeldeseite für Ihr Microsoft-Konto weitergeleitet.   Geben Sie in beiden Fällen Ihren Benutzernamen und Ihr Kennwort ein, und klicken Sie auf **Weiter**.
 
-3. Sobald der Anmeldevorgang abgeschlossen ist, sollte die Seite mit den Abonnementvorteilen angezeigt werden.  Wenn Sie über mehrere Abonnements verfügen, können Sie dazwischen wechseln, indem Sie auf den Dropdownpfeil in der oberen rechten Ecke unterhalb des schwarzen Menübands klicken.  Die Kachel „Vorteile“ für das Office 365-Entwicklerabonnement finden Sie in der Kategorie „Tools“ (Extras).  Verwenden Sie den Pfeil rechts neben der Zeile mit den Kacheln, und scrollen Sie zur Kachel „Office“. 
+3. Sobald der Anmeldevorgang abgeschlossen ist, sollte die Seite mit den Abonnementvorteilen angezeigt werden.  Wenn Sie über mehrere Abonnements verfügen, können Sie dazwischen wechseln, indem Sie auf den Dropdownpfeil in der oberen rechten Ecke unterhalb des schwarzen Menübands klicken.  Die Kachel „Vorteile“ für das Office 365-Entwicklerabonnement finden Sie in der Kategorie „Tools“ (Extras).  Verwenden Sie den Pfeil rechts neben der Zeile mit den Kacheln, und scrollen Sie zur Kachel „Office“.
 
-4. Suchen Sie im Abschnitt „Tools“ nach der Kachel für das Office 365-Entwicklerabonnement.  Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Wenn der Code abgerufen wurde, klicken Sie auf **Aktivieren**. 
+4. Suchen Sie im Abschnitt „Tools“ nach der Kachel für das Office 365-Entwicklerabonnement.  Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Wenn der Code abgerufen wurde, klicken Sie auf **Aktivieren**.
 
     ![Kachel „Vorteile“ für Office 365 für Entwickler](_img\vs-office-dev\vs-office-dev-tile.png)
 
-5.  Erstellen Sie im nächsten Schritt ein Konto.  Geben Sie Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter**. 
+5.  Erstellen Sie im nächsten Schritt ein Konto.  Geben Sie Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter**.
 
     ![Office 365-Vorteil für Entwickler: Konto](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-6.  Stellen Sie die angeforderten Information zur Verwendung des Abonnements bereit, und klicken Sie auf **Weiter**.  Diese Angaben werden verwendet, um die Verfügbarkeit des Abonnements und die Höhe von möglicherweise anfallenden Steuern zu prüfen.  
+6.  Stellen Sie die angeforderten Information zur Verwendung des Abonnements bereit, und klicken Sie auf **Weiter**.  Diese Angaben werden verwendet, um die Verfügbarkeit des Abonnements und die Höhe von möglicherweise anfallenden Steuern zu prüfen.
 
     ![Office 365-Vorteil für Entwickler: Kontaktinformationen](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-7.  Erstellen Sie einen Benutzernamen und ein Kennwort für Ihr Konto.  
+7.  Erstellen Sie einen Benutzernamen und ein Kennwort für Ihr Konto.
 
     ![Office 365-Vorteil für Entwickler: Benutzername](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
@@ -48,23 +48,23 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
 
 9.  Möglicherweise werden Sie an dieser Stelle aufgefordert, sich anzumelden.  Wenn auf der Anmeldeseite von Office 365 mehr als ein Konto angezeigt wird, wählen Sie bitte das Konto aus, das diesem Abonnement zugeordnet ist.
 
-10. Auf der nächsten Seite erhalten Sie die Bestätigung, dass Ihr Abonnement gratis verfügbar ist.  Klicken Sie auf **Weiter**, um fortzufahren.  
+10. Auf der nächsten Seite erhalten Sie die Bestätigung, dass Ihr Abonnement gratis verfügbar ist.  Klicken Sie auf **Weiter**, um fortzufahren.
 
     ![Office 365-Vorteil für Entwickler: Aufbau](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. Sobald Sie Schritt 3 abgeschlossen haben, werden Sie aufgefordert, eine Zahlungsmethode anzugeben.  Sie können aus zwei Zahlungsoptionen auswählen.  Geben Sie entweder Ihre **Kreditkarteninformationen** ein (in der Abbildung unten dargestellt), oder wählen Sie die Option **Rechnung** aus.  In beiden Fällen wird eine Bestellung über 0 $ aufgegeben, wenn Sie auf **Bestellung aufgeben** klicken.   
+11. Sobald Sie Schritt 3 abgeschlossen haben, werden Sie aufgefordert, eine Zahlungsmethode anzugeben.  Sie können aus zwei Zahlungsoptionen auswählen.  Geben Sie entweder Ihre **Kreditkarteninformationen** ein (in der Abbildung unten dargestellt), oder wählen Sie die Option **Rechnung** aus.  In beiden Fällen wird eine Bestellung über 0 $ aufgegeben, wenn Sie auf **Bestellung aufgeben** klicken.
 
     > [!NOTE]
     > Wenn Sie keine Kreditkarteninformationen angeben möchten, wählen Sie **Rechnung** als Zahlungsmethode aus.  Sie können **Pay by the year** („Jährliche Zahlung“) auswählen, damit Sie nur einmal im Jahr eine Rechnung erhalten.
 
-12. Nun haben Sie den Vorteil Ihres Office 365-Entwicklerabonnement erfolgreich eingelöst.  Es sollte eine Seite angezeigt werden, auf der Ihre Bestellung bestätigt wird.  Auf der Seite wird ein Link zur [Anmeldeseite](https://portal.office.com "Anmeldeseite für Office 365") zur Verfügung gestellt.  Es wird empfohlen, ein Lesezeichen hinzuzufügen, damit Sie die Seite später nicht suchen müssen.  Sie sollten sich außerdem die Benutzer-ID merken, die auf der Seite angezeigt wird.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Klicken Sie auf **Setup starten**, um fortzufahren.  
+12. Nun haben Sie den Vorteil Ihres Office 365-Entwicklerabonnement erfolgreich eingelöst.  Es sollte eine Seite angezeigt werden, auf der Ihre Bestellung bestätigt wird.  Auf der Seite wird ein Link zur [Anmeldeseite](https://portal.office.com "Anmeldeseite für Office 365") zur Verfügung gestellt.  Es wird empfohlen, ein Lesezeichen hinzuzufügen, damit Sie die Seite später nicht suchen müssen.  Sie sollten sich außerdem die Benutzer-ID merken, die auf der Seite angezeigt wird.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Klicken Sie auf **Setup starten**, um fortzufahren.
 
     ![Office 365-Vorteil für Entwickler: Bestellung wird bestätigt](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included      |  Ja          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included      |  Ja          |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |NA         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
@@ -73,7 +73,7 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
 
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht: Microsoft Partner Network (MPN), Imagine, Microsoft Valued Partner (MVP), Region Director (RD).*
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -90,7 +90,7 @@ A: Einrichten der Office 365-Abonnementvorteile für Entwickler
     ![Office 365-Vorteil für Entwickler: Admin Center](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
-3.  In Schritt 2 können Administratoren dem Office 365-Konto Benutzer hinzufügen.  Fügen Sie die gewünschten Benutzer hinzu, und klicken Sie auf **Weiter**.  
+3.  In Schritt 2 können Administratoren dem Office 365-Konto Benutzer hinzufügen.  Fügen Sie die gewünschten Benutzer hinzu, und klicken Sie auf **Weiter**.
 
 4.  In Schritt 3 können Sie Ihre Office-Apps installieren.  Sie können die Installation sofort oder zu einem späteren Zeitpunkt durchführen.  Klicken Sie auf eine der zugehörigen **Jetzt installieren**-Schaltflächen, um Office Professional Plus oder Skype for Business zu installieren.  Ihr Abonnement von Office 365-ProPlus beinhaltet:
     - Word
@@ -103,18 +103,18 @@ A: Einrichten der Office 365-Abonnementvorteile für Entwickler
     - Skype for Business
     - OneDrive for Business
 
-5.  Wählen Sie die von Ihnen bevorzugte Sprache aus, und klicken Sie auf **Installieren**. 
+5.  Wählen Sie die von Ihnen bevorzugte Sprache aus, und klicken Sie auf **Installieren**.
 
     ![Office 365-Vorteil für Entwickler: Installieren von Apps](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
 
 6. Klicken Sie auf **Ausführen**, um sofort mit dem Installationsvorgang zu beginnen, oder klicken Sie auf **Speichern**, um das Installationspaket für eine Installation zu einem späteren Zeitpunkt auf dem Computer zu speichern.
 
-7.  Wenn das Dialogfeld „Benutzerkontensteuerung“ angezeigt wird, klicken Sie auf **Ja**, damit die Installation von Office durchgeführt werden kann.  
+7.  Wenn das Dialogfeld „Benutzerkontensteuerung“ angezeigt wird, klicken Sie auf **Ja**, damit die Installation von Office durchgeführt werden kann.
 
 
 ### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>F: Wie aktualisiere ich die Anzahl von Benutzern über das Office 365-Verwaltungsportal?
-A: Wenn Sie während des Einlösevorgangs nicht die erforderliche Anzahl von Benutzern angegeben haben und diese Anzahl zu einem späteren Zeitpunkt erhöhen möchten, führen Sie die folgenden Schritte aus. 
+A: Wenn Sie während des Einlösevorgangs nicht die erforderliche Anzahl von Benutzern angegeben haben und diese Anzahl zu einem späteren Zeitpunkt erhöhen möchten, führen Sie die folgenden Schritte aus.
 
 1. Damit Sie Benutzer nach Abschluss des Einlösevorgangs hinzufügen können, müssen Sie zum Office-Portal ([https://portal.office.com](https://portal.office.com)) wechseln und sich mit der Benutzer-ID anmelden, die Sie bei der Erstellung des Mandanten erstellt haben.
 
@@ -136,5 +136,5 @@ A: Wenn Sie während des Einlösevorgangs nicht die erforderliche Anzahl von Ben
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

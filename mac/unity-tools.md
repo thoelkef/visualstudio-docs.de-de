@@ -5,18 +5,18 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f80debf3098fd8296ddfa205db3ed296707e23c0
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572416"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279849"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio für Mac-Tools für Unity
 
 ![Stilisiertes Bild von Unity und Visual Studio für Mac](media/vsmac-tools-unity-image1.png)
 
-Visual Studio für Mac Tools für Unity ist eine kostenlose Erweiterung, die Visual Studio für Mac zu einem leistungsstarken Tool zur Entwicklung plattformübergreifender Spiele mit der Unity-Plattform macht. 
+Visual Studio für Mac Tools für Unity ist eine kostenlose Erweiterung, die Visual Studio für Mac zu einem leistungsstarken Tool zur Entwicklung plattformübergreifender Spiele mit der Unity-Plattform macht.
 
 Unity ist standardmäßig in Visual Studio für Mac integriert. Ab Unity 2018.1 ist Visual Studio für Mac die C#-Standard-IDE für Unity-Projekte.
 
@@ -26,7 +26,7 @@ Dies sind einige der wichtigsten Funktionen der Visual Studio für Mac-Tools fü
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Mit Visual Studio Community für Mac kompatibel
 
-[Visual Studio für Mac Community Edition](https://www.visualstudio.com/) ist kostenlos und enthält die Unity-Installationsdateien ab Unity 2018.1. Weitere Informationen finden Sie in der [Dokumentation zum Einrichten von Visual Studio für Mac für Unity](setup-vsmac-tools-unity.md).
+[Visual Studio für Mac Community Edition](https://visualstudio.microsoft.com/) ist kostenlos und enthält die Unity-Installationsdateien ab Unity 2018.1. Weitere Informationen finden Sie in der [Dokumentation zum Einrichten von Visual Studio für Mac für Unity](setup-vsmac-tools-unity.md).
 
 ### <a name="intellisense-for-unity-messages"></a>IntelliSense für Unity-Nachrichten
 

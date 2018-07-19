@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815021"
 ---
 # <a name="test-generation"></a>Testerzeugung
 
@@ -27,7 +28,7 @@ Unittests haben in der Regel die folgenden Bestandteile:
 
 Im Folgenden finden Sie eine Beispielteststruktur:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Wenn IntelliTest Objekte erstellen muss, werden der Sequenz nach Bedarf automati
 
 PUTs werden mit dem benutzerdefinierten [PexMethod](attribute-glossary.md#pexmethod)-Attribut definiert, ähnlich wie MSTest (oder NUnit, xUnit). PUTs sind Instanzmethoden, die logisch in Klassen gruppiert sind, die mit [PexClass](attribute-glossary.md#pexclass) markiert wurden. Das folgende Beispiel zeigt einen einfachen PUT, der in der **MyPexTest**-Klasse gespeichert ist:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 wobei **ReplaceFirstChar** eine Methode ist, die das erste Zeichen einer Zeichenfolge ersetzt:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Aus diesen Test kann IntelliTest für einen PUT, die viele Ausführungspfade des getesteten Codes abdeckt, automatisch [Eingaben generieren](input-generation.md). Jede Eingabe, die einen unterschiedlichen Ausführungspfad abdeckt, wird als ein Unittest „serialisiert“:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Parametrisierte Unittests können generische Methoden sein. In diesem Fall muss der Benutzer die verwendeten Typen angeben, um die Methode mit [PexGenericArguments](attribute-glossary.md#pexgenericarguments) zu instanziieren.
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest bietet zahlreiche Validierungsattribute, um bei der Selektierung der
 
 Erwartete Ausnahmen generieren negative Testfälle mit den entsprechenden Anmerkungen wie z.B. **ExpectedException(typeof(*xxx*))**, während unerwartete Ausnahmen fehlgeschlagene Testfälle generieren.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ Die Validierungssteuerelemente sind:
 
 IntelliTest kann interne Typen „testen“, sofern sie angezeigt werden können. Damit IntelliTest die folgenden Typen erkennen kann, wird das folgende Attribut Ihrem Produkt oder Testprojekt von den Visual Studio-IntelliTest-Assistenten hinzugefügt:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Benutzer können Annahmen und Assertionen verwenden, um [Vorbedingungen](#precon
 
 Assertionen sind ein bekanntes Konzept in regulären Unittest-Frameworks, weshalb IntelliTest die integrierten **Assert**-Klassen, die von jedem unterstützten Testframework bereitgestellt werden, bereits „versteht“. Die meisten Frameworks stellen jedoch keine **Assume**-Klasse zur Verfügung. In diesem Fall stellt IntelliTest die [PexAssume](static-helper-classes.md#pexassume)-Klasse zur Verfügung. Wenn Sie kein bereits vorhandenes Testframework verwenden, verfügt IntelliTest auch über die [PexAssert](static-helper-classes.md#pexassert)-Klasse.
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 Insbesondere kann die „Non-Nullness“-Annahme („Nicht-NULL“-Annahme) als benutzerdefiniertes Attribut codiert werden:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ Im Rahmen der Integration mit Testframeworks unterstützt IntelliTest das Erkenn
 
 **Beispiel**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

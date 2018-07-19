@@ -9,16 +9,16 @@ description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgew�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199182"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280376"
 ---
-# <a name="azure-community"></a>Azure-Community  
+# <a name="azure-community"></a>Azure-Community
 
-Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.  
+Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-
 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-Die ersten Schritte mit der Azure-Community sind ganz einfach.  
+Die ersten Schritte mit der Azure-Community sind ganz einfach.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure-Community“, und klicken Sie auf den Link **Hilfe erhalten**. 
+2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure-Community“, und klicken Sie auf den Link **Hilfe erhalten**.
 
    ![Kachel für die Azure-Community](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Sie sehen eine Liste der verfügbaren Foren.  Klicken Sie einfach auf ein Forum Ihrer Wahl.  
+3. Sie sehen eine Liste der verfügbaren Foren.  Klicken Sie einfach auf ein Forum Ihrer Wahl.
 
    ![Azure-Communityforen](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  Innerhalb eines Forums können Sie Themen und Antworten anzeigen, nach Antworten auf Ihre Frage suchen oder eine neue Frage stellen. 
+4.  Innerhalb eines Forums können Sie Themen und Antworten anzeigen, nach Antworten auf Ihre Frage suchen oder eine neue Frage stellen.
 
    ![Azure-Community – Beispiel](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -53,7 +53,7 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail   | Ein Jahr      |  Ja          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail   | Ein Jahr      |  Ja          |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit)  | VL, Azure, Retail                                      | Ein Jahr                                                           |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Ein Jahr                                             |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              |Ein Jahr                                              |  Ja          |
@@ -62,10 +62,10 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 |
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Weitere Azure-Communityressourcen finden Sie auf der [Supportseite](https://azure.microsoft.com/support/forums/) der Azure-Community.
 -  [Azure-Dokumentation](/azure/).
--  Benötigen Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements?  Wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Benötigen Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements?  Wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

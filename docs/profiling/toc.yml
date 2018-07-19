@@ -26,9 +26,6 @@
   items:
     - name: Analysieren der CPU-Auslastung
       href: cpu-usage.md
-      items:
-        - name: Analysieren der CPU-Auslastung in einer universellen Windows-App (UWP)
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Analysieren der Speicherauslastung
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Analysieren von JavaScript-Speicher
       href: javascript-memory.md
-      items:
-        - name: 'Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Analysieren der Netzwerkverwendung
       href: network-usage.md
     - name: Analysieren der HTML-UI-Reaktionsfähigkeit
       href: html-ui-responsiveness.md
-      items:
-        - name: 'Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Verwenden des Leistungs-Explorers
       href: performance-explorer.md
       items:

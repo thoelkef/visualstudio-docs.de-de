@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973707"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757203"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow-Designer-Shellfunktionen
 
-Windows Workflow-Designer besteht aus drei Hauptbereichen Benutzeroberfläche: der Designeroberfläche, der Breadcrumb-Leiste darüber und der Shell darunter. Die Breadcrumb-Leiste am oberen Fensterrand dient zur Anzeige der Vorgängerliste für die aktuelle Stammaktivität. Weitere Informationen finden Sie unter [Vorgehensweise: verwenden Breadcrumbnavigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). Die Designeroberfläche im mittleren Bereich dient zum Erstellen von Workflows. Die Shell am unteren Fensterrand enthält eine Reihe von Schaltflächen zum Verwalten der aktuellen Ansicht.
+Workflow-Designer besteht aus drei wesentlichen Bereiche der Benutzeroberfläche: der Designeroberfläche, der Breadcrumb-Leiste darüber und der Shell darunter. Die Breadcrumb-Leiste am oberen Fensterrand dient zur Anzeige der Vorgängerliste für die aktuelle Stammaktivität. Weitere Informationen finden Sie unter [Vorgehensweise: verwenden Brotkrümelnavigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). Die Designeroberfläche im mittleren Bereich dient zum Erstellen von Workflows. Die Shell am unteren Fensterrand enthält eine Reihe von Schaltflächen zum Verwalten der aktuellen Ansicht.
 
 ## <a name="shell-features"></a>Shell-Funktionen
  Auf der rechten Seite der Shell-Leiste befinden sich Schaltflächen zum Vergrößern bzw. Verkleinern der Workflowgrafik, zum Anpassen des Workflowinhalts an die Bildschirmgröße und zum Einblenden bzw. Ausblenden der Übersichtskarte. Sie können die Workflowgrafik auch mit den Tastenkombinationen STRG++ und STRG+- vergrößern bzw. verkleinern.
@@ -35,8 +35,8 @@ Windows Workflow-Designer besteht aus drei Hauptbereichen Benutzeroberfläche: d
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopieren und Speichern von Workflows als Bilder
  Workflows können im Bitmapformat kopiert und im Bitmap- oder Vektorformat gespeichert werden. Das Kopieren bzw. Speichern eines Bilds bietet die Möglichkeit, eine Ansicht der gesamten Aktivität des aktuellen Breadcrumb-Stamms in ein anderes Programm zu exportieren, einschließlich aller untergeordneten Elemente und zugehörigen erweiterten untergeordneten Elemente.
 
- Um als Bild zu kopieren, mit der rechten Maustaste an einer beliebigen Stelle im Designer, und wählen Sie **als Bild kopieren**. Um als Bild zu speichern, mit der rechten Maustaste an einer beliebigen Stelle im Designer, und wählen Sie **speichern als Bild**. Workflows können in den Formaten JPG, PNG, GIF und XPS gespeichert werden. Das Format ausgewählt ist, auf die **speichern unter** im Dialogfeld die **Dateityp:** Dropdown-Listenfeld am unteren Rand des Fensters.
+ Um als Bild zu kopieren, mit der rechten Maustaste an einer beliebigen Stelle im Designer, und wählen Sie **als Bild kopieren**. Um als Bild speichern, mit der rechten Maustaste an einer beliebigen Stelle im Designer, und wählen Sie **als Bild speichern**. Workflows können in den Formaten JPG, PNG, GIF und XPS gespeichert werden. Das Format ausgewählt ist, auf die **speichern unter** im Dialogfeld die **Dateityp:** Dropdownliste am unteren Rand des Fensters.
 
 ## <a name="fonts-and-colors"></a>Schriftarten und Farben
 
-Die im Workflow-Designer in Visual Studio 2010 verwendeten Schriftarten werden von der Umgebungsschriftart gesteuert. Die Farben im Workflow-Designer ändern, wenn Sie ein Farbschema für hohen Kontrast für Ihr Design des Betriebssystems verwenden. Sie müssen Visual Studio 2010 neu starten, nachdem nur eine Änderung an den Schriftart- oder farbeinstellungen vorgenommen, damit die Änderungen im Workflow-Designer wirksam.
+Die im Workflow-Designer in Visual Studio verwendeten Schriftarten werden von der Umgebungsschriftart gesteuert. Die Farben im Workflow-Designer ändern, wenn Sie ein Farbschema für hohen Kontrast für Ihr Betriebssystem Design verwenden. Sie müssen Visual Studio neu starten, nach einer Änderung an den Schriftart- oder farbeinstellungen vorgenommen, bevor die Änderungen im Workflow-Designer wirksam.

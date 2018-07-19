@@ -12,27 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971789"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755839"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Korrelation initialisieren (Dialogfeld)
 
-Die **Korrelation initialisieren** wird im Dialogfeld zum Bearbeiten in Windows Workflow-Designer verwendet die <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft ein <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivität. Weitere Informationen finden Sie unter der [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) Thema.
+Die **Korrelation initialisieren** wird das Dialogfeld zum Bearbeiten im Workflow-Designer verwendet die <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft eine <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivität. Weitere Informationen finden Sie unter [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Korrelation initialisieren** (Dialogfeld).
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Korrelation initialisieren** Dialogfeld:
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
 |**Korrelation**|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt der zu initialisierenden Korrelation.|
-|**Initialisieren mit**|Ein Schlüssel-Wert-Paar, das die Daten zum Initialisieren enthält. Dies entspricht der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>-Eigenschaft. Ein Beispiel für eine gültige Schlüssel-Wert-Paar wäre ein Schlüssel namens "OrderID" eine Variable mit dem Namen OrderID zugeordnet.|
+|**Initialisiert auf**|Ein Schlüssel-Wert-Paar, das die Daten zum Initialisieren enthält. Dieser Wert entspricht der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft. Ein Beispiel für ein gültiges Schlüssel-Wert-Paar ist ein Schlüssel namens "OrderID" zusammen mit einer Variablen namens "OrderID".|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>So starten Sie das Dialogfeld "Korrelation initialisieren"
 
--   Klicken Sie auf **Ansicht** auf die **InitializeCorrelation** -Aktivitätsdesigner oder wählen Sie eine <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivität im Workflow-Designer, und klicken Sie dann auf Schaltfläche mit den Auslassungspunkten neben der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft in der das Eigenschaftenraster.
+Klicken Sie auf **Ansicht** auf die **InitializeCorrelation** -Aktivitätsdesigner oder auf eine <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivität im Workflow-Designer. Klicken Sie dann ein, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft im Eigenschaftenraster.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453828"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280493"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Einrichten und Installieren von Visual Studio für Mac
 
@@ -27,7 +27,7 @@ Damit Visual Studio unter iOS funktioniert, benötigen Sie Folgendes:
 
 ## <a name="install"></a>Installieren
 
-1. Laden Sie Visual Studio für Mac unter [https://www.visualstudio.com/](https://www.visualstudio.com/) herunter.
+1. Laden Sie Visual Studio für Mac unter [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/) herunter.
 
 2. Wenn das Installer-Paket heruntergeladen wurde, klicken Sie auf die Datei **VisualStudioInstaller.dmg**, um den Installer einzubinden, und führen Sie in dann aus, indem Sie das Logo doppelklicken, wie in der folgenden Abbildung veranschaulicht:
 
@@ -84,7 +84,7 @@ Damit Visual Studio unter iOS funktioniert, benötigen Sie Folgendes:
   ![Öffnen Sie Visual Studio.](media/installer-image11.png)
 
 > [!NOTE]
-Wenn Sie sich gegen die Installation einer Plattform oder eines Tools während der ursprünglichen Installation entschieden haben (indem Sie die Auswahl in Schritt 6 gelöscht haben), müssen Sie den [Installer](https://www.visualstudio.com/vs/) erneut ausführen, wenn Sie die Komponenten später hinzufügen möchten.
+Wenn Sie sich gegen die Installation einer Plattform oder eines Tools während der ursprünglichen Installation entschieden haben (indem Sie die Auswahl in Schritt 6 gelöscht haben), müssen Sie den [Installer](https://visualstudio.microsoft.com/vs/) erneut ausführen, wenn Sie die Komponenten später hinzufügen möchten.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installieren von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver

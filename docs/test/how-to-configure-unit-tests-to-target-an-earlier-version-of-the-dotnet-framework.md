@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750739"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233489"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 
@@ -32,7 +32,7 @@ Sie können Komponententestprojekte erstellen, die auf bestimmte Versionen von .
 
 **Testen von SharePoint-Anwendungen**
 
-Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. Weitere Informationen zum Entwickeln von SharePoint-Anwendungen mit Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](/office-dev/office-dev/create-sharepoint-solutions), [Erstellen und Debuggen von SharePoint-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) und [Überprüfen und Debuggen von SharePoint-Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. Weitere Informationen zum Entwickeln von SharePoint-Anwendungen mit Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md), [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md) und [Überprüfen und Debuggen von SharePoint-Code](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Einschränkungen**
 
@@ -126,6 +126,6 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von SharePoint-Projektmappen](/office-dev/office-dev/create-sharepoint-solutions)
-- [Erstellen und Debuggen von SharePoint-Projektmappen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Erstellen von SharePoint-Projektmappen](../sharepoint/create-sharepoint-solutions.md)
+- [Erstellen und Debuggen von SharePoint-Projektmappen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694068"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282524"
 ---
 # <a name="features-of-visual-studio-2017"></a>Features von Visual Studio 2017
 
@@ -24,7 +24,7 @@ Der Artikel [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md
 
 Mit dem modularen Installer von Visual Studio können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner, d.h. Updates werden auch schneller installiert und aktualisiert.
 
-Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden Sie unter [Installieren von Visual Studio 2017 RC](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ Der verfügbare **verbundene Dienst** hängt vom Projekttyp ab. Fügen Sie einen
 
 ![Verbundene Dienste in Visual Studio](media/connected-services.png)
 
-Weitere Informationen finden Sie unter [Einstieg in die Cloud mit Visual Studio und Azure](https://www.visualstudio.com/vs/azure-tools/).
+Weitere Informationen finden Sie unter [Einstieg in die Cloud mit Visual Studio und Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
 
 ## <a name="create-apps-for-the-web"></a>Erstellen von Apps für das Web
 
 Das Web bestimmt unsere moderne Welt, und Visual Studio kann Ihnen helfen, Apps dafür zu schreiben. Sie können Web-Apps mit ASP.NET, Node.js, Python, JavaScript und TypeScript erstellen. Visual Studio erkennt Webframeworks wie Angular, jQuery, Express und mehr. ASP.NET Core und .NET Core sind unter Windows, Mac und Linux ausführbar. [ASP.NET Core](http://www.asp.net/core/overview) ist ein wichtiges Update für MVC, WebAPI und SignalR und kann unter Windows, Mac und Linux ausgeführt werden.  ASP.NET Core wurde von Grund auf als effizienter, zusammensetzbarer .NET-Stapel zum Erstellen moderner, cloudbasierter Web-Apps und Dienste entwickelt.
 
-Weitere Informationen finden Sie unter [Moderne Tools für die Entwicklung von Webanwendungen](https://www.visualstudio.com/vs/modern-web-tooling/).
+Weitere Informationen finden Sie unter [Moderne Tools für die Entwicklung von Webanwendungen](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Erstellen plattformübergreifender Apps und Spiele
 
-Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Windows, Android, iOS und andere [mobile Geräte](https://www.visualstudio.com/vs/mobile-app-development/) erstellen.
+Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Windows, Android, iOS und andere [mobile Geräte](https://visualstudio.microsoft.com/vs/mobile-app-development/) erstellen.
 
 - Entwickeln Sie [.NET Core](/dotnet/core/)-Apps, die unter Windows, macOS und Linux ausgeführt werden können.
 
@@ -122,7 +122,7 @@ Sie können die .NET Compiler Platform („Roslyn“) zum Schreiben eigener Code
 
 Suchen Sie nach [vorhandenen Erweiterungen](https://marketplace.visualstudio.com/vs) für Visual Studio, die von Microsoft-Entwicklern sowie unserer Entwickler-Community erstellt wurden.
 
-Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweitern der Visual Studio-IDE](https://www.visualstudio.com/vs/extend/).
+Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweitern der Visual Studio-IDE](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Siehe auch
 

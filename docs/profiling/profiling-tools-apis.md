@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255144"
 ---
 # <a name="profiling-tools-apis"></a>APIs für Profilerstellungstools
 Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eingeben, um die Datensammlung während einer Profilerstellung zu steuern. In diesem Abschnitt werden die Methoden der APIs sowie die Vorgehensweise für deren Verwendung beschrieben.  
@@ -30,7 +31,7 @@ Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../co
  In diesem ausführlichen Beispiel erhalten Sie Informationen zur Verwendung der Methoden der .NET-Profilerstellungstools.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)  
+ [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+ [Leistungs-Explorer](../profiling/performance-explorer.md)
