@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974335"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755226"
 ---
 # <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
 
-Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messagingaktivitäten, die senden und Empfangen von Nachrichten in einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). .NET Framework 4 führt fünf messaging-Aktivitäten und Windows Workflow-Designer stellt zwei neue Vorlagen-Designer, mit die Sie messaging innerhalb eines Workflows verwalten können. Die Themen in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführten enthalten Anleitungen zum Workflow-Designer-Aktivität und den Vorlagen-Designer verwenden.
+Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messaging-Aktivitäten, die senden und Empfangen von Nachrichten aus einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). .NET Framework 4 führt fünf messaging-Aktivitäten und der Workflow-Designer stellt zwei neue Vorlagen-Designer, die Sie zum Verwalten von messaging innerhalb eines Workflows aktivieren. Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle aufgeführten enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivität und den Vorlagen-Designer.
 
 ## <a name="reference"></a>Referenz
  <xref:System.Activities.Activity>

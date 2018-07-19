@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924221"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283125"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -36,7 +36,7 @@ Innerhalb der Visual Studio-Produktfamilie gibt es drei Methoden, die Sie zum Er
 | MSBuild-Befehlszeile| - Erstellen von Projekten, ohne Visual Studio zu installieren<br />- Ausführen von Multiprozessorbuilds für alle Projekttypen<br />- Anpassen der meisten Bereiche des Buildsystems|
 | Team Foundation Build | - Automatisieren des Buildprozesses als Teil einer fortlaufenden Integration oder einer fortlaufenden Zustellpipeline<br />- Anwenden von automatisierten Tests mit jedem Build<br />- Verwenden der praktisch unbegrenzten cloudbasierten Ressourcen für Ihren Buildprozesse<br />- Anpassen des Buildworkflows und Erstellen von Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben|
 
-Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Continuous integration and deployment (Fortlaufende Integration und Bereitstellung)](https://www.visualstudio.com/docs/build/overview).
+Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Continuous integration and deployment (Fortlaufende Integration und Bereitstellung)](/vsts/pipelines/index?view=vsts).
 
 ## <a name="overview-of-building-from-the-ide"></a>Überblick: Erstellen aus der IDE
 

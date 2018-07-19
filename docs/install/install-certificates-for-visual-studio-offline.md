@@ -14,18 +14,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d6b30f3b264e5bdffc5f9c0f36ba17e67e8a5d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31621167"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280441"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
 Visual Studio ist in erster Linie auf die Installation auf Computern mit Internetzugriff ausgelegt, da viele Komponenten regelmäßig aktualisiert werden. Mithilfe einiger zusätzlicher Schritte ist es jedoch möglich, Visual Studio in einer Umgebung bereitzustellen, in der keine funktionierende Internetverbindung vorhanden ist.
 
-Das Visual Studio-Setupprogramm installiert nur Inhalte, die als vertrauenswürdig eingestuft werden. Dies macht es, indem es Authenticode-Signaturen von Inhalten überprüft, die heruntergeladen werden, und vor deren Installation prüft, ob diese vertrauenswürdig sind. So wird Ihre Umgebung vor Angriffen geschützt, bei denen der Speicherort des Downloads kompromittiert wird. Das Setup von Visual Studio erfordert deshalb, dass mehrere Standardstamm- und Zwischenzertifikate von Microsoft auf dem Computer des Benutzers installiert und auf dem neuesten Stand sind. Wenn der Computer mit Windows Update auf dem neuesten Stand gehalten wird, sind die Signaturzertifikate in der Regel auf dem neuesten Stand. Wenn der Computer mit dem Internet verbunden ist, werden die Zertifikate während der Installation von Visual Studio bei Bedarf möglicherweise erneuert, um Dateisignaturen zu aktualisieren. Wenn der Computer offline ist, müssen die Zertifikate auf eine andere Art aktualisiert werden.
+Die Visual Studio-Setup-Engine installiert nur Inhalte, die als vertrauenswürdig eingestuft werden. Dies macht es, indem es Authenticode-Signaturen von Inhalten überprüft, die heruntergeladen werden, und vor deren Installation prüft, ob diese vertrauenswürdig sind. So wird Ihre Umgebung vor Angriffen geschützt, bei denen der Speicherort des Downloads kompromittiert wird. Das Setup von Visual Studio erfordert deshalb, dass mehrere Standardstamm- und Zwischenzertifikate von Microsoft auf dem Computer des Benutzers installiert und auf dem neuesten Stand sind. Wenn der Computer mit Windows Update auf dem neuesten Stand gehalten wird, sind die Signaturzertifikate in der Regel auf dem neuesten Stand. Wenn der Computer mit dem Internet verbunden ist, werden die Zertifikate während der Installation von Visual Studio bei Bedarf möglicherweise erneuert, um Dateisignaturen zu aktualisieren. Wenn der Computer offline ist, müssen die Zertifikate auf eine andere Art aktualisiert werden.
 
 ## <a name="how-to-refresh-certificates-when-offline"></a>Aktualisieren von Zertifikaten im Offlinemodus
 
@@ -115,7 +115,7 @@ Nach der Installation der Zertifikate kann die Bereitstellung von Visual Studio 
 
 ## <a name="get-support"></a>Support aufrufen
 
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
 

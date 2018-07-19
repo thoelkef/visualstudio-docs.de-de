@@ -1,5 +1,5 @@
 ---
-title: Direkten Zugriff auf die Datenbank mit einem TableAdapter
+title: Direktes Zugreifen auf die Datenbank mit einem TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,47 +25,47 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9985d9e072163bab722edde403ee1ec8aa801a69
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53d4b2e75be288422300122d5ef9f523068dd9fc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921061"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756453"
 ---
-# <a name="directly-access-the-database-with-a-tableadapter"></a>Direkten Zugriff auf die Datenbank mit einem TableAdapter
-Zusätzlich zu den `InsertCommand`, `UpdateCommand`, und `DeleteCommand`, TableAdapter-Erstellung Methoden, die direkt gegen die Datenbank ausgeführt werden können. Diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update`, und `TableAdapter.Delete`) aufgerufen werden, um Daten direkt in der Datenbank zu bearbeiten.
+# <a name="directly-access-the-database-with-a-tableadapter"></a>Direktes Zugreifen auf die Datenbank mit einem TableAdapter
+Zusätzlich zu den `InsertCommand`, `UpdateCommand`, und `DeleteCommand`, TableAdapter-Erstellung mit Methoden, die direkt in der Datenbank ausgeführt werden können. Sie können diese Methoden aufrufen (`TableAdapter.Insert`, `TableAdapter.Update`, und `TableAdapter.Delete`) zum Bearbeiten von Daten direkt in der Datenbank.
 
- Wenn Sie diese Methoden direkten erstellen möchten, legen Sie des TableAdapters `GenerateDbDirectMethods` Eigenschaft `false` in der **Eigenschaften** Fenster. Wenn alle Abfragen zu einem TableAdapter zusätzlich zur Hauptabfrage des TableAdapter hinzugefügt werden, sind sie eigenständigen Abfragen, die kein DbDirect-Methoden generieren.
+ Wenn Sie nicht diese direkten Methoden erstellen möchten, legen Sie der TableAdapters `GenerateDbDirectMethods` Eigenschaft `false` in die **Eigenschaften** Fenster. Wenn alle Abfragen zu einem TableAdapter neben der Hauptabfrage des TableAdapter hinzugefügt werden, sind sie eigenständige-Abfragen, die diese kein generieren `DbDirect` Methoden.
 
-## <a name="send-commands-directly-to-a-database"></a>Senden Sie Befehle direkt in einer Datenbank
- Rufen Sie die TableAdapter-DbDirect-Methode, die die Aufgabe ausführt, die Sie ausführen möchten.
+## <a name="send-commands-directly-to-a-database"></a>Senden von Befehlen direkt in einer Datenbank
+ Rufen Sie die `DbDirect` -Methode, die vom Task ausgeführten Sie ausführen möchten.
 
-#### <a name="to-insert-new-records-directly-into-a-database"></a>Zum Einfügen neuer Datensätze direkt in einer Datenbank
+#### <a name="to-insert-new-records-directly-into-a-database"></a>Zum Einfügen neuer Datensätze direkt in eine Datenbank
 
 -   Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
 
     > [!NOTE]
-    >  Instanziieren Sie den TableAdapter, die Sie verwenden möchten, wenn Sie keine Instanz zur Verfügung.
+    >  Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
 
      [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
      [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]
 
-#### <a name="to-update-records-directly-in-a-database"></a>Zum Aktualisieren von Datensätzen direkt in einer Datenbank
+#### <a name="to-update-records-directly-in-a-database"></a>Zum Aktualisieren von Datensätzen, die direkt in einer Datenbank
 
--   Rufen Sie die `Update` -Methode, die neuen und ursprünglichen Werte für jede Spalte als Parameter zu übergeben.
+-   Rufen Sie die `Update` -Methode, die neuen und ursprünglichen Werte für jede Spalte als Parameter übergeben.
 
     > [!NOTE]
-    >  Instanziieren Sie den TableAdapter, die Sie verwenden möchten, wenn Sie keine Instanz zur Verfügung.
+    >  Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
 
      [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
      [!code-csharp[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]
 
 #### <a name="to-delete-records-directly-from-a-database"></a>Zum Löschen von Datensätzen direkt aus einer Datenbank
 
--   Rufen Sie die `Delete` -Methode auf und übergibt die Werte für jede Spalte als Parameter von der `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
+-   Rufen Sie die `Delete` -Methode, die Werte für jede Spalte als Parameter übergeben die `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
 
     > [!NOTE]
-    >  Instanziieren Sie den TableAdapter, die Sie verwenden möchten, wenn Sie keine Instanz zur Verfügung.
+    >  Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
 
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]

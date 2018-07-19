@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37056354"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030415"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke-Aufgabe
 
@@ -33,7 +33,7 @@ Legt die Werte einer XML-Datei wie von der XPath-Abfrage angegeben fest
 
  In der folgenden Tabelle werden die Parameter der `XmlPoke` -Aufgabe beschrieben.
   
-|Parameter|description|
+|Parameter|Beschreibung |
 |---------------|-----------------|
 |`Namespaces`|Optionaler `String` -Parameter.<br /><br /> Gibt die Namespaces für die Präfixe von XPath-Abfragen an `Namespaces` ist ein XML-Ausschnitt, der aus `Namespace`-Elementen mit den Attributen `Prefix` und `Uri` besteht. Das Attribut `Prefix` gibt das Präfix an, das dem im `Uri`-Attribut angegebenen Namespace zugeordnet werden soll. Verwenden Sie kein leeres `Prefix`-Attribut.|
 |`Query`|Optionaler `String` -Parameter.<br /><br /> Gibt die XPath-Abfrage an|
@@ -48,7 +48,7 @@ Legt die Werte einer XML-Datei wie von der XPath-Abfrage angegeben fest
 
 Dies ist ein einfach zu bearbeitender sample.xml-Code:
 
-```
+```xml
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
          xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
          xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
@@ -59,8 +59,8 @@ Dies ist ein einfach zu bearbeitender sample.xml-Code:
 
 Wenn Sie in diesem Beispiel `/Package/mp:PhoneIdentity/PhonePublisherId` ändern möchten, gehen Sie folgendermaßen vor:
 
-```
-<Project>
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Namespace>
         <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />

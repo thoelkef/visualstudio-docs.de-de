@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751688"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845492"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -32,7 +32,7 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
     3.  Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **<Edit>** aus:
 
-        |||
+        |Verzeichnis|Eigenschaft|
         |-|-|
         |**Includeverzeichnisse**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Bibliotheksverzeichnisse**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Sie können Merkmale für Testmethoden definieren, um Tests im **Test-Explorer**
 
  Verwenden des definierten Merkmals in den Komponententests:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)
@@ -84,7 +84,7 @@ TEST_METHOD(Method1)
 ### <a name="c-trait-attribute-macros"></a>C++-Merkmalsattributmakros
   Die folgenden vordefinierten Merkmale befinden sich in `CppUnitTest.h`. Weitere Informationen finden Sie unter [API-Verweis für das Microsoft-Komponententest-Framework für C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Makro|description|
+|Makro|Beschreibung |
 |-----------|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Verwenden Sie zum Definieren eines Merkmals das TEST_METHOD_ATTRIBUTE-Makro.|
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|

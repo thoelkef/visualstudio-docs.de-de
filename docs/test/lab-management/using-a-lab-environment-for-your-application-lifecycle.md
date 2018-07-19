@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844302"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -29,14 +30,14 @@ Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie 
 
 Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 
-| Topologie | description |
+| Topologie | Beschreibung  |
 |---|---|
 |![Topologie "Nur Server"](../media/topology_backend.png)| Diese Lab-Umgebung weist eine *Servertopologie*auf, die oft verwendet wird, um manuelle Tests auf Serveranwendungen auszuführen. Sie ermöglicht Testern, die eigenen Clientcomputer zu verwenden, um Fehler in der Umgebung zu überprüfen. In einer Back-End-Topologie enthält Ihre Lab-Umgebung nur Server. Wenn Sie diesen Topologietyp verwenden, stellen Sie für gewöhnlich mithilfe eines Clientcomputers, der nicht Bestandteil der Umgebung ist, eine Verbindung zu den Servern in der Lab-Umgebung her.|
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen.|
 |![Client-Server-Lab-Umgebung](../media/topology_clientserver.png)| Diese Lab-Umgebung verfügt über eine *Client-/Servertopologie*, die oftmals zum Testen einer Anwendung verwendet wird, die Server- und Clientkomponenten aufweist. In einer Client-/Servertopologie befinden sich alle zum Testen Ihrer Anwendung verwendeten Clientcomputer und Server in Ihrer Lab-Umgebung. Bei Verwendung dieser Topologie können Sie Testdaten von jedem Computer erfassen, der sich auf Ihre Tests auswirkt.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![Kamerasymbol für Video](../../install/media/video-icon.png)  |    [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Build-und-Release in Team Services oder Team Foundation Server
@@ -115,7 +116,7 @@ Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müs
 
 Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut sein sollten, bevor Sie fortfahren:
 
-|Begriff|description|
+|Begriff|Beschreibung |
 |----------|-----------------|
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|
 |Teamprojekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|

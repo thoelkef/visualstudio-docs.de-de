@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574684"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303308"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in eine oder mehrere Dateien speichern möchten. Sie können auch eine benutzerdefinierte Protokollierung zum Sammeln von Builddaten angeben. Weitere Informationen zu MSBuild-Befehlszeilenschalter, die in diesem Thema nicht behandelt werden, finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Buildda
   
  Der Buildprozess ist möglicherweise langsamer, wenn Sie **/verbosity** auf `detailed` festlegen und sogar langsamer, wenn Sie **/verbosity** auf `diagnostic` festlegen.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Speichern des Buildprotokolls in einer Datei  
  Sie können den Schalter **/fileLogger** (**fl**) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen `msbuild.log` gespeichert.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  Im folgenden Beispiel heißt die Protokolldatei `MyProjectOutput.log` und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **/filelogparameters** (`flp`) an.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  Die Schalter **/filelogparameters** (`flp`) für die Dateien 2 und 3 gibt an, wie jede Datei benannt werden und was sie enthalten soll. Es wird kein Name für die Datei 1 angegeben, deshalb wird der Standardname `msbuild1.log` verwendet.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ Sie können das Protokoll mit dem Parameter **/binaryLogger** (**bl**) in einem 
 
 Im folgenden Beispiel wird eine binäre Protokolldatei mit dem Namen `binarylogfilename` erstellt.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

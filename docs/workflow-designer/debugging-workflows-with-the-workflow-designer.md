@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
 helpviewer_keywords:
-- Visual Studio 2010 Workflow Designer [WFD], debugging workflows
+- Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: gewarren
@@ -13,13 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d7630e4faeb301d1b86ce2a33c650b7db1d9bcd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972588"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755313"
 ---
-# <a name="debugging-workflows-with-the-workflow-designer"></a>Debuggen von Workflows mit dem Workflow-Designer
+# <a name="debug-workflows-with-the-workflow-designer"></a>Debuggen von Workflows mit Workflow-Designer
 
-Windows Workflow-Designer bietet die Möglichkeit zum Debuggen von Workflows und benutzerdefinierte Aktivitäten. Vorgang und Verhalten sind ähnlich, die von der Visual Studio 2010-Standarddebugger. In den Themen in diesem Abschnitt wird beschrieben, wie Sie die gewohnten Debugprozeduren ausführen sowie XAML und Ausdrücke debuggen können.
+Die **Workflow-Designer** bietet die Möglichkeit zum Debuggen von Workflows und benutzerdefinierte Aktivitäten. Vorgang und Verhalten sind vergleichbar mit der standardmäßigen Visual Studio-Debugger.
+
+## <a name="invoke-the-workflow-debugger"></a>Aufrufen des Workflow-Debuggers
+
+Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Programmiersprachen geschriebene Programme. Sie können den Workflowdebugger auf folgende Weise starten:
+
+- Wählen Sie **an den Prozess anhängen** auf die **Debuggen** Menü Wählen Sie den ausgeführten Hostprozess für Ihre Workflowinstanz. Dieses Verfahren entspricht dem Anhängen an einen Hostprozess in verwaltetem Code.
+
+- Drücken Sie **F5** um eine Instanz des Workflows zu starten oder weiter ausgeführt, nachdem ein Haltepunkt erreicht wurde.
+
+- Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remotedebuggens finden Sie unter [Vorgehensweise: Aktivieren des Remotedebuggens](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
+
+   > [!NOTE]
+   > Wenn die workflowanwendung die X86 abzielt Architektur und gehostet wird, auf einem Computer unter einem 64-Bit-Betriebssystem, das Remotedebuggen nicht funktioniert, wenn Visual Studio auf dem Remotecomputer installiert ist, oder das Ziel für die workflowanwendung in geändertwird **Beliebige CPU**.
+
+## <a name="step-through-code"></a>Code schrittweise ausführen
+
+- **Schritt In**: Einzelschritt in eine Aktivität durch Drücken von **F11**. Der Debugger führt alle definierten Handler in Einzelschritten aus. Ist kein Handler definiert, wird die Aktivität übersprungen. Bei zusammengesetzten Aktivitäten, die andere Aktivitäten enthalten, führen Sie die erste ausgeführte Aktivität in einem Einzelschritt aus.
+
+- **Schritt-Out:** Prozedurschritt aus einer Aktivität, durch Drücken von **UMSCHALT**+**F11**. Mit dem Verlassen einer Aktivität werden die aktuelle Aktivität und alle dazugehörigen gleichgeordneten Aktivitäten bis zum Abschluss ausgeführt. Der Debugger wird dann auf dem übergeordneten Element der aktuellen Aktivität unterbrochen. Bei der Ausführung bis zum Rücksprung von einem Codehandler unterbricht der Debugger an der Aktivität, der der Handler zugewiesen ist.
+
+- **Prozedurschritt**: überspringen einer Aktivität durch Drücken von **F10**. Wird ein Prozedurschritt für eine zusammengesetzte Aktivität ausgeführt, unterbricht der Debugger an der ersten ausführbaren untergeordneten Komponente der zusammengesetzten Aktivität. Wird ein Prozedurschritt für eine nicht zusammengesetzte Aktivität ausgeführt, zum Beispiel eine <xref:System.Activities.Statements.Assign>-Aktivität, führt der Debugger die Aktivität und die dazugehörigen Handler aus und unterbricht an der nächsten Aktivität. Handelt es sich bei der ausgeführten Aktivität um die letzte untergeordnete Aktivität einer zusammengesetzten Aktivität, hält der Debugger nach der Ausführung an der übergeordneten Aktivität an.
+
+## <a name="debug-with-f5"></a>Debuggen mit F5
+
+Wenn Sie eine Workflow-Konsolen-app erstellen, drücken Sie einfach **F5** um Debuggen der Anwendung und den Workflow zu starten. Wenn Sie selbstständig eine Aktivitätsbibliothek erstellen, müssen Sie eine ausführbare hostanwendung als Startprojekt angeben. Zum Festlegen eines Startprojekts im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektnamen, der den Host, und wählen Sie **als Startprojekt festlegen**.

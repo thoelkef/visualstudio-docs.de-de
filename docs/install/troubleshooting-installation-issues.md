@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766037"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282953"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte aus, um dieses Problem zu umgehen.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Schritt 1: Prüfen, ob das Problem bekannt ist
 
-Es gibt einige bekannte Probleme mit dem Visual Studio-Installer, an deren Behebung Microsoft arbeitet. Überprüfen Sie in den [Anmerkungen zu dieser Version den Abschnitt „Bekannte Probleme“](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues), um zu prüfen, ob es eine Lösung für Ihr Problem gibt.
+Es gibt einige bekannte Probleme mit dem Visual Studio-Installer, an deren Behebung Microsoft arbeitet. Überprüfen Sie in den [Anmerkungen zu dieser Version den Abschnitt „Bekannte Probleme“](/visualstudio/releasenotes/vs2017-relnotes#-known-issues), um zu prüfen, ob es eine Lösung für Ihr Problem gibt.
 
 ### <a name="step-2---check-with-the-developer-community"></a>Schritt 2: Nachfragen in der Entwicklercommunity
 
@@ -48,7 +48,7 @@ Mithilfe der folgenden Aktionen werden die Visual Studio-Installer-Dateien neu i
 
 1. Schließen Sie den Visual Studio-Installer.
 2. Löschen Sie das Visual Studio-Installer-Verzeichnis. Das Verzeichnis ist in der Regel `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://www.visualstudio.com/downloads/) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
+3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://visualstudio.microsoft.com/downloads/) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
 4. Versuchen Sie, Visual Studio erneut zu installieren oder zu aktualisieren. Wenn beim Installer weiterhin ein Fehler auftritt, fahren Sie mit dem nächsten Schritt fort.
 
 ### <a name="step-4---report-a-problem"></a>Schritt 4: Melden eines Problems
@@ -71,7 +71,7 @@ Als letzten Ausweg können Sie [Visual Studio entfernen](remove-visual-studio.md
 
 ### <a name="step-6---contact-us-optional"></a>Schritt 6: Wenden Sie sich an uns (optional)
 
-Wenn keiner der anderen Schritte Ihnen bei der erfolgreichen Installation hilft, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Wenn keiner der anderen Schritte Ihnen bei der erfolgreichen Installation hilft, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Gewusst wie: Problembehandlung bei einem Offlineinstallationsprogramm
 
@@ -100,7 +100,7 @@ So erfassen Sie die Protokolle:
 
 ## <a name="more-support-options"></a>Weitere Supportoptionen
 
-Wenn keiner der anderen Schritte Ihnen bei der erfolgreichen Installation hilft, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Wenn keiner der anderen Schritte Ihnen bei der erfolgreichen Installation hilft, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Hier sind einige weitere Optionen:
 

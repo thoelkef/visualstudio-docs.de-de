@@ -9,21 +9,21 @@ description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Stu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65307a586ea9e9270a8af4a0e70c20d855238fad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196007"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281874"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
-Die Concierge Chat-Dienste bieten Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.  
+Die Concierge Chat-Dienste bieten Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.
 
-Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch angeboten (bei Fragen, bei denen es nicht um Konten, Abrechnung und Abonnements geht). 
+Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch angeboten (bei Fragen, bei denen es nicht um Konten, Abrechnung und Abonnements geht).
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-Über den Concierge Chat-Dienst können Sie sehr einfach Hilfe erhalten.  
+Über den Concierge Chat-Dienst können Sie sehr einfach Hilfe erhalten.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
 2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Support“ die Kachel „Concierge Chat“, und klicken Sie auf **Jetzt chatten**.
@@ -32,16 +32,16 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 
 3. Klicken Sie auf **Weiter**.
 
-4. Es wird ein Chatfenster geöffnet, und Sie sehen einen Zähler, der Ihre Position in der Warteschlange anzeigt.  
+4. Es wird ein Chatfenster geöffnet, und Sie sehen einen Zähler, der Ihre Position in der Warteschlange anzeigt.
 
-5. Wenn ein Mitarbeiter verfügbar ist, beginnt der Chat. 
+5. Wenn ein Mitarbeiter verfügbar ist, beginnt der Chat.
 
     ![Concierge Chat-Sitzung](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Verfügbar                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Ja          |
@@ -50,16 +50,16 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Umfasst nicht: FTE, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>F: Ist der Chatdienst in mehreren Sprachen verfügbar?
-   A: Hilfe bei Fragen zu Konten, Abrechnung und Abonnements ist in mehreren Sprachen verfügbar.  Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten ist nur auf Englisch verfügbar. 
-   
+   A: Hilfe bei Fragen zu Konten, Abrechnung und Abonnements ist in mehreren Sprachen verfügbar.  Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten ist nur auf Englisch verfügbar.
+
 ## <a name="support-resources"></a>Supportressourcen
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 
 

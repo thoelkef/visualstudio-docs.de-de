@@ -9,21 +9,21 @@ description: Einzelheiten zu den angebotenen Abonnements, geltenden Regeln und d
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9593614b58f8f4c77ec24891cdb9ada33eac3e60
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863624"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281029"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
-Partner, die eine Kompetenz erwerben oder das Action Pack in MPN kaufen, sind dazu berechtigt, Visual Studio-Abonnements zu verwenden. Diese Abonnements werden pro Benutzer lizenziert und gelten nur, wenn sie einem bestimmten benannten Benutzer zugewiesen sind, der für ein Partnerunternehmen arbeitet. 
+Partner, die eine Kompetenz erwerben oder das Action Pack in MPN kaufen, sind dazu berechtigt, Visual Studio-Abonnements zu verwenden. Diese Abonnements werden pro Benutzer lizenziert und gelten nur, wenn sie einem bestimmten benannten Benutzer zugewiesen sind, der für ein Partnerunternehmen arbeitet.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Abonnements für Partner mit einer MPN-Kompetenz
-Wenn ein Partner eine Kompetenz auf Silber- oder Gold-Ebene erwirbt, erhält dieser eine bestimmte Anzahl von Visual Studio Enterprise-Abonnements. Dieser Vorteil ändert sich, wenn der Partner mindestens eine Gold-Kompetenz erwirbt. Bei einem Visual Studio Enterprise-Abonnement handelt es sich um ein benutzerdefiniertes Angebot, das dem [jährlichen Visual Studio Enterprise-Cloudabonnement](https://www.visualstudio.com/vs/pricing/) weitgehend entspricht. Bestimmte Vorteile wurden jedoch entfernt, von denen einige separat als allgemeine MPN-Vorteile für Partner angeboten werden (statt als Teil der Visual Studio Enterprise-Abonnements, die über MPN angeboten werden). 
+Wenn ein Partner eine Kompetenz auf Silber- oder Gold-Ebene erwirbt, erhält dieser eine bestimmte Anzahl von Visual Studio Enterprise-Abonnements. Dieser Vorteil ändert sich, wenn der Partner mindestens eine Gold-Kompetenz erwirbt. Bei einem Visual Studio Enterprise-Abonnement handelt es sich um ein benutzerdefiniertes Angebot, das dem [jährlichen Visual Studio Enterprise-Cloudabonnement](https://visualstudio.microsoft.com/vs/pricing/) weitgehend entspricht. Bestimmte Vorteile wurden jedoch entfernt, von denen einige separat als allgemeine MPN-Vorteile für Partner angeboten werden (statt als Teil der Visual Studio Enterprise-Abonnements, die über MPN angeboten werden).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Visual Studio-Vorteile für das Erwerben von mindestens einer beliebigen Kompetenz
-| Auf Silber-Ebene erworbene Kompetenzen               | Mindestens eine auf Gold-Ebene erworbene Kompetenz   | 
+| Auf Silber-Ebene erworbene Kompetenzen               | Mindestens eine auf Gold-Ebene erworbene Kompetenz   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 Visual Studio Enterprise-Abonnements                   | 10 Visual Studio Enterprise-Abonnements          |
 
@@ -39,7 +39,7 @@ Wenn ein Partner eine Kompetenz auf Silber- oder Gold-Ebene erwirbt, erhält die
 Unabhängig davon, wie viele Kompetenzen ein Partner erwirbt, wird die Anzahl von Visual Studio-Abonnements folgendermaßen beschränkt:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Beschränkungen für durch Kompetenzen erhaltene Visual Studio-Abonnements
-| Maximaler Vorteil für Partner mit Silber-Kompetenzen                   | Maximaler Vorteil für Partner mit mindestens einer Gold-Kompetenz               | 
+| Maximaler Vorteil für Partner mit Silber-Kompetenzen                   | Maximaler Vorteil für Partner mit mindestens einer Gold-Kompetenz               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 Visual Studio Enterprise-Abonnements pro Land; 75 weltweit          | 50 Visual Studio Enterprise-Abonnements pro Land; 150 weltweit         |
 
@@ -57,12 +57,13 @@ Die Abonnenten von Visual Studio Professional (MPN) können ebenfalls kostenlose
 Das Visual Studio Professional-Abonnement (MPN) enthält keine VSTS-Vorteile, keine monatlichen Azure-Gutschriften, keinen technischen Support, kein Training oder sonstige Vorteile, die bei kommerziell angebotenen Visual Studio-Abonnements verfügbar sind.
 
 ## <a name="internal-use-only-restriction"></a>Einschränkung „Nur für internen Gebrauch“
-Die Regeln von MPN legen fest, dass jede Software, die als Vorteil des Programms angeboten wird, nur intern verwendet werden kann. Dies gilt für Software, die für einzelne Visual Studio-Abonnenten angeboten wird sowie für die allgemeinen Vorteile für MPN-Softwarelizenzen. 
+Die Regeln von MPN legen fest, dass jede Software, die als Vorteil des Programms angeboten wird, nur intern verwendet werden kann. Dies gilt für Software, die für einzelne Visual Studio-Abonnenten angeboten wird sowie für die allgemeinen Vorteile für MPN-Softwarelizenzen.
 
 Die Einschränkung „Nur für internen Gebrauch“ bedeutet im Wesentlichen, dass Partner die Software nicht für die Arbeit verwenden können, die Sie für Parteien außerhalb ihrer Organisation durchführen. Es ist also zulässig, eine App zu erstellen, nur von den Mitarbeitern des Partners verwendet werden. Das Erstellen einer App, die Teil eines Clientprojekts ist, wäre jedoch nicht zulässig.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Anmeldung mit Visual Studio erforderlich
-Bei Visual Studio-Abonnements, die über MPN angeboten werden, muss der lizenzierte Benutzer bei Visual Studio mit der gleichen Identität bzw. dem gleichen Konto angemeldet sein, die bzw. das zum Aktivieren des Visual Studio-Abonnements verwendet wurde. Zum Freischalten des Produkts werden keine Product Keys angeboten, eine Anmeldung stellt also die einzige Option zum Ausführen von Visual Studio dar. Der Visual Studio-Abonnent kann für bis zu 30 Tage offline arbeiten. Nach diesem Zeitraum funktioniert Visual Studio nicht mehr. Wenn online gearbeitet wird, erneuert Visual Studio den Lizenzstatus des Benutzers regelmäßig im Hintergrund, um sicherzustellen, dass das Abonnement noch gültig ist.
+Bei Visual Studio-Abonnements, die über MPN angeboten werden, muss der lizenzierte Benutzer bei Visual Studio mit der gleichen Identität bzw. dem gleichen Konto angemeldet sein, die bzw. das zum Aktivieren des Visual Studio-Abonnements verwendet wurde.
+Zum Freischalten des Produkts werden keine Product Keys angeboten, eine Anmeldung stellt also die einzige Option zum Ausführen von Visual Studio dar. Der Visual Studio-Abonnent kann für bis zu 30 Tage offline arbeiten. Nach diesem Zeitraum funktioniert Visual Studio nicht mehr. Wenn online gearbeitet wird, erneuert Visual Studio den Lizenzstatus des Benutzers regelmäßig im Hintergrund, um sicherzustellen, dass das Abonnement noch gültig ist.
 
 ## <a name="resources"></a>Ressourcen
 

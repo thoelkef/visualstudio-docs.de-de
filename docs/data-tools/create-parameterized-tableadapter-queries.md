@@ -20,29 +20,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d3985cc8faf76c5c5767090abd5b87101ddbb45
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fe77d3622e9c41d98ff89972e522bb25aae58b9d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924195"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756008"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE-Klausel in der Abfrage entsprechen. Sie können beispielsweise eine Kundenliste parametrisieren, sodass nur Kunden in einem bestimmten Ort angezeigt werden. Fügen Sie dazu `WHERE City = @City` am Ende der SQL-Anweisung hinzu, was eine Liste von Kunden ausgibt.
 
- Erstellen Sie parametrisierte TableAdapter-Abfragen in der **Dataset-Designer**. Sie können diese auch erstellen, in einer Windows-Anwendung mit der **parametrisierte Datenquelle** Befehl die **Daten** Menü. Die **parametrisierte Datenquelle** Befehl erstellt die Steuerelemente im Formular, in dem Sie die Eingabe von Parameterwerten und führen Sie die Abfrage können.
+ Erstellen Sie parametrisierte TableAdapter-Abfragen in der **Dataset-Designer**. Sie können sie auch erstellen, in einer Windows-Anwendung mit der **parametrisierte Datenquelle** Befehl die **Daten** Menü. Die **parametrisierte Datenquelle** Befehl erstellt die Steuerelemente im Formular können Sie die Werte der Eingabeparameter und führen Sie die Abfrage.
 
 > [!NOTE]
-> Wenn Sie eine parametrisierte Abfrage zu erstellen, verwenden Sie die Parameter-Notation, die für die Datenbank spezifisch ist, die Sie gegen codieren. Access- und OleDb-Datenquellen verwenden, z. B. das Fragezeichen "?" zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussehen würde: `WHERE City = ?`.
+> Wenn Sie eine parametrisierte Abfrage zu erstellen, verwenden Sie die Parameter-Notation, die für die Datenbank spezifisch ist, die Sie für codieren. Zum Beispiel verwenden Access- und OleDb-Datenquellen das Fragezeichen "?" zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussehen würde: `WHERE City = ?`.
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle, die Sie sehen möglicherweise unterscheiden sich von denen je nach Ihren aktiven Einstellungen oder der Edition, die Sie verwenden in der Hilfe beschriebenen. Um die Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Um Ihre Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>Erstellen einer parametrisierten TableAdapter-Abfrage
 
 #### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>So erstellen Sie parametrisierte Abfrage im DataSet-Designer
 
--   Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+-   Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
      - oder - 
 
@@ -52,20 +52,20 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
 
 1.  Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2.  Auf der **Daten** klicken Sie im Menü **Abfrage hinzufügen**.
+2.  Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen**.
 
-3.  Führen Sie die **Suchkriterien-Generator** (Dialogfeld), die SQL-Anweisung eine WHERE-Klausel mit den gewünschten Parametern hinzugefügt.
+3.  Abschließen der **Suchkriterien-Generator** Dialogfeld, eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzufügen.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>So fügen Sie eine Abfrage einem vorhandenen datengebundenen Formular hinzu
 
-1.  Öffnen Sie das Formular in der **Windows Forms-Designer**.
+1.  Öffnen Sie das Formular im **Windows Forms-Designer**.
 
-2.  Auf der **Daten** klicken Sie im Menü **Abfrage hinzufügen** oder **Smart Tags für Daten**.
+2.  Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen** oder **Smart Tags für Daten**.
 
     > [!NOTE]
-    >  Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement auf dem Formular, zeigt Sie Datenquellen die Parametrisierung hinzufügen möchten. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.
+    >  Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement im Formular, zeigt die Sie auf Datenquelle die Parametrisierung hinzufügen. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.
 
-3.  In der **Select Datenquellentabelle** Bereich, markieren Sie die Tabelle die gewünschten hinzufügen Parametrisierung.
+3.  In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tabelle, zu dem Sie die Parametrisierung hinzufügen möchten.
 
 4.  Geben Sie einen Namen in der **Neuer Abfragename** Feld, wenn Sie eine neue Abfrage erstellen.
 
@@ -73,14 +73,14 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
 
      Wählen Sie eine Abfrage in der **vorhandener Abfragename** Feld.
 
-5.  In der **Abfragetext** Geben Sie eine Abfrage, die Parameter annimmt.
+5.  In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.
 
 6.  Klicken Sie auf **OK**.
 
-     Ein Steuerelement für die Eingabe des Parameters und eine **laden** Schaltfläche werden hinzugefügt, in das Formular in einer <xref:System.Windows.Forms.ToolStrip> Steuerelement.
+     Ein Steuerelement für die Eingabe des Parameters und einen **Load** Schaltfläche hinzugefügt werden, auf das Formular in einem <xref:System.Windows.Forms.ToolStrip> Steuerelement.
 
 #### <a name="querying-for-null-values"></a>Abfragen von null-Werte
-TableAdapter-Parameter können null-Werte zugewiesen werden, wenn Sie Datensätze Abfragen, die keinen aktuellen Wert haben möchten. Betrachten Sie beispielsweise die folgende Abfrage, die verfügt über eine `ShippedDate` Parameter in seiner `WHERE` Klausel:
+TableAdapter-Parameter können null-Werte zugewiesen werden, wenn Sie Datensätze Abfragen, die keinen aktuellen Wert haben möchten. Betrachten Sie beispielsweise die folgende Abfrage, die eine `ShippedDate` Parameter in der `WHERE` Klausel:
 
  ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -88,16 +88,16 @@ FROM Orders
 WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 ```
 
- Wenn dies eine Abfrage für einen TableAdapter wäre, konnte Sie für alle Aufträge Abfragen, die nicht durch den folgenden Code gesendet wurden:
+ Würde dies eine Abfrage auf einem TableAdapter, können Sie alle Aufträge Abfragen, die nicht mit dem folgenden Code geliefert wurden:
 
  [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
  [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]
 
  So aktivieren Sie eine Abfrage, um null-Werte annehmen:
 
-1.  In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die der null-Parameterwerte akzeptieren muss.
+1.  In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.
 
-2.  In der **Eigenschaften** wählen **Parameter**, klicken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Editor für die Parameters-Auflistung**.
+2.  In der **Eigenschaften** wählen Sie im Fenster **Parameter**, klicken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.
 
 3.  Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.
 
