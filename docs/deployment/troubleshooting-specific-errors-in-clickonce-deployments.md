@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234009"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153598"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung sowie Schritte, um jedes Problem zu beheben.  
   
 ## <a name="general-errors"></a>Allgemeine Fehler  
@@ -36,7 +36,7 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Wenn Sie versuchen, eine Anwendungsdatei zu suchen, geschieht nichts, XML, die in Internet Explorer gerendert oder erhalten Sie ein Dialogfeld Ausführen oder Speichern unter  
  Dieser Fehler wird wahrscheinlich durch nicht ordnungsgemäß auf dem Server oder Client registriert Inhaltstypen (auch bekannt als MIME-Typen) verursacht.  
   
- Stellen Sie zunächst sicher, dass der Server, zum Zuordnen konfiguriert ist der `.application` Erweiterungstyp mit Inhalt "Application/X-ms-Anwendung."  
+ Stellen Sie zunächst sicher, dass der Server, zum Zuordnen konfiguriert ist der *.application* Erweiterungstyp mit Inhalt "Application/X-ms-Anwendung."  
   
  Wenn der Server ordnungsgemäß konfiguriert ist, überprüfen Sie, ob die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf Ihrem Computer installiert ist. Wenn die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installiert ist, und werden weiterhin angezeigt. dieses Problem, versuchen Sie es, Deinstallation und Neuinstallation der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] den Inhaltstyp auf dem Client erneut zu registrieren.  
   
@@ -45,20 +45,20 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
   
 -   Wenn die Protokolldatei meldet, dass "(403) verboten" oder "(404) nicht gefunden," Stellen Sie sicher, dass der Webserver ist so konfiguriert, dass Herunterladen dieser Datei nicht blockiert wird. Weitere Informationen finden Sie unter [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Wenn die .config-Datei vom Server blockiert wird, finden Sie im Abschnitt "Fehler herunterladen, wenn Sie versuchen, installieren Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit einer .config-Datei" weiter unten in diesem Artikel.  
+-   Wenn die *config* Datei vom Server blockiert wird, finden Sie im Abschnitt "Fehler beim Herunterladen, wenn Sie versuchen, installieren Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit einer .config-Datei" weiter unten in diesem Artikel.  
   
--   Bestimmen, ob dies aufgetreten ist, da die `deploymentProvider` -URL in das Bereitstellungsmanifest verweist auf einen anderen Speicherort als die URL, die für die Aktivierung verwendet.  
+-   Bestimmen, ob dieser Fehler ist aufgetreten, da die `deploymentProvider` -URL in das Bereitstellungsmanifest verweist auf einen anderen Speicherort als die URL, die für die Aktivierung verwendet.  
   
 -   Stellen Sie sicher, dass alle Dateien auf dem Server vorhanden sind; die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Protokoll sollte Ihnen sagen, welche Datei nicht gefunden wurde.  
   
 -   Festzustellen Sie, ob es Probleme mit der Netzwerkkonnektivität; Sie können diese Meldung erhalten, wenn es sich bei Ihrem Client-Computer offline geschaltet, während des Downloads.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Herunterladen Sie Fehler beim, wenn Sie versuchen, eine ClickOnce-Anwendung zu installieren, die ist von einer config-Datei  
- Standardmäßig enthält eine Visual Basic-Windows-basierte Anwendung eine Datei "App.config". Es wird ein Problem vorhanden sein, wenn ein Benutzer versucht, die von einem Webserver, der Windows Server 2003 verwendet installiert werden, da das Betriebssystem die Installation von .config-Dateien aus Sicherheitsgründen blockiert. Klicken Sie zum Aktivieren der config-Datei installiert werden, **Dateierweiterung ".deploy" verwenden** in die **Veröffentlichungsoptionen** Dialogfeld.  
+ Standardmäßig enthält eine Visual Basic-Windows-basierte Anwendung eine Datei "App.config". Es wird ein Problem sein, wenn ein Benutzer versucht, die von einem Webserver, die Windows Server 2003 verwendet installiert werden, da das Betriebssystem die Installation von blockiert *config* Dateien aus Sicherheitsgründen. So aktivieren Sie die *config* Datei installiert werden, klicken Sie auf **Dateierweiterung ".deploy" verwenden** in die **Veröffentlichungsoptionen** Dialogfeld.  
   
  Sie müssen die Inhaltstypen (auch bekannt als MIME-Typen) auch für die .application ". manifest" und ".deploy"-Dateien entsprechend festlegen. Weitere Informationen finden Sie in der Dokumentation zu Ihrem Webserver.  
   
- Weitere Informationen finden Sie unter "Windows Server 2003: Gesperrte Inhaltstypen" im [Server Probleme und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Weitere Informationen finden Sie unter "Windows Server 2003: Gesperrte Inhaltstypen" im [Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Fehlermeldung: "Der Anwendung ist nicht ordnungsgemäß formatiert." Protokolldatei enthält "XML-Signatur ist ungültig."  
  Stellen Sie sicher, dass Sie die Manifestdatei aktualisiert und erneut signiert. Erneutes Veröffentlichen der Anwendung mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder verwenden Sie Mage zum Signieren der Anwendung erneut aus.  
@@ -103,10 +103,10 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
   
  Wenn Sie mit einer URL veröffentlichen, stellen Sie sicher, dass der Zielcomputer FrontPage Server Extensions aktiviert ist.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Fehlermeldung: Kann nicht zum Erstellen der Website "\<Site >". Die Komponenten für die Kommunikation mit FrontPage-Servererweiterungen sind nicht installiert.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Fehlermeldung: kann nicht zum Erstellen der Website "\<Site >". Die Komponenten für die Kommunikation mit FrontPage-Servererweiterungen sind nicht installiert.  
  Stellen Sie sicher, dass Sie die Microsoft Visual Studio Web Authoring-Komponente auf dem Computer, dem Sie veröffentlichen aus installiert haben. Für Express-Benutzer ist diese Komponente nicht standardmäßig installiert. Weitere Informationen finden Sie unter [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Fehlermeldung: Die Datei nicht gefunden "Microsoft.Windows.Common-Steuerelemente, Version 6.0.0.0, Kultur = = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, Typ = win32"  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Fehlermeldung: Datei wurde nicht gefunden "Microsoft.Windows.Common-Steuerelemente, Version 6.0.0.0, Kultur = = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, Typ = win32"  
  Diese Fehlermeldung wird angezeigt, wenn Sie versuchen, veröffentlichen Sie eine WPF-Anwendung mit aktivierten visuellen Stilen. Um dieses Problem zu beheben, finden Sie unter [Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit visuelle Stile aktiviert](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Verwenden von Mage  
@@ -139,5 +139,5 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
 |Die Anwendung ist zu groß, um online bei teilweiser Vertrauenswürdigkeit ausgeführt. Wenden Sie sich an den Hersteller der Anwendung oder der Systemadministrator, um Unterstützung zu erhalten.|Eine Anwendung, die bei teilweiser Vertrauenswürdigkeit ausgeführt wird darf nicht größer als die Hälfte der Größe der online-Anwendung das Kontingent sein, die standardmäßig 250 MB ist.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

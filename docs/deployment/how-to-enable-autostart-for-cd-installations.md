@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktivieren von AutoStart für Installationen von CD | Microsoft Docs'
+title: 'Vorgehensweise: Aktivieren von AutoStart für Installationen von CD | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 230f0491993b3804c3147e727900de2647ff7bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558242"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151245"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Gewusst wie: Aktivieren von AutoStart für Installationen von CD
-Bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mithilfe von Wechselmedien wie z. B. CD-ROM oder DVD-ROM-Anwendung, die Sie aktivieren `AutoStart` , damit die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung beim Einlegen des Datenträgers automatisch gestartet wird.  
+Bei der Bereitstellung ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung über Wechselmedien wie z. B. CD-ROM oder DVD-ROM können `AutoStart` , damit die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird automatisch gestartet, wenn das Medium eingelegt ist.  
   
- `AutoStart` kann aktiviert werden, auf die **veröffentlichen** auf der Seite der **Projekt-Designer**.  
+ `AutoStart` kann aktiviert werden, auf die **veröffentlichen** auf der Seite die **Projekt-Designer**.  
   
 ### <a name="to-enable-autostart"></a>Aktivieren von AutoStart  
   
@@ -44,8 +44,8 @@ Bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpte
   
 5.  Wählen Sie die **für CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** Kontrollkästchen.  
   
-     Eine Datei "Autorun.inf" wird an den Veröffentlichungsort kopiert werden, wenn die Anwendung veröffentlicht wird.  
+     Ein *"Autorun.inf"* Datei wird an den Veröffentlichungsort kopiert werden, wenn die Anwendung veröffentlicht wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Gewusst wie: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;TrustInfo&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+title: '&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816002"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151060"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; Element (ClickOnce-Anwendung)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
   
 ## <a name="syntax"></a>Syntax  
@@ -270,5 +270,5 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
+ [Übersicht über die vertrauenswürdige Anwendungsbereitstellung](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

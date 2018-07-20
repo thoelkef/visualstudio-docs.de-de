@@ -1,5 +1,5 @@
 ---
-title: Schaltflächen Element | Microsoft Docs
+title: Schaltflächen-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097649"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155411"
 ---
-# <a name="buttons-element"></a>Schaltflächen-Element
+# <a name="buttons-element"></a>Buttons-element
 Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einzelnen Befehle darstellen.  
   
 ## <a name="syntax"></a>Syntax  
@@ -46,14 +46,14 @@ Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einze
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert die Elemente der Schaltfläche.|  
-|[Button-Element](../extensibility/button-element.md)|Definiert einen Befehl, dem der Benutzer interagieren kann.|  
+|[Buttons-element](../extensibility/buttons-element.md)|Gruppiert Elemente der Schaltfläche.|  
+|[Button-element](../extensibility/button-element.md)|Definiert einen Befehl, mit dem der Benutzer interagieren kann.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -70,5 +70,5 @@ Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einze
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

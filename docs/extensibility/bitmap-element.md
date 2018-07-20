@@ -1,5 +1,5 @@
 ---
-title: Bitmap-Element | Microsoft Docs
+title: Bitmap-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2456e68088208e4915fe4809c411e5ec002de7b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27e37a9da06145df2e940705650b1ab085250c53
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098107"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150810"
 ---
-# <a name="bitmap-element"></a>Bitmapelement
-Definiert eine Bitmap an. Die Bitmap wird aus einer Ressource oder aus einer Datei geladen.  
+# <a name="bitmap-element"></a>Bitmap-element
+Definiert eine Bitmap. Die Bitmap wird von einer Ressource oder aus einer Datei geladen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ Definiert eine Bitmap an. Die Bitmap wird aus einer Ressource oder aus einer Dat
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|guid|Erforderlich. GUID des Bezeichners GUID-ID-Befehl.<br /><br /> Das Guid-Attribut für eine Bitmap ist nicht verknüpft mit jeder VSPackage oder andere Befehlsgruppe.  Es sollte eindeutig sein, um die bitmapdefinition und sollte nicht für andere Zwecke verwendet werden.|  
-|resID|ID des Bezeichners GUID-ID-Befehl. Die ResID oder Href-Attribut ist erforderlich.<br /><br /> Das ResID-Attribut ist ein Integer-Ressourcen-ID, die die Bitmap-Menüleiste bestimmt, die beim Zusammenführen von Befehlstabelle geladen werden soll.  Wenn die Befehlstabelle geladen wird, wird die Bitmaps, angegeben durch die Ressourcen-ID aus der Ressource des gleichen Moduls geladen werden.|  
-|usedList|Erforderlich, wenn das Attribut ResID vorhanden ist. Wählt verfügbaren Images auf den Bitmap-Streifen.|  
-|href|Der Pfad für die Bitmap. Die ResID oder Href-Attribut ist erforderlich.<br /><br /> Die Include-Pfad wird für die angegebene Abbilddatei durchsucht, die in die resultierende Binärdatei eingebettet ist.  Während der Befehl Tabelle Zusammenführen wird das Bild kopiert, und zusätzliche Ressourcensuche oder Load sind nicht erforderlich.  Wenn das UsedList-Attribut nicht vorhanden ist, stehen alle Bilder auf den Streifen. **Hinweis:** Bilder können in einem von mehreren Formaten, die z. bmp, PNG und GIF b. bereitgestellt werden.  Frühere Versionen des Compilers hat keine 32-Bit-Bitmapbilder unterstützt, die für die partielle Transparenz Alphainformationen hatte. Die problemumgehung für diese Versionen ist das PNG-Format verwendet.|  
+|guid|Erforderlich. GUID der Befehls-ID der GUID-ID.<br /><br /> Das Guid-Attribut für eine Bitmap ist nicht in jedem VSPackage oder andere Befehlsgruppe zugeordnet.  Es sollte für die bitmapdefinition eindeutig sein und sollte nicht für andere Zwecke verwendet werden.|  
+|"RESID"|ID des Befehls-ID der GUID-ID. Entweder der "RESID" oder das Href-Attribut ist erforderlich.<br /><br /> Das ResID-Attribut ist ein Integer-Ressourcen-ID, die den bitmapstrip bestimmt, der während der Zusammenführung Befehlstabelle geladen werden soll.  Beim Laden der Befehlstabelle ist, wird die Bitmaps angegeben werden, indem Sie die Ressourcen-ID aus der Ressource des gleichen Moduls geladen werden.|  
+|"usedlist"|Erforderlich, wenn das ResID-Attribut vorhanden ist. Wählt die verfügbaren Images im bitmapstrip.|  
+|href|Der Pfad für die Bitmap. Entweder der "RESID" oder das Href-Attribut ist erforderlich.<br /><br /> Für die angegebene Abbilddatei, die in die resultierende Binärdatei eingebettet ist, wird dem Includepfad durchsucht.  Beim Befehl Tabelle Zusammenführen wird das Bild kopiert, und ist keine zusätzliche Ressourcensuche oder Laden erforderlich.  Wenn das Attribut "usedlist" nicht vorhanden ist, stehen alle Bilder auf den Streifen. **Hinweis:** Images können bereitgestellt werden, in einem von mehreren Formaten, die enthalten *BMP*, *PNG*, und *GIF*.  Frühere Versionen des Compilers wurde Bitmap mit 32-Bit-Images, die alpha-Information für die partielle Transparenz, nicht unterstützt. Die problemumgehung für diese Versionen ist die Verwendung der *PNG* Format.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
@@ -50,7 +50,7 @@ Definiert eine Bitmap an. Die Bitmap wird aus einer Ressource oder aus einer Dat
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Bitmaps-Element](../extensibility/bitmaps-element.md)|Gruppiert die Elemente mithilfe einer Bitmap.|  
+|[Bitmaps-element](../extensibility/bitmaps-element.md)|Gruppiert Elemente der Bitmap.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -61,4 +61,4 @@ Definiert eine Bitmap an. Die Bitmap wird aus einer Ressource oder aus einer Dat
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

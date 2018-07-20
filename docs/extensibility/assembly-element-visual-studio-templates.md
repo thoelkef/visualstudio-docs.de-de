@@ -1,5 +1,5 @@
 ---
-title: Assembly-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Assembly-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6209fdf446d88ed79ef741c3584b2bc4f5602
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099108"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155463"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly-Element (Visual Studio-Vorlagen)
 Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verweis von dieser Assembly zu Projekten hinzuzufügen.  
@@ -56,7 +56,7 @@ Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verwei
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Dieser Text gibt die Assembly, ein Projekt beim Instanziieren der Elementvorlage hinzugefügt. Diese Assembly muss in einem der folgenden Arten angegeben werden:  
+ Dieser Text gibt die Assembly zu einem Projekt hinzugefügt werden soll, wenn die Item-Vorlage instanziiert wird. Diese Assembly muss in einem der folgenden Arten angegeben werden:  
   
 -   Als vollständige AssemblyName. Zum Beispiel:  
   
@@ -75,10 +75,10 @@ Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verwei
 ## <a name="remarks"></a>Hinweise  
  `Assembly` ist ein erforderliches untergeordnetes Element von `Reference`.  
   
- Die `Reference`, `References,` und `Assembly` Elemente können nur verwendet werden, in der VSTEMPLATE-Dateien, die über eine `Type` -Attributwert `Item`.  
+ Die `Reference`, `References,` und `Assembly` Elemente können nur verwendet werden, *VSTEMPLATE* Dateien mit einer `Type` -Attributwert `Item`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Durch dieses XML werden Verweise auf die Assemblys "System.dll" und "System.Data.dll" hinzugefügt.  
+ Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Dieser XML-Code fügt Verweise auf die *"System.dll"* und *"System.Data.dll"* Assemblys.  
   
 ```  
 <TemplateContent>  
@@ -99,5 +99,5 @@ Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verwei
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
