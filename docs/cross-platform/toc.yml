@@ -22,8 +22,6 @@
 - name: Visual Studio Tools für Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Übersicht über Visual Studio-Tools für Unity
-      href: overview-of-visual-studio-tools-for-unity.md
     - name: Erste Schritte mit Visual Studio-Tools für Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Verwenden von Visual Studio Tools für Unity
