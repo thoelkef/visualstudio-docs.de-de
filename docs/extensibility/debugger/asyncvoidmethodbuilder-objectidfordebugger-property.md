@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder.ObjectIdForDebugger Eigenschaft | Microsoft Docs
+title: AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 868deef955ce90f49ce3ba2719903bdcbb38f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097405"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151482"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft
 Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für den Debugger verwendet werden kann.  
@@ -27,7 +27,7 @@ Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für d
   
  **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,4 +37,4 @@ private object ObjectIdForDebugger
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Merkmale von parallelen Erweiterung für .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

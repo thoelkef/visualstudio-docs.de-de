@@ -1,3 +1,5 @@
+- name: Dokumentation zur Codeanalyse
+  href: index.md
 - name: Übersicht
   items:
     - name: Codeanalyse für verwalteten Code
@@ -100,7 +102,7 @@
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Versionskompatibilität
           href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Codemetriken
+    - name: Codemetrik
       items:
         - name: Generieren von Codemetrikdaten
           href: how-to-generate-code-metrics-data.md
