@@ -1,6 +1,6 @@
 - name: Visual Studio-Testtools
   href: improve-code-quality.md
-- name: Testszenarien
+- name: Testszenarios
   href: developer-testing-scenarios.md
 - name: Unittest
   href: unit-test-your-code.md
@@ -43,6 +43,8 @@
       items:
         - name: Häufig gestellte Fragen zum Test-Explorer
           href: test-explorer-faq.md
+    - name: Ausführen von Tests über die Befehlszeile
+      href: vstest-console-options.md
     - name: Ausführen eines Komponententest als 64-Bit-Prozess
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: Konfigurieren von Komponententests mithilfe einer .runsettings-Datei
@@ -391,7 +393,7 @@
 - name: Testen von Lab Management
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
-    - name: Verwenden von Build oder Release Management für automatische Tests
+    - name: Verwenden von Build- oder Releaseverwaltung für automatische Tests
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: Installieren von Test-Agents und Testcontrollern
       href: lab-management/install-configure-test-agents.md

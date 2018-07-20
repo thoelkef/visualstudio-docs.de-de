@@ -1,5 +1,5 @@
 ---
-title: Archiv | Microsoft Docs
+title: Archiv | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd683ee7edc2a8641d38ef84d69c30badd5b14db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 476e711f8b2e65652bb750c4933a5dfa98fbbf63
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097210"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153734"
 ---
 # <a name="archive"></a>Archiv
-Dieser Abschnitt enthält erläuterungen von Visual Studio-Erweiterbarkeit Technologien, werden weiterhin unterstützt, aber deren Ersatz-Technologien, die neuer sind.  
+Dieser Abschnitt enthält erläuterungen zu Visual Studio-Erweiterbarkeit Technologien, werden weiterhin unterstützt, aber deren Ersetzung-Technologien, die neuer sind.  
   
-## <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im Editor  
- In diesem Abschnitt wird erläutert, wie den Editor mit legacy-Schnittstellen (IVs *) statt auf den neueren MEF-Code zuzugreifen: [Legacyschnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md).  
+## <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im editor  
+ In diesem Abschnitt wird erläutert, wie den Editor mit legacy-Schnittstellen (IVs *) statt mit den neueren MEF-Code zuzugreifen: [Legacy-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md).  
   
 ## <a name="tool-windows-in-the-registry"></a>Toolfenster in der Registrierung  
- In diesem Abschnitt wird erläutert, wie die Toolfenster direkt in der Registrierung einrichten: [Toolfenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md).
+ In diesem Abschnitt wird erläutert, wie zum Einrichten von Toolfenstern direkt in der Registrierung: [Toolfenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md).

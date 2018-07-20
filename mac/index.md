@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693691"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889884"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Einführung in Visual Studio für Mac
 
@@ -24,7 +24,7 @@ Visual Studio für Mac ist eine moderne, anspruchsvolle IDE mit vielen Features 
 
 Es umfasst Features wie einen umfangreichen Editor, Debugfunktionen, native Plattformintegration in iOS, Mac und Android und integrierte Quellcodeverwaltung.
 
-Dieser Artikel behandelt verschiedene Abschnitte von Visual Studio für Mac, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
+Dieser Artikel behandelt verschiedene Abschnitte von Visual Studio für Mac und stellt Features vor, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
 
 ## <a name="installation"></a>Installation
 
@@ -46,7 +46,7 @@ F# ist eine stark typisierte funktionale Programmiersprache, die für die Ausfü
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) ist eine Plattform zum Erstellen von Anwendungen, die sowohl unter Windows und Linux als auch unter Mac ausgeführt werden können. Visual Studio für Mac verfügt über Unterstützung für das Laden, Erstellen, Ausführen und Debuggen von .NET Core-Projekten.
+[.NET Core](https://www.microsoft.com/net/core#macos) ist eine Plattform zum Erstellen von Anwendungen, die sowohl unter Windows und Linux als auch unter Mac ausgeführt werden können. Visual Studio für Mac verfügt über Unterstützung zum Laden, Erstellen, Ausführen und Debuggen von .NET Core-Projekten. 
 
 Das Herunterladen und Installieren des .NET Core SDK wird empfohlen, um .NET Core-Projekte ausführen zu können.
 
@@ -56,8 +56,8 @@ Die .NET Core-Unterstützung enthält:
 * .NET Core-Projektvorlagen für Konsolen, Bibliotheken und Webanwendungen
 * Vollständige Unterstützung beim Debuggen, u.a. Haltepunkte, Aufruflisten, Überwachungsfenster, usw.
 * PackageReferences von NuGet und MSBuild-basiertes Wiederherstellen
-* Integrierte Unterstützung von Komponententests für das Ausführen und Debuggen von Tests mit der Visual Studio-Testplattform, die im .NET Core SDK enthalten ist.
-* Migration vom alten project.json-Format.
+* Integrierte Unterstützung von Unittests für das Ausführen und Debuggen von Tests mit der Visual Studio-Testplattform, die im .NET Core SDK enthalten ist.
+* Migration vom alten project.json-Format
 
 Informationen zu den ersten Schritten finden Sie in der [hands-on lab (praktischen Testumgebung)](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) für ASP.NET Core-Web-Apps.
 
@@ -108,11 +108,11 @@ Der Xamarin Profiler verfügt über drei Instrumente zur Profilerstellung. Der L
 
 ### <a name="inspector"></a>Inspector
 
-Der Xamarin Inspector stellt seinen Benutzern eine interaktive C#-Konsole mit Tools bereit. Er kann bei der Überprüfung aktiver Anwendungen beim Debuggen oder bei der Diagnose behilflich sein und weiterhin als Lerntool, Dokumentationstool oder Experimentiertool verwendet werden.
+Der Xamarin Inspector stellt eine interaktive C#-Konsole mit Benutzertools bereit. Er kann bei der Überprüfung aktiver Anwendungen beim Debuggen oder bei der Diagnose behilflich sein und weiterhin als Lerntool, Dokumentationstool oder Experimentiertool verwendet werden.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Er besteht aus einer eigenständigen Anwendung, die eine umfangreiche und auf verschiedene Programmierplattformen (Android, iOS, Mac und Windows) ausgerichtete C#-Konsole und eine Integration in den Debuggingworkflow Ihrer IDE bereitstellt.
+Er besteht aus einer eigenständigen Anwendung, die eine umfangreiche und auf verschiedene Programmierplattformen (Android, iOS, Mac und Windows) ausgerichtete C#-Konsole und eine Integration in den Debuggingworkflow Ihrer IDE bereitstellt. 
 
 Weitere Informationen finden Sie im Leitfaden zum [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/).
 

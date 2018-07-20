@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078851"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154384"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.  
@@ -93,7 +93,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce und zugeordnete Laufwerke  
  Wenn Sie Visual Studio zum Veröffentlichen einer ClickOnce-Anwendung verwenden, können nicht Sie ein zugeordnetes Laufwerk als Speicherort der Installation angeben. Allerdings können Sie die ClickOnce-Anwendung von einem zugeordneten Laufwerk zu installieren, mit dem Manifest-Generator und der Editor (Mage.exe und MageUI.exe) ändern. Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) und [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP-Protokoll-nt unterstützt, für die Installation von Anwendungen  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll für die Installation von Anwendungen nicht unterstützt.  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt das Installieren von Anwendungen von HTTP 1.1-Webserver oder Dateiserver. FTP, File Transfer Protocol, wird nicht unterstützt, für die Installation von Anwendungen. Sie können FTP verwenden, um nur Anwendungen zu veröffentlichen. In der folgende Tabelle werden diese Unterschiede zusammengefasst:  
   
 |URL-Typ|Beschreibung|  

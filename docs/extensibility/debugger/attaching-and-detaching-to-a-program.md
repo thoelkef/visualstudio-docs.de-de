@@ -1,5 +1,5 @@
 ---
-title: Anfügen und Trennen von einem Programm | Microsoft Docs
+title: Anfügen und Trennen von einem Programm | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca1eab8c6b5e1edc2354ea5f2dfd8922bb7cae16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9464afe698167765c4c02451ff103332f44eb741
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110067"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150842"
 ---
-# <a name="attaching-and-detaching-to-a-program"></a>Anfügen und Trennen an ein Programm
-Das Anfügen des Debuggers erfordert das Senden der richtigen Sequenz von Methoden und Ereignisse mit den entsprechenden Attributen.  
+# <a name="attaching-and-detaching-to-a-program"></a>Anfügen und Trennen von einem Programm
+Das Anfügen des Debuggers gesendet werden müssen, der richtigen Sequenz von Methoden und Ereignisse mit den richtigen Attributen.  
   
 ## <a name="sequence-of-methods-and-events"></a>Sequenz von Methoden und Ereignisse  
   
 1.  Ruft die Sitzungs-Debug-Manager (SDM) die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode.  
   
-     Das Prozessmodell Debugmodus-Modul (DE) anhand der `IDebugProgramNodeAttach2::OnAttach` Methodenrückgabe eine der folgenden Methoden, die bestimmt, was daraufhin geschieht.  
+     Basierend auf der Debug-Engine (DE)-Prozessmodell der `IDebugProgramNodeAttach2::OnAttach` Methode gibt einen der folgenden Methoden, die bestimmt, was als Nächstes geschieht zurück.  
   
-     Wenn `S_FALSE` zurückgegeben wird, wird das Debugging-Modul wurde erfolgreich an das Programm angefügt wurde. Andernfalls die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) Methode wird aufgerufen, um den Prozess anhängen abzuschließen.  
+     Wenn `S_FALSE` zurückgegeben wird, wird die Debug-Engine wurde erfolgreich an das Programm angefügt wurde. Andernfalls die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) Methode wird aufgerufen, um den anfügungsprozess zu beenden.  
   
-     Wenn `S_OK` wird zurückgegeben, die DE ist im selben Prozess wie die SDM geladen werden soll. Die SDM führt die folgenden Aufgaben:  
+     Wenn `S_OK` zurückgegeben wird, ist der DE in demselben Prozess wie das SDM geladen werden. Das SDM führt die folgenden Aufgaben:  
   
-    1.  Aufrufe [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) Modulinformationen des DE abgerufen werden.  
+    1.  Aufrufe [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) zum Abrufen der Engine Informationen des DE.  
   
-    2.  Zusammen erstellt die Deutschland.  
+    2.  Gemeinsam erstellt die DE.  
   
     3.  Aufrufe [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2.  Sendet die DE ein [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
+2.  Der DE sendet eine [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-3.  Sendet die DE ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
+3.  Der DE sendet eine [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut. 
   
-4.  Sendet die DE ein [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) , das SDM mit einer `EVENT_SYNC_STOP` Attribut.  
+4.  Der DE sendet eine [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) , das SDM mit einer `EVENT_SYNC_STOP` Attribut.  
   
  Trennen von einem Programm ist eine einfache, zweistufiger Prozess, wie folgt:  
   
-1.  Ruft die SDM [trennen](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+1.  Die SDM-Aufrufe [trennen](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-2.  Sendet die DE ein [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+2.  Der DE sendet eine [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+ [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
