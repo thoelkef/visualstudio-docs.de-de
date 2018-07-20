@@ -1,9 +1,9 @@
 ---
-title: Eigenschaftenseiten für Webprojekte Einstellungen | Microsoft Docs
+title: Einstellungen für Webprojekte von Eigenschaftenseiten | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,22 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480715"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151632"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Einstellungen von Eigenschaftenseiten für Webprojekte
-Sie können die eigenschafteneinstellungen für eine Website-Debugkonfiguration im Ändern der **Eigenschaftenseiten** (Dialogfeld), wie in beschrieben [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo die debuggerspezifischen Einstellungen im Suchen der **Eigenschaftenseiten** (Dialogfeld).  
+Sie können die eigenschafteneinstellungen für eine Website-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Dialogfeld wie in beschrieben [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo Sie debuggerspezifischen Einstellungen im finden die **Eigenschaftenseiten** Dialogfeld.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Ordner "Konfigurationseigenschaften" (Kategorie "Startoptionen")  
   
 |**Einstellung**|**Beschreibung**|  
 |-----------------|---------------------|  
 |**Startaktion**|Überschrift, unter der sich Optionen für den Anwendungsstart befinden.|  
-|**Verwenden Sie die aktuelle Seite**|Legt die aktuelle Seite als Ausgangspunkt für das Debuggen fest.|  
+|**Aktuelle Seite verwenden**|Legt die aktuelle Seite als Ausgangspunkt für das Debuggen fest.|  
 |**Bestimmte Seite:**|Gibt die Webseite an, bei der das Debuggen beginnen soll.|  
 |**Starten Sie externes Programm:**|Gibt den Startbefehl für das Programm an, das gedebuggt werden soll.|  
 |**Befehlszeilenargumente:**|Gibt Argumente für den oben aufgeführten Befehl an.|  
@@ -48,9 +48,9 @@ Sie können die eigenschafteneinstellungen für eine Website-Debugkonfiguration 
 |**Standardwebserver verwenden**|Legt fest, dass der Standardwebserver verwendet wird.|  
 |**Benutzerdefinierten Server verwenden**|Ermöglicht es Ihnen, die Basis-URL einzugeben, die als Server verwendet werden soll.|  
 |**Debugger**|Überschrift, unter der sich Optionen zum Debugtyp befinden.|  
-|**ASP.NET-Debuggen**|Ermöglicht das Debuggen von Serverseiten, die für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Entwicklungsplattform geschrieben wurden. Sie müssen eine URL angeben **Start-URL**.|  
-|**Debuggen von systemeigenem code**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
-|**SQL Server-Debuggen**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
+|**Debuggen von ASP.NET:**|Ermöglicht das Debuggen von Serverseiten, die für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Entwicklungsplattform geschrieben wurden. Sie müssen eine URL angeben **Start-URL**.|  
+|**Debuggen von nativem code**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
+|**SQL Server-debugging**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
 |**Silverlight-debugging**|Ermöglicht das Debuggen von Silverlight-Komponenten.|  
   
 ## <a name="see-also"></a>Siehe auch  

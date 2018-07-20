@@ -1,9 +1,9 @@
 ---
-title: JavaScript-Konsolenbefehle in Visual Studio | Microsoft Docs
+title: JavaScript-Konsolenbefehle in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478719"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154371"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
+# <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsole Befehle in Visual Studio
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für uwp-apps und apps mit Visual Studio-Tools für Apache Cordova erstellt. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps, finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   
@@ -49,13 +49,13 @@ ms.locfileid: "31478719"
 |`error(message)`|Sendet `message` an das Konsolenfenster. Der Meldungstext ist rot, und ein Fehlersymbol wird vorangestellt.<br /><br /> Objekte, die mit dem Befehl übergeben werden, werden in einen Zeichenfolgenwert konvertiert.|`console.error("error message");`|  
 |`group(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.<br /><br /> In einigen Szenarien, z. B. wenn ein Komponentenmodell verwendet wird, können die group*-Befehle die Ausgabenanzeige im Konsolenfenster vereinfachen.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
 |`groupCollapsed(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen, die mit `groupCollapsed` gesendet werden, werden standardmäßig in einer reduzierten Ansicht angezeigt. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.|Die Verwendung ist identisch mit dem `group` -Befehl.<br /><br /> Siehe Beispiel für den `group` -Befehl.|  
-|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
+|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
 |`info(message)`|Sendet `message` an das Konsolenfenster. Der Meldung wird ein Informationssymbol vorangestellt.|`console.info("info message");`<br /><br /> Weitere Beispiele finden Sie unter [Formatting console.log output](#ConsoleLog) weiter unten in diesem Thema.|  
 |`log(message)`|Sendet `message` an das Konsolenfenster.<br /><br /> Wenn Sie ein Objekt übergeben, sendet der Befehl dieses Objekt an das Konsolenfenster und zeigt es in einer Objektschnellansicht an. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
-|`profile(reportName)`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
-|`profileEnd()`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
-|`select(element)`|Wählt das angegebene HTML- `element` in der [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
+|`profile(reportName)`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
+|`profileEnd()`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
+|`select(element)`|Wählt das angegebene HTML- `element` in die [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentierung von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Stoppt einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Siehe den Konsolenbefehl `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Sendet eine Stapelverfolgung an das Konsolenfenster. Die Ablaufverfolgung umfasst die vollständige Aufrufliste, z. B. Dateiname, Zeilennummer und Spaltennummer.|`console.trace();`|  
@@ -86,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster  
  Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)  
   
-##  <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
+##  <a name="ConsoleLog"></a> Formatieren der Ausgabe von "Console.log"  
  Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.  
   
 ```javascript  

@@ -1,5 +1,5 @@
 ---
-title: Bitmaps Element | Microsoft Docs
+title: Bitmaps-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea89ae212a85ed2a164ce133d055aebe551cf545
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f407347946df5ddc537001fcb14bae909e52646
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098221"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153662"
 ---
-# <a name="bitmaps-element"></a>Bitmaps-Element
+# <a name="bitmaps-element"></a>Bitmaps-element
 Gruppen [Bitmapelement](../extensibility/bitmap-element.md) Elemente.  
   
 ## <a name="syntax"></a>Syntax  
@@ -46,14 +46,14 @@ Gruppen [Bitmapelement](../extensibility/bitmap-element.md) Elemente.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Bitmaps-Element](../extensibility/bitmaps-element.md)|Gruppiert die Elemente mithilfe einer Bitmap.|  
-|[Bitmap-Element](../extensibility/bitmap-element.md)|Definiert eine Bitmap an.|  
+|[Bitmaps-element](../extensibility/bitmaps-element.md)|Gruppiert Elemente der Bitmap.|  
+|[Bitmap-element](../extensibility/bitmap-element.md)|Definiert eine Bitmap.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -66,5 +66,5 @@ Gruppen [Bitmapelement](../extensibility/bitmap-element.md) Elemente.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

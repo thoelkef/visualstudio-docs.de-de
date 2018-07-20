@@ -1,5 +1,5 @@
 ---
-title: Wie ClickOnce Anwendungsupdates ausführt | Microsoft Docs
+title: Wie ClickOnce Anwendungsupdates ausführt | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,25 +18,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe09cfe546d947bf07334e9dd6468226884e9e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1f5d9b67633ffa2b14f780b9588f526372a4f5d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557696"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152513"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Wie ClickOnce Anwendungsupdates ausführt
-ClickOnce verwendet die Dateiversionsinformationen im Bereitstellungsmanifest der Anwendung angegebenen entscheiden, ob Sie die Dateien der Anwendung zu aktualisieren. Nach dem Beginn der Aktualisierung verwendet ClickOnce ein Verfahren namens *Patchen* vermeiden redundante Herunterladen von Dateien.  
+ClickOnce verwendet die Dateiversionsinformationen, angegeben im Bereitstellungsmanifest einer Anwendung entscheiden, ob Sie die Dateien der Anwendung zu aktualisieren. Nach Beginn eine Aktualisierung verwendet ClickOnce eine Technik namens *Patchen* vermeiden redundante Herunterladen von Dateien.  
   
-## <a name="file-patching"></a>Patchen  
- Beim Aktualisieren einer Anwendung wird ClickOnce nicht alle Dateien für die neue Version der Anwendung heruntergeladen, wenn die Dateien geändert haben. Stattdessen vergleicht er die Hashsignaturen der Dateien im Anwendungsmanifest für die aktuelle Anwendung für die Signaturen in das Manifest für die neue Version angegeben. Wenn eine Datei Signaturen unterschiedlich sind, lädt ClickOnce die neue Version. Wenn die Signaturen übereinstimmen, wurde die Datei nicht von einer Version zur nächsten geändert. In diesem Fall ClickOnce die vorhandene Datei kopiert und in die neue Version der Anwendung verwendet. Dieser Ansatz wird verhindert, dass ClickOnce müssen erneut, die gesamte Anwendung herunterladen, auch wenn nur ein oder zwei Dateien geändert wurden.  
+## <a name="file-patching"></a>Patchen von Dateien  
+ Bei der Aktualisierung einer Anwendung wird ClickOnce nicht alle Dateien für die neue Version der Anwendung heruntergeladen, wenn die Dateien geändert haben. Stattdessen werden die Hashsignaturen, der die angegebenen Dateien in das Anwendungsmanifest für die aktuelle Anwendung für die Signaturen im Manifest für die neue Version verglichen. Wenn eine Datei, die Signaturen unterschiedlich sind, lädt die neue Version von ClickOnce herunter. Wenn die Signaturen übereinstimmen, wurde die Datei nicht von einer Version zur nächsten geändert. ClickOnce wird in diesem Fall kopiert die vorhandene Datei und wird in der neuen Version der Anwendung verwendet. Dadurch wird verhindert, dass ClickOnce müssen in diesem Fall die gesamte Anwendung herunterladen, auch wenn nur ein oder zwei Dateien geändert haben.  
   
- Patchen funktioniert auch für Assemblys, die heruntergeladen werden bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> und <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> Methoden.  
+ Patchen von Dateien kann auch für Assemblys, die heruntergeladen werden bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> und <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> Methoden.  
   
- Wenn Sie Visual Studio verwenden, um Ihre Anwendung zu kompilieren, generiert er neue Hashsignaturen für alle Dateien, wenn Sie das gesamte Projekt neu erstellen. In diesem Fall werden alle Assemblys an den Client heruntergeladen werden, jedoch nur einige Assemblys möglicherweise geändert.  
+ Wenn Sie Visual Studio verwenden, um Ihre Anwendung zu kompilieren, generiert er neue Hashsignaturen für alle Dateien, wenn Sie das gesamte Projekt neu erstellen. In diesem Fall werden alle Assemblys an den Client heruntergeladen werden, jedoch nur ein paar Assemblys möglicherweise geändert.  
   
- Patchen funktioniert nicht für Dateien, die als Daten gekennzeichnet und im Data-Verzeichnis gespeichert. Diese werden immer unabhängig von der Datei-Hashsignatur heruntergeladen. Weitere Informationen auf das Datenverzeichnis finden Sie unter [zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+ Patchen von Dateien funktioniert nicht für Dateien, die als Daten markiert sind, und in das Verzeichnis "Data" gespeichert. Diese werden unabhängig von der Signatur der Datei-Hash immer heruntergeladen. Weitere Informationen zu dem Verzeichnis "Data", finden Sie unter [Zugriff auf lokale und remote-Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
+ [Auswählen einer Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)   
+ [Wählen Sie eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

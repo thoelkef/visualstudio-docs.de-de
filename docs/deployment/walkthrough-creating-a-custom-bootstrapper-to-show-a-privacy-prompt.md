@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808441"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152499"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und die Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden, die dieses Verhalten zu gestatten, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob gewähren der Berechtigung für die Anwendung zum automatischen Aktualisieren verwendet wird. Wenn die Anwendung nicht zulässig ist, automatisch zu aktualisieren, wird es nicht installiert.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Visual Studio 2010.  
   
-## <a name="create-an-update-consent-dialog-box"></a>Erstellen Sie ein Update Zustimmung (Dialogfeld)  
+## <a name="create-an-update-consent-dialog-box"></a>Erstellen einer Zustimmung aktualisieren (Dialogfeld)  
  Erstellen Sie eine Anwendung, die den Reader, der für die Zustimmung zu automatischen Updates für die Anwendung fragt, zum Anzeigen einer datenschutzeingabeaufforderung.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Um ein Dialogfeld "Zustimmung" zu erstellen.  
@@ -116,7 +116,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
     2.  Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
   
-    3.  Fügen Sie in der Datei "Module1.vb" Code den folgenden Code ein.  
+    3.  In der *"Module1.vb"* Codedatei, fügen Sie den folgenden Code hinzu.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
      Visual C# -Code nur für Entwickler:  
   
-     Öffnen Sie die Codedatei "Program.cs", und fügen Sie den folgenden Code hinzu.  
+     Öffnen der *"Program.cs"* Codedatei, und fügen Sie den folgenden Code hinzu.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
  Dieses Verfahren veranschaulicht, wie ein benutzerdefinierte Bootstrapperpaket zu erstellen, indem Sie die folgenden Dokumente zu erstellen:  
   
--   Eine product.xml Manifestdatei, um den Inhalt des Bootstrappers zu beschreiben.  
+-   Ein *product.xml* Manifestdatei, um den Inhalt des Bootstrappers zu beschreiben.  
   
--   Eine Manifestdatei "Package.xml", um die Lokalisierung-spezifische Aspekte des Pakets, z. B. Zeichenfolgen und die Software-Lizenzbedingungen aufzulisten.  
+-   Ein *"Package.xml"* Manifestdatei, um die Lokalisierung-spezifische Aspekte des Pakets, z. B. Zeichenfolgen und die Software-Lizenzbedingungen aufzulisten.  
   
 -   Ein Dokument für die Software-Lizenzbedingungen.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Erstellen Sie das Bootstrapperverzeichnis  
   
-1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** im %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in die *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Möglicherweise Administratorrechte verfügen, um diesen Ordner zu erstellen.  
   
-2.  Erstellen Sie im Verzeichnis UpdateConsentDialog ein Unterverzeichnis namens En.  
+2.  In der *UpdateConsentDialog* Verzeichnis erstellen Sie ein Unterverzeichnis mit dem Namen *En*.  
   
     > [!NOTE]
     >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Beispielsweise können Sie die Unterverzeichnisse für den fr und de Gebietsschemas hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und Language Packs bei Bedarf enthalten.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Erstellen Sie die product.xml-Manifestdatei  
   
-1.  Erstellen Sie eine Textdatei namens `product.xml`.  
+1.  Erstellen Sie eine Textdatei namens *product.xml*.  
   
-2.  Fügen Sie den folgenden XML-Code in die product.xml-Datei hinzu. Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
+2.  In der *product.xml* Datei, fügen Sie den folgenden XML-Code. Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Erstellen Sie das Manifest "Package.xml" Lizenzbedingungen-Datei und der software  
   
-1.  Erstellen Sie eine Textdatei namens `package.xml`.  
+1.  Erstellen Sie eine Textdatei namens *"Package.xml"*.  
   
-2.  Fügen Sie den folgenden XML-Code definiert das Gebietsschema und die Software-Lizenzbedingungen einschließen möchten, in der Datei "Package.xml". Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
+2.  In der *"Package.xml"* Datei, fügen Sie folgenden XML-Code definiert das Gebietsschema und die Software-Lizenzbedingungen einschließen möchten. Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 3.  Speichern Sie die Datei in das Unterverzeichnis "En" in das Bootstrapperverzeichnis UpdateConsentDialog.  
   
-4.  Erstellen Sie ein Dokument namens eula.rtf für die Software-Lizenzbedingungen.  
+4.  Erstellen Sie ein Dokument namens *eula.rtf* für die Software-Lizenzbedingungen.  
   
     > [!NOTE]
     >  Die Software-Lizenzbedingungen sollte Informationen zu Lizenzierung, zu GEWÄHRLEISTUNGEN, Schulden und vor Ort geltenden Gesetze enthalten. Diese Dateien sollten gebietsschemaspezifische, also stellen Sie sicher, dass die Datei in einem Format gespeichert wird, die MBCS oder UNICODE-Zeichen unterstützt. Wenden Sie sich an Ihre rechtsabteilung über den Inhalt der Software-Lizenzbedingungen.  
   
-5.  Speichern Sie das Dokument, das Unterverzeichnis "En" in das Bootstrapperverzeichnis UpdateConsentDialog.  
+5.  Speichern Sie das Dokument in das Unterverzeichnis "En" die *UpdateConsentDialog* Bootstrapperverzeichnis.  
   
-6.  Erstellen Sie bei Bedarf eine neue "Package.xml" Manifestdatei und ein neues eula.rtf-Dokument für den Software-Lizenzbedingungen für jedes Gebietsschema. Sie Unterverzeichnisse für das fr und de Systemgebietsschema erstellt haben, z. B. erstellen Sie separate "Package.xml" manifest-Dateien und Software-Lizenzbedingungen zu und speichern Sie sie in den Unterverzeichnissen fr und de.  
+6.  Erstellen Sie bei Bedarf ein neues *"Package.xml"* manifest-Datei und ein neues *eula.rtf* Dokument für den Software-Lizenzbedingungen für jedes Gebietsschema. Sie Unterverzeichnisse für das fr und de Systemgebietsschema erstellt haben, z. B. erstellen Sie separate "Package.xml" manifest-Dateien und Software-Lizenzbedingungen zu und speichern Sie sie in den Unterverzeichnissen fr und de.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Legen Sie als Voraussetzung für das Aktualisieren einer Anwendung zustimmen  
  In Visual Studio können Sie die Zustimmung der Update-Anwendung als erforderliche Komponente festlegen.  
@@ -260,7 +260,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 4.  Wenn die Ausgabe der Veröffentlichung nicht automatisch geöffnet wird, navigieren Sie auf die Ausgabe der Veröffentlichung.  
   
-5.  Führen Sie das Programm Setup.exe.  
+5.  Führen Sie die *Setup.exe* Programm.  
   
      Das Setup-Programm zeigt die Update-Zustimmungsdialogfeld Software-Lizenzbedingungen.  
   
@@ -286,7 +286,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 4.  Wenn die Ausgabe der Veröffentlichung nicht automatisch geöffnet wird, navigieren Sie auf die Ausgabe der Veröffentlichung.  
   
-5.  Führen Sie das Programm Setup.exe.  
+5.  Führen Sie die *Setup.exe* Programm.  
   
      Das Setup-Programm zeigt die Update-Zustimmungsdialogfeld Software-Lizenzbedingungen.  
   
@@ -301,8 +301,8 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
 8.  Wenn das Dialogfeld "Anwendung installieren" angezeigt wird, klicken Sie auf **installieren**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)   
+ [Vorbedingungen für die anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)   
  [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)   
- [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
- [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+ [Gewusst wie: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
+ [Gewusst wie: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
+ [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdef0199aa55d6981761a20804f9f209a1a0fdc4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565418"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152242"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung
-Alle ClickOnce-Anwendung auf Grundlage eine .exe-Datei kann werden im Hintergrund installiert und durch ein benutzerdefiniertes Installationsprogramm aktualisiert. Ein benutzerdefiniertes Installationsprogramm kann benutzerdefinierte Benutzeroberfläche während der Installation, einschließlich der benutzerdefinierten Dialogfelder für Sicherheit und Wartungsvorgänge implementieren. Zum Ausführen der Installation erforderlichen Vorgänge benutzerdefinierte Installer nutzt die <xref:System.Deployment.Application.InPlaceHostingManager> Klasse. Diese exemplarische Vorgehensweise veranschaulicht, wie ein benutzerdefiniertes Installationsprogramm erstellen, das eine ClickOnce-Anwendung im Hintergrund installiert wird.  
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung
+Jede ClickOnce-Anwendung basierend auf einer *.exe* Datei im Hintergrund installiert und aktualisiert, indem ein individuelles Installationsprogramm erstellt. Ein individuelles Installationsprogramm erstellt kann benutzerdefinierte Benutzeroberfläche während der Installation, einschließlich der benutzerdefinierten Dialogfelder für Sicherheit und Wartung Vorgänge implementieren. Um die Installation erforderlichen Vorgänge ausführen, das benutzerdefinierte Installationsprogramm verwendet die <xref:System.Deployment.Application.InPlaceHostingManager> Klasse. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie ein benutzerdefiniertes Installationsprogramm erstellen, das eine ClickOnce-Anwendung im Hintergrund installiert wird.  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
-### <a name="to-create-a-custom-clickonce-application-installer"></a>So erstellen ein benutzerdefiniertes Installationsprogramm der ClickOnce-Anwendung  
+### <a name="to-create-a-custom-clickonce-application-installer"></a>Erstellen ein benutzerdefiniertes Installers der ClickOnce-Anwendung  
   
-1.  Fügen Sie in der ClickOnce-Anwendung Verweise auf "System.Deployment" und "System.Windows.Forms".  
+1.  Fügen Sie Verweise auf "System.Deployment" und "System.Windows.Forms" hinzu, in der ClickOnce-Anwendung.  
   
-2.  Die Anwendung eine neue Klasse hinzu, und geben Sie einen beliebigen Namen. In dieser exemplarischen Vorgehensweise verwendet den Namen `MyInstaller`.  
+2.  Fügen Sie eine neue Klasse zu Ihrer Anwendung, und geben Sie einen beliebigen Namen. In dieser exemplarischen Vorgehensweise verwendet den Namen `MyInstaller`.  
   
-3.  Fügen Sie die folgenden `Imports` oder `using` -Anweisungen an den Anfang der neuen Klasse.  
+3.  Fügen Sie die folgenden `Imports` oder `using` Anweisungen am Anfang Ihrer neuen Klasse.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -50,17 +50,17 @@ Alle ClickOnce-Anwendung auf Grundlage eine .exe-Datei kann werden im Hintergrun
     using System.Windows.Forms;  
     ```  
   
-4.  Fügen Sie die folgenden Methoden der Klasse hinzu.  
+4.  Fügen Sie die folgenden Methoden der Klasse.  
   
-     Diese Methoden aufrufen <xref:System.Deployment.Application.InPlaceHostingManager> Methoden, um das Bereitstellungsmanifest herunterzuladen assert entsprechende Berechtigungen verfügen, fordern Sie den Benutzer für die Berechtigung zum Installieren und herunter, und installieren die Anwendung in den ClickOnce-Cache. Ein benutzerdefiniertes Installationsprogramm kann angeben, dass eine ClickOnce-Anwendung ist bereits vertrauenswürdig, kann die Entscheidung über die Vertrauenswürdigkeit zu verzögern der <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> -Methodenaufruf. Dieser Code stuft die Anwendung.  
+     Diese Methoden rufen <xref:System.Deployment.Application.InPlaceHostingManager> Verfahren zum Herunterladen von des Bereitstellungsmanifests, assert berechtigt, den Benutzer für die Berechtigung zur Installation herunter und installieren Sie die Anwendung in die ClickOnce-Cache. Ein individuelles Installationsprogramm erstellt kann angeben, dass eine ClickOnce-Anwendung bereits vertrauenswürdig ist, oder kann die Entscheidung über die Vertrauenswürdigkeit zu verzögern der <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> Methodenaufruf. Dieser Code, stuft die Anwendung.  
   
     > [!NOTE]
-    >  Berechtigungen zuweist, vorab vertrauen darf nicht die Berechtigungen des Codes benutzerdefinierter Installer überschreiten.  
+    >  Berechtigungen, die von bereits vertrauen darf die Berechtigungen des Codes benutzerdefiniertes Installationsprogramm nicht überschreiten.  
   
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]  
   
-5.  Aufrufen, um die Installation aus dem Code versucht, die `InstallApplication` Methode. Angenommen, wenn Sie eine Klasse mit dem Namen `MyInstaller`, rufen Sie möglicherweise `InstallApplication` auf folgende Weise.  
+5.  Rufen Sie die Installation aus dem Code versucht, den `InstallApplication` Methode. Wenn Sie die Klasse mit dem Namen z. B. `MyInstaller`, möglicherweise rufen Sie `InstallApplication` auf folgende Weise.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -75,7 +75,7 @@ Alle ClickOnce-Anwendung auf Grundlage eine .exe-Datei kann werden im Hintergrun
     ```  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Eine ClickOnce-Anwendung kann auch benutzerdefinierte Logik für Updates, einschließlich einer benutzerdefinierten Benutzeroberfläche während des Aktualisierungsvorgangs anzuzeigende hinzufügen. Weitere Informationen finden Sie unter <xref:System.Deployment.Application.UpdateCheckInfo>. Eine ClickOnce-Anwendung kann auch die standardmäßigen, Verknüpfung und Software -Eintrag mithilfe Unterdrücken einer `<customUX>` Element. Weitere Informationen finden Sie unter [ \<EntryPoint >-Element](../deployment/entrypoint-element-clickonce-application.md) und <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Eine ClickOnce-Anwendung kann auch benutzerdefinierte Logik für Updates, einschließlich einer benutzerdefinierten Benutzeroberfläche anzuzeigenden während des Updates hinzufügen. Weitere Informationen finden Sie unter <xref:System.Deployment.Application.UpdateCheckInfo>. Eine ClickOnce-Anwendung kann auch die standardmäßigen, Verknüpfung und Software -Eintrag mithilfe Unterdrücken einer `<customUX>` Element. Weitere Informationen finden Sie unter [ \<EntryPoint >-Element](../deployment/entrypoint-element-clickonce-application.md) und <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)   

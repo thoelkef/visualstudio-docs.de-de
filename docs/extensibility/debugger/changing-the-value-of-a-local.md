@@ -1,5 +1,5 @@
 ---
-title: Ändern des Werts eines lokalen | Microsoft Docs
+title: Ändern des Werts eines lokalen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 422d1702f319db6da21892bcaa1bd50adad7909d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 788f496f2afeb3b6392cb165d243a9d83f8ea005
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109584"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151069"
 ---
-# <a name="changing-the-value-of-a-local"></a>Ändern des Werts von einer lokalen
+# <a name="change-the-value-of-a-local"></a>Ändern Sie den Wert eines lokalen Elements
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Wenn ein neuer Wert in das Wertfeld des typisiert ist die **"lokal"** Fenster übergibt das debugpaket die Zeichenfolge an, wie der ausdrucksauswertung (EE) eingegeben haben. Die EE wertet dieser Zeichenfolge übereinstimmt, kann ein einfacher Wert oder einen Ausdruck enthalten, und speichert den resultierenden Wert in der zugeordneten lokalen.  
+ Wenn ein neuer Wert eingegeben wird, klicken Sie im Feld mit Wert der **"lokal"** Fenster, das debugpaket übergibt die Zeichenfolge wie eingegeben werden, um die ausdrucksauswertung (EE). Die EE wertet diese Zeichenfolge, die kann entweder einen einfachen Wert oder einen Ausdruck enthalten, und speichert den resultierenden Wert in der zugehörigen lokalen.  
   
- Dies ist eine Übersicht über den Prozess der Änderung des Werts eines lokalen:  
+ Dies ist eine Übersicht über den Prozess zum Ändern des Werts eines lokalen Elements:  
   
-1.  Nachdem der Benutzer den neuen Wert eingegeben hat, ruft Visual Studio [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) auf die [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das mit der lokalen zugeordnet.  
+1.  Nachdem der neue Wert eingegeben wurde, ruft Visual Studio [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) auf die [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, mit der lokalen verknüpft ist.  
   
 2.  `IDebugProperty2::SetValueAsString` führt folgende Ausgaben aus:  
   
@@ -37,18 +37,18 @@ ms.locfileid: "31109584"
   
     2.  Bindet das zugeordnete [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt zum Abrufen einer [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
   
-    3.  Konvertiert den Wert in eine Reihe von Bytes.  
+    3.  Konvertiert den Wert in eine Reihe von Bytes an.  
   
-    4.  Aufrufe [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) Bytes der Wert in den Arbeitsspeicher eingefügt wird, damit zu debuggenden Programms darauf zugreifen kann.  
+    4.  Aufrufe [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) den Wert des Bytes in den Arbeitsspeicher eingefügt wird, damit das derzeit debuggte Programm darauf zugreifen kann.  
   
-3.  Visual Studio aktualisiert die **"lokal"** angezeigt (finden Sie unter [anzeigen "lokal"](../../extensibility/debugger/displaying-locals.md) Einzelheiten).  
+3.  Visual Studio aktualisiert die **"lokal"** anzuzeigen (finden Sie unter [anzeigen "lokal"](../../extensibility/debugger/displaying-locals.md) Einzelheiten).  
   
- Dieses Verfahren dient außerdem zum Ändern des Werts einer Variablen in der **Überwachen** Fenster, es sei denn, es ist die `IDebugProperty2` Objekt zugewiesen ist, mit dem Wert der lokalen, die anstelle von verwendet wird die `IDebugProperty2` mit der lokalen selbst.  
+ Dieses Verfahren dient auch zum Ändern des Werts einer Variablen in der **Überwachen** Fenster mit der Ausnahme ist die `IDebugProperty2` Objekt verknüpft ist, mit dem Wert der lokalen, die anstelle von verwendet wird die `IDebugProperty2` Objekt verknüpft ist, mit der lokalen sich selbst.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Beispielimplementierung der Änderungen von Werten](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
- Die MyCEE-Beispiel verwendet schrittweise durch den Prozess zum Ändern von Werten.  
+ [Beispiel für die Implementierung der Änderung von Werten](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
+ Im MyCEE-Beispiel verwendet, um den Prozess des Umschaltens Werte zu durchlaufen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
