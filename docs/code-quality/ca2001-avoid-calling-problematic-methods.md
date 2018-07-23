@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cf0b0cc79baf49b4792cd009d3e634b8d10574
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef7daf2cdf6ee27863f8239999a436f17a5d6866
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056071"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176940"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Keine problematischen Methoden aufrufen
 
@@ -45,7 +45,7 @@ Vermeiden Sie überflüssige und möglicherweise gefährliche Methodenaufrufe. E
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Aufrufen von GC aus. Erfassen, kann die Anwendungsleistung erheblich beeinträchtigen und ist nur selten notwendig. Weitere Informationen finden Sie unter [Mariani's Performance Tidbits](http://go.microsoft.com/fwlink/?LinkId=169256) Blogeintrag auf MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend und Thread.Resume sind aufgrund ihrer zu unvorhersehbarem Verhalten veraltet.  Verwenden Sie andere Klassen in der <xref:System.Threading> -Namespace, z. B. <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, und <xref:System.Threading.Semaphore>, um Threads zu synchronisieren oder Ressourcen zu schützen.|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Die Methode DangerousGetHandle stellt ein Sicherheitsrisiko dar, da es ein Handle zurückgeben kann, der ungültig ist. Finden Sie unter den <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> und <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> Methoden für die Weitere Informationen dazu, wie Sie die Methode DangerousGetHandle sicher zu verwenden.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Diese Methoden können die Assemblys an unerwarteten Speicherorten laden. Siehe beispielsweise Suzanne Cook die Anmerkungen zu dieser Version .NET CLR-Blogbeiträge [LoadFile Visual Studio. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) und [Auswählen einer Bindungskontexts](http://go.microsoft.com/fwlink/?LinkId=164451) auf der MSDN-Website für Informationen zu Methoden, die Assemblys zu laden.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Diese Methoden können die Assemblys an unerwarteten Speicherorten laden. Siehe beispielsweise Suzanne Cook die Anmerkungen zu dieser Version .NET CLR-Blogbeiträge [LoadFile Visual Studio. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) und [Auswählen einer Bindungskontexts](http://go.microsoft.com/fwlink/?LinkId=164451) Informationen über Methoden, die Assemblys laden.|
 |[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|Beim Start der Benutzercode in einem verwalteten Prozess ausführen, ist es zu spät, CoSetProxyBlanket zuverlässig aufzurufen. Die common Language Runtime (CLR) führt Initialisierungsaktionen aus, die adressiert, der die P/Invoke-Benutzer verhindern können.<br /><br /> Wenn Sie zum Aufrufen von CoSetProxyBlanket für eine verwaltete Anwendung verfügen, empfehlen wir, dass Sie starten Sie den Prozess mit einer nativen Code (C++) ausführbaren, im nativen Code CoSetProxyBlanket, und klicken Sie dann Ihre Anwendung mit verwaltetem Code im Prozess. (Achten Sie darauf eine Versionsnummer der Common Language Runtime an.)|
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

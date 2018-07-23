@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952478"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178903"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
-Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer erfüllen müssen, können Sie Modelle in Visual Studio als Teil Ihrer Beschreibung der allgemeinen Struktur und das Verhalten einer Softwaresystem oder Anwendung erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
+Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer erfüllen müssen, können Sie Modelle als Teil der Beschreibung von Gesamtstruktur und das Verhalten des Softwaresystems oder der Anwendung in Visual Studio erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -30,11 +30,11 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
  Die Architektur eines Systems kann in zwei Bereiche unterteilt werden:
 
--   [Allgemeine Entwurf](#Structure). Dieser Begriff beschreibt die Hauptkomponenten und ihre Interaktion zum Erfüllen der einzelnen Anforderungen. Wenn es sich um ein umfangreiches System handelt, kann jede Komponente über einen eigenen allgemeinen Entwurf verfügen, der darstellt, wie er aus kleineren Komponenten zusammengesetzt ist.
+-   [Allgemeiner Entwurf](#Structure). Dieser Begriff beschreibt die Hauptkomponenten und ihre Interaktion zum Erfüllen der einzelnen Anforderungen. Wenn es sich um ein umfangreiches System handelt, kann jede Komponente über einen eigenen allgemeinen Entwurf verfügen, der darstellt, wie er aus kleineren Komponenten zusammengesetzt ist.
 
--   [Entwurfsmuster bieten folgende Vorteile](#Patterns) und Konventionen, die in allen Entwürfen der Komponenten verwendet. Ein Muster beschreibt eine bestimmte Methode zum Erreichen eines Programmierziels. Wenn das Team während des gesamten Entwurfs die gleichen Entwurfsmuster verwendet, lässt sich der Aufwand zum Durchführen von Änderungen und Entwickeln neuer Software verringern.
+-   [Entwurfsmuster](#Patterns) und Konventionen, die in allen Entwürfen der Komponenten verwendet. Ein Muster beschreibt eine bestimmte Methode zum Erreichen eines Programmierziels. Wenn das Team während des gesamten Entwurfs die gleichen Entwurfsmuster verwendet, lässt sich der Aufwand zum Durchführen von Änderungen und Entwickeln neuer Software verringern.
 
-##  <a name="Structure"></a> Allgemeine Entwurf
+##  <a name="Structure"></a> Allgemeiner Entwurf
  Ein allgemeiner Entwurf beschreibt die Hauptkomponenten des Systems und ihre Interaktion zum Erreichen der Ziele des Entwurfs. Das Entwickeln des allgemeinen Entwurfs umfasst die Aktivitäten in der folgenden Liste, wenn auch nicht unbedingt in einer bestimmten Reihenfolge.
 
  Wenn Sie vorhandenen Code aktualisieren, sollten Sie zunächst die Hauptkomponenten beschreiben. Stellen Sie sicher, dass Sie ggf. vorhandene Änderungen der Benutzeranforderungen verstehen, und fügen Sie dann Interaktionen zwischen den Komponenten hinzu, oder ändern Sie diese. Wenn Sie ein neues System entwickeln, ermitteln Sie zunächst die Hauptmerkmale der Benutzeranforderungen. Sie können dann Sequenzen von Interaktionen für die Hauptanwendungsfälle untersuchen und anschließend die Sequenzen in einem Komponentenentwurf konsolidieren.
@@ -45,10 +45,10 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
 -   [Architektonische Muster](#BigDecisions). Die Kerntechnologien und Architekturelemente des Systems, die Sie ausgewählt haben.
 
--   Das Datenmodell der Komponenten und Schnittstellen. Sie können Klassendiagramme zeichnen, um die Informationen zu beschreiben, die zwischen Komponenten übergeben und in den Komponenten gespeichert werden.
+-   Datenmodell der Komponenten und Schnittstellen. Sie können Klassendiagramme zeichnen, um die Informationen zu beschreiben, die zwischen Komponenten übergeben und in den Komponenten gespeichert werden.
 
 ##  <a name="Requirements"></a> Grundlegendes zu den Anforderungen
- Der allgemeine Entwurf für eine vollständige Anwendung wird am effektivsten zusammen mit einem Anforderungsmodell oder einer anderen Beschreibung der Benutzeranforderungen entwickelt. Weitere Informationen zu Anforderungsmodelle, finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).
+ Der allgemeine Entwurf für eine vollständige Anwendung wird am effektivsten zusammen mit einem Anforderungsmodell oder einer anderen Beschreibung der Benutzeranforderungen entwickelt. Weitere Informationen über Anforderungsmodelle finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).
 
  Wenn das System, das Sie entwickeln, eine Komponente in einem größeren System ist, können Ihre Anforderungen vollständig oder teilweise in programmgesteuerte Schnittstellen aufgenommen werden.
 
@@ -69,7 +69,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 ##  <a name="BigDecisions"></a> Architektonische Muster
  Sie müssen zu einem frühen Zeitpunkt der Entwicklung Optionen für die wichtigsten Technologien und Elemente auswählen, von denen der Entwurf abhängt. Diese Optionen müssen in den folgenden Bereichen ausgewählt werden:
 
--   Optionen für die Basistechnologie, z. B. Auswahl einer Datenbank oder eines Dateisystems, Auswahl einer Netzwerkanwendung oder eines Webclients usw.
+-   Basistechnologie, z. B. die Auswahl zwischen einer Datenbank und ein Dateisystem und die Wahl zwischen einer netzwerkanwendung oder eines Webclients und so weiter.
 
 -   Frameworkoptionen, z. B. Auswahl von Windows Workflow Foundation oder ADO.NET Entity Framework.
 
@@ -82,7 +82,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 ##  <a name="Patterns"></a> Entwurfsmuster
  Ein Entwurfsmuster skizziert den Entwurf eines bestimmten Aspekts der Software, insbesondere eines Aspekts, der in verschiedenen Teilen des Systems vorhanden ist. Wenn Sie im gesamten Projekt eine einheitliche Vorgehensweise anwenden, können Sie den Aufwand für den Entwurf verringern, die Konsistenz der Benutzeroberfläche sicherstellen und den Aufwand für das Verstehen und Ändern des Codes reduzieren.
 
- Einige allgemeine Entwurfsmuster, z. B. das Beobachtermuster, sind bekannt und in vielfältigen Szenarien anwendbar. Darüber hinaus gibt es Muster, die nur auf das spezifische Projekt anwendbar sind. Beispielsweise enthält ein Webvertriebssystem mehrere Vorgänge im Code, mit denen Änderungen an einer Kundenbestellung vorgenommen werden. Um sicherzustellen dass der Zustand der Bestellung in jeder Phase korrekt angezeigt wird, müssen all diese Vorgänge einem bestimmten Protokoll zum Aktualisieren der Datenbank entsprechen.
+ Einige allgemeine Entwurfsmuster, z. B. das Beobachtermuster, sind bekannt und in vielfältigen Szenarien anwendbar. Darüber hinaus gibt es Muster, die nur auf das spezifische Projekt anwendbar sind. Z. B. in einem Vertriebssystem Web stehen mehrere Vorgänge im Code, in denen Änderungen an einer kundenbestellung vorgenommen werden. Um sicherzustellen dass der Zustand der Bestellung in jeder Phase korrekt angezeigt wird, müssen all diese Vorgänge einem bestimmten Protokoll zum Aktualisieren der Datenbank entsprechen.
 
  Das Erstellen der Softwarearchitektur umfasst das Bestimmen der Muster, die im gesamten Entwurf angewendet werden sollen. Dies ist normalerweise eine permanente Aufgabe, da während des Projekts neue Muster und Verbesserungen vorhandener Muster erkannt werden. Es ist hilfreich, den Entwicklungsplan so zu organisieren, dass Sie jedes der Hauptentwurfsmuster in einer frühen Phase ausführen.
 

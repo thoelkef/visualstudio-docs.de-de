@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058736"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176966"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Anzeigen von Threads und Aufgaben mit dem Fenster "Parallele Stapel"
 Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwendungen. Die **Ansicht "Threads"** Aufruflisteninformationen für alle Threads in Ihrer Anwendung. Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren. In verwaltetem Code der **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte. In nativem Code der **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallele Algorithmen](/cpp/parallel/concrt/parallel-algorithms), [asynchrone Agents](/cpp/parallel/concrt/asynchronous-agents), und [einfache Aufgaben](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -118,7 +118,7 @@ Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwen
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte zum Debuggen einer Multithreadanwendung Tasksequenzausführungs](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
+ [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [Parallele Programmierung](/dotnet/standard/parallel-programming/index)   
  [Verwenden das Fenster "Aufgaben"](../debugger/using-the-tasks-window.md)   

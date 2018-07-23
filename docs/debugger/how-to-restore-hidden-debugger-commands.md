@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen | Microsoft Docs'
+title: 'Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47f8cbb342f480e6124f765b3b427a615ec6a38
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475196"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176842"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Gewusst wie: Wiederherstellen von ausgeblendeten Debuggerbefehlen
 Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeinstellungen für Ihre bevorzugte Programmiersprache festzulegen. Möglicherweise blenden die IDE-Standardeinstellungen für einige Sprachen bestimmte Debuggerbefehle aus.  
@@ -36,7 +36,7 @@ Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeins
   
 1.  Ein Projekt geöffnet ist, auf die **Tools** Menü klicken Sie auf **anpassen**.  
   
-2.  In der **anpassen** (Dialogfeld), klicken Sie auf die **Befehle** Registerkarte.  
+2.  In der **anpassen** Dialogfeld klicken Sie auf die **Befehle** Registerkarte.  
   
 3.  In der **Menüleiste:** Dropdownliste, wählen die **Debuggen** Menü, das den wiederhergestellten Befehl enthalten soll.  
   
@@ -46,23 +46,23 @@ Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeins
   
 6.  Wiederholen Sie den vorigen Schritt, um einen weiteren Befehl hinzuzufügen.  
   
-7.  Klicken Sie auf **schließen** nach Abschluss des Hinzufügen von Befehlen zum Menü.  
+7.  Klicken Sie auf **schließen** nach Abschluss des Hinzufügen von Befehlen im Menü.  
   
     > [!WARNING]
     >  Einige Menüelemente sind nur in bestimmten Debuggermodi sichtbar, etwa im Ausführmodus oder im Unterbrechungsmodus. Deshalb ist ein Element, das Sie hinzugefügt haben, nicht notwendigerweise sofort nach Ausführung dieser Schritte sichtbar.  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Wiederherstellen von Befehlen, die im Dialogfeld Anpassen nicht verfügbar sind  
- Einige Befehle, besonders solche in hierarchischen Menüs, können nicht wiederhergestellt werden, aus der **anpassen** (Dialogfeld). Um diese Befehle wiederherzustellen, müssen Sie eine neue Auflistung von IDE-Einstellungen importieren.  
+ Einige Befehle, besonders solche in hierarchischen Menüs, können nicht wiederhergestellt werden, aus der **anpassen** Dialogfeld. Um diese Befehle wiederherzustellen, müssen Sie eine neue Auflistung von IDE-Einstellungen importieren.  
   
 #### <a name="to-import-new-ide-settings"></a>So importieren Sie neue IDE-Einstellungen  
   
 1.  Auf der **Tools** Menü klicken Sie auf **Einstellungen importieren und exportieren**.  
   
-2.  Auf der **Willkommen bei den Import / Export-Assistent** auf **ausgewählte umgebungseinstellungen importieren**, und klicken Sie dann auf **Weiter**.  
+2.  Auf der **Willkommen, mit dem Import / Export-Assistent** auf **ausgewählte umgebungseinstellungen importieren**, und klicken Sie dann auf **Weiter**.  
   
-3.  Auf der **aktuelle Einstellungen speichern** Seite erstellen, entscheiden, ob die bestehenden Einstellungen speichern, und klicken Sie dann auf **Weiter**.  
+3.  Auf der **aktuelle Einstellungen speichern** Seite, zu entscheiden, ob die bestehenden Einstellungen speichern, und klicken Sie dann auf **Weiter**.  
   
-4.  Auf der **wählen Sie eine Auflistung von Einstellungen für den import** Seite der **Standardeinstellungen** Ordner, wählen Sie eine Auflistung von entwicklungseinstellungen, die Befehle sind Sie verwenden möchten. Wenn Sie die Sammlung, wählen nicht wissen, versuchen Sie es **allgemeine Entwicklungseinstellungen** oder **Visual C++-Entwicklungseinstellungen**, die die meisten Debuggerbefehle bereitstellen.  
+4.  Auf der **wählen Sie eine Sammlung von Einstellungen für den import** Seite die **Standardeinstellungen** Ordner, wählen Sie eine Sammlung von entwicklungseinstellungen, die die Befehle verwenden möchten. Wenn Sie nicht wissen, welcher Auflistung Sie sich entscheiden wird, versuchen Sie es **allgemeine Entwicklungseinstellungen** oder **Visual C++-Entwicklungseinstellungen**, die die meisten Debuggerbefehle bereitstellen.  
   
 5.  Klicken Sie auf **Weiter**.  
   
@@ -70,10 +70,10 @@ Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeins
   
 7.  Klicken Sie auf **Fertig stellen**.  
   
-8.  Auf der **Importvorgang abgeschlossen** überprüfen Sie alle Fehler im Zusammenhang mit beim Zurücksetzen der Einstellungen unter **Details**.  
+8.  Auf der **Importvorgang abgeschlossen** überprüfen Sie alle Fehler im Zusammenhang mit das Zurücksetzen der Einstellungen unter **Details**.  
   
 9. Klicken Sie auf **Schließen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)
+ [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058762"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176440"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 Just-In-Time-Debuggen startet Visual Studio automatisch tritt eine Ausnahme oder ein Absturz in einer Anwendung, die außerhalb von Visual Studio ausgeführt wird. Dadurch können Sie Ihre Anwendung testen, wenn Visual Studio nicht ausgeführt wird, und beginnen mit Visual Studio debuggen, wenn ein Problem auftritt.
@@ -176,4 +176,4 @@ static void Main(string[] args)
      Beheben Sie dieses Problem, indem Sie Visual Studio mithilfe des Installationsdatenträgers neu installieren oder reparieren.
 
 ## <a name="see-also"></a>Siehe auch
- [Debuggersicherheit](../debugger/debugger-security.md) [Debugger – Grundlagen](../debugger/debugger-basics.md) [Just-In-Time, Debuggen, Dialogfeld Optionen](../debugger/just-in-time-debugging-options-dialog-box.md) [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann sein gefährlich. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+ [Debuggersicherheit](../debugger/debugger-security.md) [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, Debuggen, Dialogfeld Optionen](../debugger/just-in-time-debugging-options-dialog-box.md) [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann sein gefährlich. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

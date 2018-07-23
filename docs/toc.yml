@@ -39,10 +39,10 @@
       href: install/repair-visual-studio.md
     - name: "Deinstallieren von Visual\_Studio"
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Administrator Guide
+    - name: Administratorhandbuch für Visual Studio
       href: install/visual-studio-administrator-guide.md
       items:
-        - name: Verwendung der Befehlszeile
+        - name: Verwenden der Befehlszeile
           items:
             - name: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
               href: install/use-command-line-parameters-to-install-visual-studio.md
@@ -132,7 +132,7 @@
     - name: R in Visual Studio...
       href: rtvs/getting-started-with-r.md
     - name: Node.js in Visual Studio
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'C# in Visual Studio'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Basic in Visual Studio
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Portieren, Migrieren und Aktualisieren von Projekten'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Hinzufügen und Entfernen von Projektelementen
-              href: ide/adding-and-removing-project-items.md
             - name: Verwalten von Projekt- und Projektmappeneigenschaften
               href: ide/managing-project-and-solution-properties.md
             - name: Verwalten von Verweisen in einem Projekt
@@ -344,9 +342,6 @@
               items:
                 - name: IntelliSense für Visual Basic
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Gefilterte Vervollständigungslisten in Visual Basic
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C#-IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Plattformübergreifende mobile Entwicklung
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'F#-Entwicklung'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Anzielen auf ältere .NET-Versionen
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Office- und SharePoint-Entwicklung
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Arbeiten mit XML und XSLT-Dateien
@@ -605,15 +605,15 @@
         - name: 'Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Debuggen...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Testen...
       href: test/improve-code-quality.md
     - name: Messen der Leistung...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Analysieren der Codequalität...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Bereitstellen...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Erweitern von Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: Analyse und Modellarchitektur...
@@ -686,8 +686,6 @@
       items:
         - name: Vorlagenparameter
           href: ide/template-parameters.md
-        - name: Schemareferenz zu Vorlagen (Erweiterbarkeit)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Allgemeine Elemente der Benutzeroberfläche
       items:
         - name: Aufrufhierarchie
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: Befehl "Projekt öffnen"
           href: ide/reference/open-project-command.md
-        - name: Befehl "Projektmappe öffnen"
-          href: ide/reference/open-solution-command.md
         - name: Befehl "Drucken"
           href: ide/reference/print-command.md
         - name: Befehl "Aktuellen Wert anzeigen"

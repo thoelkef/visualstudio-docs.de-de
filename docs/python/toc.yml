@@ -8,11 +8,12 @@
 - name: Schnellstarts
   items:
     - name: Erstellen einer Web-App mit Flask
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: Erstellen eines Projekts aus einer Vorlage
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: Erstellen eines Projekts aus vorhandenem Code
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: Erstellen eines Projekts aus einem Repository
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Erstellen eines Projekts aus einer Cookiecutter-Vorlage
@@ -87,12 +88,12 @@
           href: search-paths.md
         - name: Referenz zu Umgebungsfenstern
           href: python-environments-window-tab-reference.md
-    - name: Bearbeiten von Code
+    - name: Bearbeiten von Python-Code
       href: editing-python-code-in-visual-studio.md
       items:
-        - name: Formatieren von Code
+        - name: Formatcode
           href: formatting-python-code.md
-        - name: Umgestalten von Code (Refactoring)
+        - name: Refactoring von Code
           href: refactoring-python-code.md
         - name: Verwenden von PyLint
           href: linting-python-code.md

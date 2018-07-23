@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175316"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178877"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft-Technologien für die Erstellung verteilter Anwendungen. Dieses Thema enthält eine Einführung in Dienste vom Standpunkt der Visual Studio. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Was ist WCF?
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] ist ein einheitliches Framework zum Erstellen von sicherer, zuverlässiger, Transaktiver und interoperabler verteilte Anwendungen. Er ersetzt ältere prozessübergreifende Kommunikation-Technologien wie ASMX Web Services, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionalität der alle diese Technologien unter ein einheitliches Programmiermodell. Dies vereinfacht die Benutzeroberfläche der Entwicklung von verteilten Anwendungen.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] ist ein einheitliches Framework zum Erstellen von sicherer, zuverlässiger, Transaktiver und interoperabler verteilte Anwendungen. Er ersetzt ältere prozessübergreifende Kommunikation-Technologien wie ASMX-Webdiensten, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionalität der alle diese Technologien unter ein einheitliches Programmiermodell. Dies vereinfacht die Benutzeroberfläche der Entwicklung von verteilten Anwendungen.
 
 ### <a name="what-are-wcf-data-services"></a>Was sind WCF Data Services
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ist eine Implementierung des Open Data (OData)-Protokolls standard.  WCF Data Services können Sie die tabellarischen Daten verfügbar machen, als eine Reihe von REST-APIs, sodass Sie zurückgegeben wird, dass die Daten mithilfe von HTTP-Standardverben wie GET, POST, PUT oder löschen. Klicken Sie auf der Serverseite werden durch WCF Data Services ersetzt wird [ASP.NET Web-API](http://www.asp.net/web-api) zum Erstellen von neuer OData-Diensten. Die WCF Data Services-Clientbibliothek ist weiterhin eine gute Wahl für die Nutzung von OData-Dienste in einer .NET-Anwendung aus Visual Studio (**Projekt &#124; Hinzufügen eines Dienstverweises**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
@@ -90,7 +90,7 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
  Sie können WCF Visual Studio-Vorlagen als Grundlage verwenden, um einen eigenen Dienst schnell zu erstellen. Dann können WCF-Dienst-Auto-Host und WCF-Testclient zum Debuggen und Testen Sie den Dienst. Diese Tools Geben Sie einen schnellen und komfortablen Debug- und Testzyklus zusammen und vermeiden, dass eine hosting-Modell in einer frühen Phase zu übergeben.
 
 #### <a name="wcf-templates"></a>WCF-Vorlagen
- WCF Visual Studio-Vorlagen stellen eine grundlegende Klassenstruktur zur Dienstentwicklung bereit. Mehrere WCF-Vorlagen stehen in der **neues Projekt hinzufügen** Dialogfeld. Dazu gehören die WCF-Dienstbibliotheksprojekte, WCF-Dienst-Websites und WCF-Dienst-Elementvorlagen.
+ WCF Visual Studio-Vorlagen stellen eine grundlegende Klassenstruktur zur Dienstentwicklung bereit. Mehrere WCF-Vorlagen stehen in der **neues Projekt hinzufügen** Dialogfeld. Dazu gehören die WCF-Dienstprojekte lLibrary, WCF-Dienst-Websites und WCF-Dienst-Elementvorlagen.
 
  Wenn Sie eine Vorlage auswählen, werden die Dateien für einen Dienstvertrag, einer dienstimplementierung und eine Konfiguration hinzugefügt. Alle erforderlichen Attribute bereits hinzugefügt werden, erstellen einen einfachen "Hello World"-Typ des Diensts, und Sie keinen Code schreiben. Sie möchten werden natürlich Code hinzufügen, um Funktionen und Methoden für den Dienst realen bereitzustellen, aber die Vorlagen bieten die grundlegenden Grundlage.
 

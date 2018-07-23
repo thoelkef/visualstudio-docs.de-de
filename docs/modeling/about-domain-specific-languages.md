@@ -11,56 +11,56 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0743fa0dd1f8b876c4396d4e52d9c8636c504d67
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 501b85579460038d6d20ca38b17ab22be7825f5c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749144"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176992"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
-Im Gegensatz zu einer allgemeinen Sprache wie c# oder UML-dient eine domänenspezifische Sprache (DSL) express Anweisungen in einer bestimmten Problembereich oder Domäne.
+Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (DSL) soll Anweisungen in einer bestimmten Problembereich oder Domäne express.
 
-Well-Known konzentriert sind reguläre Ausdrücke und SQL. Jede DSL ist wesentlich besser als eine allgemeine Sprache zum Beschreiben von Operationen Textzeichenfolgen oder einer Datenbank, sondern eher schlechter zum Beschreiben von Ideen, die außerhalb ihres eigenen Bereichs liegen. Einzelne Branchen können auch ihre eigenen konzentriert. Beispielsweise in der Telekommunikationsbranche rufen Sie Beschreibung an, die Sprachen häufig verwendet werden, um die Sequenz von Zuständen in einen Telefonanruf angeben, und in der Luft Reisen Branche eine Standard-DSL mit der Flug ig beschrieben werden.
+Well-Known DSLs sind reguläre Ausdrücke und SQL. Jede DSL ist viel besser als eine Sprache zum Beschreiben der Vorgänge für Zeichenfolgen oder eine Datenbank, sondern eher schlechter zum Beschreiben von Ideen, die außerhalb der eigenen Bereichs liegen. Einzelne Branchen können auch ihre eigenen DSLs. Z. B. in der Telekommunikationsbranche rufen Sie Beschreibung an auf, die Sprachen, geben die Sequenz der Status in einen Telefonanruf an, und übertragen in der Luft Branche weit verbreitet ist ein Standard, die DSL mit der Flug Buchungen beschrieben werden.
 
-Ihr Unternehmen und Ihrem Projekt verarbeiten auch spezielle Sätze von Konzepten, die mit einem DSL beschrieben werden können. Sie können z. B. eine DSL für eine dieser Anwendungen definieren:
+Ihr Unternehmen und Ihr Projekt betreffen auch spezielle Sätze von Konzepten, die mit einer DSL beschrieben werden können. Beispielsweise können Sie eine DSL für eine dieser Anwendungen definieren:
 
 -   Planen der Navigationspfade auf einer Website.
 
 -   Schaltpläne für elektronische Komponenten.
 
--   Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für in einem Flughafen.
+-   Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.
 
-Wenn Sie eine DSL entwerfen, definieren Sie eine *Domänenklasse* aller wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen Einchecken-Schalters. Sie definieren *domänenbeziehungen* z. B. Hyperlink, über das Netzwerk oder ein Förderband transportiert die Konzepte miteinander verknüpfen.
+Beim Entwerfen einer DSL, die Sie definieren eine *Domänenklasse* für die einzelnen wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen-Check-in –. Sie definieren *domänenbeziehungen* wie Links, über das Netzwerk oder ein Fließband, um die Konzepte miteinander zu verknüpfen.
 
-Erstellen von Benutzern für Ihre DSL *Modelle.* Modelle sind *Instanzen* der DSL. Beschreiben sie beispielsweise eine bestimmte Website oder dem Verknüpfen eines ein bestimmtes Gerät oder das System in einem bestimmten Flughafen für die Gepäckbeförderung.
+Erstellen von Benutzern Ihrer DSL *Modelle.* Modelle sind *Instanzen* der DSL. Beschreiben sie beispielsweise eine bestimmte Website oder die Verknüpfung der ein bestimmtes Gerät oder das System in einem bestimmten Flughafen für die Gepäckbeförderung.
 
-Ihre Benutzer können ein Modell als Diagramm oder als ein Windows Form anzeigen. Modelle können auch angezeigt werden als XML, also wie diese gespeichert sind. Wenn Sie eine DSL definieren, definieren Sie, wie die Instanzen der einzelnen Domänenklasse und jede Beziehung auf dem Bildschirm des Benutzers angezeigt werden. Eine typische DSL wird als eine Auflistung von Symbolen oder Rechtecke, die durch Pfeile verbunden angezeigt.
+Ihre Benutzer können ein Modell als Diagramm oder ein Windows-Formular anzeigen. Modelle können auch angezeigt werden als XML, wie sie gespeichert werden. Wenn Sie eine DSL definieren, definieren Sie, wie die Instanzen der einzelnen Domänenklasse und die Beziehungen auf dem Bildschirm des Benutzers angezeigt werden. Eine typische DSL wird als eine Auflistung von Symbolen oder Rechtecke, die Verbindung durch Pfeile angezeigt.
 
-Die folgende Abbildung zeigt ein kleines Modell, in eine Verbindungskabel als Diagramm DSL:
+Die folgende Abbildung zeigt ein kleines Modell in einer DSL DSL an:
 
 ![Tudor-Stammstrukturmodell](../modeling/media/tudor_familytreemodel.png)
 
-## <a name="what-you-can-do-with-dsls"></a>Was können Sie mit konzentriert tun.
+## <a name="what-you-can-do-with-dsls"></a>Was können Sie mit DSLs tun.
 
-Eine typische Anwendung eine DSL ist Programmcode oder andere Artefakte generieren. Wenn Sie mit der DSL definieren, können Sie definieren *Textvorlagen* , lesen Sie ein Modell für die DSL und Generieren von Textdateien.
+Eine typische Anwendung einer DSL ist Programmcode oder andere Artefakte generieren. Wenn Sie Ihre DSL definiert haben, können Sie definieren *Textvorlagen* , lesen Sie ein Modell für die DSL, und Generieren von Textdateien.
 
-Beispielsweise konnte Sie Vorlagen schreiben, die nehmen einen Plan Flughafen und Teil der Software für die Gepäckbeförderung sowie einige der Benutzerdokumente, die beschreiben, den Plan zu generieren.
+Beispielsweise könnten Sie Vorlagen schreiben, die einen Flughafen-Plan und Teil der Software für Gepäck verarbeitet werden, sowie einige der Benutzerdokumente, die beschreiben, den Plan zu generieren.
 
-Wenn Sie eine DSL definiert haben, können Sie ihn an andere Benutzer verteilen, die es auf ihren Computern installieren können. Benutzer von der DSL können erstellen und Bearbeiten von Modellen in Visual Studio.
+Wenn Sie eine DSL definiert haben, können Sie es für andere Benutzer verteilen, die sie auf ihren eigenen Computern installieren können. Benutzer Ihrer DSL können erstellen und Bearbeiten von Modellen in Visual Studio.
 
-Außerdem können Menübefehle und andere Tools, mit denen Benutzer Bearbeiten der DSL validierungseinschränkungen, um sicherzustellen, dass der DSL ordnungsgemäß verwendet wird, und Elementvorlagen, mit denen Benutzer neue Instanzen erstellen. Sie können eine oder mehrere konzentriert mit ihren Tools und anderen Visual Studio-Erweiterungen als integrierte-Paket einschließen.
+Sie können auch Befehle im Menü definieren, und andere Tools, die Benutzern helfen bearbeiten Sie die DSL, validierungseinschränkungen, um sicherzustellen, dass die DSL ordnungsgemäß verwendet wird, und Elementvorlagen, die Benutzern helfen, neue Instanzen erstellen. Sie können eine oder mehrere DSLs in ihren Tools und anderen Visual Studio-Erweiterungen als integrierte-Paket einschließen.
 
-In der Regel wird eine domänenspezifische Sprache erstellt, wenn ein Entwicklungsteam hat ähnlichen Code für verschiedene Produkte schreiben. Ein Unternehmen, die Systeme für die Gepäckbeförderung spezialisiert kann z. B. eine Gepäck nachverfolgen DSL definieren, aus der sie Teil des Codes für jede Installation generieren können. Die Vorteile der DSL sind, dass es, dass von ihm generierte Code zuverlässig ist und das System schnell aktualisiert werden kann, wenn die Anforderungen der Kunden ändern von ihren Kunden und verstanden werden können.
+In der Regel ist eine domänenspezifische Sprache erstellt, wenn ein Entwicklungsteam ist ähnlich wie Code für mehrere Produkte schreiben. Beispielsweise kann ein Unternehmen, das sich auf Gepäckabfertigungssysteme spezialisiert hat Gepäck nachverfolgen DSL definieren, aus der sie einen Teil des Codes für jede Installation generieren können. Die Vorteile der DSL sind, dass sie, dass der daraus generierte Code zuverlässig ist und das System schnell aktualisiert werden kann, wenn der Kunden Anforderungen ändern, von ihren Kunden, verstanden werden können.
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] können Sie erstellen eine domänenspezifische Sprache, die Ihre eigenen Grafikdesigner und eigene Notation Diagramm verfügt, und klicken Sie dann die Sprache verwenden, um die entsprechenden Quellcode für jedes Projekt generieren.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ermöglicht Ihnen das Erstellen einer domänenspezifischen Sprache, die Ihre eigenen grafischen Designer und Ihre eigenen Diagramm-Notation aufweist, und klicken Sie dann mit der die Sprache entsprechenden Quellcode für jedes Projekt generiert.
 
-## <a name="domain-specific-development"></a>Domänenspezifische Entwicklung
+## <a name="domain-specific-development"></a>Domain-Specific-Entwicklung
 
-Domänenspezifische Entwicklung ist der Prozess der Identifizierung der Bestandteile Ihrer Anwendungen, die modelliert werden können, mithilfe einer domänenspezifischen Sprache, und erstellen die Sprache und auf die Anwendungsentwickler bereitgestellt. Der Entwickler mithilfe einer domänenspezifischen Sprache erstellen Modelle, die für ihre Anwendungen spezifisch sind, verwenden Sie die Modelle zum Generieren von Quellcode und verwenden Sie den Quellcode der Anwendungsentwicklung.
+Domänenspezifische Entwicklung ist der Prozess zum Identifizieren der Teile von Anwendungen, die modelliert werden können, indem mithilfe einer domänenspezifischen Sprache, und klicken Sie dann erstellen die Sprache und für die Anwendungsentwickler bereitstellen. Die Entwickler verwenden die domänenspezifische Sprache zum Erstellen von Modellen, die für ihre Anwendungen spezifisch sind, verwenden Sie die Modelle zum Generieren von Quellcode und verwenden den Quellcode klicken Sie dann die Anwendungen zu entwickeln.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekte bei der Entwicklung von Grafischen domänenspezifische
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekte der Entwicklung von Grafischen domänenspezifische
 
 Eine grafische einer domänenspezifischen Sprache muss es sich um die folgenden Funktionen enthalten:
 
@@ -68,7 +68,7 @@ Eine grafische einer domänenspezifischen Sprache muss es sich um die folgenden 
 
 - Domänenmodell
 
-- Generierung des Artefakt
+- Artefakt-Generierung
 
 - Serialisierung
 
@@ -76,52 +76,52 @@ Eine grafische einer domänenspezifischen Sprache muss es sich um die folgenden 
 
 ### <a name="notation"></a>Notation
 
-Eine domänenspezifische Sprache benötigen einen relativ kleinen Satz von Elementen, die problemlos definiert und zur Darstellung einer domänenspezifischen Konstrukte erweitert werden können. Eine Notation besteht aus Formen, die die Elemente darstellen, und Connectors, die die Beziehungen zwischen Elementen, auf einer Oberfläche grafisches Diagramm darstellen. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], Formen verfeinert wird, um die Elemente einer domänenspezifischen Sprache darstellen und erweitert werden können.
+Eine domänenspezifische Sprache muss es sich um einen relativ kleinen Satz von Elementen verfügen, leicht definiert und erweitert, um die Darstellung einer domänenspezifischen-Konstrukte werden können. Eine Notation besteht aus Formen, die die Elemente darstellen, und Connectors, die die Beziehungen zwischen Elementen, die auf einer Oberfläche grafisches Diagramm darstellen. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], die Formen erweitert und verbessert, um die Elemente der domänenspezifischen Sprache darstellen werden können.
 
 ### <a name="domain-model"></a>Domänenmodell
 
-Eine domänenspezifische Sprache muss die Gruppe von Elementen und die Beziehungen zwischen ihnen in eine kohärente Grammatik kombinieren. Sie müssen außerdem definieren, ob die gültigen Kombinationen aus Elementen und Beziehungen. Programmiersprachen verhindern beispielsweise in der Regel zirkulären Vererbung, in dem eine Klasse aus einer zweiten Klasse abgeleitet ist, und die zweite Klasse von der ersten Klasse abgeleitet ist. Einschränkungen können auch verwendet werden, um Geschäftslogik auszudrücken, z. B. darf nicht eine Person ein abhängiges Objekt von sich selbst sein. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet Integritätsregeln, die Arten von Beschränkungen auszudrücken, die am häufigsten domänenspezifische Sprachen erforderlich ist.
+Eine domänenspezifische Sprache muss den Satz von Elementen und die Beziehungen zwischen ihnen in eine kohärente Grammatik kombinieren. Sie müssen außerdem definieren, ob Kombinationen von Elementen und Beziehungen gültig sind. Beispielsweise verhindern Programmiersprachen, in der Regel zirkuläre Vererbung, in dem eine Klasse von einer Sekunde-Klasse abgeleitet ist, und die zweite Klasse von der ersten Klasse abgeleitet ist. Einschränkungen können auch verwendet werden, um Geschäftslogik auszudrücken, z. B. nicht eine Person ein abhängiges Element selbst. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet von Einschränkungen, die Arten von Einschränkungen auszudrücken, die meisten domänenspezifischen Sprachen erforderlich.
 
-### <a name="artifact-generation"></a>Generierung des Artefakt
+### <a name="artifact-generation"></a>Artefakt-Generierung
 
-Eine der Hauptverwendungszweck einer domänenspezifischen Sprache ist ein Artefakt, z. B. Quellcode, eine XML-Datei und einige andere verwendbaren Daten zu generieren. In der Regel bedeutet, dass eine Änderung im Modell eine Änderung im Elementspeicher. Sie können [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] um Elemente zu generieren und diese erneut zu generieren, wenn Sie das Modell ändern.
+Eine der wichtigsten Gründe einer domänenspezifischen Sprache ist ein Artefakt, z. B. Quellcode, eine XML-Datei oder einige andere brauchbare Daten zu generieren. In der Regel bedeutet eine Änderung im Modell eine Änderung im Artefakt an. Sie können [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] um Elemente zu generieren und Sie diese erneut generieren, wenn Sie das Modell ändern.
 
 ### <a name="serialization"></a>Serialisierung
 
-Eine domänenspezifische Sprache muss sich in irgendeiner Form beibehalten werden, die bearbeitet, gespeichert, geschlossen und erneut geladen werden können. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet eine XML-Format, mit dem Sie definieren und anpassen, wie Ihre einer domänenspezifischen Sprache serialisiert oder beibehalten werden.
+Eine domänenspezifische Sprache muss in irgendeiner Form beibehalten werden, die bearbeitet, gespeichert, geschlossen und erneut geladen werden können. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet eine XML-Format, mit dem Sie definieren und anpassen, wie Ihre Domain-Specific Languge serialisiert oder beibehalten wird.
 
 ### <a name="integration-with-visual-studio"></a>Integration in Visual Studio
 
-Da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] gehostet wird in Visual Studio erweitert viele Visual Studio-Fenster und Steuerelemente. Außerdem können Sie das Verhalten der Menübefehle und Toolboxelemente andere Elemente der Benutzeroberfläche anpassen.
+Da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] gehostet wird in Visual Studio aus, den es viele Visual Studio-Fenstern und Steuerelemente erweitert. Außerdem können Sie das Verhalten der Befehle im Menü Toolboxelemente und andere Elemente der Benutzeroberfläche anpassen.
 
-Sie können auch einen Hostbusadapter Modell für Ihre einer domänenspezifischen Sprache erstellen. Diese Adapter können Sie Verweis ein Modell und Elemente innerhalb eines Modells und können, die Sie Code schreiben, die Zugriff auf und aktualisieren Sie eine Instanz der DSL können. Mithilfe der leistungsstarken ModelBus (Modellbus)-Mechanismus können Sie Visual Studio-Erweiterungen schreiben, die mit mehreren Modellen arbeiten. Sie können auch die eigenständige Anwendungen schreiben, die mit Modellen arbeiten. Weitere Informationen finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Sie können auch eine Modellbusadapter für Ihre einer domänenspezifischen Sprache erstellen. Dieser Adapter können Sie mit Verweis ein Modell und Elementen in einem Modell und können, die Sie Code schreiben, können den Zugriff auf und Aktualisieren einer Instanz der DSL. Mithilfe des leistungsstarken Modellbus-Mechanismus zu verwenden, können Sie Visual Studio-Erweiterungen schreiben, die mit mehreren Modellen arbeiten. Sie können auch die eigenständige Anwendungen schreiben, die mit Modellen arbeiten. Weitere Informationen finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Vorteile der Domain-Specific-Entwicklung
+## <a name="benefits-of-domain-specific-development"></a>Vorteile der Entwicklung von domänenspezifischen
 
-Eine domänenspezifische Sprache, kann die folgenden Vorteile bieten:
+Eine domänenspezifische Sprache, bieten die folgenden Vorteile:
 
-- Enthält die Konstrukte, die das Problemfeld genau entsprechen.
+- Enthält die Konstrukte, die den Problembereich genau entsprechen.
 
-     Im Gegensatz zu allgemeinen Sprachen besteht aus eine domänenspezifischen Sprache Elementen und Beziehungen, die die Logik für das Problemfeld direkt darstellen. Beispielsweise muss eine Versicherung-Anwendung Elemente für Richtlinien und Ansprüche enthalten. Eine domänenspezifische Sprache erleichtert es, die Anwendung, und suchen und beheben Sie Fehler Logik entwerfen.
+     Im Gegensatz zu den allgemeinen Sprachen besteht aus eine domänenspezifischen Sprache von Elementen und Beziehungen, die direkt auf die Logik der den Problembereich darstellen. Beispielsweise muss eine Versicherungspolice-Anwendung Elemente für Richtlinien und die Ansprüche enthalten. Eine domänenspezifische Sprache erleichtert das Entwerfen der Anwendung, und suchen und beheben Sie Fehler Logik.
 
-- Können nicht-Entwickler und Personen, die nicht die Domäne, die den Gesamtentwurf verstehen kennen.
+- Können nicht-Entwickler und Personen, die nicht die Domäne den Gesamtentwurf verstehen kennen.
 
-     Mithilfe einer grafischen einer domänenspezifischen Sprache können Sie eine visuelle Darstellung der Domäne erstellen, sodass nicht-Entwickler den Entwurf der Anwendung leicht verstanden werden können.
+     Mit einer grafischen einer domänenspezifischen Sprache, können Sie eine visuelle Darstellung der Domäne erstellen, damit nicht-Entwickler ganz einfach das Design der Anwendung nachvollziehen können.
 
-- Erleichtert es, einen Prototyp der endgültigen Anwendung zu erstellen.
+- Ist es einfacher, einen Prototyp der endgültigen Anwendung zu erstellen.
 
-     Entwickler können den Code verwenden, den ihr Modell generiert wird, um einen Prototyp-Anwendung zu erstellen, die auf Clients angezeigt werden können.
+     Entwickler können den Code verwenden, den ihr Modell generiert wird, um einen prototypenanwendung zu erstellen, die sie für Clients anzeigen können.
 
-## <a name="the-process-of-domain-specific-development"></a>Der Prozess der Entwicklung einer domänenspezifischen
+## <a name="the-process-of-domain-specific-development"></a>Der Prozess der Entwicklung von domänenspezifischen
 
-Schritte zum Erstellen und ihre Modelle verwenden die meisten Softwareentwicklungsteams, die domänenspezifische Sprachen verwenden:
+Die meisten Softwareentwicklungsteams, die einer domänenspezifischen Sprachen verwenden, gehen Sie zum Erstellen und verwenden ihre Modelle:
 
--   Das Team unterscheidet, der Variablenteile der Domäne aus den Teilen, die nie geändert werden.
+-   Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.
 
--   Die Entwickler schreiben Sie Code für die feste Teile und lassen Sie Erweiterungspunkte für die Variablen Teile.
+-   Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.
 
--   Der Entwicklungsleiter-Software oder der Architekt erstellt eine domänenspezifische Sprache, die das Entwurfsmuster der feste Bestandteile der Domäne und die Erweiterungspunkte für die Variablen Teile enthält.
+-   Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.
 
--   Der Entwicklungsleiter-Software oder der Architekt domänenspezifische Sprache, die auf den Entwicklern von den verschiedenen Clientanwendungen, die das Team erstellt bereitgestellt werden.
+-   Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.
 
 -   Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.
