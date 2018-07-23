@@ -1,5 +1,5 @@
 ---
-title: Debuggen von verwaltetem Code | Microsoft Docs
+title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227dfcf82a179a83428900f75d0b5c9b85248479
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476363"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179478"
 ---
 # <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
 
-In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahrensweisen für verwaltete Anwendungen bzw. Anwendungen erörtert, die in Sprachen für die Common Language Runtime geschrieben wurden, z. B. Visual Basic, C# und C++. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. Weitere Informationen finden Sie unter [mit dem Debugger](../debugger/debugger-basics.md).
+In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahrensweisen für verwaltete Anwendungen bzw. Anwendungen erörtert, die in Sprachen für die Common Language Runtime geschrieben wurden, z. B. Visual Basic, C# und C++. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. Weitere Informationen finden Sie unter [mithilfe des Debuggers](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -47,10 +47,10 @@ Hier finden Sie Schritt-für-Schritt-Anweisungen zum Erstellen eines Windows Fo
 Dieser Abschnitt enthält Codebeispiele zum Debuggen der `OnStart`-Methode eines verwalteten Windows-Diensts. Um die `OnStart`-Methode eines Windows-Diensts zu debuggen, müssen Sie ein paar Codezeilen hinzufügen, mit denen der Dienst simuliert wird.
 
 [Debuggen im gemischten Modus](../debugger/debugging-mixed-mode-applications.md)  
-Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die systemeigenen Code mit verwaltetem Code kombinieren.
+Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die nativen Code mit verwaltetem Code kombinieren.
 
 [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-Beschreibt eine Fehlermeldung, die auftritt, wenn Sie versuchen, das Debuggen von verwalteten Codes auf eine [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], oder Windows NT-System, das im Debugmodus gestartet wurde.
+Beschreibt eine Fehlermeldung angezeigt, das auftritt, wenn Sie versuchen, das Debuggen von verwalteten Codes auf eine [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], oder Windows NT-System, das im Debugmodus gestartet wurde.
 
 [JIT-Optimierung und -Debuggen](../debugger/jit-optimization-and-debugging.md)  
 Beschreibt die Auswirkungen der JIT-Optimierung auf das Debuggen.
@@ -63,19 +63,19 @@ Beschreibt, wie die **Parallele Aufgaben** und **parallele Stapel** Toolfenster 
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[IntelliTrace](../debugger/intellitrace.md) Fehler schneller und einfacher gefunden, da durch die Aufzeichnung des Ausführungsverlaufs mit IntelliTrace Ihrer app. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Erfordert Visual Studio Enterprise.
+[IntelliTrace](../debugger/intellitrace.md) finden Sie Fehler schneller und einfacher, indem Sie die Aufzeichnung des Ausführungsverlaufs für Ihre app mit IntelliTrace. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Ist Visual Studio Enterprise erforderlich.
 
 [Ablaufverfolgung und Instrumentieren von Anwendungen](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 Hier werden die Ablaufverfolgung (eine Methode zum Überwachen der Ausführung einer Anwendung) und die Instrumentation (das Platzieren von Ablaufverfolgungsanweisungen an strategischen Stellen im Code) beschrieben. Die Links in diesem Abschnitt bringen Sie zu den folgenden Themen: Einführung in die Instrumentation und die Ablaufverfolgung, Ablaufverfolgungsschalter, Ablaufverfolgungslistener, Ablaufverfolgung für Code in einer Anwendung, Hinzufügen von Ablaufverfolgungsanweisungen zu Anwendungscode und bedingte Kompilierung mit <xref:System.Diagnostics.Debug> und <xref:System.Diagnostics.Trace>.
 
 [/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
-Beschreibt eine Linkeroption, die fügt <xref:System.Diagnostics.DebuggableAttribute> mit C++ geschriebenem Code. Dieses Attribut wird für die Verwendung von Debugfeatures, wie das Anhängen, mit C++ benötigt.
+Beschreibt eine Linkeroption, die hinzufügt <xref:System.Diagnostics.DebuggableAttribute> mit C++ geschriebenem Code. Dieses Attribut wird für die Verwendung von Debugfunktionen, wie das Anhängen, mit C++ benötigt.
 
 [Debuggen von Windows-Dienstanwendungen](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
 Hier finden Sie Hinweise zum Debuggen von Windows-Dienstanwendungen, z. B. zum Einrichten, Anhängen an den Prozess, Debuggen des Codes in der `OnStart`-Methode des Diensts und in der Main-Methode, zum Festlegen von Haltepunkten sowie zum Verwenden des Dienststeuerungs-Managers zum Starten, Beenden, Anhalten und Fortsetzen eines Diensts.
 
 [Debuggen und Profilerstellung](/dotnet/framework/debug-trace-profile/index)  
-Hier werden das Debuggen von .NET Framework-Anwendungen sowie die Konfigurationsvoraussetzungen beschrieben.
+Hier werden das Debuggen von .NET Framework-Anwendungen sowie die Konfigurationsanforderungen beschrieben.
 
 [Debuggen von Skript- und Webanwendungen](../debugger/debugging-web-applications-and-script.md)  
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
@@ -91,4 +91,4 @@ Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Zu de
 [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [Debuggersicherheit](../debugger/debugger-security.md)
 [Debuggen in Visual Studio](../debugger/index.md) 
- [ Tour durch Debugger-Funktion](../debugger/debugger-feature-tour.md)
+ [ Debugger – Featuretour](../debugger/debugger-feature-tour.md)
