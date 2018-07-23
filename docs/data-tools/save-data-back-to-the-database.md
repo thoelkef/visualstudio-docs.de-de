@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175329"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177343"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -185,7 +185,7 @@ Sie können für die ausstehenden Änderungen im Dataset ein Commit ausführen, 
     > [!NOTE]
     > Sie können verhindern, dass den Adapter automatisch Commit für Änderungen beim Aufrufen der `Fill` Methode durch Festlegen der `AcceptChangesDuringFill` Eigenschaft des Adapters zum `false`. Wenn sie, um festgelegt ist `false`, und klicken Sie dann die <xref:System.Data.DataRow.RowState%2A> jeder Zeile, die während des Auffüllens eingefügt wird festgelegt ist <xref:System.Data.DataRowState.Added>.
 
-- Nachdem Sie Datasetänderungen an einem anderen Prozess, z. B. eine XML-Webdienst gesendet.
+- Nachdem Sie Datasetänderungen an einen anderen Prozess, z. B. eine XML-Webdienst senden.
 
     > [!CAUTION]
     > Wenn ein Commit für Änderungen auf diese Weise ausgeführt wird, werden sämtliche Änderungsinformationen gelöscht. Keine Änderungen erst nach dem führen Sie Ausführen von Vorgängen, die erfordern, dass Ihre Anwendung wissen, welche Änderungen im Dataset vorgenommen wurden abgeschlossen.

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen einer Websitespalte, Inhaltstyp und die Liste für SharePoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,14 +24,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 74d1181936a5efa3b286999ea832e78dffdcccf3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118956"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
-  Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte Websitespalten in SharePoint erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet, werden.  
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
+  Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.  
   
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:  
   
@@ -39,9 +40,9 @@ ms.lasthandoff: 05/22/2018
   
 -   [Erstellen einen benutzerdefinierten Inhaltstyp](#BKMK_CreateCustContType).  
   
--   [Erstellen eine Liste](#BKMK_CreateList).  
+-   [Erstellen Sie eine Liste von](#BKMK_CreateList).  
   
--   [Erstellen eine Liste](#BKMK_CreateList).  
+-   [Erstellen Sie eine Liste von](#BKMK_CreateList).  
   
 -   [Testen der Anwendung](#BKMK_TestApp).  
   
@@ -54,34 +55,34 @@ ms.lasthandoff: 05/22/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a> Erstellen benutzerdefinierte Websitespalten  
- In diesem Beispiel wird eine Liste für die Verwaltung von Patienten, die in einem Krankenhaus erstellt. Sie müssen zunächst in einer SharePoint-Projekt erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Hinzufügen von Websitespalten, wie folgt.  
+## <a name="create-custom-site-columns"></a>Erstellen Sie benutzerdefinierte Websitespalten
+ Dieses Beispiel erstellt eine Liste für die Verwaltung von Patienten in einem Krankenhaus. Erstellen Sie zuerst, eine SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Websitespalten, wie folgt hinzufügen.  
   
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
   
-1.  Auf der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Datei** Menü wählen **neu**, **Projekt**.  
+1.  Auf der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Datei** Menü wählen **neu** > **Projekt**.  
   
-2.  In der **neues Projekt** im Dialogfeld unter entweder **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann **2010**.  
+2.  In der **neues Projekt** im Dialogfeld unter entweder **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann auf **2010**.  
   
-3.  In der **Vorlagen** Bereich auswählen **SharePoint 2010-Projekt**, ändern Sie den Namen des Projekts, um **Clinic**, und wählen Sie dann die **OK** Schaltfläche ".  
+3.  In der **Vorlagen** Bereich wählen **SharePoint 2010-Projekt**, ändern Sie den Namen des Projekts, das **Clinic**, und wählen Sie dann die **OK** Schaltfläche ".  
   
-     Die SharePoint 2010-Projektvorlage wird ein leeres Projekt, das in diesem Beispiel verwendet wird, enthalten, Websitespalten sowie andere Projektelemente, die später hinzugefügt werden.  
+     Die SharePoint 2010-Projektvorlage wird ein leeres Projekt, das in diesem Beispiel verwendet wird, enthält die Websitespalten und andere Projektelemente, die später hinzugefügt werden.  
   
-4.  Auf der **Geben Sie die Website und die Sicherheit für das Debuggen** Seite Geben Sie die URL für die lokale SharePoint-Website, die Sie die neue benutzerdefinierte Feldelement hinzufügen möchten, oder verwenden den Standardspeicherort (`http://<`*SystemName* `>/)`.  
+4.  Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL für die lokale SharePoint-Website, zu dem Sie das neue Element für benutzerdefiniertes Feld hinzufügen möchten, oder verwenden Sie den Standardspeicherort (`http://<`*SystemName* `>/)`.  
   
-5.  In der **neuerungen die Vertrauensebene für diese SharePoint-Lösung?** Abschnitt, verwenden Sie den Standardwert **bereitstellen als sandkastenlösung**.  
+5.  In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt können Sie den Standardwert **als sandkastenlösung bereitstellen**.  
   
-     Weitere Informationen zu Sandbox und farmlösungen, finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+     Weitere Informationen zu sandkastenlösungen und farmlösungen, finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt sollte nun aufgelistet werden **Projektmappen-Explorer**.  
+6.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt sollte jetzt aufgelistet werden **Projektmappen-Explorer**.  
   
 #### <a name="to-add-site-columns"></a>Websitespalten hinzufügen  
   
-1.  Fügen Sie eine neue Websitespalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Clinic**, und wählen Sie dann **hinzufügen**, **neues Element**.  
+1.  Fügen Sie eine neue Websitespalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Clinic**, und wählen Sie dann **hinzufügen** > **neues Element**.  
   
-2.  In der **neues Element hinzufügen** Dialogfeld Wählen Sie **Websitespalte**, ändern Sie den Namen in **Patient Name**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+2.  In der **neues Element hinzufügen** Dialogfeld wählen **Websitespalte**, ändern Sie den Namen in **Patient Name**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-3.  Lassen Sie in der Datei "Elements.xml" der Websitespalte, den **Typ** festlegen als **Text**, und ändern Sie die **Gruppe** festlegen auf **Clinic Websitespalten**. Nach Abschluss des Vorgangs sollte die Websitespalte "Elements.xml"-Datei im folgenden Beispiel ähneln.  
+3.  In der Websitespalte *"Elements.xml"* Datei, lassen Sie die **Typ** festlegen als **Text**, und ändern Sie die **Gruppe** auf  **Technologieüberblick Websitespalten**. Wenn Sie fertig sind, der Websitespalte *"Elements.xml"* Datei sollte wie im folgenden Beispiel aussehen.  
   
     ```xml  
     <Field  
@@ -94,62 +95,62 @@ ms.lasthandoff: 05/22/2018
     </Field>  
     ```  
   
-4.  Dieselbe Prozedur, mit dem Projekt zwei weitere Websitespalten hinzugefügt: **Patienten-ID** (Typ = "Integer") und **Doctor Namen** (Type = "Text"). Legen Sie deren Wert Gruppe **Clinic Websitespalten**.  
+4.  Mit den gleichen Schritten, zwei zusätzliche Websitespalten zum Projekt hinzufügen: **Patienten-ID** (Typ = "Integer") und **Doktor Namen** (Type = "Text"). Legen Sie den Wert ihrer Gruppe **Clinic Websitespalten**.  
   
-##  <a name="BKMK_CreateCustContType"></a> Erstellen einen benutzerdefinierten Inhaltstyp  
- Als Nächstes erstellen Sie einen Inhaltstyp – basierend auf den Inhaltstyp Kontakte –, enthält der Websitespalten, die Sie im vorherigen Verfahren erstellt haben. Durch einen Inhaltstyp auf einen vorhandenen Inhaltstyp basieren, können Sie Zeit sparen, da die grundlegende Inhaltstyp für die Verwendung in der neue Inhaltstyp mehrere Websitespalten bereitstellt.  
+## <a name="create-a-custom-content-type"></a>Erstellen Sie einen benutzerdefinierten Inhaltstyp
+ Als Nächstes erstellen Sie einen Inhaltstyp, basierend auf den Inhaltstyp der Kontakte –, enthält die Websitespalten, die Sie im vorherigen Verfahren erstellt haben. Von einem Inhaltstyp auf einem vorhandenen Inhaltstyp basieren, können Sie Zeit sparen, da vom grundlegende Inhaltstyp für die Verwendung in den neuen Inhaltstyp stellt mehrere Websitespalten bereit.  
   
-#### <a name="to-create-a-custom-content-type"></a>So erstellen einen benutzerdefinierten Inhaltstyp  
+#### <a name="to-create-a-custom-content-type"></a>Um einen benutzerdefinierten Inhaltstyp zu erstellen.  
   
-1.  Fügen Sie dem Projekt einen Inhaltstyp hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie den Projektknoten aus  
+1.  Fügen Sie dem Projekt einen Inhaltstyp hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie den Knoten des Projekts  
   
-2.  Wählen Sie in der Menüleiste **Projekt**, **neues Element hinzufügen**.  
+2.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.  
   
-3.  Unter einem **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
+3.  Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-4.  In der **Vorlagen** Bereich, wählen Sie die **Inhaltstyp** Vorlage, ändern Sie den Namen in **Patientendaten**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+4.  In der **Vorlagen** Bereich Wählen Sie die **Inhaltstyp** Vorlage ändern den Namen in **Patientendaten**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-     Die **Assistent zum Anpassen von SharePoint** wird geöffnet.  
+     Die **SharePoint Customization Wizard** wird geöffnet.  
   
-5.  In der **welche grundlegenden Inhaltstyp sollten diesen Inhaltstyp Vererben** wählen Sie **wenden Sie sich an** als den Inhaltstyp auf dem den neuen Inhaltstyp basieren, und wählen Sie dann die **Fertig stellen**Schaltfläche.  
+5.  In der **welche Basisinhaltstyp soll dieser Inhaltstyp erben** wählen **wenden Sie sich an** als Inhaltstyp auf der Basis des neuen Inhaltstyps, und wählen Sie dann die **Fertig stellen**Schaltfläche.  
   
-     Auf diese Weise erhalten Sie Zugriff auf andere potenziell nützliche Websitespalten in den Inhaltstyp "Kontakt", zusätzlich zu den Websitespalten, die Sie zuvor definiert.  
+     Dadurch erhalten Sie Zugriff auf andere möglicherweise nützlicher Websitespalten in den Inhaltstyp "Kontakt", zusätzlich zu den Websitespalten, die Sie zuvor definiert.  
   
-6.  Nach dem Inhaltstyp-Designer wird angezeigt, in der **Spalten** Registerkarte, die drei Spalten, die Sie zuvor definierten site hinzufügen: **Patient Name**, **Patienten-ID**, und **Doctor Namen**. Um diese Spalten hinzuzufügen, wählen Sie im Listenfeld erste in der Liste der Spalten Website unter **Anzeigenamen**, und wählen Sie dann jede Spalte in der Liste einen zu einem Zeitpunkt.  
+6.  Nach dem Inhaltstyp-Designer angezeigt wird, in der **Spalten** hinzu die drei Spalten, die Sie zuvor definiert site: **Patient Name**, **Patienten-ID**, und **Doktor Namen**. Um diese Spalten hinzuzufügen, wählen Sie das erste Listenfeld in der Liste der Spalten Site unter **Anzeigenamen**, und wählen Sie dann jede Spalte in der Liste eine zu einem Zeitpunkt.  
   
     > [!TIP]  
-    >  Filtern Sie die Liste der Websitespalten schneller aus, durch die ersten Buchstaben des Namens der Spalte eingeben.  
+    >  Um die Websitespalten schneller auswählen, wird die Liste durch die ersten paar Buchstaben des Namens der Spalte Eingabe gefiltert.  
   
-7.  Zusätzlich zu den drei benutzerdefinierte Websitespalten, Hinzufügen der **Kommentare** Websitespalte aus der Liste der Site-Spalten.  
+7.  Zusätzlich zu den drei benutzerdefinierte Websitespalten hinzufügen, die **Kommentare** Websitespalte aus der Liste der Site-Spalten.  
   
-8.  Wählen Sie die **erforderlich** Kontrollkästchen für die **Patient Name** und **Patienten-ID** Pflichtfelder für Websitespalten zu machen.  
+8.  Wählen Sie die **erforderlichen** Kontrollkästchen für die **Patient Name** und **Patienten-ID** Websitespalten, um sie zu machen, erforderliche Felder.  
   
-9. Auf der **Inhaltstyp** Registerkarte, stellen Sie sicher, dass der Content-Type-Name ist **Patientendaten**, und ändern Sie die Beschreibung **Patienteninformationen Karte**.  
+9. Auf der **Inhaltstyp** Registerkarte, stellen Sie sicher, dass der Content-Type-Name ist **Patientendaten**, und ändern Sie dann auf die Beschreibung, **Patienten Informationskarte**.  
   
-10. Änderung **Gruppenname** auf **Clinic Inhaltstypen**, und behalten Sie die Standardwerte für die anderen Einstellungen.  
+10. Änderung **Gruppenname** zu **Clinic Inhaltstypen**, und lassen Sie die anderen Einstellungen die Standardwerte bei.  
   
-11. Wählen Sie in der Menüleiste **Datei**, **alle speichern**, und schließen Sie den Content-Type-Designer.  
+11. Wählen Sie auf der Menüleiste **Datei** > **Alles speichern**, und schließen Sie dann den Content-Type-Designer.  
   
-##  <a name="BKMK_CreateList"></a> Erstellen einer Liste  
+## <a name="create-a-list"></a>Erstellen Sie eine Liste
  Erstellen Sie jetzt eine Liste, die die neuen Typ und Standort Inhaltsspalten verwendet.  
   
 #### <a name="to-create-a-list"></a>Um eine Liste erstellen  
   
 1.  Fügen Sie eine Liste, um das Projekt. Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie den Projektknoten aus.  
   
-2.  Wählen Sie in der Menüleiste **Projekt**, **neues Element hinzufügen**.  
+2.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.  
   
-3.  Unter einem **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
+3.  Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-4.  In der **Vorlagen** Bereich, wählen Sie die **Liste** Vorlage, ändern Sie den Namen in **Patienten**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+4.  In der **Vorlagen** Bereich, wählen Sie die **Liste** Vorlage ändern den Namen in **Patienten**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-5.  Lassen Sie die **passen Sie die Liste basierend auf** festlegen als **Standard (leer)**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+5.  Lassen Sie die **Anpassen der Liste auf der Grundlage** als **Standardwert (leer)**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
-6.  Wählen Sie in der Liste-Designer die **Inhaltstypen** Schaltfläche zum Anzeigen der **Inhaltseinstellungen für den Typ** (Dialogfeld).  
+6.  Wählen Sie im Designer Liste der **Inhaltstypen** anzuzeigenden Schaltfläche die **Inhaltseinstellungen Typ** im Dialogfeld.  
   
-7.  Wählen Sie die neue Zeile, wählen Sie die **Patientendaten** Inhaltstyp in die Liste der Inhaltstypen, und wählen Sie dann die **OK** Schaltfläche.  
+7.  Wählen Sie die neue Zeile, wählen Sie die **Patientendaten** Inhaltstyp in der Liste der Inhaltstypen aus, und wählen Sie dann die **OK** Schaltfläche.  
   
-     Dies fügt alle Standort Spalten aus der **Patientendaten** Inhaltstyp in die Liste.  
+     Dies fügt alle hinzu, die Websitespalten aus der **Patientendaten** Inhaltstyp in der Liste.  
   
 8.  Löschen Sie alle Websitespalten in der Liste mit Ausnahme der folgenden:  
   
@@ -157,79 +158,78 @@ ms.lasthandoff: 05/22/2018
   
     -   Name des Patienten  
   
-    -   Telefon privat  
+    -   Telefon (privat)  
   
     -   -E-Mail  
   
-    -   Doctor Name  
+    -   Doktor-Name  
   
     -   Kommentare  
   
-9. Klicken Sie unter **Spalte Anzeigename**, wählen Sie eine leere Zeile, fügen Sie eine benutzerdefinierte Liste-Spalte, und nennen Sie sie **Krankenhaus**. Lassen Sie die Angabe des Datentyps als **Textzeile**.  
+9. Klicken Sie unter **Anzeigename der Spalte**, wählen Sie eine leere Zeile, fügen Sie eine benutzerdefinierte Liste-Spalte, und nennen sie **Krankenhaus**. Lassen Sie den Datentyp als **einzelne Textzeile**.  
   
-     Die benutzerdefinierte Listenspalte gilt nur für diese Liste. Wenn Sie eine benutzerdefinierte Listenspalte zu einer Liste hinzufügen, wird ein neue Listeninhaltstyp, einschließlich der Spalten, die in der Liste hinzugefügt erstellt und als die Standardliste festlegen.  
+     Die der benutzerdefinierten Listenspalte gilt nur für diese Liste. Wenn Sie eine der benutzerdefinierten Listenspalte zu einer Liste hinzufügen, ein neuen Listeninhaltstyp, einschließlich aller Spalten in der Liste hinzugefügt erstellt und als die Standardliste festgelegt.  
   
     > [!TIP]  
-    >  Wenn Sie eine Spalte aus der Liste der Websitespalten auswählen, wird eine vorhandene Websitespalte verwendet. Jedoch wenn Sie einen Wert aus der Namen eingeben, ohne alle Spalten in der Liste auswählen, wird eine benutzerdefinierte Listenspalte erstellt, selbst wenn eine Spalte mit dem gleichen Namen bereits in der Liste vorhanden ist.  
+    >  Wenn Sie eine Spalte aus der Liste der Websitespalten auswählen, wird eine bestehende Websitespalte verwendet. Jedoch wenn Sie einen Spalte Name-Wert eingeben, ohne alle Spalten in der Liste auswählen, wird eine benutzerdefinierte Liste-Spalte erstellt, selbst wenn eine Spalte mit dem gleichen Namen bereits in der Liste vorhanden ist.  
   
-     Optional, anstatt den Datentyp für die benutzerdefinierte Listenspalte festlegen **Textzeile**, konnte Sie stattdessen den Datentyp für diese Spalte festlegen, für die Suche und seine Werte aus einer Tabelle oder einer anderen Liste abgerufen werden. Informationen zu Suchspalten finden Sie unter [Liste Beziehungen in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) und [Suchvorgänge und Liste Beziehungen](http://go.microsoft.com/fwlink/?LinkID=224995).  
+     Optional, statt den Datentyp für die benutzerdefinierte Listenspalte **einzelne Textzeile**, Sie können den Datentyp für diese Spalte stattdessen für die Suche festlegen und ihre Werte aus einer Tabelle oder einer anderen Liste abgerufen werden sollen. Informationen über die Suchspalten, finden Sie unter [Liste-Beziehungen in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) und [Suchvorgänge und Liste Beziehungen](http://go.microsoft.com/fwlink/?LinkID=224995).  
   
-10. Neben den **Patienten-ID** und **Patient Name** Dialogfelder, wählen die **erforderlich** Kontrollkästchen.  
+10. Neben der **Patienten-ID** und **Patient Name** Dialogfelder, wählen die **erforderlich** Kontrollkästchen.  
   
-11. Auf der **Ansichten** Registerkarte, und wählen Sie eine leere Zeile, um eine Ansicht zu erstellen. Geben Sie **Patientendetails**.  
+11. Auf der **Ansichten** Registerkarte, und wählen Sie eine leere Zeile, um eine Sicht erstellen. Geben Sie **Patientendetails**.  
   
-     Auf der **Ansichten** Registerkarte können Sie die Spalten, die in der SharePoint-Liste angezeigt werden sollen angeben.  
+     Auf der **Ansichten** Registerkarte, Sie können die Spalten angeben, die Sie in der SharePoint-Liste angezeigt werden soll.  
   
-12. Wählen Sie das neue **Patienten Details** Zeile aus, und wählen Sie dann die **als Standard festlegen** Schaltfläche.  
+12. Wählen Sie den neuen **Patienten Details** Zeile aus, und wählen Sie dann die **als Standard festlegen** Schaltfläche.  
   
-     Die neue Ansicht wird nun die Standardansicht für die Liste.  
+     Die neue Ansicht ist jetzt die Standardansicht für die Liste.  
   
-13. Fügen Sie die folgenden Spalten auf die **ausgewählte Spalten** Liste in der folgenden Reihenfolge:  
+13. Fügen Sie die folgenden Spalten auf die **Selected Columns** Liste in der folgenden Reihenfolge:  
   
     -   Patienten-ID  
   
     -   Name des Patienten  
   
-    -   Telefon privat  
+    -   Telefon (privat)  
   
     -   -E-Mail  
   
-    -   Doctor Name  
+    -   Doktor-Name  
   
     -   Krankenhaus  
   
     -   Kommentare  
   
-14. In der **Eigenschaften** wählen Sie die **sortieren und Gruppieren** -Eigenschaft, und wählen Sie dann die Schaltfläche mit den Auslassungspunkten ![Symbol "Ellipse"](../sharepoint/media/ellipsisicon.gif "Symbol \"Ellipse\"")zum Anzeigen der **sortieren und Gruppieren** (Dialogfeld).  
+14. In der **Eigenschaften** wählen die **sortieren und Gruppieren von** -Eigenschaft, und wählen Sie dann die Schaltfläche mit den Auslassungspunkten ![Symbol "Ellipse"](../sharepoint/media/ellipsisicon.gif "Symbol \"Ellipse\"")zum Anzeigen der **sortieren und Gruppieren von** Dialogfeld.  
   
-15. In der **Spaltenname** wählen Sie **Patient Name**, stellen Sie sicher, dass die **sortieren** Spalte **aufsteigend**, und wählen Sie dann die  **OK** Schaltfläche.  
+15. In der **Spaltenname** wählen **Patient Name**, stellen Sie sicher, dass die **Sortierung** Spalte **aufsteigend**, und wählen Sie dann die  **OK** Schaltfläche.  
   
-##  <a name="BKMK_TestApp"></a> Testen der Anwendung  
- Nun, dass die benutzerdefinierte Websitespalten, Inhaltstyp und Liste bereit sind, für SharePoint bereitstellen Sie, und führen Sie die Anwendung testen.  
+## <a name="test-the-application"></a>Testen der Anwendung
+ Nun, dass die benutzerdefinierte Websitespalten, Inhaltstyp und Liste bereit sind, auf SharePoint bereitzustellen Sie, und führen Sie die Anwendung testen.  
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  
   
-1.  Wählen Sie in der Menüleiste die Option **Datei**, **Alle speichern** aus.  
+1.  Klicken Sie in der Menüleiste auf **Datei** > **Alle speichern**.  
   
-2.  Drücken Sie die Taste F5, um die Anwendung auszuführen.  
+2.  Wählen Sie die **F5** Taste, um die Anwendung auszuführen.  
   
-     Die Anwendung kompiliert wird, und klicken Sie dann die Funktionen für SharePoint bereitgestellt und aktiviert sind.  
+     Die Anwendung kompiliert wird, und klicken Sie dann die Funktionen in SharePoint bereitgestellt und aktiviert werden.  
   
 3.  Wählen Sie auf der Navigationsleiste schnell die **Patienten** Link zum Anzeigen der **Patienten** Liste.  
   
-     Die Spaltennamen in der Liste übereinstimmen, die Sie eingegeben haben, auf die **Ansichten** Registerkarte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     Die Spaltennamen in der Liste sollte übereinstimmen, die Sie eingegeben haben, auf die **Ansichten** Registerkarte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-4.  Wählen Sie die **neues Element hinzufügen** Link zu eine Karte Patienteninformationen zu erstellen.  
+4.  Wählen Sie die **neues Element hinzufügen** Link zum Erstellen einer Karte Patientendaten.  
   
-5.  Geben Sie Informationen in die Felder aus, und wählen Sie dann die **speichern** Schaltfläche.  
+5.  Geben Sie die Informationen in die Felder aus, und wählen Sie dann die **speichern** Schaltfläche.  
   
      Der neue Datensatz wird in der Liste angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  [Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
- [Vorgehensweise: erstellen ein benutzerdefinierten Felds vom Typ](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Vorgehensweise: erstellen ein benutzerdefinierten Feldtyps](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Inhaltstypen](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Spalten](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  
   

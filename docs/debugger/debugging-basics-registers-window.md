@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056296"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178425"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Über das Fenster "Register" in Visual Studio
 Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten.  
@@ -52,4 +52,4 @@ Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)
+ [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)

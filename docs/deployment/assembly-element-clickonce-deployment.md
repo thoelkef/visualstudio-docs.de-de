@@ -1,5 +1,5 @@
 ---
-title: '&lt;Assembly&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+title: '&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815664"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080632"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung)
 Das Element der obersten Ebene für das Bereitstellungsmanifest.  
   
 ## <a name="syntax"></a>Syntax  
@@ -38,16 +38,16 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `assembly` Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Die Elemente von Manifesten muss in den folgenden Namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, und `http://www.w3.org/2000/09/xmldsig#`. Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, durch Vererbung oder durch tagging.  
+ Die `assembly` -Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Manifestelemente muss in den folgenden Namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, und `http://www.w3.org/2000/09/xmldsig#`. Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, die durch Vererbung oder durch markieren.  
   
- Die `assembly` Element hat das folgende Attribut.  
+ Die `assembly` Element weist das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`manifestVersion`|Erforderlich. Dieses Attribut muss festgelegt werden, um `1.0`.|  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel veranschaulicht eine `assembly` Element in ein Bereitstellungsmanifest für eine Anwendung bereitgestellt, mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.  
+ Das folgende Codebeispiel veranschaulicht eine `assembly` Element in einem-Bereitstellungsmanifest für eine Anwendung mithilfe von bereitgestellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.  
   
 ```xml  
 <asmv1:assembly   

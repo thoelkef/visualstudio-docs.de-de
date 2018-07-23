@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059268"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179995"
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 
@@ -96,7 +96,7 @@ Die **zu Aufgabe wechseln** Befehl wird der aktuellen Aufgabe die aktive Aufgabe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debugger – Grundlagen](../debugger/debugger-basics.md)
+- [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
 - [Parallele Programmierung](/dotnet/standard/parallel-programming/index)
 - [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)
