@@ -1,5 +1,5 @@
 ---
-title: Debuggen zur Entwurfszeit - Visual Studio | Microsoft Docs
+title: Debuggen zur Entwurfszeit - Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476766"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180177"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Debuggen Sie in Visual Studio zur Entwurfszeit
+# <a name="debug-at-design-time-in-visual-studio"></a>Debuggen Sie zur Entwurfszeit in Visual Studio
 
-In einigen Szenarien müssen Sie eventuell ein Debuggen von Code zur Entwurfszeit anstelle der Zeit, während die Anwendung ausgeführt wird. Hierzu können Sie mithilfe der **Direktfenster** Fenster. Wenn Sie XAML-Code, der Interaktion mit anderen Code, z. B. Code für die Datenbindung debuggen möchten, können Sie mithilfe **Debuggen** > **an den Prozess anhängen** nachholen.
+In einigen Szenarios sollten Sie so Debuggen Sie Code zur Entwurfszeit anstelle von Zeit, während die Anwendung ausgeführt wird. Hierzu können Sie mithilfe der **direkt** Fenster. Sollten Sie das Debuggen von XAML-Code, mit der interagiert mit anderen Code, z. B. Code für die Datenbindung, können Sie **Debuggen** > **an den Prozess anhängen** dafür.
   
 ### <a name="debug-at-design-time-using-the-immediate-window"></a>Debuggen Sie zur Entwurfszeit über das "Direktfenster"  
 
-Sie können die Visual Studio **Direktfenster** eine Funktion oder Unterroutine ausführen, während die Anwendung nicht ausgeführt wird. Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Diese Funktion wird „Debuggen zur Entwurfszeit“ genannt.  
+Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterroutine ausführen, während die Anwendung nicht ausgeführt wird. Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Diese Funktion wird „Debuggen zur Entwurfszeit“ genannt.  
 
-Im folgende Beispiel wird in Visual Basic, aber die **Direktfenster** Fenster wird auch in c# und C++-Anwendungen unterstützt.
+Im folgende Beispiel wird in Visual Basic jedoch **direkt** Fenster wird auch in c# und C++-Anwendungen unterstützt.
   
 1.  Fügen Sie den folgenden Code in eine Visual Basic-Konsolenanwendung ein:  
   
@@ -60,41 +60,41 @@ Im folgende Beispiel wird in Visual Basic, aber die **Direktfenster** Fenster wi
   
 2.  Legen Sie einen Haltepunkt an der Zeile `s="Add BreakPoint Here"` fest.  
   
-3.  Öffnen der **Direktfenster** Fenster (**Debuggen** > **Windows** > **Direktfenster**), und geben Sie Folgendes in die Fenster: `?MyFunction<enter>`  
+3.  Öffnen der **direkt** Fenster (**Debuggen** > **Windows** > **direkt**), und geben Sie Folgendes in die Fenster: `?MyFunction<enter>`  
   
 4.  Stellen Sie sicher, dass der Haltepunkt erreicht wurde und dass die Aufrufliste korrekt ist.  
   
-5.  Auf der **Debuggen** Menü klicken Sie auf **Fortfahren**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus befinden.  
+5.  Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
   
-6.  Geben Sie Folgendes in die **Direktfenster** Fenster: `?MyFunction<enter>`  
+6.  Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
   
-7.  Geben Sie Folgendes in die **Direktfenster** Fenster: `?MySub<enter>`  
+7.  Geben Sie Folgendes in die **direkt** Fenster: `?MySub<enter>`  
   
-8.  Stellen Sie sicher, dass Sie den Haltepunkt, und überprüfen Sie den Wert der statischen Variablen `i` in der **"lokal"** Fenster. Sie sollte den Wert 3 haben.  
+8.  Stellen Sie sicher, dass Sie den Haltepunkt, und überprüfen Sie den Wert der statischen Variablen `i` in die **"lokal"** Fenster. Sie sollte den Wert 3 haben.  
   
 9. Überprüfen Sie, dass die Aufrufliste korrekt ist.  
   
-10. Auf der **Debuggen** Menü klicken Sie auf **Fortfahren**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus befinden.  
+10. Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
 
-## <a name="debug-at-design-time-from-the-xaml-designer"></a>Debuggen Sie zur Entwurfszeit aus der XAML-designer
+## <a name="debug-at-design-time-from-the-xaml-designer"></a>Debuggen Sie zur Entwurfszeit aus dem XAML-designer
 
-Es kann zum Debuggen von XAML-Designer in einigen deklarative Datenbindungsszenarien CodeBehind hilfreich sein.
+Es kann hilfreich sein, das Debuggen von Code hinter aus dem XAML-Designer in einige deklarative Datenbindungsszenarios sein.
 
-1. Fügen Sie in Ihrem Projekt eine neue XAML-Seite ein, z. B. *temp.xaml*. Die neue XAML-Seite leer sein. 
+1. Fügen Sie in Ihrem Projekt eine neue XAML-Seite ein, z. B. *temp.xaml*. Lassen Sie die neue XAML-Seite leer. 
 
-1. Kompilieren Sie die Projektmappe.
+1. Kompilieren Sie Ihre Lösung.
 
 1. Open *temp.xaml*, die den Designer lädt (*UwpSurface.exe* in einer UWP-app oder *XDesProc.exe*), damit Sie in späteren Schritten anfügen können. 
 
-1. Öffnen Sie eine Instanz von Visual Studio. Öffnen Sie in der neuen Instanz der **an den Prozess anhängen** (Dialogfeld) (**Debuggen** > **an den Prozess anhängen**), legen die **zuordnen** Datumsfeld in den richtigen Codetyp aus, wie z. B. **verwaltetem Code (CoreCLR)** oder der richtigen Codetyp aus. entsprechend der Version .NET. Wählen Sie den richtigen-Designer-Prozess, aus der Liste aus, und wählen Sie **Anfügen**.
+1. Öffnen Sie eine Instanz von Visual Studio. Öffnen Sie in die neue Instanz der **an den Prozess anhängen** (Dialogfeld) (**Debuggen** > **an den Prozess anhängen**), legen die **Anfügen an** Feld in den richtigen Code-Typ, z. B. **Managed Code (CoreCLR)** oder der richtigen Code-Typ basierend auf Ihre Version von .NET. Wählen des richtigen Prozesses für die Designer aus der Liste aus, und wählen Sie **Anfügen**.
 
-    Für UWP-Projekte für 16299 erstellen oder höher, die Designer-Prozess ist *UwpSurface.exe*. Für WPF- oder universelle Windows-Plattform-Versionen, die vor 16299, ist der Designer Vorgang *XDesProc.exe*.
+    Für UWP-Projekte für build 16299 oder höher, die der Designer-Prozess ist *UwpSurface.exe*. Für WPF oder uwp-Versionen vor 16299, wird der Designer-Prozess *XDesProc.exe*.
 
 1. Während an den Prozess angefügt wird, wechseln Sie zu Ihrem Projekt, öffnen Sie den Code hinter der, in dem Sie debuggen möchten, und legen Sie einen Haltepunkt.
 
 1. Öffnen Sie schließlich die Seite, die den XAML-Code enthält, der die Datenbindung enthält.
 
-    Beispielsweise konnte einen Haltepunkt im Code Typ-Konverter für das folgende XAML festlegen TextBlock-Steuerelement zur Entwurfszeit gebunden.
+    Beispielsweise können Sie einen Haltepunkt in der Code für den Konverter für das folgende XAML, festlegen Bindung ein TextBlock-Element zur Entwurfszeit.
 
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
@@ -103,4 +103,4 @@ Es kann zum Debuggen von XAML-Designer in einigen deklarative Datenbindungsszena
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)
+ [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)

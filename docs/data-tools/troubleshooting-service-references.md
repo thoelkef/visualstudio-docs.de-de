@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118082"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180424"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -53,12 +53,12 @@ Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotede
 
 So beheben Sie diesen Fehler
 
-1.  Öffnen Sie im Website-Projekt die **Eigenschaften** Seiten.
+1.  Öffnen Sie im Websiteprojekt die **Eigenschaften** Seiten.
 
 2.  Auf der **Startoptionen** Registerkarte die **NTLM-Authentifizierung** Kontrollkästchen.
 
     > [!NOTE]
-    > Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich die WCF-Dienste enthalten. Sicherheit für WCF-Diensten wird durch die Konfiguration in verwaltet die *"Web.config"* Datei. Dadurch wird die NTLM-Authentifizierung nicht erforderlich.
+    > Sie sollten die NTLM-Authentifizierung für Websites nur deaktivieren, die ausschließlich die WCF-Dienste enthalten. Sicherheit für WCF-Diensten wird durch die Konfiguration in verwaltet die *"Web.config"* Datei. Dadurch wird die NTLM-Authentifizierung nicht erforderlich.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Zugriffsebene für generierte Klassen, die Einstellung hat keine Auswirkungen
 
