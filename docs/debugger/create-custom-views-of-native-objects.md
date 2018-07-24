@@ -2,7 +2,7 @@
 title: Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten
 description: Verwenden Sie das Natvis-Framework anpassen, dass Visual Studio systemeigene Typen im Debugger angezeigt.
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433573"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204244"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Erstellen Sie benutzerdefinierter Ansichten systemeigener Objekte im Visual Studio-debugger
 Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen, Visual Studio systemeigene Typen in den Variablenfenstern des Debuggers zeigt (z. B. die **Überwachen** Fenster **"lokal"** Fenster, und klicken Sie in  **DataTips**.
@@ -631,7 +631,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 </Type>  
 ```  
   
- Ein Beispiel für Benutzeroberflächenschnellansichten (UIVisualizer) finden Sie in der Image Watch-Erweiterung, die zum Anzeigen von Bitmaps im Speicher verwendet wird: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Sehen Sie ein Beispiel finden Sie in der Image Watch-Erweiterung, die zum Anzeigen von Bitmaps im Speicher: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer-Element  
  `CustomVisualizer` ist ein Erweiterungspunkt. Er gibt eine VSIX-Erweiterung an, die Sie schreiben können, um die Visualisierung im Code zu steuern, der in Visual Studio ausgeführt wird. Weitere Informationen zum Schreiben von VSIX-Erweiterungen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Schreiben eine benutzerdefinierte Schnellansicht ist viel aufwendiger als das Schreiben einer XML-Natvis-Definition, aber Sie sind Einschränkungen zu was Natvis unterstützt und nicht unterstützt. Benutzerdefinierte Schnellansichten verfügen über Zugriff auf den vollständigen Satz der Debugger-Erweiterbarkeits-APIs. Diese können zum Abfragen und Ändern des debuggenden Prozesses oder zum Kommunizieren mit anderen Bestandteilen von Visual Studio verwendet werden.  

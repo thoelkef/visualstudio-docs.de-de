@@ -1,5 +1,5 @@
 ---
-title: Debug-Paket | Microsoft Docs
+title: Debuggen-Pakets | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ca438b7ed8c9b6a4b84693f975144040f998f01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04eb6802cabd4ae36151580c573d28b977ca348e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110028"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204043"
 ---
 # <a name="debug-package"></a>Debug-Paket
-Das debugpaket in der Visual Studio-Shell ausgeführt und verarbeitet alle der Benutzeroberfläche. Verarbeitet die Visual Studio Debugschnittstellen und kommuniziert mit der Sitzungs-Manager (SDM).  
+Das debugpaket in der Visual Studio-Shell ausgeführt und verarbeitet alle der Benutzeroberfläche. Es nutzt die Visual Studio Debuggen von Schnittstellen und kommuniziert mit der Sitzungs-Manager (SDM).  
   
- Break-Ereignisse, die durch die SDM gesendeten wechseln Sie den Debugger aus Ausführungsmodus Unterbrechungsmodus und ändern Sie den Fokus an das Programm, in dem die Unterbrechung aufgetreten ist. Das debugpaket verfolgt den Stapelrahmen und den Thread aus den Informationen, die an ihn gesendet werden, indem Sie die Ereignisse an.  
+ Unterbrechungsbezogene Ereignisse, die durch die SDM gesendete wechseln Ausführungsmodus den Debugger Unterbrechungsmodus ein, und ändern Sie die Anwendung, in dem die Unterbrechung aufgetreten ist. Das debugpaket verfolgt den Stapelrahmen und den Thread aus den Informationen, die an ihn gesendet wird, durch die Ereignisse an.  
   
- Das debugpaket verfügt über keine Sprache oder Abhängigkeiten-Laufzeitumgebung. Es ist nicht erforderlich, das debugpaket zu implementieren.  
+ Das debugpaket, weist keine Sprache oder Laufzeitumgebung Abhängigkeiten. Es ist nicht erforderlich, das debugpaket zu implementieren.  
   
- Das debugpaket wird vom vsdebug.dll implementiert.  
+ Das debugpaket wird implementiert, indem *vsdebug.dll*.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Sitzungs-Debug-Manager](../../extensibility/debugger/session-debug-manager.md)   
+ [Sitzungsbasierter Debug-manager](../../extensibility/debugger/session-debug-manager.md)   
  [Stapelrahmen](../../extensibility/debugger/stack-frames.md)   
  [Threads](../../extensibility/debugger/threads.md)   
- [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

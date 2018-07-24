@@ -1,5 +1,5 @@
 ---
-title: Dokumentieren Sie Kontext | Microsoft Docs
+title: Dokumentieren Sie Kontext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f97df9bc3c0a40a44379ba37f1b36d79cffb74e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef82c6533eddf32dd8315193531a57e2e7328ad9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098744"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203559"
 ---
-# <a name="document-context"></a>Dokumentenkontext
-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, eine **Dokumentenkontext**:  
+# <a name="document-context"></a>Dokumentkontext
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, eine *Dokumentkontext*:  
   
--   Stellt eine Position in einer Quelldatei dar. Für die Sprachen, in dem die Datei möglicherweise nicht vorhanden, identifiziert ein Dokumentenkontext eine Position in einem Dokument in der Regel von der Umgebung zur Laufzeit generiert. Ein Skriptmodul kann z. B. ein Dokument aus einem Skript generieren. Weitere Informationen finden Sie unter [Dokumentposition](../../extensibility/debugger/document-position.md).  
+-   Stellt eine Position in einer Quelldatei dar. Für Sprachen, in dem die Quelldatei nicht vorhanden sein kann, gibt ein Dokumentenkontext eine Position in einem Dokument, das von der Runtime-Umgebung in der Regel generiert. Beispielsweise kann eine Skript-Engine ein Dokument vom Skript generieren. Weitere Informationen finden Sie unter [dokumentieren Position](../../extensibility/debugger/document-position.md).  
   
--   Beschreibt eine Position in einem Quelldokument, die in einen Codekontext entspricht. Der Handler Symbol ordnet einen Codekontext Dokumentation Kontext, mithilfe der Informationen, die von einem Compiler oder einem Interpreter generiert.  
+-   Beschreibt eine Position in einem Quelldokument, das einen Codekontext entspricht. Der Symbol-Handler einen Codekontext Dokumentation Kontext mithilfe der Informationen, die vom eines Compilers oder Interpreters zugeordnet.  
   
--   Wird implementiert, indem ein [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle.  
+-   Wird implementiert, indem ein [idebugdocumentcontext2 angegeben](../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Codekontext](../../extensibility/debugger/code-context.md)   
- [Symbol-Anbieter](../../extensibility/debugger/symbol-provider.md)   
- [Symbol-Anbieter-Schnittstellen](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Symbolanbieter](../../extensibility/debugger/symbol-provider.md)   
+ [Symbolanbieterschnittstellen](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)
