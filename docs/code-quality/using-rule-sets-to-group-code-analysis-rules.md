@@ -1,5 +1,5 @@
 ---
-title: Regel zur Codeanalyse legt in Visual Studio
+title: Regelsätze für die Codeanalyse
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e727fd331ebd98a74acbb63738e6921e5ad1a0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923054"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204426"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppe von Codeanalyseregeln
 
-Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie auswählen, aus einer Liste integrierter *-Regelsätze*. Ein Regelsatz gilt für ein Projekt, und es ist eine Gruppierung von Code Analyseregeln, die gezielte Probleme und bestimmte Bedingungen für dieses Projekt zu identifizieren. Angenommen, Sie können einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden oder nur die empfohlene Mindestregeln für eigene. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.
+Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz gilt für ein Projekt, und es ist eine Gruppierung von Code Analyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden, oder nur die empfohlene Mindestregeln für eigene. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.
 
-Sie können anpassen ein Regelsatzes durch Hinzufügen oder Löschen von Regeln oder durch Ändern der Regel Schweregrade als Warnungen oder Fehler im angezeigt werden die **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet den Regelsatz-Editor Such- und Filtertools hilft Ihnen bei den Vorgang.
+Sie können einen Regelsatz durch Hinzufügen oder Löschen von Regeln oder durch Ändern der Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
 
-## <a name="rule-set-format"></a>Regelsatz-format
+Regelsätze stehen für [statische Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md), [Analyse von C++-Code](using-rule-sets-to-specify-the-cpp-rules-to-run.md), und [Roslyn-Analysetools](analyzer-rule-sets.md).
 
-Ein Regelsatz wird angegeben, im XML-Format in eine *ruleSet* Datei. Regeln, die eine ID umfassen und ein *Aktion*, gruppiert nach Analyzer-ID und den Namespace in der Datei.
+## <a name="rule-set-format"></a>Regel festgelegten format
 
-Der XML-Inhalt von einem *ruleSet* Datei sieht etwa wie folgt:
+Ein Regelsatz wird angegeben, in der XML-Format in eine *ruleSet* Datei. Regeln, die eine ID enthalten und eine *Aktion*, werden die Analysetool-ID und den Namespace in der Datei gruppiert werden.
+
+Den Inhalt einer *ruleSet* Datei ähnlich wie in dieser XML-Code:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,9 +56,9 @@ Der XML-Inhalt von einem *ruleSet* Datei sieht etwa wie folgt:
 ```
 
 > [!TIP]
-> Es ist einfacher, [bearbeiten ein Regelsatzes](../code-quality/working-in-the-code-analysis-rule-set-editor.md) im grafischen **Regelsatz-Editor** als per hand katalogisiert wird.
+> Es ist einfacher, [bearbeiten ein Regelsatzes](../code-quality/working-in-the-code-analysis-rule-set-editor.md) im grafischen **Regelsatz-Editor** als von hand.
 
-Der Regelsatz für ein Projekt, durch angegeben wird die `CodeAnalysisRuleSet` Eigenschaft in der Visual Studio-Projektdatei. Zum Beispiel:
+Der Regelsatz für ein Projekt, indem angegeben wird die **CodeAnalysisRuleSet** Eigenschaft in der Visual Studio-Projektdatei. Zum Beispiel:
 
 ```xml
 <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>

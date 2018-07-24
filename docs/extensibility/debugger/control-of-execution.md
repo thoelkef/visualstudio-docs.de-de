@@ -1,5 +1,5 @@
 ---
-title: Steuerung der Ausführung | Microsoft Docs
+title: Steuern der Ausführung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9fc47a0b73d07e4b24ef55c736ad80197f282cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13038e11625bb152f36651d95a1f7fda758bb128
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106655"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204192"
 ---
-# <a name="control-of-execution"></a>Steuerung der Ausführung
-Die Debugging-Modul (DE) sendet eines der folgenden Ereignisse in der Regel als letzte Startup-Ereignis:  
+# <a name="control-of-execution"></a>Steuern der Ausführung
+Die Debug-Engine (DE) wird in der Regel eines der folgenden Ereignisse als das letzte Startup-Ereignis gesendet:  
   
--   Das punktereignis Eintrag, wenn Anfügen an ein Programm neu gestartet  
+-   Das punktereignis Eintrag, wenn Anfügen an einen neu gestarteten Programms  
   
--   Die Last ausgelöste Ereignis, wenn ein Programm zuordnen, die bereits ausgeführt wird  
+-   Dem Load ausgelöste Ereignis, wenn ein Programm angefügt, die bereits ausgeführt wird  
   
- Diese beiden Ereignisse sind Beendigungen von Ereignissen, was bedeutet, dass die DE auf eine Antwort des Benutzers mithilfe der IDE wartet. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md).  
+ Diese beiden Ereignisse werden beendet, dies bedeutet, dass eine Antwort vom Benutzer über die IDE die DE wartet. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md).  
   
-## <a name="stopping-event"></a>Beenden-Ereignis  
- Wenn eine Stopping-Ereignis an die Debugsitzung gesendet wird:  
+## <a name="stopping-event"></a>Ereignis beenden  
+ Wenn die Stopping-Ereignis an die Debug-Sitzung gesendet wird:  
   
-1.  Das Programm und der Thread, der den aktuellen Anweisungszeiger enthalten, können von Ereignisschnittstelle abgerufen werden.  
+1.  Das Programm und einen Thread, der den aktuellen Anweisungszeiger enthalten, können der Schnittstelle der abgerufen werden.  
   
-2.  Die IDE stellt fest, die aktuelle Quellcodedatei und die Position zeigt im Editor hervorgehoben.  
+2.  Die IDE stellt fest, die aktuelle Quellcodedatei und die Position, d. h. wie im Editor angezeigt.  
   
-3.  Die Debugsitzung zu diesem ersten Stopping-Ereignis in der Regel durch Aufrufen des Programms reagiert **Fortfahren** Methode.  
+3.  Die Debugsitzung zu diesem ersten Stopping-Ereignis in der Regel durch Aufrufen des Programms reagiert **Weiter** Methode.  
   
-4.  Das Programm wird dann ausgeführt, bis er erkennt, dass eine beenden-Bedingung, z. B. Erreichens einen Haltepunkt, in dem Fall DE die Debugsitzung ein Haltepunktereignis sendet. Das Haltepunktereignis ist eine Stopping-Ereignis und die DE wartet eine Benutzerantwort erneut.  
+4.  Das Programm wird dann ausgeführt, bis eine beenden-Bedingung, wie z. B. das Erreichen eines Haltepunkts erreicht wird. In diesem Fall sendet der DE ein Haltepunkt-Ereignisses, an der Debugsitzung. Das Haltepunktereignis ist eine Beenden-Ereignis aus, und die DE erneut wartet auf eine Antwort des Benutzers.  
   
-5.  Wenn der Benutzer entscheidet, die über einen Einzelschritt in, oder aus einer Funktion, die IDE, der Debugsitzung, rufen Sie des Programms `Step` -Methode, und übergeben sie die Einheit der Schritt (Instruction, Anweisung oder Zeile) und die Art der Schritt – d. h., ob mehr als einen Einzelschritt in, , oder aus der Funktion. Wenn der Schritt abgeschlossen ist, sendet der DE ein Schritt ausgelöste Ereignis an die Debugsitzung, also eine Stopping-Ereignis.  
-  
-     - oder -   
-  
-     Wenn der Benutzer wählt fortgesetzt werden von den aktuellen Anweisungszeiger, fordert die IDE die Debugsitzung, rufen Sie des Programms **Execute** Methode. Das Programm setzt die Ausführung fort, bis die nächste beenden-Bedingung erreicht.  
+5.  Wenn der Benutzer wählt, mehr als Einzelschritt oder aus einer Funktion, die IDE die Debugsitzung zum Aufrufen des Programms fordert `Step` Methode. Die IDE übergibt dann die Einheit der Schritt (-Anweisung, Anweisung oder Zeile) und den Typ des Schritts (ob schrittweise in, überspringen oder aus der Funktion). Wenn der Schritt abgeschlossen ist, sendet die DE ein vollständiges Schritt-Ereignis an die Debugsitzung, handelt es sich eine Beenden-Ereignis.  
   
      - oder -   
   
-     Wenn die Debugsitzung ist, um einen bestimmten Stopping-Ereignis zu ignorieren, ruft die Debugsitzung des Programms **Fortfahren** Methode. Wenn das Programm ausführen in Einzelschritten wurde ausführen, überspringen oder aus einer Funktion, wenn die beenden-Bedingung gefunden wurden, stellt dann den Schritt.  
+     Wenn der Benutzer wählt fortgesetzt werden von den aktuellen Anweisungszeiger, fordert die IDE die Debugsitzung zum Aufrufen des Programms **Execute** Methode. Das Programm wird die Ausführung fortgesetzt, bis die nächste beenden-Bedingung erreicht.  
   
- Programmgesteuert, wenn die DE eine beenden-Bedingung auftritt, sendet er beenden Ereignisse wie [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oder [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) Sitzung Debug-Manager (SDM) mithilfe von ein [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) Schnittstelle. Der DE übergibt die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) und [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) Schnittstellen, die das Programm sowie den Thread an, die den aktuellen Anweisungszeiger enthält darstellen. Ruft die SDM [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) zum Abrufen der obersten Stapelrahmen und Aufrufe [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) zum Abrufen der aktuellen Anweisung zugeordneten Dokument Kontexts Zeiger. Dieses Dokumentenkontext ist in der Regel eine Quelle Code Name, Zeile und Spalte Dateinummer. Die IDE verwendet diese, um den Quellcode hervorheben, der den aktuellen Anweisungszeiger enthält.  
+     - oder -   
   
- Die SDM zu diesem ersten Stopping-Ereignis in der Regel durch Aufrufen reagiert [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Das Programm dann ausgeführt wird, bis er erkennt, dass eine beenden-Bedingung, z. B. Erreichens einen Haltepunkt, in dem Fall DE sendet eine [IDebugBreakpointEvent2 Schnittstelle](../../extensibility/debugger/reference/idebugbreakpointevent2.md) , das SDM. Das Haltepunktereignis ist eine Stopping-Ereignis und die DE wartet eine Benutzerantwort erneut.  
+     Wenn die Debug-Sitzung eine bestimmte Stopping-Ereignis ignorieren soll, ruft die Debug-Sitzung des Programms **Weiter** Methode. Wenn das Programm ausführen in Einzelschritten wurde in, überspringen oder aus einer Funktion, wenn sie die beenden-Bedingung aufgetreten, weiterhin klicken Sie dann den Schritt.  
   
- Wenn der Benutzer entscheidet, die über einen Einzelschritt in, oder aus einer Funktion, die IDE, das SDM Aufrufen [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md), und übergeben sie die [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (Instruction, Anweisung oder Zeile) und die [ STEPKIND](../../extensibility/debugger/reference/stepkind.md), d. h., ob Schritt ausführen, überspringen oder aus der Funktion. Wenn der Schritt abgeschlossen ist, sendet der DE ein [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) Schnittstelle, um die SDM, also eine Stopping-Ereignis.  
+ Programmgesteuert, wenn die DE eine beenden-Bedingung auftritt, sendet er beendet Ereignisse wie [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oder [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) für die Sitzung-Debug-Manager (SDM) mithilfe von ein [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) Schnittstelle. Der DE übergibt die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) und [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) Schnittstellen, die die Anwendung und der Thread, der mit den aktuellen Anweisungszeiger darstellen. Die SDM-Aufrufe [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) zum Abrufen der Top Stapelrahmen und Aufrufe [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) zum Abrufen der aktuellen Anweisung zugeordneten Dokumentkontext Zeiger. Diese Dokumentenkontext ist in der Regel eine Source Code Name, Zeile und Spalte Dateinummer. Die IDE verwendet diese, um Quellcode hervorzuheben, der den aktuellen Anweisungszeiger enthält.  
   
- Wenn der Benutzer wählt fortgesetzt werden von den aktuellen Anweisungszeiger, fordert die IDE die SDM Aufrufen [IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Das Programm setzt die Ausführung fort, bis die nächste beenden-Bedingung erreicht.  
+ Das SDM reagiert in der Regel auf diese ersten Stopping-Ereignis durch Aufruf [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Das Programm dann ausgeführt wird, bis es eine beenden-Bedingung trifft, wie z. B. das Erreichen eines Haltepunkts, in dem Fall der DE sendet eine [IDebugBreakpointEvent2 Schnittstelle](../../extensibility/debugger/reference/idebugbreakpointevent2.md) , das SDM. Das Haltepunktereignis ist eine Beenden-Ereignis aus, und die DE erneut wartet auf eine Antwort des Benutzers.  
   
- Wenn das debugpaket ist, um einen bestimmten Stopping-Ereignis zu ignorieren, ruft das debugpaket der SDM, der aufgerufen wird, [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Wenn das Programm ausführen in Einzelschritten wurde ausführen, überspringen oder aus einer Funktion, wenn die beenden-Bedingung gefunden wurden, stellt dann den Schritt. Dies bedeutet, dass das Programm einen schrittweisen Zustand aufrechterhalten, damit er weiß, wie Sie den Vorgang fortzusetzen.  
+ Wenn der Benutzer wählt, mehr als Einzelschritt oder aus einer Funktion, die IDE werden, das SDM aufgefordert Aufrufen [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md). Übergibt die IDE die [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (-Anweisung, Anweisung oder Zeile) und die [STEPKIND](../../extensibility/debugger/reference/stepkind.md), d. h., ob in, überspringen oder aus der Funktion schrittweise. Wenn der Schritt abgeschlossen ist, sendet der DE eine [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) Schnittstelle, das SDM, handelt es sich eine Beenden-Ereignis.  
   
- Die Aufrufe der SDM nimmt `Step`, **Execute**, und **Fortfahren** sind asynchron, was bedeutet, dass die SDM erwartet, dass den Aufruf schnell zurückgegeben. Wenn DE die SDM Stopping-Ereignis im selben Thread vor sendet `Step`, **Execute**, oder **Fortfahren** zurückgegeben wird, hängt von der SDM.  
+ Wenn der Benutzer wählt fortgesetzt werden von den aktuellen Anweisungszeiger, fragt die IDE das SDM Aufrufen [IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Das Programm wird die Ausführung fortgesetzt, bis die nächste beenden-Bedingung erreicht.  
+  
+ Wenn das debugpaket einer bestimmten Stopping-Ereignis ignorieren soll, ruft das debugpaket das SDM, die aufruft [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Wenn das Programm ausführen in Einzelschritten wurde in, überspringen oder aus einer Funktion, wenn sie die beenden-Bedingung aufgetreten, der den Schritt weiterhin. Dies bedeutet, dass das Programm einen schrittweisen Status verwaltet, damit es weiß, wie der Vorgang fortgesetzt wird.  
+  
+ Ruft die das SDM stellt `Step`, **Execute**, und **Weiter** sind asynchron, das bedeutet, dass das SDM erwartet, den Aufruf dass von schnell zurückgegeben. Wenn die DE dem SDM Stopping-Ereignis auf dem gleichen Thread vor dem sendet `Step`, **ausführen**, oder **Weiter** zurückgibt, das SDM reagiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)
+ [Tasks zum Debuggen](../../extensibility/debugger/debugging-tasks.md)

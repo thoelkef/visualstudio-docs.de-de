@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993914"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204153"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurieren und Verwenden von Roslyn-Analyzer-Regeln
 
@@ -79,7 +79,7 @@ Der folgende Screenshot zeigt die gleichen drei Verstöße an, wie in der **Fehl
 
 Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**, oder innerhalb der  *\<Projektname > ruleSet* -Datei, die der Projektmappe hinzugefügt wird, nachdem Sie den Schweregrad einer Regel in Ändern **Projektmappen-Explorer**.
 
-![RULESET-Datei im Projektmappen-Explorer](media/ruleset-in-solution-explorer.png)
+![Die Regelsatzdatei im Projektmappen-Explorer](media/ruleset-in-solution-explorer.png)
 
 ### <a name="to-set-rule-severity-from-solution-explorer"></a>Projektmappen-Explorer Schweregrad für Regelsatz festlegen
 
@@ -99,7 +99,7 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 1. In der **Aktion** Spalte wählen Sie den Wert auf eine Dropdown-Liste zu öffnen, und wählen Sie den gewünschten Schweregrad aus der Liste.
 
-   ![RULESET-Datei in Editor öffnen](media/ruleset-file-in-editor.png)
+   ![Regelsatzdatei in Editor öffnen](media/ruleset-file-in-editor.png)
 
 ## <a name="suppress-violations"></a>Unterdrücken von Verstößen
 

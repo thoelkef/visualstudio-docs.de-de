@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties Class - interne Member | Microsoft Docs
+title: ContingentProperties-Klasse – interne Member | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44bec34394df6f976416a827d7eb5d67cb99f6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097847"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204413"
 ---
-# <a name="contingentproperties-class---internal-members"></a>ContingentProperties Class - interne Member
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties-Klasse – interne Member
 Enthält zusätzliche Eigenschaften für eine <xref:System.Threading.Tasks.Task> Objekt.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da diese internen Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diese internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
@@ -49,4 +49,4 @@ Enthält zusätzliche Eigenschaften für eine <xref:System.Threading.Tasks.Task>
  .NET Framework initialisiert die Felder dieser Klasse nur, wenn sie benötigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Merkmale von parallelen Erweiterung für .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

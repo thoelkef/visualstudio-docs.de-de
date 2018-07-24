@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179559"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204231"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
 
-In Visual Studio können Sie aus einer Liste der Codeanalyse *-Regelsätze* um auf ein Projekt mit verwaltetem Code anzuwenden. Der Standardregelsatz sind *Microsoft-Mindestregeln*. Sie können einen anderen Regelsatz auf ein Projekt oder alle Projekte in einer Projektmappe anwenden.
+In Visual Studio können Sie aus einer Liste der Codeanalyse [-Regelsätze](../code-quality/rule-set-reference.md)) um auf ein Projekt mit verwaltetem Code anzuwenden. In der Standardeinstellung die **Microsoft-Mindestregeln** Regelsatz ausgewählt ist, aber Sie können bei Bedarf einen anderen Regelsatz anwenden. Regelsätze können auf eine oder mehrere Projekte in einer Projektmappe angewendet werden.
 
 > [!TIP]
 > Informationen dazu, wie Sie einen Regelsatz für ASP.NET-Webanwendungen zu konfigurieren, finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET web-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Standardmäßig werden alle verwalteten Projekten einer Projektmappe zugewiesen 
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)
 - [Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Web-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
