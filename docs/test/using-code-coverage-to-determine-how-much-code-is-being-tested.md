@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752091"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978248"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -266,9 +266,9 @@ Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von
 
 Nach Ausführung des Builds werden die Code Coverage-Ergebnisse an den Testlauf angefügt und in der Buildzusammenfassung angezeigt.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analysieren von Code Coverage in einer Befehlszeile
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analysieren von Code Coverage über die Befehlszeile
 
-Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option des Hilfsprogramms „vstest.console.exe“.
+Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen. Code Coverage ist eine Option des Hilfsprogramms *vstest.console.exe*.
 
 1.  Starten der Visual Studio Developer-Eingabeaufforderung:
 
@@ -278,9 +278,11 @@ Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe"
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Problembehandlung
 
-Wenn keine Code Coverage-Ergebnisse angezeigt werden, lesen Sie [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md).
+Wenn keine Code Coverage-Ergebnisse angezeigt werden, lesen Sie den Artikel [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Siehe auch
 

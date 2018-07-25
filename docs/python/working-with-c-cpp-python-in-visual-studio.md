@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit C++ und Python
 description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, einschließlich Informationen zum Debuggen im gemischten Modus.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979268"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847816"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -283,6 +283,8 @@ Wenn Sie eine der oben genannten Methoden abgeschlossen haben, können Sie die `
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Wenn der Befehl **Ohne Debuggen starten** deaktiviert ist, klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf das Python-Projekt, und klicken Sie auf **Set as Startup Project** (Als Startprojekt festlegen).
 
 1. Versuchen Sie die `COUNT`-Variable zu vergrößern, sodass die Unterschiede deutlicher werden. Beachten Sie, dass ein Debugbuild des C++-Moduls zudem langsamer als ein Releasebuild ausgeführt wird, da der Debugbuild weniger optimiert ist und verschiedene Fehlerprüfungen enthält. Sie können zum Vergleich zwischen diesen Konfigurationen wechseln.
 

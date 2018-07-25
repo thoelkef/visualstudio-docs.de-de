@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Shaders
+title: Arbeiten mit Shadern
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c42b90998eef8314f37060b655185d1c68b53b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925359"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078315"
 ---
 # <a name="work-with-shaders"></a>Arbeiten mit Shadern
 
@@ -37,7 +37,7 @@ Da DGSL mit DGML kompatibel ist, können Sie Tools verwenden, die für das Analy
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des Shader-Designers von Visual Studio zur Arbeit mit Shadern.|
 |[Shader-Designer-Knoten](../designers/shader-designer-nodes.md)|Beschreibt die Arten von Shader-Designer-Knoten, die Sie verwenden können, um die Grafikeffekte zu erzielen.|

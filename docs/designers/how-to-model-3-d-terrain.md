@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745577"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977745"
 ---
 # <a name="how-to-model-3d-terrain"></a>Vorgehensweise: Modellieren eines 3D-Geländes
 
@@ -31,7 +31,7 @@ Das Modell sollte dann etwa so aussehen:
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1.  Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten können. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).
+1.  Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten können. Weitere Informationen zum Hinzufügen eines Modells zu Ihrem Projekt finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).
 
 2.  Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.
 

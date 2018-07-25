@@ -1,5 +1,6 @@
 ---
-title: Ausführen von Komponententests mit dem Test-Explorer
+title: Ausführen, Erstellen und Debuggen von Komponententests mit dem Test-Explorer
+description: Erfahren Sie, wie Sie Tests mit dem Test-Explorer in Visual Studio ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752065"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977790"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -44,7 +45,7 @@ Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder eine
 
 - Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen**aus.
 
-- Wählen Sie zum Ausführen aller Tests in einer Standardgruppe **Ausführen...** und dann im Menü die Gruppe aus.
+- Klicken Sie zum Ausführen aller Tests in einer Standardgruppe auf **Ausführen**, und wählen Sie dann im Menü die Gruppe aus.
 
 - Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen**aus.
 
@@ -54,7 +55,7 @@ Während der Testausführung wird die oben im Fenster "Test-Explorer" angezeigte
 
 ### <a name="run-tests-after-every-build"></a>Ausführen von Tests nach jedem Build
 
-|||
+|Schaltfläche|Beschreibung |
 |-|-|
 |![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Wählen Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü **Test** und dann auf der Test-Explorer-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
 
@@ -98,7 +99,7 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
-|Gruppieren|description|
+|Gruppieren|Beschreibung |
 |-----------|-----------------|
 |**Dauer**|Die Tests werden nach Ausführungszeit gruppiert: **Schnell**, **Mittel**und **Langsam**.|
 |**Ergebnis**|Die Tests werden nach Ausführungsergebnis gruppiert: **Fehlgeschlagene Tests**, **Übersprungene Tests**und **Bestandene Tests**.|
@@ -113,7 +114,7 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 
  Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
 
-|Merkmal|description|
+|Merkmal|Beschreibung |
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|
@@ -141,7 +142,7 @@ Filtern nach einem anderen Kriterium:
 > [!NOTE]
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
 
-|Qualifizierer|description|
+|Qualifizierer|Beschreibung |
 |---------------|-----------------|
 |**Merkmal**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
 |**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|
@@ -153,7 +154,7 @@ Filtern nach einem anderen Kriterium:
 
 Verwenden Sie folgende Syntax, um eine Teilmenge von Filterergebnissen auszuschließen :
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

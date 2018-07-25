@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747117"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924355"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Farbshaders
+# <a name="how-to-create-a-basic-color-shader"></a>Vorgehensweise: Erstellen eines einfachen Farbshaders
 
 In diesem Artikel wird erläutert, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines flachen Farbshaders verwendet wird. Dieser Shader legt die endgültige Farbe auf einen konstanten RGB-Farbwert fest.
 
@@ -49,6 +49,6 @@ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. W
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
+- [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
 - [Shader-Designer](../designers/shader-designer.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

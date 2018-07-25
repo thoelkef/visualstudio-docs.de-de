@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926443"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078572"
 ---
 # <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
 Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschiedenen Shader-Designer-Knoten, die Sie zum Erstellen von grafischen Effekten verwenden können.
 
 ## <a name="nodes-and-node-types"></a>Knoten und Knotentypen
- Der Shader-Designer stellt visuelle Effekte als Diagramm dar. Diese Diagramme werden aus Knoten erstellt, die speziell ausgewählt werden und so miteinander verbunden sind, dass der gewünschte Effekt erreicht wird. Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Außerdem stellen die Verbindungen dieser Knoten miteinander dar, wie die Informationen durch das Diagramm fließen, um ein Ergebnis zu erzielen. Der Shader-Designer stellt sechs verschiedene Knotentypen (Filter, Texturknoten, Parameter, Konstanten, Hilfsprogrammknoten und Berechnungsknoten) und einige individuelle Knoten bereit, die zu jedem Typ gehören. Diese Knoten und Knotentypen werden in anderen Artikeln beschrieben, die zu diesem Bereich gehören (vgl. die Links am Ende dieses Dokuments).
+ Der Shader-Designer stellt visuelle Effekte als Diagramm dar. Diese Diagramme werden aus Knoten erstellt, die speziell ausgewählt werden und so miteinander verbunden sind, dass der gewünschte Effekt erreicht wird. Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Außerdem stellen die Verbindungen dieser Knoten miteinander dar, wie die Informationen durch das Diagramm fließen, um ein Ergebnis zu erzielen. Der Shader-Designer stellt sechs verschiedene Knotentypen (Filter, Texturknoten, Parameter, Konstanten, Hilfsprogrammknoten und Berechnungsknoten) und einige individuelle Knoten bereit, die zu jedem Typ gehören. Diese Knoten und Knotentypen werden in den anderen Artikeln in diesem Abschnitt beschrieben. Weitere Informationen finden Sie unter den Links am Ende dieses Dokuments.
 
 ## <a name="node-structure"></a>Knotenstruktur
  Alle Knoten bestehen aus einer Kombination aus gemeinsamen Elementen. Jeder Knoten verfügt auf der rechten Seite über mindestens ein Ausgabeterminal (außer Farbknoten, die die Ausgabe des Shaders darstellen). Knoten, die Berechnungs- oder Textursampler darstellen, verfügen auf der linken Seite über Eingabeterminals. Knoten, die Informationen darstellen, haben hingegen keine Eingabeterminals. Ausgabeterminals sind mit den Eingabeterminals verbunden, damit sie Informationen von einem Knoten an einen anderen verschieben können.
@@ -43,11 +43,11 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Konstante Knoten](../designers/constant-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Literalwerte und interpolierte Informationen zu Vertexzuständen in Shader-Berechnungen darzustellen. Vertexzustände werden interpoliert und unterscheiden sich daher in jedem Pixel: Jede Pixel-Shader-Instanz empfängt eine andere Version der Konstanten.|
 |[Parameterknoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie zur Darstellung der Kameraposition, Materialeigenschaften, Lichtparameter, Zeit und andere Informationen zum App-Status in Shader-Berechnungen verwenden können.|
 |[Texturknoten](../designers/texture-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um verschiedene Texturtypen und Geometrien abzufragen und Texturkoordinaten auf gewöhnliche Weise zu erzeugen oder zu transformieren.|
 |[Berechnungsknoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|
 |[Hilfsprogrammknoten](../designers/utility-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um allgemeine Lichtberechnungen und andere allgemeine Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|
-|[Filtern von Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|
+|[Filterknoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|

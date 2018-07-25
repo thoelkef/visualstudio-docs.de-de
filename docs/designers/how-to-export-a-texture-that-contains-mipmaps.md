@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923326"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923893"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Gewusst wie: Erstellen einer Textur, die Mipmaps enthält
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält
 
 Mit der Bildinhaltspipeline können Mipmaps aus einem Quellbild als Teil der Buildphase des Projekts generiert werden. Sie müssen manchmal den Bildinhalt für jede MIP-Ebene manuell angeben, um bestimmte Effekte zu erzielen. Wenn Sie den Bildinhalt jeder MIP-Ebene nicht manuell angeben müssen, stellt das Generieren von Mipmaps zur Buildzeit sicher, dass die Inhalte von Mipmaps stets synchronisiert werden. Dadurch werden ebenfalls die Leistungseinbußen durch das Generieren von Mipmaps zur Laufzeit vermieden.
 
@@ -33,7 +33,7 @@ Mipmapping stellt im Bildschirmbereich automatisch die Detailebene für struktur
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>So exportieren Sie eine Textur mit Mipmaps
 
-1.  Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Datei, oder erstellen Sie eine, wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben. Um Mipmaps zu unterstützen geben Sie eine Textur mit einer Breite und Höhe an, die beide in der Größe über die gleiche Potenz verfügen, z. B. 64x64, 256x256 oder 512x512.
+1.  Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Bilddatei, oder erstellen Sie wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben eine. Um Mipmaps zu unterstützen geben Sie eine Textur mit einer Breite und Höhe an, die beide in der Größe über die gleiche Potenz verfügen, z. B. 64x64, 256x256 oder 512x512.
 
 2.  Konfigurieren Sie die soeben erstellte Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die erstellte Texturdatei, und klicken Sie dann auf **Eigenschaften**. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Überprüfen Sie, ob die Eigenschaft **Inhalt** auf **Ja** und **Vom Build ausschließen** auf **Nein** festgelegt ist. Klicken Sie auf **Übernehmen**.
 

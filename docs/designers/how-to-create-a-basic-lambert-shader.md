@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9700fb8cc84e0403c180b0570ca874fdff784e8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748204"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924342"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Gewusst wie: Erstellen eines Lambert-Shaders
+# <a name="how-to-create-a-basic-lambert-shader"></a>Vorgehensweise: Erstellen eines einfachen Lambert-Shaders
 
 In diesem Artikel wird erläutert, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Beleuchtungsshaders verwendet wird, der das klassische Lambert-Beleuchtungsmodell implementiert.
 
@@ -27,7 +27,7 @@ Das Lambert-Beleuchtungsmodell umfasst diffuses Licht und eine Umgebungsbeleucht
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
+1.  Erstellen Sie einen DGSL-Shader, um mit diesem zu arbeiten. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
 
 2.  Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Lassen Sie das Terminal **Alpha** verbunden.
 

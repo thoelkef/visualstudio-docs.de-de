@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967608"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977605"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Gewusst wie: Auswählen der aktiven Testlaufeinstellungen für einen Auslastungstest
 
@@ -30,7 +30,7 @@ Wenn Ihr Auslastungstest im Ordner **Laufzeiteinstellungen** nur einen Laufzeite
 
 Im Auslastungstest-Editor wird die aktive Testlaufeinstellung durch das Suffix "[Aktiv]" gekennzeichnet.
 
-## <a name="selecting-the-active-run-setting"></a>Auswählen der aktiven Testlaufeinstellung
+## <a name="select-the-active-run-setting"></a>Auswählen der aktiven Testlaufeinstellung
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>So wählen Sie die aktive Testlaufeinstellung in einem Auslastungstest aus
 
@@ -45,17 +45,17 @@ Im Auslastungstest-Editor wird die aktive Testlaufeinstellung durch das Suffix "
      Die ausgewählte Testlaufeinstellung wird und bleibt aktiv, bis Sie eine andere Testlaufeinstellung als aktiv festlegen.
 
 > [!NOTE]
-> Sie können die aktive Testlaufeinstellung überschreiben, indem Sie eine Umgebungsvariable mit dem Namen `Test.UseRunSetting=<run setting name>` festlegen. Dies ist sinnvoll, wenn Sie einen Auslastungstest von der Befehlszeile oder von einer Batchdatei aus ausführen. Sie können hierdurch verschiedene Testlaufeinstellungen auswählen, ohne den Auslastungstest zu öffnen.
+> Sie können die aktive Testlaufeinstellung überschreiben, indem Sie eine Umgebungsvariable mit dem Namen `Test.UseRunSetting=<run setting name>` festlegen. Dies ist sinnvoll, wenn Sie einen Auslastungstest von der Befehlszeile oder von einer Batchdatei aus ausführen. Sie können hierdurch verschiedene Laufzeiteinstellungen auswählen, ohne den Auslastungstest zu öffnen.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Angeben der zu verwendenden Testlaufeinstellung über die Befehlszeile
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Angeben der zu verwendenden Testlaufeinstellung über die Befehlszeile
- Sie können die Standardlaufzeiteinstellungen im Auslastungstest überschreiben, indem Sie eine Umgebungsvariable über die Befehlszeile festlegen:
+Sie können die Standardlaufzeiteinstellungen im Auslastungstest überschreiben, indem Sie eine Umgebungsvariable über die Befehlszeile festlegen:
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+**Set Test.UseRunSetting=PreProdEnvironment**
 
- Führen Sie anschließend den Test aus:
+Führen Sie anschließend den Test aus:
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>Siehe auch
 

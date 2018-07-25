@@ -17,17 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2794c88ad3a0d14705d536aa26142745d0fc0597
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571961"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078939"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
 Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sowie ihren verfügbaren Attributen und untergeordneten Elementen.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet Projektdateien, um dem Buildmodul anzuzeigen, was wie erstellt werden soll. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien sind XML-Dateien, für die das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (XSD) für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ 
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien sind XML-Dateien, für die das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (*XSD*) für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="msbuild-xml-schema-elements"></a>XML-Schemaelemente von MSBuild  
  Die folgende Tabelle enthält alle XML-Schemaelemente von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sowie die untergeordneten Elemente und Attribute.  
@@ -49,7 +50,7 @@ Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](
 |[Project-Element (MSBuild)](../msbuild/project-element-msbuild.md)|Wählen<br /><br /> Importieren<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Ziel<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions-Element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property-Element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Bedingung|  
-|[PropertyGroup Element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Bedingung|  
+|[PropertyGroup-Element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Bedingung|  
 |[SDK-Element (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|name<br /><br /> Version|  
 |[Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Bedingung<br /><br /> DependsOnTargets<br /><br /> Eingaben<br /><br /> KeepDuplicateOutputs<br /><br /> name<br /><br /> Ausgaben<br /><br /> Rückgabe|  
 |[Task-Element (MSBuild)](../msbuild/task-element-msbuild.md)|Ausgabe|Bedingung<br /><br /> ContinueOnError<br /><br /> *Parameter*|  
@@ -58,7 +59,7 @@ Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](
 |[When-Element (MSBuild)](../msbuild/when-element-msbuild.md)|Wählen<br /><br /> ItemGroup<br /><br /> PropertyGroup|Bedingung|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
  [Conditions](../msbuild/msbuild-conditions.md)  (MSBuild-Bedingungen)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)

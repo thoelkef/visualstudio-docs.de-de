@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code
 description: Eine exemplarische Vorgehensweise zu den spezifischen Debugfunktionen in Visual Studio für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032254"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079822"
 ---
-# <a name="debugging-your-python-code"></a>Debuggen von Python-Code
+# <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
 Visual Studio bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere.
 
@@ -72,7 +72,7 @@ Beim Festlegen von Bedingungen können Sie auch **Aktion** auswählen und eine M
 
 Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene Möglichkeiten, den Code schrittweise auszuführen oder Codeblöcke auszuführen, bevor wieder unterbrochen wird. Diese Befehle sind an verschiedenen Stellen verfügbar, z.B. in der oberen Symbolleiste zum Debuggen, im **Debuggen**-Menü, im Kontextmenü im Code-Editor sowie über Tastaturkurzbefehle (nicht alle Befehle sind an all diesen Stellen verfügbar):
 
-| Feature | Tastatureingabe | description |
+| Feature | Tastatureingabe | Beschreibung  |
 | --- | --- | --- |
 | Weiter | F5 | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
 | Einzelschritt | F11 | Führt die nächste Anweisung aus und hält an. Wenn die nächste Anweisung ein Funktionsaufruf ist, hält der Debugger in der ersten Zeile der aufgerufenen Funktion an. |
@@ -138,7 +138,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="launch-mode-options"></a>Optionen für den Startmodus
 
-| Option | description |
+| Option | Beschreibung  |
 | --- | --- |
 | Python-Standardstartprogram | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten `python.exe`-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
 | Webstartprogramm | Startet Ihren Standardbrowser und ermöglicht das Debuggen von Vorlagen. Im Abschnitt [Debuggen von Webvorlagen](python-web-application-project-templates.md#debugging) finden Sie weitere Informationen. |
@@ -147,7 +147,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Ausführungsoptionen (Suchpfade, Startargumente und Umgebungsvariablen)
 
-| Option | description |
+| Option | Beschreibung  |
 | --- | --- |
 | Suchpfade | Diese Werte entsprechen den im Knoten „Suchpfade“ des Projektmappen-Explorers angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den Projektmappen-Explorer zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
 | Skriptargumente | Diese Argumente werden dem Befehl hinzugefügt, der zum Starten Ihres Skripts verwendet wird, und werden nach dem Dateinamen des Skripts angezeigt. Das erste Element hier ist für das Skript als `sys.argv[1]` verfügbar, das zweite als `sys.argv[2]` usw. |
@@ -169,7 +169,7 @@ Das interaktive Python-Debugfenster (**Debuggen > Fenster > Interaktives Debugge
 
 Das Fenster zum interaktiven Debuggen unterstützt zusätzlich zu den [REPL-Standardbefehlen](python-interactive-repl-in-visual-studio.md#meta-commands) spezielle Metabefehle:
 
-| Befehl | Argumente | description |
+| Befehl | Argumente | Beschreibung  |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
 | `$down`, `$d` | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach unten. |
@@ -193,6 +193,49 @@ Beachten Sie, dass die standardmäßigen Debuggerfenster wie „Prozesse“, „
 Das Fenster zum interaktiven Debuggen verfügt über einen eigenen Satz Optionen, auf die Sie über **Tools > Optionen > Python-Tools > Fenster zum interaktiven Debuggen** zugreifen können. Im Gegensatz zum regulären interaktiven Python-Fenster, das für jede Python-Umgebung über eine separate Instanz verfügt, gibt es nur ein Fenster zum interaktiven Debuggen, und dieses verwendet immer den Python-Interpreter für den Prozess, für den das Debugging ausgeführt wird. Siehe [Options - Debugging options (Optionen: Debugoptionen)](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Optionen für das Fenster zum interaktiven Debuggen](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>Verwenden des experimentellen Debuggers
+
+Ab Visual Studio 2017, Vorschauversion 4.0, können Sie den „experimentellen Debugger“ abonnieren, der auf der ptvsd-Version 4.1+ basiert. Wählen Sie zum Abonnieren den Menübefehl **Tools** > **Optionen** aus, navigieren Sie anschließend im Dialogfeld „Optionen“ zu **Python** > **Experimentell**, und wählen Sie die Option **Use experimental debugger** (Experimentellen Debugger verwenden) aus.
+
+Der experimentelle Debugger ist nur mit begrenzten Python-Umgebungen kompatibel, wie in der folgenden Tabelle beschrieben:
+
+| Python-Version | Mit experimentellem Debugger kompatibel |
+| --- | --- |
+| 2.6 | Nein |
+| 2.7 | Ja |
+| 3.1 bis 3.4 | Nein |
+| 3.5 und höher | Ja |
+| IronPython | Nein |
+
+Wenn Sie versuchen, den experimentellen Debugger mit einer nicht kompatiblen Umgebung zu verwenden, wird in Visual Studio folgende Fehlermeldung angezeigt: „Der Debugger ist mit dieser Umgebung nicht kompatibel.“
+
+![Fehlermeldung „Der Debugger ist mit dieser Umgebung nicht kompatibel“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-incompatible-error.png)
+
+Wählen Sie den Befehl **Experimentellen Debugger deaktivieren** aus, durch den die Option **Experimentellen Debugger verwenden** gelöscht wird.
+
+> [!Note]
+> Die Warnung wird in Python 3.3 und 3.4 derzeit nicht angezeigt.
+
+Wenn Sie in der aktuellen Umgebung eine ältere ptvsd-Version installiert haben (z.B. eine 4.0.x-Vorgängerversion einer 3.x-Version, die für das Remotedebuggen erforderlich ist), wird in Visual Studio die Fehlermeldung „Das Debuggerpaket konnte nicht geladen werden“ oder die Warnung „Das Debuggerpaket ist veraltet“ angezeigt.
+
+![Fehler „Das Debuggerpaket konnte nicht geladen werden“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-version-error.png)
+
+![Warnung „Das Debuggerpaket ist veraltet“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-version-warning.png)
+
+Sie können Ihre ptvsd-Installation im Fenster **Python-Umgebungen** auf der Registerkarte **Pakete** verwalten oder folgende Befehle über die Befehlszeile verwenden:
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> Auch wenn Sie sich möglicherweise dafür entscheiden, die Warnung bei einigen ptvsd-Versionen zu ignorieren, funktioniert Visual Studio unter Umständen nicht ordnungsgemäß.
 
 ## <a name="see-also"></a>Siehe auch
 

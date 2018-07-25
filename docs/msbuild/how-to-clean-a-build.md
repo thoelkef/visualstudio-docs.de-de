@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578219"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079121"
 ---
-# <a name="how-to-clean-a-build"></a>Gewusst wie: Bereinigen eines Builds
-Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie unter [Task Reference (Aufgabenverweis)](../msbuild/msbuild-task-reference.md).  
+# <a name="how-to-clean-a-build"></a>Vorgehensweise: Bereinigen eines Builds
+Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie in der [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md).  
   
-## <a name="creating-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
- Standardmäßig wird die erstellte EXE-Datei beim Kompilieren eines Projekts im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.  
+## <a name="create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
+ Standardmäßig wird die beim Kompilieren eines Projekts erstellte *EXE*-Datei im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
   
-1.  Verwenden Sie das `Property`-Element, um den Speicherort und den Namen des Verzeichnisses zu definieren. Erstellen Sie beispielsweise ein Verzeichnis namens `BuiltApp` in dem Verzeichnis, das das Projekt und die Quelldateien enthält:  
+1.  Verwenden Sie das `Property`-Element, um den Speicherort und den Namen des Verzeichnisses zu definieren. Erstellen Sie beispielsweise ein Verzeichnis namens *BuiltApp* in dem Verzeichnis, das das Projekt und die Quelldateien enthält:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  Verwenden Sie die [MakeDir](../msbuild/makedir-task.md)-Aufgabe, um das Verzeichnis zu erstellen, wenn dieses noch nicht vorhanden ist. Zum Beispiel:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>Entfernen der Ausgabeelemente  
+## <a name="remove-the-output-items"></a>Entfernen der Ausgabeelemente  
  Bevor Sie neue Instanzen der Zwischen- und Ausgabedateien erstellen, sollten Sie alle vorherigen Instanzen der Zwischen- und Ausgabedateien löschen. Verwenden Sie die [RemoveDir](../msbuild/removedir-task.md)-Aufgabe, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse vom Datenträger zu löschen.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Entfernen eines Verzeichnisses und aller enthaltenen Dateien  
@@ -101,8 +102,8 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exec Task (Exec-Aufgabe)](../msbuild/exec-task.md)   
- [MakeDir Task (MakeDir-Aufgabe)](../msbuild/makedir-task.md)   
- [RemoveDir Task (RemoveDir-Aufgabe)](../msbuild/removedir-task.md)   
+ [Exec-Aufgabe](../msbuild/exec-task.md)   
+ [MakeDir-Aufgabe](../msbuild/makedir-task.md)   
+ [RemoveDir-Aufgabe](../msbuild/removedir-task.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
- [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele)
+ [Ziele](../msbuild/msbuild-targets.md)

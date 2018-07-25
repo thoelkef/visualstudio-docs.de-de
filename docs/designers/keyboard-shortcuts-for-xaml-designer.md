@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7826b6b3257e11f82ff864a6fcb638bf650b517a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922441"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978155"
 ---
-# <a name="keyboard-shortcuts--for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
+# <a name="keyboard-shortcuts-for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
 Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird.
 
 ## <a name="element-shortcuts"></a>Tastenkombinationen für Elemente
@@ -25,28 +25,28 @@ Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, 
 
 |**Ausführen dieser Aktion**|**Vorgehensweise**|
 |--------------------------------|-----------------|
-|Erstellen eines Elements|Drücken Sie STRG+N.|
-|Duplizieren eines Elements|Halten Sie die ALT-TASTE gedrückt, und drücken Sie eine Pfeiltaste.|
-|Bearbeitet den Text in einem Steuerelement|Drücken Sie F2 (drücken Sie ESC zum Beenden).|
-|Auswählen eines einzelnen Elements|Drücken Sie die TAB-TASTE, um Elemente in der Reihenfolge auszuwählen, wie sie im Dokument angezeigt werden. (Sie können auch mit den Pfeiltasten Elemente auswählen.)|
-|Auswählen von mehreren Elementen|Drücken Sie die UMSCHALTTASTE, und halten Sie sie gedrückt, während Sie jedes einzelne Element auswählen.|
-|Auswählen von mehreren nicht benachbarten Elementen|Drücken Sie die STRG-TASTE, und halten Sie sie gedrückt, während Sie das erste und das letzte Element auswählen.|
-|Verschieben von ausgewählten Elementen|Drücken Sie die Pfeiltasten (Sie können die UMSCHALTTASTE gedrückt halten, um den zu verschiebenden Abstand pro gedrückter Taste zu vergrößern.)|
-|Drehen eines Elements in 15-Grad-Schritten|Halten Sie die UMSCHALTTASTE gedrückt, während Sie das Element drehen.|
-|Auswählen von allen Elementen|Drücken Sie STRG+A.|
-|Aufheben der Auswahl aller Elemente|Drücken Sie STRG+UMSCHALT+A.|
-|Anzeigen oder Ausblenden von Elementhandles|Drücken Sie F9.|
-|Auswählen einer Eigenschaft für ein Element|Wählen Sie ein Element aus, und legen Sie den Fokus auf das Eigenschaftenfenster. Drücken Sie dann die TAB-TASTE. (Verwenden Sie STRG+TAB, um den Fokus auf das Eigenschaftenfenster zu legen.) Sie können mit den Pfeiltasten Eigenschaftswerte in den Dropdownlisten auswählen.|
+|Erstellen eines Elements|Drücken Sie **STRG**+**N**|
+|Duplizieren eines Elements|Halten Sie die **ALT-TASTE** gedrückt, und drücken Sie eine Pfeiltaste.|
+|Bearbeitet den Text in einem Steuerelement|Drücken Sie **F2** (drücken Sie **ESC** zum Beenden).|
+|Auswählen eines einzelnen Elements|Drücken Sie die **TAB-TASTE**, um Elemente in der Reihenfolge auszuwählen, in der sie im Dokument angezeigt werden. (Sie können auch mit den Pfeiltasten Elemente auswählen.)|
+|Auswählen von mehreren Elementen|Halten Sie die **UMSCHALTTASTE**, während Sie jedes Element auswählen.|
+|Auswählen von mehreren nicht benachbarten Elementen|Halten Sie die **STRG-TASTE**, während Sie das erste und das letzte Element auswählen.|
+|Verschieben von ausgewählten Elementen|Drücken Sie die Pfeiltasten (Sie können die **UMSCHALTTASTE** gedrückt halten, um den zu verschiebenden Abstand pro Tastendruck zu vergrößern.)|
+|Drehen eines Elements in 15-Grad-Schritten|Halten Sie die **UMSCHALTTASTE** gedrückt, während Sie das Element drehen.|
+|Auswählen von allen Elementen|Drücken Sie **STRG**+**A**|
+|Aufheben der Auswahl aller Elemente|Drücken Sie auf **STRG**+**UMSCHALT**+**A**|
+|Anzeigen oder Ausblenden von Elementhandles|Drücken Sie **F9**|
+|Auswählen einer Eigenschaft für ein Element|Wählen Sie ein Element aus, und legen Sie den Fokus auf das Eigenschaftenfenster. Drücken Sie dann die **TAB-TASTE**. (Verwenden Sie **STRG**+**TAB**, um den Fokus auf das Eigenschaftenfenster zu legen.) Sie können mit den Pfeiltasten Eigenschaftswerte in den Dropdownlisten auswählen.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tastenkombinationen im Fenster "Dokumentgliederung"
  Die folgende Tabelle enthält die Tastenkombinationen, die bei der Arbeit mit Elementen im Fenster "Dokumentgliederung" verfügbar sind.
 
 |**Ausführen dieser Aktion**|**Vorgehensweise**|
 |--------------------------------|-----------------|
-|Ausblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|STRG+H|
-|Einblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|UMSCHALT+STRG+H|
-|Sperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|STRG+L|
-|Entsperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|UMSCHALT+STRG+L|
+|Ausblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**STRG**+**H**|
+|Einblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**UMSCHALT**+**STRG**+**H**|
+|Sperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**STRG**+**L**|
+|Entsperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**UMSCHALT**+**STRG**+**L**|
 
 ## <a name="see-also"></a>Siehe auch
 

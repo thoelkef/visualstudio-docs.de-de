@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745775"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923906"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlaufshaders
 
 In diesem Artikel wird erläutert, wie der Shader-Designer und die Directed Graph Shader Language zum Erstellen eines geometriebasierten Farbverlauf-Shaders verwendet wird. Dieser Shader skaliert einen konstanten RGB-Farbwert anhand der Höhe von jedem Punkt eines Objekts im Raum.
 
@@ -27,7 +27,7 @@ Sie können einen geometriebasierten Farbverlauf-Shader implementieren, indem Si
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
+1.  Erstellen Sie einen DGSL-Shader, um mit diesem zu arbeiten. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
 
 2.  Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 
@@ -54,7 +54,7 @@ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau 
 
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.
 
- In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben unter [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md) gezeigt wird, auf die 3D-Szene angewandt wurde. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
+ In der folgenden Abbildung wird die Anwendung des Shaders, der in diesem Dokument beschrieben wird, auf die 3D-Szene unter [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md) veranschaulicht. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
 
  ![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png)
 
@@ -63,8 +63,8 @@ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau 
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
+- [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
 - [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md)
-- [Gewusst wie: Erstellen eines Graustufentextur-Shaders](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Vorgehensweise: Erstellen eines Graustufentextur-Shaders](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Shader-Designer](../designers/shader-designer.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

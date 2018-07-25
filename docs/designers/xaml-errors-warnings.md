@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746623"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077810"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML-Fehler und -Warnungen
 
@@ -32,7 +32,7 @@ Im Hintergrund analysieren mehrere Tools gleichzeitig die XAML. XAML-Fehler werd
 |Bearbeiten und Fortfahren – XAML|XECxxxx|
 
 > [!Note]
-> Nicht alle Fehler/Warnungen verfügen über einen entsprechenden Code. Solche Fehler sind in der Regel Fehler des XAML-Designers.
+> Nicht alle Fehler oder Warnungen verfügen über einen entsprechenden Code. Solche Fehler sind in der Regel Fehler des XAML-Designers.
 
 
 ## <a name="suppress-xaml-designer-errors"></a>Unterdrücken von XAML-Designer-Fehlern

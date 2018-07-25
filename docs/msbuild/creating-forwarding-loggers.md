@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b95b0725e0cbb3a7568e51298fb83f05b74f18fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568639"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179202"
 ---
-# <a name="creating-forwarding-loggers"></a>Erstellen von Weiterleitungsprotokollierungen
+# <a name="create-forwarding-loggers"></a>Erstellen von Weiterleitungsprotokollierungen
 Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie wählen können, welche Ereignisse Sie gerne protokollieren möchten, wenn Sie Projekte auf einem System mit mehreren Prozessoren erstellen. Wenn Sie Weiterleitungsprotokollierungen aktivieren, können Sie vermeiden, dass nicht benötigte Ereignisse die zentrale Protokollierung überlasten, die Buildzeit verlangsamen und dafür sorgen, dass das Protokoll unübersichtlich wird.  
   
  Sie können entweder zuerst die <xref:Microsoft.Build.Framework.IForwardingLogger>-Schnittstelle und dann manuell die Methode implementieren oder die <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>-Klasse und deren vorkonfigurierte Methoden verwenden, um eine Weiterleitungsprotokollierung zu erstellen. (Letztere Methode sollte für die meisten Anwendungen ausreichend sein.)  
   
-## <a name="register-events-and-respond-to-them"></a>Registrieren von Ereignissen und Reaktion darauf  
- Eine Weiterleitungsprotokollierung sammelt Informationen zu Buildereignissen, die vom zweiten Buildmodul gemeldet werden. Bei diesem Buildmodul handelt es sich um einen Workerprozess, der von dem Hauptbuildprozess während eines Builds auf einem System mit mehreren Prozessoren erstellt wird. Anschließend wählt die Weiterleitungsprotokollierung anhand Ihrer Anweisungen Ereignisse aus, die sie an die zentrale Protokollierung weiterleitet.  
+## <a name="register-events-and-respond-to-them"></a>Registrieren von Ereignissen und Reaktion auf diese  
+ Eine Weiterleitungsprotokollierung sammelt Informationen zu Buildereignissen, die von der zweiten Build-Engine gemeldet werden. Bei dieser Build-Engine handelt es sich um einen Workerprozess, der von dem Hauptbuildprozess während eines Builds auf einem System mit mehreren Prozessoren erstellt wird. Anschließend wählt die Weiterleitungsprotokollierung anhand Ihrer Anweisungen Ereignisse aus, die sie an die zentrale Protokollierung weiterleitet.  
   
  Sie müssen Weiterleitungsprotokollierungen registrieren, damit diese Ereignisse behandeln, die Sie gerne überwachen möchten. Protokollierungen müssen die <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>-Methode außer Kraft setzen, um sich für Ereignisse zu registrieren. Jetzt beinhaltet diese Methode einen optionalen `nodecount`-Parameter, der auf die Anzahl von Prozessoren in dem System festgelegt werden kann. (Der Standardwert ist 1.)  
   
@@ -35,7 +35,7 @@ Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie
  In einer Umgebung mit mehreren Prozessoren ist es sehr wahrscheinlich, dass Ereignismeldungen nicht in der richtigen Reihenfolge empfangen werden. Aus diesem Grund müssen Sie die Ereignisse überprüfen, indem Sie in der Weiterleitungsprotokollierung den Ereignishandler verwenden und ihn so programmieren, dass er bestimmen kann, welche Ereignisse an den Redirectordienst übergeben werden sollen, damit dieser sie an die zentrale Protokollierung weiterleitet. Dafür können Sie die <xref:Microsoft.Build.Framework.BuildEventContext>-Klasse verwenden, die jeder Meldung angefügt wird, um so die Identifizierung von Ereignissen, die Sie weiterleiten möchten, zu vereinfachen und anschließend die Namen der Ereignisse an die <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>-Klasse (oder an eine Unterklasse dieser Klasse) zu übergeben. Wenn Sie diese Methode verwenden, ist keine spezielle Codierung erforderlich, um Ereignisse weiterzuleiten.  
   
 ## <a name="specify-a-forwarding-logger"></a>Angeben einer Weiterleitungsprotokollierung  
- Nachdem aus einer Weiterleitungsprotokollierung eine Assembly erstellt wurde, müssen Sie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mitteilen, diese während der Builderstellung zu verwenden. Verwenden Sie dafür die Schalter `/FileLogger`, `/FileLoggerParameters` und `/DistributedFileLogger` sowie „MSBuild.exe“. Der Schalter `/FileLogger` teilt „MSBuild.exe“ mit, dass die Protokollierung direkt angefügt ist. Der Schalter `/DistributedFileLogger` deutet darauf hin, dass eine Protokolldatei pro Knoten vorhanden ist. Verwenden Sie den Schalter `/FileLoggerParameters`, um Parameter für die Weiterleitungsprotokollierung festzulegen. Weitere Informationen zu diesen Schaltern und anderen „MSBuild.exe“-Schaltern finden Sie unter [Command-Line Reference (Befehlszeilenreferenz)](../msbuild/msbuild-command-line-reference.md).  
+ Nachdem aus einer Weiterleitungsprotokollierung eine Assembly erstellt wurde, müssen Sie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mitteilen, diese während der Builderstellung zu verwenden. Verwenden Sie dafür die Optionen `/FileLogger`, `/FileLoggerParameters` und `/DistributedFileLogger` mit *MSBuild.exe* zusammen. Die Option `/FileLogger` teilt *MSBuild.exe* mit, dass die Protokollierung direkt angefügt ist. Der Schalter `/DistributedFileLogger` deutet darauf hin, dass eine Protokolldatei pro Knoten vorhanden ist. Verwenden Sie den Schalter `/FileLoggerParameters`, um Parameter für die Weiterleitungsprotokollierung festzulegen. Weitere Informationen zu diesen Optionen und anderen Optionen von *MSBuild.exe* finden Sie unter [Command-line reference (Befehlszeilenreferenz)](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Multiprozessorfähige Protokollierungen  
  Wenn Sie ein Projekt auf einem System mit mehreren Prozessoren erstellen, überlappen die Buildmeldungen der Prozessoren nicht automatisch in einer einheitlichen Sequenz. Stattdessen müssen Sie mit der <xref:Microsoft.Build.Framework.BuildEventContext>-Klasse, die an jede Meldung angefügt wird, das Gruppieren von Meldungen als Priorität festlegen. Weitere Informationen zur Builderstellung mit mehreren Prozessoren finden Sie unter [Logging in a Multi-Processor Environment (Protokollierung in einer Umgebung mit mehreren Prozessoren)](../msbuild/logging-in-a-multi-processor-environment.md).  

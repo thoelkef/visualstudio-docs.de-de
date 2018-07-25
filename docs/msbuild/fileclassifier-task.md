@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a754f5aef53eed581deb9ccafa0bf5c453d8086d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eea3fbb882a2ed2b8036b6fe5bbb280d99c0f270
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568349"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177032"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier-Aufgabe
 Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine Gruppe von Quellressourcen als diejenigen, die in eine Assembly eingebettet werden. Wenn eine Ressource nicht lokalisierbar ist, wird sie in die Hauptanwendungsassembly eingebettet; andernfalls wird sie in eine Satellitenassembly eingebettet.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`CLREmbeddedResource`|Nicht verwendet.|  
 |`CLRResourceFiles`|Nicht verwendet.|  
@@ -67,7 +67,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine 
   
 ## <a name="see-also"></a>Siehe auch  
  [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
  [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

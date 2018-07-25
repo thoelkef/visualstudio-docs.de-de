@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745710"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079887"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
@@ -27,13 +27,13 @@ Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenflä
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse, die als Datenquelle verwendet wird
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**> **Projekt** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** aus, erweitern Sie den Knoten **Windows Desktop**, und wählen Sie dann die Vorlage **WPF-Anwendung** aus.
 
 1. Geben Sie dem Projekt den Namen **BindingTest**, und wählen Sie anschließend die Schaltfläche **OK**.
 
-1. Öffnen Sie die Datei "MainWindow.xaml.cs" (oder "MainWindow.xaml.vb"), und fügen Sie den folgenden Code hinzu. Fügen Sie in C# den Code im `BindingTest`-Namespace (vor der letzten schließenden Klammer in der Datei) hinzu. In Visual Basic können Sie einfach die neue Klasse hinzufügen.
+1. Öffnen Sie die Datei **MainWindow.xaml.cs** (oder **MainWindow.xaml.vb**), und fügen Sie den folgenden Code hinzu. Fügen Sie in C# den Code im `BindingTest`-Namespace (vor der letzten schließenden Klammer in der Datei) hinzu. In Visual Basic können Sie einfach die neue Klasse hinzufügen.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenflä
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>So binden Sie die ItemCount-Eigenschaft an ein TextBlock-Steuerelement
 
-1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für „MainWindow.xaml“, und klicken Sie auf **Ansicht-Designer**.
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für **MainWindow.xaml**, und wählen Sie **Ansicht-Designer** aus.
 
 1. Klicken Sie in der Toolbox auf ein [Raster](/uwp/api/Windows.UI.Xaml.Controls.Grid)-Steuerelement, um es dem Formular hinzuzufügen.
 

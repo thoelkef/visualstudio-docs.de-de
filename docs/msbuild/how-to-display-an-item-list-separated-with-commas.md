@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a79e8c0f21a63bd5b64af69c2bf9778c07822d83
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574934"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081809"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Gewusst wie: Anzeigen einer durch Trennzeichen getrennten Elementliste
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
 Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas  
+## <a name="separate-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Wenn die `@(TXTFile)`-Elementliste die Elemente „app1.txt“, „app2.txt“ und „app3.txt“ enthält, lautet die Meldung:  
+ Wenn die `@(TXTFile)`-Elementliste die Elemente *App1.txt*, *App2.txt* und *App3.txt* enthält, lautet die Meldung:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
@@ -45,7 +45,7 @@ Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei „phrases.txt“ zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **/c:** gekennzeichnet. Das Elementtrennzeichen `/c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
+ In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **/c:** gekennzeichnet. Das Elementtrennzeichen `/c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
   
  In diesem Beispiel lautet die entsprechende Befehlszeile:  
   
@@ -69,5 +69,5 @@ Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
  [Elemente](../msbuild/msbuild-items.md)

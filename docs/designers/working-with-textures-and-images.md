@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925510"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079659"
 ---
 # <a name="work-with-textures-and-images"></a>Arbeiten mit Texturen und Bildern
 
@@ -52,7 +52,7 @@ Cubemaps können unterschiedliche Arten von Daten enthalten – wie etwa Farben 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt die Verwendung der Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
 |[Beispiele für die Bildbearbeitung](../designers/image-editor-examples.md)|Enthält Links zu Themen, in denen die Verwendung der Bildbearbeitung für das Ausführen häufiger Aufgaben der Bildverarbeitung veranschaulicht wird.|

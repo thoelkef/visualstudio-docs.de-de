@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd43d79950a39702108383f7408e1a37960e7c06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2219cc163332114632552fa7c3cb26fb75734af
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573176"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079026"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|description|  
+|Titel|Beschreibung |  
 |-----------|-----------------|  
 |[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)|Hierin werden Eigenschaften und Eigenschaftenauflistungen eingeführt. Eigenschaften sind Schlüssel/Wert-Paare, die zur Konfiguration von Builds verwendet werden können.|  
 |[MSBuild-Elemente](../msbuild/msbuild-items.md)|Führt Elemente und Elementauflistungen ein. Elemente sind Eingaben in das Buildsystem und stellen in der Regel Dateien dar.|  

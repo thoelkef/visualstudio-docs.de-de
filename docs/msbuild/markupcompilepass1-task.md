@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0abf8f5b2c77281325853f744f54513fb897ecc6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d2a10d3dba6494a7afaa6ff626db15ebcf164ed2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574947"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079591"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
 
@@ -32,13 +32,13 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-|Parameter|description|
+|Parameter|Beschreibung |
 |---------------|-----------------|
 |`AllGeneratedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält eine vollständige Liste von Dateien, die vom <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task generiert werden.|
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob der Task in einer separaten <xref:System.AppDomain> ausgeführt werden soll. Wenn dieser Parameter **FALSE** zurückgibt, wird der Task in der gleichen <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **TRUE** zurückgibt, wird der Task in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt.|
 |`ApplicationMarkup`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt den Namen der Anwendungsdefinitions-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei an.|
 |`AssembliesGeneratedDuringBuild`|Optionaler **String[]**-Parameter.<br /><br /> Gibt Verweise auf Assemblys an, die sich während des Buildprozesses ändern. Eine Visual Studio-Projektmappe kann möglicherweise ein Projekt enthalten, das auf die kompilierte Ausgabe eines anderen Projekts verweist. In diesem Fall kann die kompilierte Ausgabe des zweiten Projekts dem **AssembliesGeneratedDuringBuild**-Parameter hinzugefügt werden.<br /><br /> Hinweis: Der **AssembliesGeneratedDuringBuild**-Parameter muss Verweise auf den vollständigen Satz von Assemblys enthalten, die von einer Projektmappe generiert werden.|
-|`AssemblyName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird. Wenn ein Projekt z.B. eine ausführbare [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-Datei mit dem Namen **WinExeAssembly.exe** generiert, hat der **AssemblyName**-Parameter den Wert **WinExeAssembly**.|
+|`AssemblyName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird. Wenn ein Projekt z.B. eine ausführbare [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-Datei mit dem Namen *WinExeAssembly.exe* generiert, hat der **AssemblyName**-Parameter den Wert **WinExeAssembly**.|
 |`AssemblyPublicKeyToken`|Optionaler **String**-Parameter.<br /><br /> Gibt das öffentliche Schlüsseltoken für die Assembly an.|
 |`AssemblyVersion`|Optionaler **String**-Parameter.<br /><br /> Gibt die Versionsnummer der Assembly an.|
 |`ContentFiles`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt die Liste loser Inhaltsdateien an.|
@@ -50,7 +50,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 |`HostInBrowser`|Optionaler **String**-Parameter.<br /><br /> Gibt an, ob die generierte Assembly eine [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] ist. Die gültigen Optionen sind **true** und **false**. Wenn **true**, wird Code generiert, um das Hosten in einem Browser zu unterstützen.|
 |`KnownReferencePaths`|Optionaler **String[]**-Parameter.<br /><br /> Gibt Verweise auf Assemblys an, die sich während des Buildprozesses nicht ändern. Enthält Assemblys, die in einem [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)] gespeichert sind, in einem [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)]-Installationsverzeichnis usw.|
 |`Language`|Erforderlicher **String**-Parameter.<br /><br /> Gibt die verwaltete Sprache an, die der Compiler unterstützt. Die gültigen Optionen sind **C#**, **VB**, **JScript** und **C++**.|
-|`LanguageSourceExtension`|Optionaler **String**-Parameter.<br /><br /> Gibt die Erweiterung an, die der Erweiterung der generierten Datei mit verwaltetem Code angefügt wird:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Wenn für den **LanguageSourceExtension**-Parameter kein bestimmter Wert festgelegt ist, wird die standardmäßige Quelldateinamen-Erweiterung für eine Sprache verwendet: **.vb** für [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)], **.csharp** für [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)].|
+|`LanguageSourceExtension`|Optionaler **String**-Parameter.<br /><br /> Gibt die Erweiterung an, die der Erweiterung der generierten Datei mit verwaltetem Code angefügt wird:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Wenn für den **LanguageSourceExtension**-Parameter kein bestimmter Wert festgelegt ist, wird die standardmäßige Quelldateinamen-Erweiterung für eine Sprache verwendet: *.vb* für [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)], *.csharp* für [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)].|
 |`LocalizationDirectivesToLocFile`|Optionaler **String**-Parameter.<br /><br /> Gibt an, wie Lokalisierungsinformationen für jede Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei generiert werden. Die gültigen Optionen sind **None**, **CommentsOnly** und **All**.|
 |`OutputPath`|Erforderlicher **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, in dem die generierten Dateien mit verwaltetem Code und [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformatdateien generiert werden.|
 |`OutputType`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Typ der Assembly an, die von einem Projekt generiert wird. Die gültigen Optionen sind **winexe**, **wxe**, **library** und **netmodule**.|
@@ -100,7 +100,7 @@ Wenn eine beliebige [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xa
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie drei `Page`[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien ins Binärformat konvertiert werden. `Page1` enthält einen Verweis auf einen Typ, `Class1`, der sich im Stammnamespace des Projekts befindet und daher nicht in diesem Markupkompilierungsschritt in Binärformatdateien konvertiert wird. Stattdessen wird [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) ausgeführt und anschließend [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
+Das folgende Beispiel zeigt, wie drei [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-*Seite*-Dateien ins Binärformat konvertiert werden. *Seite1* enthält einen Verweis auf einen Typ (`Class1`), der sich im Stammnamespace des Projekts befindet und daher nicht in diesem Markupkompilierungsschritt in Binärformatdateien konvertiert wird. Stattdessen wird [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) ausgeführt und anschließend [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -124,8 +124,8 @@ Das folgende Beispiel zeigt, wie drei `Page`[!INCLUDE[TLA2#tla_xaml](../msbuild/
 ## <a name="see-also"></a>Siehe auch
 
 [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)  
-[Aufgabenreferenz](../msbuild/wpf-msbuild-task-reference.md)  
+[Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild-Referenz](../msbuild/msbuild-reference.md)  
-[Aufgabenreferenz](../msbuild/msbuild-task-reference.md)  
+[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
 [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
 [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

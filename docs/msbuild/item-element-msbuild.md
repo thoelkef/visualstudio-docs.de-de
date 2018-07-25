@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576949"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081019"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup` Elements angegeben werden.  
@@ -34,7 +34,7 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  
@@ -70,7 +70,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Include`|Optionales Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der in die Liste der Elemente eingeschlossen werden soll.|  
 |`Exclude`|Optionales Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der aus der Liste der Elemente ausgeschlossen werden soll.|  
@@ -83,22 +83,22 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Ein benutzerdefinierter Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Es kann keine oder mehrere `ItemMetadata`-Elemente in einem Element geben.|  
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping-Element für Elemente.|  
 
 ## <a name="remarks"></a>Hinweise  
  `Item`-Elemente definieren Eingaben ins Buildsystem und sind basierend auf ihren benutzerdefinierten Auflistungsnamen in Elementauflistungen gruppiert. Diese Elementtypen können als Parameter für [Aufgaben](../msbuild/msbuild-tasks.md) verwendet werden, die mithilfe der einzelnen Elemente in den Auflistungen die Schritte des Buildprozesses ausführen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
 
- Mithilfe der Notation `@(`*myType*`)` kann eine Auflistung von Elementen vom Typ *myType* in einer durch Semikolons getrennten Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um jedes Element durch ein anderes Zeichen als ein Semikolon voneinander zu trennen, verwenden Sie die Syntax `@(`*myType*`, '`*Trennzeichen*`')`.  
+ Mithilfe der Notation @(\<myType>) kann eine Auflistung von Elementen vom Typ \<myType> in eine durch Semikolons getrennte Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um jedes Element durch ein anderes Zeichen als ein Semikolon voneinander zu trennen, verwenden Sie die Syntax @(<myType>, '<separator>').  
 
- Das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul kann Platzhalter wie `*` und `?` sowie rekursive Platzhalter wie `/**/*.cs` auswerten. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
+ Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine kann Platzhalter wie `*` und `?` sowie rekursive Platzhalter wie */\*\*/\*.cs* auswerten. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
 
 ## <a name="examples"></a>Beispiele  
  Im folgenden Codebeispiel wird veranschaulicht, wie zwei Elemente vom Typ `CSFile` deklariert werden. Das zweite deklarierte Element enthält Metadaten, für die `MyMetadata` auf `HelloWorld` festgelegt ist.  
@@ -111,7 +111,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
     </CSFile>  
 </ItemGroup>  
 ```  
-Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die Metadaten in einer Datei namens somefile.cs zu ändern, die durch ein Glob-Muster enthalten war. (Nur für .NET Core-Projekte in Visual Studio 2017 oder höher verfügbar.)
+Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die Metadaten in einer Datei namens *somefile.cs* zu ändern, die durch ein Globmuster enthalten war. (Nur für .NET Core-Projekte in Visual Studio 2017 oder höher verfügbar.)
 
 ```xml  
 <ItemGroup>
@@ -125,4 +125,4 @@ Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die
 ## <a name="see-also"></a>Siehe auch  
  [Elemente](../msbuild/msbuild-items.md)   
  [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)   
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
+ [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

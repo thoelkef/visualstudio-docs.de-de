@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe1ef9e06c7e14ecb28fff9ceb48b2243a129e68
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569240"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079239"
 ---
 # <a name="importgroup-element"></a>ImportGroup-Element
 Enthält eine Sammlung von `Import`-Elementen, die unter einer optionalen Bedingung gruppiert sind. Weitere Informationen finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -33,7 +33,7 @@ Enthält eine Sammlung von `Import`-Elementen, die unter einer optionalen Beding
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <ImportGroup Condition="'String A' == 'String B'">  
     <Import ... />  
     <Import ... />  
@@ -45,23 +45,21 @@ Enthält eine Sammlung von `Import`-Elementen, die unter einer optionalen Beding
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Importieren](../msbuild/import-element-msbuild.md)|Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.|  
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
-
-## <a name="remarks"></a>Hinweise  
 
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird das `ImportGroup`-Element dargestellt.  

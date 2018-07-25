@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570677"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079698"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Gewusst wie: Auswählen von Dateien für den Buildvorgang
+# <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.  
   
-## <a name="specifying-inputs"></a>Angeben von Eingaben  
+## <a name="specify-inputs"></a>Angeben von Eingaben  
  Elemente stellen die Eingaben für einen Build dar. Weitere Informationen zu Elementen finden Sie unter [Items (Elemente)](../msbuild/msbuild-items.md).  
   
  Damit Dateien für einen Build eingeschlossen werden können, müssen sie in einer Elementliste in der Projektdatei [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aufgeführt sein. Es können mehrere Dateien einer Elementliste hinzugefügt werden, indem die Dateien entweder einzeln oder mithilfe von Platzhaltern eingefügt werden, mit denen viele Dateien gleichzeitig eingefügt werden können.  
@@ -35,7 +35,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
      `<CSFile Include="form1.cs"/>`  
   
-     - ODER  
+     oder 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -48,44 +48,44 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - ODER  
+     oder 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>Angeben von Eingaben mit Platzhaltern  
+## <a name="specify-inputs-with-wildcards"></a>Angeben von Eingaben mit Platzhaltern  
  Sie können auch Platzhalter verwenden, um rekursiv alle Dateien oder nur bestimmte Dateien aus Unterverzeichnissen als Eingaben für einen Build einzufügen. Weitere Informationen zu Elementen finden Sie unter [Items (Elemente)](../msbuild/msbuild-items.md).  
   
- Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den folgenden Verzeichnissen und Unterverzeichnissen enthält, wobei sich die Projektdatei im Verzeichnis „Project“ befindet.  
+ Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den folgenden Verzeichnissen und Unterverzeichnissen enthält, wobei sich die Projektdatei im Verzeichnis *Project* befindet:  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle JPG-Dateien im Verzeichnis „Images“ bzw. in Unterverzeichnissen ein  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG*-Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein  
   
 -   Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle JPG-Dateien ein, die mit „img“ beginnen  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG*-Dateien ein, die mit *img* beginnen  
   
 -   Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit „jpgs“ enden  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit *jpgs* enden  
   
 -   Ändern Sie eines der folgenden `Include`-Attribute:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - ODER  
+     oder
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>Übergeben von Elementen an eine Aufgabe  
+## <a name="pass-items-to-a-task"></a>Übergeben von Elementen an eine Aufgabe  
  Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, um eine gesamte Elementliste als Eingabe für einen Build anzugeben. Sie können diese Notation verwenden, egal ob Sie alle Dateien einzeln auflisten oder Platzhalter verwenden.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe  
@@ -94,7 +94,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - ODER  
+     oder 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
@@ -138,7 +138,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 ```  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel verwendet einen Platzhalter, um alle CS-Dateien einzuschließen.  
+ Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einzuschließen.  
   
 ```xml  
 <Project DefaultTargets="Compile"  
@@ -172,5 +172,5 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [How to: Exclude Files from the Build (Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang)](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+ [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Elemente](../msbuild/msbuild-items.md)
