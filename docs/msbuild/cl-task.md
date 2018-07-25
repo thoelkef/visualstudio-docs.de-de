@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396253865e01ddfe5566e6cd97424af644bd9246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578054"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152616"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
-Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
+Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
+ Im Folgenden werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -48,7 +48,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Optionaler String-Parameter.  
   
-     Eine Liste von Befehlszeilenoptionen. Beispielsweise „/*option1* /*option2* /*option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
+     Eine Liste von Befehlszeilenoptionen. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
   
      Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
   
@@ -68,7 +68,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Erstellt eine Listendatei, die Assemblycode enthält.  
   
-     Weitere Informationen finden Sie unter der **/Fa**-Option in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter der Option **/Fa** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **AssemblerOutput**  
   
@@ -88,7 +88,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
     -   **All** - **/FAcs**  
   
-     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **BasicRuntimeChecks**  
   
@@ -114,7 +114,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird eine Browseinformationsdatei erstellt.  
   
-     Weitere Informationen finden Sie unter der **/FR**-Option in [/FR, /Fr (SBR-Datei erstellen)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Weitere Informationen finden Sie unter der Option **/FR** in [/FR, /Fr (SBR-Datei erstellen)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BrowseInformationFile**  
   
@@ -196,13 +196,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird der Compiler angewiesen, ein Abbild für *Hotpatching* vorzubereiten. Durch diesen Parameter wird sichergestellt, dass die erste Anweisung jeder Funktion mindestens über die für das Hotpatching erforderliche Größe von zwei Bytes verfügt.  
   
-     Weitere Informationen finden Sie unter [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](/cpp/build/reference/hotpatch-create-hotpatchable-image).  
+     Weitere Informationen finden Sie unter [/hotpatch (Hotpatchfähiges Image erstellen)](/cpp/build/reference/hotpatch-create-hotpatchable-image).  
   
 -   **DebugInformationFormat**  
   
      Optionaler String-Parameter.  
   
-     Wählt den Typ der Debuginformationen aus, der für Ihr Programm erstellt wird, und ob diese Informationen in Objektdateien (OBJ) oder in einer Programmdatenbank (PDB) gespeichert werden sollen.  
+     Wählt den Typ der Debuginformationen aus, der für Ihr Programm erstellt wird, und ob diese Informationen in Objektdateien (*OBJ*) oder in einer Programmdatenbank (PDB) gespeichert werden sollen.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
@@ -220,7 +220,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei **TRUE** wird der Compiler angewiesen, einen Fehler für Sprachkonstrukte auszugeben, die weder mit ANSI C noch mit ANSI C++ kompatibel sind.  
   
-     Weitere Informationen finden Sie unter der **/Za**-Option in [/Za, /Ze (Spracherweiterungen deaktivieren)](/cpp/build/reference/za-ze-disable-language-extensions).  
+     Weitere Informationen finden Sie unter der Option **/Za** in [/Za, /Ze (Spracherweiterungen deaktivieren)](/cpp/build/reference/za-ze-disable-language-extensions).  
   
 -   **DisableSpecificWarnings**  
   
@@ -228,7 +228,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Deaktiviert die Warnzahlen, die in einer durch Semikolons getrennten Liste angegeben werden.  
   
-     Weitere Informationen finden Sie unter der `/wd`-Option in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option `/wd` in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **EnableEnhancedInstructionSet**  
   
@@ -276,7 +276,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
     -   **Send** - **/errorReport:send**  
   
-     Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
+     Weitere Informationen finden Sie unter [/errorReport (Interne Compilerfehler melden)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
 -   **ExceptionHandling**  
   
@@ -318,7 +318,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
     -   **Speed** - **/Ot**  
   
-     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
+     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, schnellen Code bevorzugen)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
   
 -   **FloatingPointExceptions**  
   
@@ -326,7 +326,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird das verlässliche Modell für Gleitkommaausnahmen aktiviert. Ausnahmen werden sofort ausgelöst, wenn sie auftreten.  
   
-     Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Festlegen des Gleitkommaverhaltens)](/cpp/build/reference/fp-specify-floating-point-behavior).  
+     Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Gleitkommaverhalten festlegen)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **FloatingPointModel**  
   
@@ -342,7 +342,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
     -   **Fast** - **/fp:fast**  
   
-     Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](/cpp/build/reference/fp-specify-floating-point-behavior).  
+     Weitere Informationen finden Sie unter [/fp (Gleitkommaverhalten festlegen)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **ForceConformanceInForLoopScope**  
   
@@ -380,9 +380,9 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Optionaler `Boolean` -Parameter.  
   
-     Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine XDC-Datei erstellt.  
+     Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine *XDC*-Datei erstellt.  
   
-     Weitere Informationen finden Sie unter [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/doc (Dokumentationskommentare verarbeiten) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -452,7 +452,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Optionaler `Boolean` -Parameter.  
   
-     Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (OBJ) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der OBJ-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.  
+     Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (*OBJ*) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der *OBJ*-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.  
   
      Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](/cpp/build/reference/zl-omit-default-library-name).  
   
@@ -470,7 +470,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` verarbeitet der Compiler OpenMP-Klauseln und -Direktiven.  
   
-     Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
+     Weitere Informationen finden Sie unter [/openmp (OpenMP 2.0-Unterstützung aktivieren)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
   
 -   **Optimization**  
   
@@ -494,7 +494,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Optionaler **String**-Parameter.  
   
-     Erstellt oder verwendet eine vorkompilierte Headerdatei (PCH) während des Builds.  
+     Erstellt oder verwendet eine vorkompilierte Headerdatei (*PCH*) während des Builds.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
@@ -504,7 +504,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
     -   **Use** - **/Yu**  
   
-     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/Yc (Vorkompilierte Headerdatei erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
   
 -   **PrecompiledHeaderFile**  
   
@@ -512,7 +512,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Gibt den Namen einer vorkompilierten Headerdatei an, die erstellt oder verwendet werden soll.  
   
-     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file).  
+     Weitere Informationen finden Sie unter [/Yc (Vorkompilierte Headerdatei erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file).  
   
 -   **PrecompiledHeaderOutputFile**  
   
@@ -550,7 +550,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.  
   
-     Weitere Informationen finden Sie unter [/Fi (Ausgabedateiname vorverarbeiten)](/cpp/build/reference/fi-preprocess-output-file-name).  
+     Weitere Informationen finden Sie unter [/Fi (Ausgabedateinamen vorverarbeiten)](/cpp/build/reference/fi-preprocess-output-file-name).  
   
 -   **PreprocessSuppressLineNumbers**  
   
@@ -606,7 +606,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird Code hinzugefügt, um C++-Objekttypen während der Laufzeit zu überprüfen (Laufzeit-Typeninformationen).  
   
-     Weitere Informationen finden Sie unter [/GR (Laufzeit-Typeninformation aktivieren)](/cpp/build/reference/gr-enable-run-time-type-information).  
+     Weitere Informationen finden Sie unter [/GR (Laufzeittypinformation aktivieren)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
 -   **ShowIncludes**  
   
@@ -682,7 +682,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Behandelt die angegebene Liste von Compilerwarnungen als Fehler.  
   
-     Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWarningAsError**  
   
@@ -690,7 +690,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` werden alle Compilerwarnungen als Fehler behandelt.  
   
-     Weitere Informationen finden Sie unter der Option **/WX** in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/WX** in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWChar_tAsBuiltInType**  
   
@@ -698,7 +698,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird der `wchar_t`-Typ als nativer Typ behandelt.  
   
-     Weitere Informationen finden Sie unter[/Zc:wchar_t (wchar_t ist der systemeigene Typ)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).  
+     Weitere Informationen finden Sie unter[/Zc:wchar_t (wchar_t ist der native Typ)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).  
   
 -   **UndefineAllPreprocessorDefinitions**  
   
@@ -730,7 +730,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Bei `true` wird die Ausgabedatei im UTF-8-Format erstellt.  
   
-     Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **WarningLevel**  
   
@@ -768,7 +768,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Gibt den Namen der generierten XML-Dokumentationsdateien an. Bei diesem Parameter kann es sich um einen Datei- oder Verzeichnisnamen handeln.  
   
-     Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Dokumentationskommentare verarbeiten) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
   
 -   **MinimalRebuildFromTracking**  
   
@@ -782,7 +782,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Gibt ein Array von Elementen an, die die *Read-Datei-Nachverfolgungsprotokolle* darstellen.  
   
-     Ein Read-Datei Nachverfolgungsprotokoll (TLOG) enthält die Namen der Eingabedateien, die von einer Aufgabe gelesen und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.  
+     Ein Read-Datei-Nachverfolgungsprotokoll (*TLOG*) enthält die Namen der Eingabedateien, die von einer Aufgabe gelesen und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.  
   
 -   **TLogWriteFiles**  
   
@@ -790,7 +790,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Gibt ein Array von Elementen an, die die *Write-Datei-Nachverfolgungsprotokolle* darstellen.  
   
-     Ein Write-Datei-Nachverfolgungsprotokoll (TLOG) enthält die Namen der Ausgabedateien, die von einer Aufgabe geschrieben und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.  
+     Ein Write-Datei-Nachverfolgungsprotokoll (*TLOG*) enthält die Namen der Ausgabedateien, die von einer Aufgabe geschrieben und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.  
   
 -   **TrackFileAccess**  
   
@@ -800,7 +800,5 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Weitere Informationen finden Sie unter den Parametern **TLogReadFiles** und **TLogWriteFiles** in dieser Tabelle.  
   
-## <a name="remarks"></a>Hinweise  
-  
 ## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
