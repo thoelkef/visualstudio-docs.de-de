@@ -1,5 +1,5 @@
 ---
-title: Ändern den Text eines Menübefehls | Microsoft Docs
+title: Ändern des Texts eines Menübefehls | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,20 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e360e08cbdfee23221b9384a5574530f92e23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df943221fc2f154e8f18007bd5f7ff5454434d84
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39234862"
 ---
-# <a name="changing-the-text-of-a-menu-command"></a>Ändern den Text eines Menübefehls
-Die folgenden Schritte zeigen, so ändern Sie die Beschriftung eines Menübefehls mithilfe der <xref:System.ComponentModel.Design.IMenuCommandService> Dienst.  
+# <a name="change-the-text-of-a-menu-command"></a>Ändern Sie den Text eines Menübefehls
+Die folgenden Schritte zeigen, wie Sie mithilfe der Beschriftung eines Menübefehls Ändern der <xref:System.ComponentModel.Design.IMenuCommandService> Service.  
   
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Ändern einen Befehl menübezeichnung mit der IMenuCommandService  
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Ändern im Menü Befehl Bezeichnung mit dem IMenuCommandService  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `MenuText` eines Menübefehls mit dem Namen **ChangeMenuText**. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `MenuText` mit einem Menübefehl mit dem Namen **ChangeMenuText**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Fügen Sie in der Datei .vstc die `TextChanges` flag auf den Menübefehl, wie im folgenden Beispiel gezeigt.  
+2.  In der *VSCT* hinzufügen. die `TextChanges` flag auf den Menübefehl, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -41,7 +42,7 @@ Die folgenden Schritte zeigen, so ändern Sie die Beschriftung eines Menübefehl
     </Button>  
     ```  
   
-3.  Erstellen Sie einen Ereignishandler, der aufgerufen wird, bevor der Menübefehl angezeigt wird, in der Datei ChangeMenuText.cs.  
+3.  In der *ChangeMenuText.cs* Datei, erstellen Sie einen Ereignishandler, die aufgerufen wird, bevor der Menübefehl im angezeigt wird.  
   
     ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
@@ -54,11 +55,11 @@ Die folgenden Schritte zeigen, so ändern Sie die Beschriftung eines Menübefehl
     }  
     ```  
   
-     Sie können auch den Status des Menübefehls in dieser Methode aktualisieren, durch Ändern der <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, und <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> Eigenschaften auf der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt.  
+     Sie können auch den Status des Menübefehls in dieser Methode aktualisieren, indem Sie ändern die <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, und <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> Eigenschaften für die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt.  
   
-4.  Ersetzen Sie den ursprünglichen Befehl Initialisierung und Platzierung der Code im Konstruktor ChangeMenuText mit Code, der erstellt eine <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (anstelle eines `MenuCommand`), die den Menübefehl darstellt, fügt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Ereignishandler, und erhalten Sie im Menü Befehl, der menüdienst-Befehl.  
+4.  Ersetzen Sie den ursprünglichen Befehl Initialisierungs- und Platzierung der Code im Konstruktor ChangeMenuText mit Code, der erstellt eine <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (anstelle eines `MenuCommand`), die den Menübefehl darstellt, fügt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Ereignishandler, und klicken Sie im Menü Befehl, der dem Menübefehlsdienst.  
   
-     Hier ist, wie es aussehen sollte:  
+     So sieht es folgendermaßen aussehen sollte:  
   
     ```csharp  
     private ChangeMenuText(Package package)  
@@ -85,6 +86,6 @@ Die folgenden Schritte zeigen, so ändern Sie die Beschriftung eines Menübefehl
   
 5.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.  
   
-6.  Auf der **Tools** Menü sehen Sie einen Befehl mit dem Namen **aufrufen ChangeMenuText**.  
+6.  Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen ChangeMenuText**.  
   
-7.  Klicken Sie auf den Befehl. Daraufhin sollte die Meldung an, das angibt, dass es sich bei MenuItemCallback aufgerufen wurde. Wenn Sie das Meldungsfeld schließen, sollte angezeigt werden, dass der Name des Befehls auf das Menü "Extras" jetzt **neuen Text**.
+7.  Klicken Sie auf den Befehl. Daraufhin sollte das Meldungsfeld, die Ankündigung **MenuItemCallback** aufgerufen wurde. Wenn Sie das Meldungsfeld geschlossen haben, sollte angezeigt, dass der Name des Befehls im Menü Extras jetzt **neuen Text**.

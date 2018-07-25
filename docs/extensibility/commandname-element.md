@@ -1,5 +1,5 @@
 ---
-title: CommandName Element | Microsoft Docs
+title: CommandName-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a18d5f15ca4c8c258e57a1018b3841b3a47746f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca5f38febab608aedf794fb02dbfbc65debbfc5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097613"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230918"
 ---
-# <a name="commandname-element"></a>CommandName-Element
-Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Optionen** (Dialogfeld), und klicken Sie in der **Befehle** Liste der **anpassen** Dialogfeld Box.  
+# <a name="commandname-element"></a>CommandName-element
+Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Optionen** im Dialogfeld und klicken Sie in der **Befehle** Liste der **anpassen** Dialogfeld Box.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,7 +43,7 @@ Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "T
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Strings-Element](../extensibility/strings-element.md)|Text-Elemente, wie z. B. gruppiert `ButtonText` und `CommandName`.|  
+|[Strings-element](../extensibility/strings-element.md)|Text-Elemente, wie z. B. gruppiert `ButtonText` und `CommandName`.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

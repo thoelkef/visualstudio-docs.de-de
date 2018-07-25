@@ -1,5 +1,5 @@
 ---
-title: Tastenkürzel Element | Microsoft Docs
+title: Combos-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 103ce59fe8303f7d044eb7b28ea135f0f449956a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097763"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231202"
 ---
-# <a name="combos-element"></a>Tastenkürzel-Element
-Gruppen [Kombinationsfeld Element](../extensibility/combo-element.md) Elemente.  
+# <a name="combos-element"></a>Combos-element
+Gruppen [Combo-Element](../extensibility/combo-element.md) Elemente.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,14 +46,14 @@ Gruppen [Kombinationsfeld Element](../extensibility/combo-element.md) Elemente.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Combos-Element](../extensibility/combos-element.md)|Gruppiert Kombinationsfeld Elemente.|  
-|[Combo-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
+|[Combos-element](../extensibility/combos-element.md)|Gruppen-Kombinationsfeld Elemente.|  
+|[Combo-element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -80,5 +80,5 @@ Gruppen [Kombinationsfeld Element](../extensibility/combo-element.md) Elemente.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
