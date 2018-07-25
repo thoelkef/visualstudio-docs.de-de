@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4c50a7b6e3fe14f27bfd78e6814f9e120864d60
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752161"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232288"
 ---
-# <a name="tutorial-step-4-use-the-full-flask-web-project-template"></a>Tutorial, Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
 **Vorheriger Schritt: [Serve static files, add pages, and use template inheritance (Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung)](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -166,63 +166,63 @@ Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket
 
 Die `__init__.py`-Datei der App enthält folgende Zeile:
 
-    ```python
-    app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
-    ```
+```python
+app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+```
 Im Ordner `templates` finden Sie `.jade`-Dateien anstelle von `.html`-Vorlagen, und die Ansichten in `views.py` verweisen auf diese Dateien, wenn sie `flask.render_template` aufrufen. Davon abgesehen ist der Code der Ansichten identisch.
 
 Wenn Sie eine der `.jade`-Dateien öffnen, sehen Sie den kompakteren Ausdruck einer Vorlage. Hier sehen Sie beispielsweise die Inhalte von `templates/layout.jade`, wie sie von der Vorlage „Flask/Jade-Webprojekt“ erstellt wurden:
 
-    ```jade
-    doctype html
-    html
-      head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title #{title} - My Flask/Jade Application
-        link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='/static/content/site.css')
-        script(src='/static/scripts/modernizr-2.6.2.js')
-      body
-        .navbar.navbar-inverse.navbar-fixed-top
-          .container
-            .navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='/') Application name
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li
-                  a(href='/') Home
-                li
-                  a(href='/about') About
-                li
-                  a(href='/contact') Contact
-        .container.body-content
-          block content
-          hr
-          footer
-            p &copy; #{year} - My Flask/Jade Application
+```jade
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - My Flask/Jade Application
+    link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/static/content/site.css')
+    script(src='/static/scripts/modernizr-2.6.2.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Application name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+    .container.body-content
+      block content
+      hr
+      footer
+        p &copy; #{year} - My Flask/Jade Application
 
-        script(src='/static/scripts/jquery-1.10.2.js')
-        script(src='/static/scripts/bootstrap.js')
-        script(src='/static/scripts/respond.js')
+    script(src='/static/scripts/jquery-1.10.2.js')
+    script(src='/static/scripts/bootstrap.js')
+    script(src='/static/scripts/respond.js')
 
-        block scripts
-    ```
+    block scripts
+```
 
 Hier sehen Sie die Inhalte von `templates/about.jade`, bei denen `#{ <name>}` für Platzhalter verwendet wird:
 
-    ```jade
-    extends layout
+```jade
+extends layout
 
-    block content
-      h2 #{title}.
-      h3 #{message}
-      p Use this area to provide additional information.
-    ```
+block content
+  h2 #{title}.
+  h3 #{message}
+  p Use this area to provide additional information.
+```
 
 Probieren Sie die Syntax von Jinja und Jade aus, um festzustellen, welche am besten für Sie geeignet ist.
 
@@ -231,8 +231,8 @@ Probieren Sie die Syntax von Jinja und Jade aus, um festzustellen, welche am bes
 > [!div class="nextstepaction"]
 > [Die Vorlage „Fragt ein Flask-Webprojekt ab“](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Writing your first Django app, part 4 - forms and generic views (Erstellen Ihrer ersten Flask-App – Teil 4: Formulare und allgemeine Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade auf GitHub (Dokumentation)](https://github.com/liuliqiang/pyjade) (github.com)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learn-flask](https://github.com/Microsoft/python-sample-vs-learn-flask)
+- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

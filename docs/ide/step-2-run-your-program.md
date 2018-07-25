@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749283"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179059"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.
@@ -34,7 +34,7 @@ Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausfü
     -   Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
 
          ![Schaltfläche „Debugging starten“ in der Symbolleiste](../ide/media/express_icondebug.png)
- Schaltfläche **Debugging starten** in der Symbolleiste
+ Schaltfläche **Debugging starten** auf der Symbolleiste
 
 2.  Visual Studio führt das Programm aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Diagramm wird das Programm gezeigt, das Sie soeben erstellt haben. Das Programm wird ausgeführt, und Sie werden es bald ergänzen.
 
@@ -55,7 +55,7 @@ Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausfü
     -   Schließen Sie das **Form1**-Fenster, indem Sie auf die Schaltfläche mit dem **X** in der oberen rechten Ecke des Fensters klicken.
 
     > [!NOTE]
-    >  Wenn Sie das Programm von der IDE heraus ausführen, wird dies als „Debuggen“ bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Debugger – Grundlagen](../debugger/debugger-basics.md).
+    >  Wenn Sie das Programm von der IDE heraus ausführen, wird dies als „Debuggen“ bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 

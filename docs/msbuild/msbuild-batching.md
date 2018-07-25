@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b769cc89095aca5b22aed46375f56c2ab4c987
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c0ecf9f52aef56e4652532e0bec836021a906038
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570628"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176316"
 ---
 # <a name="msbuild-batching"></a>MSBuild-Batchverarbeitung
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann Elementlisten basierend auf den Elementmetadaten in verschiedene Kategorien oder Batches unterteilen und ein Ziel oder eine Aufgabe einmal mit jedem Batch ausführen.  
@@ -26,10 +26,10 @@ ms.locfileid: "31570628"
 ## <a name="task-batching"></a>Aufgabenbatchverarbeitung  
  Durch die Aufgabenbatchverarbeitung können Sie Ihre Projektdateien vereinfachen, indem Sie Elementlisten in verschiedene Batches unterteilen und jeden dieser Batches separat an eine Aufgabe übergeben können. Dies bedeutet, dass die Aufgabe und ihre Attribute für eine Projektdatei nur einmal deklariert werden müssen, obwohl sie mehrmals ausgeführt werden können.  
   
- Sie geben an, dass [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] die Batchverarbeitung mit einer Aufgabe ausführen soll, indem Sie die Notation %(*ItemMetaDataName*) in einem der Attribute der Aufgabe verwenden. Im folgenden Beispiel wird die `Example`-Elementliste basierend auf dem `Color`-Elementmetadatenwert in Batches aufgeteilt, und alle Batches werden separat an die `MyTask`-Aufgabe übergeben.  
+ Sie geben an, dass [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] die Batchverarbeitung mit einer Aufgabe ausführen soll, indem Sie die Notation %(\<ItemMetaDataName>) in einem der Attribute der Aufgabe verwenden. Im folgenden Beispiel wird die `Example`-Elementliste basierend auf dem `Color`-Elementmetadatenwert in Batches aufgeteilt, und alle Batches werden separat an die `MyTask`-Aufgabe übergeben.  
   
 > [!NOTE]
->  Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(*ItemCollection.ItemMetaDataName*) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
+>  Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(\<ItemCollection.ItemMetaDataName>) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
   
 ```xml  
 <Project  
@@ -53,12 +53,12 @@ ms.locfileid: "31570628"
 </Project>  
 ```  
   
- Weitere Beispiele für die Batchverarbeitung finden Sie unter [Item Metadata in Task Batching (Elementmetadaten bei der Aufgabenbatchverarbeitung)](../msbuild/item-metadata-in-task-batching.md).  
+ Weitere Beispiele für die Batchverarbeitung finden Sie unter [Elementmetadaten bei der Aufgabenbatchverarbeitung](../msbuild/item-metadata-in-task-batching.md).  
   
 ## <a name="target-batching"></a>Zielbatchverarbeitung  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] überprüft, ob die Eingaben und Ausgaben eines Ziels aktuell sind, bevor das Ziel ausgeführt wird. Wenn die Eingaben und Ausgaben aktuell sind, wird das Ziel übersprungen. Wenn eine Aufgabe innerhalb eines Ziels die Batchverarbeitung verwendet, muss [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bestimmen, ob die Eingaben und Ausgaben für jeden Batch der Elemente aktuell sind. Andernfalls wird das Ziel jedes Mal ausgeführt, wenn es erreicht wird.  
   
- Im folgenden Beispiel wird ein `Target`-Element dargestellt, das ein `Outputs`-Attribut mit der Notation %(*ItemMetaDataName*) enthält. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterteilt die `Example`-Elementliste basierend auf den `Color`-Elementmetadaten in Batches und analysiert die Zeitstempel der Ausgabedateien jedes Batchs. Wenn die Ausgaben eines Batchs nicht aktuell sind, wird das Ziel ausgeführt. Andernfalls wird das Ziel übersprungen.  
+ Im folgenden Beispiel wird ein `Target`-Element dargestellt, das ein `Outputs`-Attribut mit der Notation %(\<ItemMetaDataName>) enthält. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterteilt die `Example`-Elementliste basierend auf den `Color`-Elementmetadaten in Batches und analysiert die Zeitstempel der Ausgabedateien jedes Batchs. Wenn die Ausgaben eines Batchs nicht aktuell sind, wird das Ziel ausgeführt. Andernfalls wird das Ziel übersprungen.  
   
 ```xml  
 <Project  
@@ -84,7 +84,7 @@ ms.locfileid: "31570628"
 </Project>  
 ```  
   
- Ein weiteres Beispiel für die Zielbatchverarbeitung finden Sie unter [Item Metadata in Target Batching (Elementmetadaten bei der Zielbatchverarbeitung)](../msbuild/item-metadata-in-target-batching.md).  
+ Ein weiteres Beispiel für die Zielbatchverarbeitung finden Sie unter [Elementmetadaten bei der Zielbatchverarbeitung](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Eigenschaftenfunktionen mit Metadaten  
  Die Batchverarbeitung kann von den Eigenschaftenfunktionen kontrolliert werden, die Metadaten enthalten. Ein auf ein Objekt angewendeter  
@@ -103,6 +103,6 @@ ms.locfileid: "31570628"
   
 ## <a name="see-also"></a>Siehe auch  
  [ItemMetadata-Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Erweiterte MSBuild-Grundlagen)
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)
