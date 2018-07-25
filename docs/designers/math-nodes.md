@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919728"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978202"
 ---
 # <a name="math-nodes"></a>Berechnungsknoten
 
 Im Shader-Designer führen Berechnungsknoten algebraische, logische, trigonometrische und andere mathematische Vorgänge aus.
 
 > [!NOTE]
-> Wenn Sie mit Berechnungsknoten im Shader-Designer arbeiten, macht sich die Typerweiterung besonders bemerkbar. Um zu erfahren, wie sich die Typerweiterung auf Eingabeparameter auswirkt, gehen Sie in den Abschnitt „Erweiterung von Eingaben“ auf der Seite [Shader-Designer-Knoten](../designers/shader-designer-nodes.md).
+> Wenn Sie mit Berechnungsknoten im Shader-Designer arbeiten, macht sich die Typerweiterung besonders bemerkbar. Um zu erfahren, wie sich die Typerweiterung auf Eingabeparameter auswirkt, gehen Sie in den Abschnitt „Promotion of inputs“ (Heraufstufung von Eingaben) auf der Seite [Shader-Designer-Knoten](../designers/shader-designer-nodes.md).
 
 ## <a name="math-node-reference"></a>Berechnungsknotenverweis
 

@@ -15,24 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d771117829ab8ef37ea495b4862ffa492e686770
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5fefc8098d94967b06bbe60f398a8a734d55202
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567615"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946601"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration-Aufgabe
 Diese Aufgabe akzeptiert eine Liste von Konfigurationszeichenfolgen und weist sie angegebenen Projekten zu.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `AssignProjectConfiguration`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `AssignProjectConfiguration` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine XML-Zeichenfolge mit einer Projektkonfiguration für jedes Projekt. Die Konfigurationen werden den benannten Projekten zugewiesen.|  
-|`DefaultToVcxPlatformMapping`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste der Zuordnungen zwischen den von den meisten Typen verwendeten Plattformnamen<br /><br /> und den Namen, die von .vcxproj-Dateien verwendet werden.<br /><br /> Zum Beispiel:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen .vcxproj-Plattformnamen und den von den meisten Typen verwendeten Plattformnamen.<br /><br /> Zum Beispiel:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`DefaultToVcxPlatformMapping`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen den von den meisten Typen verwendeten Plattformnamen und den von *VCXPROJ*-Dateien verwendeten Plattformnamen.<br /><br /> Zum Beispiel:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen *VCXPROJ*-Plattformnamen und den von den meisten Typen verwendeten Plattformnamen.<br /><br /> Zum Beispiel:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält die Konfiguration für das aktuelle Projekt.|  
 |`CurrentProjectPlatform`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält die Plattform für das aktuelle Projekt.|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Optionaler `bool`-Ausgabeparameter.<br /><br /> Enthält ein Flag, das angibt, dass Verweise erstellt werden sollen, auch wenn sie in der Projektkonfiguration deaktiviert wurden.|  
@@ -43,8 +43,8 @@ Diese Aufgabe akzeptiert eine Liste von Konfigurationszeichenfolgen und weist si
 |`UnassignedProjects`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Liste der Projektverweiselemente, die nicht mithilfe der Liste vorab aufgelöster Ausgaben aufgelöst werden konnten.|  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

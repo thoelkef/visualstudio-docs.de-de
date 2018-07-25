@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924326"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978189"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml-Quellcode
 
-Dieses Thema enthält und beschreibt die XAML-Quelldatei für die in [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)verwendete Datei L2DBForm.xaml.
+Dieses Artikel enthält und beschreibt die XAML-Quelldatei für die in [Beispiel für die WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md) verwendete Datei *L2DBForm.xaml*.
 
 ## <a name="overall-ui-structure"></a>Allgemeine Struktur der Benutzeroberfläche
 
@@ -29,7 +29,7 @@ Der Clientbereich befindet sich innerhalb eines <xref:System.Windows.Controls.St
 
 Jeder Abschnitt enthält eine Bezeichnung, mit dem er identifiziert wird. In den ersten beiden Abschnitten wird diese Bezeichnung durch die Verwendung eines <xref:System.Windows.FrameworkElement.LayoutTransform%2A>-Elements um 90° gedreht. Der restliche Teil des Abschnitts enthält entsprechend dem Zweck des Abschnitts passende Benutzeroberflächenelemente wie Textblöcke, Textfelder, Schaltflächen usw. Mitunter wird zur Ausrichtung dieser untergeordneten Steuerelemente ein untergeordnetes <xref:System.Windows.Controls.StackPanel> -Steuerelement verwendet.
 
-## <a name="window-resource-section"></a>Abschnitt "Window.Resources"
+## <a name="window-resource-section"></a>Abschnitt „Window.Resources“
 
 Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.
 
@@ -37,7 +37,7 @@ Das `<ObjectDataProvider>` -Tag, das sich über die Zeilen 11 bis 25 erstreckt, 
 
 Schließlich wird in den Zeilen 28 bis 34 eine <xref:System.Windows.DataTemplate> mit dem Namen `BookTemplate` definiert. Diese Vorlage wird zum Anzeigen der Einträge im Abschnitt **Buchliste** der Benutzeroberfläche verwendet. Sie verwendet die Datenbindung und dynamische LINQ to XML-Eigenschaften, um über die folgenden Zuweisungen die Buch-ID und den Buchnamen abzurufen:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Zusätzlich zum <xref:System.Windows.DataTemplate> -Element wird die Datenbindun
 
 Im `<StackPanel>` -Starttag in Zeile 38 wird die <xref:System.Windows.FrameworkElement.DataContext%2A> -Eigenschaft dieses Elements auf den `LoadedBooks` -Datenanbieter gesetzt.
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 Damit ist das <xref:System.Windows.Controls.TextBlock>-Element mit dem Namen `tbRawXml` (in Zeile 46) in der Lage, durch Bindung dieser Daten an die `Xml`-Eigenschaft des Datenanbieters das unformatierte XML anzuzeigen:
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 Das <xref:System.Windows.Controls.ListBox> -Steuerelement in den Zeilen 58 bis 62 im Abschnitt **Book List** der Benutzeroberfläche legt als Vorlage für ihre Anzeigeelemente die im &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt;-Abschnitt definierte `BookTemplate` -Vorlage fest:
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 Anschließend werden die tatsächlichen Werte der Bücher in den Zeilen 59 bis 62 an dieses Listenfeld gebunden:
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ Anschließend werden die tatsächlichen Werte der Bücher in den Zeilen 59 bis 6
 
 Der dritte Abschnitt der Benutzeroberfläche, **Edit Selected Book**, bindet zuerst das <xref:System.Windows.FrameworkElement.DataContext%2A> -Element des übergeordneten <xref:System.Windows.Controls.StackPanel> -Steuerelements an den aktuell ausgewählten Eintrag im Abschnitt **Book List** der Benutzeroberfläche (Zeile 82):
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 Anschließend verwendet der Abschnitt die bidirektionale Datenbindung, sodass die aktuellen Werte der Buchelemente in den beiden Textfeldern in diesem Abschnitt angezeigt und entsprechend aktualisiert werden. Die Datenbindung an dynamische Eigenschaften ähnelt der Datenbindung, die in der `BookTemplate`-Datenvorlage verwendet wird:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -87,7 +87,7 @@ Im XAML-Code des letzten Benutzeroberflächenabschnitts (**Add New Book** (Neues
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>description
+### <a name="description"></a>Beschreibung 
 
 > [!NOTE]
 > Wir empfehlen, den folgenden Code in einen Code-Editor, z. B. den C#-Quellcode-Editor in Visual Studio, zu kopieren, weil dort die Zeilennummern einfacher zu verfolgen sind.
@@ -243,9 +243,9 @@ Im XAML-Code des letzten Benutzeroberflächenabschnitts (**Add New Book** (Neues
 
 ### <a name="comments"></a>Kommentare
 
-Den C#-Quellcode für die den WPF-Benutzeroberflächenelementen zugeordneten Ereignishandler finden Sie unter [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+Den C#-Quellcode für die den WPF-Benutzeroberflächenelementen zugeordneten Ereignishandler finden Sie unter [L2DBForm.xaml.cs-Quellcode](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
+- [L2DBForm.xaml.cs-Quellcode](../designers/l2dbform-xaml-cs-source-code.md)

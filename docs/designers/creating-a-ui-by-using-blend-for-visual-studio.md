@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9c6f5febdf6ee3aacce0510f315a2f2c7b24bd4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746883"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890141"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 
@@ -29,7 +29,7 @@ Blend für Visual Studio ist eine Komponente von Visual Studio. Wählen Sie für
 Wenn Sie mit Blend für Visual Studio nicht vertraut sind, nehmen Sie sich einen Moment Zeit, um die besonderen Funktionen des Arbeitsbereichs kennenzulernen. In diesem Abschnitt erhalten Sie eine kurze Führung.
 
 > [!NOTE]
-> Informationen zu den freigegebenen Entwurfsfunktionen wie die Zeichenfläche, das Dokumentgliederungsfenster und das Gerätefenster finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Informationen zu den freigegebenen Entwurfsfeatures wie die Zeichenfläche, das **Dokumentgliederungsfenster** und das **Gerätefenster** finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 ## <a name="tour-of-the-tools-panel"></a>Überblick über die Werkzeuge
 
@@ -39,11 +39,11 @@ Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in I
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png)|**Auswahlwerkzeuge** Wählen Sie Objekte und Pfade aus.<br /><br /> Verwenden Sie das Werkzeug **Direktauswahl**, um geschachtelte Objekte und Pfadsegmente auszuwählen.|![Legende A](../designers/media/b5_label_a.png)|**Pinsel mit Farbverlauf und die Werkzeuge**|
-|![](../designers/media/b1_2.png)|**Ansichtswerkzeuge** Mit diesen Werkzeugen kann die Ansicht der Zeichenfläche beispielsweise zum Schwenken und Zoomen verwendet werden.|![Legende B](../designers/media/b5_label_b.png)|**Pfadwerkzeuge**|
-|![](../designers/media/b1_3.png)|**Pinselwerkzeuge** Sie dienen zum Bearbeiten der visuellen Attribute eines Objekts, beispielsweise Pinseltransformationen, Zeichnen eines Objekts oder Auswählen der Attribute eines Objekts zur Übertragung auf ein anderes Objekt.|![Legende C](../designers/media/b5_label_c.png)|**Formenwerkzeuge**|
-|![](../designers/media/b1_4.png)|**Objektbibliothekswerkzeuge** Sie dienen zum Zeichnen der gängigsten Objekte auf der Zeichenfläche, z.B. Pfade, Formen, Layoutbereiche, Text und Steuerelemente.|![Legende D](../designers/media/b5_label_d.png)|**Layoutbereiche**|
-|![](../designers/media/b1_5.png)|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5_label_e.png)|**Textsteuerelemente**|
+|![Auswahltools](../designers/media/b1_1.png)|**Auswahlwerkzeuge** Wählen Sie Objekte und Pfade aus.<br /><br /> Verwenden Sie das Werkzeug **Direktauswahl**, um geschachtelte Objekte und Pfadsegmente auszuwählen.|![Legende A](../designers/media/b5_label_a.png)|**Pinsel mit Farbverlauf und die Werkzeuge**|
+|![Ansichtstools](../designers/media/b1_2.png)|**Ansichtswerkzeuge** Mit diesen Werkzeugen kann die Ansicht der Zeichenfläche beispielsweise zum Schwenken und Zoomen verwendet werden.|![Legende B](../designers/media/b5_label_b.png)|**Pfadwerkzeuge**|
+|![Pinseltools](../designers/media/b1_3.png)|**Pinselwerkzeuge** Sie dienen zum Bearbeiten der visuellen Attribute eines Objekts, beispielsweise Pinseltransformationen, Zeichnen eines Objekts oder Auswählen der Attribute eines Objekts zur Übertragung auf ein anderes Objekt.|![Legende C](../designers/media/b5_label_c.png)|**Formenwerkzeuge**|
+|![Objektbibliothekstools](../designers/media/b1_4.png)|**Objektbibliothekswerkzeuge** Sie dienen zum Zeichnen der gängigsten Objekte auf der Zeichenfläche, z.B. Pfade, Formen, Layoutbereiche, Text und Steuerelemente.|![Legende D](../designers/media/b5_label_d.png)|**Layoutbereiche**|
+|![Objekttools](../designers/media/b1_5.png)|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5_label_e.png)|**Textsteuerelemente**|
 |||![Legende F](../designers/media/b5_label_f.png)|**Allgemeine Steuerelemente**|
 
 **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Die Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
@@ -57,10 +57,10 @@ Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visu
 |||
 |-|-|
 |![](../designers/media/b1_1.png)|**Suchfeld** Verwenden Sie das Feld **Suchen** zum Filtern der Liste der Objekte.|
-|![](../designers/media/b1_2.png)|**Gittermodus und Listenmodus** Wechseln Sie zwischen der Ansicht **Gittermodus** und **Listenmodus** der Objekte.|
-|![](../designers/media/b1_3.png)|**Objektkategorien** Klicken Sie auf eine Kategorie oder Unterkategorie, um die Liste der Objekte in dieser Kategorie anzuzeigen.|
-|![](../designers/media/b1_4.png)|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
-|![](../designers/media/b1_5.png)|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
+|![Rastermodus und Listenmodus](../designers/media/b1_2.png)|**Gittermodus und Listenmodus** Wechseln Sie zwischen der Ansicht **Gittermodus** und **Listenmodus** der Objekte.|
+|![Objektkategorien](../designers/media/b1_3.png)|**Objektkategorien** Klicken Sie auf eine Kategorie oder Unterkategorie, um die Liste der Objekte in dieser Kategorie anzuzeigen.|
+|![Stile](../designers/media/b1_4.png)|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
+|![Beschreibung ](../designers/media/b1_5.png)|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>Überblick über die Bereiche Objekte und Zeitachse
 
@@ -70,21 +70,21 @@ Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisie
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Objektansicht** Zeigt die visuelle Struktur eines Dokuments an. Sie können einen Drilldown zu verschiedenen Detailebenen durchführen. Sie können auch zum Organisieren von Objekten auf der Zeichenfläche weitere Ebenen hinzufügen. Auf diese Weise können Sie sie sperren und als Gruppe ausblenden.|
-|![](../designers/media/b1_2.png)|**Anzeige für Aufzeichnungsmodus** Prüfen Sie, ob Sie Eigenschaftenänderungen in einer Zeitachse aufzeichnen.|
-|![](../designers/media/b1_3.png)|**Storyboardauswahl** Zeigen Sie eine Liste der von von Ihnen erstellten Storyboards an.|
-|![](../designers/media/b1_4.png)|**Storyboard schließen** Schließt das aktuelle Storyboard.|
-|![](../designers/media/b1_5.png)|**Storyboard-Optionen** Erstellen, Kopieren, Umkehren, Löschen, Umbenennen oder Schließen eines Storyboards.|
-|![](../designers/media/b1_6.png)|**Wiedergabesteuerelemente** Navigieren durch die Zeitachse. Sie können die Position auch ziehen, um auf der Zeitachse zu navigieren oder *Scrubbing* auszuführen.|
-|![](../designers/media/b1_7.png)|**Bereich zurücksetzen auf** Setzt die Objektansicht wieder zurück zum vorherigen Stammobjekt oder Bereich. Dies ist nur beim Ändern von Stilen oder Vorlagen möglich.|
-|![](../designers/media/b1_8.png)|**Keyframe aufzeichnen** Zeichnet einen Snapshot der Eigenschaften des ausgewählten Objekts zum aktuellen Zeitpunkt auf.|
-|![](../designers/media/b1_9.png)|**Andockoptionen** Legt Andock-Zeitachse, Andockauflösung fest und deaktiviert das Andocken der Zeitachse.|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Einblenden/Ausblenden**, **Sperren/Entsperren** Zeigt die Sichtbarkeits- und Sperroptionen für die Objektansicht oder blendet sie aus.|
-|![](../designers/media/b1_11.png)|**Position auf der Zeitachse** zeigt die aktuelle Zeit in Millisekunden an. Wenn Sie zu einem bestimmten Zeitpunkt springen möchten, können Sie auch direkt einen Zeitwert in dieses Feld eingeben. Die Präzision ist von der unter **Andockoptionen** festgelegten Auflösung zum Andocken abhängig.|
-|![](../designers/media/b1_12.png)|**Position** Zeigt den Zeitpunkt der Animation an. Sie können die Position über die Zeitachse ziehen, um eine Vorschau der Animation anzuzeigen.|
-|![](../designers/media/b1_13.png)|**Für Zeitachsen festgelegte Keyframes** Ändert den Wert einer Eigenschaftsänderung zu einem bestimmten Zeitpunkt.|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Änderungsreihenfolge von Objekten** Legt die Anzeigereihenfolge von Objekten fest. Klicken Sie auf diese Schaltfläche, um Objekte in der Strukturansicht gemäß der Z-Reihenfolge (von vorne nach hinten) oder gemäß der Markupreihenfolge (entspricht der Reihenfolge in der **XAML**-Ansicht) anzuordnen.|
-|![](../designers/media/b1_15.png)|**Zeitachsenzoom** Legt die Zoomauflösung der Zeitachse fest. Durch Vergrößern können Sie eine detailliertere Animation bearbeiten, während Sie beim Verkleinern eine Übersicht der Ereignisse über einen längeren Zeitraum hinweg anzeigen können. Wenn Sie beim Vergrößern kein Keyframe zum gewünschten Zeitpunkt festlegen können, stellen Sie sicher, dass die Auflösung zum Andocken hoch genug eingestellt ist.|
+|![Objektansicht](../designers/media/b1_1.png)|**Objektansicht** Zeigt die visuelle Struktur eines Dokuments an. Sie können einen Drilldown zu verschiedenen Detailebenen durchführen. Sie können auch zum Organisieren von Objekten auf der Zeichenfläche weitere Ebenen hinzufügen. Auf diese Weise können Sie sie sperren und als Gruppe ausblenden.|
+|![Aufzeichnungsmodusindikator](../designers/media/b1_2.png)|**Anzeige für Aufzeichnungsmodus** Prüfen Sie, ob Sie Eigenschaftenänderungen in einer Zeitachse aufzeichnen.|
+|![Storyboardauswahl](../designers/media/b1_3.png)|**Storyboardauswahl** Zeigen Sie eine Liste der von von Ihnen erstellten Storyboards an.|
+|![Storyboard schließen](../designers/media/b1_4.png)|**Storyboard schließen** Schließt das aktuelle Storyboard.|
+|![Storyboardoptionen](../designers/media/b1_5.png)|**Storyboard-Optionen** Erstellen, Kopieren, Umkehren, Löschen, Umbenennen oder Schließen eines Storyboards.|
+|![Wiedergabesteuerelemente](../designers/media/b1_6.png)|**Wiedergabesteuerelemente** Navigieren durch die Zeitachse. Sie können die Position auch ziehen, um auf der Zeitachse zu navigieren oder *Scrubbing* auszuführen.|
+|![Bereich zurücksetzen auf.](../designers/media/b1_7.png)|**Bereich zurücksetzen auf** Setzt die Objektansicht wieder zurück zum vorherigen Stammobjekt oder Bereich. Dies ist nur beim Ändern von Stilen oder Vorlagen möglich.|
+|![Keyframe aufzeichnen](../designers/media/b1_8.png)|**Keyframe aufzeichnen** Zeichnet einen Snapshot der Eigenschaften des ausgewählten Objekts zum aktuellen Zeitpunkt auf.|
+|![Andockoptionen](../designers/media/b1_9.png)|**Andockoptionen** Legt Andock-Zeitachse, Andockauflösung fest und deaktiviert das Andocken der Zeitachse.|
+|![Einblenden/Ausblenden, Sperren/Entsperren](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Einblenden/Ausblenden**, **Sperren/Entsperren** Zeigt die Sichtbarkeits- und Sperroptionen für die Objektansicht oder blendet sie aus.|
+|![Position auf der Zeitachse](../designers/media/b1_11.png)|**Position auf der Zeitachse** zeigt die aktuelle Zeit in Millisekunden an. Wenn Sie zu einem bestimmten Zeitpunkt springen möchten, können Sie auch direkt einen Zeitwert in dieses Feld eingeben. Die Präzision ist von der unter **Andockoptionen** festgelegten Auflösung zum Andocken abhängig.|
+|![Position](../designers/media/b1_12.png)|**Position** Zeigt den Zeitpunkt der Animation an. Sie können die Position über die Zeitachse ziehen, um eine Vorschau der Animation anzuzeigen.|
+|![Für Zeitachsen festgelegte Keyframes](../designers/media/b1_13.png)|**Für Zeitachsen festgelegte Keyframes** Ändert den Wert einer Eigenschaftsänderung zu einem bestimmten Zeitpunkt.|
+|![Reihenfolge von Objekten ändern](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Änderungsreihenfolge von Objekten** Legt die Anzeigereihenfolge von Objekten fest. Klicken Sie auf diese Schaltfläche, um Objekte in der Strukturansicht gemäß der Z-Reihenfolge (von vorne nach hinten) oder gemäß der Markupreihenfolge (entspricht der Reihenfolge in der **XAML**-Ansicht) anzuordnen.|
+|![Zeitachsenzoom](../designers/media/b1_15.png)|**Zeitachsenzoom** Legt die Zoomauflösung der Zeitachse fest. Durch Vergrößern können Sie eine detailliertere Animation bearbeiten, während Sie beim Verkleinern eine Übersicht der Ereignisse über einen längeren Zeitraum hinweg anzeigen können. Wenn Sie beim Vergrößern kein Keyframe zum gewünschten Zeitpunkt festlegen können, stellen Sie sicher, dass die Auflösung zum Andocken hoch genug eingestellt ist.|
 |![Legende 16](../designers/media/b5_label_16.png)|**Zeitachsen-Erfassungsbereich** Zeigt die Zeitachse an und ermöglicht Ihnen das Verschieben der Keyframes durch Ziehen oder Verwenden der Kontextmenüs.|
 
 ## <a name="tour-of-the-properties-panel"></a>Überblick über den Bereich Eigenschaften
@@ -93,27 +93,27 @@ Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und 
 
 ![Eigenschaftenbereich](../designers/media/blend5_properties_panel.png)
 
-**Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) und auf **Reduzieren** ![Reduzieren](../designers/media/b5_collapse_button.png), um Kategoriedetails anzuzeigen oder auszublenden.
+**Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![Erweitern](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) und auf **Reduzieren** ![Reduzieren](../designers/media/b5_collapse_button.png), um Kategoriedetails anzuzeigen oder auszublenden.
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Name und Typ** Zeigt das Symbol, den Namen und den Typ des ausgewählten Objekts an.|
-|![](../designers/media/b1_2.png)|**Anordnen nach** Ordnet Eigenschaften alphabetisch nach Namen, Quelle oder Kategorie an.|
-|![](../designers/media/b1_3.png)|**Pinseleigenschaften** Legt die visuellen Eigenschaften für Pinselarten (Füllung, Strich und Vordergrund) fest.|
-|![](../designers/media/b1_4.png)|**Farb-Editor** Wird für Volltonfarben- und Farbverlaufspinsel verwendet.|
-|![](../designers/media/b1_5.png)|**Farbauswahl** Wählt eine Farbe aus.|
-|![](../designers/media/b1_6.png)|**Farbchips** Zeigt die Ausgangsfarbe, die aktuelle Farbe und die letzte Farbe an.|
-|![](../designers/media/b1_7.png)|**Formatpipetten** Verwendet die Farbe eines Elements auf dem Bildschirm. Die **Verlaufspipette** ist verfügbar, wenn der **Pinsel mit Volltonfarbe** ausgewählt ist. Die **Verlaufspipette** ist verfügbar, wenn der **Farbverlaufspinsel** ausgewählt ist.|
-|![](../designers/media/b1_8.png)|**Eigenschaften und Ereignisse** Legt Eigenschaften oder Ereignisse für ein ausgewähltes Element fest.|
-|![](../designers/media/b1_9.png)|**Suchfeld** Sucht nach Eigenschaften. Filtert die Eigenschaften, die angezeigt werden, durch die Eingabe in das Feld **Suche**.|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Pinsel-Editor-Registerkarten** Zum Auswählen eines Pinsel-Editors. Sie können **Keine Pinsel**, **Mit Volltonfarbe**, **Farbverlaufspinsel**, **Kacheleffekt** und/oder **Pinselressource** auswählen.|
-|![](../designers/media/b1_11.png)|**Farbressourcen** Wendet genau dieselbe Farbe auf verschiedene Eigenschaften an. Die Registerkarte **Farbressourcen** enthält **Lokale Ressourcen** und **Systemressourcen**.|
-|![](../designers/media/b1_12.png)|**RGB-Farbspektrum** Sie können die Farbe ändern, indem Sie die Werte für **R**-, **G**- oder **B**-Zahlen-Editoren (Rot, Grün, Blau) anpassen.|
-|![](../designers/media/b1_13.png)|**Alphakanal** Ändern Sie den Alphawert, indem Sie den Zahleneditor neben **A** verwenden.|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Farbe in Ressource konvertieren** Konvertiert die ausgewählte Farbe in eine Farbressource. Farbressourcen sind verfügbar, wenn Sie auf die Farbressourcenregisterkarte klicken.|
+|![Name und Typ](../designers/media/b1_1.png)|**Name und Typ** Zeigt das Symbol, den Namen und den Typ des ausgewählten Objekts an.|
+|![Anordnen nach](../designers/media/b1_2.png)|**Anordnen nach** Ordnet Eigenschaften alphabetisch nach Namen, Quelle oder Kategorie an.|
+|![Pinseleigenschaften](../designers/media/b1_3.png)|**Pinseleigenschaften** Legt die visuellen Eigenschaften für Pinselarten (Füllung, Strich und Vordergrund) fest.|
+|![Farb-Editor](../designers/media/b1_4.png)|**Farb-Editor** Wird für Volltonfarben- und Farbverlaufspinsel verwendet.|
+|![Farbauswahl](../designers/media/b1_5.png)|**Farbauswahl** Wählt eine Farbe aus.|
+|![Farbchips](../designers/media/b1_6.png)|**Farbchips** Zeigt die Ausgangsfarbe, die aktuelle Farbe und die letzte Farbe an.|
+|![Pipette](../designers/media/b1_7.png)|**Formatpipetten** Verwendet die Farbe eines Elements auf dem Bildschirm. Die **Verlaufspipette** ist verfügbar, wenn der **Pinsel mit Volltonfarbe** ausgewählt ist. Die **Verlaufspipette** ist verfügbar, wenn der **Farbverlaufspinsel** ausgewählt ist.|
+|![Eigenschaften und Ereignisse](../designers/media/b1_8.png)|**Eigenschaften und Ereignisse** Legt Eigenschaften oder Ereignisse für ein ausgewähltes Element fest.|
+|![Suchfeld](../designers/media/b1_9.png)|**Suchfeld** Sucht nach Eigenschaften. Filtert die Eigenschaften, die angezeigt werden, durch die Eingabe in das Feld **Suche**.|
+|![Pinsel-Editor-Registerkarten](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Pinsel-Editor-Registerkarten** Zum Auswählen eines Pinsel-Editors. Sie können **Keine Pinsel**, **Mit Volltonfarbe**, **Farbverlaufspinsel**, **Kacheleffekt** und/oder **Pinselressource** auswählen.|
+|![Farbressourcen](../designers/media/b1_11.png)|**Farbressourcen** Wendet genau dieselbe Farbe auf verschiedene Eigenschaften an. Die Registerkarte **Farbressourcen** enthält **Lokale Ressourcen** und **Systemressourcen**.|
+|![RGB-Farbraum](../designers/media/b1_12.png)|**RGB-Farbspektrum** Sie können die Farbe ändern, indem Sie die Werte für **R**-, **G**- oder **B**-Zahlen-Editoren (Rot, Grün, Blau) anpassen.|
+|![Alphakanal](../designers/media/b1_13.png)|**Alphakanal** Ändern Sie den Alphawert, indem Sie den Zahleneditor neben **A** verwenden.|
+|![Farbe in Ressource konvertieren](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Farbe in Ressource konvertieren** Konvertiert die ausgewählte Farbe in eine Farbressource. Farbressourcen sind verfügbar, wenn Sie auf die Farbressourcenregisterkarte klicken.|
 |![](../designers/media/b1_15.png)|**Farbtonwert** Zeigt den hexadezimalen Wert der angezeigten Farbe an.|
 |![Legende 16](../designers/media/b5_label_16.png)|**Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.|
-|![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.|
+|![Erweiterte Eigenschaften anzeigen](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.|
 
 **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
 

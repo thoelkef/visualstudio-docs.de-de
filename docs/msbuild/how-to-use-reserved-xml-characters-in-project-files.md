@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8538ffdb1093accc8446d072ecc980586b73ee7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567251"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077658"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Gewusst wie: Verwenden reservierter XML-Zeichen in Projektdateien
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Vorgehensweise: Verwenden reservierter XML-Zeichen in Projektdateien
 Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen verwenden, z.B. in Eigenschaftswerten oder Aufgabenparameterwerten. Einige reservierte Zeichen müssen jedoch durch eine benannte Entität ersetzt werden, sodass die Projektdatei analysiert werden kann.  
   
-## <a name="using-reserved-characters"></a>Reservierte Zeichen verwenden  
+## <a name="use-reserved-characters"></a>Verwenden reservierter Zeichen  
  Die folgende Tabelle beschreibt die reservierten XML-Zeichen, die durch die entsprechende benannte Entität ersetzt werden müssen, damit die Projektdatei analysiert werden kann.  
   
 |Reserviertes Zeichen|Benannte Entität|  
@@ -73,5 +73,5 @@ Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen verwenden
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild Reference](../msbuild/msbuild-reference.md)   (MSBuild-Referenz)  
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)    
  [MSBuild](../msbuild/msbuild.md)    

@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578600"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081474"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Gewusst wie: Ignorieren von Fehlern in Aufgaben
+# <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
 Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.  
   
-## <a name="using-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs  
+## <a name="use-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs  
  Das Attribut `ContinueOnError` des Elements `Task` steuert, ob ein Build beendet oder fortgesetzt wird, wenn eine Aufgabe fehlschlägt. Dieses Attribut steuert auch, ob Fehler als Fehler oder Warnungen behandelt werden, wenn der Buildvorgang fortgesetzt wird.  
   
  Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte enthalten:  
@@ -63,5 +63,5 @@ Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist
   
 ## <a name="see-also"></a>Siehe auch
 [MSBuild](../msbuild/msbuild.md)  
- [Task Reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md)   
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
+[Aufgaben](../msbuild/msbuild-tasks.md)

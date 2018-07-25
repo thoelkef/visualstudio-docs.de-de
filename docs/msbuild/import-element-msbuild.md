@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570966"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077489"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.  
@@ -35,7 +35,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
@@ -45,7 +45,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Project`|Erforderliches Attribut.<br /><br /> Der Pfad der zu importierenden Projektdatei. Der Pfad kann Platzhalter enthalten. Die entsprechenden Dateien werden in sortierter Reihenfolge importiert. Mit dieser Funktion können Sie Code einem Projekt hinzufügen, indem Sie einfach die Codedatei einem Verzeichnis hinzufügen.|  
 |`Condition`|Optionales Attribut.<br /><br /> Eine auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
@@ -55,7 +55,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Enthält eine Sammlung von `Import` -Elementen, die unter einer optionalen Bedingung gruppiert sind.|  
@@ -63,7 +63,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 ## <a name="remarks"></a>Hinweise  
  Mithilfe des `Import` -Elements können Sie Code wiederverwenden, der in vielen Projektdateien verwendet wird. Dies erleichtert die Verwaltung des Codes, da jedes von Ihnen ausgeführte Update für den freigegebenen Code an alle Projekte weitergegeben wird, die ihn importieren.  
 
- Gemäß der Konvention werden freigegebene importierte Projektdateien als TARGETS-Dateien gespeichert, sie sind jedoch [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Standardprojektdateien. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung besitzt. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung TARGETS zu verwenden.  
+ Konventionsgemäß werden freigegebene importierte Projektdateien als *TARGETS*-Dateien gespeichert, sie sind jedoch [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Standardprojektdateien. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung besitzt. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.  
 
  Relative Pfade in importierten Projekten werden relativ zum Verzeichnis des importierenden Projekts interpretiert. Wenn eine Projektdatei in verschiedene Projektdateien an unterschiedliche Speicherorte importiert wird, werden daher die relativen Pfade in der importierten Projektdatei unterschiedlich für jedes importierte Projekt interpretiert.  
 
@@ -76,12 +76,12 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 > [!NOTE]
 >  Während bedingte Import-Anweisungen in Befehlszeilen-MSBuilds arbeiten, arbeiten Sie nicht mit MSBuild in der integrierten Entwicklungsumgebung (Integrated Development Environment; IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Bedingte Importe werden mithilfe der Konfiguration und den Plattformwerten ausgewertet, die beim Laden des Projekts festgelegt werden. Wenn anschließend Änderungen vorgenommen werden, die eine erneute Auswertung der Bedingungen in der Projektdatei erfordern, z.B. Ändern der Plattform, wertet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die Bedingungen für Eigenschaften und Elemente aus, jedoch nicht für Importe. Da die Importbedingung nicht erneut ausgewertet wird, wird der Import übersprungen.  
 >   
->  Um dies zu umgehen, fügen Sie bedingte Importe den TARGETS-Dateien hinzu, oder fügen Sie Code in einen bedingten Block ein, z.B. den Block [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
+>  Fügen Sie zur Umgehung dieses Problems den *TARGETS*-Dateien bedingte Importe hinzu, oder fügen Sie Code in einen bedingten Block ein, z.B. den Block [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Platzhalter  
  In .NET Framework 4 erlaubt MSBuild Platzhalter im Attribut „Projekt“. Wenn Platzhalter vorhanden sind, werden alle gefundenen Übereinstimmungen (für die Reproduzierbarkeit) sortiert und dann werden sie in dieser Reihenfolge importiert, so als ob diese explizit festgelegt wurde.  
 
- Dies ist hilfreich, wenn Sie einen Erweiterungspunkt zur Verfügung stellen möchten, sodass jemand anderes eine Datei importieren kann, ohne dass Sie explizit der zu importierenden Datei den Dateinamen hinzufügen müssen. Zu diesem Zweck enthält Microsoft.Common.Targets die folgende Zeile am Anfang der Datei.  
+ Dies ist hilfreich, wenn Sie einen Erweiterungspunkt zur Verfügung stellen möchten, sodass jemand anderes eine Datei importieren kann, ohne dass Sie explizit der zu importierenden Datei den Dateinamen hinzufügen müssen. Zu diesem Zweck enthält *Microsoft.Common.Targets* die folgende Zeile am Anfang der Datei.  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  
@@ -115,4 +115,4 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
- [Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Vorgehensweise: Verwenden eines Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

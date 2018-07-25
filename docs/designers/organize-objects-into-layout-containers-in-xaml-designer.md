@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2da34d180a59212b171e484129df27d94f580a1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924543"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978176"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 
@@ -115,7 +115,7 @@ Anzeigen von Informationen oder Optionen für Benutzer in einem Fenster. Sie kö
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Ermöglicht Benutzern, den Bildlauf auf einer Seite oder ein einem Bereich zu verwenden. Sie können einem **ScrollViewer** nur ein Objekt hinzufügen. Deshalb ist es sehr sinnvoll, einen Layoutbereich hinzuzufügen, z.B. ein **Raster** oder ein **StackPanel**.
+Ermöglicht es Benutzern, auf einer Seite oder auf einem Bereich einer Seite nach unten zu scrollen. Sie können einem **ScrollViewer** nur ein Objekt hinzufügen. Deshalb ist es sehr sinnvoll, einen Layoutbereich hinzuzufügen, z.B. ein **Raster** oder ein **StackPanel**.
 
 ![Layoutsteuerelement „ScrollViewer“](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

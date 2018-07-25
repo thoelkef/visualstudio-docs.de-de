@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c064f3398ac29cfa4187c19139e9264e2925689f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 650b550b21f239f382bb464078ee766920262309
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578834"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079848"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup-Element (MSBuild)
-Mit dem `ItemDefinitionGroup`-Element können Sie einen Satz von Elementdefinitionen festlegen, die Metadatenwerte sind, die standardmäßig auf alle Elemente im Projekt angewandt werden. Mit ItemDefinitionGroup ist die Verwendung der [CreateItem-Aufgabe](../msbuild/createitem-task.md) und [CreateProperty-Aufgabe](../msbuild/createproperty-task.md) überflüssig. Weitere Informationen finden Sie unter [Item Definitions (Elementdefinitionen)](../msbuild/item-definitions.md).  
+Mit dem `ItemDefinitionGroup`-Element können Sie einen Satz von Elementdefinitionen festlegen, die Metadatenwerte sind, die standardmäßig auf alle Elemente im Projekt angewandt werden. Mit ItemDefinitionGroup ist die Verwendung der [CreateItem-Aufgabe](../msbuild/createitem-task.md) und der [CreateProperty-Aufgabe](../msbuild/createproperty-task.md) überflüssig. Weitere Informationen finden Sie unter [Elementdefinitionen](../msbuild/item-definitions.md).  
 
  \<Project>  
  \<ItemDefinitionGroup>  
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <ItemDefinitionGroup Condition="'String A' == 'String B'">  
     <Item1>... </Item1>  
     <Item2>... </Item2>  
@@ -47,19 +47,19 @@ Mit dem `ItemDefinitionGroup`-Element können Sie einen Satz von Elementdefiniti
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|Definiert die Eingaben für den Buildprozess. Es kann keine oder mehrere `Item`-Elemente in einer `ItemDefinitionGroup` geben.|  
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 

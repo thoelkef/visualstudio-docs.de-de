@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924843"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079473"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
 
 In diesem Dokument werden die Visual Studio-Tools beschrieben, die Sie verwenden können, um 3D-Modelle, Texturen und Shader für DirectX-basierte Spiele und Apps zu erstellen oder zu ändern.
 
 ## <a name="directx-app-development-in-visual-studio"></a>DirectX-App-Entwicklung in Visual Studio
- DirectX-Apps setzen in der Regel die Programmierlogik, die DirectX-API und High Level Shading Language-Programme mit Audioobjekten und visuellen 3D-Objekten in Verbindung, um eine detaillierte, interaktive Multimediaumgebung darzustellen. Visual Studio umfasst Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne dass die IDE ein weiteres Tool verwenden muss. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter*-Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
+ In einer DirectX-App werden normalerweise Programmierlogik, die DirectX-API und HLSL-Programme (High Level Shading Language) mit Audio- und visuellen 3D-Objekten kombiniert. So können Sie von vielfältigen Multimediafunktionen profitieren. Visual Studio enthält Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne die IDE verlassen zu müssen. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter*-Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
 
  Im Folgenden finden Sie weitere Informationen über die Objektarten, mit denen Sie in Visual Studio arbeiten können.
 
@@ -44,16 +44,16 @@ In diesem Dokument werden die Visual Studio-Tools beschrieben, die Sie verwenden
  Sie können mit dem Visual Studio-Shader-Designer (ein graphenbasiertes Shader-Design-Tool) benutzerdefinierte visuelle Effekte ohne Kenntnisse der HLSL-Programmierung erstellen.
 
 > [!NOTE]
-> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md).
+> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Graphics diagnostics (debugging DirectX graphics) (Grafikdiagnose (Debuggen von DirectX-Grafiken))](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>DirectX-Versionskompatibilität
  Visual Studio verwendet DirectX, um 2D- und 3D-Objekte zu rendern. Sie können entweder den DirectX 11-Renderer oder den Windows Advanced Rasterization Platform (WARP)-Softwarerenderer auswählen. Der DirectX 11-Renderer stellt leistungsfähiges, hardwarebeschleunigtes Rendering für DirectX 11- und DirectX 10-GPUs bereit. Mit dem WARP-Renderer wird sichergestellt, dass die Objekte von einer großen Bandbreite an Computern unterstützt werden; dies umfasst auch Computer, die keine moderne Grafikhardware aufweisen, und Computer mit integrierter Grafikhardware. Weitere Informationen zu WARP finden Sie unter [Windows Advanced Rasterization Platform (WARP) Guide (Windows Advanced Rasterization Platform-Handbuch)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Arbeiten mit Texturen und Bildern](../designers/working-with-textures-and-images.md)|Beschreibt, wie Visual Studio verwendet wird, um mit Bildern und Texturen zu arbeiten.|
 |[Arbeiten mit 3D-Modellen](../designers/working-with-3-d-models.md)|Beschreibt, wie Visual Studio verwendet wird, um mit 3D-Modellen zu arbeiten.|
-|[Arbeiten mit Shaders](../designers/working-with-shaders.md)|Beschreibt, wie der Visual Studio-Shader-Designer verwendet wird, um benutzerdefinierte Shadereffekte zu erstellen und zu ändern.|
+|[Arbeiten mit Shadern](../designers/working-with-shaders.md)|Beschreibt, wie der Visual Studio-Shader-Designer verwendet wird, um benutzerdefinierte Shadereffekte zu erstellen und zu ändern.|
 |[Verwenden von 3D-Objekten in Spielen oder Apps](../designers/using-3-d-assets-in-your-game-or-app.md)|Beschreibt, wie Objekte verwendet werden, die Sie mit dem Bild-Editor, Modell-Editor oder Shader-Designer in Ihrem Spiel oder Ihrer App erstellt haben.|

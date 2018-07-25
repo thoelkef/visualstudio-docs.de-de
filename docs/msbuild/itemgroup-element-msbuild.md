@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 963c53ed0cd1e74e3e641ac04012e5d0380980fe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569468"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078211"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup-Element (MSBuild)
 Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.  
@@ -47,24 +47,22 @@ Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbui
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|Definiert die Eingaben für den Buildprozess. Es kann keine oder mehrere `Item`-Elemente in einer `ItemGroup` geben.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|description|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei.|  
-|[Target](../msbuild/target-element-msbuild.md)|Ab.NET Framework 3.5 kann das `ItemGroup`-Element innerhalb eines `Target`-Elements angezeigt werden. Weitere Informationen finden Sie unter [Targets (Ziele)](../msbuild/msbuild-targets.md).|  
-  
-## <a name="remarks"></a>Hinweise  
+|[Target](../msbuild/target-element-msbuild.md)|Ab.NET Framework 3.5 kann das `ItemGroup`-Element innerhalb eines `Target`-Elements angezeigt werden. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).|  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res` und `CodeFiles` gezeigt, die innerhalb eines `ItemGroup`-Element deklariert sind. Jedes der Elemente in der `Res`-Elementsammlung enthält ein benutzerdefiniertes untergeordnetes [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)-Element.  

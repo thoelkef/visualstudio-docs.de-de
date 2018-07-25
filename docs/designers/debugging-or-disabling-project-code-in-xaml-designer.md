@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925816"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890564"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 
-In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode verursacht werden, der versucht, auf Eigenschaften oder Methoden zuzugreifen, die verschiedene Werte zurückgeben oder auf verschiedene Weise funktionieren, wenn die Anwendung im Designer ausgeführt wird. Sie können diese Ausnahmen auflösen, indem Sie den Projektcode in einer anderen Instanz von Visual Studio debuggen. Sie können Ausnahmen vorübergehend verhindern, indem Sie Projektcode im Designer deaktivieren.
+In vielen Fällen können Ausnahmefehler im **XAML**-Designer durch Projektcode verursacht werden, der versucht, auf Eigenschaften oder Methoden zuzugreifen, die verschiedene Werte zurückgeben oder auf verschiedene Weise funktionieren, wenn die Anwendung im Designer ausgeführt wird. Sie können diese Ausnahmen auflösen, indem Sie den Projektcode in einer anderen Instanz von Visual Studio debuggen. Sie können Ausnahmen vorübergehend verhindern, indem Sie Projektcode im Designer deaktivieren.
 
 Der Projektcode umfasst Folgendes:
 
@@ -65,7 +65,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
      Dies ist der Prozess für den XAML-Designer in der ersten Instanz von Visual Studio.
 
-8.  Klicken Sie in der ersten Instanz von Visual Studio auf der Menüleiste auf **Debuggen** > **Debuggen starten**.
+8.  Klicken Sie in der ersten Instanz von Visual Studio auf der Menüleiste auf **Debuggen** > **Debugging starten**.
 
      Sie können den Code nun schrittweise durchlaufen, der im Designer ausgeführt wird.
 
@@ -73,7 +73,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
 -   Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.
 
--   Alternativ können Sie auf der Symbolleiste im XAML-Designer die Schaltfläche **Projektcode deaktivieren** auswählen.
+-   Alternativ können Sie auf der Symbolleiste im **XAML-Designer** die Schaltfläche **Projektcode deaktivieren** auswählen.
 
      ![Schaltfläche "Projektcode deaktivieren"](../designers/media/xaml_disablecode.png)
 

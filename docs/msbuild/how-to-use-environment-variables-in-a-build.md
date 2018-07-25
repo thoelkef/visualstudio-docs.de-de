@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572539"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078240"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Gewusst wie: Verwenden von Umgebungsvariablen in einem Build
+# <a name="how-to-use-environment-variables-in-a-build"></a>Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build
 Wenn Sie Projekte erstellen, ist es oft erforderlich, Buildoptionen mithilfe der Informationen festzulegen, die sich nicht in der Projektdatei oder in den Dateien befinden, aus denen Ihr Projekt besteht. Diese Informationen werden normalerweise in Umgebungsvariablen gespeichert.  
   
-## <a name="referencing-environment-variables"></a>Verweisen auf Umgebungsvariablen  
+## <a name="reference-environment-variables"></a>Verweisen auf Umgebungsvariablen  
  Alle Umgebungsvariablen stehen der [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)])-Projektdatei als Eigenschaften zur Verfügung.  
   
 > [!NOTE]
@@ -40,7 +40,7 @@ Wenn Sie Projekte erstellen, ist es oft erforderlich, Buildoptionen mithilfe der
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Gibt den Standardwert für eine Eigenschaft an  
   
--   Verwenden eines `Condition`-Attributs für eine Eigenschaft, um einen Wert festzulegen, nur wenn die Eigenschaft keinen Wert hat. Im folgenden Code wird z.B. die `ToolsPath`-Eigenschaft nur auf c:\tools festgelegt, wenn die `ToolsPath`-Umgebungsvariable nicht festgelegt ist:  
+-   Verwenden eines `Condition`-Attributs für eine Eigenschaft, um einen Wert festzulegen, nur wenn die Eigenschaft keinen Wert hat. Im folgenden Code wird z.B. die `ToolsPath`-Eigenschaft nur auf *c:\tools* festgelegt, wenn die `ToolsPath`-Umgebungsvariable nicht festgelegt ist:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
@@ -67,4 +67,4 @@ Wenn Sie Projekte erstellen, ist es oft erforderlich, Buildoptionen mithilfe der
 ## <a name="see-also"></a>Siehe auch  
 [MSBuild ](../msbuild/msbuild.md)  
 [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)  
-[Gewusst wie: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

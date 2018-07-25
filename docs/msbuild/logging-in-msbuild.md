@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80a73f2433f942c35413f77143203c06cd9447a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d866f0bc3181b6f338ec0b07df0ad5ff0e51010
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567992"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079160"
 ---
 # <a name="logging-in-msbuild"></a>Protokollierung in MSBuild
 Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die Protokollierung erfasst Buildereignisse, Benachrichtigungen, Warnungen und Fehler in einer Protokolldatei.  
@@ -38,6 +38,6 @@ Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die
  [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)  
  Erläutert, wie Sie benutzerdefinierte Weiterleitungsprotokollierungen erstellen.  
   
-## <a name="related-sections"></a>Verwandte Abschnitte  
+## <a name="see-also"></a>Siehe auch  
  [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Beschreibt, wie mehrere Projekte schneller erstellt werden können, indem Sie sie parallel ausführen.

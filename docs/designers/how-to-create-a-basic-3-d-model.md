@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745684"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924329"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Vorgehensweise: Erstellen eines einfachen 3D-Modells
 
@@ -52,7 +52,7 @@ In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfac
 
      ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Extrudieren Sie zwei angrenzende Seiten des Würfels, z.B. die Vorderseite und die rechte Seite. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn zu aktivieren, und klicken Sie anschließend auf eine Seite des Würfels. Drücken und halten Sie die STRG-Taste gedrückt, klicken Sie auf eine andere Seite des Würfels, die an der zuerst ausgewählten Seite angrenzt, und klicken anschließend auf der Symbolleiste des Editors auf **Fläche extrudieren**.
+5.  Extrudieren Sie zwei angrenzende Seiten des Würfels, z.B. die Vorderseite und die rechte Seite. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn zu aktivieren, und klicken Sie anschließend auf eine Seite des Würfels. Halten Sie **STRG** gedrückt, klicken Sie auf eine andere Seite des Würfels, die an der zuerst ausgewählten Seite angrenzt, und klicken anschließend auf der Symbolleiste des Editors auf **Extrude face** (Fläche extrudieren).
 
      ![Die Seiten des Würfels wurden extrudiert](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfac
 
      ![Eine Seite des Würfels wurde noch weiter extrudiert.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Triangulieren Sie das Modell. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Erweitert** > **Tools** > **Triangulieren**.
+7.  Triangulieren Sie das Modell. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Erweitert** > **Extras** > **Triangulieren**.
 
-8.  Erstellen Sie das Dach des Hauses. Wechseln Sie zum Kantenauswahlmodus, indem Sie auf der Symbolleiste des Modell-Editors auf **Kante auswählen** klicken. Klicken Sie anschließend auf den Würfel, um ihn zu aktivieren. Halten Sie die STRG-Taste gedrückt, während Sie die Kanten auswählen, die hier gezeigt werden:
+8.  Erstellen Sie das Dach des Hauses. Wechseln Sie zum Kantenauswahlmodus, indem Sie auf der Symbolleiste des Modell-Editors auf **Kante auswählen** klicken. Klicken Sie anschließend auf den Würfel, um ihn zu aktivieren. Halten Sie **STRG** gedrückt, während Sie die Kanten auswählen, die hier gezeigt werden:
 
      ![Die Kanten, die die Spitze des Dachs bilden sollen](../designers/media/gfx_model_demo_house_edges.png)
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89a8fd27dbf16db2277b52b2def2fac1e9f06e68
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569686"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945204"
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
 Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.  
@@ -33,9 +33,9 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
-|`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie „program.exe“, „runprogram.bat“ oder „setup.msi“.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|  
+|`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie *program.exe*, *runprogram.bat* oder *setup.msi*.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|  
 |`ConsoleOutput`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Jede Elementausgabe stellt eine Zeile der Standardausgabe oder einen Standardfehlerstream dar, der vom Tool ausgegeben wird. Dies wird nur erfasst, wenn `ConsoleToMsBuild` auf `true` festgelegt ist.|
 |`ConsoleToMsBuild`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, erfasst der Task den Standardfehler und die Standardausgabe des Tools und macht sie im Ausgabeparameter `ConsoleOutput` verfügbar. Der Standardwert ist `false`.|
 |`CustomErrorRegularExpression`|Optionaler `String` -Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Fehlerzeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.|  
@@ -52,7 +52,7 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 ## <a name="remarks"></a>Hinweise  
  Diese Aufgabe ist nützlich, wenn eine bestimmte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe für den Auftrag, den Sie ausführen möchten, nicht verfügbar ist. Im Gegensatz zu einer spezifischeren Aufgabe kann die `Exec`-Aufgabe jedoch keine zusätzliche Verarbeitung oder bedingten Vorgänge durchführen, die auf dem Ergebnis des Tools oder des Befehls basieren, das bzw. der von dieser ausgeführt wird.
   
- Die `Exec`-Aufgabe ruft „cmd.exe“ auf, anstatt direkt einen Prozess aufzurufen.  
+ Die `Exec`-Aufgabe ruft *cmd.exe* auf, anstatt direkt einen Prozess aufzurufen.  
   
  Zusätzlich zu den in diesem Artikel aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
@@ -75,4 +75,4 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

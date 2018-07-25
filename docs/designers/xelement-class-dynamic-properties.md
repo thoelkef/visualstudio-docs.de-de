@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b81821c6a0af0b8fa769c4ef7958b921cee91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921749"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077102"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Dynamische Eigenschaften der XElement-Klasse
 
@@ -23,7 +23,7 @@ In diesem Abschnitt werden die dynamischen Eigenschaften der <xref:System.Xml.Li
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Thema|description|
+|Thema|Beschreibung |
 |-----------|-----------------|
 |[Attribut](../designers/attribute-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des Attributs verwendet wird, das einem angegebenen erweiterten Namen entspricht.|
 |[Element](../designers/element-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des untergeordneten Elements verwendet wird, das einem angegebenen erweiterten Namen entspricht.|

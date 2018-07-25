@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747280"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978348"
 ---
 # <a name="introduction-to-wpf"></a>Einführung in WPF
 
@@ -149,7 +149,7 @@ In der folgenden Abbildung ist das Ergebnis dargestellt, das nach einem Klicken 
 
 ## <a name="controls"></a>Steuerelemente
 
-Die Elemente einer Benutzeroberfläche, die mit dem Anwendungsmodell bereitgestellt werden, sind konstruierte Steuerelemente. In WPF ist „Steuerelement“ ein Sammelbegriff, der sich auf eine Kategorie von WPF-Klassen bezieht, die entweder in einem Fenster oder auf einer Seite gehostet werden, eine Benutzeroberfläche haben und ein bestimmtes Verhalten implementieren.
+Die Elemente einer Benutzeroberfläche, die mit dem Anwendungsmodell bereitgestellt werden, sind konstruierte Steuerelemente. In WPF ist *Steuerelement* ein Sammelbegriff, der sich auf eine Kategorie von WPF-Klassen bezieht, die entweder in einem Fenster oder auf einer Seite gehostet werden, eine Benutzeroberfläche haben und ein bestimmtes Verhalten implementieren.
 
 Weitere Informationen finden Sie unter [Steuerelemente](/dotnet/framework/wpf/controls/index).
 
@@ -652,7 +652,7 @@ Im folgenden Beispiel wird ein benutzerdefiniertes numerisches „Nach oben/Nach
 
  ![Ein benutzerdefiniertes UserControl](../designers/media/wpfintrofigure3.png)
 
-Weitere Informationen zu benutzerdefinierten Steuerelementen finden Sie unter Er [Übersicht über das Erstellen von Steuerelementen](/dotnet/framework/wpf/controls/control-authoring-overview).
+Weitere Informationen zu benutzerdefinierten Steuerelementen finden Sie unter [Übersicht über das Erstellen von Steuerelementen](/dotnet/framework/wpf/controls/control-authoring-overview).
 
 ## <a name="wpf-best-practices"></a>Bewährte Methoden für WPF
 

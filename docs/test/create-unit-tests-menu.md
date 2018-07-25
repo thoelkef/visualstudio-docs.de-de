@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970399"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078328"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
@@ -32,15 +32,17 @@ Der Menübefehl **Unittests erstellen**:
 
 * ist erweiterbar und unterstützt das Ausgeben von Tests im Format MSTest, MSTest V2, NUnit und xUnit.
 
+* ist noch nicht für .NET Core-Projekte verfügbar.
+
 ## <a name="get-started"></a>Erste Schritte
 
-Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code.Editor im zu testenden Projekt auswählen. Öffnen Sie dann das Kontextmenü, und klicken Sie auf **Unittests erstellen**. Dadurch wird das Dialogfeld **Unittest erstellen**, wo Sie die Erstelloptionen für den neuen Unittest auswählen können.
+Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code.Editor im zu testenden Projekt auswählen. Öffnen Sie dann das Kontextmenü, und klicken Sie auf **Unittests erstellen**. Das Dialogfeld **Komponententests erstellen** wird geöffnet, in dem Sie die Erstelloptionen für den neuen Komponententests auswählen können.
 
 ![Verwenden des Befehls „Unittests erstellen“](media/createunittestcommand.png)
 
 ## <a name="setting-unit-test-traits"></a>Festlegen der Merkmale eines Unittests
 
-Wenn Sie diese Tests im Rahmen des Testautomatisierungsprozesses ausführen möchten, ziehen Sie in Erwägung, den Test in einem anderen Testprojekt zu erstellen (die zweite Option ist das oben stehende Dialogfeld) und Unittestmerkmale für den Unittest festzulegen. So können Sie diese Tests leichter als Teil der Continuous Integration- und Continuous Deployment-Pipeline ein- oder ausschließen. Sie können die Merkmale festlegen, indem Sie Metadaten direkt in den Unittest einfügen, wie unten dargestellt.
+Wenn Sie diese Tests im Rahmen des Testautomatisierungsprozesses ausführen möchten, ziehen Sie in Erwägung, den Test in einem anderen Testprojekt zu erstellen (die zweite Option ist das oben stehende Dialogfeld) und Merkmale für den Komponententest festzulegen. So können Sie diese Tests leichter als Teil der Continuous Integration- und Continuous Deployment-Pipeline ein- oder ausschließen. Sie können die Merkmale festlegen, indem Sie Metadaten direkt in den Unittest einfügen, wie unten dargestellt.
 
 ![Festlegen der Merkmale eines Unittests](media/createunittest.png)
 
@@ -60,7 +62,7 @@ Testframeworkerweiterungen sind im Visual Studio Marketplace verfügbar:
 
 ## <a name="when-should-i-use-this-feature"></a>Wann ist diese Funktion sinnvoll?
 
-Verwenden Sie diese Funktion, wenn Sie Unittest erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der sehr wenig oder keine Testabdeckung oder keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Effektiv implementiert sie eine Vorgehensweise, die den [Intelligenten Unittests](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
+Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der wenig oder keine Testabdeckung und keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Im Prinzip implementiert sie einen Ansatz, der den [intelligenten Komponententests](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
 
 Diese Funktion kann jedoch auch auf Situationen angewendet werden, in denen der Entwickler beginnt, indem er Code schreibt und diesen dann dazu verwendet, die Unittests zu bootstrappen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Unittestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748035"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081045"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 
@@ -67,7 +67,7 @@ Die Kugel ist die standardmäßige Vorschauform im Shader-Designer; wenn Sie zur
 
 ### <a name="to-create-a-basic-texture-shader"></a>So erstellen Sie einen Basistexturshader
 
-1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
+1.  Erstellen Sie einen DGSL-Shader, um mit diesem zu arbeiten. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
 
      Standardmäßig sieht ein Shaderdiagramm wie folgt aus:
 
@@ -123,7 +123,7 @@ Das Lambert-Beleuchtungsmodell erzeugt ein Raum- und Dimensionsgefühl, das bei 
 
 2.  Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
- Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
+ Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
 
  Mit Glanzlichtern sollte die Billardkugel in etwa folgendermaßen aussehen:
 
@@ -159,19 +159,19 @@ Wenn Glanzlichter angewendet wurden, sieht die Billardkugel bereits recht überz
 
      ![Textur für die Oberseite des Cubemaps](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- Nachdem Sie nun einzelne Texturen für die Seiten der Cubemap erstellt haben, können Sie jetzt ein Tool verwenden, um sie in einer Cubemap zusammenzufügen, die in einer einzelnen DDS-Textur gespeichert werden kann. Sie können ein beliebiges Programm zum Erstellen der Cubemap verwenden, solange die Cubemap im DDS-Texturformat gespeichert werden kann. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem DirectX-Textur-Tool erstellt wird, das Teil des DirectX SDK von Juni 2010 ist.
+ Nachdem Sie nun einzelne Texturen für die Seiten der Cubemap erstellt haben, können Sie jetzt ein Tool verwenden, um sie in einer Cubemap zusammenzufügen, die in einer einzelnen *DDS-Textur* gespeichert werden kann. Sie können ein beliebiges Programm zum Erstellen der Cubemap verwenden, solange die Cubemap im DDS-Texturformat gespeichert werden kann. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem DirectX-Textur-Tool erstellt wird, das Teil des DirectX SDK von Juni 2010 ist.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>So stellen Sie eine Cubemap mit dem DirectX-Textur-Tool zusammen
 
-1.  Wählen Sie im Hauptmenü des DirectX-Textur-Tools **File** (Datei), **New Texture** (Neue Textur) aus. Das Dialogfeld **New Texture** wird angezeigt.
+1.  Klicken Sie im Hauptmenü des DirectX-Textur-Tools auf **Datei** > **Neue Textur**. Das Dialogfeld **New Texture** wird angezeigt.
 
 2.  Wählen Sie in der Gruppe **Texture Type** (Texturtyp) die Option **Cubemap Texture** (Cubemaptextur) aus.
 
 3.  Geben Sie in der Gruppe **Dimensions** (Dimensionen) den richtigen Wert für **Width** (Breite) und **Höhe** ein, und wählen Sie dann **OK** aus. Ein neues Texturdokument wird angezeigt. Standardmäßig entspricht die im Texturdokument dargestellte Textur der Würfelfläche **Positive X**.
 
-4.  Laden Sie die Textur, die Sie für die Seite des Texturwürfels erstellt haben, in die Würfelfläche. Wählen Sie im Hauptmenü **File** (Datei), **Open Onto This Cubemap Face** (Auf dieser Cubemapfläche öffnen) aus, wählen Sie die Textur aus, die Sie für die Seite des Würfels erstellt haben, und wählen Sie dann **Open** (Öffnen).
+4.  Laden Sie die Textur, die Sie für die Seite des Texturwürfels erstellt haben, in die Würfelfläche. Klicken Sie im Hauptmenü auf **Datei** > **Open Onto This Cubemap Face** (Auf dieser Cubemapfläche öffnen) aus, wählen Sie die Textur aus, die Sie für die Seite des Würfels erstellt haben, und klicken Sie dann auf **Öffnen**.
 
-5.  Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X**, **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Um eine andere Cubemapfläche zu sehen, wählen Sie im Hauptmenü **View** (Ansicht), **Cube Map Face** (Cubemapfläche) aus, und wählen Sie dann die gewünschte Fläche aus.
+5.  Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X**, **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Wenn eine andere Cubemapfläche angezeigt werden soll, klicken Sie im Hauptmenü auf **Ansicht** > **Cube Map Face** (Cubemapfläche), und wählen Sie dann die gewünschte Fläche aus.
 
 6.  Laden Sie für die Würfelfläche **Positive Y** die Textur, die Sie für den oberen Bereich des Texturwürfels erstellt haben.
 
@@ -211,7 +211,7 @@ Wenn Glanzlichter angewendet wurden, sieht die Billardkugel bereits recht überz
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
+- [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Shader-Designer](../designers/shader-designer.md)
 - [Bildbearbeitung](../designers/image-editor.md)

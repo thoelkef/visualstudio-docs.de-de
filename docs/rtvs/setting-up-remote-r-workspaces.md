@@ -10,24 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978309"
 ---
-# <a name="setting-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
+# <a name="set-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 
 In diesem Artikel wird erklärt, wie ein Remoteserver mit SSL und einem geeigneten R-Dienst konfiguriert wird. So kann R Tools für Visual Studio (RTVS) mit einem Remotearbeitsbereich auf diesem Server verbunden werden.
-
-- [Anforderungen an Remotecomputer](#remote-computer-requirements)
-- [Installieren eines SSL-Zertifikats](#install-an-ssl-certificate)
-- [Installieren eines SSL-Zertifikats unter Windows](#install-an-ssl-certificate-on-windows)
-- [Installieren eines SSL-Zertifikats unter Ubuntu](#install-an-ssl-certificate-on-ubuntu)
-- [Installieren von R Services unter Windows](#install-r-services-on-windows)
-- [Installieren von R Services unter Linux](#install-r-services-on-Linux)
-- [Konfigurieren von R Services](#configure-r-services)
-- [Problembehandlung](#troubleshooting)
 
 ## <a name="remote-computer-requirements"></a>Anforderungen an Remotecomputer
 
@@ -36,9 +28,9 @@ In diesem Artikel wird erklärt, wie ein Remoteserver mit SSL und einem geeignet
 
 ## <a name="install-an-ssl-certificate"></a>Installieren eines SSL-Zertifikats
 
-RTVS erfordert, dass die gesamte Kommunikation mit einem Remoteserver über HTTP abläuft, wofür ein SSL-Zertifikat auf dem Server notwendig ist. Sie können entweder ein von einer vertrauenswürdigen Zertifizierungsstelle signiertes Zertifikat (empfohlen) oder ein selbstsigniertes Zertifikat verwenden. (Ein selbstsigniertes Zertifikat bewirkt, dass RTVS Warnungen auslöst, wenn eine Verbindung besteht). Unabhängig davon, für welches Sie sich entscheiden, muss das Zertifikat auf dem Computer installiert werden und den Zugriff auf seinen privaten Schlüssel ermöglichen.
+RTVS erfordert, dass die gesamte Kommunikation mit einem Remoteserver über HTTP abläuft, wofür ein SSL-Zertifikat auf dem Server notwendig ist. Sie können entweder ein von einer vertrauenswürdigen Zertifizierungsstelle signiertes Zertifikat (empfohlen) oder ein selbstsigniertes Zertifikat verwenden. (Ein selbstsigniertes Zertifikat bewirkt, dass RTVS Warnungen auslöst, wenn eine Verbindung besteht.) Unabhängig davon, für welches Sie sich entscheiden, muss das Zertifikat auf dem Computer installiert werden und den Zugriff auf seinen privaten Schlüssel ermöglichen.
 
-### <a name="obtaining-a-trusted-certificate"></a>Abrufen eines vertrauenswürdigen Zertifikats
+### <a name="obtain-a-trusted-certificate"></a>Abrufen eines vertrauenswürdigen Zertifikats
 
 Ein vertrauenswürdiges Zertifikat wird von einer Zertifizierungsstelle ausgestellt (Informationen finden Sie auf [Wikipedia zu Zertifizierungsstellen](https://en.wikipedia.org/wiki/Certificate_authority)). Wie bei der Ausstellung eines Personalausweises ist auch der Prozess der Ausstellung eines vertrauenswürdigen Zertifikats länger und es fallen mögliche Gebühren an, dafür wird die Echtheit der Anforderung und des Anfordernden überprüft.
 
@@ -50,7 +42,7 @@ Weitere Informationen finden Sie auf Wikipedia unter [Public-Key-Zertifikat](htt
 
 Das SSL-Zertifikat muss manuell unter Windows installiert werden. Führen Sie dazu die folgenden Schritte aus.
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>Abrufen eines selbstsignierten Zertifikats (Windows)
+### <a name="obtain-a-self-signed-certificate-windows"></a>Abrufen eines selbstsignierten Zertifikats (Windows)
 
 Überspringen Sie diesen Abschnitt, wenn Sie bereits ein vertrauenswürdiges Zertifikat haben. Verglichen mit einem Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle ist ein selbstsigniertes Zertifikat wie ein selbst erstellter Ausweis. Dieser Prozess ist zwar einfacher als die Zusammenarbeit mit einer vertrauenswürdigen Zertifikatsstelle, entbehrt aber auch einer starken Authentifizierung. Das bedeutet, dass ein Angreifer ein nicht signiertes Zertifikat durch ein eigenes ersetzen und den gesamten Verkehr zwischen dem Client und dem Server abfangen kann. *Selbstsignierte Zertifikate sollten daher nur für Testszenarios innerhalb eines vertrauenswürdigen Netzwerks eingesetzt werden, niemals in der Produktion.*
 
@@ -75,19 +67,19 @@ So erstellen Sie ein selbstsigniertes Zertifikat
 
 Hintergrundinformationen finden Sie auf Wikipedia unter [Self-signed certificate](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
-### <a name="installing-the-certificate"></a>Installieren des Zertifikats
+### <a name="install-the-certificate"></a>Installieren des Zertifikats
 
-Um das Zertifikat auf dem Remotecomputer zu installieren, führen Sie `certlm.msc` (Zertifikat-Manager) über eine Befehlszeile aus. Klicken Sie mit der rechten Maustaste auf den Ordner **Eigene Zertifikate**, und wählen Sie den Befehl **Alle Aufgaben > Import** aus:
+Führen Sie *certlm.msc* (Zertifikat-Manager) über eine Eingabeaufforderung aus, um das Zertifikat auf dem Remotecomputer zu installieren. Klicken Sie mit der rechten Maustaste auf den Ordner **Personal** (Persönlich), und wählen Sie den Befehl **Alle Aufgaben** > **Import** aus:
 
 ![Befehl „Zertifikat importieren“](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Gewähren von Leseberechtigungen für den privaten Schlüssel des SSL-Zertifikats
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>Gewähren von Leseberechtigungen für den privaten Schlüssel des SSL-Zertifikats
 
 Sobald das Zertifikat importiert wurde, gewährt das `NETWORK SERVICE`-Konto Leseberechtigungen für den privaten Schlüssel, wie im Folgenden beschrieben. `NETWORK_SERVICE` ist das Konto, das für die Ausführung des R Services-Brokers verwendet wird. Mit diesem Dienst werden eingehende SSL-Verbindungen mit dem Servercomputer beendet.
 
-1. Führen Sie `certlm.msc` (Zertifikat-Manager) an einer Administratorbefehlszeile aus.
-1. Erweitern Sie **Personal > Certificates** (Persönlich > Zertifikate), klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie **Alle Aufgaben > Privatschlüssel verwalten**.
-1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie unter „Alle Aufgaben“ den Befehl „Private Schlüssel verwalten“ aus.
+1. Führen Sie *certlm.msc* (Zertifikat-Manager) über eine Eingabeaufforderung als Administrator aus.
+1. Erweitern Sie **Personal** > **Certificates** (Persönlich > Zertifikate), klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie **Alle Aufgaben** > **Privatschlüssel verwalten** aus.
+1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie unter **Alle Aufgaben** den Befehl **Private Schlüssel verwalten** aus.
 1. Wählen Sie im sich daraufhin öffnenden Dialogfeld **Hinzufügen** aus, und geben Sie `NETWORK SERVICE` als Kontoname ein:
 
     ![Dialogfeld „Private Schlüssel verwalten“, NETWORK_SERVICE wird hinzugefügt](media/workspaces-remote-manage-private-key-dialog.png)
@@ -98,7 +90,7 @@ Sobald das Zertifikat importiert wurde, gewährt das `NETWORK SERVICE`-Konto Les
 
 Im Rahmen der Installation installiert das Paket `rtvs-daemon` standardmäßig ein selbstsigniertes Zertifikat.
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Abrufen eines selbstsignierten Zertifikats (Ubuntu)
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>Abrufen eines selbstsignierten Zertifikats (Ubuntu)
 
 Vorteile und Risiken von selbstsignierten Zertifikaten finden Sie in der Windows-Beschreibung. Das Paket `rtvs-daemon` generiert und konfiguriert das selbstsignierte Zertifikat während der Installation. Sie müssen diese Vorgänge nur manuell ausführen, wenn Sie das automatisch generierte selbstsignierte Zertifikat ersetzen möchten.
 
@@ -118,9 +110,9 @@ So erstellen Sie ein selbstsigniertes Zertifikat:
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>Konfigurieren des RTVS-Daemons
+### <a name="configure-rtvs-daemon"></a>Konfigurieren des RTVS-Daemons
 
-Der Dateipfad des SSL-Zertifikats (Pfad zur PFX-Datei) muss auf `/etc/rtvs/rtvsd.config.json` festgelegt werden. Aktualisieren Sie `X509CertificateFile` und `X509CertificatePassword` mit dem Dateipfad bzw. mit dem Kennwort.
+Der Dateipfad des SSL-Zertifikats (Pfad zur PFX-Datei) muss in */etc/rtvs/rtvsd.config.json* festgelegt werden. Aktualisieren Sie `X509CertificateFile` und `X509CertificatePassword` mit dem Dateipfad bzw. mit dem Kennwort.
 
 ```json
 {
@@ -150,17 +142,17 @@ Um R-Code auszuführen, muss auf dem Remotecomputer ein R-Interpreter wie folgt 
 
 1. Führen Sie den [R Services-Installer](https://aka.ms/rtvs-services) aus, und starten Sie den Computer neu, wenn Sie dazu aufgefordert werden. Der Installer führt die folgenden Aktionen aus:
 
-    - Unter `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` einen Ordner erstellen und alle erforderlichen Binärdateien kopieren
+    - Erstellen Sie einen Ordner unter *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*, und kopieren Sie alle erforderlichen Binärdateien dorthin.
     - `RHostBrokerService` und `RUserProfileService` installieren und für den automatischen Start konfigurieren
     - Den `seclogon`-Dienst für automatischen Start konfigurieren
-    - Den eingehenden Firewallregeln auf dem Standardport 5444 `Microsoft.R.Host.exe` und `Microsoft.R.Host.Broker.exe` hinzufügen
+    - Fügen Sie *Microsoft.R.Host.exe* und *Microsoft.R.Host.Broker.exe* zu den eingehenden Firewallregeln auf dem Standardport 5444 hinzu.
 
 R Services wird automatisch gestartet, wenn der Computer neu startet:
 
 - Der **R-Hostbrokerdienst** verarbeitet den gesamten HTTPS-Datenverkehr zwischen Visual Studio und dem Prozess, in dem der R-Code auf dem Computer ausgeführt wird.
 - **R User Profile Service** ist eine privilegierte Komponente, die für die Erstellung von Windows-Benutzerprofilen zuständig ist. Dieser Dienst wird aufgerufen, wenn ein neuer Benutzer sich zum ersten Mal auf dem R-Servercomputer anmeldet.
 
-Sie können diese Dienste in der Diensteverwaltungskonsole (`compmgmt.msc`) anzeigen.
+Sie können diese Dienste in der Diensteverwaltungskonsole (*compmgmt.msc*) anzeigen.
 
 ## <a name="install-r-services-on-linux"></a>Installieren von R Services unter Linux
 
@@ -189,7 +181,7 @@ Wenn R Services auf dem Remotecomputer ausgeführt wird, müssen Sie auch Benutz
 
     Wenn Sie Ihr Zertifikat allerdings auf einem Server mit Internetzugriff (z.B. einer Azure-VM) installieren, verwenden Sie den vollqualifizierten Domänenname (Fully Qualified Domain Name, FQDN) des Servers, da der FQDN eines mit dem Internet verbundenen Servers nie mit dem NETBIOS-Namen übereinstimmt.
 
-    Navigieren Sie zum Verwenden des FQDN zum Speicherort von R Services (standardmäßig `%PROGRAM FILES%\R Remote Service for Visual Studio\1.0`), öffnen Sie die Datei `Microsoft.R.Host.Broker.Config.json` in einem Text-Editor, ersetzen Sie deren Inhalt durch Folgendes, und weisen Sie dabei CN dem FQDN Ihres Servers zu, z.B. `foo.westus.cloudapp.azure.com`:
+    Navigieren Sie zum Verwenden des FQDN zum Speicherort von R Services (standardmäßig *%PROGRAM FILES%\R Remote Service for Visual Studio\1.0*), öffnen Sie die Datei *Microsoft.R.Host.Broker.Config.json* in einem Text-Editor, ersetzen Sie deren Inhalt durch Folgendes, und weisen Sie dabei CN dem FQDN Ihres Servers zu, z.B. `foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -204,7 +196,7 @@ Wenn R Services auf dem Remotecomputer ausgeführt wird, müssen Sie auch Benutz
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-**Der R-Servercomputer reagiert nicht, was kann ich tun?**
+**F. Der R-Servercomputer reagiert nicht, was kann ich tun?**
 
 Versuchen Sie, den Remotecomputer über die Befehlszeile zu pingen: `ping remote-machine-name`. Wenn der Ping fehlschlägt, stellen Sie sicher, dass der Computer angeschaltet ist.
 
@@ -216,14 +208,14 @@ Es gibt drei mögliche Gründe:
 - Für eingehende und ausgehende Verbindungen an Port 5444 sind keine Firewallregeln für `Microsoft.R.Host.Broker` und `Microsoft.R.Host` aktiviert.
 - Es wurde kein SSL-Zertifikat mit `CN=<remote-machine-name>` installiert.
 
-Starten Sie den Computer nach einer der oben beschriebenen Änderungen neu. Stellen Sie dann sicher, dass `RHostBrokerService` und `RUserProfileService` entweder über den Task-Manager (Registerkarte „Dienste“) oder `services.msc` ausgeführt werden.
+Starten Sie den Computer nach einer der oben beschriebenen Änderungen neu. Stellen Sie dann sicher, dass `RHostBrokerService` und `RUserProfileService` entweder über den Task-Manager (Registerkarte „Dienste“) oder über *services.msc* ausgeführt werden.
 
 **F. Warum meldet das interaktive Fenster während der Verbindungserstellung mit dem R-Server „401 Zugriff verweigert“?**
 
 Es gibt zwei mögliche Ursachen:
 
 - Es ist sehr wahrscheinlich, dass das `NETWORK SERVICE`-Konto keinen Zugriff auf den privaten Schlüssel des SSL-Zertifikats hat. Folgen Sie der vorherigen Anleitung, um sicherzustellen, dass `NETWORK SERVICE` Zugriff auf den privaten Schlüssel hat.
-- Stellen Sie sicher, dass der `seclogon`-Dienst ausgeführt wird. Verwenden Sie `services.msc`, um `seclogon` für den automatischen Start zu konfigurieren.
+- Stellen Sie sicher, dass der `seclogon`-Dienst ausgeführt wird. Verwenden Sie *services.msc*, um `seclogon` für den automatischen Start zu konfigurieren.
 
 **F. Warum meldet das interaktive Fenster während der Verbindungserstellung mit dem R-Server „404 Nicht gefunden“?**
 
@@ -235,4 +227,4 @@ Stellen Sie sicher, dass die Firewallregeln für `Microsoft.R.Host.Broker` und `
 
 **F. Ich habe alle genannten Lösungen ausprobiert, und es funktioniert trotzdem nicht. Was nun?**
 
-Sehen Sie in den Protokolldateien in `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp` nach. Dieser Ordner enthält eine separate Protokolldatei für jede Instanz des R-Brokerdiensts, die ausgeführt wurde. Immer wenn der Dienst neu gestartet wird, wird eine neue Protokolldatei erstellt. Überprüfen Sie die aktuellste Protokolldatei auf Anzeichen, wo der Fehler liegen könnte.
+Durchsuchen Sie die Protokolldateien unter *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Dieser Ordner enthält eine separate Protokolldatei für jede Instanz des R-Brokerdiensts, die ausgeführt wurde. Immer wenn der Dienst neu gestartet wird, wird eine neue Protokolldatei erstellt. Überprüfen Sie die aktuellste Protokolldatei auf Anzeichen, wo der Fehler liegen könnte.

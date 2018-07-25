@@ -11,24 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948404"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978384"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
 Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn Sie ein Projekt über das Dialogfeld **Neues Projekt** erstellen, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.
 
-Eine Vorlage mit mehreren Projekten verfügt über mindestens zwei Projektvorlagen und eine Stammvorlage des Typs `ProjectGroup`.
+Eine Vorlage mit mehreren Projekten verfügt über mindestens zwei Projektvorlagen und eine Stammvorlage des Typs **ProjectGroup**.
 
 Vorlagen mit mehreren Projekten verhalten sich anders als Vorlagen mit einem Projekt. Sie weisen folgende eindeutige Merkmale auf:
 
-- Einzelnen Projekten in einer Vorlage mit mehreren Projekten können im Dialogfeld **Neues Projekt** keine Namen zugewiesen werden. Verwenden Sie stattdessen das Attribut `ProjectName` des Elements `ProjectTemplateLink` in der *VSTEMPLATE*-Datei, um einen Namen für jedes Projekt anzugeben.
+- Einzelnen Projekten in einer Vorlage mit mehreren Projekten können im Dialogfeld **Neues Projekt** keine Namen zugewiesen werden. Verwenden Sie stattdessen das Attribut **ProjectName** des Elements **ProjectTemplateLink** in der *VSTEMPLATE*-Datei, um einen Namen für jedes Projekt anzugeben.
 
-- Vorlagen mit mehreren Projekten können Projekte für unterschiedliche Sprachen enthalten. Die gesamte Vorlage kann jedoch nur einer einzigen Kategorie zugeordnet werden. Geben Sie die Kategorie der Vorlage im Element `ProjectType` der *VSTEMPLATE*-Datei an.
+- Vorlagen mit mehreren Projekten können Projekte für unterschiedliche Sprachen enthalten. Die gesamte Vorlage kann jedoch nur einer einzigen Kategorie zugeordnet werden. Geben Sie die Kategorie der Vorlage im **ProjectType**-Element der *VSTEMPLATE*-Datei an.
 
 Eine Vorlage mit mehreren Projekten muss folgende in eine *ZIP*-Datei komprimierte Elemente enthalten:
 
@@ -39,32 +39,32 @@ Eine Vorlage mit mehreren Projekten muss folgende in eine *ZIP*-Datei komprimier
 Eine *ZIP*-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte enthält, kann beispielsweise folgende Dateien und Verzeichnisse enthalten:
 
 - *MultiProjectTemplate.vstemplate*
-- *\Project1\Project1.vstemplate*
+- *\Project1\MyTemplate.vstemplate*
 - *\Project1\Project1.vbproj*
 - *\Project1\Class.vb*
-- *\Project2\Project2.vstemplate*
+- *\Project2\MyTemplate.vstemplate*
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
 Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:
 
-- Das `Type`-Attribut des `VSTemplate`-Elements weist den Wert `ProjectGroup` statt `Project` auf. Zum Beispiel:
+- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Zum Beispiel:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das über mindestens ein `ProjectTemplateLink`-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Zum Beispiel:
+- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Zum Beispiel:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -95,7 +95,7 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
 
 1. Erstellen Sie im Basisverzeichnis eine XML-Datei mit der Erweiterung *VSTEMPLATE*. Diese Datei enthält die Metadaten für die Vorlage mit mehreren Projekten. Im Folgenden finden Sie ein Beispiel für die Struktur der Datei. Stellen Sie sicher, dass Sie den relativen Pfad zu der *VSTEMPLATE*-Datei eines jeden Projekts angeben.
 
-1. Wählen Sie das Basisverzeichnis aus, führen Sie einen Rechtsklick durch, oder klicken Sie auf das Kontextmenü, und wählen Sie **Senden an** > **ZIP-komprimierter Ordner** aus.
+1. Wählen Sie alle Dateien im Basisverzeichnis aus, rufen Sie das Kontextmenü aus, und wählen Sie **Senden an** > **ZIP-komprimierter Ordner** aus.
 
    Die Dateien und Ordner werden in eine *ZIP*-Datei komprimiert.
 
@@ -105,10 +105,10 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
 
 ## <a name="two-project-example"></a>Beispiel mit zwei Projekten
 
-Dieses Beispiel zeigt eine einfache *VSTEMPLATE*-Stammdatei für mehrere Projekte. In diesem Beispiel enthält die Vorlage zwei Projekte: `My Windows Application` und `My Class Library`. Das `ProjectName`-Attribut des `ProjectTemplateLink`-Elements gibt den Namen an, der dem Projekt zugewiesen ist.
+Dieses Beispiel zeigt eine einfache *VSTEMPLATE*-Stammdatei für mehrere Projekte. In diesem Beispiel enthält die Vorlage zwei Projekte: **My Windows Application** und **My Class Library**. Das **ProjectName**-Attribut des **ProjectTemplateLink**-Elements gibt den Namen an, der dem Projekt zugewiesen ist.
 
 > [!TIP]
-> Wenn das `ProjectName`-Attribut nicht angegeben ist, wird der Name der *VSTEMPLATE*-Datei als Projektname verwendet.
+> Wenn das **ProjectName**-Attribut nicht angegeben ist, wird der Name der *VSTEMPLATE*-Datei als Projektname verwendet.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -134,7 +134,7 @@ Dieses Beispiel zeigt eine einfache *VSTEMPLATE*-Stammdatei für mehrere Projekt
 
 ## <a name="example-with-solution-folders"></a>Beispiel mit Projektmappenordnern
 
-In diesem Beispiel wird das `SolutionFolder`-Element verwendet, um die Projekte in zwei Gruppen (`Math Classes` und `Graphics Classes`) zu unterteilen. Die Vorlage enthält vier Projekte, von denen sich je zwei in jedem Projektmappenordner befinden.
+In diesem Beispiel wird das **SolutionFolder**-Element verwendet, um die Projekte in zwei Gruppen zu unterteilen: **Math Classes** und **Graphics Classes**. Die Vorlage enthält vier Projekte, von denen sich je zwei in jedem Projektmappenordner befinden.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

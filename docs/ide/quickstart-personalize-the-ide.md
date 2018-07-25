@@ -9,36 +9,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078224"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
 
-In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign und zwei Textfarben im **Text-Editor** anpassen.
+In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign und zwei Textfarben im Text-Editor anpassen.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 
-Das Standardfarbdesign für Visual Studio-2017 heißt **Blau**. Ändern Sie es in **Dunkel**.
+Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio 2017 heißt **Blau**. Ändern Sie es in **Dunkel**.
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) auf **Extras** > **Optionen**.
 
 1. Ändern Sie auf der Optionsseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
-   Das Farbdesign für die gesamte IDE wird in **Dunkel** geändert.
+   Das Farbdesign für die gesamte Visual Studio-IDE (integrierte Entwicklungsumgebung) wird in **Dunkel** geändert.
 
-   ![Visual Studio in einem Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
 > Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** (Visual Studio-Editor für Farbdesign) aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.
 
 ## <a name="change-text-color"></a>Ändern der Textfarbe
 
-Nun passen Sie einige Textfarben für den Editor an. Öffnen Sie zunächst eine XML-Datei, um die Standardfarben anzuzeigen.
+Nun passen Sie einige Textfarben für den Editor an. Erstellen Sie zunächst eine XML-Datei, um die Standardfarben anzuzeigen.
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Datei**.
 
@@ -72,7 +73,7 @@ Nun passen Sie einige Textfarben für den Editor an. Öffnen Sie zunächst eine 
    </Catalog>
    ```
 
-   Beachten Sie, dass die Zeilennummern eine türkisblaue Farbe aufweisen und die XML-Attribute hellblau sind. Sie ändern nun die Textfarbe für diese Elemente.
+   Beachten Sie, dass die Zeilennummern türkisblau und die XML-Attribute (z.B. `id="bk101"`) hellblau sind. Sie ändern nun die Textfarbe für diese Elemente.
 
    ![Schriftfarben der XML-Datei](media/quickstart-personalize-xml-file.png)
 
@@ -80,7 +81,7 @@ Nun passen Sie einige Textfarben für den Editor an. Öffnen Sie zunächst eine 
 
 1. Wählen Sie unter **Umgebung** die Kategorie **Schriftarten und Farben** aus.
 
-   Beachten Sie, dass der Text unter **Einstellungen anzeigen für** die Angabe **Text-Editor** enthält – dies ist so gewünscht. Sie können die Dropdownliste erweitern, um eine umfassende Liste mit Optionen anzuzeigen, die zum Ändern der Schriftarten und Farben für Text verfügbar sind.
+   Beachten Sie, dass der Text unter **Einstellungen anzeigen für** die Angabe **Text-Editor** enthält – dies ist so gewünscht. Erweitern Sie die Dropdownliste, um eine umfassende Liste mit Optionen anzuzeigen, die zum Ändern der Schriftarten und Farben für Text verfügbar sind.
 
 1. Wählen Sie zum Ändern der Farbe des Zeilennummerntexts in der Liste **Elemente anzeigen** die Option **Zeilennummer** aus. Wählen Sie im Feld **Elementvordergrund** die Option **Oliv** aus.
 
