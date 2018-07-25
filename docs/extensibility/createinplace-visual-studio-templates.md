@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (Visual Studio-Vorlagen) | Microsoft Docs
+title: CreateInPlace (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099212"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231390"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio-Vorlagen)
-Gibt an, ob das Projekt erstellen und Ausführen parameterersetzung in der angegebenen Position oder parameterersetzung in einen temporären Speicherort und speichern Sie das Projekt am angegebenen Speicherort.  
+Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in der angegebenen Position oder führen Sie die parameterersetzung in einen temporären Speicherort und speichern Sie das Projekt am angegebenen Speicherort.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,7 +54,7 @@ Gibt an, ob das Projekt erstellen und Ausführen parameterersetzung in der angeg
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` sein. Wenn `true`, das Projekt wird erstellt und parameterersetzung erfolgt in der angegebenen Position der **neues Projekt** (Dialogfeld). Wenn `false`, parameterersetzung in ein temporäres Verzeichnis ausgeführt wird und das Projekt wird am angegebenen Speicherort kopiert.  
+ Der Text muss entweder `true` oder `false` sein. Wenn `true`, das Projekt wird erstellt und parameterersetzungen erfolgt in der angegebenen Position der **neues Projekt** Dialogfeld. Wenn `false`, die parameterersetzung in einen temporären Speicherort durchgeführt und das Projekt wird dann an den angegebenen Speicherort kopiert.  
   
 ## <a name="remarks"></a>Hinweise  
  `CreateInPlace` ist ein optionales Element. Der Standardwert ist `true`.  

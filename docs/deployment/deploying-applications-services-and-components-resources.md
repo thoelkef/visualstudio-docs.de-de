@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757161"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232172"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -42,9 +42,9 @@ Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffen
 
 ## <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview) ermöglicht Entwicklern, schnell und ohne die Verwaltung von Infrastruktur eine Vielzahl von skalierbaren Webanwendungen und -diensten zu erstellen.
+[Azure App Service](/azure/app-service/app-service-web-overview) und [App Service unter Linux](/azure/app-service/containers/app-service-linux-intro) ermöglicht es Entwicklern, schnell eine Vielzahl von skalierbaren Webanwendungen und-Dienste erstellen, ohne die Verwaltung von Infrastruktur.
 
-Sie bestimmen, wie viel Computingleistung einer APp Service durch Auswahl wurde ein [Tarif oder Plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) für den enthaltenden App-Dienst. Sie haben mehrere Web-apps (und andere app-Typen) gemeinsam im selben App Service ohne Ändern des Tarifs nutzen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-apps auf den gleichen App Service hosten.
+Sie bestimmen, wie viel Computingleistung einer App Service durch Auswahl wurde ein [Tarif oder Plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) für den enthaltenden App-Dienst. Sie haben mehrere Web-apps (und andere app-Typen) gemeinsam im selben App Service ohne Ändern des Tarifs nutzen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-apps auf den gleichen App Service hosten.
 
 Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jede app in App Service wird eine eindeutige zugewiesen \*. AZUREWEBSITES.NET"-URL; alle Tarife außer Free können von der Website benutzerdefinierte Domänennamen zuweisen.
 
@@ -57,7 +57,7 @@ Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure a
 
 > Wenn Sie Azure App Service in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
 
-Weitere Informationen zum Veröffentlichen in App Service finden Sie unter [-Schnellstart – Veröffentlichen in Azure App Service](quickstart-deploy-to-azure.md).
+Weitere Informationen zum Veröffentlichen in App Service finden Sie unter [-Schnellstart – Veröffentlichen in Azure App Service](quickstart-deploy-to-azure.md) und [-Schnellstart – Veröffentlichen von ASP.NET Core, Linux](quickstart-deploy-to-linux.md).
 
 ## <a name="azure-virtual-machines"></a>Azure Virtual Machines
 

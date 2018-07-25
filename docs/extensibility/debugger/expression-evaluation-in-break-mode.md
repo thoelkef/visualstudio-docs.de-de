@@ -1,5 +1,5 @@
 ---
-title: Auswertung von Ausdrücken im Unterbrechungsmodus | Microsoft Docs
+title: Ausdrucksauswertung im Unterbrechungsmodus | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66c69d6dc3dbce328e519f6d078e0aa4a5208ca0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4afa0f98616ebcb85d421874b9c6ed5cc7270b52
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100285"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232979"
 ---
-# <a name="expression-evaluation-in-break-mode"></a>Auswertung von Ausdrücken im Unterbrechungsmodus
-Im folgenden wird erläutert, das auftritt, wenn der Debugger im Unterbrechungsmodus und Auswertung von Ausdrücken durchführen muss.  
+# <a name="expression-evaluation-in-break-mode"></a>Ausdrucksauswertung im Unterbrechungsmodus
+Der folgende Abschnitt beschreibt den Prozess, der auftritt, wenn der Debugger im Unterbrechungsmodus befindet und muss die Auswertung von Ausdrücken durchzuführen.  
   
-## <a name="expression-evaluation-process"></a>Expression-Evaluierungsprozess  
- Dies sind die grundlegenden Schritte bei der Auswertung eines Ausdrucks:  
+## <a name="expression-evaluation-process"></a>Ausdruck Evaluierungsprozesses  
+ Es folgen die grundlegenden Schritte bei der Auswertung eines Ausdrucks:  
   
-1.  Ruft die Sitzungs-Debug-Manager (SDM) [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) beim Abrufen einer Ausdruck-Kontext-Schnittstelle [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).  
+1.  Ruft die Sitzungs-Debug-Manager (SDM) [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zum Abrufen einer Ausdruck-Kontext-Schnittstelle [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).  
   
-2.  Ruft die SDM dann [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) mit der Zeichenfolge, die analysiert werden.  
+2.  Klicken Sie dann aufruft, das SDM [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) mit der Zeichenfolge analysiert werden.  
   
-3.  Wenn ParseText nicht S_OK zurückgibt, wird die Ursache des Fehlers zurückgegeben.  
+3.  Falls ParseText S_OK zurückgegeben wird, wird die Ursache des Fehlers zurückgegeben.  
   
-     -Ansonsten-  
+     – andernfalls:  
   
-     Wenn ParseText S_OK zurückgibt, das SDM kann, rufen Sie entweder [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) um einen endgültigen Wert aus dem analysierten Ausdruck abzurufen.  
+     Wenn ParseText S_OK zurückgibt, das SDM kann, rufen Sie entweder [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) um einen endgültigen Wert aus den analysierten Ausdruck abzurufen.  
   
-    -   Im Fall mit `IDebugExpression2::EvaluateSync`, die bestimmten Rückrufschnittstelle wird verwendet, um den laufenden Prozess der Auswertung zu kommunizieren. Der endgültige Wert wird zurückgegeben, eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle.  
+    -   Bei Verwendung `IDebugExpression2::EvaluateSync`, die bestimmten Rückrufschnittstelle kommuniziert der Auswertung des laufenden Prozesses. Der endgültige Wert wird zurückgegeben, eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle.  
   
-    -   Im Fall mit `IDebugExpression2::EvaluateAsync`, die bestimmten Rückrufschnittstelle wird verwendet, um den laufenden Prozess der Auswertung zu kommunizieren. Nachdem die Auswertung abgeschlossen ist, sendet EvaluateAsync ein [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) Schnittstelle durch den Rückruf. Mit dieser Ereignisschnittstelle der endgültige Wert abgerufen werden kann, mit [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
+    -   Bei Verwendung `IDebugExpression2::EvaluateAsync`, die bestimmten Rückrufschnittstelle kommuniziert der Auswertung des laufenden Prozesses. Nachdem die Auswertung abgeschlossen ist, sendet EvaluateAsync ein [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) Schnittstelle über den Rückruf. Mit dieser Ereignisschnittstelle, der endgültige Wert in den Ergebnissen [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+ [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: Kombinationsfeld-Element | Microsoft Docs
+title: Combo-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca91102467755610144e4d24405e89ace5a013b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100938"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233125"
 ---
-# <a name="combo-element"></a>Kombinationsfeld-Element
-Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es vier Arten von Kombinationsfelder, wie folgt: Kombinationsfeld, DynamicCombo IndexCombo und MRUCombo.  
+# <a name="combo-element"></a>Combo-element
+Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Es gibt vier Arten von Kombinationsfelder, die folgenden: Kombinationsfeld, DynamicCombo, IndexCombo und MRUCombo.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml 
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">  
   <Parent>... </Parent  
   <CommandFlag>... </CommandFlag>  
@@ -41,12 +41,12 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es v
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|guid|Erforderlich. GUID des Bezeichners GUID-ID-Befehl.|  
-|ID|Erforderlich. ID des Bezeichners GUID-ID-Befehl.|  
+|guid|Erforderlich. GUID der Befehls-ID der GUID-ID.|  
+|ID|Erforderlich. ID des Befehls-ID der GUID-ID.|  
 |defaultWidth|Erforderlich. Eine ganze Zahl, die eine Breite für das Kombinationsfeld in Pixel angibt.|  
-|idCommandList|Erforderlich. Eine ID, die an das Ziel der aktiven Befehl gesendet wird, beim Abrufen der Liste der Elemente im Kombinationsfeld angezeigt werden. Die ID wird im gleichen Bereich wie für das Steuerelement GUID sein.|  
+|idCommandList|Erforderlich. Eine ID, die an das Ziel der aktiven Befehl gesendet wird, zum Abrufen der Liste der Elemente, die im Kombinationsfeld angezeigt werden. Die ID wird im gleichen Bereich wie das Steuerelement GUID sein.|  
 |priority|Dies ist optional. Ein numerischer Wert, der die Priorität angibt.|  
-|Typ|Dies ist optional. Ein Enumerationswert, der den Typ der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben wird, wird die Schaltfläche verwendet.<br /><br /> Kombinationsfeld<br /> Das VSPackage ist verantwortlich für den Inhalt für dieses Kombinationsfeld ausfüllen. Alle Elemente kann nicht in das Textfeld dieser Dropdownliste eingegeben werden.<br /><br /> DynamicCombo<br /> Das VSPackage ist verantwortlich für den Inhalt dieses Kombinationsfelds ausfüllen. Der Benutzer kann diese Kombinationsfeld Bearbeiten und auch Elemente darin auswählen.<br /><br /> IndexCombo<br /> Identisch mit DynamicCombo, außer dass sie löst den Index des Elements statt dessen Text.<br /><br /> MRUCombo<br /> Von der integrierten Entwicklungsumgebung (IDE) für das VSPackage aufgefüllt.  Der Benutzer kann in diesem Kombinationsfeld bearbeiten. In der IDE sind bis zu 16 zuletzt Einträge pro Kombinationsfeld.<br /><br /> Wenn der Benutzer ein Element im Kombinationsfeld wählt oder etwas Neues eingibt, benachrichtigt die IDE das entsprechende VSPackage.|  
+|Typ|Dies ist optional. Ein Enumerationswert, der den Typ der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben wird, wird die Schaltfläche verwendet.<br /><br /> Kombinationsfeld<br /> Das VSPackage ist verantwortlich für das Auffüllen der Inhalt für dieses Kombinationsfelds. Der Benutzer kann nicht alle von diesem Dropdown-Liste im Textfeld eingeben.<br /><br /> DynamicCombo<br /> Das VSPackage ist verantwortlich für das Auffüllen der Inhalt dieses Kombinationsfelds. Der Benutzer kann dieses Kombinationsfeld Bearbeiten und auch Elemente darin auswählen.<br /><br /> IndexCombo<br /> Identisch mit DynamicCombo, außer dass sie löst den Index des Elements statt dessen Text aus.<br /><br /> MRUCombo<br /> Durch die integrierte Entwicklungsumgebung (IDE) für das VSPackage gefüllt.  Der Benutzer kann in diesem Kombinationsfeld bearbeiten. In der IDE sind bis zu 16 zuletzt Einträge pro im Kombinationsfeld.<br /><br /> Wenn der Benutzer etwas im Kombinationsfeld auswählt oder etwas Neues eingibt, benachrichtigt die IDE das entsprechende VSPackage.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
@@ -54,19 +54,19 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es v
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |Übergeordnetes Element|Dies ist optional. Das übergeordnete Element der Schaltfläche.|  
-|CommandFlag|Erforderlich. Finden Sie unter [Befehl Flag Element](../extensibility/command-flag-element.md). Gültige Werte für eine Schaltfläche CommandFlag sind wie folgt aus.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Drücken<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Zeichenfolgen|Erforderlich. Finden Sie unter [Zeichenfolgen Element](../extensibility/strings-element.md). Das untergeordnete ButtonText-Element muss definiert werden.|  
+|CommandFlag|Erforderlich. Finden Sie unter [commandflag-Element](../extensibility/command-flag-element.md). Gültige Werte für eine Schaltfläche CommandFlag sind wie folgt aus.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> – Filter-Schlüssel<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Zeichenfolgen|Erforderlich. Finden Sie unter [Strings-Element](../extensibility/strings-element.md). Das untergeordnete ButtonText-Element muss definiert werden.|  
 |Anmerkung|Optionaler Kommentar.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
-```  
+```xml  
 <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
   defaultWidth="100" idCommandList="cmdidGetInsertOptionsList">  
   <CommandFlag>DynamicVisibility</CommandFlag>  
@@ -87,4 +87,4 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es v
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

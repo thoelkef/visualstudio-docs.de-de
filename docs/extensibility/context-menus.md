@@ -1,5 +1,5 @@
 ---
-title: Kontextmenüs | Microsoft Docs
+title: Kontextmenüs | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa957e949127663eca7d4e619919edcc07c7a29b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afd67578bee63408b50e402fb0bd8b29be3fc6eb
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108559"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232532"
 ---
 # <a name="context-menus"></a>Kontextmenüs
-Kontextmenüs werden angezeigt, wenn ein Benutzer in einem aktiven Bereich des Clientbereichs klickt und zu löschen, wenn die rechte Maustaste losgelassen wird.  
+Kontextmenüs werden angezeigt, wenn ein Benutzer in ein aktiver Bereich des Clientbereichs mit der rechten Maustaste, und löschen, wenn die rechte Maustaste losgelassen wird.  
   
 ## <a name="editor-context-menus"></a>Editor-Kontextmenüs  
- Durch Abfangen `ECMD_SHOWCONTEXTMENU`, Ihre Sprachdienst kann steuern, die Kontextmenüs, die im Editor angezeigt werden. Um eine eigene Kontextmenü anzuzeigen, diesen Befehl beim Behandeln übergeben wird Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>. Wenn Sie diesen Befehl nicht behandelt, zeigt die IDE eine standard-Kontextmenü für den Editor bereitgestellt. Sie können auch den Inhalt des Kontextmenüs auf Basis eines pro-Marker steuern. Weitere Informationen hierzu finden Sie unter [mithilfe von Text Marker mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md) und [abfangen Legacy-Dienst Sprachbefehle](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
+ Durch das Abfangen `ECMD_SHOWCONTEXTMENU`, der Sprachdienst kann steuern, die Kontextmenüs, die im Editor angezeigt werden. Um Ihr eigenes Kontextmenü anzuzeigen, behandeln Sie diesen Befehl beim übergeben in Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>. Wenn Sie diesen Befehl nicht behandeln, zeigt die IDE eine standard-Kontextmenü für den Editor bereitgestellt. Sie können auch den Inhalt der im Kontextmenü auf einer pro-Marker-Basis steuern. Weitere Informationen hierzu finden Sie unter [Textmarkierungen mit der legacy-API verwenden](../extensibility/using-text-markers-with-the-legacy-api.md) und [Abfangen von Befehlen von legacysprachdiensten ältere](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Entwickeln von einem Legacy-Sprachdienst](../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Entwickeln eines Datendiensts legacysprache](../extensibility/internals/developing-a-legacy-language-service.md)   
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Ausdruck Evaluierungskontext | Microsoft Docs
+title: Ausdrucksauswertungskontext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fade5bb18e59a1b9b9e2655ce01b0b5559484e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a01d8fd9e1ac7a439898775bc8b4b0fc933650c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099144"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232493"
 ---
-# <a name="expression-evaluation-context"></a>Evaluierungskontext Ausdruck
-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, ein **Ausdruck Evaluierungskontext**:  
+# <a name="expression-evaluation-context"></a>Ausdrucksauswertungskontext
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, ein **ausdrucksauswertungskontext**:  
   
--   Stellt einen Kontext für die Auswertung von Ausdrücken. Im Allgemeinen entspricht ein Evaluierungskontext die lexikalischen Gültigkeitsbereich in dem Variablen, Parameter, Funktionen und Methoden ausgewertet werden soll. Beispielsweise wird ein Ausdruck Evaluierungskontext einen Stapelrahmen zugeordnet der Kontext bereitstellt, für die Bewertung von lokalen Variablen, Methodenparameter und Klassenmember (falls zutreffend).  
+-   Stellt einen Kontext für ausdrucksauswertung dar. Im Allgemeinen entspricht ein Evaluierungskontext den lexikalischen Gültigkeitsbereich in der Variablen, Parameter, Funktionen und Methoden zu bewerten. Beispielsweise wird ein ausdrucksauswertungskontext einen Stapelrahmen zugeordnet Kontext bereitstellen, für Ihre Evaluierung von lokalen Variablen, Methodenparameter und Klassenmember (falls zutreffend).  
   
--   Liegt vor, wenn ein Programm an einem Haltepunkt angehalten wurde. Der Ausdruck selbst ist eine Datenstruktur, die einen analysierten Ausdruck, der für die Bindung und der Auswertung innerhalb des angegebenen Kontexts kann darstellt.  
+-   Ist vorhanden, wenn ein Programm an einem Haltepunkt beendet wurde. Der Ausdruck selbst ist eine Datenstruktur, die einen analysierten Ausdruck, der bereit für die Bindung und Auswerten von innerhalb des angegebenen Kontexts darstellt.  
   
-     Im Detail, werden Ausdrücke erstellt, mit der [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Methode. Wenn ein Ausdruck ausgewertet wird, wird eine druckbare Zeichenfolge, die mit dem Namen und Typ der Variable "oder" Argument "und" den Wert generiert. Diese Zeichenfolge wird im Überwachungsfenster oder im Fenster "lokal" von der IDE angezeigt.  
+     Im Detail, werden Ausdrücke erstellt, mit der [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Methode. Wenn ein Ausdruck ausgewertet wird, generiert er eine druckbare Zeichenfolge, die den Namen und Typ der Variablen "oder" Argument "und" den Wert enthält. Diese Zeichenfolge wird in das Überwachungsfenster oder im Fenster "lokal" der IDE angezeigt.  
   
-     Erhält eine `BSTR` und ein [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle, ein Debugging-Modul (DE) kann erstellen eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle durch Analysieren eines Ausdrucks. Erhält eine `IDebugExpression2` -Schnittstelle, die DE kann durch synchrone oder asynchrone ausdrucksauswertung einen Wert abrufen. Dieser Wert zusammen mit dem Namen und Typ der Variable oder eines Arguments, wird für die Anzeige der IDE gesendet.  
+     Erhält eine `BSTR` und [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle, die eine Debug-Engine (DE) erstellen kann eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle durch die Analyse eines Ausdrucks. Erhält ein `IDebugExpression2` -Schnittstelle, die DE kann durch synchrone oder asynchrone ausdrucksauswertung einen Wert abrufen. Dieser Wert zusammen mit dem Namen und Typ der Variablen oder des Arguments, wird für die Anzeige der IDE gesendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ausdruck Auswertung Schnittstellen](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [Schnittstellen für die ausdrucksauswertung](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)

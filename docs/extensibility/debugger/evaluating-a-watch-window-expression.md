@@ -1,5 +1,5 @@
 ---
-title: Auswerten eines Fenster Überwachungsausdrucks | Microsoft Docs
+title: Auswerten eines Überwachungsfensterausdrucks | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,51 +15,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105793"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232102"
 ---
-# <a name="evaluating-a-watch-window-expression"></a>Bewerten einen Überwachungsausdruck-Fenster
+# <a name="evaluate-a-watch-window-expression"></a>Auswerten eines überwachungsfensterausdrucks
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Wenn die Ausführung angehalten wird, ruft Visual Studio Debugging-Modul (DE) zum Bestimmen des aktuellen Werts jedes Ausdrucks in der Überwachungsliste. Die DE wertet jeden Ausdruck, der über eine ausdrucksauswertung (EE) und Visual Studio zeigt an, dessen Wert in der **Überwachen** Fenster.  
+ Wenn die Ausführung angehalten wird, ruft Visual Studio die Debug-Engine (DE), um zu bestimmen, den aktuellen Wert der einzelnen Ausdrücke in der Liste sehen Sie sich an. Die DE wertet jeden Ausdruck, der mit einer ausdrucksauswertung (EE) und Visual Studio zeigt an, dessen Wert in der **Watch** Fenster.  
   
- Hier wird eine Übersicht darüber, wie ein Liste Überwachungsausdruck ausgewertet wird:  
+ Es folgt einen Überblick darüber, wie ein Liste Überwachungsausdruck ausgewertet wird:  
   
-1.  Visual Studio aufgerufen werden, die DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) ein Ausdruckskontext abgerufen, die zum Auswerten von Ausdrücken verwendet werden kann.  
+1.  Visual Studio ruft die DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) einen Ausdruckskontext abzurufen, die zum Auswerten von Ausdrücken verwendet werden können.  
   
-2.  Für jeden Ausdruck in der Überwachungsübersicht, ruft Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) den Text des Ausdrucks in einer analysierten Ausdrucks zu konvertieren.  
+2.  Für jeden Ausdruck in der Liste sehen Sie sich, Visual Studio ruft [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) den Text des Ausdrucks in einen analysierten Ausdruck zu konvertieren.  
   
-3.  `IDebugExpressionContext2::ParseText` Aufrufe [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) , führen Sie die eigentliche Arbeit des Analysieren von Text und erzeugen eine [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
+3.  `IDebugExpressionContext2::ParseText` Aufrufe [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) die eigentliche Arbeit der Analyse von Text und erstellen Sie eine [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
   
-4.  `IDebugExpressionContext2::ParseText` erstellt ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Objekt und setzt die `IDebugParsedExpression` -Objekts hinein. Diese ich`DebugExpression2` Objekt dann an Visual Studio zurückgegeben wird.  
+4.  `IDebugExpressionContext2::ParseText` erstellt eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt und speichert die `IDebugParsedExpression` -Objekts hinein. Diese ich`DebugExpression2` Objekt wird dann zurückgegeben, in Visual Studio.  
   
 5.  Visual Studio-Aufrufe [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) zum Auswerten des analysierten Ausdrucks.  
   
-6.  `IDebugExpression2::EvaluateSync` übergibt den Aufruf von [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) erstellen und führen Sie die tatsächliche Auswertung ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) zu Visual Studio zurückgegebene Objekt.  
+6.  `IDebugExpression2::EvaluateSync` übergibt den Aufruf von [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) die eigentliche Auswertung und erzeugt eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das in Visual Studio zurückgegeben wird.  
   
-7.  Visual Studio-Aufrufe [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) um den Wert des Ausdrucks abzurufen, die dann in der Überwachungsübersicht angezeigt werden.  
+7.  Visual Studio-Aufrufe [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) um den Wert des Ausdrucks zu erhalten, die in der Liste sehen Sie sich dann angezeigt werden.  
   
-## <a name="parse-then-evaluate"></a>Analysieren und bewerten  
- Da Analyse einen komplexen Ausdruck wesentlich länger als das Auswerten von es dauern kann, der Prozess der Auswertung eines Ausdrucks ist unterteilt in zwei Schritte: (1) Analysieren des Ausdrucks und (2) den analysierten Ausdruck auswerten. Auf diese Weise kann Auswertung viele Male vorkommen, aber der Ausdruck muss nur einmal analysiert werden. Intermediate analysierten Ausdrucks wird zurückgegeben, aus der AA in ein [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt, das wiederum gekapselt und zurückgegeben, aus dem DE als ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. Die `IDebugExpression` Objekt orientiert sich auf alle Auswertung der `IDebugParsedExpression` Objekt.  
+## <a name="parse-then-evaluate"></a>Analysieren und Auswerten  
+ Da beim Analysieren eines komplexen Ausdrucks viel länger als das Auswerten von es in Anspruch nehmen kann, wird der Prozess der Auswertung eines Ausdrucks sich in zwei Schritte unterteilt: (1) der Ausdruck analysiert und (2) den analysierten Ausdruck auszuwerten. Auf diese Weise kann Auswertung viele Male vorkommen, aber der Ausdruck muss nur einmal analysiert werden. Die analysierte intermediären Ausdrucks wird zurückgegeben, aus der EE in ein [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt, das wiederum gekapselt und von der DE als zurückgegeben wird ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. Die `IDebugExpression` Objekt verzögert alle Auswertung der `IDebugParsedExpression` Objekt.  
   
 > [!NOTE]
->  Es ist nicht erforderlich für ein EE zu diesen Schritten folgen, obwohl Visual Studio Hierbei wird angenommen; die EE analysieren und bewerten, im gleichen Schritt kann bei [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) aufgerufen wird (Dies ist das Beispiel MyCEE, z. B. Funktionsweise). Wenn Ihre Sprache komplexe Ausdrücke bilden kann, empfiehlt es sich, die Analyse Schritt von der bewertungsschritt zu trennen. Dies kann die Leistung in Visual Studio-Debugger verbessern, wenn viele Ausdrücke zu beobachten sind dargestellt wird.  
+>  Es ist nicht notwendig, für eine EE dieser zweistufige Prozess befolgen, obwohl Visual Studio Dies setzt voraus. die EE analysieren und Auswerten von in der gleichen Schritt kann bei [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) aufgerufen wird (Dies ist die MyCEE, z. B. Funktionsweise des Beispiels). Wenn Ihre Sprache komplexe Ausdrücke bilden kann, empfiehlt es sich, den Schritt der Analyse von der bewertungsschritt zu trennen. Dies kann die Leistung in Visual Studio-Debugger verbessern, wenn viele Ausdrücke zu beobachten sind angezeigt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Beispielimplementierung der Ausdrucksauswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
- Im MyCEE-Beispiel verwendet, um den Prozess der Auswertung von Ausdrücken zu durchlaufen.  
+ [Beispielimplementierung der ausdrucksauswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
+ Im MyCEE-Beispiel verwendet, um den Prozess der Auswertung des Ausdrucks zu durchlaufen.  
   
  [Auswerten eines Überwachungsausdrucks](../../extensibility/debugger/evaluating-a-watch-expression.md)  
- Erläutert, was geschieht, nachdem ein Ausdruck erfolgreich analysiert.  
+ Erläutert, was geschieht, nachdem eine Analyse der Ausdruck erfolgreich.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)  
- Stellt die Argumente, die übergeben werden, wenn die Debugging-Modul (DE) die ausdrucksauswertung (EE) aufruft.  
+ Übergibt die Argumente, die übergeben werden, wenn die Debug-Engine (DE) die ausdrucksauswertung (EE) aufruft.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Typ-Schnellansichten und benutzerdefinierten Viewer | Microsoft Docs
+title: Implementieren von Typschnellansichten und benutzerdefinierten Viewern | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56d093c2e6380b29c8c9a788ea34d148fbe64b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c248c62ad35fbe36fab3e7a7d01209832b9996eb
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105352"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232995"
 ---
-# <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementieren von Typ-Schnellansichten und benutzerdefinierten Viewer
+# <a name="implement-type-visualizers-and-custom-viewers"></a>Implementieren von typschnellansichten und benutzerdefinierten Viewern
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample). 
   
- Typ-Schnellansichten und benutzerdefinierten Viewer können den Benutzer Daten eines bestimmten Typs in einer Weise anzeigen, die aussagekräftiger sind als ein Speicherabbild der einfache hexadezimalen Zahlen ist. Eine ausdrucksauswertung (EE) kann die benutzerdefinierten Viewer mit bestimmten Arten von Daten oder Variablen zuordnen. Diese benutzerdefinierte Viewer werden durch die EE implementiert. Die EE kann auch externen Typ-Schnellansichten unterstützen, die von einem anderen Drittanbieter oder sogar Endbenutzer stammen können.  
+ Typschnellansichten und benutzerdefinierten Viewer können einen Benutzer, die Daten eines bestimmten Typs in einer Weise anzeigen, aussagekräftiger sind als ein Speicherabbild der einfache hexadezimalen Zahlen. Eine ausdrucksauswertung (EE) kann benutzerdefinierten Viewer bestimmte Typen von Daten oder Variablen zuordnen. Diese benutzerdefinierte Viewer werden durch die EE implementiert. Die EE kann auch externen Typ-Schnellansichten unterstützen, die von einem anderen Drittanbieter oder sogar der Endbenutzer stammen können.  
   
 ## <a name="discussion"></a>Diskussion  
   
 ### <a name="type-visualizers"></a>Typ-Schnellansichten  
- Visual Studio fordert eine Liste von Schnellansichten Typ und benutzerdefinierten Viewer für jedes Objekt in einem Überwachungsfenster angezeigt werden sollen. Eine ausdrucksauswertung (EE) stellt eine solche Liste für jeden Typ, für die sie die Typ-Schnellansichten und benutzerdefinierten Viewer unterstützen möchte. Aufrufe von [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) und [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) starten Sie den gesamten Prozess des Zugriffs auf die Typ-Schnellansichten und benutzerdefinierten Viewer (finden Sie unter [Visualizing und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md)ausführliche Informationen über die Aufrufsequenz).  
+ Visual Studio fordert eine Liste von typschnellansichten und benutzerdefinierten Viewer für jedes Objekt in einem Fenster "überwachen" angezeigt werden sollen. Eine ausdrucksauswertung (EE) bietet eine solche Liste für jeden Typ, der für die es typschnellansichten und benutzerdefinierten Viewern unterstützen möchte. Aufrufe von [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) und [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) starten Sie den gesamten Prozess für den Zugriff auf typschnellansichten und benutzerdefinierten Viewern (finden Sie unter [visualisieren und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md)ausführliche Informationen über die Aufrufsequenz).  
   
-### <a name="custom-viewers"></a>Benutzerdefinierte Viewer  
- Benutzerdefinierte Viewer werden in der EE für einen bestimmten Datentyp implementiert und durch dargestellt werden die [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) Schnittstelle. Ein benutzerdefinierter Viewer ist nicht so flexibel wie eine Schnellansicht Typ, da er verfügbar ist, nur, wenn die EE, die dieser spezielle benutzerdefinierten Viewer ausgeführt wird. Implementieren eines benutzerdefinierten Viewers ist einfacher als das Implementieren der Unterstützung für die Typ-Schnellansichten. Allerdings gibt Typ-Schnellansichten unterstützen maximale Flexibilität erhalten Sie die Endbenutzer für seine Daten visualisieren. Die restlichen erläuterungen betrifft nur die Typ-Schnellansichten.  
+### <a name="custom-viewers"></a>Benutzerdefinierten Viewern  
+ Benutzerdefinierte Viewer werden in der EE für einen bestimmten Datentyp implementiert und durch dargestellt die [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) Schnittstelle. Ein benutzerdefinierter Viewer ist nicht so flexibel wie eine typschnellansicht, da es verfügbar ist, nur, wenn Sie die EE, die diese spezielle benutzerdefinierten Viewer implementiert ausgeführt wird. Implementieren einen benutzerdefinierten Viewer ist einfacher als die Implementierung der Unterstützung für Typ-Schnellansichten. Allerdings haben Sie Unterstützung von typschnellansichten maximalen Flexibilität für den Endbenutzer für ihre Daten zu visualisieren. Die restlichen erläuterungen betrifft nur die Typ-Schnellansichten.  
   
 ## <a name="interfaces"></a>Schnittstellen  
- Die EE implementiert die folgenden Schnittstellen zur Unterstützung des Typ-Schnellansichten von Visual Studio verwendet wird:  
+ Die EE implementiert die folgenden Schnittstellen zur Unterstützung von typschnellansichten, von Visual Studio verwendet wird:  
   
 -   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -50,7 +50,7 @@ ms.locfileid: "31105352"
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
- Die EE nutzt, um die Typ-Schnellansichten unterstützen die folgenden Schnittstellen:  
+ Die EE verwendet, um Typ-Schnellansichten unterstützen die folgenden Schnittstellen:  
   
 -   [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
@@ -59,6 +59,6 @@ ms.locfileid: "31105352"
 -   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualisieren und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
