@@ -9,19 +9,19 @@ description: Hier erhalten Sie Informationen zu Visual Studio Dev Essentials und
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ad767d776d6b1f653f3417e12faae73a0a92904b
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e04e361dc36b0e4253edc695d79664995f681970
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863637"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283047"
 ---
 # <a name="how-to-join-visual-studio-dev-essentials"></a>Teilnahme an Visual Studio Dev Essentials
 
 Visual Studio Dev Essentials bietet Ihnen alles, was Sie zum Entwickeln und Bereitstellen Ihrer App auf einer beliebigen Plattformen benötigen. Dank hochmoderner Tools, der Leistung der Cloud, Schulungen und Support ist dies unser bislang umfassendstes kostenloses Angebot für Entwickler.
 
-Besuchen Sie [https://www.visualstudio.com/dev-essentials/](https://www.visualstudio.com/dev-essentials/), um zu erfahren, welche Leistungen die Visual Studio Dev Essentials-Mitgliedschaft umfasst. 
+Besuchen Sie [Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/), um zu erfahren, welche Leistungen die Visual Studio Dev Essentials-Mitgliedschaft umfasst.
 
-Wenn Sie bereit für die Registrierung sind, klicken Sie einfach auf [Jetzt teilnehmen oder anmelden](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689). 
+Wenn Sie bereit für die Registrierung sind, klicken Sie einfach auf [Jetzt teilnehmen oder anmelden](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689).
 
-Das ist auch schon alles.  
+Das ist auch schon alles.

@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815183"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Gewusst wie: Konfigurieren der Rauschunterdrückung in Berichtsansichten
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten
 Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl von Daten, die in der Aufrufstrukturansicht und der Zuordnungsansicht angezeigt werden, eingeschränkt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung erkennbarer. Dies ist hilfreich bei der Analyse von Leistungsberichten.  
   
  Konfigurationsoptionen zur Rauschunterdrückung enthalten die folgenden Einstellungen:  
@@ -79,6 +80,6 @@ Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl 
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)   
- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen aus der bzw. in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view.md)   
  [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)

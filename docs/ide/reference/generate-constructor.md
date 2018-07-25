@@ -9,12 +9,12 @@ ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44235bcacf6f60a3c58fa08f01465f6aad9e57f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3b2aee5bd4fe8a9e65f82cbcbc90edfb583bbbb
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954487"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117733"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generieren eines Konstruktors in Visual Studio
 
@@ -54,7 +54,7 @@ Diese Codegenerierung gilt für:
 
    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor1-preview-cs.png)
 
-1. Wählen Sie **Konstruktor generieren...** im Dropdownmenü aus.
+1. Wählen Sie im Dropdownmenü **Konstruktor generieren** aus.
 
    Das Dialogfeld **Member auswählen** wird geöffnet.
 

@@ -1,6 +1,6 @@
 ---
-title: Sichern von Anwendungen in Visual Studio
-ms.date: 11/04/2016
+title: Sicherheit
+ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,46 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec93a207f30218492bbbb3161f073ecfdca975cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843909"
 ---
 # <a name="secure-applications"></a>Sichern von Anwendungen
 
-Während bei den meisten Anwendungen die Sicherheitsprobleme gleich sind, bringt jede Anwendungsdomäne eigene Probleme mit sich.
+Sicherheitsüberlegungen sollten vom Entwurf bis zur Bereitstellung in alle Aspekte der Anwendungsentwicklung einfließen. Beginnen Sie damit, Visual Studio so sicher wie möglich auszuführen. Weitere Informationen finden Sie unter [Benutzerberechtigungen](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="general-security-considerations"></a>Allgemeine Überlegungen zur Sicherheit
- Jede Sprache weist eigene Probleme bei der Sicherheit auf.
+Damit Sie sichere Anwendungen effektiv entwickeln können, benötigen Sie grundlegende Kenntnisse über die Sicherheitskonzepte und Sicherheitsfunktionen der Plattformen, für die Anwendungen entwickelt werden. Außerdem sollten Kenntnisse im Bereich sicherer Codierungstechniken vorhanden sein.
 
- [Sicherheitsempfehlungen:](/cpp/top/security-best-practices-for-cpp) Enthält Informationen zu verfügbaren Sicherheitsfeatures und -verfahren für die Arbeit mit Visual C++.
+## <a name="code-for-security"></a>Codieren im Hinblick auf Sicherheit
 
- [Sicherheit und Programmierung (C#- und Visual Basic):](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx) Stellt Informationen zu den drei wichtigsten Sicherheitsrisiken bereit, mit denen Visual Basic- und C#-Entwickler konfrontiert sind: Berechtigungen, Webanwendungen und Visual Studio-Setup.
+Die meisten Codierungsfehler, die Sicherheitsmängel verursachen, entstehen, weil Entwickler bei Benutzereingaben von falschen Voraussetzungen ausgehen oder nicht vollständig mit der Plattform vertraut sind, für die die Anwendung entwickelt wird.
 
-## <a name="secure-mobile-applications"></a>Sichern von Anwendungen für Mobilgeräte
- Durch die steigende Beliebtheit mobiler Geräte gewinnt auch die Sicherheit von Informationen und Daten auf diesen Geräten an Bedeutung.
+- Unter [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines) werden die verschiedenen Methoden zum Entwerfen von Code beschrieben, damit dieser mit dem Sicherheitssystem funktioniert.
+- Unter [Empfohlene Vorgehensweisen bezüglich der Sicherheit in C++](/cpp/top/security-best-practices-for-cpp) enthält Informationen über Sicherheitstools und bewährte Methoden für C++-Entwickler.
 
- [Sicherheitsüberlegungen zu Geräten:](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87) Erläutert verschiedene Faktoren, die einen Einfluss auf Sicherheitsrichtlinien für Geräte haben.
+## <a name="build-for-security"></a>Erstellen im Hinblick auf Sicherheit
 
- [Sicherheitsziele für .NET Compact Framework:](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364) Beschreibt die Ziele für die Sicherheit von .NET Compact Framework.
+Die Sicherheit ist im Buildprozess auch ein wichtiger Aspekt. Einige zusätzliche Schritte können die Sicherheit einer bereitgestellten App verbessern und nicht autorisiertes Reverse Engineering, Spoofing oder andere Angriffe verhindern:
 
- [Design secure Mobile Web Form pages (Entwerfen von sicheren Web Forms-Seiten für Mobilgeräte):](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f) Behandelt die Planung, Implementierung und Unterstützung von Sicherheit in Funknetzwerken und mobilen Geräten.
-
-## <a name="secure-web-applications"></a>Sichern von Webanwendungen
- Eine fehlerhaft geschriebene Webseite kann die Integrität und Sicherheit eines ganzen Servers und möglicherweise sogar des gesamten Netzwerks gefährden. Daher müssen bei der Planung von Webanwendungen Überlegungen zur Sicherheit angestellt werden.
-
- [Sicherheitsarchitektur für ASP.NET:](http://msdn.microsoft.com/Library/c34d6f4f-f64d-4697-bd32-02dd2ddf726f) Bietet eine Übersicht über die Infrastruktur und die Subsystembeziehungen von ASP.NET, die die Sicherheit betreffen.
-
- [Sicherheit von ASP.NET-Webanwendungen:](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8) Enthält ausführliche Erläuterungen zu Autorisierungs- und Authentifizierungsproblemen in ASP.NET.
-
- [Vorgehensweise: HTTP-Transportsicherheit:](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297) Beschreibt, wie Transportsicherheit zur Authentifizierung verwendet wird, wenn Sie eine Verbindung mit einem WCF-Dienst herstellen.
-
-## <a name="secure-desktop-applications"></a>Sichern von Desktopanwendungen
- Das Entwerfen der Sicherheit für Desktopanwendungen ist ein wichtiger Schritt bei der Anwendungsentwicklung.
-
- [Sicherheit in Windows Forms:](/dotnet/framework/winforms/windows-forms-security) Bietet eine Übersicht über die Implementierung von Sicherheit in Windows Forms.
+- [Dotfuscator](dotfuscator/index.md) ist kostenlos und schützt .NET-Assemblys vor Reverse Engineering und nicht autorisierter Verwendung (z.B. nicht autorisiertes Debuggen).
+- Das [Signieren mit starkem Namen](managing-assembly-and-manifest-signing.md) kann zum eindeutigen Identifizieren von Softwarekomponenten verwendet werden kann und das Spoofing von Namen verhindern.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sicherheit](../ide/security-in-visual-studio.md)
+- [Sicherheit in .NET Framework](/dotnet/standard/security/index)
+- [Azure-Sicherheit](/azure/security/)
+- [Windows 10 Mobile security guide (Sicherheitshandbuch für Windows 10 Mobile)](/windows/security/threat-protection/windows-10-mobile-security-guide)
+- [Apache Cordova platform security features (Sicherheitsfeatures für die Apache Cordova-Plattform)](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
+- [ASP.NET Core-Sicherheit](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Sicherheit in Windows Forms](/dotnet/framework/winforms/windows-forms-security)

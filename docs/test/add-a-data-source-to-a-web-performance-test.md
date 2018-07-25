@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750824"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283288"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -24,7 +24,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
  ![Datenbindung an einen Webleistungstest](../test/media/web_test_databinding_conceptual.png)
 
- Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei ASPX-Seiten: die Standardseite, eine Seite "Red" und eine Seite "Blue". Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden ASPX-Seiten sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
+ Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei *ASPX-Seiten*: die Standardseite, die Seite „Red“ und die Seite „Blue“. Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden *ASPX-Seiten* sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
 
  ![Ausführen der zu testenden Webanwendung](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 ## <a name="create-a-sql-database"></a>Erstellen einer SQL-Datenbank
 
-1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) herunterladen.
+1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunterladen.
 
 2. Erstellen Sie eine SQL-Datenbank.
 
@@ -90,11 +90,11 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 ## <a name="bind-the-data"></a>Binden der Daten
 
-1. Binden Sie das ColorName-Feld.
+1. Binden Sie das **ColorName**-Feld.
 
      ![ColorName-Feld an RadioButtonList1-Wert binden](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. Öffnen Sie die Datei "Local.testsettings" im Projektmappen-Explorer, und wählen Sie die Option "Ein Testlauf pro Datenquellenzeile" aus.
+2. Öffnen Sie die Datei *Local.testsettings* im **Projektmappen-Explorer**, und wählen Sie die Option **Ein Testlauf pro Datenquellenzeile** aus.
 
      ![Testeinstellungsdatei bearbeiten](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
      ![Webleistungstest ausführen, um Bindung zu überprüfen](../test/media/web_test_databinding_sql_runtest.png)
 
-     Die zwei Testläufe werden für jede Datenzeile angezeigt. Testlauf 1 sendet eine Anforderung für die Seite "Red.aspx" und Testlauf 2 sendet eine Anforderung für die Seite "Blue.aspx".
+     Die zwei Testläufe werden für jede Datenzeile angezeigt. Testlauf 1 sendet eine Anforderung für die Seite *Red.aspx*, und Testlauf 2 sendet eine Anforderung für die Seite *Blue.aspx*.
 
      ![Ergebnisse des Testlaufs](../test/media/web_test_databinding_sql_runresults.png)
 
-     Wenn Sie eine Bindung an eine Datenquelle durchführen, können Sie gegen die Standardregel "Antwort-URL" verstoßen. In diesem Fall wird der Fehler in Testlauf 2 von der Regel ausgelöst, die die Seite „Red.aspx“ der ursprünglichen Testaufzeichnung erwartet. Aufgrund der Datenbindung wird sie aber zur Seite „Blue.aspx“ geleitet.
+     Wenn Sie eine Bindung an eine Datenquelle durchführen, können Sie gegen die Standardregel "Antwort-URL" verstoßen. In diesem Fall wird der Fehler in Testlauf 2 von der Regel ausgelöst, die die Seite *Red.aspx* der ursprünglichen Testaufzeichnung erwartet. Aufgrund der Datenbindung wird sie aber zur Seite *Blue.aspx* geleitet.
 
-2. Korrigieren Sie den Validierungsfehler, indem Sie die Validierungsregel „Antwort-URL“ löschen und den Test erneut ausführen.
+2. Korrigieren Sie den Validierungsfehler, indem Sie die Validierungsregel **Antwort-URL** löschen und den Test erneut ausführen.
 
      ![Validierungsregel für die Antwort-URL löschen](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -152,13 +152,13 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 3. Bearbeiten Sie die Textdatei, und fügen Sie folgenden Text hinzu:
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. Befolgen Sie die Schritte unter [Binden der SQL-Daten](#AddingDataBindingWebTest_BindSQLData), wählen Sie jedoch CSV-Datei als Datenquelle aus.
+4. Befolgen Sie die Schritte unter [Hinzufügen der Datenquelle](#add-the-data-source), wählen Sie jedoch „CSV-Datei“ als Datenquelle aus.
 
      ![Namen eingeben und CSV-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -166,13 +166,13 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 **A:** Wenn Sie keine Spaltenüberschriften hinzufügen können, können Sie eine Schemabeschreibungsdatei verwenden und die CSV-Datei wie eine Datenbank behandeln.
 
-1. Fügen Sie eine neue Textdatei mit dem Namen "schema.ini" hinzu.
+1. Fügen Sie eine neue Textdatei namens *schema.ini* hinzu.
 
      ![Eine schema.ini-Datei hinzufügen](../test/media/web_test_databinding_schemafile.png)
 
-2. Bearbeiten Sie die Datei schema.ini, um die Informationen hinzuzufügen, mit denen die Struktur der Daten beschrieben wird. Eine Schemadatei, die die CSV-Datei beschreibt, kann folgendermaßen aussehen:
+2. Bearbeiten Sie die Datei *schema.ini*, um die Informationen hinzuzufügen, mit denen die Struktur der Daten beschrieben wird. Eine Schemadatei, die die CSV-Datei beschreibt, kann folgendermaßen aussehen:
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -181,7 +181,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
      ![Datenquelle zum Webleistungstest hinzufügen](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Wenn Sie die Datei "schema.ini" verwenden, wählen Sie "Datenbank" (nicht die CSV-Datei) als Datenquelle aus, und geben Sie ihr einen Namen.
+4. Wenn Sie die Datei *schema.ini* verwenden, wählen Sie **Datenbank** (nicht die CSV-Datei) als Datenquelle aus, und geben Sie ihr einen Namen.
 
      ![Datenbankdatenquelle hinzufügen](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
      ![.NET Framework-Datenanbieter für OLE DB auswählen](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Wählen Sie Erweitert aus.
+7. Wählen Sie **Erweitert** aus.
 
      !["Erweitert" auswählen](../test/media/web_test_databinding_advanced.png)
 
-8. Wählen Sie für die Eigenschaft "Anbieter" die Option "Microsoft.Jet.OLEDB.4.0" aus, und legen anschließend die erweiterten Eigenschaften auf "Text; HDR=NO" fest.
+8. Wählen Sie für die Eigenschaft „Anbieter“ die Option „Microsoft.Jet.OLEDB.4.0“ aus, und legen Sie anschließend **Erweiterte Eigenschaften** auf „Text; HDR=NO“ fest.
 
      ![Erweiterte Eigenschaften anwenden](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -241,7 +241,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
     </ColorData>
     ```
 
-4. Befolgen Sie die Schritte unter [Binden der SQL-Daten](#AddingDataBindingWebTest_BindSQLData), wählen Sie aber „XML-Datei“ als Datenquelle aus.
+4. Befolgen Sie die Schritte unter [Hinzufügen der Datenquelle](#add-the-data-source), wählen Sie jedoch „XML-Datei“ als Datenquelle aus.
 
      ![Namen eingeben und XML-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
 2. Ersetzen Sie die Werte im SOAP-Text durch datengebundene Werte, und verwenden Sie dabei folgende Syntax:
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

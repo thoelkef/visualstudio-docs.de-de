@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297615"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Installieren von R Tools für Visual Studio
 
@@ -30,13 +31,13 @@ In diesem Artikel:
 
 ## <a name="supported-versions-of-visual-studio"></a>Unterstützte Versionen von Visual Studio
 
-R Tools für Visual Studio (RTVS) werden unter Windows in den Editionen Community (kostenlos), Professional und Enterprise von [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) sowie [Visual Studio 2015 Update 3 (oder höher)](http://go.microsoft.com/fwlink/?LinkId=691129) (direkter Download) unterstützt.
+R Tools für Visual Studio (RTVS) werden unter Windows in den Editionen Community (kostenlos), Professional und Enterprise von [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) sowie [Visual Studio 2015 Update 3 (oder höher)](http://go.microsoft.com/fwlink/?LinkId=691129) (direkter Download) unterstützt.
 
 RTVS wird in Visual Studio für Mac derzeit nicht unterstützt.
 
 RTVS wird nicht installiert, wenn Sie nur über Visual Studio Shell verfügen, was in Produkten wie z.B. Visual Studio Test Professional und SQL Server Management Studio enthalten ist. Visual Studio Shell verfügt nicht über die nötigen Komponenten für RTVS.
 
-## <a name="installing-rtvs-in-visual-studio-2017"></a>Installieren von RTVS in Visual Studio 2017
+## <a name="install-rtvs-in-visual-studio-2017"></a>Installieren von RTVS in Visual Studio 2017
 
 1. Führen Sie den Visual Studio-Installer aus, und wählen Sie die Option **Ändern** aus (weitere Informationen finden Sie unter [Ändern von Visual Studio](../install/modify-visual-studio.md)). Wenn Sie Visual Studio noch nicht installiert haben, finden Sie weitere Informationen unter [Installieren von Visual Studio](../install/install-visual-studio.md). Achten Sie unter Windows 7 darauf, dass Ihr Installer aktualisiert ist und Visual Studio 2017, Version *15.2, Build 26430.12* oder höher anzeigt.
 
@@ -46,9 +47,9 @@ RTVS wird nicht installiert, wenn Sie nur über Visual Studio Shell verfügen, w
 
 1. Legen Sie zusätzliche Optionen auf der rechten Seite unter dem gleichen Workloadnamen fest. Diese Workload enthält standardmäßig F#- und Python-Unterstützung. Die Mindestanforderungen für R sind die **R language support** (Unterstützung der Sprache R), **Runtime support for R development** (Laufzeitunterstützung für die R-Entwicklung) , und der **Microsoft R client** (Microsoft R-Client).
 
-RTVS ist installiert in: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`, wobei `<version>` normalerweise `2017` ist, und `<edition>` ist `Community`, `Professional` oder `Enterprise`.
+RTVS wird installiert unter: *%ProgramFiles(x86)%\Microsoft Visual Studio\<Version>\<Edition>Common7\IDE\Erweiterungen\Microsoft\R-Tools für Visual Studio*, wobei *\<Version>* in der Regel `2017` ist und *\<Edition>* entweder `Community`, `Professional` oder `Enterprise`.
 
-## <a name="installing-rtvs-in-visual-studio-2015"></a>Installieren von RTVS in Visual Studio 2015
+## <a name="install-rtvs-in-visual-studio-2015"></a>Installieren von RTVS in Visual Studio 2015
 
 Mit Visual Studio 2015 müssen Sie einen R-Interpreter und die R Tools separat installieren.
 
@@ -88,6 +89,6 @@ Die Offlineinstallation eignet sich für Computer, die keine Internetverbindung 
 
 - [Erste Schritte mit R](getting-started-with-r.md)
 - [R Tools sample projects (R Tools und Beispielprojekte)](getting-started-samples.md)
-- [Anzeigen der Hilfe](getting-started-help.md)
-- [Einstellungen der Optionen](options-for-r-tools-in-visual-studio.md)
+- [Hilfe in R-Tools](getting-started-help.md)
+- [Optionen für R Tools](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (vorher R Server)](/machine-learning-server/)

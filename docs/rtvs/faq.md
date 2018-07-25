@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235306"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -50,7 +51,7 @@ A. Release 1.0 von RTVS ist nur auf Englisch verfügbar. Release 1.1 wird in die
 
 **F. Ich finde meine aktuellen Visual Studio-Einstellungen super, möchte aber auch die neuen Data Science-Einstellungen ausprobieren. Wie gehe ich vor?**
 
-A. Speichern Sie Ihre aktuellen Visual Studio-Einstellungen mithilfe von **Tools > Einstellungen importieren und exportieren...**, und wechseln Sie dann zu den Data Science-Einstellungen. Um die gespeicherten Einstellungen wiederherzustellen, verwenden Sie erneut den Befehl **Einstellungen importieren und exportieren...**.
+A. Speichern Sie Ihre aktuellen Visual Studio-Einstellungen mithilfe von **Extras** > **Einstellungen importieren/exportieren**, und wechseln Sie dann zu den Data Science-Einstellungen. Verwenden Sie erneut den Befehl **Einstellungen importieren/exportieren**, um die gespeicherten Einstellungen wiederherzustellen.
 
 **F. Kann ich mein Visual Studio-Projekt auf einer Netzwerkfreigabe speichern?**
 
@@ -78,19 +79,19 @@ A. Nein. RTVS unterstützt nur 64-Bit-Editionen von R, die auf 64-Bit-Editionen 
 
 A. Ja, Sie können jedes Quellcodeverwaltungssystem verwenden, das in Visual Studio integriert ist.
 
-**F. Wie lauten die empfohlenen `.gitignore`-Einstellungen für ein RTVS-Projekt?**
+**F. Wie lauten die empfohlenen *GITIGNORE*-Einstellungen für ein RTVS-Projekt?**
 
-A. GitHub verwaltet ein Masterrepository mit empfohlenen `.gitignore`-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore).
+A. GitHub verwaltet ein Masterrepository mit empfohlenen *GITIGNORE*-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore).
 
 ## <a name="remote-services"></a>Remotedienste
 
 F. **Was sind Remotedienste in Visual Studio?**
 
-A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
+A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Siehe [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
-F. **Kann RTVS eine Verbindung zu Microsoft R Server herstellen?**
+F. **Kann RTVS eine Verbindung mit Microsoft Machine Learning Server herstellen?**
 
-A. Nein, da es sich bei Microsoft R Server um eine andere Technologie handelt, die einen anderen Mechanismus als den für RTVS erforderlichen bereitstellt.
+A. Nein, da es sich bei ML Server um eine andere Technologie handelt, die einen anderen Mechanismus als den für RTVS erforderlichen bereitstellt.
 
 F. **Kann RTVS eine Verbindung zu einer VM herstellen, die mithilfe des Images einer Data Science-VM in Azure erstellt wurde?**
 
@@ -98,7 +99,7 @@ A. Ja, das Image [DataScience-VM – Windows 2016](https://azure.microsoft.com/s
 
 **F: Kann RTVS eine Verbindung zu einem Remotecomputer herstellen, auf dem R installiert ist?**
 
-Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
+Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Siehe [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
 F. **Was ist eine Remotesitzung?**
 

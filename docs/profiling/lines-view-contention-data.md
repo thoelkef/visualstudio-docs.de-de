@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843850"
 ---
-# <a name="lines-view---contention-data"></a>Zeilenansicht - Konfliktdaten
+# <a name="lines-view---contention-data"></a>Zeilenansicht: Konfliktdaten
 In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweisungen aufgeführt, die ausgeführt wurden, als die Samplings bei der Profilerstellung erfasst wurden. In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten.  
   
  Eine Anweisung wird mit den folgenden Daten identifiziert:  
@@ -39,7 +40,7 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
   
  In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit**|Die Zeitspanne, während der diese Anweisung bei der Ausführung eines Codes in der Anweisung aufgrund eines Konfliktereignisses blockiert wurde. Blockierte Zeit in Funktionen, die von der Anweisung aufgerufen wurden, ist nicht enthalten.|  
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit im Prozess, die exklusive blockierte Zeit der Anweisung war.|  
@@ -66,5 +67,5 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
  [Zeilenansicht](../profiling/lines-view.md)   
- [Zeilenansicht - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+ [Zeilenansicht: Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Zeilenansicht](../profiling/lines-view-sampling-data.md)

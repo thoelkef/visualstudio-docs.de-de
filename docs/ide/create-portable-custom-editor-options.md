@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446500"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117562"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -58,7 +58,7 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
 1. Öffnen Sie ein Projekt oder eine Projektmappe in Visual Studio. Wählen Sie den Knoten „Projekt“ oder „Projektmappe“ aus, je nachdem, ob Ihre Einstellungen für die *EDITORCONFIG*-Datei für alle Projekte in der Projektmappe oder nur für ein Projekt gelten sollen. Sie können ebenfalls einen Ordner in Ihrem Projekt oder in Ihrer Projektmappe auswählen, zu dem die *EDITORCONFIG*-Datei hinzugefügt werden soll.
 
-1. Klicken Sie in der Menüleiste auf **Projekt** > **Neues Element hinzufügen...**, oder drücken Sie **STRG**+**UMSCHALT**+**A**.
+1. Klicken Sie in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**A**.
 
    Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -163,4 +163,4 @@ Sie können den Bereich Ihrer EDITORCONFIG-Konventionen steuern, indem Sie die `
 - [.NET-Benennungskonventionen](../ide/editorconfig-naming-conventions.md)
 - [Supporting EditorConfig for a language service (Unterstützen von EditorConfig für einen Sprachdienst)](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
-- [Funktionen des Code-Editors](writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](writing-code-in-the-code-and-text-editor.md)

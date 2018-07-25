@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3cc04188695daaf15821707350a84df9dfa5d891
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235311"
 ---
-# <a name="debugging-r-in-visual-studio"></a>Debuggen von R in Visual Studio
+# <a name="debug-r-in-visual-studio"></a>Debuggen von R in Visual Studio
 
 Der Integration des vollständigen Debug-Vorgangs von Visual Studio ist in R-Tools für Visual Studio (RTVS) vorhanden (siehe [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md). Diese Unterstützung umfasst Haltepunkte, Anfügen an laufende Prozesse, das Überprüfen und Beobachten von Variablen, sowie das Überprüfen der Aufrufliste. Dieser Artikel erforscht die Aspekte des Debuggens, die in R und RTVS exklusiv sind.
 
-Das Starten des Debuggers für die R-Startdatei in einem R-Projekt ist dasselbe wie in anderen Projekttypen: verwenden Sie **Debuggen > Debuggen starten**, die F5-Taste oder die **Startdatei der Quelle** auf der Debugsymbolleiste: 
+Das Starten des Debuggers für die R-Startdatei in einem R-Projekt funktioniert genauso wie in anderen Projekttypen: Verwenden Sie **Debuggen** > **Debugging starten**, die **F5**-Taste oder die **Startdatei der Quelle** auf der Debugsymbolleiste: 
 
 ![Debugger-Schaltfläche „Start“ für R](media/debugger-start-button.png)
 
@@ -36,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Beachten Sie, dass die `rtvs::debug_source`-Funktion verwendet wird, um das Skript einzubinden. Diese Funktion ist erforderlich, da RTVS Ihren Code als Vorbereitung für das Debuggen bearbeiten muss. Wenn Sie einen Einbindungs-RTVS-Befehl verwenden, und ein Debugger angefügt ist, verwendet Visual Studio automatisch `rtvs::debug_source`.
 
-Sie können den Debugger auch manuell direkt aus dem interaktiven Fenster mithilfe des Befehls **R Tools > Sitzung > Debugger anfügen**, des Befehls **Debuggen > An R Interactive anfügen** oder **Debugger anfügen** auf die interaktive Symbolleiste des Fensters anfügen. Sobald dies erfolgt ist, müssen Sie die Dateien einbinden, die Sie debuggen möchten. Wenn Sie die Dateien manuell einfügen wollen, stellen Sie sicher, dass Sie `rtvs::debug_source` verwenden und nicht die regulären `source`-Befehl in R.
+Sie können den Debugger auch manuell direkt aus dem interaktiven Fenster anfügen mithilfe des Befehls **R-Tools** > **Sitzung** > **Debugger anfügen**, des Befehls **Debuggen** > **An R Interactive anfügen** oder des Befehls **Debugger anfügen** auf der interaktiven Symbolleiste des Fensters. Sobald dies erfolgt ist, müssen Sie die Dateien einbinden, die Sie debuggen möchten. Wenn Sie die Dateien manuell einfügen wollen, stellen Sie sicher, dass Sie `rtvs::debug_source` verwenden und nicht die regulären `source`-Befehl in R.
 
 Diese Verbindung zwischen dem Debugger und dem interaktiven Fenster vereinfacht viele Dinge, z.B. das Aufrufen (und Debuggen) einer Funktion mit unterschiedlichen Parameterwerten. Nehmen wir beispielsweise an, Sie hätten die folgende Funktion in einer eingebundenen Datei (das bedeutet, dass sie in die Sitzung geladen wurde):
 
@@ -54,7 +55,7 @@ Wenn Sie im Debugger angehalten werden, werden Sie auch bei der Aufforderung des
 
 Der Umgebungsbrowser unterstützt eine Reihe bestimmter Befehle:
 
-| Befehl | description |
+| Befehl | Beschreibung  |
 | --- | --- |
 | n | next: führt die nächste Anweisung in der Codedatei aus (das gleiche wie „step over“) |
 | s | step into: führt die nächste Anweisung in der Codedatei aus, wobei schrittweise ein Funktionsbereich ausgeführt wird, wenn die nächste Anweisung ein Funktionsaufruf ist. |

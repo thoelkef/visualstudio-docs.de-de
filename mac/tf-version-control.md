@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 58d0fc5c31b02574661f8b86a4ae8bcaf393be3a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693772"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37438412"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Verbinden zur Team Foundation-Versionskontrolle 
 
@@ -23,7 +23,7 @@ Visual Studio Team Services (VSTS) und Team Foundation Server (TFS) bieten zwei 
 
 ## <a name="requirements"></a>Anforderungen
 
-* Visual Studio für Mac Version 7.5 oder höher
+* Visual Studio Community, Professional oder Enterprise für Mac 7.5 und höher
 * Visual Studio Team Services oder Team Foundation Server 2013 und höher
 * Ein Projekt in Visual Studio Team Services oder Team Foundation Server, das für die Verwendung der Team Foundation-Versionskontrolle konfiguriert ist
 
@@ -35,65 +35,123 @@ Klicken Sie im Menü von Visual Studio für Mac auf **Visual Studio > Erweiterun
 
 Befolgen Sie die Anweisungen zum Installieren der Erweiterung. Starten Sie die IDE neu, sobald die Installation abgeschlossen wurde.
 
+## <a name="updating-the-extension"></a>Aktualisieren der Erweiterung
+
+Die TFVC-Erweiterung wird regelmäßig aktualisiert. Wählen Sie für den Zugriff auf Updates im Menü **Visual Studio > Erweiterungen...** und anschließend die Registerkarte **Updates** aus. Wählen Sie in der Liste die Erweiterung aus, und klicken Sie auf die Schaltfläche **Aktualisieren**:
+
+  ![Erweiterungs-Manager mit Update](media/tfvc-update.png) 
+
+Klicken Sie im nächsten Dialogfeld auf **Installieren**, um das alte Paket zu deinstallieren und das neue Paket zu installieren.
+
+Informationen zu den Neuigkeiten der einzelnen Releases finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+
 ## <a name="using-the-add-in"></a>Verwenden des Add-Ins
 
-Sobald die Erweiterung installiert wurde, wählen Sie das Menüelement **Versionskontrolle > TFS/VSTS > Connect to Team Foundation Version Control...** (Mit Team Foundation-Versionskontrolle verbinden...) aus. Klicken Sie auf **Hinzufügen**, um ein neues Konto hinzuzufügen: 
+Nach der Installation der Erweiterung wählen Sie das Menüelement **Versionskontrolle > TFS/VSTS > Öffnen aus Remoterepository** aus. 
 
-![Hinzufügen eines TFVC-Servers](media/tfvc-add-remove-server.png)
+Wählen Sie zum Starten entweder Visual Studio Team Services oder Team Foundation Server aus, und klicken Sie auf **Weiter**:
 
-Wählen Sie zum Starten entweder Visual Studio Team Services oder Team Foundation Server aus:
+  ![Verbinden mit einem Server](media/tfvc-choose-server-type.png)
 
-![Verbinden mit einem TFVC-Server](media/tfvc-choose-server-type.png)
+### <a name="vsts-authentication"></a>VSTS-Authentifizierung
 
-Geben Sie Ihre Anmeldeinformationen ein, und klicken Sie auf **Anmelden**: 
+Wenn Sie ein unter VSTS gehostetes Projekt auswählen, werden Sie aufgefordert, Ihre Microsoft-Kontoinformationen einzugeben:
 
-![Anmelden bei einem TFVC-Server](media/tfvc-login.png)
+  ![Verbinden mit einem VSTS-Server](media/tfvc-vsts-login.png)
 
-Wählen Sie nach der erfolgreichen Anmeldung die Projekte aus, auf die Sie zugreifen möchten, und klicken Sie auf **OK**: 
+### <a name="tfs-authentication"></a>TFS-Authentifizierung
 
-![Auswählen der Projekte](media/tfvc-choose-projects.png)
+Geben Sie zum Verbinden mit TFS die Serverdetails und Ihre Kontoanmeldeinformationen ein. Geben Sie eine Domäne ein, um die NTLM-Authentifizierung zu verwenden. Zur Verwendung der Standardauthentifizierung geben Sie nichts ein. Wählen Sie **Server hinzufügen** aus: 
 
-Wählen Sie das Menüelement **Versionskontrolle > TFS/VSTS > Quellcodeverwaltungs-Explorer** aus, um den Quellcodeverwaltungs-Explorer zu öffnen, mit dem Sie die Quelle durchsuchen können.
+![Anmelden bei einem TFS-Server](media/tfvc-login.png)
 
-> [!IMPORTANT]
-> **Bekanntes Problem**: Bei dieser Vorschauversion muss beim erstmaligen Öffnen des Quellcodeverwaltungs-Explorers [ein neuer Arbeitsbereich erstellt werden](#creating-a-new-workspace).
+## <a name="selecting-a-project"></a>Auswählen eines Projekts
 
-![Quellen-Explorer](media/tfvc-source-explorer.png)
+Nach der erfolgreichen Authentifizierung wird im Dialogfeld **Aus Quellcodeverwaltung öffnen** eine Liste mit Repositorys angezeigt, die mit dem Konto verknüpft sind:
 
-Aus dem Quellcode-Explorer können Sie Ihren Quellcode auf dem Server durchsuchen und folgende Aktionen ausführen:
+  ![Dialogfeld „Aus Quellcodeverwaltung öffnen“ mit Projekten](media/tfvc-vsts-projects.png)
 
-- Arbeitsbereiche verwalten (erstellen, bearbeiten oder löschen).
-- Zwischen Projektstrukturen navigieren.
-- Projekte zuordnen.
-- Projekte abrufen.
-- Dateien sperren und entsperren.
-- Dateien umbenennen.
-- Dateien löschen.
-- Neue Dateien hinzufügen.
-- Ausschecken.
-- Einchecken.
-- Verlaufsänderungen anzeigen.
-- Änderungen vergleichen.
+Dieses Dialogfeld ist in die folgenden Knoten unterteilt:
+
+- VSTS-Konto oder Sammlung: Hier werden alle mit dem Microsoft-Konto verbundenen Konten, bei denen Sie angemeldet sind, angezeigt.
+- Teamprojekte: Jeder VSTS kann eine Reihe von Teamprojekten enthalten. Im Teamprojekt werden Quellcode, Arbeitselemente und automatisierte Builds gehostet.
+
+Hier können Sie nach dem Namen eines Projekts oder Kontos suchen und filtern.
+
+### <a name="adding-a-new-server"></a>Hinzufügen eines neuen Servers
+
+Klicken Sie zum Hinzufügen eines neuen Servers zur Liste im Dialogfeld **Aus Quellcodeverwaltung öffnen** auf die Schaltfläche **Host hinzufügen**:
+
+![Hervorgehobene Schaltfläche zum Hinzufügen eines neuen Servers zur Liste](media/tfvc-add-new-server.png)
+
+Wählen Sie in der Liste den Anbieter aus, und geben Sie Ihre Anmeldeinformationen ein:
+
+![Dialogfeld mit der Option für den Quellcodeverwaltungsanbieter](media/tfvc-add-new-creds.png)
 
 ## <a name="creating-a-new-workspace"></a>Erstellen eines neuen Arbeitsbereichs
 
-Klicken Sie im Quellcodeverwaltungs-Explorer auf die Schaltfläche **Arbeitsbereiche verwalten**. 
+Um mit der Arbeit mit einem Projekt beginnen zu können, benötigen Sie einen _Arbeitsbereich_. Wenn Sie noch keinen Arbeitsbereich haben, können Sie über das Kombinationsfeld **Arbeitsbereich** im Dialogfeld **Aus Quellcodeverwaltung öffnen** einen erstellen:
 
-![Arbeitsbereiche verwalten](media/tfvc-manage-workspaces.png)
+![Kombinationsfeldoption zum Erstellen eines neuen Arbeitsbereichs](media/tfvc-create-new-workspace.png)
 
-Klicken Sie auf die Schaltfläche **Hinzufügen**, um einen neuen Arbeitsbereich zu erstellen.
+Legen Sie für den neuen Arbeitsbereich einen Namen und einen lokalen Pfad fest, und wählen Sie **Arbeitsbereich erstellen** aus:
 
-![Arbeitsbereich erstellen](media/tfvc-create-workspace.png)
+![Eingeben eines Namens und eines lokalen Pfads für den neuen Arbeitsbereich](media/tfvc-local-workspace.png)
 
-Geben Sie einen Namen für den Arbeitsbereich an, und klicken Sie dann auf **Add Working Folder** (Arbeitsordner hinzufügen), um das Projekt einem lokalen Ordner auf Ihrem Computer zuzuordnen.
+## <a name="using-the-source-code-explorer"></a>Verwenden des Quellcode-Explorers
 
-Klicken Sie, wenn Sie fertig sind, auf **OK**, und schließen Sie dann das Dialogfeld „Arbeitsbereiche verwalten“. Sie können nun Dateien über den Quellcode-Explorer abrufen und erste Schritte durchführen.
+Nachdem Sie einen Arbeitsbereich erstellt und Ihr Projekt zugeordnet haben, können Sie den _Quellcode-Explorer_ verwenden.
+
+Wählen Sie zum Öffnen des Quellcode-Explorers **Versionskontrolle > TFS/VSTS > Quellcodeverwaltungs-Explorer** aus:
+
+![Menüelement zum Öffnen des Quellcode-Explorers](media/tfvc-source-control-explorer.png)
+
+Mit dem Quellcode-Explorer können Sie durch alle zugeordneten Projekte sowie die dazu gehörenden Dateien und Ordner navigieren. Ferner können Sie damit alle grundlegenden Quellcodeverwaltungsaktionen durchführen. Hierzu zählen folgende:
+
+- Abrufen der neuesten Version
+- Abrufen einer spezifischen Version
+- Ein- und Auschecken von Dateien
+- Sperren und Entsperren von Dateien
+- Hinzufügen, Löschen und Umbenennen von Dateien
+- Verlauf anzeigen
+- Änderungen vergleichen.
+
+Viele dieser Aktionen sind über Kontextaktionen für das Projekt verfügbar:
+
+![Kontextmenüaktionen für ein Projekt](media/tfvc-sourcecode-actions.png)
+
+## <a name="managing-workspaces"></a>Verwalten von Arbeitsbereichen
+
+Wenn Sie noch keinen Arbeitsbereich wie im Abschnitt [Erstellen eines Arbeitsbereichs](#creating-a-new-workspace) erstellt haben, werden Sie feststellen, dass der Quellcode-Explorer leer ist:
+
+![Leerer Quellcode-Explorer](media/tfvc-setup-empty-sce.png) 
+
+Gehen Sie wie folgt vor, um das Remoteprojekt mit einem lokalen Arbeitsbereich einzurichten:
+
+1. Wählen Sie den **Server** im Kombinationsfeld aus.
+1. Beachten Sie, dass „keine Arbeitsbereiche“ vorhanden sind und der lokale Pfad „nicht zugeordnet“ ist. Wählen Sie den Link **Nicht zugeordnet** aus, um das Dialogfeld **Neuen Arbeitsbereich erstellen** anzuzeigen.
+1. Geben Sie einen Namen für den Arbeitsbereich an, und klicken Sie dann auf **Add Working Folder** (Arbeitsordner hinzufügen), um das Projekt einem lokalen Ordner auf Ihrem Computer zuzuordnen.
+    
+    ![Dialogfeld „Neuen Arbeitsbereich erstellen“ mit Standardoptionen](media/tfvc-workspace1.png) 
+
+1. Wählen Sie den Ordner „$“ aus, um alle Teamprojekte auf Ihrem Server demselben Arbeitsbereich zuzuordnen, oder wählen Sie ein einzelnes Projekt aus, und klicken Sie auf **OK**:
+    
+    ![Suche nach Ordnerdialogfeld mit allen Projekten](media/tfvc-workspace2.png) 
+
+1. Wählen Sie den Speicherort auf Ihrem lokalen Computer aus, dem Sie die Projekte zuordnen möchten, und klicken Sie auf **Ordner auswählen**.
+1. Bestätigen Sie die Details des neuen Arbeitsbereichs, indem Sie auf **OK** klicken.
+    
+    ![Dialogfeld „Neuen Arbeitsbereich erstellen“ mit hinzugefügtem Arbeitsordner](media/tfvc-workspace3.png) 
+
+Nachdem Sie Ihren Arbeitsbereich eingerichtet haben, können Sie ihn ändern oder entfernen, indem Sie im Quellcode-Explorer auf die Schaltfläche **Arbeitsbereiche verwalten** klicken.
+
+![Arbeitsbereiche verwalten](media/tfvc-workspace4.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
 ### <a name="problems-using-basic-authentication"></a>Probleme bei der Standardauthentifizierung
 
-Es gibt verschiedene Möglichkeiten, um die Authentifizierung bei einem Server durchzuführen:
+Mithilfe der folgenden Optionen können Sie sich bei einem Server authentifizieren:
 
 - OAuth
 - Standard
@@ -102,12 +160,17 @@ Es gibt verschiedene Möglichkeiten, um die Authentifizierung bei einem Server d
 Wenn Sie die Standardauthentifizierung verwenden möchten, müssen Sie **Alternative authentication credentials** (Alternative Anmeldeinformationen für die Authentifizierung) in VSTS aktivieren, indem Sie folgende Schritte befolgen:
 
 1. Melden Sie sich als Kontobesitzer bei Ihrem VSTS-Konto (https://{IhrKonto}.visualstudio.com) an.
-2. Klicken Sie auf der Symbolleiste Ihres Kontos auf das Zahnradsymbol, und klicken Sie auf **Richtlinie**: ![Ausgewählte Option „Richtlinie“](media/tfvc-auth2.png) 
-3. Überprüfen Sie die Verbindungseinstellungen Ihrer Anwendung. Ändern Sie diese Einstellungen gemäß Ihren Sicherheitsrichtlinien: ![Ausgewählte Option „Richtlinie“](media/tfvc-auth.png)  
+2. Klicken Sie in der Symbolleiste Ihres Kontos auf das Zahnradsymbol und dann auf **Richtlinie**:
+    
+    ![Option „Richtlinieneinstellungen“ ausgewählt](media/tfvc-auth2.png) 
+
+3. Überprüfen Sie die Verbindungseinstellungen Ihrer Anwendung. Ändern Sie diese Einstellungen gemäß Ihren Sicherheitsrichtlinien:
+    
+    ![Option „Richtlinieneinstellungen“ ausgewählt](media/tfvc-auth.png)  
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>In TFVC wird nichts angezeigt
 
-Wenn Sie Team Foundation-Versionskontrolle (TFVC) auf Ihrem Entwicklungscomputer einrichten möchten, **müssen** Sie wie im Abschnitt [Erstellen eines neuen Arbeitsbereichs](#creating-a-new-workspace) beschrieben einen Arbeitsbereich erstellen.
+Wenn Sie Team Foundation-Versionskontrolle (TFVC) auf Ihrem Entwicklungscomputer einrichten möchten, **müssen** Sie wie im Abschnitt [Verwalten von Arbeitsbereichen](#managing-workspaces) beschrieben einen Arbeitsbereich erstellen.
 
 Klicken Sie im Quellcodeverwaltungs-Explorer auf die Schaltfläche **Arbeitsbereiche verwalten**. Befolgen Sie die Schritte, um das Teamprojekt einem Ordner auf dem Entwicklungscomputer zuzuordnen.
 

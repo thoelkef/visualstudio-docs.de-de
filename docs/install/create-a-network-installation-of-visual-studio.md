@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622886"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057995"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Erstellen einer Netzwerkinstallation von Visual Studio 2017
 
@@ -121,7 +121,7 @@ Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines 
 > [!TIP]
 > Bei Ausführung als Teil einer Batchdatei wird mit der Option `--wait` sichergestellt, dass der `vs_enterprise.exe`-Prozess wartet, bis die Installation abgeschlossen ist, ehe ein Exitcode zurückgegeben wird. Dies ist hilfreich, wenn ein Unternehmensadministrator weitere Aktionen für vollständige Installation durchführen möchte (z.B. um [einen Product Key auf eine erfolgreiche Installation anzuwenden](automatically-apply-product-keys-when-deploying-visual-studio.md)), aber auf die Beendigung der Installation warten muss, um den Rückgabecode dieser Installation zu verarbeiten.  Wenn Sie `--wait` nicht verwenden, wird der Prozess `vs_enterprise.exe` beendet, bevor die Installation abgeschlossen ist, und gibt ungenauen Exitcode zurück, der den Status des Installationsvorgangs nicht darstellt.
 
-Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`.  Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.  
+Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`.  Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.
 
 ### <a name="error-codes"></a>Fehlercodes
 
@@ -140,7 +140,7 @@ Wenn Produktupdates verfügbar sind, empfiehlt es sich, [das Layout der Netzwerk
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Gewusst wie: Erstellen eines Layouts für eine frühere Version von Visual Studio 2017
 
 > [!NOTE]
-> Die auf [VisualStudio.com](http://www.visualstudio.com) verfügbaren Visual Studio 2017-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung die neueste verfügbare Version von Visual Studio 2017. Wenn Sie einen Visual Studio-Bootstrapper heute herunterladen und erst in sechs Monaten ausführen, wird die Visual Studio 2017-Version installiert, die zu diesem späteren Zeitpunkt verfügbar ist. Wenn Sie ein Layout erstellen, wird bei Installation von Visual Studio über das Layout die Version von Visual Studio installiert, die im Layout vorhanden ist. Obwohl online ggf. eine neuere Version vorhanden ist, erhalten Sie die Version von Visual Studio im Layout.
+> Die unter [visualstudio.microsoft.com](http://visualstudio.microsoft.com) verfügbaren Visual Studio 2017-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung die neueste verfügbare Version von Visual Studio 2017. Wenn Sie einen Visual Studio-Bootstrapper heute herunterladen und erst in sechs Monaten ausführen, wird die Visual Studio 2017-Version installiert, die zu diesem späteren Zeitpunkt verfügbar ist. Wenn Sie ein Layout erstellen, wird bei Installation von Visual Studio über das Layout die Version von Visual Studio installiert, die im Layout vorhanden ist. Obwohl online ggf. eine neuere Version vorhanden ist, erhalten Sie die Version von Visual Studio im Layout.
 
 Wenn Sie ein Layout für eine ältere Version von Visual Studio 2017 erstellen müssen, wechseln Sie zu https://my.visualstudio.com, um „korrigierte“ Versionen der Visual Studio-2017 Bootstrappers herunterzuladen.
 
@@ -152,7 +152,7 @@ Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer 
 
 ## <a name="get-support"></a>Support aufrufen
 
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
+Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:
 

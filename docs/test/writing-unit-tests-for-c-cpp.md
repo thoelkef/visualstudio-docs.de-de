@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752078"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235317"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -38,7 +38,7 @@ Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als au
 
 - **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
 
-- Die Komponente [CMake Tools für Visual Studio](/cpp/ide/cmake-tools-for-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
+- Die Komponente [CMake Tools für Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 und frühere Versionen**
 
@@ -69,7 +69,7 @@ Fügen Sie als Nächstes der CPP-Datei in Ihrem Komponententest eine `#include`-
 ### <a name="write-test-methods"></a>Schreiben von Testmethoden
 
 > [!NOTE]
-> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die Dokumentation finden Sie unter: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference (Referenz für die Microsoft.VisualStudio.TestTools.CppUnitTestFramework-API)](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Die Dokumentation für Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md). Die Dokumentation für Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests)](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die Dokumentation finden Sie unter: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference (Referenz für die Microsoft.VisualStudio.TestTools.CppUnitTestFramework-API)](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Die Dokumentation für Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Die Dokumentation für Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests)](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Die CPP-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, die als Beispiel für das Schreiben von Testcode definiert sind. Beachten Sie, dass die Signaturen die Makros TEST_CLASS und TEST_METHOD verwenden, wodurch Sie die Methoden über das Fenster „Test-Explorer“ finden können.
 

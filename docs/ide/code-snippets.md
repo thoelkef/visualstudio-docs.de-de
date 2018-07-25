@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924471"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117211"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -36,9 +36,9 @@ Codeausschnitte sind für viele Sprachen verfügbar, einschließlich C#, C++, Vi
 
 Es gibt folgende Möglichkeiten, auf Codeausschnitte zuzugreifen:
 
-- Klicken Sie in der Menüleiste auf **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen...**.
+- Klicken Sie in der Menüleiste auf **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen**.
 
-- Klicken Sie in dem Menü, das Sie per Rechtsklick öffnen, oder im Kontextmenü auf Code-Editor, und klicken Sie anschließend auf **Ausschnitt** > **Ausschnitt einfügen...**
+- Klicken Sie im Kontextmenü (Rechtsklick) im Code-Editor auf **Ausschnitt** > **Ausschnitt einfügen**.
 
 - Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**X**.
 
@@ -74,7 +74,7 @@ if (true)
 
 Ausschnitte können Ersatzparameter enthalten, die Platzhalter sind und ersetzt werden müssen, um genau den Code anzupassen, den Sie schreiben. Im vorherigen Beispiel ist `true` ein Ersatzparameter, den Sie durch die entsprechende Bedingung ersetzen. Diese Ersetzung wird für jede Instanz des Ersatzparameters im Ausschnitt wiederholt.
 
-In Visual Basic gibt es z. B. ein Codeausschnitt, der eine Eigenschaft einfügt. Klicken Sie in einer Visual Basic-Codedatei in dem Menü, das Sie per Rechtsklick öffnen, oder im Kontextmenü auf **Ausschnitt...** > **Ausschnitt einfügen**, um den Ausschnitt einzufügen. Klicken Sie dann auf **Codemuster** > **Eigenschaften, Prozeduren, Ereignisse** > **Eigenschaft definieren**.
+In Visual Basic gibt es z.B. einen Codeausschnitt, der eine Eigenschaft einfügt. Klicken Sie in einer Visual Basic-Codedatei im Kontextmenü (Rechtsklick) auf **Ausschnitt** > **Ausschnitt einfügen**, um den Ausschnitt einzufügen. Klicken Sie dann auf **Codemuster** > **Eigenschaften, Prozeduren, Ereignisse** > **Eigenschaft definieren**.
 
 ![Codeausschnittmenü für „Eigenschaft definieren“](media/code-snippets-vb-property.png)
 

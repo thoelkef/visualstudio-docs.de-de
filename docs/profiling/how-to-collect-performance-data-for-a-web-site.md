@@ -19,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815924"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 
-Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web-Anwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in Visual Studio geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in Visual Studio-IDE geöffnet ist.
+Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in Visual Studio geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in der Visual Studio-IDE geöffnet ist.
 
 > [!NOTE]
 > Der **Leistungs-Assistent** ermöglicht Ihnen das Hinzufügen von Ebeneninteraktionsdaten (TIP) und/oder JScript-Leistungsdaten zu den gesammelten Profilerstellungsdaten. Die Option TIP sammelt Daten von serverseitigen Prozessen. Die JScript-Profilerstellung sammelt Daten aus Skripts, die auf einer lokalen oder Remotewebsite ausgeführt werden. In den meisten Fällen sollten Sie nur eine der Optionen auswählen.
@@ -40,9 +41,9 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
 - Einige Benutzer könnten den Zugriff auf Profilerstellung für alle anderen Benutzer verweigern.
 
- Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).
+ Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und in den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).
 
-## <a name="to-profile-a-web-site-project"></a>Profilieren eines Websiteprojekts
+## <a name="to-profile-a-web-site-project"></a>Profilerstellung für ein Websiteprojekt
 
 1. Öffnen Sie das [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webprojekt in Visual Studio.
 
@@ -62,11 +63,11 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
 7. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.
 
-8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.
+8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung erstellt, und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.
 
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hauptfenster.
 
-## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Profilieren einer Website ohne ein Projekt in Visual Studio zu öffnen
+## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Profilerstellung für eine Website ohne das Öffnen eines Projekts in Visual Studio
 
 1. Öffnen Sie Visual Studio.
 
@@ -90,13 +91,13 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
     - Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.
 
-    - Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.
+    - Aktivieren Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript**.
 
 7. Klicken Sie auf **Weiter**.
 
 8. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.
 
-9. Eine Leistungssitzung wird für die ASP.NET-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.
+9. Eine Leistungssitzung wird für die ASP.NET-Anwendung erstellt, und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.
 
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hauptfenster.
 

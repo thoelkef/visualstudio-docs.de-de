@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750297"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947127"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorialschritt 1: Erste Schritte mit dem Django-Webframework in Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
 [Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. In diesem Tutorial wird das Django-Framework im Zusammenhang mit Visual Studio-Projektvorlagen beschrieben, die die Erstellung von Django-basierten Web-Apps optimieren sollen.
 
@@ -207,7 +207,7 @@ Noch enthält das Django-Basisprojekt keine Apps. Im nächsten Schritt erfahren 
 > [!div class="nextstepaction"]
 > [Erstellen einer Django-App mit Ansichten und Seitenvorlagen](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - Django-Projektcode: [Writing your first Django app, part 1 (Erstellen Ihrer ersten Django-App – Teil 1)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Verwaltungsprogramm: [django-admin and manage.py („django-admin“ und „manage.py“)](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)

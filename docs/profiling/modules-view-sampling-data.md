@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256867"
 ---
-# <a name="modules-view---sampling-data"></a>Modulansicht – Profiler-Samplingdaten
+# <a name="modules-view---sampling-data"></a>Modulansicht: Samplingdaten
 In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den Profilerstellungsdaten ein Sampling ausgeführt wurde, nach Modulen gruppiert angezeigt. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen des Moduls, für die ein Sampling ausgeführt wurde, werden unter dem Modulknoten aufgeführt.  
   
 > [!NOTE]
@@ -27,7 +28,7 @@ In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den
   
  Wenn die Funktion ausgeführt wurde, als Samplings gesammelt wurden, die Funktion sich also ganz oben in der Aufrufliste befunden hat, werden die zum jeweiligen Zeitpunkt ausgeführten Quellzeilen und Anweisungsadressen unter dem Funktionsknoten aufgeführt. Da die Daten für eine Quellzeile oder einen Anweisungszeiger erfasst werden, wenn die Zeile oder die Anweisung ausgeführt wird, sind die inklusiven und exklusiven Werte der Zeilen- und der Anweisungsdaten immer gleich.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Name**|Der Name des Moduls, der Funktion, der Zeilennummer oder der Adresse des Anweisungszeigers.|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
@@ -42,6 +43,6 @@ In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den
 |**Exklusive Samplings %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung exklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Modulansicht - Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Modulansicht - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Modulansicht: Instrumentierung](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modulansicht](../profiling/modules-view-instrumentation-data.md)

@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24569300"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962657"
 ---
 # <a name="javascript-language-reference"></a>JavaScript-Sprachreferenz
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Skriptsprache, die in Webseiten und anderen Anwendungen eingebettet werden kann.  
   
  Diese Dokumentation beschreibt die Microsoft-Implementierung von JavaScript, die mit der 5. Ausgabe der ECMAScript-Sprachenspezifikationen kompatibel ist. Sie stellt auch zusätzliche Funktionen bereit, die nicht in den ECMA-Standards enthalten sind.  
+
+> [!NOTE]
+> In dem Bemühen, die [MDN-Webdokumentation](https://developer.mozilla.org/en-US/) als führende zentrale Entwicklungsressource zu etablieren, werden alle Verweise auf die JavaScript-API von Microsoft (über 500 Seiten) von „docs.microsoft.com“ zu den jeweiligen MDN-Entsprechungen umgeleitet. Weitere Einzelheiten finden Sie in dieser [Ankündigung](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Sie können [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] -Code in Browseranwendungen zusammen mit HTML, CSS und dem DOM (Document Object Model) verwenden, das HTML- und Browserobjekte darstellt.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24569300"
 -   Informationen zum Verwenden der Windows-Runtime-API mit JavaScript finden Sie unter [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md).  
   
  Der JavaScript-Editor in Visual Studio bietet IntelliSense-Unterstützung. Weitere Informationen finden Sie unter [JavaScript IntelliSense](http://go.microsoft.com/fwlink/p/?LinkId=256499).  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- Die folgenden Abschnitte enthalten weitere Informationen über JavaScript.  
-  
- [Neuigkeiten bei JavaScript](../javascript/what-s-new-in-javascript.md)  
- Beschreibt neue Funktionen in JavaScript.  
-  
- [JavaScript-Grundlagen](../javascript/javascript-fundamentals.md)  
- Enthält eine Einführung in die grundlegenden Strukturen in JavaScript.  
-  
- [Erweitertes JavaScript](../javascript/advanced/advanced-javascript.md)  
- Erklärt erweiterte JavaScript-Funktionen, wie Rekursion, Arrays, Problembehandlung usw.  
-  
- [JavaScript-Referenz](../javascript/reference/javascript-reference.md)  
- Erläutert die Elemente der JavaScript-Sprache.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dokumentobjektmodell](http://go.microsoft.com/fwlink/?LinkId=148095)

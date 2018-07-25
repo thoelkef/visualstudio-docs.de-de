@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a576507b6ecc61ed65ce05bdad5ab302a5873fba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb7ab1e30eeb20622964cd410adb0300843b964f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254630"
 ---
-# <a name="no-disk-activity-to-show-threads-view"></a>Es wird keine Datenträgeraktivität angezeigt (Threadansicht)
+# <a name="no-disk-activity-to-show-threads-view"></a>Es kann keine Datenträgeraktivität angezeigt werden (Threadansicht)
 Für die E/A-Kanäle des Datenträgers kann für den aktuellen Zeitraum keine Datenträgeraktivität angezeigt werden. Datenträgeraktivität kann angezeigt werden, wenn Sie verkleinern oder scrollen. Stellen Sie außerdem sicher, dass keine Datenträgerkanäle ausgeblendet sind.  
   
 ## <a name="see-also"></a>Siehe auch  

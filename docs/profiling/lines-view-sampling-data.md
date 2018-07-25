@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b35964aeef4323f4daff01d77aef5d3d5bf7f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845089"
 ---
-# <a name="lines-view---sampling-data"></a>Zeilenansicht - Samplingdaten
+# <a name="lines-view---sampling-data"></a>Zeilenansicht: Samplingdaten
 In der Zeilenansicht der Samplingdaten werden die Leistungsdaten für die Anweisungen aufgeführt, die ausgeführt wurden, als die Samplings bei der Profilerstellung erfasst wurden.  
   
 > [!NOTE]
@@ -42,7 +43,7 @@ In der Zeilenansicht der Samplingdaten werden die Leistungsdaten für die Anweis
   
  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  
@@ -61,4 +62,4 @@ In der Zeilenansicht der Samplingdaten werden die Leistungsdaten für die Anweis
 |**Exklusive Samplings %**|Der Prozentsatz aller Samplings bei der Profilerstellung, die gesammelt wurden, als die Funktionszeile ausgeführt wurde.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zeilenansicht - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)
+ [Zeilenansicht: Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)

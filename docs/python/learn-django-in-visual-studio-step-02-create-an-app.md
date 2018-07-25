@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750505"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947437"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Tutorial, Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
 **Vorheriger Schritt: [Erstellen eines Visual Studio-Projekts und einer -Projektmappe](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -48,10 +48,10 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 
 ![Django-App-Dateien im Projektmappen-Explorer](media/django/step02-django-app-in-solution-explorer.png)
 
-| Element | description |
+| Element | Beschreibung  |
 | --- | --- |
-| `__init.py__` | Die Datei, die die App als Paket identifiziert. |
-| `migrations` | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei `__init.py__` (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
+| `__init__.py` | Die Datei, die die App als Paket identifiziert. |
+| `migrations` | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei `__init__.py` (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
 | `templates` | Ordner für Django-Seitenvorlagen, die eine Datei `index.html` enthalten. Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in `index.html`, sind Platzhalter für dynamische Werte, wie weiter unten in diesem Artikel (Schritt 2) erläutert. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
 | `admin.py` | Python-Datei, in die Sie die Verwaltungsschnittstelle (siehe Schritt 6) der App erweitern, mit der Sie Daten in einer Datenbank sehen und bearbeiten. Diese Datei enthält zunächst nur die Anweisung `from django.contrib import admin`. Django enthält standardmäßig eine Standard-Verwaltungsschnittstelle über Einträge in der Datei `settings.py` des Django-Projekts, die Sie durch Auskommentieren vorhandener Einträge in `urls.py` aktivieren können. |
 | `apps.py` | Ein Python-Datei, die eine Konfigurationsklasse für die App definiert (weitere Informationen finden Sie im Anschluss an die Tabelle). |
@@ -107,7 +107,7 @@ Wenn Sie an diesem Punkt das Projekt in Visual Studio erneut ausführen (über d
 
 Da Sie Änderungen an Ihrem Code vorgenommen und erfolgreich getestet haben, ist jetzt ein guter Zeitpunkt zum Überprüfen und Fortschreiben von Änderungen der Quellcodeverwaltung. Spätere Schritte in diesem Tutorial erinnern Sie an den geeigneten Zeitpunkt für ein erneutes Commit für die Quellcodeverwaltung und verweisen wieder auf diesen Abschnitt.
 
-1. Klicken Sie auf die Schaltfläche „Änderungen“ am unteren Rand von Visual Studio (unten eingekreist), mit dem Sie zum **Team Explorer** gelangen.
+1. Klicken Sie im unteren Bereich von Visual Studio auf die Schaltfläche „Änderungen“ (unten eingekreist). Dadurch wird der **Team Explorer** aufgerufen.
 
     ![Schaltfläche für Änderungen der Quellcodeverwaltung in der Statusleiste von Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,7 +211,7 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
 1. Führen Sie das Projekt aus, und berücksichtigen Sie die Ausgabe. Sie sollten eine mit der Meldung aus Schritt 2-2 vergleichbare Meldung sehen, die angibt, dass die Vorlage funktioniert.
 
-    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern versehentliche Sicherheitslücken für Angriffe durch Einschleusung: Entwickler sammeln häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Escapezeichen sind auch eine Erinnerung daran, dass es am besten ist, HTML-Code außerhalb des Codes in der Seitenvorlage zu schreiben. Glücklicherweise ist es eine einfache Angelegenheit, bei Bedarf zusätzliche Variablen zu erstellen. Ändern Sie z.B. `templates/index.html` entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage behält:
+    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injectionangriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Escapezeichen sind auch eine Erinnerung daran, dass es am besten ist, HTML-Code außerhalb des Codes in der Seitenvorlage zu schreiben. Glücklicherweise ist es eine einfache Angelegenheit, bei Bedarf zusätzliche Variablen zu erstellen. Ändern Sie z.B. `templates/index.html` entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage behält:
 
     ```html
     <html>
@@ -272,7 +272,7 @@ Antwort: Wenn Django eine Vorlage sucht, auf die in der Funktion `render` verwie
 > [!div class="nextstepaction"]
 > [Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Writing your first Django app, part 1 - views (Erstellen Ihrer ersten Django-App – Teil 1: Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Weitere Funktionen von Django-Vorlagen, z.B. „includes“ und Vererbung, finden Sie unter [The Django template language (Django-Vorlagensprache)](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

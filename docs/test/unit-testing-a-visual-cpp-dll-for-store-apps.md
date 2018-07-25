@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751870"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117627"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -26,7 +26,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
-1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Neues Projekt** aus.
+1.  Klicken Sie im Menü **Datei** auf **Neu** > **Neues Projekt**.
 
 2.  Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
 
@@ -46,7 +46,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     -   Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.
 
-         Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in der MSDN Library.
+         Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) in der MSDN Library.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
 
@@ -113,7 +113,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 5.  Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie **RooterLib.cpp** und fügen Sie den folgenden Code hinzu:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -135,7 +135,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     2.  Erweitern Sie im Dialogfeld „Projekteigenschaften“ von RooterLib die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise**.
 
-    3.  Wählen Sie **Neuen Verweis hinzufügen**.
+    3.  Klicken Sie auf **Neuen Verweis hinzufügen**.
 
     4.  Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
 
@@ -151,7 +151,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 3.  Fügen Sie einen Test hinzu, der die importierte Funktion verwendet. Fügen Sie **unittest1.cpp** den folgenden Code hinzu:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 1.  Fügen Sie einen anderen Test zu **unittest1.cpp** hinzu:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     3.  Fügen Sie **RooterLib.cpp** einen Code hinzu, um die Ausnahme abzufangen:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

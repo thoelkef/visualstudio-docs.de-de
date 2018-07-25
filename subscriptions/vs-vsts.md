@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Visual Studio Team Services (VSTS) als Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196075"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281819"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio Team Services-Vorteile (VSTS) für Visual Studio-Abonnenten
 
@@ -22,9 +22,10 @@ Als aktiver Visual Studio-Abonnent können Sie zahlreiche Features in VSTS verwe
 
 Es wird automatisch erkannt, ob Sie sich bei VSTS mit der Identität anmelden, die Sie zur Aktivierung Ihres Visual Studio-Abonnements verwendet haben, oder mit Ihrer [alternativen Identität](vs-alternate-identity.md).
 
-[Registrieren Sie sich für ein kostenloses VSTS-Konto](https://www.visualstudio.com/team-services/)
+[Registrieren Sie sich für ein kostenloses VSTS-Konto](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>Berechtigung
+
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, jährliche Cloud, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Basic, Test-Manager, Paketverwaltung, selbstgehostete CI/CD       |  Ja          |
@@ -34,10 +35,9 @@ Es wird automatisch erkannt, ob Sie sich bei VSTS mit der Identität anmelden, d
 
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services (Developer). Umfasst nicht: MCT Software & Services, Imagine.*
 
-
-
 Weitere Informationen zu den VSTS-Features:
-- [Standard](https://www.visualstudio.com/team-services/compare-features/)
+
+- [Standard](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Test-Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Paketverwaltung](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -46,6 +46,6 @@ Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige 
 
 ## <a name="support-resources"></a>Supportressourcen
 
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/).
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 -  Vollständige [Dokumentation zu Visual Studio Team Services](/vsts/).

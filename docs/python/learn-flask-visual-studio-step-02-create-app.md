@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752158"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118199"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Tutorial, Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
 **Vorheriger Schritt: [Erstellen eines Visual Studio-Projekts und einer -Projektmappe](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei `app.py` erstell
 
 1. Erstellen Sie im Projektordner einen App-Ordner mit dem Namen `HelloFlask`. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste zuerst auf das Projekt und anschließend auf **Hinzufügen** > **Neuer Ordner**.
 
-1. Erstellen Sie im Ordner `HelloFlask` eine Datei mit dem Namen `__init.py__` und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
+1. Erstellen Sie im Ordner `HelloFlask` eine Datei mit dem Namen `__init__.py` und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ Antwort: Ja, Sie können Unterordner verwenden und dann auf den relativen Pfad i
 > [!div class="nextstepaction"]
 > [Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Flask Quickstart - Rendering Templates (Flask-Schnellstart: Rendern von Vorlagen)](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
