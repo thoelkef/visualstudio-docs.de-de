@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979411"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117400"
 ---
 # <a name="unit-testing-visual-c-code"></a>Komponententests in Visual C#-Code
 
@@ -26,7 +26,7 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Erstellen Sie die Projektmappe und das Komponententestprojekt.
 
-1. Wählen Sie im Menü **Datei** die Befehlsfolge **Neu** > **Projekt...** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C#**, und wählen Sie **Windows Universal** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.
 

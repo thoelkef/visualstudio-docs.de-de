@@ -1,7 +1,7 @@
 ---
 title: Webanwendungsvorlagen für Python
 description: Eine Übersicht der Visual Studio-Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen, einschließlich Debugkonfigurationen und Veröffentlichung im Azure App Service.
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752039"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847764"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
 Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Bottle-, Flask- und Django-Frameworks mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandeln kann. Diese Vorlagen enthalten eine `requirements.txt`-Datei, um die erforderlichen Abhängigkeiten zu deklarieren. Wenn Sie ein Projekt aus einer dieser Vorlagen erstellen, fordert Visual Studio Sie dazu auf, diese Pakete zu installieren (siehe [Installieren der Projektanforderungen](#installing-project-requirements) weiter unten in diesem Artikel).
 
 Sie können auch die generische Vorlage „Webprojekt“ für andere Frameworks wie z.B Pyramid verwenden. In diesem Fall werden keine Frameworks mit der Vorlage installiert. Installieren Sie stattdessen die erforderlichen Pakete in der Umgebung, die Sie für das Projekt verwenden (siehe [Verwalten von Python-Umgebungen](managing-python-environments-in-visual-studio.md)).
+
+Weitere Informationen zum Bereitstellen einer Python-Web-App in Azure finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="using-a-project-template"></a>Verwenden einer Projektvorlage
 
@@ -38,7 +40,7 @@ Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django 
 
 Alle Vorlagen für „leere (Framework)-Webprojekte“ erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen in einer `requirements.txt`-Datei deklarierten Abhängigkeiten.
 
-| Vorlage | description |
+| Vorlage | Beschreibung  |
 | --- | --- |
 | Leeres Bottle-Webprojekt | Generiert eine minimale App in `app.py` mit einer Homepage für `/` und einer `/hello/<name>`-Seite, die `<name>` mithilfe einer sehr kurzen Vorlage für eine Inline-Seite wiederholt. |
 | Leeres Django-Webprojekt | Generiert ein Django-Projekt mit der grundlegenden Django-Websitestruktur, aber ohne Django-Apps. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 1 (Schritt 1 des Django-Tutorials)](learn-django-in-visual-studio-step-01-project-and-solution.md). |
@@ -48,7 +50,7 @@ Alle Vorlagen für „leere (Framework)-Webprojekte“ erstellen ein Projekt mit
 
 Alle Vorlagen für „(Framework)-Webprojekte“ erstellen eine Web-App mit einem identischen Design, unabhängig vom ausgewählten Framework. Die App verfügt über die Seiten „Home“, „Info“ und „Kontakte“ sowie einer Navigationsleiste und reaktives Design über Bootstrap. Jede App wird entsprechend der statischen Serverdateien (CSS, JavaScript und Schriftarten) konfiguriert und verwendet einen Seitenvorlagenmechanismus entsprechend dem Framework.
 
-| Vorlage | description |
+| Vorlage | Beschreibung  |
 | --- | --- |
 | Bottle-Webprojekt | Generiert eine App, bei der die statischen Dateien im Ordner `static` enthalten und durch den Code in `app.py` verarbeitet werden. Das Routing für die individuellen Seiten wird in `routes.py` enthalten, und der Ordner `views` enthält die Seitenvorlagen.|
 | Django-Webprojekt | Generiert ein Django-Projekt und eine Django-App mit drei Seiten, Authentifizierungsunterstützung und einer SQLite-Datenbank (jedoch ohne Datenmodelle). Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 4 (Schritt 4 des Django-Tutorials)](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -59,7 +61,7 @@ Alle Vorlagen für „(Framework)-Webprojekte“ erstellen eine Web-App mit eine
 
 Die Vorlagen „(Framework)-Webprojekt für Umfragen“ erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von Webprojektvorlagen auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer `samples.json`-Datei lädt.
 
-| Vorlage | description |
+| Vorlage | Beschreibung  |
 | --- | --- |
 | Bottle-Webprojekt für Umfragen | Generiert eine App, die für eine In-Memory Database, für MongoDB oder für Azure Table Storage ausgeführt werden kann, die mithilfe der Umgebungsvariable `REPOSITORY_NAME` konfiguriert wird. Die Codes für Datenmodelle und Datenspeicher werden in dem Ordner `models` enthalten. Die Datei `settings.py` enthält Code, um zu bestimmen, welcher Datenspeicher verwendet wird. |
 | Django-Webprojekt für Umfragen | Generiert ein Django-Projekt und eine Django-App mit drei Seiten und einer SQLite-Datenbank. Enthält Anpassungen an der Django-Verwaltungsschnittstelle, um einem authentifizierten Administrator zu berechtigen, Umfragen zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und [Learning Django Step 6 (Schritt 6 des Django-Tutorials)](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |

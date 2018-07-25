@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752150"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947114"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorialschritt 1: Erste Schritte mit dem Flask-Webframework in Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
 [Flask](http://flask.pocoo.org/) ist ein einfaches Python-Framework für Webanwendungen, das die Grundlagen für URL-Routing und das Rendern von Seiten bereitstellt.
 
@@ -251,7 +251,7 @@ Zu diesem Zeitpunkt enthält das einfache Flask-Projekt den Startcode sowie den 
 > [!div class="nextstepaction"]
 > [Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Flask Quickstart (Flask-Schnellstart)](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

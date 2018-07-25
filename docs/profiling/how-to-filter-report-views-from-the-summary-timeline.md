@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e2eb675b63d0c0e270e1a38bc005ae29b0595d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fb2c9bc8d0bcec6bc4a07c03dc18f07286cd77c1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815495"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht
 Sie können die Daten filtern, die in Leistungsberichten angezeigt werden, indem Sie ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht angeben. Wenn Sie Berichte filtern, wird die Profilerstellungs-Datendatei erneut analysiert, damit sie nur das von Ihnen angegebene Zeitsegment enthält.  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968767"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280610"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Zuweisen von Rollen an einen Testcontroller und einen Test-Agent
 
@@ -41,7 +41,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ## <a name="to-create-and-configure-a-test-setting"></a>So erstellen und konfigurieren Sie eine Testeinstellung
 
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Projektmappenelemente**, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Projektmappenelemente**, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -51,7 +51,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 4.  Wählen Sie **Hinzufügen** aus.
 
-     Die neue Testdatei „TestSettingDistributedTestWalkthrough.testsettings“ wird im Projektmappen-Explorer im Ordner **Projektmappenelemente** angezeigt.
+     Die neue Testdatei *TestSettingDistributedTestWalkthrough.testsettings* wird im **Projektmappen-Explorer** im Ordner **Projektmappenelemente** angezeigt.
 
      Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
 

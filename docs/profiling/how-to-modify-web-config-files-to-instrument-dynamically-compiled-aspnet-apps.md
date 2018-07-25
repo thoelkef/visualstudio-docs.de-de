@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336031"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844764"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen zu sammeln.  
   
- In diesem Thema wird beschrieben, wie die Konfigurationsdatei „web.config“ zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen geändert werden kann.  
+ In diesem Thema wird beschrieben, wie die Konfigurationsdatei *web.config* zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen geändert werden kann.  
   
 > [!NOTE]
->  Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder Sie ein vorkompiliertes Modul [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] instrumentieren möchten, brauchen Sie die web.config-Datei nicht zu ändern.  
+>  Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder ein vorkompiliertes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Modul instrumentieren möchten, brauchen Sie die *web.config*-Datei nicht zu ändern.  
   
- Der Stamm einer web.config-Datei ist das Element **configuration**. Sie müssen zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung folgende Elemente ändern oder hinzufügen:  
+ Der Stamm einer *web.config*-Datei ist das Element **configuration**. Zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung müssen Sie folgende Elemente ändern oder hinzufügen:  
   
 -   Ein Element **configuration/runtime/assemblyBinding/dependentAssembly**, das das Microsoft.VisualStudio.Enterprise.ASPNetHelper-Assembly identifiziert, das die Profilerstellung steuert. Das Element **dependentAssembly** enthält zwei untergeordnete Elemente: **assemblyIdentity** und **codeBase**.  
   
@@ -33,7 +33,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
   
 -   Zwei Elemente **add**, die den Speicherort der Tools „Profilerstellungstools“ identifizieren, werden zum Abschnitt **configuration/appSettings** hinzugefügt.  
   
- Sie sollten eine Kopie der originalen web.config-Datei erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
+ Es wird empfohlen, eine Kopie der originalen *web.config*-Datei zu erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>So fügen Sie die ASPNetHelper-Assembly als Element „configuration/runtime/assemblyBinding/dependentAssembly“ ein  
   
@@ -176,7 +176,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 ```  
   
 ## <a name="example"></a>Beispiel  
- Im Folgenden finden Sie eine vollständige web.config-Datei, die die Instrumentierung und Profilerstellung von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen ermöglicht. In diesem Beispiel wird davon ausgegangen, dass es keine anderen Einstellungen in der Datei vor der Änderung gab.  
+ Das folgende Beispiel zeigt eine vollständige *web.config*-Datei, die die Instrumentierung und Profilerstellung von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen ermöglicht. In diesem Beispiel wird davon ausgegangen, dass es keine anderen Einstellungen in der Datei vor der Änderung gab.  
   
 ```xml  
 <?xml version="1.0"?>  

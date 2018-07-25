@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978917"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117796"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -41,7 +41,7 @@ Erstellen Sie zunächst eine Visual Studio-Projektmappe mit dem Namen `UtilityLi
 
 Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie Visual Studio 2017 und führen Sie zum Erstellen der Projektmappe die folgenden Schritte aus:
 
-1. Wählen Sie aus dem Hauptebenenmenü von Visual Studio die Option **Datei**, **Neu**, **Projekt** aus.
+1. Klicken Sie in der Menüleiste von Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
 1. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Andere Projekttypen**, und wählen Sie **Visual Studio-Projektmappen** aus. Wählen Sie im rechten Bereich die Vorlage **Leere Projektmappe** aus, und geben Sie `UtilityLibraries` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
@@ -52,7 +52,7 @@ Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie 
 Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit dem Namen `StringLibrary`, die einige Erweiterungsmethoden für das Arbeiten mit Zeichenfolgen enthält.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, und wählen Sie **Hinzufügen** > **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Standard** aus.
 
@@ -80,7 +80,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 1.  Wählen Sie aus dem Hauptebenenmenü von Visual Studio die Option **Erstellen**, **Projektmappe erstellen** aus. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, und wählen Sie **Hinzufügen** > **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Standard** aus.
 
@@ -118,7 +118,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibrary`-Bibliothek erstellt. Führen Sie die folgenden Schritte aus, um die Komponententests zu erstellen:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, und wählen Sie **Hinzufügen** > **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Core** aus.
 
@@ -156,7 +156,7 @@ Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibra
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, und wählen Sie **Hinzufügen** > **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Core** aus.
 

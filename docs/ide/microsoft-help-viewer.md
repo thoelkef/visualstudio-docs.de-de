@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948206"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117159"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Sie können Inhalte aus verschiedenen Produkten und Technologien mithilfe von Microsoft Help Viewer auf Ihrem lokalen Computer installieren und anzeigen, z.B. Visual Studio, .NET Framework, die Sprachreferenz, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:
+Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen. Diese Produkte enthalten Visual Studio, .NET Framework, Sprachreferenzen, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:
 
--   Suchen Sie nach Inhaltssätzen (auch als Bücher bezeichnet), und laden Sie diese herunter.
+- Laden Sie Inhalte herunter, die auch als „Bücher“ bezeichnet werden. Dies kann nützlich sein, wenn Sie offline arbeiten müssen und dennoch Zugriff auf die Dokumentation benötigen.
 
--   Sie können über eine Suche im Inhaltsverzeichnis Themen anhand von Überschriften finden
+- Sie können über eine Suche im Inhaltsverzeichnis Themen anhand von Überschriften finden
 
--   Suchen Sie nach Themen im Index.
+- Suchen Sie nach Themen im Index.
 
--   Suchen Sie mithilfe der Volltextsuche nach Informationen.
+- Suchen Sie mithilfe der Volltextsuche nach Informationen.
 
--   Zeigen Sie Themen an, versehen Sie Themen mit Lesezeichen, und drucken Sie Themen aus.
+- Zeigen Sie Themen an, versehen Sie Themen mit Lesezeichen, und drucken Sie Themen aus.
 
 Weitere Informationen zu Help Viewer finden Sie unter [Installieren von Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Wechseln Sie zum Menü **Hilfe** in Visual Studio, und klicken Sie auf **Hilfeeinstellungen festlegen** > **In Help Viewer starten**, um Hilfethemen nicht online, sondern in Help Viewer zu lesen.
+
+> [!TIP]
+> Sie können Inhalte ebenfalls lokal als PDF-Version herunterladen, um diese anzuzeigen, wenn Sie nicht über eine Internetverbindung verfügen. Viele Dokumentationen auf docs.microsoft.com enthalten einen Link unter dem Inhaltsverzeichnis, über den Sie eine PDF-Datei herunterladen können, die alle Artikel für dieses Inhaltsverzeichnis enthält.
+>
+> ![PDF für die Visual Studio-Dokumentation herunterladen](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Überblick über Help Viewer
 
@@ -50,12 +55,12 @@ Sie können Informationen im installierten Inhalt suchen, indem Sie die Navigati
 
 ### <a name="navigation-tabs"></a>Registerkarten für die Navigation
 
-|Registerkarte|Beschreibung|
+|Registerkarte|Beschreibung |
 |---|-----------|
 |Inhalt|Zeigt die installierten Inhalte hierarchisch an (Inhaltsverzeichnis). Sie können Kriterien festlegen, anhand derer Sie die angezeigten Titel filtern können.|
 |Index|Zeigt eine alphabetische Liste der indizierten Begriffe an. Sie können den Index durchsuchen, Kriterien zum Filtern der Einträge angeben und festlegen, dass Indexeinträge entweder eine bestimmte Textzeichenfolge enthalten oder mit dieser beginnen.|
 |Favoriten|Über die Schaltfläche **Zu Favoriten hinzufügen** können Sie interessante Themen speichern. Die Themen werden dann auf dieser Registerkarte angezeigt. Im Abschnitt **Verlauf** wird eine Liste der Themen angezeigt, die Sie sich zuletzt angesehen haben.|
-|Suche|Stellt ein Textfeld bereit, über das Sie überall, auch im Code und in den Themenüberschriften, nach Begriffen suchen können.|
+|Suchen|Stellt ein Textfeld bereit, über das Sie überall, auch im Code und in den Themenüberschriften, nach Begriffen suchen können.|
 
 ### <a name="view-topics"></a>Anzeigen von Themen
 
@@ -74,19 +79,19 @@ In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw.
 
 Die Symbolleiste im **Help Viewer-Fenster** enthält die folgenden Schaltflächen:
 
--   Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.
+- Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.
 
--   Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.
+- Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.
 
--   Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.
+- Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.
 
--   Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.
+- Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.
 
--   Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.
+- Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.
 
--   Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.
+- Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.
 
--   Über das kleine Dreieck rechts wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können einem Registerkartennamen auswählen und die entsprechende Registerkarte zur aktiven Registerkarte machen.
+- Über das kleine Dreieck rechts wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können einem Registerkartennamen auswählen und die entsprechende Registerkarte zur aktiven Registerkarte machen.
 
 ## <a name="see-also"></a>Siehe auch
 

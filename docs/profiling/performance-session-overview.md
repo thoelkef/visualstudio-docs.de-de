@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255157"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entwickler, die wenig Erfahrung mit Leistungsarbeit haben, werden lernen, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ihnen helfen, schnell produktiv zu werden und die Leistung ihres Codes zu steigern. Entwickler, die bereits Erfahrung mit der Profilerstellung haben, erhalten eine Übersicht über besondere Features und Vorgänge der Profilerstellungstools.  
@@ -56,7 +57,7 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
   
  Beim Herunterfahren der Zielanwendung generiert das Profilerstellungstool eine Profilerstellungsdatendatei (*.vsp) und zeigt den Zusammenfassungsbericht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE an.  
   
-## <a name="analyze-the-data-and-identify-performance-issues"></a>Analysieren der Daten zur Ermittlung von Leistungsproblemen  
+## <a name="analyze-the-data-and-identify-performance-issues"></a>Analysieren der Daten und Ermitteln von Leistungsproblemen  
  Wenn Sie eine Profilerstellung beenden, werden die Daten analysiert und in den Ansichtsfenstern **Leistungsbericht** der Profilerstellungstools wird eine Zusammenfassung angezeigt. Es werden Profilerstellungsdaten für die Aufrufliste und einzelne Funktionen der Anwendung gesammelt. Berichtansichten zeigen Leistungsanalysen für Datenbereiche der Prozesse, Threads, Module, Funktionen und Quellcodezeilen der Anwendung an. Profilerstellungsdatenwerte für eine Funktion enthalten:  
   
 -   Die gesamte Zeit in der Funktion und in untergeordneten Funktionen, die von der Funktion (inklusive Werte) aufgerufen wurden  
@@ -68,7 +69,7 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 ## <a name="modify-the-application-code"></a>Ändern des Anwendungscodes  
  Nachdem Sie eines oder mehrere relevante Leistungsprobleme isoliert haben, können Sie den Code mit der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE ändern, und dann die Profilerstellungsdaten für Ihre Änderungen sammeln.  
   
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Erneutes Auflisten von Profilerstellungsdaten und Vergleichen der Daten zwischen den Profilerstellungen  
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Erneutes Auflisten von Profilerstellungsdaten und Vergleichen der Daten zwischen den Profilerstellungsvorgängen  
  Die Ansicht des Vergleichsberichts der Profilerstellungstools zeigt den Unterschied in Modul-, Funktions- oder Zeilenleistung zwischen zwei ausgewählten Profilerstellungsdatendateien. Sie können die Datenwerte der Profilerstellung angeben, die Sie vergleichen möchten, und Sie können zwischen der Vergleichsansicht und Ansichten der einzelnen Dateien wechseln.  
   
 ## <a name="generate-a-report-of-the-results"></a>Erstellen eines Berichts mit den Ergebnissen  

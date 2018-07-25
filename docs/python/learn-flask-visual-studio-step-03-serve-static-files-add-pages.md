@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752155"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089801"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Tutorial Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
 **Vorheriger Schritt:[Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 > [!div class="nextstepaction"]
 > [Verwenden der vollständigen Vorlage „Flask-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
+- [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Weitere Informationen zu den Funktionen der Jinja-Vorlagen (z.B. Ablaufsteuerung) finden Sie in der [Dokumentation zum Jinja-Vorlagen-Designer](http://jinja.pocoo.org/docs/2.10/templates) unter jinja.pocoo.org.
 - Weitere Informationen zur Verwendung von `url_for` finden Sie in der Dokumentation zu Flask-Anwendungsobjekten (flask.pocoo.org) unter [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for).
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -1,7 +1,7 @@
 ---
 title: IPython REPL (Interaktives Fenster)
 description: Verwenden des interaktiven Visual Studio-Fensters im IPython-Modus als benutzerfreundliche interaktive Entwicklungsumgebung mit Funktionen für interaktives paralleles Computing.
-ms.date: 07/13/2017
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1581c9cd7cb317a50932e85bb46159c508d8522
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582526"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057660"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
@@ -27,29 +27,32 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
 > [!Note]
 > IronPython unterstützt IPython nicht, obwohl Sie es auf dem Formular „Interactive-Optionen“ auswählen können. Weitere Informationen finden Sie unter [feature request](https://github.com/Microsoft/PTVS/issues/84) (Funktionsanforderungen).
 
-1. Öffnen Sie Visual Studio, wechseln Sie zum Fenster der Python-Umgebungen (**Ansicht > Weitere Fenster > Python-Umgebungen**), und wählen Sie die Python-Umgebung, die beim Starten von IPython angezeigt wurde.
+1. Öffnen Sie Visual Studio, wechseln Sie zum Fenster der Python-Umgebungen (**Ansicht > Weitere Fenster > Python-Umgebungen**), und wählen Sie eine Anaconda-Umgebung aus.
 
-1. Sehen sie sich die Registerkarte **Packages** (Pakete) (oder **pip**) an und stellen Sie sicher, dass `IPython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier.
+1. Überprüfen Sie die Registerkarte **Pakete (Conda)** (die als **pip** oder **Pakete** angezeigt werden kann) für diese Umgebung, um sicherzustellen, dass `ipython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier. Weitere Informationen finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md).
 
 1. Wählen Sie die Registerkarte **Overview** (Übersicht) und klicken Sie auf **Use IPython interactive mode** (Interaktiven IPython-Modus verwenden). (In Visual Studio 2015 klicken Sie auf **Configure interactive options** (Interaktive Optionen konfigurieren), um den Dialog **Optionen** zu öffnen, setzen den **Interactive Mode** (Interaktiven Modus) auf IPython, und klicken dann auf **OK**).
 
-1. Wählen Sie **Open interactive window** (Interaktives Fenster öffnen), um das interaktive Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die EINGABETASTE drücken, wenn lediglich eine >>>-Eingabeaufforderung angezeigt wird.
+1. Wählen Sie **Open interactive window** (Interaktives Fenster öffnen), um das interaktive Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die EINGABETASTE drücken, wenn nur eine >>>-Eingabeaufforderung angezeigt wird, damit eine Eingabeaufforderung wie „In [2]“ angezeigt wird.
 
     ![Das interaktive Fenster im IPython-Modus](media/ipython-repl-03.png)
 
 1. Geben Sie den folgenden Code ein:
 
   ```python
-  x = linspace(0, 5, 10)
+  import matplotlib.pyplot as plt
+  import numpy as np
+  
+  x = np.linspace(0, 5, 10)
   y = x ** 2
-  plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
   ```
 
 1. Nach Eingabe der letzten Zeile sollte ein Inlinediagramm angezeigt werden (dessen Größe Sie bei Bedarf ändern können, indem Sie an der unteren rechten Ecke ziehen).
 
     ![Inlinediagramm im interaktiven Fenster](media/ipython-repl-04.png)
 
-1. Statt in REPL einzugeben, können Sie Code im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **Send to interactive** (An Interactive senden) wählen ( oder STRG+EINGABETASTE drücken). Versuchen Sie, den folgenden Code in eine neue Datei im Editor einzufügen, indem sie ihn mit STRG+A auswählen und dann an das interaktive Fenster senden. (Beachten Sie: Visual Studio sendet den Code als Einheit, um zu vermeiden, dass Sie temporäre oder teilweise Diagramme erhalten. Beachten Sie auch, dass Visual Studio ein interaktives Fenster für die Umgebung öffnet, die im **Python Environments** (Python-Umgebungen)-Fenster als Standardeinstellung festgelegt ist, wenn Sie gerade kein Python-Projekt mit einer anderen Umgebung geöffnet haben.
+1. Statt den Code in die REPL einzugeben, können Sie ihn im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **An interaktives Fenster senden** auswählen (oder STRG+EINGABETASTE drücken). Versuchen Sie, den folgenden Code in eine neue Datei im Editor einzufügen, indem sie ihn mit STRG+A auswählen und dann an das interaktive Fenster senden. (Visual Studio sendet den Code als Einheit, um zu vermeiden, dass Sie temporäre oder unvollständige Diagramme erhalten. Visual Studio öffnet ein interaktives Fenster für die Umgebung, die im Fenster **Python-Umgebungen** als Standardeinstellung festgelegt ist, wenn Sie gerade kein Python-Projekt mit einer anderen Umgebung geöffnet haben.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D

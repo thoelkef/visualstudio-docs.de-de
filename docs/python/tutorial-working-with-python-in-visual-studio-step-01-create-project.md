@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Arbeiten mit Python, Schritt 1: Erstellen eines Projekts'
 description: Dies ist die Übersicht und Schritt 1 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, einschließlich Voraussetzungen und das Erstellen eines neuen Python-Projekts.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031708"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057010"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Arbeiten mit Python in Visual Studio
 
 Python ist eine beliebte Programmiersprache, die zuverlässig, flexibel, leicht zu erlernen und für alle Betriebssysteme kostenlos ist und sowohl von einer starken Entwicklercommunity als auch vielen kostenlosen Bibliotheken unterstützt wird. Die Programmiersprache unterstützt alle Arten von Entwicklung, einschließlich Webanwendungen, Webdienste, Desktop-Apps, Skripts und wissenschaftliche Berechnungen, und wird gleichermaßen von vielen Universitäten, Wissenschaftlern sowie hobbymäßigen und professionellen Entwicklern verwendet.
 
@@ -73,7 +73,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
 > [!div class="nextstepaction"]
 > [Writing and running code (Schreiben und Ausführen von Code)](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Python-Projekte in Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Erfahren Sie mehr über die Python-Sprache unter python.org](https://www.python.org)

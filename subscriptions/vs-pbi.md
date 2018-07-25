@@ -9,65 +9,65 @@ description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4f50af635744e9633e09765dd2c1b08876e0b598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1afbe07a27ac41c8f36399b4e8cbd7463bce0b9
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31198591"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326292"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
-Wandeln Sie Ihre Daten in ansprechende visuelle Darstellungen um, die Sie sammeln und strukturieren können. 
+Wandeln Sie Ihre Daten in ansprechende visuelle Darstellungen um, die Sie sammeln und strukturieren können.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden, um Power BI Pro zu verwenden. 
+Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden, um Power BI Pro zu verwenden.
 1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2.  Suchen Sie auf der Seite „Vorteile“ im Abschnitt“ Tools“ die Kachel „Power BI Pro“. Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren). 
+2.  Suchen Sie auf der Seite „Vorteile“ im Abschnitt“ Tools“ die Kachel „Power BI Pro“. Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
 
-    ![Kachel „Power BI Pro-Vorteil“](_img\vs-pbi\vs-pbi-tile.png)  
+    ![Kachel „Power BI Pro-Vorteil“](_img\vs-pbi\vs-pbi-tile.png)
 
-2. Wenn Sie bereits andere Abonnementvorteile wie das Office 365-Entwicklerabonnement oder Enterprise Mobility + Security aktiviert haben, haben Sie möglicherweise schon ein Konto eingerichtet.  Wenn ein Konto gefunden wird, können Sie entscheiden, ob Sie Ihr Power BI Pro-Abonnement zu Ihrem Konto hinzufügen oder ein neues Konto erstellen möchten.  Es wird dringend empfohlen, das Abonnement zu Ihrem Konto hinzuzufügen, damit Sie nur über eine einzige Benutzer-ID auf die verschiedenen Vorteile zugreifen können.  
+2. Wenn Sie bereits andere Abonnementvorteile wie das Office 365-Entwicklerabonnement oder Enterprise Mobility + Security aktiviert haben, haben Sie möglicherweise schon ein Konto eingerichtet.  Wenn ein Konto gefunden wird, können Sie entscheiden, ob Sie Ihr Power BI Pro-Abonnement zu Ihrem Konto hinzufügen oder ein neues Konto erstellen möchten.  Es wird dringend empfohlen, das Abonnement zu Ihrem Konto hinzuzufügen, damit Sie nur über eine einzige Benutzer-ID auf die verschiedenen Vorteile zugreifen können.
 
-    ![Bestehendes Konto für die Power BI Pro-Vorteile](_img\vs-pbi\vs-pbi-existing-account.png) 
+    ![Bestehendes Konto für die Power BI Pro-Vorteile](_img\vs-pbi\vs-pbi-existing-account.png)
 
 3.  Geben Sie Ihre Kontaktinformationen an, um ein neues Konto zu erstellen, und klicken sie anschließend auf **Weiter**.
 
-    ![Erstellen eines Kontos für den Power BI Pro-Vorteil](_img\vs-pbi\vs-pbi-create-account-cropped.png) 
+    ![Erstellen eines Kontos für den Power BI Pro-Vorteil](_img\vs-pbi\vs-pbi-create-account-cropped.png)
 
 
 4.  Erstellen Sie anschließend Ihre Benutzer-ID und ein Kennwort.  Wenn Sie bereits ein Konto haben und trotzdem ein Neues erstellen möchten, müssen Sie einen anderen Unternehmensnamen verwenden.  Klicken Sie auf **Create my account** (Mein Konto erstellen).
 
-    ![Power BI Pro-Vorteil: Benutzer-ID erstellen](_img\vs-pbi\vs-pbi-create-user-id-cropped.png) 
+    ![Power BI Pro-Vorteil: Benutzer-ID erstellen](_img\vs-pbi\vs-pbi-create-user-id-cropped.png)
 
 
 5.  Sie werden aufgefordert, einen Bestätigungscode einzufügen, um sicherzustellen, dass das Konto von einem Menschen erstellt wird.  Bitte geben Sie eine Telefonnummer an, und wählen Sie aus, ob Sie den Code über einen Anruf oder per SMS erhalten möchten.  Klicken Sie auf **Text me** (SMS) oder **Call me** (Anruf).
 
-    ![Power BI Pro-Vorteil: kein Robot](_img\vs-pbi\vs-pbi-robot1-cropped.png) 
+    ![Power BI Pro-Vorteil: kein Robot](_img\vs-pbi\vs-pbi-robot1-cropped.png)
 
 
-6.  Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter**. 
+6.  Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter**.
 
-    ![Power BI Pro-Vorteil: kein Robot 2](_img\vs-pbi\vs-pbi-robot2-cropped.png) 
+    ![Power BI Pro-Vorteil: kein Robot 2](_img\vs-pbi\vs-pbi-robot2-cropped.png)
 
-7.  Geben Sie Ihre Kontaktinformationen an, und klicken sie anschließend auf **Weiter**. 
+7.  Geben Sie Ihre Kontaktinformationen an, und klicken sie anschließend auf **Weiter**.
 
     ![Power BI Pro-Vorteil: Kontaktinformationen](_img\vs-pbi\vs-pbi-contact-cropped.png)
 
 
 8.  Auf der nächsten Seite wird bestätigt, dass Ihr Power BI Pro Developer-Konto (MSDN) kostenlos ist.  Klicken Sie auf **Weiter**.
 
-9.  Zuletzt werden Sie um Zahlungsinformationen gebeten.  Sie brauchen dabei aber keine Bedenken haben: Wir buchen kein Geld von ihrem Konto ab.  Beachten Sie, dass das Abonnement immer noch kostenlos ist.  Sie können eine Kreditkarte, ein Bankkonto oder „Rechnung“ als Zahlungsmethode auswählen.  Wenn Sie **Rechnung** auswählen, werden Sie möglicherweise gefragt, warum Sie diese Zahlungsmethode bevorzugen.  Bitte stellen Sie die erforderlichen Informationen zu Ihrer bevorzugten Zahlungsmethode bereit, und klicken Sie auf **Bestellung aufgeben**.  
+9.  Zuletzt werden Sie um Zahlungsinformationen gebeten.  Sie brauchen dabei aber keine Bedenken haben: Wir buchen kein Geld von ihrem Konto ab.  Beachten Sie, dass das Abonnement immer noch kostenlos ist.  Sie können eine Kreditkarte, ein Bankkonto oder „Rechnung“ als Zahlungsmethode auswählen.  Wenn Sie **Rechnung** auswählen, werden Sie möglicherweise gefragt, warum Sie diese Zahlungsmethode bevorzugen.  Bitte stellen Sie die erforderlichen Informationen zu Ihrer bevorzugten Zahlungsmethode bereit, und klicken Sie auf **Bestellung aufgeben**.
 
     ![Power BI Pro-Vorteil: Kontaktinformationen](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
 
 10. Auf der nächsten Seite erhalten Sie eine Bestätigung, dass Sie Power BI Pro jetzt verwenden können.  Auf der Seite wird ein Link zur Anmeldeseite angegeben.  Es wird empfohlen, den Link zu der Anmeldeseite sowie Ihre Benutzer-ID zu speichern.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Es wird möglicherweise automatisch ein Fenster des Office 365-Assistenten angezeigt, das Sie bei Fragen nutzen können.  Klicken Sie auf **Los geht's**, um fortzufahren.
 
-    ![Power BI Pro-Vorteil: Einrichtung abgeschlossen](_img\vs-pbi\vs-pbi-all-set-cropped.png) 
+    ![Power BI Pro-Vorteil: Einrichtung abgeschlossen](_img\vs-pbi\vs-pbi-all-set-cropped.png)
 
 
-11. Mit der erfolgreichen Einrichtung Ihres Power BI Pro-Kontos haben Sie Zugriff auf das Office 365-Administratorzentrum, in dem Sie Benutzer und Domänen verwalten, Office-Software installieren und mehr über Office 365 erfahren können.  Das ist alles!  Jetzt sind Sie startbereit. 
+11. Mit der erfolgreichen Einrichtung Ihres Power BI Pro-Kontos haben Sie Zugriff auf das Office 365-Administratorzentrum, in dem Sie Benutzer und Domänen verwalten, Office-Software installieren und mehr über Office 365 erfahren können.  Das ist alles!  Jetzt sind Sie startbereit.
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
@@ -82,12 +82,23 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 <sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services (Developer), MCT Software & Service, Microsoft Valued Partner (MVP) und Region Director (RD).  Umfasst nicht: Microsoft Partner Network (MPN), FTE und Imagine.*
 
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
+
+ 
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>F: Warum muss ich eine Kreditkartennummer angeben, wenn der Vorteil kostenlos ist?
+A: Der Vorteil ist kostenlos, aber die Aktivierung verwendet das gleiche System, das auch für die Verarbeitung kostenpflichtiger Bestellungen verwendet wird.  Sie können aus zwei Zahlungsarten auswählen. 
+- Kreditkarte:  Wenn Sie eine Kreditkartennummer angeben, wird Ihre Kreditkarte nicht belastet. 
+- Rechnung:  Wenn Sie „Rechnung“ als Zahlungsart auswählen, müssen Sie keine Kreditkartennummer angeben.  Sie können das Intervall auch auf „Jährlich“ festlegen.  Dadurch erhalten Sie eine einzelne E-Mail, die Sie darüber informiert, dass eine Rechnung für Sie bereit steht.  Der Rechnungsbetrag entspricht 0,00 €.  
+
+### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>F: Kann der Power BI Pro-Vorteil, der in meinem Abonnement enthalten ist, in einer Produktionsumgebung verwendet werden?
+A: Ja.  
+
 
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei Power BI Pro?  
+-  Benötigen Sie Hilfe bei Power BI Pro?
     - Lesen Sie die [Onlinedokumentation](/power-bi/).
     - Haben Sie Probleme mit der Registrierung?  Lesen Sie den Artikel [Registrieren für Power BI als Einzelperson](/power-bi/service-self-service-signup-for-power-bi).
     - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

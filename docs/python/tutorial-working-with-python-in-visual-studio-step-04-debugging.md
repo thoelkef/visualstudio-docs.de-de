@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Arbeiten mit Python, Schritt 4: Debuggen'
 description: Dies ist Schritt 4 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Ausführen von Python-Code im Debugger erläutert wird.
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031981"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057816"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
+# <a name="step-4-run-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
 **Vorheriger Schritt: [Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 > [!div class="nextstepaction"]
 > [Installieren von Paketen in Ihrer Python-Umgebung](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Vertiefung
+### <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Debuggen](debugging-python-in-visual-studio.md)
 - Die vollständige Dokumentation zu Debugfeatures von Visual Studio finden Sie unter [Debugging in Visual Studio](../debugger/debugger-feature-tour.md).

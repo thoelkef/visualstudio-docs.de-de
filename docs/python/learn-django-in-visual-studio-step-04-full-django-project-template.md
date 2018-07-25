@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750362"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090048"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutorial, Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
+# <a name="step-4-use-the-full-django-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 
 **Vorheriger Schritt: [Serve static files, add pages, and use template inheritance (Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung)](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Die Vorlage „Django-Webprojekt“ erstellt weitestgehend die folgende Struktur
   - `requirements.txt`: Enthält eine Abhängigkeit von Django 1.x.
   - `readme.html`: Eine Datei, die nach dem Erstellen des Projekts in Visual Studio angezeigt wird. Befolgen Sie wie im vorherigen Abschnitt erwähnt die Anweisungen zum Erstellen eines Administratorkontos für die App.
 - Der `app`-Ordner enthält alle App-Dateien, einschließlich Ansichten, Modellen, Tests, Formularen, Vorlagen und statischen Dateien (siehe Schritt 4-2). In der Regel sollte dieser Ordner umbenannt werden, damit er einen aussagekräftigeren App-Namen erhält.
-- Der Django-Projektordner `DjangoWeb` enthält die typischen Django-Projektdateien: `__init.py__`, `settings.py`, `urls.py` und `wsgi.py`. Durch die Verwendung der Projektvorlage ist `settings.py` bereits für die App und die Datenbankdatei konfiguriert. Zudem ist `urls.py` bereits mit Routen zu allen App-Seiten, einschließlich des Anmeldeformulars, konfiguriert.
+- Der Django-Projektordner `DjangoWeb` enthält die typischen Django-Projektdateien: `__init__.py`, `settings.py`, `urls.py` und `wsgi.py`. Durch die Verwendung der Projektvorlage ist `settings.py` bereits für die App und die Datenbankdatei konfiguriert. Zudem ist `urls.py` bereits mit Routen zu allen App-Seiten, einschließlich des Anmeldeformulars, konfiguriert.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Frage: Ist es möglich, eine virtuelle Umgebung für andere Visual Studio-Projekte freizugeben?
 
@@ -215,7 +215,8 @@ Antwort: Das nachgestellte „$“ im regulären Ausdruck wurde in vielen Versio
 > [!div class="nextstepaction"]
 > [Authentifizieren von Benutzern bei Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
+- [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views (Erstellen Ihrer ersten Django-App – Teil 4: Formulare und allgemeine Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

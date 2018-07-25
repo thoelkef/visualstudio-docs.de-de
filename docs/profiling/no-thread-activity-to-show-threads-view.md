@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab1aab1be9fa8ebb8667a7cf7c524da71fa013d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257877"
 ---
-# <a name="no-thread-activity-to-show-threads-view"></a>Es werden keine Threadaktivitäten angezeigt (Threadansicht)
+# <a name="no-thread-activity-to-show-threads-view"></a>Es können keine Threadaktivitäten angezeigt werden (Threadansicht)
 In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbaren Zeitbereich angezeigt.  
   
  Wenn keine Informationen angezeigt werden, überprüfen Sie die folgenden Einstellungen:  

@@ -9,18 +9,17 @@ description: Erfahren Sie, wie Administratoren mit abgelaufenen Visual Studio-Ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335618"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325124"
 ---
 # <a name="handling-expired-subscriptions"></a>Umgang mit abgelaufenen Abonnements
 
 Wenn das Abonnement eines Benutzers abgelaufen ist, wird dies im Portal in einer roten Leiste neben dem Benutzernamen in der Liste der Abonnenten angezeigt. Damit diese Abonnenten weiterhin den Vorteil ihres Visual Studio-Abonnements nutzen können, müssen Sie die Lizenzen erneuern. 
-
-![Liste der abgelaufenen Abonnements](_img\expired-subscriptions\expired-list.png) 
+    ![Liste mit abgelaufenen Abonnements](_img\expired-subscriptions\expired-list.png)
 
 **So erneuern Sie Abonnements**
 1.  Kontaktieren Sie einen Verkäufer von Volumenlizenzen oder einen Microsoft-Verkäufer. 

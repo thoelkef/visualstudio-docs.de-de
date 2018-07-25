@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844637"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Vorgehensweise: Festlegen von Präinstrumentierungs- und Postinstrumentrierungsbefehlen
 
 Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.
 
@@ -32,7 +33,7 @@ Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betrie
 
  **32-Bit-Computer**
 
-Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.
+Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools *Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
 
 **64-Bit-Computer**
 
@@ -40,11 +41,11 @@ Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profi
 
 - Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
-     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *Laufwerk\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
-     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *Laufwerk\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an
 

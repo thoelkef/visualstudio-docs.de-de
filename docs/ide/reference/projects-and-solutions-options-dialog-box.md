@@ -16,83 +16,89 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266340"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843990"
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
-Legt das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Verhalten im Zusammenhang mit Projekten und Projektmappen fest. Wählen Sie zum Zugriff auf diese Optionen **Extras > Optionen** aus, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
+# <a name="projects-and-solutions-page-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld „Optionen“
+
+Legt das Visual Studio-Verhalten im Zusammenhang mit Projekten und Projektmappen fest. Klicken Sie zum Zugriff auf diese Optionen auf **Extras** > **Optionen**, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
 
 Die Standardpfade für Projekt- und Vorlagenordner werden über die Registerkarte **Speicherorte** im gleichen Dialogfeld festgelegt.
 
 > [!NOTE]
-> Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Die Optionen, die auf der Benutzeroberfläche verfügbar sind, können sich abhängig von den aktiven Einstellungen oder der Edition von den hier beschriebenen unterscheiden. Dieser Artikel wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Seite „Allgemein“
 
-## <a name="general-tab-options"></a>Allgemeine Registerkartenoptionen
+Die folgenden Optionen sind auf der Seite **Allgemein** verfügbar.
 
-**Fehlerliste bei Buildfertigstellung mit Fehlern immer anzeigen**
+### <a name="always-show-error-list-if-build-finishes-with-errors"></a>Fehlerliste bei Buildfertigstellung mit Fehlern immer anzeigen
 
 Öffnet das Fenster **Fehlerliste** nachdem der Build fertig gestellt ist nur dann, wenn ein Projekt nicht erstellt werden konnte. Hier werden während des Buildvorgangs aufgetretene Fehler angezeigt. Wenn diese Option deaktiviert ist, treten die Fehler weiterhin auf, aber das Fenster wird nicht geöffnet, wenn der Build abgeschlossen ist. Diese Option ist standardmäßig aktiviert.
 
-**Aktives Element im Projektmappen-Explorer überwachen**
+### <a name="track-active-item-in-solution-explorer"></a>Aktives Element im Projektmappen-Explorer überwachen
 
 Bei Auswahl dieser Option wird der **Projektmappen-Explorer** automatisch geöffnet, und das aktive Element ist ausgewählt. Das ausgewählte Element ändert sich beim Arbeiten mit unterschiedlichen Dateien in einem Projekt oder einer Projektmappe bzw. mit verschiedenen Komponenten in einem Designer. Wenn diese Option deaktiviert ist, ändert sich die Auswahl im **Projektmappen-Explorer** nicht automatisch. Diese Option ist standardmäßig aktiviert.
 
-**Erweiterte Buildkonfigurationen anzeigen**
+### <a name="show-advanced-build-configurations"></a>Erweiterte Buildkonfigurationen anzeigen
 
-Wenn diese Option ausgewählt ist, werden die Optionen für die Buildkonfiguration im Dialogfeld **Projekt-Eigenschaftenseiten** und im Dialogfeld **Projektmappen-Eigenschaftenseiten** angezeigt. Wenn diese Option deaktiviert ist, werden die Optionen für die Buildkonfiguration nicht im Dialogfeld **Projekt-Eigenschaftenseiten** und **Projektmappen-Eigenschaftenseiten** für [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]- und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte angezeigt, die eine Konfiguration oder beide Konfigurationen (Debug und Release) enthalten. Wenn ein Projekt eine benutzerdefinierte Konfiguration hat, werden die Optionen für die Buildkonfiguration angezeigt.
+Wenn diese Option ausgewählt ist, werden die Optionen für die Buildkonfiguration im Dialogfeld **Projekt-Eigenschaftenseiten** und im Dialogfeld **Projektmappen-Eigenschaftenseiten** angezeigt. Wenn diese Option deaktiviert ist, werden die Optionen für die Buildkonfiguration nicht im Dialogfeld **Projekt-Eigenschaftenseiten** und **Projektmappen-Eigenschaftenseiten** für Visual Basic- und C#-Projekte angezeigt, die eine Konfiguration oder beide Konfigurationen (Debug und Release) enthalten. Wenn ein Projekt eine benutzerdefinierte Konfiguration hat, werden die Optionen für die Buildkonfiguration angezeigt.
 
 Wenn diese Option deaktiviert ist, werden die Befehle im Menü **Erstellen**, z.B. **Projektmappe erstellen**, **Projektmappe neu erstellen** und **Projektmappe bereinigen**, für die Releasekonfiguration ausgeführt, und die Befehle im Menü **Debuggen**, z.B. **Debuggen starten** und **Starten ohne Debugging**, werden für die Debugkonfiguration ausgeführt.
 
-**Projektmappe immer anzeigen**
+### <a name="always-show-solution"></a>Projektmappe immer anzeigen
 
 Bei Auswahl dieser Option werden die Projektmappe und alle Befehle, die für Projektmappen ausgeführt werden, immer in der IDE angezeigt. Wenn diese Option deaktiviert ist, werden alle Projekte als eigenständige Projekte erstellt, und Sie können die Projektmappe im Projektmappen-Explorer oder Befehle, die für Projektmappen ausgeführt werden, in der IDE nicht sehen, wenn die Projektmappe nur ein Projekt enthält.
 
-**Neue Projekte beim Erstellen speichern**
+### <a name="save-new-projects-when-created"></a>Neue Projekte beim Erstellen speichern
 
 Bei Auswahl dieser Option können Sie einen Speicherort für das Projekt im Dialogfeld **Neues Projekt** festlegen. Wenn diese Option deaktiviert ist, werden alle neuen Projekte als temporäre Projekte erstellt. Bei der Arbeit mit temporären Projekten können Sie ein Projekt erstellen und damit experimentieren, ohne einen Speicherort angeben zu müssen.
 
-**Benutzer bei nicht vertrauenswürdigem Projektspeicherort warnen**
+### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Benutzer bei nicht vertrauenswürdigem Projektspeicherort warnen
 
 Wenn Sie versuchen, ein neues Projekt zu erstellen oder ein vorhandenes Projekt an einem Speicherort zu öffnen, der nicht vollständig vertrauenswürdig ist (z. B. auf einem UNC-Pfad oder HTTP-Pfad), wird eine Meldung angezeigt. Verwenden Sie diese Option, um anzugeben, ob die Meldung jedes Mal angezeigt wird, wenn Sie versuchen, ein Projekt an einem Speicherort zu erstellen oder zu öffnen, der nicht vollständig vertrauenswürdig ist.
 
-**Ausgabefenster bei Buildbeginn anzeigen**
+### <a name="show-output-window-when-build-starts"></a>Ausgabefenster bei Buildbeginn anzeigen
 
-Zeigt automatisch das Ausgabefenster in der IDE zu Beginn der Projektmappenerstellung an. Weitere Informationen finden Sie unter [How to: Control the Output Window (Vorgehensweise: Steuern des Ausgabefensters)](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858).
+Zeigt zu Beginn der Projektmappenerstellung automatisch das [Ausgabefenster](../../ide/reference/output-window.md) in der IDE an.
 
-**Beim Umbenennen von Dateien zum symbolischen Umbenennen auffordern**
+### <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Beim Umbenennen von Dateien zum symbolischen Umbenennen auffordern
 
-Wenn diese Option aktiviert ist, werden Sie in einer Meldung gefragt, ob [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] alle im Projekt enthaltenen Verweise auf das Codeelement umbenennen soll.
+Wenn diese Option aktiviert ist, werden Sie in einer Meldung gefragt, ob Visual Studio alle im Projekt enthaltenen Verweise auf das Codeelement umbenennen soll.
 
-**Aufforderung vor der Verschiebung von Dateien zu einem neuen Speicherort**
+### <a name="prompt-before-moving-files-to-a-new-location"></a>Vor dem Verschieben von Dateien an einen neuen Speicherort fragen
 
-Wenn diese Option aktiviert ist, zeigt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein Bestätigungsmeldungsfeld an, bevor die Speicherorte von Dateien durch Aktionen im Projektmappen-Explorer verändert werden.
+Wenn diese Option aktiviert ist, zeigt Visual Studio ein Bestätigungsmeldungsfeld an, bevor die Speicherorte von Dateien durch Aktionen im **Projektmappen-Explorer** verändert werden.
 
-**Reopen documents on solution load** (Dokumente beim Laden der Projektmappe erneut öffnen) (Visual Studio 2017, Version 15.8 (Vorschau 2) und höher)
- 
-Während des Ladens einer Projektmappe können Dokumente, die in der vorherigen Sitzung geöffnet waren, automatisch erneut geöffnet werden. Wenn diese Option aktiviert ist, werden die Dokumente, die beim letzten Schließen dieser Projektmappe geöffnet waren, automatisch geöffnet, wenn die Projektmappe geladen wird.
+### <a name="reopen-documents-on-solution-load"></a>Dokumente beim Laden der Projektmappe erneut öffnen
 
-Das erneute Öffnen von bestimmten Dateitypen oder Designern kann das Laden von Projektmappen verzögern. Deaktivieren Sie diese Option, um die Leistung beim Laden von Projektmappen zu verbessern, wenn Sie den vorherigen Kontext der Projektmappe nicht wiederherstellen möchten.
+**Neu in Visual Studio 2017 Version 15.8 Preview 2 und höher**
 
-## <a name="locations-tab-options"></a>Optionen der Registerkarte „Speicherorte“
+Wenn diese Option aktiviert ist, werden die Dokumente, die beim letzten Schließen dieser Projektmappe noch geöffnet waren, automatisch geöffnet, wenn die Projektmappe geöffnet wird.
 
-**Speicherort der Projekte**
+Das erneute Öffnen von bestimmten Dateitypen oder Designern kann das Laden von Projektmappen verzögern. Deaktivieren Sie diese Option, um die [Leistung beim Laden von Projektmappen](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) zu verbessern, wenn Sie den vorherigen Kontext der Projektmappe nicht wiederherstellen möchten.
 
-Legt den Standardspeicherort fest, in dem von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neue Projekte und Projektmappenordner erstellt werden. Verschiedene Dialogfelder verwenden auch den in dieser Option festgelegten Speicherort als Ausgangspunkt für Ordner. So verwendet z. B. das Dialogfeld "Projekt öffnen" diesen Speicherort für die Verknüpfung "Meine Projekte".
+## <a name="locations-page"></a>Seite „Speicherorte“
 
-**Speicherort von Benutzerprojektvorlagen**
+Die folgenden Optionen sind auf der Seite **Speicherorte** verfügbar.
+
+### <a name="projects-location"></a>Speicherort der Projekte
+
+Legt den Standardspeicherort fest, an dem neue Projekte und Projektmappenordner von Visual Studio erstellt werden. Verschiedene Dialogfelder verwenden auch den in dieser Option festgelegten Speicherort als Ausgangspunkt für Ordner. So verwendet z.B. das Dialogfeld **Projekt öffnen** diesen Speicherort für die Verknüpfung **Meine Projekte**.
+
+### <a name="user-project-templates-location"></a>Speicherort von Benutzerprojektvorlagen
 
 Gibt den Standardspeicherort an, der vom Dialogfeld **Neues Projekt** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-**Speicherort von Benutzerelementvorlagen**
+### <a name="user-item-templates-location"></a>Speicherort von Benutzerelementvorlagen
 
 Legt den Standardspeicherort fest, der vom Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dialogfeld „Optionen“, Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Dialogfeld „Optionen“, Projekte und Projektmappen, Webprojekte](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

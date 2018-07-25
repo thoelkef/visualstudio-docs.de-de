@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103137"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946974"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Tutorial Schritt 5: Authentifizieren von Benutzern bei Django
+# <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 
 **Vorheriger Schritt:[ Verwenden der vollständigen Vorlage „Django-Webprojekt“](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -62,7 +62,7 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
     {% endif %}
     ```
 
-1. Da kein Benutzer beim ersten Start der App authentifiziert wurde, rendert dieser Vorlagencode nur die Verknüpfung „Anmelden“ zum relativen Pfad „Anmeldung“. Wie in `urls.py` im vorherigen Abschnitt gezeigt, wird diese Route der `django.contrib.auth.views.login`-Ansicht zugeordnet, die die folgenden Daten erhält:
+1. Da kein Benutzer beim ersten Start der App authentifiziert wurde, rendert dieser Vorlagencode nur die Verknüpfung „Anmelden“ zum relativen Pfad „Anmeldung“. Wie in `urls.py` im vorherigen Abschnitt gezeigt, wird diese Route der `django.contrib.auth.views.login`-Ansicht zugeordnet. Diese Ansicht erhält folgende Daten:
 
     ```python
     {
@@ -95,7 +95,7 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
                                        'placeholder':'Password'}))
     ```
 
-    Wie Sie sehen können, wird diese Formularklasse von `AuthenticationForm` abgeleitet und überschreibt insbesondere die Felder „Benutzername“ und „Kennwort“, um Platzhaltertext hinzuzufügen. Die Visual Studio-Vorlage enthält diesen expliziten Code unter der Annahme, dass Sie das Formular wahrscheinlich anpassen möchten, und z.B. eine Überprüfung für die Kennwortsicherheit hinzufügen.
+    Wie Sie sehen können, wird diese Formularklasse von `AuthenticationForm` abgeleitet und überschreibt insbesondere die Felder „Benutzername“ und „Kennwort“, um Platzhaltertext hinzuzufügen. Die Visual Studio-Vorlage enthält diesen expliziten Code unter der Annahme, dass Sie das Formular wahrscheinlich anpassen möchten und z.B. eine Überprüfung für die Kennwortsicherheit hinzufügen.
 
 1. Wenn Sie zur Anmeldeseite navigieren, rendert die App die `login.html`-Vorlage. Die Variablen `{{ form.username }}` und `{{ form.password }}` rendern das `CharField`-Formular aus `BootstrapAuthenticationForm`. Es gibt auch einen integrierten Abschnitt, der Validierungsfehler anzeigt, und ein vorgefertigtes Element für Anmeldungen bei sozialen Netzwerken, wenn Sie diese Dienste hinzufügen möchten.
 
@@ -144,13 +144,13 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
     {% endblock %}
     ```
 
-1. Wenn Sie das Formular einreichen, versucht Django, die Anmeldeinformationen, die Sie übermitteln, zu authentifizieren (z.B. die Anmeldeinformationen des Administrators). Wenn die Authentifizierung fehlschlägt, bleiben Sie auf derselben Seite, aber `form.errors` wird auf „TRUE“ festgelegt. Wenn die Authentifizierung erfolgreich ist, navigiert Django zur relativen URL im Feld „Weiter“, `<input type="hidden" name="next" value="/" />`, welches in diesem Fall die Startseite ist (`/`).
+1. Wenn Sie das Formular einreichen, versucht Django, Ihre Anmeldeinformationen zu authentifizieren (z.B. die Anmeldeinformationen des Administrators). Wenn die Authentifizierung fehlschlägt, bleiben Sie auf der aktuellen Seite, aber `form.errors` wird auf TRUE festgelegt. Wenn die Authentifizierung erfolgreich ist, navigiert Django zur relativen URL im Feld „Weiter“, `<input type="hidden" name="next" value="/" />`, welches in diesem Fall die Startseite ist (`/`).
 
 1. Wenn die Startseite erneut gerendert wird, ist die `user.is_authenticated`-Eigenschaft „TRUE“, wenn die `loginpartial.html`-Vorlage gerendert wird. Daher sehen Sie die Nachricht „Hallo (Benutzername)“ und „Abmelden“. Sie können `user.is_authenticated` in anderen Teilen der App verwenden, um die Authentifizierung zu überprüfen.
 
     ![Hallo-Nachricht und Steuerelement für die Abmeldung auf der App-Seite „Django-Webprojekt“](media/django/step05-logoff-control.png)
 
-1. Um zu überprüfen, ob der authentifizierte Benutzer für den Zugriff auf bestimmte Ressourcen autorisiert ist, müssen Sie benutzerspezifische Berechtigungen aus der Datenbank für diesen Benutzer abrufen. Weitere Informationen finden Sie unter [Using the Django authentication system (Verwenden des Authentifizierungssystems von Django)](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django-Dokumentation).
+1. Wenn Sie überprüfen möchten, ob der authentifizierte Benutzer für den Zugriff auf bestimmte Ressourcen autorisiert ist, müssen Sie benutzerspezifische Berechtigungen aus der Datenbank abrufen. Weitere Informationen finden Sie unter [Using the Django authentication system (Verwenden des Authentifizierungssystems von Django)](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django-Dokumentation).
 
 1. Der Administrator ist insbesondere dazu autorisiert, mit den relativen URLs „/admin/“ und „/admin/doc/“ auf die integrierte Django-Administratorschnittstellen zuzugreifen. Um diese Schnittstellen zu aktivieren, öffnen Sie `urls.py` des Django-Projekts, und entfernen Sie die Kommentare aus den folgenden Einträgen:
 
@@ -200,14 +200,14 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% srsf_token %}, das in den \<Formular\>-Elementen auftritt?
 
-Antwort: Das `{% crsf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, wie Formulare, und die Vorlagenrenderingfunktion (`render`) fügt den erforderlichen Schutz hinzu.
+Antwort: Das `{% crsf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
 > [Use the Polls Django Web Project template (Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“)](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [User authentication in Django (Benutzerauthentifizierung in Django)](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

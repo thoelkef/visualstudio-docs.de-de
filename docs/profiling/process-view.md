@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e8a11f55edd2f7a04498b81ec6b8713876f718
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4924f38bf893bc17a599802d9962d664da01c26d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254523"
 ---
 # <a name="process-view"></a>Prozessansicht
 Die Prozessansicht zeigt Profilerstellungsdaten für die Prozesse und Threads, die während der Profilerstellung ausgeführt wurden.  
@@ -33,7 +34,7 @@ Die Prozessansicht zeigt Profilerstellungsdaten für die Prozesse und Threads, d
   
  Die Spalten der Prozessansicht sind die gleichen Spalten wie für die Daten, die mithilfe der Sampling- und Instrumentierungsmethoden generiert wurden, sowie für Daten, die .NET-Speicherdaten enthalten. In der folgenden Tabelle sind die Spaltenwerte beschrieben.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Eindeutige ID**|Ein durch die Profilerstellung generierter Bezeichner, der für den Prozess oder Thread eindeutig ist.|  
 |**ID**|Der von einem System generierte Bezeichner für den Prozess oder Thread.|  
@@ -43,5 +44,5 @@ Die Prozessansicht zeigt Profilerstellungsdaten für die Prozesse und Threads, d
   
 ## <a name="see-also"></a>Siehe auch  
  [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)   
- [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)   
+ [Instrumentation method data views (Datenansichten der Instrumentierungsmethode)](../profiling/instrumentation-method-data-views.md)   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)

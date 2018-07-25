@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572633"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280643"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 
@@ -40,15 +40,13 @@ VSCEIP ist standardmäßig aktiviert. Sie können es deaktivieren oder erneut ak
 
 ### <a name="registry-settings"></a>Registrierungseinstellungen
 
-Wenn Sie die [Buildtools für Visual Studio](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017) installieren, müssen Sie die Registrierung aktualisieren, um VSCEIP zu konfigurieren. Enterprise-Kunden können durch Festlegen einer registrierungsbasierten Richtlinie eine Gruppenrichtlinie erstellen, um VSCEIP zu aktivieren oder zu deaktivieren.
+Wenn Sie die [Buildtools für Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017) installieren, müssen Sie die Registrierung aktualisieren, um VSCEIP zu konfigurieren. Enterprise-Kunden können durch Festlegen einer registrierungsbasierten Richtlinie eine Gruppenrichtlinie erstellen, um VSCEIP zu aktivieren oder zu deaktivieren.
 
 Der entsprechende Registrierungsschlüssel und die entsprechenden Einstellungen lauten wie folgt:
 
-Schlüssel auf einem 64-Bit-Betriebssystem = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
-Schlüssel auf einem 32-Bit-Betriebssystem = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
-Schlüssel bei aktivierter Gruppenrichtlinie = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
+Schlüssel auf einem 64-Bit-Betriebssystem = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** Schlüssel auf einem 32-Bit-Betriebssystem = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Schlüssel bei aktivierter Gruppenrichtlinie = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
-Name = **OptIn**
+Eintrag = **OptIn**
 
 Wert = (DWORD)
 - **0** = deaktiviert (VSCEIP deaktivieren)
