@@ -1,6 +1,7 @@
 - name: Dokumentation zur Codeanalyse
   href: index.md
 - name: Übersicht
+  expanded: true
   items:
     - name: Codeanalyse für verwalteten Code
       href: code-analysis-for-managed-code-overview.md
@@ -80,6 +81,8 @@
     - name: Regelsätze
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Regelsätze für Analysepakete
+          href: analyzer-rule-sets.md
         - name: Regelsätze für verwalteten Code
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
@@ -126,7 +129,7 @@
         - name: Regelsatz für Globalisierungsregeln für verwalteten Code
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Regelsatz für verwaltete Mindestregeln für verwalteten Code
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Regelsatz für gemischte Mindestregeln
