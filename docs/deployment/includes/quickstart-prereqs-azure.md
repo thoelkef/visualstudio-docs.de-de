@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) mit den entsprechenden Workloads für Ihrer bevorzugten Sprache installiert:
   * ASP.NET: **ASP.NET und Webentwicklung**
+  * ASP.NET Core: Die ASP.NET-arbeitsauslastung und **plattformübergreifende Entwicklung mit .NET Core** arbeitsauslastung
   * Node.js: **Node.js-Entwicklung**
 
 * Ein Azure-Abonnement. Wenn Sie noch nicht über Abonnements verfügen [melden Sie sich jetzt](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), wozu 200 US-Dollar Guthaben für 30 Tage sowie 12 Monate lang beliebte kostenlose Dienste.

@@ -1,5 +1,5 @@
 ---
-title: Sicherheitsprobleme | Microsoft Docs
+title: Sicherheitsprobleme | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45ebd8c4d80b84749838c2034d72159c9e39627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126896"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252322"
 ---
 # <a name="security-issues"></a>Sicherheitsprobleme
-Um ein Programm, das mit Visual Studio zu debuggen, sind die einzigen Berechtigungen, die erforderlich sind identisch ein Entwickler benötigt, um das Programm auszuführen. Dies schließt das Remotedebuggen für die meisten Situationen (einige Situationen, die im Zusammenhang mit anderen Diensten, z. B. die Internet-Informationsdienste möglicherweise ein höheres Maß an Berechtigungen).  
+Um ein Programm mit Visual Studio zu debuggen, werden nur die erforderlichen Berechtigungen identisch ein Entwickler benötigt, um das Programm auszuführen. Dies schließt die Remotedebugging-Funktionen für die meisten Situationen. Einige Situationen, die im Zusammenhang mit anderen Diensten, z. B. das Internet Information Service, möglicherweise ein höheres Maß an Berechtigungen.  
   
- Während der Visual Studio ausgeführt wird, wird der Prozess-Manager (PDM) Debug-Prozesse auf dem lokalen Computer überwacht. Remote, wird ein Programm namens msvsmon.exe gestartet, vom Entwickler des Remotedebuggens behandeln und die PDM verfügbar zu machen. (Beachten Sie, die von msvsmon.exe ist kein Dienst und muss manuell gestartet werden, um das Remotedebuggen auf diesem Computer aktivieren.) Wenn Visual Studio (oder msvsmon.exe) nicht ausgeführt wird, werden keine Prozesse zum Debuggen nachverfolgt.  
+ Während Visual Studio ausgeführt wird, verfolgt der Prozess-Manager (PDM) Debuggen auf dem lokalen Computer. Remote, ein Programm namens *msvsmon.exe* wird gestartet, indem der Entwickler zu behandeln, Remotedebuggen und das PDM verfügbar zu machen. (*msvsmon.exe* ist kein Dienst und muss manuell gestartet werden, um das Remotedebuggen auf diesem Computer zu aktivieren.) Wenn Visual Studio (oder *msvsmon.exe*) wird nicht ausgeführt wird, werden keine Prozesse für das Debuggen nachverfolgt.  
   
- Dies bedeutet, dass ein Entwickler Programme Debuggen kann, wenn, die er ohne besondere Berechtigungen gestartet. Entwickler kann auch Debuggen, Prozesse, die von einem anderen Benutzer gestartet wird, wenn diese anderen Person Mitglied der gleichen Sicherheitsgruppe ist. Zum Aktivieren von Remotedebuggen erforderlich ist, nur so kopieren Sie die erforderlichen Dateien mit der Remoteinstanz, Computer, und starten msvsmon.exe (finden Sie unter [Remotedebuggen](../../debugger/remote-debugging.md) Weitere Details).  
+ Entwickler kann Programme debuggen, die sie ohne spezielle Berechtigungen gestartet werden. Entwickler kann auch Debuggen, Prozesse, die von einem anderen Benutzer gestartet werden, wenn diese andere Person die gleiche Sicherheitsgruppe angehört. Und, um Remotedebuggen zu aktivieren, ist es erforderlich, um die erforderlichen Dateien auf den Remotecomputer kopieren und starten *msvsmon.exe*. Weitere Informationen finden Sie unter [Remotedebuggen](../../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debugging-Aufgaben](../../extensibility/debugger/debugging-tasks.md)   
- [Prozess-Debug-Manager](../../extensibility/debugger/process-debug-manager.md)   
+ [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)   
+ [Prozessbasierter Debug-manager](../../extensibility/debugger/process-debug-manager.md)   
  [Remotedebuggen](../../debugger/remote-debugging.md)

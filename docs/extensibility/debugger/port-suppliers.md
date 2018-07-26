@@ -1,5 +1,5 @@
 ---
-title: Portieren von Lieferanten | Microsoft Docs
+title: Portieren von Lieferanten | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f1ba09c1802bdeb1c6a402e95a6de408b277532
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099069"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252348"
 ---
-# <a name="port-suppliers"></a>Port-Lieferanten
-Im Hinblick auf die Architektur des Debuggers einen **Port Lieferanten**:  
+# <a name="port-suppliers"></a>Portanbieter
+Architektur der Debugger eine *anschlusslieferant*:  
   
--   Ein Server enthalten ist, und Ports Anforderung für diesen Server enthält.  
+-   Von einem Server enthalten ist, und bietet von Ports für die Anforderung für diesen Server.  
   
--   Hinzufügen und Ports vom enthaltenden Server entfernen können.  
+-   Können hinzufügen und entfernen Sie die Ports auf dem Server enthält.  
   
--   Alle Ports, die sie mit dem Server bereitgestellt wurde, können aufgelistet werden.  
+-   Alle Ports, die sie mit dem Server bereitgestellt wurde, können aufgezählt werden.  
   
--   Dargestellt durch eine [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle, die durch die Registrierung mit Visual Studio registriert wurde. Diese Schnittstelle kann abgerufen werden, durch den Aufruf [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+-   Wird durch dargestellt eine [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle, die mit Visual Studio über die Registrierung registriert ist. Diese Schnittstelle abgerufen werden kann, durch den Aufruf [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stellt eine standardmäßige Port Supplier "und" einen Standardport. Wenn ein benutzerdefinierter Port werden implementiert muss, muss ein benutzerdefinierten Port Lieferanten ebenfalls implementiert werden, um die benutzerdefinierte Ports angeben.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet eine Standard-anschlusslieferant und einen Standardport. Wenn ein benutzerdefinierter Port implementiert werden muss, muss ein benutzerdefinierten Port Lieferanten ebenfalls implementiert werden, um diese benutzerdefinierte Ports angeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [Ports](../../extensibility/debugger/ports.md)   
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

@@ -1,5 +1,5 @@
 ---
-title: Prozesse | Microsoft Docs
+title: Prozesse | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75230740e84bb6660629b38e84df56fa8e5c1856
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c07a9cb6c16f09f2f55b543087e25d85bc300c0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102758"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251776"
 ---
 # <a name="processes"></a>Prozesse
-Im Hinblick auf die Architektur des Debuggers einen **Prozess**:  
+Architektur der Debugger eine *Prozess*:  
   
--   Ist ein Container für eine Gruppe von Programmen. Es ist eng an einen Windows-Prozess, der einen Container für eine Gruppe von Threads darstellt.  
+-   Ist ein Container für einen Satz von Programmen. Er ist eng an einen Windows-Prozess, der ein Container für eine Gruppe von Threads ist.  
   
--   Können sich nach Name, Bezeichner oder physischen Bezeichner identifizieren.  
+-   Können selbst durch den Namen, Bezeichner oder Bezeichner der physischen identifizieren.  
   
--   Alle ausgeführten Programme (und deren Threads) können aufgelistet werden.  
+-   Können alle ausgeführten Programme (und ihren Threads) auflisten.  
   
--   Beschreiben, durch selbst, den Port an, den es ausgeführt wird und dem Computer, der es enthält.  
+-   Beschreiben können selbst, den Port an, den er ausgeführt wird und der Computer, der sie enthält.  
   
--   Können, erstellen Sie eine oder mehrere Programme beenden eines der Programme, die sie erstellt oder dazu führen, dass ein Programm zu beenden.  
+-   Können, erstellen Sie eine oder mehr Programme beenden eines der Programme, die sie erstellt oder dazu führen, dass ein Programm zu beenden.  
   
--   Dargestellt durch eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die erstellt wird, wenn der Prozess gestartet wird. Ein Prozess wird gestartet, indem entweder der Sitzungs-Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+-   Wird durch dargestellt eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die erstellt wird, wenn der Prozess gestartet wird. Ein Prozess wird gestartet, indem Sie entweder die sitzungsbasierter Debug-Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Das debugpaket kann ein Debugging-Modul (DE) an einen Prozess anfügen, durch den Aufruf [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md). Dies bedeutet, dass die DE fügt alle möglichen Programme, die im Prozess, den er behandeln kann ausgeführt. Wenn die common Language Runtime DE an einen Prozess angehängt wird, fügt ihn z. B. nur für Programme, die verwalteten Code ausgeführt werden.  
+ Das debugpaket kann eine Debug-Engine (DE) an einen Prozess anfügen, durch den Aufruf [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md), d. h., die die DE anfügt, auf alle möglichen Programme, die Ausführung im Prozess, die er verarbeiten kann. Wenn die common Language Runtime DE an einen Prozess angefügt wurde, fügt es z. B. nur für Programme, die verwalteten Code ausgeführt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Programme](../../extensibility/debugger/programs.md)   
  [Threads](../../extensibility/debugger/threads.md)   
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)   
  [Debug-Paket](../../extensibility/debugger/debug-package.md)   
- [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
+ [Debug-engine](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md)

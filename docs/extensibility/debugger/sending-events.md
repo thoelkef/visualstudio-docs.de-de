@@ -1,5 +1,5 @@
 ---
-title: Senden von Ereignissen | Microsoft Docs
+title: Senden von Ereignissen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbe7946b866cd751be1f0dac2dba5b8dea57e04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87087a2087591b01170b82c0335e4bbffc579cc2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125760"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252452"
 ---
-# <a name="sending-events"></a>Senden von Ereignissen
-Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debugging-Modul (DE) ist ein Ereignismodell, basierend auf DCOM. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die Folgendes angeben:  
+# <a name="send-events"></a>Senden von Ereignissen
+Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debug-Engine (DE) ist eine auf DCOM basierende Ereignismodell. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die angeben:  
   
--   Die DE, die das Ereignis aufgerufen wird.  
+-   Die DE, die das Ereignis aufgerufen.  
   
--   Eine Beschreibung der Ursache.  
+-   Eine Beschreibung des was passiert ist.  
   
--   Der Prozess, Programm- und Threadinformationen, der Kontext identifiziert, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die aus einer bereitgestellten Kompatibilitätsrichtlinie gesendet gesendet.  
+-   Der Prozess, Anwendung und Threadinformationen, identifiziert der Kontext, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die von einer bereitgestellten Kompatibilitätsrichtlinie gesendeten gesendet.  
   
 -   Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.  
   
@@ -35,14 +35,14 @@ Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debugging-M
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Ereignisquellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Erläutert die zwei Quellen von Ereignissen: Debuggen von Debugging-Modul (Deutschland) und die Sitzung Manager (SDM).  
+ Erläutert, die zwei Quellen von Ereignissen: die Debug-Engine (DE) und die Sitzung debug-Manager (SDM).  
   
  [Unterstützte Ereignistypen](../../extensibility/debugger/supported-event-types.md)  
  Erläutert, die derzeit unterstützten Ereignistypen: asynchrone und synchrone.  
   
  [Ereignisbeschreibungen](../../extensibility/debugger/event-descriptions.md)  
- Definiert, Ereignisse und die Gründe für deren Verwendung.  
+ Definiert Ereignisse und die Gründe für deren Verwendung.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Beschreibt die Funktionsweise von einer bereitgestellten Kompatibilitätsrichtlinie mit den Interpreter Betriebssystem oder Debugdienste bereit.
