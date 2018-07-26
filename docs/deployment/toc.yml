@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Bereitstellen in Azure App Service
       href: quickstart-deploy-to-azure.md
+    - name: Bereitstellung in App Service für Linux
+      href: quickstart-deploy-to-linux.md
     - name: Bereitstellen auf einer Website
       href: quickstart-deploy-to-a-web-site.md
     - name: Bereitstellen in einem lokalen Ordner
