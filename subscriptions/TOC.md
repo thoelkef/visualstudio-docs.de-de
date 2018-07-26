@@ -48,6 +48,7 @@
 #### [Für die Volumenlizenzierung](volume-license-admins.md)
 ##### [Häufig gestellte Fragen zur VLSC-Administratormigration](vlsc-admin-faq.md)
 ##### Onboarding Ihres Unternehmens
+###### [Onboarding nach der Migration](post-migration-onboarding.md)
 ###### [Onboarding der E-Mail-Kommunikation](volume-license-onboarding-email.md)
 ###### [Ermitteln Ihrer öffentlichen Kundennummer](find-pcn.md)
 ###### [Ermitteln Ihres primären Kontakts](find-primary-contact.md)
