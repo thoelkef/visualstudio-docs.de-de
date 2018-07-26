@@ -1,5 +1,5 @@
 ---
-title: Verarbeiten der Debug-Manager | Microsoft Docs
+title: Verarbeiten von Debug-Manager | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ce0979b02ac3b0e8bb01f038c9883f5dcfd766
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bea7736174c64cb82f2dc1b66609175cb8584555
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098094"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252160"
 ---
-# <a name="process-debug-manager"></a>Prozessbasierter Debug-Manager
-Der Prozess-Manager (PDM) ist eine Komponente von Visual Studio, die Programme verwaltet und Prozesse, die Verfügbarmachung der Sitzung Debuggen, Manager und die Debugmodule.  
+# <a name="process-debug-manager"></a>Prozessbasierter Debug-manager
+Prozessbasierter Debug-Manager (PDM) ist eine Komponente von Visual Studio, die Programme verwaltet, und Prozesse, sodass sie für die Sitzung verfügbar Debuggen, Manager und die Debug-Engines.  
   
- Die PDM verwaltet alle Prozesse, die gedebuggt werden können. Zum Debuggen, muss ein Programm mit der PDM registriert werden. Dies erfolgt zum Zeitpunkt, der das Programm, indem Sie entweder einen Port oder ein Debugging-Modul gestartet wird.  
+ Das PDM verwaltet alle Prozesse, die debuggt werden können. Um gedebuggt zu werden, muss ein Programm mit der PDM registriert werden. Diese Registrierung erfolgt zum Zeitpunkt, die das Programm, indem Sie entweder einen Port oder einer Debug-Engine gestartet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Prozesse](../../extensibility/debugger/processes.md)   
- [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
+ [Debug-engine](../../extensibility/debugger/debug-engine.md)   
  [Ports](../../extensibility/debugger/ports.md)   
  [Programme](../../extensibility/debugger/programs.md)   
- [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

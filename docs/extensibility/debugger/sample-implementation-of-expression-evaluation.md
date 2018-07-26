@@ -1,5 +1,5 @@
 ---
-title: Beispiel der Implementierung der Auswertung von Ausdrücken | Microsoft Docs
+title: Beispiel für die Implementierung der Ausdrucksauswertung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edc31a8bc403f4f6dfcb16847d3cfce5d99b526
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aac8e120880ba33b1479bd43ae43f5449c9e97d1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127836"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251110"
 ---
-# <a name="sample-implementation-of-expression-evaluation"></a>Beispielimplementierung der Auswertung von Ausdrücken
+# <a name="sample-implementation-of-expression-evaluation"></a>Beispielimplementierung der ausdrucksauswertung
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [verwaltete ausdrucksauswertung Beispiel](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Für eine **Überwachen** Ausdruck, Visual Studio ruft [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) erzeugt eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. `IDebugExpressionContext2::ParseText` instanziiert eine ausdrucksauswertung (EE) und ruft [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zum Abrufen einer [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
+ Für eine **Überwachen** Fensters Ausdrucks, Visual Studio-Aufrufe [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erzeugen einer [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. `IDebugExpressionContext2::ParseText` instanziiert eine ausdrucksauswertung (EE) und ruft [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zum Abrufen einer [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
   
- Diese Implementierung der `IDebugExpressionEvaluator::Parse` führt die folgenden Aufgaben:  
+ Die `IDebugExpressionEvaluator::Parse` führt die folgenden Aufgaben:  
   
-1.  [Nur C++] Analysiert den Ausdruck auf Fehler überprüfen.  
+1.  [Nur für C++] Analysiert den Ausdruck auf Fehler überprüfen.  
   
-2.  Instanziiert eine Klasse (aufgerufen `CParsedExpression` in diesem Beispiel), implementiert die `IDebugParsedExpression` Schnittstelle, und speichert Sie in der Klasse den Ausdruck analysiert werden soll.  
+2.  Instanziiert die Klasse (namens `CParsedExpression` in diesem Beispiel), die ausgeführt wird die `IDebugParsedExpression` Schnittstelle, und speichert Sie in der Klasse den Ausdruck analysiert werden.  
   
-3.  Gibt die `IDebugParsedExpression` -Schnittstelle aus dem `CParsedExpression` Objekt.  
+3.  Gibt die `IDebugParsedExpression` -Schnittstelle aus der `CParsedExpression` Objekt.  
   
 > [!NOTE]
->  In den folgenden Beispielen und im MyCEE Beispiel ist die ausdrucksauswertung nicht trennen Sie die Analyse bei der Auswertung.  
+>  In den folgenden Beispielen und das MyCEE-Beispiel wird trennt die ausdrucksauswertung nicht die Analyse bei der Auswertung.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
- Dies ist eine Implementierung von `IDebugExpressionEvaluator::Parse` in verwaltetem Code. Beachten Sie, dass diese Version der Methode die Analyse verzögert zu [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) als auch der Code für die Analyse gleichzeitig ausgewertet wird (finden Sie unter [auswerten einen Überwachungsausdruck](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+ Der folgende Code zeigt eine Implementierung von `IDebugExpressionEvaluator::Parse` in verwaltetem Code. Diese Version der Methode verzögert die Analyse zu [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) wie der Code für die Analyse zur gleichen Zeit auch ausgewertet wird (finden Sie unter [auswerten ein Überwachungsausdrucks](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```csharp  
 namespace EEMC  
@@ -66,8 +66,8 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>Nicht verwalteter Code  
- Dies ist eine Implementierung von `IDebugExpressionEvaluator::Parse` in nicht verwaltetem Code. Diese Methode ruft eine Hilfsfunktion `Parse`, um den Ausdruck und die Überprüfung auf Fehler zu analysieren, aber diese Methode ignoriert den resultierenden Wert. Die formale Auswertung wird verzögert [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , in dem der Ausdruck analysiert wird, während sie ausgewertet wird (finden Sie unter [auswerten einen Überwachungsausdruck](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+## <a name="unmanaged-code"></a>Nicht verwalteter code  
+Der folgende Code ist eine Implementierung von `IDebugExpressionEvaluator::Parse` in nicht verwaltetem Code. Diese Methode ruft eine Hilfsfunktion `Parse`, analysieren Sie den Ausdruck und eine Überprüfung auf Fehler, aber diese Methode ignoriert den resultierenden Wert. Die formale Auswertung in Bezug auf verzögert [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , in dem der Ausdruck analysiert wird, während sie ausgewertet wird (finden Sie unter [auswerten ein Überwachungsausdrucks](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```cpp  
 STDMETHODIMP CExpressionEvaluator::Parse(  
@@ -111,5 +111,5 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bewerten einen Überwachungsausdruck-Fenster](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Auswerten eines überwachungsfensterausdrucks](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Auswerten eines Überwachungsausdrucks](../../extensibility/debugger/evaluating-a-watch-expression.md)

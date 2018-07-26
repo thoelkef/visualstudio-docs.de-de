@@ -1,5 +1,5 @@
 ---
-title: S_taskIdCounter Feld | Microsoft Docs
+title: S_taskIdCounter-Feld | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d49881eb16e05edfc1cfc57dd9520de8991942d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126604"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252389"
 ---
-# <a name="staskidcounter-field"></a>S_taskIdCounter Feld
+# <a name="staskidcounter-field"></a>s_taskIdCounter-Feld
 Der nächste verfügbare Bezeichner für eine <xref:System.Threading.Tasks.Task> Objekt.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp  
 .field static assembly int32 s_taskIdCounter  
 ```  
   

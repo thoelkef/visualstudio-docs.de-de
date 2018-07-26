@@ -1,5 +1,5 @@
 ---
-title: Diagnosemeldungen im Ausgabefenster senden | Microsoft Docs
+title: Diagnosemeldungen im Ausgabefenster senden | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474582"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252296"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Diagnosemeldungen im Ausgabefenster senden
-Können Sie laufzeitmeldungen zum Schreiben der **Ausgabe** unter Verwendung der `Debug` Klasse oder die `Trace` -Klasse, die Teil von der <xref:System.Diagnostics> -Klassenbibliothek. Falls die Ausgabe lediglich in der Debugversion des Programms erfolgen soll, verwenden Sie die Debug-Klasse. Soll die Ausgabe sowohl in der Debug- als auch in der Releaseversion erfolgen, verwenden Sie die Trace-Klasse.  
+Können Sie laufzeitmeldungen zum Schreiben der **Ausgabe** unter Verwendung der <xref:System.Diagnostics.Debug> Klasse oder die <xref:System.Diagnostics.Trace> -Klasse, die Teil von der <xref:System.Diagnostics> -Klassenbibliothek. Verwenden der <xref:System.Diagnostics.Debug> Klasse, wenn Sie nur in eine Ausgabe der *Debuggen* Version des Programms. Verwenden der <xref:System.Diagnostics.Trace> Klasse, wenn die Ausgabe in beiden soll die *Debuggen* und *Version* Versionen.  
   
 ## <a name="output-methods"></a>Ausgabemethoden  
  Die <xref:System.Diagnostics.Trace>-Klasse und die <xref:System.Diagnostics.Debug>-Klasse stellen die folgenden Ausgabemethoden bereit:  
@@ -47,7 +47,7 @@ Können Sie laufzeitmeldungen zum Schreiben der **Ausgabe** unter Verwendung der
   
 -   Die <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>-Methode und die <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>-Methode, durch die die Ausführung stets unterbrochen wird und Informationen ausgegeben werden. Standardmäßig werden die Informationen der `Fail`-Methoden in einem Dialogfeld angezeigt.  
   
- Neben Programmausgabe der Anwendung die **Ausgabe** Fenster können die Informationen zu angezeigt:  
+ Neben Programmausgabe der Anwendung die **Ausgabe** die Informationen zum Anzeigen:  
   
 -   Module, die der Debugger geladen oder entladen hat.  
   

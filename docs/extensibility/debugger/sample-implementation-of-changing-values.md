@@ -1,5 +1,5 @@
 ---
-title: Beispiel der Implementierung der Werte ändern | Microsoft Docs
+title: Beispiel-Implementierung der Werte ändern | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39c662af2aa9f1fed2f36aefc60b6b2e539a0200
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01d3a13762612f40240fb377698745088aae6618
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128632"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251789"
 ---
-# <a name="sample-implementation-of-changing-values"></a>Beispielimplementierung Werte ändern
+# <a name="sample-implementation-of-changing-values"></a>Beispiel für die Implementierung der Änderung von Werten
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Alle lokalen angezeigt, der **"lokal"** -Fenster verfügt über eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) zugeordnetes Statusobjekt. Dies `IDebugProperty2` Objekt enthält, des lokalen Namen, Wert und Typ. Wenn ein Benutzer den Wert eines lokalen ändert, ruft Visual Studio [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) für das update der lokalen im Arbeitsspeicher. In diesem Beispiel wird die lokale dargestellt, durch die `CFieldProperty` Klasse, die implementiert die `IDebugProperty2` Schnittstelle.  
+ Jeder lokalen angezeigt, der **"lokal"** Fenster verfügt über eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Objekt verknüpft. Dies `IDebugProperty2` Objekt enthält, den lokalen Namen, Wert und Typ. Wenn ein Benutzer den Wert eines lokalen Elements ändert, ruft Visual Studio [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) für das update der lokalen im Arbeitsspeicher. In diesem Beispiel wird die lokale dargestellt, durch die `CFieldProperty` Klasse, die implementiert die `IDebugProperty2` Schnittstelle.  
   
 > [!NOTE]
->  Für **Überwachen** und **Schnellüberwachung** Ausdrücke, liegt der Wert geändert wird durch die `CValueProperty` Klasse in der Stichprobe MyCEE. Allerdings die Implementierung von `IDebugProperty2::SetValueAsString` ist der gleiche wie hier gezeigt.  
+>  Für **sehen Sie sich** und **Schnellüberwachung** Ausdrücke, liegt der Wert geändert wird durch die `CValueProperty` Klasse im MyCEE-Beispiel. Jedoch die Implementierung der `IDebugProperty2::SetValueAsString` wie hier dargestellt ist.  
   
- Diese Implementierung der `IDebugProperty2::SetValueAsString` führt die folgenden Aufgaben:  
+ Die Implementierung der `IDebugProperty2::SetValueAsString` führt die folgenden Aufgaben:  
   
 1.  Wertet den Ausdruck um einen Wert zu erzeugen.  
   
-2.  Bindet das zugeordnete [IDebugField](../../extensibility/debugger/reference/idebugfield.md) auf die Speicheradresse-Objekt und erzeugt eine [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
+2.  Bindet das zugeordnete [IDebugField](../../extensibility/debugger/reference/idebugfield.md) -Objekt, dessen Speicherort und erzeugt eine [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
   
-3.  Konvertiert den Wert in eine Reihe von Bytes.  
+3.  Konvertiert den Wert in eine Reihe von Bytes an.  
   
-4.  Aufrufe [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) zum Speichern der Bytes im Speicher.  
+4.  Aufrufe [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) zum Speichern der Bytes im Arbeitsspeicher.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
- Dies ist eine Implementierung von `IDebugProperty2::SetValueAsString` in verwaltetem Code.  
+ Der folgende Code ist eine Implementierung von `IDebugProperty2::SetValueAsString` in verwaltetem Code.  
   
-```  
+```csharp  
 [C#]  
 namespace EEMC  
 {  
@@ -226,10 +226,10 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>Nicht verwalteter Code  
- Dies ist eine Implementierung von `IDebugProperty2::SetValueAsString` in verwaltetem Code. Die Hilfsfunktion `FieldCoerceValueType` (nicht gezeigt) erzwingt, dass eine `VARIANT` eines bestimmten Typs und macht Sie sicher, dass der Wert ist einer der Typen `FieldSetValue` behandeln können.  
+## <a name="unmanaged-code"></a>Nicht verwalteter code  
+ Der folgende Code ist eine Implementierung von `IDebugProperty2::SetValueAsString` in verwaltetem Code. Die Hilfsfunktion `FieldCoerceValueType` (nicht dargestellt) erzwingt, dass eine `VARIANT` eines bestimmten Typs und sorgt dafür, dass der Wert ist einer der Typen `FieldSetValue` verarbeiten kann.  
   
-```  
+```cpp  
 [C++]  
 STDMETHODIMP CFieldProperty::SetValueAsString(   
         in LPCOLESTR pszValueStr,  
@@ -426,5 +426,5 @@ HRESULT FieldSetValue(
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ändern des Werts von einer lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md)   
+ [Ändern des Werts eines lokalen Elements](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)
