@@ -1,5 +1,5 @@
 ---
-title: Geben Sie Schnellansicht und den benutzerdefinierten Viewer | Microsoft Docs
+title: Typ der Schnellansicht und den benutzerdefinierten Viewer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d419130cd93c6cc2f7dcff132fdafc8986bfd30a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126909"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276493"
 ---
-# <a name="type-visualizer-and-custom-viewer"></a>Typ-Schnellansicht und den benutzerdefinierten Viewer
-Eine Typ-Schnellansicht ist eine Komponente, die einen Teil der Daten in einem sehr spezifischen Format angezeigt. Dieses Format wird vom Implementierer der Schnellansicht vollständig, die es dem Endbenutzer oder einem Drittanbieter von Schnellansichten werden.  
+# <a name="type-visualizer-and-custom-viewer"></a>Typschnellansicht und benutzerdefinierter viewer
+Eine typschnellansicht ist eine Komponente, die einen Teil der Daten in einem bestimmten Format angezeigt. Das Format ist vollständig bis zu, die die Schnellansicht implementiert, sei es dem Endbenutzer oder einem Drittanbieter von Schnellansichten.  
   
- Ein benutzerdefinierter Viewer ist der Teil einer benutzerdefinierten ausdrucksauswertung, die einen Teil der Daten in einem sehr spezifischen Format angezeigt. Dieses Format ist vollständig vom Implementierer der benutzerdefinierten Viewer, was bedeutet, dass das Format der Implementierer der ausdrucksauswertung (EE) ist.  
+ Ein benutzerdefinierter Viewer ist der Teil einer benutzerdefinierten ausdrucksauswertung, der ein Datenelement in einem bestimmten Format angezeigt. Dieses Format ist vollständig hängt von der Implementierung der benutzerdefinierten Viewer, was bedeutet, dass das Format hängt von der Implementierung von der ausdrucksauswertung (EE) ist.  
   
-## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Unterstützung für die Typ-Schnellansichten in eine Ausdrucksauswertung  
- Ein EE kann Typ-Schnellansichten unterstützen, indem Sie einen Satz von Schnittstellen zugänglich Schnellansichten unterstützen: Schnittstellen wie [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) und [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Beachten Sie jedoch, dass die EE nicht für die Implementierung der Typ-Schnellansicht selbst verantwortlich ist: die EE lediglich externe Schnellansichten ermöglicht den Zugriff auf die Typinformationen. Solche Schnellansichten möglicherweise zusammen mit der EE ausgeliefert und an der entsprechenden Stelle in Visual Studio bereitgestellt werden, von einem anderen Drittanbieter oder auch von der Endbenutzer installiert werden.  
+## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Unterstützung für Typ-Schnellansichten in einer ausdrucksauswertung  
+ Ein EE unterstützt die Typ-Schnellansichten unterstützt einen Satz von Schnittstellen für Schnellansichten verfügbar: z. B. [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) und [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Die EE ist jedoch nicht für die Implementierung der typschnellansicht selbst verantwortlich: die EE lediglich externe Schnellansichten ermöglicht den Zugriff auf die Typinformationen. Solche Schnellansichten wäre zusammen mit den EE geliefert und installiert in der entsprechenden Stelle in Visual Studio, die von einem anderen Drittanbieter oder sogar durch den Endbenutzer bereitgestellt.  
   
-## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Unterstützung für den benutzerdefinierten Viewer in eine Ausdrucksauswertung  
- Ein EE kann auch benutzerdefinierten Viewer unterstützen, in denen die EE selbst den Code für den Datentyp anzeigen bereitstellt. Implementiert ein benutzerdefinierter Viewer die [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) -Schnittstelle, die alle Aufgaben für das Anzeigen von Daten in dem Format behandelt gewünscht; im Viewer verfügt über Vollzugriff auf die Anzeige und kann auch die Daten geändert werden. Alle benutzerdefinierten Viewer, die von der EE bereitgestellten verfügen über die EE, bei der Auslieferung des Produkts.  
+## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Unterstützung für benutzerdefinierten Viewern in einer ausdrucksauswertung  
+ Ein EE kann auch benutzerdefinierten Viewer unterstützen, in denen die EE selbst den Code für den Datentyp anzeigen bereitstellt. Implementiert ein benutzerdefinierter Viewer die [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) -Schnittstelle, die alle Aufgaben des zeigt die Daten im benötigten Format behandelt erwünscht ist; der Viewer verfügt über Vollzugriff auf die Anzeige und kann auch die Daten geändert werden. Alle benutzerdefinierten Viewer, die von der EE bereitgestellt verfügen über die EE, wenn das Produkt ausgeliefert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)   
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)   
  [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator.md)   
- [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
+ [Debug-engine](../../extensibility/debugger/debug-engine.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

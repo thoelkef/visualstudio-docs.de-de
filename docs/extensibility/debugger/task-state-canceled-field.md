@@ -1,5 +1,5 @@
 ---
-title: TASK_STATE_CANCELED Feld | Microsoft Docs
+title: TASK_STATE_CANCELED-Feld | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5196b7a5b137e648c5ef35fa3f3bf13885b5e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a934a70028f392a2a851c11c1b7bc9005dc4a38c
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127032"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276779"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED-Feld
-Der Vorgang wurde abgebrochen, bevor es bei des Ausführungsstatus erreichen oder dessen Abbruch bestätigt und ohne Ausnahme abgeschlossen wurde.  
+Der Task wurde abgebrochen, bevor er den ausgeführten Zustand erreicht, oder es bestätigt die Abbruch und ohne Ausnahme abgeschlossen wurde.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp  
 .field static assembly literal int32 TASK_STATE_CANCELED = int32(0x00800000)  
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält dieser Wert die <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält diesen Wert, der <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
