@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974974"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178360"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Gewusst wie: Erstellen eines Webleistungstest-Plug-Ins
 
-Webleistungstest-Plug-Ins ermöglichen es Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Mit einem benutzerdefinierten Webleistungstest-Plug-In können Sie bei Ausführung des Webleistungstests einen Teil des Codes aufrufen. Das Webleistungstest-Plug-In wird bei jeder Testiteration einmal ausgeführt. Wenn Sie außerdem die PreRequest-Methode oder PostRequest-Methode im Test-Plug-In überschreiben, werden diese Anforderungs-Plug-Ins jeweils vor bzw. nach den einzelnen Anforderungen ausgeführt.
+Webleistungstest-Plug-Ins ermöglichen Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Mit einem benutzerdefinierten Webleistungstest-Plug-In können Sie bei Ausführung des Webleistungstests einen Teil des Codes aufrufen. Das Webleistungstest-Plug-In wird bei jeder Testiteration einmal ausgeführt. Wenn Sie außerdem die PreRequest-Methode oder PostRequest-Methode im Test-Plug-In überschreiben, werden diese Anforderungs-Plug-Ins jeweils vor bzw. nach den einzelnen Anforderungen ausgeführt.
 
 Sie können ein benutzerdefiniertes Webleistungstest-Plug-In erstellen, indem Sie die eigene Klasse von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>-Basisklasse ableiten.
 
@@ -59,7 +59,7 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
      Dem Ordner **Verweis** im Projektmappen-Explorer wird der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** hinzugefügt.
 
-12. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
+12. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
 
 13. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
@@ -91,7 +91,7 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
 19. Öffnen Sie einen Webleistungstest.
 
-20. Um das Webleistungstest-Plug-In hinzuzufügen, klicken Sie auf der Symbolleiste auf **Webtest-Plug-In hinzufügen**.
+20. Um das Webleistungstest-Plug-In hinzuzufügen, wählen Sie auf der Symbolleiste **Webtest-Plug-In hinzufügen** aus.
 
      Das Dialogfeld **Webtest-Plug-In hinzufügen** wird angezeigt.
 
@@ -107,7 +107,7 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
      Das Plug-In wird dem Ordner **Webtest-Plug-Ins** hinzugefügt.
 
     > [!WARNING]
-    > Möglicherweise erhalten Sie einen Fehler wie den folgenden, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
+    > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
     > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
     >
@@ -120,7 +120,7 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
 Mit dem folgenden Code wird ein benutzerdefiniertes Webleistungstest-Plug-In erstellt, das dem <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> ein Element hinzufügt, das die Testiteration angibt.
 
-Nach der Ausführung des Webleistungstests können Sie mit diesem Plug-In das hinzugefügte Element mit dem Namen **TestIterationNumber** auf der Registerkarte **Kontext** im Webleistungstest-Ergebnisviewer anzeigen.
+Nach der Ausführung des Webleistungstests können Sie mit diesem Plug-In das hinzugefügte Element mit dem Namen **TestIterationNumber** auf der Registerkarte **Kontext** im **Webleistungstest-Ergebnisviewer** anzeigen.
 
 ```csharp
 using System;

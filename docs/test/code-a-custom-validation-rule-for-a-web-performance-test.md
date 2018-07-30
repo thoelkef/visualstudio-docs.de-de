@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971396"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178201"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest
 
 Sie können eigene Validierungsregeln erstellen. Dazu leiten Sie Ihre eigene Regelklasse von einer Validierungsregelklasse ab. Validierungsregeln werden von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>-Basisklasse abgeleitet.
 
@@ -50,7 +50,7 @@ Sie können eigene Validierungsregeln erstellen. Dazu leiten Sie Ihre eigene Reg
 
 7.  Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
 
-8.  Klicken Sie mit der rechten Maustaste auf eine Anforderung, und klicken Sie mit der linken Maustaste auf **Validierungsregel hinzufügen**, um die benutzerdefinierte Validierungsregel einer Webleistungstestanforderung hinzuzufügen.
+8.  Klicken Sie mit der rechten Maustaste auf eine Anforderung, und wählen Sie **Validierungsregel hinzufügen** aus, um die benutzerdefinierte Validierungsregel einer Webleistungstestanforderung hinzuzufügen.
 
      Das Dialogfeld **Validierungsregel hinzufügen** wird angezeigt. Die benutzerdefinierte Validierungsregel wird in der Liste **Regel auswählen** zusammen mit den vordefinierten Validierungsregeln angezeigt. Wählen Sie die benutzerdefinierte Validierungsregel aus, und klicken Sie dann auf **OK**.
 

@@ -23,18 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3820e1d7ef4294b4c46e0e7d0174a89dfe5b0e75
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978787"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179660"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht des Auslastungstest-Analyzers
 
 Für die Auswertung der Ergebnisse eines Auslastungstestlaufs können verschiedene Bereiche angezeigt werden, die unterschiedliche Methoden der Datenanalyse ermöglichen. Sie können die Daten als Diagramm anzeigen, um zeitliche Verläufe zu identifizieren, oder Sie können die Daten als ausführlichen Tabellen anzeigen.
 
-Um zur Tabellenansicht zu wechseln, wählen Sie in der Auslastungstest-Symbolleiste die Option **Tabellen** aus. Mithilfe der Dropdownliste **Tabelle** auf der Symbolleiste über dem Tabellenraster können Sie die Anzeige der verschiedenen Tabellen wechseln. In der Tabellenansicht können jeweils bis zu vier Tabellen angezeigt werden. Weitere Informationen finden Sie unter [Unterteilen von Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in diesem Thema.
+Klicken Sie in der **Auslastungstest**-Symbolleiste auf **Tabellen**, um zur Tabellenansicht zu wechseln. Mithilfe der Dropdownliste **Tabelle** auf der Symbolleiste über dem Tabellenraster können Sie die Anzeige der verschiedenen Tabellen wechseln. In der Tabellenansicht können jeweils bis zu vier Tabellen angezeigt werden. Weitere Informationen finden Sie unter [Unterteilen von Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in diesem Thema.
 
 Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während des gesamten Auslastungstestlaufs kumulativ. Die Werte in den Spalten mit der Bezeichnung **Letzter** weichen hiervon ab, da diese den Wert aus dem letzten Samplingintervall darstellen.
 
@@ -50,34 +50,34 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 
  In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von Auslastungstestläufen verfügbar sind.
 
-|Tabellenname|description|
+|Tabellenname|Beschreibung |
 |----------------|-----------------|
-|Fehler|Zeigt eine Liste mit Fehlern an, die während des Auslastungstestlaufs aufgetreten sind. Weitere Informationen finden Sie unter [Die Tabelle „Fehler“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in diesem Thema sowie unter [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Seiten|Zeigt eine Liste mit Seiten an, auf die während eines Auslastungstestlaufs zugegriffen wurde. Einige Daten dieser Tabelle sind nur nach Abschluss eines Auslastungstests verfügbar. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit einer Webseite)](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
-|Anforderungen|Zeigt ausführliche Informationen zu einzelnen Anforderungen an, die während eines Auslastungstests ausgegeben wurden. Dies schließt alle HTTP-Anforderungen und abhängige Anforderungen, z. B. Bilder, ein. Weitere Informationen finden Sie unter [Die Tabelle „Anforderungen“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in diesem Thema.|
-|SQL-Ablaufverfolgung|Zeigt die Ergebnisse der SQL-Ablaufverfolgung an. Diese Tabelle ist nur nach Abschluss eines Auslastungstests verfügbar. Außerdem muss die SQL-Ablaufverfolgung während des Tests aktiviert sein. Weitere Informationen finden Sie unter [Die Tabelle „SQL-Ablaufverfolgungsdaten“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) in diesem Thema.|
-|Tests|Zeigt ausführliche Informationen zu einzelnen Testläufen an, die während eines Auslastungstests ausgeführt wurden. Weitere Informationen finden Sie unter [Die Tabelle „Tests“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) in diesem Thema.|
+|Fehler|Zeigt eine Liste mit Fehlern an, die während des Auslastungstestlaufs aufgetreten sind. Weitere Informationen finden Sie unter [Die Tabelle „Errors“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in diesem Artikel sowie unter [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|Seiten|Zeigt eine Liste mit Seiten an, auf die während eines Auslastungstestlaufs zugegriffen wurde. Einige Daten dieser Tabelle sind nur nach Abschluss eines Auslastungstests verfügbar. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Websites)](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Anforderungen|Zeigt ausführliche Informationen zu einzelnen Anforderungen an, die während eines Auslastungstests ausgegeben wurden. Dies schließt alle HTTP-Anforderungen und abhängige Anforderungen, z. B. Bilder, ein. Weitere Informationen finden Sie unter [Die Tabelle „Requests“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in diesem Artikel.|
+|SQL-Ablaufverfolgung|Zeigt die Ergebnisse der SQL-Ablaufverfolgung an. Diese Tabelle ist nur nach Abschluss eines Auslastungstests verfügbar. Außerdem muss die SQL-Ablaufverfolgung während des Tests aktiviert sein. Weitere Informationen finden Sie unter [Die Datentabelle „SQL Trace“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) in diesem Artikel.|
+|Tests|Zeigt ausführliche Informationen zu einzelnen Testläufen an, die während eines Auslastungstests ausgeführt wurden. Weitere Informationen finden Sie unter [Die Tabelle „Tests“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) in diesem Artikel.|
 |Schwellenwerte|Zeigt eine Liste mit Verletzungen von Schwellenwertregeln an, die während des Auslastungstestlaufs aufgetreten sind. Weitere Informationen finden Sie unter [Analysieren von Schwellenwertregelverstößen](../test/analyze-threshold-rule-violations-in-load-tests.md).|
-|Transaktionen|Zeigt eine Liste mit Transaktionen an, die während des Auslastungstestlaufs ausgeführt wurden. Weitere Informationen finden Sie unter [Die Tabelle „Transaktionen“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) in diesem Thema.|
+|Transaktionen|Zeigt eine Liste mit Transaktionen an, die während des Auslastungstestlaufs ausgeführt wurden. Weitere Informationen finden Sie unter [Die Tabelle „Transactions“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) in diesem Artikel.|
 |Agents|Zeigt nur an, wenn der Auslastungstest einen Testcontroller und Test-Agents verwendet. Zeigt eine Liste der Agents an, die während des Auslastungstestlaufs verwendet wurden. Die Tabelle "Agents" enthält, wie viele Anforderungen der Agent getestet hat und wie viele von diesen Anforderungen fehlerhaft waren. Darüber hinaus enthält die Tabelle "Agents" die Anzahl der Tests in der Auslastungstest-Testmischung, die der Agent getestet hat, und die Anzahl jener, die fehlerhaft waren.|
 |Testdetails|Zeigt Details der in der Testmischung für den Auslastungstest enthaltenen Tests an. Die Details enthalten den Namen des Tests, das Szenario des Tests, die Zeit des Testbeginns, die Dauer der Ausführung des Tests und das Testergebnis, das angibt, ob der Test erfolgreich war oder fehlgeschlagen ist. Wenn bei dem Test ein Fehler aufgetreten ist, ist in der Spalte **Details** ein Link vorhanden. Sie können den Link auswählen, über den Sie den Webleistungstest-Editor mit der hervorgehobenen fehlgeschlagenen Anforderung aufrufen.|
 
 ## <a name="collect-percentile-data"></a>Sammeln von prozentualen Daten
 
- In verschiedenen Auslastungstesttabellen können zusätzliche Spalten angezeigt werden, in denen prozentuale Daten und Antwortzeiten nach Netzwerkemulation gruppiert sind. Diese Daten werden in der Standardeinstellung nicht gesammelt. Prozentuale Daten sind nur verfügbar, wenn Sie Ergebnisse in einer Datenbank speichern, und nicht wenn Sie sie lokal speichern. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md). Um diese Daten zu sammeln, wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Laufzeiteinstellungsknoten aus, den Sie ändern möchten. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** **StatisticsOnly** oder **AllIndividualDetails** aus. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit einer Webseite)](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ In verschiedenen Auslastungstesttabellen können zusätzliche Spalten angezeigt werden, in denen prozentuale Daten und Antwortzeiten nach Netzwerkemulation gruppiert sind. Diese Daten werden in der Standardeinstellung nicht gesammelt. Prozentuale Daten sind nur verfügbar, wenn Sie Ergebnisse in einer Datenbank speichern, und nicht wenn Sie sie lokal speichern. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md). Um diese Daten zu sammeln, wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Laufzeiteinstellungsknoten aus, den Sie ändern möchten. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** **StatisticsOnly** oder **AllIndividualDetails** aus. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Websites)](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
-## <a name="the-requests-table"></a>Die Tabelle Anforderungen
+## <a name="the-requests-table"></a>Die Tabelle „Requests“
 
  In der Tabelle **Anforderungen** werden ausführliche Informationen zu einzelnen Anforderungen angezeigt, die während eines Auslastungstests ausgegeben wurden. Dies schließt alle HTTP-Anforderungen und abhängige Anforderungen, z. B. Bilder, ein. In der Tabelle sind Anforderungen nach Test und Szenario aufgelistet, da eine Anforderung in zahlreichen Tests und Szenarien enthalten sein kann.
 
  In der folgenden Tabelle sind die Spalten der Tabelle **Anforderungen** aufgelistet:
 
-|Spalte|description|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung |In der Standardeinstellung angezeigt|
 |------------|-----------------|------------------------|
-|**Anforderung**|Die URL der Anforderung. Zum Beispiel home.html oder orange-arrow.gif.|Ja|
+|**Anforderung**|Die URL der Anforderung. Beispiel: *home.html* oder *orange-arrow.gif*.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
 |**Test**|Der Name des Tests.|Ja|
-|**Gesamt**|Die Gesamtanzahl der Ausgabe dieser Webleistungstestanforderung während des Auslastungstestlaufs. Im Gesamtwert sind erfolgreiche und fehlgeschlagene Anforderungen enthalten, jedoch keine zwischengespeicherten Anforderungen, da diese nicht an den Webserver übergeben werden.|Ja|
+|**Gesamt**|Die Gesamtanzahl der Ausgabe dieser Webleistungstest-Anforderung während des Auslastungstestlaufs. Im Gesamtwert sind erfolgreiche und nicht erfolgreiche Anforderungen enthalten, jedoch keine zwischengespeicherten Anforderungen, da diese nicht an den Webserver übergeben werden.|Ja|
 |**Erfolgreich**|Wie oft die Anforderung ausgegeben und erfolgreich ausgeführt wurde.|Nein|
 |**Fehlgeschlagen**|Wie oft die Anforderung ausgegeben wurde und fehlgeschlagen ist. Die Einträge in dieser Spalte werden als Links angezeigt. Wählen Sie einen beliebigen Link, um im Dialogfeld **Auslastungstestfehler** eine Liste der einzelnen Fehler anzuzeigen. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Ja|
 |**Zwischengespeichert**|Wie oft die Anforderung zwischengespeichert wurde.|Nein|
@@ -88,13 +88,13 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 |**Antwortzeit**|Die durchschnittliche Dauer bis zum Empfang der gesamten Antwort auf eine Anforderung, gemessen ab dem Zeitpunkt, an dem die Anforderung an den Webserver gesendet wurde. Die Zeiten werden in Sekunden angegeben.|Ja|
 |**Inhaltslänge**|Die durchschnittliche Inhaltslänge der Antwort auf die Anforderung. Die Inhaltslänge wird in Bytes angegeben.|Ja|
 
-## <a name="the-tests-table"></a>Die Tabelle Tests
+## <a name="the-tests-table"></a>Die Tabelle „Tests“
 
  In der Tabelle **Tests** werden ausführliche Informationen zu einzelnen Tests angezeigt, die während eines Auslastungstests ausgeführt wurden. In der Tabelle werden Tests nach Test und Szenario aufgeführt, da ein Test in zahlreichen Szenarien enthalten sein kann.
 
  In der folgenden Tabelle sind die Spalten der Tabelle **Tests** aufgelistet.
 
-|Spalte|description|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung |In der Standardeinstellung angezeigt|
 |------------|-----------------|------------------------|
 |**Test**|Der Name des Tests.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
@@ -109,16 +109,16 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 |**95% Testzeit**|Der 95. Prozentwert der Testzeit.|Ja|
 |**Anforderungen/Test**|Die durchschnittliche Anzahl von Anforderungen im Test, wenn es sich um einen Webleistungstest handelt.|Nein|
 
-## <a name="the-transactions-table"></a>Die Tabelle Transaktionen
+## <a name="the-transactions-table"></a>Die Tabelle „Transactions“
 
  In der Tabelle **Transaktionen** wird eine Liste von Transaktionen angezeigt, die während eines Auslastungstestlaufs ausgeführt wurden. Transaktionen verweisen entweder auf Transaktionen, die in einem Webleistungstest definiert sind, oder auf Zeitgeber, die in einem Komponententest definiert sind. Transaktionen verweisen nicht auf Datenbanktransaktionen.
 
  In der folgenden Tabelle sind die Spalten der Tabelle **Transaktionen** aufgelistet.
 
 > [!NOTE]
-> Sie müssen zum Anzeigen aller Spalten die Eigenschaft "Speicher für Details der zeitlichen Steuerung" aktivieren, die der aktiven Testlaufeinstellung zugeordnet ist. Weitere Informationen finden Sie unter [How to: Specify the Timing Details Storage Property (Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“)](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Sie müssen zum Anzeigen aller Spalten die Eigenschaft "Speicher für Details der zeitlichen Steuerung" aktivieren, die der aktiven Testlaufeinstellung zugeordnet ist. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Spalte|description|Sichtbar ohne zeitliche Steuerungsdetails|
+|Spalte|Beschreibung |Sichtbar ohne zeitliche Steuerungsdetails|
 |------------|-----------------|------------------------------------|
 |**Transaktion**|Der Name der Transaktion.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
@@ -136,7 +136,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 |**99% Antwortzeit**|Der 99. Prozentwert der Transaktionszeit. Dies schließt keine Reaktionszeiten ein.|Nein|
 |**Standardabweichung der Antwortzeit**|Dies schließt keine Reaktionszeiten ein.|Nein|
 
-## <a name="the-errors-table"></a>Die Tabelle "Fehler"
+## <a name="the-errors-table"></a>Die Tabelle „Errors“
 
  Wenn Sie einen Auslastungstest ausführen, können Sie die auftretenden Fehler analysieren. Das Analysieren der Fehler und das Einstellen der Tests sind ein wichtiger Teil des Auslastungstestprozesses. Wenn Fehler aufgetreten sind, erscheint ein **errors**-Link auf der Auslastungsteststatusleiste und gibt die Anzahl der aufgetretenen Fehler an. Um die Tabelle "Fehler" anzuzeigen, wählen Sie den Link aus.
 
@@ -144,7 +144,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 
  Die Tabelle Errors enthält folgende Spalten:
 
-|Spalte|description|Standardmäßig angezeigt|
+|Spalte|Beschreibung |Standardmäßig angezeigt|
 |------------|-----------------|------------------------|
 |Typ|Der Typ des Fehlers. Beispielsweise HttpError.|Ja|
 |SubType|Der Untertyp des Fehlers. Beispielsweise LoadTestException.|Ja|
@@ -153,7 +153,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 
  Weitere Informationen finden Sie unter [Arbeiten mit Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-### <a name="drilling-down-to-the-error-list"></a>Detailinformationen zur Fehlerliste anzeigen
+### <a name="drill-down-to-the-error-list"></a>Ausführen eines Drilldowns für die Fehlerliste
 
 In der Tabelle Errors sind die Fehler nach Typ und Untertyp gruppiert. Zeigen Sie das Dialogfeld **Auslastungstestfehler** an, um eine Tabelle mit einzelnen Fehlern einzusehen. Um das Dialogfeld anzuzeigen, klicken Sie auf einen Link in der Spalte **Anzahl** der Tabelle „Fehler“. Das Dialogfeld kann auch angezeigt werden, indem Sie in der Tabelle „Fehler“ mit der rechten Maustaste auf eine Zeile mit Daten und dann auf **Fehler** klicken.
 
@@ -162,7 +162,7 @@ In der Tabelle Errors sind die Fehler nach Typ und Untertyp gruppiert. Zeigen Si
 
 Die Tabelle **Auslastungstestfehler** enthält folgende Spalten:
 
-|Spalte|description|
+|Spalte|Beschreibung |
 |------------|-----------------|
 |**Zeit**|Der Zeitpunkt während des Auslastungstests, zu dem der Fehler auftrat|
 |**Agent**|Der Name des Agent-Computers, auf dem der Fehler auftrat. Dies ist wichtig, wenn Sie Auslastungstests mithilfe von Testcontrollern und Test-Agents ausführen. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|
@@ -178,13 +178,13 @@ Die Tabelle **Auslastungstestfehler** enthält folgende Spalten:
 > [!NOTE]
 > Sie können die Tabelle sortieren, indem Sie die Spaltenüberschriften auswählen.
 
-## <a name="the-sql-trace-data-table"></a>Die Tabelle "SQL-Ablaufverfolgungsdaten"
+## <a name="the-sql-trace-data-table"></a>Die Datentabelle „SQL Trace“
 
 Sie können während eines Auslastungstestlaufs SQL-Ablaufverfolgungsdaten zur späteren Analyse erfassen. Durch das Erfassen von Ablaufverfolgungsdaten können Sie in der getesteten SQL Server-Datenbank die Abfragen und gespeicherten Prozeduren ermitteln, die am langsamsten ausgeführt werden.
 
 Bei aktivierter SQL-Ablaufverfolgung wird während des Auslastungstestlaufs eine Datei mit den Ablaufverfolgungsdaten erstellt. Diese Daten werden nach Abschluss des Testlaufs automatisch im Auslastungstest-Ergebnisspeicher gespeichert, und die Ablaufverfolgungsdatei wird gelöscht. Nach Abschluss des Auslastungstests analysieren Sie die Ablaufverfolgungsdaten in der Tabelle **SQL-Ablaufverfolgung**.
 
-### <a name="to-view-sql-trace-data"></a>So zeigen Sie SQL-Ablaufverfolgungsdaten an
+### <a name="to-view-sql-trace-data"></a>Anzeigen der SQL-Ablaufverfolgungsdaten
 
 1. Klicken Sie in der Auslastungstestanalyse auf der Symbolleiste auf **Tabellen**, um sicherzustellen, dass das Tabellenraster angezeigt wird.
 
@@ -194,45 +194,45 @@ Bei aktivierter SQL-Ablaufverfolgung wird während des Auslastungstestlaufs eine
 
    Die folgenden Spalten werden angezeigt:
 
-    - Event Class
+    - **Event Class**
 
-    - Dauer
+    - **Dauer**
 
-    - CPU
+    - **CPU**
 
-    - Reads
+    - **Reads**
 
-    - Writes
+    - **Writes**
 
-    - TextData
+    - **TextData**
 
-    - StartTime
+    - **StartTime**
 
-    - EndTime
+    - **EndTime**
 
    Wenn Sie SQL-Ereignisse verfolgen möchten, die nicht mit den Daten in diesen Spalten angegeben werden, können Sie getrennt von Visual Studio eine eigene benutzerdefinierte SQL-Ablaufverfolgung mithilfe des SQL Profiler-Tools einrichten.
 
 ## <a name="tile-load-test-tables"></a>Unterteilen von Auslastungstesttabellen
 
-Die Ergebnisse eines Auslastungstestlaufs können als ausführliche Tabellen angezeigt werden. Um zur Tabellenansicht zu wechseln, wählen Sie in der Auslastungstest-Symbolleiste die Option **Tabellen** aus. Die verfügbaren Tabellen lauten Fehler, Seiten, Anforderungen, SQL-Ablaufverfolgung, Tests, Schwellenwerte und Transaktionen. Weitere Informationen finden Sie unter [Arbeiten mit Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Die Ergebnisse eines Auslastungstestlaufs können als ausführliche Tabellen angezeigt werden. Klicken Sie in der **Auslastungstest**-Symbolleiste auf **Tabellen**, um zur Tabellenansicht zu wechseln. Die verfügbaren Tabellen lauten **Errors**, **Pages**, **Requests**, **SQL Trace**, **Tests**, **Thresholds** und **Transactions**. Weitere Informationen finden Sie unter [Arbeiten mit Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 In der Tabellenansicht können Sie bis zu vier Tabellen gleichzeitig anzeigen, ohne dass die Tabellen überlappen.
 
 ### <a name="to-tile-tables"></a>So ordnen Sie Tabellen neben- bzw. untereinander an
 
-1. Klicken Sie auf der Symbolleiste der Auslastungstestanalyse auf **Tabellen**.
+1. Klicken Sie auf der Symbolleiste des **Auslastungstest-Analyzers** auf **Tabellen**.
 
      Die Tabellenansicht wird geöffnet. Im Standardlayout werden zwei horizontale Bereiche angezeigt.
 
-2. Wählen Sie auf der Symbolleiste der Auslastungstestanalyse die Layoutschaltfläche und dann eine der folgenden Optionen aus.
+2. Klicken Sie auf der Symbolleiste des **Auslastungstest-Analyzers** auf die Schaltfläche **Layout**, und wählen Sie dann eine der folgenden Optionen aus:
 
-    - Ein Bereich
+    - **Ein Bereich**
 
-    - Zwei horizontale Bereiche
+    - **Zwei horizontale Bereiche**
 
-    - Drei horizontale Bereiche
+    - **Drei horizontale Bereiche**
 
-    - Vier horizontale Bereiche
+    - **Vier horizontale Bereiche**
 
 3. Mithilfe der Dropdownliste über dem Tabellenraster in den einzelnen Bereichen können Sie zwischen den verschiedenen Tabellen wechseln.
 
@@ -241,9 +241,9 @@ In der Tabellenansicht können Sie bis zu vier Tabellen gleichzeitig anzeigen, o
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Gewusst wie: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analyzing Threshold Rule Violations (Analysieren von Verstößen gegen die Schwellenwertregel)](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Analysieren von Verstößen gegen Schwellenwertregeln](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Zusammenfassung der Auslastungstestergebnisse – Übersicht](../test/load-test-results-summary-overview.md)
+- [Load Test Results Summary Overview (Zusammenfassung der Auslastungstestergebnisse – Übersicht)](../test/load-test-results-summary-overview.md)

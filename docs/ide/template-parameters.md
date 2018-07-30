@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066533"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178633"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -49,7 +49,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
 
 In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können.
 
-|Parameter|description|
+|Parameter|Beschreibung |
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
@@ -121,3 +121,4 @@ Fügen Sie der *VSTEMPLATE*-Datei für die Projektvorlage das `ReplaceParameters
 
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751045"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177824"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
 
@@ -35,11 +35,11 @@ Einige Typen dynamischer Parameter werden nicht erkannt. Ein unerkannter dynamis
 
 Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Parameters erstellen wir eine einfache ASP.NET-Webanwendung, die über drei Webformulare mit einigen Steuerelementen und benutzerdefiniertem Code verfügt. An diesem Beispiel wird gezeigt, wie Sie die dynamischen Parameter isolieren und verarbeiten.
 
-1.  Erstellen Sie ein neues ASP.NET-Projekt mit dem Namen "DynamicParamaterSample".
+1.  Erstellen Sie ein neues ASP.NET-Projekt mit dem Namen **DynamicParamaterSample**.
 
      ![Leeres ASP.NET-Webanwendungsprojekt erstellen](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  Fügen Sie ein Webformular mit dem Namen "Querystring.aspx" hinzu.
+2.  Fügen Sie ein Webformular mit dem Namen *Querystring.aspx* hinzu.
 
 3.  Ziehen Sie in der Entwurfsansicht ein HiddenField-Steuerelement auf die Seite, und ändern Sie dann den Wert für die (ID)-Eigenschaft auf "HiddenFieldSessionID".
 
@@ -62,7 +62,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
     </html>
     ```
 
-5.  Öffnen Sie die Datei "Querystring.aspx.cs", und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
+5.  Öffnen Sie die Datei *Querystring.aspx.cs*, und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,25 +74,25 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
     }
     ```
 
-6.  Fügen Sie ein zweites Webformular mit dem Namen "ASPQuery.aspx" hinzu.
+6.  Fügen Sie ein zweites Webformular mit dem Namen *ASPQuery.aspx* hinzu.
 
-7.  Ziehen Sie in der Entwurfsansicht eine Bezeichnung auf die Seite, und ändern Sie den Wert für ihre (ID)- Eigenschaft auf "IndexLabel".
+7.  Ziehen Sie in der Entwurfsansicht eine **Bezeichnung** auf die Seite, und ändern Sie den Wert für ihre **(ID)**- Eigenschaft in **IndexLabel**.
 
      ![Bezeichnung zum Webformular hinzufügen](../test/media/web_test_dynamicparameter_label.png)
 
-8.  Ziehen Sie einen Link auf die Seite, und ändern Sie den Wert für seine Texteigenschaft auf "Back".
+8.  Ziehen Sie einen **Link** auf die Seite, und ändern Sie den Wert für seine **Texteigenschaft** in **Back**.
 
      ![Link zum Webformular hinzufügen](../test/media/web_test_dynamicparameter_hyperlink.png)
 
-9. Wählen Sie "(...)" für die NavigationURL-Eigenschaft.
+9. Wählen Sie **(...)** für die **NavigationURL**-Eigenschaft aus.
 
      ![NavigateURL-Eigenschaft bearbeiten](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
-     Wählen Sie "Querystring.aspx" aus.
+     Wählen Sie *Querystring.aspx* aus.
 
      ![Als URL Querystring.aspx auswählen](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
-10. Öffnen Sie die Datei "ASPQuery.aspx.cs", und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
+10. Öffnen Sie die Datei *ASPQuery.aspx.cs*, und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -101,13 +101,13 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
             }
     ```
 
-11. Fügen Sie ein drittes Webformular mit dem Namen "JScriptQuery.aspx" hinzu.
+11. Fügen Sie ein drittes Webformular mit dem Namen *JScriptQuery.aspx* hinzu.
 
-     Ziehen Sie wie bei der zweiten Seite eine Bezeichnung auf das Formular, setzen Sie ihre (ID)-Eigenschaft auf "IndexLabel", ziehen Sie einen Link auf das Formular, und setzen Sie seine Texteigenschaft auf "Back" und seine NavigationURL-Eigenschaft auf "Querystring.aspx".
+     Ziehen Sie wie bei der zweiten Seite eine **Bezeichnung** auf das Formular, setzen Sie ihre **(ID)**-Eigenschaft auf **IndexLabel**, ziehen Sie einen **Link** auf das Formular, und setzen Sie seine **Texteigenschaft** auf **Back** und seine **NavigationURL**-Eigenschaft auf **Querystring.aspx**.
 
      ![Das dritte Webformular hinzufügen und konfigurieren](../test/media/web_test_dynamicparameter_addwebform3.png)
 
-12. Öffnen Sie die Datei "JScriptQuery.aspx.cs", und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
+12. Öffnen Sie die Datei *JScriptQuery.aspx.cs*, und fügen Sie der Page_Load-Methode folgenden hervorgehobenen Code hinzu:
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -118,11 +118,11 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 13. Speichern Sie das Projekt.
 
-14. Legen Sie im Projektmappen-Explorer "Querystring.aspx" als Startseite fest.
+14. Legen Sie im **Projektmappen-Explorer** *Querystring.aspx* als Startseite fest.
 
      ![Startseite auf Querystring.aspx festlegen](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. Drücken Sie STRG+F5, um die Webanwendung im Browser auszuführen. Kopieren Sie die URL. Sie benötigen sie bei der Aufzeichnung des Tests.
+15. Drücken Sie **STRG**+**F5**, um die Webanwendung im Browser auszuführen. Kopieren Sie die URL. Sie benötigen sie bei der Aufzeichnung des Tests.
 
 16. Probieren Sie Links aus. Sie sollten jeweils die Nachricht "Erfolg" anzeigen. dass der dynamische querystring-Parameter gefunden wurde.
 
@@ -146,27 +146,27 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 4.  Kopieren Sie die URL von der Website, die Sie testen, in den Browser.
 
-     ![URL der zu testenden Website einfügen](../test/media/web_test_dynamicparameter_recordtest2.png)
+     ![Einfügen der URL von der zu testenden Website](../test/media/web_test_dynamicparameter_recordtest2.png)
 
 5.  Navigieren Sie durch die Webanwendung. Wählen Sie den Link "ASP.NET", den Link "Back" und dann den Link "Javascript" gefolgt vom Link "Back" aus.
 
      Die Webtestaufzeichnung zeigt die URL der HTTP-Anforderung und -Antwort an, während Sie durch die Webanwendung navigieren.
 
-6.  Wählen Sie die STOP-TASTE in der Testaufzeichnung.
+6.  Wählen Sie die **STOPP**-TASTE in der Testaufzeichnung.
 
      Im Dialogfeld zum Erkennen von dynamischen Parametern erscheint eine Statusanzeige, die den Status der Parameterbestimmung in den empfangenen HTTP-Antworten zeigt.
 
 7.  Der dynamische Parameter für "CustomQueryString" auf der Seite "ASPQuery" wird automatisch erkannt. Der dynamische Parameter für "CustomQueryString" auf der Seite "JScriptQuery" hingegen wird nicht erkannt.
 
-     Wählen Sie OK, um Querystring.aspx eine Extraktionsregel hinzuzufügen und sie an die Seite „ASPQuery“ zu binden.
+     Wählen Sie **OK**, um *Querystring.aspx* eine Extraktionsregel hinzuzufügen und sie an die Seite ASPQuery zu binden.
 
      ![Erkannten dynamischen Parameter höher stufen](../test/media/web_test_dynamicparameter_promotedialog.png)
 
-     Die Extraktionsregel wird der ersten Anforderung von "Querystring.aspx" hinzugefügt.
+     Die Extraktionsregel wird der ersten Anforderung von *Querystring.aspx* hinzugefügt.
 
      ![Zur Anforderung hinzugefügte Extraktionsregel](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
-     Erweitern Sie die zweite Anforderung in der Anforderungsstruktur für „ASPQuery.aspx“. Sie sehen, dass der Wert von „CustomQueryString“ an die Extraktionsregel gebunden wurde.
+     Erweitern Sie die zweite Anforderung in der Anforderungsstruktur für *ASPQuery.aspx*. Sie sehen, dass der Wert von CustomQueryString an die Extraktionsregel gebunden wurde.
 
      ![CustomQueryString, an Extraktionsrolle gebunden](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
@@ -178,27 +178,27 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
      ![Webleistungstest ausführen](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  Die vierte Anforderung für die Seite "JScriptQuery.aspx" schlägt fehl. Wechseln Sie zum Webtest.
+2.  Bei der vierten Anforderung für die Seite *JScriptQuery.aspx* tritt ein Fehler auf. Wechseln Sie zum Webtest.
 
      ![Testergebnisse mit Fehler im dynamischen Parameter](../test/media/web_test_dynamicparameter_runresults.png)
 
-     Der Anforderungsknoten "JScriptQuery.aspx" wird im Editor markiert. Erweitern Sie den Knoten, und beachten Sie, dass der Teil „1v0yhyiyr0raa2w4j4pwf5zl“ von CustomQueryString dynamisch zu sein scheint.
+     Der Anforderungsknoten *JScriptQuery.aspx* wird im Editor markiert. Erweitern Sie den Knoten, und beachten Sie, dass der Teil „1v0yhyiyr0raa2w4j4pwf5zl“ von CustomQueryString dynamisch zu sein scheint.
 
      ![Vermuteter dynamischer Parameter in CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Kehren Sie zum Webleistungstest-Ergebnisviewer zurück, und wählen Sie die Seite "JScriptQuery.aspx" mit dem Fehler aus. Wählen Sie anschließend die Registerkarte für die Anforderungen, überprüfen Sie, ob das Kontrollkästchen "Unformatierte Daten anzeigen" deaktiviert ist, führen Sie einen Bildlauf nach unten durch, und wählen Sie die Schnellsuche für "CustomQueryString".
+3.  Kehren Sie zum Webleistungstest-Ergebnisviewer zurück, und wählen Sie die Seite *JScriptQuery.aspx* mit dem Fehler aus. Wählen Sie anschließend die Registerkarte für die Anforderungen, überprüfen Sie, ob das Kontrollkästchen "Unformatierte Daten anzeigen" deaktiviert ist, führen Sie einen Bildlauf nach unten durch, und wählen Sie die Schnellsuche für "CustomQueryString".
 
      ![Schnellsuche verwenden, um den dynamischen Parameter zu isolieren](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  Da Sie den Test im Test-Editor überprüft haben, wissen Sie in diesem Fall, dass dem CustomQueryString-Parameter der Anforderung für „JScriptQuery.aspx“ der Wert `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` zugewiesen wurde und dass der vermutete dynamische Teil „1v0yhyiyr0raa2w4j4pwf5zl“ ist. Entfernen Sie in der Dropdownliste "Suchen nach" den fehlerverdächtigen Teil der Suchzeichenfolge. Die Zeichenfolge sollte "CustomQueryString=jScriptQueryString___" lauten.
+4.  Da Sie den Test im Test-Editor überprüft haben, wissen Sie in diesem Fall, dass dem CustomQueryString-Parameter der Anforderung für *JScriptQuery.aspx* der Wert `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` zugewiesen wurde, und dass der vermutete dynamische Teil „1v0yhyiyr0raa2w4j4pwf5zl“ ist. Entfernen Sie in der Dropdownliste "Suchen nach" den fehlerverdächtigen Teil der Suchzeichenfolge. Die Zeichenfolge sollte "CustomQueryString=jScriptQueryString___" lauten.
 
-     Dynamischen Parametern werden in einer der Anforderungen vor der fehlerhaften Anforderung Werte zugewiesen. Aktivieren Sie daher das Kontrollkästchen "Suchrichtung nach oben", und wählen Sie "Weitersuchen", bis die vorangehende Anforderung für "Querystring.aspx" im Bereich "Anforderung" hervorgehoben wird. Dies sollte der Fall sein, nachdem Sie dreimal auf "Weitersuchen" geklickt haben.
+     Dynamischen Parametern werden in einer der Anforderungen vor der fehlerhaften Anforderung Werte zugewiesen. Aktivieren Sie daher das Kontrollkästchen „Suchrichtung nach oben“, und wählen Sie „Weitersuchen“, bis die vorangehende Anforderung für *Querystring.aspx* im Bereich „Anforderung“ hervorgehoben wird. Dies sollte der Fall sein, nachdem Sie dreimal auf "Weitersuchen" geklickt haben.
 
      ![Schnellsuche verwenden, um den dynamischen Parameter zu isolieren](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Wie auf der Registerkarte "Antwort" und im zuvor implementierten JavaScript angezeigt wird, ist dem Abfragezeichenfolgen-Parameter "CustomQueryString" der Wert " jScriptQueryString___" zugewiesen, und zudem ist er mit dem zurückgegebenen Wert der sessionId-Variable verkettet.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -215,7 +215,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
      ![Aufgezeichnetes Ergebnis auswählen](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  Wählen Sie in den aufgezeichneten Ergebnissen die dritte Anforderung aus, d. h. die gleiche Querystringrequest.aspx-Anforderung, die Sie in den Testlaufergebnissen isoliert haben.
+7.  Wählen Sie in den aufgezeichneten Ergebnissen die dritte Anforderung aus, d.h. die gleiche *Querystringrequest.aspx*-Anforderung, die Sie in den Testlaufergebnissen isoliert haben.
 
      ![Dieselbe Anforderung in den aufgezeichneten Ergebnissen auswählen](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -223,25 +223,25 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
      ![Eine Extraktionsregel für den dynamischen Parameter hinzufügen](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
-     Die neue Extraktionsregel wird der Querystring.aspx-Anforderung hinzugefügt und erhält den Wert "Param0" zugewiesen.
+     Die neue Extraktionsregel wird der *Querystring.aspx*-Anforderung hinzugefügt und erhält den Wert „Param0“ zugewiesen.
 
-     Wenn das Dialogfeld meldet, dass Entsprechungen für den extrahierten Text gefunden wurden, an die der Parameter gebunden werden kann, wählen Sie "Ja" aus.
+     Wenn das Dialogfeld meldet, dass Entsprechungen für den extrahierten Text gefunden wurden, an die der Parameter gebunden werden kann, wählen Sie **Ja** aus.
 
      ![Erstellte Extraktionsregel](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  Wählen Sie "Weitersuchen". Die erste Entsprechung ist diejenige, die geändert werden muss, nämlich der Parameter für "CustomQueryString" auf der Seite "JScriptQuery".
+8.  Wählen Sie **Weitersuchen**. Die erste Entsprechung ist diejenige, die geändert werden muss, nämlich der Parameter für "CustomQueryString" auf der Seite "JScriptQuery".
 
      ![Text für den Parameter suchen und ersetzen](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
-9. Wählen Sie "Ersetzen".
+9. Wählen Sie **Ersetzen**.
 
      ![Text mit dem Parameter ersetzen](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Der QueryString-Parameter unter der JScriptQuery.aspx-Anforderung wird mit dem neuen Kontextparameter aktualisiert: CustomQueryString=jScriptQueryString___{{Param0}}.
+     Der QueryString-Parameter unter der *JScriptQuery.aspx*-Anforderung wird mit dem neuen Kontextparameter aktualisiert: CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Auf QueryString angewendeter Parameter](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
-10. Schließen Sie das Dialogfeld "Suchen und Ersetzen". Beachten Sie im Anforderungsbaum die ähnliche Struktur des erkannten dynamischen Parameters und des korrelierten nicht erkannten dynamischen Parameters.
+10. Schließen Sie das Dialogfeld **Suchen und Ersetzen**. Beachten Sie im Anforderungsbaum die ähnliche Struktur des erkannten dynamischen Parameters und des korrelierten nicht erkannten dynamischen Parameters.
 
      ![Gefundene und korrelierte dynamische Parameter](../test/media/web_test_dynamicparameter_conclusion.png)
 
@@ -253,16 +253,16 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
  **A:** Ja, nach folgendem Verfahren:
 
-1.  Wählen Sie auf der Symbolleiste die Schaltfläche "Dynamische Parameter auf Webtestparameter hochstufen".
+1.  Wählen Sie auf der Symbolleiste die Schaltfläche **Dynamische Parameter auf Webtestparameter hochstufen** aus.
 
-     Nach Abschluss des Erkennungsprozesses (wenn dynamische Parameter erkannt werden) wird das Dialogfeld "Dynamische Parameter auf Webtestparameter hochstufen" angezeigt.
+     Nach Abschluss des Erkennungsprozesses (wenn dynamische Parameter erkannt werden) wird das Dialogfeld **Dynamische Parameter auf Webtestparameter hochstufen** angezeigt.
 
      Die dynamischen Parameter sind unter der Spalte Dynamische Parameter aufgeführt. Die Anforderungen, aus denen der dynamische Parameter extrahiert wird und an die er gebunden wird, werden unter Parameter aus Antwort extrahieren und An Anforderungsspalten binden aufgeführt.
 
-     Wenn Sie im Dialogfeld "Dynamische Parameter auf Webtestparameter hochstufen" einen dynamischen Parameter wählen, werden zwei Anforderungen in der Anforderungsstruktur des Webleistungstest-Editors hervorgehoben. Die erste Anforderung ist die Anforderung, der die Extraktionsregel hinzugefügt wird. Die zweite Anforderung befindet dort, wo der extrahierte Wert gebunden wird.
+     Wenn Sie im Dialogfeld **Dynamische Parameter auf Webtestparameter hochstufen** einen dynamischen Parameter auswählen, werden zwei Anforderungen in der Anforderungsstruktur des Webleistungstest-Editors hervorgehoben. Die erste Anforderung ist die Anforderung, der die Extraktionsregel hinzugefügt wird. Die zweite Anforderung befindet dort, wo der extrahierte Wert gebunden wird.
 
 2.  Aktivieren oder deaktivieren Sie das Kontrollkästchen neben den dynamischen Parametern, die Sie gern automatisch in Zusammenhang setzen möchten. Standardmäßig werden alle dynamischen Parameter überprüft.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>F: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
 
- **A:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die [Erkennung dynamischer Parameter vom Webleistungstest-Editor ausführen](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **A:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.

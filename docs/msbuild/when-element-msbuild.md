@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303334"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152423"
 ---
 # <a name="when-element-msbuild"></a>When-Element (MSBuild)
 Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.  
@@ -75,7 +75,7 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 ## <a name="remarks"></a>Hinweise  
  Wenn das `Condition`-Attribut TRUE ergibt, werden die untergeordneten Elemente `ItemGroup` und `PropertyGroup` des `When`-Elements ausgeführt, und alle nachfolgenden `When`-Elemente werden übersprungen.  
 
- Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [MSBuild Conditional Constructs](../msbuild/msbuild-conditional-constructs.md).  
+ Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Beispiel  
  Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.  
@@ -126,5 +126,5 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md)  (Bedingte Konstrukte in MSBuild)  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
+ [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md)   
+ [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

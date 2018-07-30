@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233541"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177508"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testen von SharePoint-Anwendungen mit Tests der programmierten UI
 
@@ -28,7 +28,7 @@ Weitere Informationen über die Vorteile von Tests der programmierten UI finden 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Erstellen eines Tests der programmierten UI für die SharePoint-App
 
-Das [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) für Ihre SharePoint-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der Webbearbeitungsschnittstelle unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.
+Das [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) für Ihre SharePoint-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der **Webbearbeitungsschnittstelle** unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.
 
 ![SharePoint-Webparts](../test/media/cuit_sharepoint.png)
 

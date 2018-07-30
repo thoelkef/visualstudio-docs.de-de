@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750853"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179575"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
@@ -85,7 +85,7 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 ## <a name="qa"></a>Fragen und Antworten
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>F: Kann ich mehrere Tests gleichzeitig durchführen?
- **A**: Ja. Verwenden Sie das Kontextmenü im Projektmappen-Explorer.
+ **A**: Ja. Verwenden Sie das Kontextmenü im **Projektmappen-Explorer**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>F: Sollte ich eine Datenquelle vor oder nach der Generierung eines codierten Tests hinzufügen?
  **A**: Es ist einfacher, eine [Datenquelle](../test/add-a-data-source-to-a-web-performance-test.md) hinzuzufügen, bevor Sie den codierten Test generieren, da der Code automatisch für Sie generiert wird.

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff6d2ff6f509bca31283e2fbb04896f6e8adce9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae7ff885ea7707ebe2f60001b265913856cbd125
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577508"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177749"
 ---
-# <a name="using-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
+# <a name="use-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
 MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit mehreren Kernen verfügen. Für jeden verfügbaren Prozessor wird ein separater Buildprozess erstellt. Wenn das System zum Beispiel über vier Prozessoren verfügt, werden vier Buildprozesse erstellt. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann diese Builds gleichzeitig verarbeiten und daher die Gesamtbuildzeit verringern. Das gleichzeitige Erstellen von Builds führt jedoch zu einigen Änderungen bei Buildprozessen. In diesem Thema werden diese Änderungen erläutert.  
   
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise  
- Wenn [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] einen Projekt-zu-Projekt-Verweis (P2P) entdeckt, während parallele Builds zum Erstellen eines Projekts verwendet werden, wird der Verweis nur einmal erstellt. Wenn zwei Projekte über den gleichen P2P-Verweis verfügen, wird der Verweis nicht für jedes Projekt neu erstellt. Stattdessen gibt das Buildmodul den gleichen P2P-Verweis an beide Projekte zurück, die davon abhängen. Zukünftige Anforderungen in der Sitzung für das gleiche Ziel erhalten den gleichen P2P-Verweis.  
+ Wenn [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] einen Projekt-zu-Projekt-Verweis (P2P) entdeckt, während parallele Builds zum Erstellen eines Projekts verwendet werden, wird der Verweis nur einmal erstellt. Wenn zwei Projekte über den gleichen P2P-Verweis verfügen, wird der Verweis nicht für jedes Projekt neu erstellt. Stattdessen gibt die Build-Engine den gleichen P2P-Verweis an beide Projekte zurück, die davon abhängen. Zukünftige Anforderungen in der Sitzung für das gleiche Ziel erhalten den gleichen P2P-Verweis.  
   
 ## <a name="cycle-detection"></a>Schleifenerkennung  
  Die Zykluserkennung funktioniert genauso wie bei [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, mit der Ausnahme, dass [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nun Berichte über die Erkennung eines Zyklus zu einem anderen Zeitpunkt oder im Build erstellen kann.  
@@ -32,8 +32,8 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Fehler und Ausnahmen bei der parallelen Builderstellung  
  Bei der parallelen Builderstellung können Fehler und Ausnahmen zu einem anderen Zeitpunkt auftreten als bei der nicht parallelen Builderstellung; außerdem kann die Erstellung eines anderen Builds fortgesetzt werden, wenn ein Build nicht erstellt werden kann. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] beendet gleichzeitig ausgeführte Projektbuilds nicht zusammen mit einem fehlgeschlagenen Build. Der Buildprozess anderer Projekte wird fortgesetzt, bis er erfolgreich abgeschlossen oder fehlgeschlagen ist. Wenn jedoch <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> aktiviert wurde, wird die Erstellung von Builds nicht abgebrochen, auch wenn ein Fehler auftritt.  
   
-## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Visual C++-Projektdateien (.vcproj) und Projektmappendateien (.sln)  
- [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt- und -Projektmappendateien („.vcproj“ und „.sln“) können beide an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.  
+## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Visual C++-Projektdateien (VCPROJ) und Projektmappendateien (SLN)  
+ [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt- und -Projektmappendateien (*VCPROJ* und *SLN*) können beide an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.  
   
 ## <a name="multi-process-execution"></a>Multiprozessausführung  
  Bei fast allen buildbezogenen Aktivitäten ist es erforderlich, dass das aktuelle Verzeichnis während des Buildprozesses gleich bleibt, um pfadbezogene Fehler zu vermeiden. Aus diesem Grund können Projekte in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nicht auf verschiedenen Threads ausgeführt werden, da dies zur Erstellung mehrerer Verzeichnisse führen würde.  

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751675"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177252"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Gewusst wie: Erstellen eines Visual Studio Add-Ins für die Webleistungstest-Ergebnisansicht
 
-Sie können die Benutzeroberfläche für den Webleistungstest-Ergebnisviewer mit den folgenden Namespaces erweitern:
+Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer** mit den folgenden Namespaces erweitern:
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,16 +28,16 @@ Sie können die Benutzeroberfläche für den Webleistungstest-Ergebnisviewer mit
 
 Darüber hinaus müssen Sie einen Verweis auf die LoadTestPackage-DLL hinzufügen, die sich im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* befindet.
 
--   Erstellen Sie zum Erweitern der Benutzeroberfläche des Webleistungstest-Ergebnisviewers ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des Webleistungstest-Ergebnisviewers erforderlichen Klassen implementiert werden.
+-   Erstellen Sie zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** erforderlichen Klassen implementiert werden.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Erstellen oder Öffnen einer Projektmappe, die eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt enthält
 
 ### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>So bereiten Sie die Erweiterung des Webleistungstest-Ergebnisviewers vor
 
-Erstellen oder öffnen Sie eine Projektmappe, bei der es sich nicht um eine Produktionsprojektmappe handelt und mit der Sie experimentieren können. Diese Projektmappe sollte eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt mit mindestens einem Webleistungstest für die ASP.NET-Webanwendung enthalten.
+Erstellen oder öffnen Sie eine Projektmappe, bei der es sich nicht um eine Produktionsprojektmappe handelt, und mit der Sie experimentieren können. Diese Projektmappe sollte eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt mit mindestens einem Webleistungstest für die ASP.NET-Webanwendung enthalten.
 
 > [!NOTE]
-> Sie können ein ASP.NET-Webanwendungs-, Webleistungs- und Auslastungstestprojekt erstellen, das Webleistungstests enthält, indem Sie die Vorgehensweisen unter [How to: Create a Web Service Test (Vorgehensweise: Erstellen eines Webdiensttests)](../test/how-to-create-a-web-service-test.md) and [Generate and run a coded web performance test (Generieren und Ausführen eines codierten Webleistungstests)](../test/generate-and-run-a-coded-web-performance-test.md) befolgen.
+> Sie können ein ASP.NET-Webanwendungs-, Webleistungs- und Auslastungstestprojekt erstellen, das Webleistungstests enthält, indem Sie die Vorgehensweisen unter [Gewusst wie: Erstellen eines Webdiensttests](../test/how-to-create-a-web-service-test.md) und [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md) befolgen.
 
 ## <a name="create-a-visual-studio-add-in"></a>Erstellen eines Visual Studio-Add-Ins
 
@@ -216,7 +216,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Führen Sie einen Bildlauf ans Ende der Datei "Connect.cs" durch. Sie müssen eine Liste von GUIDs für <xref:System.Windows.Forms.UserControl> hinzufügen, falls mehrere Instanzen des Webleistungstest-Ergebnisviewers geöffnet sind. Sie fügen später Code hinzu, der diese Liste verwendet.
+14. Führen Sie einen Bildlauf ans Ende der Datei "Connect.cs" durch. Sie müssen eine Liste von GUIDs für <xref:System.Windows.Forms.UserControl> hinzufügen, falls mehrere Instanzen des **Webleistungstest-Ergebnisviewers** geöffnet sind. Sie fügen später Code hinzu, der diese Liste verwendet.
 
      Eine zweite Liste mit Zeichenfolgen wird in der OnDiscconections-Methode verwendet, die Sie später codieren werden.
 
@@ -227,7 +227,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Die Datei „Connect.cs“ instanziiert die Klasse „Connect“ in der <xref:Extensibility.IDTExtensibility2>-Klasse. Außerdem enthält sie einige Methoden zum Implementieren des Visual Studio-Add-Ins. Bei einer der Methoden handelt es sich um die OnConnections-Methode, die eine Benachrichtigung empfängt, dass das Add-In geladen wird. In der OnConnections-Methode erstellen Sie mithilfe der LoadTestPackageExt-Klasse das Erweiterbarkeitspaket für den Webleistungstest-Ergebnisviewer. Fügen Sie die folgenden Code zur Methode „OnConnection“ hinzu:
+15. Die Datei „Connect.cs“ instanziiert die Klasse „Connect“ in der <xref:Extensibility.IDTExtensibility2>-Klasse. Außerdem enthält sie einige Methoden zum Implementieren des Visual Studio-Add-Ins. Bei einer der Methoden handelt es sich um die OnConnections-Methode, die eine Benachrichtigung empfängt, dass das Add-In geladen wird. In der OnConnections-Methode erstellen Sie mithilfe der LoadTestPackageExt-Klasse das Erweiterbarkeitspaket für den **Webleistungstest-Ergebnisviewer**. Fügen Sie die folgenden Code zur Methode „OnConnection“ hinzu:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 2.  Klicken Sie auf die Registerkarte **Anwendung**, dann auf die Dropdownliste **Zielframework**, und wählen Sie **.NET Framework 4** aus. Schließen Sie anschließend die Eigenschaften.
 
-     Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des Webleistungstestergebnis-Viewers erforderlich sind.
+     Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des **Webleistungstestergebnis-Viewers** erforderlich sind.
 
 3.  Klicken Sie im Projektmappen-Explorer im Projekt „WebPerfTestResultsViewerControl“ mit der rechten Maustaste auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
@@ -347,7 +347,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>So führen Sie das neue VS-Add-In für den Webleistungstest-Ergebnisviewer aus
 
-1.  Führen Sie den Webleistungstest aus. Im Webleistungstest-Ergebnisviewer wird die neue Registerkarte "Beispiel" des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
+1.  Führen Sie den Webleistungstest aus. Im **Webleistungstest-Ergebnisviewer** wird die neue Registerkarte „Beispiel“ des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
 
 2.  Wählen Sie die Registerkarte, um die in DataGridView enthaltenen Eigenschaften anzuzeigen.
 

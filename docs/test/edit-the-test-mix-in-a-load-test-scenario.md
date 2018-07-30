@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750934"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179514"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zum Angeben, welche Webleistungstests, Komponententests und Tests der programmierten UI in ein Auslastungstestszenario einbezogen werden sollen
 
@@ -33,9 +33,9 @@ Die *Testmischung* eines Szenarios ergibt sich aus einer Kombination verschieden
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Hinzufügen neuer Tests zu einer Testmischung in einem vorhandenen Szenario
 
-Sie können beim Erstellen eines neuen Szenarios mithilfe des Assistenten für neuen Auslastungstest die Webleistungs- und Komponententests angeben, die der Testmischung des neuen Szenarios hinzugefügt werden sollen.
+Sie können beim Erstellen eines neuen Szenarios mithilfe des **Assistenten für neuen Auslastungstest** die Webleistungs- und Komponententests angeben, die der Testmischung des neuen Szenarios hinzugefügt werden sollen.
 
-Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors weitere Webleistungs- und Komponententests hinzufügen.
+Sie können der Testmischung des Szenarios mithilfe des **Auslastungstest-Editors** weitere Webleistungs- und Komponententests hinzufügen.
 
 ![Hinzufügen eines Tests zu einem bestehenden Auslastungstest](../test/media/ltest_addingtests.png)
 
@@ -43,7 +43,7 @@ Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors 
 
 1.  Öffnen Sie einen Auslastungstest.
 
-2.  Klicken Sie im Auslastungstest-Editor mit der rechten Maustaste auf ein vorhandenes Szenario, und klicken Sie anschließend auf **Tests hinzufügen**.
+2.  Klicken Sie im **Auslastungstest-Editor** mit der rechten Maustaste auf ein vorhandenes Szenario, und wählen Sie anschließend **Tests hinzufügen** aus.
 
      Das Dialogfeld **Tests hinzufügen** wird angezeigt. Alle Webleistungs- und Komponententests sowie Tests der programmierten UI in Ihrer Lösung, die noch nicht zum Szenario gehören, können zum Szenario hinzugefügt werden.
 
@@ -55,14 +55,14 @@ Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors 
 
 5.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Entfernen von Tests aus einem Szenario
+##  <a name="remove-tests-from-a-scenario"></a>Entfernen von Tests aus einem Szenario
  ![Entfernen eines Tests aus einem bestehenden Auslastungstest](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>So entfernen Sie Tests aus einem Szenario
 
 1.  Öffnen Sie einen Auslastungstest.
 
-2.  Klicken Sie im Auslastungstest-Editor in der Auslastungsteststruktur mit der rechten Maustaste auf das Szenario, aus dem Sie einen Test entfernen möchten, und wählen Sie **Testmischung bearbeiten** aus. Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
+2.  Klicken Sie im **Auslastungstest-Editor** in der Auslastungsteststruktur mit der rechten Maustaste auf das Szenario, aus dem Sie einen Test entfernen möchten, und wählen Sie **Testmischung bearbeiten** aus. Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
 
 3.  Wählen Sie den Webleistungs- oder Komponententest oder Test der programmierten UI im Raster aus, und klicken Sie dann auf **Entfernen**.
 
@@ -92,4 +92,4 @@ Sie können der Testmischung des Szenarios mithilfe des Auslastungstest-Editors 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)

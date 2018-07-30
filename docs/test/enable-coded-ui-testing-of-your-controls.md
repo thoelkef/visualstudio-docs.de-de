@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751753"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153562"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
@@ -69,7 +69,7 @@ Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelem
 4.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> sowie <xref:System.Windows.Forms.AccessibleObject.Select%2A> für das Barrierefreiheitsobjekt des untergeordneten Steuerelements.
 
 > [!NOTE]
-> Dieses Thema beginnt mit dem Barrierefreiheitsbeispiel für das <xref:System.Windows.Forms.AccessibleObject>. Aufbauend auf dieses Beispiel werden anschließend die restlichen Prozeduren erläutert. Zum Erstellen einer funktionierenden Version des Barrierefreiheitsbeispiels entwickeln Sie eine Konsolenanwendung und ersetzen dann den Code in "Program.cs" durch den Beispielcode. Fügen Sie Verweise auf Barrierefreiheit, System.Drawing und System.Windows.Forms hinzu. Ändern Sie das **Einbetten von Interop-Typen** für die Barrierefreiheit in **FALSE**, um eine Buildwarnung zu beseitigen. Sie können den Ausgabetyp des Projekts von **Konsolenanwendung** in **Windows-Anwendung** ändern, damit beim Ausführen der Anwendung kein Konsolenfenster angezeigt wird.
+> Dieses Thema beginnt mit dem Barrierefreiheitsbeispiel für das <xref:System.Windows.Forms.AccessibleObject>. Aufbauend auf dieses Beispiel werden anschließend die restlichen Prozeduren erläutert. Zum Erstellen einer funktionierenden Version des Barrierefreiheitsbeispiels entwickeln Sie eine Konsolenanwendung und ersetzen dann den Code in *Program.cs* durch den Beispielcode. Fügen Sie Verweise auf Barrierefreiheit, System.Drawing und System.Windows.Forms hinzu. Ändern Sie das **Einbetten von Interop-Typen** für die Barrierefreiheit in **FALSE**, um eine Buildwarnung zu beseitigen. Sie können den Ausgabetyp des Projekts von **Konsolenanwendung** in **Windows-Anwendung** ändern, damit beim Ausführen der Anwendung kein Konsolenfenster angezeigt wird.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Unterstützen benutzerdefinierter Eigenschaftenvalidierung durch Implementieren eines Eigenschaftenanbieters
 
@@ -134,7 +134,7 @@ Nach dem Implementieren grundlegender Unterstützung für die Aufzeichnung und W
 
 1. Überschreiben Sie die verbleibenden abstrakten Methoden und Eigenschaften von <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Erstellen Sie die Binärdateien, und kopieren Sie sie nach **%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Erstellen Sie die Binärdateien, und kopieren Sie sie nach *%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Dieses Erweiterungspaket wird auf jedes Steuerelement vom Typ „Text“ angewendet. Mehrere Steuerelemente des gleichen Typs müssen separat getestet werden, damit Sie steuern können, welche Erweiterungspakete beim Aufzeichnen der Tests bereitgestellt werden.
@@ -171,7 +171,7 @@ Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eige
 
 1. Fügen Sie den Aktionsfilter der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A>-Methode des Erweiterungspakets hinzu.
 
-1. Erstellen Sie die Binärdateien, und kopieren Sie sie nach „%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages“.
+1. Erstellen Sie die Binärdateien, und kopieren Sie sie nach *%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Der Aktionsfilter ist nicht von der Implementierung der Barrierefreiheit oder vom Eigenschaftenanbieter abhängig.
@@ -182,7 +182,7 @@ Der Eigenschaftenanbieter und der Aktionsfilter werden in einem Erweiterungspake
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>So debuggen Sie den Eigenschaftenanbieter oder Aktionsfilter
 
-1.  Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die DLL- und PDB-Dateien nach „%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages“.
+1.  Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die *DLL*- und *PDB*-Dateien nach *%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Führen Sie die Anwendung aus (nicht im Debugger.)
 
@@ -199,4 +199,4 @@ Der Eigenschaftenanbieter und der Aktionsfilter werden in einem Erweiterungspake
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)

@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cb64626034c8c9bf03875385a80ebc417bf05dcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751805"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204062"
 ---
-# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Gewusst wie: Analysieren von Schwellenwertverletzungen mit dem Indikatorbereich im Auslastungstest-Analyzer
+# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Vorgehensweise: Analysieren von Schwellenwertverletzungen mit dem Indikatorbereich im Auslastungstest-Analyzer
 
-Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Auslastungstest-Analyzer angezeigt, während ein Auslastungstest ausgeführt wird, oder wenn Sie ein Auslastungstestergebnis analysieren. Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md), [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) und [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
+Das **Indikatorenfenster** wird in der Diagrammansicht und die Tabellenansicht im **Auslastungstest-Analyzer** angezeigt, während ein Auslastungstest ausgeführt wird, oder wenn Sie ein Auslastungstestergebnis analysieren. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen in der Diagrammansicht](../test/analyze-load-test-results-in-the-graphs-view.md), [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) und [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
- Schwellenwertverletzungen sind bestimmten Leistungsindikatoren zugeordnet und weisen darauf hin, dass der Leistungsindikator einen festgelegten Schwellenwert über- oder unterschritten hat. Schwellenwertverletzungen werden im Indikatorenfenster durch Symbole dargestellt.
+ Schwellenwertverletzungen sind bestimmten Leistungsindikatoren zugeordnet und weisen darauf hin, dass der Leistungsindikator einen festgelegten Schwellenwert über- oder unterschritten hat. Schwellenwertverletzungen werden im **Indikatorenfenster** durch Symbole dargestellt.
 
  ![Computerknoten des Zählerbereichs](../test/media/ltest_compnode.png)
 
- Das Symbol für eine Schwellenwertverletzung wird vom Strukturknoten, in dem sich der fehlerhafte Indikator befindet, zur Stammebene verteilt. Das Symbol weist den Benutzer auf Verletzungen von Indikatoren hin, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde. Ein Beispiel für das Symbol ist in der vorherigen Abbildung im Indikatorenfenster im Knoten **Computer** dargestellt.
+ Das Symbol für eine Schwellenwertverletzung wird vom Strukturknoten, in dem sich der fehlerhafte Indikator befindet, zur Stammebene verteilt. Das Symbol weist den Benutzer auf Verletzungen von Indikatoren hin, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde. Ein Beispiel für das Symbol ist in der vorherigen Abbildung im **Indikatorenfenster** im Knoten **Computer** dargestellt.
 
  Folgende Symbole werden verwendet:
 
@@ -43,9 +43,9 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
 1.  Wählen Sie nach Abschluss eines Auslastungstests oder nach dem Laden eines Testergebnisses auf der Symbolleiste des Auslastungstest-Analyzers entweder **Diagramme** oder **Tabellen** aus.
 
-     Im Indikatorenfenster wird entweder die Diagrammansicht oder die Tabellenansicht angezeigt.
+     Im Fenster **Indikatoren** wird entweder die Diagrammansicht oder die Tabellenansicht verwendet.
 
-2.  Falls das Indikatorenfenster nicht angezeigt wird, klicken Sie auf der Symbolleiste auf **Indikatorenfenster anzeigen**.
+2.  Falls das **Indikatorenfenster** nicht angezeigt wird, klicken Sie auf der Symbolleiste auf **Indikatorenfenster anzeigen**.
 
      Alle Knoten, die Schwellenwertverletzungen enthalten, schließen eines der oben aufgeführten Symbole ein.
 
@@ -53,12 +53,12 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
 4.  (Optional) klicken Sie mit der rechten Maustaste auf den Leistungsindikator mit der Schwellenwertverletzung, und wählen Sie eine der folgenden Optionen aus:
 
-    -   **Indikator im Diagramm anzeigen**: In der Diagrammansicht wird der Leistungsindikator hinzugefügt und im ausgewählten Diagramm hervorgehoben. Weitere Informationen finden Sie unter [How to: Add and Delete Counters on Graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+    -   **Indikator im Diagramm anzeigen**: In der Diagrammansicht wird der Leistungsindikator hinzugefügt und im ausgewählten Diagramm hervorgehoben. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
         > [!NOTE]
         > Symbole für Schwellenwertverletzungen können auch im Diagramm in der Diagrammansicht angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist. Klicken Sie hierzu auf die Dropdownschaltfläche **Legende anzeigen**, und wählen Sie dann **Schwellenwertverletzungen im Diagramm anzeigen** aus.
 
-    -   **Indikator in Legende anzeigen**: In der Legende wird der Leistungsindikator hinzugefügt und ausgewählt. Weitere Informationen finden Sie unter [Using the Graphs View Legend to Analyze Load Tests (Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests)](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
+    -   **Indikator in Legende anzeigen**: In der Legende wird der Leistungsindikator hinzugefügt und ausgewählt. Weitere Informationen finden Sie unter [Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
     -   **Diagramm hinzufügen**:
 
@@ -68,14 +68,14 @@ Das Indikatorenfenster wird in der Diagrammansicht und die Tabellenansicht im Au
 
     3.  (Optional) Klicken Sie mit der rechten Maustaste erneut auf den Leistungsindikator, und wählen Sie **Indikator im Diagramm anzeigen** aus.
 
-         Weitere Informationen finden Sie unter [How to: Create Custom Graphs (Vorgehensweise: Erstellen benutzerdefinierter Diagramme)](../test/how-to-create-custom-graphs-in-load-test-results.md).
+         Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen benutzerdefinierter Diagramme](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 5.  (Optional) Wenn Sie die Schwellenwertverletzung in einem abgeschlossenen Auslastungstestergebnis analysieren, können Sie die Zoomfunktionen in der Diagrammansicht verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
     > [!TIP]
-    > Wurden während des Auslastungstests Schwellenwertverletzungen ermittelt, wird auf der Statusleiste des Auslastungstest-Analyzers der Link "Schwellenwertverletzungen" einschließlich der Anzahl der Verletzungen angezeigt. Sie können auf den Link klicken, um alle Schwellenwertverletzungen in der Tabelle **Schwellenwerte** der Tabellenansicht anzuzeigen.
+    > Wurden während des Auslastungstests Schwellenwertverletzungen ermittelt, wird auf der Statusleiste des **Auslastungstest-Analyzers** der Link „Schwellenwertverletzungen“ einschließlich der Anzahl der Verletzungen angezeigt. Sie können auf den Link klicken, um alle Schwellenwertverletzungen in der Tabelle **Schwellenwerte** der Tabellenansicht anzuzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden des Indikatorbereichs in der Diagrammansicht und Tabellenansicht](../test/counters-panel-in-load-test-analyzer.md)
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Verwenden des Indikatorfensters in der Diagrammansicht und Tabellenansicht](../test/counters-panel-in-load-test-analyzer.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

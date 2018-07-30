@@ -1,5 +1,5 @@
 ---
-title: Emulieren der Verwendung einer Website für Auslastungstests in der Praxis in Visual Studio
+title: Emulieren der Verwendung einer Website für Auslastungstests in der Praxis
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9ec5777bc1a2bfffc650497314a219d071057beb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977043"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177265"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
 
 Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.
 
 ## <a name="test-mix-model-enhancements"></a>Verbesserungen hinsichtlich des Testmischungsmodells
 
-Mit dem Auslastungstest-Editor oder dem Assistenten für Testmischungsmodelle können Sie die folgenden Testmischungstypen für ein Auslastungstestszenario angeben. Weitere Informationen finden Sie unter [Changing the Test Mix Model in a Scenario (Ändern des Testmischungsmodells in einem Szenario)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+Mit dem Auslastungstest-Editor oder dem Assistenten für Testmischungsmodelle können Sie die folgenden Testmischungstypen für ein Auslastungstestszenario angeben. Weitere Informationen finden Sie unter [Ändern des Testmischungsmodells in einem Szenario](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
 
@@ -37,7 +37,7 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
     > [!TIP]
     > Wann wählen Sie **Testmischungsprozentsatz** und wann **Prozentsatz nach virtuellen Benutzern** aus? Der Unterschied zwischen diesen beiden Auswahlmöglichkeiten kommt zum Tragen, wenn einige Tests in der Testmischung länger dauern als andere Tests. In dieser Situation sollten Sie vorzugsweise **Prozentsatz nach virtuellen Benutzern** auswählen. Durch diese Auswahl können Sie einen Testlauf vermeiden, bei dem eine hohe Wahrscheinlichkeit besteht, dass zu viele Benutzer Tests von langer Dauer ausführen. Wenn die Tests jedoch alle eine ähnliche Dauer haben, ist die Auswahl von **Testmischungsprozentsatz** sicherer.
 
--   **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequential Order (Sequenzielle Reihenfolge)](#SequentialOrder).
+-   **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequenzielle Reihenfolge](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
  Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
@@ -62,31 +62,31 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 -   TestC: 0,125 Tests pro Benutzer pro Stunde
 
- Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch das Auslastungstest-Laufzeitmodul sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
+ Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch die Auslastungstestruntime-Engine sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
 
  Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
 
-#### <a name="applying-distribution-to-pacing-delay"></a>Anwenden der Verteilung auf die Geschwindigkeitsverzögerung
+#### <a name="apply-distribution-to-pacing-delay"></a>Anwenden der Verteilung auf die Geschwindigkeitsverzögerung
  Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** in einem Auslastungstestszenario kann auf TRUE oder FALSE festgelegt werden:
 
--   **TRUE**: Das Szenario wendet typische statistische Verteilungsverzögerungen an, die über den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld „Testmischung bearbeiten“ angegeben werden. Weitere Informationen finden Sie unter [Editing Text Mix Models to Specify the Probability of a Virtual User Running a Test (Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+-   **TRUE**: Das Szenario wendet typische statistische Verteilungsverzögerungen an, die über den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben werden. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld „Testmischung bearbeiten“ für den Test ist auf zwei Benutzer pro Stunde festgelegt. Ist die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **TRUE** festgelegt, wird auf die Wartezeit zwischen den Tests eine typische statistische Verteilung angewendet. Es werden weiterhin zwei Tests pro Stunde ausgeführt, zwischen ihnen vergehen jedoch nicht notwendigerweise 30 Minuten. Der erste Test konnte nach 4 Minuten und der zweite Test nach 45 Minuten ausgeführt werden.
+     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Ist die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **TRUE** festgelegt, wird auf die Wartezeit zwischen den Tests eine typische statistische Verteilung angewendet. Es werden weiterhin zwei Tests pro Stunde ausgeführt, zwischen ihnen vergehen jedoch nicht notwendigerweise 30 Minuten. Der erste Test konnte nach 4 Minuten und der zweite Test nach 45 Minuten ausgeführt werden.
 
--   **FALSE**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld „Testmischung bearbeiten“ angegeben haben. Weitere Informationen finden Sie unter [Editing Text Mix Models to Specify the Probability of a Virtual User Running a Test (Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+-   **FALSE**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben haben. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld „Testmischung bearbeiten“ für den Test ist auf zwei Benutzer pro Stunde festgelegt. Wenn die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **FALSE** festgelegt ist, ist im Grunde kein Spielraum für die Testausführung vorhanden. Der Test wird alle 30 Minuten ausgeführt. So ist sichergestellt, dass Sie zwei Tests pro Stunde ausführen.
+     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Wenn die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **FALSE** festgelegt ist, ist im Grunde kein Spielraum für die Testausführung vorhanden. Der Test wird alle 30 Minuten ausgeführt. So ist sichergestellt, dass Sie zwei Tests pro Stunde ausführen.
 
- Weitere Informationen finden Sie unter [How to: Apply Distribution to Pacing Delay When Using a User Pace Test Mix Model (Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit)](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
  Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
 
-## <a name="test-iterations-property"></a>Testiterationen-Eigenschaft
- In den Laufzeiteinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [How to: Specify the Number of Test Iterations in a Run Setting (Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung für Auslastungstests)](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+## <a name="test-iterations-property"></a>Eigenschaft „Testiterationen“
+ In den Laufzeiteinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung für Auslastungstests](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Initialisierungs- und Beendigungstests
- Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Editing Text Mix Models to Specify the Probability of a Virtual User Running a Test (Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+ Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 -   **Initialisierungstest** Dieser Test wird von jedem virtuellen Benutzer ausgeführt, bevor ein beliebiger Test aus der Testmischung ausgeführt wird.
 
@@ -104,7 +104,7 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 - [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Editing the Test Mix to Specify Which Tests to Include in a Load Test Scenario (Bearbeiten der Testmischung zum Angeben der Tests, die ein Auslastungstestszenario beinhalten sollen)](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
-- [Changing the Test Mix Model in a Scenario (Ändern des Testmischungsmodells in einem Szenario)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)
+- [Ändern des Testmischungsmodells in einem Szenario](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

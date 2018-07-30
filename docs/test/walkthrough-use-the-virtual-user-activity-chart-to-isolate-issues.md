@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976431"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179829"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit dem Diagramm f
 
 2.  Öffnen Sie die Projektmappe "ColorWebApp", die "LoadTest1.loadtest" enthält. Dieser Auslastungstest ergibt sich aus der Durchführung der Schritte in den drei exemplarischen Vorgehensweisen, die am Anfang dieses Themas im Abschnitt zu den erforderlichen Komponenten und Voraussetzungen aufgeführt sind.
 
-     Bei den verbleibenden Schritten in dieser exemplarischen Vorgehensweise wird von einer Webanwendung mit dem Namen "ColorWebApp", einem Webleistungstest mit dem Namen "ColorWebAppTest.webtest" und einem Auslastungstest mit dem Namen "LoadTest1.loadtest" ausgegangen.
+     Bei den verbleibenden Schritten in dieser exemplarischen Vorgehensweise wird von einer Webanwendung mit dem Namen ColorWebApp, einem Webleistungstest mit dem Namen ColorWebAppTest.webtest und einem Auslastungstest mit dem Namen LoadTest1.loadtest ausgegangen.
 
 ## <a name="run-the-load-test"></a>Ausführen des Auslastungstests
  Führen Sie den Auslastungstest aus, um Aktivitätsdaten von virtuellen Benutzern zu sammeln.
@@ -114,7 +114,7 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 8.  Beachten Sie, dass **Testprotokoll** ein Link ist. Klicken Sie auf den Link **Testprotokoll**.
 
-9. Der Webleistungstest "ColorWebTest", der dem Protokoll zugeordnet ist, wird im Webleistungstest-Ergebnisviewer geöffnet. So können Sie isolieren, wo die Schwellenwertverletzungen aufgetreten sind.
+9. Der Webleistungstest ColorWebTest, der dem Protokoll zugeordnet ist, wird im Webleistungstest-Ergebnisviewer geöffnet. So können Sie isolieren, wo die Schwellenwertverletzungen aufgetreten sind.
 
      Sie können verschiedene Einstellungen in den Bereichen **Detaillegende** und **Filterergebnisse** verwenden, um Leistungsprobleme und Fehler in den Auslastungstests leichter zu isolieren. Experimentieren Sie mit diesen Einstellungen und mit dem Tool **Zoom zum Zeitraum**, um zu sehen, wie die Daten für virtuelle Benutzer im **Diagramm für Aktivitäten virtueller Benutzer** dargestellt werden.
 

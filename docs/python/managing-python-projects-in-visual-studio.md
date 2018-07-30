@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
 description: Der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032189"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232269"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -65,7 +65,7 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | description |
+| Vorlage | Beschreibung  |
 | --- | --- |
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |
@@ -109,7 +109,7 @@ Verknüpfte Dateien werden unter folgenden Bedingungen ignoriert:
 - Die verknüpfte Datei enthält Linkmetadaten, und der Linkpfad ist ein relativer Pfad außerhalb der Projekthierarchie.
 - Der Linkpfad ist ein Stammpfad.
 
-### <a name="working-with-linked-files"></a>Arbeiten mit verknüpften Dateien
+### <a name="work-with-linked-files"></a>Arbeiten mit verknüpften Dateien
 
 Klicken Sie zum Hinzufügen eines vorhandenen Elements als Link mit der rechten Maustaste auf den Ordner im Projekt, dem Sie die Datei hinzufügen möchten, und wählen Sie **Hinzufügen > Vorhandenes Element...**. Wählen Sie im daraufhin angezeigten Dialogfeld eine Datei aus, und wählen Sie **Als Link hinzufügen** aus der Dropdownliste der Schaltfläche **Hinzufügen**. Sofern keine in Konflikt stehenden Dateien vorhanden sind, wird mit diesem Befehl ein Link im ausgewählten Ordner erstellt. Allerdings wird der Link nicht hinzugefügt, wenn bereits eine Datei mit dem gleichen Namen vorhanden ist, oder ein Link zu dieser Datei bereits im Projekt vorhanden ist.
 
@@ -139,7 +139,18 @@ Sie müssen dem Ordner, der das Modul enthält, möglicherweise auch einen [Such
 
 Bei der Arbeit mit IronPython können Sie .NET-Assemblys Verweise hinzufügen, um IntelliSense zu aktivieren. Klicken Sie für .NET-Projekte in der Projektmappe mit der rechten Maustaste auf den **Verweise**-Knoten in Ihrem Python-Projekt, wählen Sie **Verweis hinzufügen**, wählen Sie die **Projekte**-Registerkarte, und suchen Sie das gewünschte Projekt. Wählen Sie für DLLs, die Sie separat heruntergeladen haben, stattdessen die Registerkarte **Durchsuchen**, und navigieren Sie zu der gewünschten DLL.
 
-Da Verweise in IronPython nicht verfügbar sind, bis ein Aufruf von `clr.AddReference('AssemblyName')` erfolgt, müssen Sie der Assembly auch einen `clr.AddReference`-Aufruf hinzufügen.
+Da Verweise in IronPython nicht verfügbar sind, bis ein Aufruf von `clr.AddReference('<AssemblyName>')` erfolgt, müssen Sie der Assembly auch einen entsprechenden `clr.AddReference`-Aufruf hinzufügen, in der Regel direkt zu Beginn Ihres Codes. Beispielsweise enthält der von der Projektvorlage für die **IronPython-Windows Forms-Anwendung** in Visual Studio erstellte Code zwei Aufrufe am Anfang der Datei:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>WebPI-Projekte
 

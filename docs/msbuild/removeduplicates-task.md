@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 596c066018a5f6f731c4ca0cefbefae458646ec1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574193"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153071"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates-Aufgabe
 Entfernt doppelte Elemente aus der angegebenen Elementauflistung  
@@ -33,7 +33,7 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `RemoveDuplicates` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`Filtered`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält eine Elementauflistung, aus der alle doppelten Elemente entfernt wurden Die Eingabereihenfolge der Elemente wird beibehalten, wobei die erste Instanz jedes doppelten Elements beibehalten wird.|  
 |`Inputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Elementauflistung, aus der doppelte Elemente entfernt werden sollen|  
@@ -41,7 +41,7 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 ## <a name="remarks"></a>Hinweise  
  Bei dieser Aufgabe wird die Groß- und Kleinschreibung beachtet, und Elementmetadaten werden beim Ermitteln von Duplikaten nicht verglichen.  
   
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden mithilfe der `RemoveDuplicates`-Aufgabe doppelte Elemente aus der `MyItems` -Elementauflistung entfernt. Wenn die Aufgabe abgeschlossen ist, enthält die `FilteredItems`-Elementauflistung ein Element.  
@@ -68,7 +68,7 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 </Project>  
 ```  
 
- Das folgende Beispiel zeigt, dass die `RemoveDuplicates`-Aufgabe ihre Eingabereihenfolge beibehält. Wenn die Aufgabe abgeschlossen ist, enthält die `FilteredItems`-Elementauflistung die Elemente „MyFile2.cs“, „MyFile1.cs“ und „MyFile3.cs“ in dieser Reihenfolge.  
+ Das folgende Beispiel zeigt, dass die `RemoveDuplicates`-Aufgabe ihre Eingabereihenfolge beibehält. Wenn die Aufgabe abgeschlossen ist, enthält die `FilteredItems`-Elementauflistung die Elemente *MyFile2.cs*, *MyFile1.cs* und *MyFile3.cs* in dieser Reihenfolge.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -92,6 +92,6 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
  [Aufgaben](../msbuild/msbuild-tasks.md)

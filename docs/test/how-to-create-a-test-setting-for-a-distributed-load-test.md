@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751818"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180307"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>How to: Create a Test Setting for a Distributed Load Test
 
@@ -165,7 +165,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
         > [!NOTE]
         > Die Option **ASP.NET** für **Hosttyp** wird in Auslastungstests nicht unterstützt.
 
-    2.  Wählen Sie mithilfe der Option "Tests als 32-Bit- oder 64-Bit-Prozess ausführen" aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
+    2.  Wählen Sie mithilfe der Option „Tests als 32-Bit- oder 64-Bit-Prozess ausführen“ aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
 
         > [!NOTE]
         > Maximale Flexibilität erhalten Sie, wenn Sie die Projekte für einen Webleistungs- und Auslastungstest mit der Konfiguration **Beliebige CPU** kompilieren. Die Ausführung ist dann sowohl auf 32- als auch auf 64-Bit-Agents möglich. Das Kompilieren von Projekten für einen Webleistungs- und Auslastungstest mit der **64-Bit-Konfiguration** bietet keinen Vorteil.

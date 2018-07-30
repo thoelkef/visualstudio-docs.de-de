@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751604"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176140"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
 
-Bearbeiten Sie zum Konfigurieren der Testiterationseinstellungen ein Auslastungstestszenario mithilfe des Auslastungstest-Editors und des Fensters „Eigenschaften“. Standardmäßig wird ein Auslastungstestszenario ohne Angabe einer maximalen Anzahl von Testiterationen eingerichtet. Sie können die maximale Anzahl von Iterationen im Szenario und die Länge der Pause zwischen den Iterationen konfigurieren.
+Bearbeiten Sie zum Konfigurieren der Testiterationseinstellungen ein Auslastungstestszenario mithilfe des Auslastungstest-Editors und des Fensters **Eigenschaften**. Standardmäßig wird ein Auslastungstestszenario ohne Angabe einer maximalen Anzahl von Testiterationen eingerichtet. Sie können die maximale Anzahl von Iterationen im Szenario und die Länge der Pause zwischen den Iterationen konfigurieren.
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Angeben der maximalen Anzahl von Testiterationen für ein Szenario
 
-Sie können die maximale Anzahl von Testläufen für ein Szenario angeben, indem Sie mithilfe des Auslastungstest-Editors die Eigenschaft **Maximale Anzahl von Testiterationen** im Eigenschaftenfenster ändern.
+Sie können die maximale Anzahl von Testläufen für ein Szenario angeben, indem Sie mithilfe des Auslastungstest-Editors die Eigenschaft **Maximale Anzahl von Testiterationen** im **Eigenschaftenfenster** ändern.
 
 Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale Anzahl der Testiterationen gesteuert, die für das Szenario ausgeführt werden sollen. Ebenso wie bei der Eigenschaft **Testiterationen** in den Auslastungslaufzeiteinstellungen handelt es sich dabei um das Maximum für alle Benutzer in allen Agents und nicht um eine Pro-Benutzer-Einstellung.
 
 > [!NOTE]
-> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
  Für eine sequenzielle Testmischung ist eine Iteration ein Durchlauf durch alle Tests in der Mischung. Für alle anderen Testmischungen zählt jede Testausführung als Iteration. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Wenn der Auslastungstest ein dauerbasierter Auslastungstest ist und die Dauer abläuft, bevor sämtliche Iterationen abgeschlossen sind, wird der Test beendet. Wenn der Test iterationsbasiert ist und die Testiterationen vor Szenarioiterationen erreicht werden, wird der Test beendet. Die Dauer wird mit der Eigenschaft **Testlaufdauer** im Eigenschaftenfenster konfiguriert, das einer Testlaufeinstellung in einem Auslastungstest zugeordnet ist.
+ Wenn der Auslastungstest ein dauerbasierter Auslastungstest ist und die Dauer abläuft, bevor sämtliche Iterationen abgeschlossen sind, wird der Test beendet. Wenn der Test iterationsbasiert ist und die Testiterationen vor Szenarioiterationen erreicht werden, wird der Test beendet. Die Dauer wird mit der Eigenschaft **Testlaufdauer** im **Eigenschaftenfenster** konfiguriert, das einer Testlaufeinstellung in einem Auslastungstest zugeordnet ist.
 
  Wenn die Anzahl der Szenarioiterationen erreicht wird, wird die Ausführung des Szenarios beendet, doch alle anderen aktiven Szenarien werden weiterhin ausgeführt.
 
@@ -55,7 +55,7 @@ Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale An
 
 4. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im Fenster **Eigenschaften** angezeigt.
 
 5. Geben Sie im Textfeld für die Eigenschaft **Maximale Anzahl von Testiterationen** einen Wert an, der die maximale Anzahl von Tests angibt, die bei Ausführung des Auslastungstests für das Szenario ausgeführt werden sollen.
 
@@ -66,12 +66,12 @@ Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale An
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Angeben von Reaktionszeiten zwischen Testiterationen in einem Szenario
 
-Die Eigenschaft **Reaktionszeit zwischen Testiterationen** wird im Eigenschaftenfenster festgelegt, während die Eigenschaften von Auslastungstestszenarios im Auslastungstest-Editor angegeben werden.
+Die Eigenschaft **Reaktionszeit zwischen Testiterationen** wird im **Eigenschaftenfenster** festgelegt, während die Eigenschaften von Auslastungstestszenarios im Auslastungstest-Editor angegeben werden.
 
 Mit der Eigenschaft **Reaktionszeit zwischen Testiterationen** wird die Wartezeit vor dem Starten einer Testiteration angegeben (als Anzahl von Sekunden).
 
 > [!NOTE]
-> Eine vollständige Liste der Auslastungstest-Szenarioeigenschaften finden Sie unter [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Auslastungstest-Szenarioeigenschaften finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>So geben Sie die Reaktionszeiten zwischen Testiterationen an
 
@@ -83,7 +83,7 @@ Mit der Eigenschaft **Reaktionszeit zwischen Testiterationen** wird die Wartezei
 
 3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im **Eigenschaftenfenster** angezeigt.
 
 4. Geben Sie im Wert für die Eigenschaft **Reaktionszeit zwischen Testiterationen** eine Zahl ein, die die Anzahl von Sekunden vor dem Starten der nächsten Testiteration darstellt.
 
@@ -91,7 +91,7 @@ Mit der Eigenschaft **Reaktionszeit zwischen Testiterationen** wird die Wartezei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Configure test agents and test controllers for load tests (Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests)](../test/configure-test-agents-and-controllers-for-load-tests.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
-- [Editing Think Times to Simulate Website Human Interaction Delays (Bearbeiten von Reaktionszeiten zum Simulieren von Website-Interaktionsverzögerungen des Benutzers)](../test/edit-think-times-in-load-test-scenarios.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)
+- [Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites](../test/edit-think-times-in-load-test-scenarios.md)

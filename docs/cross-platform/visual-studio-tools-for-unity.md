@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Tools für Unity | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,34 +10,48 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 98c2ac925f1bcdfb4297444f8a3e52379d08d6d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70c021afc74abe03116c5227443d91e851df3545
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31063251"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154056"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
-In diesem Abschnitt erfahren Sie mehr über Visual Studio-Tools für Unity, eine kostenlose Visual Studio-Erweiterung, durch die Visual Studio zu einem leistungsstarken Tool für das Erstellen von Spielen mit Unity wird.
 
-## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
- **Unity** ist ein Spielemodul und eine Entwicklungsumgebung zum Herstellen plattformübergreifender Spiele. Die Unity-Engine wird auf mehr als einem Dutzend Plattformen ausgeführt – von leistungsstarken PCs über Spielekonsolen und touchfähige Tablet-PCs und Mobiltelefone bis zum Web. Der Unity-Editor bietet eine entwicklerfreundliche Oberfläche zum Erstellen anspruchsvoller Spielwelten. Aufgrund seines Funktionsumfangs, der Benutzerfreundlichkeit und Reichweite ist Unity bei heutigen Spieleentwicklern sehr beliebt.
+![Visual Studio Tools für Unity](media/vstu_header.png)
 
- Der Unity-Editor eignet sich hervorragend für das Zusammensetzen Ihres Spiels, bietet aber keine Möglichkeit, Code zu schreiben. Mit **Visual Studio-Tools für Unity** können Sie die vertrauten Codebearbeitungs-, Debugging- und Produktivitätsfunktionen von Visual Studio nutzen, um Editor- und Spielskripts für Ihr Unity-Projekt mithilfe von C# zu erstellen. Darüber hinaus können Sie die leistungsstarken Debuggingfunktionen von Visual Studio einsetzen.
+Visual Studio-Tools für Unity ist eine kostenlose Erweiterung, die Visual Studio zu einem leistungsstarken Tool zur Entwicklung plattformübergreifender Spiele mit Unity macht.
 
- Doch Visual Studio-Tools für Unity hat noch mehr zu bieten, nämlich eine umfassende Integration in den Unity-Editor, sodass Sie für das Erledigen einfacher Aufgaben weniger Zeit für das Hin- und Herwechseln benötigen. Hinzu kommen Unity-spezifische Produktivitätsverbesserungen und ein einfacher Zugriff auf die Unity-Dokumentation.
+Der Unity-Editor eignet sich hervorragend für das Zusammensetzen Ihres Spiels, bietet aber keine Möglichkeit, Code zu schreiben. Mit Visual Studio-Tools für Unity können Sie die vertrauten Codebearbeitungs-, Debugging- und Produktivitätsfunktionen von Visual Studio nutzen, um Editor- und Spielskripts für Ihr Unity-Projekt mithilfe von C# zu erstellen. Darüber hinaus können Sie die leistungsstarken Debuggingfunktionen von Visual Studio einsetzen.
 
- Um mehr über die Möglichkeiten von Visual Studio-Tools für Unity zu erfahren, gehen Sie zu [Übersicht](../cross-platform/overview-of-visual-studio-tools-for-unity.md). Um zu erfahren, wie Sie Visual Studio-Tools für Unity installieren und mit dem Einsatz der Tools für Ihr Unity-Projekt beginnen, gehen Sie zu [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).
+Doch Visual Studio-Tools für Unity hat noch mehr zu bieten, nämlich eine umfassende Integration in den Unity-Editor, sodass Sie für das Erledigen einfacher Aufgaben weniger Zeit für das Hin- und Herwechseln benötigen. Hinzu kommen Unity-spezifische Produktivitätsverbesserungen und ein einfacher Zugriff auf die Unity-Dokumentation.
 
-## <a name="more-in-this-section"></a>Weitere Informationen
- [Übersicht](../cross-platform/overview-of-visual-studio-tools-for-unity.md) In diesem Abschnitt erfahren Sie mehr über die Möglichkeiten von Visual Studio-Tools für Unity.
+## <a name="overview"></a>Übersicht
 
- [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Tools für Unity für Ihre Version von Visual Studio installieren und mit der Verwendung von Visual Studio in Ihrem Unity-Projekt beginnen.
+Auf der Seite [Entwickeln von Unity-Spielen mit Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) finden Sie eine Übersicht der Vorteile der Verwendung von Visual Studio für die Unity-Entwicklung. Alternativ können Sie im Folgenden die wichtigsten Features von Visual Studio-Tools für Unity näher kennenlernen:
 
- [Verwendung von Visual Studio-Tools für Unity](../cross-platform/using-visual-studio-tools-for-unity.md) In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsfeatures von Visual Studio-Tools für Unity und den Visual Studio-Debugger für die Unity-Entwicklung einsetzen.
+### <a name="compatible-with-visual-studio-community-and-bundled-with-unity"></a>Kompatibel mit Visual Studio Community und im Paket mit Unity
 
- [Programmierung von Visual Studio-Tools für Unity](../cross-platform/programming-visual-studio-tools-for-unity.md) In diesem Abschnitt finden Sie Beispiele für die Verwendung der Visual Studio-Tools für Unity-API.
+[Visual Studio Community](https://visualstudio.microsoft.com/) ist kostenlos und enthält die Unity-Installationsdateien ab Unity 2018.1. Weitere Informationen finden Sie in der [Dokumentation zum Einrichten von Visual Studio-Tools für Unity](getting-started-with-visual-studio-tools-for-unity.md).
 
- [Problembehandlung und bekannte Probleme](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md) In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.
+### <a name="intellisense-for-unity-messages"></a>IntelliSense für Unity-Nachrichten
 
- [Änderungsprotokoll](../cross-platform/change-log-visual-studio-tools-for-unity.md) In diesem Abschnitt erfahren Sie mehr über die neuen Features, Fehlerbehebungen und andere Änderungen in jeder Version von Visual Studio-Tools für Unity.
+Die Codevervollständigung von IntelliSense vereinfacht die [Implementierung von Unity-API-Meldungen](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) wie `OnCollisionEnter`, einschließlich der Parameter.
+
+### <a name="superior-debugging"></a>Leistungsstarkes Debugging
+
+Visual Studio-Tools für Unity unterstützt die robusten [Debuggingfunktionen](using-visual-studio-tools-for-unity.md#unity-debugging), die Sie von Visual Studio erwarten:
+
+* Breakpoints setzen, einschließlich bedingter Breakpoints
+* Auswertung komplexer Ausdrücke im Überwachungsfenster.
+* Überprüfen und Ändern des Werts von Variablen und Argumenten.
+* Detailsuchen in komplexen Objekten und Datenstrukturen.
+
+### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio für Mac-Tools für Unity
+
+Visual Studio für Mac unterstützt auch Unity-Projekte. Weitere Informationen finden Sie in der [Dokumentation zu Visual Studio für Mac-Tools für Unity](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+* [Erste Schritte mit Visual Studio-Tools für Unity](getting-started-with-visual-studio-tools-for-unity.md)

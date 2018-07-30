@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967884"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203637"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Gewusst wie: Hinzufügen von Indikatoren zu Indikatorensätzen mit dem Auslastungstest-Editor
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen mit dem Auslastungstest-Editor
 
 Wenn Sie mithilfe des **Auslastungstest-Assistenten** einen Auslastungstest erstellen, fügen Sie einen Anfangssatz von Indikatoren hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Weitere Informationen finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -61,7 +61,7 @@ Wenn Sie mithilfe des **Auslastungstest-Assistenten** einen Auslastungstest erst
 7.  Klicken Sie auf **OK**.
 
     > [!NOTE]
-    > Außerdem ist es möglich, Indikatoren einem Indikatorensatz hinzuzufügen, indem Sie mit der rechten Maustaste auf einen vorhandenen Indikator oder eine Indikatorkategorie klicken, auf Kopieren klicken und den Indikator dann im gewünschten Indikatorensatzknoten einfügen. Wenn zusätzliche Indikatoren kopiert wurden, die nicht benötigt werden, können diese gelöscht werden.
+    > Außerdem ist es möglich, Indikatoren einem Indikatorensatz hinzuzufügen, indem Sie einen vorhandenen Indikator oder eine Indikatorkategorie auswählen, auf „Kopieren“ klicken und den Indikator dann im gewünschten Indikatorensatzknoten einfügen. Wenn zusätzliche Indikatoren kopiert wurden, die nicht benötigt werden, können diese gelöscht werden.
 
 ## <a name="see-also"></a>Siehe auch
 

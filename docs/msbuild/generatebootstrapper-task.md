@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573797"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177736"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `GenerateBootstrapper` -Aufgabe beschrieben.  
+ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
     </BootstrapperItem>  
     ```  
   
-     Das Attribut `Include` wird zum Darstellen des Namen einer erforderlichen Komponente verwendet, die installiert werden sollte. Die Elementmetadaten `ProductName` sind optional und werden vom Buildmodul als benutzerfreundlichen Namen verwendet, im Fall dass das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], insofern keine `ApplicationFile` angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, das für Ihre Anwendung installiert werden muss.  
+     Das Attribut `Include` stellt den Namen einer erforderlichen Komponente dar, die installiert werden sollte. Die `ProductName`-Elementmetadaten sind optional und werden von der Build-Engine als benutzerfreundlicher Name verwendet, falls das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], sofern kein `ApplicationFile`-Parameter angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, die für Ihre Anwendung installiert werden muss.  
   
      Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
   
@@ -86,7 +86,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
      Optionaler `String`-Ausgabeparameter.  
   
-     Gibt den Erstellungsort von „setup.exe“ an.  
+     Gibt den Erstellungsort von *setup.exe* an.  
   
 -   `ComponentsLocation`  
   
@@ -130,7 +130,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
      Optionaler `String` -Parameter.  
   
-     Gibt den Speicherort zum Kopieren von „setup.exe“ und aller Paketdateien an.  
+     Gibt den Speicherort zum Kopieren von *setup.exe* und aller Paketdateien an.  
   
 -   `Path`  
   
@@ -151,7 +151,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
      Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Aufgabe `GenerateBootstrapper` zur Installation einer Anwendung verwendet, die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] als Voraussetzung installiert haben muss.  
@@ -179,4 +179,4 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

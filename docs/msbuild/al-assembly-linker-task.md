@@ -20,20 +20,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 022e7f47f17292c62b851868b85773e8295a6991
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578730"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177837"
 ---
-# <a name="al-assembly-linker-task"></a>AL (Assembly Linker)-Aufgabe
-Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] ausgeliefert wird. Mit dem Assembly Linker-Tool wird eine Assembly mit einem Manifest aus einer oder mehreren Dateien erstellt, bei denen es sich um Module oder Ressourcendateien handelt. Compiler und Entwicklungsumgebungen könnten diese Funktionen möglicherweise bereits bieten, daher ist es häufig nicht erforderlich, diese Aufgabe direkt zu verwenden. Der Assembly Linker ist besonders nützlich für Entwickler, die eine einzelne Assembly aus mehreren Komponentendateien erstellen müssen, z.B. solche, die möglicherweise bei einer Entwicklung in verschiedenen Sprachen produziert werden. Diese Aufgabe kombiniert die Module nicht in einer einzelnen Assemblydatei; die einzelnen Module müssen weiterhin verteilt werden und in der richtigen Reihenfolge verfügbar sein, damit die resultierende Assembly ordnungsgemäß geladen wird. Weitere Informationen zu „AL.exe“ finden Sie unter [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
+# <a name="al-assembly-linker-task"></a>AL-Aufgabe (Assembly Linker)
+Die AL-Aufgabe umschließt *AL.exe*, ein Tool, das in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] enthalten ist. Mit dem Assembly Linker-Tool wird eine Assembly mit einem Manifest aus einer oder mehreren Dateien erstellt, bei denen es sich um Module oder Ressourcendateien handelt. Compiler und Entwicklungsumgebungen könnten diese Funktionen möglicherweise bereits bieten, daher ist es häufig nicht erforderlich, diese Aufgabe direkt zu verwenden. Der Assembly Linker ist besonders nützlich für Entwickler, die eine einzelne Assembly aus mehreren Komponentendateien erstellen müssen, z.B. solche, die möglicherweise bei einer Entwicklung in verschiedenen Sprachen produziert werden. Diese Aufgabe kombiniert die Module nicht in einer einzelnen Assemblydatei; die einzelnen Module müssen weiterhin verteilt werden und in der richtigen Reihenfolge verfügbar sein, damit die resultierende Assembly ordnungsgemäß geladen wird. Weitere Informationen zu *AL.exe* finden Sie unter [AL.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `AL` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`AlgorithmID`|Optionaler `String` -Parameter.<br /><br /> Legt einen Algorithmus zum Hashen aller Dateien in einer Mehrfachdateiassembly mit Ausnahme der Datei, die das Assemblymanifest enthält, fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/algid` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`BaseAddress`|Optionaler `String` -Parameter.<br /><br /> Legt die Adresse fest, an der eine DLL zur Laufzeit auf dem Computer des Benutzers geladen wird. Das Laden von Anwendungen kann beschleunigt werden, wenn nicht das Betriebssystem die DLLs im Prozessbereich verschiebt, sondern die Basisadresse der DLLs angegeben wird. Dieser Parameter entspricht der /base[address](/dotnet/framework/tools/al-exe-assembly-linker).|  
@@ -59,7 +59,7 @@ Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdkl
 |`ProductVersion`|Optionaler `String` -Parameter.<br /><br /> Legt eine Zeichenfolge für das Feld `ProductVersion` in der Assembly fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/productv[ersion]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`ResponseFiles`|Optionaler `String[]` -Parameter.<br /><br /> Legt die Antwortdateien fest, die zusätzliche Optionen enthalten, die über den Assembly Linker übergeben werden sollen.|  
 |`SdkToolsPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools wie z.B. „resgen.exe“ fest.|  
-|`SourceModules`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Ein oder mehrere Module, die in einer Assembly kompiliert werden. Die Module werden im Manifest der resultierenden Assembly aufgelistet und müssen noch verteilt werden und verfügbar sein, damit die Assembly sie laden kann. Die an diesen Parameter übergebenen Elemente haben möglicherweise zusätzliche Metadaten mit dem Namen `Target`, die angeben, in welchen Pfad und mit welchem Dateinamen die Aufgabe die Datei kopiert, bevor sie diese neue Datei in die Assembly kompiliert. Weitere Informationen finden Sie in der Dokumentation zu [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Dieser Parameter entspricht der Liste der Module, die ohne einen bestimmten Schalter an „Al.exe“ übergeben werden.|  
+|`SourceModules`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Ein oder mehrere Module, die in einer Assembly kompiliert werden. Die Module werden im Manifest der resultierenden Assembly aufgelistet und müssen noch verteilt werden und verfügbar sein, damit die Assembly sie laden kann. Die an diesen Parameter übergebenen Elemente haben möglicherweise zusätzliche Metadaten mit dem Namen `Target`, die angeben, in welchen Pfad und mit welchem Dateinamen die Aufgabe die Datei kopiert, bevor sie diese neue Datei in die Assembly kompiliert. Weitere Informationen finden Sie in der Dokumentation zu [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Dieser Parameter entspricht der Liste der Module, die ohne einen bestimmten Schalter an *Al.exe* übergeben werden.|  
 |`TargetType`|Optionaler `String` -Parameter.<br /><br /> Legt das Dateiformat der Ausgabedatei fest: `library` (Codebibliothek), `exe` (Konsolenanwendung) oder `win` (Windows-basierte Anwendung). Die Standardeinstellung ist `library`. Dieser Parameter entspricht der Option `/t[arget]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`TemplateFile`|Optionaler `String` -Parameter.<br /><br /> Legt die Assembly fest, von der mit Ausnahme des Felds für die Kultur alle Assemblymetadaten geerbt werden. Die angegebene Assembly muss über einen starken Namen verfügen.<br /><br /> Eine Assembly, die Sie mit dem Parameter `TemplateFile` erstellen, ist eine Satellitenassembly. Dieser Parameter entspricht der Option `/template` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Timeout`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt.|  
@@ -67,8 +67,8 @@ Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdkl
 |`ToolPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Speicherort fest, von wo aus die Aufgabe die zugrunde liegende ausführbare Datei (Al.exe) lädt. Wenn dieser Parameter nicht angegeben ist, verwendet die Aufgabe den SDK-Installationspfad, der der Version des Frameworks entspricht, das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausführt.|  
 |`Trademark`|Optionaler `String` -Parameter.<br /><br /> Legt eine Zeichenfolge für das Feld `Trademark` in der Assembly fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/trade[mark]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Version`|Optionaler `String` -Parameter.<br /><br /> Legt Versionsinformationen für diese Assembly fest. Das Format der Zeichenfolge ist *major.minor.build.revision*. Der Standardwert ist 0. Weitere Informationen finden Sie in der Dokumentation zur Option `/v[ersion]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`Win32Icon`|Optionaler `String` -Parameter.<br /><br /> Fügt eine ICO-Datei in die Assembly ein. Die ICO-Datei verleiht der Ausgabedatei in Datei-Explorer das gewünschte Aussehen. Dieser Parameter entspricht der Option `/win32icon` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`Win32Resource`|Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (RES-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie in der Dokumentation zur Option `/win32res` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`Win32Icon`|Optionaler `String` -Parameter.<br /><br /> Fügt eine *ICO*-Datei in die Assembly ein. Die *ICO*-Datei verleiht der Ausgabedatei in Datei-Explorer das gewünschte Aussehen. Dieser Parameter entspricht der Option `/win32icon` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`Win32Resource`|Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie in der Dokumentation zur Option `/win32res` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
   
 ## <a name="remarks"></a>Hinweise  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
@@ -94,5 +94,5 @@ Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdkl
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
+ [Aufgaben](../msbuild/msbuild-tasks.md)

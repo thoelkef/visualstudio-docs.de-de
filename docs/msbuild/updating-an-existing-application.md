@@ -1,28 +1,46 @@
-# <a name="updating-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
+---
+title: Aktualisieren einer vorhandenen Anwendung für MSBuild 15 | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 11/04/2016
+ms.technology: msbuild
+ms.topic: conceptual
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39152258"
+---
+# <a name="update-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
 
 Vor Version 15.0 von MSBuild wurde MSBuild aus dem globalen Assemblycache (GAC) geladen und MSBuild-Erweiterungen wurden in der Registrierung installiert. Dadurch wurde sichergestellt, dass alle Anwendungen die gleiche Version von MSBuild verwenden und auf die gleichen Toolsets zugreifen. Jedoch wurden auch parallele Installationen von verschiedenen Versionen von Visual Studio dadurch verhindert.
 
-Damit schnellere, kleinere und parallele Installationen unterstützt werden können, platziert Visual Studio 2017 MSBuild nicht mehr im GAC und ändert nicht mehr die Registrierung. Das bedeutet jedoch auch, dass Anwendungen, die die MSBuild-API zum Auswerten oder Erstellen von Projekten verwenden sollen, nicht implizit auf der Installation von Visual Studio basieren können.
+Um schnellere, kleinere und parallele Installationen zu unterstützen, platziert Visual Studio 2017 MSBuild nicht mehr im GAC und ändert nicht mehr die Registrierung. Das bedeutet jedoch auch, dass Anwendungen, die die MSBuild-API zum Auswerten oder Erstellen von Projekten verwenden sollen, nicht implizit auf der Installation von Visual Studio basieren können.
 
-## <a name="using-msbuild-from-visual-studio"></a>Verwenden von MSBuild in Visual Studio
+## <a name="use-msbuild-from-visual-studio"></a>Verwenden von MSBuild in Visual Studio
 
-Laden Sie MSBuild-Assemblys in Visual Studio, und verwenden Sie die in Visual Studio verfügbaren SDKs, um sicherzustellen, dass programmgesteuerte Builds Ihrer Anwendung mit denen in Visual Studio oder „MSBuild.exe“ übereinstimmen. Das NuGet-Paket „Microsoft.Build.Locator“ optimiert diesen Vorgang.
+Laden Sie MSBuild-Assemblys aus Visual Studio, und verwenden Sie die in Visual Studio verfügbaren SDKs, um sicherzustellen, dass programmgesteuerte Builds Ihrer Anwendung mit denen in Visual Studio oder *MSBuild.exe* übereinstimmen. Das NuGet-Paket „Microsoft.Build.Locator“ optimiert diesen Prozess.
 
-## <a name="using-microsoftbuildlocator"></a>Verwenden von „Microsoft.Build.Locator“
+## <a name="use-microsoftbuildlocator"></a>Verwenden von „Microsoft.Build.Locator“
 
-Wenn Sie `Microsoft.Build.Locator.dll` mit Ihrer Anwendung weiterverteilen, müssen Sie keine anderen MSBuild-Assemblys verteilen.
+Wenn Sie *Microsoft.Build.Locator.dll* mit Ihrer Anwendung weiterverteilen, müssen Sie keine anderen MSBuild-Assemblys verteilen.
 
 Damit ein Projekt für die Verwendung von MSBuild 15 und der Locator-API aktualisiert werden kann, sind einige Änderungen in Ihrem Projekt erforderlich (unten beschrieben). Ein Beispiel dieser zum Aktualisieren eines Projekts erforderlichen Änderungen finden Sie in [den Commits für ein Beispielprojekt im MSBuildLocator-Repository](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15).
 
 ### <a name="change-msbuild-references"></a>Ändern von MSBuild-Verweisen
 
-Damit Sie sicherstellen können, dass MSBuild aus einem zentralen Speicherort geladen wird, dürfen Sie die Assemblys nicht mit Ihrer Anwendung verteilen.
+Um sicherzustellen, dass MSBuild aus einem zentralen Speicherort geladen wird, dürfen Sie die Assemblys nicht mit Ihrer Anwendung verteilen.
 
 Der Mechanismus zum Ändern Ihres Projekts, um das Laden aus einem zentralen Speicherort zu vermeiden, hängt davon ab, wie Sie auf MSBuild verweisen.
 
-#### <a name="using-nuget-packages-preferred"></a>Verwenden von NuGet-Paketen (bevorzugt)
+#### <a name="use-nuget-packages-preferred"></a>Verwenden von NuGet-Paketen (bevorzugt)
 
-Diese Anweisungen setzen voraus, dass Sie [NuGet-Verweise in Form von `PackageReference` verwenden](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files).
+Diese Anweisungen setzen voraus, dass Sie [NuGet-Verweise im PackageReference-Stil](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) verwenden.
 
 Ändern Sie Ihre Projektdatei(en) so, dass sie mit den NuGet-Paketen auf MSBuild-Assemblys verweisen. Teilen Sie NuGet durch Angabe von `ExcludeAssets=runtime` mit, dass die Assemblys nur zur Buildzeit benötigt werden und nicht in das Ausgabeverzeichnis kopiert werden sollen.
 
@@ -37,9 +55,9 @@ Sie können z.B. das folgende XML verwenden:
 </ItemGroup>
 ```
 
-#### <a name="using-extension-assemblies"></a>Verwenden von Erweiterungsassemblys
+#### <a name="use-extension-assemblies"></a>Verwenden von Erweiterungsassemblys
 
-Wenn Sie NuGet-Pakete nicht verwenden können, können Sie auf MSBuild-Assemblys verweisen, die mit Visual Studio verteilt werden. Wenn Sie direkt auf MSBuild verweisen, stellen Sie sicher, dass es nicht in Ihr Ausgabeverzeichnis kopiert wird, indem Sie `Copy Local` auf `False` festlegen. In der Projektdatei sieht das wie folgt aus:
+Wenn Sie NuGet-Pakete nicht verwenden können, können Sie auf MSBuild-Assemblys verweisen, die mit Visual Studio verteilt werden. Wenn Sie direkt auf MSBuild verweisen, stellen Sie sicher, dass es nicht in Ihr Ausgabeverzeichnis kopiert wird, indem Sie `Copy Local` auf `False` festlegen. In der Projektdatei entspricht diese Einstellung folgendem Code:
 
 ```xml
     <Reference Include="Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -49,11 +67,11 @@ Wenn Sie NuGet-Pakete nicht verwenden können, können Sie auf MSBuild-Assemblys
 
 #### <a name="binding-redirects"></a>Bindungsumleitungen
 
-Durch das Verweisen auf das Paket „Microsoft.Build.Locator“ wird automatisch sichergestellt, dass Ihre Anwendung die erforderlichen Bindungsumleitungen aller Versionen von MSBuild-Assemblys auf Version `15.1.0.0` verwendet.
+Verweisen Sie auf das Paket „Microsoft.Build.Locator“, um sicherzustellen, dass Ihre Anwendung automatisch die erforderlichen Bindungsumleitungen aller Versionen von MSBuild-Assemblys auf Version `15.1.0.0` verwendet.
 
-### <a name="ensure-output-clean"></a>Sicherstellen einer sauberen Ausgabe
+### <a name="ensure-output-is-clean"></a>Sicherstellen einer sauberen Ausgabe
 
-Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine `Microsoft.Build.*.dll`-Assemblys enthält (außer der im nächsten Schritt hinzugefügten `Microsoft.Build.Locator.dll`).
+Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine *Microsoft.Build.\*.dll*-Assemblys enthält (außer der im nächsten Schritt hinzugefügten *Microsoft.Build.Locator.dll*).
 
 ### <a name="add-package-reference"></a>Hinzufügen des Paketverweises
 
@@ -69,9 +87,9 @@ Fügen Sie einen NuGet-Paketverweis auf [Microsoft.Build.Locator](https://www.nu
 
 Fügen Sie einen Aufruf der Locator-API hinzu, bevor Sie eine Methode aufrufen, die MSBuild verwendet.
 
-Die einfachste Möglichkeit hierzu ist, einen Aufruf von
+Die einfachste Möglichkeit, den Aufruf der Locator-API hinzuzufügen, ist, einen Aufruf
 
-```c#
+```csharp
 MSBuildLocator.RegisterDefaults();
 ```
 

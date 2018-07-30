@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c87a8f350ecd38a4f0d1f8afd6918b560645e8f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977763"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180372"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 
@@ -42,7 +42,7 @@ In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test 
 ## <a name="do-you-need-multiple-ui-maps"></a>Brauche ich mehrere UI-Zuordnung?
  Erstellen Sie in jeder der folgenden Situationen UI-Zuordnungen:
 
--   Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.
+-   Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen, wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.
 
 -   Ein unabhängiger Steuerelementsatz, auf den von verschiedenen Punkten der Anwendung aus zugegriffen wird, wie beispielsweise ein Assistent mit verschiedenen Seiten an Vorgängen. Wenn jede Seite eines Assistenten besonders komplex ist, könnten Sie für jede dieser Seiten eine UI-Zuordnung erstellen.
 

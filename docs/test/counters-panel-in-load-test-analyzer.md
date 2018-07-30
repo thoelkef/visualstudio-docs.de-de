@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304341"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176878"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Verwenden des Indikatorenfensters in der Diagramm- und Tabellenansicht
 
@@ -37,7 +37,7 @@ Das Indikatorenfenster bietet die folgenden Funktionen:
 
     -   **Szenarioname:** Verzweigungen in der Leistungsindikatorstruktur, die mit den Namen von Auslastungstestszenarios beschriftet sind, enthalten alle einem bestimmten Auslastungstestszenario zugeordnete Auslastungstest-Indikatorinstanzen. Die meisten Auslastungstestindikatoren sind innerhalb eines Szenariobranches geschachtelt.
 
-         Eine Szenarioverzweigung enthält Webleistungstestknoten. Die Webleistungstestknoten enthalten Knoten für Seiten, Anforderungen und Transaktionen. Jeder Endknoten in dieser Struktur ist ein Leistungsindikator, der einem Diagramm hinzugefügt werden kann.
+         Ein Szenariobranch enthält Webleistungstestknoten. Die Webleistungstestknoten enthalten Knoten für Seiten, Anforderungen und Transaktionen. Jeder Endknoten in dieser Struktur ist ein Leistungsindikator, der einem Diagramm hinzugefügt werden kann.
 
     -   **Computer:** Diese Verzweigung enthält eine nach Computer gruppierte Auflistung aller Indikatorinstanzen, die keinem Auslastungstest zugeordnet sind. Der Branch „Computer“ enthält einen Knoten für jeden Computer, der dem im Abschnitt „Rollen“ der ausgewählten Testeinstellungen angegebenen Auslastungstestcontroller zugeordnet ist. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -49,7 +49,7 @@ Das Indikatorenfenster bietet die folgenden Funktionen:
 
 |Indikatorenfenster|Beschreibung |
 |-|-|
-|![Knoten für Szenarionamen des Zählerbereichs](../test/media/ltest__namenode.png)|1. Alle Scenario1 des Auslastungstests zugeordneten Leistungsindikatoren werden unter diesem Knoten angezeigt.<br />2. Alle Tests eines Szenarios befinden sich unter dem Szenarioknoten. Die Bezeichnung gibt den Testnamen an.<br />3. Blattknoten unter einem Testknoten sind Testfallindikatoren des Auslastungstests, wobei der Instanzname für den Indikator als Testname verwendet wird.<br />4. Alle einem Webleistungstestbranch zugeordneten Seitenindikatorinstanzen des Auslastungstests. In diesem Knoten sind alle Seitenindikatorinstanzen des Auslastungstests enthalten, die der Seite "Login GET" (Berichtsname) des Webleistungstests "IBuyBrowse" in Scenario1 des Auslastungstests zugeordnet sind.<br />5. Endknoten unter einem Seitenknoten sind Seitenindikatoren des Auslastungstests.<br />6. Alle einem Webleistungstest zugeordneten Anforderungsindikatorinstanzen des Auslastungstests sind in einem Webleistungstestbranch enthalten. In diesem Knoten sind alle Anforderungsindikatorinstanzen enthalten, die der Anforderung "Login GET" (Berichtsname) des Webleistungstests "IBuyBrowse" in Scenario1 des Auslastungstests zugeordnet sind.<br />7. Blattknoten unter einem Anforderungsknoten sind Anforderungsindikatoren des Auslastungstests.<br />8. Alle einem Webleistungstest zugeordneten Transaktionsindikatorinstanzen des Auslastungstests sind in einem Webleistungstestbranch enthalten. In diesem Knoten sind alle Transaktionsindikatorinstanzen enthalten, die der Transaktion „Transaction1“ des Webleistungstests „IBuyBrowse“ in Scenario1 des Auslastungstests zugeordnet sind.<br />9. Blattknoten unter einem Transaktionsknoten sind Transaktionsindikatoren des Auslastungstests.<br />10. Komponententestknoten.|
+|![Knoten für Szenarionamen des Zählerbereichs](../test/media/ltest__namenode.png)|1. Alle Scenario1 des Auslastungstests zugeordneten Leistungsindikatoren werden unter diesem Knoten angezeigt.<br />2. Alle Tests eines Szenarios befinden sich unter dem Szenarioknoten. Die Bezeichnung gibt den Testnamen an.<br />3. Blattknoten unter einem Testknoten sind Testfallindikatoren des Auslastungstests, wobei der Instanzname für den Indikator als Testname verwendet wird.<br />4. Alle einem Webleistungstestbranch zugeordneten Seitenindikatorinstanzen des Auslastungstests. In diesem Knoten sind alle Seitenindikatorinstanzen des Auslastungstests enthalten, die der Seite „Login GET“ (Berichtsname) des Webleistungstests „IBuyBrowse“ in Scenario1 des Auslastungstests zugeordnet sind.<br />5. Endknoten unter einem Seitenknoten sind Seitenindikatoren des Auslastungstests.<br />6. Alle einem Webleistungstest zugeordneten Anforderungsindikatorinstanzen des Auslastungstests sind in einem Webleistungstestbranch enthalten. In diesem Knoten sind alle Anforderungsindikatorinstanzen enthalten, die der Anforderung „Login GET“ (Berichtsname) des Webleistungstests „IBuyBrowse“ in Scenario1 des Auslastungstests zugeordnet sind.<br />7. Blattknoten unter einem Anforderungsknoten sind Anforderungsindikatoren des Auslastungstests.<br />8. Alle einem Webleistungstest zugeordneten Transaktionsindikatorinstanzen des Auslastungstests sind in einem Webleistungstestbranch enthalten. In diesem Knoten sind alle Transaktionsindikatorinstanzen enthalten, die der Transaktion „Transaction1“ des Webleistungstests „IBuyBrowse“ in Scenario1 des Auslastungstests zugeordnet sind.<br />9. Blattknoten unter einem Transaktionsknoten sind Transaktionsindikatoren des Auslastungstests.<br />10. Komponententestknoten.|
 
 ## <a name="tasks"></a>Aufgaben
 

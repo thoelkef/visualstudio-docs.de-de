@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425334"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180440"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
@@ -38,8 +38,8 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 |Aufgaben|Verwandte Themen|
 |-----------|-----------------------|
-|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im Assistent für neuen Auslastungstest Einstellungen für den Auslastungstest an. Im Assistent für neuen Auslastungstest wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulating Expected Real-World Usage of a Web Site or Application (Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung)](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Bearbeiten des Testmischungsmodells:** Sie können ein Auslastungstestszenario mit dem Auslastungstest-Editor ändern, um eines der Testmischungsmodelle zu verwenden.||
+|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im **Assistent für neuen Auslastungstest** Einstellungen für den Auslastungstest an. Im **Assistent für neuen Auslastungstest** wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Bearbeiten des Testmischungsmodells:** Sie können ein Auslastungstestszenario mit dem **Auslastungstest-Editor** ändern, um eines der Testmischungsmodelle zu verwenden.||
 |**Konfigurieren der Geschwindigkeitsverzögerung für ein Testmischungsmodell nach Benutzergeschwindigkeit:** Wenn das Auslastungstestszenario für die Verwendung eines Testmischungsmodells konfiguriert ist und die Option **Auf Grundlage der Benutzergeschwindigkeit** aktiviert ist, können Sie die Verteilung der Geschwindigkeitsverzögerung konfigurieren.|-   [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Ändern des Testmischungsmodells in einem Szenario
@@ -49,15 +49,15 @@ Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastung
 > [!NOTE]
 > Eine vollständige Liste der Auslastungseinstellungseigenschaften und deren Beschreibungen finden Sie unter [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md).
 
-Mit dem Auslastungstest-Editor können Sie das Testmischungsmodell in einem Auslastungstestszenario ändern, indem Sie die Eigenschaft **Testmischungstyp** im Eigenschaftenfenster bearbeiten.
+Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem Auslastungstestszenario ändern, indem Sie die Eigenschaft **Testmischungstyp** im **Eigenschaftenfenster** bearbeiten.
 
 ### <a name="to-change-the-test-mix-model"></a>So ändern Sie das Testmischungsmodell
 
 1.  Öffnen Sie einen Auslastungstest.
 
-     Der Auslastungstest-Editor wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
+     Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
+2.  Klicken Sie im Ordner *Szenarios* der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
 
 3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
@@ -65,13 +65,13 @@ Mit dem Auslastungstest-Editor können Sie das Testmischungsmodell in einem Ausl
 
 4.  Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten (**…**).
 
-     Das Dialogfeld "Testmischung bearbeiten" wird angezeigt.
+     Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
 
 5.  Klicken Sie auf die Dropdownliste unter **Testmischungsmodell**, und wählen Sie das Testmischungsmodell aus, das Sie für das Szenario verwenden möchten.
 
-6.  (Optional) Ändern Sie die Testmischung mit den Schaltflächen **Hinzufügen**, **Entfernen** und **Verteilen** sowie mit den Schiebereglern für die Verteilung. Weitere Informationen finden Sie unter [Editing the Test Mix to Specify Which Tests to Include in a Load Test Scenario (Bearbeiten der Testmischung zum Angeben der Tests, die ein Auslastungstestszenario beinhalten sollen)](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6.  (Optional) Ändern Sie die Testmischung mit den Schaltflächen **Hinzufügen**, **Entfernen** und **Verteilen** sowie mit den Schiebereglern für die Verteilung. Weitere Informationen finden Sie unter [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Optional) Geben Sie mit den Kontrollkästchen und durch Auswählen der gewünschten Tests einen Webleistungs- oder Komponententest an, der initialisiert oder beendet werden soll. Weitere Informationen finden Sie unter [Emulating Expected Real-World Usage of a Web Site or Application (Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung)](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7.  (Optional) Geben Sie mit den Kontrollkästchen und durch Auswählen der gewünschten Tests einen Webleistungs- oder Komponententest an, der initialisiert oder beendet werden soll. Weitere Informationen finden Sie unter [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
 8.  Klicken Sie auf **OK**.
 
@@ -82,4 +82,4 @@ Mit dem Auslastungstest-Editor können Sie das Testmischungsmodell in einem Ausl
 ## <a name="see-also"></a>Siehe auch
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

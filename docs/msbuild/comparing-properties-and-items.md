@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177113"
 ---
-# <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
+# <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   
 -   Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md).  
@@ -87,9 +88,10 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
 -   Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen.  
   
 -   Elemente werden in der Reihenfolge definiert und geändert, in der sie vorkommen.  
-  
+ 
+ 
  Während der Ausführungsphase eines Builds werden in Zielen definierte Eigenschaften und Elemente gemeinsam in einer einzigen Phase in der Reihenfolge ausgewertet, in der sie vorkommen.  
-  
+ 
  Das stimmt allerdings nicht ganz. Wenn eine Eigenschaft, eine Elementdefinition oder ein Element definiert ist, wird der zugehörige Wert ausgewertet. Der Ausdrucksauswerter erweitert die Zeichenfolge, die den Wert angibt. Die Erweiterung der Zeichenfolge ist von der Build-Phase abhängig. Unten sehen Sie eine detailliertere Auswertungsreihenfolge für Eigenschaften und Elemente:  
   
 -   Während der Auswertungsphase eines Builds:  
@@ -127,9 +129,9 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
 KeyFileVersion: 1.0.0.3  
 ```  
   
- Dies liegt darin begründet, dass der Wert von `KeyFileVersion` eigentlich die Zeichenfolge „@(Schlüsseldatei->'%(Version)')“ ist. Element und Elementtransformationen wurden nicht erweitert, als die Eigenschaft ursprünglich definiert wurde, sodass der `KeyFileVersion`-Eigenschaft der Wert der nicht erweiterten Zeichenfolge zugewiesen wurde.  
+ Dies liegt daran, dass der Wert von `KeyFileVersion` eigentlich die Zeichenfolge „\@(Schlüsseldatei->'%(Version)')“ ist. Element und Elementtransformationen wurden nicht erweitert, als die Eigenschaft ursprünglich definiert wurde, sodass der `KeyFileVersion`-Eigenschaft der Wert der nicht erweiterten Zeichenfolge zugewiesen wurde.  
   
- Wenn während der Ausführungsphase des Builds die Meldungsaufgabe verarbeitet wird, erweitert MSBuild die Zeichenfolge „@(Schlüsseldatei->'%(Version)')“, sodass sie „1.0.0.3“ ergibt.  
+ Wenn während der Ausführungsphase des Builds die Meldungsaufgabe verarbeitet wird, erweitert MSBuild die Zeichenfolge „\@(Schlüsseldatei->'%(Version)')“, sodass sie „1.0.0.3“ ergibt.  
   
  Beachten Sie, dass dieselbe Meldung auch dann angezeigt würde, wenn die Reihenfolge der Eigenschaften- und Elementgruppen umgekehrt würde.  
   
@@ -173,11 +175,11 @@ KeyFileVersion:
 </Target>  
 ```  
   
- Der Wert von `KeyFileVersion` wird auf „1.0.0.3“ und nicht auf „@(Schlüsseldatei->'%(Version)')“ gesetzt. Die Meldungsaufgabe zeigt folgende Meldung an:  
+ Der Wert von `KeyFileVersion` wird auf „1.0.0.3“ und nicht auf „\@(Schlüsseldatei->'%(Version)')“ gesetzt. Die Meldungsaufgabe zeigt folgende Meldung an:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)
+ [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)

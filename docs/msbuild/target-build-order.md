@@ -1,7 +1,7 @@
 ---
 title: Buildreihenfolge für Ziele |Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178955"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
@@ -77,7 +78,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
   
  informiert MSBuild, dass das `Serve`-Ziel vom `Chop`-Ziel und dem `Cook`-Ziel abhängig ist. MSBuild führt das `Chop`-Ziel und dann das `Cook`-Ziel aus, bevor das `Serve`-Ziel ausgeführt wird.  
   
-## <a name="beforetargets-and-after-targets"></a>Vorher-Ziele und Nachher-Ziele  
+## <a name="beforetargets-and-aftertargets"></a>Vorher-Ziele und Nachher-Ziele  
  In MSBuild 4.0 können Sie die Reihenfolge der Ziele mithilfe der `BeforeTargets`- und `AfterTargets`-Attribute angeben.  
   
  Betrachten Sie folgendes Skript.  
@@ -102,7 +103,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>Bestimmen der Buildreihenfolge für Ziele  
+## <a name="determine-the-target-build-order"></a>Bestimmen der Buildreihenfolge für Ziele  
  MSBuild bestimmt die Buildreihenfolge für Ziele wie folgt:  
   
 1.  `InitialTargets`-Ziele werden ausgeführt.  
@@ -115,7 +116,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
   
 4.  Bevor ein Ziel ausgeführt wird, werden dessen `DependsOnTargets`-Ziele ausgeführt.  
   
-5.  Bevor ein Ziel ausgeführt wird, werden alle Ziele ausgeführt, die es in einem `BeforeTargets`-Attribut auflisten.  
+5.  Bevor ein Ziel ausgeführt oder übersprungen wurde, wird jedes beliebige Ziel ausgeführt, das es in einem `BeforeTargets`-Attribut auflistet.  
   
 6.  Bevor ein Ziel ausgeführt wird, werden sein `Inputs`-Attribut und `Outputs`-Attribut verglichen. Wenn MSBuild feststellt, dass alle Ausgabedateien in Bezug auf die entsprechende(n) Eingabedatei(en) veraltet sind, wird das Ziel von MSBuild ausgeführt. Andernfalls überspringt MSBuild das Ziel.  
   

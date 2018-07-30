@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668586"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179439"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -28,7 +28,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 > [!NOTE]
 > In allen Auslastungsmustern ist die von Visual Studio generierte Last eine simulierte Auslastung der virtuellen Benutzer.
 
-## <a name="load-patterns"></a>Laden von Mustern
+## <a name="load-patterns"></a>Auslastungsmuster
 
 ### <a name="constant"></a>Konstante
 
@@ -36,7 +36,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 #### <a name="constant-load-pattern-considerations"></a>Überlegungen zu konstanten Auslastungsmustern
 
- Ein konstantes Auslastungsmuster wird verwendet, um bei der Ausführung eines Auslastungstests die gleiche Benutzerauslastung auszuführen. Achten Sie darauf, ein konstantes Auslastungsmuster nicht mit einer hohen Benutzeranzahl zu verwenden. Dadurch werden am Anfang des Auslastungstests die Server möglicherweise unangemessen und unrealistisch stark belastet. Wenn der Auslastungstest z. B. einen Webtest enthält, der mit einer Anforderung an eine Homepage beginnt und Sie den Auslastungstest mit einer konstanten Auslastung von 1.000 Benutzern einrichten, sendet der Auslastungstest die ersten 1.000 Anforderungen möglichst schnell an die Homepage. Dies ist möglicherweise keine realistische Simulation von realem Zugriff auf die Website. Um das zu verhindern, können Sie ein schrittweises Auslastungsmuster verwenden, das allmählich auf 1.000 Benutzer ansteigt, oder geben Sie in den Laufzeiteinstellungen für Auslastungstests eine Aufwärmphase an. Wenn eine Aufwärmphase angegeben wird, erhöht der Auslastungstest automatisch allmählich die Auslastung während der Aufwärmphase. Weitere Informationen finden Sie unter [Konfigurieren von Szenariostartverzögerungen](../test/configure-scenario-start-delays.md).
+ Ein konstantes Auslastungsmuster wird verwendet, um bei der Ausführung eines Auslastungstests die gleiche Benutzerauslastung auszuführen. Achten Sie darauf, ein konstantes Auslastungsmuster nicht mit einer hohen Benutzeranzahl zu verwenden. Dadurch werden am Anfang des Auslastungstests die Server möglicherweise unangemessen und unrealistisch stark belastet. Wenn der Auslastungstest z.B. einen Webtest enthält, der mit einer Anforderung an eine Homepage beginnt und Sie den Auslastungstest mit einer konstanten Auslastung von 1.000 Benutzern einrichten, sendet der Auslastungstest die ersten 1.000 Anforderungen möglichst schnell an die Homepage. Dies ist möglicherweise keine realistische Simulation von realem Zugriff auf die Website. Um das zu verhindern, können Sie ein schrittweises Auslastungsmuster verwenden, das allmählich auf 1.000 Benutzer ansteigt, oder geben Sie in den Laufzeiteinstellungen für Auslastungstests eine Aufwärmphase an. Wenn eine Aufwärmphase angegeben wird, erhöht der Auslastungstest automatisch allmählich die Auslastung während der Aufwärmphase. Weitere Informationen finden Sie unter [Konfigurieren von Szenariostartverzögerungen](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Schritt
 
@@ -45,7 +45,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
  Sie können beispielsweise die folgenden Informationen angeben: **Benutzeranzahl (ursprünglich)**=1, **Maximale Benutzeranzahl**=100, **Schrittdauer (Sekunden)**=10 und **Benutzeranzahl pro Schritt**=1. In diesem Fall wird ein Auslastungsmuster erstellt, bei dem die Anzahl der Benutzer mit 1 beginnt und alle 10 Sekunden um 1 erhöht wird, bis schließlich eine Auslastung durch 100 Benutzer erreicht wird.
 
 > [!NOTE]
-> Wenn die gesamte Testdauer kürzer ist als die Zeitdauer, die zum Erreichen der maximalen Benutzerauslastung erforderlich ist, wird der Test nach Ablauf der Testdauer beendet, und die maximale Benutzeranzahl wird nicht erreicht.
+> Wenn die gesamte Testdauer kürzer ist als die Zeit, die zum Erreichen der maximalen Benutzerauslastung erforderlich ist, wird der Test nach Ablauf der Testdauer beendet, und das Ziel **Maximale Benutzeranzahl** wird nicht erreicht.
 
 
  Sie können die Auslastung schrittweise erhöhen, bis die Leistung des Servers wesentlich beeinträchtigt ist. Wenn die Auslastung zunimmt, stehen dem Server schließlich keine ausreichenden Ressourcen mehr zur Verfügung. Die schrittweise Auslastung bietet eine effektive Möglichkeit, die Anzahl der Benutzer festzustellen, bei der der Server überlastet sein könnte. Des Weiteren müssen Sie bei der schrittweisen Auslastung die Ressourcen der Agents genau überwachen, um sicher zu stellen, dass diese in der Lage sind, die gewünschte Auslastung zu generieren.
@@ -56,17 +56,17 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
  Ein schrittweises Auslastungsmuster kann zum Erhöhen der Auslastung auf den Servern während der Ausführung des Auslastungstests verwendet werden, um zu verdeutlichen, wie sich die Leistung bei Erhöhen der Benutzerauslastung ändert. Um beispielsweise die Leistung der Server beim Erhöhen der Benutzerauslastung auf 2.000 Benutzer anzuzeigen, könnten Sie einen 10-Stunden-Auslastungstest mit einem schrittweisen Auslastungsmuster mit den folgenden Eigenschaften ausführen:
 
--   Benutzeranzahl (ursprünglich): 100
+-   **Benutzeranzahl (ursprünglich)**: 100
 
--   Maximale Benutzeranzahl: 2.000
+-   **Maximale Benutzeranzahl**: 2.000
 
--   Schrittdauer (Sekunden): 1.800
+-   **Schrittdauer (Sekunden)**: 1.800
 
--   Schrittverlaufszeit (Sekunden): 20
+-   **Schrittverlaufszeit (Sekunden)**: 20
 
--   Benutzeranzahl pro Schritt: 100
+-   **Benutzeranzahl pro Schritt**: 100
 
- Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im Assistenten für neue Auslastungstests nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [How to: Specify the Step Ramp Time Property for a Step Load Pattern (Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster)](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+ Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im **Assistenten für neue Auslastungstests** nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Zielbasiert
 
@@ -110,41 +110,41 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 |Aufgaben|Verwandte Themen|
 |-----------|-----------------------|
-|**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem Assistenten für neue Auslastungstests einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
-|**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im Auslastungstest-Editor bearbeiten.|-   [How to: Specify the Step Ramp Time Property for a Step Load Pattern (Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster)](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [How to: Specify the Percentage of Virtual Users that Use Web Cache Data (Vorgehensweise: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen)](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Angeben der Schrittverlaufszeit für ein schrittweises Auslastungsmuster**: Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z.B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht.|-   [How to: Specify the Step Ramp Time Property for a Step Load Pattern (Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster)](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem **Assistenten für neue Auslastungstests** einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im **Auslastungstest-Editor** bearbeiten.|-   [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Angeben der Schrittverlaufszeit für ein schrittweises Auslastungsmuster**: Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z.B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht.|-   [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
-## <a name="changing-the-load-pattern"></a>Ändern des Auslastungsmusters
+## <a name="change-the-load-pattern"></a>Ändern des Auslastungsmusters
 
  Nachdem Sie den Auslastungstest mit dem **Assistenten für neuen Auslastungstest** erstellt haben, können Sie mithilfe des **Auslastungstest-Editors** die Eigenschaften des Auslastungsmusters für ein Szenario Ihren Anforderungen an den Test entsprechend anpassen.
 
 > [!NOTE]
-> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
 
- Das Auslastungsmuster gibt die Anzahl der während eines Auslastungstests aktiven virtuellen Benutzer und die Frequenz an, mit der neue Benutzer hinzugefügt werden. Ihnen stehen drei Muster für die Auswahl zur Verfügung: Schrittweise, konstant und zielbasiert. Weitere Informationen finden Sie unter [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario (Angeben der Anzahl virtueller Benutzer mit Auslastungsmustern in einem Auslastungstestszenario)](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+ Das Auslastungsmuster gibt die Anzahl der während eines Auslastungstests aktiven virtuellen Benutzer und die Frequenz an, mit der neue Benutzer hinzugefügt werden. Ihnen stehen drei Muster für die Auswahl zur Verfügung: Schrittweise, konstant und zielbasiert. Weitere Informationen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Sie können die Auslastungseigenschaften auch programmgesteuert mit einem Auslastungstest-Plug-In ändern. Weitere Informationen finden Sie unter [How to: Create a Load Test Plug-In (Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins)](../test/how-to-create-a-load-test-plug-in.md).
+> Sie können die Auslastungseigenschaften auch programmgesteuert mit einem Auslastungstest-Plug-In ändern. Weitere Informationen finden Sie unter [Gewusst wie: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
 
 
 ### <a name="to-change-the-load-pattern"></a>So ändern Sie das Auslastungsmuster
 
 1.  Öffnen Sie einen Auslastungstest.
 
-2.  Erweitern Sie im **Auslastungstest-Editor** im Ordner „Szenarios“ das Szenario, dessen Auslastungsmuster Sie bearbeiten möchten, und wählen Sie das Auslastungsmuster für das Szenario aus.
+2.  Erweitern Sie im **Auslastungstest-Editor** im Ordner *Szenarios* das Szenario, dessen Auslastungsmuster Sie bearbeiten möchten, und wählen Sie das Auslastungsmuster für das Szenario aus.
 
     > [!NOTE]
     > Der in der Szenariostruktur Ihres Auslastungstests angezeigte Text für den Auslastungsmuster-Knoten gibt das beim Erstellen des Auslastungstests ausgewählte Auslastungsprofil wieder. Hierbei handelt es sich entweder um ein **Constant Load Profile** (Profil für konstante Auslastung) oder ein **Step Load Profile** (Schrittweises Auslastungsprofil).
 
-3.  Drücken Sie **F4**, um das Eigenschaftenfenster anzuzeigen.
+3.  Drücken Sie **F4**, um das **Eigenschaftenfenster** anzuzeigen.
 
-     Das **Auslastungsmuster** und die Kategorien **Parameter** werden im Eigenschaftenfenster angezeigt.
+     Das **Auslastungsmuster** und die Kategorien **Parameter** werden im **Eigenschaftenfenster** angezeigt.
 
 4.  (Optional) Ändern Sie in der Kategorie **Auslastungsmuster** die Eigenschaft **Muster**.
 
-     Sie können der Eigenschaft **Muster** die Werte **Schritt**, **Konstante** oder **Zielbasiert** zuordnen. Weitere Informationen über Auslastungsmustertypen finden Sie unter [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario (Angeben der Anzahl virtueller Benutzer mit Auslastungsmustern in einem Auslastungstestszenario)](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+     Sie können der Eigenschaft **Muster** die Werte **Schritt**, **Konstante** oder **Zielbasiert** zuordnen. Weitere Informationen über Auslastungsmustertypen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 5.  (Optional) Ändern Sie die Werte in der Kategorie **Parameter**.
 
@@ -155,6 +155,6 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Gewusst wie: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

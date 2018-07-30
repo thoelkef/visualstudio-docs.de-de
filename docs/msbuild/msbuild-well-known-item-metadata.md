@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd5bad9a37b497a90ea83869c795781a96d1ca26
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d1ec2d2ade7162f08db954d8a7bebe059a21878
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572607"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154559"
 ---
-# <a name="msbuild-well-known-item-metadata"></a>MSBuild bekannte Elementmetadaten
-In der folgenden Tabelle werden die jedem Element bei der Erstellung zugewiesenen Metadaten beschrieben. In jedem Beispiel wurde die folgende Elementdeklaration verwendet, um die Datei `C:\MyProject\Source\Program.cs` in das Projekt aufzunehmen.  
+# <a name="msbuild-well-known-item-metadata"></a>Bekannte MSBuild-Elementmetadaten
+In der folgenden Tabelle werden die jedem Element bei der Erstellung zugewiesenen Metadaten beschrieben. In jedem Beispiel wurde die folgende Elementdeklaration verwendet, um die Datei *C:\MyProject\Source\Program.cs* in das Projekt aufzunehmen.  
   
 ```xml  
 <ItemGroup>  
@@ -34,16 +34,16 @@ In der folgenden Tabelle werden die jedem Element bei der Erstellung zugewiesene
 </ItemGroup>  
 ```  
   
-|Elementmetadaten|description|  
+|Elementmetadaten|Beschreibung |  
 |-------------------|-----------------|  
-|%(FullPath)|Enthält den vollständigen Pfad des Elements. Zum Beispiel:<br /><br /> `C:\MyProject\Source\Program.cs`|  
-|%(RootDir)|Enthält das Stammverzeichnis des Elements. Zum Beispiel:<br /><br /> `C:\`|  
-|%(Filename)|Enthält den Dateinamen des Elements ohne Erweiterung. Zum Beispiel:<br /><br /> `Program`|  
-|%(Erweiterung)|Enthält die Dateinamenerweiterung des Elements. Zum Beispiel:<br /><br /> `.cs`|  
-|%(RelativeDir)|Enthält den im `Include`-Attribut angegebenen Pfad, bis zum abschließenden umgekehrten Schrägstrich (\\). Zum Beispiel:<br /><br /> `Source\`|  
-|%(Directory)|Enthält das Verzeichnis des Elements ohne das Stammverzeichnis. Zum Beispiel:<br /><br /> `MyProject\Source\`|  
-|%(RecursiveDir)|Wenn das `Include`-Attribut das Platzhalterzeichen \*\* enthält, geben diese Metadaten den Teil des Pfads an, der das Platzhalterzeichen ersetzt. Weitere Informationen zu Platzhaltern finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Wenn der Ordner *C:\MySolution\MyProject\Source\\* die Datei „Program.cs“ enthält, und wenn die Projektdatei dieses Element enthält:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> ist der Wert von `%(MyItem.RecursiveDir)` gleich *\MyProject\Source\\*.|  
-|%(Identity)|Das im `Include`-Attribut angegebene Element. Zum Beispiel:<br /><br /> `Source\Program.cs`|  
+|%(FullPath)|Enthält den vollständigen Pfad des Elements. Zum Beispiel:<br /><br /> *C:\MyProject\Source\Program.cs*|  
+|%(RootDir)|Enthält das Stammverzeichnis des Elements. Zum Beispiel:<br /><br /> *C:\\*|  
+|%(Filename)|Enthält den Dateinamen des Elements ohne Erweiterung. Zum Beispiel:<br /><br /> *Program*|  
+|%(Erweiterung)|Enthält die Dateinamenerweiterung des Elements. Zum Beispiel:<br /><br /> *.cs*|  
+|%(RelativeDir)|Enthält den im `Include`-Attribut angegebenen Pfad, bis zum abschließenden umgekehrten Schrägstrich (\\). Zum Beispiel:<br /><br /> *Source\\*|  
+|%(Directory)|Enthält das Verzeichnis des Elements ohne das Stammverzeichnis. Zum Beispiel:<br /><br /> *MyProject\\Source\\*|  
+|%(RecursiveDir)|Wenn das `Include`-Attribut das Platzhalterzeichen \*\* enthält, geben diese Metadaten den Teil des Pfads an, der das Platzhalterzeichen ersetzt. Weitere Informationen zu Platzhaltern finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Wenn der Ordner *C:\MySolution\MyProject\Source\\* die Datei *Program.cs* enthält, und wenn die Projektdatei dieses Element enthält:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> ist der Wert von `%(MyItem.RecursiveDir)` gleich *\MyProject\Source\\*.|  
+|%(Identity)|Das im `Include`-Attribut angegebene Element. Zum Beispiel:<br /><br /> *Source\Program.cs*|  
 |%(ModifiedTime)|Enthält den Zeitstempel vom Zeitpunkt der letzten Änderung des Elements. Zum Beispiel:<br /><br /> `2004-07-01 00:21:31.5073316`|  
 |%(CreatedTime)|Enthält den Zeitstempel vom Zeitpunkt der Erstellung des Elements. Zum Beispiel:<br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|Enthält den Zeitstempel vom Zeitpunkt des letzten Zugriffs auf das Element.<br /><br /> `2004-08-14 16:52:36.3168743`|  

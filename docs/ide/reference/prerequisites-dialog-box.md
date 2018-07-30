@@ -1,6 +1,6 @@
 ---
 title: Dialogfeld "Erforderliche Komponenten"
-ms.date: 01/18/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,37 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37400624d81c533e6ecddb9d6278b5b372410525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950984"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176927"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"
 
-In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installiert werden, wie die Installation ausgeführt wird, und in welcher Reihenfolge die Pakete installiert werden.
+Im Dialogfeld **Erforderliche Komponenten** wird angegeben, welche erforderlichen Komponenten installiert werden, wie die Installation ausgeführt wird, und in welcher Reihenfolge die Pakete installiert werden.
 
-Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** . Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**. Klicken Sie bei Setupprojekten im Menü **Projekt** auf **Eigenschaften**. Wenn das Dialogfeld **Eigenschaftenseiten** angezeigt wird, klicken Sie auf **Erforderliche Komponenten**.
+![Dialogfeld „Erforderliche Komponenten“ in Visual Studio](media/prerequisites-dialog-box.png)
+
+Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend auf **Projekt** > **Eigenschaften**. Wenn der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** und dann auf **Erforderliche Komponenten**. Klicken Sie bei Setupprojekten im Menü **Projekt** auf **Eigenschaften**. Wenn das Dialogfeld **Eigenschaftenseiten** angezeigt wird, klicken Sie auf **Erforderliche Komponenten**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-|Element|description|
+|Element|Beschreibung |
 |-------------|-----------------|
-|**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm (Setup.exe) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird keine Setup.exe erstellt.|
-|**Auswählen der für die Installation erforderlichen Komponenten**|Gibt an, ob Komponenten wie z. B. [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], Crystal Reports, usw. installiert werden.<br /><br /> Indem Sie im Kontrollkästchen neben **SQL Server 2005 Express Edition SP2** ein Häkchen setzen, legen Sie z.B. fest, dass vom Setupprogramm überprüft wird, ob diese Komponente auf dem Zielcomputer installiert ist. Außerdem installiert es die Komponente, wenn diese noch nicht vorhanden ist.<br /><br /> Ausführliche Informationen über die einzelnen erforderlichen Pakete finden Sie in der Tabelle mit Informationen zu den erforderlichen Komponenten weiter unten in diesem Thema.|
-|**Microsoft Update auf weitere verteilbare Komponenten überprüfen**|Mithilfe dieses Links gelangen Sie auf die Website [Bootstrapperpakete zur Bereitstellung von Komponenten](http://go.microsoft.com/fwlink/?LinkId=208835), um nach Updates zu suchen.|
+|**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm (*Setup.exe*) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird *Setup.exe* nicht erstellt.|
+|**Auswählen der für die Installation erforderlichen Komponenten**|Gibt an, ob Komponenten wie .NET Framework- und C++-Laufzeitbibliotheken installiert werden sollen.<br /><br />Indem Sie das Kontrollkästchen neben **SQL Server 2012 Express**  aktivieren, legen Sie z.B. fest, dass vom Setupprogramm überprüft werden muss, ob diese Komponente auf dem Zielcomputer installiert ist. Außerdem installiert es die Komponente, wenn diese noch nicht vorhanden ist.<br /><br />Ausführliche Informationen über die einzelnen erforderlichen Pakete finden Sie unter [Informationen über erforderliche Komponenten](#prerequisites-information).|
 |**Erforderliche Komponenten von der Website des Komponentenherstellers herunterladen**|Dies gibt an, dass die erforderlichen Komponenten von der Website des Herstellers installiert werden müssen. Dies ist die Standardoption.|
 |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom gleichen Speicherort wie die Anwendung installiert werden müssen. Dadurch werden alle erforderlichen Pakete an den Speicherort für die Veröffentlichung kopiert. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|
-|**Erforderliche Komponenten von folgendem Speicherort herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom ausgewählten Speicherort aus installiert werden müssen. Mithilfe der Schaltfläche **Durchsuche**n können Sie einen Speicherort auswählen.|
+|**Erforderliche Komponenten von folgendem Speicherort herunterladen**|Dadurch wird angegeben, dass die erforderlichen Komponenten vom ausgewählten Speicherort aus installiert werden müssen. Mithilfe der Schaltfläche **Durchsuche**n können Sie einen Speicherort auswählen.|
 
 ## <a name="prerequisites-information"></a>Informationen über erforderliche Komponenten
 
 Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Komponenten können von den in der folgenden Liste genannten abweichen. Die im Dialogfeld **Erforderliche Komponenten** aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.
 
-|Element|description|
+|Element|Beschreibung |
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthalten. .NET Framework 3.5 ist für alle Visual Basic- und C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist, sowie für alle Visual Basic- und C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Übersicht: Ausrichtung auf mehrere Zielframeworkversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Dieses Element ist standardmäßig ausgewählt.|
+|**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in Visual Studio enthalten. .NET Framework 3.5 ist für alle Visual Basic- und C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist, sowie für alle Visual Basic- und C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Visual Studio Multi-Targeting Overview (Übersicht über das Anzielen mehrerer Frameworkversionen in Visual Studio)](../../ide/visual-studio-multi-targeting-overview.md) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Mit dem Paket wird .NET Framework 4 sowohl für die x86- als auch die x64-Plattform installiert.|
 |**Microsoft-System-CLR-Typen für SQL Server 2014 (x64 und x86)**|Mit diesem Paket werden Microsoft-System-CLR-Typen für SQL Server 2014 für x64 oder x86 installiert.|
 |**SQL Server 2008 R2 Express**|Mit diesem Paket wird Microsoft SQL Server 2008 R2 Express, eine kostenlose Edition von Microsoft SQL Server 2008 R2 installiert. Dies ist eine ideale Datenbank für kleine Web-, Server- oder Desktopanwendungen. Es kann kostenlos für Entwicklung und Produktion verwendet werden.|

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978176"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176212"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>How to: Create a Recorder Plug-In
 
@@ -77,7 +77,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
      Die Ereignisargumente liefern zwei Objekte, mit denen Sie arbeiten können: das aufgezeichnete Ergebnis und den aufgezeichneten Webleistungstest. So können Sie das Ergebnis durchlaufen und nach bestimmten Werten suchen und anschließend im Webleistungstest zur gleichen Anforderung springen, um Änderungen vorzunehmen. Sie können auch nur den Webleistungstest ändern, wenn Sie einen Kontextparameter hinzufügen oder Teile der URL parametrisieren möchten.
 
     > [!NOTE]
-    > Wenn Sie den Webleistungstest ändern, müssen Sie auch die <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*>-Eigenschaft auf "true" festlegen: `e.RecordedWebTestModified = true;`
+    > Wenn Sie den Webleistungstest ändern, müssen Sie auch die <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*>-Eigenschaft auf „TRUE“ festlegen: `e.RecordedWebTestModified = true;`
 
 11. Fügen Sie entsprechend den Aktionen, die das Aufzeichnungs-Plug-In nach der Webaufzeichnung ausführen soll, weiteren Code hinzu. Sie können z. B. Code hinzufügen, um die benutzerdefinierte Korrelation wie im folgenden Beispiel dargestellt zu behandeln. Ein Aufzeichnungs-Plug-In kann auch für Aufgaben wie das Konvertieren von Kommentaren in Transaktionen oder Hinzufügen von Validierungsregeln zum Webleistungstest erstellt werden.
 
@@ -107,7 +107,7 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, müssen Sie die resultie
      Nachdem der Webleistungstest die Aufzeichnung abgeschlossen hat, wird das neue Aufzeichnungs-Plug-In ausgeführt.
 
     > [!WARNING]
-    > Möglicherweise erhalten Sie einen Fehler wie den folgenden, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
+    > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
     > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
     >
@@ -144,7 +144,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
 
 ## <a name="add-an-extraction-rule"></a>Hinzufügen einer Extraktionsregel
 
-Nachdem eine Antwort gefunden wurde, müssen Sie eine Extraktionsregel hinzufügen. In diesem Teil des Codebeispiels wird die Extraktionsregel mithilfe der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>-Klasse erstellt, und anschließend wird im Webleistungstest nach der Anforderung gesucht, der die Extraktionsregel hinzugefügt werden soll. Jedem Ergebnisobjekt wird eine neue Eigenschaft mit dem Namen "DeclarativeWebTestItemId" hinzugefügt. Diese Eigenschaft wird im Code verwendet, um die richtige Anforderung aus dem Webleistungstest abzurufen.
+Nachdem eine Antwort gefunden wurde, müssen Sie eine Extraktionsregel hinzufügen. In diesem Teil des Codebeispiels wird die Extraktionsregel mithilfe der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>-Klasse erstellt, und anschließend wird im Webleistungstest nach der Anforderung gesucht, der die Extraktionsregel hinzugefügt werden soll. Jedem Ergebnisobjekt wird eine neue Eigenschaft mit dem Namen DeclarativeWebTestItemId hinzugefügt. Diese Eigenschaft wird im Code verwendet, um die richtige Anforderung aus dem Webleistungstest abzurufen.
 
 ```csharp
 ExtractionRuleReference ruleReference = new ExtractionRuleReference();
