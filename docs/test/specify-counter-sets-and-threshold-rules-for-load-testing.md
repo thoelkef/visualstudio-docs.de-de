@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751341"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180639"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
@@ -58,7 +58,7 @@ Leistungsdaten für einzelne HTTP-Anforderungen werden von dem Computer gemeldet
 
 Um das Erfassen von Leistungsdaten für einen Webserver zu erleichtern, stellt Visual Studio Enterprise für verschiedene Technologien vordefinierte, benannte Indikatorensätze zur Verwendung in Auslastungstests bereit. Diese Sätze sind nützlich, wenn Sie einen Server analysieren, der unter IIS, ASP.NET oder SQL Server ausgeführt wird. Nicht im Standardindikatorensatz bereitgestellte Indikatoren können im Auslastungstest-Editor hinzugefügt werden. Es ist wichtig, dass Sie dem Auslastungstest die zu testenden Computer bzw. Server hinzufügen, um sicherzustellen, dass die Ressourcenauslastung für diese Computer überwacht werden kann. Weitere Informationen finden Sie unter [How to: Manage Counter Sets (Vorgehensweise: Verwalten von Indikatorensätzen)](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
 
-Die Ergebnisanalyse von Auslastungstestläufen erfordert häufig domänenspezifische Kenntnisse eines bestimmten Gebiets, damit bekannt ist, welche Daten erfasst und wo Schwellenwertregeln eingerichtet werden müssen, und wie ermittelt werden kann, wann ein Messwert ein bestimmtes Problem in einer Anwendung widerspiegelt. Weitere Informationen finden Sie unter [About Threshold Rules (Schwellenwertregeln)](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules).
+Die Ergebnisanalyse von Auslastungstestläufen erfordert häufig domänenspezifische Kenntnisse eines bestimmten Gebiets, damit bekannt ist, welche Daten erfasst und wo Schwellenwertregeln eingerichtet werden müssen, und wie ermittelt werden kann, wann ein Messwert ein bestimmtes Problem in einer Anwendung widerspiegelt. Weitere Informationen finden Sie unter [About Threshold Rules (Schwellenwertregeln)](#about-threshold-rules).
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Überlegungen zum Leistungsindikator-Samplingintervall
 

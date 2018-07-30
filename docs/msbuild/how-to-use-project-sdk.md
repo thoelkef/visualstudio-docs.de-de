@@ -11,14 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569887"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151014"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Gewusst wie: Verwenden von MSBuild-Projekts SDKs
+# <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
+
 Mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 wurde das Konzept des „Projekt-SDK“ eingeführt, was die Verwendung von Software Development Kits vereinfacht, die das Importieren von Eigenschaften und Zielen erfordern.
 
 ```xml
@@ -27,8 +28,8 @@ Mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.
         <TargetFramework>net46</TargetFramework>
     </PropertyGroup>
 </Project>
-```  
-  
+```
+
 Während der Auswertung des Projekts fügt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] implizite Importe im oberen und unteren Bereich Ihres Projekts hinzu:
 
 ```xml
@@ -42,30 +43,39 @@ Während der Auswertung des Projekts fügt [!INCLUDE[vstecmsbuild](../extensibil
 
     <!-- Implicit bottom import -->
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-</Project>  
-```  
+</Project>
+```
 
-## <a name="referencing-a-project-sdk"></a>Verweisen auf ein Projekt-SDK
- Es gibt drei Möglichkeiten, auf ein Projekt-SDK zu verweisen
+## <a name="reference-a-project-sdk"></a>Verweisen auf ein Projekt SDK
+
+ Es gibt drei Möglichkeiten, auf ein Projekt SDK zu verweisen:
 
 1. Verwenden Sie das `Sdk`-Attribut des `<Project/>`-Elements:
+
     ```xml
     <Project Sdk="My.Custom.Sdk">
         ...
     </Project>
     ```
+
     Wie oben erläutert, wird im oberen bzw. unteren Bereich des Projekts ein impliziter Import hinzugefügt.  Das Format des `Sdk`-Attributs ist `Name[/Version]`, wobei die Version optional ist.  Sie können z.B. `My.Custom.Sdk/1.2.3` festlegen.
 
+    > [!NOTE]
+    > Dies ist derzeit die einzige unterstützte Methode, in Visual Studio für Mac auf ein Projekt-SDK zu verweisen.
+
 2. Verwenden Sie das `<Sdk/>`-Element der obersten Ebene:
+
     ```xml
     <Project>
         <Sdk Name="My.Custom.Sdk" Version="1.2.3" />
         ...
     </Project>
    ```
+
    Wie oben erläutert, wird im oberen bzw. unteren Bereich des Projekts ein impliziter Import hinzugefügt.  Das `Version`-Attribut ist nicht erforderlich.
 
 3. Verwenden Sie das `<Import/>`-Element an einer beliebigen Stelle in Ihrem Projekt:
+
     ```xml
     <Project>
         <PropertyGroup>
@@ -76,11 +86,13 @@ Während der Auswertung des Projekts fügt [!INCLUDE[vstecmsbuild](../extensibil
         <Import Project="Sdk.targets" Sdk="My.Custom.Sdk" />
     </Project>
    ```
+
    Explizites Einbeziehen der Importe in Ihr Projekt erlaubt Ihnen die vollständige Kontrolle über die Reihenfolge.
 
    Bei Verwendung des `<Import/>`-Elements können Sie auch ein optionales `Version`-Attribut angeben.  Sie können z.B. `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />` festlegen.
 
-## <a name="how-project-sdks-are-resolved"></a>Wie Projekt-SDKs gelöst werden
+## <a name="how-project-sdks-are-resolved"></a>Lösen von Projekt SDKs
+
 Beim Auswerten des Imports löst [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] den Pfad zum Projekt-SDK dynamisch basierend auf dem Namen und der Version auf, die Sie angegeben haben.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet auch eine Liste der registrierten SDK-Resolver, die Plug-Ins sind, die Projekt-SDKs auf Ihrem Computer suchen.  Zu diesen Plug-Ins zählen:
 
 1. Ein NuGet-basierter Resolver, der Ihre konfigurierten Paketfeeds auf NuGet-Pakete abfragt, die der ID und Version des von Ihnen angegebenen SDK entsprechen.<br/>
@@ -99,8 +111,12 @@ Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in Ihrer [
     }
 }
 ```
-Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden.  Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus.  Sie sollten **keine** Version in Ihren Projekten angeben, wenn eine Version in Ihrer `global.json` angegeben ist.  
 
-## <a name="see-also"></a>Siehe auch  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [Anpassen Ihres Builds](../msbuild/customize-your-build.md)   
+Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden.  Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus.  Sie sollten **keine** Version in Ihren Projekten angeben, wenn in Ihrer *global.json*-Datei eine Version angegeben ist.  
+
+## <a name="see-also"></a>Siehe auch
+
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
+ [Anpassen des Builds](../msbuild/customize-your-build.md)   
+ [Pakete, Metadaten und Frameworks](/dotnet/core/packages)   
+ [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj)

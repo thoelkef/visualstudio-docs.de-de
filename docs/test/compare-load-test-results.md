@@ -11,24 +11,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66893198028fcd23e3d42e1e595764e723ed82da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966366"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176329"
 ---
-# <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
 
 Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren. Zwei Typen von Auslastungstestberichten sind verfügbar:
 
-- Vergleich ausführen&mdash;: Bei diesem Bericht handelt es sich eigentlich um zwei Berichte, in denen anhand von Tabellen und Balkendiagrammen Vergleichsdaten nebeneinander angezeigt werden.
+- Vergleich ausführen&mdash;: Bei diesem Bericht handelt es sich eigentlich um zwei Berichte, mit denen anhand von Tabellen und Balkendiagrammen Vergleichsdaten nebeneinander angezeigt werden.
 
 - Trend&mdash;: Eine Trendanalyse kann für zwei oder mehr Berichte generiert werden. Die Ergebnisse werden in Form von Liniendiagrammen dargestellt.
 
 Beide Berichte können verwendet werden, um Leistungsdaten für Projektbeteiligte freizugeben, und liefern Informationen dazu, ob die Gesamtleistung und Integrität des Systems besser oder schlechter wird.
 
-Berichtsdefinitionen werden in der Auslastungstestdatenbank gespeichert. Wenn ein Bericht gespeichert wird, wird die Definition für den Bericht in der Datenbank gespeichert und kann später wieder verwendet werden.
+Berichtsdefinitionen werden in der Auslastungstestdatenbank gespeichert. Wenn ein Bericht gespeichert wird, wird die Definition für den Bericht in der Datenbank gespeichert und kann später wiederverwendet werden.
 
 Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit diese zum Anzeigen des Berichts keine Verbindung mit der Datenbank herstellen müssen.
 
@@ -44,4 +44,4 @@ Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit die
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

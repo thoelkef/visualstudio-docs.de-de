@@ -14,29 +14,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448051"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177710"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
+
 Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ihrem Code als aktive Links behandelt. Wenn Sie diese Funktion verwenden, zeigen URLs das folgende Verhalten:
 
 -   Sie werden unterstrichen angezeigt.
 
 -   Sie zeigen eine **QuickInfo** an, wenn Sie mit der Maus darauf zeigen.
 
--   Sie versuchen, die angegebene Website zu öffnen, wenn Sie auf dem Link **STRG** drücken und mit der linken Maustaste klicken. Standardmäßig wird die Website im internen Webbrowser angezeigt.
+-   Versuchen Sie, die angegebene Website durch Drücken von **STRG**+**Klicken** auf den Link zu öffnen. Standardmäßig wird die Website im internen Webbrowser angezeigt.
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
-
 ## <a name="procedure"></a>Prozedur
 
-#### <a name="to-display-urls-as-links"></a>So zeigen Sie URLs als Links an
+### <a name="to-display-urls-as-links"></a>So zeigen Sie URLs als Links an
 
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.
 

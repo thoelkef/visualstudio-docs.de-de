@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c8efc27dd7e9dd6b201421aed17ded3dd31342cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d21c00dbb40c0262bdeae85f4957cd78d253f1a2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967138"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176039"
 ---
-# <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>Gewusst wie: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests
+# <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>Vorgehensweise: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests
 
-Nachdem ein Auslastungstest abgeschlossen wurde bzw. nachdem Sie ein Testergebnis geladen haben, können Sie mit dem Auslastungstest-Analyzer eine Beschreibung und einen Analysekommentar zum Auslastungstest hinzufügen. Die Beschreibung und der Analysekommentar werden permanent mit dem Auslastungstestergebnis gespeichert. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
+Nachdem ein Auslastungstest abgeschlossen wurde bzw. nachdem Sie ein Testergebnis geladen haben, können Sie mit dem **Auslastungstest-Analyzer** dem Auslastungstest eine Beschreibung und einen Analysekommentar hinzufügen. Die Beschreibung und der Analysekommentar werden permanent mit dem Auslastungstestergebnis gespeichert. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
-Die eingegebene Beschreibung wird auch in der Spalte **Beschreibung** für den Auslastungstest im Dialogfeld **Open and Manage Test Results** (Auslastungstestergebnisse öffnen und verwalten) im **Auslastungstest-Editor** angezeigt. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md). Darüber hinaus werden die Kommentare angezeigt, wenn Sie einen Excel-Bericht für die Auslastungstestergebnisse erstellen. Weitere Informationen finden Sie unter [Reporting Load Tests Results for Test Comparisons or Trend Analysis (Berichterstellung für Auslastungstestergebnisse für Testvergleiche oder die Trendanalyse)](../test/compare-load-test-results.md).
+Die eingegebene Beschreibung wird auch in der Spalte **Beschreibung** für den Auslastungstest im Dialogfeld **Open and Manage Test Results** (Auslastungstestergebnisse öffnen und verwalten) im **Auslastungstest-Editor** angezeigt. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md). Darüber hinaus werden die Kommentare angezeigt, wenn Sie einen Excel-Bericht für die Auslastungstestergebnisse erstellen. Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).
 
 ![Analysedialogfeld zum Hinzufügen von Auslastungstesthinweisen](../test/media/ltest_ananotes.png)
 

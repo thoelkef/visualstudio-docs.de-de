@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582595"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177521"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Anpassen der Dateischachtelung im Projektmappen-Explorer
 
@@ -116,7 +116,7 @@ Mit diesem Anbieter können Sie Dateischachtelungsregeln auf Basis ganzer Datein
 
 ![Regel für das fileToFile-Beispiel](media/filenesting_filetofile.png) ![Wirkung des fileToFile-Beispiels](media/filenesting_filetofile_effect.png)
 
-* *bower.json* wird aufgrund der **fileToFile**-Regel unter *.bowerrc* geschachtelt.
+* *.bowerrc* wird aufgrund der **fileToFile**-Regel unter *bower.json* geschachtelt.
 
 ### <a name="rule-order"></a>Regelreihenfolge
 

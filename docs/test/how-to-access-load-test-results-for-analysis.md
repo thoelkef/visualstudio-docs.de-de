@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966686"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175672"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>How to: Access Load Test Results for Analysis
+# <a name="how-to-access-load-test-results-for-analysis"></a>Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse
 
-Wenn Sie einen Auslastungstest im Auslastungstest-Editor ausführen, werden die Auslastungstestergebnisse automatisch geöffnet, und der laufende Test wird im Auslastungstest-Analyzer angezeigt. Wenn Sie einen Auslastungstest von der Befehlszeile ausführen, müssen Sie auf die Auslastungstestergebnisse manuell zugreifen.
+Wenn Sie einen Auslastungstest im Auslastungstest-Editor ausführen, werden die Auslastungstestergebnisse automatisch geöffnet, und der laufende Test wird im **Auslastungstest-Analyzer** angezeigt. Wenn Sie einen Auslastungstest von der Befehlszeile ausführen, müssen Sie auf die Auslastungstestergebnisse manuell zugreifen.
 
 Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Leistungsindikatorsamplings und Fehlerinformationen, die in regelmäßigen Abständen von den Testcomputern erfasst wurden. Im Verlauf eines Auslastungstestlaufs kann eine große Anzahl von Leistungsindikatorsamplings erfasst werden. Die Menge gesammelter Leistungsdaten hängt von der Länge des Testlaufs, dem Samplingintervall, der Anzahl von Testcomputern, der Anzahl erfasster Indikatoren, den konfigurierten Datensammlern und den Protokollierungsebenen ab. Bei einem großen Auslastungstest kann die gesammelte Menge von Leistungsdaten leicht mehrere Gigabytes betragen. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -48,10 +48,10 @@ Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Le
 
 5.  Wählen Sie in der Liste **Auslastungstestergebnisse** die zu analysierenden Auslastungstestergebnisse aus, und klicken Sie auf **Öffnen**.
 
-6.  Der Auslastungstest-Analyzer wird angezeigt. Das ausgewählte Auslastungstestergebnis wird in der Zusammenfassungsansicht angezeigt. Weitere Informationen finden Sie unter [Load Test Results Summary Overview (Zusammenfassung der Auslastungstestergebnisse – Übersicht)](../test/load-test-results-summary-overview.md).
+6.  Der **Auslastungstest-Analyzer** wird angezeigt. Das ausgewählte Auslastungstestergebnis wird in der Zusammenfassungsansicht angezeigt. Weitere Informationen finden Sie unter [Übersicht der Auslastungstestergebnisse](../test/load-test-results-summary-overview.md).
 
-     Im Dialogfeld "Ergebnisse öffnen und verwalten" können Sie andere Aspekte von Auslastungstests verwalten, etwa das Importieren, Exportieren und Entfernen von Auslastungstestergebnissen. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Im Dialogfeld **Ergebnisse öffnen und verwalten** können Sie andere Aspekte von Auslastungstests verwalten, etwa das Importieren, Exportieren und Entfernen von Auslastungstestergebnissen. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

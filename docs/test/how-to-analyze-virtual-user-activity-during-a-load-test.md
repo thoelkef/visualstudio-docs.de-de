@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751233"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203789"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>How to: Analyze What Virtual Users Are Doing During a Load Test Using the Virtual User Activity Chart
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer
 
-Zeigen Sie die Aktivität des virtuellen Benutzers an, der mit Ihrem Auslastungstest verknüpft ist, indem Sie das Diagramm für Aktivitäten virtueller Benutzer verwenden. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das Diagramm für Aktivitäten virtueller Benutzer gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. Sie können Benutzeraktivitäts- und Auslastungsmuster erkennen, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen bei anderen Aktivitäten virtueller Benutzer anzeigen. Das Diagramm für die Aktivitäten virtueller Benutzer ist erst nach dem Ausführen des Auslastungstests verfügbar.
+Zeigen Sie die Aktivität des virtuellen Benutzers an, der mit Ihrem Auslastungstest verknüpft ist, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das **Diagramm für Aktivitäten virtueller Benutzer** gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. Sie können Benutzeraktivitäts- und Auslastungsmuster erkennen, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen bei anderen Aktivitäten virtueller Benutzer anzeigen. Das **Diagramm für die Aktivitäten virtueller Benutzer** ist erst nach dem Ausführen des Auslastungstests verfügbar.
 
-Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivitäten virtueller Benutzer, das Überprüfen einer Aktivität eines bestimmten Benutzers und das Verwenden der Filterung.
+Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Aktivitäten virtueller Benutzer**, das Überprüfen einer Aktivität eines bestimmten Benutzers und das Verwenden der Filterung.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>So zeigen Sie das Diagramm für Aktivitäten virtueller Benutzer in den Auslastungstestergebnissen an
 
@@ -33,13 +33,13 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
 
      Öffnen Sie die Diagrammansicht, indem Sie auf der Symbolleiste auf die Schaltfläche **Diagramme** klicken. Klicken Sie mit der rechten Maustaste auf ein Diagramm, und wählen Sie dann **Zu Benutzerdetail wechseln** aus.
 
-     Wenn Sie diese Option verwenden, wird automatisch der Teil des Tests vergrößert, auf den mit der rechten Maustaste geklickt wurde. Wenn sich der Zeiger z.B. ungefähr an der 30-Sekunden-Marke befindet, wird die Detailansicht in etwa an der 30-Sekunden-Marke im Tool **Zoom zum Zeitraum** am unteren Rand des Diagramms für Aktivitäten virtueller Benutzer angezeigt.
+     Wenn Sie diese Option verwenden, wird automatisch der Teil des **Diagramms für Aktivitäten virtueller Benutzer** vergrößert, auf den mit der rechten Maustaste geklickt wurde. Wenn sich der Zeiger z.B. ungefähr an der 30-Sekunden-Marke befindet, wird die Detailansicht in etwa an der 30-Sekunden-Marke im Tool **Zoom zum Zeitraum** am unteren Rand des **Diagramms für Aktivitäten virtueller Benutzer** angezeigt.
 
-     Anschließend können Sie die Option zur Überprüfung bestimmter Benutzeraktivitätsdetails im Diagramm für Aktivitäten virtueller Benutzer verwenden.
+     Anschließend können Sie die Option zur Überprüfung bestimmter Benutzeraktivitätsdetails im **Diagramm für Aktivitäten virtueller Benutzer** verwenden.
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>So überprüfen Sie eine bestimmte Benutzeraktivität im Diagramm für Aktivitäten virtueller Benutzer
 
-1.  Verwenden Sie das Tool "Zoom zum Zeitraum" unten im Diagramm für die Aktivitäten virtueller Benutzer, um einen Bereich im Diagramm auszuwählen, in dem Sie die Details zu einem bestimmten Benutzer überprüfen möchten.
+1.  Verwenden Sie das Tool „Zoom zum Zeitraum“ unten im **Diagramm für die Aktivitäten virtueller Benutzer**, um einen Bereich im Diagramm auszuwählen, in dem Sie die Details zu einem bestimmten Benutzer überprüfen möchten.
 
 2.  Zeigen Sie mit der Maus auf ein Detail im Diagramm. Die folgenden Informationen werden in der QuickInfo angezeigt:
 
@@ -66,13 +66,13 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
     -   **Testprotokoll** (Link zum Testprotokoll)
 
         > [!NOTE]
-        > Wenn Sie auf den Link für das Testprotokoll klicken, wird zur Unterstützung des Debuggings der Anwendung das Webtestergebnis oder das Komponententestergebnis geöffnet, das dem Protokoll zugeordnet ist.
+        > Wenn Sie auf den Link für das **Testprotokoll** klicken, wird zur Unterstützung des Debuggings der Anwendung das Webtestergebnis oder das Komponententestergebnis geöffnet, das dem Protokoll zugeordnet ist.
 
-     Anschließend können Sie die Filter- und Hervorhebungsfunktionen für das Diagramm für Aktivitäten virtueller Benutzer verwenden.
+     Anschließend können Sie die Filter- und Hervorhebungsfunktionen für das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>So verwenden Sie Filteroptionen im Diagramm für Aktivitäten virtueller Benutzer
 
-1.  Wählen Sie aus der Dropdownliste in der Detaillegende entweder **Test**, **Seite** oder **Transaktion** aus.
+1.  Wählen Sie aus der Dropdownliste in der **Detaillegende** entweder **Test**, **Seite** oder **Transaktion** aus.
 
      **Bereich „Detaillegende“**
 
@@ -80,9 +80,9 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
 
 2.  Aktivieren oder deaktivieren Sie die Kontrollkästchen für die Fehler, Protokolle, Tests, Suchvorgänge und ASPX-Seiten, die dem Auslastungstest zugeordnet sind.
 
-     Das Diagramm für Aktivitäten virtueller Benutzer wird entsprechend aktualisiert.
+     Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
 
-     Das Diagramm für Aktivitäten virtueller Benutzer bietet die Möglichkeit, Tests, Seiten und Transaktionen auf Grundlage verschiedener Kriterien herauszufiltern. Sie können bestimmte Tests, alle erfolgreich verlaufenen Tests oder fehlgeschlagene Tests mit bestimmten Fehlern aus der Ansicht entfernen. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
+     Das **Diagramm für Aktivitäten virtueller Benutzer** bietet die Möglichkeit, Tests, Seiten und Transaktionen auf Grundlage verschiedener Kriterien herauszufiltern. Sie können bestimmte Tests, alle erfolgreich verlaufenen Tests oder fehlgeschlagene Tests mit bestimmten Fehlern aus der Ansicht entfernen. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
 
      Sie können z.B. die Option **(Fehler hervorheben)** auswählen, durch die alle Fehler im Diagramm rot angezeigt werden. Sie können auch die Option **(Ergebnisse mit Protokollen hervorheben)** auswählen, um alle Testergebnisse mit Protokollen im Diagramm grün anzuzeigen.
 
@@ -90,7 +90,7 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
 
      ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
 
-3.  Aktivieren bzw. deaktivieren Sie in den Filterergebnissen die Kontrollkästchen für die folgenden Filteroptionen:
+3.  Aktivieren bzw. deaktivieren Sie in den **Filterergebnissen** die Kontrollkästchen für die folgenden Filteroptionen:
 
     -   **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
 
@@ -99,11 +99,11 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des Diagramms für Aktivi
     -   **Ergebnisse mit Fehlern anzeigen** Zeigt Ergebnisse mit Fehlern an, die beim Debuggen hilfreich sein können.
 
         > [!NOTE]
-        > Die unter dem Knoten **Ergebnisse mit Fehlern anzeigen** aufgeführte Liste von Fehlertypen kann genauer untersucht werden, indem Sie auf der Symbolleiste des Webleistungstest-Ergebnisviewers auf die Schaltfläche „Tabellen“ klicken. Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+        > Die unter dem Knoten **Ergebnisse mit Fehlern anzeigen** aufgeführte Liste von Fehlertypen kann genauer untersucht werden, indem Sie auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** auf die Schaltfläche **Tabellen** klicken. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-     Das Diagramm für Aktivitäten virtueller Benutzer wird entsprechend aktualisiert.
+     Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967956"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176761"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario
 
@@ -28,9 +28,9 @@ Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario r
 
  Der Browsermix funktioniert wie andere Mischoptionen. Einem virtuellen Benutzer wird auf Grundlage des Browsermix zufällig ein Webbrowsertyp zugeordnet. Die Tests dieses Benutzers werden auf einem bestimmten Webbrowser ausgeführt, basierend auf der Wahrscheinlichkeit, die in der Mischung angegeben wurde.
 
- Sie können der Browsermischung jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung der Browsermischung geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
+ Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung des Browsermixes geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>Hinzufügen von neuen Browsern zu einem Szenario
+## <a name="add-new-browsers-to-a-scenario"></a>Hinzufügen neuer Browser zu einem Szenario
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>So fügen Sie einem Szenario neue Browser hinzu
 
@@ -47,7 +47,7 @@ Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario r
 
 4.  Wenn Sie keine weiteren Browser hinzufügen möchten, klicken Sie auf **OK**.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> Entfernen von Browsern aus einem Szenario
+##  <a name="remove-browsers-from-a-scenario"></a>Entfernen von Browsern aus einem Szenario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>So entfernen Sie Browser aus einem Szenario
 
@@ -63,7 +63,7 @@ Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario r
 
 5.  Wenn Sie keine weiteren Browser entfernen möchten, klicken Sie auf **OK**.
 
-## <a name="about-the-mix-control"></a>Über die Mischungssteuerung
+## <a name="about-the-mix-control"></a>Informationen zur Mischungssteuerung
 
  Mithilfe der Mischungssteuerung können Sie die Lastprozentsätze anpassen, die in einem Auslastungstestszenario auf die Tests, Browsertypen bzw. Netzwerktypen verteilt werden. Die Prozentsätze werden mit Schiebereglern angepasst. Die Mischung für die Browsertypen gibt die Wahrscheinlichkeit an, mit der ein virtueller Benutzer einen bestimmten Browsertyp in einem Auslastungstestszenario ausführt.
 
@@ -83,4 +83,4 @@ Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario r
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)

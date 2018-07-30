@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924472"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233086"
 ---
 # <a name="verify-your-xamarin-environment"></a>Überprüfen Ihrer Xamarin-Umgebung
 
@@ -30,9 +30,9 @@ Nachdem die Installationsprogramme abgeschlossen wurden (siehe dazu [Setup and i
 
 ## <a name="all-platforms"></a>Alle Plattformen
 
-Wählen Sie in Visual Studio zunächst **Extras > Erweiterungen und Updates**, und prüfen Sie, ob eine der Xamarin-Komponenten Updates erfordert.
+Wählen Sie in Visual Studio zunächst **Extras** > **Erweiterungen und Updates**, und prüfen Sie, ob eine der Xamarin-Komponenten Updates erfordert.
 
-Dann erstellen Sie in Visual Studio eine neue Xamarin.Forms-Projektmappe, indem Sie **Datei > Neues Projekt** auswählen. Erweitern Sie im Dialogfeld **Visual C# > Plattformübergreifend**, wählen Sie die Option **Mobile App (Xamarin.Forms)** aus, und klicken Sie auf „OK“. Wählen Sie im dann angezeigten Dialogfeld **Leere App** aus. Wählen Sie unter **Codefreigabestrategie** die Option **.NET Standard** aus. Klicken Sie auf OK.
+Dann erstellen Sie in Visual Studio eine neue Xamarin.Forms-Projektmappe, indem Sie **Datei** > **Neues Projekt** auswählen. Erweitern Sie im Dialogfeld **Visual C#** > **Plattformübergreifend**, wählen Sie die Option **Mobile App (Xamarin.Forms)** aus, und klicken Sie auf **OK**. Wählen Sie im dann angezeigten Dialogfeld **Leere App** aus. Wählen Sie unter **Codefreigabestrategie** die Option **.NET Standard** aus. Klicken Sie auf **OK**.
 
 Dadurch wird eine Projektmappe mit vier Projekten erstellt: ein freigegebenes Projekt für die .NET Standard 2.0-Bibliothek sowie Anwendungsprojekte für Android, iOS und die universelle Windows-Plattform (UWP):
 
@@ -54,9 +54,9 @@ Dadurch wird eine Projektmappe mit vier Projekten erstellt: ein freigegebenes Pr
 
   ![Auswählen des Visual Studio-Emulators für Android als Debugziel](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Weitere Informationen finden Sie unter [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Einführen der Emulatoren von Visual Studio für Android) (Visual Studio ALM-Blog). Wenn bei der Inbetriebnahme des Emulators Probleme auftreten, finden Sie Hilfe unter [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Sie können auch neue Geräteprofile für den Emulator erstellen, indem Sie **Extras > Android > Android-Emulator-Manager** auswählen.
+  Weitere Informationen finden Sie unter [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Einführen der Emulatoren von Visual Studio für Android) (Visual Studio ALM-Blog). Wenn bei der Inbetriebnahme des Emulators Probleme auftreten, finden Sie Hilfe unter [Problembehandlung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Sie können auch neue Geräteprofile für den Emulator erstellen, indem Sie **Extras > Android > Android-Emulator-Manager** auswählen.
 
-3. Drücken Sie F5, um das Programm zu kompilieren und auf dem Android-Gerät oder -Emulator bereitzustellen.
+3. Drücken Sie **F5**, um das Programm zu kompilieren und auf dem Android-Gerät oder -Emulator bereitzustellen.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Dadurch wird eine Projektmappe mit vier Projekten erstellt: ein freigegebenes Pr
 
 2.  Wählen Sie im Dropdownmenü **Projektmappenplattformen** entweder **x86** oder **x64**. Wählen Sie **Lokaler Computer**.
 
-3.  Drücken Sie F5, um das Programm auf dem Desktop bereitzustellen.
+3.  Drücken Sie **F5**, um das Programm auf dem Desktop bereitzustellen.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Dadurch wird eine Projektmappe mit vier Projekten erstellt: ein freigegebenes Pr
 
  ![Auswählen von iPhoneSimulator als Buildziel](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- Wenn keine Simulatoren aufgelistet sind, starten Sie Xcode auf dem Mac, wählen Sie **Xcode > Einstellungen** aus, und klicken Sie auf **Laden**. Unter der Überschrift **Komponenten** sollten die für den Download verfügbaren Simulatorversionen zu sehen sein. Weitere Debuganweisungen finden Sie auf der Seite [Debuggen für iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator).
+ Wenn keine Simulatoren aufgelistet sind, starten Sie Xcode auf dem Mac, wählen Sie **Xcode** > **Einstellungen** aus, und klicken Sie auf **Herunterladen**. Unter der Überschrift **Komponenten** sollten die für den Download verfügbaren Simulatorversionen zu sehen sein. Weitere Debuganweisungen finden Sie auf der Seite [Debuggen für iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios).
 
 4.  Wählen Sie ein Emulatorgeräteziel aus dem Dropdownmenü von Visual Studio aus:
 
  ![Auswählen eines iPhones als Debugziel](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
-5. Starten Sie den Debugger, indem Sie F5 drücken. Dadurch wird der Simulator auf dem Mac gestartet, auf dem Sie mit der App interagieren, während das Debuggen in Visual Studio erfolgt. Wenn Sie mit einem physischen iPhone oder iPad arbeiten, das mit dem Mac verbunden ist, wird es in der Liste angezeigt, und Sie können es stattdessen auswählen. Wenn keine Geräte oder Simulatoren aufgelistet sind, überprüfen Sie die Verbindung zum Mac. Lesen Sie den in Schritt 1 verknüpften Artikel, oder wechseln Sie zu **Extras > iOS > Mit Mac koppeln**.
+5. Starten Sie den Debugger, indem Sie **F5** drücken. Dadurch wird der Simulator auf dem Mac gestartet, auf dem Sie mit der App interagieren, während das Debuggen in Visual Studio erfolgt. Wenn Sie mit einem physischen iPhone oder iPad arbeiten, das mit dem Mac verbunden ist, wird es in der Liste angezeigt, und Sie können es stattdessen auswählen. Wenn keine Geräte oder Simulatoren aufgelistet sind, überprüfen Sie die Verbindung zum Mac. Lesen Sie den in Schritt 1 verknüpften Artikel, oder wechseln Sie zu **Extras** > **iOS** > **Mit Mac koppeln**.
 
 6.  Gibt es Probleme beim Herstellen einer Verbindung mit dem Mac, lesen Sie [Problembehandlung bei der Verbindung](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
 7.  Wird die Fehlermeldung „No installed provisioning profiles match the installed iOS signing keys“ (Zu den installierten iOS-Anmeldeschlüsseln passt keines der installierten Bereitstellungsprofile) angezeigt, probieren Sie einen der folgenden Ansätze:
 
-  - Vergewissern Sie sich, dass Ihr Apple ID-Konto in Xcode auf dem Mac hinzugefügt wurde, wie dies unter [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) beschrieben ist.  Nachdem Ihr Konto hinzugefügt wurde, müssen Sie sowohl Visual Studio als auch Xcode neu starten.
+  - Vergewissern Sie sich, dass Ihr Apple ID-Konto in Xcode auf dem Mac hinzugefügt wurde, wie dies unter [Hinzufügen Ihres Kontos zu Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) beschrieben ist.  Nachdem Ihr Konto hinzugefügt wurde, müssen Sie sowohl Visual Studio als auch Xcode neu starten.
 
   - Stellen Sie sicher, dass in den iOS-Projekteigenschaften auf der Registerkarte „iOS-Bundle-Signierung“ das Feld „Benutzerdefinierte Berechtigungen“ für die aktive Debugkonfiguration leer ist.  Hinweis: Sie sollten nur dann versuchen, diese Einstellung zu löschen, wenn die oben genannte Fehlermeldung angezeigt wurde.
 

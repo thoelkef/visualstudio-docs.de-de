@@ -13,24 +13,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973515"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175955"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
-MSBuild-Projekte, die den Standardbuildprozess verwenden und `Microsoft.Common.props` und `Microsoft.Common.targets` implementieren, beinhalten einige Erweiterungsmöglichkeiten, die zum Anpassen des Buildprozesses verwendet werden können.
+MSBuild-Projekte, die den Standardbuildprozess verwenden und *Microsoft.Common.props* und *Microsoft.Common.targets* importieren, beinhalten einige Erweiterungsmöglichkeiten, die zum Anpassen Ihres Buildprozesses verwendet werden können.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Hinzufügen von Argumenten zu MSBuild-Aufrufen Ihres Projekts über die Befehlszeile
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Hinzufügen von Argumenten zu MSBuild-Aufrufen Ihres Projekts über die Befehlszeile
 
-Es wird eine `Directory.Build.rsp`-Datei innerhalb oder oberhalb des Quellverzeichnisses auf die Builds des Projekts über die Befehlszeile angewendet. Weitere Informationen finden Sie unter [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md#directorybuildrsp).
+Es wird eine *Directory.Build.rsp*-Datei innerhalb oder oberhalb des Quellverzeichnisses auf die Builds des Projekts über die Befehlszeile angewendet. Weitere Einzelheiten finden Sie unter [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>„Directory.Build.props“ und „Directory.Build.targets“
 
-Wenn Sie in Versionen von MSBuild vor Version 15 eine neue benutzerdefinierte Eigenschaft für Projekte in Ihrer Projektmappe bereitstellen wollten, mussten Sie jeder Projektdatei in der Projektmappe manuell einen Verweis auf diese Eigenschaft hinzufügen. Alternativ dazu konnten Sie unter anderem die Eigenschaft in einer *PROPS*-Datei definieren und diese dann explizit in jedes Projekt der Projektmappe importieren.
+Wenn Sie vor Version 15 von MSBuild eine neue benutzerdefinierte Eigenschaft für Projekte in Ihrer Projektmappe bereitstellen wollten, mussten Sie zu jeder Projektdatei in der Projektmappe manuell einen Verweis auf diese Eigenschaft hinzufügen. Alternativ dazu konnten Sie unter anderem die Eigenschaft in einer *PROPS*-Datei definieren und diese dann explizit in jedes Projekt der Projektmappe importieren.
 
 Jetzt hingegen können Sie in einem Schritt jedem Projekt eine neue Eigenschaft hinzufügen, indem Sie sie in einer einzigen Datei mit dem Namen *Directory.Build.props* im Stammverzeichnis der Quelle definieren. Beim Ausführen von MSBuild durchsucht *Microsoft.Common.props* die Verzeichnisstruktur nach der Datei *Directory.Build.props* (und *Microsoft.Common.targets* sucht nach *Directory.Build.targets*). Wenn eine Datei gefunden wird, wird die Eigenschaft importiert. Bei *Directory.Build.props* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt.
 
@@ -67,9 +67,9 @@ Der Speicherort der Projektmappendatei ist für *Directory.Build.props* ohne Bed
 
 ### <a name="import-order"></a>Importreihenfolge
 
-*Directory.Build.props* wird zu einem frühen Zeitpunkt in *Microsoft.Common.props* importiert, sodass später definierte Eigenschaften dafür nicht verfügbar sind. Vermeiden Sie deshalb das Verweisen auf Eigenschaften, die noch nicht definiert sind (und daher als leer ausgewertet werden).
+*Directory.Build.props* wird zu einem frühen Zeitpunkt in *Microsoft.Common.props* importiert, und später definierte Eigenschaften sind dafür nicht verfügbar. Vermeiden Sie deshalb das Verweisen auf Eigenschaften, die noch nicht definiert sind (und als leer ausgewertet werden).
 
-*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS*-Dateien aus NuGet-Paketen importiert wurden. Deshalb kann es zum Überschreiben der meisten in der Buildlogik definierten Eigenschaften und Ziele verwendet werden, aber in einigen Fällen kann es erforderlich sein, nach dem abschließenden Import Anpassungen in der Projektdatei vorzunehmen.
+*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS*-Dateien aus NuGet-Paketen importiert wurden. Deshalb kann es zum Überschreiben der meisten in der Buildlogik definierten Eigenschaften und Ziele verwendet werden. In manchen Fällen kann es jedoch erforderlich sein, dass Sie nach dem abschließenden Import Anpassungen an der Projektdatei vornehmen.
 
 ### <a name="use-case-multi-level-merging"></a>Anwendungsfall: Zusammenführen mehrerer Ebenen
 
@@ -91,7 +91,7 @@ Für diesen Anwendungsfall wird beispielhaft davon ausgegangen, dass Sie die fol
 
 Es kann sinnvoll sein, gemeinsame Eigenschaften für alle Projekte *(1)*, für *src*-Projekte *(2-src)* und für *test*-Projekte *(2-test)* zu verwenden.
 
-Damit MSBuild die „inneren“ Dateien (*2-src* und *2-test*) mit der „äußeren“ Datei (*1*) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen Datei *Directory.Build.props* den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und Zusammenführen mit der äußeren Datei ist es erforderlich, den folgenden Code in beide inneren Dateien einzufügen:
+Damit MSBuild die „inneren“ Dateien (*2-src* und *2-test*) mit der „äußeren“ Datei (*1*) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen Datei *Directory.Build.props* den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und des Zusammenführens in der äußeren Datei ist es erforderlich, diesen Code in beide inneren Dateien einzufügen:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
@@ -102,20 +102,20 @@ Der allgemeine Ansatz von MSBuild lässt sich folgendermaßen zusammenfassen:
 - Wenn die äußere Datei nicht ebenfalls Dateien importiert, die sich in der Projektstruktur oberhalb der äußeren Datei befinden, wird der Suchvorgang an dieser Stelle beendet.
 - Verwenden Sie zum Konfigurieren des Such- und Zusammenführungsprozesses `$(DirectoryBuildPropsPath)` und `$(ImportDirectoryBuildProps)`.
 
-Oder in einem Satz ausgedrückt: MSBuild beendet den Suchvorgang, sobald eine Datei *Directory.Build.props* gefunden wurde, durch die keine weiteren Dateien importiert werden.
+Oder in einem Satz ausgedrückt: MSBuild beendet den Suchvorgang, sobald eine *Directory.Build.props*-Datei gefunden wurde, durch die keine weiteren Dateien importiert werden.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-Standardmäßig importiert `Microsoft.Common.props` `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` und `Microsoft.Common.targets` `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Der Standardwert von `MSBuildProjectExtensionsPath` ist `$(BaseIntermediateOutputPath)`, `obj/`. Dabei handelt es sich um den Mechanismus, den NuGet verwendet, um einen Verweis auf die Buildlogik von Paketen herzustellen. D.h., NuGet erstellt während der Wiederherstellung `{project}.nuget.g.props`-Dateien, die auf die Paketinhalte verweisen.
+Standardmäßig importiert *Microsoft.Common.props* `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`, und *Microsoft.Common.targets* importiert `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Der Standardwert von `MSBuildProjectExtensionsPath` ist `$(BaseIntermediateOutputPath)`, `obj/`. NuGet verwendet diesen Mechanismus, um einen Verweis auf die mit Paketen bereitgestellte Buildlogik herzustellen. D.h., NuGet erstellt während der Wiederherstellung `{project}.nuget.g.props`-Dateien, die auf die Paketinhalte verweisen.
 
-Sie können diesen Erweiterungsmechanismus deaktivieren, indem Sie die Eigenschaft `ImportProjectExtensionProps` auf `false` in einer `Directory.Build.props`-Datei oder vor dem Import von `Microsoft.Common.props` festlegen.
+Sie können diesen Erweiterbarkeitsmechanismus deaktivieren, indem Sie die Eigenschaft `ImportProjectExtensionProps` in einer *Directory.Build.props*-Datei oder vor dem Import von *Microsoft.Common.props* auf `false` festlegen.
 
 > [!NOTE]
 > Wenn Sie MSBuildProjectExtensionsPath-Importe deaktivieren, wird die Buildlogik, die in NuGet-Paketen enthalten ist, nicht auf Ihr Projekt angewendet. Für einige NuGet-Pakete ist es erforderlich, dass die Buildlogik ausgeführt wird. Sie werden daher unnötig gerendert, wenn diese Option deaktiviert ist.
 
 ## <a name="user-file"></a>USER-Datei
 
-„Microsoft.Common.CurrentVersion.targets“ importiert die `$(MSBuildProjectFullPath).user`-Datei, falls diese vorhanden ist, damit Sie neben Ihrem Projekt eine Datei mit dieser zusätzlichen Erweiterung erstellen können. Für längerfristig geplante Änderungen, die Sie in die Quellcodeverwaltung integrieren möchten, ändern Sie besser das Projekt direkt, damit spätere Verwalter diesen Erweiterungsmechanismus nicht unbedingt kennen müssen.
+*Microsoft.Common.CurrentVersion.targets* importiert `$(MSBuildProjectFullPath).user`, sofern vorhanden, damit Sie neben Ihrem Projekt eine Datei mit dieser zusätzlichen Erweiterung erstellen können. Für längerfristig geplante Änderungen, die Sie in die Quellcodeverwaltung integrieren möchten, ändern Sie besser das Projekt direkt, damit spätere Verwalter diesen Erweiterungsmechanismus nicht unbedingt kennen müssen.
 
 ## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath und MSBuildUserExtensionsPath
 
@@ -124,28 +124,28 @@ Sie können diesen Erweiterungsmechanismus deaktivieren, indem Sie die Eigenscha
 
 Standardmäßig importieren viele wichtige Buildlogikdateien
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
 vor ihrem Inhalt und
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
 danach. Dadurch können installierte SDKs die Buildlogik häufig verwendeter Projekttypen erweitern.
 
-In `$(MSBuildUserExtensionsPath)` wird nach derselben Verzeichnisstruktur (je nach Benutzerordner `%LOCALAPPDATA%\Microsoft\MSBuild`) gesucht. Dateien, die in diesem Ordner platziert werden, werden für alle Builds des jeweiligen Projekttyps importiert, die mit den Anmeldeinformationen des Benutzers ausgeführt werden. Die Benutzererweiterungen können deaktiviert werden, indem Sie die Eigenschaften festlegen, die nach der Importdatei im Muster `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` benannt werden. Wenn Sie beispielsweise `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` auf `false` festlegen, wird `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` nicht importiert.
+In `$(MSBuildUserExtensionsPath)` wird nach der gleichen Verzeichnisstruktur (je nach Benutzerordner *%LOCALAPPDATA%\Microsoft\MSBuild*) gesucht. Dateien, die in diesem Ordner platziert werden, werden für alle Builds des jeweiligen Projekttyps importiert, die mit den Anmeldeinformationen des Benutzers ausgeführt werden. Sie können die Benutzererweiterungen deaktivieren, indem Sie die Eigenschaften festlegen, die nach der Importdatei im Muster `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` benannt werden. Wenn Sie beispielsweise `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` auf `false` festlegen, wird `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` nicht importiert.
 
-## <a name="customizing-the-solution-build"></a>Anpassen des Projektmappenbuilds
+## <a name="customize-the-solution-build"></a>Anpassen des Projektmappenbuilds
 
 > [!IMPORTANT]
-> Wenn auf diese Weise der Projektmappenbuild angepasst wird, werden die Änderungen nur auf Builds mit `MSBuild.exe` über die Befehlszeile angewendet. Sie werden **nicht** auf Builds innerhalb von Visual Studio angewendet.
+> Wenn auf diese Weise der Projektmappenbuild angepasst wird, werden die Änderungen nur auf Builds mit *MSBuild.exe* über die Befehlszeile angewendet. Sie werden **nicht** auf Builds innerhalb von Visual Studio angewendet.
 
 Wenn MSBuild eine Projektmappendatei erstellt, wird diese zuerst intern in eine Projektdatei übersetzt, die dann erstellt wird. Die generierte Projektdatei importiert `before.{solutionname}.sln.targets`, bevor sie Ziele definiert und `after.{solutionname}.sln.targets` nachdem sie Ziele importiert hat. Dazu gehören auch die Ziele, die in den Verzeichnissen `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` und `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` installiert sind.
 
-Sie können beispielsweise ein neues Ziel definieren, um eine benutzerdefinierte Protokollmeldung zu schreiben, nachdem `MyCustomizedSolution.sln` erstellt wurde, indem Sie eine Datei in demselben Verzeichnis mit dem Namen `after.MyCustomizedSolution.sln.targets` erstellen, die Folgendes enthält:
+Sie können beispielsweise ein neues Ziel definieren, um eine benutzerdefinierte Protokollmeldung zu schreiben, nachdem *MyCustomizedSolution.sln* erstellt wurde, indem Sie eine Datei in demselben Verzeichnis mit dem Namen *after.MyCustomizedSolution.sln.targets* erstellen, die Folgendes enthält:
 
 ```xml
 <Project>
@@ -157,4 +157,6 @@ Sie können beispielsweise ein neues Ziel definieren, um eine benutzerdefinierte
 
 ## <a name="see-also"></a>Siehe auch
 
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md) [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+
+[MSBuild-Referenz](../msbuild/msbuild-reference.md)

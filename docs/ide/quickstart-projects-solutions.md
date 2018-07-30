@@ -9,46 +9,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747507"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180271"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
-In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird dargestellt, wie Sie eine Projektmappe und ein Projekt in Visual Studio erstellen. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Außerdem soll ein Verweis auf ein zweites Projekt erstellt werden.
+In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird dargestellt, wie Sie eine *Projektmappe* und ein *Projekt* in Visual Studio erstellen. Eine Projektmappe ist ein Container, der zum Organisieren von mindestens einem zugehörigen Codeprojekt verwendet wird, wie z.B. einer Klassenbibliothek und dem entsprechenden Testprojekt. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Darüber hinaus wird ein Verweis von einem Projekt auf das andere erstellt.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
-> [!TIP]
-> In diesem Schnellstart werden eine Projektmappe und ein Projekt von Grund auf neu erstellt, damit Sie das Konzept eines Projekts nachvollziehen können. Wenn Sie Visual Studio normalerweise verwenden, nutzen Sie sehr wahrscheinlich die vielen zur Verfügung gestellten Vorlagen für das Erstellen eines neuen Projekts.
+Eine Projektmappe und ein Projekt werden von Grund auf neu erstellt, damit Sie das Konzept eines Projekts nachvollziehen können. Wenn Sie Visual Studio normalerweise verwenden, nutzen Sie sehr wahrscheinlich einige der verschiedenen *Projektvorlagen*, die Visual Studio bei der Erstellung eines neuen Projekts zur Verfügung stellt.
 
 > [!NOTE]
-> Projektmappen und Projekte werden nicht unbedingt zum Entwickeln von Apps in Visual Studio benötigt. Sie können auch einfach nur einen Ordner öffnen, der Code enthält, und mit dem Codieren, Erstellen und Debuggen beginnen. Wenn Sie beispielsweise ein GitHub-Repository klonen, enthält dieses möglicherweise keine Visual Studio-Projekte und Projektmappen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Projektmappen und Projekte werden nicht unbedingt zum Entwickeln von Apps in Visual Studio benötigt. Sie können auch einfach nur einen Ordner öffnen, der Code enthält, und mit dem Codieren, Erstellen und Debuggen beginnen. Wenn Sie beispielsweise ein [GitHub](https://github.com/)-Repository klonen, enthält dieses möglicherweise keine Visual Studio-Projekte und Projektmappen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="solutions"></a>Projektmappen
+## <a name="solutions-and-projects"></a>Projektmappen und Projekte
 
 Projektmappen sind von Visual Studio verwendete Container, die zum Ordnen von mindestens einem Projekt dienen. Wenn Sie in Visual Studio eine Projektmappe öffnen, lädt diese automatisch alle darin enthaltenen Projekte.
 
 ### <a name="create-a-solution"></a>Erstellen einer Projektmappe
 
-Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visual Studio vertraut sind, werden Sie dies wahrscheinlich eher selten tun. Wenn Sie in Visual Studio ein neues Projekt erstellen, wird automatisch auch eine Projektmappe für das Projekt erstellt, wenn noch keine geöffnet ist.
+Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visual Studio vertraut sind, werden Sie wahrscheinlich eher selten leere Projektmappen erstellen. Wenn Sie in Visual Studio ein neues Projekt erstellen, wird automatisch auch eine Projektmappe für das Projekt erstellt, wenn noch keine geöffnet ist.
 
-1. Starten Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
-   Visual Studio wird geöffnet, und die **Startseite** nimmt wahrscheinlich den Großteil des Fensters ein.
-
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) die Option **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus. Geben Sie Ihrer Projektmappe den Namen „QuickSolution“, und klicken Sie dann auf **OK**.
+1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Vorlage **Leere Projektmappe** aus. Geben Sie Ihrer Projektmappe den Namen **QuickSolution**, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
-   ![Leere Projektmappe (Vorlage)](media/quickstart-projects-new-solution.png)
+   ![Vorlage „Leere Projektmappe“ in Visual Studio](media/quickstart-projects-new-solution.png)
 
-   Dann wird die **Startseite** geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+   Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
 
 ### <a name="add-a-project"></a>Hinzufügen eines Projekts
 
@@ -58,28 +55,28 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich **Leeres Projekt (.NET Framework)** aus. Weisen Sie dem Projekt den Namen „QuickDate“ zu, und klicken Sie anschließend auf **OK**.
+1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich die Vorlage **Leeres Projekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
    > [!NOTE]
-   > Wenn im linken Bereich des Dialogfelds nicht **Visual C#** angezeigt wird, müssen Sie die Workload **.NET-Desktopentwicklung** installieren. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds erledigen. Nachdem der **Visual Studio-Installer** gestartet wurde, wählen Sie die Workload **.NET-Desktopentwicklung** und dann die Schaltfläche **Ändern**.
+   > Wenn im linken Bereich des Dialogfelds nicht **Visual C#** angezeigt wird, müssen Sie die *Workload* **.NET-Desktopentwicklung** von Visual Studio installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
 
    ![Öffnen des Links „Visual Studio-Installer“](media/quickstart-projects-open-installer.png)
 
 ## <a name="add-an-item-to-the-project"></a>Hinzufügen eines Elements zum Projekt
 
-Sie haben nun ein leeres Projekt erstellt, dem Sie jetzt eine Codedatei hinzufügen können.
+Ihnen liegt ein leeres Projekt vor. Fügen Sie eine Codedatei hinzu.
 
-1. Klicken Sie im Kontextmenü (Rechtsklick) von **QuickDate** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Element**.
+1. Wählen Sie im Kontextmenü (Rechtsklick) des Projekts **QuickDate** im **Projektmappen-Explorer** die Option **Hinzufügen** > **Neues Element** aus.
 
    Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-1. Erweitern Sie **Visual C#-Elemente**, und wählen Sie anschließend **Code** aus. Wählen Sie im mittleren Bereich die Option **Klasse** aus. Benennen Sie die Datei mit „Kalender“, und klicken Sie dann auf **Hinzufügen**.
+1. Erweitern Sie **Visual C#-Elemente**, und wählen Sie anschließend **Code** aus. Wählen Sie im mittleren Bereich die Elementvorlage **Klasse** aus. Geben Sie der Klasse den Namen **Kalender**, und klicken Sie anschließend auf die Schaltfläche **Hinzufügen**.
 
    Dem Projekt wird eine Datei mit dem Namen *Calendar.cs* hinzugefügt. Die Erweiterung *.cs* wird allen C#-Codedateien am Ende hinzugefügt. Die Datei wird im **Projektmappen-Explorer** in der visuellen Projekthierarchie angezeigt, und ihre Inhalte werden im Editor geöffnet.
 
-1. Ersetzen Sie den Inhalt der Datei *Calendar.cs* durch den folgenden Code.
+1. Ersetzen Sie den Inhalt der Datei *Calendar.cs* durch den folgenden Code:
 
    ```csharp
    using System;
@@ -103,11 +100,11 @@ Sie haben nun ein leeres Projekt erstellt, dem Sie jetzt eine Codedatei hinzufü
    }
    ```
 
-   Sie müssen die Funktionsweise des Codes nicht verstehen, aber falls gewünscht können Sie das Programm ausführen. Dann sehen Sie, dass das Datum des heutigen Tages im Konsolenfenster ausgegeben wird.
+   Sie müssen die Funktionsweise des Codes nicht verstehen, aber falls gewünscht können Sie das Programm ausführen. Dann sehen Sie, dass das Datum des heutigen Tages im Konsolenfenster (oder der Standardausgabe) ausgegeben wird.
 
 ## <a name="add-a-second-project"></a>Hinzufügen eines zweiten Projekts
 
-Häufig enthalten Projektmappen mehrere Projekte, die aufeinander verweisen. Bei einigen Projekten in der Projektmappe handelt es sich möglicherweise um Klassenbibliotheken oder einige ausführbare Anwendungen und bei anderen handelt es sich möglicherweise um Komponententestprojekte oder Websites.
+Häufig enthalten Projektmappen mehrere Projekte, die aufeinander verweisen. Bei einigen Projekten in der Projektmappe handelt es sich möglicherweise um Klassenbibliotheken oder einige ausführbare Anwendungen, und bei anderen handelt es sich möglicherweise um Komponententestprojekte oder Websites.
 
 Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal mit einer Projektvorlage, damit Sie dem Projekt keine zusätzliche Codedatei hinzufügen müssen.
 
@@ -115,15 +112,15 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual Basic**, und wählen Sie die Kategorie **Test** aus. Wählen Sie anschließend im mittleren Bereich **Komponententestprojekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen „QuickTest“, und klicken Sie anschließend auf **OK**.
+1. Erweitern Sie im linken Bereich **Visual Basic**, und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **Komponententestprojekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.vb* geöffnet. Die Erweiterung *.vb* wird allen Visual Basic-Codedateien hinzugefügt.
 
-   ![Projektmappen-Explorer mit zwei Projekten](media/quickstart-projects-solution-explorer.png)
+   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/quickstart-projects-solution-explorer.png)
 
 ## <a name="add-a-project-reference"></a>Hinzufügen eines Projektverweises
 
-Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im Projekt **QuickDate** zu testen. Aus diesem Grund müssen Sie einen Verweis auf das Projekt hinzufügen. Dadurch entsteht eine Buildabhängigkeit zwischen den beiden Projekten, d.h., **QuickDate** wird beim Erstellen der Projektmappe vor **QuickTest** erstellt.
+Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im Projekt **QuickDate** zu testen. Aus diesem Grund müssen Sie einen Verweis auf das Projekt hinzufügen. Dadurch entsteht eine *Buildabhängigkeit* zwischen den beiden Projekten, d.h., **QuickDate** wird beim Erstellen der Projektmappe vor **QuickTest** erstellt.
 
 1. Klicken Sie im **QuickTest**-Projekt auf den Knoten **Verweise**, und klicken Sie anschließend im Kontextmenü (Rechtsklick) auf **Verweis hinzufügen**.
 
@@ -151,7 +148,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
    Unter einigen Teilen des Codes werden rote Wellenlinien angezeigt. Sie können diesen Fehler beheben, indem Sie das Testprojekt als [Friend-Assembly](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) für das **QuickDate**-Projekt festlegen.
 
-1. Öffnen Sie im **QuickDate**-Projekt die Datei *Calendar.cs*, falls noch nicht geschehen, und fügen Sie ihr die folgende Using-Anweisung sowie das <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribut hinzu, um den Fehler in dem Testprojekt zu beheben.
+1. Öffnen Sie im Projekt **QuickDate** die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist, und fügen Sie die folgende [using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das folgende Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zur Datei hinzu, um den Fehler in dem Testprojekt zu beheben.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -159,21 +156,21 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
    [assembly: InternalsVisibleTo("QuickTest")]
    ```
 
-   Die Codedatei sollte wie folgt aussehen.
+   Die Codedatei sollte wie folgt aussehen:
 
    ![CSharp-Code](media/quickstart-projects-cs-code.png)
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
-Die Zeile in der C#-Codedatei mit dem <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribut verweist auf den Assemblynamen des **QuickTest**-Projekts. Der Assemblyname stimmt nicht immer mit dem Projektnamen überein. Öffnen Sie die Projekteigenschaften, um den Assemblynamen eines Projekts zu suchen.
+In der Zeile in der C#-Codedatei mit dem Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> wird auf den Assemblynamen des Projekts **QuickTest** verwiesen. Der Assemblyname stimmt nicht immer mit dem Projektnamen überein. Öffnen Sie die Projekteigenschaften, um den Assemblynamen eines Projekts zu suchen.
 
 1. Wählen Sie im **Projektmappen-Explorer** das **QuickTest**-Projekt aus. Wählen Sie im Kontextmenü (Rechtsklick) **Eigenschaften** aus, oder drücken Sie **ALT**+**EINGABETASTE**.
 
-   Die Eigenschaftenseiten für das Projekt werden in der Registerkarte **Anwendung** geöffnet. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen ausführbaren Datei von *QuickTest.exe* zu einem von Ihnen ausgewählten Namen.
+   Die *Eigenschaftenseiten* für das Projekt werden auf der Registerkarte **Anwendung** geöffnet. Die Eigenschaftenseiten enthalten verschiedene Einstellungen für das Projekt. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen ausführbaren Datei von *QuickTest.exe* zu einem von Ihnen ausgewählten Namen.
 
    ![Projekteigenschaften](media/quickstart-projects-properties.png)
 
-1. Entdecken Sie einige der anderen Registerkarten der Eigenschaftenseiten des Projekt, z.B. **Kompilieren** und **Einstellungen**. Diese Registerkarten unterscheiden sich je nach Projekttyp.
+1. Entdecken Sie einige der anderen Registerkarten der Eigenschaftenseiten des Projekt, z.B. **Kompilieren** und **Einstellungen**. Diese Registerkarten sind bei den verschiedenen Projekttypen unterschiedlich.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e85bb64252a73195e4ab8226cfbdb141199107d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e74fa916af3feebca5b7cf0b45950981eab0aa5b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569169"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177853"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Übersicht über die Festlegung von Zielversionen mit MSBuild
 Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versionen von .NET Framework und auf verschiedenen Systemplattformen ausgeführt werden kann. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren.  
@@ -36,15 +36,15 @@ Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versio
 -   Durch die Festlegung von Zielversionen mit MSBuild wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.  
   
 ## <a name="target-framework-and-platform"></a>Zielframework und -plattform  
- Ein *Zielframework* ist die Version von .NET Framework, in der ein erstelltes Projekt ausgeführt werden soll, und eine *Zielplattform* ist die Systemplattform, auf der das erstellte Projekt ausgeführt werden soll.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist (x86). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet. Weitere Informationen finden Sie unter [MSBuild-Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).  
+ Ein *Zielframework* ist die Version von .NET Framework, in der ein erstelltes Projekt ausgeführt werden soll, und eine *Zielplattform* ist die Systemplattform, auf der das erstellte Projekt ausgeführt werden soll.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist (x86). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet. Weitere Informationen finden Sie unter [Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).  
   
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)  
- Ein Toolset umfasst die Tools, Aufgaben und Ziele, die verwendet werden, um die Anwendung zu erstellen. Ein Toolset umfasst Compiler wie csc.exe und vbc.exe, die Datei mit allgemeinen Zielen (microsoft.common.targets) und die Datei mit allgemeinen Aufgaben (microsoft.common.tasks). Das 4.5-Toolset kann verwendet werden, um auf die .NET Framework-Versionen 2.0, 3.0, 3.5, 4 und 4.5 abzuzielen. Das 2.0-Toolset kann dagegen nur für .NET Framework Version 2.0 verwendet werden. Weitere Informationen finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
+ Ein Toolset umfasst die Tools, Aufgaben und Ziele, die verwendet werden, um die Anwendung zu erstellen. Ein Toolset umfasst Compiler wie *csc.exe* und *vbc.exe*, die Datei mit allgemeinen Zielen (*microsoft.common.targets*) und die Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*). Das 4.5-Toolset kann verwendet werden, um auf die .NET Framework-Versionen 2.0, 3.0, 3.5, 4 und 4.5 abzuzielen. Das 2.0-Toolset kann dagegen nur für .NET Framework Version 2.0 verwendet werden. Weitere Informationen finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
 ## <a name="reference-assemblies"></a>Verweisassemblys  
- Die Verweisassemblys, die im Toolset angegeben sind, helfen Ihnen beim Entwerfen und Erstellen einer Anwendung. Diese Verweisassemblys ermöglichen nicht nur einen bestimmten Zielbuild, sondern beschränken die Komponenten und Funktionen in der Visual Studio-IDE auch auf die mit dem Ziel kompatiblen Komponenten und Funktionen. Weitere Informationen finden Sie unter [Resolving Assemblies at Design Time (Auflösen von Assemblys zur Entwurfszeit)](../msbuild/resolving-assemblies-at-design-time.md).  
+ Die Verweisassemblys, die im Toolset angegeben sind, helfen Ihnen beim Entwerfen und Erstellen einer Anwendung. Diese Verweisassemblys ermöglichen nicht nur einen bestimmten Zielbuild, sondern beschränken die Komponenten und Funktionen in der Visual Studio-IDE auch auf die mit dem Ziel kompatiblen Komponenten und Funktionen. Weitere Informationen finden Sie unter [Auflösen von Assemblys zur Entwurfszeit](../msbuild/resolving-assemblies-at-design-time.md).  
   
-## <a name="configuring-targets-and-tasks"></a>Konfigurieren von Zielen und Aufgaben  
+## <a name="configure-targets-and-tasks"></a>Konfigurieren von Zielen und Aufgaben  
  Sie können MSBuild-Ziele und -Aufgaben so konfigurieren, dass sie prozessextern mit MSBuild ausgeführt werden, damit Sie auf Kontexte abzielen können, die sich stark von dem unterscheiden, in dem Sie die Ausführung eigentlich vorgesehen haben.  Beispielsweise können Sie auf eine 32-Bit-.NET Framework 2.0-Anwendung abzielen, während der Entwicklungscomputer auf einer 64-Bit-Plattform mit .NET Framework 4.5 ausgeführt wird. Weitere Informationen finden Sie unter [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md).  
   
 ## <a name="troubleshooting"></a>Problembehandlung  

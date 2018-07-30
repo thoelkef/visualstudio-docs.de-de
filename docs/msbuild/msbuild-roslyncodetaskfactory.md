@@ -1,5 +1,5 @@
 ---
-title: MSBuild-Inlineaufgaben | Microsoft-Dokumentation
+title: MSBuild-Inlinetasks mit RoslynCodeTaskFactory | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 09/21/2017
 ms.technology: msbuild
@@ -12,29 +12,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179046"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204179"
 ---
-# <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
-MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
-  
- Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.  
-  
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
+Ähnlich wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) verwendet RoslynCodeTaskFactory die plattformübergeifenden Roslyn-Compiler, um In-Memory-Taskassemblys für die Verwendung als Inlinetasks zu generieren.  RoslynCodeTaskFactory-Tasks sind für .NET Standard vorgesehen und funktionieren ebenfalls mit .NET Framework- und .NET Core-Runtimes sowie auf anderen Plattformen wie Linux und macOS.
 
- In MSBuild 15.8 wurde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) hinzugefügt, womit plattformübergreifende .NET Standard-Inlineaufgaben erstellt werden können.  Wenn Sie Inlineaufgaben in .NET Core verwenden müssen, müssen Sie RoslynCodeTaskFactory verwenden.
-## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben  
- Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.  
+>[!NOTE]
+>Der RoslynCodeTaskFactory-Task ist nur in MSBuild 15.8 und höher verfügbar.
+  
+## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Die Struktur einer Inlineaufgabe mit RoslynCodeTaskFactory
+ RoslynCodeTaskFactory-Inlineaufgaben werden genau wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) deklariert. Der einzige Unterschied liegt darin, dass Sie .NET Standard als Ziel verwenden.  Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -71,11 +70,11 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 >  Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
   
 ### <a name="code-element"></a>Codeelement  
- Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.  
-  
- Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.  
-  
- Das `Type`-Attribut gibt den Typ von Code im `Code`-Element an.  
+Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.  
+
+Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.  
+
+Das `Type`-Attribut gibt den Typ von Code im `Code`-Element an.  
   
 -   Wenn der Wert von `Type` auf `Class` festgelegt ist, enthält das `Code`-Element Code für eine Klasse, die von der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle abgeleitet wird.  
   
@@ -84,21 +83,21 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 -   Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.  
 
 Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.  
-  
+
 Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
-  
+
 > [!NOTE]
 >  Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
   
-## <a name="helloworld"></a>HelloWorld  
- Im Folgenden finden Sie eine robustere Inlineaufgabe. Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.  
+## <a name="hello-world"></a>Hello World  
+ Im Folgenden sehen Sie einen robusteren Inlinetask mit RoslynCodeTaskFactory: Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -115,9 +114,9 @@ Log.LogError("Hello, world!");
   </UsingTask>  
 </Project>  
 ```  
-  
- Sie können die HelloWorld-Aufgabe in der Datei *HelloWorld.targets* speichern und anschließend wie folgt in einem Projekt aufrufen.  
-  
+
+Sie können die HelloWorld-Aufgabe in der Datei *HelloWorld.targets* speichern und anschließend wie folgt in einem Projekt aufrufen.  
+
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
@@ -135,27 +134,27 @@ Log.LogError("Hello, world!");
     <Text />  
 </ParameterGroup>  
 ```  
-  
- Parameter können ein oder mehrere Attribute besitzen:  
-  
+
+Parameter können ein oder mehrere Attribute besitzen:  
+
 -   `Required` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` ist der Parameter erforderlich und muss vor dem Aufrufen der Aufgabe einen Wert erhalten.  
   
 -   `ParameterType` ist ein optionales Attribut, das standardmäßig den Wert `System.String` besitzt. Es kann auf jeden vollqualifizierten Typ festgelegt werden, bei dem es sich um ein Element oder einen Wert handelt und mit System.Convert.ChangeType in und aus einer Zeichenfolge konvertiert werden kann. (Anders gesagt kann jeder Typ an eine und von einer externen Aufgabe übergeben werden.)  
   
 -   `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` muss dem Parameter ein Wert zugewiesen werden, bevor die Execute-Methode die Rückgabe ausführt.  
-  
+
 Ein auf ein Objekt angewendeter  
-  
+
 ```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+    <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
     <Tally ParameterType="System.Int32" Output="true" />  
 </ParameterGroup>  
 ```  
-  
+
 definiert die folgenden drei Parameter:  
-  
+
 -   `Expression` ist ein erforderlicher Eingabeparameter vom Typ System.String.  
   
 -   `Files` ist ein erforderlicher Eingabeparameter für Elementlisten.  
@@ -165,33 +164,97 @@ definiert die folgenden drei Parameter:
 Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.  
   
 ## <a name="example"></a>Beispiel  
- Mit der folgenden Inlineaufgabe wird jedes Vorkommen eines Tokens in der angegebenen Datei durch den angegebenen Wert ersetzt.  
+ Der folgende Inlinetask protokolliert einige Meldungen und gibt eine Zeichenfolge zurück.  
   
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
-    <ParameterGroup>  
-      <Path ParameterType="System.String" Required="true" />  
-      <Token ParameterType="System.String" Required="true" />  
-      <Replacement ParameterType="System.String" Required="true" />  
-    </ParameterGroup>  
-    <Task>  
-      <Code Type="Fragment" Language="cs"><![CDATA[  
-string content = File.ReadAllText(Path);  
-content = content.Replace(Token, Replacement);  
-File.WriteAllText(Path, content);  
+    <UsingTask TaskName="MySample"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Parameter1 ParameterType="System.String" Required="true" />
+            <Parameter2 ParameterType="System.String" />
+            <Parameter3 ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+              <![CDATA[
+              Log.LogMessage(MessageImportance.High, "Hello from an inline task created by Roslyn!");
+              Log.LogMessageFromText($"Parameter1: '{Parameter1}'", MessageImportance.High);
+              Log.LogMessageFromText($"Parameter2: '{Parameter2}'", MessageImportance.High);
+              Parameter3 = "A value from the Roslyn CodeTaskFactory";
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
   
-]]></Code>  
-    </Task>  
-  </UsingTask>  
-  
-  <Target Name='Demo' >  
-    <TokenReplace Path="C:\Project\Target.config" Token="$MyToken$" Replacement="MyValue"/>  
-  </Target>  
+    <Target Name="Demo">  
+      <MySample Parameter1="A value for parameter 1" Parameter2="A value for parameter 2">
+          <Output TaskParameter="Parameter3" PropertyName="NewProperty" />
+      </MySample>
+
+      <Message Text="NewProperty: '$(NewProperty)'" />
+    </Target>  
 </Project>  
 ```  
+
+Diese Inlinetasks können Pfade kombinieren und den Dateinamen abrufen.  
+
+```xml  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
+    <UsingTask TaskName="PathCombine"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Paths ParameterType="System.String[]" Required="true" />
+            <Combined ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            Combined = Path.Combine(Paths);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+
+    <UsingTask TaskName="PathGetFileName"
+             TaskFactory="RoslynCodeTaskFactory"
+             AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Path ParameterType="System.String" Required="true" />
+            <FileName ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            FileName = System.IO.Path.GetFileName(Path);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+  
+    <Target Name="Demo">  
+        <PathCombine Paths="$(Temp);MyFolder;$([System.Guid]::NewGuid()).txt">
+            <Output TaskParameter="Combined" PropertyName="MyCombinedPaths" />
+        </PathCombine>
+
+        <Message Text="Combined Paths: '$(MyCombinedPaths)'" />
+
+        <PathGetFileName Path="$(MyCombinedPaths)">
+            <Output TaskParameter="FileName" PropertyName="MyFileName" />
+        </PathGetFileName>
+
+        <Message Text="File name: '$(MyFileName)'" />
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe](../msbuild/walkthrough-creating-an-inline-task.md)

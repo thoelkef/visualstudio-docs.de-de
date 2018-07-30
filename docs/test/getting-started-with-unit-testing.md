@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425214"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177866"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -56,7 +56,7 @@ Sie können Stubs für Komponententestmethoden auch mit dem **Befehl** [Komponen
 
 ## <a name="run-unit-tests"></a>Komponententests ausführen
 
-1. Öffnen Sie den Test-Explorer.
+1. Öffnen Sie den **Test-Explorer**.
 
    ![Öffnen des Test-Explorers im Menü „Test“](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ Sie können Stubs für Komponententestmethoden auch mit dem **Befehl** [Komponen
 
    ![Ausführen von Komponententests im Test-Explorer](media/rununittest2.png)
 
-   Es werden die Unittests angezeigt, die im Test-Explorer entweder erfolgreich oder mit Fehlern ausgeführt wurden.
+   Es werden die Komponententests angezeigt, die im **Test-Explorer** entweder erfolgreich oder mit Fehlern ausgeführt wurden.
 
    ![Überprüfen der Unittestsergebnisse im Test-Explorer](media/rununittest3.png)
 
@@ -91,13 +91,13 @@ Weitere Informationen finden Sie unter [Live Unit Testing](../test/live-unit-tes
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Generieren von Unittests mit IntelliTest
 
-Wenn Sie IntelliTest ausführen, erkennen Sie ohne weiteres, welche Tests zu einem Fehler führen, und können den erforderlichen Code hinzufügen, um die Fehler zu beseitigen. Sie können wählen, welche der generierten Tests in einem Testprojekt gespeichert werden sollen, um eine Regressionsreihe zu erstellen. Wenn Sie den Code ändern, führen Sie IntelliTest erneut aus, damit die generierten Tests mit den Codeänderungen synchronisiert werden. Weitere Informationen finden Sie unter [Generieren von Unittests für Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Wenn Sie IntelliTest ausführen, erkennen Sie ohne weiteres, welche Tests zu einem Fehler führen, und können den erforderlichen Code hinzufügen, um die Fehler zu beseitigen. Sie können wählen, welche der generierten Tests in einem Testprojekt gespeichert werden sollen, um eine Regressionsreihe zu erstellen. Wenn Sie den Code ändern, führen Sie IntelliTest erneut aus, damit die generierten Tests mit den Codeänderungen synchronisiert werden. Weitere Informationen finden Sie unter [Generieren von Komponententests für Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Erzeugen von Unittests mit IntelliTest](media/intellitest.png)
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
-Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder Testprojekte von Drittanbietern ausführen, Tests in Kategorien gruppieren, die Testliste filtern sowie Testwiedergabelisten erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren. Weitere Informationen finden Sie unter [Ausführen von Unittests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md).
+Mithilfe des **Test-Explorers** können Sie Komponententests aus Visual Studio oder Testprojekte von Drittanbietern ausführen, Tests in Kategorien gruppieren, die Testliste filtern sowie Testwiedergabelisten erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren. Weitere Informationen finden Sie unter [Ausführen von Unittests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md).
 
 ![Ausführen von Unittests mit dem Test-Explorer](media/testexplorer.png)
 
@@ -113,7 +113,7 @@ Sie können Komponententests in Visual Studio auch über Testframeworks von Drit
 
 Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu aktivieren:
 
-1. Wählen Sie auf der Menüleiste **Extras** > **Erweiterungen und Updates** aus.
+1. Klicken Sie auf der Menüleiste auf **Extras** > **Erweiterungen und Updates**.
 
 1. Erweitern Sie im Dialogfeld **Erweiterungen und Updates** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
 
@@ -125,7 +125,7 @@ Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu 
 
    ![Benennen Sie das Klassenbibliotheksprojekt und fügen Sie es hinzu](media/create3rdpartyunittest3.png)
 
-1. Installieren Sie das Plug-In. Wählen Sie im **Projektmappen-Explorer** das Klassenbibliotheksprojekt aus, und wählen Sie anschließend im Kontextmenü die Option **NuGet-Pakete verwalten...**  aus.
+1. Installieren Sie das Plug-In. Wählen Sie im **Projektmappen-Explorer** das Klassenbibliotheksprojekt aus, und wählen Sie anschließend im Kontextmenü die Option **NuGet-Pakete verwalten** aus.
 
    ![Verwalten von NuGet-Paketen zum Installieren des Plug-Ins](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu 
 
    ![Der Verweis für das Unittestframework des Drittanbieters wird Ihrer Projektmappe hinzugefügt.](media/create3rdpartyunittest6.png)
 
-1. Wählen Sie im Knoten **Verweise** des Klassenbibliotheksprojekts den Eintrag **Verweis hinzufügen...** aus.
+1. Wählen Sie im Knoten **Verweise** des Klassenbibliotheksprojekts den Eintrag **Verweis hinzufügen** aus.
 
    ![Fügen Sie einen Verweis auf das Projekt hinzu.](media/createunittest6.png)
 

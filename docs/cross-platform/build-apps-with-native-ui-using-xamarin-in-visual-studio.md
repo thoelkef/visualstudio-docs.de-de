@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757252"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232389"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 
@@ -110,9 +110,9 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 1.  Registrieren Sie sich zuerst für einen kostenlosen Wetter-API-Schlüssel unter [http://openweathermap.org/appid](http://openweathermap.org/appid). Dieser API-Schlüssel ermöglicht es der Anwendung, das Wetter für jede Postleitzahl der Vereinigten Staaten abzurufen. (Es funktioniert nicht für Postleitzahlen außerhalb der USA.)
 
-2.  Klicken Sie mit der rechten Maustaste auf das **WeatherApp**-Projekt, und wählen Sie **Hinzufügen > Klasse…** aus. Geben Sie der Datei im Dialogfeld **Neues Element hinzufügen** den Namen **Weather.cs**. Sie nutzen diese Klasse später, um Daten aus dem Wetterdatendienst zu speichern.
+2.  Klicken Sie mit der rechten Maustaste auf das **WeatherApp**-Projekt, und wählen Sie **Hinzufügen > Klasse…** aus. Geben Sie der Datei im Dialogfeld **Neues Element hinzufügen** den Namen *Weather.cs*. Sie nutzen diese Klasse später, um Daten aus dem Wetterdatendienst zu speichern.
 
-3.  Ersetzen Sie den gesamten Inhalt von **Weather.cs** durch folgenden Code:
+3.  Ersetzen Sie den gesamten Inhalt von *Weather.cs* durch folgenden Code:
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
     }
     ```
 
-4.  Fügen Sie eine weitere Klasse zum .NET Standard-Projekt mit dem Namen **DataService.cs** hinzu. Sie nutzen diese Klasse später, um JSON-Daten aus dem Wetterdatendienst zu verarbeiten.
+4.  Fügen Sie eine weitere Klasse zum .NET Standard-Projekt mit dem Namen `DataService.cs` hinzu. Sie nutzen diese Klasse später, um JSON-Daten aus dem Wetterdatendienst zu verarbeiten.
 
-5.  Ersetzen Sie den gesamten Inhalt von **DataService.cs** durch folgenden Code:
+5.  Ersetzen Sie den gesamten Inhalt von *DataService.cs* durch folgenden Code:
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
     }
     ```
 
-6.  Fügen Sie der .NET Standard-Bibliothek eine dritte Klasse namens **Core.cs** hinzu. Sie verwenden diese Klasse, um eine Abfragezeichenfolge mit einer Postleitzahl zu bilden, den Wetterdatendienst aufzurufen und eine Instanz der Klasse **Weather** zu füllen.
+6.  Fügen Sie der .NET Standard-Bibliothek eine dritte Klasse namens *Core.cs* hinzu. Sie verwenden diese Klasse, um eine Abfragezeichenfolge mit einer Postleitzahl zu bilden, den Wetterdatendienst aufzurufen und eine Instanz der Klasse **Weather** zu füllen.
 
-7.  Ersetzen Sie den Inhalt von **Core.cs** durch folgenden Code:
+7.  Ersetzen Sie den Inhalt von *Core.cs* durch folgenden Code:
 
     ```csharp
     using System;
@@ -217,7 +217,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 8. Ersetzen Sie das erste Vorkommen von *YOUR API KEY HERE* durch den in Schritt 1 erhaltenen API-Schlüssel. Er muss noch in Anführungszeichen stehen.
 
-9. Löschen Sie **MyClass.cs** in der .NET Standard-Bibliothek, da Sie diese nicht benötigen.
+9. Löschen Sie *MyClass.cs* in der .NET Standard-Bibliothek, da Sie diese nicht benötigen.
 
 10. Erstellen Sie das Projekt **WeatherApp**, um sicherzustellen, dass der Code korrekt ist.
 
@@ -229,10 +229,10 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Entwickeln des Erscheinungsbilds und Verhaltens der App
 
-1.  Erweitern Sie im **Projektmappen-Explorer** den Ordner **WeatherApp.Droid > Ressourcen > Layout**, und öffnen Sie **Main.axml**. Über diesen Befehl wird die Datei im visuellen Designer geöffnet. (Wenn ein Java-bezogener Fehler angezeigt wird, lesen Sie diesen [Blogbeitrag](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1.  Erweitern Sie im **Projektmappen-Explorer** den Ordner **WeatherApp.Droid > Ressourcen > Layout**, und öffnen Sie *Main.axml*. Über diesen Befehl wird die Datei im visuellen Designer geöffnet. (Wenn ein Java-bezogener Fehler angezeigt wird, lesen Sie diesen [Blogbeitrag](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    >  Es sind viele weitere Dateien in diesem Projekt vorhanden. Sie alle zu besprechen, würde den Rahmen dieses Artikels sprengen. Wenn Sie jedoch mehr über die Struktur eines Android-Projekts erfahren möchten, finden Sie ausführliche Informationen im Artikel „Hello Android“ unter [Part 2 Deep Dive (Detailinformationen, Teil 2)](/xamarin/android/get-started/hello-android/hello-android-deepdive/).
+    >  Es sind viele weitere Dateien in diesem Projekt vorhanden. Sie alle zu besprechen, würde den Rahmen dieses Artikels sprengen. Wenn Sie jedoch mehr über die Struktur eines Android-Projekts erfahren möchten, finden Sie ausführliche Informationen im Artikel „Hello Android“ unter [Detailinformationen, Teil 2](/xamarin/android/get-started/hello-android/hello-android-deepdive/).
 
 2.  Öffnen Sie die Toolbox mit **Ansicht > Andere Fenster > Toolbox**.
 
@@ -256,7 +256,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  Beachten Sie, dass viele Eigenschaften nicht über eine Dropdownliste mit Werten verfügen, die Sie auswählen können.  Es kann schwierig sein, zu raten, welcher Zeichenfolgenwert für eine bestimmte Eigenschaft verwendet werden soll. Vorschläge können Sie möglicherweise erhalten, indem Sie auf der Seite der Klasse [R.attr](http://developer.android.com/reference/android/R.attr.html) nach dem Namen einer Eigenschaft suchen.
+    >  Beachten Sie, dass viele Eigenschaften nicht über eine Dropdownliste mit Werten verfügen, die Sie auswählen können.  Es kann schwierig sein, zu raten, welcher Zeichenfolgenwert für eine bestimmte Eigenschaft verwendet werden soll. Vorschläge können Sie möglicherweise erhalten, indem Sie auf der Seite der Klasse[`R.attr`](http://developer.android.com/reference/android/R.attr.html) nach dem Namen einer Eigenschaft suchen.
     >
     >  Eine schnelle Websuche führt Sie außerdem meist zu einer Seite auf [http://stackoverflow.com/](http://stackoverflow.com/), wo Sie sich mit anderen austauschen können, die bereits die gleiche Eigenschaft verwendet haben.
 
@@ -347,7 +347,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
         android:width="165dp" />
     ```
 
-11. Sie verfügen jetzt über ausreichende Kenntnisse, um eine einfache Benutzeroberfläche mit dem Android-Designer zu erstellen. Sie können zudem eine Benutzeroberfläche erstellen, indem Sie Markup direkt zur Main.asxml-Datei auf der Seite hinzufügen. Um den Rest der Benutzeroberfläche auf diese Weise zu erstellen, wechseln Sie im Designer in die Quellansicht, und fügen Sie dann das folgende Markup *unter* dem `</RelativeLayout>`-Endtag ein. (Sie müssen sich unter dem Tag befinden, da diese Elemente *nicht* im `RelativeLayout` enthalten sind.)
+11. Sie verfügen jetzt über ausreichende Kenntnisse, um eine einfache Benutzeroberfläche mit dem Android-Designer zu erstellen. Sie können zudem eine Benutzeroberfläche erstellen, indem Sie Markup direkt zur *Main.asxml*-Datei auf der Seite hinzufügen. Um den Rest der Benutzeroberfläche auf diese Weise zu erstellen, wechseln Sie im Designer in die Quellansicht, und fügen Sie dann das folgende Markup *unter* dem `</RelativeLayout>`-Endtag ein. (Sie müssen sich unter dem Tag befinden, da diese Elemente *nicht* im `RelativeLayout` enthalten sind.)
 
     ```xml
     <TextView
@@ -457,7 +457,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 13. Öffnen Sie **MainActivity.cs**. Der Code sollte wie folgt aussehen:
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
     }
     ```
 
-14. Erstellen Sie das Android-Projekt, um Ihre Arbeit zu überprüfen. Beim Erstellungsprozess werden der Datei **Resource.Designer.cs** Steuerelement-IDs hinzugefügt, sodass Sie im Code mit Namen auf die Steuerelemente verweisen können.
+14. Erstellen Sie das Android-Projekt, um Ihre Arbeit zu überprüfen. Beim Erstellungsprozess werden der Datei *Resource.Designer.cs* Steuerelement-IDs hinzugefügt, sodass Sie im Code mit Namen auf die Steuerelemente verweisen können.
 
 ### <a name="consume-your-shared-code"></a>Verwenden des freigegebenen Codes
 
-1.  Öffnen Sie die Datei **MainActivity.cs** des Projekts **WeatherApp** im Code-Editor, und ersetzen Sie seinen Inhalt durch den unten stehenden Code. Dieser Code ruft die `GetWeather` -Methode auf, die Sie im freigegebenen Code definiert haben. Dann werden auf der Benutzeroberfläche der App die Daten angezeigt, die durch diese Methode abgerufen werden.
+1.  Öffnen Sie die Datei *MainActivity.cs* des Projekts **WeatherApp** im Code-Editor, und ersetzen Sie seinen Inhalt durch den unten stehenden Code. Dieser Code ruft die `GetWeather` -Methode auf, die Sie im freigegebenen Code definiert haben. Dann werden auf der Benutzeroberfläche der App die Daten angezeigt, die durch diese Methode abgerufen werden.
 
     ```csharp
     using System;
@@ -545,7 +545,7 @@ Im nächsten Schritt entwickeln Sie die Benutzeroberfläche für Windows, verbin
 
  Das Entwickeln einer nativen UWP-Benutzeroberfläche in einer Xamarin-App unterscheidet sich nicht von anderen nativen UWP-Apps. Aus diesem Grund wird hier nicht auf den Einsatz des Designers eingegangen. Weitere Informationen finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
- Öffnen Sie stattdessen **MainPage.xaml**, und ersetzen Sie den gesamten XAML-Inhalt durch das folgende Markup:
+ Öffnen Sie stattdessen *MainPage.xaml*, und ersetzen Sie den gesamten XAML-Inhalt durch das folgende Markup:
 
 ```xaml
 <Page
@@ -634,7 +634,7 @@ Im nächsten Schritt entwickeln Sie die Benutzeroberfläche für Windows, verbin
 
 ### <a name="consume-your-shared-code"></a>Verwenden des freigegebenen Codes
 
-Fügen Sie in der CodeBehind-Datei **MainPage.xaml.cs** den folgenden Ereignishandler für die Schaltfläche hinzu:
+Fügen Sie in der CodeBehind-Datei *MainPage.xaml.cs* den folgenden Ereignishandler für die Schaltfläche hinzu:
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -663,7 +663,7 @@ Dieser Code ruft die `GetWeather` -Methode auf, die Sie im freigegebenen Code de
 
 2.  Wählen Sie im Dropdownfeld **Projektmappenplattformen** die Option **x86**, und wählen Sie **Lokaler Computer**, um die Anwendung auf dem Windows 10-Desktop bereitzustellen.
 
-3.  Starten Sie die App durch Drücken der Taste "F5".
+3.  Starten Sie die App durch Drücken der Taste **F5**.
 
 4.  Geben Sie in das Bearbeitungsfeld die fünfstellige Postleitzahl aus den USA ein, und drücken Sie **Get Weather** (Wetter abrufen). Auf der Seite werden nun Wetterdaten für diese Region angezeigt.
 

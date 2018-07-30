@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit C# und ASP.NET Core in Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765514"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177369"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Erste Schritte mit C# und ASP.NET in Visual Studio
 
 In diesem Tutorial für die C#-Entwicklung mit ASP.NET Core in Visual Studio werden wir eine C#-ASP.NET Core-Web-App erstellen, Code hinzufügen, einige Funktionen der IDE kennenlernen und die App ausführen.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -41,7 +41,7 @@ ASP.NET Core ist ein plattformübergreifendes Open Source-Framework zum Erstelle
 
 ### <a name="what-is-visual-studio"></a>Was ist Visual Studio?
 
-Visual Studio ist eine integrierte Zusammenstellung von Entwicklertools, die die Produktivität fördern. Es ist also ein Programm zum Erstellen von Programmen und Anwendungen.  
+Visual Studio ist eine integrierte Zusammenstellung von Entwicklertools, die die Produktivität fördern. Es ist also ein Programm zum Erstellen von Programmen und Anwendungen.
 
 ## <a name="start-developing"></a>Mit dem Entwickeln beginnen
 
@@ -67,7 +67,7 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
 
 1. Klicken Sie im Dialogfeld **Neues Projekt** im linken Bereich auf den Link **Visual Studio-Installer öffnen**.
 
-   ![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung** und anschließend auf **Ändern**.
 
@@ -81,7 +81,7 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
 
 #### <a name="add-a-project-template"></a>Hinzufügen einer Projektvorlage
 
-1. Klicken Sie im Dialogfeld **Neue ASP.NET Core-Webanwendung** auf die Projektvorlage **Webanwendung (Model-View-Controller)**.  
+1. Klicken Sie im Dialogfeld **Neue ASP.NET Core-Webanwendung** auf die Projektvorlage **Webanwendung (Model-View-Controller)**.
 
 2. Wählen Sie aus dem oberen Dropdownmenü **ASP.NET Core 2.0** aus. (Wenn **ASP.NET Core 2.0** nicht in der Liste angezeigt wird, installieren Sie es über den **Download**-Link, der in einer gelben Leiste im oberen Bereich des Dialogfelds angezeigt werden sollte.) Klicken Sie auf **OK**.
 
@@ -134,7 +134,7 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
 1. Klicken Sie in der IDE auf die Schaltfläche **IIS Express**, um die App im Debugmodus zu erstellen und auszuführen. (Alternativ können Sie **F5** drücken oder in der Menüleiste auf **Debuggen > Debuggen starten** klicken.)
 
-   ![Auf die Schaltfläche „IIS Express“ in Visual Studio klicken](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Die Schaltfläche „IIS Express“ in Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Wenn Sie die Fehlermeldung **Es kann keine Verbindung mit dem Webserver "IIS Express" hergestellt werden.** erhalten, schließen Sie Visual Studio. Öffnen Sie dann Visual Studio, indem Sie im Kontextmenü auf die Option **Als Administrator ausführen** klicken. Führen Sie die Anwendung anschließend erneut aus.
@@ -179,11 +179,13 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
 11. Klicken Sie in der Symbolleiste auf die Schaltfläche **Debuggen beenden**. (Alternativ können Sie **UMSCHALTTASTE**+**F5** drücken oder in der Menüleiste auf **Debuggen** > **Debuggen beenden** klicken.)
 
-   ![In der Symbolleiste auf die Schaltfläche „Debuggen beenden“ klicken](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Schaltfläche „Debuggen beenden“](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
+Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE gelernt haben. Klicken Sie auf die folgende Schaltfläche, um die App anzuzeigen, die auf einem öffentlichen Server ausgeführt wird.
 
- > [!div class="nextstepaction"]
- > [Erste Schritte mit ASP.NET Core MVC und Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Deploy the app to Azure App Service (Bereitstellen der App in Azure App Service)](..//deployment/quickstart-deploy-to-azure.md)
+
+Weitere Informationen zur Verwendung des MVC-Frameworks (Model-View-Controller) in ASP.NET Core finden Sie im Tutorial [Erste Schritte mit ASP.NET Core MVC und Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

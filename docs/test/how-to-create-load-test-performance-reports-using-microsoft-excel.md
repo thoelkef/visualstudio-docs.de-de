@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751532"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179007"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Gewusst wie: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
@@ -56,7 +56,7 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
     1.  Nachdem Sie einen Auslastungstest abgeschlossen haben, klicken Sie auf der Seite **Auslastungstestergebnisse** auf der Symbolleiste auf die Schaltfläche **Excel-Bericht erstellen**.
 
         > [!NOTE]
-        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des Webleistungstest-Ergebnisviewers deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
+        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
 
      Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
@@ -111,7 +111,7 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
     1.  Nachdem Sie einen Auslastungstest abgeschlossen haben, klicken Sie auf der Seite **Auslastungstestergebnisse** auf der Symbolleiste auf die Schaltfläche **Excel-Bericht erstellen**.
 
         > [!NOTE]
-        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des Webleistungstest-Ergebnisviewers deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
+        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
 
      Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 

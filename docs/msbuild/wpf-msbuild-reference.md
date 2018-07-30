@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ca91726cdb20df2d77b497bd756fdc344aae6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460ba44e7e8734e294c6da3628b8f142b241c471
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567966"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155018"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF-MSBuild-Referenz
-Windows Presentation Foundation (WPF) erweitert das Microsoft-Buildmodul (MSBuild) durch zusätzlichen Buildsupport, der in diesem Abschnitt erläutert wird.  
+Windows Presentation Foundation (WPF) erweitert die Microsoft-Build-Engine (MSBuild) durch zusätzlichen Buildsupport, der in diesem Abschnitt erläutert wird.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [.Targets Files](../msbuild/wpf-dot-targets-files.md) (TARGETS-Dateien von MSBuild)  
- Beschreibt WPF-TARGETS-Dateien  
+ [TARGETS-Dateien von WPF](../msbuild/wpf-dot-targets-files.md)  
+ Beschreibt WPF-TARGETS-Dateien.  
   
- [Aufgabenreferenz](../msbuild/wpf-msbuild-task-reference.md)  
+ [Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)  
  Listet die verfügbaren Buildtasks von WPF auf  
   
  <xref:Microsoft.Build.Tasks>  
