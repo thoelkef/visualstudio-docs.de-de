@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35534c0c6965dd7f7db01e2299ff71572b8de9e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950292"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180476"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Webverweise und wichtige Namespaces in Ihrem Projekt zu verwalten. Projekte können Verweise auf COM-Komponenten, XML-Webdienste, Klassenbibliotheken oder Assemblys von .NET Framework oder andere Klassenbibliotheken enthalten. Weitere Informationen zum Verwenden von Verweisen finden Sie unter [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md).
@@ -62,7 +62,7 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 
  Klicken Sie auf **Verweise**, um Ihrem Projekt einen Verweis mit dem Dialogfeld „Verweis hinzufügen“ hinzuzufügen.
 
- Klicken Sie auf **Webverweise**, um Ihrem Projekt einen Webverweis mit dem Dialogfeld „Webverweis hinzufügen“ hinzuzufügen.
+ Klicken Sie auf **Webverweise**, um Ihrem Projekt einen Webverweis mit dem Dialogfeld **Webverweis hinzufügen** hinzuzufügen.
 
  **Entfernen**
 
@@ -70,7 +70,7 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 
  **Aktualisieren von Webverweisen**
 
- Wählen Sie mindestens einen Webverweis aus der Liste **Webverweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu aktualisieren.
+ Wählen Sie einen Webverweis aus der Liste **Verweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu aktualisieren.
 
  **Importierte Namespaces**
 

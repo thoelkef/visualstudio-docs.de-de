@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877331"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232284"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -46,8 +46,10 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 1. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“. 
 
-     Es sind ebenfalls zwei Dateien enthalten: **host.json** für das Beschreiben von globalen Konfigurationsoptionen für den Host und **local.settings.json** für das Konfigurieren von Diensteinstellungen. 
-        Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.
+     Es gibt auch drei Dateien:  
+        - **host.json** zum Beschreiben der globalen Konfigurationsoptionen für den Host  
+        - **local.settings.json** zum Konfigurieren der Serviceeinstellungen.  
+        Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.  
 
     Öffnen Sie **local.settings.json**. Diese Datei weist standardmäßig zwei leere Einstellungen für Verbindungszeichenfolgen auf.
 

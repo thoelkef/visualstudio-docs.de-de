@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969105"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203753"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>How to: Add Context Parameters to a Load Test Run Setting
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstest
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern.
 
@@ -36,9 +36,9 @@ Wenn Sie `http://CorporateStagingWebServer` den Wert des Kontextparameters „We
 
 Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführen, indem Sie einem Kontextparameter andere Werte zuweisen, indem Sie den gleichen Namen in verschiedenen Auslastungs-Laufzeiteinstellungen verwenden:
 
--   Testlaufeinstellung für Unternehmens-Stagingwebserver: Kontextparameter namens WebServer1=http://CorporateStagingWebServer
+-   Testlaufeinstellung für Unternehmens-Stagingwebserver: Kontextparameter namens `WebServer1=http://CorporateStagingWebServer`
 
--   Testlaufeinstellung für Unternehmens-Produktionswebserver: Kontextparameter namens WebServer1=http://CorporateProductionWebServer
+-   Testlaufeinstellung für Unternehmens-Produktionswebserver: Kontextparameter namens `WebServer1=http://CorporateProductionWebServer`
 
  **Changing the Run Setting from the Command Line (Ändern der Laufzeiteinstellung über die Befehlszeile)**
 
@@ -64,9 +64,9 @@ Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführe
 
      Wenn die Laufzeiteinstellung bereits einen **Kontextparameter**-Ordner enthält, können Sie mit der rechten Maustaste darauf klicken und dann auf **Kontextparameter hinzufügen** klicken.
 
-4.  Ändern Sie im Eigenschaftenfenster den Wert für **Name** nach Bedarf (z.B. „WebServer1“). Ändern Sie im Eigenschaftenfenster den Parameter für **Wert** in den Parameter, den Sie verwenden möchten (z.B. http://CorporateStagingWebServer)).
+4.  Ändern Sie im **Eigenschaftenfenster** den Wert für **Name** nach Bedarf (z.B. „WebServer1“). Ändern Sie im **Eigenschaftenfenster** den Parameter für **Wert** in den Parameter, den Sie verwenden möchten (z.B. `http://CorporateStagingWebServer`).
 
-5.  Optional: Wiederholen Sie die Schritte 3 bis 5, und verwenden Sie eine andere Zeichenfolge für die Eigenschaft **Wert** (z.B. http://CorporateProductionWebServer)).
+5.  Optional: Wiederholen Sie die Schritte 3 bis 5, und verwenden Sie eine andere Zeichenfolge für die Eigenschaft **Wert** (z.B. `http://CorporateProductionWebServer`).
 
 6.  Wählen Sie aus, welche Laufzeiteinstellungen aktiv sein sollen. Öffnen Sie das Kontextmenü in den Laufzeiteinstellungen, und wählen Sie **Als aktiv festlegen** aus.
 
