@@ -5,6 +5,6 @@
 
 * Ein Azure-Abonnement. Wenn Sie noch nicht über Abonnements verfügen [melden Sie sich jetzt](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), wozu 200 US-Dollar Guthaben für 30 Tage sowie 12 Monate lang beliebte kostenlose Dienste.
 
-* Ein ASP.NET Core-Projekt. Führen Sie [Schnellstart: Verwenden Sie Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-app](../../ide/quickstart-aspnet-core.md), oder verwenden Sie **Datei** > **neues Projekt**Option **Visual C#-**   >  **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung**. Wählen Sie bei Aufforderung die **Webanwendung (Model-View-Controller)** Vorlage stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und wählen Sie dann **OK**.
+* Ein ASP.NET Core-Projekt. Wenn Sie eine noch nicht, führen Sie die [Schnellstart: Verwenden Sie Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-app](../../ide/quickstart-aspnet-core.md), oder verwenden Sie **Datei** > **neues Projekt**, wählen **Visual C#-** > **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung**. Wählen Sie bei Aufforderung die **Webanwendung (Model-View-Controller)** Vorlage stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und wählen Sie dann **OK**.
 
 * Stellen Sie sicher, dass Sie erstellen das Projekt mit der **erstellen > Projektmappe erstellen** Menübefehl, bevor Sie die folgenden Bereitstellungsschritte aus.
