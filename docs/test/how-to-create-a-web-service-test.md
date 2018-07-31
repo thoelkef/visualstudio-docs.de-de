@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970703"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180073"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Gewusst wie: Erstellen eines Webdiensttests
 
@@ -43,7 +43,7 @@ In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starte
 
 6.  Erweitern Sie den URL-Knoten im Editor, wählen Sie den **Zeichenfolgentext**-Knoten aus und geben Sie in das Feld **Inhaltstyp** den Wert `text/xml` ein.
 
-7.  Kehren Sie zum Browser aus Schritt 4 zurück. Wählen Sie die XML-Komponente der SOAP-Anforderung aus der Webdienst-Beschreibungsseite aus, und kopieren Sie diese in die Zwischenablage.
+7.  Kehren Sie zum Browser aus Schritt 4 zurück. Wählen Sie die XML-Komponente der SOAP-Anforderung aus der Webdienst-Beschreibungsseite aus, und kopieren Sie diese in die Zwischenablage.
 
 8.  Der XML-Inhalt ähnelt dem folgenden Beispiel:
 
@@ -71,7 +71,7 @@ In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starte
     > [!NOTE]
     > Sie können Datenbindung im SOAP-Hauptteil verwenden, um mithilfe der `{{DataSourceName.TableName.ColumnName}}`-Syntax alle Platzhalterwerte durch datengebundene Werte zu ersetzen.
 
-13. Führen Sie den Test aus. Wählen Sie im oberen Bereich des Webleistungstest-Ergebnisviewers die Webdienstanforderung aus. Wählen Sie im unteren Bereich die Registerkarte Webbrowser aus. Die vom Webdienst zurückgegebenen XML-Daten sowie die Ergebnisse von möglicherweise ausgeführten Vorgängen werden angezeigt.
+13. Führen Sie den Test aus. Wählen Sie im oberen Bereich des **Webleistungstest-Ergebnisviewers** die Webdienstanforderung aus. Wählen Sie im unteren Bereich die Registerkarte „Webbrowser“ aus. Die vom Webdienst zurückgegebenen XML-Daten sowie die Ergebnisse von möglicherweise ausgeführten Vorgängen werden angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
