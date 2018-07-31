@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252361"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341747"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-app in App Service unter Linux mithilfe von Visual Studio
 
@@ -45,6 +45,13 @@ Bereitstellung in App Service unter Linux über die **veröffentlichen** Tool er
 1. Wählen Sie **Erstellen** aus. Visual Studio die app zu Azure App Service bereitgestellt wird und die Web-app in Ihrem Browser lädt. Die Projekteigenschaften **veröffentlichen** Bereich werden die Website-URL und andere Details.
 
     ![Veröffentlichen Sie die im Eigenschaftenbereich mit einem Profil Statusübersicht](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
+
+In den vorherigen Schritten haben Sie Azure-Ressourcen in einer Ressourcengruppe erstellt. Wenn Sie nicht auf diese Ressourcen in der Zukunft zu benötigen, können Sie sie löschen, indem Sie die Ressourcengruppe löschen.
+Wählen Sie im linken Menü im Azure-Portal **Ressourcengruppen** und wählen Sie dann **MyResourceGroup**.
+Klicken Sie auf der Seite der Ressourcengruppe stellen Sie sicher, dass die Ressourcen aufgelisteten sind, die Sie löschen möchten.
+Wählen Sie **löschen**, Typ **MyResourceGroup** in das Textfeld ein, und wählen Sie dann **löschen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
