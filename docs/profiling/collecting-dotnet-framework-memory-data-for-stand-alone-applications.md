@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549063"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276841"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Sammeln von .NET Framework-Arbeitsspeicherdaten über die Profilerbefehlszeile
 
@@ -25,8 +25,8 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Starten einer Anwendung und Erstellen von Profilen für den .NET-Arbeitsspeicher**|-   [Vorgehensweise: Starten einer .NET Framework-Anwendung mit dem Profiler zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Anfügen des Profilers an eine .NET-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Starten einer Anwendung und Erstellen von Profilen für den .NET-Arbeitsspeicher**|-   [Vorgehensweise: Starten einer .NET Framework-Anwendung mit dem Profiler zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Anfügen des Profilers an eine .NET-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**Instrumentieren einer Anwendung zum Sammeln von .NET-Arbeitsspeicherdaten**|-   [Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Arbeitsspeicherdaten mit dem Profiler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben

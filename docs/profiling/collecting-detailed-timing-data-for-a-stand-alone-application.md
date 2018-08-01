@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335813"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276350"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für eine eigenständige Anwendung über die Profiler-Befehlszeile
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für eine (eigenständige) Client-Komponente unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.  
@@ -27,8 +27,8 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Erstellen des Profils einer .NET Framework-Anwendung mithilfe der Instrumentationsmethode**|-   [Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Erstellen einer C/C++-Anwendung mithilfe der Instrumentationsmethode**|-   [Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Erstellen des Profils einer .NET Framework-Anwendung mithilfe der Instrumentationsmethode**|-   [Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Erstellen einer C/C++-Anwendung mithilfe der Instrumentationsmethode**|-   [Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Hinzufügen von Ebeneninteraktionsdaten**|-   [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben

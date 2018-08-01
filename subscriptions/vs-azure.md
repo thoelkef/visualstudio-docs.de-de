@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280656"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379735"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -22,7 +22,7 @@ ms.locfileid: "36280656"
 
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrer [monatlichen Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
 
-## <a name="eligibililty"></a>Berechtigung
+## <a name="eligibility"></a>Berechtigung
 
 | Abonnementstufe/Programm                                 | Vorteil                     | Erneuerbar?                                                   |
 |--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|

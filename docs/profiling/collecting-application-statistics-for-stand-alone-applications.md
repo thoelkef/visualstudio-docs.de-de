@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 951c65672f3b5aa6bb9555ace4622cfb60b04fc6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263690"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276730"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profilerbefehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungsstatistiken für eine Clientanwendung (eigenständig) mit der Samplingmethode über die Befehlszeile beschrieben.  
@@ -30,9 +30,9 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungs
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Starten einer Anwendung mit der Profilerstellung**|-   [Vorgehensweise: Starten einer eigenständigen Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Starten einer Anwendung mit der Profilerstellung**|-   [Vorgehensweise: Starten einer eigenständigen Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
 |**Anfügen des Profilers an eine aktive .NET Framework-Anwendung**|-   [How to: Attach the profiler to a .NET Framework application and collect application statistics (Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung und Sammeln von Anwendungsstatistiken)](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**Anfügen des Profilers an eine aktive C/C++-Anwendung**|-   [How to: Attach the profiler to a native application and collect application statistics (Vorgehensweise: Anfügen des Profilers an eine native Anwendung und Sammeln von Anwendungsstatistiken)](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Anfügen des Profilers an eine aktive C/C++-Anwendung**|-   [How to: Attach the profiler to a native application and collect application statistics (Vorgehensweise: Anfügen des Profilers an eine native Anwendung und Sammeln von Anwendungsstatistiken)](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
 |**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben  
