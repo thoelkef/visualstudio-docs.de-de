@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a07062f5a79722e18ba0567f42bfb2843f84d06
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078783"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388188"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
@@ -42,7 +42,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
    Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Framework)** aus. (Wenn Sie mit Visual Basic, C++, JavaScript oder einer anderen Sprache entwickeln, können Sie alternativ ein Projekt in einer dieser Sprachen erstellen. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
-1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie dann auf **OK**.
+1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
 
    Das Projekt wird erstellt, und eine Datei namens *Program.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
 
@@ -50,7 +50,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ## <a name="solution-explorer"></a>Projektmappen-Explorer
 
-Der **Projektmappen-Explorer**, der sich in Visual Studio üblicherweise auf der rechten Seite befindet, zeigt eine grafische Darstellung der Hierarchie von Dateien und Ordnern in Ihrem Projekt-, Projektmappen- oder Codeordner an. Sie können die Hierarchie durchsuchen und im **Projektmappen-Explorer** zu einer Datei navigieren.
+Im **Projektmappen-Explorer**, der sich in Visual Studio üblicherweise auf der rechten Seite befindet, wird eine grafische Darstellung der Hierarchie von Dateien und Ordnern in Ihrem Projekt-, Projektmappen- oder Codeordner angezeigt. Sie können die Hierarchie durchsuchen und im **Projektmappen-Explorer** zu einer Datei navigieren.
 
 ![Projektmappen-Explorer in Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
@@ -70,7 +70,7 @@ Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand 
 
 ## <a name="output-window"></a>Ausgabefenster
 
-Das **Ausgabefenster** zeigt Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung an.
+Im **Ausgabefenster** werden Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung angezeigt.
 
 Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus. Das Fenster **Ausgabe** erhält den Fokus automatisch und zeigt eine Meldung zu einem erfolgreichen Buildvorgang an.
 
@@ -80,7 +80,7 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
 
-1. Geben Sie **Ausführlichkeit** im Feld **Schnellstart** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+1. Geben Sie im Feld **Schnellstart** **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
 
    ![Feld „Schnellstart“ in Visual Studio](media/quickstart-IDE-quick-launch.png)
 
