@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2b6e44ae9b0587a044cb1a8a0d62db068dfc76d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf8a815cb0827ed69c24686053bf118a48c020eb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966625"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379903"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ausführen eines Komponententest als 64-Bit-Prozess
 
@@ -39,4 +39,4 @@ Wenn Sie über einen 64-Bit-Computer verfügen, können Sie Komponententests aus
 ## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
-- [Komponententest für Code](../test/unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
