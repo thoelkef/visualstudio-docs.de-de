@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117653"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380742"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 
@@ -152,7 +152,7 @@ Beachten Sie, dass Anweisungen, zwischen eingefügt werden `<# ... #>` und Ausdr
 
 ### <a name="the-code-built-from-the-template"></a>Der Code erstellt aus der Vorlage
 
-Beim Speichern der **TT** -Datei, einem Tochterunternehmen **cs** oder **vb** -Datei generiert wird. Erweitern Sie diese Datei im Projektmappen-Explorer zum Anzeigen der **TT** Dateiknoten. In Visual Basic-Projekt, und wählen Sie zuerst **alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorer.
+Beim Speichern der **TT** -Datei, einem Tochterunternehmen **cs** oder **vb** -Datei generiert wird. Um diese Datei finden Sie unter **Projektmappen-Explorer**, erweitern Sie die **TT** Dateiknoten. In Visual Basic-Projekt, und wählen Sie zuerst **alle Dateien anzeigen** in die **Projektmappen-Explorer** Symbolleiste.
 
 Beachten Sie, dass die untergeordnete Datei enthält eine partielle Klasse, die eine Methode namens enthält `TransformText()`. Sie können diese Methode von Ihrer Anwendung aufrufen.
 

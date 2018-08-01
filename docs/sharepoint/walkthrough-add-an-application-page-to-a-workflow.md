@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118929"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379789"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "37118929"
   
 1.  Wählen Sie das Projekt "ExpenseReport" und dann auf der Menüleiste die Option **Projekt** > **neues Element hinzufügen**.  
   
-2.  In der **Vorlagen** Bereich Wählen Sie die **Seite "Anwendung"** Vorlage verwenden Sie den Standardnamen für das Projektelement (**ApplicaitonPage1.aspx**), und wählen Sie die **Hinzufügen** Schaltfläche.  
+2.  In der **Vorlagen** Bereich Wählen Sie die **Seite "Anwendung"** Vorlage verwenden Sie den Standardnamen für das Projektelement (**ApplicationPage1.aspx**), und wählen Sie die **Hinzufügen** Schaltfläche.  
   
 3.  In der [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] von ApplicationPage1.aspx, ersetzen die `PlaceHolderMain` -Abschnitt folgendermaßen:  
   
