@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179033"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382421"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurieren der Laufzeiteinstellungen für Auslastungstests
 
@@ -33,7 +33,7 @@ Die anfängliche Laufzeiteinstellung wird erstellt, wenn Sie einen Auslastungste
 |-----------|-----------------------|
 |**Hinzufügen weiterer Laufzeiteinstellungen zum Auslastungstest:** Neben der Laufzeiteinstellung, die beim Ausführen des **Assistenten für neuen Auslastungstest** erstellt wird, können Sie dem Auslastungstest zusätzliche Laufzeiteinstellungen hinzufügen, damit Sie den Test unter anderen Bedingungen ausführen können.|-   [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Angeben der aktiven Laufzeiteinstellung zur Verwendung mit dem Auslastungstest:** Sie können mithilfe des Auslastungstest-Editors die Laufzeiteinstellung auswählen, die mit dem Auslastungstest verwendet werden soll. Die aktive Testlaufeinstellung wird durch das Suffix "[Active]" gekennzeichnet.|-   [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Bearbeiten der Eigenschaften der Laufzeiteinstellungen:** Sie können die Eigenschaften der Laufzeiteinstellungen bearbeiten, z.B. Protokollierungsoptionen (weitere Informationen siehe unten), Dauer des Tests und der Aufwärmphase, maximale Anzahl der Fehlerdetails in Berichten, Samplingrate, Verbindungsmodell (nur bei Webleistungstests), Ergebnisspeichertyp, Validierungsebene und SQL-Ablaufverfolgung. Die Laufzeiteinstellungen sollten den Zielen des Auslastungstests entsprechen.|-   [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md)<br />-   [Ändern der Eigenschaften von Laufzeiteinstellungen](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Bearbeiten der Eigenschaften der Laufzeiteinstellungen:** Sie können die Eigenschaften der Laufzeiteinstellungen bearbeiten, z.B. Protokollierungsoptionen (weitere Informationen siehe unten), Dauer des Tests und der Aufwärmphase, maximale Anzahl der Fehlerdetails in Berichten, Samplingrate, Verbindungsmodell (nur bei Webleistungstests), Ergebnisspeichertyp, Validierungsebene und SQL-Ablaufverfolgung. Die Laufzeiteinstellungen sollten den Zielen des Auslastungstests entsprechen.|-   [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md)<br />-   [Ändern der Eigenschaften von Laufzeiteinstellungen](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Angeben der Anzahl der Testiterationen in Laufzeiteinstellungen für Auslastungstests:** Sie können die Anzahl der Durchläufe für alle Webleistungs- und Komponententests in allen Szenarios der Auslastungstests angeben, indem Sie die Eigenschaft **Testiterationen** konfigurieren.|-   [How to: Specify the Number of Test Iterations in a Run Setting (Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Laufzeiteinstellung)](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Angeben der Samplingrate für eine Laufzeiteinstellung für Auslastungstests:** Sie können angeben, wie oft vom Auslastungstest Leistungsindikatordaten gesammelt werden sollen, indem Sie die Eigenschaft **Samplingrate** konfigurieren.|-   [How to: Specify the Sample Rate (Vorgehensweise: Angeben der Abtastrate)](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Angeben der Speicheroption für zeitliche Steuerungsdetails:** Sie können angeben, wie die Details des Auslastungstests gespeichert werden sollen, indem Sie die Eigenschaft **Speicher für Details der zeitlichen Steuerung** konfigurieren.|-   [How to: Specify the Timing Details Storage Property (Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“)](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
