@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 18f528bf30f5d3aeb59a6564ccdef2e53bdc6ccb
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326062"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468643"
 ---
 # <a name="create-sharepoint-solutions"></a>Erstellen von SharePoint-Lösungen
   Visual Studio bietet eine Alternative zur Erstellung von SharePoint-Anwendungen mithilfe von SharePoint Designer. Mit Funktionen wie erweiterten Debugtools, IntelliSense, Anweisungsvervollständigung und Projektvorlagen ermöglicht Visual Studio eine schnelle SharePoint-Entwicklung. Visual Studio nutzt auch erweiterte .NET Framework-basierte Tools und Sprachen. Sie können SharePoint-Projekte mit Visual Basic oder Visual C# entwickeln, und Sie können Apps für SharePoint-Projekte entwickeln, indem Sie JavaScript verwenden.  
@@ -35,7 +35,7 @@ ms.locfileid: "36326062"
 |||  
 |-|-|  
 |![Dokumentation](../sharepoint/media/vs-icon-documentation.gif "Dokumentation")|**Dokumentation**<br /><br /> -   [Erste Schritte &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Paket und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Erweitern von SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![Dokumentation](../sharepoint/media/vs-icon-documentation.gif "Dokumentation")|**Wichtige Aufgaben**<br /><br /> -   [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, Inhaltstyp und Tist für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Gewusst wie: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Gewusst wie: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Gewusst wie: Erstellen eines Benutzersteuerelements für eine SharePoint-Anwendung Seite oder eine Webpartseite](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![Dokumentation](../sharepoint/media/vs-icon-documentation.gif "Dokumentation")|**Wichtige Aufgaben**<br /><br /> -   [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Gewusst wie: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Gewusst wie: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Gewusst wie: Erstellen eines Benutzersteuerelements für eine SharePoint-Anwendung Seite oder eine Webpartseite](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![Exemplarische Vorgehensweisen](../sharepoint/media/vs-icon-walkthroughs.gif "Exemplarische Vorgehensweisen")|**Exemplarische Vorgehensweisen**<br /><br /> -   [Exemplarische Vorgehensweisen zu SharePoint-Entwicklung](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Die Codebeispiele](../sharepoint/media/vs-icon-codesamples.gif "Codebeispiele")|**Codebeispiele**<br /><br /> -   [Beispiele für die SharePoint-Entwicklung](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint-Entwicklerdownloads](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![Training](../sharepoint/media/vs-icon-training.gif "Training")|**Schulungen**<br /><br /> -   [SharePoint-Schulungen](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  

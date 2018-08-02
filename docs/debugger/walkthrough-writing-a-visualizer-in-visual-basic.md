@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058697"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468763"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Nach dem Muster dieser einfachen Zeichenfolgen-Schnellansicht können Sie auch Schnellansichten für andere Datentypen erstellen, die Sie in Ihren Projekten benötigen.  
@@ -39,9 +39,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Auf der **Datei** Menü wählen **neu** , und klicken Sie auf **neues Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld **Projekttyp**s, klicken Sie auf **Visual Basic**.  
+2.  In der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic**.  
   
-3.  In der **Vorlagen** auf **Klassenbibliothek**.  
+3.  Klicken Sie unter **.NET Standard**, klicken Sie auf **Klassenbibliothek**.  
   
 4.  In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, z. B. **MyFirstVisualizer**.  
   
@@ -166,7 +166,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Auf der **Datei** Menü klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** auf **Konsolenanwendung**.  
+2.  In der **neues Projekt hinzufügen** wählen Sie im Dialogfeld **Visual Basic**, und klicken Sie dann auf **Konsolenanwendung**.  
   
 3.  In der **Namen** geben einen aussagekräftigen Namen für die Konsolenanwendung, z. B. **MyTestConsole**.  
   
