@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056798"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468529"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms
 Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendungen. Ein solches Formular erstellt eine Windows-Standardanwendung. Sie können diese exemplarische Vorgehensweise mit Visual Basic, C# oder C++ ausführen.  
@@ -51,27 +51,25 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 2.  Öffnen Sie im Bereich Projekttypen den **Visual Basic**, **Visual C#-**, oder **Visual C++** Knoten  
   
-    1.  Wählen Sie für Visual Basic oder Visual C#-, die **Windows** Knoten, wählen Sie dann **Windows Form-Anwendung** in die **Vorlagen** Bereich.  
+    1.  Wählen Sie für Visual Basic oder Visual C#- **Windows Desktop** > **Windows-Formular-App**.  
   
-    2.  Wählen Sie für Visual C++, die **CLR** Knoten, wählen Sie dann **Windows Form-Anwendung** in die **Vorlagen** Bereich...  
+    2.  Wählen Sie für Visual C++, **Windows-Desktopanwendung**.  
   
-3.  In der **Vorlagen** wählen Sie im Bereich **Windows-Anwendung**.  
+3.  In der **Namen** gewähren Sie dem Projekt einen eindeutigen Namen (z. B. "Walkthrough_SimpleDebug").  
   
-4.  In der **Namen** gewähren Sie dem Projekt einen eindeutigen Namen (z. B. "Walkthrough_SimpleDebug").  
-  
-5.  Klicken Sie auf **OK**.  
+4.  Klicken Sie auf **OK**.  
   
      Visual Studio erstellt ein neues Projekt und zeigt ein neues Formular im Windows Forms-Designer an. Weitere Informationen finden Sie unter [Windows Forms-Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  Auf der **Ansicht** , wählen Sie im Menü **Toolbox**.  
+5.  Auf der **Ansicht** , wählen Sie im Menü **Toolbox**.  
   
      Die Toolbox wird geöffnet. Weitere Informationen finden Sie unter [Toolbox](../ide/reference/toolbox.md).  
   
-7.  Klicken Sie in der Toolbox auf die **Schaltfläche** steuern, und ziehen Sie das Steuerelement auf die Formularentwurfsoberfläche. Legen Sie das Steuerelement im Formular ab.  
+6.  Klicken Sie in der Toolbox auf die **Schaltfläche** steuern, und ziehen Sie das Steuerelement auf die Formularentwurfsoberfläche. Legen Sie das Steuerelement im Formular ab.  
   
-8.  Klicken Sie in der Toolbox auf die **Textfeld** steuern, und ziehen Sie das Steuerelement auf die Formularentwurfsoberfläche. Löschen der **Textfeld** auf dem Formular.  
+7.  Klicken Sie in der Toolbox auf die **Textfeld** steuern, und ziehen Sie das Steuerelement auf die Formularentwurfsoberfläche. Löschen der **Textfeld** auf dem Formular.  
   
-9. Doppelklicken Sie auf der Formularentwurfsoberfläche auf die Schaltfläche.  
+8. Doppelklicken Sie auf der Formularentwurfsoberfläche auf die Schaltfläche.  
   
      Dadurch gelangen Sie auf die Codepage. Der Cursor sollte sich nun in der `button1_Click`-Funktion befinden.  
   

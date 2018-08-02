@@ -2,7 +2,7 @@
 title: Informationen Sie zum Debuggen von Multithreadanwendungen
 description: Debuggen Sie mit den Fenstern "Parallele Stapel und parallele Überwachung" in Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204218"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468682"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Erste Schritte zum Debuggen von Multithreadanwendungen in Visual Studio
 Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. In diesem Tutorial wird gezeigt, wie mit Threadmarker, der **parallele Stapel** Fenster die **parallele Überwachung** bedingter Haltepunkte, Fenster und filterhaltepunkte. Dieses Tutorial dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen.
@@ -47,9 +47,9 @@ Um zu Beginn dieses Lernprogramms benötigen Sie ein Multithreadanwendungsprojek
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual C#-**, **Visual C++**, oder **Visual Basic**.  
+2.  Klicken Sie auf der Sprache Ihrer Wahl: **Visual C#-**, **Visual C++**, oder **Visual Basic**.  
   
-3.  In der **Vorlagen** wählen **Konsolen-App**.  
+3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.  
   
 4.  In der **Namen** geben den Namen MyThreadWalkthroughApp ein.  
   
