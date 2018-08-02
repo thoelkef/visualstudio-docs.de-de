@@ -49,7 +49,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
      Es gibt auch drei Dateien:  
         - **host.json** zum Beschreiben der globalen Konfigurationsoptionen für den Host  
         - **local.settings.json** zum Konfigurieren der Serviceeinstellungen.  
-        Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.  
+        - Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.  
 
     Öffnen Sie **local.settings.json**. Diese Datei weist standardmäßig zwei leere Einstellungen für Verbindungszeichenfolgen auf.
 
