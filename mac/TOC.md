@@ -21,6 +21,7 @@
 ## [Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md)
 ### [Walkthrough - Including a NuGet package in your project (Exemplarische Vorgehensweise: Einschließen eines NuGet-Pakets in Ihr Projekt)](nuget-walkthrough.md)
 ## [Managing App Resources (Verwalten von App-Ressourcen)](managing-app-resources.md)
+## [Vorgehensweise: Öffnen mehrerer Projektmappen oder Instanzen](open-multiple-solutions.md)
 
 # [Source Editor (Quellcode-Editor)](source-editor.md)
 ## [Refactoring](refactoring.md)
