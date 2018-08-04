@@ -1,5 +1,5 @@
 ---
-title: GUIDs und Konstanten in der Visual Studio SDK | Microsoft Docs
+title: GUIDs und Konstanten im Visual Studio SDK | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604fe4a8cb007c89ae9d287c1077737cd4854ce5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb77d090430a69953eb2a7e713fd7de26a772260
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133429"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500461"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs und Konstanten in der Visual Studio SDK
-Die <xref:Microsoft.VisualStudio.VSConstants> Klasse ermöglicht den Zugriff auf eine Auswahl Umgebung GUIDs und Konstanten.  
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs und Konstanten im Visual Studio SDK
+Die <xref:Microsoft.VisualStudio.VSConstants> Klasse ermöglicht den Zugriff auf ausgewählte Umgebung GUIDs und Konstanten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [IDE-GUIDs](../extensibility/ide-guids.md)  
- Listet die GUIDs von bereitgestellten <xref:Microsoft.VisualStudio.VSConstants>.  
+ Listet die GUIDs, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.  
   
  [IDE-Konstanten](../extensibility/ide-constants.md)  
  Enthält SDK-Konstanten, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [COM-Konstanten in verwaltetem Code](../extensibility/com-constants-in-managed-code.md)  
- Listen die standardmäßigen COM-Konstanten an verwalteten Code aus des managed Package Framework (MPF).  
+ [COM-Konstanten in verwaltetem code](../extensibility/com-constants-in-managed-code.md)  
+ Die standardmäßigen COM-Konstanten, die verfügbar an verwalteten Code aus dem Managed Package Framework (MPF) aufgeführt.  
   
  [IDE-definierte Befehle zum Erweitern von Projektsystemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- Listet verschiedene Typen von Befehl-Elementen, die für die Erweiterung von Projektsystemen verwendet.
+ Listet verschiedene Typen der Befehl-Elemente, die zum Erweitern von Projektsystemen verwendet.

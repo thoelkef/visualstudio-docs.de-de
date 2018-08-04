@@ -1,5 +1,5 @@
 ---
-title: Verfügbarmachen von Typen in visuellen Designern | Microsoft Docs
+title: Verfügbarmachen von Typen für visuelle Designer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,38 +15,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ca4b0ae279cc58945c864167d3068dd3d9b3a51
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135973"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497488"
 ---
-# <a name="exposing-types-to-visual-designers"></a>Verfügbarmachen von Typen in visuellen Designern
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss den Zugriff auf die Klasse und Typdefinition zur Entwurfszeit besitzen, einen visuellen Designer angezeigt. Klassen sind aus einem vordefinierten Satz von Assemblys geladen, die vollständige Abhängigkeit des aktuellen Projekts (Verweise sowie ihre Abhängigkeiten) enthalten. Es kann auch erforderlich sein für visuelle Designer zum Zugriff auf Klassen und Typen, die in von benutzerdefinierte Tools generierten definiert sind.  
+# <a name="expose-types-to-visual-designers"></a>Machen Sie Typen für visuelle Designer
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zugriff auf Klasse und Typdefinitionen erforderlich zur Entwurfszeit um einen visuellen Designer anzuzeigen. Klassen werden aus einem vordefinierten Satz von Assemblys geladen, die die vollständige Abhängigkeit des aktuellen Projekts (Verweise sowie deren Abhängigkeiten) enthalten. Es kann auch erforderlich sein für visuelle Designer zum Zugriff auf Klassen und Typen, die in Dateien, die von benutzerdefinierten Tools erzeugt definiert werden.  
   
- Die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsystemen bieten Unterstützung für den Zugriff auf generierte Klassen und Typen durch temporäre Portable ausführbare Dateien (temporäre PEs). Jede Datei, die durch ein benutzerdefiniertes Tool generiert kann in eine temporäre Assembly kompiliert werden, sodass Typen aus diesen Assemblys geladen und in Designern verfügbar gemacht werden können. Die Ausgabe der einzelnen benutzerdefinierte Tools in einen separaten temporären PE kompiliert wird, und den Erfolg oder Misserfolg von dieser temporären Kompilierung hängt nur fest, ob die generierte Datei kompiliert werden kann. Auch, wenn ein Projekt nicht als Ganzes erstellen kann, möglicherweise einzelne temporäre PEs trotzdem für Designer zur Verfügung.  
+ Die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsystemen bieten Unterstützung für den Zugriff auf generierte Klassen und Typen über temporäre Portable ausführbare Dateien (temporäre PE-Dateien). Jede Datei, die von einem benutzerdefinierten Tool generierten kann in eine temporäre Assembly kompiliert werden, sodass Typen aus diesen Assemblys geladen und für den Designer verfügbar gemacht werden können. Die Ausgabe der einzelnen benutzerdefinierten Tools in einer separaten temporäre PE-Datei kompiliert, und den Erfolg oder Misserfolg von dieser temporären Kompilierung nur davon abhängig, ob die generierte Datei kompiliert werden kann. Auch wenn ein Projekt nicht als Ganzes erstellen kann, möglicherweise einzelne temporäre PE-Dateien weiterhin für Designer zur Verfügung.  
   
- Das Projektsystem bietet vollständige Unterstützung für das Nachverfolgen von Änderungen an die Ausgabedatei ein benutzerdefiniertes Tool, vorausgesetzt, dass diese Änderungen auf das Ergebnis der Ausführung des benutzerdefinierten Tools sind. Jedes Mal, wenn das benutzerdefinierte Tool ausgeführt wird, wird eine neue temporäre PE generiert und in Designern entsprechende Benachrichtigungen gesendet werden.  
+ Das Projektsystem bietet vollständige Unterstützung zum Nachverfolgen von Änderungen in die Ausgabedatei eines benutzerdefinierten Tools, vorausgesetzt, dass diese Änderungen auf das Ergebnis der Ausführung des benutzerdefinierten Tools sind. Jedes Mal, wenn das benutzerdefinierte Tool ausgeführt wird, wird eine neue temporäre PE-Datei generiert, und entsprechende Benachrichtigungen für Designer gesendet werden.  
   
 > [!NOTE]
->  Da temporäre Programmdownloads Generation ausführbare Datei im Hintergrund stattfindet, werden keine Fehler an den Benutzer ausgegeben, wenn die Kompilierung schlägt fehl.  
+>  Da-Datei der temporäre Programmdownloads ausführbare Generation im Hintergrund erfolgt, werden dem Benutzer keine Fehler gemeldet, wenn die Kompilierung schlägt fehl.  
   
- Benutzerdefinierte Tools, die temporäre PE-Unterstützung nutzen, müssen den folgenden Regeln entsprechen:  
+ Benutzerdefinierte Tools, die temporäre PE-Support nutzen, müssen die folgenden Regeln entsprechen:  
   
--   `GeneratesDesignTimeSource` muss 1 in der Registrierung festgelegt werden.  
+-   **GeneratesDesignTimeSource** muss in der Registrierung auf 1 festgelegt werden.  
   
-     Keine Programm ausführbare Datei Kompilierung findet ohne diese Einstellung an.  
+     Keine ausführbare Datei Programmkompilierung erfolgt ohne diese Einstellung an.  
   
--   Der generierte Code muss in derselben Sprache wie die globalen projekteinstellung sein.  
+-   Der generierte Code muss in derselben Sprache wie die Einstellung der globalen projektauflistung ab.  
   
-     Die temporäre PE-Datei kompiliert wird, unabhängig davon, was als erforderliche Erweiterung in das benutzerdefinierte Tool meldet <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> vorausgesetzt, dass `GeneratesDesignTimeSource` in der Registrierung auf 1 festgelegt ist. Die Erweiterung muss nicht vb, cs- oder jsl werden; Es kann eine beliebige Erweiterung sein.  
+     Die temporäre PE-Datei kompiliert wird, unabhängig davon, was das benutzerdefinierte Tool, als die angeforderte Extension in meldet <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> vorausgesetzt, dass **GeneratesDesignTimeSource** in der Registrierung auf 1 festgelegt ist. Die Erweiterung muss nicht werden *vb*, *cs*, oder *jsl*; es kann eine beliebige Erweiterung sein.  
   
--   Die von benutzerdefinierten Tools generierte Code muss gültig sein und es muss Kompilieren auf eigene verwendet nur die Verweise im Projekt vorhanden zum Zeitpunkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Ausführung abgeschlossen ist.  
+-   Der vom benutzerdefinierten Tool generierten Code muss gültig sein und muss es kompilieren, zur eigenen Verwendung nur die Gruppe der Verweise im Projekt vorhanden Zeitpunkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Ausführung abgeschlossen ist.  
   
-     Wenn eine temporäre PE-Datei kompiliert wird, ist die einzige Quelldatei bereitgestellt, um den Compiler die Ausgabe des benutzerdefinierten Tools. Aus diesem Grund muss ein benutzerdefiniertes Tool, das eine temporäre PE verwendet Ausgabedateien generiert, die unabhängig von anderen Dateien in das Projekt kompiliert werden kann.  
+     Wenn eine temporäre PE-Datei kompiliert wird, ist die einzige Quelldatei bereitgestellt, um den Compiler die Ausgabe des benutzerdefinierten Tools. Aus diesem Grund muss ein benutzerdefiniertes Tool, das eine temporäre PE-Datei verwendet Ausgabedateien erstellen, die unabhängig von anderen Dateien in das Projekt kompiliert werden kann.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
- [Implementieren von Einzeldatei Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Implementieren von Einzeldatei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
  [Registrieren von Generatoren einzelner Dateien](../../extensibility/internals/registering-single-file-generators.md)

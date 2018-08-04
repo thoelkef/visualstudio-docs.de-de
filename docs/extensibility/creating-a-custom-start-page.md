@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer benutzerdefinierten Startseite | Microsoft Docs
+title: Erstellen einer benutzerdefinierten Startseite | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100682"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497637"
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Startseite
 Sie können eine benutzerdefinierte Startseite erstellen, anhand der Schritte in diesem Dokument.  
   
-## <a name="creating-a-blank-start-page"></a>Erstellen einer leeren Startseite  
- Stellen Sie zunächst eine leere Startseite erstellen Sie eine XAML-Datei mit einem Tag-Struktur, die Visual Studio erkennt. Anschließend fügen Sie Markup und CodeBehind erzeugt das Aussehen und die gewünschten Funktionen.  
+## <a name="create-a-blank-start-page"></a>Erstellen Sie eine leere Startseite  
+ Stellen Sie zunächst eine leere Startseite durch das Erstellen einer *XAML* -Datei mit einem Tag-Struktur, die Visual Studio erkennt. Anschließend fügen Sie Markup und CodeBehind zu erzeugen, die Darstellung und Funktionalität, die Sie möchten.  
   
-#### <a name="to-create-a-blank-start-page"></a>Eine leere Startseite erstellen  
+### <a name="to-create-a-blank-start-page"></a>Um eine leere Startseite erstellen  
   
-1.  Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual c# / Windows-Desktop**.  
+1.  Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual C#-** > **Windows Desktop**).  
   
 2.  Fügen Sie einen Verweis auf `Microsoft.VisualStudio.Shell.14.0` hinzu.  
   
-3.  Die XAML-Datei im XML-Editor öffnen und Ändern der obersten Ebene \<Fenster >-Elements auf eine \<UserControl >-Element ohne Entfernen Sie die Namespacedeklarationen.  
+3.  Öffnen Sie die XAML-Datei im XML-Editor, und Ändern der obersten Ebene \<Fenster >-Element ein \<UserControl >-Element ohne die Namespacedeklarationen zu entfernen.  
   
-4.  Entfernen Sie die `x:Class` Deklaration von Element der obersten Ebene. Dadurch wird die Verwendung von XAML-Inhalt kompatibel mit dem Visual Studio-Toolfenster, das die Startseite hostet.  
+4.  Entfernen Sie die `x:Class` Deklaration aus dem Element oberster Ebene. Dadurch wird den XAML-Inhalt mit der Visual Studio-Toolfenster, das die Startseite hostet kompatibel.  
   
-5.  Fügen Sie die folgenden Namespacedeklarationen hinzu, auf der obersten Ebene \<UserControl > Element.  
+5.  Fügen Sie die folgenden Namespacedeklarationen der obersten Ebene \<UserControl > Element.  
   
-    ```  
+    ```vb  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
     ```  
   
-     Diese Namespaces können Sie die Visual Studio-Befehle, Steuerelemente und UI-Einstellungen zugreifen. Weitere Informationen finden Sie unter [Hinzufügen von Visual Studio-Befehle auf einer Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+     Diese Namespaces können Sie die Visual Studio-Befehle, Steuerelementen und Einstellungen für Benutzeroberfläche zugreifen. Weitere Informationen finden Sie unter [Befehle aus Visual Studio hinzufügen, um eine Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-     Das folgende Beispiel zeigt das Markup in der XAML-Datei für eine leere Startseite. Alle benutzerdefinierter Inhalt in der inneren verwendende <xref:System.Windows.Controls.Grid> Element.  
+     Das folgende Beispiel zeigt das Markup in der *XAML* -Datei für eine leere Startseite. Alle benutzerdefinierter Inhalt gesendet werden sollen, in der inneren <xref:System.Windows.Controls.Grid> Element.  
   
     ```vb  
     <UserControl  
@@ -63,32 +63,32 @@ Sie können eine benutzerdefinierte Startseite erstellen, anhand der Schritte in
     </UserControl>  
     ```  
   
-6.  Hinzufügen von Steuerelementen zu den leeren \<UserControl >-Elements auf die benutzerdefinierte Startseite ausfüllen. Informationen zum Hinzufügen von Funktionen, die für Visual Studio spezifisch sind, finden Sie unter [Hinzufügen von Visual Studio-Befehle auf einer Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+6.  Hinzufügen von Steuerelementen auf ein leeres \<UserControl >-Element So füllen Sie die benutzerdefinierte Startseite. Weitere Informationen zum Hinzufügen von Funktionen, die in Visual Studio spezifisch sind, finden Sie unter [Befehle aus Visual Studio hinzufügen, um eine Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-## <a name="testing-and-applying-the-custom-start-page"></a>Testen und Anwenden der benutzerdefinierten Startseite  
+## <a name="test-and-apply-the-custom-start-page"></a>Testen und Anwenden der benutzerdefinierten Startseite  
  Legen Sie die primäre Instanz von Visual Studio der benutzerdefinierten Startseite ausgeführt werden soll, bis Sie sicherstellen, dass Visual Studio kein Absturz erfolgt nicht. Testen Sie es stattdessen in der experimentellen Instanz ein.  
   
-#### <a name="to-test-a-manually-created-custom-start-page"></a>So testen Sie eine manuell erstellte benutzerdefinierte Startseite  
+### <a name="to-test-a-manually-created-custom-start-page"></a>So testen Sie eine manuell erstellte benutzerdefinierte Startseite  
   
-1.  Kopieren der XAML-Datei, und alle unterstützenden Textdateien oder Markup, zu der **%USERPROFILE%\My Dateien\Visual Studio 2015\StartPages\\**  Ordner.  
+1.  Kopieren der XAML-Datei und alle unterstützenden Textdateien oder Markup-Dateien, zu der *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  Ordner.  
   
-2.  Wenn Ihre Startseite verweist auf keine Steuerelemente oder die Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in * Visual Studio-Installation Ordner ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in *{Visual Studio-Installationsordner} \Common7\IDE\PrivateAssemblies\\* .  
   
-3.  Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv /rootsuffix Exp** eine experimentelle Instanz von Visual Studio zu öffnen.  
+3.  Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv/rootsuffix Exp** um eine experimentelle Instanz von Visual Studio zu öffnen.  
   
-4.  Wechseln Sie in der experimentellen Instanz zu den **Extras / Optionen / Umgebung / Start** Seite und wählen Sie die XAML-Datei aus der **Startseite anpassen** Dropdownliste.  
+4.  Wechseln Sie in der experimentellen Instanz zu den **Tools** > **Optionen** > **Umgebung** > **Start** Seite, und wählen Sie die XAML-Datei aus dem **Customize Start Page** Dropdownliste.  
   
 5.  Klicken Sie im Menü **Ansicht** auf **Startseite**.  
   
-     Ihre benutzerdefinierte Startseite angezeigt werden sollen. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, nehmen Änderungen vor kopieren und fügen Sie die geänderten Dateien und öffnen Sie dann erneut die experimentelle Instanz um die Änderungen anzuzeigen.  
+     Der benutzerdefinierten Startseite sollte angezeigt werden. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, nehmen Sie die Änderungen, kopieren und fügen Sie die geänderten Dateien und öffnen Sie erneut die experimentelle Instanz um die Änderungen anzuzeigen.  
   
-#### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Zum Anwenden der benutzerdefinierten Startseite in der primären Instanz von Visual Studio  
+### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Zum Anwenden die benutzerdefinierten Startseite in der primären Instanz von Visual Studio  
   
--   Nachdem Sie Ihre Startseite getestet und stabil sein gefunden haben, verwenden die **Startseite anpassen** option die **Optionen** (Dialogfeld), um sie als Startseite in der primären Instanz von Visual Studio auszuwählen.  
+-   Verwenden, nachdem Sie Ihre Startseite getestet und fand es stabil sein, die **Customize Start Page** option die **Optionen** im Dialogfeld für die Auswahl als Startseite in der primären Instanz von Visual Studio  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML an die Startseite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
- [Hinzufügen des Benutzersteuerelements an die Startseite](../extensibility/adding-user-control-to-the-start-page.md)   
- [Hinzufügen von Visual Studio-Befehle auf einer Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Startseite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Die Startseite Benutzersteuerelement hinzufügen](../extensibility/adding-user-control-to-the-start-page.md)   
+ [Hinzufügen von Visual Studio-Befehlen zu einer Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
+ [Exemplarische Vorgehensweise: Speichern von benutzereinstellungen auf einer Startseite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Bereitstellen von benutzerdefinierten Startseiten](../extensibility/deploying-custom-start-pages.md)

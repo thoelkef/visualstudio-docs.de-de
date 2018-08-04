@@ -1,5 +1,5 @@
 ---
-title: 'Häufig gestellte Fragen: Konvertieren-Add-ins in VSPackage-Erweiterungen | Microsoft Docs'
+title: 'Häufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,64 +11,64 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134044"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498979"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
-Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier werden die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Häufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen
+Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
   
 > [!WARNING]
->  Ab Visual Studio 2015 für c# und Visual Basic-Projekten können Sie anhand des VSIX-Projekts und Hinzufügen von Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in der Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  Ab Visual Studio 2015 für c# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
->  In vielen Fällen können Sie einfach Ihr Add-in-Code einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.  
+>  In vielen Fällen können Sie einfach Ihren Code-add-in einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.  
 >   
 >  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  Weitere Informationen finden Sie unter [wie kann ich meine Add-in-Code in einem VSPackage ausführen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) unten.  
+>  Weitere Informationen finden Sie unter [wie kann ich meinen Add-in Code in einem VSPackage ausführen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) unten.  
   
-## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Welche Software VSIX-Erweiterungen entwickeln müssen?  
- Ab Visual Studio 2015, führen Sie Sie nicht Visual Studio-SDK aus dem Downloadcenter installieren. Sie ist als optionales Feature in Visual Studio-Setup aus. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Welche Software benötige ich zum Entwickeln von VSIX-Erweiterungen?  
+ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="wheres-the-extension-documentation"></a>Wo befindet sich die Dokumentation für die Erweiterung?  
- Beginnen Sie mit [ab, die zum Entwickeln von Visual Studio-Erweiterungen](../extensibility/starting-to-develop-visual-studio-extensions.md). Anderen Artikeln über die Entwicklung für VSSDK-Erweiterung auf MSDN sind unten aufgeführt, dass eine.  
+## <a name="wheres-the-extension-documentation"></a>Wo befindet sich die Dokumentation zur Erweiterung?  
+ Beginnen Sie mit [mit der Entwicklung von Visual Studio-Erweiterungen beginnen](../extensibility/starting-to-develop-visual-studio-extensions.md). Weitere Artikel zur Entwicklung von VSSDK-Erweiterung auf MSDN finden Sie unten, dass ein.  
   
-## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Können meine add-in-Projekt in ein VSIX-Projekt werden konvertiert?  
- Ein Add-In Projekt kann nicht direkt in ein VSIX-Projekt konvertiert werden, da die in VSIX-Projekten verwendeten Mechanismen nicht identisch mit den Werten in Add-in-Projekte sind. Haben die VSIX-Projektvorlage sowie die richtige Projektelementvorlagen viel Code, der relativ einfach einrichten und Ausführen als VSIX-Erweiterung ermöglicht.  
+## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Kann ich meinen Add-In-Projekt in ein VSIX-Projekt konvertieren?  
+ Ein Add-In Projekt kann nicht direkt in einem VSIX-Projekt nicht konvertiert werden, da die verwendeten Mechanismen in VSIX-Projekte nicht identisch mit denen-Add-in-Projekte sind. Die VSIX-Projektvorlage sowie die richtige Projektelementvorlagen haben viel Code, der es relativ einfach einzurichten und als VSIX-Erweiterung ausgeführt wird.  
   
-##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich VSIX-Erweiterungen entwickeln?  
- Hier ist, wie Sie eine VSIX vornehmen, die einen Menübefehl hat:  
+##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?  
+ Hier ist, wie Sie einer VSIX-Datei vornehmen, die einen Menübefehl hat:  
   
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu erstellen, auf dem einen Menübefehl  
+#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt  
   
-1.  Erstellen eines VSIX-Projekts (**Datei**, **neu**, **Projekt**, oder geben **Projekt** in der **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual c# / Erweiterbarkeit** oder **Visual Basic / Erweiterungen** , und wählen Sie **VSIX-Projekts**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
+1.  Erstellen eines VSIX-Projekts (**Datei** > **neu** > **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** > **Erweiterbarkeit** oder **Visual Basic**  >   **Erweiterbarkeit** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
   
-2.  Hinzufügen einer **benutzerdefinierte Befehl** Projektelementvorlage. (Mit der rechten Maustaste in des Projektknoten der **Projektmappen-Explorer** , und wählen Sie **hinzufügen / neues Element**. In der **neues Projekt** Dialogfeld "für Visual c# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierte Befehl**.)  
+2.  Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. In der **neues Projekt** Dialogfeld für Visual c# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)  
   
-3.  Drücken Sie F5, um das Projekt im Debugmodus zu erstellen und auszuführen.  
+3.  Drücken Sie **F5** zum Erstellen und führen Sie das Projekt im Debugmodus befindet.  
   
      Eine zweite Instanz von Visual Studio wird geöffnet. Diese zweite Instanz wird experimentelle Instanz genannt und besitzt möglicherweise nicht die gleichen Einstellungen wie die Instanz von Visual Studio, die Sie zum Schreiben von Code verwenden. Wenn Sie die experimentelle Instanz zum ersten Mal ausführen, müssen Sie sich bei VS Online anmelden und Ihr Design und Profil festlegen.  
   
-     Auf der **Tools** Menü (in der experimentellen Instanz) sehen Sie eine Schaltfläche mit dem Namen **Meine Befehlsname**. Wenn Sie auf diese Schaltfläche auswählen, sollte die Meldung angezeigt: **in TestVSPackagePackage.MenuItemCallback()**.  
+     Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, eine Meldung angezeigt: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Wie kann ich meine Add-in-Code in einem VSPackage ausführen?  
+##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?  
  Add-In-Code kann auf zwei Arten ausgeführt werden:  
   
--   Ausgelöst durch einen Menübefehl (Der Code befindet sich in der `IDTCommandTarget.Exec`-Methode.)  
+-   Ausgelöst durch einen Menübefehl (der Code befindet sich in der `IDTCommandTarget.Exec` Methode.)  
   
 -   Automatisch beim Start (Der Code befindet sich im `OnConnection`-Ereignishandler.)  
   
  Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rückrufmethode hinzu:  
   
-#### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementieren eines Menübefehls in ein VSPackage  
+### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementieren eines Menübefehls in ein VSPackage  
   
-1.  Erstellen Sie ein VSPackage, das über einen Menübefehl verfügt. (Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1.  Erstellen Sie ein VSPackage, das über einen Menübefehl verfügt. (Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)  
   
 3.  Fügen Sie folgende `using`-Anweisungen in die Datei ein:  
   
@@ -83,7 +83,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
     ```  
   
-5.  Fügen Sie den Code aus der `IDTCommandTarget.Exec`-Methode des Add-Ins hinzu. Hier ist z. B. Code, der die Fügt einen neuen Bereich zu den **Ausgabe** Fenster und druckt "Some Text" in der neue Bereich.  
+5.  Fügen Sie den Code aus der `IDTCommandTarget.Exec`-Methode des Add-Ins hinzu. Hier ist z. B. Code, der einen neuen Bereich zum fügt die **Ausgabe** Fenster und gibt "Some Text" im neuen Bereich.  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -97,17 +97,17 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
     ```  
   
-6.  Erstellen Sie das Projekt, und führen Sie es aus. Drücken Sie F5, oder wählen Sie **starten** auf die **Debuggen** Symbolleiste. In der experimentellen Instanz von Visual Studio die **Tools** Menü sollte eine Schaltfläche mit dem Namen haben **Meine Befehlsname**. Bei Auswahl dieser Schaltfläche, die Wörter **einige Text** sollte angezeigt werden, eine **Ausgabe** Fensterbereich. (Möglicherweise müssen Sie öffnen die **Ausgabe** Fenster.)  
+6.  Erstellen Sie das Projekt, und führen Sie es aus. Drücken Sie **F5** oder wählen Sie **starten** auf die **Debuggen** Symbolleiste. In der experimentellen Instanz von Visual Studio die **Tools** Menü müssen auf eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, die Wörter **Some Text** sollte angezeigt werden, eine **Ausgabe** Fensterbereich. (Möglicherweise müssen Sie Sie öffnen die **Ausgabe** Fenster.)  
   
  Sie können den Code auch beim Start ausführen lassen. Dieser Ansatz wird jedoch für VSPackage-Erweiterungen generell nicht empfohlen. Wenn beim Start von Visual Studio versucht wird, zu viele Erweiterungen zu laden, kann sich die Startzeit erheblich verlängern. Eine bessere Vorgehensweise ist es, das VSPackage nur automatisch zu laden, wenn eine Bedingung erfüllt ist (beispielsweise, wenn eine Projektmappe geöffnet wird).  
   
  Dieses Verfahren zeigt, wie Sie Add-In-Code in einem VSPackage ausführen können, das automatisch geladen wird, wenn eine Projektmappe geöffnet wird:  
   
-#### <a name="to-autoload-a-vspackage"></a>Automatisches Laden eines VSPackages  
+### <a name="to-autoload-a-vspackage"></a>Automatisches Laden eines VSPackages  
   
-1.  Erstellen Sie ein VSIX-Projekt mit einem Visual Studio-Paket-Projektelement. (Die Schritte hierzu finden Sie unter [wie beginne ich beim Entwickeln von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Fügen Sie einfach die **Visual Studio-Paket** stattdessen Projektelementdateien.) Nennen Sie das VSIX-Projekt **TestAutoload**.  
+1.  Erstellen Sie ein VSIX-Projekt mit einem Visual Studio-Paket-Projektelement. (Die Schritte hierzu finden Sie unter [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Fügen Sie einfach die **Visual Studio-Paket** Projektelement stattdessen.) Nennen Sie das VSIX-Projekt **TestAutoload**.  
   
-2.  Öffnen Sie TestAutoloadPackage.cs. Suchen Sie die Zeile, in der die Paketklasse deklariert ist:  
+2.  Open *Sie TestAutoloadPackage.cs*. Suchen Sie die Zeile, in der die Paketklasse deklariert ist:  
   
     ```csharp  
     public sealed class <name of your package>Package : Package  
@@ -119,18 +119,18 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     ```  
   
-4.  Setzen Sie einen Haltepunkt in der `Initialize()`-Methode, und starten Sie das Debuggen (F5).  
+4.  Festlegen eines Haltepunkts in der `Initialize()` -Methode und dem Debuggen beginnen (**F5**).  
   
 5.  Öffnen Sie in der experimentellen Instanz ein Projekt. Das VSPackage sollte geladen und der Haltepunkt erreicht werden.  
   
- Sie können andere Kontexte angeben, in denen das VSPackage geladen werden soll, indem Sie die Felder von <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> verwenden. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
+ Sie können andere Kontexte angeben, in denen das VSPackage geladen werden soll, indem Sie die Felder von <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> verwenden. Weitere Informationen finden Sie unter [Load VSPackages](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Wie kann ich das DTE-Objekt abrufen?  
  Wenn das Add-In kein Benutzeroberfläche – zum Beispiel Menübefehle, Schaltflächen der Symbolleiste oder Toolfenster – anzeigt, können Sie möglicherweise den Code unverändert nutzen, solange Sie das DTE-Automatisierungsobjekt aus dem VSPackage abrufen. Gehen Sie dabei folgendermaßen vor:  
   
-#### <a name="to-get-the-dte-object-from-a-vspackage"></a>Abrufen des DTE-Objekts aus einem VSPackage  
+### <a name="to-get-the-dte-object-from-a-vspackage"></a>Abrufen des DTE-Objekts aus einem VSPackage  
   
-1.  Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage Visual Studio-Paket für die  *\<Projektname >* Package.cs-Datei. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
+1.  Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage für Visual Studio-Paket nach der  *\<Projektname > Package.cs* Datei. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
   
 2.  Fügen Sie diese `using`-Anweisungen hinzu:  
   
@@ -148,21 +148,21 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
  Wenn Sie das <xref:EnvDTE.DTE>-Automatisierungsobjekt abgerufen haben, können Sie den übrigen Code zum Projekt hinzufügen. Wenn Sie das <xref:EnvDTE80.DTE2>-Objekt benötigen, können Sie ebenso verfahren.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Wie ändere ich Menübefehle und Schaltflächen der Symbolleisten im Add-In in den Stil des VSPackages?  
- VSPackage-Erweiterungen nutzen die .vsct-Datei zur Erstellung der meisten Menübefehle, Symbolleisten, Schaltflächen der Symbolleisten und anderer Elemente der Benutzeroberfläche. Die **benutzerdefinierte Befehl** Projektelementvorlage bietet Ihnen die Möglichkeit zum Erstellen eines Befehls auf dem **Tools** Menü. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ VSPackage-Erweiterungen verwenden den *VSCT* Datei, um die meisten Menübefehle, Symbolleisten, Symbolleisten-Schaltflächen und andere Benutzeroberfläche zu erstellen. Die **benutzerdefinierten Befehls** Projektelementvorlage bietet Ihnen die Möglichkeit, einen Befehl zu erstellen, auf die **Tools** Menü. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
- Weitere Informationen zu VSCT-Dateien finden Sie unter [wie VSPackages hinzufügen Benutzeroberflächenelemente](../extensibility/internals/how-vspackages-add-user-interface-elements.md). Exemplarische Vorgehensweisen für die Funktionsweisen die VSCT-Datei zu verwenden, um die Menüelemente, Symbolleisten und Schaltflächen der Symbolleiste hinzufügen, finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).  
+ Weitere Informationen zu *VSCT* finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../extensibility/internals/how-vspackages-add-user-interface-elements.md). Exemplarische Vorgehensweisen für die Verwendung der *VSCT* Datei zum Hinzufügen von Menübefehlen, Symbolleisten und Schaltflächen der Symbolleiste finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="how-do-i-add-custom-tool-windows-in-the-vspackage-way"></a>Wie füge ich in VSPackages benutzerdefinierte Toolfenster hinzu?  
- Das Toolfenster benutzerdefinierte Projektelementvorlage bietet Ihnen die Möglichkeit zum Erstellen eines Toolfensters. Weitere Informationen zu diesem Projektelementvorlage, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md). Informationen zu Toolfenstern, finden Sie unter [Extending und Toolfenster anpassen](../extensibility/extending-and-customizing-tool-windows.md) sowie in den Artikeln, insbesondere [Hinzufügen eines Toolfensters](../extensibility/adding-a-tool-window.md).  
+ Die benutzerdefinierte Toolfenster Projektelementvorlage bietet Ihnen die Option zum Erstellen eines Toolfensters. Weitere Informationen zu diesem Projektelementvorlage, finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md). Informationen zu Toolfenstern, finden Sie unter [erweitern und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md) und in den Artikeln, darunter insbesondere [hinzufügen ein Toolfensters](../extensibility/adding-a-tool-window.md).  
   
 ## <a name="how-do-i-manage-visual-studio-windows-in-the-vspackage-way"></a>Wie verwalte ich Visual Studio-Fenster mit VSPackages?  
- Wenn das Add-In Visual Studio-Fenster verwaltet, sollte der Code des Add-Ins auch in einem VSPackage funktionieren. Diese Prozedur zeigt z. B. zum Hinzufügen von Code, der verwaltet die **Aufgabenliste** auf die `MenuItemCallback` Methode des VSPackage.  
+ Wenn das Add-In Visual Studio-Fenster verwaltet, sollte der Code des Add-Ins auch in einem VSPackage funktionieren. Beispielsweise dieses Verfahren veranschaulicht das Hinzufügen von Code, der verwaltet die **Aufgabenliste** auf die `MenuItemCallback` -Methode des VSPackages.  
   
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Einfügen von Code zur Fensterverwaltung von einem Add-In in ein VSPackage  
   
-1.  Erstellen Sie ein VSPackage, das einen Menübefehl, als in hat die [wie beginne ich beim Entwickeln von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
+1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)  
   
 3.  Fügen Sie diese `using`-Anweisungen hinzu:  
   
@@ -177,7 +177,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
     ```  
   
-5.  Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben, fügt die **Aufgabenliste**Listet die Anzahl der Aufgaben und löscht dann eine Aufgabe.  
+5.  Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben fügt die **Aufgabenliste**, listet die Anzahl der Aufgaben, und klicken Sie dann eine Aufgabe gelöscht.  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)   
@@ -208,9 +208,9 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Wie verwalte ich Projekte und Projektmappen in einem VSPackage?  
  Wenn das Add-In Projekte und Projektmappen verwaltet, sollte der Code des Add-Ins auch in einem VSPackage funktionieren. Dieser Vorgang zeigt beispielsweise, wie Sie Code hinzufügen können, der das Startprojekt abruft.  
   
-1.  Erstellen Sie ein VSPackage, das einen Menübefehl, als in hat die [wie beginne ich beim Entwickeln von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
+1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt kann  *\<Projektname >* Package.cs.)  
+2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)  
   
 3.  Fügen Sie diese `using`-Anweisungen hinzu:  
   
@@ -247,7 +247,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
     ```  
   
 ## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>Wie lege ich Tastenkombinationen in einem VSPackage fest?  
- Verwenden Sie das `<KeyBindings>`-Element der .vsct-Datei. Im folgenden Beispiel ist die Tastenkombination für den Befehl `idCommand1` Alt+A. Die Tastenkombination für den Befehl `idCommand2` ist Alt+Ctrl+A. Beachten Sie die Sytax für die Schlüsselnamen.  
+ Sie verwenden die `<KeyBindings>` Element der *VSCT* Datei. Im folgenden Beispiel die Tastenkombination für den Befehl `idCommand1` ist **Alt**+**ein**, und die Tastenkombination für den Befehl `idCommand2` ist **Alt**  + **STRG**+**ein**. Beachten Sie die Sytax für die Schlüsselnamen.  
   
 ```xml  
 <KeyBindings>  

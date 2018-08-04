@@ -1,5 +1,5 @@
 ---
-title: Standard-Befehl, Gruppen- und Symbolleiste Platzierung | Microsoft Docs
+title: Standard-Befehl, Gruppe und Symbolleiste Platzierung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,31 +18,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0753a29e323f18ad40bcc62a70cf8e9b1123b728
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da5716460c428098b2b6cc3bb78a51c3831201b2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130530"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498229"
 ---
-# <a name="default-command-group-and-toolbar-placement"></a>Standardbefehl, Gruppen- und Symbolleiste-Platzierung
-Die Benutzeroberfläche zeigt für Produkt Einheitlichkeit und Stabilität bestimmter Befehlsgruppen standardmäßig und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält Definitionen für Befehle und Befehlsgruppen. VSPackages können sich auch auf die Standardbefehle und Befehlsgruppen aus.  
+# <a name="default-command-group-and-toolbar-placement"></a>Standardplatzierung-Befehl, Gruppe und Symbolleiste
+Für Produkt Einheitlichkeit und Stabilität, die Benutzeroberfläche zeigt die bestimmte Befehlsgruppen und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält Definitionen für Befehle und Befehlsgruppen. VSPackages können sich auch auf die Standardbefehle und Befehlsgruppen aus.  
   
- Die Standard-Befehlsgruppen fallen in drei Kategorien: IDE Befehle, Produkt und Editor-Befehle.  
+ Die Standard-Befehlsgruppen fallen in drei Kategorien: IDE Befehle, Produkt und -Editor-Befehlen.  
   
 ## <a name="default-ide-commands"></a>Standard-IDE-Befehle  
- Die Standard-IDE-Symbolleiste enthält Befehle, die von allen Produkten enthalten, die freigegebenen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hierzu gehören auch Befehle, die im Zusammenhang mit generischen Projektvorgänge, z. B. die **speichern** Befehl und die **Element hinzufügen** Befehl. VSPackages sollte nicht zum Hinzufügen oder davon subtrahiert dieser Symbolleiste, mit einer Ausnahme: Wenn das Produkt oder VSPackage ein neue Toolfenster fügt, das Fenster sollte der Liste der verfügbaren Toolfenster hinzugefügt werden, auf die **Ansicht** Menü. Neue Produkte oder VSPackages können ihre eigenen Symbolleiste hinzufügen.  
+ Die Standard-IDE-Symbolleiste enthält Befehle, die von allen Produkten, die in enthaltenen freigegebene [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hierzu gehören auch Befehle, die im Zusammenhang mit generischen Projektvorgänge, z. B. die **speichern** Befehl und die **Element hinzufügen** Befehl. VSPackages, die nicht hinzugefügt oder subtrahiert dieser Symbolleiste, mit einer Ausnahme: Wenn das Produkt oder die VSPackage-ein neues Toolfenster fügt, das Fenster zur Liste der verfügbaren Toolfenstern hinzugefügt werden sollen, auf die **Ansicht** Menü. Neue Produkte oder VSPackages können eine eigene Symbolleiste hinzufügen.  
   
 ## <a name="default-product-commands"></a>Standardbefehle-Produkt  
- Jedes Produkt kann die IDE mit einem eigenen Standardsymbolleiste bereitstellen, die enthält wichtige und häufig verwendete Befehle. Es wird jedoch empfohlen, vorhandenen Menüs und Symbolleisten möglichst und ergänzen sie andere aufgabenspezifischen Symbolleisten, die nach Bedarf.  
+ Jedes Produkt kann es sich um die IDE mit eigenen Standardsymbolleiste bereitstellen, enthält wichtige und häufig verwendete Befehle. Es wird jedoch empfohlen, verwenden Sie vorhandenen Menüs und Symbolleisten, wann immer möglich und ergänzen diese anderen aufgabenspezifische Symbolleisten je nach Bedarf.  
   
- Das Feld "Priorität" für eine Symbolleiste bestimmt die Platzierung der Zeile. 0 (null) Priorität verwendet wird, wird die Symbolleiste auf die dritte Zeile (Spalte 3), unterhalb der Menüleiste platziert (Zeile 1) und die **Standard** Symbolleiste (Zeile 2). Aus diesem Grund andere Symbolleisten angezeigt werden, in Zeile (Priorität + 3). Nachfolgende Symbolleisten sind in der gleichen Zeile eingefügt, wenn genügend Platz vorhanden ist; Andernfalls werden sie automatisch auf die nächste Zeile verschoben.  
+ Das Feld "Priorität" für eine Symbolleiste bestimmt die Platzierung der Zeile. 0 (null) Priorität die Symbolleiste auf die dritte Zeile (Zeile 3), unter der Menüleiste platziert (Zeile 1) und die **Standard** Symbolleiste (Zeile 2). Aus diesem Grund anderen Symbolleisten angezeigt werden, in Zeile ("Priorität" + "3"). Nachfolgende Symbolleisten werden auf der gleichen Zeile platziert, wenn genügend Platz vorhanden ist; Andernfalls werden sie automatisch in die nächste Zeile verschoben.  
   
-## <a name="default-editor-commands"></a>Standard-Editor-Befehle  
- Eine VSPackage, die einen benutzerdefinierten Editor bereitstellt, sollten eine Standardsymbolleiste bereitstellen, die enthält die wichtigsten und häufig verwendete Befehle in diesem Editor. Die Symbolleiste des Editors sollte angezeigt werden, wenn der Editor aktiv ist und ausgeblendet werden sollen, wenn der Editor nicht aktiv ist. Die Sichtbarkeit wird gesteuert, der `VisibilityConstraints Element` der VSCT-Datei.  
+## <a name="default-editor-commands"></a>Standard-Editor-Befehlen  
+ Eine VSPackage, die einen benutzerdefinierten Editor enthält, sollten eine Standardsymbolleiste bereitstellen, die enthält die wichtigsten und häufig verwendete Befehle in Editor. Die Editor-Symbolleiste sollte angezeigt werden, wenn der Editor aktiv ist und ausgeblendet werden soll, wenn der Editor nicht aktiv ist. Diese Sichtbarkeit wird gesteuert, der `VisibilityConstraints` Element der *VSCT* Datei.  
   
- Symbolleisten-Editor-sollten unter IDE und Produkt Symbolleisten platziert werden.  
+ Editor-Symbolleisten sollten unter IDE und Produkt Symbolleisten platziert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
- [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: CustomDataSignature-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f56f9b2ffcb09ea8399b6d949cc781f5a99e7c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097327"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500643"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature-Element (Visual Studio-Vorlagen)
-Gibt die Textsignatur, um die benutzerdefinierten Daten zu suchen.  
+Gibt die Textsignatur "um die benutzerdefinierten Daten zu suchen.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -47,7 +47,7 @@ Gibt die Textsignatur, um die benutzerdefinierten Daten zu suchen.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
@@ -58,5 +58,5 @@ Gibt die Textsignatur, um die benutzerdefinierten Daten zu suchen.
  `CustomDataSignature` ist ein optionales Element.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

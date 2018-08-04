@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Färbbare Elemente | Microsoft Docs
+title: Benutzerdefinierte kolorierbare Elemente | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,62 +14,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b23ff39abcb9a1354ea28becab3b7df867378ddf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6025a7f0eb472444ba92346cecf2bc4686bf2eef
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133371"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499847"
 ---
-# <a name="custom-colorable-items"></a>Benutzerdefinierte Färbbare Elemente
-Sie können die Liste der Typen überschreiben implementieren benutzerdefinierte färbbare Elemente als Teil der Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  
+# <a name="custom-colorable-items"></a>Benutzerdefinierte kolorierbare Elemente
+Sie können die Liste der Typen überschreiben, durch die Implementierung der benutzerdefinierten kolorierbaren Elemente als Teil Ihrer Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  
   
-## <a name="user-settings-of-colorable-items"></a>Benutzereinstellungen Färbbare Elemente  
- Anzeigen der **Schriftarten und Farben** Dialogfeld dazu **Optionen** auf die **Tools** Menü, und wählen Sie dann **Schriftarten und Farben** Klicken Sie unter **Umgebung**. Bei Auswahl eine Anzeige, z. B. **Text-Editor** oder **Befehlsfenster**, **Einblenden von Elementen** Listenfeld zeigt alle färbbare Elemente zur Anzeige von. Sie können anzeigen und ändern Schriftart, Größe, Vordergrundfarbe und die Hintergrundfarbe für jede färbbare Element. Ihre Auswahl in einem Cache in der Registrierung gespeichert und mit dem Namen färbbare Element zugegriffen.  
+## <a name="user-settings-of-colorable-items"></a>Benutzereinstellungen der kolorierbaren Elemente  
+ Anzeigen der **Schriftarten und Farben** Dialogfeld dazu **Optionen** auf die **Tools** Menü, und wählen Sie dann **Schriftarten und Farben** Klicken Sie unter **Umgebung**. Bei der Auswahl einer Anzeige, wie z. B. **Text-Editor** oder **Befehlsfenster**, wird die **Anzeigeelemente** Listenfeld zeigt alle für diese Anzeige kolorierbaren Elemente. Sie können anzeigen und Ändern der Schriftart, Größe, Vorder- und Hintergrundfarbe für jede kolorierbaren Elements. Ihre Auswahl werden in einem Cache in der Registrierung gespeichert und der Name des kolorierbaren Elements zugreifen.  
   
-## <a name="presentation-of-colorable-items"></a>Darstellung der Färbbare Elemente  
- Da die IDE Benutzer Außerkraftsetzungen der färbbare Elemente in verarbeitet der **Schriftarten und Farben** (Dialogfeld), müssen Sie nur jede benutzerdefiniertes färbbare Element mit einem Namen angeben. Dieser Name wird in der **Elemente anzeigen** Liste. Die färbbare Elemente werden in alphabetischer Reihenfolge angezeigt. Um Ihre Sprachdienst benutzerdefinierte färbbare Elemente zu gruppieren, Sie den Namen durch Ihre Sprachenname, z. B. beginnen **NewLanguage - Kommentar** und **NewLanguage - Schlüsselwort**.  
+## <a name="presentation-of-colorable-items"></a>Darstellung der kolorierbaren Elemente  
+ Da die IDE überschreibungen der kolorierbaren Elemente, die in verarbeitet der **Schriftarten und Farben** (Dialogfeld), müssen Sie nur jedes benutzerdefiniertes färbbares Element mit einem Namen angeben. Dieser Name ist scheinbar in der **Anzeigeelemente** Liste. Die kolorierbaren Elemente werden in alphabetischer Reihenfolge angezeigt. Um den Sprachdienst benutzerdefinierte kolorierbare Elemente zu gruppieren, können Sie z. B. den Namen durch den Sprachnamen Ihres beginnen **NewLanguage - Kommentar** und **NewLanguage - Schlüsselwort**.  
   
 > [!CAUTION]
->  Der Name der Sprache aufzunehmen im Namen färbbare Element zum Vermeiden von Konflikten mit vorhandenen Namen von färbbare Element. Wenn Sie den Namen einer Ihrer färbbare Elemente während der Entwicklung ändern, müssen Sie den Cache zurücksetzen, der Ihre färbbare Elemente auf die zugegriffen wurde erstmalig erstellt wurde. Sie können die experimentellen Cache mit dem Tool CreateExpInstance zurückgesetzt, d. h. mit der Visual Studio-SDK, in der Regel im Verzeichnis installiert ist  
+>  Der Name der Sprache aufzunehmen im Namen kolorierbaren Elements zum Vermeiden von Konflikten mit vorhandenen Namen der kolorierbaren Elements. Wenn Sie den Namen eines kolorierbaren Elemente während der Entwicklung ändern, müssen Sie den Cache zurücksetzen, der erstmalig erstellt wurde, die der kolorierbaren Elemente zugegriffen wurde. Sie können den experimentellen Cache mit Zurücksetzen der **CreateExpInstance** -Tool, das mit Visual Studio SDK, in der Regel im Verzeichnis installiert wird:  
 >   
->  **C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
->  Rufen Sie zum Zurücksetzen des Caches `CreateExpInstance /Reset`. Weitere Informationen zu CreateExpInstance, finden Sie unter [CreateExpInstance-Hilfsprogramm](../../extensibility/internals/createexpinstance-utility.md).  
+>  Um den Cache zurückzusetzen, geben Sie **CreateExpInstance/Reset**. Weitere Informationen zu **CreateExpInstance**, finden Sie unter [CreateExpInstance-Hilfsprogramm](../../extensibility/internals/createexpinstance-utility.md).  
   
- Das erste Element in der Liste der färbbare Elemente wird nie auf die verwiesen wird. Das erste Element entspricht einem färbbare Elementindex 0 (null) und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt immer die Standardfarben für Text und die Attribute für dieses Element. Die einfachste Möglichkeit für den Umgang mit diesem Unreferenzierte Element ist ein Platzhalter färbbare Element in der Liste als erstes Element angeben.  
+ Das erste Element in der Liste der kolorierbaren Elemente wird nie auf die verwiesen wird. Das erste Element entspricht einem kolorierbaren Elementindex 0 (null) und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Standardfarben für Text und die Attribute für dieses Element immer bereitgestellt. Die einfachste Möglichkeit für den Umgang mit diesem nicht referenzierte Element ist ein Platzhalter färbbares Element in der Liste als erstes Element angeben.  
   
-## <a name="implementing-custom-colorable-items"></a>Implementieren benutzerdefinierte Färbbare Elemente  
+## <a name="implement-custom-colorable-items"></a>Implementieren von benutzerdefinierten kolorierbaren Elemente  
   
-1.  Definieren Sie, was in Ihrer Sprache, z. B.-Schlüsselwort, Operator und Bezeichner farbig hervorgehoben werden muss.  
+1.  Definieren Sie, was in Ihrer Sprache, z. B.-Schlüsselwort, Operator und Bezeichner farbig markiert werden muss.  
   
-2.  Erstellen Sie eine Enumeration färbbare Elemente.  
+2.  Erstellen Sie eine Enumeration, der diese kolorierbaren Elemente.  
   
-3.  Ordnen Sie die Tokentypen von Parser oder Scanner mit aufgezählter Werte zurückgegeben.  
+3.  Ordnen Sie die Tokentypen, die von einem Parser oder die Überprüfung mit den aufgelisteten Werten zurückgegeben.  
   
-     Die Werte, die den Tokentypen darstellt könnte z. B. den gleichen Werten in der Enumeration benutzerdefinierte färbbare Elemente sein.  
+     Z. B. möglicherweise die Werte, die die Typen von Sicherheitstoken darstellt. die gleichen Werte in der benutzerdefinierten kolorierbaren Elemente-Enumeration.  
   
-4.  In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode in Ihrer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Objekt "," Füllen Sie die Liste "Attribute" mit den Werten aus der benutzerdefinierte färbbare Elemente-Enumeration, die von der Parser oder Scanner zurückgegebenen Tokentypen entspricht.  
+4.  In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> -Methode in Ihrer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Objekt "," füllen die Liste der Attribute mit den Werten aus Ihrer benutzerdefinierten kolorierbaren Elemente-Enumeration, die für die Tokentypen, die von dem Parser oder der Überprüfung zurückgegeben.  
   
-5.  In der gleichen Klasse, die implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle, implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Schnittstelle und über zwei Methoden, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5.  In der gleichen Klasse, die implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle, implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Schnittstelle und die zwei Methoden, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
 6.  Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>-Schnittstelle.  
   
-7.  Wenn Sie 24-Bit- oder hohe Farbwerte unterstützen möchten, implementieren Sie außerdem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstelle.  
+7.  Wenn Sie 24-Bit-oder eine hohe Werte unterstützen möchten, implementieren Sie außerdem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstelle.  
   
-8.  Erstellen Sie in das Dienstobjekt Sprache eine Liste mit Ihrer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> Objekten, eines für jedes färbbare Element den Parser oder Scanner identifizieren kann.  
+8.  In Ihrer Sprache-Dienstobjekt, erstellen Sie eine Liste mit Ihrem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> Objekten, jeweils eines für die einzelnen kolorierbaren Elemente, die die Parser oder den Scanner identifizieren kann.  
   
-     Sie können jedes Element in der Liste mit den entsprechenden Wert aus der Enumeration benutzerdefinierte färbbare Elemente zugreifen. Verwenden Sie die Enumerationswerte als Index in der Liste. Das erste Element in der Liste nie zugegriffen wird, da er den Standardtext entspricht ein Format zuzuweisen, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] immer selbst behandelt. Sie können dafür kompensiert werden durch einen Platzhalter färbbare Element am Anfang der Liste einfügen.  
+     Sie können jedes Element in der Liste mit den entsprechenden Wert aus der Enumeration der benutzerdefinierten kolorierbaren Elemente zugreifen. Verwenden Sie die Enumerationswerte als Index, in der Liste. Das erste Element in der Liste wird nie zugegriffen werden, da es auf den Standardtext entspricht formatieren, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verarbeitet immer selbst. Sie können dies kompensieren, durch einen Platzhalter kolorierbare Element am Anfang der Liste einfügen.  
   
-9. In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> -Methode, die Anzahl der Elemente in der Liste Ihrer benutzerdefinierte färbbare Elemente zurück.  
+9. In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> -Methode, die Anzahl der Elemente in der Liste der benutzerdefinierten kolorierbaren Elemente zurück.  
   
-10. In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> -Methode, die angeforderte färbbare Element aus der Liste zurückgeben.  
+10. In der Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> -Methode angeforderten kolorierbaren Elements aus der Liste zurückgeben.  
   
- Ein Beispiel zum Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstellen, finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+ Ein Beispiel zum Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstellen finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Modell von einem Legacy-Sprachdienst](../../extensibility/internals/model-of-a-legacy-language-service.md)   
+ [Modell eines Diensts der legacysprache](../../extensibility/internals/model-of-a-legacy-language-service.md)   
  [Syntaxfarben in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)   
- [Syntaxfarben in einen Legacy-Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
- [Implementieren die Farben für Syntax](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Gewusst wie: Verwenden von integrierten einfärbbaren Elementen](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Syntaxfarben in einem legacysprachdiensten](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
+ [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)   
+ [Gewusst wie: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

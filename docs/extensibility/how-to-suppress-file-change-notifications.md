@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen | Microsoft Docs'
+title: 'Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95821baec7f2f46a65e2ab0f0b0b78b0e397f2ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128771"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497962"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Dateiänderungsbenachrichtigungen unterdrücken
-Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld angezeigt, mit der Meldung **möchten Sie die Änderungen auf die folgenden Elemente zu speichern?** Dies wird als Datei-änderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld anzeigen immer wieder schnell lästig werden.  
+# <a name="how-to-suppress-file-change-notifications"></a>Gewusst wie: Unterdrücken von dateiänderungsbenachrichtigungen
+Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld anzeigt, mit der Meldung **möchten Sie die folgenden Elemente speichern?** Dies wird als dateiänderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld können Sie immer wieder anzeigen schnell lästig werden.  
   
- Sie können das Dialogfeld zu öffnen, die mit dem folgenden Verfahren programmgesteuert unterdrücken. Auf diese Weise können Sie eine Datei sofort laden, ohne den Benutzer auffordern, die Änderungen jedes Mal zu speichern.  
+ Sie können dieses Dialogfeld können Sie mit dem folgenden Verfahren programmgesteuert unterdrücken. Durch das Unterdrücken des Dialogfelds, können Sie eine Datei sofort erneut laden ohne den Benutzer auffordern, die Änderungen jedes Mal zu speichern.  
   
-### <a name="to-suppress-file-change-notification"></a>Datei-änderungsbenachrichtigung unterdrücken  
+## <a name="to-suppress-file-change-notification"></a>Dateiänderungsbenachrichtigung unterdrückt werden sollen.  
   
 1.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode, um zu bestimmen, welche TextBuffer-Objekt der geöffneten Datei zugeordnet ist.  
   
-2.  Direkte der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> -Objekt, das im Arbeitsspeicher, um ignorieren dateiänderungen, durch Abrufen überwacht wird der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> -Schnittstelle aus der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> (Dokumentdaten)-Objekt, und implementieren Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> Methode mit der `fIgnore` Parameter Legen Sie auf `true`.  
+2.  Direkte der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> -Objekt, das im Arbeitsspeicher, um das ignorieren dateiänderungen durch Abrufen überwacht der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> -Schnittstelle aus der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> (Dokumentdaten)-Objekt, und ein anschließendes Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> -Methode mit der `fIgnore` Parameter Legen Sie auf `true`.  
   
 3.  Rufen Sie die Methoden auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Schnittstellen, die im Arbeitsspeicher aktualisiert <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt mit den Änderungen der Datenbankdatei (z. B. wenn ein Feld für Ihre Komponente hinzugefügt wird).  
   
-4.  Aktualisieren Sie die Datei auf dem Datenträger mit den Änderungen, unabhängig von der alle ausstehenden Änderungen, die der Benutzer möglicherweise ausgeführt haben.  
+4.  Aktualisieren Sie die Datei auf dem Datenträger mit den Änderungen, ohne Sie in Betracht ziehen, alle ausstehenden Änderungen, die der Benutzer möglicherweise ausgeführt haben.  
   
-     Auf diese Weise, wenn Sie leiten die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> änderungsbenachrichtigungen für Objekt, das Fortsetzen der Überwachung für die Datei, die der Textpuffer im Arbeitsspeicher Version stellt die Änderungen, die Sie generiert haben, sowie alle anderen ausstehenden Änderungen. Die Datei auf Datenträger reflektiert den aktuellen Code, der von Ihnen erstellte, und alle gespeicherten Änderungen vom Benutzer zuvor im Code Benutzer bearbeitet.  
+     Auf diese Weise, wenn Sie leiten die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> änderungsbenachrichtigungen für Objekt, das Fortsetzen der Überwachung für die Datei, das den Textpuffer im Arbeitsspeicher spiegelt wider, die Änderungen, die Sie erstellt haben. Der Textpuffer im Arbeitsspeicher gibt auch alle anderen ausstehenden Änderungen. Datei auf dem Datenträger Gibt den aktuellen Code, der von Ihnen generierte, und alle Änderungen, die vom Benutzer zuvor im Code bearbeitet werden, Benutzer gespeichert.  
   
-5.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> Methode zum Benachrichtigen der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt zum Fortsetzen der Überwachung für dateiänderungsbenachrichtigungen durch Festlegen der `fIgnore` Parameter `false`.  
+5.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> -Methode benachrichtigt die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt, das Fortsetzen der Überwachung für dateiänderungsbenachrichtigungen durch Festlegen der `fIgnore` Parameter, um `false`.  
   
-6.  Wenn Sie beabsichtigen, mehrere Änderungen in der Datei, wie im Fall von Quellcodeverwaltungssystem (SCC), müssen Sie globale Änderung Dateidienst dateiänderungsbenachrichtigungen vorübergehend anhalten mitteilen.  
+6.  Wenn Sie mehrere Änderungen an der Datei, wie im Fall von quellcodeverwaltung (SCC), vornehmen möchten, müssen Sie die globale dateiänderungsdienst dateiänderungsbenachrichtigungen zeitweise zu unterbrechen mitteilen.  
   
-     Z. B. Wenn Sie die Datei schreiben und ändern Sie den Zeitstempel, müssen Sie die dateiänderungsbenachrichtigungen angehalten wird, wie die neue Version und Timestample Vorgänge jedes, zählen als eine separate Datei Änderungsereignis. Um die globalen Datei-änderungsbenachrichtigung zu aktivieren, Sie stattdessen rufen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> Methode.  
+     Z. B. Wenn Sie die Datei schreiben und ändern Sie dann auf den Zeitstempel, müssen Sie die dateiänderungsbenachrichtigungen anzuhalten, da die Vorgänge schreiben und Zeitstempel jeder als eine separate Datei Change-Ereignis gezählt. Um die globale dateiänderungsbenachrichtigung zu aktivieren, rufen Sie stattdessen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> Methode.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Datei-änderungsbenachrichtigung zu unterdrücken.  
+ Im folgenden Codebeispiel wird veranschaulicht, wie dateiänderungsbenachrichtigung unterdrückt wird.  
   
 ```cpp  
 //Misc. helper classes  
@@ -116,4 +116,4 @@ void CSuspendFileChanges::Resume()
 ```  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Wenn umfasst mehrere Änderungen an der Datei, wie im Fall von SCC, die Ihren Fall ist es wichtig, globale dateiänderungsbenachrichtigungen vor einer Warnung die Dokumentdaten zum Fortsetzen der Überwachung für dateiänderungen fortgesetzt.
+ Wenn umfasst mehrere Änderungen an der Datei, wie im Fall von SCC, das Ihrem Fall ist es wichtig, globale dateiänderungsbenachrichtigungen Warnungen die Dokumentendaten zum Fortsetzen der Überwachung für dateiänderungen fortsetzen.
