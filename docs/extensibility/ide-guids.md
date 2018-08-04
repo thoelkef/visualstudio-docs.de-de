@@ -1,5 +1,5 @@
 ---
-title: IDE-GUIDs | Microsoft Docs
+title: IDE-GUIDs | Microsoft-Dokumentation
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,16 +13,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130270"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498183"
 ---
 # <a name="ide-guids"></a>IDE-GUIDs
 
-Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der einige Teile der integrierten Entwicklungsumgebung (IDE) an, wie in der folgenden Tabelle aufgeführt.
+Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der integrierten Entwicklungsumgebung (IDE) veröffentlicht, wie in der folgenden Tabelle aufgeführt.
 
 ## <a name="core-systems"></a>Core-Systeme
 
@@ -39,7 +39,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_TextEditorFactory>|8B382828-6202-11d1-8870-0000F87579D2|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsNewProjectPseudoFolder>|DCF2A94A-45B0-11d1-ADBF-00C04FB6BE4C|
 
-## <a name="broadly-visible-components"></a>Allgemein sichtbare Komponenten
+## <a name="broadly-visible-components"></a>Allgemein sichtbaren Komponenten
 
 |Konstante|GUID|
 |--------------|----------|
@@ -49,7 +49,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11D1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuellen und physischen Ordner und Unterprojekte
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuellen und physischen Ordner und seine Unterprojekte
 
 |Konstante|GUID|
 |--------------|----------|
@@ -58,7 +58,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_ItemType_SubProject>|EA6618E8-6E24-4528-94BE-6889FE16485C|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_ItemType_VirtualFolder>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|
 
-## <a name="ui-contexts"></a>Benutzeroberflächen-Kontexte
+## <a name="ui-contexts"></a>Benutzeroberflächen-Kontexten
 
 |Konstante|GUID|
 |--------------|----------|
@@ -85,7 +85,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>Befehlsgruppen und Eigenschaften
+## <a name="command-sets-and-properties"></a>Befehl legt Eigenschaften und
 
 |Konstante|GUID|
 |--------------|----------|
@@ -98,7 +98,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>Task-Listen-GUIDs
+## <a name="task-list-guids"></a>Aufgabenliste für GUIDs
 
 |Konstante|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Komponente Selektor Seite GUIDs
+## <a name="component-selector-page-guids"></a>Komponenten-wählseite GUIDs
 
 |Konstanten|GUID|
 |---------------|----------|
@@ -132,6 +132,6 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs der e
 
 ## <a name="see-also"></a>Siehe auch
 
-- [COM-Konstanten in verwaltetem Code](../extensibility/com-constants-in-managed-code.md)
+- [COM-Konstanten in verwaltetem code](../extensibility/com-constants-in-managed-code.md)
 - [IDE-Konstanten](../extensibility/ide-constants.md)
-- [IDE-definierte Befehle zum Erweitern von Projektsystemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [IDE-definierte Befehle zum Projekt s Ystems erweitern](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Benutzereinstellungen und Optionen | Microsoft Docs
+title: Erweitern von Benutzereinstellungen und Optionen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,27 +16,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d71328c84f69b2a6adbd682be3a2b326d9f542e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135534"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498632"
 ---
-# <a name="extending-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und Optionen
-Sind in Visual Studio gibt es zwei Hauptmethoden, um die Pflege der benutzereinstellungen. Die **Extras / Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festlegen. Benutzereinstellungen ermöglichen Benutzern die Angabe der allgemeine Eigenschaften für die Konfiguration von Visual Studio. Weitere Informationen zu Optionsseiten finden Sie unter [Optionen und Seiten für Optionen](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extend-user-settings-and-options"></a>Erweitern von benutzereinstellungen und Optionen
+Es gibt zwei Hauptmethoden zum Beibehalten von benutzereinstellungen, in Visual Studio. Die **Tools** > **Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festgelegt. Benutzereinstellungen können Benutzer allgemeine Eigenschaften für die Konfiguration von Visual Studio angeben. Weitere Informationen zu den Seiten für Optionen, finden Sie unter [Optionen und Optionsseiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  
   
  [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)  
- Erläutert das Erstellen einer Optionsseite.  
+ Erstellen Sie eine Seite mit Optionen erläutert.  
   
  [Erstellen einer Einstellungskategorie](../extensibility/creating-a-settings-category.md)  
  Erläutert das Erstellen einer Einstellungskategorie.  
   
- [Verwenden des Einstellungsspeichers](../extensibility/using-the-settings-store.md)  
- Erklärt, wie die Einstellungen speichern.  
+ [Verwenden Sie den einstellungsspeicher](../extensibility/using-the-settings-store.md)  
+ Erläutert, wie Sie mit dem einstellungsspeicher.  
   
- [Abrufen von Dienstinformationen aus dem Einstellungsspeicher](../extensibility/getting-service-information-from-the-settings-store.md)  
- Erläutert die verfügbaren Dienste aus dem Store Einstellungen zu erhalten.  
+ [Abrufen von Dienstinformationen aus dem einstellungsspeicher](../extensibility/getting-service-information-from-the-settings-store.md)  
+ Erläutert die verfügbaren Dienste aus dem einstellungsspeicher zu erhalten.  
   
- [Schreiben in den Speicher für Benutzereinstellungen](../extensibility/writing-to-the-user-settings-store.md)  
- Erläutert das Schreiben in den Speicher des Benutzers Einstellungen.
+ [Schreiben Sie in den Speicher für benutzereinstellungen](../extensibility/writing-to-the-user-settings-store.md)  
+ Es wird erläutert, wie in den Speicher für benutzereinstellungen zu schreiben.

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecc70112dc89a1866a4688fd39d8a2aae129387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9110e1c2ac6c39898f7dbbd6f9f4412ebcba278
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138771"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497436"
 ---
-# <a name="walkthrough-creating-a-custom-editor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors
-Die VSPackage-Projektvorlage kann einen einfachen benutzerdefinierten Editor in C++ erstellen.  Die VSPackage-Projektvorlage wird C#- oder Visual Basic-Projekten nicht mehr unterstützt. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+# <a name="walkthrough-create-a-custom-editor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors
+Die VSPackage-Projektvorlage kann einen einfachen, benutzerdefinierten Editor in C++ erstellen. Die VSPackage-Projektvorlage wird C#- oder Visual Basic-Projekte nicht mehr unterstützt. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="the-visual-studio-package-project-template"></a>Die Visual Studio-Paket-Projektvorlage  
- Die Visual Studio-Paket-Projektvorlage finden Sie in der **neues Projekt** Dialogfeld im Ordner "C++-Erweiterbarkeit"  
+ Sie finden die Visual Studio-Paket-Projektvorlage in das **neues Projekt** Dialogfeld unter die **C++-Erweiterungen** Ordner.  
   
-### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>So erstellen eine VSPackage mit der Visual Studio-Paket-Vorlage  
+### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>So erstellen Sie eine VSPackage mithilfe der Visual Studio-Paketvorlage  
   
-1.  Erstellen Sie ein Projekt mit Visual Studio-Paketvorlage ein.  
+1.  Erstellen Sie ein Projekt mit der Visual Studio-Paket-Vorlage.  
   
-2.  Wählen Sie die **benutzerdefinierten Editors** aus, und klicken Sie auf **Weiter**. Die **Editoroptionen** angezeigt wird.  
+2.  Wählen Sie die **Editor für benutzerdefinierte** aus, und klicken Sie auf **Weiter**. Die **Editoroptionen** Seite wird angezeigt.  
   
-3.  Geben Sie den Namen des Editors in die **editorname** Feld. Geben Sie die Dateierweiterung, die im Editor zugeordnet werden sollen die **Dateierweiterung** Feld. Der Editor ist für Dateien mit dieser Erweiterung verfügbar. Die Erweiterung wird nicht für Windows nur für Visual Studio registriert. Geben Sie für neue Dokumente mit Ihrem-Editor in der Standarddateiname der **Standarddateiname** Feld.  
+3.  Geben Sie den Namen des Editors in die **editorname** Feld. Geben Sie die Dateierweiterung, die Ihr Editor im zugeordnet werden sollen die **Dateierweiterung** Feld. Ihre-Editor ist für Dateien mit dieser Erweiterung verfügbar. Die Dateierweiterung ist nicht für Windows nur für Visual Studio registriert. Geben Sie der Standarddateiname für neue Dokumente erstellt, die mit Ihrem-Editor in die **Standarddateiname** Feld.  
   
 4.  Klicken Sie auf **Fertig stellen** , um Ihr VSPackage in dem von Ihnen angegebenen Ordner zu erstellen.  
   
-### <a name="to-test-your-custom-editor"></a>So testen Sie Ihre benutzerdefinierten editor  
+### <a name="to-test-your-custom-editor"></a>Zum Testen des benutzerdefinierten Editors  
   
-1.  Auf der **Datei** Sie im Menü **neu** , und klicken Sie dann auf **Datei**.  
+1.  Auf der **Datei** Startmenü **neu** , und klicken Sie dann auf **Datei**.  
   
-2.  In der **installierte Vorlagen** im Bereich der **neue Datei** wählen Sie im Dialogfeld der Vorlage, und klicken Sie dann auf die Datei, Sie die gerade registriert haben geben.  
+2.  In der **installierte Vorlagen** im Bereich der **neue Datei** wählen Sie im Dialogfeld die Dateivorlage, und klicken Sie dann auf die Datei, Sie registriert geben.  
   
 3.  Klicken Sie auf **öffnen** anzeigen und bearbeiten das Dokument.  
   
-     Der Editor unterstützt Ausschneiden und einfügen, suchen und ersetzen und Open-Load-Vorgänge.  
+     Der Editor unterstützt Ausschneiden und einfügen, suchen und ersetzen und Open-and-Load-Vorgänge.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)
