@@ -1,5 +1,5 @@
 ---
-title: Datei Status Code Enumerator | Microsoft Docs
+title: Dateistatuscode-Enumerator | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128167"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498167"
 ---
-# <a name="file-status-code-enumerator"></a>Code-Status-Datei-Enumerator
-Die `SccStatus` Enumerator enthält benannte Konstante Werte, die den Zustand einer Datei in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und `POPLISTFUNC` Rückruffunktion (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Einzelheiten).  
+# <a name="file-status-code-enumerator"></a>Dateistatuscode-enumerator
+Die `SccStatus` Enumerator enthält benannte Konstante Werte, die den Status einer Datei in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und `POPLISTFUNC` Callback-Funktion (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Einzelheiten).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,40 +56,40 @@ enum SccStatus {
  Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
   
  SCC_STATUS_NOTCONTROLLED  
- Datei ist nicht in der quellcodeverwaltung.  
+ Datei ist nicht unter quellcodeverwaltung.  
   
  SCC_STATUS_CONTROLLED  
- Datei wird in die quellcodeverwaltung.  
+ Datei befindet sich unter quellcodeverwaltung.  
   
  SCC_STATUS_CHECKEDOUT  
- Ausgecheckt, vom aktuellen Benutzer auf dem lokalen Datenträger.  
+ Die von den aktuellen Benutzer auf dem lokalen Datenträger ausgecheckt.  
   
  SCC_STATUS_OUTOTHER  
  Datei wird von einem anderen Benutzer ausgecheckt.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Datei ist exklusiv ausgecheckt.  
+ Datei wird exklusiv ausgecheckt.  
   
  SCC_STATUS_OUTMULTIPLE  
- Datei wird von mehr als einem Benutzer ausgecheckt.  
+ Datei wird von mehreren Benutzern ausgecheckt.  
   
  SCC_STATUS_OUTOFDATE  
- Die Datei ist nicht die aktuellste Version.  
+ Die Datei ist nicht das neueste.  
   
  SCC_STATUS_DELETED  
  Datei wurde aus dem Projekt gelöscht.  
   
  SCC_STATUS_LOCKED  
- Datei ist gesperrt. keine weitere Versionen zulässig.  
+ Datei gesperrt ist; Es wurden keine weiteren Versionen zulässig.  
   
  SCC_STATUS_MERGED  
- Datei zusammengeführt, aber noch nicht behoben und überprüft wurde.  
+ Datei wurde zusammengeführt, aber noch nicht behoben bzw. überprüft.  
   
  SCC_STATUS_SHARED  
- Datei wird zwischen Projekten gemeinsam genutzt.  
+ Datei wird von Projekten gemeinsam verwendet.  
   
  SCC_STATUS_PINNED  
- Um eine explizite Version freigegeben wird.  
+ Datei ist eine explizite Version freigegeben.  
   
  SCC_STATUS_MODIFIED  
  Datei wurde geändert/unterteilt/verletzt.  
@@ -98,7 +98,7 @@ enum SccStatus {
  Datei wird vom aktuellen Benutzer ausgecheckt.  
   
  SCC_STATUS_NOMERGE  
- Datei kann nie mit zusammengeführt werden und muss nicht gespeichert werden, bevor Sie einen GET-Befehl.  
+ Datei kann nicht mit zusammengeführt werden und muss nicht gespeichert werden, bevor Sie einen GET.  
   
  SCC_STATUS_RESERVED_1  
  Für die interne Verwendung vorgesehen.  
@@ -107,6 +107,6 @@ enum SccStatus {
  Für die interne Verwendung vorgesehen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Datenquellen-Steuerelement-Plug-ins](../extensibility/source-control-plug-ins.md)   
+ [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

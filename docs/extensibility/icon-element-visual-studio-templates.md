@@ -1,5 +1,5 @@
 ---
-title: Icon-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Icon-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129854"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499291"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
-Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient, die entweder in angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld), für die Vorlage.  
+Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder angezeigt wird, die **neues Projekt** oder **neues Element hinzufügen** im Dialogfeld für die Vorlage.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -48,8 +48,8 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient, die entwed
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID auf.|  
-|`ID`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -63,7 +63,7 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient, die entwed
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
   
- Der Text enthält, der Pfad und Dateiname des Vorlagensymbols, die in angezeigt werden die **neues Projekt** (Dialogfeld).  
+ Der Text gibt den Pfad und Dateiname des Vorlagensymbols, die in angezeigt werden die **neues Projekt** Dialogfeld.  
   
 ## <a name="remarks"></a>Hinweise  
  `Icon` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
@@ -96,5 +96,5 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient, die entwed
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

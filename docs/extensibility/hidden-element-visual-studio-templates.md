@@ -1,5 +1,5 @@
 ---
-title: Ausgeblendet-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Ausgeblendet-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127300"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498261"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
-Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,12 +53,12 @@ Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder *
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`, wodurch angegeben wird, davon, ob die Vorlage angezeigt wird, in der **neues Projekt** oder **neues Element hinzufügen** Dialogfelder.  
+ Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die Vorlage angezeigt wird, in der **neues Projekt** oder **neues Element hinzufügen** Dialogfelder.  
   
 ## <a name="remarks"></a>Hinweise  
  `Hidden` ist ein optionales Element.  
   
- Wenn angegeben, keine weiteren untergeordneten Elemente von der `TemplateData` Element sind erforderlich.  
+ Wenn angegeben, keine anderen untergeordneten Elementen der `TemplateData` Element sind erforderlich.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
@@ -89,5 +89,5 @@ Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder *
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

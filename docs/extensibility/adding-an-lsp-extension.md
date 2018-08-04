@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081682"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499389"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -111,26 +111,6 @@ Um eine Dienst-spracherweiterung, die mit einem LSP-basierte Sprache-Server zu e
 Als Nächstes erstellen Sie eine neue leere VSIXProject durch Navigieren zu **Datei** > **neues Projekt** > **Visual C#-**  >   **Erweiterbarkeit** > **VSIX-Projekt**:
 
 ![Erstellen Sie die Vsix-Projekt](media/lsp-vsix-project.png)
-
-Visual Studio-Unterstützung für LSP werden für die Preview-Version in Form einer VSIX-Datei ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Diese VSIX müssen Erweiterung Entwickler, die zum Erstellen einer Erweiterung mit LSP Language-Servern abhängig sein. Aus diesem Grund Kunden, die eine Server-spracherweiterung installieren **müssen zunächst die Sprache Server Protokoll Client Preview VSIX-Datei installieren.**
-
-Öffnen Sie zum Definieren der VSIX-Abhängigkeit im VSIX-Manifesten-Designer für VSIX (durch Doppelklicken auf die *"Source.Extension.vsixmanifest"* Datei in Ihrem Projekt) und navigieren Sie zu **Abhängigkeiten**:
-
-![Verweis auf die Sprache, Server-Protokoll-Client hinzufügen](media/lsp-reference-lsp-dependency.png)
-
-Erstellen Sie eine neue Abhängigkeit wie folgt:
-
-![Definieren der Abhängigkeit von Sprache-Server-Protokoll-client](media/lsp-define-lsp-dependency.png)
-
-* **Quelle**: manuell definiert werden
-* **Namen**: Vorschau auf Server-Protokoll-Client
-* **Bezeichner**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Versionsbereich**: [1.0,2.0)
-* **Wie die Abhängigkeit aufgelöst wird**: vom Benutzer installiert
-* **Download-URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> Die **Download-URL** müssen ausgefüllt werden, damit Benutzer, die die Erweiterung installieren, installieren Sie die erforderliche Abhängigkeit veranschaulicht.
 
 ### <a name="language-server-and-runtime-installation"></a>Language-Server und -Runtime-installation
 

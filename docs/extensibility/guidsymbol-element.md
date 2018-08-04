@@ -1,5 +1,5 @@
 ---
-title: GuidSymbol Element | Microsoft Docs
+title: GuidSymbol-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5e3a3f4d33e166d344669dbeb4bc1a877335f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16e7a1b84a6baa26b69545b3fa55e4434e5998f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128065"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500068"
 ---
-# <a name="guidsymbol-element"></a>GuidSymbol-Element
-Die `GuidSymbol` Element enthält die GUID des GUID: ID-Paar, das ein Menü, eine Gruppe oder ein Befehl darstellt. Die ID stammen aus einer `IDSymbol` Element in der `GuidSymbol` Element. Die `GuidSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die GUID der in enthalten ist, bietet die `value` Attribut.  
+# <a name="guidsymbol-element"></a>GuidSymbol-element
+Die `GuidSymbol` Element enthält die GUID des das GUID: ID-Paar, das ein Menü, Gruppe oder den Befehl darstellt. Die ID stammt aus einer `IDSymbol` Element in der `GuidSymbol` Element. Die `GuidSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die GUID, der in enthalten ist, enthält die `value` Attribut.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <GuidSymbol name="guidMyCommandSet" value="{xxxxxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx}">  
   <IDSymbol>... </IDSymbol>  
   <IDSymbol>... </IDSymbol>  
@@ -40,23 +40,23 @@ Die `GuidSymbol` Element enthält die GUID des GUID: ID-Paar, das ein Menü, ein
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderlich. Der Name des Symbols GUID.|  
+|Name|Erforderlich. Der Name des dem GUID-Symbol.|  
 |Wert|Erforderlich. GUID der GUID-Symbol.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[IDSymbol-Element](../extensibility/idsymbol-element.md)|Enthält die ID der dem GUID: ID-Paar, die ein Menü, eine Gruppe oder ein Befehl darstellt.|  
+|[IDSymbol-element](../extensibility/idsymbol-element.md)|Enthält die ID der dem GUID: ID-Paar, die ein Menü, Gruppe oder den Befehl darstellt.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Symbols-Element](../extensibility/symbols-element.md)|Gruppen `GuidSymbol` Elemente in einer VSCT-Datei.|  
+|[Symbols-element](../extensibility/symbols-element.md)|Gruppen `GuidSymbol` Elemente in einem *VSCT* Datei.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel eine VSCT-Datei enthält drei `GuidSymbol` Elemente in seiner `Symbols` Abschnitt, für das Paket selbst eine für den Befehlssatz (die Auflistung von Menüs, Gruppen und Befehle, die das Paket zur Verfügung gestellt) und eine für die Bitmaps, die bereitstellen Symbole für Schaltflächen und andere visuellen Komponenten. Jede `IDSymbol` Element in einer bestimmten `GuidSymbol` -Element muss einen eindeutigen aufweisen `value`. Allerdings `IDSymbol` Elemente, die identische Werte haben können in einem Paket vorhanden, solange sie anderen übergeordneten Objekte verfügen.  
+ In der Regel eine *VSCT* -Datei enthält drei `GuidSymbol` Elemente in der `Symbols` Abschnitt, der für das Paket selbst, der für den Befehlssatz (die Sammlung von Menüs, Gruppen und Befehle, die das Paket zur Verfügung stellt), und eine für die Bitmaps, die Symbole für die Schaltflächen und anderen visuellen Komponenten bereitstellen. Jede `IDSymbol` Element in einer angegebenen `GuidSymbol` -Element muss einen eindeutigen besitzen `value`. Allerdings `IDSymbol` Elemente, die identische Werte aufweisen können in einem Paket vorhanden, solange sie die verschiedene übergeordneten Elementen verfügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152518"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498563"
 ---
 # <a name="add-search-to-a-tool-window"></a>Hinzufügen der Suche zu einem Toolfenster
 Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können Sie die gleichen Suchfunktionen, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:  
@@ -33,7 +33,7 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
   
 -   Die Fähigkeit zum Suchen nach bestimmten Feldern oder Aspekte der Ziele für die Suche zu filtern.  
   
- Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
+Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
   
 1.  Erstellen Sie ein VSPackage-Projekt.  
   

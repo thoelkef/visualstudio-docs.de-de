@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von modalen Dialogfeldern | Microsoft Docs
+title: Erstellen und Verwalten von modalen Dialogfeldern | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,48 +13,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b1e39e4479b0b6b909c625e1e8b6ad19955d30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102199"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498748"
 ---
-# <a name="creating-and-managing-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
-Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster des Dialogfelds deaktiviert ist, während das Dialogfeld angezeigt wird und dann das übergeordnete Fenster erneut aktivieren, nachdem Sie das Dialogfeld geschlossen wurde. Wenn Sie dies tun, kann die Fehlermeldung: "Microsoft Visual Studio kann nicht beendet, da ein modales Dialogfeld aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut."  
+# <a name="create-and-manage-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
+Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster im Dialogfeld deaktiviert ist, während das Dialogfeld angezeigt wird und anschließend das übergeordnete Fenster erneut aktivieren, nachdem Sie das Dialogfeld geschlossen wurde. Wenn Sie dies nicht tun, erhalten Sie möglicherweise den Fehler: *Microsoft Visual Studio kann nicht heruntergefahren, da ein modales Dialogfeld noch aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut.*  
   
- Es gibt zwei Möglichkeiten, dies aus. Die empfohlene Methode ist ein WPF-Dialogfeld wird zum Ableiten von <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, und rufen Sie anschließend <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> um das Dialogfeld anzuzeigen. Wenn Sie so vorgehen, müssen Sie nicht den modalen Zustand des übergeordneten Fensters zu verwalten.  
+ Es gibt zwei Möglichkeiten, dies zu tun. Wenn Sie ein WPF-Dialogfeld, haben wird empfohlen, leiten Sie von <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, und rufen dann <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> um das Dialogfeld anzuzeigen. Wenn Sie dies tun, müssen Sie nicht zum Verwalten des modalen Zustands des übergeordneten Fensters.  
   
- Wenn das Dialogfeld nicht WPF ist, oder für eine andere Klasse Grund, Sie können nicht abgeleitet werden, die im Dialogfeld aus <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, das übergeordnete Element des Dialogfelds durch den Aufruf erhalten Sie müssen <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> und verwalten den modalen Status selbst, der durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> Methode mit einer der Parameter 0 (False) vor dem Anzeigen des Dialogfelds "", und beim Aufrufen der Methode erneut mit einem Parameter 1 (True) nach dem Schließen des Dialogfelds.  
+ Ist das Dialogfeld nicht WPF oder einem anderen Grund, Sie können nicht abgeleitet werden, das Dialogfeld-Klasse <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, müssen Sie das übergeordnete Element des Dialogfelds durch den Aufruf erhalten <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> und verwalten den modalen Zustand selbst, der durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> -Methode mit einer der Parameter 0 (False), bevor Sie das Dialogfeld anzuzeigen und Aufrufen der Methode erneut mit dem Parameter 1 (True) nach dem Schließen des Dialogfelds.  
   
-## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Erstellen eines Dialogfelds DialogWindow abgeleitet  
+## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Erstellen Sie ein Dialogfeld DialogWindow abgeleitet  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **OpenDialogTest** und Hinzufügen eines Menübefehls mit dem Namen **öffnen**. Weitere Informationen hierzu finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **OpenDialogTest** und Hinzufügen eines Menübefehls mit dem Namen **öffnen (Open)**. Weitere Informationen hierzu finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Verwenden der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> -Klasse, müssen Sie Verweise auf die folgenden Assemblys hinzufügen (in der Registerkarte "Framework" die **Verweis hinzufügen** Dialogfeld):  
+2.  Verwenden der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> -Klasse, müssen Sie Verweise auf die folgenden Assemblys hinzufügen (in der Registerkarte "Framework" der **Verweis hinzufügen** Dialogfeld):  
   
-    -   PresentationCore  
+    -   *PresentationCore*  
   
-    -   PresentationFramework  
+    -   *PresentationFramework*  
   
-    -   WindowsBase  
+    -   *WindowsBase*  
   
-    -   System.Xaml  
+    -   *"System.xaml" enthalten*  
   
-3.  In OpenDialog.cs, fügen Sie die folgenden `using` Anweisung:  
+3.  In *OpenDialog.cs*, fügen Sie die folgenden `using` Anweisung:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Deklarieren Sie eine Klasse mit dem Namen **TestDialogWindow** abgeleitet, die <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4.  Deklarieren Sie eine Klasse, die mit dem Namen `TestDialogWindow` abgeleitet, die <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  Legen Sie zum Minimieren und Maximieren das Dialogfeld Lage sein, <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> und <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> auf "true":  
+5.  Um zu minimieren und Maximieren Sie das Dialogfeld, legen Sie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> und <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> auf "true":  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -64,18 +64,18 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     }  
     ```  
   
-6.  In der **OpenDialog.ShowMessageBox** -Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
+6.  In der `OpenDialog.ShowMessageBox` -Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. Auf der **Tools** Menü der experimentellen Instanz daraufhin sollte einen Befehl mit dem Namen **aufrufen öffnen**. Wenn Sie mit diesem Befehl klicken, sehen Sie im Dialogfenster. Sie sollten Lage minimieren und Maximieren des Fensters.  
+7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. Auf der **Tools** im Menü der experimentellen Instanz sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)**. Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden. Sie sollten in der Lage, zu minimieren und Maximieren Sie das Fenster.  
   
-## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Erstellen und verwalten ein Dialogfeld, die nicht von DialogWindow abgeleitet  
+## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Erstellen Sie und verwalten Sie ein Dialogfeld, das nicht von DialogWindow abgeleitet  
   
-1.  Bei diesem Verfahren können Sie die **OpenDialogTest** Lösung, die Sie erstellt, in der vorherigen Prozedur, mit der gleichen Assemblyverweisen haben.  
+1.  Informationen zu dieser Prozedur können Sie die **OpenDialogTest** Lösung, die Sie erstellt, in der vorherigen Prozedur, mit der gleichen Assemblyverweisen haben.  
   
 2.  Fügen Sie die folgenden `using` Deklarationen:  
   
@@ -84,20 +84,20 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Erstellen Sie eine Klasse mit dem Namen **TestDialogWindow2** abgeleitet, die <xref:System.Windows.Window>:  
+3.  Erstellen Sie eine Klasse, die mit dem Namen `TestDialogWindow2` abgeleitet, die <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Fügen Sie einen privaten Verweis auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4.  Fügen Sie einen privaten Verweis um <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, die den Verweis in schaltet <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5.  Fügen Sie einen Konstruktor, der den Verweis wird auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -106,7 +106,7 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     }  
     ```  
   
-6.  In der **OpenDialog.ShowMessageBox** -Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
+6.  In der `OpenDialog.ShowMessageBox` -Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -128,4 +128,4 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     }  
     ```  
   
-7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Auf der **Tools** Menü sehen Sie einen Befehl mit dem Namen **aufrufen öffnen**. Wenn Sie mit diesem Befehl klicken, sehen Sie im Dialogfenster.
+7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)**. Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden.

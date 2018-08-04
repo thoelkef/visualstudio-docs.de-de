@@ -1,5 +1,5 @@
 ---
-title: Anwendung der Einstellungen über mehrere Project-Verbindungen | Microsoft Docs
+title: Anwendung von Einstellungen auf mehrere Projektverbindungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129205"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500042"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung der Einstellungen über mehrere Project-Verbindungen
-Ein Quellcodeverwaltungs-Plug-in kann mithilfe des Datenquellen-Steuerelement-Plug-in-API 1.2 erstellt einen Batchvorgang mithilfe der gleichen Quelle-Steuerungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte hinweg ausführen. Batches können zum Entfernen der redundante pro Projekt Dialogfelder von erforderlichen Erfahrungsgrad des Benutzers verwendet werden.  
+# <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung von Einstellungen auf mehrere projektverbindungen
+Ein Quellcodeverwaltungs-Plug-In können mit der Quelle Steuerelement-Plug-in-API-Version 1.2, erstellt einen Batchvorgang den gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte ausgeführt. Batches können zum Eliminieren Sie redundante projektbezogene Dialogfelder, die von der Benutzeroberfläche verwendet werden.  
   
- Wenn ein Benutzer mehrere Elemente, die mehr als eine Verbindung in ein Quellcodeverwaltungs-Plug-in erstellt wählt, mit der Quelle Steuerelement-Plug-in-API 1.1, (z. B. zwei Webprojekte auf Computern mit verschiedenen Dateifreigabe) angehören, und werden überprüft, kann der Benutzer im selben Dialogfeld sehen. wiederholt. Dies geschieht auch, wenn der Benutzer klickt auf die **anwenden auf alle** Kontrollkästchen im Dialogfeld, da die IDE den Zustand für jede Verbindungskontext zurückgesetzt.  
+ Wenn ein Benutzer mehrere Elemente, die mehr als eine Verbindung in ein Quellcodeverwaltungs-Plug-in erstellt wählt, mit der Quelle Steuerelement-Plug-in-API-Version 1.1 (z. B. zwei Webprojekten auf Computern mit verschiedenen Dateifreigabe) angehören, und sie überprüft, erhält der Benutzer die gleiche Dialogfeld Feld wiederholt. Dieses Szenario tritt auf, auch wenn der Benutzer klickt auf die **auf alle anwenden** Kontrollkästchen im Dialogfeld, da die IDE den Zustand für jede Verbindungskontext zurückgesetzt.  
   
-## <a name="new-capability-flag"></a>Neue Funktion-Flag  
- `SccBeginBatch` Funktion legt die `SCC_CAP_BATCH` Flag, um anzugeben, dass ein Batch ausgeführt wird  
+## <a name="new-capability-flag"></a>Neue Funktion-flag  
+ Die `SccBeginBatch` Funktion legt die `SCC_CAP_BATCH` Flags an, dass ein Batchvorgang ausgeführt wird.  
   
 ## <a name="new-functions"></a>Neue Funktionen  
- Die folgenden neuen Funktionen unterstützen den Batchvorgang:  
+Die folgenden neuen Funktionen unterstützen den Batchvorgang:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+
   
- Die `SCCBeginBatch` Funktion beginnt, eine Gruppe von Quellcodeverwaltungsvorgänge. `SccEndBatch` Schließt die Gruppe an. Gruppen können nicht geschachtelt werden.  
+Die `SCCBeginBatch` Funktion startet eine Gruppe von Quellcodeverwaltungsvorgänge. Die `SccEndBatch` -Funktion schließt die Gruppe. Gruppen können nicht geschachtelt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
