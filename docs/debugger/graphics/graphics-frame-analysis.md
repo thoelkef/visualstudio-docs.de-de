@@ -1,5 +1,5 @@
 ---
-title: Grafiken Frame-Analyse | Microsoft Docs
+title: Grafik-Frameanalyse | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/09/2017
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479652"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512056"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
@@ -28,16 +28,16 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
 -   Die Frame-Analyse kann Leistungsinformationen für andere Hardwarekonfigurationen und Geräte generieren als diejenigen, in denen die Informationen erfasst wurden.  
   
--   Die Frame-Analyse kann neue leistungszusammenfassungen aus zuvor erfassten Informationen – z. B., wenn GPU-Treiber optimiert sind oder zusätzliche Debuggingfunktionen bereitstellen.  
+-   Die Frame-Analyse kann neue leistungszusammenfassungen aus zuvor erfassten Informationen – z. B., wenn GPU-Treiber sind optimiert oder zusätzliche Debuggingfunktionen bereitstellen.  
   
  Zusätzlich zu diesen Vorteilen kann die Frame-Analyse auch verwendet werden, um die Art zu ändern, in der der Frame während der Wiedergabe dargestellt wird, so dass er Informationen darüber darstellen kann, wie sich diese Änderungen auf die Rendering-Leistung einer App auswirken könnten. Sie können diese Informationen verwenden, um zwischen potenziellen Optimierungsstrategien zu wählen, ohne sie alle implementieren zu müssen, und dann alle Ergebnisse zu erfassen und miteinander zu vergleichen.  
   
  Obwohl die Frame-Analyse hauptsächlich den Zweck hat, eine schnellere Renderingleistung zu erreichen, kann sie auch helfen, eine bessere visuelle Qualität bei einem angegebenen Leistungsziel zu erreichen oder den GPU-Stromverbrauch zu reduzieren.  
   
- Um eine Demonstration der Frame-Analyse für Ihre app kann, erfahren Sie aus der [Visual Studio Grafik-Frame-Analyse](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Kanal 9.  
+ Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Verwenden der Frame-Analyse  
- Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie dann in das Dokument (vsglog) grafikprotokollfensters der **Frame-Analyse** Registerkarte.  
+ Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie in der (.vsglog) grafikprotokolldokumentfenster, klicken Sie dann die **Frame-Analyse** Registerkarte.  
   
  ![Wählen Sie die Registerkarte "Frameanalyse"](media/pix_frame_analysis_select_tab.png "Pix_frame_analysis_select_tab")  
   
@@ -64,7 +64,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
 -   Wenn sich bei der Variante "Halbe/Viertel-Texturdimensionen" deutliche Leistungssteigerungen ergeben, belegen Ihre Texturen wahrscheinlich zu viel Speicher, verbrauchen zu viel Bandbreite oder verwenden den Texturcache ineffizient. Wenn sich bei dieser Variante keine Leistungsänderungen ergeben, können Sie wahrscheinlich auch größere und detailliertere Texturen verwenden, ohne Abstriche bei der Leistung machen zu müssen.  
   
- Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte mit Funktionsebene 9.2 oder höher unterstützen tiefenokklusionsabfragen (**okkludierte Pixel** Zähler) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
+ Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte von Funktionsebene 9.2 oder höher unterstützen tiefenokklusionsabfragen (**okkludierte Pixel** Leistungsindikator) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
   
 ### <a name="timeline-and-summary-table"></a>Zeitachse und Zusammenfassungstabelle  
  Standardmäßig werden die Zeitachse und die Zusammenfassungstabelle angezeigt und die anderen Abschnitte ausgeblendet.  
@@ -72,7 +72,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="timeline"></a>Zeitachse  
  Die Zeitachse zeigt eine relative Übersicht über die Zeichnen-Befehle. Da längere Balken längeren Zeichnungszeiten entsprechen, können Sie die Zeitachse verwenden, um schnell die teuersten Zeichnen-Befehle im betreffenden Frame zu finden. Wenn der erfasste Frame eine sehr große Anzahl von Zeichnen-Befehlen enthält, werden mehrere Zeichnen-Befehle in einem Balken kombiniert, dessen Länge der Summe dieser Zeichnen-Befehle entspricht.  
   
- ![Die Zeitachse zeigt zeichnen&#45;Kosten aufrufen. ] (media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
+ ![Die Zeitachse zeigt Zeichnen-Befehl&#45;Kosten aufrufen. ] (media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
   
  Sie können mit dem Zeiger auf einen Balken zeigen, um zu sehen, welchem Zeichnen-Befehlsereignis der Balken entspricht. Die Auswahl des Balkens führt zu einer Synchronisation der Ereignisliste mit dem entsprechenden Ereignis.  
   
@@ -88,7 +88,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="hot-draw-calls"></a>"Heiße" Zeichnen-Befehle  
  Um die Aufmerksamkeit auf Zeichnen-Befehle zu lenken, die einen größeren proportionalen Anteil der gesamten Rendering-Zeit verbrauchen oder aus vermeidbaren Gründen ungewöhnlich langsam sind, wird die Zeile, die diese "heißen" Zeichnen-Befehle enthält, rot schattiert, wenn ihre Baseline-Dauer um mehr als eine Standardabweichung länger ist als die durchschnittliche Baseline-Dauer aller Zeichnen-Befehle in diesem Rahmen.  
   
- ![Dieser DrawIndexed-Aufruf hat kalte und warme Varianten. ] (media/pix_frame_analysis_hot_calls.png "Pix_frame_analysis_hot_calls")  
+ ![Dieser DrawIndexed-Aufruf hat heiße und kalte Varianten. ] (media/pix_frame_analysis_hot_calls.png "Pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Statistische Bedeutung  
  Um Aufmerksamkeit auf die Rendering-Variationen mit der potenziell höchsten Relevanz zu lenken, ermittelt die Frame-Analyse die statistische Bedeutung jeder Rendering-Variante und zeigt die wichtigen in Fettdruck an. Die Varianten, die die Leistung verbessern, werden in grün angezeigt, diejenigen, die sie verschlechtern, in rot. Ergebnisse, die keine statistische Bedeutung haben, werden in normaler Schrift angezeigt.  
@@ -98,7 +98,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Zum Bestimmen der statistischen Relevanz verwendet die Frame-Analyse der [Student t-Test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   
 ### <a name="details-table"></a>Detailtabelle  
- Unter der Zusammenfassungstabelle befindet sich die Detailtabelle, die standardmäßig ausgeblendet ist. Der Inhalt der Detailtabelle hängt von der Hardwareplattform des Wiedergabecomputers ab. Informationen zu unterstützten Hardwareplattformen finden Sie unter [hardwareunterstützung](#HardwareSupport).  
+ Unter der Zusammenfassungstabelle befindet sich die Detailtabelle, die standardmäßig ausgeblendet ist. Der Inhalt der Detailtabelle hängt von der Hardwareplattform des Wiedergabecomputers ab. Weitere Informationen zu den unterstützten Hardwareplattformen finden Sie unter [Hardwaresupport](#HardwareSupport).  
   
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plattformen, die keine Hardwarezähler unterstützen  
  Die meisten Plattformen unterstützen Hardware-GPU-Zähler nicht vollständig. Zu diesen Plattformen gehören alle zurzeit von Intel, AMD und nVidia angebotenen GPUs. Wenn es keine Hardwarezähler zu sammeln gibt, wird nur eine Detailtabelle angezeigt. Diese enthält dann die mittleren absoluten Zeitwerte aller Varianten.  
@@ -134,7 +134,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Die Anzahl der Wiederholungen der Frame-Analyse ist auf 10 beschränkt. Wenn Ihre Plattform ein aggressives Leistungsmanagement oder Takt-Gating aufweist, kann die Frame-Analyse fehlschlagen und einen Fehler melden, falls der Wiederholungsgrenzwert überschritten wird. Sie können dieses Problem eventuell abschwächen, indem Sie das Leistungsmanagement und die Taktgeschwindigkeit auf weniger aggressive Werte zurücksetzen, wenn die Plattform dies erlaubt.  
   
-##  <a name="HardwareSupport"></a> Hardware-Unterstützung  
+##  <a name="HardwareSupport"></a> Hardwaresupport  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zeitstempel und Okklusionsabfragen  
  Zeitstempel werden auf allen Plattformen unterstützt, die die Frame-Analyse unterstützen. Tiefenokklusionsabfragen – die für den Zähler "Okkludierte Pixel" erforderlich sind – werden auf Plattformen unterstützt, die die Funktionsebene 9.2 oder höher unterstützen.  
@@ -145,7 +145,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 ### <a name="gpu-counters"></a>GPU-Zähler  
  Die Unterstützung für GPU-Hardwarezähler ist hardwareabhängig.  
   
- Da GPU-Hardwarezähler von keiner derzeit von Intel, AMD oder nVidia angebotenen Computer-GPU zuverlässig unterstützt werden, sammelt die Frame-Analyse von diesen keine Zähler. Allerdings die Frame-Analyse hardwarezähler aus dem folgenden GPU zu sammeln, die zuverlässig unterstützt:  
+ Da GPU-Hardwarezähler von keiner derzeit von Intel, AMD oder nVidia angebotenen Computer-GPU zuverlässig unterstützt werden, sammelt die Frame-Analyse von diesen keine Zähler. Allerdings erfasst die Frame-Analyse hardwarezähler aus den folgenden GPU, der zuverlässig unterstützt:  
   
 -   nVidia T40 (Tegra4)
   
@@ -170,10 +170,10 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 >  Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen.
 
 ### <a name="warp"></a>WARP  
- Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Die Frame-Analyse auf WARP-Geräten ausgeführt wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da die Ausführung von WARP auf einer High-End-CPU langsamer als die leistungsschwächsten modernen GPUs ist und WARP-Leistung erheblich variieren kann, abhängig von der bestimmten CPU dieser ausgeführt wird.  
+ Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Frame-Analyse auf WARP-Geräten ausgeführt werden, wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da es sich bei Ausführung von WARP auf einer High-End-CPU langsamer als auch den leistungsschwächsten modernen GPUs ist und WARP-Leistung je nach der bestimmten CPU stark variieren können dieser ausgeführt wird.  
   
 ##  <a name="Variants"></a> Varianten  
- Jede Änderung, die die Frame-Analyse an der Art durchführt ein Frame während der Wiedergabe gerendert wird, wird als bezeichnet eine *Variante*. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
+ Jede Änderung, die die Frame-Analyse an der Art durchführt, während der Wiedergabe ein Frames gerendert wird, wird als bezeichnet ein *Variante*. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
   
 |Variante|Beschreibung|  
 |-------------|-----------------|  
@@ -181,10 +181,10 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 |**0 X MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
 |**2x MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
 |**4 X MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Anisotrope Texturfilterung**|Setzt den Filtermodus auf `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` auf `16` (16 x anisotrope texturfilterung) für alle passenden Textur-Samplings.<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Anisotrope Texturfilterung**|Setzt den Filtermodus zu `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` zu `16` (16 x anisotrope texturfilterung) für alle passenden Textur-Samples.<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**16bpp-Renderzielformat**|Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, Format 565).<br /><br /> Weitere Informationen finden Sie unter [16bpp-Renderzielformat-Variante](16bpp-render-target-format-variant.md)|  
 |**MipMap-Erzeugung**|Aktiviert Mipmaps auf allen Texturen, die keine Renderziele sind.<br /><br /> Weitere Informationen finden Sie unter [MipMap-Generierungsvariante](mip-map-generation-variant.md).|  
 |**Halbe Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, auf die Hälfte in jeder Dimension ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 128x64 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|  

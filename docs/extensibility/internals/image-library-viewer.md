@@ -1,5 +1,5 @@
 ---
-title: Image Bibliotheksviewer | Microsoft Docs
+title: Bildbibliotheks-Viewer Bild | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee0be99b307955017b896f70019dfc05481717c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133785"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511768"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
-Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass der Benutzer sie auf die gleiche Weise zu bearbeiten, wie Visual Studio würden zu suchen. Der Benutzer kann im Hintergrund, Größe, DPI, hoher Kontrast und andere Einstellungen ändern. Das Tool auch zeigt für jede bildmanifest von ladeinformationen und Quellinformationen für jedes Bild in das bildmanifest angezeigt. Dieses Tool ist nützlich für:  
+Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bildmanifesten, damit der Benutzer sie auf die gleiche Weise bearbeiten wie Visual Studio. Der Benutzer kann es sich um Hintergrund, Größen, DPI-Wert, hoher Kontrast und andere Einstellungen ändern. Das Tool zeigt beim Laden der Informationen für jedes Image Manifest auch und zeigt Quellinformationen für jedes Bild im Image-Manifest. Dieses Tool eignet sich für:  
   
 1.  Diagnostizieren von Fehlern  
   
-2.  Sicherstellen, dass Attribute sind in benutzerdefinierten bildmanifesten richtig festgelegt.  
+2.  Sicherstellen, dass Attribute sind in benutzerdefinierten Images Manifeste ordnungsgemäß festgelegt.  
   
-3.  Suchen für Bilder in der Visual Studio-Image-Katalog, damit Visual Studio-Erweiterung Images verwenden kann, die den Stil von Visual Studio entsprechen  
+3.  Suche für Bilder in der Visual Studio-Image-Katalog, damit Visual Studio-Erweiterung Images verwenden kann, die den Stil von Visual Studio entsprechen.  
   
  ![Image-Viewer-Hero Bibliothek](../../extensibility/internals/media/image-library-viewer-hero.png "Image Library-Viewer-Hero")  
   
  **Image-moniker**  
   
- Ein Bild Moniker (oder kurz Moniker) ist ein GUID: ID-Paar, das ein Standardimage-Medienobjekt oder Liste imagemedienobjekt in der Bildbibliothek eindeutig identifiziert.  
+ Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID: ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.  
   
- **Manifest Bilddateien**  
+ **Image-Manifestdateien**  
   
- Image-Manifest (.imagemanifest)-Dateien sind XML-Dateien, die einen Satz von Bildanlagen, die Moniker, die darstellen definieren, die Ressourcen und die echten Bild oder Bilder, die jedes Medienobjekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Darüber hinaus sind Attribute, die auf das Medienobjekt oder auf die einzelnen Bilder hinter jedes Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Elemente angezeigt werden.  
+ Image-Manifest (.imagemanifest)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, die jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.  
   
- **Image-Manifestschema**  
+ **Image-manifest-schema**  
   
- Abschließen des Images Manifest sieht folgendermaßen aus:  
+ Ein Abschließen des Images Manifest sieht folgendermaßen aus:  
   
 ```xml  
 <ImageManifest>  
@@ -58,7 +58,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
   
  **Symbole**  
   
- Wie einer besseren Lesbarkeit und Wartung erleichtern, kann die bildmanifest Symbole für Attributwerte verwenden. Symbole sind wie folgt definiert:  
+ Wie einer besseren Lesbarkeit und die Wartung zu unterstützen, können die bildmanifest Symbole für Attributwerte. Symbole sind wie folgt definiert:  
   
 ```xml  
 <Symbols>  
@@ -72,12 +72,12 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |||  
 |-|-|  
 |**Unterelement**|**Definition**|  
-|Importieren|Importiert die Symbole der angegebenen Manifestdatei für die Verwendung in das aktuelle Manifest an.|  
-|GUID|Das Symbol stellt einen GUID dar und GUID Formatierung übereinstimmen.|  
+|Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle Manifest an.|  
+|GUID|Das Symbol eine GUID darstellt, und Formatieren von GUID entsprechen.|  
 |Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein.|  
 |Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert.|  
   
- Symbole sind Groß-/Kleinschreibung beachtet, und mithilfe der Syntax $(symbol-name) verwiesen wird:  
+ Symbole sind Groß-/Kleinschreibung beachtet und die referenzierten $(symbol-name)-Syntax verwenden:  
   
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -85,24 +85,24 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 </Image>  
 ```  
   
- Einige Symbole sind für alle Manifeste vordefiniert. Diese können verwendet werden, im Uri-Attribut der \<Quelle > oder \<Import >-Element Verweispfade auf dem lokalen Computer.  
+ Einige Symbole sind für alle Manifeste vordefiniert. Diese können verwendet werden, in der das Uri-Attribut der \<Quelle > oder \<Import >-Element zu Verweispfaden auf dem lokalen Computer.  
   
 |||  
 |-|-|  
 |**Symbol**|**Beschreibung**|  
-|CommonProgramFiles|Der Wert der Variable %CommonProgramFiles% in Umgebung|  
-|LocalAppData|Der Wert der Umgebungsvariable "LocalAppData"|  
-|ManifestFolder|Der Ordner, die mit der Manifestdatei|  
-|Eigene Dateien|Der vollständige Pfad der Ordner "Eigene Dokumente" des aktuellen Benutzers|  
-|ProgramFiles|Der Wert der Umgebungsvariablen, % ProgramFiles% %|  
+|CommonProgramFiles|Der Wert, der die Variable %CommonProgramFiles%-Umgebung|  
+|LocalAppData|Der Wert der Umgebungsvariablen % LocalAppData% %|  
+|ManifestFolder|Dem Ordner mit der Manifestdatei|  
+|Eigene Dateien|Der vollständige Pfad des Ordners "Eigene Dateien" des aktuellen Benutzers|  
+|ProgramFiles|Der Wert der Umgebungsvariablen % ProgramFiles %|  
 |System|Der Ordner "Windows\System32"|  
-|WinDir|Der Wert der Umgebungsvariablen % WinDir %|  
+|WinDir|Der Wert der Umgebungsvariable "WinDir"|  
   
  **Image**  
   
- Die \<Image >-Element definiert ein Bild, das über einen Moniker verwiesen werden kann. Die GUID und ID, die zusammen bilden die Image-Moniker. Der Moniker für das Bild muss für die gesamte Bildbibliothek eindeutig sein. Wenn mehr als ein Bild ein angegebenes Monikers verfügt, wird die erste Vorlage beim Erstellen der Bibliotheks ermittelt, die beibehalten werden.  
+ Die \<Image >-Element definiert ein Bild, das einen Moniker verwiesen werden kann. Die GUID und ID, die zusammen bilden die Image-Moniker. Der Moniker für das Image muss innerhalb der gesamten Abbildbibliothek eindeutig sein. Wenn mehr als ein Bild ein angegebenes Monikers verfügt, wird die erste Bedingung, die beim Erstellen der Bibliotheks gefunden, die beibehalten werden.  
   
- Es muss mindestens eine Quelle enthalten. Obwohl Größe Neutral Quellen über eine Breite Palette von Größen die besten Ergebnisse liefern, werden diese nicht benötigt. Wenn ein Image mit einer Größe, die nicht definiert, der Dienst angefordert wird die \<Image >-Element und es ist keine Quelle Größe Neutral ist, wird der Dienst, und wählen Sie die optimale Größe-spezifische Quelle auf die angeforderte Größe zu skalieren.  
+ Es muss mindestens eine Quelle enthalten. Obwohl Größe neutrale Quellen für eine Vielzahl von Größen die besten Ergebnisse erzielen, sind sie nicht erforderlich. Wenn der Dienst für ein Bild mit einer Größe, die nicht in definierte aufgefordert wird die \<Image >-Element und es ist keine Größe Neutral Quelle ist, wird der Dienst, wählen Sie die beste Quelle für spezifische Größe und skalieren Sie sie auf die angeforderte Größe.  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -116,11 +116,11 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
 |Id|[Erforderlich] Die ID-Teil der Image-moniker|  
-|AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild die Farben umgekehrt programmgesteuert auf einen dunklen Hintergrund aufweisen kann.|  
+|AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|  
   
  **Quelle**  
   
- Die \<Source >-Element definiert eine einzelne Quelle imagemedienobjekt (XAML und PNG).  
+ Die \<Source >-Element definiert ein einzelnes Abbild quellmedienobjekt (XAML und PNG).  
   
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -131,20 +131,20 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden kann. Es kann einer der folgenden sein:<br /><br /> – Ein [Paket-URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) mithilfe der Anwendung: / / / Autorität<br /><br /> -Ein Ressourcenverweis absolute Komponente<br /><br /> – Ein Pfad zu einer Datei mit einer systemeigenen Ressource|  
-|Hintergrund|[Optional] Gibt an, was auf die Art der Hintergrund, die die Quelle verwendet werden soll.<br /><br /> Es kann einer der folgenden sein:<br /><br /> - *Light*: die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> - *Dunkle*: die Quelle kann auf einem dunklen Hintergrund verwendet werden.<br /><br /> - *Hoher Kontrast*: die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> - *HighContrastLight*: die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> -*HighContrastDark*: die Quelle kann auf einen dunklen Hintergrunds im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn die **Hintergrund** Attribut ausgelassen wird, die Quelle kann auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn **Hintergrund** ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, die Quelle des Farben werden niemals umgekehrt. Wenn **Hintergrund** ausgelassen oder auf festgelegt ist *hoher Kontrast*, der die Umkehrung der Farben der Quelle wird gesteuert, von des Abbild **AllowColorInversion** Attribut.|  
+|URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mithilfe der Anwendung: / / / der Autorität<br /><br /> – Ein Ressourcenverweis absolute-Komponente<br /><br /> – Ein Pfad zu einer Datei enthält eine systemeigene Ressource|  
+|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> - *Light*: die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> - *Hohem Kontrast*: die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> - *HighContrastLight*: die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> -*HighContrastDark*: die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn die **Hintergrund** Attribut weggelassen wird, die Quelle kann auf alle Hintergrund verwendet werden.<br /><br /> Wenn **Hintergrund** ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn **Hintergrund** ausgelassen oder auf ist *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
   
- Ein \<Source >-Element kann nur eines der folgenden optionalen untergeordneten Elemente verfügen:  
+ Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeordneten Elemente aufweisen:  
   
 ||||  
 |-|-|-|  
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|  
-|\<Größe >|Wert|Die Quelle wird für Bilder der vorgegebenen Größe (in Geräteeinheiten) verwendet werden. Das Bild wird quadratische sein.|  
-|\<SizeRange >|MinSize, MaxSize|Die Quelle wird (einschließlich) liegen für Bilder aus MinSize MaxSize-Wert (in Geräteeinheiten) verwendet werden. Das Bild wird quadratische sein.|  
-|\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder, der die angegebene Breite und Höhe (in Geräteeinheiten) verwendet werden.|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth MaxHeight|Die Quelle wird (einschließlich) liegen für die minimale Breite/Höhe-Images, die maximale Breite/Höhe (in Geräteeinheiten) verwendet werden.|  
+|\<Größe >|Wert|Die Quelle wird für Bilder mit der angegebenen Größe (in Geräteeinheiten) verwendet werden. Das Bild wird quadratisch sein.|  
+|\<SizeRange >|"MinSize", "MaxSize-Wert|Die Quelle wird für Bilder aus "MinSize" auf MaxSize-Wert (in Geräteeinheiten) einschließlich verwendet werden. Das Bild wird quadratisch sein.|  
+|\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräteeinheiten) verwendet werden.|  
+|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird einschließlich bei Abbildern für die minimale Breite/Höhe, die maximale Breite/Höhe (in Geräteeinheiten) verwendet werden.|  
   
- Ein \<Source >-Element kann auch eine optionale umfassen \<NativeResource > Unterelement, das definiert eine \<Quelle >, das aus einer verwalteten Assembly, anstatt eine systemeigene Assembly geladen wird.  
+ Ein \<Source >-Element kann auch einen optionalen aufweisen \<NativeResource > Unterelement, das definiert eine \<Quelle >, die aus einer nativen Assembly anstatt einer verwalteten Assembly geladen wird.  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -153,12 +153,12 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Typ|[Erforderlich] Der Typ der systemeigene Ressource XAML oder PNG|  
+|Typ|[Erforderlich] Der Typ der systemeigene Ressource entweder XAML oder PNG-Datei|  
 |Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
   
  **ImageList**  
   
- Die \<ImageList >-Element definiert eine Sammlung von Bildern, die in einem einzelnen Streifen zurückgegeben werden können. Die Menüleiste wird bei Bedarf erstellt, nach Bedarf.  
+ Die \<ImageList >-Element definiert eine Auflistung von Abbildern, die auf einem einzelnen Streifen zurückgegeben werden können. Das Entfernen wird bei Bedarf erstellt, je nach Bedarf.  
   
 ```xml  
 <ImageList>  
@@ -172,62 +172,62 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
 |Id|[Erforderlich] Die ID-Teil der Image-moniker|  
-|Extern|[Optional, Standardwert "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
+|Extern|[Optional, standardmäßig "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
   
- Der Moniker für das enthaltene Bild muss nicht in ein Bild in das aktuelle Manifest definierten verweisen. Wenn das eigenständige Bild in der Bildbibliothek gefunden werden kann, wird ein leerer Platzhalter-Image an seiner Stelle verwendet werden.  
+ Der Moniker für das enthaltene Image keine auf ein Bild in das aktuelle Manifest definiert. Wenn das eigenständige Image aus der Abbildbibliothek gefunden werden kann, wird ein leeres Platzhalterbild an seiner Stelle verwendet werden.  
   
 ## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool  
  **Überprüfen ein benutzerdefiniertes Image-manifest**  
   
- Um ein benutzerdefiniertes Manifest zu erstellen, wird empfohlen, dass Sie das Tool ManifestFromResources zur automatischen Generierung des Manifests verwenden. Um das benutzerdefinierte Manifest zu überprüfen, starten Sie den Bildbibliotheks-Viewer, und wählen Sie Datei > Pfade festlegen... um das Dialogfeld "Suchverzeichnisse" zu öffnen. Das Tool verwendet Suchverzeichnisse bildmanifesten geladen, aber es wird auch verwendet, damit die DLL-Dateien zu suchen, die Bilder in einem Manifest enthalten, achten Sie darauf, Manifest und DLL-Verzeichnisse in diesem Dialogfeld zu schließen.  
+ Um ein benutzerdefiniertes Manifest zu erstellen, empfehlen wir, dass Sie das Tool ManifestFromResources zur automatischen Generierung des Manifests verwenden. Klicken Sie zum Überprüfen des benutzerdefinierten Manifests den Bildbibliotheks-Viewer zu starten, und wählen Sie die Datei > Pfade festlegen... um die Verzeichnisse durchsuchen-Dialogfeld zu öffnen. Das Tool zum Laden von bildmanifesten Suchverzeichnisse verwenden, aber darüber hinaus nutzt er diese, um die DLL-Dateien zu suchen, die Bilder in einem Manifest enthalten, daher unbedingt sowohl das Manifest als auch die DLL-Verzeichnisse in diesem Dialogfeld enthalten.  
   
  ![Image-Viewer-Suche](../../extensibility/internals/media/image-library-viewer-search.png "Image-Viewer-Suche")  
   
- Klicken Sie auf **hinzufügen...**  neue Suchverzeichnisse zu suchende Manifeste und ihre entsprechenden DLLs auswählen. Das Tool merkt sich diese Verzeichnisse durchsuchen, und sie können aktiviert werden ein- oder Ausschalten von aktivieren oder deaktivieren ein Verzeichnis.  
+ Klicken Sie auf **hinzufügen...**  auszuwählenden neuen Suchverzeichnisse zur Suche nach Manifeste und ihre zugehörigen DLLs. Das Tool speichert diese Verzeichnisse durchsuchen, und sie können aktiviert oder deaktiviert durch Aktivieren oder deaktivieren ein Verzeichnis.  
   
- Standardmäßig versucht das Tool zum Suchen von Visual Studio-Installationsverzeichnis, und diese Verzeichnisse der Suchliste für die Verzeichnisse hinzufügen. Sie können manuell Verzeichnisse hinzufügen, die das Tool nicht findet.  
+ Standardmäßig versucht das Tool, suchen das Visual Studio-Installationsverzeichnis, und fügen diese Verzeichnisse der Suchliste für Verzeichnisse. Sie können Verzeichnisse, die das Tool nicht gefunden wird, manuell hinzufügen.  
   
- Sobald alle Manifeste geladen werden, kann das Tool verwendet werden, aktivieren bzw. deaktivieren **Hintergrund** Farben, **DPI**, **hoher Kontrast**, oder **Grayscaling** für die Bilder, damit ein Benutzer eine sichtprüfung des kann Bildanlagen, um zu überprüfen, sie werden für die verschiedenen Einstellungen ordnungsgemäß gerendert wird.  
+ Sobald alle Manifeste geladen werden, kann das Tool verwendet werden, um umzuschalten **Hintergrund** Farben, **DPI**, **hoher Kontrast**, oder **Grayscaling** für die Bilder, damit ein Benutzer visuell untersuchen Bildanlagen um zu überprüfen, ob sie werden für die verschiedenen Einstellungen ordnungsgemäß gerendert werden kann.  
   
  ![Image-Viewer-Hintergrund](../../extensibility/internals/media/image-library-viewer-background.png "Image-Viewer-Hintergrund")  
   
- Die Farbe des Hintergrunds kann hell, dunkel oder einen benutzerdefinierten Wert festgelegt werden. Auswählen von "Benutzerdefinierte Farbe" wird ein Farbauswahl-Dialogfeld zu öffnen und diese benutzerdefinierte Farbe am Ende das Kombinationsfeld im Hintergrund für einfache Rückruf später hinzufügen.  
+ Die Farbe des Hintergrunds kann hell, dunkel oder einen benutzerdefinierten Wert festgelegt werden. Auswählen von "Benutzerdefinierte Farbe" wird ein Farbauswahl-Dialogfeld zu öffnen, und diese benutzerdefinierten Farbe am unteren Rand im Kombinationsfeld Hintergrund leichter zu merkenden später hinzufügen.  
   
- ![Bild-Bibliothek Viewer benutzerdefinierte Farbe](../../extensibility/internals/media/image-library-viewer-custom-color.png "Image Bibliothek Viewer benutzerdefinierte Farbe")  
+ ![Bild der Bibliothek Viewer benutzerdefinierte Farbe](../../extensibility/internals/media/image-library-viewer-custom-color.png "Image Library Viewer benutzerdefinierte Farbe")  
   
- Ein Moniker Image auswählen, zeigt die Informationen für jede echten Bild hinter diesem Moniker im Image Detailbereich auf der rechten Seite. Der Bereich kann sich Benutzer einen Moniker nach Name oder unformatierte GUID: ID-Wert zu kopieren.  
+ Wählen einen bildmoniker klicken, werden die Informationen für die einzelnen realen Bilder hinter dieser Moniker im Bereich Details der Images auf der rechten Seite angezeigt. Der Bereich ermöglicht außerdem Benutzern einen Moniker anhand des Namens oder raw-GUID: ID-Wert zu kopieren.  
   
- ![Image-Viewer-Bilddetails](../../extensibility/internals/media/image-library-viewer-image-details.png "Image Viewer-Bilddetails")  
+ ![Image-Viewer-Bilddetails](../../extensibility/internals/media/image-library-viewer-image-details.png "Image-Viewer-Bilddetails")  
   
- Der angezeigten Informationen für jede Bildquelle enthält Hintergrund angezeigt, welche, ob Designs möglich oder unterstützt das hoher Kontrast, welche Größe, die es gültig ist oder gibt an, ob es ist Größe Neutral und gibt an, ob das Bild stammen aus einem systemeigenen Assembly.  
+ Für jede Quelle angezeigte Informationen, welche Art von Hintergrund angezeigt, ist angegeben, ob sie mit Design versehen werden kann oder unterstützt das hohem Kontrast, welche Größe sie für gültig ist oder, ob es ist Größe Neutral, und gibt an, ob das Bild stammt aus einer nativen Assembly.  
   
  ![Bildbibliotheks-Viewer "Dose"](../../extensibility/internals/media/image-library-viewer-can-theme.png "Bildbibliotheks-Viewer \"Dose\"")  
   
- Bei der Validierung einer bildmanifest wird empfohlen, dass Sie das Manifest und Image-DLL in ihre Speicherorte realen bereitstellen. Hierdurch wird sichergestellt, dass relative Pfade ordnungsgemäß ausgeführt werden und die Bildbibliothek finden und das Manifest und Image-DLL laden kann.  
+ Bei einem bildmanifest überprüfen möchten, empfehlen wir, dass Sie den und Image-DLL in ihren realen Speicherorten bereitstellen. Hierdurch wird sichergestellt, dass relative Pfade ordnungsgemäß ausgeführt werden und die Abbildbibliothek finden und laden das Manifest und DLL-Image kann.  
   
  **Image-Katalog KnownMonikers werden gesucht**  
   
- Zum Formatieren von Visual Studio besser entsprechen zu können, können eine Visual Studio-Erweiterung in der Visual Studio-Image-Katalog statt erstellen und verwenden eine eigene Bilder. Dies hat den Vorteil, ohne diese Bilder zu verwalten, und es wird sichergestellt, dass das Image ein Image Unterstützung hoher DPI-Einstellung vorhanden sind, damit es in alle DPI-Einstellungen richtig aussehen soll, die Visual Studio unterstützt.  
+ Um die Formatierung von Visual Studio besser entsprechen zu können, kann Visual Studio-Erweiterung Bilder in der Visual Studio-Image-Katalog statt erstellen und verwenden eine eigene verwenden. Dies hat den Vorteil, dass ohne diese Bilder zu verwalten, und es wird sichergestellt, dass das Image ein Image für die High-DPI-Wert-Sicherung hat, sodass es in alle DPI-Einstellungen korrekt gesucht werden soll, die Visual Studio unterstützt.  
   
- Die bildbibliotheks-Viewer ermöglicht ein Manifest, gesucht werden soll, damit ein Benutzer suchen den Moniker, der eine imagemedienobjekt darstellt und dieser Moniker im Code verwenden kann. Um nach Images suchen, geben Sie den gewünschten Suchbegriff in das Suchfeld, und drücken Sie die EINGABETASTE. Die Statusleiste am unteren zeigt, wie viele Übereinstimmungen aus der gesamten Bilder in allen von Manifesten gefunden wurden.  
+ Die bildbibliotheks-Viewer können ein Manifest, so, dass ein Benutzer den Moniker, der ein Bildobjekt darstellt finden und dieser Moniker im Code verwenden gesucht werden soll. Um nach Bildern suchen, geben Sie den gewünschten Suchbegriff in das Suchfeld, und drücken Sie EINGABETASTE. Die Statusleiste im unteren Bereich zeigt, wie viele Übereinstimmungen aus der Gesamt-Images in allen der Manifeste gefunden wurden.  
   
  ![Image-Viewer-Filter Bibliothek](../../extensibility/internals/media/image-library-viewer-filter.png "Image Library-Viewer-Filter")  
   
- Bei der Suche nach Image Monikern in vorhandenen Manifesten wird empfohlen, dass Sie suchen und verwenden Sie nur die Visual Studio Bild des Katalogs Moniker, andere absichtlich öffentlich zugängliche Moniker oder eigene benutzerdefinierte Moniker. Bei Verwendung von Monikern nicht öffentliche benutzerdefinierte Benutzeroberfläche ist möglicherweise unterbrochen, oder die Bilder geändert wurden unerwartete Weise Wenn oder wenn diese nicht öffentliche Moniker und Bilder geändert oder aktualisiert werden.  
+ Bei der Suche nach Image-Moniker in vorhandenen Manifesten wird empfohlen, dass Sie suchen nach und verwenden Sie nur Visual Studio-Image des Katalogs Moniker, andere absichtlich öffentlich zugänglichen Moniker oder Ihre eigenen benutzerdefinierten Moniker. Wenn Sie nicht öffentliche Moniker verwenden, benutzerdefinierte Benutzeroberfläche ist möglicherweise nicht mehr funktionsfähig oder haben die Bilder geändert auf unerwartete Weise Wenn oder wenn diese nicht öffentlich Moniker und Images geändert oder aktualisiert werden.  
   
- Darüber hinaus ist die Suche nach GUID möglich. Diese Art von Suche eignet sich zum Filtern der Liste eine einzelne Manifest oder einzelne Unterabschnitt ein manifest, wenn für das Manifest enthält mehrere GUIDs.  
+ Darüber hinaus ist die Suche nach GUID möglich. Diese Art von Suche eignet sich zum Filtern der Liste, um eine einzelne Manifest oder einzelne Unterabschnitt für ein manifest, wenn das Manifest enthält mehrere GUIDs.  
   
  ![Image-Viewer-Filter-Bibliothek GUID](../../extensibility/internals/media/image-library-viewer-filter-guid.png "Image-Viewer-Filter-Bibliothek GUID")  
   
- Schließlich kann anhand der ID suchen auch.  
+ Schließlich ist das Suchen nach ID möglich auch.  
   
- ![Image-Viewer-Filter-ID Bibliothek](../../extensibility/internals/media/image-library-viewer-filter-id.png "Image Bibliotheks-Viewer-Filter-ID")  
+ ![Image-Viewer-Filter-ID Bibliothek](../../extensibility/internals/media/image-library-viewer-filter-id.png "Image Library-Viewer-Filter-ID")  
   
 ## <a name="notes"></a>Hinweise  
   
--   Standardmäßig wird das Tool mehrere bildmanifesten vorhanden, in der Visual Studio-Installationsverzeichnis einziehen. Die einzige, die öffentlich nutzbar Moniker verfügt die **Microsoft.VisualStudio.ImageCatalog** manifest. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (führen Sie **nicht** überschreiben diese GUID in ein benutzerdefiniertes Manifest) Typ: KnownMonikers  
+-   Standardmäßig wird das Tool in mehrere vorhanden, in der Visual Studio-Installationsverzeichnis bildmanifesten abrufen. Die einzige, der öffentlich nutzbar Moniker verfügt die **Microsoft.VisualStudio.ImageCatalog** manifest. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (werden **nicht** überschreiben Sie diese GUID in ein benutzerdefiniertes Manifest) Typ: KnownMonikers  
   
--   Das Tool versucht beim Start laden alle bildmanifesten gefundene, damit dauert möglicherweise einige Sekunden für die Anwendung tatsächlich angezeigt werden. Es könnte auch langsamen oder nicht reagierenden beim Laden der Manifeste sein.  
+-   Das Tool versucht beim Start laden Sie alle Image-Manifeste, die sie findet, die daher dauert möglicherweise einige Sekunden, für die Anwendung tatsächlich angezeigt werden. Es kann auch langsam oder nicht reagierender sein, beim Laden der Manifeste.  
   
 ## <a name="sample-output"></a>Beispielausgabe  
  Dieses Tool generiert keine Ausgabe.

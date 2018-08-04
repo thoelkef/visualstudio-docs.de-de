@@ -1,5 +1,5 @@
 ---
-title: Listen von Symbolen angegeben, der Objekt-Manager verfügbar machen | Microsoft Docs
+title: Verfügbarmachen der Listen von Symbolen, die in den Objekt-Manager bereitgestellt | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,28 +17,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabecd989f0074335251b1880a3d479f9bac5a64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135367"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513145"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Vorgehensweise: Listen von Symbolen, die von der Bibliothek bereitgestellt, den Objekt-Manager verfügbar machen
-Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, übergeben Sie die Anforderungen für neue Daten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen. Die Bibliotheken zu reagieren, indem Sie die angeforderte Daten zum Bereitstellen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objektmanager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager Ruft die Methoden in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle zum Abrufen der Daten und zum Auffüllen von oder aktualisieren die Ansichten der Symbolsuche Tools verwendet.  
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Gewusst wie: machen Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-Manager
+Die Tools zum Durchsuchen von Symbolen **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, Anforderungen für neue Daten zu übergeben die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen. Die Bibliotheken zu reagieren, durch die Bereitstellung der angeforderten Daten an die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager Ruft die Methoden in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle zum Abrufen der Daten und zum Auffüllen von oder aktualisieren die Ansichten der Tools zum Durchsuchen von Symbolen verwendet.  
   
- Eine Bibliothek kann Anforderungen für Daten abrufen, wenn das Tool wird aufgerufen, der Knoten erweitert ist oder die Ansicht wird aktualisiert. Wenn ein Symbol durchsuchen-Tool zum ersten Mal aufgerufen wird, fordert der Objekt-Manager die Bibliothek, um die Liste der obersten Ebene bereitgestellt werden. Wenn der Benutzer einen Knoten erweitert, bietet die Bibliothek eine Liste der untergeordneten Elemente unter diesem Knoten an. Jedes Objekt-Manager-Abfrage enthält einen Index des Elements von Interesse sind. Um eine neue Liste anzuzeigen, muss der Objekt-Manager bestimmen, wie viele Elemente in der Liste den Typ der Elemente, deren Namen Eingabehilfen und andere Eigenschaften sind.  
+ Eine Bibliothek kann die Anforderungen für Daten erhalten, wenn das Tool wird aufgerufen, der Knoten erweitert ist oder die Ansicht wird aktualisiert. Wenn ein Tool zum Durchsuchen von Symbolen zum ersten Mal aufgerufen wird, fordert der Objekt-Manager die Bibliothek, um die Liste der obersten Ebene bereitgestellt werden. Wenn ein Benutzer einen Listenknoten erweitert, bietet die Bibliothek eine Liste der untergeordneten Elemente unter diesem Knoten an. Jedes Objekt-Manager-Abfrage enthält einen Index des relevanten Elements. Um eine neue Liste anzuzeigen, muss der Objekt-Manager bestimmen, wie viele Elemente in der Liste den Typ der Elemente, deren Namen, Barrierefreiheit und andere Eigenschaften sind.  
   
 > [!NOTE]
->  Die folgenden verwalteten Code-Beispielen wird gezeigt, wie Listen von Symbolen durch die Implementierung bereitstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die Objekt-Manager Ruft die Methoden in dieser Schnittstelle und verwendet die abgerufenen Daten aufzufüllen, oder aktualisieren die Tools zum Durchsuchen des Symbols.  
+>  Folgende verwalteter Code wird gezeigt, wie Listen von Symbolen durch die Implementierung der zu der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die Objekt-Manager Ruft die Methoden dieser Benutzeroberfläche und verwendet die erhaltenen Daten zum Auffüllen von oder aktualisieren die Tools zum Durchsuchen von Symbolen.  
 >   
 >  Verwenden Sie für systemeigenen Code Symbol-anbieterimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstelle.  
   
-## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Bereitstellen von Listen von Symbolen an den Objekt-Manager  
   
-#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Zum Bereitstellen von Listen von Symbolen für den Objekt-manager  
+## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Listen von Symbolen, für den Objekt-Manager bereitstellen  
   
-1.  Abrufen die Anzahl der Elemente in der Liste der Symbole durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> Methode. Im folgende Beispiel wird veranschaulicht, wie der Objekt-Manager die Informationen auf der Anzahl der Elemente in der Liste abgerufen.  
+1.  Die Anzahl der Elemente in der Liste der Symbole zu erhalten, durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> Methode. Im folgende Beispiel wird veranschaulicht, wie der Objekt-Manager die Informationen auf der Anzahl der Elemente in der Liste erhält.  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -60,7 +59,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
   
     ```  
   
-2.  Abrufen von Informationen über die Kategorien und die Attribute eines Elements angegebene Liste durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> Methode. Die Elementkategorien werden angegeben, der <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> Enumeration. Im folgende Beispiel wird veranschaulicht, wie der Objekt-Manager die Attribute der Elemente nach einer bestimmten Kategorie erhält.  
+2.  Abrufen von Informationen zu den Kategorien und die Attribute eines angegebenen Listenelements durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> Methode. Die Elementkategorien werden angegeben, der <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> Enumeration. Im folgende Beispiel wird veranschaulicht, wie der Objekt-Manager für Attribute von Elementen für eine angegebene Kategorie erhält.  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -155,7 +154,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
   
     ```  
   
-3.  Abrufen der Textdarstellung eines bestimmten Listenelement durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> Methode. Im folgenden Beispiel wird veranschaulicht, wie einen vollständigen Name eines angegebenen Elements abgerufen wird.  
+3.  Die Textdarstellung eines angegebenen Listenelements zu erhalten, durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> Methode. Im folgenden Beispiel wird veranschaulicht, wie einen vollständigen Name eines angegebenen Elements abgerufen wird.  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -173,7 +172,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
   
     ```  
   
-4.  Abrufen der Informationen der Symbol für ein Element der angegebenen Liste durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> Methode. Das Symbol steht für den Typ (Klasse, Methode und So weiter), und Zugriff (private, public usw.) auf ein Listenelement. Im folgenden Beispiel wird veranschaulicht, wie die Symbol-Informationen basierend auf ein bestimmtes Elementattribute abzurufen.  
+4.  Informieren Sie sich das Symbol für ein bestimmtes Listenelement durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> Methode. Das Symbol steht für den Typ (Klasse, Methode usw.) und Zugriff (private, public usw.) auf ein Listenelement. Im folgenden Beispiel wird veranschaulicht, wie die Symbolinformationen, die basierend auf einem angegebenen Elementattribute abgerufen wird.  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -255,7 +254,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
   
     ```  
   
-5.  Erhalten Sie die Informationen darauf, ob ein bestimmtes Listenelement erweiterbare durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> Methode. Im folgenden Beispiel wird veranschaulicht, wie zum Abrufen der Informationen auf, ob ein bestimmtes Element erweitert werden kann.  
+5.  Abrufen der Informationen auf, ob ein bestimmtes Listenelement erweiterbar durch die Implementierung ist die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> Methode. Im folgende Beispiel wird veranschaulicht, so erhalten Sie die Informationen auf, ob ein bestimmtes Element erweitert werden kann.  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -282,7 +281,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
   
     ```  
   
-6.  Erhalten Sie eine untergeordnete Liste der Symbole eines bestimmten Listenelement durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> Methode. Im folgenden Beispiel wird veranschaulicht, wie eine untergeordnete Liste der Symbole für ein bestimmtes Element abrufen **Aufrufen** oder **Aufrufer** Diagramme.  
+6.  Erhalten Sie eine untergeordnete Liste von Symbolen, der ein bestimmtes Listenelement durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> Methode. Im folgende Beispiel wird veranschaulicht, wie zum Abrufen einer untergeordneten Liste von Symbolen von einem bestimmten Element für **Aufrufen** oder **Aufrufer** Diagramme.  
   
     ```vb  
     ' Call graph list.  
@@ -470,7 +469,7 @@ Die Tools zum Durchsuchen des Symbols **Klassenansicht**, **Objektkatalog**, **A
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unterstützung von Tools zum Durchsuchen des Symbols](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Vorgehensweise: Registrieren Sie eine Bibliothek mit dem Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Vorgehensweise: Identifizieren Sie Symbole in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
- [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Gewusst wie: Registrieren einer Bibliothek mit der Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Erweiterbarkeit von legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)

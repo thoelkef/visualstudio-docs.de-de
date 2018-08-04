@@ -1,5 +1,5 @@
 ---
-title: Befehl Entwurf | Microsoft Docs
+title: Befehl Entwurf | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,62 +14,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43b83e5a02fb84ad09531f87b3120168bad0b2e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09792f951b0cc77d2087904b1dcebc1c9b3b6a06
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132170"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513058"
 ---
-# <a name="command-design"></a>Befehl Entwurf
-Wenn Sie einen Befehl für ein VSPackage hinzufügen, müssen Sie angeben, wo es ist, die angezeigt werden, wenn er verfügbar ist und wie ist es, die verarbeitet werden.  
+# <a name="command-design"></a>Befehlsentwurf
+Wenn Sie einen Befehl für ein VSPackage hinzufügen, müssen Sie angeben, in dem es angezeigt werden, wenn es verfügbar ist, und wie sie behandelt werden.  
   
-## <a name="defining-commands"></a>Definieren Befehle  
- Um neue Befehle definieren, müssen binden Sie eine Visual Studio-Befehlstabelle (VSCT)-Datei in Ihrem VSPackage-Projekt ein. Wenn Sie eine VSPackage mit der Visual Studio-Paketvorlage erstellt haben, enthält das Projekt eine dieser Dateien. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+## <a name="define-commands"></a>Definieren von Befehlen  
+ Um neue Befehle definieren, sind Sie ein Visual Studio-Befehlstabelle (*VSCT*) Datei in Ihrem VSPackage-Projekt. Wenn Sie eine VSPackage mit der Visual Studio-Paketvorlage erstellt haben, enthält das Projekt eine dieser Dateien. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabellen (VSCT) Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Visual Studio führt die VSCT-Dateien, die es findet, damit die Befehle angezeigt werden können. Da diese Dateien aus dem VSPackage binäre unterscheiden, Visual Studio keine zum Laden des Pakets, um die Befehle zu suchen. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen Benutzeroberflächenelemente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Visual Studio führt alle die *VSCT* -Dateien sucht, damit die Befehle angezeigt werden können. Da diese Dateien aus dem VSPackage binäre unterscheiden, ist Visual Studio keine beim Laden des Pakets, um die Befehle zu suchen. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
- Visual Studio verwendet die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> registrierungsattributs Menüressourcen und Befehle definiert. Weitere Informationen finden Sie unter [Implementierung](../../extensibility/internals/command-implementation.md).  
+ Visual Studio verwendet die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Registrierungsattribut Menüressourcen und Befehle zu definieren. Weitere Informationen finden Sie unter [befehlsimplementierung](../../extensibility/internals/command-implementation.md).  
   
- Befehle können zur Laufzeit in eine Zahl auf verschiedene Weise geändert werden. Sie können angezeigt oder ausgeblendet, aktiviert oder deaktiviert werden. Sie können verschiedene Text oder Symbolen, oder Sie können verschiedene Werte enthalten. Vor Visual Studio das VSPackage lädt, kann eine sehr viel systemverarbeitungszeit in der Anpassung ausgeführt werden. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen Benutzeroberflächenelemente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Befehle können in einer Reihe von Möglichkeiten zur Laufzeit geändert werden. Sie können angezeigt oder ausgeblendet, aktiviert oder deaktiviert werden. Sie können verschiedene Text oder Symbolen, oder Sie können verschiedene Werte enthalten. Bevor Visual Studio das VSPackage lädt, kann eine umfangreiche Anpassung ausgeführt werden. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ## <a name="command-handlers"></a>Befehlshandler  
- Wenn Sie einen Befehl erstellen, müssen Sie einen Ereignishandler zum Ausführen des Befehls angeben. Wenn der Benutzer den Befehl auswählt, müssen sie ordnungsgemäß weitergeleitet werden. Einen Befehl Routing bedeutet senden an das richtige VSPackage zu aktivieren oder deaktivieren, ausblenden oder zeigen Sie es und führen Sie sie aus, wenn der Benutzer entscheidet sich dazu. Weitere Informationen finden Sie unter [Routing Algorithmus](../../extensibility/internals/command-routing-algorithm.md).  
+ Wenn Sie einen Befehl erstellen, müssen Sie einen Ereignishandler zum Ausführen des Befehls angeben. Wenn der Benutzer den Befehl auswählt, muss dieser entsprechend weitergeleitet werden. Routing von einem Befehl bedeutet das Senden an das richtige VSPackage zu aktivieren oder deaktivieren, ausblenden oder anzeigen und führen Sie es, wenn der Benutzer dazu. Weitere Informationen finden Sie unter [Algorithmus für das Befehlsrouting](../../extensibility/internals/command-routing-algorithm.md).  
   
-## <a name="the-visual-studio-command-environment"></a>Visual Studio-Umgebung-Befehl  
- Visual Studio kann als host für eine beliebige Anzahl von VSPackages und kann jeweils einen eigenen Befehlssatz beitragen. Die Umgebung zeigt nur die Befehle, die für den aktuellen Task geeignet sind. Weitere Informationen finden Sie unter [Verfügbarkeit](../../extensibility/internals/command-availability.md) und [Auswahl Kontextobjekte](../../extensibility/internals/selection-context-objects.md).  
+## <a name="visual-studio-command-environment"></a>Visual Studio-Befehl-Umgebung  
+ Visual Studio kann eine beliebige Anzahl von VSPackages hosten und kann jeweils einen eigenen Befehlssatz beitragen. Die Umgebung zeigt nur die Befehle, die für den aktuellen Task geeignet sind. Weitere Informationen finden Sie unter [Befehl Verfügbarkeit](../../extensibility/internals/command-availability.md) und [auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md).  
   
- Ein VSPackage, das definiert, neue Befehle, Menüs, Symbolleisten und Kontextmenüs bietet seine Befehlsinformationen in Visual Studio, bei der Installation über die Registrierungseinträge, die auf Ressourcen in systemeigenen oder verwalteten Assemblys verweisen. Jede Ressource verweist dann auf eine binäre Daten (CTO) Ressourcendatei, die erzeugt wird, wenn Sie eine Visual Studio-Befehlstabelle (VSCT)-Datei kompilieren. Dies kann Visual Studio zusammengeführte Befehlsgruppen, Menüs und Symbolleisten bereitstellen, ohne alle installierten VSPackage laden zu müssen.  
+ Eine VSPackage, die definiert, neue Befehle, Menüs, Symbolleisten oder Kontextmenüs bietet die Befehlsinformationen in Visual Studio bei der Installation über die Registrierungseinträge, die Ressourcen in systemeigenen oder verwalteten Assemblys verweisen. Jede Ressource verweist dann auf eine binäre Ressource (*CTO*)-Datei, die erstellt wird, wenn Sie eine Visual Studio-Befehlstabelle kompilieren (*VSCT*) Datei. Dadurch wird Visual Studio, um die zusammengeführte Befehle, Menüs und Symbolleisten bereitstellen, ohne dass alle installierten VSPackage zu laden.  
   
-### <a name="command-organization"></a>Befehl Organisation  
- Die Umgebung positioniert Befehle durch Gruppieren, Priorität und Menüs.  
+### <a name="command-organization"></a>Befehls-Organisation  
+ Die Umgebung positioniert Befehle nach Gruppe, Priorität und im Menü.  
   
--   Gruppen sind logische Gruppen verwandter Befehle, z. B. die **Ausschneiden**, **Kopie**, und **einfügen** Befehlsgruppe. Gruppen sind die Befehle, die in Menüs angezeigt werden.  
+-   Gruppen sind logische Sammlungen von verwandten Befehlen, z. B. die **Ausschneiden**, **Kopie**, und **einfügen** Befehlsgruppe. Gruppen sind die Befehle, die in Menüs angezeigt werden.  
   
--   Die Priorität wird bestimmt die Reihenfolge, in der einzelnen Befehle in einer Gruppe im Menü angezeigt werden.  
+-   Priorität bestimmt die Reihenfolge, in der einzelnen Befehle in einer Gruppe im Menü angezeigt werden.  
   
--   Menüs fungieren als Container für Gruppen.  
+-   Menüs dienen als Container für Gruppen.  
   
- Die Umgebung verfügt über vordefinierte einige Befehle, Gruppen und Menüs. Weitere Informationen finden Sie unter [Standard-Befehl, Gruppen- und Symbolleiste Platzierung](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+ Die Umgebung sind einige Befehle, Gruppen und Menüs vordefiniert. Weitere Informationen finden Sie unter [standardplatzierung-Befehl, Gruppe und Symbolleiste](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Ein Befehl kann eine primäre Gruppe zugewiesen werden. Die primäre Gruppe steuert die Position des Befehls in der Struktur im Hauptmenü und in der **anpassen** (Dialogfeld). Ein Befehl kann in mehrere Gruppen angezeigt werden; Beispielsweise kann ein Befehl im Hauptmenü auf ein Kontextmenü aufrufen und auf einer Symbolleiste sein. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen Benutzeroberflächenelemente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Ein Befehl kann auf eine primäre Gruppe zugewiesen werden. Die primäre Gruppe steuert die Position des Befehls in der Struktur im Hauptmenü und in der **anpassen** Dialogfeld. Ein Befehl kann in mehrere Gruppen angezeigt werden; Beispielsweise kann ein Befehl im Hauptmenü auf ein Kontextmenü aufrufen und auf einer Symbolleiste sein. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Befehlsrouting  
- Der Vorgang aufrufen und das routing von Befehlen für VSPackages, unterscheidet sich vom Vorgang zum Aufrufen von Methoden für Objektinstanzen.  
+ Der Prozess der aufrufen und das routing von Befehlen für VSPackages, unterscheidet sich von den Prozess des Aufrufens von Methoden einer Objektinstanz.  
   
- Die Umgebung leitet Befehle sequenziell von den innersten (local) Befehlskontext, basierend auf der aktuellen Auswahl, bis der äußerste Kontext angegeben (global). Der erste Kontext, der beim Ausführen des Befehls kann ist diejenige, die ihn verarbeitet. Weitere Informationen finden Sie unter [Routing Algorithmus](../../extensibility/internals/command-routing-algorithm.md).  
+ Die Umgebung leitet Befehle nacheinander von den innersten (local) Befehlskontext, basierend auf der aktuellen Auswahl, bis der äußerste Kontext angegeben (global). Der erste Kontext, der zum Ausführen des Befehls kann ist der, die ihn verarbeitet. Weitere Informationen finden Sie unter [Algorithmus für das Befehlsrouting](../../extensibility/internals/command-routing-algorithm.md).  
   
- In den meisten Fällen verarbeitet die Umgebung Befehle mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Da das routing Befehl-Schema zum Behandeln von Befehlen, viele verschiedene Objekte ermöglicht <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> kann von einer beliebigen Anzahl von Objekten implementiert werden; diese umfassen Microsoft ActiveX-Steuerelemente, Fenster anzeigen Implementierungen, Document-Objekte, Projekt-Hierarchien und VSPackage-Objekten selbst (für globale Befehle). In einigen Fällen spezialisierten z. B. routing von Befehlen in einer Hierarchie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> -Schnittstelle muss implementiert werden.  
+ In den meisten Fällen verarbeitet die Umgebung Befehle mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Da das Befehl-routing-Schema, viele verschiedene Objekte zum Verarbeiten von Befehlen ermöglicht, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> kann von einer beliebigen Anzahl von Objekten implementiert werden; dazu gehören Microsoft ActiveX-Steuerelemente, Fenster anzeigen Implementierungen, Document-Objekte, projekthierarchien und das VSPackage-Objekten selbst (für globale Befehle). In einigen speziellen Fällen, z. B. routing von Befehlen in einer Hierarchie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> -Schnittstelle muss implementiert werden.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Implementation (Implementierung)](../../extensibility/internals/command-implementation.md)|Beschreibt, wie Befehle in einem VSPackage implementiert.|  
-|[Verfügbarkeit](../../extensibility/internals/command-availability.md)|Beschreibt, wie Visual Studio-Kontext bestimmt, welche Befehle verfügbar sind.|  
-|[Routing-Algorithmus](../../extensibility/internals/command-routing-algorithm.md)|Beschreibt, wie Visual Studio-routing befehlsarchitektur Befehle aus, um von anderen VSPackages behandelt werden kann.|  
-|[Richtlinien zur Platzierung](../../extensibility/internals/command-placement-guidelines.md)|Schlägt vor, wie Sie Befehle in Visual Studio-Umgebung zu positionieren.|  
-|[Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Beschreibt, wie der Visual Studio-befehlsarchitektur VSPackages am besten nutzen können.|  
-|[Standardplatzierung von Befehlen, Gruppen und Symbolleisten](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Beschreibt, wie VSPackages am besten die Befehle, die in Visual Studio enthalten sind.|  
+|[Befehlsimplementierung](../../extensibility/internals/command-implementation.md)|Beschreibt, wie Befehle in einem VSPackage implementiert.|  
+|[Befehlsverfügbarkeit](../../extensibility/internals/command-availability.md)|Beschreibt, wie Visual Studio-Kontext bestimmt, welche Befehle verfügbar sind.|  
+|[Algorithmus für das Befehlsrouting](../../extensibility/internals/command-routing-algorithm.md)|Beschreibt, wie Visual Studio-routing-befehlsarchitektur Befehle aus, um die von anderen VSPackages behandelt werden.|  
+|[Richtlinien zur befehlsplatzierung](../../extensibility/internals/command-placement-guidelines.md)|Schlägt vor, wie Sie Befehle in Visual Studio-Umgebung zu positionieren.|  
+|[Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Beschreibt, wie der Visual Studio-befehlsarchitektur VSPackages optimal nutzen können.|  
+|[Standardplatzierung-Befehl, Gruppe und Symbolleiste](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Beschreibt, wie VSPackages am besten die Befehle verwenden können, die in Visual Studio enthalten sind.|  
 |[Verwalten von VSPackages](../../extensibility/managing-vspackages.md)|Beschreibt, wie VSPackages von Visual Studio lädt.|  
-|[VSCT-Dateien (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Enthält Informationen zu XML-basierte VSCT-Dateien, die verwendet werden, um das Layout und die Darstellung von Befehlen in VSPackages zu beschreiben.|
+|[Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Enthält Informationen zu XML-basierte *VSCT* -Dateien, die zum Beschreiben von Layout und Darstellung von Befehlen in VSPackages verwendet werden.|
