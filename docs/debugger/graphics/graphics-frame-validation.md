@@ -1,5 +1,5 @@
 ---
-title: Grafik-Frame Überprüfung | Microsoft Docs
+title: Graphics Frame-Überprüfung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 03/02/2017
 ms.technology: vs-ide-debug
@@ -12,28 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473958"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511294"
 ---
 # <a name="graphics-frame-validation"></a>Grafik-Frame-Überprüfung
-<!-- VERSIONLESS -->
-Visual Studio-2017 und mehr Unterstützung der **Frame Überprüfung** Tool.  Die Frame-Validierung Fenster zeigt Fehler und Warnungen, die die Ereignisliste zugeordnet.  Um dieses Fenster anzuzeigen, wählen Sie die **Ansicht > Frame Überprüfung** Menü.
+<!-- VERSIONLESS --> Visual Studio 2017 und höher unterstützt die **Frame-Überprüfung** Tool.  Die Frame-Überprüfung-Fenster werden Fehler und Warnungen im Zusammenhang mit der Ereignisliste angezeigt.  Um dieses Fenster anzuzeigen, wählen die **Ansicht > Frame-Überprüfung** Menü.
 
 ![Frame-Überprüfung](media/gfx_diag_frame_validation.png)
 
-Klicken Sie auf die **Überprüfung ausführen** Schaltfläche in der oberen linken Ecke auf die Analyse zu initiieren.  Dauert möglicherweise mehrere Minuten je nach Komplexität des Frames.  Die Daten, die angezeigt wird, wird hier eine Kombination aus beiden Quellen: Nachrichten, D3D selbst ausgibt, wenn [SDK Ebenen](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx) aktiviert ist, und die vom Nachverfolgen von internen Zustand des Tools gesammelten Daten. Sobald der Vorgang abgeschlossen ist, sehen Sie mehrere Spalten mit Daten:
+Klicken Sie auf die **Überprüfung ausführen** auf der linken oberen Ecke, um die Analyse zu initiieren.  Es dauert mehrere Minuten je nach Komplexität des Frames.  Die Daten, die angezeigt wird, hier ist eine Kombination aus beiden Quellen: die Nachrichten, D3D selbst ausgibt, wenn [SDK Layers](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) aktiviert ist, und die Daten, die vom Nachverfolgen von internen Zustand des Tools gesammelt werden. Nach Abschluss des Vorgangs sehen Sie mehrere Spalten mit Daten:
 
 **Spalte**|**Beschreibung**
 ---|---
-Ereignis-ID | ID, die auf einen Eintrag im ordnet die [Ereignisliste](graphics-event-list.md) Fenster.
-Schweregrad | Beschädigung, Fehler, Warnung, Information oder Nachricht.
-Kategorie | Anwendung definiert ist, verschiedene, Initialisierung, Bereinigung, Kompilierung, State Erstellung, Status festlegen, Status abrufen, Ausführung, Ressource Manipulation, Shader, redundante und nicht verwendete.
-Nachricht | Die Meldung, die dem Ereignis zugeordnet wird.
-Ereignis | Das Ereignis, das den Fehler oder die Warnung zugeordnet.
+Ereignis-ID | ID, die zugeordnet ein Eintrag in wird der [Ereignisliste](graphics-event-list.md) Fenster.
+Schweregrad | Beschädigung, Fehler, Warnung, Informationen oder Nachricht.
+Kategorie | Anwendung definiert ist, verschiedene, Initialisierung, Bereinigung, Kompilierung, Status erstellen, Status festlegen, Status abrufen, Ausführung, Bearbeitung von Ressourcen und redundante und nicht verwendete-Shader.
+Meldung | Die Meldung, die dem Ereignis zugeordnet wird.
+event | Das Ereignis, das den Fehler oder die Warnung zugeordnet.
 
 ## <a name="see-also"></a>Siehe auch  
 [Grafikdiagnose (Debuggen DirectX-Grafiken)](visual-studio-graphics-diagnostics.md)   

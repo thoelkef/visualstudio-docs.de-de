@@ -1,5 +1,5 @@
 ---
-title: Source-Sicherheitswarnung | Microsoft Docs
+title: Source Server Sicherheitswarnung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb2233ffcc041a9d756ff51ac9fd3f1b9dc669e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474124"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511172"
 ---
 # <a name="source-server-security-alert"></a>Quellserver-Sicherheitswarnung
 Verwenden Sie bei Verwendung von Source Server nur Symboldateien, die aus bekannten und vertrauenswürdigen Quellen stammen.  
@@ -35,4 +35,4 @@ Verwenden Sie bei Verwendung von Source Server nur Symboldateien, die aus bekann
 ## <a name="see-also"></a>Siehe auch  
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)   
- [Quellserver](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [Quellserver](/windows/desktop/Debug/source-server-and-source-indexing)

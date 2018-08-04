@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757618"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512277"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
 
@@ -29,7 +29,7 @@ Es gibt drei Hauptmethoden, um den Satz von Aktivitäten zu ändern, die im Work
 
 ## <a name="using-breadcrumb-navigation"></a>Verwenden der Brotkrümelnavigation
 
-1.  Doppelklicken Sie auf eine Aktivität von Workflow-Designer, um die Stammaktivität in die betreffende Aktivität zu ändern. Die Aktivität, auf die Sie geklickt haben, wird am Stamm vollständig erweitert, und ihre Vorgänger werden in der Breadcrumb-Leiste angezeigt. Gelegentlich wird dies auch Durchführen von Drillout bzw. Drillinto bei einer Aktivität genannt.
+1.  Doppelklicken Sie auf eine Aktivität von Workflow-Designer, um die Stammaktivität in die betreffende Aktivität zu ändern. Die betreffende Aktivität ist dann am Stamm vollständig erweitert und dessen Vorgänger in der Breadcrumb-Leiste angezeigt werden. Gelegentlich wird dies auch Durchführen von Drillout bzw. Drillinto bei einer Aktivität genannt.
 
 2.  Um zu einem Vorgänger der aktuellen Stammaktivität zu navigieren, klicken Sie auf die Aktivität in der Breadcrumb-Leiste.
 

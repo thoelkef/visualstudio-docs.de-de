@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081425"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512147"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für andere bereitstellen
 Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickler, die ClickOnce-Bereitstellungen erstellen möchten. Viele von ihnen Packen Sie einfach ihre Anwendung mithilfe von ClickOnce und leiten dann die Dateien für einen Kunden, wie z. B. ein großes Unternehmen. Der Kunde ist dafür verantwortlich sind, zum Hosten der Anwendung im Netzwerk. Dieses Thema behandelt einige der Probleme, die sich solche Bereitstellungen in Versionen von .NET Framework vor Version 3.5. Klicken Sie dann beschrieben eine neue Projektmappe, die mithilfe der neuen "Verwenden von Manifest für die Vertrauensstellung"-Funktion in .NET Framework 3.5. Schließlich endet er mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.  
@@ -54,7 +54,7 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Erstellen von Bereitstellungen von Kunden durch Verwenden des Anwendungsmanifests für die Vertrauensstellung  
  ClickOnce in .NET Framework 3.5 enthält ein neues Feature, das Entwicklern und Kunden erhalten eine neue Projektmappe auf das Szenario wie die Manifeste signiert werden sollen. Das ClickOnce-Anwendungsmanifest unterstützt ein neues Element mit dem Namen `<useManifestForTrust>` , ermöglicht, dass ein Entwickler, der besagt, dass die digitale Signatur des Anwendungsmanifests ist, was zum treffen von Entscheidungen über Vertrauensstellungen verwendet werden sollte. Der Entwickler verwendet ClickOnce Tools zum Packen, wie z. B. *Mage.exe*, *MageUI.exe*, und Visual Studio – dieses Element im Anwendungsmanifest enthalten, sowie sowohl den Herausgebernamen einbetten und der Name der Anwendung im Manifest.  
   
- Bei Verwendung `<useManifestForTrust>`, das Bereitstellungsmanifest muss nicht mit einem Authenticode-Zertifikat ausgestellt, die von einer Zertifizierungsstelle signiert werden. Stattdessen können sie mit ein selbst signiertes Zertifikat sogenannten signiert werden. Ein selbst signiertes Zertifikat ist entweder vom Kunden oder der Entwickler mithilfe von .NET Framework SDK-Standardtools vom verwendet zu werden, und klicken Sie dann auf das Bereitstellungsmanifest mit den Standardtools der ClickOnce-Bereitstellung angewendet werden. Weitere Informationen finden Sie unter ["MakeCert"](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Bei Verwendung `<useManifestForTrust>`, das Bereitstellungsmanifest muss nicht mit einem Authenticode-Zertifikat ausgestellt, die von einer Zertifizierungsstelle signiert werden. Stattdessen können sie mit ein selbst signiertes Zertifikat sogenannten signiert werden. Ein selbst signiertes Zertifikat ist entweder vom Kunden oder der Entwickler mithilfe von .NET Framework SDK-Standardtools vom verwendet zu werden, und klicken Sie dann auf das Bereitstellungsmanifest mit den Standardtools der ClickOnce-Bereitstellung angewendet werden. Weitere Informationen finden Sie unter ["MakeCert"](/windows/desktop/SecCrypto/makecert).  
   
  Verwenden ein selbstsigniertes Zertifikat für das Bereitstellungsmanifest bietet mehrere Vorteile. Durch den Wegfall des Kunden zum Abrufen oder erstellen ihre eigenen Authenticode-Zertifikat, `<useManifestForTrust>` vereinfacht die Bereitstellung für den Kunden, während den Entwickler, ihre eigenen branding Identität für die Anwendung zu erhalten. Das Ergebnis ist eine Reihe von signierten Bereitstellungen, die sicherer und verfügen über eindeutige Identitäten. Dadurch werden Konflikte, die von der Bereitstellung von der gleichen Anwendung für mehrere Kunden auftreten kann.  
   

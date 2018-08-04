@@ -1,5 +1,5 @@
 ---
-title: Implementieren eine Vorgängerversion Sprache Service2 | Microsoft Docs
+title: Implementieren von einem Legacysprachdienst 2 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54572bc3b105af01ed42b01a27f363da80d58de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134990"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513360"
 ---
-# <a name="implementing-a-legacy-language-service"></a>Implementieren einen Sprachdienst Legacy
-Um einen Sprachdienst mithilfe des managed Package Frameworks (MPF) zu implementieren, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und implementieren Sie die folgenden abstrakten Methoden und Eigenschaften:  
+# <a name="implementing-a-legacy-language-service"></a>Implementieren eines Legacysprachdiensts
+Um einen Sprachdienst mithilfe des managed Package Frameworks (MPF) zu implementieren, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und implementieren Sie die folgenden abstrakten Methoden und Eigenschaften:  
   
 -   Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>-Methode  
   
@@ -31,17 +31,17 @@ Um einen Sprachdienst mithilfe des managed Package Frameworks (MPF) zu implement
   
 -   Die <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>-Eigenschaft.  
   
- Finden Sie unter den entsprechenden Abschnitten finden Sie weitere Details zum Implementieren von diesen Methoden und Eigenschaften ein.  
+ Finden Sie unter den entsprechenden Abschnitten weiter unten Weitere Informationen zum Implementieren dieser Methoden und Eigenschaften ein.  
   
- Um zusätzliche Funktionen zu unterstützen, möglicherweise Ihre Sprachdienst Ableiten einer Klasse von einer der die MPF-Language-Dienstklassen; Angenommen, um zusätzliche Menübefehle zu unterstützen, muss, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben Sie einige der Methoden der befehlsbehandelung (finden Sie unter <xref:Microsoft.VisualStudio.Package.ViewFilter> Einzelheiten). Die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bietet eine Reihe von Methoden, die aufgerufen werden, um neue Instanzen verschiedener Klassen zu erstellen und Sie überschreiben die entsprechenden Erstellungsmethode, um eine Instanz einer Klasse anzugeben. Beispielsweise müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse, um eine eigene Instanz zurückzugeben <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse. Finden Sie im Abschnitt "Instanziieren benutzerdefinierte Klassen" für weitere Details.  
+ Um zusätzliche Funktionen zu unterstützen, möglicherweise der Sprachdienst Ableiten einer Klasse von einer der die MPF-Language-Dienstklassen; beispielsweise, um zusätzliche Menübefehle zu unterstützen, muss, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben Sie mehrere des Befehls im Umgang mit Methoden (finden Sie unter <xref:Microsoft.VisualStudio.Package.ViewFilter> Einzelheiten). Die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bietet eine Reihe von Methoden, die aufgerufen werden, um neue Instanzen verschiedener Klassen zu erstellen, und Sie überschreiben die entsprechenden Erstellungsmethode, um eine Instanz der Klasse bereitstellen. Beispielsweise müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer Instanz Ihrer eigenen <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse. Finden Sie im Abschnitt "Instanziieren benutzerdefinierte Klassen" Weitere Details.  
   
- Der Sprachdienst kann auch eigene Symbole angeben, die in vielen Stellen verwendet werden. Z. B. wenn ein IntelliSense-Vervollständigungsliste angezeigt wird, kann jedes Element in der Liste ein Symbol zugeordnet, markieren das Element als Methode, Klasse, Namespace, Eigenschaft oder was ist erforderlich, die für Ihre Sprache. Diese Symbole werden verwendet, in alle IntelliSense-Listen, die **Navigationsleiste**, und klicken Sie in der **Fehlerliste** Aufgabenfenster. Finden Sie unter "Bereitstellen von Images Language" im Abschnitt unten.  
+ Der Sprachdienst kann auch eigene Symbole, angeben, die an vielen Stellen verwendet werden. Z. B. wenn eine IntelliSense-Vervollständigungsliste angezeigt wird, kann jedes Element in der Liste ein Symbol zugeordnet, markieren das Element als Methode, Klasse, Namespace, Eigenschaft oder was für Ihre Sprache nötig ist. Diese Symbole werden verwendet, in allen IntelliSense-Listen, die **Navigationsleiste**, und klicken Sie in der **Fehlerliste** Aufgabenfenster. Finden Sie unter "Language Service Images" weiter unten im Abschnitt Details.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences-Methode  
- Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Methode gibt immer die gleiche Instanz von einem <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Sie können die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse, wenn Sie keine zusätzlichen Einstellungen für den Sprachdienst nicht benötigen. Die MPF-Language-Dienstklassen gehen davon aus, das mindestens auf das Vorhandensein Base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
+ Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Methode gibt immer die gleiche Instanz von einem <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Sie können die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse, wenn Sie zusätzlichen Einstellungen für den Sprachdienst nicht erforderlich ist. Die MPF-Language-Dienstklassen davon aus, das Vorhandensein von mindestens die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
   
 ### <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine typische Implementierung der der <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Methode. In diesem Beispiel verwendet die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
+ Dieses Beispiel zeigt eine typische Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Methode. Dieses Beispiel verwendet die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -69,10 +69,10 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="getscanner-method"></a>GetScanner-Methode  
- Diese Methode gibt eine Instanz von einem <xref:Microsoft.VisualStudio.Package.IScanner> -Objekt, das einem zeilenorientierten Parser oder Scanner, die zum Abrufen von Token und deren Typen und Trigger verwendet implementiert wird. Dieser Scanner wird verwendet, der <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse für die farbliche Kennzeichnung, obwohl der Scanner auch zum Abrufen von Tokentypen und Triggern als eine Einführung zu einem komplexeren Analysevorgang verwendet werden kann. Sie müssen angeben, dass die implementierende Klasse der <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle, und Sie müssen alle Methoden implementieren, auf die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle.  
+ Diese Methode gibt eine Instanz zurück. ein <xref:Microsoft.VisualStudio.Package.IScanner> -Objekt, das eine zeilenorientierte Parser oder Scanner, die zum Abrufen von Token und deren Typen und Trigger verwendet, implementiert. Diese Überprüfung wird verwendet, der <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse für die farbliche Kennzeichnung, obwohl die Überprüfung auch für das Abrufen von Tokentypen und Trigger als Vorbereitung auf eine komplexere Analysevorgang verwendet werden kann. Sie müssen angeben, dass die Klasse, implementiert die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle, und Sie müssen alle Methoden implementieren, auf die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle.  
   
 ### <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine typische Implementierung der der <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode. Die `TestScanner` -Klasse implementiert die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle (nicht dargestellt).  
+ Dieses Beispiel zeigt eine typische Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode. Die `TestScanner` -Klasse implementiert die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle (nicht dargestellt).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -120,10 +120,10 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="parsesource-method"></a>ParseSource-Methode  
- Analysiert die Quelldatei, die basierend auf einer Reihe von verschiedenen Gründen an. Diese Methode erhält eine <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt, das beschreibt, was von einem bestimmten Analysevorgang erwartet wird. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode aufruft, einen komplexeren Parser, der token-Funktionen und Umfang bestimmt. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode wird bei der Unterstützung für IntelliSense-Vorgänge sowie Klammer verwendet. Auch wenn Sie solche erweiterte Vorgänge nicht unterstützt werden, Sie weiterhin müssen zurückgegeben gültige <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt und die erfordert, dass Sie eine Klasse erstellen, die implementiert die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Schnittstelle, und alle Methoden auf diese Schnittstelle implementieren. Sie können null-Werte zurückgeben, von allen Methoden aber die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt selbst darf nicht null-Wert sein.  
+ Analysiert die Quelldatei, die basierend auf einer Reihe unterschiedlicher Ursachen. Diese Methode erhält eine <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt, das beschreibt, was von einem bestimmten Analysevorgang erwartet wird. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode aufruft, einen komplexeren Parser, der token-Funktion und den Bereich bestimmt. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode wird bei der Unterstützung für IntelliSense-Vorgänge sowie zugehörige Klammern verwendet. Auch wenn Sie keine solche erweiterte Vorgänge unterstützen, Sie immer noch müssen zurückkehren, eine gültige <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt und die erfordert, dass Sie eine Klasse erstellen, die implementiert die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Schnittstelle, und alle Methoden auf diese Schnittstelle implementieren. Sie können alle Methoden null-Werte zurückgeben, aber die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt selbst muss sich nicht auf einen null-Wert.  
   
 ### <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine minimale Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode und die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse ausreichen, der Sprachdienst zu kompilieren und ohne Unterstützung der tatsächlich keines der erweiterten Funktionen funktionieren.  
+ Dieses Beispiel zeigt eine minimale Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode und die <xref:Microsoft.VisualStudio.Package.AuthoringScope> -Klasse ausreichend, um den Sprachdienst zu kompilieren und ohne Unterstützung der erweiterten Funktionen tatsächlich funktionieren können.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -170,10 +170,10 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="name-property"></a>Name-Eigenschaft  
- Diese Eigenschaft gibt den Namen des Sprachdiensts zurück. Diese Angabe muss den gleichen Namen, wenn der Sprachdienst registriert wurde. Dieser Name wird verwendet, in einer Reihe stellen, die bekannteste davon ist die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse, in dem der Name verwendet wird, auf die Registrierung zuzugreifen. Der Name, der von dieser Eigenschaft zurückgegebene muss nicht lokalisiert werden, da sie für den Registrierungseintrag und Schlüsselnamen in der Registrierung verwendet wird.  
+ Diese Eigenschaft gibt den Namen des Sprachdiensts zurück. Dies muss den gleichen Namen, wenn der Sprachdienst registriert wurde. Dieser Name wird verwendet, in einer Reihe von Orten, von denen die bekannteste ist die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse, die der Name, in denen verwendet wird auf die Registrierung zuzugreifen. Der von dieser Eigenschaft zurückgegebene Name muss nicht lokalisiert werden, da es für den Registrierungseintrag und Schlüsselnamen in der Registrierung verwendet wird.  
   
 ### <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine mögliche Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Eigenschaft. Beachten Sie, dass hier der Name hartcodiert ist: der tatsächliche Name sollte aus einer Ressourcendatei abgerufen werden, damit sie verwendet werden kann, registrieren Sie einen Sprachdienst (finden Sie unter [registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
+ Dieses Beispiel zeigt eine mögliche Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Eigenschaft. Beachten Sie, dass hier den Namen der fest programmierte: der tatsächliche Name sollte aus einer Ressourcendatei abgerufen werden, damit sie verwendet werden kann, registrieren Sie einen Sprachdienst (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -191,54 +191,54 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-custom-classes"></a>Benutzerdefinierte Instanziieren von Klassen  
- Die folgenden Methoden in den angegebenen Klassen können überschrieben werden, damit Ihre eigenen Versionen der einzelnen Klassen diese Instanzen sind.  
+## <a name="instantiating-custom-classes"></a>Instanziieren benutzerdefinierte Klassen  
+ Die folgenden Methoden in den angegebenen Klassen können überschrieben werden, um Ihre eigenen Versionen der einzelnen Klassen Instanzen bereitzustellen.  
   
 ### <a name="in-the-languageservice-class"></a>In der LanguageService-Klasse  
   
 |Methode|Zurückgegebene Klasse|Beschreibung|  
 |------------|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Um benutzerdefinierte Ergänzungen Textansicht zu unterstützen.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Unterstützung von benutzerdefinierten Dokumenteigenschaften|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Um benutzerdefinierte Ergänzungen der Textansicht zu unterstützen.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Zur Unterstützung von benutzerdefinierten Dokumenteigenschaften.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|Zur Unterstützung der **Navigationsleiste**.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|Um Funktionen in Code Snippet Vorlagen zu unterstützen.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|Unterstützung von Funktionen in Codeausschnittvorlagen.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|Codeausschnitte unterstützt (diese Methode wird in der Regel nicht überschrieben).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|Unterstützung der Anpassung von der <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktur (diese Methode wird in der Regel nicht überschrieben).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|Zur Unterstützung von Formatierung Quellcode Kommentarzeichen angeben und Methodensignaturen anpassen.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|Zur Unterstützung der Anpassung der <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktur (diese Methode wird in der Regel nicht überschrieben).|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|Zur Unterstützung von Formatierung Quellcode angeben Kommentarzeichen und Anpassen von Methodensignaturen.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>|<xref:Microsoft.VisualStudio.Package.ViewFilter>|Um zusätzliche Menübefehle zu unterstützen.|  
 |<xref:Microsoft.VisualStudio.Package.Source.GetColorizer%2A>|<xref:Microsoft.VisualStudio.Package.Colorizer>|Zur Unterstützung der syntaxhervorhebung (diese Methode wird in der Regel nicht überschrieben).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|Um den Zugriff auf den bevorzugten Sprache zu unterstützen. Diese Methode muss implementiert werden, jedoch kann eine Instanz der Basisklasse zurückgegeben.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|Geben Sie einen Parser für die Identifizierung der Tokentypen in einer Zeile verwendet. Diese Methode implementiert werden muss und <xref:Microsoft.VisualStudio.Package.IScanner> abgeleitet werden müssen.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|Geben Sie einen Parser zum Identifizieren von Funktionen und der Gültigkeitsbereich einer gesamten Quelldatei verwendet. Diese Methode muss implementiert werden und muss eine Instanz Ihrer Version von Zurückgeben der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse. Wenn alle gewünschten syntaxhervorhebung ist (erfordert die <xref:Microsoft.VisualStudio.Package.IScanner> zurückgegeben, die vom Parser die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode), möglich "nothing" in dieser Methode als Rückgabewert eine Version von der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, deren Methoden geben alle null-Werte zurück.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|Um den Zugriff auf die spracheinstellungen zu unterstützen. Diese Methode muss implementiert werden, aber es kann eine Instanz der Basisklasse zurückgegeben.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|Um einen Parser, der zum Identifizieren von Tokentypen in einer Zeile bereitzustellen. Diese Methode implementiert werden muss und <xref:Microsoft.VisualStudio.Package.IScanner> abgeleitet werden müssen.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|Um einen Parser, der zum Identifizieren von Funktionen und der Gültigkeitsbereich für eine gesamte Quelldatei bereitzustellen. Diese Methode muss implementiert werden und muss eine Instanz Ihrer Version von Zurückgeben der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse. Wenn Sie unterstützen möchten syntaxhervorhebung ist (erfordert die <xref:Microsoft.VisualStudio.Package.IScanner> zurückgegeben, die vom Parser die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode), möglich "nothing" in dieser Methode als Rückgabewert eine Version von der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, deren Methoden, die alle null-Werte zurück.|  
   
 ### <a name="in-the-source-class"></a>In der Quellklasse  
   
 |Methode|Zurückgegebene Klasse|Beschreibung|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Zum Anpassen der Anzeige von IntelliSense-Vervollständigungslisten (diese Methode wird in der Regel nicht überschrieben).|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Für die Unterstützung der Marker in der Fehlerliste Aufgabenliste; insbesondere Unterstützung für Funktionen jenseits des Öffnen der Datei, und springen zur Zeile, die den Fehler verursacht hat.|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|Zum Anpassen der Anzeige von QuickInfos IntelliSense-Parameter.|  
-|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|Zur Unterstützung von Kommentieren von Code.|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|Für das Sammeln von Informationen während der Analysevorgang.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Für die Unterstützung der Marker in der Fehlerliste Aufgabenliste; insbesondere Unterstützung für die Datei zu öffnen, und springen zu der Zeile, die den Fehler verursacht hat.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|Zum Anpassen der Anzeige des QuickInfo-Tipps für IntelliSense-Parameter.|  
+|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|Für die Unterstützung von Kommentieren von Code.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|Für das Sammeln von Informationen während des Analysevorgangs.|  
   
 ### <a name="in-the-authoringscope-class"></a>In der AuthoringScope-Klasse  
   
 |Methode|Zurückgegebene Klasse|Beschreibung|  
 |------------|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Enthält eine Liste der Deklarationen wie Member oder Typen. Diese Methode muss implementiert werden, jedoch kann einen null-Wert zurückgeben. Wenn diese Methode ein gültiges Objekt zurückgibt, muss das Objekt eine Instanz von Ihrer Version von den <xref:Microsoft.VisualStudio.Package.Declarations> Klasse.|  
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Enthält eine Liste der Methodensignaturen für einen angegebenen Kontext. Diese Methode muss implementiert werden, jedoch kann einen null-Wert zurückgeben. Wenn diese Methode ein gültiges Objekt zurückgibt, muss das Objekt eine Instanz von Ihrer Version von den <xref:Microsoft.VisualStudio.Package.Methods> Klasse.|  
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Enthält eine Liste der Deklarationen wie z. B. Membern oder Typen. Diese Methode muss implementiert werden, aber es kann einen null-Wert zurückgeben. Wenn diese Methode ein gültiges Objekt zurückgibt, muss das Objekt eine Instanz von Ihrer Version von der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse.|  
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Enthält eine Liste von Methodensignaturen für einen angegebenen Kontext. Diese Methode muss implementiert werden, aber es kann einen null-Wert zurückgeben. Wenn diese Methode ein gültiges Objekt zurückgibt, muss das Objekt eine Instanz von Ihrer Version von der <xref:Microsoft.VisualStudio.Package.Methods> Klasse.|  
   
-## <a name="language-service-images"></a>Bereitstellen von Images Sprache  
- Überschreiben, um eine Liste der Symbole in der gesamten Sprachdiensts verwendet werden zu gewährleisten, die <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und Zurückgeben einer <xref:System.Windows.Forms.ImageList> , die die Symbole enthält. Die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse lädt eine Reihe von Symbolen. Da Sie den genauen Bildindex an diesen Orten, die Symbole benötigen angeben, ist wie Sie eigene Bildliste anordnen alleine Sie.  
+## <a name="language-service-images"></a>Bereitstellen von Images Language  
+ Überschreiben, um eine Liste der Symbole in der gesamten der Sprachdienst verwendet werden zu ermöglichen, die <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und Zurückgeben einer <xref:System.Windows.Forms.ImageList> , die die Symbole enthält. Die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse lädt einen Standardsatz von Symbolen. Da Sie den genauen Bildindex an diesen Orten, die Symbole benötigen angeben, ist wie Sie Ihre eigenen Bildliste anordnen völlig Ihnen überlassen.  
   
-### <a name="images-used-in-intellisense-completion-lists"></a>In der IntelliSense-Vervollständigungslisten verwendete Bilder  
- Für IntelliSense-Vervollständigungslisten Bildindex angegeben ist, für jedes Element in der <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> Methode der <xref:Microsoft.VisualStudio.Package.Declarations> -Klasse, die Sie überschreiben müssen, wenn Sie einen Abbildindex angeben möchten. Ein Rückgabewert der <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> Methode ist ein Index in die Bildliste für angegebene der <xref:Microsoft.VisualStudio.Package.CompletionSet> Klassenkonstruktor, und dieselbe Bildliste zurückgegeben, aus der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse (Sie können ändern, welche Bildliste Verwenden Sie für die <xref:Microsoft.VisualStudio.Package.CompletionSet> , wenn Sie außer Kraft setzen die <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> Methode in der <xref:Microsoft.VisualStudio.Package.Source> Klasse, um ein anderes Bildliste angeben).  
+### <a name="images-used-in-intellisense-completion-lists"></a>Images, die In IntelliSense-Vervollständigungslisten verwendet werden.  
+ Für IntelliSense-Vervollständigungslisten, den Index des Bildes angegeben ist, für jedes Element in der <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> Methode der <xref:Microsoft.VisualStudio.Package.Declarations> -Klasse, die Sie überschreiben müssen, wenn Sie einen Image-Index angeben möchten. Der Rückgabewert der <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> Methode ist ein Index in der Bildliste angegeben die <xref:Microsoft.VisualStudio.Package.CompletionSet> Klassenkonstruktor und, dieselbe Bildliste von zurückgegeben wird der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse (Sie können Ändern der Bildliste an, Verwenden Sie für die <xref:Microsoft.VisualStudio.Package.CompletionSet> , wenn Sie außer Kraft setzen der <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse, um ein anderes Bildliste angeben).  
   
-### <a name="images-used-in-the-navigation-bar"></a>In der Navigationsleiste verwendete Bilder  
- Die **Navigationsleiste** Zeigt Listen von Typen und Membern an und wird verwendet, für die schnelle Navigation Symbole angezeigt werden kann. Diese Symbole erhalten Sie vom der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und kann nicht überschrieben werden, insbesondere für die **Navigationsleiste**. Die Indizes für jedes Element in den Kombinationsfeldern verwendet werden angegeben, wenn die Listen, die die Kombinationsfeldern darstellt, in aufgefüllt sind der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode in der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Klasse (finden Sie unter [Unterstützung für die Navigationsleiste in einen Legacy-Sprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). Diese Indizes Image aus irgendeinem Grund erhalten Sie vom Parser in der Regel durch Ihre Version von den <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Wie die Indizes abgerufen werden, wird alleine Sie.  
+### <a name="images-used-in-the-navigation-bar"></a>Images, die in der Navigationsleiste verwendet werden.  
+ Die **Navigationsleiste** Zeigt Listen von Typen und Membern an und wird verwendet, für eine schnelle Navigation Symbole angezeigt werden kann. Diese Symbole werden abgerufen, von der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und kann nicht überschrieben werden, speziell für die **Navigationsleiste**. Die Indizes, die für jedes Element in den Kombinationsfeldern verwendet angegeben sind, wenn die Listen, die die Kombinationsfeldern darstellt, in aufgefüllt sind der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> Klasse (finden Sie unter [Unterstützung für die Navigationsleiste in einem Legacysprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). Diese Images Indizes sind irgendwie von dem Parser abgerufen, in der Regel durch Ihre Version von der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Wie die Indizes abgerufen werden, ist völlig Ihnen überlassen.  
   
-### <a name="images-used-in-the-error-list-task-window"></a>In der Fehlerliste (Fenster) Aufgabe verwendete Bilder  
- Bei jedem der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode Parser (finden Sie unter [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) ein Fehler auftritt, und übergeben Sie diesen Fehler zu die <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> Methode in der <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Klasse, der Fehler wird gemeldet, in der  **Fehlerliste** Aufgabenfenster. Ein Symbol verknüpft werden kann mit jedem Element, das im Fenster Aufgabenliste angezeigt wird und das Symbol stammt vom zurückgegebenen dieselbe Bildliste der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Das Standardverhalten der MPF-Klassen werden nicht auf ein Bild mit der Fehlermeldung angezeigt. Sie können dieses Verhalten jedoch überschreiben, durch das Ableiten einer Klasse von der <xref:Microsoft.VisualStudio.Package.Source> -Klasse und überschreiben die <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> Methode. In dieser Methode erstellen Sie ein neues <xref:Microsoft.VisualStudio.Package.DocumentTask> Objekt. Bevor dieses Objekt zurückgegeben wird, können Sie die <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> Eigenschaft auf die <xref:Microsoft.VisualStudio.Package.DocumentTask> Objekt, das den Bildindex festgelegt. Dies sieht etwa wie im folgenden Beispiel aus. Beachten Sie, dass `TestIconImageIndex` ist eine Enumeration, die alle Symbole aufgeführt und ist spezifisch für dieses Beispiel. Sie müssen möglicherweise eine andere Art der Symbole in der Sprachdienst identifizieren.  
+### <a name="images-used-in-the-error-list-task-window"></a>Images, die in der Fehlerliste (Fenster) Aufgabe verwendet werden.  
+ Wenn die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode Parser (finden Sie unter [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) ein Fehler auftritt, und übergeben Sie diesen Fehler zu der <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Klasse, der Fehler wird gemeldet, in der  **Fehlerliste** Aufgabenfenster. Ein Symbol kann mit jedes Element, das im Fenster Aufgabenliste angezeigt wird und das Symbol stammt dieselbe Bildliste zurückgegeben, die von der <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Das Standardverhalten der die MPF-Klassen werden nicht auf ein Bild mit der Fehlermeldung angezeigt. Sie können dieses Verhalten jedoch überschreiben, durch Ableiten einer Klasse von der <xref:Microsoft.VisualStudio.Package.Source> und überschreiben die <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> Methode. In dieser Methode erstellen Sie ein neues <xref:Microsoft.VisualStudio.Package.DocumentTask> Objekt. Bevor das Objekt zurückgegeben wird, können Sie die <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> Eigenschaft für die <xref:Microsoft.VisualStudio.Package.DocumentTask> Objekt, das den Index des Bildes festgelegt. Dies würde in etwa wie im folgenden Beispiel aussehen. Beachten Sie, dass `TestIconImageIndex` ist eine Enumeration, die alle Symbole aufgeführt und ist spezifisch für dieses Beispiel. Sie müssen möglicherweise eine andere Art der Symbole in den Sprachdienst zu identifizieren.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -253,7 +253,7 @@ namespace TestLanguagePackage
             TextSpan          span,  
             string            filename,  
             string            message,  
-            TastPriority      priority,  
+            TaskPriority      priority,  
             TaskCategory      category,  
             MARKERTYPE        markerType,  
             TaskErrorCategory errorCategory)  
@@ -276,10 +276,10 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="the-default-image-list-for-a-language-service"></a>Die Standard-Bildliste für einen Sprachdienst  
- Die Standard-Bildliste mit MPF Language-Dienst Basisklassen angegeben enthält eine Reihe von Symbolen, die häufiger Sprachelemente zugeordnet. Der Großteil dieser Symbole sind in Gruppen von sechs Varianten, die für die Access-Konzepte der öffentlich, intern, Friend, geschützt, privat, und Tastenkombinationen angeordnet. Beispielsweise haben Sie eine Methode, je nachdem, ob es öffentlich, geschützt oder privat mit unterschiedlichen Symbolen dargestellt.  
+## <a name="the-default-image-list-for-a-language-service"></a>Der standardmäßigen Bildliste für einen Sprachdienst  
+ Die standardmäßigen Bildliste, die mit die MPF Language Service Basisklassen angegeben, enthält eine Reihe von Symbolen, die häufiger Sprachelemente zugeordnet. Der größte Teil dieser Symbole sind in Gruppen von sechs Varianten, die für die Access-Konzepte der öffentlich, intern, geschützt, privat, Freund und Tastenkombinationen angeordnet. Beispielsweise haben Sie eine Methode, je nachdem, ob es öffentlich, geschützt oder privat mit unterschiedlichen Symbolen dargestellt.  
   
- Die folgende Enumeration gibt für jede Symbolsatz typische Namen sowie den zugehörigen Index. Z. B. basierend auf der Enumeration, Sie können angeben den Bildindex für eine geschützte Methode als `(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected`. Sie können die Namen in dieser Enumeration nach Bedarf ändern.  
+ Die folgende Enumeration typische Namen für jeden Symbolsatz gibt an, und gibt an, der zugehörige Index. Beispielsweise basierend auf der Enumeration, Sie können angeben der Bildindex für eine geschützte Methode als `(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected`. Sie können die Namen in dieser Enumeration wie gewünscht ändern.  
   
 ```csharp  
 public enum IconImageIndex  
@@ -362,7 +362,7 @@ public enum IconImageIndex
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Implementieren einen Sprachdienst Legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Übersicht über die Legacy-Language-Dienst](../../extensibility/internals/legacy-language-service-overview.md)   
- [Registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+ [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Legacysprachdienste](../../extensibility/internals/legacy-language-service-overview.md)   
+ [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Parser und Scanner von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

@@ -1,5 +1,5 @@
 ---
-title: Layout für Visual Studio | Microsoft Docs
+title: Layout für Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,151 +11,151 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31149015"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512375"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
-Sind die meisten der Visual Studio-Dialogfelder [Hilfsprogramm Layout des Dialogfelds](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), wobei es sich um die Unthemed dieses Standards folgen Dialoge [Windows Desktop Dialogfeld Layout Prinzipien](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Visual Studio bewegen, um die Benutzeroberfläche zu aktualisieren, haben einige der wichtigeren Dialoge einen neuen Entwurf, der diese Oberflächen wie aus dem Produkt definieren herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Designs Darstellung aufweisen.  
+Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), die der Unthemed sind, führen Sie Standard-Dialogfelder [Windows Desktop Dialogfeld Layout Prinzipien](/windows/desktop/uxguide/win-dialog-box). Wie Visual Studio verschoben wird, um die Benutzeroberfläche zu aktualisieren, müssen einige der bekannteren Dialoge ein neues Design, das sie als Produkt – beim Definieren von Umgebungen herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Design Darstellung aufweisen.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a> Layout des Hilfsprogramm-Dialogfelds  
+##  <a name="BKMK_UtilityDialogLayout"></a> Hilfsprogramm Dialogfeldlayout  
   
--   Alle Steuerelemente in einem Dialogfeld Hilfsprogramm sollte ausgehend von den oben/links und nach unten fließen.  
+-   Alle Steuerelemente in einem Dialogfeld Hilfsprogramm sollten beginnen am oben links und nach unten übertragen.  
   
--   Nie Zentrieren von Steuerelementen auf ein Dialogfeld, um eine große Fläche auszufüllen.  
+-   Nie Zentrieren von Steuerelementen in einem Dialogfeld, um eine große Fläche auszufüllen.  
   
--   Verwenden Sie die Umgebungsschriftart, für den gesamten Dialogfeldtext. Beim Schreiben einer visual Spezifikation Geben Sie die Umgebungsschriftart anstelle einer bestimmten Schriftart und Größe. Finden Sie unter [der Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
+-   Verwenden Sie die Umgebungsschriftart verwendet für alle den Text des Dialogfelds an. Wenn Sie eine visual-Spezifikation zu schreiben, geben Sie die Umgebungsschriftart verwendet anstelle einer bestimmten Schriftart und Größe. Finden Sie unter [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
   
--   Verwenden Sie einheitliche Steuerung Abstand und die Platzierung, um das Ziel für die Qualität in handwerkliches können unterstützen.  
+-   Verwenden Sie konsistente Steuerung Abstand und die Platzierung, um das Ziel für die Qualität in handwerkliches können zu unterstützen.  
   
--   Dialoge können mehr komplex aus einer größeren Anzahl von Steuerelementen, eine eindeutige Juxtaposition Steuerelemente oder beides sein. Können Sie für solche komplexen Situationen zwischen Steuerelement Gruppierungen, Benutzern eine Logikfluss analysiert genügend Speicherplatz zur Verfügung.  
+-   Dialoge können aus einer größeren Anzahl von Steuerelementen, einem eindeutigen Juxtaposition Steuerelemente oder beides komplexer. Können Sie für diese komplexen Situationen ausreichend Abstand zwischen Steuerelement Gruppierungen, Benutzern einen logischen Ablauf zu analysieren.  
   
-### <a name="utility-dialog-layout-examples"></a>Hilfsprogramm Dialogfeld Layout-Beispiele  
+### <a name="utility-dialog-layout-examples"></a>Beispiele für die Utility-Dialogfeld-layout  
  Alle Dimensionen werden als Pixel ausgedrückt.  
   
- ![Dialogfeldabstände für Beschriftungen über Steuerelementen](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 A_UtilitySpacingAbove")  
+ ![Dialogfeldabstände für Beschriftungen über Steuerelementen](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-A_UtilitySpacingAbove")  
   
- **Abbildung 08.01-a: Abstand Richtlinien für das Hilfsprogramm Dialoge mit Beschriftungen über Steuerelementen**  
+ **Abbildung 08.01 a: Abstand Richtlinien für das Hilfsprogramm-Dialogfelder mit Beschriftungen über Steuerelementen**  
   
- ![Dialogfeldabstände für Beschriftungen links neben Steuerelementen](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 B_UtilitySpacingLeft")  
+ ![Dialogfeldabstände für Beschriftungen links neben Steuerelementen](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-B_UtilitySpacingLeft")  
   
- **Abbildung 08.01-b: Abstand Richtlinien für das Hilfsprogramm Dialoge mit Bezeichnungen auf der linken Seite von Steuerelementen**  
+ **Abbildung 08.01-b: Der Abstand Richtlinien für das Hilfsprogramm Dialogfelder mit Bezeichnungen auf der linken Seite von Steuerelementen**  
   
 ### <a name="layout-details"></a>Layoutdetails  
   
 #### <a name="margins"></a>Seitenränder  
   
--   Alle Dialogfelder, müsste ein 12-Pixel-Rahmens um alle Seiten.  
+-   Alle Dialogfelder müssen einen 12-Pixel-Rahmen um alle Ränder.  
   
--   Ränder innerhalb einer Gruppe sollte 9 Pixel vom Rand des Frames.  
+-   Ränder, innerhalb einer Gruppe sollte 9 Pixel vom Rand des Frames.  
   
--   Ränder in einem Registerkarten-Steuerelement sollte 6 Pixel vom Rand des Registerkarten-Steuerelements.  
+-   Ränder, innerhalb eines Registerkarten-Steuerelements sollte 6 Pixel von der Kante des Registersteuerelements sein.  
   
 #### <a name="command-buttons"></a>Befehlsschaltflächen  
   
--   Befehlsschaltflächen wirken sich auf den Frame Dialogfeld nicht auf den Inhalt. Sie sollten unten rechts angeordnet werden und sollte genügend variablenspeicher oben, um die Schaltflächen klar getrennt festgelegt haben.  
+-   Befehlsschaltflächen, die für die Dialogfeldrahmen, nicht auf den Inhalt verwendet werden. Sie sollte sollten unten rechts angeordnet werden und genügend Leerzeichen-Variable aus, um die Schaltflächen klar getrennt festgelegt.  
   
--   Wenn sind horizontale Schaltflächen, die innerhalb des Dialogfelds ausgeführt werden, ist der Befehl alternative schaltflächenkonfiguration einen vertikalen Stapel oben rechts. Finden Sie unter [inneren Befehlsschaltflächen](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) unten.  
+-   Wenn es horizontale Schaltflächen, die im Dialogfeld ausgeführt werden, ist die Konfiguration der alternativen Befehl Schaltfläche einem vertikalen Stapel auf der oberen rechten Ecke. Finden Sie unter [inneren Befehlsschaltflächen](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) unten.  
   
--   Der Speicherplatz auf der linken Seite der Befehlsschaltflächen (unten links/Mitte des Dialogfelds) wird als Teil der "Band" der Vorgang Dialogfeldsteuerelemente betrachtet. Das einzige, das diesen Speicherplatz Eindringen sollten ist einen Hilfelink klicken, der für die gesamte Aufgabe oder Dialogfeld relevant sind.  
+-   Der Speicherplatz auf der linken Seite der Befehlsschaltflächen (unteren linken/Mitte des Dialogfelds), wird als Teil vom Band "-" der Vorgang Dialogfeldsteuerelemente betrachtet. Das einzige, das in diesen Speicherplatz den Eindringen sollte, ist eine Hilfe-Link, der auf die gesamte Aufgabe oder Dialogfeld relevant ist.  
   
--   Befehlsschaltflächen sollte 75 x 23 Pixel sein.  
+-   Befehlsschaltflächen müssen es sich um 75 x 23 Pixel sein.  
   
--   Befehlsschaltflächen darf 6 Pixel auseinander.  
+-   Befehlsschaltflächen sollte 6 Pixel auseinander liegen.  
   
- ![Grundlegende Ausrichtung](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 C_ButtonAlign")  
+ ![Grundlegende Ausrichtung](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-C_ButtonAlign")  
   
- **Abbildung 08.01-"c:" Grundlegende Ausrichtung**  
+ **Abbildung 08.01 c: Grundlegende Ausrichtung**  
   
 #### <a name="labels"></a>Bezeichnungen  
   
 -   Linksbündig alle Bezeichnungen.  
   
--   Für Bezeichnungen, die über ein Steuerelement sit, sollte sie sollten linksbündig genau mit dem Steuerelement darunter und unteren Rand der Bezeichnung 5 Pixel oben auf die Steuerelemente (z. B. ein Kombinationsfeld).  
+-   Für Bezeichnungen, die über ein Steuerelement befinden, sollten sie linksbündig genau mit dem Steuerelement darunter und am Ende die Bezeichnung muss 5 Pixel oberhalb des oberen anderer Steuerelemente (z. B. ein Kombinationsfeld).  
   
--   Für Bezeichnungen, die auf der linken Seite der Steuerelemente befindet, ist die minimale Breite zwischen der Bezeichnung und das Eingabesteuerelement 10 Pixel. Eine implizite zweite Spalte sollte festgelegt werden, für die Textfelder, Kombinationsfelder oder anderen Steuerelementen ausrichten.  
+-   Für Bezeichnungen, die sich auf der linken Seite der Steuerelemente befinden, ist die minimale Breite zwischen dem Bezeichnungsfeld und das Eingabesteuerelement 10 Pixel. Zum Ausrichten von den Inhalt der Textfelder, Kombinationsfelder oder andere Steuerelemente, sollte eine implizite Spalte für die zweite hergestellt werden.  
   
--   Bezeichnungen Satz zwischen Groß-und Kleinschreibung, gefolgt von einem Doppelpunkt. Finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).  
+-   Bezeichnungen großgeschrieben werden, gefolgt von einem Doppelpunkt. Finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).  
   
 #### <a name="distance-between-controls"></a>Abstand zwischen Steuerelementen  
- Stack-Steuerelemente angemessen. Es ist keine absolute-Führungslinie für den Abstand zwischen Steuerelementen gestapelt. Die Dichtigkeit zwischen den Steuerelementen kann zwischen Dialoge geringfügig variieren. Der empfohlene Abstand ist 20 Pixel für vertikale Steuerelement bezeichnungs-Paaren und 9 Pixel für horizontale Steuerelement bezeichnungs-Paaren. Die minimale Steuerelement Abstand für horizontale Paare ist 6 Pixel.  
+ Stapeln Sie Steuerelemente relativ. Es gibt keine absolute Richtlinie für den Abstand zwischen Steuerelementen der gestapelt. Die Dichtigkeit zwischen den Steuerelementen kann leicht zwischen Dialogfelder variieren. Der empfohlene Abstand wird 20 Pixel für vertikale Steuerelement bezeichnungs-Paaren und 9 Pixel für die horizontale Steuerelement bezeichnungs-Paaren. Die minimale Steuerelement Abstand für horizontale Paare ist 6 Pixel.  
   
- ![Abstand zwischen Steuerelementen empfohlen](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 D_ControlDistance")  
+ ![Abstand zwischen Steuerelementen empfohlen](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-D_ControlDistance")  
   
  **Abbildung 08.01-d: Empfehlungen für Abstand zwischen Steuerelementen**  
   
 #### <a name="control-indentation"></a>Einzug des Steuerelements  
- Bei Steuerelemente geschachtelten innere Steuerelemente mit dem linken Rand des Steuerelements oben in der Regel die Bezeichnung horizontal ausgerichtet.  
+ Bei Steuerelementen geschachtelten richten Sie innere Steuerelemente horizontal mit dem linken Rand des Steuerelements oben in der Regel die Bezeichnung aus.  
   
- ![Geschachtelte Ausrichtung](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 E_ControlAlign")  
+ ![Ausrichtung des Steuerelements verschachtelt](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801-E_ControlAlign")  
   
- **Abbildung 08.01-"e:" Nested Ausrichtung**  
+ **Abbildung 08.01-"e:" Der Ausrichtung der geschachtelte Steuerelemente**  
   
 #### <a name="control-width"></a>Breite des Steuerelements  
- Die Breite des ein Textfeld oder andere Steuerelemente mit ähnlichen Funktionen sollten nicht länger als die durchschnittliche Eingabe für das Feld sein. Die durchschnittliche englischen wörtertrennung beträgt fünf Zeichen. Beispielsweise sollte ein Textfeld, das einen lange Pfadnamen erfordert so lange wie das horizontale Layout zulässt, werden dagegen eine Dropdown-Liste für Plattformnamen nur eine Länge sein sollte, die für den längsten Eintrag ermöglicht.  
+ Die Breite eines Textfelds oder andere Steuerelemente mit ähnlichen sollte nicht länger als die durchschnittliche Eingabe für das Feld sein. Die durchschnittliche englischen wörtertrennung ist fünf Zeichen. Beispielsweise muss ein Textfeld, das einen lange Pfadnamen erfordert, solange die horizontalen Layout ermöglicht, während Sie eine Dropdownliste aus, for Plattformnamen nur eine Länge sein sollte, die für den längsten Eintrag ermöglicht.  
   
-#### <a name="helper-text"></a>Hilfetext  
+#### <a name="helper-text"></a>Hilfstext  
   
--   Ein Dialog kann Hilfetext anzeigen, die Weitere Informationen über den Zweck des Dialogfelds bereitstellt. Das in der Regel befindet sich oben, das Sätze von 1 bis 2 sein.  
+-   Ein Dialogfeld kann Hilfetext anzeigen, die Weitere Informationen zu den Zweck des Dialogfelds enthält. Diese kann in der Regel befindet sich am oberen Rand und 1 bis 2 Sätze.  
   
--   Die Zeilenlänge sollte eine komfortable Breite für einen Benutzer, zu analysieren und zu lesen. Eine mittlere Dialogfeld sollte nicht mehr als 550 Pixel breit sein.  
+-   Die Länge der Zeile muss eine vertraut Breite für einen Benutzer zu analysieren und zu lesen. Ein Mittel Dialogfeld sollte nicht mehr als 550 Pixel breit sein.  
   
 ####  <a name="BKMK_InteriorCommandButtons"></a> Innere Befehlsschaltflächen  
- In komplexeren Dialogfelder möglicherweise ein internes Steuerelement einen eigenen zugehörigen Schaltflächen auswirken können, wo sich die Dialogfelder Commit befinden.  
+ In komplexeren Dialogfeldern möglicherweise ein internes Steuerelement einen eigenen zugehörigen Schaltflächen, beeinflussen können, wo sich das Dialogfeld "Commit-Schaltflächen befinden.  
   
--   Eine vertikale Ausrichtung (Spalte) des inneren wann Schaltflächen verwenden **OK**/**"Abbrechen"** sind in der unteren rechten Ecke horizontal ausgerichtet.  
+-   Verwenden, die eine vertikale Ausrichtung (Spalte) des inneren beim Schaltflächen **OK**/**Abbrechen** horizontal in der unteren rechten Ecke ausgerichtet sind.  
   
--   Horizontale Ausrichtung (Zeile) innere wann Schaltflächen verwenden **OK**/**"Abbrechen"** sind in der oberen rechten Ecke vertikal ausgerichtet. Diese Situation ist ungewöhnlich.  
+-   Verwenden, die eine horizontale Ausrichtung (Zeile) des inneren beim Schaltflächen **OK**/**Abbrechen** sind in der oberen rechten Ecke, vertikal ausgerichtet. Dies ist weniger häufig.  
   
--   Innere Schaltflächengröße sollte Zielgröße der Standardschaltfläche 75 x 23 Pixel, die Größe der übereinstimmenden **OK**/**"Abbrechen"** Schaltflächen, sofern möglich. Falls eine Schaltfläche Bezeichnung der Schaltfläche die Standardschaltfläche Größe überschreiten durchführt, sollten die anderen Schaltflächen in diesem Satz an größeren Größe orientieren.  
+-   Größe der Schaltfläche "inneren" sollten als Ziel die Standardschaltfläche Größe von 75 x 23 Pixel, die Größe des übereinstimmenden **OK**/**Abbrechen** Schaltflächen, wenn möglich. Wenn eine Beschriftung der Schaltfläche auf die Schaltfläche die Standardschaltfläche überschreiten vornimmt, sollten die anderen Schaltflächen in diesem Satz mit größeren Größe ausgerichtet sein.  
   
- !["Horizontale OK" und "Abbrechen" Schaltflächen](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 F_HorizOKCan")  
+ ![Horizontale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-F_HorizOKCan")  
   
- **Abbildung 08.01-f: Vertikale innere Schaltflächen mit horizontalen OK / "Abbrechen"**  
+ **Abbildung 08.01-f: Vertikale innere Schaltflächen mit horizontalen OK/Abbrechen**  
   
- !["Vertikale OK" und "Abbrechen" Schaltflächen](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 G_VertOKCan")  
+ ![Vertikale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-G_VertOKCan")  
   
- **Abbildung 08.01-g: Horizontale inneren Schaltflächen mit vertikalen OK / "Abbrechen"**  
+ **Abbildung 08.01-g: Horizontale inneren Schaltflächen mit vertikalen OK/Abbrechen**  
   
-#### <a name="browse-button"></a>[Durchsuchen...] Schaltfläche  
- **[Durchsuchen...]**  Schaltflächen, die ein Textfeld, das befolgen sollte "Durchsuchen…" vollständig, einschließlich der mit den Auslassungspunkten ausgeschrieben. Wenn ist, oder es mehrere sind **[durchsuchen...]**  Schaltflächen auf der Seite die Schaltfläche "" können auf nur mit den Auslassungspunkten reduziert werden.  
+#### <a name="browse-button"></a>[Durchsuchen...] Schaltfläche "  
+ **[Durchsuchen...]**  Schaltflächen, die ein Textfeld zu folgen "Durchsuchen..." vollständig, einschließlich der mit den Auslassungspunkten schreiben soll. Wenn der Speicherplatz ist eng gesteckt, oder es sind mehrere **[durchsuchen...]**  Schaltflächen auf dem Bildschirm die Schaltfläche mit den können reduziert werden, um nur mit den Auslassungspunkten.  
   
 ##  <a name="BKMK_ThemedDialogLayout"></a> Dialogfeldlayout  
- Designs Dialogfelder in Visual Studio hat eine hellere Aussehen und bieten weitere Leerzeichen. Typografie bietet weitere Hervorhebung und Interesse sind, bieten mehr öffnen Zeilenabstand und eine Variante der Schriftgrade Ihren Bedürfnissen und Gewichtungen. Wenn möglich, haben Titel-und Chrome reduziert oder entfernt wurde. Das Layout dieser Dialogfelder sollte dieses grundlegende Muster folgen:  
+ Design Dialogfelder in Visual Studio haben die Darstellung ein heller und bieten mehr Leerzeichen. Typografie bietet mehr Bedeutung und Interesse sind, bietet weitere open Zeilenabstand und eine Variante der Schriftgrade und Gewichtungen. Wo möglich, Chrome und Titelleisten verringert oder entfernt wurden. Das Layout dieser Dialogfelder sollten dieses grundlegende Muster befolgen:  
   
-1.  Der Hintergrund des Dialogs ist weiß.  
+1.  Der Hintergrund des Dialogfelds ist weiß.  
   
-2.  In einer mittleren Wert grau ist von einem Rahmen Regel 1 Pixel.  
+2.  In einem mittleren Wert grau ist ein 1-Pixel-Regel-Rahmen vorhanden.  
   
-3.  Der Dialogfeldtitel nicht mehr in der Titelleiste befindet, bietet jedoch visuellem Reiz und Hervorhebung in einem größeren Punkt. (Siehe Abschnitt Größe Schriftart in [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)  
+3.  Der Dialogfeldtitel nicht mehr befindet sich in der Titelleiste, bietet jedoch interessanter und geht es in eine größere Größe. (Finden Sie im Abschnitt Größe Schriftart [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)  
   
-4.  Bezeichnungen, die zusammen mit zusätzlichen Text ein, z. B. eine Beschreibung sollte **Umgebungsschriftart + Fettformatierung**.  
+4.  Bezeichnungen, die zusammen mit zusätzlichen Text, z. B. eine Beschreibung, sollte **Umgebungsschriftart + Fettformatierung**.  
   
-5.  Innere Spalten werden durch eine Regel 1 Pixel hellgrau getrennt.  
+5.  Innere Spalten sind durch eine Regel 1 Pixel hellgrau getrennt.  
   
-6.  Standardmäßig Links erhalten Sie keinen Unterstrich. Hover- und gedrückten Zustand haben eine Textfarbe ändern und den Unterstrich.  
+6.  Standardmäßig Links haben keinen Unterstrich. Haben eine Textfarbe ändern und den Unterstrich, Hover- und den gedrückten Zustand.  
   
-7.  Commit-Schaltflächen (z. B. **OK**/**"Abbrechen"**) in der unteren rechten Ecke befindet.  
+7.  Übernehmen Sie die Schaltflächen (z. B. **OK**/**Abbrechen**) befinden sich in der unteren rechten Ecke.  
   
-### <a name="themed-dialog-layout-examples"></a>Designs Dialogfeld Layout-Beispiele  
- ![Dialogfeldlayout](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 H_ThemedDialog")  
+### <a name="themed-dialog-layout-examples"></a>Beispiele für die Design-Dialogfeld-layout  
+ ![Dialogfeldlayout](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-H_ThemedDialog")  
   
- **Abbildung 08.01-h-Designs-Dialogfeld**  
+ **Abbildung 08.01-h: Design-Dialogfeld**  
   
- ![Dialogfeldabmessungen](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 I_ThemedDialogDimensions")  
+ ![Dialogfeldabmessungen](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-I_ThemedDialogDimensions")  
   
- **Abbildung 08.01-i: Designs Dialogfeld - Dimensionen**  
+ **Abbildung 08.01-i: Design Dialogfeld - Dimensionen**  
   
- ![Dialogfeldschriftarten](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 J_ThemedDialogFonts")  
+ ![Dialogfeldschriftarten](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-J_ThemedDialogFonts")  
   
- **Abbildung 08.01-j: Designs Dialogfeld - Schriftarten**  
+ **Abbildung 08.01-j: Design Dialogfeld - Schriftarten**  
   
- ![Dialogfeldfarben](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 K_ThemedDialogColors")  
+ ![Dialogfeldfarben](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-K_ThemedDialogColors")  
   
- **Abbildung 08.01-k: Designs Dialogfeld - Farben**  
+ **Abbildung 08.01-k: Design Dialogfeld - Farben**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anwendungsmuster für Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

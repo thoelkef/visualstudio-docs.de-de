@@ -1,5 +1,5 @@
 ---
-title: Verwenden und Konfigurieren von Roslyn-Analysetools in Visual Studio
+title: Verwenden Sie und konfigurieren Sie die Roslyn-Analysetools
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204153"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512170"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurieren und Verwenden von Roslyn-Analyzer-Regeln
 
@@ -141,6 +141,31 @@ Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Code
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Die Verwendung der Befehlszeile
+
+Wenn Sie Ihr Projekt in der Befehlszeile erstellen, werden in der Buildausgabe Verletzungen der Schwellenwertregeln angezeigt, wenn die folgenden Bedingungen erfüllt sind:
+
+- Die Analysen werden als Nuget-Paket und nicht als VSIX-Erweiterung installiert.
+
+- Eine oder mehrere Regeln, die in den Projektcode verletzt werden.
+
+- Die [Schweregrad](#rule-severity) einer Verletzung Regel festgelegt ist entweder **Warnung**, in diesem Fall Verstöße Build nicht ausgeführt wird, führen nicht oder **Fehler**, in diesem Fall Verstöße dazu führen, dass der Build fehlschlägt.
+
+Die Ausführlichkeit der Buildausgabe wirkt sich nicht, ob Verletzungen der Schwellenwertregeln angezeigt werden. Selbst bei **quiet** Ausführlichkeit bei, der Verletzungen von Namensregeln erscheinen in der Buildausgabe.
+
+> [!TIP]
+> Wenn Sie daran gewöhnt sind für die Ausführung der Analyse von statischem Code über die Befehlszeile, entweder mit *FxCopCmd.exe* oder mithilfe von Msbuild mit der **RunCodeAnalysis** kennzeichnen, wie dies mit Roslyn-Analyzern.
+
+Um Analyzer Verstöße in der Befehlszeile anzuzeigen, wenn Sie Ihr Projekt mit Msbuild erstellen, führen Sie einen Befehl wie diesen:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+Die folgende Abbildung zeigt die Ausgabe erstellen über die Befehlszeile beim Erstellen eines Projekts, das einen Regelverstoß Analyzer enthält:
+
+![MSBuild-Ausgabe Regelverstoß zugeordnet](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Siehe auch
 
