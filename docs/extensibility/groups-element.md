@@ -1,5 +1,5 @@
 ---
-title: Element für Gruppen | Microsoft Docs
+title: Element für Gruppen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f10983961f5449d75d63555b593350199921fbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126922"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497346"
 ---
-# <a name="groups-element"></a>Groups-Element
+# <a name="groups-element"></a>Groups-element
 Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Groups>  
   <Group>... </Group>  
   <Group>... </Group>  
@@ -46,18 +46,18 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Group-Element](../extensibility/group-element.md)|Stellt eine einzelnen Befehlsgruppe dar.|  
-|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|  
+|[Group-element](../extensibility/group-element.md)|Stellt eine einzelnen Befehl-Gruppe dar.|  
+|[Groups-element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
-```  
+```xml  
 <Groups>  
   <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
@@ -66,5 +66,5 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
