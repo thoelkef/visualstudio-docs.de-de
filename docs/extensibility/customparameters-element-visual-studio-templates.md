@@ -1,5 +1,5 @@
 ---
-title: CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c09d320b1a9185e79e36d54ff0363219d3dabc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464c4720dc4693ef2fb968a23a538e74d03d1a26
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099801"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498648"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters-Element (Visual Studio-Vorlagen)
-Gruppiert die benutzerdefinierten Parameter ab, auf dem Vorlagen-Assistenten übergeben werden, wenn der Assistent sorgt für die Parameter-Ersetzungen.  
+Gruppiert die benutzerdefinierten Parameter ab, die Vorlagen-Assistenten übergeben werden, wenn der Assistent Parameter Ersetzungen vornimmt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,7 +55,7 @@ Gruppiert die benutzerdefinierten Parameter ab, auf dem Vorlagen-Assistenten üb
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet wird. Wenn ein Projekt oder Element aus einer Vorlage mit den folgenden benutzerdefinierten Parametern, alle Instanzen der erstellt wird `$color1$` und `$color2$` in der Vorlage die Dateien ersetzt werden, mit `Red` und `Blue`zugeordnet.  
+ Das folgende Beispiel zeigt, wie Sie mehrere benutzerdefinierte Parameter in einer Vorlage zu verwenden. Wenn ein Projekt oder Element aus einer Vorlage mit den folgenden benutzerdefinierten Parametern, alle Instanzen der erstellt wird `$color1$` und `$color2$` in der Vorlage die Dateien ersetzt werden, mit `Red` und `Blue`bzw.  
   
 ```  
 <CustomParameters>  

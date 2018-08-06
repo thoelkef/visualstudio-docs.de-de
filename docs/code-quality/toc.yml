@@ -28,13 +28,18 @@
   items:
     - name: Codeanalyse für verwalteten Code
       items:
+        - name: Migrieren von FxCop
+          href: fxcop-analyzers.yml
+          items:
+            - name: Installieren von FxCop-Analysetools
+              href: install-fxcop-analyzers.md
         - name: Installieren von Roslyn-Analysetools
           href: install-roslyn-analyzers.md
         - name: Konfigurieren und Verwenden von Roslyn-Analysetools
           href: use-roslyn-analyzers.md
         - name: Aktivieren der automatischen Codeanalyse
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: Aktivieren der vollständigen Projektmappenanalyse
+        - name: Vollständige Projektmappenanalyse aktivieren
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Automatisches Anhalten von Features
           href: automatic-feature-suspension.md
