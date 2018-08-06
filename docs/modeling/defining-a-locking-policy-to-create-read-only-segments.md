@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177100"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566767"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualisierungs- und Modellierungs-SDK können Sie ein Programm, um die Sperre Teils oder aller ein Modell einer domänenspezifischen Sprache (DSL), damit sie zwar gelesen, aber nicht geändert. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer lassen Kollegen mit Anmerkungen versehen, und überprüfen eine DSL-Modell, jedoch kann verhindern, dass sie die ursprüngliche ändern.
@@ -31,7 +31,7 @@ Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/
 ## <a name="setting-and-getting-locks"></a>Festlegen und Abrufen von Sperren
  Sie können das Sperren auf den Speicher, auf einer Partition oder auf ein einzelnes Element festlegen. Beispielsweise diese Anweisung wird verhindert, dass ein Modellelement gelöscht wird, und verhindert auch die Eigenschaften geändert wird:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>Sperren für Partitionen und Speicher
  Sperren können auch Partitionen und den Speicher angewendet werden. Eine Sperre, die auf einer Partition festgelegt ist, gilt für alle Elemente in der Partition. Aus diesem Grund wird z. B. die folgende Anweisung alle Elemente in einer Partition verhindert gelöscht wird, unabhängig von der die Zustände von ihren eigenen Sperren erzeugt wurde. Sonstiger Sperren dennoch, wie z. B. `Locks.Property` konnte weiterhin für einzelne Elemente festgelegt werden:
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>Zum Definieren einer Sperrrichtlinie
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> weist folgende Definition:
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  Zum Beispiel:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>Um die Richtlinie als Dienst verfügbar zu machen
  In Ihrer `DslPackage` fügen eine neue Datei, die Code enthält, die im folgende Beispiel ähnelt:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

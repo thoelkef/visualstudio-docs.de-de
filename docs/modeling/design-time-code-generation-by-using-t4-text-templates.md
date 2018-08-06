@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117692"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567232"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Dateien im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -185,7 +185,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 3.  Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:
 
-    ```
+    ```csharp
     class MyGeneratedClass {
       private int P1 = 0;
       private int P2 = 0;
@@ -303,7 +303,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!NOTE]
 > In Visual Studio 2017 werden im Text Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-```
+```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
 <PropertyGroup>
    <TransformOnBuild>true</TransformOnBuild>

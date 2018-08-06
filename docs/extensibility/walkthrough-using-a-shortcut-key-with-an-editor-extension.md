@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit der Erweiterung-Editor | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704024"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566563"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit der Erweiterung-Editor
-Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Randsteuerelement einer Text-Ansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Randsteuerelement-Editor-Vorlage, und können Sie mithilfe der Randsteuerelement hinzufügen das Zeichen + enthält.  
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden Sie eine Tastenkombination mit einer Editor-Erweiterung
+Sie können in die editorerweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Zusatzelement auf eine Textansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Zusatzelement-Editor-Vorlage, und es Ihnen, fügen das Zusatzelement mit den Zeichen +.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Ab Visual Studio 2015, führen Sie Sie nicht Visual Studio-SDK aus dem Downloadcenter installieren. Sie ist als optionales Feature in Visual Studio-Setup aus. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen Sie ein Projekt mit Managed Extensibility Framework (MEF)  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual c# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekts**.) Nennen Sie die Projektmappe `KeyBindingTest`.  
+1.  Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual c# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `KeyBindingTest`.  
   
-2.  Das Projekt eine Elementvorlage Editor Text Zusatzelement (adornment) hinzu, und nennen Sie sie `KeyBindingTest`. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einer Elementvorlage Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Das Projekt eine Elementvorlage Editor Text Zusatzelement hinzu, und nennen Sie sie `KeyBindingTest`. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Fügen Sie die folgenden Verweise hinzu, und legen Sie **CopyLocal** auf `false`:  
+3.  Fügen Sie die folgenden Verweise hinzu, und legen Sie **CopyLocal** zu `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -42,13 +42,13 @@ Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die fol
   
      Microsoft.VisualStudio.TextManager.Interop  
   
- Ändern Sie den Klassennamen in PurpleCornerBox, in der Klassendatei KeyBindingTest. Verwenden Sie die Glühbirne, die angezeigt wird am linken Rand, um die entsprechenden andere Änderungen vornehmen. Innerhalb des Konstruktors, ändern Sie den Namen der Ebene Randsteuerelement aus **KeyBindingTest** auf **PurpleCornerBox**:  
+ Ändern Sie den Namen der Klasse in PurpleCornerBox, in der Datei KeyBindingTest-Klasse. Verwenden Sie die Glühbirne verlagert, die angezeigt wird am linken Rand, um die andere entsprechende Änderungen vornehmen. Ändern Sie innerhalb des Konstruktors den Namen der die Zusatzelementebene aus **KeyBindingTest** zu **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
 
-In der Klassendatei KeyBindingTestTextViewCreationListener.cs ändern Sie den Namen des der AdornmentLayer aus **KeyBindingTest** auf **PurpleCornerBox**:
+Ändern Sie in der Datei KeyBindingTestTextViewCreationListener.cs-Klasse den Namen der AdornmentLayer aus **KeyBindingTest** zu **PurpleCornerBox**:
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -57,12 +57,12 @@ In der Klassendatei KeyBindingTestTextViewCreationListener.cs ändern Sie den Na
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
 
-## <a name="handling-typechar-command"></a>Behandlung von TYPECHAR-Befehl
-Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln von Befehlen in eine Editor-Erweiterung implementiert ein <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> basierten Befehlsfilter. Visual Studio 2017 Version 15,6, einen modernen vereinfachten Ansatz ein basierend auf den Editor Befehlshandler eingeführt. In den nächsten beiden Abschnitten veranschaulichen, wie mithilfe von sowohl die ältere und moderne Ansatz einen Befehl zu behandeln.
+## <a name="handle-typechar-command"></a>Behandeln der TYPECHAR-Befehl
+Vor Visual Studio 2017 Version 15.6, die die einzige Möglichkeit zum Verarbeiten von Befehlen in einer Editor-Erweiterung implementiert wurde ein <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Befehlsfilter basiert. Visual Studio 2017 Version 15.6 eingeführt, einen modernen, vereinfachten Ansatz basierend auf den Handler für Editor-Befehl. In den nächsten beiden Abschnitten wird das Behandeln eines Befehls mit der sowohl die ältere und moderne Ansatz veranschaulicht.
 
-## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definieren den Befehlsfilter (vor Installation von Visual Studio-2017 Version 15,6)
+## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definieren Sie den Befehlsfilter (vor Visual Studio 2017 Version 15.6)
 
- Der Befehlsfilter ist eine Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, den Befehl durch Instanziierung der Zusatzelement (adornment) behandelt.  
+ Der Befehlsfilter ist eine Implementierung von <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, behandelt den Befehl durch Instanziieren des Zusatzelements ab.  
   
 1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandFilter`.  
   
@@ -77,13 +77,13 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
   
     ```  
   
-3.  Die Klasse mit dem Namen KeyBindingCommandFilter Vererben sollte <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3.  Die Klasse, die mit dem Namen KeyBindingCommandFilter erben soll <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Fügen Sie private Felder für die Text an, den nächsten Befehl in der Befehlskette und ein Flag, um darzustellen, ob der Befehlsfilter bereits hinzugefügt wurden.  
+4.  Fügen Sie private Felder für die Textansicht, in den nächsten Befehl in der Befehlskette, und ein Flag zum angeben, ob der Befehlsfilter wurde bereits hinzugefügt.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -92,7 +92,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
     internal bool m_adorned;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, der Textansicht festlegt.  
+5.  Fügen Sie einen Konstruktor, der die Textansicht festlegt.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -102,7 +102,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
     }  
     ```  
   
-6.  Implementieren der `QueryStatus()` Methode wie folgt.  
+6.  Implementieren der `QueryStatus()` -Methode wie folgt.  
   
     ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -111,7 +111,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
     }  
     ```  
   
-7.  Implementieren der `Exec()` Methode, sodass die It eine violette Box auf die Ansicht Wenn Fügt eine + Zeichen eingegeben wird.  
+7.  Implementieren der `Exec()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt (**+**) Zeichen eingegeben wird.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -135,8 +135,8 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
   
     ```  
   
-## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Hinzufügen des Filters Befehl (vor Installation von Visual Studio-2017 Version 15,6)
- Zusatzelement (adornment)-Anbieter muss einen Befehlsfilter Textansicht hinzufügen. In diesem Beispiel wird vom Anbieter implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> , Text-Erstellung sichtereignisse zu überwachen. Dieser Anbieter Randsteuerelement exportiert Zusatzelement (adornment) der Ebene der Z-Reihenfolge von der Zusatzelement (adornment) definiert.  
+## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Fügen Sie den Befehlsfilter (vor Visual Studio 2017 Version 15.6)
+ Der zusatzelementanbieter muss einen Befehlsfilter der Textansicht hinzufügen. In diesem Beispiel ist der Anbieter implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> zum Lauschen auf Ereignisse beim Erstellen von Text anzeigen. Dieser zusatzelementanbieter exportiert auch die Zusatzelementebene, die die Z-Reihenfolge des Zusatzelements definiert.  
   
 1.  Fügen Sie in der Datei KeyBindingTestTextViewCreationListener die folgenden using-Anweisungen:  
   
@@ -153,7 +153,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
   
     ```  
   
-2.  Um den Text-Ansicht-Adapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+2.  Um der Textansichtsadapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -170,7 +170,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
     }  
     ```  
   
-4.  Die `AddCommandFilter` Handler Ruft den Text anzeigen Adapter ab, und der Befehlsfilter hinzugefügt.  
+4.  Die `AddCommandFilter` Handler ruft der Textansichtsadapter, und der Befehlsfilter hinzugefügt.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -194,15 +194,15 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Behandeln v
     }  
     ```  
 
-## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Implementieren der Befehlshandler (in Visual Studio 2017 Version 15,6 ab)
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Implementieren Sie einen Befehlshandler (ab Visual Studio 2017 Version 15.6)
 
-Aktualisieren Sie zuerst den Verweisen des Projekts Nuget um den neuesten-Editor-API zu verweisen:
+Aktualisieren Sie zunächst die Nuget-Verweise des Projekts, um auf den neuesten-Editor-API zu verweisen:
 
-1. Mit der rechten Maustaste auf das Projekt, und wählen **NuGet-Pakete verwalten**.
+1. Mit der rechten Maustaste auf das Projekt, und wählen Sie **Nuget-Pakete verwalten**.
 
 2. In **Nuget Package Manager**, wählen die **Updates** Registerkarte die **wählen Sie alle Pakete** Kontrollkästchen, und wählen Sie dann **Update**.
 
-Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, den Befehl durch Instanziierung der Zusatzelement (adornment) behandelt.  
+Die Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, behandelt den Befehl durch Instanziieren des Zusatzelements ab.  
   
 1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandHandler`.  
   
@@ -216,7 +216,7 @@ Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
     using System.ComponentModel.Composition;   
     ```  
   
-3.  Die Klasse mit dem Namen KeyBindingCommandHandler Vererben sollte `ICommandHandler<TypeCharCommandArgs>`, und exportieren Sie es als <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3.  Die Klasse, die mit dem Namen KeyBindingCommandHandler erben soll `ICommandHandler<TypeCharCommandArgs>`, und exportieren Sie es als <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
     ```csharp  
     [Export(typeof(ICommandHandler))]
@@ -225,13 +225,13 @@ Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
     internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
     ```  
   
-4.  Fügen Sie einen Anzeigenamen der Befehlshandler hinzu:  
+4.  Fügen Sie einen Anzeigenamen, der den Befehlshandler hinzu:  
   
     ```csharp  
     public string DisplayName => "KeyBindingTest";
     ```  
     
-5.  Implementieren der `GetCommandState()` Methode wie folgt. Da diese Befehlshandler Core Editor TYPECHAR-Befehl verarbeitet, können sie delegieren, aktivieren den Befehl aus, um die Core-Editor.
+5.  Implementieren der `GetCommandState()` -Methode wie folgt. Da es sich bei diesen Befehlshandler Kern-Editor TYPECHAR-Befehl verarbeitet, können sie delegieren, aktivieren den Befehl aus, um die Kern-Editor.
   
     ```csharp  
     public CommandState GetCommandState(TypeCharCommandArgs args)
@@ -240,7 +240,7 @@ Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
     } 
     ```  
   
-6.  Implementieren der `ExecuteCommand()` Methode, sodass die It eine violette Box auf die Ansicht Wenn Fügt eine + Zeichen eingegeben wird. 
+6.  Implementieren der `ExecuteCommand()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt (**+**) Zeichen eingegeben wird. 
   
     ```csharp  
     public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -259,7 +259,7 @@ Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
         return false;
     }
     ```  
- 7. Kopieren Sie Zusatzelement (adornment) Ebene Definition aus KeyBindingTestTextViewCreationListener.cs-Datei in die KeyBindingCommandHandler.cs zu und löschen Sie KeyBindingTestTextViewCreationListener.cs-Datei:
+ 7. Kopieren Ebene-Definition von Zusatzelement *KeyBindingTestTextViewCreationListener.cs* -Datei in die *KeyBindingCommandHandler.cs* und löschen Sie  *KeyBindingTestTextViewCreationListener.cs* Datei:
  
     ```csharp  
     /// <summary>
@@ -272,11 +272,11 @@ Der Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
     private AdornmentLayerDefinition editorAdornmentLayer;    
     ```  
 
-## <a name="making-the-adornment-appear-on-every-line"></a>Machen die Zusatzelement (adornment) in jeder Zeile angezeigt werden  
+## <a name="make-the-adornment-appear-on-every-line"></a>Stellen Sie das Zusatzelement in jeder Zeile angezeigt werden  
 
-Die ursprüngliche Randsteuerelement schien für jedes Zeichen "a" in eine Textdatei. Nun, dass wir den Code zum Hinzufügen der Randsteuerelement als Antwort auf das Zeichen "+" geändert haben, fügt Sie der Zusatzelement (adornment) nur in der Zeile, in dem die "+" typisiert ist. Wir können den Randsteuerelement-Code ändern, sodass die Randsteuerelement einmal auf angezeigt wird jede "a".  
+Das ursprüngliche Zusatzelement angezeigt wird, für jedes enthaltene Zeichen "a" in eine Textdatei. Nun, dass wir den Code zum Hinzufügen des Zusatzelements in Reaktion auf geändert haben die **+** Zeichen, das Zusatzelement nur in der Zeile hinzugefügt, in denen die **+** Zeichen eingegeben wird. Ändern wir den Code des Zusatzelements, damit das Zusatzelement noch einmal auf angezeigt wird jedes "a".  
   
-Ändern Sie in der Datei KeyBindingTest.cs die CreateVisuals()-Methode, um alle Zeilen in der Sicht ergänzt das Zeichen "a" durchlaufen.  
+In der *KeyBindingTest.cs* Datei die `CreateVisuals()` Methode, um alle Zeilen in der Ansicht, um das Zeichen "a" ergänzen durchlaufen.  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  
@@ -320,10 +320,10 @@ private void CreateVisuals(ITextViewLine line)
 }  
 ```  
   
-## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
+## <a name="build-and-test-the-code"></a>Erstellen und Testen des Codes  
   
 1.  Erstellen Sie die KeyBindingTest-Projektmappe, und führen Sie sie in der experimentellen Instanz.  
   
-2.  Erstellen Sie oder öffnen Sie eine Textdatei. Geben Sie einige Wörter, die das Zeichen "a", und geben Sie dann + an einer beliebigen Stelle in der Textansicht.  
+2.  Erstellen Sie oder öffnen Sie eine Textdatei. Geben Sie einige Wörter, die mit dem Zeichen "a", und geben Sie dann **+** an einer beliebigen Stelle in der Textansicht.  
   
      Eine violette Quadrat sollte auf jedem Zeichen "a" in der Datei angezeigt werden.

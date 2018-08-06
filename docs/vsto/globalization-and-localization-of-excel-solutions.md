@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecd88a238c783224dc9d1ea982fe1ed3970fcfc1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567456"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Projektmappen
-  Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Allgemeine Informationen finden Sie unter [Globalize und Lokalisieren von Anwendungen](/visualstudio/ide/globalizing-and-localizing-applications).  
+  Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Weitere Informationen finden Sie unter [Globalize und Lokalisieren von Anwendungen](/visualstudio/ide/globalizing-and-localizing-applications).  
   
  Die Hoststeuerelemente in Microsoft Office Excel funktionieren standardmäßig in allen regionalen Windows-Einstellungen ordnungsgemäß, solange alle mithilfe von verwaltetem Code übergebenen oder geänderten Daten als „Englisch (USA)“ formatiert werden. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]ausgerichtet sind, wird dieses Verhalten von der Common Language Runtime (CLR) gesteuert.  
   
@@ -46,10 +47,10 @@ ms.lasthandoff: 05/22/2018
 ## <a name="localize-document-text"></a>Lokalisieren von Dokumenttext  
  Das Dokument, die Vorlage oder die Arbeitsmappe in Ihrem Projekt umfasst wahrscheinlich statischen Text, der getrennt von der Assembly und anderen verwalteten Ressourcen lokalisiert werden muss. Eine einfache Möglichkeit hierzu stellt das Erstellen einer Kopie des Dokuments und das anschließende Übersetzen des Texts mithilfe von Microsoft Office Word oder Microsoft Office Excel dar. Diese Vorgehensweise funktioniert auch, wenn Sie keine Änderungen am Code vornehmen, da eine beliebige Anzahl von Dokumenten mit derselben Assembly verknüpft werden kann.  
   
- Sie müssen weiterhin sicherstellen, dass jeder Teil des Codes, der mit dem Dokumenttext interagiert, stets mit der Sprache des Texts übereinstimmt, und dass sich Lesezeichen, benannte Bereiche und andere Anzeigefelder allen neuen Formatierungen des Office-Dokuments anpassen, die hinsichtlich einer anderen Grammatik und Textlänge geändert werden mussten. Für Dokumentvorlagen, die relativ wenig Text enthalten, sollten Sie erwägen den Text in Ressourcendateien gespeichert, und klicken Sie dann zur Laufzeit zu laden.  
+ Sie müssen weiterhin sicherstellen, dass jeder Teil des Codes, der mit dem Dokumenttext interagiert, stets mit der Sprache des Texts übereinstimmt, und dass sich Lesezeichen, benannte Bereiche und andere Anzeigefelder allen neuen Formatierungen des Office-Dokuments anpassen, die hinsichtlich einer anderen Grammatik und Textlänge geändert werden mussten. Für Dokumentvorlagen, die relativ wenig Text enthalten, empfiehlt es sich, sollten den Text in Ressourcendateien zu speichern, und klicken Sie dann zur Laufzeit zu laden.  
   
 ### <a name="text-direction"></a>Textrichtung  
- In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Hoststeuerelemente oder beliebige Steuerelemente mit einer `RightToLeft` Eigenschaft, die automatisch im Designer platziert werden, entsprechen diese Einstellungen zur Laufzeit. Word verfügt nicht über eine Dokumenteinstellung für bidirektionalen Text (Sie ändern einfach die Ausrichtung des Texts), daher können dieser Einstellung die Steuerelemente nicht zugeordnet werden. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.  
+ In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Hoststeuerelemente oder beliebige Steuerelemente mit einem `RightToLeft` Eigenschaft, die automatisch im Designer platziert wird, entsprechen diese Einstellungen zur Laufzeit. Word verfügt nicht über eine Dokumenteinstellung für bidirektionalen Text (Sie ändern einfach die Ausrichtung des Texts), daher können dieser Einstellung die Steuerelemente nicht zugeordnet werden. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.  
   
 ### <a name="change-culture"></a>Ändern der Kultur  
  Ihr Anpassungscode auf Dokumentebene teilt in der Regel den primären UI-Thread von Excel. Daher wirken sich alle Änderungen, die Sie an der Threadkultur vornehmen, auf alles andere aus, das in diesem Thread ausgeführt wird. Die Änderung ist nicht auf Ihre Anpassung beschränkt.  
@@ -70,9 +71,9 @@ ms.lasthandoff: 05/22/2018
 ### <a name="applications-that-use-string-literals"></a>Anwendungen, die Zeichenfolgenliterale verwenden  
  Hartcodierte Werte können z. B. Datumsliterale im Format „Englisch (USA)“ und Excel-Arbeitsblattformeln sein, die lokalisierte Funktionsnamen enthalten. Eine weitere Möglichkeit ist z. B. eine hartcodierte Zeichenfolge, die eine Zahl wie „1,000“ enthält. In einigen Kulturen wird dies als eintausend interpretiert, während es in anderen Kulturen als eine „1“ mit drei Nachkommastellen interpretiert wird. Mit dem falschen Format ausgeführte Berechnungen und Vergleiche führen möglicherweise zu falschen Daten.  
   
- Excel interpretiert alle Zeichenfolgen gemäß der LCID, die mit der Zeichenfolge übergeben wird. Dies kann ein Problem darstellen, wenn das Format der Zeichenfolge nicht mit der übergebenen LCID übereinstimmt. Excel-Projektmappen, die mithilfe der Office-Entwicklungstools in Visual Studio erstellt werden, verwenden beim Übergeben sämtlicher Daten die LCID 1033 (en-US). Excel zeigt die Daten gemäß den regionalen Einstellungen und der Sprache der Excel-Benutzeroberfläche an. Visual Basic for Applications (VBA) funktioniert auch auf diese Weise. Zeichenfolgen werden als „en-US“ formatiert und VBA übergibt fast immer den Wert „0“ (sprachneutral) als LCID. Der folgende VBA-Code zeigt z. B. einen ordnungsgemäß formatierten Wert für den 12. Mai 2004 in Übereinstimmung mit dem aktuellen Gebietsschema des Benutzers an:  
+ Excel interpretiert alle Zeichenfolgen gemäß der LCID, die mit der Zeichenfolge übergeben wird. Dies kann ein Problem darstellen, wenn das Format der Zeichenfolge nicht mit der übergebenen LCID übereinstimmt. Excel-Projektmappen, die mithilfe der Office-Entwicklungstools in Visual Studio erstellt werden, verwenden beim Übergeben sämtlicher Daten die LCID 1033 (en-US). Excel zeigt die Daten gemäß den regionalen Einstellungen und der Sprache der Excel-Benutzeroberfläche an. Visual Basic for Applications (VBA) funktioniert auch auf diese Weise. Zeichenfolgen werden als „en-US“ formatiert und VBA übergibt fast immer den Wert „0“ (sprachneutral) als LCID. Die folgende VBA-Code zeigt z. B. einen ordnungsgemäß formatierten Wert für am 12. Mai 2004 in Übereinstimmung mit dem aktuellen Gebietsschema des Benutzers:  
   
-```  
+```vb
 'VBA  
 Application.ActiveCell.Value2 = "05/12/04"  
 ```  
@@ -92,14 +93,14 @@ Application.ActiveCell.Value2 = "05/12/04"
  [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]  
   
 ### <a name="excel-worksheet-functions"></a>Excel-Arbeitsblattfunktionen  
- Die Namen von Arbeitsblattfunktionen werden für die meisten Sprachversionen von Excel intern übersetzt. Allerdings wird aufgrund möglicher Sprach- und COM-Interop-Probleme dringend empfohlen, dass Sie in Ihrem Code nur englische Funktionsnamen verwenden.  
+ Die Namen von Arbeitsblattfunktionen werden für die meisten Sprachversionen von Excel intern übersetzt. Allerdings wird aufgrund möglicher Sprach- und COM-interop-Probleme empfohlen, dass Sie in Ihrem Code nur englische Funktionsnamen verwenden.  
   
-### <a name="applications-that-use-external-data"></a>Anwendungen, die externe Daten verwenden  
+### <a name="applications-that-use-external-data"></a>Anwendungen, die externe Daten verwenden.  
  Möglicherweise ist auch jeglicher Code, der externe Daten öffnet oder anderweitig verwendet, betroffen, z. B. Dateien mit durch Trennzeichen getrennten Werten (CSV-Dateien), die aus einem Legacysystem exportiert wurden, wenn diese Dateien in einem anderen Format als „en-US“ exportiert werden. Der Zugriff auf die Datenbank ist möglicherweise nicht beeinträchtigt, da alle Werte im binären Format vorliegen sollten, sofern die Datenbank die Daten nicht als Zeichenfolgen speichert oder Vorgänge ausführt, die kein binäres Format verwenden. Wenn Sie SQL-Abfragen mithilfe von Daten aus Excel erstellen, müssen Sie zudem möglicherweise sicherstellen, dass diese in Abhängigkeit von der verwendeten Funktion im Format „en-US“ vorliegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen der mehrsprachige Benutzeroberfläche von Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Gewusst wie: Anpassen der mehrsprachige Benutzeroberfläche von Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

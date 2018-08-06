@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2be7a0fdb3204647f6874d2dceaa81eb8cac3756
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952273"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566738"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 
-Dieser Artikel beschreibt die Elemente und Beziehungen in Ebenenmodellen, die Sie navigieren und mithilfe von Programmcode aktualisiert werden können. Weitere Informationen zur Abhängigkeit Diagramme aus der Sicht des Benutzers finden Sie unter [Abhängigkeit Diagrammen: Verweis](../modeling/layer-diagrams-reference.md) und [Abhängigkeit Diagrammen: Richtlinien](../modeling/layer-diagrams-guidelines.md).
+Dieser Artikel beschreibt die Elemente und Beziehungen in Ebenenmodellen, die Sie navigieren und mithilfe von Programmcode aktualisieren können. Weitere Informationen zu Abhängigkeitsdiagrammen aus Sicht des Benutzers, finden Sie unter [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md) und [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).
 
-Die <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> in diesem Thema beschriebene Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel> Modell. Wenn Sie schreiben eine [Menübefehl-oder gestenerweiterung](../modeling/add-commands-and-gestures-to-layer-diagrams.md), verwenden Sie die `Layer` Modell. Wenn Sie schreiben eine [layer validierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es ist einfacher zu verwenden die `GraphModel`.
+Die <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> in diesem Thema beschriebene Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel> Modell. Wenn Sie schreiben eine [menüerweiterung Befehls- oder Gestenhandlerprojekts](../modeling/add-commands-and-gestures-to-layer-diagrams.md), verwenden Sie die `Layer` Modell. Wenn Sie schreiben eine [layer validierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es ist einfacher zu verwenden die `GraphModel`.
 
 ## <a name="transactions"></a>Transaktionen
 
-Wenn Sie ein Modell aktualisieren, sollten Sie die Änderungen im einschließenden eine `ILinkedUndoTransaction`, wodurch Ihre Änderungen in einer Transaktion gruppiert. Wenn eine der Änderungen fehlschlägt, wird die gesamte Transaktion zurückgesetzt. Wenn der Benutzer eine Änderung rückgängig macht, werden alle Änderungen zusammen rückgängig gemacht.
+Wenn Sie ein Modell aktualisieren, sollten Sie die Änderungen im einschließenden eine `ILinkedUndoTransaction`, die die Änderungen in einer Transaktion gruppieren. Wenn eine der Änderungen fehlschlägt, wird die gesamte Transaktion zurückgesetzt. Wenn der Benutzer eine Änderung rückgängig macht, werden alle Änderungen zusammen rückgängig gemacht.
 
-```
+```csharp
 using (ILinkedUndoTransaction t =
         LinkedUndoContext.BeginTransaction("a name"))
 {
@@ -76,7 +76,7 @@ IEnumerable<ILayerComment> comments =
 > [!CAUTION]
 > Die `Comments`-Eigenschaft einer `ILayer` ruft die Kommentare ab, die in `ILayer` enthalten sind. Es werden nicht die mit ihr verknüpften Kommentare abgerufen.
 
-Erstellen Sie einen Kommentar durch Aufrufen von `CreateComment()` für den entsprechenden Container.
+Erstellen Sie einen Kommentar durch Aufrufen von `CreateComment()` im entsprechenden Container.
 
 Erstellen Sie einen Link, indem Sie `CreateLink()` auf den Kommentar anwenden.
 
@@ -84,7 +84,7 @@ Erstellen Sie einen Link, indem Sie `CreateLink()` auf den Kommentar anwenden.
 
 Alle Elementtypen, die in einem Modell enthalten sein können, sind Ebenenelemente:
 
-![Abhängigkeit enthalten Diagramm ILayerElements.](../modeling/media/layerapi_layerelements.png)
+![Abhängigkeit Diagramm Inhalt sind ILayerElements.](../modeling/media/layerapi_layerelements.png)
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -92,27 +92,27 @@ Jedes `ILayerElement` verfügt über ein Zeichenfolgenwörterbuch namens `Proper
 
 ## <a name="artifact-references"></a>Artefaktverweise
 
-Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. eine Datei, eine Klasse oder ein Ordner. Der Benutzer erstellt Elemente, beim Erstellen einer Ebene oder durch Ziehen von Elementen aus dem Projektmappen-Explorer, Klassenansicht und Objektkatalog in ein Diagramm Abhängigkeit hinzufügen. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.
+Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. eine Datei, eine Klasse oder ein Ordner. Der Benutzer erstellt Artefakte, beim Erstellen einer Ebene oder durch Ziehen von Elementen aus dem Projektmappen-Explorer, Klassenansicht oder Objektkatalog in ein Abhängigkeitsdiagramm hinzugefügt. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.
 
-Jede Zeile im Ebenen-Explorer zeigt einen Artefaktverweis an. Weitere Informationen finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).
+Jede Zeile im Ebenen-Explorer zeigt einen Artefaktverweis an. Weitere Informationen finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
 Folgende hauptsächliche Typen und Methoden sind von Artefaktverweisen betroffen:
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Die Eigenschaft „Kategorien“ gibt an, welche Art von Artefakt referenziert wird, z. B. Klasse, ausführbare Datei oder Assembly. Die Eigenschaft "Kategorien" bestimmt, wie der Bezeichner das Zielartefakt identifiziert.
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> erstellt einen Artefaktverweis über ein <xref:EnvDTE.Project> oder <xref:EnvDTE.ProjectItem>. Das ist ein asynchroner Vorgang. Daher geben Sie in der Regel einen Rückruf, der aufgerufen wird, wenn die Erstellung abgeschlossen ist.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> erstellt einen Artefaktverweis über ein <xref:EnvDTE.Project> oder <xref:EnvDTE.ProjectItem>. Das ist ein asynchroner Vorgang. Aus diesem Grund geben Sie in der Regel einen Rückruf, der aufgerufen wird, wenn die Erstellung abgeschlossen ist.
 
-Ebenenartefaktverweise sind mit Artefakten in Anwendungsfalldiagrammen unterschiedlich.
+Ebenenartefaktverweise unterscheiden sich von Elementen in Anwendungsfalldiagrammen.
 
 ## <a name="shapes-and-diagrams"></a>Formen und Diagramme
 
-Es werden zwei Objekte verwendet, um die einzelnen Elemente in einem Ebenenmodell darzustellen: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> und <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` stellt Position und Größe der Form auf dem Diagramm dar. In Ebenenmodellen jeder `ILayerElement` verfügt über einen `IShape`, und jeder `IShape` auf eine Abhängigkeit besitzt ein `ILayerElement`. `IShape` wird auch für UML-Modelle verwendet. Daher verfügt nicht jedes `IShape` über ein Ebenenelement.
+Es werden zwei Objekte verwendet, um die einzelnen Elemente in einem Ebenenmodell darzustellen: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> und <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` stellt Position und Größe der Form auf dem Diagramm dar. In Ebenenmodellen jeder `ILayerElement` verfügt über ein `IShape`, und jede `IShape` auf einer Abhängigkeit besitzt ein `ILayerElement`. `IShape` wird auch für UML-Modelle verwendet. Daher verfügt nicht jedes `IShape` über ein Ebenenelement.
 
 Auf dieselbe Weise wird <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> für ein <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> angezeigt.
 
 Im Code eines benutzerdefinierten Befehl- oder Gestenhandlers können Sie das aktuelle Diagramm und die aktuelle Formenauswahl aus dem `DiagramContext`-Import abrufen:
 
-```
+```csharp
 public class ... {
 [Import]
     public IDiagramContext DiagramContext { get; set; }

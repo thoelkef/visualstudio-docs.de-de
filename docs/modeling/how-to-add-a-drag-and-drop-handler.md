@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513506"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566628"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
@@ -50,14 +50,13 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während der Mauszeiger über dieser Form oder das Diagramm, hält Wenn `OnDragOver(DiagramDragEventArgs e)` zuvor festgelegten `e.Effect` auf einen anderen Wert als `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Diese Methode wird aufgerufen, wenn der Benutzer die Form oder das Diagramm doppelklickt.
@@ -76,7 +74,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
 
 Definieren Sie `IsAcceptableDropItem(e)`, um zu bestimmen, ob das gezogene Element akzeptiert werden kann, und "ProcessDragDropItem(e)", um das Modell zu aktualisieren, wenn das Element abgelegt wird. Diese Methoden müssen das Element zuerst aus den Ereignisargumenten extrahieren. Informationen dazu, wie Sie dies tun, finden Sie unter [Gewusst wie: Abrufen eines Verweises auf das gezogene Element](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Definieren von Gestenhandlern mit MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definieren von Gestenhandlern mit MEF
 
 Nutzen Sie diese Methoden, wenn Entwickler von Drittanbietern in der Lage sein sollen, eigene Handler für Ihre DSL zu definieren. Die Benutzer könnten Erweiterungen von Drittanbietern installieren, nachdem sie Ihre DSL installiert haben.
 
@@ -148,7 +146,6 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Bestimmen Sie zum Akzeptieren von UML-Formen die GUIDs der UML-Formklassen auf experimentelle Weise. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
@@ -163,7 +160,7 @@ Die Eigenschaften `Data` und `Prototype` der Ereignisargumente enthalten nur ein
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>So bereiten Sie ein DSL-Projekt mit Modellbus vor
 
-1.  Richten Sie die Quell-DSL für den Zugriff durch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Modellbus ein:
+1.  Stellen Sie die Quell-DSL von Visual Studio-Modellbus zugegriffen werden kann:
 
     1.  Laden Sie die Visual Studio-Modellbuserweiterung herunter, und installieren Sie sie, sofern noch nicht geschehen. Weitere Informationen finden Sie unter [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
