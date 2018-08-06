@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: af1af0f6b3493cedebd949bd9f1d36d795a64914
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380576"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566582"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -167,7 +167,7 @@ Nach der Empfehlung zu agiler Entwicklung werden wir die Vorlage in kleinen Schr
 
 Der Testcode erfordert eine Klasse für jeden Knoten in der Datei. Daher werden einige der Kompilierungsfehler behoben, wenn Sie diese Zeilen an die Vorlage anfügen und speichern:
 
-```
+```csharp
 class Catalog {}
 class Artist {}
 class Song {}

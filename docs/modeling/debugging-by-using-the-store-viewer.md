@@ -12,25 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748409"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567063"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debuggen mithilfe der Speicheranzeige
-Mit dem Viewer speichern können Sie den Status der Prüfen einer *speichern* verwendeten [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Die speichern-Viewers zeigt alle die Domäne Modellelemente, die in einem bestimmten Speicher, zusammen mit Elementeigenschaften und Links zwischen Elementen sind.
+Mit dem Store-Viewer, sehen Sie den Status einer *speichern* ein, die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Der Store-Viewer zeigt alle Elemente Modell mit der Domäne, die in einem bestimmten Speicher sowie Elementeigenschaften und Links zwischen Elementen sind.
 
-## <a name="opening-store-viewer"></a>Öffnenden Speicher-Viewer
- Wenn Sie sind der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentellen "erstellen", beenden Sie den Code an einem Haltepunkt, in dem eine Instanz des Speichers Modellinformationen enthält. Öffnen Sie dann den Speicher-Viewer durch Eingabe des folgenden Befehls in die **Direktfenster** Fenster:
+## <a name="opening-store-viewer"></a>Öffnen von Store-Viewer
+ Wenn Sie sind der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentelle "erstellen", Ihren Code an einem Haltepunkt zu beenden, von denen Informationen zum Modell enthält einer Instanz des Speichers. Klicken Sie dann die Store-Viewer öffnen, indem Sie den folgenden Befehl in der **direkt** Fenster:
 
-```
+```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```
 
 > [!NOTE]
->  Ersetzen Sie `mystore` durch den Namen Ihrer Store-Instanz. Wenn Sie den Namespace in den Code hinzufügen, können Sie den Befehl für die Speicher-Viewer anzeigen, ohne den vollqualifizierten Namespace eingeben:
+>  Ersetzen Sie `mystore` mit dem Namen Ihrer Store-Instanz. Wenn Sie den Namespace an Ihrem Code hinzufügen, können Sie auch den Befehl zum Anzeigen von Store-Viewer ohne den vollqualifizierten Namespace eingeben:
 >
 >  `using Microsoft.VisualStudio.Modeling.Diagnostics;`
 >
@@ -38,16 +38,16 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 >
 >  `StoreViewer.Show(mystore);`
 
- Die `Show` -Methode weist mehrere Überladungen. Sie können eine Instanz von einem Speicher oder eine Partition als Parameter angeben.
+ Die `Show` -Methode weist mehrere Überladungen. Sie können eine Instanz von einem Store oder eine Partition als Parameter angeben.
 
- Als Alternative können Sie die Codezeile, die die Speicher-Viewer an einer beliebigen Stelle im Code zeigt einfügen können, in dem der Parameter, die Sie zum Übergeben der `Show` Methode befindet sich im Bereich. Dadurch zeigt der Viewer speichern aus, wenn die Codezeile, die als eine Momentaufnahme des Inhalts des Speichers ausgeführt wird.
+ Als Alternative können Sie die Codezeile, die an einer beliebigen Stelle der Store-Viewer in Ihrem Code zeigt einfügen, in dem der Parameter, die Sie zum Übergeben der `Show` -Methode wird in den Bereich. Diese Aktion wird im Store Viewer aus, wenn die Zeile des Codes als eine Momentaufnahme für den Inhalt des Speichers ausgeführt wird.
 
-### <a name="using-store-viewer"></a>Verwenden von Speicher-Viewer
- Wenn der Speicher-Viewer geöffnet wird, wird ein nicht modales Windows Forms-Fenster wie die folgende Abbildung zeigt angezeigt.
+### <a name="using-store-viewer"></a>Verwenden von Store-Viewer
+ Wenn der Store-Viewer geöffnet wird, wird ein nicht modales Fenster des Windows Forms als der folgenden Abbildung dargestellt angezeigt.
 
- ![](../modeling/media/storeviewer2.png) Speicher-Viewer
+ ![](../modeling/media/storeviewer2.png) Store-Viewer
 
- Der Speicher-Viewer verfügt über drei Bereiche: links, oben rechts im Bereich und Bereich unten rechts. Der linke Bereich ist eine Strukturansicht der Typen in der `DomainDataDirectory` Member eines Speichers. Wenn Sie erweitern Sie den Knoten für die Partition, und klicken Sie auf ein Element, werden die Eigenschaften des Elements in der oberen rechten Bereich angezeigt. Wenn das Element auf andere Elemente verknüpft ist, werden die zusätzlichen Elemente in der unteren rechten Ecke angezeigt. Wenn Sie ein Element in der unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.
+ Der Store-Viewer verfügt über drei Bereiche: den linken Bereich oben rechts im Bereich und unteren rechten Bereich. Der linke Bereich ist eine Strukturansicht der Typen in der `DomainDataDirectory` Member eines Speichers. Wenn Sie erweitern Sie den partitionsknoten, und klicken Sie auf ein Element, werden die Eigenschaften des Elements in der oberen rechten Bereich angezeigt. Wenn das Element an andere Elemente verknüpft ist, werden die zusätzlichen Elemente im Bereich unten rechts angezeigt. Wenn Sie ein Element in der unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.
 
 ## <a name="see-also"></a>Siehe auch
 
