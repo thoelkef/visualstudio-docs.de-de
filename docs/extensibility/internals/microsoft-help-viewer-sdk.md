@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234672"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513373"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer Integratoren:  
@@ -820,7 +820,7 @@ Um dies zu testen, als ob bereitgestellt:
 12. Wählen Sie in der Contoso-IDE die F1-Taste F1 Funktionalität testen.  
   
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen  
-Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  
+Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
 Weitere Informationen zum Nutzen der Hilfe-API finden Sie unter [Hilfe-Viewer-Codebeispiele](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   
