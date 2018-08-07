@@ -1,5 +1,5 @@
 ---
-title: VSIX-Manifest-Designer | Microsoft Docs
+title: VSIX-Manifest-Designer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef3d32460ba6408eab8a25364f159baecdae6d9d
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148118"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586325"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
-Ändert eine VSIX-Paket-manifest-Datei, die das Installationsverhalten für eine Visual Studio-Erweiterung legt fest.  
+Ändert eine VSIX-Paket-manifest-Datei, die legt das Verhalten bei der Installation für Visual Studio-Erweiterung.  
   
- Die **VSIX-Manifest-Designer** ordnet das zugrunde liegende VSIX-Schema. Jedes Element im Schema kann mithilfe eines entsprechenden Steuerelements im Designer festgelegt werden. Weitere Informationen zum Schema finden Sie unter [VSIX-Erweiterung 2.0 Schemareferenz](../extensibility/vsix-extension-schema-2-0-reference.md).  
+ Die **VSIX-Manifest-Designer** ordnet das zugrunde liegende VSIX-Schema. Jedes Element im Schema kann mithilfe eines entsprechenden Steuerelements im Designer festgelegt werden. Weitere Informationen zum Schema finden Sie unter [Referenz zum VSIX-Erweiterungsschema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
- So öffnen die **VSIX-Manifest-Designer**, suchen Sie eine Datei "Source.Extension.vsixmanifest" im **Projektmappen-Explorer**, und öffnen Sie die Datei. Wenn die Datei keine gültigen XML-Code enthält, wird der manifest-Designer nicht geöffnet werden.  
+ Zum Öffnen der **VSIX-Manifest-Designer**, Suchen einer *"Source.Extension.vsixmanifest"* Datei **Projektmappen-Explorer**, und öffnen Sie die Datei. Wenn die Datei keine gültigen XML-Code enthält, wird nicht im manifest-Designer öffnen.  
   
 > [!NOTE]
->  "Source.Extension.vsixmanifest" ist die Ausgabe an "Extension.vsixmanifest", wenn das Paket erstellt wird.  
+>  Die *"Source.Extension.vsixmanifest"* wird in die Ausgabedatei zu *"Extension.vsixmanifest"* Wenn das Paket erstellt wurde.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  Die **VSIX-Manifest-Designer** enthält vier Abschnitte, die diese Elemente der obersten Ebene des Schemas entsprechen:  
   
 -   Metadaten  
   
--   Installieren von Zielen  
+-   Installationsziele  
   
 -   Objekte  
   
@@ -48,10 +48,10 @@ ms.locfileid: "31148118"
  Der Überschriftenbereich enthält die folgenden Steuerelemente.  
   
  **Produktname**  
- Beschreibt den Erweiterungsnamen an.  
+ Beschreibt, der Name der Erweiterung.  
   
  **Produkt-ID**  
- Gibt die eindeutige Kennung dieses Paket an.  
+ Gibt die eindeutige ID-Informationen für dieses Paket.  
   
  **Autor**  
  Gibt den Namen des Autors der Erweiterung.  
@@ -62,28 +62,28 @@ ms.locfileid: "31148118"
  Die **Metadaten** Registerkarte enthält die folgenden Steuerelemente.  
   
  **Beschreibung**  
- Bietet eine textbeschreibung der Erweiterung angezeigt werden **Erweiterungs-Manager**.  
+ Stellt eine textbeschreibung der Erweiterung anzuzeigenden **Erweiterungs-Manager**.  
   
  **Sprache**  
- Gibt die Standardsprache für das Paket, die die Textdaten in das Manifest entspricht. Die `Language` Attribut folgt die common Language Runtime (CLR) Gebietsschema Code Konvention für Ressourcenassemblys, z. B. de-de, En, fr-fr. Standardmäßig ist der Wert neutrale; Dies bedeutet, dass das Paket auf eine beliebige Sprachversion von Visual Studio ausgeführt wird.  
+ Gibt die Standardsprache für das Paket, das Textdaten im Manifest entspricht. Die `Language` -Attribut den common Language Runtime (CLR) Gebietsschema Code Konvention folgt der Ressourcenassemblys, z. B. En-us, En, fr-fr. Standardmäßig ist der Wert neutral zurückgesetzt, was bedeutet, dass das Paket auf eine beliebige Sprachversion von Visual Studio ausgeführt wird.  
   
  **Lizenz**  
- Gibt die Textdatei, die die Benutzerlizenz enthält, sofern eins vorhanden ist.  
+ Gibt die Textdatei, die die Benutzerlizenz enthält, sofern vorhanden.  
   
  **Symbol**  
- Gibt die Grafikdatei (PNG, BMP, JPEG, .ico) mit dem Symbol anzuzeigenden enthält **Erweiterungs-Manager**, wenn ein Symbol vorhanden ist. Das Symbolbild muss 32 x 32 Pixel oder wird für diese Dimensionen Größe geändert werden. Wenn kein Symbol angegeben wird, **Erweiterungs-Manager** ein Standardsymbol verwendet.  
+ Gibt an, die Grafikdatei (*PNG*, *BMP*, *JPEG*, *ICO*), enthält das Symbol anzuzeigenden  **Erweiterungs-Manager**, wenn ein Symbol vorhanden ist. Das Symbolbild muss 32 x 32 Pixel oder es ist Größe auf diese. Wenn kein Symbol angegeben wird, **Erweiterungs-Manager** ein Standardsymbol verwendet.  
   
  **Vorschaubild**  
- Gibt die Grafikdatei (PNG, BMP, JPEG, ICO), die das Vorschaubild anzuzeigenden enthält **Erweiterungs-Manager**, sofern ein Vorschaubild vorhanden ist. Das Vorschaubild muss 200 x 200 Pixel. Wenn kein Vorschaubild angegeben wird, **Erweiterungs-Manager** einem Standardbild verwendet.  
+ Gibt an, die Grafikdatei (*PNG*, *BMP*, *JPEG*, *ICO*), enthält das Vorschaubild anzuzeigenden **Erweiterungs-Manager**, wenn ein Vorschaubild vorhanden ist. Das Vorschaubild muss sich auf 200 x 200 Pixel. Wenn kein Vorschaubild angegeben wird, **Erweiterungs-Manager** ein Standardbild verwendet.  
   
- **RFID-Transponder**  
+ **Tags**  
  Fügt die für suchhinweise verwendet werden soll.  
   
  **Anmerkungen zu dieser Version**  
- Gibt eine Datei (".txt", RTF), die Anmerkungen zu dieser Version enthält. Es kann sich dabei auch um die URL einer Website handeln, auf der die Anmerkungen zu diesem Release enthalten sind.  
+ Gibt eine Datei (*.txt*, *RTF*), die Anmerkungen zu dieser Version enthält. Es kann sich dabei auch um die URL einer Website handeln, auf der die Anmerkungen zu diesem Release enthalten sind.  
   
  **Handbuch mit ersten Schritten**  
- Gibt eine Datei (".txt", RTF), die Informationen zur Verwendung der Erweiterung oder des Inhalts im VSIX-Paket enthält. Diese Anleitung wird angezeigt, wenn die Erweiterungsinstallation abgeschlossen ist. Nimmt auch die URL einer Website, die im Handbuch anzeigt.  
+ Gibt eine Datei (*.txt*, *RTF*), die Informationen zur Verwendung der Erweiterung oder den Inhalt im VSIX-Paket enthält. Dieses Handbuch wird angezeigt, wenn die Erweiterungsinstallation abgeschlossen ist. Nimmt auch die URL einer Website, die im Handbuch anzeigt.  
   
  **URL mit weiteren Informationen**  
  Gibt die URL einer Website, die zusätzliche Informationen über das Produkt enthält.  
@@ -91,36 +91,36 @@ ms.locfileid: "31148118"
  Die **Ziele installieren** Registerkarte enthält die folgenden Steuerelemente.  
   
  **Installationstyp**  
- Listet **Visual Studio-Erweiterung** und **Erweiterungs-SDK** als Zielserver Installationstypen. Die Optionen unterscheiden sich je nach Typ, den Sie auswählen.  
+ Listet **Visual Studio-Erweiterung** und **Erweiterungs-SDK** als Installationstypen abzielen. Die Optionen unterscheiden sich je nach Typ, den Sie auswählen.  
   
  **Visual Studio-Erweiterung**  
- Listet die **InstallationTarget** Elemente, die beschreiben, wie das Paket kann installiert werden und kann diese Erweiterung in der Visual Studio-Produkte installiert werden. Jedes Produkt wird separat von Namen und eine Version oder die Version Bereich identifiziert.  Produkte können zur Liste hinzugefügt, geändert und gelöscht werden. Der Name und die Version eines Produkts entsprechen den **Id** und **Version** Attribute des zugeordneten **InstallationTarget** Element.  
+ Listet die **"installationtarget"** Elemente, die beschreiben, wie das Paket kann installiert werden und kann diese Erweiterung in der Visual Studio-Produkte installiert werden. Jedes Produkt wird separat von Namen und eine Version oder die Version Bereich identifiziert. Produkte können der Liste hinzugefügt, geändert und gelöscht werden. Der Name und die Version eines Produkts entsprechen den **Id** und **Version** Attribute des zugeordneten **"installationtarget"** Element.  
   
- **Versionsbereich** ist [12.0, 14.0] und die folgende Notation verwendet:  
+ **Versionsbereich** ist ["12.0", "14.0"] und die folgende Notation verwendet:  
   
 -   [-Mindestversion inklusive  
   
--   ]-Maximalversion inklusive  
+-   ] – einschließlich-Maximalversion  
   
--   (-Mindestversion exklusive  
+-   (-Mindestversion, die exklusive  
   
--   ) – maximale Version exklusive  
+-   ) – maximale Version des exklusiven  
   
--   Die Version mit einem # - nur die angegebene Version  
+-   Einzelne Version # - nur die angegebene Version  
   
  **Erweiterungs-SDK**  
- Gibt eine globale Installation, die für ein bestimmtes Produkt und eine Version definiert ist nicht an. **Ziel Plattformbezeichner** ist die Plattform, z. B. "Windows", die Sie als Ziel bestimmen. **Version der Plattform als Ziel** ist die Version, z. B. 8.0, der Zielplattform. **SDK-Name** und **SDK-Version** sind die jeweils den Namen und die Versionsnummer des SDK.  
+ Gibt eine globale Installation, die auf ein bestimmtes Produkt und eine Version begrenzt ist nicht an. **Bezeichner der Zielplattform** ist eine Plattform, z. B. "Windows", die Sie abzielen. **Version der Zielplattform** ist die Version, z.B. 8.0, von der Zielplattform. **SDK-Name** und **SDK-Version** sind bzw. den Namen und die Versionsnummer des SDK.  
   
- **Diese VSIX ist installiert für alle Benutzer (erfordert erhöhte Rechte bei der Installation)** Kontrollkästchen  
- Wenn dieses Kontrollkästchen aktiviert ist, wird diese Erweiterung für alle Benutzer installiert. Andernfalls wird er nur für den aktuellen Benutzer installiert.  
+ **Diese VSIX ist installiert, für alle Benutzer (erfordert rechteerweiterungen, bei der Installation)**  
+ Wenn Sie dieses Kontrollkästchen aktivieren, wird die Erweiterung für alle Benutzer installiert. Andernfalls wird es nur für den aktuellen Benutzer installiert.  
   
- **Diese VSIX wurde mit Windows Installer installiert** Kontrollkästchen  
- Wenn dieses Kontrollkästchen aktiviert ist, wird diese Erweiterung von Windows Installer (MSI-Datei) installiert. Andernfalls wird er als typisches VSIX-Paket (VSIX-Datei) installiert.  
+ **Diese VSIX ist mit Windows Installer installiert.**  
+ Wenn Sie dieses Kontrollkästchen aktivieren, wird die Erweiterung installiert, von der Windows Installer (*MSI* Datei) ist, andernfalls wird es als typisches VSIX-Paket installiert (*VSIX* Datei).  
   
- Die **Bestand** Registerkarte enthält die folgenden Steuerelemente.  
+ Die **Assets** Registerkarte enthält die folgenden Steuerelemente.  
   
  **Liste von Beständen**  
- Listet die Asset-Elemente, die die Erweiterung oder des Inhalts Elemente beschreiben, die von diesem Paket Oberflächen. Jede Erweiterung oder Content-Element wird von der Quelle, Typ und Pfad separat aufgeführt. Erweiterungen und Inhalt Elemente können zur Liste hinzugefügt, geändert und gelöscht werden. Entspricht der Typ und den Pfad eines Elements Erweiterung oder des Inhalts der `Type` und `Path` Attribute des zugeordneten `Asset` Element. Die folgenden Typen sind bekannt:  
+ Werden die Asset-Elemente, die beschreiben, die Erweiterung oder des Inhalts-Elemente aufgelistet, die dieses Paket Flächen. Jede Erweiterung oder Content-Element wird von der Quelle und Typ Pfad separat aufgeführt. Erweiterungen und Content-Elemente können zur Liste hinzugefügt, geändert und gelöscht werden. Den Typ und den Pfad eines Elements Erweiterung oder Inhalt entspricht der `Type` und `Path` Attribute des zugeordneten `Asset` Element. Die folgenden Typen werden unterstützt:  
   
 -   Microsoft.VisualStudio.Package  
   
@@ -138,19 +138,19 @@ ms.locfileid: "31148118"
   
 -   Microsoft.ExtensionSDK  
   
- Zum Hinzufügen oder Bearbeiten eines Medienobjekts, müssen Sie den Ressourcentyp angeben, ob die-Medienobjekt ein Projekt in der aktuellen Projektmappe oder eine Datei in das Dateisystem und den Namen des Projekts ist. Sie können auch den Namen des Ordners, in dem eingebettet werden angeben.  
+ Zum Hinzufügen oder bearbeiten ein Medienobjekt, müssen Sie die Objekttyp, angeben, ob das Objekt ein Projekt in der aktuellen Projektmappe oder eine Datei in das Dateisystem und den Namen des Projekts ist. Sie können auch den Namen des Ordners, in dem eingebettet werden angeben.  
   
- Sie können auch eigene erstellen und ihnen eindeutige Namen zuweisen.  
+ Sie können auch eigene Typen erstellen, und geben sie eindeutige Namen.  
   
  Die **Abhängigkeiten** Registerkarte enthält die folgenden Steuerelemente.  
   
  **Namen, Quelle und Versionsbereich**  
- Listet die Abhängigkeitselemente für dieses Paket andere Pakete, denen dieses Paket abhängt. Eine abhängigkeitspakets angegeben wird, muss installiert sein, bevor dieses Paket installiert ist; Andernfalls müssen sie dieses Paket installieren.  
+ Listet die Abhängigkeitselemente dieses Pakets, die andere Pakete sind, von denen dieses Paket abhängt. Wenn ein abhängigkeitspaket angegeben wird, muss es vor der Installation dieses Pakets installiert werden. Andernfalls müssen sie dieses Paket installieren.  
   
- Abhängigkeitspakete gemäß-ID, Name, Versionsbereich, Quelle und wie die Abhängigkeit ist, aufgelöst werden. Jedes Paket Abhängigkeit wird nach Name, Version und Quelle separat aufgeführt. Abhängigkeitspakete können zur Liste hinzugefügt, geändert und gelöscht werden.  
+ Abhängigkeitspakete werden angegeben ID, Name, Versionsbereich, Quelle und wie die Abhängigkeit ist, aufgelöst werden sollen. Jedes abhängigkeitspaket wird nach Name, Version und die Datenquelle separat aufgeführt. Abhängigkeitspakete können der Liste hinzugefügt, geändert und gelöscht werden.  
   
- Der Bezeichner muss übereinstimmen. die `ID` Attribut von der abhängigkeitsmetadaten für das Paket. Die Quelle kann es sich um ein Projekt in der aktuellen Projektmappe, die derzeit installierte Erweiterung oder eine Datei sein. Die **wie Abhängigkeit aufgelöst wird** Einstellung kann sein, den relativen Pfad eines geschachtelten Pakets oder die URL den Downloadpfad für die Abhängigkeit. Die ID, die Version und die Auflösung des abhängigkeitspakets entsprechen den `Id`, `Version`, und `Location` Attribute des zugeordneten `Dependency` Element.  
+ Der Bezeichner muss übereinstimmen. die `ID` Attribut die Metadaten-Paket. Die Quelle kann es sich um ein Projekt in der aktuellen Projektmappe, die eine installierte Erweiterung oder eine Datei sein. Die **wie Abhängigkeit aufgelöst wird** Einstellung kann der relative Pfad eines verschachtelten Pakets oder die URL der Speicherort des Downloads für die Abhängigkeit sein. Die ID, die Version und die Auflösung des abhängigkeitspakets entsprechen den `Id`, `Version`, und `Location` Attribute des zugeordneten `Dependency` Element.  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSIX-Erweiterung Schemareferenz 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)   
+ [Referenz zum VSIX-Erweiterung Schema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)

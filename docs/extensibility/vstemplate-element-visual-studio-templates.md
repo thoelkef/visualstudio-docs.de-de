@@ -1,5 +1,5 @@
 ---
-title: VSTemplate-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: VSTemplate-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141401"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586751"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
-Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.  
+Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
     <TemplateData>    </TemplateData>  
     <TemplateContent>    </TemplateContent>  
@@ -42,14 +42,14 @@ Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Type`|Identifiziert die Vorlage als eine Projektvorlage oder eine Elementvorlage. Dieses Attribut kann den Wert des haben `Project` oder `Item`.|  
+|`Type`|Gibt die Vorlage als eine Projektvorlage oder eine Elementvorlage. Dieses Attribut kann den Wert der haben `Project` oder `Item`.|  
 |`Version`|Gibt eine Versionsnummer für die Vorlage an. Vorlagen in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] haben eine `Version` -Attributwert `3.0.0`.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt an, die kategorisiert die Vorlage und definiert, wie er im angezeigt der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt an, Daten, die kategorisiert die Vorlage und definiert, wie es in angezeigt. die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Inhalt der Vorlage.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Optionales Element.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Optionales Element.|  
@@ -58,12 +58,12 @@ Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.
  Keine  
   
 ## <a name="remarks"></a>Hinweise  
- Die `VSTemplate` Element ist das Stammelement der VSTEMPLATE-Dateien.  
+ Die `VSTemplate` Element ist das Stammelement der *VSTEMPLATE* Dateien.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -88,5 +88,5 @@ Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

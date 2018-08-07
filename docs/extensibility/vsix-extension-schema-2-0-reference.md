@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089369"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586351"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterungsschema 2.0
+# <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterung Schema 2.0
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.  
   
-## <a name="package-manifest-schema"></a>Paket-Manifest-Schema  
- Das Stammelement der XML-Manifestdatei ist `<PackageManifest>`, mit einem einzelnen Attribut `Version`, dies ist die Version des Manifests-Formats. Wenn das Format wesentliche Änderungen vorgenommen werden, wird das Versionsformat geändert werden. In diesem Thema wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert Version = "2.0".  
+## <a name="package-manifest-schema"></a>Paket-manifest-schema  
+ Das Stammelement der XML-Manifestdatei ist `<PackageManifest>`. Es wurde ein einzelnes Attribut `Version`, dies ist die Version des Manifests-Formats. Wenn das Format wesentliche Änderungen vorgenommen werden, wird das Versionsformat geändert. In diesem Artikel wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert der-Version = "2.0".  
   
-### <a name="packagemanifest-element"></a>PackageManifest-Element  
+### <a name="packagemanifest-element"></a>PackageManifest-element  
  In der `<PackageManifest>` "Root"-Element können Sie die folgenden Elemente:  
   
 -   `<Metadata>` -Metadaten und Werbung Informationen für das Paket selbst. Nur ein `Metadata` Element ist im Manifest zulässig.  
@@ -43,14 +43,14 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
 -   `<AnyElement>*` – Die manifest-Schema ist flexibel genug ist, um andere Elemente zu ermöglichen. Keine untergeordneten Elemente, die vom manifest-Ladeprogramm nicht erkannt werden als zusätzliche XmlElement-Objekte in der Erweiterungs-Manager-API verfügbar gemacht. Verwenden diese untergeordneten Elemente, können VSIX-Erweiterungen zusätzliche Daten in der Manifestdatei definieren, die Ausführung in Visual Studio Code zur Laufzeit zugreifen können. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> und <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
   
-### <a name="metadata-element"></a>Metadata-Element  
+### <a name="metadata-element"></a>Metadata-element  
  Dieser Abschnitt enthält die Metadaten zum Paket, dessen Identität und Informationen ankündigen. `<Metadata>` enthält die folgenden Elemente:  
   
--   `<Identity>` – Dies definiert die Identifikationsinformationen für dieses Paket und umfasst die folgenden Attribute:  
+-   `<Identity>` : Definiert die Identifikationsinformationen für dieses Paket, und enthält die folgenden Attribute:  
   
     -   `Id` – Dieses Attribut muss es sich um eine eindeutige ID für das Paket von dessen Autor ausgewählt sein. Der Name sollte die gleiche Weise wie CLR-Typen Namespaces sind qualifiziert werden: Company.Product.Feature.Name. Die `Id` -Attribut ist auf maximal 100 Zeichen umfassen.  
   
-    -   `Version` – Dies definiert die Version der dieses Paket und dessen Inhalt. Dieses Attribut entspricht dem CLR-Assembly-versionsverwaltung-Format: Hauptversion.Nebenversion.Build.Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt, und kann über die vorhandene installierte Version installiert werden.  
+    -   `Version` : Definiert die Version der dieses Paket und dessen Inhalt. Dieses Attribut entspricht dem CLR-Assembly-versionsverwaltung-Format: Hauptversion.Nebenversion.Build.Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt, und kann über die vorhandene installierte Version installiert werden.  
   
     -   `Language` – Dieses Attribut ist die Standardsprache für das Paket und die Textdaten in diesem Manifest entspricht. Dieses Attribut folgt der CLR Gebietsschema Code-Konvention für Ressourcenassemblys, zum Beispiel: En-us, En, fr-fr. Sie können angeben, `neutral` eine sprachneutrale-Erweiterung zu deklarieren, die auf eine beliebige Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`.  
   
@@ -132,10 +132,10 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
         > [!IMPORTANT]
         >  Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.  
   
-    -   `AnyAttribute*` – Die `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht werden müssen.  
+    -   `AnyAttribute*` – Die `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht wird.  
   
 ### <a name="dependencies-element"></a>Abhängigkeitselement  
- Dieses Element enthält eine Liste der Abhängigkeiten, die dieses Paket deklariert. Wenn Abhängigkeiten angegeben werden, diese Pakete (identifiziert durch ihre `Id`) muss installiert wurde, bevor Sie.  
+ Dieses Element enthält eine Liste der Abhängigkeiten, die dieses Paket deklariert. Wenn alle Abhängigkeiten angegeben sind, diese Pakete (identifizierte ihre `Id`) müssen vor dem installiert wurden.  
   
 -   `<Dependency>` Element - hat dieses untergeordnete Element die folgenden Attribute:  
   
@@ -153,18 +153,18 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
         -   Einzelne Version # - nur die angegebene Version.  
   
-    -   `DisplayName` – Dieses Attribut ist der Anzeigename des abhängigen Pakets die im UI-Elemente wie z. B. Dialogfelder und Fehlermeldungen verwendet wird. Das Attribut ist optional, es sei denn, das abhängige Paket von MSI-Datei installiert wird.  
+    -   `DisplayName` – Dieses Attribut ist der Anzeigename, der das abhängige Paket, die im UI-Elemente wie z. B. Dialogfelder und Fehlermeldungen verwendet wird. Das Attribut ist optional, es sei denn, das abhängige Paket von MSI-Datei installiert wird.  
   
     -   `Location` – Dieses optionale Attribut gibt an, entweder den relativen Pfad innerhalb dieser VSIX zu einem geschachtelten VSIX-Paket oder eine URL zu den Downloadpfad für die Abhängigkeit. Dieses Attribut wird verwendet, damit der Benutzer, die das erforderliche Paket suchen kann.  
   
     -   `AnyAttribute*` – Die `Dependency` -Element akzeptiert einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht werden.  
   
-### <a name="assets-element"></a>Ressourcen-Element  
+### <a name="assets-element"></a>Ressourcen-element  
  Dieses Element enthält eine Liste der `<Asset>` Tags für jedes Element Erweiterung oder des Inhalts, die von diesem Paket verfügbar gemacht.  
   
 -   `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
   
-    -   `Type` : Dies ist der Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
+    -   `Type` -Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
   
         1.  "Microsoft.VisualStudio.VSPackage"  
   
@@ -184,9 +184,9 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
     -   `Path` -der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
     
-    -   `TargetVersion` -der Versionsbereich, in dem sich das angegebene Objekt gilt. Wird verwendet, um den rückversand für mehrere Versionen der Objekte auf verschiedene Versionen von Visual Studio. Erfordert Visual Studio 2017.3 oder höher angewendet werden kann.
+    -   `TargetVersion` -der Versionsbereich für die das angegebene Objekt gilt. Wird verwendet, um den rückversand für mehrere Versionen der Objekte auf verschiedene Versionen von Visual Studio. Erfordert Visual Studio 2017.3 oder höher angewendet werden kann.
   
-    -   `AnyAttribute*` -Eine offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht werden müssen.  
+    -   `AnyAttribute*` -Einen offenen Satz von Attributen, der zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht wird.  
   
          `<AnyElement>*` – Beliebige strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
   
@@ -219,4 +219,4 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
+ [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)

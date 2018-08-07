@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Schemareferenz | Microsoft Docs
+title: Schemareferenz zu Visual Studio-Vorlagen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571519"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586338"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Schemareferenz zu Visual Studio-Vorlagen
-Dieser Abschnitt enthält Informationen zu XML-Elementen in VSTEMPLATE-Dateien. Dies sind Dateien, in denen Metadaten für Projektvorlagen, Elementvorlagen und Starter Kits gespeichert werden.
+# <a name="visual-studio-template-schema-reference"></a>Schemareferenz zu Visual Studio-Vorlage
+Dieser Abschnitt enthält Informationen zu XML-Elemente in *VSTEMPLATE* -Dateien, die Dateien handelt, die Metadaten für Projektvorlagen, Elementvorlagen und Starter Kits gespeichert.
 
- Sie können vstemplate.xsd zur Überprüfung benutzerdefinierter VSTEMPLATE-Dateien verwenden. Diese Datei finden Sie unter... \\ *Visual Studio-Installationsordner*\Xml\Schemas\1033\vstemplate.xsd.
+ Sie können *vstemplate.xsd* zum Überprüfen von benutzerdefinierten *VSTEMPLATE* Dateien. Diese Datei finden Sie unter *... \\ \<Visual Studio-Installationsordner > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Element|Untergeordnete Elemente|Attribute|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Keiner|Keiner|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Keiner|Keiner|
 |[Assembly (Vorlage)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (Assistentenerweiterung)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|

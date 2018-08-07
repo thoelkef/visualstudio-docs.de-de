@@ -1,5 +1,5 @@
 ---
-title: VisibilityConstraints Element | Microsoft Docs
+title: VisibilityConstraints-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f81ddd40a6de287fb40840c0473e5702d385793d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b851590cb8654a39ef55700bb62e912cbc6624c0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138310"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586234"
 ---
-# <a name="visibilityconstraints-element"></a>VisibilityConstraints-Element
-Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten. Die Sichtbarkeit wird zunächst vom gesteuert der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ohne laden das VSPackage.  
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints-element
+VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten. Die Sichtbarkeit wird zuerst gesteuert, von der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ohne das VSPackage zu laden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityConstraint>... </VisibilityConstraint>  
   <VisibilityConstraint>... </VisibilityConstraint>  
@@ -48,18 +48,18 @@ Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppe
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[VisibilityItem-Element](../extensibility/visibilityitem-element.md)|Bestimmt die Sichtbarkeit statische, Befehle und Symbolleisten.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten.|  
+|[VisibilityItem-element](../extensibility/visibilityitem-element.md)|Bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten.|  
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern) darstellen, die eine VSPackage mit der IDE ermöglicht.|  
+|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern) darstellen, die eine VSPackage für der IDE bereitstellt.|  
   
 ## <a name="example"></a>Beispiel  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
@@ -67,5 +67,5 @@ Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppe
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [VisibilityItem-Element](../extensibility/visibilityitem-element.md)   
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [VisibilityItem-element](../extensibility/visibilityitem-element.md)   
+ [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
