@@ -1,5 +1,5 @@
 ---
-title: VSIX-Language Pack 2.0 Schemareferenz | Microsoft Docs
+title: VSIX-Language Pack 2.0 Schemareferenz | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 10/26/2017
 ms.technology:
@@ -16,41 +16,41 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139652"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586221"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX-Language Pack 2.0 Schemareferenz
+# <a name="vsix-language-pack-schema-20-reference"></a>Referenz zum VSIX Language Pack 2.0-schema
 
-Das Sprachpaket für die VSIX-Schema enthält lokalisierte Installationsinformationen für VSIX-Pakete. Version 2.0 von diesem Schema unterstützt zusätzliche lokalisierungselemente.
+Das VSIX-Sprachpaket-Schema stellt lokalisierte Installationsinformationen für VSIX-Paketen bereit. Version 2.0 von diesem Schema unterstützt zusätzliche lokalisierungselemente.
 
-## <a name="language-pack-schema"></a>Language Pack-Schemas
+## <a name="language-pack-schema"></a>Schema Language pack
 
-Das Stammelement der Language Pack-Datei ist `<PackageLanguagePackManifest>`, mit der ein Attribut des `Version`, also die Language Pack-Formatversion. In diesem Thema wird beschrieben, Version 2.0 von der Language-Pack-Format, das im Manifest, durch Festlegen angegeben wird der `Version` -Attributs auf den Wert `Version="2.0.0"`. Das Stammelement enthält genau ein untergeordneter `<Metadata>` Element.
+Das Stammelement der Language Pack-Datei ist `<PackageLanguagePackManifest>`, mit dem Attribut `Version`, dies ist die Version des Language Pack-Formats. In diesem Artikel wird beschrieben, Version 2.0 des Language Pack Formats, der im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert `Version="2.0.0"`. Das Stammelement enthält genau ein untergeordneter `<Metadata>` Element.
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest-Element
+### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest-element
 
-Innerhalb der `<PackageLanguagePackManifest>` Element mit dem folgende Element muss vorhanden sein:
+In der `<PackageLanguagePackManifest>` Element mit dem folgende Element muss vorhanden sein:
 |Titel|Beschreibung|
 |-----------|-----------------|
-|`<Metadata>`| Das enthaltende Element für alle lokalisierten Paketmetadaten
+|`<Metadata>`| Das enthaltende Element für alle Metadaten von lokalisierten Paketen
 
-### <a name="metadata-element"></a>Metadaten-Element
+### <a name="metadata-element"></a>Metadata-element
 
-Innerhalb der `<Metadata>` Element können Sie die folgenden Elemente:
+In der `<Metadata>` Element können Sie die folgenden Elemente aufweisen:
 |Titel|Beschreibung|
 |-----------|-----------------|
-|`<DisplayName>`|Der lokalisierte Name der Erweiterung zu installierenden|
-|`<Description>`|Die lokalisierte Beschreibung der Erweiterung zu installierenden|
-|`<License>`| Ein Pfad zu einer lokalisierten Version der Erweiterung Lizenz|
+|`<DisplayName>`|Der lokalisierte Name der Erweiterung installiert werden|
+|`<Description>`|Die lokalisierte Beschreibung der Erweiterung installiert werden|
+|`<License>`| Ein Pfad zu der eine lokalisierte Version der Erweiterung-Lizenz|
 |`<MoreInfo>`| Ein Link zu lokalisierten Informationen über die Erweiterung|
-|`<ReleaseNotes>`| Einen Pfad oder einen Link, um eine lokalisierte Version der Versionshinweise|
+|`<ReleaseNotes>`| Einen Pfad oder einen Link zu einer lokalisierten Version von den Anmerkungen zur Version|
 |`<Icon>`| Ein Pfad zu einer lokalisierten Version von das Symbol "Erweiterungen"|
 
-### <a name="sample-manifest"></a>Beispiel-Manifest
+### <a name="sample-manifest"></a>Beispielmanifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +70,6 @@ Innerhalb der `<Metadata>` Element können Sie die folgenden Elemente:
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Zeigt, wie lokalisierte Installations-Unterstützung für ein VSIX-Paket bereitzustellen.|
-|[Referenz zum VSIX-Erweiterungsschema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)|Ein VSIX-Manifest beschreibt den Inhalt einer VSIX-Bereitstellungsdatei, dadurch kann eine Visual Studio-Erweiterung zu installierenden mithilfe der **Erweiterungen und Updates** (Dialogfeld).|
-|[Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)|Zeigt, wie die **Erweiterungen und Updates** (Dialogfeld), installieren, entfernen, aktivieren und Deaktivieren von Erweiterungen.|
+|[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Veranschaulicht, wie lokalisierte Installations-Unterstützung für ein VSIX-Paket bereitzustellen.|
+|[Referenz zum VSIX-Erweiterung Schema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)|Ein VSIX-Manifest beschreibt den Inhalt einer *VSIX* Bereitstellungsdatei. Die Bereitstellungsdatei können Sie zum Installieren von Visual Studio-Erweiterung mithilfe der **Erweiterungen und Updates** Dialogfeld.|
+|[Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)|Zeigt, wie die **Erweiterungen und Updates** Dialogfeld installieren, entfernen, aktivieren und Deaktivieren von Erweiterungen.|

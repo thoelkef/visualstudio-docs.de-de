@@ -16,19 +16,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2ad0047ef4ddc71b85f5fc04c865a9753b7c19
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756992"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582446"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das einfache Datenbindung unterstützt
+
 Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen Steuerelemente aus der **Toolbox**, oder Sie können benutzerdefinierte Steuerelemente erstellen, wenn Ihre Anwendung Funktionen erfordert, die in den Standardsteuerelementen nicht verfügbar ist. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementieren, können eine Eigenschaft enthalten, die an Daten gebunden werden kann. Solche Steuerelemente sind vergleichbar mit <xref:System.Windows.Forms.TextBox> oder <xref:System.Windows.Forms.CheckBox>.
 
- Weitere Informationen über das Erstellen von Steuerelementen, finden Sie unter [Entwickeln von Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Weitere Informationen über das Erstellen von Steuerelementen, finden Sie unter [Entwickeln von Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
- Bei der Erstellung von Steuerelementen für die Verwendung in Szenarios mit Datenbindung müssen Sie eine der folgenden Datenbindungsattribute implementieren:
+Bei der Erstellung von Steuerelementen für die Verwendung in Szenarios mit Datenbindung müssen Sie eine der folgenden Datenbindungsattribute implementieren:
 
 |Die Datenbindung Attributverwendung|
 |-----------------------------------|
@@ -36,9 +37,9 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
 |Implementieren Sie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, wie das <xref:System.Windows.Forms.DataGridView>-Steuerelement. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementieren Sie die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> auf Steuerelementen wie einem <xref:System.Windows.Forms.ComboBox>,das Listen (oder Tabellen) von Daten anzeigt, aber auch in einer einzelnen Spalte oder Eigenschaft vorhanden sein muss. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die Bindung an Nachschlagedaten unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstellt, das Daten aus einer einzelnen Spalte in einer Tabelle anzeigt. In diesem Beispiel wird die Spalte `Phone` der Tabelle `Customers` aus der Beispieldatenbank Northwind verwendet. Das einfache Benutzersteuerelement zeigt die Telefonnummern von Kunden in einem Standardformat von Telefonnummern mithilfe einer <xref:System.Windows.Forms.MaskedTextBox> und Festlegen der Maske auf eine Telefonnummer an.
+In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstellt, das Daten aus einer einzelnen Spalte in einer Tabelle anzeigt. In diesem Beispiel wird die Spalte `Phone` der Tabelle `Customers` aus der Beispieldatenbank Northwind verwendet. Das einfache Benutzersteuerelement zeigt die Telefonnummern von Kunden in einem Standardformat von Telefonnummern mithilfe einer <xref:System.Windows.Forms.MaskedTextBox> und Festlegen der Maske auf eine Telefonnummer an.
 
- Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
+Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 -   Erstellen Sie ein neues **Windows Forms-Anwendung**.
 
@@ -55,6 +56,7 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
 -   Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
+
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
 1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
@@ -72,9 +74,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
 ## <a name="create-a-windows-forms-application"></a>Erstellen einer Windows Forms-Anwendung
- Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**.
 
-#### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt
+Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**:
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
@@ -87,20 +88,18 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **SimpleControlWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Fügen Sie dem Projekt ein Benutzersteuerelement
- In dieser exemplarischen Vorgehensweise erstellt ein einfaches, datenbindbares Steuerelement aus einer **Benutzersteuerelement**, fügen Sie also eine **Benutzersteuerelement** Element für die **SimpleControlWalkthrough** Projekt.
 
-#### <a name="to-add-a-user-control-to-the-project"></a>So fügen Sie dem Projekt ein Benutzersteuerelement hinzu
+In dieser exemplarischen Vorgehensweise erstellt ein einfaches, datenbindbares Steuerelement aus einem **Benutzersteuerelement**. Hinzufügen einer **Benutzersteuerelement** Element für die **SimpleControlWalkthrough** Projekt:
 
 1.  Von der **Projekt** Menü wählen **Benutzersteuerelement hinzufügen**.
 
-2.  Typ `PhoneNumberBox` in den Bereich Name ein und klicken Sie auf **hinzufügen**.
+2.  Typ **PhoneNumberBox** in den Bereich Name ein und klicken Sie auf **hinzufügen**.
 
      Die **PhoneNumberBox** -Steuerelement hinzugefügt **Projektmappen-Explorer**, und im Designer geöffnet.
 
 ## <a name="design-the-phonenumberbox-control"></a>Entwerfen des PhoneNumberBox-Steuerelements
- Diese exemplarische Vorgehensweise erweitert das vorhandene <xref:System.Windows.Forms.MaskedTextBox>, sodass das `PhoneNumberBox`-Steuerelement erstellt wird.
 
-#### <a name="to-design-the-phonenumberbox-control"></a>Entwerfen des PhoneNumberBox-Steuerelements
+Diese exemplarische Vorgehensweise baut auf den vorhandenen <xref:System.Windows.Forms.MaskedTextBox> zum Erstellen der **PhoneNumberBox** Steuerelement:
 
 1.  Ziehen Sie eine <xref:System.Windows.Forms.MaskedTextBox> aus der **Toolbox** auf der Entwurfsoberfläche des Benutzersteuerelements.
 
@@ -109,13 +108,12 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 3.  Wählen Sie **Telefonnummer** in die **Eingabeformat** (Dialogfeld), und klicken Sie auf **OK** zum Festlegen der Maske.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Fügen Sie das erforderliche Attribut für die Datenbindung hinzu
- Implementieren Sie für einfache Steuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.
 
-#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>So implementieren Sie das Attribut DefaultBindingProperty
+Für einfache-, die Datenbindung unterstützen Steuerelemente, implementieren die <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1.  Wechseln Sie für das `PhoneNumberBox`-Steuerelement zur Codeansicht. (Auf der **Ansicht** Menü wählen **Code**.)
+1.  Wechseln der **PhoneNumberBox** -Steuerelement zur Codeansicht. (Auf der **Ansicht** Menü wählen **Code**.)
 
-2.  Ersetzen Sie den Code in `PhoneNumberBox` durch folgenden Code:
+2.  Ersetzen Sie den Code in die **PhoneNumberBox** durch Folgendes:
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
@@ -123,9 +121,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
 
 ## <a name="create-a-data-source-from-your-database"></a>Erstellen Sie eine Datenquelle aus der Datenbank
- Dieser Schritt verwendet den **Datenquellenkonfiguration**Assistenten zum Erstellen einer Datenquelle basierend auf den `Customers` -Tabelle in der Beispieldatenbank Northwind. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
+Dieser Schritt verwendet den **Datenquellenkonfiguration**Assistenten zum Erstellen einer Datenquelle basierend auf den `Customers` -Tabelle in der Beispieldatenbank Northwind. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
@@ -150,9 +147,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **NorthwindDataSet** wird Ihrem Projekt hinzugefügt und die `Customers` Tabelle angezeigt wird, der **Datenquellen** Fenster.
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Festlegen der Spalte "Phone" auf das Steuerelement PhoneNumberBox verwendet
- In der **Datenquellen** Fenster können Sie das Steuerelement erstellt werden, vor dem Ziehen von Elementen auf das Formular festlegen.
 
-#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>So legen Sie die Bindung der Spalte "Telefon" an das PhoneNumberBox-Steuerelement fest
+In der **Datenquellen** Fenster können Sie das Steuerelement erstellt werden, vor dem Ziehen von Elementen auf das Formular festlegen:
 
 1.  Open **Form1** im Designer.
 
@@ -167,22 +163,20 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 6.  Klicken Sie auf die Dropdown-Pfeil der **Phone** Spalte, und wählen Sie **PhoneNumberBox**.
 
 ## <a name="add-controls-to-the-form"></a>Hinzufügen von Steuerelementen zum Formular
- Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular
+Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.
 
--   Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf das Formular, und überprüfen Sie, ob die `PhoneNumberBox` Steuerelement wird verwendet, um die Anzeige der Daten in die `Phone` Spalte.
+Ziehen Sie den Hauptknoten, um datengebundene Steuerelemente auf dem Formular zu erstellen, **Kunden** Knoten aus der **Datenquellen** auf das Formular, und überprüfen Sie, ob die **PhoneNumberBox** Steuerelement zum Anzeigen der Daten in die **Phone** Spalte.
 
-     Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
+     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-#### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus
-
--   Drücken Sie **F5**, um die Anwendung auszuführen.
+Drücken Sie **F5**, um die Anwendung auszuführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung eines Steuerelements, das Datenbindung unterstützt, noch weitere Schritte ausführen. Zu den typischen nächsten Schritten gehören Folgende:
+
+Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung eines Steuerelements, das Datenbindung unterstützt, noch weitere Schritte ausführen. Zu den typischen nächsten Schritten gehören Folgende:
 
 -   Platzieren der benutzerdefinierten Steuerelemente in eine Steuerelementbibliothek, sodass Sie sie in anderen Anwendungen wiederverwenden können.
 

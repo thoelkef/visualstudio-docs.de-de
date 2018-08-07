@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756154"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582371"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
+
 Sie können Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB verwenden. Sie können auch eine Datenbank erstellen, durch Ausführen von Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio. In diesem Thema erstellen wir eine *mdf* -Datei und fügen Sie Tabellen und Schlüsseln mit der Tabellen-Designer.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
+
 Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie die **Workloads** Registerkarte. Klicken Sie unter **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**. Wählen Sie die **ändern** , um die arbeitsauslastung in Visual Studio hinzuzufügen.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
 
-### <a name="to-create-a-project-and-a-database-file"></a>So erstellen Sie ein Projekt und eine Datenbankdatei
-1.  Erstellen Sie ein Windows Forms-Projekt mit dem Namen `SampleDatabaseWalkthrough`.
+1.  Erstellen Sie ein Windows Forms-Projekt mit dem Namen **SampleDatabaseWalkthrough**.
 
 2.  Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen**.
 
@@ -41,6 +42,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 4.  Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
 ### <a name="to-add-a-data-source"></a>So fügen Sie eine Datenquelle hinzu
+
 5.  Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es durch Auswählen der **UMSCHALT**+**Alt**+**D** Schlüssel oder die Menüleiste **Ansicht** > **Other Windows** > **Datenquellen**.
 
 6.  In der **Datenquellen** wählen Sie im Fenster der **neue Datenquelle hinzufügen** Link.
@@ -58,6 +60,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 11. Eine der **Datenbankobjekte auswählen** Seite sehen, da Sie eine Nachricht die Datenbank keine Objekte enthalten. Klicken Sie auf **Fertig stellen**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Um die Eigenschaften der Datenverbindung anzuzeigen
+
 Sehen Sie die Verbindungszeichenfolge für die *SampleDatabase.mdf* Datei durch Öffnen des Eigenschaftenfensters der Datenverbindung:
 
 -   Wählen Sie in Visual Studio **Ansicht** > **Objekt-Explorer von SQL Server** , wenn diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
@@ -65,9 +68,11 @@ Sehen Sie die Verbindungszeichenfolge für die *SampleDatabase.mdf* Datei durch 
 -   Alternativ können Sie auswählen **Ansicht** > **Server-Explorer**, sofern diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten. Öffnen Sie das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Erstellen von Tabellen und Schlüsseln mit Tabellen-Designer
+
 In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jeder Tabelle und einige Zeilen der Beispieldaten. Sie erstellen auch einen foreign Key, um anzugeben, wie Datensätze in einer Tabelle mit Datensätzen in einer anderen Tabelle entsprechen.
 
 ### <a name="to-create-the-customers-table"></a>So erstellen Sie die Tabelle Customers
+
 1.  In **Server-Explorer** oder **Objekt-Explorer von SQL Server**, erweitern Sie die **Datenverbindungen** Knoten, und erweitern Sie dann die **SampleDatabase.mdf**Knoten.
 
 2.  Öffnen Sie das Kontextmenü für **Tabellen**, und wählen Sie dann **neue Tabelle hinzufügen**.
@@ -104,6 +109,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
 ### <a name="to-create-the-orders-table"></a>So erstellen Sie die Tabelle Orders
+
 1.  Fügen Sie eine weitere Tabelle hinzu, und fügen Sie dann in der folgenden Tabelle eine Zeile für jeden Eintrag hinzu:
 
     |Spaltenname|Datentyp|NULL zulassen|
@@ -128,11 +134,12 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
 ### <a name="to-create-a-foreign-key"></a>So erstellen Sie einen Fremdschlüssel
+
 1.  Klicken Sie im Kontextbereich auf der rechten Seite des Rasters öffnen Sie das Kontextmenü für **Fremdschlüssel**, und wählen Sie dann **neuen Fremdschlüssel hinzufügen**, wie in die folgende Abbildung dargestellt.
 
      ![Hinzufügen eines Fremdschlüssels im Tabellen-Designer](../data-tools/media/foreignkey.png)
 
-2.  Ersetzen Sie in das Textfeld, das angezeigt wird, **ToTable** mit `Customers`.
+2.  Ersetzen Sie in das Textfeld, das angezeigt wird, **ToTable** mit **Kunden**.
 
 3.  Aktualisieren Sie die letzte Zeile entsprechend der im folgende Beispiel in T-SQL-Bereich:
 
@@ -147,8 +154,6 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
 ## <a name="populate-the-tables-with-data"></a>Füllen Sie die Tabellen mit Daten
-
-### <a name="to-populate-the-tables-with-data"></a>So füllen Sie die Tabellen mit Daten
 
 1.  In **Server-Explorer** oder **Objekt-Explorer von SQL Server**, erweitern Sie den Knoten für die Beispieldatenbank.
 

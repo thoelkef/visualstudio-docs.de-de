@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756031"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582231"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
 
@@ -72,7 +72,7 @@ Diese Prozedur zeigt, wie Sie eine Tabelle aus der gleichen Datenbank hinzufüge
 
 1.  Klicken Sie auf der datasetknoten in **Projektmappen-Explorer** , Dataset-Designer den Fokus zu öffnen.
 
-2.  Klicken Sie auf die **Datenquellen** Registerkarte am linken Rand von Visual Studio, oder geben Sie `Data Sources` in **Schnellstart**.
+2.  Klicken Sie auf die **Datenquellen** Registerkarte am linken Rand von Visual Studio oder Typ **Datenquellen** in die **Schnellstart** Feld.
 
 3.  Mit der rechten Maustaste des datasetknoten, und wählen Sie **Datenquelle mit Assistenten konfigurieren**.
 
