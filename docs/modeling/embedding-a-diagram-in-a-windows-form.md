@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950542"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567268"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
-Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in angezeigt wird der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fenster.
+# <a name="embed-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
 
-## <a name="embedding-a-diagram"></a>Einbetten eines Diagramms
+Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in Visual Studio-Fenster angezeigt wird.
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Eine DSL-Diagramm in ein Windows-Steuerelement eingebettet werden sollen.
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Einbetten von einem DSL-Diagramm in einem Windows-Steuerelement
 
-1.  Fügen Sie einen neuen **Benutzersteuerelement** Datei zum Projekt DslPackage.
+1.  Fügen Sie einen neuen **Benutzersteuerelement** Datei DslPackage-Projekt.
 
-2.  Fügen Sie ein Panel-Steuerelement auf das Benutzersteuerelement hinzu. In diesem Bereich wird der DSL-Diagramm enthalten.
+2.  Fügen Sie ein Panel-Steuerelement, auf das Benutzersteuerelement. In diesem Bereich wird das DSL-Diagramm enthalten.
 
      Fügen Sie andere Steuerelemente, die erforderlich sind.
 
-     Legen Sie die Premium-Eigenschaften der Steuerelemente.
+     Legen Sie die Anker-Eigenschaften der Steuerelemente.
 
-3.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste die Benutzersteuerelementdatei, und klicken Sie auf **Code anzeigen**. Fügen Sie diesen Konstruktor und die Variable an den Code hinzu:
+3.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste der Benutzersteuerelement-Datei, und klicken Sie auf **Ansichtscode**. Fügen Sie diesen Konstruktor und die Variable auf den Code hinzu:
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
-4.  Fügen Sie eine neue Datei zum Projekt DslPackage mit dem folgenden Inhalt hinzu:
+4.  Fügen Sie eine neue Datei in das DslPackage-Projekt mit dem folgenden Inhalt hinzu:
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in
             }
             return container;
     } } } }
-
     ```
 
-5.  Drücken Sie F5, und öffnen Sie eine Beispieldatei für das Modell, zum Testen der DSL. Das Diagramm wird innerhalb des Steuerelements angezeigt. Die Toolbox und andere Funktionen funktionieren ordnungsgemäß.
+5.  Um die DSL zu testen, indem Sie **F5** , und öffnen Sie eine beispielmodelldatei. Das Diagramm auf das Steuerelement angezeigt wird. Die Toolbox und andere Funktionen funktionieren ordnungsgemäß.
 
-#### <a name="updating-the-form-using-store-events"></a>Aktualisieren das Formular mit Speicher-Ereignisse
+## <a name="update-the-form-using-store-events"></a>Aktualisieren Sie das Formular mit Speicherereignisse
 
-1.  Fügen Sie in den Formular-Designer eine **ListBox** mit dem Namen `listBox1`. Dadurch wird eine Liste der Elemente im Modell angezeigt. Es bleiben in Synchronism mit dem Modell unter Verwendung *Speichern von Ereignissen*. Weitere Informationen finden Sie unter [Handler verteilt Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1.  Fügen Sie in den Formular-Designer eine **ListBox** mit dem Namen `listBox1`. Dadurch wird eine Liste der Elemente im Modell angezeigt. Es wieder synchronisiert wird, mit dem Modell mit *Speichern von Ereignissen*. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  Überschreiben Sie in der Datei mit benutzerdefiniertem Code weitere Methoden, um die DocView-Klasse:
+2.  Überschreiben Sie in der Datei mit benutzerdefiniertem Code weitere Methoden, um die DocView--Klasse:
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  Fügen Sie im Code hinter das Benutzersteuerelement Methoden zum Abhören von Elemente hinzugefügt und entfernt:
+3.  Fügen Sie in den Code-behind das Benutzersteuerelement Methoden zum Lauschen auf die Elemente hinzugefügt und entfernt:
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,12 +137,11 @@ Sie können einen DSL-Diagramm einbetten, in einem Windows-Steuerelement, die in
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  Drücken Sie F5, um die DSL zu testen, und klicken Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie eine Beispieldatei für das Modell.
+4.  Um die DSL zu testen, indem Sie **F5** und in der experimentellen Instanz von Visual Studio, öffnen Sie eine beispielmodelldatei.
 
-     Beachten Sie, dass im Listenfeld eine Liste der Elemente im Modell angezeigt wird, und er korrekt ist, nachdem alle hinzufügen oder löschen und rückgängig und wiederholen.
+     Beachten Sie, dass im Listenfeld eine Liste der Elemente im Modell angezeigt wird und er korrekt ist, nachdem alle Hinzufügungen oder löschungen und rückgängig und wiederholen.
 
 ## <a name="see-also"></a>Siehe auch
 
