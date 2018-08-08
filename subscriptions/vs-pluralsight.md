@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zum Pluralsight-Schulungsabonnements, das in Ihre
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 242a8a5521d53e631e69036a94434f892fb2e19c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281179"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380791"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -90,7 +90,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>F: Ich habe ein Visual Studio Enterprise-Abonnement, aber ich sehe die Pluralsight-Kachel nicht auf der Seite mit den Vorteilen. Wo liegt der Fehler?
-A: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vorteile.  Sehen Sie in der Tabelle [Berechtigung](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
+A: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vorteile.  Sehen Sie in der [Berechtigungstabelle](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>F: Habe ich Zugriff auf benutzerdefinierte Lern-Wiedergabelisten oder -Kanäle?
 A: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-Schulungsvorteile Zugang zu Expertenkanälen. Diese Kanäle wurden von Microsoft-Experten speziell zusammengestellt und sind auf das Lernen in den Bereichen .Net, Azure, DevOps und Mobilität ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnement-Portal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), um auf der Startseite von Pluralsight Zugriff auf diese Kanäle zu erhalten –
@@ -104,7 +104,7 @@ A: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-S
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>F: Was passiert, wenn mein Pluralsight-Abonnement abläuft?
 A: Am Ende Ihres kostenlosen Pluralsight-Abonnements haben Sie zwei Möglichkeiten:
-- Sie erhalten einen kostenlosen Zugang für ein Jahr (überprüfen Sie die [Berechtigungstabelle](#eligibility), um zu sehen, ob Ihr Abonnement berechtigt ist) zu einem begrenzten Satz von 50 Kursen in einem von drei Hauptbereichen, darunter: App-Entwicklung in der Cloud; KI, maschinelles Lernen und Daten; sowie DevOps in der Cloud. Achten Sie auf eine E-Mail von Pluralsight, um Ihren kostenlosen Zugang nach Ablauf zu erhalten. Sie können unter jeder Teilbibliothek eine [Kursliste](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) sehen.
+- Sie erhalten einen kostenlosen Zugang für ein Jahr (überprüfen Sie die [Berechtigungstabelle](#eligibility), um zu sehen, ob Ihr Abonnement berechtigt ist) zu einer begrenzten Reihe von 50 Kursen in einem von drei Hauptbereichen, darunter: App-Entwicklung in der Cloud, KI, maschinelles Lernen und Daten sowie DevOps in der Cloud. Achten Sie auf eine E-Mail von Pluralsight, um Ihren kostenlosen Zugang nach Ablauf zu erhalten. Sie können unter jeder Teilbibliothek eine [Kursliste](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) sehen.
 - Sie können ein Abonnement direkt bei Pluralsight mit einem Rabatt von 10% erwerben, wodurch Sie Zugriff auf den gesamten Kurskatalog erhalten.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>F: Meine Firma erneuert ihr Visual Studio-Abonnement über ein Enterprise Agreement. Wird der Pluralsight-Vorteil zurückgesetzt?

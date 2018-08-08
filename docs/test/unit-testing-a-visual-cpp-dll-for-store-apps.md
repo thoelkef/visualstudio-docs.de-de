@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117627"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380511"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -63,19 +63,19 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 2.  Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
 
-     Das Testprojekt wird erstellt und ausgeführt. Das Test-Explorer-Fenster wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
+     Das Testprojekt wird erstellt und ausgeführt. Das Fenster **Test-Explorer** wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich **Zusammenfassung** werden weitere Informationen zum ausgewählten Test angezeigt.
 
      ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
-1.  Wählen Sie im Projektmappen-Explorer den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
+1.  Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
 
      ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
 
-3.  Fügen Sie der **RooterLib.h**-Datei den folgenden Code hinzu:
+3.  Fügen Sie der *RooterLib.h*-Datei den folgenden Code hinzu:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 4.  Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
 
-    1.  Wählen Sie im Projektmappen-Explorer das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
+    1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
 
          ![Präprozessorsymboldefinition hinzufügen](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  Erweitern Sie im Dialogfeld „Eigenschaftenseite“ für RooterLib die Option **Konfigurationseigenschaften** und dann **C++**, und wählen Sie **Präprozessor**.
+    2.  Erweitern Sie im Dialogfeld **RooterLib Property Page** (RooterLib-Eigenschaftenseite) die Option **Konfigurationseigenschaften** und anschließend **C++**, und wählen Sie **Präprozessor** aus.
 
-    3.  Wählen Sie **\<<Bearbeiten...>** in der Liste **Präprozessordefinitionen** aus, und fügen Sie dann dem Dialogfeld „Präprozessordefinitionen“ `ROOTERLIB_EXPORTS` hinzu.
+    3.  Wählen Sie **\<Bearbeiten...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
 
-5.  Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie **RooterLib.cpp** und fügen Sie den folgenden Code hinzu:
+5.  Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 1.  Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
 
-    1.  Wählen Sie im Projektmappen-Explorer das Projekt **RooterLibTests** aus, und wählen Sie dann im Kontextmenü die Option **Verweise** aus.
+    1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLibTests** aus, und klicken Sie anschließend im Kontextmenü auf **Verweise**.
 
-    2.  Erweitern Sie im Dialogfeld „Projekteigenschaften“ von RooterLib die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise**.
+    2.  Erweitern Sie im Dialogfeld **RooterLib Project Properties** (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
 
     3.  Klicken Sie auf **Neuen Verweis hinzufügen**.
 
     4.  Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
 
-2.  Fügen Sie die RooterLib-Headerdatei in **unittest1.cpp** ein.
+2.  Fügen Sie die RooterLib-Headerdatei in *unittest1.cpp* ein.
 
-    1.  Öffnen **unittest1.cpp**.
+    1.  Öffnen *unittest1.cpp*.
 
     2.  Fügen Sie diesen Code unter der Zeile `#include "CppUnitTest.h"` hinzu:
 
@@ -149,7 +149,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  Fügen Sie einen Test hinzu, der die importierte Funktion verwendet. Fügen Sie **unittest1.cpp** den folgenden Code hinzu:
+3.  Fügen Sie einen Test hinzu, der die importierte Funktion verwendet. Fügen Sie *unittest1.cpp* den folgenden Code hinzu:
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 4.  Erstellen Sie die Projektmappe.
 
-     Der neue Test wird im Test-Explorer im Knoten **Nicht ausgeführte Tests** angezeigt.
+     Der neue Test wird im **Test-Explorer** im Knoten **Nicht ausgeführte Tests** angezeigt.
 
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
      ![Einfacher Test bestanden](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
     >
     > Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
 3.  Der Test schlägt fehl.
 
@@ -212,7 +212,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
 
-4.  Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Fügen Sie **RooterLib.cpp** Folgendes hinzu:
+4.  Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Fügen Sie *RooterLib.cpp* Folgendes hinzu:
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     ```
 
-5.  Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+5.  Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
 
      Beide Tests sind erfolgreich.
 
@@ -243,7 +243,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ##  <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
-1.  Fügen Sie einen anderen Test zu **unittest1.cpp** hinzu:
+1.  Fügen Sie einen anderen Test zu *unittest1.cpp* hinzu:
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     ```
 
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     Der Test schlägt fehl. Wählen Sie den Testnamen im Test-Explorer aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
+     Der Test schlägt fehl. Wählen Sie den Testnamen im **Test-Explorer** aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom **Test-Explorer** angezeigt.
 
      ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
          Wenn die Ausführung am Haltepunkt angehalten wird, führen Sie den Code schrittweise aus.
 
-    3.  Fügen Sie **RooterLib.cpp** einen Code hinzu, um die Ausnahme abzufangen:
+    3.  Fügen Sie *RooterLib.cpp* einen Code hinzu, um die Ausnahme abzufangen:
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
         ```
 
-    1.  Wählen Sie im Test-Explorer **Alle ausführen** aus, um die korrigierte Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
+    1.  Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
 
  Alle Tests sind nun erfolgreich.
 

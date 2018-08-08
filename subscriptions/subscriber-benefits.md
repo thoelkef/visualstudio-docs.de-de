@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283262"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381545"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -26,7 +26,7 @@ Die Vorteile werden in drei Kategorien unterteilt:
 Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](vs-ide-benefit.md), auf [Visual Studio Team Services](vs-vsts.md) und [Azure](vs-azure.md).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
 
 ## <a name="professional-development"></a>Berufliche Entwicklung
-Um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit den neuesten Technologien Schritt zu halten, bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Branchenführern angeboten werden. Hier einige Beispiele für die angebotenen Inhalte:
+Wir bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Branchenführern angeboten werden, um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit den neuesten Technologien Schritt zu halten. Hier einige Beispiele für die angebotenen Inhalte:
 - Azure App Insights und Azure Cosmos DB von Opsgility
 - Plattformübergreifende mobile Entwicklung von Xamarin University
 - Microsoft Azure für .NET-Entwickler und weitere großartige Inhalte von Pluralsight
@@ -37,7 +37,7 @@ Um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit
 ## <a name="support"></a>Unterstützung
 Als Visual Studio-Abonnent haben Sie außerdem Zugriff auf verschiedene Supportangeboten, falls Sie Fragen haben oder technische Unterstützung benötigen.
 - Kostenpflichtige Abonnements umfassen Zugang zu technischem Support einschließlich Problemlösung für Tools und Anwendungen, die in Entwicklungs-/Testumgebungen ausgeführt werden.
-- Benötigen Sie technische Dokumentation oder Produktinformationen?  Über den Concierge-Chat-Dienst erhalten Sie sofort Hilfe.
+- Benötigen Sie technische Dokumentation oder Produktinformationen?  Über den Chat-Dienst Concierge erhalten Sie sofort Hilfe.
 - Erhalten Sie Hilfe von Communitymitgliedern in den Foren für Priority Support.  Wenn die Communitymitglieder Ihre Frage nicht beantworten können, helfen Ihnen die Microsoft-Experten weiter.
 - Haben Sie Fragen zu Azure?  Nutzen Sie die Azure-Community und die Azure Advisory-Chatdienste.
 

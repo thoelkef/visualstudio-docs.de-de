@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178318"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380013"
 ---
-# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>How to: Prevent Time-Outs for Diagnostic Data Adapters
+# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Vorgehensweise: Verhindern des Timeouts für Adapter für diagnostische Daten
 
 Wenn Sie Adapter für diagnostische Daten in den Testeinstellungen verwenden, kann beim Starten des Testlaufs aus folgenden Gründen ein Timeout auftreten:
 
--   Der Testcontrollerdienst wird nicht auf dem Testcontrollercomputer ausgeführt. Sie müssen den Dienst möglicherweise neu starten. Weitere Informationen finden Sie unter [Managing Test Controllers and Test Agents with Visual Studio (Verwalten von Testcontrollern und Test-Agents mit Visual Studio)](../test/manage-test-controllers-and-test-agents.md).
+-   Der Testcontrollerdienst wird nicht auf dem Testcontrollercomputer ausgeführt. Sie müssen den Dienst möglicherweise neu starten. Weitere Informationen finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 -   Wenn Sie Daten auf einem Remotecomputer erfassen, könnte die Firewall Microsoft Test Manager blockieren. Der Computer, der Microsoft Test Manager ausführt, muss eingehende Verbindungen vom Testcontroller akzeptieren. Ein Timeout tritt auf, wenn Microsoft Test Manager keine Meldung vom Controller empfängt, weil er von der Firewall blockiert wird. Sie müssen die Firewalleinstellungen auf dem Computer überprüfen, der Microsoft Test Manager ausführt.
 
@@ -31,19 +31,19 @@ Wenn Sie einen langen Test ausführen, der viele Daten erfassen muss, kann bei d
 
 Sie können das Timeout verlängern, indem Sie die Konfigurationsdatei von Microsoft Test Manager oder die Konfigurationsdatei vom Test-Agent, bei dem das Timeout auftritt, aktualisieren.
 
-Die Konfigurationsdatei von Microsoft Test Manager heißt **mtm.exe.config**. Die Datei befindet sich im folgenden Verzeichnis: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Die Konfigurationsdatei von Microsoft Test Manager heißt *mtm.exe.config*. Die Datei befindet sich im folgenden Verzeichnis: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 Zum Aktualisieren eines Test-Agents müssen Sie die folgenden Konfigurationsdateien auf dem Test-Agent-Computer aktualisieren. Diese Dateien befinden sich alle im gleichen Verzeichnis auf dem Test-Agent-Computer: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
--   QTAgent.exe.config
+-   *QTAgent.exe.config*
 
--   QTAgent32.exe.config
+-   *QTAgent32.exe.config*
 
--   QTDCAgent.exe.config
+-   *QTDCAgent.exe.config*
 
--   QTDCAgent32.exe.config
+-   *QTDCAgent32.exe.config*
 
-Wenn Sie manuelle Tests ausführen und Daten aus einer Umgebung erfassen, wenn ein Fehler erstellt oder der Testfall abgeschlossen wird, werden alle von Adaptern für diagnostische Daten erfasste Daten auf den Computer übertragen, der die manuellen Tests ausführt. Wenn Sie viele Daten erfasst haben oder eine langsame Netzwerkverbindung vorliegt, könnte es länger als der Standardwert von 60 Sekunden dauern. Wenn Sie z. B. den IntelliTrace-Adapter konfiguriert haben, um IntelliTrace-Ereignisse und Aufrufinformationen für viele Prozesse zu sammeln, könnte die Übertragung dieser Daten das Standardtimeout überschreiten. Sie können die folgende Prozedur zum Aktualisieren der Datei **mtm.exe.config** verwenden, um diesen Wert zu vergrößern.
+Wenn Sie manuelle Tests ausführen und Daten aus einer Umgebung erfassen, wenn ein Fehler erstellt oder der Testfall abgeschlossen wird, werden alle von Adaptern für diagnostische Daten erfasste Daten auf den Computer übertragen, der die manuellen Tests ausführt. Wenn Sie viele Daten erfasst haben oder eine langsame Netzwerkverbindung vorliegt, könnte es länger als der Standardwert von 60 Sekunden dauern. Wenn Sie z. B. den IntelliTrace-Adapter konfiguriert haben, um IntelliTrace-Ereignisse und Aufrufinformationen für viele Prozesse zu sammeln, könnte die Übertragung dieser Daten das Standardtimeout überschreiten. Sie können die folgende Prozedur zum Aktualisieren der Datei *mtm.exe.config* verwenden, um diesen Wert zu vergrößern.
 
 Wenn für die Test Runner-Aktivität oder einen Test-Agent ein Timeout auftritt, wird eine Fehlermeldung angezeigt. Die Fehlermeldung für den Test-Agent enthält Informationen zu dem Test-Agent-Computer, auf dem das Timeout aufgetreten ist. Gehen Sie wie im Folgenden beschrieben vor, um die Konfigurationsdateien zu aktualisieren (je nach angezeigter Fehlermeldung).
 
@@ -80,7 +80,7 @@ Wenn für die Test Runner-Aktivität oder einen Test-Agent ein Timeout auftritt,
 
 6.  Wenn die Timeoutfehlermeldung die Test Runner-Aktivität betrifft, müssen Sie den Wert des **RunOperationTimeoutInSeconds**-Schlüssels erhöhen.
 
-7.  Sie müssen zum Verlängern des Timeouts für das Übertragen der für einen Fehler oder am Ende eines Tests gesammelten Daten auf den Computer, auf dem die Tests ausgeführt werden, das folgende Timeout zu **mtm.exe.config** im appSettings-Abschnitt der Datei hinzufügen:
+7.  Sie müssen zum Verlängern des Timeouts für das Übertragen der für einen Fehler oder am Ende eines Tests gesammelten Daten auf den Computer, auf dem die Tests ausgeführt werden, das folgende Timeout zu *mtm.exe.config* im appSettings-Abschnitt der Datei hinzufügen:
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
@@ -94,4 +94,4 @@ Wenn für die Test Runner-Aktivität oder einen Test-Agent ein Timeout auftritt,
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

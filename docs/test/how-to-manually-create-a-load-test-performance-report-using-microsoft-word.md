@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750882"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380693"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>How to: Manually Create a Load Test Performance Report Using Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
 
 Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie Daten aus der Ansicht der Zusammenfassung der Auslastungstestergebnisse und der Diagrammansicht kopieren und einfügen. Die in der Zusammenfassungsansicht und Diagrammansicht dargestellten Daten werden beim Kopieren im HTML-Format eingefügt.
 
@@ -30,7 +30,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 ## <a name="copy-summary-view-data"></a>Kopieren von Daten aus der Zusammenfassungsansicht
 
-1.  Wenn die Zusammenfassungsansicht derzeit nicht angezeigt wird, klicken Sie in den Auslastungstestergebnissen auf der Symbolleiste auf **Zusammenfassung**.
+1.  Wenn die Zusammenfassungsansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Zusammenfassung**.
 
 2.  Klicken Sie in der Zusammenfassungsansicht mit der rechten Maustaste, und wählen Sie **Alles markieren** aus.
 
@@ -42,7 +42,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 ## <a name="copy-graph-view-data"></a>Diagrammansichtsdaten kopieren
 
-1.  Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den Auslastungstestergebnissen auf der Symbolleiste auf **Diagramme**.
+1.  Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Diagramme**.
 
 2.  (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
@@ -58,4 +58,4 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 ## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md)
-- [Gewusst wie: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

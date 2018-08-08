@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978156"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380862"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Klicken Sie im Menü **Datei** auf **Hinzufügen** > **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.
 
-   Klicken Sie im Projektmappen-Explorer im Projekt **BankTests** erst auf **Verweise** und dann im Kontextmenü auf **Verweis hinzufügen**.
+   Klicken Sie im **Projektmappen-Explorer** im Projekt **BankTests** erst auf **Verweise** und dann im Kontextmenü auf **Verweis hinzufügen**.
 
-6. Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .
+6. Erweitern Sie im Dialogfeld **Verweis-Manager** den Eintrag **Projektmappe**, und überprüfen Sie das Element **Bank**.
 
 ## <a name="create-the-test-class"></a>Die Testklasse erstellen
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Erneutes Ausführen des Tests
 
-Wählen Sie im Test-Explorer **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, wenn der Test erfolgreich ausgeführt wurde, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
+Wählen Sie im **Test-Explorer** **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, wenn der Test erfolgreich ausgeführt wurde, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Den Code mit Komponententests verbessern
 

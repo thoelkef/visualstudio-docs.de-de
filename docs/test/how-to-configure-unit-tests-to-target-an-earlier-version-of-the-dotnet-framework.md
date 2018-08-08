@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233489"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380643"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 
 Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste Version von .NET Framework standardmäßig als Ziel festgelegt. Wenn Sie ein Upgrade von Projekten aus früheren Versionen von Visual Studio durchführen, werden Projektupgrades darüber hinaus auf die neueste Version von .NET Framework durchgeführt. Durch Bearbeiten der Projekteigenschaften können Sie das Projekt auf frühere Versionen von .NET Framework explizit umleiten.
 
@@ -26,7 +26,7 @@ Sie können Komponententestprojekte erstellen, die auf bestimmte Versionen von .
 
 - Sie können Komponententests ausführen, die auf eine bestimmte Version von .NET Framework in Visual Studio auf Ihrem lokalen Computer abzielen.
 
-- Sie können Komponententests ausführen, die mithilfe von „MSTest.exe“ über die Eingabeaufforderung auf eine bestimmte Version von .NET Framework abzielen.
+- Sie können Komponententests ausführen, die mithilfe von *MSTest.exe* über die Eingabeaufforderung auf eine bestimmte Version von .NET Framework abzielen.
 
 - Sie können Komponententests auf einen Build-Agent als Teil eines Builds ausführen.
 
@@ -58,7 +58,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 3.  Geben Sie im Textfeld **Name** einen Namen für das Projekt ein, und klicken Sie anschließend auf **OK**.
 
-4.  Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual Basic-Testprojekts aus.
+4.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü des neuen Visual Basic-Testprojekts die Option **Eigenschaften** aus.
 
      Die Eigenschaften für Ihr Visual Basic-Testprojekt werden angezeigt.
 
@@ -80,7 +80,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C#-Testprojekt ein, und klicken Sie anschließend auf **OK**.
 
-4.  Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.
+4.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen Visual C#-Testprojekts die Option **Eigenschaften** aus.
 
      Die Eigenschaften für Ihr Visual C#-Testprojekt werden angezeigt.
 
@@ -101,11 +101,11 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C++-Testprojekt ein, und klicken Sie anschließend auf **OK**.
 
-4.  Wählen Sie im Projektmappen-Explorer **Projekt entladen** von dem neuen Visual C++-Testprojekt.
+4.  Wählen Sie im **Projektmappen-Explorer** aus Ihrem neuen Visual C++-Testprojekt die Option **Projekt entladen** aus.
 
-5.  Wählen Sie im Projektmappen-Explorer das entladene Visual C++-Testprojekt, und wählen Sie anschließend **\<Projektname> .vcxproj bearbeiten**.
+5.  Wählen Sie im **Projektmappen-Explorer** das entladene Visual C++-Testprojekt und anschließend **Projektname\<>.vcxproj bearbeiten** aus.
 
-     Die VCXPROJ-Datei wird im Editor geöffnet.
+     Die *VCXPROJ*-Datei wird im Editor geöffnet.
 
 6.  Legen Sie `TargetFrameworkVersion` auf Version 3.5 oder höher in `PropertyGroup`, die als `"Globals"` bezeichnet wird, fest. Sie sollten keine Clientversion angeben:
 
@@ -120,12 +120,12 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
       </PropertyGroup>
     ```
 
-7.  Speichern und schließen Sie die VCXPROJ-Datei.
+7.  Speichern und schließen Sie die *VCXPROJ*-Datei.
 
-8.  Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.
+8.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen Visual C++-Testprojekts die Option **Projekt erneut laden** aus.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von SharePoint-Projektmappen](../sharepoint/create-sharepoint-solutions.md)
-- [Erstellen und Debuggen von SharePoint-Projektmappen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)
+- [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

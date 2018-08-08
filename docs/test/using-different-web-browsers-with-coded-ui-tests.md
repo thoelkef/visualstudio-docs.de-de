@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235062"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380716"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -38,7 +38,7 @@ Durch das Testen der Webanwendung in verschiedenen Webbrowsertypen können Sie d
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Wie kann ich Tests der programmierten UI zu Webanwendungen, in denen die unterstützten Webbrowser verwendet werden, aufzeichnen und wiedergeben?
 
-**Aufzeichnung:** Sie müssen den Coded UI-Test-Generator verwenden, um den Webanwendungstest mit Internet Explorer aufzuzeichnen. Optional können Sie den getesteten Steuerelementen Validierungscode und benutzerdefinierten Code mit einem vordefinierten Satz von Eigenschaften hinzufügen, wie Sie dies normalerweise für Tests der programmierten UI tun. Weitere Informationen finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).
+**Aufzeichnung:** Sie müssen den Coded UI-Test-Generator verwenden, um den Webanwendungstest mit Internet Explorer aufzuzeichnen. Optional können Sie den getesteten Steuerelementen Validierungscode und benutzerdefinierten Code mit einem vordefinierten Satz von Eigenschaften hinzufügen, wie Sie dies normalerweise für Tests der programmierten UI tun. Weitere Informationen finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Tests der programmierten UI können nicht mit den Browsern Google Chrome oder Mozilla Firefox aufgezeichnet werden.
@@ -53,7 +53,7 @@ Durch das Testen der Webanwendung in verschiedenen Webbrowsertypen können Sie d
 
 1.  Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
 
-2.  Suchen Sie im Dialogfeld „Erweiterungen und Updates“ für `Selenium components for Cross Browser Testing`.
+2.  Suchen Sie im Dialogfeld **Erweiterungen und Updates** nach `Selenium components for Cross Browser Testing`.
 
 3.  Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.
 
@@ -104,13 +104,13 @@ Geben Sie die folgenden Werte an:
 
    Durch Festlegen des Werts auf 3 oder höher werden für jede Aktion Screenshots aufgezeichnet. Wenn der Wert auf 1 oder 2 festgelegt ist, werden Screenshots nur für Fehleraktionen aufgezeichnet.
 
-Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI Test Logs (Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI)](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+Weitere Informationen finden Sie unter [Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="video-resources"></a>Videoressourcen
 
- [Aufzeichnen mit IE und unabhängige Wiedergabe](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+ [Record on IE and playback everywhere (Aufzeichnen mit IE und unabhängige Wiedergabe)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Erstellen von browserübergreifenden Tests mit dem Coded UI-Test-Generator](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+ [Author cross browser tests with coded UI test builder (Erstellen von browserübergreifenden Tests mit dem Coded UI-Test-Generator)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
  [Erstellen von browserübergreifenden Tests mit einfacher Handcodierung ohne UI-Zuordnung](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -120,6 +120,6 @@ Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

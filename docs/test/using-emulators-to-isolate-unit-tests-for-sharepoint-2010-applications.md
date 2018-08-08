@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a4a9b99da94ef754906b095f99fa812c7474103
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9e9471d3ddfe61e200bc3aefc3d20ed2013120ce
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117666"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382137"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Verwenden Emulatoren zum Insolieren von Komponententests für SharePoint 2010-Anwendungen
 
@@ -44,7 +44,7 @@ In diesem Beispiel werden Methoden des Webparts getestet:
 
 -   Die `GetAppointmentsForToday`-Methode gibt den Details der heutigen Termine zurück.
 
-##  <a name="BKMK_Converting_an_existing_test"></a> Konvertieren eines vorhandenen Tests
+##  <a name="convert-an-existing-test"></a>Konvertieren eines vorhandenen Tests
 
 In einem typischen Test einer Methode in einer SharePoint-Komponente, erstellt die Testmethode eine temporäre Site in SharePoint Foundation und fügt die SharePoint-Komponenten zu der Website hinzu, die der zu testende Code erfordert. Die Testmethode erstellt anschließend eine Instanz der Komponente und führt sie aus. Am Ende des Tests, wird die Site aufgelöst.
 
@@ -115,7 +115,7 @@ Microsoft SharePoint-Emulatoren stellen einen Satz von Objekt- und Methoden-"Dou
 
 So fügen Sie den SharePoint-Emulatoren ein Testprojekt hinzu:
 
-1.  Wählen Sie das Testprojekt im Projektmappen-Explorer aus.
+1.  Wählen Sie das Testprojekt im **Projektmappen-Explorer** aus.
 
 2.  Wählen Sie im Kontextmenü **NuGet-Pakete verwalten** aus.
 
@@ -155,11 +155,11 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
-Wenn die Testmethode ausgeführt wird, ruft die Emulator-Laufzeit Microsoft Fakes auf, um Code dynamisch in SharePoint-Methoden einzufügen, um die Aufrufe an diese Methoden an Delegaten umzuleiten, die in Microsoft.SharePoint.Fakes.dll deklariert werden. Microsoft.SharePoint.Emulators.dll implementiert die Delegaten für emulierte Methoden, wobei das tatsächliche SharePoint-Verhalten genau simuliert wird. Wenn die Testmethode oder die getestete Komponente eine SharePoint-Methode aufruft, entspricht das daraus resultierende Verhalten der Emulation.
+Wenn die Testmethode ausgeführt wird, ruft die Emulator-Laufzeit Microsoft Fakes auf, um Code dynamisch in SharePoint-Methoden einzufügen, um die Aufrufe an diese Methoden an Delegaten umzuleiten, die in *Microsoft.SharePoint.Fakes.dll* deklariert werden. *Microsoft.SharePoint.Emulators.dll* implementiert die Delegaten für emulierte Methoden, wobei das tatsächliche SharePoint-Verhalten genau simuliert wird. Wenn die Testmethode oder die getestete Komponente eine SharePoint-Methode aufruft, entspricht das daraus resultierende Verhalten der Emulation.
 
 ![Emulatorausführungsfluss](../test/media/ut_emulators_flowchart.png)
 
-##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Erstellen von zweifach verwendbaren Klassen und Methoden
+##  <a name="create-dual-use-classes-and-methods"></a>Erstellen von zweifach verwendbaren Klassen und Methoden
 
 Um Methoden zu erstellen, die für beide Integrationstests für die SharePoint-API und die isolierten Komponententests verwendet werden können, verwenden Sie den überladenen Konstruktor `SharePointEmulationScope(EmulationMode)`, um den Code der Testmethode zu umschließen. Die beiden Werte der `EmulationMode`-Enumeration geben an, ob der Bereich Emulatoren (`EmulationMode.Enabled`) oder die SharePoint-API (`EmulationMode.Passthrough`) verwendet.
 
@@ -194,7 +194,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
-## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>Verwenden der Attribute "TestInitialize" und "TestCleanup" zur Erstellung einer zweifach verwendbaren Testklasse
+## <a name="use-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>Verwenden der Attribute „TestInitialize“ und „TestCleanup“ zur Erstellung einer zweifach verwendbaren Testklasse
 
 Wenn Sie alle bzw. die meisten Tests in einer Klasse mit `SharePointEmulationScope` ausführen, können Sie Techniken auf Klassenebene nutzen, um den Emulationsmodus festzulegen.
 
@@ -259,7 +259,7 @@ namspace MySPAppTests
 }
 ```
 
-##  <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> Arbeiten mit nicht emulierten SharePoint-Methoden
+##  <a name="handle-non-emulated-sharepoint-methods"></a>Arbeiten mit nicht emulierten SharePoint-Methoden
 
 Nicht alle SharePoint-Typen werden emuliert und nicht alle Methoden in einigen emulierten Typen werden emuliert. Wenn der zu testenden Code eine SharePoint-Methode aufruft, die nicht emuliert wird, löst die Methode eine `NotSupportedException`-Ausnahme aus. Wenn eine Ausnahme auftritt, fügen Sie Fakes für die SharePoint-Methode hinzu.
 
@@ -267,11 +267,11 @@ Nicht alle SharePoint-Typen werden emuliert und nicht alle Methoden in einigen e
 
 So werden Microsoft Fakes-Shims explizit aufgerufen:
 
-1.  Wenn Sie ein Shim für eine SharePoint-Klasse verwenden möchten, das nicht emuliert wird, bearbeiten Sie die Microsoft.SharePoint.fakes-Datei, und fügen Sie die Klasse zur Liste der Shim-Klassen hinzu. Weitere Informationen finden Sie im Abschnitt [Konfigurieren der Codegenerierung von Stubs](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) unter [Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
+1.  Wenn Sie ein Shim für eine SharePoint-Klasse verwenden möchten, die nicht emuliert wird, bearbeiten Sie die Datei *Microsoft.SharePoint.fakes*, und fügen Sie die Klasse zur Liste der Shim-Klassen hinzu. Weitere Informationen finden Sie im Abschnitt [Konfigurieren der Codegenerierung von Stubs](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) unter [Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
 
      ![Fakes-Ordner im Projektmappen-Explorer](../test/media/ut_emulators_fakesfilefolder.png)
 
-2.  Erstellen Sie das Testprojekt mindestens einmal neu, nachdem Sie das Microsoft SharePoint-Emulatorpaket installiert und die Microsoft.SharePoint.Fakes-Datei bearbeitet haben. Beim Erstellen des Projekts wird ein **FakesAssembly**-Ordner im Stammordner des Projekts auf dem Datenträger erstellt und gefüllt.
+2.  Erstellen Sie das Testprojekt mindestens einmal neu, nachdem Sie das Microsoft SharePoint-Emulatorpaket installiert und die Datei *Microsoft.SharePoint.Fakes* bearbeitet haben. Beim Erstellen des Projekts wird ein **FakesAssembly**-Ordner im Stammordner des Projekts auf dem Datenträger erstellt und gefüllt.
 
      ![FakesAssembly-Ordner](../test/media/ut_emulators_fakesassemblyfolder.png)
 
@@ -347,7 +347,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
 In dieser Methode testen wir zuerst, ob die Emulation aktiviert ist. Wenn dies der Fall ist, erstellen wir ein Fakes-Shim-Objekt für die `SPList`-Liste und erstellen dann eine Methode und weisen Sie dem zugehörigen `GetItemsSPQuery`-Delegaten zu. Der Delegat verwendet die `Bind`-Methode für Fakes, um das richtige Listenelement zur `ShimSPListItemCollection` hinzuzufügen, die an den Aufrufer zurückgegeben wird.
 
-##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Verfassen von Grund auf neuer Emulationstests, und eine Zusammenfassung
+##  <a name="write-emulation-tests-from-scratch-and-a-summary"></a>Schreiben neuer Emulationstests; Zusammenfassung
 
 Obwohl die Verfahren zum Erstellen von Emulations- und zweifach verwendbaren Tests, die in den vorangehenden Abschnitten beschrieben werden, davon ausgehen, dass Sie vorhandene Tests konvertieren, können Sie die Verfahren auch verwenden, um Tests von Grund auf neu zu schreiben. In der folgenden Liste werden diese Techniken zusammengefasst:
 
@@ -549,6 +549,6 @@ namspace MySPAppTests
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Komponententest für Code](../test/unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-- [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)
+- [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

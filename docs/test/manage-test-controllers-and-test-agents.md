@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179735"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381119"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -90,7 +90,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
     > [!NOTE]
     > Die Standardportnummer ist 6901.
 
-4. Wählen Sie **Einstellungen übernehmen**, um die Änderungen zu speichern. Schließen Sie das Dialogfeld **Konfigurationszusammenfassung**, und schließen Sie das Test Agent-Konfigurationstool.
+4. Wählen Sie **Einstellungen übernehmen**, um die Änderungen zu speichern. Schließen Sie zunächst das Dialogfeld **Konfigurationszusammenfassung** und anschließend das**Test Agent-Konfigurationstool**.
 
 > [!WARNING]
 > Wenn der Agent derzeit für die Ausführung mit einem anderen Testcontroller konfiguriert ist, müssen Sie den Test-Agent aus diesem Controller entfernen.
@@ -160,7 +160,7 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 (Optional) Um den Status eines Test-Agents zu ändern, wählen Sie den Agent in der Liste aus, und wählen Sie dann je nach aktuellem Status des Agents in den verfügbaren Optionen die gewünschte Aktion aus.
 
 > [!NOTE]
-> Wenn der Test-Agent als Prozess ausgeführt wird, verwalten Sie dessen Status über das Infobereichssymbol auf dem Computer, auf dem dieser installiert ist. Darauf wird der Status des Test-Agents angezeigt. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird. Um den Test-Agent als Prozess zu starten, wenn er nicht ausgeführt wird, klicken Sie auf **Start** > **Alle Programme** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Damit wird das Infobereichssymbol hinzugefügt.
+> Wenn der Test-Agent als Prozess ausgeführt wird, verwalten Sie dessen Status über das Infobereichssymbol auf dem Computer, auf dem dieser installiert ist. Darauf wird der Status des Test-Agents angezeigt. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird. Klicken sie zum Starten des Test-Agents als Prozess, wenn dieser nicht ausgeführt wird, auf **Start** > **Alle Programme** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Damit wird das Infobereichssymbol hinzugefügt.
 
 ## <a name="configure-a-test-controller"></a>Konfigurieren eines Testcontrollers
 
@@ -217,15 +217,15 @@ Wenn Sie den Testeinstellungen für Visual Studio Rollen für die Anwendung hinz
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Laden von Tests von verzögert signierten Assemblys
 
-Der Testcontroller und die Test-Agents können nur Testassemblys laden, bei denen es sich um stark signierte Assemblys oder nicht signierte Assemblys handelt. Einige Testassemblys sind verzögert signiert, da sie Zugriff auf Produktionsassemblys für die Anwendung benötigen. Diese Assemblys sind jedoch nicht stark signiert, da es sich dabei nur um Testassemblys handelt, die nicht verteilt werden. Diese Assemblys können nicht geladen werden, da sie verzögert signiert sind. Daher muss die Überprüfung von starken Namen für die Assemblys auf allen Computern deaktiviert werden, auf denen die Assembly einschließlich des Testcontrollercomputers geladen wird. Verwenden Sie zum Deaktivieren der verzögert signierten Überprüfung "sn.exe". Das öffentliche Schlüsseltoken der verzögert signierten Assembly, für die die Überprüfung starker Namen übersprungen werden soll, muss möglicherweise ebenfalls eingeschlossen werden.
+Der Testcontroller und die Test-Agents können nur Testassemblys laden, bei denen es sich um stark signierte Assemblys oder nicht signierte Assemblys handelt. Einige Testassemblys sind verzögert signiert, da sie Zugriff auf Produktionsassemblys für die Anwendung benötigen. Diese Assemblys sind jedoch nicht stark signiert, da es sich dabei nur um Testassemblys handelt, die nicht verteilt werden. Diese Assemblys können nicht geladen werden, da sie verzögert signiert sind. Daher muss die Überprüfung von starken Namen für die Assemblys auf allen Computern deaktiviert werden, auf denen die Assembly einschließlich des Testcontrollercomputers geladen wird. Verwenden Sie *sn.exe* zum Deaktivieren der verzögert signierten Überprüfung. Das öffentliche Schlüsseltoken der verzögert signierten Assembly, für die die Überprüfung starker Namen übersprungen werden soll, muss möglicherweise ebenfalls eingeschlossen werden.
 
-Verwenden Sie das Strong Name-Tool (Sn.exe), um die verzögert signierte Überprüfung zu deaktivieren.
+Verwenden Sie das Strong Name-Tool (*Sn.exe*) zum Deaktivieren der verzögert signierten Überprüfung.
 
 Dadurch wird die Überprüfung starker Namen auf dem Computer, auf dem der Befehl ausgeführt wird, nur für die angegebene Assembly deaktiviert. Sie können den Befehl nur verwenden, wenn Sie über ausreichende Berechtigungen verfügen.
 
-Aktivieren Sie die verzögert signierte Überprüfung nach dem Testlauf mit dem Befehl "SN.exe" erneut.
+Aktivieren Sie die verzögert signierte Überprüfung nach dem Testlauf mit dem Befehl *SN.exe* erneut.
 
-Es wird empfohlen, die Signaturüberprüfung mithilfe der Befehle SN.exe in den Skripts zu deaktivieren und dann wieder zu aktivieren. Sie können die Überprüfung beispielsweise in einem Setupskript deaktivieren und in einem Bereinigungsskript wieder aktivieren.
+Es wird empfohlen, die Signaturüberprüfung mithilfe der *SN.exe*-Befehle in den Skripts zu deaktivieren und dann wieder zu aktivieren. Sie können die Überprüfung beispielsweise in einem Setupskript deaktivieren und in einem Bereinigungsskript wieder aktivieren.
 
 ## <a name="see-also"></a>Siehe auch
 

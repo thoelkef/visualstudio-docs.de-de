@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180307"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381067"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>How to: Create a Test Setting for a Distributed Load Test
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
 
 Konfigurieren Sie *Testeinstellungen* für Ihre Auslastungstests, sodass Sie diese Tests mithilfe von Test-Agents und Testcontrollern auf mehrere Computer verteilen können. Sie können zudem Testeinstellungen für die Verwendung von *Adaptern für diagnostische Daten* konfigurieren, die die Arten der zu sammelnden Daten angeben oder welche Auswirkung auf die Testcomputer erzielt wird, wenn Sie Ihre Auslastungstests in Visual Studio ausführen.
 
@@ -35,7 +35,7 @@ Beim Ausführen der Tests wählen Sie die aktiven Testeinstellungen anhand der e
 
 Wenn Sie einer Projektmappe ein Projekt für einen Webleistungs- und Auslastungstest hinzufügen, wird standardmäßig die Datei *Default.testsettings* erstellt. Die Datei wird der Projektmappe automatisch unter dem Ordner **Projektmappenelemente** hinzugefügt. Mit dieser Datei werden die Tests lokal ohne jegliche Adapter für diagnostische Daten ausgeführt. Sie können eine weitere *TESTSETTINGS-Datei* hinzufügen oder eine *TESTSETTINGS-Datei* bearbeiten, um Adapter für diagnostische Daten und Testcontroller anzugeben.
 
-Der Testcontroller verfügt über Agents, die für die einzelnen Rollen in den Testeinstellungen verwendet werden können. Weitere Informationen zu Testcontrollern und Test-Agents finden Sie unter [Managing Test Controllers and Test Agents with Visual Studio (Verwalten von Testcontrollern und Test-Agents mit Visual Studio)](../test/manage-test-controllers-and-test-agents.md).
+Der Testcontroller verfügt über Agents, die für die einzelnen Rollen in den Testeinstellungen verwendet werden können. Weitere Informationen zu Testcontrollern und Test-Agents finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in Ihrer Lösung für Auslastungstests, die in Visual Studio gemäß dem Plan ausgeführt werden sollen.
 
@@ -43,7 +43,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>So fügen Sie Testeinstellungen für einen verteilten Auslastungstest hinzu
 
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Projektmappenelemente**, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Neues Element** aus.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Projektmappenelemente**, verweisen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Neues Element**.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -53,10 +53,10 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
 4.  Wählen Sie **Hinzufügen** aus.
 
-     Die neue Testeinstellungsdatei wird im Projektmappen-Explorer im Ordner **Projektmappenelemente** angezeigt.
+     Die neue Testeinstellungsdatei wird im **Projektmappen-Explorer** unter dem Ordner **Projektmappenelemente** angezeigt.
 
     > [!NOTE]
-    > Die in Visual Studio Enterprise angezeigte Liste der Testeinstellungen wird von der Liste der Testeinstellungsdateien im Ordner **Projektmappenelemente** abgeleitet. Die Testeinstellungsdateien im Ordner Projektmappenelemente werden z.B. angezeigt, wenn Sie die im Menü **Test** die Option **Aktive Testeinstellungen auswählen** verwenden. Wenn Sie eine Testeinstellungsdatei an einen anderen Speicherort der Projektmappenhierarchie verschieben, hat dies zur Folge, dass diese in der integrierten Entwicklungsumgebung von Visual Studio nicht mehr als Testeinstellung verwendet werden kann.
+    > Die in Visual Studio Enterprise angezeigte Liste der Testeinstellungen wird von der Liste der Testeinstellungsdateien im Ordner **Projektmappenelemente** abgeleitet. Die Testeinstellungsdateien im Ordner **Projektmappenelemente** werden z.B. angezeigt, wenn Sie die im Menü **Test** enthaltene Option **Aktive Testeinstellungen auswählen** verwenden. Wenn Sie eine Testeinstellungsdatei an einen anderen Speicherort der Projektmappenhierarchie verschieben, hat dies zur Folge, dass diese in der integrierten Entwicklungsumgebung von Visual Studio nicht mehr als Testeinstellung verwendet werden kann.
 
 5.  Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
 
@@ -97,13 +97,13 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
     > [!IMPORTANT]
     > Die anderen erstellten und definierten Rollen führen keine Tests aus, sondern werden nur für die Datenerfassung gemäß den für die Rollen auf der Seite **Daten und Diagnosen** angegebenen Datenadaptern und Adaptern für diagnostische Daten verwendet.
 
-16. Wenn Sie die Agents einschränken möchten, die für eine Rolle verwendet werden können, wählen Sie die Rolle aus, und klicken Sie dann auf der Symbolleiste unter **Agent-Attribute für ausgewählte Rolle** auf **Hinzufügen**.
+16. Wenn Sie die Agents einschränken möchten, die für eine Rolle verwendet werden können, wählen Sie die Rolle aus, und klicken Sie anschließend in der Symbolleiste unter **Agent-Attribute für ausgewählte Rolle** auf **Hinzufügen**.
 
      Das Dialogfeld **Agent-Auswahlregel** wird angezeigt.
 
      Geben Sie den Namen unter **Attributname** und den Wert unter **Attributwert ein**, und klicken Sie dann auf **OK**. Fügen Sie so viele Attribute hinzu, wie Sie benötigen.
 
-     Sie können z. B. ein Attribut mit dem Namen "RAM > 16GB" hinzufügen, das über den Wert "True" oder "False" verfügt, um nach Test-Agent-Computern mit mehr als 16 GB Arbeitsspeicher zu filtern. Wenden Sie mithilfe des Dialogfelds "Testcontroller verwalten" dasselbe Attribut auf mehrere Test-Agents an. Weitere Informationen finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+     Sie können z. B. ein Attribut mit dem Namen "RAM > 16GB" hinzufügen, das über den Wert "True" oder "False" verfügt, um nach Test-Agent-Computern mit mehr als 16 GB Arbeitsspeicher zu filtern. Wenden Sie mithilfe des Dialogfelds **Testcontroller verwalten** dasselbe Attribut auf mehrere Test-Agents an. Weitere Informationen finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 17. Klicken Sie auf **Daten und Diagnose**.
 
@@ -119,20 +119,20 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Ausführliche Informationen zu den einzelnen Diagnosedatenadaptern und deren Konfiguration finden Sie im entsprechenden Thema in der folgenden Tabelle.
 
-     Weitere Informationen zu Adaptern für diagnostische Daten finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+     Weitere Informationen zu Adaptern für diagnostische Daten finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
      **Adapter für diagnostische Daten für Auslastungstests**
 
     |Diagnosedatenadapter|Verwendung in Auslastungstests|Entsprechendes Thema|
     |-----------------------------|-------------------------|----------------------|
     |**ASP.NET-Clientproxy für IntelliTrace und Testauswirkung:** Dieser Proxy ermöglicht das Erfassen von Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Schließen Sie diesen Adapter nur ein, wenn Sie Systeminformationen für die Test-Agent-Computer sammeln müssen. **Vorsicht:** Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten Datenmenge Probleme auftreten. <br /><br /> Bei Verwendung von Auslastungstests werden keine Testauswirkungsdaten erfasst.||
-    |**IntelliTrace:** Sie können konfigurieren, welche speziellen Informationen zur Diagnoseablaufverfolgung in einer Protokolldatei gespeichert werden. Eine Protokolldatei hat die Erweiterung tdlog. Wenn Sie den Test ausführen und ein Testschritt fehlschlägt, können Sie einen Fehler erstellen. Die Protokolldatei, die die Diagnoseablaufverfolgung enthält, wird automatisch an diesen Fehler angefügt. Die in der Protokolldatei gesammelten Daten steigern die Debuggingproduktivität, da sie die Zeit für das Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzen. Aus dieser Protokolldatei kann die lokale Sitzung auf einem anderen Computer erneut erstellt werden. So wird die Wahrscheinlichkeit verringert, dass ein Fehler nicht reproduziert werden kann.<br /><br /> Weitere Informationen finden Sie unter [Erfassen von IntelliTrace-Daten](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Symbol "Wichtig"](../test/media/vc364f3.gif)<br /><br /> Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten und protokollierten Datenmenge Probleme auftreten. Sie sollten versuchen, den IntelliTrace-Adapter nur in kurzen Auslastungstests zu verwenden, in denen wenige Test-Agents verwendet werden.|[Gewusst wie: Sammeln von IntelliTrace-Daten zum Beheben schwieriger Probleme](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**IntelliTrace:** Sie können konfigurieren, welche speziellen Informationen zur Diagnoseablaufverfolgung in einer Protokolldatei gespeichert werden. Eine Protokolldatei hat die Erweiterung *TDLOG*. Wenn Sie den Test ausführen und ein Testschritt fehlschlägt, können Sie einen Fehler erstellen. Die Protokolldatei, die die Diagnoseablaufverfolgung enthält, wird automatisch an diesen Fehler angefügt. Die in der Protokolldatei gesammelten Daten steigern die Debuggingproduktivität, da sie die Zeit für das Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzen. Aus dieser Protokolldatei kann die lokale Sitzung auf einem anderen Computer erneut erstellt werden. So wird die Wahrscheinlichkeit verringert, dass ein Fehler nicht reproduziert werden kann.<br /><br /> Weitere Informationen finden Sie unter [Erfassen von IntelliTrace-Daten](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Symbol "Wichtig"](../test/media/vc364f3.gif)<br /><br /> Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten und protokollierten Datenmenge Probleme auftreten. Sie sollten versuchen, den IntelliTrace-Adapter nur in kurzen Auslastungstests zu verwenden, in denen wenige Test-Agents verwendet werden.|[Vorgehensweise: Sammeln von IntelliTrace-Daten zum Beheben schwieriger Probleme](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET-Profiler:** Sie können eine Testeinstellung erstellen, die die ASP.NET-Profilerstellung umfasst, und so Leistungsdaten zu ASP.NET-Webanwendungen sammeln.|Der Adapter für diagnostische Daten des ASP.NET-Profilers erstellt ein Profil des IIS-Prozesses (Internet Information Services). Daher kann er nicht für Entwicklungswebserver verwendet werden. Um ein Profil der Website im Auslastungstest zu erstellen, müssen Sie einen Test-Agent auf dem Computer installieren, auf dem IIS ausgeführt wird. Der Test-Agent generiert keine Auslastung, sondert dient nur als Datensammlungs-Agent. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|[How to: Configure ASP.NET Profiler for Load Tests Using Test Settings (Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mithilfe von Testeinstellungen)](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Ereignisprotokoll:** Sie können eine Testeinstellung konfigurieren, um das Ereignisprotokoll zu erfassen und in die Testergebnisse aufzunehmen.||[How to: Configure Event Log Collection Using Test Settings (Vorgehensweise: Konfigurieren der Ereignisprotokollerfassung mithilfe von Testeinstellungen)](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Netzwerkemulation:** Sie können mit einer Testeinstellung angeben, dass Sie eine künstliche Netzwerklast auf den Test anwenden möchten. Die Netzwerkemulation wirkt sich auf die Kommunikation vom und zum Computer aus, indem eine bestimmte Netzwerkverbindungsgeschwindigkeit, z. B. DFÜ, emuliert wird. **Hinweis**: Die Netzwerkemulation kann nicht verwendet werden, um die Netzwerkverbindungsgeschwindigkeit zu erhöhen.|Der Netzwerkemulationsadapter wird von Auslastungstests ignoriert. Stattdessen verwenden Auslastungstests die Einstellungen, die in der Netzwerkmischung des Auslastungstestszenarios angegeben sind.<br /><br /> Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Systeminformationen:** Eine Testeinstellung kann so eingerichtet werden, dass sie die Systeminformationen zu den Computern einschließt, auf denen die Systeminformationsdiagnose und der Datensammler ausgeführt werden. Die Systeminformationen werden in den Testergebnissen mit einer Testeinstellung angegeben.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Sie können Systeminformationen sowohl für die Auslastungs-Agents als auch für das getestete System sammeln.|Zur Erfassung dieser Informationen ist keine Konfiguration erforderlich.|
     |**Testauswirkungen:** Sie können Informationen zu den Methoden des Anwendungscodes erfassen, die beim Ausführen eines Testfalls verwendet wurden. Diese können zusammen mit von Entwicklern am Anwendungscode vorgenommenen Änderungen verwendet werden, um zu ermitteln, auf welche Tests sich diese Entwicklungsänderungen ausgewirkt haben.|Bei Auslastungstests werden keine Testauswirkungsdaten erfasst.||
-    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der programmierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis:** Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:** Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[Gewusst wie: Einschließen von Aufzeichnungen von Bildschirm und Stimme während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der programmierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis:** Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:** Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Klicken Sie auf **Bereitstellung**.
 
@@ -165,7 +165,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
         > [!NOTE]
         > Die Option **ASP.NET** für **Hosttyp** wird in Auslastungstests nicht unterstützt.
 
-    2.  Wählen Sie mithilfe der Option „Tests als 32-Bit- oder 64-Bit-Prozess ausführen“ aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
+    2.  Wählen Sie mithilfe der Option **Tests als 32-Bit- oder 64-Bit-Prozess ausführen** aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
 
         > [!NOTE]
         > Maximale Flexibilität erhalten Sie, wenn Sie die Projekte für einen Webleistungs- und Auslastungstest mit der Konfiguration **Beliebige CPU** kompilieren. Die Ausführung ist dann sowohl auf 32- als auch auf 64-Bit-Agents möglich. Das Kompilieren von Projekten für einen Webleistungs- und Auslastungstest mit der **64-Bit-Konfiguration** bietet keinen Vorteil.
@@ -187,11 +187,11 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
 ### <a name="to-remove-a-test-settings-from-your-solution"></a>So entfernen Sie Testeinstellungen aus der Projektmappe
 
-Klicken Sie im Ordner „Projektmappenelemente“ mit der rechten Maustaste auf die zu entfernenden Testeinstellungen, und klicken Sie dann auf **Entfernen**.
+Klicken Sie im Ordner **Projektmappenelemente** im **Projektmappen-Explorer** mit der rechten Maustaste auf die zu entfernenden Testeinstellungen, und wählen Sie anschließend **Entfernen** aus.
 
 Die Testeinstellungsdatei wird aus der Projektmappe entfernt. Diese Änderung wirkt sich im Menü **Test** auf die Auswahlmöglichkeiten für die Optionen **Aktive Testeinstellungen auswählen** und **Testeinstellungen bearbeiten** aus.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

@@ -9,12 +9,12 @@ description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ih
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297555"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382450"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 
@@ -24,7 +24,7 @@ Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnement
 
 Um Ihr Windows-Entwicklerkonto zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden.
 
-Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erstellen Sie beispielsweise in Google Chrome ein neues Inkognito-Fenster.  Erstellen Sie im Internet Explorer ein neues „InPrivate“-Fenster.
+Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erstellen Sie beispielsweise in Google Chrome ein neues Inkognito-Fenster.  Erstellen Sie im Internet Explorer ein neues InPrivate-Fenster.
 
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 

@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968494"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381468"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Gewusst wie: Angeben der in Auslastungstestszenarien zu verwendenden Test-Agents
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Vorgehensweise: Angeben der in Auslastungstestszenarios zu verwendenden Test-Agents
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern.
 
 > [!NOTE]
-> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
-Die Agents werden mit dem Auslastungstest-Editor angegeben, um die Eigenschaft **Zu verwendende Agents** im Eigenschaftenfenster zu ändern.
+Die Agents werden mit dem **Auslastungstest-Editor** angegeben, um die Eigenschaft **Zu verwendende Agents** im **Eigenschaftenfenster** zu ändern.
 
 Sie können die Agents angeben, die für das zu verwendende Szenario verwendet werden sollen, wenn Sie den Auslastungstest remote mithilfe von Controllern und Agents ausführen. Sie möchten z. B. einen bestimmten Satz von Agents angeben, damit Sie die Konsistenz beim Analysieren von Leistungstrends aufrechterhalten. Zudem sind Agents möglicherweise geografisch verteilt, sodass bezüglich der ausgeführten Skripts und dem Standort des Agents eine Affinität besteht.
 
 > [!TIP]
-> Neben der physischen Anordnung eines Agents auf der Remotewebsite besteht auch die Möglichkeit, die Netzwerkemulation zum Emulieren des langsamen Netzwerks zu verwenden. Weitere Informationen finden Sie unter [Specifying Virtual Network Types (Angeben von virtuellen Netzwerktypen)](../test/specify-virtual-network-types-in-a-load-test-scenario.md) und [Specifying Virtual Network Types (Angeben von virtuellen Netzwerktypen)](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+> Neben der physischen Anordnung eines Agents auf der Remotewebsite besteht auch die Möglichkeit, die Netzwerkemulation zum Emulieren des langsamen Netzwerks zu verwenden. Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 Weitere Informationen finden Sie unter [Test controllers and test agents (Testcontroller und Test-Agents)](configure-test-agents-and-controllers-for-load-tests.md).
 
 Ein anderer Grund besteht darin, dass möglicherweise auf einigen, jedoch nicht allen Agents Software installiert ist, die für ein bestimmtes Szenario erforderlich ist.
 
-Sie können die Agent-Auswahl für einen angegebenen Testlauf mit Rollen in den Testeinstellungen steuern. Weitere Informationen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+Sie können die Agent-Auswahl für einen angegebenen Testlauf mit Rollen in den Testeinstellungen steuern. Weitere Informationen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Computer eine CPU-Auslastung von mehr als 75 Prozent vorliegt oder weniger als 10 Prozent des physischen Speichers verfügbar sind. So können Sie sicherstellen, dass der Agent-Computer nicht zum Engpass im Auslastungstest wird.
 
@@ -47,13 +47,13 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
 
 1.  Öffnen Sie einen Auslastungstest.
 
-     Der Auslastungstest-Editor wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
+     Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
 2.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die zu verwendenden Agents angeben möchten.
 
 3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im Fenster **Eigenschaften** angezeigt.
 
 4.  Geben Sie im Textfeld für die Eigenschaft **Zu verwendende Agents** die Liste der Agents ein, mit denen das Szenario möglicherweise ausgeführt wird.
 
@@ -66,7 +66,7 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

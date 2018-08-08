@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153903"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251574"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 
@@ -54,7 +54,7 @@ Dadurch sollte das Problem behoben werden. Wenn Sie immer noch auf Probleme sto�
 
 Mehrere Unity-Plug-Ins wie Parse, FMOD, UMP (Universal Media Player), ZFBrowser oder Embedded Browser verwenden native Threads. Wenn ein Plug-In der Runtime einen nativen Thread hinzufügt, führt dies zu einem Problem, da die Runtime dann Blockierungsaufrufe an das Betriebssystem ausgibt. Das bedeutet, dass Unity den Thread für den Debugger (oder das Neuladen einer Domäne) nicht unterbrechen kann und nicht mehr reagiert.
 
-Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initialisierungs-[Flag](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE weitergeben, um die asynchrone Verarbeitung zu deaktivieren und diese gesamte Verarbeitung auf dem Haupthread durchzuführen.
+Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initialisierungs-[Flag](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` weitergeben, um die asynchrone Verarbeitung zu deaktivieren und die gesamte Verarbeitung auf dem Hauptthread durchzuführen.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Nicht kompatibles Projekt in Visual Studio
 
@@ -114,7 +114,7 @@ Versuchen Sie, Ihre Version von Visual Studio 2015 auf Update 3 zu aktualisieren
 
 - Bei Einzel- und Prozedurschritten für Methoden kommt es mitunter zu einem Fehlverhalten, insbesondere bei Iteratoren oder innerhalb von Switch-Anweisungen.
 
-## <a name="reporting-errors"></a>Erstellen von Fehlerberichten
+## <a name="report-errors"></a>Importfehler
 
  Helfen Sie uns, die Qualität von Visual Studio-Tools für Unity zu verbessern, indem Sie Fehlerberichte senden, sollte das Programm abstürzen, einfrieren oder ein anderer Fehler auftreten. Dies hilft uns beim Untersuchen und Beheben von Problemen in Visual Studio-Tools für Unity. Vielen Dank!
 

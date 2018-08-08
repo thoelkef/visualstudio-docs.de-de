@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845755"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382089"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -28,7 +28,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 -   Sie können alle benötigten Informationen in einem Fenster anzeigen.
 
-## <a name="using-test-explorer"></a>Verwenden des Test-Explorers
+## <a name="use-test-explorer"></a>Verwenden des Test-Explorers
  ![Komponententest-Explorer zeigt die Schaltfläche "Alles ausführen" an](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
@@ -39,7 +39,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
     1.  Erstellen Sie ein Testprojekt.
 
-         Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.
+         Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** > **Visual C#** oder **Visual C++**, und klicken Sie dann auf **Test**.
 
          Wählen Sie **Komponententestprojekt**aus.
 
@@ -47,7 +47,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 2.  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
-3.  Wählen Sie in der Menüleiste **Test**, **Komponententests ausführen**, **Alle Tests**aus.
+3.  Klicken Sie in der Menüleiste auf **Test** > **Komponententests ausführen** > **Alle Tests**.
 
      Die Projektmappe wird erstellt, und die Tests werden ausgeführt.
 
@@ -69,16 +69,16 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 > Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
  Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
-#### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode
+### <a name="create-the-test-and-method"></a>Erstellen des Tests und der Methode
 
 1.  Erstellen Sie ein Visual C#-Klassenbibliotheksprojekt. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat sie den Namen `MyMath`.
 
 2.  Erstellen Sie ein Testprojekt.
 
-    -   Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.
+    -   Klicken Sie im Dialogfeld **Neues Projekt** erst auf **Visual C#** > **Test** und anschließend auf **Komponententestprojekt**.
 
          ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 4.  Generieren Sie die Methode von dem Test.
 
-    1.  Platzieren Sie den Cursor auf `Rooter`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Neuer Typ**aus.
+    1.  Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
 
     2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
 
-    3.  Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Methodenstub**aus.
+    3.  Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
 
 5.  Führen Sie den Komponententest aus.
 
-    1.  Wählen Sie im Menü **Test** die Optionen **Komponententests ausführen**, **Alle Tests**aus.
+    1.  Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
 
          Die Projektmappe wird erstellt und ausgeführt.
 
@@ -132,7 +132,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.
 
-1.  Verbessern Sie in `MyMath\Rooter.cs`den Code von `SquareRoot`:
+1.  Verbessern Sie in *MyMath\Rooter.cs* den Code von `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)

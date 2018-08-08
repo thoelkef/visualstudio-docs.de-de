@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232389"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381080"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 
@@ -70,13 +70,13 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
     Nachdem Sie auf „OK“ geklickt haben, besteht die Projektmappe **WeatherApp** aus einem einzelnen Projekt namens **WeatherApp**.
 
-2.  Wenn Sie auf iOS abzielen, fügen Sie ein iOS-Projekt zur Projektmappe hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektmappennamen, und wählen Sie **Hinzufügen** und **Neues Projekt**.  Wählen Sie links im Dialogfeld **Neues Projekt** die Optionen **Visual C#** und dann **iOS** und **Universell**. (Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2017-Feature aktivieren, wie unter [Setup und Installation](../cross-platform/setup-and-install.md) beschrieben.) Wählen Sie in der Vorlagenliste **Einzelansicht-App (iOS)** aus. Nennen Sie sie **WeatherApp.iOS**.
+2.  Wenn Sie auf iOS abzielen, fügen Sie ein iOS-Projekt zur Projektmappe hinzu. Klicken Sie erst im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektmappennamen und anschließend mit der Linken auf **Hinzufügen** > **Neues Projekt**.  Wählen Sie links im Dialogfeld **Neues Projekt** die Optionen **Visual C#** und dann **iOS** und **Universell**. (Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2017-Feature aktivieren, wie unter [Setup und Installation](../cross-platform/setup-and-install.md) beschrieben.) Wählen Sie in der Vorlagenliste **Einzelansicht-App (iOS)** aus. Nennen Sie sie **WeatherApp.iOS**.
 
 3.  Wenn Sie auf Android abzielen, fügen Sie ein Android-Projekt zur Projektmappe hinzu. Wählen Sie links im Dialogfeld **Neues Projekt** die Option **Visual C#** und dann **Android**. Wählen Sie in der Vorlagenliste **Leere App (Android)** aus. Nennen Sie sie **WeatherApp.Android**.
 
 4. Wenn Sie auf die universelle Windows-Plattform abzielen, wählen Sie links im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, und **Universelles Windows** aus. Wählen Sie in der Vorlagenliste **Leere App (universelles Windows)**, und nennen Sie sie **WeatherApp.UWP**.
 
-5. Klicken Sie für jedes der Anwendungsprojekte (iOS, Android und UWP) mit der rechten Maustaste im **Projektmappen-Explorer** auf den Abschnitt **Verweise**, und wählen Sie **Verweis hinzufügen**. Wählen Sie links im Dialogfeld **Verweis-Manager** die Optionen **Projekt** und **Projektmappe**. Im Projektmappen-Explorer sehen Sie eine Liste aller Projekte, mit Ausnahme des Projekts, dessen Verweise Sie gerade verwalten:
+5. Klicken Sie für jedes der Anwendungsprojekte (iOS, Android und UWP) erst mit der rechten Maustaste im **Projektmappen-Explorer** auf den Abschnitt **Verweise**, und anschließend mit der Linken auf **Verweis hinzufügen**. Wählen Sie links im Dialogfeld **Verweis-Manager** die Optionen **Projekt** und **Projektmappe**. Im Projektmappen-Explorer sehen Sie eine Liste aller Projekte, mit Ausnahme des Projekts, dessen Verweise Sie gerade verwalten:
 
    ![Festlegen eines Verweises auf das .NET Standard-Projekt](../cross-platform/media/cross-plat-xamarin-build-3.png)
 
@@ -86,7 +86,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 6. Fügen Sie das NuGet-Paket **Newtonsoft.Json** zum .NET Standard-Projekt hinzu, das Sie zum Verarbeiten der von einem Wetterdatendienst abgerufenen Informationen verwenden:
 
-    -   Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **WeatherApp**, und wählen Sie **NuGet-Pakete verwalten...** aus.
+    -   Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf das Projekt **WeatherApp** und anschließend mit der Linken auf **NuGet-Pakete verwalten**.
 
          Wählen Sie im NuGet-Fenster die Registerkarte **Durchsuchen** aus, und suchen Sie nach **Newtonsoft**.
 
@@ -229,7 +229,7 @@ Visual Studio verfügt nicht über eine Projektmappenvorlage zum Erstellen von A
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Entwickeln des Erscheinungsbilds und Verhaltens der App
 
-1.  Erweitern Sie im **Projektmappen-Explorer** den Ordner **WeatherApp.Droid > Ressourcen > Layout**, und öffnen Sie *Main.axml*. Über diesen Befehl wird die Datei im visuellen Designer geöffnet. (Wenn ein Java-bezogener Fehler angezeigt wird, lesen Sie diesen [Blogbeitrag](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1.  Erweitern Sie im **Projektmappen-Explorer** den Ordner **WeatherApp.Droid > Ressourcen > Layout**, und öffnen Sie die Datei *Main.axml*. Über diesen Befehl wird die Datei im visuellen Designer geöffnet. (Wenn ein Java-bezogener Fehler angezeigt wird, lesen Sie diesen [Blogbeitrag](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
     >  Es sind viele weitere Dateien in diesem Projekt vorhanden. Sie alle zu besprechen, würde den Rahmen dieses Artikels sprengen. Wenn Sie jedoch mehr über die Struktur eines Android-Projekts erfahren möchten, finden Sie ausführliche Informationen im Artikel „Hello Android“ unter [Detailinformationen, Teil 2](/xamarin/android/get-started/hello-android/hello-android-deepdive/).

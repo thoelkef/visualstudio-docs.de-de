@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Python in Azure App Service
 description: Installieren von Python-Interpretern und -Bibliotheken in Azure App Service und Konfigurieren von Webanwendungen in der Weise, dass sie korrekt auf den Interpreter verweisen.
-ms.date: 09/13/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,24 +12,24 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876994"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310071"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Einrichten einer Python-Umgebung in Azure App Service
 
+> [!Important]
+> Microsoft möchte zukünftig die Python-Erweiterungen für App Service wie in diesem Artikel beschrieben beenden, um eine direkte Bereitstellung für App Service unter Linux zu unterstützen. Die Erweiterungen funktionieren in der Zwischenzeit wie gewohnt weiter. Weitere Informationen zum Bereitstellen für App Service unter Linux finden Sie unter [Deploy a Python web app in Web App for Containers (Bereitstellen einer Python-Web-App in Web-App für Container)](/azure/app-service/containers/quickstart-python).
+
 [Azure App Service](https://azure.microsoft.com/services/app-service/) ist ein Platform-as-a-Service-Angebot für Webanwendungen, egal, ob es sich um über einen Webbrowser zugreifbare Websites, um von Ihren eigenen Clients verwendete REST-APIs, oder um ereignisgesteuerte Verarbeitung handelt. App Service unterstützt die Verwendung von Python zur Implementierung von Anwendungen vollständig.
 
-Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus mehreren App Service-*Websiteerweiterungen*, von denen jede eine bestimmte Version der Python-Laufzeit enthält. Sie können sämtliche gewünschten Pakete direkt, wie in diesem Artikel beschrieben, in dieser Umgebung installieren. Wenn Sie die Umgebung in App Service anpassen, müssen Sie keine Pakete in Ihren Web-App-Projekten verwalten, und Sie müssen sie auch nicht zusammen mit dem App-Code hochladen.
+Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus mehreren *Websiteerweiterungen* für App Service, von denen jede eine bestimmte Version der Python-Laufzeit enthält. Sie können sämtliche gewünschten Pakete direkt, wie in diesem Artikel beschrieben, in dieser Umgebung installieren. Wenn Sie die Umgebung in App Service anpassen, müssen Sie keine Pakete in Ihren Web-App-Projekten verwalten, und Sie müssen sie auch nicht zusammen mit dem App-Code hochladen.
 
 > [!Tip]
 > Obwohl in App Service standardmäßig Python 2.7 und Python 3.4 in Stammordnern auf dem Server installiert sind, können Sie die Pakete in diesen Umgebungen nicht anpassen oder installieren. Außerdem sollten Sie sich nicht darauf verlassen, dass tatsächlich Pakete vorhanden sind. Stattdessen sollten Sie sich, wie in diesem Artikel beschrieben, auf eine von Ihnen kontrollierte Websiteerweiterung verlassen.
-
-> [!Important]
-> Die hier beschriebenen Prozesse unterliegen Veränderungen und vor allem Verbesserungen. Änderungen werden auf dem [Python Engineering at Microsoft-Blog](https://blogs.msdn.microsoft.com/pythonengineering/) angekündigt.
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Auswählen einer Python-Version über das Azure-Portal
 

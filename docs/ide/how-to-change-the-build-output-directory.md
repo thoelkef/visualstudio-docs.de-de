@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942246"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379688"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Vorgehensweise: Ändern des Buildausgabeverzeichnisses
 
@@ -28,7 +28,7 @@ Sie können den Speicherort der vom das Projekt generierten Ausgabe auf Basis de
 
 ## <a name="change-the-build-output-directory"></a>Ändern des Buildausgabeverzeichnisses
 
-1.  Wählen Sie in der Menüleiste **Projekt** > **\<App-Name> Eigenschaften** aus. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften**aus.
+1.  Wählen Sie in der Menüleiste **Projekt** > **\<App-Name> Eigenschaften** aus. Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf den Projektknoten und anschließend mit der Linken auf **Eigenschaften**.
 
 2.  Wenn Sie ein Visual Basic-Projekt haben, wählen Sie die Registerkarte **Kompilieren** . Wenn Sie ein C#-Projekt haben, wählen Sie die Registerkarte **Build** aus. Wenn Sie ein C++-Projekt oder ein JavaScript-Projekt haben, wählen Sie die Registerkarte **Allgemein** .
 

@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: f545fa223aa929b79016352e799d112bceddaf1c
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058551"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341462"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Problembehandlung für das Remotedebuggen für Python und Azure
 
@@ -27,10 +27,10 @@ Beim Anfügen an eine [Azure App Service for remote debugging (Azure App Service
 | --- | --- |
 | Auf dem Computer ist nicht Visual Studio 2013 Update 4 oder höher installiert. | Installieren Sie eine geeignete Version von [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
 | Das in App Service bereitgestellte Projekt entspricht nicht dem geöffneten Projekt in Visual Studio. | Laden Sie das richtige Projekt in Visual Studio. |
-| Das Projekt wurde nicht mit der Debugkonfiguration bereitgestellt. | Stellen Sie die Anwendung erneut bereit, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt klicken und **Veröffentlichen** auswählen. Stellen Sie auf der Registerkarte **Einstellungen** sicher, dass **Debuggen** als Konfiguration ausgewählt wurde. |
-| Die App Service-Instanz wird nicht ausgeführt. | Starten Sie die Instanz über den Server-Explorer in Visual Studio oder über das Azure-Portal. |
-| Die App Service-Instanz ist nicht für Websockets konfiguriert. | Wechseln Sie zum [Azure-Portal](https://portal.azure.com), navigieren Sie zu Ihrer App Service-Instanz, öffnen Sie das Blatt **Einstellungen > Anwendungseinstellungen**, legen Sie **Allgemeine Einstellungen > Websockets** auf **Ein** fest, und klicken Sie auf **Speichern**. (Beachten Sie, dass die Optionen für das **Debuggen** auf diesem Blatt *nicht* für das Debuggen von Python gelten.) |
-| `web.debug.config` wurde geändert und der Debugproxy deaktiviert. | Löschen Sie die Datei, und veröffentlichen Sie das Projekt erneut in App Service. Dabei erstellt Visual Studio die Datei neu. |
+| Das Projekt wurde nicht mit der **Debugkonfiguration** bereitgestellt. | Stellen Sie die Anwendung erneut bereit, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste erst auf das Projekt und dann auf **Veröffentlichen** klicken. Stellen Sie auf der Registerkarte **Einstellungen** sicher, dass **Debuggen** als Konfiguration ausgewählt wurde. |
+| Die App Service-Instanz wird nicht ausgeführt. | Starten Sie die Instanz über den **Server-Explorer** in Visual Studio oder über das Azure-Portal. |
+| Die App Service-Instanz ist nicht für Websockets konfiguriert. | Wechseln Sie zum [Azure-Portal](https://portal.azure.com), navigieren Sie zu App Service, öffnen Sie **Einstellungen** > **Anwendungseinstellungen**, legen Sie **Allgemeine Einstellungen** > **Websockets** auf **Ein** fest, und klicken Sie auf **Speichern**. (Beachten Sie, dass die Optionen für das **Debuggen** auf diesem Blatt *nicht* für das Debuggen von Python gelten.) |
+| *web.debug.config* wurde geändert und der Debugproxy deaktiviert. | Löschen Sie die Datei, und veröffentlichen Sie das Projekt erneut in App Service. Dabei erstellt Visual Studio die Datei neu. |
 
 Siehe auch:
 

@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c422f906eba84d00d1d0e8bfa6420a627b410512
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974779"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381578"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Neuerungen in Live Unit Testing
 

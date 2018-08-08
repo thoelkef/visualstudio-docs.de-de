@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7fee836c8259aac267bd1b3da39bf254c8cdcc63
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117400"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380729"
 ---
 # <a name="unit-testing-visual-c-code"></a>Komponententests in Visual C#-Code
 
-In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für eine Visual C#-Klasse in einer UWP-App beschrieben. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.
+In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine Visual C#-Klasse in einer UWP-App beschrieben. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.
 
-In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.
+In diesem Artikel wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.
 
-In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen.
+In diesem Artikel werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Erstellen Sie die Projektmappe und das Komponententestprojekt.
 
@@ -32,7 +32,7 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 3. Nennen Sie das Projekt `Maths`, und stellen Sie sicher, dass **Projektmappenverzeichnis erstellen** ausgewählt ist.
 
-4. Wählen Sie im Projektmappen-Explorer den Projektmappenname aus. Wählen Sie anschließend aus dem Kontextmenü **Hinzufügen** und dann **Neues Projekt** aus.
+4. Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie anschließend aus dem Kontextmenü die Option **Hinzufügen** > **Neues Projekt** aus.
 
 5. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
 
@@ -66,11 +66,11 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
         Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen.
 
-   - Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
+   - Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden des MSTest-Frameworks in Komponententests](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Stellen Sie sicher, dass die Tests im Test-Explorer ausgeführt werden.
 
-1. Fügen Sie in Datei **UnitTest1.cs** einen Testcode in „TestMethod1“ hinzu:
+1. Fügen Sie in Datei *UnitTest1.cs* einen Testcode in „TestMethod1“ hinzu:
 
    ```csharp
    [TestMethod]
@@ -84,13 +84,13 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 2. Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
 
-   Das Testprojekt wird erstellt und ausgeführt. Das Test-Explorer-Fenster wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
+   Das Testprojekt wird erstellt und ausgeführt. Das Fenster **Test-Explorer** wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich **Zusammenfassung** werden weitere Informationen zum ausgewählten Test angezeigt.
 
    ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Fügen Sie die Klasse "Rooter" zu dem Projekt "Mathematik" hinzu.
 
-1. Wählen Sie im Projektmappen-Explorer den Projektname **Mathematik**. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Klasse** aus.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektnamen **Maths** aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Klasse** aus.
 
 2. Geben Sie der Klassendatei den Namen *Rooter.cs*.
 
@@ -116,7 +116,7 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 1. Fügen Sie dem RooterTests-Projekt einen Verweis auf die Mathematik-App hinzu.
 
-    1. Wählen Sie im Projektmappen-Explorer das Projekt **RooterTests** aus, und wählen Sie dann im Kontextmenü die Option **Verweis hinzufügen** aus.
+    1. Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterTests** und anschließend im Kontextmenü die Option **Verweis hinzufügen** aus.
 
     2. Erweitern Sie im Dialogfeld **Verweis hinzufügen - RooterTests** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **Mathematik** aus.
 
@@ -148,9 +148,9 @@ In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separat
 
 4. Erstellen Sie die Projektmappe.
 
-   Der neue Test wird im Test-Explorer im Knoten **Nicht ausgeführte Tests** angezeigt.
+   Der neue Test wird im **Test-Explorer** im Knoten **Nicht ausgeführte Tests** angezeigt.
 
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
    ![Einfacher Test bestanden](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -180,7 +180,7 @@ Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie T
    >
    > Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
 3. Der Test schlägt fehl.
 
@@ -272,7 +272,7 @@ Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie T
         }
         ```
 
-4. Wählen Sie im Test-Explorer **Alle ausführen** aus, um die korrigierte Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
+4. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
 
 Alle Tests sind nun erfolgreich.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968193"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379656"
 ---
 # <a name="modify-load-test-logging-settings"></a>Ändern von Einstellungen für die Auslastungstestprotokollierung
 
@@ -25,9 +25,9 @@ Der *Testcontroller* spoolt während der Testausführung alle gesammelten Beispi
 
 |Aufgabe|Verwandte Themen|
 |----------|-----------------------|
-|**Festlegen der Häufigkeit, mit der Protokolle während eines Auslastungstestlaufs gespeichert werden:** Sie können angeben, wie oft das Testprotokoll bei der Ausführung des Auslastungstests gespeichert werden soll.|-   [How to: Specify How Frequently Test Logs are Saved (Vorgehensweise: Angeben, wie häufig Testprotokolle gespeichert werden)](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**Speichern von Protokollen bei einem Auslastungstestfehler:** Sie können angeben, ob das Testprotokoll gespeichert werden soll, wenn ein Auslastungstest fehlschlägt.|-   [How to: Specify if Test Failures are Saved to Test Logs (Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden)](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Festlegen der maximalen Dateigröße für die Protokolldatei:** Sie können die XML-Konfigurationsdatei für den Testcontrollerdienst bearbeiten, um die gewünschte maximale Dateigröße für die Protokolldatei anzugeben.|[Gewusst wie: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Festlegen der Häufigkeit, mit der Protokolle während eines Auslastungstestlaufs gespeichert werden:** Sie können angeben, wie oft das Testprotokoll bei der Ausführung des Auslastungstests gespeichert werden soll.|-   [Vorgehensweise: Angeben, wie häufig Testprotokolle gespeichert werden](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Speichern von Protokollen bei einem Auslastungstestfehler:** Sie können angeben, ob das Testprotokoll gespeichert werden soll, wenn ein Auslastungstest fehlschlägt.|-   [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Festlegen der maximalen Dateigröße für die Protokolldatei:** Sie können die XML-Konfigurationsdatei für den Testcontrollerdienst bearbeiten, um die gewünschte maximale Dateigröße für die Protokolldatei anzugeben.|[Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 

@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750921"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382320"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Gewusst wie: Angeben von Zeichnungsoptionen zur grafischen Darstellung von Indikatoren
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Vorgehensweise: Angeben von Zeichnungsoptionen zur Darstellung von Indikatoren in Diagrammen
 
 Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe und die Linienart eines gezeichneten Indikators im Diagramm ändern. Sie können auch den Bereich auf einen bestimmten Wert festlegen oder den Bereich angeben, der auf Grundlage der erfassten Daten automatisch eingestellt werden soll.
 
@@ -25,11 +25,11 @@ Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe und die Linienart ein
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>So geben Sie Zeichnungsoptionen für Diagramme an
 
-1.  Wählen Sie in der Auslastungstest-Analyzer auf der Auslastungstest-Symbolleiste die Option **Diagramme**.
+1.  Klicken Sie in der **Auslastungstest-Analyzer** auf der Symbolleiste auf **Diagramme**.
 
-     Dadurch werden Auslastungstestergebnisse in der Diagrammansicht angezeigt.
+     Dadurch werden Auslastungstestergebnisse in einer Diagrammansicht angezeigt.
 
-2.  Klicken Sie in der Legende oder im Diagramm mit der rechten Maustaste auf die Zeile oder die aktuelle Zeichnungslinie des Leistungsindikators, dessen Zeichnungsoption Sie ändern möchten, und wählen Sie dann **Zeichnungsoptionen** aus.
+2.  Klicken Sie in der Legende oder im Diagramm mit der rechten Maustaste auf die Zeile oder die aktuelle Zeichnungslinie des Leistungsindikators, dessen Zeichnungsoption Sie ändern möchten, und klicken Sie dann auf **Zeichnungsoptionen**.
 
      Das Dialogfeld **Zeichnungsoptionen** wird angezeigt.
 
@@ -52,5 +52,4 @@ Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe und die Linienart ein
 ## <a name="see-also"></a>Siehe auch
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md)

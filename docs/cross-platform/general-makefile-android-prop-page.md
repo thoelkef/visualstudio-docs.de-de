@@ -15,18 +15,18 @@ f1_keywords:
 - VC.Project.VCConfiguration.ConfigurationType
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cfc1655adbd9377f1aeeec60afc799f342b4498d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ac5c50a1bf7c6f0d9046f136ad821370b59ad0a
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060079"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252309"
 ---
 # <a name="general-project-properties-android-c-makefile"></a>Allgemeine Projekteigenschaften (Android C++-Makefile)
 
-Eigenschaft | description | Auswahlmöglichkeiten
+Eigenschaft | Beschreibung  | Auswahlmöglichkeiten
 --- | ---| ---
 Ausgabeverzeichnis | Gibt einen relativen Pfad zum Ausgabedateiverzeichnis an. Kann Umgebungsvariablen enthalten.
 Zwischenverzeichnis | Gibt einen relativen Pfad zum Zwischendateiverzeichnis an. Kann Umgebungsvariablen enthalten.
 Buildprotokolldatei | Gibt die zu schreibende Buildprotokolldatei an, wenn die Buildprotokollierung aktiviert ist.
-Konfigurationstyp | Gibt den Typ der Ausgabe an, die diese Konfiguration generiert. | **Dynamische Bibliothek (.so)**: Dynamische Bibliothek (.so)<br>**Statische Bibliothek (.a)**: Statische Bibliothek (.a)<br>**Hilfsprogramm**: Hilfsprogramm<br>**Makefile**: Makefile<br>
+Konfigurationstyp | Gibt den Typ der Ausgabe an, die diese Konfiguration generiert. | **Dynamische Bibliothek (.so)**: Dynamische Bibliothek (*.so*)<br>**Statische Bibliothek (.a)**: Statische Bibliothek (*.a*)<br>**Hilfsprogramm**: Hilfsprogramm<br>**Makefile**: Makefile<br>

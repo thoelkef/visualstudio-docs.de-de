@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454569"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251810"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
 Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.
 
@@ -50,11 +50,11 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
 - Eine in Xcode konfigurierte iOS-Signierungsidentität
 
-   Ausführliche Informationen zum Abrufen einer iOS-Signierungsidentität finden Sie unter [Maintaining Your Signing Identities and Certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) (Verwalten von Signierungsidentitäten und Zertifikaten) (in englischer Sprache) in der iOS Developer Library. Um die Signierungsidentität in Xcode anzuzeigen oder festzulegen, öffnen Sie das Menü **Xcode** , und wählen Sie **Einstellungen**aus. Wählen Sie unter **Konten** Ihre Apple-ID aus, und wählen Sie dann die Schaltfläche **Details anzeigen** aus.
+   Ausführliche Informationen zum Abrufen einer iOS-Signierungsidentität finden Sie unter [Maintaining Your Signing Identities and Certificates (Verwalten von Signierungsidentitäten und Zertifikaten)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) in der iOS Developer Library. Um die Signierungsidentität in Xcode anzuzeigen oder festzulegen, öffnen Sie das Menü **Xcode** , und wählen Sie **Einstellungen**aus. Wählen Sie unter **Konten** Ihre Apple-ID aus, und wählen Sie dann die Schaltfläche **Details anzeigen** aus.
 
 - Bei Verwendung eines iOS-Geräts für die Entwicklung ein in Xcode konfiguriertes Bereitstellungsprofil für Ihr Gerät
 
-   Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Creating Provisioning Profiles Using Member Center](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) (Erstellen von Bereitstellungsprofilen mit Member Center) (in englischer Sprache) in der iOS Developer Library.
+   Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Creating Provisioning Profiles Using Member Center (Erstellen von Bereitstellungsprofilen mit Member Center)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) in der iOS Developer Library.
 
 - [Node.js](https://nodejs.org/)
 
@@ -70,7 +70,7 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
 Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
 
-Stellen Sie vor der Installation des Remote-Agents sicher, dass die [Erforderliche Komponenten](#Prerequisites) vorhanden sind und [Visual C++ für plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)installiert ist.
+Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#Prerequisites) vorhanden sind und [Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) installiert ist.
 
 ###  <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
 
@@ -125,7 +125,7 @@ Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio
 
 #### <a name="to-stop-the-remote-agent"></a>So beenden Sie den Remote-Agenten
 
-- Geben Sie im Terminalfenster, in dem "vcremote" ausgeführt wird, `Control+C`ein.
+- Drücken Sie im Terminalfenster, in dem „vcremote“ ausgeführt wird, **UMSCHALT**+**C**.
 
 ##  <a name="ConfigureVS"></a> Konfigurieren des Remote-Agents in Visual Studio
 
@@ -158,7 +158,7 @@ Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müs
 
    Wenn die Kopplung nicht erfolgreich ist, stellen Sie sicher, dass der Remote-Agent ausgeführt wird. Führen Sie dazu die unter [Start the remote agent](#Start)beschriebenen Schritte aus. Wenn zu viel Zeit verstrichen ist, seit die Remote-Agent-PIN generiert wurde, führen Sie die Schritte unter [Generate a new security PIN](#GeneratePIN) auf dem Mac aus, und versuchen Sie es dann erneut. Versuchen Sie bei Verwendung der Hostname Ihres Macs stattdessen mit der IP-Adresse im Feld **Hostname** .
 
-1. Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm** , um den Ordner in Ihrem Stammverzeichnis (~) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent "/Users/`username`/vcremote" als Remotestamm.
+1. Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm**, um den Ordner in Ihrem Stammverzeichnis (*~*) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent "/Users/`username`/vcremote" als Remotestamm.
 
 1. Wählen Sie **OK** aus, um die Verbindungseinstellungen für die Remotekopplung zu speichern.
 
@@ -220,7 +220,7 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
    `vcremote --serverDir directory_path`
 
-   *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um "/Users/*Benutzername*/vcremote". Builds werden an diesem Speicherort nach Build-Nummer angeordnet.
+   *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um */Users/\<username>/vcremote*. Builds werden an diesem Speicherort nach Build-Nummer angeordnet.
 
 - Um mithilfe eines Hintergrundprozesses `stdout` und `stderr` in einer Datei namens "server.log" zu erfassen, geben Sie Folgendes ein:
 
@@ -236,4 +236,4 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installieren der plattformübergreifenden Mobile-Entwicklung mit Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

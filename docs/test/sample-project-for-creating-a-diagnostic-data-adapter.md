@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977114"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380769"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten
 
@@ -324,7 +324,7 @@ Im Folgenden sehen Sie eine Beispielkonfigurationsdatei für den Diagnosedatensa
 
 ```
 
-## <a name="compiling-the-code"></a>Kompilieren des Codes
+## <a name="compile-the-code"></a>Kompilieren des Codes
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>So erstellen Sie das Codeprojekt für diesen Diagnoseadapter
 
@@ -354,7 +354,7 @@ Im Folgenden sehen Sie eine Beispielkonfigurationsdatei für den Diagnosedatensa
 
 7.  Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.Common** hinzu.
 
-    1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf Verweise, und klicken Sie anschließend auf **Verweis hinzufügen**.
+    1.  Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf **Verweise** und anschließend mit der Linken auf **Verweis hinzufügen**.
 
     2.  Klicken Sie auf **Durchsuchen**, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -364,7 +364,7 @@ Im Folgenden sehen Sie eine Beispielkonfigurationsdatei für den Diagnosedatensa
 
 8.  Kopieren Sie die oben in diesem Dokument aufgeführte Klasse für den Adapter für diagnostische Daten in die Klasse für die Klassenbibliothek. Speichern Sie diese Klasse.
 
-9. Um dem Projekt ein Benutzersteuerelement hinzuzufügen, klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf das Projekt „MyDataCollector“, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Benutzersteuerelement** aus. Wählen Sie **Hinzufügen** aus.
+9. Sie können dem Projekt ein Benutzersteuerelement hinzufügen, indem Sie erst mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt **MyDataCollector** klicken, dann auf **Hinzufügen** zeigen und anschließend auf **Benutzersteuerelement** klicken. Wählen Sie **Hinzufügen** aus.
 
 10. Fügen Sie dem Benutzersteuerelement mithilfe der Toolbox eine Bezeichnung hinzu, und ändern Sie die Text-Eigenschaft in **Dateiname:**.
 
@@ -375,15 +375,15 @@ Im Folgenden sehen Sie eine Beispielkonfigurationsdatei für den Diagnosedatensa
     > [!NOTE]
     > Standardmäßig bekommt das Benutzersteuerelement die Bezeichnung UserControl1. Stellen Sie sicher, dass im Benutzersteuerelement-Klassencode der Name des Benutzersteuerelements verwendet wird.
 
-13. Um die XML-Konfigurationsdatei zu erstellen, klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Neues Element** aus. Klicken Sie, um **Anwendungskonfigurationsdatei** auszuwählen, und klicken Sie dann auf **Hinzufügen**. Dadurch wird der Projektmappe eine Datei namens **App.config** hinzugefügt.
+13. Um die XML-Konfigurationsdatei zu erstellen, klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Neues Element** aus. Klicken Sie, um **Anwendungskonfigurationsdatei** auszuwählen, und klicken Sie dann auf **Hinzufügen**. Dadurch wird der Projektmappe eine Datei namens *App.config* hinzugefügt.
 
 14. Kopieren Sie die XML-Daten aus dem obigen Beispiel in die XML-Datei. Speichern Sie die Datei.
 
-15. Erstellen Sie die Projektmappe, und kopieren Sie dann die Datei `App.config` in das Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
+15. Erstellen Sie die Projektmappe, und kopieren Sie dann die Datei *App.config* in das Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
 16. Erstellen Sie Testeinstellungen, die diesen benutzerdefinierten Adapter für diagnostische Daten verwenden. Konfigurieren Sie die Testeinstellungen, um eine bereits vorhandene Datei zu erfassen.
 
-     Wenn Sie Tests in Microsoft Test Manager ausführen, können Sie diese Testeinstellungen dem Testplan zuweisen, bevor Sie die Tests ausführen, oder verwenden Sie den Befehl „Ausführen mit Optionen“, um Testeinstellungen zuzuweisen und zu überschreiben. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+     Wenn Sie Tests in Microsoft Test Manager ausführen, können Sie diese Testeinstellungen dem Testplan zuweisen, bevor Sie die Tests ausführen, oder verwenden Sie den Befehl „Ausführen mit Optionen“, um Testeinstellungen zuzuweisen und zu überschreiben. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Führen Sie die Tests unter Verwendung der Testeinstellungen aus, und wählen Sie dabei Ihren Adapter für diagnostische Daten aus.
 
@@ -391,7 +391,7 @@ Im Folgenden sehen Sie eine Beispielkonfigurationsdatei für den Diagnosedatensa
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Gewusst wie: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
-- [Gewusst wie: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testsystems](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Vorgehensweise: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+- [Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
