@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975545"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381591"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Verwenden des MSTest-Frameworks in Komponententests
 
@@ -33,7 +33,7 @@ Für einen besseren Überblick über das Framework für Komponententests werden 
 
 ### <a name="members-used-for-data-driven-testing"></a>Für datengesteuerte Tests verwendete Member
 
-Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [Gewusst wie: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md) und [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md) und [Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -45,7 +45,7 @@ Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Kompo
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Zum Einrichten einer Aufrufreihenfolge verwendete Attribute
 
-Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Attribute für Assemblys
 
@@ -71,7 +71,7 @@ ClassInitialize und ClassCleanup werden direkt nach dem Laden und direkt vor dem
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Zum Angeben von Testklassen und Testmethoden verwendete Attribute
 
-Jede Testklasse muss das `TestClass`-Attribut aufweisen und jede Testmethode das `TestMethod`-Attribut. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Jede Testklasse muss das `TestClass`-Attribut aufweisen und jede Testmethode das `TestMethod`-Attribut. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -97,7 +97,7 @@ Im Rahmen von Komponententests kann mit verschiedenen Arten von Assertions, Ausn
 
 ## <a name="the-testcontext-class"></a>Die TestContext-Klasse
 
-Die folgenden Attribute und die diesen zugewiesenen Werte werden im Visual Studio-Eigenschaftenfenster für eine bestimmte Testmethode angezeigt. Diese Attribute dienen nicht dem Zugriff über den Code des Komponententests. Stattdessen beeinflussen sie, in welcher Weise der Komponententest ausgeführt wird – entweder von Ihnen über die IDE von Visual Studio oder vom Visual Studio-Testmodul. Einige dieser Attribute werden beispielsweise im Fenster **Test Manager** und im Fenster **Testergebnisse** in Spalten angezeigt. Das bedeutet, dass Sie sie zum Gruppieren und Sortieren von Tests und Testergebnissen verwenden können. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> ist ein Attribut dieser Art. Mit ihm können beliebige Metadaten Komponententests hinzugefügt werden. Sie können es beispielsweise verwenden, um den Namen eines Testdurchlauf zu speichern, der von diesem Test abgedeckt wird, indem Sie den Komponententest mit `[TestProperty("TestPass", "Accessibility")]` kennzeichnen. Alternativ können Sie es verwenden, um einen Indikator zu speichern, der die Art des Tests angibt: `[TestProperty("TestKind", "Localization")]`. Die Eigenschaft, die durch die Verwendung dieses Attributs erstellt wird, und der zugewiesene Eigenschaftswert werden im Visual Studio-**Eigenschaftenfenster** unter der Überschrift **Testspezifisch** angezeigt.
+Die folgenden Attribute und die diesen zugewiesenen Werte werden im Visual Studio-Eigenschaftenfenster für eine bestimmte Testmethode angezeigt. Diese Attribute dienen nicht dem Zugriff über den Code des Komponententests. Stattdessen beeinflussen sie, in welcher Weise der Komponententest ausgeführt wird – entweder von Ihnen über die IDE von Visual Studio oder von der Visual Studio-Test-Engine. Einige dieser Attribute werden beispielsweise im Fenster **Test Manager** und im Fenster **Testergebnisse** in Spalten angezeigt. Das bedeutet, dass Sie sie zum Gruppieren und Sortieren von Tests und Testergebnissen verwenden können. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> ist ein Attribut dieser Art. Mit ihm können beliebige Metadaten Komponententests hinzugefügt werden. Sie können es beispielsweise verwenden, um den Namen eines Testdurchlauf zu speichern, der von diesem Test abgedeckt wird, indem Sie den Komponententest mit `[TestProperty("TestPass", "Accessibility")]` kennzeichnen. Alternativ können Sie es verwenden, um einen Indikator zu speichern, der die Art des Tests angibt: `[TestProperty("TestKind", "Localization")]`. Die Eigenschaft, die durch die Verwendung dieses Attributs erstellt wird, und der zugewiesene Eigenschaftswert werden im Visual Studio-**Eigenschaftenfenster** unter der Überschrift **Testspezifisch** angezeigt.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 

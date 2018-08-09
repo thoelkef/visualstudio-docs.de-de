@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProvideDefaultName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454375"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636011"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
-Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektsystem generiert einen Standardnamen für die Vorlage in der **neues Element hinzufügen** oder **neues Projekt** (Dialogfeld).  
+Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektsystem generiert einen Standardnamen für die Vorlage in der **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -31,7 +31,7 @@ Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projek
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <ProvideDefaultName> true/false </ProvideDefaultName>  
 ```  
   
@@ -53,14 +53,14 @@ Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projek
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`, der angibt, ob ein Standardname für die Vorlage in generieren die **neues Element hinzufügen** oder **neues Projekt** (Dialogfeld).  
+ Der Text muss entweder `true` oder `false`, der angibt, ob ein Standardname für die Vorlage generiert die **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.  
   
 ## <a name="remarks"></a>Hinweise  
  `ProvideDefaultName` ist ein optionales Element. Der Standardwert ist `true`.  
   
- Wenn die `ProvideDefaultName` Element ist `false`, die **Namen** Feldern der **neues Element hinzufügen** und **neues Projekt** Dialogfelder enthalten den Wert `<Enter_name>`.  
+ Wenn die `ProvideDefaultName` Element `false`, wird die **Namen** Felder des der **neues Element hinzufügen** und **neues Projekt** Dialogfelder enthalten den Wert `<Enter_name>`.  
   
- Verwenden der [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) Elements, geben Sie den Standardnamen des Projekts oder Element in der **neues Element hinzufügen** und **neues Projekt** Dialogfelder. Bei den Wert des der `ProvideDefaultName` Element ist `true`, nicht angegeben die `DefaultName` -Element für Projekte füllt das Dialogfeld mit der Name der Vorlage, d. h. den Wert aus der [Namen](../extensibility/name-element-visual-studio-templates.md) Element.
+ Verwenden der [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) Elements, geben Sie den Standardnamen, der das Projekt oder Element in der **neues Element hinzufügen** und **neues Projekt** Dialogfelder. Bei den Wert des der `ProvideDefaultName` Element ist `true`, ausgelassener der `DefaultName` -Element für Projekte, füllt das Dialogfeld mit der Name der Vorlage, d. h. den Wert aus der [Namen](../extensibility/name-element-visual-studio-templates.md) Element.
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird die `ProvideDefaultName` Element `false`.  
@@ -82,5 +82,5 @@ Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projek
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

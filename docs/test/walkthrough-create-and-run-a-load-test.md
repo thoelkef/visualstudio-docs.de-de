@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178448"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381015"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarischen Vorgehensweise: Erstellen und Ausführen eines Auslastungstest, der Komponententests enthält
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält
 
 In dieser exemplarischen Vorgehensweise erstellen Sie einen Auslastungstest, der Komponententests enthält.
 
-Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Erstellen und Ausführen eines Auslastungstests mithilfe von Visual Studio Enterprise. Ein Auslastungstest ist ein Container für Webleistungs- und Komponententests. Sie erstellen Auslastungstests mit dem Assistenten für neuen Auslastungstest.
+Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Erstellen und Ausführen eines Auslastungstests mithilfe von Visual Studio Enterprise. Ein Auslastungstest ist ein Container für Webleistungs- und Komponententests. Auslastungstests werden mit dem **neuen Auslastungstest-Assistenten** erstellt.
 
-Ein Auslastungstest stellt außerdem eine Vielzahl von Laufzeiteigenschaften zur Verfügung, die angepasst werden können, um die gewünschte Auslastungssimulation herzustellen. In dieser exemplarischen Vorgehensweise verwenden Sie den Assistenten für neuen Auslastungstest, um einem Auslastungstest Komponententests hinzuzufügen.
+Ein Auslastungstest stellt außerdem eine Vielzahl von Laufzeiteigenschaften zur Verfügung, die angepasst werden können, um die gewünschte Auslastungssimulation herzustellen. In dieser exemplarischen Vorgehensweise verwenden Sie den **neuen Auslastungstest-Assistenten**, um Komponententests zu einem Auslastungstest hinzuzufügen.
 
 Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:
 
@@ -35,9 +35,9 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 -   Ausführen eines Auslastungstests
 
--   Führen Sie die Schritte in Exemplarische [Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus, um eine einfache C#-Klassenbibliothek zu erstellen, die ein Webleistungs- und Auslastungstestprojekt mit einigen Komponententests enthält.
+-   Führen Sie die Schritte unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus, um eine einfache C#-Klassenbibliothek zu erstellen, die ein Webleistungs- und Auslastungstestprojekt mit einigen Komponententests enthält.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Erstellen eines Auslastungstests mit Komponententests mithilfe des Assistenten für neuen Auslastungstest
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Erstellen eines Auslastungstests mit Komponententests mithilfe des neuen Auslastungstest-Assistenten
 
 ### <a name="to-start-the-new-load-test-wizard"></a>So starten Sie den Assistenten für den neuen Auslastungstest
 
@@ -45,9 +45,9 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Bank-Projektmappenknoten, klicken Sie auf **Hinzufügen** und dann auf **Neues Projekt**.
 
-     Das Dialogfeld "Neues Projekt hinzufügen" wird angezeigt.
+     Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
-3.  Erweitern Sie im Dialogfeld „Neues Projekt hinzufügen“ die Option **Visual C#**, und klicken Sie auf **Test**. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
+3.  Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **Visual C#**, und wählen Sie **Test** aus. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
 
      Das BankLoadTest-Testprojekt für Webleistung und Auslastung wird der Projektmappe hinzugefügt.
 
@@ -88,7 +88,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>So wählen Sie ein Testmischungsmodell für das Szenario aus
 
-1.  Wählen Sie unter „Wie soll die Testmischung modelliert werden?“ **Auf Grundlage der Gesamtzahl der Tests** aus.
+1.  Wählen Sie unter **Wie soll die Testmischung modelliert werden?** den Eintrag **Auf Grundlage der Gesamtzahl der Tests** aus.
 
 2.  Wählen Sie **Weiter** aus.
 
@@ -98,17 +98,17 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 2.  Klicken Sie auf **Hinzufügen**, um Tests auszuwählen.
 
-3.  Wählen Sie die CreditTest-Komponententests aus, die im Bereich **Verfügbare Tests** aufgeführt sind, der alle Webleistungstests und Komponententests im Webleistungs- und Auslastungstestprojekt enthält.
+3.  Wählen Sie die **CreditTest**-Komponente aus, die im Bereich **Verfügbare Tests** aufgeführt sind, der alle Webleistungstests und Komponententests im Webleistungs- und Auslastungstestprojekt enthält.
 
-4.  Klicken Sie auf den Pfeil, um den CreditTest-Komponententest dem Bereich **Ausgewählte Tests** hinzuzufügen.
+4.  Klicken Sie auf den Pfeil, um den **CreditTest**-Komponententest zum Bereich **Ausgewählte Tests** hinzuzufügen.
 
-5.  Wiederholen Sie die Schritte 3 und 4 für den DebitTest- und den FreezeAccountTest-Komponententest.
+5.  Wiederholen Sie die Schritte 3 und 4 für den **DebitTest**- und den **FreezeAccountTest**-Komponententest.
 
 6.  Klicken Sie auf **OK**, wenn Sie die drei Komponententests hinzugefügt haben.
 
      Die Testmischung wird angezeigt.
 
-7.  Verschieben Sie den Schieberegler unter "Verteilung für den CreditTest" etwas nach rechts, um die Testverteilung anzupassen. Die anderen Schieberegler werden automatisch nach links bewegt, damit die Verteilung weiterhin bei 100 % liegt.
+7.  Verschieben Sie den Schieberegler unter **Verteilung** für den **CreditTest** etwas nach rechts, um die Testverteilung anzupassen. Die anderen Schieberegler werden automatisch nach links bewegt, damit die Verteilung weiterhin bei 100 % liegt.
 
 8.  Wählen Sie **Weiter** aus.
 
@@ -134,7 +134,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 2.  Klicken Sie auf **Fertig stellen**. Der Auslastungstest wird im **Auslastungstest-Editor** geöffnet.
 
-## <a name="running-the-load-test"></a>Ausführen des Auslastungstests
+## <a name="run-the-load-test"></a>Auslastungstest ausführen
  Nachdem Sie den Auslastungstest erstellt haben, führen Sie ihn aus, um die Reaktion der Bankanwendung auf die Auslastungssimulation zu überprüfen. Während der Ausführung eines Auslastungstests wird das Fenster **Auslastungstest-Analyzer** angezeigt.
 
 ### <a name="to-run-the-load-test"></a>So führen Sie den Auslastungstest aus
@@ -145,8 +145,8 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing the Test Mix to Specify Which Tests to Include in a Load Test Scenario (Bearbeiten der Testmischung zum Angeben der Tests, die ein Auslastungstestszenario beinhalten sollen)](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Specifying Virtual Network Types (Angeben von virtuellen Netzwerktypen)](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

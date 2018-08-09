@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844428"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379565"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 
@@ -59,7 +59,7 @@ Im Allgemeinen sollten Sie ausführbare Dateien nicht signieren. Eine Komponente
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Signieren einer Assembly in Visual Studio
 
-Verwenden Sie zum Signieren einer Anwendung oder Komponente die Registerkarte **Signierung** des Projekteigenschaftenfensters (klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Eigenschaften** aus, oder geben Sie **Projekteigenschaften** im Fenster **Schnellstart ein**, oder drücken Sie **ALT**+**EINGABETASTE** innerhalb des Fensters **Projektmappen-Explorer**). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
+Verwenden Sie zum Signieren einer Anwendung oder Komponente die Registerkarte **Signierung** des Projekteigenschaftenfensters (klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und anschließend mit der Linken auf **Eigenschaften**, geben Sie **Projekteigenschaften** im Fenster **Schnellstart ein**, oder drücken Sie **ALT**+**EINGABETASTE** im Fenster **Projektmappen-Explorer**). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
 
 Geben Sie eine Schlüsseldatei an. Wenn Sie eine neue Schlüsseldatei erstellen, werden neue Schlüsseldateien immer im *PFX-Format* erstellt. Sie benötigen einen Namen und ein Kennwort für die neue Datei.
 

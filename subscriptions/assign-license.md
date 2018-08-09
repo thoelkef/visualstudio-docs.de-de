@@ -9,18 +9,18 @@ description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178399"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251704"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Zuweisen von Lizenzen im Administratorportal für Visual Studio-Abonnements
 
 Als Administrator für Visual Studio-Abonnements können Sie das Administratorportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
 
-Bei Benutzergruppen können Sie die Abonnements einzeln zuweisen oder über die Funktion **Massenhinzufügen** Listen von Abonnenten mit deren Abonnementinformationen schnell und einfach hochladen. 
+Bei Benutzergruppen können Sie die Abonnements einzeln zuweisen oder über das Feature **Massenhinzufügen** Listen von Abonnenten schnell und einfach mit deren Abonnementinformationen hochladen.
 
 ## <a name="individual-assignments"></a>Einzelne Zuweisungen
 
@@ -32,7 +32,7 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 
    ![Einzelnen Abonnenten hinzufügen](media\add-single-subscriber.png)
 
-3. Geben Sie die Informationen in die Formularfelder für den neuen Abonnenten ein. Wenn Ihre Organisation Azure Active Directory verwendet, dient dieses Feld als Suchfunktion, über die Sie Personen in Ihrem aktuellen Verzeichnis finden. So können Sie den richtigen Benutzer aus den Suchergebnissen auswählen. Nachdem Sie diese Person ausgewählt haben, werden deren Name sowie die E-Mail-Adressen für die Anmeldung und die Benachrichtigung automatisch wie unten dargestellt aufgefüllt. 
+3. Geben Sie die Informationen in die Formularfelder für den neuen Abonnenten ein. Wenn Ihre Organisation Azure Active Directory verwendet, dient dieses Feld als Suchfunktion, über die Sie Personen in Ihrem aktuellen Verzeichnis finden. So können Sie den richtigen Benutzer aus den Suchergebnissen auswählen. Nachdem Sie diese Person ausgewählt haben, werden deren Name sowie die E-Mail-Adressen für die Anmeldung und die Benachrichtigung automatisch wie unten dargestellt aufgefüllt.
 
    ![Neue E-Mail-Adresse für Benachrichtigungen hinzufügen](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 
   ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media\download-template-upload-subscribers.png)
 
-  >![HINWEIS] Laden Sie immer die aktuelle Version dieser Vorlage herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
+   > ![HINWEIS] Laden Sie immer die aktuelle Version dieser Vorlage herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
 
 1. Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. (Das Ausfüllen des Felds *Verweis* ist optional.) Speichern Sie die Datei anschließend lokal.
 

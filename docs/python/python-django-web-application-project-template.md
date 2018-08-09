@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
-ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
+ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847751"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251139"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
-[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält mehrere Projektvorlagen zum Einrichten der Struktur einer Django-basierten Webanwendung. Um eine Vorlage in Visual Studio zu verwenden, wählen Sie **Datei** > **Neu** > **Projekt** aus, suchen Sie nach „Django“, und wählen Sie zwischen den Vorlagen „Leeres Django-Webprojekt“, „Django-Webprojekt“ und „Fragt ein Django-Webprojekt ab“. Eine exemplarische Vorgehensweise für alle Vorlagen finden Sie im [Django-Tutorial](learn-django-in-visual-studio-step-01-project-and-solution.md).
+[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält mehrere Projektvorlagen zum Einrichten der Struktur einer Django-basierten Webanwendung. Sie können in Visual Studio Vorlagen verwenden, indem Sie auf **Datei** > **Neu** > **Projekt** klicken, nach „Django“ suchen und eine der Vorlagen **Leeres Django-Webprojekt**, **Django-Webprojekt** und **Fragt ein Django-Webprojekt ab** auswählen. Eine exemplarische Vorgehensweise für alle Vorlagen finden Sie im [Django-Tutorial](learn-django-in-visual-studio-step-01-project-and-solution.md).
 
 Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
@@ -42,13 +42,13 @@ Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging-pyt
 
 ![Haltepunkte](media/template-django-debugging.png)
 
-Es ist typisch für Django-Projekte, über ihre `manage.py`-Datei verwaltet zu werden. Visual Studio folgt dieser Annahme. Wenn Sie diese Datei nicht mehr als Einstiegspunkt verwenden, zerstören Sie die Projektdatei. In diesem Fall müssen Sie [das Projekt aus vorhandenen Dateien neu erstellen](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files), ohne es als ein Django-Projekt zu kennzeichnen.
+Django-Projekte werden in der Regel über ihre *manage.py*-Datei verwaltet. Visual Studio folgt dieser Annahme. Wenn Sie diese Datei nicht mehr als Einstiegspunkt verwenden, zerstören Sie die Projektdatei. In diesem Fall müssen Sie [das Projekt aus vorhandenen Dateien neu erstellen](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files), ohne es als ein Django-Projekt zu kennzeichnen.
 
 ## <a name="django-management-console"></a>Django-Verwaltungskonsole
 
-Die Django-Verwaltungskonsole bietet Zugriff über verschiedene Befehle im Menü **Projekt** oder durch Rechtsklick auf das Projekt im Projektmappen-Explorer.
+Sie können über verschiedene Befehle im Menü **Projekt** oder durch Rechtsklick auf das Projekt im **Projektmappen-Explorer** auf die Django-Verwaltungskonsole zugreifen.
 
-- **Django-Shell öffnen**: Öffnet eine Shell im Kontext Ihrer Anwendung, damit Sie Ihre Modelle bearbeiten können.
+- **Django-Shell öffnen**: Öffnet eine Shell im Kontext Ihrer Anwendung, damit Sie Ihre Modelle bearbeiten können:
 
     ![Konsole](media/template-django-console-shell.png)
 
@@ -56,11 +56,11 @@ Die Django-Verwaltungskonsole bietet Zugriff über verschiedene Befehle im Menü
 
     ![Konsole](media/template-django-console-sync-db.png)
 
-- **Statische erfassen**: Führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer `settings.py` zu kopieren. Bei der [Veröffentlichung in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
+- **Statische Dateien erfassen**: führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer *settings.py*-Datei zu kopieren. Bei der [Veröffentlichung in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
 
     ![Konsole](media/template-django-console-collect-static.png)
 
-- **Überprüfen**: Führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer `settings.py` angegeben wurden:
+- **Überprüfen**: führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer *settings.py*-Datei angegeben wurden:
 
     ![Konsole](media/template-django-console-validate.png)
 

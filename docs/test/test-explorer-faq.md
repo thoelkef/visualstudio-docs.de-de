@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303282"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382408"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -29,7 +29,7 @@ ms.locfileid: "36303282"
 
 ### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. Der Test-Explorer erkennt meine dynamisch definierten Tests nicht. (Z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder „#ifdefs“) Wie kann ich diese Tests ermitteln?
 
-  Erstellen Sie das Projekt, und vergewissern Sie sich, dass in **Extras > Optionen > Test** die assemblybasierte Ermittlung aktiviert ist.
+  Erstellen Sie das Projekt, und vergewissern Sie sich, dass unter **Extras** > **Optionen** > **Test** die assemblybasierte Ermittlung aktiviert ist.
 
   Bei der [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt ermittelt werden. In den 15.6-Vorschauen wird die assemblybasierte Ermittlung (die herkömmliche Ermittlung) nur nach Builds ausgeführt. Diese Einstellung bedeutet, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich ermittelt, und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
 
@@ -41,7 +41,7 @@ ms.locfileid: "36303282"
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. Assemblybasierte Ermittlung funktioniert bei meinem Projekt nicht mehr. Wie kann ich sie wieder aktivieren?
 
-  Wechseln Sie zu **Extras > Optionen > Test**, und aktivieren Sie das Kontrollkästchen **Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln**.
+  Wechseln Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das Kontrollkästchen **Additionally discover tests from built assemblies after builds** (Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln).
 
   ![Assemblybasierte Option](media/testex-toolsoptions.png)
 
@@ -51,11 +51,11 @@ ms.locfileid: "36303282"
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. Welche Sprachen und Testframeworks kann die Testermittlung in Echtzeit verwenden?
 
-  [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) funktioniert nur für die verwalteten Sprachen (C# und Visual Basic), da sie mit dem Roslyn-Compiler erstellt wird. Derzeit funktioniert Testermittlung in Echtzeit nur für xUnit-, NUnit- und MSTest-Framework.
+  Die [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) funktioniert nur für die verwalteten Sprachen (C# und Visual Basic), da sie mit dem Roslyn-Compiler erstellt wird. Derzeit funktioniert Testermittlung in Echtzeit nur für xUnit-, NUnit- und MSTest-Framework.
 
 ### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. Wie kann ich die Protokollierung für den Test-Explorer aktivieren?
 
-  Navigieren Sie zu **Extras > Optionen > Test**, und suchen Sie dort nach dem Protokollbereich.
+  Navigieren Sie zu **Extras** > **Optionen** > **Test**, und suchen Sie dort nach dem Protokollbereich.
 
 ### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. Warum werden meine Tests in UWP-Projekten erst ermittelt, wenn ich meine App bereitstelle?
 
@@ -97,6 +97,6 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
-- [Creating and Running Unit Tests for Existing Code (Erstellen und Ausführen von Komponententests für vorhandenen Code)](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
-- [Komponententest für Code](unit-test-your-code.md)
-- [Live-Komponententests – Häufig gestellte Fragen](live-unit-testing-faq.md)
+- [Create and run unit tests for existing code (Erstellen und Ausführen von Komponententests für verwalteten Code)](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Ausführen von Komponententests für Code](unit-test-your-code.md)
+- [Live unit testing FAQ (Live Unit Testing – häufig gestellte Fragen)](live-unit-testing-faq.md)

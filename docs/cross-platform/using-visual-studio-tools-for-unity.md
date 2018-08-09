@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155580"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251717"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio-Tools für Unity
 
 In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsfunktionen von Visual Studio-Tools für Unity und den Visual Studio-Debugger für die Unity-Entwicklung einsetzen.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Öffnen von Unity-Skripts in Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Öffnen von Unity-Skripts in Visual Studio
 
 Nachdem Sie Visual Studio als [externen Skript-Editor für Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio) festgelegt haben, wird durch das Öffnen eines Skripts über den Unity-Editor Visual Studio automatisch gestartet oder dahin gewechselt, während das ausgewählte Skript geöffnet ist. Doppelklicken Sie einfach auf ein Skript im Unity-Projekt.
 
@@ -33,7 +33,7 @@ Alternativ können Sie Visual Studio öffnen, während kein Skript im Quellcode-
 
  Sie können in Visual Studio schnell auf die Dokumentation zur Erstellung von Unity-Skripts zugreifen. Wenn Visual Studio-Tools für Unity die API-Dokumentation lokal nicht finden kann, wird versucht, sie online zu finden.
 
-- Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG+ALT+M, STRG+H**.
+- Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG**+**ALT**+**M** > **STRG**+**H**.
 
 ## <a name="intellisense-for-unity-api-messages"></a>API-Nachrichten von IntelliSense für Unity
 
@@ -71,7 +71,7 @@ Sie können den MonoBehavior-Assistenten verwenden, um eine Liste aller Unity-AP
 
 So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendefinitionen:
 
-1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG+UMSCHALT+M**, um den MonoBehavior-Assistenten zu starten.
+1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG**+**UMSCHALT**+**M**, um den MonoBehavior-Assistenten zu starten.
 
 1. Aktivieren Sie im Fenster **Create script methods** (Skriptmethoden erstellen) die Kontrollkästchen neben den Namen der einzelnen Methoden, die Sie hinzufügen möchten.
 
@@ -91,7 +91,7 @@ So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendef
 
  Der Unity-Projekt-Explorer zeigt alle Ihre Unity-Projektdateien und -Verzeichnisse in der gleichen Weise wie der Unity-Editor an. Dies unterscheidet sich vom Navigieren durch Ihre Unity-Skripts mit dem normalen Visual Studio-Projektmappen-Explorer, der sie in Projekten und einer von Visual Studio generierten Projektmappe organisiert.
 
-- Wählen Sie in Visual Studio im Hauptmenü **Ansicht > Unity-Projektexplorer** aus. Tastenkombination: **ALT+UMSCHALT+E**
+- Wählen Sie in Visual Studio im Hauptmenü **Ansicht > Unity-Projektexplorer** aus. Tastenkombination: **ALT**+**UMSCHALT**+**E**
 
      ![Das Fenster für den Unity-Projektexplorer anzeigen](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
 
@@ -107,7 +107,7 @@ So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendef
 
  Mit Visual Studio-Tools für Unity können Sie Editor- und Spielskripts für Ihr Unity-Projekt mit dem leistungsfähigen Debugger von Visual Studio debuggen.
 
-### <a name="debugging-in-the-unity-editor"></a>Debuggen im Unity-Editor
+### <a name="debug-in-the-unity-editor"></a>Debuggen im Unity-Editor
 
 #### <a name="start-debugging"></a>Debugging starten
 
@@ -141,9 +141,9 @@ Der Einfachheit halber können Sie die Schaltfläche **An Unity anfügen** in de
 
 Die Wiedergabeschaltfläche erhält die Bezeichnung **An Unity anfügen und wiedergeben**. Wenn Sie auf diese Schaltfläche klicken oder die Taste **F5** verwenden, erfolgt zusätzlich zum Anfügen des Visual Studio-Debuggers automatisch der Wechsel zum Unity-Editor und wird das Spiel im Editor ausgeführt.
 
-Wenn Sie in Visual Studio auf die Schaltfläche **Beenden** klicken oder die Tastenkombination **UMSCHALT + F5** verwenden, wird das Spiel im Unity-Editor automatisch beendet.
+Wenn Sie in Visual Studio auf die Schaltfläche **Beenden** klicken oder die Tasten **UMSCHALT**+**F5** drücken, wird das Spiel im Unity-Editor automatisch beendet.
 
-### <a name="debugging-unity-player-builds"></a>Debuggen von Unity-Playerbuilds
+### <a name="debug-unity-player-builds"></a>Debuggen von Unity-Playerbuilds
 
 Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debuggen.
 
@@ -177,7 +177,7 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 > [!IMPORTANT]
 > Da Visual Studio-Tools für Unity und die Unity-Instanz über einen UDP-Netzwerksocket kommunizieren, werden Sie ggf. von Ihrer Firewall dazu befragt. In diesem Fall müssen Sie die Verbindung autorisieren, damit VSTU und Unity kommunizieren können.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Debuggen einer DLL im Unity-Projekt
+### <a name="debug-a-dll-in-your-unity-project"></a>Debuggen einer DLL im Unity-Projekt
 
  Viele Unity-Entwickler schreiben Codekomponenten als externe DLLs, damit die Funktionalität, die sie entwickeln, einfach mit anderen Projekten gemeinsam genutzt werden kann. Durch Visual Studio-Tools für Unity wird das reibungslose Debuggen von Code in diese DLLs mit anderem Code in Ihrem Unity-Projekt erleichtert.
 
@@ -214,9 +214,9 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 
 |Befehl|Verknüpfung|Name des Kontextmenübefehls|
 |-------------|--------------|---------------------------|
-|Den MonoBehavior-Assistenten öffnen|**STRG+UMSCHALT+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Den Unity-Projekt-Explorer öffnen|**ALT+UMSCHALT+E**|**View.UnityProjectExplorer**|
-|Auf Unity-Dokumentation zugreifen|**STRG+ALT+M, STRG+H**|**Help.UnityAPIReference**|
+|Den MonoBehavior-Assistenten öffnen|**STRG**+**UMSCHALT**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Den Unity-Projekt-Explorer öffnen|**ALT**+**UMSCHALT**+**E**|**View.UnityProjectExplorer**|
+|Auf Unity-Dokumentation zugreifen|**STRG**+**ALT**+**M > STRG**+**H**|**Help.UnityAPIReference**|
 |An Unity-Debugger (Player oder Editor) anfügen|***Kein Standard***|**Debug.AttachUnityDebugger**|
 
  Sie können die Tastenkombinationen ändern, wenn Ihnen die Standardeinstellung nicht gefällt. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

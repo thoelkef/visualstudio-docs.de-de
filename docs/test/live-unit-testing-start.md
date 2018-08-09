@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117796"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382525"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -77,7 +77,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
       - `HasEmbeddedSpaces` gibt `true` zurück, wenn eine Zeichenfolge mit einem Leerzeichen beginnt; andernfalls wird `false` zurückgegeben.
 
-1.  Wählen Sie aus dem Hauptebenenmenü von Visual Studio die Option **Erstellen**, **Projektmappe erstellen** aus. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+1.  Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
@@ -109,7 +109,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
    ![Das Dialogfeld „Projekteigenschaften für ein Visual Basic-Projekt“](./media/lut-start/vb-properties.png)
 
-1.  Wählen Sie aus dem Hauptebenenmenü von Visual Studio die Option **Erstellen**, **Projektmappe erstellen** aus. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+1.  Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 ---
 
@@ -134,7 +134,7 @@ Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibra
    > [!NOTE]
    > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
 
-1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu mit der rechten Maustaste auf das Projekt `StringLibraryTests`, und wählen Sie **Hinzufügen** > **Referenz** aus. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
+1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
 
    ![Das Dialogfeld **Verweis-Manager**](./media/lut-start/add-reference.png)
 
@@ -172,7 +172,7 @@ Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibra
    > [!NOTE]
    > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
 
-1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu mit der rechten Maustaste auf das Projekt `StringLibraryTests`, und wählen Sie **Hinzufügen** > **Referenz** aus. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
+1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
 
    ![Das Dialogfeld **Verweis-Manager**](./media/lut-start/add-reference.png)
 
@@ -200,9 +200,9 @@ Sie haben eine Klassenbibliothek und einige Komponententests dafür erstellt. Si
 
 Bisher haben Sie die Tests für die `StringLibrary`-Klassenbibliothek zwar geschrieben, jedoch nicht ausgeführt. Live Unit Testing macht dies automatisch, nachdem es aktiviert wurde. Führen Sie hierzu die folgenden Schritte aus:
 
-1. Wählen Sie das Codefenster mit dem Code für `StringLibrary` aus (optional). Dies ist entweder „class1.cs“ für ein C#-Projekt oder „class1.vb“ für ein Visual Basic-Projekt. (In diesem Schritt können Sie nach der Aktivierung von Live Unit Testing das Ergebnis Ihrer Tests und die Reichweite Ihrer Code Coverage prüfen.)
+1. Wählen Sie das Codefenster mit dem Code für `StringLibrary` aus (optional). Dies ist entweder *class1.cs* für ein C#-Projekt oder *class1.vb* für ein Visual Basic-Projekt. (In diesem Schritt können Sie nach der Aktivierung von Live Unit Testing das Ergebnis Ihrer Tests und die Reichweite Ihrer Code Coverage prüfen.)
 
-1. Wählen Sie im Hauptebenenmenü von Visual Studio **Test** > **Live Unit Testing** > **Starten** aus.
+1. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Test** > **Live Unit Testing** > **Starten**.
 
 1. Visual Studio startet Live Unit Testing, das automatisch alle Ihre Tests ausführt.
 
@@ -286,7 +286,7 @@ In einigen Fällen sind erfolgreich ausgeführte Tests im **Test-Explorer** grau
 
 Bisher wurden alle Tests erfolgreich abgeschlossen. Im nächsten Abschnitt untersuchen wir, wie Sie Testfehler behandeln können.
 
-## <a name="handling-a-test-failure"></a>Behandeln eines Testfehlers
+## <a name="handle-a-test-failure"></a>Behandeln eines Testfehlers
 
 In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehler ermitteln, behandeln und beheben können. Hierzu müssen Sie die Testabdeckung um die Methode `HasEmbeddedSpaces` erweitern.
 
@@ -319,7 +319,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
 
    Beachten Sie im Fenster **Auto**, dass der Wert der Variable `phrase` „Name\tDescription“ lautet und damit dem zweiten Element des Arrays entspricht. Von der Testmethode wird erwartet, dass die Methode `HasEmbeddedSpaces` bei der Übergabe dieser Zeichenfolge den Wert `true` zurückgibt; stattdessen wird der Wert `false` zurückgegeben. Offenbar erkennt die Methode das Tabstoppzeichen „\t“ nicht als eingebettetes Leerzeichen.
 
-1. Wählen Sie **Debuggen** > **Fortfahren** aus, drücken Sie F5, oder klicken Sie in der Symbolleiste auf die Schaltfläche **Fortfahren**, um mit der Ausführung des Testprogramms fortzufahren. Der Test wird aufgrund eines Ausnahmefehlers beendet.
+1. Klicken Sie auf **Debuggen** > **Fortfahren**, drücken Sie **F5**, oder klicken Sie in der Symbolleiste auf die Schaltfläche **Fortfahren**, um mit der Ausführung des Testprogramms fortzufahren. Der Test wird aufgrund eines Ausnahmefehlers beendet.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 1. Fügen Sie die folgende Methode zu Ihrer Testdatei hinzu:
@@ -352,7 +352,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
 
    Beachten Sie im Fenster **Auto**, dass der Wert der Variable `phrase` „Name“ + vbTab + „Description“ lautet und damit dem zweiten Element des Arrays entspricht. Von der Testmethode wird erwartet, dass die Methode `HasEmbeddedSpaces` bei der Übergabe dieser Zeichenfolge den Wert `true` zurückgibt; stattdessen wird der Wert `false` zurückgegeben. Offenbar erkennt die Methode das Tabstoppzeichen nicht als eingebettetes Leerzeichen.
 
-1. Wählen Sie **Debuggen** > **Fortfahren** aus, drücken Sie F5, oder klicken Sie in der Symbolleiste auf die Schaltfläche **Fortfahren**, um mit der Ausführung des Testprogramms fortzufahren. Der Test wird aufgrund eines Ausnahmefehlers beendet.
+1. Klicken Sie auf **Debuggen** > **Fortfahren**, drücken Sie **F5**, oder klicken Sie in der Symbolleiste auf die Schaltfläche **Fortfahren**, um mit der Ausführung des Testprogramms fortzufahren. Der Test wird aufgrund eines Ausnahmefehlers beendet.
 
 ---
 

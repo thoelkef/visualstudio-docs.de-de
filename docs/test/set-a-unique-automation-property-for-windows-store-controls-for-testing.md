@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692355"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382737"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests
 
@@ -48,13 +48,13 @@ Legen Sie **AutomationProperties.AutomationId** explizit in der XAML für das St
 
 Legen Sie **AutomationProperties.Name** explizit in der XAML für das Steuerelement auf **ButtonY** fest.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>Zuweisen eindeutiger Namen
 
-In Blend für Visual Studio können Sie eine Option auswählen, um interaktiven Elementen (z.B. Schaltflächen, Listenfeldern, Kombinationsfeldern und Textfeldern) eindeutige Namen zuzuweisen. Damit erhalten die Steuerelemente eindeutige Werte für **AutomationProperties.Name**.
+In Blend für Visual Studio können Sie eine Option auswählen, um interaktiven Elementen wie Schaltflächen, Listenfeldern, Kombinationsfeldern und Textfeldern eindeutige Namen zuzuweisen. Dadurch erhalten die Steuerelemente eindeutige Werte für **AutomationProperties.Name**.
 
 Klicken Sie auf **Extras** > **Interaktive Elemente benennen**, um vorhandenen Steuerelementen eindeutige Namen zuzuweisen.
 
@@ -140,7 +140,7 @@ Sie können eine Steuerelementvorlage verwenden, damit jede Instanz eines bestim
 </Style>
 ```
 
-Wenn Sie zwei Instanzen einer Schaltfläche mithilfe dieser Steuerelementvorlage definieren, wird die Automatisierungs-ID auf die eindeutige Inhaltszeichenfolge für die Steuerelemente in der Vorlage festgelegt, wie im folgenden XAML-Code gezeigt wird:
+Wenn Sie zwei Instanzen einer Schaltfläche mithilfe dieser Steuerelementvorlage definieren, wird die Automatisierungs-ID auf die eindeutige Inhaltszeichenfolge für die Steuerelemente in der Vorlage festgelegt. Dies sehen Sie im folgenden XAML-Code:
 
 ```xaml
 <Button Content="Button1" Style="{StaticResource MyButton}" Width="140"/>
@@ -165,4 +165,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Test UWP apps with Coded UI tests (Testen von UWP-Apps mit Tests der programmierten UI)](../test/test-uwp-app-with-coded-ui-test.md)
+- [Testen von UWP-Apps mit Tests der programmierten UI](../test/test-uwp-app-with-coded-ui-test.md)

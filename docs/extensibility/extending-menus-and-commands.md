@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Menüs und Befehle | Microsoft Docs
+title: Erweitern von Menüs und Befehlen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,51 +15,49 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 830748be6f2cedf57b94a9824bc0912820067718
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6f5cd78709c9a4843588188494b4a70f7268742
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128031"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639749"
 ---
-# <a name="extending-menus-and-commands"></a>Erweitern von Menüs und Befehle
-Befehle sind die Möglichkeit, die Sie Aktionen und Prozesse zu Visual Studio hinzufügen. In den meisten Fällen werden die Befehle in Menüs oder Symbolleisten angezeigt. Die VSPackage-Projektvorlage veranschaulicht, wie einen sehr grundlegenden Befehl zu implementieren. Eine Implementierung, aber etwas länger, weiterhin grundlegende finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+# <a name="extend-menus-and-commands"></a>Erweitern von Menüs und Befehlen
+Befehle sind die Möglichkeit, die Sie Aktionen und Prozesse zu Visual Studio hinzufügen. In den meisten Fällen werden die Befehle in Menüs oder Symbolleisten angezeigt. VSPackage-Projektvorlage veranschaulicht einen einfachen Befehl zu implementieren. Eine Implementierung etwas länger, aber immer noch grundlegenden finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
  Weitere Informationen zu Visual Studio-Befehle, Menüs und Symbolleisten finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Befehle, Menüs und Symbolleisten sind in der VSCT-Datei definiert, die Teil der VSPackage-Projekte ist. Sie können erfahren Sie mehr über Visual Studio-IDE und der VSCT-Datei in [wie VSPackages hinzufügen Benutzeroberflächenelemente](../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Befehle, Menüs und Symbolleisten werden definiert, der *VSCT* Datei, die Teil des VSPackage-Projekten. Sie erhalten Informationen über die Visual Studio-IDE und die *VSCT* Datei [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
  In den folgenden Themen wird erläutert, wie verschiedene Arten von Befehle, Menüs und Symbolleisten hinzufügen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)  
- Erläutert, wie ein Menü der obersten Visual Studio-Menüleiste hinzugefügt.  
+ [Hinzufügen eines Menüs zur Menüleiste Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)  
+ Es wird erläutert, wie ein Menü der obersten Visual Studio-Menüleiste hinzuzufügen.  
   
  [Binden von Tastenkombinationen an Menüelemente](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
- Erläutert, wie ein Menüelement mit einer Tastenkombination (z. B. STRG + 3) hinzu.  
+ Erläutert, wie eine Tastenkombination (z. B. STRG + 3) ein Menüelement hinzu.  
   
  [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)  
  Erläutert, wie im oberen Menü ein Untermenü hinzugefügt.  
   
- [Hinzufügen einer Liste „Zuletzt verwendet“ zu einem Untermenü](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md)  
- Erläutert, wie eine Liste zuletzt verwendeter hinzufügen.  
+ [Fügen Sie, dass eine zuletzt verwendete Liste aus, um ein Untermenü](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md)  
+ Es wird erläutert, wie eine zuletzt verwendet-Liste hinzufügen.  
   
  [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md)  
- Beschreibt, wie der Befehl-Elemente zu gruppieren, damit sie in mehreren Menüs aufgenommen werden können.  
+ Beschreibt das Befehl-Elemente zu gruppieren, sodass sie in mehreren Menüs aufgenommen werden können.  
   
  [Hinzufügen von Symbolen zu Menübefehlen](../extensibility/adding-icons-to-menu-commands.md)  
- Beschreibt, wie ein Befehl für eine Symbolleiste und ein Menü ein Symbol hinzu.  
+ Beschreibt, wie Sie einen Befehl auf eine Symbolleiste und ein Menü ein Symbol hinzu.  
   
- [Ändern des Texts eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md)  
+ [Ändern Sie den Text eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md)  
  Beschreibt die Verwendung von der `TextChanges` Kennzeichnung zum Aktivieren eines Menüelements dynamisch geändert werden.  
   
  [Ändern der Darstellung eines Befehls](../extensibility/changing-the-appearance-of-a-command.md)  
  Beschreibt, wie dynamisch aktivieren oder deaktivieren einen Befehl.  
   
- [Aktualisieren der Benutzeroberfläche](../extensibility/updating-the-user-interface.md)  
+ [Aktualisieren Sie die Benutzeroberfläche](../extensibility/updating-the-user-interface.md)  
  Beschreibt, wie eine Aktualisierung der Benutzeroberfläche entsprechend der zuletzt vorgenommenen Änderungen zu erzwingen.  
   
  [Lokalisieren von Menübefehlen](../extensibility/localizing-menu-commands.md)  
  Erläutert, wie zum Lokalisieren von Menübefehlen.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte

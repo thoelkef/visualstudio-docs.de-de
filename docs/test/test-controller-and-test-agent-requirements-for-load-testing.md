@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178490"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380804"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testcontroller- und Test Agent-Anforderungen für Auslastungstests
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testcontroller- und Test-Agent-Anforderungen für Auslastungstests
 
 Mehrere Testtypen, unter anderem Komponententests, Webleistungstests, Auslastungstests und manuelle Tests, sind in Visual Studio integriert. Mithilfe eines Testcontrollers und mindestens einem Agent ermöglicht Visual Studio Benutzern von Visual Studio Application Lifecycle Management das Ausführen von Tests auf Remotecomputern. Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
@@ -39,7 +39,7 @@ Die folgende Tabelle enthält die empfohlenen Hardwareanforderungen zum Bereitst
 |N x 30 Computer in der Testumgebung. Dies schließt zu testende Agents und Server ein.|Testcontroller|N 2,6 GHz-Prozessoren|||
 
 > [!NOTE]
-> Die Anzahl virtueller Benutzer kann von Test zu Test sehr unterschiedlich sein. Eine Hauptursache für diese Unterschiede besteht in der Abweichung der *Reaktionszeiten* oder Benutzerverzögerungen. Weitere Informationen finden Sie unter [Editing Think Times to Simulate Website Human Interaction Delays (Bearbeiten von Reaktionszeiten zum Simulieren von Website-Interaktionsverzögerungen des Benutzers)](../test/edit-think-times-in-load-test-scenarios.md). In einem Auslastungstest sind Webtests im Allgemeinen effizienter und generieren mehr Auslastung als Komponententests. Die Zahlen in der vorangehenden Tabelle gelten für die Ausführung von Webtests mit einer Reaktionszeit von 3 bis 5 Sekunden in einer typischen Webanwendung.
+> Die Anzahl virtueller Benutzer kann von Test zu Test sehr unterschiedlich sein. Eine Hauptursache für diese Unterschiede besteht in der Abweichung der *Reaktionszeiten* oder Benutzerverzögerungen. Weitere Informationen finden Sie unter [Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites](../test/edit-think-times-in-load-test-scenarios.md). In einem Auslastungstest sind Webtests im Allgemeinen effizienter und generieren mehr Auslastung als Komponententests. Die Zahlen in der vorangehenden Tabelle gelten für die Ausführung von Webtests mit einer Reaktionszeit von 3 bis 5 Sekunden in einer typischen Webanwendung.
 
 Die hier aufgeführten Richtlinien stellen Richtwerte für die Hardwareplanung dar. Die Testleistung kann je nach Menge der Testdaten und Anzahl der Test-Agents sehr unterschiedlich sein. Die Testauslastung eines Test-Agents ist durch die CPU-Geschwindigkeit und den verfügbaren Arbeitsspeicher eingeschränkt. Testcontroller benötigen je nach Anzahl der Test-Agents und der in den Test einbezogenen Datenmenge größere Ressourcen.
 
@@ -57,7 +57,7 @@ Zur Vermeidung von Verwechslungen und zur Vereinfachung des Betriebs sollten ein
 
 ## <a name="monitor-agent-resources"></a>Überwachen von Agent-Ressourcen
 
-Sie können Agent-Computer überwachen, um ihre Ressourcenanforderungen zu bestimmen, indem Sie die **QTAgent\*.exe**-Prozesse überwachen, die in Tests ausgeführt und skaliert werden. Der häufigste Engpass von "QTAgent*.exe"-Prozessen liegt in der CPU-Auslastung. Wenn sich die CPU-Auslastung konsistent im hohen neunziger Bereich befindet, ist dies ein Anzeichen dafür, dass der Agent stark beansprucht wird. Der nächste Engpass betriff die Arbeitsspeicherauslastung. Bei anspruchsvollen Tests kann die Überwachung dieser Ressourcen dabei helfen zu bestimmen, ob Sie die Ressourcen der Computer erhöhen oder Ihre Tests anders verteilen sollten.
+Sie können Agent-Computer überwachen, um ihre Ressourcenanforderungen zu bestimmen, indem Sie die *QTAgent\*.exe*-Prozesse überwachen, die in Tests ausgeführt und skaliert werden. Der häufigste Engpass von *QTAgent\*.exe*-Prozessen liegt in der CPU-Auslastung. Wenn sich die CPU-Auslastung konsistent im hohen neunziger Bereich befindet, ist dies ein Anzeichen dafür, dass der Agent stark beansprucht wird. Der nächste Engpass betriff die Arbeitsspeicherauslastung. Bei anspruchsvollen Tests kann die Überwachung dieser Ressourcen dabei helfen zu bestimmen, ob Sie die Ressourcen der Computer erhöhen oder Ihre Tests anders verteilen sollten.
 
 ## <a name="see-also"></a>Siehe auch
 

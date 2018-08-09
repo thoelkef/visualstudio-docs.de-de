@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924368"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251191"
 ---
 # <a name="setup-and-install"></a>Setup und Installation
 
@@ -38,7 +38,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung der Xam
 
 ###  <a name="for-targeting-windows-and-android"></a>Für Windows und Android
 
-Einzelheiten zu den Installationsanforderungen für Visual Studio 2017 finden Sie unter [Systemanforderungen der Visual Studio-Produktfamilie 2017](/visualstudio/productinfo/vs2017-system-requirements-vs).
+Weitere Informationen zu den Installationsanforderungen für Visual Studio 2017 finden Sie unter [Systemanforderungen der Visual Studio-Produktfamilie 2017](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
 Installieren Sie Visual Studio 2017 auf einem physischen Windows-Computer (nicht auf einem virtuellen Computer), auf dem Windows 10 mit allen installierten Updates ausgeführt wird.
 
@@ -84,9 +84,9 @@ Während der Installation können Sie mit den Anweisungen zum Mac-Setup fortfahr
 
 1.  Erstellen Sie eine kostenlose Apple-ID unter [https://appleid.apple.com](https://appleid.apple.com/), wenn Sie noch keine besitzen. Diese Apple-ID ist für die Installation von und die Anmeldung bei Xcode erforderlich.
 
-2.  Laden Sie Xcode von [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) herunter, installieren Sie Xcode, und fügen Sie Ihre Apple-ID so hinzu, wie es unter [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Hinzufügen Ihres Kontos zu Xcode) (apple.com) beschrieben wird.
+2.  Laden Sie Xcode über [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) herunter, installieren Sie Xcode, und fügen Sie Ihre Apple-ID so hinzu, wie es unter [Adding Your Account to Xcode (Hinzufügen Ihres Kontos zu Xcode)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) beschrieben wird.
 
-3.  Laden Sie Visual Studio für Mac herunter, und installieren Sie es, indem Sie den Anweisungen unter [Einrichten und Installieren von Visual Studio für Mac](/visualstudio/mac/installation) folgen.
+3.  Laden Sie Visual Studio für Mac herunter, und führen Sie eine Installation durch, indem Sie den Anweisungen unter [Einrichten und Installieren von Visual Studio für Mac](/visualstudio/mac/installation) folgen.
 
 4.  Sobald Sie die Installation von Xamarin auf dem Windows- und dem Mac-Computer abgeschlossen haben, folgen Sie den Anweisungen unter [Herstellen einer Verbindung mit dem Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/), sodass Sie mit iOS und dem Mac in Visual Studio auf dem Windows-Computer arbeiten können.
 

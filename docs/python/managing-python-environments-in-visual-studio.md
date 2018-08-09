@@ -11,23 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232217"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341868"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
 Eine Python-*Umgebung* ist ein Kontext, in dem Sie Python-Code ausführen und der globale, virtuelle und Conda-Umgebungen umfasst. Eine Umgebung besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und mehreren installierten Paketen. Diese Komponenten bestimmen gemeinsam, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
 
-In Visual Studio unter Windows verwalten Sie, wie in diesem Artikel beschrieben, über das Fenster [Python-Umgebungen](#the-python-environments-window) diese Umgebungen und wählen eine als Standard für neue Projekte. Anstelle der Standardumgebung können Sie auch [eine spezifische Umgebung](selecting-a-python-environment-for-a-project.md) für beliebige Projekte auswählen.
+In Visual Studio unter Windows verwalten Sie über das Fenster [**Python-Umgebungen**](#the-python-environments-window) diese Umgebungen wie in diesem Artikel beschrieben und, wählen Sie eine als Standard für neue Projekte aus. Anstelle der Standardumgebung können Sie auch [eine spezifische Umgebung](selecting-a-python-environment-for-a-project.md) für beliebige Projekte auswählen.
 
-**Hinweis**: Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, finden Sie das erforderliche Hintergrundwissen in den folgenden Artikeln:
-
-- [Arbeiten mit Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
+>[!NOTE]
+>Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, finden Sie das erforderliche Hintergrundwissen in den folgenden Artikeln:
+>
+>- [Arbeiten mit Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
+>- [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
 
 Beachten Sie zudem, dass Sie keine Umgebungen für Python-Code verwalten können, der nur als Ordner über den Befehl **Datei** > **Öffnen** > **Ordner** geöffnet wurde. Stattdessen [erstellen Sie ein Python-Projekt aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md), um die Umgebungsfeatures von Visual Studio nutzen zu können.
 
@@ -37,22 +38,22 @@ Wenn Sie Pakete in einer Umgebung installieren möchten, verwenden Sie die [Refe
 
 ### <a name="global-environments"></a>Globale Umgebungen
 
-Jede Python-Installation (z.B. Python 2.7, Python 3.6, Anaconda 4.4.0, usw., siehe [Auswählen und Installieren von Python-Interpretern](installing-python-interpreters.md)) verwaltet ihre eigene globale Umgebung. Jede Umgebung besteht aus dem spezifischen Python-Interpreter, einer Standardbibliothek und einer Reihe von vorinstallierten Paketen. Das Installieren eines Pakets in einer globalen Umgebung macht das Paket für alle Projekte verfügbar, die dieselbe Umgebung verwenden. Wenn sich die Umgebung in einem geschützten Bereich des Dateisystems befindet (z.B. in `c:\program files`), sind für die Installation von Paketen Administratorrechte erforderlich.
+Jede Python-Installation (z.B. Python 2.7, Python 3.6, Anaconda 4.4.0, usw., wie in [Installieren von Python-Interpretern](installing-python-interpreters.md) beschrieben) verwaltet ihre eigene globale Umgebung. Jede Umgebung besteht aus dem spezifischen Python-Interpreter, einer Standardbibliothek und einer Reihe von vorinstallierten Paketen. Das Installieren eines Pakets in einer globalen Umgebung macht das Paket für alle Projekte verfügbar, die dieselbe Umgebung verwenden. Wenn sich die Umgebung in einem geschützten Bereich des Dateisystems befindet (z.B. in *C:\Programme*), sind für die Installation von Paketen Administratorrechte erforderlich.
 
-Globale Umgebungen sind für alle Projekte auf dem Computer verfügbar. Wählen Sie in Visual Studio eine globale Umgebung als Standardumgebung aus, die für alle Projekte genutzt wird, wenn Sie keine spezifische Umgebung für ein Projekt aussuchen. Weitere Informationen finden Sie unter [Auswählen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
+Globale Umgebungen sind für alle Projekte auf dem Computer verfügbar. Wählen Sie in Visual Studio eine globale Umgebung als Standardumgebung aus, die für alle Projekte genutzt wird, wenn Sie keine spezifische Umgebung für ein Projekt aussuchen. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="virtual-environments"></a>Virtuelle Umgebungen
 
 Da in einer globalen Umgebung installierte Pakete für alle Projekte verfügbar sind, die diese Umgebung verwenden, können Konflikte auftreten, wenn zwei Projekte inkompatible Pakete oder verschiedene Versionen des gleichen Pakets erfordern. Virtuelle Umgebungen umgehen diese Konflikte, indem sie den Interpreter und die Standardbibliothek einer globalen Umgebung verwenden, dabei aber ihre eigenen Pakete in isolierten Ordnern speichern und verwalten.
 
-Sie können in Visual Studio eine virtuelle Umgebung für ein spezifisches Projekt erstellen, die in einem Unterordner des Projekts gespeichert wird. Visual Studio enthält einen Befehl, um eine `requirements.txt`-Datei aus der virtuellen Umgebung zu generieren. Dies vereinfacht das erneute Erstellen der Umgebung auf anderen Computern. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Sie können in Visual Studio eine virtuelle Umgebung für ein spezifisches Projekt erstellen, die in einem Unterordner des Projekts gespeichert wird. Visual Studio enthält einen Befehl, um eine *requirements.txt*-Datei aus der virtuellen Umgebung zu generieren. Dies vereinfacht das erneute Erstellen der Umgebung auf anderen Computern. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Conda-Umgebungen
 
 Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017 ab Version 15.7 integrierten Conda-Verwaltung erstellte Umgebung. (Anaconda oder Miniconda erforderlich; Anaconda ist über das Visual Studio-Installationsprogramm verfügbar; siehe [Installation – Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
 
 > [!Note]
-> Um optimale Ergebnisse mit Conda-Umgebungen zu erzielen, verwenden Sie Conda 4.4.8 oder höher (Conda-Versionen unterscheiden sich von Anaconda-Versionen). Installieren von Anaconda 5.1 über das Installationsprogramm für Visual Studio-2017
+> Um optimale Ergebnisse mit Conda-Umgebungen zu erzielen, verwenden Sie Conda 4.4.8 oder höher (Conda-Versionen unterscheiden sich von Anaconda-Versionen). Installieren Sie Anaconda 5.1 über das Installationsprogramm für Visual Studio 2017.
 
 Führen Sie `conda info` an einer Anaconda-Eingabeaufforderung (d. h. einer Eingabeaufforderung mit „Anaconda“ im Pfad) aus, um die Conda-Version, den Speicherort der Conda-Umgebungen sowie weitere Informationen anzuzeigen:
 
@@ -79,21 +80,21 @@ Visual Studio 2017, Version 15.7 und höher, erkannt Conda-Umgebungen automatisc
 Die Umgebungen, die Visual Studio bekannt sind, werden im Fenster **Python-Umgebungen** angezeigt. Zum Öffnen dieses Fensters können Sie eine der folgenden Methoden verwenden:
 
 - Wählen Sie den Menübefehl **Ansicht** > **Weitere Fenster** > **Python-Umgebungen** aus.
-- Klicken Sie für ein Projekt im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten **Python-Umgebungen**, und wählen Sie **Alle Python-Umgebungen anzeigen** aus:
+- Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Python-Umgebungen** für ein Projekt, und wählen Sie **Alle Python-Umgebungen anzeigen** aus:
 
     ![Befehl „Alle Umgebungen anzeigen“ im Projektmappen-Explorer](media/environments-view-all.png)
 
-In jedem Fall wird das Fenster **Python-Umgebungen** als gleichgeordnete Registerkarte des Projektmappen-Explorers angezeigt:
+In jedem Fall wird das Fenster **Python-Umgebungen** als gleichgeordnete Registerkarte des **Projektmappen-Explorers** angezeigt:
 
 ![Fenster „Python-Umgebungen“](media/environments-default-view.png)
 
 Visual Studio folgt [PEP 514](https://www.python.org/dev/peps/pep-0514/) beim Identifizieren von installierten Umgebungen mithilfe der Registrierung. Wenn eine Umgebung wider Erwarten nicht in der Liste angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
 
-Wenn Sie eine Umgebung in der Liste auswählen, werden verschiedene Eigenschaften und Befehle der Umgebung auf der Registerkarte **Übersicht** angezeigt. Wie Sie beispielsweise im obigen Bild sehen können, ist der Speicherort des Interpreters `C:\Python36-32`. Verwenden Sie die Dropdownliste unter der Liste von Umgebungen, um zu verschiedenen Registerkarten wie **Pakete** oder **IntelliSense** zu wechseln. Diese Registerkarten werden in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben.
+Wenn Sie eine Umgebung in der Liste auswählen, werden verschiedene Eigenschaften und Befehle der Umgebung auf der Registerkarte **Übersicht** angezeigt. Wie Sie beispielsweise im obigen Bild sehen können, ist der Speicherort des Interpreters *C:\Python36-32*. Verwenden Sie die Dropdownliste unter der Liste von Umgebungen, um zu verschiedenen Registerkarten wie **Pakete** oder **IntelliSense** zu wechseln. Diese Registerkarten werden in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben.
 
-Das Auswählen einer Umgebung aktiviert sie nicht. Die Standardumgebung, die in der Liste in Fettschrift aufgeführt wird, ist die derzeit aktive Umgebung, die Visual Studio für alle neuen Projekte verwendet. Verwenden Sie den Befehl **Als Standardumgebung für neue Projekte festlegen**, um eine andere Umgebung zu aktivieren. Sie können innerhalb des Kontexts eines Projekts immer eine andere Umgebung aktivieren. Weitere Informationen finden Sie unter [Auswählen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
+Das Auswählen einer Umgebung aktiviert sie nicht. Die Standardumgebung, die in der Liste in Fettschrift aufgeführt wird, ist die derzeit aktive Umgebung, die Visual Studio für alle neuen Projekte verwendet. Verwenden Sie den Befehl **Als Standardumgebung für neue Projekte festlegen**, um eine andere Umgebung zu aktivieren. Sie können innerhalb des Kontexts eines Projekts immer eine andere Umgebung aktivieren. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
-Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das ein interaktives Fenster für die jeweilige Umgebung öffnet. (In Visual Studio 2017, Version 15.5 und früher, wird ein weiteres Steuerelement angezeigt, das die IntelliSense-Datenbank der jeweiligen Umgebung aktualisiert. Details zur Datenbank finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das ein **interaktives** Fenster für die jeweilige Umgebung öffnet. (In Visual Studio 2017, Version 15.5 und niedriger, wird ein weiteres Steuerelement angezeigt, das die IntelliSense-Datenbank der jeweiligen Umgebung aktualisiert. Details zur Datenbank finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
 
 > [!Tip]
 > Wenn Sie das Fenster **Python-Umgebungen** weit genug erweitern, werden die Umgebungen ausführlicher angezeigt, was Ihre Arbeit erleichtern kann.
@@ -109,36 +110,34 @@ Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das e
 
 ### <a name="what-if-no-environments-appear"></a>Was geschieht, wenn keine Umgebungen angezeigt werden?
 
-Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Visual Studio keine Python-Installationen an den standardmäßigen Speicherorten gefunden hat. Angenommen, Sie haben Visual Studio 2017 installiert, aber alle Interpreteroptionen in den Installeroptionen für den Python-Workload gelöscht. Ähnlich verhält es sich, wenn Sie während der Installation von Visual Studio 2015 oder früher keinen Interpreter manuell installiert haben (siehe [Installieren von Python-Interpretern](installing-python-interpreters.md)).
+Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Visual Studio keine Python-Installationen an den standardmäßigen Speicherorten gefunden hat. Angenommen, Sie haben Visual Studio 2017 installiert, aber alle Interpreteroptionen in den Installeroptionen für den Python-Workload gelöscht. Ähnlich verhält es sich, wenn Sie während der Installation von Visual Studio 2015 oder niedriger keinen Interpreter manuell installiert haben (siehe [Installieren von Python-Interpretern](installing-python-interpreters.md)).
 
-Wenn Sie wissen, dass ein Python-Interpreter auf Ihrem Computer vorhanden ist, Visual Studio (beliebige Version) diesen jedoch nicht erkennt, verwenden Sie den Befehl **+ Benutzerdefiniert...** , um dessen Speicherort manuell anzugeben. Lesen Sie hierzu den nächsten Abschnitt [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
+Wenn Sie wissen, dass ein Python-Interpreter auf Ihrem Computer vorhanden ist, Visual Studio (beliebige Version) diesen jedoch nicht erkennt, verwenden Sie den Befehl **+ Custom** (+ Benutzerdefiniert), um dessen Speicherort manuell anzugeben. Lesen Sie hierzu den nächsten Abschnitt [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
 
 > [!Tip]
 > Visual Studio erkennt Updates auf einen vorhandenen Interpreter, z.B. ein Upgrade von Python 2.7.11 auf 2.7.14 mit den Installationsprogrammen von python.org. Während des Installationsvorgangs wird die ältere Umgebung aus der Liste der **Python-Umgebungen** entfernt und dann durch das Update ersetzt.
 >
-> Wenn Sie jedoch einen Interpreter und dessen Umgebung manuell über das Dateisystem verschieben, ist Visual Studio der neue Speicherort nicht bekannt. Weitere Informationen finden Sie unter [Verschieben eines Interpreters](installing-python-interpreters.md#moving-an-interpreter).
+> Wenn Sie jedoch einen Interpreter und dessen Umgebung manuell über das Dateisystem verschieben, ist Visual Studio der neue Speicherort nicht bekannt. Weitere Informationen finden Sie unter [Verschieben eines Interpreters](installing-python-interpreters.md#move-an-interpreter).
 
 ## <a name="fix-or-delete-invalid-environments"></a>Korrigieren oder Löschen ungültiger Umgebungen
 
-Wenn Visual Studio Registrierungseinträge für eine Umgebung sucht, der Pfad zum Interpreter jedoch ungültig ist, zeigt das Fenster „Python-Umgebungen“ den Namen durchgestrichen an:
+Wenn Visual Studio Registrierungseinträge für eine Umgebung sucht, der Pfad zum Interpreter jedoch ungültig ist, zeigt das Fenster **Python-Umgebungen** den Namen durchgestrichen an:
 
 ![Das Fenster „Python-Umgebungen“ mit einer ungültigen Umgebung](media/environments-invalid-entry.png)
 
 Umgebungen, die Sie behalten möchten, lassen sich korrigieren, indem Sie zunächst den **Reparaturvorgang** des Installers starten. Die Installer für die Standardversion von Python 3.x beispielsweise enthält diese Option.
 
-Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption verfügt, oder eine ungültige Umgebung entfernen, führen Sie die folgenden Schritte aus, um die Registrierung direkt zu ändern. Visual Studio aktualisiert das Fenster „Python-Umgebungen“ automatisch, wenn Sie Änderungen an der Registrierung vornehmen.
+Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption verfügt, oder eine ungültige Umgebung entfernen, führen Sie die folgenden Schritte aus, um die Registrierung direkt zu ändern. Visual Studio aktualisiert das Fenster **Python-Umgebungen** automatisch, wenn Sie Änderungen an der Registrierung vornehmen.
 
-1. Führen Sie aus `regedit.exe`.
-1. Navigieren Sie zu `HKEY_LOCAL_MACHINE\SOFTWARE\Python` für 32-Bit-Interpreter oder zu `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` für 64-Bit-Interpreter. Für IronPython müssen Sie stattdessen nach `IronPython` suchen.
-1. Erweitern Sie den Knoten, der der Verteilung entspricht, z.B. `PythonCore` für CPython oder `ContinuumAnalytics` für Anaconda. Erweitern Sie für IronPython den Versionsnummerknoten.
-1. Überprüfen Sie die Werte im `InstallPath`-Knoten:
+1. Führen Sie *regedit.exe* aus.
+1. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Python** für 32-Bit-Interpreter oder zu **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** für 64-Bit-Interpreter. Für IronPython müssen Sie stattdessen nach  **IronPython** suchen.
+1. Erweitern Sie den Knoten, der der Verteilung entspricht, z.B. **PythonCore** für CPython oder **ContinuumAnalytics** für Anaconda. Erweitern Sie für IronPython den Versionsnummerknoten.
+1. Überprüfen Sie die Werte im Knoten **InstallPath**:
 
     ![Registrierungseinträge für eine Standardinstallation von CPython](media/environments-registry-entries.png)
 
-    - Wenn die Umgebung weiterhin auf dem Computer vorhanden ist, ändern Sie den Wert von `ExecutablePath` in den richtigen Speicherort. Korrigieren Sie auch die Werte `(Default)` und `WindowedExecutablePath` nach Bedarf.
-    - Wenn die Umgebung nicht mehr auf Ihrem Computer vorhanden ist und Sie sie aus dem Fenster „Python-Umgebungen“ entfernen möchten, löschen Sie den übergeordneten `InstallPath`-Knoten, z.B. `3.6` in der Abbildung oben.
-
-<a name="manually-identifying-an-existing-environment"></a>
+    - Wenn die Umgebung weiterhin auf dem Computer vorhanden ist, ändern Sie den Wert von **ExecutablePath** in den richtigen Speicherort. Korrigieren Sie wenn nötig auch die Werte **(Standard)** und **WindowedExecutablePath**.
+    - Wenn die Umgebung nicht mehr auf Ihrem Computer vorhanden ist und Sie sie aus dem Fenster **Python-Umgebungen** entfernen möchten, löschen Sie den übergeordneten Knoten von **InstallPath**, z.B. **3.6** in der Abbildung oben.
 
 ## <a name="manually-identify-an-existing-environment"></a>Manuelles Identifizieren einer vorhandenen Umgebung
 
@@ -150,9 +149,9 @@ Führen Sie die folgenden Schritte aus, um eine Umgebung zu identifizieren, die 
 
 1. Geben Sie einen Namen für die Umgebung in das Feld **Beschreibung** ein.
 
-1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dahin (mithilfe von **...***).
+1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dorthin (mithilfe von **...**).
 
-1. Wenn Visual Studio einen Python-Interpreter an diesem Speicherort erkennt (z.B. unter dem unten gezeigten Pfad für eine Conda-Umgebung), wird der Befehl **Automatische Erkennung** aktiviert. Durch Auswahl von **Automatische Erkennung* werden die verbleibenden Felder ausgefüllt. Sie können diese Felder auch manuell ausfüllen.
+1. Wenn Visual Studio einen Python-Interpreter an diesem Speicherort erkennt (z.B. unter dem unten gezeigten Pfad für eine Conda-Umgebung), wird der Befehl **Automatische Erkennung** aktiviert. Durch Auswahl von **Automatische Erkennung** werden die verbleibenden Felder ausgefüllt. Sie können diese Felder auch manuell ausfüllen.
 
     ![Aktivieren des Befehls zur automatischen Erkennung](media/environments-custom-2.png)
 
@@ -184,6 +183,6 @@ Führen Sie die folgenden Schritte aus, um eine Umgebung zu identifizieren, die 
 
 - [Installieren von Python-Interpretern](installing-python-interpreters.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
-- [Verwenden von "requirements.txt" für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
+- [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Suchpfade](search-paths.md)
 - [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)

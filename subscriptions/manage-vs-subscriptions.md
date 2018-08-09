@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nut
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326997"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380680"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -114,7 +114,7 @@ So fügen Sie ein alternatives Konto hinzu:
 1. Melden Sie sich mit Ihrem Microsoft-Konto (Microsoft Account, MSA) beim [Abonnentenportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) an.
 2. Klicken Sie auf die Registerkarte **Abonnements**.
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
-4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule ein, und klicken Sie auf **Hinzufügen**. 
+4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule/Ihrer Universität ein, und klicken Sie auf **Hinzufügen**. 
     ![Alternatives Konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.  

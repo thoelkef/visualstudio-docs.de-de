@@ -1,5 +1,5 @@
 ---
-title: ProjectTemplateLink-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProjectTemplateLink-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ebc56e03a6582ab37126097db5f79ed9c5f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c3e539824c815d62d8cf3350b4d823314996677
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143588"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636411"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink-Element (Visual Studio-Vorlagen)
-Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere Projekte an.  
+Gibt den Pfad zu der *VSTEMPLATE* -Datei eines Projekts in einer Vorlage mit mehreren Projekten.  
   
  \<VSTemplate>  
  \<TemplateContent >  
@@ -39,7 +39,7 @@ Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere 
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <ProjectTemplateLink ProjectName="Name">  
     PathToTemplateFile  
 </ProjectTemplateLink>  
@@ -52,8 +52,8 @@ Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere 
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`ProjectName`|Optionales Attribut.<br /><br /> Gibt in einer Vorlage für mehrere Projekte den Namen für jedes einzelne Projekt an. Die **neues Projekt** Dialogfeld nicht einzelne Projekte Namen zuweisen.|  
-|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Angenommen, wenn in der Vorlage der übergeordneten Gruppe der Parameter `$projectname$` verfügt über einen Wert **ExampleProject1**, wenn die verknüpfte Vorlage er die jeweilige ausgeführt werden, erhält einen Parameter `$ext_projectname$`, dies ist eine Kopie der `$projectname$`Parameter aus der Vorlage der übergeordneten Gruppe.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Um die richtige Produktversion verweisen zu können, finden Sie unter [verweisen auf Assemblys in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`ProjectName`|Optionales Attribut.<br /><br /> Gibt in einer Vorlage für mehrere Projekte den Namen für jedes einzelne Projekt an. Die **neues Projekt** Dialogfeld nicht möglich, einzelne Projekte Namen zuweisen.|  
+|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Für die in der Vorlage der übergeordneten Gruppe der Parameter z. B. `$projectname$` verfügt über einen Wert **ExampleProject1**, wenn die verknüpfte Vorlage die jeweilige ausgeführt werden, erhält einen Parameter `$ext_projectname$`, dies ist eine Kopie der `$projectname$`Parameter aus der Vorlage der übergeordneten Gruppe.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Um die richtige Produktversion verweisen zu können, finden Sie unter [verweisen auf Assemblys in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -68,13 +68,13 @@ Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere 
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Dieser Text gibt den Pfad zur VSTEMPLATE-Datei der Vorlage an.  
+ Dieser Text gibt den Pfad zu der *VSTEMPLATE* -Datei der Vorlage.  
   
 ## <a name="remarks"></a>Hinweise  
- Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Das `ProjectTemplateLink`-Element wird verwendet, um den Speicherort der VSTEMPLATE-Datei für eines der Projekte in der Vorlage anzugeben. Die VSTEMPLATE-Datei einer Vorlage für mehrere Projekte enthält ein `ProjectTemplateLink`-Element für jedes Projekt in der Vorlage. Weitere Informationen zu Vorlagen mit mehreren Projekten finden Sie unter [Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md).  
+ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Die `ProjectTemplateLink` Element wird verwendet, um den Speicherort der an die *VSTEMPLATE* -Datei für eines der Projekte in der Vorlage. Die *VSTEMPLATE* Datei einer Vorlage mit mehreren Projekten enthält ein `ProjectTemplateLink` -Element für jedes Projekt in der Vorlage. Weitere Informationen zu Vorlagen mit mehreren Projekten, finden Sie unter [Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine einfache VSTEMPLATE-Stammdatei für mehrere Projekte. In diesem Beispiel enthält die Vorlage zwei Projekte: `My Windows Application` und `My Class Library`. Durch das `ProjectName`-Attribut im `ProjectTemplateLink`-Element wird der Name festgelegt, der dem Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zugewiesen wird. Wenn das `ProjectName`-Attribut nicht vorhanden ist, wird der Name der VSTEMPLATE-Datei als Projektname verwendet.  
+ Dieses Beispiel zeigt eine einfache mit mehreren Projekten *VSTEMPLATE* Datei. In diesem Beispiel enthält die Vorlage zwei Projekte: `My Windows Application` und `My Class Library`. Durch das `ProjectName`-Attribut im `ProjectTemplateLink`-Element wird der Name festgelegt, der dem Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zugewiesen wird. Wenn die `ProjectName` Attribut nicht vorhanden ist, den Namen der *VSTEMPLATE* Datei als Projektname verwendet wird.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -99,6 +99,6 @@ Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere 
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md)

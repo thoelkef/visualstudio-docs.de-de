@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176979"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380891"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Gewusst wie: Erstellen eines Adapters für diagnostische Daten
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines Adapters für diagnostische Daten
 
 Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual Studio eine Klassenbibliothek erstellen und dann die APIs der Adapter für diagnostische Daten hinzufügen, die Visual Studio Enterprise für die Klassenbibliothek bereitstellt. Senden Sie alle gewünschten Informationen als Datenstrom oder Datei an das vom Framework bereitgestellte <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>-Objekt, wenn Sie die Ereignisse behandeln, die während des Testlaufs ausgelöst werden. Die Streams oder Dateien, die an den <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> gesendet wurden, werden bei Beendigung des Tests als Anlagen zu den Testergebnissen gespeichert. Wenn Sie aus diesen Testergebnissen einen Fehler erstellen, oder wenn Sie [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] verwenden, werden die Dateien ebenfalls mit dem Fehler verknüpft.
 
  Sie können einen Adapter für diagnostische Daten erstellen, der sich auf den Computer auswirkt, auf dem die Tests ausgeführt werden, oder einen Adapter mit Auswirkung auf einen Computer, der Teil der Umgebung ist, die für die Ausführung der getesteten Anwendung verwendet wird. Sie können beispielsweise Dateien auf dem Testcomputer, auf dem die Tests ausgeführt werden, oder Dateien auf dem Computer erfassen, der in der Webserverrolle für die Anwendung verwendet wird.
 
- Sie können dem Adapter für diagnostische Daten einen Anzeigenamen geben, der erscheint, wenn Sie die Testeinstellungen mithilfe von Microsoft Test Manager oder Visual Studio erstellen. Mit Testeinstellungen kann definiert werden, mit welcher Computerrolle bestimmte Adapter für diagnostische Daten in der Umgebung ausgeführt werden, wenn die Tests ausgeführt werden. Sie können die Adapter für diagnostische Daten auch beim Erstellen der Testeinstellungen konfigurieren. Sie können beispielsweise einen Adapter für diagnostische Daten erstellen, der benutzerdefinierte Protokolle vom Webserver abholt. Beim Erstellen von Testeinstellungen können Sie festlegen, dass dieser Adapter für diagnostische Daten auf dem Computer oder den Computern ausgeführt wird, die die Webserverrolle ausführen, und Sie können die Konfiguration Ihrer Testeinstellungen so ändern, dass nur die letzten drei erstellten Protokolle erfasst werden. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+ Sie können dem Adapter für diagnostische Daten einen Anzeigenamen geben, der erscheint, wenn Sie die Testeinstellungen mithilfe von Microsoft Test Manager oder Visual Studio erstellen. Mit Testeinstellungen kann definiert werden, mit welcher Computerrolle bestimmte Adapter für diagnostische Daten in der Umgebung ausgeführt werden, wenn die Tests ausgeführt werden. Sie können die Adapter für diagnostische Daten auch beim Erstellen der Testeinstellungen konfigurieren. Sie können beispielsweise einen Adapter für diagnostische Daten erstellen, der benutzerdefinierte Protokolle vom Webserver abholt. Beim Erstellen von Testeinstellungen können Sie festlegen, dass dieser Adapter für diagnostische Daten auf dem Computer oder den Computern ausgeführt wird, die die Webserverrolle ausführen, und Sie können die Konfiguration Ihrer Testeinstellungen so ändern, dass nur die letzten drei erstellten Protokolle erfasst werden. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
  Beim Ausführen der Tests werden Ereignisse ausgelöst, sodass der Adapter für diagnostische Daten Aufgaben an dieser Stelle im Test ausführen kann.
 
@@ -48,9 +48,9 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
  Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
-##  <a name="CreateAdapter"></a> Erstellen und Installieren eines Adapters für diagnostische Daten
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>So erstellen und installieren Sie einen Adapter für diagnostische Daten
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>So erstellen und installieren Sie einen Adapter für diagnostische Daten
 
 1.  Erstellen Sie eine neue Klassenbibliothek.
 
@@ -66,7 +66,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 2.  Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon** hinzu.
 
-    1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Verweise**, und wählen Sie anschließend den Befehl **Verweis hinzufügen** aus.
+    1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
     2.  Wählen Sie **.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -74,7 +74,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 3.  Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.Common** hinzu.
 
-    1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Verweise**, und wählen Sie anschließend den Befehl **Verweis hinzufügen** aus.
+    1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
     2.  Wählen Sie **/.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -224,7 +224,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
      Lesen Sie [How to: Create a Custom Editor for Data for Your Diagnostic Data Adapter (Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten)](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md), wenn Sie Ihren eigenen Editor zum Sammeln von Daten für die Verwendung in Ihren Testeinstellungen verwenden möchten.
 
-11. Um beim Abschluss eines Tests eine Protokolldatei auf Grundlage von Testeinstellungen des Benutzers zu sammeln, müssen Sie eine `App.config`-Datei erstellen und diese der Projektmappe hinzufügen. Diese Datei hat das folgende Format und muss den URI für den Adapter für diagnostische Daten enthalten, um diesen zu identifizieren. Ersetzen Sie "Unternehmen", "Produktname" und "Version" durch echte Werte.
+11. Wenn Sie beim Abschluss eines Tests eine Protokolldatei auf Grundlage von Testeinstellungen des Benutzers sammeln möchten, müssen Sie eine *App.config*-Datei erstellen und diese zur Projektmappe hinzufügen. Diese Datei hat das folgende Format und muss den URI für den Adapter für diagnostische Daten enthalten, um diesen zu identifizieren. Ersetzen Sie "Unternehmen", "Produktname" und "Version" durch echte Werte.
 
     > [!NOTE]
     > Wenn Sie keine Informationen für den Adapter für diagnostische Daten konfigurieren müssen, müssen Sie keine Konfigurationsdatei erstellen.
@@ -255,7 +255,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
     > [!NOTE]
     > Das Standardkonfigurationselement kann alle Daten enthalten, die Sie benötigen. Wenn der Benutzer den Adapter für diagnostische Daten nicht in Testeinstellungen konfiguriert, werden die Standarddaten bei der Ausführung an den Adapter für diagnostische Daten übergeben. Da der XML-Code, den Sie im `<DefaultConfigurations>`-Abschnitt hinzufügen, wahrscheinlich nicht Teil des deklarierten Schemas ist, können Sie alle dadurch generierten XML-Fehler ignorieren.
     >
-    > Weitere Beispiele für Konfigurationsdateien finden Sie abhängig vom Installationsverzeichnis im folgenden Pfad: **Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors**.
+    > Weitere Beispiele für Konfigurationsdateien finden Sie abhängig vom Installationsverzeichnis im folgenden Pfad: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
@@ -269,7 +269,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 15. Zum Auswählen des Adapters für diagnostische Daten müssen Sie zunächst vorhandene Testeinstellungen auswählen oder neue Testeinstellungen in Microsoft Test Manager oder Visual Studio erstellen. Der Adapter wird auf der Registerkarte **Daten und Diagnose** der Testeinstellungen mit dem Anzeigenamen angezeigt, den Sie der Klasse zugewiesen haben.
 
-16. Legen Sie diese Testeinstellungen auf Aktiv fest. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+16. Legen Sie diese Testeinstellungen auf Aktiv fest. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Führen Sie die Tests unter Verwendung der Testeinstellungen aus, wenn der Adapter für diagnostische Daten ausgewählt ist.
 
@@ -284,7 +284,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Collect diagnostic data while testing (VSTS) (Sammeln von Diagnosedaten beim Testen (VSTS))](/vsts/manual-test/collect-diagnostic-data)
-- [Gewusst wie: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

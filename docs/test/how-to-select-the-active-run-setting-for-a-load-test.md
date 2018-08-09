@@ -10,25 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977605"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381910"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Gewusst wie: Auswählen der aktiven Testlaufeinstellungen für einen Auslastungstest
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern.
 
-Ein Auslastungstest kann mehrere *Laufzeiteinstellungen* enthalten. Laufzeiteinstellungen sind eine Gruppe von Eigenschaften, die die Art der Ausführung eines Auslastungstests beeinflussen. Testlaufeinstellungen sind im Eigenschaftenfenster nach Kategorien geordnet. Bei der Ausführung eines Auslastungstests wird die Testlaufeinstellung verwendet, die derzeit als aktiv festgelegt ist.
+Ein Auslastungstest kann mehrere *Laufzeiteinstellungen* enthalten. Laufzeiteinstellungen sind eine Gruppe von Eigenschaften, die die Art der Ausführung eines Auslastungstests beeinflussen. Laufzeiteinstellungen werden nach Kategorien im **Eigenschaftenfenster** strukturiert. Bei der Ausführung eines Auslastungstests wird die Testlaufeinstellung verwendet, die derzeit als aktiv festgelegt ist.
 
 > [!NOTE]
-> Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Load Test Run Settings Properties (Eigenschaften von Laufzeiteinstellungen für Auslastungstests)](../test/load-test-run-settings-properties.md).
+> Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
 Wenn Ihr Auslastungstest im Ordner **Laufzeiteinstellungen** nur einen Laufzeiteinstellungsknoten enthält, handelt es sich bei diesem Knoten immer um den aktiven Knoten. Wenn der Auslastungstest mehrere Laufzeiteinstellungsknoten enthält, können Sie den Knoten auswählen, der bei der Ausführung des Auslastungstests verwendet werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
-Im Auslastungstest-Editor wird die aktive Testlaufeinstellung durch das Suffix "[Aktiv]" gekennzeichnet.
+Im **Auslastungstest-Editor** wird die aktive Testlaufeinstellung durch das Suffix "[Aktiv]" gekennzeichnet.
 
 ## <a name="select-the-active-run-setting"></a>Auswählen der aktiven Testlaufeinstellung
 
@@ -61,4 +61,4 @@ Führen Sie anschließend den Test aus:
 
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Gewusst wie: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md)

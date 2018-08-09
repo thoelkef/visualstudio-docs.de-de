@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924423"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251854"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Erlernen von Grundlagen der App-Erstellung mit Xamarin.Forms in Visual Studio
 
@@ -55,11 +55,11 @@ Mit diesen Schritten erstellen Sie eine Xamarin.Forms-Projektmappe, die eine .NE
 
     Wenn Sie die Vorlage dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2017-Feature aktivieren. Siehe [Setup und Installation](../cross-platform/setup-and-install.md).
 
-2.  Nachdem Sie auf „OK“ geklickt haben, können Sie einige Optionen auswählen. Wählen Sie **Leere App** und **.NET Standard** aus:
+2.  Nachdem Sie auf **OK** geklickt haben, können Sie einige Optionen auswählen. Wählen Sie **Leere App** und **.NET Standard** aus:
 
     ![Erstellen eines neuen plattformübergreifenden App-Projekts](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
 
-3.  Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Projektmappe mit vier Projekten:
+3.  Nachdem Sie auf **OK** geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Projektmappe mit vier Projekten:
 
     -   **WeatherApp**: Die .NET Standard-Bibliothek, in die Sie mit Xamarin.Forms Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und Benutzeroberflächencode
 
@@ -118,7 +118,7 @@ Mit den folgenden Schritten fügen Sie nun Code zu der .NET Standard-Bibliothek 
 
 1.  Klicken Sie mit der rechten Maustaste auf das **WeatherApp**-Projekt, und wählen Sie **Hinzufügen > Klasse…** aus. Geben Sie der Datei im Dialogfeld **Neues Element hinzufügen** den Namen **Weather.cs**. Sie nutzen diese Klasse später, um Daten aus dem Wetterdatendienst zu speichern.
 
-2.  Ersetzen Sie den gesamten Inhalt von **Weather.cs** durch folgenden Code:
+2.  Ersetzen Sie den gesamten Inhalt von *Weather.cs* durch folgenden Code:
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Mit Xamarin.Forms können Sie freigegebenen Benutzeroberflächencode in der .NET
     }
     ```
 
-4.  Um **WeatherPage** als erste Anzeige beim Starten der App zu öffnen, ersetzen Sie den Standardkonstruktor in **App.xaml.cs** durch den folgenden Code:
+4.  Um **WeatherPage** als erste Anzeige beim Starten der App zu öffnen, ersetzen Sie den Standardkonstruktor in *App.xaml.cs* durch den folgenden Code:
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Xamarin.Forms rendert systemeigene Benutzeroberflächen-Steuerelemente für jede
 
      Mithilfe des `OnPlatform`-Tags in XAML-Dateien können Sie einen Eigenschaftswert auswählen, der spezifisch für die aktuelle Plattform ist, auf der die App ausgeführt wird (siehe [Grundlegende XAML-Syntax](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/). Dieser Vorgang wird hier jedoch nicht dargestellt. In der CodeBehind-Datei können Sie feststellen, auf welcher Plattform die Anwendung läuft, indem Sie die Eigenschaft [`Device.RuntimePlatform`](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) mit Konstanten vergleichen, die in der Klasse [`Device`](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) mit den Namen [`Device.iOS`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [`Device.Android`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/) und [`Device.UWP`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/) definiert sind.
 
-2.  Ersetzen Sie in **WeatherPage.xaml.cs** den `GetWeatherBtn_Clicked`-Ereignishandler durch den unten stehenden Code. Dieser Code überprüft, ob eine Postleitzahl im Eingabefeld vorhanden ist und ruft die Daten für diese Postleitzahl ab. Er setzt dann den Bindungskontext der gesamten Seite auf die sich daraus ergebende `Weather`-Instanz. Der Code schließt, indem der Tastentext auf „Erneut suchen“ gesetzt wird. Jede Bezeichnung in der Benutzeroberfläche ist an eine Eigenschaft der `Weather`-Klasse gebunden. Wenn Sie den Bindungskontext der Anzeige auf eine `Weather`-Instanz setzen, werden diese Bezeichnungen automatisch aktualisiert.
+2.  Ersetzen Sie in *WeatherPage.xaml.cs* den `GetWeatherBtn_Clicked`-Ereignishandler durch den unten stehenden Code. Dieser Code überprüft, ob eine Postleitzahl im Eingabefeld vorhanden ist und ruft die Daten für diese Postleitzahl ab. Er setzt dann den Bindungskontext der gesamten Seite auf die sich daraus ergebende `Weather`-Instanz. Der Code schließt, indem der Tastentext auf „Erneut suchen“ gesetzt wird. Jede Bezeichnung in der Benutzeroberfläche ist an eine Eigenschaft der `Weather`-Klasse gebunden. Wenn Sie den Bindungskontext der Anzeige auf eine `Weather`-Instanz setzen, werden diese Bezeichnungen automatisch aktualisiert.
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

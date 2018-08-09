@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751987"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379383"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>How to: Manage Counter Sets Using the Load Test Editor
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Verwalten von Indikatorensätzen mithilfe des Auslastungstest-Editors
 
 Wenn Sie mithilfe des **Assistenten für neuen Auslastungstest** einen Auslastungstest erstellen, fügen Sie einen anfänglichen Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest.
 
@@ -56,7 +56,7 @@ Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die 
 
      Computertags ermöglichen es Ihnen, einen Computer anhand eines einfachen Namens zu identifizieren.
 
-     Die Tags werden im Knoten **Indikatorensatzzuordnungen** in der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können. Beispiel: "Webserver1 in Lab2" oder "SQL Server2 im Phoenix-Büro". Weitere Informationen finden Sie unter [Reporting Load Tests Results for Test Comparisons or Trend Analysis (Berichterstellung für Auslastungstestergebnisse für Testvergleiche oder die Trendanalyse)](../test/compare-load-test-results.md).
+     Die Tags werden im Knoten **Indikatorensatzzuordnungen** in der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können. Beispiel: "Webserver1 in Lab2" oder "SQL Server2 im Phoenix-Büro". Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).
 
 6.  Klicken Sie auf **OK**.
 

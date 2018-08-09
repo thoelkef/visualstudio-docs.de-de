@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976740"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380353"
 ---
-# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests
+# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Verwalten von Auslastungstestergebnissen im Repository für Auslastungstestergebnisse
 
 Informationen, die während eines Auslastungstests erfasst wurden, können im *Ergebnisrepository für Auslastungstests*, einer SQL-Datenbank, gespeichert werden. Das Ergebnisrepository für Auslastungstests enthält Leistungsindikatordaten und Informationen zu aufgezeichneten Fehlern. Die Ergebnisrepository-Datenbank wird für Controller vom Setup erstellt, oder sie wird bei der ersten lokalen Ausführung eines Auslastungstests automatisch erstellt. Wenn das Auslastungstestschema nicht vorhanden ist, wird die Datenbank bei lokaler Ausführung automatisch erstellt.
 
- Wenn Sie die Ergebnisrepository-Verbindungszeichenfolge des Controllers ändern, um einen anderen Server zu verwenden, muss auf dem neuen Server das loadtestresultsrepository.sql-Skript ausgeführt werden, um das Schema zu erstellen.
+ Wenn Sie die Verbindungszeichenfolge für Ergebnisrepositorys des Controllers ändern, um einen anderen Server zu verwenden, muss auf dem neuen Server das *loadtestresultsrepository.sql*-Skript ausgeführt werden, damit das Schema erstellt werden kann.
 
  Visual Studio Enterprise stellt Indikatorensätze mit Namen zur Verfügung, die häufige Leistungsindikatoren erfassen, deren Grundlage eine bestimmte Technologie ist. Diese Sätze sind bei der Analyse von IIS-Servern, ASP.NET-Servern oder SQL-Servern hilfreich. Alle mit Indikatorensätzen erfassten Daten werden im Ergebnisrepository für Auslastungstests gespeichert.
 
@@ -33,7 +33,7 @@ Informationen, die während eines Auslastungstests erfasst wurden, können im *E
 
 ## <a name="sql-server-versions"></a>SQL Server-Versionen
 
- Für das Verwenden von Auslastungstests können Sie SQL Server Express LocalDB verwenden. Die Installation erfolgt zusammen mit Visual Studio. Dabei handelt es sich um einen Standarddatenbankserver für Auslastungstests (einschließlich der Integration in Microsoft Excel). SQL Server Express LocalDB ist ein Ausführungsmodus von SQL Server Express, der speziell für Programmentwickler vorgesehen ist. Bei der Installation von SQL Server Express LocalDB wird eine Mindestzahl an Dateien kopiert, die für den Start des SQL Server-Datenbankmoduls erforderlich sind.
+ Für das Verwenden von Auslastungstests können Sie SQL Server Express LocalDB verwenden. Die Installation erfolgt zusammen mit Visual Studio. Dabei handelt es sich um einen Standarddatenbankserver für Auslastungstests (einschließlich der Integration in Microsoft Excel). SQL Server Express LocalDB ist ein Ausführungsmodus von SQL Server Express, der speziell für Programmentwickler vorgesehen ist. Bei der Installation von SQL Server Express LocalDB wird eine Mindestzahl an Dateien kopiert, die für den Start der SQL Server-Datenbank-Engine erforderlich sind.
 
  Wenn das Team hohe Datenbankanforderungen erwartet oder die Projekte zu groß für SQL Server Express LocalDB werden, sollten Sie ein Upgrade auf SQL Express oder auf die Vollversion von SQL Server in Erwägung ziehen, um Raum für weitere Skalierungen bereitzustellen. Wenn Sie SQL Server aktualisieren, werden die MDF- und LDF-Dateien für SQL Server Express LocalDB im Benutzerprofilordner gespeichert. Mit diesen Dateien können Sie die Auslastungstestdatenbank in SQL Server Express oder SQL Server importieren.
 
@@ -46,17 +46,17 @@ Informationen, die während eines Auslastungstests erfasst wurden, können im *E
 |Aufgaben|Verwandte Themen|
 |-----------|-----------------------|
 |**Einrichten eines Repositorys für Auslastungstestergebnisse:** Sie können ein Repository für Auslastungstestergebnisse in einer SQL-Datenbank einrichten. **Hinweis:** Ein Auslastungstestrepository kann auch erstellt werden, wenn Sie einen Testcontroller installieren. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).||
-|**Auswählen und Anzeigen eines Ergebnisrepositorys:** Sie können ein bestimmtes Ergebnisrepository auswählen. Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Testergebnisse von den Agents oder den lokalen Computern können auf einem beliebigen SQL-Server gespeichert werden, auf dem Sie einen Auslastungstest-Ergebnisspeicher erstellt haben. In jedem Fall müssen Sie mithilfe des Fensters **Testcontroller verwalten** angeben, wo die Ergebnisse des Auslastungstests gespeichert werden sollen.|-   [How to: Select a Load Test Results Repository (Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests)](../test/how-to-select-a-load-test-results-repository.md)<br />-   [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Löschen eines Auslastungstestergebnisses aus dem Repository:** Sie können ein Auslastungstestergebnis aus dem **Auslastungstest-Editor** mithilfe des Dialogfelds **Auslastungstestergebnisse öffnen und verwalten** entfernen.|-   [How to: Delete Load Test Results from a Repository (Vorgehensweise: Löschen von Auslastungstestergebnissen aus einem Repository)](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importieren und Exportieren von Ergebnissen in ein Repository:** Sie können Auslastungstestergebnisse aus dem **Auslastungstest-Editor** entfernen.|-   [How to: Import Load Test Results into a Repository (Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository)](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [How to: Export Load Test Results from a Repository (Vorgehensweise: Exportieren von Auslastungstestergebnissen aus einem Repository)](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Auswählen und Anzeigen eines Ergebnisrepositorys:** Sie können ein bestimmtes Ergebnisrepository auswählen. Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Testergebnisse von den Agents oder den lokalen Computern können auf einem beliebigen SQL-Server gespeichert werden, auf dem Sie einen Auslastungstest-Ergebnisspeicher erstellt haben. In jedem Fall müssen Sie mithilfe des Fensters **Testcontroller verwalten** angeben, wo die Ergebnisse des Auslastungstests gespeichert werden sollen.|-   [Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests](../test/how-to-select-a-load-test-results-repository.md)<br />-   [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Löschen eines Auslastungstestergebnisses aus dem Repository:** Sie können ein Auslastungstestergebnis aus dem **Auslastungstest-Editor** mithilfe des Dialogfelds **Auslastungstestergebnisse öffnen und verwalten** entfernen.|-   [Vorgehensweise: Löschen von Auslastungstestergebnissen aus einem Repository](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importieren und Exportieren von Ergebnissen in ein Repository:** Sie können Auslastungstestergebnisse aus dem **Auslastungstest-Editor** entfernen.|-   [Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Vorgehensweise: Exportieren von Auslastungstestergebnissen aus einem Repository](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+ [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Sie können mit dem Auslastungstest-Analyzer die Ergebnisse sowohl eines derzeit ausgeführten Auslastungstests als auch eines abgeschlossenen Auslastungstests anzeigen.
+ Sie können mit dem **Auslastungstest-Analyzer** sowohl die Ergebnisse eines derzeit ausgeführten Auslastungstests als auch eines abgeschlossenen Auslastungstests anzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Gewusst wie: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)

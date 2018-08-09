@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180073"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380667"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Gewusst wie: Erstellen eines Webdiensttests
+# <a name="how-to-create-a-web-service-test"></a>Vorgehensweise: Erstellen eines Webdiensttests
 
 Sie können Webleistungstests verwenden, um Webdienste zu testen. Sie können im **Webleistungstest-Editor** mithilfe der Optionen **Anforderung einfügen** und **Webdienstanforderung einfügen** einzelne Anforderungen anpassen, um Webdienstseiten zu suchen. Im Allgemeinen werden diese Seiten nicht in der Webanwendung angezeigt. Deshalb müssen Sie die Anforderung anpassen, um Zugriff auf diese Seiten zu erhalten.
 
@@ -37,7 +37,7 @@ In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starte
 
 3.  Geben Sie als **URL**-Eigenschaft der neuen Anforderung den Namen des Webdiensts ein, z.B. **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Öffnen Sie ein neues Browserfenster, und geben Sie unter **Adresse** die URL der ASMX-Seite ein. Wählen Sie die zu testende Methode aus, und überprüfen Sie die SOAP-Meldung. Sie enthält eine `SOAPAction`.
+4.  Öffnen Sie ein neues Browserfenster, und geben Sie in der *Adressensymbolleiste* die URL der **ASMX**-Seite ein. Wählen Sie die zu testende Methode aus, und überprüfen Sie die SOAP-Meldung. Sie enthält eine `SOAPAction`.
 
 5.  Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf die Anforderung, und wählen Sie **Header hinzufügen** aus, um einen neuen Header hinzuzufügen. Geben Sie `SOAPAction` in der **Name**-Eigenschaft ein. Geben Sie in der **Wert**-Eigenschaft den in `SOAPAction` angezeigten Wert ein, beispielsweise `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starte
      </soap:Envelope>
      ```
 
-9. Kehren Sie zum **Webleistungstest-Editor** zurück. Klicken Sie in der **Zeichenfolgentext**-Eigenschaft auf die Auslassungspunkte (…). Fügen Sie den Inhalt der Zwischenablage in die Eigenschaft ein.
+9. Kehren Sie zum **Webleistungstest-Editor** zurück. Klicken Sie in der **Zeichenfolgentext-Eigenschaft** auf die Auslassungspunkte **(…)**. Fügen Sie den Inhalt der Zwischenablage in die Eigenschaft ein.
 
 10. Sie müssen alle Platzhalterwerte im XML-Code durch gültige Werte ersetzen, damit der Test erfolgreich ausgeführt werden kann. Im vorherigen Beispiel würden Sie die zwei Instanzen von `string` und eine Instanz von `int` ersetzen. Dieser Webdienstvorgang wird nur abgeschlossen, wenn ein registrierter Benutzer den Auftrag dazu erteilt.
 

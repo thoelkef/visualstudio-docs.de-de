@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117770"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381659"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 
@@ -82,7 +82,7 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
 1. Doppelklicken Sie im Fenster **Form1.vb [Entwurf]** auf die Schaltfläche **Click this** („Hier klicken“), um das Fenster **Form1.vb** zu öffnen.
 
-      (Stattdessen können Sie auch **Form1.vb** im Fenster **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
+      (Stattdessen können Sie auch **Form1.vb** im **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
 
 2. Geben Sie bzw. fügen Sie im Fenster **Form1.vb** zwischen den Zeilen **Private Sub** und **End Sub** `lblHelloWorld.Text = "Hello World!"` ein.
 

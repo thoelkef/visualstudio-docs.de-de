@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Microsoft Docs
+title: OPTNAMECHANGEPFN | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ecb80b1ac0b71de935da59d29a3f5c39f85bee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 083b91dd44101f387c89e2313dba3ffb9a9ee737
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137244"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636515"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Dies ist eine Rückruffunktion, die in einem Aufruf angegebenen der [SccSetOption](../extensibility/sccsetoption-function.md) (mithilfe der Option `SCC_OPT_NAMECHANGEPFN`) und wird verwendet, um vorgenommene Namensänderungen durch die quellcodeverwaltung-Plug-in zurück auf die IDE zu kommunizieren.  
+Dies ist eine Callback-Funktion angegeben, die in einem Aufruf der [SccSetOption](../extensibility/sccsetoption-function.md) (mithilfe der Option `SCC_OPT_NAMECHANGEPFN`) und wird verwendet, um die von vorgenommenen Namensänderungen das Quellcodeverwaltungs-Plug-in zurück zur IDE zu kommunizieren.  
   
 ## <a name="signature"></a>Signatur  
   
@@ -43,16 +43,16 @@ typedef void (*OPTNAMECHANGEPFN)(
  [in] Der ursprüngliche Name der Datei.  
   
  pszNewName  
- [in] Der Name der Datei wurde umbenannt in.  
+ [in] Der Name der Datei wurde in umbenannt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Keine.  
+ Keine  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn eine Datei während einer Quelle-Steuerungsvorgang umbenannt wird, kann das Quellsteuerelement-Plug-in der IDE über die Änderung über diesen Rückruf benachrichtigen.  
+ Wenn eine Datei während der einen Quellcodeverwaltungsvorgang umbenannt wird, kann das Quellcodeverwaltungs-Plug-in der IDE über die Änderung des über diesen Rückruf benachrichtigen.  
   
- Wenn dieser Rückruf in die IDE nicht unterstützt wird, rufen sie nicht die [SccSetOption](../extensibility/sccsetoption-function.md) anzugeben. Wenn das plug-in dieses Rückrufs nicht unterstützt, gibt es zurück `SCC_E_OPNOTSUPPORTED` aus der `SccSetOption` -Funktion, wenn die IDE versucht, den Rückruf zu setzen.  
+ Wenn dieser Rückruf in die IDE nicht unterstützt wird, ruft er nicht die [SccSetOption](../extensibility/sccsetoption-function.md) angegeben. Wenn das plug-in dieses Rückrufs nicht unterstützt, wird zurückgegeben, `SCC_E_OPNOTSUPPORTED` aus der `SccSetOption` funktionieren, wenn die IDE versucht wird, um den Rückruf festzulegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Rückruffunktionen implementiert, die von der IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

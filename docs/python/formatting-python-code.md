@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056910"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341596"
 ---
-# <a name="formatting-python-code"></a>Formatieren von Python-Code
+# <a name="format-python-code"></a>Formatieren von Python-Code
 
 Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurierten Formatierungsoptionen zu erfüllen.
 
-- Zum Formatieren von ausgewähltem Code wählen Sie **Bearbeiten > Erweitert > Auswahl formatieren** aus oder drücken STRG+E, F.
-- Um die gesamte Datei zu formatieren, wählen Sie **Bearbeiten > Erweitert > Dokument formatieren** oder drücken STRG+E, D.
+- Klicken Sie zum Formatieren von ausgewähltem Code auf **Bearbeiten** > **Erweitert** > **Auswahl formatieren**, oder drücken Sie **STRG**+**E** > **F**.
+- Klicken Sie zum Formatieren der gesamten Datei auf **Bearbeiten** > **Erweitert** > **Dokument formatieren**, oder drücken Sie **STRG**+**E** > **D**.
 
-Optionen werden durch **Tools > Optionen > Text-Editor > Python > Formatierung** und die darin geschachtelten Registerkarten festgelegt. Sie müssen **Alle Einstellungen anzeigen** auswählen, damit diese Optionen angezeigt werden:
+Optionen werden über **Extras** > **Optionen** > **Text-Editor** > **Python** > **Formatieren** und die darin geschachtelten Registerkarten festgelegt. Sie müssen **Alle Einstellungen anzeigen** auswählen, damit diese Optionen angezeigt werden:
 
 ![Python-Formatierungsoptionen in Visual Studio](media/options-editor-formatting.png)
 
 Für Formatierungsoptionen ist standardmäßig festgelegt, dass sie mit einem Superset des [PEP 8 Style Guide](http://www.python.org/dev/peps/pep-0008/) übereinstimmen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Artikel beschrieben.
 
-Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie in einem späteren Abschnitt beschrieben.
+Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) fügt wie in einem späteren Abschnitt beschrieben dem Menü **Bearbeiten** > **Erweitert** auch den nützlichen Befehl [**Kommentarabsatz ausfüllen**](#fill-comment-paragraph-command) hinzu.
 
 ## <a name="spacing"></a>Abstand
 
@@ -110,7 +110,7 @@ Durch einen **Umbruch** können Sie die **maximale Kommentarbreite** festlegen (
 
 ## <a name="fill-comment-paragraph-command"></a>Befehl „Kommentarabsatz ausfüllen“
 
-Der Befehl **Bearbeiten > Erweitert > Kommentarabsatz ausfüllen** (STRG+E, P) formatiert Kommentartext und umbricht ihn neu, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
+Der Befehl **Bearbeiten** > **Erweitert** > **Kommentarabsatz ausfüllen** (**STRG**+**E** > **P**) formatiert Kommentartext und für einen dynamischen Umbruch durch, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
 
 Zum Beispiel:
 

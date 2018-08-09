@@ -1,5 +1,5 @@
 ---
-title: Directory Status Code Enumerator | Microsoft Docs
+title: Verzeichnisstatuscode-Enumerator | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126083"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638465"
 ---
-# <a name="directory-status-code-enumerator"></a>Directory Status Code Enumerator
-Die `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Dies wurde in Version 1.2 der Datenquellen-Steuerelement-Plug-in-API eingeführt.  
+# <a name="directory-status-code-enumerator"></a>Verzeichnisstatuscode-enumerator
+Die `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Dies wurde in Version 1.2 von die Source-Plug-in-API eingeführt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ enum SccDirStatus {
  Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Verzeichnis ist nicht in der quellcodeverwaltung.  
+ Verzeichnis ist nicht unter quellcodeverwaltung.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Verzeichnis ist in der quellcodeverwaltung.  
+ Verzeichnis befindet sich unter quellcodeverwaltung.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
  Projekt für dieses Verzeichnis ist leer.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Datenquellen-Steuerelement-Plug-ins](../extensibility/source-control-plug-ins.md)   
+ [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

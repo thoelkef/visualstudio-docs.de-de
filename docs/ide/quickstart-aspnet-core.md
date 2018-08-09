@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232192"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380615"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
-In dieser 5-10-minütigen Einführung in die Bedienung von Visual Studio erstellen Sie eine einfache Hallo-Welt-App unter Verwendung einer ASP.NET-Projektvorlage und der Programmiersprache C#.
+In dieser 5-10-minütigen Einführung in die Bedienung von Visual Studio erstellen Sie eine einfache Hallo-Welt-Web-App unter Verwendung einer ASP.NET-Projektvorlage und der Programmiersprache C#.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
@@ -41,13 +41,14 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
    > [!NOTE]
    > Falls Sie die Projektvorlagenkategorie **.NET Core** nicht finden, klicken Sie im linken Bereich auf den Link **Visual Studio-Installer öffnen**.
-   >![Öffnen des Visual Studio-Installers im Dialogfeld „Neues Projekt“](../ide/media/open-visual-studio-installer.png)
+   >
+   > ![Den Visual Studio-Installer im Dialogfeld „Neues Projekt“ öffnen](../ide/media/open-visual-studio-installer.png)
    >
    > Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung** und anschließend auf **Ändern**.
    >
    > ![ASP.NET-Workload in VS-Installer](../ide/media/quickstart-aspnet-workload.png)
    >
-   >(Möglicherweise müssen Sie Visual Studio schließen, bevor Sie die Installation des neuen Workloads fortsetzen können.)
+   > (Möglicherweise müssen Sie Visual Studio schließen, bevor Sie die Installation des neuen Workloads fortsetzen können.)
 
 1. Überprüfen Sie im oberen Dropdownmenü des Dialogfelds **Neue ASP.NET Core-Webanwendung**, ob **ASP.NET Core 2.0** angezeigt wird. Wählen Sie dann **Webanwendung** und anschließend **OK** aus.
 
@@ -55,7 +56,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
-## <a name="create-the-application"></a>Erstellen der Anwendung
+## <a name="create-the-app"></a>Erstellen der App
 
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die **About.cshtml**.
 
@@ -85,7 +86,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![Ändern des Standardnachrichtentexts im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-application"></a>Ausführen der Anwendung
+## <a name="run-the-app"></a>Ausführen der App
 
 1. Drücken Sie **STRG**+**F5**, um die App auszuführen und sie im Webbrowser zu öffnen.
 

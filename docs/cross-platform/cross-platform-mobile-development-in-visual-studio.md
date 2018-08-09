@@ -10,14 +10,14 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281798"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251880"
 ---
-# <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende mobile Entwicklung in Visual Studio
+# <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende Mobile-Entwicklung in Visual Studio
 
 Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual Studio erstellen.  Außerdem lassen sich Tools in Visual Studio verwenden, um verbundene Dienste wie Office 365, App Service oder Application Insights unkompliziert hinzufügen.
 
@@ -164,6 +164,6 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Add Office 365 APIs to a Visual Studio project (Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt)](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Azure App Services - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

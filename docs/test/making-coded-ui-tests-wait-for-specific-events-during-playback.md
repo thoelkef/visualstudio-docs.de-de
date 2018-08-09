@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7503bc77f9cd857a0a551ff3862e2aa9824583ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975845"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381485"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
+# <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
 Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Verwenden Sie hierzu die entsprechende „UITestControl.WaitForControlXXX()“-Methode, wie in der folgenden Tabelle beschrieben. Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
@@ -32,7 +32,7 @@ Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- Wartet darauf, dass das Steuerelement bereit ist, Maus- und Tastatureingaben zu akzeptieren. Das Modul ruft diese API für alle Aktionen dahingehend implizit auf, dass darauf gewartet werden soll, dass das Steuerelement bereit ist, bevor ein Vorgang ausgeführt wird. Allerdings in bestimmten vertraulichen Szenarien müssen Sie möglicherweise einen expliziten Aufruf ausführen.
+ Wartet darauf, dass das Steuerelement bereit ist, Maus- und Tastatureingaben zu akzeptieren. Die Engine ruft diese API für alle Aktionen dahingehend implizit auf, dass darauf gewartet werden soll, dass das Steuerelement bereit ist, bevor ein Vorgang ausgeführt wird. Allerdings in bestimmten vertraulichen Szenarien müssen Sie möglicherweise einen expliziten Aufruf ausführen.
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
@@ -91,7 +91,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 ```
 
- All diese Methoden weisen folgendes Verhalten auf:
+ Alle diese Methoden weisen folgendes Verhalten auf:
 
  Die Methoden geben „true“ zurück, wenn die Wartezeit erfolgreich ist, andernfalls wird „false“ zurückgegeben.
 
@@ -106,13 +106,13 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  „Playback.Wait()“ ruft „Thread.Sleep()“ (nach obiger Berechnung) intern in kleineren Blöcken in einer „for“-Schleife auf, während die Überprüfung für den „cancel\break“-Vorgang erfolgt. Mit „Playback.Wait()“ können Sie die Wiedergabe vor dem Ende der Wartezeit abbrechen, während der Standbymodus möglicherweise eine Ausnahme auslöst.
 
 > [!TIP]
-> Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Editing Coded UI Tests Using the Coded UI Test Editor (Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI)](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)
 - [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Test-Editors der programmierten UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)

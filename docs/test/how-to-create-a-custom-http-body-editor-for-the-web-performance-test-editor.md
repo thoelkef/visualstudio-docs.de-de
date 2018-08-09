@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177047"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380654"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>How to: Create a Custom HTTP Body Editor for the Web Performance Test Editor
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
 Sie können einen benutzerdefinierten Inhalts-Editor erstellen, der Ihnen ermöglicht, den Zeichenfolgentextinhalt oder den binären Textinhalt einer Webdienstanforderung zu bearbeiten (z.B. SOAP, REST, asmx, wcf, RIA und andere Webdienstanforderungstypen).
 
@@ -44,34 +44,34 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 3.  Wählen Sie in der Liste der Vorlagen den Eintrag **Windows Forms-Steuerelementbibliothek** aus.
 
-4.  Geben Sie im Textfeld „Name“ einen Namen ein (z.B. `MessageEditors`), und klicken Sie auf **OK**.
+4.  Geben Sie in das Textfeld **Name** einen Namen ein (z.B. `MessageEditors`), und klicken Sie auf **OK**.
 
     > [!NOTE]
     > In diesem Beispiel wird "MessageEditors" verwendet.
 
-     Das Projekt wird der neuen Projektmappe hinzugefügt, und im Designer wird ein <xref:System.Windows.Forms.UserControl>-Objekt mit dem Namen "UserControl1.cs" präsentiert.
+     Das Projekt wird zur neuen Projektmappe hinzugefügt, und im Designer wird ein <xref:System.Windows.Forms.UserControl>-Objekt mit dem Namen *UserControl1.cs* präsentiert.
 
 5.  Ziehen Sie von der **Toolbox** unter der Kategorie **Allgemeine Steuerelemente** ein <xref:System.Windows.Forms.RichTextBox>-Element auf die Oberfläche von „UserControl1“.
 
 6.  Wählen Sie das Aktionstagsymbol (![Smarttag-Glyphe](../test/media/vs_winformsmttagglyph.gif)) in der oberen rechten Ecke des <xref:System.Windows.Forms.RichTextBox>-Steuerelements aus, und klicken Sie dann auf **In übergeordnetem Container andocken**.
 
-7.  Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Windows Forms-Bibliotheksprojekt und dann auf **Eigenschaften**.
+7.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Windows Forms-Bibliotheksprojekt, und wählen Sie **Eigenschaften** aus.
 
-8.  Wählen Sie unter „Eigenschaften“ die Registerkarte **Anwendung** aus.
+8.  Wählen Sie unter **Eigenschaften** die Registerkarte **Anwendung** aus.
 
 9. Wählen Sie in der Dropdownliste **Zielframework** den Eintrag **.NET Framework 4** aus.
 
-10. Das Dialogfeld "Änderung des Zielframeworks" wird angezeigt.
+10. Das Dialogfeld **Änderung des Zielframeworks** wird angezeigt.
 
 11. Klicken Sie auf **Ja**.
 
-12. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf den Knoten **Verweise** und dann auf **Verweis hinzufügen**.
+12. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verweise**, und wählen Sie **Verweise hinzufügen** aus.
 
 13. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
 14. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus. Klicken Sie dann auf **OK**.
 
-15. Wenn der Ansicht-Designer nicht mehr geöffnet ist, klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf **UserControl1.cs** und dann auf **Ansicht-Designer**.
+15. Wenn der **Ansicht-Designer** nicht mehr geöffnet ist, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **UserControl1.cs**, und wählen Sie anschließend **Ansicht-Designer** aus.
 
 16. Klicken Sie auf der Designoberfläche mit der rechten Maustaste, und wählen Sie **Code anzeigen** aus.
 
@@ -121,7 +121,7 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Hinzufügen einer Klasse zum Windows-Steuerelementbibliothek-Projekt
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Hinzufügen einer Klasse zum Projekt der Windows-Steuerelementbibliothek
 
 Fügen Sie dem Projekt eine Klasse hinzu. Diese wird verwendet, um die <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle und die <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>-Schnittstelle zu implementieren.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>So erstellen Sie eine Klasse und implementieren Sie den IStringHttpBodyEditorPlugin-Schnittstellencode
 
-1.  Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Windows Forms-Steuerelementbibliothek-Projekt, und wählen Sie dann **Neues Element hinzufügen** aus.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt der Windows Forms-Steuerelementbibliothek, und wählen Sie **Neues Element hinzufügen** aus.
 
 2.  Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -282,14 +282,14 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>So erstellen Sie das IStringHttpBodyEditorPlugin und IBinaryHttpBodyEditorPlugin und stellen Sie die resultierende DLL bereit
 
-1.  Klicken Sie im Menü „Erstellen“ auf **\<Name des Windows Form-Steuerelementbibliothek-Projekts> erstellen**.
+1.  Klicken Sie im Menü **Erstellen** auf **\<Name des Projekts der Windows Forms-Steuerelementbibliothek>erstellen**.
 
 2.  Schließen Sie alle Instanzen von Visual Studio.
 
     > [!NOTE]
     > Dadurch wird sichergestellt, dass die *DLL-Datei* nicht gesperrt ist, bevor Sie versuchen, diese zu kopieren.
 
-3.  Kopieren Sie die resultierende *DLL-Datei* (z.B. *MessageEditors.dll*) aus dem Ordner *bin\debug* des Projekts nach %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Kopieren Sie die resultierende *DLL-Datei* (z.B. *MessageEditors.dll*) aus dem Ordner *bin\debug* des Projekts in *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Öffnen Sie Visual Studio.
 
@@ -305,11 +305,11 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 3.  Wenn Sie die Aufzeichnung beenden, erweitern Sie im Webleistungstest-Editor die Anforderung für den Webdienst, und wählen Sie die Option **Zeichenfolgentext** oder **Binärer Text** aus.
 
-4.  Wählen Sie im Fenster "Eigenschaften" die Option "Zeichenfolgentext" oder "Binärer Text" aus, und wählen Sie die Auslassungspunkte (…).
+4.  Wählen Sie im Fenster „Eigenschaften“ die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)**.
 
      Das Dialogfeld **HTTP-Textdaten bearbeiten** wird angezeigt.
 
-5.  Sie können die Daten jetzt bearbeiten und "OK" wählen. Hierdurch wird die anwendbare GetNewValue-Methode aufgerufen, die den Inhalt im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aktualisiert.
+5.  Sie können die Daten jetzt bearbeiten und auf **OK** klicken. Hierdurch wird die anwendbare GetNewValue-Methode aufgerufen, die den Inhalt im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aktualisiert.
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
 
@@ -325,9 +325,9 @@ Weitere Informationen finden Sie unter [Seite „Anwendung“, Projekt-Designer 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Gewusst wie: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
+- [Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
 - [Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Gewusst wie: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
+- [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
 - [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Gewusst wie: Erstellen eines Visual Studio Add-Ins für die Webleistungstest-Ergebnisansicht](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

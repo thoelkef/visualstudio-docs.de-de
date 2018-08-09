@@ -1,5 +1,5 @@
 ---
-title: SccBeginBatch Funktion | Microsoft Docs
+title: SccBeginBatch-Funktion | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5350484294d02356301839e38b97bea1d40ec27c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9593496f36fba4a56334a206cf39e9a6ad96ad2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138235"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639788"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch-Funktion
 Diese Funktion wird eine Batch-Sequenz von Quellcodeverwaltungsvorgänge gestartet. Die [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch beenden. Diese Batches können nicht geschachtelt werden.  
@@ -31,22 +31,22 @@ Diese Funktion wird eine Batch-Sequenz von Quellcodeverwaltungsvorgänge gestart
 SCCRTN SccBeginBatch(void);  
 ```  
   
-#### <a name="parameters"></a>Parameter  
+### <a name="parameters"></a>Parameter  
  Keine  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |SCC_OK|Batches von Vorgängen wurde erfolgreich gestartet.|  
-|SCC_E_UNKNOWNERROR|Unspezifischen Fehlers.|  
+|SCC_E_UNKNOWNERROR|Nicht spezifischen Fehler.|  
   
 ## <a name="remarks"></a>Hinweise  
- Source Control Batches werden verwendet, um über mehrere Projekte oder mehrere Kontexte hinweg die gleichen Vorgänge auszuführen. Batches können verwendet werden, um redundante pro Projekt Dialogfelder, über die Benutzeroberfläche während eines Vorgangs im Batchmodus zu vermeiden. Die `SccBeginBatch` Funktion und die [SccEndBatch](../extensibility/sccendbatch-function.md) werden als Funktionspaar verwendet, um Anfang und Ende eines Vorgangs anzugeben. Sie sind nicht schachtelbar. `SccBeginBatch` setzt ein Flag gibt an, dass ein Batch ausgeführt wird.  
+ Source-Control-Batches werden verwendet, um die gleichen Vorgänge über mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante projektbezogene Dialogfeldern auf die Benutzeroberfläche während eines Vorgangs im Batchmodus zu vermeiden. Die `SccBeginBatch` Funktion und die [SccEndBatch](../extensibility/sccendbatch-function.md) dienen als Funktionspaar Anfang und Ende eines Vorgangs an. Sie sind nicht schachtelbar. `SccBeginBatch` Legt ein Flag, der angibt, dass ein Batchvorgang ausgeführt wird.  
   
- Während ein Batchvorgangs aktiviert ist, sollte das Quellsteuerelement-Plug-in präsentieren darf höchstens ein Dialogfeld für jede Frage an den Benutzer und die Antwort in diesem Dialogfeld auf alle nachfolgenden Vorgänge gelten.  
+ Während ein Batchvorgangs aktiviert ist, sollte das Quellcodeverwaltungs-Plug-in höchstens ein Dialogfeld für Fragen an den Benutzer vorhanden und die Antwort in diesem Dialogfeld auf alle nachfolgenden Operationen anwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+ [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154221"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252465"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 
 ## <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -41,7 +41,7 @@ Stellen Sie während der Installation sicher, dass Visual Studio in der Liste de
 
 Die Version von Visual Studio, die in der Installation von Unity enthalten ist, ist möglicherweise nicht aktuell. Es wird empfohlen, nach Updates zu suchen, damit Sie Zugriff auf die aktuellen Tools und Features haben.
 
-- [Aktualisieren von Visual Studio](../install/update-visual-studio.md)
+- [Visual Studio aktualisieren](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>Manuelle Installation
 
@@ -77,7 +77,7 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 1. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
 
-1. Schließen Sie das Dialogfeld „Einstellungen“, um die Konfiguration abzuschließen.
+1. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
 
 ## <a name="support-for-older-versions"></a>Unterstützung älterer Versionen
 
@@ -93,4 +93,4 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- Informationen zum Arbeiten mit und Debuggen von Unity-Projekten in Visual Studio finden Sie unter [Using Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Informationen zum Arbeiten mit und Debuggen von Unity-Projekten in Visual Studio finden Sie unter [Verwenden von Visual Studio-Tools für Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

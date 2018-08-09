@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178360"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380165"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Gewusst wie: Erstellen eines Webleistungstest-Plug-Ins
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins
 
 Webleistungstest-Plug-Ins ermöglichen Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Mit einem benutzerdefinierten Webleistungstest-Plug-In können Sie bei Ausführung des Webleistungstests einen Teil des Codes aufrufen. Das Webleistungstest-Plug-In wird bei jeder Testiteration einmal ausgeführt. Wenn Sie außerdem die PreRequest-Methode oder PostRequest-Methode im Test-Plug-In überschreiben, werden diese Anforderungs-Plug-Ins jeweils vor bzw. nach den einzelnen Anforderungen ausgeführt.
 
@@ -29,13 +29,13 @@ Sie können ein benutzerdefiniertes Webleistungstest-Plug-In erstellen, indem Si
 Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Webleistungstests verwendet werden, sodass Sie nur eine minimale Menge Code erstellen müssen, um eine größere Kontrolle über Ihre Webleistungstests zu erhalten. Sie können die Plug-Ins jedoch auch mit codierten Webleistungstests verwenden. Weitere Informationen finden Sie unter [Generieren und Ausführen eines programmierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> Außerdem können Sie Auslastungstest-Plug-Ins erstellen. Siehe [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
+> Außerdem können Sie Auslastungstest-Plug-Ins erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="to-create-a-custom-web-performance-test-plug-in"></a>So erstellen Sie ein benutzerdefiniertes Plug-In für Webleistungstests
+## <a name="to-create-a-custom-web-performance-test-plug-in"></a>So erstellen Sie ein benutzerdefiniertes Webleistungstest-Plug-In
 
 1.  Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
 
-2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Projektmappe, und klicken Sie mit der linken Maustaste zuerst auf **Hinzufügen** und anschließend auf **Neues Projekt**.
+2.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
@@ -47,9 +47,9 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
 6.  Klicken Sie auf **OK**.
 
-7.  Dem Projektmappen-Explorer wird das neue Klassenbibliotheksprojekt hinzugefügt, und die neue Klasse wird im Code-Editor angezeigt.
+7.  Das neue Klassenbibliotheksprojekt wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** angezeigt.
 
-8.  Klicken Sie im Projektmappen-Explorer in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und klicken Sie anschließend mit der linken Maustaste auf **Verweis hinzufügen**.
+8.  Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
 9. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
@@ -57,17 +57,17 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
 11. Klicken Sie auf **OK**.
 
-     Dem Ordner **Verweis** im Projektmappen-Explorer wird der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** hinzugefügt.
+     Der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird zum Ordner **Verweise** im **Projektmappen-Explorer** hinzugefügt.
 
-12. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
+12. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
 
 13. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-14. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das Klassenbibliotheksprojekt aus.
+14. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das **Klassenbibliotheksprojekt** aus.
 
 15. Klicken Sie auf **OK**.
 
-16. Schreiben Sie im Code-Editor den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> abgeleitet wird.
+16. Schreiben Sie im **Code-Editor** den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> abgeleitet wird.
 
 17. Implementieren Sie Code innerhalb eines oder mehrerer Ereignishandler. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
 
@@ -175,8 +175,8 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Gewusst wie: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
+- [Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
 - [Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Gewusst wie: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
+- [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
 - [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md)

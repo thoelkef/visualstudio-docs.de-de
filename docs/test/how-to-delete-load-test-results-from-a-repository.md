@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178864"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381816"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Gewusst wie: Löschen von Auslastungstestergebnissen aus einem Repository
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Vorgehensweise: Löschen von Auslastungstestergebnissen aus einem Repository
 
 Alle Informationen, die während eines Auslastungstests erfasst werden, werden im Ergebnisrepository für Auslastungstests gespeichert. Das Ergebnisrepository für Auslastungstests enthält Leistungsindikatordaten und Informationen zu Fehlern. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -42,7 +42,7 @@ Alle Informationen, die während eines Auslastungstests erfasst werden, werden i
 
      Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). **Test** ist der Name des Tests und unter **Beschreibung** wird die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt wurde. In der Spalte **Beschreibung** werden die kurzen Beschreibungen angezeigt, die in den **Analysekommentaren** für dieses Testergebnis eingegeben wurden.
 
-5.  Klicken Sie in der Liste **Auslastungstestergebnisse** auf ein Ergebnis. Sie können die UMSCHALTTASTE und/oder STRG-TASTE verwenden, um mehr als ein Ergebnis auszuwählen.
+5.  Klicken Sie in der Liste **Auslastungstestergebnisse** auf ein Ergebnis. Sie können die **UMSCHALTTASTE** und/oder **STRG** drücken, um mehr als ein Ergebnis auszuwählen.
 
 6.  Klicken Sie auf **Entfernen**.
 
@@ -53,7 +53,7 @@ Alle Informationen, die während eines Auslastungstests erfasst werden, werden i
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Exportieren von Auslastungstestergebnissen aus einem Repository](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Vorgehensweise: Exportieren von Auslastungstestergebnissen aus einem Repository](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Gewusst wie: Importieren von Auslastungstestergebnissen in ein Repository](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository](../test/how-to-import-load-test-results-into-a-repository.md)

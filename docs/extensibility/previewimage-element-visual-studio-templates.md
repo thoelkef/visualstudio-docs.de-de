@@ -1,5 +1,5 @@
 ---
-title: PreviewImage-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: PreviewImage-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136805"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638976"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage-Element (Visual Studio-Vorlagen)
-Gibt an, das Vorschaubild als Dateiname für das Vorschaubild, die entweder in angezeigt werden, wird die **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Gibt das Vorschaubild als Dateiname, für das Vorschaubild, die entweder in angezeigt werden die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -47,16 +47,16 @@ Gibt an, das Vorschaubild als Dateiname für das Vorschaubild, die entweder in a
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss eine Zeichenfolge, die einen Dateinamen darstellt.  
+ Der Text muss eine Zeichenfolge sein, die einen Dateinamen darstellt.  
   
 ## <a name="remarks"></a>Hinweise  
  `PreviewImage` ist ein optionales Element.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

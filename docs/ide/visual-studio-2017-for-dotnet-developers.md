@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175303"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381093"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
@@ -36,7 +36,7 @@ Einige Erweiterungen bieten auch Tastaturschemas an:
 
 Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 
-| Tastenkombination (Alle Profile) | Befehl | description |
+| Tastenkombination (Alle Profile) | Befehl | Beschreibung  |
 |-|-|-|
 | **STRG**+**T** | Gehe zu allen | Navigieren zu einer beliebigen Datei-/Typ-/Member-/Symboldeklaration |
 | **F12** (oder **Strg**+**Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |
@@ -140,7 +140,7 @@ Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schre
 
 | Feature | Details | Vorgehensweise zum Aktivieren |
 |-|-|-|
-| Suchen von Dateien im Projektmappen-Explorer | Markiert die aktive Datei im Projektmappen-Explorer. | **Extras** > **Optionen** > **Projekte und Projektmappen** > **Aktives Element im Projektmappen-Explorer überwachen** |
+| Suchen von Dateien im Projektmappen-Explorer | Markiert die aktive Datei im **Projektmappen-Explorer** | **Extras** > **Optionen** > **Projekte und Projektmappen** > **Aktives Element im Projektmappen-Explorer überwachen** |
 | Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen | Zeigt eine Glühbirne mit einer Codefehlerbehebung zum Installieren eines NuGet-Pakets für einen nicht referenzierten Typ an. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **using-Direktiven für Typen in Referenzassemblys vorschlagen** und **using-Direktiven für Typen in NuGet-Paketen vorschlagen** |
 | Vollständige Projektmappenanalyse aktivieren | Zeigt alle Fehler in der Projektmappe in der **Fehlerliste** an. | **Tools** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Vollständige Projektmappenanalyse aktivieren** |
 | Aktivieren der Navigation zu dekompilierten Quellen | Lässt die Aktivierung von „Gehe zu Definition“ für Typen/Member aus externen Quellen zu und verwendet den ILSpy-Decompiler zur Anzeige von Methodentexten. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren** |

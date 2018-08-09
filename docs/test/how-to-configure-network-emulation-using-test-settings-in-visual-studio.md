@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66877397912fca0fbd3996c2dab146b040a047b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972419"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380843"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Gewusst wie: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
 Sie können den Adapter für diagnostische Daten für das Testen einer Anwendung in verschiedenen Netzwerkumgebungen von Visual Studio konfigurieren. Er kann auch so konfiguriert werden, dass eine künstliche Netzwerklast oder ein Engpass beim Ausführen der Tests getestet wird.
 
@@ -84,5 +84,5 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
 - [Run manual tests (VSTS) (Ausführen manueller Tests (VSTS))](/vsts/manual-test/getting-started/run-manual-tests)

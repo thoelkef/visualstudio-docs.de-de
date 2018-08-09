@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977282"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380120"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
 
@@ -30,9 +30,9 @@ Wenn Visual Studio einen Komponententest für eine generische Klasse generiert, 
 ## <a name="examples"></a>Beispiele
  In den folgenden Beispielen werden Komponententests für generische Methoden veranschaulicht:
 
--   [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode). Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
+-   [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode) Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
 
--   [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied). In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
+-   [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied) In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
 
 ###  <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
  Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
@@ -201,4 +201,4 @@ Wie bei allen neu generierten Komponententests müssen Sie diesem Komponententes
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Komponententest für Code](../test/unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176212"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382064"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>How to: Create a Recorder Plug-In
+# <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
-Das <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> ermöglicht das Ändern eines aufgezeichneten Webleistungstests. Die Änderung wird vorgenommen, nachdem Sie auf der Symbolleiste der Webleistungstest-Aufzeichnung auf **Beenden** klicken, jedoch vor dem Speichern und Anzeigen des Tests im Webleistungstest-Editor.
+Das <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> ermöglicht das Ändern eines aufgezeichneten Webleistungstests. Die Änderung wird vorgenommen, nachdem Sie in der Symbolleiste der **Webleistungstest-Aufzeichnung** auf **Beenden** klicken, jedoch vor dem Speichern und Anzeigen des Tests im Webleistungstest-Editor.
 
-Ein Aufzeichnungs-Plug-In ermöglicht Ihnen, Ihre eigene benutzerdefinierte Korrelation auf dynamische Parameter auszuführen. Durch die integrierte Korrelationsfunktion erkennen Webleistungstests die dynamischen Parameter in der Webaufzeichnung nach ihrer Ausführung oder bei Auswahl der Option **Dynamische Parameter auf Webtestparameter hochstufen** auf der Symbolleiste des Webleistungstest-Editors. Die integrierte Erkennungsfunktion findet jedoch nicht immer alle dynamischen Parameter. Eine Sitzungs-ID, deren Wert normalerweise innerhalb von 5 bis 30 Minuten geändert wird, wird z. B. nicht gefunden. Daher müssen Sie den Korrelationsprozess manuell ausführen.
+Ein Aufzeichnungs-Plug-In ermöglicht Ihnen, Ihre eigene benutzerdefinierte Korrelation auf dynamische Parameter auszuführen. Durch die integrierte Korrelationsfunktion erkennen Webleistungstests die dynamischen Parameter in der Webaufzeichnung nach ihrer Ausführung oder bei Auswahl der Option **Dynamische Parameter auf Webtestparameter hochstufen** in der Symbolleiste des **Webleistungstest-Editors**. Die integrierte Erkennungsfunktion findet jedoch nicht immer alle dynamischen Parameter. Eine Sitzungs-ID, deren Wert normalerweise innerhalb von 5 bis 30 Minuten geändert wird, wird z. B. nicht gefunden. Daher müssen Sie den Korrelationsprozess manuell ausführen.
 
 Das <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> ermöglicht das Schreiben von Code für ein eigenes benutzerdefiniertes Plug-In. Dieses Plug-In kann eine Korrelation ausführen oder den Webleistungstest in unterschiedlicher Weise ändern, bevor er gespeichert und im Webleistungstest-Editor angezeigt wird. Wenn Sie feststellen, dass eine bestimmte dynamische Variable für viele Aufzeichnungen korreliert werden muss, können Sie den Prozess daher automatisieren.
 
@@ -29,13 +29,13 @@ Ein Aufzeichnungs-Plug-In kann in einem Webleistungstest auch zum Hinzufügen vo
 
 In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code für ein Aufzeichnungs-Plug-In erstellen und das Plug-In bereitstellen und ausführen. Im Beispielcode im Anschluss an die Prozeduren wird veranschaulicht, wie ein benutzerdefiniertes Aufzeichnungs-Plug-In für die Korrelation dynamischer Parameter mit Visual C# erstellt wird.
 
-## <a name="creating-a-recorder-plug-in"></a>Erstellen eines Aufzeichnungs-Plug-Ins
+## <a name="create-a-recorder-plug-in"></a>Erstellen eines Aufzeichnungs-Plug-Ins
 
 ### <a name="to-create-a-recorder-plug-in"></a>So erstellen Sie ein Aufzeichnungs-Plug-In
 
 1.  Öffnen Sie eine Projektmappe, die das Webleistungs- und Auslastungstestprojekt mit dem Webleistungstest enthält, für den Sie ein Aufzeichnungs-Plug-In erstellen möchten.
 
-2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
+2.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
@@ -45,9 +45,9 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 5.  Geben Sie im Textfeld **Name** einen Namen für das Aufzeichnungs-Plug-In ein.
 
-     Die Klassenbibliothek wird dem Projektmappen-Explorer hinzugefügt, und die neue Klasse wird im Code-Editor geöffnet.
+     Die Klassenbibliothek wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** geöffnet.
 
-6.  Klicken Sie im Projektmappen-Explorer im Ordner des neuen Klassenbibliothekprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und klicken Sie auf **Verweis hinzufügen**.
+6.  Klicken Sie im **Projektmappen-Explorer** im Ordner des neuen Klassenbibliotheksprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
     > [!TIP]
     > Ein Beispiel für den Ordner eines neuen Klassenbibliothekprojekts ist **RecorderPlugins**.
@@ -58,7 +58,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 8.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus und klicken dann auf **OK**.
 
-     Dem Ordner **Verweise** im Projektmappen-Explorer wird **Microsoft.VisualStudio.QualityTools.WebTestFramework** hinzugefügt.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird im **Projektmappen-Explorer** zum Ordner **Verweise** hinzugefügt.
 
 9. Schreiben Sie den Code für das Aufzeichnungs-Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> abgeleitet wird.
 
@@ -81,7 +81,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 11. Fügen Sie entsprechend den Aktionen, die das Aufzeichnungs-Plug-In nach der Webaufzeichnung ausführen soll, weiteren Code hinzu. Sie können z. B. Code hinzufügen, um die benutzerdefinierte Korrelation wie im folgenden Beispiel dargestellt zu behandeln. Ein Aufzeichnungs-Plug-In kann auch für Aufgaben wie das Konvertieren von Kommentaren in Transaktionen oder Hinzufügen von Validierungsregeln zum Webleistungstest erstellt werden.
 
-12. Klicken Sie im Menü **Erstellen** auf „\<Name des Klassenbibliothekprojekts> erstellen“.
+12. Klicken Sie im Menü **Erstellen** auf **\<Name des Klassenbibliotheksprojekts> erstellen**.
 
 13. Als Nächstes müssen Sie das Aufzeichnungs-Plug-In bereitstellen, um es in Visual Studio zu registrieren.
 
@@ -89,9 +89,9 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, müssen Sie die resultierende DLL-Datei an einem von zwei Speicherorten speichern:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*version*>\WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
 
 > [!WARNING]
 > Nachdem Sie das Aufzeichnungs-Plug-In an einen dieser Speicherorte kopiert haben, müssen Sie Visual Studio neu starten, damit das Aufzeichnungs-Plug-In registriert wird.
@@ -102,7 +102,7 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, müssen Sie die resultie
 
      Das Dialogfeld **WebTestRecordPlugins aktivieren** wird angezeigt.
 
-2.  Aktivieren Sie das Kontrollkästchen für das Aufzeichnungs-Plug-In, und wählen Sie "OK".
+2.  Aktivieren Sie das Kontrollkästchen für das Aufzeichnungs-Plug-In, und klicken Sie auf **OK**.
 
      Nachdem der Webleistungstest die Aufzeichnung abgeschlossen hat, wird das neue Aufzeichnungs-Plug-In ausgeführt.
 

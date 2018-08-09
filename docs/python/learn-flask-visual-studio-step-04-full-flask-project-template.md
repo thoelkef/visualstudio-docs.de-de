@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232288"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388149"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
@@ -35,19 +35,19 @@ Dieser Artikel gilt ebenfalls für die Vorlage „Flask/Jade-Webprojekt“, die 
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Schritt 4-1: Erstellen eines Projekts aus der Vorlage
 
-1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe „LearningFlask“, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
+1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningFlask**, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
-1. Suchen Sie im Dialogfeld „Neues Projekt“ nach der Vorlage „Flask-Webprojekt“, und wählen Sie sie aus. Nennen Sie das Projekt „FlaskWeb“, und klicken Sie auf **OK**.
+1. Suchen Sie im Dialogfeld „Neues Projekt“ nach der Vorlage **Flask-Webprojekt**, und wählen Sie sie aus. Nennen Sie das Projekt „FlaskWeb“, und klicken Sie auf **OK**.
 
-1. Da die Vorlage erneut eine `requirements.txt`-Datei enthält, werden Sie von Visual Studio gefragt, wohin die Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen.
+1. Da die Vorlage erneut eine *requirements.txt*-Datei enthält, werden Sie von Visual Studio gefragt, wohin die Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen.
 
-1. Legen Sie das Projekt „FlaskWeb“ als Standardprojekt für die Visual Studio-Projektmappe fest, sobald Visual Studio die Einrichtung der virtuellen Umgebung abgeschlossen hat. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
+1. Legen Sie das Projekt **FlaskWeb** als Standardprojekt für die Visual Studio-Projektmappe fest, sobald Visual Studio die Einrichtung der virtuellen Umgebung abgeschlossen hat. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
 
     ![Projektmappen-Explorer mit dem Projekt „FlaskWeb“ als Startprojekt](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debuggen starten** (F5) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
+1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
 
-    ![Schaltfläche zum Ausführen des Webservers auf der Symbolleiste in Visual Studio](media/flask/run-web-server-toolbar-button.png)
+    ![Symbolleisten-Schaltfläche „Webserver ausführen“ in Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
 1. Die von der Vorlage erstellte App verfügt über drei Seiten: „Startseite“, „Info“ und „Kontakt“. Über die Navigationsleiste können Sie zwischen diesen Seiten navigieren. Nehmen Sie sich etwas Zeit, um sich mit den verschiedenen Teilen der App vertraut zu machen. Verwenden Sie für die Authentifizierung bei der App über den **Anmelden**-Befehl die Administratoranmeldeinformationen, die Sie zuvor erstellt haben.
 
@@ -59,20 +59,20 @@ Dieser Artikel gilt ebenfalls für die Vorlage „Flask/Jade-Webprojekt“, die 
 
 1. Für die folgenden Abschnitte kann die App weiterhin ausgeführt werden.
 
-    Wenn Sie die App beenden und ein Commit der Änderungen in der Quellcodeverwaltung ([Commit changes to source control](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)) ausführen möchten, öffnen Sie zunächst im **Team Explorer** die Seite **Änderungen**. Klicken Sie mit der rechten Maustaste auf den Ordner für die virtuelle Umgebung (vermutlich `env`), und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
+    Wenn Sie die App beenden und [ein Commit der Änderungen für die Quellcodeverwaltung ausführen möchten](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), öffnen Sie zunächst im **Team Explorer** die Seite **Änderungen**. Klicken Sie mit der rechten Maustaste auf den Ordner für die virtuelle Umgebung (vermutlich **env**), und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
 
 ### <a name="examine-what-the-template-creates"></a>Überprüfen des von der Vorlage erstellten Ergebnisses
 
-Die Vorlage „Flask-Webprojekt“ erstellt die untenstehende Struktur. Die Inhalte ähneln den Projekten, die Sie in vorherigen Schritten erstellt haben. Der Unterschied besteht darin, dass die Vorlage „Flask-Webprojekt“ mehr Struktur im `static`-Ordner enthält, da sie jQuery und Bootstrap für ein reaktionsfähiges Design enthält. Die Vorlage fügt ebenfalls die Seite „Kontakt“ hinzu. Wenn Sie die vorherigen Schritte in diesem Tutorial befolgt haben, sollte Ihnen diese Vorlage vertraut vorkommen.
+Die Vorlage „Flask-Webprojekt“ erstellt die untenstehende Struktur. Die Inhalte ähneln den Projekten, die Sie in vorherigen Schritten erstellt haben. Der Unterschied besteht darin, dass die Vorlage „Flask-Webprojekt“ mehr Struktur im *static*-Ordner enthält, da sie jQuery und Bootstrap für ein reaktionsfähiges Design enthält. Die Vorlage fügt ebenfalls die Seite „Kontakt“ hinzu. Wenn Sie die vorherigen Schritte in diesem Tutorial befolgt haben, sollte Ihnen diese Vorlage vertraut vorkommen.
 
 - Dateien im Projektstamm:
-  - `runserver.py`, ein Skript, um die App auf einem Entwicklungsserver auszuführen.
-  - `requirements.txt`, eine Textdatei, die eine Abhängigkeit von Flask 0.x enthält.
-- Der Ordner `FlaskWeb` enthält alle App-Dateien:
-  - `__init.py__` markiert den App-Code als Python-Modul, erstellt das Flask-Objekt und importiert die App-Ansichten.
-  - `views.py` enthält den Code zum Rendern von Seiten.
-  - Der Ordner `static` enthält Unterordner namens `content` (CSS-Dateien), `fonts` (Schriftartdateien) und `scripts` (JavaScript-Dateien).
-  - Der Ordner `templates` enthält die `layout.html`-Basisvorlage und `about.html`, `contact.html` und `index.html` für bestimmte Seiten, die `layout.html` erweitern.
+  - *runserver.py*: ein Skript, um die App auf einem Entwicklungsserver auszuführen.
+  - *requirements.txt*: Enthält eine Abhängigkeit von Flask 0.x.
+- Der Ordner *FlaskWeb* enthält alle App-Dateien:
+  - *\_\_init.py\_\_* markiert den App-Code als Python-Modul, erstellt das Flask-Objekt und importiert die App-Ansichten.
+  - *views.py* enthält den Code zum Rendern von Seiten.
+  - Der Ordner *static* enthält Unterordner namens *content* (CSS-Dateien), *fonts* (Schriftartdateien) und *scripts* (JavaScript-Dateien).
+  - Der Ordner *templates* enthält eine *layout.html*-Basisvorlage sowie *about.html*, *contact.html* und *index.html* für spezifische Seiten, die alle *layout.html* erweitern.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Frage: Ist es möglich, eine virtuelle Umgebung für andere Visual Studio-Projekte freizugeben?
 
@@ -86,7 +86,7 @@ Wenn Sie dennoch eine vorhandene virtuelle Umgebung verwenden möchten, führen 
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 4-2: Informationen zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
 
-Wie Sie beim Ausführen des Projekts festgestellt haben, verfügt die App über drei Ansichten: „Startseite“, „Info“ und „Kontakt“. Der Code für diese Ansichten befindet sich in `FlaskWeb/views.py`. Jede Ansichtsfunktion ruft einfach `flask.render_template` mit dem Pfad zu einer Vorlage und einer Variablenliste mit Argumenten für die Werte auf, die an die Vorlage übergeben werden sollen. Beispielsweise wird die Seite „Info“ von der Funktion `about` verarbeitet, deren Decorator das URL-Routing bereitstellt:
+Wie Sie beim Ausführen des Projekts festgestellt haben, verfügt die App über drei Ansichten: „Startseite“, „Info“ und „Kontakt“. Der Code für diese Ansichten befindet sich im Ordner *FlaskWeb/views.py*. Jede Ansichtsfunktion ruft einfach `flask.render_template` mit dem Pfad zu einer Vorlage und einer Variablenliste mit Argumenten für die Werte auf, die an die Vorlage übergeben werden sollen. Beispielsweise wird die Seite „Info“ von der Funktion `about` verarbeitet, deren Decorator das URL-Routing bereitstellt:
 
 ```python
 @app.route('/about')
@@ -102,7 +102,7 @@ def about():
 
 Die Funktionen `home` und `contact` sind nahezu identisch und weisen ähnliche Decorators, aber etwas andere Argumente auf.
 
-Vorlagen befinden sich im Ordner `templates` der App. Die Basisvorlage `layout.html` ist am umfangreichsten. Sie verweist auf alle erforderlichen statischen Dateien (JavaScript und CSS), definiert einen Block namens „content“, der von anderen Seiten überschrieben wird, und stellt einen weiteren Block namens „scripts“ bereit. In den folgenden kommentierten Auszügen aus `layout.html` werden diese bestimmten Bereiche veranschaulicht:
+Vorlagen befinden sich im Ordner *Templates* der App. Die Basisvorlage *layout.html* ist am umfangreichsten. Sie verweist auf alle erforderlichen statischen Dateien (JavaScript und CSS), definiert einen Block namens „content“, der von anderen Seiten überschrieben wird, und stellt einen weiteren Block namens „scripts“ bereit. In den folgenden kommentierten Auszügen aus *layout.html* werden diese bestimmten Bereiche veranschaulicht:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ Vorlagen befinden sich im Ordner `templates` der App. Die Basisvorlage `layout.h
 </html>
 ```
 
-Die einzelnen Seitenvorlagen `about.html`, `contact.html` und `index.html` erweitern jeweils die Basisvorlage `layout.html`. `about.html` ist die einfachste Vorlage. Sie enthält die Tags `{% extends %}` und `{% block content %}`:
+Die einzelnen Seitenvorlagen *about.html*, *contact.html* und *index.html* erweitern alle die Basisvorlage *layout.html*. *about.html* ist die einfachste Vorlage. Sie enthält die Tags `{% extends %}` und `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,22 +156,22 @@ Die einzelnen Seitenvorlagen `about.html`, `contact.html` und `index.html` erwei
 {% endblock %}
 ```
 
-`index.html` und `contact.html` verwenden die gleiche Struktur. Ihr Inhalt im Block „content“ ist umfangreicher.
+*index.html* und *contact.html* verwenden die gleiche Struktur. Außerdem ist ihr Inhalt im Block „content“ umfangreicher.
 
 ## <a name="the-flaskjade-web-project-template"></a>Die Vorlage „Flask/Jade-Webprojekt“
 
 Wie am Anfang dieses Artikels bereits erwähnt wurde, ist die Vorlage „Flask/Jade-Webprojekt“ in Visual Studio enthalten, mit der eine Anwendung erstellt wird, die optisch dem entspricht, was mit der Vorlage „Flask-Webprojekt“ generiert wird. Der Hauptunterschied besteht darin, dass diese die Jade-Vorlagen-Engine verwendet, die eine Erweiterung von Jinja darstellt und die gleichen Konzepte in einer kompakteren Sprache implementiert. Insbesondere verwendet Jade Schlüsselwörter anstelle von Tags, die beispielsweise in Trennzeichen ({% %}) eingeschlossen sind, und mit denen Sie mithilfe von Schlüsselwörtern auf CSS-Stile und HTML-Elemente verweisen können.
 
-Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in `requirements.txt` ein. 
+Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in *requirements.txt* ein. 
 
-Die `__init__.py`-Datei der App enthält folgende Zeile:
+Die Datei *\_\_init\_\_.py* der App enthält folgende Zeile:
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
-Im Ordner `templates` finden Sie `.jade`-Dateien anstelle von `.html`-Vorlagen, und die Ansichten in `views.py` verweisen auf diese Dateien, wenn sie `flask.render_template` aufrufen. Davon abgesehen ist der Code der Ansichten identisch.
+Im Ordner *templates* finden Sie *.jade*-Dateien anstelle von *.html-Vorlagen*, und die Ansichten in *views.py* verweisen auf diese Dateien, wenn sie `flask.render_template` aufrufen. Davon abgesehen ist der Code der Ansichten identisch.
 
-Wenn Sie eine der `.jade`-Dateien öffnen, sehen Sie den kompakteren Ausdruck einer Vorlage. Hier sehen Sie beispielsweise die Inhalte von `templates/layout.jade`, wie sie von der Vorlage „Flask/Jade-Webprojekt“ erstellt wurden:
+Wenn Sie eine der *.jade*-Dateien öffnen, sehen Sie den kompakteren Ausdruck einer Vorlage. Hier sehen Sie beispielsweise die Inhalte von *templates/layout.jade*, wie sie von der Vorlage „Flask/Jade-Webprojekt“ erstellt wurden:
 
 ```jade
 doctype html
@@ -213,7 +213,7 @@ html
     block scripts
 ```
 
-Hier sehen Sie die Inhalte von `templates/about.jade`, bei denen `#{ <name>}` für Platzhalter verwendet wird:
+Hier sehen Sie die Inhalte von *templates/about.jade*, bei denen `#{ <name>}` für Platzhalter verwendet wird:
 
 ```jade
 extends layout

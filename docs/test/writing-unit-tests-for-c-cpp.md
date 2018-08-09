@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235317"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341371"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -34,7 +34,7 @@ Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als au
 
 **Visual Studio 2017, Version 15.5**
 
-- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** hinzufügen können, sowie Optionen, die Sie über **Extras > Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
+- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** zu einer Projektmappe hinzufügen können, sowie Optionen, die Sie über **Extras** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
 
@@ -42,7 +42,7 @@ Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als au
 
 **Visual Studio 2015 und frühere Versionen**
 
-Sie können die Erweiterungen für den Google Test-Adapter und den Boost.Test-Adapter in Visual Studio Marketplace unter [Test Adapter for Boost.Test (Testadapter für Boost.Test)](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) und [Test Adapter for Google Test (Testadapter für Google Test)](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest) herunterladen.
+Sie können die Erweiterungen für den Google Test-Adapter und den Boost.Test-Adapter in Visual Studio Marketplace unter [Testadapter für Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) und [Testadapter für Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest) herunterladen.
 
 ## <a name="basic-test-workflow"></a>Grundlegender Testworkflow
 
@@ -50,28 +50,28 @@ Im folgenden Abschnitt werden die grundlegenden ersten Schritte für C++-Kompone
 
 ### <a name="create-a-test-project"></a>Erstellen eines Testprojekts
 
-Sie definieren Tests für mindestens ein Testprojekt und führen diese aus. Das Testprojekt (bzw. die Testprojekte) muss (bzw. müssen) in derselben Projektmappe gespeichert sein wie der Code, den Sie testen möchten. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten und dann auf **Hinzufügen > Neues Projekt**, um ein neues Testprojekt hinzuzufügen. Klicken sie dann im linken Bereich auf **Visual C++ Test** und anschließend auf einen der Projekttypen im mittleren Bereich. In der folgenden Abbildung werden Testprojekte dargestellt, auf die Sie zugreifen können, wenn die Workload **Desktop Development mit C++** installiert ist:
+Sie definieren Tests für mindestens ein Testprojekt und führen diese aus. Das Testprojekt (bzw. die Testprojekte) muss (bzw. müssen) in derselben Projektmappe gespeichert sein wie der Code, den Sie testen möchten. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus, um ein neues Testprojekt hinzuzufügen. Klicken sie dann im linken Bereich auf **Visual C++ Test** und anschließend auf einen der Projekttypen im mittleren Bereich. In der folgenden Abbildung werden Testprojekte dargestellt, auf die Sie zugreifen können, wenn die Workload **Desktop Development mit C++** installiert ist:
 
 ![C++-Testprojekte](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Erstellen von Verweisen auf andere Projekte in der Projektmappe
 
-Fügen Sie einen Verweis auf das Projekt in Ihrem Testprojekt hinzu, damit der Testcode auf die Funktionen in dem zu testenden Projekt zugreifen kann. Klicken Sie im **Projektmappen-Explorer** zunächst mit der rechten Maustaste auf den Knoten für das Testprojekt und dann auf **Hinzufügen > Verweis**. Wählen Sie dann in dem Dialogfeld das Projekt bzw. die Projekte aus, das bzw. die Sie testen möchten.
+Fügen Sie einen Verweis auf das Projekt in Ihrem Testprojekt hinzu, damit der Testcode auf die Funktionen in dem zu testenden Projekt zugreifen kann. Klicken Sie im **Projektmappen-Explorer** zunächst mit der rechten Maustaste auf den Knoten für das Testprojekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus. Wählen Sie dann in dem Dialogfeld das Projekt bzw. die Projekte aus, das bzw. die Sie testen möchten.
 
 ![Verweis hinzufügen](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Hinzufügen von #include-Direktiven für Headerdateien
 
-Fügen Sie als Nächstes der CPP-Datei in Ihrem Komponententest eine `#include`-Direktive für sämtliche Headerdateien hinzu, die die Typen und Funktionen deklarieren, die Sie testen möchten. Geben Sie `#include "` ein, um IntelliSense zu aktivieren, damit es Ihnen bei der Auswahl hilft. Wiederholen Sie diesen Vorgang für alle zusätzlichen Header.
+Fügen Sie als Nächstes in der *CPP*-Datei in Ihrem Komponententest eine `#include`-Direktive für sämtliche Headerdateien hinzu, die die Typen und Funktionen deklarieren, die Sie testen möchten. Geben Sie `#include "` ein, um IntelliSense zu aktivieren, damit es Ihnen bei der Auswahl hilft. Wiederholen Sie diesen Vorgang für alle zusätzlichen Header.
 
 ![Hinzufügen von include-Anweisungen](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Schreiben von Testmethoden
 
 > [!NOTE]
-> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die Dokumentation finden Sie unter: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference (Referenz für die Microsoft.VisualStudio.TestTools.CppUnitTestFramework-API)](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Die Dokumentation für Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Die Dokumentation für Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests)](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die Dokumentation finden Sie unter: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference (Referenz für die Microsoft.VisualStudio.TestTools.CppUnitTestFramework-API)](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Die Dokumentation zu Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Die Dokumentation zu Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests)](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
-Die CPP-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, die als Beispiel für das Schreiben von Testcode definiert sind. Beachten Sie, dass die Signaturen die Makros TEST_CLASS und TEST_METHOD verwenden, wodurch Sie die Methoden über das Fenster „Test-Explorer“ finden können.
+Die *CPP*-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, die als Beispiel für das Schreiben von Testcode definiert sind. Beachten Sie, dass die Signaturen die Makros TEST_CLASS und TEST_METHOD verwenden, wodurch Sie die Methoden über das Fenster **Test-Explorer** finden können.
 
 ![Hinzufügen von include-Anweisungen](media/cpp-write-test-methods.png)
 
@@ -102,7 +102,7 @@ Sie können der Testmethode *Merkmale* hinzufügen, um Testbesitzer, die Priorit
 
 1. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
 
-1. Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test. Wenn alle Tests ausgeführt wurden, wird in dem Fenster dargestellt, welche Tests erfolgreich waren und welche fehlgeschlagen sind:
+1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test. Wenn alle Tests ausgeführt wurden, wird in dem Fenster dargestellt, welche Tests erfolgreich waren und welche fehlgeschlagen sind:
 
 ![Test-Explorer nach dem Ausführen von Tests](media/cpp-test-explorer-passed.png)
 
@@ -114,4 +114,4 @@ Bewährte Methoden im Zusammenhang mit Komponententests finden Sie unter [Grundl
 
 ## <a name="see-also"></a>Siehe auch
 
-[Komponententest für Code](unit-test-your-code.md)
+[Ausführen von Komponententests für Code](unit-test-your-code.md)

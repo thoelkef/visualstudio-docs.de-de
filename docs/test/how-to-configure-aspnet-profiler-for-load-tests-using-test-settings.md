@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175551"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379805"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio
 
 Sie können den Adapter für diagnostische Daten des ASP.NET-Profilers verwenden, um ASP.NET-Profilerinformationen zu sammeln. Dieser Adapter für diagnostische Daten erfasst Leistungsdaten für ASP.NET-Anwendungen.
 
@@ -52,7 +52,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 4.  Klicken Sie zum Aktivieren der Profilerstellung für Ebeneninteraktion auf **Profilerstellung für Ebeneninteraktion aktivieren**.
 
-     Bei der Profilerstellung für die Ebeneninteraktion wird die Anzahl von Anforderungen, die für jedes Artefakt (z.B. „MyPage.aspx“ oder „CompanyLogo.gif“) an den Webserver gesendet werden, und die zum Verarbeiten jeder Anforderung benötigte Zeit gezählt. Zudem werden bei der Profilerstellung für die Interaktion die im Rahmen der Seitenanforderung verwendeten ADO.NET-Verbindungen und die Anzahl von Abfragen und Aufrufen gespeicherter Prozeduren erfasst, die bei der Verarbeitung dieser Anforderung ausgeführt wurden.
+     Bei der Profilerstellung für die Ebeneninteraktion wird die Anzahl von Anforderungen, die für jedes Artefakt (z.B. *MyPage.aspx* oder *CompanyLogo.gif*) an den Webserver gesendet werden, und die zum Verarbeiten jeder Anforderung benötigte Zeit erfasst. Zudem werden bei der Profilerstellung für die Interaktion die im Rahmen der Seitenanforderung verwendeten ADO.NET-Verbindungen und die Anzahl von Abfragen und Aufrufen gespeicherter Prozeduren erfasst, die bei der Verarbeitung dieser Anforderung ausgeführt wurden.
 
      Es werden zwei unterschiedliche Sätze von Zeitsteuerungsinformationen erfasst:
 
@@ -64,6 +64,6 @@ Mit dem in der Testeinstellung konfigurierten Adapter für diagnostische Daten d
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
-- [Gewusst wie: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
+- [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)

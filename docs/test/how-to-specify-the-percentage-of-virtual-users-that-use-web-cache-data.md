@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180050"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379370"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Vorgehensweise: Angeben des Prozentsatzes virtueller Benutzer, die auf Webcachedaten zugreifen
 
-Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften ändern, um Ihre Testanforderungen und -ziele mithilfe des **Auslastungstest-Editors** zu erfüllen. Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load Test Scenario Properties (Auslastungstestszenario-Eigenschaften)](../test/load-test-scenario-properties.md).
+Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften ändern, um Ihre Testanforderungen und -ziele mithilfe des **Auslastungstest-Editors** zu erfüllen. Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
-Die Eigenschaft **Prozentsatz neuer Benutzer** wird im Eigenschaftenfenster festgelegt. Sie bearbeiten Eigenschaften von Auslastungstestszenarien im Auslastungstest-Editor.
+Die Eigenschaft **Prozentsatz neuer Benutzer** wird im Fenster **Eigenschaften** festgelegt. Sie bearbeiten Eigenschaften von Auslastungstestszenarios im **Auslastungstest-Editor**.
 
 Die Eigenschaft **Prozentsatz neuer Benutzer** wirkt sich auf die Simulation der Webbrowser-Zwischenspeicherung im Auslastungstest aus. In der Standardeinstellung ist die Eigenschaft **Prozentsatz neuer Benutzer** auf „0%“ festgelegt. Wenn der Wert für die Eigenschaft **Prozentsatz neuer Benutzer** auf „100%“ festgelegt ist, wird jeder Webleistungstestlauf in einem Auslastungstest wie ein erstmaliger Zugriff eines Benutzers auf eine Website behandelt, wobei der Browsercache des Benutzers keine Daten aus vorherigen Websiteaufrufen enthält. Daher werden alle Anforderungen im Webtest, einschließlich aller abhängigen Anforderungen, wie z.B. Bilder, heruntergeladen.
 
@@ -40,7 +40,7 @@ Wenn Sie einen Auslastungstest für eine Website ausführen, die eine erhebliche
 
 3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im **Eigenschaftenfenster** angezeigt.
 
 4. Legen Sie den Wert für die Eigenschaft **Prozentsatz neuer Benutzer** fest, indem Sie eine Zahl für den prozentualen Anteil neuer Benutzer eingeben.
 
@@ -51,5 +51,5 @@ Wenn Sie einen Auslastungstest für eine Website ausführen, die eine erhebliche
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)
 - [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b9900fd69cf51ca97d9cb9c6be8bbbe6bba22971
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118199"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388331"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -32,11 +32,11 @@ In diesem Schritt wird Folgendes erläutert:
 
 ## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Schritt 2.1: Umgestalten des Projekts zur Erleichterung der Weiterentwicklung
 
-Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei `app.py` erstellt, die den Startcode und eine Ansicht enthält. Diese Elemente sollten getrennt werden, damit die App so weiterentwickelt werden kann, dass mehrere Ansichten und Vorlagen unterstützt werden.
+Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstellt, die den Startcode und eine Ansicht enthält. Diese Elemente sollten getrennt werden, damit die App so weiterentwickelt werden kann, dass mehrere Ansichten und Vorlagen unterstützt werden.
 
 1. Erstellen Sie im Projektordner einen App-Ordner mit dem Namen `HelloFlask`. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste zuerst auf das Projekt und anschließend auf **Hinzufügen** > **Neuer Ordner**.
 
-1. Erstellen Sie im Ordner `HelloFlask` eine Datei mit dem Namen `__init__.py` und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
+1. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *\_\_init\_\_.py* und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei `app.py` erstell
     import HelloFlask.views
     ```
 
-1. Erstellen Sie im Ordner `HelloFlask` eine Datei mit dem Namen `views.py` und dem unten gezeigten Inhalt. Der Name `views.py` ist wichtig, da Sie `import HelloFlask.views` in `__init__.py` verwendet haben. Wenn die Namen nicht übereinstimmen, wird zur Laufzeit ein Fehler angezeigt.
+1. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *views.py* und dem unten gezeigten Inhalt. Der Name *views.py* ist wichtig, da Sie `import HelloFlask.views` in *\_\_init\_\_.py* verwendet haben. Wenn die Namen nicht übereinstimmen, wird zur Laufzeit ein Fehler angezeigt.
 
     ```python
     from flask import Flask
@@ -57,11 +57,11 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei `app.py` erstell
         return "Hello Flask!"
     ```
 
-    Der Code enthält zusätzlich zur Umbenennung der Funktion und der Route in `home` den Code zum Rendern der Seite aus „app.py“ und importiert das in `__init__.py` deklarierte `app`-Objekt.
+    Der Code enthält zusätzlich zur Umbenennung der Funktion und der Route in `home` den Code zum Rendern der Seite aus *app.py* und importiert das in *\_\_init\_\_.py* deklarierte `app`-Objekt.
 
-1. Erstellen Sie einen Unterordner in `HelloFlask` mit dem Namen `templates`. Dieser Ordner bleibt zunächst leer.
+1. Erstellen Sie einen Unterordner mit dem Namen *HelloFlask* in *Templates*. Dieser Ordner bleibt zunächst leer.
 
-1. Benennen Sie im Stammordner des Projekts `app.py` in `runserver.py` um, und stellen Sie sicher, dass der Inhalt dem folgenden Code entspricht:
+1. Benennen Sie im Stammordner des Projekts *app.py* in *runserver.py* um, und stellen Sie sicher, dass der Inhalt dem folgenden Code entspricht:
 
     ```python
     import os
@@ -81,9 +81,9 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei `app.py` erstell
 
     ![Projektstruktur nach der Umgestaltung des Codes](media/flask/step02-project-structure.png)
 
-1. Klicken Sie auf **Debuggen** > **Debuggen starten** (F5), oder klicken Sie auf die Schaltfläche **Webserver** in der Symbolleiste, um die App zu starten und einen Browser zu öffnen. Der bei Ihnen aufgerufene Browser kann variieren. Verwenden Sie probeweise sowohl die URL-Route „/“ als auch „/home“.
+1. Klicken Sie auf **Debuggen** > **Debuggen starten** (**F5**), oder klicken Sie auf die Schaltfläche **Webserver** in der Symbolleiste, um die App zu starten und einen Browser zu öffnen. Der bei Ihnen aufgerufene Browser kann variieren. Verwenden Sie probeweise sowohl die URL-Route „/“ als auch „/home“.
 
-1. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Beispielsweise können Sie in der ersten Zeile von `runserver.py` und `HelloFlask\__init__.py` sowie in der Zeile `return "Hello Flask!"` von `views.py` einen Breakpoint festlegen. Wenn Sie nun die App neu starten (**Debuggen** > **Neu starten**, STRG+F5 oder über die unten gezeigten Symbolleistenschaltfläche), können Sie den Code schrittweise durchlaufen (F10) oder von jedem Breakpoint aus mithilfe von F5 starten.
+1. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Legen Sie beispielsweise einen Haltepunkt für die ersten Zeilen von *runserver.py* und *HelloFlask\__init__.py* und für die Zeile `return "Hello Flask!"` in *views.py* fest. Wenn Sie nun die App neu starten (**Debuggen** > **Neu starten**, **STRG**+**F5** oder über die unten gezeigten Schaltflächen für Symbolleisten), können Sie den Code ausführlich durchlaufen (**F10**) oder von jedem Haltepunkt aus mithilfe von **F5** starten.
 
     ![Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -97,7 +97,7 @@ Da Sie Änderungen an Ihrem Code vorgenommen und erfolgreich getestet haben, ist
 
     ![Schaltfläche für Änderungen der Quellcodeverwaltung in der Statusleiste von Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. Geben Sie im **Team Explorer** beispielsweise die Commitnachricht „Codeumgestaltung“ ein, und klicken Sie anschließend auf **Commit All** (Alle committen). Wenn das Commit abgeschlossen ist, sehen Sie die Nachricht „Commit <hash> lokal erstellt. Synchronisieren, um Änderungen auf den Server zu übertragen“. Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
+1. Geben Sie im **Team Explorer** beispielsweise die Commitnachricht „Codeumgestaltung“ ein, und klicken Sie anschließend auf **Commit All** (Alle committen). Wenn das Commit abgeschlossen ist, sehen Sie die Nachricht **Commit\<Hash> lokal erstellt. Synchronisieren, um Änderungen auf den Server zu übertragen.** Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
 
     ![Commits per Push an den Remotecomputer in Team Explorer übertragen](media/flask/step02-source-control-push-to-remote.png)
 
@@ -109,11 +109,11 @@ Wie oft Sie Commits ausführen ist getrennt von der Frage zu betrachten, wie hä
 
 ## <a name="step-2-2-use-a-template-to-render-a-page"></a>Schritt 2.2: Verwenden einer Vorlage zum Rendern einer Seite
 
-Die Funktion `home`, die bisher in `views.py` enthalten ist, generiert lediglich eine Nur-Text-HTTP-Antwort für die Seite. In der Praxis erstellen die meisten Webseiten eine Antwort mit Rich-HTML-Seiten, die häufig Livedaten enthalten. Der Hauptgrund für die Definition einer Ansicht mithilfe einer Funktion besteht darin, dass auf diese Weise der Inhalt dynamisch generiert werden kann.
+Die Funktion `home`, die bisher in *views.py* enthalten ist, generiert lediglich eine Nur-Text-HTTP-Antwort für die Seite. In der Praxis erstellen die meisten Webseiten eine Antwort mit Rich-HTML-Seiten, die häufig Livedaten enthalten. Der Hauptgrund für die Definition einer Ansicht mithilfe einer Funktion besteht darin, dass auf diese Weise der Inhalt dynamisch generiert werden kann.
 
 Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie beliebigen HTML-Code innerhalb einer Zeichenfolge und damit dynamischen Inhalt erstellen. Es empfiehlt sich jedoch, das Markup von den Daten zu trennen und dieses in einer Vorlage zu verwalten. Die Daten sollten hingegen im Code verbleiben.
 
-1. Fügen Sie in `views.py` den folgenden Code ein. In diesem wird für die Seite Inline-HTML zusammen mit einigen dynamischen Inhalten verwendet:
+1. Fügen Sie in *views.py* den folgenden Code ein. In diesem wird für die Seite Inline-HTML zusammen mit einigen dynamischen Inhalten verwendet:
 
     ```python
     from datetime import datetime
@@ -135,7 +135,7 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
 
 1. Führen Sie die App aus, und aktualisieren Sie die Seite mehrmals, um sich Aktualisierungen bei Datum und Uhrzeit anzeigen zu lassen. Beenden Sie die App, wenn Sie fertig sind.
 
-1. Wenn Sie zum Rendern der Seite eine Vorlage verwenden möchten, müssen Sie im Ordner `templates` eine Datei mit dem Namen `index.html` erstellen, wobei `{{ content }}` ein Platzhalter oder ein Ersatztoken (auch als *Vorlagenvariable* bezeichnet) ist, für das Sie im Code einen Wert angeben:
+1. Wenn Sie zum Rendern der Seite eine Vorlage verwenden möchten, müssen Sie im Ordner *Templates* eine Datei mit dem Namen *index.html* erstellen, wobei `{{ content }}` ein Platzhalter oder ein Ersatztoken (auch als *Vorlagenvariable* bezeichnet) ist, für das Sie im Code einen Wert angeben:
 
     ```html
     <html>
@@ -147,7 +147,7 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
     </html>
     ```
 
-1. Passen Sie die Funktion `home` so an, dass zum Laden der Vorlage `render_template` verwendet wird. Geben Sie anschließend für „content“ einen Wert an, indem Sie ein benanntes Argument verwenden, das dem Namen des Platzhalters entspricht. Flask sucht im `templates`-Ordner automatisch nach Vorlagen. Der Pfad zur Vorlage ist daher relativ zum Ordner:
+1. Passen Sie die Funktion `home` so an, dass zum Laden der Vorlage `render_template` verwendet wird. Geben Sie anschließend für „content“ einen Wert an, indem Sie ein benanntes Argument verwenden, das dem Namen des Platzhalters entspricht. Flask sucht im Ordner *templates* automatisch nach Vorlagen. Der Pfad zur Vorlage ist daher relativ zum Ordner:
 
     ```python
     def home():
@@ -159,9 +159,9 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
             content = "<strong>Hello, Flask!</strong> on " + formatted_now)
     ```
 
-1. Führen Sie die App aus, und sehen Sie sich die Ergebnisse an. Beachten Sie, dass das Inline-HTML in `content` *nicht als HTML* gerendert wird, da die Vorlagenengine (Jinja) HTML-Inhalte automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injectionangriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Auch Escapezeichen verdeutlichen, dass HTML nicht im Code verwendet werden sollte.
+1. Führen Sie die App aus, und sehen Sie sich die Ergebnisse an. Beachten Sie, dass das Inline-HTML in `content` *nicht als HTML* gerendert wird, da die Vorlagenengine (Jinja) HTML-Inhalte automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injection-Angriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Auch Escapezeichen verdeutlichen, dass HTML nicht im Code verwendet werden sollte.
 
-    Sie sollten daher `templates\index.html` so anpassen, dass für die jeweiligen Datenelemente im Markup unterschiedliche Platzhalter verwendet werden:
+    Sie sollten daher *templates\index.html* so anpassen, dass für die jeweiligen Datenelemente im Markup unterschiedliche Platzhalter verwendet werden:
 
     ```html
     <html>
@@ -198,19 +198,19 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
 
 Antwort: Obwohl Vorlagen in der Regel in separaten HTML-Dateien gespeichert sind, können Sie auch eine Inlinevorlage verwenden. Die Verwendung einer separaten Datei wird jedoch empfohlen, um eine saubere Trennung zwischen Markup und Code aufrechtzuerhalten.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Erweiterung HTML verwenden?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Dateierweiterung .html verwenden?
 
-Antwort: Die `.html`-Erweiterung für Seitenvorlagendateien ist optional, da Sie immer den genauen relativen Pfad zur Datei im ersten Argument der Funktion `render_template` angeben. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für `.html`-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
+Antwort: Die *.html*-Erweiterung für Seitenvorlagendateien ist komplett optional, da Sie immer den genauen relativen Pfad zur Datei im ersten Argument der Funktion `render_template` angeben. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für *.html*-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
 
-Wenn Sie mit einem Django-Projekt arbeiten, erkennt Visual Studio automatisch, ob die HTML-Datei, die Sie gerade bearbeiten, tatsächlich eine Django-Vorlage ist, und stellt bestimmte Features zur automatischen Vervollständigung bereit. Wenn Sie beispielsweise einen Kommentar zu der Django-Seitenvorlage, `{#`, eingeben, bietet Visual Studio Ihnen automatisch die schließenden `#}`-Zeichen. Die Befehle **Auswahl kommentieren** und **Kommentar der Auswahl entfernen** (im Menü **Bearbeiten** > **Erweitert** und in der Symbolleiste) verwenden ebenfalls anstelle von HTML-Kommentaren Vorlagenkommentare.
+Wenn Sie mit einem Flask-Projekt arbeiten, erkennt Visual Studio automatisch, ob die HTML-Datei, die Sie gerade bearbeiten, tatsächlich eine Flask-Vorlage ist, und stellt bestimmte Features zur automatischen Vervollständigung bereit. Wenn Sie beispielsweise einen Kommentar zu der Flask-Seitenvorlage, `{#`, eingeben, bietet Visual Studio Ihnen automatisch die schließenden `#}`-Zeichen. Die Befehle **Auswahl kommentieren** und **Kommentar der Auswahl entfernen** (im Menü **Bearbeiten** > **Erweitert** und in der Symbolleiste) verwenden ebenfalls anstelle von HTML-Kommentaren Vorlagenkommentare.
 
 ### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Frage: Beim Ausführen des Projekts wird eine Fehlermeldung angezeigt, die besagt, dass die Vorlage nicht gefunden werden kann. Wo liegt der Fehler?
 
-Antwort: Wenn Sie von einer Fehlermeldung informiert werden, dass die Vorlage nicht gefunden werden kann, stellen Sie sicher, dass Sie die App der Datei `settings.py` des Django-Projekts in der Liste `INSTALLED_APPS` hinzugefügt haben. Ohne diesen Eintrag weiß Django nicht, dass der Ordner `templates` der App überprüft werden soll.
+Antwort: Wenn Sie von einer Fehlermeldung informiert werden, dass die Vorlage nicht gefunden werden kann, stellen Sie sicher, dass Sie der Datei *settings.py* des Flask-Projekts in der Liste `INSTALLED_APPS` die App hinzugefügt haben. Ohne diesen Eintrag weiß Flask nicht, dass der Ordner *Templates* der App überprüft werden soll.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Frage: Können Vorlagen in weiteren Unterordnern verwaltet werden?
 
-Antwort: Ja, Sie können Unterordner verwenden und dann auf den relativen Pfad in `templates` bei Aufrufen von `render_template` verweisen. Dadurch erstellen Sie gleichzeitig auf einfache Weise Namespaces für Ihre Vorlagen.
+Antwort: Ja, Sie können Unterordner verwenden und dann auf den relativen Pfad unter *Templates* bei Aufrufen von `render_template` verweisen. Dadurch erstellen Sie gleichzeitig auf einfache Weise Namespaces für Ihre Vorlagen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

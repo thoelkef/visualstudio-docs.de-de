@@ -9,24 +9,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6224e03e4aafe152107a8fa7da56dc6bd8def1e3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751565"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380550"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
-Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native und verwaltete Assemblys (DLL- oder EXE-Dateien) erfasst. In einigen Fällen wird im Fenster "Codeabdeckungsergebnisse" jedoch ein Fehler ähnlich dem Folgenden angezeigt: "Es wurden leere Ergebnisse generiert: ..." Die Anzeige von leeren Ergebnissen kann verschiedene Gründe haben. In diesem Artikel erfahren Sie, wie Sie diese Probleme beheben können.
+Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native und verwaltete Assemblys (*DLL*- oder *EXE*-Dateien) erfasst. In einigen Fällen wird im Fenster **Code Coverage-Ergebnisse** jedoch ein Fehler ähnlich dem Folgenden angezeigt: „Es wurden leere Ergebnisse generiert: ...“ Die Anzeige von leeren Ergebnissen kann verschiedene Gründe haben. In diesem Artikel erfahren Sie, wie Sie diese Probleme beheben können.
 
 ## <a name="what-you-should-see"></a>Anzeige im Normalfall
 
-Wenn Sie Im Menü „Test“ den Befehl **Code Coverage analysieren** auswählen und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster „Code Coverage“ eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
+Wenn Sie im Menü **Test** den Befehl **Code Coverage analysieren** auswählen, und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster **Code Coverage** eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
 
 ![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png)
 
-Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Mögliche Gründe dafür, dass keine oder alte Ergebnisse angezeigt werden
 
@@ -47,23 +47,23 @@ Wenn Sie die Tests ändern und erneut ausführen, können das vorherige Code Cov
 
 1.  Führen Sie "Codeabdeckung analysieren" aus.
 
-2.  Überprüfen Sie, ob Sie das aktuelle Resultset im Fenster "Codeabdeckungsergebnisse" ausgewählt haben.
+2.  Stellen Sie sicher, dass Sie das aktuelle Resultset im Fenster **Code Coverage-Ergebnisse** ausgewählt haben.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>PDB-Dateien (Symboldateien) sind nicht verfügbar
 
-Analyse&mdash;Öffnen Sie den Zielordner für die Kompilierung (normalerweise „bin\debug“), und überprüfen Sie, ob für jede Assembly eine PDB-Datei im gleichen Verzeichnis vorhanden ist, in dem sich die DLL- oder EXE-Datei befindet.
+Analyse: Öffnen Sie den Zielordner für die Kompilierung (normalerweise *bin\debug*), und überprüfen Sie, ob für jede Assembly eine *PDB*-Datei im gleichen Verzeichnis vorhanden ist, in dem auch die *DLL*- oder *EXE*-Datei enthalten ist.
 
-Erklärung&mdash;Für die Code Coverage-Engine muss während des Testlaufs für jede Assembly der Zugriff auf die zugeordnete PDB-Datei möglich sein. Wenn für eine bestimmte Assembly keine PDB-Datei zur Verfügung steht, wird die Assembly nicht analysiert.
+Erklärung: Für die Code Coverage-Engine muss während des Testlaufs für jede Assembly der Zugriff auf die zugeordnete *PSB*-Datei möglich sein. Wenn für eine bestimmte Assembly keine *PDB*-Datei zur Verfügung steht, wird die Assembly nicht analysiert.
 
-Die PDB-Datei und die DLL- oder EXE-Datei müssen im selben Buildvorgang generiert werden.
+Die *PDB*-Datei und die *DLL*- oder *EXE*-Datei müssen in dem gleichen Buildvorgang generiert werden.
 
-Lösung&mdash;Stellen Sie sicher, dass die Buildeinstellungen so konfiguriert sind, dass die PDB-Datei generiert wird. Wenn die PDB-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie die **Debuginformationen**.
+Lösung: Stellen Sie sicher, dass die Buildeinstellungen so konfiguriert sind, dass die *PDB*-Datei generiert wird. Wenn die *PDB*-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie die **Debuginformationen**.
 
-Wenn sich die PDB-Datei und die DLL- oder EXE-Datei an verschiedenen Speicherorten befinden, kopieren Sie die PDB-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach PDB-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Wenn sich die *PDB*-Datei und die *DLL*- oder *EXE*-Dateien an verschiedenen Speicherorten befinden, kopieren Sie die *PDB*-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach *PDB*-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
-### <a name="using-an-instrumented-or-optimized-binary"></a>Verwenden einer instrumentierten oder optimierten Binärdatei
+### <a name="use-an-instrumented-or-optimized-binary"></a>Verwenden einer instrumentierten oder optimierten Binärdatei
 
-Analyse&mdash;Stellen Sie fest, ob die Binärdatei einer erweiterten Optimierung unterzogen wurde, beispielsweise einer profilgesteuerten Optimierung, oder durch ein Profilerstellungstool wie „vsinstr.exe“ oder „vsperfmon.exe“ instrumentiert wurde.
+Analyse: Überprüfen Sie, ob die Binärdatei einer erweiterten Optimierung unterzogen wurde, beispielsweise einer profilgesteuerten Optimierung, oder durch ein Profilerstellungstool wie *vsinstr.exe* oder *vsperfmon.exe* instrumentiert wurde.
 
 Erklärung&mdash;Wenn eine Assembly bereits durch ein anderes Profilerstellungstool instrumentiert oder optimiert wurde, wird die Assembly bei der Code Coverage-Analyse nicht berücksichtigt. Die Code Coverage-Analyse kann für solche Assemblys nicht ausgeführt werden.
 
@@ -89,13 +89,13 @@ Lösung&mdash;Verwenden Sie eine MSIL-Version der Assembly. Verarbeiten Sie sie 
 
 Analyse&mdash;Wenn Sie eine benutzerdefinierte *RUNSETTINGS*-Datei verwenden, kann sie einen Syntaxfehler enthalten. Code Coverage wird nicht ausgeführt. Entweder wird das Fenster „Code Coverage“ am Ende des Testlaufs nicht geöffnet, oder es werden darin alte Ergebnisse angezeigt.
 
-Erklärung&mdash;Sie können die Komponententests mit einer benutzerdefinierten RUNSETTINGS-Datei ausführen, um Code Coverage-Optionen zu konfigurieren. Mithilfe der Optionen können Sie Dateien einschließen oder ausschließen. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Erklärung: Sie können die Komponententests mit einer benutzerdefinierten *RUNSETTINGS*-Datei ausführen, um Code Coverage-Optionen zu konfigurieren. Mithilfe der Optionen können Sie Dateien einschließen oder ausschließen. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
 Lösung&mdash;Es gibt zwei mögliche Fehlertypen:
 
 -   **XML-Fehler**
 
-     Öffnen Sie die Datei ".runsettings" im XML-Editor von Visual Studio. Suchen Sie nach Fehlerhinweisen.
+     Öffnen Sie die *RUNSETTINGS*-Datei im XML-Editor von Visual Studio. Suchen Sie nach Fehlerhinweisen.
 
 -   **Fehler in regulärem Ausdruck**
 
@@ -109,11 +109,11 @@ Lösung&mdash;Es gibt zwei mögliche Fehlertypen:
 
 Analyse&mdash;Wenn Sie eine benutzerdefinierte *RUNSETTINGS*-Datei verwenden, stellen Sie sicher, dass sie Ihre Assembly enthält.
 
-Erklärung&mdash;Sie können die Komponententests mit einer benutzerdefinierten RUNSETTINGS-Datei ausführen, um Code Coverage-Optionen zu konfigurieren. Mithilfe der Optionen können Sie Dateien einschließen oder ausschließen. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Erklärung: Sie können die Komponententests mit einer benutzerdefinierten *RUNSETTINGS*-Datei ausführen, um Code Coverage-Optionen zu konfigurieren. Mithilfe der Optionen können Sie Dateien einschließen oder ausschließen. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
-Lösung&mdash;Entfernen Sie alle `Include`-Knoten aus der RUNSETTINGS-Datei, und entfernen Sie dann alle `Exclude`-Knoten. Wenn das Problem damit behoben ist, fügen Sie sie schrittweise wieder hinzu.
+Lösung: Entfernen Sie alle `Include`-Knoten aus der *RUNSETTINGS*-Datei, und entfernen Sie anschließend alle `Exclude`-Knoten. Wenn das Problem damit behoben ist, fügen Sie sie schrittweise wieder hinzu.
 
-Stellen Sie sicher, dass im „DataCollectors“-Knoten die Code Coverage angegeben wird. Vergleichen Sie ihn mit dem Beispiel in [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Stellen Sie sicher, dass im „DataCollectors“-Knoten die Code Coverage angegeben wird. Vergleichen Sie ihn mit dem Beispiel in [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="some-code-is-always-shown-as-not-covered"></a>Einiger Code wird stets als nicht abgedeckt angezeigt
 
@@ -121,7 +121,7 @@ Stellen Sie sicher, dass im „DataCollectors“-Knoten die Code Coverage angege
 
 Analyse&mdash;In statisch verknüpftem nativen Code wird ein Teil der Initialisierungsfunktion **DllMain** und Code, den sie aufruft, manchmal als nicht abgedeckt angezeigt, obwohl der Code ausgeführt wurde.
 
-Erklärung&mdash;Das Code Coverage-Tool fügt kurz vor dem Start der Anwendung Instrumentation in eine Assembly ein. In jeder zuvor geladenen Assembly wird der Initialisierungscode in **DllMain** ausgeführt, sobald die Assembly geladen wird und vor dem Ausführen der Anwendung. Dieser Code wird als nicht abgedeckt angezeigt. Normalerweise gilt dies für statisch geladene Assemblys.
+Erklärung&mdash;Das Code Coverage-Tool fügt kurz vor dem Start der Anwendung Instrumentation in eine Assembly ein. In jeder zuvor geladenen Assembly wird der Initialisierungscode in **DllMain** ausgeführt, sobald die Assembly geladen wird und vor dem Ausführen der Anwendung. Dieser Code scheint nicht abgedeckt zu werden. Dies gilt in der Regel für statisch geladene Assemblys.
 
 Lösung&mdash;Keine.
 
