@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276989"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008267"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application>-Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem>-Objekt eine E-Mail dar.  
@@ -59,7 +59,7 @@ ms.locfileid: "39276989"
 ### <a name="application-object"></a>Application-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt die Outlook-Anwendung dar und ist im Outlook-Objektmodell das Objekt der obersten Ebene. Zu den wichtigsten Membern dieses Objekts gehören:  
   
--   Die [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) Methode, die Sie zum Erstellen eines neuen Elements wie einer e-Mail-Nachricht, eine Aufgabe oder ein Termin verwenden können.  
+-   Die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) Methode, die Sie zum Erstellen eines neuen Elements wie einer e-Mail-Nachricht, eine Aufgabe oder ein Termin verwenden können.  
   
 -   Die <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> -Eigenschaft, die Sie für den Zugriff auf die Fenster verwenden können, in denen der Inhalt eines Ordners in der Outlook-Benutzeroberfläche (UI) angezeigt wird.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39276989"
 ### <a name="taskitem-object"></a>TaskItem-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.TaskItem> -Objekt stellt eine Aufgabe dar, die innerhalb eines bestimmten Zeitrahmens ausgeführt werden muss. <xref:Microsoft.Office.Interop.Outlook.TaskItem> -Objekte befinden sich im Ordner **Aufgaben** .  
   
- Verwenden Sie zum Erstellen einer Aufgabe die [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) -Methode der der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> für den Parameter.  
+ Verwenden Sie zum Erstellen einer Aufgabe die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) -Methode der der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> für den Parameter.  
   
 ### <a name="contactitem-object"></a>ContactItem-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.ContactItem>-Objekt stellt einen Kontakt im Ordner **Kontakte** dar. <xref:Microsoft.Office.Interop.Outlook.ContactItem> -Objekte enthalten eine Reihe von Kontaktinformationen für die Personen, die sie darstellen, z. B. Anschriften, E-Mail-Adressen und Telefonnummern.  
