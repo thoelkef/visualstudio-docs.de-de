@@ -1,5 +1,5 @@
 ---
-title: Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung | Microsoft Docs
+title: Devenv-Befehlszeilenschalter für die Entwicklung von VSPackage | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,34 +20,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8adf9480f426f8f19ef9e74c3417dc170b2e24ed
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134367"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636562"
 ---
-# <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht Entwicklern das Automatisieren von Tasks über die Befehlszeile beim devenv.exe, die Datei ausführen, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio wird gestartet.  
+# <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es Entwicklern, Aufgaben, die über die Befehlszeile zu automatisieren, Ausführung *devenv.exe*, die Datei, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio wird gestartet.  
   
- U. a. folgende Aufgaben:  
+ Tasks gehört Folgendes:  
   
--   Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE.  
+-   Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.  
   
--   Automatisches Erstellen von Projekten mithilfe der vorab festgelegten Buildeinstellungen oder Debugkonfigurationen.  
+-   Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.  
   
--   Beim Laden der IDE in bestimmten Konfigurationen von außerhalb der IDE. Darüber hinaus können Sie die IDE beim Start anpassen.  
+-   Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Darüber hinaus können Sie die IDE beim Start anpassen.  
   
-## <a name="guidelines-for-switches"></a>Richtlinien für Switches  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dokumentation beschreibt die Benutzerebene Devenv-Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Devenv unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen nützlich sind.  
+## <a name="guidelines-for-switches"></a>Richtlinien für switches  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dokumentation wird beschrieben, die auf Benutzerebene Devenv-Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Devenv unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen hilfreich sind.  
   
 |Befehlszeilenschalter|Beschreibung|  
 |--------------------------|-----------------|  
-|/ SafeMode|Startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus zu laden, nur die Standard-IDE und Dienste. Der/SafeMode-Schalter wird verhindert, dass es sich bei allen eines Drittanbieters VSPackages vor dem Laden, wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gestartet wird, wodurch sichergestellt wird stabile Ausführung.<br /><br /> Der Schalter verwendet keine Argumente.|  
-|/ resetskippkgs|Löscht alle Optionen für das Laden, die von Benutzern hinzugefügt wurden, die auf das Laden von problematischen VSPackages verhindern möchten überspringen startet dann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das Vorhandensein eines SkipLoading-Tags wird das Laden eines VSPackage deaktiviert. Das Laden des VSPackage deaktivieren das Tag wieder aktiviert werden.<br /><br /> Der Schalter verwendet keine Argumente.|  
-|/rootsuffix|Startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mit einem anderen Speicherort. Der folgende Befehl ausgeführt wird, durch die Verknüpfung erstellt, indem die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Installer:<br /><br /> Devenv /RootSuffix exp<br /><br /> Exp bezeichnet in diesem Fall einen Speicherort mit einem bestimmten Suffix, z. B. 10.0Exp statt 10.0. Die experimentelle Instanz können Sie eine VSPackage separat von der Instanz von Debuggen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , dass Sie verwenden, um Code zu schreiben.<br /><br /> Dieser Schalter dauert eine beliebige Zeichenfolge, die einen Ort identifiziert, den Sie mithilfe von VSRegEx.exe erstellt haben. Weitere Informationen finden Sie unter [die experimentelle Instanz](../extensibility/the-experimental-instance.md).|  
-|/Splash|Zeigt die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] splash-Bildschirm wie gewohnt aus, und klicken Sie dann vor dem Anzeigen der Haupt-IDE wird ein Meldungsfeld. Das Meldungsfeld können Sie die zu untersuchen, das den Begrüßungsbildschirm, z. B. für ein VSPackage-Produkt-Symbol zu überprüfen.<br /><br /> Der Schalter verwendet keine Argumente.|  
+|SafeMode|Startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus geladen werden, nur die Standard-IDE und Dienste. Der SafeMode-Schalter wird verhindert, dass es sich bei allen VSPackages von Drittanbietern geladen, wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gestartet wird, damit die stabile Ausführung sicher.<br /><br /> Der Schalter verwendet keine Argumente.|  
+|/ resetskippkgs|Löscht alle Optionen für das Laden, die von Benutzern, die möchten hinzugefügt wurden, vermeiden des Ladens von problematischen VSPackages, überspringen Sie startet dann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das Vorhandensein eines SkipLoading-Tags deaktiviert das Laden eines VSPackage. Das Löschen des Tags das Laden des VSPackage erneut aktiviert werden.<br /><br /> Der Schalter verwendet keine Argumente.|  
+|/ rootsuffix|Startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mit einem alternativen Speicherort. Der folgende Befehl ausgeführt wird, durch die Verknüpfung erstellt werden, indem die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Installer:<br /><br /> Devenv/rootsuffix exp<br /><br /> In diesem Fall gibt "exp" einen Speicherort mit einem bestimmten Suffix, z. B. 10.0Exp statt 10.0. Die experimentelle Instanz können Sie eine VSPackage separat von der Instanz von Debuggen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , dass Sie verwenden, um Code zu schreiben.<br /><br /> Dieser Schalter dauert eine beliebige Zeichenfolge, die einen Speicherort angibt, den Sie mithilfe von VSRegEx.exe erstellt haben. Weitere Informationen finden Sie unter [die experimentelle Instanz](../extensibility/the-experimental-instance.md).|  
+|/Splash|Zeigt die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Begrüßungsbildschirm wie üblich, und klicken Sie dann zeigt ein Meldungsfeld vor dem Anzeigen der Haupt-IDE. Das Meldungsfeld können Sie den Begrüßungsbildschirm, zu prüfen, ein Symbol für den VSPackage-Produkt, z. B. zu untersuchen.<br /><br /> Der Schalter verwendet keine Argumente.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Hinzufügen von Befehlszeilenoptionen](../extensibility/adding-command-line-switches.md)   
+ [Hinzufügen von Befehlszeilenschaltern](../extensibility/adding-command-line-switches.md)   
  [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)

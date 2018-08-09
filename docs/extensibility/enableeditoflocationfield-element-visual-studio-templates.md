@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aee6e8b763cbc46af1cf426971e68e2e22ea1e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a38f023da9f4603bee9c87cb119bd41ec7e6d98
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129791"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638016"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
 Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.  
@@ -51,12 +51,12 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`, wodurch angegeben wird, davon, ob der Benutzer nicht bearbeiten kann die **Speicherort** Textfeld auf die **neues Projekt** (Dialogfeld).  
+ Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob der Benutzer bearbeiten kann die **Speicherort** Textfeld auf die **neues Projekt** im Dialogfeld.  
   
 ## <a name="remarks"></a>Hinweise  
- `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true`, dadurch kann der Benutzer so bearbeiten Sie den Wert in der **Speicherort** Textfeld in der **neues Projekt** (Dialogfeld).  
+ `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true`, dadurch kann der Benutzer so bearbeiten Sie den Wert in der **Speicherort** Textfeld in die **neues Projekt** Dialogfeld.  
   
- In der **neues Projekt** (Dialogfeld), die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist.  
+ In der **neues Projekt** im Dialogfeld die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Windows-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
@@ -88,5 +88,5 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

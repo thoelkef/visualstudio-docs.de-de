@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154329"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638664"
 ---
 # <a name="address-dpi-issues"></a>DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "hochauflösende" Bildschirme geliefert werden. Diese Seiten müssen in der Regel mehr als 200 Pixel pro Zoll (Ppi). Inhalt hochskaliert werden, auf die Anforderungen zum Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät wird das Arbeiten mit einer Anwendung auf diesen Computern erforderlich. Seit 2014 ist die primäre Zielgruppe für anzeigen mit hoher Dichte mobiler Geräte (Tablets, Schalenkoffer Laptops und Smartphones) zu berechnen.  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Wenden Sie sich an den <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> Dokumentation auf MSDN.  
   
- Die folgende Tabelle zeigt Beispiele wie Bilder mit entsprechenden DPI skaliert werden soll Ihre Skalierungsfaktoren. Die Bilder in Grün kennzeichnen, unsere bewährte ab Visual Studio 2013 (100 – 200 % DPI-Skalierung):  
+ Die folgende Tabelle zeigt Beispiele wie Bilder mit entsprechenden DPI skaliert werden soll Ihre Skalierungsfaktoren. Die Bilder in Orange beschriebenen kennzeichnen, unsere bewährte ab Visual Studio 2013 (100 – 200 % DPI-Skalierung):  
   
  ![DPI-Probleme, die Skalierung](../extensibility/media/dpi-issues-scaling.png "DPI-Probleme, die Skalierung")  
   

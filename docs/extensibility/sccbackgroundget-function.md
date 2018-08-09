@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet Funktion | Microsoft Docs
+title: SccBackgroundGet-Funktion | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e70720c9a26710c6d659ebac5b842bef3757eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136756"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639086"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet-Funktion
-Diese Funktion ruft aus der quellcodeverwaltung jedes der angegebenen Dateien ohne Benutzerinteraktion ab.  
+Diese Funktion ruft aus der quellcodeverwaltung jeder der angegebenen Dateien ohne Benutzerinteraktion ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,18 +37,18 @@ SCCRTN SccBackgroundGet(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameter  
+### <a name="parameters"></a>Parameter  
  "pContext"  
  [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
   
  nFiles  
- [in] Anzahl der angegebenen Dateien in den `lpFileNames` Array.  
+ [in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.  
   
  lpFileNames  
- [in, out] Array der Namen der Dateien abgerufen werden sollen.  
+ [in, out] Array der Namen von Dateien abgerufen werden sollen.  
   
 > [!NOTE]
->  Die Namen müssen den vollqualifizierten lokalen Dateinamen sein.  
+>  Die Namen müssen vollständig qualifizierten lokalen Dateinamen sein.  
   
  dwFlags  
  [in] Befehl Flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
@@ -57,19 +57,19 @@ SCCRTN SccBackgroundGet(
  [in] Ein eindeutiger Wert, der diesen Vorgang zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Der Vorgang wurde erfolgreich abgeschlossen.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Hintergrund Abruf wird bereits ausgeführt (das Quellsteuerelement-Plug-in sollte dies nur zurück, wenn es anderen Batch-Vorgänge nicht unterstützt).|  
-|SCC_I_OPERATIONCANCELED|Vorgang wurde abgebrochen, bevor Sie abgeschlossen werden kann.|  
+|SCC_OK|Der Vorgang erfolgreich abgeschlossen wurde.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|Hintergrund Abruf wird bereits ausgeführt (das Quellcodeverwaltungs-Plug-in sollte dies nur zurück, wenn es keine gleichzeitigen Batchvorgänge unterstützt).|  
+|SCC_I_OPERATIONCANCELED|Vorgang wurde abgebrochen, bevor Sie abgeschlossen wird.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Funktion wird immer in einem anderen als dem Thread aufgerufen werden, die der quellcodeverwaltung-Plug-In geladen. Diese Funktion wird nicht erwartet zurück, bis er abgeschlossen ist. Allerdings kann es mehrere Male mit mehreren Listen von Dateien, alle gleichzeitig aufgerufen werden.  
+ Diese Funktion wird immer in einem anderen Thread aufgerufen, die das Quellcodeverwaltungs-Plug-In geladen wird. Diese Funktion wird nicht erwartet, zurückgegeben werden, bis er abgeschlossen ist; Allerdings kann es mehrere Male mit mehreren Listen von Dateien, alle gleichzeitig aufgerufen werden.  
   
  Die Verwendung der `dwFlags` Argument ist identisch mit der [SccGet](../extensibility/sccget-function.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+ [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

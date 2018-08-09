@@ -1,5 +1,5 @@
 ---
-title: LocationField-Element (Visual Studio-Projektvorlagen) | Microsoft Docs
+title: LocationField-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0877d374317e3a7142996b012ff6abefc6b94724
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76ed39186796b692dd6bc93ab0eaea50f217b7af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138758"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636284"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField-Element (Visual Studio-Projektvorlagen)
-Gibt an, und zwar unabhängig davon, ob die **Speicherort** Textfeld in der **neues Projekt** Dialogfeld ist aktiviert, deaktiviert oder ausgeblendet werden, für die Projektvorlage.  
+Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist aktiviert, deaktiviert oder ausgeblendet werden, für die Projektvorlage.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -48,25 +48,25 @@ Gibt an, und zwar unabhängig davon, ob die **Speicherort** Textfeld in der **ne
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in beiden angezeigt der **neues Projekt**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in einem angezeigt. die **neues Projekt**.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Gültige Werte sind:  
+ Gültigen Werte sind:  
   
--   `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld aktiviert ist.  
+-   `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ist aktiviert.  
   
--   `Disabled`, gibt an, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.  
+-   `Disabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.  
   
 -   `Hidden`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ausgeblendet wird.  
   
 ## <a name="remarks"></a>Hinweise  
  Der Standardwert ist `Enabled`.  
   
- Die **Speicherort** Textfeld in der **neues Projekt** (Dialogfeld) ermöglicht Benutzern das Standardverzeichnis zu ändern, in dem neue Projekte gespeichert werden.  
+ Die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld kann Benutzer das Standardverzeichnis ändern, in dem neue Projekte gespeichert werden.  
   
- Der Wert im angegebenen der `Location` Element wird im Dialogfeld nur berücksichtigt, wenn die zugrunde liegende Projektsystem ihn unterstützt.  
+ Der Wert angegeben wird, der `Location` Element wird im Dialogfeld nur berücksichtigt, wenn das zugrunde liegende Projektsystem ihn unterstützt.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
@@ -97,5 +97,5 @@ Gibt an, und zwar unabhängig davon, ob die **Speicherort** Textfeld in der **ne
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

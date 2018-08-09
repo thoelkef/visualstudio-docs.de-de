@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bc28fcc35a4a59852ef6864886acff4dc87ef60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12433fd96aee78c0f8f9ead3b531ae11b1d28f17
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139876"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636359"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
 
-Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich ist. Bestimmt den höchsten Wert zur Verfügung, in der **Zielframeworkversion** der Dropdownliste die **neues Projekt** Dialogfeld. Sie müssen auch angeben, damit Benutzer eine Framework-Version auswählen können, [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) als die Mindestversion von .NET Framework für die Vorlage.
+Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich sind. Bestimmt den höchsten Wert, der zur Verfügung, in der **Zielframeworkversion** Dropdown-Menü des der **neues Projekt** Dialogfeld. Sie müssen auch angeben, damit Benutzer eine Framework-Version auswählen können, [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) als die Mindestversion von .NET Framework für die Vorlage.
 
 > [!IMPORTANT]
-> Ab Visual Studio 2017 Version 15,6, die **Zielframeworkversion** Dropdownliste ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen die **Zielframeworkversion** Dropdownliste fungiert als ein Framework Auswahl für die ausgewählte Vorlage.
+> Ab Visual Studio 2017 Version 15.6, die **Framework-Zielversion** Dropdown ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen die **Zielframeworkversion** Dropdownliste fungiert als eine Framework-Auswahl für die ausgewählte Vorlage.
 
  \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
 
@@ -49,20 +49,20 @@ Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich i
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss die höchste Versionsnummer von .NET Framework, die die Vorlage nicht zulässig ist.
+ Der Text muss die höchste Versionsnummer von .NET Framework, die von der Vorlage zulässig ist.
 
 ## <a name="remarks"></a>Hinweise
 
-`MaxFrameworkVersion` ist ein optionales Element. Die `MaxFrameworkVersion` Element sollte weggelassen werden, nur bei Bedarf, damit nicht versehentlich unterstützten Bereich von .NET Framework-Versionen für die Vorlage zu beschränken. Es sollte auch weggelassen werden, wenn .NET Framework nicht auf die Vorlage anwendbar ist.
+`MaxFrameworkVersion` ist ein optionales Element. Die `MaxFrameworkVersion` Element sollte ausgelassen werden, es sei denn, es erforderlich, damit nicht versehentlich die unterstützten Bereich von .NET Framework-Versionen für die Vorlage beschränkt ist. Es sollte auch weggelassen werden, wenn .NET Framework nicht auf die Vorlage anwendbar ist.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel veranschaulicht die Metadaten für einen Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klassenvorlage.
+Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] -Klassenvorlage.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,7 +82,7 @@ Das folgende Beispiel veranschaulicht die Metadaten für einen Standard [!INCLUD
 </VSTemplate>
 ```
 
-In diesem Beispiel die maximale Version des .NET Framework, die von der Vorlage erforderlich ist, die durch dargestellt `MaxFrameworkVersion`, 4.7.1 ist. Ein mit dieser Vorlage erstelltes Projekt kann .NET Framework-Versionen bis 4.7.1 abzielen.
+In diesem Beispiel ist die maximale Version des .NET Framework, die von der Vorlage erforderlich ist, der durch dargestellt `MaxFrameworkVersion`, 4.7.1 ist. Ein Projekt mit dieser Vorlage erstellt wurde, kann .NET Framework-Versionen bis 4.7.1 abzielen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProjectSubType-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4414d5f444613996312978e9033145c6b8d3d82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138999"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636141"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType-Element (Visual Studio-Vorlagen)
-Klassifiziert die Vorlage in einer Unterkategorie des Werts der `ProjectType` Element.  
+Klassifiziert die Vorlage in einer Unterkategorie in angegebene Wert der `ProjectType` Element.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -32,7 +32,7 @@ Klassifiziert die Vorlage in einer Unterkategorie des Werts der `ProjectType` El
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
@@ -59,20 +59,20 @@ Klassifiziert die Vorlage in einer Unterkategorie des Werts der `ProjectType` El
 ## <a name="remarks"></a>Hinweise  
  `ProjectSubType` ist ein optionales untergeordnetes Element von `TemplateData`.  
   
- Die `ProjectSubType` -Element stellt eine Unterkategorie aus, um die [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) Element. Dieser Wert kann Folgendes enthalten:  
+ Die `ProjectSubType` -Element bietet eine Unterkategorie für die [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) Element. Dieser Wert kann Folgendes enthalten:  
   
--   `SmartDevice-NETCFv1`: Gibt an, dass die Projektvorlage abzielt die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 1.0.  
+-   `SmartDevice-NETCFv1`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 1.0.  
   
--   `SmartDevice-NETCFv2`: Gibt an, dass die Vorlage Ziele der [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
+-   `SmartDevice-NETCFv2`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
   
- Wenn eine Vorlage enthält einen `ProjectType` Element mit einem Wert von `Web`, die `ProjectSubType` Element gibt die Programmiersprache der Vorlage. Dieses Element kann die folgenden Werte aufweisen:  
+ Wenn die Vorlage enthält einen `ProjectType` Element mit einem Wert von `Web`, `ProjectSubType` Element gibt die Programmiersprache der Vorlage an. Dieses Element kann die folgenden Werte aufweisen:  
   
--   `CSharp`: Gibt an, dass die Projektvorlage erstellt eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Webprojekt oder-Element.  
+-   `CSharp`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Webprojekt oder-Element.  
   
--   `VisualBasic`: Gibt an, dass die Projektvorlage erstellt eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Webprojekt oder-Element.  
+-   `VisualBasic`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Webprojekt oder-Element.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Gerät Anwendung Ziele der [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
+ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Anwendung der Zielgeräte der [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -100,6 +100,6 @@ Klassifiziert die Vorlage in einer Unterkategorie des Werts der `ProjectType` El
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [ProjectType-Element (Visual Studio-Vorlagen)](../extensibility/projecttype-element-visual-studio-templates.md)

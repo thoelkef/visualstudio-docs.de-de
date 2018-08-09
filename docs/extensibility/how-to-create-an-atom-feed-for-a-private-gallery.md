@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: erstellen ein Atom-Feed für einen privaten Katalog | Microsoft Docs'
+title: 'Vorgehensweise: Erstellen eines Atom-Feed für einen privaten Katalog | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127476"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638491"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: erstellen ein Atom-Feed für einen privaten Katalog
-Sie erstellen eine Atom (RSS-Feeds) in einem Intranetspeicherort, die Erweiterungen enthält, und fügen den Feed auf **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Galleries](../extensibility/private-galleries.md).  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Gewusst wie: erstellen ein Atom-Feeds für einen privaten Katalog
+Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterungen enthält, und fügen den Feed zu erstellen, **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Erstellen einen Atom-Feed  
- Um einen Atom-feed als privater Katalog zu erstellen, erfassen Sie zuerst Ihre Erweiterungen (VSIX-Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:  
+## <a name="create-an-atom-feed"></a>Erstellen Sie einen Atom-feed  
+ Um einen Atom-feed als privater Katalog zu erstellen, sammeln Sie zunächst Ihre Erweiterungen (*VSIX* Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:  
   
--   Eine atom.xml-Datei, die die Erweiterungen als privater Katalog verfügbar macht. Informationen zum Herstellen der Verbindung zu der Datei atom.xml **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
+-   Ein *atom.xml* -Datei, die die Erweiterungen als privater Katalog zur Verfügung stellt. Informationen zum Herstellen einer Verbindung die *atom.xml* Datei **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
   
--   Ein Ordner, der alle Dateien des quellstartabbilds enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die Datei atom.xml enthält relative Links zu dieser Bilder, damit sie verfügbar sind **Erweiterungen und Updates**.  
+-   Ein Ordner, der Bilddateien enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die *atom.xml* -Datei enthält die relative Links zu diesen Bilder, damit sie in verfügbaren **Erweiterungen und Updates**.  
   
- Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einen Ordner gesammelt haben:  
+ Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einem Ordner gesammelt haben:  
   
--   Template_Wizard_239.VSIX, also eine leere VSIX-Projektvorlage.  
+-   *Template_Wizard_239.VSIX*, dies ist eine leere VSIX-Projektvorlage.  
   
--   SelectionHighlight.vsix, die ein Tool, das alle Instanzen eines markierten Worts hervorgehoben ist.  
+-   *SelectionHighlight.vsix*, dies ist ein Tool, um alle Instanzen eines markierten Worts zu markieren.  
   
- Der Inhalt der Datei atom.xml würde das folgende Beispiel ähnelt:  
+ Den Inhalt der *atom.xml* Datei wird im folgende Beispiel ähneln:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   
@@ -73,7 +73,7 @@ Sie erstellen eine Atom (RSS-Feeds) in einem Intranetspeicherort, die Erweiterun
 </feed>
 ```  
   
- Beachten Sie, dass die zwei Linktags Screenshots im generierten Ordner "Bilder" verweisen.  
+ Beachten Sie, dass die beiden Tags link finden Sie Screenshots im Ordner generierten Bilder.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Private Kataloge](../extensibility/private-galleries.md)

@@ -1,5 +1,5 @@
 ---
-title: Name-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Namen von Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202542388fc04b07c0792a550029b0d509327c74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 743c732410c97aa795264dd6fe2495d2d14f2481
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136522"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638869"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
-Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -31,11 +31,11 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Name> Template Name </Name>  
 ```  
   
-```  
+```xml  
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
@@ -46,8 +46,8 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID auf.|  
-|`ID`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -61,7 +61,7 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
   
- Der Text enthält den Namen der Vorlage.  
+ Der Text gibt den Namen der Vorlage.  
   
 ## <a name="remarks"></a>Hinweise  
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
@@ -69,7 +69,7 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -94,5 +94,5 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

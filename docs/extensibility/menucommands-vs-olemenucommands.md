@@ -1,5 +1,5 @@
 ---
-title: MenuCommand- und OleMenuCommands | Microsoft Docs
+title: MenuCommand- und OleMenuCommands | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 47ec8bd549f8f5093a7035f37ad728c1e245e3b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2567b0a5a5db1d57abba8c00255f1598f0ac9bad
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147189"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637798"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
-Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
+Sie können Menübefehle erstellen, durch Ableiten aus <xref:System.ComponentModel.Design.MenuCommand> oder <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt aus, und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
   
- Die Befehle, die ein VSPackage für die IDE verfügbar macht, müssen sichtbar und aktiviert sein, damit ein Benutzer sie verwenden kann. Wenn Befehle in einer VSCT-Datei erstellt werden, indem die Visual Studio-Paket-Projektvorlage verwendet wird, sind sie standardmäßig sichtbar und aktiviert. Durch Festlegen einiger Befehlsflags, z. B. `DynamicItemStart`, kann das Standardverhalten geändert werden. Die Sichtbarkeit, der Aktivierungsstatus und andere Eigenschaften eines Befehls können im Code auch zur Laufzeit geändert werden, indem auf das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugegriffen wird, das dem Befehl zugeordnet ist.  
+ Die Befehle, die ein VSPackage für die IDE verfügbar macht, müssen sichtbar und aktiviert sein, damit ein Benutzer sie verwenden kann. Wenn Befehle erstellt werden, einem *VSCT* Datei mithilfe der Visual Studio-Paket-Projektvorlage können sie sichtbar und wird standardmäßig aktiviert sind. Durch Festlegen einiger Befehlsflags, z. B. `DynamicItemStart`, kann das Standardverhalten geändert werden. Die Sichtbarkeit, der Aktivierungsstatus und andere Eigenschaften eines Befehls können im Code auch zur Laufzeit geändert werden, indem auf das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugegriffen wird, das dem Befehl zugeordnet ist.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="template-locations-for-the-visual-studio-package-template"></a>Speicherorte für die Visual Studio-Paket-Vorlage  
- Sie finden die Visual Studio-Paket-Vorlage im Dialogfeld **Neues Projekt** unter **Visual Basic / Erweiterungen**, **C# / Erweiterungen**oder **Andere Projekttypen / Erweiterungen**.  
+## <a name="template-locations-for-the-visual-studio-package-template"></a>Speicherorte für die Visual Studio-Paketvorlage  
+ Sie finden die Visual Studio-Paket-Vorlage in der **neues Projekt** Dialogfeld unter **Visual Basic** > **Erweiterbarkeit**  >  **C#** > **Erweiterbarkeit**, oder **anderen Projekttypen** > **Erweiterbarkeit**.  
   
-## <a name="creating-a-command"></a>Erstellen eines Befehls  
- Alle Befehle, Befehlsgruppen, Menüs, Symbolleisten und Toolfenster sind in der VSCT-Datei definiert. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+## <a name="create-a-command"></a>Erstellen eines Befehls  
+ Alle Befehle, Befehlsgruppen, Menüs, Symbolleisten und Toolfenster sind in definiert die *VSCT* Datei. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabellen (VSCT) Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Wenn Sie ein VSPackage mit der Paketvorlage erstellen, wählen Sie **Menübefehl** aus, um eine VSCT-Datei zu erstellen und einen Standardmenübefehl festzulegen. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Wenn Sie eine VSPackage mit der Paketvorlage erstellen, wählen Sie **Menübefehl** zum Erstellen einer *VSCT* Datei und einen Standardmenübefehl. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-add-a-command-to-the-ide"></a>So fügen Sie der IDE einen Befehl hinzu  
+### <a name="to-add-a-command-to-the-ide"></a>So fügen Sie der IDE einen Befehl hinzu  
   
-1.  Öffnen Sie die VSCT-Datei.  
+1.  Öffnen der *VSCT* Datei.  
   
 2.  Suchen Sie im `Symbols` -Abschnitt nach dem [GuidSymbol](../extensibility/guidsymbol-element.md) -Element, das die Gruppen und Befehle enthält.  
   
@@ -75,11 +75,11 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
          Ist das `priority` -Attribut nicht angegeben, wird sein Wert auf 0 festgelegt.  
   
-    3.  Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie unter [Button Element](../extensibility/button-element.md).  
+    3.  Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie [Schaltflächenelement](../extensibility/button-element.md).  
   
 5.  Erstellen Sie in der Schaltflächendefinition ein [Strings](../extensibility/strings-element.md) -Element, das Folgendes enthält: ein [ButtonText](../extensibility/buttontext-element.md) -Element, in dem sich der Name des Menüs so befindet, wie er in der IDE angezeigt wird, sowie ein [CommandName](../extensibility/commandname-element.md) -Element, in dem sich der Name des Befehls befindet, über den im Fenster **Befehl** auf das Menü zugegriffen wird.  
   
-     Enthält die Schaltflächenzeichenfolge das Zeichen „&“, kann das Menü geöffnet werden, indem ALT sowie das Zeichen gedrückt werden, das unmittelbar auf „&“ folgt.  
+     Wenn die Schaltfläche Zeichenfolge das Zeichen "&" enthält, kann der Benutzer durch Drücken Sie im Menü öffnen **Alt** sowie das Zeichen, die unmittelbar folgt der '&'.  
   
      Wird ein `Tooltip` -Element hinzugefügt, wird der darin enthaltene Text angezeigt, wenn mit dem Mauszeiger auf die Schaltfläche gezeigt wird.  
   
@@ -120,11 +120,11 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
          Werden mehrere Befehlsplatzierungen erstellt, die dasselbe GUID:ID-Paar und verschiedene übergeordnete Elemente haben, wird ein Menü an mehreren Positionen angezeigt. Weitere Informationen finden Sie in der Beschreibung des [CommandPlacements](../extensibility/commandplacements-element.md) -Elements.  
   
-     Weitere Informationen zu Befehlsgruppen und Überordnung finden Sie unter [erstellen Wiederverwendbarer Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
+     Weitere Informationen zu Befehlsgruppen und Überordnung finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
   
  An diesem Punkt ist der Befehl in der IDE sichtbar, hat aber noch keine Funktionalität. Wurde der Befehl über die Paketvorlage erstellt, hat er standardmäßig einen Click-Handler, der eine Meldung angezeigt.  
   
-## <a name="handling-the-new-command"></a>Behandeln des neuen Befehls  
+## <a name="handle-the-new-command"></a>Behandeln Sie den neuen Befehl  
  Die meisten Befehle in verwaltetem Code können durch das Managed Package Framework (MPF) behandelt werden, indem der Befehl einem <xref:System.ComponentModel.Design.MenuCommand> -Objekt oder einem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugeordnet und dessen Ereignishandler implementiert werden.  
   
  Für Code, in dem die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle direkt zur Befehlsbehandelung verwendet wird, müssen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle und deren Methoden implementieren. Die beiden wichtigsten Methoden sind <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
@@ -172,7 +172,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 6.  Implementieren Sie die Methode, die den Befehl behandelt.  
   
-#### <a name="to-implement-querystatus"></a>So implementieren Sie „QueryStatus“  
+### <a name="to-implement-querystatus"></a>So implementieren Sie „QueryStatus“  
   
 1.  Das QueryStatus-Ereignis tritt auf, bevor ein Befehl angezeigt wird. Dadurch wird es möglich, Eigenschaften dieses Befehls im Ereignishandler festzulegen, bevor der Befehl den Benutzer erreicht. Nur Befehle, die als <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekte hinzugefügt werden, können auf diese Methode zugreifen.  
   
@@ -198,14 +198,14 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
  Das MPF behandelt automatisch den Fall nicht unterstützter oder unbekannter Gruppen. Ein Befehl wird nur dann unterstützt, wenn er dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> über die <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> -Methode hinzugefügt wurde.  
   
-### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Behandeln von Befehlen über die IOleCommandTarget-Schnittstelle  
+### <a name="handle-commands-by-using-the-iolecommandtarget-interface"></a>Handle-Befehle über die IOleCommandTarget-Schnittstelle  
  Für Code, in dem die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle direkt verwendet wird, muss das VSPackage sowohl die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> - als auch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle implementieren. Wird in dem VSPackage eine Projekthierarchie implementiert, müssen stattdessen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> - und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> -Methode der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle implementiert werden.  
   
  Sowohl die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> - als auch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode sind so gestaltet, dass sie eine einzige Befehlssatz- `GUID` und ein Array mit Befehls-IDs als Eingabe empfangen. Es empfiehlt sich, dass VSPackages dieses Konzept mehrerer IDs in einem Aufruf vollständig unterstützen. Solange ein VSPackage nicht aus anderen VSPackages aufgerufen wird, können Sie aber davon ausgehen, dass das Befehlsarray nur eine Befehls-ID enthält, da die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> - und die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode in einer klar definierten Reihenfolge ausgeführt werden. Weitere Informationen zum routing finden Sie unter [Befehlsrouting in VSPackages](../extensibility/internals/command-routing-in-vspackages.md).  
   
  Für Code, in dem die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle direkt zur Befehlsbehandelung verwendet wird, müssen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode wie folgt im VSPackage implementieren, um Befehle zu behandeln.  
   
-##### <a name="to-implement-the-querystatus-method"></a>So implementieren Sie die QueryStatus-Methode  
+#### <a name="to-implement-the-querystatus-method"></a>So implementieren Sie die QueryStatus-Methode  
   
 1.  Geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK> für gültige Befehle zurück.  
   
@@ -247,14 +247,14 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
  Die VSPackage-Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode muss außerdem abhängig davon, ob der Befehl unterstützt wird und ob er erfolgreich behandelt wurde, bestimmte Fehlercodes zurückgeben.  
   
-##### <a name="to-implement-the-exec-method"></a>So implementieren Sie die Exec-Methode  
+#### <a name="to-implement-the-exec-method"></a>So implementieren Sie die Exec-Methode  
   
 -   Wenn die Befehls- `GUID` unbekannt ist, geben Sie `OLECMDERR_E_UNKNOWNGROUP`zurück.  
   
 -   Wenn die `GUID` bekannt, aber die Befehls-ID unbekannt ist, geben Sie `OLECMDERR_E_NOTSUPPORTED`zurück.  
   
--   Wenn die `GUID` und die Befehls-ID mit dem GUID:ID-Paar übereinstimmen, das für den Befehl in der VSCT-Datei verwendet wird, führen Sie den Code aus, der dem Befehl zugeordnet ist, und geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK>zurück.  
+-   Wenn die `GUID` und Befehls-ID übereinstimmen, das GUID: ID-Paar, das verwendet wird, mit dem Befehl in der *VSCT* Datei, führen Sie den Code, der den Befehl und die Rückgabe zugeordnet ist <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)   
+ [VSCT XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)   
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

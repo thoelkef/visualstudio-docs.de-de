@@ -1,5 +1,5 @@
 ---
-title: Rückgängig machen und wiederholen Sie über die Legacy-API verwalten | Microsoft Docs
+title: Verwalten von rückgängig machen, und wiederholen Sie die Legacy-API mit | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93bb65fa9865c5ca7386925d2c145f2acbc0993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be60b3f0dd45a40663770b4b0debe8023e277f32
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137510"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638071"
 ---
-# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>Verwalten von rückgängig und wiederholen, über die Legacy-API
-Editoren müssen Rückgängig-Vorgängen unterstützen, mit denen Benutzer ihre zuletzt vorgenommenen Änderungen umzukehren, wenn sie den Code ändern. Die meisten unter implementierten Editoren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] können Rückgängig-Unterstützung, die automatisch von der integrierten Entwicklungsumgebung (IDE) bereitgestellt haben.  
+# <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>Verwalten von zum Rückgängigmachen und wiederherstellen, indem Sie mit der legacy-API
+Editoren müssen Rückgängig-Vorgänge unterstützt, mit denen Benutzer ihre letzten Änderungen zurückzusetzen, wenn sie zum Ändern von Code. Die meisten Editoren implementierter [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Rückgängig-Unterstützung, die automatisch von der integrierten Entwicklungsumgebung (IDE) bereitgestellt haben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Implementieren von Rückgängig-Management](../extensibility/how-to-implement-undo-management.md)  
- Bietet rückgängig Editoren mit einzelnen oder mehrere Ansichten.  
+ [Gewusst wie: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md)  
+ Bietet Rückgängig-Funktion für Editoren mit einzelnen oder mehreren Ansichten an.  
   
- [Vorgehensweise: Deaktivieren der Rückgängig-Stapel](../extensibility/how-to-clear-the-undo-stack.md)  
+ [Gewusst wie: deaktivieren den Rückgängig-Stapel](../extensibility/how-to-clear-the-undo-stack.md)  
  Beschreibt, wie einen Rückgängig-Stapel gelöscht.  
   
- [Vorgehensweise: Verwenden Sie die verknüpfter Rollbackvorgang Verwaltung](../extensibility/how-to-use-linked-undo-management.md)  
- Verknüpfter Rollbackvorgang Management integriert in den Editor.  
+ [Gewusst wie: verwenden verknüpften rückgängig-Verwaltung](../extensibility/how-to-use-linked-undo-management.md)  
+ Enthält verknüpfte rückgängig-Verwaltung in den Editor.  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>  
- Ermöglicht die rückgängig-Verwaltung für einen Editor, der mehrere Ansichten unterstützt.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte
+ Bietet rückgängig-Verwaltung für einen Editor, der mehrere Ansichten unterstützt.  
