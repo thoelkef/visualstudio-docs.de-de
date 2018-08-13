@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079147"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511234"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Schnellstart: Verwenden des Code-Editors
 
@@ -157,14 +157,21 @@ Niemandem gelingt das Codieren schon beim ersten Versuch. Es ist also sehr wahrs
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dieser Schnellstart für den Visual Studio-Editor wurde nun abgeschlossen. Als Nächstes können Sie einige der anderen Schnellstarts für die Visual Studio-Entwicklungsumgebung testen (z.B. [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md) oder [Schnellstart: Personalisieren von Visual Studio](../ide/quickstart-personalize-the-ide.md)), sich weitere Möglichkeiten zum [Navigieren durch Code](../ide/navigating-code.md) ansehen oder über die Links weitere Informationen zu den hier vorgestellten Features erhalten. Ansonsten wünschen wir Ihnen viel Spaß beim Codieren.
+Dieser Schnellstart für den Visual Studio-Editor wurde nun abgeschlossen. Als nächstes können Sie einige der anderen Schnellstarts für die Visual Studio-Entwicklungsumgebung ausprobieren.
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Personalisieren von Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
-- [Schnellstart: Personalisieren von Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
 - [Codeausschnitte](../ide/code-snippets.md)
+- [Navigieren durch den Code](../ide/navigating-code.md)
 - [Gliedern](../ide/outlining.md)
 - [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)

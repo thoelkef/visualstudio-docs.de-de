@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923948"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513092"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
+
 In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein Rechteck, ein Kreis oder eine Ellipse. Ein *Pfad* ist eine flexiblere Version einer Form. Sie können diese z. B. umformen oder miteinander kombinieren, um neue Formen zu kreieren.
 
- Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hoher Auflösung skaliert werden können. Weitere Informationen zu Vektorgrafiken finden Sie unter [Was sind Vektorgrafiken](https://www.youtube.com/watch?v=MoCSwF0n-io) oder unter [Vektorgrafiken](http://www.webopedia.com/TERM/V/vector_graphics.html).
-
- **In diesem Thema:**
-
--   [Zeichnen einer Form](#Shape)
-
--   [Zeichnen eines Pfads](#Path)
-
--   [Konvertieren von Formen in Pfade](#Convert)
-
--   [Kombinieren von Pfaden](#Combine)
-
--   [Erstellen eines zusammengesetzten Pfads](#Compound)
-
--   [Erstellen eines Beschneidungspfads](#Clipping)
+Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hoher Auflösung skaliert werden können. Weitere Informationen zu Vektorgrafiken finden Sie unter [Was sind Vektorgrafiken](https://www.youtube.com/watch?v=MoCSwF0n-io) oder unter [Vektorgrafiken](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
 ##  <a name="Shape"></a> Zeichnen einer Form
  Formen finden Sie im Bereich **Objekte** .

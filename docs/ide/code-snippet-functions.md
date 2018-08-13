@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917965"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512134"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
 
-Es stehen drei Funktionen zur Verfügung, die mit C#-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](../ide/code-snippets-schema-reference.md#function) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).
+Es stehen drei Funktionen zur Verfügung, die mit C#-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](../ide/code-snippets-schema-reference.md#function-element) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funktionen
 
 In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung mit dem `Function`-Element in Codeausschnitten beschrieben.
 
-|Funktion|description|Sprache|
+|Funktion|Beschreibung |Sprache|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|Gibt den Namen der Klasse zurück, die den eingefügten Ausschnitt enthält.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|Reduziert den *TypeName*-Parameter auf seine einfachste Form im Kontext, in dem der Ausschnitt aufgerufen wurde.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|C#|
+|`ClassName()`|Gibt den Namen der Klasse zurück, die den eingefügten Ausschnitt enthält.|C#|
+|`SimpleTypeName(` `TypeName` `)`|Reduziert den *TypeName*-Parameter auf seine einfachste Form im Kontext, in dem der Ausschnitt aufgerufen wurde.|C#|
 
 ## <a name="example"></a>Beispiel
 
@@ -159,5 +159,5 @@ In diesem Beispiel wird die Verwendung der `SimpleTypeName`-Funktion veranschaul
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Function-Element](../ide/code-snippets-schema-reference.md#function)
+- [Function-Element](../ide/code-snippets-schema-reference.md#function-element)
 - [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

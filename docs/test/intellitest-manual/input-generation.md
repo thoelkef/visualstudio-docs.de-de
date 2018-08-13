@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341882"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511651"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
 IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert. Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können. Die Analyse ist ein inkrementeller Prozess. Er verfeinert das Prädikat **q: I -> {true, false}** mit den formellen Eingabeparametern des Tests **l**. **q** steht für die Verhalten, die IntelliTest bereits beobachtet hat. Zunächst ist dies **q := false**, weil noch nichts beobachtet wurde.
 

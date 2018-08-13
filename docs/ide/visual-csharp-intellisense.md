@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748230"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513399"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -39,24 +39,24 @@ Die IntelliSense-Vervollständigungslisten in C# enthalten u.a. Token von „Mem
 
 Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Gefilterte Vervollständigungslisten](#filtered-completion-lists).
 
-## <a name="code-snippets-in-completion-lists"></a>Codeausschnitte in Vervollständigungslisten
+### <a name="code-snippets-in-completion-lists"></a>Codeausschnitte in Vervollständigungslisten
 
-In C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Verknüpfungstext](../ide/code-snippets-schema-reference.md#shortcut) des Ausschnitts angezeigt. Weitere Informationen über standardmäßig in C# verfügbare Codeausschnitte finden Sie unter [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).
+In C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Verknüpfungstext](../ide/code-snippets-schema-reference.md#shortcut-element) des Ausschnitts angezeigt. Weitere Informationen über standardmäßig in C# verfügbare Codeausschnitte finden Sie unter [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).
 
-## <a name="language-keywords-in-completion-lists"></a>Sprachschlüsselwörter in Vervollständigungslisten
+### <a name="language-keywords-in-completion-lists"></a>Sprachschlüsselwörter in Vervollständigungslisten
 
 In C# umfasst die Vervollständigungsliste zusätzlich Programmiersprachen-Schlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](/dotnet/csharp/language-reference/keywords/index).
 
-## <a name="extension-methods-in-completion-lists"></a>Erweiterungsmethoden in Vervollständigungslisten
+### <a name="extension-methods-in-completion-lists"></a>Erweiterungsmethoden in Vervollständigungslisten
 
 In C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.
 
 > [!NOTE]
 > Von der Vervollständigungsliste werden nicht alle Erweiterungsmethoden für <xref:System.String>-Objekte angezeigt.
 
-Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden verwendet. Eine Liste der Symbole finden Sie unter [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md). Wenn sich eine Instanzenmethode und eine Erweiterungsmethode mit identischem Namen im selben Bereich befinden, zeigt die Vervollständigungsliste das Symbol für die Erweiterungsmethode an.
+Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden verwendet. Einen Leitfaden zur Symbolreferenz finden Sie unter [Symbole in der Klassenansicht und im Objektkatalog](../ide/class-view-and-object-browser-icons.md). Wenn sich eine Instanzenmethode und eine Erweiterungsmethode mit identischem Namen im selben Bereich befinden, zeigt die Vervollständigungsliste das Symbol für die Erweiterungsmethode an.
 
-## <a name="filtered-completion-lists"></a>Gefilterte Vervollständigungslisten
+### <a name="filtered-completion-lists"></a>Gefilterte Vervollständigungslisten
 
 Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollständigungsliste entfernt. In C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
 
@@ -78,13 +78,17 @@ Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollst�
 
 - Mit **Parametern** kann automatisch nach der ersten Methodenüberladung gefiltert werden, die den Parametern während der Eingabe entspricht. Falls mehrere Methodenüberladungen verfügbar sind, können Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE verwenden, um in der Liste zur nächsten möglichen Überladung zu navigieren.
 
-## <a name="most-recently-used-members"></a>Zuletzt verwendete Member
+### <a name="most-recently-used-members"></a>Zuletzt verwendete Member
 
-IntelliSense speichert, welche Member Sie in der Popupliste [Member auflisten](../ide/using-intellisense.md) zuletzt ausgewählt haben, um die automatische Vervollständigung von Objektnamen zu ermöglichen. Bei der nächsten Verwendung der Memberliste werden die zuletzt verwendeten Member oben angezeigt. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in der Entwicklungsumgebung (IDE) gelöscht.
+IntelliSense speichert, welche Member Sie in der Popupliste [Member auflisten](../ide/using-intellisense.md) zuletzt ausgewählt haben, um die automatische Vervollständigung von Objektnamen zu ermöglichen. Bei der nächsten Verwendung der **Memberliste** werden die zuletzt verwendeten Member oben angezeigt. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in Visual Studio gelöscht.
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
 Beim Eingeben von [override](/dotnet/csharp/language-reference/keywords/override) und Drücken der **Leertaste** zeigt IntelliSense alle zulässigen Basisklassenmember an, die Sie in einem Popuplistenfeld überschreiben können. Durch die Eingabe des Rückgabetyps der Methode nach `override` wird IntelliSense angewiesen, nur Methoden anzuzeigen, die denselben Typ zurückgeben. Wenn IntelliSense keine Übereinstimmung findet, werden alle Basisklassenmember angezeigt.
+
+### <a name="ai-enhanced-intellisense"></a>IntelliSense mit KI-Erweiterung
+
+Sie können eine experimentelle [IntelliCode-Erweiterung](/visualstudio/intellicode/intellicode-visual-studio) für Visual Studio installieren, die mithilfe von künstlicher Intelligenz erweiterte IntelliSense-Vervollständigungslisten zur Verfügung stellt. Diese Erweiterung trifft eine Vorhersage hinsichtlich der höchstwahrscheinlich korrekten zu verwendenden API statt ein fach nur eine alphabetische Memberliste anzuzeigen. Sie verwendet Ihren aktuellen Codekontext und die aktuellen Muster, um die dynamische Liste bereitzustellen.
 
 ## <a name="automatic-code-generation"></a>Automatische Codegenerierung
 
@@ -104,7 +108,7 @@ Mit der Option **Using-Direktiven entfernen und sortieren** können Sie `using`-
 
 ### <a name="implement-interface"></a>Implementieren einer Schnittstelle
 
-IntelliSense bietet die Möglichkeit, eine [Schnittstelle](/dotnet/csharp/language-reference/keywords/interface) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für **Schnellaktionen** angezeigt. Mithilfe der Glühbirne können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziten Namen weisen die Methodendeklarationen den Namen der Schnittstelle auf, während sie bei impliziten Namen keinen Hinweis auf die Schnittstelle enthalten, der sie angehören. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense bietet die Möglichkeit, eine [Schnittstelle](/dotnet/csharp/language-reference/keywords/interface) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird eine Glühbirne für **Schnellaktionen** angezeigt. Mithilfe der Glühbirne können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziter Benennung tragen die Methodendeklarationen den Namen der Schnittstelle. Bei impliziter Benennung fehlt bei den Methodendeklarationen ein Hinweis auf die zugehörige Schnittstelle. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Bei der Schnittstellenimplementierung wird die Mindestanzahl von Methodenstubs generiert, die für die Schnittstelle benötigt werden. Wenn eine Basisklasse Teile der Schnittstelle implementiert, werden diese Stubs nicht neu generiert.
 

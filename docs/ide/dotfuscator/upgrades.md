@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704573"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468542"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Upgraden von Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Während die Dotfuscator Community Edition ein grundlegendes Schutzlevel bietet,
   * Zusätzliche [Abwehrverhalten der Anwendung][check-actions].
   * Die Möglichkeit, einen Warnungszeitraum vor der End-of-Life-Deadline einer Anwendung anzugeben.
   * Die Möglichkeit, Anwendungscode während eines End-of-Life-Warnungszeitraums oder nach Ablauf der Deadline anzuzeigen.
-  * Telemetrie-Verschlüsselung.
-* *Anwendungsüberwachung*
-  * Die Möglichkeit zum Sammeln und Speichern von Informationen während temporärer Netzwerkausfälle.
-  * Die Möglichkeit zum Sammeln persönlich identifizierbarer Informationen.
-  * Unbegrenzte Nutzung der [Funktionsnachverfolgung][features].
-  * Die Möglichkeit, neben Ausnahmefehlern auch Ausnahmen nachzuverfolgen, die vom Code abgefangen und ausgelöst wurden.
-  * Die Möglichkeit zum Nachverfolgen von Ausnahmen in `.dll`-Assemblys.
-  * Telemetrie-Verschlüsselung.
 
 Dotfuscator Professional ist der [.NET Obfuscator][net-obfuscator]-Industriestandard und eignet sich für Enterprise-Entwickler, die fortlaufende Unterstützung, Wartung und Produkt-Updates benötigen.
 Darüber hinaus bietet Dotfuscator Professional eine engere Integration mit Visual Studio und ist für die gewerbliche Verwendung lizenziert.
@@ -88,7 +80,6 @@ Weitere Informationen zu den erweiterten Features von Dotfuscator Professional z
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

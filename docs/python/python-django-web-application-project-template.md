@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251139"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499542"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
@@ -52,7 +52,7 @@ Sie können über verschiedene Befehle im Menü **Projekt** oder durch Rechtskli
 
     ![Konsole](media/template-django-console-shell.png)
 
-- **Django-DB synchronisieren**: Führt `manage.py syncdb` in einem interaktiven Fenster aus:
+- **Django-DB synchronisieren**: Führt `manage.py syncdb` in einem **interaktiven** Fenster aus:
 
     ![Konsole](media/template-django-console-sync-db.png)
 

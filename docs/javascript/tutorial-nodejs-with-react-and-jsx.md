@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132270"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567141"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -95,7 +95,7 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
     Die *package.json*-Datei des Projekts wird mit den neuen Paketinformationen einschließlich der Paketversion aktualisiert.
 
-1. Verwenden Sie anstelle der Benutzeroberfläche den folgenden Code, und fügen Sie ihn in „package.json“ ein, um nach den restlichen Paketen zu suchen und sie hinzuzufügen. Ersetzen Sie den `dependencies`-Abschnitt durch den folgenden Code:
+1. Verwenden Sie anstelle der Benutzeroberfläche den folgenden Code, und fügen Sie ihn in „package.json“ ein, um nach den restlichen Paketen zu suchen und sie hinzuzufügen. Ersetzen Sie dazu den `dependencies`-Abschnitt durch den folgenden Code:
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
     }
     ```
 
+    Wenn Ihre Version der leeren Vorlage keinen `dependencies`-Abschnitt enthält, müssen Sie ihn hinzufügen, statt den vorhandenen Abschnitt zu ersetzen.
+
 1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **NPM-Pakete aktualisieren** aus.
 
-    Klicken Sie auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt.
+    Klicken Sie im unteren Bereich auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt. Achten Sie zum Anzeigen der Ausgabe darauf, dass Sie im Feld **Show output from (Ausgabe anzeigen von )** im Fenster **Ausgabe** **Npm** ausgewählt haben.
 
     Die folgenden NPM-Module werden im Projektmappen-Explorer angezeigt, nachdem sie installiert wurden.
 
@@ -144,7 +146,7 @@ Fügen Sie für diese einfache App die neuen Projektdateien dem Projektstammverz
 
 ## <a name="add-app-code"></a>Hinzufügen von App-Code
 
-1. Öffnen Sie *server.js*, und ersetzen Sie den Code durch den folgenden:
+1. Öffnen Sie *server.js*, und ersetzen Sie den vorhandenen Code durch den folgenden:
 
     ```javascript
     'use strict';

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927346"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513173"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -791,7 +791,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.CollapseAllOutlining|**STRG+M, STRG+A**|
 |Edit.CollapseCurrentRegion|**STRG+M, STRG+S**|
 |Edit.CollapseTag|**STRG+M, STRG+T**|
-|Edit.CollapsetoDefinitions|**STRG+M, STRG+O**|
+|Edit.CollapseToDefinitions|**STRG+M, STRG+O**|
 |Edit.CommentSelection|**STRG+K, STRG+C**|
 |Edit.CompleteWord|**STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE**|
 |Edit.CopyParameterTip|**STRG+UMSCHALT+ALT+C**|

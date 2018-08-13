@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380862"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469112"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -210,7 +210,7 @@ Eine Testmethode muss die folgenden Anforderungen erfüllen:
 
 ### <a name="analyze-the-test-results"></a>Analysieren der Testergebnisse
 
-Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Für die `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*value*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*value*>**). Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
+Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Für die `AreEqual`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*value*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*value*>**). Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
 
 Beim Komponententest wurde ein Fehler festgestellt: Der Abbuchungsbetrag wird dem Kontoguthaben *hinzugerechnet*, anstatt davon *abgezogen* zu werden.
 

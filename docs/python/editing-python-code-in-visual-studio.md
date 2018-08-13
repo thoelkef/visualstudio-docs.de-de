@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341832"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500120"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
 Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
 
-Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command).
+Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 |   |   |
 |---|---|

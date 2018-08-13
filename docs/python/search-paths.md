@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118238"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586416"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Verwenden von Python-Suchpfaden in Visual Studio
 
@@ -30,15 +30,15 @@ Die Umgebungsvariable für den Suchpfad wird von Visual Studio jedoch ignoriert,
 
 Visual Studio bietet daher eine Möglichkeit, Suchpfade direkt in Umgebungen und Projekten anzugeben. Suchpfade werden als Wert von `PYTHONPATH` (oder anderen entsprechenden Variablen) beim Debuggen oder Ausführen des Skripts in Visual Studio übergeben. Durch das Hinzufügen von Suchpfaden überprüft Visual Studio die Bibliotheken an diesen Speicherorten und erstellt ggf. entsprechende IntelliSense-Datenbanken für sie (Visual Studio 2017 Version 15.5 und früher; das Erstellen der Datenbank kann je nach Anzahl der Bibliotheken einige Zeit in Anspruch nehmen).
 
-Um einen Suchpfad hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Element **Suchpfade**, wählen Sie **Ordner zu Suchpfad hinzufügen** aus, und wählen Sie den aufzunehmenden Ordner aus. Dieser Pfad wird für alle Umgebungen verwendet, die dem Projekt zugeordnet sind. (Möglicherweise werden Ihnen Fehlermeldungen angezeigt, wenn die Umgebung auf Python 3 basiert, und Sie versuchen, Python 2.7-Modulen einen Suchpfad hinzuzufügen.)
+Um einen Suchpfad hinzuzufügen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Element **Suchpfade**, wählen Sie **Ordner zu Suchpfad hinzufügen** aus, und wählen Sie den aufzunehmenden Ordner aus. Dieser Pfad wird für alle Umgebungen verwendet, die dem Projekt zugeordnet sind. (Möglicherweise werden Ihnen Fehlermeldungen angezeigt, wenn die Umgebung auf Python 3 basiert, und Sie versuchen, Python 2.7-Modulen einen Suchpfad hinzuzufügen.)
 
-Dateien mit der Erweiterung `.zip` oder `.egg` können auch als Suchpfade hinzugefügt werden. Wählen Sie dazu **ZIP-Archiv zu Suchpfad hinzufügen** aus. Wie bei Ordnern wird der Inhalt dieser Dateien geprüft und IntelliSense zur Verfügung gestellt.
+Dateien mit der Erweiterung *.zip* oder *.egg* können ebenfalls als Suchpfade hinzugefügt werden. Wählen Sie dazu **ZIP-Archiv zu Suchpfad hinzufügen** aus. Wie bei Ordnern wird der Inhalt dieser Dateien geprüft und IntelliSense zur Verfügung gestellt.
 
 Wenn Sie regelmäßig die gleichen Suchpfade verwenden und der Inhalt nicht häufig geändert wird, kann es effizienter sein, ihn im Ordner „site-packages“ zu installieren. Der Suchpfad wird dann analysiert, in der IntelliSense-Datenbank gespeichert und immer der vorgesehenen Umgebung zugeordnet. So ist es nicht erforderlich, dass jedem Projekt ein Suchpfad hinzugefügt wird.
 
-## <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Python-Umgebungen in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
-- [Verwenden von "requirements.txt" für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
+- [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)
