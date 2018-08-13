@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381093"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468272"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
 In diesem Artikel erfahren Sie, wie [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) es Entwicklern ermöglicht, produktiver denn je zu arbeiten. Nutzen Sie einfach unsere Leistungs- und Produktivitätsverbesserungen wie die Navigation zu dekompilierten Assemblys, Namensvorschläge für Variablen während der Eingabe, eine Hierarchieansicht im **Test-Explorer**, „Gehe zu allen“ (**Strg**+**T**) zur Navigation zu Datei-/Typ-/Member-/Symboldeklarationen, eine intelligente **Hilfe bei Ausnahmen**, Konfiguration und Erzwingung des Codeformats und viele Refactorings und Codekorrekturen.
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Ich bin an meine Tastenkombinationen aus einer anderen Erweiterung/einem anderen Editor/einer anderen IDE gewöhnt.
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Ich bin an meine Tastenkombinationen aus einer anderen Erweiterung/einem anderen Editor/einer anderen IDE gewöhnt.
 
 **Neues in Visual Studio 2017-Version 15.8:** Wenn Sie von einer anderen IDE oder Codierungsumgebung wechseln, können Sie Ihr Tastaturschema zu *Visual Studio Code* oder *ReSharper (Visual Studio)* ändern:
 
 ![Tastaturschemas in Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
 
 Einige Erweiterungen bieten auch Tastaturschemas an:
+
 - [HotKeys für Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emacs-Emulation](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -59,7 +60,9 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 Weitere Informationen zu Tastenkombinationen in Visual Studio finden Sie [in unserer Dokumentation](..\ide\tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Ich benötige eine Möglichkeit, schnell zu Dateien oder Dateitypen zu navigieren.
-Visual Studio 2017 verfügt über ein Feature namens **Gehe zu allen** (**Strg**+**T**). „Gehe zu allen“ ermöglicht Ihnen einen schnellen Wechsel zu jeder Datei-, Typ-, Member- oder Symboldeklaration.
+
+Visual Studio 2017 verfügt über ein Feature namens **Gehe zu allen** (**Strg**+**T**). **Gehe zu allen** ermöglicht Ihnen einen schnellen Wechsel zu jeder Datei-, Typ-, Member- oder Symboldeklaration.
+
 - Ändern Sie den Speicherort dieser Suchleiste oder deaktivieren Sie die „Livenavigationsvorschau“ mit dem **Zahnradsymbol**.
 - Filtern Sie die Ergebnisse mithilfe unserer Abfragesyntax (z.B. „t mytype“). Sie können Ihre Suche auch nur auf das aktuelle Dokument beschränken.
 - camelCase-Zuordnung wird unterstützt!
@@ -67,14 +70,18 @@ Visual Studio 2017 verfügt über ein Feature namens **Gehe zu allen** (**Strg**
 ![„Gehe zu allen“ in Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Mein Team erzwingt Codeformatregeln für unsere Codebasis.
+
 Sie können eine *EDITORCONFIG*-Datei zum Codieren von Codierungskonventionen verwenden und diese in Ihrer Quelle beibehalten.
-- Wir empfehlen die Installation der [EditorConfig-Sprachdiensteerweiterung](https://aka.ms/editorconfig) für das Hinzufügen und Bearbeiten einer *EDITORCONFIG*-Datei in Visual Studio.
-- Sehen Sie sich die [Dokumentation](https://aka.ms/editorconfigDocs) für alle .NET-Codierungskonventionsoptionen an.
-- Sehen Sie sich diese [Zusammenfassung](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) für eine *EDITORCONFIG*-Beispieldatei an.
+
+- Sie können die [EditorConfig-Sprachdiensteerweiterung](https://aka.ms/editorconfig) installieren, die das Hinzufügen und Bearbeiten einer *.editorconfig*-Datei in Visual Studio erleichtert.
+- Testen Sie die [IntelliCode-Erweiterung für Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Diese experimentelle Erweiterung leitet Ihre Codeformate aus vorhandenem Code ab und erstellt dann eine nicht leere *.editorconfig*-Datei, in der Ihre Einstellungen für das Codeformat bereits definiert sind.
+- Weitere Informationen finden Sie in der Dokumentation zu den [.NET-Codierungskonventionsoptionen](https://aka.ms/editorconfigDocs).
+- Sehen Sie sich diese [Zusammenfassung](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) für eine *.editorconfig*-Beispieldatei an.
 
 ![Codeformaterzwingung in Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Ich benötige weitere Refactorings und Codekorrekturen.
+
 Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generieren von Code und Codekorrekturen. Rote Wellenlinien stellen Fehler dar, grüne Wellenlinien Warnungen, und drei graue Punkte stellen Codevorschläge dar. Sie erhalten Zugang zu Codekorrekturen, indem Sie auf das Glühbirnen- bzw. Schraubendrehersymbol klicken oder **STRG**+**.** oder **ALT**+**EINGABETASTE** drücken. Jede Korrektur enthält ein Vorschaufenster, das einen Livecodevergleich und die Funktionsweise der Lösung anzeigt.
 
 - Zu gängigen schnellen Problembehebungen und Refactorings zählen Folgende:
@@ -98,6 +105,7 @@ Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generiere
 ![Refactorings in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Ich benötige die Features „Find Usages“ (Verwendungen finden), „Gehe zu Implementierung“, „Navigate To Decompiled Assemblies“ (Navigieren zu dekompilierten Assemblys)
+
 Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codebasis auf. Erfahren Sie mehr über die [Features zum Navigieren in Code](../ide/navigating-code.md).
 
 | Feature | Verknüpfung | Details oder Verbesserungen |
@@ -112,7 +120,9 @@ Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codeb
 ![„Gehe zu allen“ und „Alle Verweise suchen“](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>Ich möchte meine Komponententests ausführen und anzeigen.
+
 Wir haben bei den Testfunktionen in Visual Studio 2017 viele Verbesserungen vorgenommen. Verwenden Sie eine unserer Unittestoberflächen mit den Testframeworks MSTest v1, MSTest v2, NUnit oder XUnit.
+
 - Die Testermittlung des **Test-Explorers** ist in Version 15.6 schnell. (Führen Sie ein Upgrade auf die neueste Version Ihres Testadapters durch, um optimale Ergebnisse zu erhalten.)
 - Organisieren Sie Ihre Tests im Test-Explorer mit unserer neuen *hierarchischen Sortierung* in Version 15.6.
 - [Live Unit Testing](../test/live-unit-testing.md) führt laufend Tests aus, die durch Ihre Codeänderungen beeinflusst werden, und aktualisiert Inline-Editor-Symbole, um Sie über den Status Ihres Tests zu informieren. Schließen Sie bestimmte Tests oder Testprojekte in Ihren *aktiven Testsatz* ein oder von diesem aus.
@@ -120,7 +130,9 @@ Wir haben bei den Testfunktionen in Visual Studio 2017 viele Verbesserungen vorg
 ![Hierarchieansicht für den Test-Explorer in Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Ich möchte meinen Code debuggen.
+
 Wir haben Visual Studio 2017 um unzählige neue Funktionen zum Debuggen erweitert.
+
 - Durch *Ausführung bis Klick* können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
 - Die neue **Ausnahmen-Hilfe** setzt die wichtigsten Informationen (z.B. die als NULL festzulegende Variable in NullReferenceException) auf die oberste Ebene im Dialogfeld.
 - Durch Debuggen mit der Funktion [Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
@@ -129,13 +141,16 @@ Wir haben Visual Studio 2017 um unzählige neue Funktionen zum Debuggen erweiter
 ![Neue Ausnahmen-Hilfe in Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Ich möchte die Versionskontrolle bei meinen Projekten verwenden.
+
 Sie können mithilfe von Git oder der TFVC Ihren Code in Visual Studio speichern und aktualisieren.
+
 - Organisieren Sie Ihre lokalen Änderungen mit dem **Team Explorer**, und verfolgen Sie ausstehende Commits und Änderungen mit der Statusleiste nach.
 - Richten Sie mit unserer Erweiterung [Continuous Delivery Tools für Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) Continuous Integration und Delivery für Ihre Projekte in Visual Studio ein, und führen Sie den agilen Workflow für Entwickler ein.
 
 ![Quellcodeverwaltung in Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>Welche anderen Features sollte ich kennen?
+
 Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schreiben von Code. Einige Features müssen aktiviert werden, da sie standardmäßig deaktiviert sind (sie indizieren möglicherweise Dinge auf dem Computer, sind kontrovers oder derzeit experimentell).
 
 | Feature | Details | Vorgehensweise zum Aktivieren |
@@ -149,6 +164,8 @@ Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schre
 | [Codeausschnitte](../ide/visual-csharp-code-snippets.md) | Unterstützt beim Ausdrücken allgemeiner Bausteine. |  Geben Sie einen Codeausschnittnamen ein, und drücken Sie dann zweimal die **Tab**-Taste. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Fehlt ein Feature, das Ihre Produktivität erhöht oder treten Leistungsprobleme auf?
+
 Es stehen Ihnen verschiedene Feedbackmöglichkeiten zur Verfügung:
+
 - Sie können .NET-Features über unser [GitHub-Repository](https://github.com/dotnet/roslyn/issues) anfordern.
 - Visual Studio-Featureanforderungen, Fehler und Leistungsprobleme können mit dem Symbol **Feedback senden** am oberen rechten Rand des Visual Studio-Fensters erfasst werden.

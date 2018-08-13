@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251932"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498966"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -154,8 +154,6 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 | **Interpreterargumente** | Diese Argumente werden vor dem Namen Ihres Skripts in die Befehlszeile des Startprogramms eingefügt. Allgemeine Argumente sind `-W ...` zum Steuern von Warnungen, `-O` zum Optimieren Ihres Programms und `-u` zum Verwenden von nicht gepufferter E/A. IronPython-Benutzer werden dieses Feld vermutlich zum Übergeben von `-X`-Optionen verwenden, z.B. `-X:Frames` oder `-X:MTA`. |
 | **Interpreterpfad** | Überschreibt den Pfad, der der aktuellen Umgebung zugeordnet ist. Dieser Wert kann hilfreich sein, wenn Sie Ihr Skript mit einem nicht standardmäßigen Interpreter starten. |
 | **Umgebungsvariablen** | In diesem mehrzeiligen Textfeld fügen Sie Einträge in der Form \<NAME>=\<VALUE> hinzu. Diese Einstellung wird als letztes, zusätzlich zu allen vorhandenen globalen Umgebungsvariablen und nach dem Festlegen von `PYTHONPATH` gemäß der Einstellung für Suchpfade angewendet. Daher kann sie zum manuellen Überschreiben all dieser anderen Variablen verwendet werden. |
-
-<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Direktfenster und interaktive Fenster
 

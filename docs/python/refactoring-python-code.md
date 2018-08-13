@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056539"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586364"
 ---
-# <a name="refactoring-python-code"></a>Umgestalten von Python-Code
+# <a name="refactor-python-code"></a>Umgestalten von Python-Code
 
 Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und Bereinigen Ihres Python-Quellcodes:
 
@@ -27,11 +27,9 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 - [Import hinzufügen](#add-import): Stellt ein Smarttag zum Hinzufügen eines fehlenden Imports bereit.
 - [Nicht verwendete Importe entfernen](#remove-unused-imports): Entfernt nicht verwendete Importe.
 
-<a name="rename-variable"</a>
-
 ## <a name="rename"></a>Umbenennen
 
-1. Klicken Sie mit der rechten Maustaste auf den Bezeichner, den Sie umbenennen möchten, und wählen Sie **Umbenennen** aus. Alternativ dazu platzieren Sie den Textcursor in diesem Bezeichner und wählen den Menübefehl (F2) **Bearbeiten > Umgestalten > Umbenennen...** aus.
+1. Klicken Sie mit der rechten Maustaste auf den Bezeichner, den Sie umbenennen möchten, und wählen Sie **Umbenennen** aus. Alternativ dazu platzieren Sie den Textcursor in diesem Bezeichner und wählen den Menübefehl (**F2**) **Bearbeiten** > **Umgestalten** > **Umbenennen** aus.
 1. Geben Sie in dem **Umbenennen**-Dialogfeld, das geöffnet wird, den neuen Namen für den Bezeichner ein, und wählen Sie **OK**:
 
   ![Eingabe des neuen Bezeichnernamens](media/code-refactor-rename-1.png)
@@ -45,7 +43,7 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 ## <a name="extract-method"></a>Methode extrahieren
 
 1. Wählen Sie die Codezeilen oder den Ausdruck aus, die in eine separate Methode extrahiert werden soll(en).
-1. Wählen Sie den Menübefehl **Bearbeiten > Umgestalten > Methode extrahieren...** aus, oder drücken Sie die Tasten STRG-R, M.
+1. Wählen Sie den Menübefehl **Bearbeiten** > **Umgestalten** > **Methode extrahieren** aus, oder drücken Sie die Tasten **STRG**+**R** > **M**.
 1. Geben Sie im angezeigten Dialogfeld einen neuen Methodennamen ein, geben Sie an, wo die Methode extrahiert werden soll, und wählen Sie Abschlussvariablen. Nicht zum Abschließen ausgewählte Variablen werden in Methodenargumente umgewandelt:
 
   ![Dialogfeld „Methode extrahieren“](media/code-refactor-extract-method-1.png)
@@ -69,8 +67,6 @@ Visual Studio versucht, Member herauszufiltern, die nicht tatsächlich in einem 
 Auf ähnliche Weise filtert Visual Studio Funktionen, die aus anderen Modulen oder aus dem integrierten Namespace importiert werden. Wenn ein Modul z.B. die `settrace`-Funktion aus dem `sys`-Modul importiert, könnten Sie die Funktion theoretisch aus diesem Modul importieren. Es empfiehlt sich jedoch, `import settrace from sys` direkt zu verwenden, daher bietet Visual Studio diese Anweisung separat an.
 
 Wenn ein Element normalerweise ausgeschlossen würde, aber andere Werte enthält, die eingeschlossen würden (weil dem Namen z.B. im Modul ein Wert zugewiesen wurde), schließt Visual Studio den Import trotzdem aus. Dieses Verhalten geht davon aus, dass der Wert nicht exportiert werden sollte, weil er in einem anderen Modul definiert wurde und daher die zusätzliche Zuweisung wahrscheinlich einen Pseudowert erzeugt, der ebenfalls nicht exportiert wird.
-
-<a name="remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>Nicht verwendete Importe entfernen
 

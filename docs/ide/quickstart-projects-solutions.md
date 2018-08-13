@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180271"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512303"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
@@ -178,11 +178,17 @@ Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in de
 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Als Nächstes können Sie sich einige der anderen Schnellstarts für Visual Studio ansehen oder mehr über das [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) erfahren.
 
+> [!div class="nextstepaction"]
+> [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Personalisieren von Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Siehe auch
 
-- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
-- [Schnellstart: Personalisieren der Visual Studio-IDE und des Editors](../ide/quickstart-personalize-the-ide.md)
-- [Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
 - [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388188"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513272"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
@@ -104,12 +104,16 @@ Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verb
 
 Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit der Benutzeroberfläche vertraut zu machen. Weitere mögliche Schritte:
 
-- Erfahren Sie mehr über Visual Studio, und versuchen Sie sich im Debuggen unter [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md).
+> [!div class="nextstepaction"]
+> [Schnellstart: Personalisieren der IDE](../ide/quickstart-personalize-the-ide.md)
 
-- Lesen Sie den Abschnitt **Allgemeine Elemente der Benutzeroberfläche** der VS-Dokumentation, der sich ausführlicher mit Fenstern wie [Fehlerliste](../ide/reference/error-list-window.md), [Ausgabefenster](../ide/reference/output-window.md), [Eigenschaftenfenster](../ide/reference/properties-window.md) und dem Dialogfeld [Optionen](../ide/reference/options-dialog-box-visual-studio.md) befasst.
+> [!div class="nextstepaction"]
+> [Schnellstart: Schreiben von Code im Editor](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schnellstart: Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Schnellstart: Schreiben von Code im Editor](../ide/quickstart-editor.md)
-- [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
+- [Übersicht der Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Features von Visual Studio 2017](../ide/advanced-feature-overview.md)

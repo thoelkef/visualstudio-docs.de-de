@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251753"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499018"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Fügen Sie solche Dateien hinzu, indem Sie mit der rechten Maustaste auf das Projekt klicken, und klicken Sie dann auf **Hinzufügen** > **Vorhandenes Element**, um nach der hinzuzufügenden Datei zu suchen, oder klicken Sie auf **Hinzufügen** > **Neues Element**, um ein Dialogfeld mit mehreren Elementvorlagen zu öffnen. Wie in der Referenz zu [Elementvorlagen](python-item-templates.md) beschrieben, enthalten Vorlagen leere Python-Dateien, eine Python-Klasse, einen Komponententest und verschiedene Dateien zu Webanwendungen. Sie können diese Optionen mit einem Testprojekt ausprobieren, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
 
-Jedem Python-Projekt ist eine im **Projektmappen-Explorer** fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (**F5** oder **Debuggen** > **Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (**UMSCHALTTASTE**+**ALT**+**F5** oder **Debuggen** > **Execute Project in Python Interactive** (Projekt in interaktivem Python ausführen)). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
+Jedem Python-Projekt ist eine im **Projektmappen-Explorer** fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (**F5** oder **Debuggen** > **Debuggen starten**) oder das Projekt im **interaktiven** Fenster ausführen (**UMSCHALTTASTE**+**ALT**+**F5** oder **Debuggen** > **Execute Project in Python Interactive** (Projekt in interaktivem Python ausführen)). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
 
 > [!Tip]
 > Wenn Sie die ausgewählte Startdatei aus einem Projekt entfernen und keine neue auswählen, weiß Visual Studio nicht, mit welcher Python-Datei gestartet werden soll, wenn Sie versuchen, das Projekt auszuführen. In diesem Fall zeigt Visual Studio 2017 Version 15.6 und höher einen Fehler an; frühere Versionen öffnen entweder ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann beinahe sofort wieder geschlossen. Wenn eine dieser Verhaltensweisen auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben.

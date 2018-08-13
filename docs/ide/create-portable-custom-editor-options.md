@@ -1,6 +1,6 @@
 ---
 title: Verwenden von EditorConfig-Einstellungen in Visual Studio
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117562"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469053"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -81,9 +81,15 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
    csharp_new_line_before_open_brace = methods
    ```
 
-Alternativ können Sie die Erweiterung [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) installieren. Klicken Sie nach der Installation dieser Erweiterung im Knoten „Projektmappe“, „Projekt“ oder in einem beliebigen Ordner in Projektmappen-Explorer im Kontextmenü oder in dem Menü, das sich durch Rechtsklick öffnet, auf **Hinzufügen** > **.editorconfig File** (EDITORCONFIG-Datei).
+### <a name="other-ways-to-add-an-editorconfig-file"></a>Weitere Möglichkeiten zum Hinzufügen einer EditorConfig-Datei
 
-![Hinzufügen der EDITORCONFIG-Datei mit Erweiterung](media/editorconfig-extension-add.png)
+Es gibt mehrere Möglichkeiten, wie Sie Ihrem Projekt eine EditorConfig-Datei hinzufügen können:
+
+- Installieren Sie die [EditorConfig-Sprachdiensterweiterung](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig), die das Hinzufügen einer leeren *.editorconfig*-Datei zu Projekten vereinfacht. Klicken Sie nach der Installation dieser Erweiterung im Knoten „Projektmappe“, „Projekt“ oder in einem beliebigen Ordner im **Projektmappen-Explorer** im Kontextmenü oder in dem Menü, das sich durch Rechtsklick öffnet, auf **Hinzufügen** > **.editorconfig-Datei**. Diese Erweiterung verbessert auch die Bearbeitungsfunktionen für die *.editorconfig* Datei.
+
+   ![Hinzufügen der EDITORCONFIG-Datei mit Erweiterung](media/editorconfig-extension-add.png)
+
+- Testen Sie die [IntelliCode-Erweiterung](/visualstudio/intellicode/intellicode-visual-studio). Diese experimentelle Erweiterung leitet Ihre Codeformate aus vorhandenem Code ab und erstellt dann eine nicht leere *.editorconfig*-Datei, in der Ihre Einstellungen für das Codeformat bereits definiert sind.
 
 ## <a name="override-editorconfig-settings"></a>Außer Kraft setzen von EditorConfig-Einstellungen
 

@@ -11,22 +11,26 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e183833222f64a24a2d523e32f624ed24c54bc58
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056707"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512815"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
 Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](installing-python-support-in-visual-studio.md) haben, können Sie die GitHub-Erweiterung für Visual Studio hinzufügen. Mit der Erweiterung können Sie problemlos ein Repository von Python-Code klonen und daraus ein Projekt in der IDE erstellen. Sie können auch Repositorys in der Befehlszeile immer klonen und dann mit ihnen in Visual Studio arbeiten.
 
+## <a name="install-the-github-extension-for-visual-studio"></a>Installieren Sie die GitHub-Erweiterung für Visual Studio
+
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
+
+## <a name="work-with-github-in-visual-studio"></a>Arbeiten mit GitHub in Visual Studio
 
 1. Starten Sie Visual Studio.
 
-1. Klicken Sie auf **Ansicht > Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
+1. Klicken Sie auf **Ansicht** > **Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
 
     ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media/team-explorer.png)
 
@@ -41,23 +45,23 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](install
 
     ![Das Fenster „Team Explorer“, in dem ein neues Projekt aus einem Klon erstellt wird](media/team-explorer-new-project.png)
 
-1. Navigieren Sie im Dialogfeld **Neues Projekt** zu „Python“ (suchen Sie alternativ unter „Aus vorhandenem Python-Code“ nach „Python“). Geben Sie einen Namen für das Projekt an, legen Sie für **Speicherort** denselben Ordner fest, in dem auch das Repository gespeichert ist, und klicken Sie auf **OK**. Klicken Sie in dem sich öffnenden Assistenten auf **Fertig stellen**.
+1. Navigieren Sie im nun angezeigten Dialogfeld **Neues Projekt** zur Sprache **Python** (oder suchen Sie nach „Python“), wählen Sie **Aus vorhandenem Python-Code** aus, geben Sie einen Namen für das Projekt an, legen Sie als **Speicherort** denselben Ordner fest, in dem auch das Repository gespeichert ist, und klicken Sie auf **OK**. Klicken Sie in dem sich öffnenden Assistenten auf **Fertig stellen**.
 
-1. Klicken Sie im Menü auf **Ansicht > Projektmappen-Explorer**.
+1. Klicken Sie im Menü auf **Ansicht** > **Projektmappen-Explorer**.
 
-1. Erweitern Sie im **Projektmappen-Explorer** den Knoten `python3`. Klicken Sie mit der rechten Maustaste zunächst auf `contemplate_koans.py`, und klicken Sie anschließend auf **Als Startdatei festlegen**. Bei diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
+1. Erweitern Sie im **Projektmappen-Explorer** den Knoten **python3**. Klicken Sie mit der rechten Maustaste zunächst auf **contemplate_koans.py**, und klicken Sie anschließend auf **Als Startdatei festlegen**. Bei diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
 
-1. Klicken Sie zunächst im Menü auf **Projekt > Koans-Eigenschaften** und anschließend auf die Registerkarte **Allgemein**, und legen Sie das **Arbeitsverzeichnis** auf „Python3“ fest. Dieser Schritt ist notwendig, da Visual Studio standardmäßig den Projektstamm als Arbeitsverzeichnis festlegt, anstatt den Speicherort der Startdatei zu verwenden (`python3\contemplate_koans.py` – dies können Sie auch in den Projekteigenschaften sehen). Der Programmcode sucht im Arbeitsverzeichnis nach einer `koans.txt`-Datei. Sie erhalten also einen Laufzeitfehler, wenn Sie diesen Wert nicht ändern.
+1. Klicken Sie zunächst im Menü auf **Projekt** > **Koans-Eigenschaften** und anschließend auf die Registerkarte **Allgemein**, und legen Sie das **Arbeitsverzeichnis** auf „Python3“ fest. Dieser Schritt ist notwendig, da Visual Studio standardmäßig den Projektstamm als Arbeitsverzeichnis festlegt, anstatt den Speicherort der Startdatei zu verwenden (*python3\contemplate_koans.py* – dies können Sie auch in den Projekteigenschaften sehen). Der Programmcode sucht im Arbeitsverzeichnis nach einer *koans.txt*-Datei. Sie erhalten also einen Laufzeitfehler, wenn Sie diesen Wert nicht ändern.
 
     ![Festlegen des Arbeitsverzeichnisses für ein Python-Projekt](media/projects-set-working-directory.png)
 
-1. Drücken Sie STRG+F5, oder klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen `FileNotFoundError` für `koans.txt` angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis, so wie im vorherigen Schritt beschrieben.
+1. Drücken Sie **STRG**+**F5**, oder klicken Sie auf **Debuggen** > **Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein **FileNotFoundError** für *koans.txt* angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis, so wie im vorherigen Schritt beschrieben.
 
-1. Wenn das Programm erfolgreich ausgeführt wird, zeigt es einen Assertionsfehler in Zeile 17 von `python3/koans/about_asserts.py` an. Dies ist beabsichtigt, da das Programm so entwickelt wurde, dass es Ihnen Python beibringt, indem Sie sämtliche beabsichtigte Fehler beheben müssen. (Weitere Details finden Sie unter [Ruby Koans](http://rubykoans.com/) – der Inspiration für Python Koans.)
+1. Wenn das Programm erfolgreich ausgeführt wird, zeigt es einen Assertionsfehler in Zeile 17 von *python3/koans/about_asserts.py* an. Dies ist beabsichtigt, da das Programm so entwickelt wurde, dass es Ihnen Python beibringt, indem Sie sämtliche beabsichtigte Fehler beheben müssen. (Weitere Details finden Sie unter [Ruby Koans](http://rubykoans.com/) – der Inspiration für Python Koans.)
 
     ![Erste Ausgabe des Python Koans-Programms](media/koans-output.png)
 
-1. Öffnen Sie `python3/koans/about_asserts.py`, indem Sie zu der Datei im Projektmappen-Explorer navigieren und darauf doppelklicken. Beachten Sie, dass standardmäßig keine Zeilennummern im Editor erscheinen. Klicken Sie zum Ändern dieser Einstellung auf **Extras > Optionen** und im unteren Bereich des Dialogfelds auf **Alle Einstellungen anzeigen**. Navigieren Sie anschließend zu **Text-Editor > Python > Allgemein**, und klicken Sie auf **Zeilennummern**:
+1. Öffnen Sie *python3/koans/about_asserts.py*, indem Sie zu der Datei im **Projektmappen-Explorer** navigieren und darauf doppelklicken. Beachten Sie, dass standardmäßig keine Zeilennummern im Editor erscheinen. Klicken Sie zum Ändern dieser Einstellung auf **Extras** > **Optionen** und im unteren Bereich des Dialogfelds auf **Alle Einstellungen** anzeigen. Navigieren Sie anschließend zu **Text-Editor** > **Python** > **Allgemein**, und klicken Sie auf **Zeilennummern**:
 
     ![Aktivieren der Zeilennummer für Python-Dateien](media/options-general-line-numbers.png)
 

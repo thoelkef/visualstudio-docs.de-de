@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e2b4464e60b155a9c9ef7f35d24084ce3d38b2d9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37055980"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513220"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -24,23 +24,23 @@ ms.locfileid: "37055980"
 
 Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die Sie in Ihre eigenen Projekte integrieren können. Visual Studio bietet eine Benutzeroberfläche für das Verwalten von Paketen in Ihren Python-Umgebungen.
 
-1. Wählen Sie den Menübefehl **Ansicht > Weitere Fenster > Python-Umgebungen** aus. Das Fenster **Python-Umgebungen** wird als Peer für den Projektmappen-Explorer geöffnet und zeigt die verschiedenen Umgebungen an, die für Sie verfügbar sind. Die Liste enthält die Umgebungen, die Sie mithilfe des Visual Studio-Installers installiert haben und die, die Sie separat installiert haben. Die Umgebung in Fettdruck ist die Standardumgebung, die für neue Projekte verwendet wird.
+1. Wählen Sie den Menübefehl **Ansicht** > **Weitere Fenster** > **Python-Umgebungen** aus. Das Fenster **Python-Umgebungen** wird als Peer für den **Projektmappen-Explorer** geöffnet und zeigt die verschiedenen Umgebungen an, die für Sie verfügbar sind. Die Liste enthält die Umgebungen, die Sie mithilfe des Visual Studio-Installers installiert haben und die, die Sie separat installiert haben. Die Umgebung in Fettdruck ist die Standardumgebung, die für neue Projekte verwendet wird.
 
   ![Fenster „Python-Umgebungen“](media/environments-default-view-blue.png)
 
-1. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein interaktives Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein interaktives Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
+1. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
 
 1. Klicken Sie auf die Registerkarte **Pakete**, und Ihnen wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
 
   ![In einer Umgebung installierte Pakete](media/environments-installed-packages-blue.png)
 
-1. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann auf `pip install` klicken.
+1. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann **pip-Installation** auswählen.
 
   ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
 
 1. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
 
-1. Nachdem das Paket installiert ist, wird es im Fenster der Python-Umgebung angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
+1. Nachdem das Paket installiert ist, wird es im Fenster der **Python-Umgebung** angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
 
   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
 
@@ -48,7 +48,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
   Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
 
-1. Erstellen Sie ein Projekt, indem Sie auf **Datei > Neu > Projekt** klicken und die Vorlage „Python-Anwendung“ auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
+1. Erstellen Sie ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 
     ```python
     from math import radians
@@ -63,15 +63,15 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
     main()
     ```
 
-1. Führen Sie das Programm mit (F5) oder ohne Debugger (STRG+F5) aus, um die Ausgabe anzuzeigen:
+1. Führen Sie das Programm mit (**F5**) oder ohne Debugger (**STRG**+**F5**) aus, um die Ausgabe anzuzeigen:
 
   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
-> [Working with Git (Arbeiten mit Git)](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+> [Arbeiten mit Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="go-deeper"></a>Ausführlichere Informationen
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Python-Umgebungen](managing-python-environments-in-visual-studio.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235049"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586859"
 ---
 # <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
@@ -42,16 +42,17 @@ Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen,
 5.  Wenn sich der zu testende Code an einem anderen Speicherort befindet, finden Sie unter [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md) weitere Informationen zum Hinzufügen von Verweisen.
 
 ## <a name="next-steps"></a>Nächste Schritte
- **Schreiben von Komponententests**
 
  Siehe eines der folgenden Themen:
 
--   [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
+**Schreiben von Komponententests**
 
--   [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 
--   [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Ausführen von Komponententests**
+- [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Ausführen von Komponententests**
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)

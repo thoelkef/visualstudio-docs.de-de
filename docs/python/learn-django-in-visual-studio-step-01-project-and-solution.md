@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388162"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586578"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -147,7 +147,7 @@ Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Frage: Warum sollte ich eine virtuelle Umgebung erstellen?
 
-Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genauen Abhängigkeiten Ihrer App zu isolieren. Mit einer solchen Isolation können Konflikte innerhalb einer globalen Python-Umgebung vermieden werden, und Tests und die Zusammenarbeit werden unterstützt. Bei der Entwicklung einer App werden im Laufe der Zeit unweigerlich viele nützliche Python-Pakete importiert. Indem Sie die Pakete in einer projektspezifischen virtuellen Umgebung beibehalten, können Sie die *requirements.txt*-Datei des Projekts auf einfache Weise aktualisieren. Mit dieser Datei wird die Umgebung beschrieben, die in der Quellcodeverwaltung enthalten ist. Beim Kopieren des Projekts auf andere Computer, einschließlich Buildserver, Bereitstellungsserver und andere Entwicklungscomputer, kann die Umgebung auf einfache Weise über *requirements.txt* neu erstellt werden (weshalb die Umgebung auch nicht in der Quellcodeverwaltung vorhanden sein muss). Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genauen Abhängigkeiten Ihrer App zu isolieren. Mit einer solchen Isolation können Konflikte innerhalb einer globalen Python-Umgebung vermieden werden, und Tests und die Zusammenarbeit werden unterstützt. Bei der Entwicklung einer App werden im Laufe der Zeit unweigerlich viele nützliche Python-Pakete importiert. Indem Sie die Pakete in einer projektspezifischen virtuellen Umgebung beibehalten, können Sie die *requirements.txt*-Datei des Projekts auf einfache Weise aktualisieren. Mit dieser Datei wird die Umgebung beschrieben, die in der Quellcodeverwaltung enthalten ist. Beim Kopieren des Projekts auf andere Computer, einschließlich Buildserver, Bereitstellungsserver und andere Entwicklungscomputer, kann die Umgebung auf einfache Weise über *requirements.txt* neu erstellt werden (weshalb die Umgebung auch nicht in der Quellcodeverwaltung vorhanden sein muss). Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Frage: Wie entferne ich eine virtuelle Umgebung, für die bereits ein Commit für die Quellcodeverwaltung ausgeführt wurde?
 

@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174840"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513119"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
 **Vorheriger Schritt: [Erstellen eines neuen Python-Objekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie mit dem *Inhalt* der Dateien, z.B. mit dem Quellcode, in der Regel im *Editor*-Fenster. Der Editor erkennt kontextbezogen den Typ der Datei, die Sie bearbeiten, einschließlich der Programmiersprache (basierend auf der Dateierweiterung) und bietet für diese Sprache angemessene Funktionen, z.B. Syntaxfarben und automatische Vervollständigung mithilfe von IntelliSense.
+Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten Sie mit dem *Inhalt* der Dateien, z.B. mit dem Quellcode, in der Regel im *Editor*-Fenster. Der Editor erkennt kontextbezogen den Typ der Datei, die Sie bearbeiten, einschließlich der Programmiersprache (basierend auf der Dateierweiterung) und bietet für diese Sprache angemessene Funktionen, z.B. Syntaxfarben und automatische Vervollständigung mithilfe von IntelliSense.
 
-1. Nach dem Erstellen eines neuen Projekts „Python-Anwendung“ wird eine standardmäßige leere Datei mit dem Namen `PythonApplication1.py` im Visual Studio-Editor geöffnet.
+1. Nach dem Erstellen eines neuen Projekts „Python-Anwendung“ wird eine standardmäßige leere Datei mit dem Namen *PythonApplication1.py* im Visual Studio-Editor geöffnet.
 
-1. Beginnen Sie im Editor, `print("Hello, Visual Studio")` einzugeben, und beachten Sie, wie Visual Studio IntelliSense nebenbei Optionen zur automatischen Vervollständigung anzeigt. Die in der Dropdownliste dargestellte Option ist die Standardvervollständigung, die verwendet wird, wenn Sie die TAB-Taste drücken. Vervollständigungen können bei längeren Anweisungen oder Bezeichnern sehr hilfreich sein.
+1. Beginnen Sie im Editor, `print("Hello, Visual Studio")` einzugeben, und beachten Sie, wie Visual Studio IntelliSense nebenbei Optionen zur automatischen Vervollständigung anzeigt. Die in der Dropdownliste dargestellte Option ist die Standardvervollständigung, die verwendet wird, wenn Sie die **TAB**-Taste drücken. Vervollständigungen können bei längeren Anweisungen oder Bezeichnern sehr hilfreich sein.
 
     ![IntelliSense-Popupfenster für automatische Vervollständigung](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie m
     ![Syntaxfarben und Hervorheben von Fehlern mit IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras > Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen. 
+    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen. 
 
-1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie STRG+F5 drücken oder auf das Menüelement **Debuggen > Starten ohne Debuggen** klicken. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
+1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie **STRG**+**F5** drücken oder das Menüelement **Debuggen** > **Starten ohne Debuggen**n. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
 
-1. Wenn Sie das Programm ausführen, wird ein Konsolenfenster angezeigt, das die Ergebnisse anzeigt, genau wie bei der Ausführung eines Python-Interpreters mit `PythonApplication1.py` über die Befehlszeile. Drücken Sie eine Taste, um das Fenster zu schließen und zum Visual Studio-Editor zurückzukehren.
+1. Wenn Sie das Programm ausführen, wird ein Konsolenfenster angezeigt, das die Ergebnisse anzeigt, genau wie bei der Ausführung eines Python-Interpreters mit *PythonApplication1.py* über die Befehlszeile. Drücken Sie eine Taste, um das Fenster zu schließen und zum Visual Studio-Editor zurückzukehren.
 
     ![Ausgabe für die erste Ausführung des Programms](media/vs-getting-started-python-07-output.png)
 
@@ -84,7 +84,7 @@ Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie m
         print(cos(radians(i)))
     ```
 
-1. Führen Sie das Programm erneut mit STRG+F5 oder über **Debuggen > Starten ohne Debuggen** aus. Schließen Sie das Ausgabefenster, wenn Sie fertig sind.
+1. Führen Sie das Programm erneut mit **STRG**+**F5** oder über **Debuggen** > **Starten ohne Debuggen** aus. Schließen Sie das Ausgabefenster, wenn Sie fertig sind.
 
 ## <a name="next-step"></a>Nächster Schritt
 

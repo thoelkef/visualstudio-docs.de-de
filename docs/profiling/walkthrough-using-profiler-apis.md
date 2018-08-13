@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572977"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468209"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
+
 In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die Verwendung von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools-APIs zu veranschaulichen. Verwenden Sie die Profiler-APIs, um die bei der Instrumentierungsprofilerstellung erfasste Datenmenge einzuschränken.  
   
  Für die in dieser exemplarischen Vorgehensweise beschriebenen Schritte wird allgemein eine C-/C++-Anwendung verwendet. Sie müssen für jede Sprache die Buildumgebung entsprechend konfigurieren.  
@@ -50,7 +51,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Sie können die Datenerfassung über die Befehlszeile ausschalten, ohne einen API-Aufruf verwenden zu müssen. In den folgenden Schritten wird angenommen, dass die Buildumgebung der Befehlszeile so konfiguriert ist, dass sie die Profilerstellungstools und Entwicklungstools ausführt. Dies umfasst die für VSInstr und VSPerfCmd benötigten Schritte. Weitere Informationen finden Sie unter „Command-Line Profiling Tools“ („Profilerstellungstools für die Befehlszeile“).  
+ Sie können die Datenerfassung über die Befehlszeile ausschalten, ohne einen API-Aufruf verwenden zu müssen. In den folgenden Schritten wird angenommen, dass die Buildumgebung der Befehlszeile so konfiguriert ist, dass sie die Profilerstellungstools und Entwicklungstools ausführt. Dies umfasst die für VSInstr und VSPerfCmd benötigten Schritte. Weitere Informationen finden Sie unter [Command-Line Profiling Tools](../profiling/using-the-profiling-tools-from-the-command-line.md) (Profilerstellungstools für die Befehlszeile).  
   
 ## <a name="limit-data-collection-using-profiler-apis"></a>Einschränken der Datenerfassung mithilfe von Profiler-APIs  
   
@@ -59,7 +60,7 @@ DataCollection.CurrentId);
 1.  Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.  
   
     > [!NOTE]
-    >  Der Build muss auf die *Microsoft.VisualStudio.Profiler.dll*-Bibliothek verweisen, die sich im Verzeichnis *Microsoft Visual Studio 9\Team Tools\Performance Tools* befindet.  
+    >  Der Build muss auf die *Microsoft.VisualStudio.Profiler.dll*-Bibliothek verweisen, die im Verzeichnis *Microsoft Visual Studio 9\Team Tools\Performance Tools* gespeichert ist.  
   
 2.  Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:  
   
@@ -69,47 +70,51 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
@@ -144,7 +149,7 @@ DataCollection.CurrentId);
   
 2.  Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen und eine verwaltete Anwendung zu profilen:  
   
-     **VsPefCLREnv /traceon**  
+     **VsPerfCLREnv /traceon**  
   
 3.  Geben Sie den folgenden Befehl ein: **VSInstr \<dateiname>.exe**  
   
