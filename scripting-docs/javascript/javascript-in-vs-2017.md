@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753296"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008407"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
 JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben von JavaScript-Code in der Visual Studio-IDE können Sie die meisten oder alle Standardbearbeitungshilfen (Codeausschnitte, IntelliSense, usw.) verwenden. Sie können JavaScript-Code für viele Arten von Anwendungen und Dienste schreiben.
+
+> [!NOTE]
+> In dem Bemühen, die [MDN-Webdokumentation](https://developer.mozilla.org/en-US/) als führende zentrale Entwicklungsressource zu etablieren, werden alle Verweise auf die JavaScript-API von Microsoft (über 500 Seiten) von „docs.microsoft.com“ zu den jeweiligen MDN-Entsprechungen umgeleitet. Weitere Einzelheiten finden Sie in dieser [Ankündigung](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a> Unterstützung für ECMAScript 2015 (ES6) und höher
 
@@ -183,7 +186,7 @@ Einige davon werden im Folgenden aufgeführt. Einen Überblick über alle verfü
 Für dieses Beispiel wird ein Projekt mit der folgenden Einrichtung vorausgesetzt:
 
 - Die Quelldateien des Projekts befinden sich in `wwwroot/js`.
-- Die LIB-Dateien des Projekts befinden sich in `wwwrrot/lib`.
+- Die LIB-Dateien des Projekts befinden sich in `wwwroot/lib`.
 - `bootstrap`, `jquery`, `jquery-validation` und `jquery-validation-unobtrusive` werden in der `bower.json`-Datei aufgeführt.
 - `kendo-ui` wurde manuell dem Ordner „lib“ hinzugefügt.
 
@@ -259,7 +262,7 @@ Weitere Informationen zur Erstellung von `.d.ts`-Deklarationsdateien [ finden Si
 
 ### <a name="unsupported-patterns"></a>Nicht unterstützte Muster
 
-Da der neue Sprachdienst nicht auf einem Ausführungsmodul, sondern auf einer statischen Analyse basiert (weitere Informationen zu den Unterschieden finden Sie in [diesem Thema](https://github.com/Microsoft/TypeScript/issues/4789)), gibt es einige JavaScript-Muster, die nicht mehr erkannt werden.
+Da der neue Sprachdienst nicht auf einer Ausführungs-Engine, sondern auf einer statischen Analyse basiert (weitere Informationen zu den Unterschieden finden Sie in [diesem Thema](https://github.com/Microsoft/TypeScript/issues/4789)), gibt es einige JavaScript-Muster, die nicht mehr erkannt werden.
 Das bekannteste Muster ist das „Expando“-Muster.
 Derzeit kann der Sprachdienst IntelliSense nicht für Objekte bereitstellen, denen nach der Deklaration Eigenschaften zugewiesen werden.
 Zum Beispiel:

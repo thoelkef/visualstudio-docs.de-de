@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b190e43be87f5436741106eb1df8884f37322a00
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152600"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637655"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference-Aufgabe
 Bestimmt alle Assemblys, die von den angegebenen Assemblys abhängig sind, inklusive Abhängigkeiten zweiter und `n`ter Ordnung.  
