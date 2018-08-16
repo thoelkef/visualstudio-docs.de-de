@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadmi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862997"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638097"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
 Als Administrator haben Sie die Möglichkeit, Abonnements für Ihre Organisation zu verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.
@@ -64,6 +64,7 @@ Externe Vertragspartner verfügen möglicherweise über Lizenzen, die mit Ihrer 
 
 ## <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
 Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
+
 ### <a name="high-water-mark-of-usage"></a>Hoher Auslastungsgrenzwert
 **Ihr Unternehmen ist dazu verpflichtet, Visual Studio-Abonnements unmittelbar zu erwerben, wenn:**
 - Einem Benutzer eine Lizenz zugewiesen wird
