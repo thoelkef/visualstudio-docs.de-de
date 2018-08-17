@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388292"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637616"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
@@ -29,7 +29,7 @@ In diesem Schritt wird Folgendes erläutert:
 > [!div class="checklist"]
 > - Erstellen eines Projekts von der Vorlage und Initialisieren der Datenbank (Schritt 5–1)
 > - Grundlegendes zu Datenmodellen (Schritt 5–2)
-> - Grundlegendes zu den Sicherungsdatenspeichern (Schritt 5–3)
+> - Grundlegendes zu den Sicherungsdatenspeichern (Schritt 5.3)
 > - Grundlegendes zu Umfragedetails und Ergebnisansichten (Schritt 5–4)
 
 Visual Studio bietet ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“, die eine identische App erzeugt, aber die Jade-Erweiterung für die Jinja-Vorlagen-Engine verwendet. Weitere Informationen finden Sie unter [Schritt 4 – Die Vorlage „Flask/Jade-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,11 +40,11 @@ Visual Studio bietet ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab
 
 1. Suchen Sie im Dialogfeld „Neues Projekt“ die Vorlage **Fragt ein Flask-Webprojekt ab**, und wählen Sie sie aus. Nennen Sie das Projekt **FlaskPolls**, und klicken Sie auf OK.
 
-1. Wie die anderen Projektvorlagen in Visual Studio enthält die Vorlage „Fragt ein Flask-Webprojekt ab“ eine Datei namens *requirements.txt*. Eine Visual Studio-Eingabeaufforderung fragt ab, wohin diese Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen. (Diese Vorlage erfordert Flask sowie die Pakete „azure-storage“ und „pymongo“. Die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“ erfordert außerdem pyjade.)
+1. Wie die anderen Projektvorlagen in Visual Studio enthält die Vorlage „Fragt ein Flask-Webprojekt ab“ eine Datei namens *requirements.txt*. Visual Studio fragt, wohin diese Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen. (Diese Vorlage erfordert Flask sowie die Pakete „azure-storage“ und „pymongo“. Die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“ erfordert außerdem pyjade.)
 
 1. Legen Sie das Projekt **FlaskPolls** als Standardprojekt für die Visual Studio-Projektmappe fest. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
 
-1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debugging starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
+1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
 
     ![Symbolleisten-Schaltfläche „Webserver ausführen“ in Visual Studio](media/django/run-web-server-toolbar-button.png)
 

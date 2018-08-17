@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388136"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637642"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -27,7 +27,7 @@ In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Fl
 In diesem Schritt wird Folgendes erläutert:
 
 > [!div class="checklist"]
-> - Das Verwenden von Visual Studio-Elementvorlagen zur schnellen Erstellung neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3-1)
+> - Das Verwenden von Visual Studio-Elementvorlagen zum schnellen Hinzufügen neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3.1)
 > - Bereitstellen statischer Dateien über den Code (Schritt 3–2, optional)
 > - Das Hinzufügen von zusätzlichen Seiten zur App (Schritt 3-3)
 > - Das Verwenden der Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste, die seitenübergreifend verwendet werden (Schritt 3-4)
