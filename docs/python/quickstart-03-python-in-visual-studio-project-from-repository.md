@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512815"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636823"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -37,7 +37,7 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](install
 1. Wählen Sie unter **Lokale Git-Repositorys** den Befehl **Klonen** aus, geben Sie anschließend `https://github.com/gregmalcolm/python_koans` in das URL-Feld ein, geben Sie einen Ordner für die geklonten Dateien ein, und klicken Sie auf **Klonen**.
 
     > [!Tip]
-    > Der Ordner, den Sie in Team Explorer angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in Team Explorer nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.
+    > Der Ordner, den Sie in **Team Explorer** angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in **Team Explorer** nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.
 
 1. Wenn das Klonen abgeschlossen ist, erscheint der Name des Repositorys in der Liste **Lokale Git-Repositorys**. Doppelklicken Sie auf den Namen, um zum Repository-Dashboard im **Team Explorer** zu navigieren.
 
@@ -55,7 +55,7 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](install
 
     ![Festlegen des Arbeitsverzeichnisses für ein Python-Projekt](media/projects-set-working-directory.png)
 
-1. Drücken Sie **STRG**+**F5**, oder klicken Sie auf **Debuggen** > **Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein **FileNotFoundError** für *koans.txt* angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis, so wie im vorherigen Schritt beschrieben.
+1. Drücken Sie **STRG**+**F5**, oder wählen Sie **Debuggen** > **Ohne Debuggen starten** aus, um das Programm auszuführen. Wenn Ihnen ein **FileNotFoundError** für *koans.txt* angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis, so wie im vorherigen Schritt beschrieben.
 
 1. Wenn das Programm erfolgreich ausgeführt wird, zeigt es einen Assertionsfehler in Zeile 17 von *python3/koans/about_asserts.py* an. Dies ist beabsichtigt, da das Programm so entwickelt wurde, dass es Ihnen Python beibringt, indem Sie sämtliche beabsichtigte Fehler beheben müssen. (Weitere Details finden Sie unter [Ruby Koans](http://rubykoans.com/) – der Inspiration für Python Koans.)
 

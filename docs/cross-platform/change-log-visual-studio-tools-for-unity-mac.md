@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Mac) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 04/05/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,18 +10,62 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d43542dc78c8bc0eaeb05e1a620edff7a88efa37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31084118"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639729"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
 
+## <a name="1602"></a>1.6.0.2
+ Veröffentlichung: 24. Juli 2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+     -   Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
+     
+## <a name="1601"></a>1.6.0.1
+ Veröffentlichung: 10. Juli 2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+     -   Ein Problem bei der Unterstützung für die Codeeinfärbung für Shader wurde behoben.
+     
+## <a name="1600"></a>1.6.0.0
+ Veröffentlichung: 26. Juli 2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Assistenten:**
+
+    -   Ein Schreibfehler in der OnApplicationFocus-Meldung wurde korrigiert.
+
+-   **Projektgenerierung:**
+
+     -   Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
+     
+     -   Konvertieren Sie keine portablen PDB-Dateien mehr in MDB-Dateien, wenn Sie die neue Unity-Runtime verwenden.
+     
+## <a name="1502"></a>1.5.0.2
+ Veröffentlichung: 18. April 2018
+ 
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Integration:**
+
+    -   Unterstützung für die Vervollständigung von Shader-Code wurde hinzugefügt.
+    
+    -   Unterstützung für das Umschalten von Kommentaren in Shader-Dateien wurde hinzugefügt.
+
 ## <a name="1501"></a>1.5.0.1
- Veröffentlichung: 28.3.2018
+ Veröffentlichung: 28. März 2018
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -30,7 +74,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Im Unity-Projekt-Explorer wurde die Unterstützung für zusätzliche Vorlagen hinzugefügt.
 
 ## <a name="1500"></a>1.5.0.0
- Veröffentlichung: 21.3.2018
+ Veröffentlichung: 21. März 2018
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -39,7 +83,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurde Unterstützung für das Erkennen und Anfügen von Android-Playern hinzugefügt, die über USB verbunden sind.
 
 ## <a name="1403"></a>1.4.0.3
- Veröffentlichung: 05.03.2018
+ Veröffentlichung: 5. März 2018
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -52,7 +96,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Ein Optionsbereich für dedizierte Einstellungen wurde hinzugefügt.
 
 ## <a name="1402"></a>1.4.0.2
- Veröffentlichung: 24.01.2018
+ Veröffentlichung: 24. Januar 2018
  
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -67,7 +111,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurden Probleme mit Benachrichtigungen behoben, die beim Erkennen eines neuen Players angezeigt werden.
 
 ## <a name="1401"></a>1.4.0.1
- Veröffentlichung: 23.1.2018
+ Veröffentlichung: 23. Januar 2018
  
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -76,7 +120,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurden Probleme mit dem Erweitern und Reduzieren von Ordnern durch Doppelklicken behoben.
 
 ## <a name="1400"></a>1.4.0.0
- Veröffentlichung: 13.12.2017
+ Veröffentlichung: 13. Dezember 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -91,7 +135,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Automatische Konvertierung des Debugsymbols von „pdb“ zu „mdb“ wurde behoben.
 
 ## <a name="1301"></a>1.3.0.1
- Veröffentlichung: 12.12.2017
+ Veröffentlichung: 12. Dezember 2017
  
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -104,7 +148,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Aktualisieren des Roslyn-Kontexts vor dem Einfügen der Methode.
 
 ## <a name="1300"></a>1.3.0.0
- Veröffentlichung: 20.11.2017
+ Veröffentlichung: 20. November 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -115,7 +159,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurde Unterstützung für die neue Abschluss-API in Visual Studio für Mac 7.4 hinzugefügt.
 
 ## <a name="1200"></a>1.2.0.0
- Veröffentlichung: 23.10.2017
+ Veröffentlichung: 23. Oktober 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -132,7 +176,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Erzwingen Sie nicht das Unity-Flag „AllowAttachedDebuggingOfEditor“, da der Standard jetzt TRUE ist.
 
 ## <a name="1103"></a>1.1.0.3
- Veröffentlichung: 23.10.2017
+ Veröffentlichung: 23. Oktober 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -141,7 +185,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Zusätzliche Unterstützung für .NET 4.6-Profil.
 
 ## <a name="1102"></a>1.1.0.2
- Veröffentlichung: 8.8.2017
+ Veröffentlichung: 8. August 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -154,7 +198,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Aktivieren Sie immer den unsafe-Kompilierungsschalter, wenn Unity 5.6 verwendet wird.
 
 ## <a name="1101"></a>1.1.0.1
- Veröffentlichung: 20.7.2017
+ Veröffentlichung: 20. Juli 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -163,7 +207,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurde Unterstützung für lokalisierte Ressourcen hinzugefügt.
 
 ## <a name="1100"></a>1.1.0.0
- Veröffentlichung: 12.7.2017
+ Veröffentlichung: 12. Juli 2017
  
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -186,7 +230,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Eine auf Shader bezogene Fehlermeldung bei der Kompilierung wurde entfernt.
 
 ## <a name="1001"></a>1.0.0.1
- Veröffentlichung: 4.5.2017
+ Veröffentlichung: 4. Mai 2017
  
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -195,4 +239,4 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurden Probleme bei der aktiven Nachverfolgung von Dokumenten bei hybriden und regulären Projekten behoben.
 
 ## <a name="1000"></a>1.0.0.0
- Veröffentlichung: 3.5.2017
+ Veröffentlichung: 3. Mai 2017

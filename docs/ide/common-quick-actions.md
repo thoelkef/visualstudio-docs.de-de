@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063725"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638354"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>Methode als asynchron deklarieren
 
-Wenn Sie das Schlüsselwort `await` oder `Await` innerhalb einer Methode verwenden, wird erwartet, dass die Methode selbst mit dem Schlüsselwort `async` oder `Async` gekennzeichnet ist.  Sollte dies allerdings nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als asynchron zu deklarieren. Verwenden Sie die Option **Make method/Function asynchronous** (Methode/Funktion als asynchron deklarieren) aus dem Menü für schnelle Aktionen.
+Wenn Sie das Schlüsselwort `await` oder `Await` innerhalb einer Methode verwenden, wird erwartet, dass die Methode selbst mit dem Schlüsselwort `async` oder `Async` gekennzeichnet ist.  Sollte dies allerdings nicht der Fall sein, erscheint eine schnelle Aktion, die die Methode als asynchron deklariert. Verwenden Sie die Option **Make method/Function asynchronous** (Methode/Funktion als asynchron deklarieren) aus dem Menü für schnelle Aktionen.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>Nicht benötigte Using- und Import-Anweisungen entfernen
 
-Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usings/Imports entfernen) entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei.  Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces umgehend entfernt.
+Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usings/Imports entfernen) entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei.  Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces entfernt.
 
 |  Anzuwendende Sprachen |  Unterstützte Version |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usi
 
 ### <a name="remove-unnecessary-cast"></a>Nicht benötigte Umwandlung entfernen
 
-Wenn Sie einen Typ in einen anderen Typ umwandeln, der keine Umwandlung benötigt, entfernt das Element der schnellen Aktion **Remove Unnecessary Cast** (Nicht benötigte Umwandlung entfernen) die Umwandlung aus Ihrem Code.
+Wenn Sie einen Typ in einen anderen Typ umwandeln, der keine Umwandlung benötigt, entfernt das Element der schnellen Aktion **Remove Unnecessary Cast** (Nicht benötigte Umwandlung entfernen) die nicht benötigte Umwandlung.
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>Verwenden von abgeleiteten Namen
 
-Diese schnellen Aktionen weisen darauf hin, wenn der Benutzer abgeleitete Membernamen in anonymen Typen oder die abgeleiteten Tupelelementnamen von C# 7.1 verwenden kann.
+Diese schnelle Aktion zeigt auf, wenn der Code vereinfacht werden kann, damit abgeleitete Membernamen in anonymen Typen oder abgeleitete Elementnamen in Tupeln verwendet werden.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Methode als synchron deklarieren
 
-Wenn Sie das Schlüsselwort `async` oder `Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await` oder `Await` auch an irgendeiner Stelle innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async` oder `Async` entfernen und den Rückgabetyp ändern. Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
+Wenn Sie das Schlüsselwort `async` oder `Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await` oder `Await` ebenfalls in der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die die Methode als synchron deklariert, indem das Schlüsselwort `async` oder `Async` entfernt und der Rückgabetyp geändert wird. Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
 
 ```csharp
 // Before

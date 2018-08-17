@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747879"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008394"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung
+
 In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:
 
 -   Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
@@ -29,20 +30,20 @@ In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier z
 
 -   Ausführen grundlegender arithmetischer Operationen im Code.
 
- Nach Abschluss der Übung sieht das Quiz wie im folgenden Bild dargestellt aus, enthält jedoch andere Zahlen.
+Nach Abschluss der Übung sieht das Quiz wie die folgende Abbildung aus, enthält jedoch andere Zahlen:
 
- ![Mathequiz mit vier Aufgaben](../ide/media/express_finishedquiz.png) Quiz, das Sie in diesem Tutorial erstellen
+![Mathetest mit vier Aufgaben](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Tutoriallinks
 
- Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Complete math quiz tutorial sample (Tutorialbeispiel des vollständigen Mathequiz)](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Complete math quiz tutorial sample (Tutorialbeispiel des vollständigen Mathequiz)](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
->  In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
+> In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Beginnen Sie, indem Sie das Projekt erstellen, Eigenschaften ändern und `Label`-Steuerelemente hinzufügen.|
 |[Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md)|Erstellen Sie eine Additionsaufgabe, und erstellen Sie Zufallszahlen mithilfe der `Random`-Klasse.|

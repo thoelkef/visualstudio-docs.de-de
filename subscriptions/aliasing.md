@@ -9,12 +9,12 @@ description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327062"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637681"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -50,11 +50,14 @@ Führen Sie die folgenden Schritte aus, um einen neuen Abonnenten mit einem Verz
 1. Besuchen Sie das [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC), und melden Sie sich an.
 2. Klicken Sie auf der VLSC-Administratorseite auf **Abonnements** und dann auf **Visual Studio-Abonnements**.
 
-    ![Menü „Abonnements“](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Menü „Abonnements“](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Klicken Sie auf die mit dem Visual Studio-Abonnement verknüpfte **Vertragsnummer**.
 
-    ![Auswählen der Vereinbarung](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Auswählen der Vereinbarung](_img/vlsc/vlsc-agreement.png)
 
 4. Klicken Sie auf **Abonnement zuweisen**.
 5. Wählen Sie die gewünschte **Abonnementstufe**.

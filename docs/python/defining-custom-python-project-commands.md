@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341263"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008322"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 
-Bei der Arbeit mit Ihren Python-Projekten werden Sie oft zu einem Befehlsfenster wechseln, um spezifische Skripts oder Module, PIP-Befehle oder andere beliebige Tools auszuführen. Sie können Ihrem **Python**-Untermenü benutzerdefinierte Befehle im Kontextmenü Ihres Python-Projekts hinzufügen, um Ihren Workflow zu verbessern. Diese Befehle können in einem Konsolenfenster oder in dem Ausgabefenster von Visual Studio ausgeführt werden. Sie können auch reguläre Ausdrücke verwenden, um Visual Studio anzuweisen, wie Fehler und Warnungen von der Ausgabe des Befehls analysiert werden sollen.
+Bei der Arbeit mit Ihren Python-Projekten werden Sie oft zu einem Befehlsfenster wechseln, um spezifische Skripts oder Module, PIP-Befehle oder andere beliebige Tools auszuführen. Sie können Ihrem **Python**-Untermenü benutzerdefinierte Befehle im Kontextmenü Ihres Python-Projekts hinzufügen, um Ihren Workflow zu verbessern. Diese Befehle können in einem Konsolenfenster oder im **Ausgabefenster** von Visual Studio ausgeführt werden. Sie können auch reguläre Ausdrücke verwenden, um Visual Studio anzuweisen, wie Fehler und Warnungen von der Ausgabe des Befehls analysiert werden sollen.
 
 Standardmäßig enthält dieses Menü nur den Befehl **PyLint ausführen**:
 
