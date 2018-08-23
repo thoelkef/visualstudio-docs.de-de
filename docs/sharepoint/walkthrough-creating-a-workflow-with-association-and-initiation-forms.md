@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119216"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635680"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie einen grundlegenden sequenziellen Workflow erstellen, der die Verwendung von Zuordnungs-und Initiierungsformularen beinhaltet. Hierbei handelt es sich um ASPX-Formulare, mit denen Parameter für die zu einem Workflow hinzugefügt werden, wenn es zuerst von der SharePoint-Administrator (Zuordnungsformular) zugeordnet ist und der Workflow gestartet wird, durch den Benutzer (des Initiierungsformulars).  
@@ -62,7 +62,7 @@ ms.locfileid: "37119216"
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.  
   
 -   Visual Studio.  
   
