@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace | Microsoft Docs
+title: IntelliTrace | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 07/18/2017
 ms.technology: vs-ide-debug
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5812f73d86bd585cb24f2e8d599c82d2d6e7ab
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478947"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623872"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
 
 - Aufzeichnen bestimmter Ereignisse
 
-     Untersuchen Sie ähnlichen Code sowie die in angezeigten Daten den **"lokal"** Fenster während der Debugger-Ereignissen und funktionsaufrufinformationen
+     Überprüfen von verknüpftem Code, die in angezeigten Daten den **"lokal"** Fenster während der Debugger-Ereignisse und Informationen zu Funktionsaufrufen
 
 - Schwer nachstellbare oder während der Bereitstellung auftretende Fehler beim Debuggen
 
@@ -45,27 +45,27 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 
 |||
 |-|-|
-|**Debuggen Sie meine Anwendung mit IntelliTrace:**<br /><br /> -Vergangene Ereignisse auflisten.<br />-Zeigt Aufrufinformationen mit vergangenen Ereignissen.<br />-Speichern Sie IntelliTrace-Sitzung.<br />-Die von IntelliTrace erfassten Daten zu steuern.|- [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)<br />- [Verlaufsbezogenes Debugging](../debugger/historical-debugging.md)<br />- [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Sammeln von IntelliTrace-Daten während einer testsitzung im Test-Manager**|- [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
-|**Sammeln von IntelliTrace-Daten bereitgestellter Anwendungen**|- [Verwenden die eigenständige IntelliTrace collector](../debugger/using-the-intellitrace-stand-alone-collector.md)|
-|**Debuggen von einer IntelliTrace-Protokolldatei (ITRACE-Datei) aus.**|- [Verwenden gespeicherte IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)|
+|**Meine Anwendung mit IntelliTrace zu debuggen:**<br /><br /> – Vergangene Ereignisse.<br />-Anzeigen Aufrufinformationen mit vergangenen Ereignissen.<br />-Speichern Sie IntelliTrace-Sitzung.<br />-Steuerelement, die von IntelliTrace gesammelten Daten.|- [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)<br />- [Verlaufsbezogenes Debugging](../debugger/historical-debugging.md)<br />- [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace ein Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md)|
+|**Sammeln von IntelliTrace-Daten in einer testsitzung im Test-Manager**|- [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Sammeln von IntelliTrace-Daten bereitgestellter Anwendungen**|- [Verwenden den eigenständigen IntelliTrace collector](../debugger/using-the-intellitrace-stand-alone-collector.md)|
+|**Debuggen von einer IntelliTrace-Protokolldatei (ITRACE-Datei) aus.**|- [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)|
 
-## <a name="IntelliTraceSupport"></a> Welche Anwendungen kann ich mit IntelliTrace Debuggen?
+## <a name="IntelliTraceSupport"></a> Welche apps kann ich mit IntelliTrace Debuggen?
 
 |||
 |-|-|
-|**Unterstützt**|-Visual Basic- und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [einer veröffentlichten Cloud-Diensts mit IntelliTrace und Visual Studio Debuggen](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Eingeschränkte Unterstützung**|-.NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur MVC-Controller, ADO.NET und HTTPClicent beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- und ASP.NET Core apps nicht unterstützt.<br />-F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|
-|**Nicht unterstützt.**|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|
+|**Unterstützt**|– Visual Basic und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
+|**Eingeschränkte Unterstützung**|– .NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur (MVC-Controller, ADO.NET und HTTPClicent) beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- oder ASP.NET Core-apps nicht unterstützt.<br />– F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|
+|**Nicht unterstützt**|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|
 
 > [!NOTE]
-> Wenn Sie möchten einen Prozess zu debuggen, der bereits ausgeführt wird, können Sie nur IntelliTrace-Ereignisse (keine Aufrufinformationen) sammeln. Sie können mit einem 32-Bit oder 64-Bit-Prozess auf dem lokalen Computer nur anfügen. Ereignisse, die auftreten, bevor Sie an den Prozess angefügt werden werden nicht erfasst.
+> Wenn Sie möchten einen Prozess zu debuggen, der bereits ausgeführt wird, können Sie nur IntelliTrace-Ereignisse (keine Aufrufinformationen) erfassen. Sie können zu einem 32-Bit oder 64-Bit-Prozess nur auf dem lokalen Computer anfügen. Ereignisse, die auftreten, bevor Sie sich an den Prozess anfügen, werden nicht gesammelt.
 
 ##  <a name="IntelliTraceVSTraditional"></a> Warum mit IntelliTrace Debuggen?
 
-Herkömmliche oder *live* Debugvorgänge zeigen nur die aktuellen Status der Anwendung, mit eingeschränkten Informationen zu vergangenen Ereignissen. Sie müssen diese Ereignisse entweder auf Grundlage des aktuellen Anwendungsstatus ableiten, oder Sie müssen diese Ereignisse neu erstellen, indem Sie die Anwendung erneut ausführen.
+Herkömmliche oder *live* debuggenvorgänge zeigen nur Ihre Anwendung den aktuellen Zustand, mit eingeschränkten Informationen zu vergangenen Ereignissen. Sie müssen diese Ereignisse entweder auf Grundlage des aktuellen Anwendungsstatus ableiten, oder Sie müssen diese Ereignisse neu erstellen, indem Sie die Anwendung erneut ausführen.
 
-IntelliTrace erweitert diese herkömmlichen Debuggenvorgänge, indem bestimmte Ereignisse und Daten an diesen Zeitpunkten erfasst werden. Somit können Sie auch ohne Neustart der Anwendung die Ereignisse verfolgen und finden auch bereits aufgetretene Fehler. IntelliTrace ist standardmäßig während des herkömmlichen Debuggen aktiviert, sodass Daten automatisch und unsichtbar erfasst werden. Sie können also zwischen dem herkömmlichen Debuggen und dem IntelliTrace-Debuggen problemlos wechseln, um die aufgezeichneten Informationen abzurufen. Finden Sie unter [IntelliTrace-Features](../debugger/intellitrace-features.md) und [welche Daten erfasst IntelliTrace?](#WhatData)
+IntelliTrace erweitert diese herkömmlichen Debuggenvorgänge, indem bestimmte Ereignisse und Daten an diesen Zeitpunkten erfasst werden. Somit können Sie auch ohne Neustart der Anwendung die Ereignisse verfolgen und finden auch bereits aufgetretene Fehler. IntelliTrace ist standardmäßig während des herkömmlichen Debuggen aktiviert, sodass Daten automatisch und unsichtbar erfasst werden. Sie können also zwischen dem herkömmlichen Debuggen und dem IntelliTrace-Debuggen problemlos wechseln, um die aufgezeichneten Informationen abzurufen. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md) und [welche Daten erfasst IntelliTrace?](#WhatData)
 
 IntelliTrace hilft Ihnen außerdem beim Debuggen von Fehlern, die schwer reproduzierbar sind oder die bei der Bereitstellung auftreten. Sie können IntelliTrace-Daten sammeln und in einer IntelliTrace-Protokolldatei (ITRACE-Datei) speichern. Eine ITRACE-Datei enthält Details über Ausnahmen, Leistungsereignisse, Webanforderungen, Testdaten, Threads, Module und andere Systeminformationen. Sie können diese Datei in Visual Studio Enterprise öffnen, ein Element auswählen und das Debuggen mit IntelliTrace starten. Sie können also zu jedem beliebigen Ereignis in der Datei gehen und bestimmte Einzelheiten über die Anwendung an diesem Punkt anzeigen lassen.
 
@@ -75,7 +75,7 @@ IntelliTrace-Daten können aus den folgenden Quellen gespeichert werden:
 
 - Eine Testsitzung in Microsoft Test Manager
 
-- Auf IIS gehostete ASP.NET-Anwendungen oder SharePoint 2010- und SharePoint 2013-Anwendungen, die bei der Bereitstellung ausgeführt werden, wenn Sie Microsoft Monitoring Agent verwenden, entweder allein oder mit System Center 2012. Finden Sie unter [verwenden Sie die eigenständige IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md) und [Überwachen mit Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
+- Auf IIS gehostete ASP.NET-Anwendungen oder SharePoint 2010- und SharePoint 2013-Anwendungen, die bei der Bereitstellung ausgeführt werden, wenn Sie Microsoft Monitoring Agent verwenden, entweder allein oder mit System Center 2012. Finden Sie unter [verwenden Sie den eigenständigen IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md) und [Überwachen mit Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
  Im Folgenden werden einige Beispiele aufgeführt, die den Nutzen von IntelliTrace beim Debuggen veranschaulichen:
 
@@ -85,31 +85,31 @@ IntelliTrace-Daten können aus den folgenden Quellen gespeichert werden:
 
 - Eine Ausnahme tritt auf.
 
-     Ohne IntelliTrace erhalten Sie eine Meldung über eine Ausnahme, aber Sie bekommen kaum Informationen zu den Ereignissen, die auf die Ausnahme geführt hat. Sie können Untersuchen der Aufrufliste die Kette der Aufrufe, die auf die Ausnahme geführt haben, finden Sie unter, aber die Abfolge von Ereignissen, die während dieser Aufrufe nicht angezeigt. Mit IntelliTrace können Sie die Ereignisse untersuchen, die vor der Ausnahme auftraten.
+     Ohne IntelliTrace Sie erhalten eine Meldung zu einer Ausnahme, aber Sie müssen nicht viele Informationen zu den Ereignissen, die auf die Ausnahme geführt hat. Sehen Sie die Aufrufliste die Kette der Aufrufe angezeigt, die auf die Ausnahme geführt hat, aber die Abfolge der Ereignisse, die Ereignisabfolge während dieser Aufrufe nicht angezeigt. Mit IntelliTrace können Sie die Ereignisse untersuchen, die vor der Ausnahme auftraten.
 
 - Die Anwendung stürzt auf einem Testcomputer ab, wird jedoch auf einem Entwicklungscomputer erfolgreich ausgeführt.
 
-     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einer Team Foundation Server-Arbeitsaufgabe für die Untersuchung hinzufügen. Finden Sie unter [erfassen weiterer Diagnosedaten in manuellen Tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
+     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einem Team Foundation Server-Arbeitselement für die Untersuchung hinzufügen. Finden Sie unter [Sammeln weiterer Diagnosedaten in manuellen Tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
 
 - Ein Fehler oder ein Absturz geschieht in einer bereitgestellten Anwendung.
 
-     Für Microsoft Azure-basierte Apps können Sie die IntelliTrace-Datenerfassung vor der Veröffentlichung Ihrer App konfigurieren. Während die App ausgeführt wird, werden von IntelliTrace Daten in einer iTrace-Datei gespeichert. Finden Sie unter [Debuggen eines veröffentlichten Cloud-Diensts mit IntelliTrace und Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
+     Für Microsoft Azure-basierte Apps können Sie die IntelliTrace-Datenerfassung vor der Veröffentlichung Ihrer App konfigurieren. Während die App ausgeführt wird, werden von IntelliTrace Daten in einer iTrace-Datei gespeichert. Finden Sie unter [Debuggen ein veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
 
      Für ASP.NET-Webanwendungen, die auf IIS 7.0, 7,5 und 8,0 gehostet werden, sowie für SharePoint 2010- oder SharePoint 2013-Anwendungen verwenden Sie Microsoft Monitoring Agent, entweder alleine oder mit System Center 2012, um IntelliTrace-Daten in einer ITRACE-Datei zu speichern.
 
-     Dies ist hilfreich, wenn Sie Probleme mit Apps in der Bereitstellung diagnostizieren möchten. Finden Sie unter [verwenden Sie die eigenständige IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md).
+     Dies ist hilfreich, wenn Sie Probleme mit Apps in der Bereitstellung diagnostizieren möchten. Finden Sie unter [verwenden Sie den eigenständigen IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ##  <a name="WhatData"></a> Welche Daten erfasst IntelliTrace?
 
 **Sammeln von Ereignisinformationen**
 
-Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereignisse, Ausnahmen, .NET Framework-Ereignisse und andere Systemereignisse, die beim Debuggen hilfreich sein können. Sie können die IntelliTrace-Ereignisse auswählen, die Sie sammeln möchten. Debuggerereignisse und -ausnahmen werden allerdings immer gesammelt. Finden Sie unter [IntelliTrace-Features](../debugger/intellitrace-features.md).
+Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereignisse, Ausnahmen, .NET Framework-Ereignisse und andere Systemereignisse, die beim Debuggen hilfreich sein können. Sie können die IntelliTrace-Ereignisse auswählen, die Sie sammeln möchten. Debuggerereignisse und -ausnahmen werden allerdings immer gesammelt. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
-- **Debugger-Ereignisse**
+- **Debugger-Ereignissen**
 
-     IntelliTrace zeichnet alle Ereignisse auf, die im Visual Studio-Debugger stattfinden. Der Anwendungsstart ist beispielsweise ein Debuggerereignis. Weitere Debuggerereignisse sind Beenden-Ereignissen, die zur Unterbrechung der Anwendungsausführung führen. Angenommen, das Programm einen Haltepunkt, einen Ablaufverfolgungspunkt oder führt eine **Schritt** Befehl.
+     IntelliTrace zeichnet alle Ereignisse auf, die im Visual Studio-Debugger stattfinden. Der Anwendungsstart ist beispielsweise ein Debuggerereignis. Weitere Debuggerereignisse sind Beenden-Ereignissen, die zur Unterbrechung der Anwendungsausführung führen. Beispielsweise das Programm einen Haltepunkt, einen Ablaufverfolgungspunkt erreicht oder führt eine **Schritt** Befehl.
 
-     Standardmäßig nicht optimale Leistung, IntelliTrace alle möglichen Werte für ein Debuggerereignis aufgezeichnet. Stattdessen werden folgende Werte aufgezeichnet:
+     In der Standardeinstellung keine optimale Leistung, IntelliTrace alle möglichen Werte für ein Debuggerereignis aufgezeichnet. Stattdessen werden folgende Werte aufgezeichnet:
 
     - Werte in der **"lokal"** Fenster. Behalten Sie die **"lokal"** Fenster geöffnet, um diese Werte anzuzeigen.
 
@@ -117,7 +117,7 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
     - Werte in DataTips, die angezeigt werden, wenn Sie den Mauszeiger über eine Variable im Quellcodefenster bewegen, um den Wert anzuzeigen. IntelliTrace erfasst keine Werte in angehefteten DataTips.
 
-    Wenn IntelliTrace-Ereignisse und Momentaufnahmen Modus aktiviert ist, dauert IntelliTrace eine Momentaufnahme des Prozesses für die Anwendung bei jeder Debugger **Haltepunkt** und **Schritt** Ereignis. Dies wird aufgezeichnet, Werte in der **"lokal"**, **"Auto"**, und **Überwachen** Windows, unabhängig davon, ob die Fenster geöffnet sind. Werte in jeder angeheftete Datentipps werden auch gesammelt.
+    Wenn IntelliTrace-Ereignisse und Momentaufnahmen-Modus aktiviert ist, IntelliTrace wird eine Momentaufnahme der der Anwendungsprozess an jeden Debugger **Haltepunkt** und **Schritt** Ereignis. Dies wird aufgezeichnet, Werte in der **"lokal"**, **"Auto"**, und **Überwachen** Windows, unabhängig davon, ob die Fenster geöffnet oder nicht sind. Datenwerten als Datentipps alle angehefteten werden ebenfalls erfasst.
 
 - **Ausnahmen**
 
@@ -135,7 +135,7 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
 - **SharePoint 2010 und SharePoint 2013-Anwendungsereignisse**
 
-     Sie können Benutzerprofilereignisse und eine Teilmenge von einheitlichen Ereignissen des Protokollierungs-Systems (ULS) für SharePoint 2010- und 2013-Anwendungen erfassen, die außerhalb von Visual Studio ausgeführt werden. Sie können diese Ereignisse in einer ITRACE-Datei speichern. Erfordert, dass Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, einer früheren Version von Visual Studio Ultimate oder [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) auf **Trace** Modus.
+     Sie können Benutzerprofilereignisse und eine Teilmenge von einheitlichen Ereignissen des Protokollierungs-Systems (ULS) für SharePoint 2010- und 2013-Anwendungen erfassen, die außerhalb von Visual Studio ausgeführt werden. Sie können diese Ereignisse in einer ITRACE-Datei speichern. Erfordert Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, eine frühere Version von Visual Studio Ultimate oder [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) auf **Ablaufverfolgung** Modus.
 
      Wenn Sie die ITRACE-Datei öffnen, geben Sie eine SharePoint-Korrelations-ID ein, um die entsprechenden Webanforderung zu suchen, die aufgezeichneten Ereignisse anzuzeigen und das Debuggen von einem bestimmten Ereignis aus zu starten. Wenn die Datei Ausnahmefehler enthält, können Sie eine Korrelations-ID auswählen, um das Debuggen einer Ausnahme zu starten.
 
@@ -149,9 +149,9 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
 **Erfassen von Momentaufnahmen**
 
-Sie können konfigurieren, dass IntelliTrace zum Erfassen von Momentaufnahmen an jedem Haltepunkt und debugger-Schritt-Ereignis. IntelliTrace zeichnet die vollständigem Anwendungszustand an jede Momentaufnahme, dadurch können Sie komplexe Variablen anzeigen und Auswerten von Ausdrücken.
+Sie können konfigurieren, dass IntelliTrace zum Aufzeichnen von Momentaufnahmen an jedem Haltepunkt und debugger Schrittereignis. IntelliTrace zeichnet die vollständigem Anwendungszustand auf jede Momentaufnahme, in dem Sie komplexe Variablen anzeigen und zum Auswerten von Ausdrücken kann.
 
-Finden Sie unter [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace Schritt hinten](../debugger/how-to-use-intellitrace-step-back.md).
+Finden Sie unter [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace Rückschritt](../debugger/how-to-use-intellitrace-step-back.md).
 
 **Sammeln von funktionsaufrufinformationen**
 
@@ -165,27 +165,27 @@ Sie können IntelliTrace so konfigurieren, dass Aufrufinformationen für Funktio
 > [!NOTE]
 > IntelliTrace erfasst nur die ersten 256 Objekte in Arrays und die ersten 256 Zeichen von Zeichenfolgen.
 
-Finden Sie unter [überprüfen Sie Ihre app mit verlaufsbezogenes debugging](../debugger/historical-debugging-inspect-app.md).
+Finden Sie unter [untersuchen Ihrer app mit verlaufsbezogenem debugging](../debugger/historical-debugging-inspect-app.md).
 
 **Sammeln von Modulinformationen**
 
-Um zu steuern, wie viel Aufrufsinformationen IntelliTrace erfasst, legen Sie nur die Module fest, die für Sie von Bedeutung sind. Das kann dabei helfen, die Anwendungsleistung während der Erfassung zu verbessern. Finden Sie im Abschnitt [steuern, wie viele Informationen, die IntelliTrace sammelt,](../debugger/intellitrace-features.md#ControlCallData) im IntelliTrace-Funktionen.
+Um zu steuern, wie viel Aufrufsinformationen IntelliTrace erfasst, legen Sie nur die Module fest, die für Sie von Bedeutung sind. Das kann dabei helfen, die Anwendungsleistung während der Erfassung zu verbessern. Finden Sie im Abschnitt [steuern, wie viele Informationen, die IntelliTrace erfasst](../debugger/intellitrace-features.md#ControlCallData) im IntelliTrace-Funktionen.
 
 ## <a name="AffectPerformance"></a> Meine Anwendung verlangsamt IntelliTrace?
 
 Standardmäßig werden von IntelliTrace nur Daten für ausgewählte IntelliTrace-Ereignisse gesammelt. Das kann, abhängig von der Struktur und der Organisation Ihres Codes, eventuell die Anwendung verlangsamen. Wenn IntelliTrace beispielsweise oft ein Ereignis protokolliert, kann dies die Anwendung verlangsamen. Erwägen Sie, eine Umgestaltung Ihrer Anwendung vorzunehmen.
 
-Das Sammeln der Aufrufsinformationen verlangsamt die App möglicherweise erheblich. Außerdem erhöht sich dadurch möglicherweise die Größe aller auf dem Datenträger gespeicherter IntelliTrace-Protokolldateien (ITRACE-Dateien). Um diese Auswirkungen zu minimieren, sammeln Sie Aufrufinformationen nur für die Module, die Sie interessieren.  Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Tools**, **Optionen**, **IntelliTrace**, **erweitert**. 
+Das Sammeln der Aufrufsinformationen verlangsamt die App möglicherweise erheblich. Außerdem erhöht sich dadurch möglicherweise die Größe aller auf dem Datenträger gespeicherter IntelliTrace-Protokolldateien (ITRACE-Dateien). Um diese Auswirkungen zu minimieren, sammeln Sie Aufrufinformationen nur für die Module, die Sie interessieren.  Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Tools**, **Optionen**, **IntelliTrace**, **erweitert**.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[IntelliTrace-Features](../debugger/intellitrace-features.md)
+[IntelliTrace-Funktionen](../debugger/intellitrace-features.md)
 [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)
 [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogs
 
-[Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)
+[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
 
 ### <a name="forums"></a>Foren
 

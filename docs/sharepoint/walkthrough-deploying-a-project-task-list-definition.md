@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 80b9cfee3aed4043b8327898ad8c57a55f254c28
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118902"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626456"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlistendefinition für Projekt
 
@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit [!INCLUDE[vs_d
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Unterstützte Editionen von Microsoft Windows und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Unterstützte Editionen von Microsoft Windows und SharePoint.
 
 - Visual Studio 2017 oder eine Edition von Visual Studio Application Lifecycle Management (ALM).
 

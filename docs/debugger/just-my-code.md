@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851824"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627340"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Gibt an, ob nur Benutzercode, die mit nur mein Code in Visual Studio debuggen
 Sie können konfigurieren, dass Visual Studio für das automatische System-, Framework- und andere Aufrufe überspringen und diese Aufrufe in das Aufruflistenfenster zu reduzieren. Das Feature, das aktiviert oder deaktiviert dieses Verhalten wird aufgerufen, *nur mein Code*. In diesem Thema wird beschrieben, wie nur mein Code in c#, Visual Basic, C++ und JavaScript-Projekten verwendet wird.
@@ -67,7 +67,9 @@ Für die meisten Programmiersprachen wird nur mein Code standardmäßig aktivier
 ##  <a name="BKMK_C___Just_My_Code"></a> C++ nur mein Code  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Benutzer-und Nichtbenutzercode  
- "Nur eigenen Code" in C++ ist anders als "Nur eigenen Code" in .NET Framework und JavaScript, da das Schrittverhalten vom Aufruflistenverhalten unabhängig ist.  
+"Nur eigenen Code" in C++ ist anders als "Nur eigenen Code" in .NET Framework und JavaScript, da das Schrittverhalten vom Aufruflistenverhalten unabhängig ist.  
+
+Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwendung von C++ **Tools** > **Optionen** > **Debuggen**  >  **Allgemeine** > **nur meinen Code aktivieren** (er ist standardmäßig aktiviert). Dies ist äquivalent zur Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter.
   
  **Aufruflisten**  
   
@@ -88,7 +90,7 @@ Für die meisten Programmiersprachen wird nur mein Code standardmäßig aktivier
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Schrittverhalten  
  Wenn Sie **Einzelschritt** (Tastenkombination: F11) Nichtbenutzercode aus Benutzercode, überspringt der Debugger den Code in die nächste Zeile von Benutzercode. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger, die in die nächste Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
   
- Wenn der Debugger beim Nichtbenutzercode unterbricht (zum Beispiel, wenn ein Befehl "Alle unterbrechen" in Nichtbenutzercode anhält), wird die schrittweise Ausführung im Nichtbenutzercode weitergeführt.  
+ Wenn der Debugger beim Nichtbenutzercode unterbricht (zum Beispiel, wenn ein Befehl "Alle unterbrechen" in Nichtbenutzercode anhält), wird die schrittweise Ausführung im Nichtbenutzercode weitergeführt.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn der Debugger eine Ausnahme trifft, wird es für die Ausnahme, unabhängig davon, ob es in Benutzer- oder Nichtbenutzercode beendet. Die **vom Benutzercode unbehandelt** "Optionen" der **Ausnahmen** im Dialogfeld werden ignoriert.  
