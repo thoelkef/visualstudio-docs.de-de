@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118938"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626487"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine grundlegenden sequenziellen Workflowvorlage erstellen. Der Workflow überprüft eine Eigenschaft eine Bibliothek freigegebener Dokumente, um festzustellen, ob ein Dokument überprüft wurde. Wenn das Dokument überprüft wurde, wird der Workflow abgeschlossen.  
@@ -47,7 +47,7 @@ ms.locfileid: "37118938"
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Unterstützte Editionen von Microsoft Windows und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Microsoft Windows und SharePoint.  
   
 -   Visual Studio.  
   

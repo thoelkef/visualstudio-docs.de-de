@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117835"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634737"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts
   In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten **Server-Explorer** um Komponenten auf SharePoint-Websites anzuzeigen. Allerdings **Server-Explorer** nicht einige Komponenten werden standardmäßig angezeigt. Erweitern Sie in dieser exemplarischen Vorgehensweise **Server-Explorer** , damit es den Webpartkatalog auf zeigt jeweils die SharePoint-Website verbunden.  
@@ -48,7 +48,7 @@ ms.locfileid: "37117835"
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
--   Unterstützte Editionen von Windows, SharePoint und Visual Studio. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Windows, SharePoint und Visual Studio.  
   
 -   Das Visual Studio SDK. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   

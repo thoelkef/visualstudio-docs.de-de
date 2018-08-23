@@ -1,5 +1,5 @@
 ---
-title: Prüfen Sie die Variablen im Fenster "lokal" und "Auto" | Microsoft Docs
+title: Überprüfen von Variablen in der "Auto" und "lokal" Windows | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454637"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626469"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen von Variablen in der "Auto" und "lokal" Fenstern in Visual Studio
-Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr hilfreich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen Sie Variablen in der "Auto" und "lokal" Windows in Visual Studio
+Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr nützlich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  
   
 Wenn Sie weitere Informationen zu den Grundlagen des Debuggens benötigen, lesen Sie [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Betrachten von Objekten in den Fenstern „Auto“ und „Lokal“  
-Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Hier ist ein Beispiel für eine [FileStream](/dotnet/api/system.io.filestream) Objekt in der **"lokal"** Fenster:  
+Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Hier ist ein Beispiel für eine <xref:System.IO.FileStream?displayProperty=fullName> -Objekt in der **"lokal"** Fenster:  
   
-!["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png "\"lokal\" FileStream")  
+!["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png "\"lokal\" die FileStream-")  
   
 ## <a name="bkmk_whatvariables"></a> Welche Variablen werden im Fenster „Auto“ angezeigt?  
  Sie können das Fenster **Auto** für C#-, Visual Basic- und C++-Code verwenden. Das Fenster **Auto** unterstützt weder JavaScript noch F#-.  
@@ -51,7 +51,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `c = 3`festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
 
- !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png "\"Auto\" CSharp")  
+ !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png "Auto-CSharp")  
 
  `c` hat den Wert 0, weil die Zeile `c = 3` noch nicht ausgeführt wurde.  
 
@@ -71,7 +71,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `e = 5;` festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
   
- !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png "\"Auto\" Cplus")  
+ !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png "Auto-Cplus")  
   
  Sie sehen, dass die Variable „e“ nicht initialisiert ist. Dies liegt daran, dass der Code in der Zeile `e = 5;` noch nicht ausgeführt wurde.  
   
@@ -132,7 +132,7 @@ Allerdings sollten Sie Vorsicht walten lassen, wenn Sie Werte ändern. Mögliche
 -   Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar harmlose Bearbeitung kann Änderungen in einigen der unwichtigsten Bits einer Gleitkommavariable bewirken.  
   
 ## <a name="changing-the-window-context"></a>Ändern den Fensterkontext  
-Sie können die **Debugspeicherort** Symbolleiste auf die gewünschte Funktion, Threads oder Prozesses, der den Kontext für den Variablenfenstern ändert. Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. (Wenn diese Symbolleiste nicht angezeigt wird, können Sie sie aktivieren, indem Sie auf einen leeren Bereich der Symbolleiste klicken. Sie sollten die Liste der Symbolleisten sehen. Wählen Sie **Debugspeicherort**aus.) Sobald der Haltepunkt getroffen wird, können die Ausführung angehalten, und Sie die Symbolleiste Debugspeicherort finden Sie unter also die unterste Zeile in der folgenden Abbildung.
+Sie können die **Debugspeicherort** Symbolleiste auf die gewünschte Funktion, Thread oder Prozess, der den Kontext für den Variablenfenstern ändert. Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. (Wenn diese Symbolleiste nicht angezeigt wird, können Sie sie aktivieren, indem Sie auf einen leeren Bereich der Symbolleiste klicken. Sie sollten die Liste der Symbolleisten sehen. Wählen Sie **Debugspeicherort**aus.) Wenn der Haltepunkt erreicht wird, können Ausführung angehalten, und Sie die Symbolleiste Debugspeicherort finden Sie unter der untersten Zeile der in der folgenden Abbildung handelt.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

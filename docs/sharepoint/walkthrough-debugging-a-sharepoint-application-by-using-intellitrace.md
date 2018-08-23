@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119205"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624447"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mit IntelliTrace
 
@@ -52,7 +52,7 @@ Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmli
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
-- Unterstützte Editionen von Windows und SharePoint. Finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Unterstützte Editionen von Windows und SharePoint.
 
 - Visual Studio Enterprise.
 
@@ -298,7 +298,7 @@ Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgefüh
 
 3. Führen Sie im PowerShell-Fenster, das [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, Überwachung zu beenden und starten Sie die SharePoint-Lösung neu.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Debuggen Sie und korrigieren Sie die SharePoint-Lösung
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e31b06d642947d88d1076b3ad365e62b663c8d4a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118890"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634786"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite
  
@@ -44,7 +44,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Unterstützte Editionen von Windows und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Unterstützte Editionen von Windows und SharePoint.
 
 ## <a name="create-a-sharepoint-project"></a>Erstellen Sie ein SharePoint-Projekt
 

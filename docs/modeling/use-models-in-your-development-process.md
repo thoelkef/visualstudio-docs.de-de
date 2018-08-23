@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08345fc043de8c01540fb0933cc4296c790ae17c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749894"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623596"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -30,7 +30,7 @@ Modelle können auf verschiedene Weise von Nutzen sein:
 
 - Durch das Arbeiten mit Modellen können Sie mangelnde Übereinstimmungen in den Anforderungen aufzeigen.
 
-- Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. Weitere Informationen finden Sie unter [modellieren Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md).
+- Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).
 
 - Manchmal können Sie mithilfe von Modellen Code oder andere Artefakte generieren, z. B. Datenbankschemas oder Dokumente. Beispielsweise werden die Modellierungskomponenten von Visual Studio aus einem Modell generiert. Weitere Informationen finden Sie unter [generieren und Konfigurieren von Apps aus Modellen](../modeling/generate-and-configure-your-app-from-models.md).
 
@@ -46,13 +46,13 @@ Wenn das Projekt umfangreich ist und Teams aus verschiedenen Ländern auf dem Gl
 
 In beiden Fällen lassen sich durch das Erstellen eines Modells mangelnde Übereinstimmungen und Mehrdeutigkeiten fast immer erheblich reduzieren. Unterschiedliche Projektbeteiligte verfügen über unterschiedliche Vorstellungen von dem Geschäftsumfeld, in dem das System eingesetzt wird, und unterschiedliche Entwickler verfügen häufig über unterschiedliche Vorstellungen von der Funktionsweise des Systems. Mit einem Modell als Mittelpunkt eines Gesprächs werden diese Unterschiede in der Regel aufgezeigt. Weitere Informationen dazu, wie Sie ein Modell zu verwenden, um Inkonsistenzen zu verringern, finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).
 
-## <a name="use-models-with-other-artifacts"></a>Verwenden Sie Modelle mit anderen Artefakten
+## <a name="use-models-with-other-artifacts"></a>Verwenden von Modellen mit anderen Artefakten
 
 Ein Modell allein ist noch keine Anforderungsspezifikation oder Architektur. Es ist ein Werkzeug, um einige Aspekte klarer darzustellen, jedoch können nicht alle während des Softwareentwurfs erforderlichen Aspekte dargestellt werden. Die Modelle sollten daher zusammen mit anderen Kommunikationsmitteln, z. B. OneNote-Seiten oder -Absätzen, Microsoft Office-Dokumenten, Arbeitsaufgaben in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] oder Haftnotizen an der Wand des Projektraums, verwendet werden. Außer dem letzten Element können alle diese Objekttypen mit Elementteilen des Modells verknüpft werden.
 
 Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte verwendet. Je nach Umfang und Art des Projekts verwenden Sie eventuell mehrere oder keinen dieser Aspekte:
 
-- User Stories: Eine User Story ist eine kurze Beschreibung eines Aspekts des Systemverhaltens, der mit Benutzern und anderen Projektbeteiligten erörtert und in einer der Iterationen des Projekts bereitgestellt wird. Eine typische User Story beginnt "Kunden können werden..." Eine User Story kann eine Gruppe von Anwendungsfällen einführen oder Erweiterungen von Anwendungsfällen definieren, die zuvor entwickelt wurden. Das Definieren oder Erweitern der Anwendungsfälle trägt zur größeren Verständlichkeit der User Story bei.
+- User Stories: Eine User Story ist eine kurze Beschreibung eines Aspekts des Systemverhaltens, der mit Benutzern und anderen Projektbeteiligten erörtert und in einer der Iterationen des Projekts bereitgestellt wird. Eine typische User Story beginnt mit "Kunden können werden..." Eine User Story kann eine Gruppe von Anwendungsfällen einführen oder Erweiterungen von Anwendungsfällen definieren, die zuvor entwickelt wurden. Das Definieren oder Erweitern der Anwendungsfälle trägt zur größeren Verständlichkeit der User Story bei.
 
 - Änderungsanforderungen: Ein Änderungsanforderung in einem eher formalen Projekt ist einer User Story in einem agilen Projekt sehr ähnlich. Bei der agilen Vorgehensweise werden alle Anforderungen als Änderungen der Entwicklung in vorherigen Iterationen behandelt.
 
@@ -72,13 +72,13 @@ Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte 
 
 - Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.
 
-## <a name="use-models-in-iteration-planning"></a>Verwenden von Modellen in iterationsplanung
+## <a name="use-models-in-iteration-planning"></a>Verwenden von Modellen in der iterationsplanung
 
 Obwohl sich alle Projekte hinsichtlich Umfang und Organisation unterscheiden, wird ein typisches Projekt als eine Reihe von Iterationen mit einer Dauer von zwei bis sechs Wochen geplant. Es ist wichtig, eine ausreichende Anzahl von Iterationen zu planen, um Feedback von frühen Iterationen zu ermöglichen, mit dem der Umfang und die Pläne für spätere Iterationen angepasst werden können.
 
 Möglicherweise tragen die folgenden Empfehlungen dazu bei, die Vorteile der Modellierung in einem iterativen Projekt auszuschöpfen.
 
-### <a name="sharpen-focus-as-each-iteration-approaches"></a>Fokus scharf, vor Beginn jeder iteration
+### <a name="sharpen-focus-as-each-iteration-approaches"></a>Erweitern Sie den Fokus jeder Iteration
 
 Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der Iteration bereitgestellt werden muss.
 
@@ -94,7 +94,7 @@ Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der
 
 - Projektbeteiligte ohne technischen Hintergrund verstehen normalerweise UML-Diagramme ohne Probleme, wenn sie von Ihnen Erläuterungen erhalten.
 
-### <a name="link-model-to-work-items"></a>Verknüpfen Sie das Modell zu Arbeitsaufgaben
+### <a name="link-model-to-work-items"></a>Verknüpfen Sie das Modell mit Arbeitsaufgaben
 
 Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Sie können zu diesem Zweck Arbeitsaufgaben in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] mit Elementen im Modell verknüpfen.
 
@@ -118,29 +118,29 @@ Mithilfe eines Anforderungsmodells lässt sich der Gesamtumfang des Projekts im 
 
 Modelle abstrahieren die Software in unterschiedlichem Ausmaß. Die konkretesten Modelle stellen direkt den Programmcode dar, und die abstraktesten Modelle stellen Geschäftskonzepte dar, die nicht in jedem Fall im Code dargestellt werden.
 
-Ein Modell kann über mehrere Arten von Diagrammen dargestellt werden. Informationen zu Modellen und Diagrammen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).
+Ein Modell kann über mehrere Arten von Diagrammen dargestellt werden. Weitere Informationen zu Modellen und Diagrammen, finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).
 
 Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sich unterschiedliche Arten von Diagrammen. Viele der Diagrammtypen sind für mehrere Ebenen sinnvoll. In der folgenden Tabelle wird gezeigt, wie jeder Diagrammtyp verwendet werden kann.
 
 |Entwurfsebene|Diagrammtypen|
 |------------------|-------------------|
-|Geschäftsprozess<br /><br /> Wenn Sie den Kontext kennen, in dem das System verwendet wird, erleichtert dies das Verständnis der Anforderungen der Benutzer an das System.|-Konzeptionelle Klassendiagramme beschreiben Geschäftskonzepte innerhalb des Geschäftsprozesses verwendet.|
-|Benutzeranforderungen<br /><br /> Die Definition der Anforderungen der Benutzer an das System.|-Geschäftsregeln und servicequalitätsanforderungen können in separaten Dokumenten beschrieben werden.|
-|Allgemeiner Entwurf<br /><br /> Die Gesamtstruktur des Systems: die Hauptkomponenten und wie sie verknüpft sind.|-Abhängigkeit Diagramme beschrieben, wie das System in voneinander abhängigen Teile strukturiert ist. Sie können überprüfen, dass Programmcode anhand Abhängigkeit Diagramme, um sicherzustellen, dass die Architektur entspricht.|
-|Codeanalyse<br /><br /> Diagramme können aus dem Code generiert werden.|-Abhängigkeit-Diagramme zeigen die Abhängigkeiten zwischen Klassen. Aktualisierten Codes kann anhand einer Abhängigkeit Diagramms überprüft werden.<br />-Class-Diagramme zeigen die Klassen im Code.|
+|Geschäftsprozess<br /><br /> Wenn Sie den Kontext kennen, in dem das System verwendet wird, erleichtert dies das Verständnis der Anforderungen der Benutzer an das System.|– Konzeptionelle Klassendiagramme beschreiben die innerhalb des Geschäftsprozesses verwendeten Geschäftskonzepte.|
+|Benutzeranforderungen<br /><br /> Die Definition der Anforderungen der Benutzer an das System.|– Die Geschäftsregeln und servicequalitätsanforderungen können in separaten Dokumenten beschrieben werden.|
+|Allgemeiner Entwurf<br /><br /> Die Gesamtstruktur des Systems: die Hauptkomponenten und wie sie verknüpft sind.|-Abhängigkeitsdiagrammen wird beschrieben, wie das System in voneinander abhängige Teile gegliedert ist. Sie können überprüfen, dass Programmcode anhand von Abhängigkeitsdiagrammen, um sicherzustellen, dass er der Architektur entspricht.|
+|Codeanalyse<br /><br /> Diagramme können aus dem Code generiert werden.|-Abhängigkeitsdiagramme zeigen die Abhängigkeiten zwischen Klassen an. Aktualisierten Code kann gegen ein Abhängigkeitsdiagramm überprüft werden.<br />-Class-Diagramme zeigen die Klassen im Code.|
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif) [MSDN-Videos: zum Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif) [MSDN-Serie: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [MSDN Anleitungsvideos: Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [wie Reihe von MSDN: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL-Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von Modellen in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Verwenden von Modellen in Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

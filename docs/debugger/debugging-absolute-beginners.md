@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131868"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623629"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Gewusst wie: Debuggen für absolute Anfänger
 
@@ -25,7 +25,7 @@ Ohne Fehler auftreten nicht der Code, den wir als Software-Entwickler schreiben 
 
 Ein Debugger, nicht leider etwas, das automatisch alle Probleme oder "Fehler" in unserem Code anzeigen können. *Debuggen von* bedeutet, dass zum Ausführen des Codes schrittweise in ein Tool zum Debuggen wie Visual Studio, um den genauen Punkt zu finden, in dem Sie ein Fehler Programmierung unterlaufen. Sie sich vergegenwärtigen, welche Korrekturen, die Sie in Ihrem Code vornehmen müssen, und die Debugtools ermöglichen temporäre Änderungen vornehmen, um die programmausführung fortgesetzt werden kann.
 
-Verwenden eines Debuggers effektiv ist auch eine Qualifikation, die Zeit- und Vorgehensweise erfahren Sie mehr akzeptiert, jedoch ist letztlich eine wesentliche Aufgabe für alle Softwareentwickler. In diesem Artikel dann wir führen die wichtigsten Aspekte von Debuggen und geben Sie Tipps, die Ihnen den Einstieg erleichtern.
+Verwenden eines Debuggers effektiv ist auch eine Qualifikation, die Zeit und Vorgehensweise erfahren, aber ist letztlich eine wichtige Aufgabe für alle Softwareentwickler. In diesem Artikel dann wir führen die wichtigsten Aspekte von Debuggen und geben Sie Tipps, die Ihnen den Einstieg erleichtern.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Klären Sie das Problem, Fragen Sie sich mit der richtigen Fragen
 
@@ -35,7 +35,7 @@ Es hilft, um das Problem zu ermitteln, dem Sie in ausgeführt haben, bevor Sie v
 
 * Was ist stattdessen passiert?
 
-    Wenn Sie einen Fehler (Ausnahme) während der Ausführung Ihrer app ausführen, kann die eine gute Sache sein! Eine Ausnahme ist ein unerwartetes Ereignis bei der Ausführung von Code, in der Regel eine Art Fehler auftreten. Ein Tool zum Debuggen sind Sie genau zu der Stelle in Ihrem Code, in dem die Ausnahme aufgetreten ist, und ermöglicht Ihnen, mögliche Lösungen zu untersuchen.
+    Wenn Sie einen Fehler (Ausnahme) während der Ausführung Ihrer app ausführen, kann die eine gute Sache sein! Eine Ausnahme ist ein unerwartetes Ereignis bei der Ausführung von Code, in der Regel eine Art Fehler auftreten. Ein Tool zum Debuggen können Sie an die genaue Stelle in Ihrem Code, in dem die Ausnahme aufgetreten ist, und ermöglicht Ihnen, mögliche Lösungen zu untersuchen.
 
     Wenn etwas anderes aufgetreten ist, was das Symptom des Problems ist? Vermuten Sie bereits, in denen dieses Problem in Ihrem Code aufgetreten ist? Beispielsweise wissen, ob Ihr Code zeigt einen Text an, aber der Text falsch ist, Sie, dass Ihre Daten ungültig ist oder der Code, der den anzuzeigenden Text festlegen, eine Art von Fehler ist. Durch den Code in einem Debugger zu durchlaufen, können Sie jede einzelne Änderung überprüfen, auf Ihre Variablen ermittelt werden, genau, wann und wie falsche Werte zugewiesen werden.
 
@@ -45,7 +45,7 @@ Bevor Sie einen Fehler oder einen Fehler untersuchen, stellen Sie die Annahmen, 
 
 * Verwenden Sie die richtige-API (d. h. die Rechte Objekt, -Funktion, Methode oder Eigenschaft)? Eine API, die Sie verwenden möglicherweise nicht, was Sie denken, dass dies der Fall ist. (Nach dem Sie den API-Aufruf im Debugger untersuchen, kann deren Behebung eine Reise in der Dokumentation zur Identifizierung, dass die richtige API erfordern.)
 
-* Verwenden eine API ordnungsgemäß Sie? Vielleicht wird rechts API verwendet, aber nicht in der richtigen Weise verwenden.
+* Verwenden eine API ordnungsgemäß Sie? Vielleicht Sie rechts API verwendet, aber nicht in der richtigen Weise verwenden.
 
 * Enthält der Code keine Tippfehler? Einige Tippfehler, wie eine einfache Namen eines Variablennamens, können schwierig sein, insbesondere beim Arbeiten mit Sprachen, die keine Variablen deklariert werden, damit sie verwendet werden erfordern angezeigt wird.
 
@@ -92,7 +92,7 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
 
     Für .NET Core in der **neues Projekt** Dialogfeld wählen **Visual C#-**, **.NET Core** wählen Sie aus dem Abschnitt der installierten Vorlagen, und klicken Sie dann im mittleren Bereich  **Konsolen-App ((.NET Core)**.
 
-    Wenn Sie diese Vorlage nicht angezeigt wird, müssen Sie die erforderliche Workload installieren (siehe vorherigen Schritten).
+    Wenn Sie diese Vorlagen nicht angezeigt wird, müssen Sie die erforderliche Workload installieren (siehe vorherigen Schritten).
 
 1. In der **Namen** Feld **ConsoleApp-FirstApp** , und klicken Sie auf **OK**.
 
@@ -228,7 +228,7 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
 
 1. Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**).
 
-    Die app hält die Ausführung am Haltepunkt, den Sie festlegen. Die gelben mit gibt an, in denen der Debugger angehalten ist (die gelbe Zeile des Codes wurde noch nicht ausgeführt).
+    Die app hält die Ausführung am Haltepunkt, den Sie festlegen. Die gelbe Markierung angibt, in denen der Debugger angehalten ist (die gelbe Zeile des Codes wurde noch nicht ausgeführt).
 
 1. Zeigen Sie auf die `GalaxyType` Erweitern von Variablen, die auf der rechten Seite, und klicken Sie dann auf der linken Seite, der das Schraubenschlüsselsymbol `theGalaxy.GalaxyType`. Sie sehen, dass `GalaxyType` enthält eine Eigenschaft `MyGType`, und legen Sie den Wert der Eigenschaft ist auf `Spiral`.
 
@@ -303,7 +303,7 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
 
     Betrachten den Code, durch einen Tippfehler im werden daraufhin die `case 'l'` Anweisung. Es muss `case 'I'`.
 
-1. Klicken Sie in den Code für `case 'l'`, und Ersetzen Sie ihn mit ' Case 'I'.
+1. Klicken Sie in den Code für `case 'l'` und ersetzen es durch `case 'I'`.
 
 1. Entfernen Sie den Haltepunkt, und klicken Sie dann auf die **Neustart** Schaltfläche, um die app neu starten.
 

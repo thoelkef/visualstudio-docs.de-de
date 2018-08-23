@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3fb68b4a84c6771c9430f2e8974ee485462b8563
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ea327f48bb1a1b04aa4b20601b8bdb3f7dfbb847
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945844"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634679"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren einer benutzerdefinierten SharePoint-Gestaltungsvorlage und einer Websiteseite mit Bild in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.  
@@ -39,7 +39,7 @@ ms.locfileid: "37945844"
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Die folgenden Komponenten zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie:  
   
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.  
   
 -   Visual Studio.  
   

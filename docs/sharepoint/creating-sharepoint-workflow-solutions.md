@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327319"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634721"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen und die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält auch die **SharePoint Customization Wizard**, um das Erstellen und Konfigurieren von Workflows.
 
- Die Liste der Voraussetzungen für das Erstellen von SharePoint-Projekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Produkten und-Technologien](http://go.microsoft.com/fwlink/?LinkId=178470).
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen und die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält auch die **SharePoint Customization Wizard**, um das Erstellen und Konfigurieren von Workflows.
+
+Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Produkten und-Technologien](http://go.microsoft.com/fwlink/?LinkId=178470).
 
 ## <a name="workflows-in-sharepoint"></a>Workflows in SharePoint
  Wenn Sie einen Workflow auf einer SharePoint-Bibliothek oder Liste hinzufügen, erzwingen Sie einen Geschäftsprozess für alle Elemente in der Bibliothek oder Liste aus. Ein Workflow beschreibt die Aktionen, die das System oder Benutzer, auf die einzelnen Elemente ausführen müssen, z. B. das Element, das bearbeitet werden, und klicken Sie dann überprüft senden. Diese Aktionen, die genannte *Aktivitäten*, sind die Bausteine des Workflows.

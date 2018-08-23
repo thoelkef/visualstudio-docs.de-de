@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118947"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627356"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität
   In dieser exemplarischen Vorgehensweise veranschaulicht, wie eine benutzerdefinierte Aktivität für eine Website-Ebene mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Workflowdokumentbibliothek auf Siteebene Workflows gelten für die gesamte Website, nicht nur eine Liste auf der Website.) Die benutzerdefinierte Aktivität wird eine Liste der Ankündigungen-Sicherung erstellt und kopiert dann den Inhalt dieser Liste hinein.  
@@ -48,7 +48,7 @@ ms.locfileid: "37118947"
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
   
 -   Visual Studio.  
   

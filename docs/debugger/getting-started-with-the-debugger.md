@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468727"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623796"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen Sie zum Debuggen mit Visual Studio
 
@@ -31,7 +31,7 @@ Dieser Artikel enthält die Funktionen von Visual Studio-Debugger in eine schrit
 |---------|---------|
 |  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) zum Debuggen, die ähnliche Schritte zeigt. |
 
-Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben.
+Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben. Um zwischen c# und C++-Beispielcode zu wechseln, verwenden Sie den Filter "Language" in der oberen rechten Ecke der Seite.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -324,7 +324,7 @@ In der Regel verwenden wir die Tastenkombinationen, da es sich um eine gute Mög
 
 ## <a name="navigate-code-using-run-to-click"></a>Navigieren Sie im Code mit Ausführung bis Klick
 
-5. Der Code-Editor einen Bildlauf nach unten, und zeigen Sie auf die `Console.WriteLine` Methode (`std::cout` in C++) in der `Triangle` Klasse, bis die grüne **Ausführung bis Klick** Schaltfläche ![Ausführung bis Klick] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") auf der linken Seite angezeigt wird.
+5. Der Code-Editor einen Bildlauf nach unten, und zeigen Sie auf die `Console.WriteLine` Methode (`std::cout` in C++) in der `Triangle` Klasse, bis die grüne **Ausführung bis Klick** Schaltfläche ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png " RunToClick") auf der linken Seite angezeigt wird.
 
      ![Verwenden Sie die Ausführung bis Klick Feature](../debugger/media/get-started-run-to-click.png "Ausführung bis Klick")
 
