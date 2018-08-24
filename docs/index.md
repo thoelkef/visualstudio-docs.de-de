@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio-Dokumentation | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
 ms.topic: hub-page
-ms.openlocfilehash: 13b3dbbc5c5307d7a98bfdf9bd8900436daee2b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 647220b0b2caa2efa99fb86cbca91cd78c59ab2d
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635183"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756235"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -145,7 +145,7 @@ Node.js</a>
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Sind Sie in Eile? Versuchen Sie es mit dem 5-minütigen Schnellstart</h3>
+                                                <h3>Versuchen Sie es mit dem 5-minütigen Schnellstart</h3>
                                                 <h4>Erstellen Sie „Hallo, Welt“ in der Programmiersprache Ihrer Wahl.</h4>
                                                  <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
                                                 <ul class="noBullet">
