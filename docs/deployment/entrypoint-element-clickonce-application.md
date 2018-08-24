@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 921c426fd406c7ed256a50674ac617a75d4c1115
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2188df700977fdb098b0af7faa4db1edd9f72e1d
+ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081578"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623871"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;EntryPoint&gt; -Element (ClickOnce-Anwendung)
 Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf einem Clientcomputer ausgeführt wird.  
@@ -33,8 +33,7 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
 ## <a name="syntax"></a>Syntax  
   
 ```xml  
-  
-      <entryPoint  
+<entryPoint  
    name  
 >  
    <assemblyIdentity  
