@@ -141,7 +141,7 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
   
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.  
   
-   ![Die Schaltfläche "Anwendungsdateien". ] (../vsto/media/installshield-applicationfiles.png "Schaltfläche der Anwendungsdateien.")  
+   ![Die Schaltfläche "Anwendungsdateien". ](../vsto/media/installshield-applicationfiles.png "Schaltfläche der Anwendungsdateien.")  
   
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.  
   
@@ -161,7 +161,7 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
   
    Die Seite **Anwendungsdateien** enthält jetzt die Projektausgabedatei, das Bereitstellungsmanifest und das Anwendungsmanifest, wie in der folgenden Abbildung veranschaulicht.  
   
-   ![Die Ausgabedateien des Setupprojekts verweist. ] (../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts verweist.")  
+   ![Die Ausgabedateien des Setupprojekts verweist. ](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts verweist.")  
   
   
 ## <a name="Configure"></a>Konfigurieren der abhängigen Komponenten als erforderliche Komponenten  
@@ -252,7 +252,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
   
 11. Wählen Sie auf der Seite **Verteilbare Komponente** des InstallShield-Projekts die Schaltfläche **Aktualisieren** aus, um die Liste der verteilbaren Komponenten zu aktualisieren, wie in der folgenden Abbildung veranschaulicht.  
   
-   ![Die Schaltfläche "Aktualisieren". ] (../vsto/media/installshield-refreshbutton.png "Die Schaltfläche \"Aktualisieren\".")  
+   ![Die Schaltfläche "Aktualisieren". ](../vsto/media/installshield-refreshbutton.png "Die Schaltfläche \"Aktualisieren\".")  
   
 12. Aktivieren Sie in der Liste der verteilbaren Komponenten das Kontrollkästchen. **Visual Studio 2010-Tools für Office-Laufzeit** .  
   
@@ -309,7 +309,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
   
 2. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsregistrierung** aus, wie in der folgenden Abbildung veranschaulicht.  
   
-   ![Die Schaltfläche "Anwendungsregistrierung". ] (../vsto/media/installshield-applicationregistry.gif "Der Anwendungsregistrierung-Schaltfläche.")  
+   ![Die Schaltfläche "Anwendungsregistrierung". ](../vsto/media/installshield-applicationregistry.gif "Der Anwendungsregistrierung-Schaltfläche.")  
   
    Die Seite **Anwendungsregistrierung** wird angezeigt.  
   
@@ -447,7 +447,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
   
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.  
   
-   ![Die Schaltfläche "Anwendungsdateien". ] (../vsto/media/installshield-applicationfiles.png "Schaltfläche der Anwendungsdateien.")  
+   ![Die Schaltfläche "Anwendungsdateien". ](../vsto/media/installshield-applicationfiles.png "Schaltfläche der Anwendungsdateien.")  
   
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.  
   
