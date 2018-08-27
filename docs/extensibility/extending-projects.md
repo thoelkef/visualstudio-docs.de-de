@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639125"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902818"
 ---
 # <a name="extend-projects"></a>Erweitern von Projekten
 Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressourcendateien in Einheiten für die Kompilierung und Bereitstellung bereit. Weitere Informationen zu in-Projekten finden Sie [Projekte (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Zu benutzerdefinierte Projekten implementiert werden, finden Sie unter [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Zu benutzerdefinierte Projekten implementiert werden, finden Sie unter [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  In die Themen in diesem Abschnitt wird beschrieben, wie zum Erstellen von benutzerdefinierter Projekten und verschiedene Arten von Visual Studio-Projektmappe zu verwalten.  
   

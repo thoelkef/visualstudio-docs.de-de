@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232256"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902398"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quellcodedateien und anderen Ressourcen zu organisieren. Projekte werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Quellcode bereitstellen und Verweise auf die Web Services, Datenbanken und andere Ressourcen erstellen.  
@@ -61,7 +61,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Sie müssen auch herunterladen, den Quellcode für die [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Extrahieren Sie die Datei an einem Speicherort, der mit der Lösung zugänglich ist, die zu erstellen.  
+ Sie müssen auch herunterladen, den Quellcode für die [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Extrahieren Sie die Datei an einem Speicherort, der mit der Lösung zugänglich ist, die zu erstellen.  
   
 ## <a name="create-a-basic-project-type"></a>Erstellen Sie ein einfaches Projekt  
  Erstellen Sie ein C#-VSIX-Projekt mit dem Namen **SimpleProject**. (**Datei** > **neue** > **Projekt** und dann **Visual C#-**  >   **Erweiterbarkeit** > **VSIX-Projekt**). Fügen Sie eine Visual Studio-Paket-Projektelementvorlage hinzu (auf der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**, navigieren Sie zu **Erweiterbarkeit** > **Visual Studio-Paket**). Nennen Sie die Datei *SimpleProjectPackage*.  
