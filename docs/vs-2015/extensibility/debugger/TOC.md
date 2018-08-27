@@ -1,10 +1,7 @@
 # [Visual Studio Debugger-Erweiterbarkeit](visual-studio-debugger-extensibility.md)
-# 
-  [Auswählen einer Implementierungsstrategie für die Debug-Engine](choosing-a-debug-engine-implementation-strategy.md)
-# 
-  [Erstellen einer benutzerdefinierten Debug-Engine](creating-a-custom-debug-engine.md)
-## 
-  [Registrieren einer benutzerdefinierten Debug-Engine](registering-a-custom-debug-engine.md)
+# [Auswählen einer Implementierungsstrategie für die Debug-Engine](choosing-a-debug-engine-implementation-strategy.md)
+# [Erstellen einer benutzerdefinierten Debug-Engine](creating-a-custom-debug-engine.md)
+## [Registrieren einer benutzerdefinierten Debug-Engine](registering-a-custom-debug-engine.md)
 ## [Aktivieren eines Programms für das Debuggen](enabling-a-program-to-be-debugged.md)
 ### [Abrufen eines Ports](getting-a-port.md)
 ### [Registrieren des Programms](registering-the-program.md)
@@ -35,16 +32,14 @@
 ### [Schrittausführung im Unterbrechungsmodus](stepping-in-break-mode.md)
 ### [Ausdrucksauswertung im Unterbrechungsmodus](expression-evaluation-in-break-mode.md)
 ### [Ausnahmebehandlung](exception-handling-visual-studio-sdk.md)
-## 
-  [Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine](how-to-debug-a-custom-debug-engine.md)
+## [Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine](how-to-debug-a-custom-debug-engine.md)
 # [Erste Schritte](getting-started-with-debugger-extensibility.md)
 ## [Roadmap für die Erweiterung des Debuggers](roadmap-for-extending-the-debugger.md)
 ## [Debuggerkomponenten](debugger-components.md)
 ### [Debuggen eines Pakets](debug-package.md)
 ### [Prozessbasierter Debug-Manager](process-debug-manager.md)
 ### [Sitzungsbasierter Debug-Manager](session-debug-manager.md)
-### 
-  [Debug-Engine](debug-engine.md)
+### [Debug-Engine](debug-engine.md)
 ### [Betriebsmodi](operational-modes.md)
 ### [Ausdrucksauswertung](expression-evaluator.md)
 ### [Symbolanbieter](symbol-provider.md)
