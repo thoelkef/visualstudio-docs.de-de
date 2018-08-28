@@ -1,5 +1,5 @@
 ---
-title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO-Struktur | Microsoft Docs
+title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52e231484b48bf2741281644c746b448fd6f657b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 08/27/2018
 ms.locfileid: "24734030"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>PROFILER_HEAP_OBJECT_OPTIONAL_INFO-Struktur
@@ -32,14 +32,14 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 |Member|Typ|Beschreibung|  
 |------------|----------|-----------------|  
-|Infotyp|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE-Enumeration](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Der Typ von optionalen Informationen.|  
-|Prototyp|[PROFILER_HEAP_OBJECT_ID-Typ](../../winscript/reference/profiler-heap-object-id-type.md)|Die ID der das heapobjekt Prototype-Objekt.|  
+|Informationsart|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE-Enumeration](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Der Typ der optionale Informationen.|  
+|Prototyp|[PROFILER_HEAP_OBJECT_ID-Typ](../../winscript/reference/profiler-heap-object-id-type.md)|Die ID des das heapobjekt Prototype-Objekt.|  
 |functionName|LPCWSTR|Das heapobjekt Funktionsname.|  
-|elementAttributesSize|UINT|Die Größe der Attribute für das heapobjekt-Elements.|  
+|elementAttributesSize|UINT|Die Größe des die Attribute des Heapobjekts-Element.|  
 |elementTextChildrenSize|UINT|Die Größe der untergeordneten Elemente des Heapobjekts-Text.|  
 |Bereichsliste|[PROFILER_HEAP_OBJECT_SCOPE_LIST-Struktur](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Das heapobjekt Bereichsliste.|  
-|internalProperty|[PROFILER_HEAP_OBJECT_RELATIONSHIP-Struktur](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Das heapobjekt interne Eigenschaft.|  
-|namePropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Eigenschaften von das heapobjekt.|  
-|indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Indexeigenschaften des Heapobjekts.|  
-|relationshipList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Übersicht über das heapobjekt Beziehungen.|  
-|eventList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Ereignisse den heapobjekt.|
+|internalProperty|[PROFILER_HEAP_OBJECT_RELATIONSHIP-Struktur](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Das heapobjekt interne Eigenschaften.|  
+|namePropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Eigenschaften des Heapobjekts.|  
+|indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Eigenschaften des Heapobjekts.|  
+|relationshipList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Beziehungen für das heapobjekt.|  
+|eventList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST-Struktur](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Eine Liste der Ereignisse die heapobjekt.|
