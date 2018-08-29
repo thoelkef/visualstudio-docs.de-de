@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: b499802d9cb381ec29bc447fdeb9b382e0e2e470
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99225fc59211dd84af533e5c6825f429daf7ad3e
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280225"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139031"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017-Komponentenverzeichnis
 
@@ -59,16 +59,7 @@ Komponenten-ID | name | Version
 --- | --- | ---
 n/v | n/v | n/v
 
-## <a name="get-support"></a>Support aufrufen
-
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Hier sind einige weitere Supportoptionen:
-
-* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
