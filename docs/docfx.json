@@ -73,7 +73,6 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.de-de",
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
-      "bilingual_type": "hover over",
       "extendBreadcrumb": "true",
       "ROBOTS": "INDEX,FOLLOW",
       "author": "erickson-doug",
