@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054571"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138942"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Erste Schritte mit Kubernetes-Tools für Visual Studio
 
-Die Visual Studio-Kubernetes-Tools vereinfachen die Entwicklung von Anwendungen in Containern für Kubernetes. Visual Studio kann die Konfiguration als Code erforderlichen Dateien für Kubernetes-Bereitstellung, z. B. dockerfile-Dateien und Helm-Diagrammen unterstützen automatisch erstellen. Darüber hinaus können Sie direkt mit einem Azure Kubernetes Service (AKS)-Cluster aus Visual Studio veröffentlichen.
+Die Visual Studio-Kubernetes-Tools vereinfachen die Entwicklung von Anwendungen in Containern für Kubernetes. Visual Studio kann die Konfiguration als Code erforderlichen Dateien für Kubernetes-Bereitstellung, z. B. dockerfile-Dateien und Helm-Diagrammen unterstützen automatisch erstellen. Sie können Debuggen Ihres Codes in einem aktiven Azure Kubernetes Service (AKS)-Cluster mithilfe von Azure-Dev-Speicherplätzen oder direkt in einem AKS-Cluster aus veröffentlichen in Visual Studio.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -28,7 +28,7 @@ Um diese neue Funktionalität nutzen zu können, benötigen Sie Folgendes:
 
 - Die [Kubernetes-Tools für Visual Studio](https://aka.ms/get-vsk8stools), als separater Download zur Verfügung.
 
-- [Docker für Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) auf Ihrer Entwicklungsarbeitsstation installiert (d. h., in denen Sie Visual Studio ausführen)
+- [Docker für Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) auf Ihrer Entwicklungsarbeitsstation installiert (d. h., in denen Sie Visual Studio ausführen), wenn Sie Docker-Images erstellen möchten, lokal ausgeführte Docker-Containern zu debuggen oder Veröffentlichen von AKS.
 
 - Wenn Sie in AKS in Visual Studio zu veröffentlichen möchten:
 
@@ -74,7 +74,7 @@ Die hinzugefügten Dateien sind:
 
 - ein Helm-Diagramm und eine *Diagramme* Ordner. Diese Yaml-Dateien bilden zusammen das Helm-Diagramm für die Anwendung, die Sie verwenden können, um in Kubernetes bereitgestellt. Weitere Informationen zum Helm, finden Sie unter [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Enthält Einstellungen für Azure Dev Leerzeichen, einen neuen Dienst, der eine schnelle, iterative Debugleistung in Azure Kubernetes Service bereitstellt. Diese Datei wird derzeit nicht verwendet, jedoch ist Azure Dev Leerzeichen für die zukünftige Verwendung reserviert.
+- *azds.yaml*. Enthält Einstellungen für Azure Dev Leerzeichen, die eine schnelle, iterative Debugleistung in Azure Kubernetes Service bereitstellt. Weitere Informationen finden Sie [der Dokumentation zu Azure Dev Leerzeichen](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Veröffentlichen Sie in Azure Kubernetes Service (AKS)
 
