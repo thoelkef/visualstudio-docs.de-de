@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978423"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627072"
 ---
 # <a name="model-editor"></a>Modell-Editor
 
@@ -48,14 +48,14 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihrem Visual Studio-Projekt ein 3D
 
    ![Dialogfeld „Neues Element hinzufügen“ mit aktivierter 3D-Szene](media/add-new-3d-scene.png)
 
-3. Geben Sie den **Namen** der Modelldatei ein, und klicken Sie auf **Hinzufügen**.
+   > [!NOTE]
+   > Wenn im Dialogfeld **Neues Element hinzufügen** nicht die Kategorie **Grafiken** angezeigt wird, müssen Sie möglicherweise die Komponente **Bild- und 3D-Modell-Editoren** installieren. Schließen Sie den Dialog, und klicken Sie in der Menüleiste auf **Extras** > **Get Tools and Features** (Extras und Features abrufen), um den **Visual Studio-Installer** herunterzuladen. Klicken Sie erst auf die Registerkarte **Einzelne Komponenten** und dann unter der Kategorie **Spiele und Grafiken** auf die Komponente **Bild- und 3D-Modell-Editoren**. Klicken Sie auf **Ändern**.
+   >
+   > ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
+   >
+   > Möglicherweise ist die Komponente **Bild- und 3D-Modell-Editoren** zwar installiert, jedoch wird die Vorlagenkategorie **Grafiken** trotzdem nicht angezeigt. Beachten Sie in diesem Fall, dass diese Kategorie nur für bestimmte Projekttypen wie Konsolenanwendungen angezeigt wird.
 
-> [!NOTE]
-> Wenn im Dialogfeld **Neues Element hinzufügen** nicht die Kategorie **Grafiken** angezeigt wird, müssen Sie möglicherweise die Komponente **Bild- und 3D-Modell-Editoren** installieren. Schließen Sie den Dialog, und klicken Sie in der Menüleiste auf **Extras** > **Get Tools and Features** (Extras und Features abrufen), um den **Visual Studio-Installer** herunterzuladen. Klicken Sie erst auf die Registerkarte **Einzelne Komponenten** und dann unter der Kategorie **Spiele und Grafiken** auf die Komponente **Bild- und 3D-Modell-Editoren**. Klicken Sie auf **Ändern**.
->
-> ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
->
-> Möglicherweise ist die Komponente **Bild- und 3D-Modell-Editoren** zwar installiert, jedoch wird die Vorlagenkategorie **Grafiken** trotzdem nicht angezeigt. Beachten Sie in diesem Fall, dass diese Kategorie nur für bestimmte Projekttypen wie Konsolenanwendungen angezeigt wird.
+3. Geben Sie den **Namen** der Modelldatei ein, und klicken Sie auf **Hinzufügen**.
 
 ### <a name="axis-orientation"></a>Achsenausrichtung
 
@@ -101,8 +101,7 @@ In dieser Tabelle werden die Elemente der Symbolleiste **Model Editor Mode** (Mo
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Dokumentgliederung**|Zeigt das Fenster **Dokumentgliederung** entweder an oder blendet es aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> 
-  **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Model-Editor-Entwurfsoberfläche.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Model-Editors.<br /><br /> **Szenenverwaltung**<br /><br /> **Importieren**<br /> Importiert Objekte aus einer anderen 3D-Modelldatei in die aktuelle Szene.<br /><br /> **Attach to Parent** (Übergeordnetes Element festlegen)<br /> Definiert das erste mehrerer ausgewählter Objekte als übergeordnetes Element der verbleibenden ausgewählten Objekte.<br /><br /> **Detach from Parent** (Übergeordnetes Element entfernen)<br /> Trennt das ausgewählte Objekt von seinem übergeordneten Element. Das ausgewählte Objekt wird zu einem *Stammobjekt* in der Szene. Ein Stammobjekt verfügt über kein übergeordnetes Objekt.<br /><br /> **Gruppe erstellen**<br /> Gruppiert die ausgewählten Objekte als gleichgeordnete Objekte.<br /><br /> **Objekte zusammenführen**<br /> Kombiniert die ausgewählten Objekte in einem Objekt.<br /><br /> **Create New Object From Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen)<br /> Entfernt die ausgewählten Oberflächen aus dem aktuellen Objekt und fügt der Szene ein neues Objekt hinzu, das die entsprechenden Oberflächen enthält.<br /><br /> **Extras**<br /><br /> **Polygonwicklung spiegeln**<br /> Kippt die ausgewählten Polygone in der Weise, dass ihre Wicklungsreihenfolgen und Oberflächennormale umgekehrt werden.<br /><br /> **Alle Animationen entfernen**<br /> Entfernt Animationsdaten aus den Objekten.<br /><br /> **Triangulieren**<br /> Konvertiert das ausgewählte Objekt in Dreiecke.<br /><br /> **Ansicht**<br /><br /> Backface Culling<br /> Aktiviert oder deaktiviert Backface Culling.<br /><br /> **Bildfrequenz**<br /> Zeigt in der rechten oberen Ecke der Entwurfsoberfläche die Einzelbildrate an. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.<br /><br /> Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.<br /><br /> **Alle anzeigen**<br /> Zeigt alle Objekte in der Szene an. Dadurch wird die Eigenschaft **Ausgeblendet** für jedes Objekt auf **FALSE** zurückgesetzt.<br /><br /> **Show Face Normals** (Flächennormale anzeigen)<br /> Zeigt die Normale jeder einzelnen Fläche an.<br /><br /> **Show Missing Materials** (Fehlende Materialien anzeigen)<br /> Zeigt auf Objekten, denen kein Material zugewiesen wurde, eine spezielle Textur an.<br /><br /> **Pivot anzeigen**<br /> Aktiviert oder deaktiviert das Anzeigen eines 3D-Achsenmarkers am Pivotpunkt der aktiven Auswahl.<br /><br /> **Show Placeholder Nodes** (Platzhalterknoten anzeigen)<br /> Platzhalterknoten anzeigen Ein Platzhalterknoten wird erstellt, wenn Sie Objekte gruppieren.<br /><br /> **Show Vertex Normals** (Vertexnormale anzeigen)<br /> Zeigt die Normale jedes Vertex an. **Tipp**: Sie können auf die Schaltfläche **Skripts** klicken, um das letzte Skript erneut auszuführen.|
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Model-Editor-Entwurfsoberfläche.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Model-Editors.<br /><br /> **Szenenverwaltung**<br /><br /> **Importieren**<br /> Importiert Objekte aus einer anderen 3D-Modelldatei in die aktuelle Szene.<br /><br /> **Attach to Parent** (Übergeordnetes Element festlegen)<br /> Definiert das erste mehrerer ausgewählter Objekte als übergeordnetes Element der verbleibenden ausgewählten Objekte.<br /><br /> **Detach from Parent** (Übergeordnetes Element entfernen)<br /> Trennt das ausgewählte Objekt von seinem übergeordneten Element. Das ausgewählte Objekt wird zu einem *Stammobjekt* in der Szene. Ein Stammobjekt verfügt über kein übergeordnetes Objekt.<br /><br /> **Gruppe erstellen**<br /> Gruppiert die ausgewählten Objekte als gleichgeordnete Objekte.<br /><br /> **Objekte zusammenführen**<br /> Kombiniert die ausgewählten Objekte in einem Objekt.<br /><br /> **Create New Object From Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen)<br /> Entfernt die ausgewählten Oberflächen aus dem aktuellen Objekt und fügt der Szene ein neues Objekt hinzu, das die entsprechenden Oberflächen enthält.<br /><br /> **Extras**<br /><br /> **Polygonwicklung spiegeln**<br /> Kippt die ausgewählten Polygone in der Weise, dass ihre Wicklungsreihenfolgen und Oberflächennormale umgekehrt werden.<br /><br /> **Alle Animationen entfernen**<br /> Entfernt Animationsdaten aus den Objekten.<br /><br /> **Triangulieren**<br /> Konvertiert das ausgewählte Objekt in Dreiecke.<br /><br /> **Ansicht**<br /><br /> Backface Culling<br /> Aktiviert oder deaktiviert Backface Culling.<br /><br /> **Bildfrequenz**<br /> Zeigt in der rechten oberen Ecke der Entwurfsoberfläche die Einzelbildrate an. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.<br /><br /> Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.<br /><br /> **Alle anzeigen**<br /> Zeigt alle Objekte in der Szene an. Dadurch wird die Eigenschaft **Ausgeblendet** für jedes Objekt auf **FALSE** zurückgesetzt.<br /><br /> **Show Face Normals** (Flächennormale anzeigen)<br /> Zeigt die Normale jeder einzelnen Fläche an.<br /><br /> **Show Missing Materials** (Fehlende Materialien anzeigen)<br /> Zeigt auf Objekten, denen kein Material zugewiesen wurde, eine spezielle Textur an.<br /><br /> **Pivot anzeigen**<br /> Aktiviert oder deaktiviert das Anzeigen eines 3D-Achsenmarkers am Pivotpunkt der aktiven Auswahl.<br /><br /> **Show Placeholder Nodes** (Platzhalterknoten anzeigen)<br /> Platzhalterknoten anzeigen Ein Platzhalterknoten wird erstellt, wenn Sie Objekte gruppieren.<br /><br /> **Show Vertex Normals** (Vertexnormale anzeigen)<br /> Zeigt die Normale jedes Vertex an. **Tipp**: Sie können auf die Schaltfläche **Skripts** klicken, um das letzte Skript erneut auszuführen.|
 
 Die Symbolleiste **Model Editor** (Modell-Editor):
 
@@ -299,8 +298,8 @@ Wenn Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekte
 |Verkleinern|**Mausrad rückwärts**<br /><br /> **STRG**+**Mausrad rückwärts**<br /><br /> **UMSCHALTTASTE**+**Mausrad rückwärts**<br /><br /> **STRG**+**PageDown**<br /><br /> Minuszeichen (**-**)|
 |Die Kamera nach oben schwenken|**BildAb**|
 |Die Kamera nach unten schwenken|**BildAuf**|
-|Die Kamera nach links schwenken|**Mausrad links**<br /><br /> **STRG**+**PageDown**|
-|Die Kamera nach rechts schwenken|**Mausrad rechts**<br /><br /> **STRG**+**PageDown**|
+|Die Kamera nach links schwenken|**Mausrad links**<br /><br /> **STRG**+**BildAb**|
+|Die Kamera nach rechts schwenken|**Mausrad rechts**<br /><br /> **STRG**+**BildAb**|
 |Oberseite des Modells anzeigen|**STRG**+**L**, **STRG**+**T**<br /><br /> **T**|
 |Unterseite des Modells anzeigen|**STRG**+**L**, **STRG**+**U**|
 |Linke Seite des Modells anzeigen|**STRG**+**L**, **STRG**+**L**|

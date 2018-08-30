@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468776"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626633"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -84,7 +84,7 @@ Mit Visual Studio können Sie die Komplexität eines Projekts handhaben, währen
 
 Projekt- und Elementvorlagen automatisieren die Einrichtung unterschiedlicher Arten von Projekten und Dateien. Dadurch sparen Sie wertvolle Zeit und müssen komplizierte und fehleranfällige Details nicht mehr verwalten. Visual Studio stellt Vorlagen für Web-, Azure-, Data Science-, Konsolen- und andere Arten von Projekten bereit. Zudem gibt es Vorlagen für Dateien, wie Python-Klassen, Komponententests, Azure-Webkonfigurationen, HTML und sogar Django-Apps.
 
-[![Projekt- und Elementvorlagen für Python in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Projekt- und Elementvorlagen für Python in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Weitere Informationen finden Sie unter: 
 
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter:
 
 Mit der Profilerstellung wird untersucht, wie Zeit innerhalb der Anwendung aufgewendet wird. Visual Studio unterstützt die Profilerstellung mit CPython-basierten Interpretern und bietet die Möglichkeit, die Leistung zwischen verschiedenen Profilerstellungen zu vergleichen.
 
-[![Visual Studio-Profiler-Ergebnisse für ein Python-Projekt](media/profiling-results.png)](media/profiling-results.png)
+[![Visual Studio-Profiler-Ergebnisse für ein Python-Projekt](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Weitere Informationen finden Sie unter: 
 

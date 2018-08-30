@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 6'
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Features der Vorlage „Fragt ein Django-Webprojekt ab“, wie z.B. die administrative Anpassung.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388214"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626631"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“
 
@@ -37,7 +37,7 @@ Ein mit dieser Vorlage erstelltes Projekt ähnelt dem Ergebnis, das Sie erzielen
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Schritt 6-1: Erstellen des Projekts und Initialisieren der Datenbank
 
-1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningDjango**, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
+1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningDjango**, die Sie in diesem Tutorial bereits erstellt haben. Klicken Sie anschließend auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
 1. Suchen Sie im Dialogfeld „Neues Projekt“ die Vorlage **Fragt ein Django-Webprojekt ab**, und wählen Sie sie aus. Nennen Sie das Projekt „DjangoPolls“, und klicken Sie auf **OK**.
 
@@ -47,7 +47,7 @@ Ein mit dieser Vorlage erstelltes Projekt ähnelt dem Ergebnis, das Sie erzielen
 
 1. Legen Sie das Projekt **DjangoPolls** als Standardprojekt für die Visual Studio-Projektmappe fest. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Set as Startup Project** (Als Startprojekt festlegen) aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
 
-1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debugging starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
+1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
 
     ![Symbolleisten-Schaltfläche „Webserver ausführen“ in Visual Studio](media/django/run-web-server-toolbar-button.png)
 

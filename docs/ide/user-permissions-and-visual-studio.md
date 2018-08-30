@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844390"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627314"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -34,7 +34,6 @@ Sie können fast jeden Vorgang in der Visual Studio-IDE als normaler Benutzer du
 |----------|----------|--------------------------|
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../ide/install-and-manage-local-content.md)|
-|Anwendungstypen|Entwickeln von Lösungen für SharePoint.|[Anforderungen für die Entwicklung von SharePoint-Projektmappen](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|
 |Erstellung|Verwenden von Postbuildereignissen, die eine Komponente registrieren.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Einschließen eines Registrierungsschritts beim Erstellen von C++-Projekten.||
