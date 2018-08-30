@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978410"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901484"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -219,6 +219,7 @@ Testlaufparameter bieten eine Möglichkeit zum Definieren von Variablen und Wert
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 Fügen Sie Ihrer Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld und eine öffentliche <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Eigenschaft hinzu, um Testlaufparameter zu verwenden.
@@ -234,7 +235,7 @@ Fügen Sie Ihrer Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die über das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> -Attribut verfügen.
