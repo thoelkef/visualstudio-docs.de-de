@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 70147dac62ad0aaa59a1c6823b321afe54b2d3a7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280441"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139123"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -34,6 +34,8 @@ Es gibt drei Optionen, Zertifikate in einer Offlineumgebung zu installieren oder
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Option 1: Manuelles Installieren von Zertifikaten aus einem Layoutordner
 
 Wenn Sie ein Netzwerklayout erstellen, werden die erforderlichen Zertifikate in den Ordner „Zertifikate“ heruntergeladen. Sie können die Zertifikate manuell installieren, indem Sie auf die Zertifikatdateien doppelklicken und anschließend den Zertifikat-Manager-Assistenten durchlaufen. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.
+
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2: Verteilen von vertrauenswürdigen Stammzertifikaten in einer Unternehmensumgebung
 
@@ -60,6 +62,15 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   **Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
 
 3. Stellen Sie die Batchdatei für den Client bereit. Dieser Befehl sollte in einem erhöhten Prozess ausgeführt werden.
 
@@ -82,6 +93,8 @@ Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein St
         * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
     * Ein Stammzertifikat: **Microsoft Root Certificate Authority**
         * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
+
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Warum werden die Zertifikate aus dem Ordner „Zertifikate“ nicht automatisch installiert?
 
@@ -113,16 +126,7 @@ Wenn sich die Zertifikatnamen nicht in der Spalte **Ausgestellt für** befinden,
 
 Nach der Installation der Zertifikate kann die Bereitstellung von Visual Studio mithilfe der Anweisungen aus dem Abschnitt [Bereitstellen über eine Netzwerkinstallation](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) der Seite „Erstellen einer Netzwerkinstallation von Visual Studio“ fortgesetzt werden.
 
-## <a name="get-support"></a>Support aufrufen
-
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Hier sind einige weitere Supportoptionen:
-
-* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
