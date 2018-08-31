@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945805"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225047"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Regelsatz für systemeigene Mindestregeln
 Die Native Microsoft-Mindestregeln konzentrieren sich auf die kritischsten Probleme in Ihrem nativen Code, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.
@@ -81,6 +81,12 @@ Die Native Microsoft-Mindestregeln konzentrieren sich auf die kritischsten Probl
 |[C6704](../code-quality/c6704.md)|Unerwarteter Ausdrucksfehler der Anmerkung|
 |[C6705](../code-quality/c6705.md)|Erwartete Anzahl von Argumenten für die Anmerkung stimmt nicht mit tatsächlicher Anzahl von Argumenten für die Anmerkung überein|
 |[C6706](../code-quality/c6706.md)|Unerwarteter Anmerkungsfehler für Anmerkung|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.|
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
