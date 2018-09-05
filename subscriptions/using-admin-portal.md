@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie mithilfe des Administratorportals die Visual 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380817"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289428"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Verwenden des Administratorportals für Visual Studio-Abonnements
 
@@ -68,9 +68,11 @@ Sobald Sie Abonnements zugewiesen haben, erhalten Sie auf der Registerkarte „A
 - Ein optionales Feld für eine weitere E-Mail-Adresse, die zur E-Mail-Kommunikation, aber nicht zum Einloggen genutzt wird 
 
 Auf dieser Seite können Sie links zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen.
-    ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Grundlegendes zur Seite „Details“
 Weitere Informationen zu der Vereinbarung, die Ihnen gerade angezeigt wird, erhalten Sie auf der Registerkarte „Details“. Dort werden Vereinbarungsstatus, Einkaufskonto, Organisationsdetails, primäre Ansprechpartner (VLSC), Superadministratoren (falls vorhanden) und andere relevante Informationen angezeigt.
-    ![Details-Seite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Details-Seite des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/details-page.png)
 

@@ -2,16 +2,16 @@
 title: Melden eines Problems mit Visual Studio für Mac
 description: Erfahren Sie, wie Sie in Visual Studio für Mac Vorschläge machen oder Probleme melden.
 ms.topic: troubleshooting
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2bf296c54ff4978195427f86d1a59f64300650df
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884146"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224108"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Vorgehensweise: Melden eines Problems mit Visual Studio für Mac
 

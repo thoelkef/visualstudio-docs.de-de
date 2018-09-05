@@ -1,17 +1,17 @@
 ---
 title: Erweitern von Visual Studio für Mac
 description: Die Funktionen von Visual Studio für Mac können mit Modulen erweitert werden, die Erweiterungspakete genannt werden. Der erste Teil dieser Anleitung erstellt ein einfaches Erweiterungspaket für Visual Studio für Mac, um das Datum und die Uhrzeit in ein Dokument einzufügen. Der zweite Teil dieser Anleitung erläutert die Grundlagen des Erweiterungspaketsystems und einige der wichtigsten APIs, die die Grundlage von Visual Studio für Mac bilden.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178259"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224961"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -56,7 +56,7 @@ Zudem werden die entsprechenden `assembly:AddinDependency `-Attribute zum Zeitpu
 
 ## <a name="extensions-and-extension-points"></a>Erweiterungen und Erweiterungspunkte
 
-Ein Erweiterungspunkt ist ein Platzhalter, der eine Datenstruktur (einen Typ) definiert, während eine Erweiterung Daten definiert, die einer Struktur entsprechen, die durch einen bestimmten Erweiterungspunkt festgelegt wird. Erweiterungspunkte geben an, welchen Typ von Erweiterung sie in ihrer Deklaration akzeptieren können. Erweiterungen werden mithilfe von Namen oder Erweiterungspfaden deklariert. Eine tiefer greifende Erklärung dazu, wie Sie den Erweiterungspunkt erstellen, den Sie benötigen, finden Sie in der [Referenz zu Erweiterungspunkten](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots).
+Ein Erweiterungspunkt ist ein Platzhalter, der eine Datenstruktur (einen Typ) definiert, während eine Erweiterung Daten definiert, die einer Struktur entsprechen, die durch einen bestimmten Erweiterungspunkt festgelegt wird. Erweiterungspunkte geben an, welchen Typ von Erweiterung sie in ihrer Deklaration akzeptieren können. Erweiterungen werden mithilfe von Namen oder Erweiterungspfaden deklariert. Eine tiefer greifende Erklärung dazu, wie Sie den Erweiterungspunkt erstellen, den Sie benötigen, finden Sie in der [Referenz zu Erweiterungspunkten](https://github.com/mono/mono-addins/wiki/Extension-Points).
 
 Durch die Erweiterung/Erweiterungspunkt-Architektur bleibt die Entwicklung von Visual Studio für Mac schnell und modular. 
 
