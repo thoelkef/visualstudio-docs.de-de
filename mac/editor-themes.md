@@ -1,16 +1,16 @@
 ---
 title: Editor-Designs
 description: In diesem Artikel wird beschrieben, wie Sie in Visual Studio für Mac das Editor-Design ändern oder ein neues Design hinzufügen.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 88af989cce4a57fcd5f7a8a13173e8aad80d987b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fec4574153ec96ad48f550ee9f7a45c88fb70ef8
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865018"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224322"
 ---
 # <a name="editor-themes"></a>Editor-Designs
 Editor-Designs können in alle der 10 Farbschemas geändert werden, die standardmäßig in Visual Studio für Mac über **Visual Studio > Einstellungen... > Text-Editor > Farbdesigns** bereitgestellt werden:

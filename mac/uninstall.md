@@ -1,17 +1,17 @@
 ---
 title: Deinstallieren von Visual Studio für Mac
 description: Anleitung zum Deinstallieren von Visual Studio für Mac und dazugehörigen Tools
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: dcd305cd7cb3759483c79b75629a688d852f7c7a
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 2c74cf7ddd78bee538a3d37d7e4c4daa4556e3c9
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433199"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223981"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
 
@@ -21,7 +21,7 @@ Sie können dieses Handbuch verwenden, um jedes Produkt einzeln zu deinstalliere
 
 Wenn Sie zuvor bereits Xamarin Studio auf Ihrem Computer installiert hatten, müssen Sie außer den nachfolgenden Schritten möglicherweise auch die Anleitung im [Deinstallationshandbuch für Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) ausführen.
 
-## <a name="uninstall-script"></a>Deinstallationsskript
+## <a name="uninstall-script"></a>Deinstallieren des Skripts
 
 Es gibt zwei Skripts, die verwendet werden können, um Visual Studio für Mac und alle Komponenten von Ihrem Computer zu deinstallieren:
 
