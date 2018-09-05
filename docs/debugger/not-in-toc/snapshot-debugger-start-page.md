@@ -10,23 +10,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "39310112"
 ---
-# Erste Schritte mit dem Momentaufnahmedebugger
+# <a name="getting-started-with-the-snapshot-debugger"></a>Erste Schritte mit dem Momentaufnahmedebugger
 
 Die Snapshot-Debugger von Visual Studio ist jetzt mit Ihrem Dienst verbunden, und Sie können beginnen, das Sammeln von Momentaufnahmen, die beim Debuggen hilfreich sein.
 
 Um die Snapshot-Debugger verwenden, legen Sie einige fangpunkte in Ihrem Code, klicken Sie auf die Schaltfläche, um zu beginnen, Erfassen von Momentaufnahmen, und führen Sie dann Ihr Szenario. Wenn der code führt in der Sie einen andockpunkt festgelegt haben, wird eine Momentaufnahme Ihrer Anwendung erstellt. Öffnen Sie dann die Momentaufnahme, indem Sie darauf klicken, in Visual Studio im Fenster "Diagnosetools". Sie können nun die Momentaufnahme von Ihrem Dienst debuggen, genau wie lokale war. Lesen Sie ausführliche Informationen erhalten Sie auf Weiter.
 
-## Erfassen und Anzeigen von Momentaufnahmen
+## <a name="collect-and-view-snapshots"></a>Erfassen und Anzeigen von Momentaufnahmen
 
 Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnahmen sind wie Bilder von Ihrem Application zu einem bestimmten Zeitpunkt. Sie mitteilen Visual Studio, wann und wo eine Momentaufnahme erfasst wird, indem Sie einen andockpunkt in Code festlegen. In der andockpunkt legen Sie die Bedingungen, die Sie benötigen, um sicherzustellen, dass Sie eine Momentaufnahme des Problems zu erhalten, die Sie untersuchen.
 
-### Legen Sie einen Andockpunkt
+### <a name="set-a-snappoint"></a>Legen Sie einen Andockpunkt
 
 1. Klicken Sie im linken Bundsteg neben einer Codezeile, die Sie interessieren, um einen andockpunkt festgelegt sind, im Code-Editor. Stellen Sie sicher, dass es sich um Code handelt, die Sie kennen ausgeführt wird. 
 
@@ -36,7 +36,7 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
 2. Klicken Sie auf **Sammlung starten** um die andockpunkt zu aktivieren.
 
-### Öffnen Sie eine Momentaufnahme
+### <a name="open-a-snapshot"></a>Öffnen Sie eine Momentaufnahme
 
 1. Wenn die andockpunkt erreicht wird, wird eine Momentaufnahme im Fenster "Diagnosetools" auf der rechten Seite angezeigt. Wenn das Fenster geöffnet wird, können Sie es öffnen, indem Sie auswählen **Debuggen** > **Windows** > **Diagnosetools anzeigen**. 
 
@@ -44,13 +44,13 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
 2. Doppelklicken Sie auf die Momentaufnahme, um ihn zu öffnen.
 
-### Überprüfen von momentaufnahmedaten
+### <a name="inspect-snapshot-data"></a>Überprüfen von momentaufnahmedaten
 
 In dieser Ansicht können Sie auf Variablen DataTips anzuzeigen, verwenden Sie die lokalen Variablen, Überwachungselemente, und rufen Sie zeigen, Aufrufliste und auch Auswerten von Ausdrücken.
 
 Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Standardmäßig wird nur eine Momentaufnahme pro andockpunkt erfasst. Nachdem eine Momentaufnahme erfasst wurde, wird der andockpunkt, also deaktiviert. Wenn Sie eine andere Momentaufnahme an die andockpunkt erfassen möchten, können Sie die andockpunkt wieder aktivieren, indem Sie auf **Upgradesammlung**.
 
-### Legen Sie eine Protokollpunkt
+### <a name="set-a-logpoint"></a>Legen Sie eine Protokollpunkt
 
 1. Mit der rechten Maustaste ein andockpunkt-Symbol (Lila Sechseck), und wählen Sie **Einstellungen**.
 
@@ -64,11 +64,11 @@ Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Standar
 
     Auf Wunsch **an Anwendungsprotokoll senden**, die Meldung angezeigt, dass Sie Meldungen anzuzeigen, können an einer beliebigen Stelle wird `System.Diagnostics.Trace` (oder `ILogger` in .NET Core), z. B. Application Insights, wenn die protokollpunkt erreicht wird.
 
-## Weitere Informationen
+## <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen zum Debugger für Momentaufnahmen finden Sie auf die [Dokumentationsseite](../debug-live-azure-applications.md). Weitere Informationen finden Sie Informationen zum Festlegen von Bedingungen zu erleichtern, Fehler zu finden.
 
-## Nicht "anzeigen
+## <a name="dont-show-me-this-again"></a>Nicht "anzeigen
 
 Um nie wieder die Snapshot-Debugger-Startseite anzuzeigen für die Verbindung der Snapshot-Debugger, ändern Sie die **"Erste Schritte" die Seite beim sitzungsstart anzeigen** option **Tools**  >   **Optionen** > **Momentaufnahmedebugger**. 
 
