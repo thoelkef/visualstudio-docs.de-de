@@ -1,5 +1,5 @@
 ---
-title: Office-Entwicklungsbeispiele | Microsoft Docs
+title: Office-Entwicklungsbeispiele
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571416"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672744"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungsbeispiele
   Visual Studio enthält Beispielanwendungen, die veranschaulichen, wie die Microsoft Office Developer Tools verwendet werden, um Office-Projektmappen zu erstellen. Im Code dieser Beispiele werden die Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen veranschaulicht.  
   
- Die aktuellen Beispiele finden Sie unter [MSDN-Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
+ Die aktuellen Beispiele finden Sie unter [Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +44,7 @@ ms.locfileid: "34571416"
 |Beispiel für VBA- und VSTO-Interoperabilität|Veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Excel in VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird.<br /><br /> Das Beispiel steht nur online zur Verfügung.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSDN-Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
+ [Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)  
   
   

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326864"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774915"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio
 
@@ -134,7 +134,7 @@ Die folgenden Verfahren wird beschrieben, wie Einträge in die vsixmanifest-Date
 
 6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für Ihre Projektvorlage oder Elementvorlage-Projekt, und wählen Sie dann **Projekt entladen**.
 
-7.  Öffnen Sie erneut das Kontextmenü für den Projektknoten, und wählen Sie dann **bearbeiten***NameIhresVorlagenprojekts***csproj** oder **bearbeiten***NameIhresVorlagenprojekts***. VBPROJ**.
+7.  Öffnen Sie erneut das Kontextmenü für den Projektknoten, und wählen Sie dann **bearbeiten**_NameIhresVorlagenprojekts_**csproj** oder **bearbeiten**  _NameIhresVorlagenprojekts_**vbproj**.
 
 8.  Suchen Sie das folgende `VSTemplate`-Element in der Projektdatei.
 

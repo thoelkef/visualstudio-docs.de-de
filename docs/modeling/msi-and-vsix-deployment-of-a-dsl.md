@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566537"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774777"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muss bereits auf dem Zielcomputer installiert sein.
@@ -36,7 +36,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
     1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **DslPackage** Projekt, und klicken Sie dann auf **Ordner in Windows Explorer öffnen**.
 
-    2.  Suchen Sie die Datei **Bin\\\*\\***IhrProjekt***. DslPackage.vsix**
+    2.  Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**. DslPackage.vsix**
 
 2.  Kopieren der **VSIX** Datei auf den Zielcomputer, auf dem Sie die DSL installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 

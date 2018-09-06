@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern'
+title: 'Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 88f427dd22b7395141ce4ffe0c970cdf9c07ff71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672737"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern
   Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Sie können auch hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelemente zur Laufzeit in VSTO-Add-in-Projekten.  
+ Sie können auch hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelementen zur Laufzeit in VSTO-Add-in-Projekte.  
   
  In diesem Thema werden die folgenden Aufgaben beschrieben:  
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
   
- Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelemente finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md).  
+ Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelemente finden Sie [NamedRange-Steuerelement](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Hinzufügen von NamedRange-Steuerelementen zur Entwurfszeit  
  Es gibt verschiedene Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelementen zur Entwurfszeit zu Arbeitsblättern in einem Projekt auf Dokumentebene: in Excel, über die **Toolbox**von Visual Studio oder im Fenster **Datenquellen** .  
@@ -76,7 +77,7 @@ ms.lasthandoff: 05/17/2018
      Ein datengebundenes <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement wird dem Arbeitsblatt hinzugefügt. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
 ##  <a name="runtimedoclevel"></a> Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene  
- Sie können Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement Ihrem Arbeitsblatt zur Laufzeit programmgesteuert. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Sie können Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement programmgesteuert in das Arbeitsblatt zur Laufzeit. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein NamedRange-Steuerelement programmgesteuert hinzu  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
 ##  <a name="runtimeaddin"></a> Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt  
- Sie können ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Sie können ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein NamedRange-Steuerelement programmgesteuert hinzu  
   
@@ -100,8 +101,8 @@ ms.lasthandoff: 05/17/2018
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [Hostelemente und Host-Steuerelemente (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
- [Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
+ [Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)   
+ [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Add-In-Benutzeroberflächenfehlern | Microsoft Docs'
+title: 'Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 795578d6a168dff5fee259a90abac83fa7788121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672736"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Gewusst wie: Anzeigen von Add-In-Benutzeroberflächenfehlern
-  Wenn ein VSTO-Add-In erfolglos versucht, die Microsoft Office-Benutzeroberfläche zu verändern, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Mit diesen Meldungen können Sie feststellen, warum ein Menüband nicht angezeigt wird oder warum ein Menüband angezeigt wird, aber keine Steuerelemente.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler
+  Wenn ein VSTO-Add-in versucht, die Microsoft Office-Benutzeroberfläche (UI) und ein Fehler auftritt, bearbeiten, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Sie können diese Nachrichten verwenden, um zu ermitteln, warum ein Menüband nicht angezeigt wird, oder warum ein Menüband angezeigt wird, jedoch keine Steuerelemente angezeigt werden.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-show-vsto-add-in-user-interface-errors"></a>So zeigen Sie VSTO-Add-In-Benutzeroberflächenfehler an  
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>So zeigen Sie VSTO-Add-In-Benutzeroberflächenfehler an  
   
 1.  Starten Sie die Anwendung.  
   

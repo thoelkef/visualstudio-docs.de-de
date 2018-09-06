@@ -1,5 +1,5 @@
 ---
-title: '&lt;Anwendung&gt; -Element (Office-Entwicklung in Visual Studio) | Microsoft Docs'
+title: '&lt;Anwendung&gt; -Element (Office-Entwicklung in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673681"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Anwendung&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `application` -Element des `vstav3` -Namespace umschließt die Beschreibung von Office-Projektmappen Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Syntax für Anpassungen auf Dokumentebene  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/27/2018
   
 ## <a name="syntax-for-application-level-add-ins"></a>Syntax für Add-Ins auf Anwendungsebene  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/27/2018
  Das `application` -Element hat das folgende Element.  
   
 ### <a name="customization"></a>Anpassung  
- Die Rolle der `customization` Element in der `vstov3` Namespace definiert, [ &#60;Anpassung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Die Rolle der `customization` Element in der `vstov3` Namespace definiert ist, [ &#60;Anpassung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -83,14 +84,14 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-In  
+## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
   
 ### <a name="description"></a>Beschreibung  
  Das folgende Codebeispiel veranschaulicht ein `application` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest)  
   

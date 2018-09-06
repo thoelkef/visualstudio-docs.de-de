@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152957"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775825"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Die Startseite Benutzersteuerelement hinzufügen
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Verweises auf eine benutzerdefinierte Startseite. Das Beispiel fügt der Projektmappe ein Benutzersteuerelement hinzu, das Benutzersteuerelement erstellt und anschließend verweist auf die erstellte Assembly aus der Startseite *XAML* Datei. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen als einfachen Webbrowser.  
@@ -177,7 +177,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
   
 1.  Kopieren der XAML-Datei und alle unterstützenden Textdateien oder Markup-Dateien, zu der *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  Ordner.  
   
-2.  Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in * Visual Studio-Installation Ordner ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in _Visual Studio-Installationsordner_**\Common7\IDE\ "Privateassemblies"\\**.  
   
 3.  Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv/rootsuffix Exp** um eine experimentelle Instanz von Visual Studio zu öffnen.  
   

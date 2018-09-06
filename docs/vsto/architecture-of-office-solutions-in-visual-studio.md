@@ -17,17 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673769"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektur von Office-Projektmappen in Visual Studio
   Die Themen in diesem Abschnitt enthalten Informationen zur Funktionsweise von Lösungen, die mit den Office Developer Tools in Visual Studio erstellt wurden.  
   
 > [!NOTE]  
->  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
+>  Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)  
@@ -36,17 +37,17 @@ ms.lasthandoff: 05/17/2018
  [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)  
  Beschreibt die Komponenten von VSTO-Add-Ins und wie sie von Anwendungen geladen werden.  
   
- [Visual Studio-Tools für Office-Laufzeit (Übersicht)](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Beschreibt die verschiedenen Versionen der Laufzeit, die für Office-Lösungen verwendet wird.  
   
  [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
- Beschreibt die Registrierungsschlüssel, die auf Endbenutzercomputern zum Finden und Laden von VSTO-Add-Ins erforderlich sind.  
+ Beschreibt die Registrierungsschlüssel, die erforderlich sind, auf Endbenutzercomputern zum finden und Laden von VSTO-Add-ins.  
   
  [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md)  
  Erläutert die Funktionsweise von benutzerdefinierten Dokumenteigenschaften in Anpassungen auf Dokumentebene.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Bietet eine Einführung in die Verwendung von Microsoft Office als Plattform zur Entwicklung von Unternehmenslösungen.  
   
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
