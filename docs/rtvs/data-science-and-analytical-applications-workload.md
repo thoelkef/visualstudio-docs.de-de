@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627179"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installieren von Data Science-Unterstützung in Visual Studio
 
@@ -30,7 +31,7 @@ Die Workload für Data Science und analytische Anwendungen, die Sie über den Vi
 R und Python sind zwei der primär für Data Science verwendeten Skriptsprachen. Beide Sprachen sind einfach zu erlernen und werden durch eine große Vielfalt an Paketen unterstützt. Solche Pakete existieren für eine Vielzahl an Verwendungsszenarios, z.B. Datenerfassung, Bereinigung, Modelltraining, Bereitstellung und Zeichnen. F# ist auch eine leistungsfähige, funktionsorientierte .NET-Sprache, die für eine Vielzahl an Datenverarbeitungsaufgaben geeignet ist.
 
 <!--Note link on the image because this one is large -->
-[![Screenshots von Visual Studio mit R, Python und F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Screenshots von Visual Studio mit R, Python und F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Workloadoptionen
 
@@ -49,9 +50,9 @@ Durch die Workload werden standardmäßig folgende Optionen installiert, die Sie
 
 Obwohl F# in verschiedenen Workloads enthalten ist und Python seine eigene Workload mitbringt, ist „Data Science und analytische Anwendungen“ derzeit die einzige Workload, die R beinhaltet. Sie können R jedoch auch unabhängig von der Workload installieren. Wählen Sie auf der Registerkarte **Einzelne Komponenten** im Installer die folgenden Optionen für R aus:
 
-- **Entwicklungsaktivitäten > R-Sprachunterstützung**
-- **Entwicklungsaktivitäten > Microsoft R Client**
-- **Compiler, Buildtools und Runtimes > Runtimeunterstützung für R-Entwicklungstools**
+- **Entwicklungsaktivitäten** > **R-Sprachunterstützung**
+- **Entwicklungsaktivitäten** > **Microsoft R Client**
+- **Compiler, Buildtools und Runtimes** > **Runtimeunterstützung für R-Entwicklungstools**
 
 ## <a name="sql-server-integration"></a>Integration von SQL Server
 
@@ -75,7 +76,7 @@ Verwenden Sie den Visual Studio-Installer, um die Workload **Datenspeicherung un
 
 Weitere Informationen finden Sie unter: 
 
-- [Arbeiten mit SQL Server und R](../rtvs/sql-server.md)
+- [Arbeiten mit SQL Server und R](integrating-sql-server-with-r.md)
 - [In-database Advanced Analytics with R in SQL Server 2016 (blog) (Advanced Analytics mit R in SQL Server 2016 in der Datenbank (Blogbeitrag))](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 - [Python in SQL Server 2017: enhanced in-database machine learning (blog) (Python in SQL Server 2017: verbessertes, datenbankinternes Machine Learning (Blogbeitrag))](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -88,4 +89,4 @@ Das Azure SDK für Python vereinfacht die Nutzung und Verwaltung von Microsoft A
 Azure Notebooks (zurzeit als Vorschau verfügbar) bietet kostenlosen Onlinezugriff auf die Anwendung „Jupyter Notebooks“, die in der Cloud auf Microsoft Azure ausgeführt wird. Der Dienst enthält Beispiel-Notebooks in den Sprachen Python, R und F#, um Ihnen den Einstieg zu erleichtern. Besuchen Sie [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Azure Notebooks-Screenshots für das Beispiel „Introduction to R“](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![Azure Notebooks-Screenshots für das Beispiel „Introduction to R“](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

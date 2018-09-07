@@ -1,7 +1,6 @@
 ---
 title: Application Lifecycle Management (ALM) mit Unity-Apps | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
@@ -10,20 +9,20 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232331"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634617"
 ---
-# <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) mit Unity-Apps
+# <a name="devops-with-unity-apps"></a>DevOps mit Unity-Apps
 
 Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitäten neben dem Schreiben von Code. Diese als DevOps (Development + Operations) bezeichneten Aktivitäten decken den gesamten Lebenszyklus der App ab. Dazu gehören das Planen und Nachverfolgen der Arbeit, das Entwickeln und Implementieren von Code, das Verwalten eines Quellcoderepositorys, das Ausführen von Builds, das Verwalten von Continuous Integration und Deployment, das Testen (einschließlich Komponententests und Tests der Benutzeroberfläche), das Durchführen verschiedener Formen der Diagnose in Entwicklungs- und Produktionsumgebungen und das Überwachen der App-Leistung und des Benutzerverhaltens in Echtzeit über Telemetrie und Analysen.
 
- Visual Studio bietet zusammen mit Visual Studio Team Services und Team Foundation Server eine Vielzahl von DevOps-Funktionen; diese werden auch als Application Lifecycle Management (ALM) bezeichnet. Viele dieser Funktionen lassen sich auf plattformübergreifende Projekte anwenden, einschließlich mit Unity erstellter Spiele und immersiver graphischer Apps, insbesondere bei Verwendung von C# als Skriptsprache. Da Unity über eine eigene Entwicklungsumgebung und eine eigene Runtime-Engine verfügt, können viele ALM-Funktionen allerdings nicht so wie bei anderen Arten von Projekten verwendet werden, die in Visual Studio erstellt wurden.
+Visual Studio bietet zusammen mit Visual Studio Team Services und Team Foundation Server eine Vielzahl von DevOps-Funktionen. Viele dieser Funktionen lassen sich auf plattformübergreifende Projekte anwenden, einschließlich mit Unity erstellter Spiele und immersiver graphischer Apps, insbesondere bei Verwendung von C# als Skriptsprache. Da Unity über eine eigene Entwicklungsumgebung und eine eigene Runtime-Engine verfügt, können viele DevOps-Funktionen allerdings nicht so wie bei anderen Arten von Projekten verwendet werden, die in Visual Studio erstellt wurden.
 
- In den folgenden Tabellen sehen Sie, welche Visual Studio ALM-Funktionen bei der Arbeit mit Unity verwendet werden können. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.
+Die folgenden Tabellen geben an, wie DevOps-Features in Visual Studio bei der Arbeit mit Unity angewendet bzw. nicht angewendet werden können. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.
 
 ## <a name="agile-tools"></a>Agile-Tools
 
@@ -66,26 +65,27 @@ Allgemeiner Kommentar: Obwohl diese Funktionen entweder unabhängig von der Prog
 |[Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)|Ja||
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||
 
- Besondere Überlegungen für die Versionskontrolle mit Unity:
+Besondere Überlegungen für die Versionskontrolle mit Unity:
 
-1.  Unity überwacht Metadaten über Spielressourcen in einer einzelnen, nicht transparenten Bibliothek, die standardmäßig ausgeblendet ist. Damit Dateien und Metadaten synchron bleiben, müssen die Metadaten sichtbar gemacht und in besser verwaltbaren Blöcken gespeichert werden. Weiter Informationen finden Sie unter [Using Version Control System with Unity (Verwenden von Versionskontrollsystemen mit Unity)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity-Dokumentation).
+1. Unity überwacht Metadaten über Spielressourcen in einer einzelnen, nicht transparenten Bibliothek, die standardmäßig ausgeblendet ist. Damit Dateien und Metadaten synchron bleiben, müssen die Metadaten sichtbar gemacht und in besser verwaltbaren Blöcken gespeichert werden. Weiter Informationen finden Sie unter [Using Version Control System with Unity (Verwenden von Versionskontrollsystemen mit Unity)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity-Dokumentation).
 
-2.  Nicht alle Dateien und Ordner in einem Unity-Projekt eignen sich für die Quellcodeverwaltung, wie auch im obenstehenden Link beschrieben wird. Die Assets- und ProjectSettings-Ordner sollten hinzugefügt werden, nicht aber die Library- und Temp-Ordner. Eine zusätzliche Liste generierter Dateien, die nicht in die Quellcodeverwaltung aufgenommen werden würden, finden Sie unter [How to use Git for Unity3D source control? (So verwenden Sie Git für die Quellcodeverwaltung von Unity3D)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) auf StackOverflow. Viele Entwickler haben zu diesem Thema auch unabhängig Blog-Einträge geschrieben.
+2. Nicht alle Dateien und Ordner in einem Unity-Projekt eignen sich für die Quellcodeverwaltung, wie auch im obenstehenden Link beschrieben wird. Die Assets- und ProjectSettings-Ordner sollten hinzugefügt werden, nicht aber die Library- und Temp-Ordner. Eine zusätzliche Liste generierter Dateien, die nicht in die Quellcodeverwaltung aufgenommen werden würden, finden Sie unter [How to use Git for Unity3D source control? (So verwenden Sie Git für die Quellcodeverwaltung von Unity3D)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) auf StackOverflow. Viele Entwickler haben zu diesem Thema auch unabhängig Blog-Einträge geschrieben.
 
-3.  Binäre Objekte in einem Unity-Projekt, z. B. Texturen oder Audiodateien, können eine große Menge an Speicherplatz belegen. Verschiedene Quellcodeverwaltungssysteme wie Git speichern eine Kopie einer Datei für jede vorgenommene Änderung, auch wenn die Änderung nur einen kleinen Teil der Datei betrifft. Dadurch kann das Git-Repository sehr groß werden. Um dies zu vermeiden, entscheiden sich Unity-Entwickler häufig dafür, nur finale Objekte zu ihrem Repository hinzufügen und den Arbeitsverlauf der Objekte anderweitig zu speichern, etwa mit OneDrive, DropBox oder git-annex. Dieser Ansatz funktioniert, da solche Objekte in der Regel nicht zusammen mit Änderungen am Quellcode mit einer Versionsangabe versehen müssen. Entwickler legen in der Regel auch den Objektserialisierungsmodus des Projekteditors auf das Erzwingen von Text fest, um Szenendateien als Text und nicht im Binärformat zu speichern, wodurch Zusammenführungen in der Quellcodeverwaltung ermöglicht werden. Weitere Informationen finden Sie unter [Editoreinstellungen](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity-Dokumentation).
+3. Binäre Objekte in einem Unity-Projekt, z. B. Texturen oder Audiodateien, können eine große Menge an Speicherplatz belegen. Verschiedene Quellcodeverwaltungssysteme wie Git speichern eine Kopie einer Datei für jede vorgenommene Änderung, auch wenn die Änderung nur einen kleinen Teil der Datei betrifft. Dadurch kann das Git-Repository sehr groß werden. Um dies zu vermeiden, entscheiden sich Unity-Entwickler häufig dafür, nur finale Objekte zu ihrem Repository hinzufügen und den Arbeitsverlauf der Objekte anderweitig zu speichern, etwa mit OneDrive, DropBox oder git-annex. Dieser Ansatz funktioniert, da solche Objekte in der Regel nicht zusammen mit Änderungen am Quellcode mit einer Versionsangabe versehen müssen. Entwickler legen in der Regel auch den Objektserialisierungsmodus des Projekteditors auf das Erzwingen von Text fest, um Szenendateien als Text und nicht im Binärformat zu speichern, wodurch Zusammenführungen in der Quellcodeverwaltung ermöglicht werden. Weitere Informationen finden Sie unter [Editoreinstellungen](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity-Dokumentation).
 
 ## <a name="build"></a>Build
- Referenzlink: **[Build und Release](/vsts/build-release/index)**
+
+Referenzlink: **[Build und Release](/vsts/build-release/index)**
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
 |Lokaler TFS-Server|Möglich|Unity-Projekte werden über die Unity-Umgebung und nicht über das Visual Studio-Buildsystem erstellt (durch das Erstellen innerhalb der Visual Studio-Tools für Unity kompilieren Sie die Skripts, jedoch wird keine ausführbare Datei erzeugt). Es ist möglich, Unity-Projekte über die Befehlszeile  zu [erstellen (Unity-Dokumentation)](http://docs.unity3d.com/Manual/CommandLineArguments.html). Damit ist es möglich, einen MSBuild-Prozess auf einem TFS-Server zum Ausführen der entsprechenden Unity-Befehle zu konfigurieren, sofern Unity selbst auf diesem Computer installiert ist.<br /><br /> Unity bietet darüber hinaus [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), welches ein Git- oder SVN-Repository überwacht und regelmäßige Builds ausführt. Zurzeit funktioniert es weder mit der Team Foundation-Versionskontrolle noch mit Visual Studio Team Services.|
-|Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Visual Studio Team Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen.  Anweisungen finden Sie unter [Build and release agents (Build- und Release-Agents)](/vsts/build-release/concepts/agents/agents).|
+|Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Visual Studio Team Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen. Anweisungen finden Sie unter [Build and release agents (Build- und Release-Agents)](/vsts/build-release/concepts/agents/agents).|
 |Gehosteter Controllerdienst von Visual Studio Team Services|Nein|Builds von Unity werden derzeit nicht unterstützt.|
 |Builddefinitionen mit Vor- und Nachskripts|Ja|Eine benutzerdefinierte Builddefinition, die einen Build über die Unity-Befehlszeile ausführt, kann ebenfalls für Prä- und Postbuildskripts konfiguriert werden.|
 |Fortlaufende Integration einschließlich abgegrenzter Eincheckvorgänge|Ja|Abgegrenzte Eincheckvorgänge für TFVC, nur wenn Git auf einem Pull-Request-Modell statt mit Eincheckvorgängen arbeitet.|
 
-## <a name="testing"></a>Test
+## <a name="test"></a>Test
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
@@ -116,7 +116,7 @@ Referenzlink: [Build and release overview (Übersicht zu Build und Release)](/vs
 |-------------|--------------------------|-------------------------|
 |Verwalten von Releaseprozessen|Ja||
 |Bereitstellen auf Servern für das Sideloading über Skripts|Ja||
-|Hochladen in den App Store|Partial|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können.  Siehe [Erweiterungen für Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); beispielsweise die [Extension for Google Play (Erweiterung für Google Play)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Hochladen in den App Store|Partial|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können. Siehe [Erweiterungen für Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); beispielsweise die [Extension for Google Play (Erweiterung für Google Play)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Überwachen mit HockeyApp
 

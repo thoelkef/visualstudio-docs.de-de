@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233086"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626532"
 ---
 # <a name="verify-your-xamarin-environment"></a>Überprüfen Ihrer Xamarin-Umgebung
 
@@ -54,7 +54,7 @@ Dadurch wird eine Projektmappe mit vier Projekten erstellt: ein freigegebenes Pr
 
   ![Auswählen des Visual Studio-Emulators für Android als Debugziel](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Weitere Informationen finden Sie unter [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Einführen der Emulatoren von Visual Studio für Android) (Visual Studio ALM-Blog). Wenn bei der Inbetriebnahme des Emulators Probleme auftreten, finden Sie Hilfe unter [Problembehandlung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Sie können auch neue Geräteprofile für den Emulator erstellen, indem Sie **Extras > Android > Android-Emulator-Manager** auswählen.
+  Weitere Informationen finden Sie unter [Introducing Visual Studio’s Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) (Einführung des Emulators von Visual Studio für Android) im Microsoft DevOps-Blog. Wenn bei der Inbetriebnahme des Emulators Probleme auftreten, finden Sie Hilfe unter [Problembehandlung beim Visual Studio-Emulator für Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Sie können auch neue Geräteprofile für den Emulator erstellen, indem Sie **Extras > Android > Android-Emulator-Manager** auswählen.
 
 3. Drücken Sie **F5**, um das Programm zu kompilieren und auf dem Android-Gerät oder -Emulator bereitzustellen.
 

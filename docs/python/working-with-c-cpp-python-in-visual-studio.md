@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586559"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627188"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Install Python Support for Visual Studio
 
 1. Erstellen Sie ein neues Python-Projekt in Visual Studio, indem Sie **Datei** > **Neu** > **Projekt** auswählen. Suchen Sie nach "Python", wählen Sie die Vorlage **Python Application** (Python-Anwendung), weisen Sie ihr einen geeigneten Namen und Standort zu, und klicken Sie auf **OK**.
 
-1. Das Arbeiten mit C++ erfordert, dass Sie einen 32-Bit-Python-Interpreter verwenden (Python 3.6 wird hier empfohlen). Erweitern Sie im **Projektmappen-Explorer** von Visual Studio den Projektknoten und anschließend den Knoten **Python-Umgebungen**. Wenn Keine 32-Bit-Umgebung als Standardumgebung angezeigt wird (entweder in Fettdruck oder als **globaler Standard** gekennzeichnet), befolgen Sie die Anweisungen unter [Select a Python environment for a project (Auswählen einer Python-Umgebung für ein Projekt)](selecting-a-python-environment-for-a-project.md). Wenn Sie noch keinen 32-Bit-Interpreter installiert haben, finden Sie unter [Install Python interpreters (Installieren von Python-Interpretern)](installing-python-interpreters.md) weitere Informationen.
+1. Für das Arbeiten mit C++ ist die Verwendung eines 32-Bit-Python-Interpreters erforderlich (Python 3.6 oder höher wird empfohlen). Erweitern Sie im **Projektmappen-Explorer** von Visual Studio den Projektknoten und anschließend den Knoten **Python-Umgebungen**. Wenn Keine 32-Bit-Umgebung als Standardumgebung angezeigt wird (entweder in Fettdruck oder als **globaler Standard** gekennzeichnet), befolgen Sie die Anweisungen unter [Select a Python environment for a project (Auswählen einer Python-Umgebung für ein Projekt)](selecting-a-python-environment-for-a-project.md). Wenn Sie noch keinen 32-Bit-Interpreter installiert haben, finden Sie unter [Install Python interpreters (Installieren von Python-Interpretern)](installing-python-interpreters.md) weitere Informationen.
 
 1. Fügen Sie in der *.py*-Datei des Projekts den folgenden Code ein, der die Berechnung eines Hyperbeltangens durchführt (Dieser wird ohne Verwendung der mathematischen Bibliothek zum einfacheren Vergleich implementiert). Geben Sie den Code gerne manuell ein, um einige der [Bearbeitungsfunktionen von Python](editing-python-code-in-visual-studio.md) kennenzulernen.
 

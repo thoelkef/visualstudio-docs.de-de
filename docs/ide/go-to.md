@@ -1,10 +1,9 @@
 ---
-title: Suchen von Code mithilfe von Gehe zu-Befehlen
-ms.date: 09/26/2017
+title: Gehe zu Datei, Gehe zu Symbol, Gehe zu Zeile
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447192"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627009"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
@@ -55,19 +54,20 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:
 
-Präfix | Symbol | Verknüpfung | description
-:----: | ---- | -------- | ---
-\#     | ![Zeichensymbol](media/gotoall_symbolicon.png) | **STRG**+**1**, **STRG**+**S** | Zum angegebenen Symbol wechseln
-f      | ![Dateisymbol](media/gotoall_fileicon.png)     | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
-m      | ![Membersymbol](media/gotoall_membericon.png) | **STRG**+**1**, **STRG**+**M** | Zum angegebenen Member wechseln
-t      | ![Typsymbol](media/gotoall_typeicon.png)     | **STRG**+**1**, **STRG**+**T** | Zum angegebenen Typ wechseln
-:      | ![Zeilensymbol](media/gotoall_lineicon.png)     | **STRG**+**G**         | Zur angegebenen Zeilennummer wechseln
+Präfix | Symbol | Verknüpfung | Beschreibung 
+:-: | - | - | -
+:| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G**         | Zur angegebenen Zeilennummer wechseln
+f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
+b| ![Symbol „Zuletzt verwendete Dateien“](media/gotoall-recent-files-icon.png) | **STRG**+**1**, **STRG**+**R** | Zur angegebenen zuletzt besuchten Datei wechseln
+t| ![Symbol „Typen“](media/gotoall-types-icon.png) | **STRG**+**1**, **STRG**+**T** | Zum angegebenen Typ wechseln
+m| ![Symbol „Member“](media/gotoall-members-icon.png) | **STRG**+**1**, **STRG**+**M** | Zum angegebenen Member wechseln
+\#| ![Symbol „Symbole“](media/gotoall-symbols-icon.png) | **STRG**+**1**, **STRG**+**S** | Zum angegebenen Symbol wechseln
 
 ### <a name="filter-to-a-specific-location"></a>Filtern an einem bestimmten Speicherort
 
 Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:
 
-Symbol | description
+Symbol | Beschreibung 
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
 ![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
@@ -82,7 +82,7 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 
 Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:
 
-Einstellung | description
+Einstellung | Beschreibung 
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen    | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an

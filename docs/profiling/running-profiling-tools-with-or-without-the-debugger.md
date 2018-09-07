@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268268"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626742"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige (z.B. **CPU-Auslastung** und **Speicherauslastung**) mit oder ohne den Debugger ausgeführt werden können. Leistungstools ohne Debugger sind für Releasekonfigurationen gedacht, während die Tools mit integriertem Debugger zur Ausführung auf Debugkonfigurationen vorgesehen sind.  
+
+Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Sollte ich das Tool mit oder ohne Debugger ausführen?  
  Mit Leistungstools mit integriertem Debugger können Sie viele Aufgaben ausführen, die mit Leistungstools ohne Debugger nicht möglich sind, z. B. Haltepunkte festlegen und Variablenwerte überprüfen. Tools ohne Debugger bieten Ihnen eine Erfahrung, die mehr dem ähnelt, was Benutzer der veröffentlichten Anwendung sehen.  

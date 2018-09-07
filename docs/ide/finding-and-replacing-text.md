@@ -1,6 +1,6 @@
 ---
-title: Suchen und Ersetzen von Text
-ms.date: 05/07/2018
+title: Suchen und Ersetzen von Text sowie Auswählen mehrerer Caretzeichen
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106751"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627186"
 ---
 # <a name="find-and-replace-text"></a>Suchen und Ersetzen von Text
 
-Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) oder mit [In Dateien suchen/In Dateien ersetzen](#find-in-files-and-replace-in-files) suchen und ersetzen.
+Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) oder mit [In Dateien suchen/In Dateien ersetzen](#find-replace-in-files) suchen und ersetzen. Ab Version 15.8 von Visual Studio 2017 können Sie *bestimmte* Musterinstanzen mithilfe des *[Auswählens mehrerer Caretzeichen](#multi-caret-selection)* suchen und ersetzen.
 
 > [!TIP]
 > Wenn Sie Codesymbole wie Variablen und Methoden umbenennen, ist es besser, anstelle von Suchen und Ersetzen eine *[Umgestaltung](../ide/reference/rename.md)* zu verwenden. Die Umgestaltung ist eine intelligente Funktion, die den Projektumfang berücksichtigt, während Suchen und Ersetzen alle Instanzen blind ersetzt.
@@ -58,7 +58,7 @@ Sie können den Suchbereich auf das aktuelle Dokument, die aktuelle Projektmappe
 
 Das Steuerelement **Suchen und Ersetzen** finden Sie in der rechten oberen Ecke des Code-Editors. Durch das Steuerelement **Suchen und Ersetzen** wird jedes Vorkommen des angegebenen Suchbegriffs im aktuellen Dokument sofort hervorgehoben. Sie können von einem Vorkommen zum nächsten navigieren, indem Sie auf dem Steuerelement „Suche“ auf **Weitersuchen** oder **Vorheriges suchen** auswählen.
 
-![Steuerelement "Suchen und Ersetzen"](media/find-and-replace-box.png)
+![Suchen und Ersetzen in Visual Studio](media/find-and-replace-box.png)
 
 Über die Schaltfläche neben dem Textfeld **Suchen** können Sie auf die Optionen für das Ersetzen zugreifen. Um Ersetzungen einzeln durchzuführen, klicken Sie neben dem Textfeld **Ersetzen** auf **Nächstes ersetzen**. Klicken Sie auf **Alle ersetzen**, um alle Übereinstimmungen auf einmal zu ersetzen.
 
@@ -74,7 +74,7 @@ Eine Version des Steuerelements **Suchen** ist auch in einigen Toolfenstern verf
 
 **In Dateien suchen/In Dateien ersetzen** funktioniert wie das Steuerelement **Suchen und Ersetzen** mit dem Unterschied, dass Sie einen Bereich für die Suche definieren können. Sie können nicht nur die aktuell geöffnete Datei im Editor durchsuchen, sondern auch alle geöffneten Dokumente, die gesamte Projektmappe, das aktuelle Projekt und ausgewählte Ordnersätze. Ebenfalls können Sie nach Dateierweiterungen suchen. Um auf das Dialogfeld **In Dateien suchen/In Dateien ersetzen** zuzugreifen, wählen Sie im Menü **Bearbeiten** die Option **Suchen und Ersetzen** aus, oder drücken Sie **Strg+Umschalt+F**.
 
-![In Dateien suchen (Dialogfeld)](media/find-in-files-box.png)
+![Suchen in Dateien in Visual Studio](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>Suchergebnisse
 
@@ -90,6 +90,41 @@ Sie können einen Suchbereich definieren, indem Sie die Schaltfläche **Suchordn
 ### <a name="create-custom-component-sets"></a>Erstellen benutzerdefinierter Komponentensätze
 
 Sie können Komponentensätze als Suchbereich definieren, indem Sie auf die Schaltfläche **Benutzerdefinierten Komponentensatz bearbeiten** neben dem Feld **Suchen in** klicken. Sie können installierte .NET- oder COM-Komponenten, in der Projektmappe enthaltene Visual Studio-Projekte oder eine beliebige Assembly bzw. Typbibliothek (*DLL*, *TLB*, *OLB*, *EXE* oder *OCX*) angeben. Wählen Sie zur Suche nach Verweisen das Feld **In Verweisen suchen** aus.
+
+## <a name="multi-caret-selection"></a>Auswählen mehrerer Caretzeichen
+
+**Neu in Visual Studio 2017 Version 15.8**
+
+Durch das *Auswählen mehrerer Caretzeichen* können Sie dieselbe Änderung gleichzeitig an unterschiedlichen Stellen durchführen. Beispielsweise können Sie Text hinzufügen oder vorhandenen Text bearbeiten. Die Änderungen werden gleichzeitig an mehreren Stellen übernommen.
+
+Auf dem folgenden Screenshot wird `-0000` an drei Stellen ausgewählt. Wenn der Benutzer die **ENTF-Taste** drückt, wird die Auswahl mit diesen Stellen gelöscht:
+
+![Auswählen mehrerer Caretzeichen in einer XML-Datei in Visual Studio](media/multi-caret-selection.png)
+
+Gehen Sie folgendermaßen vor, um mehrere Caretzeichen auszuwählen: Wählen Sie den Text zuerst wie gewohnt aus, oder klicken Sie mit der Maus darauf. Drücken Sie anschließend die **ALT-Taste**, während Sie auf eine andere Stelle mit der Maus klicken oder dort einen Text auswählen. Sie können übereinstimmenden Text auch als zusätzliche Auswahl hinzufügen oder aber ein Textfeld auswählen, um in allen Zeilen dieselben Änderungen durchzuführen.
+
+> [!TIP]
+> Wenn Sie unter **Extras** > **Optionen** die **ALT-Taste** als Zusatztaste für die Aktion „Zur Definition wechseln“ festlegen, die normalerweise per Mausklick ausgelöst wird, wird das Auswählen mehrerer Caretzeichen deaktiviert.
+
+### <a name="commands"></a>Befehle
+
+Mit den folgenden Tasten und Aktionen werden unterschiedliche Verhalten für das Auswählen mehrerer Caretzeichen ausgelöst:
+
+|Verknüpfung|Aktion|
+|-|-|
+|**STRG-TASTE**+**ALT-TASTE**+Klick|Ein zweites Caretzeichen wird hinzugefügt.|
+|**STRG-TASTE**+**ALT-TASTE**+Doppelklick|Eine zweite Wortauswahl wird hinzugefügt.|
+|**STRG-TASTE**+**ALT-TASTE**+Klick+Ziehen|Eine zweite Auswahl wird hinzugefügt.|
+|**UMSCHALTTASTE**+**ALT-TASTE**+**.**|Der nächsten übereinstimmende Text wird als Auswahl hinzugefügt.|
+|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+**,**|Alle übereinstimmenden Texte werden als Auswahl hinzugefügt.|
+|**UMSCHALTTASTE**+**ALT-TASTE**+**,**|Das letzte Ereignis wird entfernt.|
+|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+**.**|Die nächste Übereinstimmung wird übersprungen.|
+|**ALT-TASTE**+Klick|Eine Feldauswahl wird hinzugefügt.|
+|**ESC-Taste** oder Klick|Die gesamte Auswahl wird aufgehoben.|
+
+Einige der Befehle sind auch im Menü **Bearbeiten** unter **Multiple Carets** (Mehrere Caretzeichen) verfügbar:
+
+![Kontextmenü „Mehrere Caretzeichen“ in Visual Studio](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>Siehe auch
 

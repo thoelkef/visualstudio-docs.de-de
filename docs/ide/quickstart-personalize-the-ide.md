@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512560"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626526"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
 
-In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign und zwei Textfarben im Text-Editor anpassen.
+In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
@@ -97,19 +97,7 @@ Nun passen Sie einige Textfarben für den Editor an. Erstellen Sie zunächst ein
 
 Wir haben nur ein paar Methoden zum Anpassen der Farben in Visual Studio untersucht. Wir hoffen, dass Sie die anderen Anpassungsoptionen im Dialogfeld **Optionen** ebenfalls nutzen, um Visual Studio ganz an Ihre Vorstellungen anzupassen.
 
-## <a name="next-steps"></a>Nächste Schritte
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Schreiben von Code im Editor](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Siehe auch
 
-- [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Anpassen des Editors](../ide/customizing-the-editor.md)
 - [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)

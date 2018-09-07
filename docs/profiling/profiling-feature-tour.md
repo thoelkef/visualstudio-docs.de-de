@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627177"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -31,7 +32,9 @@ Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren
 
 ![Zusammenfassungsansicht der Diagnosetools](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Zusammenfassung der Diagnosetools")
 
-Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Profilerstellung, aber für Releasebuilds können Sie stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#tool_support_info).
+Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Profilerstellung, aber für Releasebuilds können Sie stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#which-tool-should-i-use).
+
+> ![HINWEIS] Sie können die Post-Mortem-Tools mit Windows 7 und höher verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -53,7 +56,7 @@ Doppelklicken Sie auf eine Funktion, an der Sie interessiert sind. Ihnen wird ei
 
 ## <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
-Mit dem Fenster „Diagnosetools“ können Sie auch die Speicherauslastung in Ihrer App bewerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung).
+Mit dem Fenster **Diagnosetools** können Sie auch die Speicherauslastung in Ihrer App bewerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung).
 
 Um die Speicherauslastung zu analysieren, müssen Sie mindestens eine Momentaufnahme des Speichers während des Debuggens machen. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
 
@@ -78,19 +81,19 @@ Die gleichen Ereignisse werden auch im Code-Editor angezeigt, den Sie als PerfTi
 
 ![Profilerstellungstour PerfTips](../profiling/media/prof-tour-perf-tips.png "Profilerstellungstour PerfTips")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Überprüfen der UI-Leistung und Barrierefreiheits-Ereignisse (UWP)
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Überprüfen der UI-Leistung und Barrierefreiheitsereignisse (UWP)
 
-In Ihren UWP-Apps können Sie die **Benutzeroberfläche Analye** im Fenster „Diagnosetools“ aktivieren. Das Tool sucht nach gemeinsamen Leistungs- oder Barrierefreiheitsproblemen, und zeigt sie in der Ansicht **Ereignisse** an, während Sie debuggen. Die Ereignisbeschreibungen bieten Informationen zur Problembehebung.
+In Ihren UWP-Apps können Sie die **Analyse der Benutzeroberfläche** im Fenster **Diagnosetools** aktivieren. Das Tool sucht nach gemeinsamen Leistungs- oder Barrierefreiheitsproblemen, und zeigt sie in der Ansicht **Ereignisse** an, während Sie debuggen. Die Ereignisbeschreibungen bieten Informationen zur Problembehebung.
 
 ![Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools](../profiling/media/prof-tour-ui-analysis.png "Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools")
 
-## <a name="profile-release-builds-without-the-debugger"></a>Profilerstellung für Releasebuilds ohne den Debugger
+## <a name="post_mortem"></a> Profilerstellung für Releasebuilds ohne den Debugger
 
-Profilerstellungstools wie die CPU-Auslastung und Speicherauslastung können mit dem Debugger verwendet werden (siehe frühere Abschnitte), oder Sie führen die Profilerstellungstools mithilfe des Leistungsprofilers aus, der Analysen für **Release**builds erstellen soll. Im Leistungsprofiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wird. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) .
+Profilerstellungstools wie die CPU-Auslastung und Speicherauslastung können mit dem Debugger verwendet werden (siehe frühere Abschnitte), oder Sie führen die Profilerstellungstools post mortem mithilfe des Leistungsprofilers aus, der Analysen für **Release**builds erstellen soll. Im Leistungsprofiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wird. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ![Leistungsprofiler](../profiling/media/prof-tour-performance-profiler.png "Leistungsprofiler")
 
-Öffnen Sie durch Auswählen von **Debuggen/Performance Profiler** den Leistungsprofiler.
+Öffnen Sie den Leistungsprofiler durch Auswählen von **Debuggen** > **Leistungsprofiler**.
 
 Im Fenster können Sie mehrere Profilerstellungstools in einigen Szenarios auswählen. Tools wie z.B. CPU-Auslastung stellen möglicherweise ergänzende Daten bereit, die Sie als Hilfe bei Ihrer Analyse verwenden können.
 
@@ -146,7 +149,7 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 ![Tool „Leistungs-Explorer“](../profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
 
-## <a name="tool_support_info"></a>Welches Tool soll ich verwenden?  
+## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
 
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
   
@@ -162,9 +165,6 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein| 
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
-
-> [!NOTE]
-> Das CPU-Auslastungstool bietet derzeit keine exakten Ergebnisse mit portablen PBDs für .NET Core und ASP.NET Core. Verwenden Sie stattdessen vollständige PDBs.
 
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

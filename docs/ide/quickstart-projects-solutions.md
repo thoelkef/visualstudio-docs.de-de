@@ -1,5 +1,5 @@
 ---
-title: Einführung in Projekte und Projektmappen in Visual Studio
+title: Einführung in Projekte und Projektmappen
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512303"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627245"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
+# <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
-In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird dargestellt, wie Sie eine *Projektmappe* und ein *Projekt* in Visual Studio erstellen. Eine Projektmappe ist ein Container, der zum Organisieren von mindestens einem zugehörigen Codeprojekt verwendet wird, wie z.B. einer Klassenbibliothek und dem entsprechenden Testprojekt. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Darüber hinaus wird ein Verweis von einem Projekt auf das andere erstellt.
+In diesem einführenden Artikel erfahren Sie mehr über das Erstellen einer *Projektmappe* und eines *Projekts* in Visual Studio. Eine Projektmappe ist ein Container, der zum Organisieren von mindestens einem zugehörigen Codeprojekt verwendet wird, wie z.B. einer Klassenbibliothek und dem entsprechenden Testprojekt. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Darüber hinaus wird ein Verweis von einem Projekt auf das andere erstellt.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
@@ -176,19 +176,9 @@ In der Zeile in der C#-Codedatei mit dem Attribut <xref:System.Runtime.CompilerS
 
 Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in der Menüleiste auf **Testen** > **Ausführen** > **Alle Tests**. Ein Fenster mit dem Namen **Test-Explorer** wird geöffnet, und der **TestGetCurrentDate**-Test sollte erfolgreich sein.
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Als Nächstes können Sie sich einige der anderen Schnellstarts für Visual Studio ansehen oder mehr über das [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) erfahren.
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Personalisieren von Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Siehe auch
 
+- [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
 - [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

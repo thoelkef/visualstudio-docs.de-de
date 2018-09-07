@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926482"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627291"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -46,6 +46,7 @@ Um die Art der Symbole zu beschreiben, für die die Namensregel gelten soll, geb
 In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
 
 - \* (verwenden Sie diesen Wert, um alle Symbole anzugeben)
+- namespace
 - Klasse
 - struct
 - interface
@@ -56,6 +57,9 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - event
 - delegate
 - Parameter
+- type_parameter
+- Lokal
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Zugriffsebenen von Symbolen
 
@@ -71,6 +75,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - private
 - protected
 - „protected\_internal“ oder „protected_friend“
+- Lokal
 
 > [!NOTE]
 > Geben Sie eine Zugriffsebene nicht im Rahmen Ihrer Benennungskonvention an, wenn der Zugriff nicht auf die Art des gewünschten Symbols anwendbar ist. Beispielsweise sind bei Parametern keine Zugriffsebenen vorhanden. Wenn Sie eine Zugriffsebene für eine Benennungskonvention für Parameter angeben, funktioniert Ihre Benennungsregel nicht ordnungsgemäß.

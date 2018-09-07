@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code
 description: Eine exemplarische Vorgehensweise zu den spezifischen Debugfunktionen in Visual Studio für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498966"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627101"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -80,7 +80,7 @@ Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene M�
 | **Ausführen bis Rücksprung** | **UMSCHALT**+**F11** | Führt Code bis zum Ende der aktuellen Funktion aus und springt dann zur aufrufenden Anweisung.  Dieser Befehl ist hilfreich, wenn Sie den Rest der aktuellen Funktion nicht debuggen müssen. |
 | **Ausführen bis Cursor** | **STRG**+**F10** | Führt Code bis zur Position des Textcursors im Editor aus. Mit diesem Befehl können Sie ganz einfach ein Codesegment überspringen, das Sie nicht debuggen müssen. |
 | **Festlegen der nächsten Anweisung** | **STRG**+**UMSCHALT**+**F10** | Ändert den aktuellen Ausführungspunkt im Code in die Position des Textcursors. Mit diesem Befehl können Sie die Ausführung eines Codesegments verhindern, wenn Sie z.B. wissen, dass der Code fehlerhaft ist oder zu unerwünschten Nebeneffekten führt. |
-| **Nächste Anweisung anzeigen** | **ALT**+**NUM**+**&#42;**| Bringt Sie zur nächsten Anweisung zurück, die ausgeführt wird. Dieser Befehl ist sehr hilfreich, wenn Sie Ihren Code untersucht haben und nicht mehr wissen, wo der Debugger angehalten hat. |
+| **Nächste Anweisung anzeigen** | **Alt**+**Num** **&#42;**| Bringt Sie zur nächsten Anweisung zurück, die ausgeführt wird. Dieser Befehl ist sehr hilfreich, wenn Sie Ihren Code untersucht haben und nicht mehr wissen, wo der Debugger angehalten hat. |
 
 ### <a name="inspect-and-modify-values"></a>Überprüfen und Ändern von Werten
 
@@ -149,11 +149,11 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 | Option | Beschreibung  |
 | --- | --- |
-| **Suchpfade** | Diese Werte entsprechen den im Knoten „Suchpfade“ des **Projektmappen-Explorers** angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den **Projektmappen-Explorer** zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
+| **Suchpfade** | Diese Werte entsprechen den im Knoten **Suchpfade** des **Projektmappen-Explorers** angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den **Projektmappen-Explorer** zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
 | **Skriptargumente** | Diese Argumente werden dem Befehl hinzugefügt, der zum Starten Ihres Skripts verwendet wird, und werden nach dem Dateinamen des Skripts angezeigt. Das erste Element hier ist für das Skript als `sys.argv[1]` verfügbar, das zweite als `sys.argv[2]` usw. |
 | **Interpreterargumente** | Diese Argumente werden vor dem Namen Ihres Skripts in die Befehlszeile des Startprogramms eingefügt. Allgemeine Argumente sind `-W ...` zum Steuern von Warnungen, `-O` zum Optimieren Ihres Programms und `-u` zum Verwenden von nicht gepufferter E/A. IronPython-Benutzer werden dieses Feld vermutlich zum Übergeben von `-X`-Optionen verwenden, z.B. `-X:Frames` oder `-X:MTA`. |
 | **Interpreterpfad** | Überschreibt den Pfad, der der aktuellen Umgebung zugeordnet ist. Dieser Wert kann hilfreich sein, wenn Sie Ihr Skript mit einem nicht standardmäßigen Interpreter starten. |
-| **Umgebungsvariablen** | In diesem mehrzeiligen Textfeld fügen Sie Einträge in der Form \<NAME>=\<VALUE> hinzu. Diese Einstellung wird als letztes, zusätzlich zu allen vorhandenen globalen Umgebungsvariablen und nach dem Festlegen von `PYTHONPATH` gemäß der Einstellung für Suchpfade angewendet. Daher kann sie zum manuellen Überschreiben all dieser anderen Variablen verwendet werden. |
+| **Umgebungsvariablen** | In diesem mehrzeiligen Textfeld fügen Sie Einträge in der Form \<NAME>=\<VALUE> hinzu. Diese Einstellung wird als letztes, zusätzlich zu allen vorhandenen globalen Umgebungsvariablen und nach dem Festlegen von `PYTHONPATH` gemäß der Einstellung für **Suchpfade** angewendet. Daher kann sie zum manuellen Überschreiben aller anderen Variablen verwendet werden. |
 
 ## <a name="immediate-and-interactive-windows"></a>Direktfenster und interaktive Fenster
 
@@ -192,48 +192,44 @@ Das **Fenster zum interaktiven Debuggen** verfügt über bestimmte Optionen, auf
 
 ![Optionen für das Fenster zum interaktiven Debuggen](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Verwenden des experimentellen Debuggers
+<a name="use-the-experimental-debugger"></a>
 
-Ab Visual Studio 2017, Vorschauversion 4.0, können Sie den „experimentellen Debugger“ abonnieren, der auf der ptvsd-Version 4.1+ basiert. Wählen Sie zum Abonnieren den Menübefehl **Extras** > **Optionen** aus, navigieren Sie anschließend im Dialogfeld „Optionen“ zu **Python** > **Experimentell**, und wählen Sie die Option **Use experimental debugger** (Experimentellen Debugger verwenden) aus.
+## <a name="use-the-legacy-debugger"></a>Verwenden des Legacydebuggers
 
-Der experimentelle Debugger ist nur mit begrenzten Python-Umgebungen kompatibel, wie in der folgenden Tabelle beschrieben:
+Visual Studio 2017-Version 15.8 und höher verwendet einen Debugger, der auf ptvsd-Version 4.1 und höher basiert. Diese Version von ptvsd ist kompatibel mit Python 2.7 sowie Python 3.5 und höher. Wenn Sie Python 2.6, 3.1, 3.4 oder IronPython verwenden, zeigt Visual Studio den Fehler **Diese Python-Umgebung wird vom Debugger nicht unterstützt** an:
 
-| Python-Version | Mit experimentellem Debugger kompatibel |
-| --- | --- |
-| 2.6 | Nein |
-| 2.7 | Ja |
-| 3.1 bis 3.4 | Nein |
-| 3.5 und höher | Ja |
-| IronPython | Nein |
+![Fehler „Diese Python-Umgebung wird vom Debugger nicht unterstützt“ beim Verwenden des Debuggers](media/debugging-experimental-incompatible-error.png)
 
-Wenn Sie versuchen, den experimentellen Debugger mit einer nicht kompatiblen Umgebung zu verwenden, wird in Visual Studio folgende Fehlermeldung angezeigt: **Der Debugger ist mit dieser Umgebung nicht kompatibel**:
+In diesen Fällen müssen Sie den älteren Debugger verwenden, der die Standardeinstellung in Visual Studio 2017-Version 15.7 und früher darstellt. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, navigieren Sie zu **Python** > **Debuggen**, und wählen Sie die Option **Legacydebugger verwenden** aus.
 
-![Fehlermeldung „Der Debugger ist mit dieser Umgebung nicht kompatibel“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-incompatible-error.png)
+Wenn Sie in der aktuellen Umgebung eine ältere ptvsd-Version installiert haben (z.B. eine 4.0.x-Vorgängerversion einer 3.x-Version, die für das Remotedebuggen erforderlich ist), wird in Visual Studio möglicherweise eine Fehlermeldung oder eine Warnung angezeigt:
 
-Wählen Sie den Befehl **Experimentellen Debugger deaktivieren** aus, durch den die Option **Experimentellen Debugger verwenden** gelöscht wird.
+Der Fehler **Debuggerpaket konnte nicht geladen werden** wird angezeigt, wenn Sie ptvsd 3.x installiert haben:
 
-> [!Note]
-> Die Warnung wird in Python 3.3 und 3.4 derzeit nicht angezeigt.
+![Fehler „Das Debuggerpaket konnte nicht geladen werden“ bei Verwendung des Debuggers](media/debugging-experimental-version-error.png)
 
-Wenn Sie in der aktuellen Umgebung eine ältere ptvsd-Version installiert haben (z.B. eine 4.0.x-Vorgängerversion einer 3.x-Version, die für das Remotedebuggen erforderlich ist), wird in Visual Studio die Fehlermeldung **Debuggerpaket konnte nicht geladen werden** oder die Warnung **Debuggerpaket ist veraltet** angezeigt:
+Wählen Sie in diesem Fall **Legacydebugger verwenden** aus, um die Option **Legacydebugger verwenden** festzulegen, und starten Sie den Debugger neu.
 
-![Fehler „Das Debuggerpaket konnte nicht geladen werden“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-version-error.png)
+Die Warnung **Debuggerpaket ist veraltet** wird angezeigt, wenn Sie eine frühere 4.x-Version von ptvsd installiert haben:
 
-![Warnung „Das Debuggerpaket ist veraltet“ bei Verwendung des experimentellen Debuggers](media/debugging-experimental-version-warning.png)
-
-Sie können Ihre ptvsd-Installation im Fenster **Python-Umgebungen** auf der Registerkarte **Pakete** verwalten oder folgende Befehle über die Befehlszeile verwenden:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Warnung „Debuggerpaket ist veraltet“ bei Verwendung des Debuggers](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Auch wenn Sie sich möglicherweise dafür entscheiden, die Warnung bei einigen ptvsd-Versionen zu ignorieren, funktioniert Visual Studio unter Umständen nicht ordnungsgemäß.
+
+So verwalten Sie Ihre ptvsd-Installation:
+
+1. Navigieren Sie im Fenster **Python-Umgebungen** zur Registerkarte **Pakete**.
+
+1. Geben Sie „ptvsd“ in das Suchfeld ein, und überprüfen Sie die installierte Version von ptvsd:
+
+    ![Überprüfen der ptvsd-Version im Fenster „Python-Umgebungen“](media/debugging-experimental-check-ptvsd.png)
+
+1. Wenn die Version niedriger als 4.1.1a9 ist (die mit Visual Studio gebündelte Version), klicken Sie rechts im Paket auf **X**, um die ältere Version zu deinstallieren. Visual Studio verwendet dann die gebündelte Version. (Sie können die Deinstallation auch mit `pip uninstall ptvsd` über PowerShell ausführen.)
+
+1. Alternativ können Sie das ptvsd-Paket auf die neueste Version aktualisieren. Geben Sie `ptvsd --upgrade -pre` in das Suchfeld ein, und wählen Sie dann **Run command: pip install ptvsd --upgrade -pre** (Befehl ausführen: pip install ptvsd --upgrade -pre) aus. (Sie können denselben Befehl auch in PowerShell verwenden.)
+
+    ![Eingeben des Upgrade-Befehls im Fenster „Python-Umgebungen“](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Siehe auch
 
