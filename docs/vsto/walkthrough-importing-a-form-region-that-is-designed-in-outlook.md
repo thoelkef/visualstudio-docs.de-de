@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Importieren eines Formularbereichs, der in Outlook entworfenen | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Importieren eines Formularbereichs, das in Outlook entworfen wurde'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1e3ae3a77edd39bed48ac4a5a92cce2e232c589
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672920"
 ---
-# <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formularbereichs
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines Formularbereichs, das in Outlook entworfen wurde
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Assistenten **Neuer Formularbereich** in ein Outlook VSTO-Add-In-Projekt importiert wird. Durch das Entwerfen des Formularbereichs in Outlook ist es möglich, dass systemeigene Outlook-Steuerelemente zum Formularbereich hinzugefügt werden können, die Outlook-Daten binden. Nachdem Sie den Formularbereich importiert haben, können Sie die Ereignisse der einzelnen Steuerelemente behandeln.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -47,18 +48,17 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie führen I: Erstellen Outlook Form Regionen mit Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
-  
-## <a name="designing-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Entwerfen eines Formularbereichs mithilfe des Formularbereich-Designers in Outlook  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [I: Erstellen Sie Outlook-Formularbereiche, die mit Visual Studio 2008 Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Entwerfen eines Formularbereichs mithilfe des Formularbereich-Designers in Outlook  
  In diesem Schritt entwerfen Sie einen Formularbereich in Outlook. Anschließend speichern Sie den Formularbereich an einem leicht zugänglichen Speicherort, damit dieser in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]importiert werden kann.  
   
  Dieser Beispielformularbereich ersetzt das übliche Aufgabenformular. Es bietet eine Möglichkeit, den Fortschritt aller Aufgaben zu verfolgen, die abgeschlossen werden müssen, bevor die Hauptaufgabe ausgeführt werden kann (erforderliche Aufgaben). Der Formularbereich zeigt eine Liste der erforderlichen Aufgaben sowie den Abschlussstatus für jede Aufgabe in der Liste an. Benutzer können Aufgaben zur Liste hinzufügen und aus ihr entfernen. Sie können auch den Abschlussstatus der einzelnen Aufgaben aktualisieren.  
   
-#### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>So entwerfen Sie einen Formularbereich mithilfe des Formularbereich-Designers in Outlook  
+### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>So entwerfen Sie einen Formularbereich mithilfe des Formularbereich-Designers in Outlook  
   
 1.  Starten Sie Microsoft Office Outlook.  
   
-2.  Klicken Sie in Outlook auf der Registerkarte **Entwickler** auf **Ein Formular entwerfen**. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+2.  Klicken Sie in Outlook auf der Registerkarte **Entwickler** auf **Ein Formular entwerfen**. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  Klicken Sie im Feld **Formular entwerfen** auf **Aufgabe**, und klicken Sie dann auf **Öffnen**.  
   
@@ -112,14 +112,14 @@ ms.lasthandoff: 04/16/2018
   
      Weisen Sie der Formularregion die Bezeichnung **TaskFormRegion** zu, und speichern Sie sie in einem lokalen Verzeichnis auf Ihrem Computer.  
   
-     Outlook speichert den Formularbereich als OFS-Datei (Outlook Form Storage). Der Formularbereich wird unter dem Namen „TaskFormRegion.ofs“ gespeichert.  
+     Outlook speichert den Formularbereich als Outlook Form Storage (*OFS*) Datei. Der Formularbereich wird gespeichert, mit dem Namen *TaskFormRegion.ofs*.  
   
 27. Beenden Sie Outlook.  
   
-## <a name="creating-a-new-outlook-add-in-project"></a>Erstellen eines neuen Outlook-Add-In-Projekts  
+## <a name="create-a-new-outlook-add-in-project"></a>Erstellen eines neuen Outlook-Add-in-Projekts  
  In diesem Abschnitt erstellen Sie ein Outlook VSTO-Add-In-Projekt. Zu einem späteren Zeitpunkt in dieser exemplarischen Vorgehensweise werden Sie den Formularbereich in das Projekt importieren.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>So erstellen Sie ein neues Outlook VSTO-Add-In-Projekt  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>So erstellen Sie ein neues Outlook VSTO-Add-In-Projekt  
   
 1.  Erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein Outlook VSTO-Add-In-Projekt namens **TaskAddIn**.  
   
@@ -127,12 +127,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Speichern Sie das Projekt im Standardprojektverzeichnis.  
   
-     Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="importing-the-form-region"></a>Importieren des Formularbereichs  
+## <a name="import-the-form-region"></a>Importieren des Formularbereichs  
  Sie können den in Outlook entworfenen Formularbereich mithilfe des Assistenten **Neuer Outlook-Formularbereich** in das Outlook VSTO-Add-In-Projekt importieren.  
   
-#### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>So importieren Sie den Formularbereich in das Outlook VSTO-Add-In-Projekt  
+### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>So importieren Sie den Formularbereich in das Outlook VSTO-Add-In-Projekt  
   
 1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **TaskAddIn** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.  
   
@@ -142,28 +142,28 @@ ms.lasthandoff: 04/16/2018
   
 3.  Klicken Sie auf der Seite **Legen Sie fest, wie der Formularbereich erstellt werden soll** auf die Option **OFS-Datei (Outlook Form Storage) importieren**, und klicken Sie dann auf **Durchsuchen**.  
   
-4.  Navigieren Sie im Dialogfeld **Speicherort für vorhandene Outlook-Formularbereichsdateien** zum Speicherort der Datei **TaskFormRegion.ofs**, wählen Sie **TaskFormRegion.ofs**aus, klicken Sie dann auf **Öffnen**und anschließend auf **Weiter**.  
+4.  In der **vorhandenen Speicherort Outlook-Formularbereichsdateien Datei** (Dialogfeld), navigieren Sie zum Speicherort der *TaskFormRegion.ofs*Option **TaskFormRegion.ofs**, klicken Sie auf **Öffnen**, und klicken Sie dann auf **Weiter**.  
   
 5.  Klicken Sie auf der Seite **Wählen Sie den Typ des zu erstellenden Formularbereichs aus** auf **Alle ersetzen**, und klicken Sie dann auf **Weiter**.  
   
-     Der Formularbereich *Alle ersetzen* ersetzt das gesamte Outlook-Formular. Weitere Informationen zu Formularbereichstypen finden Sie unter [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
+     Der Formularbereich *Alle ersetzen* ersetzt das gesamte Outlook-Formular. Weitere Informationen zu Formularbereichstypen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
   
 6.  Klicken Sie auf der Seite **Geben Sie eine Beschreibung ein, und wählen Sie die Anzeigeeinstellungen aus** auf **Weiter**.  
   
 7.  Gehen Sie auf der Seite **Geben Sie die Meldungsklassen an, von denen dieser Formularbereich angezeigt wird** in das Feld **Welche benutzerdefinierten Meldungsklassen sollen in diesem Formularbereich angezeigt werden?** die Zeichenfolge **IPM.Task.TaskFormRegion**ein, und klicken Sie dann auf **Fertig stellen**.  
   
-     Die Datei „TaskFormRegion.cs“ oder „TaskFormRegion.vb“ wird zu Ihrem Projekt zugefügt.  
+     Ein *TaskFormRegion.cs* oder *"TaskFormRegion.vb"* Datei wird dem Projekt hinzugefügt.  
   
-## <a name="handling-the-events-of-controls-on-the-form-region"></a>Behandeln der Ereignisse von Steuerelementen im Formularbereich  
- Nun, da Sie den Formularbereich im Projekt haben, können Sie Code hinzufügen, die die Microsoft.Office.Interop.Outlook.OlkCommandButton.Click-Ereignis der Schaltfläche behandelt, die Sie in den Formularbereich in Outlook hinzugefügt.  
+## <a name="handle-the-events-of-controls-on-the-form-region"></a>Behandeln der Ereignisse von Steuerelementen im Formularbereich  
+ Nun, da Sie den Formularbereich im Projekt haben, können Sie Code, der behandelt Hinzufügen der `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` -Ereignis der Schaltfläche, die Sie in den Formularbereich in Outlook hinzugefügt.  
   
  Darüber hinaus fügen Sie Code zum <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> -Ereignis hinzu, das Steuerelemente für den Formularbereich aktualisiert, wenn der Formularbereich angezeigt wird.  
   
-#### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>So behandeln Sie die Ereignisse von Steuerelementen im Formularbereich  
+### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>So behandeln Sie die Ereignisse von Steuerelementen im Formularbereich  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei „TaskFormRegion.c“s oder „TaskFormRegion.vb“, und klicken Sie dann auf **Code anzeigen**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste *TaskFormRegion.cs* oder *"TaskFormRegion.vb"*, und klicken Sie dann auf **Ansichtscode**.  
   
-     Die Datei „TaskFormRegion.cs“ oder „TaskFormRegion.vb“ wird im Code-Editor geöffnet.  
+     *TaskFormRegion.cs* oder *"TaskFormRegion.vb"* im Code-Editor geöffnet.  
   
 2.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code füllt das Kombinationsfeld des Formularbereichs mit der Betreffzeile der einzelnen Aufgaben aus dem Ordner für Outlook-Aufgaben.  
   
@@ -172,9 +172,9 @@ ms.lasthandoff: 04/16/2018
   
 3.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Microsoft.Office.Interop.Outlook.TaskItem im Ordner "Aufgaben" durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und der Betreff der gewünschten Aufgabe übergeben. Sie werden die Hilfsmethode `FindTaskBySubjectName` im nächsten Schritt hinzufügen.  
+    -   Sucht die `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner "Aufgaben" durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und der Betreff der gewünschten Aufgabe übergeben. Sie werden die Hilfsmethode `FindTaskBySubjectName` im nächsten Schritt hinzufügen.  
   
-    -   Fügt die Microsoft.Office.Interop.Outlook.TaskItem.Subject-Wert und Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete Werte dem Listenfeld für abhängige Aufgaben hinzu.  
+    -   Fügt der `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` Werte in das Listenfeld für abhängige Aufgabe.  
   
     -   Fügt den Betreff der Aufgabe dem ausgeblendeten Feld des Formularbereichs hinzu. Das ausgeblendete Feld speichert diese Werte als Teil des Outlook-Elements.  
   
@@ -190,9 +190,9 @@ ms.lasthandoff: 04/16/2018
   
     -   Aktualisiert das Listenfeld im Formularbereich mit dem aktuellen Abschlussstatus der einzelnen abhängigen Aufgabe.  
   
-    -   Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Klicken Sie dann jedes Microsoft.Office.Interop.Outlook.TaskItem im Ordner "Aufgaben" durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und übergeben des Betreffs der einzelnen Aufgaben.  
+    -   Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Es sucht dann jede `Microsoft.Office.Interop.Outlook.TaskItem` in die *Aufgaben* Ordner durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und übergeben des Betreffs der einzelnen Aufgaben.  
   
-    -   Fügt die Microsoft.Office.Interop.Outlook.TaskItem.Subject-Wert und Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete Werte dem Listenfeld für abhängige Aufgaben hinzu.  
+    -   Fügt der `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` Werte in das Listenfeld für abhängige Aufgabe.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
@@ -206,12 +206,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
   
-## <a name="testing-the-outlook-form-region"></a>Testen des Outlook-Formularbereichs  
+## <a name="test-the-outlook-form-region"></a>Testen Sie die Outlook-Formularbereich  
  Fügen Sie zum Testen des Formularbereichs die Aufgaben zur Liste der erforderlichen Aufgaben zum Formularbereich hinzu. Aktualisieren Sie den Abschlussstatus einer erforderlichen Aufgabe, und anschließend zeigen Sie den aktualisierten Abschlussstatus der Aufgabe in der Liste der erforderlichen Aufgaben an.  
   
-#### <a name="to-test-the-form-region"></a>So testen Sie den Formularbereich  
+### <a name="to-test-the-form-region"></a>So testen Sie den Formularbereich  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um das Projekt auszuführen.  
   
      Outlook wird gestartet.  
   
@@ -219,7 +219,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Geben Sie im Aufgabenformular die Zeichenfolge **Abhängige Aufgabe** in das Feld **Betreff** ein.  
   
-4.  Auf der **Aufgabe** Registerkarte des Menübands in die **Aktionen** zu gruppieren, klicken Sie auf **speichern und schließen**.  
+4.  Auf der **Aufgabe** Registerkarte des Menübands in die **Aktionen** auf **speichern und schließen**.  
   
 5.  Klicken Sie in Outlook auf der Registerkarte **Start** auf **Neue Elemente**, dann auf **Weitere Elemente**und anschließend auf **Formular auswählen**.  
   
@@ -231,7 +231,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Wählen Sie im Kombinationsfeld **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** die Option **Abhängige Aufgabe**aus, und klicken Sie dann auf **Abhängige Aufgabe hinzufügen**.  
   
-     **0 % abgeschlossen – Abhängige Aufgabe** wird im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt. Dadurch wird bewiesen, dass Sie das Microsoft.Office.Interop.Outlook.OlkCommandButton.Click-Ereignis der Schaltfläche erfolgreich behandelt.  
+     **0 % abgeschlossen – Abhängige Aufgabe** wird im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt. Dies beweist, dass Sie erfolgreich behandelt die `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` -Ereignis der Schaltfläche.  
   
 9. Speichern und schließen Sie das Element **Primäre Aufgabe** .  
   
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Ändern Sie im Formular „Abhängige Aufgabe“ das Feld **% abgeschlossen** zu **50 %**.  
   
-12. Auf der **Aufgabe** Registerkarte des Menübands "abhängige Aufgabe" in der **Aktionen** zu gruppieren, klicken Sie auf **speichern und schließen**.  
+12. Auf der **Aufgabe** Registerkarte des Menübands abhängige Aufgabe in der **Aktionen** auf **speichern und schließen**.  
   
 13. Öffnen Sie das Element **Abhängige Aufgabe** erneut in Outlook.  
   
@@ -248,20 +248,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Nächste Schritte  
  Weitere Informationen zum Anpassen der Benutzeroberfläche einer Outlook-Anwendung finden Sie in diesen Themen:  
   
--   Weitere Informationen zum Entwerfen der Darstellung eines Formularbereichs durch Ziehen verwalteter Steuerelemente in einem visuellen Designer finden Sie unter [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Weitere Informationen zum Entwerfen der Darstellung eines Formularbereichs durch Ziehen von verwalteten Steuerelementen zu einem visuellen Designer finden Sie unter [Exemplarische Vorgehensweise: Entwerfen ein Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Informationen zum Anpassen des Menübands eines Outlook-Elements finden Sie unter [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Informationen zum Anpassen des Menübands eines Outlook-Elements finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
--   Weitere Informationen zum Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook finden Sie unter [benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).  
+-   Weitere Informationen zum Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zugreifen auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Zugriff auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)   
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Richtlinien zum Erstellen von Outlook-Formularbereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Gewusst wie: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Benutzerdefinierte Aktionen in Outlook-Formularbereichen](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Vorgehensweise: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Ausblenden von Text in Dokumenten | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Ausblenden von Text in Dokumenten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e2ea2f5f8af3876fe64d90d5f2d77874ebb252
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673400"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Gewusst wie: Programmgesteuertes Ausblenden von Text in Dokumenten
   Sie können Text in einem Dokument ausblenden, indem Sie die <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> -Eigenschaft der <xref:Microsoft.Office.Interop.Word.Range.Font%2A> für einen bestimmten Textbereich festlegen.  
   
- Sie können z. B. den Text in einer <xref:Microsoft.Office.Tools.Word.Bookmark> (in einer Anpassung auf Dokumentebene) oder in einer <xref:Microsoft.Office.Interop.Word.Bookmark> (in einem VSTO-Add-In) vorübergehend ausblenden, bevor Sie das Dokument an einen Drucker senden.  
+ Können beispielsweise den Text in zeitweise ausblenden einer <xref:Microsoft.Office.Tools.Word.Bookmark> (in einer Anpassung auf Dokumentebene) oder ein <xref:Microsoft.Office.Interop.Word.Bookmark> (in einem VSTO-Add-in), bevor Sie ein Dokument an einen Drucker senden.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>So blenden Sie Text in einem Bookmark-Steuerelement beim Drucken des Dokuments aus  
+## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>So blenden Sie Text in einem Bookmark-Steuerelement beim Drucken des Dokuments aus  
   
 1.  Erstellen Sie eine Prozedur, die sämtlichen Text in einem angegebenen Bereich ausblendet.  
   
@@ -53,14 +54,14 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
   
-## <a name="compiling-the-code"></a>Kompilieren des Codes  
- In diesem Codebeispiel wird davon ausgegangen, dass das Dokument ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement (in einer Anpassung auf Dokumentebene) oder <xref:Microsoft.Office.Interop.Word.Bookmark> -Steuerelement (in einem VSTO-Add-In) namens `bookmark1`enthält.  
+## <a name="compile-the-code"></a>Kompilieren des Codes  
+ In diesem Codebeispiel wird davon ausgegangen, dass das Dokument enthält eine <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement (in einer Anpassung auf Dokumentebene) oder <xref:Microsoft.Office.Interop.Word.Bookmark> -Steuerelement (in einem VSTO-Add-in) mit dem Namen `bookmark1`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Programmgesteuertes Drucken von Dokumenten](../vsto/how-to-programmatically-print-documents.md)   
- [Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Vorgehensweise: Programmgesteuertes Zurücksetzen von Bereichen in Word-Dokumenten](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext](../vsto/how-to-programmatically-update-bookmark-text.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Gewusst wie: Programmgesteuertes Drucken von Dokumenten](../vsto/how-to-programmatically-print-documents.md)   
+ [Gewusst wie: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Gewusst wie: Programmgesteuertes Zurücksetzen von Bereichen in Word-Dokumenten](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Gewusst wie: Programmgesteuertes Aktualisieren von Lesezeichentext](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 3'
 description: Eine exemplarische Vorgehensweise der Grundlagen von Django im Kontext von Visual Studio-Projekten, die zeigt, wie Sie statische Dateien bereitstellen, Seiten zur App hinzufügen, und die Vorlagenvererbung verwenden
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388344"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626823"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -27,7 +27,7 @@ In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Dj
 In diesem Schritt wird Folgendes erläutert:
 
 > [!div class="checklist"]
-> - Das Verwenden von Visual Studio-Elementvorlagen zur schnellen Erstellung neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3-1)
+> - Das Verwenden von Visual Studio-Elementvorlagen zum schnellen Hinzufügen neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3.1)
 > - Das Konfigurieren des Django-Projekts zur Bereitstellung von statischen Dateien (Schritt 3-2)
 > - Das Hinzufügen von zusätzlichen Seiten zur App (Schritt 3-3)
 > - Das Verwenden der Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste, die seitenübergreifend verwendet werden (Schritt 3-4)
@@ -78,7 +78,7 @@ Sie können Dateien mithilfe einer beliebigen Ordnerstruktur im Ordner *Static* 
     }
     ```
 
-1. Ersetzen Sie den Inhalt der Datei *templates/HelloDjangoApp/index.html* der App durch den folgenden Code, der das `<strong>`-Element ersetzt, das in Schritt 2 mit einer `<span>` verwendet wird, die auf die `message`-Formatklasse verweist. Wenn Sie Formatklasse auf diese Weise verwenden, sind Sie viel flexibler in der Gestaltung des Elements. (Wenn Sie *index.html* noch nicht in einen Unterordner in *Templates* verschoben haben, finden Sie weitere Informationen unter [Vorlagen-Namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) in Schritt 2.)
+1. Ersetzen Sie den Inhalt der Datei *templates/HelloDjangoApp/index.html* der App durch den folgenden Code, der das `<strong>`-Element ersetzt, das in Schritt 2 mit einer `<span>` verwendet wird, die auf die `message`-Formatklasse verweist. Wenn Sie Formatklasse auf diese Weise verwenden, sind Sie viel flexibler in der Gestaltung des Elements. (Wenn Sie Visual Studio 2017 15.7 und früher verwenden und *index.html* nicht in einem Unterordner von *Templates* verschoben haben, finden Sie Informationen dazu in Schritt 2-4 zum [Vorlagen-Namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing).)
 
     ```html
     <html>
@@ -186,7 +186,7 @@ Eine Basisvorlage grenzt Blöcke mit `{% block <block_name> %}`- und `{% endbloc
 
 Die folgenden Schritte veranschaulichen die Vererbung:
 
-1. Erstellen Sie im Ordner *templates/HelloDjangoApp* der App eine neue HTML-Datei (mit dem Kontextmenü **Hinzufügen** > **Neues Element** oder durch **Hinzufügen** > **HTML-Seite**) namens `layout.html`, und ersetzen Sie deren Inhalt durch folgendes Markup. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
+1. Erstellen Sie im Ordner *templates/HelloDjangoApp* der App eine neue HTML-Datei (über das Kontextmenü **Hinzufügen** > **Neues Element** oder **Hinzufügen** > **HTML-Seite**) namens *layout.html*, und ersetzen Sie deren Inhalt durch folgenden Markup-Code. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
 
     ```html
     <!DOCTYPE html>

@@ -1,5 +1,5 @@
 ---
-title: Geben Sie verfügbare Funktionen nach Office-Anwendung und Projekt
+title: Verfügbare Funktionen nach Office-Anwendung und Projekt geben.
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4b0c4ea5ec07fec187c5fa377239cdec2ccceb5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672314"
 ---
-# <a name="features-available-by-office-application-and-project-type"></a>Geben Sie verfügbare Funktionen nach Office-Anwendung und Projekt
+# <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekt geben.
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:  
   
 -   Anpassungen auf Dokumentebene  
   
 -   VSTO-Add-Ins  
   
- Nicht alle Anwendungen können jeden Projekttyp verwenden. Beispielsweise sind Projekte auf Dokumentebene nur für Microsoft Office Word und Microsoft Office Excel verfügbar. Ebenso sind einige Features nur für bestimmte Projekt- oder Anwendungstypen verfügbar. Der Aktionsbereich ist beispielsweise nur in Projekten auf Dokumentebene verfügbar, und Menübanderweiterungen stehen nur für einige Anwendungen zur Verfügung. Weitere Informationen zu den unterschiedlichen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ Nicht alle Anwendungen können jeden Projekttyp verwenden. Beispielsweise sind Projekte auf Dokumentebene nur für Microsoft Office Word und Microsoft Office Excel verfügbar. Ebenso sind einige Features nur für bestimmte Projekt- oder Anwendungstypen verfügbar. Der Aktionsbereich ist beispielsweise nur in Projekten auf Dokumentebene verfügbar, und Menübanderweiterungen stehen nur für einige Anwendungen zur Verfügung. Weitere Informationen zu den unterschiedlichen Projekttypen, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Office-Projektvorlagen sind nur in einigen Editionen von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügbar. Weitere Informationen finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -53,27 +54,27 @@ ms.lasthandoff: 05/22/2018
   
 |Feature|Projekttypen, die das Feature bereitstellen|Weiterführende Themen|  
 |-------------|--------------------------------------------|---------------------|  
-|Aktionsbereich|Projekte auf Dokumentebene|[Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)|  
+|Aktionsbereich|Projekte auf Dokumentebene|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|  
 |ClickOnce-Bereitstellung:|VS-Projekte und Projekte auf Dokumentebene|[Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)|  
 |Benutzerdefinierte Aufgabenbereiche|VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-Outlook<br />-PowerPoint<br />-Word|[Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)|  
 |Benutzerdefinierte XML-Teile|Projekte auf Dokumentebene<br /><br /> Projekte auf Anwendungsebene für die folgenden Anwendungen:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)|  
 |Datencache|Projekte auf Dokumentebene|[Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)|  
 |Machen Sie ein Objekt in einem VSTO-Add-in für andere Microsoft Office-Projektmappen verfügbar.|VSTO-Add-In-Projekte|[Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|Folgende Hoststeuerelemente:<br /><br /> -Diagramm<br />-ListObject<br />-NamedRange<br />-Content-Steuerelemente<br />-Lesezeichen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für Word und Excel|[Hostelemente und Host-Steuerelemente (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
-|Folgende Hoststeuerelemente:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Projekte auf Dokumentebene|[Hostelemente und Host-Steuerelemente (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
-|Bereitstellung von mehreren Projekten|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Bereitstellen von mehrere Office-Projektmappen in einem einzelnen ClickOnce-Installationsprogramm](http://msdn.microsoft.com/en-us/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Folgende Hoststeuerelemente:<br /><br /> -Diagramm<br />-ListObject<br />-NamedRange<br />– Content-Steuerelementen<br />-Lesezeichen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für Word und Excel|[Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
+|Folgende Hoststeuerelemente:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Projekte auf Dokumentebene|[Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
+|Bereitstellung von mehreren Projekten|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Bereitstellen von mehreren Office-Projektmappen in einem einzelnen ClickOnce-installer](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook-Formularbereiche|VSTO-Add-In-Projekte für Outlook|[Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)|  
-|Aktionen nach der Bereitstellung|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Kopieren eines Dokuments auf dem Computer des Endbenutzers nach einer ClickOnce-installation](http://msdn.microsoft.com/en-us/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Aktionen nach der Bereitstellung|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Kopieren eines Dokuments auf dem Computer des Endbenutzers nach einer ClickOnce-installation](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-Outlook<br />-PowerPoint<br />-Projekt<br />-Visio<br />-Word|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
-|Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekte in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|  
+|Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   
+ [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)   
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
- [Hostelemente und Host-Steuerelemente (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
+ [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   

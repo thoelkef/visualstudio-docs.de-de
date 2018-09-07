@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Project | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3572f07a9bb0e3fc9a38ec55ae260e19dd671620
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672327"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
-  Diese exemplarische Vorgehensweise veranschaulicht, wie Sie ein VSTO-Add-In für Microsoft Office Project erstellen. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
+  Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines VSTO-Add-Ins für Microsoft Office-Projekt. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] oder [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Erstellen des Projekts  
+## <a name="create-the-project"></a>Erstellen eines Projekts  
   
-#### <a name="to-create-a-new-project-in-visual-studio"></a>So erstellen Sie ein neues Projekt in Visual Studio  
+### <a name="to-create-a-new-project-in-visual-studio"></a>So erstellen Sie ein neues Projekt in Visual Studio  
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,42 +69,41 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstProjectAddIn** -Projekt und öffnet die Codedatei **ThisAddIn** im Editor.  
   
-## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Schreiben von Code, der einem Projekt eine neue Aufgabe hinzufügt  
- Als Nächstes fügen Sie der Codedatei „ThisAddIn“ Code hinzu. Der neue Code verwendet das Objektmodell von Project, um eine neue Aufgabe zu einem Projekt hinzuzufügen. Standardmäßig enthält die Codedatei „ThisAddIn“ den folgenden generierten Code:  
+## <a name="write-code-that-adds-a-new-task-to-a-project"></a>Schreiben von Code, der ein Projekt eine neue Aufgabe hinzufügt  
+ Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Objektmodell von Project, um eine neue Aufgabe zu einem Projekt hinzuzufügen. Standardmäßig enthält die Codedatei „ThisAddIn“ den folgenden generierten Code:  
   
--   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Project. Weitere Informationen finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
+-   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Project. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
--   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Project geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Project geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-task-to-a-new-project"></a>So fügen Sie eine Aufgabe zu einem neuen Projekt hinzu  
+### <a name="to-add-a-task-to-a-new-project"></a>So fügen Sie eine Aufgabe zu einem neuen Projekt hinzu  
   
-1.  Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das Ereignis "Neues Projekt" die Microsoft.Office.Interop.MSProject.Application-Klasse.  
+1.  Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für die `NewProject` Ereignis die `Microsoft.Office.Interop.MSProject.Application` Klasse.  
   
      Wenn der Benutzer ein neues Projekt erstellt, fügt dieser Ereignishandler eine Aufgabe zum Projekt hinzu.  
   
      [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- In diesem Codebeispiel werden die folgenden Objekte verwendet, um das Projekt zu ändern:  
+ Um das Projekt zu ändern, wird in diesem Codebeispiel wird die folgenden Objekte verwendet:  
   
--   Das `Application` -Feld der `ThisAddIn` -Klasse. Die `Application` Feld gibt ein Microsoft.Office.Interop.MSProject.Application-Objekt, das die aktuelle Instanz von Project darstellt.  
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Die `Application` Feld gibt einen `Microsoft.Office.Interop.MSProject.Application` Objekt, das die aktuelle Instanz von Project darstellt.  
   
--   Die `pj` Parameter des ereignishandlers für das Ereignis neues Projekt. Die `pj` Parameter ist ein Microsoft.Office.Interop.MSProject.Project-Objekt, das das Projekt darstellt. Weitere Informationen finden Sie unter [Project Solutions](../vsto/project-solutions.md).  
+-   Die `pj` Parameter des ereignishandlers für das NewProject-Ereignis. Die `pj` -Parameter ist ein `Microsoft.Office.Interop.MSProject.Project` -Objekt, das das Projekt darstellt. Weitere Informationen finden Sie unter [Projekt Lösungen](../vsto/project-solutions.md).  
   
-1.  Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code verbindet den `Application_Newproject` -Ereignishandler mit dem Ereignis neues Projekt.  
+1.  Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code verbindet den `Application_Newproject` -Ereignishandler mit dem NewProject-Ereignis.  
   
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]  
   
--  
   
-## <a name="testing-the-project"></a>Testen des Projekts  
+## <a name="test-the-project"></a>Testen Sie das Projekt  
  Wenn Sie das Projekt erstellen und ausführen, stellen Sie sicher, dass die neue Aufgabe in dem sich ergebenden neuen Projekt angezeigt wird.  
   
-#### <a name="to-test-the-project"></a>So testen Sie das Projekt  
+### <a name="to-test-the-project"></a>So testen Sie das Projekt  
   
 1.  Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen. Microsoft Project startet und öffnet automatisch ein neues leeres Projekt.  
   
-     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Project das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über das Erstellen von Office-Projektmappen](http://msdn.microsoft.com/en-us/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Project das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über Office-Lösung das Erstellen](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
   
 2.  Stellen Sie sicher, dass dem leeren Projekt eine neue Aufgabe hinzugefügt wird.  
   
@@ -113,29 +113,29 @@ ms.lasthandoff: 04/16/2018
   
 4.  Schließen Sie Microsoft Project.  
   
-## <a name="cleaning-up-the-project"></a>Bereinigen des Projekts  
+## <a name="clean-up-the-project"></a>Bereinigen Sie das Projekt  
  Wenn Sie die Entwicklung eines Projekts abgeschlossen haben, entfernen Sie die VSTO-Add-In-Assembly, die Registrierungseinträge und die Sicherheitseinstellungen vom Entwicklungscomputer. Andernfalls wird das VSTO-Add-In jedes Mal ausgeführt, wenn Sie Microsoft Project auf dem Entwicklungscomputer öffnen.  
   
-#### <a name="to-clean-up-your-project"></a>So bereinigen Sie das Projekt  
+### <a name="to-clean-up-your-project"></a>So bereinigen Sie das Projekt  
   
 1.  Klicken Sie in Visual Studio im Menü **Build** auf **Projektmappe bereinigen**.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Nachdem Sie nun ein einfaches VSTO-Add-In für Project erstellt haben, können Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins erfahren:  
   
--   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-Ins für Project ausführen können: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins für Project ausführen können: [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Verwenden des Project-Objektmodells: [Project Solutions](../vsto/project-solutions.md).  
+-   Mithilfe des Objektmodells des Projekts: [Projekt Lösungen](../vsto/project-solutions.md).  
   
--   Erstellen und Debuggen von VSTO-Add-ins für Project: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
+-   Erstellen und Debuggen von VSTO-Add-ins für Project: [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
   
--   Bereitstellen von VSTO-Add-ins für Project: [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md).  
+-   Bereitstellen von VSTO-Add-ins für Project: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Projektmappen](../vsto/project-solutions.md)   
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
- [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
+ [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
   
   

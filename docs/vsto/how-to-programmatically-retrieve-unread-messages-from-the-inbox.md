@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Abrufen Ungelesener Nachrichten aus dem Posteingang | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Abrufen ungelesener Nachrichten aus dem Posteingang'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec08c95a0543ab6ec47c0bded8126c6c2030c87e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673240"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Gewusst wie: Programmgesteuertes Abrufen ungelesener Nachrichten aus dem Posteingang
-  Dieses Beispiel ruft ungelesene e-Mail-Nachrichten aus dem Outlook- **Posteingang** ab und zeigt die Anzahl der Elemente an.  
+  In diesem Beispiel ruft ungelesene e-Mail-Nachrichten ab, aus dem Outlook- **Posteingang** und zeigt die Anzahl der Elemente.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,9 +36,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
- [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen von e-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Vorgehensweise: Programmgesteuertes Senden von E-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer E-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [Gewusst wie: Programmgesteuertes Erstellen von e-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Gewusst wie: Programmgesteuertes Senden von e-Mail-Adresse](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Gewusst wie: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

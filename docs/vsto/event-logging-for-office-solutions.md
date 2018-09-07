@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672291"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Projektmappen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/22/2018
 ## <a name="read-the-event-log"></a>Lesen Sie das Ereignisprotokoll  
  Öffnen Sie die **Ereignisanzeige** , und filtern Sie nach den Ereignissen, die Sie sehen möchten.  
   
-### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>So lesen Sie das Ereignisprotokoll in Windows Server 2003 und Windows XP  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Lesen Sie das Ereignisprotokoll in Windows Server 2003 und Windows XP  
   
 1.  Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
   
 7.  Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.  
   
-#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>So lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008  
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008  
   
 1.  Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/22/2018
  Um anzuzeigen, oder melden Sie ausnahmemeldungen, wenn eine Office-Projektmappe ausgeführt wird, finden Sie unter [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md) und [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalisierung  
- Die Sprache einer Ausnahmemeldung wird durch die Sprache der Visual Studio-Tools für Office Runtime bestimmt. Wenn auf dem Computer des Endbenutzers z. B. das japanische Language Pack installiert hat, wird die Ausnahmemeldung in Japanisch in das Ereignisprotokoll geschrieben.  
+ Die Sprache einer Ausnahmemeldung wird durch die Sprache der Visual Studio-Tools für Office Runtime bestimmt. Wenn es sich bei der Computer des Endbenutzers das japanische Sprachpaket installiert hat, ist die Ausnahmemeldung z. B. in das Ereignisprotokoll in japanischer Sprache geschrieben.  
   
 ## <a name="disable-the-event-logger"></a>Die ereignisprotokollierung deaktivieren  
  Standardmäßig wird die Ereignisprotokollierung aktiviert, wenn Sie Office-Projektmappen installieren oder deinstallieren. Sie können die Ereignisprotokollierung deaktivieren, indem Sie die Umgebungsvariable VSTO_EVENTLOGDISABLED auf „1“ (eins) festlegen.  

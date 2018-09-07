@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381171"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627203"
 ---
-# <a name="visual-studio-overview"></a>Übersicht über Visual Studio
+# <a name="welcome-to-the-visual-studio-ide"></a>Willkommen in der Visual Studio-IDE
 
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
 Visual Studio ist für Windows und Mac verfügbar. [Visual Studio für Mac](/visualstudio/mac/) enthält viele der Features von Visual Studio 2017 und wurde für die Entwicklung plattformübergeifender und mobiler Apps optimiert.
 
-Der Fokus dieses Artikels liegt auf Visual Studio 2017 für Windows. Die grundlegenden Features der IDE werden vorgestellt. Es werden einige Aktionen erläutert, die Sie mit Visual Studio durchführen können, unter anderem das Erstellen eines einfachen Projekts, die Verwendung von [IntelliSense](using-intellisense.md) als Hilfsmittel beim Programmieren und das Debuggen einer App, um den Wert einer Variablen während der Ausführung des Programms zu sehen. Darüber hinaus werden die verschiedenen Toolfenster vorgestellt.
+Der Fokus dieser Übersicht liegt auf Visual Studio 2017 für Windows. Die grundlegenden Features der IDE werden vorgestellt. Es werden einige Aktionen erläutert, die Sie mit Visual Studio durchführen können, unter anderem das Erstellen eines einfachen Projekts, die Verwendung von [IntelliSense](using-intellisense.md) als Hilfsmittel beim Programmieren und das Debuggen einer App, um den Wert einer Variablen während der Ausführung des Programms zu sehen. Darüber hinaus werden die verschiedenen Toolfenster vorgestellt.
 
 ## <a name="install-the-visual-studio-ide"></a>Installieren von Visual Studio-IDE
 
@@ -64,7 +64,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 - [IntelliSense](../ide/using-intellisense.md)
 
-   IntelliSense ist der Begriff für eine Gruppe von Features, mit denen Informationen zum Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr an anderer Stelle nachsehen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [C#-IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). In der folgenden Abbildung ist dargestellt, wie mit IntelliSense eine Memberliste für einen Typ angezeigt wird:
+   IntelliSense steht für eine Gruppe von Features, mit denen Informationen zum Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr an anderer Stelle nachsehen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [C#-IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). In der folgenden Abbildung ist dargestellt, wie mit IntelliSense eine Memberliste für einen Typ angezeigt wird:
 
    ![Visual Studio, Member-Liste](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispi
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 
-   ![Visual Studio in einem Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
 
 Weitere Informationen dazu, wie Sie die IDE personalisieren können, finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="next-steps"></a>Nächste Schritte
 
-Möchten Sie eine App für ein Android- oder ein iOS-Telefon erstellen? Möchten Sie lieber ein 3D-Spiel oder eine cloudfähige App erstellen? Weitere Informationen zu diesen und anderen Features von Visual Studio finden Sie unter [Features of Visual Studio 2017 (Features von Visual Studio 2017)](../ide/advanced-feature-overview.md).
+Informationen zu weiteren Features von Visual Studio finden Sie in den folgenden Artikeln:
 
-Wenn Sie nun mit dem Programmieren beginnen möchten, wählen Sie eines der Schnellstartthemen aus dem Inhaltsverzeichnis aus, z.B. [Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App](quickstart-aspnet-core.md).
+- Informationen zum Code-Editor finden Sie unter [Schnellstart: Verwenden des Code-Editors](quickstart-editor.md).
 
-Sie können ebenfalls die kostenlosen Visual Studio-Kurse nutzen, die unter [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) verfügbar sind.
+- Informationen zum Organisieren von Code mit Visual Studio finden Sie unter [Schnellstart: Projekte und Projektmappen](quickstart-projects-solutions.md).
+
+Wenn Sie sich ausführlicher mit dem Codieren beschäftigen möchten, erhalten Sie weitere Informationen in den folgenden sprachspezifischen Schnellstarts:
+
+- [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](quickstart-python.md)
+
+- [Use Visual Studio to create your first C# web app (Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten C#-Web-App)](quickstart-aspnet-core.md)
+
+- [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](quickstart-nodejs.md)
+
+- [Erste Schritte mit C++ in Visual Studio](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-* [More Visual Studio features (Features von Visual Studio 2017)](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Der Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Entdecken Sie [weitere Visual Studio-Features](../ide/advanced-feature-overview.md).
+- Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
+- Lesen Sie den [Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/).
+- Nutzen Sie die kostenlosen Visual Studio-Kurse, die unter [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) verfügbar sind.
+- Laden Visual Studio unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunter.

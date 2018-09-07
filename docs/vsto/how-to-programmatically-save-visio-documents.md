@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a98ff5a7b7df6e2e609ac2d3bf89d7fd4b23648
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4171f0237b7735748da567bd9482856c013759bc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673193"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten
   Es gibt mehrere Methoden zum Speichern von Microsoft Office Visio-Dokumenten:  
@@ -33,55 +34,55 @@ ms.lasthandoff: 04/16/2018
   
  Weitere Informationen finden Sie in der VBA-Referenzdokumentation für die Methoden [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) , [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) und [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) .  
   
-## <a name="saving-an-existing-document"></a>Speichern eines vorhandenen Dokuments  
+## <a name="save-an-existing-document"></a>Speichern Sie ein vorhandenes Dokument  
   
-#### <a name="to-save-a-document"></a>So speichern Sie einen Dokument  
+### <a name="to-save-a-document"></a>So speichern Sie einen Dokument  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Document.Save-Methode der Klasse Microsoft.Office.Tools.Visio.Document eines Dokuments, das zuvor gespeichert wurde.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Save` Methode der `Microsoft.Office.Tools.Visio.Document` Klasse eines Dokuments, das zuvor gespeichert wurde.  
   
      Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.  
   
     > [!NOTE]  
-    >  Die Microsoft.Office.Interop.Visio.Document.Save Methode löst eine Ausnahme aus, wenn ein neues Visio-Dokument noch nicht gespeichert wurde.  
+    >  Die `Microsoft.Office.Interop.Visio.Document.Save` Methode löst eine Ausnahme aus, wenn ein neues Visio-Dokument noch nicht gespeichert wurde.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]  
   
-## <a name="saving-a-document-with-a-new-name"></a>Speichern eines Dokuments unter einem neuen Namen  
- Verwenden Sie die Microsoft.Office.Interop.Visio.Document.SaveAs-Methode, um ein neues Dokument oder ein Dokument, das einem neuen Namen zu speichern. Diese Methode erfordert, dass Sie den neuen Dateinamen angeben.  
+## <a name="save-a-document-with-a-new-name"></a>Speichern Sie ein Dokument mit einem neuen Namen.  
+ Verwenden der `Microsoft.Office.Interop.Visio.Document.SaveAs` Methode, um ein neues Dokument oder ein Dokument, das einem neuen Namen zu speichern. Diese Methode erfordert, dass Sie den neuen Dateinamen angeben.  
   
-#### <a name="to-save-the-active-visio-document-with-a-new-name"></a>So speichern Sie das aktive Visio-Dokument unter einem neuen Namen  
+### <a name="to-save-the-active-visio-document-with-a-new-name"></a>So speichern Sie das aktive Visio-Dokument unter einem neuen Namen  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Document.SaveAs-Methode, der die Microsoft.Office.Tools.Visio.Document, die Sie speichern, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens möchten. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAs` Methode der `Microsoft.Office.Tools.Visio.Document` speichern, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens, möchten. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.  
   
      Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]  
   
-## <a name="saving-a-document-with-a-new-name-and-specified-arguments"></a>Speichern eines Dokuments unter einem neuen Namen und mit angegebenen Argumenten  
- Verwenden der Microsoft.Office.Interop.Visio.Document.SaveAsEx-Methode, um ein Dokument unter einem neuen Namen speichern, und geben Sie ggf. anwendbare Argumente an, auf das Dokument angewendet.  
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Speichern eines Dokuments unter einem neuen Namen und den angegebenen Argumenten  
+ Verwenden der `Microsoft.Office.Interop.Visio.Document.SaveAsEx` Methode, um ein Dokument mit einem neuen Namen speichern, und geben Argumente für das Dokument angewendet.  
   
-#### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>So speichern Sie ein Dokument unter einem neuen Namen und mit angegebenen Argumenten  
+### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>So speichern Sie ein Dokument unter einem neuen Namen und mit angegebenen Argumenten  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Document.SaveAsEx-Methode, der die Microsoft.Office.Tools.Visio.Document, die Sie speichern, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens möchten. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird eine Ausnahme ausgelöst.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAsEx` Methode der `Microsoft.Office.Tools.Visio.Document` speichern, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens, möchten. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird eine Ausnahme ausgelöst.  
   
      Im folgenden Codebeispiel wird das aktive Dokument unter einem neuen Namen gespeichert, das Dokument als schreibgeschützt markiert und in der Liste zuletzt verwendeter Dokumente angezeigt. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#12)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#12)]  
   
-## <a name="compiling-the-code"></a>Kompilieren des Codes  
+## <a name="compile-the-code"></a>Kompilieren des Codes  
  Für dieses Codebeispiel benötigen Sie Folgendes:  
   
--   Wenn Sie ein Dokument unter einem neuen Namen speichern möchten, muss sich ein Verzeichnis namens `Test` im Ordner "Eigene Dateien" (Windows XP und ältere Versionen) bzw. im Ordner "Dokumente" (Windows Vista) befinden.  
+-   Zum Speichern eines Dokuments, das einen neuen Namen verfügt, ein Verzeichnis namens `Test` Wohnsitz in die *eigene* Ordner (für Windows XP und früher) oder die *Dokumente* Ordner (für Windows Vista).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visio-Projektmappen](../vsto/visio-solutions.md)   
- [Visio-Objektmodellübersicht](../vsto/visio-object-model-overview.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  
+ [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
+ [Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

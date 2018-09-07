@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388123"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627033"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
@@ -104,12 +104,13 @@ Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verb
 
 Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit der Benutzeroberfläche vertraut zu machen. Weitere mögliche Schritte:
 
-- Erfahren Sie mehr über Visual Studio, und versuchen Sie sich im Debuggen unter [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md).
+> [!div class="nextstepaction"]
+> [Erfahren Sie mehr über den Code-Editor](../ide/quickstart-editor.md)
 
-- Lesen Sie den Abschnitt **Allgemeine Elemente der Benutzeroberfläche** der VS-Dokumentation, der sich ausführlicher mit Fenstern wie [Fehlerliste](../ide/reference/error-list-window.md), [Ausgabefenster](../ide/reference/output-window.md), [Eigenschaftenfenster](../ide/reference/properties-window.md) und dem Dialogfeld [Optionen](../ide/reference/options-dialog-box-visual-studio.md) befasst.
+> [!div class="nextstepaction"]
+> [Erfahren Sie mehr über Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schnellstart: Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Schnellstart: Schreiben von Code im Editor](../ide/quickstart-editor.md)
-- [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
+- [Übersicht der Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Ändern von Design und Schriftfarben](../ide/quickstart-personalize-the-ide.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 2'
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Schritten zur Erstellung einer App oder Verwendung von Ansichten und Vorlagen.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388253"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627011"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -52,7 +52,7 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 | --- | --- |
 | **\_\_init\_\_.py** | Die Datei, die die App als Paket identifiziert. |
 | **Migrations** | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei *\_\_init\_\_.py* (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
-| **Templates** (Vorlagen) | Ordner für Django-Seitenvorlagen, die eine Datei *index.html* enthalten. Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in *index.html*, sind Platzhalter für dynamische Werte, wie später in diesem Artikel (Schritt 2) erläutert wird. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
+| **Templates** (Vorlagen) | Ein Ordner für Django-Seitenvorlagen, der eine einzelne *index.html*-Datei in einem Ordner enthält, dessen Name mit dem der App übereinstimmt. (In Visual Studio 2017 Version 15.7 und früher ist die Datei direkt unter *Vorlagen* enthalten und Schritt 2-4 weist Sie an, den Unterordner zu erstellen.) Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in *index.html*, sind Platzhalter für dynamische Werte, wie später in diesem Artikel (Schritt 2) erläutert wird. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
 | **admin.py** | Python-Datei, in die Sie die Verwaltungsschnittstelle (siehe Schritt 6) der App erweitern, mit der Sie Daten in einer Datenbank sehen und bearbeiten. Diese Datei enthält zunächst nur die Anweisung `from django.contrib import admin`. Django enthält standardmäßig eine Standard-Verwaltungsschnittstelle über Einträge in der Datei *settings.py* des Django-Projekts, die Sie durch Auskommentieren vorhandener Einträge in *urls.py* aktivieren können. |
 | **apps.py** | Ein Python-Datei, die eine Konfigurationsklasse für die App definiert (weitere Informationen finden Sie im Anschluss an die Tabelle). |
 | **models.py** | Modelle sind Datenobjekte, die von Funktionen identifiziert werden, über die Ansichten mit der zugrunde liegenden Datenbank der App interagieren (siehe Schritt 6). Django stellt die Datenbankverbindungsschicht bereit, sodass sich Apps nicht selbst mit diesen Details befassen müssen. Die Datei *models.py* ist ein Standard-Ausgangspunkt für die Erstellung Ihrer Modelle und enthält zunächst nur die Anweisung `from django.db import models`. |
@@ -149,7 +149,7 @@ def index(request):
 Führen Sie das Projekt erneut aus, um die Meldung "**Hello Django!** am Montag, d. 16. April 2018, um 16:28:10“ zu sehen. Aktualisieren Sie die Seite, um die Zeit zu aktualisieren und zu bestätigen, dass der Inhalt mit jeder Anforderung generiert wird. Stoppen Sie den Server, wenn Sie fertig sind.
 
 > [!Tip]
-> Kurzbefehle für das Stoppen und erneute Starten des Projekts sind die Verwendung der Menübefehle **Debuggen** > **Neustart** (**STRG**+**UMSCHALTTASTE**+**F5**) oder die Verwendung der Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste:
+> Kurzbefehle für das Stoppen und erneute Starten des Projekts sind die Verwendung der Menübefehle **Debuggen** > **Neustart** (**STRG**+**UMSCHALTTASTE**+**F5**) oder die Verwendung der Schaltfläche **Neu starten** auf der Debugging-Symbolleiste:
 >
 > ![Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -176,7 +176,7 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
     'APP_DIRS': True,
     ```
 
-1. Öffnen Sie im Ordner *HelloDjangoApp* die Seitenvorlagendatei *templates/index.html*, um zu prüfen, ob sie eine Variable `{{ content }}` enthält:
+1. Öffnen Sie im Ordner *HelloDjangoApp* die Seitenvorlagendatei *templates/HelloDjangoApp/index.html* (oder *templates/index.html* in VS 2017 Version 15.7 oder früher), um zu prüfen, ob sie eine Variable `{{ content }}` enthält:
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -209,9 +210,9 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
     Das erste Argument für `render` ist das Anforderungsobjekt, gefolgt vom relativen Pfad zur Vorlagendatei im Ordner *Templates* der App. Ggf. wird eine Vorlagendatei nach der Ansicht benannt, die sie unterstützt. Das dritte Argument, `render`, ist ein Variablen-Dictionary, auf das die Vorlage verweist. Sie können Objekte in das Dictionary einschließen. In diesem Fall kann eine Variable in der Vorlage auf `{{ object.property }}` verweisen.
 
-1. Führen Sie das Projekt aus, und berücksichtigen Sie die Ausgabe. Sie sollten eine mit der Meldung aus Schritt 2-2 vergleichbare Meldung sehen, die angibt, dass die Vorlage funktioniert.
+1. Führen Sie das Projekt aus, und berücksichtigen Sie die Ausgabe. Sie sollten eine ähnliche Meldung wie in Schritt 2-2 sehen, die angibt, dass die Vorlage funktioniert.
 
-    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injectionangriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Escapezeichen sind auch eine Erinnerung daran, dass es am besten ist, HTML-Code außerhalb des Codes in der Seitenvorlage zu schreiben. Glücklicherweise ist es eine einfache Angelegenheit, bei Bedarf zusätzliche Variablen zu erstellen. Ändern Sie z.B. *templates/index.html* entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage beibehält:
+    Beachten Sie jedoch, dass der HTML-Code, den Sie in der Eigenschaft `content` verwenden, nur als Nur-Text gerendert wird, da die Funktion `render` das HTML automatisch mit Escapezeichen versieht. Automatische Escapezeichen verhindern, dass unbeabsichtigte Sicherheitslücken durch Injectionangriffe ausgenutzt werden. Entwickler nutzen nämlich häufig die Eingaben auf einer Seite und verwenden diese mithilfe eines Vorlagenplatzhalters als Wert auf einer anderen Seite. Escapezeichen sind auch eine Erinnerung daran, dass es am besten ist, HTML-Code außerhalb des Codes in der Seitenvorlage zu schreiben. Glücklicherweise ist es eine einfache Angelegenheit, bei Bedarf zusätzliche Variablen zu erstellen. Ändern Sie z.B. *index.html* mit *Vorlagen* entsprechend dem folgenden Markup, das einen Seitentitel hinzufügt und die gesamte Formatierung in der Seitenvorlage beibehält:
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
     ![Ausführen der App mithilfe der Vorlage](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Als letzten Schritt verschieben Sie Ihre Vorlagen in einen Unterordner, der den gleichen Namen hat wie Ihre App. Dadurch wird ein Namespace erstellt, und potenzielle Konflikte mit anderen Apps, die Sie möglicherweise dem Projekt hinzufügen, können vermieden werden. Erstellen Sie also einen Unterordner in *Templates* mit dem Namen *HelloDjangoApp*, verschieben Sie *index.html* in diesen Unterordner, und ändern Sie die Ansichtsfunktion `index` so, dass sie auf den neuen Pfad der Vorlage, *HelloDjangoApp/index.html*, verweist. Führen Sie anschließend das Projekt aus, stellen Sie sicher, dass die Seite ordnungsgemäß gerendert wird, und stoppen Sie den Server.
+1. <a name="template-namespacing"></a>Visual Studio 2017 Version 15.7 und früher: Als letzten Schritt verschieben Sie Ihre Vorlagen in einen Unterordner, der den gleichen Namen hat wie Ihre App. Dadurch wird ein Namespace erstellt, und potenzielle Konflikte mit anderen Apps, die Sie möglicherweise dem Projekt hinzufügen, können vermieden werden. (Die Vorlagen in VS 2017 15.8 und höher erledigen dies automatisch.) Erstellen Sie also einen Unterordner in *Templates* mit dem Namen *HelloDjangoApp*, verschieben Sie *index.html* in diesen Unterordner, und ändern Sie die Ansichtsfunktion `index` so, dass sie auf den neuen Pfad der Vorlage, *HelloDjangoApp/index.html*, verweist. Führen Sie anschließend das Projekt aus, stellen Sie sicher, dass die Seite ordnungsgemäß gerendert wird, und stoppen Sie den Server.
 
 1. Führen Sie einen Commit der Änderungen an der Quellcodeverwaltung aus, und aktualisieren ggf. Sie das Remoterepository, wie unter [Schritt 2-2](#commit-to-source-control) beschrieben.
 

@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381054"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42627192"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
 
+## <a name="3804"></a>3.8.0.4
+ Veröffentlichung: 14. August 2018
+ 
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Auswertung:**
+
+    -   Unterstützung für Zeigerwerte wurde hinzugefügt.
+    
+    -   Unterstützung für generische Methoden wurde hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Intelligentes erneutes Laden mit mehreren geänderten Projekten
+
+## <a name="3803"></a>3.8.0.3
+ Veröffentlichung: 24. Juli 2018
+ 
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
+
+## <a name="3802"></a>3.8.0.2
+ Veröffentlichung: 7. Juli 2018
+ 
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
+    
+## <a name="3801"></a>3.8.0.1
+ Veröffentlichung: 26. Juli 2018
+ 
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Debuggen:**
+
+    -   Unterstützung für die Befehle „UserLog“ und „UserBreak“ wurde hinzugefügt.
+    
+    -   Unterstützung für verzögerte Typlast wurde hinzugefügt (optimiert die Antwortlatenz von Netzwerklast und Debugger).
+       
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Auswertung:**
+
+    -   Verbesserte Ausdrucksauswertung und Methodensuche von Binäroperatoren
+
+## <a name="3800"></a>3.8.0.0
+ Veröffentlichung: 30. Mai 2018
+ 
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Debuggen:**
+
+    -   Unterstützung für die Anzeige von Variablen in asynchronen Konstrukten hinzugefügt.
+    
+    -   Unterstützung für die Verarbeitung von geschachtelten Typen beim Festlegen von Haltepunkten hinzugefügt, um Warnungen mit Compilerkonstrukten zu verhindern.
+    
+-   **Integration:**
+
+    -   Unterstützung für TextMate-Grammatiken für Shaders wurde hinzugefügt (die C++-Workload wird nicht länger für die Codeeinfärbung für Shader benötigt).
+    
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Konvertieren Sie keine portablen PDB-Dateien mehr in MDB-Dateien, wenn Sie die neue Unity-Runtime verwenden.
+
 ## <a name="3701"></a>3.7.0.1
- Veröffentlichung: 7.5.2018
+ Veröffentlichung: 7. Mai 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -30,7 +103,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Ein Abhängigkeitsproblem bei der Verwendung des experimentellen Builds wurde behoben.
 
 ## <a name="3700"></a>3.7.0.0
- Veröffentlichung: 7.5.2018
+ Veröffentlichung: 7. Mai 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -59,7 +132,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Der Paket-Manager wird aus der Kompilierung von Einheiten aus der Generierung ausgeschlossen.
 
 ## <a name="3605"></a>3.6.0.5
- Veröffentlichung: 13.03.2018
+ Veröffentlichung: 13. März 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -78,7 +151,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Festlegen der nächsten Anweisung wurde korrigiert.
 
 ## <a name="3604"></a>3.6.0.4
- Veröffentlichung: 05.03.2018
+ Veröffentlichung: 5. März 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -91,7 +164,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Probleme bei Zeitabläufen mit 2018.1 und Plug-in-Aktivierung behoben.
 
 ## <a name="3603"></a>3.6.0.3
- Veröffentlichung: 23.02.2018
+ Veröffentlichung: 23. Februar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -110,7 +183,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Abbruch bei Ausnahmen, die außerhalb von Benutzercode ausgelöst werden, korrigiert.
 
 ## <a name="3602"></a>3.6.0.2
- Veröffentlichung: 07.02.2018
+ Veröffentlichung: 7. Februar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -125,7 +198,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Nur Projekte bei externer Änderung neu laden (mit Einschränkungen).
 
 ## <a name="3601"></a>3.6.0.1
- Veröffentlichung: 24.01.2018
+ Veröffentlichung: 24. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -136,7 +209,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Indirekter Aufruf von EditorPrefs.GetBool, der den Inspektor beim Versuch beeinträchtigt, die Größe des Arrays zu ändern, korrigiert.
 
 ## <a name="3600"></a>3.6.0.0
- Veröffentlichung: 10.01.2018
+ Veröffentlichung: 10. Januar 2018
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -171,7 +244,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Aktualisieren des Roslyn-Kontexts vor dem Einfügen der Methode.
 
 ## <a name="3503"></a>3.5.0.3
- Veröffentlichung: 09.01.2018
+ Veröffentlichung: 9. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -180,7 +253,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Automatische Konvertierung des Debugsymbols von „pdb“ zu „mdb“ wurde behoben.
 
 ## <a name="3502"></a>3.5.0.2
- Veröffentlichung: 04.12.2017
+ Veröffentlichung: 4. Dezember 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -213,7 +286,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Erzwingen Sie nicht das Unity-Flag „AllowAttachedDebuggingOfEditor“, da der Standard jetzt TRUE ist.
 
 ## <a name="3402"></a>3.4.0.2
- Veröffentlichung: 19.09.2017
+ Veröffentlichung: 19. September 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -244,7 +317,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Fehlerhafter Verweis auf Microsoft.CSharp für API-Ebene wurde in Unity 4.6 behoben.
 
 ## <a name="3302"></a>3.3.0.2
- Veröffentlichung: 15.8.2017
+ Veröffentlichung: 15. August 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -253,7 +326,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Korrigiert: Die Visual Studio-Projektmappengenerierung in Unity 5.5 und vorherigen Versionen.
 
 ## <a name="3300"></a>3.3.0.0
- Veröffentlichung: 14.08.2017
+ Veröffentlichung: 14. August 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -282,7 +355,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Fehlerhafte define-Anweisungen bei API-Ebenen wurden behoben.
 
 ## <a name="3200"></a>3.2.0.0
- Veröffentlichung: 10.05.2017
+ Veröffentlichung: 10. Mai 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -299,7 +372,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Bildflimmern bei Unity-Nachrichten wurde behoben.
 
 ## <a name="3100"></a>3.1.0.0
- Veröffentlichung: 07.04.2017
+ Veröffentlichung: 7. April 2017
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -328,12 +401,12 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Entfernte Assemblyversion nach der Verarbeitung.
 
 ## <a name="3001"></a>3.0.0.1
- Veröffentlichung: 07.03.2017
+ Veröffentlichung: 7. März 2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Diese Version enthält alle neuen Funktionen und Fehlerbehebungen, die in der Serie 2.8.x eingeführt wurden.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0–3.0 – Vorschauversion 3
- Veröffentlichung: 25.1.2017
+ Veröffentlichung: 25. Januar 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -342,7 +415,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Korrektur einer Regression, durch die zweimal auf Plug-Ins-Projekte verwiesen wurde, einmal als binäre DLL-Datei und einmal als Projektverweis.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0–3.0 – Vorschauversion 2
- Veröffentlichung: 23.1.2017
+ Veröffentlichung: 23. Januar 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -369,7 +442,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Umstellung auf https als Ziel für die ferne Unity-Dokumentation.
 
 ## <a name="2800---30-preview"></a>2.8.0.0–3.0 – Vorschauversion
- Veröffentlichung: 17.11.2016
+ Veröffentlichung: 17. November 2016
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -436,7 +509,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Behebung eines Problems, das beim Kompilieren eines Skripts mit einem webcodierten Dateinamen eine Kompilierung verhinderte.
 
 ## <a name="2300"></a>2.3.0.0
- Veröffentlichung: 14.7.2016
+ Veröffentlichung: 14. Juli 2016
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -471,7 +544,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Behebung mehrerer Probleme bei der Ausdrucksauswertung.
 
 ## <a name="2200"></a>2.2.0.0
- Veröffentlichung: 04.02.2016
+ Veröffentlichung: 4. Februar 2016
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -518,7 +591,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Es wurden Probleme behoben, die beim Deinstallieren von VSTU aufgetreten sind, wenn für mehrere verschiedene Versionen von Visual Studio dieselbe Version von VSTU installiert war. Zum Beispiel, wenn sowohl VSTU **2015** 2.1.0.0 als auch VSTU **2013** 2.1.0.0 installiert waren.
 
 ## <a name="2100"></a>2.1.0.0
- Veröffentlichung: 08.09.2015
+ Veröffentlichung: 8. September 2015
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -539,7 +612,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Trefferanzahl-Haltepunkte in Visual Studio 2015.
 
 ## <a name="2000"></a>2.0.0.0
- Veröffentlichung: 20.07.2015
+ Veröffentlichung: 20. Juli 2015
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -574,7 +647,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
     -   Korrektur der Überprüfung leerer Arrays.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0–2.0 – Vorschauversion 2
- Veröffentlichung: 02.04.2015
+ Veröffentlichung: 2. April 2015
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -663,7 +736,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Benutzeroberfläche:** Unterstützung von Visual Studio-Designs für Kontextmenü und Symbole.
 
 ## <a name="1980---20-preview"></a>1.9.8.0–2.0 – Vorschauversion
- Veröffentlichung: 12.11.2014
+ Veröffentlichung: 12. November 2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -702,7 +775,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Registrierung des Rückrufprotokolls, nur wenn unbedingt erforderlich.
 
 ## <a name="1920"></a>1.9.2.0
- Veröffentlichung: 09.10.2014
+ Veröffentlichung: 9. Oktober 2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -725,7 +798,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines Fehlers, bei dem alle Objekte den Projektdateien hinzugefügt wurden, wenn der Erweiterungsfilter leer war.
 
 ## <a name="1910"></a>1.9.1.0
- Veröffentlichung: 22.09.2014
+ Veröffentlichung: 22. September 2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -770,7 +843,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur beim Öffnen von Skripts mit VSTU in 64-Bit-Versionen von Unity.
 
 ## <a name="1900"></a>1.9.0.0
- Veröffentlichung: 29.07.2014
+ Veröffentlichung: 29. Juli 2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -818,7 +891,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 >  C# ist die vorherrschende Sprache im Unity-Ökosystem. Die neuen Beispielobjekte sind in C# geschrieben. Die Unity-Dokumentation wurde standardmäßig auf C# umgestellt. UnityScript und Boo werden nicht mehr unterstützt, um den Schwerpunkt ganz auf die C#-Umgebung zu legen. Demzufolge basieren VSTU-Lösungen nun ausschließlich auf C# und können viel schneller geladen werden.
 
 ## <a name="1820"></a>1.8.2.0
- Veröffentlichung: 07.01.2014
+ Veröffentlichung: 7. Januar 2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -845,7 +918,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Verhinderung eines Absturzes in Unity, wenn die versionsspezifisch generierte Assembly nicht mehr synchron ist.
 
 ## <a name="1810"></a>1.8.1.0
- Veröffentlichung: 21.11.2013
+ Veröffentlichung: 21. November 2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -878,7 +951,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur beim Öffnen von Skripts zum Vermeiden der Verwechslung der ALT+TAB-Reihenfolge für Unity 4.2 und höher.
 
 ## <a name="1800"></a>1.8.0.0
- Veröffentlichung: 24.09.2013
+ Veröffentlichung: 24. September 2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -919,7 +992,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Änderung boolescher Werte in der lokalen Ansicht.
 
 ## <a name="1220"></a>1.2.2.0
- Veröffentlichung: 09.07.2013
+ Veröffentlichung: 9. Juli 2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -942,7 +1015,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Verarbeitung von Unity 4.2 Beta-Assemblys.
 
 ## <a name="1210"></a>1.2.1.0
- Veröffentlichung: 09.04.2013
+ Veröffentlichung: 9. April 2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -955,7 +1028,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Bindung von Haltepunkten in einigen externen DLLs.
 
 ## <a name="1200"></a>1.2.0.0
- Veröffentlichung: 25.03.2013
+ Veröffentlichung: 25. März 2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1022,10 +1095,10 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur von Bug UVS-11: Lokale Variablen in Co-Routinen.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 – Betarelease
- Veröffentlichung: 09.10.2014
+ Veröffentlichung: 9. März 2013
 
 ## <a name="10130"></a>1.0.13.0
- Veröffentlichung: 21.01.2013
+ Veröffentlichung: 21. Januar 2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1048,7 +1121,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Verarbeitung langer Meldungen, die von Unity an UnityVS gesendet werden. Zuvor konnten lange Meldungen unseren Meldungsteil von UnityVS zum Absturz bringen. Die Folge war, dass UnityVS manchmal eine Datei aus Unity nicht öffnen konnte.
 
 ## <a name="10120"></a>1.0.12.0
- Veröffentlichung: 03.01.2013
+ Veröffentlichung: 3. Januar 2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1067,7 +1140,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines API-Fehlers, bei dem Benutzercode nicht am Handler des Protokollrückrufs teilnehmen kann.
 
 ## <a name="10110"></a>1.0.11.0
- Veröffentlichung: 28.11.2012
+ Veröffentlichung: 28. November 2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1098,7 +1171,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines Absturzes, wenn wir unser Symbol nicht in die Statusleiste von Visual Studio einfügen können.
 
 ## <a name="10100"></a>1.0.10.0
- Veröffentlichung: 09.10.2012
+ Veröffentlichung: 9. Oktober 2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1111,7 +1184,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur, wie Assemblys aus Unity abgerufen werden, um das Sperren von Dateien und Verwechseln des Unity-Buildprozesses zu vermeiden.
 
 ## <a name="1090"></a>1.0.9.0
- Veröffentlichung: 03.10.2012
+ Veröffentlichung: 3. Oktober 2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1130,7 +1203,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur von Bug UVS-21: Ungültiger Zeiger beim Auswerten eines Methodenaufrufs in der Unity-Math-API.
 
 ## <a name="1080"></a>1.0.8.0
- Veröffentlichung: 26.09.2012
+ Veröffentlichung: 26. September 2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1141,7 +1214,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur, wie UnityVS in Visual Studio 2010 registriert wird.
 
 ## <a name="1070"></a>1.0.7.0
- Veröffentlichung: 14.09.2012
+ Veröffentlichung: 14. September 2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1157,10 +1230,10 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 >  Durch die Unterstützung für Visual Studio 2012 mussten wir einige Dateien umbenennen und andere verschieben. Das UnityVS-Paket zum Importieren von Unity heißt jetzt für Visual Studio 2010 bzw. Visual Studio 2012 entweder UnityVS 2010 oder UnityVS 2012. Diese Version erfordert auch, dass die UnityVS-Projektdateien neu generiert werden.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 – Interner Build
- Veröffentlichung: 12.09.2012
+ Veröffentlichung: 12. September 2012
 
 ## <a name="1050"></a>1.0.5.0
- Veröffentlichung: 10.09.2012
+ Veröffentlichung: 10. September 2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1169,7 +1242,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Erkennung von Unity-Instanzen, wenn Unity mit dem Asset-Server verbunden war. Dadurch wurden Fehler beim Öffnen von Dateien aus Unity und bei der automatischen Verbindung von Visual Studio-Debuggers ausgelöst.
 
 ## <a name="1040"></a>1.0.4.0
- Veröffentlichung: 05.09.2012
+ Veröffentlichung: 5. September 2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1182,7 +1255,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines UnityVS-Absturzes während des Debuggens, der von Unity-internen Methoden oder Eigenschaften ausgelöst wurde.
 
 ## <a name="1030"></a>1.0.3.0
- Veröffentlichung: 04.09.2012
+ Veröffentlichung: 4. September 2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1197,7 +1270,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines zufälligen VS-Absturzes, der durch unsere benutzerdefinierte Statusleiste verursacht wurde.
 
 ## <a name="1020"></a>1.0.2.0
- Veröffentlichung: 30.08.2012
+ Veröffentlichung: 30. August 2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -1208,7 +1281,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur eines Bugs dahingehend, wie Skriptassemblys mit Unity 4 b7 aus Unity abgerufen werden.
 
 ## <a name="1010"></a>1.0.1.0
- Veröffentlichung: 28.08.2012
+ Veröffentlichung: 28. August 2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -1225,4 +1298,4 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   Korrektur der Vervollständigung für DLL-Dateien im Ordner "Asset" für UnityScript und Boo.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 – Erstrelease
- Veröffentlichung: 22.08.2012
+ Veröffentlichung: 22. August 2012

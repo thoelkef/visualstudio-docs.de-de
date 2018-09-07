@@ -1,5 +1,5 @@
 ---
-title: Kennwortschutz für Office-Dokumente | Microsoft Docs
+title: Kennwortschutz für Office-Dokumente
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,31 +19,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572711"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671834"
 ---
 # <a name="password-protection-on-office-documents"></a>Kennwortschutz für Office-Dokumente
-  Es ist möglich, ein Kennwort für Microsoft Office Word-Dokumente und Microsoft Office Excel-Arbeitsmappen festlegen, damit sie von einem Benutzer geöffnet werden können, die nicht das Kennwort kennt. Diese Option heißt auch **Kennwort beim Öffnen**.  
+  Es ist möglich, zum Festlegen eines Kennworts auf Microsoft Office Word-Dokumente und Microsoft Office Excel-Arbeitsmappen, sodass sie von einer Person nicht geöffnet werden kann, die das Kennwort nicht bekannt ist. Diese Option heißt **Kennwort beim Öffnen**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Sie können Projekte auf Dokumentebene, die mithilfe vorhandener Dokumente und Arbeitsmappen mit erstellen **Kennwort beim Öffnen** aktiviert. Das Verhalten in Visual Studio unterscheidet sich für Word und Excel-Dokumenten, die über **Kennwort beim Öffnen** aktiviert.  
+ Sie können Projekte auf Dokumentebene, die mithilfe vorhandener Dokumente und Arbeitsmappen, erstellen **Kennwort beim Öffnen** aktiviert. Das Verhalten in Visual Studio unterscheidet sich für Word und Excel-Dokumenten, die **Kennwort beim Öffnen** aktiviert.  
   
- Informationen zum Aktivieren der **Kennwort beim Öffnen**, finden Sie in Word oder Excel-Hilfe.  
+ Weitere Informationen zum Aktivieren **Kennwort beim Öffnen**, finden Sie in Word oder Excel-Hilfe.  
   
-## <a name="behavior-of-excel-and-word"></a>Das Verhalten von Excel und Word  
- Jedes Mal, wenn Sie eine Excel-Arbeitsmappe in Visual Studio öffnen, die hat **Kennwort beim Öffnen** aktiviert, Excel fordert Sie das Kennwort. Beim Erstellen der Projektmappe werden Sie für das Kennwort erneut aufgefordert werden, da das Dokument, während des Buildvorgangs geöffnet wird.  
+## <a name="behavior-of-excel-and-word"></a>Verhalten von Excel und Word  
+ Jedes Mal, wenn Sie eine Excel-Arbeitsmappe in Visual Studio öffnen, die **Kennwort beim Öffnen** aktiviert, Excel aufgefordert, das Kennwort einzugeben. Wenn Sie die Projektmappe erstellen werden Sie für das Kennwort in diesem Fall aufgefordert, da das Dokument, während des Buildvorgangs geöffnet wird.  
   
- Beim ersten Öffnen Sie ein Word-Dokument in Visual Studio, ist **Kennwort beim Öffnen** aktiviert, Word fordert Sie das Kennwort. Nachdem Sie das Kennwort erfolgreich eingegeben **Kennwort beim Öffnen** aus dem Dokument entfernt wird und das Dokument zu öffnen, wird nicht mehr ein Kennwort erfordern. Wenn das Dokument in der Projektmappe verwendet werden soll, ein Kennwort erforderlich kann geöffnet ist, müssen Sie aktivieren **Kennwort beim Öffnen** nach dem letzten Build und vor dem Bereitstellen der Lösung.  
+ Beim ersten Öffnen Sie ein Word-Dokument, in Visual Studio, die **Kennwort beim Öffnen** aktiviert, Word aufgefordert, das Kennwort einzugeben. Nachdem Sie das Kennwort eingegeben **Kennwort beim Öffnen** aus dem Dokument entfernt wird, und Öffnen des Dokuments wird ein Kennwort nicht mehr benötigen. Wenn Sie das Dokument in Ihrer Projektmappe möchten, benötigen ein Kennwort ein, bevor es geöffnet werden kann, müssen Sie aktivieren **Kennwort beim Öffnen** nach dem letzten Build und vor dem Bereitstellen der Lösung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Dokumentschutz in Projektmappen auf Dokumentebene](../vsto/document-protection-in-document-level-solutions.md)   
- [Information Rights Management und Erweiterungen – Übersicht von verwaltetem code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Vorgehensweise: Zulassen von Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Dokumentschutz in Projektmappen auf Anwendungsebene](../vsto/document-protection-in-document-level-solutions.md)   
+ [Verwaltung von Informationsrechten und Erweiterungen für verwalteten code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Gewusst wie: zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
   
   

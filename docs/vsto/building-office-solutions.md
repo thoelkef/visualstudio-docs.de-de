@@ -29,19 +29,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4adafc1acfda949a16a3daa3db8da2e96eba2d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673248"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Projektmappen
-  Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen Sie in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
+  Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
   
 > [!NOTE]  
->  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
+>  Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
-## <a name="project-output-for-office-projects"></a>Projektausgabe für Office-Projekten  
+## <a name="project-output-for-office-projects"></a>Projektausgabe für Office-Projekte  
  Der Ausgabeort für Office-Projekte ist „ *Projektname*\bin\release“ oder „ *Projektname*\bin\debug“. Sie können die Erstellung nicht in einem Bereitstellungsverzeichnis vornehmen.  
   
 ### <a name="document-level-projects"></a>Projekte auf Dokumentebene  
@@ -51,23 +52,23 @@ ms.lasthandoff: 05/17/2018
   
 -   Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.  
   
--   Das Anwendungsmanifest, besitzt die Dateierweiterung *.manifest*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
+-   Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
--   Das Bereitstellungsmanifest, das die Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
+-   Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
   
 -   Eine Programmdatenbank (*PDB*) Datei.  
   
 > [!NOTE]  
->  Wenn Sie eine Projektmappe auf Dokumentebene an einem Remotespeicherort anstatt auf dem lokalen Computer erstellen, fügen Sie den vollqualifizierten Pfad zur Liste vertrauenswürdiger Speicherorte im Vertrauensstellungscenter der Anwendung hinzu. Weitere Informationen finden Sie im Abschnitt Gewähren von Vertrauenswürdigkeit für Dokumente in [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).  
+>  Wenn Sie eine Projektmappe auf Dokumentebene an einem Remotespeicherort anstatt auf dem lokalen Computer erstellen, fügen Sie den vollqualifizierten Pfad zur Liste vertrauenswürdiger Speicherorte im Vertrauensstellungscenter der Anwendung hinzu. Weitere Informationen finden Sie im Abschnitt mit dem Gewähren von Vertrauenswürdigkeit für Dokumente in [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).  
   
-### <a name="application-level-projects"></a>Projekte auf Anwendungsebene  
- Wenn Sie ein VSTO Add-In-Projekt erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:  
+### <a name="application-level-projects"></a>Anwendungsebene  
+ Wenn Sie ein VSTO-Add-in-Projekt erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:  
   
 -   Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.  
   
--   Das Anwendungsmanifest, besitzt die Dateierweiterung *.manifest*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
+-   Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
--   Das Bereitstellungsmanifest, das die Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
+-   Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
   
 -   Eine Programmdatenbank (*PDB*)-Datei für die Projektassembly.  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 05/17/2018
  Weitere Informationen finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).  
   
 ### <a name="network-projects"></a>Netzwerkprojekte  
- Wenn sich der Speicherort der Assembly oder des Dokuments auf einer Netzwerkfreigabe befindet, ist die Aktualisierung der lokalen Sicherheitsrichtlinie (auf Benutzerebene) nicht ausreichend, um die Ausführung der Projektmappe zu gestatten. Ein Administrator muss Assemblys und Dokumenten, die sich auf einer Netzwerkfreigabe befinden, volle Vertrauenswürdigkeit auf Computerebene gewähren, bevor die Projektmappe ausgeführt werden kann. Weitere Informationen zum Festlegen der Sicherheitsrichtlinie finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).  
+ Wenn sich der Speicherort der Assembly oder des Dokuments auf einer Netzwerkfreigabe befindet, ist die Aktualisierung der lokalen Sicherheitsrichtlinie (auf Benutzerebene) nicht ausreichend, um die Ausführung der Projektmappe zu gestatten. Ein Administrator muss Assemblys und Dokumenten, die sich auf einer Netzwerkfreigabe befinden, volle Vertrauenswürdigkeit auf Computerebene gewähren, bevor die Projektmappe ausgeführt werden kann. Weitere Informationen zum Festlegen von Sicherheitsrichtlinien finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).  
   
  Für Projekte auf Dokumentebene müssen Sie außerdem den vollqualifizierten Speicherort des Dokuments zur Office-Liste vertrauenswürdiger Ordner hinzufügen. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 05/17/2018
   
  Wenn Sie für die Zielplattform x64 festlegen, kann die Projektmappe nicht in 32-Bit-Versionen von Windows oder Office ausgeführt werden. Die x64-Zielplattform erfordert, dass die Projektmappe in einem 64-Bit-Prozess ausgeführt wird.  
   
-## <a name="use-the-clean-command"></a>Verwenden Sie den Befehls "bereinigen"  
+## <a name="use-the-clean-command"></a>Mithilfe des Befehls zum Bereinigen  
  Um die erstellten Projektdateien vom Entwicklungscomputer zu entfernen, können Sie den Befehl **Bereinigen** aus dem Menü **Erstellen** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verwenden. Der Befehl **Bereinigen** löscht alle Dateien im Ausgabespeicherort des Builds. Für Projekte auf Anwendungsebene entfernt der Befehl **Bereinigen** auch die vom Buildprozess erstellten Registrierungseinträge.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
@@ -111,8 +112,8 @@ ms.lasthandoff: 05/17/2018
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Debuggen von Office-Projekten](../vsto/debugging-office-projects.md)|Beschreibt Probleme beim Debuggen von Office-Projekten.|  
-|[Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|  
-|[Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt der erneute Aktivieren eines zuvor hart oder weich deaktivierten VSTO-Add-Ins.|  
+|[Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|  
+|[Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.|  
 |[Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|  
   
   

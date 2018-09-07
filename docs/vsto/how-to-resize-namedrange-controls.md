@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen | Microsoft Docs'
+title: 'Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d475f9140607ba0ae7415a60a9589aef11a44a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671889"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen
   Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements festlegen, wenn Sie es zu einem Microsoft Office Excel-Dokument hinzufügen. Möglicherweise möchten Sie jedoch zu einem späteren Zeitpunkt die Größe ändern.  
@@ -36,12 +37,12 @@ ms.lasthandoff: 04/16/2018
   
 -   [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
   
--   [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-In-Projekt](#runtimeaddin)  
+-   [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
   
-##  <a name="designtime"></a> Resizing NamedRange Controls at Design Time  
+##  <a name="designtime"></a> Ändern der Größe von NamedRange-Steuerelementen zur Entwurfszeit  
  Sie können die Größe eines benannten Bereichs ändern, indem Sie die Größe im Dialogfeld **Namen definieren** neu definieren.  
   
-#### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>So ändern Sie die Größe eines benannten Bereichs unter Verwendung des Dialogfelds „Namen definieren“  
+### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>So ändern Sie die Größe eines benannten Bereichs unter Verwendung des Dialogfelds „Namen definieren“  
   
 1.  Klicken Sie mit der rechten Maustaste auf ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement.  
   
@@ -57,13 +58,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  Klicken Sie auf **OK**.  
   
-##  <a name="runtimedoclevel"></a> Resizing NamedRange Controls at Run Time in a Document-Level Project  
+##  <a name="runtimedoclevel"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene  
  Sie können die Größe eines benannten Bereichs programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft verwenden.  
   
 > [!NOTE]  
 >  Im Fenster **Eigenschaften** ist die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft als schreibgeschützt markiert.  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert  
+### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert  
   
 1.  Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
-##  <a name="runtimeaddin"></a> Resizing NamedRange Controls at Run Time in an VSTO Add-in project  
- Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements in jedem beliebigen geöffneten Arbeitsblatt zur Laufzeit ändern. Weitere Informationen zum Hinzufügen eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements zu einem Arbeitsblatt mit einem VSTO-Add-In finden Sie unter [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+##  <a name="runtimeaddin"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt  
+ Sie können die Größe einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf jedem geöffneten Arbeitsblatt zur Laufzeit. Weitere Informationen zur Vorgehensweise beim Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins, finden Sie unter [Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zur Arbeitsblätter](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert  
+### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert  
   
 1.  Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.  
   
@@ -94,11 +95,11 @@ ms.lasthandoff: 04/16/2018
  [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
+ [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Vorgehensweise: Ändern der Größe Lesezeichen-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)   
- [Vorgehensweise: Ändern der Größe von ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)  
+ [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Gewusst wie: Ändern der Größe Lesezeichen-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)   
+ [Gewusst wie: Ändern der Größe ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)  
   
   

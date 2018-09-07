@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625999"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774587"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42625999"
 
 14. Wiederholen Sie die Schritte 11 bis 13 mit anderen Dokumenten in der Liste Freigegebene Dokumente. (Die genaue Anzahl von Dokumenten ist nicht wichtig.)
 
-15. Die Spesenabrechnungsseite für die Zusammenfassung der Anwendung anzeigen, indem Sie die folgende URL in einem Webbrowser öffnen: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Die Spesenabrechnungsseite für die Zusammenfassung der Anwendung anzeigen, indem Sie die folgende URL in einem Webbrowser öffnen: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Die Spesenabrechnungsseite Zusammenfassung zeigt eine Liste aller für die spesenabrechnungen, die die zugewiesene Menge überschritten, die Menge, die, der Sie von überschritten, und den Gesamtbetrag für alle Berichte.
 

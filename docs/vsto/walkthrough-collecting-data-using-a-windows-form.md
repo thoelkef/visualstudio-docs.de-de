@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erfassen von Daten mit einem Windows Form | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Sammeln von Daten mit einem Windows Form'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6a844bd94500f719e5456252d3b923c1ff85960
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672296"
 ---
-# <a name="walkthrough-collecting-data-using-a-windows-form"></a>Exemplarische Vorgehensweise: Erfassen von Daten mit einem Windows Form
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Exemplarische Vorgehensweise: Sammeln von Daten mithilfe eines Windows-Formulars
   In dieser exemplarischen Vorgehensweise wird das Öffnen eines Windows Form aus einer Anpassung auf Dokumentebene für Microsoft Office Excel, das Abfragen von Benutzerinformationen und das Schreiben dieser Informationen in eine Zelle des Arbeitsblatts beschrieben.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts  
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  Zunächst müssen Sie ein Excel-Arbeitsmappenprojekt erstellen.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **WinFormInput**, und wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **WinFormInput**, und wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt dem **Projektmappen-Explorer** das **WinFormInput**-Projekt hinzu.  
   
-## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Hinzufügen eines NamedRange-Steuerelements zum Arbeitsblatt  
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>Fügen Sie in das Arbeitsblatt ein NamedRange-Steuerelement  
   
-#### <a name="to-add-a-named-range-to-sheet1"></a>So fügen Sie Blatt1 einen benannten Bereich hinzu  
+### <a name="to-add-a-named-range-to-sheet1"></a>So fügen Sie Blatt1 einen benannten Bereich hinzu  
   
 1.  Wählen Sie in **die Zelle** A1 `Sheet1`aus.  
   
@@ -60,14 +61,14 @@ ms.lasthandoff: 04/16/2018
   
      Das Feld **Name** befindet sich links neben der Bearbeitungsleiste, genau über der Spalte **A** des Arbeitsblatts.  
   
-3.  Drücken Sie die EINGABETASTE.  
+3.  Drücken Sie die **EINGABETASTE**.  
   
      Der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **wird ein**-Steuerelement hinzugefügt. Auf dem Arbeitsblatt gibt es dafür keinen sichtbaren Hinweis, aber wenn Zelle **A1** ausgewählt ist, wird **formInput** im Feld **Name** (auf der linken Seite direkt über dem Arbeitsblatt) und im Fenster **Eigenschaften** angezeigt.  
   
-## <a name="adding-a-windows-form-to-the-project"></a>Hinzufügen eines Windows Form zum Projekt  
+## <a name="add-a-windows-form-to-the-project"></a>Das Projekt ein Windows-Formular hinzufügen  
  Erstellen Sie ein Windows Form, in dem die Benutzer zur Eingabe von Informationen aufgefordert werden.  
   
-#### <a name="to-add-a-windows-form"></a>So fügen Sie ein Windows Form hinzu  
+### <a name="to-add-a-windows-form"></a>So fügen Sie ein Windows Form hinzu  
   
 1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **WinFormInput**aus.  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
  Fügen Sie anschließend `ThisWorkbook.vb` oder `ThisWorkbook.cs` Code hinzu, um die Benutzerinformationen abzufragen.  
   
-## <a name="displaying-the-windows-form-and-collecting-information"></a>Anzeigen des Windows Form und Abfragen von Informationen  
+## <a name="display-the-windows-form-and-collecting-information"></a>Die Windows-Formular und das Erfassen von Informationen anzuzeigen  
  Erstellen Sie eine Instanz des Windows Form `GetInputString` , zeigen Sie diese an, und schreiben Sie dann die Benutzerinformationen in eine Zelle im Arbeitsblatt.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>So zeigen Sie das Formular an und fragen die Informationen ab  
@@ -105,9 +106,9 @@ ms.lasthandoff: 04/16/2018
   
  Fügen Sie dem Formular anschließend Code hinzu, um das Klickereignis der Schaltfläche zu behandeln.  
   
-## <a name="sending-information-to-the-worksheet"></a>Senden von Informationen an das Arbeitsblatt  
+## <a name="send-information-to-the-worksheet"></a>Senden von Informationen in das Arbeitsblatt  
   
-#### <a name="to-send-information-to-the-worksheet"></a>So senden Sie Informationen an das Arbeitsblatt  
+### <a name="to-send-information-to-the-worksheet"></a>So senden Sie Informationen an das Arbeitsblatt  
   
 1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **GetInputString**, und klicken Sie dann auf **Ansicht-Designer**.  
   
@@ -118,12 +119,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
   
-## <a name="testing"></a>Test  
+## <a name="test"></a>Test  
  Sie können das Projekt jetzt ausführen. Das Windows Form wird angezeigt, und die Eingabe wird im Arbeitsblatt angezeigt.  
   
-#### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe  
+### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um Ihr Projekt auszuführen.  
   
 2.  Überprüfen Sie, ob das Windows Form angezeigt wird.  
   
@@ -134,16 +135,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarischen Vorgehensweise werden die Grundlagen für das Anzeigen eines Windows Form und das Übergeben von Daten an ein Arbeitsblatt beschrieben. Andere Aufgaben in diesem Zusammenhang sind:  
   
--   Verwenden von Windows Forms-Steuerelementen in einer Excel-Arbeitsmappe bzw. einem Word-Dokument. Weitere Informationen finden Sie unter [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+-   Verwenden von Windows Forms-Steuerelementen in einer Excel-Arbeitsmappe bzw. einem Word-Dokument. Weitere Informationen finden Sie unter [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
--   Ändern der Benutzeroberfläche einer Microsoft Office-Anwendung von einer Anpassung auf Dokumentebene bzw. einem VSTO-Add-In aus. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
+-   Ändern Sie die Benutzeroberfläche des Microsoft Office-Anwendung aus einer Anpassung auf Dokumentebene oder ein VSTO-Add-in. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
+ [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
- [Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)   
+ [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)   
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)  
   
   
