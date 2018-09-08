@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e229b09e5c739fb0f1096beb253156765f653cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 09/07/2018
 ms.locfileid: "24623710"
 ---
 > [!NOTE]
->  In [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], Sie können entweder mit einer SQL Server-Datenbank verbinden **Objekt-Explorer von SQL Server** oder **Datenverbindungen** Knoten **Server-Explorer**. **Objekt-Explorer von SQL Server** bietet eine Ansicht, die SQL Server Management Studio ähnelt. Um diesen Explorer in der Menüleiste zu öffnen, wählen Sie **Ansicht**, **Objekt-Explorer von SQL Server**. Weitere Informationen finden Sie unter [Entwicklung verbundener Datenbanken](http://go.microsoft.com/fwlink/?LinkId=233646).
+>  In [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], Sie können eine Verbindung mit SQL Server-Datenbank entweder **Objekt-Explorer von SQL Server** oder **Datenverbindungen** Knoten **Server-Explorer**. **Objekt-Explorer von SQL Server** bietet eine Ansicht, wie SQL Server Management Studio ähnelt. Wählen Sie zum Öffnen dieser Explorer in der Menüleiste **Ansicht**, **Objekt-Explorer von SQL Server**. Weitere Informationen finden Sie unter [Entwicklung verbundener Datenbanken](http://go.microsoft.com/fwlink/?LinkId=233646).
