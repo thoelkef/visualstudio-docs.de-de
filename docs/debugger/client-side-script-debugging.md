@@ -1,5 +1,5 @@
 ---
-title: Debuggen von clientseitigem Skript | Microsoft Docs
+title: Debuggen von clientseitigen Skripts | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464809"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283111"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
 Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und Beheben von Fehlern in clientseitigen Skripts auf ASP.NET-Seiten bereit.  
   
 ## <a name="opening-script-documents"></a>Öffnen von Skriptdokumenten  
-Sie können Listen von serverseitigen und clientseitigen Skriptdokumente in finden Sie unter der **Projektmappen-Explorer** anzeigen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Sie können Sie eine Liste der serverseitigen und clientseitigen Skriptdokumente in der **Projektmappen-Explorer** anzeigen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Zuordnen von Haltepunkten  
  In Visual Studio können Sie serverseitigen Code nicht direkt debuggen, Sie können jedoch einen Haltepunkt in einer serverseitigen Datei festlegen. Visual Studio ordnet den Haltepunkt automatisch einer entsprechenden Position in der clientseitigen Datei zu und erstellt einen zugeordneten Haltepunkt im clientseitigen Code.  
@@ -59,11 +59,11 @@ Sie können Listen von serverseitigen und clientseitigen Skriptdokumente in find
 ## <a name="debugging-ajax-script-applications"></a>Debuggen von AJAX-Skriptanwendungen  
  AJAX-fähige Webanwendungen machen umfangreichen Gebrauch von Skriptcode und stellen besondere Anforderungen an das Debuggen. Weitere Informationen zu den Verfahrensweisen beim AJAX-Debuggen finden Sie unter  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)öffnen.  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Einschränkungen beim Skriptdebugging](../debugger/limitations-on-script-debugging.md)   
- [Variablenfenster](../debugger/debugger-windows.md)   
+ [Variable Windows](../debugger/debugger-windows.md)   
  [Direktfenster](../ide/reference/immediate-window.md)   
- [Debuggen und Tracing Ajax-Anwendungen (Übersicht)](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

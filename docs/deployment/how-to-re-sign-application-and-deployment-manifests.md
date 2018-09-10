@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078640"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280674"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Gewusst wie: Signieren Sie Anwendungs- und Bereitstellungsmanifeste erneut
 Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen (Xbap) und Office-Projektmappen vornehmen, müssen Sie die Anwendung neu signieren und die Bereitstellungsmanifeste mit einem das Zertifikat. Dieser Prozess wird sichergestellt, dass manipulierte Dateien nicht auf Endbenutzercomputern installiert sind.  
@@ -33,7 +33,7 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
  Ein weiteres Szenario, in dem Sie das Manifest neu signieren können, ist, wenn Ihre Kunden, zum Signieren der Anwendung wünschen und die Bereitstellungsmanifeste mit einem eigenen Zertifikat.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Signieren Sie erneut die Anwendungs- und Bereitstellungsmanifesten  
- Dieses Verfahren setzt voraus, dass Sie bereits Ihre Datei für das Anwendungsmanifest geändert haben (*". manifest"*). Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der Bereitstellungseigenschaften](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Dieses Verfahren setzt voraus, dass Sie bereits Ihre Datei für das Anwendungsmanifest geändert haben (*". manifest"*). Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der Bereitstellungseigenschaften](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Um erneut signieren Sie die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512252"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280570"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -73,7 +73,7 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Zur Laufzeit führt das Visual Studio-Pkgdef-Subsystem zusammen diese Einträge in der Visual Studio-Prozess-Laufzeitkonfigurationsdatei (unter *[VSAPPDATA]\devenv.exe.config*) als [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) Elemente. Dies ist die empfohlene Methode zum Visual Studio-Prozesses finden Sie die Assembly, zu ermöglichen, da es verhindert die Überprüfung von Pfaden zu durchsuchen.
+    Zur Laufzeit führt das Visual Studio-Pkgdef-Subsystem zusammen diese Einträge in der Visual Studio-Prozess-Laufzeitkonfigurationsdatei (unter *[VSAPPDATA]\devenv.exe.config*) als [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Elemente. Dies ist die empfohlene Methode zum Visual Studio-Prozesses finden Sie die Assembly, zu ermöglichen, da es verhindert die Überprüfung von Pfaden zu durchsuchen.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagieren auf diese wichtige Änderung
 
@@ -87,7 +87,7 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 
 ### <a name="global-com-registration"></a>Globale COM-Registrierung
 
-* Zuvor installierte Visual Studio viele Registrierungsschlüssel, in der HKEY_CLASSES_ROOT und HKEY_LOCAL_MACHINE-Strukturen, um systemeigene COM-Registrierung zu unterstützen. Um diese Auswirkungen zu vermeiden, verwendet Visual Studio jetzt [Aktivierung für COM-Komponenten ohne Registrierung](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Zuvor installierte Visual Studio viele Registrierungsschlüssel, in der HKEY_CLASSES_ROOT und HKEY_LOCAL_MACHINE-Strukturen, um systemeigene COM-Registrierung zu unterstützen. Um diese Auswirkungen zu vermeiden, verwendet Visual Studio jetzt [Aktivierung für COM-Komponenten ohne Registrierung](https://msdn.microsoft.com/library/ms973913.aspx).
 * Als Ergebnis die meisten TLB / OLB / DLL-Dateien unter % ProgramFiles% (x86) %\Common c:\Programme\Microsoft Shared\MSEnv werden nicht mehr standardmäßig installiert, von Visual Studio. Diese Dateien werden mit entsprechenden COM ohne Registrierung Manifeste, die von der Visual Studio-Hostprozess verwendet jetzt unter [INSTALLDIR] installiert.
 * Daher werden diese Registrierungen von externer Code, der globale COM-Registrierung für Visual Studio COM-Schnittstellen verwendet nicht mehr feststellen. In Visual Studio-Prozess ausgeführte Code wird eine Differenz nicht angezeigt.
 
@@ -106,5 +106,5 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 
 * Externer Code konvertiert werden sollen, um für COM-Komponenten sowie Aktivierung ohne Registrierung zu verwenden.
 * Externe Komponenten können den Speicherort von Visual Studio suchen [anhand der Anleitungen hier](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Es wird empfohlen, dass externe Komponenten verwenden die [externe Settings Manager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) anstelle von lesen/schreiben, direkt in Visual Studio-Registrierungsschlüssel.
+* Es wird empfohlen, dass externe Komponenten verwenden die [externe Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) anstelle von lesen/schreiben, direkt in Visual Studio-Registrierungsschlüssel.
 * Überprüfen Sie, ob der Komponenten, die Ihre Erweiterung verwendet ein anderes Verfahren für die Registrierung implementiert haben können. Z. B. möglicherweise Debuggererweiterungen nutzen die neuen ["msvsmon" JSON-Datei-COM-Registrierung](migrate-debugger-COM-registration.md).

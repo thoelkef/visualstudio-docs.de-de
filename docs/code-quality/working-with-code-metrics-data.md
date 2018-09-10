@@ -1,5 +1,5 @@
 ---
-title: Das Fenster Codemetrikergebnisse in Visual Studio
+title: Der Codemetrikergebnisse Fenster in Visual Studio
 ms.date: 12/12/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -15,72 +15,72 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e6fdff99a8fc28e83fe4848fa4f31788cda76f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923868"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284133"
 ---
-# <a name="using-the-code-metrics-results-window"></a>Mithilfe des Fensters Codemetrikergebnisse
+# <a name="using-the-code-metrics-results-window"></a>Verwenden des Fensters Codemetrikergebnisse
 
-Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Daten für die codemetrikwerte, finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
+Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Datenwerten der Codemetrik, finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
 
 ## <a name="displaying-code-metrics-results"></a>Anzeigen von Codemetrikergebnissen
 
-Die **Codemetrikergebnisse** Fenster wird automatisch angezeigt, wenn Sie Codemetrikergebnisse generieren. Sie können auch das Fenster jederzeit anzeigen.
+Die **Codemetrikergebnisse** Fenster wird automatisch beim Generieren von Codemetrikergebnissen angezeigt. Sie können auch das Fenster jederzeit anzeigen.
 
-### <a name="to-display-the-code-metrics-results-window"></a>Zum Anzeigen des Fensters Codemetrikergebnisse
+### <a name="to-display-the-code-metrics-results-window"></a>Um das Fenster Codemetrikergebnisse anzuzeigen
 
 - Auf der **analysieren** Menü wählen **Windows** > **Codemetrikergebnisse**.
 
    \- oder –
 
-- Auf der **Ansicht** Menü wählen **Weitere Fenster** > **Codemetrikergebnisse**.
+- Auf der **Ansicht** Menü wählen **Other Windows** > **Codemetrikergebnisse**.
 
-Die **Codemetrikergebnisse** Fenster angezeigt wird, auch wenn es keine Ergebnisse enthält.
+Die **Codemetrikergebnisse** Fenster wird angezeigt, auch wenn es sich um keine Ergebnisse enthält.
 
-### <a name="to-view-code-metrics-details"></a>Um Code Metriken Details anzuzeigen.
+### <a name="to-view-code-metrics-details"></a>Anzeigen von Details von basisanalysemetriken
 
 Wenn Codemetrikergebnisse generiert wurden, erweitern Sie die Struktur in der **Hierarchie** Spalte.
 
 ## <a name="filtering-code-metrics-results"></a>Filtern von Codemetrikergebnissen
 
-Sie können im angezeigten Ergebnisse filtern die **Codemetrikergebnisse** Fenster mithilfe der Symbolleiste am oberen. Sie möchten z. B. nur die Ergebnisse anzuzeigen, die einen Wartbarkeitsindex unter 65 aufweisen.
+Sie können die Ergebnisse, die in angezeigt werden, Filtern die **Codemetrikergebnisse** Fenster mithilfe der Symbolleiste oben. Beispielsweise empfiehlt es sich um nur die Ergebnisse anzuzeigen, die einen Wartbarkeitsindex unter 65 haben.
 
 Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Filter definiert wird, wird es am Ende der Liste zusammen mit einem Einzug hinzugefügt. Die Liste kann die letzten zehn Filter enthalten, die definiert wurden.
 
 ### <a name="to-filter-the-code-metrics-results"></a>Zum Filtern der Codemetrikergebnisse
 
-1.  Aus der **Filter** wählen Sie den Namen der Spalte.
+1.  Von der **Filter** wählen Sie den Namen der Spalte.
 
-2.  In **Min**, geben Sie den minimalen Wert angezeigt werden.
+2.  In **Min**, geben Sie den minimalen Wert, der angezeigt werden.
 
 3.  In **Max**, geben Sie den maximalen Wert angezeigt werden.
 
 4.  Klicken Sie auf die **Filter anwenden** Schaltfläche.
 
-5.  Um die Ergebnisdetails anzuzeigen, erweitern Sie in der Hierarchiestruktur.
+5.  Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
 
 ## <a name="adding-removing-and-rearranging-data-columns"></a>Hinzufügen, entfernen und Neuanordnen von Spalten
 
 Sie können hinzufügen oder entfernen führt die Spalten aus der **Codemetrikergebnisse** Fenster. Darüber hinaus können Sie Ergebnisspalten neu anordnen, damit sie in der Reihenfolge angezeigt werden, die Sie möchten.
 
-### <a name="to-remove-a-column"></a>So entfernen Sie eine Spalte
+### <a name="to-remove-a-column"></a>Eine Spalte entfernen
 
 1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
 
-     \- mit der "oder" - Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+     \- oder mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
 
 1. In der **Spalten hinzufügen/entfernen** Dialogfeld deaktivieren das Kontrollkästchen für die Spalte, die Sie entfernen möchten und klicken Sie dann auf **OK**.
 
-### <a name="to-add-a-previously-removed-column"></a>Um eine zuvor entfernter Spalte hinzufügen
+### <a name="to-add-a-previously-removed-column"></a>Hinzufügen eine zuvor entfernte Spalte
 
 1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
 
      \- oder –
 
-     Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+     Mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
 
 1. In der **Spalten hinzufügen/entfernen** Dialogfeld Feld, das Kontrollkästchen für die Spalte, die Sie hinzufügen möchten und klicken Sie dann auf **OK**.
 
@@ -90,43 +90,43 @@ Sie können hinzufügen oder entfernen führt die Spalten aus der **Codemetriker
 
      \- oder –
 
-     Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+     Mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
 
-1. In der **Spalten hinzufügen/entfernen** Dialogfeld wählen die Spalte, die Sie verschieben möchten und klicken Sie dann auf den Pfeil nach oben oder den Pfeil nach unten.
+1. In der **Spalten hinzufügen/entfernen** Dialogfeld wählen die Spalte, die Sie verschieben möchten und klicken Sie dann auf, entweder auf den Pfeil nach oben oder auf den Pfeil nach unten.
 
 1. Wenn die Spalte an der gewünschten Position befindet, klicken Sie auf **OK**.
 
 ## <a name="copying-data-to-the-clipboard-or-excel"></a>Kopieren von Daten in die Zwischenablage oder Excel
 
-Sie können auswählen, und eine ausgewählte Zeile von Codemetrikdaten als Textzeichenfolge, die eine Zeile für den Namen und Wert der einzelnen Datenspalten enthält, in die Zwischenablage kopieren. Sie können auch klicken **Auswahl in Microsoft Excel öffnen** aller der Codemetrikergebnisse in eine Excel-Kalkulationstabelle exportieren.
+Sie können auswählen, und eine ausgewählte Zeile von Codemetrikdaten werden in die Zwischenablage kopieren, als eine Zeichenfolge, die eine Zeile für den Namen und den Wert der einzelnen Datenspalten enthält. Sie können auch klicken **Auswahl in Microsoft Excel öffnen** aller der Codemetrikergebnisse in eine Excel-Kalkulationstabelle exportieren.
 
-## <a name="creating-a-work-item-based-on-code-metric-results"></a>Erstellen einer Arbeitsaufgabe anhand von Codemetrikergebnissen
+## <a name="creating-a-work-item-based-on-code-metric-results"></a>Erstellen eines Arbeitselements anhand von Codemetrikergebnissen
 
-Sie erstellen eine [Visual Studio Team Services (VSTS)](/vsts/index) führt zur Arbeitsaufgabe, die basierend auf der **Codemetrikergebnisse** Fenster. Wenn das Arbeitselement erstellt wurde, fügt Visual Studio automatisch einen Titel in die **Titel** Feld und Codemetrikdaten unter der **Verlauf** Registerkarte.
+Können Sie erstellen eine [Azure Boards](/azure/devops/boards/index) führt zu Arbeitselement auf der Grundlage der **Codemetrikergebnisse** Fenster. Wenn das Arbeitselement erstellt wird, fügt Visual Studio automatisch einen Titel in der **Titel** Feld und die Codemetrikdaten werden unter der **Verlauf** Registerkarte.
 
-Weitere Informationen zur VSTS Typen von Arbeitsaufgaben, finden Sie unter [Typen von Arbeitsaufgaben (VSTS)](/vsts/work/work-items/index).
+Weitere Informationen zu Azure-Boards Arbeitselemente angezeigt werden, finden Sie unter [Arbeitsaufgaben](/azure/devops/boards/work-items/index).
 
-### <a name="to-create-a-work-item-based-on-a-result"></a>So erstellen eine Arbeitsaufgabe, die basierend auf ein Ergebnis
+### <a name="to-create-a-work-item-based-on-a-result"></a>Um eine Arbeitsaufgabe basierend auf ein Ergebnis zu erstellen.
 
 1.  Mit der rechten Maustaste in des Ergebnis.
 
-2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ der Arbeitsaufgabe, die Sie erstellen möchten (**Fehler**, **Aufgabe**usw.).
+2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ des zu erstellenden Arbeitsaufgabe (**Fehler**, **Aufgabe**usw.).
 
-3.  Führen Sie im Arbeitsaufgabenformular, indem alle erforderlichen Felder ausgefüllt.
+3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **alle speichern** zum Speichern der Arbeitsaufgabe.
+4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
-### <a name="to-create-a-bug-based-on-a-result"></a>So erstellen Sie einen Fehler, die basierend auf ein Ergebnis
+### <a name="to-create-a-bug-based-on-a-result"></a>So erstellen Sie einen Fehler basierend auf ein Ergebnis
 
-1.  Klicken Sie auf das Ergebnis aus, um ihn auszuwählen.
+1.  Klicken Sie auf das Ergebnis, um es auszuwählen.
 
-2.  Klicken Sie auf die **Arbeitsaufgabe erstellen** Schaltfläche.
+2.  Klicken Sie auf die **Arbeitselement erstellen** Schaltfläche.
 
-3.  Führen Sie im Arbeitsaufgabenformular, indem alle erforderlichen Felder ausgefüllt.
+3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **alle speichern** zum Speichern der Arbeitsaufgabe.
+4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
-- [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
+- [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152008"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284106"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
@@ -42,7 +42,7 @@ Führen Sie diese Schritte aus:
 
 - Klicken Sie auf die **Symboleinstellungen ändern...** auf dieser Seite verknüpfen. In der **Debuggen > Symbol** Einstellungen, fügen Sie ein Symbolcacheverzeichnis hinzu. Starten Sie neu, Debuggen von Momentaufnahmen, nachdem der Symbolpfad festgelegt wurde.
 
-   Die Symbole oder die PDB-Dateien, die in Ihrem Projekt verfügbar ist, müssen Ihre App Service-Bereitstellung übereinstimmen. Die meisten Bereitstellungen (Bereitstellung über Visual Studio, CI/CD mit VSTS oder Kudu, usw.) werden Ihre Symboldateien zusammen zu Ihrer App Service veröffentlichen. Das Symbolcacheverzeichnis festlegen, kann Visual Studio diese Symbole verwenden.
+   Die Symbole oder die PDB-Dateien, die in Ihrem Projekt verfügbar ist, müssen Ihre App Service-Bereitstellung übereinstimmen. Die meisten Bereitstellungen (Bereitstellung über Visual Studio, CI/CD mit Azure-Pipelines oder Kudu, usw.) werden Ihre Symboldateien zusammen zu Ihrer App Service veröffentlichen. Das Symbolcacheverzeichnis festlegen, kann Visual Studio diese Symbole verwenden.
 
    ![Symboleinstellungen](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Symboleinstellungen")
 

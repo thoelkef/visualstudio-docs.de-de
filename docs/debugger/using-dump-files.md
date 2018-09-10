@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755884"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281025"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Verwenden von Dumpdateien mit Visual Studio
 Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei; Öffnen einer Dumpdatei; Suchen Sie die Binärdateien, die PDB Datei und die Quelldatei für eine Dumpdatei.
@@ -55,7 +55,7 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei; Öffnen einer
 
 -   Visual Studio kann Dumpdateien systemeigener Anwendungen von ARM-Geräten debuggen. Visual Studio kann auch Dumpdateien verwalteter Anwendungen von ARM-Geräten debuggen, jedoch nur im nativen Debugger.
 
--   So debuggen Sie [im Kernelmodus](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Dumpdateien, die Debugtools für Windows, die Teil der Herunterladen der [Windows-Treiberkit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   So debuggen Sie [im Kernelmodus](/windows-hardware/drivers/debugger/kernel-mode-dump-files) Dumpdateien, die Debugtools für Windows, die Teil der Herunterladen der [Windows-Treiberkit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio kann nicht die debugdumpdateien gespeichert, in der älteren dumpformat bekannt als eine [vollständiger benutzermodusdump](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Beachten Sie, dass ein vollständiger Benutzermodusdump nicht mit einer Dumpdatei mit Heapinformationen identisch ist.
 

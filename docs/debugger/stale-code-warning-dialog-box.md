@@ -1,5 +1,5 @@
 ---
-title: Veralteter Code Warndialogfeld | Microsoft Docs
+title: Veralteter Code Warndialogfeld | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec80baa04529bcc6a9705d1c8df03e120e6bc64e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1e212602b317127cfd14adcd246a23cdd92ed86
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481475"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281792"
 ---
-# <a name="stale-code-warning-dialog-box"></a>Dialogfeld "Warnung: Veralteter Code"
-Dieses Dialogfeld wird angezeigt, wenn Sie vorgenommen haben Änderungen an systemeigenem code, der **bearbeiten und Fortfahren** konnte nicht sofort übernommen werden. Dadurch ist ein Teil des systemeigenen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [Vorgehensweise: Arbeiten mit veraltetem Code](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
+# <a name="stale-code-warning-dialog-box"></a>Warnung: Veralteter Code (Dialogfeld)
+Dieses Dialogfeld wird angezeigt, wenn Ihnen vorgenommenen Änderungen an nativem code, der **bearbeiten und Fortfahren** konnte nicht sofort angewendet werden. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [wie: Arbeiten mit veraltetem Code](/visualstudio/debugger/edit-and-continue-visual-cpp#bkmk_how_to_work_with_stale_code).  
   
  **Dieses Dialogfeld nicht mehr anzeigen**  
- Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren möchten die **Optionen** (Dialogfeld), öffnen die **Debuggen** Ordner, auf die **bearbeiten und Fortfahren** Seite, und wählen Sie **Warnung bei veraltetem Code**.  
+ Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren auf der **Optionen** Dialogfeld Öffnen den **Debuggen** Ordner auf der **bearbeiten und Fortfahren** Seite, und wählen Sie **Warnung bei veraltetem Code**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)   
- [Bearbeiten Sie und fortfahren Sie, Debuggen, Optionen (Dialogfeld)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](/visualstudio/debugger/edit-and-continue)

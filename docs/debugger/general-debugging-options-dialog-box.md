@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626113"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280636"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 Die **Tools > Optionen > Debugging > Allgemein** Seite ermöglicht Ihnen das in diesem Artikel beschriebenen Optionen festlegen.
@@ -72,7 +72,7 @@ In der Bedingung 2 und 3, wird die Ausnahme gelegentlich von verwaltetem Code in
   
 - **Zeichenfolgenkonvertierungsfunktion für Objekte in Variablenfenstern (C#- und JavaScript nur) aufrufen** führt Sie einen impliziten Zeichenkonvertierungsaufruf beim Auswerten von Objekten in Variablenfenstern. Das Ergebnis wird als eine Zeichenfolge anstatt in der Typname angezeigt. Gilt nur für Debuggen in C#-Code. Diese Einstellung kann vom DebuggerDisplay-Attribut überschrieben werden (siehe [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Quellserverunterstützung aktivieren** weist den Visual Studio-Debugger an Quelldateien von Quellservern abzurufen, die das SrcSrv implementieren (`srcsrv.dll`) Protokoll. Team Foundation Server und die Debugtools für Windows sind zwei Quellserver, die das Protokoll implementieren. Weitere Informationen zum SrcSrv-Setup finden Sie unter den [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) Dokumentation. Darüber hinaus finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Quellserverunterstützung aktivieren** weist den Visual Studio-Debugger an Quelldateien von Quellservern abzurufen, die das SrcSrv implementieren (`srcsrv.dll`) Protokoll. Team Foundation Server und die Debugtools für Windows sind zwei Quellserver, die das Protokoll implementieren. Weitere Informationen zum SrcSrv-Setup finden Sie unter den [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) Dokumentation. Darüber hinaus finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Da beim Lesen der *PDB* Dateien beliebigen Code auszuführen, in den Dateien, stellen Sie sicher, dass Sie auf den Server vertrauen können.  

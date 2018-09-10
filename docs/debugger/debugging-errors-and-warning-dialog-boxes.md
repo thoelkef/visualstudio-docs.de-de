@@ -1,5 +1,5 @@
 ---
-title: Remotedebuggen – Fehler und Warnmeldungen | Microsoft Docs
+title: Debugfehler und Warnmeldungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472201"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279050"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
 Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen einer Anwendung auftreten können.  
@@ -42,13 +42,13 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
   
  [Ausführbare Datei für die Debugsitzung (Dialogfeld)](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Fehler beim Übernehmen der Änderungen (Dialogfeld)](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Fehler beim Anwenden der Änderungen (Dialogfeld)](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Dialogfeld "Microsoft Visual Studio Debugger (Ausnahme ausgelöst)"](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
  [Kein Quellcode verfügbar ist, für den aktuellen Speicherort (Dialogfeld)](../debugger/no-source-available.md)  
   
- [Keine symbolischen Informationen (Dialogfeld)](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Das Dialogfeld für nicht symbolischen Informationen](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Dialogfeld "Mehrdeutigkeit auflösen"](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -59,13 +59,13 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggen von Skript und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debuggen von Skript- und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Problembehandlung beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Fehler beim Anfügen](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Fehler beim Anfügen](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [Problembehandlung bei SQL-Debuggen-Setup](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Problembehandlung bei SQL-Debugging-Setup](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
  [Visual C++ FAQs zum Debuggen](../debugger/debugging-native-code-faqs.md)  
   

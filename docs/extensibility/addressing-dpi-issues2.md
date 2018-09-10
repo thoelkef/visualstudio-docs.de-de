@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638664"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281168"
 ---
 # <a name="address-dpi-issues"></a>DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "hochauflösende" Bildschirme geliefert werden. Diese Seiten müssen in der Regel mehr als 200 Pixel pro Zoll (Ppi). Inhalt hochskaliert werden, auf die Anforderungen zum Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät wird das Arbeiten mit einer Anwendung auf diesen Computern erforderlich. Seit 2014 ist die primäre Zielgruppe für anzeigen mit hoher Dichte mobiler Geräte (Tablets, Schalenkoffer Laptops und Smartphones) zu berechnen.  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>HDPI-Unterstützung für das WebOC aktivieren  
  In der Standardeinstellung aktivieren nicht WebOC-Steuerelemente (z. B. das WebBrowser-Steuerelement in WPF oder das IWebBrowser2-Schnittstelle) HDPI-Erkennung und Unterstützung. Das Ergebnis wird ein eingebettetes Steuerelement mit Anzeigeinhalt sein, die auf eine hochauflösende anzeigen zu klein ist. Im folgenden wird beschrieben, wie hohe DPI-Unterstützung in einer bestimmten Web WebOC-Instanz zu aktivieren.  
   
- Implementieren der Schnittstelle IDocHostUIHandler (finden Sie im MSDN-Artikel der [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) Schnittstelle):  
+ Implementieren der Schnittstelle IDocHostUIHandler (finden Sie im MSDN-Artikel der [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Implementieren Sie optional die ICustomDoc-Schnittstelle (finden Sie im MSDN-Artikel der [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) Schnittstelle):  
+ Implementieren Sie optional die ICustomDoc-Schnittstelle (finden Sie im MSDN-Artikel der [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
