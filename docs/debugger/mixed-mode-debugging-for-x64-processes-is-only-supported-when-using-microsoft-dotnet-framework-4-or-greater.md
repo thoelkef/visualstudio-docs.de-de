@@ -1,5 +1,5 @@
 ---
-title: Im gemischten Modus Debuggen für X64 Prozesse wird nur unterstützt, wenn Microsoft.NET Framework 4 oder höher | Microsoft Docs
+title: Im gemischten Modus Debuggen für X64 Prozesse wird nur unterstützt, wenn Microsoft.NET Framework 4 oder höher | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb332fab5e09fa4aaf57d3a89e20270643b705
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a6d58713da9a4c809d5f9c3db6f7157a699a467f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475170"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284093"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 .NET Framework-Versionen vor Version 4 bieten keine Unterstützung für das Debuggen im gemischten Modus von x64-Prozessen. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu systemeigenem Code oder von systemeigenem Code zu verwaltetem Code wechseln können.  
@@ -43,21 +43,21 @@ ms.locfileid: "31475170"
   
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf den Eigenschaftenseiten auf die **Kompilieren** oder **Debuggen** Registerkarte.  
+2.  Klicken Sie in den Eigenschaftenseiten auf die **Kompilieren** oder **Debuggen** Registerkarte.  
   
 3.  Klicken Sie auf **Plattform** , und wählen Sie aus der Liste der Plattformen X86.  
   
-     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Unter 32-Bit-Prozess ausführen möchten, müssen Sie auswählen **Win32**, nicht **"anycpu"**.  
+     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Sie müssen zum Ausführen auf einem 32-Bit-Prozess auswählen **Win32**, nicht **"anycpu"**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>So ändern Sie die Plattform in 32-Bit (C/C++)  
   
-1.  In **Projektmappen-Explorer**Sie mit der rechten Maustaste des Projekts, und klicken Sie auf **Eigenschaften**.  
+1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Eigenschaften**.  
   
-2.  Klicken Sie auf den Eigenschaftenseiten auf **Plattform** und wählen Sie Win32 aus der Liste der Plattformen.  
+2.  Klicken Sie in den Eigenschaftenseiten auf **Plattform** , und wählen Sie Win32 aus der Liste der Plattformen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Finden Sie unter [Einrichten von SQL-Debuggen](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   Finden Sie unter [Einrichten von SQL-Debugging](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058606"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281675"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Wie können Funktionen der Windows-API gedebuggt werden?
 Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen sind, müssen Sie wie im Folgenden beschrieben vorgehen.  
@@ -41,7 +41,7 @@ Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Zum Abrufen des ergänzten Namens finden Sie unter [Anzeigen von ergänzten Namen](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Zum Abrufen des ergänzten Namens finden Sie unter [Anzeigen von ergänzten Namen](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   

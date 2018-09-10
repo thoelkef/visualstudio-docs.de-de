@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512056"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280078"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
@@ -34,7 +34,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Obwohl die Frame-Analyse hauptsächlich den Zweck hat, eine schnellere Renderingleistung zu erreichen, kann sie auch helfen, eine bessere visuelle Qualität bei einem angegebenen Leistungsziel zu erreichen oder den GPU-Stromverbrauch zu reduzieren.  
   
- Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
+ Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Verwenden der Frame-Analyse  
  Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie in der (.vsglog) grafikprotokolldokumentfenster, klicken Sie dann die **Frame-Analyse** Registerkarte.  
@@ -72,14 +72,14 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="timeline"></a>Zeitachse  
  Die Zeitachse zeigt eine relative Übersicht über die Zeichnen-Befehle. Da längere Balken längeren Zeichnungszeiten entsprechen, können Sie die Zeitachse verwenden, um schnell die teuersten Zeichnen-Befehle im betreffenden Frame zu finden. Wenn der erfasste Frame eine sehr große Anzahl von Zeichnen-Befehlen enthält, werden mehrere Zeichnen-Befehle in einem Balken kombiniert, dessen Länge der Summe dieser Zeichnen-Befehle entspricht.  
   
- ![Die Zeitachse zeigt Zeichnen-Befehl&#45;Kosten aufrufen. ] (media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
+ ![Die Zeitachse zeigt Zeichnen-Befehl&#45;Kosten aufrufen. ](media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
   
  Sie können mit dem Zeiger auf einen Balken zeigen, um zu sehen, welchem Zeichnen-Befehlsereignis der Balken entspricht. Die Auswahl des Balkens führt zu einer Synchronisation der Ereignisliste mit dem entsprechenden Ereignis.  
   
 #### <a name="table"></a>Tabelle  
  Die Tabelle mit Zahlen unter der Zeitachse zeigt die Leistung jeder Rendering-Variante für jeden Zeichnen-Befehl relativ zum Standard-Rendering Ihrer App. In jeder Spalte wird eine andere Rendering-Variante angezeigt, und jede Zeile steht für einen anderen Zeichnen-Befehl, der in der Spalte ganz links identifiziert wird. Hier können Sie einem Link zum betreffenden Ereignis im Fenster "Grafikereignisliste" folgen.  
   
- ![Die Zusammenfassungstabelle zeigt verschiedene Varianten. ] (media/pix_frame_analysis_summary.png "Pix_frame_analysis_summary")  
+ ![Die Zusammenfassungstabelle zeigt verschiedene Varianten. ](media/pix_frame_analysis_summary.png "Pix_frame_analysis_summary")  
   
  In der zweite Spalte von links der Zusammenfassungstabelle wird die Baseline-Rendering-Zeit Ihrer App angezeigt – dies ist die Dauer, in der das Standard-Rendering der App den Zeichnen-Befehl abschließt. In den anderen Spalten wird die relative Leistung jeder Rendering-Variante als Prozentsatz der Baseline dargestellt, sodass leichter festzustellen ist, ob die Leistung verbessert wurde. Prozentsätze über 100 bedeuten, dass das Rendering länger gedauert hat als die Baseline - d. h., dass die Leistung zurückgegangen ist –, und Prozentsätze unter 100 bedeuten, dass weniger Zeit benötigt wurde, die Leistung also gestiegen ist.  
   
@@ -88,7 +88,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="hot-draw-calls"></a>"Heiße" Zeichnen-Befehle  
  Um die Aufmerksamkeit auf Zeichnen-Befehle zu lenken, die einen größeren proportionalen Anteil der gesamten Rendering-Zeit verbrauchen oder aus vermeidbaren Gründen ungewöhnlich langsam sind, wird die Zeile, die diese "heißen" Zeichnen-Befehle enthält, rot schattiert, wenn ihre Baseline-Dauer um mehr als eine Standardabweichung länger ist als die durchschnittliche Baseline-Dauer aller Zeichnen-Befehle in diesem Rahmen.  
   
- ![Dieser DrawIndexed-Aufruf hat heiße und kalte Varianten. ] (media/pix_frame_analysis_hot_calls.png "Pix_frame_analysis_hot_calls")  
+ ![Dieser DrawIndexed-Aufruf hat heiße und kalte Varianten. ](media/pix_frame_analysis_hot_calls.png "Pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Statistische Bedeutung  
  Um Aufmerksamkeit auf die Rendering-Variationen mit der potenziell höchsten Relevanz zu lenken, ermittelt die Frame-Analyse die statistische Bedeutung jeder Rendering-Variante und zeigt die wichtigen in Fettdruck an. Die Varianten, die die Leistung verbessern, werden in grün angezeigt, diejenigen, die sie verschlechtern, in rot. Ergebnisse, die keine statistische Bedeutung haben, werden in normaler Schrift angezeigt.  
@@ -103,12 +103,12 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plattformen, die keine Hardwarezähler unterstützen  
  Die meisten Plattformen unterstützen Hardware-GPU-Zähler nicht vollständig. Zu diesen Plattformen gehören alle zurzeit von Intel, AMD und nVidia angebotenen GPUs. Wenn es keine Hardwarezähler zu sammeln gibt, wird nur eine Detailtabelle angezeigt. Diese enthält dann die mittleren absoluten Zeitwerte aller Varianten.  
   
- ![Die Detailtabelle und einige Wiedergabe-Varianten. ] (media/pix_frame_analysis_details.png "Pix_frame_analysis_details")  
+ ![Die Detailtabelle und einige Wiedergabe-Varianten. ](media/pix_frame_analysis_details.png "Pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plattformen, die Hardwarezähler unterstützen  
  Für Plattformen, die Hardware-GPU-Zähler unterstützen – z. B. die nVidia T40 SOC und alle SOCs von Qualcomm – werden mehrere Detailtabellen angezeigt, eine pro Variante. Jeder verfügbare Hardwarezähler wird für jede Rendering-Variante erfasst und in seiner eigenen Detailtabelle angezeigt.  
   
- ![Hardwareindikatoren werden angezeigt, wenn unterstützt. ] (media/pix_frame.png "Pix_frame")  
+ ![Hardwareindikatoren werden angezeigt, wenn unterstützt. ](media/pix_frame.png "Pix_frame")  
   
  Mit den Hardwarezähler-Informationen erhalten Sie eine sehr detaillierte Übersicht über das spezifische Hardwareplattform-Verhalten für jeden Zeichnen-Befehl, die Ihnen hilft, die Gründe für Leistungsengpässe sehr genau zu ermitteln.  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635407"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281272"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint
 
@@ -51,7 +51,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
-- Visual Studio 2017 oder eine Edition von Visual Studio Application Lifecycle Management (ALM).
+- Visual Studio 2017 oder Azure DevOps-Dienste.
 
 ## <a name="create-an-empty-sharepoint-project"></a>Erstellen Sie ein leeres SharePoint-Projekt
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058522"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280649"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Einschränkungen beim WCF-Debugging
 Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen eines WCF-Diensts zu starten:  
@@ -63,7 +63,7 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
   
 -   Der Dienst muss Teil der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe sein, die Sie debuggen.  
   
--   Der Dienst muss gehostet werden. Er kann Teil eines Websiteprojekts (Dateisystem und HTTP), eines Webanwendungsprojekts (Dateisystem und HTTP) oder eines WCF-Dienstbibliotheksprojekts sein. WCF-Dienstbibliotheksprojekte können entweder Dienstbibliotheken oder Workflowdienstbibliotheken sein.  
+-   Der Dienst muss gehostet werden. Es kann Teil eines Websiteprojekts (Dateisystem und HTTP), -Webanwendungsprojekts (Dateisystem und HTTP) oder WCF-Dienstbibliotheksprojekt sein. WCF-Dienstbibliotheksprojekte können entweder Dienstbibliotheken oder Workflowdienstbibliotheken sein.  
   
 -   Der Dienst muss über einen WCF-Client aufgerufen werden.  
   

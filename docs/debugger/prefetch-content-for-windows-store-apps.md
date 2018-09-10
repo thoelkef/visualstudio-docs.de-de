@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 458b320b971cbb3c4db74d6f2202455332ca5465
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d511934dc185ed6dac8034ee3e149391b2dd185e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056321"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281545"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debuggen von UWP-apps mithilfe von vorab abgerufenem Inhalt in Visual Studio
   
- Um die UWP-app Reaktionsfähigkeit zu steigern, können Sie anfordern, Windows einige Webinhalte wie Webseiten oder Bilder in der Anwendung vorab geladen [WinINet](/windows/desktop/WinInet/about-wininet) Cache. Diese Funktion wird als Vorabrufen bezeichnet. Es ist besonders effektiv für Inhalte, die beim Start verwendet wird, aber Sie können auch andere häufig genutzten Inhalte Vorabrufen. Die Methoden der [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) -Klasse können Sie die URIs der gewünschten Inhalte angeben, die vorab geladen werden sollen. Finden Sie im Windows SDK [Beispiel zum Vorabrufen von Inhalt](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) für Beispiele zum Hinzufügen der ContentPrefetcher-Funktionalität zu Ihrer app.  
+ Um die UWP-app Reaktionsfähigkeit zu steigern, können Sie anfordern, Windows einige Webinhalte wie Webseiten oder Bilder in der Anwendung vorab geladen [WinINet](/windows/desktop/WinInet/about-wininet) Cache. Diese Funktion wird als Vorabrufen bezeichnet. Es ist besonders effektiv für Inhalte, die beim Start verwendet wird, aber Sie können auch andere häufig genutzten Inhalte Vorabrufen. Die Methoden der [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) -Klasse können Sie die URIs der gewünschten Inhalte angeben, die vorab geladen werden sollen. Finden Sie im Windows SDK [Beispiel zum Vorabrufen von Inhalt](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) für Beispiele zum Hinzufügen der ContentPrefetcher-Funktionalität zu Ihrer app.  
   
  Windows bestimmt heuristisch, wann und ob Vorabrufvorgänge stattfinden und welche Ressourcen heruntergeladen werden. Die Heuristik berücksichtigt Netzwerk- und Leistungsbedingungen des Systems für das Konto, den Verwendungsverlauf der App für den Benutzer und die Ergebnisse von früheren Vorabrufversuchen. In Visual Studio können Sie die **Vorabrufen von Windows Store-App** Befehl aus, um zu erzwingen, dass Windows die ContentPrefetcher-Heuristik zu ignorieren und sämtliche angegebenen Webinhalte vorab zu laden. Das kann nützlich sein, um das Verhalten oder die Leistung der App zu testen, wenn der Inhalt in einem bekannten Zustand (entweder geladen oder nicht geladen) vorabgerufen wird.  
   
@@ -42,4 +42,4 @@ ms.locfileid: "37056321"
 >  Wiederholen Sie diese Schritte jedes Mal, wenn Sie die angegebenen Webinhalte ändern oder neue hinzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Blogbeitrag: Auslösen der Vorabruf für Windows Store-Apps in Visual Studio 2013 Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)
+ [Blogbeitrag: Auslösen der Vorabruf für Windows Store-Apps in Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

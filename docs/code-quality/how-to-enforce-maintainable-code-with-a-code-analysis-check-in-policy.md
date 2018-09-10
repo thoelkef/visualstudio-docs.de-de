@@ -12,52 +12,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6269b4839c552fa6a1e982226bbb311cb7d5e9d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921126"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281038"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse
 
-Entwickler können das Tool Codemetrik zum Messen von Komplexität und verwaltbarkeit des Codes verwenden, aber Sie können keine Codemetrik aufrufen, als Teil einer in der Eincheckrichtlinie. Sie können allerdings Codeanalyseregeln, durch die überprüft die Kompatibilität des Codes mit Code Metriken Standards zu aktivieren und erzwingen Sie diese Regeln über Eincheckrichtlinien. Weitere Informationen zu Metriken für Code finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
+Entwickler können das Codemetrik-Tool verwenden, um die Komplexität und verwaltbarkeit ihres Codes messen, aber die Codemetrik kann nicht als Teil einer Eincheckrichtlinie aufgerufen. Sie können jedoch Aktivieren von Codeanalyseregeln, die die Kompatibilität Ihres Codes mit Code Metriken Standards zu überprüfen und die Regeln durch Check-in-Richtlinien zu erzwingen. Weitere Informationen zu codemetriken finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
 
-Sie können die Vererbungstiefe, Klassenkopplung Wartbarkeitsindex und Komplexitätsregeln zum Erzwingen von wartbarem Code durch eine Eincheckrichtlinie für Codeanalyse aktivieren. Alle vier Regeln befinden sich unter der Kategorie "Verwaltbarkeit Regeln" in der Codeanalyse Gruppenrichtlinienverwaltungs-Editor.
+Sie können die Vererbungstiefe, Klassenkopplung, Wartbarkeitsindex und Komplexitätsregeln zum Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für Codeanalyse aktivieren. Alle vier dieser Regeln werden in der Codeanalyse Gruppenrichtlinienverwaltungs-Editor unter der Kategorie "Wartbarkeitsregeln" gefunden.
 
-Administratoren der Team Foundation-Versionskontrolle können Sie die Anforderungen in der Eincheckrichtlinie für Verwaltbarkeit Codeanalyseregeln hinzufügen. Diese einchecken, müssen Sie für Richtlinien Entwickler basierend auf diese regeländerungen vor dem Initiieren eines Eincheckvorgangs Codeanalyse ausgeführt.
+Administratoren für Team Foundation-Versionskontrolle können die Anforderungen in der Eincheckrichtlinie für die Verwaltbarkeit von Codeanalyseregeln hinzufügen. Diese checken Sie Richtlinien für Entwickler zum Ausführen der Codeanalyse, die auf Grundlage dieser regeländerungen vor dem Initiieren eines benötigen.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Öffnen des Editors für die Codeanalyserichtlinie
+## <a name="to-open-the-code-analysis-policy-editor"></a>Um die Codeanalyserichtlinie-Editor zu öffnen
 
-1. In **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
+1. In **Team Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Projekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
 
      Die **Quellcodeverwaltung** Dialogfeld wird angezeigt.
 
 2. Auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.
 
-     Die **hinzufügen in der Eincheckrichtlinie** Dialogfeld wird angezeigt.
+     Die **Eincheckrichtlinie hinzufügen** Dialogfeld wird angezeigt.
 
-3. In der **Eincheckrichtlinie** Liste der **Codeanalyse** Kontrollkästchen, und klicken Sie dann auf **OK**.
+3. In der **Eincheckrichtlinie** Liste der **Codeanalyse** , und klicken Sie dann auf **OK**.
 
-     Die **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld wird angezeigt.
+     Die **Code Codeanalyserichtlinien-Editor** Dialogfeld wird angezeigt.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>So aktivieren Sie die Verwaltbarkeit von Codeanalyseregeln
 
-1. In der **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld unter **Regeleinstellungen**, erweitern Sie die **Verwaltbarkeit Regeln** Knoten.
+1. In der **Code Codeanalyserichtlinien-Editor** Dialogfeld **Regeleinstellungen**, erweitern Sie die **Wartbarkeitsregeln** Knoten.
 
 2. Wählen Sie die Kontrollkästchen für die folgenden Regeln:
 
-    -   Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei einer Tiefe von mehr als 5 Ebenen
+    -   Vererbungstiefe: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei mehr als 5 Ebenen
 
     -   Komplexität: **CA1502 AvoidExcessiveComplexity** -Schwellenwert: Warnung bei mehr als 25
 
     -   Wartbarkeitsindex: **CA1505 AvoidUnmaintainableCode** -Schwellenwert: Warnung bei weniger als 20
 
-    -   Klassenkopplungen: **CA1506 AvoidExcessiveClassCoupling** -Schwellenwert: Warnung bei mehr als 80 für eine Klasse und mehr als 30 für eine Methode
+    -   Klassenkopplung: **CA1506 AvoidExcessiveClassCoupling** -Schwellenwert: Warnung bei mehr als 80 für eine Klasse und mehr als 30 für eine Methode
 
-    Wenn Sie einen Verstoß gegen eine Codeanalyseregel zu einen erfolgreichen Build verhindern möchten, wählen Sie außerdem, die **Warnung als ein Fehler behandeln** das Kontrollkästchen neben der Beschreibung der Regel.
+    Wählen Sie außerdem, wenn Sie einen Regelverstoß, um einen erfolgreichen Build zu verhindern möchten, die **behandeln Warnung als Fehler** Kontrollkästchen neben der Beschreibung der Regel.
 
-3. Klicken Sie auf **OK**. Die neue Richtlinie gilt nun für Eincheckvorgängen.
+3. Klicken Sie auf **OK**. Die neue Richtlinie gilt jetzt Eincheckvorgängen.
 
 ## <a name="see-also"></a>Siehe auch
 

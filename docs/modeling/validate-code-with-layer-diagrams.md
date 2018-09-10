@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567193"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280687"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -218,7 +218,7 @@ In dieser Version von Visual Studio abhängigkeitsüberprüfung tritt auf, in Ec
 
  Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen über [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] finden Sie hier:
 
--   [Build und Release](/vsts/build-release/index)
+-   [Azure-Pipelines](/azure/devops/pipelines/index)
 
 -   [Verwenden der Standardvorlage für den Buildprozess](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

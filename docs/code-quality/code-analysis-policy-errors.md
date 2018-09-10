@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175890"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278919"
 ---
 # <a name="code-analysis-policy-errors"></a>Richtlinienfehler bei der Codeanalyse
 Die folgenden Fehler treten auf, wenn die Codeanalyserichtlinie beim Einchecken nicht erfüllt wird:
 
  **Die codeanalyseeinstellungen für ein oder mehrere Projekte sind nicht kompatibel mit der Codeanalyserichtlinie.**
 
- Das Einchecken der Anforderungen an die Codeanalyse in die Quellcodeverwaltung des Teamprojekts wurde für ein oder mehrere Codeprojekte nicht erfüllt. Dieser Fehler kann durch eine oder mehrere der folgenden Bedingungen verursacht werden:
+ Die Anforderungen an die Codeanalyse, die die quellcodeverwaltung einchecken, wurde für eine oder mehrere Codeprojekte nicht erfüllt. Dieser Fehler kann durch eine oder mehrere der folgenden Bedingungen verursacht werden:
 
 1.  Die Codeanalyse ist nicht für das Build für alle Projekte in der Projektmappe aktiviert.
 
-2.  Für das Projekt in Visual Studio eine weniger restriktive hat der lokale Regelsatz **Aktion** festlegen, als der Teamprojekt-Regelsatz z. B. eine Regel, die festgelegt wird festlegen, um **Aktion**=**Fehler**  auf dem Server verfügt über seine **Aktion** festgelegt **Warnung** oder **keine** in der Regel legen Sie in Visual Studio ausgeführt wird).
+2.  Für das Projekt in Visual Studio eine weniger restriktive hat der lokale Regelsatz **Aktion** festlegen als die Regel Projekt beispielsweise eine Regel, die festgelegt wird festlegen, um **Aktion**=**Fehler** auf dem Server verfügt über seine **Aktion** festgelegt **Warnung** oder **keine** in der Regel legen Sie in Visual Studio ausgeführt wird).
 
-3.  Der Regelsatz, der in Visual Studio festgelegt ist, enthält nicht alle Regeln, die im Regelsatz angegeben sind, der in der Eincheckrichtlinie für die Codeanalyse für das Teamprojekt definiert ist.
+3.  Regelsatz in Visual Studio enthält nicht alle Regeln, die in der Regel legen Sie in der Codeanalyse-Check-in-Richtlinie für das Projekt angegebene angegeben werden.
 
  **Fehler bei der Richtlinie der Codeanalyse. Fehler im Projekt vorliegen {0} oder der Build ist nicht auf dem neuesten Stand.**
 
