@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382677"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
-Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.config* definierte Datenquelle für Komponententests verwendet wird. Sie erfahren, wie die Datei „app.config“ zum Definieren einer Datenquelle erstellt wird, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet werden kann. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:
+Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei *app.config* definierte Datenquelle für Komponententests verwendet wird. Sie erfahren, wie die Datei *app.config* zum Definieren einer Datenquelle erstellt wird, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet werden kann. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:
 
-- Erstellen der Datei „app.config“
+- Erstellen einer *app.config* Datei
 
 - Definieren eines benutzerdefinierten Konfigurationsabschnitts
 
@@ -45,21 +46,21 @@ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Hinzufügen einer Datei „app.config“ zum Projekt
 
-1. Wenn für das Testprojekt bereits eine Datei „app.config“ vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationabschnitts](#DefineCustomConfigurationSection) fort.
+1. Wenn für das Testprojekt bereits eine [app.config](#define-a-custom-configuration-section)-Datei vorhanden ist, fahren Sie mit *Definieren eines benutzerdefinierten Konfigurationsabschnitts* fort.
 
-2. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt, und wählen Sie dann **Hinzufügen** > **Neues Element** aus.
+2. Klicken Sie erst mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt und anschließend mit der Linken auf **Hinzufügen** > **Neues Element**.
 
      Das Fenster **Neues Element hinzufügen** wird geöffnet.
 
 3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Definieren eines benutzerdefinierten Konfigurationsabschnitts
+##  <a name="define-a-custom-configuration-section"></a>Definieren eines benutzerdefinierten Konfigurationsabschnitts
 
 Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>So fügen Sie der Datei „app.config“ den benutzerdefinierten Konfigurationsabschnitt hinzu
 
-1. Das Stammelement von „app.config“ sollte das **configuration**-Element sein. Erstellen Sie ein **configSections**-Element innerhalb des **configuration**-Elements. **configSections** sollte das erste Element in der Datei *app.config* sein.
+1. Das Stammelement von *app.config* sollte das **configuration**-Element sein. Erstellen Sie ein **configSections**-Element innerhalb des **configuration**-Elements. **configSections** sollte das erste Element in der Datei *app.config* sein.
 
 2. Erstellen Sie innerhalb des **configSections**-Elements ein **section**-Element.
 
@@ -67,7 +68,7 @@ Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklar
 
 Das **section**-Element sollte wie folgt aussehen:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für d
 
 Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Verbindung mit einem Microsoft Excel-Arbeitsblatt:
 
-|||
+|Attribut|Werte|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Wer
 
 Das **connectionStrings**-Element sollte in etwa wie folgt aussehen:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -111,7 +112,7 @@ Das **connectionStrings**-Element sollte in etwa wie folgt aussehen:
 
 ## <a name="define-data-sources"></a>Definieren von Datenquellen
 
-Der Abschnitt „Datenquellen“ enthält vier Attribute, die vom Testmodul zum Abrufen von Daten aus einer Datenquelle verwendet werden.
+Der Abschnitt „Datenquellen“ enthält vier Attribute, die von der Test-Engine zum Abrufen von Daten aus einer Datenquelle verwendet werden.
 
 - `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.
 
@@ -142,7 +143,7 @@ In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in eine
 
 Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Microsoft Excel-Datenquelle:
 
-|||
+|Attribut|Werte|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ Die endgültige Datei *app.config* sollte in etwa wie folgt aussehen:
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Erstellen eines Komponententests mit in der Datei „app.config“ definierten Datenquellen
 
-Nachdem die Datei „app.config“ definiert ist, erstellen Sie einen Komponententest, für den Daten aus den in der Datei „app.config“ definierten Datenquellen verwendet werden. In diesem Abschnitt wird Folgendes beschrieben:
+Nachdem die Datei *app.config* definiert ist, erstellen Sie einen Komponententest, für den Daten aus den in der Datei *app.config* definierten Datenquellen verwendet werden. In diesem Abschnitt wird Folgendes beschrieben:
 
-- Erstellen der in der Datei „app.config“ angegebenen Datenquellen
+- Erstellen Sie die in der Datei *app.config* angegebenen Datenquellen.
 
 - Verwenden der Datenquellen in zwei Testmethoden, bei denen die Werte der beiden Datenquellen verglichen werden
 
@@ -261,7 +262,7 @@ Nachdem die Datei „app.config“ definiert ist, erstellen Sie einen Komponente
     }
     ```
 
-3. Sehen Sie sich die DataSource-Attribute an. Beachten Sie die Einstellungsnamen aus der Datei „app.config“.
+3. Sehen Sie sich die DataSource-Attribute an. Beachten Sie die Einstellungsnamen aus der *app.config*-Datei.
 
 4. Erstellen Sie die Projektmappe, und führen Sie die Tests „MyTestMethod“ und „MyTestMethod2“ aus.
 
@@ -270,5 +271,5 @@ Nachdem die Datei „app.config“ definiert ist, erstellen Sie einen Komponente
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Komponententest für Code](../test/unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

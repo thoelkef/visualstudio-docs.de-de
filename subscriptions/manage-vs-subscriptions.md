@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nut
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548722"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637340"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -59,14 +59,14 @@ Das Visual Studio-Abonnements-Portal vereint alle Visual Studio-Abonnements und 
 
 ### <a name="which-subscription-am-i-using"></a>Welches Abonnement nutze ich?
 Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blauen Banner angezeigt.  Des Weiteren wird es in der oberen rechten Ecke der Seite angezeigt.
-
-   ![Das aktive Abonnement](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Das aktive Abonnement](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Sie haben folgende Möglichkeiten zum Wechseln zwischen Abonnements:
 - Klicken Sie oben rechts auf das Dropdownfeld, und wählen Sie das Abonnement aus der Liste aus
 - Klicken Sie auf die Registerkarte „Abonnements“ und anschließend auf das gewünschte Abonnement
-
-   ![Wechseln von Abonnements](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Wechseln von Abonnements](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Wenn Ihr Abonnement nicht sichtbar ist...
 - Ist es möglicherweise abgelaufen.  Nur aktive Abonnements werden im Abonnentenportal angezeigt.
@@ -102,8 +102,9 @@ Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfa
 3.  Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern.  Sie können auf der Registerkarte **Einstellungen** Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.  
 4.  Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben. 
 5.  Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren. 
+    > [!div class="mx-imgBorder"]    
+    > ![Bearbeiten von Profilinformationen](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Bearbeiten von Profilinformationen](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Verknüpfen meines Abonnements mit vorhandenen VSTS- oder Azure-Abonnements
 Wenn Sie sich über ein persönliches Microsoft-Konto (Microsoft Account, MSA) für Ihr Abonnement anmelden und über ein von Azure über ein Geschäfts- oder Schulkonto verwaltetes Abonnement verfügen, das Visual Studio Team Services oder Microsoft Azure beinhaltet, können Sie die beiden Abonnements miteinander verknüpfen. Dies wird als „alternatives Konto“ bezeichnet und ermöglicht Ihnen die Weiternutzung Ihres Microsoft-Kontos zum Anmelden bei Ihrem Abonnement sowie den Zugriff auf vorhandene Azure-, VSTS- und IDE-Ressourcen, die Ihrem Schul- oder Geschäftskonto zugeordnet sind. 
@@ -111,12 +112,12 @@ Wenn Sie sich über ein persönliches Microsoft-Konto (Microsoft Account, MSA) f
 Auch wenn beide Konten dieselbe E-Mail-Adresse nutzen, müssen Sie Ihr Geschäfts-/Schulkonto als Alternative hinzufügen, um Ihre Leistungen in beiden Konten in Anspruch nehmen zu können. 
 
 So fügen Sie ein alternatives Konto hinzu:
-1. Melden Sie sich mit Ihrem Microsoft-Konto (Microsoft Account, MSA) beim [Abonnentenportal](https://my.visualstudio.com) an.
+1. Melden Sie sich mit Ihrem Microsoft-Konto (Microsoft Account, MSA) beim [Abonnentenportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) an.
 2. Klicken Sie auf die Registerkarte **Abonnements**.
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
-4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule ein, und klicken Sie auf **Hinzufügen**. 
-
-![Alternatives Konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
+4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule/Ihrer Universität ein, und klicken Sie auf **Hinzufügen**. 
+    > [!div class="mx-imgBorder"]
+    > ![Alternatives Konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.  
 

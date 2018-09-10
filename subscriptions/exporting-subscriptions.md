@@ -9,12 +9,12 @@ description: Erfahren Sie, wie eine Liste von Abonnenten und Details zu den zuge
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031321"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635881"
 ---
 # <a name="exporting-subscription-information"></a>Exportieren von Abonnementinformationen
 
@@ -23,4 +23,5 @@ Im [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonn
 Dieses Feature ist nützlich für einige Szenarios, z.B. für die Nachverfolgung von Zuweisungen und Ablaufdaten. Wenn Sie z.B. von der Verwendung von BANs auf GUIDs umstellen, um Abonnementzuweisungen nachzuverfolgen, können Sie diesen Bericht mit der Formel SVERWEIS in Microsoft Excel verwenden, um Abonnenten entsprechend abzugleichen.  
 
 Um den Export auszuführen, wählen Sie einfach die Registerkarte **Exportieren** aus, und die Datei wird auf den lokalen Computer heruntergeladen. Die Datei enthält den Namen der Vereinbarung, die Ihre Benutzerabonnements enthält, sowie das Datum des Exports.  
-        ![Abonnenten exportieren](_img\exporting-subscriptions\exporting-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![Abonnenten exportieren](_img\exporting-subscriptions\exporting-subscriptions.png)

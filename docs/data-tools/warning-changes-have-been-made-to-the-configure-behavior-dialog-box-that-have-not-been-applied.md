@@ -1,5 +1,5 @@
 ---
-title: 'Warnung: das Verhalten konfigurieren (Dialogfeld), die nicht angewendet wurden Änderungen vorgenommen wurden'
+title: 'Warnung: das Dialogfeld Verhalten konfigurieren, die nicht übernommen wurden Änderungen vorgenommen wurden'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
@@ -10,18 +10,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa63b567a99d2701078e8f172bda78767e3af2c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6e23bfe676a8e6852d6bd38bd75a9198ad4bf233
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923982"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174259"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Vorgenommenen Änderungen wurden die Verhalten konfigurieren (Dialogfeld), die nicht angewendet wurden
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Wurden Änderungen vorgenommen zu dem Verhalten konfigurieren (Dialogfeld), die nicht übernommen wurden
 
 Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden. Möchten Sie die Änderungen übernehmen?
 
-Die **Verhalten konfigurieren** Dialogfeld können Sie INSERT-, Update- und Delete-Verhalten für alle verfügbaren Klassen zu konfigurieren. Diese Meldung wird angezeigt, wenn Sie ein neues auswählen **Klasse** und **Verhalten** Kombination und die vorangegangene Änderung nicht noch angewendet wurde.
+Die **Verhalten konfigurieren** Dialogfeld können Sie so konfigurieren Sie `Insert`, `Update`, und `Delete` Verhalten für alle Klassen, die verfügbar sind. Diese Meldung wird angezeigt, wenn Sie ein neues auswählen **Klasse** und **Verhalten** Kombination, und die vorherige Änderung wurde noch nicht übernommen wurde.
 
 ## <a name="to-apply-the-change-and-continue"></a>So übernehmen Sie die Änderung und fahren fort
 
@@ -29,9 +29,9 @@ Die **Verhalten konfigurieren** Dialogfeld können Sie INSERT-, Update- und Dele
 
 ## <a name="to-cancel-the-previous-change-and-continue"></a>So brechen Sie die vorangegangene Änderung ab und fahren fort
 
-- Klicken Sie auf **keine** um die Änderung, die dem ausgewählten **Klasse** und **Verhalten**.
+- Klicken Sie auf **keine** zum Abbrechen der Änderung, die dem ausgewählten **Klasse** und **Verhalten**.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

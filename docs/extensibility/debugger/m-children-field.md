@@ -1,5 +1,5 @@
 ---
-title: M_children Feld | Microsoft Docs
+title: M_children-Feld | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e71bc592e77daac877b571b14acd2d62a8657b9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e27704484e5cfb320c8b65432fb3efb283054019
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109976"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231147"
 ---
-# <a name="mchildren-field"></a>M_children Feld
+# <a name="mchildren-field"></a>M_children-Feld
 Die Liste der untergeordneten Aufgaben, die mit dieser Aufgabe registriert sind.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"*)  
   
- Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp 
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Während der Task ausgeführt wird, sollten nur der Thread, der die Aufgabe ausgeführt wird. dieses Array zugreifen.  
+ Während die Aufgabe ausgeführt wird, sollten nur der Thread, der die Aufgabe ausgeführt wird. dieses Array zugreifen.  
   
- Wenn die Aufgabe abgeschlossen ist, können andere Threads in diesem Feld zugreifen, solange sie nicht alle Elemente hinzufügen oder Elemente daraus entfernen.  
+ Wenn die Aufgabe abgeschlossen ist, können andere Threads in diesem Feld zugreifen, solange nichts hinzugefügt oder daraus Alles entfernen nicht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ContingentProperties-Klasse](../../extensibility/debugger/contingentproperties-class-internal-members.md)

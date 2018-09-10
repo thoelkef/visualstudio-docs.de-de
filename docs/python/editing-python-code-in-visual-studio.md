@@ -11,38 +11,38 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449139"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627156"
 ---
-# <a name="editing-python-code"></a>Bearbeiten von Python-Code
+# <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
 Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
 
-Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Befehl „An Interactive senden“)](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command).
+Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 |   |   |
 |---|---|
 | ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
 
-Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
+Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliedern](../ide/outlining.md), um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
 
-Sie können darüber hinaus den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J) verwenden, um die in den einzelnen Modulen definierten Python-Klassen und die in diesen Klassen definierten Funktionen zu überprüfen.
+Sie können darüber hinaus den Visual Studio-**Objektkatalog** (**Ansicht** > **Weitere Fenster** > **Objektkatalog** oder **STRG**+**W** > **J**) verwenden, um die in den einzelnen Modulen definierten Python-Klassen und die in diesen Klassen definierten Funktionen zu überprüfen.
 
 ## <a name="intellisense"></a>IntelliSense
 
 IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Visual Studio 2017 Version 15.7 und höher unterstützt auch [Typhinweise](#type-hints).
 
-Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
 
 **Visual Studio 2017 Version 15.6** und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
 
 ### <a name="completions"></a>Vervollständigungen
 
-Vervollständigungen werden für Anweisungen, Bezeichner oder andere Wörter angezeigt, die an der aktuellen Position im Editor eingegeben werden können. Die in der Liste angezeigten Elemente richten sich nach dem Kontext und werden gefiltert, um falsche oder störende Optionen auszulassen. Vervollständigungen werden häufig durch Eingabe verschiedener Anweisungen (z.B. `import`) und Operatoren (einschließlich eines Punkts) ausgelöst, Sie können sie jedoch jederzeit durch Drücken von STRG+J, LEERTASTE anzeigen.
+Vervollständigungen werden für Anweisungen, Bezeichner oder andere Wörter angezeigt, die an der aktuellen Position im Editor eingegeben werden können. Die in der Liste angezeigten Elemente richten sich nach dem Kontext und werden gefiltert, um falsche oder störende Optionen auszulassen. Vervollständigungen werden häufig durch Eingabe verschiedener Anweisungen (z.B. `import`) und Operatoren (einschließlich eines Punkts) ausgelöst. Sie können sie jedoch auch jederzeit durch Drücken von **STRG**+**J** > **LEERTASTE** anzeigen.
 
 ![Membervervollständigung](media/code-editing-completions-simple.png)
 
@@ -77,7 +77,7 @@ Die Eingabe von @ startet einen Decorator und zeigt potenzielle Decorators an. V
 ![Decoratorvervollständigung](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Über **Tools > Optionen > Text-Editor > Python > Erweitert** können Sie das Verhalten von Vervollständigungen konfigurieren. Einige Beispiele: **Liste basierend auf Suchzeichenfolge filtern** filtert die Vorschläge der Vervollständigung während der Eingabe (die Option ist standardmäßig aktiviert). **Membervervollständigung zeigt Schnittmenge der Member an** zeigt nur Vervollständigungen an, die von allen möglichen Typen unterstützt werden (die Option ist standardmäßig deaktiviert). Informationen finden Sie unter [Optionen: Vervollständigungsergebnisse](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> Über **Extras** > **Optionen** > **Text-Editor** > **Python** > **Erweitert** können Sie das Verhalten von Vervollständigungen konfigurieren. Einige Beispiele: **Liste basierend auf Suchzeichenfolge filtern** filtert die Vorschläge zur Vervollständigung während der Eingabe (diese Option ist standardmäßig aktiviert). **Membervervollständigung zeigt Schnittmenge der Member an** zeigt nur Vervollständigungen an, die von allen möglichen Typen unterstützt werden (diese Option ist standardmäßig deaktiviert). Informationen finden Sie unter [Optionen: Vervollständigungsergebnisse](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Typhinweise
 
@@ -93,7 +93,7 @@ Im folgenden Beispiel sehen Sie, wie die mit Anmerkungen versehenen Attribute de
 
 ![Anzeigen von Typhinweisen in der IntelliSense-Vervollständigung](media/code-editing-type-hints2.png)
 
-Es ist ferner hilfreich, Typhinweise während Ihres Projekts zu überprüfen, da Fehler üblicherweise erst während der Laufzeit zutage treten. Hierzu integriert Visual Studio das Branchenstandard-Tool MyPy über den Kontextmenübefehl **Python > Mypy ausführen** im **Projektmappen-Explorer**:
+Es ist ferner hilfreich, Typhinweise während Ihres Projekts zu überprüfen, da Fehler üblicherweise erst während der Laufzeit zutage treten. Hierzu integriert Visual Studio das Branchenstandard-Tool „MyPy“ über den Kontextmenübefehl **Python** > **MyPy ausführen** in den **Projektmappen-Explorer**:
 
 ![Ausführen des MyPy-Kontextmenübefehls im Projektmappen-Explorer](media/code-editing-type-hints-run-mypy.png)
 
@@ -115,22 +115,22 @@ Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehl
 ![Beispielergebnis für die Mypy-Überprüfung von Typhinweisen](media/code-editing-type-hints-validation-error.png)
 
 > [!Tip]
-> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über *Stub-Dateien* (`.pyi`) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Mypy-Projekt-Wiki.
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über *Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
 >
 > Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
 
 ### <a name="signature-help"></a>Signaturhilfe
 
-Wenn Sie Code schreiben, der eine Funktion aufruft, wird die Signaturhilfe angezeigt, sobald Sie die öffnende Klammer (`(`) eingeben. Die Signaturhilfe zeigt alle verfügbaren Informationen zu Dokumentation und Parametern an. Sie können die Signaturhilfe auch innerhalb eines Funktionsaufrufs mit STRG+UMSCHALT+LEERTASTE öffnen. Die angezeigten Informationen hängen von den Dokumentationszeichenfolgen im Quellcode der Funktion ab, enthalten aber alle Standardwerte.
+Wenn Sie Code schreiben, der eine Funktion aufruft, wird die Signaturhilfe angezeigt, sobald Sie die öffnende Klammer (`(`) eingeben. Die Signaturhilfe zeigt alle verfügbaren Informationen zu Dokumentation und Parametern an. Sie können die Signaturhilfe auch innerhalb eines Funktionsaufrufs mit **STRG**+**UMSCHALTTASTE**+**LEERTASTE** öffnen. Die angezeigten Informationen hängen von den Dokumentationszeichenfolgen im Quellcode der Funktion ab, enthalten aber alle Standardwerte.
 
 ![Signaturhilfe](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Um die Signaturhilfe zu deaktivieren, wechseln Sie zu **Tools > Optionen > Text-Editor > Python > Allgemein**, und deaktivieren Sie die Option **Anweisungsvervollständigung > Parameterinformationen**.
+> Um die Signaturhilfe zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Allgemein**, und deaktivieren Sie die Option **Anweisungsvervollständigung** > **Parameterinformationen**.
 
 ### <a name="quick-info"></a>QuickInfo
 
-Wenn Sie den Mauszeiger über einen Bezeichner bewegen, wird eine QuickInfo angezeigt. Je nach Bezeichner zeigt die QuickInfo die möglichen Werte oder Typen, die verfügbare Dokumentation, Rückgabetypen und Definitionsspeicherorte:
+Wenn Sie den Mauszeiger über einen Bezeichner bewegen, wird eine QuickInfo angezeigt. Je nach Bezeichner zeigt QuickInfo die möglichen Werte oder Typen, die verfügbare Dokumentation, Rückgabetypen und Definitionsspeicherorte an:
 
 ![QuickInfo](media/code-editing-quick-info.png)
 
@@ -140,32 +140,32 @@ Codefarben verwenden Informationen aus der Codeanalyse, um Variablen, Anweisunge
 
 ![Codefarben](media/code-editing-code-coloring.png)
 
-Um die Farben anzupassen, wechseln Sie zu **Tools > Optionen > Umgebung > Schriftarten und Farben**, und bearbeiten Sie die Einträge für Python in der Liste **Elemente anzeigen**.
+Um die Farben anzupassen, wechseln Sie zu **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben**, und bearbeiten Sie die Einträge für **Python** in der Liste **Elemente anzeigen**:
 
 ![Optionen für Schriftarten und Farben](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Um Codefarben zu deaktivieren, wechseln Sie zu **Tools > Optionen > Text-Editor > Python > Erweitert**, und deaktivieren Sie die Option **Verschiedene Optionen > Namen basierend auf Typ färben**. Informationen finden Sie unter [Optionen: Sonstige Optionen](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Um Codefarben zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Erweitert**, und deaktivieren Sie die Option **Sonstige Optionen** > **Farbnamen basierend auf Typen**. Siehe [Options - Miscellaneous options (Optionen: Sonstige Optionen)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Codeausschnitte
 
-Codeausschnitte sind Codefragmente, die Sie durch Kurzformen und Drücken der TAB-Taste in Ihre Dateien einfügen können. Alternativ dazu können Sie die Befehle **Bearbeiten > IntelliSense > Codeausschnitt einfügen** und **Umschließen mit** verwenden, **Python** und dann den gewünschten Codeausschnitt auswählen.
+Codeausschnitte sind Codefragmente, die Sie durch Tastenkombination und Drücken der **TAB**-TASTE in Ihre Dateien einfügen können. Alternativ dazu können Sie die Befehle **Bearbeiten** > **IntelliSense** > **Codeausschnitt einfügen** und **Umgeben mit** verwenden, **Python** und dann den gewünschten Codeausschnitt auswählen.
 
 Beispielsweise ist `class` eine Kurzform für einen Codeausschnitt, der eine Klassendefinition einfügt. Wenn Sie `class` eingeben, sehen Sie, dass der Codeausschnitt in der Liste für automatische Vervollständigung angezeigt wird:
 
 ![Codeausschnitt für die Klassenkurzform](media/code-editing-code-snippet-class.png)
 
-Durch Drücken der TAB-Taste wird der Rest der Klasse generiert. Sie können dann in die Namens- und Basisliste schreiben, indem Sie mit der TAB-Taste zwischen den hervorgehobenen Feldern navigieren und dann die EINGABETASTE drücken, um mit dem Eingeben des Texts zu beginnen.
+Durch Drücken der **TAB**-TASTE wird der Rest der Klasse generiert. Sie können dann in die Namens- und Basisliste schreiben, indem Sie mit der **TAB-TASTE** zwischen den hervorgehobenen Feldern navigieren und dann die **EINGABETASTE** drücken, um mit dem Eingeben des Texts zu beginnen.
 
 ![Hervorhebungen von Bereichen eines Codeausschnitts, die Sie vervollständigen können](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Menübefehle
 
-Bei Verwendung des Menübefehls **Bearbeiten > IntelliSense > Codeausschnitt einfügen** wählen Sie zunächst „Python“ und dann einen Ausschnitt:
+Bei Verwendung des Menübefehls **Bearbeiten** > **IntelliSense** > **Codeausschnitt einfügen** wählen Sie zunächst **Python** und dann einen Ausschnitt aus:
 
 ![Auswählen eines Codeausschnitts über den Befehl „Codeausschnitt einfügen“](media/code-editing-code-snippet-insert.png)
 
-Der Befehl **Bearbeiten > IntelliSense > Umschließen mit** platziert auf ähnliche Weise die aktuelle Auswahl im Text-Editor in einem ausgewählten Strukturelement. Sie haben z.B. einen Codeabschnitt wie den folgenden:
+Der Befehl **Bearbeiten** > **IntelliSense** > **Umgeben mit** platziert auf ähnliche Weise die aktuelle Auswahl im Text-Editor in einem ausgewählten Strukturelement. Sie haben z.B. einen Codeabschnitt wie den folgenden:
 
 ```python
 sum = 0
@@ -173,13 +173,13 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-Bei Auswahl dieses Codes und des Befehls **Umschließen mit** wird eine Liste der verfügbaren Ausschnitte angezeigt. Bei Auswahl von `def` aus der Liste wird der ausgewählte Code innerhalb einer Funktionsdefinition platziert, und Sie können die TAB-Taste zum Navigieren zwischen dem markierten Funktionsnamen und Argumenten verwenden:
+Bei Auswahl dieses Codes und des Befehls **Umschließen mit** wird eine Liste der verfügbaren Ausschnitte angezeigt. Bei Auswahl von **def** aus der Liste wird der ausgewählte Code innerhalb einer Funktionsdefinition platziert, und Sie können die **TAB**-TASTE zum Navigieren zwischen dem markierten Funktionsnamen und Argumenten verwenden:
 
 ![Verwenden des Befehls „Umschließen mit“ für Codeausschnitte](media/code-editing-code-snippet-surround-with.png)
 
 ### <a name="examine-available-snippets"></a>Untersuchen verfügbarer Ausschnitte
 
-Sie können die verfügbaren Codeausschnitte im durch den Menübefehl **Tools > Codeausschnitt-Manager** geöffneten Codeausschnitt-Manager anzeigen, indem Sie **Python** als Sprache auswählen:
+Sie können die verfügbaren Codeausschnitte im durch den Menübefehl **Extras** > **Codeausschnitt-Manager** geöffneten **Codeausschnitt-Manager** anzeigen, indem Sie **Python** als Sprache auswählen:
 
 ![Codeausschnitt-Manager](media/code-editing-code-snippets-manager.png)
 
@@ -187,9 +187,9 @@ Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplaris
 
 Wenn Sie einen Codeausschnitt geschrieben haben, den Sie gerne für andere Benutzer freigeben möchten, posten Sie ihn in einem Gist, und [informieren Sie uns darüber](https://github.com/Microsoft/PTVS/issues). Möglicherweise verwenden wir den Codeausschnitt in einer zukünftigen Version von Visual Studio.
 
-## <a name="navigating-your-code"></a>Navigieren im Code
+## <a name="navigate-your-code"></a>Navigieren in Ihrem Code
 
-Die Python-Unterstützung in Visual Studio bietet verschiedene Möglichkeiten, schnell im Code zu navigieren, darunter Bibliotheken, für die Quellcode verfügbar ist: die [Navigationsleiste](#navigation-bar), [Gehe zu Definition](#go-to-definition), [Navigieren zu](#navigate-to) und [Alle Verweise suchen](#find-all-references). Sie können auch den [Objektkatalog](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) von Visual Studio verwenden.
+Die Python-Unterstützung in Visual Studio bietet verschiedene Möglichkeiten, schnell im Code zu navigieren, darunter Bibliotheken, für die Quellcode verfügbar ist: die [Navigationsleiste](#navigation-bar), [**Gehe zu Definition**](#go-to-definition)[**Navigieren zu**](#navigate-to) und [**Alle Verweise suchen**](#find-all-references). Sie können auch den [**Objektkatalog**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) von Visual Studio verwenden.
 
 ### <a name="navigation-bar"></a>Navigationsleiste
 
@@ -198,25 +198,25 @@ Die Navigationsleiste wird am oberen Rand jedes Editor-Fensters angezeigt und en
 ![Navigationsleiste](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Um die Navigationsleiste auszublenden, wechseln Sie zu **Tools > Optionen > Text-Editor > Python > Allgemein**, und deaktivieren Sie die Option **Einstellungen > Navigationsleiste**.
+> Um die Navigationsleiste auszublenden, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Allgemein**, und deaktivieren Sie die Option **Einstellungen** > **Navigationsleiste**.
 
 ### <a name="go-to-definition"></a>Gehe zu Definition
 
-Mit **Gehe zu Definition** wechseln Sie schnell von einem Bezeichner (z.B. einem Funktionsnamen, einer Klasse oder einer Variablen) zu dem Quellcode, in dem dieser definiert ist. Um den Quellcode aufzurufen, klicken Sie mit der rechten Maustaste auf einen Bezeichner und wählen **Gehe zu Definition** aus, oder platzieren Sie den Textcursor in den Bezeichner und drücken F12. Dies funktioniert für Ihren gesamten Code und alle externen Bibliotheken, vorausgesetzt, der Quellcode ist verfügbar. Wenn der Quellcode der Bibliothek nicht verfügbar ist, springt **Gehe zu Definition** zur entsprechenden `import`-Anweisung für einen Modulverweis oder zeigt einen Fehler an.
+Mit **Gehe zu Definition** wechseln Sie schnell von einem Bezeichner (z.B. einem Funktionsnamen, einer Klasse oder einer Variablen) zu dem Quellcode, in dem dieser definiert ist. Um den Quellcode aufzurufen, klicken Sie mit der rechten Maustaste auf einen Bezeichner und wählen **Gehe zu Definition** aus, oder platzieren Sie den Textcursor in den Bezeichner und drücken Sie **F12**. Dies funktioniert für Ihren gesamten Code und alle externen Bibliotheken, vorausgesetzt, der Quellcode ist verfügbar. Wenn der Quellcode der Bibliothek nicht verfügbar ist, springt **Gehe zu Definition** zur entsprechenden `import`-Anweisung für einen Modulverweis oder zeigt einen Fehler an.
 
 ![Gehe zu Definition](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Navigieren zu
 
-Der Befehl **Bearbeiten > Navigieren zu...** (STRG-KOMMA) zeigt ein Suchfeld im Editor an, in das Sie eine beliebige Zeichenfolge eingeben und mögliche Übereinstimmungen in Ihrem Code anzeigen können, der eine Funktion, eine Klasse oder eine Variable definiert, die diese Zeichenfolge enthält. Diese Funktion bietet eine ähnliche Funktionalität wie **Gehe zu Definition**, ohne jedoch die Verwendung eines Bezeichners suchen zu müssen.
+Der Befehl **Bearbeiten** > **Navigieren zu** (**STRG**+**,**) zeigt ein Suchfeld im Editor an, in das Sie eine beliebige Zeichenfolge eingeben und mögliche Übereinstimmungen in Ihrem Code anzeigen können, der eine Funktion, eine Klasse oder eine Variable definiert, die diese Zeichenfolge enthält. Diese Funktion bietet eine ähnliche Funktionalität wie **Gehe zu Definition**, ohne jedoch die Verwendung eines Bezeichners suchen zu müssen.
 
-Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfeiltasten auswählen und die EINGABETASTE drücken, gelangen Sie zur Definition dieses Bezeichners.
+Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfeiltasten auswählen und die **EINGABETASTE** drücken, gelangen Sie zur Definition dieses Bezeichners.
 
 ![Navigieren zu](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Alle Verweise suchen
 
-**Alle Verweise suchen** ist eine nützliche Möglichkeit herauszufinden, wo ein bestimmter Bezeichner definiert und verwendet wird, einschließlich Importen und Zuweisungen. Um diese Funktionalität aufzurufen, klicken Sie mit der rechten Maustaste auf einen Bezeichner und wählen **Alle Verweise suchen** aus, oder platzieren Sie den Textcursor in den Bezeichner und drücken UMSCHALT+F12. Durch Doppelklicken auf ein Element in der Liste navigieren Sie zur entsprechenden Position.
+**Alle Verweise suchen** ist eine nützliche Möglichkeit herauszufinden, wo ein bestimmter Bezeichner definiert und verwendet wird, einschließlich Importen und Zuweisungen. Um diese Funktionalität aufzurufen, klicken Sie mit der rechten Maustaste auf einen Bezeichner und wählen **Alle Verweise suchen** aus, oder platzieren Sie den Textcursor in den Bezeichner und drücken Sie **UMSCHALTTASTE**+**F12**. Durch Doppelklicken auf ein Element in der Liste navigieren Sie zur entsprechenden Position.
 
 ![Ergebnisse von „Alle Verweise suchen“](media/code-editing-find-all-references.png)
 
@@ -224,4 +224,4 @@ Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfei
 
 - [Formatting](formatting-python-code.md)
 - [Refactoring](refactoring-python-code.md)
-- [Linting](linting-python-code.md)
+- [Use a linter (Verwenden eines Linters)](linting-python-code.md)

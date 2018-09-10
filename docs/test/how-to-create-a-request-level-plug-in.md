@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ac50f956ed45f42f77638146c1340c0ed90f68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974030"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382034"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Gewusst wie: Erstellen eines Anforderungsebenen-Plug-Ins
+# <a name="how-to-create-a-request-level-plug-in"></a>Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins
 
-*Anforderungen* sind die deklarativen Anweisungen, aus denen Webleistungstests bestehen. Webleistungstest-Plug-Ins ermöglichen es Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Sie können Plug-Ins erstellen und sie einer individuellen Anforderung sowie dem Webleistungstest hinzufügen, in dem sie enthalten ist. Mit einem benutzerdefinierten *Anforderungs-Plug-In* haben Sie die Möglichkeit, Code aufzurufen, während eine bestimmte Anforderung in einem Webleistungstest ausgeführt wird.
+*Anforderungen* sind die deklarativen Anweisungen, aus denen Webleistungstests bestehen. Webleistungstest-Plug-Ins ermöglichen Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Sie können Plug-Ins erstellen und sie einer individuellen Anforderung sowie dem Webleistungstest hinzufügen, in dem sie enthalten ist. Mit einem benutzerdefinierten *Anforderungs-Plug-In* haben Sie die Möglichkeit, Code aufzurufen, während eine bestimmte Anforderung in einem Webleistungstest ausgeführt wird.
 
 Jedes Webleistungstestanforderungs-Plug-In verfügt über eine PreRequest-Methode und eine PostRequest-Methode. Nachdem Sie ein Anforderungs-Plug-In an eine bestimmte HTTP-Anforderung angefügt haben, wird das PreRequest-Ereignis noch vor Senden der Anforderung ausgelöst und das PostRequest-Ereignis nach dem Empfangen der Antwort.
 
@@ -30,7 +30,7 @@ Sie können benutzerdefinierte Webleistungstestanforderungs-Plug-Ins mit den auf
 
 ## <a name="to-create-a-request-level-plug-in"></a>So erstellen Sie ein Anforderungsebenen-Plug-In
 
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Projektmappe. Klicken Sie auf **Hinzufügen** und dann **Neues Projekt**.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
@@ -40,23 +40,23 @@ Sie können benutzerdefinierte Webleistungstestanforderungs-Plug-Ins mit den auf
 
 4.  Geben Sie im Textfeld **Name** einen Namen für die Klasse ein, und klicken Sie auf **OK**.
 
-     Dem Projektmappen-Explorer wird das neue Klassenbibliotheksprojekt hinzugefügt, und die neue Klasse wird im Code-Editor angezeigt.
+     Das neue Klassenbibliotheksprojekt wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** angezeigt.
 
-5.  Klicken Sie im Projektmappen-Explorer in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und klicken Sie anschließend mit der linken Maustaste auf **Verweis hinzufügen**.
+5.  Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
 6.  Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus. Klicken Sie dann auf **OK**.
 
-     Dem Ordner **Verweis** im Projektmappen-Explorer wird der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** hinzugefügt.
+     Der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird zum Ordner **Verweise** im **Projektmappen-Explorer** hinzugefügt.
 
-7.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Webleistungstest-Anforderungs-Plug-In hinzufügen möchten. Klicken Sie auf **Verweis hinzufügen**.
+7.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Anforderungstest-Plug-In für den Webleistungstest hinzufügen möchten. Klicken Sie auf **Verweis hinzufügen**.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-8.  Klicken Sie auf die Registerkarte **Projekte**, wählen Sie das Klassenbibliotheksprojekt aus, und klicken Sie dann auf **OK**.
+8.  Klicken Sie auf die Registerkarte **Projekte**, wählen Sie das **Klassenbibliotheksprojekt** aus, und klicken Sie anschließend auf **OK**.
 
-9. Schreiben Sie im Code-Editor den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> abgeleitet wird.
+9. Schreiben Sie im **Code-Editor** den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> abgeleitet wird.
 
 10. Implementieren Sie Code innerhalb eines oder beider Ereignishandler <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> und <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*>. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
 
@@ -80,7 +80,7 @@ Sie können benutzerdefinierte Webleistungstestanforderungs-Plug-Ins mit den auf
      Das Plug-In wird dem Ordner **Anforderungs-Plug-Ins** hinzugefügt, der ein untergeordneter Ordner der HTTP-Anforderung ist.
 
     > [!WARNING]
-    > Möglicherweise erhalten Sie einen Fehler wie den folgenden, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
+    > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
     > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
     >
@@ -124,5 +124,5 @@ namespace RequestPluginNamespace
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Gewusst wie: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
+- [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
 - [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md)

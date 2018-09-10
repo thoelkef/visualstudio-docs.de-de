@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 3'
 description: Eine exemplarische Vorgehensweise der Grundlagen von Django im Kontext von Visual Studio-Projekten, die zeigt, wie Sie statische Dateien bereitstellen, Seiten zur App hinzufügen, und die Vorlagenvererbung verwenden
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750333"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626823"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Tutorial Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
 **Vorheriger Schritt:[Erstellen einer Django-App mit Ansichten und Seitenvorlagen](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -27,14 +27,14 @@ In den vorherigen Schritten dieses Tutorials haben Sie gelernt, eine minimale Dj
 In diesem Schritt wird Folgendes erläutert:
 
 > [!div class="checklist"]
-> - Das Verwenden von Visual Studio-Elementvorlagen zur schnellen Erstellung neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3-1)
+> - Das Verwenden von Visual Studio-Elementvorlagen zum schnellen Hinzufügen neuer Dateien verschiedener Typen mit geeigneten Codebausteinen (Schritt 3.1)
 > - Das Konfigurieren des Django-Projekts zur Bereitstellung von statischen Dateien (Schritt 3-2)
 > - Das Hinzufügen von zusätzlichen Seiten zur App (Schritt 3-3)
 > - Das Verwenden der Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste, die seitenübergreifend verwendet werden (Schritt 3-4)
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Schritt 3-1: Kennenlernen der Elementvorlagen
 
-Bei der Entwicklung eine Django-App fügen Sie in der Regel viele weitere Python-, HTML-, CSS- und JavaScript-Dateien hinzu. Für jeden Dateityp (sowie andere Dateien wie `web.config`, die Sie möglicherweise für die Bereitstellung benötigen), bietet Visual Studio praktische [Elementvorlagen](python-item-templates.md) für Ihren Start an.
+Bei der Entwicklung eine Django-App fügen Sie in der Regel viele weitere Python-, HTML-, CSS- und JavaScript-Dateien hinzu. Für jeden Dateityp (sowie andere Dateien wie *web.config*, die Sie möglicherweise für die Bereitstellung benötigen), bietet Visual Studio praktische [Elementvorlagen](python-item-templates.md) für Ihren Start an.
 
 Um die verfügbaren Vorlagen anzuzeigen, wechseln Sie zum **Projektmappen-Explorer**, klicken Sie mit der rechten Maustaste auf den Ordner, in dem Sie das Element erstellen möchten, und klicken Sie auf **Hinzufügen** > **Neues Element**:
 
@@ -44,13 +44,13 @@ Um eine Vorlage zu verwenden, wählen Sie die gewünschte Vorlage aus, geben Sie
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Frage: Woher weiß Visual Studio, welche Elementvorlagen angeboten werden sollen?
 
-Antwort: Die Visual Studio-Projektdatei (`.pyproj`) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
+Antwort: Die Visual Studio-Projektdatei (*.pyproj*) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Schritt 3-2: Bereitstellen statischer Dateien aus Ihrer App
 
 In einer mit Python (mit einem Framework) erstellten Web-App werden die Python-Dateien immer auf dem Server des Webhosts ausgeführt, und nie auf den Computer eines Benutzers übertragen. Andere Dateien, wie CSS- und JavaScript-Dateien, werden jedoch ausschließlich vom Browser verwendet, damit sie vom Hostserver einfach unbearbeitet übermittelt werden, wenn sie angefordert wurden. Solche Dateien werden als „statische“ Dateien bezeichnet, und Django kann sie automatisch übermitteln, ohne dass Sie Code schreiben müssen.
 
-Ein Django-Projekt wird standardmäßig konfiguriert, um statische Dateien aus dem `static`-Ordner der App bereitstellen zu können. Dies gelingt dank der folgenden Zeilen in der `settings.py` des Django-Projekts:
+Ein Django-Projekt wird standardmäßig konfiguriert, um statische Dateien aus dem *Static*-Ordner der App bereitstellen zu können. Dies gelingt dank der folgenden Zeilen in der Datei *settings.py* des Django-Projekts:
 
 ```python
 # Static files (CSS, JavaScript, Images)
@@ -61,15 +61,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ```
 
-Sie können Dateien mithilfe einer beliebigen Ordnerstruktur in `static` organisieren, und dann relative Pfade in diesem Ordner verwenden, um auf die Dateien zu verweisen. Um diesen Prozess zu veranschaulichen, wird mit den folgenden Schritten eine CSS-Datei zur App hinzugefügt, und das Stylesheet wird dann in der `index.html`-Vorlage verwendet:
+Sie können Dateien mithilfe einer beliebigen Ordnerstruktur im Ordner *Static* organisieren, und dann relative Pfade in diesem Ordner verwenden, um auf die Dateien zu verweisen. Um diesen Prozess zu veranschaulichen, wird mit den folgenden Schritten eine CSS-Datei zur App hinzugefügt, und das Stylesheet wird dann in der *index.html*-Vorlage verwendet:
 
-1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner „HelloDjangoApp“ im Visual Studio-Projekt, wählen Sie **Hinzufügen** > **Neuer Ordner** aus, und nennen Sie den Ordner `static`.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner **HelloDjangoApp** im Visual Studio-Projekt, wählen Sie **Hinzufügen** > **Neuer Ordner** aus, und nennen Sie den Ordner `static`.
 
-1. Klicken Sie mit der rechten Maustaste auf den `static`-Ordner, und wählen Sie **Hinzufügen** > **Neues Element** aus. Wählen Sie im daraufhin angezeigten Dialogfeld die Vorlage „Stylesheet“ aus, nennen Sie die Datei `site.css`, und klicken Sie auf **OK**. Die `site.css`-Datei wird im Projekt angezeigt und im Editor geöffnet. Ihre Ordnerstruktur sollte ungefähr wie im folgenden Beispiel aussehen:
+1. Klicken Sie mit der rechten Maustaste auf den **Static**-Ordner, und wählen Sie **Hinzufügen** > **Neues Element** aus. Wählen Sie im daraufhin angezeigten Dialogfeld die Vorlage **Stylesheet** aus, nennen Sie die Datei `site.css`, und klicken Sie auf **OK**. Die Datei **site.css** wird im Projekt angezeigt und im Editor geöffnet. Ihre Ordnerstruktur sollte ungefähr wie im folgenden Beispiel aussehen:
 
     ![Statische Dateistruktur wie im Projektmappen-Explorer angezeigt](media/django/step03-static-file-structure.png)
 
-1. Ersetzen Sie den Inhalt von `site.css` durch den folgenden Code, und speichern Sie die Datei:
+1. Ersetzen Sie den Inhalt von *site.css* durch den folgenden Code, und speichern Sie die Datei:
 
     ```css
     .message {
@@ -78,7 +78,7 @@ Sie können Dateien mithilfe einer beliebigen Ordnerstruktur in `static` organis
     }
     ```
 
-1. Ersetzen Sie den Inhalt der `templates/HelloDjangoApp/index.html`-Datei der App durch den folgenden Code, der das `<strong>`-Element ersetzt, das in Schritt 2 mit einer `<span>` verwendet wird, die auf die `message`-Formatklasse verweist. Wenn Sie Formatklasse auf diese Weise verwenden, sind Sie viel flexibler in der Gestaltung des Elements. (Wenn Sie `index.html` noch nicht in einen Unterordner in `templates` verschoben haben, finden Sie weitere Informationen unter [Namespacingvorlage](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) in Schritt 2.)
+1. Ersetzen Sie den Inhalt der Datei *templates/HelloDjangoApp/index.html* der App durch den folgenden Code, der das `<strong>`-Element ersetzt, das in Schritt 2 mit einer `<span>` verwendet wird, die auf die `message`-Formatklasse verweist. Wenn Sie Formatklasse auf diese Weise verwenden, sind Sie viel flexibler in der Gestaltung des Elements. (Wenn Sie Visual Studio 2017 15.7 und früher verwenden und *index.html* nicht in einem Unterordner von *Templates* verschoben haben, finden Sie Informationen dazu in Schritt 2-4 zum [Vorlagen-Namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing).)
 
     ```html
     <html>
@@ -95,13 +95,13 @@ Sie können Dateien mithilfe einer beliebigen Ordnerstruktur in `static` organis
 
 1. Führen Sie das Projekt aus, um die Ergebnisse anzuzeigen. Beenden Sie den Server, wenn Sie fertig sind, und übergeben Sie Ihre Änderungen an die Quellcodeverwaltung, wenn Sie möchten (wie in [Schritt 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control) beschrieben).
 
-### <a name="question-what-is-purpose-of-the--load-staticfiles--tag"></a>Frage: Welche Bedeutung hat das Tag {% load staticfiles %}?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Frage: Welche Bedeutung hat das Tag {% load staticfiles %}?
 
 Antwort: Die `{% load staticfiles %}`-Zeile ist erforderlich, bevor auf statische Dateien in Elementen wie `<head>` und `<body>` verwiesen werden kann. Im Beispiel in diesem Abschnitt verweist „staticfiles“ auf eine benutzerdefinierte Reihe an Django-Vorlagentags, wodurch Sie die `{% static %}`-Syntax zum Verweisen auf statische Dateien verwenden können.  Ohne `{% load staticfiles %}` wird eine Ausnahme angezeigt, wenn die App ausgeführt wird.
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Frage: Gibt es Konventionen für die Organisation von statischen Dateien?
 
-Antwort: Sie können andere CSS-, JavaScript- und HTML-Dateien zu Ihrem `static`-Ordner beliebig hinzufügen. Eine typische Möglichkeit zum Organisieren von statischen Dateien besteht im Erstellen von Unterordnern namens `fonts`, `scripts` und `content` (für Stylesheets und andere Dateien). Schließen Sie in jedem Fall diese Ordner im relativen Pfad zur Datei in `{% static %}`-Verweisen ein.
+Antwort: Sie können andere CSS-, JavaScript- und HTML-Dateien zu Ihrem *Static*-Ordner beliebig hinzufügen. Eine typische Möglichkeit zum Organisieren von statischen Dateien besteht im Erstellen von Unterordnern namens *Fonts* (Schriftarten), *Skripts* und *Content* (Inhalt) (für Stylesheets und andere Dateien). Schließen Sie in jedem Fall diese Ordner im relativen Pfad zur Datei in `{% static %}`-Verweisen ein.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Schritt 3-3: Fügen Sie eine Seite zur App hinzu
 
@@ -109,16 +109,16 @@ Das Hinzufügen einer anderen Seite zur App bedeutet Folgendes:
 
 - Fügen Sie eine Python-Funktion hinzu, die die Ansicht definiert.
 - Fügen Sie eine Vorlage zum Markup der Seite hinzu.
-- Fügen Sie das erforderliche Routing zur `urls.py`-Datei des Django-Projekts hinzu.
+- Fügen Sie der Datei *urls.py* des Django-Projekts das erforderliche Routing hinzu.
 
 Die folgenden Schritte fügen eine „Info“-Seite zum Projekt „HelloDjangoApp“ und Verknüpfungen zu dieser Seite auf der Startseite hinzu:
 
-1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den `templates/HelloDjangoApp`-Ordner, wählen Sie **Hinzufügen** > **Neues Element** aus, wählen Sie die Elementvorlage „HTML-Seite“ aus, nennen Sie die Datei `about.html`, und wählen Sie **OK** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner **templates/HelloDjangoApp**, wählen Sie **Hinzufügen** > **Neues Element** aus, wählen Sie die Elementvorlage **HTML-Seite** aus, nennen Sie die Datei `about.html`, und klicken Sie auf **OK**.
 
     > [!Tip]
     > Wenn der Befehl **Neues Element** nicht im Menü **Hinzufügen** angezeigt wird, stellen Sie sicher, dass Sie den Server beendet haben, damit Visual Studio den Debugging-Modus beendet.
 
-1. Ersetzen Sie den Inhalt von `about.html` durch das folgende Markup (Sie ersetzen die explizite Verknüpfung zur Startseite durch eine einfache Navigationsleiste in Schritt 3-4):
+1. Ersetzen Sie den Inhalt von *about.html* durch das folgende Markup (Sie ersetzen in Schritt 3.4 den expliziten Link zur Startseite durch eine einfache Navigationsleiste in):
 
     ```html
     <html>
@@ -134,7 +134,7 @@ Die folgenden Schritte fügen eine „Info“-Seite zum Projekt „HelloDjangoAp
     </html>
     ```
 
-1. Öffnen Sie die `views.py`-Datei der App, und fügen Sie eine Funktion namens `about` hinzu, die die Vorlage verwendet:
+1. Öffnen Sie die Datei *views.py* der App, und fügen Sie eine Funktion namens `about` hinzu, die die folgende Vorlage verwendet:
 
     ```python
     def about(request):
@@ -148,27 +148,27 @@ Die folgenden Schritte fügen eine „Info“-Seite zum Projekt „HelloDjangoAp
         )
     ```
 
-1. Öffnen Sie das die `urls.py`-Datei des Django-Projekts, und fügen Sie die folgende Zeile zum `urlPatterns`-Array hinzu:
+1. Öffnen Sie die Datei *urls.py* des Django-Projekts, und fügen Sie die folgende Zeile zum `urlPatterns`-Array hinzu:
 
     ```python
     url(r'^about$', HelloDjangoApp.views.about, name='about'),
     ```
 
-1. Öffnen Sie die `templates/HelloDjangoApp/index.html`-Datei, und fügen Sie die folgende Zeile unterhalb des `<body>`-Elements hinzu, um sich mit der „Infos“-Seite zu verknüpfen (Sie ersetzen diese Verknüpfung durch eine Navigationsleiste in Schritt 3-4):
+1. Öffnen Sie die Datei *templates/HelloDjangoApp/index.html*, und fügen Sie die folgende Zeile unterhalb des `<body>`-Elements hinzu, um einen Link zur Seite „Info“ hinzuzufügen (Sie ersetzen diesen Link in Schritt 3.4 durch eine Navigationsleiste):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Speichern Sie alle Dateien mit dem Menübefehl **Datei** > **Alle speichern**, oder drücken Sie nur auf STRG+UMSCHALT+S. (Technisch gesehen ist dieser Schritt nicht erforderlich, da das Ausführen des Projekts in Visual Studio die Dateien automatisch speichert. Dennoch ist es gut, wenn Sie diesen Befehl kennen!)
+1. Speichern Sie alle Dateien mit dem Menübefehl **Datei** > **Alle speichern**, oder drücken Sie einfach auf **STRG**+**UMSCHALTTASTE**+**S**. (Technisch gesehen ist dieser Schritt nicht erforderlich, da das Ausführen des Projekts in Visual Studio die Dateien automatisch speichert. Dennoch ist es gut, wenn Sie diesen Befehl kennen!)
 
 1. Führen Sie das Projekt zum Beobachten der Ergebnisse aus, und überprüfen Sie die Navigation zwischen den Seiten. Schließen Sie den Server, wenn Sie fertig sind.
 
 ### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Frage: Ich habe versucht, „index“ für die Verknüpfung zur Startseite zu verwenden, aber es funktioniert nicht. Warum?
 
-Antwort: Die Ansichtsfunktion in `views.py` lautet `index`, aber die URL-Routingmuster in der `urls.py`-Datei des Django-Projekts enthalten keinen regulären Ausdruck, der mit der Zeichenfolge „index“ übereinstimmt. Um mit diese Zeichenfolge übereinzustimmen, müssen Sie einen anderen Eintrag für das `^index$`-Muster hinzufügen.
+Antwort: Die Ansichtsfunktion in *views.py* lautet `index`, aber die URL-Routingmuster in der Datei *urls.py* des Django-Projekts enthalten keinen regulären Ausdruck, der mit der Zeichenfolge „index“ übereinstimmt. Um mit diese Zeichenfolge übereinzustimmen, müssen Sie einen anderen Eintrag für das `^index$`-Muster hinzufügen.
 
-Wie im nächsten Abschnitt dargestellt, ist es viel besser, das `{% url '<pattern_name>' %}`-Tag in der Seitenvorlage zu verwenden, um auf den *Namen* eines Musters zu verweisen. In diesem Fall erstellt Django die richtige URL für Sie. Ersetzen Sie beispielsweise `<div><a href="home">Home</a></div>` in `about.html` durch `<div><a href="{% url 'index' %}">Home</a></div>`. Die Verwendung von „Index“ funktioniert hier, da das erste URL-Muster in `urls.py` in der Tat „index“ heißt (aufgrund des `name='index'`-Arguments). Sie können auch „home“ verwenden, um auf das zweite Muster zu verweisen.
+Wie im nächsten Abschnitt dargestellt, ist es viel besser, das `{% url '<pattern_name>' %}`-Tag in der Seitenvorlage zu verwenden, um auf den *Namen* eines Musters zu verweisen. In diesem Fall erstellt Django die richtige URL für Sie. Ersetzen Sie z.B. `<div><a href="home">Home</a></div>` in *about.html* durch `<div><a href="{% url 'index' %}">Home</a></div>`. Die Verwendung von „index“ funktioniert hier, da das erste URL-Muster in *urls.py* in der Tat „index“ heißt (aufgrund des `name='index'`-Arguments). Sie können auch „home“ verwenden, um auf das zweite Muster zu verweisen.
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Schritt 3-4: Verwenden Sie die Vorlagenvererbung zur Erstellung einer Kopfzeile und einer Navigationsleiste
 
@@ -180,13 +180,13 @@ Das Django-Vorlagensystem bietet zwei Optionen für die Wiederverwendung von bes
 
 - *Vererbung* verwendet `{% extends <template_path> %}` am Anfang einer Seitenvorlage, um eine freigegebene Basisvorlage anzugeben, auf der die verweisende Vorlage aufbaut. Die Vererbung wird häufig verwendet, um ein freigegebenes Layout, eine Navigationsleiste und andere Strukturen für die Seiten einer App zu definieren, damit verweisende Vorlagen bestimmte Bereiche der Basisvorlage namens *Blöcke* nur hinzufügen oder ändern müssen.
 
-In beiden Fällen ist `<template_path>` relativ zum `templates`-Ordner der App (`../` oder `./` sind ebenfalls zulässig).
+In beiden Fällen ist `<template_path>` relativ zum Ordner *Templates* der App (`../` oder `./` sind ebenfalls zulässig).
 
 Eine Basisvorlage grenzt Blöcke mit `{% block <block_name> %}`- und `{% endblock %}`-Tags ab. Wenn eine verweisende Vorlage dann Tags mit den gleichen Blocknamen verwendet, überschreibt dessen Blockinhalt den der Basisvorlage.
 
 Die folgenden Schritte veranschaulichen die Vererbung:
 
-1. Erstellen Sie im `templates/HelloDjangoApp`-Ordner der App eine neue HTML-Datei (mit dem Kontextmenü **Hinzufügen** > **Neues Element** oder durch **Hinzufügen** > **HTML-Seite**) namens `layout.html`, und fügen Sie den folgenden Markupcode ein. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
+1. Erstellen Sie im Ordner *templates/HelloDjangoApp* der App eine neue HTML-Datei (über das Kontextmenü **Hinzufügen** > **Neues Element** oder **Hinzufügen** > **HTML-Seite**) namens *layout.html*, und ersetzen Sie deren Inhalt durch folgenden Markup-Code. Sie sehen, dass diese Vorlage einen Block mit dem Namen „content“ (Inhalt) enthält. Das ist alles, was die verweisenden Seiten ersetzen müssen:
 
     ```html
     <!DOCTYPE html>
@@ -216,7 +216,7 @@ Die folgenden Schritte veranschaulichen die Vererbung:
     </html>
     ```
 
-1. Fügen Sie die folgenden Formate zur `static/site.css`-Datei der App hinzu (in dieser exemplarischen Vorgehensweise wird kein reaktionsfähiges Design veranschaulicht; diese Formate generieren nur ein interessantes Ergebnis):
+1. Fügen Sie die folgenden Formate zur Datei *static/site.css* der App hinzu (in dieser exemplarischen Vorgehensweise wird kein reaktionsfähiges Design veranschaulicht; diese Formate generieren nur ein interessantes Ergebnis):
 
     ```css
     .navbar {
@@ -248,7 +248,7 @@ Die folgenden Schritte veranschaulichen die Vererbung:
     }
     ```
 
-1. Ändern Sie `templates/HelloDjangoApp/index.html`, um auf die Basisvorlage zu verweisen, und den Inhaltsblock zu überschreiben. Sie können sehen, dass diese Vorlage mithilfe der Vererbung einfach wird:
+1. Ändern Sie *templates/HelloDjangoApp/index.html*, um auf die Basisvorlage zu verweisen und den Inhaltsblock zu überschreiben. Sie können sehen, dass diese Vorlage mithilfe der Vererbung einfach wird:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -257,7 +257,7 @@ Die folgenden Schritte veranschaulichen die Vererbung:
     {% endblock %}
     ```
 
-1. Ändern Sie `templates/HelloDjangoApp/about.html`, um auch auf die Basisvorlage zu verweisen, und den Inhaltsblock zu überschreiben:
+1. Ändern Sie *templates/HelloDjangoApp/about.html*, um ebenfalls auf die Basisvorlage zu verweisen und den Inhaltsblock zu überschreiben:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -277,8 +277,9 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 > [!div class="nextstepaction"]
 > [Use the full Django Web Project template (Verwenden Sie die vollständige Vorlage „Django-Webprojekt“)](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
+- [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 3 (views) (Erstellen Ihrer ersten Django-App – Teil 3: Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Weitere Funktionen von Django-Vorlagen, z.B. die Ablaufsteuerung, finden Sie unter [The Django template language (Django-Vorlagensprache)](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Ausführliche Informationen zur Verwendung des `{% url %}`-Tags finden Sie unter der [URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) innerhalb von [Built-in template tags and filters for Django templates reference (Integrierte Vorlagentags und Filter für die Django-Vorlagenreferenz)](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)

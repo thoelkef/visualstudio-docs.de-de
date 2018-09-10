@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952944"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513532"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -93,7 +93,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |Neues Projekt|np NewProj|File.NewProject|
 |[Open File Command](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Befehl "Projekt öffnen"](../../ide/reference/open-project-command.md)|op|File.OpenProject|
-|Nur Definitionen anzeigen/Gliederung anhalten|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
+|Nur Definitionen anzeigen/Gliederung anhalten|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |Prozedurschritt|d|Debug.StepOver|
 |Parameterinformationen|ParamInfo|Edit.ParameterInfo|
 |Ausführen bis Rücksprung|pr|Debug.StepOut|

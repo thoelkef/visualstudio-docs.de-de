@@ -1,5 +1,5 @@
 ---
-title: Debuggen von HTML und CSS in uwp-apps | Microsoft Docs
+title: Debuggen von HTML und CSS in UWP-apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b5673a2ab191f71b9aec14f08c5adfc65883ff24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479119"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281441"
 ---
-# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in uwp-apps in Visual Studio
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-apps in Visual Studio
   
- Visual Studio bietet für JavaScript-Apps umfassende Debugfunktionen, die Internet Explorer- und Visual Studio-Entwicklern zum großen Teil vertraut sind. Diese Features werden für uwp-apps und mithilfe von Visual Studio-Tools für Apache Cordova erstellte apps unterstützt.  
+ Visual Studio bietet für JavaScript-Apps umfassende Debugfunktionen, die Internet Explorer- und Visual Studio-Entwicklern zum großen Teil vertraut sind. Diese Features werden für UWP-apps und erstellt mit Visual Studio-Tools für Apache Cordova-apps unterstützt.  
   
  Mit dem interaktiven Debuggingmodell der DOM-Überprüfungstools können Sie die gerenderte HTML und den CSS-Code anzeigen und bearbeiten. Dies alles ist möglich, ohne dass der Debugger beendet und neu gestartet werden muss.
   
- Informationen zu anderen JavaScript-Debugfunktionen, wie z. B. die Verwendung des JavaScript-Konsolenfensters und zum Festlegen von Haltepunkten finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Informationen zu anderen JavaScript-Debugfunktionen, z. B. mithilfe von JavaScript-Konsolenfenster ein, und Festlegen von Haltepunkten, finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Überprüfen des Live-DOM  
  Im Dom Explorer wird eine Ansicht der gerenderten Seite angezeigt. Zudem können Sie den Dom Explorer verwenden, um Werte zu ändern und die Ergebnisse sofort anzuzeigen. Dadurch können Sie Änderungen testen, ohne den Debugger zu beenden und neu zu starten. Bei dieser Methode wird der Quellcode des Projekts beim Interagieren mit der Seite nicht geändert. Daher nehmen Sie die Änderungen nach dem Auffinden der gewünschten Codekorrekturen am Quellcode vor.  
@@ -47,7 +47,7 @@ ms.locfileid: "31479119"
   
 -   Überprüfung, wie CSS-Formatvorlagen auf Seitenelemente angewendet wurden und Verfolgung der angewendeten Regeln.  
   
- Beim Debuggen von Apps müssen Sie häufig Elemente im DOM Explorer auswählen. Wenn Sie ein Element auswählen, werden die auf den Registerkarten des Live-DOM rechts angezeigten Werte automatisch aktualisiert, sodass diese dem im DOM Explorer ausgewählten Element entsprechen. Zu diesen Registerkarten gehören **Formatvorlagen**, **Berechnet**, **Layout**. Uwp-apps unterstützen auch die **Ereignisse** und **Änderungen** Registerkarten. Weitere Informationen über das Auswählen von Elementen finden Sie unter [Selecting elements](#SelectingElements).  
+ Beim Debuggen von Apps müssen Sie häufig Elemente im DOM Explorer auswählen. Wenn Sie ein Element auswählen, werden die auf den Registerkarten des Live-DOM rechts angezeigten Werte automatisch aktualisiert, sodass diese dem im DOM Explorer ausgewählten Element entsprechen. Zu diesen Registerkarten gehören **Formatvorlagen**, **Berechnet**, **Layout**. UWP-apps unterstützen auch die **Ereignisse** und **Änderungen** Registerkarten. Weitere Informationen über das Auswählen von Elementen finden Sie unter [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Wenn das Fenster "DOM Explorer" geschlossen ist, wählen Sie **Debuggen**>**Windows** > **DOM Explorer** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
@@ -55,17 +55,17 @@ ms.locfileid: "31479119"
  In der folgenden Prozedur wird eine App mithilfe vom DOM Explorer interaktiv debuggt. Sie erstellen eine Anwendung, die ein `FlipView` -Steuerelement verwendet und debuggen diese anschließend. Die App enthält mehrere Fehler.  
   
 > [!WARNING]
->  Das folgende Beispiel-app ist eine UWP-app. Die gleichen Funktionen werden für Cordova unterstützt. Die App an sich ist jedoch anders.  
+>  Die folgende Beispiel-app ist eine UWP-app. Die gleichen Funktionen werden für Cordova unterstützt. Die App an sich ist jedoch anders.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>So debuggen Sie durch Überprüfen des Live-DOM  
   
 1.  Erstellen Sie in Visual Studio eine neue Projektmappe, indem Sie **Datei** > **Neues Projekt**.  
   
-2.  Wählen Sie **JavaScript** > **universellen Windows-**, und wählen Sie dann **WinJS App**.  
+2.  Wählen Sie **JavaScript** > **Windows Universal**, und wählen Sie dann **WinJS-App**.  
   
 3.  Geben Sie einen Namen für das Projekt ein, beispielsweise `FlipViewApp`, und wählen Sie **OK** aus, um die App zu erstellen.  
   
-4.  Das Textelement der "Index.HTML" Fügen Sie Code hinzu:  
+4.  Fügen Sie in das BODY-Element aus "Index.HTML" folgenden Code ein:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -142,29 +142,29 @@ ms.locfileid: "31479119"
     })();  
     ```  
   
-     Die folgende Abbildung zeigt, was wir möchten, um festzustellen, ob beim Ausführen dieser app. Um diesen Status für die App zu erreichen, müssen Sie allerdings zunächst eine Anzahl von Fehlern beheben.  
+     Die folgende Abbildung zeigt, was wir angezeigt, wenn wir diese app ausführen möchten. Um diesen Status für die App zu erreichen, müssen Sie allerdings zunächst eine Anzahl von Fehlern beheben.  
   
-     ![FlipView-app mit erwarteten Ergebnissen](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
+     ![FlipView-app, die mit der erwarteten Ergebnisse](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Wählen Sie **lokaler Computer** aus der Dropdown-Liste neben der **Debuggen** Schaltfläche auf der **Debuggen** Symbolleiste:  
+7.  Wählen Sie **lokalen Computer** aus der Dropdown-Liste neben der **Debuggen starten** Schaltfläche der **Debuggen** Symbolleiste:  
   
      ![Debugzielliste auswählen](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Wählen Sie **Debuggen** > **Simulator**aus oder drücken Sie F5, um die Anwendung im Debugmodus auszuführen.  
   
-     Dadurch wird die app ausgeführt, aber Sie können ein fast gänzlich leeres Fenster werden angezeigt, da die Formatvorlage einige Fehler enthält. Das erste `FlipView` -Bild wird in einem kleinen Quadrat neben der Bildschirmmitte angezeigt.  
+     Dadurch wird die app ausgeführt, aber ein fast gänzlich leeres Fenster angezeigt, da es sich bei der Formatierung einige Fehler enthält. Das erste `FlipView` -Bild wird in einem kleinen Quadrat neben der Bildschirmmitte angezeigt.  
   
 10. Wechseln Sie zu Visual Studio, und wählen Sie die Registerkarte **DOM Explorer** aus.  
   
     > [!TIP]
     >  Sie können ALT+TAB oder F12 drücken, um zwischen Visual Studio und der ausgeführten App zu wechseln.  
   
-11. Wählen Sie im Fenster „DOM Explorer“ das DIV-Element für den Abschnitt aus, der über die ID `"fView"`verfügt. Verwenden Sie die Pfeiltasten, um das richtige DIV-Element anzuzeigen und auszuwählen. (Die rechts-Taste können Sie die untergeordneten Elemente eines Elements anzeigen.)  
+11. Wählen Sie im Fenster „DOM Explorer“ das DIV-Element für den Abschnitt aus, der über die ID `"fView"`verfügt. Verwenden Sie die Pfeiltasten, um das richtige DIV-Element anzuzeigen und auszuwählen. (Die rechts-Taste können Sie einen seiner untergeordneten Elemente anzeigen.)  
   
      ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Sie können auch das DIV-Element in der unteren linken Ecke des JavaScript-Konsolenfensters auswählen, indem Sie Folgendes eingeben `select(fView)` an die >> Eingabe auffordern und dann die EINGABETASTE drücken.  
+    >  Sie können auch das DIV-Element in der unteren linken Ecke des JavaScript-Konsolenfensters auswählen, indem Sie eingeben `select(fView)` an die >> Eingabe-Eingabeaufforderung, und dann die EINGABETASTE drücken.  
   
      Die Werte, die auf den Registerkarten rechts im DOM Explorer-Fenster zu sehen sind, werden automatisch aktualisiert, sodass diese dem aktuellen Element im DOM Explorer entsprechen.  
   
@@ -172,7 +172,7 @@ ms.locfileid: "31479119"
   
      Diese Registerkarte zeigt den berechneten oder den abschließenden Wert für jede Eigenschaft des ausgewählten DOM-Elements an.  
   
-13. Öffnen Sie die CSS-Regel für die Höhe. Beachten Sie, dass ein Inline auf 100px, dem inkonsistent mit dem Höhenwert von 100 %, der für festgelegt die `#fView` CSS-Auswahl. Da die `#fView` -Auswahl durchgestrichenen Text enthält, hat die Inlineformatvorlage Vorrang vor diesem Format.  
+13. Öffnen Sie die CSS-Regel für die Höhe. Beachten Sie, dass ein Inline auf 100px, dies ist inkonsistent mit dem Höhenwert von 100 % für festgelegt die `#fView` CSS-Selektor. Da die `#fView` -Auswahl durchgestrichenen Text enthält, hat die Inlineformatvorlage Vorrang vor diesem Format.  
   
      In der folgenden Abbildung ist die Registerkarte **Berechnet** dargestellt.  
   
@@ -185,11 +185,11 @@ ms.locfileid: "31479119"
     > [!IMPORTANT]
     >  Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden. Weitere Informationen finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) und [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Wechseln Sie zur app durch auswählen oder Alt + Tab drücken.  
+16. Wechseln Sie zur app, indem Sie ihn auswählen oder Alt + Tab.  
   
      Das `FlipView` -Steuerelement wird jetzt größer als die Bildschirmgröße vom Simulator oder Windows Phone-Emulator dargestellt. Dies ist nicht das beabsichtigte Ergebnis. Wechseln Sie zur weiteren Untersuchung zu Visual Studio zurück.  
   
-17. Wählen Sie im DOM Explorer die Registerkarte **Berechnet** erneut aus, und öffnen Sie die Höhenregel. Das fView-Element zeigt weiterhin einen Wert von 100 % an, wie vom CSS erwartet, aber der berechnete Wert wird die app Bildschirmhöhe (z. B. 800, 667,67 Pixel oder ein anderer Wert), was wir für diese app nicht gewünscht ist. Im nächsten Schritt untersuchen wir entfernen die Höhe und Breite für das `fView` DIV-Element.  
+17. Wählen Sie im DOM Explorer die Registerkarte **Berechnet** erneut aus, und öffnen Sie die Höhenregel. Das fView-Element zeigt weiterhin einen Wert von 100 %, wie vom CSS erwartet, aber der berechnete Wert ist gleich der app-Bildschirm angezeigte Höhe (z. B. 800 Pixeln, 667,67 Pixel oder einen anderen Wert), dies ist nicht für diese app gewünscht. Im nächsten Schritt untersuchen wir die Höhe und Breite für Entfernen der `fView` DIV-Element.  
   
 18. Deaktivieren Sie auf der Registerkarte **Formatvorlagen** die Höhen- und Breiteneigenschaften für die `#fView` CSS-Auswahl.  
   
@@ -199,13 +199,13 @@ ms.locfileid: "31479119"
   
      Sie sehen eine Verbesserung. Es muss jedoch noch ein weiteres Problem behoben werden: Die Ränder sind zu groß.  
   
-20. Klicken Sie zur weiteren Untersuchung zu Visual Studio wechseln, und wählen Sie die **Layout** Registerkarte feldmodell des Elements gesucht werden soll.  
+20. Um zu untersuchen, wechseln Sie zu Visual Studio, und wählen Sie die **Layout** Tab, um das feldmodell des Elements anzuzeigen.  
   
      In der **Layout** Registerkarte sehen Sie Folgendes:  
   
-    -   255px (Offset) und 255px (Rand) oder ähnliche Werte, je nach der geräteauflösung Ihres. 
+    -   255px (Offset) und 255px (Rand) oder ähnliche Werte, je nach Ihrer Auflösung für dieses Gerät. 
   
-     Die folgende Abbildung zeigt wie die **Layout** Registerkarte aussieht, wenn Sie einen Emulator mit 100 px Offset und Rand verwenden).  
+     Die folgende Abbildung zeigt die **Layout** Registerkarte sieht bei Verwendung ein Emulators mit 100 px Offset und Rand).  
   
      ![Registerkarte "DOM Explorer-Layout"](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -225,11 +225,11 @@ ms.locfileid: "31479119"
   
 2.  Öffnen Sie "default.html", und bearbeiten Sie den Quellcode, indem Sie die Höhe und die Breite des `"fView"` -DIV-Elements auf 100 % ändern.  
   
-3.  Klicken Sie auf der Debug-Symbolleiste auf die Schaltfläche **Windows-App aktualisieren** (oder drücken Sie F4). Die Schaltfläche sieht wie folgt: ![aktualisieren Sie Windows-app-Schaltfläche](../debugger/media/js_refresh.png "JS_Refresh").  
+3.  Klicken Sie auf der Debug-Symbolleiste auf die Schaltfläche **Windows-App aktualisieren** (oder drücken Sie F4). Die Schaltfläche sieht wie folgt aus: ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js_refresh.png "JS_Refresh").  
   
      Die Seiten der App werden erneut geladen, und der Simulator oder Windows Phone-Emulator wechselt in den Vordergrund zurück.  
   
-     Weitere Informationen zum Aktualisierungsfeature finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+     Weitere Informationen zur Aktualisierungsfunktion finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ##  <a name="SelectingElements"></a> Selecting elements  
  Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:  
@@ -242,7 +242,7 @@ ms.locfileid: "31479119"
   
  Wenn Sie das DOM Explorer-Fenster zur Auswahl von Elementen verwenden und mit dem Mauszeiger auf ein Element zeigen, wird das entsprechende Element in der ausgeführten App hervorgehoben. Elemente werden im DOM Explorer durch Anklicken ausgewählt oder mit den Pfeiltasten markiert und ausgewählt. Sie können Elemente im DOM Explorer auch auswählen, indem Sie die Schaltfläche **Element auswählen** verwenden. Die folgende Abbildung zeigt die Schaltfläche **Element auswählen** .  
   
- ![Wählen Sie die Schaltfläche Element im DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+ ![Wählen Sie die Schaltfläche "Element" im DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
  Wenn Sie auf **Element auswählen** klicken (oder STRG+B drücken), wird der Auswahlmodus geändert, sodass Sie ein Element im DOM Explorer auswählen können, indem Sie in der ausgeführten App auf dieses klicken. Nach einem Einzelklick wechselt der Modus wieder zum normalen Auswahlmodus zurück. Wenn Sie auf **Element auswählen**klicken, wird die Anwendung in den Vordergrund gestellt. Zudem wird der Cursor geändert, um den neuen Auswahlmodus wiederzugeben. Wenn Sie auf das konturierte Element klicken, kehrt der Dom Explorer mit dem ausgewählten Element in den Vordergrund zurück.  
   
@@ -261,5 +261,5 @@ ms.locfileid: "31479119"
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)   
- [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Produktsupport und Barrierefreiheit](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

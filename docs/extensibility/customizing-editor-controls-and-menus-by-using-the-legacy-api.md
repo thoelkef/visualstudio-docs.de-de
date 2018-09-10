@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Editor-Steuerelemente und Menüs, über die Legacy-API | Microsoft Docs
+title: Anpassen von Editor-Steuerelemente und Menüs mit der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,22 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e6b90319d6c0e84649f52da97b2678553254b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102381"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498528"
 ---
-# <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Anpassen von Editor-Steuerelemente und Menüs, über die Legacy-API
-Einen Sprachdienst oder einer Textansicht kann die Kontextmenüs und Steuerelemente im Editor steuern. Die Seiten in diesem Abschnitt beschrieben, wie Sie mit diesen Features funktionieren.  
+# <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Passen Sie Editor-Steuerelemente und Mmenus an, indem Sie mit der legacy-API
+Ein Sprachdienst oder einer Textansicht kann die Kontextmenüs und die Steuerelemente im Editor steuern. Die Seiten in diesem Abschnitt erfahren Sie, wie diese Features funktionieren.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Dropdown-Leiste](../extensibility/drop-down-bar.md)  
- Beschreibt die Dropdown-Leiste, und enthält Anweisungen für die Implementierung.  
+ [Dropdownleiste](../extensibility/drop-down-bar.md)  
+ Beschreibt die Dropdownleiste und enthält Anweisungen zum implementieren.  
   
- [Befehlsbehandlung](../extensibility/command-handling.md)  
- Behandeln in Editoren Details-Befehl.  
+ [Behandlung von Befehlen](../extensibility/command-handling.md)  
+ Details-Befehl, die in Editoren behandeln.  
   
  [Kontextmenüs](../extensibility/context-menus.md)  
  Beschreibt die Editor-Kontextmenüs.  
@@ -37,5 +37,5 @@ Einen Sprachdienst oder einer Textansicht kann die Kontextmenüs und Steuereleme
  Enthält Anweisungen zum Aktualisieren der **Statusleiste**.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Editor- und Sprachdiensterweiterungen](../extensibility/editor-and-language-service-extensions.md)  
+ [Service-Erweiterungen, Editoren und Sprachen](../extensibility/editor-and-language-service-extensions.md)  
  Führt die verschiedenen Typen von Editoren, die Sie in Visual Studio verwenden können.

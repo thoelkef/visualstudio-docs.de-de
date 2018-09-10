@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Codefenster über die Legacy-API | Microsoft Docs
+title: Anpassen von Windows von Code mithilfe der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8284985003415ef3e723fe735e64481c3666180a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109963"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499353"
 ---
-# <a name="customizing-code-windows-by-using-the-legacy-api"></a>Anpassen von Code-Fenster mit der Legacy-API
-Ein Codefenster ist ein Dokumentobjekt für das Fenster, das eine oder mehrere Textansichten unterstützt. Die genaue Features von einem Fenster des Code hängen von dem Dienst zugeordnete Sprache ab. Im Multiple Document Interface (MDI) Modus ist das Codefenster der untergeordneten MDI-Rahmens.  
+# <a name="customize-code-windows-by-using-the-legacy-api"></a>Anpassen von Fenstern des Code mit der legacy-API
+Ein Codefenster ist ein Dokument Window-Objekt, das eine oder mehrere Textansichten unterstützt. Die exakten Features eines Codefensters hängen von dem Dienst zugeordnete Sprache ab. Im Modus "Multiple Document Interface (MDI)" ist im Code-Fenster den MDI-Child-Rahmen.  
   
- Codefenster von Sprachdienste gesteuert werden, und jeder Sprachdienst kann eigenen Code-Fenster-Manager bereitstellen. Dadurch wird der Sprachdienst Codefensters, wie z. B. Wellenlinien und farbliche Kennzeichnung von seiner eigenen Zusatzelemente hinzu. Weitere Informationen dazu, wie beim Erstellen eines Fensters Core finden Sie unter [Instanziieren der Core-Editor mithilfe der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
+ Codefenster mit Sprachdienste gesteuert, und jeder Sprachdienst kann eigene Codefenster-Manager bereitstellen. Dadurch wird den Sprachdienst einen eigenen Zusatzelemente, die im Code-Fenster, z. B. Wellenlinien, Farbgebung und mehr hinzu. Weitere Informationen dazu, wie beim Erstellen eines Fensters Core finden Sie unter [instanziieren Sie die Kern-Editor, indem Sie die legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
   
- Ein Codefenster wird eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das eine Textansicht und alle Zusatzelemente, in dem Objekt, positioniert wurde. Wenn Sie Fernster des Code-Editor während der Instanziierung des Kerns erstellen, kann Ihre Sprachdienst Anfügen einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> in das Codefenster wird wie in der folgenden Abbildung gezeigt.  
+ Ein Codefenster ist ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das eine Textansicht und alle Zusatzelemente, die im-Objekt positioniert ist. Wenn Sie im Code-Fenster während der Instanziierung des den Kern-Editor erstellen, kann der Sprachdienst Anfügen einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> zum Code-Fenster, wie in der folgenden Abbildung gezeigt wird.  
   
- ![Grafik zu CodeWindow](../extensibility/media/vscodewindow.gif "Vscodewindow")  
+ ![CodeWindow-Grafik](../extensibility/media/vscodewindow.gif "Vscodewindow")  
 Codefenster  
   
- Der Sprachdienst den Fenster-Manager implementiert und ist zuständig für das Verwalten von randsteuerelementen, z. B. eine Dropdown-Leiste. Ruft der Code-Fenster die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> Methode während der Initialisierung der Code-Fenster. Wenn dieser Aufruf erfolgt, kann der Sprachdienst hinzufügen, eine Dropdownliste Balken- oder wird eine Schaltflächenleiste (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) in das Codefenster.  
+ Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung der Zusatzelemente, wie eine Dropdownleiste. Ruft der Code-Fenster die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> Methode während der Initialisierung der Code-Fenster. Wenn dieser Aufruf erfolgt, kann der Sprachdienst hinzufügen, eine Dropdownleiste oder eine Schaltflächenleiste (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) zum Code-Fenster.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  `Customizing Code Windows by Using the Legacy API`  
- Erläutert das Codefenster mithilfe der legacy-API anpassen.  
+ Erläutert das Anpassen des Code-Fenster mit der legacy-API.  
   
- [Vorgehensweise: Hosten einen-Editor in einem anderen Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Vorgehensweise: Hosten ein Editors in einem anderen Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Erläutert, wie einen zweiten Redakteur in einem Editor-Fenster zu hosten.  
   
- [Vorgehensweise: Ereignisse auszulösen, wenn der Editor den Fokus verliert.](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Gewusst wie: Auslösen der Ereignisse aus, wenn der Editor den Fokus verliert.](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Erläutert, wie eine Dokumentenansicht an ein dokumentdatenobjekt angefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
@@ -47,5 +47,5 @@ Codefenster
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Instanziieren den Core-Editor mithilfe der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Zugreifen auf TheText Ansicht über die Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Instanziieren Sie die Kern-Editor, indem Sie die legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
+ [Access TheText-Ansicht mit der legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

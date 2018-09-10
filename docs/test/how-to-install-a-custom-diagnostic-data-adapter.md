@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968535"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379288"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Gewusst wie: Installieren eines benutzerdefinierten Adapters für diagnostische Daten
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten
 
 Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt haben oder einen benutzerdefinierten Adapter für diagnostische Daten zur Verwendung bekommen haben, können Sie die Diagnosedatenadapter-Assembly installieren, indem Sie die Assemblydatei dafür in das richtige Verzeichnis auf dem lokalen Computer kopieren.
 
@@ -25,7 +25,7 @@ Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt hab
 
  Führen Sie die folgenden Schritte aus, um den benutzerdefinierten Adapter für diagnostische Daten an den entsprechenden Speicherorten zu installieren. Sie benötigen Administratorberechtigungen für einen beliebigen Computer, auf dem Sie den Adapter für diagnostische Daten installieren.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Installieren eines benutzerdefinierten Adapters für diagnostische Daten
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Installieren eines benutzerdefinierten Adapters für diagnostische Daten
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>So installieren Sie einen benutzerdefinierten Adapter für diagnostische Daten
 
@@ -35,9 +35,9 @@ Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt hab
 
      Zu kopierende Dateien:
 
-    -   Die Assembly des Adapters für diagnostische Daten (.dll) (erforderlich).
+    -   Die Assembly des Adapters für diagnostische Daten (*.dll*) (erforderlich).
 
-    -   Die Debugdatendatei (.pdb) für den Adapter (optional).
+    -   Die Debugdatendatei (*.pdb*) für den Adapter (optional).
 
     -   Die Konfigurationsdatei für Adapter (`<diagnostic data adapter name>.dll.config`), wenn Sie standardmäßige Konfigurationseinstellungen verwenden (optional).
 
@@ -50,18 +50,18 @@ Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt hab
 
 2.  Sie müssen zunächst eine vorhandene Testeinstellung auswählen oder eine neue in Microsoft Test Manager oder Visual Studio erstellen, und dann müssen Sie Ihren Adapter für diagnostische Daten auf der Registerkarte **Daten und Diagnose** der ausgewählten Testeinstellungen auswählen, um den Adapter für diagnostische Daten für einen Test auszuwählen.
 
-3.  Wenn Sie einen Konfigurations-Editor für Adapter für diagnostische Daten erstellt und installiert haben, um den Adapter für diagnostische Daten für die Testeinstellungen zu konfigurieren, klicken Sie neben dem Adapter auf **Konfigurieren**, und nehmen Sie die gewünschten Änderungen vor. Klicken Sie dann auf **Speichern**. Weitere Informationen zum Erstellen eines Konfigurations-Editors für Ihren Diagnosedatensammler finden Sie unter [How to: Create a Custom Editor for Data for Your Diagnostic Data Adapter (Vorgehensweise: Erstellen eines benutzerdefinierten Daten-Editors für den Adapter für diagnostische Daten)](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+3.  Wenn Sie einen Konfigurations-Editor für Adapter für diagnostische Daten erstellt und installiert haben, um den Adapter für diagnostische Daten für die Testeinstellungen zu konfigurieren, klicken Sie neben dem Adapter auf **Konfigurieren**, und nehmen Sie die gewünschten Änderungen vor. Klicken Sie dann auf **Speichern**. Weitere Informationen zum Erstellen eines Konfigurations-Editors für Ihren Diagnosedatensammler finden Sie unter [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-4.  Wenn Sie Tests in Microsoft Test Manager ausführen, können Sie diese Testeinstellungen dem Testplan zuweisen, bevor Sie die Tests ausführen, oder verwenden Sie den Befehl **Ausführen mit Optionen**, um Testeinstellungen zuzuweisen und zu überschreiben. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+4.  Wenn Sie Tests in Microsoft Test Manager ausführen, können Sie diese Testeinstellungen dem Testplan zuweisen, bevor Sie die Tests ausführen, oder verwenden Sie den Befehl **Ausführen mit Optionen**, um Testeinstellungen zuzuweisen und zu überschreiben. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
-     Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeinstellungen festlegen, dass sie aktiv sind. Weitere Informationen zu Testeinstellungen finden Sie unter [Collect Diagnostic Information Using Test Settings (Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md).
+     Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeinstellungen festlegen, dass sie aktiv sind. Weitere Informationen zu Testeinstellungen finden Sie unter [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 5.  Führen Sie die Tests unter Verwendung der Testeinstellungen aus, während der Adapter für diagnostische Daten ausgewählt ist.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Gewusst wie: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testsystems](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

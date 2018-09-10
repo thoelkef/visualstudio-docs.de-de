@@ -9,20 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78665f19f4cbc62197cc8474feb1c550cc4e491
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923799"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924160"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Gewusst wie: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
 
 In diesem Thema wird gezeigt, wie Sie das Visual Studio-<legacyBold>LinqToXmlDataBinding</legacyBold>-Projekt erstellen und das resultierende WPF-<legacyBold>LinqToXmlDataBinding</legacyBold>-Beispielprogramm ausführen können.
 
 Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Visual Studio-IDE](../ide/visual-studio-ide.md).
 
-## <a name="creating-and-populating-the-project"></a>Erstellen und Auffüllen des Projekts
+## <a name="create-and-populate-the-project"></a>Erstellen und Auffüllen des Projekts
 
 ### <a name="to-create-the-starting-project"></a>So erstellen Sie das Startprojekt
 
@@ -30,7 +30,7 @@ Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Vi
 
 1. Sofern nicht bereits vorhanden, fügen Sie Projektverweise für die folgenden .NET-Assemblys hinzu:
 
-    - System.Data
+    - <legacyBold>System.Data</legacyBold>
 
     - <legacyBold>System.Data.DataSetExtensions</legacyBold>
 
@@ -38,27 +38,27 @@ Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Vi
 
     - System.Xml.Linq
 
-1. Erstellen Sie die Projektmappe, indem Sie **STRG+UMSCHALT+B** drücken, und führen Sie sie dann mit **F5** aus. Das Projekt sollte ohne Fehler kompiliert und als generische WPF-Anwendung ausgeführt werden.
+1. Erstellen Sie die Projektmappe, indem Sie **STRG**+**UMSCHALTTASTE**+**B** drücken, und führen Sie sie dann mit **F5** aus. Das Projekt sollte ohne Fehler kompiliert und als generische WPF-Anwendung ausgeführt werden.
 
 ### <a name="to-add-custom-code-to-the-project"></a>So fügen Sie dem Projekt benutzerdefinierten Code hinzu
 
-1. Benennen Sie im Projektmappen-Explorer die Quelldatei „Window1.xaml“ in „L2XDBForm.xaml“ um. Die abhängige Quelldatei <legacyBold>Window1.xaml.cs</legacyBold> sollte automatisch in <legacyBold>L2XDBForm.xaml.cs</legacyBold> umbenannt werden.
+1. Benennen Sie im Projektmappen-Explorer die Quelldatei **Window1.xaml** in **L2XDBForm.xaml** um. Die abhängige Quelldatei **Window1.xaml.cs** sollte automatisch in **L2XDBForm.xaml.cs** umbenannt werden.
 
-1. Ersetzen Sie den Quellcode in der Datei „L2XDBForm.xaml“ durch den Codeabschnitt aus dem Thema [L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md). Verwenden Sie zum Arbeiten mit dieser Datei die XAML-Quellansicht.
+1. Ersetzen Sie den Quellcode in der Datei **L2XDBForm.xaml** durch den Codeabschnitt aus dem Artikel [L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md). Verwenden Sie zum Arbeiten mit dieser Datei die XAML-Quellansicht.
 
-1. Ersetzen Sie den Quellcode in der Datei „L2XDBForm.xaml.cs“ durch den Codeabschnitt aus dem Thema [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+1. Ersetzen Sie den Quellcode in der Datei **L2XDBForm.xaml.cs** durch den Codeabschnitt aus dem Artikel [L2DBForm.xaml.cs-Quellcode](../designers/l2dbform-xaml-cs-source-code.md).
 
-1. Ersetzen Sie in der Datei <legacyBold>App.xaml</legacyBold> alle Vorkommen der Zeichenfolge <legacyBold>Window1.xaml</legacyBold> durch <legacyBold>L2XDBForm.xaml</legacyBold>.
+1. Ersetzen Sie in der Datei **App.xaml** alle Vorkommen der Zeichenfolge `Window1.xaml` durch `L2XDBForm.xaml`.
 
-1. Erstellen Sie die Projektmappe, indem Sie **STRG+UMSCHALT+B** drücken.
+1. Erstellen Sie die Projektmappe, indem Sie **STRG**+**UMSCHALTTASTE**+**B** drücken.
 
-## <a name="running-the-program"></a>Ausführen des Programms
+## <a name="run-the-program"></a>Ausführen des Programms
 
 Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ermöglicht es dem Benutzer, eine Liste von Büchern anzuzeigen und zu bearbeiten, die als eingebettetes XML-Element gespeichert ist.
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>So führen Sie das Programm aus und zeigen die Buchliste an
 
-- Führen Sie LinqToXmlDataBinding aus, indem Sie **F5** (**Debuggen starten**) oder **STRG+F5** (**Starten ohne Debuggen**) drücken.
+- Führen Sie LinqToXmlDataBinding aus, indem Sie **F5** (**Debuggen starten**) oder **STRG**+**F5** (**Starten ohne Debuggen**) drücken.
 
    Daraufhin wird ein Programmfenster mit dem Titel **WPF-Datenbindung mit LINQ to XML** angezeigt.
 
@@ -68,9 +68,9 @@ Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ermöglicht es dem Be
 
 ### <a name="to-add-and-delete-books-from-the-list"></a>So fügen Sie der Liste Bücher hinzu und löschen Bücher daraus
 
-- Wenn Sie ein vorhandenes Buch aus der Liste löschen möchten, wählen Sie es im Abschnitt **Book List** aus, und klicken Sie dann auf die Schaltfläche **Remove Selected Book**. Der Bucheintrag wird daraufhin sowohl aus der Buchliste als auch aus der unformatierten XML-Quellauflistung entfernt.
-
 - Wenn Sie der Liste ein neues Buch hinzufügen möchten, geben Sie in die <xref:System.Windows.Controls.TextBox>-Steuerelemente **ID** und **Value** im letzten Abschnitt, **Add New Book**, Werte ein, und klicken Sie dann auf **Add Book**. Das Buch wird sowohl der Buchliste als auch der XML-Auflistung angefügt. Das Programm prüft die Eingabewerte nicht auf ihre Gültigkeit.
+
+- Wenn Sie ein vorhandenes Buch aus der Liste löschen möchten, wählen Sie es im Abschnitt **Book List** aus, und klicken Sie dann auf die Schaltfläche **Remove Selected Book**. Der Bucheintrag wird daraufhin sowohl aus der Buchliste als auch aus der unformatierten XML-Quellauflistung entfernt.
 
 ### <a name="to-edit-an-existing-book-entry"></a>So bearbeiten Sie einen vorhandenen Bucheintrag
 

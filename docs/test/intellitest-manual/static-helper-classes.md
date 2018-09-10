@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511066"
 ---
 # <a name="static-helper-classes"></a>Statische Hilfsklassen
 
@@ -26,7 +27,7 @@ IntelliTest bietet eine Reihe von statischen Hilfsklassen, die beim Erstellen vo
 * [PexChoose](#pexchoose): ein Datenstrom von zusätzlichen Testeingaben, der von IntelliTest verwaltet wird
 * [PexObserve](#pexobserve): protokolliert konkrete Werte und überprüft diese optional im generierten Code
 
-Einige Klassen ermöglichen Ihnen eine Low-Level-Interaktion mit dem Ansatzpunktmodul von IntelliTest:
+Einige Klassen ermöglichen Ihnen eine Low-Level-Interaktion mit der Ansatzpunkt-Engine von IntelliTest:
 
 * [PexSymbolicValue](#pexsymbolicvalue): Hilfsprogramme zum Überprüfen oder Ändern von symbolischen Einschränkungen für Variablen
 
@@ -41,7 +42,7 @@ Wenn die angenommene Bedingung für einige Testeingaben nicht erfüllt ist, wird
 
 Der folgende parametrisierte Test berücksichtigt **j = 0** nicht:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Der obige Code ist fast äquivalent zu:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Wenn die angenommene Bedingung für eine bestimmte Testeingabe nicht erfüllt is
 
 Im Folgenden wird bestätigt, dass der absolute Wert einer ganzen Zahl positiv ist:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ Die **PexChoose**-Klasse kann in zwei Modi betrieben werden:
 
 * Machen Sie einen einfachen Aufruf an **PexChoose.Value**, um einen neuen Wert zu generieren:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Eine statische Klasse zum Protokollieren benannter Werte.
 
 Wenn IntelliTest den Code untersucht, wird **PexObserve** verwendet, um die berechneten Werte mithilfe von deren formatierten Zeichenfolgendarstellungen aufzuzeichnen. Diesen Werten werden eindeutige Namen zugeordnet.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Beispiel**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Normalerweise versucht IntelliTest alle Ausführungspfade des Codes während der
 
 Dieses Beispiel zeigt die Implementierung der **PexAssume.Arrays.ElementsAreNotNull**-Methode. In dieser Methode ignorieren Sie die Einschränkungen für die Länge des Arraywerts, um zu vermeiden, dass IntelliTest versucht, verschiedene Größen des Arrays zu generieren. Die Einschränkungen werden nur hier ignoriert. Wenn sich der getestete Code für verschiedene Arraylängen unterschiedlich verhält, kann IntelliTest keine verschieden großen Arrays von den Einschränkungen des getesteten Codes generieren.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

@@ -1,6 +1,6 @@
 ---
-title: Navigieren durch Code in Visual Studio
-ms.date: 09/26/2017
+title: Codenavigationsbefehle
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448609"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627297"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -84,11 +84,19 @@ Es existieren folgende „Gehe zu“-Befehle, die im Menü **Bearbeiten** unter 
 
 - **Zu Datei wechseln** (**STRG**+**1**, **STRG**+**F**): zur angegebenen Datei in der Projektmappe wechseln.
 
+- **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln (neu in Visual Studio 2017 Version 15.8).
+
 - **Gehe zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
 
 - **Zu Member navigieren** (**STRG**+**1**, **STRG**+**M**): zum angegebenen Member in der Projektmappe wechseln.
 
 - **Gehe zu Symbol** (**STRG**+**1**, **STRG**+**S**): zum angegebenen Symbol in der Projektmappe wechseln.
+
+In Visual Studio 2017 Version 15.8 und höher, sind die folgenden **Gehe zu**-Navigationsbefehle ebenfalls verfügbar:
+
+- **Go To Next Issue in File** (Gehe zum nächsten Problem in Datei) (**ALT**+**PgDn**) und **Go To Previous Issue in File** (Gehe zum vorherigen Problem in Datei) (**ALT**+**PgUp**)
+
+- **Zum Speicherort der letzten Bearbeitung wechseln** (**STRG**+**UMSCHALTTASTE**+**RÜCKTASTE**)
 
 Weitere Informationen zu diesen Befehlen finden Sie im Abschnitt [Code mithilfe von „Gehe zu“-Befehlen finden](../ide/go-to.md).
 

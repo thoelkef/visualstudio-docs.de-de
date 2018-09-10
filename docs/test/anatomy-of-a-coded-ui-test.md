@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 527a12591b05fcd1f20f8664132bf174ef553477
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978257"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180320"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Aufbau eines Tests der programmierten UI
 
 Wenn Sie einen Test der programmierten UI in einem UI-Testprojekt erstellen, werden der Projektmappe mehrere Dateien hinzugefügt. Dieses Thema enthält Informationen über diese Dateien.
 
-## <a name="contents-of-a-coded-ui-test"></a>Inhalt eines Tests der programmierten UI
+## <a name="contents-of-a-coded-ui-test"></a>Inhalte eines Tests der programmierten UI
 
 Wenn Sie einen Test der programmierten UI erstellen, erstellt der **Test-Generator der programmierten UI** eine Zuordnung der getesteten Benutzeroberfläche (UI) sowie die Testmethoden, Parameter und Assertionen für alle Tests. Zudem wird eine Klassendatei für jeden Test erstellt.
 
@@ -65,7 +65,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-Der Klassencode beginnt mit einem <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>-Attribut, das auf die Klasse angewendet wird, die als partielle Klasse deklariert wird. Beachten Sie, dass das Attribut außerdem auf jede Klasse in dieser Datei angewendet wird. Eine andere Datei, die weiteren Code für diese Klasse enthalten kann, ist `UIMap.cs`. Diese Datei wird weiter unten erläutert.
+Der Klassencode beginnt mit einem <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>-Attribut, das auf die Klasse angewendet wird, die als partielle Klasse deklariert wird. Beachten Sie, dass das Attribut außerdem auf jede Klasse in dieser Datei angewendet wird. Eine andere Datei, die weiteren Code für diese Klasse enthalten kann, ist *UIMap.cs*. Diese Datei wird weiter unten erläutert.
 
 Die generierte `UIMap`-Klasse enthält Code für jede Methode, die beim Aufzeichnen des Tests angegeben wurde.
 
@@ -120,11 +120,11 @@ public void AddItems()
 }
 ```
 
-Der Zusammenfassungskommentar für die einzelnen Methodendefinitionen gibt Aufschluss darüber, welche Klasse für Parameterwerte dieser Methode verwendet wird. In diesem Fall ist es die `AddItemsParams`-Klasse, die weiter unten in der `UIMap.cs`-Datei definiert wird. Dies ist auch der Werttyp, der von der `AddItemsParams`-Eigenschaft zurückgegeben wird.
+Der Zusammenfassungskommentar für die einzelnen Methodendefinitionen gibt Aufschluss darüber, welche Klasse für Parameterwerte dieser Methode verwendet wird. In diesem Fall ist es die `AddItemsParams`-Klasse, die weiter unten in der *UIMap.cs*-Datei definiert wird. Dies ist auch der Werttyp, der von der `AddItemsParams`-Eigenschaft zurückgegeben wird.
 
  Am Anfang des Methodencodes befindet sich ein `Variable Declarations`-Abschnitt, in dem lokale Variablen für die von der Methode verwendeten UI-Objekte definiert werden.
 
- In dieser Methode sind sowohl `UIItemWindow` als auch `UIItemEdit` Eigenschaften, auf die mithilfe der `UICalculatorWindow`-Klasse zugegriffen wird. Diese wird weiter unten in der `UIMap.cs`-Datei definiert.
+ In dieser Methode sind sowohl `UIItemWindow` als auch `UIItemEdit` Eigenschaften, auf die mithilfe der `UICalculatorWindow`-Klasse zugegriffen wird. Diese wird weiter unten in der *UIMap.cs*-Datei definiert.
 
  In den nächsten Zeilen wird mit Eigenschaften des `AddItemsParams`-Objekts Text von der Tastatur an die Rechneranwendung gesendet.
 
@@ -156,7 +156,7 @@ public virtual AddItemsParams AddItemsParams
 }
 ```
 
- Beachten Sie, dass die Eigenschaft den Wert in einer privaten lokalen Variable mit dem Namen `mAddItemsParams` speichert, bevor sie ihn zurückgibt. Der Eigenschaftsname und der Klassenname für das zurückgegebene Objekt sind identisch. Die Klasse wird weiter unten in der `UIMap.cs`-Datei definiert.
+ Beachten Sie, dass die Eigenschaft den Wert in einer privaten lokalen Variable mit dem Namen `mAddItemsParams` speichert, bevor sie ihn zurückgibt. Der Eigenschaftsname und der Klassenname für das zurückgegebene Objekt sind identisch. Die Klasse wird weiter unten in der *UIMap.cs*-Datei definiert.
 
  Alle von einer Eigenschaft zurückgegebenen Klassen sind ähnlich strukturiert. Das folgende Beispiel zeigt die `AddItemsParams`-Klasse:
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-Wie alle Klassen in der `UIMap.cs`-Datei beginnt diese Klasse mit dem <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Diese kleine Klasse enthält den `Fields`-Abschnitt, in dem die Zeichenfolgen definiert sind, die als Parameter für die <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>-Methode in der zuvor erläuterten `UIMap.AddItems()`-Methode verwendet werden. Sie können vor dem Aufruf der Methode, in der diese Parameter verwendet werden, Code schreiben, um die Werte in diesen Zeichenfolgenfeldern zu ersetzen.
+Wie alle Klassen in der *UIMap.cs*-Datei beginnt diese Klasse mit <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Diese kleine Klasse enthält den `Fields`-Abschnitt, in dem die Zeichenfolgen definiert sind, die als Parameter für die <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>-Methode in der zuvor erläuterten `UIMap.AddItems()`-Methode verwendet werden. Sie können vor dem Aufruf der Methode, in der diese Parameter verwendet werden, Code schreiben, um die Werte in diesen Zeichenfolgenfeldern zu ersetzen.
 
 ###  <a name="UIMapCS"></a> UIMap.cs
  Standardmäßig enthält diese Datei eine partielle `UIMap`-Klasse ohne Methoden oder Eigenschaften.
@@ -264,7 +264,7 @@ public void MyTestCleanup()
 ###  <a name="UIMapuitest"></a> UIMap.uitest
  Dies ist eine XML-Datei, die die Struktur der Aufzeichnung des Tests der programmierten UI und all seiner Teile darstellt. Dies beinhaltet die Aktionen und Klassen sowie die Methoden und Eigenschaften dieser Klassen. Die Datei [UIMap.Designer.cs](#UIMapDesignerFile) enthält den Code, der vom Generator für programmierte UI generiert wird, um die Struktur des Tests zu reproduzieren, und stellt die Verbindung mit dem Testframework bereit.
 
- Die `UIMap.uitest`-Datei kann nicht direkt bearbeitet werden. Sie können den Test jedoch mit dem Generator für programmierte UI ändern, wodurch die Dateien `UIMap.uitest` und [UIMap.Designer.cs](#UIMapDesignerFile) automatisch geändert werden.
+ Die *UIMap.uitest*-Datei kann nicht direkt bearbeitet werden. Sie können den Test jedoch mit dem Generator für programmierte UI bearbeiten, wodurch die Dateien *UIMap.uitest* und [*UIMap.Designer.cs*](#UIMapDesignerFile) automatisch geändert werden.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -278,8 +278,8 @@ public void MyTestCleanup()
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)
-- [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
-- [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Bewährte Methoden für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
+- [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

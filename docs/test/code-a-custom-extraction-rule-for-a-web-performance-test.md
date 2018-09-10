@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966159"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179241"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
 
 Sie können eigene Extraktionsregeln erstellen. Leiten Sie hierzu Ihre Regeln von einer bereits vorhandenen Klasse für Extraktionsregeln ab. Extraktionsregeln werden von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>-Basisklasse abgeleitet.
 
@@ -48,7 +48,7 @@ Sie können eigene Extraktionsregeln erstellen. Leiten Sie hierzu Ihre Regeln vo
 
 7.  Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
 
-8.  Um die benutzerdefinierte Extraktionsregel hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Webleistungstestanforderung, und klicken Sie mit der linken Maustaste auf **Extraktionsregel hinzufügen**.
+8.  Um die benutzerdefinierte Extraktionsregel hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Webleistungstest-Anforderung, und wählen Sie **Extraktionsregel hinzufügen** aus.
 
      Das Dialogfeld **Extraktionsregel hinzufügen** wird angezeigt. Die benutzerdefinierte Validierungsregel wird in der Liste **Regel auswählen** zusammen mit den vordefinierten Validierungsregeln angezeigt. Wählen Sie die benutzerdefinierte Extraktionsregel aus, und klicken Sie auf **OK**.
 

@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255524"
 ---
-# <a name="modules-view---net-memory-instrumentation-data"></a>Modulansicht – .NET-Speicherinstrumentationsdaten im Profiler
+# <a name="modules-view---net-memory-instrumentation-data"></a>Modulansicht: .NET-Speicherinstrumentierungsdaten
 In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrumentationsmethode erfasst wurden, werden die Arbeitsspeicher- und Zeitsteuerungsdaten nach den Modulen gruppiert, die während der Profilerstellung ausgeführt wurden. Die Profilerstellungsdaten für die Funktionen des Moduls werden unter dem Modulknoten aufgeführt.  
   
 ## <a name="general"></a>Allgemein  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Name**|Der Name der Funktion oder des Moduls.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
@@ -43,7 +44,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
   
  Die Werte des inklusiven und des exklusiven Arbeitsspeichers eines Moduls sind die Summe der Werte des inklusiven und des exklusiven Arbeitsspeichers der Funktionen in dem Modul.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Inklusive Zuordnungen**|- Bei einer Funktion die Gesamtzahl von Objekten, die von der Funktion erstellt wurden. Die Zahl umfasst auch Objekte, die von den von der Funktion aufgerufenen Funktionen erstellt wurden.<br />- Bei einem Modul die Anzahl von Objekten, die während einer Profilerstellung zugeordnet wurden, als mindestens eine Funktion des Moduls ausgeführt wurde. Diese Zahl umfasst auch Objekte, die von durch den Aufruf von Modulfunktionen generierten Funktionen zugeordnet wurden.|  
 |**Inklusive Zuordnungen in %**|Der Prozentsatz aller Objekte, die während der Profilerstellung als inklusive Zuordnungen dieses Moduls oder dieser Funktion zugeordnet wurden.|  
@@ -57,7 +58,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst den zeitlichen Aufwand für untergeordnete Funktionen und Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**verstrichene inklusive Zeit**|- Bei einer Funktion die für die Funktion aufgewendete Zeit. Sie umfasst den zeitlichen Aufwand für untergeordnete Funktionen und Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen).<br />- Bei einem Modul die Zeit, in der sich mindestens eine Funktion im Modul auf der Aufrufliste befunden hat.|  
 |**verstrichene inklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die insgesamt verstrichene inklusive Zeit dieses Moduls oder dieser Funktion bezieht.|  
@@ -66,9 +67,9 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 |**Mindestens verstrichene inklusive Zeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens verstrichene inklusive Zeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens verstrichene inklusive Zeit.|  
   
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit  
- Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle in der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.  
+ Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**verstrichene exklusive Zeit**|- Bei einer Funktion die für das Modul oder die Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.<br />- Bei einem Modul die insgesamt verstrichene exklusive Zeit der Funktionen im Modul.|  
 |**verstrichene exklusive Zeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die insgesamt verstrichene exklusive Zeit dieses Moduls oder dieser Funktion bezieht.|  
@@ -79,7 +80,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit  
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in untergeordneten Funktionen, jedoch nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**inklusive Anwendungszeit**|- Bei einer Funktion die für Aufrufe der Funktion aufgewendete Zeit. Sie umfasst nur den zeitlichen Aufwand für untergeordnete Funktionen, aber nicht die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen) aufgewendet wurde.<br />- Bei einem Modul nur der Zeitraum, in dem sich mindestens eine Funktion des Moduls auf der Aufrufliste befunden hat, aber nicht die Zeit für Aufrufe des Betriebssystems.|  
 |**inklusive Anwendungszeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen inklusiven Zeit, die sich auf die inklusive Anwendungszeit dieses Moduls oder dieser Funktion bezieht.|  
@@ -87,10 +88,10 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 |**Maximale inklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion maximal aufgewendete inklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul maximal aufgewendete inklusive Anwendungszeit.|  
 |**Minimale inklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens aufgewendete inklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens aufgewendete inklusive Anwendungszeit.|  
   
-## <a name="application-exclusive-values"></a>Exklusive Anwendungszeit  
+## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Werte für die exklusive Anwendungszeit geben die Zeit an, die im Modul oder in der Funktion verbracht wurde. Sie umfasst weder den zeitlichen Aufwand für untergeordnete Funktionen noch die Zeit, die für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe- und Ausgabeoperationen) aufgewendet wurde.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**exklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieser Funktion insgesamt aufgewendete exklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul insgesamt aufgewendete exklusive Anwendungszeit.|  
 |**exklusive Anwendungszeit %**|Der Prozentsatz der während der Profilerstellung insgesamt verstrichenen exklusiven Zeit, die sich auf die exklusive Anwendungszeit dieses Moduls oder dieser Funktion bezieht.|  
@@ -99,6 +100,6 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 |**Minimale exklusive Anwendungszeit**|- Bei einer Funktion die für einen Aufruf dieses Moduls oder dieser Funktion mindestens aufgewendete exklusive Anwendungszeit.<br />- Bei einem Modul die für alle Aufrufe von Funktionen in diesem Modul mindestens aufgewendete exklusive Anwendungszeit.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Modulansicht – Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modulansicht](../profiling/modules-view-instrumentation-data.md)   
  [Modulansicht](../profiling/modules-view-sampling-data.md)

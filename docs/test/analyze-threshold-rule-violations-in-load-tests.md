@@ -17,24 +17,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750908"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234984"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verstößen gegen Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
 Schwellenwertregeln sind bestimmten Leistungsindikatoren zugeordnet. Verletzungen weisen darauf hin, dass ein Leistungsindikator einen festgelegten Wert über- oder unterschritten hat. Wenn Sie einen Auslastungstest ausführen, können auftretende Verletzungen der zuvor festgelegten Schwellenwertregeln analysiert werden.
 
-Wenn Verletzungen aufgetreten sind, wird ein **Schwellenwertverletzungen**-Link in der Statusleiste des Auslastungstest-Analyzers angezeigt und die Anzahl der aufgetretenen Verletzungen wird angegeben. Klicken Sie auf den Link, um die Schwellenwertverletzungs-Tabelle anzuzeigen. Die Schwellenwertverletzungen können auch im Fenster **Indikatoren** und im Diagramm angezeigt werden.
+Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** in der Statusleiste des **Auslastungstest-Analyzers** mit der Anzahl der aufgetretenen Verletzungen angegeben. Klicken Sie auf den Link, um die Schwellenwertverletzungs-Tabelle anzuzeigen. Die Schwellenwertverletzungen können auch im Fenster **Indikatoren** und im Diagramm angezeigt werden.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Anzeigen von Schwellenwertverletzungen in der Tabelle
 
  In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|description|In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung |In der Standardeinstellung angezeigt|
 |------------|-----------------|------------------------|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
 |Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**: Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
@@ -68,7 +68,7 @@ Wenn Verletzungen aufgetreten sind, wird ein **Schwellenwertverletzungen**-Link 
 
  In der Indikatorstruktur werden Symbole für Schwellenwertverletzungen von den einzelnen Indikatorknoten auf den Stammknoten übertragen. So werden Sie auf Verletzungen von Indikatoren hingewiesen, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde.
 
- Weitere Informationen finden Sie unter [Using the Counters Panel in Graphs View and Tables View (Verwenden des Indikatorenfensters in der Diagrammansicht und Tabellenansicht)](../test/counters-panel-in-load-test-analyzer.md).
+ Weitere Informationen finden Sie unter [Verwenden des Indikatorbereichs in der Diagrammansicht und Tabellenansicht](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Anzeigen von Schwellenwertverletzungen im Diagramm
 
@@ -79,5 +79,5 @@ Wenn Verletzungen aufgetreten sind, wird ein **Schwellenwertverletzungen**-Link 
 ## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analyze Load Test Results (Analysieren von Auslastungstestergebnissen)](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

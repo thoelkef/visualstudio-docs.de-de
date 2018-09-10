@@ -1,5 +1,5 @@
 ---
-title: Benutzercode mit nur mein Code Debuggen | Microsoft Docs
+title: Debuggen von Benutzercode mit nur mein Code | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
@@ -10,34 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627340"
 ---
-# <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Gibt an, ob nur Benutzercode mit nur mein Code in Visual Studio debuggen
-Sie können konfigurieren, dass Visual Studio automatisch Prozedurschritt für System-, Framework- und andere nichtbenutzer-Aufrufe und diese Aufrufe in das Aufruflistenfenster zu reduzieren. Die Funktion, die aktiviert oder deaktiviert dieses Verhalten wird aufgerufen, *nur mein Code*. In diesem Thema wird beschrieben, wie nur mein Code in c#, Visual Basic, C++ und JavaScript-Projekten verwendet wird.
+# <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Gibt an, ob nur Benutzercode, die mit nur mein Code in Visual Studio debuggen
+Sie können konfigurieren, dass Visual Studio für das automatische System-, Framework- und andere Aufrufe überspringen und diese Aufrufe in das Aufruflistenfenster zu reduzieren. Das Feature, das aktiviert oder deaktiviert dieses Verhalten wird aufgerufen, *nur mein Code*. In diesem Thema wird beschrieben, wie nur mein Code in c#, Visual Basic, C++ und JavaScript-Projekten verwendet wird.
 
-Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert.
+Für die meisten Programmiersprachen wird nur mein Code standardmäßig aktiviert.
   
 ##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren Sie oder deaktivieren Sie nur mein Code  
- Wählen Sie zum Aktivieren oder deaktivieren nur mein Code können Sie die **Tools > Optionen** Menü in Visual Studio. In der **Debuggen** > **allgemeine** Knoten aktivieren oder deaktivieren Sie **nur meinen Code aktivieren**.
+ Wählen Sie zum Aktivieren oder deaktivieren nur mein Code, der **Tools > Optionen** Menü in Visual Studio. In der **Debuggen** > **allgemeine** Knoten auswählen, oder deaktivieren Sie **nur meinen Code aktivieren**.
   
  ![Aktivieren Sie im Dialogfeld "Optionen" nur mein Code](../debugger/media/dbg_justmycode_options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  Die **nur meinen Code aktivieren** Einstellung ist eine globale Einstellung, die auf alle Visual Studio-Projekte in allen Sprachen angewendet wird.  
+>  Die **nur meinen Code aktivieren** ist eine globale Einstellung, die für alle Visual Studio-Projekte in allen Sprachen angewendet wird.  
   
-###  <a name="BKMK_Override_call_stack_filtering"></a> Nicht-benutzerseitigen Code im Aufruf Stapel Ansichten anzeigen  
- In Sichten, die Aufrufliste, wie z. B. anzeigen, die **Aufrufliste** und **Aufgaben** Windows, nur mein Code reduziert Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen Sie **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.
+###  <a name="BKMK_Override_call_stack_filtering"></a> Nicht benutzerseitiger Code im Aufruflistenansicht anzeigen  
+ In Ansichten, die zeigen, wie z. B. die Aufrufliste, die **Aufrufliste** und **Aufgaben** Windows "," nur mein Code reduziert Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.
 
- ![Externen Code in das Aufruflistenfenster anzeigen](../debugger/media/dbg_justmycode_showexternalcode.png "DBG_JustMyCode_ShowExternalCode")
+ ![Externen Code anzeigen, in das Aufruflistenfenster](../debugger/media/dbg_justmycode_showexternalcode.png "DBG_JustMyCode_ShowExternalCode")
   
 > [!NOTE]
->  Die **externen Code anzeigen** Einstellung Profiler des aktuellen Benutzers gespeichert ist. Sie wird auf alle Projekte in allen Sprachen angewendet, die von dem Benutzer geöffnet werden.
+>  Die **externen Code anzeigen** Einstellung des aktuellen Benutzers Profiler gespeichert ist. Sie wird auf alle Projekte in allen Sprachen angewendet, die von dem Benutzer geöffnet werden.
   
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET Framework nur mein Code  
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Nur eigenen Code für .NET framework  
   
 ###  <a name="BKMK_NET_User_and_non_user_code"></a> Benutzer-und Nichtbenutzercode  
  Nur mein Code untersucht um Benutzercode von Nichtbenutzercode zu unterscheiden, die Symboldateien (.pdb) und programmoptimierungen. Der Debugger behandelt Code als Nichtbenutzercode, wenn die Binärdatei optimiert oder die PDB-Datei nicht verfügbar ist.
@@ -53,10 +54,10 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
  Der übrige Code wird als Benutzercode angesehen.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Schrittverhalten  
- Wenn Sie **Einzelschritt** (Tastenkombination: F11) Nichtbenutzercode, überspringt der Debugger den Code für die nächste User-Anweisung. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger zur nächsten Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode gefunden wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
+ Wenn Sie **Einzelschritt** (Tastenkombination: F11) nicht benutzerseitiger Code, überspringt der Debugger den Code an die nächste benutzeranweisung. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger, die in die nächste Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Haltepunktverhalten  
- Wenn nur mein Code aktiviert ist, können Sie auswählen **alle unterbrechen** (Tastatur: Strg + Alt + UNTBR) und Beenden der Ausführung an einem Speicherort, in dem es kein Benutzercode ist angezeigt. Wenn dies geschieht, wird das Fenster "Kein Quellcode" angezeigt. Wenn Sie anschließend einen Schrittbefehl auswählen, wechselt der Debugger zur nächsten Zeile von Benutzercode.  
+ Wenn nur mein Code aktiviert ist, können Sie **alle unterbrechen** (Tastatur: Strg + Alt + UNTBR) und Beenden der Ausführung an einem Speicherort vorhanden ist kein Benutzercode angezeigt. Wenn dies geschieht, wird das Fenster "Kein Quellcode" angezeigt. Wenn Sie anschließend einen Schrittbefehl auswählen, wechselt der Debugger zur nächsten Zeile von Benutzercode.  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn ein Ausnahmefehler im Nichtbenutzercode auftritt, unterbricht der Debugger an der Zeile im Benutzercode, in der die Ausnahme generiert wurde.  
@@ -66,7 +67,9 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
 ##  <a name="BKMK_C___Just_My_Code"></a> C++ nur mein Code  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Benutzer-und Nichtbenutzercode  
- "Nur eigenen Code" in C++ ist anders als "Nur eigenen Code" in .NET Framework und JavaScript, da das Schrittverhalten vom Aufruflistenverhalten unabhängig ist.  
+"Nur eigenen Code" in C++ ist anders als "Nur eigenen Code" in .NET Framework und JavaScript, da das Schrittverhalten vom Aufruflistenverhalten unabhängig ist.  
+
+Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwendung von C++ **Tools** > **Optionen** > **Debuggen**  >  **Allgemeine** > **nur meinen Code aktivieren** (er ist standardmäßig aktiviert). Dies ist äquivalent zur Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter.
   
  **Aufruflisten**  
   
@@ -78,26 +81,26 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
   
 -   Die Funktionen sind in den `*.natjmc`-Dateien im Ordner `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` definiert.  
   
- **Ausführen in Einzelschritten**  
+ **Stepping**  
   
  Standardmäßig werden nur Funktionen, die in `*.natstepfilter`-Dateien im `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`-Ordner festgelegt sind, als Nichhtbenutzercode angesehen.  
   
- Sie können Ihre eigenen `.natstepfilter` und `.natjmc` erstellen, um das Schrittverhalten und das Verhalten der Aufruflistenfenster in `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` anzupassen.  
+ Sie können Ihre eigenen `.natstepfilter` und `.natjmc` erstellen, um das Schrittverhalten und das Verhalten der Aufruflistenfenster in `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` anzupassen.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Schrittverhalten  
- Wenn Sie **Einzelschritt** (Tastenkombination: F11) Nichtbenutzercode aus Benutzercode, überspringt der Debugger den Code in die nächste Zeile von Benutzercode. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger zur nächsten Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode gefunden wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
+ Wenn Sie **Einzelschritt** (Tastenkombination: F11) Nichtbenutzercode aus Benutzercode, überspringt der Debugger den Code in die nächste Zeile von Benutzercode. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger, die in die nächste Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
   
- Wenn der Debugger beim Nichtbenutzercode unterbricht (zum Beispiel, wenn ein Befehl "Alle unterbrechen" in Nichtbenutzercode anhält), wird die schrittweise Ausführung im Nichtbenutzercode weitergeführt.  
+ Wenn der Debugger beim Nichtbenutzercode unterbricht (zum Beispiel, wenn ein Befehl "Alle unterbrechen" in Nichtbenutzercode anhält), wird die schrittweise Ausführung im Nichtbenutzercode weitergeführt.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Ausnahmeverhalten  
- Wenn der Debugger eine Ausnahme trifft, hält er bei der Ausnahme, unabhängig davon, ob es in Benutzer- oder Nichtbenutzercode handelt. Die **vom Benutzercode unbehandelt** Optionen in der **Ausnahmen** (Dialogfeld), werden ignoriert.  
+ Wenn der Debugger eine Ausnahme trifft, wird es für die Ausnahme, unabhängig davon, ob es in Benutzer- oder Nichtbenutzercode beendet. Die **vom Benutzercode unbehandelt** "Optionen" der **Ausnahmen** im Dialogfeld werden ignoriert.  
   
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen des schrittverhaltens  
  Sie können Funktionen angeben, die zu überspringen sind, indem Sie sie als Nichtbenutzercode in `*.natstepfilter`-Dateien auflisten.  
   
--   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die .natstepfilter-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
+-   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natstepfilter-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
   
--   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die .natstepfilter-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` Ordner.  
+-   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natstepfilter-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
   
  NATSTEPFILTER-Dateien sind XML-Dateien mit folgender Syntax:  
   
@@ -122,14 +125,14 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
 |Funktion|Erforderlich. Gibt eine oder mehreren Funktionen als Nichtbenutzerfunktionen an.|  
 |`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Zum Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|  
 |`Module`|Dies ist optional. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Pfad zu dem Modul angibt, das die Funktion enthält. Die Groß- und Kleinschreibung wird bei der Übereinstimmung nicht berücksichtigt.|  
-|`Action`|Erforderlich. Einer dieser Werte, bei denen die Groß-/Kleinschreibung beachtet werden muss.<br /><br /> -   `NoStepInto`  -weist den Debugger an die übereinstimmende Funktion zu überspringen.<br />-   `StepInto`  -weist den Debugger, die die übereinstimmenden Funktionen schrittweise überschreiben alle anderen `NoStepInto` für die übereinstimmenden Funktionen.|  
+|`Action`|Erforderlich. Einer dieser Werte, bei denen die Groß-/Kleinschreibung beachtet werden muss.<br /><br /> -   `NoStepInto`  – weist den Debugger an die übereinstimmende Funktion zu überspringen.<br />-   `StepInto`  – weist den Debugger an die übereinstimmenden Funktionen schrittweise überschreiben alle anderen `NoStepInto` für die übereinstimmenden Funktionen.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen des aufruflistenverhaltens  
  Sie können Module, Quelldateien und Funktionen angeben, die als Nichtbenutzercode in Aufruflisten behandelt werden, indem sie in `*.natjmc`-Dateien angegeben werden.  
   
--   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die .natjmc-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
+-   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natjmc-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
   
--   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die .natjmc-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` Ordner.  
+-   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natjmc-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
   
  NATJMC-Dateien sind XML-Dateien mit folgender Syntax:  
   
@@ -157,7 +160,7 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (kein oder ein Zeichen) und `*` (null oder mehr Zeichen). Beispiel:<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in `\3rdParty\UtilLibs` auf einem Laufwerk als externen Code zu behandeln.|  
+|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (kein oder ein Zeichen) und `*` (null oder mehr Zeichen). Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in `\3rdParty\UtilLibs` auf einem Laufwerk als externen Code zu behandeln.|  
 |`Company`|Dies ist optional. Der Name des Unternehmens, das das Modul veröffentlicht, das in die ausführbare Datei eingebettet ist. Sie können dieses Attribut verwenden, um die Module zu unterscheiden.|  
   
  **Dateielementattribute**  
@@ -185,37 +188,37 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
 |-|-|  
 |**MyCode**|Benutzercode, den Sie besitzen und steuern.|  
 |**LibraryCode**|Nichtbenutzercode aus Bibliotheken, den Sie regelmäßig verwenden und die für das ordnungsgemäße Funktionieren Ihrer Anwendung erforderlich sind (z. B. WinJS oder jQuery).|  
-|**UnrelatedCode**|Nichtbenutzercode, die in Ihrer Anwendung, aber Sie ausgeführt werden konnte nicht der Besitzer und Ihre Anwendung nicht direkt beruht auf, dass Sie ordnungsgemäß funktioniert. (Z. B. kann ein Advertising SDK, das Anzeigen anzeigt einschließen.) In UWP-Projekten wird jeglicher Code, der in Ihrer app von einem HTTP- oder HTTPS URI geladen wird, als UnrelatedCode.|  
+|**UnrelatedCode**|Nichtbenutzercode, die in Ihrer Anwendung, aber Sie ausgeführt werden konnte nicht besitzen, es und Ihrer Anwendung nicht direkt beruht darauf, um ordnungsgemäß funktioniert. (Beispielsweise könnte dies enthalten eine Advertising SDK, das Anzeigen anzeigt.) In UWP-Projekten wird jeglicher Code, der in Ihrer app von einem HTTP- oder HTTPS-URI geladen wird, als UnrelatedCode.|  
   
  Der JavaScript-Debugger klassifiziert automatisch diese Codetypen:  
   
--   Skript, das ausgeführt wird, indem die Übergabe einer Zeichenfolge an die vom Host bereitgestellte `eval` Funktion klassifiziert **MyCode**.  
+-   Skript, das ausgeführt wird, indem Sie die Übergabe einer Zeichenfolge an der vom Host bereitgestellten `eval` Funktion wird als klassifiziert **MyCode**.  
   
--   Skript, das ausgeführt wird, indem die Übergabe einer Zeichenfolge, die `Function` klassifiziert, Konstruktor **LibraryCode**.  
+-   Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `Function` Konstruktor wird als klassifiziert **LibraryCode**.  
   
--   Skript, das in einem frameworkverweis, wie etwa WinJS oder das Azure-SDK enthalten ist, wird als klassifiziert **LibraryCode**.  
+-   Skript, das in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK enthalten ist, wird als klassifiziert **LibraryCode**.  
   
--   Skript, das ausgeführt wird, indem die Übergabe einer Zeichenfolge, die `setTimeout`, `setImmediate`, oder `setInterval` Funktionen klassifiziert **UnrelatedCode**.  
+-   Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Funktionen als klassifiziert **UnrelatedCode**.  
   
 -   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` legt anderen Benutzer- und Nichtbenutzercode für alle Visual Studio-JavaScript-Projekte fest.  
   
  Sie können die Standardklassifizierungen ändern und bestimmte Dateien und URLs klassifizieren, indem Sie dem Stammordner eines Projekts eine JSON-Datei mit dem Namen `mycode.json` hinzufügen.  
   
- Der übrige Code wird als klassifiziert **MyCode**.  
+ Alle anderen Code als klassifiziert **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Schrittverhalten  
   
 -   Wenn eine Funktion nicht Benutzer ist (**MyCode**) Code **Einzelschritt** (Tastenkombination: F11) verhält sich wie **Prozedurschritt** (Tastatur: F10).  
   
--   Wenn ein Schritt im Nichtbenutzercode beginnt (**LibraryCode** oder **UnrelatedCode**) code, und klicken Sie dann die schrittweise Ausführung verhält sich wie nur mein Code nicht aktiviert ist. Wenn Sie zurück zum Benutzercode, nur mein Code schrittweise Ausführen in Einzelschritten wieder aktiviert wird.  
+-   Wenn ein Schritt im Nichtbenutzercode beginnt (**LibraryCode** oder **UnrelatedCode**) code, und klicken Sie dann die schrittweise Ausführung kurzfristig verhält, als wenn nur mein Code nicht aktiviert ist. Wenn Sie wechseln zurück zum Benutzercode, nur mein Code schrittweise wieder aktiviert ist.  
   
--   Wenn ein Schritt im Benutzercode dazu führt, dass der aktuelle Ausführungskontext (wie etwa das Durchführen eines Schritts in der letzten Zeile eines Ereignishandlers) verlassen wird, hält der Debugger bei der nächsten ausgeführten Benutzercodezeile an. Beispielsweise führt ein Rückruf in **LibraryCode** Code, die der Debugger fort, bis die nächste Zeile des Benutzercodes ausgeführt wird.
+-   Wenn ein Schritt im Benutzercode dazu führt, dass der aktuelle Ausführungskontext (wie etwa das Durchführen eines Schritts in der letzten Zeile eines Ereignishandlers) verlassen wird, hält der Debugger bei der nächsten ausgeführten Benutzercodezeile an. Wenn in ein Rückruf ausgeführt wird z. B. **LibraryCode** Code, die der Debugger wird fortgesetzt, bis die nächste Zeile des Benutzercodes ausführt.
   
--   **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11) hält in der nächsten Zeile des Benutzercodes. Wenn kein Benutzercode gefunden wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
+-   **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11) hält in der nächsten Zeile des Benutzercodes. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Haltepunktverhalten  
   
--   Legen Sie im Code Haltepunkte werden werden unabhängig von der Klassifizierung dieses Codes immer erreicht.  
+-   Legen Sie im Code Haltepunkte werden unabhängig von der Klassifizierung dieses Codes immer erreicht  
   
 -   Wenn das `debugger`-Schlüsselwort gefunden wird in:  
   
@@ -228,11 +231,11 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
   
 -   **MyCode** oder **LibraryCode** Code, unterbricht der Debugger immer.  
   
--   **UnrelatedCode** Code und **MyCode** oder **LibraryCode** Code ist in der Aufrufliste, unterbricht der Debugger.  
+-   **UnrelatedCode** Code und **MyCode** oder **LibraryCode** Code befindet sich in der Aufrufliste befindet, unterbricht der Debugger.  
   
  Wenn Ausnahmen der ersten Chance für die Ausnahme im Dialogfeld "Ausnahmen" aktiviert sind, und die Ausnahme, in ausgelöst wird **LibraryCode** oder **UnrelatedCode** Code:  
   
--   Wenn die Ausnahme behandelt wird, unterbricht der Debugger nicht.  
+-   Wenn die Ausnahme behandelt wird, unterbrochen nicht der Debugger.  
   
 -   Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.  
   
@@ -277,7 +280,7 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
   
  **Eval, Function und ScriptBlock**  
   
- Die **Eval**, **Funktion**, und **"scriptblock"** Schlüsselwertpaare bestimmen, wie dynamisch erzeugter Code klassifiziert wird.  
+ Die **Eval**, **Funktion**, und **"scriptblock"** Schlüssel-/Wertpaaren bestimmen, wie dynamisch erzeugter Code klassifiziert wird.  
   
 |||  
 |-|-|  
@@ -299,8 +302,8 @@ Nur mein Code ist für die meisten Programmiersprachen standardmäßig aktiviert
   
 |||  
 |-|-|  
-|**MyCode**|Ein Array von Urls oder Dateien, die als klassifiziert sind **MyCode**.|  
-|**Bibliotheken**|Ein Array von Urls oder Dateien, die als klassifiziert sind **LibraryCode**.|  
-|**Unabhängig vom stagingstatus**|Ein Array von Urls oder Dateien, die als klassifiziert sind **UnrelatedCode**.|  
+|**MyCode**|Ein Array von Urls oder Dateien, die als klassifiziert werden **MyCode**.|  
+|**Bibliotheken**|Ein Array von Urls oder Dateien, die als klassifiziert werden **LibraryCode**.|  
+|**Unabhängig vom stagingstatus**|Ein Array von Urls oder Dateien, die als klassifiziert werden **UnrelatedCode**.|  
   
  Die URL-Zeichenfolge oder Dateizeichenfolge kann eine oder mehrere `*`-Zeichen enthalten, die mit null oder mehr Zeichen übereinstimmen. `*` entspricht dem regulären Ausdruck `.*`.

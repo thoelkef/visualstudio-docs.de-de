@@ -1,5 +1,5 @@
 ---
-title: Bestimmen mithilfe von Interop-Assemblys Befehlsstatus | Microsoft Docs
+title: Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4989910fdec968a4a05e2459e6625ee2c15fd9a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005779b71e6c4fe748cadda787d5acef41d4e173
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128168"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498128"
 ---
-# <a name="determining-command-status-by-using-interop-assemblies"></a>Bestimmen der Befehlsstatus mithilfe von Interop-Assemblys
-Eine VSPackage muss den Status der Befehle von verfolgt, die sie behandeln kann. Die Umgebung kann nicht bestimmt werden, wenn ein Befehl innerhalb Ihres VSPackage behandelt aktiviert oder deaktiviert wird. Es handelt sich um die Zuständigkeit für das VSPackage, um die Umgebung zum Befehl Status zu informieren, z. B. der Status der allgemeine Befehle wie **Ausschneiden**, **Kopie**, und **einfügen**.  
+# <a name="determine-command-status-by-using-interop-assemblies"></a>Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys
+Eine VSPackage muss den Status der Befehle von verfolgt, die er verarbeiten kann. Die Umgebung kann nicht bestimmt werden, wenn ein Befehl in einem VSPackage behandelt aktiviert oder deaktiviert wird. Es ist Aufgabe Ihres VSPackage informiert die Umgebung zum Status von Befehl, z. B. der Zustand der allgemeine Befehle wie z. B. **Ausschneiden**, **Kopie**, und **einfügen**.  
   
 ## <a name="status-notification-sources"></a>Status-Benachrichtigung-Quellen  
- Die Umgebung empfängt Informationen zu Befehlen durch den VSPackages' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode, die Teil der VSPackage Implementierung ist von der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode des VSPackage unter zwei Bedingungen:  
+ Die Umgebung empfängt Informationen zu Befehlen durch den VSPackages' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode, die Teil der VSPackage Implementierung ist von der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode des VSPackages unter zwei Bedingungen:  
   
--   Wenn ein Benutzer eine Hauptmenü oder ein Kontextmenü (indem Sie mit der rechten Maustaste) geöffnet wird, führt die Umgebung die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode auf alle Befehle in diesem Menü, um ihren Status zu bestimmen.  
+-   Wenn ein Benutzer ein Hauptmenü oder ein Kontextmenü (durch Rechtsklick) geöffnet wird, führt die Umgebung die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode für alle Befehle in diesem Menü, deren Status zu bestimmen.  
   
--   Wenn das VSPackage anfordert, dass die Umgebung die aktuelle Benutzeroberfläche (UI) aktualisieren. In diesem Fall als Befehle ein, die derzeit für den Benutzer sichtbar, z. B. sind die **Ausschneiden**, **Kopie**, und **einfügen** auf der Standardsymbolleiste gruppieren, werden aktiviert und deaktiviert Antwort auf die Aktionen "Kontext" und Benutzer.  
+-   Wenn das VSPackage angefordert wird, dass die Umgebung auf die aktuelle Benutzeroberfläche (UI) aktualisieren. Dieses Update tritt auf, wie die Befehle, die derzeit für den Benutzer sichtbar, z. B. sind die **Ausschneiden**, **Kopie**, und **einfügen** auf der Standardsymbolleiste gruppieren, werden aktiviert und deaktiviert als Reaktion auf Kontext und Benutzeraktionen.  
   
- Da die Shell mehrere VSPackages hostet, würde der Shell Leistung unannehmbar beeinträchtigt werden, sofern dies für jedes VSPackage erkundigen Befehlsstatus abrufen erforderlich waren. Stattdessen sollten das VSPackage aktiv Umgebung benachrichtigen, wenn zum Zeitpunkt der Änderung die Benutzeroberfläche ändert. Weitere Informationen zu updatebenachrichtigung, finden Sie unter [Aktualisieren der Benutzeroberfläche](../../extensibility/updating-the-user-interface.md).  
+ Da die Shell auf mehreren VSPackages hostet, würde die Shell unerwartet Leistungseinbußen es mussten jedes VSPackage, um zu bestimmen, den Befehlsstatus abrufen. Stattdessen sollte das VSPackage die Umgebung aktiv benachrichtigen, wenn es sich bei ändert sich die Benutzeroberfläche zum Zeitpunkt der Änderung. Weitere Informationen zu updatebenachrichtigung, finden Sie unter [die Benutzeroberfläche aktualisiert](../../extensibility/updating-the-user-interface.md).  
   
 ## <a name="status-notification-failure"></a>Fehler beim Status-Benachrichtigung  
- Fehler Ihres VSPackage die Umgebung eine statusänderung Befehl benachrichtigen kann die Benutzeroberfläche in einem inkonsistenten Zustand platzieren. Denken Sie daran, dass die Menübefehle Menü- oder Kontext auf einer Symbolleiste vom Benutzer platziert werden können. Deshalb reicht Aktualisierung der Benutzeroberfläche nur, wenn ein Menü oder im Kontextmenü öffnet nicht.  
+ Fehler Ihres VSPackage, um die Umgebung von einer Zustandsänderung für den Befehl zu benachrichtigen, kann die Benutzeroberfläche in einem inkonsistenten Zustand platzieren. Denken Sie daran, dass keines Ihre Menübefehle im Menü oder Kontext durch den Benutzer auf einer Symbolleiste platziert werden kann. Aus diesem Grund ist die Benutzeroberfläche aktualisiert, nur, wenn ein Menü oder die Kontext-Menü geöffnet wird nicht ausreichend.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Implementation (Implementierung)](../../extensibility/internals/command-implementation.md)

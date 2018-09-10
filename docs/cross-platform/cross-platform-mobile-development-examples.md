@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7208d3086450604678b1fce78d4f6784bd38d50f
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065594"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251620"
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Beispiele für plattformübergreifende mobile Entwicklung
+# <a name="cross-platform-mobile-development-examples"></a>Beispiele für die plattformübergreifende mobile Entwicklung
 Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entwicklung installiert werden, generieren vollständige Beispiele, die Sie zum Lernen verwenden können. Darüber hinaus finden Sie im Windows Dev Center einige Anwendungsbeispiele, die Sie herunterladen und in Visual Studio ausprobieren können.  
   
 -   [Beispiel zu Android-Anwendung „hello-jni“](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -52,4 +52,4 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
   
  Um eines der Beispiele in Visual Studio öffnen, laden Sie die ZIP-Datei herunter, und öffnen Sie im Explorer die **Eigenschaften** -Seite der heruntergeladenen Datei. Wählen Sie die Schaltfläche **Zulassen** aus, und wählen Sie dann **OK**aus. Extrahieren Sie den Inhalt der ZIP-Datei in einem geeigneten Speicherort, öffnen Sie den C++-Ordner im extrahierten Beispiel, und öffnen Sie die Projektmappendatei.  
   
- Um das Beispiel zu erstellen, drücken Sie F7, oder wählen Sie auf der Menüleiste den Befehl **Erstellen**, **Projektmappe erstellen**aus.
+ Drücken Sie **F7**, oder klicken Sie auf der Menüleiste auf **Erstellen** > **Projektmappe erstellen**, um das Beispiel zu erstellen.

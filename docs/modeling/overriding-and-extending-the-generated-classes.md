@@ -11,81 +11,87 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff0f020f2ab7558df6cc6f7865500a9910718145
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951894"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511104"
 ---
-# <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
-DSL-Definition ist eine Plattform, auf der Sie einen Satz leistungsstarken Tools erstellen können, die für eine domänenspezifische Sprache basieren. Viele Erweiterungen und Anpassung können vorgenommen werden, indem überschreiben und erweitern die Klassen, die aus der Definition der DSL generiert werden. Diese Klassen umfassen nicht nur die Domänenklassen, die Sie explizit in der DSL-Definitionsdiagramm definiert haben, sondern auch anderen Klassen, die Toolbox, -Explorer, Serialisierung und So weiter definieren.
+# <a name="override-and-extend-the-generated-classes"></a>Außer Kraft setzen, und Erweitern der generierten Klassen
 
-## <a name="extensibility-mechanisms"></a>Mechanismen für Erweiterbarkeit
- Mehrere Mechanismen werden bereitgestellt, damit Sie den generierten Code erweitern können.
+Ihrer DSL-Definition ist eine Plattform, auf der Sie einen Reihe leistungsstarken Tools erstellen können, die auf eine domänenspezifische Sprache basieren. Viele Erweiterungen und Anpassungen können vorgenommen werden, indem überschreiben und erweitern die Klassen, die von der DSL-Definition generiert werden. Diese Klassen umfassen nicht nur die Domänenklassen, die Sie explizit in der DSL-Definitionsdiagramm definiert haben, sondern auch andere Klassen, die definieren, die Toolbox, Explorer, Serialisierung und So weiter.
 
-### <a name="overriding-methods-in-a-partial-class"></a>Überschreiben von Methoden in einer partiellen Klasse
- Partielle Klassendefinitionen ermöglichen eine Klasse in mehr als einem Ort definiert werden. Dadurch können Sie den generierten Code aus dem Code trennen, die Sie selbst schreiben. Im Code manuell geschrieben können Sie durch den generierten Code geerbte Klassen überschreiben.
+## <a name="extensibility-mechanisms"></a>Mechanismen zur Erweiterbarkeit
 
- Wenn in der Definition der DSL Sie eine Domänenklasse, die mit dem Namen definieren z. B. `Book`, benutzerdefinierten Code, der Methoden zum Überschreiben fügt geschrieben:
+Mehrere Mechanismen werden bereitgestellt, damit Sie den generierten Code erweitern können.
 
- `public partial class Book`
+### <a name="override-methods-in-a-partial-class"></a>Methoden in einer partiellen Klasse außer Kraft setzen
 
- `{`
+Partielle Klassendefinitionen ermöglichen eine Klasse in mehr als einem Ort definiert werden. Dadurch können Sie den generierten Code aus dem Code zu trennen, die Sie selbst schreiben. Im Code manuell geschrieben können Sie des generierten Codes geerbte Klassen überschreiben.
 
- `protected override void OnDeleting()`
+Wenn in Ihrer DSL-Definition Bereich definieren Sie eine Domänenklasse, die mit dem Namen z. B. `Book`, Sie benutzerdefinierten Code schreiben, der Methoden zum Überschreiben wird hinzugefügt:
 
- `{`
-
- `MessageBox.Show("Deleting book " + this.Title);`
-
- `base.OnDeleting();`
-
- `} }`
+```csharp
+public partial class Book
+{
+   protected override void OnDeleting()
+   {
+      MessageBox.Show("Deleting book " + this.Title);
+      base.OnDeleting();
+   }
+}
+```
 
 > [!NOTE]
->  Um Methoden in einer generierten Klasse zu überschreiben, Schreiben Sie Code immer in einer Datei, die von die generierten Dateien getrennt ist. In der Regel wird die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, gehen sie verloren, wenn Sie den Code aus der DSL-Definition neu generieren.
+> Um Methoden in einer generierten Klasse zu überschreiben, Schreiben von Code immer in eine Datei, die von die generierten Dateien getrennt ist. In der Regel ist die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, geht diese verloren, wenn Sie den Code aus der DSL-Definition erneut generieren.
 
- Geben Sie zum Ermitteln von welche Methoden Sie außer Kraft setzen können **überschreiben** in der Klasse, gefolgt von einem Leerzeichen. Die IntelliSense-QuickInfo informiert Sie, welche Methoden außer Kraft gesetzt werden können.
+Geben Sie zum Ermitteln von welche Methoden Sie außer Kraft setzen können **überschreiben** in der Klasse, gefolgt von einem Leerzeichen. Die IntelliSense-QuickInfo informiert Sie, welche Methoden überschrieben werden können.
 
-### <a name="double-derived-classes"></a>Double-abgeleitete Klassen
- Die meisten Methoden in der generierten Klassen werden vom einen festen Satz von Klassen in den Namespaces Modellierung geerbt. Allerdings werden einige Methoden in den generierten Code definiert. Normalerweise bedeutet dies, dass sie zu überschreiben; Sie können nicht in einer partiellen Klasse die Methoden überschreiben, die in einer anderen partiellen Definition der Klasse definiert sind.
+### <a name="double-derived-classes"></a>Doppelte abgeleitete Klassen
 
- Dennoch können Sie diese Methoden überschreiben, indem die **generiert doppelte abgeleitete** Flag für die Domänenklasse. Diese Ursachen zwei Klassen generiert werden, wird eine abstrakte Basisklasse des anderen. Alle Methoden- und Eigenschaftendefinitionen sind in der Basisklasse und nur der Konstruktor ist, in der abgeleiteten Klasse.
+Die meisten Methoden in der generierten Klassen werden vom einen festen Satz von Klassen in den Namespaces Modellierung geerbt. Allerdings werden einige Methoden im generierten Code definiert. Normalerweise bedeutet dies, dass Sie sie überschreiben nicht möglich; Sie können nicht in einer partiellen Klasse die Methoden überschreiben, die in einer anderen partiellen Definition der Klasse definiert werden.
 
- Im Beispiel Library.dsl, z. B. die `CirculationBook` Domänenklasse verfügt über die `Generates``Double Derived` -Eigenschaftensatz auf `true`. Der generierte Code für diese Domänenklasse enthält zwei Klassen:
+Dennoch können Sie diese Methoden überschreiben, durch Festlegen der **generiert doppelte Ableitungen** Flag für die Domänenklasse. Dieser bewirkt, dass zwei Klassen generiert werden, wird eine abstrakte Basisklasse der anderen. Alle Methoden- und Eigenschaftendefinitionen sind in der Basisklasse und nur der Konstruktor in der abgeleiteten Klasse ist.
+
+Im Beispiel Library.dsl, z. B. die `CirculationBook` Domänenklasse besitzt die `Generates``Double Derived` -Eigenschaftensatz auf `true`. Der generierte Code für diese Domänenklasse enthält zwei Klassen:
 
 -   `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.
 
--   `CirculationBook`, abgeleitet aus `CirculationBookBase`. Es ist leer, mit Ausnahme der Konstruktoren.
+-   `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.
 
- Um eine beliebige Methode zu überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können die generierten Methoden und die vom Framework Modellierung geerbten Methoden überschreiben.
+Um eine beliebige Methode überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können sowohl für die generierten Methoden als auch für den von der Modellierung Framework geerbten Methoden überschreiben.
 
- Sie können diese Methode mit allen Arten von Elementen, einschließlich der Modellelemente, Beziehungen, Formen, Diagrammen und Connectors verwenden. Sie können auch die Methoden anderer generierten Klassen überschreiben. Einige Klassen generiert, wie z. B. die ToolboxHelper immer Double-abgeleitet sind.
+Sie können diese Methode mit allen Arten von Element, einschließlich von Modellelementen, Beziehungen, Formen, Diagramme und Connectors verwenden. Sie können auch die Methoden der anderen generierten Klassen überschreiben. Einige Klassen generiert, wie z. B. die ToolboxHelper immer Double-Wert-abgeleitet sind.
 
-### <a name="custom-constructors"></a>Benutzerdefinierte Konstruktoren
- Einen Konstruktor kann nicht überschrieben werden. Der Konstruktor muss auch in Double abgeleitete Klassen in der abgeleiteten Klasse.
+### <a name="custom-constructors"></a>Benutzerdefinierten Konstruktoren
 
- Wenn Sie einen eigene Konstruktor bereitstellen möchten, Sie können dazu `Has Custom Constructor` für die Domänenklasse in der DSL-Definition. Beim Klicken auf **alle Vorlagen transformieren**, der generierte Code enthält einen Konstruktor für diese Klasse nicht. Es wird ein Aufruf an den fehlenden Konstruktor enthalten. Dies bewirkt, dass einen Fehlerbericht, wenn Sie die Projektmappe zu erstellen. Doppelklicken Sie auf den Fehlerbericht an einen Kommentar in den generierten Code, der erklärt, was Sie bereitstellen sollten, finden Sie unter.
+Einen Konstruktor kann nicht überschrieben werden. Selbst in Double abgeleiteten Klassen muss der Konstruktor in der abgeleiteten Klasse sein.
 
- Schreiben Sie eine partielle Klassendefinition in einer Datei, die von die generierten Dateien getrennt ist, und geben Sie den Konstruktor.
+Wenn Sie Ihre eigenen Konstruktor bereitstellen möchten, erreichen Sie dies durch Festlegen von `Has Custom Constructor` für die Domänenklasse in der DSL-Definition. Beim Klicken auf **alle Vorlagen transformieren**, der generierte Code wird einen Konstruktor für diese Klasse nicht enthalten. Es umfasst einen Aufruf an den Konstruktor fehlt. Dies bewirkt, dass einen Fehlerbericht, wenn Sie die Projektmappe zu erstellen. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar im generierten Code zu lesen, die erklärt, was Sie bereitstellen sollten.
+
+Schreiben Sie eine partielle Klassendefinition in einer Datei, die von die generierten Dateien getrennt ist, und geben Sie den Konstruktor.
 
 ### <a name="flagged-extension-points"></a>Gekennzeichnete Erweiterungspunkte
- Eine gekennzeichnete Erweiterungspunkt ist ein Ausgangspunkt in der DSL-Definition, in dem Sie festlegen können, eine Eigenschaft oder ein Kontrollkästchen, um anzugeben, dass Sie eine benutzerdefinierte Methode gewähren möchten. Benutzerdefinierte Konstruktoren sind ein Beispiel. Weitere Beispiele umfassen das Festlegen der `Kind` der Eigenschaft "Domain" berechnet oder benutzerdefinierten Speicher oder Einstellung der **ist Benutzerdefiniert** -Flag in einem verbindungsgenerator.
 
- In jedem Fall Wenn Sie das Flag wird festgelegt, und generieren den Code verursacht einen Buildfehler. Doppelklicken Sie auf den Fehler, um einen Kommentar, der erläutert wird, müssen Sie angeben, finden Sie unter.
+Ein gekennzeichnete Erweiterungspunkt ist eine Stelle in der DSL-Definition, in dem Sie festlegen können, eine Eigenschaft oder ein Kontrollkästchen, um anzugeben, dass Sie eine benutzerdefinierte Methode bereitstellen. Benutzerdefinierte Konstruktoren sind ein Beispiel. Weitere Beispiele umfassen die Einstellung der `Kind` einer Domäneneigenschaft berechnete oder benutzerdefinierte Speicher oder die Einstellung der **ist Benutzerdefiniert** -Flag in einem Verbindungs-Generator.
+
+Beim Generieren von Code und legen Sie das Flag, wird in jedem Fall ein Buildfehler führen. Doppelklicken Sie auf den Fehler, um einen Kommentar zu lesen, der erklärt, was Sie bereitstellen müssen.
 
 ### <a name="rules"></a>Regeln
- Der Transaktions-Manager können Sie Regeln definieren, die vor dem Ende einer Transaktion ausgeführt werden, in dem ein angegebenen Ereignis, z. B. eine Änderung an einer Eigenschaft aufgetreten ist. Regeln werden in der Regel verwendet, um Synchronism zwischen verschiedenen Elementen im Speicher beizubehalten. Beispielsweise werden Regeln verwendet, um sicherzustellen, dass das Diagramm zeigt den aktuellen Zustand des Modells an.
 
- Regeln werden auf Basis einer pro-Klasse definiert ist, so, dass Sie keinen Code haben registriert, die die Regel für jedes Objekt. Weitere Informationen finden Sie unter [weitergeben Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+Der Transaktions-Manager können Sie Regeln definieren, die vor dem Ende einer Transaktion ausgeführt, in dem ein angegebenen Ereignisses, z. B. eine Änderung einer Eigenschaft aufgetreten ist. Regeln werden in der Regel verwendet, um Synchronism zwischen verschiedenen Elementen im Speicher zu verwalten. Beispielsweise werden Regeln verwendet, um sicherzustellen, dass es sich bei das Diagramm mit den aktuellen Zustand des Modells angezeigt.
 
-### <a name="store-events"></a>Speichern von Ereignissen
- Die Modellierung-Store bietet einen Ereignismechanismus, den Sie verwenden, um bestimmte Typen von Änderungen in den Speicher, einschließlich hinzufügen und Löschen von Elementen, die Änderungen von Eigenschaftswerten, überwachen und so weiter. Die Ereignishandler sind nach dem Schließen der Transaktion aufgerufen, in denen die Änderungen vorgenommen wurden. Diese Ereignisse werden in der Regel verwendet, auf Ressourcen außerhalb des Informationsspeichers aktualisiert.
+Regeln werden auf Basis einer pro-Klasse, definiert, damit Sie nicht verfügen, damit der Code registriert, die die Regel für jedes Objekt. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
+
+### <a name="store-events"></a>Store-Ereignisse
+
+Der Modellierung Store bietet es sich um einen Ereignismechanismus, den Sie verwenden, um für bestimmte Typen von Änderungen im Speicher, einschließlich hinzufügen und Löschen von Elementen, Änderungen an Eigenschaftswerten, überwachen und so weiter. Der Ereignishandler werden nach Abschluss der Transaktion aufgerufen, in denen die Änderungen vorgenommen wurden. In der Regel werden diese Ereignisse verwendet, um Ressourcen außerhalb des Speichers zu aktualisieren.
 
 ### <a name="net-events"></a>Ereignisse für .NET
- Sie können einige Ereignisse Formen abonnieren. Sie können z. B. Mausklicks auf ein Shape lauscht. Sie müssen Code schreiben, der das Ereignis für jedes Objekt abonniert. Dieser Code kann in einer Überschreibung von InitializeInstanceResources() geschrieben werden.
 
- Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elementen auf eine Form vom Typ verwendet werden. Ein Beispiel finden Sie unter [wie: Abfangen mit einem Klick auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Sie können einige Ereignisse auf Formen abonnieren. Beispielsweise können Sie auf Mausklicks auf einer Form lauschen. Sie müssen Code schreiben, der das Ereignis für jedes Objekt abonniert. Dieser Code kann in einer Außerkraftsetzung der InitializeInstanceResources() geschrieben werden.
 
- Diese Ereignisse werden in der Regel nicht innerhalb einer Transaktion ausgeführt. Wenn Sie Änderungen im Speicher vornehmen möchten, sollten Sie eine Transaktion erstellen.
+Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+
+Diese Ereignisse werden in der Regel nicht innerhalb einer Transaktion ausgeführt. Wenn Sie Änderungen an den Store vornehmen möchten, sollten Sie eine Transaktion erstellen.

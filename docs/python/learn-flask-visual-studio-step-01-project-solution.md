@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752150"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586403"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorialschritt 1: Erste Schritte mit dem Flask-Webframework in Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
 [Flask](http://flask.pocoo.org/) ist ein einfaches Python-Framework für Webanwendungen, das die Grundlagen für URL-Routing und das Rendern von Seiten bereitstellt.
 
@@ -41,7 +41,7 @@ Im Zuge dieser Tutorialschritte erstellen Sie eine Visual Studio-Projektmappe, d
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Visual Studio 2017 unter Windows mit den folgenden Optionen:
-  - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
+  - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git für Windows** und **GitHub-Erweiterung für Visual Studio** auf der Registerkarte **Einzelne Komponenten** unter **Codetools**.
 
 Flask-Projektvorlagen sind in allen früheren Versionen von Python-Tools für Visual Studio enthalten. In einzelnen Aspekten können sie sich allerdings von diesem Tutorial unterscheiden.
@@ -56,17 +56,17 @@ Die Python-Entwicklung wird in Visual Studio für Mac derzeit nicht unterstützt
 
 1. Geben Sie in die Felder im unteren Bereich des Dialogfelds die folgenden Informationen ein (wie in der vorherigen Abbildung gezeigt), und klicken Sie dann auf **OK**:
 
-    - **Name**: Legen Sie den Namen des Visual Studio-Projekts auf „BasicProject“ fest. Dieser Name wird auch für das Flask-Projekt verwendet.
+    - **Name**: Legen Sie den Namen des Visual Studio-Projekts auf **BasicProject** fest. Dieser Name wird auch für das Flask-Projekt verwendet.
     - **Speicherort**: Geben Sie einen Speicherort an, an dem die Visual Studio-Projektmappe und das -Projekt erstellt werden sollen.
-    - **Projektmappenname**: Legen Sie den Namen auf „LearningFlask“ fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
+    - **Projektmappenname**: Legen Sie den Namen auf **LearningFlask** fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
     - **Projektmappenverzeichnis erstellen**: Behalten Sie die Standardaktivierung bei.
-    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** Git für Windows und die GitHub-Erweiterung für Visual Studio hinzu.
+    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
 
-1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld „This project requires external packages (Für dieses Projekt sind externe Pakete erforderlich)“ angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine `requirements.txt`-Datei enthält, die auf das neueste Flask-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
+1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld **Dieses Projekt erfordert externe Pakete** angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine *requirements.txt*-Datei enthält, die auf das neueste Flask-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 
     ![Dialogfeld „Für dieses Projekt sind externe Pakete erforderlich“](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
-1. Wählen Sie die Option **I will install them myself (Ich führe die Installation selbst durch)** aus. In einem nächsten Schritt werden Sie die virtuelle Umgebung erstellen, damit sie auch sicher aus der Quellcodeverwaltung ausgeschlossen ist. (Die Umgebung kann immer aus `requirements.txt` erstellt werden.)
+1. Wählen Sie die Option **I will install them myself (Ich führe die Installation selbst durch)** aus. In einem nächsten Schritt werden Sie die virtuelle Umgebung erstellen, damit sie auch sicher aus der Quellcodeverwaltung ausgeschlossen ist. (Die Umgebung kann immer aus *requirements.txt* erstellt werden.)
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Schritt 1-2: Überprüfen der Git-Steuerelemente und Veröffentlichen in einem Remoterepository
 
@@ -85,7 +85,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
     ![„Team Explorer“-Fenster auf der Seite „Änderungen“](media/flask/step01-team-explorer-changes.png)
 
-1. Klicken Sie auf der Visual Studio-Statusleiste auf die Schaltfläche für die nicht per Push übertragenen Commits (den Pfeil nach oben mit der „2“), um die Seite **Synchronisierung** im **Team Explorer** zu öffnen. Da Sie nur über ein lokales Repository verfügen, werden auf dieser Seite einfache Optionen zum Veröffentlichen des Repositorys in verschiedenen Remoterepositorys bereitgestellt.
+1. Klicken Sie auf der Visual Studio-Statusleiste auf die Schaltfläche für die nicht per Push übertragenen Commits (der Aufwärtspfeil mit der **2**), um die Seite **Synchronisierung** im **Team Explorer** zu öffnen. Da Sie nur über ein lokales Repository verfügen, werden auf dieser Seite einfache Optionen zum Veröffentlichen des Repositorys in verschiedenen Remoterepositorys bereitgestellt.
 
     ![„Team Explorer“-Fenster mit verfügbaren Git-Repositoryoptionen für die Quellcodeverwaltung](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 1. Machen Sie sich während der Arbeit mit diesem Tutorial mit der Verwendung der Steuerelemente zur Übertragung von Änderungen per Push oder per Commit in Visual Studio vertraut. Daran werden Sie in diesem Tutorial auch zu geeigneter Zeit erinnert.
 
 > [!Tip]
-> Klicken Sie zur schnellen Navigation im **Team Explorer** auf den Header (der in den obigen Abbildungen „Changes“ oder „Push“ lautet), um ein Kontextmenü der verfügbaren Seiten anzuzeigen.
+> Klicken Sie zur schnellen Navigation im **Team Explorer** auf den Header (der in den obigen Abbildungen **Changes** oder **Push** benannt ist), um ein Kontextmenü der verfügbaren Seiten anzuzeigen.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Frage: Welche Vorteile habe ich, wenn ich die Quellcodeverwaltung von Beginn eines Projekts an verwende?
 
@@ -120,7 +120,7 @@ Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können
 
     ![Befehl „Virtuelle Umgebung hinzufügen“ im Projektmappen-Explorer](media/flask/step01-add-virtual-environment-command.png)
 
-1. Das Dialogfeld **Virtuelle Umgebung hinzufügen** mit der Meldung „Es wurde eine Datei „requirements.txt“ gefunden“ wird angezeigt. Mit der Meldung wird angezeigt, dass Visual Studio diese Datei zur Konfiguration der virtuellen Umgebung verwendet.
+1. Das Dialogfeld **Virtuelle Umgebung hinzufügen** mit der Meldung **Es wurde eine Datei „requirements.txt“ gefunden.** wird angezeigt. Mit der Meldung wird angezeigt, dass Visual Studio diese Datei zur Konfiguration der virtuellen Umgebung verwendet.
 
     ![Dialogfeld „Virtuelle Umgebung hinzufügen“ mit Meldung zu „requirements.txt“](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -128,37 +128,37 @@ Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können
 
 1. Stimmen Sie den Administratorrechten zu, wenn Sie dazu aufgefordert werden. Der anschließende Download- und Installationsvorgang der Pakete durch Visual Studio kann einige Minuten dauern, da für Flask und zugehörige Abhängigkeiten mehrere tausend Dateien in über 100 Unterordnern heruntergeladen und installiert werden müssen. Der Fortschritt wird im **Ausgabe**-Fenster in Visual Studio angezeigt. Während des Vorgangs können Sie die Fragen und Antworten in den folgenden Abschnitten lesen. Eine Beschreibung der Abhängigkeiten von Flask finden Sie ebenfalls auf der [Installationsseite von Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
 
-1. Klicken Sie bei den Git-Steuerelementen in Visual Studio (auf der Statusleiste) auf den Änderungsindikator (der „99\*“ anzeigt), um die Seite **Änderungen** im **Team Explorer** zu öffnen.
+1. Klicken Sie bei den Git-Steuerelementen in Visual Studio (auf der Statusleiste) auf den Änderungsindikator (der **99&#42;** anzeigt), um die Seite **Änderungen** im **Team Explorer** zu öffnen.
 
-    Durch das Erstellen der virtuellen Umgebung wurden Hunderte von Änderungen übertragen, die Sie jedoch nicht in die Quellcodeverwaltung einbeziehen müssen, da die Umgebung von jeder Person, die das Projekt klont, immer aus `requirements.txt` neu erstellt werden kann.
+    Durch das Erstellen der virtuellen Umgebung wurden Hunderte von Änderungen übertragen, die Sie jedoch nicht in die Quellcodeverwaltung einbeziehen müssen, da die Umgebung von jeder Person, die das Projekt klont, immer aus *requirements.txt* neu erstellt werden kann.
 
-    Klicken Sie zum Ausschließen der virtuellen Umgebung mit der rechten Maustaste auf den `env`-Ordner, und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
+    Klicken Sie zum Ausschließen der virtuellen Umgebung mit der rechten Maustaste auf den **env**-Ordner, und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
 
     ![Ignorieren einer virtuellen Umgebung in den Änderungen der Quellcodeverwaltung](media/flask/step01-ignore-local-items.png)
 
-1. Nachdem die virtuelle Umgebung ausgeschlossen wurde, bleiben nur die Änderungen an der Projektdatei und `.gitignore` übrig. Die `.gitignore`-Datei enthält einen hinzugefügten Eintrag für den Ordner der virtuellen Umgebung. Wenn Sie die Änderungen anzeigen möchten, doppelklicken Sie auf die Datei.
+1. Nachdem die virtuelle Umgebung ausgeschlossen wurde, bleiben nur die Änderungen an der Projektdatei und *.gitignore* übrig. Die *.gitignore*-Datei enthält einen hinzugefügten Eintrag für den Ordner der virtuellen Umgebung. Wenn Sie die Änderungen anzeigen möchten, doppelklicken Sie auf die Datei.
 
 1. Geben Sie eine Commit-Nachricht ein, und klicken Sie auf die Schaltfläche **Alle committen**. Anschließend können Sie die Commits gegebenenfalls per Push in das Remoterepository übertragen.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Frage: Warum sollte ich eine virtuelle Umgebung erstellen?
 
-Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genauen Abhängigkeiten Ihrer App zu isolieren. Mit einer solchen Isolation können Konflikte innerhalb einer globalen Python-Umgebung vermieden werden, und Tests und die Zusammenarbeit werden unterstützt. Bei der Entwicklung einer App werden im Laufe der Zeit unweigerlich viele nützliche Python-Pakete importiert. Indem Sie die Pakete in einer projektspezifischen virtuellen Umgebung beibehalten, können Sie die `requirements.txt`-Datei des Projekts auf einfache Weise aktualisieren. Mit dieser Datei wird die Umgebung beschrieben, die in der Quellcodeverwaltung enthalten ist. Beim Kopieren des Projekts auf andere Computer, einschließlich Buildservern, Bereitstellungsservern und anderen Entwicklungscomputern, kann die Umgebung auf einfache Weise über `requirements.txt` neu erstellt werden (weshalb die Umgebung auch nicht in der Quellcodeverwaltung vorhanden sein muss). Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genauen Abhängigkeiten Ihrer App zu isolieren. Mit einer solchen Isolation können Konflikte innerhalb einer globalen Python-Umgebung vermieden werden, und Tests und die Zusammenarbeit werden unterstützt. Bei der Entwicklung einer App werden im Laufe der Zeit unweigerlich viele nützliche Python-Pakete importiert. Indem Sie die Pakete in einer projektspezifischen virtuellen Umgebung beibehalten, können Sie die *requirements.txt*-Datei des Projekts auf einfache Weise aktualisieren. Mit dieser Datei wird die Umgebung beschrieben, die in der Quellcodeverwaltung enthalten ist. Beim Kopieren des Projekts auf andere Computer, einschließlich Buildserver, Bereitstellungsserver und andere Entwicklungscomputer, kann die Umgebung auf einfache Weise über *requirements.txt* neu erstellt werden (weshalb die Umgebung auch nicht in der Quellcodeverwaltung vorhanden sein muss). Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Frage: Wie entferne ich eine virtuelle Umgebung, für die bereits ein Commit für die Quellcodeverwaltung ausgeführt wurde?
 
-Antwort: Bearbeiten Sie zuerst die `.gitignore`-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z.B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben `.gitignore`.)
+Antwort: Bearbeiten Sie zuerst die *.gitignore*-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z.B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben **.gitignore**.)
 
-Öffnen Sie nun ein Befehlsfenster. Navigieren Sie zum Ordner (z.B. `BasicProject`), der den Ordner für die virtuelle Umgebung enthält (z.B. `env`), und führen Sie `git rm -r env` aus. Führen Sie dann für diese Änderungen einen Commit von der Befehlszeile (`git commit -m 'Remove venv'`) oder von der Seite **Änderungen** im **Team Explorer** aus.
+Öffnen Sie nun ein Befehlsfenster. Navigieren Sie zum Ordner (z.B. *BasicProject*), der den Ordner für die virtuelle Umgebung enthält (z.B. *env*), und führen Sie `git rm -r env` aus. Führen Sie dann für diese Änderungen einen Commit von der Befehlszeile (`git commit -m 'Remove venv'`) oder von der Seite **Änderungen** im **Team Explorer** aus.
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>Schritt 1-4: Überprüfen der Codebausteine
 
-1. Sobald die Projekterstellung abgeschlossen ist, werden die Projektmappe und das Projekt im **Projektmappen-Explorer** angezeigt, wo das Projekt nur zwei Dateien enthält, nämlich `app.py` und `requirements.txt`:
+1. Sobald die Projekterstellung abgeschlossen ist, werden die Projektmappe und das Projekt im **Projektmappen-Explorer** angezeigt, in dem das Projekt nur zwei Dateien enthält, nämlich *app.py* und *requirements.txt*:
 
     ![Dateien eines leeren Flask-Projekts im Projektmappen-Explorer](media/flask/step01-blank-flask-project-in-solution-explorer.png)
 
-1. So wie bereits erwähnt, gibt die `requirements.txt`-Datei die Flask-Paketabhängigkeit an. Wegen dieser Datei werden Sie bei der erstmaligen Erstellung des Projekts zum Erstellen einer virtuellen Umgebung aufgefordert.
+1. Wie bereits erwähnt, gibt die *requirements.txt*-Datei die Flask-Paketabhängigkeit an. Wegen dieser Datei werden Sie bei der erstmaligen Erstellung des Projekts zum Erstellen einer virtuellen Umgebung aufgefordert.
 
-1. Die einzelne `app.py`-Datei enthält drei Teile. Zunächst eine `import`-Anweisung für Flask, mit der eine Instanz der `Flask`-Klasse erstellt wird, die wiederum der Variable `app` zugewiesen ist und eine `wsgi_app`-Variable zuweist (die nützlich ist, wenn eine Bereitstellung auf einen Webhost erfolgt, die jedoch im Moment nicht verwendet wird):
+1. Die einzelne *app.py*-Datei enthält drei Teile. Zunächst eine `import`-Anweisung für Flask, mit der eine Instanz der `Flask`-Klasse erstellt wird, die wiederum der Variable `app` zugewiesen ist und eine `wsgi_app`-Variable zuweist (die nützlich ist, wenn eine Bereitstellung auf einen Webhost erfolgt, die jedoch im Moment nicht verwendet wird):
 
     ```python
     from flask import Flask
@@ -224,15 +224,15 @@ Abfrageparameter sind ebenso über die Eigenschaft `request.args`, genauer gesag
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Frage: Kann Visual Studio eine „requirements.txt“-Datei aus einer virtuellen Umgebung generieren, nachdem ich andere Pakete installiert habe?
 
-Antwort: Ja. Erweitern Sie den Knoten **Python-Umgebungen**, klicken Sie mit der rechten Maustaste auf die virtuelle Umgebung, und klicken Sie auf den Befehl **„requirements.txt“ generieren**. Verwenden Sie diesen Befehl am besten in regelmäßigen Abständen, wenn Sie die Umgebung ändern und einen Commit der Änderungen für `requirements.txt` in der Quellcodeverwaltung ausführen sowie andere Codeänderungen committen, die von dieser Umgebung abhängen. Wenn Sie Continuous Integration auf einem Buildserver eingerichtet haben, sollten Sie bei jeder Änderung der Umgebung die Datei generieren und einen Commit der Änderungen ausführen.
+Antwort: Ja. Erweitern Sie den Knoten **Python-Umgebungen**, klicken Sie mit der rechten Maustaste auf die virtuelle Umgebung, und klicken Sie auf den Befehl **„requirements.txt“ generieren**. Verwenden Sie diesen Befehl am besten in regelmäßigen Abständen, wenn Sie die Umgebung ändern und einen Commit der Änderungen für *requirements.txt* in der Quellcodeverwaltung ausführen sowie andere Codeänderungen committen, die von dieser Umgebung abhängen. Wenn Sie Continuous Integration auf einem Buildserver eingerichtet haben, sollten Sie bei jeder Änderung der Umgebung die Datei generieren und einen Commit der Änderungen ausführen.
 
 ## <a name="step-1-5-run-the-project"></a>Schritt 1.5: Ausführen des Projekts
 
-1. Wählen Sie in Visual Studio die Option **Debuggen** > **Debuggen starten** (F5) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste (der bei Ihnen angezeigte Browser kann ein anderer sein):
+1. Wählen Sie in Visual Studio die Option **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste (der bei Ihnen angezeigte Browser kann ein anderer sein):
 
     ![Symbolleisten-Schaltfläche „Webserver ausführen“ in Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
-1. Jeder Befehl weist der PORT-Umgebungsvariable eine beliebige Portnummer zu und führt dann `python app.py` aus. Der Code startet die App und verwendet dazu diesen Port auf dem Entwicklungsserver von Flask. Wenn Visual Studio die Meldung „Fehler beim Starten des Debuggers“ anzeigt, da keine Startdatei vorhanden ist, klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf `app.py`, und klicken Sie auf **Als Startdatei festlegen**.
+1. Jeder Befehl weist der PORT-Umgebungsvariable eine beliebige Portnummer zu und führt dann `python app.py` aus. Der Code startet die App und verwendet dazu diesen Port auf dem Entwicklungsserver von Flask. Wenn Visual Studio die Meldung **Fehler beim Starten des Debuggers** anzeigt, da keine Startdatei vorhanden ist, klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf **app.py**, und klicken Sie auf **Als Startdatei festlegen**.
 
 1. Beim Starten des Servers wird ein Konsolenfenster geöffnet, das das Serverprotokoll anzeigt. Visual Studio öffnet daraufhin automatisch einen Browser unter `http://localhost:<port>`, wo alle von der Funktion `hello` gerenderten Meldungen angezeigt werden sollten:
 
@@ -251,7 +251,7 @@ Zu diesem Zeitpunkt enthält das einfache Flask-Projekt den Startcode sowie den 
 > [!div class="nextstepaction"]
 > [Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Vertiefung
+## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Flask Quickstart (Flask-Schnellstart)](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

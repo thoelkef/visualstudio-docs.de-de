@@ -1,5 +1,5 @@
 ---
-title: Daten in Office-Projektmappen Exemplarische Vorgehensweisen
+title: Daten in Exemplarische Vorgehensweisen für Office-Lösungen
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672832"
 ---
-# <a name="data-in-office-solutions-walkthroughs"></a>Daten in Office-Projektmappen Exemplarische Vorgehensweisen
+# <a name="data-in-office-solutions-walkthroughs"></a>Daten in Exemplarische Vorgehensweisen für Office-Lösungen
   In den folgenden exemplarischen Vorgehensweisen wird das Arbeiten mit Daten in Anpassungen auf Dokumentebene und in VSTO-Add-Ins für Microsoft Office Word und Microsoft Office Excel veranschaulicht.  
   
 ## <a name="bind-controls-to-data"></a>Binden von Steuerelementen an Daten  
@@ -33,10 +34,10 @@ ms.lasthandoff: 05/17/2018
  Veranschaulicht, wie eine Tabelle in einer SQL Server-Datenbank an ein <xref:Microsoft.Office.Tools.Excel.ListObject> in einer Anpassung auf Dokumentebene für Excel gebunden wird.  
   
  [Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
- Veranschaulicht, wie ein einzelnes Datenfeld in einer SQL Server-Datenbank an ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> in einem VSTO-Add-In für Word gebunden wird.  
+ Veranschaulicht das Binden Sie eines einzelnes Datenfelds in einer SQL Server-Datenbank an eine <xref:Microsoft.Office.Tools.Word.RichTextContentControl> in einem VSTO-Add-in für Word.  
   
  [Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
- Veranschaulicht, wie eine Tabelle in einer SQL Server-Datenbank an ein <xref:Microsoft.Office.Tools.Excel.ListObject> in einem VSTO-Add-In für Excel gebunden wird.  
+ Veranschaulicht das Binden einer Tabelle in einer SQL Server-Datenbank an ein <xref:Microsoft.Office.Tools.Excel.ListObject> in einem VSTO-Add-In für Excel.  
   
  [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Veranschaulicht, wie einem Aktionsbereich in Excel Steuerelemente hinzugefügt werden, die an eine Datenquelle gebunden sind.  
@@ -47,8 +48,8 @@ ms.lasthandoff: 05/17/2018
  [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  Veranschaulicht, wie Inhaltssteuerelemente in einem Word-Dokument an XML-Daten gebunden werden, die im Dokument gespeichert sind.  
   
-## <a name="cache-data-in-document-level-solutions"></a>Zwischenspeichern von Daten in Projektmappen auf Dokumentebene  
- [Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehungs mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+## <a name="cache-data-in-document-level-solutions"></a>Zwischenspeichern von Daten in Projektmappen auf Anwendungsebene  
+ [Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Veranschaulicht, wie eine Master/Detail-Beziehung auf einem Arbeitsblatt erstellt wird und wie die Daten zwischengespeichert werden, damit die Projektmappe offline verwendet werden kann.  
   
  [Exemplarische Vorgehensweise: Einfügen von Daten in einer Arbeitsmappe auf einem server](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
@@ -61,13 +62,13 @@ ms.lasthandoff: 05/17/2018
  Veranschaulicht, wie Daten in einem Dataset, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, geändert werden, ohne Excel zu starten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)   
+ [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)   
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)   
  [Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)   
- [Sicherheit und Bereitstellung Exemplarische Vorgehensweisen](../vsto/security-and-deployment-walkthroughs.md)   
+ [Vorgehensweisen für Sicherheit und Bereitstellung](../vsto/security-and-deployment-walkthroughs.md)   
  [Office-Entwicklungsbeispiele](../vsto/office-development-samples.md)   
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)   
+ [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
   
   

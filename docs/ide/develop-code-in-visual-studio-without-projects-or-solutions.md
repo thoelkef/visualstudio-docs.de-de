@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746026"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117120"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
@@ -89,7 +89,7 @@ Wenn Ihre Codebasis benutzerdefinierte Buildtools verwendet, müssen Sie Visual 
 
 Wenn Ihre Codebasis Python- oder JavaScript-Code enthält, müssen Sie keine *JSON*-Dateien konfigurieren, aber Sie müssen die entsprechende Arbeitsauslastung installieren. Sie müssen auch das Startskript konfigurieren:
 
-1. Installieren Sie die Arbeitsauslastung [Node.js-Entwicklung](https://www.visualstudio.com/vs/node-js/) oder [Python-Entwicklung](https://www.visualstudio.com/vs/python/), indem Sie **Tools** > **Tools und Features abrufen...** auswählen oder indem Sie Visual Studio schließen und das Visual Studio-Installationsprogramm ausführen.
+1. Installieren Sie die Workload [Node.js-Entwicklung](https://visualstudio.microsoft.com/vs/node-js/) oder [Python-Entwicklung](https://visualstudio.microsoft.com/vs/python/), indem Sie **Extras** > **Tools und Features abrufen...** auswählen oder Visual Studio schließen und den Visual Studio-Installer ausführen.
 
    ![Arbeitsauslastungen für die Entwicklung mit Node.js und Python](media/python_nodejs_workloads.png)
 

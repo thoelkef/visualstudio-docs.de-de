@@ -1,5 +1,5 @@
 ---
-title: Fügen Sie neue Verbindungen hinzu
+title: Neue Verbindung hinzufügen
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,52 +9,52 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747091"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845014"
 ---
-# <a name="add-new-connections"></a>Fügen Sie neue Verbindungen hinzu
+# <a name="add-new-connections"></a>Neue Verbindung hinzufügen
 
-Sie können testen Sie die Verbindung mit einer Datenbank oder den Dienst und Durchsuchen von Inhalt von Datenbanken und Schemas, mit **Server-Explorer**, **Cloud Explorer**, oder **SQL Server-Objekt-Explorer**. Die Funktionalität dieser Fenster überschneidet sich zu einem gewissen Grad. Die grundlegenden Unterschiede sind:
+Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und Durchsuchen von Inhalt von Datenbanken und Schemas, mithilfe von **Server-Explorer**, **Cloud-Explorer**, oder **SQL Server-Objekt-Explorer**. Die Funktionalität dieser Windows überschneidet sich zu einem gewissen Grad. Die grundlegenden Unterschiede sind:
 
 - Server-Explorer
 
-   In Visual Studio standardmäßig installiert. Dient zum Testen von Verbindungen und SQL Server-Datenbanken, alle anderen Datenbanken, die ein ADO.NET-Anbieter installiert ist und einige Azure-Dienste anzeigen. Zeigt auch Objekte auf niedriger Ebene, z. B. System-Leistungsindikatoren, Ereignisprotokolle und Meldungswarteschlangen. Wenn eine Datenquelle keine ADO.NET-Anbieter verfügt, sie hier angezeigt wird nicht, aber dennoch können Sie sie aus Visual Studio durch programmgesteuerten Herstellen einer Verbindung.
+   Standardmäßig in Visual Studio installiert. Kann zum Testen von Verbindungen und Anzeigen von SQL Server-Datenbanken, alle anderen Datenbanken, die einen ADO NET-Anbieter installiert haben und einige Azure-Dienste verwendet werden. Zeigt auch die Low-Level-Objekte, z. B. Leistungsindikatoren, Ereignisprotokolle und Meldungswarteschlangen. Wenn eine Datenquelle keine ADO NET-Anbieter verfügt, es hier angezeigt wird nicht, aber dennoch können Sie sie aus Visual Studio durch programmgesteuertes Verbinden von.
 
 - Cloud-Explorer
 
-   Installieren Sie dieses Fenster manuell als Visual Studio-Erweiterung dazu **Tools**, **Erweiterungen und Updates**, **Online**, **Visual Studio Markeplace**. Bietet speziellen Funktionen zum Durchsuchen und Herstellen einer Verbindung mit Azure-Dienste.
+   Installieren Sie dieses Fenster manuell wie Visual Studio-Erweiterung dazu **Tools** > **Erweiterungen und Updates** > **Online**  >  **Visual Studio Marketplace unter**. Bietet speziellen Funktionen zum Durchsuchen und eine Verbindung mit Azure-Dienste.
 
 - SQL Server-Objekt-Explorer
 
-   Mit SQL Server Data Tools installiert sind und unter der **Ansicht** Menü. Wenn Sie es nicht sehen, wechseln Sie zu **Programme und Funktionen** in der Systemsteuerung finden Sie Visual Studio, und wählen Sie dann **Änderung** das Installationsprogramm erneut ausführen, nach dem Aktivieren des Kontrollkästchens für SQL Server Data Tools. Verwendung **Objekt-Explorer von SQL Server** Ansicht SQL-Datenbanken (Wenn sie einen ADO.NET-Anbieter haben), neue Datenbanken erstellen, Ändern von Schemas, gespeicherte Prozeduren erstellen, Abrufen von Verbindungszeichenfolgen, Anzeigen der Daten und vieles mehr. SQL-Datenbanken, die keine ADO.NET-Anbieter installiert sein, werden hier angezeigt, aber Sie können weiterhin eine Verbindung herstellen, diese programmgesteuert.
+   Mit SQL Server Data Tools installiert und unter der **Ansicht** Menü. Wenn Sie es nicht angezeigt wird, wechseln Sie zu **Programme und Funktionen** in der Systemsteuerung Suchen nach Visual Studio, und wählen Sie dann **Änderung** das Installationsprogramm erneut ausführen, nach dem Aktivieren des Kontrollkästchens für SQL Server Data Tools. Verwendung **Objekt-Explorer von SQL Server** zu Ansicht SQL-Datenbanken (Wenn sie einen ADO.NET-Anbieter verfügen), neue Datenbanken erstellen, Ändern von Schemas, gespeicherte Prozeduren erstellen, Abrufen von Verbindungszeichenfolgen, zeigen Sie die Daten und vieles mehr. SQL-Datenbanken, die keine ADO.NET-Anbieter installiert sein, nicht hier angezeigt, aber Sie können weiterhin darauf Programmgesteuertes verbinden.
 
 ## <a name="add-a-connection-in-server-explorer"></a>Fügen Sie im Server-Explorer eine Verbindung hinzu
 
-Um eine Verbindung mit der Datenbank zu erstellen, klicken Sie auf die **Verbindung hinzufügen** Symbol **Server-Explorer**, oder mit der rechten Maustaste im **Server-Explorer** auf die **Daten Verbindungen** Knoten, und wählen **Verbindung hinzufügen**. Von hier aus können Sie auch mit einer Datenbank auf einem anderen Server, SharePoint-Dienst oder ein Azure-Dienst verbinden.
+Um eine Verbindung mit der Datenbank zu erstellen, klicken Sie auf die **Verbindung hinzufügen** Symbol **Server-Explorer**, oder mit der rechten Maustaste im **Server-Explorer** auf die **Daten Verbindungen** Knoten, und wählen **Verbindung hinzufügen**. Von hier aus können Sie auch in eine Datenbank auf einem anderen Server, SharePoint-Dienst oder ein Azure-Dienst verbinden.
 
 ![Symbol "Server-Explorer neue Verbindung"](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
-Daraufhin wird die **Verbindung hinzufügen** (Dialogfeld). Hier haben wir den Namen der SQL Server-LocalDB-Instanz eingegeben.
+Dadurch wird die **Verbindung hinzufügen** Dialogfeld. Hier haben wir den Namen der SQL Server LocalDB-Instanz eingegeben.
 
-![Neue Verbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Neue Dienstverbindung hinzufügen](../data-tools/media/raddata-add-new-connection-dialog.png)
 
-## <a name="change-the-provider"></a>Ändern Sie den Anbieter
+## <a name="change-the-provider"></a>Wechseln Sie den Anbieter
 
-Wenn die Datenquelle nicht wünschen ist, klicken Sie auf die **Änderung** Schaltfläche, um eine neue Datenquelle und/oder einen neuen ADO.NET-Datenanbieter auszuwählen. Der neue Anbieter ggf. aufgefordert, Ihre Anmeldeinformationen, abhängig von der Konfiguration.
+Wenn die Datenquelle nicht gewünscht ist, klicken Sie auf die **Änderung** Schaltfläche, um eine neue Datenquelle bzw. den neuen ADO.NET-Datenanbieter auswählen. Der neue Anbieter möglicherweise bitten, Ihre Anmeldeinformationen ein, je nachdem, wie Sie es konfiguriert.
 
 ![Änderung AD0.NET-Datenanbieter](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Testen der Verbindung
+## <a name="test-the-connection"></a>Testen Sie die Verbindung
 
-Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Testverbindung**. Wenn es nicht erfolgreich, müssen Sie zur Problembehandlung bei basierend auf der Dokumentation des Herstellers.
+Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Testverbindung**. Wenn sie nicht erfolgreich ist, müssen Sie zur Problembehandlung basierend auf der Dokumentation des Herstellers.
 
 ![Testverbindung](../data-tools/media/raddata-test-connection.png)
 
-Wenn der Test erfolgreich ist, sind Sie bereit für die Erstellung einer *Datenquelle*, also in ein Visual Studio-Begriff, der tatsächlich bedeutet eine *Datenmodell* auf Grundlage der zugrunde liegenden Datenbank oder der Dienst.
+Wenn der Test erfolgreich ist, sind Sie bereit zum Erstellen einer *Datenquelle*, dies ist ein Visual Studio-Begriff, der eigentlich bedeutet, dass eine *Datenmodell* , basiert auf die zugrunde liegende Datenbank oder den Dienst.
 
 ## <a name="see-also"></a>Siehe auch
 

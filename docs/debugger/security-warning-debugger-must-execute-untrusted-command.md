@@ -1,5 +1,5 @@
 ---
-title: 'Sicherheitshinweis: Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen | Microsoft Docs'
+title: 'Sicherheitswarnung: Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,20 +17,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77554795772a5a9e2ce5d9bbe9f620923bc20184
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e99c56efc5338feeded20621c7467bbf8274bc9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479928"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510923"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen
 Diese Warnmeldung wird bei Verwendung des Quellservers angezeigt. Diese Meldung besagt, dass der Befehl, den der Debugger zum Abrufen von Quellcode ausführen muss, nicht in der Liste der vertrauenswürdigen Befehle für Quellserver in der Datei "srcsvr.ini" aufgeführt ist. Wenn dies ein gültiger Befehl ist, können Sie ihn der Datei "srcsvr.ini" hinzufügen. Andernfalls sollten Sie ihn nicht ausführen. Weitere Informationen finden Sie unter [Angeben von Symbol (.pdb)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="message-text"></a>Meldungstext  
- **Der Debugger muss die folgenden nicht vertrauenswürdigen Befehl zum Abrufen von Quellcode vom Quellserver ausführen.**  
+ **Der Debugger muss zum Abrufen von Quellcode vom Quellserver die folgenden nicht vertrauenswürdigen Befehl ausführen.**  
   
- **Wenn das Debuggen Datei symbol (\*PDB-Datei) wird nicht von einer bekannten und vertrauenswürdigen Quelle dieser Befehl möglicherweise ungültig oder kann zum Ausführen.**  
+ **Wenn das Debuggen Datei symbol (\*PDB-Datei) wird nicht aus einer bekannten und vertrauenswürdigen Quelle dieser Befehl möglicherweise ungültig oder ausführen kann.**  
   
  **Möchten Sie diesen Befehl ausführen?**  
   
@@ -47,4 +47,4 @@ Diese Warnmeldung wird bei Verwendung des Quellservers angezeigt. Diese Meldung 
 ## <a name="see-also"></a>Siehe auch  
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)   
- [Quellserver](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Quellserver](/windows/desktop/Debug/source-server-and-source-indexing)

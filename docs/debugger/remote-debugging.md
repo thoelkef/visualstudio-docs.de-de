@@ -1,7 +1,7 @@
 ---
-title: Remotedebuggen in Visual Studio | Microsoft Docs
+title: Remotedebuggen in Visual Studio | Microsoft-Dokumentation
 ms.custom: remotedebugging
-ms.date: 05/21/2018
+ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,63 +20,63 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477690"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38778293"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
 
-Ausführliche Anweisungen zum Remotedebuggen finden Sie unter folgenden Themen.
+Detaillierte Anweisungen zum Remotedebuggen finden Sie unter folgenden Themen.
 
 |Szenario|Link|
 |-|-|-|
 |Azure App Service|[Snapshot-Debugger](../debugger/debug-live-azure-applications.md) oder [Remote Debuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure-VM|[Remotedebuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Debuggen einer Azure Service Fabric-Anwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
-|ASP.NET|[Remote debug ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) oder [Remote Debuggen von ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET|[Remotedebuggen für ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) oder [Remotedebuggen von ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C#- oder Visual Basic|[Remotedebuggen eines C#- oder Visual Basic-Projekts](../debugger/remote-debugging-csharp.md)|
 |C++|[Remotedebuggen eines C++-Projekts](../debugger/remote-debugging-cpp.md)|
-|Universelle Windows-Apps (UWP)|[Führen Sie die uwp-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) oder [Debuggen eine installierte app-Pakets](../debugger/debug-installed-app-package.md)|
+|Universelle Windows-Apps (UWP)|[Ausführen von UWP-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) oder [Debuggen eines installierten app-Pakets](../debugger/debug-installed-app-package.md)|
 
-Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und keine zusätzlichen Anweisungen für Ihr Szenario erforderlich, führen Sie die Schritte in diesem Artikel.
-  
-## <a name="download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools  
+Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und alle zusätzlichen Anweisungen wird für Ihr Szenario nicht benötigt, führen Sie die Schritte in diesem Artikel.
+
+## <a name="download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="unblock_msvsmon"></a> Den Download der Remotetools unter Windows Server zulassen
+## <a name="unblock_msvsmon"></a> Entsperren Sie den Download der Remotetools unter Windows Server
 
-Die standardsicherheitseinstellungen in Internet Explorer unter Windows Server können zeitaufwändig sein, z. B. die Remotetools-Komponenten herunterzuladen erleichtern.
+Die standardsicherheitseinstellungen in Internet Explorer unter Windows Server können zum Herunterladen von Komponenten wie z. B. die Remotetools zeitaufwändige gestalten.
 
-* Durch die verstärkte Sicherheitskonfiguration für Internet Explorer, der verhindert, dass Sie Websites öffnen und den Zugriff auf Webressourcen, es sei denn, die Domäne mit der Ressource explizit zugelassen wird aktiviert ist (d. h. Vertrauensstellung).
+* Durch die verstärkte Sicherheitskonfiguration für Internet Explorer, der verhindert, dass Sie von Websites öffnen und den Zugriff auf Webressourcen, es sei denn, die Domäne, die mit der Ressource explizit zugelassen wird aktiviert ist (d. h. vertrauenswürdig). Obwohl Sie diese Einstellung deaktivieren können, empfehlen wir nicht, dass es da es kann ein Sicherheitsrisiko darstellt.
 
-* Unter Windows Server 2016 eine Standardeinstellung in **Internetoptionen** > **Sicherheit** > **Internet**  >   **Stufe** > **Downloads** auch deaktiviert Dateidownloads. Wenn Sie auswählen, die Remotetools auf Windows-Server direkt herunterzuladen, müssen Sie den Download der Datei aktivieren.
+* Unter Windows Server 2016 eine Standardeinstellung in **Internetoptionen** > **Sicherheit** > **Internet**  >   **Stufe** > **Downloads** auch deaktiviert Dateidownloads. Wenn Sie die Remoteserver-Verwaltungstools unter Windows Server direkt herunterladen möchten, müssen Sie die Datei zum Herunterladen aktivieren.
 
-Informationen zum Herunterladen der Tools auf Windows Server empfehlen wir eine der folgenden:
+Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
 
-* Herunterladen der Remoteserver-Verwaltungstools auf einem anderen Computer wie die einer ausgeführten Visual Studio, und kopieren Sie die *.exe* Datei zu Windows Server.
+* Laden Sie die Remoteserver-Verwaltungstools auf einem anderen Computer wie die einer ausgeführten Visual Studio, und kopieren Sie die *.exe* -Datei mit Windows Server.
 
-* Führen Sie den Remotedebugger [aus einer Dateifreigabe](#fileshare_msvsmon) auf dem Visual Studio-Computer.
+* Ausführen des Remotedebuggers [aus einer Dateifreigabe](#fileshare_msvsmon) auf Ihrem Computer Visual Studio.
 
-* Laden Sie die Remoteserver-Verwaltungstools direkt unter Windows Server, und akzeptieren Sie die Anweisungen zum vertrauenswürdigen Sites hinzufügen. Moderne Websites gehören häufig viele Drittanbieter-Ressourcen, damit dies in vielen Abfragen führen kann. Darüber hinaus müssen alle umgeleiteten Links möglicherweise manuell hinzugefügt werden. Sie können auch einige der vertrauenswürdigen Sites hinzufügen, bevor Sie den Download ab. Wechseln Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites** und fügen Sie den folgenden Websites hinzu.
+* Laden Sie die Remoteserver-Verwaltungstools direkt auf Windows Server, und akzeptieren Sie die aufforderungen, um den vertrauenswürdigen Sites hinzufügen. Moderne Websites enthalten häufig viele Ressourcen von Drittanbietern, damit dies in vielen Anweisungen führen kann. Darüber hinaus müssen alle umgeleiteten Links manuell hinzugefügt werden. Sie können auch einige der vertrauenswürdigen Sites hinzufügen, bevor Sie den Download ab. Wechseln Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Websites** und fügen Sie den folgenden Websites hinzu.
 
-  * visualstudio.com
+  * VisualStudio.Microsoft.com
   * download.visualstudio.microsoft.com
   * Informationen zu: leer
 
-  Fügen Sie für frühere Versionen des Debuggers auf my.visualstudio.com diese zusätzliche Websites hinzu, stellen Sie sicher, dass diese Anmeldung erfolgreich ist:
+  Fügen Sie bei älteren Versionen des Debuggers auf my.visualstudio.com wird diese zusätzliche Websites hinzu, stellen Sie sicher, dass diese Anmeldung erfolgreich ist:
 
   * microsoft.com
   * go.microsoft.com
   * 0download.microsoft.com
   * My.VisualStudio.com
-  * Login.microsoftonline.com
+  * "Login.microsoftonline.com"
   * Login.Live.com
-  * Secure.aadcdn.microsoftonline p.com
+  * Secure.aadcdn.microsoftonline-p.com
   * msft.STS.Microsoft.com
   * auth.GFX.ms
   * app.vssps.visualstudio.com
@@ -85,84 +85,85 @@ Informationen zum Herunterladen der Tools auf Windows Server empfehlen wir eine 
 
     Wenn Sie diese Domänen, die beim Herunterladen der Remoteserver-Verwaltungstools hinzufügen möchten, und wählen Sie dann **hinzufügen** Aufforderung.
 
-    ![Blockierte Inhalt (Dialogfeld)](../debugger/media/remotedbg-blocked-content.png)
+    ![Blockierte Content (Dialogfeld)](../debugger/media/remotedbg-blocked-content.png)
 
-    Wenn Sie die Software heruntergeladen haben, erhalten Sie einige zusätzlichen Anforderungen über die Berechtigung zum Laden von verschiedenen Website-Skripts und Ressourcen gewähren. Auf my.visualstudio.com wird empfohlen, Sie zusätzlichen Domänen fügen, stellen Sie sicher, dass diese Anmeldung erfolgreich ist.
+    Wenn Sie die Software herunterladen, erhalten Sie einige zusätzlichen Anforderungen zum Laden von verschiedenen Website-Skripts und Ressourcen berechtigt zu gewähren. Auf my.visualstudio.com empfehlen wir, dass Sie, die zusätzlichen Domänen hinzufügen an, stellen Sie sicher, dass diese Anmeldung erfolgreich ist.
 
-### <a name="fileshare_msvsmon"></a> (Optional) Zum Ausführen des Remotedebuggers aus einer Dateifreigabe
+## <a name="requirements_msvsmon"></a> Anforderungen
 
-Sie können den Remotedebugger finden (*msvsmon.exe*) auf einem Computer mit Visual Studio Community, Professional oder Enterprise bereits installiert. Die einfachste Möglichkeit zum Einrichten des Remotedebuggens werden für einige Szenarien der Remotedebugger (msvsmon.exe) aus einer Dateifreigabe ausgeführt. Nutzungseinschränkungen, finden Sie in den Remotedebugger-Hilfeseite (**Hilfe > Verwendung** in den Remotedebugger).
+[!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
 
-1. Suchen *msvsmon.exe* in das Verzeichnis, die Ihrer Version von Visual Studio entspricht. Für Visual Studio Enterprise 2017:
+## <a name="fileshare_msvsmon"></a> (Optional) Zum Ausführen des Remotedebuggers aus einer Dateifreigabe
+
+Sie finden den Remotedebugger (*msvsmon.exe*) auf einem Computer mit Visual Studio Community, Professional oder Enterprise bereits installiert. Die einfachste Möglichkeit zum Einrichten des Remotedebuggens werden für einige Szenarien führen Sie den Remotedebugger (msvsmon.exe) über eine Dateifreigabe. Einschränkungen bezüglich der, finden Sie den Remotedebugger-Hilfeseite (**Hilfe > Verwendung** in den Remotedebugger).
+
+1. Suchen *msvsmon.exe* in das Verzeichnis, das Ihrer Version von Visual Studio entspricht. Für Visual Studio Enterprise 2017:
 
       *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
-      
+
       *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Freigabe der **Remotedebugger** Ordner auf dem Visual Studio-Computer.
 
-3. Führen Sie auf dem Remotecomputer *msvsmon.exe*. Führen Sie die [setupanweisungen](#bkmk_setup).
+3. Führen Sie auf dem Remotecomputer *msvsmon.exe* aus dem freigegebenen Ordner. Führen Sie die [Anweisungen zur Einrichtung des](#bkmk_setup).
 
-> [!TIP] 
-> Installation über die Befehlszeile und -Befehlszeilenreferenz finden Sie auf der Hilfeseite für *msvsmon.exe* dazu ``msvsmon.exe /?`` in der Befehlszeile auf dem Computer mit Visual Studio installiert (oder wechseln Sie zu **Hilfe > Verwendung**in den Remotedebugger).
-  
-## <a name="requirements_msvsmon"></a> Anforderungen
+> [!TIP]
+> Installation über die Befehlszeile und Befehlszeilenreferenz-finden Sie auf die Hilfeseite für *msvsmon.exe* durch Eingabe ``msvsmon.exe /?`` in der Befehlszeile auf dem Computer mit Visual Studio installiert (oder wechseln Sie zu **Hilfe > Verwendung**in den Remotedebugger).
 
-[!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
-  
-## <a name="set-up-the-remote-debugger"></a>Einrichten des Remotedebuggers  
+## <a name="bkmk_setup"></a> Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a> Konfigurieren des Remotedebuggers  
+### <a name="configure_msvsmon"></a> Konfigurieren des Remotedebuggers
 Sie können einige Aspekte der Konfiguration des Remotedebuggers ändern, nachdem Sie ihn zum ersten Mal gestartet haben.
-  
--   Wenn Sie Berechtigungen für andere Benutzer eine Verbindung mit dem Remotedebugger herstellen, wählen hinzufügen müssen **Extras > Berechtigungen**. Sie müssen Administratorrechte besitzen, um Berechtigungen zu gewähren oder zu verweigern.
 
-     > [!IMPORTANT] 
-     > Sie können den Remotedebugger unter einem Benutzerkonto, das unterscheidet sich von Ihrem Benutzerkonto auf dem Visual Studio-Computer verwendeten ausführen, jedoch müssen Sie das andere Benutzerkonto die Berechtigungen des Remotedebuggers hinzufügen. 
+-   Wenn Sie zum Hinzufügen von Berechtigungen für andere Benutzer eine Verbindung mit dem Remotedebugger herstellen, wählen müssen **Extras > Berechtigungen**. Sie müssen Administratorrechte besitzen, um Berechtigungen zu gewähren oder zu verweigern.
+
+     > [!IMPORTANT]
+     > Sie können den Remotedebugger unter einem Benutzerkonto, das unterscheidet sich über das Benutzerkonto auf dem Visual Studio-Computer verwendeten ausführen, jedoch müssen Sie das andere Benutzerkonto die Berechtigungen des Remotedebuggers hinzufügen.
 
      Alternativ können Sie den Remotedebugger starten, über die Befehlszeile mit der **/ allow \<Benutzername >** Parameter: **Msvsmon / allow \< username@computer>**.
-  
--   Wenn Sie den Authentifizierungsmodus oder die Portnummer ändern, oder geben Sie einen Timeoutwert für den Remoteserver-Verwaltungstools müssen: Wählen Sie **Tools > Optionen**.  
-  
-     Eine Liste der standardmäßig verwendeten Portnummern, finden Sie unter [-Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md).  
-  
+
+-   Wenn Sie den Authentifizierungsmodus oder die Portnummer ändern, oder geben Sie einen Timeoutwert für den Remoteserver-Verwaltungstools müssen: Wählen Sie **Tools > Optionen**.
+
+     Eine Liste der standardmäßig verwendeten Portnummern, finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md).
+
      > [!WARNING]
      >  Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
 
 ##  <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
-Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remotedebugger als Administrator ausführen oder, soll es immer ausgeführt, den Remotedebugger als Dienst ausführen.
-  
- Wenn Sie den Remotedebugger als Dienst konfigurieren möchten, gehen Sie folgendermaßen vor.  
-  
-1.  Suchen Sie den **Konfigurations-Assistenten für Remote Debugger** (rdbgwiz.exe). (Dies ist eine vom Remotedebugger getrennte Anwendung.) Der Konfigurations-Assistent steht nur zur Verfügung, wenn Sie die Remotetools installieren, und wird nicht mit Visual Studio installiert.  
-  
-2.  Starten Sie den Konfigurations-Assistenten. Wenn die erste Seite angezeigt wird, klicken Sie auf **Weiter**.  
-  
-3.  Aktivieren Sie das Kontrollkästchen **Visual Studio 2015 Remote Debugger als Dienst ausführen** .  
-  
-4.  Fügen Sie den Namen des Benutzerkontos und das Kennwort hinzu.  
-  
-     Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **lokale Sicherheitsrichtlinie** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Hinzufügen des Benutzerkontos, das die **Eigenschaften** Fenster, und klicken Sie auf **OK**). Klicken Sie auf **Weiter**.  
-  
-5.  Wählen Sie den Typ des Netzwerks aus, über das die Remotetools kommunizieren sollen. Es muss mindestens ein Netzwerktyp ausgewählt werden. Wenn die Computer über eine Domäne verbunden sind, sollten Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, sollten Sie das zweite bzw. dritte Element auswählen. Klicken Sie auf **Weiter**.  
-  
-6.  Wenn der Dienst gestartet werden kann, wird **Der Konfigurations-Assistent für Visual Studio Remote Debugger wurde erfolgreich abgeschlossen**angezeigt. Wenn der Dienst nicht gestartet werden kann, wird **Fehler beim Abschließen des Assistenten zum Konfigurieren von Visual Studio Remote Debugger**angezeigt. Die Seite bietet auch Tipps, wie Sie den Dienst ans Laufen bringen können.  
-  
-7.  Klicken Sie auf **Fertig stellen**.  
-  
- An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie auf **Systemsteuerung > Services** sucht nach **Visual Studio 2015 Remote Debugger**.  
-  
- Sie können auch beenden und starten Sie den Remotedebugger-Dienst aus **Systemsteuerung > Dienste**.
+Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remotedebugger als Administrator ausführen oder, soll es immer ausgeführt, den den Remotedebugger als Dienst ausführen.
 
-## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen 
+ Wenn Sie den Remotedebugger als Dienst konfigurieren möchten, gehen Sie wie folgt vor.
+
+1.  Suchen Sie den **Konfigurations-Assistenten für Remote Debugger** (rdbgwiz.exe). (Dies ist eine vom Remotedebugger getrennte Anwendung.) Der Konfigurations-Assistent steht nur zur Verfügung, wenn Sie die Remotetools installieren, und wird nicht mit Visual Studio installiert.
+
+2.  Starten Sie den Konfigurations-Assistenten. Wenn die erste Seite angezeigt wird, klicken Sie auf **Weiter**.
+
+3.  Aktivieren Sie das Kontrollkästchen **Visual Studio 2015 Remote Debugger als Dienst ausführen** .
+
+4.  Fügen Sie den Namen des Benutzerkontos und das Kennwort hinzu.
+
+     Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **Local Security Policy** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Hinzufügen des Benutzerkontos, das die **Eigenschaften** Fenster, und klicken Sie auf **OK**). Klicken Sie auf **Weiter**.
+
+5.  Wählen Sie den Typ des Netzwerks aus, über das die Remotetools kommunizieren sollen. Es muss mindestens ein Netzwerktyp ausgewählt werden. Wenn die Computer über eine Domäne verbunden sind, sollten Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, sollten Sie das zweite bzw. dritte Element auswählen. Klicken Sie auf **Weiter**.
+
+6.  Wenn der Dienst gestartet werden kann, wird **Der Konfigurations-Assistent für Visual Studio Remote Debugger wurde erfolgreich abgeschlossen**angezeigt. Wenn der Dienst nicht gestartet werden kann, wird **Fehler beim Abschließen des Assistenten zum Konfigurieren von Visual Studio Remote Debugger**angezeigt. Die Seite bietet auch Tipps, wie Sie den Dienst ans Laufen bringen können.
+
+7.  Klicken Sie auf **Fertig stellen**.
+
+ An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie zu **Systemsteuerung > Dienste** nach **Visual Studio 2015 Remote Debugger**.
+
+ Sie können auch beenden und starten Sie den Remotedebugger-Dienst von **Systemsteuerung > Dienste**.
+
+## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
- [Konfigurieren der Windows-Firewall für Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Remotedebugger-Portzuweisungen](../debugger/remote-debugger-port-assignments.md)   
- [Das Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+- [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
+- [Remotedebuggen von ASP.NET Core auf einem Remotecomputer mit IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
+- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

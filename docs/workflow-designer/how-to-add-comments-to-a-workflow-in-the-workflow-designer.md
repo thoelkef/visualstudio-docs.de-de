@@ -1,5 +1,5 @@
 ---
-title: 'Workflow-Designer - Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow'
+title: 'Workflow-Designer – Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752026"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379948"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
 
-Erleichterung der zum Erstellen größerer, komplexerer Workflows kann .NET Framework 4.5 der Entwickler die folgenden Elementtypen im Designer Anmerkungen hinzuzufügen:
+Um zu ermöglichen, größerer, komplexerer Workflows zu erstellen, kann .NET Framework 4.5 der Entwickler auf die folgenden Elementtypen im Designer Anmerkungen hinzuzufügen:
 
 -   <xref:System.Activities.Activity>
 
@@ -41,27 +41,27 @@ Erleichterung der zum Erstellen größerer, komplexerer Workflows kann .NET Fram
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Hinzufügen einer Anmerkung zu einer Aktivität im Designer
 
-1. Workflow-Designer mit der Maustaste auf ein Element im Workflow-Designer, und wählen Sie **Anmerkungen**, **Anmerkung hinzufügen**.
+1. Der Workflow-Designer mit der Maustaste auf ein Element im Workflow Designer, und wählen **Anmerkungen**, **Anmerkung hinzufügen**.
 
 1. Fügen Sie den Text der Anmerkung im angegebenen Bereich ein.
 
-   Das Element wird ein Anmerkungssymbol gezeigt. Mit dem Mauszeiger auf das Symbol "Anmerkung" zeigt den Text der Anmerkung.
+   Das Element wird ein Anmerkungssymbol gezeigt. Mit dem Mauszeiger auf das Anmerkungssymbol zeigt den Text der Anmerkung.
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Anzeigen einer Anmerkung im Designer einer Aktivität
 
-1.  Ein Aktivitätsdesigner besitzt eine Anmerkung, die außerhalb der Aktivität angezeigt, und klicken Sie auf die **Pin** Symbol im anmerkungsadorner.
+1.  Ein Aktivitäts-Designer mit einer Anmerkung, die außerhalb der Aktivität angezeigt, und klicken Sie auf die **Pin** Symbol im anmerkungsadorner.
 
    Die Anmerkung wird im Aktivitäts Designer angezeigt. Im unten stehenden Screenshot wird eine Anmerkung für die Startaktivität im Workflow im Aktivitäts-Designer angezeigt.
 
    ![Im Aktivitäts-Designer angezeigte Anmerkung](../workflow-designer/media/annotationindesigner.png)
 
-1. Um die Anmerkung außerhalb der Aktivitäts-Designer anzuzeigen, zeigen Sie auf den anmerkungsbereich im Aktivitäts Designer, und klicken Sie auf die **lösen** Symbol
+1. Wenn die Anmerkung außerhalb der Aktivitäts Designer anzeigen möchten, zeigen Sie auf den anmerkungsbereich im Aktivitäts Designer, und klicken Sie auf die **Unpin** Symbol
 
-   ![Außerhalb eines Aktivitäts-Designers angezeigte Anmerkung](../workflow-designer/media/annotationoutsidedesigner.png)
+   ![Außerhalb einer Aktivitäts Designer angezeigte Anmerkung](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Ein- oder Ausblenden aller Anmerkungen
 
-1. Klicken Sie mit der rechten Maustaste auf eine Aktivität, die eine Anmerkung enthält. Wählen Sie **Anmerkungen**, **Anzeigen aller Anmerkungen**.
+1. Klicken Sie mit der rechten Maustaste auf eine Aktivität, die eine Anmerkung enthält. Wählen Sie **Anmerkungen**, **alle Anmerkungen anzeigen**.
 
    Alle Anmerkungen werden in der Aktivitäts Designer angezeigt.
 
@@ -75,13 +75,13 @@ Erleichterung der zum Erstellen größerer, komplexerer Workflows kann .NET Fram
 
    Die Anmerkung wird zur Bearbeitung geöffnet oder gelöscht.
 
-1. Um alle Anmerkungen gleichzeitig zu löschen, Maustaste den Workflow-Designers und wählen **Anmerkung**, **alle Anmerkungen löschen**.
+1. Um alle Anmerkungen gleichzeitig zu löschen, Maustaste den Workflow aus, und wählen **Anmerkung**, **alle Anmerkungen löschen**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Hinzufügen, Bearbeiten und Löschen einer Anmerkung für eine Variable oder ein Argument
 
 1. Klicken Sie mit der rechten Maustaste auf eine Variable oder ein Argument, und wählen Sie Anmerkung hinzufügen.
 
-1. Geben Sie den Text der Anmerkung ein. Die Variable oder ein Argument wird ein Anmerkungssymbol angezeigt.
+1. Geben Sie den Text der Anmerkung ein. Die Variable oder das Argument wird ein Anmerkungssymbol angezeigt.
 
 1. Klicken Sie mit der rechten Maustaste auf eine Variable oder ein Argument, die bzw. das eine Anmerkung enthält. Wählen Sie Anmerkung bearbeiten aus.
 

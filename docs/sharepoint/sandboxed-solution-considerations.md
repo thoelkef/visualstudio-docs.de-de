@@ -1,5 +1,5 @@
 ---
-title: Überlegungen zu Sandkastenlösungen | Microsoft Docs
+title: Überlegungen zu Sandkastenlösungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,75 +23,76 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119163"
 ---
-# <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
-  *Sandkastenlösungen* sind eine Funktion in Microsoft SharePoint 2010, mit dem Standort Auflistung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Eine allgemeine sandkastenlösung ist Benutzer ihre eigenen Webparts hochladen.  
+# <a name="sandboxed-solution-considerations"></a>Überlegungen zu sandkastenlösungen
+  *Sandbox-Lösungen* sind ein Feature in Microsoft SharePoint 2010, mit dem Standort Sammlung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Allgemeine Sandbox-Lösung ist die Benutzer ihre eigenen Webparts hochladen.  
   
- Eine Sandbox SharePoint-Anwendung ausgeführt wird, in einem sicheren, überwachten Prozess, der Zugriff auf einen begrenzten Teil der Webfarm hat. Microsoft SharePoint 2010 verwendet eine Kombination von Funktionen, Projektmappen Galerien Lösung überwachen und eine Validierungsframework sandkastenlösungen zu aktivieren.  
+ Eine Sandbox SharePoint-Anwendung ausgeführt wird, in einem sicheren, überwachten Prozess, der Zugriff auf einen begrenzten Teil der Webfarm hat. Microsoft SharePoint 2010 verwendet eine Kombination von Features, Projektmappen von Galerien, Lösung, die Überwachung und ein Framework für die Überprüfung auf die um Sandbox-Lösungen zu aktivieren.  
   
-## <a name="specifying-project-trust-level"></a>Projektvertrauensebene angeben  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unterstützt, die über eine boolesche Projekteigenschaft sandkastenlösungen aufgerufen *Sandkastenlösung*. Diese Eigenschaft kann festgelegt werden, zu einem beliebigen Zeitpunkt im Projekt oder angegeben werden beim Erstellen des Projekts in der **Assistent zum Anpassen von SharePoint**.  
+## <a name="specify-project-trust-level"></a>Geben Sie die Vertrauensebene für Projekt
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unterstützt die Sandbox-Lösungen durch eine boolesche Eigenschaft namens *Sandkastenlösung*. Diese Eigenschaft kann zu einem beliebigen Zeitpunkt im Projekt festgelegt werden, oder angegeben werden bei der Erstellung des Projekts in der **SharePoint Customization Wizard**.  
   
 > [!NOTE]  
->  Ändern der *Sandkastenlösung* Eigenschaft eines Projekts nach seiner Erstellung Überprüfungsfehler verursachen.  
+>  Ändern der *Sandkastenlösung* Eigenschaft eines Projekts aus, nachdem es erstellt wurde, kann zu Überprüfungsfehlern führen.  
   
- Die Lösung wird eine Lösung Farmbereich betrachtet, wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"false"** , oder Sie wählen Sie die **als farmlösung bereitstellen** Option. Allerdings die Projektmappe wird anders behandelt als farmlösung Wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"true"** , oder Sie wählen Sie die **bereitstellen als sandkastenlösung** die Option im Assistenten.  
+ Die Lösung wird eine Lösung Farmbereich betrachtet, wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"false"** , oder Sie wählen die **als farmlösung bereitstellen** Option. Allerdings die Lösung ist anders behandelt als farmlösung Wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"true"** , oder Sie wählen die **als sandkastenlösung bereitstellen** die Option im Assistenten.  
   
-## <a name="sharepoint-site-hierarchy"></a>SharePoint-Site-Hierarchie  
- Um zu verstehen, wie sandkastenlösungen arbeiten können, um wissen, dass SharePoint-Websites, die im Bereich hierarchisch angeordnet sind. Das oberste Element wird als der Webfarm bezeichnet, und andere Elemente, die ihm untergeordnet sind:  
+## <a name="sharepoint-site-hierarchy"></a>SharePoint-Websitehierarchie
+ Wie Sandbox-Lösungen zu arbeiten, ist es hilfreich, wissen, dass die SharePoint-Websites, die im Bereich hierarchisch angeordnet sind. Das oberste Element wird als Webfarm bezeichnet, und andere Elemente, die ihm untergeordnet sind:  
   
  Webfarm  
   
- Web-Anwendung ein  
+ Webanwendung A  
   
- Standort Auflistung A1  
+ Site Collection A1  
   
- Website-A1a  
+ Site A1a  
   
  Webanwendung B  
   
- Standort Auflistung B1  
+ Site Collection B1  
   
- Standort B1a  
+ Site B1a  
   
- Standort B1b  
+ Site B1b  
   
- Die Auflistung B2 Standort  
+ Site Collection B2  
   
- Website-B2a  
+ Site B2a  
   
- Wie Sie sehen können, darf Webfarmen eine oder mehrere Webanwendungen, die wiederum einen oder mehrere Websitesammlungen enthalten können, welche die Unterwebsites haben können, und so weiter. Änderungen an einem Standort Auflistung wirkt sich nur die Websitesammlung vorgenommen und keine anderen. Allerdings auf Farmebene Web vorgenommene Änderungen alle Websitesammlungen in der Farm.  
+ Wie Sie sehen können, können Webfarmen eine oder mehrere Webanwendungen enthalten, die wiederum eine oder mehrere Websitesammlungen enthalten kann, welche die können Unterwebsites verwenden und so weiter. Änderungen an eine Website Auflistung auswirken, die site der Auflistung vorgenommen und keine anderen. Änderungen, die auf Farmebene Web beeinflussen jedoch alle Websitesammlungen in der Farm.  
   
- Windows SharePoint Services (WSS) 3.0 können Sie nur auf Farmebene, Lösungen bereitstellen, aber [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] können Sie auf die Farmebene beziehen (farmlösung) oder der Ebene der Websitesammlung (sandkastenlösung) bereitstellen.  
+ Windows SharePoint Services (WSS) 3.0 können Sie zum Bereitstellen von Lösungen nur auf der Farmebene statt, aber [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] können Sie entweder auf der Farmebene statt (farmlösung) oder auf Ebene der Websitesammlung (sandkastenlösung) bereitstellen.  
   
-## <a name="why-sandboxed-solutions"></a>Warum Sandkastenlösungen?  
- WSS 3.0 konnte Lösungen nur auf Farmebene bereitgestellt werden. Dies bedeutet, dass potenziell schädliche oder zur Destabilisierung Lösungen bereitgestellt werden konnte, die betroffenen der gesamten Webfarm und alle anderen Websitesammlungen und Anwendungen, die darunter ausgeführt. Mithilfe von sandkastenlösungen können Sie jedoch Ihre Lösungen, die einem Unterbereich der Farm eine bestimmte Websitesammlung bereitstellen. Um zusätzlichen Schutz zu gewährleisten, die Assembly der Lösung wurde nicht geladen, in der Main [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] -Prozess (w3wp.exe). Stattdessen wird es in einem separaten Prozess (SPUCWorkerProcess.exe) geladen. Dieser Prozess wird überwacht und implementiert wird, Kontingente und Einschränkungen, um der Farm sandkastenlösungen zu schützen, die schädliche Aktivitäten ausführen, z. B. das Ausführen von enger Schleifen, die CPU-Zyklen beanspruchen.  
+## <a name="why-sandboxed-solutions"></a>Warum Sandbox-Lösungen?
+ In WSS 3.0 konnte Lösungen nur auf Farmebene bereitgestellt werden. Dies bedeutete, dass potenziell schädliche oder destabilisierende Lösungen können, die betroffen bereitgestellt werden, die gesamte Webfarm und alle anderen Websitesammlungen und Anwendungen, die darunter ausgeführt. Allerdings können Sie mithilfe von Sandbox-Lösungen können Ihre Lösungen um einen Unterbereich von der Farm, die einer spezifischen Websitesammlung bereitstellen. Um zusätzlichen Schutz bieten, die Assembly der Lösung wird nicht geladen, im Hauptordner [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] Prozess (*w3wp.exe*). Stattdessen wird es in einem separaten Prozess geladen (*SPUCWorkerProcess.exe*). Dieser Prozess wird überwacht und implementiert wird, Kontingente und Drosselung, um der Farm von Sandbox-Lösungen zu schützen, die schädliche Aktivitäten ausführen, z. B. das Ausführen der enger Schleifen, die CPU-Zyklen beanspruchen.  
   
-## <a name="site-collection-solution-gallery"></a>Katalog der Websitesammlung-Lösung  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 ist eine Funktion, die sogenannten "Site Auflistung Solution Gallery." Sie können auf dieses Feature zuzugreifen, über die Seite "SharePoint 2010-Zentraladministration" oder durch Öffnen der **Websiteaktionen** im Menü auswählen **Standorteinstellungen**, und drücken Sie dann die **Lösungen** link **Galerien** in der SharePoint-Website. Lösung Kataloge sind Repositorys von Lösungen, die Websitesammlungs-Administratoren zum Verwalten von Lösungen in ihren Websitesammlungen aktivieren.  
+## <a name="site-collection-solution-gallery"></a>Lösung sitesammlungs-gallery
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 verfügt über eine Funktion, die sogenannten "Site Collection Solution Gallery." Sie können dieses Feature zugreifen, auf der SharePoint 2010-Zentraladministration oder durch Öffnen der **Websiteaktionen** im Menü auswählen **Standorteinstellungen**, auswählen und dann die **Lösungen** link **Galerien** in der SharePoint-Website. Lösung Kataloge sind-Repositorys von Lösungen, die Websitesammlungs-Administratoren zum Verwalten von Lösungen in ihrer Websitesammlungen aktivieren.  
   
- Solution Gallery ist eine Dokumentbibliothek in der Stammwebsite der SharePoint-Website gespeichert. Solution Gallery ersetzt Websitevorlagen und Lösungspakete unterstützt. Wenn eine SharePoint-Lösung-Paketdatei (.wsp) hochgeladen wird, wird er als sandkastenlösung verarbeitet.  
+ Der Lösungskatalog ist eine Dokumentbibliothek, die in die Stammwebsite der SharePoint-Website gespeichert. Im Lösungskatalog Websitevorlagen ersetzt und Lösungspakete unterstützt. Wenn ein SharePoint-Lösungspaket (*.wsp*)-Datei wird hochgeladen ist, wird es als Sandbox-Lösung verarbeitet wird.  
   
-## <a name="sandboxed-solution-limitations"></a>Sandkastenlösung Einschränkungen  
- Wenn eine sandkastenlösung bereitgestellt wird, ist das Array von SharePoint-Funktionen zur Verfügung, um alle Sicherheitsrisiken zu reduzieren, die sie möglicherweise beschränkt. Diese Einschränkungen umfassen Folgendes:  
+## <a name="sandboxed-solution-limitations"></a>Beschränkungen von Sandbox-Lösung
+ Wenn eine sandkastenlösung bereitgestellt wird, ist das Array von SharePoint-Funktionen zur Verfügung, um alle Sicherheitsrisiken zu reduzieren, die sie möglicherweise beschränkt. Zu diesen Einschränkungen zählen folgende:  
   
--   Sandkastenlösungen haben eine eingeschränkte Teilmenge eines bereitstellbare Projektmappen-Elemente, die ihnen zur Verfügung stehen. Potenziell anfällig für SharePoint-Projektvorlagen, wie Websitedefinitionen und Workflows, sind nicht verfügbar.  
+-   Sandbox-Lösungen müssen eine eingeschränkte Teilmenge der bereitzustellende Lösung-Elemente, die ihnen zur Verfügung. Potenziell anfällig für SharePoint-Projektvorlagen, wie Website-Definitionen und Workflows, sind nicht verfügbar.  
   
--   SharePoint-führt Sandkastenlösungscode in einem Prozess (SPUCWorkerProcess.exe) aus dem Hauptknoten [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] anwendungspoolprozess (w3wp.exe).  
+-   SharePoint Sandkastenlösungscode in einem Prozess ausgeführt (*SPUCWorkerProcess.exe*) getrennt von den Hauptknoten [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] -Anwendungspool (*w3wp.exe*) verarbeiten.  
   
--   Anzeige zugeordneter Ordner können nicht zum Projekt hinzugefügt werden.  
+-   Zugeordnete Ordner können nicht zum Projekt hinzugefügt werden.  
   
 -   Typen in der [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] Assembly Microsoft.Office.Server kann nicht in sandkastenlösungen verwendet werden. Darüber hinaus nur Typen in der [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Assembly Microsoft.SharePoint in sandkastenlösungen verwendet werden kann.  
   
- Es ist wichtig zu beachten, dass die Angabe einer SharePoint-Lösung als sandkastenlösung auf SharePoint-Server keine Auswirkungen hat. er nur bestimmt, wie die SharePoint-Projekt bereitgestellt wird, in SharePoint aus [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und welche Assemblys es gebunden wird. Es hat keine Auswirkungen auf die generierten WSP-Datei, und die WSP-Datei enthält keine Daten, die direkt mit korreliert die *Sandkastenlösung* Eigenschaft.  
+ Es ist wichtig zu beachten, dass die Angabe einer SharePoint-Lösung als sandkastenlösung keine Auswirkungen auf SharePoint-Server hat. es nur bestimmt, wie das SharePoint-Projekt bereitgestellt wird, in SharePoint aus [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und welche Assemblys bindet an. Es hat keine Auswirkungen auf die generierte *.wsp* -Datei, und die *.wsp* Datei enthält keine Daten, die direkt mit korreliert die *Sandkastenlösung* Eigenschaft.  
   
-## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funktionen und Elementen in Sandkastenlösungen  
- Sandkastenlösungen unterstützen die folgenden Funktionen und die folgenden Elemente:  
+## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funktionen und Elemente in der Sandbox-Lösungen
+ Sandbox-Lösungen unterstützen die folgenden Funktionen und die folgenden Elemente:  
   
 -   Inhaltstypen/Felder  
   
@@ -101,17 +102,17 @@ ms.lasthandoff: 04/16/2018
   
 -   Ereignisempfänger  
   
--   Funktionsaufrufe  
+-   Feature-Legenden  
   
 -   Listendefinitionen  
   
--   Instanzen auflisten  
+-   Listeninstanzen  
   
 -   Modul-Dateien  
   
 -   Navigation  
   
--   onet.Xml  
+-   *"onet.xml"*  
   
 -   SPItemEventReceiver  
   
@@ -123,26 +124,25 @@ ms.lasthandoff: 04/16/2018
   
 -   Webparts  
   
--   WebTemplate-Funktionselemente (anstelle von Webtemp.xml)  
+-   WebTemplate Funktionselemente (anstelle von *Webtemp.xml*)  
   
 -   Visuelle Webparts  
   
- Sandkastenlösungen unterstützen nicht die folgenden Funktionen und die folgenden Elemente:  
+ Sandbox-Lösungen unterstützen nicht die folgenden Funktionen und die folgenden Elemente:  
   
 -   Anwendungsseiten  
   
--   Benutzerdefinierte Aktion Gruppe  
+-   Benutzerdefinierte Aktionsgruppe  
   
 -   Farm-Funktionen  
   
 -   `HideCustomAction`-Element  
   
--   Im Bereich der Anwendung Web-Funktionen  
+-   Im Gültigkeitsbereich der Anwendung-Web-Funktionen  
   
 -   Workflows mit code  
   
-## <a name="see-also"></a>Siehe auch  
- [Unterschiede zwischen Sandkasten- und Farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
+## <a name="see-also"></a>Siehe auch
+ [Unterschiede zwischen Sandkasten- und farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

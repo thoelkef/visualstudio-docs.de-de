@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9811905e842eeb62399ef3b88558ee0286b05c84
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032676"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008293"
 ---
 # <a name="python-item-templates"></a>Python-Elementvorlagen
 
@@ -30,29 +30,29 @@ Die folgende Tabelle erklärt kurz die Auswirkung jeder Elementvorlage in einem 
 
 | Vorlage | Die Vorlage erstellt |
 | --- | --- |
-| Leere Python-Datei | Leere Datei mit der Erweiterung `.py`. |
-| Python-Klasse | `.py`-Datei, die eine leere Python-Klassendefinition enthält. |
-| Python-Paket | Ordner, der eine `__init.py__`-Datei enthält. |
-| Python-Komponententest | `.py`-Datei mit einem Komponententest, der auf dem `unittest`-Framework basiert, sowie Aufruf von `unittest.main()`, um die Tests in der Datei auszuführen. |
-| HTML-Seite | `.html`-Datei mit einer einfachen Seitenstruktur, die aus einem `<head>`- und einem `<body>`-Element besteht. |
-| JavaScript | Leere `.js`-Datei. |
-| Stylesheet | `.css`-Datei mit einem leeren Stil für `body` |
-| Textdatei | Leere `.txt`-Datei. |
-| Django 1.9-App<br/>Django 1.4-App | Ordner mit dem Namen der App, der die Core-Dateien für eine Django-App enthält, wie in [Informationen zu Django in Visual Studio – Schritt 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) für Django 1.9 erläutert. Für Django 1.4 werden der Ordner `migrations`, die Datei `admin.py` und die Datei `apps.py` nicht eingeschlossen. |
-| IronPython-WPF-Fenster | Ein WPF-Fenster, das aus zwei parallelen Dateien besteht: Eine `.xaml`-Datei, die ein `<Window>` mit einem leeren `<Grid>`-Element definiert, und eine verknüpfte `.py`-Datei, die die XAML-Datei mithilfe der `wpf`-Bibliothek lädt. Wird normalerweise in einem Projekt verwendet, das mit einer der IronPython-Vorlagen erstellt wurde. Weitere Informationen finden Sie unter [Verwalten von Python-Projekten – Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates). |
-| Webrollen-Unterstützungsdateien | `bin`-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungsskript und eine `web.config`-Datei für Azure-Clouddienstwebrollen. Die Vorlage enthält auch eine `readme.html`-Datei, die die Details erläutert. |
-| Unterstützungsdateien für Workerrollen | `bin`-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungs- und Startskript sowie eine `web.config`-Datei für Workerrollen in Azure-Clouddiensten. Die Vorlage enthält auch eine `readme.html`-Datei, die die Details erläutert. |
-| „web.config“ für Azure (FastCGI) | `web.config`-Datei, die Einträge für Apps enthält, die mit einem [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt eingehende Verbindungen verarbeiten. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| „web.config“ für Azure (HttpPlatformHandler) | `web.config`-Datei, die Einträge für die Apps enthält, die an einem Socket für eingehende Verbindungen lauschen. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| „web.config“ für statische Azure-Dateien | `web.config`-Datei, die in der Regel einem `static`-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| „web.config“ für das Remotedebuggen in Azure | `web.config.debug`-Datei, die das Remotedebuggen über WebSockets aktiviert, sowie die Datei `Microsoft.PythonTools.WebRole.dll` und ein `ptvsd`-Ordner mit den Modulen zum Bereitstellen für den Server, um das Remotedebuggen zu aktivieren. Sie erstellen dieses Element in der Regel am gleichen Ort wie Ihre `web.config`-Datei. Weitere Informationen finden Sie unter [Remotedebuggen von Python-Code in Azure](debugging-remote-python-code-on-azure.md). Lesen Sie außerdem den folgenden Hinweis. |
+| **Leere Python-Datei** | Leere Datei mit der Erweiterung *.py*. |
+| **Python-Klasse** | *.py*-Datei, die eine leere Python-Klassendefinition enthält. |
+| **Python-Paket** | Ein Ordner, der eine *\_\_init\_\_.py*-Datei enthält. |
+| **Python-Komponententest** | Eine *.py*-Datei mit einem Komponententest, der auf dem `unittest`-Framework basiert, sowie Aufruf von `unittest.main()`, um die Tests in der Datei auszuführen. |
+| **HTML-Seite** | *.html*-Datei mit einer einfachen Seitenstruktur, die aus einem `<head>`- und einem `<body>`-Element besteht. |
+| **JavaScript** | Eine leere *.js*-Datei. |
+| **Stylesheet** | Eine *.css*-Datei, die eine leere Formatvorlage für `body` enthält. |
+| **Textdatei** | Eine leere *.txt*-Datei. |
+| **Django 1.9-App**<br/>**Django 1.4-App** | Ordner mit dem Namen der App, der die Core-Dateien für eine Django-App enthält, wie in [Informationen zu Django in Visual Studio – Schritt 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) für Django 1.9 erläutert. Für Django 1.4 sind der Ordner *migrations*, die Datei *admin.py* und die Datei *apps.py* nicht enthalten. |
+| **IronPython-WPF-Fenster** | Ein WPF-Fenster, das aus zwei parallelen Dateien besteht: einer *.xaml*-Datei, die ein `<Window>` mit einem leeren `<Grid>`-Element definiert, und einer verknüpften *.py*-Datei, die die XAML-Datei mithilfe der `wpf`-Bibliothek lädt. Wird normalerweise in einem Projekt verwendet, das mit einer der IronPython-Vorlagen erstellt wurde. Weitere Informationen finden Sie unter [Verwalten von Python-Projekten – Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates). |
+| **Webrollen-Unterstützungsdateien** | Ein *bin*-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungsskript und eine *web.config*-Datei für Azure-Clouddienstwebrollen. Die Vorlage enthält auch eine *readme.html*-Datei, die die Details erläutert. |
+| **Unterstützungsdateien für Workerrollen** | Ein *bin*-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungs- und Startskript sowie eine *web.config*-Datei für Workerrollen in Azure-Clouddiensten. Die Vorlage enthält auch eine *readme.html*-Datei, die die Details erläutert. |
+| **„web.config“ für Azure (FastCGI)** | *web.config*-Datei, die Einträge für Apps enthält, die mit einem [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt eingehende Verbindungen verarbeiten. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **„web.config“ für Azure (HttpPlatformHandler)** | *web.config*-Datei, die Einträge für die Apps enthält, die an einem Socket für eingehende Verbindungen lauschen. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **„web.config“ für statische Azure-Dateien** | -*web.config*Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **„web.config“ für das Remotedebuggen in Azure** | *web.config.debug*-Datei, die das Remotedebuggen über WebSockets aktiviert, sowie die Datei *Microsoft.PythonTools.WebRole.dll* und ein *ptvsd*-Ordner mit den Modulen zum Bereitstellen für den Server, um das Remotedebuggen zu aktivieren. Sie erstellen dieses Element in der Regel am gleichen Ort wie Ihre *web.config*-Datei. Weitere Informationen finden Sie unter [Remotedebuggen von Python-Code in Azure](debugging-remote-python-code-on-azure.md). Lesen Sie außerdem den folgenden Hinweis. |
 
 > [!Note]
-> Wenn Sie einem Projekt die `web.config`-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration „Debug“ veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig „Release“. Um dies zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im Veröffentlichungs-Assistenten. (Weitere Informationen zum Erstellen und Bereitstellen an Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/).)
+> Wenn Sie einem Projekt die *web.config*-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration **Debug** veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig **Release**. Um dies zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im **Veröffentlichungs-Assistenten**. (Weitere Informationen zum Erstellen und Bereitstellen an Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/).)
 >
 > ![Ändern der Veröffentlichungskonfiguration](media/template-web-publish-config.png)
 
-## <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Python-Projekten – Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python-Webprojektvorlagen](python-web-application-project-templates.md)

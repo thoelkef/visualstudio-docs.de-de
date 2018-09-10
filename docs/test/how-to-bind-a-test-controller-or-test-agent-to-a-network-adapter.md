@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970948"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203962"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 
@@ -31,7 +31,7 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 >
 > Dieser Fehler kann bei der Installation des Testcontrollers auf einem Computer mit mehr als einem Netzwerkadapter auftreten. Es ist auch möglich, dass Agents erfolgreich installiert werden können und das Problem erst bei einem Testlauf auftritt.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>Binden eines Testcontrollers an einen bestimmten Netzwerkadapter
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Binden eines Testcontrollers an einen bestimmten Netzwerkadapter
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>So ermitteln Sie die IP-Adressen der Netzwerkadapter
 
@@ -133,5 +133,5 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Gewusst wie: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Gewusst wie: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents ](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

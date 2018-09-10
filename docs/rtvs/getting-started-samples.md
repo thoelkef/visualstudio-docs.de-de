@@ -10,21 +10,22 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 615a53e830821fef780dcbc7596b3a1ced882fb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235318"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Beispielprojekte für R Tools für Visual Studio
 
-Mit dieser Sammlung von Beispielen können Sie mit R, R Tools für Visual Studio (RTVS) und Microsoft R Server beginnen:
+Mit dieser Sammlung von Beispielen können Sie mit R, R Tools für Visual Studio (RTVS) und Microsoft Machine Learning Server beginnen:
 
 1. Laden Sie die [ZIP-Beispieldatei](https://github.com/Microsoft/RTVS-docs/archive/master.zip) herunter, und extrahieren Sie sie in einem Ordner Ihrer Wahl.
 1. Öffnen Sie `examples/Examples.sln`, um zwei Ordner im Projekt anzuzeigen:
 
-    - *Erster Einblick in R* enthält einfache Anleitungen für Einsteiger in R.
-    - *MRS und maschinelles Lernen* enthält Beispiele zur Verwendung von R und Microsoft R Server für das maschinelle Lernen.
+    - *A first look at R* enthält einfache Anleitungen für Einsteiger in R.
+    - *MRS and Machine Learning* enthält Beispiele zur Verwendung von R und Microsoft Machine Learning Server für das maschinelle Lernen.
 
 ## <a name="a-first-look-at-r"></a>Erster Einblick in R
 
@@ -38,33 +39,33 @@ Dieses Beispiel bietet eine detaillierte Einführung in R über die umfangreiche
 
     ![Beispielausgabe aus dem Beispiel „2-Introduction to ggplot2.R“](media/samples-ggplot-output.png)
 
-## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server und maschinelles Lernen
+## <a name="microsoft-machine-learning-server-and-machine-learning"></a>Microsoft Machine Learning Server und maschinelles Lernen
 
-Diese Sammlung von Beispielen zeigt, wie Sie R zum Erstellen von Modellen für das maschinelle Lernen verwenden und wie Sie von [Microsoft R Server (MRS)](http://aka.ms/rtvs-msft-r) profitieren können. Installieren Sie MRS, um Skripts mit `MRS` im Titel und wo aufgeführt auszuführen.
+Diese Sammlung von Beispielen zeigt, wie Sie R zum Erstellen von Modellen für das maschinelle Lernen verwenden und wie Sie von [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server) profitieren können.
 
-Wie mit all diesen Dateien, öffnen Sie die Datei, setzen Sie den Cursor an den Anfang und gehen Sie dann Zeile für Zeile mit STRG+EINGABE durch den Code. Die Markdowndateien in jedem Ordner enthalten ebenfalls weitere Details.
+Öffnen Sie die Datei wie gewohnt, setzen Sie den Cursor an den Anfang, und durchlaufen Sie den Code dann Zeile für Zeile mit **STRG**+**EINGABETASTE**. Die Markdowndateien in jedem Ordner enthalten ebenfalls weitere Details.
 
 - `Benchmarks` führt eine Reihe intensiver, paralleler, linearer Algebraberechnungen aus, um die Leistungssteigerungen darzustellen, die mithilfe der Verwendung von Microsoft R Open und der Intel Math Kernel Library (MLK) ermöglicht werden. Mit simulierten Daten vergleichen die Benchmarks speziell Matrix Berechnungen in einem Thread im Vergleich zu zwei.
 
     ![Benchmark-Beispielzeichnung](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` erstellt ein Vorhersagemodell für die Nachfrage mithilfe von Microsoft R Server für Fahrradverleihe, die auf einem Satz von Verlaufsdaten basieren. 
+- `Bike_Rental_Estimation_with_MRS` erstellt ein Vorhersagemodell für die Nachfrage mithilfe von Microsoft ML Server für Fahrradverleihe, die auf Verlaufsdaten basieren. 
 
 - `Data_Exploration` enthält drei Skripts:
 
   - `Import Data from URL.R` zeigt, wie eine durch die URL identifizierte Datendatei in R geladen wird.
-  - `Import Data from URL to xdf.R` zeigt, wie Sie eine durch die URL identifizierte Datendatei als XDF in Microsoft R Server laden. (MRS erforderlich.)
+  - `Import Data from URL to xdf.R` zeigt, wie Sie eine durch die URL identifizierte Datendatei als XDF in Microsoft ML Server laden.
   - `Using ggplot2.R` ist eine Erweiterung des `A First Look at R/2-Introduction to ggplot2.R`-Beispiels, das Ihnen einen tieferen Einblick in die Funktionalität von „ggplot2.R“ bietet, einschließlich des interaktiven 3D-Zeichnens.
 
       ![Ausgabe eines „ggplot2.R“-Beispiels](media/samples-3d-interactive.png)
 
-- `Datasets` enthält drei `.csv`-Dateien, die von anderen Beispielen verwendet werden
+- `Datasets` enthält drei *CSV*-Dateien, die von anderen Beispielen verwendet werden.
 - `Flight_Delays_Prediction_with_R` und `Flight_Delays_Prediction_with_MRS` zeigen, wie Verspätungen bei Flügen mithilfe von R, des maschinellen Lernens sowie mithilfe der historischen Echtzeitleistung und Wetterdaten vorhergesagt werden. 
-- `Machine learning` enthält drei Beispiele für das Erlernen der Vorhersage von Flugverspätungen, Immobilienpreisen und Fahrradvermietungen. Zusammen veranschaulichen diese Beispiele die Anwendung von R und MRS auf reale Probleme. Es wird auch gezeigt, wie Sie mehrere beliebte Modelle für das maschinelle Lernen verwenden können und diese als Azure-Webdienst mithilfe eines [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/)-Arbeitsbereichs bereitstellen können.
+- `Machine learning` enthält drei Beispiele für das Erlernen der Vorhersage von Flugverspätungen, Immobilienpreisen und Fahrradvermietungen. Zusammen veranschaulichen diese Beispiele die Anwendung von R und Microsoft Machine Learning Server auf reale Probleme. Es wird auch gezeigt, wie Sie mehrere beliebte Modelle für das maschinelle Lernen verwenden können und diese als Azure-Webdienst mithilfe eines [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/)-Arbeitsbereichs bereitstellen können.
 
-- `R_MRO_MRS_Comparison` ist ein Vergleich mit sechs Teilen, der die Ähnlichkeiten und Unterschiede von R, Microsoft R Open und Microsoft R Server mit Befehlen, Syntax, Konstrukten und Leistung darstellt.
+- `R_MRO_MRS_Comparison` ist ein Vergleich mit sechs Teilen, der die Ähnlichkeiten und Unterschiede von R, Microsoft R Open und Microsoft ML Server mit Befehlen, Syntax, Konstrukten und Leistung darstellt.
 
-## <a name="whats-special-about-microsoft-r-open-and-microsoft-r-server"></a>Was ist so besonders an Microsoft R Open und Microsoft R Server?
+## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Was ist so besonders an Microsoft R Open und Microsoft ML Server?
 
 [Microsoft R Open](http://aka.ms/rtvs-r-open), die Verteilung von R von Microsoft, unterscheidet sich in zwei wichtigen Punkten von [CRAN R](https://cran.r-project.org/):
 
@@ -72,18 +73,18 @@ Wie mit all diesen Dateien, öffnen Sie die Datei, setzen Sie den Cursor an den 
 
 1. [Reproduzierbares R-Toolkit](https://mran.revolutionanalytics.com/rro/#reproducibility) stellt sicher, dass die Bibliotheken, die Sie zum Erstellen Ihres R-Programms verwendet haben, immer für andere Personen verfügbar sind, die Ihre Arbeit reproduzieren möchten.
 
-[Microsoft R Server](http://aka.ms/rtvs-msft-r) ist eine Erweiterung von R, mit der Sie mehr Daten schneller verarbeiten können. R enthält dadurch zwei leistungsstarke Funktionen:
+[Microsoft ML Server (MLS)](/machine-learning-server/what-is-machine-learning-server) ist eine Erweiterung von R, mit der Sie mehr Daten schneller verarbeiten können. R enthält dadurch zwei leistungsstarke Funktionen:
 
-1. Größere Datasets ohne RAM-Einschränkungen. MRS kann out-of-memory-Daten aus einer Vielzahl von Quellen verarbeiten, einschließlich Hadoop-Clustern, Datenbanken und Data Warehouses.
+1. Größere Datasets ohne RAM-Einschränkungen. ML Server kann out-of-memory-Daten aus einer Vielzahl von Quellen verarbeiten, einschließlich Hadoop-Clustern, -Datenbanken und -Data Warehouses.
 
-1. Parallele Mehrkernverarbeitung. MRS kann Berechnungen effektiv über alle verfügbaren Berechnungsressourcen verteilen. MRS erhält auf Ihrer persönlichen Arbeitsstation oder einem Remotecluster schneller eine Antwort.
+1. Parallele Mehrkernverarbeitung. MLS kann Berechnungen effektiv über alle verfügbaren Berechnungsressourcen verteilen. MLS erhält auf Ihrer persönlichen Arbeitsstation oder einem Remotecluster schneller eine Antwort.
 
-Der folgende Vergleich zeigt, dass MRS und MRO mit MKL eine weitaus bessere Berechnungsleistung im Zusammenhang mit bestimmten Matrixberechnungen im Vergleich zu R und MRO ohne MKL haben. In dieser Berechnung werden simulierte Daten verwendet:
+Der folgende Vergleich zeigt, dass MLS und MRO mit MKL eine weitaus bessere Berechnungsleistung im Zusammenhang mit bestimmten Matrixberechnungen im Vergleich zu R und MRO ohne MKL haben. In dieser Berechnung werden simulierte Daten verwendet:
 
-![Vergleich von MRS und MRO mit MKL zu R und MRO ohne MKL](media/samples-speed-comparison.png)
+![Vergleich von MLS und MRO mit MKL zu R und MRO ohne MKL](media/samples-speed-comparison.png)
 
-Einen technischen Vergleich von R mit MRO und MRS finden Sie in der [detaillierten Diskussion von Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) zu diesem Thema.
+Einen technischen Vergleich von R mit MRO und MLS finden Sie in der [detaillierten Diskussion von Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) zu diesem Thema.
 
-In der folgenden Abbildung wird dann die verstrichene Zeit in Sekunden verglichen, die zum Erstellen von logistischen Regressionsmodellen verwendet wird, um Flugverspätungen von mehr als 15 Minuten vorherzusagen.  Die verstrichene Zeit, die in CRAN R verwendet wird, erhöht sich signifikant, wenn eine niedrige Anzahl von Zeilen erhöht wird, während MRS nur etwa zweimal erhöht wird. Informationen zu diesem Benchmark finden Sie im `Benchmarks/rxGlm_benchmark.R`-Beispiel.
+In der folgenden Abbildung wird dann die verstrichene Zeit in Sekunden verglichen, die zum Erstellen von logistischen Regressionsmodellen verwendet wird, um Flugverspätungen von mehr als 15 Minuten vorherzusagen.  Die verstrichene Zeit, die in CRAN R verwendet wird, erhöht sich signifikant, wenn eine niedrige Anzahl von Zeilen erhöht wird, während MLS nur etwa zweimal erhöht wird. Weitere Informationen zu diesem Benchmark finden Sie im Beispiel *Benchmarks/rxGlm_benchmark.R*.
 
 ![„rxGlm“-Benchmark](media/samples-rxGLM-benchmark.png)

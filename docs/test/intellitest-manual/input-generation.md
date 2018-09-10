@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977776"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511651"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
 IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert. Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können. Die Analyse ist ein inkrementeller Prozess. Er verfeinert das Prädikat **q: I -> {true, false}** mit den formellen Eingabeparametern des Tests **l**. **q** steht für die Verhalten, die IntelliTest bereits beobachtet hat. Zunächst ist dies **q := false**, weil noch nichts beobachtet wurde.
 
@@ -72,7 +72,7 @@ Der [Einschränkungs-Solver](#constraint-solver) von IntelliTest bestimmt Testei
 IntelliTest kann entweder [Instanzen vorhandener .NET-Klassen erstellen](#existing-classes), oder Sie können IntelliTest verwenden, um automatisch [Pseudoobjekte zu erstellen](#parameterized-mocks), die eine spezifische Schnittstelle implementieren und sich je nach Verwendung anders verhalten.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Instanziieren vorhandener Klassen
+## <a name="instantiate-existing-classes"></a>Instanziieren vorhandener Klassen
 
 **Wo liegt das Problem?**
 
@@ -113,7 +113,7 @@ Die konventionelle Antwort ist das Verwenden von *Pseudoobjekten* mit explizitem
 
 Ein Pseudoobjekt implementiert eine Schnittstelle (oder weitet eine nicht versiegelte Klasse aus). Dies stellt keine tatsächliche Implementierung dar, sondern ist nur eine Verknüpfung, die die Ausführung von Tests mit dem Pseudoobjekt ermöglicht. Sein Verhalten wird manuell im Rahmen jedes Testfalls definiert, in dem es zum Einsatz kommt. Es gibt viele Tools, die das Definieren eines Pseusoobjekts und dessen erwarteten Verhaltens erleichtern. Dennoch muss dieses Verhalten manuell definiert werden.
 
-Statt hart codierter Werte in Pseudoobjekten kann IntelliTest die Werte erzeugen. Genauso wie es [parametrisierte Unittests](test-generation.md#parameterized-unit-testing) ermöglicht, ermöglicht IntelliTest auch parametrisierte Pseudoobjekte.
+Statt hart codierter Werte in Pseudoobjekten kann IntelliTest die Werte erzeugen. Neben [parametrisierten Unittests](test-generation.md#parameterized-unit-testing) ermöglicht IntelliTest auch parametrisierte Pseudoobjekte.
 
 Parametrisierte Pseudoobjekte haben zwei verschiedene Ausführungsmodi:
 
@@ -135,7 +135,7 @@ IntelliTest überwacht die ausgeführten Anweisungen, wenn es einen Test und das
 IntelliTest versucht, die Größe der Arrays und der Zeichenfolgen zu senken, die benötigt werden, um interessantes Programmverhalten auszulösen.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Abrufen von zusätzlichen Eingaben
+## <a name="obtain-additional-inputs"></a>Abrufen zusätzlicher Eingaben
 
 Die statische Klasse [PexChoose](static-helper-classes.md#pexchoose) kann verwendet werden, um zusätzliche Eingaben für einen Test abzurufen. Zudem kann sie verwendet werden, um [parametrisierte Pseudoobjekte](#parameterized-mocks) zu implementieren.
 

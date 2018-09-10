@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Deaktivieren der Rückgängig-Stapel | Microsoft Docs'
+title: 'Vorgehensweise: deaktivieren den Rückgängig-Stapel | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126502"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639470"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Vorgehensweise: Deaktivieren der Rückgängig-Stapel
-Die folgende Prozedur unter wird erläutert, wie die Rückgängig-Stapel gelöscht.  
+# <a name="how-to-clear-the-undo-stack"></a>Gewusst wie: deaktivieren den Rückgängig-Stapel
+Das folgende Verfahren unten wird erläutert, wie den Rückgängigstapel.  
   
-### <a name="to-clear-the-undo-stack"></a>So löschen Sie die Rückgängig-Stapel  
+## <a name="to-clear-the-undo-stack"></a>Auf den Rückgängigstapel.  
   
-1.  So löschen Sie die Verwendung der Rückgängig-Stapel der [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) Methode. Im folgenden finden ein Beispiel dafür:  
+1.  Löschen Sie die Verwendung der Rückgängig-Stapel der [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) Methode. Im folgenden finden ein Beispiel hierfür:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -46,4 +46,4 @@ Die folgende Prozedur unter wird erläutert, wie die Rückgängig-Stapel gelösc
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Implementieren von Rückgängig-Management](../extensibility/how-to-implement-undo-management.md)
+ [Gewusst wie: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md)

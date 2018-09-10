@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572503"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178561"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mit dem [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Element. Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.  
@@ -73,7 +73,7 @@ ms.locfileid: "31572503"
   
 -   Umgebungsvariable  
   
--   Globale Eigenschaft \(von der MSBuild.exe-Befehlszeile\)  
+-   Globale Eigenschaft (aus der *MSBuild.exe*-Befehlszeile)  
   
 -   Reservierte Eigenschaft  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31572503"
   
 -   Die letzte Spezifikation hat Vorrang.  
   
- Wenn Sie über mehrere ItemDefinitionGroups verfügen, werden die Metadaten jeder folgenden Spezifikation der vorhergehenden Definition hinzugefügt. Zum Beispiel:  
+Wenn Sie über mehrere ItemDefinitionGroups verfügen, werden die Metadaten jeder folgenden Spezifikation der vorhergehenden Definition hinzugefügt. Zum Beispiel:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -107,9 +107,9 @@ ms.locfileid: "31572503"
 </ItemDefinitionGroup>  
 ```  
   
- In diesem Beispiel werden die Metadaten"o" zu "m" und "n" hinzugefügt.  
+In diesem Beispiel werden die Metadaten"o" zu "m" und "n" hinzugefügt.  
   
- Darüber hinaus können auch bereits definierte Metadatenwerte hinzugefügt werden. Zum Beispiel:  
+Darüber hinaus können auch bereits definierte Metadatenwerte hinzugefügt werden. Zum Beispiel:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -124,12 +124,12 @@ ms.locfileid: "31572503"
 </ItemDefinitionGroup>    
 ```  
   
- In diesem Beispiel wird der bereits definierte Wert für die Metadaten „m“ \(m1\) dem neuen Wert \(m2\) hinzugefügt, sodass der Endwert „m1;m2“ lautet.  
+In diesem Beispiel wird der bereits definierte Wert für die Metadaten „m“ \(m1\) dem neuen Wert \(m2\) hinzugefügt, sodass der Endwert „m1;m2“ lautet.  
   
 > [!NOTE]
 >  Dies kann auch im gleichen ItemDefinitionGroup auftreten.  
   
- Wenn Sie die bereits definierten Metadaten überschreiben, hat die letzte Spezifikation Vorrang. Im folgenden Beispiel ändert sich der endgültige Wert der Metadaten "m" von "m1" in "m1a".  
+Wenn Sie die bereits definierten Metadaten überschreiben, hat die letzte Spezifikation Vorrang. Im folgenden Beispiel ändert sich der endgültige Wert der Metadaten "m" von "m1" in "m1a".  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -144,7 +144,7 @@ ms.locfileid: "31572503"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Verwenden von Bedingungen in ItemDefinitionGroup  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Verwenden von Bedingungen in ItemDefinitionGroup  
  Sie können Bedingungen in ItemDefinitionGroup verwenden, um das Einschließen von Metadaten zu steuern. Zum Beispiel:  
   
 ```xml  
@@ -155,12 +155,12 @@ ms.locfileid: "31572503"
 </ItemDefinitionGroup>  
 ```  
   
- In diesem Fall werden die Standardmetadaten "m1" für Element "i" nur dann eingeschlossen, wenn der Wert der "Configuration"-Eigenschaft "Debug" lautet.  
+In diesem Fall werden die Standardmetadaten "m1" für Element "i" nur dann eingeschlossen, wenn der Wert der "Configuration"-Eigenschaft "Debug" lautet.  
   
 > [!NOTE]
 >  In Bedingungen werden nur lokale Metadatenverweise unterstützt.  
   
- Verweise auf Metadaten, die in einem früheren ItemDefinitionGroup definiert sind, sind für das Element lokal, nicht für die Definitionsgruppe. Das heißt, der Umfang der Verweise ist elementspezifisch. Zum Beispiel:  
+Verweise auf Metadaten, die in einem früheren ItemDefinitionGroup definiert sind, sind für das Element lokal, nicht für die Definitionsgruppe. Das heißt, der Umfang der Verweise ist elementspezifisch. Zum Beispiel:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -190,7 +190,7 @@ Im obigen Beispiel verweist Element „i“ auf das Element „test“ in seiner
 
 Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Bedingung auf den Metadatenwert des Elements „i“ für Element „yes“ verweist. 
   
-## <a name="overriding-and-deleting-metadata"></a>Überschreiben und Löschen von Metadaten  
+## <a name="override-and-delete-metadata"></a>Außerkraftsetzen und Löschen von Metadaten  
  In einem ItemDefinitionGroup-Element definierte Metadaten können in einem späteren ItemDefinitionGroup-Element überschrieben werden, indem der Metadatenwert leer gelassen wird. Sie können ein Metadatenelement auch löschen, indem Sie es auf einen leeren Wert festlegen. Zum Beispiel:  
   
 ```xml  
@@ -206,10 +206,10 @@ Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Beding
 </ItemDefinitionGroup>  
 ```  
   
- Das Element "i" enthält immer noch die Metadaten "m", sein Wert ist jetzt jedoch leer.  
+Das Element "i" enthält immer noch die Metadaten "m", sein Wert ist jetzt jedoch leer.  
   
 ## <a name="scope-of-metadata"></a>Umfang der Metadaten  
- ItemDefinitionGroup weist einen globalen Gültigkeitsbereich für definierte und globale Eigenschaften auf, unabhängig davon, wo sie definiert sind. Standardmäßige Metadatendefinitionen in einer ItemDefinitionGroup können auf sich selbst verweisen. Nachfolgend wird beispielsweise ein einfacher Metadatenverweis verwendet:  
+ ItemDefinitionGroup weist einen globalen Gültigkeitsbereich für definierte und globale Eigenschaften auf, unabhängig davon, wo sie definiert sind. Standardmäßige Metadatendefinitionen in ItemDefinitionGroup können auf sich selbst verweisen. Nachfolgend wird beispielsweise ein einfacher Metadatenverweis verwendet:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -220,7 +220,7 @@ Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Beding
 </ItemDefinitionGroup>  
 ```  
   
- Es kann auch ein qualifizierter Metadatenverweis verwendet werden:  
+Es kann auch ein qualifizierter Metadatenverweis verwendet werden:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -231,7 +231,7 @@ Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Beding
 </ItemDefinitionGroup>  
 ```  
   
- Folgendes ist jedoch nicht gültig:  
+Folgendes ist jedoch nicht gültig:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +242,7 @@ Im Beispiel oben würde für „m“ der Wert „m1“ festgelegt, da die Beding
 </ItemDefinitionGroup>  
 ```  
   
- Ab [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 können ItemGroups auch auf sich selbst verweisen. Zum Beispiel:  
+Ab [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 kann ItemGroup auch auf sich selbst verweisen. Zum Beispiel:  
   
 ```xml  
 <ItemGroup>  

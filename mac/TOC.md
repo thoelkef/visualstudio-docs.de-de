@@ -1,5 +1,4 @@
-# [Introducing Visual Studio for Mac (Einführung in Visual Studio für Mac)](index.md)
-## [Benefits of Visual Studio for Mac over Xamarin Studio (Vorteile von Visual Studio für Mac gegenüber Xamarin Studio)](benefits-vsmac-over-xs.md)
+# [Einführung in Visual Studio für Mac](index.md)
 # [IDE Tour (IDE-Tour)](ide-tour.md)
 
 # [Installation](installation.md)
@@ -22,6 +21,7 @@
 ## [Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md)
 ### [Walkthrough - Including a NuGet package in your project (Exemplarische Vorgehensweise: Einschließen eines NuGet-Pakets in Ihr Projekt)](nuget-walkthrough.md)
 ## [Managing App Resources (Verwalten von App-Ressourcen)](managing-app-resources.md)
+## [Vorgehensweise: Öffnen mehrerer Projektmappen oder Instanzen](open-multiple-solutions.md)
 
 # [Source Editor (Quellcode-Editor)](source-editor.md)
 ## [Refactoring](refactoring.md)
@@ -62,6 +62,8 @@
 ## [Unity Game Development (Spieleentwicklung mit Unity)](unity-tools.md)
 ### [Setup (Einrichtung)](setup-vsmac-tools-unity.md)
 ### [Using Unity Tools (Verwenden von Unity-Tools)](using-vsmac-tools-unity.md)
+### [Verwenden von .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Barrierefreiheit](accessibility.md)
 

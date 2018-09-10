@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918140"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890356"
 ---
 # <a name="display-data-in-blend"></a>Anzeigen von Daten in Blend
 
-Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupassen. Sie können Beispieldaten von Grund auf neu oder mithilfe einer vorhandenen Klasse generieren. Sie können sich auch mit *Livedaten* verbinden, die in Ihrer Anwendung angezeigt werden, wenn Sie es ausführen.
+Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupassen. Sie können Beispieldaten von Grund auf neu oder mithilfe einer vorhandenen Klasse generieren. Sie können sich auch mit *Livedaten* verbinden, die beim Ausführen der Anwendung angezeigt werden.
 
 ## <a name="generate-sample-data"></a>Generieren von Beispieldaten
 
@@ -51,7 +51,7 @@ Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreibe
 
 **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Erstellen einer XML-Datenquelle](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Anzeigen von Live-Daten in einem Store oder einer Telefonanwendung
+## <a name="show-live-data-in-a-store-or-phone-app"></a>Anzeigen von Livedaten in einem Store oder einer Phone-App
 
 Weitere Informationen finden Sie unter [Arbeiten mit Daten und Dateien (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
 

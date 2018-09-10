@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513619"
 ---
-# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem VSTO-Add-In
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-the-vsto-add-in-project"></a>Erstellen des VSTO-Add-In-Projekts  
+## <a name="create-the-vsto-add-in-project"></a>Erstellen Sie das VSTO-Add-in-Projekt  
  Der erste Schritt ist das Erstellen eines VSTO-Add-In-Projekts für Excel.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
 1.  Erstellen Sie ein VSTO-Add-In-Projekt für Excel namens **ExcelImportData**, indem Sie die Excel-VSTO-Add-In-Projektvorlage verwenden. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das **ExcelImportData** -Projekt dem **Projektmappen-Explorer**hinzu.  
   
-## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Definieren einer Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
+## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definieren Sie eine Klasse, die Sie verfügbar machen können, für andere Office-Projektmappen  
  Der Zweck dieser exemplarischen Vorgehensweise besteht im Aufrufen der `ImportData` -Methode einer Klasse mit dem Namen `AddInUtilities` in Ihrem VSTO-Add-In aus VBA-Code. Mit dieser Methode wird eine Zeichenfolge in die Zelle A1 des aktiven Arbeitsblatts geschrieben.  
   
- Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, müssen Sie die Klasse öffentlich und für COM sichtbar machen. Außerdem müssen Sie die [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) -Schnittstelle in der Klasse verfügbar machen. Mit dem Code in der folgenden Prozedur wird eine Möglichkeit zum Erfüllen dieser Anforderungen veranschaulicht. Weitere Informationen finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, müssen Sie die Klasse öffentlich und für COM sichtbar machen. Sie müssen auch verfügbar machen die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) Schnittstelle in der Klasse. Mit dem Code in der folgenden Prozedur wird eine Möglichkeit zum Erfüllen dieser Anforderungen veranschaulicht. Weitere Informationen finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>So definieren Sie eine Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
+### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>So definieren Sie eine Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
   
 1.  Klicken Sie im Menü **Projekt** auf **Klasse hinzufügen**.  
   
@@ -83,12 +84,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     Mit diesem Code wird die `AddInUtilities` -Klasse für COM sichtbar, und die `ImportData` -Methode wird der Klasse hinzugefügt. Zum Verfügbarmachen der [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) -Schnittstelle verfügt die `AddInUtilities` -Klasse auch über das <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut und implementiert eine Schnittstelle, die für COM sichtbar ist.  
+     Mit diesem Code wird die `AddInUtilities` -Klasse für COM sichtbar, und die `ImportData` -Methode wird der Klasse hinzugefügt. Um verfügbar zu machen die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle, die `AddInUtilities` -Klasse verfügt auch über die <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut und implementiert eine Schnittstelle, die für COM sichtbar ist  
   
-## <a name="exposing-the-class-to-other-office-solutions"></a>Verfügbarmachen der Klasse für andere Office-Projektmappen  
+## <a name="expose-the-class-to-other-office-solutions"></a>Machen Sie die Klasse für andere Office-Projektmappen  
  Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, setzen Sie die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode in der `ThisAddIn` -Klasse außer Kraft. Geben Sie bei der Außerkraftsetzung eine Instanz der `AddInUtilities` -Klasse zurück.  
   
-#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>So machen Sie die AddInUtilities-Klasse für andere Office-Projektmappen verfügbar  
+### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>So machen Sie die AddInUtilities-Klasse für andere Office-Projektmappen verfügbar  
   
 1.  Erweitern Sie im **Projektmappen-Explorer**die Option **Excel**.  
   
@@ -103,19 +104,19 @@ ms.lasthandoff: 04/16/2018
   
      Überprüfen Sie, ob die Lösung ohne Fehler erstellt wurde.  
   
-## <a name="testing-the-vsto-add-in"></a>Testen des VSTO-Add-Ins  
- Sie können die `AddInUtilities` -Klasse aus unterschiedlichen Arten von Office-Projektmappen aufrufen. In dieser exemplarischen Vorgehensweise verwenden Sie VBA-Code in einer Excel-Arbeitsmappe. Weitere Informationen zu anderen Typen von Office-Projektmappen, die Sie ebenfalls verwenden können, finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+## <a name="test-the-vsto-add-in"></a>Testen Sie das VSTO-Add-in  
+ Sie können die `AddInUtilities` -Klasse aus unterschiedlichen Arten von Office-Projektmappen aufrufen. In dieser exemplarischen Vorgehensweise verwenden Sie VBA-Code in einer Excel-Arbeitsmappe. Weitere Informationen zu anderen Typen von Office-Projektmappen können Sie auch verwenden, finden Sie unter [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-test-your-vsto-add-in"></a>So testen Sie Ihr VSTO-Add-In  
+### <a name="to-test-your-vsto-add-in"></a>So testen Sie Ihr VSTO-Add-In  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um Ihr Projekt auszuführen.  
   
 2.  Speichern Sie in Excel die aktive Arbeitsmappe als Excel-Arbeitsmappe mit Makros (*.xlsm). Speichern Sie sie an einem geeigneten Speicherort, z. B. auf dem Desktop.  
   
 3.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
   
     > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Klicken Sie in der Gruppe **Code** auf **Visual Basic**.  
   
@@ -125,9 +126,9 @@ ms.lasthandoff: 04/16/2018
   
      Die Codedatei für das `ThisWorkbook` -Objekt wird geöffnet.  
   
-6.  Fügen Sie der Codedatei den folgenden VBA-Code hinzu. Mit diesem Code wird zuerst ein COMAddIn-Objekt, das stellt die **ExcelImportData** VSTO-Add-in. Anschließend verwendet der Code die Objekteigenschaft des COMAddIn-Objekts aufrufen, die `ImportData` Methode.  
+6.  Fügen Sie der Codedatei den folgenden VBA-Code hinzu. Dieser Code wird zuerst eine COMAddIn-Objekt, das die **ExcelImportData** VSTO-Add-in. Anschließend verwendet der Code die Objekt-Eigenschaft des Objekts COMAddIn zum Aufrufen der `ImportData` Methode.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim addIn As COMAddIn  
         Dim automationObject As Object  
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-7.  Drücken Sie F5.  
+7.  Drücken Sie **F5**.  
   
 8.  Überprüfen Sie, ob der Arbeitsmappe ein neues Arbeitsblatt mit dem Namen **Imported Data** hinzugefügt wurde. Überprüfen Sie auch, ob die Zelle A1 die Zeichenfolge **This is my data**enthält.  
   
@@ -146,17 +147,17 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Nächste Schritte  
  In den folgenden Themen erhalten Sie weitere Informationen zum Programmieren von VSTO-Add-Ins:  
   
--   Verwenden Sie die `ThisAddIn` -Klasse zum Automatisieren der Hostanwendung und zum Durchführen anderer Aufgaben in VSTO-Add-In-Projekten. Weitere Informationen finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Verwenden Sie die `ThisAddIn` -Klasse zum Automatisieren der Hostanwendung und zum Durchführen anderer Aufgaben in VSTO-Add-In-Projekten. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Erstellen Sie einen benutzerdefinierten Aufgabenbereich in einem VSTO-Add-In. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md) und [wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   Erstellen Sie einen benutzerdefinierten Aufgabenbereich in einem VSTO-Add-In. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md) und [Vorgehensweise: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Passen Sie das Menüband in einem VSTO-Add-In an. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md) und [wie: Erste Schritte beim, Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Anpassen des Menübands in einem VSTO-Add-in. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md) und [wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

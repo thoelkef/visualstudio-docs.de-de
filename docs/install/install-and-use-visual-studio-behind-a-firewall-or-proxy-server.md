@@ -2,7 +2,7 @@
 title: Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver | Microsoft-Dokumentation
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Whitelist setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765667"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138421"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -49,7 +49,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 | download.visualstudio.com | Einrichten des Speicherorts für den Paketdownload |
 | dl.xamarin.com | Einrichten des Speicherorts für den Paketdownload |
 | visualstudiogallery.msdn.microsoft.com | Speicherort des Downloads der Visual Studio-Erweiterungen |
-| www.visualstudio.com | Speicherort der Dokumentation |
+| visualstudio.microsoft.com | Speicherort der Dokumentation |
 | docs.microsoft.com | Speicherort der Dokumentation |
 | msdn.microsoft.com | Speicherort der Dokumentation |
 | www.microsoft.com | Speicherort der Dokumentation |
@@ -80,7 +80,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 
 Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Whitelist aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
-| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | description |
+| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung  |
 | --- | --- | --- | --- | --- |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | |Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden.
 | Startseite | vsstartpage.blob.core.windows.net | | 443| Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite in Visual Studio. |
@@ -118,7 +118,8 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Momentaufnahme <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
-|Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
+| Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Wird zum Herstellen einer Verbindung mit VSTS verwendet |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Behandlung netzwerkbezogener Fehler
@@ -127,12 +128,14 @@ Gelegentlich kann es zu netzwerk- oder proxybezogenen Fehlern kommen, wenn Sie V
 
 ## <a name="get-support"></a>Support aufrufen
 
+Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous) (nur auf Englisch) als Supportoption angeboten.
+
 Hier sind einige weitere Supportoptionen:
 
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+* Sie können Ihr [GitHub](https://github.com/)-Konto verwenden, um über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufzunehmen.
 
 ## <a name="see-also"></a>Siehe auch
 

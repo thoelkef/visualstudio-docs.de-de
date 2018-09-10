@@ -1,5 +1,5 @@
 ---
-title: VSPackage-Struktur (Quelle Steuerelement VSPackage) | Microsoft Docs
+title: VSPackage-Struktur (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,67 +14,68 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13b811b504259bf10440419b3cb4029a4c239c5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d36e31db9c47325e62fe759cd5030c5f24fb73be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142788"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057617"
 ---
-# <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quelle Steuerelement VSPackage)
-Das Source Control Paket-SDK bietet Richtlinien zum Erstellen eines VSPackages, ermöglichen eine Quelle Steuerelement Implementierer sein eigenes Quellcodeverwaltungsfunktion mit Integration der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung. Ein VSPackage ist eine COM-Komponente, die in der Regel bei Bedarf durch geladen wird die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) auf Grundlage der Dienste, die vom Paket in die Registrierungseinträge angekündigt werden. Jedes VSPackage implementieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Eine VSPackage in der Regel-Diensten nutzt die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE und proffers einige Dienste selbst.  
-  
- Eine VSPackage die Menüelemente deklariert und richtet Standardstatus Element über die VSCT-Datei ein. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zeigt IDE Menüelemente in diesem Zustand, bis das VSPackage geladen wurde. Anschließend kann die VSPackage Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode wird aufgerufen, um zu aktivieren oder Deaktivieren von Menüelementen.  
-  
-## <a name="source-control-package-characteristics"></a>Datenquellen-Steuerelement Paketmerkmale  
- Ein VSPackage ist tief in integriert Quellcodeverwaltungs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- Die VSPackage-Semantik gehören:  
-  
--   Schnittstelle, die implementiert werden, durch ein VSPackage wird (die `IVsPackage` Schnittstelle)  
-  
--   Implementierung von UI-Befehl (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)  
-  
--   Registrierung des VSPackage mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- Die Datenquellen-Steuerelements VSPackage muss kommunizieren mit diesen anderen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Entitäten:  
-  
--   Projekte  
-  
--   Editoren  
-  
--   Projektmappen  
-  
--   Windows  
-  
--   Die Dokumenttabelle der ausgeführten  
-  
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio-Umgebung-Dienste, die genutzt werden kann  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
-  
- SVsRegisterScciProvider-Dienst  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>  
-  
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP-Schnittstellen implementiert und wird aufgerufen  
- Ein Steuerelement Source-Paket ist ein VSPackage und aus diesem Grund können Sie sich direkt mit anderen VSPackages, die registriert werden interagieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Um die volle Bandbreite der Quellcodeverwaltungsfunktion zu gewährleisten, kann ein Datenquellen-Steuerelement von Projekten oder in der Befehlsshell bereitgestellten Schnittstellen VSPackage behandeln.  
-  
- Jedes Projekt in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementieren müssen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> als in-Projekt erkannt werden die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Diese Schnittstelle ist jedoch nicht speziell hoch genug für die Datenquellen-Steuerelements. Projekte, die unter der Quelle werden erwartet werden steuern, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Diese Schnittstelle wird durch die quellcodeverwaltung VSPackage verwendet, um ein Projekt für ihre Inhalte abzufragen und um die Authentifizierungsfunktionalität bereitzustellen, Symbole und Bindungsinformationen (die benötigten Informationen zum Herstellen einer Verbindungs zwischen den Standort des Servers und eines Projekts, die unter dem Speicherort des Datenträgers Datenquellen-Steuerelement).  
-  
- Die Datenquellen-Steuerelements, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, wodurch wiederum Projekte, registrieren sich für die quellcodeverwaltung und ihren Status Symbole abzurufen.  
-  
- Eine vollständige Liste der Schnittstellen, die ein Datenquellen-Steuerelement VSPackage berücksichtigen müssen, finden Sie unter [verknüpften Diensten und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)   
- [Verknüpfte Dienste und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
+# <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quellcodeverwaltungs-VSPackage)
+
+Die Source-Steuerelement-Paket-SDK bietet Richtlinien zum Erstellen von einer VSPackages, die eine Quelle Steuerelement Implementierer seine Quellcodeverwaltungsfunktionen in Visual Studio-Umgebung integrieren können. Ein VSPackage ist eine COM-Komponente, die in der Regel geladen wird bei Bedarf von der Visual Studio integrierten Entwicklungsumgebung (IDE) basierend auf den Diensten, die von das Paket in seine Registrierungseinträge vorgenommen angekündigt werden. Jedes VSPackage implementieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Eine VSPackage in der Regel nutzt Dienste, die von Visual Studio-IDE und einige eigene-Dienste anbietet.
+
+Eine VSPackage deklariert seine Menüelemente und richtet einen Standardzustand des Elements über der VSCT-Datei ein. Visual Studio-IDE zeigt die Menüelemente in diesem Zustand, bis das VSPackage geladen wird. Anschließend kann die VSPackage Implementierung von der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> aufgerufen, um aktivieren oder Deaktivieren von Menüelementen.
+
+## <a name="source-control-package-characteristics"></a>Source-Paket Eigenschaften
+
+Ein Quellcodeverwaltungs-VSPackage ist umfassend in Visual Studio integriert. Die VSPackage-Semantik gehören:
+
+-   Schnittstelle, die aufgrund ihrer Zugehörigkeit zu einem VSPackage implementiert werden (die `IVsPackage` Schnittstelle)
+
+-   Benutzeroberfläche-Implementierung (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)
+
+-   Die Registrierung des VSPackage in Visual Studio.
+
+Das Datenquellen-Steuerelement muss VSPackage mit diesen anderen Visual Studio-Entitäten kommunizieren:
+
+-   Projekte
+
+-   Editoren
+
+-   Projektmappen
+
+-   Windows
+
+-   Die aktive Dokumenttabelle
+
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio-Umgebung-Dienste, die genutzt werden kann
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
+
+SVsRegisterScciProvider-Dienst
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
+
+### <a name="vsip-interfaces-implemented-and-called"></a>VSIP-Schnittstellen implementiert und wird aufgerufen
+
+Ein Quellcodeverwaltungspaket ist ein VSPackage, und es kann daher interagieren direkt mit anderen VSPackages, die mit Visual Studio registriert sind. Um die gesamte Bandbreite der quellcodeverwaltung zu gewährleisten, kann ein Datenquellen-Steuerelement Projekte oder die Shell bereitgestellten Schnittstellen für VSPackage behandeln.
+
+Jedes Projekt in Visual Studio muss implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> , als ein Projekt in Visual Studio-IDE erkannt werden soll. Diese Schnittstelle ist jedoch nicht spezialisiert genug für die quellcodeverwaltung. Projekte, die als quellcodeverwaltung werden steuern, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Diese Schnittstelle wird durch das Quellcodeverwaltungs-VSPackage verwendet, zum Abfragen von ein Projekt für deren Inhalte und Symbole und Bindungsinformationen (die erforderlichen Informationen zum Herstellen einer Verbindung zwischen den Serverstandort und den Speicherort eines Projekts, die unter Bereitstellen Datenquellen-Steuerelement).
+
+Das Datenquellen-Steuerelement, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, wodurch wiederum ermöglicht Projekten, registrieren sich für die quellcodeverwaltung und deren Status Symbole abrufen.
+
+Eine vollständige Liste der Schnittstellen, die ein Quellcodeverwaltungs-VSPackage berücksichtigen müssen, finden Sie unter [Verwandte Dienste und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)
+- [Verwandte Dienste und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

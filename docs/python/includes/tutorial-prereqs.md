@@ -1,10 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 92ef535c9f0f1110308cb287132a6d4180066238
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3da5e4b88a9d01354cc1c793d46f91d8f15439f1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513584"
 ---
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 

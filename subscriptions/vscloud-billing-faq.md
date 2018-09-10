@@ -9,15 +9,16 @@ description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957131"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303321"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
-Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://www.visualstudio.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
+
+Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
 
 ## <a name="general-purchasing-questions"></a>Allgemeine Fragen zum Kauf
 
@@ -30,17 +31,19 @@ A: Fast alle Azure-Abonnements können verwendet werden. Es werden Azure-Abonnem
 Sie können lediglich die [kostenlose Azure-Testversion](https://azure.microsoft.com/pricing/free-trial/) nicht verwenden.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>F: Muss ich andere Azure-Dienste kaufen?
-A: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen möchten, können Sie dies tun. 
+A: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen möchten, können Sie dies tun.
 
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise Agreement-Kunden
 
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>F: Kann ich Enterprise Agreement verwenden, um Visual Studio-Cloudabonnements zu verwenden?
 
-A: Ja, das ist möglich. Sie müssen Besitzer oder Mitwirkender des Azure-Abonnements sein, das für Enterprise Agreement erstellt wurde. Stellen Sie sicher, dass Sie Käufe für Visual Studio-Cloudabonnements direkt im Visual Studio Marketplace durchführen. Sie können Visual Studio-Cloudabonnements nicht mithilfe einer Bestellung kaufen. 
+A: Ja, das ist möglich. Sie müssen Besitzer oder Mitwirkender des Azure-Abonnements sein, das für Enterprise Agreement erstellt wurde. Stellen Sie sicher, dass Sie Käufe für Visual Studio-Cloudabonnements direkt im Visual Studio Marketplace durchführen. Sie können Visual Studio-Cloudabonnements nicht mithilfe einer Bestellung kaufen.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>F: Wie kann ich herausfinden, ob ich über die erforderlichen Berechtigungen verfüge, um Dienste im Visual Studio Marketplace über Enterprise Agreement zu kaufen?
 
-A: Sie können am einfachsten feststellen, ob Sie über die erforderlichen Berechtigungen verfügen, indem Sie bei einem Dienst im Visual Studio Marketplace auf **Kaufen** klicken. Sie müssen ein Azure-Abonnement (also ein Rechnungskonto) aus der angezeigten Liste der Azure-Abonnements auswählen, die derzeit mit Ihrem Konto verknüpft sind. Da der Name des Azure-Abonnements standardmäßig der Art des Rechnungskontos (Nutzungsbasierte Bezahlung, Enterprise Agreement usw.) entspricht, ist oft eindeutig, ob das Azure-Abonnement Teil von Enterprise Agreement ist.
+A: Sie können am einfachsten feststellen, ob Sie über die erforderlichen Berechtigungen verfügen, indem Sie bei einem Dienst im Visual Studio Marketplace auf **Kaufen** klicken.
+Sie müssen ein Azure-Abonnement (also ein Rechnungskonto) aus der angezeigten Liste der Azure-Abonnements auswählen, die derzeit mit Ihrem Konto verknüpft sind.
+Da der Name des Azure-Abonnements standardmäßig der Art des Rechnungskontos (Nutzungsbasierte Bezahlung, Enterprise Agreement usw.) entspricht, ist oft eindeutig, ob das Azure-Abonnement Teil von Enterprise Agreement ist.
 
 Ein weiterer Ansatz besteht darin, das [Azure Enterprise Portal](http://ea.azure.com) zu besuchen.  Wenn Sie dieses erfolgreich aufrufen können, besitzen Sie entweder die Rolle „Unternehmensadministrator“ oder „Kontobesitzer“. Nur Kontobesitzer können neue Azure-Rechnungskonten in Enterprise Agreement einrichten. Wenn Sie auf das Azure Enterprise Portal nicht zugreifen können, finden Sie heraus, wer der Unternehmensadministrator Ihrer Organisation ist. Bitten Sie diese Person anschließend darum, Sie als Kontobesitzer im Azure Enterprise Portal hinzuzufügen.  Wenn Sie diese Person nicht finden können, können Sie ein [Supportticket übermitteln](http://aka.ms/AzureEntSupport) und die Kontaktinformationen anfordern.  Sie benötigen den Namen Ihrer Organisation und Ihre Enterprise Agreement-Registrierungsnummer für das Supportticket.
 
@@ -51,15 +54,17 @@ A: Nein, diese im Voraus bezahlten Beträge können nicht zum Kaufen von Visual 
 ## <a name="how-charges-are-processed"></a>Verarbeitung von Gebühren
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>F: Wie werden **monatliche** Gebühren für Cloudabonnements verarbeitet?
-A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 50 % des Monats verbleiben (15 Tage eines Monats mit 30 Tagen). Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
+A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 50 % des Monats verbleiben (15 Tage eines Monats mit 30 Tagen).
+Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
 
-Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai). 
+Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>F: Wie werden **jährliche** Gebühren für Cloudabonnements verarbeitet?
 A: Bei jedem Kauf wird die vollständige Menge sofort in Rechnung gestellt. Die Gebühren werden nicht über das Jahr verteilt, und es erfolgt keine anteilige Berechnung. Wenn Sie jährliche Cloudabonnements zu unterschiedlichen Zeitpunkten im Jahr kaufen, werden die Abonnements in unterschiedlichen Monaten verlängert. Die Laufzeit aller jährlichen Cloudabonnements des Kunden wird nicht aneinander angepasst, wie es bei Käufen mit dem Microsoft-Volumenlizenzvertrag üblich ist.
 
 ### <a name="q-how-do-cancelations-work"></a>F: Wie funktioniert die Kündigung?
-A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab. Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
+A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab.
+Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
 
 Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächsten Monats wirksam. Wenn Sie nur manche Ihrer monatlichen Cloudabonnements kündigen, entfernen Sie die Benutzer am ersten Tag des nächsten Monats, um sicherzustellen, dass den richtigen Personen weiterhin aktive Abonnements zugewiesen sind.
 
@@ -87,12 +92,12 @@ Bevor Sie Käufe tätigen, müssen Sie [Ihr Ausgabenlimit entfernen](https://azu
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>F: Welche Unterschiede bestehen zwischen jährlichen und monatlichen Cloudabonnements?
 
-A: Monatliche Cloudabonnements enthalten Visual Studio und ermöglichen die Verwendung von VSTS und TFS. Dies gilt auch für jährliche Cloudabonnements, diese enthalten jedoch zusätzlich Vorteile für Abonnenten, einschließlich der Verwendung von Windows und anderer Microsoft-Software, die installiert und für das Entwickeln und Testen verwendet werden kann, einer monatliche Azure-Gutschrift, die für das Experimentieren mit Azure-Diensten sowie für das Entwickeln und Testen in der Cloud verwendet werden kann, sowie Training, Support und vieles mehr. 
-[Vergleich der Vorteile und Preise von Cloudabonnements](https://www.visualstudio.com/vs/pricing/)
+A: Monatliche Cloudabonnements enthalten Visual Studio und ermöglichen die Verwendung von VSTS und TFS. Dies gilt auch für jährliche Cloudabonnements, diese enthalten jedoch zusätzlich Vorteile für Abonnenten, einschließlich der Verwendung von Windows und anderer Microsoft-Software, die installiert und für das Entwickeln und Testen verwendet werden kann, einer monatliche Azure-Gutschrift, die für das Experimentieren mit Azure-Diensten sowie für das Entwickeln und Testen in der Cloud verwendet werden kann, sowie Training, Support und vieles mehr.
+[Vergleich der Vorteile und Preise von Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>F: Erhalte ich neue Versionen von Visual Studio, wenn ich ein Visual Studio-Cloudabonnement kaufe?
 
-A: Ja. Wenn neue Versionen veröffentlicht werden, können Sie diese herunterladen und ausführen. Sie können ebenfalls weiterhin frühere Versionen ausführen. 
+A: Ja. Wenn neue Versionen veröffentlicht werden, können Sie diese herunterladen und ausführen. Sie können ebenfalls weiterhin frühere Versionen ausführen.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>F: Kann ich Visual Studio-Cloudabonnements von meinem Softwarehändler kaufen?
 
@@ -108,5 +113,5 @@ A: Ja, das ist möglich, wenn Ihr Händler am Cloud Solution Provider-Programm (
 ## <a name="related-resources"></a>Weitere Informationen
 
 * [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
-* [Support für Visual Studio-Abonnements](https://www.visualstudio.com/vs/support/)
+* [Support für Visual Studio-Abonnements](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)

@@ -1,5 +1,5 @@
 ---
-title: Definieren von Element | Microsoft Docs
+title: Definieren Sie Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126961"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497160"
 ---
-# <a name="define-element"></a>Definieren von Element
-Definiert ein Symbol Name / Wert-Paar. Dieses Symbol kann durch bedingten Attribute ausgewertet werden. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md). Siehe auch die [Element werden Symbole](../extensibility/symbols-element.md).  
+# <a name="define-element"></a>Definieren Sie element
+Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribute ausgewertet werden. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md). Siehe auch die [Symbols-Element](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,7 +48,7 @@ Definiert ein Symbol Name / Wert-Paar. Dieses Symbol kann durch bedingten Attrib
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle, die eine VSPackage bereitstellt, der integrierten Entwicklungsumgebung (IDE) darstellen. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfelder.|  
+|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle, die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -58,4 +58,4 @@ Definiert ein Symbol Name / Wert-Paar. Dieses Symbol kann durch bedingten Attrib
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: Ändern der Darstellung eines Befehls | Microsoft Docs
+title: Ändern der Darstellung eines Befehls | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,43 +15,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a19793f16991bc61636a929822757823728a926
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099082"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232243"
 ---
-# <a name="changing-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
-Ändern der Darstellung eines Befehls können Sie Feedback, die für Benutzer bereitstellen. Beispielsweise sollten Sie einen Befehl zum anders aussehen, wenn sie nicht verfügbar ist. Sie können damit Befehle verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.  
+# <a name="change-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
+Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung eines Befehls. Beispielsweise sollten Sie einen Befehl anders aussehen, wenn sie nicht verfügbar ist. Sie können Befehle stellen, verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.  
   
- Führen Sie zum Ändern der Darstellung eines Befehls eine der folgenden Aktionen aus:  
+ Um die Darstellung eines Befehls zu ändern, führen Sie eine der folgenden Aktionen:  
   
--   Geben Sie den geeigneten Flags in der Befehlsdefinition in der Tabelle Befehlsdatei ein.  
+-   Geben Sie den geeigneten Flags in der Befehlsdefinition in der Befehlsdatei für die Tabelle ein.  
   
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Dienst.  
+-   Verwenden der <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Service.  
   
--   Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, und ändern Sie den unformatierten Befehlsobjekte.  
+-   Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle und die unformatierte Befehlsobjekte zu ändern.  
   
- Die folgenden Schritte zeigen, wie Suchen und aktualisieren Sie die Darstellung eines Befehls mit dem Managed Package Framework (MPF).  
+ Die folgenden Schritte zeigen, wie Sie suchen und aktualisieren Sie die Darstellung eines Befehls mit dem Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>So ändern Sie die Darstellung eines Menübefehls  
   
-1.  Befolgen Sie die Anweisungen in [ändern den Text eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md) So erstellen Sie ein Menüelement namens `New Text`.  
+1.  Befolgen Sie die Anweisungen in [Ändern des Texts eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md) So erstellen Sie ein Menüelement namens `New Text`.  
   
-2.  Fügen Sie in der Datei ChangeMenuText.cs die folgende Anweisung:  
+2.  In der *ChangeMenuText.cs* Datei, fügen Sie die folgenden using-Anweisung:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  Fügen Sie in der Datei ChangeMenuTextPackageGuids.cs die folgende Zeile hinzu:  
+3.  In der *ChangeMenuTextPackageGuids.cs* Datei, fügen Sie die folgende Zeile hinzu:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  Ersetzen Sie in der Datei ChangeMenuText.cs den Code in der Methode ShowMessageBox durch Folgendes ein:  
+4.  In der *ChangeMenuText.cs* Datei, ersetzen Sie den Code in der ShowMessageBox-Methode durch Folgendes:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -62,7 +62,7 @@ ms.locfileid: "31099082"
     }  
     ```  
   
-5.  Beziehen Sie den Befehl, den Sie aktualisieren möchten die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Objekt, und legen Sie dann die entsprechenden Eigenschaften für das Command-Objekt. Die folgende Methode macht z. B. den angegebenen Befehlssatz aus einem VSPackage-Befehl verfügbar oder nicht verfügbar. Im folgenden Code werden die Menüelement `New Text` nicht verfügbar, nachdem auf sie geklickt wurde.  
+5.  Abrufen den Befehl, der aktualisiert werden sollen die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Objekt aus, und legen Sie dann die entsprechenden Eigenschaften für das Command-Objekt. Beispielsweise wird die folgende Methode der angegebenen Befehlssatz aus einem VSPackage-Befehl verfügbar oder nicht verfügbar. Im folgenden Code werden das Menü, das Element mit dem Namen `New Text` nicht verfügbar, nachdem sie bereits geklickt wurde.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -83,12 +83,12 @@ ms.locfileid: "31099082"
   
 6.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.  
   
-7.  Auf der **Tools** Menü klicken Sie auf die **ChangeMenuText Aufrufen** Befehl. An diesem Punkt der Befehlsname entspricht **ChangeMenuText Aufrufen**, sodass die Befehlshandler ChangeMyCommand() aufrufen nicht.  
+7.  Auf der **Tools** Menü klicken Sie auf die **aufrufen ChangeMenuText** Befehl. Zu diesem Zeitpunkt ist der Name des Befehls **aufrufen ChangeMenuText**, sodass die Befehlshandler Aufrufen nicht **ChangeMyCommand()**.  
   
-8.  Auf der **Tools** Menü sollte jetzt angezeigt **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.  
+8.  Auf der **Tools** Menü jetzt angezeigt werden sollte **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md)   
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

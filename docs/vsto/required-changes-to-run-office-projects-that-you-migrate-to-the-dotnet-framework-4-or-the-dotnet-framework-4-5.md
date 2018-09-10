@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Änderungen zum Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
+title: Erforderliche Änderungen für das Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53a6b138509648af102a50217a8bab4d32b27a2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693915"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673256"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Erforderliche Änderungen zum Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
-  Wenn das Zielframework eines Office-Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später von einer früheren Version von .NET Framework, müssen, führen Sie die folgenden Aufgaben aus, um sicherzustellen, dass die Projektmappe auf dem Entwicklungscomputer und auf Endbenutzercomputern ausgeführt werden kann:  
+# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Erforderliche Änderungen für das Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
+  Wenn das Zielframework eines Office-Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später von einer früheren Version von .NET Framework, Sie müssen die folgenden Aufgaben aus, um sicherzustellen, dass die Lösung auf dem Entwicklungscomputer und auf Endbenutzercomputern ausgeführt werden kann:  
   
 -   Entfernen Sie das <xref:System.Security.SecurityTransparentAttribute> aus dem Projekt, wenn Sie ein Upgrade aus Visual Studio 2008 ausgeführt haben.  
   
--   Führen Sie eine **Bereinigen** -Befehl in Visual Studio in der Lage, ausführen oder Debuggen des Projekts auf dem Entwicklungscomputer.  
+-   Führen Sie eine **Bereinigen** -Befehl in Visual Studio in der Lage, ausführen oder Debuggen des Projekts auf dem Entwicklungscomputer installiert sein.  
   
 -   Aktualisieren Sie die .NET Framework-Voraussetzung für das Projekt.  
   
@@ -35,10 +35,10 @@ ms.locfileid: "34693915"
   
  Weitere Informationen zu den einzelnen Aufgaben finden Sie in den entsprechenden Abschnitten weiter unten.  
   
-## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Entfernen Sie SecurityTransparentAttribute aus Projekten, die Sie von Visual Studio 2008 aktualisieren  
+## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Entfernen Sie das SecurityTransparent-Attribut aus Projekten, die Aktualisierung von Visual Studio 2008  
  Wenn Sie ein Upgrade für ein Office-Projekt aus Visual Studio 2008 ausgeführt haben und sich das Zielframework des Projekts anschließend in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ändert, müssen Sie das <xref:System.Security.SecurityTransparentAttribute> aus dem Projekt entfernen. Visual Studio entfernt dieses Attribut nicht automatisch für Sie. Wenn Sie dieses Attribut nicht entfernen, erhalten Sie eine Fehlermeldung, wenn Sie das Projekt kompilieren.  
   
- Weitere Informationen zu den Bedingungen, die in der Visual Studio das Zielframework eines aktualisierten Projekts zu ändern können die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], finden Sie unter [aktualisieren und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md).  
+ Weitere Informationen zu den Bedingungen, die in der Visual Studio das Zielframework eines aktualisierten Projekts in ändern können die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], finden Sie unter [aktualisieren und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md).  
   
 #### <a name="to-remove-the-securitytransparentattribute"></a>So entfernen Sie "SecurityTransparentAttribute"  
   
@@ -59,18 +59,18 @@ ms.locfileid: "34693915"
     [assembly: SecurityTransparent()]  
     ```  
   
-## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Ausführen des Befehls "bereinigen" zu debuggen oder Ausführen eines Projekts auf dem Entwicklungscomputer  
- Wenn Sie ein Office-Projekt erstellt wurde, bevor das Zielframework des Projekts geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher und führen Sie eine **Bereinigen** Befehl, und klicken Sie dann das Projekt neu, nachdem das Zielframework geändert wurde. Wenn nicht durchführen einer **Bereinigen** Befehl erhalten Sie eine <xref:System.Runtime.InteropServices.COMException> beim Versuch, Debuggen oder Ausführen von neu ausgerichteten Projekt.  
+## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Ausführen des Befehls "bereinigen" zum Debuggen oder Ausführen eines Projekts auf dem Entwicklungscomputer  
+ Wenn ein Office-Projekt erstellt wurde, bevor das Zielframework des Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher verwenden, müssen Sie führen eine **Bereinigen** Befehl aus, und klicken Sie dann das Projekt neu, nachdem das Zielframework geändert wurde. Wenn führen Sie keine **Bereinigen** Befehl erhalten Sie eine <xref:System.Runtime.InteropServices.COMException> beim Versuch, Debuggen oder Ausführen von neu ausgerichteten Projekt.  
   
- Weitere Informationen zu den **Bereinigen** Befehl, finden Sie unter [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
+ Weitere Informationen zu den **Bereinigen** Befehl, finden Sie unter [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
   
-## <a name="update-the-prerequisites-for-deployment"></a>Aktualisieren Sie die erforderlichen Komponenten für die Bereitstellung  
- Wenn Sie ein Office-Projekt umleiten [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher müssen Sie auch die entsprechenden .NET Framework-Voraussetzung im Aktualisieren der **Voraussetzungen** (Dialogfeld). Andernfalls sucht die ClickOnce-Bereitstellung oder das InstallShield Limited Edition-Projekt nach einer früheren Version von .NET Framework und installiert diese.  
+## <a name="update-the-prerequisites-for-deployment"></a>Aktualisieren Sie die Voraussetzungen für die Bereitstellung  
+ Wenn Sie ein Office-Projekt umleiten [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher verwenden, müssen Sie auch die entsprechenden .NET Framework-Voraussetzung im aktualisieren die **Voraussetzungen** Dialogfeld. Andernfalls sucht die ClickOnce-Bereitstellung oder das InstallShield Limited Edition-Projekt nach einer früheren Version von .NET Framework und installiert diese.  
   
- Weitere Informationen zum Aktualisieren der Voraussetzungen für die Bereitstellung auf Endbenutzercomputern finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Weitere Informationen zu den Voraussetzungen für die Bereitstellung auf Endbenutzercomputern aktualisiert, finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Installieren von Projektmappen auf Endbenutzercomputern  
- Wenn Sie mithilfe von ClickOnce eine Office-Projektmappe bereitstellen, die als Zielframework .NET Framework 3.5 verwendet, und dann das Projekt auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher umstellen, müssen Endbenutzer die Projektmappe deinstallieren und dann erneut installieren, nachdem Sie sie veröffentlicht haben. Wenn Sie die Projektmappe mit dem neuen Zielframework erneut veröffentlichen und die Lösung auf Endbenutzercomputern aktualisiert wird, erhalten Benutzer eine <xref:System.Runtime.InteropServices.COMException>, wenn sie die aktualisierte Lösung ausführen.  
+ Wenn Sie mithilfe von ClickOnce eine Office-Projektmappe bereitstellen, die als Zielframework .NET Framework 3.5 verwendet, und dann das Projekt auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher umstellen, müssen Endbenutzer die Projektmappe deinstallieren und dann erneut installieren, nachdem Sie sie veröffentlicht haben. Wenn Sie erneut, die neu zugewiesene Lösung veröffentlichen, und die Lösung auf Endbenutzercomputern aktualisiert wird, erhalten Endbenutzer eine <xref:System.Runtime.InteropServices.COMException> Wenn sie die aktualisierte Lösung ausführen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  

@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577495"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154449"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
-Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Thema werden die Gründe hierfür beschrieben. Zudem wird die Prozedur erläutert.  
+# <a name="start-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
+Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Artikel werden die Gründe für diese Anforderung beschrieben. Zudem wird die Prozedur erläutert.  
   
 ## <a name="parallel-builds-and-threads"></a>Parallele Builds und Threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erlaubt parallele Builds, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lässt parallele Builds zu, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
   
- Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Dies bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
+ Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Diese Anforderung bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Verwenden von IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>Verwenden von IVSBuildManagerAccessor  
  Im Code unten wird eine Methode veranschaulicht, mit der ein Projektsystem einen Build starten kann:  
   
 ```csharp

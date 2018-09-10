@@ -1,5 +1,5 @@
 ---
-title: Überlegungen für das entladen und erneutes Laden geschachtelt Projekte | Microsoft Docs
+title: Überlegungen zum Entladen und Neuladen von geschachtelten Projekten | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f22575c4affa6e6a13ea80b32674a3e517202fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c38b50f661ed7ea16c56d9a877b809d2d60dd51c
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127918"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513457"
 ---
-# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Überlegungen zum Entladen und erneutes Laden geschachtelten Projekte
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Überlegungen zu entladen und Neuladen von geschachtelten Projekten
 
-Wenn Sie geschachtelte Projekttypen implementieren, müssen Sie zusätzliche Schritte ausführen, wenn entladen und laden die Projekte. Sie müssen ordnungsgemäß auslösen, um Listener zur Lösung Ereignisse korrekt zu benachrichtigen, die `OnBeforeUnloadProject` und `OnAfterLoadProject` Ereignisse.
+Wenn Sie geschachtelte Projekttypen implementieren, müssen Sie zusätzliche Schritte ausführen, wenn Sie entladen und Laden Sie die Projekte erneut. Sie müssen ordnungsgemäß auslösen, um Listener zu Projektmappenereignissen ordnungsgemäß zu benachrichtigen, die `OnBeforeUnloadProject` und `OnAfterLoadProject` Ereignisse.
 
-Ein Grund für das Auslösen dieser Ereignisse ist für die quellcodeverwaltung (SCC). Sollen SCC löschen die Elemente auf dem Server, und fügen Sie ihn dann wieder als *neue* ist ein `Get` Vorgang von SCC. In diesem Fall würde eine neue Datei außerhalb des gültigen SCC geladen werden. Sie müssen dann entladen und laden alle Dateien aus, für den Fall, dass sie verschiedene sind.
+Ein Grund zum Auslösen dieser Ereignisse ist für die quellcodeverwaltung (SCC). Sie möchten nicht SCC aus, um die Elemente vom Server zu löschen und dann hinzufügen, als *neue* liegt eine `Get` Vorgang aus SCC. In diesem Fall würde eine neue Datei aus SCC geladen werden. Sie müssten entladen und laden alle Dateien aus, für den Fall, dass sie unterschiedlich sind.
 
-Source Code Control Aufrufe `ReloadItem`. Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> Schnittstelle aufrufen `OnBeforeUnloadProject` und `OnAfterLoadProject` löschen Sie das Projekt und erstellen Sie ihn erneut. Wenn Sie auf diese Weise die Schnittstelle implementieren, wird die SCC darüber informiert, dass das Projekt wurde vorübergehend gelöscht und erneut hinzugefügt. Aus diesem Grund nicht SCC für das Projekt arbeiten, als wäre das Projekt *tatsächlich* gelöscht und erneut hinzugefügt.
+Source Code Control ruft `ReloadItem`. Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> Schnittstelle aufrufen, `OnBeforeUnloadProject` und `OnAfterLoadProject` löschen Sie das Projekt, und erstellen Sie ihn erneut. Wenn Sie auf diese Weise die Schnittstelle implementieren, wird die SCC darüber informiert, dass das Projekt wurde vorübergehend gelöscht und erneut hinzugefügt. Aus diesem Grund nicht SCC auf das Projekt arbeiten, als ob das Projekt wurde *tatsächlich* gelöscht und erneut hinzugefügt.
 
-## <a name="reloading-projects"></a>Erneutes Laden von Projekten
+## <a name="reload-projects"></a>Laden von Projekten
 
-Zum erneuten Laden des geschachtelten Projekte zu unterstützen, implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> Methode. In der Implementierung von `ReloadItem`, die geschachtelte Projekte schließen und dann neu erstellen.
+Um das erneute Laden von geschachtelten Projekten unterstützen, implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> Methode. In der Implementierung von `ReloadItem`, Sie schließen die geschachtelte Projekte, und dann neu erstellen.
 
-In der Regel, wenn ein Projekt geladen wird, die IDE löst die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> Ereignisse. Allerdings startet übergeordneten Projekts für geschachtelte Projekte, die gelöscht und erneut geladen werden, der werden nicht in der IDE an. Die Ereignisse werden nicht ausgelöst, da übergeordneten Projekts keine Lösung Ereignisse auslösen und die IDE keine Informationen zur Initialisierung des Prozesses hat.
+In der Regel ein Projekt erneut geladen wird, die IDE löst, wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> Ereignisse. Für geschachtelte Projekte, die gelöscht und neu geladen werden, initiiert das übergeordnete Projekt jedoch den Prozess, der nicht in der IDE. Da das übergeordnete Projekt keine Projektmappenereignisse auslösen, und die IDE verfügt über keine Informationen zur Initialisierung des Prozesses, werden nicht die Ereignisse ausgelöst.
 
-Dieser Prozess, die Aufrufe der übergeordneten Projekt behandelt `QueryInterface` auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> Schnittstelle. `IVsFireSolutionEvents` verfügt über Funktionen, die von der IDE zum Auslösen von Teilen der `OnBeforeUnloadProject` Ereignis, um das Entladen des geschachtelten Projekts, und erhöhen Sie dann die `OnAfterLoadProject` Ereignis, um das gleiche Projekt erneut laden.
+Dieser Prozess, die Aufrufe der übergeordneten Projekt zu behandeln `QueryInterface` auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> Schnittstelle. `IVsFireSolutionEvents` verfügt über Funktionen, die die IDE zum Auslösen von Teilen der `OnBeforeUnloadProject` Ereignis, das geschachtelte Projekt entladen, und erhöhen Sie dann die `OnAfterLoadProject` Ereignis, um das gleiche Projekt erneut laden.
 
 ## <a name="see-also"></a>Siehe auch
 

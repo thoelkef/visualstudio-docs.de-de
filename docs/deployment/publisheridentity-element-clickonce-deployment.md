@@ -1,5 +1,5 @@
 ---
-title: '&lt;PublisherIdentity&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+title: '&lt;PublisherIdentity&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815141"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081409"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;PublisherIdentity&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;PublisherIdentity&gt; -Element (ClickOnce-Bereitstellung)
 Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.  
   
 ## <a name="syntax"></a>Syntax  
@@ -38,11 +38,11 @@ Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signi
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `publisherIdentity` Element für signierte Manifeste erforderlich ist. Die folgende Tabelle zeigt die Attribute, die die `publisherIdentity` Element unterstützt.  
+ Die `publisherIdentity` Element für signierte Manifeste erforderlich ist. Die folgende Tabelle zeigt die Attribute an, dass die `publisherIdentity` Element unterstützt.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`name`|Erforderlich. Beschreibt die Identität der Person, die diese Anwendung veröffentlicht.|  
+|`name`|Erforderlich. Beschreibt die Identität der Partei, die diese Anwendung veröffentlicht.|  
 |`issuerKeyHash`|Erforderlich. Enthält den SHA-1-Hash des öffentlichen Schlüssels des Zertifikatausstellers.|  
   
 #### <a name="parameters"></a>Parameter  

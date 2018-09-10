@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767685"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469112"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -29,8 +29,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 > [!NOTE]
 > In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Der **Test-Explorer** kann außerdem Tests von Komponententestframeworks von Drittanbietern ausführen, die über Adapter für den **Test-Explorer** verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-> [!NOTE]
-> Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Befehlszeilenoptionen für VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -85,7 +84,7 @@ public void Debit(double amount)
 
 1. Klicken Sie im Menü **Datei** auf **Hinzufügen** > **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.
 
@@ -95,9 +94,9 @@ public void Debit(double amount)
 
 5. Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.
 
-   Klicken Sie im Projektmappen-Explorer im Projekt **BankTests** erst auf **Verweise** und dann im Kontextmenü auf **Verweis hinzufügen**.
+   Klicken Sie im **Projektmappen-Explorer** im Projekt **BankTests** erst auf **Verweise** und dann im Kontextmenü auf **Verweis hinzufügen**.
 
-6. Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .
+6. Erweitern Sie im Dialogfeld **Verweis-Manager** den Eintrag **Projektmappe**, und überprüfen Sie das Element **Bank**.
 
 ## <a name="create-the-test-class"></a>Die Testklasse erstellen
 
@@ -211,7 +210,7 @@ Eine Testmethode muss die folgenden Anforderungen erfüllen:
 
 ### <a name="analyze-the-test-results"></a>Analysieren der Testergebnisse
 
-Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Für die `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*value*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*value*>**). Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
+Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Für die `AreEqual`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*value*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*value*>**). Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
 
 Beim Komponententest wurde ein Fehler festgestellt: Der Abbuchungsbetrag wird dem Kontoguthaben *hinzugerechnet*, anstatt davon *abgezogen* zu werden.
 
@@ -231,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Erneutes Ausführen des Tests
 
-Wählen Sie im Test-Explorer **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, wenn der Test erfolgreich ausgeführt wurde, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
+Wählen Sie im **Test-Explorer** **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, wenn der Test erfolgreich ausgeführt wurde, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Den Code mit Komponententests verbessern
 

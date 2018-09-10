@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478134"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468763"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Nach dem Muster dieser einfachen Zeichenfolgen-Schnellansicht können Sie auch Schnellansichten für andere Datentypen erstellen, die Sie in Ihren Projekten benötigen.  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Um die Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü, und wählen Sie **-Import/Export-** . Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Um Ihre Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü, und wählen Sie **importieren und Exportieren von** . Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
  Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb besteht der erste Schritt darin, ein Klassenbibliotheksprojekt für die DLL zu erstellen.  
   
@@ -39,11 +39,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Auf der **Datei** Menü wählen **neu** , und klicken Sie auf **neues Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld unter **Projekttyp**s, klicken Sie auf **Visual Basic**.  
+2.  In der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic**.  
   
-3.  In der **Vorlagen** auf **-Klassenbibliothek**.  
+3.  Klicken Sie unter **.NET Standard**, klicken Sie auf **Klassenbibliothek**.  
   
-4.  In der **Namen** Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. **MyFirstVisualizer**.  
+4.  In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, z. B. **MyFirstVisualizer**.  
   
 5.  Klicken Sie auf **OK**.  
   
@@ -51,7 +51,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>So benennen Sie "Class1.vb" um und fügen "Microsoft.VisualStudio.DebuggerVisualizers" hinzu  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Class1.vb**, und klicken Sie im Kontextmenü auf **umbenennen**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **"Class1.vb"**, und klicken Sie im Kontextmenü auf **umbenennen**.  
   
 2.  Ändern Sie den Namen von Class1.vb in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.vb.  
   
@@ -66,7 +66,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 6.  Fügen Sie in DebuggerSide.vb den `Imports`-Anweisungen die folgende Anweisung hinzu:  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -77,13 +77,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Navigieren Sie in DebuggerSide.vb zu folgender Codezeile:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Ändern Sie den Code folgendermaßen:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -94,7 +94,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 -   Fügen Sie `public class DebuggerSide` folgende Methode hinzu:  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -112,7 +112,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 4.  Fügen Sie in DebuggerSide.cs den `Imports`-Anweisungen die folgende Anweisung hinzu:  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -123,7 +123,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Fügen Sie der `Show`-Methode folgende Codezeile hinzu:  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
@@ -138,7 +138,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Fügen Sie DebuggerSide.vb den folgenden Attributcode hinzu, und zwar nach den `Imports`-Anweisungen und vor `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
@@ -151,7 +151,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Fügen Sie der `public DebuggerSide`-Klasse folgende Methode hinzu:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
@@ -166,9 +166,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1.  Auf der **Datei** Menü klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** auf **Konsolenanwendung**.  
+2.  In der **neues Projekt hinzufügen** wählen Sie im Dialogfeld **Visual Basic**, und klicken Sie dann auf **Konsolenanwendung**.  
   
-3.  In der **Namen** Geben Sie einen aussagekräftigen Namen für die Konsolenanwendung, z. B. **MyTestConsole**.  
+3.  In der **Namen** geben einen aussagekräftigen Namen für die Konsolenanwendung, z. B. **MyTestConsole**.  
   
 4.  Klicken Sie auf **OK**.  
   
@@ -184,7 +184,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 4.  Mit der rechten Maustaste **MyTestConsole**, und klicken Sie dann auf **Verweis hinzufügen** erneut aus.  
   
-5.  In der **Verweis hinzufügen** (Dialogfeld), klicken Sie auf die **Projekte** Registerkarte, und wählen Sie dann auf MyFirstVisualizer.  
+5.  In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **Projekte** Registerkarte, und wählen Sie dann auf MyFirstVisualizer.  
   
 6.  Klicken Sie auf **OK**.  
   
@@ -201,13 +201,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 3.  In TestConsole.vb. VB, fügen Sie die folgenden `Imports` Anweisung:  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  Fügen Sie der `Main`-Methode den folgenden Code hinzu:  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  

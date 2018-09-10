@@ -1,109 +1,127 @@
 ---
 title: Bildbearbeitung
-ms.date: 11/04/2016
+ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747309"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626667"
 ---
-# <a name="image-editor"></a>Bildbearbeitung
+# <a name="image-editor"></a>Grafik-Editor
 
-In diesem Dokument wird beschrieben, wie Sie den Visual Studio-Bild-Editor verwenden, um Textur- und Bildressourcen anzuzeigen und zu ändern.
+In diesem Artikel wird beschrieben, wie Sie sich mit der **Bildbearbeitung** von Visual Studio Textur- und Bildressourcen anzeigen lassen und diese bearbeiten.
 
- Sie können in der Bildbearbeitung mit den umfassenden Textur- und Bildformaten arbeiten, die in der Entwicklung von DirectX-Apps verwendet werden. Hierzu gehört die Unterstützung gängiger Bilddateiformate und Farbcodierungen, von Funktionen wie Alphakanäle und MIP-Zuordnung sowie von vielen der hochkomprimierten, hardwarebeschleunigten Texturformate, die DirectX unterstützt.
+Mit der **Bildbearbeitung** können Sie mit aufwändigen Textur- und Bildformaten arbeiten, die bei der Entwicklung von DirectX-Apps verwendet werden. Unterstützt werden dabei gängige Bilddateiformate und Farbcodierungen, Features wie Alphakanäle und MIP-Zuordnungen sowie viele stark komprimierte Texturformate mit Hardwarebeschleunigung, die auch DirectX unterstützt.
 
 ## <a name="supported-formats"></a>Unterstützte Formate
 
-Folgende Bildformate werden von der Bildbearbeitung unterstützt:
+Folgende Bildformate werden von der **Bildbearbeitung** unterstützt:
 
 |Formatname|Dateinamenerweiterung|
 |-----------------|-------------------------|
-|Portable Network Graphics|.png|
-|JPEG|.jpg, .jpeg, .jpe, .jfif|
-|Direct Draw Surface|.dds|
-|Graphics Interchange Format|GIF|
-|Bitmap|.bmp, .dib|
-|Tagged Image File Format|.tif, .tiff|
-|TGA (Targa)|.tga|
+|Portable Network Graphics|*.png*|
+|JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
+|Direct Draw Surface|*.dds*|
+|Graphics Interchange Format|*.gif*|
+|Bitmap|*.bmp*, *.dib*|
+|Tagged Image File Format|*.tif*, *.tiff*|
+|TGA (Targa)|*.tga*|
 
 ## <a name="get-started"></a>Erste Schritte
 
 In diesem Abschnitt wird beschrieben, wie Sie Ihrem Visual Studio-Projekt ein Bild hinzufügen und dieses Ihren Anforderungen gemäß konfigurieren.
 
-### <a name="to-add-an-image-to-your-project"></a>So fügen Sie Ihrem Projekt ein Bild hinzu
+### <a name="add-an-image-to-your-project"></a>Hinzufügen eines Bildes zu einem Projekt
 
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Image hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** und **Neues Element**.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Bild hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** > **Neues Element**.
 
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend ein entsprechendes Dateiformat für das Bild aus. Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie im nachfolgenden Abschnitt.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend ein entsprechendes Dateiformat für das Bild aus.
 
-3.  Legen Sie den **Namen** der Bilddatei und den **Speicherort** fest, an dem diese erstellt werden soll.
+   > [!NOTE]
+   > Wenn im Dialogfeld **Neues Element hinzufügen** nicht die Kategorie **Grafiken** angezeigt wird, müssen Sie möglicherweise die Komponente **Bild- und 3D-Modell-Editoren** installieren. Schließen Sie den Dialog, und klicken Sie in der Menüleiste auf **Extras** > **Get Tools and Features** (Extras und Features abrufen), um den **Visual Studio-Installer** herunterzuladen. Klicken Sie erst auf die Registerkarte **Einzelne Komponenten** und dann unter der Kategorie **Spiele und Grafiken** auf die Komponente **Bild- und 3D-Modell-Editoren**. Klicken Sie auf **Ändern**.
+   >
+   > ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
+   >
+   > Möglicherweise ist die Komponente **Bild- und 3D-Modell-Editoren** zwar installiert, jedoch wird die Vorlagenkategorie **Grafiken** trotzdem nicht angezeigt. Beachten Sie in diesem Fall, dass diese Kategorie nur für bestimmte Projekttypen wie Konsolenanwendungen angezeigt wird.
 
-4.  Wählen Sie die Schaltfläche **Hinzufügen** aus.
+   Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie unter [Auswählen des Bildformats](#choose-the-image-format).
+
+3. Legen Sie den **Namen** der Bilddatei und den **Speicherort** fest, an dem diese erstellt werden soll.
+
+4. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
 ### <a name="choose-the-image-format"></a>Auswählen des Bildformats
 
-Abhängig von der geplanten Verwendung des Bilds sind bestimmte Dateiformate möglicherweise besser geeignet als andere. Möglicherweise unterstützen manche Formate eine benötigte Funktion nicht – wie Transparenz oder ein bestimmtes Farbformat – oder für die geplanten Bildinhalte kann keine geeignete Komprimierung bereitgestellt werden.
+Abhängig von der geplanten Verwendung des Bilds sind bestimmte Dateiformate möglicherweise besser geeignet als andere. Features wie Transparenz oder bestimmte Farbformate werden möglicherweise nicht von allen Formaten unterstützt. Auch eine geeignete Komprimierung für die beabsichtigten Bildinhalte ist eventuell nicht verfügbar.
 
- Die folgenden Informationen können Ihnen bei der Auswahl eines Bildformats helfen, das Ihre Anforderungen erfüllt.
+Die folgenden Informationen können Ihnen bei der Auswahl eines Bildformats helfen, das Ihre Anforderungen erfüllt:
 
- **Bitmap-Bild (BMP):** Das Bitmap-Bildformat. Ein nicht komprimiertes Bildformat, das 24-Bit-Farbe unterstützt. Das Bitmapformat unterstützt keine Transparenz.
+**Bitmapbild (BMP)**
 
- **GIF-Bild (GIF):** Das GIF-Bildformat (Graphics Interchange Format). Ein LZW-komprimiertes, verlustfreies Bildformat, das bis zu 256 Farben unterstützt. Ungeeignet für Fotografien und Bilder mit hohen Farbendetails. Es verfügt jedoch über gute Komprimierungsverhältnisse für Bilder mit wenig Farbe aber einem hohen Grad an Farbenkohärenz.
+Das Bitmap-Bildformat. Ein nicht komprimiertes Bildformat, das 24-Bit-Farbe unterstützt. Das Bitmapformat unterstützt keine Transparenz.
 
- **JPG-Bild (JPG):** Das JPEG-Bildformat (Joint Photographic Experts Group). Ein hochkomprimiertes, verlustbehaftetes Bildformat, das 24-Bit-Farbe unterstützt und für allgemeine Zwecke zur Komprimierung von Bildern mit hoher Farbenkohärenz geeignet ist.
+**GIF-Bild (GIF)**
 
- **PNG-Bild (PNG):** Das PNG-Bildformat (Portable Network Graphics). Ein mittelmäßig stark komprimiertes, verlustfreies Bildformat, das 24-Bit-Farben- und -Alphatransparenz unterstützt. Es ist sowohl für natürliche als auch künstliche Bilder geeignet. Die Komprimierungsverhältnisse sind jedoch nicht so gut wie bei verlustbehafteten Formaten, wie JPG oder GIF.
+Das GIF-Bildformat (Graphics Interchange Format). Ein LZW-komprimiertes, verlustfreies Bildformat, das bis zu 256 Farben unterstützt. Ungeeignet für Fotografien und Bilder mit hohen Farbendetails. Es verfügt jedoch über gute Komprimierungsverhältnisse für Bilder mit wenig Farbe aber einem hohen Grad an Farbenkohärenz.
 
- **TIFF-Bild (TIF):** Das TIFF- oder TIF-Bildformat (Tagged Image File Format). Ein flexibles Bildformat, das mehrere Komprimierungsschemas unterstützt.
+**JPG-Bild (JPG)**
 
- **DDS-Textur (DDS):** Das DDS-Texturformat (DirectDraw Surface). Ein stark komprimiertes, verlustbehaftetes Texturformat, das 24-Bit-Farben und Alphatransparenz unterstützt. Die Komprimierungsverhältnisse können bis zu 8:1 betragen. Es basiert auf dem Texturkomprimierungssystem "S3 Texture Compression", das mithilfe von Grafikhardware dekomprimiert werden kann.
+Das JPEG-Bildformat (Joint Photographic Experts Group). Ein stark komprimiertes, verlustbehaftetes Bildformat, das 24-Bit-Farben unterstützt und für allgemeine Zwecke zur Komprimierung von Bildern mit hoher Farbkohärenz geeignet ist.
 
- **TGA-Bild (TGA):** Das TGA-Bildformat (Truevision Graphics Adapter, auch unter der Bezeichnung „Targa“ bekannt). Ein RLE-komprimiertes, verlustfreies Bildformat, das sowohl farbzugeordnete (Farbpalette) oder Direct Color-Bilder bis zu 24-Bit-Farben und Alphatransparenz unterstützt. Unpassend für Fotografien und Bilder mit hohem Farbendetails. Es stellt verfügt jedoch über gute Komprimierungsverhältnisse für Bilder mit weitflächigen identischen Farben.
+**PNG-Bild (PNG)**
+
+Das PNG-Bildformat (Portable Network Graphics). Ein mittelmäßig stark komprimiertes, verlustfreies Bildformat, das 24-Bit-Farben und Alphatransparenz unterstützt. Es ist sowohl für natürliche als auch künstliche Bilder geeignet. Die Komprimierungsverhältnisse sind jedoch nicht so gut wie bei verlustbehafteten Formaten, wie JPG oder GIF.
+
+**TIFF-Bild (TIFF)**
+
+Das TIFF- oder TIF-Bildformat (Tagged Image File Format). Ein flexibles Bildformat, das mehrere Komprimierungsschemas unterstützt.
+
+**DDS-Textur (DDS)**
+
+Das DDS-Texturformat (DirectDraw Surface-Texturformat). Ein stark komprimiertes, verlustbehaftetes Texturformat, das 24-Bit-Farben und Alphatransparenz unterstützt. Die Komprimierungsverhältnisse können bis zu 8:1 betragen. Es basiert auf dem Texturkomprimierungssystem "S3 Texture Compression", das mithilfe von Grafikhardware dekomprimiert werden kann.
+
+**TGA-Bild (TGA)**
+
+Das TGA-Bildformat (Truevision Graphics Adapter-Format; auch unter der Bezeichnung Targa bekannt). Ein RLE-komprimiertes, verlustfreies Bildformat, das sowohl farbzugeordnete (Farbpalette) oder Direct Color-Bilder bis zu 24-Bit-Farben und Alphatransparenz unterstützt. Unpassend für Fotografien und Bilder mit hohem Farbendetails. Es stellt verfügt jedoch über gute Komprimierungsverhältnisse für Bilder mit weitflächigen identischen Farben.
 
 ### <a name="configure-the-image"></a>Konfigurieren des Bilds
 
-Bevor Sie mit dem soeben erstellten Bild zu arbeiten beginnen, können Sie seine Standardkonfiguration ändern. Beispielsweise können Sie seine Abmessungen oder das verwendete Farbformat ändern. Weitere Informationen zur Konfiguration dieser und anderer Bildeigenschaften finden Sie unter [Bildeigenschaften](#ImageProperties).
+Bevor Sie mit dem erstellten Bild zu arbeiten beginnen, können Sie seine Standardkonfiguration ändern. Beispielsweise können Sie seine Abmessungen oder das verwendete Farbformat ändern. Weitere Informationen zur Konfiguration dieser und anderer Bildeigenschaften finden Sie unter [Bildeigenschaften](#image-properties).
 
 > [!NOTE]
->  Bevor Sie Ihre Arbeit speichern, legen Sie die Eigenschaft **Farbformat** fest, wenn Sie ein bestimmtes Farbformat verwenden möchten. Sie können die Komprimierungseinstellungen anpassen, wenn Sie die Datei zum ersten Mal speichern oder **Speichern unter** auswählen, sofern das Dateiformat die Komprimierung unterstützt.
+> Bevor Sie Ihre Arbeit speichern, legen Sie die Eigenschaft **Farbformat** fest, wenn Sie ein bestimmtes Farbformat verwenden möchten. Sie können die Komprimierungseinstellungen anpassen, wenn Sie die Datei zum ersten Mal speichern oder **Speichern unter** auswählen, sofern das Dateiformat die Komprimierung unterstützt.
 
 ## <a name="work-with-the-image-editor"></a>Arbeiten mit dem Bild-Editor
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem Bild-Editor Texturen und Bilder erstellen und ändern.
+In diesem Abschnitt wird beschrieben, wie Sie mit der **Bildbearbeitung** Texturen und Bilder erstellen und ändern.
 
-### <a name="image-editor-toolbars"></a>Symbolleisten der Bildbearbeitung
+Auf der Symbolleiste für den **Bildbearbeitungsmodus** finden Sie Befehle, die Auswirkungen auf den Zustand der **Bildbearbeitung** haben, sowie erweiterte Befehle. Die Symbolleiste befindet sich am oberen Rand der Entwurfsoberfläche der **Bildbearbeitung**. Die Zeichentools befinden sich auf der Symbolleiste der **Bildbearbeitung** am linken Rand der Entwurfsoberfläche der **Bildbearbeitung**.
 
-Die Symbolleisten der Bildbearbeitung enthalten Befehle, die Sie bei der Bearbeitung von Bildern unterstützen.
+### <a name="image-editor-mode-toolbar"></a>Symbolleiste für Bildbearbeitungsmodus
 
- Auf der Symbolleiste für den **Bild-Editor-Modus** finden Sie Befehle, die Auswirkungen auf den Zustand des Bild-Editors haben, sowie erweiterte Befehle. Die Symbolleiste befindet sich am oberen Rand der Entwurfsoberfläche des Bild-Editors. Die Zeichentools befinden sich auf der Symbolleiste des **Bild-Editors** am linken Rand der Entwurfsoberfläche.
+![Symbolleiste für Bildbearbeitungsmodus in Visual Studio](../designers/media/digit-tre-modal-toolbar.png)
 
- Dies ist die Symbolleiste des **Bildbearbeitungsmodus**:
+In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
- ![Gebundene Symbolleiste der Bildbearbeitung](../designers/media/digit-tre-modal-toolbar.png)
-
- In dieser Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.
-
-|Element der Symbolleiste|description|
+|Element der Symbolleiste|Beschreibung |
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Auswahl eines rechteckigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
-|**Stabsauswahl**|Ermöglicht die Auswahl eines ähnlich farbigen Bereichs eines Bilds. Die *Toleranz*, d.h. der maximale Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, lässt sich so konfigurieren, dass ein kleinerer oder größerer Bereich von ähnlichen Farben berücksichtigt werden kann. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
-|**Schwenken**|Ermöglicht das Verschieben des Bilds relativ zum Fensterrahmen. Wählen Sie im **Schwenken**-Modus einen Punkt auf dem Bild aus, und bewegen Sie ihn.<br /><br /> Sie können den **Schwenken**-Modus vorübergehend aktivieren, indem Sie die STRG-Taste gedrückt halten.|
-|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Bilddetails relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Sie können ihn vergrößern oder verkleinern, indem Sie die STRG-TASTE gedrückt halten, während Sie entweder das Mausrad verwenden oder das Pluszeichen (+) oder Minuszeichen (-) drücken.|
+|**Stabsauswahl**|Ermöglicht die Auswahl eines Bildbereichs, der eine ähnliche Farbe aufweist. Die *Toleranz*, d.h. der maximale Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, lässt sich so konfigurieren, dass ein kleinerer oder größerer Bereich von ähnlichen Farben berücksichtigt werden kann. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
+|**Schwenken**|Ermöglicht das Verschieben des Bilds relativ zum Fensterrahmen. Wählen Sie im **Schwenken**-Modus einen Punkt auf dem Bild aus, und bewegen Sie ihn.<br /><br /> Sie können den **Schwenken**-Modus vorübergehend aktivieren, indem Sie **STRG** gedrückt halten.|
+|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Bilddetails relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Sie können ihn vergrößern oder verkleinern, indem Sie **STRG** gedrückt halten, während Sie entweder das Mausrad verwenden oder das Pluszeichen (**+**) oder Minuszeichen (**-**) drücken.|
 |**Originalgröße anzeigen**|Zeigt das Bild in einem 1:1-Verhältnis zwischen Pixel des Bilds und Pixel des Bildschirms.|
 |**Mit Zoom anpassen**|Zeigt das ganze Bild im Fensterrahmen an.|
 |**Auf Breite vergrößern**|Zeigt die gesamte Breite des Bilds im Fensterrahmen an.|
@@ -113,54 +131,55 @@ Die Symbolleisten der Bildbearbeitung enthalten Befehle, die Sie bei der Bearbei
 |**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis:** Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|
 |**Hintergrund**|Aktiviert oder deaktiviert die Anzeige des Hintergrunds durch transparente Teile des Bilds. Sie können durch Auswahl einer der folgenden Optionen konfigurieren, wie der Hintergrund angezeigt wird:<br /><br /> **Schachbrett**<br /> Verwendet eine grüne Farbe zusammen mit der angegebenen Hintergrundfarbe, um den Hintergrund als Schachbrettmuster darzustellen. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.<br /><br /> Weißer Hintergrund<br /> Verwendet die Farbe Weiß, um den Hintergrund anzuzeigen.<br /><br /> Schwarzer Hintergrund<br /> Verwendet die Farbe Schwarz, um den Hintergrund anzuzeigen.<br /><br /> Hintergrund animieren<br /> Schwenkt das Schachbrettmuster langsam. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.|
 |**Eigenschaften**|Öffnet bzw. schließt das Fenster **Eigenschaften**.|
-|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> 
-  **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Um die MIP-Ebenen zu speichern, die Sie generiert haben, müssen Sie zum Speichern des Bilds das DDS-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|
+|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Wenn Sie die MIP-Ebenen speichern möchten, die Sie generiert haben, müssen Sie zum Speichern des Bilds das *DDS*-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|
 
- Dies ist die Symbolleiste des **Bild-Editors**.
+### <a name="image-editor-toolbar"></a>Symbolleiste der Bildbearbeitung
 
- ![Symbolleiste der Bildbearbeitung](../designers/media/digit-tre-toolbar.png)
+![Symbolleiste der Bildbearbeitung](../designers/media/digit-tre-toolbar.png)
 
- In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bild-Editors** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.
+In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeitung** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden:
 
-|Element der Symbolleiste|description|
+|Element der Symbolleiste|Beschreibung |
 |------------------|-----------------|
 |**Zeichenstift**|Verwendet die aktive Farbauswahl, um einen Aliasstrich zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Pinsel**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Airbrush**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen, der in das Bild übergeht und im Laufe der Zeit mehr an Sättigung gewinnt. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Formatpipette**|Legt die aktive Farbauswahl für die Farbe des ausgewählten Pixels fest.|
-|**Füllen**|Verwendet die aktive Farbauswahl, um einen Bereich des Bilds auszufüllen. Der betreffende Bereich wird als der Pixel definiert, auf den die Füllung angewendet wird, zusammen mit jedem Pixel, das mit ihm durch Pixel derselben Farbe verbunden ist und dieselbe Farbe aufweist. Wenn die Füllung innerhalb einer aktiven Auswahl angewendet wird, wird der betroffene Bereich von der Auswahl beschränkt.<br /><br /> Standardmäßig geht die aktive Farbauswahl in den betroffenen Bereich des Bilds entsprechend des Alphaanteils über. Um den betroffenen Bereich mit der aktiven Farbauswahl zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, während Sie das Füllwerkzeug verwenden.|
+|**Füllen**|Verwendet die aktive Farbauswahl, um einen Bereich des Bilds auszufüllen. Der betreffende Bereich wird als der Pixel definiert, auf den die Füllung angewendet wird, zusammen mit jedem Pixel, das mit ihm durch Pixel derselben Farbe verbunden ist und dieselbe Farbe aufweist. Wenn die Füllung innerhalb einer aktiven Auswahl angewendet wird, wird der betroffene Bereich von der Auswahl beschränkt.<br /><br /> Standardmäßig geht die aktive Farbauswahl in den betroffenen Bereich des Bilds entsprechend des Alphaanteils über. Wenn der betroffene Bereich mit der aktiven Farbauswahl überschrieben werden soll, halten Sie die **UMSCHALTTASTE** gedrückt, während Sie das Füllwerkzeug verwenden.|
 |**Radierer**|Legt Pixel auf eine vollständig transparente Farbe fest, wenn das Bild einen Alphakanal unterstützt. Andernfalls werden die Pixel auf die aktuelle Hintergrundfarbe festgelegt.|
-|**Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**|Zeichnet eine Form auf dem Bild. Sie können Farbe und Stärke der Kontur im Fenster **Eigenschaften** festlegen.<br /><br /> Um ein Primitiv mit gleicher Breite und Höhe zu zeichnen, halten Sie die UMSCHALTTASTE beim Zeichnen gedrückt.|
+|**Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**|Zeichnet eine Form auf dem Bild. Sie können Farbe und Stärke der Kontur im Fenster **Eigenschaften** festlegen.<br /><br /> Halten Sie die **UMSCHALTTASTE** beim Zeichnen gedrückt, um ein Primitiv mit gleicher Breite und Höhe zu zeichnen.|
 |**Text**|Verwendet die Vordergrundfarben-Auswahl, um Text zu zeichnen. Die Hintergrundfarbe wird durch die Hintergrundfarben-Auswahl bestimmt. Für einen transparenten Hintergrund muss der Alphawert der Hintergrundfarben-Auswahl 0 sein. Wenn der Textbereich aktiv ist, können Sie festlegen, ob der Text mit einem Strich mit Antialiasing gezeichnet wird. Im Fenster **Eigenschaften** können Sie **Wert**, **Schriftart**, **Größe** und Stil (**Fett**, **Kursiv** oder **Unterstrichen**) für den Text festlegen. Der Inhalt und die Darstellung des Texts wird fertig gestellt, wenn der Textbereich nicht mehr aktiv ist.|
 |**Drehen**|Dreht das Bild um 90 Grad im Uhrzeigersinn.|
 |**Trim** (Kürzen)|Schneidet das Bild gemäß der aktuellen Auswahl ab.|
 
 ### <a name="work-with-mip-levels"></a>Arbeiten mit MIP-Ebenen
 
-Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen MIP-Ebenen für die Detailebene Texturraum. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
+Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen MIP-Ebenen für den Detaillierungsgrad (LOD) des Texturraums. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
 
 ### <a name="work-with-transparency"></a>Arbeiten mit Transparenz
 
-Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, mit Transparenz zu arbeiten. Dies hängt vom Werkzeug ab, das Sie verwenden. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben. Im Folgenden wird gezeigt, wie die verschiedenen Werkzeuge die Anwendung von Transparenz steuern:
+Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, Transparenz zu verwenden. Diese hängen von Ihrem Tool ab. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben.
 
-|Tool|description|
+In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz anwenden:
+
+|Tool|Beschreibung |
 |----------|-----------------|
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|
-|**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Um das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
+|**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Wenn das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) überschrieben werden soll, halten Sie die **UMSCHALTTASTE** gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
 
 ### <a name="image-properties"></a>Bildeigenschaften
 
-Über das Fenster **Eigenschaften** können Sie verschiedene Eigenschaften des Bilds festlegen. Beispielsweise können Sie die Breite und Höhe festlegen, um die Größe des Bilds zu ändern.
+Über das Fenster **Eigenschaften** können Sie verschiedene Eigenschaften des Bilds festlegen. Sie können beispielsweise die Breite und Höhe festlegen, um die Größe des Bilds zu ändern.
 
-In der folgenden Tabelle werden die Bildeigenschaften beschrieben.
+In der folgenden Tabelle werden die Bildeigenschaften beschrieben:
 
-|Eigenschaft|description|
+|Eigenschaft|Beschreibung |
 |--------------|-----------------|
 |Breite|Die Breite des Bilds.|
 |Höhe|Die Höhe des Bilds.|
 |Bits pro Pixel|Die Anzahl der Bits, die jedes Pixel darstellen. Der Wert dieser Eigenschaft hängt vom **Farbformat** des Bilds ab.|
 |Transparente Auswahl|**TRUE**, um die Auswahlebene mit dem Hauptbild basierend auf dem Alphawert der Auswahlebene zu verschmelzen; andernfalls **FALSE**. Dieses Element ist nur verfügbar für Bilder, die Alpha unterstützen.|
-|Format|Das Farbformat des Bilds. Es können viele verschiedene Farbenformate abhängig vom Bildformat angegeben werden. Das Farbformat definiert die Anzahl und Art der Farbkanäle, die im Bild enthalten sind, und auch die Größe und die Codierung der verschiedenen Kanäle.|
+|Format|Das Farbformat des Bilds. Abhängig vom Bildformat können viele verschiedene Farbenformate angegeben werden. Das Farbformat definiert die Anzahl und Art der Farbkanäle, die im Bild enthalten sind, und auch die Größe und die Codierung der verschiedenen Kanäle.|
 |Mip-Ebene|Die aktive MIP-Ebene. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
 |Anzahl der Mip-Ebenen|Die Gesamtanzahl der MIP-Ebenen im Bild. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
 |Anzahl der Frames|Die Gesamtanzahl der Frames im Bild. Dieses Element ist nur für Bilder verfügbar, die Texturarrays unterstützen.|
@@ -169,54 +188,52 @@ In der folgenden Tabelle werden die Bildeigenschaften beschrieben.
 |Tiefensegment|Das aktuelle Tiefensegment. Nur das erste Tiefensegment kann angezeigt werden, alle anderen Segmente gehen beim Speichern des Bilds verloren.|
 
 > [!NOTE]
->  Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **Drehen um** finden Sie unter [Tooleigenschaften](#ToolProperties).
+> Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **Drehen um** finden Sie unter [Tooleigenschaften](#tool -properties).
 
-#### <a name="resize-images"></a>Ändern der Größe von Bildern
+### <a name="resize-images"></a>Ändern der Größe von Bildern
 
-Es gibt folgende zwei Möglichkeiten, die Größe eines Bilds zu ändern. In beiden Fällen verwendet die Bildbearbeitung eine bilineare Interpolation, um das Bild neu zu berechnen.
+Es gibt die folgenden beiden Möglichkeiten, die Größe eines Bilds zu ändern. In beiden Fällen verwendet die **Bildbearbeitung** eine bilineare Interpolation, um das Bild neu zu berechnen.
 
--   Geben Sie im Fenster **Eigenschaften** die neuen Werte für die Eigenschaften **Breite** und **Höhe** an.
+- Geben Sie im Fenster **Eigenschaften** die neuen Werte für die Eigenschaften **Breite** und **Höhe** an.
 
--   Wählen Sie das gesamte Bild aus, und ändern Sie die Größe des Bilds mithilfe der Rahmenmarker.
+- Wählen Sie das gesamte Bild aus, und ändern Sie die Größe des Bilds mithilfe der Rahmenmarker.
 
-### <a name="work-with-tools"></a>Arbeiten mit Tools
+### <a name="selected-regions"></a>Ausgewählte Bereiche
 
-#### <a name="selected-regions"></a>Ausgewählte Bereiche
+Durch eine Auswahl in der **Bildbearbeitung** werden aktive Bildbereiche festgelegt. Diese werden von Tools und Transformationen beeinflusst. Wenn eine aktive Auswahl vorhanden ist, werden Bereiche außerhalb des ausgewählten Bereichs von den meisten Tools und Transformationen nicht beeinflusst. Gibt es keine aktive Auswahl, ist das gesamte Bild aktiv.
 
-Die Auswahl in der Bildbearbeitung legt die Bereiche des Bilds fest, die aktiv sind, das heißt, diese Bereiche sind durch Anwendung der Werkzeuge und Transformationen betroffen. Wenn eine aktive Auswahl vorhanden ist, werden Bereiche außerhalb des ausgewählten Bereichs von den meisten Tools und Transformationen nicht beeinflusst. Gibt es keine aktive Auswahl, ist das gesamte Bild aktiv.
+Die meisten Tools, wie z.B. **Pencil** (Bleistift), **Pinsel**, **Airbrush**, **Füllung**, **Radierer** und 2D-Primitive sowie Transformationen, z.B. **Drehen**, **Trim** (Zuschneiden), **Farben umkehren**, **Horizontal spiegeln** und **Vertikal spiegeln**, werden durch die aktive Auswahl eingeschränkt oder definiert. Einige Tools wie **Pipette** und **Text** sowie Transformationen wie **MIPS generieren** werden hingegen nicht von der aktiven Auswahl beeinflusst. Diese Tools funktionieren so, als würde das gesamte Bild der aktiven Auswahl entsprechen.
 
-Die meisten Tools, wie z.B. **Zeichenstift**, **Pinsel**, **Airbrush**, **Füllen**, **Radierer** und 2D-Primitiven sowie Transformationen, z.B. **Drehen**, **Trim** (Kürzen), **Farben umkehren**, **Horizontal spiegeln** und **Vertikal spiegeln**, werden durch die aktive Auswahl eingeschränkt oder definiert. Es gibt jedoch Tools, z.B. **Formatpipette** und **Text**, und Transformationen, z.B. **MIPS generieren**, die durch eine aktive Auswahl nicht betroffen sind. Diese Tools verhalten sich stets so, als ob das gesamte Bild die aktive Auswahl ist.
+Beim Auswählen eines Bereichs können Sie die **UMSCHALTTASTE** gedrückt halten, um einen rechteckigen Teilbereich auszuwählen. Andernfalls wird die Auswahl nicht eingeschränkt.
 
-Während Sie einen Bereich auswählen, können Sie die UMSCHALTTASTE gedrückt halten, um eine proportionale (quadratische) Auswahl zu treffen. Andernfalls wird die Auswahl nicht beschränkt.
+#### <a name="resize-selections"></a>Ändern der Größe von Auswahlen
 
-##### <a name="resize-selections"></a>Ändern der Größe von Auswahlen
+Nachdem Sie einen Bereich ausgewählt haben, können Sie dessen Größe oder die Größe des Bildinhalts ändern, indem Sie die Größe des Auswahlmarkers ändern. Beim Ändern der Größe des ausgewählten Bereichs können Sie die folgenden Zusatztasten verwenden, um das Verhalten des ausgewählten Bereichs zu ändern:
 
-Nachdem Sie einen Bereich ausgewählt haben, können Sie dessen Größe oder die Größe des Bildinhalts ändern, indem Sie die Größe des Auswahlmarkers ändern. Beim Ändern der Größe des ausgewählten Bereichs können Sie die folgenden Zusatztasten verwenden, um das Verhalten des ausgewählten Bereichs zu ändern (drücken und halten Sie die Taste beim Ändern der Größe).
+**STRG-TASTE:** Kopiert den Inhalt des ausgewählten Bereichs, bevor die Größe geändert wird. Belässt das Originalbild unverändert, während die Größe der Kopie geändert wird.
 
-STRG: Kopiert den Inhalt des ausgewählten Bereichs, bevor die Größe geändert wird. Belässt das Originalbild unverändert, während die Größe der Kopie geändert wird.
+**UMSCHALTTASTE:** Passt die Größe des ausgewählten Bereichs relativ zur ursprünglichen Größe an.
 
-UMSCHALT: Ändert den ausgewählten Bereich relativ zur ursprünglichen Größe.
+**ALT-TASTE:** Ändert die Größe des ausgewählten Bereichs. Das Bild bleibt unverändert.
 
-ALT: Ändert die Größe des ausgewählten Bereichs. Das Bild bleibt unverändert.
+In der folgenden Tabelle werden die gültigen Zusatztasten beschrieben:
 
-Im Folgenden sind die gültigen Kombinationen der Zusatztasten aufgeführt:
-
-|Ctrl|Shift|Alt|description|
+|Ctrl|Shift|Alt|Beschreibung |
 |----------|-----------|---------|-----------------|
 ||||Ändert die Größe des Inhalts des ausgewählten Bereichs.|
-||Shift||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|
-|||Alt|Ändert die Größe des ausgewählten Bereichs. Dadurch wird ein neuer Auswahlbereich definiert.|
-||Shift|Alt|Ändert die Größe des ausgewählten Bereichs proportional. Dadurch wird ein neuer Auswahlbereich definiert.|
-|Ctrl|||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs.|
-|Ctrl|Shift||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs proportional.|
+||**UMSCHALTTASTE**||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|
+|||**ALT**|Ändert die Größe des ausgewählten Bereichs. Dadurch wird ein neuer Auswahlbereich definiert.|
+||**UMSCHALTTASTE**|**ALT**|Ändert die Größe des ausgewählten Bereichs proportional. Dadurch wird ein neuer Auswahlbereich definiert.|
+|**STRG**|||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs.|
+|**STRG**|**UMSCHALTTASTE**||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs proportional.|
 
-#### <a name="tool-properties"></a>Tooleigenschaften
+### <a name="tool-properties"></a>Tooleigenschaften
 
 Wenn ein Tool ausgewählt ist, können Sie über das Fenster **Eigenschaften** angeben, wie es sich auf das Bild auswirken soll. Sie können z.B. die Breite des **Zeichenstift**-Tools oder die Farbe des **Pinsel**-Tools festlegen.
 
 Sie können eine Vordergrundfarbe und eine Hintergrundfarbe festlegen. Beide unterstützen einen Alphakanal, um benutzerdefinierte Deckkraft bereitzustellen. Die Einstellungen gelten für alle Werkzeuge. Wenn Sie eine Maus verwenden, entspricht die linke Maustaste der Vordergrundfarbe und die rechte Maustaste der Hintergrundfarbe.
 
-In der folgenden Tabelle werden die Tooleigenschaften beschrieben.
+In der folgenden Tabelle werden die Tooleigenschaften beschrieben:
 
 |Tool|Eigenschaften|
 |----------|----------------|
@@ -231,49 +248,49 @@ In der folgenden Tabelle werden die Tooleigenschaften beschrieben.
 
 |Befehl|Tastenkombinationen|
 |-------------|------------------------|
-|In den Modus **Auswählen** wechseln|S|
-|In den Modus **Zoom** wechseln|Z|
-|In den Modus **Schwenken** wechseln|K|
-|Alles auswählen|STRG + A|
-|Die aktuelle Auswahl löschen|Löschen|
-|Brechen Sie die aktuelle Auswahl ab.|Escape|
-|Vergrößern|STRG+Mausrad vorwärts<br /><br /> STRG+BILD-AUF<br /><br /> Pluszeichen (+)|
-|Verkleinern|STRG+Mausrad rückwärts<br /><br /> STRG+BILD-AB<br /><br /> Minuszeichen (-)|
-|Bild nach oben schwenken|Mausrad rückwärts<br /><br /> BILD-AB|
-|Bild nach unten schwenken|Mausrad vorwärts<br /><br /> BILD-AUF|
-|Bild nach links schwenken|UMSCHALT+Mausrad rückwärts<br /><br /> Mausrad links<br /><br /> UMSCHALT+BILD-AB|
-|Bild nach rechts schwenken|UMSCHALT+Mausrad vorwärts<br /><br /> Mausrad rechts<br /><br /> UMSCHALT+BILD-AUF|
-|Originalgröße anzeigen|STRG+0 (null)|
-|Bild an Fenster anpassen|STRG+G, STRG+F|
-|Bildbreite an Fenster anpassen|STRG+G, STRG+I|
-|Raster umschalten|STRG+G, STRG+G|
-|Bild auf aktuelle Auswahl zuschneiden|STRG+G, STRG+C|
-|Nächste MIP-Ebene (mehr Detail) anzeigen|STRG+G, STRG+6|
-|Vorherige MIP-Ebene (weniger Detail) anzeigen|STRG+G, STRG+7|
-|Roten Farbkanal ein-/ausschalten|STRG+G, STRG+1|
-|Grünen Farbkanal ein-/ausschalten|STRG+G, STRG+2|
-|Blauen Farbkanal ein-/ausschalten|STRG+G, STRG+3|
-|Alphakanal (Transparenz) ein-/ausschalten|STRG+G, STRG+4|
-|Alphaschachbrettmuster ein-/ausschalten|STRG+G, STRG+B|
-|Zum unregelmäßigen Auswahlwerkzeug wechseln|L|
-|Zum Stabsauswahlwerkzeug wechseln|M|
-|Zum Stiftwerkzeug wechseln|P|
-|Zum Pinselwerkzeug wechseln|B|
-|Zum Füllwerkzeug wechseln|F|
-|Zum Radiererwerkzeug wechseln|E|
-|Zum nächsten Werkzeug wechseln|T|
-|Zum Farbauswahlwerkzeug (Formatpipette) wechseln|I|
-|Aktive Auswahl mit Inhalt verschieben.|Pfeiltasten.|
-|Größe der aktiven Auswahl mit Inhalt ändern.|STRG+Pfeiltasten|
-|Aktive Auswahl ohne Inhalt verschieben.|UMSCHALT+Pfeiltasten|
-|Größe der aktiven Auswahl ohne Inhalt ändern.|UMSCHALT+STRG+Pfeiltasten|
-|Aktuelle Ebene bestätigen|Zurück|
-|Stärke des Werkzeugs verringern|[|
-|Stärke des Werkzeugs erhöhen|]|
+|In den Modus **Auswählen** wechseln|**S**|
+|In den Modus **Zoom** wechseln|**Z**|
+|In den Modus **Schwenken** wechseln|**K**|
+|Alles auswählen|**STRG**+**A**|
+|Die aktuelle Auswahl löschen|**Löschen**|
+|Brechen Sie die aktuelle Auswahl ab.|**ESC** (ESCAPE)|
+|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> **STRG**+**BildAuf**<br /><br /> Pluszeichen (**+**)|
+|Verkleinern|**STRG**-**Mausrad rückwärts**<br /><br /> **STRG**-**BildAb**<br /><br /> Minuszeichen (**-**)|
+|Bild nach oben schwenken|**Mausrad rückwärts**<br /><br /> **BildAb**|
+|Bild nach unten schwenken|**Mausrad vorwärts**<br /><br /> **BildAuf**|
+|Bild nach links schwenken|**UMSCHALTTASTE**+**Mausrad rückwärts**<br /><br /> **Mausrad links**<br /><br /> **UMSCHALTTASTE**+**BildAb**|
+|Bild nach rechts schwenken|**UMSCHALTTASTE**+**Mausrad vorwärts**<br /><br /> **Mausrad rechts**<br /><br /> **UMSCHALTTASTE**+**BildAuf**|
+|Originalgröße anzeigen|**STRG**+**0** (null)|
+|Bild an Fenster anpassen|**STRG**+**G**, **STRG**+**F**|
+|Bildbreite an Fenster anpassen|**STRG**+**G**, **STRG**+**I**|
+|Raster umschalten|**STRG**+**G**, **STRG**+**G**|
+|Bild auf aktuelle Auswahl zuschneiden|**STRG**+**G**, **STRG**+**C**|
+|Nächste MIP-Ebene (mehr Detail) anzeigen|**STRG**+**G**, **STRG**+**6**|
+|Vorherige MIP-Ebene (weniger Detail) anzeigen|**STRG**+**G**, **STRG**+**7**|
+|Roten Farbkanal ein-/ausschalten|**STRG**+**G**, **STRG**+**1**|
+|Grünen Farbkanal ein-/ausschalten|**STRG**+**G**, **STRG**+**2**|
+|Blauen Farbkanal ein-/ausschalten|**STRG**+**G**, **STRG**+**3**|
+|Alphakanal (Transparenz) ein-/ausschalten|**STRG**+**G**, **STRG**+**4**|
+|Alphaschachbrettmuster ein-/ausschalten|**STRG**+**G**, **STRG**+**B**|
+|Zum unregelmäßigen Auswahlwerkzeug wechseln|**L**|
+|Zum Stabsauswahlwerkzeug wechseln|**M**|
+|Zum Stiftwerkzeug wechseln|**P**|
+|Zum Pinselwerkzeug wechseln|**B**|
+|Zum Füllwerkzeug wechseln|**F**|
+|Zum Radiererwerkzeug wechseln|**E**|
+|Zum nächsten Werkzeug wechseln|**T**|
+|Zum Farbauswahlwerkzeug (Formatpipette) wechseln|**I**|
+|Aktive Auswahl mit Inhalt verschieben.|**Pfeiltasten**|
+|Größe der aktiven Auswahl mit Inhalt ändern.|**STRG**+**Pfeiltasten**|
+|Aktive Auswahl ohne Inhalt verschieben.|**UMSCHALTTASTE**+**Pfeiltasten**|
+|Größe der aktiven Auswahl ohne Inhalt ändern.|**UMSCHALTTASTE**+**STRG**+**Pfeiltasten**|
+|Aktuelle Ebene bestätigen|**Return**|
+|Stärke des Werkzeugs verringern|**[**|
+|Stärke des Werkzeugs erhöhen|**]**|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor von Visual Studio für die Arbeit mit 3D-Modellen einsetzen lässt.|

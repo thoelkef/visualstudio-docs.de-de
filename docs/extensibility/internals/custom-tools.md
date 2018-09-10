@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Tools | Microsoft Docs
+title: Benutzerdefinierte Tools | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,43 +15,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f215cfbd5113377e7a98439976a7f44215eee02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306173876d0fd7c4d1da76d1b5432ecd5358c425
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128876"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500238"
 ---
-# <a name="custom-tools"></a>Benutzerdefinierte Tools
-*Benutzerdefinierte Tools* können Sie ein Element in einem Projekt ein Tool zuordnen, und führen Sie dieses Tool aus, bei jedem Speichern die Datei. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei Generatoren*, häufig zum Konvertierer implementieren, das Generieren von Code aus Daten und umgekehrt verwendet werden. Z. B. Einzeldatei Generatoren erstellen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der "Settings" und RESX-Dateien. Die generierten Quellcode stellt stark typisierten Zugriffs auf die Daten in den "Settings" und RESX-Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.  
+# <a name="custom-tools"></a>Benutzerdefinierte tools
+*Benutzerdefinierte Tools* können Sie ein Tool mit einem Element in einem Projekt verknüpfen und das Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei-Generatoren*, werden häufig zum Konvertierer implementieren, das Generieren von Code aus und umgekehrt verwendet. Beispielsweise Erstellen von Einzeldatei-Generatoren [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der *Settings* und *resx* Dateien. Der generierte Quellcode enthält die stark typisierten Zugriff auf die Daten in die *Settings* und *resx* Dateien. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.  
   
- Benutzerdefinierte Tools sind eingetragene implementierenden Komponenten der `IVsSingleFileGenerator` Schnittstelle.  
+ Benutzerdefinierte Tools sind registrierte Komponenten, implementieren die `IVsSingleFileGenerator` Schnittstelle.  
   
- Benutzerdefinierte Tools zugeordnet sind ein `ProjectItem` oberflächenobjekts und Designer und Editoren entsprechen. Ein benutzerdefiniertes Tool verwendet die Datei, dargestellt durch eine `ProjectItem` als Eingabe und schreibt eine neue Datei, deren Dateiname, indem bereitgestellt wird, die `DefaultExtension` Methode.  
+ Benutzerdefinierte Tools zugeordnet sind eine `ProjectItem` oberflächenobjekts und Designer und Editoren entsprechen. Ein benutzerdefiniertes Tool erfordert, die durch dargestellte Datei eine `ProjectItem` als Eingabe und schreibt eine neue Datei, deren Name über erfolgt, die `DefaultExtension` Methode.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Implementieren von Generatoren einzelner Dateien](../../extensibility/internals/implementing-single-file-generators.md)  
+ [Implementieren von Einzeldatei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)  
  Beschreibt, wie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Schnittstelle, um ein benutzerdefiniertes Tool zu implementieren.  
   
- [Registrieren von Generatoren einzelner Dateien](../../extensibility/internals/registering-single-file-generators.md)  
+ [Registrieren Einzeldatei-Generatoren](../../extensibility/internals/registering-single-file-generators.md)  
  Stellt Beschreibungen für die Registrierungseinträge für ein benutzerdefiniertes Tool bereit.  
   
- [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- Erläutert, wie Projektsystemen visuelle Designer zum Zugriff auf generierte Klassen und Typen durch temporäre PE (portable Executable)-Dateien unterstützen.  
+ [Machen Sie Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)  
+ Erläutert, wie Projektsystemen visuelle Designer, Zugriff, die generierten Klassen und Typen durch temporäre PE (portable Executable)-Dateien unterstützen.  
   
- [Beibehalten der Eigenschaft eines Projektelements](../../extensibility/persisting-the-property-of-a-project-item.md)  
- Zeigt, wie eine Eigenschaft des Projekt-Element, z. B. der Autor einer Quelldatei, in der Projektdatei beibehalten werden.  
+ [Speichern Sie die Eigenschaft eines Projektelements](../../extensibility/persisting-the-property-of-a-project-item.md)  
+ Zeigt, wie eine Projektelementeigenschaft, z. B. der Autor einer Quelldatei, in der Projektdatei beibehalten werden.  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Enthält Informationen über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, die eine einzelne Eingabedatei transformiert, in einer einzigen Ausgabedatei, die kompiliert oder zu einem Projekt hinzugefügt werden kann.  
+ Enthält Informationen über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, der transformiert einer einzelnen Eingabedatei in eine einzelne Ausgabedatei, die kompiliert oder zu einem Projekt hinzugefügt werden kann.  
   
  <xref:EnvDTE.ProjectItem>  
  Erläutert die `ProjectItem` -Schnittstelle, die ein Element in einem Projekt darstellt.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Enthält Informationen über die `DefaultExtension` -Methode, die die Dateinamenerweiterung abruft, der den Namen der Ausgabedatei zugewiesen ist.  
+ Enthält Informationen über die `DefaultExtension` Methode, die die Dateinamenerweiterung abruft, der den Namen der Ausgabedatei zugewiesen ist.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erweitern von Projekten](../../extensibility/extending-projects.md)  
- Beschreibt, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekte und Projektmappen, Codedateien und Ressourcendateien und wie die quellcodeverwaltung implementiert zu organisieren.
+ Beschreibt, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekte und Projektmappen, die zum Organisieren von Codedateien und Ressourcendateien und wie Sie Datenquellen-Steuerelement zu implementieren.

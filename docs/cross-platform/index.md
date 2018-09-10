@@ -3,19 +3,20 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Mobile Entwicklung mit C++-Dokumentation | Microsoft-Dokumentation
 description: Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-Geräte.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060950"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232012"
 ---
-# <a name="mobile-development-with-c-documentation"></a>Mobile Entwicklung mit der C++-Dokumentation
+# <a name="mobile-development-with-c-documentation"></a>Mobile Entwicklung mit C++-Dokumentation
 
 Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-Geräte.
 
@@ -27,7 +28,7 @@ Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,11 +47,11 @@ Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informationen über Visual C++ für die plattformübergreifende Mobile-Entwicklung</h3>
+                        <h3>Informationen über Visual C++ für die plattformübergreifende mobile Entwicklung</h3>
                         <p>Verschaffen Sie sich einen Überblick über die plattformübergreifende mobile Entwicklung mit Visual C++.</p>
                     </div>
                 </div>
@@ -65,12 +66,12 @@ Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>Beispiele für die ersten Schritte mit der plattformübergreifenden mobilen Entwicklung.</p>
+                        <h3>Beispiele für die plattformübergreifende mobile Entwicklung</h3>
+                        <p>Sehen Sie sich Beispiele an, die Ihnen bei den ersten Schritten mit der plattformübergreifenden mobilen Entwicklung helfen.</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,7 @@ Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE und Tools für Visual C++-Entwicklung</a><p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE und Tools für die Visual C++-Entwicklung</a><p>
                     </div>
                 </div>
             </div>

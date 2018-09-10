@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Befehlszeilenoptionen | Microsoft Docs
+title: Hinzufügen von Befehlszeilenschaltern | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,53 +16,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: daef07d0b8dd02f6823717b0c0cb5d68d837ccde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098417"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153297"
 ---
-# <a name="adding-command-line-switches"></a>Hinzufügen von Befehlszeilenoptionen
-Sie können Befehlszeilenoptionen hinzufügen, die für Ihr VSPackage gelten, wenn devenv.exe ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die Eigenschaften deklariert. In diesem Beispiel wird der MySwitch Schalter für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und mit dem VSPackage automatisch geladen.  
+# <a name="add-command-line-switches"></a>Hinzufügen von Befehlszeilenschaltern
+Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei *devenv.exe* ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die zugehörigen Eigenschaften deklariert. In diesem Beispiel wird der Schalter MySwitch für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und das VSPackage, die automatisch geladen.  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- Benannte Parameter werden in der folgenden Tabelle gezeigt.  
+ Die benannte Parameter werden in den folgenden Beschreibungen angezeigt.
+
+||||
+|-|-|-|-|
+| Parameter | Beschreibung|
+| Argumente | Die Anzahl der Argumente für den Switch. Kann "*", oder eine Liste von Argumenten. |
+| DemandLoad |  Laden Sie das VSPackage automatisch, wenn dieser auf 1 fest, legen Sie andernfalls auf 0 festgelegt wird. |  
+| HelpString | Die Zeichenfolge "oder" Ressource-ID der Zeichenfolge mit anzuzeigende **Devenv /?**. |
+| name | Der Schalter. |
+| PackageGuid | Die GUID des Pakets. |  
   
- Argumente  
- Die Anzahl der Argumente für den Switch. Kann "*", oder eine Liste von Argumenten.  
+ Der erste Wert der Argumente ist in der Regel 0 oder 1. Ein spezieller Wert von ' *' kann verwendet werden, um anzugeben, dass der gesamte Rest der Befehlszeile das Argument ist. Dies kann nützlich für Debugszenarien, in dem Benutzer in einer Befehlszeichenfolge Debugger übergeben, muss, sein.  
   
- DemandLoad  
- Laden Sie das VSPackage automatisch bei 1, andernfalls auf 0 festgelegt ist.  
+ Der DemandLoad-Wert lautet entweder `true` (1) oder `false` (0) gibt an, dass das VSPackage automatisch geladen werden sollen.  
   
- HelpString  
- Die Zeichenfolge oder Ressourcen-ID der Zeichenfolge mit anzuzeigende **Devenv /?**.  
+ Der HelpString-Wert ist die Ressourcen-ID der Zeichenfolge, die in angezeigt wird der **Devenv /?** Anzeige von Hilfe. Dieser Wert sollte in der Form "#nnn" wobei "nnn" eine ganze Zahl ist. Der Zeichenfolgenwert in der Ressourcendatei sollte auf ein neue-Zeile-Zeichen enden.  
   
- name  
- Der Schalter.  
+ Der Name-Wert ist der Name des Schalters.  
   
- PackageGuid  
- Die GUID des Pakets.  
+ Der Wert des PackageGuid ist die GUID des Pakets, das diesen Schalter implementiert. Die IDE verwendet diese GUID, die das VSPackage in der Registrierung gefunden, für die die Befehlszeilenoption gilt.  
   
- Der erste Wert von Argumenten ist in der Regel 0 oder 1. Spezielle Wert "*" verwendet werden können, um anzugeben, dass der gesamte Rest der Befehlszeile das Argument ist. Dies kann zum Debuggen von Szenarien, in denen ein Benutzer in einer Befehlszeichenfolge Debugger übergeben muss, hilfreich sein.  
-  
- Ist der Wert DemandLoad `true` (1) oder `false` (0) gibt an, dass das VSPackage automatisch geladen werden soll.  
-  
- Der HelpString-Wert ist die Ressourcen-ID der Zeichenfolge, die in den Devenv /? Anzeige von Hilfe. Dieser Wert sollte im Format "#nnn" wobei "nnn" eine ganze Zahl ist. Der Zeichenfolgenwert in der Ressourcendatei sollte ein neue-Zeile-Zeichen beendet werden.  
-  
- Die Name-Wert ist der Name des Schalters.  
-  
- Der PackageGuid-Wert ist die GUID des Pakets, das diesen Schalter implementiert. Die IDE verwendet diese GUID das VSPackage in der Registrierung gefunden, für die die Befehlszeilenoption gilt.  
-  
-## <a name="retrieving-command-line-switches"></a>Abrufen von Befehlszeilenoptionen  
- Wenn das Paket geladen wird, können Sie die Befehlszeilenschaltern abrufen, durch die folgenden Schritte auszuführen.  
+## <a name="retrieve-command-line-switches"></a>Abrufen von Befehlszeilenschaltern  
+ Wenn das Paket geladen wird, können Sie die Befehlszeilenschalter abrufen, die folgenden Schritte aus.  
   
 1.  In Ihrem VSPackages <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> -Implementierung, rufen `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> zum Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> Schnittstelle.  
   
-2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> die Befehlszeilenschaltern abgerufen, die der Benutzer eingegeben.  
+2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> die Befehlszeilenschalter abgerufen, die vom Benutzer eingegebene.  
   
  Der folgende Code zeigt, wie Sie herausfinden, ob die Befehlszeilenoption MySwitch vom Benutzer eingegeben wurde:  
   
@@ -75,7 +69,7 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- Es liegt in Ihrer Verantwortung jedes Mal, wenn das Paket geladen wird, für die Befehlszeilenoptionen zu überprüfen.  
+ Es ist Ihre Aufgabe, die für Ihre Befehlszeilenschalter überprüfen jedes Mal, wenn das Paket geladen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   

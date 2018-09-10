@@ -1,5 +1,5 @@
 ---
-title: Zugreifen auf TheText Ansicht über die Legacy-API | Microsoft Docs
+title: Zugreifen auf TheText Ansicht mit der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 534016bda397ca998740c9fcc8252f4efbc8ccc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fe57ab7ef5ac113f1248f89cd62ef5b9ec33ca3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097782"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081822"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Zugreifen auf TheText Ansicht über die Legacy-API
-Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeichert ist. Sie können die Textansicht zugreifen, mithilfe der legacy-API, wie im folgenden Abschnitt gezeigt.
+# <a name="access-the-text-view-by-using-the-legacy-api"></a>Zugriff auf die Textansicht mit der legacy-API
+Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeichert ist. Sie können die Textansicht zugreifen, mit der legacy-API, wie im folgenden Abschnitt gezeigt.
 
-## <a name="text-view-object"></a>TextView-Objekt
- Jede Ansicht eine eigene Textpuffer zugeordnet ist, und die Ansicht ist ein Fenster auf die Daten in den Puffer. Das folgende Diagramm zeigt die wichtigsten Schnittstellen des Text-View-Objekts, der durch dargestellt wird <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
+## <a name="text-view-object"></a>Textansichtsobjekt
+ Jede Ansicht eine eigene Textpuffer zugeordnet ist, und die Ansicht ist ein Fenster auf die Daten in den Puffer. Das folgende Diagramm zeigt die wichtigsten Textansichtsobjekt, der durch dargestellt wird-Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Visual Studio-TextView-Objekt](../extensibility/media/vstextview.gif "Vstextview") TextView-Objekt
+ ![Visual Studio-TextView-Objekt](../extensibility/media/vstextview.gif "Vstextview") Textansichtsobjekt
 
- Die Ansicht ist eine Möglichkeit zum Darstellen von Text in den Puffer. Es enthält Funktionen, z. B. Zeilenumbruch, und gliedern, sodass sehen Sie in der Ansicht keine genaue Darstellung des Texts in den Puffer ist.
+ Die Ansicht ist eine Möglichkeit zum Darstellen von Text im Puffer. Es enthält Features wie z. B. den Zeilenumbruch und Gliederungen, sodass die Daten in der Ansicht keine genaue Darstellung des Texts im Puffer sind.
 
- Eine Sicht kann andere Dienste oder Prozesse eingehende Befehle abfangen und entsprechend reagieren, bevor die Ansicht für sie ausgeführt. Der am häufigsten verwendete Dienst zu diesem Zweck wird eine Sprachdienst. Ein Sprachdienst, z. B. müssen möglicherweise den Befehl für die EINGABETASTE, um benutzerdefinierte einrücken Verhalten oder die Tool-Tipps generieren abzufangen.
+ Eine Ansicht kann andere Dienste oder Prozesse, die eingehenden Befehle abzufangen und entsprechende Maßnahmen zu ergreifen, bevor die Ansicht auf diesen fungiert. Der am häufigsten verwendete Dienst dazu ist ein Sprachdienst. Ein Sprachdienst, zum Beispiel müssen möglicherweise abfangen, den Befehl für die EINGABETASTE, um benutzerdefinierte einrücken Verhalten oder die Tool-Tipps generieren.
 
-## <a name="adding-functionality-to-the-text-view"></a>Hinzufügen von Funktionalität zu Textansicht
- Sie können Text anzeigen Verhalten anpassen, durch die Behandlung von bestimmter Tastatureingaben. Implementieren Sie zum Abfangen von Tastenanschläge <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> für das Objekt, und geben Sie einen Befehlsziel (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) zu überwachen und abzufangen Befehle.
+## <a name="add-functionality-to-the-text-view"></a>Hinzufügen von Funktionen bei der Textansicht an
+ Sie können die textansichtsverhalten anpassen, indem Sie bestimmte Tastatureingaben zu behandeln. Um die Tastatureingaben abfangen, implementieren Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> auf das Objekt, und geben Sie ein Befehlsziel (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) überwachen und Abfangen von Befehlen.
 
- Textansicht verwendet sequenzielle Architektur für den Befehl Filtern. Neuen Befehlsfilter (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Objekte) in der Sequenz hinzugefügt werden, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode.
+ Die Textansicht verwendet sequenzielle Architektur für den Befehl Filtern. Neuen Befehlsfilter (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Objekte) in der Sequenz hinzugefügt werden, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode.
 
- Ereignisbenachrichtigung für die Textansicht wird bereitgestellt, mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents> Schnittstelle. Implementieren Sie diese Schnittstelle für das Clientobjekt, um Benachrichtigungen zu Änderungen an der Textansicht. Diese Schnittstelle anzuzeigende Text verfügbar machen, mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Schnittstelle in der Textansicht, um Benachrichtigungen zu Änderungen in der Ansicht.
+ Die ereignisbenachrichtigung für die Textansicht wird bereitgestellt, mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents> Schnittstelle. Implementieren Sie diese Schnittstelle für das Clientobjekt zum Empfangen von Benachrichtigungen über Änderungen an der Textansicht ein. Diese Schnittstelle die Textansicht verfügbar machen, mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Schnittstelle für die Textansicht zum Empfangen von Benachrichtigungen über Änderungen in der Ansicht.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ändern Einstellungen anzeigen, über die Legacy-API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
-- [Verwenden die Text-Manager zum Überwachen von globaler Einstellungen](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
+- [Ändern der ansichtseinstellungen mithilfe der legacy-API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
+- [Verwenden Sie den TextManager zum Überwachen von globaler Einstellungen](../extensibility/using-the-text-manager-to-monitor-global-settings.md)

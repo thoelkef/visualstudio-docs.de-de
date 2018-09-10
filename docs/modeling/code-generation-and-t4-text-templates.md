@@ -17,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: a273e6a82bbf99d1a3d57f3759504fedaa5532e6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425500"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176280"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 
-In Visual Studio eine *T4-Textvorlage* ist eine Mischung von Textblöcken und steuernder Logik, die eine Textdatei generieren kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art enthalten, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache.
+In Visual Studio eine *T4-Textvorlage* ist eine Mischung von Textblöcken und steuernder Logik, eine Textdatei generiert werden kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache sein.
 
-Es gibt zwei Arten von T4-Textvorlagen: Führen Sie auch zur Entwurfszeit.
+Es gibt zwei Arten von T4-Textvorlagen: ausführen und Entwurfszeit.
 
-## <a name="run-time-t4-text-templates"></a>T4-Entwurfszeittextvorlagen ausführen
+## <a name="run-time-t4-text-templates"></a>Führen Sie die Laufzeit T4-Textvorlagen
 
-Auch bekannt als erfolgen "vorverarbeitete" Vorlagen, Zeit Vorlagen ausführen in Ihrer Anwendung um Textzeichenfolgen, in der Regel als Teil der Ausgabe zu erzeugen. Sie könnten beispielsweise eine Vorlage erstellen, um eine HTML-Seite zu definieren:
+"Vorverarbeitete" Vorlagen, führen Sie die Zeit Vorlagen werden auch in Ihrer Anwendung um Textzeichenfolgen, in der Regel als Teil der Ausgabe ausgeführt. Sie könnten beispielsweise eine Vorlage erstellen, um eine HTML-Seite zu definieren:
 
 ```
 <html><body>
@@ -50,17 +50,17 @@ Um die Ausgabe zu generieren, ruft die Anwendung eine Funktion auf, die über di
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-Ihre Anwendung kann auf einem Computer ausgeführt, das keine Visual Studio installiert.
+Ihre Anwendung kann auf einem Computer ausführen, die keine Visual Studio installiert.
 
 Um eine Laufzeitvorlage zu erstellen, fügen Sie Ihrem Projekt eine **Vorverarbeitete Textvorlage** -Datei hinzu. Alternativ können Sie eine Nur-Text-Datei hinzufügen und deren Eigenschaft **Benutzerdefiniertes Tool** auf **TextTemplatingFilePreprocessor**festlegen.
 
 Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
-## <a name="design-time-t4-text-templates"></a>Entwerfen von T4-Entwurfszeittextvorlagen
+## <a name="design-time-t4-text-templates"></a>Entwerfen der Laufzeit T4-Textvorlagen
 
-Design-Time-gebündelt Teil des Quellcodes sowie andere Ressourcen Ihrer Anwendung zu definieren. In der Regel verwenden Sie mehrere Vorlagen, die Daten in einer einzelnen Eingabedatei oder Datenbank gelesen, und Generieren einiger Ihrer *cs*, *vb*, oder sonstigen Quelldateien. Aus jeder Vorlage wird eine Datei generiert. Sie werden in Visual Studio oder MSBuild ausgeführt.
+Design-Time-Vorlagen definieren die Teil des Quellcodes sowie andere Ressourcen Ihrer Anwendung. In der Regel auf der Sie verwenden mehrere Vorlagen, die die Daten in einer einzelnen Eingabedatei oder Datenbank gelesen, und Generieren einiger Ihrer *cs*, *vb*, oder in anderen Quelldateien. Aus jeder Vorlage wird eine Datei generiert. Sie werden in Visual Studio oder MSBuild ausgeführt.
 
-Ihre Eingabedaten könnten beispielsweise Konfigurationsdaten in einer XML-Datei sein. Wenn Sie während der Entwicklung die XML-Datei bearbeiten, generieren Sie Textvorlagen Teil des Anwendungscodes neu. Eine der Vorlagen könnte so wie im folgenden Beispiel aussehen:
+Ihre Eingabedaten könnten beispielsweise Konfigurationsdaten in einer XML-Datei sein. Wenn Sie die XML-Datei während der Entwicklung bearbeitet haben, generieren die Textvorlagen Teil des Anwendungscodes neu. Eine der Vorlagen könnte so wie im folgenden Beispiel aussehen:
 
 ```
 <#@ output extension=".cs" #>

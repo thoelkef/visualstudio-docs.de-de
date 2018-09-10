@@ -9,88 +9,88 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951371"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382261"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
-Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in eine domänenspezifische Sprache (DSL) angezeigt wird. Sie können die Decorator-angezeigt und nicht mehr angezeigt, je nach den Status der Eigenschaften im Modell. Auf eine Form, die eine Person darstellt, konnte Sie z. B. unterschiedliche Symbole verfügen, die angezeigt werden, abhängig von der Person Geschlecht, Anzahl der untergeordneten Elemente, und so weiter.
+Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können das Decorator-angezeigt und nicht mehr angezeigt, abhängig von der Zustand der Eigenschaften im Modell. Für eine Form, die eine Person darstellt, können Sie z. B. unterschiedliche Symbole haben, die je nach Geschlecht der Person, die Anzahl der untergeordneten Elemente angezeigt werden und so weiter.
 
-## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuerung der Sichtbarkeit eines Symbols oder Decorator-Element
- Das folgende Verfahren wird davon ausgegangen, dass Sie bereits eine Form vom Typ und seine Zuordnung zu einer Domänenklasse definiert haben. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).
+## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Element
+ Das folgende Verfahren wird davon ausgegangen, dass Sie bereits eine Form vom Typ und seine Zuordnung zu einer Domänenklasse definiert haben. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
-#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Um die Sichtbarkeit von ein Symbol oder Text Decorator steuern
+#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Steuern der Sichtbarkeit des ein Symbol oder Text-Decorator-Element
 
-1.  In der DSL-Definitionsdiagramm Hinzufügen der Form "-Klasse, die Symbole oder Text Decorator-Elementen, die angezeigt werden sollen.
+1.  Fügen Sie in der DSL-Definitionsdiagramm hinzu, die Shape-Klasse, die Symbole oder Text-Decorator-Elemente, die angezeigt werden sollen.
 
-    1.  Mit der rechten Maustaste der Form "-Klasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den Typ der Decorator-Element.
+    1.  Mit der rechten Maustaste der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den erforderlichen Typ des Decorator-Elements.
 
-    2.  Legen Sie die Decorator **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise konnten Sie Symbole für Männlich und Weiblich, die gemeinsame Nutzung der gleichen Position haben.
+    2.  Festlegen des Decorator-Elements **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise können Sie Symbole für "Männlich" und "weiblich", die gemeinsame Nutzung der gleichen Position haben.
 
-    3.  Legen Sie die **Symbol "Standard"** ein Symbol Decorator-Eigenschaft.
+    3.  Legen Sie die **Standardsymbol** Eigenschaft ein Symbol für Decorator-Elements.
 
-2.  Wählen Sie die Zuordnung der Diagramm-Element, die der grauen Linie zwischen der Form "-Klasse und die Domänenklasse auf der DSL-Definitionsdiagramm ist.
+2.  Wählen Sie die diagrammelementzuordnung, d.h. die graue Linie zwischen der Shape-Klasse und der Domänenklasse im DSL-Definitionsdiagramm.
 
-3.  In der DSL-Detailfenster in die **Decorator-Zuordnungen** Registerkarte, wählen Sie einen Decorator-Element. Beispiel: die MaleDecorator.
+3.  Im Fenster "DSL-Details" in der **Decorator-Zuordnungen** wählen ein Decorator-Element. Beispiel: die MaleDecorator.
 
 4.  Überprüfen Sie die **Sichtbarkeitsfilter** Feld.
 
-5.  Wenn die Eigenschaft "Domain", die Sichtbarkeit zu steuern, sollten auf den unmittelbaren Domänenklasse, lassen **Pfad zur Filter-Eigenschaft** leer.
+5.  Wenn die Eigenschaft "Domain", die die Sichtbarkeit zu steuern, sollten in der unmittelbaren Domänenklasse ist, lassen Sie **Pfad zur Filter-Eigenschaft** leer.
 
-     Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu der Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.
+     Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu die Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.
 
-    -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht durch eine Beziehung mit markierten navigieren "*" in der Navigations-Tool.
+    -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht über eine Beziehung mit markierten navigieren "*" in das Navigationstool.
 
-6.  Legen Sie die **Filtereigenschaft** auf eine Eigenschaft "Domain". Beispielsweise Geschlecht.
+6.  Legen Sie die **Filtereigenschaft** an einer Domäneneigenschaft. Beispielsweise Geschlecht.
 
-7.  In der **Sichtbarkeit Einträge** aufzulisten, fügen Sie die Werte dieser Eigenschaft "Domain" für die die Decorator sichtbar sein sollte. Z. B. Männlich.
+7.  In der **Sichtbarkeitseinträge** aufzulisten, fügen Sie die Werte dieser Domäneneigenschaft, die für die das Decorator-Element angezeigt werden. Beispiel: "Männlich".
 
-8.  Wiederholen Sie die Schritte für jedes Symbol aus.
+8.  Wiederholen Sie die Schritte für jedes Symbol ein.
 
-9. **Transformieren aller Vorlagen**erstellen und auszuführen, und öffnen Sie ein Diagramm.
+9. **Alle Vorlagen transformieren**, erstellen und auszuführen, und öffnen Sie ein Diagramm.
 
-10. Wenn Sie den steuernden Eigenschaftswert ändern, sollten die Decorator-Elemente angezeigt werden und nicht mehr angezeigt.
+10. Wenn Sie steuern den Wert der Eigenschaft ändern, sollte die Decorator-Elemente angezeigt werden und nicht mehr angezeigt.
 
- In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links eines bestimmten Typs abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren.
+ In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links von einem bestimmten Typ abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren an.
 
-#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Um die Sichtbarkeit der einen Decorator-Element basierend auf einer Formel zu steuern
+#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Um die Sichtbarkeit eines Decorator-Elements anhand einer Formel zu steuern.
 
-1.  Hinzufügen einer berechneten Domäneneigenschaft auf die Domänenklasse. In der **Eigenschaften** Fenster, legen Sie die folgenden Werte:
+1.  Fügen Sie eine berechnete Domäneneigenschaft, mit der Domänenklasse. In der **Eigenschaften** legen die folgenden Werte:
 
-     **IsBrowsable =**`False`**-wird die Eigenschaft für den Benutzer ausgeblendet** 
+     **IsBrowsable =**`False`**– Dadurch wird die Eigenschaft vom Benutzer ausgeblendet.** 
 
-     **Art =**`Calculated`**– Dies bedeutet, dass Sie Clientcode bereitgestellt werden, die den Wert berechnet.** 
+     **Art =**`Calculated`**– Dies bedeutet, dass Sie Code bereitstellen, die den Wert berechnet.** 
 
      **Namen** z. B. **DecoratorControl**
 
-     **Datentyp** = `Boolean`
+     **Typ** = `Boolean`
 
-     Weitere Informationen finden Sie unter [berechnet und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).
+     Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
-2.  Stellen Sie die neue Eigenschaft Decorator Sichtbarkeit zu steuern.
+2.  Stellen Sie die neue Eigenschaft, die die Decorator-Sichtbarkeit zu steuern.
 
-    1.  Wählen Sie die Zuordnung der Diagramm-Element, also der grauen Linie von der Domänenklasse mit der Form. In der **DSL-Detailfenster** geöffnete Fenster die **DecoratorMap** Registerkarte.
+    1.  Wählen Sie die diagrammelementzuordnung, d. h. die graue Linie aus der Domänenklasse mit der Form. In der **DSL-Details** geöffnete Fenster die **DecoratorMap** Registerkarte.
 
     2.  Überprüfen Sie die **Sichtbarkeitsfilter** Feld.
 
     3.  In **Filtereigenschaft**, wählen Sie die Steuerelementeigenschaft **DecoratorControl**.
 
-    4.  Klicken Sie unter **Sichtbarkeit Einträge**, geben Sie `True`.
+    4.  Klicken Sie unter **Sichtbarkeitseinträge**, geben Sie `True`.
 
-3.  Klicken Sie auf **alle Vorlagen transformieren** in der Projektmappen-Explorer-Symbolleiste.
+3.  Klicken Sie auf **alle Vorlagen transformieren** in die **Projektmappen-Explorer** Symbolleiste.
 
 4.  Klicken Sie auf **Projektmappe** auf die **erstellen** Menü.
 
-5.  Doppelklicken Sie auf den Fehlerbericht an, die aufgetreten ist: "*YourClass* enthält keine Definition für GetDecoratorControlValue...".
+5.  Doppelklicken Sie auf den Fehlerbericht, der angezeigt wurde: "*Ihreklasse* enthält keine Definition für GetDecoratorControlValue...".
 
-     Auf Dsl\GeneratedCode\DomainClasses.cs wird der Text-Editor geöffnet. Oberhalb der markierten Fehler befindet sich ein Kommentar, der Ihnen das Hinzufügen einer Methode anfordert.
+     Text-Editor wird auf Dsl\GeneratedCode\DomainClasses.cs geöffnet. Über den hervorgehobenen Fehler befindet sich ein Kommentar, der Sie zum Hinzufügen einer Methode anfordert.
 
-6.  Beachten Sie den Namespace, Klasse und Methode, die fehlen.  Beispielsweise Company.FamilyTree.Person.GetDecoratorControlValue().
+6.  Beachten Sie den Namespace, Klasse und Methode, die fehlen.  Beispiel: Company.FamilyTree.Person.GetDecoratorControlValue().
 
-7.  Schreiben Sie eine partielle Klassendefinition, die die fehlende Methode enthält, in einer eigenen Codedatei. Zum Beispiel:
+7.  Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Zum Beispiel:
 
     ```
     namespace Company.FamilyTree
@@ -101,9 +101,9 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in eine d
     } } }
     ```
 
-     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-8.  Erstellen Sie neu, und führen Sie die Projektmappe.
+8.  Neu, und führen Sie die Projektmappe.
 
 ## <a name="see-also"></a>Siehe auch
 

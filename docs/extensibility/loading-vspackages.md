@@ -1,5 +1,5 @@
 ---
-title: Laden von VSPackages | Microsoft Docs
+title: Laden von VSPackages | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 008cd31bc3d9f909477089e608393f596bfb0682
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 26bd199a688b1b47728aac561720224a71f1583b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140013"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638146"
 ---
-# <a name="loading-vspackages"></a>Laden von VSPackages
-VSPackages sind in Visual Studio nur geladen, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird eine VSPackage geladen, wenn Visual Studio verwendet, ein Projekt Vorinstallations- oder ein Dienst, den das VSPackage implementiert. Dieses Feature heißt verzögertes Laden, die nach Möglichkeit zur Verbesserung der Leistung verwendet wird.  
+# <a name="load-vspackages"></a>Laden von VSPackages
+VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird eine VSPackage geladen, wenn Visual Studio verwendet eine Projektzuordnungsinstanz oder ein Dienst, den das VSPackage implementiert. Dieses Feature heißt verzögertes Laden, die nach Möglichkeit zur Verbesserung der Leistung verwendet wird.  
   
 > [!NOTE]
->  Visual Studio kann bestimmte VSPackage-Informationen, z. B. die Befehle ermitteln, die eine VSPackage bietet, ohne zu laden das VSPackage.  
+>  Visual Studio kann bestimmte VSPackage-Informationen, z. B. der Befehle bestimmen, die eine VSPackage bietet, ohne Sie zu das VSPackage zu laden.  
   
- VSPackages können z. B. auf Autoload in einem bestimmten Benutzerkontext von Benutzeroberfläche (UI) festgelegt werden, wenn eine Projektmappe geöffnet ist. Die <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Attribut legt dieser Kontext fest.  
+ VSPackages kann z. B. Automatisches Laden, in einem bestimmten Benutzerkontext von Benutzeroberfläche (UI) festgelegt werden, wenn eine Projektmappe geöffnet ist. Die <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> -Attribut wird von diesem Kontext.  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Automatisches Laden ein VSPackage in einem bestimmten Kontext  
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Automatisches Laden eines VSPackages in einem bestimmten Kontext  
   
 -   Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:  
   
@@ -42,22 +42,22 @@ VSPackages sind in Visual Studio nur geladen, wenn ihre Funktionalität erforder
     {. . .}  
     ```  
   
-     Finden Sie unter den aufgelisteten Felder des <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> eine Liste der Benutzeroberflächen-Kontexte und ihre GUID-Werte.  
+     Finden Sie unter den aufgelisteten Felder <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> für eine Liste mit den Benutzeroberfläche-Kontexte und die GUID-Werte.  
   
--   Legen Sie einen Haltepunkt der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+-   Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
--   Das VSPackage erstellen und mit dem Debuggen beginnen.  
+-   Das VSPackage zu erstellen und mit dem Debuggen beginnen.  
   
 -   Laden Sie eine Projektmappe, oder erstellen.  
   
-     Das VSPackage lädt und hält am Haltepunkt an.  
+     Das VSPackage lädt, und die Ausführung am Haltepunkt beendet.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Erzwingen eine VSPackage geladen  
- Unter bestimmten Umständen möglicherweise eine VSPackage Erzwingen von einem anderen VSPackage geladen werden soll. Eine einfache VSPackage möglicherweise z. B. eine größere VSPackage in einem Kontext geladen, die nicht als ein CMDUIContext verfügbar ist.  
+## <a name="force-a-vspackage-to-load"></a>Erzwingen eines VSPackage geladen  
+ Unter bestimmten Umständen möglicherweise eine VSPackage Erzwingen von einem anderen VSPackage geladen werden. Eine einfache VSPackage kann z. B. eine größeren VSPackage in einem Kontext laden, die nicht als eine CMDUIContext verfügbar ist.  
   
- Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> Methode, um ein VSPackage geladen zu erzwingen.  
+ Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> -Methode zum Erzwingen eines VSPackages zu laden.  
   
--   Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode das VSPackage, das einem anderen VSPackage beim Laden erzwingt:  
+-   Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -70,9 +70,9 @@ VSPackages sind in Visual Studio nur geladen, wenn ihre Funktionalität erforder
   
     ```  
   
-     Bei der Initialisierung des VSPackages wird erzwungen `PackageToBeLoaded` geladen.  
+     Bei der Initialisierung des VSPackages wird gezwungen `PackageToBeLoaded` geladen.  
   
-     Force laden sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwendung [verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md) stattdessen.
+     -Force-Loading sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwendung [verwenden und Dienste bereitstellen](../extensibility/using-and-providing-services.md) stattdessen.
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)

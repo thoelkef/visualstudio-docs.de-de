@@ -1,5 +1,5 @@
 ---
-title: Diagnostizieren von Problemen nach der Bereitstellung | Microsoft Docs
+title: Diagnostizieren von Problemen nach der Bereitstellung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 04/10/2018
 ms.technology: vs-ide-debug
@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479610"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280205"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostizieren von Problemen nach der Bereitstellung
 Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrace zu diagnostizieren, geben Sie Buildinformationen zu Ihrer Version mit an, damit Visual Studio automatisch die richtigen Quelldateien und Symboldateien findet, die für das Debuggen des IntelliTrace-Protokolls erforderlich sind.  
 
  Wenn Sie Microsoft Monitoring Agent zur Steuerung von IntelliTrace verwenden, müssen Sie Application Performance Monitoring auf dem Webserver einrichten. Auf diese Weise werden Diagnoseereignisse beim Betrieb Ihrer App gesammelt und in einer IntelliTrace-Protokolldatei gespeichert. Anschließend können Sie die Ereignisse in Visual Studio Enterprise (nicht den Professional oder Community Editions) öffnen, zum Code springen, in dem ein Ereignis eingetreten ist, die aufgezeichneten Werte zum jeweiligen Zeitpunkt anzeigen und den ausgeführten Code vorwärts oder rückwärts durchlaufen. Nachdem Sie das Problem gefunden und behoben haben, wiederholen Sie den Zyklus zum Erstellen, Freigeben und Überwachen der Version, um zukünftige Probleme früher und schneller beheben zu können.  
 
- ![Code, erstellen, freigeben, überwachen, zu diagnostizieren, beheben Sie](../debugger/media/ffr_cycle.png "FFR_Cycle")  
+ ![Code, build, release, Überwachung, diagnose und Korrektur](../debugger/media/ffr_cycle.png "FFR_Cycle")  
 
  **Sie benötigen Folgendes:**  
   
--   Visual Studio 2017, Visual Studio 2015 oder Team Foundation Server 2017 2015, 2013, 2012 oder 2010 zum Erstellen Ihres Builds  
+-   Visual Studio 2017, Visual Studio 2015 oder Team Foundation Server 2017, 2015, 2013, 2012 oder 2010 zum Erstellen Ihres Builds  
   
 -   Microsoft Monitoring Agent zum Überwachen der App und zum Aufzeichnen von Diagnosedaten  
 
 -   Visual Studio Enterprise (nicht Professional oder Community Editions) zum Anzeigen von Diagnosedaten und Debuggen Ihres Codes mit IntelliTrace  
 
-##  <a name="SetUpBuild"></a> Schritt 1: Aufnehmen der Buildinformationen in Ihr Release  
+##  <a name="SetUpBuild"></a> Schritt 1: Aufnehmen der Buildinformationen in Ihre Version  
  Richten Sie den Buildprozess ein, um eine Buildmanifestdatei (BuildInfo.config) für Ihr Webprojekt zu erstellen und fügen Sie dieses Manifest in Ihre Version ein. Dieses Manifest enthält Informationen über Projekt, Quellcodeverwaltung und Buildsystem, die für die Erstellung einer bestimmten Version verwendet wurden. Mit diesen Informationen kann Visual Studio die entsprechenden Quellen und Symbole finden, nachdem Sie das IntelliTrace-Protokoll geöffnet haben, um die aufgezeichneten Ereignisse zu prüfen.  
 
 ###  <a name="AutomatedBuild"></a> Erstellen des buildmanifests für einen automatischen Buildvorgang mithilfe von Team Foundation Server  
@@ -41,11 +41,11 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- Richten Sie Ihre Builddefinition so ein, dass diese den Ort Ihrer Quellen sowie Build und Symbole in das Buildmanifest (BuildInfo.config-Datei) schreibt. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
+ Richten Sie Ihrer erstellungspipeline aus, um die Speicherorte von der Quelle, Build und Symbole das buildmanifest (BuildInfo.config-Datei) hinzufügen. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
   
-1.  Wenn Sie bereits eine Builddefinition, die mithilfe der Vorlage für ASP.NET Core ((.NET Framework) verfügen, können Sie entweder [bearbeiten Sie die Builddefinition oder Erstellen einer neuen Builddefinition.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  Wenn Sie bereits über eine Buildpipeline, die mithilfe der Vorlage für ASP.NET Core ((.NET Framework) verfügen, können Sie entweder [Ihrer erstellungspipeline bearbeiten oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer)
   
-     ![Builddefinition in TFS 2017 anzeigen](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Anzeigen von Buildpipeline in TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  Wenn Sie eine neue Vorlage erstellen, wählen Sie die Vorlage für ASP.NET Core ((.NET Framework). 
   
@@ -55,26 +55,26 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
   
      Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt. Später fügen Sie ein MSBuild-Argument hinzu, um anzugeben, wo die Symboldateien gespeichert werden sollen.
   
-     ![Einrichten der Symbolpfad in Builddefinition TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Einrichten der Symbolpfad in TFS 2017-Buildpipeline](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
   
 4.  Fügen Sie dieses MSBuild-Argument hinzu, um TFS und Symboldateispeicherorte zur Buildmanifestdatei hinzuzufügen:  
   
-     **/p:IncludeServerNameInBuildInfo = "true"**  
+     **/p:IncludeServerNameInBuildInfo = True**  
   
      Jeder, der auf Ihren Webserver zugreifen kann, kann diese Speicherorte im Buildmanifest anzeigen. Achten Sie darauf, dass Ihr Quellserver sicher ist.
   
 6.  Führen Sie einen neuen Build aus.  
   
-    Wechseln Sie zu [Schritt 2: Freigeben der app](#DeployRelease)  
+    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- Richten Sie Ihre Builddefinition so ein, dass diese den Ort Ihrer Quellen sowie Build und Symbole in das Buildmanifest (BuildInfo.config-Datei) schreibt. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.  
+ Richten Sie Ihrer erstellungspipeline aus, um die Speicherorte von der Quelle, Build und Symbole das buildmanifest (BuildInfo.config-Datei) hinzufügen. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.  
 
-1.  [Bearbeiten Sie die Builddefinition aus, oder erstellen Sie eine neue Builddefinition.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [Bearbeiten Sie Ihrer erstellungspipeline, oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer)  
 
-     ![Builddefinition in TFS 2013 anzeigen](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![Anzeigen von Buildpipeline in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  Wählen Sie die Standardvorlage (TfvcTemplate.12.xaml) oder eine eigene benutzerdefinierte Vorlage aus.  
 
@@ -84,13 +84,13 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt. Später fügen Sie ein MSBuild-Argument hinzu, um anzugeben, wo die Symboldateien gespeichert werden sollen.  
 
-     ![Einrichten der Symbolpfad in Builddefinition TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Einrichten der Symbolpfad in TFS 2013-Buildpipeline](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
 
 4.  Fügen Sie dieses MSBuild-Argument hinzu, um TFS und Symboldateispeicherorte zur Buildmanifestdatei hinzuzufügen:  
 
-     **/p:IncludeServerNameInBuildInfo = "true"**  
+     **/p:IncludeServerNameInBuildInfo = True**  
   
      Jeder, der auf Ihren Webserver zugreifen kann, kann diese Speicherorte im Buildmanifest anzeigen. Achten Sie darauf, dass Ihr Quellserver sicher ist.
 
@@ -102,7 +102,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
   
      Fügen Sie der Webprojektdatei (CSPROJ oder VBPROJ) diese Zeilen hinzu:  
   
-    ```  
+    ```xml
     <!-- Import the targets file. Change the folder location as necessary. -->  
        <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
@@ -112,18 +112,18 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 6.  Führen Sie einen neuen Build aus.  
 
-    Wechseln Sie zu [Schritt 2: Freigeben der app](#DeployRelease)  
+    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)  
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 oder 2010  
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.  
 
 1.  Installieren Sie eine beliebige Edition von Visual Studio 2013 auf Ihrem Team Foundation Build-Server.  
 
-2.  Geben Sie in Ihrer Builddefinition an, wo die Symbole gespeichert werden sollen, sodass die Quelle automatisch indiziert wird.  
+2.  Geben Sie in Ihrer erstellungspipeline an, wo die Symbole gespeichert werden, sodass die Quelle automatisch indiziert wird.  
 
      Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt.  
 
-3.  Fügen Sie der Builddefinition die folgenden MSBuild-Argumente hinzu:  
+3.  Fügen Sie diese MSBuild-Argumente zu Ihrer erstellungspipeline hinzu:  
 
     -   **/p:VisualStudioVersion = 12.0**  
 
@@ -131,13 +131,13 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
     -   **/TV:12.0**  
 
-    -   **/p:IncludeServerNameInBuildInfo = "true"**  
+    -   **/p:IncludeServerNameInBuildInfo = True**  
 
     -   **/ p: buildsymbolstorepath =**\<*Pfad zu Symbolen*>  
 
 4.  Führen Sie einen neuen Build aus.  
 
-    Wechseln Sie zu [Schritt 2: Freigeben der app](#DeployRelease)  
+    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)  
 
 ###  <a name="ManualBuild"></a> Erstellen des buildmanifests für einen manuellen Buildvorgang mithilfe von Visual Studio  
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.  
@@ -164,27 +164,27 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 4.  Führen Sie einen neuen Build aus.  
 
-    Wechseln Sie zu [Schritt 2: Freigeben der app](#DeployRelease)  
+    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)  
 
 ###  <a name="MSBuild"></a> Erstellen des buildmanifests für einen manuellen Buildvorgang mithilfe von MSBuild.exe  
  Fügen Sie diese Buildargumente beim Ausführen des Builds hinzu:  
 
- **/p:GenerateBuildInfoConfigFile = "true"**  
+ **/p:GenerateBuildInfoConfigFile = True**  
 
- **/p:IncludeServerNameInBuildInfo = "true"**  
+ **/p:IncludeServerNameInBuildInfo = True**  
 
  **/ p: buildsymbolstorepath =**\<*Pfad zu Symbolen*>  
 
-##  <a name="DeployRelease"></a> Schritt 2: Freigeben der app  
- Wenn Sie das [Web.Deploy-Paket](http://msdn.microsoft.com/library/dd394698.aspx) verwenden, das vom Build-Prozess zum Bereitstellen Ihrer App erstellt wurde, wird das Buildmanifest automatisch von „*Projektname*.BuildInfo.config“ zu „BuildInfo.config“ umbenannt und auf dem Webserver im gleichen Verzeichnis wie die Web.config-Datei Ihrer App abgelegt.  
+##  <a name="DeployRelease"></a> Schritt 2: Freigeben einer app  
+ Bei Verwendung der [Web.Deploy-Paket](https://msdn.microsoft.com/library/dd394698.aspx) , die vom Build-Prozess zum Bereitstellen Ihrer app erstellt wurde, das buildmanifest automatisch von umbenannt "*ProjectName*. BuildInfo.config"zu"BuildInfo.config"und im selben Ordner abgelegt wird, die Web.config-Datei Ihrer app auf Ihrem Webserver.  
 
  Wenn Sie eine andere Methode zum Bereitstellen Ihrer App verwenden, müssen Sie sicherstellen, dass das Buildmanifest von "*ProjektName*.BuildInfo.config" zu "BuildInfo.config" umbenannt und auf dem Webserver im gleichen Verzeichnis wie die Web.config-Datei Ihrer App abgelegt wird.  
 
 ## <a name="step-3-monitor-your-app"></a>Schritt 3: Überwachen der App  
  Richten Sie Leistungsüberwachung für Ihre App auf dem Webserver ein, um Ihre App auf Probleme zu untersuchen, Diagnoseereignisse aufzuzeichnen und diese Ereignisse in einer IntelliTrace-Protokolldatei zu speichern. Finden Sie unter [Überwachen Ihrer App auf Bereitstellungsprobleme](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a> Schritt 4: Erkennen des Problems  
- Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Codezuordnungen verwenden, um das Problem zu diagnostizieren.  
+##  <a name="InvestigateEvents"></a> Schritt 4: Das Problem gefunden  
+ Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Code Maps verwenden, um das Problem zu diagnostizieren.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Öffnen des IntelliTrace-Protokolls und der entsprechenden Projektmappe  
 
@@ -196,7 +196,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Bevor Sie Änderungen vornehmen, sollten Sie überprüfen, ob Sie über die richtige Quelle verfügen. Wenn Sie Verzweigung verwenden kann es sein, dass die aktuelle Verzweigung von der Verzweigung abweicht, in der Visual Studio die entsprechende Quelle findet, z. B. Ihre Versionsverzweigung.  
 
-     ![Öffnen Sie die Projektmappe über IntelliTrace-Protokoll](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![Öffnen Sie die Projektmappe von IntelliTrace-Protokoll](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
 
      Wenn Sie einen Arbeitsbereich zu dieser Lösung oder diesem Projekt zugeordnet haben, wählt Visual Studio diesen Arbeitsbereich aus, um die gesuchte Quelle einzufügen.  
 
@@ -208,15 +208,15 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Um einen Arbeitsbereich mit bestimmten Zuordnungen oder einen Namen zu erstellen, der nicht Ihrem Computernamen entspricht, wählen Sie **Verwalten**aus.  
 
-     [F: Warum sagen Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?](#IneligibleWorkspace)  
+     [F: Warum sagen die Visual Studio, dass mein ausgewählte Arbeitsbereich ungültig ist?](#IneligibleWorkspace)  
 
-     [F: Warum werden kann nicht fortgesetzt, bis ich eine teamauflistung oder eine andere Auflistung ausgewählt habe?](#ChooseTeamProject)  
+     [F: Warum werden kann nicht fortgesetzt, bis ich eine teamauflistung oder eine andere Sammlung auswählen?](#ChooseTeamProject)  
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnose eines Leistungsproblems  
 
 1.  Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.  
 
-     ![Anzeigen von Informationen zum Leistungsereignis](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Informationen zum Leistungsereignis anzeigen](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
 
      Sie können auch einfach auf das Ereignis doppelklicken.  
 
@@ -232,9 +232,9 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Wenn die Methode in Ihrem Anwendungscode enthalten ist, wechselt Visual Studio zu dieser Methode.  
 
-     ![Wechseln Sie zum Anwendungscode von einem Leistungsereignis aus](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Wechseln Sie zum Anwendungscode von Leistungsereignissen](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen, den Code schrittweise durchlaufen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen Methoden zeitlich rückwärts oder vorwärts zu bewegen](../debugger/intellitrace.md) , die während dieses Leistungsereignisses aufgerufen wurden. [Was bedeuten restlichen Ereignisse und Informationen im IntelliTrace-Protokoll ist? ](../debugger/using-saved-intellitrace-data.md) [Was kann ich tun, hier?](#WhatElse) [Wünschen Sie weitere Informationen zu Leistungsereignissen?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen, den Code schrittweise durchlaufen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen Methoden zeitlich rückwärts oder vorwärts zu bewegen](../debugger/intellitrace.md) , die während dieses Leistungsereignisses aufgerufen wurden. [Was bedeuten die restlichen Ereignisse und Informationen im IntelliTrace-Protokoll ist? ](../debugger/using-saved-intellitrace-data.md) [Was kann ich hier tun?](#WhatElse) [Wünschen Sie weitere Informationen zu Leistungsereignissen?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>Diagnose einer Ausnahme  
 
@@ -248,26 +248,26 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      ![Wechseln Sie zum Anwendungscode von einem Ausnahmeereignis aus](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
 
-     Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen aufgezeichneten Ereignissen](../debugger/intellitrace.md), zugehörigem Code und den Werten zu bewegen, die zu diesen Zeitpunkten erfasst wurden. [Was bedeuten restlichen Ereignisse und Informationen im IntelliTrace-Protokoll ist?](../debugger/using-saved-intellitrace-data.md)  
+     Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen aufgezeichneten Ereignissen](../debugger/intellitrace.md), zugehörigem Code und den Werten zu bewegen, die zu diesen Zeitpunkten erfasst wurden. [Was bedeuten die restlichen Ereignisse und Informationen im IntelliTrace-Protokoll ist?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a> Was kann ich von hier aus?  
+###  <a name="WhatElse"></a> Was kann ich hier?  
 
--   [Weitere Informationen zu diesem Code abrufen](../ide/find-code-changes-and-other-history-with-codelens.md). Um Verweise für diesen Code zu suchen, wird der Änderungsverlauf, entsprechenden Fehler, Arbeitsaufgaben, codereviews oder Komponententests - all ohne den Editor zu verlassen: die CodeLens-Indikatoren im Editor verwenden.  
+-   [Weitere Informationen zu diesen Code erhalten](../ide/find-code-changes-and-other-history-with-codelens.md). Um Verweise auf diesen Code zu suchen, wird der Änderungsverlauf, entsprechenden Fehler, Arbeitsaufgaben, codeüberprüfungen oder Komponententests – all ohne den Editor zu verlassen: die CodeLens-Indikatoren im Editor verwenden.  
 
-     ![CodeLens &#45; Verweise für diesen Code anzeigen](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45; Verweise auf diesen Code anzeigen](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
      ![CodeLens &#45; Änderungsverlauf für diesen Code anzeigen](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
--   [Ordnen Sie die Stelle im Code während des Debuggens.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Um die Methoden, die während der Debugsitzung aufgerufen wurden, visuell nachzuverfolgen, ordnen Sie die Aufrufliste zu.  
+-   [Ordnen Sie die Stelle im Code, während des Debuggens.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Um die Methoden, die während der Debugsitzung aufgerufen wurden, visuell nachzuverfolgen, ordnen Sie die Aufrufliste zu.  
 
-     ![Zuordnen der Aufrufliste während des Debuggens](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
+     ![Zuordnen die Aufrufliste beim Debuggen](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
 
 ###  <a name="FAQ"></a> Fragen und Antworten  
 
-####  <a name="WhyInclude"></a> F: Warum sollte ich integrieren Informationen über Mein Projekt, quellcodeverwaltung, Build und Symbole in Mein Release?  
+####  <a name="WhyInclude"></a> F: Warum integrieren Informationen über Mein Projekt, quellcodeverwaltung, Builds und Symbole in Meine Version?  
  Visual Studio verwendet diese Informationen, um die passende Lösung und den entsprechenden Quellcode für die Version zu finden, die Sie gerade debuggen. Nachdem Sie das IntelliTrace-Protokoll geöffnet und ein zu debuggendes Ereignis ausgewählt haben, zeigt Ihnen Visual Studio anhand der Symbole den Code, in dem das Ereignis aufgetreten ist. Anschließend können Sie die aufgezeichneten Werte anzeigen und den ausgeführten Code vorwärts und rückwärts durchlaufen.  
 
- Wenn Sie TFS verwenden, und diese Informationen nicht in der buildmanifestdatei (buildinfo.config), sucht Visual Studio für die entsprechende Quelle und die Symbole auf den aktuell verbundenen TFS. Wenn Visual Studio das korrekte TFS oder den entsprechenden Quellcode nicht findet, werden Sie aufgefordert, ein anderes TFS auszuwählen.  
+ Wenn Sie TFS verwenden und diese Informationen sind nicht in das buildmanifest (BuildInfo.config-Datei), sucht Visual Studio für die entsprechende Quelle und Symbole auf den gerade verbundenen TFS. Wenn Visual Studio das korrekte TFS oder den entsprechenden Quellcode nicht findet, werden Sie aufgefordert, ein anderes TFS auszuwählen.  
 
 ####  <a name="InvalidConfigFile"></a> F: im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte app. Wie konnte das geschehen? Was kann ich unternehmen?  
  Dies kann geschehen, wenn Sie die App von Ihrem Entwicklungscomputer bereitstellen oder bei der Bereitstellung nicht mit dem TFS verbunden sind.  
@@ -282,7 +282,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Der Name Ihres Projekts in Visual Studio. Zum Beispiel:  
 
-    ```  
+    ```xml
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
@@ -300,7 +300,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
          Zum Beispiel:  
 
-        ```  
+        ```xml
         <SourceControl type="TFS">  
            <TfsSourceControl>  
               <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
@@ -322,7 +322,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
          Zum Beispiel:  
 
-        ```  
+        ```xml
         <SourceControl type="Git">   
            <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
               <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
@@ -336,7 +336,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      Informationen über Ihr Buildsystem, entweder `"TeamBuild"` oder `"MSBuild"`, sowie die folgenden erforderlichen Eigenschaften:  
 
-    -   **BuildLabel** (für TeamBuild): Buildname und -Nummer. Diese Bezeichnung wird auch als Name des Bereitstellungsereignisses verwendet. Weitere Informationen zu Buildnummern finden Sie unter [Verwenden von Buildnummern abgeschlossene Builds aussagekräftige Namen zugewiesen](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+    -   **BuildLabel** (für TeamBuild): Buildname und -Nummer. Diese Bezeichnung wird auch als Name des Bereitstellungsereignisses verwendet. Weitere Informationen zu Buildnummern finden Sie unter [Verwenden von Buildnummern abgeschlossenen Builds aussagekräftige Namen zugewiesen](/azure/devops/pipelines/build/options).  
 
     -   **SymbolPath** (empfohlen): die Liste der URIs für die Orte Ihrer Symbole (PDB-Datei) getrennt durch Semikolons. Diese URIs können URLs oder Netzwerkpfade (UNC) sein. Dies erleichtert Visual Studio das Auffinden der entsprechenden Symbole zum Debuggen.  
 
@@ -350,7 +350,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
     -   **TFS**  
 
-        ```  
+        ```xml
         <Build type="TeamBuild">  
            <MsBuild>  
               <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
@@ -364,7 +364,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
     -   **Git**  
 
-        ```  
+        ```xml
         <Build type="MSBuild">   
            <MSBuild>  
               <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
@@ -373,12 +373,12 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a> F: Warum sagen Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?  
+####  <a name="IneligibleWorkspace"></a> F: Warum sagen die Visual Studio, dass mein ausgewählte Arbeitsbereich ungültig ist?  
  **A:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten**aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.  
 
- ![Aus quellcodeverwaltung ohne zugeordneten Arbeitsbereich öffnen](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
+ ![Öffnen aus der quellcodeverwaltung ohne zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a> F: Warum werden kann nicht fortgesetzt, bis ich eine teamauflistung oder eine andere Auflistung ausgewählt habe?  
+####  <a name="ChooseTeamProject"></a> F: Warum werden kann nicht fortgesetzt, bis ich eine teamauflistung oder eine andere Sammlung auswählen?  
  **A:** Dies kann aus folgenden Gründen der Fall sein:  
 
 -   Visual Studio ist nicht mit dem TFS verbunden.  
@@ -387,18 +387,18 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 -   Visual Studio konnte die Projektmappe oder das Projekt nicht in der aktuellen Teamauflistung finden.  
 
-     Wenn die buildmanifestdatei (\<*Projektname*>. BuildInfo.config) nicht angeben, wo Visual Studio die entsprechende Quelle erhalten Visual Studio verwendet den aktuell verbundenen TFS, um die entsprechende Projektmappe oder das Projekt zu suchen. Wenn die aktuelle Teamauflistung nicht über die entsprechende Quelle verfügt, fordert Visual Studio Sie auf, eine Verbindung mit einer anderen Teamauflistung herzustellen.  
+     Wenn die buildmanifestdatei (\<*ProjectName*>. BuildInfo.config) nicht angibt, in denen Visual Studio die entsprechende Quelle finden kann Visual Studio den gerade verbundenen TFS verwendet, um die entsprechende Projektmappe oder das Projekt zu finden. Wenn die aktuelle Teamauflistung nicht über die entsprechende Quelle verfügt, fordert Visual Studio Sie auf, eine Verbindung mit einer anderen Teamauflistung herzustellen.  
 
--   Visual Studio konnte die Projektmappe oder das Projekt in der Auflistung, die von der buildmanifestdatei angegebenen finden (\<*Projektname*>. BuildInfo.config).  
+-   Visual Studio nicht finden, die Projektmappe oder das Projekt in der Auflistung, die gemäß der buildmanifestdatei (\<*ProjectName*>. "Buildinfo.config").  
 
      Der angegebene TFS verfügt möglicherweise nicht mehr über die entsprechende Quelle oder Sie ist nicht mehr vorhanden, da Sie möglicherweise zu einem neuen TFS migriert sind. Wenn der angegebene TFS nicht vorhanden ist, kann bei Visual Studio nach etwa einer Minute ein Timeout auftreten, und Sie werden anschließend aufgefordert, eine Verbindung mit einer anderen Auflistung herzustellen. Um den Vorgang fortzusetzen, stellen Sie eine Verbindung mit dem richtigen TFS her.  
 
      ![Aus quellcodeverwaltung öffnen &#45; migriert](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> F: Was ist ein Arbeitsbereich?  
- **A:** Ihrer [Arbeitsbereich speichert eine Kopie der Quelle](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) , Sie können separat entwickeln und es vor dem Überprüfen Sie Ihre Arbeit testen. Wenn Sie nicht bereits über einen Arbeitsbereich verfügen, der der gefundenen Projektmappe oder dem Projekt speziell zugeordnet ist, dann werden Sie von Visual Studio aufgefordert, einen verfügbaren Arbeitsbereich auszuwählen oder einen neuen Arbeitsbereich mit Ihrem Computernamen als Standardarbeitsbereichsname zu erstellen.  
+ **A:** Ihre [Arbeitsbereich speichert eine Kopie der Quelle](/azure/devops/repos/tfvc/create-work-workspaces) , damit Sie können separat entwickeln und sie vor dem Überprüfen Sie Ihre Arbeit testen. Wenn Sie nicht bereits über einen Arbeitsbereich verfügen, der der gefundenen Projektmappe oder dem Projekt speziell zugeordnet ist, dann werden Sie von Visual Studio aufgefordert, einen verfügbaren Arbeitsbereich auszuwählen oder einen neuen Arbeitsbereich mit Ihrem Computernamen als Standardarbeitsbereichsname zu erstellen.  
 
 ####  <a name="UntrustedSymbols"></a> F: Warum erhalte ich diese Meldung über nicht vertrauenswürdige Symbole?  
- ![Debuggen mit nicht vertrauenswürdigem Symbolpfad durchführen? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![Debuggen mit nicht vertrauenswürdigem Symbolpfad? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
- **A:** diese Meldung wird angezeigt, wenn der Symbolpfad in der buildmanifestdatei (\<*Projektname*>. BuildInfo.config) nicht in der Liste der vertrauenswürdigen Symbolpfade enthalten ist. Sie können den Pfad zur Liste der Symbolpfade in den Debuggeroptionen hinzufügen.
+ **A:** diese Meldung wird angezeigt, wenn der Symbolpfad in der buildmanifestdatei (\<*ProjectName*>. BuildInfo.config) nicht in der Liste der vertrauenswürdigen Symbolpfade enthalten ist. Sie können den Pfad zur Liste der Symbolpfade in den Debuggeroptionen hinzufügen.

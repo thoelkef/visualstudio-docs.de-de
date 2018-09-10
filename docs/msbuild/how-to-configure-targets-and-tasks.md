@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578412"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078113"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Gewusst wie: Konfigurieren von Zielen und Aufgaben
+# <a name="how-to-configure-targets-and-tasks"></a>Vorgehensweise: Konfigurieren von Zielen und Aufgaben
 Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.  
   
 > [!NOTE]
@@ -30,7 +30,7 @@ Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklu
   
 -   Das `Architecture`-Attribut, sofern vorhanden, legt Plattform und Bitanzahl fest und kann einen der folgenden Werte annehmen: `x86`, `x64`, `CurrentArchitecture` oder `*` (beliebige Architektur).  
   
--   Das `TaskFactory`-Attribut, sofern vorhanden, legt die Aufgabenfactory fest, die die Aufgabeninstanz erstellt und ausführt, und nimmt nur den Wert `TaskHostFactory` an. Weitere Informationen finden Sie im Abschnitt „Aufgabenfactorys“ weiter unten in diesem Dokument.  
+-   Das `TaskFactory`-Attribut, sofern vorhanden, legt die Aufgabenfactory fest, die die Aufgabeninstanz erstellt und ausführt, und nimmt nur den Wert `TaskHostFactory` an. Weitere Informationen finden Sie im Abschnitt [Aufgabenfactorys](#task-factories) weiter unten in diesem Artikel.  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklu
  Die Parameter `MSBuildRuntime` und `MSBuildArchitecture` bieten die flexibelste Möglichkeit, um den Zielkontext festzulegen, zugleich ist der Umfang aber am stärksten begrenzt.  Einerseits können sie ihren Wert aus dem vollen Umfang an Eigenschaften ableiten, die zur Auswertungs- und Buildzeit verfügbar sind, da sie auf der Aufgabeninstanz selbst festgelegt werden und nicht ausgewertet werden, bis die Aufgabe ausgeführt wird.  Andererseits gelten diese Parameter nur für eine bestimmte Instanz einer Aufgabe in einem bestimmten Ziel.  
   
 > [!NOTE]
->  Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der Programmdateien) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht.  Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.  
+>  Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der *Programme*) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht.  Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)

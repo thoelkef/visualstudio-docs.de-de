@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b76df9a174bcbc03269e42ce37b1103c3bfd2f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 366e73473b442ee52ceac10e1398a7bb3e2b52f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575922"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178213"
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte aus einem anderen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.  
@@ -33,11 +33,11 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `MSBuild` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`BuildInParallel`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die gemäß `Projects`-Parameter angegebenen Projekte nach Möglichkeit gleichzeitig erstellt. Der Standardwert ist `false`.|  
 |`Projects`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu erstellenden Projektdateien an.|  
-|`Properties`|Optionaler `String` -Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Eigenschaftenname-Wert-Paare, die als globale Eigenschaften auf das untergeordnete Projekt angewendet werden. Wenn Sie diesen Parameter angeben, entspricht sie funktional dem Festlegen von Eigenschaften, die beim Erstellen mit [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) den Schalter **/property** aufweisen. Zum Beispiel:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Wenn Sie Eigenschaften mithilfe des `Properties`-Parameters in das Projekt übergeben, erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] selbst dann eine neue Instanz des Projekts, wenn die Datei bereits geladen wurde. Wurde eine neue Instanz des Projekts erstellt, behandelt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] diese als ein anderes Projekt mit anderen globalen Eigenschaften, das gleichzeitig mit anderen Instanzen des Projekts erstellt werden kann. So können z.B. eine Releasekonfiguration und eine Debugkonfiguration gleichzeitig erstellen.|  
+|`Properties`|Optionaler `String` -Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Eigenschaftenname-Wert-Paare, die als globale Eigenschaften auf das untergeordnete Projekt angewendet werden. Wenn Sie diesen Parameter angeben, entspricht sie funktional dem Festlegen von Eigenschaften, die beim Erstellen mit [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) den Schalter **/property** aufweisen. Zum Beispiel:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Wenn Sie Eigenschaften mithilfe des `Properties`-Parameters in das Projekt übergeben, erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] selbst dann eine neue Instanz des Projekts, wenn die Datei bereits geladen wurde. Wurde eine neue Instanz des Projekts erstellt, behandelt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] diese als ein anderes Projekt mit anderen globalen Eigenschaften, das gleichzeitig mit anderen Instanzen des Projekts erstellt werden kann. So können z.B. eine Releasekonfiguration und eine Debugkonfiguration gleichzeitig erstellen.|  
 |`RebaseOutputs`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die Pfade der relativen Pfade von Zielausgabeelementen der erstellten Projekte angepasst, damit sie relativ zum aufrufenden Projekt sind. Der Standardwert ist `false`.|  
 |`RemoveProperties`|Optionaler `String` -Parameter.<br /><br /> Gibt die zu entfernenden globalen Eigenschaften an.|  
 |`RunEachTargetSeparately`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, ruft die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe die einzelnen an [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] übergebenen Ziele in der Liste nicht gleichzeitig, sondern nacheinander auf. Wenn für diesen Parameter `true` eingestellt wird, ist gewährleistet, dass nachfolgende Ziele selbst dann aufgerufen werden, wenn zuvor aufgerufene Ziele nicht erfolgreich waren. Ansonsten würde ein Buildfehler den Aufruf aller nachfolgenden Ziele beenden. Der Standardwert ist `false`.|  
@@ -48,12 +48,12 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 |`Targets`|Optionaler `String` -Parameter.<br /><br /> Das Ziel oder die Ziele, die in den Projektdateien erstellt werden sollen. Verwenden Sie Semikolons, um eine Liste von Zielnamen zu trennen. Sind in der `MSBuild` Aufgabe keine Ziele angegeben, werden die in den Projektdateien angegebenen Standardziele erstellt. **Hinweis:**: Die jeweiligen Ziele müssen in allen Projektdateien auftreten. Wenn dies nicht der Fall ist, tritt ein Buildfehler auf.|  
 |`ToolsVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die `ToolsVersion` an, die verwendet werden muss, um Projekte zu erstellen, die an diese Aufgabe übergeben werden.<br /><br /> Ermöglicht es einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe, ein Projekt zu erstellen, das auf eine Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] abzielt, die von der im Projekt angegebenen Version abweicht. Gültige Werte sind `2.0`, `3.0` und `3.5`. Der Standardwert lautet `3.5`.|  
 |`UnloadProjectsOnCompletion`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das Projekt entladen, sobald der Vorgang abgeschlossen ist.|  
-|`UseResultsCache`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben (sofern vorhanden). Beim Ausführen der MSBuild-Aufgabe wird das jeweilige Ergebnis in einem Gültigkeitsbereich (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> als Liste von Buildelementen zwischengespeichert.|  
+|`UseResultsCache`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben (sofern vorhanden).<br /><br />  Wenn die MSBuild-Aufgabe ausgeführt wird, wird das Ergebnis in einem Bereich zwischengespeichert. <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> als Liste von Buildelementen zwischengespeichert.|  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
- Anders als beim Starten von MSBuild.exe mithilfe der [Exec-Aufgabe](../msbuild/exec-task.md) verwendet diese Aufgabe denselben [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Prozess, um die untergeordneten Projekte zu erstellen. Die Liste bereits erstellter Ziele, die übersprungen werden können, wird sowohl von den übergeordneten als auch von den untergeordneten Builds genutzt. Diese Aufgabe ist zudem schneller, da kein neuer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Prozess erstellt wird.  
+ Anders als beim Starten von [MSBuild.exe](../msbuild/exec-task.md) mithilfe der *Exec-Aufgabe* verwendet diese Aufgabe denselben [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Prozess, um die untergeordneten Projekte zu erstellen. Die Liste bereits erstellter Ziele, die übersprungen werden können, wird sowohl von den übergeordneten als auch von den untergeordneten Builds genutzt. Diese Aufgabe ist zudem schneller, da kein neuer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Prozess erstellt wird.  
   
  Diese Aufgabe kann nicht nur Projektdateien, sondern auch Projektmappendateien verarbeiten.  
   
@@ -61,16 +61,16 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
   
  Ab [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 stellen Projektmappenprojekte „TargetOutputs“ aus den jeweils erstellten Unterprojekten bereit.  
   
-## <a name="passing-properties-to-projects"></a>Übergeben von Eigenschaften für Projekte  
+## <a name="pass-properties-to-projects"></a>Übergeben von Eigenschaften an Projekte  
  In Versionen von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vor [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 war das Übergeben unterschiedlicher Sätze von Eigenschaften in andere im [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Element aufgeführte Projekte sehr anspruchsvoll. Wenn Sie das Attribut „Properties“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) verwendet haben, wurde die jeweilige Einstellung nur dann auf alle erstellten Projekte angewendet, wenn Sie die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) als Batch verarbeitet und bedingt unterschiedliche Eigenschaften für die einzelnen Projekte in der Elementliste bereitgestellt haben.  
   
- Mit „Properties“ und „AdditionalProperties“ bietet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 nun jedoch zwei neue reservierte Metadatenelemente, mit denen Sie auf flexible Weise unterschiedliche Eigenschaften für verschiedene Projekte übergeben können, die mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellt werden.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5: Mit „Properties“ und „AdditionalProperties“ werden in dieser Version jedoch zwei neue reservierte Metadatenelemente bereitgestellt, mit denen Sie auf flexible Weise unterschiedliche Eigenschaften für verschiedene Projekte übergeben können, die mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellt werden.  
   
 > [!NOTE]
->  Diese neuen Metadatenelemente gelten nur für Elemente, die in das Attribut „Projects“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden.  
+>  Diese neuen Metadatenelemente gelten nur für Elemente, die im Attribut „Projects“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden.  
   
 ## <a name="multi-processor-build-benefits"></a>Buildvorteile bei mehreren Prozessoren  
- Einer der Hauptvorteile bei der Verwendung dieser neuen Metadaten zeigt sich, wenn Sie Projekte gleichzeitig auf einem System mit mehreren Prozessoren erstellen. Mithilfe der Metadaten können Sie alle Projekte in einem einzelnen Aufruf der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) konsolidieren, ohne eine Batchverarbeitung oder bedingte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben ausführen zu müssen. Und wenn Sie nur eine einzige [MSBuild-Aufgabe](../msbuild/msbuild-task.md) aufrufen, werden alle im Attribut „Projects“ aufgelisteten Projekte gleichzeitig erstellt. (Dies gilt allerdings nur, wenn das `BuildInParallel=true`-Attribut in der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) vorhanden ist.) Weitere Informationen finden Sie unter [Building Multiple Projects in Parallel](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Gleichzeitiges Erstellen mehrerer Projekte).  
+ Einer der Hauptvorteile bei der Verwendung dieser neuen Metadaten zeigt sich, wenn Sie Projekte gleichzeitig auf einem System mit mehreren Prozessoren erstellen. Mithilfe der Metadaten können Sie alle Projekte in einem einzelnen Aufruf der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) konsolidieren, ohne eine Batchverarbeitung oder bedingte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben ausführen zu müssen. Und wenn Sie nur eine einzige [MSBuild-Aufgabe](../msbuild/msbuild-task.md) aufrufen, werden alle im Attribut „Projects“ aufgelisteten Projekte gleichzeitig erstellt. (Dies gilt allerdings nur, wenn das `BuildInParallel=true`-Attribut in der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) vorhanden ist.) Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
 ## <a name="properties-metadata"></a>Properties-Metadaten  
  Beim Erstellen mehrerer Projektmappendateien mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) werden häufig nur unterschiedliche Buildkonfigurationen verwendet. Möglicherweise möchten Sie die Projektmappe a1 mithilfe der Debugkonfiguration und Projektmappe a2 mithilfe der Releasekonfiguration erstellen. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 würde diese Projektdatei wie folgt aussehen:  
@@ -127,7 +127,7 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 ```  
   
 ## <a name="additionalproperties-metadata"></a>AdditionalProperties-Metadaten  
- Gehen Sie vom folgenden Szenario aus, in dem Sie zwei Projektmappendateien mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellen. Beide Dateien werden mithilfe der Releasekonfiguration erstellt, aber für die eine Datei wird die X86-Architektur und für die andere die ia64-Architektur verwendet. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 müssten Sie mehrere Instanzen der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellen: Eine Instanz zum Erstellen des Projekts mithilfe der Releasekonfiguration und der X86-Architektur, die andere mithilfe der Releasekonfiguration und der ia64-Architektur. Die Projektdatei würde wie folgt aussehen:  
+ Gehen Sie vom folgenden Szenario aus, in dem Sie zwei Projektmappendateien mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellen. Beide Dateien werden mithilfe der Releasekonfiguration erstellt, aber für die eine Datei wird die X86-Architektur und für die andere die ia64-Architektur verwendet. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 müssten Sie mehrere Instanzen der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellen: Eine Instanz zum Erstellen des Projekts mithilfe der Releasekonfiguration und der X86-Architektur, die andere zum Erstellen des Projekts mithilfe der Releasekonfiguration und der ia64-Architektur. Die Projektdatei würde wie folgt aussehen:  
   
 ### <a name="aproj"></a>a.proj  
   
@@ -190,4 +190,4 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

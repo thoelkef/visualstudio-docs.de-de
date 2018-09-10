@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957826"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179166"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Vorgehensweise: Aufteilen einer Klasse in partielle Klassen im Klassen-Designer
 
@@ -29,7 +29,7 @@ Sie können die Deklaration einer Klasse oder Struktur auf mehrere Deklarationen
 
 Die Deklarationen können sich in einer oder in mehreren Quelldateien befinden. Alle Deklarationen müssen jedoch in derselben Assembly und im selben Namespace enthalten sein.
 
-Partielle Klassen sind in vielen Situationen nützlich. Bei einem großen Projekt wird durch das Aufteilen einer Klasse in mehrere Dateien beispielsweise ermöglicht, dass mehr als ein Programmierer gleichzeitig am Projekt arbeiten kann. Wenn Sie mit Code arbeiten, der von Visual Studio erstellt wird, können Sie die Klasse ändern, ohne die Quelldatei erneut erstellen zu müssen. (Beispiele von Code, der von Visual Studio erstellt sind u.A. Windows Forms-Code und Webdienst-Wrappercode.) Sie können deshalb Code erstellen, der diese automatisch generierte Klassen verwendet, ohne die von Visual Studio erstellte Datei ändern zu müssen.
+Partielle Klassen sind in vielen Situationen nützlich. Bei einem großen Projekt wird durch das Aufteilen einer Klasse in mehrere Dateien beispielsweise ermöglicht, dass mehr als ein Programmierer gleichzeitig am Projekt arbeiten kann. Wenn Sie mit Code arbeiten, der von Visual Studio erstellt wird, können Sie die Klasse ändern, ohne die Quelldatei erneut erstellen zu müssen. (Beispiele für Code, der von Visual Studio erstellt wird, sind u.A. Windows Forms-Code und Webdienst-Wrappercode.) Sie können deshalb Code erstellen, der diese automatisch generierte Klassen verwendet, ohne die von Visual Studio erstellte Datei ändern zu müssen.
 
 Es gibt zwei Arten von partiellen Methoden. In C# werden Sie deklarierende und implementierende Methoden genannt. In Visual Basic heißen sie Deklaration und Implementierung.
 

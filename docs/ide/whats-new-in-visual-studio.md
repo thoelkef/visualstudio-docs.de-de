@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2017
 description: Informationen zu den neuen Features in Visual Studio 2017
 ms.custom: ''
-ms.date: 05/09/2018
+ms.date: 08/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750479"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755508"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
-**In [Release 15.7](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) aktualisiert**
+**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) aktualisiert**
 
 Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen Folgendes: beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
@@ -36,7 +36,7 @@ Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorheri
 * **[Leistung und Produktivität](#performance-and-productivity)** Wir haben uns auf neue, moderne Bereitstellungsfunktionen für Mobilgeräte sowie Cloud- und Desktopcomputer konzentriert. Wir haben außerdem die allgemeine Erfahrung beim Erwerb, für die Leistung und die allgemeine Entwicklerproduktivität verbessert. Visual Studio startet schneller, reagiert besser und benötigt weniger Arbeitsspeicher als je zuvor.
 * **[Cloud-App-Entwicklung mit Azure](#cloud-app-development-with-azure)** Eine integrierte Sammlung von Azure-Tools, die Ihnen das einfache Entwickeln von primär auf die Cloud ausgelegten Apps in Microsoft Azure ermöglichen. Visual Studio vereinfacht das Konfigurieren, Erstellen, Debuggen, Packen und Bereitstellen von Apps und Diensten in Azure.
 * **[Windows App-Entwicklung](#windows-app-development)** Verwenden Sie die UWP-Vorlagen in Visual Studio 2017, um ein einzelnes Projekt für alle Windows 10-Geräte zu erstellen: PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw. Erstellen Sie dann ein App-Paket, und übermitteln Sie dieses von Visual Studio aus an Microsoft Store, um Ihre App für Kunden bereitzustellen.
-* **[Entwicklung mobiler Apps](#mobile-app-development)** Sie können in Visual Studio 2017 mit Xamarin schnell Neuerungen einführen und Ergebnisse erzielen, denn dies vereinheitlicht Ihre mobilen Multi-Plattform-Anforderungen durch Verwendung einer einzigen Kerncodebasis und eines einzigen Satzes von Fertigkeiten. Werden Sie mobil mit Ihren vorhandenen Teams, Technologieinvestitionen und C#-Code, sodass Sie marktgerechte Produkte vor Ablauf des Terminplans und mit Unterschreitung des Budgets bereitstellen können. Beschleunigen Sie jeden Schritt des mobilen Lebenszyklus, um erstklassige Benutzeroberflächen zu bieten oder ein Portfolio von Produktivitäts-Apps, mit denen Ihre Mitarbeiter effektiver arbeiten können.
+* **[Entwicklung mobiler Apps](#mobile-app-development)** Sie können in Visual Studio 2017 mit Xamarin schnell Neuerungen einführen und Ergebnisse erzielen, denn dies vereinheitlicht Ihre mobilen Multi-Plattform-Anforderungen durch Verwendung einer einzigen Kerncodebasis und eines einzigen Satzes von Fertigkeiten. Werden Sie mobil mit Ihren vorhandenen Teams, Technologieinvestitionen und C#-Code, sodass Sie marktgerechte Produkte vor Ablauf des Terminplans und mit Unterschreitung des Budgets bereitstellen können. Beschleunigen Sie jeden Schritt des mobilen Lebenszyklus, um erstklassige Benutzeroberflächen zu bieten oder ein Portfolio von Produktivitäts-Apps, mit denen Ihre Mitarbeiter effektiver arbeiten können. Außerdem **neu in 15.8**: Entwickler mobiler Apps, die Hyper-V nutzen, haben nun Zugriff auf einen schnellen Android-Emulator, der grundsätzlich die neuesten Android-APIs unterstützt, mit vorkonfigurierten Google Play Services funktioniert und alle Features des Android-Emulators unterstützt, einschließlich Kamera, Geolocation und Quick Boot.
 * **[Plattformübergreifende Entwicklung](#cross-platform-development)** Übermitteln Sie Software problemlos an alle Zielplattform. Weiten Sie DevOps-Prozesse mithilfe von Redgate Data Tools auf SQL Server aus, und automatisieren Sie die sichere Datenbankbereitstellung aus Visual Studio. Verwenden Sie alternativ .NET Core, um Apps und Bibliotheken zu schreiben, die unverändert unter Windows, Linux und macOS ausgeführt werden. (**Neu in 15.3:** Parallele Unterstützung für .NET Core 2.0 SDKs)
 * **[Spieleentwicklung](#games-development)** Mithilfe der Visual Studio-Tools für Unity (VSTU) können Sie Visual Studio zum Schreiben von Spiel- und Editorskripts in C# verwenden und dann den leistungsfähigen Debugger zum Suchen und Beheben von Fehlern nutzen. Das neueste Release von VSTU umfasst Syntaxfarben für die Shadersprache ShaderLab von Unity, bessere Debugger-Visualisierungen und verbesserte Codegenerierung für den MonoBehavior-Assistenten. Mit VSTU werden außerdem die Unity-Projektdateien, Konsolenmeldungen und die Möglichkeit zum Starten des Spiels in Visual Studio eingebunden, sodass beim Schreiben von Code weniger Zeit zum Umschalten in und aus dem Unity-Editor benötigt wird.
 * **[KI-Entwicklung](#ai-development)** Mit Visual Studio-Tools für KI (**neu ab Version 15.5**) können Sie die Produktivitätsfeatures von Visual Studio verwenden, um KI-Innovationen zu beschleunigen. Sie können Deep Learning- bzw. KI-Lösungen erstellen, testen und bereitstellen, die eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen bieten, z.B. das transparente Übermitteln von Datenvorbereitungen oder Modelltrainingsaufträgen an verschiedene Computeziele. Anbieter für Visual Studio Tools for AI bieten zusätzlich Unterstützung für benutzerdefinierte Metriken und das Nachverfolgen des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird.
@@ -50,7 +50,7 @@ Im Anschluss finden Sie ausführlichere Informationen zu einigen der wichtigsten
 
 ### <a name="a-new-setup-experience"></a>Ein neues Setuperlebnis
 
-[Visual Studio 2017 herunterladen](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder [Visual Studio-Systemanforderungen überprüfen](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder [Visual Studio-Systemanforderungen überprüfen](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  In Visual Studio können Sie jetzt einfacher und schneller nur die Funktionen installieren, die Sie benötigen, wenn Sie sie benötigen. Und es lässt sich auch sauber wieder deinstallieren.
 
@@ -134,6 +134,18 @@ Weitere Informationen zu automatisierten Tests finden Sie im Blogbeitrag [CI/CD 
 Weitere Informationen zu Neuigkeiten in der DevLabs-Erweiterung [Continuous Delivery-Tools for Visual Studio (Continuous Delivery-Tools für Visual Studio)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) finden Sie in dem Blogbeitrag [Committing with Confidence: Commit Time Code Quality (Commit mit Vertrauen: Commit ausführen mit Zeitcodequalität)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Verbesserungen der Visual Studio-IDE
+
+#### <a name="multi-caret-editing"></a>Bearbeiten mit mehreren Caretzeichen
+
+**Neu in 15.8:** Das gleichzeitige Bearbeiten von mehreren Stellen in einer Datei ist jetzt ganz einfach. Erstellen Sie zunächst an mehreren Stellen in einer Datei Einfügemarken und Auswahlpunkte. Nehmen Sie dann mithilfe des Features zum Bearbeiten mit mehreren Caretzeichen dieselbe Änderung an zwei oder mehr Stellen gleichzeitig vor.
+
+Weitere Informationen finden Sie im Abschnitt [Multi-caret selection](finding-and-replacing-text.md#multi-caret-selection) (Auswählen mehrerer Caretzeichen) auf der Seite [Suchen und Ersetzen von Text](finding-and-replacing-text.md).
+
+#### <a name="keep-keybinding-profiles-consistent"></a>Konsistente Tastenzuordnungsprofile
+
+**Neu in 15.8:** Achten Sie darauf, dass Ihre Tastenzuordnungen mit den zwei neuen Tastaturprofilen konsistent bleiben: Visual Studio Code und ReSharper (Visual Studio). Diese Schemas finden Sie unter **Extras** > **Optionen** > **Allgemein** > **Tastatur** und über das oberste Dropdownmenü.
+
+  ![Neue Tastenzuordnungsprofile für Visual Studio Code und ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
 #### <a name="use-new-refactorings"></a>Verwenden neuer Refactorings
 
@@ -279,6 +291,20 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](../cross-plat
 
 ![Animation der Verknüpfung, Bereitstellung und der Livebearbeitungsmodi von Xamarin Live Player](../ide/media/xamarinliveplayer.gif)
 
+### <a name="support-for-google-android-emulator"></a>Support für den Google Android-Emulator
+
+**Neu in 15.8:** Wenn Sie Hyper-V verwenden, können Sie den Android-Emulator von Google nun parallel mit anderen Hyper-V-basierten Technologien verwenden, einschließlich Hyper-V-VMs, Docker-Tools und dem HoloLens-Emulator. (Diese Funktion erfordert Windows 10 April 2018 Update oder höher.)
+
+![Der Google Android-Emulator mit Hyper-V-Technologien](../ide/media/xamarin-hyperv-android-emulator.png)
+
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Editor mit geteilter Ansicht für den Xamarin.Android-Designer
+
+**Neu in 15.8:** Für Xamarin.Android wurden wichtige Verbesserungen am Designer durchgeführt. Ein Editor mit geteilter Ansicht wurde eingeführt, mit dem Sie Layouts gleichzeitig erstellen, bearbeiten und eine Vorschau dafür erstellen können.
+
+![Der Editor mit geteilter Ansicht für den Xamarin.Android-Designer](../ide/media/android-designer-split-view.png)
+
+Weitere Informationen finden Sie unter [Hardwarebeschleunigung für verbesserte Leistung des Emulators](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview).
+
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
 **Neues in 15.5:** Visual Studio App Center ist nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, des Testens auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
@@ -338,8 +364,8 @@ Weitere Informationen finden Sie unter [Visual Studio Tools für KI](../ai/about
 
 Wir aktualisieren Visual Studio 2017 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Nachfolgend werden einige der wichtigsten Updates aufgeführt, die sich derzeit in der Phase der experimentellen Vorschau befinden:
 
-* **[Live Share](https://www.visualstudio.com/services/live-share/)**: ein neues Tool, über das Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.<br><br>Weitere Informationen finden Sie unter [Live Share FAQ (Häufig gestellte Fragen zu Live Share)](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**: eine neue Funktion zur Verbesserung der Softwareentwicklung unter Verwendung von KI. Dabei werden bessere kontextbezogene Codevervollständigungen zur Verfügung gestellt, Entwickler werden dabei unterstützt, gemäß den Mustern und Formatierungen ihres Teams zu codieren, versteckte Codeprobleme zu finden und Code Reviews auf die Bereiche zu beschränken, die wirklich wichtig sind. <br><br>Weitere Informationen finden Sie unter [IntelliCode FAQ (Häufig gestellte Fragen zu IntelliCode)](../ide/not-in-toc/intellicode-faq.md).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**: ein neues Tool, über das Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.<br><br>Weitere Informationen finden Sie unter [Live Share FAQ (Häufig gestellte Fragen zu Live Share)](/visualstudio/liveshare/faq).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**: eine neue Funktion zur Verbesserung der Softwareentwicklung unter Verwendung von KI. Dabei werden bessere kontextbezogene Codevervollständigungen zur Verfügung gestellt, Entwickler werden dabei unterstützt, gemäß den Mustern und Formatierungen ihres Teams zu codieren, versteckte Codeprobleme zu finden und Code Reviews auf die Bereiche zu beschränken, die wirklich wichtig sind. <br><br>Weitere Informationen finden Sie unter [IntelliCode FAQ (Häufig gestellte Fragen zu IntelliCode)](../ide/not-in-toc/intellicode-faq.md).
 
 Sie möchten mehr über unsere Pläne für Visual Studio 2017 erfahren? Weitere Informationen finden Sie auf der Seite [Visual Studio-Roadmap](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -358,5 +384,5 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 * [Visual Studio 2017 – Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Neues in C#](/dotnet/csharp/whats-new)
-* [Neues für Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
-* [Neues in Visual Studio für Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Neues für Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Neues in Visual Studio für Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

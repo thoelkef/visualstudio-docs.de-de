@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844117"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
 Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.  
@@ -33,7 +34,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Werte  
   
-|name|description|  
+|name|Beschreibung |  
 |----------|-----------------|  
 |`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
 |`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  
@@ -41,7 +42,7 @@ enum marker_importance;
 |`normal_importance`|Gibt an, dass der Marker normal wichtig ist|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** cvmarkersobj.h  
+ **Header:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic  
   

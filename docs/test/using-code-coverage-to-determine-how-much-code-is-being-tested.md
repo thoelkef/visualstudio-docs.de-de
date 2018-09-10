@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752091"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381715"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -51,7 +51,7 @@ Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Expl
 > - Wenn Sie mit nicht verwaltetem (nativem) Code arbeiten, verwenden Sie einen Debugbuild.
 > - Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.
 
-Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md). sein. Vergessen Sie nicht, die Code Coverage nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
+Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md). Vergessen Sie nicht, die Code Coverage nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
 
 ## <a name="report-in-blocks-or-lines"></a>Berichterstellung in Blöcken oder in Zeilen
 
@@ -63,7 +63,7 @@ Manche Benutzer bevorzugen die Zählung in Zeilen, da die Prozentsätze genauer 
 
 ## <a name="manage-code-coverage-results"></a>Verwalten von Code Coverage-Ergebnissen
 
-Im Fenster "Codeabdeckungsergebnisse" wird normalerweise das Ergebnis der letzten Ausführung angezeigt. Die Ergebnisse ändern sich, wenn Sie die Testdaten ändern oder jeweils nur einige Tests ausführen.
+Im Fenster **Code Coverage-Ergebnisse** wird normalerweise das Ergebnis der letzten Ausführung angezeigt. Die Ergebnisse ändern sich, wenn Sie die Testdaten ändern oder jeweils nur einige Tests ausführen.
 
 Das Fenster "Codeabdeckung" kann auch zur Anzeige von vorherigen Ergebnissen oder von Ergebnissen verwendet werden, die über andere Computer abgerufen wurden.
 
@@ -71,13 +71,13 @@ Sie können die Ergebnisse aus mehreren Testläufen zusammenführen, zum Beispie
 
 -   **Um ein vorheriges Resultset aufzurufen**, wählen Sie dieses aus dem Dropdownmenü aus. Das Menü enthält eine temporäre Liste, die gelöscht wird, wenn Sie eine neue Projektmappe öffnen.
 
--   **Um Ergebnisse aus einer vorherigen Sitzung aufzurufen**, wählen Sie **Codeabdeckungsergebnisse importieren** aus, navigieren Sie zum Ordner „TestResults“ in der Projektmappe, und importieren Sie eine COVERAGE-Datei.
+-   **Zum Aufrufen von Ergebnissen aus einer vorherigen Sitzung** müssen Sie auf **Code Coverage-Ergebnisse importieren** klicken, zum Ordner **TestResults** in Ihrer Projektmappe navigieren und eine *COVERAGE*-Datei importieren.
 
-    Die Codeabdeckungsfärbung ist möglicherweise falsch, wenn der Quellcode nach Generieren der COVERAGE-Datei geändert wurde.
+    Die Code Coverage-Färbung ist möglicherweise falsch, wenn der Quellcode nach Generieren der *COVERAGE*-Datei geändert wurde.
 
--   **Um die Ergebnisse als Text lesbar zu machen**, wählen Sie **Codeabdeckungsergebnisse exportieren** aus. Dadurch wird eine lesbare COVERAGEXML-Datei generiert, die mit anderen Tools verarbeitet oder problemlos in einer E-Mail gesendet werden kann.
+-   **Um die Ergebnisse als Text lesbar zu machen**, wählen Sie **Codeabdeckungsergebnisse exportieren** aus. Dadurch wird eine lesbare *COVERAGEXML*-Datei generiert, die mit anderen Tools verarbeitet oder problemlos in einer E-Mail gesendet werden kann.
 
--   **Um Ergebnisse an eine andere Person weiterzuleiten**, senden Sie dieser entweder eine COVERAGE-Datei oder eine exportierte COVERAGEXML-Datei. Die Datei kann dann importiert werden. Verfügt die andere Person über dieselbe Version des Quellcodes, kann sie die Abdeckungsfärbung sehen.
+-   **Wenn Sie Ergebnisse an eine andere Person senden möchten**, müssen Sie entweder eine *COVERAGE*-Datei oder eine exportierte *COVERAGEXML*-Datei senden. Die Datei kann dann importiert werden. Verfügt die andere Person über dieselbe Version des Quellcodes, kann sie die Abdeckungsfärbung sehen.
 
 ## <a name="merge-results-from-different-runs"></a>Zusammenführen von Ergebnissen aus verschiedenen Ausführungen
 
@@ -245,15 +245,15 @@ Verwenden Sie folgende Makros:
 
 ### <a name="include-or-exclude-additional-elements"></a>Ein- oder Ausschließen von zusätzlichen Elementen
 
-Die Codeabdeckungsanalyse wird nur für geladene Assemblys ausgeführt, für die eine PDB-Datei in demselben Verzeichnis verfügbar ist, in dem sich die DLL- oder EXE-Datei befindet. Daher können Sie in bestimmten Fällen den Satz der enthaltenen Assemblys erweitern, indem Sie Kopien der entsprechenden PDB-Dateien abrufen.
+Die Code Coverage-Analyse wird nur in Assemblys durchgeführt, die geladen wurden und für die im selben Verzeichnis eine *PDB*-Datei verfügbar ist, in dem auch die *DLL*- oder *EXE*-Datei enthalten ist. Daher können Sie in bestimmten Fällen die enthaltenen Assemblys erweitern, indem Sie Kopien der entsprechenden *PDB*-Dateien abrufen.
 
-Sie können besser steuern, welche Assemblys und Elemente für die Codeabdeckungsanalyse ausgewählt werden, indem Sie eine RUNSETTINGS-Datei schreiben. Beispielsweise können Sie Assemblys bestimmter Arten ausschließen, ohne deren Klassen Attribute hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+Sie können besser steuern, welche Assemblys und Elemente für die Code Coverage-Analyse ausgewählt werden, indem Sie eine *RUNSETTINGS*-Datei schreiben. Beispielsweise können Sie Assemblys bestimmter Arten ausschließen, ohne deren Klassen Attribute hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analysieren von Code Coverage im Builddienst
 
 Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von anderen Teammitgliedern auf dem Buildserver ausgeführt. (Wenn Sie dies noch nicht eingerichtet haben, finden Sie unter [Ausführen von Tests im Buildprozess](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38) Informationen hierzu.) Es ist hilfreich, die Code Coverage für den Builddienst zu analysieren, da Sie dadurch das aktuellste und umfassendste Bild der Code Coverage für das gesamte Projekt erhalten. Dazu gehören auch automatisierte Systemtests und andere codierte Tests, die Sie normalerweise nicht auf Entwicklungscomputern ausführen.
 
-1. Öffnen Sie im Team Explorer **Builds**, und fügen Sie dann eine Builddefinition hinzu oder bearbeiten Sie diese.
+1. Öffnen Sie im **Team Explorer** die Option **Builds**, und fügen Sie anschließend eine Builddefinition hinzu oder bearbeiten Sie diese.
 
 2. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Legen Sie die Option **Code Coverage Enabled**(Code Coverage aktiviert) für den **Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) fest.
 
@@ -266,9 +266,9 @@ Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von
 
 Nach Ausführung des Builds werden die Code Coverage-Ergebnisse an den Testlauf angefügt und in der Buildzusammenfassung angezeigt.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analysieren von Code Coverage in einer Befehlszeile
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analysieren von Code Coverage über die Befehlszeile
 
-Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option des Hilfsprogramms „vstest.console.exe“.
+Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen. Code Coverage ist eine Option des Hilfsprogramms *vstest.console.exe*.
 
 1.  Starten der Visual Studio Developer-Eingabeaufforderung:
 
@@ -278,12 +278,14 @@ Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe"
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Problembehandlung
 
-Wenn keine Code Coverage-Ergebnisse angezeigt werden, lesen Sie [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md).
+Wenn keine Code Coverage-Ergebnisse angezeigt werden, lesen Sie den Artikel [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
 - [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md)
-- [Komponententest für Code](../test/unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

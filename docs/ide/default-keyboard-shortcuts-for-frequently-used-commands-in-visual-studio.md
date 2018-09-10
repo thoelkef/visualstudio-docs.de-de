@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917998"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512547"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 
@@ -57,7 +57,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br /> oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
-|Edit.CollapsetoDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
+|Edit.CollapseToDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
 |Edit.CommentSelection|**STRG+K**, **STRG+C** [Text-Editor]|
 |Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+K**, **W** [Workflow-Designer]<br /><br /> oder **STRG+K, STRG+W** [Workflow-Designer]|
 |Edit.Copy|**STRG+C** [Global]<br /><br /> oder **STRG+EINFG** [Global]|

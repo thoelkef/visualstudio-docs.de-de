@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976431"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382209"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit dem Diagramm für Aktivitäten virtueller Benutzer Fehler isolieren, die für einzelne virtuelle Benutzer aufgetreten sind, durch die der Auslastungstest ausgeführt wurde.
 
- Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten von virtuellen Benutzern dargestellt werden, die dem Auslastungstest zugeordnet sind. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das Diagramm für Aktivitäten virtueller Benutzer gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. So können Sie Leistungsprobleme isolieren, indem Sie Muster der Benutzeraktivität anzeigen, Muster laden, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen mit anderen Aktivitäten virtueller Benutzer anzeigen. Das Diagramm für die Aktivitäten virtueller Benutzer ist erst nach dem Ausführen des Auslastungstests verfügbar.
+Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten von virtuellen Benutzern dargestellt werden, die dem Auslastungstest zugeordnet sind. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das Diagramm für Aktivitäten virtueller Benutzer gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. So können Sie Leistungsprobleme isolieren, indem Sie Muster der Benutzeraktivität anzeigen, Muster laden, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen mit anderen Aktivitäten virtueller Benutzer anzeigen. Das Diagramm für die Aktivitäten virtueller Benutzer ist erst nach dem Ausführen des Auslastungstests verfügbar.
 
- Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:
+Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:
 
 -   Erfahren Sie, wie Sie die folgenden Tools verwenden, die dem Diagramm für die Aktivitäten der virtuellen Benutzer zugeordnet sind:
 
@@ -34,7 +34,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit dem Diagramm f
 
 -   Analysieren Sie mithilfe des Diagramms für die Aktivitäten der virtuellen Benutzer einen Fehler, der für einen bestimmten virtuellen Benutzer aufgetreten ist, und zeigen Sie die Details zum problematischen Fehlertyp an.
 
- Weitere Informationen finden Sie unter [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -46,37 +46,36 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit dem Diagramm f
 
     -   [Erstellen und Ausführen eines Auslastungstests](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
 
-## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Öffnen der in vorherigen exemplarischen Vorgehensweisen erstellten Projektmappe "ColorWebApp"
+## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Öffnen der in vorherigen exemplarischen Vorgehensweisen erstellten Projektmappe „ColorWebApp“
 
 ### <a name="open-the-solution"></a>Öffnen der Projektmappe
 
 1.  Starten Sie Visual Studio.
 
-2.  Öffnen Sie die Projektmappe "ColorWebApp", die "LoadTest1.loadtest" enthält. Dieser Auslastungstest ergibt sich aus der Durchführung der Schritte in den drei exemplarischen Vorgehensweisen, die am Anfang dieses Themas im Abschnitt zu den erforderlichen Komponenten und Voraussetzungen aufgeführt sind.
+2.  Öffnen Sie die Projektmappe **ColorWebApp**, die *LoadTest1.loadtest* enthält. Dieser Auslastungstest ergibt sich aus der Durchführung der Schritte in den drei exemplarischen Vorgehensweisen, die am Anfang dieses Themas im Abschnitt zu den erforderlichen Komponenten und Voraussetzungen aufgeführt sind.
 
-     Bei den verbleibenden Schritten in dieser exemplarischen Vorgehensweise wird von einer Webanwendung mit dem Namen "ColorWebApp", einem Webleistungstest mit dem Namen "ColorWebAppTest.webtest" und einem Auslastungstest mit dem Namen "LoadTest1.loadtest" ausgegangen.
+     Bei den verbleibenden Schritten in dieser exemplarischen Vorgehensweise wird von einer Webanwendung mit dem Namen ColorWebApp, einem Webleistungstest mit dem Namen *ColorWebAppTest.webtest* und einem Auslastungstest mit dem Namen *LoadTest1.loadtest* ausgegangen.
 
-## <a name="run-the-load-test"></a>Ausführen des Auslastungstests
- Führen Sie den Auslastungstest aus, um Aktivitätsdaten von virtuellen Benutzern zu sammeln.
+## <a name="run-the-load-test"></a>Auslastungstest ausführen
 
-### <a name="run-the-load-test-to-collect-virtual-user-activity-data"></a>Ausführen des Auslastungstests, um Aktivitätsdaten von virtuellen Benutzern zu sammeln
+Führen Sie den Auslastungstest aus, um Aktivitätsdaten von virtuellen Benutzern zu sammeln.
 
--   Klicken Sie auf der Symbolleiste im Auslastungstest-Editor auf die Schaltfläche **Ausführen**. Die Ausführung von "LoadTest1" beginnt.
+-   Klicken Sie in der Symbolleiste im **Auslastungstest-Editor** auf die Schaltfläche **Ausführen**. Die Ausführung von "LoadTest1" beginnt.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolieren von Problemen im Diagramm für Aktivitäten virtueller Benutzer
 
-Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten von virtuellen Benutzern können die Daten in den Auslastungstestergebnissen mithilfe der Detailansicht des Auslastungstest-Analyzers im Diagramm für Aktivitäten virtueller Benutzer angezeigt werden. Außerdem können mithilfe des Diagramms für Aktivitäten virtueller Benutzer Leistungsprobleme im Auslastungstest isoliert werden.
+Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten von virtuellen Benutzern können die Daten in den Auslastungstestergebnissen mithilfe der Detailansicht des **Auslastungstest-Analyzers** im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt werden. Darüber hinaus können mithilfe des **Diagramms für Aktivitäten virtueller Benutzer** Leistungsprobleme im Auslastungstest isoliert werden.
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>So verwenden Sie das Diagramm für Aktivitäten virtueller Benutzer in den Auslastungstestergebnissen
 
-1.  Nachdem die Ausführung des Auslastungstests abgeschlossen wurde, wird die Seite "Zusammenfassung" für die Auslastungstestergebnisse im Auslastungstest-Analyzer angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Diagramme**.
+1.  Nachdem die Ausführung des Auslastungstests abgeschlossen wurde, wird die Seite **Zusammenfassung** für die Auslastungstestergebnisse im **Auslastungstest-Analyzer** angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Diagramme**.
 
      Die Ansicht "Diagramme" wird angezeigt.
 
 2.  Klicken Sie im Diagramm **Seitenantwortzeit** mit der rechten Maustaste auf eine Stelle neben einem der Symbole für Schwellenwertverletzungen, und wählen Sie die Option **Zu Benutzerdetail wechseln** aus.
 
     > [!NOTE]
-    > Sie können die Schaltfläche **Details** auf der Symbolleiste des Auslastungstest-Editors verwenden, um auch das Diagramm für Benutzeraktivitäten zu öffnen. Wenn Sie jedoch die Option **Zu Benutzerdetail wechseln** verwenden, wird im Diagramm für Aktivitäten virtueller Benutzer automatisch die Ansicht des Teils des Tests vergrößert, auf den Sie im Diagramm mit der rechten Maustaste geklickt haben.
+    > Sie können die Schaltfläche **Details** in der Symbolleiste des **Auslastungstest-Editors** verwenden, um auch das Diagramm für Benutzeraktivitäten zu öffnen. Wenn Sie jedoch die Option **Zu Benutzerdetail wechseln** verwenden, wird im **Diagramm für Aktivitäten virtueller Benutzer** automatisch die Ansicht des Teils des Tests vergrößert, auf den Sie im Diagramm mit der rechten Maustaste geklickt haben.
 
      Die Detailansicht wird angezeigt, wobei im **Diagramm für Aktivitäten virtueller Benutzer** der Zeitraum im Mittelpunkt steht, an dem Schwellenwertverletzungen aufgetreten sind.
 
@@ -88,7 +87,7 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 5.  Deaktivieren Sie im Bereich **Filterergebnisse** die Kontrollkästchen **Erfolgreiche Ergebnisse anzeigen** und **HttpError**, aber lassen Sie das Kontrollkästchen **ValidationRuleError** aktiviert.
 
-     Im **Diagramm für Aktivitäten virtueller Benutzer** werden nur diejenigen virtuellen Benutzer angezeigt, die mehr als drei Sekunden auf der Seite „Red.aspx“ verbracht haben. Dieser Wert wurde in der vorherigen exemplarischen Vorgehensweise über die Schwellenwertverletzung konfiguriert.
+     Im **Diagramm für Aktivitäten virtueller Benutzer** werden nur diejenigen virtuellen Benutzer angezeigt, die mehr als drei Sekunden auf der Seite *Red.aspx* verbracht haben. Dieser Wert wurde in der vorherigen exemplarischen Vorgehensweise über die Schwellenwertverletzung konfiguriert.
 
 6.  Zeigen Sie mit der Maus auf die horizontale Linie, die den virtuellen Benutzer mit dem Validierungsregelfehler für die Schwellenwertverletzung darstellt.
 
@@ -114,14 +113,14 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 8.  Beachten Sie, dass **Testprotokoll** ein Link ist. Klicken Sie auf den Link **Testprotokoll**.
 
-9. Der Webleistungstest "ColorWebTest", der dem Protokoll zugeordnet ist, wird im Webleistungstest-Ergebnisviewer geöffnet. So können Sie isolieren, wo die Schwellenwertverletzungen aufgetreten sind.
+9. Der Webleistungstest „ColorWebTest“, der dem Protokoll zugeordnet ist, wird im **Webleistungstestergebnis-Viewer** geöffnet. So können Sie isolieren, wo die Schwellenwertverletzungen aufgetreten sind.
 
      Sie können verschiedene Einstellungen in den Bereichen **Detaillegende** und **Filterergebnisse** verwenden, um Leistungsprobleme und Fehler in den Auslastungstests leichter zu isolieren. Experimentieren Sie mit diesen Einstellungen und mit dem Tool **Zoom zum Zeitraum**, um zu sehen, wie die Daten für virtuelle Benutzer im **Diagramm für Aktivitäten virtueller Benutzer** dargestellt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Gewusst wie: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
-- [Collect Diagnostic Information Using Test Settings (Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen)](../test/collect-diagnostic-information-using-test-settings.md)
+- [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

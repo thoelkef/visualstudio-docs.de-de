@@ -1,5 +1,5 @@
 ---
-title: CommandPlacement Element | Microsoft Docs
+title: CommandPlacement-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267974"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232428"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement-Element
-Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in mehr als eine Gruppe oder einem Menü eingeschlossen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen vollständig diese Elemente neu definieren, um die Darstellung einer Benutzeroberfläche zu ändern.  
+# <a name="commandplacement-element"></a>CommandPlacement-element
+CommandPlacement-Element kann die Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü einbezogen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen dieser Elemente vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.  
   
- Weitere Informationen finden Sie unter [erstellen Wiederverwendbarer Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,22 +41,22 @@ Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in meh
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|guid|Erforderlich. Die Guid für den Befehlssatz, gemäß der [Symbole Element](../extensibility/symbols-element.md).|  
-|ID|Erforderlich. Die Id des Menüs, Gruppe oder Befehl ein, um die Platzierung gemäß Definition in der `Symbols Element`.|  
+|guid|Erforderlich. Die Guid für den Befehlssatz, gemäß der [Symbols-Element](../extensibility/symbols-element.md).|  
+|ID|Erforderlich. Die Id der Menüs, eine Gruppe oder ein Befehl aus, um die Platzierung gemäß der `Symbols Element`.|  
 |priority|Erforderlich. Bestimmt die visuelle Position des Elements in seinem übergeordneten Element.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Übergeordnetes Element|Erforderlich. Das Menü oder die Gruppe, die das Element platziert werden hostet.|  
+|Übergeordnetes Element|Erforderlich. Der im Menü oder die Gruppe, die das Element platziert werden hostet.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandPlacements-Element](../extensibility/commandplacements-element.md)|Gibt Gruppen CommandPlacements und CommandPlacement Elementen.|  
+|[CommandPlacements-element](../extensibility/commandplacements-element.md)|Gibt Gruppen von CommandPlacements und CommandPlacement-Elementen.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -70,5 +70,5 @@ Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in meh
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [CommandPlacements-Element](../extensibility/commandplacements-element.md)   
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [CommandPlacements-element](../extensibility/commandplacements-element.md)   
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

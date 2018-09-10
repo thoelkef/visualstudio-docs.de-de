@@ -14,26 +14,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57917b3820bac6005faa7b31f8cdd6cffd4978b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cf8c8a05d07d1a75a8794c52a2f89a55f01419e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965610"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152062"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
-Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [Task reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md).  
+Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [MSBuild Task Reference](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Aufgaben  
- Beispiele für Aufgaben sind u.a. [Kopieren](../msbuild/copy-task.md) (zum Kopieren mindestens einer Datei) [MakeDir](../msbuild/makedir-task.md) (zum Erstellen eines Verzeichnisses) und [Csc](../msbuild/csc-task.md) (zum Kompilieren einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quellcodedatei). Jede Aufgabe wird als .NET-Klasse implementiert, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert, die in der Assembly „Microsoft.Build.Framework.dll“ definiert ist.  
+ Beispiele für Aufgaben sind u.a. [Kopieren](../msbuild/copy-task.md) (zum Kopieren mindestens einer Datei) [MakeDir](../msbuild/makedir-task.md) (zum Erstellen eines Verzeichnisses) und [Csc](../msbuild/csc-task.md) (zum Kompilieren einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quellcodedatei). Jede Aufgabe wird als .NET-Klasse implementiert, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert, die in der Assembly *Microsoft.Build.Framework.dll* definiert ist.  
   
  Es gibt zwei Ansätze zur Implementierung einer Aufgabe:  
   
 -   Implementieren Sie die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle direkt.  
   
--   Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly „Microsoft.Build.Utilities.dll“ definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.  
-  
- In beiden Fällen müssen Sie Ihrer Klasse eine Methode mit dem Namen `Execute` hinzufügen. Dabei handelt es sich um die Methode, die aufgerufen wird, wenn eine Aufgabe ausgeführt wird. Sie nimmt keine Parameter und gibt einen `Boolean`-Wert zurück: `true`, wenn die Aufgabe erfolgreich ausgeführt wurde oder `false`, wenn sie fehlgeschlagen ist. Im folgenden Beispiel wird eine Aufgabe dargestellt, die keine Aktion ausführt, aber `true` zurückgibt.  
+-   Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly *Microsoft.Build.Utilities.dll* definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.  
+
+In beiden Fällen müssen Sie Ihrer Klasse eine Methode mit dem Namen `Execute` hinzufügen. Dabei handelt es sich um die Methode, die aufgerufen wird, wenn eine Aufgabe ausgeführt wird. Sie nimmt keine Parameter und gibt einen `Boolean`-Wert zurück: `true`, wenn die Aufgabe erfolgreich ausgeführt wurde oder `false`, wenn sie fehlgeschlagen ist. Im folgenden Beispiel wird eine Aufgabe dargestellt, die keine Aktion ausführt, aber `true` zurückgibt.  
   
 ```csharp
 using System;  
@@ -98,15 +98,15 @@ namespace MyTasks
 </Project>  
 ```  
   
-## <a name="registering-tasks"></a>Registrieren von Aufgaben  
+## <a name="register-tasks"></a>Protokollaufgaben  
  Wenn das Projekt eine Aufgabe ausführen möchte, muss [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wissen, wo die Assembly mit der Aufgabenklasse zu finden ist. Aufgaben werden über das [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md) registriert.  
   
- Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Datei „Microsoft.Common.Tasks“ ist eine Projektdatei mit einer Liste von `UsingTask`-Elementen, die alle Aufgaben registrieren, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden. Diese Datei wird automatisch beim Erstellen von Projekten mit eingeschlossen. Wenn eine Aufgabe, die in „Microsoft.Common.Tasks“ registriert wird, ebenfalls in der aktuellen Projektdatei registriert wird, hat die aktuelle Projektdatei Vorrang. Das heißt, Sie können eine Standardaufgabe mit Ihrer eigenen Aufgabe, die denselben Namen hat, außer Kraft setzen.  
+ Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Datei *Microsoft.Common.Tasks* ist eine Projektdatei mit einer Liste von `UsingTask`-Elementen, die alle Aufgaben registrieren, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden. Diese Datei wird automatisch beim Erstellen von Projekten mit eingeschlossen. Wenn eine Aufgabe, die in *Microsoft.Common.Tasks* registriert wird, ebenfalls in der aktuellen Projektdatei registriert wird, hat die aktuelle Projektdatei Vorrang. Das heißt, Sie können eine Standardaufgabe mit Ihrer eigenen Aufgabe, die denselben Namen hat, außer Kraft setzen.  
   
 > [!TIP]
->  Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden, wenn Sie die Inhalte der „Microsoft.Common.Tasks“-Inhalte abrufen.  
+>  Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden, wenn Sie die Inhalte der *Microsoft.Common.Tasks* abrufen.  
   
-## <a name="raising-events-from-a-task"></a>Auslösen von Ereignissen aus einer Aufgabe  
+## <a name="raise-events-from-a-task"></a>Auslösen von Ereignissen aus einer Aufgabe  
  Wenn Ihre Aufgabe aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitet wird, können Sie eine der folgenden Hilfsmethoden für die <xref:Microsoft.Build.Utilities.Task>-Klasse verwenden, damit ein Ereignis ausgelöst wird, das von allen registrierten Protokollierungen abgefangen und angezeigt wird:  
   
 ```csharp
@@ -143,7 +143,7 @@ public class SimpleTask : ITask
 }  
 ```  
   
-## <a name="requiring-task-parameters-to-be-set"></a>Erfordern, dass Aufgabenparameter festgelegt werden  
+## <a name="require-task-parameters-to-be-set"></a>Erfordern, dass Aufgabenparameter festgelegt werden  
  Sie können Aufgabeneigenschaften als „Erforderlich“ markieren, damit jede Projektdatei, die die Aufgabe ausführt, Werte für diese Eigenschaften oder die fehlgeschlagenen Builds festlegt. Wenden Sie das erforderliche `[Required]`-Attribut in der .NET-Eigenschaft in Ihrer Aufgabe wie folgt an:  
   
 ```csharp
@@ -161,7 +161,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.  
   
 ### <a name="code"></a>Code  
@@ -185,7 +185,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine Aufgabe, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.  
   
 ### <a name="code"></a>Code  
@@ -243,7 +243,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Diese [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Sie verfügt über eine erforderliche Zeichenfolgeneigenschaft und löst ein Ereignis aus, das von allen registrierten Protokollierungen angezeigt wird.  
   
 ### <a name="code"></a>Code  
@@ -251,7 +251,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung   
  Im folgenden Beispiel wird eine Projektdatei dargestellt, die die vorherigen Beispielaufgabe „SimpleTask3“ aufruft.  
   
 ### <a name="code"></a>Code  
@@ -268,4 +268,4 @@ namespace SimpleTask2
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)   
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   

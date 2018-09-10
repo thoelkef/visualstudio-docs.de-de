@@ -9,28 +9,28 @@ description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197177"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281650"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
-Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten.  
+Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
-Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden. 
+Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden.
 
 1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2.  Suchen Sie im Abschnitt „Tools“ die Kachel „Enterprise Mobility & Security“, und klicken Sie im unteren Bereich der Kachel auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren). 
+2.  Suchen Sie im Abschnitt „Tools“ die Kachel „Enterprise Mobility & Security“, und klicken Sie im unteren Bereich der Kachel auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
 
     ![EMS-Kachel](_img\vs-ems\vs-ems-tile.png)
 
-2.  Auf der Seite von Enterprise Mobility + Security E5 können Sie sich mit einem bestehenden Abonnement anmelden oder ein neues erstellen.  Um ein neues zu erstellen, vervollständigen Sie die angeforderten Informationen, und klicken Sie auf **Next** (Weiter). 
+2.  Auf der Seite von Enterprise Mobility + Security E5 können Sie sich mit einem bestehenden Abonnement anmelden oder ein neues erstellen.  Um ein neues zu erstellen, vervollständigen Sie die angeforderten Informationen, und klicken Sie auf **Next** (Weiter).
 
     ![Konto für EMS erstellen](_img\vs-ems\vs-ems-create-account-cropped.png)
 
@@ -51,7 +51,7 @@ Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereit
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
 | Visual Studio Professional (Standard<sup>2</sup>, jährliche Cloud) | VL, Azure, Retail                                       | Verfügbar                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
@@ -62,10 +62,10 @@ Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereit
 
 <sup>2</sup> *Umfasst nicht: Microsoft Partner Network (Professional)*
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei EMS?  Lesen Sie die [Onlinedokumentation zu EMS](/enterprise-mobility-security/).
 -  Besuchen Sie https://support.microsoft.com/allproducts, und wählen Sie das Produkt aus, um technischen Support für EMS-Komponenten zu erhalten.
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

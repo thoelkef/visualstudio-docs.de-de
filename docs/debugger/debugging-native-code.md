@@ -1,5 +1,5 @@
 ---
-title: Debuggen von systemeigenem Code | Microsoft Docs
+title: Debuggen von nativem Code | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472905"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180190"
 ---
 # <a name="debugging-native-code"></a>Debuggen von nativem Code
-In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Zum Verwenden von Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/debugger-basics.md).  
+In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Gewusst wie: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md)  
@@ -67,11 +67,11 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [Visual C++-Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md)  
  Enthält Links zu Themen über das Debuggen systemeigener Projekttypen, die durch die Visual C++-Projektvorlagen erstellt werden.  
 
- [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) enthält Informationen zum Debuggen von systemeigenen und verwalteten DLLs.
+ [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) erläutert, wie Sie native und verwaltete DLLs zu debuggen.
   
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von nativem Code, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)  
- [Debuggen in Visual Studio](../debugger/index.md) [Debugger-Funktion Tour](../debugger/debugger-feature-tour.md)
+ [Debuggen in Visual Studio](../debugger/index.md) [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

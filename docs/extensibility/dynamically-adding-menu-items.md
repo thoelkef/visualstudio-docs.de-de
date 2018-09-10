@@ -1,5 +1,5 @@
 ---
-title: Dynamisches Hinzufügen von Menüelementen | Microsoft Docs
+title: Dynamisches Hinzufügen von Menüelementen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,40 +15,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf7c9f8da800e827ac4b1993c55d4d96c8ca9d89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69a6b50702f444064715e08b31a1b014f8a1028f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133266"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639668"
 ---
-# <a name="dynamically-adding-menu-items"></a>Dynamisches Hinzufügen von Menüelementen
-Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicItemStart` Befehl Flag für die Definition eines Platzhalter-Schaltfläche in der Visual Studio-Befehlstabelle (VSCT)-Datei, und dann definieren (im Code) die Anzahl der im Menü angezeigt, und behandeln die Befehle Elemente. Wenn das VSPackage geladen wird, wird der Platzhalter für die dynamische Menüelemente ersetzt.  
+# <a name="dynamically-add-menu-items"></a>Hinzufügen von Menüelementen
+Sie können Menüelemente zur Laufzeit hinzufügen, durch Angabe der `DynamicItemStart` Befehl Flag für die Definition eines Platzhalter-Schaltfläche in der Visual Studio-Befehlstabelle (*VSCT*) Datei, und dann (im Code) definieren, die Anzahl der anzuzeigenden Menüelemente und behandeln die Befehle an. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamische Menüelemente ersetzt.  
   
- Visual Studio verwendet dynamische Listen in die **zuletzt verwendet** (MRU)-Liste, die die Namen von Dokumenten, die zuletzt geöffnet wurde anzeigt, und die **Windows** Liste aus, die die Namen von Windows angezeigt die derzeit geöffnet sind.   Die `DynamicItemStart` einer Befehlsdefinition-Flag gibt an, dass der Befehl ein Platzhalter ist, bis das VSPackage geöffnet wird. Wenn das VSPackage geöffnet wird, wird der Platzhalter ersetzt, mit 0 oder mehr Befehle, die zur Laufzeit erstellt und der dynamische Liste hinzugefügt werden. Sie können möglicherweise nicht die Position im Menü angezeigt, in dem die dynamische Liste angezeigt wird, bis das VSPackage geöffnet wird.  Um die dynamische Liste aufzufüllen, fordert Visual Studio das VSPackage, um einen Befehl mit der ID suchen, dessen ersten Zeichen, die die ID des Platzhalters identisch sind. Wenn Visual Studio einen entsprechenden Befehl gefunden wird, werden die dynamischen Liste den Namen des Befehls hinzugefügt. Anschließend inkrementiert die ID und sucht nach einer anderen übereinstimmenden Befehl aus, um die dynamische Liste hinzugefügt, bis keine weiteren dynamische Befehle vorhanden sind.  
+ Visual Studio verwendet dynamische Listen in die **zuletzt verwendet** (MRU)-Liste, in dem die Namen der Dokumente angezeigt werden, die vor kurzem geöffnet wurden, und die **Windows** Liste, die die Namen von Windows zeigt die gerade geöffnet sind.   Die `DynamicItemStart` -Flag auf eine Befehlsdefinition gibt an, dass der Befehl ein Platzhalter ist, bis das VSPackage geöffnet wird. Wenn das VSPackage geöffnet wird, wird der Platzhalter ersetzt, mit 0 oder mehr Befehle, die zur Laufzeit erstellt und die dynamische Liste hinzugefügt. Sie können möglicherweise nicht die Position im Menü angezeigt, in denen die dynamische Liste angezeigt wird, bis das VSPackage geöffnet wird.  Um die dynamische Liste aufzufüllen, fragt Visual Studio das VSPackage, um einen Befehl mit der ID suchen, deren erste Zeichen, die die ID des Platzhalters identisch sind. Wenn Visual Studio einen entsprechenden Befehl gefunden wird, fügt es der Name des Befehls Liste mit den dynamischen hinzu. Anschließend inkrementiert die ID und sucht nach einer anderen entsprechenden Befehl aus, um die dynamische Liste hinzugefügt werden soll, bis keine weiteren dynamischer Befehle vorhanden sind.  
   
- Diese exemplarische Vorgehensweise veranschaulicht, wie das Startup-Projekt in Visual Studio-Projektmappe mit einem Befehl auf dem **Projektmappen-Explorer** Symbolleiste. Er verwendet ein Menücontroller, die eine dynamische Dropdown-Liste der Projekte in der aktiven Projektmappe aufweist. Um zu verhindern, dass dieser Befehl angezeigt wird, wenn keine Projektmappe geöffnet ist, oder wenn die geöffneten Projektmappe nur ein Projekt enthält, das VSPackage wird nur geladen, wenn eine Lösung mehrere Projekte enthält.  
+ Diese exemplarische Vorgehensweise veranschaulicht die legen Sie des Startprojekt in Visual Studio-Projektmappe mit einem Befehl auf dem **Projektmappen-Explorer** Symbolleiste. Er verwendet ein Menücontroller, die eine dynamische Dropdownliste mit den Projekten in der aktiven Projektmappe. Um zu verhindern, dass dieser Befehl angezeigt wird, wenn keine Projektmappe geöffnet ist, oder wenn die geöffnete Projektmappe nur ein Projekt enthält, das VSPackage wird nur geladen, wenn eine Lösung mehrere Projekte enthält.  
   
- Weitere Informationen zu VSCT-Dateien finden Sie unter [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Weitere Informationen zu *VSCT* finden Sie unter [Visual Studio-Befehlstabellen (VSCT) Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>Erstellen eine Erweiterung mit einem Menübefehl  
+## <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl  
   
 1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `DynamicMenuItems`.  
   
-2.  Wenn das Projekt geöffnet wird, fügen Sie eine Elementvorlage für den benutzerdefinierten Befehl hinzu, und nennen Sie sie **DynamicMenu**. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+2.  Wenn das Projekt geöffnet wird, fügen Sie eine Elementvorlage für den benutzerdefinierten Befehl hinzu, und nennen Sie sie **DynamicMenu**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## <a name="setting-up-the-elements-in-the-vsct-file"></a>Einrichten der Elemente in der VSCT-Datei  
- Um mit dynamischen Menüelemente auf einer Symbolleiste ein Menücontroller zu erstellen, geben Sie die folgenden Elemente:  
+## <a name="setting-up-the-elements-in-the-vsct-file"></a>Einrichten der Elemente in der *VSCT* Datei  
+ Um für dynamische Menüelemente in einer Symbolleiste ein Menücontroller zu erstellen, geben Sie die folgenden Elemente:  
   
--   Zwei Gruppen, einer mit der Menücontroller im enthält und ein anderes, das die Elemente in der Dropdownliste enthält Befehls  
+-   Zwei Befehl, Gruppen, die Menücontroller enthält und eine andere, die die Elemente in der Dropdownliste enthält  
   
--   Ein Menu-Element des Typs `MenuController`  
+-   Ein Menüelement vom Typ `MenuController`  
   
--   Zwei Schaltflächen, eine, die als Platzhalter für die Menüelemente und ein anderes fungiert, das das Symbol und die QuickInfo auf der Symbolleiste bereitstellt.  
+-   Zwei Schaltflächen, die als Platzhalter für die Menüelemente und einen weiteren fungiert, die das Symbol und die QuickInfo auf der Symbolleiste bereitstellt.  
   
-1.  Definieren Sie in DynamicMenuPackage.vsct die Befehls-IDs. Navigieren Sie zum Abschnitt Symbole, und Ersetzen Sie die IDSymbol Elemente in der **GuidDynamicMenuPackageCmdSet** GuidSymbol-Block. Sie müssen IDSymbol Elemente für zwei Gruppen, die Menücontroller, die Platzhalter-Befehl und der Premium-Befehl definieren.  
+1.  In *DynamicMenuPackage.vsct*, definieren Sie die Befehls-IDs. Wechseln Sie zu dem Abschnitt "Symbols", und Ersetzen Sie die IDSymbol-Elemente in der **GuidDynamicMenuPackageCmdSet** GuidSymbol-Block. Sie müssen IDSymbol-Elemente für die beiden Gruppen, die Menücontroller, die Platzhalter-Befehl und den Ankerbefehl zu definieren.  
   
-    ```csharp  
+    ```xml  
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">  
         <IDSymbol name="MyToolbarItemGroup" value="0x1020" />  
         <IDSymbol name="MyMenuControllerGroup" value="0x1025" />  
@@ -61,9 +61,9 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     </GuidSymbol>    
     ```  
   
-2.  Klicken Sie im Abschnitt Gruppen löschen Sie die vorhandenen Gruppen, und fügen Sie die zwei Gruppen, die gerade definierte:  
+2.  Klicken Sie im Abschnitt Gruppen löschen Sie die vorhandenen Gruppen, und fügen Sie die beiden Gruppen, die gerade definierte:  
   
-    ```  
+    ```xml  
     <Groups>  
         <!-- The group that adds the MenuController on the Solution Explorer toolbar.   
              The 0x4000 priority adds this group after the group that contains the  
@@ -78,9 +78,9 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     </Groups>  
     ```  
   
-     Fügen Sie der MenuController hinzu. Die DynamicVisibility-Befehlsflag festgelegt, da es nicht immer sichtbar ist. Die ButtonText wird nicht angezeigt.  
+     Fügen Sie der MenuController hinzu. Legen Sie die DynamicVisibility-Befehlsflag, da es nicht immer sichtbar ist. Die ButtonText wird nicht angezeigt.  
   
-    ```  
+    ```xml  
     <Menus>  
         <!-- The MenuController to display on the Solution Explorer toolbar.  
              Place it in the ToolbarItemGroup.-->  
@@ -94,13 +94,13 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     </Menus>  
     ```  
   
-3.  Fügen Sie zwei Schaltflächen, das als Platzhalter für die dynamische Menüelemente und als Anker für die MenuController hinzu.  
+3.  Fügen Sie zwei Schaltflächen, das als Platzhalter für dynamische Menüelemente und als Anker für die MenuController hinzu.  
   
      Das übergeordnete Element die Schaltfläche "Platzhalter" ist die **MyMenuControllerGroup**. Fügen Sie der DynamicItemStart DynamicVisibility und TextChanges-Befehlsflags hinzu, auf die Schaltfläche "Platzhalter". Die ButtonText wird nicht angezeigt.  
   
-     Die Schaltfläche "Premium" enthält das Symbol und der QuickInfo-Text. Das übergeordnete Element der Anker Schaltfläche ist auch die **MyMenuControllerGroup**. Sie fügen Sie der NoShowOnMenuController-Befehlsflag, um sicherzustellen, dass die Schaltfläche mit der tatsächlich in der Controller-Dropdownliste im Menü angezeigt wird und die FixMenuController-Befehlsflag, erleichtern die permanente Anker hinzu.  
+     Die Schaltfläche mit den Anker enthält das Symbol und der QuickInfo-Text. Das übergeordnete Element die Schaltfläche "Premium" ist auch die **MyMenuControllerGroup**. Sie fügen die NoShowOnMenuController-Befehlsflag, um sicherzustellen, dass die Schaltfläche mit der tatsächlich in der Dropdownliste des Menüs Controller nicht angezeigt wird und das Flag FixMenuController-Befehl, um es dauerhaften Anker zu erhalten.  
   
-    ```  
+    ```xml  
     <!-- The placeholder for the dynamic items that expand to N items at runtime. -->  
     <Buttons>  
         <Button guid="guidDynamicMenuPackageCmdSet" id="cmdidMyDynamicStartCommand" priority="0x1000" >  
@@ -131,21 +131,21 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     </Buttons>  
     ```  
   
-4.  Das Projekt (im Ordner "Ressourcen") ein Symbol hinzu, und fügen Sie den Verweis darauf in der VSCT-Datei hinzu. In dieser exemplarischen Vorgehensweise verwenden wir die Pfeile-Symbol, das in der Projektvorlage enthalten ist.  
+4.  Fügen Sie ein Symbol für das Projekt (in der *Ressourcen* Ordner), und fügen Sie dann den Verweis darauf in der *VSCT* Datei. In dieser exemplarischen Vorgehensweise verwenden wir die Pfeile, das in der Projektvorlage angezeigt wird.  
   
-5.  Fügen Sie einen Abschnitt VisibilityConstraints außerhalb der im Abschnitt "Befehle" direkt vor der Symbole im Abschnitt hinzu. (Sie können eine Warnung erhalten, wenn Sie es nach Symbolen hinzufügen.) Dieser Abschnitt stellt sicher, dass der Menücontroller im angezeigt wird, wenn nur eine Projektmappe mit mehreren Projekten geladen wird.  
+5.  Fügen Sie einen Abschnitt VisibilityConstraints außerhalb der Abschnitt "Commands" direkt vor dem Abschnitt "Symbols" hinzu. (Sie können eine Warnung erhalten, wenn Sie es nach Symbole hinzufügen.) In diesem Abschnitt wird sichergestellt, dass es sich bei der Menücontroller im angezeigt wird, wenn nur eine Projektmappe mit mehreren Projekten geladen wird.  
   
-    ```  
+    ```xml  
     <VisibilityConstraints>  
          <!--Make the MenuController show up only when there is a solution with more than one project loaded-->  
         <VisibilityItem guid="guidDynamicMenuPackageCmdSet" id="MyMenuController" context="UICONTEXT_SolutionHasMultipleProjects"/>  
     </VisibilityConstraints>  
     ```  
   
-## <a name="implementing-the-dynamic-menu-command"></a>Implementieren des Menübefehls dynamische  
- Sie erstellen eine dynamisches Menü Command-Klasse, die von erben <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. In dieser Implementierung gibt der Konstruktor ein Prädikat für den Abgleich von Befehlen verwendet werden. Müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> Methode mit diesem Prädikat festgelegt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> -Eigenschaft, die den Befehl aufgerufen wird, werden identifiziert.  
+## <a name="implement-the-dynamic-menu-command"></a>Implementieren der dynamischen Menübefehl  
+ Sie erstellen eine dynamisches Menü Command-Klasse, die von erbt <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. In dieser Implementierung gibt den Konstruktor ein Prädikat für den Abgleich von Befehlen verwendet werden. Muss überschrieben werden die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> Methode mit diesem Prädikat Festlegen der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> -Eigenschaft, die identifiziert der Befehl aufgerufen werden.  
   
-1.  Erstellen Sie eine neue C#-Klassendatei mit dem Namen DynamicItemMenuCommand.cs, und fügen Sie eine Klasse namens **DynamicItemMenuCommand** von erbt <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1.  Erstellen Sie eine neue C#-Klassendatei mit dem Namen *DynamicItemMenuCommand.cs*, und fügen Sie eine Klasse, die mit dem Namen **DynamicItemMenuCommand** von erbt <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  
@@ -163,14 +163,14 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     using System.ComponentModel.Design;  
     ```  
   
-3.  Fügen Sie ein privates Feld zum Speichern der Übereinstimmung Prädikat hinzu:  
+3.  Fügen Sie ein privates Feld zum Speichern von des Prädikats übereinstimmen:  
   
     ```csharp  
     private Predicate<int> matches;  
   
     ```  
   
-4.  Fügen Sie einen Konstruktor, der von erbt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Konstruktor und Befehlshandler angibt und ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Handler. Fügen Sie ein Prädikat für den Abgleich von des Befehls hinzu:  
+4.  Fügen Sie einen Konstruktor, der von erbt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Konstruktor und gibt einen Befehlshandler und <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Handler. Fügen Sie ein Prädikat für den Abgleich des Befehls hinzu:  
   
     ```csharp  
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)  
@@ -185,7 +185,7 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-5.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> Methode, sodass die Übereinstimmungen Prädikat und legt aufgerufen der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> Eigenschaft:  
+5.  Überschreiben der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> Methode, dass die It die Übereinstimmungen aufruft und Prädikat und legt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> Eigenschaft:  
   
     ```csharp  
     public override bool DynamicItemMatch(int cmdId)  
@@ -205,17 +205,17 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-## <a name="adding-the-command"></a>Der Befehl hinzufügen  
- Der DynamicMenu-Konstruktor ist, in dem Sie Menübefehle, einschließlich dynamische Menüs und Menüelemente einrichten.  
+## <a name="add-the-command"></a>Fügen Sie den Befehl  
+ Der Konstruktor des Objekts ist, in dem Sie Menübefehle, einschließlich der dynamischen Menüs und Menüelemente einrichten.  
   
-1.  Fügen Sie in DynamicMenuPackage.cs die GUID für den Befehlssatz und die Befehls-ID:  
+1.  In *DynamicMenuPackage.cs*, fügen Sie die GUID für den Befehlssatz, und die Befehls-ID hinzu:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     public const uint cmdidMyCommand = 0x104;  
     ```  
   
-2.  Fügen Sie in der Datei DynamicMenu.cs die folgenden using-Anweisungen:  
+2.  In der *DynamicMenu.cs* Datei, fügen Sie die folgenden using-Anweisungen:  
   
     ```csharp  
     using EnvDTE;  
@@ -223,19 +223,19 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     using System.ComponentModel.Design;  
     ```  
   
-3.  Fügen Sie ein privates Feld in der Klasse DynamicMenu **dte2**.  
+3.  In der `DynamicMenu` -Klasse ein privates Feld hinzu **dte2**.  
   
     ```csharp  
     private DTE2 dte2;  
     ```  
   
-4.  Fügen Sie eine private RootItemId Feld hinzu:  
+4.  Fügen Sie ein privates RootItemId-Feld hinzu:  
   
     ```csharp  
     private int rootItemId = 0;  
     ```  
   
-5.  Fügen Sie den Menübefehl im Konstruktor DynamicMenu hinzu. Im nächsten Abschnitt definieren wir die Befehlshandler der `BeforeQueryStatus` -Ereignishandler und das Prädikat übereinstimmen.  
+5.  Fügen Sie in den Konstruktor des Objekts des Menübefehls ein. Im nächsten Abschnitt definieren wir die Befehlshandler, der `BeforeQueryStatus` -Ereignishandler und dem Prädikat übereinstimmen.  
   
     ```csharp  
     private DynamicMenu(Package package)  
@@ -263,10 +263,10 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-## <a name="implementing-the-handlers"></a>Implementieren die Handler  
- Um dynamische Menüelemente auf ein Menücontroller zu implementieren, müssen Sie den Befehl behandeln, wenn eine dynamische Element geklickt wird. Sie müssen auch die Logik implementieren, die den Zustand des Menüelements festlegt. Der Handler der DynamicMenu-Klasse hinzufügen.  
+## <a name="implement-the-handlers"></a>Implementieren Sie die Handler  
+ Um dynamische Menüelemente auf ein Menücontroller zu implementieren, müssen Sie den Befehl behandeln, wenn eine dynamische Element geklickt wird. Sie müssen auch die Logik implementieren, die den Zustand des Menüelements festlegt. Die Handler zum Hinzufügen der `DynamicMenu` Klasse.  
   
-1.  Zum Implementieren der **Startprojekt festlegen** Befehl, fügen Sie der **OnInvokedDynamicItem** -Ereignishandler. Anzeige für das Projekt, dessen Name identisch mit dem Text des Befehls, die aufgerufen wurde ist, und legt als Startprojekt durch Festlegen der absoluten Pfads in, der <xref:EnvDTE.SolutionBuild.StartupProjects%2A> Eigenschaft.  
+1.  Zum Implementieren der **Startprojekt festlegen** Befehl, fügen Sie der **OnInvokedDynamicItem** -Ereignishandler. Sucht, das Projekt, dessen Name identisch mit dem Text des Befehls, die aufgerufen wurde ist, und wird als Startprojekt durch Festlegen der absoluten Pfads, in, der <xref:EnvDTE.SolutionBuild.StartupProjects%2A> Eigenschaft.  
   
     ```csharp  
     private void OnInvokedDynamicItem(object sender, EventArgs args)  
@@ -289,7 +289,7 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-2.  Hinzufügen der `OnBeforeQueryStatusDynamicItem` -Ereignishandler. Dies ist der Handler aufgerufen, bevor ein `QueryStatus` Ereignis. Sie bestimmt, ob das Menüelement ein "real" Element ist, d. h. nicht die Platzhalterelement, und gibt an, ob das Element bereits aktiviert ist (d. h., dass das Projekt bereits als Startprojekt festgelegt ist).  
+2.  Hinzufügen der `OnBeforeQueryStatusDynamicItem` -Ereignishandler. Dies ist der Handler wird aufgerufen, bevor eine `QueryStatus` Ereignis. Es bestimmt, ob das Menüelement ein "echten"-Element, also nicht das Platzhalterelement, und gibt an, ob das Element bereits aktiviert ist (d. h., dass das Projekt bereits als Startprojekt festgelegt ist).  
   
     ```csharp  
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)  
@@ -319,9 +319,9 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-## <a name="implementing-the-command-id-match-predicate"></a>Implementieren die Befehls-ID Übereinstimmung Prädikat  
+## <a name="implement-the-command-id-match-predicate"></a>Implementieren Sie die Befehls-ID Übereinstimmung Prädikat  
   
-1.  Implementieren Sie jetzt das Prädikat übereinstimmen. Es müssen zwei Dinge zu bestimmen: zuerst, ob die Befehls-ID ist ungültig (er ist größer als oder gleich dem deklarierten Befehls-ID), und Zweitens, ob es eine mögliche Projekt angegeben (es ist kleiner als die Anzahl der Projekte in der Projektmappe).  
+Implementieren Sie nun das Prädikat übereinstimmen. Wir müssen zwei Dinge zu bestimmen: zuerst, ob die Befehls-ID ist ungültig (er ist größer als oder gleich der deklarierten Befehls-ID), und Zweitens, ob sie ein Projekt möglich angegeben (es ist kleiner als die Anzahl der Projekte in der Projektmappe).
   
     ```csharp  
     private bool IsValidDynamicItem(int commandId)  
@@ -333,8 +333,8 @@ Sie können Menüelemente zur Laufzeit hinzufügen, durch Angeben der `DynamicIt
     }  
     ```  
   
-## <a name="setting-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Festlegen des VSPackages beim Laden nur, wenn eine Lösung mehrere Projekte enthält  
- Da die **Startprojekt festlegen** Befehl keinen Sinn, wenn die aktive Projektmappe mehrere Projekte verfügt, können Sie Ihr VSPackage, um automatische nur in diesem Fall laden festlegen. Verwenden Sie <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> zusammen mit den Benutzeroberflächenkontext <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. Fügen Sie in der Datei DynamicMenuPackage.cs der DynamicMenuPackage-Klasse die folgenden Attribute hinzu:  
+## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Legen Sie das VSPackage zu laden, nur, wenn eine Lösung mehrere Projekte enthält.  
+ Da die **Startprojekt festlegen** Befehl ist nicht sinnvoll, wenn die aktive Projektmappe mehrere Projekte verfügt, können Sie Ihr VSPackage zu automatisch nur in diesem Fall laden. Verwenden Sie <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> zusammen mit den UI-Kontext <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. In der *DynamicMenuPackage.cs* Datei die folgenden Attribute der DynamicMenuPackage-Klasse hinzufügen:  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -346,19 +346,19 @@ public sealed class DynamicMenuItemsPackage : Package
 {}  
 ```  
   
-## <a name="testing-the-set-startup-project-command"></a>Testen den Befehl Startprojekt festlegen  
- Jetzt können Sie den Code testen.  
+## <a name="test-the-set-startup-project-command"></a>Testen Sie die Gruppe Startup-Projekt-Befehl  
+ Jetzt können Sie Ihren Code testen.  
   
-1.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.  
+1.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
   
-2.  Öffnen Sie in der experimentellen Instanz eine Lösung, die mehr als ein Projekt verfügt über ein.  
+2.  Öffnen Sie eine Projektmappe mit mehr als ein Projekt, in der experimentellen Instanz.  
   
-     Sehen Sie auf das Pfeilsymbol der **Projektmappen-Explorer** Symbolleiste. Wenn Sie ihn zu erweitern, sollte die Menüelemente, die darstellen, die verschiedenen Projekte in der Projektmappe angezeigt werden.  
+     Daraufhin sollte das Symbol "Pfeil" auf die **Projektmappen-Explorer** Symbolleiste. Wenn Sie es erweitern, sollte die Menüelemente, die darstellen, die verschiedenen Projekte in der Projektmappe angezeigt werden.  
   
 3.  Wenn Sie eines der Projekte aktivieren, wird es das Startprojekt an.  
   
-4.  Wenn Sie die Projektmappe schließen oder öffnen Sie eine Projektmappe, die nur ein Projekt verfügt, sollte die Symbolleiste auf das Symbol nicht mehr angezeigt.  
+4.  Wenn Sie schließen Sie die Projektmappe, oder öffnen Sie eine Projektmappe, die nur ein Projekt verfügt, sollte das Symbol auf der Symbolleiste angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

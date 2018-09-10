@@ -9,208 +9,224 @@ description: Weitere Informationen zum Priority Support-Vorteil, der in Visual S
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995841"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567154"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
 
-Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.  
+Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.
 
 Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.
 
 ## <a name="included-forums"></a>Enthaltene Foren
 
 ### <a name="net-framework"></a>.NET Framework
-   - .NET Framework – Setup und Wartung 
+   - [.NET Framework – Setup und Wartung](http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads)
 
-   - Common Language Runtime – interne Elemente und Architektur 
+   - [Common Language Runtime – interne Elemente und Architektur](http://social.msdn.microsoft.com/Forums/en-US/clr/threads)
 
-   - .NET Framework-Klassenbibliotheken 
+   - [.NET Framework-Klassenbibliotheken](http://social.msdn.microsoft.com/Forums/en-US/netfxbcl/threads)
 
-   - Windows Presentation Foundation (WPF) 
+   - [Windows Presentation Foundation (WPF)](http://social.msdn.microsoft.com/Forums/en-US/wpf/threads)
 
-   - Windows Communication Foundation, Serialisierung und Netzwerke 
+   - [Windows Communication Foundation, Serialisierung und Netzwerke](http://social.msdn.microsoft.com/Forums/en-US/wcf/threads)
+
+### <a name="microsoft-azure"></a>Microsoft Azure
+   - [Cloud Services (Web- und Workerrollen)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
+   
+   - [Azure SQL-Datenbank](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
+
+   - [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazureactiveauthentication)
+
+   - [Azure-Verwaltungsportal](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure-Netzwerk (DNS, Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Active Directory](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure API Management](https://social.msdn.microsoft.com/Forums/en-US/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)
+
+   - [Machine Learning](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=MachineLearning)
+
+   - [Visual Studio Online](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)
+
+   - [Azure RemoteApp](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureRemoteApp)
+
+   - [Azure Websites](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)
+
+   - [Preise und Abrechnung](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing)
+
 
 ### <a name="windows-forms-development"></a>Windows Forms-Entwicklung
-   - Windows Forms-Datenkontrolle und -Datenbindung 
+   - [Windows Forms-Datensteuerelemente und -Datenbindung](http://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads)
 
-   - Windows Forms allgemein 
+   - [Windows Forms allgemein](http://social.msdn.microsoft.com/Forums/en-US/winforms/threads)
 
-   - ClickOnce und Setup- und Bereitstellungsprojekte 
+   - [ClickOnce und Setup- und Bereitstellungsprojekte](http://social.msdn.microsoft.com/Forums/en-US/winformssetup/threads)
 
-   - Windows Forms-Designer 
+   - [Windows Forms-Designer](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
 
-   - Windows Forms-Beispielanwendungen 
+   - [Windows Forms-Beispielanwendungen](http://social.msdn.microsoft.com/Forums/en-US/winformsapplications/threads)
 
 
 ### <a name="windows-universal-apps"></a>Universelle Windows-Apps
-   - Entwickeln von universellen Windows-Apps 
+   - [Entwickeln von universellen Windows-Apps](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/home?forum=wpdevelop)
 
 ### <a name="internet-of-things-iot"></a>Internet der Dinge (IoT)
-   - Windows 10 IoT 
+   - [Windows 10 IoT](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WindowsIoT&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="office-development"></a>Office-Entwicklung
-   - Microsoft Office für Entwickler 
+   - [Microsoft Office für Entwickler](http://social.msdn.microsoft.com/Forums/en-US/category/officedev)
 
-   - Excel für Entwickler 
+   - [Excel für Entwickler](http://social.msdn.microsoft.com/Forums/en-US/exceldev)
 
-   - Word für Entwickler 
+   - [Word für Entwickler](http://social.msdn.microsoft.com/Forums/en-US/worddev)
 
-   - Outlook für Entwickler 
+   - [Outlook für Entwickler](http://social.msdn.microsoft.com/Forums/en-US/outlookdev)
 
-   - Access für Entwickler 
+   - [Access für Entwickler](http://social.msdn.microsoft.com/Forums/en-US/accessdev)
 
-   - Visual Studio Tools for Office 
+   - [Visual Studio Tools for Office](http://social.msdn.microsoft.com/Forums/en-US/vsto/threads)
 
-   - Open XML-Format-SDK 
+   - [Open XML-Format-SDK](http://social.msdn.microsoft.com/Forums/en-US/oxmlsdk/threads)
 
-   - Visual Basic for Applications 
+   - [Visual Basic for Applications](http://social.msdn.microsoft.com/Forums/en-US/isvvba/threads)
 
-   - Allgemeine Office-Entwicklung 
+   - [Allgemeine Office-Entwicklung](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=officegeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Entwickeln von Apps für Office 2013 
+   - [Entwickeln von Apps für Office 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforoffice&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="sql-server"></a>SQL Server
-   - Erste Schritte mit SQL Server 
+   - [Erste Schritte mit SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlgetstarted/threads)
 
-   - SQL Server-Datenzugriff 
+   - [SQL Server-Datenzugriff](http://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads)
 
-   - SQL Server Database Engine (Datenbankmodul) 
+   - [SQL Server-Datenbank-Engine](http://social.msdn.microsoft.com/Forums/en-US/sqldatabaseengine/threads)
 
-   - SQL Server Data Warehousing 
+   - [SQL Server Data Warehousing](http://social.msdn.microsoft.com/Forums/en-US/sqldatawarehousing/threads)
 
-   - SQL Server Integration Services 
+   - [SQL Server Integration Services](http://social.msdn.microsoft.com/Forums/en-US/sqlintegrationservices/threads)
 
-   - SQL Server Analysis Services 
+   - [SQL Server Analysis Services](http://social.msdn.microsoft.com/Forums/en-US/sqlanalysisservices/threads)
 
-   - SQL Server Notification Services 
+   - [SQL Server Notification Services](http://social.msdn.microsoft.com/Forums/en-US/sqlnotificationservices/threads)
 
-   - SQL Server Reporting Services 
+   - [SQL Server Reporting Services](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
 
-   - Transact-SQL 
+   - [Transact-SQL](http://social.msdn.microsoft.com/Forums/en-US/transactsql/threads)
 
-   - SQL Server-Replikation 
+   - [SQL Server-Replikation](http://social.msdn.microsoft.com/Forums/en-US/sqlreplication/threads)
 
-   - SQL Server-Sicherheit 
+   - [SQL Server Security (SQL Server-Sicherheit)](http://social.msdn.microsoft.com/Forums/en-US/sqlsecurity/threads)
 
-   - SQL Server-Setup & -Upgrade 
+   - [SQL Server-Setup und -Upgrade](http://social.msdn.microsoft.com/Forums/en-US/sqlsetupandupgrade/threads)
 
-   - SQL Server-Tools – allgemein 
+   - [SQL Server-Tools – allgemein](http://social.msdn.microsoft.com/Forums/en-US/sqltools/threads)
 
-   - SQL Service Broker 
+   - [SQL Service Broker](http://social.msdn.microsoft.com/Forums/en-US/sqlservicebroker/threads)
 
-   - SQL Server Compact 
+   - [SQL Server Compact](http://social.msdn.microsoft.com/Forums/en-US/sqlce/threads)
 
-   - SQL Server Express 
+   - [SQL Server Express](http://social.msdn.microsoft.com/Forums/en-US/sqlexpress/threads)
 
-   - Data Mining 
+   - [Data Mining](http://social.msdn.microsoft.com/Forums/en-US/sqldatamining/threads)
 
-   - .NET Framework in SQL Server 
+   - [.NET Framework in SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlnetfx/threads)
 
 ### <a name="sharepoint"></a>SharePoint
-   - SharePoint 2013 – allgemeine Erläuterungen und Fragen 
+   - [SharePoint 2013 – Allgemeine Erläuterungen und Fragen](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Entwickeln von Apps für SharePoint 2013 
+   - [Entwickeln von Apps für SharePoint 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforsharepoint&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – Entwicklung und Programmierung 
+   - [SharePoint 2013 – Entwicklung und Programmierung](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopment&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – Setup, Upgrade, Verwaltung und Betrieb 
+   - [SharePoint 2013 – Setup, Upgrade, Verwaltung und Betrieb](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadmin&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – Verwenden von SharePoint Designer, InfoPath und anderen Anpassungen 
+   - [SharePoint 2013 – Verwenden von SharePoint Designer, InfoPath und anderen Anpassungen](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomization&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – Suche 
+   - [SharePoint 2013 – Suche](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearch&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Entwicklung und Programmierung 
+   - [SharePoint 2010 – Entwicklung und Programmierung](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopmentprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Allgemeine Erläuterungen und Fragen 
+   - [SharePoint 2010 – Allgemeine Erläuterungen und Fragen](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneralprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Setup, Upgrade, Verwaltung und Betrieb 
+   - [SharePoint 2010 – Setup, Upgrade, Verwaltung und Betrieb](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadminprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Verwenden von SharePoint Designer, InfoPath und anderen Anpassungen 
+   - [SharePoint 2010 – Verwenden von SharePoint Designer, InfoPath und anderen Anpassungen](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomizationprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Suche 
+   - [SharePoint 2010 – Suche](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearchprevious&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Visual Studio – allgemeine Fragen 
+   - [Visual Studio – allgemeine Fragen](http://social.msdn.microsoft.com/Forums/en-US/visualstudiogeneral/threads)
 
-   - Visual Studio – Setup und Installation 
+   - [Visual Studio – Setup und Installation](http://social.msdn.microsoft.com/Forums/en-US/vssetup/threads)
 
-   - Testtools in Visual Studio 2010 und 2012 
+   - [Testtools in Visual Studio 2010 und 2012](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vstest&filter=alltypes&sort=lastpostdesc)
 
-   - Testen mit Visual Studio Test-Manager (MTM) 
+   - [Testen mit Visual Studio Test-Manager (MTM)](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsmantest&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio-Komponententest 
+   - [Visual Studio-Komponententest](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsunittest&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - TFS – Setup und Verwaltung 
+   - [TFS – Setup und Verwaltung](http://social.msdn.microsoft.com/Forums/en-US/tfsadmin/threads)
 
-   - TFS – allgemein 
+   - [TFS – allgemein](http://social.msdn.microsoft.com/Forums/en-US/tfsgeneral/threads)
 
-   - TFS – Quellcodeverwaltung und Versionskontrolle 
+   - [TFS – Quellcodeverwaltung und Versionskontrolle](http://social.msdn.microsoft.com/Forums/en-US/tfsversioncontrol/threads)
 
-   - TFS – Build- und Releaseverwaltung 
+   - [TFS – Build- und Releaseverwaltung](http://social.msdn.microsoft.com/Forums/en-US/tfsbuild/threads)
 
-   - TFS – Berichterstellung und Warehouse 
+   - [TFS – Berichterstellung und Warehouse](http://social.msdn.microsoft.com/Forums/en-US/tfsreporting/threads)
 
-   - TFS – Projektmanagement und Arbeitselemente 
+   - [TFS – Projektmanagement und Arbeitselemente](http://social.msdn.microsoft.com/Forums/en-US/tfsworkitemtracking/threads)
 
-   - TFS – Prozessvorlagen 
+   - [TFS – Prozessvorlagen](http://social.msdn.microsoft.com/Forums/en-US/tfsprocess/threads)
 
-   - TFS – Migration und Integration 
+   - [TFS – Migration und Integration](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsintegration&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio Online 
+   - [Visual Studio Online](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-languages"></a>Visual Studio-Sprachen
-   - Visual Basic 
+   - [Visual Basic](http://social.msdn.microsoft.com/Forums/en-US/vbgeneral/threads)
 
-   - Visual C# 
+   - [Visual C#](http://social.msdn.microsoft.com/Forums/en-US/csharpgeneral/threads)
 
-   - Visual C++ 
+   - [Visual C++](http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/threads)
 
-   - Visual C++ – Standards, Erweiterungen und Interoperabilität 
+   - [Visual C++ – Standards, Erweiterungen und Interoperabilität](http://social.msdn.microsoft.com/Forums/en-US/vclanguage/threads)
 
 
 ### <a name="biztalk"></a>BizTalk
-   - BizTalk Server allgemein 
+   - [BizTalk Server allgemein](http://social.msdn.microsoft.com/Forums/en-US/biztalkgeneral/threads)
 
-   - BizTalk Server EDI und AS2 
+   - [BizTalk Server EDI und AS2](http://social.msdn.microsoft.com/Forums/en-US/biztalkediandas2/threads)
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - ADO<span>.NET-Datenanbieter 
+   - [ADO<span>.NET-Datenanbieter](http://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads)
 
-   - ADO<span>.NET-Dataset 
+   - [ADO<span>.NET-Dataset](http://social.msdn.microsoft.com/Forums/en/adodotnetdataset/threads)
 
-   - LINQ to SQL 
+   - [LINQ to SQL](http://social.msdn.microsoft.com/Forums/en/linqtosql/threads)
 
-   - ADO<span>.NET Entity Framework und LINQ to Entities 
+   - [ADO<span>NET Entity Framework und LINQ to Entities](http://social.msdn.microsoft.com/Forums/en/adodotnetentityframework/threads)
 
-   - WCF (ADO<span>.NET) Data Services 
+   - [WCF (ADO<span>.NET) Data Services](http://social.msdn.microsoft.com/Forums/en/adodotnetdataservices/threads)
 
 ### <a name="xml"></a>XML
-   - XML und das .NET Framework 
+   - [XML und das .NET Framework](http://social.msdn.microsoft.com/Forums/en-US/xmlandnetfx/threads)
 
-   - SQL Server-XML 
+   - [SQL Server-XML](http://social.msdn.microsoft.com/Forums/en-US/sqlxml/threads)
 
-
-## <a name="activation-steps"></a>Aktivierungsschritte
-Der Zugriff auf Priority Support ist sehr einfach. 
-1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
-
-2. Suchen Sie im Abschnitt „Support“ die Kachel „Priority Support“.  Klicken Sie auf **Hilfe erhalten**.
-
-    ![Priority Support-Kachel](_img/vs-priority-support/vs-priority-support-tile.png)
-
-3. Durchsuchen Sie die Liste der Foren, und wählen Sie das gewünschte Forum aus. 
-
-    ![Priority Support-Foren](_img/vs-priority-support/vs-priority-support-forums.png)
-
-4. Sie können die neuesten Antworten lesen, vorherige Beiträge durchsuchen oder selbst eine Frage stellen.  
-
-    ![Priority Support-Beispiel](_img/vs-priority-support/vs-priority-support-example.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
@@ -224,9 +240,9 @@ Der Zugriff auf Priority Support ist sehr einfach.
 
 <sup>1</sup> *Umfasst: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Umfasst nicht: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services (Developer), BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen. 
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 
 ## <a name="support-resources"></a>Supportressourcen
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

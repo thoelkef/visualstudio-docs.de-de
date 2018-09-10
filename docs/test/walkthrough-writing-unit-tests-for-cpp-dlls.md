@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751831"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382727"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
 In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C++-DLL mithilfe der Test-First-Methode entwickeln können. Die grundlegenden Schritte werden im Folgenden beschrieben:
 
-1.  [Erstellen Sie ein systemeigenes Testprojekt](#create_test_project). Das Testprojekt befindet sich in derselben Projektmappe wie das DLL-Projekt.
+1.  [Erstellen Sie eines nativen Testprojekts](#create_test_project). Das Testprojekt befindet sich in derselben Projektmappe wie das DLL-Projekt.
 
-2.  [Erstellen Sie ein DLL-Projekt](#create_dll_project). In dieser exemplarischen Vorgehensweise wird eine neue DLL erstellt, die Vorgehensweise für das Testen einer vorhandenen DLL ist aber ähnlich.
+2.  [Erstellen eines DLL-Projekts](#create_dll_project) In dieser exemplarischen Vorgehensweise wird eine neue DLL erstellt, die Vorgehensweise für das Testen einer vorhandenen DLL ist aber ähnlich.
 
 3.  [Machen Sie die DLL-Funktionen für die Tests sichtbar](#make_functions_visible).
 
@@ -38,9 +38,9 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ##  <a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
 
-1.  Klicken Sie im Menü **Datei** auf **Neu > Projekt**.
+1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-     Erweitern Sie im Dialogfeld die Optionen **Installiert > Vorlagen > Visual C++ > Test**.
+     Erweitern Sie im Dialogfeld **Installiert** > **Vorlagen** > **Visual C++** > **Test**.
 
      Klicken Sie entweder auf die Vorlage **Natives Komponententestprojekt** oder auf das von Ihnen bevorzugte installierte Framework. Wenn Sie eine andere Vorlage wie Google Test oder Boost.Test auswählen, bleiben die Grundprinzipien erhalten, obwohl bei einigen Details Unterschiede auftreten können.
 
@@ -75,11 +75,11 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          Beachten Sie, dass die `Assert` -Klasse mehrere statische Methoden zur Verfügung stellt, die Sie verwenden können, um Ergebnisse in den Testmethoden zu überprüfen.
 
-    2.  Klicken Sie im Menü **Test** auf **Ausführen > Alle Tests**.
+    2.  Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
 
          Der Test wird erstellt und ausgeführt.
 
-         Der Test-Explorer wird angezeigt.
+         Der **Test-Explorer** wird angezeigt.
 
          Der Test wird unter **Bestandene Tests**angezeigt.
 
@@ -99,13 +99,13 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      ![C++-Projektassistent mit den Einstellungen "DLL" und "Symbole exportieren"](../test/media/utecpp06.png)
 
-3.  Deklarieren Sie eine exportierte Funktion in der wichtigsten .h-Datei:
+3.  Deklarieren Sie eine exportierte Funktion in der Prinzipaldatei *.h*:
 
      ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png)
 
      Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  Fügen Sie in der wichtigsten CPP-Datei einen minimalen Text für die Funktion hinzu:
+4.  Fügen Sie in der Prinzipaldatei *CPP* einen minimalen Text für die Funktion hinzu:
 
     ```cpp
         // Find the square root of a number.
@@ -119,7 +119,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 1.  Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
-    1.  Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.
+    1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** >  **Framework und Verweise**.
 
          ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
 
@@ -129,7 +129,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png)
 
-2.  Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:
+2.  Schließen Sie in die *CPP*-Prinzipaldatei für Komponententests die *.h*-Datei des DLL-Codes ein:
 
     ```cpp
     #include "..\RootFinder\RootFinder.h"
@@ -157,9 +157,9 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 4.  Erstellen Sie die Projektmappe.
 
-     Der neue Test wird im Test-Explorer angezeigt.
+     Der neue Test wird im **Test-Explorer** angezeigt.
 
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
      ![Komponententest-Explorer – einfacher Test bestanden](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     >
     > Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2.  Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+2.  Erstellen Sie erst die Projektmappe, und klicken Sie dann im **Test-Explorer** auf **Alle ausführen**.
 
      Beim neuen Test tritt ein Fehler auf.
 
@@ -214,7 +214,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     }
     ```
 
-4.  Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+4.  Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
 
      Beide Tests sind erfolgreich.
 
@@ -262,7 +262,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 3.  Öffnen Sie den Test, bei dessen Ausführung ein Fehler aufgetreten ist, oder doppelklicken Sie auf diesen.
 
-     Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
+     Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom **Test-Explorer** angezeigt.
 
      ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -302,7 +302,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 1.  Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -329,8 +329,8 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Adding unit tests to existing C++ applications (Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen)](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
+- [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
 - [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importieren und Exportieren](/cpp/build/importing-and-exporting)

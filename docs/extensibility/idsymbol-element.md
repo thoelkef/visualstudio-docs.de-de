@@ -1,5 +1,5 @@
 ---
-title: IDSymbol Element | Microsoft Docs
+title: IDSymbol-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71979bd4f859257555c9d72ac5521a5ae21b9ed4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127525"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500380"
 ---
-# <a name="idsymbol-element"></a>IDSymbol-Element
-Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, eine Gruppe oder ein Befehl darstellt. Die GUID stammt aus dem übergeordneten `GuidSymbol` Element. Die `IDSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die ID der in enthalten ist, bietet die `value` Attribut.  
+# <a name="idsymbol-element"></a>IDSymbol-element
+Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, Gruppe oder den Befehl darstellt. Die GUID wird von der übergeordneten `GuidSymbol` Element. Die `IDSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die ID, der in enthalten ist, enthält die `value` Attribut.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <IDSymbol name=ElementName value="0x0010" />  
 ```  
   
@@ -47,10 +47,10 @@ Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, eine Gr
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[GuidSymbol-Element](../extensibility/guidsymbol-element.md)|Enthält die GUID des GUID: ID-Paar, die ein Menü, eine Gruppe oder ein Befehl darstellt. Gruppiert `IDSymbol`-Elemente.|  
+|[GuidSymbol-element](../extensibility/guidsymbol-element.md)|Enthält die GUID, der das GUID: ID-Paar, die ein Menü, Gruppe oder den Befehl darstellt. Gruppiert `IDSymbol`-Elemente.|  
   
 ## <a name="remarks"></a>Hinweise  
- Jede `IDSymbol` Element in einer bestimmten `GuidSymbol` -Element muss einen eindeutigen aufweisen `value`. Allerdings `IDSymbol` Elemente, die identische Werte haben können in einem Paket vorhanden, solange sie anderen übergeordneten Objekte verfügen.  
+ Jede `IDSymbol` Element in einer angegebenen `GuidSymbol` -Element muss einen eindeutigen besitzen `value`. Allerdings `IDSymbol` Elemente, die identische Werte aufweisen können in einem Paket vorhanden, solange sie die verschiedene übergeordneten Elementen verfügen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

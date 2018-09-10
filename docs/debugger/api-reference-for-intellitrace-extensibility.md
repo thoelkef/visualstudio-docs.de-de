@@ -1,5 +1,5 @@
 ---
-title: API-Referenz für IntelliTrace-Erweiterbarkeit | Microsoft Docs
+title: API-Referenz für IntelliTrace-Erweiterbarkeit | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,24 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457461"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153503"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>API-Referenz für IntelliTrace-Erweiterbarkeit
+
 Anhand der Informationen dieses Abschnitts können Sie die IntelliTrace-Erweiterbarkeits-APIs verwenden, um ITRACE-Dateien in der Anwendung zu lesen und zu decodieren.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt
+
  Diese IntelliTrace-Erweiterbarkeits-APIs sind in einem einzelnen Namespace enthalten.  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte
+
  [IntelliTrace](../debugger/intellitrace.md)  
  Stellt Informationen bereit, wie Sie mit IntelliTrace debuggen können.  
   
- [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [MSDN-Codegalerie](https://code.msdn.microsoft.com/)  
  Hostet eine Beispielanwendung, die anzeigt, wie die IntelliTrace-Erweiterbarkeit verwendet wird.

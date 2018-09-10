@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976714"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380496"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
-In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nimmt, wird veranschaulicht, wie Sie ein Testprojekt für Webleistung und Auslastung in Visual Studio erstellen und ausführen. Auslastungstests führen Webleistungstests oder Komponententests aus, um den gleichzeitigen Zugriff von vielen Benutzern auf einen Server zu simulieren.
+In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nimmt, wird veranschaulicht, wie Sie ein Testprojekt für Webleistung und Auslastung in Visual Studio erstellen und ausführen. Auslastungstests führen Webleistungstests oder Komponententests aus, um den gleichzeitigen Zugriff vieler Benutzer auf einen Server zu simulieren.
 
 > [!IMPORTANT]
 > Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition von Visual Studio 2017 verfügbar.
@@ -27,9 +27,9 @@ In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nimmt, wird
 
 Wenn Sie noch keine Komponente für Tools für Webleistung und Auslastungstests installiert haben, müssen Sie diese über den Visual Studio-Installer installieren.
 
-1. Öffnen Sie den Visual Studio-Installer über das Startmenü von Windows. Sie können auch in Visual Studio über das Dialogfeld **Neues Projekt** oder durch klicken auf **Extras** > **Tools und Features abrufen...** in der Menüleiste auf den Installer zugreifen.
+1. Öffnen Sie den **Visual Studio-Installer** über das Windows-**Startmenü**. Sie können auch in Visual Studio über das Dialogfeld **Neues Projekt** oder durch Klicken auf **Extras** > **Tools und Features abrufen** in der Menüleiste auf den Installer zugreifen.
 
-1. Wählen Sie im Visual Studio-Installer die Registerkarte **Einzelne Komponenten** aus, und scrollen Sie nach unten zum Abschnitt **Debuggen und Testen**. Wählen Sie **Tools für Webleistung und Auslastungstests** aus.
+1. Klicken Sie im **Visual Studio-Installer** auf die Registerkarte **Einzelne Komponenten**, und scrollen Sie nach unten zum Abschnitt **Debuggen und Testen**. Wählen Sie **Tools für Webleistung und Auslastungstests** aus.
 
    ![Die Komponente „Tools für Webleistung und Auslastungstests“](media/web-perf-load-testing-tools-component.png)
 
@@ -41,7 +41,7 @@ Wenn Sie noch keine Komponente für Tools für Webleistung und Auslastungstests 
 
 In diesem Abschnitt wird das Erstellen eines Auslastungstestprojekts in C# erläutert. Wenn Ihnen das lieber ist, können Sie Ihr Auslastungstestprojekt auch in Visual Basic erstellen.
 
-1. Öffnen Sie Visual Studio, und klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt…**.
+1. Öffnen Sie Visual Studio, und klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 

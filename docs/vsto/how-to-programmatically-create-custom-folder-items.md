@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebd3bbc365212b2c6a1ab0691e8e16a7936c9955
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45423b134f3bc9e0a4e9c791bef8ea24761e38f4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257659"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Gewusst wie: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen
-  Dieses Beispiel erstellt einen neuen Ordner in Microsoft Office Outlook. Für den Namen des Ordners wird der Name des angemeldeten Benutzers verwendet.  
+  Dieses Beispiel erstellt einen neuen Ordner in Microsoft Office Outlook. Der Name des Benutzers, der angemeldet ist, wird für den Namen des Ordners verwendet.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
- [Vorgehensweise: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)  
+ [Gewusst wie: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Gewusst wie: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)  
   
   

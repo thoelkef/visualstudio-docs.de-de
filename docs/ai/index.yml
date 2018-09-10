@@ -1,0 +1,49 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 74548e58da6430888387e300974f4e48d1138c07
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "44134010"
+documentType: LandingData
+title: Visual Studio-Tools für KI
+metadata:
+  document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
+  title: Visual Studio Tools for AI | Microsoft-Dokumentation
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-ai-tools
+  author: lisawong19
+  ms.author: liwong
+  manager: routlaw
+  ms.topic: landing-page
+  ms.date: 10-25-2017
+abstract:
+  description: Visual Studio Tools for AI sind eine integrierte Entwicklungsumgebung für das Erstellen, Testen und Bereitstellen von Deep Learning-Lösungen. Erfahren Sie anhand von unseren Schnellstarts, Tutorials und Beispielen, wie Sie KI-Tools verwenden können.
+sections:
+- title: 5-minütige Schnellstarts
+  items:
+  - type: paragraph
+    text: 'Erfahren Sie, wie Sie die Deep Learning-Lösung mit folgenden Methoden ausführen können:'
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: media/Tensorflow_logo.png
+      text: TensorFlow und Python
+      href: tensorflow-local.md
+- title: Schritt-für-Schritt-Tutorials
+  items:
+  - type: paragraph
+    text: 'Erfahren Sie, wie Sie die Deep Learning-Lösung erstellen können:'
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="/visualstudio/ai/tensorflow-vm">Trainieren eines TensorFlow-Modells in der Cloud</a>
+- title: Proben
+  items:
+  - type: list
+    style: unordered
+    className: spaced noBullet
+    items:
+    - html: <a href="https://github.com/Microsoft/samples-for-ai">Beispielrepository</a>
+    - html: <a href="https://gallery.cortanaintelligence.com/projects">Machine Learning-Katalog</a>

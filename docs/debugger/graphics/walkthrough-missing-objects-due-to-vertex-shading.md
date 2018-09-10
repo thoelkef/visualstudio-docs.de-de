@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482008"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234256"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.  
@@ -67,7 +67,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 4.  Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** , dass die Geometrie zwar an die GPU übergeben wurde (gekennzeichnet durch die Eingabeassembler-Miniaturansicht), jedoch nicht im Renderziel angezeigt wird, weil auf der Vertexshader-Stufe ein Problem aufgetreten ist (gekennzeichnet durch die Vertexshader-Miniaturansicht):  
   
-     ![Ein DrawIndexed-Ereignis und seine Auswirkungen auf die Pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
+     ![Ein DrawIndexed-Ereignis und deren Auswirkung auf die Pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
  Nachdem Sie sich davon überzeugt haben, dass die App einen Draw-Aufruf für die Geometrie des fehlenden Objekts ausgeführt hat und dass das Problem auf der Vertexshader-Stufe aufgetreten ist, können Sie den HLSL-Debugger dazu verwenden, den Vertexshader zu überprüfen und festzustellen, was mit der Objektgeometrie geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.  
   
@@ -85,7 +85,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 4.  Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.  
   
-     ![Der Wert von "output.pos" wurde gesetzt](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+     ![Der Wert von "output.pos" wurde auf NULL wurde, gesetzt werden](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
      Die Werte des `pos` -Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.  
   
@@ -108,7 +108,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     > [!TIP]
     >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
   
- Nachdem Sie die Position, an der der Konstantenpuffer gefüllt wird, gefunden und festgestellt haben, dass dessen Werte aus der Variablen `m_marbleConstantBufferData`stammen, müssen Sie im nächsten Schritt herausfinden, wo der `m_marbleConstantBufferData.projection` -Member mit den Nullen gefüllt wird. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
+ Nachdem Sie den Speicherort finden, wo der Konstantenpuffer gefüllt wird ist, und feststellen, dass die Variable die Werte stammen `m_marbleConstantBufferData`, der nächste Schritt besteht darin herauszufinden, wo die `m_marbleConstantBufferData.projection` Members auf lauter Nullen festgelegt ist. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>So ermitteln Sie, wo der Projektionsmember im Quellcode Ihrer App festgelegt wird  
   
@@ -122,7 +122,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  Um das Problem zu beheben, verschieben Sie die Codezeile, in der der Wert von `m_marbleConstantBufferData.projection` festgelegt wird, hinter die Zeile, in der der Wert der lokalen Variablen `projection`initialisiert wird.  
   
- ![Der korrigierte C&#43; &#43; Quellcode](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Der korrigierte C++&#43; &#43; Quellcode](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Nachdem Sie den Code korrigiert haben, können Sie die App erneut erstellen und ausführen, um nun festzustellen, dass das Renderproblem behoben wurde:  
   

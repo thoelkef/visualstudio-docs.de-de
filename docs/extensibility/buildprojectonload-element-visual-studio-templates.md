@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: BuildProjectOnload-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097821"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154157"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload-Element (Visual Studio-Vorlagen)
-Erstellt nur neue Projekte, erstellen und diese zu einer Projektmappe hinzufügen. Es wird nicht die gesamte Projektmappe erstellt.  
+Erstellt nur neue Projekte an, wie Sie erstellen und diese zu einer Projektmappe hinzufügen. Die gesamte Lösung wird nicht erstellt werden.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -44,18 +44,18 @@ Erstellt nur neue Projekte, erstellen und diese zu einer Projektmappe hinzufüge
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|TemplateData|Kategorisiert die Vorlage und definiert, wie es in beiden wird der **neues Projekt** und **neues Element hinzufügen** Dialogfelder.|  
+|`TemplateData`|Kategorisiert die Vorlage und definiert, wie es in beiden erscheint die **neues Projekt** und **neues Element hinzufügen** Dialogfelder.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` , um anzugeben, ob Sie nur das neue Projekt zu erstellen, wenn es aus der Vorlage erstellt wird.  
+ Der Text muss entweder `true` oder `false` , um anzugeben, ob Sie nur das neue Projekt zu erstellen, wenn er aus der Vorlage erstellt wird.  
   
 ## <a name="remarks"></a>Hinweise  
  `BuildProjectOnLoad` ist ein optionales Element. Der Standardwert ist `false`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Metadaten für eine Visual C#-Vorlage.  
+ Das folgende Beispiel zeigt die Metadaten für eine Visual C#-Vorlage.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

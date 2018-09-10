@@ -9,23 +9,22 @@ description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196426"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380602"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 
-Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://www.visualstudio.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte Cloudabonnements.
+Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte Cloudabonnements.
 
-[Vergleich der Vorteile und Preise von Cloudabonnements](https://www.visualstudio.com/vs/pricing/)
+[Vergleich der Vorteile und Preise von Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Vor der Installation
 
-*   Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können.
-Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://portal.azure.com).
+*   Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können. Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://portal.azure.com).
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Erwerben von Cloudabonnements
 
@@ -37,7 +36,7 @@ Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual St
 
 0.  Wählen Sie das Azure-Abonnement, über das abgerechnet werden soll. Wenn Sie noch nicht über ein Azure-Abonnement verfügen, können Sie ein neues erstellen.
 
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.  Wählen Sie die Anzahl der zu erwerbenden Abonnements aus.
 
@@ -57,16 +56,13 @@ Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual St
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Abbrechen der Erneuerung von erworbenen Cloudabonnements
-
+## <a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
 
 *   So ändern Sie die Anzahl der erworbenen Abonnements:
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Senken Sie die Anzahl der Abonnements auf null (0), um diese Abonnements zu kündigen.
-Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste Tag des nächsten Monats bei monatlichen Abonnements, alle zwölf Monate bei jährlichen Cloudabonnements).
+*   Senken Sie die Anzahl der Abonnements auf null (0), um diese Abonnements zu kündigen. Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste Tag des nächsten Monats bei monatlichen Abonnements, alle zwölf Monate bei jährlichen Cloudabonnements).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Erwerben Sie jetzt Cloudabonnements
 
@@ -78,6 +74,6 @@ Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste T
 ## <a name="related-resources"></a>Weitere Informationen
 
 * [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
-* [Support für Visual Studio-Abonnements](https://www.visualstudio.com/vs/support/)
+* [Support für Visual Studio-Abonnements](https://visualstudio.microsoft.com/vs/support/)
 * [Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements](vscloud-billing-faq.md)
 * [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)

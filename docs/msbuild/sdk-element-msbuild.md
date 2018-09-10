@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e22233d58cdb02194b5d5efe21bc397e9ae3a9c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568044"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154092"
 ---
 # <a name="sdk-element-msbuild"></a>SDK-Element (MSBuild)
 Verweist auf ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt-SDK.  
@@ -35,7 +35,7 @@ Verweist auf ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
 ## <a name="syntax"></a>Syntax  
 
-```  
+```xml  
 <Sdk Name="My.Custom.Sdk"
      Version="1.0.0" />  
 ```  
@@ -45,7 +45,7 @@ Verweist auf ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|description|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projekt-SDK.|  
 |`Version`|Optionales Attribut.<br /><br /> Die Version des Projekt-SDK.|  
@@ -54,7 +54,7 @@ Verweist auf ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
- |Element|description|  
+ |Element|Beschreibung |  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Bereitstellung&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+title: '&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e078da7f746460ea17d1a5ac2d83e5ac46dc62
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: cd2c213945961100e0b4b95b6421a5ce357cc18f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815531"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079519"
 ---
-# <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)
 Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
@@ -60,57 +60,57 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `deployment`-Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1`-Namespace. Das Element weist folgende Attribute.  
+ Das `deployment`-Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1`-Namespace. Das-Element weist die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`install`|Erforderlich. Gibt an, ob diese Anwendung eine Präsenz auf dem Windows-definiert **starten** Menü und in der Systemsteuerung **Software** Anwendung. Gültige Werte sind `true` und `false`. Wenn `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird immer die neueste Version dieser Anwendung vom Netzwerk gestartet, und erkennt die `subscription` Element.|  
-|`minimumRequiredVersion`|Dies ist optional. Gibt die minimale Version dieser Anwendung, die auf dem Client ausgeführt werden kann. Wenn die Versionsnummer der Anwendung kleiner als die Versionsnummer im Bereitstellungsmanifest bereitgestellt ist, wird die Anwendung nicht ausgeführt. Versionsnummern müssen angegeben werden, im Format `N.N.N.N`, wobei `N` ist eine Ganzzahl ohne Vorzeichen. Wenn die `install` -Attribut ist `false`, `minimumRequiredVersion` darf nicht festgelegt werden.|  
-|`mapFileExtensions`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, alle Dateien in der Bereitstellung eine Erweiterung ".deploy" aufweisen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Diese Erweiterung wird von diesen Dateien entfernt werden, sobald es sie vom Webserver herunterlädt. Wenn Sie Ihre Anwendung mit veröffentlichen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], er fügt diese Erweiterung automatisch auf alle Dateien. Dieser Parameter ermöglicht, alle Dateien innerhalb einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung von einem Webserver heruntergeladen werden, die Übertragung von Dateien, die "unsicheren" Erweiterungen wie z. B. .exe Endziffern blockiert.|  
-|`disallowUrlActivation`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, wird verhindert, dass eine installierte Anwendung durch Klicken auf die URL oder durch Eingabe der URL in Internet Explorer gestartet wird. Wenn die `install` -Attribut nicht vorhanden ist, wird dieses Attribut ignoriert.|  
-|`trustURLParameters`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, können Sie die URL kann Abfragezeichenfolgen-Parameter enthalten, die in die Anwendung übergeben werden, um eine befehlszeilenanwendung viel like Befehlszeilenargumente übergeben werden. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Wenn die `disallowUrlActivation` -Attribut ist `true`, `trustUrlParameters` müssen entweder aus dem Manifest ausgeschlossen oder explizit auf festgelegt `false`.|  
+|`install`|Erforderlich. Gibt an, ob diese Anwendung eine Präsenz auf der Windows definiert **starten** Menü und in der Systemsteuerung **Software** Anwendung. Gültige Werte sind `true` und `false`. Wenn `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird immer die neueste Version dieser Anwendung aus dem Netzwerk ausgeführt und erkennt nicht die `subscription` Element.|  
+|`minimumRequiredVersion`|Dies ist optional. Gibt die minimale Version dieser Anwendung, die auf dem Client ausgeführt werden kann. Wenn die Versionsnummer der Anwendung kleiner als die Versionsnummer im Bereitstellungsmanifest angegeben ist, wird die Anwendung nicht ausgeführt. Versionsnummern müssen angegeben werden, im Format `N.N.N.N`, wobei `N` ist eine Ganzzahl ohne Vorzeichen. Wenn die `install` Attribut `false`, `minimumRequiredVersion` darf nicht festgelegt werden.|  
+|`mapFileExtensions`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, alle Dateien in der Bereitstellung müssen eine Erweiterung ".deploy" aufweisen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] entfernt diese Erweiterung deaktivieren diese Dateien werden, sobald es vom Webserver herunterladen. Wenn Sie Ihre Anwendung mithilfe von veröffentlichen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], es wird diese Erweiterung automatisch auf alle Dateien hinzugefügt. Mit diesem Parameter können alle Dateien innerhalb einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung von einem Webserver heruntergeladen werden, die Übertragung von Dateien mit der "unsicher" Erweiterungen wie .exe blockiert.|  
+|`disallowUrlActivation`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, wird verhindert, dass eine installierte Anwendung durch Klicken auf die URL oder die Eingabe der URL in Internet Explorer gestartet wird. Wenn die `install` Attribut ist nicht vorhanden, die dieses Attribut wird ignoriert.|  
+|`trustURLParameters`|Dies ist optional. Wird standardmäßig auf `false` festgelegt. Wenn `true`, können Sie die URL kann Abfragezeichenfolgen-Parameter enthalten, die bei der Anwendung übergeben werden, viel wie Befehlszeilenargumente an eine befehlszeilenanwendung übergeben werden. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Wenn die `disallowUrlActivation` Attribut `true`, `trustUrlParameters` müssen entweder aus dem Manifest ausgeschlossen oder explizit auf festgelegt `false`.|  
   
- Die `deployment` -Element enthält auch die folgenden untergeordneten Elemente.  
+ Die `deployment` -Element auch die folgenden untergeordneten Elemente enthält.  
   
 ## <a name="subscription"></a>subscription  
- Dies ist optional. Enthält die `update` Element. Die `subscription` -Element weist keine Attribute. Wenn die `subscription` Element ist nicht vorhanden, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung nie nach Updates gesucht wird. Wenn die `install` Attribut des der `deployment` Element ist `false`, `subscription` Element wird ignoriert, da eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die immer über das Netzwerk gestartet wird, verwendet die neueste Version.  
+ Dies ist optional. Enthält die `update` Element. Die `subscription` Element besitzt keine Attribute. Wenn die `subscription` Element ist nicht vorhanden, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung nie nach Updates gesucht wird. Wenn die `install` Attribut der `deployment` Element ist `false`, `subscription` -Elements ignoriert, da eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die immer über das Netzwerk gestartet wird, verwendet die neueste Version.  
   
 ## <a name="update"></a>aktualisieren  
- Erforderlich. Dieses Element ist ein untergeordnetes Element von der `subscription` Element und enthält entweder die `beforeApplicationStartup` oder `expiration` Element. `beforeApplicationStartup` und `expiration` darf nicht sowohl im gleichen Bereitstellungsmanifest angegeben werden.  
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des der `subscription` Element und enthält entweder die `beforeApplicationStartup` oder `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
   
- Die `update` -Element weist keine Attribute.  
+ Die `update` Element besitzt keine Attribute.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Dies ist optional. Dieses Element ist ein untergeordnetes Element von der `update` Element und weist keine Attribute. Wenn die `beforeApplicationStartup` Element vorhanden ist, ist die Anwendung blockiert, wenn [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] für Updates überprüft werden, wenn der Client online ist. Wenn dieses Element nicht vorhanden ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird für Updates, die auf Grundlage der Werte für die angegebene erster scan der `expiration` Element. `beforeApplicationStartup` und `expiration` darf nicht sowohl im gleichen Bereitstellungsmanifest angegeben werden.  
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` Element und weist keine Attribute. Wenn die `beforeApplicationStartup` Element vorhanden ist, wird die Anwendung blockiert, wenn [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sucht nach Updates, wenn der Client online ist. Wenn dieses Element nicht vorhanden ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scannt zunächst nach Updates, die basierend auf die Werte für die `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
   
 ## <a name="expiration"></a>Ablaufdatum  
- Dies ist optional. Dieses Element ist ein untergeordnetes Element von der `update` -Element, und weist keine untergeordneten Elemente. `beforeApplicationStartup` und `expiration` darf nicht sowohl im gleichen Bereitstellungsmanifest angegeben werden. Bei die Überprüfung auf Updates und eine aktualisierte Version gefunden wird, speichert die neue Version während die vorhandene Version ausgeführt wird. Installiert die neue Version dann beim nächsten Start von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` -Element, und hat keine untergeordneten Elemente. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden. Wenn die Überprüfung auf Updates tritt ein, und eine aktualisierte Version gefunden wird, werden die neue Version zwischengespeichert, während die vorhandene Version ausgeführt wird. Installiert die neue Version dann beim nächsten Start von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
  Die `expiration` Element unterstützt die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`maximumAge`|Erforderlich. Gibt an, wie ALT die aktuellen Updates werden soll, bevor die Anwendung eine Prüfung auf Updates ausführt. Die Zeiteinheit richtet sich nach der `unit` Attribut.|  
-|`unit`|Erforderlich. Identifiziert die Zeiteinheit für `maximumAge`. Gültige Einheiten sind `hours`, `days`, und `weeks`.|  
+|`maximumAge`|Erforderlich. Gibt an, wie ALT das aktuelle Update werden soll, bevor die Anwendung eine Prüfung auf Updates ausführt. Die Zeiteinheit richtet sich nach der `unit` Attribut.|  
+|`unit`|Erforderlich. Gibt die Zeiteinheit für `maximumAge`. Gültige Einheiten sind `hours`, `days`, und `weeks`.|  
   
 ## <a name="deploymentprovider"></a>deploymentProvider  
- Für .NET Framework 2.0 dieses Element ist erforderlich, wenn das Bereitstellungsmanifest enthält eine `subscription` Abschnitt. Für .NET Framework 3.5 und höher, wird dieses Element ist optional und wird standardmäßig auf den Server und den Dateipfad, in dem das Bereitstellungsmanifest ermittelt wurde.  
+ Für .NET Framework 2.0, dieses Element ist erforderlich, wenn das Bereitstellungsmanifest enthält eine `subscription` Abschnitt. Für .NET Framework 3.5 und höher, wird dieses Element ist optional und wird standardmäßig mit dem Server und Pfad der Datei, die in der das Bereitstellungsmanifest erkannt wurde.  
   
  Dieses Element ist ein untergeordnetes Element des `deployment`-Elements und weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`codebase`|Erforderlich. Identifiziert als Uniform Resource Identifier (URI) den Speicherort des Bereitstellungsmanifests, mit dem Aktualisieren, der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Mit diesem Element können auch zum Weiterleiten von Update-Speicherorte für die CD basierenden Installationen. Ein gültiger URI muss sein.|  
+|`codebase`|Erforderlich. Identifiziert den Speicherplatz, als ein Uniform Resource Identifier (URI), der das Bereitstellungsmanifest, das zum Aktualisieren von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Element ermöglicht es auch für die Weiterleitung der Speicherorte für die Aktualisierung für Installationen von CD-basierte. Ein gültiger URI muss sein.|  
   
 ## <a name="remarks"></a>Hinweise  
- Sie können konfigurieren, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung zur Überprüfung auf Start, Suchen nach Updates nach dem Start oder nie nach Updates suchen. Um nach Updates beim Start zu scannen, sicher, dass die `beforeApplicationStartup` Element vorhanden ist, unter der `update` Element. Zum Scannen von Updates nach dem Start sicher, dass die `expiration` Element vorhanden ist, unter der `update` Element und die Updateintervallen angegeben werden.  
+ Sie können konfigurieren, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung für die Suche nach Updates beim Start nach Updates suchen, nach dem Start oder nie nach Updates suchen. Stellen Sie sicher, die für die Suche nach Updates beim Start der `beforeApplicationStartup` Element vorhanden ist, unter der `update` Element. Suche nach Updates nach dem Start sicher, dass die `expiration` Element vorhanden ist, unter dem `update` -Element, und die Updateintervallen angegeben werden.  
   
- Um die Überprüfung auf Updates zu deaktivieren, entfernen Sie die `subscription` Element. Bei der Angabe im Bereitstellungsmanifest nie nach Updates suchen, Sie können immer noch manuell nach Updates Suchen mithilfe der <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> Methode.  
+ Zum Suchen nach Updates zu deaktivieren, entfernen Sie die `subscription` Element. Bei der Angabe im Bereitstellungsmanifest nie nach Updates gesucht, Sie können weiterhin manuell nach Updates Suchen mithilfe der <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> Methode.  
   
- Weitere Informationen wie "deploymentProvider" auf Updates bezieht, finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Weitere Informationen zur Beziehung wie "deploymentProvider" zu Updates finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ## <a name="examples"></a>Beispiele  
- Das folgende Codebeispiel veranschaulicht eine `deployment` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Im Beispiel wird ein `deploymentProvider` Element, um die bevorzugte Updatepfad anzugeben.  
+ Das folgende Codebeispiel veranschaulicht eine `deployment` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Im Beispiel wird eine `deploymentProvider` Element, um den bevorzugten Updatepfad anzugeben.  
   
 ```xml  
 <deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  

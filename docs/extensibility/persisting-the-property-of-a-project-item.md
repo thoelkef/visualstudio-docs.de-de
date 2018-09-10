@@ -1,5 +1,5 @@
 ---
-title: Die Eigenschaft eines Projektelements beibehalten | Microsoft Docs
+title: Beibehalten der Eigenschaft eines Projektelements | Microsoft-Dokumentation
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b0bc529e01d8ef34b6959b98d773857000ec1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138053"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639349"
 ---
-# <a name="persisting-the-property-of-a-project-item"></a>Die Eigenschaft eines Projektelements beibehalten
-Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzufügen. Dazu können Sie die Eigenschaft in der Projektdatei gespeichert.
+# <a name="persist-the-property-of-a-project-item"></a>Speichern Sie die Eigenschaft eines Projektelements
+Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzu. Dies ist möglich, indem die Eigenschaft in der Projektdatei gespeichert.
 
- Der erste Schritt beim Beibehalten einer Eigenschaft in einer Projektdatei wird zum Abrufen der Hierarchie des Projekts als eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle. Sie können diese Schnittstelle abrufen, mithilfe der Automatisierung oder mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Nachdem Sie die Schnittstelle erhalten haben, können Sie es verwenden, um zu bestimmen, welche Projektelement derzeit ausgewählt ist. Nachdem Sie die Project-Element-ID haben, können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> die Eigenschaft hinzufügen.
+ Der erste Schritt beim Beibehalten einer Eigenschaft in einer Projektdatei zum Abrufen der Hierarchie des Projekts wird ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle. Sie können diese Schnittstelle abrufen, entweder mithilfe der Automatisierung oder mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Nachdem Sie die Schnittstelle abgerufen haben, können Sie es verwenden, um zu bestimmen, welche Projektelement derzeit ausgewählt ist. Nachdem Sie die Projekt-ID haben, können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> die Eigenschaft hinzugefügt.
 
- In den folgenden Verfahren, die Sie beibehalten der Eigenschaft VsPkg.cs `Author` mit dem Wert `Tom` in der Projektdatei.
+ In den folgenden Verfahren, speichern Sie die *VsPkg.cs* Eigenschaft `Author` mit dem Wert `Tom` in der Projektdatei.
 
-### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Zum Abrufen der Projekthierarchie mit dem DTE-Objekt
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Um die Projekthierarchie, mit dem DTE-Objekt zu erhalten.
 
-1.  Fügen Sie den folgenden Code, um Ihr VSPackage:
+1.  Fügen Sie den folgenden Code zu Ihrem VSPackage an:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,9 +41,9 @@ Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein P
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Um den Projekt-Elementeigenschaft mit dem DTE-Objekt persistent zu speichern.
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Die Projekt-Item-Eigenschaft mit dem DTE-Objekt beibehalten werden.
 
-1.  Fügen Sie den folgenden Code an den Code in der Methode in der vorherigen Prozedur zugewiesen:
+1.  Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,9 +58,9 @@ Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein P
     }
     ```
 
-### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Zum Abrufen der Projekthierarchie IVsMonitorSelection verwenden
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Zum Abrufen der Projekthierarchie IVsMonitorSelection verwenden
 
-1.  Fügen Sie den folgenden Code, um Ihr VSPackage:
+1.  Fügen Sie den folgenden Code zu Ihrem VSPackage an:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,11 +102,9 @@ Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein P
     }
     ```
 
-2.
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Die ausgewählten Projekt-Item-Eigenschaft beibehalten werden, erhalten der Teamprojekthierarchie
 
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Das ausgewählte Projektelementeigenschaft persistent die Projekthierarchie angegeben
-
-1.  Fügen Sie den folgenden Code an den Code in der Methode in der vorherigen Prozedur zugewiesen:
+1.  Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -117,18 +115,18 @@ Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein P
     }
     ```
 
-### <a name="to-verify-that-the-property-is-persisted"></a>Um sicherzustellen, dass die Eigenschaft beibehalten wird
+## <a name="to-verify-that-the-property-is-persisted"></a>Um sicherzustellen, dass die Eigenschaft gespeichert wird
 
-1.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und öffnen oder erstellen Sie eine Projektmappe.
+1.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und öffnen oder erstellen Sie eine Lösung.
 
 2.  Wählen Sie das Projekt VsPkg.cs im Element **Projektmappen-Explorer**.
 
-3.  Verwenden Sie einen Haltepunkt oder anderweitig zu bestimmen Sie, dass Ihr VSPackage geladen wird und dass SetItemAttribute ausgeführt wird.
+3.  Verwenden Sie einen Haltepunkt, oder andernfalls zu bestimmen Sie, dass Ihr VSPackage geladen wird und SetItemAttribute ausgeführt wird.
 
     > [!NOTE]
-    > Können Sie Autoload ein VSPackage in der Benutzeroberflächenkontext <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).
+    > Können Sie Automatisches Laden eines VSPackages, in dem Benutzeroberflächenkontext <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Weitere Informationen finden Sie unter [Load VSPackages](../extensibility/loading-vspackages.md).
 
-4.  Schließen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und öffnen Sie die Projektdatei im Editor. Daraufhin sollte die \<Autor >-Tag mit dem Wert Tom, wie folgt:
+4.  Schließen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und klicken Sie dann die Projektdatei im Editor zu öffnen. Daraufhin sollte die \<Autor >-Tag mit dem Wert Tom, wie folgt:
 
     ```xml
     <Compile Include="VsPkg.cs">
@@ -138,4 +136,4 @@ Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein P
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Benutzerdefinierte Tools](../extensibility/internals/custom-tools.md)
+- [Benutzerdefinierte tools](../extensibility/internals/custom-tools.md)

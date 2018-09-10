@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer benutzerdefinierten Codeanalyseregel Teilmenge in Visual Studio
+title: Erstellen einer benutzerdefinierten Codeanalyseregel legen Sie in Visual Studio
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,73 +13,73 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b1d9b436c3e3be4f241d18791744085be4ece9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920689"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204114"
 ---
-# <a name="custom-rule-sets"></a>Benutzerdefinierte Regelsätze
+# <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
-Erstellen Sie eine benutzerdefinierte *Regelsatz* um projektspezifische Anforderungen für die Codeanalyse zu erfüllen.
+Sie können einen benutzerdefinierten Regelsatz, um bestimmte projektanforderungen für die Codeanalyse erstellen.
 
 ## <a name="create-a-custom-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes
 
-Eine benutzerdefinierte Regel zu erstellen, öffnen Sie einen integrierte Regelsatz in der **Regelsatz-Editor**. Von dort aus können Sie hinzufügen oder entfernen Sie bestimmte Regeln, und Sie können die Aktion, die bei einem Verstoß eine Regel gegen ändern&mdash;beispielsweise angezeigt wird, eine Warnung oder einen Fehler.
+Um eine benutzerdefinierte Regel erstellen, öffnen Sie eine integrierte Regel legen Sie in der **Regelsatz-Editor**. Von dort aus können Sie hinzufügen oder entfernen Sie bestimmte Regeln, und Sie können ändern, dass die Aktion, die auftritt, wenn gegen eine Regel verstoßen wird&mdash;z. B. Anzeigen einer Warnung oder einen Fehler.
 
 1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**.
 
-2. Auf der **Eigenschaften** Seiten, wählen die **Codeanalyse** Registerkarte.
+2. Auf der **Eigenschaften** Seiten, auf die **Codeanalyse** Registerkarte.
 
-3. In der **diesen Regelsatz ausführen** Dropdown-Liste, führen Sie einen der folgenden:
+3. In der **diesen Regelsatz ausführen** Dropdown-Listenfeld, führen Sie einen der folgenden:
 
     - Wählen Sie den Regelsatz aus, den Sie anpassen möchten.
 
      \- oder –
 
-    - Wählen Sie  **\<durchsuchen... >** Geben Sie einen vorhandenen Regelsatz ist nicht in der Liste.
+    - Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.
 
-4. Wählen Sie **öffnen** auf die Regeln im Regelsatz-Editor anzuzeigen.
+4. Wählen Sie **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.
 
-Sie können auch eine neue Regelsatzdatei aus erstellen die **neue Datei** Dialogfeld:
+Sie können auch erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dialogfeld:
 
 1. Wählen Sie **Datei** > **neu** > **Datei**, oder drücken Sie **STRG**+**N**.
 
-2. In der **neue Datei** wählen Sie im Dialogfeld die **allgemeine** Kategorie auf der linken Seite und wählen Sie dann **Codeanalyse-Regelsatz**.
+2. In der **neue Datei** wählen Sie im Dialogfeld die **allgemeine** Kategorie auf der linken Seite, und wählen Sie dann **Codeanalyse-Regelsatz**.
 
 3. Wählen Sie **öffnen**.
 
-   Die neue *ruleSet* Datei in dem Regelsatz-Editor wird geöffnet.
+   Die neue *ruleSet* Datei wird in dem Regelsatz-Editor geöffnet.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen eines benutzerdefinierten Regelsatzes aus mehreren Regelsätze
+### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen Sie eine benutzerdefinierte Regel aus mehreren Regelsätzen
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie dann **Eigenschaften**.
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie dann **Eigenschaften**.
 
-2. Auf der **Eigenschaften** Seiten, wählen die **Codeanalyse** Registerkarte.
+2. Auf der **Eigenschaften** Seiten, auf die **Codeanalyse** Registerkarte.
 
-3. Wählen Sie  **\<auswählen, die mehrere Regelsätzen... >** aus **diesen Regelsatz ausführen**.
+3. Wählen Sie  **\<auswählen, die mehrere Regelsätze... >** aus **diesen Regelsatz ausführen**.
 
-4. In der **hinzufügen oder Entfernen von Regelsätzen** (Dialogfeld), wählen Sie die Regel Sie wird in Ihrer neuen Regelsatz enthalten sein soll.
+4. In der **Regelsätze hinzufügen oder Entfernen von** Dialogfeld Wählen Sie die Regelsätze, die Sie in der neue Regelsatz enthalten sein soll.
 
    ![Fügen Sie hinzu oder entfernen Sie die Regel (Dialogfeld)](media/add-remove-rule-sets.png)
 
-5. Wählen Sie **speichern unter**, geben Sie einen Namen für die *ruleSet* Datei, und wählen Sie dann **speichern**.
+5. Wählen Sie **speichern**, geben Sie einen Namen für die *ruleSet* Datei, und wählen Sie dann **speichern**.
 
-   Neuen Regelsatz ausgewählt ist, der **diesen Regelsatz ausführen** Liste.
+   Der neue Regelsatz ausgewählt ist, der **diesen Regelsatz ausführen** Liste.
 
-6. Wählen Sie **öffnen** zu den neuen Regelsatz im Regelsatz-Editor zu öffnen.
+6. Wählen Sie **öffnen** zu den neuen Regelsatz, der in den Regelsatz-Editor zu öffnen.
 
 ## <a name="name-and-description"></a>Name und Beschreibung
 
-Um den Anzeigenamen des einen Regelsatzes ändern, die im Editor geöffnet ist, öffnen die **Eigenschaften** Fenster dazu **Ansicht** > **Fenster "Eigenschaften"** in der Menüleiste. Geben Sie den Anzeigenamen in der **Namen** Feld. Sie können auch eine Beschreibung für den Regelsatz eingeben.
+Um den Anzeigenamen des einen Regelsatzes ändern, die im Editor geöffnet ist, öffnen die **Eigenschaften** Fenster durch Auswahl **Ansicht** > **Fenster "Eigenschaften"** in der Menüleiste. Geben Sie den Anzeigenamen in den **Namen** Feld. Sie können auch eine Beschreibung für den Regelsatz eingeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun, da Sie eine Regel festgelegt haben, besteht der nächste Schritt die Regeln durch Hinzufügen oder Entfernen von Regeln oder ändern den Schweregrad der Verletzungen von Schwellenwertregeln anpassen.
+Nun, da Sie eine Regel festgelegt haben, besteht der nächste Schritt, um die Regeln anpassen, hinzufügen oder Entfernen von Regeln oder ändern den Schweregrad von Regelverstößen.
 
 > [!div class="nextstepaction"]
-> [Bearbeiten Sie Regeln im Regelsatz-editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
+> [Ändern von Regeln in den Regelsatz-editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Lösungen | Microsoft Docs
+title: Erweitern von Projektmappen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a6758acc3b78399d48a311bd146e037daad500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9671899b5e5574599bcd9125b74b06675be4b4b3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134277"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636865"
 ---
-# <a name="extending-solutions"></a>Erweitern von Lösungen
-Eine Lösung ist eine Gruppierung von einem oder mehreren Projekten, die zum Erstellen einer Anwendung zusammenarbeiten.  
+# <a name="extend-solutions"></a>Lösungen erweitern
+Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  Die folgenden exemplarischen Vorgehensweisen zeigen einige Möglichkeiten, die in denen Sie Lösungen erweitern können.  
   
-1.  [Erweitern den Projektmappen-Explorer-Filter](../extensibility/extending-the-solution-explorer-filter.md) wird erläutert, wie filtern, das im Projektmappen-Explorer angezeigt.  
+1.  [Erweitern Sie den Projektmappen-Explorer-Filter](../extensibility/extending-the-solution-explorer-filter.md) wird erläutert, wie filtern, das im Projektmappen-Explorer angezeigt.  
   
-2.  [Verwalten von Projekt zu laden, in einer Projektmappe](../extensibility/managing-project-loading-in-a-solution.md) erläutert Verwaltung Projekt laden, um die Leistung zu verbessern, wenn ein Benutzer eine Projektmappe geladen.
+2.  [Verwalten des Ladens von Projekten in einer Projektmappe](../extensibility/managing-project-loading-in-a-solution.md) wird erläutert, wie zum Verwalten des Ladens von Projekten zur Verbesserung der Leistung, wenn ein Benutzer eine Projektmappe geladen werden.

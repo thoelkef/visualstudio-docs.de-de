@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Visual Studio-Befehle auf einer Startseite | Microsoft Docs
+title: Hinzufügen von Visual Studio-Befehlen zu einer Startseite | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87a5e6d29877efb857b846a7b3fac5f19f790d7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101793"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153630"
 ---
-# <a name="adding-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehle auf einer Startseite
-Wenn Sie eine benutzerdefinierte Startseite erstellen, können Sie Visual Studio-Befehle hinzufügen. Dieses Dokument beschreibt die verschiedenen Methoden zum Binden von Visual Studio-Befehle auf die Verwendung von XAML-Objekte auf einer Startseite.  
+# <a name="add-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Startseite
+Wenn Sie eine benutzerdefinierte Startseite erstellen, können Sie Visual Studio-Befehle, hinzufügen. Dieses Dokument erläutert die verschiedenen Methoden zum Binden von Visual Studio-Befehle an XAML-Objekte auf einer Startseite.  
   
- Weitere Informationen zu XAML-Befehlen finden Sie unter [Befehle (Übersicht)](/dotnet/framework/wpf/advanced/commanding-overview)  
+ Weitere Informationen über Befehle in XAML finden Sie unter [Commanding-Übersicht](/dotnet/framework/wpf/advanced/commanding-overview)  
   
-## <a name="adding-commands-from-the-command-well"></a>Hinzufügen von Befehlen aus dem Befehl auch  
- In die Startseite erstellt [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md) hinzugefügt der <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> und <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> Namespaces, wie folgt.  
+## <a name="add-commands-from-the-command-well"></a>Hinzufügen von Befehlen aus dem Befehl auch  
+ Die Startseite im erstellt [erstellen Sie eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md) hinzugefügt der <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> und <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> Namespaces wie folgt.  
   
 ```  
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
 ```  
   
- Fügen Sie einen anderen Namespace aus der Assembly Microsoft.VisualStudio.Shell.Immutable.11.0.dll für Microsoft.VisualStudio.Shell hinzu. (Möglicherweise müssen Sie einen Verweis auf diese Assembly in Ihrem Projekt hinzufügen.)  
+ Fügen Sie einen anderen Namespace aus der Assembly für Microsoft.VisualStudio.Shell *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Möglicherweise müssen Sie einen Verweis auf diese Assembly in Ihrem Projekt hinzufügen.)  
   
 ```xml  
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"  
 ```  
   
- Können Sie die `vscom:` Alias zum Binden von Visual Studio-Befehle in XAML-Steuerelemente auf der Seite durch Festlegen der <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> Eigenschaft des Steuerelements `vscom:VSCommands.ExecuteCommand`. Legen Sie Sie dann die <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> -Eigenschaft auf den Namen des Befehls auszuführende wie im folgenden Beispiel gezeigt.  
+ Können Sie die `vscom:` Alias zum Binden von Visual Studio-Befehle an der XAML-Steuerelemente auf der Seite durch Festlegen der <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> Eigenschaft des Steuerelements `vscom:VSCommands.ExecuteCommand`. Sie können dann Festlegen der <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> -Eigenschaft auf den Namen des Befehls zum Ausführen wie im folgenden Beispiel gezeigt.  
   
 ```xml  
 <Button Name="btnNewProj" Content="New Project"   
@@ -50,11 +50,11 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  Die `x:` Alias, der auf die Verwendung von XAML-Schema verweist, muss am Anfang aller Befehle.  
+>  Die `x:` Alias, der dem XAML-Schema verweist, muss sich am Anfang aller Befehle.  
   
- Können Sie den Wert der Festlegen der `Command` Eigenschaft, um solche Befehle, die aus zugegriffen werden kann die **Befehl** Fenster. Eine Liste der verfügbaren Befehle, finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).  
+ Legen Sie den Wert von der `Command` Eigenschaft, um solche Befehle, die aus zugegriffen werden kann die **Befehl** Fenster. Eine Liste der verfügbaren Befehle, finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).  
   
- Wenn der Befehl zum Hinzufügen zusätzlichen Parameter erfordert, können Sie es auf den Wert des Hinzufügen der `CommandParameter` Eigenschaft. Separate Parameter von Befehlen, die durch Leerzeichen, wie im folgenden Beispiel gezeigt.  
+ Wenn Sie der Befehl zum Hinzufügen zusätzlichen Parameter erfordert, können Sie es hinzufügen, auf den Wert des der `CommandParameter` Eigenschaft. Separate Parameter von Befehlen mithilfe von Speicherplätzen, wie im folgenden Beispiel gezeigt.  
   
 ```xml  
 <Button Content="Web Search"   
@@ -62,20 +62,20 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
         CommandParameter="View.WebBrowser www.bing.com" />  
 ```  
   
-### <a name="calling-extensions-from-the-command-well"></a>Extensions aufrufen auch aus den Befehl  
- Sie können Befehle aus registrierten VSPackages aufrufen, mit der gleichen Syntax, die zum Aufrufen von anderen Visual Studio-Befehle verwendet wird. Z. B. ein installierten VSPackages Fügt eine **Startseite** -Befehls auf den **Ansicht** Menü können Sie diesen Befehl aufrufen, indem Sie festlegen `CommandParameter` zu `View.HomePage`.  
+### <a name="call-extensions-from-the-command-well"></a>Rufen Sie Erweiterungen auch aus dem Befehl  
+ Sie können die Befehle von registrierte VSPackages aufrufen, indem Sie mit derselben Syntax, die verwendet wird, um andere Visual Studio-Befehle aufrufen. Wenn eine installierte VSPackage fügt z. B. eine **auf der Startseite** Befehl die **Ansicht** im Menü können Sie diesen Befehl aufrufen, indem Sie die Einstellung `CommandParameter` zu `View.HomePage`.  
   
 > [!NOTE]
 >  Wenn Sie einen Befehl, der ein VSPackage zugeordnet ist aufrufen, muss das Paket geladen werden, wenn der Befehl aufgerufen wird.  
   
-## <a name="adding-commands-from-assemblies"></a>Hinzufügen von Befehlen aus Assemblys  
- Zum Aufrufen eines Befehls an, aus einer Assembly oder den Zugriff von Code in einem VSPackage, die nicht mit einem Menübefehl verknüpft ist, müssen Sie erstellen Sie einen Alias für die Assembly und rufen dann den Alias.  
+## <a name="add-commands-from-assemblies"></a>Hinzufügen von Befehlen von Assemblys  
+ Zum Aufrufen eines Befehls an, aus einer Assembly oder den Zugriff von Code in einem VSPackage, die nicht mit einem Menübefehl zugeordnet ist, müssen Sie erstellen Sie einen Alias für die Assembly und rufen Sie dann auf den Alias.  
   
-#### <a name="to-call-a-command-from-an-assembly"></a>Zum Aufrufen eines Befehls aus einer assembly  
+### <a name="to-call-a-command-from-an-assembly"></a>Zum Aufrufen eines Befehls aus einer assembly  
   
 1.  Fügen Sie einen Verweis auf die Assembly, in der Projektmappe.  
   
-2.  Fügen Sie am Anfang der Datei "StartPage.xaml" eine Direktive für die Assembly hinzu, wie im folgenden Beispiel gezeigt.  
+2.  Am oberen Rand der *"StartPage.xaml"* Datei, fügen Sie eine Direktive für die Assembly, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
@@ -90,12 +90,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Sie müssen kopieren Sie die Assembly, und fügen Sie ihn in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\ um sicherzustellen, dass es geladen wird, bevor er aufgerufen wird.  
+>  Sie müssen die Kopie der Assembly und fügen Sie ihn in *... \\{Visual Studio-Installationsordner} \Common7\IDE\PrivateAssemblies\* um sicherzustellen, dass es geladen wird, bevor sie aufgerufen wird.  
   
-## <a name="adding-commands-with-the-dte-object"></a>Hinzufügen von Befehlen mit dem DTE-Objekt  
- Sie können das DTE-Objekt auf einer Startseite auf, sowohl in Markup und Code zugreifen.  
+## <a name="add-commands-with-the-dte-object"></a>Hinzufügen von Befehlen mit dem DTE-Objekt  
+ Sie können das DTE-Objekt auf einer Startseite auf, sowohl im Markup als auch im Code zugreifen.  
   
- Im Markup, Sie können darauf zugreifen, indem die [Markuperweiterung binden](/dotnet/framework/wpf/advanced/binding-markup-extension) Syntax zum Aufrufen der <xref:EnvDTE.DTE> Objekt. Verwenden Sie diesen Ansatz zum Binden an einfache Eigenschaften, z. B. solche, die Auflistungen zurückgeben, aber Sie können nicht gebunden werden, um Methoden oder Dienste. Das folgende Beispiel zeigt eine <xref:System.Windows.Controls.TextBlock> Steuerelement, das gebunden wird die <xref:EnvDTE._DTE.Name%2A> -Eigenschaft, und ein <xref:System.Windows.Controls.ListBox> Steuerelement, das Listet die <xref:EnvDTE.Window.Caption%2A> Eigenschaften der Auflistung, die von zurückgegeben wird die <xref:EnvDTE._DTE.Windows%2A> Eigenschaft.  
+ Im Markup, Sie können darauf zugreifen, indem mithilfe der [Binding als Markuperweiterung](/dotnet/framework/wpf/advanced/binding-markup-extension) Syntax zum Aufrufen der <xref:EnvDTE.DTE> Objekt. Sie können diesen Ansatz verwenden, um an einfache Eigenschaften, z. B. die Bindung, die Auflistungen zurückgeben, aber Sie können nicht gebunden werden, um Methoden oder Dienste. Das folgende Beispiel zeigt eine <xref:System.Windows.Controls.TextBlock> -Steuerelement, das gebunden wird die <xref:EnvDTE._DTE.Name%2A> -Eigenschaft, und ein <xref:System.Windows.Controls.ListBox> -Steuerelement, das Listet die <xref:EnvDTE.Window.Caption%2A> Eigenschaften der Auflistung, die von zurückgegeben wird die <xref:EnvDTE._DTE.Windows%2A> Eigenschaft.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  
@@ -108,7 +108,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Startseite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
+ Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Speichern von benutzereinstellungen auf einer Startseite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen eines Benutzersteuerelements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)

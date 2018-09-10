@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255992"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leistungsbericht** der integrierten Entwicklungsumgebung (integrated Development Environment (IDE)) der Visual Studio Team System Development Edition anzeigen. Die Profilerstellungsdaten werden in VSP- und VSPS-Dateien gespeichert. In den Anzeigefenstern für Berichte können Sie Leistungsprobleme der Anwendung anzeigen und analysieren.  
   
 > [!CAUTION]
->  Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten, sowohl im nativen VSP-Format und beim Export in einer CSV- oder XML-Datei beibehalten.  
+>  Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten beibehalten, sowohl im nativen *VSP*-Format als auch beim Export in eine *CSV*- oder *XML*-Datei.  
 >   
->  Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, scheinen die zusätzlichen Informationen in der Protokolldatei der Ablaufverfolgung (.etl) angezeigt zu werden. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.  
+>  Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, werden möglicherweise zusätzliche Informationen in der Protokolldatei der Ablaufverfolgung (*ETL*-Datei) angezeigt. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.  
   
 ## <a name="performance-report-window"></a>Leistungsberichtfenster  
  Das Leistungsberichtfenster ist ein Toolfenster, die zum Anzeigen, Verwalten und Filtern von Leistungsdaten verwendet wird und ein anpassbares Abfragesteuerelement enthält.  
@@ -70,7 +71,7 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
  In der Ansicht des Anweisungszeiger werden die bestimmten Anweisungen angezeigt, die während der Sampling-Profilerstellung ausgeführt wurden. Weitere Informationen finden Sie unter [Anweisungszeigeransicht (IPs)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Zuordnungsansicht  
- Die Zuordnungsansicht ist verfügbar, wenn **.NET-Objektzuordnung sammeln** auf der Seite **Allgemein** im Eigenschaftendialogfeld **Leistungssitzung** ausgewählt wurde. Siehe [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md). Die Zuordnungsansicht listet die .NET-Objekte auf, die von der Anwendung oder Komponente zugeordnet wurden. Wenn eine Objektzeile erweitert wird, wird eine Aufrufstruktur angezeigt. Die Aufrufstruktur zeigt die Ausführungspfade, die zur Erstellung des Objekts geführt haben. Informationen werden auch über die Anzahl der inklusiven und exklusiven Zuordnungen für jede Funktion in der Aufrufstruktur angezeigt. Die Zuordnungsansicht kann den Ausführungspfad einer Funktion, die die größte Anzahl an Objekten zugeordnet hat, auch erweitern und hervorheben. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**. Weitere Informationen finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) und [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md).  
+ Die Zuordnungsansicht ist verfügbar, wenn **.NET-Objektzuordnung sammeln** auf der Seite **Allgemein** im Eigenschaftendialogfeld **Leistungssitzung** ausgewählt wurde. Informationen hierzu finden Sie unter [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md). Die Zuordnungsansicht listet die .NET-Objekte auf, die von der Anwendung oder Komponente zugeordnet wurden. Wenn eine Objektzeile erweitert wird, wird eine Aufrufstruktur angezeigt. Die Aufrufstruktur zeigt die Ausführungspfade, die zur Erstellung des Objekts geführt haben. Informationen werden auch über die Anzahl der inklusiven und exklusiven Zuordnungen für jede Funktion in der Aufrufstruktur angezeigt. Die Zuordnungsansicht kann den Ausführungspfad einer Funktion, die die größte Anzahl an Objekten zugeordnet hat, auch erweitern und hervorheben. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**. Weitere Informationen finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) und [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Objektlebensdaueransicht  
  Die Objektlebensdaueransicht ist verfügbar, wenn **.NET Objekt-Zuordnungsinformationen auflisten** und **Lebensdauerinformationen für .NET-Objekte auflisten**  auf der Seite **Allgemein** des Eigenschaftendialogfelds **Leistungssitzung** ausgewählt wurden.  

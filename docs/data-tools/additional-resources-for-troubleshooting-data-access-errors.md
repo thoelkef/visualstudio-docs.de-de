@@ -1,6 +1,6 @@
 ---
-title: Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
-ms.date: 11/04/2016
+title: Data Access-Foren
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,36 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089075"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Beheben von Datenzugriffsfehlern in den Foren
 
-Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Die folgende Tabelle enthält die datenbezogenen Foren auf MSDN zur Verfügung.
+Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Hier sind einige datenbezogenen Foren auf MSDN verfügbar sind:
 
- [Steuerelemente für Windows Forms-Daten und Databinding](http://go.microsoft.com/fwlink/?LinkId=160179) bietet ein Forum für Fragen und allgemeine Diskussionen zu Datenzugriff in Windows Forms.
+- [Windows Forms-Datensteuerelemente und Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [ADO.NET-DataSet-Forum](http://go.microsoft.com/fwlink/?LinkId=160180) bietet ein Forum für Fragen und allgemeine Diskussionen zu Datasets.
+- [ADO.NET DataSet-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [ADO.NET Entity Framework und LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) bietet ein Forum für Fragen und allgemeine Diskussionen zu Entity Framework-Anwendungen und LINQ to Entities-Sprache.
+- [ADO.NET Entity Framework und LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [WCF Data Services-Forum](http://go.microsoft.com/fwlink/?LinkId=160181) bietet ein Forum für Fragen und allgemeine Diskussionen zu Datendiensten.
+- [WCF Data Services-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [SQL Server-Datenzugriffsforum](http://go.microsoft.com/fwlink/?LinkID=160184) bietet ein Forum für Fragen und allgemeine Diskussionen zu den Zugriff auf Daten in Microsoft SQL Server.
+- [SQL Server-datenzugriffsforum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [LINQ to SQL-Forum](http://go.microsoft.com/fwlink/?LinkId=160183) bietet ein Forum für Fragen und allgemeine Diskussionen zu Linq to SQL.
+- [LINQ to SQL-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [ADO.NET Data Provider Forum](http://go.microsoft.com/fwlink/?LinkId=160182) bietet ein Forum für Fragen und allgemeine Diskussionen zu den verschiedenen .NET Framework-Datenanbietern.
+- [ADO.NET-Forum für Data-Anbieter](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- Informationen zur Behandlung von Verbindungen mit SQL Server finden Sie unter [wie eine Verbindung mit der Problembehandlung mit der SQL Server-Datenbankmodul](http://go.microsoft.com/fwlink/?LinkID=246151).
+Weitere Informationen zur Behandlung von Verbindungen mit SQL Server finden Sie unter [Problembehandlung beim Verbinden mit der SQL Server-Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Siehe auch
 

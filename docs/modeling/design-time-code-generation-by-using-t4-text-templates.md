@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954091"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567232"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
-T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Dateien im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen der Anwendung enthält.
+T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Dateien im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
 
  In einem Modell kann z. B. ein Workflow entweder als Tabelle oder Diagramm definiert sein. Anhand des Modells können Sie die Software generieren, die den Workflow ausführt. Wenn die Anforderungen Ihrer Benutzer ändern, ist es einfach den neuen Workflow mit den Benutzern besprochen werden. Die erneute Generierung des Codes anhand des Workflows ist zuverlässiger als die manuelle Aktualisierung des Codes.
 
 > [!NOTE]
->  Ein *Modell* ist eine Datenquelle, die einen bestimmten Aspekt der Anwendung beschreibt. Ein Modell kann ein beliebiges Format in einem beliebigen Datei- oder Datenbanktyp aufweisen. Es muss kein bestimmtes Format besitzen, wie z. B. ein UML-Modell oder ein domänenspezifisches Sprachmodell. Typische Modelle werden als Tabellen oder XML-Dateien dargestellt.
+>  Ein *Modell* ist eine Datenquelle, die einen bestimmten Aspekt einer Anwendung beschreibt. Ein Modell kann ein beliebiges Format in einem beliebigen Datei- oder Datenbanktyp aufweisen. Es muss kein bestimmtes Format besitzen, wie z. B. ein UML-Modell oder ein domänenspezifisches Sprachmodell. Typische Modelle werden als Tabellen oder XML-Dateien dargestellt.
 
- Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Beim Definieren von Ressourcen in einer **resx** Datei Ihre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung, die einen Satz von Klassen und Methoden wird automatisch generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.
+ Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Beim Definieren von Ressourcen in einem **resx** Datei Ihre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Lösung, die einen Satz von Klassen und Methoden wird automatisch generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.
 
  Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, sowie Programmcode, der Variablenteile des Texts generiert. Der Programmcode ermöglicht die Wiederholung oder das bedingte Auslassen von Teilen des generierten Texts. Der generierte Text selbst kann Programmcode sein, der einen Teil der Anwendung bildet.
 
@@ -40,15 +40,15 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>So erstellen Sie eine T4-Vorlage für die Entwurfszeit in Visual Studio
 
-1.  Erstellen einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt, oder öffnen Sie eine vorhandene.
+1.  Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt, oder öffnen Sie eine vorhandene Ressourcengruppe.
 
-     Z. B. auf die **Datei** Menü wählen **neu**, **Projekt**.
+     Z. B. auf die **Datei** Menü wählen **neu** > **Projekt**.
 
-2.  Das Projekt eine Textvorlagendatei hinzu, und geben sie einen Namen mit der Erweiterung **TT**.
+2.  Ihr Projekt eine Textvorlagendatei hinzu, und geben sie einen Namen mit der Erweiterung **TT**.
 
-     Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie im Kontextmenü des Projekts auf **hinzufügen**, **neues Element**. In der **neues Element hinzufügen** aktivieren Sie im Dialogfeld **Textvorlage** aus der Mitte.
+     Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie im Kontextmenü des Projekts **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** aktivieren Sie im Dialogfeld **Textvorlage** im mittleren Bereich.
 
-     Beachten Sie, dass die **benutzerdefiniertes Tool** Eigenschaft der Datei ist **TextTemplatingFileGenerator**.
+     Beachten Sie, dass die **benutzerdefiniertes Tool** -Eigenschaft der Datei ist **TextTemplatingFileGenerator**.
 
 3.  Öffnen Sie die Datei. Sie enthält bereits die folgenden Direktiven:
 
@@ -67,12 +67,12 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 5.  Speichern Sie die Datei.
 
-     Sie wird möglicherweise eine **Sicherheitswarnung** Meldungsfeld mit der Frage zu bestätigen, dass die Vorlage ausgeführt werden soll. Klicken Sie auf **OK**.
+     Sie sehen möglicherweise eine **Sicherheitswarnung** Meldungsfeld mit der Frage zu bestätigen, dass die Vorlage ausgeführt werden soll. Klicken Sie auf **OK**.
 
-6.  In **Projektmappen-Explorer**, erweitern Sie die Vorlagendatei. der Knoten, und treffen Sie eine Datei mit der Erweiterung **".txt"**. Die Datei enthält den Text, der von der Vorlage generiert wird.
+6.  In **Projektmappen-Explorer**, erweitern Sie den Vorlagendateiknoten und sehen Sie eine Datei mit der Erweiterung **.txt**. Die Datei enthält den Text, der von der Vorlage generiert wird.
 
     > [!NOTE]
-    >  Wenn das Visual Basic-Projekt ist, müssen Sie klicken **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.
+    >  Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.
 
 ### <a name="regenerating-the-code"></a>Erneutes Generieren des Codes
  In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete Datei generiert wird:
@@ -81,7 +81,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 -   Sie speichern die Vorlage.
 
--   Klicken Sie auf **alle Vorlagen transformieren** in der **erstellen** Menü. Dadurch werden alle Vorlagen in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe transformiert.
+-   Klicken Sie auf **alle Vorlagen transformieren** in die **erstellen** Menü. Dadurch werden alle Vorlagen in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe transformiert.
 
 -   In **Projektmappen-Explorer**, im Kontextmenü der Datei, wählen Sie **benutzerdefiniertes Tool ausführen**. Verwenden Sie diese Methode, um eine ausgewählte Untergruppe von Vorlagen zu transformieren.
 
@@ -134,7 +134,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 -   Legen Sie in der Vorlage Haltepunkte auf dieselbe Weise fest wie für normalen Code.
 
--   Wählen Sie **T4-Vorlage Debuggen** aus dem Kontextmenü des Textvorlagendatei im Projektmappen-Explorer.
+-   Wählen Sie **T4-Vorlage Debuggen** aus dem Kontextmenü der Textvorlagendatei im Projektmappen-Explorer.
 
  Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.
 
@@ -185,7 +185,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 3.  Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:
 
-    ```
+    ```csharp
     class MyGeneratedClass {
       private int P1 = 0;
       private int P2 = 0;
@@ -222,7 +222,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
  Die `assembly`-Direktive macht die angegebene Assembly auf die gleiche Weise für den Vorlagencode verfügbar wie der Abschnitt "Verweise" eines [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekts. Sie müssen keinen Verweis auf "System.dll" einschließen, da automatisch darauf verwiesen wird. Die `import`-Direktive ermöglicht wie die `using`-Direktive in einer normalen Programmdatei die Verwendung von Typen ohne ihre vollqualifizierten Namen.
 
- Beispielsweise nach dem Importieren von **System.IO**, geschrieben:
+ Beispielsweise nach dem Importieren von **System.IO**, könnten Sie schreiben:
 
 ```csharp
 
@@ -296,14 +296,14 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ##  <a name="Regenerating"></a> Automatisches Erneutes Generieren des Codes
  In der Regel werden mehrere Dateien in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe mit einem Eingabemodell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.
 
- Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe erneut ausführen. Um dies manuell auszuführen, wählen Sie **alle Vorlagen transformieren** auf die **erstellen** Menü.
+ Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe erneut ausführen. Wählen Sie dazu manuell **alle Vorlagen transformieren** auf die **erstellen** Menü.
 
- Wenn Sie das Visual Studio Modeling SDK installiert haben, können Sie alle Vorlagen, die automatisch transformiert werden, wenn Sie einen Build ausführen lassen. Bearbeiten Sie dazu die Projektdatei (.csproj oder .vbproj) in einem Text-Editor, und fügen Sie in der Nähe des Endes der Datei nach allen anderen `<import>`-Anweisungen die folgenden Zeilen hinzu:
+ Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, haben Sie alle Vorlagen, die bei jeder Buildausführung automatisch transformiert. Bearbeiten Sie dazu die Projektdatei (.csproj oder .vbproj) in einem Text-Editor, und fügen Sie in der Nähe des Endes der Datei nach allen anderen `<import>`-Anweisungen die folgenden Zeilen hinzu:
 
 > [!NOTE]
-> In Visual Studio 2017 werden Text Vorlage Transformation SDK und Visual Studio Modellierungs-SDKS automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> In Visual Studio 2017 werden im Text Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-```
+```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
 <PropertyGroup>
    <TransformOnBuild>true</TransformOnBuild>
@@ -321,8 +321,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> Konvertieren eine vorhandene Datei in eine Vorlage
- Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zuerst eine normale Datei als Prototyp, z. B. eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Datei, und klicken Sie dann Generierungscode, der die resultierende Datei verändert.
+##  <a name="Converting"></a> Konvertieren einer vorhandenen Datei zu einer Vorlage
+ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zunächst eine normale Datei als Prototyp, z. B. eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Datei, und klicken Sie dann Generierungscode, der die resultierende Datei verändert.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage
 
@@ -330,9 +330,9 @@ Warning("A warning message");
 
 2.  Testen Sie die neue Datei, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
 
-3.  Ändern Sie im Projektmappen-Explorer die Dateierweiterung **TT**.
+3.  Ändern Sie im Projektmappen-Explorer die Dateierweiterung, **TT**.
 
-4.  Prüfen Sie die folgenden Eigenschaften der **TT** Datei:
+4.  Überprüfen Sie die folgenden Eigenschaften der **TT** Datei:
 
     |||
     |-|-|
@@ -359,7 +359,7 @@ Warning("A warning message");
 7.  Identifizieren Sie einen Teil der Datei, den Sie ändern möchten. Beispielsweise einen Teil, der nur unter bestimmten Bedingungen angezeigt oder wiederholt wird oder in dem sich bestimmte Werte ändern. Fügen Sie Generierungscode ein. Speichern Sie die Datei, und überprüfen Sie, ob die untergeordnete Datei ordnungsgemäß generiert wurde. Wiederholen Sie diesen Schritt.
 
 ## <a name="guidelines-for-code-generation"></a>Richtlinien für die Codegenerierung
- Finden Sie unter [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md).
+ Informieren Sie sich [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

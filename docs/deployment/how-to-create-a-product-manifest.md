@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen eines Produktmanifests | Microsoft Docs'
+title: 'Vorgehensweise: Erstellen eines Produktmanifests | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,27 +20,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815768"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153110"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Gewusst wie: Erstellen eines Produktmanifests
-Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelne Produktmanifestdatei aber ein Paketmanifest für jedes Gebietsschema. Das Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, die Endbenutzer-Lizenzverträge und die Language Packs.  
+Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Die Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, durch den Endbenutzer-Lizenzverträge und die Language Packs.  
   
- Weitere Informationen zu Produktmanifesten finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).  
+ Weitere Informationen zu der Produkt-Manifeste, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).  
   
-## <a name="creating-the-product-manifest"></a>Das Produktmanifest erstellen  
+## <a name="create-the-product-manifest"></a>Das Produktmanifest erstellen  
   
 #### <a name="to-create-the-product-manifest"></a>Das Produktmanifest erstellen  
   
-1.  Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. Dieses Beispiel verwendet die C:\package.  
+1.  Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet die C:\package.  
   
-2.  In Visual Studio, erstellen Sie eine neue XML-Datei namens `product.xml`, und speichern sie den Ordner "C:\package".  
+2.  Erstellen Sie in Visual Studio eine neue XML-Datei namens *product.xml*, und speichern sie die *C:\package* Ordner.  
   
-3.  Fügen Sie die folgenden XML-Code, um den XML-Namespace und Produkt-Code für das Paket beschreiben. Ersetzen Sie den Produktcode durch einen eindeutigen Bezeichner für das Paket an.  
+3.  Fügen Sie den folgenden XML-Code, um den XML-Namespace und Produkt-Code für das Paket beschreiben. Ersetzen Sie den Produktcode mit einem eindeutigen Bezeichner für das Paket an.  
   
     ```xml  
     <Product  
@@ -48,7 +48,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Fügen Sie XML-Code, um anzugeben, dass das Paket eine Abhängigkeit aufweist. Dieses Beispiel verwendet eine Abhängigkeit auf Microsoft Windows Installer 3.1 oder höher.  
+4.  Fügen Sie XML-Code, um anzugeben, dass das Paket abhängig ist. Dieses Beispiel verwendet eine Abhängigkeit auf Microsoft Windows Installer 3.1 oder höher.  
   
     ```xml  
     <RelatedProducts>  
@@ -56,7 +56,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
       </RelatedProducts>  
     ```  
   
-5.  Fügen Sie XML-Code, um alle Dateien aufgelistet, die in die Bootstrapper-Pakets sind. Dieses Beispiel verwendet den Namen der Paketdatei "CorePackage.msi".  
+5.  Fügen Sie XML-Code, um alle Dateien aufgelistet, die in das Bootstrapperpaket zu sind. In diesem Beispiel verwendet den Namen der Paketdatei *"CorePackage.msi"*.  
   
     ```xml  
     <PackageFiles>  
@@ -64,16 +64,16 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
     </PackageFiles>  
     ```  
   
-6.  Kopieren Sie oder verschieben Sie die Datei "CorePackage.msi" in den Ordner C:\package.  
+6.  Kopieren oder verschieben Sie die *"CorePackage.msi"* -Datei in die *C:\package* Ordner.  
   
-7.  Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** Flag in der MSI-Datei, die automatisch installiert wird. Wenn die Datei eine .exe ist, wird der Bootstrapper die .exe-Datei über die Befehlsshell ausgeführt. Das folgende XML zeigt keine Argumente für "CorePackage.msi", aber die "Arguments"-Attributs Befehlszeilenargument abgelegt.  
+7.  Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** flag, das die *MSI* -Datei, die im Hintergrund installiert wird. Wenn die Datei ist eine *.exe*, führt der Bootstrapper die *.exe* -Datei mit der Shell. Das folgende XML zeigt keine Argumente *"CorePackage.msi"*, Sie können jedoch Befehlszeilenargument in der `Arguments` Attribut.  
   
     ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Fügen Sie die folgenden XML-Code, um festzustellen, ob diese Bootstrapper-Pakets installiert ist. Ersetzen Sie den Produktcode durch die GUID für die weitervertreibbare Komponente.  
+8.  Fügen Sie den folgenden XML-Code, um festzustellen, ob dieser Bootstrapper-Paket installiert ist. Ersetzen Sie den Produktcode, durch die GUID für die redistributable-Komponente.  
   
     ```xml  
     <InstallChecks>  
@@ -83,7 +83,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
     </InstallChecks>  
     ```  
   
-9. Fügen Sie XML-Code, um das Bootstrapperverhalten abhängig zu ändern, wenn die Bootstrapperkomponente bereits installiert ist. Wenn die Komponente installiert ist, wird das Bootstrapperpaket nicht ausgeführt. Das folgende XML wird überprüft, ob der aktuelle Benutzer ein Administrator ist, da diese Komponente sind Administratorrechte erforderlich.  
+9. Fügen Sie XML-Code, um das Bootstrapperverhalten abhängig zu ändern, wenn der Bootstrapper Komponenten bereits installiert ist. Wenn die Komponente installiert ist, wird der Bootstrapper-Paket nicht ausgeführt. Das folgende XML wird überprüft, ob der aktuelle Benutzer ein Administrator ist, da diese Komponente Administratorrechte erforderlich sind.  
   
     ```xml  
     <InstallConditions>  
@@ -96,7 +96,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
     </InstallConditions>  
     ```  
   
-10. Fügen Sie XML-Code, um Exitcodes festzulegen, wenn die Installation erfolgreich ist und ob ein Neustart erforderlich ist. Das folgende XML zeigt, dass die schlägt fehl und FailReboot Exitcodes an, dass der Bootstrapper Installieren von Paketen nicht fortgesetzt werden.  
+10. Fügen Sie XML-Code, um Exitcodes festzulegen, wenn die Installation erfolgreich ist, und wenn ein Neustart erforderlich ist. Das folgende XML zeigt, dass die schlägt fehl und FailReboot Exitcodes angegeben, dass der Bootstrapper Installieren von Paketen nicht fortgesetzt wird.  
   
     ```xml  
     <ExitCodes>  
@@ -107,14 +107,14 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
     </ExitCodes>  
     ```  
   
-11. Fügen Sie das folgende XML, um den Abschnitt für die Bootstrapperbefehle zu beenden.  
+11. Fügen Sie das folgende XML, wenn Sie im Abschnitt für die Bootstrapperbefehle zu beenden.  
   
     ```xml  
         </Command>  
     </Commands>  
     ```  
   
-12. Verschieben Sie den Ordner C:\package, auf dem Visual Studio-Bootstrapper-Verzeichnis. Für Visual Studio 2010 ist dies das Verzeichnis der \Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+12. Verschieben der *C:\package* Ordner auf dem Visual Studio-Bootstrapper-Verzeichnis. Für Visual Studio 2010 ist dies die *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* Verzeichnis.  
   
 ## <a name="example"></a>Beispiel  
  Das Produktmanifest enthält installationsanweisungen für benutzerdefinierte erforderliche Komponenten.  
@@ -161,4 +161,4 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen, können Sie
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+ [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)

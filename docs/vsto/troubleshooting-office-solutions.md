@@ -17,22 +17,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693184"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671883"
 ---
 # <a name="troubleshoot-office-solutions"></a>Problembehandlung bei Office-Projektmappen
   Dieser Abschnitt enthält Tipps zur Lösung allgemeiner Probleme, die beim Erstellen von Projektmappen mithilfe von Office-Entwicklungstools in Visual Studio auftreten können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Problembehandlung von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)  
+ [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Beschreibt allgemeine Probleme, die beim Entwerfen, Ausführen und Testen von Office-Projektmappen in Visual Studio auftreten können.  
   
  [Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
- Beschreibt der erneute Aktivieren eines zuvor hart oder weich deaktivierten VSTO-Add-Ins.  
+ Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.  
   
  [Zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md)  
  Beschreibt weitere Ressourcen zur Problembehandlung von Fehlern und Warnungen in Office-Projektmappen.  
@@ -50,7 +50,7 @@ ms.locfileid: "34693184"
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
  Enthält Themen, in denen erläutert wird, wie die in .NET Framework verfügbaren Sicherheitsfeatures in Office-Projektmappen integriert werden.  
   
- [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
+ [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)  
  Eine Liste häufig gestellter Fragen zum Programmieren von Office-Projektmappen sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.  
   
   

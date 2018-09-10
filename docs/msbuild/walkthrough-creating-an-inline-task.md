@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a69fcd70350a000561464713ac18551daf38059a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575792"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152066"
 ---
-# <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
+# <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Weitere Informationen hierzu finden Sie unter [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md).  
   
  In dieser exemplarischen Vorgehensweise wird das Erstellen und Ausführen der folgenden Inlineaufgaben erläutert:  
@@ -32,40 +32,42 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
 -   Eine Aufgabe, die über zwei Eingabeparameter und einen Ausgabeparameter verfügt, der eine MSBuild-Eigenschaft zurückgibt.  
   
 -   Eine Aufgabe, die über zwei Eingabeparameter und einen Ausgabeparameter verfügt, der ein MSBuild-Element zurückgibt.  
+
+Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **Eingabeaufforderungsfenster von Visual Studio** wie folgt:  
   
- Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **Eingabeaufforderungsfenster von Visual Studio** wie folgt:  
+1.   Erstellen Sie in Visual Studio eine MSBuild-Projektdatei.  
   
--   Erstellen Sie in Visual Studio eine MSBuild-Projektdatei.  
+2.   Ändern Sie die Projektdatei in Visual Studio, um die Inlineaufgabe zu erstellen.  
   
--   Ändern Sie die Projektdatei in Visual Studio, um die Inlineaufgabe zu erstellen.  
+3.   Erstellen Sie im **Eingabeaufforderungsfenster** das Projekt und untersuchen Sie die Ergebnisse.  
   
--   Erstellen Sie im **Eingabeaufforderungsfenster** das Projekt und untersuchen Sie die Ergebnisse.  
-  
-## <a name="creating-and-modifying-an-msbuild-project"></a>Erstellen und Ändern eines MSBuild-Projekts  
+## <a name="create-and-modify-an-msbuild-project"></a>Erstellen und Ändern eines MSBuild-Projekts  
  Das Visual Studio-Projektsystem beruht auf MSBuild. Daher können Sie in Visual Studio eine Buildprojektdatei erstellen. In diesem Abschnitt erstellen Sie eine Visual C#-Projektdatei. (Stattdessen können Sie auch eine Visual Basic-Projektdatei erstellen. Im Kontext dieses Tutorials ist der Unterschied zwischen den zwei Projektdateien marginal.)  
   
 #### <a name="to-create-and-modify-a-project-file"></a>So erstellen und ändern Sie eine Projektdatei  
   
 1.  Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** `InlineTasks` lautet.  
+2.  Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp **Visual C#** und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\*. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** **InlineTasks** lautet.  
   
-     Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.  
+3.  Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.  
   
-3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den InlineTasks-Projektknoten und anschließend auf **Projekt entladen**.  
+3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den **InlineTasks**-Projektknoten und anschließend auf **Projekt entladen**.  
   
 4.  Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.  
   
      Die Projektdatei wird im Code-Editor angezeigt.  
   
-## <a name="adding-a-basic-hello-task"></a>Hinzufügen einer einfachen „Hallo“-Aufgabe  
+## <a name="add-a-basic-hello-task"></a>Hinzufügen einer einfachen „Hallo“-Aufgabe  
  Fügen Sie der Projektdatei nun eine einfache Aufgabe hinzu, die die Nachricht „Hallo Welt“ anzeigt Fügen Sie des Weiteren ein TestBuild-Standardziel hinzu, um die Aufgabe aufzurufen.  
   
 #### <a name="to-add-a-basic-hello-task"></a>So fügen Sie eine einfache „Hallo“-Aufgabe hinzu  
   
 1.  Ändern Sie im `Project`-Stammknoten das Attribut `DefaultTargets` in `TestBuild`. Der resultierende `Project`-Knoten sollte dem folgenden Beispiel ähneln:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  Fügen Sie vor dem Tag `</Project>` die folgende Inlineaufgabe und das folgende Ziel zur Projektdatei hinzu.  
   
@@ -87,16 +89,16 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Dieser Code erstellt eine Inlineaufgabe mit dem Namen „Hallo“ und enthält keine Parameter, Verweise, oder `Using`-Anweisungen. Die „Hallo“-Aufgabe enthält nur eine Codezeile, die auf dem Standardprotokollierungsgerät, in der Regel dem Konsolenfenster, eine „Hallo“-Nachricht anzeigt.  
   
-### <a name="running-the-hello-task"></a>Ausführen der „Hallo“-Aufgabe  
+### <a name="run-the-hello-task"></a>Ausführen der „Hallo“-Aufgabe  
  Führen Sie im **Eingabeaufforderungsfenster** MSBuild aus, um die „Hallo“-Aufgabe zu erstellen und das TestBuild-Ziel für deren Aufruf zu verarbeiten.  
   
 ##### <a name="to-run-the-hello-task"></a>So führen Sie die „Hallo“-Aufgabe aus  
   
 1.  Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.  
   
-2.  Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall D:\InlineTasks\InlineTasks\\.  
+2.  Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\*.  
   
-3.  Geben Sie **msbuild** ohne Befehlsoptionen ein, und drücken Sie anschließend die EINGABETASTE. Standardmäßig wird so die Datei „InlineTasks.csproj“ erstellt und das TestBuild-Standardziel verarbeitet, das die „Hallo“-Aufgabe aufruft.  
+3.  Geben Sie **msbuild** ohne Befehlsoptionen ein, und drücken Sie anschließend die **EINGABETASTE**. Standardmäßig wird so die Datei *InlineTasks.csproj* erstellt und das TestBuild-Standardziel verarbeitet, das die „Hallo“-Aufgabe aufruft.  
   
 4.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
@@ -107,7 +109,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Durch den Wechsel zwischen dem Code-Editor und dem **Eingabeaufforderungsfenster** können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
-## <a name="defining-the-echo-task"></a>Definieren der Echo-Aufgabe  
+## <a name="define-the-echo-task"></a>Definieren der Echo-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, die einen Zeichenfolgenparameter akzeptiert und die Zeichenfolge für das Standardprotokollierungsgerät anzeigt.  
   
 #### <a name="to-define-the-echo-task"></a>So definieren Sie die Echo-Aufgabe  
@@ -130,7 +132,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
     </Target>  
     ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die Eingabetaste. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
+2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
   
 3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
@@ -138,7 +140,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Dieser Code definiert die Inlineaufgabe „Echo“ und verfügt nur über einen erforderlichen Eingabeparameter, „Text“. Parameter sind standardmäßig vom Typ „System.String“. Der Wert des Parameters „Text“ wird festgelegt, wenn das TestBuild-Ziel die Echo-Aufgabe aufruft.  
   
-## <a name="defining-the-adder-task"></a>Definieren der Adder-Aufgabe  
+## <a name="define-the-adder-task"></a>Definieren der Adder-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, bei der zwei ganzzahlige Parameter hinzugefügt werden und die deren Summe als MSBuild-Eigenschaft ausgibt.  
   
 #### <a name="to-define-the-adder-task"></a>So definieren Sie die Adder-Aufgabe  
@@ -166,7 +168,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
     </Target>  
     ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die Eingabetaste. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
+2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
   
 3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
@@ -174,7 +176,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Dieser Code definiert die Inlineaufgabe „Adder“ und verfügt über die beiden erforderlichen ganzzahligen Eingabeparameter „A“ und „B“ sowie über den ganzzahligen Ausgabeparameter „C“. Die Adder-Aufgabe fügt die beiden Eingabeparameter hinzu und gibt die Summe im Ausgabeparameter zurück. Die Summe wird als MSBuild-Eigenschaft `Sum` ausgegeben. Die Werte der Eingabeparameter werden festgelegt, wenn das TestBuild-Ziel die Adder-Aufgabe aufruft.  
   
-## <a name="defining-the-regx-task"></a>Definieren der RegX-Aufgabe  
+## <a name="define-the-regx-task"></a>Definieren der RegX-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, die eine Elementgruppe sowie einen regulären Ausdruck akzeptiert und eine Liste aller Elemente mit Dateiinhalten zurückgibt, die mit dem Ausdruck übereinstimmen.  
   
 #### <a name="to-define-the-regx-task"></a>So definieren Sie die RegX-Aufgabe  
@@ -221,13 +223,17 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
     </Target>  
     ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die Eingabetaste. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die RegX-Aufgabe aufruft.  
+2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die RegX-Aufgabe aufruft.  
   
 3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgenden Zeilen sollten angezeigt werden:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  Dieser Code definiert eine Inlineaufgabe mit dem Namen „RegX“ und verfügt über die folgenden drei Parameter:  
   
@@ -239,20 +245,20 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Der Wert der Eingabeparameter wird festgelegt, wenn das TestBuild-Ziel die RegX-Aufgabe aufruft. Die RegX-Aufgabe liest jede Datei und gibt die Liste der Dateien zurück, die mit dem regulären Ausdruck übereinstimmen. Diese Liste wird als `Result`-Ausgabeparameter zurückgegeben, der als MSBuild-Element `MatchedFiles` ausgegeben wird.  
   
-### <a name="handling-reserved-characters"></a>Behandeln reservierter Zeichen  
+### <a name="handle-reserved-characters"></a>Verwenden reservierter Zeichen  
  Der MSBuild-Parser verarbeitet Inlineaufgaben als XML. Zeichen, deren Bedeutung in XML reserviert ist, z.B. „,\<“ und „>“, werden erkannt und behandelt, als ob es sich um XML- und nicht um .NET-Quellcode handelt. Wenn Sie die reservierten Zeichen in Codeausdrücke einfügen möchten, z.B. `Files.Length > 0`, schreiben Sie das `Code`-Element so, dass die zugehörigen Inhalte in einem CDATA-Ausdruck enthalten sind:  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>Siehe auch  
  [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele)
+ [Ziele](../msbuild/msbuild-targets.md)

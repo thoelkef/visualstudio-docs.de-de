@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843922"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten
 
@@ -30,7 +31,7 @@ Zum Erstellen einer Leistungssitzung können Sie den Profilerstellungs-Assistent
 
 Wenn Sie die Profilerstellung für JavaScript angeben, erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Code, der auf dem Server ausgeführt wird.
 
-- Bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Webanwendung erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Code, der auf dem Server ausgeführt wird.
+- Bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Code, der auf dem Server ausgeführt wird.
 
 - Bei einer beliebigen Webseite erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird.
 
@@ -46,7 +47,7 @@ Wenn Sie die Profilerstellung für JavaScript angeben, erfolgt die Profilerstell
 
 5. Aktivieren Sie auf der dritten Seite des Assistenten das Kontrollkästchen **Profilerstellung für JavaScript** , und klicken Sie dann auf **Weiter**.
 
-6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen** , um die Webanwendung im Browser zu starten.
+6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**, um die Webanwendung im Browser zu starten.
 
 7. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll.
 
@@ -68,7 +69,7 @@ Wenn Sie die Profilerstellung für JavaScript angeben, erfolgt die Profilerstell
 
     2. Aktivieren Sie das Kontrollkästchen **Profilerstellung für JavaScript** , und klicken Sie dann auf **Weiter**.
 
-6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen** , um die Webseite im Browser zu starten.
+6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**, um die Webseite im Browser zu starten.
 
 7. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll.
 

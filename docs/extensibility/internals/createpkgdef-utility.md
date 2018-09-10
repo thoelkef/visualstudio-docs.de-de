@@ -1,5 +1,5 @@
 ---
-title: CreatePkgDef Hilfsprogramm | Microsoft Docs
+title: CreatePkgDef-Hilfsprogramm | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,42 +16,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135783"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500695"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef-Hilfsprogramm
-Eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter akzeptiert, und erstellt eine PKGDEF-Datei, um die DLL-Datei zu begleiten. Die PKGDEF-Datei enthält alle Informationen, die in der systemregistrierung andernfalls geschrieben werden würde, wenn die Erweiterung installiert ist.  
+Eine DLL-Datei für Visual Studio-Erweiterung als Parameter akzeptiert und erstellt eine *PKGDEF* Datei zur Ergänzung der *DLL* Datei. Die *PKGDEF* -Datei enthält alle Informationen, die in die systemregistrierung andernfalls geschrieben werden sollen, wenn die Erweiterung installiert ist.  
   
 > [!NOTE]
->  Die meisten der Projektvorlagen, die in Visual Studio SDK, automatisch enthalten sind erstellen PKGDEF-Dateien als Teil des Buildprozesses. Dieses Dokument ist für Benutzer gedacht, die Pakete manuell erstellen, oder konvertieren Sie vorhandene Pakete, damit PKGDEF-Bereitstellung verwenden möchten.  
+>  Erstellen Sie die Projektvorlagen, die automatisch in Visual Studio SDK enthalten sind die meisten *PKGDEF* Dateien als Teil des Buildprozesses. Dieses Dokument richtet sich für diejenigen, die Pakete manuell erstellen, oder konvertieren Sie vorhandene Pakete verwenden möchten *PKGDEF* Bereitstellung.  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
+CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>  
 ```  
   
 ## <a name="arguments"></a>Argumente  
- / out =`FileName`  
- Erforderlich. Legt den Namen der Ausgabedatei um PKGDEF`FileName`.  
+ **/ out =&lt;Dateiname&gt;**  
+ Erforderlich. Legt den Namen der der *PKGDEF* Ausgabedatei &lt;FileName&gt;.  
   
- /codebase  
- Dies ist optional. Erzwingt, dass die Registrierung mit dem CodeBase-Hilfsprogramm.  
+ **/codebase**  
+ Dies ist optional. Erzwingt, dass die Registrierung mit dem **Codebasis** Hilfsprogramm.  
   
- / Assembly  
- Erzwingt, dass die Registrierung mit dem Dienstprogramm Assembly.  
+ **/ Assembly**  
+ Erzwingt, dass die Registrierung mit dem **Assembly** Hilfsprogramm.  
   
- `AssemblyPath`  
- Der Pfad der DLL-Datei, die von der Sie die PKGDEF generieren möchten.  
+ **&lt;Assemblypfad&gt;**  
+ Der Pfad des der *DLL* Datei, die von dem Sie generieren möchten die *PKGDEF*.  
   
 ## <a name="remarks"></a>Hinweise  
- Erweiterung Bereitstellung mithilfe von PKGDEF Dateien ersetzt die Registrierung-Anforderungen von früheren Versionen von Visual Studio.  
+ Bereitstellung von Erweiterungen mit *PKGDEF* Dateien ersetzt, die Anforderungen der Registrierung von früheren Versionen von Visual Studio.  
   
- Die PKGDEF-Dateien müssen in einem der folgenden Speicherorte installiert sein: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ oder %vsinstalldir%\Common7\IDE\Extensions\\. Wenn Sie der Installationsordner %localappdata%\Microsoft\Visual Studio\14.0\Extensions ist\\, die Erweiterung wird von Visual Studio erkannt werden, aber standardmäßig deaktiviert. Der Benutzer kann mit die Erweiterung aktivieren **Erweiterungen und Updates**. Wenn der Ordner "Installation" %vsinstalldir%\Common7\IDE\Extensions ist\\, die Erweiterung ist standardmäßig aktiviert.  
+ Die *PKGDEF* Dateien müssen in einem der folgenden Speicherorte installiert sein: 
+
+ - *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+ 
+ - *%VSInstallDir%\Common7\IDE\Extensions\\*
+    
+ Wenn der Installationsordner *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, die Erweiterung wird von Visual Studio erkannt, aber standardmäßig deaktiviert sein. Der Benutzer kann mit die Erweiterung aktivieren **Erweiterungen und Updates**. 
+   
+ Wenn der Installationsordner *%vsinstalldir%\Common7\IDE\Extensions\\*, die Erweiterung ist standardmäßig aktiviert.  
   
 > [!NOTE]
 >  Die **Erweiterungen und Updates** Tool kann nicht verwendet werden, um eine Erweiterung zugreifen, es sei denn, es als Teil eines VSIX-Pakets installiert ist.  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942740"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379425"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
 
@@ -25,7 +25,7 @@ In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des 
 
 ## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest
 
-1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (den obersten Knoten).
+1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (oberster Knoten).
 
 2.  Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
 

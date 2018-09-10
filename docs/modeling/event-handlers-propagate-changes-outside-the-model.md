@@ -12,38 +12,38 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ac748cae6bf36a95b95c5d9a27aa9469ae440eed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953632"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776170"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 
-In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die Weitergabe von Änderungen auf Ressourcen außerhalb des Informationsspeichers, z. B. keine Store-Variablen, Dateien, im anderen Speicher oder anderen Modellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen die auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang rückgängig gemacht bzw. wiederholt ausgeführt werden. Aus diesem Grund sind im Gegensatz zum Speicher-Regeln Speicherereignisse besten zum Aktualisieren von Werten, die sich außerhalb des Informationsspeichers befinden. Im Gegensatz zu .NET Ereignisse, Ereignishandler Store Lauschen auf eine Klasse registriert sind: Sie müssen nicht für jede Instanz einen separaten Handler registriert werden soll. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Behandeln der Änderungen, finden Sie unter [Weitergeben von Änderungen und reagieren auf](../modeling/responding-to-and-propagating-changes.md).
+Sie können im Visualisierungs- und Modellierungs-SDK, Store-Ereignishandler zum Weitergeben von Änderungen an Ressourcen außerhalb des Speichers an, wie z. B. nicht über den Store-Variablen, die Dateien, die Modelle in anderen Datenspeichern oder andere definieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen das auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang zum Rückgängigmachen oder Wiederholen-Vorgang ausgeführt. Aus diesem Grund sind im Gegensatz zu Regeln für Store Speicherereignissen besonders hilfreich für das Aktualisieren der Werte, die außerhalb des Speichers. Im Gegensatz zu .NET Ereignissen, Store-Ereignishandler registriert sind, um eine Klasse zu überwachen: Sie müssen keinen separaten Handler für jede Instanz registrieren. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Verarbeiten von Änderungen, finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).
 
-Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind Beispiele für externe Ressourcen, die vom Store Ereignisse verarbeitet werden können.
+Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind Beispiele von externen Ressourcen, die von Store-Ereignisse behandelt werden können.
 
-### <a name="to-define-a-store-event"></a>So definieren Sie eine Store-Ereignis
+### <a name="to-define-a-store-event"></a>Um ein Speicherereignis definieren
 
-1.  Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Häufig verwendete die letzte Ereignis-Typen sind:
+1.  Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Am häufigsten verwendeten häufig die Ereignis-Typen sind:
 
-    -   `ElementAdded` -ausgelöst, wenn ein Modellelement, Beziehungslink, Form oder den Verbinder erstellt.
+    -   `ElementAdded` : wird ausgelöst, wenn ein Element des Modells, Beziehungslink "," Form "oder" Verbindung wird erstellt.
 
-    -   ElementPropertyChanged - ausgelöst, wenn der Wert des einem `Normal` Eigenschaft "Domain" geändert wird. Das Ereignis wird ausgelöst, nur, wenn die alten und neuen Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.
+    -   ElementPropertyChanged - ausgelöst, wenn der Wert des einem `Normal` Domäneneigenschaft geändert wird. Das Ereignis wird ausgelöst, nur dann, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.
 
-         Es kann nicht an den Rolleneigenschaften angewendet werden, die beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded` die domänenbeziehung überwachen.
+         Es kann nicht an den Rolleneigenschaften angewendet werden, die beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded` die domänenbeziehung zu überwachen.
 
-    -   `ElementDeleted` – nach einem Modellelement ausgelöst, Beziehung, Form oder Connector gelöscht wurde. Die Eigenschaftswerte des Elements können Sie weiterhin zugreifen, aber sie weist keine Beziehungen zu anderen Elementen.
+    -   `ElementDeleted` -ausgelöst, nachdem ein Element des Modells, Beziehung, eine Form oder Verbindung wurde gelöscht. Sie können weiterhin die Eigenschaftswerte des Elements zugreifen, aber es müssen keine Beziehungen zu anderen Elementen.
 
-2.  Hinzufügen eine partiellen Klassendefinition für *YourDsl *** DocData** in einer separaten Codedatei in der **DslPackage** Projekt.
+2.  Fügen Sie eine partielle Klassendefinition für _Ihredsl_**DocData** in einer separaten Codedatei in die **DslPackage** Projekt.
 
-3.  Schreiben Sie den Code des Ereignisses als eine Methode, wie im folgenden Beispiel gezeigt. Es kann sein `static`, es sei denn, Sie möchten den Zugriff auf `DocData`.
+3.  Schreiben Sie den Code für das Ereignis als Methode, wie im folgenden Beispiel an. Es kann sein `static`, es sei denn, Sie möchten den Zugriff auf `DocData`.
 
-4.  Überschreiben Sie `OnDocumentLoaded()` Handler registriert werden. Wenn Sie mehrere Handler verfügen, können Sie diese an demselben Ort registrieren.
+4.  Außer Kraft setzen `OnDocumentLoaded()` Handler registriert werden. Wenn Sie mehr als einen Handler verfügen, können Sie diese alle an derselben Stelle registrieren.
 
-Der Speicherort des Registrierungscodes ist nicht wichtig. `DocView.LoadView()` wird von ein anderen Speicherort.
+Der Speicherort des Registrierungscodes ist nicht wichtig. `DocView.LoadView()` ist ein alternativer Speicherort an.
 
 ```csharp
 using System;
@@ -90,13 +90,13 @@ namespace Company.MusicLib
 }
 ```
 
-## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Mit Ereignissen können rückgängig gemacht werden Anpassungen in den Speicher ein
+## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Verwenden Sie die Ereignisse rückgängig gemacht werden Anpassungen vornehmen, in den Store
 
-Store-Ereignisse werden nicht normal verwendet für die Weitergabe von Änderungen in den Speicher, da der Ereignishandler ausgeführt wird, nachdem die Transaktion ein Commit ausgeführt wird. Stattdessen verwenden Sie eine Store-Regel. Weitere Informationen finden Sie unter [weitergeben Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+Store-Ereignisse werden nicht normalerweise verwendet für die Weitergabe von Änderungen in den Speicher, da der Ereignishandler ausgeführt wird, nachdem die Transaktion ein Commit ausgeführt wird. Stattdessen verwenden Sie eine Store-Regel. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
-Jedoch, können Sie einen Ereignishandler verwenden, zusätzliche Updates in den Speicher vorzunehmen, wenn der Benutzer auf die zusätzlichen Updates separat aus dem ursprünglichen Ereignis rückgängig gemacht werden soll. Nehmen wir beispielsweise an, dass Kleinbuchstaben der üblichen Konvention für Albumtiteln sind. Einen Ereignishandler für den Speicher geschrieben, der den Titel in Kleinbuchstaben korrigiert, nachdem der Benutzer in Großbuchstaben eingegeben wurde. Aber der Benutzer konnte mit dem Befehl "Rückgängig" verwendet, um Ihre Korrektur "Abbrechen", die Großbuchstaben wiederherstellen. Eine zweite rückgängig machen würden die Änderung des Benutzers entfernt werden.
+Allerdings können einen Ereignishandler Sie zusätzliche Updates an den Store vornehmen, wenn den Benutzer kann die zusätzlichen Updates separat aus dem ursprünglichen Ereignis rückgängig gemacht werden soll. Nehmen wir beispielsweise an, dass Kleinbuchstaben die übliche Konvention für Albumtiteln enthalten sind. Sie können einen Ereignishandler für den Speicher schreiben, der den Titel in Kleinbuchstaben korrigiert, nachdem der Benutzer in Großbuchstaben eingegeben hat. Aber der Benutzer kann den Befehl "Rückgängig" verwendet, um Ihre Korrekturen, Abbrechen der Großbuchstaben wiederherstellen. Rückgängig zu machen möchten, Entfernen des Benutzers ändern.
 
-Im Gegensatz dazu, wenn Sie eine Store-Regel, um die Ausführung geschrieben haben, wäre des Benutzers ändern und Ihre Korrektur in der gleichen Transaktion, damit der Benutzer die Anpassung ohne Verlust der ursprünglichen Änderung nicht rückgängig konnte.
+Im Gegensatz dazu, wenn Sie eine Store-Regel, um das gleiche tun geschrieben haben, wäre des Benutzers ändern und Ihre Korrekturen in der gleichen Transaktion, damit Benutzer nicht die Anpassung rückgängig machen konnte ohne Verlust der ursprünglichen Änderung.
 
 ```csharp
 partial class MusicLibDocView
@@ -160,28 +160,28 @@ private static void AlbumTitleAdjuster(object sender,
 }
 ```
 
-Wenn Sie ein Ereignis, die die Speicher aktualisiert schreiben:
+Wenn Sie ein Ereignis, die den Speicher aktualisiert schreiben:
 
--   Verwendung `store.InUndoRedoOrRollback` zu vermeiden, dass Änderungen mit Modellelementen im rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in seinen ursprünglichen Zustand festgelegt.
+-   Verwendung `store.InUndoRedoOrRollback` um zu vermeiden, Änderungen an Modellelemente in rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in den ursprünglichen Zustand festgelegt.
 
--   Verwendung `store.InSerializationTransaction` vermeiden Sie Änderungen vornehmen, während das Modell aus der Datei geladen wird.
+-   Verwendung `store.InSerializationTransaction` um zu vermeiden, Änderungen vornehmen, während das Modell aus einer Datei geladen wird.
 
--   Ihre Änderungen führen weitere Ereignisse ausgelöst werden soll. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.
+-   Ihre Änderungen bewirkt Weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.
 
-## <a name="store-event-types"></a>Speichern von Ereignistypen
+## <a name="store-event-types"></a>Store-Ereignistypen
 
-Jedes Ereignis des Typs entspricht einer Auflistung in Store.EventManagerDirectory. Können Sie hinzufügen oder Entfernen von Ereignishandlern zu einem beliebigen Zeitpunkt, aber es ist üblich, die sie hinzufügen, wenn das Dokument geladen wird.
+Jeder Ereignistyp entspricht einer Auflistung in Store.EventManagerDirectory. Sie können das Hinzufügen oder Entfernen von Ereignishandlern zu einem beliebigen Zeitpunkt, aber es ist üblich, um sie hinzuzufügen, wenn das Dokument geladen wird.
 
-|`EventManagerDirectory` Eigenschaftenname|Wann ausgeführt|
+|`EventManagerDirectory` Eigenschaftenname|Ausgeführt, wenn|
 |-------------------------------------------|-------------------|
-|ElementAdded|Eine Instanz einer Domänenklasse, domänenbeziehung, Form, Connector oder Diagramm wird erstellt.|
-|ElementDeleted|Ein Modellelement wurde aus dem Store Element Verzeichnis entfernt und ist nicht mehr die Quelle oder das Ziel jeder Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, aber bei einem zukünftigen rückgängig beibehalten wird.|
+|ElementAdded|Eine Instanz einer Domänenklasse, die domänenbeziehung, Form, Connector oder Diagramm wird erstellt.|
+|ElementDeleted|Ein Modellelement aus Element-Speicherverzeichnis entfernt wurde, und es ist nicht mehr, Quelle oder Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, aber bei einem zukünftigen rückgängig beibehalten wird.|
 |ElementEventsBegun|Am Ende einer äußeren Transaktion aufgerufen.|
 |ElementEventsEnded|Wird aufgerufen, wenn alle anderen Ereignisse verarbeitet wurden.|
-|ElementMoved|Ein Modellelement wurde aus einem Store Partition in eine andere verschoben.<br /><br /> Dies bezieht sich nicht auf den Speicherort einer Form im Diagramm.|
-|ElementPropertyChanged|Der Wert der Eigenschaft "Domain" eine wurde geändert. Dies ist nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
-|RolePlayerChanged|Einer der zwei Rollen (enden) einer Beziehung verweist auf ein neues Element.|
-|RolePlayerOrderChanged|In einer Rolle mit einer Multiplizität größer als 1 ist ist die Abfolge der Links geändert.|
+|ElementMoved|Ein Element des Modells wurde aus einem Speicher-Partition in eine andere verschoben.<br /><br /> Dies bezieht sich nicht auf den Speicherort einer Form im Diagramm.|
+|ElementPropertyChanged|Der Wert einer Domäneneigenschaft wurde geändert. Dies wird nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
+|RolePlayerChanged|Eine der zwei Rollen (enden) einer Beziehung verweist auf ein neues Element.|
+|RolePlayerOrderChanged|In einer Rolle mit der Multiplizität größer als 1 wurde die Abfolge von Links geändert.|
 |TransactionBeginning||
 |TransactionCommitted||
 |TransactionRolledBack||

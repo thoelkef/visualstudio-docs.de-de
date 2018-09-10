@@ -15,50 +15,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9efc0ddb207bfc027f0eee0ae0cbb5bbbca330
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921022"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634553"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
-Dieser Abschnitt ist eine Referenz zu Fehlermeldungen, die von verwaltetem Code Analysis-Tool generiert werden. Um Hilfe zu einer bestimmten Fehlermeldung zu erhalten, geben Sie die Fehlernummer in der **gesucht** Feld im Index.
+
+Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool für verwalteten Code generiert werden. Um Hilfe für eine bestimmte Fehlermeldung erhalten, geben Sie die Fehlernummer in der **suchen Sie nach** Feld im Index.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 |||
 |-|-|
-|[CA0001](ca0001.md)|In verwaltetem Code Analysis-Tool, das nicht der erwarteten Fehlerzustand angegeben ist, wurde eine Ausnahme ausgelöst.|
+|[CA0001](ca0001.md)|In verwaltetem Code Analysetool, das einen erwarteten Fehlerzustand nicht angegeben, wurde eine Ausnahme ausgelöst.|
 |[CA0051](ca0051.md)|Es wurden keine Regeln ausgewählt.|
-|[CA0052](ca0052.md)|Keine Ziele wurden ausgewählt, um zu analysieren.|
+|[CA0052](ca0052.md)|Es wurden keine Ziele ausgewählt, um zu analysieren.|
 |[CA0053](ca0053.md)|Regelassembly konnte nicht geladen werden.|
 |[CA0054](ca0054.md)|Eine benutzerdefinierte Regelassembly verfügt über ungültige XML-Ressourcen.|
-|[CA0055](ca0055.md)|Datei konnte nicht geladen werden:\<Pfad >|
-|[CA0056](ca0056.md)|Eine Projektdatei hat eine falsche Version von Analysis-Tool.|
-|[CA0057](ca0057.md)|Verstöße gegen werden nicht mit der aktuellen Gruppe von Zielen und Regeln zugeordnet.|
-|[CA0058](ca0058.md)|Fehler beim Laden von Assemblys, auf die verwiesen wird.|
-|[CA0059](ca0059.md)|Über die Befehlszeile Switch-Fehler.|
-|[CA0060](ca0060.md)|Fehler beim Laden von Assemblys, auf die indirekt verwiesen wird.|
-|[CA0061](ca0061.md)|Die Regel "*RuleId*' konnte nicht gefunden werden.|
-|[CA0062](ca0062.md)|Die Regel "*RuleId*"auf die im Regelsatz verwiesen wird"*RuleSetName*' konnte nicht gefunden werden.|
-|[CA0063](ca0063.md)|Fehler beim Laden der Regelsatzdatei oder eine der abhängigen Regel Satzdateien.|
-|[CA0064](ca0064.md)|Es wurde keine Analyse durchgeführt, da der angegebene Regelsatz FxCop-Regeln nicht enthalten hat.|
-|[CA0065](ca0065.md)|Nicht unterstützte Metadatenkonstrukt: Typ "*TypeName*"enthält eine Eigenschaft und ein Feld mit dem gleichen Namen"*NameDesEigenschaftenfelds*"|
+|[CA0055](ca0055.md)|Datei konnte nicht geladen:\<Pfad >|
+|[CA0056](ca0056.md)|Eine Projektdatei hat eine falsche Version des Analysetools.|
+|[CA0057](ca0057.md)|Verstöße gegen können nicht den aktuellen Satz von Zielen und Regeln zugeordnet werden.|
+|[CA0058](ca0058.md)|Fehler beim Laden von Assemblys, die auf die verwiesen wird.|
+|[CA0059](ca0059.md)|Fehler bei Befehlszeilenschaltern.|
+|[CA0060](ca0060.md)|Fehler beim Laden von Assemblys, die auf die indirekt verwiesen wird.|
+|[CA0061](ca0061.md)|Die Regel "*RuleId*' wurde nicht gefunden.|
+|[CA0062](ca0062.md)|Die Regel "*RuleId*"auf die im Regelsatz verwiesen wird"*RuleSetName*' wurde nicht gefunden.|
+|[CA0063](ca0063.md)|Fehler beim Laden der Regelsatzdatei oder eine der abhängigen Regelsatzdateien.|
+|[CA0064](ca0064.md)|Es wurde keine Analyse durchgeführt, da der angegebene Regelsatz nicht FxCop-Regeln enthalten hat.|
+|[CA0065](ca0065.md)|Nicht unterstütztes Metadatenkonstrukt: Typ "*TypeName*"enthält sowohl eine Eigenschaft als auch ein Feld mit dem gleichen Namen"*NameDesEigenschaftenfelds*"|
 |[CA0066](ca0066.md)|Der Wert "*VersionID*" bereitgestellt, um die **für/TargetFrameworkVersion** ist keine erkannte Version.|
-|[CA0067](ca0067.md)|Das Verzeichnis wurde nicht gefunden.|
-|[CA0068](ca0068.md)|Debuggen Informationen konnte nicht gefunden werden, für die Zielassembly *"AssemblyName"*.|
-|[CA0069](ca0069.md)|Verwenden alternativen Plattform. *FrameworkVersion1* konnte nicht gefunden werden. Mit *FrameworkVersion2* stattdessen. Für optimale Ergebnisse der Codeanalyse stellen Sie sicher, dass die richtige .NET Framework installiert ist.|
-|[CA0070](ca0070.md)|Assembly oder aufgrund von Sicherheitsberechtigungen kann nicht geladen werden.|
-|[CA0501](ca0501.md)|Kann nicht zum Lesen der Ausgabe des Berichts.|
+|[CA0067](ca0067.md)|Verzeichnis wurde nicht gefunden.|
+|[CA0068](ca0068.md)|Debuggen von Informationen konnte nicht gefunden werden, für die Zielassembly *"AssemblyName"*.|
+|[CA0069](ca0069.md)|Verwenden alternative Plattform. *FrameworkVersion1* konnte nicht gefunden werden. Mithilfe von *FrameworkVersion2* stattdessen. Für optimale Analyseergebnisse zu erzielen stellen Sie sicher, dass die richtige .NET Framework installiert ist.|
+|[CA0070](ca0070.md)|Assembly bzw. aufgrund von Berechtigungen für die Codezugriffssicherheit kann nicht geladen werden.|
+|[CA0501](ca0501.md)|Lesen der Ausgabebericht kann nicht ausgeführt werden.|
 |[CA0502](ca0502.md)|Nicht unterstützte Sprache.|
-|[CA0503](ca0503.md)|Die Eigenschaft ist veraltet. Verwenden Sie das ersetzende-Eigenschaft|
-|[CA0504](ca0504.md)|Regelverzeichnis wurde ignoriert, weil er nicht vorhanden ist|
-|[CA0505](ca0505.md)|Die Eigenschaft ist veraltet. Verwenden Sie das ersetzende-Eigenschaft|
-|[FxCopCmd-Fehler](fxcopcmd-errors.md)|Fehler bei der Analyse der verwalteten Code.|
+|[CA0503](ca0503.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
+|[CA0504](ca0504.md)|Regelverzeichnis wurde ignoriert, da sie nicht vorhanden ist|
+|[CA0505](ca0505.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
+|[FxCopCmd-Fehler](fxcopcmd-errors.md)|Analysefehler bei verwaltetem Code.|
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 
- [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
+- [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

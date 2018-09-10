@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815794"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
 
@@ -62,13 +63,13 @@ Jeder bedingte und unbedingte Branch des ausgeführten und überwachten Codes wi
 
 Der folgende Code verwendet z.B. Branches in einer Reihenfolge von 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Sie können die Option **MaxBranches** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). In folgendem Beispiel wird diese Grenze effektiv entfernt:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ Sie können auch die Option **TestExcludePathBoundsExceeded** festlegen, um Inte
 
 Sie können [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) im Testcode verwenden, um von der Schleifenbedingung generierte Einschränkungen zu ignorieren:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ Jeder bedingte Branch, der von den Eingaben des [parametrisierten Unittest](test
 
 Jeder Pfad im folgenden Code verwendet z.B. **n + 1** Bedingungen:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Sie können die Option **MaxConditions** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). Zum Beispiel:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ Sie können auch die Option **TestExcludePathBoundsExceeded** festlegen, um Inte
 
 Sie können [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) verwenden, um von der Schleifenbedingung generierte Einschränkungen zu ignorieren:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ Jeder Aufruf (direkt, indirekt, virtuell, Springen) des ausgeführten und überw
 
 Sie können die Option **MaxCalls** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). In folgendem Beispiel wird diese Grenze effektiv entfernt:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest begrenzt die Größe des Aufrufstapels jedes Ausführungspfads, den 
 
 Sie können die Option **MaxStack** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). In folgendem Beispiel wird diese Grenze effektiv entfernt (nicht empfohlen):
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ Möglicherweise gibt IntelliTest nicht nach jedem ausgeführten parametrisierten
 
 Sie können die Option **MaxRuns** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). In folgendem Beispiel wird diese Grenze effektiv entfernt (nicht empfohlen):
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ Möglicherweise findet IntelliTest anfänglich viele interessante Testeingaben, 
 
 Sie können die Option **MaxRunsWithoutNewTests** eines von **PexSettingsAttributeBase** abgeleiteten Attributs bearbeiten, wie z.B. [PexClass](attribute-glossary.md#pexclass) oder [PexMethod](attribute-glossary.md#pexmethod). In folgendem Beispiel wird diese Grenze effektiv entfernt (nicht empfohlen):
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ Sie können IntelliTest helfen, indem Sie auf mindestens einen Typ zeigen, der d
 
   Wenn IntelliTest z.B. meldet, dass es „von keinen Typen weiß, die **System.Collections.IDictionary** zugewiesen werden können“, können Sie ihm helfen, indem Sie das folgende **PexUseTypeAttribute** dem Test anfügen (oder der fixture-Klasse):
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ Sie können IntelliTest helfen, indem Sie auf mindestens einen Typ zeigen, der d
 
 * **Ein Attribut auf Assemblyebene**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

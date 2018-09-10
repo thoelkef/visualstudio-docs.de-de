@@ -11,33 +11,33 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966653"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381933"
 ---
-# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>How to: Specify How Frequently Test Logs are Saved Using the Load Test Editor
+# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Vorgehensweise: Angeben der Speicherungshäufigkeit von Testprotokollen mithilfe des Auslastungstest-Editors
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Auslastungstesteigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern. Weitere Informationen finden Sie unter [Walkthrough: Create and run a load test (Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests)](../test/walkthrough-create-and-run-a-load-test.md).
 
 > [!NOTE]
 > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-Sie können angeben, wie häufig das Testprotokoll in einem Auslastungstest gespeichert werden soll. Ändern Sie dazu mithilfe des Auslastungstest-Editors im Eigenschaftenfenster die Eigenschaft **Protokollhäufigkeit für abgeschlossene Tests speichern**.
+Sie können angeben, wie häufig das Testprotokoll in einem Auslastungstest gespeichert werden soll. Ändern Sie dazu mithilfe des **Auslastungstest-Editors** im **Eigenschaftenfenster** die Eigenschaft **Protokollhäufigkeit für abgeschlossene Tests speichern**.
 
 ## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>So geben Sie die Häufigkeit des Speicherns des Testprotokolls in einem Auslastungstest an
 
 1.  Öffnen Sie einen Auslastungstest.
 
-     Der Auslastungstest-Editor wird angezeigt. Im Editor wird die Auslastungsteststruktur angezeigt.
+     Der **Auslastungstest-Editor** wird angezeigt. Im Editor wird die Auslastungsteststruktur angezeigt.
 
-2.  Klicken Sie im Ordner **Laufzeiteinstellungen** der Auslastungsteststrukturen auf den Laufzeiteinstellungsknoten, für den Sie angeben möchten, wie häufig das Testprotokoll gespeichert werden soll.
+2.  Klicken Sie im Ordner **Laufzeiteinstellungen** der Auslastungsteststruktur auf den Laufzeiteinstellungsknoten, für den Sie angeben möchten, wie häufig das Testprotokoll gespeichert werden soll.
 
 3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Szenariokategorien und -eigenschaften werden im Eigenschaftenfenster angezeigt.
+     Die Szenariokategorien und -eigenschaften werden im **Eigenschaftenfenster** angezeigt.
 
 4.  Geben Sie im Textfeld für die Eigenschaft **Protokollhäufigkeit für abgeschlossene Tests speichern** eine Zahl ein, um die Häufigkeit anzugeben, mit der das Testprotokoll geschrieben wird. Die Zahl gibt an, dass von jeder eingegebenen Anzahl von Tests jeweils ein Test im Testprotokoll gespeichert wird. Durch Eingabe des Werts zehn wird z. B. angegeben, dass der zehnte, zwanzigste und dreißigste Test in das Testprotokoll geschrieben wird.
 
@@ -50,8 +50,7 @@ Sie können angeben, wie häufig das Testprotokoll in einem Auslastungstest gesp
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
-- [How to: Specify if Test Failures are Saved to Test Logs (Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden)](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
-- [How to: Configure Collecting Full Details to Enable the Virtual User Activity Chart (Vorgehensweise: Konfigurieren der Erfassung aller Details zur Verwendung des Diagramms für Aktivitäten virtueller Benutzer)](../test/how-to-configure-load-tests-to-collect-full-details.md)
+- [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
+- [Vorgehensweise: Konfigurieren der Erfassung aller Details zur Verwendung des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-configure-load-tests-to-collect-full-details.md)

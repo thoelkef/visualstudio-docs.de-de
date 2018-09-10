@@ -1,7 +1,7 @@
 ---
 title: Azure-SDK für Python
 description: Mit dem Azure SDK für Python können Microsoft Azure-Dienste von Python-Anwendungen genutzt werden, die auf beliebigen Plattformen ausgeführt werden.
-ms.date: 01/22/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 58e7f6cd46293573f17c344ffba943d99b55f830
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031471"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341237"
 ---
 # <a name="azure-sdk-for-python"></a>Azure-SDK für Python
 
@@ -47,7 +47,7 @@ Das [Python Developer Center](http://azure.microsoft.com/develop/python/) umfass
 - [Warteschlangenspeicher](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Service Bus-Warteschlangen](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-- [Service Bus-Themen/-Abonnements](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Service Bus-Themen und -Abonnements](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Dienstverwaltung](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Bei öffentlichen APIs ohne Dokumentation sind die Komponententests im [GitHub-Repository für das SDK](https://github.com/Azure/azure-sdk-for-python) eine gute Informationsquelle:
@@ -55,7 +55,6 @@ Bei öffentlichen APIs ohne Dokumentation sind die Komponententests im [GitHub-R
 - [Komponententests für Speicher](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Komponententests für Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [Komponententests für die Dienstverwaltung](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Komponententests für die Ressourcenverwaltung](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Unterstützung
 

@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066937"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251561"
 ---
 # <a name="import-an-xcode-project"></a>Importieren eines XCode-Projekts
 Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfasst die Unterstützung für das Verschieben von XCode-Projekten in Visual Studio, in dem Sie plattformübergreifende Bibliotheken erstellen und den Code mit anderen Projekten nutzen können. Der „Aus XCode importieren“-Assistent vereinfacht den Prozess des Importierens von Projekten und des Aufteilens des C++-Codes auf Ihre XCode-Ziele, um diese als eine statische Bibliothek oder ein freigegebenes Codeprojekt zu verwenden. Sie können Ihren iOS-spezifischen Code in Visual Studio verwalten und trotzdem XCode verwenden, um Storyboards und Builds auszuführen. Informationen darüber, wie Sie einfach Code zwischen Visual Studio und XCode verschieben können, finden Sie unter „Änderungen zwischen XCode und Visual Studio“.  
   
-## <a name="using-the-import-from-xcode-wizard"></a>Verwenden des „Aus XCode importieren“-Assistenten  
+## <a name="use-the-import-from-xcode-wizard"></a>Verwenden des Assistenten zum Importieren aus XCode  
  Hier erfahren Sie, wie Sie ein XCode-Projekt in Visual Studio verschieben, um von Codefreigaben und plattformübergreifende Lösungen zu profitieren. Als Vorbereitungsmaßnahme müssen Sie Ihren Mac mit Visual Studio koppeln, um Ihr Projekt importieren, exportieren und erstellen zu können. Ausführliche Anweisungen zur Kopplung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Außerdem müssen Sie Ihr XCode-Projekt über das Netzwerk freigeben oder es auf Ihren Computer, auf dem Visual Studio installiert ist, verschieben, um den „Aus XCode importieren“-Assistenten zu verwenden.  
   
 #### <a name="import-from-xcode"></a>Importieren aus XCode  
@@ -29,7 +29,7 @@ Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfass
   
      ![Auswählen des zu importierenden XCode-Zielprojekts](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  Wählen Sie im Bereich **Ein Projekt auswählen** die Schaltfläche „Browser“ aus, um eine XCode PBXPROJ-Datei auszuwählen. Navigieren Sie zu der Projektdatei im Dialogfeld **XCode-Projektdatei auswählen**, und wählen Sie anschließend **Öffnen** aus.  
+2.  Klicken Sie im Bereich **Projekt auswählen** auf die Schaltfläche „Durchsuchen“, um eine XCode *PBXPROJ*-Datei auszuwählen. Navigieren Sie zu der Projektdatei im Dialogfeld **XCode-Projektdatei auswählen**, und wählen Sie anschließend **Öffnen** aus.  
   
      ![Auswählen einer Projektdatei im Dialogfeld „XCode-Projektdatei auswählen“](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -59,7 +59,7 @@ Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfass
   
      Klicken Sie auf **Weiter** , um fortzufahren.  
   
-6.  Der Bereich **Frameworks** wird verwendet, um die von Visual Studio zum Durchsuchen verwendeten Pfade und IntelliSense für Ihr Projekt zu konfigurieren. Die Pfade müssen für Visual Studio für jedes Framework zugänglich sein, auf das Ihr XCode-Projekt verweist. Der Assistent überprüft die Frameworkverweise in den XCode-Projekten und zeigt an, ob Visual Studio das Framework finden kann. Jeder Pfad, den Sie bereits in den globalen Eigenschaften eingerichtet haben, sollte von Visual Studio erkannt werden. Die Ausnahmen werden in der Liste der Frameworks aufgeführt. Stellen Sie für jedes aufgelistete Framework mit einem X einen vom PC zugänglichen Pfad für Visual Studio bereit, um das Framework zu finden. Sie können die Schaltfläche zum Durchsuchen „[...]“, verwenden, um das Dialogfeld **Ordner auswählen** zum Suchen des Pfads zu nutzen. Der Frameworkpfad kann entweder auf eine lokale Kopie oder eine Freigabe verweisen, auf die über das Netzwerk auf Ihrem Mac zugegriffen werden kann.  
+6.  Der Bereich **Frameworks** wird verwendet, um die von Visual Studio zum Durchsuchen verwendeten Pfade und IntelliSense für Ihr Projekt zu konfigurieren. Die Pfade müssen für Visual Studio für jedes Framework zugänglich sein, auf das Ihr XCode-Projekt verweist. Der Assistent überprüft die Frameworkverweise in den XCode-Projekten und zeigt an, ob Visual Studio das Framework finden kann. Jeder Pfad, den Sie bereits in den globalen Eigenschaften eingerichtet haben, sollte von Visual Studio erkannt werden. Die Ausnahmen werden in der Liste der Frameworks aufgeführt. Stellen Sie für jedes aufgelistete Framework mit einem X einen vom PC zugänglichen Pfad für Visual Studio bereit, um das Framework zu finden. Sie können die Schaltfläche „Durchsuchen“ (**...**) verwenden, um das Dialogfeld **Ordner auswählen** zum Suchen des Pfads zu nutzen. Der Frameworkpfad kann entweder auf eine lokale Kopie oder eine Freigabe verweisen, auf die über das Netzwerk auf Ihrem Mac zugegriffen werden kann.  
   
      ![„Framework“-Bereich „Aus XCode importieren“ ](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
@@ -67,11 +67,11 @@ Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfass
   
 7.  Der Bereich **Projekteinstellungen** erlaubt es Ihnen, das Framework zu ändern, und beinhaltet Einstellungen für den Suchpfad für Header für jedes Projekt, das der Assistent erstellt. Verwenden Sie diesen Bereich, um projektspezifische Pfade, die sich von den globalen Einstellungen unterscheiden, festzulegen.  
   
-     Um einen Pfad für ein bestimmtes Projekt festzulegen, wählen Sie im Dropdownmenü **Zielprojekt** die Projektdatei aus, legen Sie anschließend die Werte in den Steuerelementen **Framework-Suchpfad** und **Suchpfad für Header einbeziehen** fest. Sie können die Schaltfläche zum Durchsuchen „[...]“ neben jedem Steuerelement verwenden, um das Dialogfeld **Ordner auswählen** zum Suchen des Pfads zu nutzen.  
+     Um einen Pfad für ein bestimmtes Projekt festzulegen, wählen Sie im Dropdownmenü **Zielprojekt** die Projektdatei aus, legen Sie anschließend die Werte in den Steuerelementen **Framework-Suchpfad** und **Suchpfad für Header einbeziehen** fest. Sie können die Schaltfläche „Durchsuchen“ (**...**) neben jedem Steuerelement verwenden, um das Dialogfeld **Ordner auswählen** zum Suchen des Pfads zu nutzen.  
   
      ![Bereich „Importieren aus XCode-Projekten“](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
-     Wenn dieser PC in Visual Studio keinem remoten Mac-Computer zugeordnet wurde, wird der Link „Remotecomputer konfigurieren“ angezeigt. Ausführliche Anweisungen zur Kopplung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+     Wenn dieser PC in Visual Studio keinem Mac-Remotecomputer zugeordnet wurde, wird der Link **Remotecomputer konfigurieren** angezeigt. Ausführliche Anweisungen zur Kopplung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
      Wählen Sie **Importieren** aus, um das XCode-Projekt mithilfe der Einstellungen des Assistenten zu importieren.  
   

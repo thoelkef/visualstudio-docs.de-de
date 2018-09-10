@@ -9,28 +9,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8cc48c70cd6fe8bd45ed65b96732d3db31a386e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953520"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567076"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
-Sie können Ihre domänenspezifische Sprache (DSL) mit Managed Extensibility Framework (MEF) erweitern. Sie oder andere Entwickler werden können zum Schreiben von Erweiterungen für die DSL ohne Änderung der DSL-Definition und Programmcode. Diese Erweiterungen umfassen Menübefehle, Drag & Drop-Handler und Überprüfung. Benutzer werden zum Installieren der DSL, und klicken Sie dann optional Erweiterungen dafür können.
 
- Darüber hinaus beim Sie MEF in der DSL aktivieren, kann es einige der Funktionen von der DSL Schreiben einfacher sein, auch wenn sie alle zusammen mit der DSL erstellt werden.
+Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Managed Extensibility Framework (MEF). Sie oder andere Entwickler werden Erweiterungen für die DSL zu schreiben, ohne die DSL-Definition und die Programm-Codes zu ändern. Diese Erweiterungen umfassen Befehle des Menüs, Drag & Drop-Handler und Validierung. Benutzer werden zum Installieren Ihrer DSL, und klicken Sie dann optional Erweiterungen dafür.
 
- Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+Darüber hinaus beim Sie MEF in Ihrer DSL aktivieren, kann es einfacher für Sie einige der Features Ihrer DSL, geschrieben sein, auch wenn sie alle zusammen mit der DSL erstellt werden.
 
-### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Zum Aktivieren der DSL von MEF erweitert werden
+Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-1.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **DslPackage** Projekt. Die folgenden Dateien hinzufügen:
+### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>So aktivieren Sie Ihre DSL von MEF erweitert werden
+
+1.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **DslPackage** Projekt. Fügen Sie die folgenden Dateien hinzu:
 
      Dateiname: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    >  Legen Sie die GUID in dieser Datei mit der der GUID-CommandSetId identisch sein, die in DslPackage\GeneratedCode\Constants.tt definiert ist
+    > Legen Sie die GUID in diese Datei, um die GUID CommandSetId identisch sein, die in DslPackage\GeneratedCode\Constants.tt definiert ist
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -43,37 +44,37 @@ Sie können Ihre domänenspezifische Sprache (DSL) mit Managed Extensibility Fra
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-     Dateiname: `CommandExtensionRegistrar.tt`
+    Dateiname: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-     Dateiname: `ValidationExtensionEnablement.tt`
+    Dateiname: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-     Dateiname: `ValidationExtensionRegistrar.tt`
+    Dateiname: `ValidationExtensionRegistrar.tt`
 
-     Wenn Sie diese Datei hinzufügen, müssen Sie Überprüfung in der DSL aktivieren, mit mindestens einer der Schalter in **EditorValidation** im Explorer für DSL.
+    Wenn Sie diese Datei hinzufügen, müssen Sie Überprüfung in Ihrer DSL aktivieren, mit mindestens einer der Schalter in **EditorValidation** im DSL-Explorer.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-     Dateiname: `PackageExtensionEnablement.tt`
+    Dateiname: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **Dsl** Projekt. Die folgenden Dateien hinzufügen:
+2.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **Dsl** Projekt. Fügen Sie die folgenden Dateien hinzu:
 
      Dateiname: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -82,58 +83,59 @@ Sie können Ihre domänenspezifische Sprache (DSL) mit Managed Extensibility Fra
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-     Dateiname: `GestureExtensionEnablement.tt`
+    Dateiname: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-     Dateiname: `GestureExtensionController.tt`
+    Dateiname: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Fügen Sie die folgende Zeile an die vorhandene Datei mit dem Namen **DslPackage\Commands.vsct**:
+3.  Fügen Sie die folgende Zeile an die vorhandene Datei mit dem Namen **Dslpackage\commands**:
 
-    ```
+    ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-     Fügen Sie die Zeile nach den vorhandenen `<Include>` Richtlinie.
+    Fügen Sie die Zeile hinter der vorhandenen `<Include>` Richtlinie.
 
-4.  `Open DslDefinition.dsl.`
+4.  Open *"DslDefinition.DSL"*.
 
-5.  Wählen Sie im Explorer für DSL **Editor\Validation**.
+5.  Wählen Sie im DSL-Explorer **editor\validierung**.
 
-6.  Stellen Sie sicher, dass mindestens eine der Eigenschaften mit dem Namen im Fenster Eigenschaften **verwendet...**  ist `true`.
+6.  Stellen Sie im Eigenschaftenfenster sicher, dass mindestens eine der Eigenschaften mit dem Namen **verwendet** ist `true`.
 
-7.  Klicken Sie auf der Symbolleiste Projektmappen-Explorer auf **alle Vorlagen transformieren**.
+7.  In der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
 
-     Untergeordnete Dateien werden unterhalb der einzelnen Dateien, die Sie hinzugefügt.
+     Untergeordnete Dateien, die unterhalb der einzelnen Dateien, die Sie hinzugefügt werden angezeigt.
 
-8.  Erstellen Sie und führen Sie die Projektmappe, um sicherzustellen, dass es weiterhin ausgeführt wird.
+8.  Erstellen Sie und führen Sie die Projektmappe, um sicherzustellen, dass sie weiterhin funktioniert.
 
- Der DSL ist jetzt mit dem MEF-aktiviert. Sie können Menübefehle, Gesten Handler und validierungseinschränkungen als MEF-Erweiterungen schreiben. Sie können diese Erweiterungen in der Projektmappe DSL zusammen mit anderen benutzerdefinierten Code schreiben. Darüber hinaus Sie oder andere Entwickler können schreiben separate [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen, die der DSL zu erweitern.
+Ihre DSL ist jetzt die MEF-aktiviert. Sie können Menübefehle, Gesten Handler und validierungseinschränkungen als MEF-Erweiterungen schreiben. Sie können diese Erweiterungen in der DSL-Projektmappe zusammen mit anderem benutzerdefinierten Code schreiben. Darüber hinaus können Sie oder andere Entwickler separate Visual Studio-Erweiterungen schreiben, die Ihre DSL zu erweitern.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Erstellen eine Erweiterung für eine MEF-fähigen DSL
- Wenn Sie Zugriff auf eine MEF-fähigen DSL von sich selbst oder eine andere Person erstellt haben, können Sie Erweiterungen dafür schreiben. Die Erweiterungen können verwendet werden, um Menübefehle, Gesten-Handler oder validierungseinschränkungen hinzuzufügen. Um diese Erweiterungen zu erstellen, verwenden Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension (VSIX)-Lösung. Die Lösung besteht aus zwei Teilen: einem Klassenbibliotheksprojekt, in dem die Codeassembly erstellt und ein VSIX-Projekt, die die Assembly verpackt.
+## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Erstellen einer Erweiterung für eine DSL mit MEF-aktiviert
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>So erstellen eine DSL-Erweiterung VSIX
+Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine andere Person erstellt haben, können Sie Erweiterungen dafür schreiben. Die Erweiterungen können verwendet werden, um Menübefehle, Gesten-Handler oder validierungseinschränkungen hinzuzufügen. Um diese Erweiterungen zu erstellen, verwenden Sie Visual Studio-Erweiterung (VSIX)-Projektmappe. Die Lösung besteht aus zwei Teilen: einem Klassenbibliotheksprojekt, das die Code-Assembly erstellt, und ein VSIX-Projekt, mit der die Assembly verpackt.
 
-1.  Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **-Klassenbibliothek**.
+#### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
 
-2.  Fügen Sie in das neue Klassenbibliotheksprojekt einen Verweis auf die Assembly der DSL.
+1.  Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **Klassenbibliothek**.
+
+2.  Fügen Sie einen Verweis auf die Assembly der DSL, in das neue Klassenbibliotheksprojekt.
 
     -   Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
 
-    -   Wenn Sie das Projekt DSL können zugreifen, finden Sie die Assemblydatei unter dem Verzeichnis **Dsl\bin\\\***
+    -   Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\***
 
-    -   Wenn Sie Zugriff auf die DSL VSIX-Datei haben, finden Sie die Assembly, durch die Dateinamenerweiterung der VSIX-Datei in ".zip" ändern. Dekomprimieren Sie die ZIP-Datei.
+    -   Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.
 
-3.  Fügen Sie Verweise auf die folgenden .NET Assemblys hinzu:
+3.  Fügen Sie Verweise auf die folgenden .NET-Assemblys hinzu:
 
     -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
@@ -145,39 +147,41 @@ Sie können Ihre domänenspezifische Sprache (DSL) mit Managed Extensibility Fra
 
     -   System.Windows.Forms.dll
 
-4.  Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann  **VSIX-Projekt**.
+4.  Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.
 
-5.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
+5.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
 
 6.  Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
 
-7.  Klicken Sie auf **Inhalte hinzufügen**. Klicken Sie im Dialogfeld festlegen **Inhaltstyp** auf **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt.
+7.  Klicken Sie auf **fügen Inhalt hinzu,**. Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.
 
 8.  Fügen Sie ein VSIX-Verweis auf die DSL hinzu.
 
     1.  In **"Source.Extension.vsixmanifest"**, klicken Sie auf **Verweis hinzufügen**
 
-    2.  Klicken Sie im Dialogfeld auf **hinzufügen Nutzlast** und suchen Sie die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Lösung erstellt, in **DslPackage\bin\\\***.
+    2.  Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in **DslPackage\bin\\\***.
 
-         Dadurch können Benutzer, die zur gleichen Zeit der DSL und die Erweiterung zu installieren. Wenn der Benutzer bereits mit der DSL installiert hat, wird nur die Erweiterung installiert.
+         Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.
 
-9. Überprüfen und aktualisieren Sie die anderen Felder der **"Source.Extension.vsixmanifest"**. Klicken Sie auf **Editionen auswählen** und überprüfen Sie, ob die richtige [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editionen festgelegt sind.
+9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"**. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass die richtigen Versionen von Visual Studio festgelegt werden.
 
-10. Fügen Sie Code, auf das Klassenbibliotheksprojekt. Im Beispiel im nächsten Abschnitt als Leitfaden verwendet.
+10. Fügen Sie Code hinzu, um das Klassenbibliotheksprojekt hinzu. Verwenden Sie die Beispiele im nächsten Abschnitt als Leitfaden.
 
-     Sie können eine beliebige Anzahl von Befehlen, Gesten und Validierungsklassen hinzufügen.
+     Sie können eine beliebige Anzahl von Befehls-, Gesten- und Validierungsklassen hinzufügen.
 
-11. Um die Erweiterung zu testen, drücken Sie die **F5**. In der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erstellen oder öffnen Sie eine Beispieldatei der DSL.
+11. Um die Erweiterung zu testen, indem Sie **F5**. Klicken Sie in der experimentellen Instanz von Visual Studio erstellen Sie, oder öffnen Sie eine Beispieldatei der DSL.
 
-## <a name="writing-mef-extensions-for-dsls"></a>Schreiben von MEF-Erweiterungen für konzentriert
- Sie können Erweiterungen in das Projekt von einer separaten DSL-Erweiterungsprojektmappe Assembly-Code schreiben. Sie können auch als eine einfache Möglichkeit zum Schreiben von Befehlen, Gesten und Validierungscode als Teil der DSL MEF in Ihrem Projekt DslPackage verwenden.
+## <a name="writing-mef-extensions-for-dsls"></a>Schreiben von MEF-Erweiterungen für DSLs
+
+Sie können Erweiterungen in das Codeprojekt der Assembly von einer separaten Projektmappe der DSL-Erweiterung schreiben. Sie können auch als einfache Möglichkeit zum Schreiben von Befehlen, Gesten und Validierungscode als Teil der DSL MEF im DslPackage-Projekt verwenden.
 
 ### <a name="menu-commands"></a>Menübefehle
- Um einen Menübefehl zu schreiben, definieren Sie eine Klasse, die implementiert <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> und die Klasse mit dem Attribut, das in der DSL, die mit dem Namen definiert Präfixlänge *YourDsl*`CommandExtension`. Sie können mehrere Menübefehlsklasse schreiben.
 
- `QueryStatus()` wird aufgerufen, wenn der Benutzer auf das Diagramm klickt. Er sollte die aktuelle Auswahl überprüfen und `command.Enabled` , um anzugeben, wenn der Befehl anwendbar ist.
+Um einen Menübefehl schreiben zu können, definieren Sie eine Klasse, die implementiert <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> und die Klasse mit dem Attribut, das in Ihrer DSL, die mit dem Namen definiert ist-Präfix *Ihredsl*`CommandExtension`. Sie können mehrere Menübefehlsklasse schreiben.
 
-```
+`QueryStatus()` wird aufgerufen, wenn der Benutzer das Diagramm klickt. Er sollte die aktuelle Auswahl überprüfen und `command.Enabled` , um anzugeben, wenn der Befehl gilt.
+
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl; // My DSL
@@ -239,16 +243,15 @@ namespace MyMefExtension
     }
   }
 }
-
 ```
 
 ### <a name="gesture-handlers"></a>Gestenhandler
- Objekte, die von jedem beliebigen Standort, auf das Diagramm gezogen innerhalb oder außerhalb ein gestenhandlers behandeln kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das folgende Beispiel ermöglicht den Benutzer Dateien aus Windows-Explorer auf das Diagramm zu ziehen. Elemente, die Dateinamen enthalten, erstellt.
 
- Sie können Handler für den Umgang mit zieht aus anderen DSL und UML-Modelle erstellen. Weitere Informationen finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Ein Gestenhandler kann Verarbeiten von Objekten, die auf das Diagramm von überall innerhalb oder außerhalb von Visual Studio gezogen. Das folgende Beispiel ermöglicht den Benutzer Dateien aus dem Windows-Explorer auf das Diagramm ziehen. Es erstellt die Elemente, die die Dateinamen enthalten.
 
-```
+Sie können Ereignishandler zur Behandlung von zieht aus anderen DSL-Modelle und UML-Modellen schreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl;
@@ -316,15 +319,15 @@ namespace MefExtension
     }
   }
 }
-
 ```
 
 ### <a name="validation-constraints"></a>Validierungseinschränkungen
- Validierungsmethoden werden markiert, die `ValidationExtension` -Attribut, das generiert wird, von der DSL, und auch <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Die Methode kann in einer Klasse, die nicht von einem Attribut markiert ist, angezeigt werden.
 
- Weitere Informationen finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+Validierungsmethoden werden markiert, die `ValidationExtension` -Attribut, das generiert wird, durch die DSL, und auch durch <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Die Methode kann in jeder Klasse, die nicht von einem Attribut markiert ist, angezeigt werden.
 
-```
+Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+
+```csharp
 using Company.MyDsl;
 using Company.MyDsl.ExtensionEnablement;
 using Microsoft.VisualStudio.Modeling.Validation;
@@ -369,7 +372,6 @@ namespace MefExtension
           // Element to highlight when user double-clicks error:
           , elementToValidate);
 } } } }
-
 ```
 
 ## <a name="see-also"></a>Siehe auch

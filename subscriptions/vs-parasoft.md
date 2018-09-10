@@ -9,16 +9,16 @@ description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199361"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280558"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
-Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht verfügbarer bzw. sich weiterentwickelnder Anwendungen und Systeme.  Der Vorteil beinhaltet ein kostenloses Abonnement mit einer Laufzeit von sechs Monaten.  Am Ende Ihres sechsmonatigen Abonnements sind Sie für einen Rabatt von 25 % auf den Preis eines Jahresabonnements qualifiziert.  
+Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht verfügbarer bzw. sich weiterentwickelnder Anwendungen und Systeme.  Der Vorteil beinhaltet ein kostenloses Abonnement mit einer Laufzeit von sechs Monaten.  Am Ende Ihres sechsmonatigen Abonnements sind Sie für einen Rabatt von 25 % auf den Preis eines Jahresabonnements qualifiziert.
 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
@@ -29,20 +29,20 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 
     ![Kachel „Parasoft-Vorteil“](_img\vs-parasoft\vs-parasoft-tile.png)
 
-2.  Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**. 
+2.  Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**.
 
     ![Parasoft-Vorteil: Konto erstellen](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Sobald Sie ein Konto erstellt haben, wird Ihnen eine Benachrichtigung angezeigt, dass die Anweisungen zum Herunterladen Ihnen per E-Mail gesendet wurden.  (Denken Sie daran, Ihren Spamordner oder Junk-E-Mail-Ordner zu überprüfen, wenn die E-Mail in Ihrem Posteingang nicht angezeigt wird.)
 
-4.  Öffnen Sie die E-Mail, und kopieren Sie den **Aktivierungscode** in die Zwischenablage. 
+4.  Öffnen Sie die E-Mail, und kopieren Sie den **Aktivierungscode** in die Zwischenablage.
 
-5.  Klicken Sie auf den Link, der Ihrem Betriebssystem entspricht.  
+5.  Klicken Sie auf den Link, der Ihrem Betriebssystem entspricht.
 
     ![Parasoft-Vorteil: Begrüßungs-E-Mail](_img\vs-parasoft\vs-parasoft-email.png)
 
-6.  Je nachdem, welchen Browser Sie verwenden, können Ihnen unterschiedliche Dialogfelder angezeigt werden, über die Sie den Installer ausführen können.  In Internet Explorer wird Ihnen beispielsweise eine Liste der letzten Downloads angezeigt, bei der „parasoft_soavirt_9.10.2_win32_x86_64.exe“ ganz oben aufgeführt ist. Klicken Sie auf **Ausführen**, um den Installer zu starten. 
+6.  Je nachdem, welchen Browser Sie verwenden, können Ihnen unterschiedliche Dialogfelder angezeigt werden, über die Sie den Installer ausführen können.  In Internet Explorer wird Ihnen beispielsweise eine Liste der letzten Downloads angezeigt, bei der „parasoft_soavirt_9.10.2_win32_x86_64.exe“ ganz oben aufgeführt ist. Klicken Sie auf **Ausführen**, um den Installer zu starten.
 
 7.  Klicken Sie im Dialogfeld „Benutzerkontensteuerung“ auf **Ja**.
 
@@ -52,21 +52,21 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 
     ![Parasoft-Vorteil: Installation starten](_img\vs-parasoft\vs-parasoft-start-install.png)
 
-10. Klicken Sie auf **Ich stimme der Vereinbarung zu**, und klicken Sie dann auf **Weiter**. 
+10. Klicken Sie auf **Ich stimme der Vereinbarung zu**, und klicken Sie dann auf **Weiter**.
 
-11. Wählen Sie aus, wo Sie die Dateien installieren möchten, und klicken Sie auf **Weiter**. 
+11. Wählen Sie aus, wo Sie die Dateien installieren möchten, und klicken Sie auf **Weiter**.
 
-12. Anschließend können Sie auswählen, welche Komponenten Sie installieren möchten, oder alle installieren (Standardeinstellung).  Treffen Sie Ihre Auswahl, und klicken Sie auf **Weiter**.  
+12. Anschließend können Sie auswählen, welche Komponenten Sie installieren möchten, oder alle installieren (Standardeinstellung).  Treffen Sie Ihre Auswahl, und klicken Sie auf **Weiter**.
 
-13. Geben Sie an, wo die Verknüpfung für die Anwendung installiert werden soll, und klicken Sie auf **Weiter**. 
+13. Geben Sie an, wo die Verknüpfung für die Anwendung installiert werden soll, und klicken Sie auf **Weiter**.
 
-14. Das SOAtest-Webstammzertifikat der Zertifizierungsstelle ist für bestimmte Funktionstests auf HTTPS-Websites erforderlich.  Wählen Sie aus, ob Sie das Stammzertifikat der Zertifizierungsstelle installieren möchten, und klicken Sie auf **Weiter**.  
+14. Das SOAtest-Webstammzertifikat der Zertifizierungsstelle ist für bestimmte Funktionstests auf HTTPS-Websites erforderlich.  Wählen Sie aus, ob Sie das Stammzertifikat der Zertifizierungsstelle installieren möchten, und klicken Sie auf **Weiter**.
 
     ![Parasoft-Vorteil: Stammzertifikat der Zertifizierungsstelle](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
-15. Wählen Sie aus, ob während der Installation Desktop- oder Schnellstartsymbole erstellt werden sollen, und klicken Sie auf **Weiter**. 
+15. Wählen Sie aus, ob während der Installation Desktop- oder Schnellstartsymbole erstellt werden sollen, und klicken Sie auf **Weiter**.
 
-16. Bestätigen Sie die Optionen, die Sie ausgewählt haben, und klicken Sie auf **Installieren**, um mit dem Installieren der Software zu beginnen. 
+16. Bestätigen Sie die Optionen, die Sie ausgewählt haben, und klicken Sie auf **Installieren**, um mit dem Installieren der Software zu beginnen.
 
     ![Parasoft-Vorteil: Bereit für die Installation](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
@@ -75,7 +75,7 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Ja       |
+| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Ja       |
 | Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Nicht verfügbar                                                           |NA         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                                           |NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                                           |NA         |
@@ -88,7 +88,7 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Parasoft-Produkten?  Sehen Sie sich diese Ressourcen an:
-    - Technischer Support: https://www.parasoft.com/support/ 
-    - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/ 
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://www.visualstudio.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://www.visualstudio.com/support/). 
+    - Technischer Support: https://www.parasoft.com/support/
+    - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/
+-  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+-  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

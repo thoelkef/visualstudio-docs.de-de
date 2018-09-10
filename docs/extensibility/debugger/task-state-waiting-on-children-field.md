@@ -1,5 +1,5 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN Feld | Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN-Feld | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a21278ec93e066fcf818c04214a78437c66b21db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccfee9939df0f525d147b46f304c69214c22aa7f
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125504"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276685"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN-Feld
-Die Aufgabe hat die Ausführung seines Delegaten beendet und wartet implizit Abschluss angefügter untergeordneter Aufgaben.  
+Die Aufgabe der Delegat Ausführung abgeschlossen hat und wartet implizit angefügter untergeordneter Aufgaben ausführen.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"*)  
   
- Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```csharp  
 .field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
 ```  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält dieser Wert die <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält diesen Wert, der <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

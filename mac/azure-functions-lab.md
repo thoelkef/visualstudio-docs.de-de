@@ -1,18 +1,18 @@
 ---
 title: 'Tutorial: Azure Functions'
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877331"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224383"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -46,8 +46,10 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 1. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“. 
 
-     Es sind ebenfalls zwei Dateien enthalten: **host.json** für das Beschreiben von globalen Konfigurationsoptionen für den Host und **local.settings.json** für das Konfigurieren von Diensteinstellungen. 
-        Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.
+     Es gibt auch drei Dateien:  
+        - **host.json** zum Beschreiben der globalen Konfigurationsoptionen für den Host  
+        - **local.settings.json** zum Konfigurieren der Serviceeinstellungen.  
+        - Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.  
 
     Öffnen Sie **local.settings.json**. Diese Datei weist standardmäßig zwei leere Einstellungen für Verbindungszeichenfolgen auf.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269189"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078926"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML, im Code oder mit dem XAML-Designer hinzufügen. Dieses Thema beschreibt, wie Elemente im XAML-Designer in Visual Studio oder in Blend für Visual Studio verwendet werden.
@@ -29,7 +29,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 -   Führen Sie im XAML-Designer eine der folgenden Aktionen aus:
 
-    -   Doppelklicken Sie auf ein Element in der **Toolbox** (oder wählen Sie ein Element in der Toolbox aus, und drücken Sie die EINGABETASTE).
+    -   Doppelklicken Sie auf ein Element in der **Toolbox** (oder wählen Sie ein Element in der Toolbox aus, und drücken Sie die **EINGABETASTE**).
 
     -   Ziehen Sie ein Element aus der **Toolbox** auf die Zeichenfläche.
 
@@ -63,7 +63,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>So richten Sie zwei oder mehr Elemente mithilfe der Menübefehle aus
 
-1.  Wählen Sie die Elemente aus, die Sie ausrichten möchten. Sie können mehr als ein Element auswählen, indem Sie die STRG-Taste gedrückt halten, während Sie die Elemente auswählen.
+1.  Wählen Sie die Elemente aus, die Sie ausrichten möchten. Sie können mehr als ein Element auswählen, indem Sie die **STRG-TASTE** gedrückt halten, während Sie die Elemente auswählen.
 
 2.  Wählen Sie eine der folgenden Eigenschaften unter **Horizontale Ausrichtung** im **Layout**-Abschnitt des Eigenschaftenfensters aus: **Links**, **Mitte**, **Rechts** oder **Strecken**.
 
@@ -100,7 +100,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>So gruppieren Sie Elemente in einem neuen Layoutcontainer
 
-1.  Wählen Sie die zu gruppierenden Elemente aus. (Um mehrere Elemente auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie auf die Elemente klicken.)
+1.  Wählen Sie die zu gruppierenden Elemente aus. (Um mehrere Elemente auszuwählen, halten Sie die **STRG-TASTE** gedrückt, während Sie auf die Elemente klicken.)
 
 2.  Klicken Sie mit der rechten Maustaste auf die ausgewählten Elemente, zeigen Sie auf **Gruppieren in**, und klicken Sie dann auf den Typ des Layoutcontainers, in dem die Gruppe platziert werden soll.
 
@@ -118,7 +118,7 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 #### <a name="to-reset-the-element-layout"></a>So setzen Sie das Elementlayout zurück
 
--   Klicken Sie im Dokumentgliederungsfenster oder auf der Zeichenfläche mit der rechten Maustaste auf das Element, und wählen Sie **Layout**, **Zurücksetzen** *Eigenschaftsname* aus, wobei *Eigenschaftsname* die Eigenschaft ist, die Sie zurücksetzen möchten (oder wählen Sie **Layout**, **Alle zurücksetzen** aus, um alle Layouteigenschaften für das Element zurückzusetzen).
+-   Klicken Sie im Dokumentgliederungsfenster oder auf der Zeichenfläche mit der rechten Maustaste auf das Element, und wählen Sie **Layout** > ***Eigenschaftsname* zurücksetzen** aus, wobei *Eigenschaftsname* die Eigenschaft ist, die Sie zurücksetzen möchten (oder wählen Sie **Layout** > **Alle zurücksetzen** aus, um alle Layouteigenschaften für das Element zurückzusetzen).
 
 ## <a name="see-also"></a>Siehe auch
 

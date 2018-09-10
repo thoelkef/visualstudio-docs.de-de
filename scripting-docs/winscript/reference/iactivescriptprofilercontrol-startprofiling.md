@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
+title: IActiveScriptProfilerControl::StartProfiling | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724870"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281714"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Mit der profilerstellung auf das Skriptmodul beginnt. Das Skriptmodul erstellt eine Instanz des Objekts Profiler von einem Aufruf an [CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec).  
+Startet die profilerstellung auf die Skript-Engine. Die Skript-Engine erstellt eine Instanz des Profiler-Objekts, indem einen Aufruf von [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parameter  
  `clsidProfilerObject`  
- [in] Klassenbezeichner (CLSID) des Objekts Profiler erstellt werden soll.  
+ [in] Klassen Sie-ID (CLSID) des Profiler-Objekts erstellt werden.  
   
  `dwEventMask`  
- [in] Eine 4-Byte-Bitmaske, die die Ereignistypen angibt. Die Bits sind in definierten [PROFILER_EVENT_MASK-Enumeration](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Eine 4-Byte-Bitmaske, die die Ereignistypen angibt. Die Bits sind definiert, [PROFILER_EVENT_MASK-Enumeration](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
  [in] Ein 4-Byte-Wert, der mit dem Profilerobjekt übergeben wird.  

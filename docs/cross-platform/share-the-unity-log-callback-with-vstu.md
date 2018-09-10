@@ -1,7 +1,7 @@
 ---
 title: Freigeben des Unity-Protokollrückrufs für VSTU | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 31fa20bd4fd5a28e705198f9112e309e627871cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bf25ed2764078f2d3e0424ab34f4e4a8e470ff5
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060004"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310019"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Freigeben des Unity-Protokollrückrufs für VSTU
 Visual Studio-Tools für Unity registrieren einen Protokollrückruf bei Unity, damit dessen Konsole in Visual Studio gestreamt werden kann. Wenn Ihre Editorskripts auch einen Protokollrückruf bei Unity registrieren, kann der VSTU-Rückruf Ihren Rückruf stören. Um dies zu verhindern, verwenden Sie das Ereignis `VisualStudioIntegration.LogCallback` für die Zusammenarbeit mit VSTU.
@@ -26,6 +26,7 @@ Visual Studio-Tools für Unity registrieren einen Protokollrückruf bei Unity, d
 ## <a name="example"></a>Beispiel
 
 ```csharp
+#if ENABLE_VSTU
 using System;
 
 using UnityEngine;
@@ -44,7 +45,8 @@ public class LogCallbackHook
         };
     }
 }
+#endif
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Beispiel: Erstellung der Projektdatei](../cross-platform/customize-project-files-created-by-vstu.md)
+ [Beispiel: Erstellen der Projektdatei](../cross-platform/customize-project-files-created-by-vstu.md)

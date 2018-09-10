@@ -12,25 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6f3c17a388aa974b78fdecc108891cf3be17c0da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 033eaa4a946ac344ac0cbc13e0f8da64dd914b92
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954746"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567102"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, damit Benutzer für die DSL typische Aufgaben ausführen können. Die Befehle werden im Kontextmenü angezeigt, wenn Benutzer mit der rechten Maustaste auf das Diagramm klicken. Sie können einen Befehl so definieren, dass er nur unter bestimmten Bedingungen im Menü angezeigt wird. Sie können beispielsweise angeben, dass der Befehl nur sichtbar ist, wenn der Benutzer auf bestimmte Typen von Elementen oder auf Elemente in bestimmten Zuständen klickt.
 
  Zusammenfassend werden die Schritte im Paket "DslPackage" wie folgt ausgeführt:
 
-1.  [Deklarieren Sie den Befehl in Commands.vsct](#VSCT)
+1.  [Deklarieren des Befehls in Commands.vsct](#VSCT)
 
-2.  [Aktualisieren Sie die Versionsnummer des Pakets in Package.tt](#version). Dies müssen Sie nach jeder Änderung von Commands.vsct tun.
+2.  [Aktualisieren Sie die paketversionsnummer in Package.tt](#version). Dies müssen Sie nach jeder Änderung von Commands.vsct tun.
 
-3.  [Schreiben von Methoden in der Klasse CommandSet](#CommandSet) um den Befehl sichtbar zu machen und definieren Sie den Befehl zum führen sollen.
+3.  [Schreiben von Methoden in der CommandSet-Klasse](#CommandSet) um den Befehl sichtbar zu machen und was soll der Befehl, um zu definieren.
 
- Beispiele finden Sie in der [Visualization and Modeling SDK Website](http://go.microsoft.com/fwlink/?LinkID=185579).
+ Beispiele finden Sie in der [Visualisierungs- und Modellierungs-SDK-Website](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 >  Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -48,22 +48,22 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
 4.  Sie möchten nur einen einzelnen Befehl definieren.
 
- In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern der DSL mithilfe des MEF erstellte](../modeling/extend-your-dsl-by-using-mef.md).
+ In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-##  <a name="VSCT"></a> Deklarieren Sie den Befehl in Commands.Vsct
+##  <a name="VSCT"></a> Deklarieren des Befehls in Commands.Vsct
  Menübefehle werden in "DslPackage\Commands.vsct" deklariert. Diese Definitionen definieren die Bezeichnungen der Menüelemente und ihre Position in den Menüs.
 
- Die Datei, die Sie bearbeiten, Commands.vsct, importiert die Definitionen von mehreren h-Dateien, die sich im Verzeichnis befinden *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc. Es enthält auch die Datei "GeneratedVsct.vsct", die aus Ihrer DSL-Definition generiert wird.
+ Die Datei, die Sie bearbeiten, Commands.vsct, importiert Definitionen aus verschiedenen h-Dateien, die sich im Verzeichnis befinden *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc. Es enthält auch die Datei "GeneratedVsct.vsct", die aus Ihrer DSL-Definition generiert wird.
 
- Weitere Informationen zu VSCT-Dateien finden Sie unter [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Weitere Informationen zu VSCT-Dateien, finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 #### <a name="to-add-the-command"></a>So fügen Sie den Befehl hinzu
 
 1.  In **Projektmappen-Explorer**unter der **DslPackage** Projekt, öffnen Sie Commands.vsct.
 
-2.  Definieren Sie im `Commands`-Element mindestens eine Schaltfläche und eine Gruppe. Ein *Schaltfläche* ist ein Element auf das Menü. Ein *Gruppe* ist ein Abschnitt im Menü. Fügen Sie folgende Elemente hinzu, um diese Objekte zu definieren:
+2.  Definieren Sie im `Commands`-Element mindestens eine Schaltfläche und eine Gruppe. Ein *Schaltfläche* ist ein Element im Menü. Ein *Gruppe* ist ein Abschnitt im Menü. Fügen Sie folgende Elemente hinzu, um diese Objekte zu definieren:
 
-    ```
+    ```xml
     <!-- Define a group - a section in the menu -->
     <Groups>
       <Group guid="guidCustomMenuCmdSet" id="grpidMyMenuGroup" priority="0x0100">
@@ -88,13 +88,13 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
     ```
 
     > [!NOTE]
-    >  Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Die GUID-Namen und die ID-Namen werden in der tatsächlichen GUIDs und numerischen IDs in übersetzt die `<Symbols>` Knoten.
+    >  Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Der GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im übersetzt die `<Symbols>` Knoten.
 
-3.  Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md).
+3.  Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md).
 
      Fügen Sie hierzu im `CommandTable`-Element nach dem `Commands`-Element die folgenden Elemente hinzu.
 
-    ```
+    ```xml
     <VisibilityConstraints>
       <!-- Ensures the command is only loaded for this DSL -->
       <VisibilityItem guid="guidCustomMenuCmdSet" id="cmdidMyContextMenuCommand"
@@ -104,7 +104,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
 4.  Definieren Sie die Namen, die Sie für die GUIDs und IDs verwendet haben. Fügen Sie hierzu im `Symbols`-Element nach dem `CommandTable`-Element ein `Commands`-Element hinzu.
 
-    ```
+    ```xml
     <Symbols>
       <!-- Substitute a unique GUID for the placeholder: -->
       <GuidSymbol name="guidCustomMenuCmdSet"
@@ -130,14 +130,14 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
     -   `My Context Menu Command`
 
-##  <a name="version"></a> Aktualisiert die Paketversion in Package.tt
+##  <a name="version"></a> Aktualisieren der Paketversion in Package.tt
  Immer wenn Sie einen Befehl hinzufügen oder ändern, müssen Sie den `version`-Parameter des Attributs <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> aktualisieren, das auf die Paketklasse angewendet wird, bevor Sie die neue Version der domänenspezifischen Sprache veröffentlichen.
 
  Da die Paketklasse in einer generierten Datei definiert wird, müssen Sie das Attribut in der Textvorlagendatei aktualisieren, aus der die Datei Package.cs generiert wird.
 
 #### <a name="to-update-the-packagett-file"></a>So aktualisieren Sie die Datei Package.tt
 
-1.  In **Projektmappen-Explorer**in der **DslPackage** in-Projekt die **GeneratedCode** Ordner, öffnen Sie die Datei Package.tt.
+1.  In **Projektmappen-Explorer**in die **DslPackage** in-Projekt die **GeneratedCode** Ordner, öffnen Sie die Datei "Package.tt".
 
 2.  Suchen Sie das `ProvideMenuResource`-Attribut.
 
@@ -145,8 +145,8 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-##  <a name="CommandSet"></a> Hiermit wird das Verhalten des Befehls
- Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel  *\<YourDslName >*`CommandSet`. Überprüfen Sie am besten zunächst den Namen der Klasse und ihren Inhalt.
+##  <a name="CommandSet"></a> Definieren des Verhaltens des Befehls
+ Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist üblicherweise  *\<Ihrdslname >*`CommandSet`. Überprüfen Sie am besten zunächst den Namen der Klasse und ihren Inhalt.
 
  Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.
 
@@ -166,12 +166,12 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Hinweis** , wenn Sie die Klassenvorlage verwendet, um die neue Datei erstellen, müssen Sie den Namespace und den Klassennamen korrigieren.
+     **Beachten Sie** , wenn Sie die Klassenvorlage verwendet, um die neue Datei erstellen, müssen Sie korrigieren, sowohl den Namespace und den Namen der Klasse.
 
 ### <a name="extend-the-command-set-class"></a>Erweitern der Befehlssatzklasse
  Ihr Befehlssatzcode muss in der Regel folgende Namespaces importieren:
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -183,7 +183,7 @@ using Microsoft.VisualStudio.Modeling.Shell;
 
  Passen Sie den Namespace und den Klassennamen an, sodass sie mit denen in der generierten Datei CommandSet.cs übereinstimmen:
 
-```
+```csharp
 namespace Company.Language1 /* Make sure this is correct */
 {
   // Same class as the generated class.
@@ -198,7 +198,7 @@ namespace Company.Language1 /* Make sure this is correct */
 
  Im Beispiel ist der Befehl nur sichtbar, wenn der Benutzer einen bestimmten Formtyp ausgewählt hat. Und er wird nur aktiviert, wenn sich mindestens eines der ausgewählten Elemente in einem bestimmten Zustand befindet. Das Beispiel basiert auf der Vorlage "Klassendiagramm-DSL", und ClassShape und ModelClass sind in der DSL definierte Typen:
 
-```
+```csharp
 private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 {
   MenuCommand command = sender as MenuCommand;
@@ -244,7 +244,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Im Beispiel sind `ClassShape`, `ModelClass` und `Comment` Typen, die in der DSL definiert sind, die von der Klassendiagramm-DSL-Vorlage abgeleitet ist.
 
-```
+```csharp
 private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 {
   MenuCommand command = sender as MenuCommand;
@@ -281,26 +281,26 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Weitere Informationen zur Verwendung von Objekt zu Objekt im Modell zu navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Weitere Informationen dazu, wie Sie von einem Objekt zu einem anderen Objekt im Modell navigieren, und klicken Sie zum Erstellen von Objekten und Links finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Registrieren des Befehls
  Wiederholen Sie in C# die Deklarationen der GUID- und ID-Werte, die Sie im Abschnitt "Symbols" von CommandSet.vsct ausgeführt haben:
 
-```
+```csharp
 private Guid guidCustomMenuCmdSet =
     new Guid("00000000-0000-0000-0000-000000000000");
 private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- Verwenden Sie den gleichen GUID-Wert, wie in eingefügten **Commands.vsct**.
+ Verwenden Sie denselben GUID-Wert, wie Sie in eingefügt **Commands.vsct**.
 
 > [!NOTE]
 >  Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.
 
  Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmalig bei der Initialisierung des Diagramms aufgerufen:
 
-```
+```csharp
 protected override IList<MenuCommand> GetMenuCommands()
 {
   // Get the list of generated commands.
@@ -324,24 +324,24 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 1.  Auf der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
 
-2.  Drücken Sie **F5** auf die Projektmappe neu erstellen, und starten Sie das Debuggen einer domänenspezifischen Sprache in der experimentellen Build.
+2.  Drücken Sie **F5** zum Neuerstellen der Projektmappe, und starten Sie das Debuggen der domänenspezifischen Sprache im experimentellen Build.
 
 3.  Öffnen Sie im experimentellen Build ein Beispieldiagramm.
 
 4.  Klicken Sie mit der rechten Maustaste auf verschiedene Elemente im Diagramm, um zu überprüfen, ob der Befehl richtig aktiviert bzw. deaktiviert und je nach ausgewähltem Element angezeigt oder ausgeblendet wird.
 
 ## <a name="troubleshooting"></a>Problembehandlung
- **Befehl im Menü nicht angezeigt:**
+ **Der Befehl wird nicht im Menü angezeigt:**
 
--   Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Bereitstellen einer domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
+-   Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
 
 -   Stellen Sie sicher, dass Ihr experimentelles Beispiel die richtige Dateinamenerweiterung für diese DSL hat. Öffnen Sie "DslDefinition.dsl" in der Hauptinstanz von Visual Studio, um die Dateinamenerweiterung zu überprüfen. Klicken Sie dann in DSL Explorer mit der rechten Maustaste auf den Editor-Knoten, und klicken Sie auf "Eigenschaften". Untersuchen Sie im Eigenschaftenfenster die Eigenschaft "FileExtension".
 
--   Haben Sie [Erhöhen der Versionsnummer des Pakets](#version)?
+-   Haben Sie [die paketversionsnummer erhöht](#version)?
 
 -   Setzen Sie am Anfang der OnStatus-Methode einen Haltepunkt. Er sollte die Verarbeitung anhalten, wenn Sie mit der rechten Maustaste auf einen Bereich des Diagramms klicken.
 
-     **OnStatus-Methode wird nicht aufgerufen**:
+     **OnStatus-Methode wird nicht aufgerufen.**:
 
     -   Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
 
@@ -351,7 +351,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 -   Durchlaufen Sie die OnStatus-Methode schrittweise, um zu überprüfen, ob "command.Visible" und "command.Enabled" auf True festgelegt sind.
 
- **Falsche Menütext angezeigt wird, oder -Befehl angezeigt, in der falschen Stelle**:
+ **Falscher Menütext wird angezeigt, oder der Befehl erscheint, in der falschen Stelle**:
 
 -   Stellen Sie sicher, dass die Kombination von GUID und ID für diesen Befehl eindeutig ist.
 
@@ -360,7 +360,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Siehe auch
 
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Vorgehensweise: Ändern Sie einen Standardmenü-Befehl](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Vorgehensweise: ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)
 - [Beispielcode: Schaltpläne](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5b39437dc5f81b17c0bcfe27dbb7b8d99bebbc87
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953114"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380742"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 
-Sie können mithilfe von Visual Studio-Laufzeit-Textvorlagen Textzeichenfolgen in Ihrer Anwendung zur Laufzeit generieren. Der Computer, auf dem die Anwendung führt, keine damit in Visual Studio. Common Language Runtime-Vorlagen sind manchmal "vorverarbeitete Textvorlagen" bezeichnet, da zum Zeitpunkt der Kompilierung, die Vorlage Code generiert, die zur Laufzeit ausgeführt wird.
+Sie können Zeichenfolgen, die in Ihrer Anwendung zur Laufzeit mithilfe von Visual Studio-Laufzeit-Textvorlagen generieren. Der Computer, in dem die Anwendung ausgeführt wird, keine Visual Studio sein. Runtime-Vorlagen werden manchmal als "vorverarbeitete Textvorlagen" bezeichnet, weil zum Zeitpunkt der Kompilierung die Vorlage Code generiert, die zur Laufzeit ausgeführt wird.
 
-Jede Vorlage ist eine Mischung des Texts an, wie es in das generierte Zeichenfolge, und die Fragmente des Programmcodes angezeigt wird. Die Programmfragmente Geben Sie Werte für die Variablen Teile der Zeichenfolge, und auch steuern, bedingte und wiederholte Teile.
+Jede Vorlage ist eine Mischung des Texts, wie er in das generierte Zeichenfolge, und die Fragmente des Programmcodes angezeigt wird. Die Programmfragmente Geben Sie Werte für die Variablen Teile der Zeichenfolge ein, und auch steuern, bedingte und wiederholte Teile.
 
-Die folgende Vorlage konnte z. B. in einer Anwendung verwendet werden, die von einem HTML-Bericht erstellt.
+Beispielsweise könnte die folgende Vorlage in einer Anwendung verwendet werden, die einen HTML-Bericht erstellt.
 
 ```html
 <#@ template language="C#" #>
@@ -47,22 +47,22 @@ This report is Company Confidential.
 </body></html>
 ```
 
-Beachten Sie, dass die Vorlage eine HTML-Seite ist in der der Variablenteile durch Programmcode ersetzt wurden. Sie können den Entwurf einer solchen Seite beginnen, indem schreiben einen statischen Prototyp der HTML-Seite. Sie können die in der Tabelle und andere Variablenteile klicken Sie dann durch Programmcode ersetzen, die den Inhalt, bei der Variablenteile zur nächsten generiert.
+Beachten Sie, dass die Vorlage eine HTML-Seite ist in der die Variablenteile durch Programmcode ersetzt wurden. Sie können zunächst, dass den Entwurf einer solchen Seite schreiben einen statischen Prototyp der HTML-Seite. Sie können die in der Tabelle und anderen Variablen Teile klicken Sie dann mit Programmcode ersetzen, die den Inhalt, der variiert Variablenteile generiert, zur nächsten.
 
-Mithilfe einer Vorlage in Ihrer Anwendung nutzt, ist es einfacher, die endgültige Form der Ausgabe angezeigt wird, als Sie im, z. B. eine lange Reihe von Anweisungen schreiben konnte. Änderungen an der Form der Ausgabe ist einfacher und zuverlässiger.
+Mithilfe einer Vorlage in Ihrer Anwendung nutzt, ist es einfacher, das endgültige Format der Ausgabe angezeigt, als Sie beispielsweise eine lange Reihe von Write-Anweisungen in könnten. Vornehmen von Änderungen an der Form der Ausgabe ist einfacher und zuverlässiger.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Erstellen einer Laufzeit-Textvorlage in jeder Anwendung
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Erstellen in jeder Anwendung eine Laufzeit-Textvorlage
 
-### <a name="to-create-a-run-time-text-template"></a>So erstellen eine Laufzeit-Textvorlage
+### <a name="to-create-a-run-time-text-template"></a>Zum Erstellen einer Laufzeit-Textvorlage
 
-1. Wählen Sie im Projektmappen-Explorer im Kontextmenü Ihres Projekts **hinzufügen**, **neues Element**.
+1. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen** > **neues Element**.
 
-2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Laufzeittextvorlage**. (Suchen Sie in Visual Basic unter **gemeinsame Elemente** > **allgemeine**.)
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Runtimetextvorlage**. (Suchen Sie in Visual Basic unter **gemeinsame Elemente** > **allgemeine**.)
 
-3. Geben Sie einen Namen für die Vorlagendatei ein.
+3. Geben Sie einen Namen für die Vorlagendatei an.
 
     > [!NOTE]
-    > Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Daher sollten sie keine Leerzeichen oder Satzzeichen haben.
+    > Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.
 
 4. Wählen Sie **Hinzufügen** aus.
 
@@ -78,22 +78,22 @@ Mithilfe einer Vorlage in Ihrer Anwendung nutzt, ist es einfacher, die endgülti
 
 ## <a name="converting-an-existing-file-to-a-run-time-template"></a>Konvertieren einer vorhandenen Datei in einer Laufzeitvorlage
 
-Eine gute Möglichkeit zum Erstellen einer Vorlage wird eine vorhandene Beispiel der Ausgabe zu konvertieren. Wenn Ihre Anwendung HTML-Dateien erstellen, können Sie z. B. indem Sie eine einfache HTML-Datei erstellen starten. Stellen Sie sicher, dass er ordnungsgemäß funktioniert und dass seine Darstellung richtig ist. Anschließend fügen Sie ihn in das Visual Studio-Projekt, und konvertieren Sie es in eine Vorlage.
+Eine gute Möglichkeit zum Erstellen einer Vorlage wird eine vorhandene Beispiel für die Ausgabe zu konvertieren. Wenn Ihre Anwendung HTML-Dateien generiert werden, können Sie z. B. durch Erstellen einer einfachen HTML-Datei starten. Stellen Sie sicher, dass sie ordnungsgemäß funktioniert und dass seine Darstellung richtig ist. Anschließend fügen Sie es in Visual Studio-Projekt, und konvertieren Sie es in eine Vorlage.
 
-### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Um einer vorhandenen Textdatei in eine Laufzeitvorlage zu konvertieren.
+### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Um eine vorhandene Textdatei in eine Laufzeitvorlage zu konvertieren.
 
-1. Schließen Sie die Datei in Visual Studio-Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts, **hinzufügen** > **vorhandenes Element**.
+1. Schließen Sie die Datei in Visual Studio-Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen** > **vorhandenes Element**.
 
 2. Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.
 
     > [!NOTE]
-    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass darauf **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann geschehen, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.
+    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.
 
-3. Ändern Sie die Dateierweiterung **TT**. Obwohl dieser Schritt optional ist, ist es hilfreich zu vermeiden, öffnen die Datei in einem falschen Editor.
+3. Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.
 
-4. Entfernen Sie alle Leerzeichen oder Satzzeichen aus dem Hauptteil des Dateinamens. Beispielsweise wäre "Meine Web Page.tt" falsche, aber "MyWebPage.tt" richtig ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.
+4. Entfernen Sie alle Leerzeichen oder Satzzeichen, aus dem Hauptteil des Dateinamens. Z. B. "Meine Web Page.tt" wird nicht korrekt, aber "MyWebPage.tt" korrekt ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.
 
-5. Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in einem Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".
+5. Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".
 
     `<#@ template language="C#" #>`
 
@@ -105,11 +105,11 @@ Behalten Sie die erste Zeile der Vorlage, wie Sie die Datei erstellt wurde:
 
 `<#@ template language="C#" #>`
 
-Die Language-Parameter hängen von der Sprache des Projekts ab.
+Der Language-Parameter hängen von der Sprache des Projekts ab.
 
 ### <a name="plain-content"></a>Einfacher Inhalt
 
-Bearbeiten der **TT** Datei, die Text enthält, die Sie Ihre Anwendung generieren soll. Zum Beispiel:
+Bearbeiten der **TT** Datei, die Text enthalten, der Sie Ihre Anwendung generieren soll. Zum Beispiel:
 
 ```html
 <html><body>
@@ -146,19 +146,19 @@ Sie können Programmcode zwischen einfügen `<#` und `#>`. Zum Beispiel:
 </table>
 ```
 
-Beachten Sie, dass Anweisungen, zwischen eingefügt werden `<# ... #>` und Ausdrücke zwischen eingefügt `<#= ... #>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
+Beachten Sie, dass Anweisungen, zwischen eingefügt werden `<# ... #>` und Ausdrücke werden eingefügt, zwischen `<#= ... #>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template"></a>Verwenden der Vorlage
 
-### <a name="the-code-built-from-the-template"></a>Der Code, der aus der Vorlage erstellt
+### <a name="the-code-built-from-the-template"></a>Der Code erstellt aus der Vorlage
 
-Beim Speichern der **TT** Datei, eine Niederlassung **cs** oder **vb** -Datei generiert wurde. Um diese Datei im Projektmappen-Explorer anzuzeigen, erweitern Sie die **TT** Dateiknotens. Wählen Sie in einem Visual Basic-Projekt zuerst **alle Dateien anzeigen** in der Projektmappen-Explorer-Symbolleiste.
+Beim Speichern der **TT** -Datei, einem Tochterunternehmen **cs** oder **vb** -Datei generiert wird. Um diese Datei finden Sie unter **Projektmappen-Explorer**, erweitern Sie die **TT** Dateiknoten. In Visual Basic-Projekt, und wählen Sie zuerst **alle Dateien anzeigen** in die **Projektmappen-Explorer** Symbolleiste.
 
-Beachten Sie, dass die untergeordnete Datei enthält eine partielle Klasse, die eine Methode namens enthält `TransformText()`. Sie können diese Methode aus Ihrer Anwendung aufrufen.
+Beachten Sie, dass die untergeordnete Datei enthält eine partielle Klasse, die eine Methode namens enthält `TransformText()`. Sie können diese Methode von Ihrer Anwendung aufrufen.
 
 ### <a name="generating-text-at-run-time"></a>Generieren von Text zur Laufzeit
 
-In Ihrem Anwendungscode können Sie den Inhalt der Vorlage über einen Aufruf wie folgt erstellen:
+In Ihrem Anwendungscode verwenden können Sie den Inhalt der Vorlage über einen Aufruf wie folgt generieren:
 
 ```csharp
 MyWebPage page = new MyWebPage();
@@ -172,19 +172,19 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-Um die generierte Klasse in einem bestimmten Namespace einzufügen, legen Sie die **benutzerdefiniertes Tool Namespace** Eigenschaft von der Textvorlagendatei.
+Um in einem bestimmten Namespace die generierte Klasse zu platzieren, legen Sie die **Custom Tool Namespace** Eigenschaft von der Textvorlagendatei.
 
 ### <a name="debugging-runtime-text-templates"></a>Debuggen von Laufzeit-Textvorlagen
 
-Debuggen und Laufzeit-Textvorlagen auf die gleiche Weise als gewöhnlichen Code zu testen.
+Debuggen Sie und Testen Sie die Laufzeit-Textvorlagen in die gleiche Weise wie normale Code.
 
-Sie können einen Haltepunkt in einer Textvorlage festlegen. Wenn Sie die Anwendung im Debugmodus aus Visual Studio starten, können Sie den Code schrittweise und Überwachungsfenster Ausdrücke auf die übliche Weise.
+Sie können einen Haltepunkt in einer Textvorlage festlegen. Wenn Sie die Anwendung im Debugmodus in Visual Studio starten, können Sie den Code schrittweise durchgehen und Watch-Ausdrücke auswerten, auf die übliche Weise.
 
 ### <a name="passing-parameters-in-the-constructor"></a>Übergeben von Parametern im Konstruktor
 
-In der Regel muss eine Vorlage einige Daten aus anderen Teilen der Anwendung importieren. Um dies zu vereinfachen, wird der Code, die von der Vorlage erstellt eine partielle Klasse. Sie können einen anderen Teil der gleichen Klasse in einer anderen Datei im Projekt erstellen. Diese Datei kann einen Konstruktor mit Parametern, Eigenschaften und Funktionen, die Zugriff auf den Code, der in der Vorlage eingebettet ist, und der Rest der Anwendung enthalten.
+In der Regel muss eine Vorlage einige Daten aus anderen Teilen der Anwendung importieren. Um dies zu vereinfachen, ist der Code, der von der Vorlage erstellt eine partielle Klasse. Sie können einen anderen Teil der gleichen Klasse in einer anderen Datei in Ihrem Projekt erstellen. Diese Datei kann einen Konstruktor mit Parametern, Eigenschaften und Funktionen, die den Code, der in der Vorlage eingebettet ist, und die übrigen Teile der Anwendung zugegriffen werden können, enthalten.
 
-Sie konnten z. B. eine separate Datei erstellen **MyWebPageCode.cs**:
+Beispielsweise könnten Sie eine separate Datei erstellen **MyWebPageCode.cs**:
 
 ```csharp
 partial class MyWebPage
@@ -193,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-In der Vorlagendatei **MyWebPage.tt**, geschrieben:
+In Ihre Vorlagendatei **MyWebPage.tt**, könnten Sie schreiben:
 
 ```html
 <h2>Sales figures</h2>
@@ -208,7 +208,7 @@ In der Vorlagendatei **MyWebPage.tt**, geschrieben:
 </table>
 ```
 
-So verwenden Sie diese Vorlage in der Anwendung
+Diese Vorlage in der Anwendung verwenden zu können:
 
 ```csharp
 MyData data = ...;
@@ -217,7 +217,7 @@ String pageContent = page.TransformText();
 System.IO.File.WriteAllText("outputPage.html", pageContent);
 ```
 
-#### <a name="constructor-parameters-in-visual-basic"></a>Konstruktorparameter in Visual Basic
+#### <a name="constructor-parameters-in-visual-basic"></a>Parameter des Konstruktors in Visual Basic
 
 In Visual Basic die separate Datei **MyWebPageCode.vb** enthält:
 
@@ -264,55 +264,55 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>Übergeben von Daten in den Eigenschaften der Vorlage
 
-Eine alternative Möglichkeit des übergeben von Daten, die Vorlage ist der Vorlagenklasse in einer partiellen Klassendefinition öffentliche Eigenschaften hinzu. Ihre Anwendung kann die Eigenschaften festlegen, vor dem Aufrufen `TransformText()`.
+Eine alternative Möglichkeit übergeben von Daten an die Vorlage wird der Vorlagenklasse in eine partielle Klassendefinition öffentliche Eigenschaften hinzugefügt. Die Anwendung kann die Eigenschaften festlegen, vor dem Aufrufen `TransformText()`.
 
-Sie können Felder auch die Vorlagenklasse in eine partielle Definition hinzufügen. Dadurch können Sie Daten zwischen aufeinander folgenden Ausführungen der Vorlage übergeben.
+Sie können Felder auch der Vorlagenklasse in eine partielle Definition hinzufügen. Dadurch können Sie Daten zwischen aufeinander folgenden Ausführungen der Vorlage zu übergeben.
 
-### <a name="use-partial-classes-for-code"></a>Verwenden Sie partielle Klassen für Code.
+### <a name="use-partial-classes-for-code"></a>Verwenden Sie partielle Klassen für code
 
-Viele Entwickler bevorzugen, um zu vermeiden, Schreiben umfangreiche Codetexte in Vorlagen. Stattdessen können Sie Methoden in einer partiellen Klasse definieren, die den gleichen Namen wie die Vorlagedatei hat. Rufen Sie diese Methoden aus der Vorlage ein. Auf diese Weise wird die Vorlage zeigt weitere deutlich das Zielausgabezeichenfolge ähneln. Diskussionen über die Darstellung des Ergebnisses können getrennt werden, von der Logik zum Erstellen der Daten, die er angezeigt wird.
+Viele Entwickler ziehen es vor, um zu vermeiden, umfangreiche Codetexte in Vorlagen zu schreiben. Stattdessen können Sie Methoden in einer partiellen Klasse definieren, die den gleichen Namen wie die Datei der Vorlage hat. Rufen Sie diese Methoden aus der Vorlage ein. Auf diese Weise wird die Vorlage zeigt weitere deutlich die Zielausgabezeichenfolge ähneln. Diskussionen über die Darstellung des Ergebnisses können getrennt werden, von der Logik zum Erstellen der Daten, die angezeigt wird.
 
 ### <a name="assemblies-and-references"></a>Assemblys und Verweise
 
-Gegebenenfalls den Vorlagencode auf eine .NET-Klasse oder andere Assembly verweisen, wie z. B. **System.Xml.dll**, fügen Sie es dem Projekt **Verweise** auf die übliche Weise.
+Ggf. Vorlagencode auf eine .NET oder andere Assembly verweisen, wie z. B. **System.Xml.dll**, Hinzufügen des Projekts **Verweise** auf die übliche Weise.
 
-Wenn Sie einen Namespace auf gleiche Weise wie importieren möchten eine `using` -Anweisung hierzu können Sie mit der `import` Richtlinie:
+Sollten Sie einen Namespace zu importieren, auf die gleiche Weise wie eine `using` -Anweisung, hierzu können Sie mit der `import` Richtlinie:
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-Diese Direktiven müssen am Anfang der Datei platziert werden, sofort nach der `<#@template` Richtlinie.
+Diese Direktiven müssen am Anfang der Datei eingefügt werden, sofort nach der `<#@template` Richtlinie.
 
 ### <a name="shared-content"></a>Freigegebene Inhalte
 
-Wenn Sie Text, die mehrere Vorlagen gemeinsam verwendet werden verwenden, können Sie ihn in einer separaten Datei platzieren und fügen Sie ihn in jeder Datei, in dem er angezeigt werden soll:
+Wenn Sie Text, die mehrere Vorlagen gemeinsam verwendet wird verwenden, können Sie ihn in einer separaten Datei platzieren und fügen Sie es in jeder Datei, die in der sie angezeigt werden soll:
 
 ```
 <#@include file="CommonHeader.txt" #>
 ```
 
-Der eingeschlossene Inhalt kann eine beliebige Mischung aus Programmcode und nur-Text enthalten, und andere include-Direktiven und andere Direktiven.
+Der eingeschlossene Inhalt kann einer beliebigen Kombination von Programmcode und nur-Text enthalten, und andere include-Direktiven und andere Anweisungen.
 
-Die Include-Direktive kann überall innerhalb des Texts einer Vorlagendatei oder einer eingeschlossenen Datei verwendet werden.
+Der Include-Anweisung kann eine beliebige Stelle im Text einer Vorlagendatei oder einer eingeschlossenen Datei verwendet werden.
 
 ### <a name="inheritance-between-run-time-text-templates"></a>Vererbung zwischen Laufzeit-Textvorlagen
 
-Sie können Inhalt zwischen Laufzeitvorlagen durch Schreiben einer Textvorlage Basisklasse, die abstrakt sein kann, freigeben. Verwenden der `inherits` Parameter von der `<@#template#>` Richtlinie auf einen anderen Common Language Runtime-Vorlagenklasse verweisen.
+Sie können Freigeben von Inhalten zwischen Laufzeitvorlagen durch Schreiben einer Textvorlage Basisklasse, die kann abstrakt sein. Verwenden der `inherits` Parameter, der die `<@#template#>` Richtlinie auf eine andere Runtime-Vorlagenklasse.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Base-Methoden
 
-Beachten Sie bei der Muster in das folgende Beispiel verwendet die folgenden Punkte:
+Beachten Sie, dass im Muster, die in das folgende Beispiel verwendet die folgenden Punkte:
 
-- Die Basisklasse `SharedFragments` definiert Methoden innerhalb der Klassenfunktionsblöcke `<#+ ... #>`.
+- Die Basisklasse `SharedFragments` definiert die Methoden in Klassenfunktionsblöcken `<#+ ... #>`.
 
-- Die Basisklasse enthält keinen freien Text. Stattdessen auftreten aller seiner Textblöcke innerhalb der Methoden der-Klasse-Funktion.
+- Die Basisklasse enthält keinen freien Text. Stattdessen auftreten aller Textblöcke innerhalb der Methoden der Klasse-Funktion.
 
 - Die abgeleitete Klasse wird aufgerufen, die in definierten Methoden `SharedFragments`.
 
-- Ruft die Anwendung die `TextTransform()` -Methode der abgeleiteten Klasse, aber nicht die Basisklasse der Klasse transformiert wird `SharedFragments`.
+- Ruft die Anwendung die `TextTransform()` -Methode der abgeleiteten Klasse, aber nicht die Basisklasse umgewandelt wird `SharedFragments`.
 
-- Die Basisklassen und abgeleiteten Klassen sind Laufzeit-Textvorlagen. d. h. die **benutzerdefiniertes Tool** -Eigenschaftensatz auf **TextTemplatingFilePreprocessor**.
+- Die Basisklassen und abgeleiteten Klassen sind die Laufzeit-Textvorlagen. d. h. die **benutzerdefiniertes Tool** -Eigenschaftensatz auf **TextTemplatingFilePreprocessor**.
 
 **SharedFragments.tt:**
 
@@ -355,9 +355,9 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Vererbungsmuster: Text im Hauptteil Basis
+#### <a name="inheritance-pattern-text-in-base-body"></a>Vererbungsmuster: Text im Basis-Text
 
-In diesem alternativen Ansatz, die Vererbung für eine Vorlage verwenden wird der Großteil der Text in der Basisvorlage definiert. Die abgeleiteten Vorlagen enthalten Daten und Textfragmente, in die grundlegenden Inhalte.
+Bei dieser Alternativen Vorgehensweise zum Verwenden von vorlagenvererbung ist der größte Teil des Texts in dieser Vorlage definiert. Die abgeleiteten Vorlagen enthalten Daten und Textfragmente, in die grundlegenden Inhalte.
 
 **AbstractBaseTemplate1.tt:**
 
@@ -408,7 +408,7 @@ protected override void SpecificFragment(int n)
 #>
 ```
 
-**Anwendungscode:**
+**Code der Anwendung:**
 
 ```csharp
 ...
@@ -417,7 +417,7 @@ string result = t1.TransformText();
 Console.WriteLine(result);
 ```
 
-**Ergebnis:**
+**Ausgabe:**
 
 ```
 Here is the description for this derived template:
@@ -431,9 +431,9 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Entwurfszeitvorlagen: Wenn Sie eine Vorlage verwenden, um Code generieren möchten, das Teil der Anwendung wird, finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Entwurfszeitvorlagen: Wenn Sie eine Vorlage, die zum Generieren von Code verwenden möchten, die Teil Ihrer Anwendung, finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-Laufzeitvorlagen können in jeder Anwendung verwendet werden, in denen die Vorlagen und deren Inhalt zum Zeitpunkt der Kompilierung festgelegt ist. Aber wenn Sie eine Visual Studio-Erweiterung schreiben, die Text aus Vorlagen generiert wird, die zur Laufzeit ändern möchten finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+Laufzeit-Vorlagen können in jeder Anwendung verwendet werden, in denen die Vorlagen und deren Inhalt zur Kompilierzeit bestimmt. Aber wenn Sie Visual Studio-Erweiterung schreiben, die Text aus Vorlagen generiert wird, die zur Laufzeit ändern möchten, finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 ## <a name="see-also"></a>Siehe auch
 

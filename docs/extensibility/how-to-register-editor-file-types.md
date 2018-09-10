@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Registrieren von Dateitypen-Editor | Microsoft Docs'
+title: 'Vorgehensweise: Registrieren Sie die Editor-Dateitypen | Microsoft-Dokumentation'
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac67139de317c15d4e85be43f7dace132373257
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129169"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638429"
 ---
-# <a name="how-to-register-editor-file-types"></a>Vorgehensweise: Registrieren von Dateitypen-Editor
-Am einfachsten Editor Dateitypen registrieren wird mithilfe von die Registrierungsattribute, die als Teil der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], Sie können auch eine Registrierungsdatei, die dem Editor und die zugehörigen Erweiterungen registriert schreiben.
+# <a name="how-to-register-editor-file-types"></a>Gewusst wie: Registrieren des Editor-Dateitypen
+Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den Registrierung-Attributen, die als Teil der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], Sie können auch eine Registrierungsdatei, der den Editor und den verbundenen nebenanschlüssen registriert schreiben.
 
-## <a name="registration-using-mpf-classes"></a>Die Registrierung mithilfe von MPF-Klassen
+## <a name="registration-using-mpf-classes"></a>Registrierung mithilfe von MPF-Klassen
 
-#### <a name="to-register-editor-file-types-using-mpf-classes"></a>So registrieren Editor Dateitypen, die mithilfe von MPF-Klassen
+### <a name="to-register-editor-file-types-using-mpf-classes"></a>Editor für Dateitypen, die mithilfe von MPF-Klassen zu registrieren
 
-1.  Geben Sie die <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Klasse mit den entsprechenden Parametern für den Editor in der Ihr VSPackage-Klasse.
+1.  Geben Sie die <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Klasse mit den entsprechenden Parametern für den Editor in der Klasse Ihres VSPackage.
 
     ```
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
@@ -35,17 +35,17 @@ Am einfachsten Editor Dateitypen registrieren wird mithilfe von die Registrierun
          NameResourceID = 106)]
     ```
 
-     Wobei ". Beispiel"ist die Erweiterung, die für diesen Editor registriert ist, und"32"ist die Prioritätsstufe.
+     Wo *. Beispiel* ist die Erweiterung, die für diesen Editor registriert ist, und "32" wird die Prioritätsstufe.
 
-     Die `projectGuid` ist die GUID für verschiedene Dateitypen, definiert <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Der Typ der beliebigen Datei wird bereitgestellt, so, dass die resultierende Datei nicht abgelaufen ist, Teil des Buildprozesses sein.
+     Die `projectGuid` ist die GUID für verschiedene Dateitypen, die in definierten <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Die Typ der beliebigen Datei wird bereitgestellt, so, dass die resultierende Datei nicht Teil des Buildprozesses werden soll.
 
-     `TemplateDir` Stellt den Ordner, der die Dateien enthält, die mit dem Editor für verwaltete grundlegende Beispiel enthalten sind.
+     *TemplateDir* steht für den Ordner, der die Vorlagendateien enthält, die mit dem Editor für verwaltete basic-Beispiel enthalten sind.
 
-     `NameResourceID` in der Datei Resources.h des Projekts BasicEditorUI definiert ist, und identifiziert den Editor als "Meine Editor".
+     `NameResourceID` wird definiert, der *Resources.h* Datei des Projekts BasicEditorUI und identifiziert den Editor als "Meine-Editor".
 
 2.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode.
 
-     In der Implementierung von der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode, rufen die <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> Methode und übergeben Sie die Instanz von der Editorfactory als unten veranschaulicht.
+     In der Implementierung von der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode, rufen die <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> Methode und übergeben Sie die Instanz Ihrer Editor-Factory, wie unten veranschaulicht.
 
     ```csharp
     protected override void Initialize()
@@ -59,18 +59,18 @@ Am einfachsten Editor Dateitypen registrieren wird mithilfe von die Registrierun
     }
     ```
 
-     Dieser Schritt wird die Editor-Factory und die Erweiterungen der Editor-Datei registriert.
+     Dieser Schritt wird sowohl die Dateierweiterungen für den Editor als auch die Editor-Factory registriert.
 
-3.  Aufheben der Registrierung die editorfactorys.
+3.  Aufheben der Registrierung der editorfactorys.
 
-     Editorfactorys werden automatisch aufgehoben, wenn das VSPackage verworfen wird. Wenn die Editor-Factoryobjekt implementiert die <xref:System.IDisposable> -Schnittstelle, die `Dispose` Methode wird aufgerufen, nachdem die Factory mit aufgehoben wurde, hat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Editorfactorys werden automatisch aufgehoben, wenn das VSPackage verworfen wird. Wenn der Editor-Factory-Objekt implementiert die <xref:System.IDisposable> -Schnittstelle, die `Dispose` Methode wird aufgerufen, nachdem Sie mit die Factory aufgehoben wurde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Registrierung mithilfe eines Skripts für die Registrierung
- Registrieren von editorfactorys und Dateitypen in systemeigenen [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] erfolgt mithilfe eines Skripts für die Registrierung um in der Windows-Registrierung zu schreiben, wie im folgenden veranschaulicht.
+ Registrieren von editorfactorys und Dateitypen in systemeigenen [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] erfolgt mithilfe eines Skripts für die Registrierung um in der Windows-Registrierung zu schreiben, wie im folgenden dargestellt.
 
-### <a name="to-register-editor-file-types-using-a-registry-script"></a>Editor-Dateitypen, die eine Registrierungsdatei mit registrieren
+### <a name="to-register-editor-file-types-using-a-registry-script"></a>Editor für Dateitypen, die mithilfe eines Skripts für die Registrierung registrieren
 
-1.  Definieren Sie in Ihrem Registrierungsskript die Editor-Factory und die Editor-Factory GUID-Zeichenfolge ein, entsprechend der `GUID_BscEditorFactory` Abschnitt das folgende Registrierungsskript. Außerdem definieren Sie die Erweiterung und die Priorität der Editor-Erweiterung:
+1.  Definieren Sie in Ihrem Registrierungsskript, die Editor-Factory und die Editorfactory-GUID-Zeichenfolge ein, siehe die `GUID_BscEditorFactory` Abschnitt das folgende Registrierungsskript. Außerdem definieren Sie die Erweiterung und die Priorität der editorerweiterung:
 
     ```
           NoRemove Editors     {         %GUID_BscEditorFactory% = s 'RTF Editor'         {             val Package = s '%CLSID_Package%'             val DisplayName = s 'An RTF Editor'             val ExcludeDefTextEditor = d 1             val AcceptBinaryFiles = d 0
@@ -89,13 +89,13 @@ Am einfachsten Editor Dateitypen registrieren wird mithilfe von die Registrierun
     }
     ```
 
-     Die Editor-Erweiterung in diesem Beispiel wird als ".rtf" identifiziert, und seine Priorität ist "50". Die GUID-Zeichenfolgen werden in Resource.h-Datei des Beispielprojekts BscEdit definiert.
+     Die Dateierweiterung "Editor" in diesem Beispiel wird als identifiziert *RTF* und seine Priorität ist "50". Die GUID-Zeichenfolgen werden in definierten *Resource.h* Datei des BscEdit-Beispielprojekts.
 
 2.  Registrieren Sie das VSPackage.
 
-3.  Registrieren Sie die Editor-Factory.
+3.  Die Editor-Factory zu registrieren.
 
-     Die Editor-Factory ist registriert, der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> Implementierung.
+     Die Editor-Factory registriert ist, der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> Implementierung.
 
     ```cpp
     // create editor factory.
@@ -126,4 +126,4 @@ Am einfachsten Editor Dateitypen registrieren wird mithilfe von die Registrierun
     }
     ```
 
-     Die GUID-Zeichenfolgen werden in Resource.h-Datei des Projekts BscEdit definiert.
+     Die GUID-Zeichenfolgen werden in definierten *Resource.h* -Datei des Projekts BscEdit.

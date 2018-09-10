@@ -1,5 +1,5 @@
 ---
-title: Konfigurationsoptionen (Übersicht) | Microsoft Docs
+title: Übersicht der Konfigurationsoptionen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,63 +14,63 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60f73089c2894bd04c877302e87f11b77928048e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132468"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510352"
 ---
-# <a name="configuration-options-overview"></a>Optionen (Übersicht)
-Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die von einer debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration handelt es sich um einen Buildtyp mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Projektmappen enthalten standardmäßig zwei Konfigurationen, Debug und Release. Diese Konfigurationen können angewendet werden, deren Standardeinstellungen verwenden oder geändert, um Ihren jeweiligen Lösung und/oder Projekt Anforderungen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine direkte-Komponente. Projekte müssen nicht mehrere Konfigurationen jedoch unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  
+# <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
+Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration ist ein Build mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Lösungen enthalten standardmäßig zwei Konfigurationen *Debuggen* und *Version*. Diese Konfigurationen können angewendet werden, verwenden die Standardeinstellungen, oder geändert, um spezifische Lösung und/oder Anforderungen zu erfüllen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine Komponente des direktes. Projekte müssen nicht mehrere Konfigurationen, jedoch zu unterstützen. Wenn nur eine Konfiguration vorhanden ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  
   
- Konfigurationen in der Regel bestehen aus zwei Teilen – der Name der Konfiguration (z. B. Debug- oder Release) und plattformeinstellungen. Eine Konfiguration Plattformname identifiziert die Umgebung, die die Konfiguration ausgerichtet ist, z. B. eine API festgelegt oder die Betriebssystem-Plattform. Benutzer von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eine Plattform; kann nicht erstellt werden aus der Auswahl müssen sie ein Projekt ermöglicht das VSPackage auswählen. Wenn ein Benutzer installiert ein VSPackage die Übermittlung-Plattform, die während der Entwicklung des Pakets erstellt alle gewünschten Plattformname Oberfläche können basierend auf Kriterien, die durch den Paketersteller festgelegt. Der Benutzer kann dann auswählen, aus der Liste der Plattformen, die durch das VSPackage zur Verfügung gestellt, wenn die Eigenschaftenseiten instanziiert werden.  
+ Konfigurationen in der Regel besteht aus zwei Teilen: der Name der Konfiguration (wie z. B. *Debuggen* oder *Version*) und die plattformeinstellungen für die. Ein Konfigurationsname Plattform identifiziert, die Umgebung, die die Konfiguration ausgerichtet ist, z. B. eine API festlegen oder die Plattform des Betriebssystems. Benutzer von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eine Plattform; kann nicht erstellt werden aus der Auswahl müssen sie ein Projekt ermöglicht das VSPackage auswählen. Wenn ein Benutzer installiert ein VSPackage, die Delivery-Plattform, die während der Entwicklung des Pakets erstellt alle gewünschten Plattformname auftreten kann Basis auf von Kriterien festlegen, durch den Paketersteller. Der Benutzer kann dann auswählen, aus der Liste der Plattformen, die über das VSPackage verfügbar gemacht, wenn die Eigenschaftenseiten instanziiert werden.  
   
- Plattformnamen sind optional, da nicht alle Projekte das Konzept der Plattformen unterstützt. Wenn eine Konfiguration nicht über einen Plattformnamen verfügt, wird die Zeichenfolge "n/v" in der Benutzeroberfläche angezeigt.  
+ Plattformnamen sind optional, da nicht alle Projekte das Konzept der Plattformen unterstützt. Wenn eine Konfiguration verfügt nicht über einen Plattformnamen, die Zeichenfolge **n/v** in der Benutzeroberfläche angezeigt wird.  
   
- Jede Lösung weist einen eigenen Satz von Konfigurationen, von denen nur, die einer gleichzeitig aktiv sein kann. Eine Projektmappenkonfiguration ist ein Satz von nicht mehr als eine Konfiguration aus dem Projekt. Die Bedingung ist "nicht mehr als" ist aufgrund der Option aus, um ein Projekt aus einer Projektmappenkonfiguration ausschließen. Benutzer können eigene benutzerdefinierte Projektmappenkonfigurationen erstellen.  
+ Jede Lösung verfügt über einen eigenen Satz von Konfigurationen, die nur zu einem Zeitpunkt aktiv sein kann. Eine Projektmappenkonfiguration ist eine Reihe von nicht mehr als eine Konfiguration aus dem Projekt. Die Bedingung ist "nicht mehr als" ist aufgrund der Option, eine Konfiguration der Projektmappe ein Projekt ausgeschlossen werden sollen. Benutzer können eigene benutzerdefinierte Projektmappenkonfigurationen erstellen.  
   
- Die folgende Tabelle zeigt das Setup typische Konfigurationen für ein Projekt. Die Zeilen werden mit dem Konfigurationsnamen und die Spalten mit Plattformnamen bezeichnet.  
+ Die folgende Tabelle zeigt die typischen Konfigurationen Einrichtung für ein Projekt. Die Zeilen werden mit dem Konfigurationsnamen und die Spalten mit Plattformnamen bezeichnet.  
   
-|Konfigurationsname|Plattform – Win32|Plattform – Win64|  
+|Konfigurationsname|Plattform: Win32|Plattform: Win64|  
 |------------------------|----------------------|----------------------|  
-|Debug|\<Debug-Win32-Einstellungen >|\<Debuggen von Win64-Einstellungen >|  
-|Release|\<Freigeben von Win32-Einstellungen >|\<Freigeben von Win64-Einstellungen >|  
-|MyConfig|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
+|*Debuggen*|\<Debug-Win32-Einstellungen >|\<Debug-Win64-Einstellungen >|  
+|*Version*|\<Einstellungen für die Win32-Version >|\<Releaseeinstellungen Win64 >|  
+|*MyConfig*|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
   
 > [!NOTE]
->  Sie können keine Projektmappenkonfiguration "MyConfig" erstellen, die eine Plattform "Win32" ausschließt, es sei denn, das Projekt, das das Ziel Win32 nicht unterstützt.  
+>  Sie können nicht erstellt werden ein *MyConfig* Projektmappenkonfiguration, die von einer Win32-Plattform werden ausgeschlossen, es sei denn, Sie für das Projekt entwickeln Win32 nicht unterstützt.  
   
- Ändern die aktive Konfiguration für eine Projektmappe, wählt der Satz von Projektkonfigurationen, die erstellt, ausführen, Debuggen oder bereitgestellt werden in dieser Lösung aus. Wenn Sie die aktive Projektmappenkonfiguration Herausgabe Debuggen ändern, werden alle Projekte in der Projektmappe z. B. automatisch mit der Projekte-Konfiguration, die in der Projektmappe Debug-Konfiguration angegebenen erstellt. Die Projekte-Konfigurationen sind in der Regel auch benannte Debuggen, wenn der Benutzer manuell Änderungen in der Umgebung-Konfigurations-Manager vorgenommen wurde.  
+ Wählt aus den Satz von Projektkonfigurationen, die erstellt, ausführen, Debuggen oder bereitgestellt wird, ändern die aktive Konfiguration für eine Lösung in dieser Lösung. Angenommen, Sie ändern, dass die aktive Projektmappenkonfiguration aus *Version* zu *Debuggen*, in der Projektmappe alle Projekte werden automatisch erstellt, mit der Projekte Konfiguration angegeben, der Debug-Konfiguration der Lösung. Die Projekte-Konfigurationen werden auch als *Debuggen* , wenn der Benutzer die manuelle Änderungen im Konfigurations-Manager der Umgebung vorgenommen hat.  
   
- Die Lösung Konfigurationseigenschaften für jedes Projekt gespeichert enthalten den Projektnamen, Projektkonfigurationsname Flags an, ob zum Erstellen oder zum Bereitstellen und Plattformnamen. Weitere Informationen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
+ Für jedes Projekt gespeicherten Eigenschaften der Projektmappe enthalten den Projektnamen, Projektkonfigurationsname, Flags an, ob zum Erstellen oder zum Bereitstellen und der Name der Projektmappenplattform auf. Weitere Informationen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
   
- Der Benutzer kann anzeigen und Festlegen von Konfigurationsparameter die Lösung in der Hierarchie (Projektmappen-Explorer) auswählen, und öffnen die Eigenschaftenseiten für Projektmappen. Auf ähnliche Weise können Sie anzeigen und Festlegen von Konfigurationsparameter Projekt wählen Sie im Projektmappen-Explorer das Projekt, und öffnen die Eigenschaftenseiten für das betreffende Projekt.  
+ Der Benutzer kann anzeigen und Festlegen von Konfigurationsparametern durch Auswählen der Lösung in der Hierarchie (Projektmappen-Explorer), und öffnen die Eigenschaftenseiten für Projektmappen. Auf ähnliche Weise können Sie anzeigen und ändern Konfigurationsparameter Projekt, wählen Sie im Projektmappen-Explorer das Projekt, und öffnen die Eigenschaftenseiten für das betreffende Projekt.  
   
- Der Benutzer kann auch ein Projekt mit Einstellungen für Releasekonfiguration und die restlichen Einstellungen für Debugkonfiguration bei Bedarf erstellen. Weitere Informationen finden Sie unter [Projektkonfiguration zum Erstellen von](../../extensibility/internals/project-configuration-for-building.md).  
+ Benutzer kann auch ein Projekt mit Einstellungen für Releasekonfiguration und die übrigen Einstellungen für Debugkonfiguration bei Bedarf erstellen. Weitere Informationen finden Sie unter [Projektkonfiguration für das Erstellen von](../../extensibility/internals/project-configuration-for-building.md).  
   
  Das folgende Diagramm zeigt, wie die Schnittstellen, die Unterstützung von Projektmappen- und Projektkonfigurationen implementiert werden:  
   
- ![Konfigurationsschnittstellen](../../extensibility/internals/media/vsconfiginterfaces.gif "VsConfigInterfaces")  
+ ![Grafik zu Konfigurationsschnittstellen](../../extensibility/internals/media/vsconfiginterfaces.gif "VsConfigInterfaces")  
 Konfigurationsschnittstellen  
   
  Einige Hinweise, die im Zusammenhang mit der vorherigen Abbildung:  
   
--   `IDispatch` wird in das Konfigurationsobjekt als optional gekennzeichnet. Insbesondere ist optional, Sie haben die Konfigurationsschnittstellen auf die Durchsuchen-Objekt.  
+-   `IDispatch` wird in der Configuration-Objekt als optional gekennzeichnet. Es handelt sich hierbei optional, um die Konfigurationsschnittstellen auf dem Suchobjekt haben.  
   
--   `IVsDebuggableProjectCfg` ist optional, das Konfigurationsobjekt gekennzeichnet, aber für das debugging-Unterstützung ist erforderlich.  
+-   `IVsDebuggableProjectCfg` wird in das Konfigurationsobjekt optional gekennzeichnet, aber für die Debugunterstützung erforderlich ist.  
   
--   `IVsProjectCfg2` ist optional, das Konfigurationsobjekt gekennzeichnet, aber für die Ausgabe gruppieren Support benötigt wird.  
+-   `IVsProjectCfg2` wird in das Konfigurationsobjekt optional gekennzeichnet, aber ist erforderlich, für die Ausgabe, die Unterstützung zu gruppieren.  
   
--   Die `Config Provider` Objekt ist als ein optionales Objekt gekennzeichnet, aber die Option ist, wo Sie sie implementieren. Das Objekt kann auf das Objekt oder ein separates Objekt implementiert werden.  
+-   Der Konfigurationsanbieter-Objekt als ein optionales Objekt markiert ist, aber die Option ist, wo es implementiert. Sie können das Objekt auf das Projektobjekt oder auf ein separates Objekt implementiert.  
   
--   `IVsCfgProvider2` für die Plattform-Unterstützung und Bearbeiten der Konfiguration ist erforderlich. `IVsCfgProvider` ist ausreichend, wenn Sie diese Funktion nicht implementieren.  
+-   `IVsCfgProvider2` für die Plattform-Unterstützung und Bearbeitung ist erforderlich. `IVsCfgProvider` ist ausreichend, wenn Sie nicht diese Funktion implementieren.  
   
--   Einige dieser Objekte, die im Diagramm angezeigt werden, als separate Objekte in derselben Klasse wo praktikabel kombiniert werden können, basierend auf Ihren bestimmten Designanforderungen. In anderen Themen in diesem Abschnitt werden jedoch die Objekte und Schnittstellen, die diesen Objekten zugeordneten entsprechend in der Abbildung dargestellten Szenario besprochen.  
+-   Einige dieser Objekte, die im Diagramm angezeigt werden, als separate Objekte ggf. zu derselben Klasse kombiniert werden können je nach bestimmten Designs. In anderen Themen in diesem Abschnitt werden jedoch die Objekte und Schnittstellen, die mit diesen Objekten verknüpft ist gemäß dem Szenario, in der Abbildung dargestellten erläutert.  
   
--   Bestimmte Objekte sind getrennt implementiert. Auftreten, z. B. Projekt und Projektmappe Erstellung auf separaten Threads und das Objekt, das die Arbeit mit Build separat aus dem Objekt, beschreibt die Konfiguration für den Build zu verwalten.  
+-   Bestimmte Objekte werden separat implementiert. Z. B. auftreten, Projekt- und Projektmappen erstellen von separaten Threads und dem Objekt um die Arbeit mit Build getrennt aus dem Objekt beschreiben die Konfiguration für den Build zu verwalten.  
   
- Weitere Informationen zu den Konfigurationsobjekt und Konfigurationsanbieterobjekt Schnittstellen in der vorherigen Abbildung, finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md). Darüber hinaus [Projektkonfiguration zum Erstellen von](../../extensibility/internals/project-configuration-for-building.md) enthält weitere Informationen über die Configuration-Generator und Erstellen von Dependency-Objekt-Schnittstellen, und [Projektkonfiguration für die Bereitstellung verwalten](../../extensibility/internals/project-configuration-for-managing-deployment.md) Außerdem werden die Schnittstellen beschrieben Bereitsteller Konfiguration und Bereitstellung Abhängigkeitsobjekte zugeordnet. Schließlich [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) beschreibt die Ausgabe-Gruppe und Ausgabeobjekt-Schnittstellen, und die Verwendung von Eigenschaftenseiten, um die konfigurationsabhängigen Eigenschaften anzuzeigen und festzulegen.  
+ Weitere Informationen zu den Configuration-Schnittstellen und Konfigurationsschnittstellen Anbieter-Objekt in der vorherigen Abbildung, finden Sie unter [projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md). Darüber hinaus [Projektkonfiguration für das Erstellen von](../../extensibility/internals/project-configuration-for-building.md) finden Sie weitere Informationen von der Konfigurations-Generator und Build-Abhängigkeit-Schnittstellen, und [Projektkonfiguration für die Verwaltung der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md) Weitere beschreibt die Schnittstellen, die an die die Konfiguration Bereitsteller oder Abhängigkeitsobjekte, die Bereitstellung ein. Zum Schluss [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) beschreibt Ausgabegruppe und Ausgabe-Schnittstellen und die Verwendung von Eigenschaftenseiten zum konfigurationsabhängigen Eigenschaften anzuzeigen und festzulegen.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

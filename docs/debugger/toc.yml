@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Anzeigen von Momentaufnahmen mithilfe der Schritt-zurück-Funktion von IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Debuggen für Einsteiger
+      href: debugging-absolute-beginners.md
 - name: Anleitungen
   items:
     - name: Navigieren im Code mit dem Debugger
@@ -105,8 +107,6 @@
           items:
             - name: Anwenden von Bearbeitungen im Unterbrechungsmodus mithilfe von „Bearbeiten und Fortfahren“
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Anzeigen der Debuggerdaten
@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Konfigurieren der Windows-Firewall für das Remotedebuggen
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Zulassen des Downloads in Windows Server
+          href: remote-debugging-unblock-file-download.md
         - name: Remotedebuggen – Fehler und Problembehandlung
           href: remote-debugging-errors-and-troubleshooting.md
           items:
@@ -826,5 +828,3 @@
   items:
     - name: Neues im Debugger in Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Debuggen für Einsteiger
-      href: debugging-absolute-beginners.md

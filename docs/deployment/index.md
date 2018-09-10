@@ -3,22 +3,23 @@ layout: LandingPage
 title: Bereitstellen von Apps in Visual Studio | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie mit Visual Studio 2017 Anwendungen, Dienste und Komponenten bereitstellen.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d16a7ced93364ea9143c326c93f448fec577e034
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815323"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341761"
 ---
 # <a name="deployment-in-visual-studio"></a>Bereitstellung in Visual Studio
 
 Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
 
-<h2>Auftreten von Visual Studio-Bereitstellung mit 5-Minuten-Schnellstarts</h2>
+<h2>Lernen Sie die Bereitstellung mit Visual Studio in fünfminütigen Schnellstarts kennen</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -75,7 +76,7 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
         </div>
         </a>
     </li>
-        <li>
+    <li>
         <a href="quickstart-deploy-to-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
@@ -87,6 +88,24 @@ Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
                     </div>
                     <div class="cardText">
                         <h3>Bereitstellen in Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="quickstart-deploy-to-linux.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Bereitstellen in App Service für Linux</h3>
                     </div>
                 </div>
             </div>

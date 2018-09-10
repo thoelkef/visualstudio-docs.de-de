@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,57 +17,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672392"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen
-  Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> Objekt können Sie nach Text innerhalb des Bereichs zu suchen. Dieser Text kann die Fehlerzeichenfolgen, die in einer Arbeitsblattzelle wie auch sein `#NULL!` oder `#VALUE!`. Weitere Informationen zu Fehlerzeichenfolgen, finden Sie unter [Zellenfehlerwerte](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht es Ihnen, um nach Text innerhalb des Bereichs zu suchen. Dieser Text kann auch sein, eine der Fehlerzeichenfolgen, die in einer Arbeitsblattzelle, wie z. B. auftreten können `#NULL!` oder `#VALUE!`. Weitere Informationen zu den Fehlerzeichenfolgen finden Sie unter [Zelle Fehlerwerte](http://msdn.microsoft.com/library/office/ff839168.aspx).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Im folgende Beispiel durchsucht einen Bereich, der mit dem Namen `Fruits` und ändert die Schriftart für Zellen, die das Wort "Äpfel" enthalten. Dieses Verfahren auch verwendet die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode, die die zuvor festgelegten verwendet Suchen Sie die Einstellungen für die Suche wiederholen. Sie geben die Zelle nach dem gesucht werden soll, und die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> -Methode übernimmt den Rest.  
+ Im folgende Beispiel durchsucht einen Bereich, der mit dem Namen `Fruits` und ändert die Schriftart für die Zellen, die das Wort "Apples" enthalten. Dieses Verfahren verwendet auch die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode, die die zuvor festgelegten verwendet Suchen Sie die Einstellungen für die Suche wiederholen. Sie geben die Zelle nach der gesucht werden soll, und die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> -Methode übernimmt den Rest.  
   
 > [!NOTE]  
->  Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> -Methode umschließt zurück an den Anfang des Suchbereichs das Ende des Bereichs erreicht wurde. Codes muss sicherstellen, dass die Suche in einer Endlosschleife. Die Beispielprozedur zeigt eine Möglichkeit, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Eigenschaft.  
+>  Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode Suche zurück zum Anfang des Suchbereichs umschließt, das Ende des Bereichs erreicht wurde. Ihr Code muss stellen Sie sicher, dass die Suche in einer Endlosschleife nicht um umbrochen wird. Die Beispielprozedur zeigt eine Möglichkeit, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Eigenschaft.  
   
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [How Do I: Use Find-Methode in einem Excel-Add-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie verwenden Sie I: die Find-Methode in einem Excel-Add-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
-### <a name="to-search-for-text-in-a-worksheet-range"></a>Zum Suchen nach Text in einem Arbeitsblattbereich  
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Zum Suchen nach Text in einem Arbeitsblattbereich  
   
-1.  Deklarieren Sie Variablen für das Nachverfolgen von den gesamten Bereich, den ersten gefundenen Bereich und den aktuellen Bereich gefunden.  
+1.  Deklarieren Sie Variablen für die nachverfolgung der gesamte Bereich, den ersten gefundenen Bereich und aktuellen Bereich gefunden.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
      [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  Suchen Sie nach der ersten Übereinstimmung, geben Sie die Parameter für die mit Ausnahme der Zelle, nach dem gesucht werden soll.  
+2.  Suchen Sie nach Angabe aller Parameter mit Ausnahme der Zelle, suchen Sie nach der die erste Übereinstimmung.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
      [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Weitersuchen Sie als Übereinstimmungen vorhanden sind.  
+3.  Fortsetzen Sie, suchen als Übereinstimmungen vorhanden sind.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
      [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
   
-4.  Vergleichen Sie den ersten gefundenen Bereich (`firstFind`) zu **nichts**. Wenn `firstFind` enthält keinen Wert, den Code gespeichert gefundenen Bereichs (`currentFind`).  
+4.  Vergleichen der ersten gefundenen Bereich (`firstFind`) zu **nichts**. Wenn `firstFind` enthält keinen Wert, den Code gespeichert, das den gefundenen Bereich (`currentFind`).  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
      [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  Die Schleife zu beenden, wenn die Adresse des Bereichs gefunden wurde die Adresse des ersten gefundenen Bereichs übereinstimmt.  
+5.  Beenden Sie die Schleife aus, wenn die Adresse des Bereichs gefunden, die Adresse des ersten gefundenen Bereichs entspricht.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
      [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
   
-6.  Festlegen der Darstellung des Bereichs gefunden.  
+6.  Legen Sie die Darstellung des Bereichs gefunden.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
      [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  Führen Sie eine andere Suche.  
+7.  Durchführen Sie eine neue Suche.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
      [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
@@ -80,8 +81,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

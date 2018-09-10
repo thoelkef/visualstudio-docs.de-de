@@ -1,5 +1,5 @@
 ---
-title: CreateExpInstance-Dienstprogramm | Microsoft Docs
+title: CreateExpInstance-Hilfsprogramm | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdcb37374c63b96e2169de28c6fe21742024ca98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128090"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500656"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance-Hilfsprogramm
-Verwenden Sie CreateExpInstance-Hilfsprogramm um zu erstellen, wiederherstellen, oder löschen Sie eine experimentelle Instanz von Visual Studio. Sie können die experimentelle Instanz, Debuggen und Testen von Visual Studio-Erweiterungen ohne Änderung der zugrunde liegenden Produkt verwenden.  
+Verwenden der **CreateExpInstance** Hilfsprogramm zu erstellen, zurücksetzen oder löschen eine experimentelle Instanz von Visual Studio. Sie können die experimentelle Instanz zum Debuggen und Testen Visual Studio-Erweiterungen, ohne die zugrunde liegenden Produkt verwenden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,34 +33,33 @@ Verwenden Sie CreateExpInstance-Hilfsprogramm um zu erstellen, wiederherstellen,
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix  
 ```  
   
-#### <a name="parameters"></a>Parameter  
- / Erstellen  
- Erstellt die experimentelle Instanz.  
+## <a name="parameters"></a>Parameter  
+ **/ Erstellen Sie** die experimentelle Instanz erstellt.  
   
- / Reset  
- Löscht die experimentelle Instanz, und klicken Sie dann ein neues Zertifikat erstellt.  
+ **/ Reset**  
+ Löscht die experimentelle Instanz, und klicken Sie dann eine neue erstellt.  
   
- /Clean  
+ **/Clean**  
  Löscht die experimentelle Instanz.  
   
- / VSInstance  
- Der Name des Verzeichnisses, das die zu kopierende Basis Visual Studio-Instanz enthält.  
+ **/ VSInstance**  
+ Der Name des Verzeichnisses, das die zu kopierende grundlegende Visual Studio-Instanz enthält.  
   
- / RootSuffix  
- Das Suffix, um den Namen des Verzeichnisses der experimentellen Instanz angefügt werden soll.  
+ **/ RootSuffix**  
+ Das Suffix, auf den Namen des Verzeichnisses experimentelle Instanz angefügt werden soll.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn Sie an einer Visual Studio-Erweiterung arbeiten, drücken Sie F5, um die standardmäßige experimentelle Instanz öffnen und die aktuelle Erweiterung installieren. Wenn keine experimentelle Instanz verfügbar ist, erstellt Visual Studio eine, die die Standardeinstellungen hat.  
+ Wenn Sie Visual Studio-Erweiterung arbeiten, können Sie durch Drücken auf F5, um die standardmäßige experimentelle Instanz öffnen, und installieren Sie die aktuelle Erweiterung. Wenn keine experimentelle Instanz verfügbar ist, erstellt Visual Studio mit einem Konto mit den Standardeinstellungen.  
   
- Der Standardspeicherort der experimentellen Instanz hängt von der Visual Studio-Versionsnummer ab. Beispielsweise ist der Speicherort für Visual Studio 2015 %localappdata%\Microsoft\VisualStudio\14.0Exp\ alle Dateien im Verzeichnis als Teil dieser Instanz. Alle zusätzlichen experimentellen Instanzen werden nicht von Visual Studio geladen werden, es sei denn, der Verzeichnisname am Standardspeicherort geändert wird.  
+ Der Standardspeicherort der experimentellen Instanz hängt von der Visual Studio-Versionsnummer ab. Für Visual Studio 2015, z. B. der Speicherort ist *%localappdata%\Microsoft\VisualStudio\14.0Exp\\*. Alle Dateien in das Verzeichnis werden als Teil dieser Instanz betrachtet. Alle zusätzlichen experimentellen Instanzen werden nicht von Visual Studio geladen werden, es sei denn, der den Namen des Verzeichnisses am Standardspeicherort geändert wird.  
   
- Visual Studio greift die systemregistrierung nicht, wenn sie die experimentelle Instanz geöffnet wird. Dies unterscheidet sich von früheren Versionen von Visual Studio, die eine experimentelle Version der Registrierungsstruktur verwendet.  
+ Visual Studio greift die Registrierung des Systems nicht, wenn sie die experimentelle Instanz geöffnet wird. Dies unterscheidet sich von früheren Versionen von Visual Studio, die eine experimentelle Version der Registrierungsstruktur verwendet.  
   
- Das Hilfsprogramm CreateExpInstance ersetzt das Dienstprogramm VsRegEx.  
+ Die **CreateExpInstance** Hilfsprogramm ersetzt die **VsRegEx** Hilfsprogramm.  
   
- Im folgende Beispiel wird die standardmäßige experimentellen Instanz von Visual Studio zurückgesetzt.  
+ Im folgenden Beispiel wird die Standardwert für die experimentellen Instanz von Visual Studio:  
   
- **CreateExpInstance.exe/Reset /VSInstance = 14.0 /RootSuffix = Exp**  
+ **CreateExpInstance.exe/Reset /VSInstance = 14.0/rootsuffix Exp =**  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../../extensibility/internals/vspackages.md)

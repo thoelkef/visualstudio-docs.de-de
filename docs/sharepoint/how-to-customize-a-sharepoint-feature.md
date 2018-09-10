@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen einer SharePoint-Funktion | Microsoft Docs'
+title: 'Vorgehensweise: Anpassen eines SharePoint-Features | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,79 +21,79 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f22ec947e9aa3cae15427915bd5aff4122a67797
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118896"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Gewusst wie: Anpassen einer SharePoint-Funktion
-  Sie können erstellen und Anpassen von SharePoint-Funktionen mit dem Funktions-Designer in Visual Studio. Sie können z. B. Legen Sie den Funktionsbereich und fügen Sie andere Funktionen als Abhängigkeiten hinzu. Standardmäßig wird der Funktions-Designer geöffnet, wenn Sie ein neues Feature in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.  
+  Sie können erstellen und Anpassen von SharePoint-Funktionen mithilfe der Funktions-Designer in Visual Studio. Sie können z. B. Festlegen des Gültigkeitsbereichs der Funktion und weitere Funktionen als Abhängigkeiten hinzufügen. Standardmäßig wird die Funktions-Designer geöffnet, wenn Sie ein neues Feature in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.  
   
-## <a name="opening-the-feature-designer"></a>Öffnen des Funktions-Designers  
- Sie können hinzufügen oder Entfernen von SharePoint-Projektelemente einer Funktion mit dem Funktions-Designer.  
+## <a name="opening-the-feature-designer"></a>Öffnen die Funktions-Designer  
+ Sie können die hinzufügen oder Entfernen von SharePoint-Projektelemente, einer Funktion, die mit der Funktions-Designer.  
   
-#### <a name="to-open-the-feature-designer"></a>Zum Öffnen des Funktions-Designers  
+#### <a name="to-open-the-feature-designer"></a>Um die Funktions-Designer zu öffnen.
   
-1.  In **Projektmappen-Explorer**, erweitern Sie **Funktionen**.  
+1.  In **Projektmappen-Explorer**, erweitern Sie **Features**.  
   
-2.  Doppelklicken Sie auf die *Feature1* Element, oder öffnen Sie das Kontextmenü für die *Feature1* Element, und wählen Sie dann **Sicht-Designer**.  
+2.  Doppelklicken Sie auf die *Feature1* Element, oder öffnen Sie das Kontextmenü für die *Feature1* Element aus, und wählen Sie dann **Ansicht-Designer**.  
   
-## <a name="viewing-the-packaged-manifest-file"></a>Anzeigen der App-Manifest-Datei  
- Die Funktions-Designer können Sie ändern und die App-Manifestdatei für das Feature (feature.xml) zu generieren. Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.  
+## <a name="view-the-packaged-manifest-file"></a>Die Manifestdatei für gepackte anzeigen  
+ Können Sie die Funktions-Designer ändern, und Generieren der Manifestdatei für gepackten für das Feature (*"Feature.xml"*). Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.  
   
-#### <a name="to-view-the-packaged-manifest-file"></a>So zeigen Sie die App-Manifestdatei an  
+#### <a name="to-view-the-packaged-manifest-file"></a>Die Manifestdatei für gepackte anzeigen  
   
 1.  In der **Funktions-Designer**, wählen Sie die **Manifest** Registerkarte.  
   
-#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>So zeigen Sie die gepackte Manifestdatei mit Projektmappen-Explorer  
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>So zeigen Sie die Manifestdatei für gepackte mit Projektmappen-Explorer  
   
 1.  In **Projektmappen-Explorer**, wählen Sie die **alle Dateien anzeigen** Symbol.  
   
-2.  Erweitern Sie Funktionen FeatureName, FeatureName.feature erweitern, und öffnen Sie dann die *FeatureName*. Template.XML-Datei.  
+2.  Erweitern Sie Features FeatureName, FeatureName.feature erweitern und anschließend öffnen Sie dann die  *\<FeatureName >. Template.XML* Datei.  
   
     > [!NOTE]  
-    >  Wenn Sie die Funktion manifest XML-Datei der Vorlage öffnen, wird automatisch die Dateien überprüft werden, und die Warnungen, die im Fenster "Fehlerliste" angezeigt werden können ignoriert werden.  
+    >  Wenn Sie die Funktion Vorlage XML-Manifestdatei öffnen, die Dateien werden automatisch überprüft, und die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden, können ignoriert werden.  
   
-## <a name="changing-the-manifest-template"></a>Ändern der Manifest-Vorlage  
- Sie können den XML-Code für die Feature-Manifestdatei im XML-Editor von Visual Studio oder im Manifestvorlage ändern. Alle Änderungen an den XML-Code wird mit der App-manifest-Datei zusammengeführt, für die Funktion. Beispielsweise empfiehlt es sich manifest Vorlage zum Anpassen einer Feature-Eigenschaft zu ändern.  
+## <a name="change-the-manifest-template"></a>Ändern Sie die Manifestvorlage  
+ Sie können den XML-Code für die Manifestdatei des Features, in der XML-Editor von Visual Studio oder im Bereich Manifestvorlage ändern. Alle Änderungen an den XML-Code wird in der Manifestdatei für gepackte zusammengeführt, für die Funktion. Beispielsweise empfiehlt es sich so ändern Sie die Manifestvorlage um eine Funktionseigenschaft anzupassen.  
   
-#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>So ändern Sie das manifest Vorlage mithilfe der XML-Editor  
+#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Die Manifestvorlage zu ändern, indem Sie mit der XML-Editor  
   
 1.  In der **Funktions-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und wählen Sie dann die **im XML-Editor geöffnet** Link.  
   
-     Änderungen an der XML-Code werden in der App-manifest-Datei zusammengeführt.  
+     Änderungen an den XML-Code werden in der Manifestdatei für gepackte zusammengeführt.  
   
-#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>So ändern Sie das manifest Vorlage Manifestvorlage im Bereich ""  
+#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>So ändern Sie die Manifestvorlage mithilfe des Bereichs der Manifestvorlage  
   
-1.  In der **Funktions-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und ändern Sie das XML, das im Bereich Manifestvorlage angezeigt wird.  
+1.  In der **Funktions-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und klicken Sie dann ändern Sie den XML-Code, der im Manifest der Template angezeigt wird.  
   
-     Änderungen an der XML-Code angezeigt, der **Vorschau der App-Paket-Manifest** Bereich.  
+     Änderungen an den XML-Code werden angezeigt, der **Vorschau des Paket-Manifest** Bereich.  
   
-## <a name="overwriting-the-packaged-manifest-file"></a>Überschreiben die App-Manifest-Datei  
- Sie können dem Funktions-Designer deaktivieren und die Datei feature.xml manuell erstellen. Zum ersten Mal ausführen dieser Prozedur werden die aktuellen Einstellungen im Funktions-Designer in der Funktion XML-Datei gespeichert. Sie können dann ändern oder den XML-Code überschreiben.  
+## <a name="overwrite-the-packaged-manifest-file"></a>Überschreiben Sie die Manifestdatei für gepackte  
+ Sie können der Funktions-Designer zu deaktivieren, und erstellen die *"Feature.xml"* Datei manuell. Zum ersten Mal ausführen dieser Prozedur werden die aktuellen Einstellungen in der Funktions-Designer in der Funktion Vorlage XML-Datei gespeichert. Anschließend können Sie ändern oder überschreiben Sie den XML-Code.  
   
 > [!NOTE]  
 >  Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente in der XML-Datei während der Funktions-Designer deaktiviert ist, werden diese Projektelemente nicht gepackt.  
   
-#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Um App-manifest-Datei zu überschreiben, durch Deaktivieren des Designers  
+#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Paket-manifest-Datei zu überschreiben, durch Deaktivieren des Designers  
   
 1.  In der **Funktions-Designer**, wählen Sie die **Manifest** Registerkarte.  
   
-2.  Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML und bearbeiten Manifest in der XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
+2.  Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML-"und" Bearbeiten Manifest im XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
   
-     Die Vorlage wird durch die aktuelle App-manifest-Datei aktualisiert.  
+     Die Vorlage wird durch die aktuelle Paket-manifest-Datei aktualisiert.  
   
-## <a name="enabling-the-feature-designer"></a>Aktivieren der Funktions-Designer  
- Sie können die Funktions-Designer zum Anpassen der Datei "Feature.xml" erneut aktivieren.  
+## <a name="enable-the-feature-designer"></a>Aktivieren Sie die Funktions-Designer  
+ Sie können die Funktions-Designer zum Anpassen der *"Feature.xml"* Datei.  
   
 #### <a name="to-re-enable-the-designer"></a>Um den Designer erneut zu aktivieren.  
   
-1.  In der **Funktions-Designer**, wählen Sie die **manifest Änderungen verwerfen und erneutes Aktivieren der Designer** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
+1.  In der **Funktions-Designer**, wählen Sie die **verwerfen manifestbearbeitungen, und aktivieren Sie den Designer erneut** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
   
-2.  Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen an der XML-Code gehen verloren.  
+2.  Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen an den XML-Code gehen verloren.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Siehe auch
+ [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

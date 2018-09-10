@@ -32,16 +32,16 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065880"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230947"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang-Linkereigenschaften (Android C++)
 
-Eigenschaft | description | Auswahlmöglichkeiten
+Eigenschaft | Beschreibung  | Auswahlmöglichkeiten
 --- | ---| ---
 Ausgabedatei | Die Option überschreibt den Standardnamen und den Speicherort des Programms, das der Linker erstellt. (-o)
 Status anzeigen | Gibt Linkerstatusmeldungen aus.
@@ -63,4 +63,4 @@ Ausführbaren Stapel erfordern | Diese Option gibt an, dass die Ausgabe keinen a
 Gesamtes Archiv | Diese Option verwendet den gesamten Code aus den Quellen und zusätzlichen Abhängigkeiten.
 Zusätzliche Optionen | Zusätzliche Optionen.
 Zusätzliche Abhängigkeiten | Gibt zusätzliche Elemente an, die der Linkerbefehlszeile hinzugefügt werden sollen.
-Bibliothekabhängigkeiten | Mit dieser Option können zusätzliche Bibliotheken angegeben werden, die der Linkerbefehlszeile hinzugefügt werden sollen. Die zusätzlichen Bibliotheken werden am Ende der Linkerbefehlszeile hinzugefügt. Diese beginnen mit „lib“ und enden mit der Erweiterung „A“ oder „SO“.  (-lFILE)
+Bibliothekabhängigkeiten | Mit dieser Option können zusätzliche Bibliotheken angegeben werden, die der Linkerbefehlszeile hinzugefügt werden sollen. Die zusätzlichen Bibliotheken werden am Ende der Linkerbefehlszeile hinzugefügt. Diese beginnen mit *lib* und enden mit der Erweiterung *A* oder *SO*.  (-lFILE)

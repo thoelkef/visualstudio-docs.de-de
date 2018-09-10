@@ -1,16 +1,16 @@
 ---
 title: Umgestalten von Code (Refactoring)
 description: Das Neuorganisieren von Code in Visual Studio für Mac wird durch die Verwendung der Quellanalyse vereinfacht.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ec0ae7aa61275b9b5362db178b9bdb8e3ccedfbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884195"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223982"
 ---
 # <a name="refactoring"></a>Umgestaltung
 
@@ -67,7 +67,7 @@ Der Refactoringvorgang „Methode extrahieren“ ermöglicht es Ihnen, eine neue
 
 1. Fügen Sie den folgenden Code hinzu:
 
-```
+```csharp
     class MainClass
     {
 

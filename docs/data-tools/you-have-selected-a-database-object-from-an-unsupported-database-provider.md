@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3ab7375db8c3adfe769cf1c344937b60695eb25
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b6eef41ebd3ae6fc08029a618cf276e22001235
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921139"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116875"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt.
 
-Der O/R-Designer unterstützt nur die .NET Framework-Datenanbieter für SQL Server (<xref:System.Data.SqlClient>). Obwohl Sie klicken können, **OK** und zum Arbeiten mit Objekten von nicht unterstützten Datenbankanbietern fortsetzen, kann unerwartetes Verhalten zur Laufzeit auftreten.
+Die **O/R Designer** unterstützt nur die .NET Framework-Datenanbieter für SQL Server (<xref:System.Data.SqlClient>). Obwohl Sie klicken können, **OK** und zum Arbeiten mit Objekten von nicht unterstützten Datenbankanbietern fortsetzen, treten unter Umständen unerwartetes Verhalten zur Laufzeit.
 
 > [!NOTE]
 > Es werden nur Datenverbindungen unterstützt, die den .NET Framework-Datenanbieter für SQL Server verwenden.
@@ -28,15 +28,15 @@ Der O/R-Designer unterstützt nur die .NET Framework-Datenanbieter für SQL Serv
 
 - Klicken Sie auf **OK**.
 
-   Sie können weiterhin, Entwerfen der Entitätsklassen, die der Verbindung zugeordnet sind, die nicht unterstützten Datenbankanbieter verwendet. Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.
+   Sie können das Entwerfen der Entitätsklassen, die der Verbindung zugeordnet werden soll, die den nicht unterstützten Datenbankanbieter verwendet, weiterhin. Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.
 
     - oder - 
 
-- Klicken Sie auf **"Abbrechen"**.
+- Klicken Sie auf **Abbrechen**.
 
    Die Aktion wird beendet. Erstellen oder verwenden Sie eine Datenverbindung, die .NET Framework-Anbieter für SQL Server verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,117 +1,96 @@
 ---
 title: Erste Schritte mit Visual Studio-Tools für Unity | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 04/07/2017
+ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: conceptdev
-ms.author: crdun
+author: dantogno
+ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252465"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
-In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Tools für Unity installieren und Ihr Unity-Projekt für die Zusammenarbeit mit Visual Studio konfigurieren.
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 
-> [!IMPORTANT]
->  In Unity 5.2 ist die Unterstützung von Visual Studio-Tools für Unity 2.1 bereits integriert, wodurch die Projekterstellung vereinfacht wird. Um diesen Vorteil zu nutzen, benötigen Sie Unity 5.2.0 oder höher unter Windows sowie Visual Studio-Tools für Unity 2.1 oder höher.
+## <a name="install-visual-studio"></a>Installieren von Visual Studio
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Sie benötigen die folgenden Komponenten, um Visual Studio-Tools für Unity nutzen zu können:
+### <a name="unity-bundled-installation"></a>Gebündelte Installation von Unity
 
--   Eine Version von **Visual Studio** , die Erweiterungen unterstützt (z. B. Visual Studio Community, Professional, Premium oder Enterprise). Visual Studio Community können Sie kostenlos herunterladen.
+Ab Unity 2018.1 ist Visual Studio der standardmäßige C#-Skript-Editor-IDE für Unity und im Unity-Download-Assistenten sowie im Unity Hub-Installationstool enthalten.
 
-     [Visual Studio Community herunterladen](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+- Laden Sie Unity unter [store.unity.com](https://store.unity.com/) herunter.
 
--   **Unity** Version 4.0.0 oder höher; **Unity** Version 5.2.0 oder höher mit integrierter Unterstützung für Visual Studio-Tools für Unity Version 2.1 oder höher.
+Stellen Sie während der Installation sicher, dass Visual Studio in der Liste der Komponenten ausgewählt ist, die mit Unity installiert werden sollen:
 
-     [Unity herunterladen](https://unity3d.com/get-unity/download)
+#### <a name="unity-hub"></a>Unity Hub
 
-## <a name="install-visual-studio-tools-for-unity"></a>Installieren von Visual Studio-Tools für Unity
- Laden Sie Visual Studio-Tools für Unity aus dem Visual Studio-Katalog herunter, und installieren Sie sie. Sie müssen das richtige Paket für Ihre Version von Visual Studio installieren. Stellen Sie sicher, dass Visual Studio-Tools für Unity 2.1 oder höher installiert ist, damit Sie die integrierte Unterstützung für VSTU in Unity 5.2 oder höher nutzen können.
+![Installation von Unity Hub](media/vstu_unity-hub.png)
 
--   Für Visual Studio 2015 Community, Visual Studio 2015 Professional oder Visual Studio 2015 Enterprise:
+#### <a name="unity-download-assistant"></a>Unity-Download-Assistent
 
-     [Visual Studio 2015-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+![Installation mit dem Unity-Download-Assistenten](media/vstu_download-assistant.png)
 
--   Für Visual Studio 2013 Community, Visual Studio 2013 Professional oder Visual Studio 2013 Premium:
+#### <a name="check-for-updates-to-visual-studio"></a>Suchen nach Updates für Visual Studio
 
-     [Visual Studio 2013-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)
+Die Version von Visual Studio, die in der Installation von Unity enthalten ist, ist möglicherweise nicht aktuell. Es wird empfohlen, nach Updates zu suchen, damit Sie Zugriff auf die aktuellen Tools und Features haben.
 
--   Für Visual Studio 2012 Professional oder Visual Studio 2012 Premium:
+- [Visual Studio aktualisieren](../install/update-visual-studio.md)
 
-     [Visual Studio 2012-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)
+### <a name="manual-installation"></a>Manuelle Installation
 
--   Für Visual Studio 2010 Professional oder Visual Studio 2010 Premium:
+Wenn Sie Visual Studio 2017 bereits installiert haben, oder Sie die manuelle Installation bevorzugen, führen Sie den Visual Studio-Installer aus.
 
-     [Visual Studio 2010-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)
+1. [Laden Sie den Visual Studio-Installer herunter](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio), oder öffnen Sie ihn, wenn er bereits installiert ist.
+
+1. Klicken Sie für die gewünschte Version von Visual Studio auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
+
+1. Scrollen Sie auf der Registerkarte **Workloads** zum Abschnitt **Mobil und Gaming**, und wählen Sie die Workload **Spieleentwicklung mit Unity** aus.
+
+    ![Unity-Workload](media/vstu_unity-workload.png)
+
+1. Klicken Sie in der unteren rechten Ecke des Installer-Fensters auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
+
+## <a name="configure-unity-for-use-with-visual-studio"></a>Konfigurieren von Unity für die Verwendung mit Visual Studio
+
+Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Editor in Unity festgelegt sein. Sie können dies bestätigen oder den externen Skript-Editor in eine spezifische Version von Visual Studio ändern:
+
+1. Wählen Sie im Menü **Bearbeiten** die Option **Einstellungen...** aus.
+
+  ![Auswählen von Einstellungen](media/vstu_unity-preferences.png)
+
+1. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
+
+1. Wählen Sie in der Dropdownliste **Externer Skript-Editor** Ihre gewünschte Version von Visual Studio aus, falls diese aufgelistet ist, oder andernfalls **Durchsuchen...**
+
+  ![Auswählen von Visual Studio](media/vstu_unity-external-tools.png)
+
+1. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen**.
+
+  ![Auswählen von „Öffnen“](media/vstu_browse-for-application.png)
+
+1. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
+
+1. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
+
+## <a name="support-for-older-versions"></a>Unterstützung älterer Versionen
+
+ Laden Sie Visual Studio-Tools für Unity aus dem Visual Studio Marketplace herunter, und installieren Sie sie. Sie müssen das richtige Paket für Ihre Version von Visual Studio installieren.
+
+- Für Visual Studio 2015 Community, Visual Studio 2015 Professional oder Visual Studio 2015 Enterprise:
+
+   [Visual Studio 2015-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 
 > [!NOTE]
->  Express-Editionen von Visual Studio unterstützen keine Erweiterungen wie z. B. Visual Studio-Tools für Unity. Visual Studio Community ist eine kostenlose Version von Visual Studio, die Visual Studio-Tools für Unity und andere Erweiterungen unterstützt. Für die meisten Benutzer ist Visual Studio Community besser geeignet als Express.
-
-> [!NOTE]
->  Für Visual Studio 2017 enthält VSTU 3 die Unity-Arbeitsauslastung, die Sie aus dem Installer auswählen können.
-
-## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Ihr erstes Unity-Projekt mit Visual Studio-Tools für Unity
- Nun, da Sie alles haben, was Sie brauchen, können Sie Ihr erstes Unity-Projekt mit Visual Studio in Angriff nehmen. Die Einrichtung Ihres Unity-Projekts hängt von der installierten Unity-Version und der Version von Visual Studio-Tools für Unity ab. Führen Sie nachfolgend die Schritte für die jeweils installierte Version von Unity und Visual Studio-Tools für Unity aus.
-
-### <a name="unity-52-and-higher-requires-vstu-21-or-higher"></a>Unity 5.2 und höher (VSTU 2.1 oder höher erforderlich)
- Ab Unity Version 5.2 müssen Sie nicht mehr das VSTU-Paket in Ihre Projekte importieren. Wird dieses Unity-Paket in Ihr Projekt importiert, wird es von Unity 5.2 ignoriert, und Visual Studio-Tools für Unity wird direkt aus dem Installationsverzeichnis geladen.
-
-#### <a name="1---create-a-unity-project"></a>1. Erstellen eines Unity-Projekts
- Wenn Sie bereits Erfahrung mit Unity haben, können Sie ein neues Projekt erstellen oder ein eigenes Projekt laden. Wenn Sie ein Projekt laden, das Visual Studio-Tools für Unity verwendet und zu diesem Zweck ein VSTU-Paket mit einer früheren Version von Unity importiert, empfehlen wir, dieses Paket zu entfernen, indem Sie das Verzeichnis "UnityVS" löschen.
-
- Wenn Unity für Sie neu ist, beginnen Sie mit einem einfachen Lernprogramm. Auf der Seite zum Erlernen von Unity finden Sie Lernprogramme zu Beispielprojekten, mit denen Sie starten können, und Lektionen, die Sie durch das Entwickeln Ihres eigenen Spiels mit Unity begleiten. Die Seite zum Erlernen von Unity bietet leicht verständliche Lernprogramme für verschiedene Spiele.
-
- [Tutorials – Seite zum Erlernen von Unity](http://unity3d.com/learn/tutorials/modules)
-
-#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Konfigurieren des Unity-Editors für das Verwenden von Visual Studio-Tools für Unity
- Um die Verwendung von Visual Studio Tools für Unity für Ihr Projekt zu aktivieren, brauchen Sie nur Visual Studio als externen Skript-Editor festzulegen. Wählen Sie im Unity-Editor im Hauptmenü **Edit, Preferences**aus; wählen Sie dann im Dialogfeld **Unity Preferences** die Option **External Tools**aus. Stellen Sie als Nächstes die Eigenschaft **External Script Editor** auf die Version von Visual Studio ein, die Sie verwenden möchten (Visual Studio-Tools für Unity muss für diese Version von Visual Studio installiert sein), und stellen Sie sicher, dass die Eigenschaft **Editor Attaching** aktiviert ist.
-
- Zeigen Sie das Dialogfeld **About Unity** an, um sich zu vergewissern, dass die integrierte Unterstützung für Visual Studio-Tools für Unity aktiviert ist. In the Unity editor, on the main menu, choose **Help, About Unity** aus. Wenn Visual Studio-Tools für Unity installiert und ordnungsgemäß konfiguriert ist, wird unten links im Dialogfeld **About Unity** an, um sich zu vergewissern, dass die integrierte Unterstützung für Visual Studio-Tools für Unity aktiviert ist.
-
- Stellen Sie abschließend sicher, dass Sie auf der Seite **Build Settings** ein Buildziel festgelegt und **Script Debugging** aktiviert haben.
-
- ![Konfigurieren Sie die Unity-Buildeinstellungen für das Debuggen](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings").
-
-#### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3. Starten von Visual Studio im Unity-Editor
- Ab Unity 5.2 ist das Erweiterungsmenü **Visual Studio-Tools** zum Starten von Visual Studio oder zum Konfigurieren der Visual Studio-Tools für Unity nicht mehr erforderlich. Sobald Visual Studio als externer Skript-Editor konfiguriert ist, brauchen Sie nur im Unity-Editor die Skriptdatei auszuwählen, und der Code wird in Visual Studio geöffnet.
-
-### <a name="previous-versions-of-unity-pre-52"></a>Frühere Versionen von Unity (vor 5.2)
- Vor Unity 5.2 gab es keine integrierte Unterstützung für Visual Studio-Tools für Unity. In jedes Projekt musste das VSTU-Paket importiert werden, und zum Verwenden von Visual Studio-Tools für Unity mussten auch andere Projekteinstellungen konfiguriert werden.
-
-#### <a name="1---create-a-unity-project"></a>1. Erstellen eines Unity-Projekts
- Wenn Sie bereits Erfahrung mit Unity haben, können Sie ein neues Projekt erstellen oder ein eigenes Projekt laden. Wenn Sie ein neues Projekt beginnen, importieren Sie während der Erstellung das VSTU-Paket.
-
- Wenn Unity für Sie neu ist, beginnen Sie mit einem einfachen Lernprogramm. Auf der Seite zum Erlernen von Unity finden Sie Lernprogramme zu Beispielprojekten, mit denen Sie starten können, und Lektionen, die Sie durch das Entwickeln Ihres eigenen Spiels mit Unity begleiten. Die Seite zum Erlernen von Unity bietet leicht verständliche Lernprogramme für verschiedene Spiele.
-
- [Tutorials – Seite zum Erlernen von Unity](http://unity3d.com/learn/tutorials/modules)
-
-#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Konfigurieren des Unity-Editors für das Verwenden von Visual Studio-Tools für Unity
- Wenn Sie mit einem vorhandenen Unity-Projekt beginnen oder das VSTU-Paket beim Erstellen Ihres Projekts nicht importiert haben, müssen Sie es jetzt importieren. Klicken Sie im Unity-Editor im Hauptmenü auf **Assets, Import Package, Visual Studio 2015 Tools** (Sie sollten eine Option für die Version von Visual Studio finden, die Sie installiert haben).
-
- ![Importieren Sie das VSTU-Paket in Ihr Unity-Projekt. ](../cross-platform/media/vstu_configure_unity_import_vstu.png "vstu_configure_unity_import_vstu")
-
- Stellen Sie abschließend sicher, dass Sie auf der Seite **Build Settings** ein Buildziel festgelegt und **Script Debugging** aktiviert haben.
-
- ![Konfigurieren Sie die Unity-Buildeinstellungen für das Debuggen](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings").
-
-#### <a name="3---launch-visual-studio-from-unity-editor"></a>3. Starten von Visual Studio im Unity-Editor
- Der letzte Schritt ist das Starten von Visual Studio in Unity. Hierdurch wird eine Visual Studio-Projektmappe für das Projekt erstellt, das anschließend in Visual Studio geöffnet wird.
-
- Wählen Sie im Unity-Editor im Hauptmenü **Visual Studio Tools, Open in Visual Studio**aus.
-
- ![Öffnen Sie Ihr Unity-Projekt in Visual Studio.](../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")
+> Visual Studio-Tools für Unity setzt Unity 5.2 und höher voraus sowie eine Version von Visual Studio, die Erweiterungen unterstützt (z.B. Visual Studio Community, Professional, Premium oder Enterprise). Überprüfen Sie, ob Visual Studio-Tools für Unity in Ihrer Installation von Unity aktiviert sind, indem Sie im **Hilfemenü** die Option **Informationen zu Unity** auswählen und unten links im Dialogfeld nach dem Text „Microsoft Visual Studio-Tools für Unity aktiviert“ suchen.
+> ![Informationen zu Unity](media/vstu_about-unity.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- Informationen zum Arbeiten mit und Debuggen von Unity-Projekten in Visual Studio finden Sie unter [Verwenden von Visual Studio Tools für Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
-
-## <a name="see-also"></a>Siehe auch
- [Unity-Homepage](http://unity3d.com)
+ Informationen zum Arbeiten mit und Debuggen von Unity-Projekten in Visual Studio finden Sie unter [Verwenden von Visual Studio-Tools für Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

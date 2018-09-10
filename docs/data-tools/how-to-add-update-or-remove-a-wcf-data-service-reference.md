@@ -16,46 +16,46 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e39b28a3de5aa97ac7c0673cd16b71508ae4276
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925975"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089311"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
-Ein *Dienstverweis* kann ein Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projektmappe, lokal auf einem lokalen Netzwerk oder im Internet.
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: hinzufügen, aktualisieren oder entfernen ein WCF-Datendienstverweises
+Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projektmappe lokal auf einem lokalen Netzwerk oder im Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="adding-a-service-reference"></a>Hinzufügen eines Dienstverweises
+## <a name="add-a-service-reference"></a>Hinzufügen eines Dienstverweises
 
-#### <a name="to-add-a-reference-to-an-external-service"></a>So fügen Sie einen Verweis auf einen externen Dienst hinzu
+### <a name="to-add-a-reference-to-an-external-service"></a>Einen Verweis auf einen externen Dienst hinzufügen
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens des Projekts, das Sie verwenden möchten, fügen den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
 
      Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.
 
-2.  In der **Adresse** Feld Geben Sie die URL für den Dienst, und klicken Sie dann auf **Go** , für den Dienst gesucht werden soll. Wenn der Dienst-Namen und das Kennwort benutzersicherheit implementiert, können Sie für einen Benutzernamen und Kennwort aufgefordert.
+2.  In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.
 
     > [!NOTE]
     >  Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
 
-     Sie können auch auswählen, die URL aus der **Adresse** Liste aus, die der vorhergehenden 15 URLs speichert, an dem gültigen Dienstmetadaten gefunden wurde.
+     Sie können auch auswählen, die URL aus der **Adresse** Liste, die vorherigen 15 URLs gespeichert, an dem gültigen Dienstmetadaten gefunden.
 
-     Eine Statusanzeige wird angezeigt, wenn die Suche durchgeführt wird. Sie können die Suche jederzeit beenden, indem Sie auf **beenden**.
+     Eine Statusanzeige eingeblendet, wenn die Suche durchgeführt wird. Sie können die Suche zu einem beliebigen Zeitpunkt beenden, indem Sie auf **beenden**.
 
 3.  In der **Services** aus, erweitern Sie den Knoten für den Dienst, den Sie verwenden möchten und wählen Sie eine Entitätenmenge.
 
 4.  In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
 
-5.  Klicken Sie auf **OK** der Verweis auf das Projekt hinzufügen.
+5.  Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
 
-     Ein Dienstclient (Proxy) wird generiert, und Metadaten, die den Dienst beschreibt die Datei "App.config" hinzugefügt wird.
+     Ein Dienstclient (Proxy) wird generiert, und Metadaten, die den Dienst beschreibt hinzugefügt wird die *"App.config"* Datei.
 
-#### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>So fügen Sie einen Verweis auf einen Dienst in der aktuellen Projektmappe hinzu
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Um einen Verweis auf einen Dienst in der aktuellen Projektmappe hinzuzufügen.
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens des Projekts, das Sie verwenden möchten, fügen den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
 
      Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.
 
@@ -67,31 +67,31 @@ Ein *Dienstverweis* kann ein Projekt für den Zugriff auf eine oder mehrere [!IN
 
 4.  In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
 
-5.  Klicken Sie auf **OK** der Verweis auf das Projekt hinzufügen.
+5.  Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
 
-     Ein Dienstclient (Proxy) wird generiert, und Metadaten, die den Dienst beschreibt die Datei "App.config" hinzugefügt wird.
+     Ein Dienstclient (Proxy) generiert und Metadaten, die den Dienst beschreibt hinzugefügt wird die *"App.config"* Datei.
 
-## <a name="updating-a-service-reference"></a>Aktualisieren eines Dienstverweises
- Das Entity Data Model für eine [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] wird in einigen Fällen ändern. In diesem Fall muss der Dienstverweis aktualisiert werden.
+## <a name="update-a-service-reference"></a>Aktualisieren eines Dienstverweises
+ Das Entity Data Model für eine [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] manchmal ändert. In diesem Fall müssen Sie den Dienstverweis aktualisieren.
 
-#### <a name="to-update-a-service-reference"></a>Beim Aktualisieren eines Dienstverweises
+### <a name="to-update-a-service-reference"></a>Um einen Dienstverweis aktualisieren
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Update Dienstverweis**.
+-   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Dienstverweis aktualisieren**.
 
-     Während der Verweis vom ursprünglichen Speicherort aktualisiert wird, und der Dienstclient erneut generiert, um die Änderungen in den Metadaten widergespiegelt werden, wird ein Fortschrittsdialogfeld angezeigt.
+     Ein Statusdialogfeld wird angezeigt, während der Verweis wird von ihrem ursprünglichen Speicherort aktualisiert, und der Dienstclient erneut generiert wird, um die Änderungen in den Metadaten widergespiegelt werden.
 
-## <a name="removing-a-service-reference"></a>Entfernen eines Dienstverweises
+## <a name="remove-a-service-reference"></a>Entfernen eines Dienstverweises
  Wenn Sie ein Dienstverweis nicht mehr verwendet wird, können Sie es aus der Projektmappe entfernen.
 
-#### <a name="to-remove-a-service-reference"></a>Entfernen ein Dienstverweises
+### <a name="to-remove-a-service-reference"></a>So entfernen Sie einen Dienstverweis
 
 -   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **löschen**.
 
-     Der Dienstclient wird aus der Projektmappe entfernt, und Metadaten, die den Dienst zu beschreiben, aus der Datei "App.config" entfernt werden.
+     Client des Diensts aus der Projektmappe entfernt werden, und Metadaten, die den Dienst zu beschreiben, entfernt werden, aus der *"App.config"* Datei.
 
     > [!NOTE]
-    >  Jeglicher Code, der den Dienstverweis verweist, müssen manuell entfernt werden.
+    >  Code, der den Dienstverweis verweist, muss manuell entfernt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation-Dienste und WCF-Datendienste in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

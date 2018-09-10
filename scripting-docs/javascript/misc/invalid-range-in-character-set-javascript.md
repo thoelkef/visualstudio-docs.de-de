@@ -1,5 +1,5 @@
 ---
-title: Ungültiger Bereich im Zeichensatz festlegen (JavaScript) | Microsoft Docs
+title: Ungültiger Bereich im Zeichensatz festlegen (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633000"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282814"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Ungültiger Bereich im Zeichensatz (JavaScript)
-Sie haben versucht, einen regulären Ausdruck mit einem ungültigen Zeichen Set-Adressbereich zu erstellen. Zeichensätze müssen zwischen einzelnen Zeichen, z. B. a-Z oder 0-9 liegen; Sie können keine Zeichenklassen z. B. \w in einem Zeichensatz verwenden. Das erste Zeichen im Bereich muss auch vor das zweite Zeichen im Bereich liegen. Zum Beispiel:  
+Sie haben versucht, die einen regulären Ausdruck mit einem ungültigen Zeichen Set-Adressbereich zu erstellen. Zeichensätze müssen zwischen einzelnen Zeichen, z. B. a-Z oder 0-9 liegen; Zeichenklassen in regulären Ausdrücken wie z. B. \w können nicht in einem Zeichensatz einbezogen werden. Das erste Zeichen im Bereich muss auch vor dem zweiten Zeichen im Bereich stammen. Zum Beispiel:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden Sie nur einzelne Zeichen, um Ihre reguläre Zeichensatz verfassen, und stellen Sie sicher, dass sie in der richtigen Reihenfolge sind.  
+-   Verwenden Sie nur einzelne Zeichen, Verfassen Sie Ihre reguläre-Zeichensatz ausgewählt werden, und stellen Sie sicher, dass sie in der richtigen Reihenfolge sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntax regulärer Ausdrücke (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

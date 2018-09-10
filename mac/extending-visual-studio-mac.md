@@ -1,17 +1,17 @@
 ---
 title: Erweitern von Visual Studio für Mac
 description: Die Funktionen von Visual Studio für Mac können mit Modulen erweitert werden, die Erweiterungspakete genannt werden. Der erste Teil dieser Anleitung erstellt ein einfaches Erweiterungspaket für Visual Studio für Mac, um das Datum und die Uhrzeit in ein Dokument einzufügen. Der zweite Teil dieser Anleitung erläutert die Grundlagen des Erweiterungspaketsystems und einige der wichtigsten APIs, die die Grundlage von Visual Studio für Mac bilden.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865096"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224961"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -38,7 +38,7 @@ Dieser Abschnitt befasst sich mit den verschiedenen Dateien, die vom Add-in Make
 
 Erweiterungspakete speichern Metadaten über ihren Namen, ihre Version, Abhängigkeiten und andere Informationen in C#-Attributen. Der Add-in Maker erstellt zwei Dateien, `AddinInfo.cs` und `AssemblyInfo.cs`, um diese Informationen zu speichern und zu organisieren. Erweiterungspakete müssen über eine eindeutige ID und einen eindeutigen Namespace verfügen, der in deren *-Add-in-Attribut* angegeben wird:
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -56,7 +56,7 @@ Zudem werden die entsprechenden `assembly:AddinDependency `-Attribute zum Zeitpu
 
 ## <a name="extensions-and-extension-points"></a>Erweiterungen und Erweiterungspunkte
 
-Ein Erweiterungspunkt ist ein Platzhalter, der eine Datenstruktur (einen Typ) definiert, während eine Erweiterung Daten definiert, die einer Struktur entsprechen, die durch einen bestimmten Erweiterungspunkt festgelegt wird. Erweiterungspunkte geben an, welchen Typ von Erweiterung sie in ihrer Deklaration akzeptieren können. Erweiterungen werden mithilfe von Namen oder Erweiterungspfaden deklariert. Eine tiefer greifende Erklärung dazu, wie Sie den Erweiterungspunkt erstellen, den Sie benötigen, finden Sie in der [Referenz zu Erweiterungspunkten](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots).
+Ein Erweiterungspunkt ist ein Platzhalter, der eine Datenstruktur (einen Typ) definiert, während eine Erweiterung Daten definiert, die einer Struktur entsprechen, die durch einen bestimmten Erweiterungspunkt festgelegt wird. Erweiterungspunkte geben an, welchen Typ von Erweiterung sie in ihrer Deklaration akzeptieren können. Erweiterungen werden mithilfe von Namen oder Erweiterungspfaden deklariert. Eine tiefer greifende Erklärung dazu, wie Sie den Erweiterungspunkt erstellen, den Sie benötigen, finden Sie in der [Referenz zu Erweiterungspunkten](https://github.com/mono/mono-addins/wiki/Extension-Points).
 
 Durch die Erweiterung/Erweiterungspunkt-Architektur bleibt die Entwicklung von Visual Studio für Mac schnell und modular. 
 
@@ -70,7 +70,7 @@ Befehlserweiterungen sind Erweiterungen, die auf Methoden verweisen, die jedes M
 
 Befehlserweiterungen werden durch das Hinzufügen von Einträgen zum Erweiterungspunkt `/MonoDevelop/Ide/Commands` definiert. Wir haben unsere Erweiterung in `Manifest.addin.xml` mit dem folgenden Code definiert:
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -90,7 +90,7 @@ Der Erweiterungsknoten enthält ein path-Attribut, das den Erweiterungspunkt ang
 
 Der folgende Codeausschnitt zeigt eine CommandItem-Erweiterung, die in den `/MonoDevelop/Ide/MainMenu/Edit`-Erweiterungspunkt eingebunden ist:
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -102,7 +102,7 @@ Ein Befehlselement platziert einen in seinem ID-Attribut angegebenen Befehl in e
 
 `InsertDateHandler` ist eine Erweiterung der `CommandHandler`-Klasse. Es überschreibt zwei Methoden, `Update` und `Run`. Die `Update`-Methode wird immer dann abgerufen, wenn ein Befehl in einem Menü angezeigt oder über Tastenzuordnungen ausgeführt wird. Durch Ändern des Infoobjekts können Sie den Befehl deaktivieren oder unsichtbar machen, Arraybefehle auffüllen u.v.m. Diese `Update`-Methode deaktiviert den Befehl, wenn sie kein aktives *Dokument* mit einem *Texteditor* zum Einfügen von Text findet:
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 Sie müssen die `Update`-Methode nur überschreiben, wenn Sie über eine besondere Logik zum Aktivieren oder Ausblenden des Befehls verfügen. Die `Run`-Methode wird immer dann ausgeführt, wenn ein Benutzer einen Befehl ausführt, was in diesem Fall auftritt, wenn ein Benutzer den Befehl aus dem Menü „Bearbeiten“ auswählt. Diese Methode fügt das Datum und die Uhrzeit an der Einfügemarke im Texteditor ein:
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -122,7 +122,7 @@ protected override void Run ()
 
 Deklarieren Sie den Befehlstyp als Enumerationsmember innerhalb von `DateInserterCommands`:
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

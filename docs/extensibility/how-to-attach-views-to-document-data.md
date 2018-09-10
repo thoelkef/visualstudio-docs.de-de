@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anfügen von Ansichten, um Daten zu dokumentieren | Microsoft Docs'
+title: 'Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3dfe0163bc4a47ec51e5c2dea832f6adda42ff7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48aa6f7bc0c8ea948c43dcdff11d7ccae1cedc93
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128460"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637902"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>Vorgehensweise: Anfügen von Ansichten, um Daten zu dokumentieren.
-Wenn Sie eine neue Dokumentenansicht verfügen, für die Verbindung zu einer vorhandenen dokumentdatenobjekt möglicherweise.  
+# <a name="how-to-attach-views-to-document-data"></a>Gewusst wie: Anfügen von Ansichten zu Dokumentdaten
+Wenn Sie eine neue Dokumentenansicht verfügen, können Sie ihn an ein vorhandenes dokumentendatenobjekt anfügen können.  
   
-### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Um festzustellen, ob Sie eine Sicht um ein vorhandenes dokumentdatenobjekt anfügen können  
+## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Um festzustellen, ob eine Ansicht an ein vorhandenes dokumentendatenobjekt angefügt werden können  
   
 1.  Implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
   
-2.  In der Implementierung von `IVsEditorFactory::CreateEditorInstance`, rufen Sie `QueryInterface` auf der vorhandenen dokumentdatenobjekt beim Aufrufen der IDE Ihrer `CreateEditorInstance` Implementierung.  
+2.  In der Implementierung von `IVsEditorFactory::CreateEditorInstance`, rufen Sie `QueryInterface` auf das vorhandene dokumentendatenobjekt, wenn die IDE aufruft Ihre `CreateEditorInstance` Implementierung.  
   
-     Aufrufen von `QueryInterface` ermöglicht es Ihnen, vorhandene dokumentdatenobjekt zu überprüfen, die im angegebenen der `punkDocDataExisting` Parameter.  
+     Aufrufen von `QueryInterface` ermöglicht es Ihnen, die das vorhandene dokumentendatenobjekt, zu überprüfen, die im angegebenen die `punkDocDataExisting` Parameter.  
   
-     Die genaue Schnittstellen, die Sie Abfragen ausführen müssen, allerdings richtet sich nach den Editor, der das Dokument geöffnet wird wie in Schritt 4.  
+     Die genaue Schnittstellen, die Sie Abfragen ausführen müssen, jedoch hängt von den Editor, der das Dokument geöffnet wird wie in Schritt 4 beschrieben.  
   
-3.  Wenn Sie nicht die entsprechenden Schnittstellen für die vorhandenen dokumentdatenobjekt finden, geben Sie einen Fehlercode zurück, auf den Editor gibt an, dass das dokumentdatenobjekt nicht mit dem Editor kompatibel ist.  
+3.  Wenn Sie die entsprechenden Schnittstellen für das vorhandene dokumentendatenobjekt nicht finden können, geben Sie einen Fehlercode zurück, in-Editor, der angibt, dass das dokumentendatenobjekt nicht mit Ihrem Editor kompatibel ist.  
   
      In der IDE-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, ein Meldungsfeld benachrichtigt, wenn das Dokument in einem anderen Editor geöffnet ist und fragt, ob Sie sie schließen möchten.  
   
-4.  Wenn Sie dieses Dokument schließen, ruft Visual Studio ein zweites Mal die Editorfactory. Bei diesem Aufruf der `DocDataExisting` Parameter gleich NULL ist. Die Editor-Factory-Implementierung können Sie das Dokumentobjekt für die Daten in Ihrem eigenen Editor öffnen.  
+4.  Wenn Sie in diesem Dokument schließen, ruft Visual Studio ein zweites Mal der Editorfactory. In diesem Aufruf die `DocDataExisting` Parameter gleich NULL ist. Die Implementierung der Factory-Editors kann dann das dokumentendatenobjekt in Ihren eigenen Editor öffnen.  
   
     > [!NOTE]
-    >  Um zu bestimmen, ob Sie ein vorhandenes dokumentdatenobjekt arbeiten können, können Sie auch private Kenntnisse in der Implementierung durch Umwandlung einen Zeiger auf den tatsächlichen [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Abfrageklasse die private Implementierung. Z. B. alle standard-Editoren implementieren `IVsPersistFileFormat`, erbt die <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Sie können daher Aufrufen `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, Klassen-ID und die Klassen-ID auf den vorhandenen dokumentdatenobjekt Ihrer Implementierung übereinstimmt, dann können Sie mit der dokumentdatenobjekt arbeiten.  
+    >  Bestimmt, ob Sie ein vorhandenes dokumentendatenobjekt arbeiten können, können Sie auch private Kenntnisse über die schnittstellenimplementierung durch Umwandeln der einen Zeiger auf die tatsächliche [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Klasse Ihrer privaten Implementierung. Alle standard-Editoren implementieren beispielsweise `IVsPersistFileFormat`, erbt von <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Sie können daher Aufrufen `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, Klassen-ID und die Klassen-ID für das vorhandene dokumentendatenobjekt Ihrer Implementierung der übereinstimmt, und Sie das dokumentendatenobjekt arbeiten können.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Visual Studio aufgerufen werden bei die Implementierung von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> -Methode übergibt wieder einen Zeiger auf das vorhandene dokumentdatenobjekt in der `punkDocDataExisting` -Parameters, wenn eine solche vorhanden ist. Untersuchen Sie das dokumentdatenobjekt im zurückgegebenen `punkDocDataExisting` zu bestimmen, ob das Dokument-Datenobjekt für den Editor, wie im Hinweis in Schritt 4 des Verfahrens in diesem Thema beschriebenen geeignet ist. Wenn es ist angemessen, Ihre Editorfactory sollte eine zweite Ansicht für die Daten bereitzustellen, wie im [unterstützen mehrere Dokumentansichten](../extensibility/supporting-multiple-document-views.md). Wenn dies nicht der Fall ist, dann sollte es eine entsprechende Fehlermeldung angezeigt.  
+ Wenn Visual Studio ruft die Implementierung von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> -Methode es übergibt wieder einen Zeiger auf die vorhandenen dokumentendatenobjekts in der `punkDocDataExisting` -Parameters, sofern eine vorhanden ist. Überprüfen Sie das dokumentendatenobjekt zurückgegeben `punkDocDataExisting` zu bestimmen, ob das dokumentendatenobjekt geeignet, für den Editor, wie im Hinweis in Schritt 4 des Verfahrens in diesem Thema beschrieben ist. Wenn es eignet sich, Ihre Editorfactory sollte eine zweite Ansicht für die Daten bereitstellen, wie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md). Wenn dies nicht der Fall ist, dann sollte eine entsprechende Fehlermeldung angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unterstützung mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
+ [Unterstützen Sie mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
  [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)

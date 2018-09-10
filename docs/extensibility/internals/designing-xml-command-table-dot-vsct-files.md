@@ -1,5 +1,5 @@
 ---
-title: XML-Befehlstabelle entwerfen (. VSCT)-Dateien | Microsoft Docs
+title: Entwerfen von XML-Befehlstabelle (. VSCT)-Dateien | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,116 +13,116 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133358"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499262"
 ---
-# <a name="designing-xml-command-table-vsct-files"></a>XML-Befehlstabelle entwerfen (. VSCT)-Dateien
-Eine XML-Tabelle (VSCT) Befehlsdatei beschreibt das Layout und die Darstellung der Elemente der Befehl für ein VSPackage. Befehl Elementen zählen Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Elementgruppen Befehl. Dieses Thema beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl und Menüs auswirken und zu deren Erstellung.
+# <a name="design-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabellen (VSCT) Befehlsdateien
+Ein XML-Befehl-Tabelle (*VSCT*) Datei beschreibt das Layout und die Darstellung der Befehl-Elemente für ein VSPackage. Befehls-Elemente enthalten, Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Gruppen von Elementen für Befehl. Dieser Artikel beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl-Elemente und Menüs auswirken und zu deren Erstellung.
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Befehle, Menüs, Gruppen und der VSCT-Datei
- VSCT-Dateien sind Befehle, Menüs und Befehlsgruppen organisiert. Darstellen von XML-Tags in der VSCT-Datei jedes dieser Elemente, sowie andere zugehörige Elemente wie z. B. Befehlsschaltflächen Befehl Platzierung und Bitmaps.
+ Die *VSCT* Dateien Befehlsgruppen, Menüs und Befehle organisiert sind. XML-tags in der *VSCT* Datei dar, die jedes dieser Elemente zusammen mit anderen zugehörigen Elementen wie z. B. Schaltflächen, Befehl Platzierung und Bitmaps.
 
- Wenn Sie ein neues VSPackage erstellen, durch Ausführen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Paketvorlage, die Vorlage generiert eine VSCT-Datei mit der erforderlichen Elemente für einen Menübefehl, Toolfenster oder benutzerdefinierten Editor, abhängig von Ihrer Auswahl. Diese VSCT-Datei kann dann entsprechend den Anforderungen eines bestimmten VSPackage geändert werden. Weitere Beispiele zum Ändern einer VSCT-Datei finden Sie unter den Beispielen in [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
+ Bei der Erstellung eines neuen VSPackages mit der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Paket-Vorlage, die Vorlage generiert ein *VSCT* -Datei mit der erforderlichen Elemente für einen Menübefehl, Toolfenster oder benutzerdefinierten Editor, abhängig von Ihrer Auswahl. Dies *VSCT* Datei kann anschließend geändert werden, um die Anforderungen der ein bestimmtes VSPackage. Beispiele zur Vorgehensweise beim Ändern einer *VSCT* finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
- Um ein neues, leeres VSCT-Datei zu erstellen, finden Sie unter [Vorgehensweise: Erstellen einer. VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Nach der Erstellung, fügen Sie XML-Elemente, Attribute und Werte zu der Datei, die der Befehl das Elementlayout beschreiben. Eine detaillierte XML-Schema finden Sie unter der [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).
+ Leer, um ein neues zu erstellen, *VSCT* finden Sie unter [Vorgehensweise: Erstellen einer *VSCT* Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Nach der Erstellung, fügen Sie XML-Elemente, Attribute und Werte in die Datei, um das Layout der Befehl-Element zu beschreiben. Eine detaillierte XML-Schema finden Sie unter den [VSCT XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Unterschiede zwischen CTC und VSCT-Dateien
- Während die Bedeutung der XML-Tags in einer VSCT-Datei identisch sind als diejenigen, die jetzt CTC-Dateiformat veraltet, ist ihre Implementierung geringfügig.
+ Während die Bedeutung der XML-in Tags einem *VSCT* Datei entsprechen diese Tags in der jetzt veralteten *CTC* Dateiformat vor, die ihre Implementierung ist etwas anders:
 
--   Die neue  **\<"extern" >** Tag ist, in dem Sie andere h-Dateien kompiliert werden, etwa solche für verweisen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Symbolleiste.
+-   Die neue  **\<"extern" >** Tag ist, in dem Sie anderen verweisen *h* Dateien kompiliert werden, z. B. die Dateien für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Symbolleiste.
 
--   Während der VSCT-Unterstützungsdateien der **/ include** -Anweisung, wie CTC-Dateien, es bietet zudem eine neue \< **Importieren >** Element. Der Unterschied besteht darin, **/ include** bringt in **alle** Informationstypen, aber \< **Importieren >** ermöglicht nur die Namen.
+-   Während *VSCT* Unterstützungsdateien für die **/ include** -Anweisung als *CTC* Dateien zu tun, es bietet auch eine neue  **\<Importieren >** Element. Der Unterschied besteht darin, **/ include** bringt in *alle* die Informationen, während  **\<Importieren >** ermöglicht nur die Namen.
 
--   Während der CTC-Dateien eine Headerdatei benötigen, in der Sie Ihre Präprozessordirektiven definieren, muss eine nicht für VSCT-Dateien. Platzieren Sie stattdessen die Anweisungen in der Symboltabelle befindet sich in der  **\<Symbol >** Elemente, die am unteren Rand der VSCT-Datei.
+-   Während *CTC* Dateien erfordern eine Headerdatei, in dem Sie Ihre Präprozessordirektiven definieren, die er nicht erforderlich, damit *VSCT* Dateien. Ordnen Sie stattdessen die Anweisungen in der Symboltabelle, befindet sich in der  **\<Symbol >** Elemente, die am unteren Rand der *VSCT* Datei.
 
--   VSCT-Dateien-Funktion eine  **\<Annotation >** Tags, das Ihnen die Möglichkeit, alle Informationen einbetten, z. B. Notizen oder auch Bilder möchten.
+-   *VSCT* Feature für eine  **\<Annotation >** -Tag, sodass Sie alle Informationen betten Sie zufrieden sind, z. B. Notizen oder auch Bilder.
 
 -   Werte werden als Attribute für das Element gespeichert.
 
--   Befehlsflags können einzeln gespeichert oder gestapelt werden.  IntelliSense, funktioniert jedoch nicht auf gestapelte Befehlsflags. Weitere Informationen zu Befehlsflags, finden Sie unter der [Flags Befehlselement](../../extensibility/command-flag-element.md).
+-   Befehlsflags können einzeln gespeichert oder gestapelt werden.  IntelliSense, funktioniert jedoch nicht auf gestapelte Befehlsflags. Weitere Informationen zu Befehlsflags, finden Sie unter den [CommandFlag-Element](../../extensibility/command-flag-element.md).
 
--   Sie können mehrere Typen, z. B. Split Dropdownlisten, Tastenkürzel usw. angeben.
+-   Sie können mehrere Typen, z. B. Split Dropdownlisten, Combos usw. angeben.
 
 -   GUIDs werden nicht überprüft.
 
--   Jedes Element der Benutzeroberfläche hat eine Zeichenfolge, die den Text darstellt, der mit ihm angezeigt wird.
+-   Jedes Element der Benutzeroberfläche hat eine Zeichenfolge, die den Text darstellt, der dabei angezeigt wird.
 
--   Übergeordnete Element ist optional. Wenn nicht angegeben, wird der Wert "Gruppe Unknown" verwendet.
+-   Das übergeordnete Element ist optional. Wenn nicht angegeben, handelt es sich bei den Wert *Gruppe unbekannt* verwendet wird.
 
--   Das Symbol "-Argument ist optional.
+-   Die *Symbol* Argument ist optional.
 
--   Die Bitmap-Abschnitt--identisch mit einer CTC-Datei, mit dem Unterschied, dass Sie jetzt einen Dateinamen über Href angeben können, die vom Compiler vsct.exe zum Zeitpunkt der Kompilierung herausgezogen werden.
+-   Bitmap-Abschnitt: in diesem Abschnitt wird dem Verhalten in einer *CTC* Datei mit dem Unterschied, dass Sie jetzt einen Dateinamen über Href angeben können, die von, in abgerufen wird der *vsct.exe* Compiler zum Zeitpunkt der Kompilierung.
 
--   ResID--die alte Bitmap-Ressourcen-ID kann verwendet werden und weiterhin funktioniert genauso wie in der CTC-Dateien.
+-   "RESID": Die alte bitmap-Ressource-ID kann verwendet und noch immer funktioniert gleich sein *CTC* Dateien.
 
--   HRef – eine neue Methode, die Ihnen ermöglicht, einen Dateinamen für die Bitmapressource angeben. Es wird vorausgesetzt, dass alle verwendet werden, damit Sie die verwendete Bereich weglassen können. Der Compiler sucht zuerst nach lokalen Ressourcen für die Datei, klicken Sie dann auf net Freigaben, und alle Ressourcen, die durch die/i-Switch definiert.
+-   HRef: Eine neue Methode, die Sie einen Namen für die Bitmapressource angeben kann. Es wird davon ausgegangen, dass alle verwendet werden, damit Sie die verwendete Bereich weglassen können. Der Compiler sucht zuerst für lokale Ressourcen für die Datei wird auf net Freigaben und alle Ressourcen definiert, durch die **/i** wechseln.
 
--   KeyBinding – Sie müssen nicht mehr geben Sie einen Emulator aus. Wenn Sie angeben, wird der Compiler davon ausgegangen, dass der Editor und den Emulator identisch sind.
+-   Tastenzuordnung: Sie müssen nicht mehr an einen Emulator. Wenn Sie angeben, wird der Compiler davon aus, dass der Editor und den Emulator identisch sind.
 
--   Keychord--wurde gelöscht. Das neue Format wird Key1, Mod1, Key2, Mod2.  Sie können Zeichen, hexadezimalen oder VK Konstante angeben.
+-   Keychord: Keychord wurde gelöscht. Das neue Format ist *"Key1" "," Mod1 "," Key2 "," Mod2*.  Sie können entweder ein Zeichen, Hexadezimalwert oder VK Konstante angeben.
+       
+Neuen Compiler *vsct.exe*, kompiliert Sie beide *CTC* und *VSCT* Dateien. Die alte *ctc.exe* Compiler, jedoch nicht erkennen oder Kompilieren *VSCT* Dateien.
 
- Der neue Compiler, vsct.exe, CTC und VSCT-Dateien kompiliert. Der alte ctc.exe Compiler jedoch weder erkannt noch VSCT-Dateien zu kompilieren.
-
- Den Compiler vsct.exe können Sie um eine vorhandenen CTO-Datei in eine VSCT-Datei zu konvertieren. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Erstellen einer. VSCT-Datei aus einer vorhandenen. CTO-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+Können Sie die *vsct.exe* Compiler das Konvertieren einer vorhandenen *CTO* Eingabedatei in eine *VSCT* Datei. Weitere Informationen finden Sie unter [Vorgehensweise: erstellen eine VSCT-Datei aus einer vorhandenen CTO-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
 ## <a name="the-vsct-file-elements"></a>Die Elemente der VSCT-Datei
- Die Befehlstabelle weist die folgenden Hierarchie und die folgenden Elemente:
+ Die Befehlstabelle weist die folgende Hierarchie und die folgenden Elemente:
 
- [CommandTable Element](../../extensibility/commandtable-element.md) – stellt alle Befehle, Menügruppen und Menüs, die das VSPackage zugeordnet.
+ [CommandTable-Element](../../extensibility/commandtable-element.md): stellt alle Befehle, Menügruppen und Menüs, die das VSPackage zugeordnet.
 
- [Element "extern"](../../extensibility/extern-element.md) – verweist auf externe h-Dateien, die mit der VSCT-Datei zusammengeführt werden sollen.
+ [Extern-Element](../../extensibility/extern-element.md): verweist auf externe .h-Dateien, die Sie zusammenführen möchten die *VSCT* Datei.
 
- [Include-Element](../../extensibility/include-element.md) – verweist auf zusätzlicher Headerdateien (. h) zusammen mit your.vsct-Datei kompiliert werden sollen. Eine VSCT-Datei zählen h-Dateien, enthält die Konstanten an, die definieren Befehle, Menügruppen und Menüs, die den IDE- oder einem anderen VSPackage bereitstellt.
+ [Include-Element](../../extensibility/include-element.md): verweist auf zusätzlichen Header (. h)-Dateien, die Sie zusammen mit kompilieren möchten Ihre *VSCT* Datei. Ein *VSCT* Datei zählen *h* Dateien, die Konstanten an, definieren Befehle, Menügruppen und Menüs, die die IDE oder einem anderen VSPackage bereitstellt.
 
- [Befehle Element](../../extensibility/commands-element.md) – stellt alle von der einzelnen Befehle, die ausgeführt werden können. Jeder Befehl verfügt über die folgenden vier untergeordneten Elemente:
+ [Commands-Element](../../extensibility/commands-element.md): stellt alle der einzelnen Befehle, die ausgeführt werden können. Jeder Befehl verfügt über die folgenden vier untergeordneten Elemente:
 
- [Menüs Element](../../extensibility/menus-element.md) – alle Menüs und Symbolleisten im VSPackage darstellt. Menüs sind Container für Gruppen von Befehlen.
+ [Menus-Element](../../extensibility/menus-element.md): stellt alle Menüs und Symbolleisten in das VSPackage. Menüs sind Container für Gruppen von Befehlen.
 
- [Element für Gruppen](../../extensibility/groups-element.md) – alle Gruppen im VSPackage darstellt. Gruppen sind Sammlungen der einzelnen Befehle.
+ [Groups-Element](../../extensibility/groups-element.md): alle Gruppen im VSPackage darstellt. Gruppen sind Sammlungen der einzelnen Befehle.
 
- [Schaltflächen Element](../../extensibility/buttons-element.md) – alle Schaltflächen und Menüelementen im VSPackage darstellt. Schaltflächen sind visuelle Steuerelemente, die Befehle zugeordnet werden können.
+ [Buttons-Element](../../extensibility/buttons-element.md): stellt alle Schaltflächen und Menüelemente im VSPackage. Schaltflächen sind visuellen Steuerelementen, die mit den Befehlen zugeordnet werden können.
 
- [Bitmaps Element](../../extensibility/bitmaps-element.md) – stellt alle die Bitmaps für alle Schaltflächen im VSPackage. Bitmaps sind Bilder, die neben oder auf die Befehlsschaltflächen, je nach Kontext angezeigt.
+ [Bitmaps-Element](../../extensibility/bitmaps-element.md): stellt alle die Bitmaps für alle Schaltflächen im VSPackage. Bitmaps sind Bilder, die neben oder auf die Befehlsschaltflächen, je nach Kontext anzeigen.
 
- [CommandPlacements Element](../../extensibility/commandplacements-element.md) – gibt an, dass zusätzliche Standorte, in dem die einzelnen Befehle in den Menüs Ihres VSPackage positioniert werden soll.
+ [CommandPlacements-Element](../../extensibility/commandplacements-element.md): Gibt an zusätzlichen Standorten, in denen die einzelnen Befehle in den Menüs Ihres VSPackage positioniert werden soll.
 
- [VisibilityConstraints Element](../../extensibility/visibilityconstraints-element.md) – gibt an, und zwar unabhängig davon, ob ein Befehl zeigt überhaupt Zeiten oder nur in bestimmten Kontexten, z. B. bei einem bestimmten Dialogfeld oder Fenster angezeigt wird. Menüs und Befehle, die keinen für dieses Element Wert zeigt nur, wenn der angegebene Kontext aktiv ist. Das Standardverhalten besteht, um den Befehl jederzeit anzuzeigen.
+ [VisibilityConstraints-Element](../../extensibility/visibilityconstraints-element.md): Gibt an, und zwar unabhängig davon, ob ein Befehl überhaupt zeigt an, oder nur in bestimmten Kontexten wie z. B. wenn ein bestimmtes Dialogfeld oder Fenster angezeigt wird. Menüs und Befehle, die einen Wert für dieses Element zeigt nur, wenn der angegebene Kontext aktiv ist. Das Standardverhalten ist, um den Befehl jederzeit anzuzeigen.
 
- [Schlüsselbindungen Element](../../extensibility/keybindings-element.md) – gibt alle schlüsselbindungen für die Befehle an. D. h. ein oder mehrere-Tastenkombinationen, die gedrückt werden müssen, führen Sie den Befehl ein, z. B. **STRG + S**.
+ [KeyBindings-Element](../../extensibility/keybindings-element.md): Gibt an, alle tastenzuordnungen für die Befehle. D. h. ein oder mehrere Tastenkombinationen, die gedrückt werden müssen, führen Sie den Befehl ein, z. B. **STRG**+**S**.
 
- [UsedCommands Element](../../extensibility/usedcommands-element.md) – Informs der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ab, obwohl es sich bei der angegebene Befehl durch anderen Code implementiert wird, wenn das aktuelle VSPackage aktiv ist, die Befehl Implementierung bereitstellt.
+ [UsedCommands-Element](../../extensibility/usedcommands-element.md): informiert den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung aus, auch wenn der angegebene Befehl durch anderen Code implementiert wird, wenn das aktuelle VSPackage aktiv ist, die befehlsimplementierung enthält.
 
- `Symbols Element` – Enthält die Symbolnamen und die GUID-IDs für alle Befehle im Paket.
+ [Symbols-Element](../../extensibility/symbols-element.md): enthält die Symbolnamen und die GUID-IDs für alle Ihre Befehle im Paket.
 
-## <a name="vsct-file-design-guidelines"></a>. Richtlinien zum Entwerfen von VSCT-Datei
- Befolgen Sie diese Richtlinien, um eine VSCT-Datei erfolgreich zu entwerfen.
+## <a name="vsct-file-design-guidelines"></a>Richtlinien zum Entwerfen von VSCT-Datei
+ Erfolgreich Entwurf eine *VSCT* Datei, die folgenden Richtlinien.
 
--   Befehle können nur in Gruppen platziert werden, nur in Menüs in Gruppen platziert werden können und Menüs in Gruppen nur platziert werden können. Nur Menüs werden tatsächlich angezeigt, in der IDE, Gruppen und Befehle sind nicht.
+-   Befehle können nur in Gruppen befinden, Gruppen platziert werden können, nur in Menüs und Menüs in Gruppen nur platziert werden können. Nur die Menüs werden tatsächlich angezeigt, in der IDE, Gruppen und Befehle nicht.
 
--   Untermenüs ein Menü können nicht direkt zugewiesen werden, aber Sie müssen zu einer Gruppe, die wiederum ein Menü zugewiesen wird zugewiesen werden.
+-   Untermenüs ein Menü können nicht direkt zugewiesen werden, jedoch müssen zugewiesen werden, um eine Gruppe, die wiederum zu einem Menü zugewiesen wird.
 
--   Befehle, Untermenüs und Gruppen können eine Überordnung Gruppe oder im Menü mithilfe des übergeordneten Felds ihrer definierenden Richtlinie zugewiesen werden.
+-   Befehle, Untermenüs und Gruppen können eine übergeordnete Gruppe oder ein Menü, die mithilfe des übergeordneten Felds ihrer Richtlinie definieren zugewiesen werden.
 
--   Organisieren eine Befehlstabelle ausschließlich über die übergeordnete Felder in den Richtlinien ist eine wichtige Einschränkung. Die Direktiven, die Objekte definieren können nur ein übergeordnetes Element-Argument annehmen.
+-   Organisieren eine Befehlstabelle ausschließlich über die übergeordnete Felder in den Richtlinien ist eine wichtige Einschränkung. Die Anweisungen, die Objekte zu definieren, können nur ein übergeordnetes Argument dauern.
 
--   Wiederverwenden von Befehlen, Gruppen oder Untermenüs erfordert die Verwendung einer neuen Richtlinie so erstellen Sie eine neue Instanz des Objekts mit einem eigenen `GUID:ID` Paar.
+-   Wiederverwenden von Befehlen, Gruppen oder Untermenüs erfordert die Verwendung von eine neue Richtlinie erstellen Sie eine neue Instanz des Objekts durch einen eigenen `GUID:ID` Paar.
 
--   Jede `GUID:ID` Paar muss eindeutig sein. Wiederverwenden eines Befehls, der z. B. in einem Menü, eine Symbolleiste oder in einem Kontextmenü platziert wurde, erfolgt durch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
+-   Jede `GUID:ID` -Paar muss eindeutig sein. Wiederverwenden eines Befehls, der z. B. in einem Menü, eine Symbolleiste, oder in einem Kontextmenü platziert wurde, erfolgt durch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
 
--   Befehle und Untermenüs können auch zu mehreren Gruppen zugewiesen werden, und Gruppen können zugewiesen werden, in mehreren Menüs mit der [Commands-Element](../../extensibility/commands-element.md).
+-   Befehle und Untermenüs können auch zu mehreren Gruppen zugewiesen werden, und mehrere Menüs, die mithilfe von Gruppen zugewiesen werden die [Commands-Element](../../extensibility/commands-element.md).
 
-## <a name="vsct-file-notes"></a>. Anmerkungen zu dieser VSCT-Datei
- Wenn Sie Änderungen in einer VSCT-Datei vornehmen, nachdem Sie sowohl kompilieren Sie ihn und fügen Sie ihn in eine systemeigene Satelliten-DLL, führen Sie **devenv.exe/Setup /nosetupvstemplates**. Dies erzwingt, dass die VSPackage-Ressourcen, die in der experimentellen Registrierung gelesen werden und die interne Datenbank, die beschreibt angegeben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neu erstellt werden.
+## <a name="vsct-file-notes"></a>Anmerkungen zu dieser VSCT-Datei
+ Wenn Sie Änderungen vornehmen einer *VSCT* Datei nach dem Sie sowohl kompilieren Sie ihn und fügen Sie ihn in einer systemeigenen Satelliten-DLL, führen Sie **devenv.exe/Setup /nosetupvstemplates**. Dies erzwingt, dass dies der Fall ist die VSPackage-Ressourcen, die in der experimentellen Registrierung abgelesen werden, und die interne Datenbank, die beschreibt, angegeben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neu erstellt werden.
 
- Während der Entwicklung ist es möglich, dass mehrere VSPackage-Projekte erstellt und in der experimentellen Registrierungsstruktur, die zu verwirrend übersichtliche in der IDE führen kann registriert werden. Um dieses Problem zu beheben, können Sie die experimentelle Struktur zurücksetzen, um die Standardeinstellungen, entfernen Sie alle registrierten VSPackages und alle Änderungen, die sie der IDE möglicherweise vorgenommen hat. Verwenden Sie die experimentelle Struktur zum Zurücksetzen der CreateExpInstance.exe-Tool, das in Visual Studio SDK enthalten ist. Sie finden ihn unter
+ Während der Entwicklung ist es möglich, dass mehrere VSPackage-Projekte erstellt und in der experimentellen Registrierungsstruktur, die zu verwirrend Überfrachtung in der IDE führen kann registriert werden. Um dieses Problem zu beheben, können Sie die experimentelle Struktur zurücksetzen, um die Standardeinstellungen, entfernen Sie alle registrierten VSPackages und alle Änderungen, die sie der IDE vorgenommen haben, können. Verwenden Sie zum Zurücksetzen der experimentellen Struktur das CreateExpInstance.exe-Tool, das in Visual Studio SDK enthalten ist. Sie finden sie unter:
 
- **% PROGRAMFILES (x 86) %\Visual Studio \<Version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
+ *% PROGRAMFILES (x 86) %\Visual Studio\\\<Version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
- Führen Sie das Tool mithilfe der Befehlszeile **CreateExpInstance/Reset**. Denken Sie daran, dass dieses Tool aus der experimentellen Struktur allen registrierten VSPackages, die normalerweise nicht mit installierten entfernt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Führen Sie das Tool mithilfe des Befehls **CreateExpInstance/Reset**. Denken Sie daran, dass dieses Tool aus der experimentellen Struktur, alle registrierte VSPackages, die normalerweise nicht entfernt mit installierten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

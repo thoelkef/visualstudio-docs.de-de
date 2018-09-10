@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Benutzeroberflächenautomatisierungs-Modell | Microsoft Docs
+title: Übersicht über das Automatisierungsmodell | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,27 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9369bb6074bb294223051ba7dfa158648fe0cad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8d6f5844f47e867d7c0442c9bb86e3722b40b27
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134746"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498012"
 ---
-# <a name="automation-model-overview"></a>Übersicht über die Benutzeroberflächenautomatisierungs-Modell
-Das Automatisierungsmodell besteht aus einem Satz von Objekten, die für die Sie eine Visual Studio-add-in oder eine Erweiterung schreiben können. Ein Add-in ist eine Anwendung, die Visual Studio-Umgebung bearbeiten kann, und Automatisieren allgemeiner Aufgaben. Eine Visual Studio-Erweiterung kann erstellen benutzerdefinierte Komponenten für Visual Studio oder die Funktionalität des standard-Komponenten, z. B. den Texteditor hinzufügen.  
+# <a name="automation-model-overview"></a>Übersicht über das Automatisierungsmodell
+Das Automatisierungsmodell besteht aus einem Satz von Objekten, die mit denen Sie ein Visual Studio-add-in oder eine Erweiterung schreiben können. Ein Add-in ist eine Anwendung, die Visual Studio-Umgebung bearbeiten kann, und Automatisieren allgemeiner Aufgaben. Visual Studio-Erweiterung kann Erstellen von benutzerdefinierten Komponenten für Visual Studio oder die Funktionalität des standard-Komponenten wie z. B. den Text-Editor hinzufügen.  
   
 ## <a name="objects-in-the-automation-model"></a>Objekte im Automatisierungsmodell  
- Das Automatisierungsmodell besteht aus verbundene Gruppen von Objekten, die wichtigsten Aspekte der allgemeinen Umgebung steuern. Im folgenden finden ein Diagramm mit den umfangreichen Satz von Objekten, die das Automatisierungsmodell verfassen.  
+ Das Automatisierungsmodell bestehen aus miteinander verbundene Gruppen von Objekten, die wesentliche Merkmale der gemeinsamen Umgebung zu steuern. Das folgende Diagramm zeigt den umfangreichen Satz von Visual Studio-Objekten, aus denen das Automatisierungsmodell.  
   
  ![Diagramm des Visual Studio-Automatisierung](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "VsVisualStudioAutomationObjectChart")  
-Visual Studio-Automatisierungsobjekte  
   
- Weitere Informationen finden Sie unter [Erweitern der Visual Studio-Umgebung](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
+ Weitere Informationen finden Sie unter [Erweitern von Visual Studio-Umgebung](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
   
- Die Umgebung bietet ein Modell für die unterschiedlichen Funktionsbereichen an. Es ist z. B. ein Codemodell für verschiedene Elemente, die sich im Code befindet. Es ist ein Dokumentmodell für verschiedene Dokumentelementen. Ein Bereich, der Projektbereich ist von besonderem Interesse für VSPackage-Anbieter. Sollen die neuen Projekttypen, die im großen und ganzen genauso wie zum Automatisierungsmodell beitragen wahrscheinlich [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zum Automatisierungsmodell beitragen. Prozess umrandet [bereitstellen Automatisierung für VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
+ Die Umgebung bietet ein Modell für verschiedene Funktionsbereiche. Es ist z. B. ein Codemodell für verschiedene Elemente, die Sie ggf. im Code finden. Es gibt ein Dokumentmodell für die verschiedenen Elemente des Dokuments. Ein Bereich, der Projektbereich ist von besonderem Interesse für VSPackage-Anbieter. Möchten Sie wahrscheinlich Ihre neue Projekttypen mitwirken am Automatisierungsmodell in die gleiche Weise wie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zum Automatisierungsmodell beitragen. Dass der Prozess in beschriebene [Bereitstellen von Automatisierung für VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
   
- Orte, wo Sie in Betracht ziehen können Erweitern des Automatisierungsmodells der Umgebung:  
+ Stellen, in dem Sie die Erweitern des Automatisierungsmodells der Umgebung berücksichtigen können:  
   
 -   Projekt  
   
@@ -43,8 +42,9 @@ Visual Studio-Automatisierungsobjekte
 -   Code  
   
 -   Build  
+
   
- Weitere Informationen zur Automatisierung finden Sie unter [Automatisierung und Erweiterbarkeit für Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Dieses Dokument und die Dokumente enthält es Links, um Ihnen dabei helfen, Entscheidungen zur Automatisierung für Ihr VSPackage bereitzustellen sollten.  
+Weitere Informationen zu Automation finden Sie unter [Automatisierung und Erweiterbarkeit für Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6). In diesem Dokument und die Dokumente wird Links, um Ihnen zu treffen von Entscheidungen in Bezug auf, wie Sie Automation für das VSPackage bereitgestellt werden sollen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Erstellen einer Add-Ins](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [Gewusst wie: Erstellen eines Add-Ins](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

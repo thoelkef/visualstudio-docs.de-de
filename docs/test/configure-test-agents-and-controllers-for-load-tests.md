@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967683"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176468"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
@@ -65,7 +65,7 @@ Der Testcontroller verwaltet zum Ausführen von Tests einen Satz von Test-Agents
 
 Der Testcontroller stellt eine allgemeine Architektur zum Ausführen von Tests bereit und verfügt über spezielle Funktionen zum Ausführen von Auslastungstests. Der Testcontroller sendet den Auslastungstest an alle Test-Agents und wartet, bis der Test von den Test-Agents initialisiert wurde. Wenn alle Test-Agents bereit sind, sendet der Testcontroller eine Nachricht an die Test-Agents, dass der Test gestartet werden soll.
 
-### <a name="test-agent"></a>Test Agent
+### <a name="test-agent"></a>Test-Agent
 
 Der Test-Agent wird als Dienst ausgeführt, der nach Anforderungen des Testcontrollers zum Starten eines neuen Tests lauscht. Wenn der Test-Agent eine Anforderung empfängt, startet der Test-Agent-Dienst einen Prozess zum Ausführen des Tests. Jeder Test-Agent führt den gleichen Auslastungstest aus.
 
@@ -73,7 +73,7 @@ Der Test-Agent wird als Dienst ausgeführt, der nach Anforderungen des Testcontr
 
  Der Test-Agent erhält als Eingabe einen Satz von Tests und einen Satz von Simulationsparametern. Ein Schlüsselkonzept besteht darin, dass Tests von den Computern unabhängig sind, auf denen sie ausgeführt werden.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Testcontroller- und Test-Agent-Verbindungspunkte
+## <a name="test-controller-and-test-agent-connection-points"></a>Verbindungspunkte zwischen Testcontrollern und Test-Agents
 
 In der folgenden Abbildung sind die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client dargestellt. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
 
@@ -81,11 +81,11 @@ In der folgenden Abbildung sind die Verbindungspunkte zwischen Testcontroller, T
 
  Weitere Informationen finden Sie unter [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Installationshinweise für Testcontroller und Test-Agents
+## <a name="test-controller-and-agent-installation-information"></a>Installationsinformationen für Testcontroller und Test-Agents
 
 Wichtige Informationen zu Hardware- und Softwareanforderungen für Testcontroller und Test-Agents, Verfahren zum Installieren dieser Komponenten und Konfigurieren der Umgebung für optimale Leistung finden Sie unter [Install and configure test agents (Installieren und Konfigurieren von Test-Agents)](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Verwenden des Testcontrollers und des Test-Agents bei Komponententests
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Verwenden des Testcontrollers und des Test-Agents bei Komponententests
 
 Nachdem Sie einen Testcontroller und mindestens einen Agent installiert haben, können Sie in der Testeinstellung für die Ausführung der Auslastungstests festlegen, ob eine Remoteausführung mit dem Testcontroller erfolgen soll. Darüber hinaus können Sie in der Testeinstellung die Daten- und Diagnoseadapter angeben, die mit der den Agents zugeordneten Rolle verwendet werden sollen.
 

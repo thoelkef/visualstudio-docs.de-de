@@ -1,21 +1,20 @@
 ---
-title: Tipps und Tricks für die Leistung von Visual Studio
-ms.date: 08/31/2017
+title: Tipps zum Verbessern der Leistung
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433534"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626668"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -40,7 +39,13 @@ Visual Studio benachrichtigt Sie in einer gelben Leiste, wenn die automatische W
 
 1. Deaktivieren Sie auf der Seite **Projects and Solution** (Projekte und Projektmappen)  > **Allgemein** das Kontrollkästchen **Reopen documents on solution load** (Dokumente beim Laden der Projektmappe erneut öffnen).
 
-Wenn Sie die automatische Wiederherstellung deaktivieren, können Sie mit [Gehe zu](../ide/go-to.md) schnell zu Dateien navigieren. Klicken Sie einfach auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen...**, oder drücken Sie **STRG**+**T**.
+Wenn Sie die automatische Dateiwiederherstellung deaktivieren, können Sie mit einem der [Gehe zu](../ide/go-to.md)-Befehlen schnell zu Dateien navigieren, die Sie öffnen möchten.
+
+- Für die allgemeine **Gehe zu**-Funktionalität klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**, oder drücken Sie **STRG**+**T**.
+
+- In Visual Studio 2017 Version 15.8 und höher können Sie in einer Projektmappe direkt zum Speicherort der letzten Bearbeitung wechseln, indem Sie auf **Bearbeiten** > **Gehe zu** > **Zum Speicherort der letzten Bearbeitung wechseln** bzw. **STRG**+**UMSCHALTTASTE**+**RÜCKTASTE** drücken.
+
+- Verwenden Sie in Visual Studio 2017 Version 15.8 und höher **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), um eine Liste der zuletzt besuchten Dateien in einer Projektmappe anzuzeigen. Wählen Sie **Bearbeiten** > **Gehe zu** > **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), oder drücken Sie **STRG**+**1**, **STRG**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurieren von Debugoptionen
 

@@ -1,5 +1,5 @@
 ---
-title: Passen Sie an, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt
+title: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,54 +15,54 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33871187"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758419"
 ---
-# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Passen Sie an, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt
+# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
-Beim Ziehen von Elementen aus der [Datenquellenfenster](add-new-data-sources.md) in einem Designer muss eine besondere kommt es zu einem: die Spaltennamen in der Beschriftung Bezeichnungen werden neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können ändern, wie in der folgenden Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.
+Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](add-new-data-sources.md) auf einen Designer, der eine besondere Überlegungen kommt ins Spiel: die Spaltennamen in den sind neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können anpassen, dass die Möglichkeit, die in der diese Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte im die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.
 
 > [!NOTE]
 > Dieser Registrierungsschlüssel ist nicht vorhanden, bis Sie ihn erstellen.
 
-Smart-captioning wird gesteuert, mit dem regulären Ausdruck, der den Wert des eingegebenen der **SmartCaptionExpression** Wert. Hinzufügen der **Daten-Designer** Registrierungsschlüssel überschreibt standardmäßig regulären Ausdruck, der Beschriftungstitel gesteuert. Weitere Informationen zu regulären Ausdrücken finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Smart-captioning wird gesteuert, mit dem regulären Ausdruck eingegeben haben, in den Wert des der **SmartCaptionExpression** Wert. Hinzufügen der **Datendesigner** Registrierungsschlüssel überschreibt die standardmäßige regulären Ausdruck, der Beschriftungstitel gesteuert. Weitere Informationen zu regulären Ausdrücken finden Sie unter [mithilfe von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Die folgende Tabelle beschreibt die Registrierungswerte, die Beschriftung Bezeichnungen zu steuern.
+Die folgende Tabelle beschreibt die Registrierungswerte, die die Beschriftung Bezeichnungen zu steuern.
 
 |Registrierungselement|Beschreibung|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|Der reguläre Ausdruck verwendet, um Ihre Muster übereinstimmen.|
-|**SmartCaptionReplacement**|Das Format zum Anzeigen von Gruppen der **SmartCaptionExpression**.|
-|**SmartCaptionSuffix**|Eine optionale Zeichenfolge, an das Ende der Beschriftung angefügt werden soll.|
+|**SmartCaptionExpression**|Der reguläre Ausdruck, die, den Sie verwenden, um Ihre Muster übereinstimmen.|
+|**SmartCaptionReplacement**|Das Format, das Gruppen angezeigt werden die **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Eine optionale Zeichenfolge zum Anfügen an das Ende der Beschriftung.|
 
-In der folgenden Tabelle sind die internen Standardeinstellungen für diese Registrierungswerte aufgeführt.
+In der folgende Tabelle sind die internen Standardeinstellungen für diese Registrierungswerte aufgeführt.
 
 |Registrierungselement|Standardwert|Erklärung|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Entspricht einem Kleinbuchstaben Zeichen, gefolgt von einem Großbuchstaben oder ein Unterstrich.|
-|**SmartCaptionReplacement**|$1 $2|$1 stellt keine Zeichen in der ersten Klammer des Ausdrucks übereinstimmen, und $2 stellt keine Zeichen in der zweiten Klammern abgeglichen. Der Ersatz erfolgt die erste Übereinstimmung, ein Leerzeichen und dann die zweite Übereinstimmung.|
-|**SmartCaptionSuffix**|:|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Angenommen, die Beschriftung wird `Company Name`, erleichtert das Suffix `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Entspricht einem Kleinbuchstaben Zeichen gefolgt von einem Großbuchstaben oder ein Unterstrich.|
+|**SmartCaptionReplacement**|**$1 $2**|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
+|**SmartCaptionSuffix**|**:**|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Wenn die Beschriftung wird z. B. `Company Name`, erleichtert das Suffix `Company Name:`|
 
 > [!CAUTION]
-> Sie sollten sich genau überlegen, wenn nichts im Registrierungs-Editor ausführen können. Sichern Sie die Registrierung vor der Bearbeitung. Wenn Sie den Registrierungs-Editor falsch verwenden, können zu schwerwiegende Problemen führen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich sind. Microsoft garantiert nicht, dass Probleme, die mithilfe des Registrierungs-Editors nicht ordnungsgemäß aufgelöst werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.
+> Sie sollten sehr vorsichtig, wenn alles in den Registrierungs-Editor ausführen können. Sichern Sie die Registrierung vor der Bearbeitung. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können zu schwerwiegende Problemen führen, die Neuinstallation des Betriebssystems erforderlich machen können. Microsoft garantiert nicht, dass Probleme, die Sie auslösen, indem Sie eine nicht ordnungsgemäße Verwendung des Registrierungs-Editors behoben werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.
 >
-> Im folgende Knowledge Base-Artikel enthält Anweisungen zum Bearbeiten, Sichern und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; En-us; 256986)
+> Im folgenden Knowledge Base-Artikel enthält Anweisungen zum Sichern, bearbeiten und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; En-us; 256986)
 
-## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Ändern des Verhaltens der intelligenten Untertiteln der Fenster "Datenquellen"
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Ändern des Verhaltens der intelligenten Untertitel im Datenquellen-Fenster
 
 1.  Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
 
-2.  Typ `regedit` in der **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
+2.  Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
 
-3.  Erweitern Sie die **HKEY_CURRENT_USER**, **Software**, **Microsoft**, **VisualStudio** Knoten.
+3.  Erweitern Sie die **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**Knoten.
 
 7.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Daten-Designer** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
+8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -74,37 +74,37 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 13. Mit der rechten Maustaste die **SmartCaptionReplacement** Wert ein, und wählen Sie **ändern**.
 
-14. Geben Sie die Ersetzung Zeichenfolge formatiert die Methode, die den regulären Ausdruck übereinstimmenden Muster angezeigt werden soll.
+14. Geben Sie die Ersetzung formatierte Zeichenfolge die Möglichkeit, die den regulären Ausdruck übereinstimmenden Muster angezeigt werden soll.
 
 15. Mit der rechten Maustaste die **SmartCaptionSuffix** Wert ein, und wählen Sie **ändern**.
 
 16. Geben Sie alle Zeichen, die am Ende der Beschriftung angezeigt werden sollen.
 
-    Das nächste Mal ziehen Sie Elemente aus der **Datenquellen** Fenster die Beschriftungstitel sind erstellt mithilfe der neuen Registrierungswerte bereitgestellt.
+    Das nächste Mal ziehen Sie Elemente aus der **Datenquellen** , die Beschriftungstitel werden erstellt unter Verwendung der neuen Registrierungswerte bereitgestellt.
 
-## <a name="turn-off-the-smart-captioning-feature"></a>Deaktivieren der intelligenten Untertiteln-Funktion
+## <a name="turn-off-the-smart-captioning-feature"></a>Deaktivieren Sie die intelligenten Untertitel-Funktion
 
 1.  Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
 
-2.  Typ `regedit` in der **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
+2.  Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
 
-3.  Erweitern Sie die **HKEY_CURRENT_USER**, **Software**, **Microsoft**, **VisualStudio** Knoten.
+3.  Erweitern Sie die **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**Knoten.
 
 7.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Daten-Designer** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
+8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Mit der rechten Maustaste die **SmartCaptionExpression** -Element aus, und wählen Sie **ändern**.
+11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie **ändern**.
 
 12. Geben Sie `(.*)` für den Wert. Dadurch wird die gesamte Zeichenfolge übereinstimmen.
 
-13. Mit der rechten Maustaste die **SmartCaptionReplacement** -Element aus, und wählen Sie **ändern**.
+13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie **ändern**.
 
-14. Geben Sie `$1` für den Wert. Dies ersetzt die Zeichenfolge mit den übereinstimmenden Wert, der die gesamte Zeichenfolge so, dass unverändert bleiben.
+14. Geben Sie `$1` für den Wert. Dies ersetzt die Zeichenfolge, mit der übereinstimmende Wert, der die gesamte Zeichenfolge ist, sodass es unverändert bleiben.
 
     Das nächste Mal ziehen Sie Elemente aus der **Datenquellen** Fenster werden die Beschriftungstitel mit unveränderter Beschriftung erstellt.
 

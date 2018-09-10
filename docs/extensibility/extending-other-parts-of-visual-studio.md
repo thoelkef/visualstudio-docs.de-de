@@ -1,5 +1,5 @@
 ---
-title: Erweitern von anderen Teilen von Visual Studio | Microsoft Docs
+title: Erweitern anderer Teile von Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c9da7eac05a489e027de30736e1baf449927d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133661"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639525"
 ---
-# <a name="extending-other-parts-of-visual-studio"></a>Erweitern von anderen Teilen von Visual Studio
-Es gibt viele weitere Teile der Visual Studio-Benutzeroberfläche, die Sie erweitern können. Hier erfahren Sie nur wenige.  
+# <a name="extend-other-parts-of-visual-studio"></a>Erweitern von anderen Teilen von Visual Studio
+Es gibt viele weitere Teile der Benutzeroberfläche von Visual Studio, die Sie erweitern können. Hier zeigen wir Ihnen ein Paar.  
   
-## <a name="creating-a-vspackage"></a>Erstellen eines VSPackage  
- Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie eine VSPackage hinzufügen: [erstellen eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+## <a name="create-a-vspackage"></a>Erstellen Sie ein VSPackage  
+ Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie eine VSPackage hinzufügen: [erstellen Sie eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
-## <a name="extending-the-toolbox"></a>Erweitern der Toolbox  
- Weitere Informationen Sie zum Hinzufügen von neuen Steuerelementen und anderen Elementen zur Toolbox und zum Verwenden der Funktionalität der Toolbox:  
+## <a name="extend-the-toolbox"></a>Erweitern der Toolbox  
+ Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:  
   
--   [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)  
+-   [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)  
   
 -   [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
-## <a name="extending-the-status-bar"></a>Erweitern Sie auf der Statusleiste  
- Weitere Informationen zum Lesen und Schreiben in der Statusleiste anzeigen und die Statusanzeige und wie Sie Animationen und andere Benutzeroberfläche bereitstellen: [Erweitern der Statusleiste](../extensibility/extending-the-status-bar.md).  
+## <a name="extend-the-status-bar"></a>Erweitern der Statusleiste  
+ Erfahren Sie, wie Lese- und Schreibberechtigungen für die Statusleiste und die Statusanzeige und Animationen und andere Benutzeroberfläche bereitstellen: [erweitern die Statusleiste](../extensibility/extending-the-status-bar.md).  
   
-## <a name="creating-custom-start-pages"></a>Erstellen benutzerdefinierte Startseiten  
- Erfahren Sie, wie Sie eine eigene Startseite, entweder von Grund auf neu oder von einem Beispiel für die Seite herunterladbare Start: [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
+## <a name="create-custom-start-pages"></a>Benutzerdefinierte Startseiten erstellen  
+ Erfahren Sie, wie Sie eine eigene Startseite, entweder von Grund auf neu oder aus einem herunterladbaren Start-Seite-Beispiel: [erstellen Sie eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="write-to-the-activity-log"></a>Schreiben Sie in das Aktivitätsprotokoll  
- Erfahren Sie, wie zum Schreiben in das Aktivitätsprotokoll: [Vorgehensweise: Verwenden Sie das Aktivitätsprotokoll](../extensibility/how-to-use-the-activity-log.md).
+ Erfahren Sie, wie zum Schreiben in das Aktivitätsprotokoll: [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).

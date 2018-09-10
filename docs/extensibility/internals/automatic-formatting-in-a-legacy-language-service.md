@@ -1,5 +1,5 @@
 ---
-title: Automatische Formatierung in einem Legacy-Sprachdienst | Microsoft Docs
+title: Automatische Formatierung in einem Legacysprachdienst | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e052c62afcf9551cc54373da15071fb3903fe950
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56910a984fabb3ac4825fd438be17745126692a6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126699"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500669"
 ---
-# <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatische Formatierung in einem Legacy-Sprachdienst
-Mithilfe der automatischen Formatierung, fügt ein Sprachdienst automatisch einen Codeausschnitt ein, wenn ein Benutzer beginnt, geben Sie ein Codekonstrukt bekannte.  
+# <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatische Formatierung in einem legacy-Sprachdienst
+Mithilfe der automatischen Formatierung Fügt ein Sprachdienst automatisch einen Codeausschnitt ein, wenn ein Benutzer damit beginnt, geben Sie ein bekanntes-Codekonstrukt.  
   
-## <a name="automatic-formatting-behavior"></a>Automatische Formatierungsverhalten  
- Wenn Sie z. B. eingeben `if`Sprachdiensts fügt automatisch die übereinstimmende geschweiften Klammern, oder wenn Sie die EINGABETASTE drücken, erzwingt des Sprachdiensts die Einfügemarke in der neuen Zeile auf die entsprechenden Einzugsebene, je nachdem, ob die vorangehenden Zeile wird ein neuer Bereich geöffnet.  
+## <a name="automatic-formatting-behavior"></a>Automatische Formatierung Verhalten  
+ Wenn Sie z. B. Typ *Wenn*, der Sprachdienst fügt automatisch die übereinstimmende geschweiften Klammern oder wenn Sie die EINGABETASTE drücken, erzwingt des Sprachdiensts die Einfügemarke in der neuen Zeile auf die entsprechenden Einzugsebene, je nach Gibt an, ob die vorangehende Zeile ein neuer Bereich geöffnet wird.  
   
- Der für den Rest des Sprachdiensts verwendete Befehlsfilter kann auch für die automatische Formatierung verwendet werden. Sie können auch Klammern hervorheben, durch den Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.  
+ Der Befehlsfilter verwendet, für den Rest des Sprachdiensts kann auch für die automatische Formatierung verwendet werden. Sie können auch Klammern hervorheben, durch den Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)
+ [Entwickeln eines Datendiensts legacysprache](../../extensibility/internals/developing-a-legacy-language-service.md)

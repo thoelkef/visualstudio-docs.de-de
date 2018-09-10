@@ -1,5 +1,5 @@
 ---
-title: ProjectType-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProjectType-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb16116994648ec70c770af7ca4932cd1443bd30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137881"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636751"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType-Element (Visual Studio-Vorlagen)
-Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
 > [!WARNING]
 >  Ab Visual Studio 2012 werden Projektvorlagen für C++ unterstützt. In Visual Studio 2010 und früheren Versionen werden sie für C++ nicht unterstützt.  
@@ -34,7 +34,7 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <ProjectType> CSharp/VisualBasic/VC/Web </ProjectType>  
 ```  
   
@@ -62,12 +62,12 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
   
 -   `VisualBasic`: Gibt an, dass von der Vorlage ein [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekt oder -Element erstellt wird.  
   
--   `Web`: Gibt an, dass von der Vorlage ein Webprojekt oder -element erstellt wird. Wenn die `ProjectType` Element dieser Wert enthält, die Sprache des Projekts oder Element gemäß der [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+-   `Web`: Gibt an, dass von der Vorlage ein Webprojekt oder -element erstellt wird. Wenn die `ProjectType` -Element diesen Wert enthält, wird die Sprache des Projekts oder Elements definiert, der [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Hinweise  
  `ProjectType` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
   
- Der Wert des der `ProjectType` Element gibt an, in dem die Vorlage befindet, in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld). Z. B. eine Vorlage mit einer `ProjectType` Wert `CSharp` wird unter der **Visual C#-** Knoten in der **neues Projekt** (Dialogfeld).  
+ Der Wert des der `ProjectType` Element gibt an, in dem die Vorlage befindet, in der **neues Projekt** oder **neues Element hinzufügen** im Dialogfeld. Beispielsweise eine Vorlage mit einer `ProjectType` Wert `CSharp` wird unter der **Visual C#-** Knoten in der **neues Projekt** im Dialogfeld.  
   
  Ein Vorlagenuntertyp kann mithilfe der [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) Element.  
   
@@ -99,6 +99,6 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md)

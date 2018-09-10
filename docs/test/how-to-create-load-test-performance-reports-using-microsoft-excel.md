@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751532"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380755"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Gewusst wie: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
 Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren. Zwei Typen von Auslastungstestberichten sind verfügbar:
 
@@ -36,13 +36,13 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
  Zudem kann die Excel-Arbeitsmappe für Projektbeteiligte freigegeben werden, damit diese zum Anzeigen des Berichts keine Verbindung mit der Datenbank herstellen müssen.
 
 > [!NOTE]
-> Sie können die Excel-Arbeitsmappe freigeben, aber nur Benutzer, die Visual Studio auf ihrem Computer installieren haben, können Arbeitsblätter ändern. Für andere Benutzer wird die Option **Auslastungstestbericht** im Office-Menüband nicht angezeigt. Sie haben jedoch die Möglichkeit, die Arbeitsmappe anzuzeigen.
+> Sie können die Excel-Arbeitsmappe freigeben, aber nur Benutzer, die Visual Studio auf ihrem Computer installieren haben, können Arbeitsblätter ändern. Für andere Benutzer wird die Option **Auslastungstestbericht** im **Office**-Menüband nicht angezeigt. Sie haben jedoch die Möglichkeit, die Arbeitsmappe anzuzeigen.
 
  Die folgende Abbildung zeigt ein Beispiel für einen Bericht, in dem ein Zusammenhang zwischen einer Abnahme der Transaktionsgeschwindigkeit (Einkaufskorb aktualisieren) und der rückläufigen Entwicklung des Indikators „% Prozessor“ dargestellt wird. Dies weist auf ein potenzielles Problem im Anwendungscode hin (nicht in der Datenbank oder im Netzwerk) und eignet sich für die Diagnose mit dem ASP.NET-Profiler.
 
  ![Mögliches Problem im Anwendungscode](../test/media/lt_excel.png)
 
- Excel-Berichte können entweder im Auslastungstest-Analyzer durch Klicken auf die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste oder in Excel mit der Option **Auslastungstestbericht** auf der Registerkarte **Auslastungstest** des Office-Menübands generiert werden.
+ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken auf die Schaltfläche **Excel-Bericht erstellen** in der Symbolleiste oder in Excel über die Option **Auslastungstestbericht** auf der Registerkarte **Auslastungstest** des **Office**-Menübands generiert werden.
 
 > [!NOTE]
 > Wenn Sie einem Auslastungstest Kommentare hinzufügen, werden sie im Excel-Bericht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests](../test/how-to-add-comments-on-a-completed-load-test.md).
@@ -56,13 +56,13 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
     1.  Nachdem Sie einen Auslastungstest abgeschlossen haben, klicken Sie auf der Seite **Auslastungstestergebnisse** auf der Symbolleiste auf die Schaltfläche **Excel-Bericht erstellen**.
 
         > [!NOTE]
-        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des Webleistungstest-Ergebnisviewers deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
+        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
 
      Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
      - oder - 
 
-    1.  Öffnen Sie Microsoft Excel, klicken Sie im Office-Menüband auf die Registerkarte **Auslastungstest**, und klicken Sie anschließend auf **Auslastungstestbericht**.
+    1.  Öffnen Sie Microsoft Excel, wählen Sie die Registerkarte **Auslastungstest** im **Office**-Menüband aus, und klicken Sie anschließend auf **Auslastungstestbericht**.
 
          Der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
@@ -111,13 +111,13 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
     1.  Nachdem Sie einen Auslastungstest abgeschlossen haben, klicken Sie auf der Seite **Auslastungstestergebnisse** auf der Symbolleiste auf die Schaltfläche **Excel-Bericht erstellen**.
 
         > [!NOTE]
-        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des Webleistungstest-Ergebnisviewers deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
+        > Wenn die Schaltfläche **Excel-Bericht erstellen** auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** deaktiviert ist, müssen Sie ggf. Microsoft Excel einmal ausführen, damit eine Aktivierung erfolgt. Wenn Visual Studio Enterprise installiert wird, wird das Visual Studio Enterprise-Auslastungstest-Add-In auf den Computer für Microsoft Excel kopiert. Microsoft Excel muss jedoch ausgeführt werden, um den Installationsvorgang für das Add-In abzuschließen.
 
      Microsoft Excel wird geöffnet, und der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
      - oder - 
 
-    1.  Öffnen Sie Microsoft Excel, klicken Sie im Office-Menüband auf die Registerkarte **Auslastungstest**, und klicken Sie anschließend auf **Auslastungstestbericht**.
+    1.  Öffnen Sie Microsoft Excel, wählen Sie die Registerkarte **Auslastungstest** im **Office**-Menüband aus, und klicken Sie anschließend auf **Auslastungstestbericht**.
 
          Der **Assistent zum Generieren eines Auslastungstestberichts** wird angezeigt.
 
@@ -142,7 +142,7 @@ Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei od
     > [!TIP]
     > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: "Ziel" und "Berichtsname". Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter „Indikatorensätze verwalten“ die Eigenschaft „Computertags“ in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit
+## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 
 Auslastungstestergebnisse und -berichte enthalten potenziell sicherheitsrelevante Informationen, die für einen Angriff auf Ihren Computer oder Ihr Netzwerk verwendet werden können. Auslastungstestergebnisse und -berichte enthalten Computernamen und Verbindungszeichenfolgen. Seien Sie sich dessen bewusst, wenn Sie Auslastungstestberichte für andere freigeben.
 

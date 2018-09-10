@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925624"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924446"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Gewusst wie: Erstellen und Ändern von MIP-Ebenen
+# <a name="how-to-create-and-modify-mip-levels"></a>Vorgehensweise: Erstellen und Ändern von MIP-Ebenen
 Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *MIP-Ebenen* für den Detaillierungsgrad (LOD) des Texturraums zu generieren und zu ändern.
 
 ## <a name="generating-mip-levels"></a>Generieren von MIP-Ebenen
@@ -25,9 +25,9 @@ Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *
 
 #### <a name="to-generate-mip-levels"></a>So generieren Sie MIP-Ebenen
 
-1.  Erstellen Sie eine Basistextur, wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben. Um bestmögliche Ergebnisse zu erzielen, geben Sie eine Textur an, deren Breite und Höhe der Potenz 2 entsprechen, z. B. 256, 512, 1024 usw.
+1.  Erstellen Sie wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben eine Basistextur. Um bestmögliche Ergebnisse zu erzielen, geben Sie eine Textur an, deren Breite und Höhe der Potenz 2 entsprechen, z. B. 256, 512, 1024 usw.
 
-2.  Generieren Sie die MIP-Ebenen. Klicken Sie in der Symbolleiste auf **Bildbearbeitungsmodus**, und wählen dann die Optionen **Erweitert**, **Extras**, und **MIPS generieren** aus.
+2.  Generieren Sie die MIP-Ebenen. Klicken Sie auf der Symbolleiste des **Bildbearbeitungsmodus** auf **Erweitert** > **Extras** > **MIPS generieren**.
 
      Beachten Sie, dass die Schaltflächen **Zur nächsten MIP-Ebene wechseln** und **Zur vorherigen MIP-Ebene wechseln** jetzt auf der Symbolleiste **Bildbearbeitungsmodus** angezeigt werden. Wenn das Fenster **Eigenschaften** angezeigt wird, beachten Sie auch, dass die schreibgeschützten Eigenschaften **Mip-Ebene** und **Anzahl der Mip-Ebenen** nun in den Bildeigenschaften angezeigt werden.
 
@@ -45,4 +45,4 @@ Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md)
+- [Vorgehensweise: Erstellen einer einfachen Textur](../designers/how-to-create-a-basic-texture.md)

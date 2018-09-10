@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978218"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468698"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Statische Eigenschaftenfunktionen
 
-In Ihrem Buildskript können Sie auf die statischen Eigenschaften und Methoden vieler Systemklassen zugreifen. Um den Wert einer statischen Eigenschaft abzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse und *Property* der Name der Eigenschaft ist.
+In Ihrem Buildskript können Sie auf die statischen Eigenschaften und Methoden vieler Systemklassen zugreifen. Um den Wert einer statischen Eigenschaft abzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse und \<Property> der Name der Eigenschaft ist.
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaf
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse, *Method* der Name der Methode und *(Parameter)* die Parameterliste für die Methode ist:
+Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse, \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist:
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -119,7 +119,7 @@ Außerdem können Sie die folgenden statischen Methoden und Eigenschaften verwen
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Aufrufen von Instanzmethoden für statische Eigenschaften
 
-Wenn Sie auf eine statische Eigenschaft zugreifen, die eine Objektinstanz zurückgibt, können Sie die Instanzmethoden dieses Objekts aufrufen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse, *Property* der Name der Eigenschaft, *Method* der Name der Methode und *(Parameter)* die Parameterliste für die Methode ist:
+Wenn Sie auf eine statische Eigenschaft zugreifen, die eine Objektinstanz zurückgibt, können Sie die Instanzmethoden dieses Objekts aufrufen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Class> der Name der Systemklasse, \<Property> der Name der Eigenschaft, \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist:
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaf
 
 ### <a name="msbuild-property-functions"></a>MSBuild-Eigenschaftenfunktionen
 
-In Ihrem Build kann auf mehrere statische Methoden zugegriffen werden, um Unterstützung für arithmetische, bitweise logische und Escapezeichen bereitzustellen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Method* der Name der Methode und *Parameter* die Parameterliste für die Methode ist.
+In Ihrem Build kann auf mehrere statische Methoden zugegriffen werden, um Unterstützung für arithmetische, bitweise logische und Escapezeichen bereitzustellen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei \<Method> der Name der Methode und (\<Parameters>) die Parameterliste für die Methode ist.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -144,12 +144,12 @@ $([MSBuild]::Method(Parameters))
 Um beispielsweise zwei Eigenschaften mit numerischen Werten zu addieren, verwenden Sie den folgenden Code.
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 
-|Funktionssignatur|description|
+|Funktionssignatur|Beschreibung |
 |------------------------|-----------------|
 |double Add(double a, double b)|Addiert zwei double-Werte.|
 |long Add(long a, long b)|Addiert zwei long-Werte.|
@@ -261,7 +261,7 @@ Die Syntax für diese Eigenschaftenfunktion ist wie folgt:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Das Windows-Betriebssystem mit 64 Bit speichert einen HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node-Registrierungsschlüssel, der eine HKEY_LOCAL_MACHINE\SOFTWARE-Registrierungsansicht für 32-Bit-Anwendungen darstellt.
+Das Windows-Betriebssystem mit 64 Bit speichert einen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**-Registrierungsschlüssel, der eine **HKEY_LOCAL_MACHINE\SOFTWARE**-Registrierungsansicht für 32-Bit-Anwendungen darstellt.
 
 Eine 32-Bit-Anwendung, die unter WOW64 ausgeführt wird, greift standardmäßig auf die 32-Bit-Registrierungsansicht zu, und eine 64-Bit-Anwendung greift auf die 64-Bit-Registrierungsansicht zu.
 
@@ -279,7 +279,7 @@ Nachfolgend finden Sie ein Beispiel:
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-ruft die SLRuntimeInstallPath-Daten des ReferenceAssemblies-Schlüssels ab und such zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
+ruft die **SLRuntimeInstallPath**-Daten des **ReferenceAssemblies**-Schlüssels ab und sucht zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>Siehe auch
 
 [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
-[MSBuild-Übersicht](../msbuild/msbuild.md)
+
+[Übersicht über MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: Project-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Project-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139262"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639138"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
-Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.  
+Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.  
   
  \<VSTemplate>  
  \<TemplateContent >  
@@ -49,17 +49,17 @@ Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der ZIP-Vorlagendatei.|  
+|`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der Vorlage *ZIP* Datei.|  
 |`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob die Projektdatei Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein.|  
 |`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen der Projektdatei an, wenn ein Projekt aus der Vorlage erstellt wird.|  
-|`IgnoreProjectParameter`|Optionales Attribut.<br /><br /> Gibt an, ob das Projekt der aktuellen Projektmappe hinzugefügt werden soll. Wenn der Wert der benutzerdefinierten Parameter "$*MyCustomParameter*$" vorhanden ist in der Parameterdatei Ersatz das Projekt wird erstellt, aber nicht als Teil der gerade geöffneten Projektmappe hinzugefügt.|  
+|`IgnoreProjectParameter`|Optionales Attribut.<br /><br /> Gibt an, ob das Projekt der aktuellen Projektmappe hinzugefügt werden soll. Wenn der Wert der benutzerdefinierten Parameter "$*MyCustomParameter*$" vorhanden ist in der Parameterdatei ersetzen, das Projekt erstellt werden, jedoch nicht als Teil der aktuell geöffneten Projektmappe hinzugefügt.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |[Ordner](../extensibility/folder-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt einen Ordner auf dem Projekt hinzugefügt.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt eine Datei zu einem Projekt hinzugefügt.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt eine Datei zu einem Projekt hinzufügen.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
@@ -70,11 +70,11 @@ Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.
 ## <a name="remarks"></a>Hinweise  
  `Project` ist ein optionales untergeordnetes Element von `TemplateContent`.  
   
- Die `Project` Element wird zum Angeben eines Projekts verwendet und ist daher nur in Projektvorlagen gültig.  
+ Die `Project` Element wird zum Festlegen ein Projekts verwendet werden soll, und aus diesem Grund ist nur gültig, in-Projektvorlagen.  
   
- `Project` Elemente können besitzen [Ordner](../extensibility/folder-element-visual-studio-project-templates.md) untergeordnete Elemente oder [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) untergeordnete Elemente, aber keine Kombination aus beiden `Folder` und `ProjectItem` untergeordnete Elemente.  
+ `Project` Elemente können besitzen [Ordner](../extensibility/folder-element-visual-studio-project-templates.md) untergeordnete Elemente oder [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) untergeordnete Elemente, aber nicht auf einer Kombination dieser beiden `Folder` und `ProjectItem` untergeordneten Elemente.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Benennt automatisch in der Projektdateiname anhand des Namens eingegeben haben, vom Benutzer in der **neues Projekt** (Dialogfeld). Verwenden der `TargetFileName` Attribut, wenn Sie einen alternativen Dateinamen für die mit der Vorlage erstellten Projektdateien bereitstellen möchten.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Benennt automatisch auf Grundlage des Namens eingegeben haben, vom Benutzer im Namen der Projektdatei die **neues Projekt** Dialogfeld. Verwenden der `TargetFileName` Attribut, wenn Sie einen alternativer Dateiname für Projektdateien, die mit der Vorlage erstellte bereitstellen möchten.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
@@ -104,7 +104,7 @@ Gibt an, die Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [ProjectItem-Element (Visual Studio-Projektvorlagen)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Folder-Element (Visual Studio-Projektvorlagen)](../extensibility/folder-element-visual-studio-project-templates.md)

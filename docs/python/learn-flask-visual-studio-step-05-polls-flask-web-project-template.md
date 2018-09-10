@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752164"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637616"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Tutorial, Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
 **Vorheriger Schritt:[ Verwenden der vollständigen Vorlage „Flask-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -29,22 +29,22 @@ In diesem Schritt wird Folgendes erläutert:
 > [!div class="checklist"]
 > - Erstellen eines Projekts von der Vorlage und Initialisieren der Datenbank (Schritt 5–1)
 > - Grundlegendes zu Datenmodellen (Schritt 5–2)
-> - Grundlegendes zu den Sicherungsdatenspeichern (Schritt 5–3)
+> - Grundlegendes zu den Sicherungsdatenspeichern (Schritt 5.3)
 > - Grundlegendes zu Umfragedetails und Ergebnisansichten (Schritt 5–4)
 
-Visual Studio projiziert ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“, die eine identische App erzeugt, aber die Jade-Erweiterung für die Jinja-Vorlagen-Engine verwendet. Weitere Informationen finden Sie unter [Schritt 4 – Die Vorlage „Flask/Jade-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
+Visual Studio bietet ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“, die eine identische App erzeugt, aber die Jade-Erweiterung für die Jinja-Vorlagen-Engine verwendet. Weitere Informationen finden Sie unter [Schritt 4 – Die Vorlage „Flask/Jade-Webprojekt“](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
 ## <a name="step-5-1-create-the-project"></a>Schritt 5–1: Erstellen des Projekts
 
-1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe „LearningFlask“, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
+1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningFlask**, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
-1. Suchen Sie im Dialogfeld „Neues Projekt“ die Vorlage „Fragt ein Flask-Webprojekt ab“, und wählen Sie sie aus. Nennen Sie das Projekt „FlaskPolls“, und klicken Sie auf **OK**.
+1. Suchen Sie im Dialogfeld „Neues Projekt“ die Vorlage **Fragt ein Flask-Webprojekt ab**, und wählen Sie sie aus. Nennen Sie das Projekt **FlaskPolls**, und klicken Sie auf OK.
 
-1. Wie die anderen-Projektvorlagen in Visual Studio enthält die Vorlage „Fragt ein Flask-Webprojekt ab“ die Datei `requirements.txt`. In einer Visual Studio-Eingabeaufforderung müssen Sie angeben, wo diese Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen. (Diese Vorlage erfordert Flask sowie die Pakete „azure-storage“ und „pymongo“. Die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“ erfordert außerdem pyjade.)
+1. Wie die anderen Projektvorlagen in Visual Studio enthält die Vorlage „Fragt ein Flask-Webprojekt ab“ eine Datei namens *requirements.txt*. Visual Studio fragt, wohin diese Abhängigkeiten installiert werden sollen. Wählen Sie die Option **In einer virtuellen Umgebung installieren** aus. Klicken Sie im Dialogfeld **Virtuelle Umgebung hinzufügen** auf **Erstellen**, um die Standardwerte zu übernehmen. (Diese Vorlage erfordert Flask sowie die Pakete „azure-storage“ und „pymongo“. Die Vorlage „Fragt ein Flask/Jade-Webprojekt ab“ erfordert außerdem pyjade.)
 
-1. Legen Sie das Projekt „FlaskPolls“ als Standardprojekt für die Visual Studio-Projektmappe fest. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
+1. Legen Sie das Projekt **FlaskPolls** als Standardprojekt für die Visual Studio-Projektmappe fest. Klicken Sie hierzu mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, und wählen Sie die Option **Als Startprojekt festlegen** aus. Das fett angezeigte Startprojekt wird ausgeführt, wenn Sie den Debugger starten.
 
-1. Wählen Sie zum Ausführen des Servers **Debuggen > Debuggen starten** (F5) aus, oder verwenden Sie die Schaltfläche **Webserver** auf der Symbolleiste, um den Server auszuführen:
+1. Wählen Sie zum Ausführen des Servers **Debuggen** > **Debuggen starten** (**F5**) aus, oder verwenden Sie hierzu die Schaltfläche **Webserver** auf der Symbolleiste:
 
     ![Symbolleisten-Schaltfläche „Webserver ausführen“ in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio projiziert ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojek
 
     ![Vollständige Ansicht der App „Fragt ein Flask-Webprojekt ab“](media/flask/step06-full-app-view.png)
 
-1. Auf der Startseite initialisiert die Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) den Datenspeicher der App mit drei verschiedenen Umfragen, die auf der Seite `models/samples.json` beschrieben werden. Standardmäßig verwendet die App eine In-Memory-Datenbank (wie auf der Seite „Info“ dargestellt), die bei jedem Neustart der App zurückgesetzt wird. Die App enthält ebenfalls Code, um wie im Verlauf dieses Artikels beschrieben mit Azure Storage und MongoDB zu arbeiten.
+1. Auf der Homepage initialisiert die Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) den Datenspeicher der App mit drei verschiedenen Umfragen, die auf der Seite *models/samples.json* beschrieben werden. Standardmäßig verwendet die App eine In-Memory-Datenbank (wie auf der Seite „Info“ dargestellt), die bei jedem Neustart der App zurückgesetzt wird. Die App enthält ebenfalls Code, um wie im Verlauf dieses Artikels beschrieben mit Azure Storage und MongoDB zu arbeiten.
 
 1. Sobald Sie den Datenspeicher initialisiert haben, können Sie wie auf der Homepage dargestellt in den verschiedenen Umfragen abstimmen (die Navigationsleiste und die Fußzeile wurden aus Gründen der Übersichtlichkeit weggelassen):
 
@@ -68,7 +68,7 @@ Visual Studio projiziert ebenfalls die Vorlage „Fragt ein Flask/Jade-Webprojek
 
 1. Für die folgenden Abschnitte kann die App weiterhin ausgeführt werden.
 
-    Wenn Sie die App beenden und ein Commit der Änderungen in der Quellcodeverwaltung ([Commit changes to source control](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)) ausführen möchten, öffnen Sie zunächst im **Team Explorer** die Seite **Änderungen**. Klicken Sie mit der rechten Maustaste auf den Ordner für die virtuelle Umgebung (vermutlich `env`), und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
+    Wenn Sie die App beenden und [ein Commit der Änderungen für die Quellcodeverwaltung ausführen möchten](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), öffnen Sie zunächst im **Team Explorer** die Seite **Änderungen**. Klicken Sie mit der rechten Maustaste auf den Ordner für die virtuelle Umgebung (vermutlich **env**), und wählen Sie die Option **Diese lokalen Elemente ignorieren** aus.
 
 ### <a name="examine-the-project-contents"></a>Überprüfen des Projektinhalts
 
@@ -76,37 +76,37 @@ Wie bereits erwähnt. Viele Bestandteile eines auf der Grundlage der Vorlage „
 
 ## <a name="step-5-2-understand-the-data-models"></a>Schritt 5-2: Grundlegendes zu Datenmodellen
 
-Die Datenmodelle für die App sind Python-Klassen namens „Poll“ und „Choice“. Diese werden in `models/__init__.py` definiert. Eine Poll-Klasse stellt eine Frage dar, und mehrere Choice-Instanzen stellen die verfügbaren Antworten dar. Eine Poll-Klasse verwaltet ebenfalls die Gesamtanzahl der Stimmen (für jede Option) und eine Methode, um Statistiken zu berechnen, die zum Generieren von Ansichten verwendet werden:
+Die Datenmodelle für die App sind Python-Klassen namens „Poll“ (Umfrage) und „Choice“ (Auswahl). Diese werden in *models/\_\_init\_\_.py* definiert. Eine Poll-Klasse stellt eine Frage dar, und mehrere Choice-Instanzen stellen die verfügbaren Antworten dar. Eine Poll-Klasse verwaltet ebenfalls die Gesamtanzahl der Stimmen (für jede Option) und eine Methode, um Statistiken zu berechnen, die zum Generieren von Ansichten verwendet werden:
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Diese Datenmodelle sind generische Abstraktionen, durch die ermöglicht wird, dass die Ansichten der App für mehrere verschiedene Arten von Sicherungsdatenspeichern funktionieren. Diese werden im nächsten Schritt beschrieben.
 
@@ -116,14 +116,14 @@ Die App, die von der Vorlage „Fragt ein Flask-Webprojekt“ erstellt wurde, ka
 
 Der Datenspeichermechanismus funktioniert folgendermaßen:
 
-1. Der Repositorytyp wird durch die Umgebungsvariable `REPOSITORY_NAME` angegeben. Diese kann auf „memory“, „azuretablestore“ oder „mongodb“ festgelegt werden. Ein Teil des Codes in `settings.py` ruft den Namen ab und verwendet dabei standardmäßig „memory“. Wenn Sie den Sicherungsspeicher ändern möchten, müssen Sie die Umgebungsvariable festlegen und die App neu starten.
+1. Der Repositorytyp wird durch die Umgebungsvariable `REPOSITORY_NAME` angegeben. Diese kann auf „memory“, „azuretablestore“ oder „mongodb“ festgelegt werden. Ein Teil des Codes in *settings.py* ruft den Namen ab und verwendet dabei standardmäßig „memory“. Wenn Sie den Sicherungsspeicher ändern möchten, müssen Sie die Umgebungsvariable festlegen und die App neu starten.
 
     ```python
     from os import environ
     REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
     ```
 
-1. Der Code von `settings.py` initialisiert dann ein `REPOSITORY_SETTINGS`-Objekt. Wenn Sie den Azure-Tabellenspeicher oder MongoDB verwenden möchten, müssen Sie diese Datenspeicher zunächst an anderer Stelle initialisieren und anschließend die erforderlichen Umgebungsvariablen festlegen, die der App mitteilen, wie eine Verbindung mit dem Datenspeicher hergestellt werden kann:
+1. Der Code von *settings.py* initialisiert dann ein `REPOSITORY_SETTINGS`-Objekt. Wenn Sie den Azure-Tabellenspeicher oder MongoDB verwenden möchten, müssen Sie diese Datenspeicher zunächst an anderer Stelle initialisieren und anschließend die erforderlichen Umgebungsvariablen festlegen, die der App mitteilen, wie eine Verbindung mit dem Datenspeicher hergestellt werden kann:
 
     ```python
     if REPOSITORY_NAME == 'azuretablestorage':
@@ -145,7 +145,7 @@ Der Datenspeichermechanismus funktioniert folgendermaßen:
         raise ValueError('Unknown repository.')
     ```
 
-1. In `views.py` ruft die App eine Factorymethode ab, um ein `Repository`-Objekt mithilfe des Namens und der Einstellungen des Datenspeichers abzurufen:
+1. In *views.py* ruft die App eine Factorymethode auf, um ein `Repository`-Objekt mithilfe des Namens und der Einstellungen des Datenspeichers zu initialisieren:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ Der Datenspeichermechanismus funktioniert folgendermaßen:
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. Die `factory.create_repository`-Methode befindet sich in `models\factory.py`. Diese importiert das geeignete Repositorymodul und erstellt anschließend eine Instanz von `Repository`:
+1. Die `factory.create_repository`-Methode befindet sich in *models\factory.py*. Diese importiert das geeignete Repositorymodul und erstellt anschließend eine Instanz von `Repository`:
 
     ```python
     def create_repository(name, settings):
@@ -174,51 +174,51 @@ Der Datenspeichermechanismus funktioniert folgendermaßen:
         return Repository(settings)
     ```
 
-1. Die Implementierungen der Klasse `Repository`, die für jeden Datenspeicher spezifisch sind, finden Sie in `models\azuretablestorage.py`, `models\mongodb.py` und `models\memory.py`. Die Azure Storage-Implementierung verwendet das Paket „azure-storage“. Die MongoDB-Implementierung verwendet das Paket „pymongo“. Wie bereits in Schritt 5–1 erwähnt wurde, sind beide Pakete in der Datei `requirements.txt` der Projektvorlage enthalten. Die Details zu ergründen wird als Übung für den Leser offen gelassen.
+1. Die Implementierungen der `Repository`-Klasse, die für jeden Datenspeicher spezifisch sind, befinden sich in *models\azuretablestorage.py*, *models\mongodb.py* und *models\memory.py*. Die Azure Storage-Implementierung verwendet das Paket „azure-storage“. Die MongoDB-Implementierung verwendet das Paket „pymongo“. Wie bereits in Schritt 5.1 erwähnt wurde, sind beide Pakete in der Datei *requirements.txt* der Projektvorlage enthalten. Die Details zu ergründen wird als Übung für den Leser offen gelassen.
 
 Kurz gesagt abstrahiert die Klasse `Repository` die spezifischen Eigenschaften eines Datenspeichers, und die App verwendet Umgebungsvariablen zur Laufzeit, um auszuwählen und zu konfigurieren, welche der drei Implementierungen verwendet werden soll.
 
 Durch folgende Schritte wird Unterstützung für einen anderen Datenspeicher als die drei von der Projektvorlage bereitgestellten hinzugefügt, wenn Sie dies wünschen:
 
-1. Kopieren Sie `memory.py` in eine neue Datei, sodass die Basisschnittstelle für die Klasse `Repository` vorhanden ist.
+1. Kopieren Sie *memory.py* in eine neue Datei, sodass die Basisschnittstelle für die Klasse `Repository` vorhanden ist.
 1. Ändern Sie die Implementierung der Klasse, damit diese dem verwendeten Datenspeicher entspricht.
-1. Ändern Sie `factory.py` in einen weiteren `elif`-Fall, der den Namen für Ihren hinzugefügten Datenspeicher erkennt und das entsprechende Modul importiert.
-1. Ändern Sie `settings.py`, damit ein weiterer Name in der Umgebungsvariable `REPOSITORY_NAME` erkannt und `REPOSITORY_SETTINGS` entsprechend initialisiert wird.
+1. Ändern Sie *factory.py* in einen weiteren `elif`-Fall, der den Namen für Ihren hinzugefügten Datenspeicher erkennt und das entsprechende Modul importiert.
+1. Ändern Sie *settings.py*, damit ein weiterer Name in der Umgebungsvariable `REPOSITORY_NAME` erkannt und `REPOSITORY_SETTINGS` entsprechend initialisiert wird.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Ausführen eines Seedings für den Datenspeicher von „samples.json“
 
-Zu Beginn enthält ein ausgewählter Datenspeicher keine Umfragen. Deshalb zeigt die Startseite der App die Meldung „No polls available.“ (Keine Umfragen verfügbar.) zusammen mit der Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) an. Sobald Sie auf die Schaltfläche klicken, ändert sich die Ansicht jedoch, und verfügbare Umfragen werden angezeigt. Dieser Wechsel wird von bedingten Tags in `templates\index.html` durchgeführt (einige leere Zeilen wurden aus Gründen der Übersichtlichkeit weggelassen):
+Zu Beginn enthält ein ausgewählter Datenspeicher keine Umfragen. Deshalb zeigt die Startseite der App die Meldung **No polls available** (Keine Umfragen verfügbar) zusammen mit der Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) an. Sobald Sie auf die Schaltfläche klicken, ändert sich die Ansicht jedoch, und verfügbare Umfragen werden angezeigt. Dieser Wechsel wird von bedingten Tags in *templates\index.html* durchgeführt (einige leere Zeilen wurden aus Gründen der Übersichtlichkeit weggelassen):
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 Die Variable `polls` in der Vorlage stammt aus einem Aufruf von `repository.get_polls`, der nichts zurückgibt, bis der Datenspeicher initialisiert wurde.
 
-Wenn Sie auf die Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) klicken, wird zur URL „/seed“ navigiert. Der Handler für diese Route wird in `views.py` definiert:
+Wenn Sie auf die Schaltfläche **Create Sample Polls** (Beispielumfragen erstellen) klicken, wird zur URL „/seed“ navigiert. Der Handler für diese Route wird in *views.py* definiert:
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-Der Aufruf von `repository.add_sample_polls()` endet bei einer der spezifischen `Repository`-Implementierungen für den ausgewählten Datenspeicher. Jede Implementierung ruft die `_load_samples_json`-Methode auf, die sich in `models\__init__.py` befindet, um die Datei `models\samples.json` in den Arbeitsspeicher zu laden. Anschließend werden die Daten durchlaufen, um die erforderlichen `Poll`- und `Choice`-Objekte im Datenspeicher zu erstellen.
+Der Aufruf von `repository.add_sample_polls()` endet bei einer der spezifischen `Repository`-Implementierungen für den ausgewählten Datenspeicher. Jede Implementierung ruft die `_load_samples_json`-Methode auf, die sich in *models\__init__ py* befindet, um die Datei *models\samples.json* in den Arbeitsspeicher zu laden. Anschließend werden die Daten durchlaufen, um die erforderlichen `Poll`- und `Choice`-Objekte im Datenspeicher zu erstellen.
 
-Sobald dieser Vorgang abgeschlossen ist, navigiert die `redirect('/')`-Anweisung in der `seed`-Methode zurück zur Startseite. Da `repository.get_polls` nun ein Datenobjekt zurückgibt, rendern die bedingten Tags in `templates\index.html` nun eine Tabelle, die die Umfragen enthält.
+Sobald dieser Vorgang abgeschlossen ist, navigiert die `redirect('/')`-Anweisung in der `seed`-Methode zurück zur Startseite. Da `repository.get_polls` nun ein Datenobjekt zurückgibt, rendern die bedingten Tags in *templates\index.html* nun eine Tabelle, die die Umfragen enthält.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Frage: Wie werden neue Umfragen zur App hinzugefügt?
 
-Antwort: Die App enthält in der Form, in der sie von der Projektvorlage bereitgestellt wird, keine Möglichkeit zum Hinzufügen oder Bearbeiten von Umfragen. Sie können `models\samples.json` ändern, um neue Initialisierungsdaten zu erstellen. Dadurch wird jedoch der Datenspeicher zurückgesetzt. Wenn Sie Bearbeitungsfeatures implementieren möchten, müssen Sie die Schnittstelle der Klasse `Repository` mit Methoden erweitern, um die erforderlichen Instanzen von `Choice` und `Poll` zu erstellen. Anschließend wird eine Benutzeroberfläche in zusätzliche Seiten implementiert, die diese Methoden verwenden.
+Antwort: Die App enthält in der Form, in der sie von der Projektvorlage bereitgestellt wird, keine Möglichkeit zum Hinzufügen oder Bearbeiten von Umfragen. Sie können *models\samples.json* ändern, um neue Initialisierungsdaten zu erstellen. Dadurch wird jedoch der Datenspeicher zurückgesetzt. Wenn Sie Bearbeitungsfeatures implementieren möchten, müssen Sie die Schnittstelle der Klasse `Repository` mit Methoden erweitern, um die erforderlichen Instanzen von `Choice` und `Poll` zu erstellen. Anschließend wird eine Benutzeroberfläche in zusätzliche Seiten implementiert, die diese Methoden verwenden.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Schritt 5–4: Grundlegendes zu Umfragedetails und Ergebnisansichten
 
@@ -242,7 +242,7 @@ Die meisten der von den Vorlagen „Fragt ein Flask-Webprojekt ab“ und „Frag
 
 Nun müssen noch die Ansicht für die Abstimmung (Details) und die Ergebnisse einer einzelnen Umfrage untersucht werden.
 
-Wenn Sie eine Umfrage auf der Startseite auswählen, navigiert die App zur URL „poll/\<key\>“. Hierbei entspricht *key* dem eindeutigen Bezeichner einer Umfrage. In `views.py` können Sie erkennen, dass die Funktion `details` zugewiesen wird, um das URL-Routing für GET- und POST-Anforderungen zu verarbeiten. Sie werden ebenfalls feststellen, dass durch das Verwenden von `<key>` in der URL-Route jede Route dieses Formulars derselben Funktion zugeordnet und ein Argument für die Funktion mit gleichem Namen generiert wird:
+Wenn Sie eine Umfrage auf der Startseite auswählen, navigiert die App zur URL „poll/\<key\>“. Hierbei entspricht *key* dem eindeutigen Bezeichner einer Umfrage. In *views.py* können Sie erkennen, dass die Funktion `details` zugewiesen wird, um das URL-Routing für GET- und POST-Anforderungen zu verarbeiten. Sie werden ebenfalls feststellen, dass durch das Verwenden von `<key>` in der URL-Route jede Route dieses Formulars derselben Funktion zugeordnet wird. Außerdem wird ein Argument für die Funktion mit gleichem Namen generiert:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-Zum Anzeigen einer Umfrage (GET-Anforderungen) ruft diese Funktion einfach `templates\details.html` ab. Dadurch wird das Array `choices` der Umfrage durchlaufen und ein Optionsfeld für jede Option erstellt.
+Zum Anzeigen einer Umfrage (GET-Anforderungen) ruft diese Funktion einfach *templates\details.html* ab. Dadurch wird das Array `choices` der Umfrage durchlaufen und ein Optionsfeld für jede Option erstellt.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ Zum Anzeigen einer Umfrage (GET-Anforderungen) ruft diese Funktion einfach `temp
 
 Da die Schaltfläche **Vote** (Abstimmen) den Typ `type="submit"` aufweist, generiert das Klicken auf diese Schaltfläche eine weitere POST-Anforderung zur gleichen URL, die an die `details`-Funktion weitergeleitet wird. Diesmal wird jedoch die Option aus den Formulardaten extrahiert und an „/results/\<choice\>“ weitergeleitet.
 
-Die URL „/results/\<key\>“ wird dann zur `results`-Funktion in `views.py` weitergeleitet, die anschließend die `calculate_stats`-Methode der Umfrage aufruft und `templates\results.html` für das Rendering verwendet:
+Die URL „/results/\<key\>“ wird dann zur `results`-Funktion in *views.py* weitergeleitet, die anschließend die `calculate_stats`-Methode der Umfrage aufruft und *templates\results.html* für das Rendering verwendet:
 
 ```python
 @app.route('/results/<key>')
@@ -314,7 +314,7 @@ def results(key):
     )
 ```
 
-Die Vorlage `results.html` durchläuft die Optionen der Umfrage und generiert eine Statusanzeige für jede:
+Die Vorlage *results.html* durchläuft die Optionen der Umfrage und generiert eine Statusanzeige für jede:
 
 ```html
 {% extends "layout.html" %}
@@ -358,5 +358,5 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Richten Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) auf einem Dienst wie Visual Studio Team Services (VSTS) ein. Zusätzlich zum Arbeiten mit dem Datenquellen-Steuerelement (in VSTS, GitHub oder anderweitig) können Sie VSTS automatisch Ihre Komponententests als Voraussetzung für die Freigabe ausführen lassen und die Pipeline so konfigurieren, dass sie vor der Bereitstellung in der Produktionsumgebung auf einem Stagingserver bereitstellt, um weitere Tests zu ermöglichen. VSTS wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-CD-Pipeline für Python mit dem Azure-DevOps-Projekt)](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts)
+  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-CD-Pipeline für Python mit dem Azure-DevOps-Projekt)](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Python development in Azure with Visual Studio Team Services (Python-Entwicklung in Azure mit Visual Studio Team Services) (Video, 11 Min. 21 Sek.)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

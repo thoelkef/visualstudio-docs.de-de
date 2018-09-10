@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c# | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c# | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -15,34 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 490c2c2b15eff701cee751b57bbf55024910beab
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 12a2f16fcf96861df5f3c86f8fe44cb475b9ff23
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479837"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468493"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# #
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Um die Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü, und wählen Sie **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Um Ihre Einstellungen zu ändern, wechseln Sie zu der **Tools** Menü, und wählen Sie **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
  Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb müssen Sie als Erstes ein Klassenbibliotheksprojekt für die DLL erstellen.  
 
 ## <a name="create-a-visualizer-manually"></a>Erstellen Sie eine Schnellansicht manuell
 
-Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
+Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-create-a-class-library-project"></a>So erstellen Sie ein Klassenbibliotheksprojekt  
   
 1.  Auf der **Datei** Menü wählen **neu > Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld unter **Visual C#-** Option **.NET Standard**.  
+2.  In der **neues Projekt** Dialogfeld **Visual C#-**, und wählen Sie dann **.NET Standard**.  
   
-3.  Wählen Sie im mittleren Bereich **-Klassenbibliothek**.  
+3.  Wählen Sie im mittleren Bereich **Klassenbibliothek**.  
   
-4.  In der **Namen** Geben Sie einen geeigneten Namen für die Klassenbibliothek MyFirstVisualizer.  
+4.  In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, z. B. MyFirstVisualizer.  
   
 5.  Klicken Sie auf **OK**.  
   
@@ -50,14 +50,14 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>So benennen Sie Class1.cs um und fügen Microsoft.VisualStudio.DebuggerVisualizers hinzu  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf Class1.cs, und wählen Sie **umbenennen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf Class1.cs, und wählen Sie **umbenennen** im Kontextmenü auf.  
   
 2.  Ändern Sie den Namen von Class1.cs in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.cs.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in DebuggerSide.cs automatisch an den neuen Dateinamen an.  
   
-3.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Verweise** , und wählen Sie **Verweis hinzufügen** im Kontextmenü.  
+3.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Verweise** , und wählen Sie **Verweis hinzufügen** im Kontextmenü auf.  
   
 4.  In der **Verweis hinzufügen** Dialogfeld auf die **.NET** Registerkarte, die den Eintrag Microsoft.VisualStudio.DebuggerVisualizers.dll.  
   
@@ -101,9 +101,9 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-add-systemwindowsforms"></a>So fügen Sie System.Windows.Forms hinzu  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Verweise** , und wählen Sie **Verweis hinzufügen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Verweise** , und wählen Sie **Verweis hinzufügen** im Kontextmenü auf.  
   
-2.  In der **Verweis hinzufügen** Dialogfeld auf die **.NET** Registerkarte, wählen den Eintrag System.Windows.Forms.DLL.  
+2.  In der **Verweis hinzufügen** Dialogfeld auf die **.NET** Registerkarte, und wählen Sie "System.Windows.Forms.dll".  
   
 3.  Klicken Sie auf **OK**.  
   
@@ -165,9 +165,9 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Auf der **Datei** Menü wählen **hinzufügen** , und klicken Sie dann auf **neues Projekt**.  
   
-2.  In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** wählen **Konsolenanwendung**.  
+2.  In der **neues Projekt hinzufügen** Dialogfeld wählen **Visual C#-** > **Windows Desktop**, und wählen Sie dann **Konsolenanwendung**.  
   
-3.  In der **Namen** Geben Sie einen aussagekräftigen Namen für die Konsolenanwendung, z. B. `MyTestConsole`.  
+3.  In der **Namen** geben einen aussagekräftigen Namen für die Konsolenanwendung, z. B. `MyTestConsole`.  
   
 4.  Klicken Sie auf **OK**.  
   
@@ -175,7 +175,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>So fügen Sie MyTestConsole die erforderlichen Verweise hinzu  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole** , und wählen Sie **Verweis hinzufügen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole** , und wählen Sie **Verweis hinzufügen** im Kontextmenü auf.  
   
 2.  In der **Verweis hinzufügen** Dialogfeld **.NET** Registerkarte, die den Eintrag Microsoft.VisualStudio.DebuggerVisualizers.dll.  
   
@@ -183,7 +183,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 4.  Mit der rechten Maustaste **MyTestConsole** , und wählen Sie **Verweis hinzufügen** erneut aus.  
   
-5.  In der **Verweis hinzufügen** (Dialogfeld), klicken Sie auf die **Projekte** Registerkarte, und klicken Sie dann auf MyFirstVisualizer.  
+5.  In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **Projekte** Registerkarte, und klicken Sie dann auf MyFirstVisualizer.  
   
 6.  Klicken Sie auf **OK**.  
   
@@ -191,11 +191,11 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-add-code-to-mytestconsole"></a>So fügen Sie MyTestConsole Code hinzu  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei "Program.cs", und wählen Sie **umbenennen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei "Program.cs", und wählen Sie **umbenennen** im Kontextmenü auf.  
   
 2.  Vergeben Sie für den Namen Program.cs eine aussagekräftigere Bezeichnung, zum Beispiel TestConsole.cs.  
   
-     **Hinweis** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch ändert die Klassendeklaration in TestConsole.cs entsprechend den neuen Dateinamen an.  
+     **Beachten Sie** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ändert automatisch die Klassendeklaration in TestConsole.cs entsprechend den neuen Dateinamen an.  
   
 3.  Fügen Sie in TestConsole.cs den `using`-Anweisungen den folgenden Code hinzu:  
   
@@ -214,7 +214,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 #### <a name="to-test-the-visualizer"></a>So testen Sie die Schnellansicht  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole** , und wählen Sie **als Startprojekt festlegen** im Kontextmenü.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole** , und wählen Sie **als Startprojekt festlegen** im Kontextmenü auf.  
   
 2.  Auf der **Debuggen** Menü wählen **starten**.  
   
@@ -233,11 +233,11 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Auf der **Datei** Menü wählen **neu > Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld unter **Visual C#-** Option **.NET Standard**.  
+2.  In der **neues Projekt** Dialogfeld **Visual C#-** Option **.NET Standard**.  
   
-3.  Wählen Sie im mittleren Bereich **-Klassenbibliothek**.   
+3.  Wählen Sie im mittleren Bereich **Klassenbibliothek**.   
   
-4.  In der **Namen** Geben Sie einen geeigneten Namen für die Klassenbibliothek MySecondVisualizer.  
+4.  In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, zum Beispiel MySecondVisualizer.  
   
 5.  Klicken Sie auf **OK**.  
   
@@ -247,11 +247,11 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  In **Projektmappen-Explorer**, mit der rechten Maustaste MySecondVisualizer.  
   
-2.  Wählen Sie im Kontextmenü **hinzufügen** , und klicken Sie dann auf **neues Element**.  
+2.  Wählen Sie im Kontextmenü den Befehl **hinzufügen** , und klicken Sie dann auf **neues Element**.  
   
-3.  In der **neues Element hinzufügen** Dialogfeld unter **Visual C#-Elemente**Option **Debuggerschnellansicht**.  
+3.  In der **neues Element hinzufügen** Dialogfeld **Visual c#-Elemente**Option **Debuggerschnellansicht**.  
   
-4.  In der **Namen** geben einen passenden Namen, z. B. SecondVisualizer.cs.  
+4.  In der **Namen** geben einen passenden Namen, zum Beispiel SecondVisualizer.cs.  
   
 5.  Klicken Sie auf **Hinzufügen**.  
   

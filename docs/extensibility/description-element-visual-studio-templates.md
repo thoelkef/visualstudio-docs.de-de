@@ -1,5 +1,5 @@
 ---
-title: Description-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Description-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 471633a4c786a879b333a09a4d7975739a56ccfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13a93ce9eb5bca506751e215fe74477839e961d9
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128915"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500799"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description-Element (Visual Studio-Vorlagen)
-Die Beschreibung der Vorlage gibt an, wie er im entweder enthalten die **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Description >  
+ \<Beschreibung >  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,8 +46,8 @@ Die Beschreibung der Vorlage gibt an, wie er im entweder enthalten die **neues P
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID auf.|  
-|`ID`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -61,7 +61,7 @@ Die Beschreibung der Vorlage gibt an, wie er im entweder enthalten die **neues P
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
   
- Der Text enthält eine Beschreibung der Vorlage.  
+ Der Text stellt eine Beschreibung der Vorlage bereit.  
   
 ## <a name="remarks"></a>Hinweise  
  `Description` ist ein erforderliches untergeordnetes Element des `TemplateData`-Elements.  
@@ -94,5 +94,5 @@ Die Beschreibung der Vorlage gibt an, wie er im entweder enthalten die **neues P
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

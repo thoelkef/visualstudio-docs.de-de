@@ -1,5 +1,5 @@
 ---
-title: Verweist auf-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Verweist auf Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136496"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639161"
 ---
 # <a name="references-element-visual-studio-templates"></a>References-Element (Visual Studio-Vorlagen)
-Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.  
+Gruppiert die Verweise der Assembly, die die Vorlage zu Projekten hinzugefügt.  
   
  \<VSTemplate>  
  \<TemplateContent >  
@@ -32,7 +32,7 @@ Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <References>  
     <Reference>... </Reference>  
     <Reference>... </Reference>  
@@ -50,7 +50,7 @@ Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss mindestens ein `Reference` Elemente in einem `References` Element.|  
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss mindestens eine `Reference` Elemente in einer `References` Element.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
@@ -61,12 +61,12 @@ Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.
 ## <a name="remarks"></a>Hinweise  
  `References` ist ein optionales untergeordnetes Element von `TemplateContent`.  
   
- Die `Reference` und `References` Elemente können nur verwendet werden, in der VSTEMPLATE-Dateien, die über eine `Type` -Attributwert `Item`.  
+ Die `Reference` und `References` Elemente können nur verwendet werden, *VSTEMPLATE* Dateien mit einer `Type` -Attributwert `Item`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Durch dieses XML werden Verweise auf die Assemblys "System.dll" und "System.Data.dll" hinzugefügt.  
+ Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Dieser XML-Code fügt Verweise auf die *"System.dll"* und *"System.Data.dll"* Assemblys.  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -85,5 +85,5 @@ Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

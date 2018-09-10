@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176371"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 
 Mit dem **CodeIndex**-Befehl können Sie die Codeindizierung für Team Foundation Server verwalten. Beispielsweise können Sie den Index zurücksetzen, um CodeLens-Informationen zu korrigieren, oder die Indizierung deaktivieren, um Probleme mit der Serverleistung zu untersuchen.
 
-**Erforderliche Berechtigungen**
+## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
-Zum Verwenden des **CodeIndex**-Befehls müssen Sie Mitglied der Sicherheitsgruppe **Team Foundation-Administratoren** sein. Weitere Informationen finden Sie unter [Permissions and groups defined for Team Services and TFS (Für Team Services und TFS definierte Berechtigungen und Gruppen)](https://www.visualstudio.com/docs/setup-admin/permissions).
+Zum Verwenden des **CodeIndex**-Befehls müssen Sie Mitglied der Sicherheitsgruppe **Team Foundation-Administratoren** sein. Weitere Informationen finden Sie unter [Permissions and groups defined for Team Services and TFS (Für Team Services und TFS definierte Berechtigungen und Gruppen)](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Sie müssen auch dann ein Fenster für die Eingabeaufforderung mit erhöhten Rechten öffnen, wenn Sie sich mit Administratoranmeldeinformationen anmelden, um diesen Befehl auszuführen. Sie müssen diesen Befehl außerdem auf der Logikschicht für Team Foundation ausführen.
@@ -41,7 +42,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argument**|**Beschreibung**|
 |------------------|---------------------|
-|`CollectionName`|Gibt den Namen der Teamprojektsammlung an. Wenn der Name Leerzeichen enthält, setzen Sie ihn in Anführungszeichen, z. B. "Fabrikam-Website".|
+|`CollectionName`|Gibt den Namen der Teamprojektsammlung an. Wenn der Name Leerzeichen enthält, setzen Sie ihn in Anführungszeichen, z.B. „Fabrikam Website“.|
 |`CollectionId`|Gibt die ID der Teamprojektauflistung an.|
 |`ServerPath`|Gibt den Pfad zu einer Codedatei an.|
 
@@ -66,31 +67,31 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
  So zeigen Sie den Status und die Konfiguration der Codeindizierung an:
 
 ```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
  So starten Sie die Indizierung aller Changesets:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
  So beenden Sie die Indizierung zuvor erstellter Changesets und starten die Indizierung nur neuer Changesets:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
  So finden Sie bis zu 50 Dateien, die größer als 10 KB sind
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
  So schließen Sie eine bestimmte Datei aus der Indizierung aus und fügen Sie der Liste ignorierter Dateien hinzu:
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
  So zeigen Sie alle Dateien an, die nicht indiziert werden
@@ -102,28 +103,28 @@ TFSConfig CodeIndex /ignoreList:view
  So löschen Sie zuvor indizierte Daten und starten die Indizierung neu:
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  So speichern Sie den gesamten Changeset-Verlauf:
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
  So entfernen Sie die Größenbeschränkung für temporäre CodeLens-Daten und fahren mit der Indizierung unabhängig von der Größe der temporären Daten fort:
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
  So löschen Sie den Codeindex mit Bestätigung:
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Managing server configuration with TFSConfig (Verwalten der Serverkonfiguration mit TFSConfig)](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Managing server configuration with TFSConfig (Verwalten der Serverkonfiguration mit TFSConfig)](/tfs/server/ref/command-line/tfsconfig-cmd)

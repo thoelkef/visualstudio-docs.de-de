@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von Befehlen zu Kontextmenüs'
+title: 'Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672673"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Vorgehensweise: Hinzufügen von Befehlen zu Kontextmenüs
-  In diesem Thema wird veranschaulicht, wie ein VSTO-Add-In verwendet werden kann, um einem Kontextmenü in einer Office-Anwendung Befehle hinzuzufügen.  
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs
+  In diesem Thema wird veranschaulicht, wie Befehle in einem Kontextmenü Menüelemente in einer Office-Anwendung hinzugefügt werden, mithilfe eines VSTO-Add-Ins.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/25/2018
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. Standardmäßig lautet die Menüband-XML-Datei *Ribbon1.xml*.  
+5.  Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. In der Standardeinstellung die Menüband-XML-Datei heißt *Ribbon1.xml*.  
   
 6.  Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
   
 7.  Fügen Sie im Code-Editor den XML-Code hinzu, der das Kontextmenü und das Steuerelement beschreibt, das Sie dem Kontextmenü hinzufügen möchten.  
   
-     Im folgenden Beispiel werden dem Kontextmenü für ein Word-Dokument ein Schaltflächen-, ein Menü- und ein Katalog-Steuerelement hinzugefügt. Die Steuerelement-ID dieses Kontextmenüs lautet „ContextMenuText“. Eine vollständige Liste der Office 2010-Kontextmenü-Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Im folgenden Beispiel werden dem Kontextmenü für ein Word-Dokument ein Schaltflächen-, ein Menü- und ein Katalog-Steuerelement hinzugefügt. Die Steuerelement-ID dieses Kontextmenüs lautet „ContextMenuText“. Eine vollständige Liste der Office 2010-Kontextmenü-Steuerelement IDs finden Sie unter [Office 2010-Hilfedateien: Office fluent User Interface Steuerelementbezeichnern](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 05/25/2018
   
 8.  Wählen Sie im **Projektmappen-Explorer**die Datei **MyRibbon.cs** oder **MyRibbon.vb**aus.  
   
-9. Fügen Sie der `Ribbon1` -Klasse eine Rückrufmethode für jedes Steuerelement hinzu, das Sie verarbeiten möchten.  
+9. Fügen Sie eine Rückrufmethode, die `Ribbon1` -Klasse für jedes Steuerelement, das Sie behandeln möchten.  
   
      Die folgende Rückrufmethode verarbeitet die Schaltfläche **My Button** . In diesem Code wird dem aktiven Dokument an der aktuellen Position des Cursors eine Zeichenfolge hinzugefügt.  
   
@@ -84,6 +85,6 @@ ms.lasthandoff: 05/25/2018
 ## <a name="see-also"></a>Siehe auch  
  [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
  [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
+ [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
  [Anpassen von Kontextmenüs in Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

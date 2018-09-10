@@ -9,28 +9,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 332d7599543efbe5ee6e15ccc89d5fce595e5341
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946922"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566878"
 ---
 # <a name="customizing-element-tools"></a>Anpassen von Elementtools
-In einigen DSL-Definitionen stellen Sie ein einzelnes Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell, in dem eine Komponente einen festen Satz von Ports erstellen, möchten Sie z. B. immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie die Element-Creation-Tool anpassen, sodass es sich um eine Gruppe von Elementen, die statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.
+In einigen DSL-Definitionen stellen Sie ein einmaliges Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell erstellen, in dem eine Komponente über einen festen Satz von Ports verfügt, z. B. Sie immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie das Tool zur Erstellung von Element anpassen, sodass eine Gruppe von Elementen statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.
 
  Sie können auch überschreiben, was geschieht, wenn das Tool auf das Diagramm oder ein Element gezogen wird.
 
-## <a name="customizing-the-content-of-an-element-tool"></a>Anpassen des Inhalts der Elementtool
- Jedes Elementtool speichert eine Instanz von einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), die eine serialisierte Version ist eine oder mehrere Modellelemente und Links enthält. Standardmäßig enthält die EGP eine Element-Tools eine Instanz der Klasse, die Sie für das Tool angeben. Sie können ändern, indem überschreiben *YourLanguage*`ToolboxHelper.CreateElementToolPrototype`. Diese Methode wird aufgerufen, wenn der DSL-Paket geladen wird.
+## <a name="customizing-the-content-of-an-element-tool"></a>Anpassen des Inhalts eines Elementtools
+ Jedes Elementtool wird eine Instanz von einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), die eine serialisierte Version des einen oder mehrere Modellelemente und Links enthält. Standardmäßig enthält die EGP eines Elementtools eine Instanz der Klasse, die Sie für das Tool angeben. Sie können dies ändern, indem Sie überschreiben *Ihresprache*`ToolboxHelper.CreateElementToolPrototype`. Diese Methode wird aufgerufen, wenn die DSL-Paket geladen wird.
 
  Ein Parameter der Methode ist die ID der Klasse, die Sie in der DSL-Definition angegeben. Wenn die Methode mit der Klasse, die Sie interessiert sind aufgerufen wird, können Sie zusätzliche Elemente in der EGP hinzufügen.
 
- Die EGP muss das Einbetten von Links von einem Haupt Element an die untergeordnete Elemente enthalten. Er kann auch Links zu Referenzen enthalten.
+ Die EGP muss Einbetten der Links von einem Haupt-Element für die untergeordneten Elemente enthalten. Sie können auch die Ressourcenlinks enthalten.
 
- Das folgende Beispiel erstellt eine main-Element und zwei eingebetteten Elemente. Die Hauptklasse wird Widerstand aufgerufen, und er verfügt über zwei Einbetten von Beziehungen zu Elementen, die mit dem Namen Terminaldienste. Einbetten von Rolleneigenschaften heißen Terminal1 und Terminal2, und beide verfügen über eine Multiplizität von 1..1.
+ Das folgende Beispiel erstellt ein Hauptelement und zwei eingebetteten Elemente. "Main"-Klasse heißt Widerstand, und sie hat zwei einbettende Beziehungen zu Elementen, die mit dem Namen Terminal. Die einbettende Rolleneigenschaften heißen Terminal1 und Terminal2, und beide verfügen über die Multiplizität 1..1.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling; ...
 public partial class CircuitDiagramToolboxHelper
 {

@@ -1,5 +1,5 @@
 ---
-title: Debuggen von JavaScript mithilfe der Konsole | Microsoft Docs
+title: Debuggen von JavaScript mithilfe der Konsole | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478303"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280830"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debuggen von JavaScript mithilfe der Konsole in Visual Studio
   
- Sie können JavaScript-Konsolenfenster zur Interaktion und zum Debuggen von uwp-apps mit JavaScript erstellte verwenden. Diese Features werden für uwp-apps und erstellt mithilfe von Visual Studio-Tools für Apache Cordova-apps unterstützt. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Sie können JavaScript-Konsolenfenster verwenden, zum interagieren mit und Debuggen von UWP-apps mit JavaScript erstellt wurden. Diese Funktionen werden für UWP-apps und erstellt mit Visual Studio-Tools für Apache Cordova-apps unterstützt. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  Im JavaScript-Konsolenfenster können Sie:  
   
@@ -43,25 +43,25 @@ ms.locfileid: "31478303"
 -   Durchführen weiterer Aufgaben, wie z. B. das Löschen des Fensters. Unter [JavaScript Console commands](../debugger/javascript-console-commands.md) finden Sie eine vollständige Liste der Befehle.  
   
 > [!TIP]
->  Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**> **Windows** > **JavaScript-Konsole** um erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
+>  Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**> **Windows** > **JavaScript-Konsole** , es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
   
- Mit dem JavaScript-Konsolenfenster können Sie mit dem App-Code interagieren, ohne den Debugger zu beenden und neu zu starten. Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md). Informationen zu anderen JavaScript-Debugfunktionen wie den DOM Explorer und Festlegen von Haltepunkten finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Mit dem JavaScript-Konsolenfenster können Sie mit dem App-Code interagieren, ohne den Debugger zu beenden und neu zu starten. Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md). Informationen zu anderen JavaScript-Debugfunktionen wie den DOM Explorer und das Einfügen von Haltepunkten finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Debuggen mithilfe des JavaScript-Konsolenfensters  
  Mit den folgenden Schritten wird eine `FlipView` -App erstellt und gezeigt, wie Sie einen JavaScript-Codefehler interaktiv debuggen.  
   
 > [!NOTE]
->  Die Beispiel-app ist eine UWP-app. Die hier beschriebenen Konsolenfunktionen gelten jedoch auch für Apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden.  
+>  Die Beispiel-app hier handelt es sich um eine UWP-app. Die hier beschriebenen Konsolenfunktionen gelten jedoch auch für Apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>So debuggen Sie den JavaScript-Code in der FlipView-App  
   
 1.  Erstellen Sie in Visual Studio eine neue Projektmappe, indem Sie **Datei** > **Neues Projekt**.  
   
-2.  Wählen Sie **JavaScript** > **universellen Windows-**, und wählen Sie dann **WinJS App**.  
+2.  Wählen Sie **JavaScript** > **Windows Universal**, und wählen Sie dann **WinJS-App**.  
   
 3.  Geben Sie einen Namen für das Projekt ein, beispielsweise `FlipViewApp`, und wählen Sie **OK** aus, um die App zu erstellen.  
   
-4.  Ersetzen Sie im BODY-Element von "Index.HTML" den vorhandenen HTML-Code durch den folgenden Code ein:  
+4.  Ersetzen Sie den vorhandenen HTML-Code im BODY-Element aus "Index.HTML" mit dem folgenden Code:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -137,7 +137,7 @@ ms.locfileid: "31478303"
     })();  
     ```  
   
-7.  Wenn das Debugziel noch nicht ausgewählt ist, wählen Sie **lokalen** aus der Dropdown-Liste neben der **Gerät** Schaltfläche auf der **Debuggen** Symbolleiste:  
+7.  Wenn das Debugziel noch nicht ausgewählt ist, wählen Sie **lokalen Computer** aus der Dropdown-Liste neben der **Gerät** Schaltfläche der **Debuggen** Symbolleiste:  
   
      ![Debugzielliste auswählen](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -145,7 +145,7 @@ ms.locfileid: "31478303"
   
      Die App wird ausgeführt, aber es fehlen Bilder. APPHOST-Fehler im JavaScript-Konsolenfenster geben an, dass Bilder fehlen.  
   
-9. Mit der `FlipView` app ausgeführt wird, geben `Data.items` in der Eingabeaufforderung des Konsolenfensters (neben der ">>" Symbols) und drücken Sie die EINGABETASTE.  
+9. Mit der `FlipView` app ausgeführt wird, geben `Data.items` in der Eingabeaufforderung des Konsolenfensters (neben der ">>" Symbol), und drücken Sie die EINGABETASTE.  
   
      Im Konsolenfenster wird eine Schnellansicht für das `items` -Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
   
@@ -181,11 +181,11 @@ ms.locfileid: "31478303"
   
 13. Wählen Sie das grüne Pfeilsymbol aus, um das Skript auszuführen.  
   
-14. Drücken Sie Strg + Alt + M, um die konsoleneingabeaufforderung in den einzeiligen Modus wechseln, und wählen Sie dann **Eingabe löschen** (das rote "X"), um den Code aus der eingabeeingabeaufforderung zu löschen.  
+14. Drücken Sie Strg + Alt + M, um die konsoleneingabeaufforderung in den einzeiligen Modus wechseln, und wählen Sie dann **Eingabe löschen** (das rote "X"), um den Code aus der Eingabeaufforderung zu löschen.  
   
 15. Geben Sie an der Eingabeaufforderung `Data.items.length = 3` ein, und drücken Sie dann die EINGABETASTE. Auf diese Weise werden die äußeren Elemente aus den Daten entfernt.  
   
-16. Überprüfen Sie die app erneut aus, und Sie sehen, dass die richtigen Bilder auf den richtigen `FlipView` Seiten.  
+16. Überprüfen Sie die app erneut aus, und sehen Sie, dass die richtigen Bilder auf den richtigen werden `FlipView` Seiten.  
   
 17. Im Dom Explorer wird das aktualisierte DIV-Element angezeigt, und Sie können in die Teilstruktur navigieren, um die erwarteten IMG-Elemente zu suchen.  
   
@@ -202,7 +202,7 @@ ms.locfileid: "31478303"
   
 1.  Öffnen Sie in der Datei "default.html" der von Ihnen erstellten `FlipView` -App das Kontextmenü für die `updateImages()` -Funktion. Wählen Sie dann **Haltepunkt** > **Haltepunkt einfügen**.  
   
-2.  Wählen Sie **lokaler Computer** in der Dropdown-Liste neben der **Debuggen** Schaltfläche auf der **Debuggen** Symbolleiste.  
+2.  Wählen Sie **lokalen Computer** in der Dropdown-Liste neben der **Debuggen starten** Schaltfläche der **Debuggen** Symbolleiste.  
   
 3.  Wählen Sie **Debuggen** > **Lokaler Computer**aus, oder drücken Sie F5.  
   
@@ -218,7 +218,7 @@ ms.locfileid: "31478303"
   
      In der folgenden Abbildung wird das Konsolenfenster an dieser Stelle angezeigt.  
   
-     ![JavaScript-Konsolenfenster mit einer Schnellansicht](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
+     ![JavaScript-Konsolenfenster, die mit einer Schnellansicht](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
   
 6.  Kopieren Sie eine Zeile der Funktion aus dem Ausgabefenster in die Eingabeeingabeaufforderung, und ändern Sie den Indexwert auf 3:  
   
@@ -255,7 +255,7 @@ ms.locfileid: "31478303"
  [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)   
  [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
- [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Produktsupport und Barrierefreiheit](https://visualstudio.microsoft.com/vs/support/)

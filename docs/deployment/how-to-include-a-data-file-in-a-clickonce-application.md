@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung | Microsoft Docs'
+title: 'Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815544"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151699"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung
-Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten: Textdateien, XML-Dateien oder sogar Microsoft Access-Datenbankdateien (.mdb). Nachfolgend wird erläutert, wie eines beliebigen Typs in eine Datendatei hinzufügen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
+Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten:-Text-Dateien, XML-Dateien oder sogar Microsoft Access-Datenbank (*MDB*) Dateien. Die folgenden Verfahren zeigen, wie zum Hinzufügen einer Datendatei eines beliebigen Typs in Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
-### <a name="to-include-a-data-file-by-using-mageexe"></a>Eine Datendatei mit Mage.exe einschließen  
+### <a name="to-include-a-data-file-by-using-mageexe"></a>So schließen eine Datendatei mit Mage.exe  
   
-1.  Fügen Sie die Datendatei auf Ihr Anwendungsverzeichnis mit den übrigen Dateien der Anwendung hinzu.  
+1.  Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.  
   
-     Normalerweise ist das Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der aktuellen Bereitstellungsversion, – beispielsweise v. 1.0.0.0.  
+     In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.  
   
 2.  Aktualisieren Sie das Anwendungsmanifest zur Liste der Datendatei an.  
   
      `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     Zum Ausführen dieser Aufgabe erneut erstellt die Liste der Dateien im Anwendungsmanifest und die Hashsignaturen ebenfalls automatisch generiert.  
+     Zum Ausführen dieser Aufgabe erneut erstellt die Liste der Dateien im Anwendungsmanifest, und generiert auch automatisch die Hashsignaturen.  
   
 3.  Öffnen Sie das Anwendungsmanifest in Ihrem bevorzugten Text- oder XML-Editor und suchen die `file` -Element für die neu hinzugefügte Datei.  
   
@@ -46,11 +46,11 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
   
  `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Fügen Sie das Attribut `type` an dieses Element, und geben Sie es mit einem Wert von `data`.  
+1.  Fügen Sie das Attribut `type` für dieses Element, und geben Sie es mit einem Wert von `data`.  
   
  `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Signieren Sie das Anwendungsmanifest erneut mit Ihrem Schlüsselpaar oder ein Zertifikat, und klicken Sie dann signieren Sie das Bereitstellungsmanifest erneut.  
+1.  Melden Sie sich das Anwendungsmanifest erneut mithilfe Ihrer Schlüsselpaar oder ein Zertifikat, und klicken Sie dann signieren Sie das Bereitstellungsmanifest erneut.  
   
      Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
   
@@ -60,29 +60,29 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
   
      `mage -s deployment manifest -cf certfile -pwd password`
   
-### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Um eine Datei einschließen, indem Sie MageUI.exe verwenden  
+### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Eine Datei einschließen, indem Sie MageUI.exe  
   
-1.  Fügen Sie die Datendatei auf Ihr Anwendungsverzeichnis mit den übrigen Dateien der Anwendung hinzu.  
+1.  Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.  
   
-2.  Normalerweise ist das Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der aktuellen Bereitstellungsversion, – beispielsweise v. 1.0.0.0.  
+2.  In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.  
   
-3.  Auf der **Datei** Menü klicken Sie auf **öffnen** das Anwendungsmanifest zu öffnen.  
+3.  Auf der **Datei** Menü klicken Sie auf **öffnen** sich das Anwendungsmanifest zu öffnen.  
   
 4.  Wählen Sie die **Dateien** Registerkarte.  
   
-5.  Klicken Sie im Textfeld am oberen Rand der Registerkarte "Geben Sie in das Verzeichnis, das die Dateien der Anwendung enthält, und klicken Sie dann auf **Auffüllen**.  
+5.  Klicken Sie im Textfeld am oberen Rand der Registerkarte "Geben Sie das Verzeichnis mit den Dateien Ihrer Anwendung, und klicken Sie dann auf **Auffüllen**.  
   
      Die Datendatei wird im Raster angezeigt.  
   
-6.  Legen Sie die **Dateityp** Wert der Datendatei **Daten**.  
+6.  Legen Sie die **Dateityp** Wert, der die Datendatei **Daten**.  
   
-7.  Speichern Sie das Anwendungsmanifest, und signieren Sie die Datei dann erneut.  
+7.  Speichern Sie das Anwendungsmanifest, und klicken Sie dann signieren Sie die Datei erneut.  
   
-     MageUI.exe fordert Sie auf die Datei erneut zu signieren.  
+     *MageUI.exe* werden Sie aufgefordert, die Datei erneut zu signieren.  
   
 8.  Das Bereitstellungsmanifest erneut signieren  
   
      Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Zugreifen auf lokale und remote-Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

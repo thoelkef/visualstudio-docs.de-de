@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc52232d8917835883c8390a24cb049b04fed94
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572516"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153701"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest-Aufgabe
 Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Signieren erneut aus.  
@@ -31,7 +31,7 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `UpdateManifest` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung |  
 |---------------|-----------------|  
 |`ApplicationManifest`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt das Anwendungsmanifest an|  
 |`ApplicationPath`|Erforderlicher `String` -Parameter.<br /><br /> Gibt den Pfad für das Anwendungsmanifest an|  
@@ -43,4 +43,4 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

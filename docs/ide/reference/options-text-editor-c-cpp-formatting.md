@@ -1,6 +1,6 @@
 ---
 title: Optionen, Text-Editor, C/C++, Formatierung
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946064"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235140"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
-Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.
+
+Verwenden Sie diesen Eigenschaftenseiten, um das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.
+
+[Eigenschaftenseiten für die C++-Formatierung](media/cpp-formatting.png)
 
  Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Seite "Allgemein"
 
-## <a name="cc-options"></a>C/C++-Optionen
- **Automatische QuickInfos aktivieren**
+Diese Seite enthält Optionen für das Formatieren von Anweisungen und Blöcken während der Eingabe.
 
- Aktiviert oder deaktiviert die IntelliSense-Funktion QuickInfo.
+**Visual Studio 2017, Version 15.7 und höher:** Die Seite enthält ebenfalls Optionen für das Konfigurieren der Unterstützung für [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) (Version 5.0). ClangFormat ist ein Hilfsprogramm, den Stil und die Formatierung Ihres Codes einfach basierend auf Regeln anpassen können, die in einer Datei mit der Erweiterung „.clang-format“ oder „_clang-format“ konfiguriert werden können.
 
-## <a name="inactive-code"></a>Inaktiver Code
- **Inaktive Codeblöcke anzeigen**
+### <a name="configuring-clangformat-options"></a>Konfigurieren von ClangFormat-Optionen
 
- Code, der aufgrund von `#ifdef`-Deklarationen inaktiv ist, wird eingefärbt, damit inaktiver Code besser erkennbar ist.
+In Visual Studio 2017 (Version 15.7 und höher) ist die ClangFormat-Unterstützung standardmäßig aktiviert. Sie können auswählen, welcher dieser Formatierungskonventionen auf Ihre Projekte angewendet werden sollen: LLVM, Google, Chromium, Mozilla oder WebKit. Sie können ebenfalls eine benutzerdefinierte Datei („.clang-format“ oder „_clang-format“) für die Definition des Formats erstellen. Wenn eine solche Datei in einem Projektordner vorhanden ist, verwendet Visual Studio diese, um alle Quellcodedateien in diesem Ordner und dessen Unterordnern zu formatieren. 
 
- **Inaktive Codedeckkraft deaktivieren**
+Standardmäßig führt Visual Studio „clangformat.exe“ im Hintergrund aus, wodurch die Formatierung während der Eingabe angewendet wird. Sie können ebenfalls festlegen, dass die Datei nur für manuell aufgerufene Formatierungsfehle wie **Dokument formatieren (STRG+K, STRG+D)** oder **Auswahl formatieren (STRG+K, STRG+F)** ausgeführt wird.
 
- Inaktiver Code kann mit Farbe statt Transparenz gekennzeichnet werden.
 
- **Deckkraftprozentsatz für inaktiven Code**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Seiten „Einzug“, „Neue Zeilen“, „Abstand“, „Umbruch“
 
- Der Deckkraftgrad für inaktive Codeblöcke kann angepasst werden.
-
-## <a name="indentation"></a>Indentation
- **Geschweifte Klammern einrücken**
-
- Sie können konfigurieren, wie geschweifte Klammern ausgerichtet werden, wenn Sie die EINGABETASTE drücken, nachdem Sie einen Codeblock, z. B. eine Funktion oder eine `for`-Schleife, begonnen haben. Die geschweiften Klammern können entweder am ersten Zeichen des Codeblocks ausgerichtet oder eingezogen sein.
-
- **Automatischer Einzug auf Registerkarte**
-
- Sie können konfigurieren, was auf der aktuellen Codezeile geschieht, wenn Sie die TAB-TASTE drücken. Entweder wird die Zeile eingezogen oder ein Tabulator eingefügt.
-
-## <a name="miscellaneous"></a>Verschiedenes
- **Bemerkungen im Fenster Aufgabenliste auflisten**
-
- Der Editor kann geöffnete Quelldateien in den Kommentaren nach voreingestellten Wörtern scannen. Er erstellt einen Eintrag im Fenster **Aufgabenliste** für beliebige Schlüsselwörter, die gefunden werden.
-
- **Zugehörige Token hervorheben**
-
- Wenn sich der Cursor neben einer geschweiften Klammer befindet, kann der Editor die entsprechende geschweifte Klammer hervorheben, damit Sie den enthaltenen Code leichter sehen können.
-
-## <a name="outlining"></a>Gliedern
- **Beim Öffnen von Dateien in Gliederungsmodus wechseln**
-
- Wenn Sie eine Datei im Text-Editor öffnen, können Sie die Gliederungsfunktion aktivieren. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Wenn diese Option ausgewählt ist, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.
-
- **Automatische Gliederung von #pragma-Bereich-Blöcken**
-
- Wenn diese Option aktiviert wird, wird die automatische Gliederung für [Pragma-Anweisungen](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) aktiviert. Damit können Sie Pragmabereichsblocks im gegliederten Modus erweitern oder reduzieren.
-
- **Automatische Gliederung von Anweisungsblöcken**
-
- Wenn diese Option ausgewählt ist, wird die automatische Gliederung für die folgenden Anweisungskonstrukte aktiviert:
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch-Anweisung (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while-Anweisung (C++)](/cpp/cpp/while-statement-cpp)
+Diese Seiten ermöglichen verschiedene Anpassungen der Formatierung, werden jedoch ignoriert, wenn ClangFormat aktiviert ist.
 
 ## <a name="see-also"></a>Siehe auch
 

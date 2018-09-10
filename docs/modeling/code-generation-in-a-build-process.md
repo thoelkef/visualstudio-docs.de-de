@@ -1,5 +1,5 @@
 ---
-title: Codegenerierung in einem Buildprozess in Visual Studio
+title: Codegenerierung in einem Buildprozess
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1d08aafd31d93c7a07d57dcd5b831b8ae41a6c17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953254"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409803"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 
-[TextTransformation](../modeling/code-generation-and-t4-text-templates.md) ausgerufen werden als Teil der [Buildprozess](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) von einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
+[TextTransformation](../modeling/code-generation-and-t4-text-templates.md) aufgerufen werden kann, als Teil der [Buildprozess](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) von Visual Studio-Projektmappe. Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
 
-Je nachdem, welches Buildmodul Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projektmappe in Visual Studio erstellen, eine Textvorlage kann zugreifen, die Visual Studio-API (EnvDTE) Wenn die [Hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Jedoch, die nicht "true", wenn Sie die Projektmappe über die Befehlszeile erstellen oder wenn Sie einen Serverbuild mit Visual Studio starten. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet.
+Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projektmappe in Visual Studio erstellen, eine Textvorlage kann zugreifen, die Visual Studio-API (EnvDTE) Wenn die [Hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Aber das ist nicht "true", wenn Sie die Lösung über die Befehlszeile erstellen, oder wenn Sie einen Serverbuild mit Visual Studio initiieren. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet.
 
-Dies bedeutet, dass Sie Elemente wie Projektdateinamen nicht genauso zugreifen können, bei der Erstellung einer Textvorlage in MSBuild. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und Direktivenprozessoren](#parameters).
+Dies bedeutet, dass Sie Dinge wie Projektdateinamen nicht genauso zugreifen können, wenn Sie eine Textvorlage in MSBuild erstellen. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und anweisungsprozessoren](#parameters).
 
 ##  <a name="buildserver"></a> Konfigurieren des Computers
 
@@ -33,35 +33,35 @@ Um Buildaufgaben auf dem Entwicklungscomputer zu ermöglichen, installieren Sie 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Wenn [dem Buildserver](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) ausgeführt wird, auf einem Computer, auf dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist nicht installiert, die folgenden Dateien vom Entwicklungscomputer auf den Buildcomputer kopieren. Ersetzen Sie die aktuellste Versionsnummer für "*".
+Wenn [Buildserver](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) Ausführungen auf einem Computer, auf dem Visual Studio nicht installiert ist, und kopieren Sie die folgenden Dateien auf den Buildcomputer von Ihrem Entwicklungscomputer. Ersetzen Sie die aktuellste Versionsnummer für "*".
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>So bearbeiten Sie die Projektdatei
 
 Sie müssen zum Bearbeiten der Projektdatei, um einige der Funktionen in MSBuild zu konfigurieren.
 
-Wählen Sie im Projektmappen-Explorer **entladen** aus dem Kontextmenü des Projekts. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten.
+In **Projektmappen-Explorer**, wählen Sie **entladen** aus dem Kontextmenü des Projekts. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten.
 
-Wenn Sie die Bearbeitung abgeschlossen haben, wählen Sie **zum erneuten Laden**.
+Wenn Sie die Bearbeitung abgeschlossen haben, wählen Sie **Reload**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importieren der Texttransformationsziele
 
@@ -88,11 +88,11 @@ Fügen Sie nach dieser Zeile den Textvorlagenimport ein:
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
 
-## <a name="transform-templates-in-a-build"></a>Transformieren der Vorlagen in einem build
+## <a name="transform-templates-in-a-build"></a>Transformieren von Vorlagen in einem build
 
 Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Transformationsaufgabe zu steuern:
 
--   Führen Sie die Transformationsaufgabe am Anfang jedes Builds aus:
+- Führen Sie die Transformationsaufgabe am Anfang jedes Builds aus:
 
     ```xml
     <PropertyGroup>
@@ -100,7 +100,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
     </PropertyGroup>
     ```
 
--   Überschreiben Sie Dateien, die schreibgeschützt sind, weil sie z. B. nicht ausgecheckt sind:
+- Überschreiben Sie Dateien, die schreibgeschützt sind, weil sie z. B. nicht ausgecheckt sind:
 
     ```xml
     <PropertyGroup>
@@ -108,7 +108,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
     </PropertyGroup>
     ```
 
--   Transformieren Sie jede Vorlage jedes Mal:
+- Transformieren Sie jede Vorlage jedes Mal:
 
     ```xml
     <PropertyGroup>
@@ -118,27 +118,27 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
 
      Standardmäßig generiert die Aufgabe T4 MSBuild erneut eine Ausgabedatei, wenn diese älter als die entsprechende Vorlagendatei oder alle Dateien ist, auf die die Vorlage oder ein Direktivenprozessor, der die Datei verwendet, zuvor zugegriffen hat. Beachten Sie, dass hierbei ein viel leistungsstärkerer Abhängigkeitstest durchgeführt wird als mit dem Befehl zur Transformation aller Vorlagen in Visual Studio, bei dem nur die Daten der Vorlage und der Ausgabedatei verglichen werden.
 
- Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe "TransformAll" auf:
+Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe "TransformAll" auf:
 
- `msbuild myProject.csproj /t:TransformAll`
+`msbuild myProject.csproj /t:TransformAll`
 
- Zur Transformation einer bestimmten Textvorlage:
+Zur Transformation einer bestimmten Textvorlage:
 
- `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
+`msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
- In TransformFile können Sie Platzhalter verwenden:
+In TransformFile können Sie Platzhalter verwenden:
 
- `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
+`msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
 ## <a name="source-control"></a>Quellcodeverwaltung
 
 Es besteht keine spezifische integrierte Integration in ein Quellcodeverwaltungssystem. Sie können jedoch auch eigene Erweiterungen z. B. zum Einchecken oder Auschecken einer generierten Datei hinzufügen. Standardmäßig wird durch die Texttransformationsaufgabe vermieden, dass eine als schreibgeschützt markierte Datei überschrieben wird. Wenn eine solche Datei erkannt wird, wird ein Fehler in der Fehlerliste von Visual Studio protokolliert, und die Aufgabe schlägt fehl.
 
- Fügen Sie die folgende Eigenschaft ein, um anzugeben, dass schreibgeschützte Dateien überschrieben werden sollen:
+Fügen Sie die folgende Eigenschaft ein, um anzugeben, dass schreibgeschützte Dateien überschrieben werden sollen:
 
- `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
 
- Sofern Sie den Nachverarbeitungsschritt nicht anpassen, wird eine Warnung in der Fehlerliste protokolliert, wenn eine Datei überschrieben wird.
+Sofern Sie den Nachverarbeitungsschritt nicht anpassen, wird eine Warnung in der Fehlerliste protokolliert, wenn eine Datei überschrieben wird.
 
 ## <a name="customize-the-build-process"></a>Anpassen des Buildprozesses
 
@@ -159,9 +159,9 @@ Texttransformation geschieht vor anderen Aufgaben im Buildprozess. Sie können A
 
 In `AfterTransform` können Sie auf Dateilisten verweisen:
 
--   GeneratedFiles – Eine Liste von Dateien, die vom Prozess geschrieben werden. Für die Dateien, durch die vorhandene schreibgeschützte Dateien überschrieben wurden, ist %(GeneratedFiles.ReadOnlyFileOverwritten) true. Diese Dateien können aus der Quellcodeverwaltung ausgecheckt werden.
+- GeneratedFiles – Eine Liste von Dateien, die vom Prozess geschrieben werden. Für die Dateien, durch die vorhandene schreibgeschützte Dateien überschrieben wurden, ist %(GeneratedFiles.ReadOnlyFileOverwritten) true. Diese Dateien können aus der Quellcodeverwaltung ausgecheckt werden.
 
--   NonGeneratedFiles– Eine Liste von schreibgeschützten Dateien, die nicht überschrieben wurden.
+- NonGeneratedFiles– Eine Liste von schreibgeschützten Dateien, die nicht überschrieben wurden.
 
 Sie definieren z. B. eine Aufgabe zum Auschecken von GeneratedFiles.
 
@@ -179,9 +179,9 @@ Diese Eigenschaften werden nur von MSBuild verwendet. Sie beeinflussen nicht die
 </ItemGroup>
 ```
 
- Ein hilfreicher Ordner für die Umleitung ist `$(IntermediateOutputPath).`
+Ein hilfreicher Ordner für die Umleitung ist `$(IntermediateOutputPath).`
 
- Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Anweisung in den Vorlagen angegeben ist.
+Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Anweisung in den Vorlagen angegeben ist.
 
 ```xml
 <ItemGroup>
@@ -193,7 +193,7 @@ Diese Eigenschaften werden nur von MSBuild verwendet. Sie beeinflussen nicht die
 </ItemGroup>
 ```
 
- Eine OutputFileName oder OutputFilePath angeben, wird nicht empfohlen, wenn Sie auch Vorlagen in VS mit allen zu transformieren, einzelner Dateien ausgeführt werden. Je nachdem, wie Sie die Transformation ausgelöst haben, erhalten Sie dann unterschiedliche Dateipfade. Dies kann sehr verwirrend sein.
+OutputFileName oder OutputFilePath wird nicht empfohlen, wenn Sie Vorlagen in VS Verwendung alle transformieren oder die Ausführung von Einzeldatei-Generator auch transformieren. Je nachdem, wie Sie die Transformation ausgelöst haben, erhalten Sie dann unterschiedliche Dateipfade. Dies kann sehr verwirrend sein.
 
 ## <a name="add-reference-and-include-paths"></a>Verweis hinzufügen und Includepfaden
 
@@ -228,7 +228,7 @@ Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. übe
 </ItemGroup>
 ```
 
- Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
+Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -236,7 +236,7 @@ Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. übe
 The project folder is: <#= ProjectFolder #>
 ```
 
-Sie können in einem Direktivenprozessor Aufrufen [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+Sie können in einem anweisungsprozessor Aufrufen [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");
@@ -249,11 +249,11 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` ruft Daten nur dann aus `T4ParameterValues` ab, wenn Sie MSBuild verwenden. Wenn Sie die Vorlage mit Visual Studio transformieren, haben die Parameter Standardwerte.
 
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven hinzu
+##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven
 
-Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
+Visual Studio-Makros wie **$ (SolutionDir)** funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
-Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:
+Bearbeiten Ihrer *csproj* oder *vbproj* Datei, um eine Eigenschaft zu definieren. In diesem Beispiel definiert eine Eigenschaft namens **MyLibFolder**:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -269,34 +269,32 @@ Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteig
   </ItemGroup>
 ```
 
-Nun können Sie die Projekteigenschaft in der Assembly- und der Includedirektive verwenden:
+Nun können Sie die Projekteigenschaft in der Assembly- und der Includeanweisung verwenden:
 
 ```
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>
 ```
 
- Diese Direktiven rufen Werte von T4parameterValues in MSBuild- und Visual Studio-Hosts ab.
+Diese Direktiven rufen Werte von T4parameterValues in MSBuild- und Visual Studio-Hosts ab.
 
 ## <a name="q--a"></a>Fragen und Antworten
 
- **Warum sollte ich Vorlagen im Buildserver transformieren? Ich habe haben bereits Vorlagen in Visual Studio transformiert, bevor ich meinen Code eingecheckt.**
+**Warum sollten ich Vorlagen im Buildserver transformieren? Ich haben bereits Vorlagen in Visual Studio transformiert, bevor ich meinen Code eingecheckt.**
 
- Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage gelesen wird, aktualisieren, nicht auf Visual Studio die Datei automatisch transformiert werden. Transformieren von Vorlagen im Rahmen des Build wird sichergestellt ist, dass alle auf dem neuesten Stand.
+Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage gelesen aktualisieren, Transformieren nicht Visual Studio automatisch die Datei. Transformieren von Vorlagen als Teil des Builds sichergestellt ist, dass alles auf dem neuesten Stand.
 
- **Welche anderen Optionen gibt es zur Transformation von Textvorlagen?**
+**Was sind andere Optionen für Textvorlagen werden transformiert?**
 
--   Die [Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md) in den Befehlsskripten verwendet werden können. In den meisten Fällen ist es einfacher, MSBuild zu verwenden.
+- Die [Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md) in den Befehlsskripten verwendet werden kann. In den meisten Fällen ist es einfacher, MSBuild zu verwenden.
 
--   [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Während der Entwurfszeit-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) werden von Visual Studio transformiert.
+- [Während der Entwurfszeit-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) werden von Visual Studio transformiert.
 
--   [Laufzeittextvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in der Anwendung transformiert.
+- [Laufzeittextvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in Ihrer Anwendung transformiert.
 
 ## <a name="see-also"></a>Siehe auch
 
-- Hier finden Sie eine gute Anleitung zur T4 MSbuild-Vorlage, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
+- Es gibt gute Anleitungen in der Vorlage T4 MSbuild an *% ProgramFiles% (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
-- [Oleg Sych: Grundlegendes T4:MSBuild-Integration](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
-- [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

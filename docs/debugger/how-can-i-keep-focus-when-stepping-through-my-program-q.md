@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2729f3d3cc0cd8a2411dcc9d999ba26100ba5aa2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473471"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280908"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Wie kann der Fokus beim Durchlaufen des Programms beibehalten werden?
 ## <a name="description"></a>Beschreibung  
  Das Programm hat Probleme mit der Aktivierung von Fenstern. Beim Durchlaufen des Programms mit dem Debugger kann das Problem nicht reproduziert werden, da das Programm den Fokus verliert. Wie kann dies vermieden werden?  
   
 ## <a name="solution"></a>Lösung  
- Wenn Sie über einen zweiten Computer verfügen, verwenden Sie das Remotedebuggen. Sie können das Programm auf dem Remotecomputer verwenden, während der Debugger auf dem Host ausgeführt wird. Weitere Informationen finden Sie unter [wie: Auswählen eines Remotecomputers](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+ Wenn Sie über einen zweiten Computer verfügen, verwenden Sie das Remotedebuggen. Sie können das Programm auf dem Remotecomputer verwenden, während der Debugger auf dem Host ausgeführt wird. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
  [Fügen an laufende Prozesse an](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

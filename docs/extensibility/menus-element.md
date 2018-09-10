@@ -1,5 +1,5 @@
 ---
-title: Menüs Element | Microsoft Docs
+title: Menus-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 801bdf945f7f963168a83f8291d78e4751354269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136431"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637629"
 ---
-# <a name="menus-element"></a>Menüs-Element
+# <a name="menus-element"></a>Menus-element
 Definiert alle Menüs und Symbolleisten, die eine VSPackage implementiert.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <Menus>  
   <Menu>... </Menu>  
   <Menu>... </Menu>  
@@ -46,18 +46,18 @@ Definiert alle Menüs und Symbolleisten, die eine VSPackage implementiert.
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs und Symbolleisten, die eine VSPackage implementiert.|  
-|[Menu-Element](../extensibility/menu-element.md)|Stellt einen einzelnen Menüs oder einer Symbolleiste an.|  
+|[Menus-element](../extensibility/menus-element.md)|Definiert alle Menüs und Symbolleisten, die eine VSPackage implementiert.|  
+|[Menu-element](../extensibility/menu-element.md)|Stellt einem einzigen Menü oder einer Symbolleiste an.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung der Befehle im VSPackage.|  
+|[Commands-element](../extensibility/commands-element.md)|Stellt die Auflistung der Befehle im VSPackage.|  
   
 ## <a name="example"></a>Beispiel  
   
-```  
+```xml  
 <Commands package="guidMyPackage">  
     <Menus>  
       <Menu Condition="'%(DEBUG)' != 'true'"   
@@ -81,5 +81,5 @@ Definiert alle Menüs und Symbolleisten, die eine VSPackage implementiert.
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

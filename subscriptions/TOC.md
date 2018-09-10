@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
-### Berufliche Entwicklung
+### [Professionelle Entwicklung](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University-Schulung](vs-xamarin.md)
 #### [MSDN Magazine-Abonnement](vs-msdn.md)
-### Supportvorteile
+### [Supportvorteile](technical-support.md)
 #### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 #### [Azure-Community](vs-azure-community.md)
 #### [Technischer Support](vs-tech-support.md)
@@ -48,6 +48,8 @@
 #### [Für die Volumenlizenzierung](volume-license-admins.md)
 ##### [Häufig gestellte Fragen zur VLSC-Administratormigration](vlsc-admin-faq.md)
 ##### Onboarding Ihres Unternehmens
+###### [Onboarding nach der Migration](post-migration-onboarding.md)
+###### [Open und Open License-Migration](open-migration.md)
 ###### [Onboarding der E-Mail-Kommunikation](volume-license-onboarding-email.md)
 ###### [Ermitteln Ihrer öffentlichen Kundennummer](find-pcn.md)
 ###### [Ermitteln Ihres primären Kontakts](find-primary-contact.md)

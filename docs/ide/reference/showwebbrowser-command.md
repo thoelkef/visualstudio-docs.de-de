@@ -15,14 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704875"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176384"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
+
 Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.
 
 ## <a name="syntax"></a>Syntax
@@ -34,16 +35,16 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Argumente
  `URL`
 
- Erforderlich. URL (Uniform Resource Locator) für die Website
+ Erforderlich. URL (Uniform Resource Locator) für die Website.
 
 ## <a name="switches"></a>Schalter
  /new
 
- Dies ist optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird
+ Dies ist optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird.
 
  /ext
 
- Dies ist optional. Gibt an, dass die Seite im Standard-Webbrowser außerhalb der IDE angezeigt wird
+ Dies ist optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
 
 ## <a name="remarks"></a>Hinweise
  Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.

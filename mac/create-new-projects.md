@@ -1,16 +1,16 @@
 ---
 title: Erstellen neuer Projekte und Projektmappen
 description: In diesem Artikel erfahren Sie, wie Sie Projekte und Projektmappen in Visual Studio für Mac erstellen können.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 948d5d5bba49571d4b4a73d4ba47a77b377d8b11
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 1bd1687e545546780db4c76169bf2ca0affd47fe
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995828"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223941"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Erstellen neuer Projekte und Projektmappen
 

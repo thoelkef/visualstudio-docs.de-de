@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192010763a5a00981ca65adc2cbb5fe8fa024aab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920891"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890021"
 ---
 # <a name="design-user-interfaces"></a>Entwerfen von Benutzeroberflächen
 
@@ -23,7 +23,7 @@ Zum Entwurf und zur Erstellung der Benutzeroberfläche für die Anwendung stehen
 
 |Themenbereich|Siehe|
 |-------------------------|---------|
-| Die Funktionen für XAML-Designer in Visual Studio und Blend für Visual Studio | [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md) |
+| Die Funktionen für XAML-Designer in Visual Studio und Blend für Visual Studio | [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md) |
 | Entwerfen einer beliebigen XAML-basierten Anwendung mit Visual Studio|[Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Entwerfen einer beliebigen XAML-basierten Anwendung mit Blend für Visual Studio | [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
 |Entwerfen von Desktopanwendungen, die den WPF-Typ von XAML verwenden | [Erste Schritte mit Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |

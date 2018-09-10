@@ -1,9 +1,9 @@
 ---
-title: Gemischter Code und fehlende Daten im Aufruflistenfenster | Microsoft Docs
+title: Gemischter Code und fehlende Daten im Aufruflistenfenster | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -25,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f0a0822dc99eccea4ddd621ae622a112e0909bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480227"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151982"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Gemischter Code und fehlende Daten im Fenster "Aufrufliste"
-Da es zwischen den Aufruflisten von verwaltetem Code und systemeigenen Code Unterschiede gibt, kann der Debugger bei vermischten Codetypen nicht immer die vollständige Aufrufliste anzeigen. Wenn systemeigener Code verwalteten Code aufruft, Sie können folgende abweichungen in der **Aufrufliste** Fenster:  
+Da es zwischen den Aufruflisten von verwaltetem Code und nativem Code Unterschiede gibt, kann der Debugger bei vermischten Codetypen nicht immer die vollständige Aufrufliste anzeigen. Wenn nativer Code verwalteten Code aufruft, können Sie feststellen, dass die folgenden Diskrepanzen in den **Aufrufliste** Fenster:  
   
--   Der systemeigene Rahmen direkt über den verwalteten Code möglicherweise fehlt die **Aufrufliste** Fenster. Weitere Informationen finden Sie unter [wie: Ausführen bis Rücksprung verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+-   Der systemeigene Rahmen direkt über den verwalteten Code möglicherweise fehlen die **Aufrufliste** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Prozedurschritt aus verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Für außerhalb des Debuggers gestartete Anwendungen mit gemischtem Modus der **Aufrufliste** Fenster kann nur den verwalteten Code angezeigt, und keiner der systemeigenen Rahmen werden angezeigt.  
+-   Anwendungen außerhalb des Debuggers im gemischten Modus die **Aufrufliste** Fenster kann nur den verwalteten Code anzuzeigen und der systemeigenen Rahmen nicht sichtbar.  
   
  Beide Fälle treten relativ selten ein. In den meisten Fällen, in denen verwalteter Code durch systemeigenen Code aufgerufen wird, werden die Aufruflisten richtig angezeigt.  
   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958528"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511600"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code
 
@@ -27,7 +27,7 @@ Sobald Sie [Python-Unterstützung für Visual Studio 2017 installiert](installin
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Falls gewünscht, führen Sie das Programm durch Drücken von STRG+F5 oder Auswählen von **Debuggen > Starten ohne Debuggen** aus.
+Falls gewünscht, führen Sie das Programm durch Drücken von **STRG**+**F5** oder Auswählen von **Debuggen** > **Starten ohne Debuggen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

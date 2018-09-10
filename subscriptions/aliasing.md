@@ -9,16 +9,16 @@ description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477651"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637681"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
-Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet. 
+Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
 
 ## <a name="what-is-aliasing"></a>Was ist Aliasing?
 
@@ -28,7 +28,7 @@ Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Servi
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Administrator?
 
-Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) erfolgreich ist. 
+Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) erfolgreich ist.
 - Die erste (empfohlene) Option ist die Nutzung des Verzeichniskontos als zugewiesene Adresse im Volume Licensing Service Center (VLSC). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Zuweisen von Abonnenten zu einem Verzeichniskonto](#assigning-subscribers-to-a-directory-account).
 - Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auch Microsoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
 
@@ -37,73 +37,60 @@ Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die An
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Abonnent?
 
-Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen.  Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen.  Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion.  Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).  
+Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen.  Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen.  Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion.  Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Zuweisen von Abonnenten zu einem Verzeichniskonto 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Zuweisen von Abonnenten zu einem Verzeichniskonto
 
 In jedem Fall muss der Abonnement-Manager im Volume Licensing Service Center (VLSC) die Verzeichnisadresse für neue Abonnenten verwenden oder die E-Mail-Adresse für „vorhandene“ Abonnenten aktualisieren.  Dabei ist zu beachten, dass bei Verwendung der Verzeichnisadresse neue Abonnenten keine Begrüßungs-E-Mail erhalten und der Administrator die Abonnenten darüber informieren muss, dass ihnen ein Abonnement zugewiesen wurde.  Nachdem Sie die folgenden Schritte ausgeführt haben, können Sie auch die [E-Mail-Vorlage](#notifying-your-subscribers-with-directory-addresses) verwenden, um Ihre Abonnenten zu benachrichtigen und ihnen bei der Anmeldung zu helfen.
 
 ### <a name="adding-new-subscribers"></a>Hinzufügen neuer Abonnenten
+
 Führen Sie die folgenden Schritte aus, um einen neuen Abonnenten mit einem Verzeichniskonto hinzuzufügen.
 
 1. Besuchen Sie das [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC), und melden Sie sich an.
 2. Klicken Sie auf der VLSC-Administratorseite auf **Abonnements** und dann auf **Visual Studio-Abonnements**.
 
-    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Menü „Abonnements“](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Klicken Sie auf die mit dem Visual Studio-Abonnement verknüpfte **Vertragsnummer**.
 
-    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Auswählen der Vereinbarung](_img/vlsc/vlsc-agreement.png)
 
 4. Klicken Sie auf **Abonnement zuweisen**.
-
-    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
-
-
 5. Wählen Sie die gewünschte **Abonnementstufe**.
-
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
-
 6. Stellen Sie sicher, dass Abonnements für eine Zuweisung vorhanden sind, und klicken Sie auf **Weiter**.
-7.  Geben Sie die Abonnentendetails und die Verzeichnisadresse im Feld „E-Mail-Adresse“ ein, und klicken Sie auf **Weiter**.
-
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+7. Geben Sie die Abonnentendetails und die Verzeichnisadresse im Feld „E-Mail-Adresse“ ein, und klicken Sie auf **Weiter**.
 8. Überprüfen Sie die Abonnenteninformationen, und klicken Sie auf **Fertig stellen**.
-
 9. Benachrichtigen Sie den Abonnenten mithilfe der folgenden [Vorlage](#notifying-your-subscribers-with-directory-addresses) darüber, dass sein Abonnement bereitgestellt wurde.
 
 ### <a name="updating-an-existing-subscriber"></a>Aktualisieren eines vorhandenen Abonnenten
+
 Führen Sie die folgenden Schritte aus, um einen vorhandenen Abonnenten mit einem Verzeichniskonto zu aktualisieren.
 
 1. Besuchen Sie das [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC), und melden Sie sich an.
-
 2. Klicken Sie auf der VLSC-Administratorseite auf **Abonnements** und dann auf **Visual Studio-Abonnements**.
-
 3. Klicken Sie auf die mit dem Visual Studio-Abonnement verknüpfte **Vertragsnummer**.
-
 4. Klicken Sie in der Suchleiste auf den **Abwärtspfeil**.
-
 5. Suchen Sie über das Feld „E-Mail-Adresse“ nach dem Abonnenten.
-
 6. Klicken Sie in der Ergebnisliste auf den **Nachnamen** des Abonnenten.
-
 7. Klicken Sie auf **Bearbeiten**.
-
 8. Ändern Sie die Eingabe im Feld für die E-Mail-Adresse in die gewünschte Verzeichnisadresse, und klicken Sie auf **Speichern**.
-
 9. Benachrichtigen Sie den Abonnenten mithilfe der folgenden E-Mail-Vorlage darüber, dass sein Abonnement bereitgestellt wurde.
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Benachrichtigen Ihrer Abonnenten mit Verzeichnisadressen
+
 Da die Begrüßungs-E-Mail Ihren Abonnenten nicht erfolgreich erreichen wird, kopieren Sie die unten stehende Nachricht, um diese in einer E-Mail an den Abonnenten zu senden. Ersetzen Sie „%WORT%“ durch die entsprechenden Informationen für jeden Abonnenten.
 
 ----------- Kopieren Sie Folgendes (Strg+C) -----------
 
 Hallo %ABONNENTENNAME%,
 
-Ihnen wurde ein Visual Studio-Abonnement zugewiesen.  Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen. 
+Ihnen wurde ein Visual Studio-Abonnement zugewiesen.  Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen.
 
-Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
+Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Wählen Sie unten auf der Seite Folgendes aus:
    - Konten, Abonnements und Abrechnungssupport
@@ -115,14 +102,16 @@ Wählen Sie unten auf der Seite Folgendes aus:
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto
+
 Nutzen Sie die Anweisungen, die im Abschnitt [Zuweisen von Abonnenten zu einem Verzeichniskonto](#assigning-subscribers-to-a-directory-account) beschrieben sind, um einen neuen Benutzer hinzuzufügen oder die E-Mail-Adresse eines Benutzers im Volume Licensing Service Center (VLSC) zu aktualisieren.  In Fällen, in denen die E-Mail-Adresse nicht vom Verzeichnis erkannt wird, muss der Benutzer schrittweise ein neues Konto erstellen, um die E-Mail-Adresse als persönliches Konto festzulegen.  Für den Übergang hat das Visual Studio-Abonnementteam eine Ausnahme von der unten definierten Identitätsrichtlinie eingerichtet. Wir investieren jedoch in die erforderlichen Ressourcen, um diese Richtlinie künftig zu entfernen.
 
 > [!WARNING]
 > Die Kombination von Geschäfts-, Schul- oder Uniidentitäten mit persönlichen Identitäten wird von Microsoft nicht empfohlen.  Der Grund hierfür ist, dass die Organisation nicht mehr Besitzer des Kontos ist und die Kontrolle darüber verliert. Folglich kann der Mitarbeiter – auch nach dem Verlassen des Unternehmens – weiterhin auf bestimmte Produkte oder Dienste zugreifen.  Weitere Informationen zu dem Thema finden Sie in diesem [Blogbeitrag](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/) vom Microsoft-Identitätsteam.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Festlegen einer E-Mail-Adresse als persönliches Konto
-Nachdem einem Abonnenten ein Abonnement zugewiesen wurde, wird dieser per E-Mail aufgefordert, die Website https://my.visualstudio.com zu besuchen, um die Vorteile seines Abonnements zu nutzen.  Beim Anmeldeversuch für das Abonnement wird in Visual Studio jedoch eine Fehlermeldung angezeigt, die darauf hinweist, dass das Konto nicht erkannt wird.  Bitten Sie daher den Abonnenten, folgende Anweisungen auszuführen, bevor er sich bei https://my.visualstudio.com anmeldet.  Verwenden Sie ggf. diese [Vorlage](#notifying-your-subscribers-using-personal-accounts), um den Abonnenten nach dem Zuweisen eines Abonnements darüber zu informieren.
+
+Nachdem einem Abonnenten ein Abonnement zugewiesen wurde, wird dieser per E-Mail aufgefordert, die Website [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) zu besuchen, um die Vorteile seines Abonnements zu nutzen.  Beim Anmeldeversuch für das Abonnement wird in Visual Studio jedoch eine Fehlermeldung angezeigt, die darauf hinweist, dass das Konto nicht erkannt wird.  Bitten Sie daher den Abonnenten, folgende Anweisungen auszuführen, bevor er sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet.  Verwenden Sie ggf. diese [Vorlage](#notifying-your-subscribers-using-personal-accounts), um den Abonnenten nach dem Zuweisen eines Abonnements darüber zu informieren.
 
 1. Navigieren Sie zu https://my.visualstudio.com, und klicken Sie auf **Neues Microsoft-Konto erstellen**.
 
@@ -151,7 +140,7 @@ Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherwe
 
 2. Klicken Sie rechts auf „Neues Microsoft-Konto erstellen“.
 
-3. Füllen Sie das Formular aus: 
+3. Füllen Sie das Formular aus:
     - Geben Sie im Feld someone@example.com Ihre Firmen-E-Mail-Adresse ein.
     - Geben Sie ein Kennwort ein.
     - Wählen Sie Ihre Werbevoreinstellungen aus.
@@ -165,7 +154,7 @@ Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherwe
 
 Hinweis: Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, dass Sie verwenden möchten (z.B. „Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).  Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
 
-Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://www.visualstudio.com/subscriptions/support/).
+Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Wählen Sie unten auf der Seite Folgendes aus:
    - Konten, Abonnements und Abrechnungssupport

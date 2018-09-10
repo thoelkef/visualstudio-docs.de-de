@@ -1,5 +1,5 @@
 ---
-title: MipMap-Generierungsvariante | Microsoft Docs
+title: MipMap-Generierungsvariante | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475718"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510148"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.  
@@ -28,7 +28,7 @@ Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
  Wenn diese Variante zu einer deutlichen Leistungssteigerung führt, zeigt dies an, dass Sie Texturen ohne Aktivierung von Mipmaps verwenden und deshalb den Texturcache nicht optimal nutzen.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. Die Mipmap-Erzeugung wird insbesondere dann erzwungen, wenn das in `pDesc` übergebene Objekt D3D11_TEXTUR2D_DESC eine nicht geänderte Shaderressource beschreibt. Das bedeutet:  
+ Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. MipMap-Erzeugung wird insbesondere erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt übergeben `pDesc` beschreibt eine nicht geänderte Shaderressource, das ist:  
   
 -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
@@ -45,9 +45,9 @@ Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
  Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
   
 ## <a name="example"></a>Beispiel  
- Die **MipMap-Erzeugung** Variante durch Verwendung eines Codes reproduziert werden kann:  
+ Die **MipMap-Erzeugung** Variante reproduziert werden kann, mithilfe von Code wie folgt:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  

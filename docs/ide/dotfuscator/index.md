@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704395"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775434"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,25 +43,23 @@ Dotfuscator kann Ihre .NET-Assemblys [verschleiern][obfuscation], um Reverse Eng
 
 Es ist auch wichtig, **die Integrität der Anwendung zu schützen**.
 Zusätzlich zum Reverse Engineering könnten böswillige Benutzer versuchen, illegale Kopien der Anwendung zu erstellen, das Verhalten der Anwendung zur Laufzeit zu ändern oder Daten zu manipulieren.
-Dotfuscator kann in Ihre Anwendung eine Funktion einfügen, um [eine nicht autorisierte Nutzung zu erkennen, zu melden und auf eine solche Nutzung zu reagieren][checks], einschließlich Manipulationen, Debuggen von Drittanbietern und Geräten mit Rootzugriff.
+Mit Dotfuscator können Sie Ihrer Anwendung um eine Funktionalität erweitern, mit der Sie [eine nicht autorisierte Nutzung erkennen und auf eine solche Nutzung reagieren können][checks], einschließlich Manipulationen, Drittanbieterdebugging und Geräten mit Rootzugriff.
 
 Weitere Informationen zum Integrieren von Dotfuscator in einen sicheren Lebenszyklus der Softwareentwicklung finden Sie auf der PreEmptive Solutions-Seite zum [SDL-App-Schutz][sdl-protection].
 
 ## <a name="about-dotfuscator-ce"></a>Informationen zu Dotfuscator CE
 
-Ihre Kopie von Microsoft Visual Studio 2017 beinhaltet eine kostenlose Kopie von ***PreEmptive Protection – Dotfuscator* Community Edition**, auch bekannt als Dotfuscator CE.
+Ihre Kopie von Microsoft Visual Studio 2017 beinhaltet eine kostenlose Kopie von **_PreEmptive Protection – Dotfuscator_ Community Edition**, auch bekannt als Dotfuscator CE.
 Anweisungen zum Installieren der Version von Dotfuscator CE, die in Visual Studio 2017 enthalten ist, finden Sie auf der [Installationsseite][install].
 
 Dotfuscator CE bietet für Entwickler, Architekten und Tester eine Reihe von Diensten für [Softwareschutz und -härtung][software-protection].
 Beispiele von Dotfuscator CE-Funktionen für [.NET-Obfuskation][obfuscation] und sonstigen [Anwendungsschutz][app-protection]:
 
 * *[Umbenennung][renaming]* von Bezeichnern, um das Reverse Engineering der kompilierten Assemblys zu erschweren.
-* *[Manipulationsschutz][tamper]*, um die Ausführung manipulierter Anwendungen zu erkennen, Incidentwarnungen zu übertragen und manipulierte Sitzungen zu beenden.
-* *[Debugschutz][debug]*, um das Anfügen eines Debuggers an eine aktive Anwendung zu erkennen, Incidentwarnungen zu übertragen und Debugsitzungen zu beenden.
-* *[Schutz von Geräten ohne Rootzugriff][root]*, um zu ermitteln, ob die Anwendung auf einem Android-Gerät mit Rootzugriff ausgeführt werden und um Sitzungen auf diesen Geräten zu beenden.
-* *[Verhaltensweisen beim Ablauf von Anwendungen][shelflife]*, mit denen ein Enddatum verschlüsselt wird, Warnungen übertragen werden, wenn Anwendungen nach ihrem Ablaufdatum ausgeführt werden, und abgelaufene Anwendungssitzungen beendet werden.
-* *[Ausnahmeverfolgung][exceptions]*, um Ausnahmefehler in der Anwendung zu überwachen.
-* *Überwachung der Nutzung von [Sitzungen][sessions] und [Funktionen][features]*, um zu bestimmen, welche Anwendungen in welcher Version ausgeführt wurden und welche Funktionen in den Anwendungen genutzt wurden.
+* *[Manipulationsschutz][tamper]*, um die Ausführung manipulierter Anwendungen zu erkennen und manipulierte Sitzungen zu beenden oder in geeigneter Weise zu reagieren.
+* *[Debugschutz][debug]*, um das Anfügen eines Debuggers an eine aktive Anwendung zu erkennen und Debugsitzungen zu beenden oder in geeigneter Weise zu reagieren.
+* *[Schutz vor Geräten mit Rootzugriff][root]*, um zu ermitteln, ob die Anwendung auf einem Android-Gerät mit Rootzugriff ausgeführt wird, und um Sitzungen auf diesen Geräten zu beenden oder in geeigneter Weise zu reagieren.
+* *[Verhaltensweisen beim Ablauf von Anwendungen][shelflife]*, mit denen ein Enddatum codiert wird und abgelaufene Anwendungssitzungen beendet werden.
 
 Weitere Informationen zu diesen Funktionen und dazu, wie sie in die Strategie zum Schutz Ihrer Anwendungen passen, finden Sie auf der [Seite mit Funktionen][capabilities].
 
@@ -107,9 +105,5 @@ Ausführliche Anweisungen zur Verwendung finden Sie im [vollständigen Dotfuscat
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

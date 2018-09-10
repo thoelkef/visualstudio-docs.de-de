@@ -1,5 +1,5 @@
 ---
-title: Überprüfen Sie die Daten in datasets
+title: Überprüfen von Daten in Datasets
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,83 +23,83 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8986ce9e2ee1ff171a524b0a402a1e44b70ca06
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927467"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174721"
 ---
-# <a name="validate-data-in-datasets"></a>Überprüfen Sie die Daten in datasets
-Validieren von Daten ist der Prozess der bestätigt, den die Werte, die in Datenobjekte eingegeben werden, die diese Einschränkungen in einer Dataset-Schemas entsprechen. Dieser Vorgang wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es wird empfohlen, überprüfen Sie die Daten vor dem Senden von Updates der zugrunde liegenden Datenbank. Dies reduziert die Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.
+# <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
+Überprüfen von Daten ist der Prozess der Bestätigung der Werte, die in Datenobjekte eingegeben werden, die die Einschränkungen in einer Dataset Schema entsprechen. Der Überprüfungsprozess wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es hat sich bewährt, überprüfen Sie die Daten vor dem Senden von Aktualisierungen an der zugrunde liegenden Datenbank. Dies verringert sowohl Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.
 
-Sie können bestätigen, dass Daten, die ein Dataset geschrieben wird gültig ist, indem die Überprüfungen in das Dataset selbst erstellen. Das Dataset überprüfen können Sie die Daten unabhängig davon, wie das Update ausgeführt wird – direkt über Steuerelemente in einem Formular in einer Komponente oder auf andere Weise. Da das Dataset Teil Ihrer Anwendung (im Gegensatz zu den Datenbank-Back-End) ist, ist es eine logische Ort anwendungsspezifische Validierungen erstellen.
+Sie können bestätigen, dass Daten, die auf ein Dataset geschrieben werden durch Erstellen von Überprüfungen in das Dataset selbst gültig ist. Das Dataset kann überprüfen Sie die Daten unabhängig davon, wie das Update ausgeführt wird – direkt über die Steuerelemente in einem Formular in eine Komponente, oder auf andere Weise. Da das Dataset Teil Ihrer Anwendung (im Gegensatz zu den Datenbank-Back-End) ist, ist es ein logischer Ansatzpunkt zum anwendungsspezifischen Validierung zu erstellen.
 
-Die beste Möglichkeit zum Hinzufügen von Validierung zu Ihrer Anwendung ist in der partiellen Klassendatei für das Dataset. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]öffnen die **Dataset-Designer** und doppelklicken Sie auf die Spalte oder Tabelle, für die Sie erstellen möchten. Erstellt diese Aktion automatisch eine <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging> -Ereignishandler.
+Der beste Ort zum Hinzufügen der Validierung zu Ihrer Anwendung ist in der Datei für die partielle Klasse des Datasets. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]öffnen die **Dataset-Designer** und doppelklicken Sie auf die Spalte oder Tabelle, für die Sie die Überprüfung erstellen möchten. Erstellt diese Aktion automatisch eine <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging> -Ereignishandler.
 
 ## <a name="validate-data"></a>Überprüfen von Daten
- Überprüfung innerhalb eines Datasets kann auf folgenden Arten erfolgen:
+ Validierung in einem Dataset erfolgt folgendermaßen:
 
--   Erstellen Sie eigene anwendungsspezifische Validierungen, die Werte in eine einzelne Datenspalte während der Änderungen überprüfen kann.  Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Spaltenänderungen](validate-data-in-datasets.md).
+-   Erstellen Sie eigene anwendungsspezifische Validierungen, die während der Änderung der Werte in eine einzelne Spalte überprüfen kann. Weitere Informationen finden Sie unter [Vorgehensweise: Validieren von Daten während Spaltenänderungen](validate-data-in-datasets.md).
 
--   Erstellen Sie eigene anwendungsspezifische Validierungen, die die Daten mit Werten, die während einer gesamten Daten prüfen kann ändert Zeile. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](validate-data-in-datasets.md).
+-   Erstellen Sie eigene anwendungsspezifische Validierungen, die die Daten mit Werten, die während einer gesamten Daten prüfen kann ändert Zeile. Weitere Informationen finden Sie unter [Vorgehensweise: Validieren von Daten während zeilenänderungen](validate-data-in-datasets.md).
 
--   Durch Erstellen von Schlüsseln, unique-Einschränkungen usw. als Teil der tatsächliche Schema-Definition des Datasets.
+-   Durch das Erstellen von Schlüsseln, unique-Einschränkungen, und so weiter, als Teil der Schemadefinition des tatsächlichen des Datasets.
 
--   Durch Festlegen der Eigenschaften von der <xref:System.Data.DataColumn> des Objekts, z. B. <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, und <xref:System.Data.DataColumn.Unique%2A>.
+-   Durch Festlegen der Eigenschaften von den <xref:System.Data.DataColumn> des Objekts, z. B. <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, und <xref:System.Data.DataColumn.Unique%2A>.
 
 Mehrere Ereignisse ausgelöst werden, indem die <xref:System.Data.DataTable> Objekt, wenn eine Änderung in einem Datensatz auftritt:
 
--   Die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse werden ausgelöst, während und nach jeder Änderung an einer einzelnen Spalte. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis ist nützlich, wenn Sie Änderungen in bestimmte Spalten überprüfen möchten. Informationen zum Ändern der vorgeschlagenen wird als ein Argument mit dem Ereignis übergeben.
--   Die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden ausgelöst, während und nach jeder Änderung in einer Zeile. Die <xref:System.Data.DataTable.RowChanging> Ereignis allgemeineren ist. Er gibt an, dass eine Änderung an einer beliebigen Stelle in der Zeile aufgetreten ist, aber Sie nicht wissen, welche Spalte geändert hat.
+-   Die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse werden ausgelöst, während und nach jeder Änderung an einer einzelnen Spalte. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis ist hilfreich, wenn Sie Änderungen in bestimmte Spalten überprüfen möchten. Informationen über die vorgeschlagene Änderung wird als ein Argument mit dem Ereignis übergeben.
+-   Die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden ausgelöst, während und nach einer Änderung in einer Zeile. Die <xref:System.Data.DataTable.RowChanging> Ereignis ist allgemeiner. Er gibt an, dass eine Änderung an einer beliebigen Stelle in der Zeile auftritt, aber Sie wissen nicht, welche Spalte geändert hat.
 
-Standardmäßig löst jede Änderung an einer Spalte daher vier Ereignisse. Die erste ist die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse für die spezifische Spalte, die geändert wird. Als Nächstes werden die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse. Wenn mehrere Änderungen auf die Zeile vorgenommen werden gerade, werden die Ereignisse für jede Änderung ausgelöst.
+Standardmäßig löst jede Änderung an einer Spalte aus diesem Grund vier Ereignisse. Die erste ist die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse für die spezifische Spalte, die geändert wird. Als Nächstes werden die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse. Falls mehrere Änderungen an der Zeile durchgeführt werden, werden die Ereignisse für jede Änderung ausgelöst werden.
 
 > [!NOTE]
->  Der Datenzeile <xref:System.Data.DataRow.BeginEdit%2A> Methode deaktiviert die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse nach jeder einzelnen Spalte ändern. Das Ereignis wird in diesem Fall nicht ausgelöst, bis die <xref:System.Data.DataRow.EndEdit%2A> Methode wurde aufgerufen, wenn die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden nur einmal ausgelöst. Weitere Informationen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+>  Der Datenzeile <xref:System.Data.DataRow.BeginEdit%2A> Methode deaktiviert die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse nach jeder Änderung der einzelnen Spalten. Das Ereignis wird in diesem Fall nicht ausgelöst, bis die <xref:System.Data.DataRow.EndEdit%2A> Methode wurde aufgerufen, wenn die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden nur einmal ausgelöst. Weitere Informationen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
-Das Ereignis, das Sie auswählen, hängt davon ab, wie präzise die Validierung werden soll. Wenn es wichtig ist, dass einen Fehler erfasst werden sofort, wenn eine Spalte ändert, erstellen Sie Überprüfung mithilfe der <xref:System.Data.DataTable.ColumnChanging> Ereignis. Verwenden Sie andernfalls die <xref:System.Data.DataTable.RowChanging> Ereignis, das möglicherweise dazu führt, gleichzeitig mehrere Fehler abgefangen. Darüber hinaus, wenn Ihre Daten so strukturiert ist, dass der Wert einer Spalte basierend auf dem Inhalt einer anderen Spalte überprüft wird, führen Sie dann die Validierung während der <xref:System.Data.DataTable.RowChanging> Ereignis.
+Das Ereignis, das Sie auswählen, hängt davon ab, wie präzise die Validierung werden sollen. Wenn es wichtig ist, dass Sie Fehler abfangen, sofort bei einer Spalte ändert, Buildüberprüfung mithilfe der <xref:System.Data.DataTable.ColumnChanging> Ereignis. Verwenden Sie andernfalls die <xref:System.Data.DataTable.RowChanging> -Ereignis, das dazu führen, dass gleichzeitig mehrere Fehler abgefangen. Darüber hinaus, wenn Ihre Daten so strukturiert ist, dass der Wert einer Spalte basierend auf dem Inhalt einer anderen Spalte überprüft wird, führen Sie die Überprüfung während der <xref:System.Data.DataTable.RowChanging> Ereignis.
 
-Wenn Datensätze aktualisiert werden, die <xref:System.Data.DataTable> Objekt löst Ereignisse aus, die Sie reagieren kann, wie Änderungen auftreten, und nachdem Änderungen vorgenommen wurden.
+Wenn Datensätze aktualisiert werden, die <xref:System.Data.DataTable> Objekt löst Ereignisse aus, die Sie reagieren können, wenn Änderungen auftreten, und nachdem Änderungen vorgenommen wurden.
 
-Wenn Ihre Anwendung ein typisiertes Dataset verwendet, können Sie stark typisierte Ereignishandler erstellen. Dadurch wird die vier zusätzliche typisierte Ereignisse, die Handler für erstellen, können hinzugefügt: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`, und `dataTableNameRowDeleted`. Diese typisierten Ereignishandler übergeben Sie ein Argument, das die Spaltennamen der Tabelle enthält, die zum Schreiben und Lesen von Code erleichtern.
+Wenn Ihre Anwendung ein typisiertes Dataset verwendet, können Sie stark typisierte Ereignishandler erstellen. Dadurch werden vier zusätzliche typisierte Ereignisse, die für die Handler erstellen: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`, und `dataTableNameRowDeleted`. Diese typisiertes Ereignis-Handler übergeben Sie ein Argument, das die Spaltennamen der Tabelle enthält, die zum Schreiben und Lesen von Code vereinfachen.
 
 ## <a name="data-update-events"></a>Ereignisse zum Aktualisieren von Daten
 
 |event|Beschreibung|
 |-----------|-----------------|
-|<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte ist geändert wird. Das Ereignis übergibt die Zeilen und Spalten an, die Sie zusammen mit den vorgeschlagenen neuen Wert.|
-|<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt die Zeilen und Spalten an, die Sie zusammen mit den vorgeschlagenen Wert.|
-|<xref:System.Data.DataTable.RowChanging>|Die zu vorgenommenen Änderungen eine <xref:System.Data.DataRow> Objekt sind im Begriff, zurück in das Dataset ein Commit ausgeführt werden. Wenn Sie nicht aufgerufen haben die <xref:System.Data.DataRow.BeginEdit%2A> -Methode, die <xref:System.Data.DataTable.RowChanging> Ereignis wird für jede Änderung an einer Spalte unmittelbar nach der <xref:System.Data.DataTable.ColumnChanging> Ereignis ausgelöst wurde. Wenn Sie aufgerufen <xref:System.Data.DataRow.BeginEdit%2A> bevor die Änderungen, die <xref:System.Data.DataTable.RowChanging> Ereignis wird nur bei Aufruf der <xref:System.Data.DataRow.EndEdit%2A> Methode.<br /><br /> Das Ereignis übergibt die Zeile an, die Sie zusammen mit einem Wert, der angibt, welche Art von Aktion (ändern, einfügen und So weiter) ausgeführt wird.|
-|<xref:System.Data.DataTable.RowChanged>|Eine Zeile wurde geändert. Das Ereignis übergibt die Zeile an, die Sie zusammen mit einem Wert, der angibt, welche Art von Aktion (ändern, einfügen und So weiter) ausgeführt wird.|
-|<xref:System.Data.DataTable.RowDeleting>|Eine Zeile wird gelöscht. Das Ereignis übergibt die Zeile an, die Sie zusammen mit einem Wert, der angibt, welche Art von Aktion (Delete) ausgeführt wird.|
-|<xref:System.Data.DataTable.RowDeleted>|Eine Zeile wurde gelöscht. Das Ereignis übergibt die Zeile an, die Sie zusammen mit einem Wert, der angibt, welche Art von Aktion (Delete) ausgeführt wird.|
+|<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte wird geändert. Das Ereignis übergibt der Zeile und Spalte an, die Sie zusammen mit den vorgeschlagenen neuen Wert.|
+|<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt der Zeile und Spalte an, die Sie zusammen mit den vorgeschlagenen Wert.|
+|<xref:System.Data.DataTable.RowChanging>|Die Änderungen, die an eine <xref:System.Data.DataRow> Objekt sind im Begriff, der wieder in das Dataset ein Commit ausgeführt werden. Wenn Sie nicht aufgerufen haben die <xref:System.Data.DataRow.BeginEdit%2A> -Methode, die <xref:System.Data.DataTable.RowChanging> Ereignis wird ausgelöst, für jede Änderung an eine Spalte unmittelbar nach der <xref:System.Data.DataTable.ColumnChanging> -Ereignis ausgelöst wurde. Wenn Sie aufgerufen <xref:System.Data.DataRow.BeginEdit%2A> vor dem vornehmen von Änderungen, die <xref:System.Data.DataTable.RowChanging> -Ereignis wird ausgelöst, nur bei Aufruf der <xref:System.Data.DataRow.EndEdit%2A> Methode.<br /><br /> Das Ereignis übergibt die Zeile, zusammen mit einem Wert, der angibt, welche Art von Aktion (ändern, einfügen und So weiter) ausgeführt wird.|
+|<xref:System.Data.DataTable.RowChanged>|Eine Zeile wurde geändert. Das Ereignis übergibt die Zeile, zusammen mit einem Wert, der angibt, welche Art von Aktion (ändern, einfügen und So weiter) ausgeführt wird.|
+|<xref:System.Data.DataTable.RowDeleting>|Eine Zeile wird gelöscht. Das Ereignis übergibt die Zeile, zusammen mit einem Wert, der angibt, welche Art von Aktion (Delete) ausgeführt wird.|
+|<xref:System.Data.DataTable.RowDeleted>|Eine Zeile wurde gelöscht. Das Ereignis übergibt die Zeile, zusammen mit einem Wert, der angibt, welche Art von Aktion (Delete) ausgeführt wird.|
 
-Die <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>, und <xref:System.Data.DataTable.RowDeleting> Ereignisse werden ausgelöst, während des Aktualisierungsvorgangs. Sie können diese Ereignisse verwenden, Überprüfen von Daten oder andere Arten von Verarbeitung durchzuführen. Da das Update im Prozess während dieser Ereignisse ist, können Sie es abbrechen, indem eine Ausnahme auszulösen, wird verhindert, dass das Update vom abschließen.
+Die <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>, und <xref:System.Data.DataTable.RowDeleting> Ereignisse werden ausgelöst, während des Updates. Sie können diese Ereignisse verwenden, Überprüfen von Daten oder andere Arten von Verarbeitung ausführen. Da das Update im Prozess während dieser Ereignisse ist, können Sie es abbrechen, indem Sie keinen Ausnahmefehler auslöst, die verhindert, das Update dass abgeschlossen.
 
-Die <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> und <xref:System.Data.DataTable.RowDeleted> Ereignisse sind Notification-Ereignisse, die ausgelöst werden, wenn das Update erfolgreich abgeschlossen wurde. Diese Ereignisse sind nützlich, wenn Sie weitere basierend auf einer erfolgreichen Aktualisierung Maßnahmen zu ergreifen möchten.
+Die <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> und <xref:System.Data.DataTable.RowDeleted> Ereignisse sind Benachrichtigungsereignisse, die ausgelöst werden, wenn das Update erfolgreich abgeschlossen wurde. Diese Ereignisse sind nützlich, wenn Sie weitere Aktionen basierend auf einer erfolgreichen Aktualisierung ausführen möchten.
 
 ## <a name="validate-data-during-column-changes"></a>Validieren von Daten während Spaltenänderungen
 
 > [!NOTE]
->  Die **Dataset-Designer** erstellt eine partielle Klasse, die in die Überprüfung auf ein Dataset Logik hinzugefügt werden kann. Die vom Designer generierte Dataset nicht gelöscht bzw. ändert keinen Code in der partiellen Klasse.
+>  Die **Dataset-Designer** erstellt eine partielle Klasse, die in die Überprüfung Logik zu einem Dataset hinzugefügt werden kann. Die vom Designer generierte Dataset nicht löschen oder ändern Sie Code in der partiellen Klasse.
 
-Sie können Daten validieren, wenn der Wert in einer Datenspalte geändert wird, indem Sie die Antworten auf die <xref:System.Data.DataTable.ColumnChanging> Ereignis. Wenn ausgelöst, dieses Ereignis übergibt es ein Ereignisargument (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), enthält den Wert, der für die aktuelle Spalte vorgeschlagen werden wird. Basierend auf den Inhalt des `e.ProposedValue`, können Sie:
+Sie können Daten validieren, wenn der Wert in einer Datenspalte geändert wird, indem er auf die <xref:System.Data.DataTable.ColumnChanging> Ereignis. Wenn ausgelöst, wird dieses Ereignis übergibt ein Ereignisargument (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), enthält den Wert, der für die aktuelle Spalte vorgeschlagen werden wird. Basierend auf den Inhalt der `e.ProposedValue`, können Sie:
 
 -   Den vorgeschlagenen Wert annehmen, indem Sie nichts tun.
 
--   Den vorgeschlagenen Wert ablehnen, indem Sie den Spaltenfehler festlegen (<xref:System.Data.DataRow.SetColumnError%2A>) von innerhalb der Column-changing-Ereignishandler.
+-   Den vorgeschlagenen Wert ablehnen, indem Sie den Spaltenfehler festlegen (<xref:System.Data.DataRow.SetColumnError%2A>) von in der Column-changing-Ereignishandler.
 
 -   Optional können Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement verwenden, um dem Benutzer eine Fehlermeldung anzuzeigen. Weitere Informationen finden Sie unter [ErrorProvider-Komponente](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Überprüfung kann auch ausgeführt werden, während die <xref:System.Data.DataTable.RowChanging> Ereignis.
 
 ## <a name="validate-data-during-row-changes"></a>Validieren von Daten während zeilenänderungen
-Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalten Daten enthalten, die den Anforderungen der Anwendung entsprechen. Geben Sie dazu die Spalte fest, dass er einen Fehler enthält, wenn ein vorgeschlagene Wert unzulässig ist. In den folgenden Beispielen wird ein Spaltenfehler festgelegt, wenn für die `Quantity`-Spalte ein Wert von 0 oder weniger gilt. Die Ereignishandler für Zeilenänderungen sollten den folgenden Beispielen entsprechen.
+Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalten Daten enthalten, die den Anforderungen der Anwendung entsprechen. Klicken Sie dazu die Spalte an, wenn sie einen Fehler enthält, wenn ein vorgeschlagene Wert unzulässig ist. In den folgenden Beispielen wird ein Spaltenfehler festgelegt, wenn für die `Quantity`-Spalte ein Wert von 0 oder weniger gilt. Die Ereignishandler für Zeilenänderungen sollten den folgenden Beispielen entsprechen.
 
-#### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>So validieren Sie Daten bei Zeilenänderungen (Visual Basic)
+### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>So validieren Sie Daten bei Zeilenänderungen (Visual Basic)
 
-1.  Öffnen Sie das Dataset in die **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird der <xref:System.Data.DataTable.RowChanging>-Ereignishandler der <xref:System.Data.DataTable> in der Datei für die partielle Klasse des Datasets automatisch erstellt.
 
@@ -108,14 +108,14 @@ Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalt
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-#### <a name="to-validate-data-when-a-row-changes-c"></a>So validieren Sie Daten bei Zeilenänderungen (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>So validieren Sie Daten bei Zeilenänderungen (C#)
 
-1.  Öffnen Sie das Dataset in die **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird eine Datei für die partielle Klasse der <xref:System.Data.DataTable> erstellt.
 
     > [!NOTE]
-    >  Die **Dataset-Designer** erstellt nicht automatisch einen Ereignishandler für das <xref:System.Data.DataTable.RowChanging> Ereignis. Erstellen Sie eine Methode zum Behandeln der <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Initialisierungsmethode der Tabelle zu verknüpfen.
+    >  Die **Dataset-Designer** erstellt nicht automatisch einen Ereignishandler für die <xref:System.Data.DataTable.RowChanging> Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.
 
 3.  Kopieren Sie den folgenden Code in die partielle Klasse:
 
@@ -139,44 +139,44 @@ Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalt
     }
     ```
 
-## <a name="to-retrieve-changed-rows"></a>Zum Abrufen von geänderter Zeilen
-Jede Zeile in einer Tabelle verfügt über eine <xref:System.Data.DataRow.RowState%2A> Eigenschaft, die überwacht den aktuellen Status der betreffenden Zeile mithilfe der Werte in der <xref:System.Data.DataRowState> Enumeration. Sie können die geänderte Zeilen aus einer Tabelle Datasets oder eines zurückgeben, durch Aufrufen der `GetChanges` Methode von einer <xref:System.Data.DataSet> oder <xref:System.Data.DataTable>. Sie können überprüfen, ob Änderungen vorhanden, vor dem Aufruf sind `GetChanges` durch Aufrufen der <xref:System.Data.DataSet.HasChanges%2A> -Methode eines Datasets.
+## <a name="to-retrieve-changed-rows"></a>Abrufen von geänderten Zeilen
+Jede Zeile in einer Datentabelle verfügt über eine <xref:System.Data.DataRow.RowState%2A> Eigenschaft, die überwacht den aktuellen Zustand der Zeile mit den Werten in der <xref:System.Data.DataRowState> Enumeration. Sie können die geänderte Zeilen aus einer Tabelle Datasets oder eines zurückkehren, indem die `GetChanges` Methode eine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable>. Sie können überprüfen, ob Änderungen vorhanden, vor dem Aufruf sind `GetChanges` durch Aufrufen der <xref:System.Data.DataSet.HasChanges%2A> -Methode eines Datasets.
 
 > [!NOTE]
->  Nach dem commit der Änderungen an einer Tabelle Dataset oder einem (durch Aufrufen der <xref:System.Data.DataSet.AcceptChanges%2A> Methode), wird die `GetChanges` Methode keine Daten zurückgibt. Wenn Ihre Anwendung geänderte Zeilen verarbeiten muss, müssen Sie die Änderungen vor dem Aufruf verarbeiten die `AcceptChanges` Methode.
+>  Nachdem ein Dataset oder eine Datentabelle commit von Änderungen (durch Aufrufen der <xref:System.Data.DataSet.AcceptChanges%2A> Methode), wird die `GetChanges` Methode keine Daten zurückgibt. Wenn Ihre Anwendung geänderte Zeilen verarbeiten muss, müssen Sie die Änderungen vor dem Aufruf verarbeiten die `AcceptChanges` Methode.
 
-Aufrufen der <xref:System.Data.DataSet.GetChanges%2A> Methodenrückgabe Tabellenstatus Dataset oder eine neue Datasets oder eines-Tabelle, die nur Datensätze enthält, die geändert wurden. Wenn Sie bestimmte Datensätze abrufen möchten – z. B. nur neue oder geänderte Datensätze – kann, übergeben Sie den Wert aus der <xref:System.Data.DataRowState> -Enumeration als Parameter an die `GetChanges` Methode.
+Aufrufen der <xref:System.Data.DataSet.GetChanges%2A> Methodenrückgabe einer Datasets oder einer Tabelle eine neue Datasets oder eines-Tabelle, die nur Datensätze enthält, die geändert wurden. Wenn Sie bestimmte Datensätze abrufen möchten – z. B. nur neue oder geänderte Datensätze – können Sie einen Wert von übergeben die <xref:System.Data.DataRowState> -Enumeration als Parameter an die `GetChanges` Methode.
 
-Verwenden der <xref:System.Data.DataRowVersion> Enumeration, um Zugriff auf die verschiedenen Versionen einer Zeile (z. B. die ursprünglichen Werte, die in einer Zeile vor dem verarbeiten, es waren).
+Verwenden der <xref:System.Data.DataRowVersion> Enumeration, um Zugriff auf die verschiedenen Versionen einer Zeile (z. B. die ursprünglichen Werte, die in einer Zeile aus, bevor diese verarbeitet wird).
 
-#### <a name="to-get-all-changed-records-from-a-dataset"></a>Alle geänderten Datensätze aus einem Dataset abrufen
+### <a name="to-get-all-changed-records-from-a-dataset"></a>Um alle geänderten Datensätze aus einem Dataset zu erhalten.
 
 -   Rufen Sie die <xref:System.Data.DataSet.GetChanges%2A> -Methode eines Datasets.
 
-     Das folgende Beispiel erstellt ein neues Dataset mit dem Namen `changedRecords` und füllt sie mit der geänderten Datensätze aus einem anderen Dataset mit dem Namen `dataSet1`.
+     Das folgende Beispiel erstellt ein neues Dataset namens `changedRecords` und füllt sie mit der geänderten Datensätze aus einem anderen Dataset `dataSet1`.
 
      [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
      [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
 
-#### <a name="to-get-all-changed-records-from-a-data-table"></a>Alle geänderten Datensätze aus einer Datentabelle abrufen
+### <a name="to-get-all-changed-records-from-a-data-table"></a>So rufen Sie alle geänderten Datensätze aus einer Datentabelle ab
 
 -   Rufen Sie die <xref:System.Data.DataTable.GetChanges%2A> Methode von einer "DataTable".
 
-     Das folgende Beispiel erstellt eine neue Datentabelle aufgerufen `changedRecordsTable` und füllt sie mit der geänderten Datensätze aus einer anderen Datentabelle `dataTable1`.
+     Das folgende Beispiel erstellt eine neue Datentabelle namens `changedRecordsTable` und füllt sie mit der geänderten Datensätze aus einer anderen Datentabelle `dataTable1`.
 
      [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
      [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
 
-#### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Um alle Datensätze abzurufen, die einen bestimmten Zeilenstatus haben
+### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Abrufen aller Datensätze, die einen bestimmte Zeile (Zustand)
 
--   Rufen Sie die `GetChanges` -Methode eines Datasets oder einer Datentabelle und übergeben Sie eine <xref:System.Data.DataRowState> Enumerationswert als Argument.
+-   Rufen Sie die `GetChanges` -Methode der ein Dataset oder einer Datentabelle und übergeben Sie einen <xref:System.Data.DataRowState> Enumerationswert als Argument.
 
-     Im folgende Beispiel wird gezeigt, wie ein neues Dataset mit dem Namen erstellen `addedRecords` und weisen Sie ihm nur mit Datensätzen, die hinzugefügt wurden die `dataSet1` Dataset.
+     Das folgende Beispiel zeigt, wie Sie ein neues Dataset namens erstellen `addedRecords` und füllen sie nur mit Datensätzen, die hinzugefügt wurden die `dataSet1` Dataset.
 
      [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
      [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
 
-     Das folgende Beispiel zeigt, wie Sie alle Datensätze zurückzugeben, die kürzlich hinzugefügt wurden die `Customers` Tabelle:
+     Das folgende Beispiel zeigt, wie Sie alle Datensätze zurückzugeben, die vor kurzem hinzugefügt wurden, die `Customers` Tabelle:
 
      [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
      [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
@@ -185,26 +185,26 @@ Verwenden der <xref:System.Data.DataRowVersion> Enumeration, um Zugriff auf die 
 Wenn an Datenzeilen Änderungen vorgenommen werden, werden im Dataset sowohl die ursprüngliche (<xref:System.Data.DataRowVersion.Original>) als auch die neue (<xref:System.Data.DataRowVersion.Current>) Version der Zeile beibehalten. Vor dem Aufruf der `AcceptChanges`-Methode kann die Anwendung z. B. auf die verschiedenen (in der <xref:System.Data.DataRowVersion>-Enumeration definierten) Versionen eines Datensatzes zugreifen und die Änderungen entsprechend verarbeiten.
 
 > [!NOTE]
->  Verschiedene Versionen einer Zeile vorhanden sind, nachdem er bearbeitet wurde und bevor sie die `AcceptChanges` -Methode aufgerufen wurde. Nach dem Aufruf der `AcceptChanges`-Methode sind die ursprüngliche und die aktuelle Version identisch.
+>  Verschiedene Versionen einer Zeile vorhanden sind, erst nach Abschluss der Bearbeitung und bevor sie die `AcceptChanges` -Methode aufgerufen wurde. Nach dem Aufruf der `AcceptChanges`-Methode sind die ursprüngliche und die aktuelle Version identisch.
 
-Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spaltenindex (oder dem Spaltennamen als Zeichenfolge) übergeben, wird der Wert der spezifischen Zeilenversion aus dieser Spalte zurückgegeben. Die geänderte Spalte wird während der identifiziert die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse. Dies ist ein guter Zeitpunkt, die unterschiedliche Zeilenversionen zu Validierungszwecken zu überprüfen. Wenn Sie haben die Einschränkungen vorübergehend ausgesetzt, diese Ereignisse wird nicht ausgelöst werden, müssen Sie programmgesteuert identifizieren Sie jedoch welche Spalten sich geändert haben. Sie können dazu die <xref:System.Data.DataTable.Columns%2A>-Auflistung durchlaufen und die unterschiedlichen <xref:System.Data.DataRowVersion>-Werte vergleichen.
+Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spaltenindex (oder dem Spaltennamen als Zeichenfolge) übergeben, wird der Wert der spezifischen Zeilenversion aus dieser Spalte zurückgegeben. Die geänderte Spalte identifiziert wird, während die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse. Dies ist ein guter Zeitpunkt für die verschiedenen Zeilenversionen zu Validierungszwecken zu untersuchen. Jedoch wenn Sie haben die Einschränkungen vorübergehend ausgesetzt, diese Ereignisse wird nicht ausgelöst werden und Sie programmgesteuert müssen Identifizieren der Spalten geändert haben. Sie können dazu die <xref:System.Data.DataTable.Columns%2A>-Auflistung durchlaufen und die unterschiedlichen <xref:System.Data.DataRowVersion>-Werte vergleichen.
 
-#### <a name="to-get-the-original-version-of-a-record"></a>So rufen Sie die ursprüngliche Datensatzversion ab
+### <a name="to-get-the-original-version-of-a-record"></a>So rufen Sie die ursprüngliche Datensatzversion ab
 
--   Zugriff auf den Wert einer Spalte durch die Übergabe der <xref:System.Data.DataRowVersion> der Zeile, die Sie zurückgeben möchten.
+-   Zugriff auf den Wert einer Spalte durch die Übergabe der <xref:System.Data.DataRowVersion> der Zeile zurückgegeben werden soll.
 
-     Das folgende Beispiel zeigt, wie Sie eine <xref:System.Data.DataRowVersion> den ursprünglichen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:
+     Das folgende Beispiel zeigt, wie Sie mit einer <xref:System.Data.DataRowVersion> den ursprünglichen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
      [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
 
 ## <a name="access-the-current-version-of-a-datarow"></a>Zugriff auf die aktuelle Version einer DataRow
 
-#### <a name="to-get-the-current-version-of-a-record"></a>So rufen Sie die aktuelle Datensatzversion ab
+### <a name="to-get-the-current-version-of-a-record"></a>So rufen Sie die aktuelle Datensatzversion ab
 
--   Zugriff auf den Wert einer Spalte, und fügen Sie einen Parameter, die dem Index, der angibt, welche Version einer Zeile, die Sie zurückgeben möchten.
+-   Zugriff auf den Wert einer Spalte, und fügen Sie einen Parameter klicken Sie dann auf den Index, der angibt, welche Version einer Zeile, die Sie zurückgeben möchten.
 
-     Das folgende Beispiel zeigt, wie Sie eine <xref:System.Data.DataRowVersion> den aktuellen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:
+     Das folgende Beispiel zeigt, wie Sie mit einer <xref:System.Data.DataRowVersion> den aktuellen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
@@ -212,5 +212,5 @@ Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spalteninde
 ## <a name="see-also"></a>Siehe auch
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Gewusst wie: Überprüfen von Daten im DataGridView-Steuerelement in Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Gewusst wie: Anzeigen von Fehlersymbolen für die Formularvalidierung mit der ErrorProvider-Komponente in Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Gewusst wie: Überprüfen von Daten in Windows Forms-DataGridView-Steuerelement](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Gewusst wie: Anzeigen von Fehlersymbolen für die formularvalidierung mit der Windows Forms ErrorProvider-Komponente](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

@@ -1,7 +1,17 @@
 ---
-title: ClickOnce-API-Referenz zur nicht verwalteten | Microsoft Docs
+title: Nicht verwalteten für ClickOnce-API-Referenz | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
+api_name:
+- CleanOnlineAppCache
+- GetDeploymentDataFromManifest
+- LaunchApplication
+api_location:
+- dfshim.dll
+api_type:
+- COM
+topic_type:
+- apiref
 ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
@@ -20,26 +30,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0651c42abb410b55af956744da7a5e37952770b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39082138"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
+# <a name="clickonce-unmanaged-api-reference"></a>Nicht verwalteten API-Referenz für ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht verwaltete öffentliche APIs aus dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
- Löscht oder deinstalliert alle onlineanwendungen aus der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungscache.  
+ Löscht oder deinstalliert alle online-Anwendungen aus dem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungscache.  
   
 ### <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, 0 x 80020009 (DISP_E_EXCEPTION).  
   
 ### <a name="remarks"></a>Hinweise  
- Durch Aufrufen von CleanOnlineAppCache startet die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dienst, wenn er nicht bereits ausgeführt wird.  
+ Durch Aufrufen von CleanOnlineAppCache startet die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service, sofern er nicht bereits ausgeführt wird.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
- Ruft Informationen zur Bereitstellung aus dem Manifest und Aktivierung URL ab.  
+ Ruft Informationen zur Bereitstellung von der URL-Manifest und Aktivierung ab.  
   
 ### <a name="parameters"></a>Parameter  
   
@@ -47,13 +58,13 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Ein Zeiger auf die `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Ein Zeiger auf die `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Ein Zeiger auf einen Puffer um eine NULL-terminierte Zeichenfolge empfangen, die angibt, die Identität des vollständigen zurückgegeben.|LPWSTR|  
-|`pdwIdentityBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzApplicationIdentity` Puffers in WCHARs so lang wie. Dies schließt den Platz für das NULL-Zeichen beendet.|LPDWORD|  
+|`pwzApplicationIdentity`|Ein Zeiger auf einen Puffer zur Aufnahme von einer auf NULL endende Zeichenfolge, die angibt, die Identität des vollständigen zurückgegeben.|LPWSTR|  
+|`pdwIdentityBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzApplicationIdentity` Puffers in WCHARs so lang wie. Dies umfasst den Speicherplatz für das NULL-Abschlusszeichen.|LPDWORD|  
 |`pwzProcessorArchitecture`|Ein Zeiger auf einen Puffer zur Aufnahme von einer auf NULL endende Zeichenfolge, die die Prozessorarchitektur der anwendungsbereitstellung, aus dem Manifest angibt.|LPWSTR|  
 |`pdwArchitectureBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzProcessorArchitecture` Puffers in WCHARs so lang wie.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Ein Zeiger auf einen Puffer zur Aufnahme von einer NULL-terminierte Zeichenfolge, die die Codebasis des Anwendungsmanifests aus dem Manifest angibt.|LPWSTR|  
+|`pwzApplicationManifestCodebase`|Ein Zeiger auf einen Puffer zur Aufnahme von einer auf NULL endende Zeichenfolge, die die Codebasis des Anwendungsmanifests, aus dem Manifest angibt.|LPWSTR|  
 |`pdwCodebaseBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzApplicationManifestCodebase` Puffers in WCHARs so lang wie.|LPDWORD|  
-|`pwzDeploymentProvider`|Ein Zeiger auf einen Puffer zur Aufnahme einer NULL-terminierte Zeichenfolge angibt, die Bereitstellungsanbieter aus dem Manifest, falls vorhanden. Andernfalls wird eine leere Zeichenfolge zurückgegeben.|LPWSTR|  
+|`pwzDeploymentProvider`|Ein Zeiger auf einen Puffer zur Aufnahme einer NULL-terminierte Zeichenfolge gibt an, dass der Bereitstellungsanbieter "aus dem Manifest vorhanden. Andernfalls wird eine leere Zeichenfolge zurückgegeben.|LPWSTR|  
 |`pdwProviderBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzProviderBufferLength`.|LPDWORD|  
   
 ### <a name="return-value"></a>Rückgabewert  
@@ -62,9 +73,9 @@ ms.lasthandoff: 04/19/2018
 ### <a name="remarks"></a>Hinweise  
  Zeiger darf nicht null sein. `pcwzActivationUrl` und `pcwzPathToDeploymentManifest` darf nicht leer sein.  
   
- Es ist der Verantwortung des Aufrufers, um die Aktivierungs-URL zu bereinigen. Beispielsweise Zeichen Escape hinzufügen, in denen sie benötigt werden, oder entfernen die Abfragezeichenfolge.  
+ Es ist der Verantwortung des Aufrufers, um die Aktivierungs-URL zu bereinigen. Beispielsweise Zeichen das Escapezeichen hinzufügen, wo sie benötigt werden, oder entfernen die Abfragezeichenfolge.  
   
- Es ist die Eingabe Länge beschränkt werden in der Verantwortung des Aufrufers. Beispielsweise ist die maximale URL-Länge 2KB.  
+ Es ist der Verantwortung des Aufrufers die Eingabe Länge beschränkt. Beispielsweise ist die maximale URL-Länge 2KB.  
   
 ## <a name="launchapplication"></a>LaunchApplication  
  Startet oder eine Anwendung über eine URL für die Bereitstellung installiert.  

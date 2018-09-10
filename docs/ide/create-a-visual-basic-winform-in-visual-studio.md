@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746013"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381659"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 
 Mithilfe dieser kurzen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio können Sie eine einfache Visual Basic-Anwendung erstellen, die über eine Windows-basierte Benutzeroberfläche verfügt.
 
-Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), um es kostenlos herunterzuladen.
+Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), um es kostenlos herunterzuladen.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -33,11 +33,11 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.
+2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)**. Nennen Sie die Datei `HelloWorld`.
 
-     Wenn Ihnen nicht die Projektvorlage **Windows Forms-App (.NET Framework)** angezeigt wird, beenden Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Tools und Features abrufen....**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
+     Wenn Ihnen die Projektvorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Tools und Features abrufen**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
      ![Die Workload „.NET Core“ im Visual Studio-Installer](../ide/media/install-dot-net-desktop-env.png)
 
@@ -82,11 +82,11 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
 1. Doppelklicken Sie im Fenster **Form1.vb [Entwurf]** auf die Schaltfläche **Click this** („Hier klicken“), um das Fenster **Form1.vb** zu öffnen.
 
-      (Stattdessen können Sie auch **Form1.vb** im Fenster **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
+      (Stattdessen können Sie auch **Form1.vb** im **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
 
 2. Geben Sie bzw. fügen Sie im Fenster **Form1.vb** zwischen den Zeilen **Private Sub** und **End Sub** `lblHelloWorld.Text = "Hello World!"` ein.
 
-     ![Formular „Hinzufügen von Code zum Formular“](../ide/media/vb-add-code-to-the-form.png)
+     ![Hinzufügen von Code zum Formular](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 

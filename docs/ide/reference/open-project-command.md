@@ -1,11 +1,12 @@
 ---
-title: Befehl "Projekt öffnen"
+title: Projekt öffnen (Befehl)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704131"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924147"
 ---
-# <a name="open-project-command"></a>Befehl "Projekt öffnen"
-Öffnet ein vorhandenes Projekt.
+# <a name="open-project-command"></a>Projekt öffnen (Befehl)
+
+Öffnet ein vorhandenes Projekt oder eine vorhandene Projektmappe.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,19 +35,23 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>Argumente
- `filename`
 
- Erforderlich. Der vollständige Pfad und Dateiname der Projektdatei, die Sie öffnen wollen.
+`filename`
 
- Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.
+Erforderlich. Der vollständige Pfad und Dateiname des zu öffnenden Projekts oder der zu öffnenden Projektmappe.
+
+> [!NOTE]
+> Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.
 
 ## <a name="remarks"></a>Hinweise
- Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
 
- Dieser Befehl ist während des Debuggens nicht verfügbar.
+Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
+
+Dieser Befehl ist während des Debuggens nicht verfügbar.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, Test1, geöffnet.
+
+Im folgenden Beispiel wird das Visual Basic-Projekt **Test1** geöffnet:
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620452"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138827"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -41,10 +41,10 @@ Sehen wir uns Schritt für Schritt das Erstellen und Aktualisieren eines Layouts
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* So aktualisieren Sie dasselbe Layout auf eine neuere Version. Sie müssen dazu keine zusätzlichen Befehlszeilenparameter angeben. Die vorherigen Einstellungen wurden gespeichert und werden durch nachfolgende Layoutbefehle in diesem Layoutordner verwendet.  
+* So aktualisieren Sie dasselbe Layout auf eine neuere Version. Sie müssen dazu keine zusätzlichen Befehlszeilenparameter angeben. Die vorherigen Einstellungen wurden gespeichert und werden durch nachfolgende Layoutbefehle in diesem Layoutordner verwendet.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * So ändern Sie Ihr Layout unbeaufsichtigt in eine neuere Version. Der Layoutvorgang führt den Setupprozess in einem neuen Konsolenfenster aus. Das Fenster bleibt geöffnet, sodass sich die Benutzer das endgültige Ergebnis und ggf. eine Zusammenfassung der aufgetretenen Fehler ansehen können. Wenn Sie einen Layoutvorgang unbeaufsichtigt durchführen (wenn Sie z.B. über ein Skript verfügen, das regelmäßig ausgeführt wird, um ihr Layout auf die aktuelle Version zu aktualisieren), verwenden Sie den Parameter `--passive`, und der Vorgang schließt das Fenster automatisch.
@@ -96,7 +96,7 @@ Die Datei „vs_enterprise.exe“ kann innerhalb von „layoutDir“ aufgerufen 
 > [!NOTE]
 > Einige wichtige Metadatendateien, die für die Option `--verify` erforderlich sind, müssen im Layoutofflinecache vorhanden sein. Wenn diese Metadatendateien fehlen, kann "--verify" nicht ausgeführt werden, und das Setup gibt einen Fehler aus. Wenn dieser Fehler bei Ihnen auftritt, erstellen Sie ein neues Offlinelayout in einem anderen Ordner (oder im selben Offlinecacheordner). Führen Sie dazu den gleichen Layoutbefehl aus, mit dem Sie das anfängliche Offlinelayout erstellt haben. Beispielsweise `Vs_enterprise.exe --layout <layoutDir>`.
 
-Microsoft liefert in regelmäßigen Abständen Updates für Visual Studio. Ihr neues Layout hat möglicherweise nicht die gleiche Version wie das anfängliche Layout.  
+Microsoft liefert in regelmäßigen Abständen Updates für Visual Studio. Ihr neues Layout hat möglicherweise nicht die gleiche Version wie das anfängliche Layout.
 
 ## <a name="how-to-fix-a-layout"></a>Beheben von Problemen mit Layouts
 
@@ -114,9 +114,9 @@ Nach dem Ausführen von Layoutupdates für einen Offlinecache enthält der Layou
 
 Dazu benötigen Sie die Dateipfade zu den Katalogmanifesten, die diese veralteten Pakete enthalten. Die Katalogmanifeste finden Sie in einem Ordner „Archiv“ im Offlinelayoutcache. Sie werden gespeichert, wenn Sie ein Layout aktualisieren. Im Ordner „Archiv“ befindet sich mindestens ein Ordner namens „GUID“, der jeweils ein veraltetes Katalogmanifest enthält. Die Anzahl der GUID-Ordner sollte der Anzahl der Updates entsprechen, die für Ihren Offlinecache ausgeführt wurden.
 
-Einige Dateien werden in jedem GUID-Ordner gespeichert. Die beiden interessantesten Dateien sind „catalog.json“ und „version.txt“. Die Datei „catalog.json“ ist das veraltete Katalogmanifest, das Sie an die Option `--clean` übergeben müssen. Die andere Datei, „version.txt“, enthält die Version des veralteten Katalogmanifests. Auf Grundlage der Versionsnummer können Sie entscheiden, ob veraltete Pakete aus diesem Katalogmanifest entfernt werden sollen. Sie können diesen Vorgang beim Durchgehen der anderen GUID-Ordner wiederholen. Nachdem Sie entschieden haben, welche Kataloge Sie bereinigen möchten, führen Sie den Befehl `--clean` aus, indem Sie die Dateipfade für diese Kataloge angeben.  
+Einige Dateien werden in jedem GUID-Ordner gespeichert. Die beiden interessantesten Dateien sind „catalog.json“ und „version.txt“. Die Datei „catalog.json“ ist das veraltete Katalogmanifest, das Sie an die Option `--clean` übergeben müssen. Die andere Datei, „version.txt“, enthält die Version des veralteten Katalogmanifests. Auf Grundlage der Versionsnummer können Sie entscheiden, ob veraltete Pakete aus diesem Katalogmanifest entfernt werden sollen. Sie können diesen Vorgang beim Durchgehen der anderen GUID-Ordner wiederholen. Nachdem Sie entschieden haben, welche Kataloge Sie bereinigen möchten, führen Sie den Befehl `--clean` aus, indem Sie die Dateipfade für diese Kataloge angeben.
 
-Hier sind einige Beispiele für die Verwendung der Option „--clean“:   
+Hier sind einige Beispiele für die Verwendung der Option „--clean“:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,22 +128,13 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Sie können „vs_enterprise.exe“ auch innerhalb von &lt;layoutDir&gt; aufrufen. Im Folgenden ein Beispiel:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 Wenn Sie diesen Befehl ausführen, analysiert das Setup Ihren Offlinecacheordner, um die Liste der Dateien zu suchen, die entfernt werden. Sie haben dann die Gelegenheit, die Dateien, die gelöscht werden sollen, zu überprüfen und den Löschvorgang zu bestätigen.
 
-## <a name="get-support"></a>Support aufrufen
-
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
-
-Hier sind einige weitere Supportoptionen:
-
-* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 

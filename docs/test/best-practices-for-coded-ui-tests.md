@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5da37b8b86f7529ffb4a870bc74787487ec5c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967027"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283275"
 ---
-# <a name="best-practices-for-coded-ui-tests"></a>Empfohlene Vorgehensweisen für Tests der programmierten UI
+# <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
 In diesem Thema werden einige Empfehlungen für die Entwicklung von Tests der programmierten UI beschrieben.
 
@@ -28,7 +28,7 @@ Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der progra
 
 -   Verwenden Sie wenn möglich den **Test-Generator der programmierten UI**.
 
--   Ändern Sie die `UIMap.designer.cs`-Datei nicht direkt. Wenn Sie Datei ändern, werden die an der Datei vorgenommenen Änderungen überschrieben.
+-   Ändern Sie die Datei *UIMap.Designer.cs* nicht direkt. Wenn Sie Datei ändern, werden die an der Datei vorgenommenen Änderungen überschrieben.
 
 -   Erstellen Sie den Test als Sequenz aufgezeichneter Methoden. Weitere Informationen über die Aufzeichnung einer Methode finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).
 
@@ -38,7 +38,7 @@ Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der progra
 
 -   Beschränken Sie jede aufgezeichnete Methode wenn möglich auf weniger als 10 Aktionen. Dieser modulare Ansatz erleichtert es, eine Methode zu ersetzen, wenn sich die Benutzeroberfläche ändert.
 
--   Erstellen Sie jede Assertion mithilfe des **Test-Generators der programmierten UI**, der automatisch eine Assertionsmethode zur `UIMap.Designer.cs`-Datei hinzufügt.
+-   Erstellen Sie jede Assertion mithilfe des **Generators für Tests der programmierten UI**, der automatisch eine Assertionsmethode zur *UIMap.Designer.cs*-Datei hinzufügt.
 
 -   Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.
 
@@ -46,13 +46,13 @@ Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der progra
 
 -   Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Aussagekräftige Namen schaffen mehr Klarheit und Benutzerfreundlichkeit für die automatisch generierten Steuerelementnamen.
 
--   Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse, der sich in der `UIMap.cs`-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
+-   Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse, der sich in der *UIMap.cs*-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
 
--   Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der `UIMap.Designer.cs`-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
+-   Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der *UIMap.Designer.cs*-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
 
 Tests der codierten UI werden automatisch an zahlreiche Änderungen in der Benutzeroberfläche angepasst. Wenn z. B. ein Benutzeroberflächenelement Position oder Farbe geändert hat, wird beim Test der programmierten UI in den meisten Fällen dennoch das richtige Element gefunden.
 
-Während eines Testlaufs werden die UI-Steuerelemente mithilfe mehrerer Sucheigenschaften vom Testframework gesucht. Die Sucheigenschaften gelten für jede Steuerelementklasse in den vom **Test-Generator der programmierten UI** in der `UIMap.Designer.cs`-Datei erstellten Definitionen. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der codierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, wendet ein intelligenter Vergleichsalgorithmus der Tests der programmierten UI Heuristik an, um Steuerelemente und Fenster in der Benutzeroberfläche zu finden. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
+Während eines Testlaufs werden die UI-Steuerelemente mithilfe mehrerer Sucheigenschaften vom Testframework gesucht. Die Sucheigenschaften gelten für jede Steuerelementklasse in den vom **Generator für Tests der programmierten UI** in der *UIMap.Designer.cs*-Datei erstellten Definitionen. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der codierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, wendet ein intelligenter Vergleichsalgorithmus der Tests der programmierten UI Heuristik an, um Steuerelemente und Fenster in der Benutzeroberfläche zu finden. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
 
 ## <a name="if-your-user-interface-changes"></a>Vorgehensweise bei geänderter Benutzeroberfläche
 
@@ -89,7 +89,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)
-- [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

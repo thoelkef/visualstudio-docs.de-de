@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970049"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382502"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>How to: Specify the Sample Rate for a Load Test Run Setting
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Vorgehensweise: Angeben der Abtastrate für eine Auslastungstestlaufeinstellung
 
 Nach dem Erstellen des Auslastungstests mit dem **Assistenten für neuen Auslastungstest** können Sie mit dem **Auslastungstest-Editor** die Eigenschaften ändern, um die Testanforderungen und -ziele zu erreichen.
 
 Mit dem **Auslastungstest-Editor** können Sie den Eigenschaftswert **Samplingrate** einer Laufzeiteinstellung im Fenster **Eigenschaften** bearbeiten. Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** für die Laufzeiteinstellung des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [How to: Specify the Sample Rate for a Load Test Run Setting (Vorgehensweise: Angeben der Samplingrate für eine Auslastungstest-Laufzeiteinstellung)](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** für die Laufzeiteinstellung des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate für eine Auslastungstestlaufeinstellung](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
@@ -44,7 +44,7 @@ Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
 3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-     Die Kategorien und Eigenschaften der Testlaufeinstellung werden im Eigenschaftenfenster angezeigt.
+     Die Kategorien und Eigenschaften der Testlaufeinstellung werden im **Eigenschaftenfenster** angezeigt.
 
 4.  Geben Sie in der Eigenschaft **Samplingrate** einen Zeitwert ein, der die Häufigkeit angibt, mit der Leistungsindikatordaten beim Auslastungstest gesammelt werden.
 
@@ -53,4 +53,4 @@ Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 ## <a name="see-also"></a>Siehe auch
 
 - [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md)
-- [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md)
+- [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

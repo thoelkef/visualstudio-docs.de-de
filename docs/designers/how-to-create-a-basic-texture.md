@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745629"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512628"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Gewusst wie: Erstellen einer Basistextur
+# <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer einfachen Textur
 In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Basistextur verwendet wird.
 
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
@@ -35,7 +35,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 ## <a name="creating-a-basic-texture"></a>So erstellen Sie eine Basistextur
  Sie können die Bildbearbeitung zum Erstellen und Ändern von Bildern und Texturen Ihre Spiele und Anwendungen verwenden.
 
- In den folgenden Schritten wird gezeigt, wie eine Textur erstellt wird, die einer Zielscheibe darstellt. Wenn Sie fertig sind, sollte die Textur wie im folgenden Bild aussehen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
+ In den folgenden Schritten wird veranschaulicht, wie Sie eine Textur erstellen, die eine Zielscheibe darstellt. Wenn Sie diesen Vorgang abgeschlossen haben, sollte die Textur der folgenden Abbildung entsprechen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
 
  ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -43,7 +43,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
 #### <a name="to-create-a-bullseye-target-texture"></a>So erstellen Sie eine Textur der Zielscheibe
 
-1.  Erstellen Sie eine Textur, mit der Sie arbeiten können. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).
+1.  Erstellen Sie eine Textur, mit der Sie arbeiten. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).
 
 2.  Legen Sie die Bildgröße auf 512 x 512 Pixel fest. Geben Sie im Fenster **Eigenschaften** die Werte der Eigenschaften **Breite** und **Höhe** für `512` an.
 
@@ -51,10 +51,10 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
 4.  Legen Sie die Vordergrundfarbe auf vollständig transparentes schwarz fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Vordergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** neben dem Farbwähler auf `0` fest.
 
-5.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Halten Sie anschließend die Umschalttaste gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Indem die Umschalttaste verwendet wird, ersetzt der Alphawert der Füllfarbe die Farbe im Bild; ansonsten wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.
+5.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllen**. Halten Sie anschließend die **UMSCHALTTASTE** gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Durch Verwendung der **UMSCHALTTASTE** ersetzt der Alphawert der Füllfarbe die Farbe im Bild. Andernfalls wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.
 
     > [!IMPORTANT]
-    >  Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.
+    > Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.
 
 6.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
 
@@ -66,10 +66,10 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
 10. Stellen Sie sicher, dass Anti-Aliasing aktiviert ist. Stellen Sie sicher, dass in der Eigenschaftengruppe **Aussehen** im Fester **Eigenschaften** die Eigenschaft **Anti-Alias** festgelegt ist.
 
-11. Zeichnen Sie mithilfe des Tools **Ellipse** einen Kreis von Pixelkoordinate `(3, 3)` bis Pixelkoordinate `(508, 508)`. Sie können während dem Zeichnen die Umschalttaste drücken und gedrückt halten, um den Kreis einfacher zu zeichnen.
+11. Zeichnen Sie mithilfe des Tools **Ellipse** einen Kreis von Pixelkoordinate `(3, 3)` bis Pixelkoordinate `(508, 508)`. Sie können während dem Zeichnen die **UMSCHALTTASTE** gedrückt halten, um den Kreis einfacher zu zeichnen.
 
     > [!NOTE]
-    >  Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt.
+    > Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt.
 
 12. Ändern Sie die Hintergrundfarbe. Legen Sie **R** auf `44`, **G** auf `165`, **B** auf `211` und **A** auf `255` fest.
 
@@ -87,7 +87,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
  ![Die vollständige Textur der Zielscheibe](../designers/media/gfx_image_demo_bullseye.png)
 
- Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
+ Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Siehe auch
 

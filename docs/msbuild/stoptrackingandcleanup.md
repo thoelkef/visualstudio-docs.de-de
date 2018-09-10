@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567898"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154823"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 Beendet die Nachverfolgung vollständig und macht Speicherplatz frei, der von der Nachverfolgungssitzung verwendet wird  
@@ -37,7 +37,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
  Gibt ein **HRESULT** zurück, bei dem **SUCCEEDED** festgelegt ist, wenn die Nachverfolgung beendet wurde  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** FileTracker.h  
+ **Header:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Siehe auch  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

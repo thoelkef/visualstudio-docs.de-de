@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c55bd7be84b118f08fbedff1931c4517e963b5a7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573564"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177194"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann Elementlisten anhand von Elementmetadatenelementen in verschiedene Kategorien oder Batches unterteilen und eine Aufgabe einmal mit jedem Batch ausführen. Es ist schwierig zu erkennen, welche Elemente mit welchem Batch übergeben werden. In diesem Artikel werden die folgenden häufig auftretenden Szenarios thematisiert, bei denen die Batchverarbeitung ein Bestandteil ist.  
@@ -32,10 +32,10 @@ ms.locfileid: "31573564"
 -   Batchverarbeitung einzelner Elemente  
   
 -   Filtern von Elementlisten  
+
+Weitere Informationen zur Batchverarbeitung mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] finden Sie unter [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
   
- Weitere Informationen zur Batchverarbeitung mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] finden Sie unter [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
-  
-## <a name="dividing-an-item-list-into-batches"></a>Unterteilen einer Elementliste in Batches  
+## <a name="divide-an-item-list-into-batches"></a>Unterteilen einer Elementliste in Batches  
  Mithilfe der Batchverarbeitung können Sie anhand von Elementmetadatenelementen eine Elementliste in verschiedene Batches unterteilen und diese Batches anschließend einzeln an eine Aufgabe übergeben. Dieser Vorgang ist nützlich für die Erstellung von Satellitenassemblys.  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie eine Elementliste anhand von Elementmetadatenelementen in Batches unterteilen können. Die Elementliste `ExampColl` wird anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Dadurch, dass `%(ExampColl.Number)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte. Die Elementliste `ExampColl` ist anhand des Elementmetadatenelements `Number` in drei Batches unterteilt, und jeder Batch wird einzeln an eine Aufgabe übergeben.  
@@ -72,8 +72,8 @@ ms.locfileid: "31573564"
   
 </Project>  
 ```  
-  
- Der [Message Task](../msbuild/message-task.md)-Task zeigt die folgenden Informationen an:  
+
+Die [Message Task](../msbuild/message-task.md) zeigt die folgenden Informationen an:  
   
  `Number: 1 -- Items in ExampColl: Item1;Item4`  
   
@@ -81,13 +81,13 @@ ms.locfileid: "31573564"
   
  `Number: 3 -- Items in ExampColl: Item3;Item6`  
   
-## <a name="dividing-several-item-lists-into-batches"></a>Unterteilen mehrerer Elementlisten in Batches  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann mehrere Elementlisten anhand desselben Elementmetadatenelements in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit CS-Dateien, die in Anwendungsbatches und einen Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien vorhanden sein, die in ein Anwendungsbatch und ein Assemblybatch unterteilt ist. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.  
+## <a name="divide-several-item-lists-into-batches"></a>Unterteilen mehrerer Elementlisten in Batches  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann mehrere Elementlisten anhand desselben Elementmetadatenelements in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit *CS*-Dateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, vorhanden sein. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.  
   
 > [!NOTE]
 >  Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.  
   
- Im untenstehenden Beispiel wird dargestellt, wie Sie mehrere Elementlisten anhand von Elementmetadatenelementen in Batches unterteilen können. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Dadurch, dass `%(Number)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt, und jeder Batch wird einzeln an eine Aufgabe übergeben.  
+Im untenstehenden Beispiel wird dargestellt, wie Sie mehrere Elementlisten anhand von Elementmetadatenelementen in Batches unterteilen können. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Dadurch, dass `%(Number)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt, und jeder Batch wird einzeln an eine Aufgabe übergeben.  
   
 ```xml  
 <Project  
@@ -125,7 +125,7 @@ ms.locfileid: "31573564"
 </Project>  
 ```  
   
- Der [Message Task](../msbuild/message-task.md)-Task zeigt die folgenden Informationen an:  
+Die [Message Task](../msbuild/message-task.md) zeigt die folgenden Informationen an:  
   
  `Number: 1 -- Items in ExampColl: Item1 ExampColl2: Item4`  
   
@@ -133,8 +133,8 @@ ms.locfileid: "31573564"
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>Batchverarbeitung einzelner Elemente nacheinander  
- Die Batchverarbeitung kann auch für bekannte Elementmetadaten durchgeführt werden, die jedem Element bei der Erstellung zugeordnet werden. Dadurch wird garantiert, dass jedes Element in einer Auflistung auch über Metadaten verfügt, die bei der Batchverarbeitung verwendet werden können. Jedes Element hat seinen eigenen `Identity`-Metadatenwert, der nützlich für die Unterteilung der in Elementlisten enthaltenen Elemente in separate Batches ist. Eine vollständige Liste bekannter Elementmetadaten finden Sie unter [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md).  
+## <a name="batch-one-item-at-a-time"></a>Batchverarbeitung einzelner Elemente nacheinander  
+ Die Batchverarbeitung kann auch für bekannte Elementmetadaten durchgeführt werden, die jedem Element bei der Erstellung zugeordnet werden. Dadurch wird garantiert, dass jedes Element in einer Auflistung auch über Metadaten verfügt, die bei der Batchverarbeitung verwendet werden können. Jedes Element hat seinen eigenen `Identity`-Metadatenwert, der nützlich für die Unterteilung der in Elementlisten enthaltenen Elemente in separate Batches ist. Eine vollständige Liste bekannter Elementmetadaten finden Sie unter [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie die Elemente in einer Elementliste einzeln nacheinander in Batches unterteilen können. Da jedes Element seinen eigenen `Identity`-Metadatenwert hat, wird die Elementliste `ExampColl` in sechs Batches unterteilt, wobei jedes Batch jeweils ein Element der Elementliste enthält. Dadurch, dass `%(Identity)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "31573564"
 </Project>  
 ```  
   
- Der [Message Task](../msbuild/message-task.md)-Task zeigt die folgenden Informationen an:  
+Die [Message Task](../msbuild/message-task.md) zeigt die folgenden Informationen an:  
   
 ```  
 Identity: "Item1" -- Items in ExampColl: Item1  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>Filtern von Elementlisten  
+## <a name="filter-item-lists"></a>Filtern von Elementlisten  
  Die Batchverarbeitung kann auch dafür genutzt werden, bestimmte Elemente einer Elementliste herauszufiltern, bevor sie an eine Aufgabe übergeben wird. Wenn Sie z.B. nach dem bekannten `Extension`-Elementmetadatenwert filtern, können Sie eine Aufgabe nur für Dateien ausführen, die eine spezifische Erweiterung enthalten.  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie zunächst eine Elementliste anhand eines Elementmetadatenelements in Batches unterteilen und anschließend diese Batches bei der Übergabe an eine Aufgabe filtern. Die Elementliste `ExampColl` wird anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Das `Condition`-Attribut einer Aufgabe gibt an, dass nur Batches mit einem `Number`-Elementmetadatenwert von `2` an die Aufgabe übergeben werden sollen.  
@@ -213,16 +213,16 @@ Identity: "Item6" -- Items in ExampColl: Item6
 </Project>  
 ```  
   
- Der [Message Task](../msbuild/message-task.md)-Task zeigt die folgenden Informationen an:  
+Die [Message Task](../msbuild/message-task.md) zeigt die folgenden Informationen an:  
   
 ```  
 Items in ExampColl: Item2;Item5  
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md)   
+ [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)   
  [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)   
  [ItemMetadata-Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)

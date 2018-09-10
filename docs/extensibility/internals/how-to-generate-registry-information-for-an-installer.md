@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Generieren von Informationen in der Registrierung für ein Installationsprogramm | Microsoft Docs'
+title: 'Vorgehensweise: Generieren von Registrierungsinformationen für einen Installer | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,34 +15,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c125ce9b7b8feb27bd8568e52cd363e3d451bd40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b52d0c894aadd829806e7cc41ac9e78e95df32ba
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131868"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513257"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Vorgehensweise: Generieren von Informationen in der Registrierung für ein Installationsprogramm
-Das Hilfsprogramm RegPkg.exe kann verwendet werden, um ein Manifest für die Registrierung für ein verwaltetes VSPackage zu generieren. Das Manifest kann eine Windows Installer-Paket integriert werden soll. RegPkg auch kann eine Datei zu generieren, die in einer Setup-Quelldatei basierend auf aufgenommen werden kann die [Windows Installer XML-Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Gewusst wie: Generieren von Registrierungsinformationen für einen Installer
+Die *RegPkg.exe* Hilfsprogramm kann verwendet werden, um ein Manifest für die Registrierung für ein verwaltetes VSPackage zu generieren. Das Manifest kann in einer Windows Installer-Paket integriert werden. RegPkg auch kann eine Datei generieren, die in einer Setup-Quelldatei, die basierend auf aufgenommen werden kann die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
->  RegPkg generiert Pfadnamen, die auf Ihrem Entwicklungssystem beziehen, sodass jedes Mal, wenn Sie RegPkg verwenden, müssen Sie die Ausgabe verwendet werden soll bearbeiten formatierte entsprechende Windows Installer Eigenschaften. Beispielsweise muss der Wert von InprocServer32 **[SystemFolder]mscoree.dll** und Pfade zu verwendende **[#filekey]** und **[$componentkey]**. Anpassen der Ausgabe auf diese Weise unterstützt Computer mit Windows installiert werden, auf ein anderes Laufwerk oder in einem anderen Verzeichnis, lokalisierte Verzeichnisnamen und Pfade, die Benutzer auswählen können. Weitere Informationen finden Sie unter [formatiert](http://go.microsoft.com/fwlink/?LinkId=71120) in das Windows Installer SDK. Wenn Sie RegPkg-für die Entwicklung Systempfade Konventionen – z. B. Datei-IDs des Formulars Datei_*Filename*– müssen Sie weniger Änderungen vornehmen.  
+>  RegPkg generiert Pfadnamen, die auf Ihrem Entwicklungssystem spezifisch sind, damit jedes Mal, wenn Sie RegPkg verwenden, müssen Sie die Ausgabe verwendet bearbeiten formatiert entsprechende Windows Installer Eigenschaften. Z. B. die `InprocServer32` Wert sollte  *\<SystemFolder\>"Mscoree.dll"* und Pfade sollten *\<#filekey\>* und  *\<$componentkey\>*. Die Ausgabe auf diese Weise anpassen, werden Computer mit Windows-Installation auf einem anderen Laufwerk oder in einem anderen Verzeichnis, lokalisierte Verzeichnisnamen und Pfade, die Benutzer auswählen können, unterstützt. Weitere Informationen finden Sie unter [formatierte](http://go.microsoft.com/fwlink/?LinkId=71120) in das Windows Installer SDK. Wenn Sie für Ihre Entwicklung Systempfade RegPkg-Konventionen beachten, z. B. Datei-IDs des Formulars *File_\<Filename\>*– müssen Sie weniger Änderungen vornehmen.  
   
-### <a name="to-create-a-registration-manifest"></a>So erstellen ein Manifest für die Registrierung  
+### <a name="to-create-a-registration-manifest"></a>Um ein Manifest für die Registrierung zu erstellen.  
   
--   Führen Sie RegPkg mit der **/regfile** wechseln. Geben Sie andere Switches, den Namen der Ausgabedatei und der Pfad des VSPackage.  
+-   Führen Sie RegPkg mit der **/regfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
   
-     Beispielsweise würde an der Eingabeaufforderung Sie etwa Folgendes eingeben:  
+     Beispielsweise würde an der Eingabeaufforderung Sie etwa wie folgt eingeben:  
   
     ```  
-    [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
+    <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
     ```  
   
-### <a name="to-view-a-registration-manifest"></a>So zeigen Sie ein Manifest für die Registrierung an  
+### <a name="to-view-a-registration-manifest"></a>Um ein Manifest für die Registrierung anzuzeigen.  
   
--   Öffnen Sie die Registrierung Manifest in einem beliebigen Texteditor.  
+-   Öffnen Sie das Manifest für die Registrierung in einem Text-Editor ein.  
   
-     Im folgende Beispiel wird die Registrierung-Manifest, das RegPkg für IronPython-Sprachdienst erstellt:  
+     Im folgende Beispiel wird die Registrierung-Manifest, das RegPkg für den Sprachdienst IronPython erstellt:  
   
     ```  
     REGEDIT4  
@@ -99,21 +99,21 @@ Das Hilfsprogramm RegPkg.exe kann verwendet werden, um ein Manifest für die Reg
   
     ```  
   
-### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Zum Erstellen Includedatei einer Windows Installer XML-Toolset  
+### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Zum Erstellen einer Windows Installer XML Toolset Includedatei  
   
--   Führen Sie RegPkg mit der **/wixfile** wechseln. Geben Sie andere Switches, den Namen der Ausgabedatei und der Pfad des VSPackage.  
+-   Führen Sie RegPkg mit der **/wixfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
   
-     Beispielsweise würde an der Eingabeaufforderung Sie etwa Folgendes eingeben:  
+     Beispielsweise würde an der Eingabeaufforderung Sie etwa wie folgt eingeben:  
   
     ```  
-    [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
+    <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
     ```  
   
-### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Zum Anzeigen Includedatei einer Windows Installer XML-Toolset  
+### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Zum Anzeigen einer Windows Installer XML Toolset Includedatei  
   
--   Öffnen der Windows Installer XML-Toolset Includedatei in einem beliebigen Texteditor.  
+-   Öffnen der Windows Installer XML Toolset include-Datei in einem Text-Editor.  
   
-     Im folgende Beispiel wird die Include-Datei, die RegPkg erstellt für IronPython-Sprachdienst:  
+     Im folgende Beispiel wird die Include-Datei, die RegPkg erstellt, für den Sprachdienst IronPython:  
   
     ```  
     <Include>  
@@ -184,5 +184,5 @@ Das Hilfsprogramm RegPkg.exe kann verwendet werden, um ein Manifest für die Reg
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Registrierung von VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrieren von VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [VSPackages](../../extensibility/internals/vspackages.md)

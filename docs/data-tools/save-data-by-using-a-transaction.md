@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Speichern von Daten mithilfe von Transaktionen'
+title: 'Gewusst wie: Speichern von Daten mithilfe von Transaktionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,35 +18,35 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920546"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174210"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Vorgehensweise: Speichern von Daten mithilfe von Transaktionen
-Speichern von Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. Verwenden der <xref:System.Transactions.TransactionScope> Objekt, das in einer Transaktion teilnehmen, die automatisch für Sie verwaltet wird.
+# <a name="how-to-save-data-by-using-a-transaction"></a>Gewusst wie: Speichern von Daten mithilfe von Transaktionen
+Speichern Sie Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. Verwenden der <xref:System.Transactions.TransactionScope> Objekt, das an einer Transaktion teilnehmen, die automatisch für Sie verwaltet wird.
 
-Projekte werden nicht mit einem Verweis auf die System.Transactions-Assembly erstellt, daher müssen Sie manuell einen Verweis zu Projekten hinzufügen, die Transaktionen verwenden.
+Projekte werden nicht erstellt, mit einem Verweis auf die *System.Transactions* Assembly, daher müssen Sie manuell einen Verweis zu Projekten hinzufügen, die Transaktionen verwenden.
 
-Die einfachste Möglichkeit zum Implementieren einer Transaktions wird beim Instanziieren einer <xref:System.Transactions.TransactionScope> -Objekt in ein `using` Anweisung. (Weitere Informationen finden Sie unter [Using-Anweisung](/dotnet/visual-basic/language-reference/statements/using-statement), und [mit Anweisung](/dotnet/csharp/language-reference/keywords/using-statement).) Die in geschriebener Code die `using` Anweisung in der Transaktion beteiligt ist.
+Die einfachste Möglichkeit zum Implementieren einer Transaktions ist die Instanziierung einer <xref:System.Transactions.TransactionScope> -Objekt in ein `using` Anweisung. (Weitere Informationen finden Sie unter [Using-Anweisung](/dotnet/visual-basic/language-reference/statements/using-statement), und [Using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement).) Der Code, in wird, der `using` Anweisung, die in der Transaktion beteiligt ist.
 
-Um die Transaktion einen Commit auszuführen, rufen Sie die <xref:System.Transactions.TransactionScope.Complete%2A> als die letzte Anweisung in der Methode zu blockieren.
+Aufrufen, um die Transaktion einen Commit auszuführen, die <xref:System.Transactions.TransactionScope.Complete%2A> Methode als die letzte Anweisung in der mit blockiert.
 
-Um ein Rollback die Transaktion, eine Ausnahme vor dem Aufruf der <xref:System.Transactions.TransactionScope.Complete%2A> Methode.
+Um ein Rollback die Transaktion, eine Ausnahme vor dem Aufrufen der <xref:System.Transactions.TransactionScope.Complete%2A> Methode.
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>So fügen Sie einen Verweis auf die "System.Transactions.dll" hinzu
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Einen Verweis auf die "System.Transactions.dll" hinzufügen
 
-1.  Auf der **Projekt** klicken Sie im Menü **Verweis hinzufügen**.
+1.  Auf der **Projekt** , wählen Sie im Menü **Verweis hinzufügen**.
 
 2.  Auf der **.NET** Registerkarte (**SQL Server** Registerkarte für SQL Server-Projekte), wählen **System.Transactions**, und wählen Sie dann **OK**.
 
-     Ein Verweis auf "System.Transactions.dll" wird dem Projekt hinzugefügt.
+     Ein Verweis auf *"System.Transactions.dll"* wird dem Projekt hinzugefügt.
 
 ## <a name="to-save-data-in-a-transaction"></a>Zum Speichern von Daten in einer Transaktion
 
--   Fügen Sie Code zum Speichern von Daten innerhalb der using-Anweisung, die Transaktion enthält. Der folgende Code zeigt das Erstellen und Instanziieren einer <xref:System.Transactions.TransactionScope> Objekt in einer mit Anweisung:
+-   Fügen Sie Code zum Speichern von Daten innerhalb des using-Anweisung, die Transaktion enthält. Der folgende Code zeigt das Erstellen und Instanziieren einer <xref:System.Transactions.TransactionScope> Objekts in einer using Anweisung:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

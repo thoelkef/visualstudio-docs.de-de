@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925155"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890369"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Übersicht über WPF-Datenbindung mit LINQ to XML
 
@@ -37,7 +37,7 @@ In dieser Dokumentation wird das zweite Szenario beschrieben.
 
 Die WPF-Datenbindung ermöglicht es einem Benutzeroberflächenelement, eine seiner Eigenschaften einer Datenquelle zuzuordnen. Ein einfaches Beispiel dafür ist ein <xref:System.Windows.Controls.Label>, dessen Text den Wert einer öffentlichen Eigenschaft in einem benutzerdefinierten Objekt angibt. Die WPF-Datenbindung basiert auf den folgenden Komponenten:
 
-|Komponente|description|
+|Komponente|Beschreibung |
 |---------------|-----------------|
 |Bindungsziel|Das Benutzeroberflächenelement, das der Datenquelle zugeordnet werden soll. Visuelle Elemente in WPF werden von der <xref:System.Windows.UIElement>-Klasse abgeleitet.|
 |Zieleigenschaft|Die *Abhängigkeitseigenschaft* des Bindungsziels, das den Wert der Datenbindungsquelle wiedergibt. Abhängigkeitseigenschaften werden direkt von der <xref:System.Windows.DependencyObject>-Klasse unterstützt, von der sich <xref:System.Windows.UIElement> herleitet.|
@@ -79,13 +79,13 @@ In C# ist der Zugriff auf dynamische Eigenschaften zur Laufzeit nur über die vo
 
 Im Unterschied dazu kann auf die dynamischen Eigenschaften in einer XML-Quelle über eine unkomplizierte Notation in der folgenden Form zugegriffen werden:
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 Die dynamischen Eigenschaften für diese beiden Klassen ergeben entweder einen Wert, der direkt verwendet werden kann, oder einen Indexer, der mit einem Index bereitgestellt werden muss, damit der resultierende Wert oder die resultierende Auflistung von Werten abgerufen werden kann. Für den letzteren Fall gilt folgende Syntax:
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 

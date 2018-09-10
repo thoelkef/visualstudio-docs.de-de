@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer benutzerdefinierten Modul Debuggen | Microsoft Docs
+title: Erstellen einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,54 +15,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66ec73a13a3494ae6642e6d0f7397c9f3c1f0b0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101377"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203679"
 ---
-# <a name="creating-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debugmodul
-Ein Debugging-Modul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten-Laufzeit-Architekturen. Es ist in der Regel nur ein DE-Implementierung pro-Umgebung ausgeführt.  
+# <a name="create-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debug-engine
+Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten Laufzeit-Architekturen. Es gibt in der Regel nur eine Implementierung von DE pro-Umgebung ausgeführt.  
   
 > [!NOTE]
->  Es gibt separate DE-Implementierungen für Transact-SQL und JScript, VBScript und JScript einer einzelnen Deutschland freigeben.  
+>  Es gibt separate DE-Implementierungen für Transact-SQL und JScript, VBScript und JScript einer einzelnen DE freigeben.  
   
- Ein DE funktioniert mit Interpreter oder Vorgang solche Debugdienste Ausführung-Steuerelement, Haltepunkte und Ausdruck Evaluierungsversion bereit. Diese Dienste werden über die DE-Schnittstellen implementiert und können dazu führen, dass den Debugger für den Übergang zwischen den verschiedenen Betriebsmodi. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md).  
+ Eine bereitgestellten Kompatibilitätsrichtlinie arbeitet mit den Interpreter oder Vorgang System solche Debugdienste Ausführung-Steuerelement, Haltepunkte und Ausdruck Evaluierungsversion bereit. Diese Dienste werden über die DE-Schnittstellen implementiert und können dazu führen, dass den Debugger für den Übergang zwischen verschiedenen Betriebsmodi. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md).  
   
- Erstellung einer bereitgestellten Kompatibilitätsrichtlinie gehören die folgenden Schritte aus:  
+ Zur Erstellung einer bereitgestellten Kompatibilitätsrichtlinie gehören die folgenden Schritte aus:  
   
-1.  Registrieren einer bereitgestellten Kompatibilitätsrichtlinie mit Visual Studio  
+1.  Registrieren einer bereitgestellten Kompatibilitätsrichtlinie in Visual Studio  
   
-2.  Aktivieren ein Programm, das gedebuggt werden  
+2.  Aktivieren Sie zu debuggenden Programm  
   
-3.  Ausführung-Steuerelement und Status-Bewertung  
+3.  Implementieren Sie die Ausführung und Auswertung  
   
 4.  Senden von Ereignissen  
   
-5.  Beenden und trennen  
+5.  Richten Sie beenden und trennen  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Registrieren eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
- Erläutert die Schritte erforderlich, um ein Debugmodul mit Visual Studio zu registrieren, sodass sie verwendet werden kann.  
+ [Registrieren einer benutzerdefinierten Debug-engine](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
+ Erläutert die Schritte erforderlich, um eine Debug-Engine mit Visual Studio zu registrieren, sodass sie verwendet werden kann.  
   
- [Aktivieren eines Programms für das Debuggen](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
- Erläutert, bevor Ihre DE ein Programm debuggen kann, muss zuerst die DE starten oder an ein vorhandenes Programm angefügt.  
+ [Aktivieren Sie zu debuggenden Programm](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
+ Erläutert, bevor Ihre DE ein Programm debuggen kann, müssen zunächst die DE starten oder fügen Sie ihn an ein vorhandenes Programm an.  
   
- [Ausführungssteuerung und Zustandsauswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
- Erläutert, warum das Debuggen einer Anwendung benötigt Ausführungsfunktionen für Steuerelement implementieren.  
+ [Implementieren Sie die Ausführung und Auswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
+ Erläutert, warum Debuggen einer Anwendung erfordert die Implementierung von Ausführungsfunktionen für Steuerelement.  
   
  [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)  
- Wird die Kommunikation zwischen dem Debugger und die DE als ein Ereignismodell, basierend auf DCOM beschrieben.  
+ Wird die Kommunikation zwischen dem Debugger und die DE als ein Ereignismodell, das auf DCOM basierende beschrieben.  
   
- [Beenden und Trennen](../../extensibility/debugger/termination-and-detaching.md)  
- Erläutert die normalen Beendigung zu erreichen, d. h. Es gibt keine Haltepunkte, Ausnahmen, die Laufzeitfehler oder Endlosschleifen in der Anwendung, die debuggt werden.  
+ [Richten Sie beenden und trennen](../../extensibility/debugger/termination-and-detaching.md)  
+ Es wird erläutert, wie normalen Beendigung zu erreichen, d. h. Es gibt keine Haltepunkte, Ausnahmen, Laufzeitfehlern führen oder Endlosschleifen in der Anwendung, die debuggt werden.  
   
- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)  
- Dokumentiert die aufrufende Reihenfolge der Ereignisse, die in einer Debugsitzung auftreten.  
+ [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)  
+ Dokumentiert die Aufrufreihenfolge der Ereignisse, die in einer Debugsitzung an.  
   
- [Gewusst wie: Debuggen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Gewusst wie: Debuggen eine benutzerdefinierten Debug-engine](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Erläutert, wie eine benutzerdefinierte DE zu debuggen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Visual Studio Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977643"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756593"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
-Alle von der Kernfunktionalität von Windows Workflow-Designer kann über die Tastatur zugegriffen werden.
+Alle die Kernfunktionen des Workflow-Designers kann über die Tastatur zugegriffen werden.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Bedienen des Workflow-Designers mithilfe der Tastatur
 
-In Visual Studio 2010 wenden die globalen Tastenkombinationen und debugging-Tastenkombinationen auf die Workflow-Designer. Darüber hinaus wurden eine Anzahl von bestimmten Workflow-Designer-Tastenkombinationen erstellt. In Visual Studio 2010 können alle Tastenkombinationen zugeordnet werden. In einer neu gehosteten Anwendung sind diese Tastenkombinationen jedoch hartcodiert.
+In Visual Studio gelten die globalen Tastenkombinationen und debugging-Tastenkombinationen für die Workflow-Designer ein. Darüber hinaus wurden eine Anzahl von bestimmten Workflow-Designer-Tastenkombinationen erstellt. In Visual Studio können alle Tastenkombinationen neu, zugeordnet werden. In einer neu gehosteten Anwendung sind diese Tastenkombinationen jedoch hartcodiert.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tastenkombinationen des Workflow-Designers
 
-In der folgenden Tabelle werden die Standardtastenkombinationen zugewiesen, die auf Workflow-Designer-Befehle zusammengefasst.
+Die folgende Tabelle enthält die Standardtastenkombinationen für Workflow-Designer Befehle zugewiesen.
 
 |Verknüpfung|Zweck|
 |--------------|-------------|
@@ -49,7 +49,7 @@ In der folgenden Tabelle werden die Standardtastenkombinationen zugewiesen, die 
 
 ### <a name="flowchart"></a>Flussdiagramm
 
-In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Wie in den Rest des Workflow-Designer werden der Designeroberfläche, die mit den globalen Toolbox-Tastenkombinationen, die mit Visual Studio 2010 bereitgestellten Aktivitäten hinzugefügt.
+In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Aktivitäten werden wie in den Rest des Workflow-Designers die Oberfläche des Designers mit der globalen Toolbox-Tastenkombinationen, die die in Visual Studio hinzugefügt.
 
 - Um eine Aktivität zu verschieben, markieren Sie die Aktivität, und ordnen Sie sie mithilfe der PFEILTASTEN neu an.
 
@@ -73,11 +73,11 @@ Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:
 
 - Selbst wenn ein Aktivitätenpaar nicht verbunden werden kann, z. B. wenn die Quellaktivität bereits über eine ausgehende Verbindung verfügt, werden die anderen Verbindungen zwischen Aktivitäten in der Auswahl noch hergestellt, sofern dies möglich ist.
 
-- Wenn eine **FlowDecision** in der Auswahl enthalten ist und die **FlowDecision** keine ausgehenden Connectors besitzt, der Connector befindet sich auf die **"true"** Verzweigung.
+- Wenn eine **FlowDecision** befindet sich in der Auswahl und die **FlowDecision** keine ausgehenden Connectors besitzt, der Connector befindet sich auf die **"true"** Branch.
 
 ### <a name="expression-editing"></a>Ausdrucksbearbeitung
 
-Standardmäßig gelten die Standardtastenkombinationen für Visual Basic-Textbearbeitung innerhalb des Ausdrucks-Editors im Workflow-Designer, mit folgenden Einschränkungen:
+Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text in Visual Basic in der Ausdrucks-Editor im Workflow-Designer, mit folgenden Einschränkungen:
 
 - Eine Neuzuordnung der Tastenkombinationen für die folgenden Befehle ist wirkungslos. Beim Bearbeiten eines Ausdrucks können Sie nur über die Standardtastenkombinationen auf diese Befehle zugreifen.
 
@@ -88,4 +88,4 @@ Standardmäßig gelten die Standardtastenkombinationen für Visual Basic-Textbea
    - Rückgängigmachen
    - Wiederholen
 
-- Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio 2010 neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.
+- Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio neu zuordnen, bearbeiten Sie die Tastenkombinationen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

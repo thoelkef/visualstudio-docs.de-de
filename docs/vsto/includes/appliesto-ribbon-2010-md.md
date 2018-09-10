@@ -1,3 +1,3 @@
-  **Gilt für:** Die Informationen in diesem Thema betreffen Projekte auf Dokumentebene und VSTO\-Add\-In-Projekte für die folgenden Anwendungen: Excel, InfoPath 2013 und InfoPath 2010, Outlook, PowerPoint, Project, Visio und Word. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Gilt für:** die Informationen in diesem Thema gelten für Dokument\-Ebene Projekte und VSTO hinzufügen\-in-Projekte für die folgenden Anwendungen: Excel; InfoPath 2013 und InfoPath 2010; Outlook; PowerPoint; Projekt. Visio; Word. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../../vsto/features-available-by-office-application-and-project-type.md).
 
   

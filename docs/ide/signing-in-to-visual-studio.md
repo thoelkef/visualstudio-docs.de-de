@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948339"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282227"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -26,7 +26,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von Visual Studio. Beispielsweise können Sie u.a. nach der Anmeldung Ihre Einstellungen auf mehreren Geräten synchronisieren, die Lizenz für eine Testversion verlängern und automatisch eine Verbindung mit einem Azure-Dienst herstellen.
 
-Im Folgenden werden alle Anmeldevorteile aufgeführt:  
+Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 - **Zugang zum Visual Studio Dev Essentials-Programm:** Dieses Programm umfasst u.a. kostenlose Softwareangebote und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
 
@@ -62,9 +62,9 @@ Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn es bei der Anmeldung zu Problemen kommt, erhalten Sie auf der [Supportseite für Konten](https://www.visualstudio.com/subscriptions/support/) Hilfe.
+Wenn es bei der Anmeldung zu Problemen kommt, erhalten Sie auf der [Supportseite für Konten](https://visualstudio.microsoft.com/subscriptions/support/) Hilfe.
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)

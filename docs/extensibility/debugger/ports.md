@@ -1,5 +1,5 @@
 ---
-title: Ports | Microsoft Docs
+title: Ports | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a350e0579f7e60d8a7ffc3e879d79364cfdf0317
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6a73aef5151b12360d1e227d440223df4ff3298
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099443"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251048"
 ---
 # <a name="ports"></a>Ports
-Im Hinblick auf die Architektur des Debuggers einen **Port**:  
+Architektur der Debugger eine *Port*:  
   
--   Ist ein Container für eine Gruppe von Prozessen auf einem Server ausgeführt werden. Beispielsweise kann ein Port eine Verbindung mit einem Windows CE-basierten Gerät durch eine serielle Kabel oder an einen Computer im Netzwerk nicht von DCOM darstellen. Eine spezielle Port, den lokalen Port aufgerufen enthält alle auf dem lokalen Computer ausgeführten Prozesse an.  
+-   Ist ein Container für eine Reihe von Prozessen auf einem Server ausgeführt werden. Beispielsweise kann ein Port eine Verbindung mit einem Windows CE-basierten Gerät durch ein serielles Kabel oder an einen Computer im Netzwerk nicht-DCOM darstellen. Ein spezieller Port wird aufgerufen, den lokalen Port, enthält alle auf dem lokalen Computer ausgeführten Prozesse.  
   
--   Können sich nach Name oder Bezeichner identifizieren.  
+-   Kann sich selbst nach Name oder ID identifizieren.  
   
--   Können alle auf den Port ausgeführten Prozesse auflisten und starten diese Prozesse zu beenden.  
+-   Können Auflisten aller Prozesse, die auf den Port ausgeführt wird, und starten und die folgenden Prozesse beendet.  
   
--   Wird durch dargestellt ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, die durch Übergabe erstellt wird ein [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) Argument [hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+-   Wird durch dargestellt eine [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, die übergeben wurde ein [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) Argument [Port hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stellt einen Standardport, der alle Windows-basierten Prozessen, systemeigenen und verwalteten behandelt. Ein benutzerdefinierter Port muss für Verbindungen mit externen Geräten implementiert werden, die nicht Windows-basiert sind. Um eine solche benutzerdefinierte Ports angeben, muss ein benutzerdefinierten Port Lieferanten ebenfalls implementiert werden.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stellt einen Standardport, der alle Windows-basierten Prozesse systemeigenen und verwalteten behandelt. Ein benutzerdefinierter Port muss für Verbindungen mit externen Geräten eingerichtet werden, die nicht Windows-basiert sind. Um diese benutzerdefinierte Ports angeben, müssen Sie auch einen benutzerdefinierten Port Lieferanten einrichten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [Prozesse](../../extensibility/debugger/processes.md)   
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   
- [Hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+ [Port hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

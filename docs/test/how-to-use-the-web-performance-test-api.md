@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969128"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382304"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Gewusst wie: Verwenden der Webleistungstest-API
+# <a name="how-to-use-the-web-performance-test-api"></a>Vorgehensweise: Verwenden der Webleistungstest-API
 
 Sie können Code für die Webleistungstests schreiben. Die Webleistungstest-API wird verwendet, um Code für Webleistungstests, Webleistungstest-Plug-Ins, Anforderungs-Plug-Ins, Anforderungen, Extraktions- und Validierungsregeln zu erstellen. Die Klassen, aus denen diese Typen bestehen, sind die Kernklassen in dieser API. Die anderen Typen in dieser API werden verwendet, um die Erstellung folgender Objekte zu unterstützen: <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> und <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Sie verwenden den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace, um benutzerdefinierte Webleistungstests zu erstellen.
 
@@ -28,7 +28,7 @@ Sie können Code für die Webleistungstests schreiben. Die Webleistungstest-API 
 > Verwenden Sie den Objektkatalog, um den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace zu durchsuchen. Sowohl der Visual C#- als auch der Visual Basic-Editor bieten IntelliSense-Unterstützung für das Schreiben von Code mit den Klassen im Namespace.
 
 
- Sie können auch Plug-Ins für Auslastungstests erstellen. Weitere Informationen finden Sie unter [How to: Use the Load Test API (Vorgehensweise: Verwenden der Auslastungstest-API)](../test/how-to-use-the-load-test-api.md) und [How to: Create a Load Test Plug-In (Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins)](../test/how-to-create-a-load-test-plug-in.md).
+ Sie können auch Plug-Ins für Auslastungstests erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden der Auslastungstest-API](../test/how-to-use-the-load-test-api.md) und [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>So verwenden Sie den WebTesting-Namespace
 
@@ -69,5 +69,5 @@ Sie können Code für die Webleistungstests schreiben. Die Webleistungstest-API 
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Gewusst wie: Verwenden der Auslastungstest-API](../test/how-to-use-the-load-test-api.md)
-- [Gewusst wie: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Vorgehensweise: Verwenden der Auslastungstest-API](../test/how-to-use-the-load-test-api.md)
+- [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)

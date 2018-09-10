@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577313"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151180"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Setzt die Nachverfolgung im aktuellen Kontext fort.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp  
 HRESULT WINAPI ResumeTracking();  
 ```  
   
@@ -37,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn die Nachverfolgung fortgesetzt wurde. **E_FAIL** wird zurückgegeben, wenn die Nachverfolgung nicht fortgesetzt werden kann, da der Kontext nicht verfügbar war.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** FileTracker.h  
+ **Header:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Siehe auch  
  [SuspendTracking](../msbuild/suspendtracking.md)

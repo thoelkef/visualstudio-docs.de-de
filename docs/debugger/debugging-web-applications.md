@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Webanwendungen | Microsoft Docs
+title: Debuggen von Webanwendungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472396"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178916"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
@@ -41,6 +41,6 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
+ [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)   
  [Debuggen in Visual Studio](../debugger/index.md)  
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

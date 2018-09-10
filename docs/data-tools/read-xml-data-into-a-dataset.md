@@ -22,58 +22,45 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745935"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174774"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
-ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die XML-Daten in ein Dataset lädt. Das Dataset wird dann angezeigt, einem <xref:System.Windows.Forms.DataGridView> Steuerelement. Schließlich wird ein XML-Schema basierend auf dem Inhalt der XML-Datei in einem Textfeld angezeigt.
 
- In dieser exemplarischen Vorgehensweise besteht aus fünf wichtigen Schritte durchführen:
-
-1.  Erstellen eines neuen Projekts
-
-2.  Erstellen eine XML-Datei in das Dataset gelesen werden
-
-3.  Erstellen der Benutzeroberfläche
-
-4.  Erstellen des Datasets, die XML-Datei lesen und anzeigen in einem <xref:System.Windows.Forms.DataGridView> Steuerelement
-
-5.  Hinzufügen von Code zum Anzeigen des XML-Schemas basierend auf der XML-Datei in einem <xref:System.Windows.Forms.TextBox> Steuerelement
+ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die XML-Daten in ein Dataset lädt. Das Dataset wird dann angezeigt, einem <xref:System.Windows.Forms.DataGridView> Steuerelement. Abschließend wird ein XML-Schema basierend auf dem Inhalt der XML-Datei in einem Textfeld angezeigt.
 
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle angezeigten Menübefehle je nach Ihren aktiven Einstellungen oder der Ausgabe in der Hilfe beschriebenen abweichen kann, verwendet wird. So ändern Sie die Einstellungen für die **Tools** klicken Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
- In diesem Schritt erstellen Sie ein Visual Basic- oder Visual C#-Projekt, in dieser exemplarischen Vorgehensweise enthält.
 
-#### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt
+In diesem Schritt erstellen Sie eine Visual Basic- oder Visual C#-Projekt.
 
-1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .
+1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
 4. Nennen Sie das Projekt **ReadingXML**, und wählen Sie dann **OK**.
 
-     Die **ReadingXML** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
+   Die **ReadingXML** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generieren der XML-Datei in das Dataset gelesen werden
- Da in dieser exemplarischen Vorgehensweise konzentriert sich auf das Lesen von XML-Daten in ein Dataset, wird der Inhalt einer XML-Datei bereitgestellt.
 
-#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>Um die XML-Datei zu erstellen, die in das Dataset gelesen werden
+Da in dieser exemplarischen Vorgehensweise konzentriert sich auf das Lesen von XML-Daten in ein Dataset, wird der Inhalt einer XML-Datei bereitgestellt.
 
-1.  Auf der **Projekt** klicken Sie im Menü **neues Element hinzufügen**.
+1.  Auf der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.
 
-2.  Wählen Sie **XML-Datei**, nennen Sie die Datei `authors.xml`, und wählen Sie dann **hinzufügen**.
+2.  Wählen Sie **XML-Datei**, nennen Sie die Datei **authors.xml**, und wählen Sie dann **hinzufügen**.
 
-     Die XML-Datei in den Designer geladen und ist zur Bearbeitung bereit.
+   Die XML-Datei in den Designer geladen, und ist für die Bearbeitung bereit.
 
-3.  Fügen Sie den folgenden Code in den Editor unter der XML-Deklaration:
+3.  Fügen Sie die folgenden XML-Daten in den Editor unter der XML-Deklaration:
 
     ```xml
     <Authors_Table>
@@ -135,30 +122,31 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
     </Authors_Table>
     ```
 
-4.  Auf der **Datei** klicken Sie im Menü **authors.xml speichern**.
+4.  Auf der **Datei** , wählen Sie im Menü **authors.xml speichern**.
 
 ## <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche
- Die Benutzeroberfläche für diese Anwendung umfasst Folgendes:
+
+Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
 -   Ein <xref:System.Windows.Forms.DataGridView> Steuerelement, das den Inhalt der XML-Datei als Daten anzeigt.
 
--   Ein <xref:System.Windows.Forms.TextBox> Steuerelement, das das XML-Schema für die XML-Datei zeigt.
+-   Ein <xref:System.Windows.Forms.TextBox> Steuerelement, das das XML-Schema für die XML-Datei anzeigt.
 
 -   Zwei <xref:System.Windows.Forms.Button> Steuerelemente.
 
-    -   Eine Schaltfläche liest die XML-Datei in das Dataset und zeigt ihn in die <xref:System.Windows.Forms.DataGridView> Steuerelement.
+    -   Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.
 
-    -   Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt es in der <xref:System.Windows.Forms.TextBox> Steuerelement.
+    -   Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.
 
-#### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu
+### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu
 
 1.  Open `Form1` in der Entwurfsansicht.
 
-2.  Aus der **Toolbox**, ziehen Sie die folgenden Steuerelemente auf dem Formular:
+2.  Von der **Toolbox**, ziehen Sie die folgenden Steuerelemente im Formular:
 
-    -   Ein <xref:System.Windows.Forms.DataGridView> Steuerelement
+    -   Eine <xref:System.Windows.Forms.DataGridView> Steuerelement
 
-    -   Ein <xref:System.Windows.Forms.TextBox> Steuerelement
+    -   Eine <xref:System.Windows.Forms.TextBox> Steuerelement
 
     -   Zwei <xref:System.Windows.Forms.Button> Steuerelemente
 
@@ -167,67 +155,63 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
     |Steuerelement|Eigenschaft|Einstellung|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**Bildlaufleisten**|**Vertikal**|
+    ||**Scrollleisten**|**Vertikal**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
     ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Erstellen Sie das Dataset, das die XML-Daten empfängt.
- In diesem Schritt erstellen Sie ein neues Dataset mit dem Namen `authors`. Weitere Informationen über Datasets finden Sie unter [Dataset-Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>Um ein neues Dataset zu erstellen, die die XML-Daten empfängt
+In diesem Schritt erstellen Sie ein neues Dataset mit dem Namen `authors`. Weitere Informationen über Datasets finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  In **Projektmappen-Explorer**, wählen Sie die Quelldatei für **Form1**, und wählen Sie dann die **Sicht-Designer** Schaltfläche auf der **Projektmappen-Explorer** Symbolleiste.
+1.  In **Projektmappen-Explorer**, wählen Sie die Quelldatei für **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** die Symbolleiste.
 
-2.  Aus der [Toolbox, Registerkarte "Daten"](../ide/reference/toolbox-data-tab.md), ziehen Sie eine **DataSet** auf **Form1**.
+2.  Von der [Toolbox, Registerkarte "Daten"](../ide/reference/toolbox-data-tab.md), ziehen Sie eine **DataSet** auf **Form1**.
 
 3.  In der **Dataset hinzufügen** wählen Sie im Dialogfeld **nicht typisiertes Dataset**, und wählen Sie dann **OK**.
 
-     **DataSet1** wird der Komponentenleiste hinzugefügt.
+     **"DataSet1"** wird der Komponentenleiste hinzugefügt.
 
 4.  In der **Eigenschaften** legen die **Namen** und <xref:System.Data.DataSet.DataSetName%2A> Eigenschaften für`AuthorsDataSet`.
 
-## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Erstellen Sie den Ereignishandler zum Lesen der XML-Datei in das dataset
- Die **XML lesen** Schaltfläche liest die XML-Datei in das Dataset. Klicken Sie dann legt Eigenschaften fest, auf die <xref:System.Windows.Forms.DataGridView> Steuerelement, das an das Dataset binden.
+## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Erstellen Sie den Ereignishandler zum Lesen von XML-Datei in das dataset
 
-#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>So ReadXmlButton_Click-Ereignishandler Code hinzu
+Die **XML lesen** Schaltfläche liest die XML-Datei in das Dataset. Klicken Sie dann legt Eigenschaften fest, auf die <xref:System.Windows.Forms.DataGridView> -Steuerelement, das sie an das Dataset zu binden.
 
-1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Sicht-Designer** Schaltfläche auf der **Projektmappen-Explorer** Symbolleiste.
+1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** Symbolleiste.
 
 2.  Wählen Sie die **XML lesen** Schaltfläche.
 
      Die **Code-Editor** wird geöffnet, auf die `ReadXmlButton_Click` -Ereignishandler.
 
-3.  Geben Sie den folgenden Code in die `ReadXmlButton_Click` Ereignishandler:
+3.  Geben Sie den folgenden Code in die `ReadXmlButton_Click` -Ereignishandler:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  In der `ReadXMLButton_Click` Ereignishandlercode, Änderung der `filepath =` Eintritt in den richtigen Pfad.
+4.  In der `ReadXMLButton_Click` Ereignishandlercode, Änderung der `filepath =` Eintrag auf den richtigen Pfad.
 
-## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Erstellen Sie die Ereignishandler, um das Schema im Textfeld anzuzeigen.
- Die **Schema anzeigen** Schaltfläche erstellt eine <xref:System.IO.StringWriter> Objekt, das mit dem Schema gefüllt wird, und wird angezeigt, der <xref:System.Windows.Forms.TextBox>Steuerelement.
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Erstellen Sie den Ereignishandler, um das Schema in das Textfeld anzuzeigen.
 
-#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>Der ShowSchemaButton_Click-Ereignishandler Code hinzu
+Die **Schema anzeigen** Schaltfläche erstellt eine <xref:System.IO.StringWriter> -Objekt, mit dem Schema gefüllt ist, und wird angezeigt, in, der <xref:System.Windows.Forms.TextBox>Steuerelement.
 
-1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Sicht-Designer** Schaltfläche.
+1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche.
 
 2.  Wählen Sie die **Schema anzeigen** Schaltfläche.
 
      Die **Code-Editor** wird geöffnet, auf die `ShowSchemaButton_Click` -Ereignishandler.
 
-3.  Geben Sie den folgenden Code in der `ShowSchemaButton_Click` -Ereignishandler.
+3.  Fügen Sie den folgenden Code in die `ShowSchemaButton_Click` -Ereignishandler.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
 
 ## <a name="test-the-form"></a>Testen Sie das Formular
- Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt.
 
-#### <a name="to-test-the-form"></a>So testen Sie das Formular
+Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt.
 
-1.  Wählen Sie **F5** um die Anwendung auszuführen.
+1.  Wählen Sie **F5** zum Ausführen der Anwendung.
 
 2.  Wählen Sie die **XML lesen** Schaltfläche.
 
@@ -238,11 +222,12 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
      Das Textfeld zeigt die XML-Schema für die XML-Datei.
 
 ## <a name="next-steps"></a>Nächste Schritte
- In dieser exemplarischen Vorgehensweise erfahren Sie die Grundlagen der Einlesen einer XML-Datei in ein Dataset sowie das Erstellen eines Schemas, die basierend auf dem Inhalt der XML-Datei. Hier sind einige Aufgaben, die Sie als Nächstes tun können:
 
--   Bearbeiten Sie die Daten im Dataset und Zurückschreiben als XML. Weitere Informationen finden Sie unter <xref:System.Data.DataSet.WriteXml%2A>.
+In dieser exemplarischen Vorgehensweise erfahren Sie, die Grundlagen der Einlesen einer XML-Datei in ein Dataset sowie das Erstellen eines Schemas, die basierend auf dem Inhalt der XML-Datei. Hier sind einige Aufgaben, die Sie als Nächstes tun können:
 
--   Bearbeiten Sie die Daten im Dataset, und schreibt sie in einer Datenbank. Weitere Informationen finden Sie unter [speichern Daten](../data-tools/saving-data.md).
+-   Bearbeiten Sie die Daten in das Dataset und das zurückschreiben können als XML. Weitere Informationen finden Sie unter <xref:System.Data.DataSet.WriteXml%2A>.
+
+-   Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank.
 
 ## <a name="see-also"></a>Siehe auch
 

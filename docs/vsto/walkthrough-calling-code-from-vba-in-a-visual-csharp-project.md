@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual C#-Projekt | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual C#-Projekt'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781688"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C#-Projekt
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual C#-Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Excel aus VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `Sheet1` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code in der Arbeitsmappe.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,12 +60,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>Erstellen einer Arbeitsmappe, die VBA-Code enthält  
+## <a name="create-a-workbook-that-contains-vba-code"></a>Erstellen Sie eine Arbeitsmappe, die VBA-Code enthält.  
  Im ersten Schritt wird eine Arbeitsmappe mit Makros erstellt, die ein einfaches VBA-Makro enthält. Bevor Sie Code in einer Anpassung für VBA verfügbar machen können, muss die Arbeitsmappe bereits VBA-Code enthalten. Andernfalls kann Visual Studio das VBA-Projekt nicht ändern, um dem VBA-Code das Aufrufen der Anpassungsassembly zu ermöglichen.  
   
  Wenn Sie bereits über eine Arbeitsmappe mit VBA-Code verfügen, den Sie verwenden möchten, können Sie diesen Schritt überspringen.  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>So erstellen Sie eine Arbeitsmappe, die VBA-Code enthält  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>So erstellen Sie eine Arbeitsmappe, die VBA-Code enthält  
   
 1.  Starten Sie Excel.  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
 3.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
   
     > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Klicken Sie in der Gruppe **Code** auf **Visual Basic**.  
   
@@ -85,23 +86,23 @@ ms.lasthandoff: 04/16/2018
   
 6.  Fügen Sie der Codedatei den folgenden VBA-Code hinzu. Dieser Code definiert eine einfache Funktion, die keine Aktion ausführt. Diese Funktion soll lediglich sicherstellen, dass ein VBA-Projekt in der Arbeitsmappe vorhanden ist. Dies ist für spätere Schritte in dieser exemplarischen Vorgehensweise erforderlich.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Speichern Sie das Dokument, und beenden Sie Excel.  
   
-## <a name="creating-the-project"></a>Erstellen des Projekts  
+## <a name="create-the-project"></a>Erstellen eines Projekts  
  Jetzt können Sie ein Projekt auf Dokumentebene für Excel erstellen, das die zuvor erstellte Arbeitsmappe mit Makros verwendet.  
   
-#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
+### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
 1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-3.  Erweitern Sie im Vorlagenbereich **Visual C#**und dann **Office/SharePoint**.  
+3.  Erweitern Sie im Vorlagenbereich **Visual C#** und dann **Office/SharePoint**.  
   
 4.  Wählen Sie den Knoten **Office-Add-Ins** aus.  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Arbeitsmappe **WorkbookWithVBA** im Designer und fügt dem **Projektmappen-Explorer** das Projekt **CallingCodeFromVBA**hinzu.  
   
-## <a name="trusting-the-location-of-the-workbook"></a>Festlegen des Arbeitsmappenspeicherorts als vertrauenswürdig  
+## <a name="trust-the-location-of-the-workbook"></a>Legen Sie den Speicherort der Arbeitsmappe  
  Bevor Sie Code in der Projektmappe für VBA-Code in der Arbeitsmappe verfügbar machen können, müssen Sie VBA in der Arbeitsmappe als vertrauenswürdig festlegen, damit es ausgeführt werden kann. Dafür stehen verschiedene Möglichkeiten zur Verfügung: In dieser exemplarischen Vorgehensweise führen Sie diese Aufgabe aus, indem Sie den Speicherort der Arbeitsmappe im **Trust Center** in Excel als vertrauenswürdig festlegen.  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>So legen Sie den Arbeitsmappenspeicherort als vertrauenswürdig fest  
+### <a name="to-trust-the-location-of-the-workbook"></a>So legen Sie den Arbeitsmappenspeicherort als vertrauenswürdig fest  
   
 1.  Starten Sie Excel.  
   
@@ -150,10 +151,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Beenden Sie **Excel**.  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>Hinzufügen einer Methode zur Sheet1-Klasse  
+## <a name="add-a-method-to-the-sheet1-class"></a>Hinzufügen einer Methode zur Sheet1-Klasse  
  Nun, da das VBA-Projekt eingerichtet ist, fügen Sie der `Sheet1` -Hostelementklasse eine öffentliche Methode hinzu, die Sie aus VBA-Code aufrufen können.  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>So fügen Sie der Sheet1-Klasse eine Methode hinzu  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>So fügen Sie der Sheet1-Klasse eine Methode hinzu  
   
 1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1.cs**, und klicken Sie dann auf **Code anzeigen**.  
   
@@ -171,10 +172,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>Extrahieren einer Schnittstelle für die Sheet1-Klasse  
+## <a name="extract-an-interface-for-the-sheet1-class"></a>Extrahieren einer Schnittstelle für die Sheet1-Klasse  
  Bevor Sie die `CreateVstoNamedRange` -Methode für VBA-Code verfügbar machen können, müssen Sie eine öffentliche Schnittstelle erstellen, die diese Methode definiert, und diese Schnittstelle für COM verfügbar machen.  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>So extrahieren Sie eine Schnittstelle für die Sheet1-Klasse  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>So extrahieren Sie eine Schnittstelle für die Sheet1-Klasse  
   
 1.  Klicken Sie in der Codedatei **Sheet1.cs** in der `Sheet1` -Klasse auf eine beliebige Stelle.  
   
@@ -192,10 +193,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Erstellen Sie das Projekt.  
   
-## <a name="exposing-the-method-to-vba-code"></a>Verfügbarmachen der Methode für VBA-Code  
+## <a name="expose-the-method-to-vba-code"></a>Verfügbarmachen der Methode für VBA-code  
  Zum Verfügbarmachen der `CreateVstoNamedRange` -Methode für VBA-Code in der Arbeitsmappe legen Sie die **ReferenceAssemblyFromVbaProject** -Eigenschaft für das `Sheet1` -Hostelement auf **True**fest.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>So machen Sie die Methode für VBA-Code verfügbar  
+### <a name="to-expose-the-method-to-vba-code"></a>So machen Sie die Methode für VBA-Code verfügbar  
   
 1.  Doppelklicken Sie im **Projektmappen-Explorer**auf **Sheet1.cs**.  
   
@@ -207,15 +208,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Erstellen Sie das Projekt.  
   
-## <a name="calling-the-method-from-vba-code"></a>Aufrufen der Methode aus VBA-Code  
+## <a name="call-the-method-from-vba-code"></a>Rufen Sie die Methode aus VBA-code  
  Jetzt können Sie die `CreateVstoNamedRange` -Methode aus dem VBA-Code in der Arbeitsmappe aufrufen.  
   
 > [!NOTE]  
->  In dieser exemplarischen Vorgehensweise fügen Sie der Arbeitsmappe VBA-Code beim Debuggen des Projekts hinzu. Der VBA-Code, den Sie diesem Dokument hinzufügen, wird beim nächsten Erstellen des Projekts überschrieben. Visual Studio ersetzt das Dokument im Buildausgabeordner durch eine Kopie des Dokuments aus dem Hauptordner des Projekts. Wenn Sie den VBA-Code speichern möchten, können Sie ihn in das Dokument im Projektordner kopieren. Weitere Informationen finden Sie unter [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+>  In dieser exemplarischen Vorgehensweise fügen Sie der Arbeitsmappe VBA-Code beim Debuggen des Projekts hinzu. Der VBA-Code, den Sie diesem Dokument hinzufügen, wird beim nächsten Erstellen des Projekts überschrieben. Visual Studio ersetzt das Dokument im Buildausgabeordner durch eine Kopie des Dokuments aus dem Hauptordner des Projekts. Wenn Sie den VBA-Code speichern möchten, können Sie ihn in das Dokument im Projektordner kopieren. Weitere Informationen finden Sie unter [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>So rufen Sie die Methode aus VBA-Code auf  
+### <a name="to-call-the-method-from-vba-code"></a>So rufen Sie die Methode aus VBA-Code auf  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um Ihr Projekt auszuführen.  
   
 2.  Klicken Sie auf der Registerkarte **Entwickler** in der Gruppe **Code** auf **Visual Basic**.  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 04/16/2018
   
      Dieser Code Ruft die `CreateTable`-Methode in der Anpassungsassembly auf. Das Makro greift auf diese Methode zu, indem es die globale `GetManagedClass` -Methode für den Zugriff auf die `Sheet1` -Hostelementklasse verwendet, die Sie für VBA-Code verfügbar gemacht haben. Die `GetManagedClass` -Methode wurde beim Festlegen der **ReferenceAssemblyFromVbaProject** -Eigenschaft weiter oben in dieser exemplarischen Vorgehensweise automatisch generiert.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim VSTOSheet1 As CallingCodeFromVBA.Sheet1  
         Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-5.  Drücken Sie F5.  
+5.  Drücken Sie **F5**.  
   
 6.  Klicken Sie in der geöffneten Arbeitsmappe in **Sheet1** auf die Zelle **A1**. Vergewissern Sie sich, dass das Meldungsfeld angezeigt wird.  
   
@@ -251,7 +252,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Siehe auch  
  [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Gewusst wie: Expose-Code für VBA in einem Visual Basic-Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Gewusst wie: Expose-Code für VBA in Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

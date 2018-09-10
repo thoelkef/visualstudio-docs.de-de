@@ -1,5 +1,5 @@
 ---
-title: 'Prüfliste: Erstellen eines Vorgängerversion Sprachdiensts | Microsoft Docs'
+title: 'Prüfliste: Erstellen eines Legacysprachdiensts | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,54 +14,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad407d85213bf640b8631e9fbcb12b681ac87406
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133208"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510295"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacy-Sprachdiensts
-Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte, die Sie ergreifen müssen, damit erstellen Sie einen Sprachdienst für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Core-Editor. Integrieren Sie Ihre Sprache Service in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in der [Visual Studio-Debugger-Erweiterbarkeits](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
+# <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen einer legacysprachdiensten
+Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müssen zum Erstellen eines Sprachdiensts für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Integrieren Sie Ihren Sprachdienst in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in die [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
-## <a name="steps-for-creating-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  
+## <a name="steps-to-create-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  
   
 1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>-Schnittstelle.  
   
-    -   In Ihrem VSPackage implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um der Sprachdienst bereitzustellen.  
+    -   In einem VSPackage, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um den Sprachdienst bereitzustellen.  
   
-    -   Der Sprachdienst die integrierte Entwicklungsumgebung (IDE) in zur Verfügung stellen Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
+    -   Verfügbarmachen von Ihren Sprachdienst für die integrierte Entwicklungsumgebung (IDE) in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
   
-2.  Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in die Hauptsprache Dienstklasse.  
+2.  Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in der Hauptsprache Dienstklasse.  
   
-     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle ist der Ausgangspunkt der Interaktion zwischen den Core-Editor und der Sprachdienst.  
+     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle ist der Ausgangspunkt der Interaktion zwischen der Kern-Editor und den Sprachdienst.  
   
-### <a name="optional-features"></a>Optionale Features  
- Die folgenden Funktionen sind optional und können in beliebiger Reihenfolge implementiert werden. Diese Funktionen erhöhen Sie die Funktionalität des Sprachdiensts.  
+### <a name="optional-features"></a>Optionale features  
+ Die folgenden Funktionen sind optional und können in beliebiger Reihenfolge implementiert werden. Diese Features erhöhen Sie die Funktionalität von den Sprachdienst.  
   
 -   Farben für Syntax  
   
-     Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>-Schnittstelle. Die Implementierung dieser Schnittstelle sollten die Parser-Informationen, um Informationen über die entsprechende Farbe zurückgegeben.  
+     Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>-Schnittstelle. Die Implementierung dieser Schnittstelle sollten die Parser-Informationen, um die entsprechende Farbe Informationen zurückzugeben.  
   
-     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode gibt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle. Eine separate Colorizer-Instanz wird für jeden Textpuffer erstellt, damit Sie implementieren sollten die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> separat-Schnittstelle. Weitere Informationen finden Sie unter [Färbung Syntax in ein Legacy-Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
+     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode gibt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle. Wird für jede Textpuffer, eine separate Farbauswahl-Instanz erstellt, damit Sie implementieren sollten die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle separat. Weitere Informationen finden Sie unter [Syntaxfarben in einem legacysprachdiensten](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
 -   Codefenster  
   
-     Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> -Schnittstelle zum Aktivieren des Sprachdiensts, um benachrichtigt zu werden, wann ein neuer Codefenster erstellt wird.  
+     Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle, mit der Sprachdienst den Empfang einer Nachricht, wenn ein neues Codefenster erstellt wird.  
   
-     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode gibt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle. Der Sprachdienst können Sie die spezielle Benutzeroberfläche hinzufügen, um im Codefenster <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>. Der Sprachdienst Gleiches jegliche spezielle Verarbeitung, z. B. das Hinzufügen einer Ansichtsfilter Text in <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>.  
+     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode gibt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle. Der Sprachdienst können Sie die spezielle Benutzeroberfläche hinzufügen, um das Codefenster im <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>. Der Sprachdienst ist spezielle Verarbeitung, z. B. das Hinzufügen eines textansichtsfilter in ebenfalls möglich <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>.  
   
--   Textfilter-Ansicht  
+-   Textansichtsfilter  
   
-     Um IntelliSense-Anweisungsvervollständigung in einen Sprachdienst zu gewährleisten, müssen Sie einige der Befehle abfangen, die andernfalls Textansicht behandelt würden. Um diese Befehle abfangen zu können, müssen führen Sie die folgenden Schritte aus:  
+     Um IntelliSense-Anweisungsvervollständigung in einem Sprachdienst zu gewährleisten, müssen Sie einige der Befehle abfangen, die andernfalls von die Textansicht behandelt würden. Führen Sie zum Abfangen dieser Befehle die folgenden Schritte aus:  
   
-    -   Implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> zur Teilnahme an der Command-Kette und Handle-Editor-Befehle.  
+    -   Implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> zur Teilnahme an der Befehl-Kette und Handle-Editor-Befehl.  
   
     -   Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode und übergeben Ihr <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung.  
   
-    -   Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> Methode, wenn Sie aus der Ansicht trennen, damit diese Befehle nicht mehr an Sie übergeben werden.  
-  
-     Befehle, die verarbeitet werden müssen, hängen davon ab, auf die Dienste, die bereitgestellt werden. Weitere Informationen finden Sie unter [wichtige Befehle für Language Service Filter](../../extensibility/internals/important-commands-for-language-service-filters.md).  
+    -   Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> Methode, wenn Sie aus der Ansicht trennen, so dass diese Befehle nicht mehr an Sie übergeben werden.  
+   
+    Befehle, die verarbeitet werden müssen, hängen von der Dienste, die bereitgestellt werden. Weitere Informationen finden Sie unter [wichtige Befehle für Language service Filter](../../extensibility/internals/important-commands-for-language-service-filters.md).  
   
     > [!NOTE]
     >  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.  
@@ -70,62 +70,62 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte, die 
   
      Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>-Schnittstelle.  
   
-     Unterstützen die Statement-Abschluss-Befehl (also <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>), und rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> -Schnittstelle, übergeben die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> Schnittstelle. Weitere Informationen finden Sie unter [Anweisungsvervollständigung in einen Legacy-Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).  
+     Die Anweisung abgeschlossen-Befehl unterstützt (, also <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>), und rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> -Methode in der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> -Schnittstelle, übergeben die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> Schnittstelle. Weitere Informationen finden Sie unter [Anweisungsvervollständigung in einem älteren Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).  
   
--   Methode Tipps  
+-   Methodentipps  
   
-     Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle, um Daten für das QuickInfo-Fenster-Methode bereitzustellen.  
+     Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle, um Daten für das methodentippfenster bereitzustellen.  
   
-     Installieren Sie die Filter für die Text-Ansicht, um Befehle entsprechend zu behandeln, damit Sie wissen, wann eine Methode datentippfenster angezeigt. Weitere Informationen finden Sie unter [ParameterInfo in einen Legacy-Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).  
+     Installieren Sie die Filter für die Text-Ansicht, um Befehle entsprechend zu behandeln, damit Sie wissen, wann ein methodentippfenster für die Daten angezeigt werden. Weitere Informationen finden Sie unter [ParameterInfo in einer legacysprachdiensten](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).  
   
--   Fehler-Marker  
+-   Fehlermarker  
   
      Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>-Schnittstelle.  
   
-     Erstellen Sie den Fehler Marker-Objekte, implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> -Schnittstelle, und rufen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> -Methode auf und übergibt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> -Schnittstelle des Objekts Marker Fehler.  
+     Die beim Erstellen der Marker-Objekte, implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> -Schnittstelle, und rufen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> -Methode und übergeben die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle das Marker-Fehlerobjekt.  
   
-     Jeder Fehler Marker verwaltet in der Regel ein Element in das Fenster mit Aufgabenliste.  
+     In der Regel verwaltet jeder fehlermarker ein Element in das Aufgabenlistenfenster an.  
   
 -   Aufgabenlistenelementen  
   
-     Implementieren einer Aufgabe Element Klasse Bereitstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> Schnittstelle.  
+     Implementieren einer Klasse bereitstellen Task Element der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> Schnittstelle.  
   
      Implementieren einer Aufgabe Anbieter Klasse Bereitstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> Schnittstelle und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> Schnittstelle.  
   
      Implementieren einer Aufgabe Enumerator Klasse Bereitstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> Schnittstelle.  
   
-     Registrieren Sie den Aufgabenanbieter mit der Aufgabenliste <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> Methode.  
+     Registrieren Sie den Aufgabenanbieter bei der Aufgabenliste <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> Methode.  
   
-     Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> Schnittstelle durch Aufrufen der Dienstanbieter mit dem Dienst-GUID des Sprachdiensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>.  
+     Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> Schnittstelle durch Aufrufen der Sprachdienst-Dienstanbieter mit dem Dienst-GUID <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>.  
   
-     Erstellen Aufgabenobjekten-Element, und rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> Methode in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> -Schnittstelle beim vorhanden neu sind oder aktualisiert Aufgaben.  
+     Erstellen von Aufgabenobjekten-Element, und rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> -Methode in der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> -Schnittstelle auf, wenn es neue gibt oder aktualisiert Aufgaben.  
   
--   Kommentar Aufgabenelementen  
+-   Kommentar-Aufgaben  
   
-     Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> Schnittstelle und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> Schnittstelle, um den Kommentar Aufgabentoken abzurufen.  
+     Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> Schnittstelle und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> Schnittstelle, um den Kommentar Task-Token zu beziehen.  
   
-     Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> -Schnittstelle aus dem <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> Dienst.  
+     Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> -Schnittstelle aus der <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> Service.  
   
-     Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> -Schnittstelle aus dem <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> Methode.  
+     Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> -Schnittstelle aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> Methode.  
   
-     Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> Schnittstelle, um die Änderungen in der Tokenliste lauschen.  
+     Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> Schnittstelle zum Lauschen auf Änderungen in der Liste mit token.  
   
 -   Gliedern  
   
-     Es stehen mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **Definitionen** Befehl, geben Sie die Editor-gesteuerten Gliederungsbereiche oder unterstützen Regionen Client gesteuert. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen erweitert Gliederung-Unterstützung in einen Legacy-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+     Es gibt mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **reduzieren auf Definitionen** Befehl, editorgesteuert Gliederungsbereiche bereitzustellen oder Client gesteuerter Regionen unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem älteren Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
--   Language Service-Registrierung  
+-   Language-Service-Registrierung  
   
-     Weitere Informationen dazu, wie Sie einen Sprachdienst zu registrieren, finden Sie unter [registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service2.md) und [Verwalten von VSPackages](../../extensibility/managing-vspackages.md).  
+     Weitere Informationen dazu, wie Sie einen Sprachdienst zu registrieren, finden Sie unter [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service2.md) und [verwalten VSPackages](../../extensibility/managing-vspackages.md).  
   
 -   Kontextbezogene Hilfe  
   
-     Bereitstellen von Kontext auf den Editor in einem der folgenden Methoden:  
+     Bereitstellen von Kontext für den Editor in einem der folgenden Methoden:  
   
-    -   Bereitstellen von Kontext für Text Marker durch Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
+    -   Bereitstellen von Kontext für Textmarker durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
   
- Geben Sie alle Benutzerkontext durch Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle.  
-  
+    -   Geben Sie alle Benutzerkontext durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle.  
+   
 ## <a name="see-also"></a>Siehe auch  
- [Entwickeln von einem Legacy-Sprachdienst](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Entwickeln eines Datendiensts legacysprache](../../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad5961d3af1e729d33d216c55e7386885a970e0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965493"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175981"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites
 
-Reaktionszeiten werden zur Simulation des menschlichen Verhaltens verwendet, bei dem eine gewisse Zeit zwischen einzelnen Interaktionen mit einer Website vergeht. Reaktionszeiten treten zwischen den Anforderungen in einem Webleistungstest und zwischen Testiterationen in einem Auslastungstestszenario auf. Die Verwendung von Reaktionszeiten in einem Auslastungstest kann bei der Erzeugung genauerer Auslastungssimulationen nützlich sein. Sie können angeben, ob Reaktionszeiten in Auslastungstests verwendet oder ignoriert werden. Sie können die Verwendung von Reaktionszeiten für Auslastungstests im Auslastungstest-Editor einstellen.
+Reaktionszeiten werden zur Simulation des menschlichen Verhaltens verwendet, bei dem eine gewisse Zeit zwischen einzelnen Interaktionen mit einer Website vergeht. Reaktionszeiten treten zwischen den Anforderungen in einem Webleistungstest und zwischen Testiterationen in einem Auslastungstestszenario auf. Die Verwendung von Reaktionszeiten in einem Auslastungstest kann bei der Erzeugung genauerer Auslastungssimulationen nützlich sein. Sie können angeben, ob Reaktionszeiten in Auslastungstests verwendet oder ignoriert werden. Sie können die Verwendung von Reaktionszeiten für Auslastungstests im **Auslastungstest-Editor** einstellen.
 
- Das *Reaktionsprofil* ist eine Einstellung für ein Szenario in einem Auslastungstest. Durch die Einstellung wird festgelegt, ob die in den einzelnen Webleistungstests gespeicherten Reaktionszeiten während des Auslastungstests verwendet werden. Wenn Sie Reaktionszeiten in einigen Webleistungstests verwenden möchten, in anderen jedoch nicht, müssen Sie diese in verschiedenen Szenarien anordnen. Weitere Informationen zu Szenarios finden Sie unter [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md).
+ Das *Reaktionsprofil* ist eine Einstellung für ein Szenario in einem Auslastungstest. Durch die Einstellung wird festgelegt, ob die in den einzelnen Webleistungstests gespeicherten Reaktionszeiten während des Auslastungstests verwendet werden. Wenn Sie Reaktionszeiten in einigen Webleistungstests verwenden möchten, in anderen jedoch nicht, müssen Sie diese in verschiedenen Szenarien anordnen. Weitere Informationen zu Szenarios finden Sie unter [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md).
 
- Beim Erstellen des Auslastungstests mit dem Assistenten für neuen Auslastungstest legen Sie anfangs fest, ob Reaktionszeiten in Ihren Auslastungstests verwendet werden. Weitere Informationen finden Sie unter [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md).
+ Beim Erstellen des Auslastungstests mit dem **Assistenten für neuen Auslastungstest** legen Sie anfangs fest, ob Reaktionszeiten in Ihren Auslastungstests verwendet werden. Weitere Informationen finden Sie unter [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md).
 
- Die Reaktionsprofil-Optionen werden in der folgenden Liste beschrieben:
+ Die **Reaktionsprofil**-Optionen werden in der folgenden Liste beschrieben:
 
 **Off**
 
@@ -42,20 +42,20 @@ Reaktionszeiten werden exakt gemäß ihrer Aufzeichnung im Webleistungstest verw
 Reaktionszeiten werden verwendet, variieren jedoch im Rahmen einer Normalverteilung. Durch die leichte Veränderung der Reaktionszeit bei verschiedenen Anforderungen wird die Simulation virtueller Benutzer realistischer.
 
 > [!NOTE]
-> Eine vollständige Liste der Auslastungstest-Szenarioeigenschaften finden Sie unter [Auslastungstestszenario-Eigenschaften](../test/load-test-scenario-properties.md).
+> Eine vollständige Liste der Auslastungstest-Szenarioeigenschaften finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
-## <a name="changing-the-think-profile"></a>Ändern des Reaktionsprofils
+## <a name="change-the-think-profile"></a>Ändern des Reaktionsprofils
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>So ändern Sie ein Reaktionsprofil in einem Auslastungstestszenario
 
 1.  Öffnen Sie im Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2.  Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Eigenschaftenfenster angezeigt. Drücken Sie F4, um das Eigenschaftenfenster anzuzeigen.
+2.  Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das Fenster **Eigenschaften** anzuzeigen.
 
-3.  Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster Eigenschaften.
+3.  Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster **Eigenschaften**.
 
 4.  Nachdem die Änderungen der Eigenschaften abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Reaktionsprofil ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Szenarios zum Bearbeiten von Auslastungstests)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)

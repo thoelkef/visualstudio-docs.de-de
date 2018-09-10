@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746779"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078952"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -32,10 +32,10 @@ Der Shader-Designer unterstützt die folgenden Shader-Formate:
 
 |Formatname|Dateierweiterung|Unterstützte Vorgänge (Anzeigen, Bearbeiten, Exportieren)|
 |-----------------|--------------------|-------------------------------------------------|
-|Directed Graph Shader Language|.dgsl|Anzeigen, Bearbeiten|
-|HLSL-Shader (Quellcode)|.hlsl|Exportieren|
-|HLSL-Shader (Bytecode)|.cso|Exportieren|
-|C++-Header (HLSL-Bytecode-Array)|H|Exportieren|
+|Directed Graph Shader Language|*.dgsl*|Anzeigen, Bearbeiten|
+|HLSL-Shader (Quellcode)|*.hlsl*|Exportieren|
+|HLSL-Shader (Bytecode)|*.cso*|Exportieren|
+|C++-Header (HLSL-Bytecode-Array)|*.h*|Exportieren|
 
 ## <a name="get-started"></a>Erste Schritte
 
@@ -43,7 +43,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihrem [!INCLUDE[vsprvs](../code-qu
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>So fügen Sie einen DGSL-Shader zu Ihrem Projekt hinzu
 
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie den Shader hinzufügen möchten, und wählen Sie dann **Hinzufügen** und **Neues Element** aus.
+1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie den Shader hinzufügen möchten, und wählen Sie dann **Hinzufügen** > **Neues Element** aus.
 
 2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend **Visual Shader-Diagramm (.dgsl)** aus.
 
@@ -71,11 +71,11 @@ So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
 In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|description|
+|Element der Symbolleiste|Beschreibung |
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|
-|**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|
-|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Details des Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie dazu STRG gedrückt.|
+|**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
+|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Details des Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie dazu **STRG** gedrückt.|
 |**Mit Zoom anpassen**|Zeigt das gesamte Shader-Diagramm im Fensterrahmen an.|
 |**Real-Time Rendering Mode** (Echtzeit-Renderingmodus)|Bei aktiviertem Real-Time Rendering, zeichnet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die Entwurfsoberfläche auch dann neu, wenn keine Benutzeraktion ausgeführt wird. Ein hilfreicher Modus, bei der Arbeit mit Shadern, die sich im Laufe der Zeit ändern.|
 |**Vorschau mit Kugel**|Wenn diese aktiviert ist, wird ein Modell einer Kugel für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
@@ -87,7 +87,7 @@ In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
 |**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> 
-  **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
+  **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
 
 > [!TIP]
 > Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.
@@ -102,7 +102,7 @@ Verwenden Sie den Modus **Auswählen**, um Knoten hinzuzufügen, zu entfernen, n
 
     -   Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.
 
-    -   Um einen Knoten aus dem Diagramm zu entfernen, wählen Sie ihn aus, und drücken Sie dann die ENTF-TASTE.
+    -   Wenn Sie einen Knoten aus dem Diagramm entfernen möchten, wählen Sie ihn aus, und drücken Sie dann die **ENTF-TASTE**.
 
     -   Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.
 
@@ -158,7 +158,7 @@ Halten Sie hierzu **ALT** gedrückt, wählen Sie einen beliebigen Punkt auf der 
 
 Bevor Sie einen Shader in Ihrer App verwenden können, müssen Sie ihn in ein Format exportieren, das DirectX versteht.
 
-Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Dateierweiterung „.hlsl“ verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Dateierweiterung „.cso“ verfügt, oder in eine C++-Headerdatei (.h), die den Shader-Bytecode in ein Array codiert.
+Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Erweiterung *.hlsl* verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Erweiterung *.cso* verfügt, oder in eine C++-Headerdatei (*.h*), die den Shader-Bytecode in ein Array codiert.
 
 Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).
 
@@ -166,30 +166,30 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 
 |Befehl|Tastenkombinationen|
 |-------------|------------------------|
-|In den Modus **Auswählen** wechseln|STRG+G, STRG+Q<br /><br /> S|
-|In den Modus **Zoom** wechseln|STRG+G, STRG+Z<br /><br /> Z|
-|In den Modus **Schwenken** wechseln|STRG+G, STRG+P<br /><br /> K|
-|Alles auswählen|STRG + A|
-|Die aktuelle Auswahl löschen|Löschen|
-|Brechen Sie die aktuelle Auswahl ab.|Escape|
-|Vergrößern|STRG+Mausrad vorwärts<br /><br /> Pluszeichen (+)|
-|Verkleinern|STRG+Mausrad rückwärts<br /><br /> Minuszeichen (-)|
-|Die Entwurfsoberfläche nach oben schwenken|Mausrad rückwärts<br /><br /> BILD-AB|
-|Die Entwurfsoberfläche nach unten schwenken|Mausrad vorwärts<br /><br /> BILD-AUF|
-|Die Entwurfsoberfläche nach links schwenken|UMSCHALT+Mausrad rückwärts<br /><br /> Mausrad links<br /><br /> UMSCHALT+BILD-AB|
-|Die Entwurfsoberfläche nach rechts schwenken|UMSCHALT+Mausrad vorwärts<br /><br /> Mausrad rechts<br /><br /> UMSCHALT+BILD-AUF|
-|Den Tastaturfokus auf einen anderen Knoten verschieben|Pfeiltasten|
-|Wählen Sie den Knoten aus, der über den Tastaturfokus verfügt (fügt den Knoten der Auswahlgruppe hinzu)|UMSCHALT+LEERTASTE|
-|Die Auswahl des Knotens wechseln, der über den Tastaturfokus verfügt|STRG+LEERTASTE|
-|Die aktuelle Auswahl wechseln (wenn keine Knoten ausgewählt sind, wählen Sie den Knoten aus, der über den Tastaturfokus verfügt)|LEERTASTE|
-|Die aktuelle Auswahl nach oben verschieben|UMSCHALT+NACH-OBEN|
-|Die aktuelle Auswahl nach unten verschieben|UMSCHALT+NACH-UNTEN|
-|Die aktuelle Auswahl nach links verschieben|STRG+NACH-LINKS|
-|Die aktuelle Auswahl nach rechts verschieben|UMSCHALT+NACH-RECHTS-TASTE|
+|In den Modus **Auswählen** wechseln|**STRG**+**G**, **STRG**+**Q**<br /><br /> **S**|
+|In den Modus **Zoom** wechseln|**STRG**+**G**, **STRG**+**Z**<br /><br /> **Z**|
+|In den Modus **Schwenken** wechseln|**STRG**+**G**, **STRG**+**P**<br /><br /> **K**|
+|Alles auswählen|**STRG**+**A**|
+|Die aktuelle Auswahl löschen|**Löschen**|
+|Brechen Sie die aktuelle Auswahl ab.|**ESCAPE** (**ESC**)|
+|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> Pluszeichen (**+**)|
+|Verkleinern|**STRG**+**Mausrad rückwärts**<br /><br /> Minuszeichen (**-**)|
+|Die Entwurfsoberfläche nach oben schwenken|**Mausrad rückwärts**<br /><br /> **BildAb**|
+|Die Entwurfsoberfläche nach unten schwenken|**Mausrad vorwärts**<br /><br /> **BildAuf**|
+|Die Entwurfsoberfläche nach links schwenken|**UMSCHALTTASTE**+**Mausrad rückwärts**<br /><br /> **Mausrad links**<br /><br /> **UMSCHALTTASTE**+**BildAb**|
+|Die Entwurfsoberfläche nach rechts schwenken|**UMSCHALTTASTE**+**Mausrad vorwärts**<br /><br /> **Mausrad rechts**<br /><br /> **UMSCHALTTASTE**+**BildAuf**|
+|Den Tastaturfokus auf einen anderen Knoten verschieben|Die **Pfeiltasten**|
+|Wählen Sie den Knoten aus, der über den Tastaturfokus verfügt (fügt den Knoten der Auswahlgruppe hinzu)|**UMSCHALTTASTE**+**LEERTASTE**|
+|Die Auswahl des Knotens wechseln, der über den Tastaturfokus verfügt|**STRG**+**LEERTASTE**|
+|Die aktuelle Auswahl wechseln (wenn keine Knoten ausgewählt sind, wählen Sie den Knoten aus, der über den Tastaturfokus verfügt)|**LEERTASTE**|
+|Die aktuelle Auswahl nach oben verschieben|**UMSCHALTTASTE**+**Nach-Oben-Taste**|
+|Die aktuelle Auswahl nach unten verschieben|**UMSCHALTTASTE**+**Nach-Unten-Taste**|
+|Die aktuelle Auswahl nach links verschieben|**UMSCHALTTASTE**+**Nach-Links-Taste**|
+|Die aktuelle Auswahl nach rechts verschieben|**UMSCHALTTASTE**+**Nach-Rechts-Taste**|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|description|
+|Titel|Beschreibung |
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|

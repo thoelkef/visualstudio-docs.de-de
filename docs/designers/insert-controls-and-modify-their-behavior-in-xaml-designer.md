@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e2ec53e78bc88e18d9ba8e77aa888ffa855b64ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924154"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977803"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Einfügen von Steuerelementen und Ändern des Verhaltens im XAML-Designer
 
@@ -41,7 +41,7 @@ Wählen Sie ein Objekt, um ein Steuerelement zu erstellen. Klicken Sie im Menü 
 
 ## <a name="make-controls-do-things"></a>Mit Steuerelementen Dinge ausführen
 
-Steuerelemente können Aktionen ausführen, wenn die Benutzer mit ihnen interagieren. Sie können z. B. eine Animation starten, eine Datenquelle aktualisieren oder ein Video abspielen.
+Steuerelemente können Aktionen ausführen, wenn die Benutzer mit ihnen interagieren. Sie können z.B. eine Animation starten, eine Datenquelle aktualisieren oder ein Video abspielen.
 
 Verwenden Sie *Trigger*, *Verhalten*und *Ereignisse* , um mit Steuerelementen etwas auszuführen.
 
@@ -49,7 +49,7 @@ Verwenden Sie *Trigger*, *Verhalten*und *Ereignisse* , um mit Steuerelementen et
 
 Ein *Trigger* ändert eine Eigenschaft oder führt eine Aufgabe als Reaktion auf ein Ereignis oder eine Änderung an einer anderen Eigenschaft aus. Beispielsweise können Sie die Farbe einer Schaltfläche ändern, wenn Benutzer darauf zeigen.
 
-![Der Bereich "Trigger"](../designers/media/custom_button_blend_propertytriggerinfo.png)
+![Der Bereich „Trigger“](../designers/media/custom_button_blend_propertytriggerinfo.png)
 
 ### <a name="behaviors"></a>Verhalten
 

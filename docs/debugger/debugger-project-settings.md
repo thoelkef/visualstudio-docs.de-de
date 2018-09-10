@@ -1,9 +1,9 @@
 ---
-title: Debuggerprojekteinstellungen | Microsoft Docs
+title: Debuggerprojekteinstellungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474023"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152984"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.  
@@ -54,10 +54,10 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  Hier wird beschrieben, wie der Debugger mithilfe von Symbol- und Quelldateien Informationen zum Debuggen anzeigt.  
   
  [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
- Beschreibt die uwp-apps zu debuggen. (Windows Developer Center)  
+ Beschreibt das Debuggen von UWP-apps. (Windows Developer Center)  
   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)  
- Beschreibt die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger erforderlich ist.  
+ Beschreibt die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)

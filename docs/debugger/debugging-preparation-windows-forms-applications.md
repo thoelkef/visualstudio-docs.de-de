@@ -1,5 +1,5 @@
 ---
-title: 'Vorbereitung zum Debuggen: Windows Forms-Anwendungen | Microsoft Docs'
+title: 'Vorbereitung zum Debuggen: Windows Forms-Anwendungen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bde2b6d2885a83057a0211f6da4f9e4ff65ef46f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471673"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282807"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Vorbereitung zum Debuggen: Windows Forms-Anwendungen
-Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist einfach. Weitere Informationen finden Sie unter [Erstellen eines Windows-Anwendungsprojekts](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist einfach. Weitere Informationen finden Sie unter [Erstellen eines Windows-Anwendungsprojekts](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Wenn Sie ein Windows Forms-Projekt mit der Projektvorlage erstellen, werden die erforderlichen Einstellungen für die Debug- und Releasekonfigurationen automatisch durch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] festgelegt. Diese Einstellungen können ggf. geändert werden. Diese Einstellungen können geändert werden, der  **\<Projektname > Eigenschaftenseiten** (Dialogfeld) (**Mein Projekt** in Visual Basic).  
   
@@ -41,7 +41,7 @@ Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debu
   
 |**Eigenschaftenname**|**Einstellung**|  
 |-----------------------|-----------------|  
-|**Startaktion**|– Legen Sie auf **Projekt starten** den meisten Fällen. Legen Sie auf **externes Programm starten** , wenn Sie eine andere ausführbare Datei starten möchten beim Starten des Debugvorgangs (normalerweise für das Debuggen von DLLs).|  
+|**Startaktion**|– Legen Sie auf **Startprojekt,** den meisten Fällen. Legen Sie auf **externes Programm starten** sollten Sie eine andere ausführbare Datei starten beim Starten des Debugvorgangs (in der Regel für das Debuggen von DLLs).|  
   
  Sie können Windows Forms-Anwendungen aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] heraus debuggen oder durch das Anfügen zu einer bereits laufenden Anwendung. Weitere Informationen zum Anfügen, finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -63,7 +63,7 @@ Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debu
   
 3.  Auf der **Debuggen** Menü klicken Sie auf **starten**.  
   
-4.  Debuggen Sie die beschriebenen Verfahren mit [Debugger Grundlagen](../debugger/debugger-basics.md).  
+4.  Debuggen Sie mit die vorgestellten [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   

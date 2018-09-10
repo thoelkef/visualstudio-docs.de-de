@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Entfernen aller Kommentare aus Dokumenten | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Entfernen aller Kommentare aus Dokumenten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,25 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c713356a8949261524eda9f44fee8fae9f9f21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005414fce7b7bc04c22b266f5f5f6d54a399a182
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672856"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Gewusst wie: Programmgesteuertes Entfernen aller Kommentare aus einem Dokument
-  Verwenden Sie die DeleteAllComments-Methode, um alle Kommentare aus einem Microsoft Office Word-Dokument zu entfernen.  
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Gewusst wie: Programmgesteuertes Entfernen aller Kommentare aus Dokumenten
+  Verwenden der `DeleteAllComments` Methode, um alle Kommentare aus einem Microsoft Office Word-Dokument zu entfernen.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>So entfernen Sie alle Kommentare aus einem Dokument, das Teil einer Anpassung auf Dokumentebene ist  
+## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>So entfernen Sie alle Kommentare aus einem Dokument, das Teil einer Anpassung auf Dokumentebene ist  
   
 1.  Rufen Sie in Ihrem Projekt die <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> -Methode der `ThisDocument` -Klasse auf. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es über die `ThisDocument` -Klasse aus.  
   
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]  
   
-### <a name="to-remove-all-comments-from-a-document-by-using-an-vsto-add-in"></a>So entfernen Sie mithilfe eines VSTO-Add-Ins alle Kommentare aus einem Dokument  
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Zum Entfernen aller Kommentare aus einem Dokument mithilfe eines VSTO-Add-Ins  
   
 1.  Rufen Sie die <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> -Methode der <xref:Microsoft.Office.Interop.Word.Document> auf, aus der Sie Kommentare entfernen möchten.  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
+ [Gewusst wie: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
  [Dokumenthostelement](../vsto/document-host-item.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Erstellen von e-Mail-Elementen | Microsoft Docs'
+title: 'Gewusst wie: Programmgesteuertes Erstellen von e-Mail-Elementen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e6fedb9024dcb965917492b3eb8f759c0f6c8ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256597"
 ---
-# <a name="how-to-programmatically-create-an-e-mail-item"></a>Gewusst wie: Programmgesteuertes Erstellen von E-Mail-Elementen
-  In diesem Beispiel wird eine E-Mail in Microsoft Office Outlook erstellt.  
+# <a name="how-to-programmatically-create-an-email-item"></a>Gewusst wie: Programmgesteuertes Erstellen von e-Mail-Elementen
+  Dieses Beispiel erstellt eine e-Mail-Nachricht in Microsoft Office Outlook.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,6 +34,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
- [Erste Schritte: Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   
