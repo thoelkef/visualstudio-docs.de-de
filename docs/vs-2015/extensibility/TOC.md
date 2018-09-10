@@ -94,7 +94,7 @@
 ## [Erweitern des Filters für den Projektmappen-Explorer](extending-the-solution-explorer-filter.md)
 ## [Verwalten des Ladens von Projekten in einer Projektmappe](managing-project-loading-in-a-solution.md)
 # [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](creating-custom-project-and-item-templates.md)
-## [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](how-to-use-wizards-with-project-templates.md)
 ## [Schemareferenz zu Visual Studio-Vorlagen](visual-studio-template-schema-reference.md)
 ### [AppliesTo-Element (Visual Studio-Vorlagen)](appliesto-element-visual-studio-templates.md)
