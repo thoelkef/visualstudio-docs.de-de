@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154371"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282208"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsole Befehle in Visual Studio
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Weitere Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie unter [in diesem Thema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   

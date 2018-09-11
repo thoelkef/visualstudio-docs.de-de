@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154384"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282611"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.  
@@ -41,7 +41,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
 -   *".deploy"* 
   
- Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
+ Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
   
  Sie konfigurieren müssen *". manifest"*, *.application*, und *".deploy"*, z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oder wenn Sie verwenden einen anderen Webserver (z. B. Apache).  
   

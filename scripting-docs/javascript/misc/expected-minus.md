@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39;-&#39; | Microsoft Docs
+title: Erwartet &#39;-&#39; | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6d1dbf8364ce34af090bfe35cfad965f610ea1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633430"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283274"
 ---
-# <a name="expected-39-39"></a>Erwartete &#39;-&#39;
-Sie hat versucht, einen regulären Ausdruck Literale erstellen, jedoch die Schrägstriche (/) nicht enthalten. Ebenso wie Zeichenfolgenliterale als-Zeichen in ein Paar von Anführungszeichen geschrieben werden, werden reguläre Ausdrucksliterale als-Zeichen in ein Paar von umgekehrten Schrägstrich (/) ausgedrückt.  
+# <a name="expected-39-39"></a>Erwartet &#39;-&#39;
+Sie haben versucht, einen regulären Ausdruck Literale erstellen, aber hat keine eines die Schrägstriche (/). Genau wie Zeichenfolgenliterale als-Zeichen in ein Paar von Anführungszeichen geschrieben werden, werden reguläre Ausdrucksliterale als Zeichen innerhalb von zwei Schrägstrichen (/) ausgedrückt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie einen abschließenden Schrägstrich, um das Ende des regulären Ausdrucks zu markieren.  
+-   Fügen Sie einen abschließenden Schrägstrich um das Ende des regulären Ausdrucks zu kennzeichnen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntax regulärer Ausdrücke (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

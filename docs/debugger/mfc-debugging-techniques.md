@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059283"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283002"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:  
@@ -83,7 +83,7 @@ _asm int 3
  [Inhalt](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro  
- Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.  
+ Zum Anzeigen von Nachrichten von Ihrem Programm im Debugger [Fenster "Ausgabe"](../ide/reference/output-window.md), können Sie die [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [ABLAUFVERFOLGUNG](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) Makro. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.  
   
  Die folgenden Beispiele zeigen einige Verwendungsmöglichkeiten für das **TRACE** -Makro auf. Ähnlich wie `printf`ist das **TRACE** -Makro in der Lage, mehrere Argumente zu verarbeiten.  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermittelt werden können, die belegt, jedoch nicht wieder freigegeben werden.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung  
- In MFC können Sie anstelle des Operators [new](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.  
+ In MFC können Sie das Makro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) anstelle von der **neue** Operator zum Auffinden von Speicher zu Speicherverlusten. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.  
   
  Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **So aktivieren oder deaktivieren Sie die Speicherdiagnose**  
   
--   Rufen Sie die globale [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) -Funktion auf, um die Diagnose-Speicherbelegungsfunktion zu aktivieren oder zu deaktivieren. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.  
+-   Rufen Sie die globale Funktion [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) aktivieren oder Deaktivieren der Diagnose-Speicherbelegungsfunktion. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.  
   
  **So wählen Sie spezifische Speicherdiagnosefeatures mit "afxMemDF" aus**  
   
--   Wenn Sie die Speicherdiagnosefeatures präziser steuern möchten, können Sie einzelne Features gezielt aktivieren und deaktivieren, indem Sie den Wert der globalen MFC-Variablen [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)festlegen. Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:  
+-   Wenn Sie die Speicherdiagnosefeatures präzisen steuern möchten, können Sie gezielt aktivieren einzelner Speicherdiagnosefeatures ein- und ausschalten durch Festlegen des Werts der globalen MFC-Variablen [AfxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:  
   
     |Wert|Beschreibung|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen  
   
-1.  Erstellen Sie eine [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) Objekt, und rufen die [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) Member-Funktion. Dadurch wird die erste Speichermomentaufnahme erstellt.  
+1.  Erstellen Sie eine [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) Objekt, und rufen die [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) Member-Funktion. Dadurch wird die erste Speichermomentaufnahme erstellt.  
   
 2.  Nachdem das Programm alle Speicherbelegungen und -freigaben vorgenommen hat, erstellen Sie ein weiteres `CMemoryState` -Objekt und rufen `Checkpoint` für dieses Objekt auf. Dadurch wird eine zweite Momentaufnahme erstellt, die Aufschluss über die Arbeitsspeichernutzung gibt.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  In der  **\<Projekt > Eigenschaftenseiten** Dialogfeld klicken Sie auf die **Configuration Manager** Schaltfläche.  
   
-    2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b). In der **Konfiguration** Spalte  **\<neu... >**.  
+    2.  In der [Configuration Manager-Dialogfeld](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), suchen Sie das Projekt im Raster. In der **Konfiguration** Spalte  **\<neu... >**.  
   
-    3.  Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
+    3.  In der [Dialogfeld Neue Projektkonfiguration](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), geben Sie einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt", in der **Projektkonfigurationsname** Feld.  
   
     4.  Wählen Sie in der Liste **Einstellungen kopieren von** die Option **Release**.  
   

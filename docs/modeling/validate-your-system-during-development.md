@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623631"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283618"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Benutzer und der Architektur des Systems in Einklang zu bringen.
@@ -42,7 +42,7 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Testen der Anwendung](/vsts/test/overview?view=vsts)
+- [Testen der Anwendung](/azure/devops/test/overview?view=vsts)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)
 

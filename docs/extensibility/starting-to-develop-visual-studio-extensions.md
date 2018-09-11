@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c91ec9343aeb8b20d6140135becd6905c85adda
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758177"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283638"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
 Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahrscheinlich einige Fragen. Wir haben einige der am häufigsten verwendeten Tools hier aufgeführt. Wenn Sie die Informationen nicht wird Sie suchen angezeigt, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms), bitten Sie den gewünschten.
@@ -87,4 +87,4 @@ Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahr
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich die my-Erweiterung verteilen?
  Sie können die Erweiterung auf einem anderen Computer installieren oder als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken an Freunde senden. Finden Sie weitere Informationen zu VSIX-Pakete auf [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).
 
- Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/vsts/integrate/ide/extensions/overview).
+ Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview).
