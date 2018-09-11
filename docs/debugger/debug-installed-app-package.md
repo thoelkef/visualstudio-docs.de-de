@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059257"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279557"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debuggen eines installierten app-Pakets in Visual Studio (UWP)
 
@@ -37,7 +37,7 @@ Sie können alle installierten app-Paket debuggen, indem Sie auf **Debuggen > an
 * HoloLens
 * Internet der Dinge
 
-Weitere Informationen zu diesen Funktionen finden Sie im Blogbeitrag zu Updates für [Debuggen die app-Pakete installiert](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) und dem Beitrag auf [Erstellen universeller Windows-Apps (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Weitere Informationen zu diesen Funktionen finden Sie im Blogbeitrag zu Updates für [Debuggen die app-Pakete installiert](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) und dem Beitrag auf [Erstellen universeller Windows-Apps (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Debuggen Sie ein installiertes App-Paket oder der ausgeführten App auf einem lokalen Computer oder Gerät
 

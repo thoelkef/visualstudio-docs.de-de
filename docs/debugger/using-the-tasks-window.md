@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512290"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280882"
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 
-Die **Aufgaben** Fenster ähnelt der **Threads** Fenster mit dem Unterschied, dass die It Informationen über zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) -Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden.
+Die **Aufgaben** Fenster ähnelt der **Threads** Fenster mit dem Unterschied, dass die It Informationen über zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class), oder [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) -Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden.
 
 In verwaltetem Code können Sie die **Aufgaben** Fenster bei der Arbeit mit <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte oder mit der **"await"** und **Async** Schlüsselwörter (**"await"** und **Async** in Visual Basic). Weitere Informationen zu Aufgaben in verwaltetem Code finden Sie unter [zur parallelen Programmierung](/dotnet/standard/parallel-programming/index).
 
 In nativem Code können Sie die **Aufgaben** Fenster bei der Arbeit mit [Aufgabengruppen](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallele Algorithmen](/cpp/parallel/concrt/parallel-algorithms), [asynchrone Agents](/cpp/parallel/concrt/asynchronous-agents), und [einfache Aufgaben](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Weitere Informationen zu Aufgaben in systemeigenem Code, finden Sie unter [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
 
-In JavaScript können Sie das Fenster "Aufgaben" Wenn Sie mit der Zusage arbeiten `.then` Code. Finden Sie unter [asynchrone Programmierung in JavaScript (UWP-apps)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.
+In JavaScript können Sie das Fenster "Aufgaben" Wenn Sie mit der Zusage arbeiten `.then` Code. Finden Sie unter [asynchrone Programmierung in JavaScript (UWP-apps)](/previous-versions/windows/apps/hh700330(v=win.10)) für Weitere Informationen.
 
 Sie können die **Aufgaben** Fenster, wenn Sie den Debugger zu unterbrechen. Sie können darauf zugreifen, auf die **Debuggen** Menü, indem Sie auf **Windows** , und klicken Sie dann auf **Aufgaben**. Die folgende Abbildung zeigt die **Aufgaben** Fenster im Standardmodus.
 
