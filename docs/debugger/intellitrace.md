@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280778"
+ms.locfileid: "44321018"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
 
 - Aufzeichnen bestimmter Ereignisse
 
-     Überprüfen von verknüpftem Code, die in angezeigten Daten den **"lokal"** Fenster während der Debugger-Ereignisse und Informationen zu Funktionsaufrufen
+   Überprüfen von verknüpftem Code, die in angezeigten Daten den **"lokal"** Fenster während der Debugger-Ereignisse und Informationen zu Funktionsaufrufen
 
 - Schwer nachstellbare oder während der Bereitstellung auftretende Fehler beim Debuggen
 
@@ -46,7 +46,7 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 |||
 |-|-|
 |**Meine Anwendung mit IntelliTrace zu debuggen:**<br /><br /> – Vergangene Ereignisse.<br />-Anzeigen Aufrufinformationen mit vergangenen Ereignissen.<br />-Speichern Sie IntelliTrace-Sitzung.<br />-Steuerelement, die von IntelliTrace gesammelten Daten.|- [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)<br />- [Verlaufsbezogenes Debugging](../debugger/historical-debugging.md)<br />- [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace ein Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Sammeln von IntelliTrace-Daten in einer testsitzung im Test-Manager**|- [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Sammeln von IntelliTrace-Daten in einer testsitzung im Test-Manager**|- [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Sammeln von IntelliTrace-Daten bereitgestellter Anwendungen**|- [Verwenden den eigenständigen IntelliTrace collector](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Debuggen von einer IntelliTrace-Protokolldatei (ITRACE-Datei) aus.**|- [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace-Daten können aus den folgenden Quellen gespeichert werden:
 
 - Die Anwendung stürzt auf einem Testcomputer ab, wird jedoch auf einem Entwicklungscomputer erfolgreich ausgeführt.
 
-     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einem Team Foundation Server-Arbeitselement für die Untersuchung hinzufügen. Finden Sie unter [Sammeln weiterer Diagnosedaten in manuellen Tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
+     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einem Team Foundation Server-Arbeitselement für die Untersuchung hinzufügen. Finden Sie unter [Sammeln weiterer Diagnosedaten in manuellen Tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
 
 - Ein Fehler oder ein Absturz geschieht in einer bereitgestellten Anwendung.
 
@@ -129,9 +129,7 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
 - **.NET Framework-Ereignisse**
 
-     IntelliTrace zeichnet standardmäßig die häufigsten .NET Framework-Ereignisse auf. Zum Beispiel:
-
-    - Für ein Checkbox-Aktivierungsereignis erfasst IntelliTrace den Kontrollkästchenzustand und den Text.
+   IntelliTrace zeichnet standardmäßig die häufigsten .NET Framework-Ereignisse auf. Erfasst z. B. Ror ein Checkbox-Aktivierungsereignis IntelliTrace den Kontrollkästchenzustand und Text.
 
 - **SharePoint 2010 und SharePoint 2013-Anwendungsereignisse**
 
@@ -175,12 +173,14 @@ Um zu steuern, wie viel Aufrufsinformationen IntelliTrace erfasst, legen Sie nur
 
 Standardmäßig werden von IntelliTrace nur Daten für ausgewählte IntelliTrace-Ereignisse gesammelt. Das kann, abhängig von der Struktur und der Organisation Ihres Codes, eventuell die Anwendung verlangsamen. Wenn IntelliTrace beispielsweise oft ein Ereignis protokolliert, kann dies die Anwendung verlangsamen. Erwägen Sie, eine Umgestaltung Ihrer Anwendung vorzunehmen.
 
-Das Sammeln der Aufrufsinformationen verlangsamt die App möglicherweise erheblich. Außerdem erhöht sich dadurch möglicherweise die Größe aller auf dem Datenträger gespeicherter IntelliTrace-Protokolldateien (ITRACE-Dateien). Um diese Auswirkungen zu minimieren, sammeln Sie Aufrufinformationen nur für die Module, die Sie interessieren.  Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Tools**, **Optionen**, **IntelliTrace**, **erweitert**. 
+Das Sammeln der Aufrufsinformationen verlangsamt die App möglicherweise erheblich. Außerdem erhöht sich dadurch möglicherweise die Größe aller auf dem Datenträger gespeicherter IntelliTrace-Protokolldateien (ITRACE-Dateien). Um diese Auswirkungen zu minimieren, sammeln Sie Aufrufinformationen nur für die Module, die Sie interessieren.  Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Tools**, **Optionen**, **IntelliTrace**, **erweitert**.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)
+
 [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)
+
 [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogs
