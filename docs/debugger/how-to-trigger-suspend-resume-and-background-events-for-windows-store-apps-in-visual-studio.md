@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps | Microsoft Docs'
+title: Wie Sie auslösen, anhalten, fortsetzen und im Hintergrund von Ereignissen beim Debuggen von UWP-apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 00e448da2f5a23c2f6aebf6e163181080949129a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481228"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280011"
 ---
-# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps in Visual Studio
+# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Wie Sie auslösen, anhalten, fortsetzen und im Hintergrund von Ereignissen beim Debuggen von UWP-apps in Visual Studio
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
   
  Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben**beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.  
   
- Weitere Informationen zu Prozesslebensdauer-Verwaltung und im Hintergrund Aufgaben finden Sie unter [wird gestartet, fortsetzen und Multitasking](/windows/uwp/launch-resume/index).  
+ Weitere Informationen zu Prozesslebensdauer-Verwaltung und Hintergrundaufgaben finden Sie unter [Launching, resuming, und das Multitasking](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Auslösen von Ereignissen der Prozesslebensdauer-Verwaltung  
  Windows kann die App anhalten, wenn der Benutzer zu einem anderen Element wechselt oder Windows ein einen Zustand mit geringem Energieverbrauch wechselt. Sie können auf das `Suspending` -Ereignis reagieren, um relevante App- und Benutzerdaten im permanenten Speicher zu speichern und Ressourcen freizugeben. Wenn eine Anwendung nach dem Zustand **Angehalten** fortgesetzt wird, wechselt sie in den Zustand **Aktiv** und wird an der Position fortgesetzt, an der sie angehalten wurde. Sie können auf das `Resuming` -Ereignis reagieren, um den Anwendungszustand zu aktualisieren oder wiederherzustellen und Ressourcen zurückzufordern.  
@@ -48,7 +48,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
      Beachten Sie, dass **Anhalten und beenden** die App schließt und die Debugsitzung beendet.  
   
 ##  <a name="BKMK_Trigger_background_tasks"></a> Auslösen von Hintergrundaufgaben  
- Jede App kann eine Hintergrundaufgabe registrieren, um auf bestimmte Systemereignisse zu reagieren, selbst wenn die App nicht ausgeführt wird. Hintergrundaufgaben können keinen Code ausführen, der die Benutzeroberfläche direkt aktualisiert. Stattdessen zeigen sie dem Benutzer Informationen mithilfe von mit Kachelupdates, Infoanzeigerupdates und Toastbenachrichtigungen an. Weitere Informationen finden Sie unter [Supporting your app with background tasks](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
+ Jede App kann eine Hintergrundaufgabe registrieren, um auf bestimmte Systemereignisse zu reagieren, selbst wenn die App nicht ausgeführt wird. Hintergrundaufgaben können keinen Code ausführen, der die Benutzeroberfläche direkt aktualisiert. Stattdessen zeigen sie dem Benutzer Informationen mithilfe von mit Kachelupdates, Infoanzeigerupdates und Toastbenachrichtigungen an. Weitere Informationen finden Sie unter [unterstützen Ihre Apps mit Hintergrundaufgaben](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
  Sie können die Ereignisse, die Hintergrundaufgaben für die App starten, über den Debugger auslösen.  
   
@@ -79,22 +79,22 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
   
     -   Wählen Sie für Visual C#- und Visual Basic-Projekte **Eigenen Code zunächst nicht starten sondern debuggen**aus.  
   
-         ![C&#35;&#47;VB Debuggen starten Anwendungseigenschaft](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;Anwendungseigenschaft für VB Debuggen starten](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Wählen Sie für JavaScript- und Visual C++-Projekte **Nein** aus der Liste **Anwendung starten** aus.  
   
-         ![C&#43;&#43;&#47;VB starten Debug Anwendungseigenschaft](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB Starten der Anwendung Debug-Eigenschaft](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Drücken Sie **F5** , um die App in den Debugmodus zu versetzen. Beachten Sie, dass die Liste **Prozess** auf der Symbolleiste **Debugspeicherort** den Namen des Apppakets anzeigt, um zu signalisieren, dass der Debugmodus aktiv ist.  
   
-     ![Prozessliste Hintergrund](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
+     ![Hintergrund Prozessliste](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
   
 5.  Wählen Sie die Hintergrundaufgabe, die Sie starten möchten, aus der Ereignisliste auf der Symbolleiste **Debugspeicherort** aus.  
   
      ![Anhalten, fortsetzen, beenden und Hintergrundaufgaben](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Ereignisse zur Verwaltung der Prozesslebensdauer sowie Hintergrundaufgaben der installierten App auslösen bzw. aktivieren.  
- Verwenden der **installiertes App-Paket Debuggen** (Dialogfeld), eine app zu laden, die bereits im Debugger installiert ist. Angenommen, Sie Debuggen einer app, die von Microsoft Store installiert wurde oder eine app zu debuggen, wenn Sie die Quelldateien für die app, aber nicht Visual Studio-Projekt für die app verfügen. Die **installiertes App-Paket Debuggen** Dialogfeld können Sie eine app starten, im Debugmodus befinden, auf dem Visual Studio-Computer oder auf einem Remotegerät oder zum Festlegen der Anwendung im Debugmodus ausgeführt, aber nicht starten. Weitere Informationen finden Sie unter [eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).
+ Verwenden der **Debuggen Installed App Package** Dialogfeld, um eine app zu starten, die bereits in den Debugger installiert ist. Sie können z. B. Debuggen einer app, die über Microsoft Store installiert wurde oder Debuggen einer app aus, wenn Sie die Quelldateien für die app, aber nicht Visual Studio-Projekt für die app verfügen. Die **Debuggen Installed App Package** Dialogfeld können Sie Starten einer app im Debugmodus auf dem Visual Studio-Computer oder auf einem Remotegerät, oder legen Sie die app im Debugmodus ausgeführt, aber nicht gestartet wird. Weitere Informationen finden Sie unter [Debuggen eines installierten app-Pakets](../debugger/debug-installed-app-package.md).
   
  Sobald die App in den Debugger geladen ist, können Sie die oben beschriebenen Prozeduren anwenden.  
   
@@ -103,9 +103,9 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
   
 1.  Öffnen Sie die Ereignisanzeige.  
   
-2.  In der **Aktionen** Bereich auswählen **Ansicht** , und stellen Sie sicher, dass **anzeigen analytische und Debugprotokolle** aktiviert ist.  
+2.  In der **Aktionen** Bereich wählen **Ansicht** , und stellen Sie sicher, dass **analytische und Debugprotokolle** aktiviert ist.  
   
-3.  Auf der **Ereignisanzeige (lokal)** Struktur, erweitern Sie den Knoten **Anwendungs- und Dienstprotokolle** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.  
+3.  Auf der **Ereignisanzeige (lokal)** erweitern die Knoten **Anwendungs- und Dienstprotokolle** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.  
   
 4.  Wählen Sie das **Diagnose** -Protokoll aus.  
   

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118053"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282340"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profil der Leistung von SharePoint-Anwendungen
 
@@ -65,7 +65,7 @@ Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über d
 |Titel|Beschreibung|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Veranschaulicht, wie eine Samplingsprofilanalyse für eine SharePoint-Anwendung ausgeführt wird.|
-|[Testen der Leistung Ihrer App vor der Freigabe](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|Beschreibt, wie Auslastungstests erstellt werden, mit deren Hilfe Sie Belastungstests für SharePoint-Anwendungen durchführen.|
+|[Testen der Leistung Ihrer App vor der Freigabe](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Beschreibt, wie Auslastungstests erstellt werden, mit deren Hilfe Sie Belastungstests für SharePoint-Anwendungen durchführen.|
 |[Komponententest für Code](/visualstudio/test/unit-test-your-code)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
 |[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
 
