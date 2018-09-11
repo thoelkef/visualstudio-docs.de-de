@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279114"
+ms.locfileid: "44320552"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Ein erster Blick auf die Bereitstellung in Visual Studio
 
@@ -45,7 +45,7 @@ Bereitstellung auf einem lokalen Ordner wird normalerweise verwendet, für das T
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png)
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die Visual C++-Laufzeit, die mit der lokalen Bereitstellung oder statische Verknüpfung bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++-Laufzeitbibliotheken**: Sie können die Visual C++-Laufzeit, die mit der lokalen Bereitstellung oder statische Verknüpfung bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
@@ -76,7 +76,7 @@ Bereitstellung auf einem lokalen Ordner wird normalerweise verwendet, für das T
 
     Sie können auch ASP.NET-Anwendungen und-Dienste auf vielfältige andere Weise bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET Webanwendungen und-Dienste](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die zentrale Bereitstellung mithilfe von Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++-Laufzeitbibliotheken**: Sie können die zentrale Bereitstellung mithilfe von Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows-Desktop** können Sie eine Windows-Desktopanwendung auf einem Webserver oder eine Dateifreigabe im Netzwerk mithilfe von ClickOnce-Bereitstellung veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [bereitstellen eine desktop-app mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) und [Bereitstellen einer nativen app mit ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Sie können anspruchsvollere Entwicklung und Tests, die durch die Bereitstellung
 
 ## <a name="devops-deployment"></a>DevOps-Bereitstellung
 
-Azure-Pipelines können Sie in einer teamumgebung um continuous Deployment Ihrer App zu aktivieren. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index) und [in Azure bereitstellen](/azure/devops/deploy-azure/index).
+Azure-Pipelines können Sie in einer teamumgebung um continuous Deployment Ihrer App zu aktivieren. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [in Azure bereitstellen](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Bereitstellung für andere app-Typen
 
@@ -122,7 +122,7 @@ Azure-Pipelines können Sie in einer teamumgebung um continuous Deployment Ihrer
 | --- | --- | --- |
 | **Office-app** | Sie können ein Add-In für Office in Visual Studio veröffentlichen. | [Bereitstellen Sie und veröffentlichen Sie Ihre Office-add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF oder OData-Dienst**  | Andere Anwendungen können WCF RIA-Diensten, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch wird in Visual Studio 2017 nicht mehr unterstützt, aber Sie können weiterhin in Visual Studio 2015 und früher bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch wird in Visual Studio 2017 nicht mehr unterstützt, aber Sie können weiterhin in Visual Studio 2015 und früher bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
