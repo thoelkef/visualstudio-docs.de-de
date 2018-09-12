@@ -17,7 +17,7 @@
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
 #### [Visual Studio-IDE](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps Services](vs-azure-devops.md)
 #### [Azure-Guthaben](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
