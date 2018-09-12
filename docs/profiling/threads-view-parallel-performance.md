@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573166"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668691"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 Die **Threadansicht** ist die ausführlichste und detaillierteste Ansicht in der Nebenläufigkeitsschnellansicht (wählen Sie **Analysieren** > **Nebenläufigkeitsschnellansicht** aus, um die Nebenläufigkeitsschnellansicht zu starten). Mithilfe dieser Ansicht können Sie ermitteln, ob die Threads ausgeführt werden oder aufgrund von Synchronisierung, E/A oder aus anderen Gründen blockiert werden.  

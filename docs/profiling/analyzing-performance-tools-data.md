@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690851"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668958"
 ---
 # <a name="analyze-performance-tools-data"></a>Analysieren der durch Leistungstools erstellten Daten
 Leistungsberichte der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ermöglichen es Ihnen, Leistungsprobleme der Anwendung einzusehen und zu analysieren. Dieser Bereich gibt Ihnen einen Überblick über Leistungsberichte und -ansichten, die Sie verwenden können, um Leistungsdaten zu untersuchen.  
@@ -44,4 +44,4 @@ Leistungsberichte der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-
 ## <a name="see-also"></a>Siehe auch  
  [Leistungs-Explorer](../profiling/performance-explorer.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

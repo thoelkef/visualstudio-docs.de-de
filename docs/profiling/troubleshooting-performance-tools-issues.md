@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572344"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668754"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Problembehandlung bei Leistungstools
 Bei der Verwendung der Profilerstellungstools tritt möglicherweise eines der folgenden Probleme auf:  
   
--   [Von den Profilerstellungstools werden keine Daten gesammelt.](#NoDataCollected)  
+-   [Von den Profilerstellungstools werden keine Daten gesammelt.](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an.](#NoSymbols)  
+-   [Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an.](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Von den Profilerstellungstools werden keine Daten gesammelt  
  Nachdem Sie ein Profil für eine Anwendung erstellt haben, wird keine Profilerstellungsdatendatei (*VSP*) erstellt, und Sie erhalten im **Ausgabefenster** oder im Befehlsfenster die folgende Warnung:  

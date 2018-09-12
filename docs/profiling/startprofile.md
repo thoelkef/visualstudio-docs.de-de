@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668778"
 ---
 # <a name="startprofile"></a>StartProfile
 Die `StartProfile`-Funktion legt den Zähler für die angegebene Profilerstellungsebene auf 1 (ON) fest.  
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Enumeratoren können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:  
   
-|Enumerator|description|  
+|Enumerator|Beschreibung |  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Die Einstellung globaler Ebene wirkt sich auf alle Prozesse und Threads bei der Profilerstellung aus.|  
 |PROFILE_PROCESSLEVEL|Die Einstellung auf Prozessebene wirkt sich auf alle Threads aus, die Teil des angegebenen Prozesses sind.|  
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
  Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:  
   
-|Enumerator|description|  
+|Enumerator|Beschreibung |  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Die Profilerstellungselement-ID ist nicht vorhanden.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Die angegebene Profilerstellungsebene ist nicht vorhanden.|  
@@ -62,13 +63,13 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Wenn sowohl der Status von Start/Stop als auch der von Suspend/Resume auf ON festgelegt ist, ist auch der Profilerstellungsstatus der Ebene auf ON festgelegt. Damit ein Profil für einen Thread erstellt werden kann, muss der Status des Threads auf globaler, Prozess- und Threadebene ON sein.  
   
-## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>.NET Framework-Entsprechung  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Funktionsinformationen  
- Header: in VSPerf.h deklariert  
+ Header: in *VSPerf.h* deklariert  
   
- Importbibliothek: VSPerf.lib  
+ Importbibliothek: *VSPerf.lib*  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel veranschaulicht den StartProfile-Funktionsaufruf.  
@@ -108,4 +109,4 @@ void ExerciseStartProfile()
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

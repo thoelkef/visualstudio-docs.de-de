@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251536"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280804"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 Mit Universelle Windows-Plattform und unserem zentralen Windows-Kern können Sie die gleiche App auf jedem Windows 10-Gerät ausführen, egal ob es sich um Smartphones oder Desktop-PCs handelt. Erstellen Sie diese universellen Windows-Apps mit Visual Studio und den universellen Windows-App-Entwicklungstools.
@@ -47,7 +47,7 @@ Universelle Windows-Plattform ist einfach eine Sammlung von Verträgen und Versi
 Nach der Installation der Software müssen Sie Ihr Windows 10-Gerät für die Entwicklung aktivieren. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](/windows/uwp/get-started/enable-your-device-for-development). Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.
 
 ## <a name="universal-windows-apps"></a>Universelle Windows-Apps
-Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Geräte unter Windows 10 zu erstellen. Lesen Sie [Erstellen der ersten App](/windows/uwp/get-started/your-first-app), oder sehen Sie sich das Video [Tools for Windows 10 Overview (Übersicht über Tools für Windows 10)](http://channel9.msdn.com/Series/ConnectOn-Demand/229) an.
+Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Geräte unter Windows 10 zu erstellen. Lesen Sie [Erstellen der ersten App](/windows/uwp/get-started/your-first-app), oder sehen Sie sich das Video [Tools for Windows 10 Overview (Übersicht über Tools für Windows 10)](https://channel9.msdn.com/Series/ConnectOn-Demand/229) an.
 
 Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 erstellte universelle Windows-Apps verfügen, müssen Sie diese Apps portieren, um die neueste Version von Universelle Windows-Plattform verwenden zu können. Weitere Informationen finden Sie unter [Wechsel von Windows-Runtime 8.x zu UWP](/windows/uwp/porting/w8x-to-uwp-root).
 

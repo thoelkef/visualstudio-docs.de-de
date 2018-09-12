@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548333"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775550"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Sammeln von Parallelitätsdaten zu Threads und Prozessen
 
@@ -31,11 +31,11 @@ Sie können die Parallelitätsmethode zur Profilerstellung mit einem der folgend
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-Weitere Optionen können Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld
+Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld
 
 - Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten* angeben können, wenn Sie die Profilerstellung mit der Parallelitätsmethode ausführen.
+Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie die Profilerstellung mit der Parallelitätsmethode ausführen.
 
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
