@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623796"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384226"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen Sie zum Debuggen mit Visual Studio
 
@@ -31,7 +31,7 @@ Dieser Artikel enthält die Funktionen von Visual Studio-Debugger in eine schrit
 |---------|---------|
 |  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) zum Debuggen, die ähnliche Schritte zeigt. |
 
-Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben. Um zwischen c# und C++-Beispielcode zu wechseln, verwenden Sie den Filter "Language" in der oberen rechten Ecke der Seite.
+Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben. Um zwischen c# und C++-Beispielcode in diesem Artikel zu wechseln, verwenden Sie den Filter "Language" in der oberen rechten Ecke dieser Seite.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -286,9 +286,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Haltepunkts und starten Sie den debugger
 
-1. In der `foreach` der Schleife die `Main` Funktion (`for` -Schleife in C++ `main` Funktion), legen Sie einen Haltepunkt durch Klicken auf den linken Rand der ersten Zeile des Codes.
+1. In der `foreach` der Schleife die `Main` Funktion (`for` -Schleife in C++ `main` Funktion), legen Sie einen Haltepunkt durch Klicken auf den linken Rand die folgende Codezeile:
 
-    ![Festlegen eines Haltepunkts](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (oder `shape->Draw()` in C++)
 
     Ein roter Kreis angezeigt, in dem Sie den Haltepunkt festgelegt.
 
@@ -296,7 +296,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 6. Drücken Sie **F5** oder **Debuggen starten** Schaltfläche, die app gestartet wird, und der Debugger ausgeführt wird, um die Codezeile, in dem Sie den Haltepunkt gesetzt haben.
 
-    ![Erreichen eines Haltepunkts](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Festlegen und Erreichen eines Haltepunkts](../debugger/media/get-started-set-breakpoint.gif)
 
     Der gelbe Pfeil stellt die Anweisung auf der der Debugger angehalten ist, die auch app-Ausführung an der gleichen Stelle unterbricht (diese Anweisung wurde noch nicht ausgeführt).
 
@@ -308,9 +308,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 In der Regel verwenden wir die Tastenkombinationen, da es sich um eine gute Möglichkeit, ist schnell auf Ihre app im Debugger (entsprechende Befehle z. B. Menü Befehle in Klammern angezeigt werden) ausführen.
 
-1. Drücken Sie **F11** (oder wählen Sie **Debuggen > Einzelschritt**) einmal (mehrere Male in c#), bis Sie anhalten, auf die `shape.Draw` -Methodenaufruf in der `Main` Methode (`shape->Draw` in C++).
-
-1. Drücken Sie **F11** zu fahren Sie fort, in dem Code für die `Rectangle` Klasse.
+1. Bei angehaltener in die `shape.Draw` -Methodenaufruf in der `Main` Methode (`shape->Draw` in C++), drücken Sie die **F11** (oder wählen Sie **Debuggen > Einzelschritt**), fahren Sie fort, in dem Code für die `Rectangle` -Klasse.
 
      ![Verwenden Sie F11, um Einzelschritt Code](../debugger/media/get-started-f11.png "F11 Einzelschritt")
 
@@ -364,19 +362,19 @@ Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-r
 
 Beim Drücken **Neustart**, denn Sie spart Zeit und beenden die app und erneutes Starten des Debuggers. Der Debugger hält am ersten Haltepunkt, der erreicht wird, indem Sie Code ausführen.
 
-Der Debugger hält wieder am Haltepunkt, in Festlegen der `foreach` Schleife (`for` -Schleife in C++).
+Der Debugger hält wieder am Haltepunkt festlegen, auf die `shape.Draw()` Methode (`shape->Draw()` in C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Untersuchen Sie Variablen mit den Datentipps
 
 Funktionen, die Ihnen ermöglichen, Variablen untersuchen sind eines der nützlichsten Features des Debuggers, und es gibt verschiedene Möglichkeiten dafür. Häufig, wenn Sie versuchen, ein Problem debuggen können, sind Sie versucht, finden Sie heraus, ob Variablen die Werte speichern, die Sie zu einem bestimmten Zeitpunkt über erwarten.
 
-1. Bei angehaltener auf die `foreach` Schleife (`for` -Schleife in C++), drücken Sie die **F11** nach.
-
-1. Zeigen Sie auf die `shapes` -Objekt, und Sie sehen, der Standardwert der Eigenschaft, die `Count` Eigenschaft.
+1. Bei angehaltener auf die `shape.Draw()` Methode (`shape->Draw()` in C++), zeigen Sie auf die `shapes` -Objekt, und Sie sehen, der Standardwert der Eigenschaft, die `Count` Eigenschaft.
 
 1. Erweitern Sie die `shapes` Objekt, das alle zugehörigen Eigenschaften, z. B. der erste Index des Arrays finden Sie unter `[0]`, das hat den Wert `Rectangle` (c#) oder einer Speicheradresse (C++).
 
-     ![Anzeigen ein Datentipps](../debugger/media/get-started-data-tip.png "einem Datentipp anzeigen")
+     ![Anzeigen ein Datentipps](../debugger/media/get-started-data-tip.gif "einem Datentipp anzeigen")
+
+    Sie können weiter erweitern, Objekte, um deren Eigenschaften, z. B. Anzeigen der `Height` -Eigenschaft des Rechtecks.
 
     Häufig, wenn Debuggen, sollten Sie eine schnelle Möglichkeit zum Überprüfen der Eigenschaftswerte für Objekte, und der Datentipps sind eine gute Möglichkeit dafür.
 
