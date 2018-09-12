@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548634"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775205"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
 
@@ -53,11 +53,11 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-Weitere Optionen können Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld
+Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld
 
 - Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten** angeben können, wenn Sie .NET-Arbeitsspeicherdaten sammeln.
+Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie .NET-Arbeitsspeicherdaten sammeln.
 
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627177"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320838"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -156,7 +156,7 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
-|[CPU-Auslastung](../profiling/cpu-usage.md)|ja (siehe Hinweis)|ja|ja (siehe Hinweis)|
+|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
 |[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein| 
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|

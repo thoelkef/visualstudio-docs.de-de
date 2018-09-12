@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567208"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384304"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -176,7 +176,7 @@ Gruppiert [CodeSnippet-Elemente](../ide/code-snippets-schema-reference.md#codesn
 
 |Untergeordnetes Element|Beschreibung |
 |-------------------|-----------------|
-|[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)|Optionales Element. Übergeordnetes Element für alle Codeausschnittdaten. Es kann keine oder mehrere `CodeSnippet`-Elemente in einem `CodeSnippets`-Element geben.|
+|[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Optionales Element. Übergeordnetes Element für alle Codeausschnittdaten. Es kann keine oder mehrere `CodeSnippet`-Elemente in einem `CodeSnippets`-Element geben.|
 
 ## <a name="declarations-element"></a>Declarations-Element
 
@@ -196,7 +196,7 @@ Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschni
 
 |Übergeordnetes Element|Beschreibung |
 |--------------------|-----------------|
-|[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
+|[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet-element)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
 
 ## <a name="default-element"></a>Default-Element
 
@@ -279,7 +279,7 @@ Gibt allgemeine Informationen über den IntelliSense-Codeausschnitt an.
 
 |Übergeordnetes Element|Beschreibung |
 |--------------------|-----------------|
-|[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)|Übergeordnetes Element für alle Codeausschnittdaten.|
+|[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Übergeordnetes Element für alle Codeausschnittdaten.|
 
 ## <a name="helpurl-element"></a>HelpUrl-Element
 
@@ -422,7 +422,7 @@ Literale und Objekte können kein **ID**-Element mit dem Wert „selected“ ode
 
 |Übergeordnetes Element|Beschreibung |
 |--------------------|-----------------|
-|[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|
+|[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|
 
 ## <a name="namespace-element"></a>Namespace-Element
 
@@ -491,7 +491,7 @@ Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemb
 
 |Übergeordnetes Element|Beschreibung |
 |--------------------|-----------------|
-|[References-Element](../ide/code-snippets-schema-reference.md#references)|Gruppierungselement für `Reference`-Elemente.|
+|[References-Element](../ide/code-snippets-schema-reference.md#references-element)|Gruppierungselement für `Reference`-Elemente.|
 
 ## <a name="references-element"></a>References-Element
 

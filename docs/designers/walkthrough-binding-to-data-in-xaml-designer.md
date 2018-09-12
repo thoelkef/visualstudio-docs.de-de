@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282884"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
@@ -102,4 +102,4 @@ Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenflä
 ## <a name="see-also"></a>Siehe auch
 
 - [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Dialogfeld „Wertkonverter hinzufügen“](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Dialogfeld „Wertkonverter hinzufügen“](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
