@@ -9,18 +9,18 @@ description: Weitere Informationen zum Priority Support-Vorteil, der in Visual S
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567154"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289535"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
 
 Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.
 
-Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.
+Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.  Klicken Sie auf einen der nachfolgenden Links, um direkt zu diesem Forum zu wechseln.  
 
 ## <a name="included-forums"></a>Enthaltene Foren
 

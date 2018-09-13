@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Azure Advisory Chat-Vorteil nutzen könne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280802"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289544"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -25,16 +25,16 @@ Erhalten Sie in Echtzeit Hilfe beim Einstieg in Azure! Der Dienst bietet auch Be
 Die Nutzung von Azure Advisory Chat ist einfach.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure Advisory Chat“, und klicken Sie auf **Jetzt chatten**.
-
-    ![Azure Advisory Chat-Kachel](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat-Kachel](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Es wird eine Benachrichtigung angezeigt, dass der Dienst mit Ausnahme der Unterstützung bei Fragen rund um Konten, Abrechnung und Abonnements zurzeit nur auf Englisch angeboten wird.  Klicken Sie auf **Weiter**.
-
-    ![Azure Advisory Chat-Hinweis](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat-Hinweis](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. Das ist auch schon alles.  Es wird ein Chatfenster geöffnet, und Sie sehen eine Statusanzeige, die darüber informiert, an welcher Position in der Warteschlange Sie sich befinden.  Ihre Chatanfrage wird vom nächsten verfügbaren Mitarbeiter beantwortet.
-
-    ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Berechtigung
 

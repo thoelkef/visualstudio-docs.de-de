@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283444"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225083"
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 
@@ -138,16 +138,7 @@ Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade i
    Um beispielsweise [eine C++-App zu erstellen](../ide/getting-started-with-cpp-in-visual-studio.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten. <br><br>
    Um [eine C#-App zu erstellen](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
 
-## <a name="get-support"></a>Support aufrufen
-
-Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Hier sind einige weitere Supportoptionen:
-
-* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können auch über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen. (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -155,6 +146,5 @@ Hier sind einige weitere Supportoptionen:
 * [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
 * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Administratorhandbuch für Visual Studio 2017](visual-studio-administrator-guide.md)
-  * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Installieren von Build Tools in einem Container](build-tools-container.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Einrichten und Installieren von Visual Studio für Mac](/visualstudio/mac/installation)

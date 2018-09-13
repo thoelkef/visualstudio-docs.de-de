@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zum Pluralsight-Schulungsabonnements, das in Ihre
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380791"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289563"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -27,8 +27,8 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Um Ihr Abonnement zu aktivieren, stellen Sie eine Verbindung mit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und klicken Sie auf der Seite mit den Pluralsight-Vorteilen im Abschnitt „Professionelle Entwicklung“ auf den Link **Code abrufen**.
-
-    ![Kachel „Pluralsight-Vorteil“](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „Pluralsight“](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > Wenn Sie auf der Kachel „Pluralsight-Vorteil“ auf den Link „Code abrufen“ klicken, wird möglicherweise folgende Meldung angezeigt:
@@ -36,40 +36,40 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
     > **„Please note: If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.“** („Bitte beachten Sie: Wenn Sie zuvor ein anderes Pluralsight-Angebot über Ihr Visual Studio-Abonnement aktiviert haben, können Sie mit diesem Code möglicherweise kein neues Pluralsight-Konto erstellen.“)
 
 2. Sie erhalten eine Benachrichtigung, dass der Gutscheincode erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-
-    ![Pluralsight-Vorteil: Aktivieren](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Aktivieren](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.  In diesem Beispiel wird der Vorteil aktiviert, der in Visual Studio Dev Essentials-Mitgliedschaften enthalten ist. Klicken Sie auf **Activate your benefit** (Ihren Vorteil aktivieren).
-
-    ![Angebotsseite des Pluralsight-Vorteils für Visual Studio Dev Essentials](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Angebotsseite für Visual Studio Dev Essentials](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  Führen Sie auf der Aktivierungsseite folgende Schritte durch:
     - Geben Sie im Formular die geforderten Kontaktinformationen ein.
     - Klicken Sie auf das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren.
     - Klicken Sie auf **I agree, activate benefit** (Ich stimme zu, Vorteil aktivieren).
-
-    ![Aktivieren des Pluralsight-Vorteils](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Pluralsight-Vorteil: Nutzungsbedingungen](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Aktivierung](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Nutzungsbedingungen](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  Das Einrichten Ihres Kontos kann einen Moment dauern.  Sobald dieser Vorgang abgeschlossen ist, wird auf der Seite eine Bestätigung angezeigt, und Sie erhalten eine E-Mail, die Ihre Anmeldeinformationen enthält.  Diese E-Mail wird an den Alias gesendet, den Sie bei der Erstellung des Kontos angegeben haben.  Überprüfen Sie auch Ihre Ordner für Junk- oder Spam-E-Mails, wenn Sie die Nachricht nicht finden können.
-
-    ![Pluralsight-Vorteil: Bestätigung](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Bestätigung](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > Wenn Ihr Konto nicht dafür berechtigt ist, neue Angebote einzulösen, informiert Sie die empfangene E-Mail darüber, dass es ein Problem mit der Erstellung Ihres Accounts gab, da diesem Berechtigungen fehlen.  Darüber hinaus sind Informationen enthalten, die Sie dabei unterstützen, das Pluralsight-Supportteam zu kontaktieren, damit dieses Ihnen bei Bedarf offene Fragen zu Ihrem Konto beantwortet.
 
 6.  Sobald Ihr Konto erfolgreich erstellt wurde, enthält die empfangene E-Mail Ihren Benutzernamen, und Sie werden dazu aufgefordert, ein Kennwort zu erstellen.  Geben Sie ein Kennwort ein, und geben Sie es dann zur Bestätigung erneut ein. Klicken Sie dann auf **Log in to Pluralsight** (Bei Pluralsight anmelden).
-
-    ![Pluralsight-Vorteil: Willkommens-E-Mail](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Willkommens-E-Mail](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  Geben Sie den Benutzernamen ein, den Sie mit der Willkommens-E-Mail erhalten haben sowie das Kennwort, das Sie gerade erstellt haben, und klicken Sie auf **Anmelden**.
-
-    ![Pluralsight-Vorteil: Anmeldung](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Anmeldung](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  Das ist alles!  Nun können Sie Ihre Kenntnisse mit Tausenden von Pluralsight-Kursen erweitern.
-
-    ![Pluralsight-Vorteil: Startseite](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight-Vorteil: Startseite](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |

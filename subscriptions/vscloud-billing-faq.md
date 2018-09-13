@@ -9,12 +9,12 @@ description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303321"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289419"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 
@@ -26,9 +26,9 @@ Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](
 A: Nein. Alle Visual Studio-Cloudabonnements müssen mithilfe eines Azure-Abonnements gekauft werden. (Betrachten Sie dieses als Ihr Azure-Rechnungskonto.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>F: Welche Azure-Abonnements können verwendet werden, um Visual Studio-Cloudabonnements zu kaufen?
-A: Fast alle Azure-Abonnements können verwendet werden. Es werden Azure-Abonnements unterstützt, die mit [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) verknüpft sind, Azure-Abonnements, die von Cloud Solution Providers (CSPs) eingerichtet wurden, Azure-Abonnements, die über Microsoft Open License-Händler eingerichtet wurden sowie Azure-Abonnements mit nutzungsbasierter Bezahlung. Sie können den Kauf sogar mit Azure-Abonnements durchführen, die Visual Studio-Abonnenten als Vorteil für Abonnenten einrichten. Sie können jedoch nicht Ihre monatliche Gutschrift verwenden, um weitere Visual Studio-Abonnements zu bezahlen.
+A: Die meisten Azure-Abonnements können verwendet werden. Es werden Azure-Abonnements unterstützt, die mit Ihrem [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) verbunden sind, Azure-Abonnements, die von Cloud Solution Providers (CSPs) eingerichtet wurden, Azure-Abonnements, die über Microsoft Open License-Reseller eingerichtet wurden, und Azure-Abonnements mit nutzungsbasierter Zahlung.
 
-Sie können lediglich die [kostenlose Azure-Testversion](https://azure.microsoft.com/pricing/free-trial/) nicht verwenden.
+Einige Arten von Azure-Abonnements, einschließlich der [kostenlosen Testversion von Azure](https://azure.microsoft.com/pricing/free-trial/) und Abonnements, die als Abonnentenvorteile in Visual Studio-Abonnements enthalten sind, können nicht verwendet werden.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>F: Muss ich andere Azure-Dienste kaufen?
 A: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen möchten, können Sie dies tun.

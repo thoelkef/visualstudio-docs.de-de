@@ -1,18 +1,18 @@
 ---
 title: Einführung in Azure Functions
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 5d787efbd09ad7f2d4a1f5f72b8f1493d8c6c587
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f014eb4782fabce6517009e448d5878dd66700c7
+ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870411"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "43223984"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -26,41 +26,34 @@ Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azur
 
 ## <a name="creating-your-first-azure-functions-project"></a>Erstellen Ihres ersten Azure Functions-Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei > Neue Projektmappe...**. 
+1. Klicken Sie in Visual Studio für Mac auf **Datei > Neue Projektmappe...**. 
 2. Klicken Sie im Dialogfeld „Neues Projekt“ unter **Cloud > Allgemein** auf eine Azure Functions-Vorlage, und klicken Sie auf **Weiter**:
 
     ![Dialogfeld „Neues Projekt“, in dem die Option „Azure Functions“ angezeigt wird](media/azure-functions-image1.png)
 
-3. Geben Sie einen **Projektnamen** ein, und klicken Sie auf **Erstellen**.
+3. Wählen Sie die anfängliche Azure Functions-Vorlage, die Sie verwenden möchten, geben den Funktionsnamen ein, und klicken Sie auf **Weiter**. 
 
-Visual Studio für Mac erstellt ein .NET Standard-Projekt mit einer HttpTrigger-Standardfunktion. Außerdem sind NuGet-Verweise auf eine Vielzahl von **Azure WebJobs**-Paketen sowie das Paket **Newtonsoft.Json** im Lieferumfang enthalten.
+    ![Dialogfeld „Neues Projekt“ mit Azure Functions-Vorlagen](media/azure-functions-image2.png)
+
+    Abhängig vom Typ der von Ihnen gewählten Funktion werden Sie auf der nächsten Seite aufgefordert, Details wie beispielsweise Zugriffsrechte einzugeben, wie im folgenden Bild dargestellt:
+
+    ![Dialogfeld „Neues Projekt“ mit zusätzlicher Option](media/azure-functions-image3.png)
+
+    Weitere Informationen zu den verschiedenen Typen von Azure Functions-Vorlagen und den Bindungseigenschaften, die zur Konfiguration der einzelnen Vorlagen erforderlich sind, finden Sie im Abschnitt [Verfügbare Funktionsvorlagen](#available-function-templates). In diesem Beispiel wird ein HTTP-Trigger mit Zugriffsrechten verwendet, die auf anonym gesetzt sind.
+
+4. Nachdem Sie die Parameter festgelegt haben, wählen Sie den Speicherort für das Projekt, und klicken Sie auf **Erstellen**.
+
+Visual Studio für Mac erstellt ein .NET Standard-Projekt mit einer Standardfunktion. Außerdem sind NuGet-Verweise auf eine Vielzahl von **Azure WebJobs**-Paketen sowie das Paket **Newtonsoft.Json** im Lieferumfang enthalten.
 
 ![Visual Studio für Mac-Editor, in dem eine ganz neue Azure-Funktion aus einer Vorlage angezeigt wird](media/azure-functions-newproj.png)
 
 Das neue Projekt enthält die folgenden Dateien:
 
-* **HttpTrigger.cs**: Diese Klasse enthält Codebausteine für eine mit einer über HTTP ausgelösten Funktion. Außerdem enthält sie ein **FunctionName**-Attribute mit dem Funktionsnamen und dem Triggerattribut **HttpTrigger**, das angibt, dass die Funktion von einer HTTP-Anforderung ausgelöst wird. Weitere Informationen zur Funktionsmethode finden Sie in dem Artikel [C#-Entwicklerreferenz zu Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library).
+* **Ihr-Funktionsname.cs**: Diese Klasse enthält Codebeispiele für die Funktion, die Sie ausgewählt haben. Außerdem enthält sie ein **FunctionName**-Attribute mit dem Funktionsnamen und dem Triggerattribut, das den Auslöser der Funktion (z.B. eine HTTP-Anforderung) angibt. Weitere Informationen zur Funktionsmethode finden Sie in dem Artikel [C#-Entwicklerreferenz zu Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library).
 * **host.json**: Diese Datei beschreibt die globalen Konfigurationsoptionen für den Functions-Host. Eine Beispieldatei und Informationen zu den für diese Datei verfügbaren Einstellungen finden Sie unter [host.json-Referenz für Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
-* **local.settings.json**: Diese Datei enthält alle Einstellungen zur lokalen Ausführung von Funktionen. Diese Einstellungen werden von den Azure Functions Core-Tools verwendet. Weitere Informationen finden Sie in der [Datei für lokale Einstellungen](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#local-settings-file) im Artikel „Azure Functions Core-Tools“.
+* **local.settings.json**: Diese Datei enthält alle Einstellungen zur lokalen Ausführung von Funktionen. Diese Einstellungen werden von den Azure Functions Core-Tools verwendet. Weitere Informationen finden Sie in der [Datei für lokale Einstellungen](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) im Artikel „Azure Functions Core-Tools“.
 
 Wenn Sie jetzt ein neues Azure Functions-Projekt in Visual Studio für Mac erstellt haben, können Sie nun über Ihren lokalen Computer die von HTTP ausgelöste Standardfunktion testen.
-
-<!--
-## Create an Azure storage account
-
-[Describe why this step is necessary and what it does]
-
-1. Log on to your account at [https://portal.azure.com](https://portal.azure.com).
-2. Under the **Favorites** section, located on the left of the screen, select **Storage Accounts**:
-    ![]()
-3. Select **Add** to create a new storage account:
-    ![]()
-4. Enter a globally unique name for the **Name** and reuse it for the **Resource group**. You can keep all the other items as their default.
-    ![]()
-5. Click **Create**. It might take a few minutes to create the storage account. You'll get a notification once it has been successfully created.
-6. Select the **Go to resource** button from the notification:
-    ![]()
--->
 
 ## <a name="testing-the-function-locally"></a>Lokales Testen der Funktion
 
@@ -80,38 +73,94 @@ Mit der Azure Functions-Unterstützung in Visual Studio für Mac können Sie Ihr
 
     ![HTTP-Anforderung im Browser](media/azure-functions-httpreq.png)
 
-## <a name="creating-a-new-function"></a>Erstellen einer neuen Funktion
+## <a name="adding-another-function-to-your-project"></a>Hinzufügen einer weiteren Funktion zu Ihrem Projekt
 
-Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten verwendeten Trigger und Vorlagen neue Funktionen erstellen. Wenn ein neues Azure Functions-Projekt erstellt wird, wird automatisch eine HttpTrigger-Funktion hinzugefügt. Gehen Sie wie folgt vor, wenn Sie einen anderen Funktionstyp erstellen möchten:
+Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten verwendeten Trigger und Vorlagen neue Funktionen erstellen. Gehen Sie wie folgt vor, wenn Sie einen anderen Funktionstyp erstellen möchten:
 
-1. Entfernen Sie die **HttpTrigger.cs**-Datei, indem Sie mit der rechten Maustaste auf diese und dann mit der linken auf **Entfernen** klicken. Klicken Sie dann in der folgenden Warnung auf **Löschen**, um die Datei aus dem Projekt zu entfernen:
-
-    ![Dialogfeld zum Entfernen der Datei aus dem Projekt](media/azure-functions-remove.png)
-
-2. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...**:
+1. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...**:
 
     ![Kontextaktion zum Hinzufügen einer neuen Funktion](media/azure-functions-addnew.png)
 
-3. Wählen Sie über das Dialogfeld **Neue Azure-Funktion** die Funktion aus, die Sie benötigen:
+2. Wählen Sie über das Dialogfeld **Neue Azure-Funktion** die Funktion aus, die Sie benötigen:
 
-    ![Dialogfeld „Neue Azure-Funktion“](media/azure-functions-newfunction.png)
+    ![Dialogfeld „Neue Azure-Funktion“](media/azure-functions-image4.png)
 
-    Im folgenden Abschnitt finden Sie eine Liste der Azure Function-Vorlagen.
+    Im Abschnitt [Verfügbare Funktionsvorlagen](#available-function-templates) finden Sie eine Liste der Azure Function-Vorlagen.
+
+Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-App-Projekt hinzufügen. Jede Funktion im Projekt kann über einen anderen Trigger verfügen, aber jede Funktion darf nur einen Trigger haben. Weitere Informationen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+
+## <a name="publish-to-azure"></a>Veröffentlichen in Azure
+
+1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie **Veröffentlichen > In Azure veröffentlichen...** aus:  ![Menüoption „In Azure veröffentlichen...“](media/azure-functions-image5.png)
+2. Wenn Sie Ihr Azure-Konto bereits mit Visual Studio für Mac verbunden haben, wird eine Liste der verfügbaren App-Dienste angezeigt. Wenn Sie sich nicht angemeldet haben, werden Sie dazu aufgefordert.
+3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
+4. Geben Sie im Dialogfeld **Neuen App-Dienst erstellen** Ihre Einstellungen ein: ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
+
+    |Einstellung  |Beschreibung   |
+    |---------|---------|
+    |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
+    |**Abonnement**|Das zu verwendende Azure-Abonnement|
+    |**[Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)**|Der Name der Ressourcengruppe, in der Ihre Funktions-App erstellt werden soll. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
+    |**[Serviceplan](https://docs.microsoft.com/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
+
+    > [!CAUTION]
+    > In der Version 7.6 von Visual Studio für Mac gibt es einen Fehler, der dazu führt, dass bei der Veröffentlichung ein Bereitstellungsfehler auftritt. Dies ist der Fall, wenn Sie einen benutzerdefinierten Serviceplan erstellen möchten, bei dem **Preise** auf **Verbrauch** gesetzt ist. Dies wird in der nächsten Dienstversion behoben.
+
+5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
+
+    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image8.png)
+
+6. Klicken Sie auf **Erstellen**, um mit diesen Einstellungen eine Funktions-App und zugehörige Ressourcen in Azure zu erstellen und Ihren Funktionsprojektcode bereitzustellen.
+
+7. Während der Veröffentlichung werden Sie möglicherweise in einem Dialogfeld aufgefordert, damit Sie Ihre „Functions-Version in Azure aktualisieren“. Klicken Sie auf **Ja**:
+ 
+    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image12.png)
+
+> [!CAUTION]
+> Es gibt einen Fehler in der Version 7.6 von Visual Studio für Mac, bei dem `FUNCTIONS_EXTENSION_VERSION` nicht korrekt auf „beta“ gesetzt ist, was bedeutet, dass Ihre Funktion möglicherweise nicht ausgeführt wird. Um dies zu beheben, wechseln Sie zu den [Functions-App-Einstellungen](#function-app-settings) und ändern den Wert für `FUNCTIONS_EXTENSION_VERSION` von „-1“ in „beta“.
+
+## <a name="function-app-settings"></a>Funktions-App-Einstellungen
+
+Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
+
+Um auf Ihre App-Einstellungen zuzugreifen, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
+
+![Azure Functions-Menü](media/azure-functions-image9.png)
+
+Wählen Sie auf der Registerkarte **Übersicht** unter **Konfigurierte Features** die Option **Anwendungseinstellungen** aus:
+
+![Azure Functions-Registerkarte „Übersicht“](media/azure-functions-image10.png)
+
+Von hier aus können Sie Anwendungseinstellungen für die Funktions-App festlegen, d.h. neue Anwendungseinstellungen hinzufügen oder bestehende ändern:
+
+![Bereich für Anwendungseinstellungen im Azure-Portal](media/azure-functions-image11.png)
+
+Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCTIONS_EXTENSION_VERSION`. Beim Veröffentlichen aus Visual Studio für Mac sollte dieser Wert auf **beta** gesetzt sein.
 
 ## <a name="available-function-templates"></a>Verfügbare Funktionsvorlagen
 
+- **GitHub Trigger**: Antworten Sie auf Ereignisse, die in Ihren GitHub-Repositorys auftreten. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen GitHub-Webhook ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function).
+    - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
+    - GitHub WebHook: Diese Funktion wird ausgeführt, wenn sie einen GitHub-Webhook empfängt.
+
 - **HTTP**: Lösen Sie die Ausführung Ihres Codes über eine HTTP-Anforderung aus. Es gibt explizite Vorlagen für die folgenden HTTP-Trigger:
+    - HTTP-Trigger
     - Http GET CRUD
     - Http POST CRUD
     - HTTP-Trigger mit Parametern
-    - HTTP-Trigger
+
+
 - **Timer**: Führen Sie eine Bereinigung oder andere Stapelaufgaben für einen vordefinierten Zeitplan aus. Diese Vorlage beinhaltet zwei Felder: ein Name und ein Zeitplan, bei dem es sich um einen CRON-Ausdruck handelt, der aus sechs Feldern besteht. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die von einem Timer ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function).
-- **GitHub Trigger**: Antworten Sie auf Ereignisse, die in Ihren GitHub-Repositorys auftreten. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen GitHub-Webhook ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function).
-    - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
-    - GitHub WebHook: eine C#-Funktion, die ausgeführt wird, wenn sie einen GitHub-Webhook empfängt
-- **Blob Trigger**: eine Funktion, die Azure Storage-Blobs verarbeitet, wenn diese zu einem Container hinzugefügt werden. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Blob Storage ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+
+
 - **Queue Trigger**: eine Funktion, die auf Meldungen antwortet, wenn diese in die Azure Storage-Warteschlange aufgenommen werden. Neben dem Funktionsnamen beinhaltet diese Vorlage einen **Pfad** (den Namen der Warteschlange, aus der die Meldung gelesen wird) und die Speicherkonto-**Verbindung** (der Name der App-Einstellung mit der Verbindungszeichenfolge des Speicherkontos). Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Queue Storage ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
+
+- **Blob Trigger**: eine Funktion, die Azure Storage-Blobs verarbeitet, wenn diese zu einem Container hinzugefügt werden. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Blob Storage ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+
 - **Generic WebHook**: eine einfache Funktion, die immer dann ausgeführt wird, wenn eine Anforderung von einem Dienst empfangen wird, der Webhooks unterstützt. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen generischen Webhook ausgelöst wird](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+
+- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet den Status, Prüfpunkte und führt einen Neustart durch. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Übersicht zu Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).
+
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
+
 - **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsstufe kontrolliert, ob die Funktion einen API-Schlüssel verlangt und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel und „Admin“ verwendet den Masterschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/).
-- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet den Status, Prüfpunkte und führt einen Neustart durch. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Übersicht über Durable Functions (Vorschauversion)](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).

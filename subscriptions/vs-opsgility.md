@@ -9,12 +9,12 @@ description: Informationen zum Trainingsvorteil von Opsgility, der in Ihrem ausg
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380309"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289537"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Der Opsgility-Vorteil in Visual Studio-Abonnements
 
@@ -26,17 +26,17 @@ Ausgewählte Visual Studio-Abonnements bieten ein Jahr lang Zugriff auf On-Deman
 2.  Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Opsgility“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
 
 3.  Klicken Sie im unteren Bereich der Kachel „Vorteile“ auf den Link **Code abrufen**, um den Opsgility-Vorteil zu nutzen.   Sie erhalten eine Benachrichtigung, dass der Gutscheincode erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren), um fortzufahren.
-
-    ![Kachel „Opsgility-Vorteil“](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „Opsgility“](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Sie werden auf die Angebotsseite für das [Onlinetraining für Visual Studio Enterprise](https://www.opsgility.com/vse) weitergeleitet.  (Hier können Sie einem Chat mit einem Support-Mitarbeiter beitreten.  Wenn Sie nicht chatten möchten, können Sie das Fenster minimieren.)  Geben Sie die angeforderten Kontaktinformationen ein, und klicken Sie anschließend auf **Registrieren**.
-
-    ![Angebotsseite des Opsgility-Vorteils](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Angebotsseite des Opsgility-Vorteils](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  Das ist auch schon alles.  Jetzt können Sie loslegen.  Links sehen Sie eine Liste empfohlener Artikel, die Ihnen den Einstieg erleichtern.  Viel Erfolg!
-
-    ![Startseite des Opsgility-Vorteils](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Startseite des Opsgility-Vorteils](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
