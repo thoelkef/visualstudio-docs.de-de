@@ -9,12 +9,12 @@ description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ih
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382450"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289310"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 
@@ -29,12 +29,12 @@ Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erste
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
 2. Suchen Sie im Abschnitt „Tools“ die Kachel „Windows Developer Account“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Code abrufen**.  Kopieren Sie den Code in die Zwischenablage, und klicken Sie auf **Activate** (Aktivieren).
-
-    ![Windows-Entwickler-Kachel](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „Windows-Entwickler“](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. Besuchen Sie die Website [https://developer.microsoft.com](https://developer.microsoft.com), um die Registrierung durchzuführen.  Klicken Sie auf **Sign up** (Registrieren), um den Vorgang fortzusetzen.
-
-    ![Windows-Entwickler: Registrierung](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrierung für den Vorteil „Windows-Entwickler“](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. Melden Sie sich bei Ihrem Abonnement an.  Wenn Sie mehrere Konten haben, wählen Sie das aus, das Ihrem Enterprise-Abonnement zugeordnet ist.
 4. Wählen Sie auf der nächsten Seite das Land bzw. die Region aus, in der Sie leben oder in der sich Ihr Unternehmen befindet, und klicken Sie dann auf **Next** (Weiter).
@@ -43,8 +43,8 @@ Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erste
 7. Geben Sie Ihre Kontaktinformationen und die bevorzugte Sprache für die E-Mail-Kommunikation an, und klicken Sie auf **Next** (Weiter).
 8. Gegebenenfalls werden Sie aufgefordert, Ihr Kennwort zu bestätigen.  Geben Sie es ein, und klicken Sie auf **Sign in** (Anmelden).
 9. Fügen Sie auf der Seite „Registration – Payment“ (Registrierung – Zahlung) den Code, den Sie zuvor kopiert haben, in das Feld „Promo Code“ (Promotionscode) ein.  Die Seite wird aktualisiert und zeigt nun an, dass *keine Zahlung erforderlich ist*.  Klicken Sie auf **Weiter**.
-
-    ![Windows-Entwickler: Registrierung](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrierung für den Vorteil „Windows-Entwickler“](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. Überprüfen Sie Ihre Kontoinformationen, überprüfen Sie die Vereinbarung für App-Entwickler, und aktivieren Sie das Kontrollkästchen, um die Geschäftsbedingungen anzunehmen.  Klicken Sie anschließend auf **Finish** (Fertig stellen).
 11. Klicken Sie auf **Go to dashboard** (Zum Dashboard wechseln), um mit Ihrem Windows-Entwicklerkonto loszulegen.

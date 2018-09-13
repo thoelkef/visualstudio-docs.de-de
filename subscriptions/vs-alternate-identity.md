@@ -9,12 +9,12 @@ description: Hinzufügen einer alternativen Identität zu Ihrem Visual Studio-Ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 30aa1e918e289a6cfe8f11329d5df7682cd90239
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326305"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289555"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identitäten für Visual Studio-Abonnenten
 
@@ -43,20 +43,20 @@ Sie können für alle Abonnements ein Geschäfts-, Schul- oder Unikonto hinzufü
 
 2. Wechseln Sie zu **Abonnements**.
 
-
-   ![Fügen Sie ein alternatives Konto hinzu, und wechseln Sie zu „Abonnements“ in Visual Studio.](_img/vs-alternate-identity/my-vs-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Hinzufügen eines alternativen Kontos – Zu Abonnements in VS wechseln](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Klicken Sie auf **Add alternate account** (Alternatives Konto hinzufügen).
-
-   ![Auswahl von „Choose add alternate account“ (Alternatives Konto hinzufügen) ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Auswahl von „Choose add alternate account“ (Alternatives Konto hinzufügen)](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Fügen Sie Ihr Geschäfts-, Schul- oder Unikonto hinzu.
-
-   ![Hinzufügen eines Geschäfts-, Schul- oder Unikontos](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Hinzufügen eines Geschäfts-, Schul- oder Unikontos](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Visual Studio Team Services (https://{Ihr_Konto}.visualstudio.com) an.
-
-   ![Verwenden Ihres Geschäfts-, Schul- oder Unikontos](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Verwenden Ihres Geschäfts-, Schul- oder Unikontos](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 Ihr alternatives Konto wird dem Visual Studio-Abonnement hinzugefügt, sodass beide Identitäten die Abonnementvorteile nutzen können, für die eine Anmeldung mit dem alternativen Konto erforderlich ist (IDE, VSTS und Azure).
 
