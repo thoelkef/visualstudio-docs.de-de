@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225083"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384291"
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 
@@ -69,7 +69,7 @@ Führen Sie dann die Bootstrapperdatei aus, um den Visual Studio-Installer zu in
 
   Wenn eine Benachrichtigung der Benutzerkontensteuerung angezeigt wird, klicken Sie auf **Ja**.
 
-2. Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://visualstudio.microsoft.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkID=824704) zu akzeptieren. Klicken Sie auf **Weiter**.
+2. Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://visualstudio.microsoft.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) zu akzeptieren. Klicken Sie auf **Weiter**.
 
    ![Lizenzbedingungen und Datenschutzbestimmungen](media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")
 
@@ -138,7 +138,7 @@ Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade i
    Um beispielsweise [eine C++-App zu erstellen](../ide/getting-started-with-cpp-in-visual-studio.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten. <br><br>
    Um [eine C#-App zu erstellen](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Siehe auch
 
