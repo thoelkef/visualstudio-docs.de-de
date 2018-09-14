@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1457390b523af45b5e3b23a3420cba830f45cee5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8769d7dd30152523d60f2f0fa117e0179d6c6b0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915081"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545449"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Irreführende Feldnamen überprüfen
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915081"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Der Name eines Instanzenfelds beginnt mit "S_" oder der Name einer `static` (`Shared` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Feld beginnt mit "M_".
+ Der Name eines Instanzenfelds beginnt mit "S_" oder den Namen einer `static` (`Shared` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Feld beginnt mit "M_".
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Feldnamen, die mit "S_" beginnen, sind statische Daten von vielen Benutzern zugeordnet. Auf ähnliche Weise werden die Feldnamen, die mit "M_" beginnen Instanzdaten (Element) zugeordnet. Für Code einfacher zu verwalten sollten die Namen in der Regel verwendete Konventionen entsprechen.
+ Feldnamen, die mit "S_" beginnen, sind statische Daten von vielen Benutzern zugeordnet. Auf ähnliche Weise werden die Feldnamen, die mit "M_" beginnen (Member) Instanzdaten zugeordnet. Für Code einfacher zu verwalten sollten Namen in der Regel verwendeten Konventionen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, benennen Sie das Feld mit dem entsprechenden Präfix. Alternativ passen Sie das Feld mit dem aktuellen Suffix durch Hinzufügen oder Entfernen der `static` Modifizierer.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
