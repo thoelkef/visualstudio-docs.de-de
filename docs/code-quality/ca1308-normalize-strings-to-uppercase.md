@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cda66d2a43ee3fde8e3e7b2d22a64a09655da3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897142"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545699"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Zeichenfolgen in Großbuchstaben normalisieren
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31897142"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Vorgang wird eine Zeichenfolge in Kleinbuchstaben normalisiert.
+ Ein Vorgang normalisiert eine Zeichenfolge in Kleinbuchstaben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Zeichenfolgen sollten in Großschreibung normalisiert werden. Eine kleine Gruppe von Zeichen, wenn sie in Kleinbuchstaben konvertiert wurden, kann keinen Roundtrip vorgenommen werden. Um einen Roundtrip abrufen Möglichkeit zum Konvertieren der Zeichen aus einem Gebietsschema auf einem anderen Gebietsschema, die Zeichendaten anders darstellt, und dann zu genau die ursprünglichen Zeichen aus der konvertierten Zeichen.
+ Zeichenfolgen sollten in Großschreibung normalisiert werden. Eine kleine Gruppe von Zeichen, wenn sie in Kleinbuchstaben konvertiert wurden, kann keinen Roundtrip vorgenommen werden. Ein Roundtrip abrufen Mittel zum Konvertieren von Zeichen aus einem Gebietsschema an einem anderen Gebietsschema, die Zeichendaten anders darstellt und dann auf genau die ursprünglichen Zeichen aus der konvertierten Zeichen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Ändern Sie die Vorgänge, die Zeichenfolgen in Kleinbuchstaben konvertiert, sodass die Zeichenfolgen konvertiert werden stattdessen in Großbuchstaben. Ändern Sie beispielsweise `String.ToLower(CultureInfo.InvariantCulture)` zu `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Ändern Sie die Vorgänge, die Zeichenfolgen in Kleinbuchstaben zu konvertieren, sodass die Zeichenfolgen konvertiert werden stattdessen in Großbuchstaben. Ändern Sie beispielsweise `String.ToLower(CultureInfo.InvariantCulture)` zu `String.ToUpper(CultureInfo.InvariantCulture)`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig auf eine Warnung zu unterdrücken, wenn Sie nicht sicherheitsentscheidung abhängig vom Ergebnis (z. B. vornehmen, wenn Sie in der Benutzeroberfläche angezeigt werden).
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher ist, eine Warnmeldung zu unterdrücken, wenn Sie nicht vornehmen, sind sicherheitsrelevante Entscheidungen basierend auf dem Ergebnis (z. B., wenn Sie es in der Benutzeroberfläche anzeigen).
 
 ## <a name="see-also"></a>Siehe auch
  [Globalisierungswarnungen](../code-quality/globalization-warnings.md)
