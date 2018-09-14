@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cda0790128bb279d30a15f75080c375ec68aa1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcf5218f41a11d50b6cc3f36767190cce5deab1b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898324"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545527"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung auf
+
 |||
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
@@ -32,20 +33,20 @@ ms.locfileid: "31898324"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ implementiert <xref:System.Collections.ICollection?displayProperty=fullName> jedoch nicht für eine stark typisierte Methode bietet <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Die stark typisierte Version des <xref:System.Collections.ICollection.CopyTo%2A> muss zwei Parameter annehmen und darf keine <xref:System.Array?displayProperty=fullName> oder ein Array von <xref:System.Object?displayProperty=fullName> als ersten Parameter.
+ Ein öffentlicher oder geschützter Typ implementiert <xref:System.Collections.ICollection?displayProperty=fullName> jedoch keine stark typisierte Methode für <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Die Version mit starker Typisierung von <xref:System.Collections.ICollection.CopyTo%2A> muss zwei Parameter annehmen und keine <xref:System.Array?displayProperty=fullName> oder ein Array von <xref:System.Object?displayProperty=fullName> als ersten Parameter.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Nach dieser Regel müssen <xref:System.Collections.ICollection> Implementierungen angeben, stark typisierte Member, damit Benutzer nicht erforderlich, wandeln Sie die Argumente für die <xref:System.Object> eingeben, wenn sie die Funktionen, die bereitgestellt wird verwenden, wird von der Schnittstelle. Diese Regel setzt voraus, dass der Typ, der implementiert <xref:System.Collections.ICollection> verfügt, damit die Verwaltung einer Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
+ Diese Regel muss <xref:System.Collections.ICollection> Implementierungen angeben, stark typisierte Member, damit Benutzer nicht umwandeln müssen, Argumente, die die <xref:System.Object> eingeben, wenn sie die Funktionen verwenden, die bereitgestellt wird von der Schnittstelle. Mit dieser Regel wird davon ausgegangen, dass der Typ, der implementiert <xref:System.Collections.ICollection> wird zum Verwalten einer Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
 
- <xref:System.Collections.ICollection> implementiert die <xref:System.Collections.IEnumerable?displayProperty=fullName>-Schnittstelle. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, die durch Boxing verursacht wird. Dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Referenztyp darstellt.
+ <xref:System.Collections.ICollection> implementiert die <xref:System.Collections.IEnumerable?displayProperty=fullName>-Schnittstelle. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, die durch Boxing verursacht wird. Dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Verweistyp handelt.
 
- Um eine stark typisierte Version eines Schnittstellenmembers implementieren, implementieren Sie die Schnittstellenmember explizit mithilfe von Namen in der Form `InterfaceName.InterfaceMemberName`, wie z. B. <xref:System.Collections.ICollection.CopyTo%2A>. Die explizite Mitglieder verwenden die Datentypen, die deklariert werden durch die Schnittstelle. Implementieren Sie die stark typisierte Member mithilfe der Benutzeroberfläche der Elementname, z. B. <xref:System.Collections.ICollection.CopyTo%2A>. Die stark typisierte Member als öffentlich deklariert und deklarieren die Parameter und Rückgabewerte, die den starken Typ aufweisen, der von der Auflistung verwaltet wird. Die starke Typen ersetzen schwächere wie <xref:System.Object> und <xref:System.Array> , die von der Schnittstelle deklariert werden.
+ Um eine stark typisierte Version eines Schnittstellenmembers implementieren, implementieren Sie den Schnittstellenmember explizit mithilfe von Namen in der Form `InterfaceName.InterfaceMemberName`, z. B. <xref:System.Collections.ICollection.CopyTo%2A>. Die explizite Schnittstellenmember werden die Datentypen, die deklariert werden durch die Schnittstelle verwenden. Die stark typisierte Member implementieren, indem Sie den Namen des Schnittstellenmembers, wie <xref:System.Collections.ICollection.CopyTo%2A>. Die stark typisierte Member als öffentlich deklariert und deklarieren Sie die Parameter und Rückgabewerte, um den starken Typ aufweisen, der von der Sammlung verwaltet wird. Die starke Typen ersetzen schwächere Typen wie z. B. <xref:System.Object> und <xref:System.Array> , die von der Schnittstelle deklariert werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie den Schnittstellenmember explizit (deklarieren Sie es als <xref:System.Collections.ICollection.CopyTo%2A>). Hinzufügen den öffentlichen stark typisierten Member, die als deklariert `CopyTo`, und lassen Sie diesen ein stark typisiertes Array als ersten Parameter annehmen.
+ Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie den Schnittstellenmember explizit (deklarieren Sie sie als <xref:System.Collections.ICollection.CopyTo%2A>). Fügen Sie den öffentlichen stark typisierten Member, die als deklariert `CopyTo`, und lassen Sie sie ein stark typisiertes Array als ersten Parameter annehmen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie eine neue objektbasierte Auflistung, z. B. einer binären Struktur implementieren, in denen Typen, die die neue Sammlung erweitern den starken Typ bestimmt. Diese Typen sollten diese Regel erfüllen und stark typisierte Member verfügbar machen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel, wenn Sie eine neue objektbasierte Sammlung, z. B. eine binäre Struktur implementieren, in dem der Typen, die die neue Auflistung erweitern den starken Typ bestimmen. Diese Typen sollten mit dieser Regel entsprechen und stark typisierte Member verfügbar machen.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel veranschaulicht die richtige Methode zum Implementieren <xref:System.Collections.ICollection>.
@@ -58,4 +59,8 @@ ms.locfileid: "31898324"
  [CA1039: Listen weisen eine starke Typisierung auf](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Array?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
+
+- <xref:System.Array?displayProperty=fullName>
+- <xref:System.Collections.IEnumerable?displayProperty=fullName>
+- <xref:System.Collections.ICollection?displayProperty=fullName>
+- <xref:System.Object?displayProperty=fullName>

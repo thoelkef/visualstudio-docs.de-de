@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915628"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548802"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -39,105 +40,105 @@ ms.locfileid: "31915628"
  Der Name eines extern sichtbaren Members enthält einen sprachspezifischen Datentypnamen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Namen von Parametern und Membern dienen besser kommunizieren ihre Bedeutung als zur Beschreibung des Typs der erwartet wird, vom Entwicklungstools zur Verfügung gestellt werden. Für Namen von Elementen, wenn ein Datentypnamen verwendet werden muss, eine sprachunabhängige Name statt einer sprachspezifischen verwenden. Verwenden Sie anstelle der C#-Typ "Int" z. B. den sprachunabhängige Datentypnamen, Int32.
+ Namen von Parametern und Membern werden besser zum kommunizieren ihre Bedeutung als zur Beschreibung des Typs, die von den Entwicklungstools bereitgestellt werden soll. Für Namen von Elementen, wenn Sie ein Datentypnamen verwendet werden muss, eine sprachunabhängige Name anstelle einer sprachspezifischen verwenden. Verwenden Sie z. B. statt der C#-Typ 'Int' den sprachunabhängige Datentypnamen, Int32.
 
- Jedes diskrete Token im Namen der Parameter- oder Membernamen wird mit den folgenden sprachspezifischen Datentypnamen, unter Beachtung verglichen:
+ Jedes diskrete Token im Namen des Parameters oder Members wird mit die folgenden sprachspezifischen Datentypnamen, Groß-und Kleinschreibung verglichen:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   "Uint"
+- UInt
 
--   Ganze Zahl
+- Ganze Zahl
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Ohne Vorzeichen
+- Ohne Vorzeichen
 
--   Signiert
+- Signiert
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- Darüber hinaus werden die Namen der Parameter auch mit den folgenden sprachunabhängige Datentypnamen, unter Beachtung verglichen:
+Darüber hinaus werden die Namen der Parameter auch mit den folgenden sprachunabhängige Typnamen, unter Beachtung der Groß-verglichen:
 
--   Object
+- Object
 
--   obj
+- obj
 
--   Boolesch
+- Boolesch
 
--   Char
+- Char
 
--   Zeichenfolge
+- Zeichenfolge
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Zeiger
+- Zeiger
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- Decimal
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- **Wenn für einen Parameter ausgelöst:**
+ **Bei Auslösung gegen einen Parameter:**
 
- Ersetzen Sie den Datentypbezeichner den Namen der Parameter durch ein Begriff, der seine Bedeutung besser beschreibt oder ein generischer Begriff, z. B. "Value".
+ Ersetzen Sie die Daten-Typ-ID, den Namen der Parameter mit einem Begriff, der seine Bedeutung besser beschreibt oder einen generischen Begriff, z. B. "Value".
 
- **Wenn für ein Element, das ausgelöst wird:**
+ **Wenn für ein Element ausgelöst wird:**
 
- Ersetzen Sie den sprachspezifischen Datentypbezeichner, der Namen der Member mit einem Begriff, der besser die Bedeutung, eine sprachunabhängige Entsprechung oder ein generischer Begriff, z. B. "Value beschreibt" ein.
+ Ersetzen Sie den sprachspezifischen Datentypbezeichner den Namen der Member mit einem Begriff, der der Bedeutung, eine sprachunabhängige Entsprechung oder einen generischen Begriff, z. B. "Value" besser beschreibt.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Gelegentliche Nutzung eines basierende Namen für Parameter und der Member möglicherweise geeignet sein. Allerdings für neue Entwicklungen keine bekannten Szenarien auftreten, in dem Sie eine Warnung dieser Regel unterdrücken soll. Für Bibliotheken, die zuvor versandt wurden, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Gelegentliche Nutzung eines basierende Parameter- und Memberlisten-Namen kann geeignet sein. Für neue Entwicklungen keine bekannte jedoch Szenarien, in dem Sie eine Warnung dieser Regel unterdrücken soll. Für Bibliotheken, die zuvor versandt wurden, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

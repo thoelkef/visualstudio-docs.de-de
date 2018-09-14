@@ -14,16 +14,21 @@ ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6379598194e3836ea3e77efa68741c2c4b596b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71c4428596281abf0ad606624bd67c40a490ee49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900900"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549377"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein
+
 |||
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31900900"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ deklariert eine Eigenschaft, deren Name "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" enthält.
+ Ein Typ deklariert eine String-Eigenschaft, deren Name "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" enthält.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel Token basierend auf der Pascal teilt den Eigenschaftennamen und überprüft, ob jedes Token "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" entspricht. Wenn eine Übereinstimmung vorhanden ist, wird die Regel davon ausgegangen, dass die Eigenschaft einen uniform Resource Identifier (URI) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri?displayProperty=fullName> Klasse stellt diese Dienste auf sichere Weise bereit.
+ Diese Regel teilt den Eigenschaftennamen in Token basierend auf der Pascal und überprüft, ob jedes Token "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" entspricht. Wenn eine Übereinstimmung vorliegt, wird die Regel davon ausgegangen, dass die Eigenschaft einen uniform Resource Identifier (URI) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri?displayProperty=fullName> Klasse stellt diese Dienste auf sichere Weise.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Eigenschaft in einem <xref:System.Uri> Typ.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Eigenschaft, die eine <xref:System.Uri> Typ.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn die Eigenschaft einen URI nicht darstellt.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn die Eigenschaft keinen URI darstellt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `ErrorProne`, die mit dieser Regel und einen Typ, verletzt `SaferWay`, die die Regel erfüllt.
+ Das folgende Beispiel zeigt einen Typ, `ErrorProne`, die gegen diese Regel und einen Typ, `SaferWay`, die die Regel erfüllt.
 
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]

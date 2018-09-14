@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca36093afa0915352c6c6d90995bde99fb655c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922853"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547518"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden
 
@@ -27,35 +27,39 @@ ms.locfileid: "31922853"
 
 ## <a name="cause"></a>Ursache
 
-[(State Exceptions, CSE) beschädigt](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Arbeitsspeicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
+[(State Exceptions, CSE) beschädigt](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Speicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. Wird standardmäßig die [Common Language Runtime (CLR)](/dotnet/standard/clr) wird kein Catch-Handler für CSEs aufgerufen.
 
- Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Ausnahmetypen abzufangen, da selbst das Protokollieren von Code Angreifer in die Lage versetzen kann, Schwachstellen durch Speicherbeschädigungen auszunutzen.
+CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. In der Standardeinstellung die [Common Language Runtime (CLR)](/dotnet/standard/clr) wird kein Catch-Handler für CSEs aufgerufen.
 
- Diese Warnung wird ausgelöst, wenn CSEs mit einem allgemeinen Handler abgefangen werden, der alle Ausnahmen abfängt, wie z. B. "catch(Ausnahme)" oder "catch(keine Ausnahmespezifikation)".
+Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Ausnahmetypen abzufangen, da selbst das Protokollieren von Code Angreifer in die Lage versetzen kann, Schwachstellen durch Speicherbeschädigungen auszunutzen.
+
+Diese Warnung wird ausgelöst, wenn CSEs mit einem allgemeinen Handler abgefangen werden, der alle Ausnahmen abfängt, wie z. B. "catch(Ausnahme)" oder "catch(keine Ausnahmespezifikation)".
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Zur Behebung des Problems sollten Sie eine der folgenden Aktionen ausführen:
 
- 1. Entfernen Sie die `HandleProcessCorruptedStateExceptions` Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
+Führen Sie eine der folgenden Schritte aus, um diese Warnung zu beheben:
 
- 2. Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen.  Dazu können auch CSEs gehören, vorausgesetzt, dass sie vom Handlercode sicher behandelt werden können (sehr selten).
+- Entfernen Sie die `HandleProcessCorruptedStateExceptions` Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
 
- 3. Lösen Sie die CSE im Catch-Handler erneut aus. So wird sichergestellt, dass die Ausnahme an den Aufrufer übergeben wird, wodurch der laufende Prozess beendet wird.
+- Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen. Dies kann auch CSEs gehören, vorausgesetzt, dass vom Handlercode sicher behandelt werden kann (selten vorkommenden).
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel.
+- Erneut die CSE im Catch-Handler, wodurch sichergestellt wird, die Ausnahme, die an den Aufrufer übergeben wird, und führt dazu, beenden den laufenden Prozess aus.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="pseudo-code-example"></a>Pseudocodebeispiel
 
 ### <a name="violation"></a>Verletzung
- Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.
 
-```
+Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.
+
+```csharp
 [HandleProcessCorruptedStateExceptions]
-//method to handle and log CSE exceptions
+// Method to handle and log CSE exceptions.
 void TestMethod1()
 {
     try
@@ -64,15 +68,16 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-1"></a>Lösung 1
- Durch das Entfernen des HandleProcessCorruptedExceptions-Attributs wird sichergestellt, dass Ausnahmen nicht behandelt werden.
 
-```
+Durch das Entfernen des HandleProcessCorruptedExceptions-Attributs wird sichergestellt, dass Ausnahmen nicht behandelt werden.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -81,19 +86,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-2"></a>Lösung 2
- Entfernen Sie den allgemeinen Catch-Handler, und fangen Sie nur bestimmte Ausnahmetypen ab.
 
-```
+Entfernen Sie den allgemeinen Catch-Handler, und fangen Sie nur bestimmte Ausnahmetypen ab.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -102,19 +108,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-3"></a>Lösung 3
- Lösen Sie die Ausnahme erneut aus.
 
-```
+Ausnahme erneut auslösen.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -123,7 +130,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
         throw;
     }
 }

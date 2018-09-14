@@ -14,16 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3143bb7508af1fcb0a946ce7e3a3f0a8697b204
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917461"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548399"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Typlinkaufrufe erfordern Vererbungsanforderungen
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -32,19 +37,19 @@ ms.locfileid: "31917461"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher unversiegelter Typ wird geschützt durch einen Linkaufruf verfügt über eine überschreibbare Methode und weder der Typ noch die Methode mit einer vererbungsanforderung geschützt ist.
+ Ein öffentlicher unversiegelter Typ wird geschützt durch einen Linkaufruf, verfügt über eine überschreibbare Methode, und weder der Typ noch die Methode mit einer vererbungsanforderung geschützt ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Linkaufruf auf eine Methode oder der deklarierende Typ erfordert den unmittelbaren Aufrufer der Methode, die angegebene Berechtigung. Eine vererbungsanforderung für eine Methode erfordert eine überschreibende Methode über die angegebene Berechtigung verfügen. Für einen Typ eine vererbungsanforderung erfordert eine abgeleitete Klasse die angegebene Berechtigung.
+ Ein Linkaufruf auf eine Methode oder der deklarierende Typ ist den direkte Aufrufer der Methode, um die angegebene Berechtigung erforderlich. Eine vererbungsanforderung für eine Methode erfordert eine überschreibende Methode, um die angegebene Berechtigung zu erhalten. Eine vererbungsanforderung für einen Typ ist erforderlich, eine abgeleitete Klasse die angegebene Berechtigung haben.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, Sichern Sie den Typ oder die Methode mit einer vererbungsanforderung für die gleichen Berechtigungen wie der Linkaufruf aus.
+ Um einen Verstoß gegen diese Regel zu beheben, Sichern Sie den Typ oder die Methode mit einer vererbungsanforderung für die gleichen Berechtigungen wie den Linkaufruf aus.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der die Regel verletzt.
+ Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
  [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
@@ -60,4 +65,6 @@ ms.locfileid: "31917461"
  [CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines) [Forderungen verknüpfen](/dotnet/framework/misc/link-demands)
+
+- [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
+- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)

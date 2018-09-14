@@ -14,16 +14,21 @@ ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 981c3191524bed974757ed73cdf0db4b5ddb5810
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9db561355fb59ec187ef87ee767c4706ebddffb9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914561"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547866"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden
+
 |||
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
@@ -32,17 +37,17 @@ ms.locfileid: "31914561"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Enumeration enthält ein Element, dessen Name mit dem Typnamen der Enumeration beginnt.
+ Eine Enumeration enthält ein Element, dessen Name mit dem Typnamen der Enumeration wird gestartet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Namen von Enumerationsmembern werden nicht mit dem Typnamen vorangestellt, da Typinformationen erwartet wird, vom Entwicklungstools zur Verfügung gestellt werden.
+ Namen von Enumerationsmembern werden der Typname nicht vorangestellt werden, weil Typinformationen von Entwicklungstools bereitgestellt werden soll.
 
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die für erforderlich, um eine neue Softwarebibliothek Informationen zu erhalten und Kunden die Sicherheit, dass die Bibliothek von einem Benutzer entwickelt wurde, Erfahrung in der Entwicklung von verwaltetem Code hat, wird erhöht.
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die für erforderlich, um eine neue Softwarebibliothek zu erhalten und zudem wird das Kundenvertrauen, dass die Bibliothek von einer Person entwickelt wurde, die Erfahrung in der Entwicklung von verwaltetem Code hat.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Präfix des Typs aus dem Enumerationsmember.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Präfix der Typ des aus der Enumerationsmember.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
@@ -60,4 +65,5 @@ ms.locfileid: "31914561"
  [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Enum?displayProperty=fullName>
+
+- <xref:System.Enum?displayProperty=fullName>

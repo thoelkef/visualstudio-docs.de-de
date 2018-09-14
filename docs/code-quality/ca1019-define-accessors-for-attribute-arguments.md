@@ -14,16 +14,20 @@ ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe76788510ebb51c0f6bd609cf91d9791dad2dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e095c862edc5d7b68e1a6c55ada90a425b7e64f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898914"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550452"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Accessors für Attributargumente definieren
+
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
@@ -39,38 +43,32 @@ ms.locfileid: "31898914"
 
  Attribute können auch optionale Argumente definieren, die auch als benannte Argumente bezeichnet werden. Diese Argumente werden bei Attributkonstruktoren über ihren Namen angegeben und sollten über eine entsprechende Lese-Schreib-Eigenschaft verfügen.
 
- Der gleiche name aber abweichender Groß-/Kleinschreibung, für obligatorische und optionale Argumente, die entsprechenden Eigenschaften und Konstruktorparameter verwendet werden soll. Verwenden Sie Eigenschaften wie in Pascal-Schreibweise und Parameter Kamel-Schreibweise verwendet.
+ Der gleiche name jedoch unterschiedlichen Groß-/Kleinschreibung, für obligatorischen und optionalen Argumenten, die entsprechenden Eigenschaften und Konstruktorparameter verwendet werden soll. Verwenden der Pascal-Schreibweise Eigenschaften Groß-/Kleinschreibung und Parameter Kamel-Schreibweise verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine schreibgeschützte Eigenschaft, für jeden Parameter des Konstruktors, die Sie nicht besitzt.
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine nur-Lese Eigenschaft für jeden Konstruktorparameter, die nicht vorhanden ist.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie nicht, dass den Wert des Arguments obligatorische abrufbar sein möchten.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel, wenn Sie nicht, dass der Wert, der das erforderliche Argument abgerufen werden möchten.
 
 ## <a name="custom-attributes-example"></a>Beispiel für benutzerdefinierte Attribute
 
-### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt zwei Attribute, die einen obligatorischen Parameter (mit Feldern fester Breite) zu definieren. Die erste Implementierung des Attributs ist falsch definiert. Die zweite Implementierung ist richtig.
+Das folgende Beispiel zeigt zwei Attribute, die einen obligatorischen Parameter für die (mit Feldern fester Breite) zu definieren. Die erste Implementierung des Attributs ist nicht ordnungsgemäß definiert. Die zweite Implementierung ist richtig.
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
- [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
+[!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
+[!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
-## <a name="positional-and-named-arguments"></a>Mit Feldern fester Breite und benannte Argumente
+## <a name="positional-and-named-arguments"></a>Positionelle und benannte Argumente
 
-### <a name="description"></a>Beschreibung
- Mit Feldern fester Breite und benannte Argumente stellen für Consumer Ihrer Bibliothek löschen, werden die Argumente für das Attribut und die Argumente sind optional.
+Positionelle und benannte Argumente machen es klar, auf Consumer Ihrer Bibliothek, die die Argumente für das Attribut erforderlich sind und welche Argumente sind optional.
 
- Das folgende Beispiel zeigt eine Implementierung eines Attributs, das mit Feldern fester Breite und benannte Argumente verfügt.
+Das folgende Beispiel zeigt eine Implementierung der ein Attribut mit benannten und Positionsargumenten:
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-### <a name="comments"></a>Kommentare
- Im folgende Beispiel wird gezeigt, wie das benutzerdefinierte Attribut auf zwei Eigenschaften angewendet werden.
+Das folgende Beispiel zeigt, wie Sie das benutzerdefinierte Attribut auf zwei Eigenschaften anwenden:
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1813: Nicht versiegelte Attribute vermeiden](../code-quality/ca1813-avoid-unsealed-attributes.md)

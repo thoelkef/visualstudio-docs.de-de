@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924673"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550306"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf
 |||
@@ -35,11 +35,11 @@ ms.locfileid: "31924673"
  Es wurde eine Operatorüberladung erkannt, und die erwartete benannte Alternativmethode wurde nicht gefunden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Operatoren überladen ermöglicht die Verwendung von Symbolen, um Berechnungen für einen Typ darzustellen. Beispielsweise müsste ein Typ, der das Pluszeichen (+) für die Addition überlädt in der Regel einen alternativen Member mit dem Namen 'Hinzufügen'. Der benannte Alternativmember ermöglicht den Zugriff auf die gleiche Funktionalität wie der Operator, und wird für Entwickler, die in Sprachen programmieren, in denen überladene Operatoren nicht unterstützen bereitgestellt.
+ Überladen von Operatoren ermöglicht die Verwendung der Symbole, die Berechnungen für einen Typ darstellt. Ein Typ, der das Pluszeichen (+) für die Addition überlädt müsste z. B. in der Regel einen alternativen Member, die mit dem Namen "Hinzufügen". Der benannte Alternativmember ermöglicht den Zugriff auf die gleiche Funktionalität wie der Operator, und es wird bereitgestellt, um Entwickler beim Programmieren in Sprachen, die überladene Operatoren nicht unterstützen.
 
- Diese Regel untersucht die Operatoren in der folgenden Tabelle aufgelistet sind.
+ Diese Regel überprüft die Operatoren in der folgenden Tabelle aufgelistet sind.
 
-|C#|Visual Basic|C++|Alternative Namen|
+|C#|Visual Basic|C++|Alternativer name|
 |---------|------------------|-----------|--------------------|
 |+ (binär)|+|+ (binär)|Hinzufügen|
 |+=|+=|+=|Hinzufügen|
@@ -73,25 +73,25 @@ ms.locfileid: "31924673"
 =|Nicht zutreffend|>>=|Rechte UMSCHALTTASTE|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
 |-=|Nicht zutreffend|-=|Subtrahieren|
-|true|IsTrue|Nicht zutreffend|IsTrue (Eigenschaft)|
+|true|IsTrue|Nicht zutreffend|"IsTrue" (Eigenschaft)|
 |-(Unär)|Nicht zutreffend|-|Negate-|
 |+ (Unär)|Nicht zutreffend|+|Plus|
-|False|IsFalse|False|IsTrue (Eigenschaft)|
+|False|IsFalse|False|"IsTrue" (Eigenschaft)|
 
- N/v == kann nicht in der ausgewählten Sprache nicht überladen werden.
+ N/v == kann nicht überladen werden, in der ausgewählten Sprache.
 
- Diese Regel überprüft auch implizite und explizite Umwandlungsoperatoren in einem Typ (`SomeType`) mit der Überprüfung Methoden, die mit dem Namen `ToSomeType` und `FromSomeType`.
+ Die Regel überprüft auch implizite und explizite Umwandlungsoperatoren in einem Typ (`SomeType`) durch Prüfen auf Methoden, die mit dem Namen `ToSomeType` und `FromSomeType`.
 
- In c# ist bei ein binärer Operator überladen wird, ist der entsprechenden Zuweisungsoperator ggf. auch implizit überladene.
+ In C# geschrieben Wenn ein binärer Operator überladen ist, wird der zugehörige Zuweisungsoperator, ggf. auch implizit überladen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative Methode für den Operator aus. Nennen sie die empfohlenen alternativen Namen verwenden.
+ Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative Methode für den Operator aus. Nennen Sie ihn mit den empfohlenen alternativen Namen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung dieser Regel ignorieren.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel nicht, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung dieser Regel ignorieren.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel definiert eine Struktur, die mit dieser Regel verletzt. Um das Beispiel zu beheben, fügen Sie einen öffentlichen `Add(int x, int y)` Methode, um die Struktur.
+ Das folgende Beispiel definiert eine Struktur, die gegen diese Regel verstößt. Um das Beispiel zu korrigieren, fügen Sie eine öffentliche `Add(int x, int y)` Methode, um die Struktur.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 

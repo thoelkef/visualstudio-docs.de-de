@@ -14,16 +14,20 @@ ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f4616f86cdab54d1946203c46b294bea1d7aff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b282545d04c82efb44ed87d21ddf66ee73ab77af
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899595"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550933"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben
+
 |||
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
@@ -32,19 +36,19 @@ ms.locfileid: "31899595"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Die Parametersignatur einer generischen extern sichtbare Methode enthält keine Typen, die die Typparameter der Methode entsprechen.
+ Die Parametersignatur einer extern sichtbaren generische Methode enthält keine Typen, die die Typparameter der Methode entsprechen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Mithilfe eines Rückschlusses wird das Typargument einer generischen Methode nach dem Typ des an die Methode übergebenen Arguments festgelegt, anstatt nach der expliziten Spezifikation des Typarguments. Um den Rückschluss zu aktivieren, muss die Parametersignatur einer generischen Methode einen Parameter einschließen, der vom selben Typ wie der Typparameter für die Methode ist. In diesem Fall muss das Typargument nicht angegeben werden. Wenn für alle Typparameter der Rückschluss verwendet wird, ist die Syntax zum Aufrufen von generischen und nicht generischen Instanzenmethoden identisch. Dies vereinfacht die Verwendung generischer Methoden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf, sodass die Parametersignatur desselben Typs für jeden Typparameter der Methode enthält.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf, sodass die Parametersignatur der gleiche Typ für jeden Typparameter der Methode enthält.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in eine Syntax, die leicht zu verstehen und zu verwenden ist, verringert sich die Zeit, die ist erforderlich, um zu erfahren und erhöht die Annahme-Rate der neue Bibliotheken aus.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in einer Syntax, die einfach zu verstehen und einzusetzen, verkürzt die Zeit, die ist erforderlich, um zu erfahren und erhöht sich die Übernahmerate von neuen Bibliotheken.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt die Syntax zum Aufrufen von zwei generischer Methoden. Das Typargument für `InferredTypeArgument` abgeleitet ist, und das Typargument für `NotInferredTypeArgument` muss explizit angegeben werden.
+ Das folgende Beispiel zeigt die Syntax zum Aufrufen von generischer Methoden. Das Typargument für `InferredTypeArgument` abgeleitet ist, und das Typargument für `NotInferredTypeArgument` muss explizit angegeben werden.
 
  [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
  [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]

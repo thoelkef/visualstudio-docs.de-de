@@ -14,16 +14,20 @@ ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d964cdbe94822fc6156e25320e723cd10fe7d853
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d9ae35155009e43678aca89e388ebac721a5724
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919963"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551240"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden
+
 |||
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
@@ -32,30 +36,32 @@ ms.locfileid: "31919963"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein Plattformaufruf Methode definiert ist, und eine Methode mit entsprechender Funktionalität vorhanden ist, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klassenbibliothek.
+
+Rufen Sie eine Plattform ist definiert, und eine Methode mit der entsprechenden Funktionalität vorhanden ist, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klassenbibliothek.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Plattformaufruf-Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufrufen und mithilfe der <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut, oder die `Declare` -Schlüsselwort in Visual Basic. Falsch definierten Plattformaufrufmethode zu Runtime-Ausnahmen führen kann, die aufgrund von Verbindungsproblemen, wie z. B. einen falsch geschriebenen Funktion, die fehlerhafte Zuordnung von Parameter- und Rückgabetypen von Datentypen mit Werten und falschen Feld Spezifikationen, z. B. die Aufrufkonvention und das Zeichen festgelegt. Falls verfügbar, ist es im Allgemeinen einfacher und weniger fehleranfällig, rufen Sie die entsprechende verwaltete Methode als zum Definieren und die nicht verwaltete Methode direkt aufzurufen. Aufrufen einer Plattformaufrufs invoke-Methode kann ebenfalls dazu führen, um zusätzliche Sicherheitsprobleme, die behoben werden müssen.
+
+Eine Plattformaufrufmethode wird verwendet, um eine nicht verwaltete DLL-Funktion aufrufen und wird mit definiert die <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut, oder die `Declare` -Schlüsselwort in Visual Basic. Ein falsch definierten Plattformaufrufmethode zu Runtime-Ausnahmen führen kann, die aufgrund von Problemen wie z. B. einen falsch geschriebenen Funktion, die fehlerhafte Zuordnung von Datentypen der Parameter und Rückgabetypen Werten und falschen Feld-Spezifikationen wie die Aufrufkonvention und das Zeichen Legen Sie. Falls verfügbar, ist es einfacher und weniger fehleranfällig, rufen Sie die entsprechende verwaltete Methode als zum Definieren und die nicht verwaltete Methode direkt aufzurufen. Aufrufen einer Plattform invoke-Methode kann auch zu Problemen führen, zusätzliche Sicherheit, die berücksichtigt werden müssen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Aufruf an die nicht verwaltete Funktion durch einen Aufruf in den entsprechenden verwalteten ein.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn die vorgeschlagene Ersetzungsmethode nicht die erforderliche Funktionalität bereitstellt.
+Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Aufruf an die nicht verwaltete Funktion mit einem Aufruf von seinem verwalteten Gegenwert fest.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie eine Warnung dieser Regel, wenn die vorgeschlagene Ersetzungsmethode nicht die benötigte Funktionalität bietet.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Plattform rufen Sie die Definition der Methode, die die Regel verletzt. Darüber hinaus die Aufrufe an die Plattform invoke-Methode und die entsprechende verwaltete Methode werden angezeigt.
 
- [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
- [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
+Das folgende Beispiel zeigt eine Plattform rufen die Definition einer Methode, die die Regel verletzen. Darüber hinaus die Aufrufe an die Plattform Methode aufrufen und die entsprechende verwaltete Methode werden angezeigt.
+
+[!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
+[!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [: Ca1404 GetLastError unmittelbar nach P/Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: Move P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-
- [CA1400: P/Invoke müssen Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-
- [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
-
- [: Ca2101 Marshalling für P/Invoke-Zeichenfolgenargumente festlegen](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+- [CA1404: GetLastError unmittelbar nach P-Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1060: P-Invokes in NativeMethods-Klasse verschieben](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+- [CA1400: Für P-Invoke müssen Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1401: P-Invokes dürfen nicht sichtbar sein](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA2101: Marshalling für P-Invoke-Zeichenfolgenargumente festlegen](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6eef1097565090fd1b9be572f9a33afed9afed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4f0240b8a3cc1a08b29d0f7f21f3f7599ab3fe
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917911"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546673"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Statische Konstruktoren sollten privat sein
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31917911"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ verfügt über einen statischen Konstruktor, der nicht privat ist.
+ Ein Typ hat einen statischen Konstruktor, der nicht privat ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein statischer Konstruktor, auch bekannt als ein Klassenkonstruktor ist Initialisierung eines Typs verwendet. Das System ruft den statischen Konstruktor auf, bevor die erste Instanz des Typs erzeugt wird bzw. bevor auf irgendwelche statischen Member verwiesen wird. Der Benutzer hat keine Kontrolle darüber, wann der statische Konstruktor aufgerufen wird. Wenn ein statischer Konstruktor nicht privat ist, kann er von Code aufgerufen werden, der nicht Systemcode ist. Je nach den Operationen innerhalb des Konstruktors kann dies zu unerwartetem Verhalten führen.
+ Ein statischer Konstruktor auch einen Klassenkonstruktor, wird verwendet, um einen Typ zu initialisieren. Das System ruft den statischen Konstruktor auf, bevor die erste Instanz des Typs erzeugt wird bzw. bevor auf irgendwelche statischen Member verwiesen wird. Der Benutzer hat keine Kontrolle darüber, wenn der statische Konstruktor aufgerufen wird. Wenn ein statischer Konstruktor nicht privat ist, kann er von Code aufgerufen werden, der nicht Systemcode ist. Je nach den Operationen innerhalb des Konstruktors kann dies zu unerwartetem Verhalten führen.
 
- Diese Regel wird vom C#- und Visual Basic-Compiler erzwungen.
+ Mit dieser Regel wird durch die C#- und Visual Basic-Compiler erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Verstöße werden i. d. r. durch eine der folgenden Aktionen verursacht:
+ Verstöße gegen werden in der Regel durch eine der folgenden Aktionen verursacht:
 
--   Sie einen statischen Konstruktor für den Typ definiert und nicht privat.
+- Sie definiert einen statischen Konstruktor für den Typ und nicht, ihn als privat.
 
--   Die Programmierung Sprachcompiler einen statischen Standardkonstruktor Ihres Typs hinzugefügt und nicht privat.
+- Programmierung Sprachcompilers, die einen statischen Standardkonstruktor in den Typ hinzugefügt und nicht, ihn als privat.
 
- Um die erste Art des Verstoßes zu beheben, stellen Sie den statischen Konstruktor privat. Um die zweite Art zu beheben, fügen Sie einen privaten statischen Konstruktor in den Typ aus.
+ Um die erste Art von Verstoß zu beheben, stellen Sie Ihre statischen Konstruktor private. Um die zweite Art zu beheben, fügen Sie einen privaten statischen Konstruktor in den Typ aus.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Verletzungen. Wenn Ihre Softwareentwurf einen expliziten Aufruf von einem statischen Konstruktor erfordert, ist es wahrscheinlich, dass der Entwurf ernsthafte Fehler und überprüft werden sollte.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Verletzungen. Wenn Ihres Softwaredesigns einen expliziten Aufruf an einen statischen Konstruktor erforderlich ist, ist es wahrscheinlich, dass der Entwurf schwerwiegenden Fehler enthält und überprüft werden.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b338b37d62f3612dd5eb6d575b6ef0d57202c1f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900662"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546693"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
 
@@ -38,9 +38,9 @@ Eine Methode, von der das Auslösen von Ausnahmen nicht erwartet wird, löst ein
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Methoden, die zum Auslösen von Ausnahmen nicht erwartet werden können wie folgt kategorisiert werden:
+Methoden, die keine Ausnahmen auslösen sollen, können wie folgt kategorisiert werden:
 
-- Get-Eigenschaftenmethoden
+- Get-Methoden der Eigenschaften
 
 - Ereigniszugriffsmethoden
 
@@ -60,17 +60,17 @@ Methoden, die zum Auslösen von Ausnahmen nicht erwartet werden können wie folg
 
 - Impliziten Umwandlungsoperatoren
 
-In den folgenden Abschnitten werden diese Methodentypen erläutert.
+In den folgenden Abschnitten werden die folgenden Methodentypen erläutert.
 
-### <a name="property-get-methods"></a>Get-Eigenschaftenmethoden
+### <a name="property-get-methods"></a>Get-Methoden der Eigenschaften
 
-Eigenschaften sind im Grunde intelligente Felder. Aus diesem Grund sollten sie z. B. ein Feld so weit wie möglich Verhalten auf. Felder keine Ausnahmen auslösen und sollte weder Eigenschaften. Wenn Sie eine Eigenschaft, die eine Ausnahme auslöst verfügen, sollten Sie somit zu einer Methode.
+Eigenschaften sind im Grunde intelligenter Felder. Aus diesem Grund sollten sie sich Verhalten wie ein Feld so weit wie möglich. Felder keine Ausnahmen auslösen und sollte weder auf Eigenschaften. Wenn Sie eine Eigenschaft, die eine Ausnahme auslöst verfügen, versuchen Sie es mit einer Methode.
 
-Die folgenden Ausnahmen können von einem Property-Get-Methode ausgelöst werden:
+Die folgenden Ausnahmen können aus einer Eigenschaft Get-Methode ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> und alle ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> und alle ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
 
 - <xref:System.ArgumentException?displayProperty=fullName> (nur von Get)
 
@@ -78,15 +78,15 @@ Die folgenden Ausnahmen können von einem Property-Get-Methode ausgelöst werden
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
 
-Ereignisaccessoren sollte es sich um einfache Operationen sein, die Ausnahmen auslösen, nicht. Ein Ereignis sollte keine Ausnahme auslöst, wenn Sie versuchen, hinzufügen oder entfernen einen Ereignishandler.
+Ereignisaccessoren sollte es sich um einfache Operationen sein, die keine Ausnahmen auslösen. Ein Ereignis sollte keine Ausnahme auslösen, wenn Sie versuchen, hinzufügen oder Entfernen eines ereignishandlers.
 
 Die folgenden Ausnahmen können von einem Ereignisaccessor ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> und alle ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> und alle ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
 
-- <xref:System.ArgumentException> und ableitungen
+- <xref:System.ArgumentException> und davon abgeleiteten Klassen
 
 ### <a name="equals-methods"></a>Equals-Methoden
 
@@ -96,55 +96,55 @@ Die folgenden **gleich** Methoden sollte keine Ausnahmen auslösen:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Ein **gleich** -Methode zurückgeben sollte `true` oder `false` anstatt eine Ausnahme auszulösen. Z. B. wenn gleich zwei nicht übereinstimmende Typen übergeben werden sollte nur zurückgegeben `false` statt einer <xref:System.ArgumentException>.
+Ein **gleich** Methode zurückgeben soll `true` oder `false` anstatt eine Ausnahme auszulösen. Z. B. wenn gleich zwei nicht übereinstimmende Typen übergeben werden sollte nur zurückgegeben `false` statt einer <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>GetHashCode-Methoden
 
-Die folgenden **GetHashCode** Methoden sollten normalerweise keine Ausnahmen auslösen:
+Die folgenden **"GetHashCode"** sollte in der Regel Methoden keine Ausnahmen auslösen:
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** immer einen Wert zurück. Andernfalls können Sie Elemente in der Hashtabelle verloren gehen.
+**GetHashCode** immer einen Wert zurück. Andernfalls können Sie Elemente in der Hashtabelle verlieren.
 
-Die Versionen der **GetHashCode** nehmen ein Argument kann Auslösen einer <xref:System.ArgumentException>. Allerdings **Object.GetHashCode** sollten nie eine Ausnahme auslösen.
+Die Versionen der **"GetHashCode"** , nehmen ein Argument kann Auslösen einer <xref:System.ArgumentException>. Allerdings **Object.GetHashCode** sollte nie eine Ausnahme auslösen.
 
 ### <a name="tostring-methods"></a>ToString-Methoden
 
-Der Debugger nutzt <xref:System.Object.ToString%2A?displayProperty=fullName> , um Informationen zu Objekten im Zeichenfolgenformat anzuzeigen. Aus diesem Grund **ToString** sollte nicht den Zustand eines Objekts ändern, und es darf keine Ausnahmen auslösen.
+Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName> , um Informationen zu Objekten in einem Format anzuzeigen. Aus diesem Grund **ToString** sollte nicht den Zustand eines Objekts ändern, und es sollte nicht Auslösen von Ausnahmen.
 
 ### <a name="static-constructors"></a>Statische Konstruktoren
 
-Auslösen von Ausnahmen von einem statischen Konstruktor führt dazu, dass den Typ in der aktuellen Anwendungsdomäne nicht verwendet werden. Sie sollten einen guten Grund (z. B. ein Sicherheitsproblem) verfügen, für das Auslösen einer Ausnahme von einem statischen Konstruktor.
+Auslösen von Ausnahmen von einem statischen Konstruktor wird der Typ in der aktuellen Anwendungsdomäne nicht verwendet werden. Sie sollten einen guten Grund (z. B. ein Sicherheitsproblem) verfügen, für das Auslösen einer Ausnahme von einem statischen Konstruktor.
 
 ### <a name="finalizers"></a>Finalizer
 
-Auslösen einer Ausnahme über einem Finalizer bewirkt, dass die CLR schnelle, fehl, die der Prozess beendet. Aus diesem Grund sollte das Auslösen von Ausnahmen in einem Finalizer immer vermieden werden.
+Auslösen einer Ausnahme über einem Finalizer führt dazu, dass die CLR die fail-fast, die der Prozess beendet wird. Aus diesem Grund sollte das Auslösen von Ausnahmen in einem Finalizer immer vermieden werden.
 
 ### <a name="dispose-methods"></a>Dispose-Methoden
 
-Ein <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme ausgelöst. Dispose wird häufig aufgerufen, als Teil der Bereinigungslogik in einer `finally` Klausel. Aus diesem Grund explizit eine Ausnahme von Dispose Benutzers Ausnahmebehandlung innerhalb hinzugefügt erzwingt die `finally` Klausel.
+Ein <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme ausgelöst. Dispose wird häufig aufgerufen, als Teil der Bereinigungslogik in einem `finally` Klausel. Aus diesem Grund explizit eine Ausnahme von Dispose den Benutzer in die Ausnahmebehandlung hinzufügen erzwingt die `finally` Klausel.
 
 Die **Dispose(false)** Codepfad sollte nie Ausnahmen auslösen, da Dispose fast immer von einem Finalizer aufgerufen wird.
 
 ### <a name="equality-operators--"></a>Gleichheitsoperatoren (==,! =)
 
-Wie Equals-Methoden sollte zurückgeben Gleichheitsoperatoren entweder `true` oder `false`, und sollte keine Ausnahmen auslösen.
+Wie Equals-Methoden sollten zurückgeben Gleichheitsoperatoren entweder `true` oder `false`, und sollte keine Ausnahmen auslösen.
 
 ### <a name="implicit-cast-operators"></a>Impliziten Umwandlungsoperatoren
 
-Da der Benutzer oft nicht bewusst, dass ein implizite Umwandlung-Operator aufgerufen wurde, ist eine von der impliziten Umwandlungsoperator ausgelöste Ausnahme unerwartet. Aus diesem Grund sollte keine Ausnahmen aus impliziten Umwandlungsoperatoren ausgelöst werden.
+Da der Benutzer oft nicht bekannt ist, dass es sich bei ein impliziten Cast-Operator aufgerufen wurde, ist eine Ausnahme ausgelöst wird, durch den Operator für implizite Umwandlung unerwartet. Aus diesem Grund sollte keine Ausnahmen aus impliziten Umwandlungsoperatoren ausgelöst werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Für den Eigenschaftengetter entweder ändern Sie die Logik, damit er nicht mehr auf eine Ausnahme auslöst, oder ändern Sie die Eigenschaft in eine Methode verfügt.
+Bei der Eigenschaftengetter entweder ändern Sie die Logik aus, sodass sie nicht mehr auf eine Ausnahme auslösen, oder ändern Sie die Eigenschaft in eine Methode.
 
-Ändern Sie die Logik für alle anderen oben aufgeführten Methodentypen, damit eine Ausnahme nicht mehr ausgelöst werden soll.
+Für alle anderen Methodentypen oben aufgeführt wurden ändern Sie die Logik, damit es nicht mehr eine Ausnahme ausgelöst werden soll.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Wenn von einer Ausnahmedeklaration statt eine Ausnahme die Verletzung verursacht wurde, ist es sicher zum Unterdrücken einer Warnung dieser Regel.
+Wenn die Verletzung durch eine Ausnahmedeklaration anstelle einer ausgelösten Ausnahme verursacht wurde, ist es sicher ist, unterdrücken Sie eine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 

@@ -14,16 +14,21 @@ ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3864cbef5a5ba6c013d05112af46d641aa3c1634
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31895977"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547700"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexer sollten nicht mehrdimensional sein
+
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
@@ -32,19 +37,19 @@ ms.locfileid: "31895977"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ enthält einen öffentlichen oder geschützten Indexer, der mehr als einen Index verwendet.
+ Ein öffentlicher oder geschützter Typ enthält, einen öffentlichen oder geschützten Indexer, der mehr als einen Index verwendet wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Indexer, d. h. indizierte Eigenschaften sollten einen einzelnen Index verwenden. Mehrdimensionaler Indexer können die Verwendbarkeit der Bibliothek deutlich abnehmen. Wenn der Entwurf mehrere Indizes erfordert, überdenken Sie, ob der Typ einen logischen Datenspeicher darstellt. Wenn dies nicht der Fall ist, verwenden Sie eine Methode.
+ Indexer, d. h. indizierte Eigenschaften, sollte es sich um einen einzelnen Index verwenden. Mehrdimensionale Indexer können die Verwendbarkeit der Bibliothek deutlich reduzieren. Wenn der Entwurf mehrere Indizes erfordert, überdenken Sie, ob der Typ einen logischen Datenspeicher darstellt. Wenn dies nicht der Fall ist, verwenden Sie eine Methode.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf an einen Ganzzahl- oder Zeichenfolgenindex verwenden, oder verwenden Sie eine Methode anstelle des Indexers.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie das Design ein Ganzzahl- oder Zeichenfolgenindex verwenden, oder verwenden Sie eine Methode anstelle des Indexers.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel erst nach dem die Notwendigkeit der nicht dem Standard entsprechende Indexer sorgfältig abwägen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel erst nach den Bedarf für den Indexer nicht dem Standard entsprechende sorgfältig geprüft.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `DayOfWeek03`, mit einem mehrdimensionalen Indexer, der die Regel verletzt. Der Indexer kann als eine Art der Konvertierung betrachtet werden und daher besser als eine Methode bereitgestellt. Der Typ wird umgestaltet `RedesignedDayOfWeek03` auf die Regel erfüllen.
+ Das folgende Beispiel zeigt einen Typ, `DayOfWeek03`, mit einem mehrdimensionalen Indexer, die die Regel verletzen. Der Indexer kann als eine Art der Konvertierung betrachtet werden und daher besser als verfügbar gemacht wird eine Methode. Der Typ wird umgestaltet `RedesignedDayOfWeek03` um die Regel zu erfüllen.
 
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]

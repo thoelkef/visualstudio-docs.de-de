@@ -14,16 +14,20 @@ ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6379a811da7c62be59a322ee68ad9f030d9693d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3e03c1028dc310748aff7c8263ce75ace9985be
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899716"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551732"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generika verwenden
+
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
@@ -32,19 +36,19 @@ ms.locfileid: "31899716"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine extern sichtbare Methode enthält einen Verweisparameter vom Typ <xref:System.Object?displayProperty=fullName>, und die enthaltende Assembly Ziele [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Eine extern sichtbare Methode enthält einen Verweisparameter vom Typ <xref:System.Object?displayProperty=fullName>, und die Ziele der enthaltenden Assembly [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Verweisparameter ist ein Parameter, die mit geändert werden die `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Schlüsselwort. Der Argumenttyp, der für einen Verweisparameter übergeben wird muss genau mit dem Typ des Verweisparameters entsprechen. Um einen Typ verwenden, der von dem Typ des Verweisparameters abgeleitet ist, muss der Typ zuerst umgewandelt und eine Variable vom Typ Verweisparameters zugewiesen werden. Verwenden einer generischen Methode kann alle Typen mit gewissen Einschränkungen an die Methode übergeben werden, ohne die zuvor in den Typ dem Typ des Verweisparameters umgewandelt.
+ Ein Verweisparameter ist ein Parameter, die mithilfe von geändert wird die `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Schlüsselwort. Der Argumenttyp, der für einen Verweisparameter bereitgestellt werden muss genau dem Typ des Verweisparameters übereinstimmen. Um einen Typ zu verwenden, der von dem Typ des Verweisparameters abgeleitet ist, muss der Typ zuerst umwandeln und eine Variable vom Typ Verweisparameters zugewiesen werden. Verwenden einer generischen Methode kann alle Typen mit gewissen Einschränkungen an die Methode übergeben werden, ohne zunächst den Typ auf den Parametertyp Verweis umzuwandeln.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, die Sie eine generische Methode, und Ersetzen Sie die <xref:System.Object> Parameter mit einem Typparameter.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine allgemeine Swap-Routine, die als nicht generische und generische Methoden implementiert wird. Beachten Sie, wie effizient die Zeichenfolgen mit der generischen Methode, die im Vergleich zu nicht generischen Methode ausgetauscht werden.
+ Das folgende Beispiel zeigt eine allgemeine Swap-Routine, die als nicht generische und generische Methoden implementiert wird. Beachten Sie, wie effizient die Zeichenfolgen ausgetauscht werden, mithilfe der generischen Methode, die im Vergleich zu nicht generischen Methode.
 
  [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
  [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]

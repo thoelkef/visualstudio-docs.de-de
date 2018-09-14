@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7fb5f55ee345fa47a4a4510fe8121b82d1c0ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919637"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545592"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblys müssen gültige starke Namen aufweisen
+
 |||
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
@@ -32,66 +33,74 @@ ms.locfileid: "31919637"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Assembly ist nicht mit einem starken Namen signiert der starke Name konnte nicht überprüft werden, oder der starke Name ist nicht mehr gültig ist, ohne die aktuellen registrierungseinstellungen für die des Computers.
+
+Eine Assembly ist nicht mit einem starken Namen signiert werden. der starke Name konnte nicht überprüft werden, oder der starke Name nicht gültig ist, ohne die aktuellen registrierungseinstellungen für die des Computers.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel ruft ab und überprüft den starken Namen einer Assembly. Eine Verletzung tritt auf, wenn Folgendes zutrifft:
 
--   Die Assembly keinen starken Namen.
+Diese Regel abgerufen und überprüft den starken Namen einer Assembly. Eine Verletzung auftritt, wenn eine der folgenden Bedingungen zutrifft:
 
--   Die Assembly, die nach dem Signieren geändert wurde.
+- Die Assembly keinen starken Namen.
 
--   Die Assembly wird verzögert signiert.
+- Die Assembly wurde nach der Anmeldung geändert werden.
 
--   Die Assembly wurde nicht ordnungsgemäß signiert oder Fehler beim Signieren.
+- Die Assembly wird verzögert signiert.
 
--   Die Assembly benötigt registrierungseinstellungen Überprüfung übergeben. Beispielsweise wurde das Strong Name-Tool (Sn.exe) zum Überspringen der Überprüfung der Assembly verwendet.
+- Die Assembly wurde nicht ordnungsgemäß signiert oder die Anmeldung ist fehlgeschlagen.
 
- Der starke Name schützt Clients vor dem versehentlichen Laden einer manipulierten Assembly. Assemblys ohne starke Namen sollten nur in ganz bestimmten Szenarien bereitgestellt werden. Wenn Sie nicht einwandfrei signierte Assemblys freigeben oder verteilen, kann die Assembly manipuliert werden, die Common Language Runtime lädt die Assembly unter Umständen nicht, oder der Benutzer muss die Überprüfung auf dem Computer deaktivieren. Eine Assembly ohne starken Namen besitzt die folgenden Nachteile:
+- Die Assembly benötigt, registrierungseinstellungen, Überprüfung übergeben wird. Beispielsweise wurde Strong Name-Tool (Sn.exe) verwendet, um die Überprüfung für die Assembly zu überspringen.
 
--   Die Ursprünge können nicht überprüft werden.
+Der starke Name schützt Clients vor dem versehentlichen Laden einer manipulierten Assembly. Assemblys ohne starke Namen sollten nur in ganz bestimmten Szenarien bereitgestellt werden. Wenn Sie nicht einwandfrei signierte Assemblys freigeben oder verteilen, kann die Assembly manipuliert werden, die Common Language Runtime lädt die Assembly unter Umständen nicht, oder der Benutzer muss die Überprüfung auf dem Computer deaktivieren. Eine Assembly ohne starken Namen hat die folgenden Nachteile auf:
 
--   Die common Language Runtime kann nicht Benutzer benachrichtigen, wenn der Inhalt der Assembly geändert wurden.
+- Dessen Ursprung können nicht überprüft werden.
 
--   Es kann im globalen Assemblycache geladen werden.
+- Die common Language Runtime kann keine Benutzer zu warnen, wenn der Inhalt der Assembly geändert wurde.
 
- Beachten Sie, dass beim Laden und analysieren eine Assembly verzögert signiert, müssen Sie die Überprüfung der Assembly deaktivieren.
+- Es kann nicht im globalen Assemblycache geladen werden.
+
+Beachten Sie, bis alles geladen und eine mit Verzögerung signierten Assembly analysieren, müssen Sie die Überprüfung der Assembly deaktivieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- **So erstellen eine Schlüsseldatei**
 
- Verwenden Sie eine der folgenden Verfahren aus:
+### <a name="create-a-key-file"></a>Erstellen einer Schlüsseldatei
 
--   Verwenden Sie die Assembly Linker-Tool (Al.exe) bereitgestellt werden, indem Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+Verwenden Sie eine der folgenden Verfahren:
 
--   Für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , Version 1.0 oder Version 1.1, verwenden Sie entweder die <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> oder <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> Attribut.
+- Verwenden Sie die Assembly Linker-Tool (Al.exe) gebotenen die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
 
--   Für die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], verwenden Sie entweder die `/keyfile` oder `/keycontainer` Compileroption [/keyfile (Schlüssel angeben oder öffentlichen/privaten Schlüsselpaars zum Signieren einer Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) oder  [ /keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) -Linkeroption in C++).
+- Für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 und 1.1, verwenden Sie entweder die <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> oder <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> Attribut.
 
- **Zum Signieren der Assembly mit einem starken Namen in Visual Studio**
+- Für die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], verwenden Sie entweder die `/keyfile` oder `/keycontainer` Compileroption [/keyfile (Geben Sie Schlüssel oder Schlüsselpaar zum Signieren einer Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) oder  [ /keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) -Linkeroption in C++).
 
-1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie die Projektmappe.
+### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Signieren von Assemblys mit einem starken Namen in Visual Studio
 
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften.**
+1. Öffnen Sie in Visual Studio Ihre Projektmappe ein.
 
-3.  Klicken Sie auf die **Signierung** , und wählen Sie die **zum Signieren der Assembly** Kontrollkästchen.
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften.**
 
-4.  Von **Schlüsseldatei mit starkem Namen auswählen**Option **neu**.
+3. Klicken Sie auf die **Signierung** , und wählen Sie die **Assembly signieren** Kontrollkästchen.
 
-     Die **Schlüssel für einen starken Namen erstellen** Fenster angezeigt.
+4. Von **Schlüsseldatei mit starkem Namen auswählen**Option **neu**.
 
-5.  In **Schlüsseldateiname**, geben Sie einen Namen für Ihre Schlüssel mit starkem Namen.
+   Die **Schlüssel für einen starken Namen erstellen** Fenster angezeigt.
 
-6.  Wählen Sie, ob der Schlüssel mit einem Kennwort geschützt, und klicken Sie dann auf **OK**.
+5. In **Schlüsseldateiname**, geben Sie einen Namen für Ihre Schlüssel mit starkem Namen.
 
-7.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **erstellen**.
+6. Wählen Sie, ob der Schlüssel mit einem Kennwort geschützt, und klicken Sie dann auf **OK**.
 
- **Zum Signieren der Assembly mit einem starken Namen außerhalb von Visual Studio**
+7. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **erstellen**.
 
--   Verwenden Sie das strong Name-Tool (Sn.exe), die von bereitgestellten der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Signieren von Assemblys mit einem starken Namen außerhalb von Visual Studio
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Nur eine Warnung dieser Regel zu unterdrücken, wenn die Assembly in einer Umgebung verwendet wird, den Inhalt manipulieren nicht relevant ist.
+Verwenden Sie das strong Name-Tool (Sn.exe), die von bereitgestellte der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie nur eine Warnung dieser Regel auf, wenn die Assembly in einer Umgebung verwendet wird, den Inhalt manipulieren nicht relevant ist.
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool)
+
+- <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
+- <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
+- [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool)
