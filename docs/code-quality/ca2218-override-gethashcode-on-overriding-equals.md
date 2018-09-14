@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ad4417551d45c55c3ea194e4b3b3f28ed04af96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dda8fd453ae36e11a4d8f20780caf60bf3c915f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922745"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547788"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben
+
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
@@ -32,39 +33,39 @@ ms.locfileid: "31922745"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> jedoch nicht außer Kraft setzen <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> , nicht jedoch <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Object.GetHashCode%2A> Gibt einen Wert, der basierend auf der aktuellen Instanz, die sich für Hashalgorithmen und Datenstrukturen wie Hashtabellen eignet. Zwei Objekte, die denselben Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß zurückgeben:
+ <xref:System.Object.GetHashCode%2A> Gibt einen Wert, der basierend auf der aktuellen Instanz, die für die Verwendung in Hashalgorithmen und Datenstrukturen wie Hashtabellen geeignet ist. Zwei Objekte, die den gleichen Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass die Instanzen der folgenden Typen ordnungsgemäß zurückgeben:
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Typen, implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Typen, die implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung von <xref:System.Object.GetHashCode%2A>. Für ein Paar von Objekten desselben Typs, müssen Sie sicherstellen, dass die Implementierung den gleichen Wert zurückgibt, wenn die Implementierung von <xref:System.Object.Equals%2A> gibt `true` für das Paar.
+ Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung der <xref:System.Object.GetHashCode%2A>. Für ein Paar von Objekten desselben Typs, müssen Sie sicherstellen, dass es sich bei der Implementierung den gleichen Wert zurückgegeben, wenn die Implementierung von <xref:System.Object.Equals%2A> gibt `true` für das Paar.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="class-example"></a>Beispiel für die Klasse
+## <a name="class-example"></a>Beispiel:
 
 ### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt eine Klasse (Referenztyp), die mit dieser Regel verletzt.
+ Das folgende Beispiel zeigt eine Klasse (Referenztyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
@@ -78,7 +79,7 @@ ms.locfileid: "31922745"
 ## <a name="structure-example"></a>Struktur-Beispiel
 
 ### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt eine Struktur (Werttyp), die mit dieser Regel verletzt.
+ Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
@@ -101,4 +102,8 @@ ms.locfileid: "31922745"
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Object.Equals%2A?displayProperty=fullName> <xref:System.Object.GetHashCode%2A?displayProperty=fullName> <xref:System.Collections.Hashtable?displayProperty=fullName> [Gleichheitsoperatoren](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
+- [Gleichheitsoperatoren](/dotnet/standard/design-guidelines/equality-operators)

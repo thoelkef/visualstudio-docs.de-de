@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901095"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549351"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen
 |||
@@ -32,22 +32,22 @@ ms.locfileid: "31901095"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ enthält, die extern sichtbaren Members eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> eingeben, gibt eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ oder enthält, dessen Signatur ein <xref:System.Collections.Generic.List%601?displayProperty=fullName> Parameter.
+ Ein Typ enthält einen extern sichtbaren Member, die eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> eingeben, gibt eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ oder enthält, deren Signatur ein <xref:System.Collections.Generic.List%601?displayProperty=fullName> Parameter.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> ist eine generische Auflistung, die für Leistung und nicht Vererbung entwickelt wurde. <xref:System.Collections.Generic.List%601?displayProperty=fullName> enthält keine virtuellen Member, die so ändern Sie das Verhalten von einer geerbten Klasse zu vereinfachen. Die folgenden generischen Auflistungen für die Vererbung entworfen werden und verfügbar gemacht werden sollen, anstelle von <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> ist eine generische Auflistung, die für die Leistung und nicht Vererbung entwickelt wurde. <xref:System.Collections.Generic.List%601?displayProperty=fullName> enthält keine virtuellen Member, die sie zum Ändern des Verhaltens von einer geerbten Klasse leichter machen. Die folgenden generischen Auflistungen dienen der Vererbung und verfügbar gemacht werden soll, anstelle von <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ auf einen der generischen Auflistungen, die für die Vererbung entworfen wurde.
+ Um einen Verstoß gegen diese Regel zu beheben, Ändern der <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ in eine der generischen Auflistungen, die für die Vererbung entwickelt wurde.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die diese Warnung auslöst keiner wiederverwendbaren Bibliothek werden soll. Beispielsweise wäre es unterdrückt die Warnung in einer Anwendung für die Leistung optimiert, in denen auf ein Leistungsvorteil aus der Verwendung von generische Listen erworben wurde.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel nicht, es sei denn, die Assembly, die diese Warnung löst keiner wiederverwendbaren Bibliothek sein soll. Beispielsweise wäre es sicher ist, unterdrücken diese Warnung in einer Anwendung für die Leistung optimiert, in denen ein Leistungsvorteil erzielt wurde aus der Verwendung von generische Listen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

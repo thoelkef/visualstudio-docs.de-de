@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ed7050ff7b804d3224390393c3c860bc25c30
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d76a0ecf6a2eeac677475eb25efe495129c213
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916037"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548516"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Deklarative Sicherheit auf Werttypen überprüfen
+
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
@@ -32,31 +33,42 @@ ms.locfileid: "31916037"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Werttyp wird durch gesichert eine [Daten und Modellierung](/dotnet/framework/data/index) oder [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands).
+
+Ein öffentlicher oder geschützter Werttyp wird geschützt, indem eine [Daten und Modellierung](/dotnet/framework/data/index) oder [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Werttypen werden zugeordnet und durch Standardkonstruktoren initialisiert werden, bevor die anderen Konstruktoren ausgeführt. Wenn ein Werttyp wird durch eine Forderung oder LinkDemand gesichert, und der Aufrufer verfügt nicht über die Berechtigungen, die die sicherheitsüberprüfung, einem beliebigen anderen Konstruktor außer erfüllen standardmäßig fehl, und eine Sicherheitsausnahme ausgelöst. Der Werttyp wird nicht freigegeben. Es bleibt in den Zustand von seinem Standardkonstruktor festgelegt. Führen Sie Sie nicht davon gehen Sie aus, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
+
+Werttypen werden zugeordnet und durch die standardmäßige Konstruktoren initialisiert werden, bevor andere Konstruktoren ausgeführt. Wenn ein Werttyp wird durch einen Demand oder LinkDemand geschützt, und der Aufrufer verfügt nicht über die Berechtigungen, die die sicherheitsüberprüfung, die keinen Konstruktor außer erfüllen standardmäßig fehl, und eine Sicherheitsausnahme ausgelöst. Der Werttyp wird nicht freigegeben. Es bleibt im Zustand "" festlegen, indem die Standard-Konstruktor. Führen Sie Sie nicht davon gehen Sie aus, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Einen Verstoß gegen diese Regel kann nicht behoben werden, es sei denn, Sie die sicherheitsüberprüfung von dem Typ entfernen und Verwendung methodensicherheit auf Zeilenebene an seiner Stelle überprüft. Beachten Sie, dass Aufrufer mit unzureichenden Berechtigungen Abrufen von Instanzen des Werttyps korrigieren und die Verletzung auf diese Weise nicht verhindert werden. Sie müssen sicherstellen, dass eine Instanz des Werttyps in seinem Standardzustand nicht vertrauliche Informationen verfügbar machen, und kann nicht auf schädliche Weise verwendet werden.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können eine Warnung dieser Regel unterdrücken, wenn einer der Aufrufer Instanzen des Werttyps in seinem Standardzustand abrufen kann, ohne die Sicherheit gefährden.
+Sie können keinen Verstoß gegen diese Regel beheben, es sei denn, Sie die sicherheitsüberprüfung, von dem Typ entfernen und Verwendung methodensicherheit auf Zeilenebene an seiner Stelle überprüft. Beheben den Verstoß auf diese Weise verhindert nicht, dass Aufrufer mit unzureichenden Berechtigungen Abrufen von Instanzen des Werttyps. Sie müssen sicherstellen, dass eine Instanz des Werttyps, in seinem Standardzustand macht keine vertraulichen Informationen verfügbar, und kann nicht auf schädliche Weise verwendet werden.
 
-## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der mit dieser Regel verletzt. Beachten Sie, dass die `StructureManager` Typs wird davon ausgegangen, dass ein Aufrufer, eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
- [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
+Sie können eine Warnung dieser Regel unterdrücken, wenn ein Aufrufer die Instanzen des Werttyps in seinem Standardzustand abrufen kann, ohne die Sicherheit gefährden.
 
-## <a name="example"></a>Beispiel
- Die folgende Anwendung zeigt diese Schwäche der Bibliothek.
+## <a name="example-1"></a>Beispiel 1
 
- [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der gegen diese Regel verstößt. Die `StructureManager` Typs wird davon ausgegangen, dass ein Aufrufer, eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
 
- Folgende Ergebnisse werden zurückgegeben:
+[!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
- **Benutzerdefinierte strukturkonstruktors: Fehler bei der Anforderung. ** 
- **Neue Werte SecuredTypeStructure 100 100**
-**neue Werte SecuredTypeStructure 200 200**
+## <a name="example-2"></a>Beispiel 2
+
+Die folgende Anwendung zeigt die Bibliotheks Schwachstelle.
+
+[!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+
+Dieses Beispiel erzeugt die folgende Ausgabe:
+
+```txt
+Structure custom constructor: Request failed.
+New values SecuredTypeStructure 100 100
+New values SecuredTypeStructure 200 200
+```
+
 ## <a name="see-also"></a>Siehe auch
- [Verknüpfen von Forderungen](/dotnet/framework/misc/link-demands) [Daten und Modellierung](/dotnet/framework/data/index)
+
+- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Daten und Modellierung](/dotnet/framework/data/index)

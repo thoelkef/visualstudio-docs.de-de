@@ -14,16 +14,21 @@ ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 07e0bbaa05b0674666a7d4403daeeee8b23348be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fcc7994e67e268aff21af925632d2ee9cf102ff4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919976"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547161"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen
+
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31919976"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Erfolgt ein Aufruf an eine Methode, die einen Zeichenfolgenparameter verfügt, dessen Name "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" enthält. Der deklarierende Typ der Methode enthält eine entsprechende methodenüberladung, verfügt ein <xref:System.Uri?displayProperty=fullName> Parameter.
+ Ein Aufruf wird einer Methode ausgelöst, die einen Zeichenfolgenparameter verfügt, deren Name "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" enthält. und der deklarierende Typ der Methode enthält eine entsprechende methodenüberladung, die eine <xref:System.Uri?displayProperty=fullName> Parameter.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Parametername ist Token basierend auf der Kamel aufteilen und anschließend wird jedes Token überprüft, um festzustellen, ob es sich um "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" entspricht. Wenn eine Übereinstimmung vorhanden ist, wird davon ausgegangen, dass der Parameter einen uniform Resource Identifier (URI) darstellen. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> Klasse stellt diese Dienste auf sichere Weise bereit. Es gibt eine Auswahl zwischen zwei Überladungen, die sich nur bezüglich die Darstellung eines URIs unterscheiden, der Benutzer muss wählen die Überladung mit einem <xref:System.Uri> Argument.
+ Ein Parametername in Token basierend auf der Kamel unterteilt, und anschließend wird jedes Token überprüft, um festzustellen, ob es sich um "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" gleich. Wenn eine Übereinstimmung vorliegt, wird angenommen, dass der Parameter einen uniform Resource Identifier (URI) darstellen. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> Klasse stellt diese Dienste auf sichere Weise. Wenn eine Auswahl zwischen zwei Überladungen, die unterscheiden sich nur bezüglich der Darstellung einer URI vorhanden ist, sollte der Benutzer auswählen die Überladung mit einem <xref:System.Uri> Argument.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen Sie die Überladung, akzeptiert der <xref:System.Uri> Argument.
+ Um einen Verstoß gegen diese Regel zu beheben, rufen Sie die Überladung, akzeptiert die <xref:System.Uri> Argument.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn der Parameter keinen URI darstellt.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Zeichenfolgenparameter keinen URI darstellt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode `ErrorProne`, die gegen die Regel und eine Methode `SaferWay`, ordnungsgemäß aufruft der <xref:System.Uri> überladen.
+ Das folgende Beispiel zeigt eine Methode, `ErrorProne`, die gegen die Regel und eine Methode, `SaferWay`, ordnungsgemäß Ruft die <xref:System.Uri> überladen.
 
  [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
  [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]

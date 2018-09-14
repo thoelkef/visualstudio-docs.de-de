@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6809534d14b58d60759133e972b5220fcfd58d61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899749"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551702"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Gleichheitsoperator für Referenztypen nicht überladen
+
 |||
 |-|-|
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
@@ -32,7 +33,7 @@ ms.locfileid: "31899749"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder verschachtelter öffentlicher Verweistyp Überladen des Gleichheitsoperators.
+ Ein öffentlicher oder verschachtelter öffentlicher Verweistyp überlädt den Equality-Operator.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Für Verweistypen ist die Standardimplementierung des Gleichheitsoperators fast immer zutreffend. Standardmäßig sind zwei Verweise nur dann gleich, wenn sie auf dasselbe Objekt zeigen.
@@ -40,27 +41,34 @@ ms.locfileid: "31899749"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie die Implementierung des Gleichheitsoperators.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Verweistyp wie eines integrierten Werttyps verhält. Wenn Additions- oder Subtraktionsoperator auf Instanzen des Typs sind von Bedeutung ist, ist es wahrscheinlich richtig, den Gleichheitsoperator zu implementieren und die Verletzung zu unterdrücken.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher ist, eine Warnung dieser Regel zu unterdrücken, wenn sich der Verweistyp wie eines integrierten Werttyps verhält. Wenn es für die Addition oder Subtraktion auf Instanzen des Typs ist von Bedeutung ist, ist es wahrscheinlich richtig ist, den Gleichheitsoperator zu implementieren und den Regelverstoß zu unterdrücken.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel veranschaulicht das Standardverhalten beim Vergleich zweier Verweise.
+ Das folgende Beispiel veranschaulicht das Standardverhalten für den Vergleich zwei Verweise.
 
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung vergleicht einige Verweise.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+Folgende Anwendungen werden einige Verweise verglichen.
 
- Folgende Ergebnisse werden zurückgegeben:
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **eine neue (2,2) und b = = new (2,2) sind gleich? Nicht**
-**c und a sind gleich? Ja**
-**b und a sind ==? Nicht**
-**c und a sind ==? Ja**
+Dieses Beispiel erzeugt die folgende Ausgabe:
+
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+[CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Gleichheitsoperatoren](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Gleichheitsoperatoren](/dotnet/standard/design-guidelines/equality-operators)

@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce7e5de528e8b0c0a6f128fa9f7d68c1b9f385c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11359e021d5c297c0782bf95fe35997b0a1b5be5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919803"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548412"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen
+
 |||
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
@@ -33,26 +34,28 @@ ms.locfileid: "31919803"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName> erbt von einem Typ, der auch implementiert <xref:System.IDisposable>. Die <xref:System.IDisposable.Dispose%2A> rufen Methode von der erbende Typ nicht die <xref:System.IDisposable.Dispose%2A> Methode des übergeordneten Typs.
+ Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName> erbt von einem Typ, der auch implementiert <xref:System.IDisposable>. Die <xref:System.IDisposable.Dispose%2A> Methode der erbende Typ ruft nicht die <xref:System.IDisposable.Dispose%2A> Methode des übergeordneten Typs.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein Typ von einem Typ erbt, rufen sie die <xref:System.IDisposable.Dispose%2A> Methode des Basistyps aus in einem eigenen <xref:System.IDisposable.Dispose%2A> Methode. Aufrufen der Methode des Basistyps gewährleistet Dispose an, dass alle Ressourcen erstellt, indem der Basistyp freigegeben werden.
+ Wenn ein Typ von einem verwerfbaren Typ erbt, muss er Aufrufen der <xref:System.IDisposable.Dispose%2A> Methode des Basistyps von in eine eigene <xref:System.IDisposable.Dispose%2A> Methode. Aufrufen der Methode des Basistyps wird Dispose alle Ressourcen, die von den Basistyp erstellt freigegeben werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen `base`.<xref:System.IDisposable.Dispose%2A> in Ihrem <xref:System.IDisposable.Dispose%2A> Methode.
+ Um einen Verstoß gegen diese Regel zu beheben, rufen `base`.<xref:System.IDisposable.Dispose%2A> in Ihrer <xref:System.IDisposable.Dispose%2A> Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Aufruf von `base`.<xref:System.IDisposable.Dispose%2A> Tritt auf, genauer gesagt aufrufenden als die Regel überprüft.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, falls der Aufruf von `base`.<xref:System.IDisposable.Dispose%2A> Tritt auf, auf einer tieferen aufrufenden Ebene als die Regel überprüft.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `TypeA` implementiert <xref:System.IDisposable>.
+ Das folgende Beispiel zeigt ein `TypeA` implementiert <xref:System.IDisposable>.
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `TypeB` von Typ erbt `TypeA` und ordnungsgemäß ruft seine <xref:System.IDisposable.Dispose%2A> Methode.
+ Das folgende Beispiel zeigt einen Typ `TypeB` , die von Typ erbt `TypeA` und ordnungsgemäß ruft seine <xref:System.IDisposable.Dispose%2A> Methode.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.IDisposable?displayProperty=fullName> [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

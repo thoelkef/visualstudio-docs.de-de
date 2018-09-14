@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c299652e779476f2936c193a8bdb646e7b655dd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 738c214e845cb962bc6c28aa63806dee2858c295
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916141"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551235"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen
+
 |||
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
@@ -32,28 +33,27 @@ ms.locfileid: "31916141"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- In den Versionen 1.0 und 1.1 von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], eine öffentliche oder geschützte Methode enthält einen `try` / `catch` / `finally` Block. Die `finally` Block wird der Sicherheitszustand zurückgesetzt angezeigt und steht nicht in einem `finally` Block.
+ In den Versionen 1.0 und 1.1 von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], eine öffentliche oder geschützte Methode enthält einen `try` / `catch` / `finally` Block. Die `finally` Block zum Sicherheitszustand zurückgesetzt wird angezeigt und steht nicht in einem `finally` Block.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel sucht `try` / `finally` Blöcke in Code, der Versionen 1.0 und 1.1 von abzielt die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , die möglicherweise anfällig für böswillige Ausnahmefilter in der Aufrufliste vorhanden. Wenn sicherheitsrelevante Vorgänge wie z. B. Identitätswechsel in Try-Blocks auftreten, und eine Ausnahme ausgelöst wird, kann der Filter vor dem Ausführen der `finally` Block. Für das Impersonation-Beispiel bedeutet dies, dass der Filter als die Identität eines Benutzers ausgeführt werden würde. Filter sind derzeit nur in Visual Basic implementiert.
+ Diese Regel sucht `try` / `finally` , freigegebene Blöcke in Code, Versionen 1.0 und 1.1 des als Ziel, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , die möglicherweise anfällig für böswillige Ausnahmefilter in der Aufrufliste. Wenn sensibler Vorgänge wie z. B. Identitätswechsel im Try-Block ausgeführt und eine Ausnahme ausgelöst wird, kann der Filter vor dem Ausführen der `finally` Block. Das Impersonation-Beispiel bedeutet dies, dass der Filter dem imitierten Benutzer ausgeführt wird. Filter sind nur in Visual Basic momentan implementierbar.
 
-> [!WARNING]
->  **Hinweis** In Version 2.0 oder höher, der die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Common Language Runtime automatisch schützt eine `try` / `catch` /  `finally` Blockieren von böswilligen Ausnahmefilter, erfolgt das Zurücksetzen direkt innerhalb der Methode, die vom Ausnahmeblock enthält.
+> [!NOTE]
+> In Version 2.0 oder höher von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], schützt, die Laufzeit automatisch eine `try` / `catch` /  `finally` blockieren böswilliger Ausnahmefilter, tritt beim Zurücksetzen das direkt innerhalb der Methode, die enthält den Ausnahmeblock.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Platzieren Sie die entpackte `try` / `finally` in einem äußeren Try-Block. Finden Sie im zweiten Beispiel, das folgt. Dies zwingt den `finally` ausgeführt wird, bevor die Filtercode.
+ Platzieren Sie die entpackten `try` / `finally` in einem äußeren Try-Block. Finden Sie im zweite Beispiel, das folgende aus. Dies zwingt den `finally` vor Filtercodes ausgeführt.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="pseudo-code-example"></a>Pseudocodebeispiel
 
 ### <a name="description"></a>Beschreibung
- Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.
 
-### <a name="code"></a>Code
+Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.
 
-```
+```csharp
 try {
    // Do some work.
    Impersonator imp = new Impersonator("John Doe");
@@ -65,10 +65,9 @@ finally {
 }
 ```
 
-## <a name="example"></a>Beispiel
- Der folgende Pseudocode zeigt das Muster, die Sie verwenden können, um Ihren Code zu schützen und diese Regel zu erfüllen.
+Der folgende Pseudocode zeigt das Muster, Sie verwenden können, schützen Sie Ihren Code, und diese Regel zu erfüllen.
 
-```
+```csharp
 try {
      try {
         // Do some work.

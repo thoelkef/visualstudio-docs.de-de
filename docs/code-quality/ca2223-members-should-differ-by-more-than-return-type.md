@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aaa7671f1aa110edd42897111e746e62eab8048
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922469"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549825"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
@@ -32,22 +33,21 @@ ms.locfileid: "31922469"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Zwei öffentliche oder geschützte Member haben Signaturen, die mit Ausnahme der Rückgabetyp identisch sind.
+ Zwei öffentliche oder geschützte Member verfügen Signaturen, die mit Ausnahme der Rückgabetyp identisch sind.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die common Language Runtime lässt die Verwendung von Rückgabetypen zu zwischen anderweitig identischen Membern unterschieden werden kann, wird diese Funktion befindet sich nicht in der Common Language Specification, noch ist es keine gebräuchliche Funktion von .NET-Programmiersprachen. Wenn Member nur durch den Rückgabetyp unterscheiden, können Entwickler und Entwicklungsprogramme nicht ordnungsgemäß zwischen ihnen unterschieden.
+ Die common Language Runtime lässt die Verwendung von Rückgabetypen zwischen anderweitig identischen Membern unterschieden werden kann, wird dieses Feature befindet sich nicht in der Common Language Specification, noch ist es eine allgemeine Funktion von .NET-Programmiersprachen. Wenn Member nur durch den Rückgabetyp unterscheiden zu können, können Entwickler und nicht ordnungsgemäß zwischen ihnen unterscheiden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf der Elemente, sodass eindeutige schon auf Grundlage ihrer Namen und Parametertypen oder Sie nicht die Member verfügbar machen.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf der Elemente, damit sie eindeutig nur auf ihren Namen und die Parametertypen basieren sind, oder Sie die Elemente nicht machen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird in Microsoft intermediate Language (MSIL), einen Typ, der mit dieser Regel verletzt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von c# oder Visual Basic.
+ Das folgende Beispiel zeigt in Microsoft intermediate Language (MSIL), einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von c# oder Visual Basic.
 
 ```
-
 .namespace UsageLibrary
 {
   .class public auto ansi beforefieldinit ReturnTypeTest
@@ -94,5 +94,4 @@ ms.locfileid: "31922469"
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```

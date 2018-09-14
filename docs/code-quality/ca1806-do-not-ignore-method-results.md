@@ -13,15 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914665"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546836"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -30,31 +35,32 @@ ms.locfileid: "31914665"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Es gibt mehrere mögliche Ursachen für diese Warnung:
 
--   Ein neues Objekt wird erstellt, aber nie verwendet.
+Es gibt mehrere mögliche Gründe für diese Warnung aus:
 
--   Eine Methode, die eine neue Zeichenfolge erstellt und zurückgibt, wird aufgerufen, und die neue Zeichenfolge wird nie verwendet.
+- Ist ein neues Objekt erstellt, aber nie verwendet.
 
--   Eine COM- oder P/Invoke-Methode, die einen HRESULT oder die Fehler Code zurückgibt, der nie verwendet wird. Regelbeschreibung
+- Eine Methode, die erstellt und gibt eine neue Zeichenfolge aufgerufen wird, und die neue Zeichenfolge wird nie verwendet.
 
- Unnötige objekterstellung und die zugeordneten Garbagecollection des nicht verwendeten Objekts zu Leistungseinbußen.
+- Eine COM- oder P/Invoke-Methode, die einen HRESULT oder den Fehlercode Code zurückgibt, der nie verwendet wird. Regelbeschreibung
 
- Zeichenfolgen sind unveränderlich und Methoden wie z. B. String.ToUpper eine neue Instanz einer Zeichenfolge statt ändern die Instanz der Zeichenfolge in der aufrufenden Methode zurückgibt.
+Unnötige objekterstellung und die zugeordneten Garbagecollection des nicht verwendeten Objekts wird Leistung beeinträchtigt.
 
- Ignorieren von HRESULT oder Fehlercode kann unerwartetes Verhalten auftreten von Fehlern oder Ressourcenmangel Bedingungen führen.
+Zeichenfolgen sind unveränderlich, und Methoden, z. B. String.ToUpper gibt eine neue Instanz der eine Zeichenfolge anstatt in der Instanz der Zeichenfolge in der aufrufenden Methode ändern.
+
+Wird ignoriert. HRESULT oder den Fehlercode kann zu unerwartetem Verhalten in fehlerbedingungen oder Ressourcenmangel Bedingungen führen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wenn die Methode A eine neue Instanz der B-Objekt, die nie verwendet wird erstellt, übergeben Sie die Instanz als Argument an eine andere Methode oder weisen Sie die Instanz einer Variablen zu. Wenn die objekterstellung nicht erforderlich ist, entfernen Sie die darauf- oder -
+ Wenn eine-Methode eine neue Instanz der B-Objekt, die nie verwendet wird erstellt, übergeben Sie die Instanz als Argument an eine andere Methode oder weisen Sie die Instanz einer Variablen zu. Wenn die objekterstellung nicht erforderlich ist, entfernt werden die.- oder -
 
- Wenn die Methode A Methode B aufruft, jedoch nicht die neue Zeichenfolgeninstanz, die der Methodenrückgabe B verwendet. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu. Ein, oder entfernen Sie den Aufruf aus, wenn es nicht erforderlich ist.
+ Wenn die Methode A Methode B aufruft, aber verwendet nicht die neue Zeichenfolgeninstanz, die die B-Methode zurückgibt. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu. Ein, oder entfernen Sie den Aufruf aus, wenn es nicht erforderlich ist.
 
  - oder - 
 
- Wenn die Methode A Methode B aufruft, aber verwendet nicht das HRESULT oder Fehlercodes, die zurückgegeben der Methode. Das Ergebnis in einer bedingten Anweisung verwenden, das Ergebnis einer Variablen zuweisen oder an eine andere Methode als Argument zu übergeben.
+ Wenn die Methode A Methode B aufruft, jedoch nicht den HRESULT-Wert verwendet, oder Fehlercode, die zurückgegeben der Methode. Verwenden Sie das Ergebnis in einer bedingungsanweisung, weisen Sie das Ergebnis einer Variablen oder als Argument an eine andere Methode übergeben.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, beim Erstellen des Objekts einige Zweck dient.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel nicht, es sei denn, der Vorgang der Erstellung des Objekts einige Zweck dient.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt eine Klasse, die das Ergebnis des Aufrufs von String.Trim ignoriert.
@@ -64,23 +70,23 @@ ms.locfileid: "31914665"
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Beispiel
- Im folgende Beispiel wird der vorherige Verstoß durch das erneute Zuordnen des Ergebnisses der String.Trim zurück an die Variable, der es aufgerufen wurde korrigiert.
+ Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem das Ergebnis der String.Trim an die Variable, die, der es aufgerufen wurde.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die kein Objekt verwenden, das erstellt wird.
+ Das folgende Beispiel zeigt eine Methode, die kein Objekt, das erstellt wird.
 
 > [!NOTE]
->  Diese Regel kann nicht in Visual Basic reproduziert werden.
+> Diese Verletzung kann nicht in Visual Basic nicht reproduziert werden.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>Beispiel
- Im folgende Beispiel wird der vorherige Verstoß durch das Entfernen der unnötige Erstellung eines Objekts korrigiert.
+ Im folgenden Beispiel wird der vorherige Verstoß korrigiert, durch das Entfernen der Erstellung eines Objekts nicht erforderlichen.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]

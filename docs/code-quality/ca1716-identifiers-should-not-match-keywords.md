@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914783"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550608"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31914783"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Namen für einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache Ihrer Wahl.
+ Ein Name, der einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert werden, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort können Compilerfehlern und -Mehrdeutigkeiten die Verwendung die Bibliothek erschweren.
+ Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können c#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
 
- Diese Regel überprüft anhand von Schlüsselwörtern in den folgenden Sprachen:
+ Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Groß-und Kleinschreibung unterschieden wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Schlüsselwörter und Groß-/ kleinschreibungsvergleich für die anderen Sprachen verwendet wird.
+ Groß-/Kleinschreibung Vergleich wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüsselwörter und Vergleich Groß-/Kleinschreibung wird für die anderen Sprachen verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können eine Warnung dieser Regel unterdrücken, wenn Sie überzeugt sind, dass der Bezeichner keine Benutzer der API verwirrt und, dass die Bibliothek verwendet werden, kann in allen verfügbaren Sprachen in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Sie können eine Warnung dieser Regel unterdrücken, wenn Sie sicher sind, dass der Bezeichner nicht Benutzer der API verwechselt werden und die Bibliothek in alle verfügbaren Sprachen verwendbar ist die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

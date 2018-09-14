@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4183828b4deddede919ea30db825e65f0360adef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b039dc1331ae3f8a47468289611e5bb9be32134d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915046"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549364"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: SafeHandle verwenden, um systemeigene Ressourcen zu kapseln
 |||
@@ -35,17 +35,20 @@ ms.locfileid: "31915046"
  In verwaltetem Code wird verwendet <xref:System.IntPtr> Zugriff auf systemeigene Ressourcen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Verwenden von `IntPtr` in verwaltetem Code ein potenzielles Sicherheitsrisiko und Zuverlässigkeitsproblem Problem anzugeben. Alle Vorkommen von `IntPtr` muss überprüft werden, um zu bestimmen, ob die Verwendung von einem <xref:System.Runtime.InteropServices.SafeHandle> , oder eine ähnliche Technologie an seiner Stelle erforderlich ist. Probleme tritt auf, wenn die `IntPtr` stellt eine systemeigene Ressource, z. B. Arbeitsspeicher, ein Dateihandle oder einen Socket, dass der verwaltete Code als Besitzer berücksichtigt wird. Wenn der verwaltete Code die Ressource besitzt, müssen sie auch die systemeigenen Ressourcen zugeordnet, freigeben, da einen Fehler zu diesem Zweck Ressourcenverluste verursachen würde.
+ Verwenden von `IntPtr` in verwaltetem Code möglicherweise ein potenzielles Problem für Sicherheit und Zuverlässigkeit. Alle Verwendungen des `IntPtr` muss überprüft werden, um zu bestimmen, ob die Verwendung von einer <xref:System.Runtime.InteropServices.SafeHandle> , oder eine ähnliche Technologie an seiner Stelle erforderlich ist. Probleme tritt auf, wenn die `IntPtr` stellt eine systemeigene Ressource, z. B. Arbeitsspeicher, ein Dateihandle oder einen Socket, dass der verwaltete Code als Besitzer betrachtet wird. Wenn der verwaltete Code die Ressource besitzt, müssen sie außerdem die systemeigenen Ressourcen zugeordnet, freigeben, da ein Fehler dazu Ressource Datenlecks verursachen würde.
 
- In solchen Szenarien Sicherheit oder Zuverlässigkeit Probleme ist auch vorhanden, wenn multithreaded-Zugriff, um zugelassen wird die `IntPtr` und eine Methode zum Freigeben der Ressource, die durch dargestellt wird die `IntPtr` bereitgestellt wird. Diese Probleme betreffen, wird die Wiederverwendung von der `IntPtr` Wert auf die Ressourcenfreigabe während der gleichzeitigen Verwendung der Ressource auf einem anderen Thread bereitgestellt werden. Dies kann Racebedingungen verursachen, wobei ein Thread Lese- oder Schreibzugriff auf Daten, die die falschen Ressource zugeordnet ist. Wenn der Typ ein Betriebssystemhandle als speichert z. B. ein `IntPtr` und ermöglicht es Benutzern, die beide rufen **schließen** und jede andere Methode, die dieses Handle gleichzeitig und ohne eine Art der Synchronisierung verwendet werden, der Code hat eine Wiederverwendung Handle Problem.
+ In solchen Szenarien Sicherheit oder Zuverlässigkeit Probleme ist ebenfalls vorhanden, wenn Speicherzugriffs in Multithreadanwendungen darf die `IntPtr` zum Freigeben der Ressource, die durch dargestellt wird, und die `IntPtr` wird bereitgestellt. Diese Probleme beinhalten die Wiederverwendung von der `IntPtr` Wert auf einer Ressourcenfreigabe, während gleichzeitige Verwendung der Ressource in einem anderen Thread erfolgt. Dies kann zu Racebedingungen führen, in denen ein Thread Lese- oder Schreibzugriff auf Daten, die falsche Ressource zugeordnet ist. Wenn Ihr Typ ein Betriebssystemhandle als speichert z. B. eine `IntPtr` und ermöglicht Benutzern, die beide rufen **schließen** und jede andere Methode, die dieses Handle gleichzeitig und ohne eine Art der Synchronisierung verwendet werden, Ihren Code verfügt über ein Handle wiederverwenden Problem.
 
- Dieses Handle, das recycling Problem kann dazu führen, dass beschädigte Daten und in vielen Fällen ein Sicherheitsrisiko. `SafeHandle` und seine nebengeordnete Klasse <xref:System.Runtime.InteropServices.CriticalHandle> bieten einen Mechanismus, um eine systemeigene Handle auf eine Ressource zu kapseln, damit solche Threadingprobleme vermieden werden können. Darüber hinaus können Sie `SafeHandle` und seine nebengeordnete Klasse `CriticalHandle` für andere Threadingprobleme, z. B. die Lebensdauer von verwalteten Objekten sorgfältig zu steuern, die eine Kopie des das systemeigene Handle über Aufrufe von systemeigenen Methoden enthalten. In diesem Fall kann häufig beseitigt werden Aufrufe von `GC.KeepAlive`. Die Leistung Verwaltungsaufwand konfiguriert fallen an, wenn Sie verwenden `SafeHandle` und in einem geringeren Ausmaß `CriticalHandle`, kann häufig durch einen sorgfältigen Entwurf reduziert werden.
+ Dieses Handle, das Problem beim Recyceln kann es sich um beschädigte Daten und in vielen Fällen ein Sicherheitsrisiko führen. `SafeHandle` und seine nebengeordnete Klasse <xref:System.Runtime.InteropServices.CriticalHandle> bieten einen Mechanismus, um ein systemeigenes Handle auf eine Ressource zu kapseln, damit solche Threadingprobleme vermieden werden können. Darüber hinaus können Sie `SafeHandle` und seine nebengeordnete Klasse `CriticalHandle` für andere Threadingprobleme, z. B. um die Lebensdauer von verwalteten Objekten sorgfältig zu steuern, die eine Kopie der das systemeigene Handle über Aufrufe an systemeigene Methoden enthalten. In diesem Fall kann häufig beseitigt werden Aufrufe von `GC.KeepAlive`. Der Mehraufwand an Leistung, die an, wenn Sie verwenden `SafeHandle` und in geringerem Maße `CriticalHandle`, häufig durch einen sorgfältigen Entwurf reduziert werden können.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Konvertieren von `IntPtr` mit `SafeHandle` , Zugriff auf systemeigene Ressourcen sicher zu verwalten. Finden Sie unter der <xref:System.Runtime.InteropServices.SafeHandle> Referenzthema Beispiele.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Diese Warnung sollte nicht unterdrückt werden.
+Konvertieren von `IntPtr` Nutzung `SafeHandle` um den Zugriff auf systemeigene Ressourcen sicher zu verwalten. Finden Sie unter den <xref:System.Runtime.InteropServices.SafeHandle> Referenzartikel für die Beispiele.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie diese Warnung.
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.IDisposable>
+
+- <xref:System.IDisposable>

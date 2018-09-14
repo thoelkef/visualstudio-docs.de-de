@@ -1,5 +1,5 @@
 ---
-title: ': Ca2101 Marshalling für P / Invoke-Zeichenfolgenargumente festlegen'
+title: 'CA2101: Marshalling für P-Invoke-Zeichenfolgenargumente festlegen'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918856"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548318"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31918856"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Plattformaufruf Plattformaufrufmember lässt teilweise vertrauenswürdige Aufrufer zu, enthält einen Zeichenfolgenparameter und führt kein explizites Marshalling die Zeichenfolge.
+ Einen Plattformaufruf Plattformaufrufmember lässt teilweise vertrauenswürdige Aufrufer enthält einen Zeichenfolgenparameter und führt kein explizites Marshalling die Zeichenfolge.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Bei der Konvertierung von Unicode in ANSI ist es möglich, dass nicht alle Unicode-Zeichen in einer bestimmten ANSI-Codepage dargestellt werden können. *Zuordnung mit ähnlichen* versucht, dieses Problem zu beheben, durch das Ersetzen von einem Zeichen für das Zeichen, das nicht dargestellt werden kann. Die Verwendung dieser Funktion kann potenziell eine Sicherheitslücke verursachen, da Sie nicht das Zeichen steuern können, das ausgewählt wird. Bösartiger Code konnte z. B. absichtlich erstellt eine Unicode-Zeichenfolge mit Zeichen, die in einer bestimmten Codepage nicht gefunden werden die speziellen Zeichen, wie z. B. konvertiert werden ".." oder "/". Beachten Sie außerdem, dass sicherheitsüberprüfungen für Sonderzeichen häufig auftreten, bevor die Zeichenfolge in ANSI konvertiert wird.
+ Wenn Sie von Unicode in ANSI konvertieren, ist es möglich, dass nicht alle Unicode-Zeichen in einer bestimmten ANSI-Codepage dargestellt werden können. *Zuordnung mit ähnlichen Zeichen* versucht, dieses Problem zu beheben, ersetzen Sie ein Zeichen für das Zeichen, das nicht dargestellt werden kann. Die Verwendung dieses Features kann ein potenzielles Sicherheitsrisiko führen, da Sie nicht das Zeichen steuern können, das ausgewählt wird. Beispielsweise könnte bösartiger Code absichtlich eine Unicodezeichenfolge mit Zeichen, die in einer bestimmten Codepage nicht gefunden werden die speziellen Zeichen, z. B. konvertiert werden erstellen '..' oder "/". Beachten Sie, dass die sicherheitsüberprüfungen für Sonderzeichen häufig auftreten, bevor die Zeichenfolge in ANSI konvertiert wird.
 
- Zuordnung mit ähnlichen Zeichen ist die Standardeinstellung für die nicht verwaltete Konvertierung von WChar in MB. Es sei denn, Sie explizit Zuordnung mit ähnlichen Zeichen zu deaktivieren, enthalten der Code ein ausnutzbares Sicherheitsrisiko aufgrund dieses Problems.
+ Zuordnung mit ähnlichen Zeichen ist die Standardeinstellung für den nicht verwalteten Konvertierung von WChar in MB an. Es sei denn, Sie explizit die Zuordnung mit ähnlichen Zeichen deaktivieren, kann Ihr Code einen ausnutzbaren Sicherheitsrisiko aufgrund dieses Problems enthalten.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, müssen Marshallen Sie explizit Zeichenfolgen-Datentypen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die verstößt gegen diese Regel, und anschließend wird gezeigt, wie der Verstoß zu beheben.
+ Das folgende Beispiel zeigt eine Methode, die gegen diese Regel verstößt, und anschließend wird der Verstoß zu beheben.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

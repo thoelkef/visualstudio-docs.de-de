@@ -15,59 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f83e7754bcb96de05eac3273133cabbc8b8f61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917826"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551453"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Bevorzugte Begriffe verwenden
+
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Kategorie|Microsoft.Naming|
-|Unterbrechende Änderung|Unterbrechend – Wenn für Assemblys ausgelöst<br /><br /> Nicht unterbrechend – Wenn für Typparameter ausgelöst|
+|Unterbrechende Änderung|Wichtige – Wenn ausgelöst von Assemblys<br /><br /> Nicht unterbrechend – Wenn ausgelöst von Typparametern|
 
 ## <a name="cause"></a>Ursache
- Der Name eines extern sichtbaren Bezeichners schließt einen Begriff ein, für den ein alternativer, bevorzugter Begriff vorhanden ist. Alternativ können Sie enthält den Namen den Begriff Flag oder Flags.
+
+Der Name eines extern sichtbaren Bezeichners schließt einen Begriff ein, für den ein alternativer, bevorzugter Begriff vorhanden ist. Oder der Name enthält den Begriff Flag oder Flags.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel analysiert einen Bezeichner in Token. Jedes einzelne Token und jede Kombination aus zwei zusammenhängenden token wird mit Begriffen verglichen, die in der Regel und den Deprecated-Abschnitt von benutzerdefinierten Wörterbüchern integriert sind. Die folgende Tabelle zeigt die Begriffe, die in der Regel und ihrer bevorzugten Alternativen integriert werden.
+
+Diese Regel analysiert einen Bezeichner in Token. Jedes einzelne Token und jeder Kombination aus zwei zusammenhängende token wird mit Begriffen verglichen, die in der Regel und im Abschnitt "veraltet" des benutzerdefinierten Wörterbüchern erstellt werden. Die folgende Tabelle zeigt die Bedingungen, die in der Regel, und ihre bevorzugten Alternativen integriert sind.
 
 |Veraltete Bezeichnung|Bevorzugter Begriff|
 |-------------------|--------------------|
-|werden nicht|Nicht|
-|abgebrochen|Canceled|
-|Nicht möglich|Kann nicht|
-|ComPlus|EnterpriseServices|
-|Couldnt|CouldNot|
-|Didnt|DidNot|
-|Nicht|Wiederherstellungsdienst|
-|Nicht|Zu|
-|Flag oder Flags|Es gibt keine ersetzungsbegriff. Nicht verwenden.|
-|hadn't|HadNot|
-|Noch nicht|HasNot|
-|dies nicht getan haben|HaveNot|
-|Indizes|Indexes|
-|ist nicht|IsNot|
-|Anmeldung|Anmeldung|
-|Abmelden|Abmelden|
-|Shouldnt|ShouldNot|
-|Anmelden|Anmelden|
-|Genehmigung|Abmelden|
-|Wasnt|WasNot|
-|datenträgerressourceneinstellungen wurden nicht|Netzwerkparameter|
-|Nicht möglich|WillNot|
-|Würde nicht|WouldNot|
-|Beschreibbare|beschreibbare|
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` oder `Flags`|Es gibt keine ersetzungsbegriff. Nicht verwenden.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Begriff mit den bevorzugten Alternativen Begriff aus.
+ Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Begriff mit dem bevorzugten Begriff für die alternative.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel nur, wenn der Name des Bezeichners beabsichtigt ist und bezieht sich speziell auf den ursprünglichen Begriff statt dem bevorzugten Begriff.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel nur, wenn der Name des Bezeichners beabsichtigt ist und bezieht sich speziell auf dem ursprünglichen Begriff dem bevorzugten Begriff.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [Benennungswarnungen](../code-quality/naming-warnings.md)

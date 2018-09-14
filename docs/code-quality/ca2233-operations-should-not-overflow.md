@@ -14,16 +14,20 @@ ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 93d4fc872f14a63eeec446d8e6d1f9a2c7acf7ff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f85c00c0fd64ed23ca56f22bfc37ad7f22281e9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919304"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545571"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen
+
 |||
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
@@ -32,32 +36,31 @@ ms.locfileid: "31919304"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Methode führt eine arithmetische Operation aus und überprüft die Operanden im Vorfeld nicht um einen Überlauf zu vermeiden.
+
+Eine Methode führt eine arithmetische Operation aus und überprüft nicht im voraus die Operanden um einen Überlauf zu vermeiden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Arithmetische Operationen sollten nicht ausgeführt werden, ohne zuerst zu überprüfen die Operanden aus, um sicherzustellen, dass das Ergebnis des Vorgangs nicht außerhalb des Bereichs möglicher Werte für die beteiligten Datentypen liegt. Je nach den Ausführungskontext und die beteiligten Datentypen arithmetischer Überlauf kann dazu führen, entweder eine <xref:System.OverflowException?displayProperty=fullName> oder die höchstwertigen Bits des Ergebnisses verworfen.
+
+Führen Sie arithmetische Operationen keine erste Validierung der Operanden aus, um sicherzustellen, dass das Ergebnis der Operation nicht außerhalb des Bereichs möglicher Werte für die beteiligten Datentypen ist. Je nach den Ausführungskontext und der beteiligten Datentypen, arithmetischer Überlauf kann dazu führen, entweder eine <xref:System.OverflowException?displayProperty=fullName> oder die höchstwertigen Bits des Ergebnisses wird verworfen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Operanden vor dem Ausführen des Vorgangs.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn die möglichen Werte der Operanden niemals die arithmetische Operation zu einem Überlauf führen.
+Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Operanden vor dem Ausführen des Vorgangs.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die möglichen Werte der Operanden niemals die arithmetische Operation zu einem Überlauf führen.
 
 ## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes
 
-### <a name="description"></a>Beschreibung
- Eine Methode im folgenden Beispiel verändert, eine ganze Zahl, die mit dieser Regel verletzt wird. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] erfordert die **entfernen** Integer Überlauf-Option für diese Option, um auslösen deaktiviert werden soll.
+Eine Methode im folgenden Beispiel werden eine ganze Zahl, die gegen diese Regel verstößt bearbeitet. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] erfordert die **entfernen** Integer Überlauf-Option für diese Option, um ausgelöst werden deaktiviert werden.
 
-### <a name="code"></a>Code
- [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
- [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
+[!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
+[!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-### <a name="comments"></a>Kommentare
- Wenn die Methode in diesem Beispiel übergeben wird <xref:System.Int32.MinValue?displayProperty=fullName>, würde ein Unterlauf für der Vorgang. Dies bewirkt, dass das höchstwertige Bit des Ergebnisses verworfen werden. Der folgende Code zeigt, wie in diesem Fall.
+Wenn die Methode in diesem Beispiel übergeben wird <xref:System.Int32.MinValue?displayProperty=fullName>, würde ein Unterlauf für der Vorgang. Dies bewirkt, dass die höchstwertigen Bits des Ergebnisses verworfen werden. Der folgende Code zeigt, wie in diesem Fall.
 
- [C#]
-
-```
+```csharp
 public static void Main()
 {
     int value = int.MinValue;    // int.MinValue is -2147483648
@@ -66,9 +69,7 @@ public static void Main()
 }
 ```
 
- [VB]
-
-```
+```vb
 Public Shared Sub Main()
     Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
     value = Calculator.Decrement(value)
@@ -76,41 +77,41 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>Ausgabe
+Ausgabe:
 
-```
+```text
 2147483647
 ```
 
-## <a name="fix-with-input-parameter-validation"></a>Beheben von mit Eingabeparameter-Überprüfung
+## <a name="fix-with-input-parameter-validation"></a>Beheben Sie mit der Validierung von Eingabeparametern
 
-### <a name="description"></a>Beschreibung
- Im folgende Beispiel wird der vorherige Verstoß durch Überprüfen des Werts der Eingabe korrigiert.
+Im folgenden Beispiel wird der vorherige Verstoß korrigiert, durch den Wert der Eingabe zu überprüfen.
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
- [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
+[!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
+[!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
-## <a name="fix-with-a-checked-block"></a>Beheben von mit einem Checked-Block
+## <a name="fix-with-a-checked-block"></a>Beheben Sie mit einer aktivierten Block
 
-### <a name="description"></a>Beschreibung
- Im folgenden Beispiel wird der vorherige Verstoß korrigiert, durch den Vorgang in einem überprüften Namespaceblock einschließen. Wenn die Operation einen Überlauf verursacht eine <xref:System.OverflowException?displayProperty=fullName> ausgelöst.
+Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem Sie den Vorgang in einen aktivierten Block einschließen. Wenn der Vorgang einen Überlauf, verursacht eine <xref:System.OverflowException?displayProperty=fullName> ausgelöst.
 
- Beachten Sie, dass geprüfte Blöcke nicht unterstützt werden [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Geprüfte Blöcke werden nicht unterstützt, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
+[!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aktivieren Sie dieses Kontrollkästchen aktiviert arithmetischen Über-/Unterlauf
- Wenn Sie aktivierten arithmetischen Überlauf/Unterlauf in c# aktivieren, entspricht dies dem umbruchvorgang jede ganze Zahl in einem geprüften Block.
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aktivierte arithmetischen Über-/Unterlauf aktivieren
 
- **So aktivieren Sie aktivierten arithmetischen Überlauf/Unterlauf in c#**
+Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entspricht es umbruchvorgang jede ganze Zahl in einem aktivierten Block.
+
+Um überprüfte arithmetischen Über-/Unterlauf in c# zu aktivieren:
 
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 
 2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
 
-3.  Wählen Sie **arithmetischen Über-/Unterlauf prüfen** , und klicken Sie auf **OK**.
+3.  Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.OverflowException?displayProperty=fullName> [C#-Operatoren](/dotnet/csharp/language-reference/operators/index) [Checked und Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)
+
+- <xref:System.OverflowException?displayProperty=fullName>
+- [C#-Operatoren](/dotnet/csharp/language-reference/operators/index)
+- [AKtiviert und nicht aktiviert](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

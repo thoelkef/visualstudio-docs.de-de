@@ -14,16 +14,20 @@ ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f2badbf6af73367dcdfe90344012704b8de8b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 060d8ebd26b08ef02a9986846bdab2a25a85072f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917080"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547905"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden
+
 |||
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
@@ -32,21 +36,21 @@ ms.locfileid: "31917080"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Werttyp, der speziell für Component Object Model (COM) als sichtbar markiert ist deklariert eine nicht öffentliche Instanzenfeld.
+ Ein Werttyp, der speziell zu Component Object Model (COM) als sichtbar markiert ist deklariert, ein nicht öffentliches Instanzfeld.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Nicht öffentliche Instanzenfelder von COM-sichtbaren Werttypen sind für COM-Clients sichtbar. Überprüfen Sie den Inhalt des Felds für Informationen, die nicht verfügbar gemacht werden sollen oder unbeabsichtigte Auswirkungen Design oder Sicherheit aufweisen wird.
+ Nicht öffentliche Instanzenfelder von COM-sichtbaren Werttypen sind für COM-Clients sichtbar. Überprüfen Sie den Inhalt des Felds für Daten, die nicht verfügbar gemacht werden, oder müssen, das Design oder unbeabsichtigte Auswirkungen, aus.
 
- Standardmäßig sind alle öffentlichen Werttypen für COM sichtbar. Allerdings erfordert diese Regel um falsch positive Ergebnisse zu reduzieren, die COM-Sichtbarkeit des Typs explizit angegeben werden. Die enthaltende Assembly muss mit dem gekennzeichnet werden die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
+ Standardmäßig sind alle öffentlichen Werttypen für COM sichtbar. Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden. Die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, und behalten Sie das Feld ausgeblendet, ändern Sie den Werttyp in einen Verweistyp handelt, oder entfernen Sie die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut vom Typ.
+ Um einen Verstoß gegen diese Regel zu beheben und das Feld ausgeblendet, ändern Sie den Werttyp in einen Verweistyp handelt, oder entfernen Sie die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut vom Typ.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn öffentliche Offenlegung des Felds akzeptabel ist.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn öffentliche Offenlegung des Felds akzeptabel ist.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der die Regel verletzt.
+ Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
  [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
  [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
@@ -57,4 +61,6 @@ ms.locfileid: "31917080"
  [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Interoperation mit nicht verwaltetem Code](/dotnet/framework/interop/index) [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+
+- [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+- [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

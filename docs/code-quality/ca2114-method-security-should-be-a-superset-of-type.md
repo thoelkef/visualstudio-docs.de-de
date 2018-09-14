@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d2fc6fb60dd837dd93de1db2758ee0e2c216850
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 66fe0031380139c55942a1a47f71066a327d5e24
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914951"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551427"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Methodensicherheit sollte Superset des Typs sein
+
 |||
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
@@ -32,33 +33,41 @@ ms.locfileid: "31914951"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ verfügt, deklarativen Sicherheit und einer der Methoden für die gleiche Sicherheitsaktion deklarativen Sicherheit hat die Sicherheitsaktion ist nicht [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands), und die Berechtigungen vom Typ überprüft nicht sind eine Teilmenge der Berechtigungen durch die Methode überprüft.
+ Ein Typ verfügt über die deklarative Sicherheit und eine seiner Methoden die deklarative Sicherheit für die gleiche Aktion für die Sicherheit hat und die Sicherheitsaktion nicht [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands), und die Berechtigungen vom Typ überprüft sind keine Teilmenge der Berechtigungen überprüft, von der Methode.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Methode sollte nicht sowohl auf einer Methodenebene als auch Typebene deklarative Sicherheit für die gleiche Aktion aufweisen. Zwei Überprüfungen sind nicht kombiniert werden. nur die Methodenebene Anforderung angewendet wird. Wenn Berechtigungen anfordert, ein Typ ermöglicht z. B. `X`, und eine seiner Methoden fordert die Berechtigung `Y`, Code verfügt nicht über die Berechtigung verfügen über `X` zur Ausführung der Methode.
+ Eine Methode sollte nicht sowohl eine Methode auf und Typebene deklarative Sicherheit für die gleiche Aktion aufweisen. Die zwei Überprüfungen sind nicht kombiniert werden; Es wird nur auf die Anforderung auf Methodenebene angewendet. Angenommen, ein Berechtigung anfordert `X`, und eine seiner Methoden fordert die Berechtigung `Y`, Code verfügt nicht über die Berechtigung verfügen über `X` zum Ausführen der Methode.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Überprüfen Sie den Code um sicherzustellen, dass beide Aktionen erforderlich sind. Wenn beide Aktionen erforderlich sind, stellen Sie sicher, dass die Aktion Methodenebene die Sicherheit auf Typebene angegeben enthält. Wenn Ihr Typ Berechtigung erfordert z. B. `X`, und die Methode muss auch die Berechtigung anfordern `Y`, die Methode sollte explizit anfordern `X` und `Y`.
+ Überprüfen Sie Ihren Code, um sicherzustellen, dass beide Aktionen erforderlich sind. Wenn beide Aktionen erforderlich sind, stellen Sie sicher, dass die Aktion auf Methodenebene, die Sicherheit auf Typebene angegeben enthält. Wenn Ihr Typ Berechtigung erfordert z. B. `X`, und die Methode muss auch die Berechtigung anfordern `Y`, die Methode sollte explizit anfordern `X` und `Y`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn die Methode nicht die Sicherheit, die vom angegebenen Typ erfordert. Dies ist allerdings keinem normalen Szenario und Hinweisen zur Überprüfung eine sorgfältige Planung erforderlich.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn die Methode nicht die Sicherheit, die vom angegebenen Typ erforderlich ist. Dies ist jedoch keinem normalen Szenario und möglicherweise die Notwendigkeit von Entwurf sorgfältig zu überprüfen.
 
-## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die Umgebungsberechtigungen die Gefahren Verstoß gegen diese Regel veranschaulicht. In diesem Beispiel erstellt der Anwendungscode eine Instanz des gesicherten Typs vor dem Verweigern der Berechtigung, die durch den Typ erforderlich. In einem Bedrohungsszenario mit realen müsste die Anwendung eine weitere Möglichkeit zum Abrufen einer Instanz des Objekts.
+## <a name="example-1"></a>Beispiel 1
 
- Im folgenden Beispiel fordert die Bibliothek eine Schreibberechtigung für einen Typ und read-Berechtigung für eine Methode.
+Im folgenden Beispiel wird die Umgebungsberechtigungen die Gefahren des Verstoßes gegen diese Regel veranschaulicht. In diesem Beispiel erstellt der Anwendungscode eine Instanz des gesicherten Typs vor dem Verweigern der Berechtigung, die durch den Typ erforderlich. In einem Bedrohungsszenario mit echten benötigt die Anwendung eine andere Möglichkeit, eine Instanz des Objekts abzurufen.
 
- [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
+Im folgenden Beispiel fordert die Bibliothek Schreibberechtigungen für einen Typ und read-Berechtigung für eine Methode.
 
-## <a name="example"></a>Beispiel
- Der folgende Code veranschaulicht die Sicherheitslücke der Bibliothek durch Aufrufen der Methode, obwohl sie die Sicherheit auf Nachrichtenebene Typ-Anforderung nicht erfüllt.
+[!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
- [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+## <a name="example-2"></a>Beispiel 2
 
- Folgende Ergebnisse werden zurückgegeben:
+Der folgende Code veranschaulicht die Sicherheitsrisiken für die Bibliothek durch Aufrufen der Methode, obwohl sie die Sicherheit auf Zeilenebene Typ Anforderungen nicht erfüllt.
 
- **[Alle Berechtigungen] Persönliche Informationen: 6/16/1964 12:00:00 Uhr**
- **[keine Schreibberechtigung (von Typ gefordert)] persönliche Informationen: 6/16/1964 12:00:00 Uhr**
- **[read keine Berechtigung () von Methode gefordert)] persönliche Informationen konnte nicht zugegriffen werden: Fehler bei der Anforderung.**
+[!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+
+Dieses Beispiel erzeugt die folgende Ausgabe:
+
+```txt
+[All permissions] Personal information: 6/16/1964 12:00:00 AM
+[No write permission (demanded by type)] Personal information: 6/16/1964 12:00:00 AM
+[No read permission (demanded by method)] Could not access personal information: Request failed.
+```
+
 ## <a name="see-also"></a>Siehe auch
- [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines) [verknüpfen Forderungen](/dotnet/framework/misc/link-demands) [Daten und Modellierung](/dotnet/framework/data/index)
+
+- [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
+- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Daten und Modellierung](/dotnet/framework/data/index)

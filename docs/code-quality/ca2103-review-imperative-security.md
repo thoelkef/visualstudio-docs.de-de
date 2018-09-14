@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a20dc939b305e3ec917f57bcd9f7cc8f8aa735f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f8975e3118e9907bf4688efe93dc60646b6d80b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914906"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547691"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen
+
 |||
 |-|-|
 |TypeName|ReviewImperativeSecurity|
@@ -35,15 +36,17 @@ ms.locfileid: "31914906"
  Eine Methode verwendet imperative Sicherheit und erstellt möglicherweise die Berechtigung mit Zustandsinformationen oder Rückgabewerten, die sich ändern können, während die Forderung wirksam ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Imperativer Sicherheit verwendet verwaltete Objekte angeben, Berechtigungen und Sicherheitsaktionen während der Ausführung von Code, die im Vergleich zu deklarative Sicherheit, der Attribute verwendet wird, um Berechtigungen und Aktionen in den Metadaten speichern. Imperativer Sicherheit ist sehr flexibel, da können Sie legen Sie den Status des ein Berechtigungsobjekt und Auswählen von Sicherheitsaktionen mithilfe von Informationen, die erst zur Laufzeit nicht verfügbar ist. Zusammen, die mit stammen Flexibilität das Risiko, das die Laufzeitinformationen, die Sie verwenden, um zu bestimmen, dass der Status einer Berechtigung nicht bleibt unverändert, solange die Aktion aktiviert ist.
+ Imperativer Sicherheit verwendet verwaltete Objekte angeben, Berechtigungen und Sicherheitsaktionen während der codeausführung, im Vergleich zu deklarative Sicherheit, der Attribute verwendet, um Berechtigungen und Aktionen in den Metadaten zu speichern. Imperativer Sicherheit ist sehr flexibel, da es sich bei den Zustand eines Objekts Berechtigungen festlegen und wählen Sie die Sicherheitsaktionen mithilfe von Informationen, die bis zur Laufzeit nicht verfügbar ist. Zusammen mit, die aber auch Flexibilität das Risiko, das die Runtime-Informationen, die Sie verwenden, um zu bestimmen, dass der Zustand einer Berechtigung nicht bleibt unverändert, solange die Aktion ausgeführt wird.
 
  Verwenden Sie, wenn irgend möglich, deklarative Sicherheit. Deklarative Befehle sind einfacher zu verstehen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Überprüfen Sie die Anforderungen imperative Sicherheit, um sicherzustellen, dass der Zustand der Berechtigung nicht von den Informationen abhängig wird, die sich ändern können, solange die Berechtigung verwendet wird.
+ Überprüfen Sie die Anforderungen imperative Sicherheit, um sicherzustellen, dass der Zustand der Berechtigung nicht auf den Informationen abhängig ist, die sich ändern können, solange die Berechtigung verwendet wird.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn die Berechtigung nicht zum Ändern von Daten. Allerdings ist es besser, die imperative Forderung in die entsprechende deklarative zu ändern.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die Berechtigung zum Ändern von Daten nicht abhängig ist. Allerdings ist es besser, die die imperative Forderung in den entsprechenden deklarative zu ändern.
 
 ## <a name="see-also"></a>Siehe auch
- [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines) [Daten und Modellierung](/dotnet/framework/data/index)
+
+- [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
+- [Daten und Modellierung](/dotnet/framework/data/index)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bc0065957321894c53726790b73b432dfdea6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901039"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551820"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listen weisen eine starke Typisierung auf
+
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|
@@ -32,35 +33,37 @@ ms.locfileid: "31901039"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Öffentlicher oder geschützter Typ implementiert <xref:System.Collections.IList?displayProperty=fullName> jedoch bietet keine stark typisierte Methode für eine oder mehrere der folgenden:
 
--   IList.Item
+Öffentlicher oder geschützter Typ implementiert <xref:System.Collections.IList?displayProperty=fullName> bietet jedoch keine stark typisierte Methode für eine oder mehrere der folgenden:
 
--   IList.Add
+- IList.Item
 
--   IList.Contains
+- IList.Add
 
--   IList.IndexOf
+- IList.Contains
 
--   IList.Insert
+- IList.IndexOf
 
--   IList.Remove
+- IList.Insert
+
+- IList.Remove
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Nach dieser Regel müssen <xref:System.Collections.IList> Implementierungen angeben, stark typisierte Member, damit Benutzer nicht erforderlich, wandeln Sie die Argumente für die <xref:System.Object?displayProperty=fullName> eingeben, wenn sie die Funktionen, die bereitgestellt wird verwenden, wird von der Schnittstelle. Die <xref:System.Collections.IList> Schnittstelle wird implementiert, anhand von Sammlungen von Objekten, die über einen Index zugegriffen werden können. Diese Regel setzt voraus, dass der Typ, der implementiert <xref:System.Collections.IList> ist diese Option, um die Verwaltung einer Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
 
- <xref:System.Collections.IList> implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> und <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen. Wenn Sie implementieren <xref:System.Collections.IList>, müssen Sie angeben, die stark typisierte erforderliche Member für <xref:System.Collections.ICollection>. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, der durch Boxing verursacht wird; dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Referenztyp darstellt.
+Diese Regel muss <xref:System.Collections.IList> Implementierungen angeben, stark typisierte Member,, damit Benutzer nicht umwandeln müssen, Argumente, die die <xref:System.Object?displayProperty=fullName> eingeben, wenn sie die Funktionen verwenden, die bereitgestellt wird von der Schnittstelle. Die <xref:System.Collections.IList> Schnittstelle wird implementiert, anhand von Sammlungen von Objekten, die über einen Index zugegriffen werden können. Mit dieser Regel wird davon ausgegangen, dass der Typ, der implementiert <xref:System.Collections.IList> verwaltet eine Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
 
- Mit dieser Regel implementieren Sie die Schnittstellenmember explizit mithilfe von Namen in der Form Schnittstellenname.SchnittstelleMemberName, z. B. <xref:System.Collections.IList.Add%2A>. Die explizite Mitglieder verwenden die Datentypen, die deklariert werden durch die Schnittstelle. Implementieren Sie die stark typisierte Member mithilfe der Benutzeroberfläche der Elementname, z. B. `Add`. Die stark typisierte Member als öffentlich deklariert und deklarieren die Parameter und Rückgabewerte, die den starken Typ aufweisen, der von der Auflistung verwaltet wird. Die starke Typen ersetzen schwächere wie <xref:System.Object> und <xref:System.Array> , die von der Schnittstelle deklariert werden.
+<xref:System.Collections.IList> implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> und <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen. Wenn Sie implementieren <xref:System.Collections.IList>, müssen Sie angeben, die stark typisierte erforderliche Member für <xref:System.Collections.ICollection>. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, der durch Boxing verursacht werden; dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Verweistyp handelt.
+
+Mit dieser Regel implementieren Sie den Schnittstellenmember explizit unter Verwendung der Form Schnittstellenname.SchnittstelleMemberName, z. B. <xref:System.Collections.IList.Add%2A>. Die explizite Schnittstellenmember werden die Datentypen, die deklariert werden durch die Schnittstelle verwenden. Die stark typisierte Member implementieren, indem Sie den Namen des Schnittstellenmembers, wie `Add`. Die stark typisierte Member als öffentlich deklariert und deklarieren Sie die Parameter und Rückgabewerte, um den starken Typ aufweisen, der von der Sammlung verwaltet wird. Die starke Typen ersetzen schwächere Typen wie z. B. <xref:System.Object> und <xref:System.Array> , die von der Schnittstelle deklariert werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie explizit <xref:System.Collections.IList> Member und Bereitstellen von stark typisierten Alternativen für die Elemente, die bereits erwähnt wurden. Für Code, der ordnungsgemäß implementiert die <xref:System.Collections.IList> Schnittstelle, und bietet die erforderliche stark typisierte Member finden Sie im folgende Beispiel.
+ Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie explizit <xref:System.Collections.IList> Mitglieder und stark typisierte Alternativen für die Elemente, die zuvor erwähnten bereitstellen. Für Code, der ordnungsgemäß implementiert die <xref:System.Collections.IList> Schnittstelle, und bietet die erforderliche stark typisierte Member, siehe folgendes Beispiel.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie eine neue objektbasierte Auflistung, z. B. eine verknüpfte Liste implementieren, in denen Typen, die erweitern die neue Sammlung, zu, den starken Typ bestimmen. Diese Typen sollten diese Regel erfüllen und stark typisierte Member verfügbar machen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel, wenn Sie eine neue objektbasierte Sammlung, z. B. eine verknüpfte Liste implementieren, in dem der Typen, die die neue Auflistung erweitern den starken Typ bestimmen. Diese Typen sollten mit dieser Regel entsprechen und stark typisierte Member verfügbar machen.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel den Typ `YourType` erweitert <xref:System.Collections.CollectionBase?displayProperty=fullName>, wie alle stark typisierte Auflistungen sollten. Beachten Sie, dass <xref:System.Collections.CollectionBase> stellt die explizite Implementierung von der <xref:System.Collections.IList> Schnittstelle für Sie. Aus diesem Grund müssen Sie nur für die stark typisierte Member angeben <xref:System.Collections.IList> und <xref:System.Collections.ICollection>.
+ Im folgenden Beispiel den Typ `YourType` erweitert <xref:System.Collections.CollectionBase?displayProperty=fullName>, wie alle stark typisierte Auflistungen sollte. <xref:System.Collections.CollectionBase> Stellt die explizite Implementierung von der <xref:System.Collections.IList> Schnittstelle für Sie. Aus diesem Grund müssen Sie nur für die stark typisierte Member angeben <xref:System.Collections.IList> und <xref:System.Collections.ICollection>.
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
@@ -70,4 +73,9 @@ ms.locfileid: "31901039"
  [CA1038: Enumeratoren sollten eine starke Typisierung aufweisen](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.IList?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
+
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ICollection?displayProperty=fullName>
+- <xref:System.Collections.IEnumerable?displayProperty=fullName>
+- <xref:System.Collections.IList?displayProperty=fullName>
+- <xref:System.Object?displayProperty=fullName>

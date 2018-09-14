@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 696eed674dd2b85ec048290ba88084751230635d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924036"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547514"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Keine reservierten Ausnahmetypen auslösen
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -32,60 +33,65 @@ ms.locfileid: "31924036"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode löst einen Ausnahmetyp, ist zu allgemein oder von der Laufzeit reserviert ist.
+
+Eine Methode löst einen Ausnahmetyp, die zu allgemein oder von der Laufzeit reserviert ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die folgenden Ausnahmetypen sind zu Allgemein, über ausreichende Anmeldeinformationen für den Benutzer:
 
--   <xref:System.Exception?displayProperty=fullName>
+Die folgenden Ausnahmetypen sind zu Allgemein, genügend Informationen für Benutzer bereit:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
- Die folgenden Ausnahmetypen sind reserviert und sollte nur von der common Language Runtime ausgelöst werden:
+- <xref:System.SystemException?displayProperty=fullName>
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+Die folgenden Ausnahmetypen sind reserviert und darf nur durch die common Language Runtime ausgelöst werden:
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
- **Lösen Sie nicht allgemeine Ausnahmen**
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- Wenn Sie einen Typ allgemeine Ausnahme, z. B. auslösen <xref:System.Exception> oder <xref:System.SystemException> in einer Bibliothek oder einem Framework, erzwingt es Consumern, alle catch Ausnahmen, einschließlich Unbekannte Ausnahmen, die sie nicht wissen, wie behandeln.
+**Lösen Sie keine allgemeine Ausnahmen**
 
- Stattdessen entweder auslösen ein stärker abgeleiteten Typs, der bereits im Framework vorhanden ist, oder erstellen Sie einen eigene aus abgeleiteter Typ <xref:System.Exception>.
+Wenn Sie einen Typ allgemeine Ausnahme, z. B. auslösen <xref:System.Exception> oder <xref:System.SystemException> in einer Bibliothek oder einem Framework, erzwingt diese Consumer zum Abfangen aller Ausnahmen, einschließlich Unbekannte Ausnahmen, die sie nicht wissen, wie behandelt.
 
- **Bestimmte Ausnahmen auslösen**
+Stattdessen entweder auslösen ein stärker abgeleiteten Typs, die im Framework bereits vorhanden ist, oder erstellen Sie Ihre eigenen von abgeleiteter Typ <xref:System.Exception>.
 
- In der folgenden Tabelle werden die Parameter aufgeführt, und welche Ausnahmen auslösen, wenn den Parameter, einschließlich der Value-Parameter in der Set-Accessor einer Eigenschaft zu überprüfen:
+**Bestimmte Ausnahmen auslösen**
 
-|Beschreibung des Parameters|Ausnahme|
+Die folgende Tabelle zeigt die Parameter und welche Ausnahmen auslöst, wenn Sie überprüfen, den Parameter ob, einschließlich des Value-Parameters in der Set-Accessor einer Eigenschaft:
+
+|Parameterbeschreibung|Ausnahme|
 |---------------------------|---------------|
 |`null` Referenz|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|Außerhalb des zulässigen Bereichs von Werten (z. B. einen Index für eine Auflistung oder Liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|Außerhalb des zulässigen Bereichs von Werten (z. B. ein Index für eine Sammlung oder Liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Ungültige `enum` Wert|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Enthält ein Format, das nicht den Parameterspezifikationen einer Methode entspricht (z. B. die Formatzeichenfolge für `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|Andernfalls ungültig|<xref:System.ArgumentException?displayProperty=fullName>|
+|Enthält ein Format, das nicht die Parameterspezifikationen der eine Methode erfüllt (z. B. die Formatzeichenfolge für `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|Ungültig ist|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Wenn ein Vorgang für den aktuellen Status ausgelöst ungültige ist. <xref:System.InvalidOperationException?displayProperty=fullName>
+Wenn ein Vorgang für den aktuellen Status ausgelöst ist ungültig <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Wenn ein Vorgang für ein Objekt ausgeführt wird, das verworfen wurde ausgelöst <xref:System.ObjectDisposedException?displayProperty=fullName>
+Wenn ein Vorgang für ein Objekt ausgeführt wird, das verworfen wurde ausgelöst <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Wenn ein Vorgang wird nicht unterstützt (z. B. in eine überschriebene **Stream.Write** in einen Stream, der zum Lesen geöffnet) auslösen <xref:System.NotSupportedException?displayProperty=fullName>
+Wenn ein Vorgang wird nicht unterstützt (z. B. eine überschriebene **Stream.Write** in einen Stream zum Lesen geöffnet) auslösen <xref:System.NotSupportedException?displayProperty=fullName>
 
- Wenn eine Konvertierung zu einem Überlauf (z. B. in eine explizite Umwandlung operatorüberladung) bedingt auslösen <xref:System.OverflowException?displayProperty=fullName>
+Wenn eine Konvertierung zu einem Überlauf (z. B. in eine explizite Umwandlung operatorüberladung) führen würde auslösen <xref:System.OverflowException?displayProperty=fullName>
 
- Für alle anderen Situationen Estellen Sie einen eigene aus abgeleiteter Typ <xref:System.Exception> und diesen auslösen.
+Für alle anderen Fälle empfiehlt sich, Ihre eigenen von abgeleiteter Typ <xref:System.Exception> und auszulösen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ der ausgelösten Ausnahme für einen bestimmten Typ, der nicht zu den reservierten Typen ist.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ der ausgelösten Ausnahme für einen bestimmten Typ, der nicht zu den reservierten Typen ist.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1031: Allgemeine Ausnahmetypen nicht auffangen](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+
+- [CA1031: Allgemeine Ausnahmetypen nicht auffangen](../code-quality/ca1031-do-not-catch-general-exception-types.md)

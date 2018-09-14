@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281727"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552096"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 Eine Programmdatenbankdatei (.pdb) Programmdatei, auch als Symboldatei, bezeichnet, ordnet die Bezeichner, die Sie erstellen im Quellcode für Klassen, Methoden und anderer Code die Bezeichner, die in die kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei wichtige Informationen zu bestimmen:
@@ -215,7 +215,7 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 4.  Die Quellinformationen der PDB-Datei des Moduls. Dies kann der Speicherort der Quelldatei sein, als das Modul erstellt wurde, oder es kann ein Befehl für einen Quellserver sein.  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Suchen und Laden von Quelldateien mit der Seiten keine Source/No Symbole geladen  
- Wenn der Debugger die Ausführung an einem Speicherort unterbricht, an dem die Quelldatei nicht verfügbar ist, wird die Seite für **Keine Quelle geladen** oder die Seite **Keine Symbole geladen** geöffnet, auf der Sie die Quelldatei suchen können. Die Seite **Keine Symbole geladen** wird angezeigt, wenn der Debugger eine Symboldatei (PDB-Datei) für die ausführbare Datei nicht finden kann, um die Suche abzuschließen. Die Seite "Keine Symbole geladen" enthält Optionen zur Suche nach der Datei. Wenn die PDB-Datei gefunden wird, nachdem Sie eine der Optionen ausgeführt haben und der Debugger die Quelldatei mithilfe der Informationen in der Symboldatei abrufen kann, wird die Quelldatei angezeigt. Andernfalls wird die Seite für **Keine Quelle geladen** angezeigt, auf der das Problem beschrieben wird. Die Seite enthält Optionslinks zum Ausführen von Aktionen, mit denen das Problem möglicherweise behoben wird.  
+ Wenn der Debugger die Ausführung an einem Speicherort unterbricht, an dem die Quelldatei nicht verfügbar ist, wird die Seite für **Keine Quelle geladen** oder die Seite **Keine Symbole geladen** geöffnet, auf der Sie die Quelldatei suchen können. Die Seite **Keine Symbole geladen** wird angezeigt, wenn der Debugger eine Symboldatei (PDB-Datei) für die ausführbare Datei nicht finden kann, um die Suche abzuschließen. Die Seite "Keine Symbole geladen" enthält Optionen zur Suche nach der Datei. Wenn die PDB-Datei gefunden wird, nachdem Sie eine der Optionen ausführen, und der Debugger kann die Quelldatei, die mit den Informationen in der Symboldatei abrufen, wird die Quelle angezeigt. Andernfalls wird die Seite für **Keine Quelle geladen** angezeigt, auf der das Problem beschrieben wird. Die Seite enthält Optionslinks zum Ausführen von Aktionen, mit denen das Problem möglicherweise behoben wird.  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Hinzufügen von Quelldateisuchpfaden zu einer Projektmappe  
  Sie können ein Netzwerk oder lokale Verzeichnisse angeben, in denen nach Quelldateien gesucht werden soll.  
