@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552096"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612739"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 Eine Programmdatenbankdatei (.pdb) Programmdatei, auch als Symboldatei, bezeichnet, ordnet die Bezeichner, die Sie erstellen im Quellcode für Klassen, Methoden und anderer Code die Bezeichner, die in die kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei wichtige Informationen zu bestimmen:
@@ -45,7 +45,11 @@ Eine Programmdatenbankdatei (.pdb) Programmdatei, auch als Symboldatei, bezeichn
 Eine Symboldatei enthält auch den ursprünglichen Speicherort der Quelldateien und optional den Speicherort eines Quellservers, von dem die Quelldateien abgerufen werden können.
   
 > [!TIP]
-> Wenn Sie Code von außerhalb den Projektquellcode debuggen möchten, z. B. Windows-Code oder Code von Drittanbietern die projektaufrufe, müssen Sie den Speicherort der PDB-Datei (und optional die Quelldateien des externen Codes) angeben und diese Dateien müssen exakt mit den Build von t übereinstimmen er ausführbare Dateien.  
+> Wenn Sie Code von außerhalb den Projektquellcode debuggen möchten, z. B. Windows-Code oder Code von Drittanbietern die projektaufrufe, müssen Sie den Speicherort der PDB-Datei (und optional die Quelldateien des externen Codes) angeben und diese Dateien müssen exakt mit den Build von t übereinstimmen er ausführbare Dateien. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Wie kann ich die Symboldateien während des Debuggens verwalten? 
+
+Die **Module** Fenster können Sie ermitteln, welche Codemodule, die der Debugger wird behandelt, als Benutzercode oder mein Code und das Symbol Status für das Modul geladen. Sie können dieses Fenster auch verwenden, beim Laden von Symbolen beim Debuggen. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> Gesucht der Debugger, in denen nach Symboldateien? 
   
