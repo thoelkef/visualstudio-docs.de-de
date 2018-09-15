@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384226"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612687"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen Sie zum Debuggen mit Visual Studio
 
@@ -444,4 +444,4 @@ Funktionen, die Ihnen ermöglichen, Variablen untersuchen sind eines der nützli
 In diesem Tutorial haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und untersuchen Sie Variablen. Sie sollten einen allgemeinen Überblick über die Debugger-Features sowie Links zu weiteren Informationen zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [Tipps und Tricks zum Debugger](../debugger/debugger-tips-and-tricks.md)
