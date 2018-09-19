@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivie
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289306"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701766"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -32,12 +32,13 @@ Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betri
 3.  Sie müssen dem Mitarbeiter Folgendes angeben, um den Vorgang abzuschließen:
     - Die E-Mail Adresse, die Sie für die Anmeldung bei Ihrem Abonnement verwenden.
     - Die Abonnement-ID, die sich auf der Registerkarte [Abonnements](https://my.visualstudio.com/subscriptions) befindet.
+
     > [!div class="mx-imgBorder"]
     > ![Vorteil „Technischer Support“: Finden der Abonnement-ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.   
+> [!NOTE]
+> Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.   
 
 
 ## <a name="how-to-submit-an-incident"></a>Übermitteln eines Vorfalls

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008433"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552083"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
 
@@ -104,7 +104,7 @@ Durch Doppelklicken auf einen beliebigen Aufruflistenrahmen wird dieser Rahmen a
 
 ### <a name="step-between-python-and-native-code"></a>Abwechselnde Einzelschrittausführung zwischen Python und nativem Code
 
-Beim Verwenden der Befehle **Einzelschritt** (**F11**) oder **Ausführen bis Rücksprung** (**UMSCHALTTASTE**+**F11**) verarbeitet der Debugger im gemischten Modus Änderungen zwischen Codetypen ordnungsgemäß. Ein Beispiel: Wenn Python eine Methode eines Typs aufruft, der in C implementiert ist, wird die Einzelschrittausführung eines Aufrufs dieser Methode am Beginn der nativen Funktion angehalten, die die Methode implementiert. Gleiches gilt, wenn nativer Code eine Python-API-Funktion aufruft, die zu einem Aufruf von Python-Code führt. Die Einzelschrittausführung eines `PyObject_CallObject`-Objekts in einem Funktionswert, der ursprünglich in Python definiert wurde, wird am Beginn der Python-Funktion angehalten. Die Einzelschrittausführung von nativem Code aus Python heraus wird ebenfalls für native Funktionen unterstützt, die über [ctypes](http://docs.python.org/3/library/ctypes.html) von Python aufgerufen wurden.
+Beim Verwenden der Befehle **Einzelschritt** (**F11**) oder **Ausführen bis Rücksprung** (**UMSCHALTTASTE**+**F11**) verarbeitet der Debugger im gemischten Modus Änderungen zwischen Codetypen ordnungsgemäß. Ein Beispiel: Wenn Python eine Methode eines Typs aufruft, der in C implementiert ist, wird die Einzelschrittausführung eines Aufrufs dieser Methode am Beginn der nativen Funktion angehalten, die die Methode implementiert. Gleiches gilt, wenn nativer Code eine Python-API-Funktion aufruft, die zu einem Aufruf von Python-Code führt. Die Einzelschrittausführung eines `PyObject_CallObject`-Objekts in einem Funktionswert, der ursprünglich in Python definiert wurde, wird am Beginn der Python-Funktion angehalten. Die Einzelschrittausführung von nativem Code aus Python heraus wird ebenfalls für native Funktionen unterstützt, die über [ctypes](https://docs.python.org/3/library/ctypes.html) von Python aufgerufen wurden.
 
 ### <a name="pyobject-values-view-in-native-code"></a>Ansicht der PyObject-Werte im nativen Code
 
@@ -137,7 +137,7 @@ C-Typen, die **[Python-Ansicht]**-Knoten anzeigen (sofern aktiviert):
 
 Bei Python 2.x allerdings deklariert jeder Objekttyp seinen Header üblicherweise als Auflistung von Inlinefeldern, und es gibt keine Verknüpfung auf Typsystemebene im C/C++-Code zwischen benutzerdefiniert erstellten Typen und `PyObject`. Um **[Python-Ansicht]**-Knoten für solche benutzerdefinierten Typen zu aktivieren, bearbeiten Sie die Datei *PythonDkm.natvis* im [Installationsverzeichnis für Python Tools](installing-python-support-in-visual-studio.md#install-locations), und fügen Sie im XML-Code ein weiteres Element für Ihre C-Struktur oder C++-Klasse hinzu.
 
-Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](http://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject_HEAD` ein explizites `PyObject ob_base;`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
+Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject_HEAD` ein explizites `PyObject ob_base;`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
 
 ### <a name="native-values-view-in-python-code"></a>Ansicht der nativen Werte im Python-Code
 
