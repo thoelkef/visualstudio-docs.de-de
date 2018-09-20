@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b26895a5b25982dbc616b0df3a5618bcdcbb4d6b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f0df69c18641faa2fe45326eb65ac408dcfd081f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497564"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370793"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projektmodells
 Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Teilen eine Grundstruktur: das Modell für den Projekttyp. In Ihrem Projektmodell, das das VSPackage ist, Sie entwickeln, erstellen Sie die Objekte, die Ihre entwurfsentscheidungen entsprechen und zusammen mit globalen Funktionen, die von der IDE bereitgestellt. Auch wenn Sie steuern, wie ein Projektelement beibehalten wird, können z. B. Sie keine Benachrichtigung steuern, dass eine Datei beibehalten werden muss. Wenn ein Benutzer setzt den Fokus auf ein Projektelement öffnen, und wählt **speichern** auf die **Datei** Menü auf der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menü, Typ Projektcode abfangen, den Befehl in der IDE, speichern Sie die Datei muss und Senden Sie Benachrichtigungen zurück zur IDE, dass die Datei nicht mehr geändert wird.  
@@ -35,7 +35,7 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
   
 -   Jedes Projekt benötigen eine Vorlagendatei oder einen Assistenten, um die neue Projektdatei zu initialisieren, wenn ein Benutzer über ein neues Projekt erstellt die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche. Z. B. die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Vorlagen zu initialisieren, was schließlich VCPROJ-Dateien werden.  
   
- Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Sie können das Hilfsprogramm Anwendung verwenden `HierUtil7`, um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu den `HierUtil7` Anwendung-Hilfsprogramms, finden Sie unter [verwenden HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Sie können das Hilfsprogramm Anwendung verwenden `HierUtil7`, um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu den `HierUtil7` Anwendung-Hilfsprogramms, finden Sie unter [verwenden HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
  ![Grafik zum Visual Studio-Projekt Modell](../../extensibility/internals/media/vsprojectmodel.gif "VsProjectModel")  
 Projektmodell  
@@ -46,7 +46,7 @@ Projektmodell
   
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen Sie neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Verwenden Sie HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Verwenden Sie HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md)   
  [Erstellen von Projektinstanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Gewusst wie: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   

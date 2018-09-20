@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637054"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370548"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und die Metadaten-Konfiguration
 Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten und Filter Attribute bietet einen Mechanismus für Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um andere zu behandeln <xref:System.Type> Objekte (z. B. Datenstrukturen Klassen oder grafische Entitäten), wenn der Designer verfügbar ist, und wie die vom Designer unterstützt für Visual Studio-IDE konfiguriert ist (für die Instanz die **Toolbox** -Kategorie oder-Registerkarte zur Verfügung steht).  
@@ -100,4 +100,4 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [Erweitern Sie dDesign-Laufzeitunterstützung](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Erweitern der entwurfszeitunterstützung](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

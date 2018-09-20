@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498912"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370717"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Erstellen von Projektinstanzen mithilfe von projektfactorys
 Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *Projektzuordnungsinstanz* zum Erstellen von Instanzen von Project-Objekte. Eine Projektzuordnungsinstanz ähnelt einer standard-Klassenfactory für cocreatable COM-Objekte. Project-Objekte sind jedoch nicht cocreatable; Sie können nur erstellt werden, mithilfe einer Projektfactory.  
@@ -28,7 +28,7 @@ Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ver
   
  Sie können die implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle in einer Klasse in Ihrem Projekt. In der Regel befindet sich in ein eigenes Modul.  
   
- Ein Beispiel für die Implementierung von der `IVsProjectFactory` Benutzeroberfläche, siehe *PrjFac.cpp*, der in enthalten ist die [Basisprojekt](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) Beispielverzeichnis.  
+ Ein Beispiel für die Implementierung von der `IVsProjectFactory` Benutzeroberfläche, siehe *PrjFac.cpp*, der in enthalten ist die [Basisprojekt](https://www.microsoft.com/download/details.aspx?id=55984) Beispielverzeichnis.  
   
  Projekte, die unterstützen, die aggregiert wird durch einen Besitzer müssen es sich um einen Besitzer-Schlüssel in der Projektdatei beibehalten. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> Methode mit einem Besitzer-Schlüssel an einem Projekt aufgerufen wird, das besessenen Projekt konvertiert seinen Besitzer-Schlüssel in eine Projektzuordnungsinstanz GUID dann Ruft die `CreateProject` Methode für dieses Projekt-Factory die tatsächliche Erstellung zu tun.  
   

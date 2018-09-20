@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511664"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370574"
 ---
 # <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen Sie neuer Projekttypen
 Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:  
@@ -36,7 +36,7 @@ Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließ
   
     -   Projektfactory, um das Erstellen neuer Projekte, und Öffnen von vorhandenen Projekten zu verwalten. Weitere Informationen finden Sie unter [Erstellen von Projektinstanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Teamprojekthierarchie und Behandlung von Befehlen. Weitere Informationen finden Sie unter [verwenden HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md), [Hauptkomponenten eines Projekt](../../extensibility/internals/project-model-core-components.md), und [ MenuCommands im Vergleich zu OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
+    -   Teamprojekthierarchie und Behandlung von Befehlen. Weitere Informationen finden Sie unter [verwenden HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md), [Hauptkomponenten eines Projekt](../../extensibility/internals/project-model-core-components.md), und [ MenuCommands im Vergleich zu OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
   
     -   Verwaltung, einschließlich des Hinzufügens von das Projekt für die Elemente der **neues Projekt** Dialogfeld. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
   

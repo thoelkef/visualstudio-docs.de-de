@@ -12,41 +12,44 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0ec537ec070188c967c2db02548cf487180c0bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949435"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370912"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
+
 Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen installieren, die Sie mithilfe von Visual Studio erstellt haben.
 
-## <a name="installing-your-extension"></a>Installieren der Erweiterung
- Die Erweiterung wird zu einer VSIX-Datei kompiliert, die Sie auf anderen Computern installieren können. Sie können sie auch auf dem Entwicklungscomputer installieren, um die Erweiterung in der Hauptinstanz von Visual Studio verfügbar zu machen.
+## <a name="install-your-extension"></a>Installieren der Erweiterungs
 
-#### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung
+Die Erweiterung wird zu einer VSIX-Datei kompiliert, die Sie auf anderen Computern installieren können. Sie können sie auch auf dem Entwicklungscomputer installieren, um die Erweiterung in der Hauptinstanz von Visual Studio verfügbar zu machen.
 
-1.  In das Projekt mit **source.vsix.manifest**öffnen **"bin"\\ \***  im Datei-Explorer.
+### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung
 
-2.  Kopieren der  **\*VSIX** -Datei auf den Computer, auf dem Sie die Erweiterung installieren möchten.
+1.  Klicken Sie in das Projekt mit **source.vsix.manifest**öffnen **Bin\\ \***  im Datei-Explorer.
+
+2.  Kopieren der  **\*VSIX** Datei auf dem Computer, auf denen die Erweiterung installiert werden sollen.
 
 3.  Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.
 
      Das VSIX-Installationsprogramm wird geöffnet.
 
-#### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
+### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 
 1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
 
 2.  Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **Deinstallieren**.
 
-## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installieren einer Erweiterung auf einem Team Foundation Build-Server
- Auf [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]-Servern ist Visual Studio normalerweise nicht installiert, daher können Sie VSIX nicht durch Doppelklicken installieren. Die Installation von [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] schließt einige Komponenten ein, die das Ausführen einer VSIX-Erweiterung ermöglichen, Sie müssen die Erweiterung jedoch manuell installieren.
+## <a name="install-an-extension-on-team-foundation-server"></a>Installieren Sie eine Erweiterung für Team Foundation Server
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>So installieren Sie die Ebenenerweiterung auf einem [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]-Server
+Team Foundation Server-Servern müssen normalerweise keine Visual Studio installiert, und Sie können nicht so die VSIX-Datei installieren, indem Sie darauf doppelklicken. Sie müssen die Erweiterung manuell installieren.
 
-1.  Kopieren der **VSIX** Dateien vom Entwicklungscomputer auf den [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Computer.
+### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>So installieren Sie die ebenenerweiterung auf einem Server für Team Foundation Server
+
+1.  Kopieren der **VSIX** Dateien vom Entwicklungscomputer auf den Team Foundation Server (TFS)-Computer.
 
      Speichern Sie die VSIX-Datei in einem der folgenden Speicherorte:
 
@@ -54,23 +57,20 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
 
          %ProgramFiles%\Microsoft Visual Studio [Version]\Common7\IDE\Extensions\Microsoft
 
-    -   So führen Sie die Installation nur für den Netzwerkdienst aus, der [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] ausführt:
+    -   So installieren Sie nur für den Netzwerkdienst, der den Build ausgeführt wird:
 
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-    -   Wenn Sie [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] zur Ausführung im interaktiven Modus für einen bestimmten Benutzer konfiguriert haben, können Sie die Installation nur für diesen Benutzer ausführen:
+    -   Wenn Sie den Build zur Ausführung im interaktiven Modus als einen bestimmten Benutzer konfiguriert haben, können Sie nur für diesen Benutzer installieren:
 
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [Version]
-
-        > [!NOTE]
-        >  %LocalAppData% ist in der Regel *DriveName*: Benutzer*Benutzername*AppDataLocal.
+         %LocalAppData%\Microsoft\VisualStudio\\[Version] \Extensions\Microsoft
 
 2.  Erweitern Sie jede VSIX-Datei in einen Ordner am gleichen Speicherort:
 
-    1.  Ändern Sie die Dateinamenerweiterung von **VSIX** auf **ZIP**.
+    1.  Ändern Sie die Dateierweiterung von **VSIX** zu **ZIP**.
 
     2.  Extrahieren Sie den Inhalt der ZIP-Datei in einen Ordner.
 
     3.  Löschen Sie die ZIP-Datei.
 
-3.  Starten Sie [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] neu.
+3.  Starten Sie TFS neu.

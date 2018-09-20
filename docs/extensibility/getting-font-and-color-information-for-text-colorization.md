@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499698"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370665"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen von Schriftart- und farbanbieters für die farbliche Kennzeichnung von text
 Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Benutzeroberfläche (UI) hängt von den Typ des Projekts, die Technologie und Developer-Einstellungen. Die **Schriftarten und Farben** auf der Seite werden die Einstellungen gespeichert.
@@ -50,4 +50,4 @@ Nachdem Sie Schriftart und Farbinformationen abgerufen haben, analysiert des Tex
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [Verwenden von Schriftarten und text](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [Arbeiten mit Farben](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI (Graphics Device Interface)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI (Graphics Device Interface)](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)
