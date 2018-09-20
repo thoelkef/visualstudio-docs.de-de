@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321124"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371061"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -50,18 +50,16 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht ist, können ü
 
  **Anforderungen**
 
--   Visual Studio
-
--   Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen
+-   Visual Studio
 
 -   Eine Lösung, die ein Modellierungsprojekt mit einem Abhängigkeitsdiagramm enthält. In diesem Abhängigkeitsdiagramm muss mit Artefakten in c# oder Visual Basic-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Sie können den Code manuell aus einer open Abhängigkeitsdiagramm in Visual Studio oder über eine Eingabeaufforderung überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur, die mithilfe von Abhängigkeitsdiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).
+Sie können den Code manuell aus einer open Abhängigkeitsdiagramm in Visual Studio oder über eine Eingabeaufforderung überprüfen. Sie können Code auch automatisch überprüfen, wenn das Ausführen von lokalen Builds oder Azure-Pipelines erstellt. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur, die mithilfe von Abhängigkeitsdiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Wenn Sie die Ebenenvalidierung mit Team Foundation Build ausführen möchten, muss auch Visual Studio auf dem Buildserver installiert werden.
+> Wenn Sie die ebenenvalidierung mit Team Foundation Server ausführen möchten, müssen Sie auch die gleiche Version von Visual Studio auf dem Buildserver installieren.
 
 -   [Überprüfen Sie, ob ein Element die Validierung unterstützt](#SupportsValidation)
 
@@ -166,7 +164,7 @@ In dieser Version von Visual Studio abhängigkeitsüberprüfung tritt auf, in Ec
  Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] eine Arbeitsaufgabe zu protokollieren.
 
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. In höheren Releases von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.
+>  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie ein Arbeitselement für einen Validierungsfehler
 
@@ -182,51 +180,32 @@ In dieser Version von Visual Studio abhängigkeitsüberprüfung tritt auf, in Ec
 |Ausblenden aller unterdrückten Fehler aus der **Fehlerliste** Fenster|Mit der rechten Maustaste an einer beliebigen Stelle der **Fehlerliste** Fenster, zeigen Sie auf **Validierungsfehler**, und klicken Sie dann auf **Unterdrückte Fehler ausblenden**.|
 
 ##  <a name="ValidateAuto"></a> Code automatisch überprüfen
- Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Team Foundation Build von Ihrem Team verwendet wird, können Sie eine Ebenenvalidierung mit Gated-Check-Ins durchführen, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe erstellen und Überprüfungsfehler mithilfe von Buildberichten sammeln. Erstellen von abgegrenzten Eincheckbuilds finden Sie [verwenden Sie einen Buildprozess mit abgegrenztem Eincheckvorgang zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Ihr Team Azure DevOps verwendet, können Sie ebenenvalidierung mit gated-Check-ins, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe und mithilfe von Buildberichten werden Validierungsfehler erfasst erstellen, ausführen. Erstellen von abgegrenzten Eincheckbuilds finden Sie [verwenden Sie einen Buildprozess mit abgegrenztem Eincheckvorgang zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>So überprüfen Sie Code automatisch während eines lokalen Builds
 
--   Öffnen Sie die Modellierungsprojektdatei (.modelproj) mithilfe eines Text-Editors, und fügen Sie dann die folgende Eigenschaft ein:
+Öffnen Sie die Modellierungsprojektdatei (.modelproj) mithilfe eines Text-Editors, und fügen Sie dann die folgende Eigenschaft ein:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- oder –
+\- oder –
 
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das Abhängigkeitsdiagramm oder Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
 
 2.  In der **Eigenschaften** legen des Modellierungsprojekts **Architektur überprüfen** Eigenschaft **"true"**.
 
-     Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.
+    Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.
 
 3.  In **Projektmappen-Explorer**, klicken Sie auf die Ebenendiagrammdatei (.layerdiagram)-Abhängigkeitsdatei, die Sie für die Validierung verwenden möchten.
 
 4.  In der **Eigenschaften** Fenster, stellen Sie sicher, dass des Diagramms **Buildvorgang** -Eigenschaftensatz auf **überprüfen**.
 
-     Dies schließt das Abhängigkeitsdiagramm in den Validierungsprozess.
+    Dies schließt das Abhängigkeitsdiagramm in den Validierungsprozess.
 
- Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierungsfehler](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>So überprüfen Sie Code automatisch für einen Team Foundation Build
-
-1.  In **Team Explorer**, doppelklicken Sie auf die Builddefinition, und klicken Sie dann auf **Prozess**.
-
-2.  Klicken Sie unter **Buildprozessparameter**, erweitern Sie **Kompilierung**, und geben Sie Folgendes in die **MSBuild-Argumente** Parameter:
-
-     `/p:ValidateArchitecture=true`
-
- Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen über [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] finden Sie hier:
-
--   [Azure-Pipelines](/azure/devops/pipelines/index?view=vsts)
-
--   [Verwenden der Standardvorlage für den Buildprozess](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Ändern Sie die älteren Builddefinitionen, die Upgradevorlage.XAML](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Anpassen der Buildprozessvorlage](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Überwachen Sie den Fortschritt eines Builds ausgeführt wird](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierungsfehler](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Ebenenvalidierungsprobleme
  In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).

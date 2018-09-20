@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513347"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370697"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Bewährte Methoden für die Sicherheit in VSPackages
 So installieren Sie die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] auf dem Computer, müssen Sie in einem Kontext mit Administratorrechten ausgeführt werden. Die grundlegende Einheit von Sicherheit und Bereitstellung von einem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anwendung ist die [VSPackage](../../extensibility/internals/vspackages.md). Eine VSPackage muss registriert werden, mithilfe von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], wodurch es auch administrative Anmeldeinformationen erforderlich.  
@@ -31,8 +31,8 @@ So installieren Sie die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_
   
  Benutzer sollten stellen Sie sicher, dass sie VSPackages nur von vertrauenswürdigen Quellen installieren. Unternehmen entwickeln von VSPackages sollte stark benennen und Sie zu signieren, um dem Benutzer zu gewährleisten, Manipulationen verhindert werden. Entwickeln von VSPackages Unternehmen sollten ihre externen Abhängigkeiten auf, wie z. B. Webdienste und remote-Installation, auswerten und beheben Sie alle eventuell vorhandenen Sicherheitsrisiken untersuchen.  
   
- Weitere Informationen finden Sie unter [für .NET Framework Schreiben von sicherem Code](http://msdn.microsoft.com/library/d55zzx87.aspx).  
+ Weitere Informationen finden Sie unter [für .NET Framework Schreiben von sicherem Code](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Add-in-Sicherheit](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX-Sicherheit](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [Add-in-Sicherheit](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX-Sicherheit](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
