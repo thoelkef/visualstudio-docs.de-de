@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499990"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496102"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen einer Ansicht Zusatzelement, Befehle und Einstellungen)
 Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Effekten erweitern. Diesem Artikel erfahren Sie, wie zum Einstieg in eine Funktion für beliebte Erweiterung Spaltenführungslinien können. Spaltenführungslinien werden visuell hell Zeilen, die auf den Text-Editor-Ansicht helfen Ihnen beim Verwalten von Code, um bestimmte Spaltenbreite gezeichnet. Insbesondere kann formatierten Code für Beispiele wichtig sein, Sie enthalten, die in Dokumenten, Blogbeiträgen oder Fehlerberichte, werden sollen.  
@@ -35,7 +35,7 @@ Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Ef
   
 -   Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen  
   
- Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Beachten Sie**: In dieser exemplarischen Vorgehensweise Sie viel Code in ein Paar von Vorlagen für Visual Studio-Erweiterung generierte Dateien einfügen. Aber in Kürze in dieser exemplarischen Vorgehensweise wird finden Sie eine vollständige Lösung auf Github mit anderen Beispielen für die Erweiterung. Der fertige Code unterscheidet sich geringfügig, dass es sich um echte Befehlssymbole anstelle von Generictemplate Symbole hat.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Fertig gestellten Code-Projekt  
  Es ist bald ein Github-Projekt von Visual Studio-Erweiterbarkeit-Beispielen, und das abgeschlossene Projekt benötigen, ist vorhanden. In diesem Artikel wird aktualisiert werden, um es zu zeigen, wenn dies der Fall ist. Das abgeschlossene Beispielprojekt möglicherweise andere Guids und erhalten einen Streifen unterschiedliche Bitmaps, Symbole Befehl.  
   
- Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Im editor](../extensibility/inside-the-editor.md)   

@@ -1,5 +1,5 @@
 ---
-title: Source Control-Plug-ins | Microsoft Docs
+title: Source-Control-Plug-ins | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,62 +13,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3395275938d78178f6f39ccd0f67dca01194bcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140215"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495699"
 ---
-# <a name="source-control-plug-ins"></a>Datenquellen-Steuerelement-Plug-ins
-Der Referenzabschnitt Source Control-Plug-in SDK enthält die vollständige Benutzeroberfläche-Spezifikation, mit dem Quellcode-Verwaltungssysteme mit integriert werden kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gibt an, die Syntax und Semantik der verschiedenen Funktionen und Daten, die die Datenquellen-Steuerelements, das plug-in implementieren muss, für die Kommunikation mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE).  
+# <a name="source-control-plug-ins"></a>Quellcodeverwaltungs-Plug-Ins
+Der Referenzabschnitt Source Control-Plug-in SDK enthält die vollständige Benutzeroberfläche-Spezifikation, mit dem Quellcodeverwaltungs-Systeme integriert werden kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Es gibt an, die Syntax und Semantik der verschiedenen Funktionen und Daten, die das Quellcodeverwaltungs-Plug-in implementieren muss, um die Kommunikation mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)  
- Führt Funktionen auf, die von der quellcodeverwaltung-Plug-in implementiert werden müssen, damit Sie um mit der Source Control-Plug-in-API zu erfüllen.  
+ Führt Funktionen auf, die durch das Quellcodeverwaltungs-Plug-in implementiert werden müssen, um die Datenquellen-Plug-in-API entsprechen.  
   
  [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)  
- Beschreibt Funktionen, die das Quellsteuerelement-Plug-in verwendet wird, um Informationen an der IDE übergeben wird, während bestimmte Befehle ausgeführt werden.  
+ Beschreibt Funktionen, die das Quellcodeverwaltungs-Plug-in verwendet wird, um zurück zur IDE Informationen übergeben, während bestimmte Befehle ausgeführt werden.  
   
  [Enumeratoren](../extensibility/enumerators.md)  
- Listet die Enumerator-Datentypen in der Quelle Steuerelement-Plug-in-API, die die Datenquellen-Steuerelement-Plug-in zu kennen muss.  
+ Listet die Datentypen der Enumerator in der Quelle Steuerelement-Plug-in-API, die das Quellcodeverwaltungs-Plug-in zu kennen müssen.  
   
  [Funktionsflags](../extensibility/capability-flags.md)  
- Beschreibt die `SCC_CAP_xxx` Flags, die Funktionen des Anbieters angegeben werden.  
+ Beschreibt die `SCC_CAP_xxx` Flags, die Funktionen des Providers angegeben werden.  
   
  [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)  
- Listet die Flags, die im Kontext der bestimmten Befehlen nützlich sind.  
+ Listet die Flags, die im Kontext der bestimmten Befehle nützlich sind.  
   
  [Fehlercodes](../extensibility/error-codes.md)  
  Listet häufige Fehler Rückgabewerte von Funktionen als `SCCTRN`.  
   
  [Als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-Ins verwendete Zeichenfolgen](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)  
- Beschreibt die Schlüssel für den Zugriff auf die Registrierung, um die Datenquellen-Steuerelement-Plug-in ermitteln.  
+ Beschreibt die Schlüssel für den Zugriff auf die Registrierung, um das Quellcodeverwaltungs-Plug-in finden.  
   
  [Datei „MSSCCPRJ.SCC“](../extensibility/mssccprj-scc-file.md)  
- Beschreibt eine clientseitige Datei enthält Informationen, die für die IDE nicht transparent, aber, wird von der quellcodeverwaltung-Plug-in verwendet, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen.  
+ Beschreibt eine clientseitige Datei mit den Informationen, die für die IDE nicht transparent, aber wird, durch das Quellcodeverwaltungs-Plug-in, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen.  
   
  [Bewährte Methoden für die Implementierung eines Quellcodeverwaltungs-Plug-ins](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md)  
- Stellt eine Auflistung der wichtigen technischen Erinnerungen zu merken, während Sie die Datenquellen-Steuerelement-Plug-in-API implementieren.  
+ Stellt eine Auflistung der wichtigen technischen Erinnerungen zu merken, während Sie die Datenquellen-Plug-in-API implementieren.  
   
  [Einschränkungen für die Längen von Zeichenfolgen](../extensibility/restrictions-on-string-lengths.md)  
- Beschreibt die Einschränkungen in der Quelle Steuerelement-Plug-in-API auf die Länge der Zeichenfolgen, die in verschiedenen Funktionen verwendet.  
+ Beschreibt die Einschränkungen in der Quelle-Plug-in-API für die Längen der Zeichenfolgen, die in verschiedenen Funktionen verwendet.  
   
  [Glossar](../extensibility/source-control-plug-in-glossary.md)  
- Bietet hilfreiche Begriffe und ihre Definitionen für die Datenquellen-Steuerelement-Plug-in SDK-Dokumentation lesen.  
+ Bietet nützliche Begriffe und ihre Definitionen für die Source-Control-Plug-in SDK-Dokumentation lesen.  
   
  [Gewusst wie: Deaktivieren von Kompatibilitätswarnungen für Quellcodeverwaltungs-Plug-ins](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
- Beschreibt, wie Warnungen deaktivieren.  
+ Beschreibt, wie ein, um Warnungen zu deaktivieren.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Plug-in-Beispiel für die Datenquellen-Steuerelement](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
- Enthält ein Beispiel der Quellcodeverwaltungsfunktion-Plug-in.  
+ [Beispiel für Datenquellen-Steuerelement-Plug-in](https://www.microsoft.com/download/details.aspx?id=55984)  
+ Enthält ein Beispiel der Quellcodeverwaltungsfunktionen-Plug-in.  
   
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
- Beschreibt Testverfahren im Zusammenhang mit der ein Quellcodeverwaltungs-Plug-in.  
+ Beschreibt, wie Tests im Zusammenhang mit der ein Quellcodeverwaltungs-Plug-in.  
   
  [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Erläutert, wie ein Quellcodeverwaltungs-Plug-in erstellen, das Quellcodeverwaltungsfunktion bereitstellt, während der Verwendung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Quelle Steuerelement-Benutzeroberfläche (UI).  
+ Erläutert, wie ein Quellcodeverwaltungs-Plug-in erstellen, die Quellcodeverwaltungsfunktionen bereitstellt, während der Verwendung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Source Control-Benutzeroberfläche (UI).  
   
  [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md)  
- Zeigt eine Liste von Themen mit Referenzinformationen.
+ Zeigt eine Liste von Themen der Referenz.
