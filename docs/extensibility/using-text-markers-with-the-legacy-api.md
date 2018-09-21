@@ -1,5 +1,5 @@
 ---
-title: Die Legacy-API Text Marker mit | Microsoft Docs
+title: Verwenden von Textmarkierungen mit der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,62 +13,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141941"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496128"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Text Marker mit der Legacy-API
-Ein Marker Text ist, einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige Unterstreichung und nur-Lese Regionen. Text-Marker sind im Grunde Syntaxfarben unterscheiden. Syntaxfarben ist eine schnelle Möglichkeit, die Sprachsyntax kommunizieren, die dem Textbereich zugeordnet ist. Syntaxfarben wird in der Regel angefordert, wenn Windows den Bildschirm aktualisiert, wenn die Geschwindigkeit wichtig ist. Syntaxfarben ändert nur die Farbe des Texts. Text-Marker können viele andere Texteigenschaften ändern. Text-Marker "float" und besonderes Verhalten angewendet werden können und Farbgebung.  
+# <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
+Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige unterstreichungen und schreibgeschützter Bereiche. Textmarkierungen unterscheiden sich grundsätzlich von Syntaxfarben. Farben für Syntax ist eine schnelle Möglichkeit, um die Sprachsyntax zu kommunizieren, die dem Textbereich zugeordnet ist. Farben für Syntax wird in der Regel angefordert, wenn Windows den Bildschirm zeichnet neu, wenn Geschwindigkeit von Bedeutung ist. Farben für Syntax ändert nur die Farbe des Texts. Textmarkierungen können viele andere Eigenschaften des Texts ändern. Textmarkierungen "float" und besonderes Verhalten angewendet werden können und färben.  
   
- Erstellen Sie aufgrund der zusätzlichen Verwaltungsaufwand ist mit Text Marker nicht viele Marker für Ihre Textpuffer. Marker wird jedes Mal aktualisiert, dass ein Benutzer den Inhalt des Puffers bearbeitet.  
+ Erstellen Sie aufgrund des Leistungsoverheads Textmarkierungen zugeordnet wird nicht viele Marker für Ihre Textpuffer. Marker wird aktualisiert, wenn ein Benutzer den Inhalt des Puffers bearbeitet.  
   
 > [!NOTE]
->  Benutzer können die Farbe einen Markertyp sichtbar, aber nicht seine Form und des Stils ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Optionen (Dialogfeld)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+>  Benutzer können die Farbe des einen sichtbaren Markertyp, aber nicht die Form und Stil ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Vorgehensweise: Hinzufügen von Standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md)|Beschreibt, wie Sie einen standard-Text-Markertyp gebotenen Hinzufügen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor eine anzuzeigende Text.|  
-|[Vorgehensweise: Implementieren von Fehler Marker](../extensibility/how-to-implement-error-markers.md)|Beschreibt, wie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Marker, der verwendet wird, um Fehler weisen darauf hin, mit roten Wellenlinien unterstrichen.|  
-|[Vorgehensweise: Erstellen von benutzerdefinierten Text-Marker](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht einen Markertyp benutzerdefinierten Text hinzuzufügen.|  
-|[Vorgehensweise: Verwenden von Text-Marker](../extensibility/how-to-use-text-markers.md)|Erläutert, wie Text Marker hinzufügen.|  
-|[In der Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen des Editors Core und bietet ausführliche Informationen zum Anpassen des Core-Editors.|  
-|[Editor-Funktionen](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen, die verfügbar sind, in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor.|  
+|[Vorgehensweise: Hinzufügen von Standardtextmarkierungen](../extensibility/how-to-add-standard-text-markers.md)|Beschreibt das Hinzufügen von bereitgestellten Typ des Markers eine standard-Text der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf eine Textansicht-Kern-Editor.|  
+|[Vorgehensweise: Implementieren von Fehlermarkierungen](../extensibility/how-to-implement-error-markers.md)|Beschreibt, wie Sie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Marker, der verwendet wird, um Fehler anzugeben, mit einer roten Wellenlinie unterstrichen.|  
+|[Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen.|  
+|[Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)|Erläutert das Hinzufügen von Textmarkierungen.|  
+|[Im Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen von der Kern-Editor, und enthält ausführliche Informationen zum Anpassen der Kern-Editor.|  
+|[Editor-Funktionen](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor.|  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Bietet einen einheitlichen Mechanismus zum Abrufen von Informationen über einen Markertyp bestimmtem Text, ob vom Editor vordefiniert oder durch ein VSPackage registriert.  
+ Bietet einen einheitlichen Mechanismus zum Abrufen von Informationen über einen bestimmten textmarkertyp, ob vom Editor vordefiniert oder durch ein VSPackage registriert.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- Bietet Zugriff auf und passt die Position des ein Marker Text in einem Textpuffer mithilfe von zweidimensionalen Koordinaten an.  
+ Bietet Zugriff auf und passt die Position eines textmarkers in einem Textpuffer mithilfe der zweidimensionale Koordinaten.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- Stellt Methoden zum Verwalten von Text-Marker.  
+ Stellt Methoden zum Verwalten von textmarkern bereit.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Rückrufe bietet die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE und anderen Prozessen, die verwendet werden, um einen Marker Text anzupassen.  
+ Stellt Rückrufe an die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE und andere Prozesse, die verwendet werden, um eine textmarkierung anzupassen.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Erweitert die Funktionalität, die über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle durch zusätzliche Rückrufe bereitstellen.  
+ Erweitert die Funktionalität, die über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> -Schnittstelle durch Bereitstellen zusätzlicher Rückrufe.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Erweitert die Funktionalität, die über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle durch zusätzliche Rückrufe bereitstellen.  
+ Erweitert die Funktionalität, die über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> -Schnittstelle durch Bereitstellen zusätzlicher Rückrufe.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
  Können einen Markertyp aus, um festzustellen, ob andere Markertypen den gleichen Satz von Farben verwenden.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Stellt den Kontext für Text Marker in der Core-Editor bereit. Für jeden Text Marker, die in der Core-Editor ist, erstellt die IDE eine Separate <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Objekt.  
+ Stellt den Kontext für Textmarker im kerneditor bereit. Für jede textmarkertyp, die in der Kern-Editor ist, erstellt die IDE eine Separate <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Objekt.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- Ein Handler, der Marker aus Gründen, dessen Symbole Drag & Drop-Bearbeitung unterstützen. Ein Symbol ist ein Symbol, das die Position des ein Marker angibt.  
+ Ein Handler, der für Marker angegeben ist, dessen Symbole Drag & Drop-Bearbeitung unterstützt. Ein Symbol ist ein Symbol, das die Position eines Markers angibt.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Gibt eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> Schnittstelle von einem Dienst, der einen Text Marker aus, die anderen VSPackages bereitstellt.  
+ Gibt eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> -Schnittstelle aus einem Dienst, der einen Text Marker aus, die anderen VSPackages bereitstellt.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Bietet Zugriff auf und passt die Position des ein Marker Text in einem Textpuffer mithilfe von eindimensionalen Koordinaten an. Wenn es möglich ist, verwenden Sie diese Schnittstelle nicht.
+ Bietet Zugriff auf und passt die Position eines textmarkers in einem Textpuffer mithilfe der eindimensionale Koordinaten. Wenn es möglich ist, verwenden Sie diese Schnittstelle nicht.

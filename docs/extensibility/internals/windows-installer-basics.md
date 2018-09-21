@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513425"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495543"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen oder Softwareprodukte auf dem Computer eines Benutzers, Ausführen dieser Aufgaben in so genannten Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet). Eine GUID identifiziert jedes WIC, die die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die mit Windows Installer ist.  
@@ -75,4 +75,4 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
 -   Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

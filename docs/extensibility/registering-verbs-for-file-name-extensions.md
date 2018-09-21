@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639728"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495257"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzugte Maßnahme, die auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies wird bevorzugt, dass die Aktion mit einem Verb, z. B. geöffnet ist, verknüpft ist, die die Aktion entspricht.  
   
- Sie können die Verben, die ein programmatischer Bezeichner (ProgID) zugeordnet sind, wenn eine Erweiterung mit dem Shell-Schlüssel im Pfad registrieren **HKEY_CLASSES_ROOT\{progid} \shell**. Weitere Informationen finden Sie unter [Dateitypen](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Sie können die Verben, die ein programmatischer Bezeichner (ProgID) zugeordnet sind, wenn eine Erweiterung mit dem Shell-Schlüssel im Pfad registrieren **HKEY_CLASSES_ROOT\{progid} \shell**. Weitere Informationen finden Sie unter [Dateitypen](/windows/desktop/shell/fa-file-types).  
   
 ## <a name="register-standard-verbs"></a>Registrieren Sie die standard-Verben  
  Das Betriebssystem erkennt die folgenden standard-Verben:  

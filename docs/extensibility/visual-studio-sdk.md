@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586774"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495816"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Features in Visual Studio integrieren. Sie können Ihre Erweiterungen für andere Benutzer sowie für Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:  
@@ -68,7 +68,7 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
 ## <a name="other-visual-studio-sdk-resources"></a>Andere Visual Studio SDK-Ressourcen  
  Wenn Sie zu Visual Studio SDK PASST Fragen, oder Ihre Erfahrungen mit dem Entwickeln von Erweiterungen freigeben möchten, können Sie die [Visual Studio Extensibility Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) oder [ExtendVS Gitter-Chatroom](https://gitter.im/Microsoft/extendvs).  
   
- Können weitere Informationen finden Sie in der [VSX Arcana Blog](http://blogs.msdn.com/b/vsx/) und eine Reihe von Blogs von Microsoft-MVPs geschrieben:  
+ Können weitere Informationen finden Sie in der [VSX Arcana Blog](https://blogs.msdn.microsoft.com/vsx/) und eine Reihe von Blogs von Microsoft-MVPs geschrieben:  
   
 -   [Bevorzugten Visual Studio-Erweiterungen](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

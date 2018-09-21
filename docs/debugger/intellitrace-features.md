@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace-Funktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279530"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495725"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 
@@ -42,21 +42,21 @@ Um zu bestätigen, dass IntelliTrace aktiviert ist, öffnen Sie die **Tools > Op
 > [!NOTE]
 > Der Bereich der Einstellungen auf der **IntelliTrace** -Optionsseite umfasst Visual Studio als Ganzes, nicht einzelne Projekte oder Lösungen. Eine Änderung dieser Einstellungen gilt für alle Instanzen von Visual Studio, alle Debugsitzungen und alle Projekte oder Projektmappen.
 
-## <a name="ChooseEvents"></a> Wählen Sie die Ereignisse von IntelliTrace aufgezeichneten
+## <a name="ChooseEvents"></a> Wählen Sie die Ereignisse von IntelliTrace aufgezeichneten (nur verwalteter Code)
 
 Sie können die Aufzeichnung bestimmter IntelliTrace-Ereignisse aktivieren oder deaktivieren.
 
 Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln Sie zu **Tools > Optionen > IntelliTrace > IntelliTrace-Ereignisse**. Wählen Sie die Ereignisse, die IntelliTrace aufgezeichnen soll.
 
-## <a name="Snapshots"></a> Erfassen Sie Ereignisse und-Momentaufnahmen
+## <a name="Snapshots"></a> Sammeln von Momentaufnahmen
 
-Dies ist nicht standardmäßig aktiviert, aber IntelliTrace kann Momentaufnahmen von Ihrer Anwendung bei jedem Breakpoint und Debuggerschritt-Schritt-Ereignis erfassen, und können Sie diesen Momentaufnahmen in eine verlaufsdebugsitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Ereignisse und Momentaufnahmen**. Weitere Informationen finden Sie unter [Rückschritt von IntelliTrace mit Momentaufnahmen anzeigen](../debugger/how-to-use-intellitrace-step-back.md)
+Dies ist nicht standardmäßig aktiviert, jedoch IntelliTrace kann Momentaufnahmen von Ihrer Anwendung bei jedem Breakpoint und Debuggerschritt-Schritt-Ereignis erfassen, und Sie können diese Momentaufnahmen in eine verlaufsdebugsitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Momentaufnahmen (verwaltet und systemeigen)**. Weitere Informationen finden Sie unter [Rückschritt von IntelliTrace mit Momentaufnahmen anzeigen](../debugger/how-to-use-intellitrace-step-back.md)
 
-Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Windows 10 Anniversary Update oder höher.  Für .NET Core und ASP.NET Core-apps ist Visual Studio Enterprise 2017 Version 15.7 Preview 1 erforderlich.
+Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Windows 10 Anniversary Update oder höher.  Für .NET Core und ASP.NET Core-apps ist Visual Studio Enterprise 2017 Version 15.7 erforderlich. Für systemeigene apps für Windows, Visual Studio Enterprise 2017-Version 15.9 Preview 2 erforderlich ist.
 
-## <a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignisse und Aufrufinformationen
+## <a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignisse und Aufrufinformationen (nur verwalteter Code)
 
-Dies ist nicht standardmäßig aktiviert, aber IntelliTrace kann Methodenaufrufe zusammen mit Ereignissen aufzeichnen. Sammeln von methodenbezogenen aktivieren Aufrufe finden Sie unter **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Ereignisse und Aufrufinformationen**.
+Dies ist nicht standardmäßig aktiviert, aber IntelliTrace kann Methodenaufrufe zusammen mit Ereignissen aufzeichnen. Sammeln von methodenbezogenen aktivieren Aufrufe finden Sie unter **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Ereignisse und Aufrufinformationen (nur verwaltet)**.
 
 Es ist nicht Informationen zu den derzeit für .NET Core und ASP.NET Core-apps verfügbar. 
 

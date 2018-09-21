@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638029"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495452"
 ---
 # <a name="localize-menu-commands"></a>Lokalisieren von Menübefehlen
 Sie können lokalisierten Text für die Menü-und Symbolleistenbefehle bereitstellen, durch das Erstellen von lokalisierten *VSCT* Dateien und lokalisierte *resx* -Dateien für das VSPackage, und aktualisieren Sie dann die Projektdateien integriert die ändert.  
@@ -37,7 +37,7 @@ Sie können lokalisierten Text für die Menü-und Symbolleistenbefehle bereitste
   
 2.  Erstellen Sie eine Kopie der *filename.en-US.vsct* für jede lokalisierte Sprache.  
   
-     Benennen Sie jede Kopie *Filename. {} Gebietsschema} VSCT*, wobei *{Gebietsschema}* Name einer bestimmten Kultur ist. Eine Liste der Werte für Name die Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Benennen Sie jede Kopie *Filename. {} Gebietsschema} VSCT*, wobei *{Gebietsschema}* Name einer bestimmten Kultur ist. Eine Liste der Werte für Name die Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](/windows/uwp/publish/supported-languages).  
   
      Diese *Dateiname. Locale.VSCT* Dateien lokalisierte Menütext für das Paket enthält.  
   

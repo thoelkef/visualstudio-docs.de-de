@@ -12,12 +12,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45eab0ff3dc1c5a0799e3db35b612a3ee3741db7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637587"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495387"
 ---
 # <a name="locate-visual-studio"></a>Suchen Sie Visual Studio
 
@@ -44,4 +44,4 @@ Um Visual Studio und anderen Tools in Buildumgebungen, PowerShell-Skripts, Insta
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Änderungen an Visual Studio 2017-setup](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)
+* [Änderungen an Visual Studio 2017-setup](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)

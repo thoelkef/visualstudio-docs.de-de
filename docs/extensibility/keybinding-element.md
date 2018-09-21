@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639323"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495296"
 ---
 # <a name="keybinding-element"></a>KeyBinding-element
 KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.  
@@ -42,9 +42,9 @@ KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.
 |guid|Erforderlich.|  
 |ID|Erforderlich.|  
 |Editor|Erforderlich. Der Editor GUID gibt an, der Bearbeitungskontext für den diese Tastenkombination aktiv sein werden. Der globale Bindung Bereichswert ist "guidVSStd97".|  
-|key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD1|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|  
-|key2|Dies ist optional. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|key2|Dies ist optional. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD2|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|  
 |Emulator|Dies ist optional.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
