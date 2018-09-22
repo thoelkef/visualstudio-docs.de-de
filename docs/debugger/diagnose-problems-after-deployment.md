@@ -10,65 +10,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320734"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542506"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnostizieren von Problemen nach der Bereitstellung
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostizieren von Problemen nach der Bereitstellung mit IntelliTrace
 
-Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrace zu diagnostizieren, geben Sie Buildinformationen zu Ihrem Release mit an, damit Visual Studio automatisch die richtigen Quelldateien und Symboldateien findet, die für das Debuggen des IntelliTrace-Protokolls erforderlich sind.
+Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrace zu diagnostizieren, geben Sie Buildinformationen zu Ihrer Version mit an, damit Visual Studio automatisch die richtigen Quelldateien und Symboldateien findet, die für das Debuggen des IntelliTrace-Protokolls erforderlich sind.
 
- Wenn Sie Microsoft Monitoring Agent zur Steuerung von IntelliTrace verwenden, müssen Sie Application Performance Monitoring auf dem Webserver einrichten. Auf diese Weise werden Diagnoseereignisse beim Betrieb Ihrer App gesammelt und in einer IntelliTrace-Protokolldatei gespeichert. Anschließend können Sie die Ereignisse in Visual Studio Enterprise (nicht den Professional oder Community Editions) öffnen, zum Code springen, in dem ein Ereignis eingetreten ist, die aufgezeichneten Werte zum jeweiligen Zeitpunkt anzeigen und den ausgeführten Code vorwärts oder rückwärts durchlaufen. Nachdem Sie das Problem gefunden und behoben haben, wiederholen Sie den Zyklus zum Erstellen, Freigeben und Überwachen des Releases, um zukünftige Probleme früher und schneller beheben zu können.
+ Wenn Sie Microsoft Monitoring Agent zur Steuerung von IntelliTrace verwenden, müssen Sie Application Performance Monitoring auf dem Webserver einrichten. Auf diese Weise werden Diagnoseereignisse beim Betrieb Ihrer App gesammelt und in einer IntelliTrace-Protokolldatei gespeichert. Anschließend können Sie die Ereignisse in Visual Studio Enterprise (nicht den Professional oder Community Editions) öffnen, zum Code springen, in dem ein Ereignis eingetreten ist, die aufgezeichneten Werte zum jeweiligen Zeitpunkt anzeigen und den ausgeführten Code vorwärts oder rückwärts durchlaufen. Nachdem Sie das Problem gefunden und behoben haben, wiederholen Sie den Zyklus zum Erstellen, Freigeben und Überwachen der Version, um zukünftige Probleme früher und schneller beheben zu können.
 
  ![Code, build, release, Überwachung, diagnose und Korrektur](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Sie benötigen Folgendes:**
 
--   Visual Studio 2017, Visual Studio 2015 oder Team Foundation Server 2017, 2015, 2013, 2012 oder 2010 zum Erstellen Ihres Builds
+-   Visual Studio, Azure DevOps oder Team Foundation Server 2017, 2015, 2013, 2012 oder 2010 zum Erstellen Ihres Builds
 
 -   Microsoft Monitoring Agent zum Überwachen der App und zum Aufzeichnen von Diagnosedaten
 
 -   Visual Studio Enterprise (nicht Professional oder Community Editions) zum Anzeigen von Diagnosedaten und Debuggen Ihres Codes mit IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Schritt 1: Aufnehmen der Buildinformationen in Ihre Version
- Richten Sie den Buildprozess ein, um eine Buildmanifestdatei (BuildInfo.config) für Ihr Webprojekt zu erstellen und fügen Sie dieses Manifest in Ihr Release ein. Dieses Manifest enthält Informationen über Projekt, Quellcodeverwaltung und Buildsystem, die für die Erstellung einer bestimmten Version verwendet wurden. Mit diesen Informationen kann Visual Studio die entsprechenden Quellen und Symbole finden, nachdem Sie das IntelliTrace-Protokoll geöffnet haben, um die aufgezeichneten Ereignisse zu prüfen.
+ Richten den Buildprozess ein, um eine buildmanifestdatei erstellen (*"buildinfo.config"* Datei) für Ihre Web Projekt, und fügen Sie dieses Manifest in Ihre Version. Dieses Manifest enthält Informationen über Projekt, Quellcodeverwaltung und Buildsystem, die für die Erstellung einer bestimmten Version verwendet wurden. Mit diesen Informationen kann Visual Studio die entsprechenden Quellen und Symbole finden, nachdem Sie das IntelliTrace-Protokoll geöffnet haben, um die aufgezeichneten Ereignisse zu prüfen.
 
 ###  <a name="AutomatedBuild"></a> Erstellen des buildmanifests für einen automatischen Buildvorgang mithilfe von Team Foundation Server
 
- Führen Sie diese Schritte aus, egal ob Sie Team Foundation-Versionskontrolle oder Git verwenden.
+ Führen Sie diese Schritte aus, egal ob Sie Team Foundation oder Git als Versionskontrolle verwenden.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps und Team Foundation Server 2017
 
- Richten Sie Ihrer erstellungspipeline aus, um die Speicherorte von der Quelle, Build und Symbole das buildmanifest (BuildInfo.config-Datei) hinzufügen. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
+Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veraltet markiert und entfernt wurde. Verwenden Sie zum Debuggen von ASP.NET Web-apps nach der Bereitstellung eine der folgenden Methoden aus:
 
-1.  Wenn Sie bereits über eine Buildpipeline, die mithilfe der Vorlage für ASP.NET Core ((.NET Framework) verfügen, können Sie entweder [Ihrer erstellungspipeline bearbeiten oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Verwenden Sie für die Bereitstellung in Azure, [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Anzeigen von Buildpipeline in TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Wenn Sie IntelliTrace verwenden möchten, öffnen Sie das Projekt in Visual Studio, und Laden Sie die Symboldateien aus dem entsprechenden Build. Sie können Symboldateien aus Laden der **Module** Fenster oder durch Konfigurieren von Symbolen in **Tools** > **Optionen** > **Debuggen**   >  **Symbole**.
 
-2.  Wenn Sie eine neue Vorlage erstellen, wählen Sie die Vorlage für ASP.NET Core ((.NET Framework).
-
-     ![Wählen Sie die Buildprozessvorlage &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Geben Sie an, wo die Symboldatei (PDB) gespeichert werden soll, sodass die Quelle automatisch indiziert wird.
-
-     Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt. Später fügen Sie ein MSBuild-Argument hinzu, um anzugeben, wo die Symboldateien gespeichert werden sollen.
-
-     ![Einrichten der Symbolpfad in TFS 2017-Buildpipeline](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Fügen Sie dieses MSBuild-Argument hinzu, um TFS und Symboldateispeicherorte zur Buildmanifestdatei hinzuzufügen:
-
-     **/p:IncludeServerNameInBuildInfo = True**
-
-     Jeder, der auf Ihren Webserver zugreifen kann, kann diese Speicherorte im Buildmanifest anzeigen. Achten Sie darauf, dass Ihr Quellserver sicher ist.
-
-6.  Führen Sie einen neuen Build aus.
-
-    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Richten Sie Ihrer erstellungspipeline aus, um die Speicherorte von der Quelle, Build und Symbole das buildmanifest (BuildInfo.config-Datei) hinzufügen. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
@@ -193,9 +172,9 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 2.  Wählen Sie **Projektmappe öffnen** aus, damit die entsprechende Projektmappe oder das Projekt automatisch in Visual Studio geöffnet wird, wenn das Projekt nicht als Teil einer Projektmappe erstellt wurde. [F: im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte app. Wie konnte das geschehen? Wie gehe ich vor?](#InvalidConfigFile)
 
-     Visual Studio shelvt alle ausstehenden Änderungen automatisch, wenn die entsprechende Projektmappe oder das Projekt geöffnet wird. Nähere Informationen zu diesem Shelvesets finden Sie im Fenster **Ausgabe** oder **Team Explorer**.
+     Visual Studio legt alle ausstehenden Änderungen automatisch ab, wenn die entsprechende Projektmappe oder das Projekt geöffnet wird. Nähere Informationen zu diesem Shelvesets finden Sie im Fenster **Ausgabe** oder **Team Explorer**.
 
-     Bevor Sie Änderungen vornehmen, sollten Sie überprüfen, ob Sie über die richtige Quelle verfügen. Wenn Sie Branchen verwenden kann es sein, dass der aktuelle Branch von dem Branch abweicht, in dem Visual Studio die entsprechende Quelle findet, z. B. Ihren Versionsbranch.
+     Bevor Sie Änderungen vornehmen, sollten Sie überprüfen, ob Sie über die richtige Quelle verfügen. Wenn Sie Verzweigung verwenden kann es sein, dass die aktuelle Verzweigung von der Verzweigung abweicht, in der Visual Studio die entsprechende Quelle findet, z. B. Ihre Versionsverzweigung.
 
      ![Öffnen Sie die Projektmappe von IntelliTrace-Protokoll](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
@@ -203,7 +182,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
      ![Aus quellcodeverwaltung öffnen, um den zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
-     Andernfalls wählen Sie einen anderen Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich. Visual Studio ordnet diesem Arbeitsbereich den gesamten Branch zu.
+     Andernfalls wählen Sie einen anderen Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich. Visual Studio ordnet diesem Arbeitsbereich die gesamte Verzweigung zu.
 
      ![Aus quellcodeverwaltung öffnen &#45; neuen Arbeitsbereich erstellen](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
@@ -272,7 +251,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 ###  <a name="FAQ"></a> Fragen und Antworten
 
 ####  <a name="WhyInclude"></a> F: Warum integrieren Informationen über Mein Projekt, quellcodeverwaltung, Builds und Symbole in Meine Version?
- Visual Studio verwendet diese Informationen, um die passende Lösung und den entsprechenden Quellcode für das Release zu finden, das Sie gerade debuggen. Nachdem Sie das IntelliTrace-Protokoll geöffnet und ein zu debuggendes Ereignis ausgewählt haben, zeigt Ihnen Visual Studio anhand der Symbole den Code, in dem das Ereignis aufgetreten ist. Anschließend können Sie die aufgezeichneten Werte anzeigen und den ausgeführten Code vorwärts und rückwärts durchlaufen.
+ Visual Studio verwendet diese Informationen, um die passende Lösung und den entsprechenden Quellcode für die Version zu finden, die Sie gerade debuggen. Nachdem Sie das IntelliTrace-Protokoll geöffnet und ein zu debuggendes Ereignis ausgewählt haben, zeigt Ihnen Visual Studio anhand der Symbole den Code, in dem das Ereignis aufgetreten ist. Anschließend können Sie die aufgezeichneten Werte anzeigen und den ausgeführten Code vorwärts und rückwärts durchlaufen.
 
  Wenn Sie TFS verwenden und diese Informationen sind nicht in das buildmanifest (BuildInfo.config-Datei), sucht Visual Studio für die entsprechende Quelle und Symbole auf den gerade verbundenen TFS. Wenn Visual Studio das korrekte TFS oder den entsprechenden Quellcode nicht findet, werden Sie aufgefordert, ein anderes TFS auszuwählen.
 
