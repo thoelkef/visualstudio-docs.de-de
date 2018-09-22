@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495725"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542467"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 
@@ -50,7 +50,7 @@ Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln
 
 ## <a name="Snapshots"></a> Sammeln von Momentaufnahmen
 
-Dies ist nicht standardmäßig aktiviert, jedoch IntelliTrace kann Momentaufnahmen von Ihrer Anwendung bei jedem Breakpoint und Debuggerschritt-Schritt-Ereignis erfassen, und Sie können diese Momentaufnahmen in eine verlaufsdebugsitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Momentaufnahmen (verwaltet und systemeigen)**. Weitere Informationen finden Sie unter [Rückschritt von IntelliTrace mit Momentaufnahmen anzeigen](../debugger/how-to-use-intellitrace-step-back.md)
+Dies ist nicht standardmäßig aktiviert, jedoch IntelliTrace kann Momentaufnahmen von Ihrer Anwendung bei jedem Breakpoint und Debuggerschritt-Schritt-Ereignis erfassen, und Sie können diese Momentaufnahmen in eine verlaufsdebugsitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Momentaufnahmen (verwaltet und systemeigen)**. Weitere Informationen finden Sie unter [überprüfen Sie die vorherigen app-Status, die mit IntelliTrace](../debugger/view-historical-application-state.md)
 
 Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Windows 10 Anniversary Update oder höher.  Für .NET Core und ASP.NET Core-apps ist Visual Studio Enterprise 2017 Version 15.7 erforderlich. Für systemeigene apps für Windows, Visual Studio Enterprise 2017-Version 15.9 Preview 2 erforderlich ist.
 
