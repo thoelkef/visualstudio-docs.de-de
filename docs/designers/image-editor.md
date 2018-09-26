@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626667"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029120"
 ---
 # <a name="image-editor"></a>Grafik-Editor
 
@@ -53,8 +53,6 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihrem Visual Studio-Projekt ein Bi
    > Wenn im Dialogfeld **Neues Element hinzufügen** nicht die Kategorie **Grafiken** angezeigt wird, müssen Sie möglicherweise die Komponente **Bild- und 3D-Modell-Editoren** installieren. Schließen Sie den Dialog, und klicken Sie in der Menüleiste auf **Extras** > **Get Tools and Features** (Extras und Features abrufen), um den **Visual Studio-Installer** herunterzuladen. Klicken Sie erst auf die Registerkarte **Einzelne Komponenten** und dann unter der Kategorie **Spiele und Grafiken** auf die Komponente **Bild- und 3D-Modell-Editoren**. Klicken Sie auf **Ändern**.
    >
    > ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
-   >
-   > Möglicherweise ist die Komponente **Bild- und 3D-Modell-Editoren** zwar installiert, jedoch wird die Vorlagenkategorie **Grafiken** trotzdem nicht angezeigt. Beachten Sie in diesem Fall, dass diese Kategorie nur für bestimmte Projekttypen wie Konsolenanwendungen angezeigt wird.
 
    Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie unter [Auswählen des Bildformats](#choose-the-image-format).
 
