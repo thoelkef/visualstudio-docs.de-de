@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638712"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029026"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -44,7 +44,7 @@ Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit 
 | --- | --- |
 | **Leeres Bottle-Webprojekt** | Generiert eine minimale App in *app.py* mit einer Homepage für `/` und einer `/hello/<name>`-Seite, die `<name>` mithilfe einer sehr kurzen Vorlage für eine Inline-Seite zurückgibt. |
 | **Leeres Django-Webprojekt** | Generiert ein Django-Projekt mit der grundlegenden Django-Websitestruktur, aber ohne Django-Apps. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und im [Django Tutorial (Schritt 1)](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
+| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web-Gruppe
 

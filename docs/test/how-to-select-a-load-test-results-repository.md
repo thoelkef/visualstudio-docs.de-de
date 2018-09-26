@@ -17,20 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379578"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371120"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests
 
 Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Agents können zusammen mit einem Controller eine größere simulierte Last generieren als jeder einzelne Computer. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
 Testergebnisse von den Agents oder den lokalen Computern können auf einem beliebigen SQL-Server gespeichert werden, auf dem Sie einen Auslastungstest-Ergebnisspeicher erstellt haben. In jedem Fall müssen Sie im Fenster **Testcontroller verwalten** angeben, wo die Ergebnisse des Auslastungstests gespeichert werden sollen.
-
-Weitere Informationen zu Test-Agent-Controllern und Agents finden Sie unter [Test controllers and test agents (Testcontroller und Test-Agents)](configure-test-agents-and-controllers-for-load-tests.md).
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Angeben eines Ergebnisspeichers für Auslastungstestdaten
 
