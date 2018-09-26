@@ -1,7 +1,7 @@
 ---
 title: Debuggen mithilfe des Just-in-Time-Debuggers | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176440"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168395"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 Just-In-Time-Debuggen startet Visual Studio automatisch tritt eine Ausnahme oder ein Absturz in einer Anwendung, die außerhalb von Visual Studio ausgeführt wird. Dadurch können Sie Ihre Anwendung testen, wenn Visual Studio nicht ausgeführt wird, und beginnen mit Visual Studio debuggen, wenn ein Problem auftritt.
@@ -48,6 +48,8 @@ Sie können aktivieren oder deaktivieren Sie Just-in-Time-Debuggen von Visual St
 4.  In der **diese Codetypen aktivieren von Just-in-Time-Debuggen** Feld aktivieren bzw. deaktivieren Sie die gewünschten Programmtypen: **verwaltete**, **Native**, oder **Skript**.
 
 5.  Klicken Sie auf **OK**.
+
+    Aktivieren der Just-in-Time-Debugger, aber Sie nicht finden Sie es auf einen Absturz der Anwendung oder eine Ausnahme, finden Sie unter [Just-In-Time-Debugfehler](#jit_errors).
 
 Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual Studio nicht mehr auf dem Computer installiert ist. Wenn Visual Studio nicht installiert ist, können Sie nicht Just-In-Time-Debuggen von Visual Studio deaktivieren **Optionen** Dialogfeld. In diesem Fall können Sie Just-In-Time-Debuggen durch Bearbeiten der Windows-Registrierung deaktivieren.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  Sie können die an diesem Punkt Debuggen starten. Wenn dies eine reale Anwendung wäre, müssten Sie herausfinden, warum der Code die Ausnahme auslöst.
 
-## <a name="just-in-time-debugging-errors"></a>Fehler beim Just-In-Time-Debuggen
- Wenn Sie das Dialogfeld nicht angezeigt wird, wenn die Anwendung abstürzt, kann dies aufgrund von Windows-Fehlerberichterstattung-Einstellungen auf Ihrem Computer. Weitere Informationen finden Sie unter [. WER-Einstellungen](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Just-In-Time-Debugfehler
+ Wenn das Dialogfeld nicht angezeigt wird, wenn das Programm abstürzt und müssen das Feature aktiviert haben, kann dies aufgrund von Windows-Fehlerberichterstattung-Einstellungen auf Ihrem Computer. Achten Sie darauf, das Hinzufügen einer **deaktiviert** -Wert in den folgenden Registrierungsschlüssel, und legen Sie den Wert auf 1:
 
- Möglicherweise werden die folgenden Fehlermeldungen angezeigt, die mit Just-In-Time-Debuggen zusammenhängen.
+* HKLM\Software\Microsoft\Windows\Windows-Fehlerberichterstattung
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows-Fehlerberichterstattung
+ 
+Weitere Informationen zu diesen Einstellungen finden Sie unter [. WER-Einstellungen](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Anfügen an den abstürzenden Prozess nicht möglich. Das angegebene Programm ist nicht Windows oder MS-DOS-Programm.**
+Darüber hinaus möglicherweise die folgenden Fehlermeldungen, die mit Just-In-Time-verknüpft sind Debuggen.
 
-     Dieser Fehler tritt auf, wenn Sie versuchen, Anhängen an einen Prozess als ein anderer Benutzer ausgeführt wird.
+- **Anfügen an den abstürzenden Prozess nicht möglich. Das angegebene Programm ist nicht Windows oder MS-DOS-Programm.**
 
-     Öffnen Sie zum Umgehen dieses Problems starten Sie Visual Studio die **an den Prozess anhängen** das Dialogfeld die **Debuggen** Menü, und suchen Sie den Prozess Sie debuggen möchten die **verfügbare Prozesse**Liste. Wenn Sie den Namen des Prozesses nicht kennen, sehen Sie sich die **Just-in-Time-Debugger von Visual Studio** Dialogfeld und notieren Sie die Prozess-ID. Wählen Sie den Prozess in der **verfügbare Prozesse** aus, und klicken Sie auf **Anfügen**. In der **Just-in-Time-Debugger von Visual Studio** Dialogfeld klicken Sie auf **keine** um das Dialogfeld zu schließen.
+    Dieser Fehler tritt auf, wenn Sie versuchen, Anhängen an einen Prozess als ein anderer Benutzer ausgeführt wird.
 
--   **Debugger konnte nicht gestartet werden, da kein Benutzer angemeldet ist.**
+    Öffnen Sie zum Umgehen dieses Problems starten Sie Visual Studio die **an den Prozess anhängen** das Dialogfeld die **Debuggen** Menü, und suchen Sie den Prozess Sie debuggen möchten die **verfügbare Prozesse**Liste. Wenn Sie den Namen des Prozesses nicht kennen, sehen Sie sich die **Just-in-Time-Debugger von Visual Studio** Dialogfeld und notieren Sie die Prozess-ID. Wählen Sie den Prozess in der **verfügbare Prozesse** aus, und klicken Sie auf **Anfügen**. In der **Just-in-Time-Debugger von Visual Studio** Dialogfeld klicken Sie auf **keine** um das Dialogfeld zu schließen.
 
-     Dieser Fehler tritt auf, wenn vom Just-In-Time-Debuggen versucht wird, Visual Studio auf einem Computer zu starten, auf dem kein Benutzer bei der Konsole angemeldet ist. Da kein Benutzer angemeldet ist, existiert keine Benutzersitzung, um das Dialogfeld für Just-In-Time-Debuggen anzuzeigen.
+- **Debugger konnte nicht gestartet werden, da kein Benutzer angemeldet ist.**
 
-     Um dieses Problem zu beheben, melden Sie sich beim Computer an.
+    Dieser Fehler tritt auf, wenn vom Just-In-Time-Debuggen versucht wird, Visual Studio auf einem Computer zu starten, auf dem kein Benutzer bei der Konsole angemeldet ist. Da kein Benutzer angemeldet ist, existiert keine Benutzersitzung, um das Dialogfeld für Just-In-Time-Debuggen anzuzeigen.
 
--   **Die Klasse nicht registriert.**
+    Um dieses Problem zu beheben, melden Sie sich beim Computer an.
 
-     Dieser Fehler zeigt, dass der Debugger versucht hat, eine nicht registrierte COM-Klasse zu erstellen. Die Ursache ist wahrscheinlich ein Installationsproblem.
+- **Die Klasse nicht registriert.**
 
-     Beheben Sie dieses Problem, indem Sie Visual Studio mithilfe des Installationsdatenträgers neu installieren oder reparieren.
+    Dieser Fehler zeigt, dass der Debugger versucht hat, eine nicht registrierte COM-Klasse zu erstellen. Die Ursache ist wahrscheinlich ein Installationsproblem.
+
+    Beheben Sie dieses Problem, indem Sie Visual Studio mithilfe des Installationsdatenträgers neu installieren oder reparieren.
 
 ## <a name="see-also"></a>Siehe auch
  [Debuggersicherheit](../debugger/debugger-security.md) [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, Debuggen, Dialogfeld Optionen](../debugger/just-in-time-debugging-options-dialog-box.md) [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann sein gefährlich. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
