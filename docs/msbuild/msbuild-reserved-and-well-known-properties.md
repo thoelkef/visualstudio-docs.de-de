@@ -64,15 +64,15 @@ ms.locfileid: "39176901"
 Zusätzlich zu den oben genannten können MSBuild-Sprachelemente entsprechende Namen nicht für benutzerdefinierte Eigenschaften, Elemente oder Elementmetadaten verwendet werden:
 
 * VisualStudioProject
-* Ziel
+* Target
 * PropertyGroup
-* Ausgabe
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
-* Wählen
+* Choose
 * When
 * Otherwise
 
