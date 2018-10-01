@@ -1,0 +1,74 @@
+---
+title: IDebugProgramEx2::Attach | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- IDebugProgramEx2::Attach
+helpviewer_keywords:
+- IDebugProgramEx2::Attach
+ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
+caps.latest.revision: 14
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1969f8d38cd52572f0d0c7cde603a1ea25c0e0be
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47514726"
+---
+# <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+Die neueste Version dieses Themas finden Sie unter [IDebugProgramEx2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramex2-attach).  
+  
+Fügen Sie eine Sitzung mit einem Programm.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason,  
+   IDebugSession2*       pSession  
+);  
+```  
+  
+```  
+[C#]  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason,  
+   IDebugSession2       pSession  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pCallback`  
+ [in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt, das die Callback-Funktion darstellt, die die angefügten Debug-Engine Ereignisse sendet.  
+  
+ `dwReason`  
+ [in] Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) -Enumeration, die den Grund für den Anfügevorgang beschreibt.  
+  
+ `pSession`  
+ [in] Ein Wert, der die Sitzung eindeutig identifiziert wird, die an das Programm angefügt wird.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Diese Methode sollte zurückgeben `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` , wenn das Programm bereits angefügt ist.  
+  
+## <a name="remarks"></a>Hinweise  
+ Der Port, der das Programm enthält, können den Wert in `pSession` um zu bestimmen, welche Sitzung versucht, die an die Anwendung anfügen. Wenn ein Port zum Anfügen an einen Prozess zu einem Zeitpunkt nur eine Debugsitzung zulässt, kann z. B. der Port ermitteln, ob die gleiche Sitzung bereits für andere Programme im Prozess angefügt ist.  
+  
+> [!NOTE]
+>  Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig den Anfügen an diesem Programm; sitzungsbasierter Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
+
