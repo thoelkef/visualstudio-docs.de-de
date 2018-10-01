@@ -198,9 +198,9 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 1. Wenn Sie fertig sind, beenden Sie den Server, und übertragen Sie Ihre Änderungen erneut zur Quellcodeverwaltung.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% srsf_token %}, das in den \<Formular\>-Elementen auftritt?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<Formular\>-Elementen auftritt?
 
-Antwort: Das `{% crsf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
+Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
