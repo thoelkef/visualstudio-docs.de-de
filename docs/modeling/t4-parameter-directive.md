@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1f12363af0d0b26aa72c5478df5da82c6d4fd02a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5425dc16b40495d1a9ab9010ac90fe6b552d02e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950347"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858001"
 ---
 # <a name="t4-parameter-directive"></a>T4-Parameter-Anweisung
 
-In einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Textvorlage, die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten, die vom externen Kontext übergeben, initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, der TextTransformation aufruft.
+In einer Visual Studio-Textvorlage die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten aus dem externen Kontext übergeben initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, die TextTransformation aufruft.
 
 ## <a name="using-the-parameter-directive"></a>Mithilfe der Parameterdirektive
 
@@ -26,11 +26,11 @@ In einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Textvorlage, 
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- Die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten, die vom externen Kontext übergeben, initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, der TextTransformation aufruft. Die Werte können übergeben werden, entweder in der `Session` Wörterbuch vorhanden ist, oder im <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten aus dem externen Kontext übergeben initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, die TextTransformation aufruft. Die Werte können übergeben werden, entweder in der `Session` Wörterbuch vorhanden ist, oder im <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Sie können die Parameter eines beliebigen Typs remotefähige deklarieren. D. h. muss der Typ deklariert werden, mit <xref:System.SerializableAttribute>, oder sie daraus ableiten muss <xref:System.MarshalByRefObject>. Dadurch können Parameterwerte in der Anwendungsdomäne übergeben werden, in dem die Vorlage verarbeitet wird.
+ Sie können die Parameter eines remotefähigen Typs deklarieren. D. h. muss der Typ deklariert werden, mit <xref:System.SerializableAttribute>, oder sie muss von abgeleitet <xref:System.MarshalByRefObject>. Dadurch können Parameterwerte in der Anwendungsdomäne übergeben werden, in dem die Vorlage verarbeitet wird.
 
- Beispielsweise konnte eine Textvorlage mit folgendem Inhalt geschrieben werden:
+ Beispielsweise könnten Sie eine Textvorlage mit folgendem Inhalt:
 
 ```
 <#@ template language="C#" #>
@@ -43,8 +43,8 @@ Line <#= i #>
 
 ```
 
-## <a name="passing-parameter-values-to-a-template"></a>Übergeben von Parameterwerten an eine Vorlage
- Wenn Sie schreiben eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungstypen, z. B. einen Menübefehl oder einen Ereignishandler, können Sie eine Vorlage mithilfe des Textvorlagendiensts verarbeiten:
+## <a name="passing-parameter-values-to-a-template"></a>Übergeben von Parameterwerten zu einer Vorlage
+ Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl oder einen Ereignishandler schreiben, können Sie eine Vorlage mithilfe des Textvorlagendiensts verarbeiten:
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -65,7 +65,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ## <a name="passing-values-in-the-call-context"></a>Übergeben von Werten in den Kontext aufrufen
  Sie können auch Werte übergeben als logische Daten in <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Das folgende Beispiel übergibt die Werte mit beiden Methoden:
+ Das folgende Beispiel übergibt Werte von mithilfe beider Methoden:
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -87,10 +87,10 @@ string result = t4.ProcessTemplate("",
 
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Übergeben von Werten an einer Textvorlage Run-Time (vorverarbeitete)
- Es ist nicht in der Regel erforderlich ist, verwendet der `<#@parameter#>` Richtlinie mit einer (vorverarbeiteten) zur Laufzeit-Textvorlagen. Definieren Sie stattdessen einen zusätzlichen Konstruktor oder eine festlegbare Eigenschaft für den generierten Code, über das Sie Parameterwerte übergeben. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Übergeben von Werten zu einer Textvorlage Run-Time (vorverarbeitete)
+ Es ist nicht in der Regel erforderlich ist, verwendet der `<#@parameter#>` -Direktive zusammen mit der Laufzeit (vorverarbeiteten Textvorlagen). Stattdessen können Sie definieren einen zusätzlichen Konstruktor oder eine Eigenschaft für den generierten Code, der über dem Sie Parameterwerte übergeben, die festgelegt werden kann. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Jedoch, wenn Sie verwenden möchten `<#@parameter>` in einer Laufzeitvorlage können Sie Werte zu übergeben, indem Sie mit dem Wörterbuch der Sitzung. Nehmen Sie beispielsweise an, Sie die Datei erstellt haben, als eine vorverarbeitete Vorlage mit der Bezeichnung `PreTextTemplate1`. Sie können die Vorlage mithilfe des folgenden Codes in Ihrem Programm aufrufen.
+ Allerdings sollten Sie verwenden `<#@parameter>` in eine Vorlage für die Laufzeit können Sie Werte, übergeben, mit dem Wörterbuch der Sitzung. Ein Beispiel: Angenommen, Sie haben die Datei erstellt, als eine vorverarbeitete Vorlage namens `PreTextTemplate1`. Sie können die Vorlage mit dem folgenden Code in Ihrem Programm aufrufen.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -105,4 +105,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Abrufen von Argumenten von TextTemplate.exe
 
 > [!IMPORTANT]
->  Die `parameter` Richtlinie ist nicht im festgelegten Werte abgerufen werden die `-a` Parameter von der `TextTransform.exe` Hilfsprogramm. Um diese Werte zu erhalten, legen Sie `hostSpecific="true"` in der `template` Richtlinie, und verwenden Sie `this.Host.ResolveParameterValue("","","argName")`.
+>  Die `parameter` Richtlinie ist nicht in festgelegten Werte abgerufen werden die `-a` Parameter, der die `TextTransform.exe` Hilfsprogramm. Um diese Werte zu erhalten, legen Sie `hostSpecific="true"` in die `template` Richtlinie, und verwenden Sie `this.Host.ResolveParameterValue("","","argName")`.

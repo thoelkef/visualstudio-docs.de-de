@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567363"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858873"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
-Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
+In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
 
 ## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes
 

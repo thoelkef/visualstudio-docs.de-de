@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550111"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859327"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Verwendung von Deny und PermitOnly überprüfen
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550111"
  Eine Methode enthält eine sicherheitsüberprüfung, die angibt, die Sicherheitsaktion PermitOnly "oder" ablehnen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktion sollte verwendet werden, nur von Kenntnissen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sicherheit. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.
+ Die <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktion sollte nur von Personen mit Kenntnissen der .NET Framework-Sicherheit verwendet werden. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.
 
  Verweigern ändert das Standardverhalten des Stackwalks, die als Reaktion auf eine sicherheitsforderung auftritt. Sie können Berechtigungen angeben, die für die Dauer der Deny-Methode, unabhängig von den tatsächlichen Berechtigungen der Aufrufer in der Aufrufliste nicht gewährt werden müssen. Wenn der Stackwalk erkennt eine Methode, die durch das Verweigern gesichert ist, und der Stackwalk schlägt, wenn die geforderte Berechtigung in der verweigerten Berechtigungen enthalten ist fehl. PermitOnly ändert auch das Standardverhalten des Stackwalks. Sie können Code nur die Berechtigungen an, die gewährt werden können, unabhängig von den Berechtigungen des Aufrufers. Wenn der Stackwalk erkennt eine Methode, die durch PermitOnly gesichert ist, und der Stackwalk schlägt, wenn die angeforderte Berechtigung nicht mit den Berechtigungen enthalten ist, die durch die PermitOnly angegeben werden fehl.
 

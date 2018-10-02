@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545592"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858943"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblys müssen gültige starke Namen aufweisen
 
@@ -66,9 +66,9 @@ Beachten Sie, bis alles geladen und eine mit Verzögerung signierten Assembly an
 
 Verwenden Sie eine der folgenden Verfahren:
 
-- Verwenden Sie die Assembly Linker-Tool (Al.exe) gebotenen die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+- Verwenden Sie das Assembly Linker-Tool (Al.exe) an, die von .NET Framework SDK bereitgestellten.
 
-- Für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 und 1.1, verwenden Sie entweder die <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> oder <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> Attribut.
+- Für die .NET Framework v1. 0 oder v1. 1, verwenden Sie entweder die <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> oder <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> Attribut.
 
 - Für die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], verwenden Sie entweder die `/keyfile` oder `/keycontainer` Compileroption [/keyfile (Geben Sie Schlüssel oder Schlüsselpaar zum Signieren einer Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) oder  [ /keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) -Linkeroption in C++).
 
@@ -92,7 +92,7 @@ Verwenden Sie eine der folgenden Verfahren:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Signieren von Assemblys mit einem starken Namen außerhalb von Visual Studio
 
-Verwenden Sie das strong Name-Tool (Sn.exe), die von bereitgestellte der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Verwenden Sie das strong Name-Tool (Sn.exe), das von .NET Framework SDK bereitgestellt wird. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 

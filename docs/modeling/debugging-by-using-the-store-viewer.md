@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567063"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858651"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debuggen mithilfe der Speicheranzeige
 Mit dem Store-Viewer, sehen Sie den Status einer *speichern* ein, die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Der Store-Viewer zeigt alle Elemente Modell mit der Domäne, die in einem bestimmten Speicher sowie Elementeigenschaften und Links zwischen Elementen sind.
 
 ## <a name="opening-store-viewer"></a>Öffnen von Store-Viewer
- Wenn Sie sind der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentelle "erstellen", Ihren Code an einem Haltepunkt zu beenden, von denen Informationen zum Modell enthält einer Instanz des Speichers. Klicken Sie dann die Store-Viewer öffnen, indem Sie den folgenden Befehl in der **direkt** Fenster:
+ Wenn Sie in der experimentellen Visual Studio-Build befinden, beenden Sie Ihren Code an einem Haltepunkt, von denen Informationen zum Modell enthält einer Instanz des Speichers. Klicken Sie dann die Store-Viewer öffnen, indem Sie den folgenden Befehl in der **direkt** Fenster:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
