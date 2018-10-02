@@ -9,22 +9,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953535"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860198"
 ---
 # <a name="t4-output-directive"></a>T4 Output-Anweisung
 
-In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Textvorlagen wird die `output`-Direktive zum Definieren der Dateierweiterung und Codierung der umgewandelten Datei verwendet.
+In Visual Studio Textvorlagen die `output` Direktive wird verwendet, um die Dateierweiterung und Codierung der umgewandelten Datei zu definieren.
 
- Beispielsweise, wenn Ihre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Projekt enthält eine Vorlagendatei mit dem Namen **MyTemplate.tt** enthält die folgende Anweisung:
+ Wenn Ihr Visual Studio-Projekt eine Vorlagendatei, die mit dem Namen umfasst beispielsweise **MyTemplate.tt** enthält die folgende Anweisung:
 
  `<#@output extension=".cs"#>`
 
- Klicken Sie dann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert eine Datei namens **MyTemplate.cs**
+ Visual Studio generiert eine Datei namens **MyTemplate.cs**
 
  Die `output`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Stattdessen erhält die Anwendung die generierte Zeichenfolge durch Aufruf von `TextTransform()`. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -49,7 +49,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Textvorlagen wird d
 
  `<#@ output extension=".vb" #>`
 
- Zulässige Werte: Jede gültige Dateierweiterung.
+ Gültige Werte: Gültige Dateierweiterung.
 
 ## <a name="encoding-attribute"></a>Encoding-Attribut
  Gibt die zu verwendende Codierung bei der Generierung der Ausgabedatei an. Beispiel:
@@ -58,7 +58,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Textvorlagen wird d
 
  Der Standardwert ist die Codierung, die von der Textvorlagendatei verwendet wird.
 
- Zulässige Werte: `us-ascii`
+ Gültige Werte: `us-ascii`
 
  `utf-16BE`
 
