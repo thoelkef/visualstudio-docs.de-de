@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566628"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859197"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
-Sie können Ihrer DSL Handler für Drag & Drop-Ereignisse hinzufügen, sodass die Benutzer Elemente von anderen Diagrammen oder von anderen Teilen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf das Diagramm ziehen können. Sie können auch Handler für Ereignisse wie Doppelklicks hinzufügen. Handler für Drag & Drop und doppelklicken Sie auf werden zusammen als bezeichnet *Gestenhandler*.
+Sie können Ihrer DSL Handler für Drag & Drop-Ereignisse hinzufügen, damit Benutzer Elemente auf das Diagramm aus anderen Diagrammen oder von anderen Teilen von Visual Studio ziehen können. Sie können auch Handler für Ereignisse wie Doppelklicks hinzufügen. Handler für Drag & Drop und doppelklicken Sie auf werden zusammen als bezeichnet *Gestenhandler*.
 
 In diesem Thema werden Drag & Drop-Gesten behandelt, deren Ursprung in anderen Diagrammen liegt. Für Verschiebe- und Kopierereignisse innerhalb eines Diagramms könnten Sie alternativ eine Unterklasse von `ElementOperations` definieren. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md). Eine Anpassung der DSL-Definition kann auch möglich sein.
 

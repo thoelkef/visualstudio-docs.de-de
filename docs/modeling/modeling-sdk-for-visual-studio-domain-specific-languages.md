@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc87ba31e1f693559384977588471af753738e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950841"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857780"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
-Mithilfe der Modellierungs-SDK für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], können Sie leistungsstarke modellbasierten Entwicklungstools, die Sie in integrieren können erstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.
+Das Modellierungs-SDK für Visual Studio verwenden, können Sie leistungsstarke modellbasierte Entwicklungstools erstellen, die Sie in Visual Studio integrieren können. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.
 
- Im Mittelpunkt von MSDK befindet sich die Definition eines Modells, das Sie erstellen, um Konzepte in Ihrem Geschäftsbereich darzustellen. Sie können das Modell mit einer Vielzahl von Tools umgeben, z. B. mit einer Diagrammansicht, der Möglichkeit zur Generierung von Code und anderen Artefakten, Befehlen zum Transformieren des Modells und der Möglichkeit zur Interaktion mit Code und anderen Objekten in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Während Sie das Modell entwickelt, können Sie es mit anderen Modellen und Tools kombinieren, um ein leistungsstarkes Toolset zu erstellen, das auf ihre Entwicklung ausgerichtet ist.
+ Im Mittelpunkt von MSDK befindet sich die Definition eines Modells, das Sie erstellen, um Konzepte in Ihrem Geschäftsbereich darzustellen. Sie können das Modell mit einer Vielzahl von Tools, z. B. eine Diagrammansicht, die Funktion zum Generieren von Code und andere Artefakte, die Befehle für das Transformieren des Modells und der Möglichkeit zur Interaktion mit Code und anderen Objekten in Visual Studio umgeben. Während Sie das Modell entwickelt, können Sie es mit anderen Modellen und Tools kombinieren, um ein leistungsstarkes Toolset zu erstellen, das auf ihre Entwicklung ausgerichtet ist.
 
  Mit MSDK können Sie ein Modell schnell in Form einer domänenspezifischen Sprache (DSL) entwickeln. Sie beginnen, indem Sie einen spezialisierten Editor verwenden, um ein Schema oder eine abstrakte Syntax zusammen mit einer grafischen Schreibweise zu definieren. Aus dieser Definition generiert VMSDK Folgendes:
 
@@ -42,7 +42,7 @@ Mithilfe der Modellierungs-SDK für [!INCLUDE[vsprvs](../code-quality/includes/v
 
  [Verwandte Blogbeiträge](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- Um Hilfe bei der erweiterten Techniken und Problembehandlung, besuchen Sie [Visual Studio DSL & Modeling Tools Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Die Anleitung in fortgeschrittenen Techniken und Problembehandlung, finden Sie unter [Forum von Visual Studio DSL & Modellierungstool-Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Erste Schritte mit domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md)
