@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512469"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860438"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
 Sie müssen Toolboxelemente für die Elemente definieren, die die Benutzer ihren Modellen hinzufügen dürfen. Es gibt zwei Arten von Tools: Elementtools und Verbindungstools. Im generierten Designer kann ein Benutzer ein Elementtool auswählen, um Formen auf das Diagramm zu ziehen. Dann kann der Benutzer ein Verbindungstool auswählen, um die Verbindungen zwischen den Formen zu zeichnen. Im Allgemeinen können Benutzer mit Elementtools ihren Modellen Instanzen von Domänenklassen hinzufügen, und mit Verbindungstools können sie Instanzen von Domänenbeziehungen hinzufügen.
 
-##  <a name="ToolboxDef"></a> Die Definition der toolbox
+## <a name="ToolboxDef"></a> Die Definition der toolbox
  Erweitern Sie im DSL-Explorer den Knoten "Editor" und die darunter liegenden Knoten. Normalerweise wird eine Hierarchie wie die folgende angezeigt:
 
 ```
@@ -77,11 +77,11 @@ Die **Verbindungsgenerator** Eigenschaft eines Verbindungstools verweist auf ein
 
      **Für ein konnektortool:** legen Sie die **Verbindungsgenerator** Eigenschaft des Tools auf eines der Elemente, die in der Dropdown Liste zur Verfügung stehen. Verbindungs-Generatoren werden automatisch erstellt, wenn Sie einen Konnektor einer Domänenbeziehung zuordnen. Wenn Sie gerade einen Konnektor erstellt haben, würden Sie normalerweise den zugehörigen Verbindungs-Generator auswählen.
 
-5.  Drücken Sie zum Testen der DSL F5 oder STRG+F5, und öffnen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Beispielmodelldatei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
+5.  Um die DSL zu testen, drücken Sie F5 oder STRG + F5, und öffnen Sie in der experimentellen Instanz von Visual Studio eine beispielmodelldatei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
 
-     Wenn das Tool nicht angezeigt wird, beenden Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In der Windows **starten** führen **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
+     Wenn das Tool nicht angezeigt wird, beenden Sie die experimentelle Visual Studio. In der Windows **starten** führen **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
-##  <a name="customizing"></a> Anpassen von Elementtools
+## <a name="customizing"></a> Anpassen von Elementtools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
 
 -   Definieren Sie Direktiven für Elementzusammenführungen für andere Klassen, sodass sie neue Instanzen dieser Klasse akzeptieren und weitere Links erstellen können, wenn ein neues Element erstellt wird. Sie können beispielsweise zulassen, dass ein Benutzer einem anderen Element einen Kommentar hinzufügt und auf diese Weise einen Verweislink zwischen beiden erstellt.
@@ -92,7 +92,7 @@ Die **Verbindungsgenerator** Eigenschaft eines Verbindungstools verweist auf ein
 
 -   Schreiben Sie Code, um das Tool so anzupassen, dass es Gruppen von Elementen erstellen kann. Das Tool wird von Methoden in "ToolboxHelper.cs" initialisiert, die Sie überschreiben können. Weitere Informationen finden Sie unter [Erstellen von Gruppen von Elementen in einem Tool](#groups).
 
-##  <a name="groups"></a> Erstellen von Gruppen von Elementen in einem Tool
+## <a name="groups"></a> Erstellen von Gruppen von Elementen in einem Tool
  Jedes Elementtool enthält einen Prototyp der Elemente, die es erstellen soll. Standardmäßig erstellt jedes Elementtool ein Element. Es ist jedoch auch möglich, eine Gruppe verknüpfter Objekte mit einem Tool zu erstellen. Dazu initialisieren Sie das Tool mit einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>, der verknüpfte Elemente enthält.
 
  Das folgende Beispiel stammt aus DSL und enthält einen Typ "Transistor". Jeder Transistor weist drei benannte Terminals auf. Das Elementtool für Transistoren speichert einen Prototyp, der vier Modellelemente und drei Beziehungslinks enthält. Wenn der Benutzer das Tool auf das Diagramm zieht, wird der Prototyp instanziiert und mit dem Modellstamm verknüpft.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Anpassen von Verbindungstools
+## <a name="connections"></a> Anpassen von Verbindungstools
  Üblicherweise erstellen Sie ein Elementtool, wenn Sie eine neue Konnektorklasse erstellen. Alternativ können Sie ein Tool überladen, indem Sie den Beziehungstyp durch die Typen an den beiden Enden bestimmen lassen. Beispielsweise könnten Sie ein Verbindungstool erstellen, das Person-Person- und Person-Stadt-Beziehungen erstellen kann.
 
  Verbindungstools rufen Verbindungs-Generatoren auf. Verwenden Sie Verbindungs-Generatoren, um anzugeben, wie Benutzer Elemente im generierten Designer verknüpfen können. Mit Verbindungs-Generatoren werden die Elemente angegeben, die verknüpft werden können. Zudem wird die Art von Link bestimmt, der zwischen den Elementen erstellt werden kann.
