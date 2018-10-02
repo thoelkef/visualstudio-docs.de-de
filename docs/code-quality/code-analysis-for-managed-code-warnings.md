@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600b5c7822232581cd01bd9bbf7616f4d1e9bb7c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919894"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859067"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Warnungen bei der Analyse von verwaltetem Code
 Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.
@@ -48,15 +48,15 @@ Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverle
 |-|-|
 |[Warnungen nach CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Listet alle Warnungen nach CheckId auf|
 |[Kryptografiewarnungen](../code-quality/cryptography-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen durch die korrekte Verwendung von Kryptografie unterstützen.|
-|[Entwurfswarnungen](../code-quality/design-warnings.md)|Warnungen, die ein korrektes Bibliotheksdesign entsprechend den [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Entwurfsrichtlinien unterstützen.|
+|[Entwurfswarnungen](../code-quality/design-warnings.md)|Warnungen, korrektes Bibliotheksdesign entsprechend den Angaben von den .NET Framework-Entwurfsrichtlinien zu unterstützen.|
 |[Globalisierungswarnungen](../code-quality/globalization-warnings.md)|Warnungen, die global verwendbare Bibliotheken und Anwendungen unterstützen.|
 |[Interoperabilitätswarnungen](../code-quality/interoperability-warnings.md)|Warnungen, die die Interaktion mit COM-Clients unterstützen.|
 |[Verwaltbarkeitswarnungen](../code-quality/maintainability-warnings.md)|Warnungen, die die Bibliotheks- und Anwendungswartung unterstützen.|
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|Warnungen, die einen effizienten Stromverbrauch unterstützen.|
-|[Benennungswarnungen](../code-quality/naming-warnings.md)|Warnungen, die die Einhaltung der Namenskonventionen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Entwurfsrichtlinien unterstützen.|
+|[Benennungswarnungen](../code-quality/naming-warnings.md)|Warnungen, die Einhaltung der Namenskonventionen der von den .NET Framework-Entwurfsrichtlinien zu unterstützen.|
 |[Leistungswarnungen](../code-quality/performance-warnings.md)|Warnungen, die leistungsstarke Bibliotheken und Anwendungen unterstützen.|
 |[Portability Warnings](../code-quality/portability-warnings.md)|Warnungen, die Portabilität auf verschiedenen Plattformen unterstützen.|
 |[Zuverlässigkeitswarnungen](../code-quality/reliability-warnings.md)|Warnungen, die Bibliotheks- und Anwendungszuverlässigkeit unterstützen, wie z. B. die richtige Speicher- und Threadverwendung.|
 |[Sicherheitswarnungen](../code-quality/security-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen unterstützen.|
-|[Verwendungswarnungen](../code-quality/usage-warnings.md)|Warnungen, die die angemessene Verwendung von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]unterstützen.|
+|[Verwendungswarnungen](../code-quality/usage-warnings.md)|Warnungen, die angemessene Verwendung von .NET Framework unterstützen.|
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Fehler die auftreten, wenn die Codeanalyserichtlinie beim Einchecken nicht erfüllt wird.|

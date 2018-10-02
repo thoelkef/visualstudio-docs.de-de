@@ -11,39 +11,39 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: be119703868316f2335f06174c9f21c2dddd2edc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949591"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857702"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
-DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Definitionseigenschaften z. B. versionsnummerierung. DslDefinition Eigenschaften werden in der **Eigenschaften** Fenster, wenn Sie auf einen offenen Bereich des Diagramms in die *einer domänenspezifischen Sprachdesigner*.
+DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaften wie z. B. versionsnummerierung Definition. DslDefinition Eigenschaften werden in der **Eigenschaften** anzeigen, wenn Sie einen offenen Bereich des Diagramms im klicken Sie auf die *domänenspezifischen Sprachdesigner*.
 
- Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- DslDefinition verfügt über die Eigenschaften in der folgenden Tabelle:
+ DslDefinition hat die Eigenschaften in der folgenden Tabelle:
 
 |Eigenschaft|Beschreibung|Standard|
 |--------------|-----------------|-------------|
-|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentliche oder eine interne ist.|public|
-|Benutzerdefinierte Attribute|Benutzerdefinierte definiert die Attribute für die Domänenklasse.<br /><br /> **Hinweis** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<keine >|
-|Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Firmenname|
-|name|Der Name dieser Domäne-Klasse.|Aktuelle name|
-|Namespace|Der Namespace zugeordnet ist diese Domänenklasse.|Aktuellen namespace|
-|Paket-Guid|Die Guid für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
-|Paket-Namespace|Der Namespace für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
-|Produktname|Der Name des Produkts, das für die zu registrierende der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|
-|Hinweise|Anmerkungen im Zusammenhang mit dieser Domänenklasse.|\<keine >|
-|Beschreibung|Beschreibung für diese Domänenklasse.|\<keine >|
-|Anzeigename|Der Name, der in der generierten Designer für diese Domänenklasse angezeigt wird.|\<keine >|
-|Hilfsschlüsselwort|Das Hilfeschlüsselwort dieser Domänenklasse zugeordnet.|\<keine >|
-|Build|Die Anzahl der inkrementellen Build für diese Definition einer domänenspezifischen Sprache.|0|
+|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentlich oder intern ist.|public|
+|Benutzerdefinierte Attribute|Benutzerdefinierter Attribute für die Domänenklasse.<br /><br /> **Beachten Sie** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<Keine >|
+|Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Unternehmensname|
+|name|Der Name dieser Domänenklasse.|Aktuelle name|
+|Namespace|Mit dieser Domäne verbundene den Namespace.|Aktuellen namespace|
+|Paket-Guid|Die Guid für das für diese DSL generierte Visual Studio-Paket.|\<Keine >|
+|Paket-Namespace|Der Namespace für das für diese DSL generierte Visual Studio-Paket.|\<Keine >|
+|Produktname|Der Name des Produkts, das für das für diese DSL generierte Visual Studio-Paket registriert wird.|\<Keine >|
+|Hinweise|Anmerkungen im Zusammenhang mit dieser Domänenklasse.|\<Keine >|
+|Beschreibung|Die Beschreibung dieser Domänenklasse.|\<Keine >|
+|Anzeigename|Der Name, der im generierten Designer für diese Domänenklasse angezeigt wird.|\<Keine >|
+|Hilfsschlüsselwort|Das Hilfeschlüsselwort, das mit dieser Domäne verknüpft ist.|\<Keine >|
+|Build|Die Anzahl der inkrementelle Builds für diese Definition einer domänenspezifischen Sprache.|0|
 |Hauptversion|Die inkrementelle Hauptbuildnummer für diese Definition einer domänenspezifischen Sprache.|1|
 |Nebenversion|Die Anzahl der inkrementellen Nebenversionsnummer des Builds für diese Definition einer domänenspezifischen Sprache.|0|
 |Revision|Die inkrementelle Revision Buildnummer für diese Definition einer domänenspezifischen Sprache.|0|
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [DSL-Tools – Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567340"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859223"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
 Transaktionen stellen Sie sicher, dass in den Speicher vorgenommenen Änderungen als Gruppe behandelt werden. Änderungen, die gruppiert werden, können ein Commit oder Rollback als einzelne Einheit sein.
 
- Jedes Mal, wenn Programmcode ändert, hinzufügt oder löscht ein Element in den Store im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualisierungs- und Modellierungs-SDK, muss sie dies innerhalb einer Transaktion erfolgen. Es muss eine aktive Instanz der <xref:Microsoft.VisualStudio.Modeling.Transaction> der Store zugeordnet wird, wenn die Änderung erfolgt. Dies gilt für alle Modellelementen, Beziehungen, Formen, Diagramme und ihre Eigenschaften.
+ Wenn Sie der Code ändert, hinzufügt oder löscht ein Element in der Store in Visual Studio-Visualisierungs- und Modellierungs-SDK, müssen sie dies innerhalb einer Transaktion tun. Es muss eine aktive Instanz der <xref:Microsoft.VisualStudio.Modeling.Transaction> der Store zugeordnet wird, wenn die Änderung erfolgt. Dies gilt für alle Modellelementen, Beziehungen, Formen, Diagramme und ihre Eigenschaften.
 
  Der Transaktionsmechanismus können Sie die inkonsistente Zuständen zu vermeiden. Wenn ein Fehler während einer Transaktion auftritt, werden alle Änderungen ein Rollback ausgeführt. Wenn der Benutzer einen Rückgängig-Befehl ausführt, wird jede aktuelle Transaktion als einem einzigen Schritt behandelt. Benutzer kann nicht Teile einer Änderung, rückgängig machen, es sei denn, Sie ausdrücklich in getrennten Transaktionen eingefügt.
 

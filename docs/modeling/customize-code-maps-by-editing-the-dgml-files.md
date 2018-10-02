@@ -22,22 +22,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c6f192f476b6b3adb1f8d7e664e769314bad9a46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 19278cc1fd08a0dd4d4d18e11c7cb7a3e09ae7e0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952714"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859769"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
-Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup Language) einer Map bearbeiten. Sie können beispielsweise Elemente bearbeiten, um benutzerdefinierte Stile anzugeben, Codeelementen und Links Eigenschaften und Kategorien zuzuweisen oder Dokumente bzw. URLs mit Codeelementen oder Links zu verknüpfen. Weitere Informationen zu DGML-Elemente, finden Sie unter [geleitet Graph Markup Language (DGML) Verweis](../modeling/directed-graph-markup-language-dgml-reference.md).
 
- Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn die Zuordnung Teil der Visual Studio-Projektmappe ist, wählen Sie diese in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü, und wählen Sie **Öffnen mit**, **XML (Text)-Editor**.
+Um eine Code Map anzupassen, können Sie die Datei Directed Graph Markup Language (DGML) bearbeiten. Sie können beispielsweise Elemente bearbeiten, um benutzerdefinierte Stile anzugeben, Codeelementen und Links Eigenschaften und Kategorien zuzuweisen oder Dokumente bzw. URLs mit Codeelementen oder Links zu verknüpfen. Weitere Informationen zu DGML-Elementen finden Sie unter [Directed Graph Markup Language (DGML) Verweis](../modeling/directed-graph-markup-language-dgml-reference.md).
+
+Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn die Zuordnung Teil von Visual Studio-Projektmappe ist, wählen Sie diese in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü, und wählen **Öffnen mit**, **XML (Text)-Editor**.
 
 > [!NOTE]
->  Zum Erstellen von Code Maps benötigen Sie Visual Studio Enterprise. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.
+> Zum Erstellen von Code Maps müssen Sie Visual Studio Enterprise Edition verfügen. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.
 
-##  <a name="OrganizeNodes"></a> Gruppe-Codeelemente
+## <a name="OrganizeNodes"></a> Gruppencodeelemente
  Sie können neue Gruppen hinzufügen oder vorhandene Knoten in eine Gruppe konvertieren.
 
 1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.
@@ -76,10 +77,10 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
     </Links>
     ```
 
-     Weitere Informationen zu den `Category` -Attribut angegeben wird, finden Sie unter [Codeelemente und Links Kategorien zuweisen](#AssignCategories).
+     Weitere Informationen zu den `Category` Attribut, finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories).
 
-##  <a name="ChangeGraphStyle"></a> Ändern Sie die Art der Zuordnung
- Sie können die Hintergrundfarbe und die Rahmenfarbe der Map ändern, indem Sie die DGML-Datei der Map bearbeiten. Um den Stil der Codeelemente und Links zu ändern, finden Sie unter [Ändern des Stils des Codeelemente und Links](#Highlight).
+## <a name="ChangeGraphStyle"></a> Ändern des Stils der Karte
+ Sie können die Hintergrundfarbe und die Rahmenfarbe der Map ändern, indem Sie die DGML-Datei der Map bearbeiten. Zum Ändern des Stils von Codeelementen und Links finden Sie unter [Ändern des Stils von Codeelementen und Links](#Highlight).
 
 1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.
 
@@ -106,9 +107,9 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
     </DirectedGraph>
     ```
 
-##  <a name="Highlight"></a> Ändern des Stils des Codeelemente und links
+## <a name="Highlight"></a> Ändern des Stils von Codeelementen und links
 
-###  <a name="CreateCustomStyles"></a>
+### <a name="CreateCustomStyles"></a>
  Benutzerdefinierte Stile können auf die folgenden Codeelemente angewendet werden:
 
 -   Einzelne Codeelemente und Links
@@ -118,7 +119,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 -   Gruppen von Codeelementen und Links auf der Grundlage bestimmter Bedingungen
 
 > [!TIP]
->  Wenn Sie sich wiederholende Stile für viele Codeelemente oder Links verwenden, sollten Sie in Betracht ziehen, eine Kategorie auf die Codeelemente oder Links anzuwenden und dann einen Stil auf diese Kategorie anzuwenden. Weitere Informationen finden Sie unter [Zuweisen von Kategorien zu Codeelemente und Links](#AssignCategories) und [Eigenschaften zuweisen, Codeelemente und Links](#AssignProperties).
+>  Wenn Sie sich wiederholende Stile für viele Codeelemente oder Links verwenden, sollten Sie in Betracht ziehen, eine Kategorie auf die Codeelemente oder Links anzuwenden und dann einen Stil auf diese Kategorie anzuwenden. Weitere Informationen finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories) und [Zuweisen von Eigenschaften zu Codeelementen und Links](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>So wenden Sie einen benutzerdefinierten Stil auf einen einzelnes Codeelement an
 
@@ -307,11 +308,11 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 
      <Identifier> ::= [^. ]*
 
-     <Literal> :: = einfache oder doppelte Anführungszeichen Zeichenfolgenliteral
+     <Literal> :: = einzelnen oder doppelten Anführungszeichen Zeichenfolgenliteral
 
-     <Number> :: = Folge von Ziffern, mit optionalen Dezimalkomma
+     <Number> :: = Zeichenfolge mit Ziffern und optionales Dezimaltrennzeichen
 
-     Sie können angeben, dass mehrere `<Condition/>` -Elemente, die alle auf "true", die der Stil angewendet werden müssen.
+     Sie können angeben, dass mehrere `<Condition/>` -Elemente, die alle auf "true", der Stil angewendet werden müssen.
 
 3.  Fügen Sie in der nächsten Zeile nach dem `<Condition/>`-Element mindestens ein `<Setter/>`-Element hinzu, um ein `Property`-Attribut anzugeben, sowie ein festes `Value`-Attribut oder ein berechnetes `Expression`-Attribut, das auf die Map, auf die Codeelemente oder auf die Links angewendet werden soll, von der bzw. von denen die Bedingung erfüllt wird.
 
@@ -436,7 +437,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 </DirectedGraph>
 ```
 
-##  <a name="AssignProperties"></a> Weisen Sie Eigenschaften Codeelemente und links
+## <a name="AssignProperties"></a> Zuweisen von Eigenschaften zu Codeelementen und links
  Sie können Codeelemente und Links organisieren, indem Sie ihnen Eigenschaften zuweisen. So können Sie beispielsweise Codeelemente auswählen, die über bestimmte Eigenschaften verfügen, um diese Codeelemente zu gruppieren, ihren Stil zu ändern oder sie auszublenden.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>So weisen Sie einem Codeelement eine Eigenschaft zu
@@ -481,7 +482,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
     </Properties>
     ```
 
-##  <a name="AssignCategories"></a> Zuweisen von Kategorien zu Codeelemente und links
+## <a name="AssignCategories"></a> Zuweisen von Kategorien zu Codeelementen und links
  In den folgenden Abschnitten wird gezeigt, wie Sie Codeelemente durch Zuweisen von Kategorien organisieren können und wie Sie hierarchische Kategorien erstellen können, die Ihnen helfen, Codeelemente zu organisieren und untergeordneten Kategorien mithilfe der Vererbung Attribute hinzuzufügen.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>So weisen Sie einem Codeelement eine Kategorie zu
@@ -552,7 +553,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 
      In diesem Beispiel ist der Hintergrund von `MyFirstNode` grün, da das `Category`-Attribut das `Background`-Attribut von `MyParentCategory` erbt.
 
-##  <a name="AddReferences"></a> Dokumente verknüpfen oder die URLs für Codeelemente und links
+## <a name="AddReferences"></a> Verknüpfen von Dokumenten oder URLs mit Codeelementen und links
  Sie können Dokumente oder URLs mit Codeelementen oder Links verknüpfen, indem Sie die DGML-Datei der Map bearbeiten und ein `Reference`-Attribut für ein Codeelement zum `<Node/>`-Element und für einen Link zum `<Link/>`-Element hinzufügen. Anschließend können Sie den Inhalt über das Codeelement bzw. den Link öffnen und anzeigen. Das `Reference`-Attribut gibt den Pfad dieses Inhalts an. Dabei kann es sich um einen relativ zum Ort der DGML-Datei angegebenen Pfad oder um einen absoluten Pfad handeln.
 
 > [!CAUTION]
@@ -562,11 +563,11 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 
 -   Möglicherweise verknüpfen Sie zur Beschreibung der Änderungen an einer Klasse die URL eines Arbeitscodeelements, eines Dokuments oder einer anderen DGML-Datei mit dem Codeelement einer Klasse.
 
--   Sie können eine Abhängigkeit Diagramm auf ein Codeelement Gruppe verknüpfen, die eine Ebene in der logischen Architektur der Software darstellt.
+-   Sie können ein Abhängigkeitsdiagramm mit einem gruppencodeelement verknüpfen, die eine Ebene in der logischen Architektur der Software darstellt.
 
 -   Möglicherweise verknüpfen Sie ein Komponentendiagramm mit dem Codeelement für eine Schnittstelle, um weitere Informationen über eine Komponente anzuzeigen, die diese Schnittstelle verfügbar macht.
 
--   Verknüpfen Sie ein Codeelement an eine Team Foundation Server-Arbeitsaufgabe Fehler oder sonstige Informationen, die auf das Codeelement verknüpft ist.
+-   Verknüpfen Sie ein Codeelement, mit einer Arbeitsaufgabe für Team Foundation Server, Fehler oder anderen Informationen, die sich auf das Codeelement beziehen.
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>So verknüpfen Sie ein Dokument oder eine URL mit einem Codeelement
 
@@ -604,9 +605,9 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 
         2.  Legen Sie das `Id`-Attribut auf den Namen des neuen Verweisattributs fest.
 
-        3.  Hinzufügen der `IsReference` Attribut, und legen Sie es auf `True` , stellen den Verweis auf des Codeelements angezeigt **Gehe zu Verweis** Kontextmenü.
+        3.  Hinzufügen der `IsReference` Attribut, und legen Sie ihn auf `True` damit den Verweis auf des Codeelements angezeigt **Gehe zu Verweis** im Kontextmenü.
 
-        4.  Verwenden der `Label` -Attributs den Anzeigetext auf des Codeelements angeben **Gehe zu Verweis** Kontextmenü.
+        4.  Verwenden der `Label` Attribut an den Anzeigetext für des Codeelements **Gehe zu Verweis** im Kontextmenü.
 
      Zum Beispiel:
 
@@ -620,7 +621,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
     </Properties>
     ```
 
-     Auf der Map wird der Name des Codeelements unterstrichen angezeigt. Wenn Sie das Kontextmenü für das Codeelement oder den Link öffnen, sehen Sie eine **Gehe zu Verweis** Kontextmenü, enthält die verknüpften Codeelemente, die Sie auswählen.
+     Auf der Map wird der Name des Codeelements unterstrichen angezeigt. Wenn Sie das Kontextmenü für das Codeelement oder den Link öffnen, sehen Sie eine **Gehe zu Verweis** Kontextmenü, das Sie für die Sie auswählen, das die verknüpften Codeelemente enthält.
 
 4.  Geben Sie mithilfe des `ReferenceTemplate`-Attributs eine allgemeine, von mehreren Verweisen verwendete Zeichenfolge (beispielsweise eine URL) an, anstatt die Zeichenfolge im Verweis zu wiederholen.
 
@@ -637,7 +638,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
     </Properties>
     ```
 
-5.  Öffnen Sie das Kontextmenü für das Codeelement oder den Link, um das Codeelement, auf das verwiesen wird, bzw. die Codeelemente aus der Map anzuzeigen. Wählen Sie **Gehe zu Verweis** , und klicken Sie dann das Code-Element.
+5.  Öffnen Sie das Kontextmenü für das Codeelement oder den Link, um das Codeelement, auf das verwiesen wird, bzw. die Codeelemente aus der Map anzuzeigen. Wählen Sie **Gehe zu Verweis** , und klicken Sie dann auf das Codeelement.
 
 ## <a name="see-also"></a>Siehe auch
 

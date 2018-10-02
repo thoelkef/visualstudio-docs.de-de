@@ -13,17 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946480"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858523"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
-In Visual Studio können Sie speichern Modellierungsdiagrammen in nur-Lese Formaten, damit Sie sie mit den Projektbeteiligten, Benutzer oder Projektteammitglieder, die nicht die gleiche Version von Visual Studio verwenden, teilen können.
+In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschützten Formaten, damit Sie freigeben können Projektbeteiligte, Benutzer oder Projektteammitglieder nicht die gleiche Version von Visual Studio verwenden.
 
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>So kopieren Sie ein Diagramm oder einen Teil eines Diagramms in eine andere Anwendung
 
@@ -35,7 +35,7 @@ In Visual Studio können Sie speichern Modellierungsdiagrammen in nur-Lese Forma
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>So speichern Sie ein Modellierungsdiagramm als XPS-Datei (XML Paper Specification)
 
-1.  Auf der **Datei** im Menü klicken Sie auf **Drucken** So öffnen die **Drucken** (Dialogfeld).
+1.  Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.
 
 2.  In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.
 
