@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: ad78a0c97c0de1dda5d0d7f618df96a13dfc974d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24601350"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860564"
 ---
 Team Foundation-Versionskontrolle
