@@ -13,43 +13,43 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a814e3d07c2e51a8f946ae9a7b6eff03ea3c2e01
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748724"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859236"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
-Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tools) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], die Benutzeroberfläche die folgenden Abbildung ähneln.
+Wenn Sie zuerst eine domänenspezifische Sprachtools (DSL-Tools)-Lösung in Visual Studio öffnen, wird die Benutzeroberfläche in der folgende Abbildung ähneln.
 
  ![DSL-Designer](../modeling/media/dsl_designer.png)
 
- In der folgenden Tabelle wird erläutert, wie die Teile der Benutzeroberfläche verwendet werden.
+ In der folgende Tabelle wird erläutert, wie die Teile der Benutzeroberfläche verwendet werden.
 
 |**Element**|**Definition**|
 |-----------------|--------------------|
-|Diagramm|Das Diagramm zeigt die Domänenmodell.<br /><br /> Das Diagramm verfügt über zwei Seiten. Einseitige definiert die Typen der Elemente in Ihren Modellen. Die andere Seite definiert, wie die Modelle auf dem Bildschirm angezeigt werden.|
-|Werkzeugkasten|Ziehen Sie Tools aus der Toolbox hinzufügen Domänenklassen und shape-Typen in das Diagramm. Beziehungen, Connectors und flächenkartogrammen hinzufügen möchten, klicken Sie auf das Tool, und klicken Sie auf den Quellknoten auf das Diagramm und dann auf den Zielknoten.|
-|DSL-Explorer|**DSL-Explorer** wird angezeigt, wenn eine DSL-Definition des aktiven Fensters verwendet wird. Es zeigt die DSL als Struktur. DSL-Explorer können Sie die Features des Modells zu bearbeiten, die nicht im Diagramm angezeigt werden. Sie können z. B. Toolboxelemente hinzufügen und auf dem Validierungsprozess wechseln, indem die **Explorer für DSL**.|
-|DSL-Detailfenster|Die **DSL-Detailfenster** Fenster zeigt die Eigenschaften der Domäne des Modells-Elemente, mit denen Sie steuern, wie Elemente angezeigt werden und wie die Elemente kopiert und gelöscht werden.<br /><br /> -Standardmäßig die **DSL-Detailfenster** Fenster wird neben der **Fehlerliste** und **Ausgabe** Windows.|
+|Diagramm|Das Diagramm zeigt das Domänenmodell.<br /><br /> Das Diagramm verfügt über zwei Seiten. Eine Seite definiert die Typen der Elemente in Ihren Modellen. Die andere Seite definiert, wie die Modelle auf dem Bildschirm angezeigt werden.|
+|Werkzeugkasten|Ziehen Sie die Tools aus der Toolbox auf das Hinzufügen von Domänenklassen und shape-Typen im Diagramm. Um Beziehungen, Connectors und formzuordnungen hinzuzufügen, klicken Sie auf das Tool, und klicken Sie dann Quellknoten im Diagramm, und klicken Sie dann den Zielknoten.|
+|DSL-Explorer|**DSL-Explorer** wird angezeigt, wenn eine DSL-Definition des aktiven Fensters. Es zeigt die DSL als Struktur. DSL-Explorer können Sie die Features des Modells zu bearbeiten, die nicht im Diagramm angezeigt werden. Sie können z. B. Toolboxelemente hinzufügen und auf den Überprüfungsprozess wechseln, indem die **DSL-Explorer**.|
+|Fenster "DSL-Details"|Die **DSL-Details** Fenster zeigt die Eigenschaften der Domäne des Modells-Elemente, mit denen Sie steuern, wie Elemente angezeigt werden und wie die Elemente kopiert und gelöscht werden.<br /><br /> -Standardmäßig die **DSL-Details** Fenster neben dem **Fehlerliste** und **Ausgabe** Windows.|
 
-## <a name="the-domain-model-diagram"></a>Die Domäne Modelldiagramms
- Die Domäne Modelldiagramm ist in zwei Bereiche unterteilt. Eine Seite des Diagramms zeigt die Elemente und Beziehungen im Modell an. Die andere Seite wird gezeigt, wie das Modell ist, die angezeigt werden, sowie die Formen, die verwendet werden, um die Elemente und die Eigenschaften des Modelldiagramms anzuzeigen. Das folgende Bild zeigt die Elemente des Diagramms.
+## <a name="the-domain-model-diagram"></a>Das Modelldiagramm Domäne
+ Das Modelldiagramm Domäne wird in zwei Teile unterteilt. Eine Seite des Diagramms zeigt die Elemente und Beziehungen im Modell an. Die andere Seite zeigt, wie das Modell ist, angezeigt werden, sowie die Formen, die verwendet werden, um die Elemente und die Eigenschaften des Modelldiagramms anzuzeigen. Die folgende Abbildung zeigt die Elemente des Diagramms.
 
  ![DSL-Designer mit Swimlane](../modeling/media/dsl_desinger.png)
 
- In der folgenden Tabelle werden einige der Elemente des Diagramms Modell Domäne erläutert.
+ In der folgende Tabelle werden einige der Elemente im Modelldiagramm Domäne erläutert.
 
 |**Begriff**|**Definition**|
 |--------------|--------------------|
-|Domänenklasse|Domänenklassen sind die Typen von Elementen in Ihren Modellen.<br /><br /> Eine Domänenklasse kann mehr als einmal in einem Diagramm angezeigt werden, wenn sie das Ziel von mehr als eine Beziehung ist.<br /><br /> Eine Domänenklasse hinzufügen möchten, ziehen Sie das Tool für die Klasse von Domänen aus der **Toolbox** auf die **Klassen und Beziehungen** Seite des Diagramms.|
-|Domänenbeziehung|Zwischen Domänen sind die Typen von Links zwischen Elementen in Ihren Modellen.<br /><br /> Ein *einbetten Beziehung* gibt an, dass das Zielelement ist im Besitz oder im Source-Element enthalten sind, und als eine durchgehende Linie angezeigt wird. Jedes Element in einem Modell sollte das Ziel eine Beziehung einbetten, sein, damit, dass das Modell eine Struktur bildet. Ein *verweisbeziehung* gibt eine allgemeine Verknüpfung zwischen Modellelementen und wird als gestrichelte Linie dargestellt. Jedes Element kann eine beliebige Anzahl von Links zu Referenzen haben.<br /><br /> Erstellen Sie eine Beziehung, indem Sie auf das Tool für die **Toolbox**, klicken Sie auf die Domäne Quellklasse und dann auf die Zielklasse.|
-|Formen und Konnektoren|Formen angeben wie die betroffenen Modellelemente auf einem DSL-Diagramm angezeigt werden soll, Connectors Linien in einem DSL-Diagramm, die zum Anzeigen von Beziehungen verwendet werden kann.<br /><br /> Um eine Form oder den Connector zu erstellen, ziehen Sie das Tool die **Diagrammelemente** Seite des Diagramms.|
-|Formzuordnungen|Ein flächenkartogramm angezeigt als Linie in der Domäne Modelldiagramm, verknüpfen eine Form auf die Domänenklasse, die er angezeigt wird, oder eine Verbindung zu den zwischen der Domäne, in dem er angezeigt wird.|
+|Domänenklasse|Domänenklassen werden die Typen der Elemente in Ihren Modellen.<br /><br /> Eine Domänenklasse kann mehr als einmal in einem Diagramm angezeigt werden, ist dies das Ziel von mehr als eine Beziehung.<br /><br /> Zum Hinzufügen einer Domänenklasse ziehen Sie das Tool für die Klasse von Domänen aus der **Toolbox** auf die **Klassen und Beziehungen** Seite des Diagramms.|
+|Domänenbeziehung|Domänenbeziehungen sind die Typen von Links zwischen Elementen in Ihren Modellen.<br /><br /> Ein *einbettende Beziehung* gibt an, dass das Zielelement im Besitz der Source-Element enthalten sind und als durchgezogene Linie wird angezeigt. Jedes Element in einem Modell sollte das Ziel einer einbettenden Beziehung sein, damit, dass das Modell eine Struktur bildet. Ein *verweisbeziehung* gibt einen allgemeinen Link zwischen Modellelementen und wird als gestrichelte Linie dargestellt. Jedes Element kann eine beliebige Anzahl von Verweislinks haben.<br /><br /> Erstellen Sie eine Beziehung, indem Sie auf das Tool für die **Toolbox**, klicken Sie auf die quelldomänenklasse, und klicken Sie dann auf die Zielklasse.|
+|Formen und Konnektoren|Formen angeben wie Modellelemente in einer DSL-Diagramm. angezeigt werden soll, können Connectors Zeilen in einem DSL-Diagramm, das zum Anzeigen von Beziehungen verwendet werden kann.<br /><br /> Um eine Form oder den Connector zu erstellen, ziehen Sie das Tool die **Diagrammelemente** Seite des Diagramms.|
+|Formzuordnungen|Als Linie in das Modelldiagramm Domäne, verknüpfen eine Form mit der Domänenklasse, die angezeigt wird, oder einen Connector für die domänenbeziehung, die es anzeigt, wird ein flächenkartogramm angezeigt.|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md)
-- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [DSL-Tools – Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

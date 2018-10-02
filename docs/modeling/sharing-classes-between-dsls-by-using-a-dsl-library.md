@@ -9,59 +9,59 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a48ba42982ea8f190fca2e13d714cb99cb01490
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949458"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857975"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
-In der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK können Sie erstellen eine unvollständige DSL-Definition, die in einer anderen DSL importiert werden können. Dadurch können Sie die allgemeinen Teile der ähnlichen Modellen zu berücksichtigen.
+In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie eine unvollständige DSL-Definition erstellen, die Sie in einer anderen DSL importieren können. Dadurch können Sie die allgemeinen Teile der ähnlichen Modellen zu berücksichtigen.
 
-## <a name="creating-and-using-dsl-libraries"></a>Erstellen und Verwenden von DSL-Bibliotheken
+## <a name="creating-and-using-dsl-libraries"></a>Erstellen und verwenden die DSL-Bibliotheken
 
-#### <a name="to-create-a-dsl-library"></a>So erstellen Sie einen DSL-Bibliothek
+#### <a name="to-create-a-dsl-library"></a>Um eine DSL-Bibliothek zu erstellen.
 
-1.  Erstellen eines neuen DSL-Projekts, und wählen Sie die Projektmappe (Vorlage) DSL-Bibliothek.
+1.  Erstellen eines neuen DSL-Projekts, und wählen Sie die Lösungsvorlage für die DSL-Bibliothek.
 
-     Ein einzelnes DSL-Projekt wird mit einem leeren Modell erstellt werden.
+     Ein einzelnes DSL-Projekt wird mit einem leeren Modell erstellt.
 
-2.  Sie können Domänenklassen, Beziehungen, Formen usw. hinzufügen.
+2.  Sie können Domänenklassen, Beziehungen, Formen und so weiter hinzufügen.
 
-     Die Elemente in der Bibliothek keine bilden eine einzelne Struktur einbetten.
+     Die Elemente in der Bibliothek keine einzelne einbettende Struktur bilden.
 
-     Um eine Beziehung zu definieren, die Importer verwenden können, erstellen Sie zwei Domänenklassen, und erstellen Sie die Beziehung zwischen ihnen.
+     Um eine Beziehung zu definieren, die Importers verwenden können, erstellen Sie zwei Domänenklassen, und erstellen Sie die Beziehung zwischen ihnen.
 
-     Legen Sie die **Inheritance Modifier** der Domänenklassen zu `Abstract`.
+     Neben der Einstellung der **Vererbungsmodifizierer** der Domänenklassen, `Abstract`.
 
-3.  Sie können Elemente hinzufügen, die Sie im Explorer für DSL, z. B. Verbindungs-Generatoren zu definieren.
+3.  Sie können Elemente hinzufügen, die Sie im DSL-Explorer, wie z. B. Verbindungs-Generatoren zu definieren.
 
 4.  Sie können Anpassungen hinzufügen, die zusätzlichen Code, z. B. validierungseinschränkungen erfordern.
 
-5.  Klicken Sie auf **Transformieren aller Vorlagen**.
+5.  Klicken Sie auf **alle Vorlagen transformieren**.
 
 6.  Erstellen Sie das Projekt.
 
-7.  Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter Suchen. `Dsl\bin\*`
+7.  Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie sowohl die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter finden. `Dsl\bin\*`
 
-#### <a name="to-import-a-dsl-library"></a>Eine DSL-Bibliothek importieren
+#### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 
-1.  In einer anderen DSL-Definition in **Explorer für DSL**mit der rechten Maustaste auf die Stammklasse der DSL, und klicken Sie dann auf **Hinzufügen neuer DslLibrary Import**.
+1.  In einer anderen DSL-Definition in **DSL-Explorer**mit der rechten Maustaste auf die Stammklasse der DSL, und klicken Sie dann auf **Hinzufügen eines neuen DslLibrary Import**.
 
-2.  Legen Sie im Fenster Eigenschaften die **Dateipfad** der Bibliothek. Sie können einen relativen oder einen absoluten Pfad verwenden.
+2.  Legen Sie im Fenster Eigenschaften die **Dateipfad** der Bibliothek. Sie können ein relativer oder absoluter Pfad.
 
-     Die importierten Bibliothek, die im Nur-Lese-Modus im DSL-Explorer angezeigt werden.
+     Die importierte Bibliothek wird im DSL-Explorer im schreibgeschützten Modus angezeigt.
 
-3.  Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänenklasse, in den Import von DSL, und legen Sie im Eigenschaftenfenster im Fenster **Basisklasse** auf eine importierte Klasse.
+3.  Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänenklasse in der importierenden DSL, und legen in den Eigenschaften des **Basisklasse** zu einer Klasse importiert.
 
-4.  Klicken Sie auf Transformieren aller Vorlagen.
+4.  Klicken Sie auf alle Vorlagen transformieren.
 
-5.  Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (DLL), die von der DSL Bibliotheksprojekt erstellt wurde.
+5.  Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (DLL), die von der DSL-Bibliothek-Projekt erstellt wurde.
 
 6.  Erstellen Sie die Projektmappe.
 
- Eine DSL-Bibliothek können andere Bibliotheken importieren. Wenn Sie eine Bibliothek importieren, werden seine Importe auch automatisch im DSL-Explorer angezeigt.
+ Eine DSL-Bibliothek können andere Bibliotheken importieren. Wenn Sie eine Bibliothek importieren, werden die Importe auch automatisch im DSL-Explorer angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
