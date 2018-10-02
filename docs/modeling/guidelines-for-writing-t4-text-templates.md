@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178461"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859626"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
-Diese allgemeinen Richtlinien sinnvoll sein, wenn Sie Programmcode oder andere Ressourcen der Anwendung in generieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sie sind nicht die Regeln fest.
+Diese allgemeinen Richtlinien ist möglicherweise hilfreich, wenn Sie Programmcode oder andere Ressourcen der Anwendung in Visual Studio generieren. Sie sind nicht die Regeln fest.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Richtlinien für die Entwurfszeit-T4-Vorlagen
- Während der Entwurfszeit T4-Vorlagen sind Vorlagen, die Code generieren Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt zur Entwurfszeit. Weitere Informationen finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Während der Entwurfszeit T4-Vorlagen sind Vorlagen, die Code in Visual Studio-Projekt zur Entwurfszeit zu generieren. Weitere Informationen finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generieren Sie die Variablen Teile der Anwendung.
 Codegenerierung eignet sich am besten für die Aspekte der Anwendung, die möglicherweise während des Projekts ändern oder zwischen verschiedenen Versionen der Anwendung ändert. Trennen Sie diese Variablen Teile von mehr invariante Aspekte, damit Sie einfacher bestimmen können, was zu generiert hat. Wenn Ihre Anwendung eine Website bereitstellt, trennen Sie z. B. der Standardseite für die Funktionen von Logik, die Navigationspfade auf einer Seite zu einem anderen definiert.
 
  Codieren Sie die abweichenden Aspekte in einem oder mehreren Source-Modellen.
-Ein Modell ist eine Datei oder Datenbank, die jeder Vorlage gelesen werden, um bestimmte Werte für Variablen Teile des Codes zu erhalten, die generiert werden soll. Modelle können sein, Datenbanken, XML-Dateien von Ihren eigenen Entwurf, Diagramme oder domänenspezifische Sprachen. Ein Modell in der Regel dient zum Generieren von vielen Dateien in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Jede Datei wird aus einer getrennten Vorlage generiert.
+Ein Modell ist eine Datei oder Datenbank, die jeder Vorlage gelesen werden, um bestimmte Werte für Variablen Teile des Codes zu erhalten, die generiert werden soll. Modelle können sein, Datenbanken, XML-Dateien von Ihren eigenen Entwurf, Diagramme oder domänenspezifische Sprachen. In der Regel wird ein Modell verwendet, um viele Dateien in Visual Studio-Projekt zu generieren. Jede Datei wird aus einer getrennten Vorlage generiert.
 
  Sie können mehr als einem Modell in einem Projekt verwenden. Beispielsweise können Sie ein Modell für die Navigation zwischen Webseiten und ein separates Modell für das Layout der Seiten definieren.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Richtlinien für alle T4-Vorlagen
  Separate Sammeln von Daten aus der textgenerierung versuchen Sie, mischen Sie Berechnungen und Textblöcke. Verwenden Sie in jeder Textvorlage, die erste \<#-Codeblock #> zum Festlegen von Variablen und komplexe Berechnungen ausführen. Aus der ersten TextBlock ans Ende der Vorlage oder die erste \<#+ Klassenfunktion blockieren #>, vermeiden Sie lange Ausdrücke und Vermeiden von Schleifen und Bedingungen, wenn sie die Textblöcke enthalten. Diese Vorgehensweise erleichtert die Vorlage zu lesen und zu verwalten.
 
- Verwenden Sie keine `.tt` sind Dateien verwenden Sie eine andere Dateinamenerweiterung wie `.ttinclude` nach Includedateien. Verwendung `.tt` nur für Dateien, die Sie möchten wie Laufzeit oder Entwurfszeit-Textvorlagen verarbeitet. In einigen Fällen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erkennt `.tt` -Dateien und deren Eigenschaften für die Verarbeitung automatisch festgelegt.
+ Verwenden Sie keine `.tt` sind Dateien verwenden Sie eine andere Dateinamenerweiterung wie `.ttinclude` nach Includedateien. Verwendung `.tt` nur für Dateien, die Sie möchten wie Laufzeit oder Entwurfszeit-Textvorlagen verarbeitet. In einigen Fällen erkennt Visual Studio `.tt` -Dateien und deren Eigenschaften für die Verarbeitung automatisch festgelegt.
 
  Starten Sie jede Vorlage als feste Prototyp.
 Schreiben Sie ein Beispiel für den Code oder Text, den Sie verwenden möchten, generieren, und stellen Sie sicher, dass er korrekt ist. Ändern Sie ihre Erweiterung in TT und inkrementell fügen Sie Code, den Inhalt lesen Sie das Modell ändert.
