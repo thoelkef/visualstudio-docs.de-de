@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d9ae35155009e43678aca89e388ebac721a5724
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8c88feb35a4699770b7a05a266168e0c3ad347e4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551240"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860113"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden
 
@@ -37,7 +37,7 @@ ms.locfileid: "45551240"
 
 ## <a name="cause"></a>Ursache
 
-Rufen Sie eine Plattform ist definiert, und eine Methode mit der entsprechenden Funktionalität vorhanden ist, der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klassenbibliothek.
+Rufen Sie eine Plattform ist definiert, und eine Methode mit der entsprechenden Funktionalität, die in der .NET Framework-Klassenbibliothek vorhanden ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 

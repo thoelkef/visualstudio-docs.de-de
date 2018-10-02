@@ -1,0 +1,1 @@
+Laden Sie [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=524433) herunter, oder vergleichen Sie die [Visual Studio-Editionen](https://www.visualstudio.com/vs-2015-product-editions)

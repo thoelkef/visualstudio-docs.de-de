@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950731"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858248"
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
 
-In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt vergleichbar.
+In einer Textvorlage von Visual Studio zur Entwurfszeit die `assembly` Richtlinie lädt eine Assembly, damit im Vorlagencode die Typen verwenden kann. Der Effekt ist vergleichbar mit dem Hinzufügen eines Assemblyverweises in einem Visual Studio-Projekt.
 
- Eine allgemeine Übersicht über Textvorlagen schreiben, finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
+ Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Die `assembly`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt.
+>  Die `assembly`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Visual Studio-Projekt.
 
 ## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung
  Die Syntax der Direktive lautet wie folgt:
@@ -38,13 +38,13 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
 
 -   Absoluter Pfad der Assembly
 
- Sie können mit der `$(variableName)`-Syntax auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Variablen wie `$(SolutionDir)` und mit `%VariableName%` auf Umgebungsvariablen verweisen. Zum Beispiel:
+ Sie können die `$(variableName)` Syntax, um Visual Studio-Variablen verweisen, z. B. `$(SolutionDir)`, und `%VariableName%` auf Umgebungsvariablen verweisen. Zum Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Stattdessen enthalten die notwendigen Verweise in der **Verweise** Teil Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Fügen Sie stattdessen die notwendigen Verweise in die **Verweise** Abschnitt der Visual Studio-Projekt. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardassemblys
  Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblyanweisungen dafür schreiben müssen:
@@ -65,7 +65,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
 
 -   Die Assembly mit der DSL.
 
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio
+## <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio
  Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.
 
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:
