@@ -18,19 +18,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 314fe4fb88fedb1b287c41fddd9aef4a20bbd1af
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774931"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860484"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
 Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a> Auswählen einer Vorlagenprojektmappe
+## <a name="templates"></a> Auswählen einer Vorlagenprojektmappe
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 |||
@@ -122,7 +122,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Löschen Sie andere Klassen nach Bedarf, oder benennen Sie sie um.
 
-##  <a name="patterns"></a> Muster zum Definieren einer DSL
+## <a name="patterns"></a> Muster zum Definieren einer DSL
  Es ist empfehlenswert, beim Entwickeln einer DSL nur jeweils ein oder zwei Features gleichzeitig hinzuzufügen bzw. anzupassen. Fügen Sie ein Feature hinzu, führen Sie die DSL aus und testen Sie sie. Fügen Sie dann ein oder zwei weitere Features hinzu. Ein typisches Feature Ihrer DSL könnte folgendermaßen aussehen:
 
 -   Eine Domänenklasse, die einbettende Beziehung, die das Element mit dem Modell verbindet, die erforderliche Form zum Anzeigen von Elementen der Klasse im Diagramm sowie das Elementwerkzeug, mit dem Benutzer Elemente erstellen können.
@@ -149,7 +149,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 > [!NOTE]
 >  "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.
 
-##  <a name="classes"></a> Definieren von Domänenklassen
+## <a name="classes"></a> Definieren von Domänenklassen
  Domänenklassen stellen die Konzepte der DSL dar. Die Instanzen sind *Modellelemente*. Z. B. in einem **"Musikbibliothek"** DSL möglicherweise Domänenklassen, die mit dem Namen **Album** und **"Song"**.
 
  Um eine Domänenklasse erstellen möchten, können Sie aus ziehen die **benannte Domänenklasse** tool, das Diagramm, und klicken Sie dann benennen Sie die Klasse.
@@ -231,7 +231,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 7.  **Speichern Sie die Datei schließen und öffnen Sie sie erneut**. Nachdem Sie die Knoten erweitert haben, sollten alle erstellten Instanzen im Explorer sichtbar sein.
 
-##  <a name="shapes"></a> Definieren von Formen im Diagramm
+## <a name="shapes"></a> Definieren von Formen im Diagramm
  Sie können Klassen von Elementen definieren, die in einem Diagramm als Rechtecke, Ellipsen oder Symbole erscheinen.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>So definieren Sie eine Klasse von Elementen, die in einem Diagramm als Formen dargestellt werden
@@ -327,7 +327,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="references"></a> Definieren von Verweisbeziehungen
+## <a name="references"></a> Definieren von Verweisbeziehungen
  Sie können eine Verweisbeziehung zwischen einer Quelldomänenklasse und einer Zieldomänenklasse definieren. Verweisbeziehungen werden in einem Diagramm üblicherweise als Konnektoren, also als Linien zwischen Formen, angezeigt.
 
  Wenn beispielsweise Alben und Interpreten als Formen in einem Diagramm dargestellt werden, könnten Sie eine Beziehung namens "ArtistsAppearedOnAlbums" definieren, die Interpreten mit den Alben verknüpft, an denen sie mitgewirkt haben. Siehe das Beispiel in der Abbildung.
@@ -409,7 +409,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="compartments"></a> Definieren von Formen, die Listen enthalten: Depot-Formen
+## <a name="compartments"></a> Definieren von Formen, die Listen enthalten: Depot-Formen
  Eine Depot-Form enthält mindestens eine Liste von Elementen. In einer DSL für eine Musikbibliothek würden Sie z. B. Depot-Formen verwenden, um Musikalben darzustellen. Jedes Album enthält eine Liste von Songs.
 
  ![Depot-Form](../modeling/media/compartmentshape.png)
@@ -537,7 +537,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 7.  Wählen Sie entweder den Link oder das Element in der Depot-Form aus. Sowohl der Link als auch das Element sollte angezeigt werden.
 
-##  <a name="ports"></a> Definieren von Anschlüssen am Rand einer anderen Form
+## <a name="ports"></a> Definieren von Anschlüssen am Rand einer anderen Form
  Ein Anschluss ist eine Form, die sich am Rand einer anderen Form befindet.
 
  Anschlüsse können auch verwendet werden, um einen festen Verbindungspunkt an einer anderen Form bereitzustellen, zu dem der Benutzer Konnektoren zeichnen kann. In diesem Fall können Sie die Anschluss-Form transparent machen.
@@ -560,7 +560,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Weitere Informationen finden Sie unter [Eigenschaften von Anschlussformen](../modeling/properties-of-port-shapes.md).
 
-##  <a name="swimlanes"></a> Definieren einer DSL, die von Verantwortlichkeitsbereichen
+## <a name="swimlanes"></a> Definieren einer DSL, die von Verantwortlichkeitsbereichen
  Verantwortlichkeitsbereiche sind vertikale oder horizontale Bereiche eines Diagramms. Jeder Verantwortlichkeitsbereich entspricht einem Modellelement. Ihre DSL-Definition muss eine Domänenklasse für die Verantwortlichkeitsbereich-Elemente enthalten.
 
  Am besten lässt sich eine DSL mit Verantwortlichkeitsbereichen erstellen, indem Sie eine neue DSL-Projektmappe erstellen und die Projektmappenvorlage "Aufgabenfluss" auswählen. In der DSL-Definition ist die Actor-Klasse die Domänenklasse, die dem Verantwortlichkeitsbereich zugeordnet wird. Benennen Sie diese und die anderen Klassen nach den Anforderungen Ihres Projekts um.
@@ -571,7 +571,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Weitere Informationen finden Sie unter [Eigenschaften von Verantwortlichkeitsbereichen](../modeling/properties-of-swimlanes.md).
 
-##  <a name="addTypes"></a> Hinzufügen von Eigenschaftentypen
+## <a name="addTypes"></a> Hinzufügen von Eigenschaftentypen
 
 ### <a name="domain-enumerations-and-literals"></a>Domänenenumerationen und Literale
  Eine Domänenenumeration ist ein Typ mit mehreren Literalwerten.
@@ -587,7 +587,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Um einen Typ hinzuzufügen, mit der rechten Maustaste in des Stamm des Modells in der DSL-Explorer, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie im Fenster Eigenschaften den Namen auf **Farbe** und den Namespace auf **"System.Drawing"**. Dieser Typ wird nun in DSL-Explorer unter **Domänentypen**. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
 
-##  <a name="custom"></a> Anpassen der DSL
+## <a name="custom"></a> Anpassen der DSL
  Mit den hier beschriebenen Verfahren können Sie schnell eine DSL mit einer Diagrammdarstellung, einem lesbaren XML-Format und den grundlegenden Tools erstellen, mit denen Code und andere Artefakte generiert werden.
 
  Die DSL-Definition kann auf zwei Arten erweitert werden:
@@ -607,7 +607,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Siehe auch [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-##  <a name="trouble"></a> Problembehandlung bei
+## <a name="trouble"></a> Problembehandlung bei
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Forum zur Erweiterbarkeit von Visualisierung Tools](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Problem|Vorschlag|
@@ -619,7 +619,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 |Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt.|Wählen Sie in der DSL-Definition eine Domäneneigenschaft der Klasse, und legen Sie in den Eigenschaften im Fenster **ist Elementname** auf "true".|
 |Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie _Ihresprache_**Designer (Standard)**.|
 |Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe.|Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Visual Studio**erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|
+|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566582"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859795"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -30,7 +30,7 @@ Der System.Xml-Namespace stellt umfassende Tools für das Laden eines XML-Dokume
 In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.
 
 > [!NOTE]
-> Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
+> Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in Visual Studio enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
 
 Hier ist die Beispieldatei:
 
@@ -142,7 +142,7 @@ Fügen Sie eine Textvorlagendatei hinzu, und legen Sie die Ausgabe-Erweiterung a
 
 3.  Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.
 
-     Durch diese Änderung kann der Vorlagencode auf die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Dienste zugreifen.
+     Diese Änderung kann den Vorlagencode für den Zugriff auf die Visual Studio-Dienste.
 
 4.  Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
@@ -272,7 +272,7 @@ Weitere Informationen, wie Eigenschaften für die untergeordneten Knoten, Attrib
 
 ### <a name="access-the-visual-studio-api"></a>Zugriff auf die Visual Studio-API
 
-Festlegen des `hostspecific` -Attributs der `<#@template#>` -Direktive ermöglicht der Vorlage den Zugriff auf die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -API. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
+Festlegen der `hostspecific` Attribut der `<#@template#>` -Direktive ermöglicht die Verwendung der Vorlage, um den Zugriff auf die Visual Studio-API zu erhalten. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
