@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542601"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243951"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Überprüfen Sie die vorherigen app-Status, die mithilfe von IntelliTrace Rückschritt in Visual Studio
 
@@ -105,7 +105,9 @@ Die Auswirkungen auf die gesamtleistung der schrittweisen Ausführung hängt von
 ## <a name="known-issues"></a>Bekannte Probleme  
 * Wenn Sie IntelliTrace-Ereignisse und-Momentaufnahmen-Modus auf Versionen von Windows, die älter als Windows 10 Fall Creators Update (RS3) verwenden und wenn das Debugziel für die Plattform der Anwendung auf X86 festgelegt ist, nimmt IntelliTrace keine Momentaufnahmen an.
 
-    Problemumgehung:
+    Problemumgehungen:
+    * Wenn Sie auf das Windows 10 Anniversary Update (RS1) und aktuellere 10.0.14393.2273, [installieren KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Wenn Sie auf dem Windows 10 Creators Update (RS2) und aktuellere 10.0.15063.1112, [installieren KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Installieren oder ein upgrade auf Windows 10 Fall Creators Update (RS3). 
     * Alternativ: 
         1. Installieren Sie das Toolset VC++ 2015.3 v140 für Desktop (x86, x64) aus dem Visual Studio-Installer.
