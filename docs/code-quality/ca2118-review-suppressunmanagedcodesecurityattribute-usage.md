@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549854"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859704"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Überprüfen der Verwendung von SuppressUnmanagedCodeSecurityAttribute
 
@@ -40,7 +40,7 @@ ms.locfileid: "45549854"
 
  Dieses Attribut wird hauptsächlich verwendet, um die Leistung zu erhöhen. Der Leistungszuwachs geht jedoch mit beträchtlichen Sicherheitsrisiken einher. Wenn Sie das-Attribut auf öffentliche Member, die native Methoden aufzurufen platzieren, ist der Aufrufer in der Aufrufliste (mit Ausnahme der direkte Aufrufer) nicht nicht verwalteten Code die Berechtigung zum Ausführen von nicht verwalteten Codes erforderlich. Abhängig von des öffentlichen Members Aktionen und Eingabeverarbeitung erlaubt es möglicherweise nicht vertrauenswürdige Aufrufern Access-Funktionalität, die normalerweise nur für vertrauenswürdigen Code.
 
- Die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sicherheitsüberprüfungen zu verhindern, dass Aufrufer am direkten Zugriff auf den aktuellen Prozess-Adressbereich verwendet. Da dieses Attribut Sicherheit umgangen werden, stellt Ihr Code eine ernsthafte Bedrohung, wenn sie zum Lesen oder Schreiben in den der Speicher des Prozesses verwendet werden kann. Beachten Sie, dass das Risiko nicht auf Methoden beschränkt ist, die absichtlich Zugriff zum Verarbeiten von Arbeitsspeicher bereitstellen. Es ist auch in jedem Szenario, in denen bösartiger Code den Zugriff mit welchen Mitteln, z. B. erreichen kann, indem die Eingabe von überraschend, falsch formatiert oder ungültig, vorhanden.
+ .NET Framework basiert auf sicherheitsüberprüfungen zu verhindern, dass Aufrufer am direkten Zugriff auf den aktuellen Prozess-Adressbereich. Da dieses Attribut Sicherheit umgangen werden, stellt Ihr Code eine ernsthafte Bedrohung, wenn sie zum Lesen oder Schreiben in den der Speicher des Prozesses verwendet werden kann. Beachten Sie, dass das Risiko nicht auf Methoden beschränkt ist, die absichtlich Zugriff zum Verarbeiten von Arbeitsspeicher bereitstellen. Es ist auch in jedem Szenario, in denen bösartiger Code den Zugriff mit welchen Mitteln, z. B. erreichen kann, indem die Eingabe von überraschend, falsch formatiert oder ungültig, vorhanden.
 
  Die Standardsicherheitsrichtlinie nicht verwaltetem Code auf eine Assembly gewährt Ihnen kein Recht, wenn sie auf dem lokalen Computer ausgeführt wird, oder ein Mitglied einer der folgenden Gruppen ist:
 
