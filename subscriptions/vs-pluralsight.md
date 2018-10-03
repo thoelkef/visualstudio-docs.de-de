@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zum Pluralsight-Schulungsabonnements, das in Ihre
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289563"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283144"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -113,4 +113,4 @@ A: Nein.  Der Pluralsight-Vorteil kann nur einmal verwendet werden und ist an ei
 ## <a name="support-resources"></a>Supportressourcen
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) bietet Hilfe bei der Durchführung von Pluralsight-Kursen und der Verwendung der Pluralsight-Website.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

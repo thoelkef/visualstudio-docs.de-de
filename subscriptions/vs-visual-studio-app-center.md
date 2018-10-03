@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289344"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283170"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -69,4 +69,4 @@ Jetzt sollten Sie auf das App Center-Portal zugreifen und Ihr Konto erstellen k�
     - Im [App Center Help Center](https://intercom.help/appcenter/) erhalten Sie Antworten und Ratschläge vom App Center-Team.
     - Sehen Sie sich die vollständige [App Center-Dokumentation](/appcenter/) an.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
