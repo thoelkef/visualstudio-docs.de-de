@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612739"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788031"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 Eine Programmdatenbankdatei (.pdb) Programmdatei, auch als Symboldatei, bezeichnet, ordnet die Bezeichner, die Sie erstellen im Quellcode für Klassen, Methoden und anderer Code die Bezeichner, die in die kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei wichtige Informationen zu bestimmen:
@@ -175,35 +175,35 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 |**Immer automatisch laden**|Fügt die Symboldatei zur Liste der Dateien hinzu, die automatisch vom Debugger geladen werden.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Festlegen der Compileroptionen für Symboldateien  
- Wenn Sie das Projekt aus der VS IDE erstellen und die standardmäßige **Debug** -Buildkonfiguration verwenden, erstellen die Compiler für C++-Code und verwalteten Code die entsprechenden Symboldateien für den Code. Sie können Compileroptionen auch in der Befehlszeile festlegen, um Symboldateien zu erstellen.  
+Wenn Sie das Projekt aus der VS IDE erstellen und die standardmäßige **Debug** -Buildkonfiguration verwenden, erstellen die Compiler für C++-Code und verwalteten Code die entsprechenden Symboldateien für den Code. Sie können Compileroptionen auch in der Befehlszeile festlegen, um Symboldateien zu erstellen.  
   
- **C++-Optionen**  
+**C++-Optionen**  
   
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird bei einem Build mit [/ZI oder /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (für C/C++) erstellt.  
+Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird bei einem Build mit [/ZI oder /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (für C/C++) erstellt.  
   
- In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]wird die vom Compiler erstellte PDB-Datei von der [/Fd](/cpp/build/reference/fd-program-database-file-name) -Option benannt. Wenn Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt mithilfe von Assistenten erstellen, wird durch die **/Fd** -Option eine PDB-Datei mit dem Namen *project*.pdb erstellt.  
+In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]wird die vom Compiler erstellte PDB-Datei von der [/Fd](/cpp/build/reference/fd-program-database-file-name) -Option benannt. Wenn Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt mithilfe von Assistenten erstellen, wird durch die **/Fd** -Option eine PDB-Datei mit dem Namen *project*.pdb erstellt.  
   
- Wird Sie die C/C++-Anwendung mithilfe einer Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd**angegeben, erhalten Sie zwei PDB-Dateien:  
+Wird Sie die C/C++-Anwendung mithilfe einer Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd**angegeben, erhalten Sie zwei PDB-Dateien:  
   
--   VC*x*.pdb, wobei *x* die Visual C++-Version darstellt, beispielsweise VC11.pdb. In dieser Datei werden alle Debuginformationen für die einzelnen OBJ-Dateien gespeichert; sie wird im selben Verzeichnis wie das Projektmakefile abgelegt.  
+* VC*x*.pdb, wobei *x* die Visual C++-Version darstellt, beispielsweise VC11.pdb. In dieser Datei werden alle Debuginformationen für die einzelnen OBJ-Dateien gespeichert; sie wird im selben Verzeichnis wie das Projektmakefile abgelegt.  
   
--   project.pdb   In dieser Datei werden alle Debuginformationen für die EXE-Datei gespeichert. Bei C/C++ befindet sich die Datei im Unterverzeichnis \debug.  
+* project.pdb   In dieser Datei werden alle Debuginformationen für die EXE-Datei gespeichert. Bei C/C++ befindet sich die Datei im Unterverzeichnis \debug.  
   
- Wenn eine OBJ-Datei erstellt wird, führt der C/C++-Compiler Debuginformationen mit VC*x*.pdb zusammen. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch keine Symbolinformationen, wie Funktionsdefinitionen. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise \<windows.h >, die Typdefinitionen aus diesen Headerdateien nur einmal anstatt in jeder OBJ-Datei gespeichert.  
+Wenn eine OBJ-Datei erstellt wird, führt der C/C++-Compiler Debuginformationen mit VC*x*.pdb zusammen. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch keine Symbolinformationen, wie Funktionsdefinitionen. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise \<windows.h >, die Typdefinitionen aus diesen Headerdateien nur einmal anstatt in jeder OBJ-Datei gespeichert.  
   
- Der Linker erstellt die Datei "project.pdb", die Debuginformationen für die EXE-Datei des Projekts enthält. Die Datei "project.pdb" enthält nicht nur die in VC*x*.pdb gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. Beide PDB-Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zur PDB-Datei in die erstellte EXE- bzw. DLL-Datei ein.  
+Der Linker erstellt die Datei "project.pdb", die Debuginformationen für die EXE-Datei des Projekts enthält. Die Datei "project.pdb" enthält nicht nur die in VC*x*.pdb gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. Beide PDB-Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zur PDB-Datei in die erstellte EXE- bzw. DLL-Datei ein.  
   
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei nicht vom Debugger am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist (z. B. weil das Projekt auf einen anderen Computer verschoben wurde), durchsucht der Debugger den Pfad mit der EXE-Datei sowie die Symbolpfade, die im Dialogfeld **Optionen** (Ordner**Debugging** , Knoten **Symbole** ) angegeben sind. Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei nicht vom Debugger am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist (z. B. weil das Projekt auf einen anderen Computer verschoben wurde), durchsucht der Debugger den Pfad mit der EXE-Datei sowie die Symbolpfade, die im Dialogfeld **Optionen** (Ordner**Debugging** , Knoten **Symbole** ) angegeben sind. Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
   
- **.NET Framework-Optionen**  
+**.NET Framework-Optionen**  
   
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
   
- **Webanwendungen**  
+**Webanwendungen**  
   
- In der Konfigurationsdatei der Anwendung (Web.config) muss der Debugmodus festgelegt sein. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.  
+In der Konfigurationsdatei der Anwendung (Web.config) muss der Debugmodus festgelegt sein. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.  
   
 ##  <a name="BKMK_Find_source_files"></a> Suchen der Quelldateien  
   
