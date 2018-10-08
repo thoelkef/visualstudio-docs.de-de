@@ -96,7 +96,7 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 
      ![Die Komponententests sind erstellt](../test/media/createunittestsstubs.png)
 
-4.  Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#write-your-tests) , um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzuüfgen möchten.
+4.  Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#write-your-tests), um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzufügen möchten.
 
  **Manuelles Erstellen des Komponententestpojekts und der Komponententests**
 
