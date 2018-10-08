@@ -116,7 +116,7 @@ public void Withdraw(double amount)
   
      ![Die Komponententests sind erstellt](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#BKMK_Writing_your_tests) , um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzuüfgen möchten.  
+4.  Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#BKMK_Writing_your_tests), um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzufügen möchten.  
   
  **Manuelles Erstellen des Komponententestpojekts und der Komponententests**  
   
