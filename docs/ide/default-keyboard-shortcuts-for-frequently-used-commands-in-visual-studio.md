@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512547"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370977"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 
@@ -150,7 +150,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |View.ObjectBrowser|**STRG+ALT+J** [Global]|
 |View.Output|**STRG+ALT+O** [Global]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer, Team Foundation Build-Detail-Editor]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**STRG+ALT+S** [Global]|
 |View.ShowSmartTag|**STRG+.** [Global]<br /><br /> oder **UMSCHALT+ALT+F10** [Global, HTML-Editor-Entwurfsansicht]|
 |View.SolutionExplorer|**STRG+ALT+L** [Global]|

@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie das WhiteSource Bolt-Abonnement aktivieren, d
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289408"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542350"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt in Visual Studio-Abonnements
 
@@ -38,13 +38,15 @@ Bestimmen und schließen Sie Schwachstellen in Open-Source-Komponenten, und erze
 
 4.  Im Abschnitt **Activate your account** (Konto aktivieren) der Seite werden Sie durch vier Schritte geführt:
 
-    - [Installieren](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Sie die WhiteSource Bolt-Erweiterung von Microsoft Visual Studio Marketplace. Wenn Sie nicht über die nötigen Berechtigungen zum Installieren von Erweiterungen verfügen, finden Sie weitere Informationen unter [Install free extensions for VSTS (Installieren kostenloser Erweiterungen für VSTS)](/vsts/marketplace/install-vsts-extension?view=vsts).
+    - [Installieren](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Sie die WhiteSource Bolt-Erweiterung von Microsoft Visual Studio Marketplace. Wenn Sie nicht über die nötigen Berechtigungen zum Installieren von Erweiterungen verfügen, finden Sie weitere Informationen unter [Installieren kostenloser Erweiterungen für Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
-    Klicken Sie auf die grüne Schaltfläche **Installieren**, wenn Sie VSTS verwenden oder bei Team Foundation Server auf die Schaltfläche **Herunterladen**.  In diesem Beispiel wird VSTS verwendet.
+
+    Klicken Sie auf die grüne Schaltfläche **Installieren**, wenn Sie Azure DevOps Services verwenden, oder auf die Schaltfläche **Herunterladen**, wenn Sie Team Foundation Server nutzen.  In diesem Beispiel verwenden wir Azure DevOps Services.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource-Vorteil: Erweiterung installieren](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Wählen Sie dann das VSTS-Konto aus, das Sie verwenden möchten, und klicken Sie auf **Bestätigen**.  (Wenn Sie VSTS nicht eingerichtet haben, besuchen Sie die Seite [Vorteile](https://my.visualstudio.com/benefits), und aktivieren Sie Ihren VSTS-Vorteil.)
+    - Wählen Sie als Nächstes das gewünschte Azure DevOps-Unternehmen aus, und klicken Sie auf **Bestätigen**.  (Wenn Sie Azure DevOps Services noch nicht eingerichtet haben, rufen Sie die Seite [Vorteile](https://my.visualstudio.com/benefits) auf, und aktivieren Sie Ihren Azure DevOps Services-Vorteil.)
+
     > [!div class="mx-imgBorder"]
     > ![WhiteSource-Vorteil: Konto bestätigen](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ Bestimmen und schließen Sie Schwachstellen in Open-Source-Komponenten, und erze
     > [!div class="mx-imgBorder"]
     > ![WhiteSource-Vorteil: Installation abgeschlossen](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Öffnen Sie Ihr VSTS-Projektdashboard (Visual Studio Team Services), klicken Sie auf das Menü **Build und Release**, und wählen Sie **WhiteSource Bolt** aus.
+5.  Öffnen Sie das Dashboard Ihres Azure DevOps-Projekts, klicken Sie auf das Menü **Azure Pipelines**, und wählen Sie **WhiteSource Bolt** aus.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource-Vorteil: Erweiterung hinzufügen](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -90,4 +92,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 -  Benötigen Sie Hilfe bei WhiteSource Bolt?  Chatten Sie unter https://www.whitesourcesoftware.com/vse_whitesource_bolt/ live mit einem Mitarbeiter von WhiteSource Bolt.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

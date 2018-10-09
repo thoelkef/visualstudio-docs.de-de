@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512238"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863949"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Benachrichtigungssysteme  
@@ -213,7 +213,7 @@ ms.locfileid: "39512238"
  Das Drehfeld (auch bekannt als ein "statuskreis") ist eine unbestimmte Statusanzeige hauptsächlich in Bezug auf die kontextbezogene Benutzeroberfläche verwendet. Zeigen Sie ein Drehfeld, in der Nähe der verwandtem Inhalt, wie Text Kategorieheaders, messaging oder Steuerelement.  
   
 ##### <a name="cursor-feedback"></a>Cursor-feedback  
- Zu Vorgängen, die zwischen 2 bis 7 Sekunden dauern, Feedback Cursor. In der Regel bedeutet dies mithilfe des Wartecursors, die vom Betriebssystem bereitgestellt werden. Anleitungen finden Sie im MSDN-Artikel [Cursors.Wait Eigenschaft](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Zu Vorgängen, die zwischen 2 bis 7 Sekunden dauern, Feedback Cursor. In der Regel bedeutet dies mithilfe des Wartecursors, die vom Betriebssystem bereitgestellt werden. Anleitungen finden Sie im MSDN-Artikel [Cursors.Wait Eigenschaft](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Status Indicator Speicherorte  
   

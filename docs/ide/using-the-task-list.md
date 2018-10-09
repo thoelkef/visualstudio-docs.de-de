@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336070"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612700"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
@@ -65,9 +65,9 @@ Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO`-Au
 
 ### <a name="custom-tokens"></a>Benutzerdefinierte Token
 
-Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UNDONE` und `NOTE`. Bei ihnen wird nicht zwischen Groß-/Kleinschreibung unterschieden.
+Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UNDONE` und `UnresolvedMergeConflict`. Bei ihnen wird nicht zwischen Groß-/Kleinschreibung unterschieden. Sie können außerdem eigene benutzerdefinierte Token erstellen.
 
-Sie können außerdem eigene benutzerdefinierte Token erstellen. So erstellen Sie ein benutzerdefiniertes Token:
+So erstellen Sie ein benutzerdefiniertes Token:
 
 1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
@@ -77,9 +77,11 @@ Sie können außerdem eigene benutzerdefinierte Token erstellen. So erstellen Si
 
    ![Visual Studio – Aufgabenliste](../ide/media/vs2015_task_list_options.png)
 
-3. Geben Sie in der Kategorie **Token** im Textfeld **Name** den Tokennamen ein, z.B. **BUG**.
+3. Geben Sie in das Textfeld **Name** den Tokennamen ein, z.B. **BUG**.
 
-4. Wählen Sie in der Dropdownliste **Priorität** eine Standardpriorität für das neue Token aus. Wählen Sie die Schaltfläche **Hinzufügen** aus.
+4. Wählen Sie in der Dropdownliste **Priorität** eine Standardpriorität für das neue Token aus.
+
+5. Wählen Sie **Hinzufügen** aus.
 
 ### <a name="c-todo-comments"></a>C++-TODO-Kommentare
 

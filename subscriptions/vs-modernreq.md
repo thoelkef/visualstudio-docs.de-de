@@ -9,16 +9,16 @@ description: Informationen zur ModernRequirements-Suite von Produkten, die in au
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289533"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279023"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Der MODERNRequirements4TFS-Vorteil in Visual Studio-Abonnements
 
-Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement für MODERNRequirements SmartOffice4TFS und ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS erweitert die Möglichkeiten von TFS oder Visual Studio Team Services um Berichtfunktionen auf Basis von Microsoft Word und eine schnelle, vereinfachte Rich-Text-Bearbeitung.  ModernRequirements4TFS stellt Baselining für Arbeitselemente und Möglichkeiten zur HTML5-Simulation zur Verfügung.
+Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement für MODERNRequirements SmartOffice4TFS und ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS erweitert die Möglichkeiten von TFS und Azure DevOps Services um Berichtfunktionen auf Basis von Microsoft Word und eine schnelle, vereinfachte Rich-Text-Bearbeitung.  ModernRequirements4TFS stellt Baselining für Arbeitselemente und Möglichkeiten zur HTML5-Simulation zur Verfügung.
 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
@@ -101,4 +101,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei ModernRequirements-Produkten?  Besuchen Sie https://www.modernrequirements.com/support-2/.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

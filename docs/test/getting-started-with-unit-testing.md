@@ -1,22 +1,22 @@
 ---
-title: Erste Schritte mit Unittests in Visual Studio
+title: Erste Schritte mit Unittests
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469066"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370806"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -103,9 +103,7 @@ Mithilfe des **Test-Explorers** können Sie Komponententests aus Visual Studio o
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
-Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen bzw. diesen "abdecken". Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
-
-![Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](media/codecoverage.png)
+Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen. Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-different-unit-test-framework"></a>Verwenden eines anderen Komponententest-Frameworks
 

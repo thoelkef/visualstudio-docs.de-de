@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082130"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863892"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 
-Diese exemplarische Vorgehensweise zum Veröffentlichen von Visual Studio-Erweiterung in Visual Studio Marketplace über die Befehlszeile. Wenn Sie die Erweiterung zum Marketplace hinzufügen, können Entwickler die **Erweiterungen und Updates** Dialogfeld, um Sie dort nach neuen und aktualisierten Erweiterungen suchen.
+Diese exemplarische Vorgehensweise zum Veröffentlichen von Visual Studio-Erweiterung in Visual Studio Marketplace über die Befehlszeile. Wenn Sie die Erweiterung zum Marketplace hinzufügen, können Entwickler die [ **Erweiterungen und Updates** ](../ide/finding-and-using-visual-studio-extensions.md) Dialogfeld, um Sie dort nach neuen und aktualisierten Erweiterungen suchen.
 
 VsixPublisher.exe ist das Befehlszeilentool für Visual Studio-Erweiterungen im Marketplace veröffentlichen. Es ist möglich über ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Zu diesem Tool verfügbare Befehle sind: **veröffentlichen**, **CreatePublisher**, **DeletePublisher**, **DeleteExtension**,  **Anmeldung**, **Logout**.
 
@@ -195,7 +195,7 @@ Um "images/testlogo.png" im vorherigen Beispiel zu beheben, kann Benutzer "Asset
 
 ## <a name="publishing-walkthrough"></a>Veröffentlichung Exemplarische Vorgehensweise
 
-### <a name="prerequisites"></a>Erforderliche Komponenten
+### <a name="prerequisites"></a>Vorraussetzungen
 
 Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 

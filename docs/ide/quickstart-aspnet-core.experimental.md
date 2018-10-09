@@ -2,7 +2,7 @@
 title: Verwenden von Visual Studio zum Erstellen einer ASP.NET Core-Web-App in C#
 description: Dieser Artikel enthält eine exemplarische Vorgehensweise zum Erstellen einer einfachen „Hallo Welt“-Web-App mit C# und ASP.NET Core.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135600"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028935"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -39,9 +39,9 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Überprüfen Sie im oberen Dropdownmenü des Dialogfelds **Neue ASP.NET Core-Webanwendung**, ob **ASP.NET Core 2.0** angezeigt wird. Wählen Sie dann **Webanwendung** und anschließend **OK** aus.
 
-  ![Ansicht der animierten GIF-Datei, auf der gezeigt wird, wie ein C#-ASP.NET Core-Projekt in Visual Studio erstellt wird](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Ansicht der animierten GIF-Datei, auf der gezeigt wird, wie ein C#-ASP.NET Core-Projekt in Visual Studio erstellt wird](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
+   Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    > [!NOTE]
    > Falls Sie die Projektvorlagenkategorie **.NET Core** nicht finden, klicken Sie im linken Bereich auf den Link **Visual Studio-Installer öffnen**.
@@ -58,13 +58,15 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 Erstellen Sie anschließend eine Hallo-Welt-Web-App, und führen Sie diese aus. Gehen Sie folgendermaßen vor:
 
-1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die **About.cshtml**.
+1. Erweitern Sie in Visual Studio im **Projektmappen-Explorer** den Ordner **Seiten**. Wählen Sie dann die Datei **About.cshtml** aus.
 
-   Diese Datei entspricht der Seite mit der Bezeichnung **Info** in der Webanwendung.
+   ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Diese Datei entspricht der Seite mit der Bezeichnung **Info** in der Web-App, die im Webbrowser ausgeführt wird.
 
    ![Die Seite „Info“ in der Web-App](../ide/media/csharp-aspnet-about-page.png)
 
-1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!**“.
+1. Ändern Sie im Visual Studio-Code-Editor den Text für weitere Informationen in „**Hallo Welt!**“.
 
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **About.cshtml**, und wählen Sie die **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Erstellen Sie anschließend eine Hallo-Welt-Web-App, und führen Sie diese aus. 
 
 1. Klicken Sie auf **IIS Express**, oder drücken Sie **STRG**+**F5**, um die App auszuführen und im Webbrowser zu öffnen.
 
-  ![Ansicht der animierten GIF-Datei, auf der gezeigt wird, wie eine C#-ASP.NET Core-Web-App in Visual Studio erstellt und ausgeführt wird](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Ansicht der animierten GIF-Datei, auf der gezeigt wird, wie eine C#-ASP.NET Core-Web-App in Visual Studio erstellt und ausgeführt wird](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Wenn Sie die Fehlermeldung **Es kann keine Verbindung mit dem Webserver „IIS Express“ hergestellt werden.** erhalten, schließen Sie Visual Studio. Öffnen Sie dann Visual Studio, indem Sie im Kontextmenü auf die Option **Als Administrator ausführen** klicken. Führen Sie die Anwendung anschließend erneut aus.
 
-1. Überprüfen Sie, ob auf der Seite **About** (Informationen) Ihr aktualisierter Text angezeigt wird.
+1. Überprüfen Sie im Webbrowser, ob auf der Seite **Info** Ihr aktualisierter Text angezeigt wird.
 
 1. Schließen Sie den Webbrowser.
 
