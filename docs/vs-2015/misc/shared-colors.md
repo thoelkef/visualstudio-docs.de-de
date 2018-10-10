@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512772"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881175"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
 Fügen Sie hier eine Einleitung ein.  
@@ -25,7 +25,7 @@ Fügen Sie hier eine Einleitung ein.
 ## <a name="shared-colors"></a>Konsistente Farben  
  Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen gestalten möchten oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, können Sie die Tokennamen aus den Paketdefinitionsdateien verwenden, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.  
   
- In diesem Artikel werden allgemeine Elemente der Benutzeroberfläche und die jeweils verwendeten Tokennamen beschrieben, auf die Sie bei der Erstellung einer ähnlichen Benutzeroberfläche verweisen können. Spezifische Informationen dazu, wie Zugriff auf diese farbtoken finden Sie [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ In diesem Artikel werden allgemeine Elemente der Benutzeroberfläche und die jeweils verwendeten Tokennamen beschrieben, auf die Sie bei der Erstellung einer ähnlichen Benutzeroberfläche verweisen können. Spezielle Informationen zum Zugriff auf diese Farbtoken finden Sie unter [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:  
   
@@ -245,7 +245,7 @@ Fügen Sie hier eine Einleitung ein.
 #####  <a name="BKMK_CommandComboBox"></a> Kombinationsfeld  
   
 > [!IMPORTANT]
->  Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich nicht umfasst, verwenden Sie die farbtoken finden Sie unter [Dropdownliste](../misc/shared-colors.md#BKMK_CommandDropDown).  
+>  Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)beschriebenen Farbtoken.  
   
  ![Kombinationsfeld (rote Linie,)](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -323,7 +323,7 @@ Fügen Sie hier eine Einleitung ein.
 #####  <a name="BKMK_CommandDropDown"></a> Dropdown-Liste  
   
 > [!IMPORTANT]
->  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die farbtoken finden Sie unter [Kombinationsfeld](../misc/shared-colors.md#BKMK_CommandComboBox).  
+>  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)beschriebenen Farbtoken.  
   
  ![Drop&#45;nach unten (rote Linie)](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
@@ -387,7 +387,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Drop&#45;gedrückt deaktiviert](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Vordergrund (Glyphe)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Trennschaltfläche  
- Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Split Schaltfläche Dropdownlisten sind Implementierungen der Befehlsleiste [Menüs](../misc/shared-colors.md#BKMK_CommandMenus).  
+ Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdownlisten für unterteilte Schaltflächen sind Implementierungen der Befehlsleiste [Menus](../misc/shared-colors.md#BKMK_CommandMenus).  
   
  ![Trennschaltfläche (rote Linie,)](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")  
   
@@ -648,7 +648,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Registerkarte "Vorschau Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Vorschau-/ Hintergrundregisterkarte wenn darauf gezeigt wird**|Rahmen|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
   
 ##### <a name="document-overflow-button"></a>Dokumentüberlauf-Schaltfläche  
- Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Die Dokument dokumentüberlauf-Dropdownmenü, dazu die **CommandBarMenu** Farben (finden Sie unter [Menüs](../misc/shared-colors.md#BKMK_CommandMenus)), zeigt eine Liste mit allen geöffneten Dokumenten, sichtbar und unsichtbar, und die Überlauf-Glyphe ändert. abhängig davon, ob alle geöffneten Dokumente im registerkartenkanal angezeigt werden.  
+ Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dokumentüberlauf-Dropdownmenü, das mithilfe der **CommandBarMenu** -Farben (siehe [Menus](../misc/shared-colors.md#BKMK_CommandMenus)) gesteuert wird, zeigt eine Liste aller geöffneten Dokumente (sichtbar und unsichtbar) an. Die Überlauf-Glyphe ändert sich abhängig davon, ob alle geöffneten Dokumente im Registerkartenkanal angezeigt werden.  
   
  ![(Rote Linie) der Überlauf](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
@@ -1085,7 +1085,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Infoleiste](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infoleiste**|Rahmen|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Bildlaufleiste  
- Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Sie können jedoch festlegen, dass die in Bildlaufleisten genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.  
+ Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Möglicherweise möchten jedoch, dass Sie für die Farben, die in Bildlaufleisten verwendet werden, sodass Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent nutzen möchten.  
   
  ![(Rote Linie) der Bildlaufleiste](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -1182,7 +1182,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`|  
 |![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
 |![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Rahmen|Keine`TreeView.FocusVisualBorder`|  
+|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Rahmen|Keiner`TreeView.FocusVisualBorder`|  
 |![Strukturansicht ohne Fokus bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
@@ -1295,7 +1295,7 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Benutzeroberflächenelemente, die keine Dropdownliste und kein Kombinationsfeld sind  
   
--   für eine [Dropdownliste](../misc/shared-colors.md#BKMK_CommandDropDown) oder [Kombinationsfeld](../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste.  
+-   für eine [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste  
   
  **Default**  
   
@@ -1421,7 +1421,7 @@ Fügen Sie hier eine Einleitung ein.
 |Ausgewählt (inaktiv)|Rahmen|Keiner|  
   
 ### <a name="manifest-designer"></a>Manifest-Designer  
- Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout für Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
  ![(Rote Linie) der Manifest-Designer](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")  
   
@@ -1600,22 +1600,22 @@ Fügen Sie hier eine Einleitung ein.
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Rahmen|`TreeView.FocusVisualBorder`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Rahmen|`TreeView.FocusVisualBorder`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
+|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Rahmen|`TreeView.FocusVisualBorder`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Rahmen|`TreeView.FocusVisualBorder`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Rahmen|Keiner|  
 |![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Rahmen|Keiner|  
-|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
-|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`<br /><br /> Von [Strukturansicht](../misc/shared-colors.md#BKMK_TreeView) Kategorie|  
+|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox übergeordneter Knoten ohne Fokus](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Übergeordneter Knoten ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Toolbox (untergeordneter Knoten) ohne Fokus](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Untergeordneter Knoten ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
   
 ## <a name="color-value-reference"></a>Farbwertverweis  
   

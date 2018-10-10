@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512378"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880773"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Barrierefreie Produkte und Dienste (Zusammenstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   
  Webadressen können geändert werden. In diesem Fall kann es sein, dass Sie nicht mehr auf die hier angegebene Website zugreifen können.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Kundendienst für Hörgeschädigte  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs  
  Wenn Sie taub oder hörgeschädigt sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:  
   
  Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.  

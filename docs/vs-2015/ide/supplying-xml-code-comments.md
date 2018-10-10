@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b80e9ce62e74cf7d164dd745120b710c096e366e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510529"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880434"
 ---
 # <a name="supplying-xml-code-comments"></a>Anzeigen von XML-Codekommentaren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Die neueste Version dieses Themas finden Sie unter [Anzeigen von XML-Codekomment
   
 Sie können die Kommentare in Quellcodedateien als IntelliSense zur Verfügung stellen. Wenn Sie der Visual Basic-, C#- oder C++-Compilerbefehlszeile den Schalter „/doc“ hinzufügen, wird eine XML-Datei generiert, die als Basis für die IntelliSense-Dokumentation dient.  
   
- Weitere Informationen über das Dokumentieren von Code in Visual Basic finden Sie unter [Vorgehensweise: Erstellen einer XML-Dokumentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Weitere Informationen zum Dokumentieren von Code in Visual Basic, finden Sie unter [Vorgehensweise: Erstellen von XML-Dokumentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
  Weitere Informationen über das Dokumentieren von Code in C# finden Sie unter [XML-Dokumentationskommentare](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   

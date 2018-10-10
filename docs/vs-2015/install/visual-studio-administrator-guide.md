@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522683"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879202"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter den [Administratorhandbuch für Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Die neueste Dokumentation für Visual Studio 2017 finden Sie unter den [Administratorhandbuch für Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer erfüllt die [minimalen Installationsanforderungen](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit dem Schalter ausführen (wie beschrieben die [Erstellen einer Offlineinstallation von Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) Seite), und klicken Sie dann auf die Netzwerkfreigabe aus dem lokalen Computer kopiert wird. Wenn Sie ein ISO-Image verwenden, können Sie das ISO-Image bereitstellen und freigeben oder der ISO-Datei in eine Netzwerkfreigabe kopieren.  
   
@@ -59,7 +59,7 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
 ## <a name="controlling-what-is-installed"></a>Steuern der installierten Elemente  
  Wenn Sie steuern möchten, welche Elemente Ihre Endbenutzer installieren können, haben Sie zwei Optionen: die Installation über die Administratordatei und die Befehlszeilenoptionen. Wählen Sie die Installation über die Administratordatei, wenn Sie beschränken möchten, welche Elemente Ihre Endbenutzer bei der Visual Studio-Installation auswählen können. Wählen Sie die Befehlszeilenparameter aus, wenn Sie eine anfängliche Konfiguration erstellen, aber Ihren Endbenutzern erlauben möchten, die Optionen für die Visual Studio-Installation selbst festzulegen.  
   
- Weitere Informationen zu der administratordatei finden finden Sie unter [Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
+ Weitere Informationen zur Funktion der Administratordatei finden Sie unter [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen  
  Standardmäßig ermöglicht die Visual Studio-Installation Kundenfeedback. Sie können Visual Studio so konfigurieren, dass Kundenfeedback auf einzelnen Computern deaktiviert wird. Ändern Sie dazu den Wert des folgenden Registrierungsschlüssels in die Zeichenfolge „0“.  

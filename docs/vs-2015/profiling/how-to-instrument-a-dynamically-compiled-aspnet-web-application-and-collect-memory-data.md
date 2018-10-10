@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590464"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879299"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Gewusst wie: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Instrumentie
 In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools gehörenden Befehlszeilentools verwenden können, um mithilfe der Instrumentierungsprofilerstellungsmethode ausführliche Daten zur .NET-Speicherbelegung und Objektlebensdauer für eine dynamisch kompilierte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung zu erfassen.  
   
 > [!NOTE]
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Um die Profiler-Befehlszeilentools zu verwenden, müssen Sie den Toolpfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Wenn Sie Leistungsdaten aus einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung erfassen möchten, müssen Sie die web.config-Datei der Zielanwendung bearbeiten, um das [VSInstr.exe](../profiling/vsinstr.md)-Tool zu aktivieren, damit die Dateien der dynamisch kompilierten Anwendung instrumentiert werden können. Verwenden Sie dann das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um den Server zu konfigurieren, der die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung hostet, und aktivieren Sie die Profilerstellung für den .NET-Speicher, indem Sie passende Umgebungsvariablen festlegen. Starten Sie anschließend den Computer neu.  
   

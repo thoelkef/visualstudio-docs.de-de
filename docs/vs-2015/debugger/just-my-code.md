@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524536"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879979"
 ---
 # <a name="just-my-code"></a>Nur eigenen Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
 >  Die **nur meinen Code aktivieren** ist eine globale Einstellung, die für alle Visual Studio-Projekte in allen Sprachen angewendet wird.  
   
 ###  <a name="BKMK_Override_call_stack_filtering"></a> Überschreiben der aufruflistenfilterung  
- In den Aufruflistenanzeigen wie den Fenstern "Aufrufliste" und "Aufgaben" reduziert "Nur eigenen Code" den Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.  
+ In den Aufruflistenanzeigen wie den Fenstern „Aufrufliste“ und „Aufgaben“ reduziert „Nur eigenen Code“ den Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.  
   
 > [!NOTE]
 >  Die **externen Code anzeigen** Einstellung des aktuellen Benutzers Profiler gespeichert ist. Sie wird auf alle Projekte in allen Sprachen angewendet, die von dem Benutzer geöffnet werden.  
@@ -195,7 +195,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
 |-|-|  
 |**MyCode**|Benutzercode, den Sie besitzen und steuern.|  
 |**LibraryCode**|Nichtbenutzercode aus Bibliotheken, den Sie regelmäßig verwenden und die für das ordnungsgemäße Funktionieren Ihrer Anwendung erforderlich sind (z. B. WinJS oder jQuery).|  
-|**UnrelatedCode**|Nichtbenutzercode, der in Ihrer Anwendung ausgeführt werden könnte, den Sie jedoch nicht besitzen und der für das ordnungsgemäße Funktionieren Ihrer Anwendung nicht direkt erforderlich ist (z. B. ein Werbungs-SDK, das Anzeigen anzeigt). In Windows Store-Projekten gilt jeder Code, der von einem HTTP- oder HTTPS-URI in Ihre App geladen wird, als UnrelatedCode.|  
+|**UnrelatedCode**|Nichtbenutzercode, die in Ihrer Anwendung, aber Sie ausgeführt werden konnte nicht besitzen, und Ihre Anwendung nicht direkt erforderlich (z. B. ein werbungs-SDK, das Anzeigen anzeigt) ordnungsgemäß funktionieren. In Windows Store-Projekten gilt jeder Code, der von einem HTTP- oder HTTPS-URI in Ihre App geladen wird, als UnrelatedCode.|  
   
  Der JavaScript-Debugger klassifiziert automatisch diese Codetypen:  
   

@@ -17,12 +17,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9827186ad2e7310f2a7554c8d830518f9979411
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521251"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878874"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder-Element (Visual Studio-Projektvorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 ## <a name="remarks"></a>Hinweise  
  `Folder` ist ein optionales untergeordnetes Element des `Project`.  
   
- Sie können eine der folgenden Methoden, um so organisieren Projektelemente in Ordnern in einer Vorlage verwenden:  
+ Sie können eine der folgenden Methoden verwenden, so organisieren Projektelemente in Ordnern in einer Vorlage:  
   
 -   Schließen Sie die Ordner, in der ZIP-Vorlagendatei und dem Projekt in der VSTEMPLATE-Datei hinzufügen, indem Sie die Angabe des Pfads zur Datei in die `ProjectItem` Elemente ohne `Folder` Elemente. Dies ist die empfohlene Methode. Zum Beispiel:  
   

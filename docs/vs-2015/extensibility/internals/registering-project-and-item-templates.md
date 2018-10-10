@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511014"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880079"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 |SortPriority|REG_DWORD|Legen Sie SortPriority zur Steuerung der Reihenfolge, in der Vorlagen, in angezeigt werden, der **neues Element hinzufügen** Dialogfeld. Größere SortPriority-Werte, die weiter oben in der Vorlagenliste angezeigt werden.|  
   
 ### <a name="registering-file-filters"></a>Dateifilter registrieren  
- Sie können optional Filter registrieren, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwendet werden, wenn es für Dateinamen aufgefordert werden. Z. B. die [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtern Sie nach der die **geöffnete Datei** Dialogfeld können Sie:  
+ Sie können optional Filter registrieren, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwendet werden, wenn es für Dateinamen aufgefordert werden. Z. B. die [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtern Sie nach der **geöffnete Datei** Dialogfeld können Sie:  
   
  **Visual C#-Dateien (\*cs,\*RESX,\*Settings,\*.xsd,\*.wsdl);\*. Cs,\*RESX,\*Settings,\*.xsd,\*.wsdl)**  
   

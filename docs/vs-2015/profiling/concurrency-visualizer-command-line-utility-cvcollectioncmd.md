@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509633"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880824"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Die neueste Version dieses Themas finden Sie unter [Concurrency Visualizer-Befeh
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
 > [!NOTE]
->  Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
+>  Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Befehlszeilenprogramm Concurrency Visualizer herunterladen  
- Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
+ Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Eine Ablaufverfolgung mit CVCollectionCmd sammeln  
  Sie können eine Ablaufverfolgung sammeln, indem Sie die App mit CVCollectionCmd starten oder es dieser anhängen. Siehe die Befehlszeilenreferenz unten hinsichtlich Ihrer Optionen. Beispiel:  

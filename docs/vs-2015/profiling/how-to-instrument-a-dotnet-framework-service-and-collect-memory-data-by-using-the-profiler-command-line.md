@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b320df77f204a5d0c9f10df82679280c1335cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc463439259ac5eaabe0d0fe29e3afbde9352b3a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521718"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880044"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Gewusst wie: Instrumentieren eines .NET Framework-Diensts und Sammeln von Speicherdaten über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 > [!NOTE]
 >  Mit der Instrumentierungsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der gleichzeitig mit dem Betriebssystem gestartet wird.  
 >   
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Um die Profiler-Befehlszeilentools zu verwenden, müssen Sie den Toolpfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="starting-the-profiling-session"></a>Starten der Profilerstellungssitzung  
  Verwenden Sie [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) zum Sammeln von Leistungsdaten von einem [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Dienst, um die entsprechenden Umgebungsvariablen zu initialisieren, und [VSInstr.exe](../profiling/vsinstr.md), um eine instrumentierte Kopie der Binärdatei des Diensts zu erstellen.  

@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521552"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880928"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Die neueste Version dieses Themas finden Sie unter [freigegebene Farben für Vis
   
 Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen gestalten möchten oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, können Sie die Tokennamen aus den Paketdefinitionsdateien verwenden, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.  
   
- In diesem Artikel werden allgemeine Elemente der Benutzeroberfläche und die jeweils verwendeten Tokennamen beschrieben, auf die Sie bei der Erstellung einer ähnlichen Benutzeroberfläche verweisen können. Spezifische Informationen dazu, wie Zugriff auf diese farbtoken finden Sie [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ In diesem Artikel werden allgemeine Elemente der Benutzeroberfläche und die jeweils verwendeten Tokennamen beschrieben, auf die Sie bei der Erstellung einer ähnlichen Benutzeroberfläche verweisen können. Spezielle Informationen zum Zugriff auf diese Farbtoken finden Sie unter [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:  
   
@@ -561,7 +561,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
 ####  <a name="BKMK_CommandComboBox"></a> Kombinationsfeld  
   
 > [!IMPORTANT]
->  Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich nicht umfasst, verwenden Sie die farbtoken finden Sie unter [Dropdownliste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
+>  Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)beschriebenen Farbtoken.  
   
  ![Kombinationsfeld (rote Linie,)](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
 ####  <a name="BKMK_CommandDropDown"></a> Dropdown-Liste  
   
 > [!IMPORTANT]
->  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die farbtoken finden Sie unter [Kombinationsfeld](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
+>  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)beschriebenen Farbtoken.  
   
  ![Drop&#45;nach unten (rote Linie)](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Trennschaltfläche  
- Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Split Schaltfläche Dropdownlisten sind Implementierungen der Befehlsleiste [Menüs](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
+ Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdownlisten für unterteilte Schaltflächen sind Implementierungen der Befehlsleiste [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
   
  ![Trennschaltfläche (rote Linie,)](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
  Auf dieselbe Farbe wie der Hintergrund festgelegt  
   
 #### <a name="document-overflow-button"></a>Dokumentüberlauf-Schaltfläche  
- Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Die Dokument dokumentüberlauf-Dropdownmenü, dazu die **CommandBarMenu** Farben (finden Sie unter [Menüs](../../misc/shared-colors.md#BKMK_CommandMenus)), zeigt eine Liste mit allen geöffneten Dokumenten, sichtbar und unsichtbar, und die Überlauf-Glyphe ändert. abhängig davon, ob alle geöffneten Dokumente im registerkartenkanal angezeigt werden.  
+ Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dokumentüberlauf-Dropdownmenü, das mithilfe der **CommandBarMenu** -Farben (siehe [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)) gesteuert wird, zeigt eine Liste aller geöffneten Dokumente (sichtbar und unsichtbar) an. Die Überlauf-Glyphe ändert sich abhängig davon, ob alle geöffneten Dokumente im Registerkartenkanal angezeigt werden.  
   
  ![(Rote Linie) der Überlauf](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Bildlaufleiste  
- Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Sie können jedoch festlegen, dass die in Bildlaufleisten genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.  
+ Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Möglicherweise möchten jedoch, dass Sie für die Farben, die in Bildlaufleisten verwendet werden, sodass Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent nutzen möchten.  
   
  ![(Rote Linie) der Bildlaufleiste](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -3079,7 +3079,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keine`TreeView.FocusVisualBorder`  
+ Keiner`TreeView.FocusVisualBorder`  
   
  ![Strukturansicht ohne Fokus bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")  
   
@@ -3348,7 +3348,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
  Nicht empfohlen...  
  -   für Benutzeroberflächenelemente, die keine Dropdownliste und kein Kombinationsfeld sind  
   
--   für eine [Dropdownliste](../../misc/shared-colors.md#BKMK_CommandDropDown) oder [Kombinationsfeld](../../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste.  
+-   für eine [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste  
   
  **Default**  
   
@@ -3698,7 +3698,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
  Keiner  
   
 ## <a name="manifest-designer"></a>Manifest-Designer  
- Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
  ![(Rote Linie) der Manifest-Designer](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")  
   
@@ -4156,25 +4156,25 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  `TreeView.SelectedItemActive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Rahmen  
   
  `TreeView.FocusVisualBorder`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Vordergrund (Glyphe)  
   
  `TreeView.SelectedItemActive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Vordergrund (Text)  
   
  `TreeView.SelectedItemActive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  ![Toolbox übergeordneter Knoten ohne Fokus](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  `TreeView.SelectedItemInactive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Rahmen  
   
@@ -4198,11 +4198,11 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  `TreeView.SelectedItemInactive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie  
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Vordergrund (Text)  
   
  `TreeView.SelectedItemInactive`  
   
- Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie
+ Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 

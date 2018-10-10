@@ -14,17 +14,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 45ed6a059c0a9cf9ae5063e538ec9b9c87698ef1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07f09cbc2deedaeb701a52ffc09532e36e30c308
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522551"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879072"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [automatisch Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [automatisch Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Sie können den Product Key programmgesteuert als Teil eines Skripts zum Automatisieren der Bereitstellung von Visual Studio 2015 verwendet anwenden. Product Keys können während der Installation von Visual Studio oder nach der abgeschlossenen Installation auf einem Gerät programmgesteuert festgelegt werden.  
   
@@ -58,7 +58,7 @@ Sie können den Product Key programmgesteuert als Teil eines Skripts zum Automat
 |Visual Studio Professional 2013|06177|  
 |Visual Studio Test Professional 2013|06194|  
   
- Weitere Informationen zum Abrufen eines Product Key finden Sie unter [wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).  
+ Weitere Informationen zum Abrufen eines Product Key finden Sie unter [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).  
   
  Wenn der Product Key im Hilfsprogramm „StorePID.exe“ erfolgreich angewendet wurde, wird 0 zurückgegeben. Wenn Fehler gefunden werden, wird eine Zahl zwischen 1 und 6 zurückgegeben.  
   

@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524729"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879771"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuv
   
  Damit die CRT ordnungsgemäß funktioniert, müssen die `#include` -Anweisungen in der hier gezeigten Reihenfolge angegeben werden.  
   
- "CRTDBG.h" werden die `malloc` und [kostenlose](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) Funktionen, um den entsprechenden Debugversionen [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) und `free`, die speicherbelegung und-Freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .  
+ Durch Verwendung von "crtdbg.h" werden die `malloc` - und [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) -Funktionen den entsprechenden Debugversionen [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) und `free`zugeordnet, die die Speicherbelegung und -freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .  
   
  Durch die `#define` -Anweisung wird eine Basisversion der CRT-Heapfunktionen der entsprechenden Debugversion zugeordnet. Wenn Sie die `#define` -Anweisung weglassen, ist das Speicherabbild des Arbeitsspeicherverlusts weniger detailliert.  
   
@@ -74,7 +74,7 @@ Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuv
 _CrtDumpMemoryLeaks();  
 ```  
   
- Wenn Ihre Anwendung mehrere Endpunkte verfügt, Sie ist nicht erforderlich, manuell einen Aufruf von [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) an jedem Endpunkt. Ein Aufruf von `_CrtSetDbgFlag` am Anfang der Anwendung führt zu einem automatischen Aufruf von `_CrtDumpMemoryLeaks` an jedem Endpunkt. Die beiden Bitfelder müssen wie hier dargestellt festgelegt werden:  
+ Wenn die Anwendung über mehrere Endpunkte verfügt, ist es nicht erforderlich, manuell einen Aufruf von [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) an jedem Endpunkt einzufügen. Ein Aufruf von `_CrtSetDbgFlag` am Anfang der Anwendung führt zu einem automatischen Aufruf von `_CrtDumpMemoryLeaks` an jedem Endpunkt. Die beiden Bitfelder müssen wie hier dargestellt festgelegt werden:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretieren des Arbeitsspeicherverlust-Berichts  
- Wenn Ihre Anwendung nicht definiert `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) zeigt einen Arbeitsspeicherverlust-Bericht an, wie folgt aussieht:  
+ Wenn `_CRTDBG_MAP_ALLOC`nicht in der Anwendung definiert ist, zeigt [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) einen Arbeitsspeicherverlust-Bericht an, der wie folgt aussieht:  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Dadurch sehen Sie, dass die kompromittierte Zuordnung in Zeile 20 des debug_new.
   
 2.  Wenn die Anwendung am Haltepunkt unterbrochen wird, wird das **Überwachungsfenster** angezeigt.  
   
-3.  In der **Watch** geben `_crtBreakAlloc` in in der **Namen** Spalte.  
+3.  In der **Watch** geben `_crtBreakAlloc` in die **Namen** Spalte.  
   
      Bei Verwendung der Multithread-DLL-Version der CRT-Bibliothek (/MD-Option) schließen Sie den Kontextoperator ein: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

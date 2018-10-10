@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516373"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880236"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Analyse für übereinstimmende geschweifte Klammern  
  Dieses Beispiel zeigt die ablaufsteuerung für den Abgleich eine schließende geschweifte Klammer, die der Benutzer eingegeben hat. In diesem Prozess wird die Überprüfung, die für die farbliche Kennzeichnung dient auch zum Bestimmen den Typ der Token und gibt an, ob das Token einen Übereinstimmung Klammern-Vorgang ausgelöst werden kann. Wenn der Trigger gefunden wird, die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> aufgerufen, um die Klammer zu finden. Schließlich werden die beiden geschweiften Klammern hervorgehoben.  
   
- Obwohl geschweifte Klammern in den Namen der Trigger verwendet werden und Gründe zu analysieren, ist dieser Prozess nicht auf tatsächliche geschweifte Klammern beschränkt. Ein beliebiges Paar von Zeichen, die angegeben ist, um eine übereinstimmende sein, die Paar wird unterstützt. Beispiele hierfür sind (und) \< und >, und [und].  
+ Obwohl geschweifte Klammern in den Namen der Trigger verwendet werden und Gründe zu analysieren, ist dieser Prozess nicht auf tatsächliche geschweifte Klammern beschränkt. Es wird ein beliebiges Paar von Zeichen, die angegeben wird, ein übereinstimmendes Paar werden unterstützt. Beispiele hierfür sind (und) \< und >, und [und].  
   
  Wird davon ausgegangen Sie, dass der Sprachdienst übereinstimmende geschweiften Klammern unterstützt.  
   
