@@ -44,7 +44,7 @@ Der Editor in Visual Studio unterstützt die gebräuchlichsten [EditorConfig-Eig
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- Stamm
+- root
 
 Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Programmierstile](../ide/editorconfig-code-style-settings-reference.md) und [Namenskonventionen](../ide/editorconfig-naming-conventions.md) für C# und Visual Basic.
 
