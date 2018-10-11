@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673721"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073440"
 ---
 # <a name="grant-trust-to-documents"></a>Gewähren von Vertrauen für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.  
@@ -33,7 +33,7 @@ ms.locfileid: "35673721"
 ## <a name="trusted-locations"></a>Vertrauenswürdige Speicherorte  
  Anwendungen in [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] und Office 2010 über Trust Centers, in dem Benutzer die Einstellungen für Sicherheit und Datenschutz, wie beispielsweise vertrauenswürdige Speicherorte konfigurieren können. Für Office-Projektmappen wird der lokale Computer als vertrauenswürdiger Speicherort betrachtet. Aufgrund des höheren Risikos gibt es bestimmte Verzeichnisse, die niemals als vertrauenswürdig eingestuft werden, z. B. die temporären Ordner für das System, für jeden Benutzer und für Internet Explorer.  
   
- Weitere Informationen über das Trust Center finden Sie unter [Sicherheitsrichtlinien und Einstellungen in Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Weitere Informationen über das Erstellen, verwalten, entfernen und Konfigurieren von vertrauenswürdigen Ordnern finden Sie unter [konfigurieren Sie vertrauenswürdige Speicherorte und Einstellungen für vertrauenswürdige Herausgeber in 2007 Office System](http://go.microsoft.com/fwlink/?LinkId=89203) und [erstellen, entfernen oder Ändern einer vertrauenswürdigen Speicherort für Ihre Dateien](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Weitere Informationen über das Trust Center finden Sie unter [Sicherheitsrichtlinien und Einstellungen in Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Weitere Informationen über das Erstellen, verwalten, entfernen und Konfigurieren von vertrauenswürdigen Ordnern finden Sie unter [konfigurieren Sie vertrauenswürdige Speicherorte und Einstellungen für vertrauenswürdige Herausgeber in 2007 Office System](http://go.microsoft.com/fwlink/?LinkId=89203) und [erstellen, entfernen oder Ändern einer vertrauenswürdigen Speicherort für Ihre Dateien](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Überlegungen zur Sicherheit für Office-Projektmappen  
  Es gibt mehrere Sicherheitsaspekte, wenn man überlegt, welche Ordner den vertrauenswürdigen Speicherorten hinzugefügt werden sollen:  
