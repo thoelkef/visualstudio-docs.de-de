@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058710"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073934"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 Diese Meldung kann auftreten, weil der Remotedebugmonitor nicht ordnungsgemäß auf dem Remotecomputer eingerichtet ist oder der Remotecomputer aufgrund von Netzwerkproblemen oder das Vorhandensein einer Firewall nicht mehr verfügbar ist.
@@ -116,7 +116,7 @@ Dies ist möglicherweise eine ältere Problem, das speziell für Windows XP und 
 
 Wenn Sie eine Verbindung nicht mit dem Namen des Remotecomputers herstellen können, versuchen Sie es stattdessen mit der IP-Adresse. Sie können `ipconfig` in einer Befehlszeile auf dem Remotecomputer, um die IPv4-Adresse zu erhalten. Wenn Sie eine Datei "HOSTS" verwenden, stellen Sie sicher, dass er richtig konfiguriert ist.
 
-Wenn dies fehlschlägt, stellen Sie sicher, dass der Remotecomputer im Netzwerk verfügbar ist ([Ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) den Remotecomputer). Remotedebuggen über das Internet wird nicht unterstützt, außer in einigen Szenarien für Microsoft Azure.
+Wenn dies fehlschlägt, stellen Sie sicher, dass der Remotecomputer im Netzwerk verfügbar ist ([Ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) den Remotecomputer). Remotedebuggen über das Internet wird nicht unterstützt, außer in einigen Szenarien für Microsoft Azure.
   
 ### <a name="server_incorrect"></a> Der Servername ist falsch oder Drittanbieter-Software beeinträchtigt wird, mit dem Remotedebugger
 
@@ -153,7 +153,7 @@ Mit einer der folgenden Möglichkeiten können Sie dieses Problem beheben:
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Der lokale Computer und der Remotecomputer weisen unterschiedliche Authentifizierungsmodi auf  
  Der lokale Computer und der Remotecomputer müssen den gleichen Authentifizierungsmodus verwenden. Um dieses Problem zu beheben, müssen Sie sicherstellen, dass beide Computer den gleichen Authentifizierungsmodus verwenden. Sie können den Authentifizierungsmodus ändern. Navigieren Sie im Remotedebugger-Fenster, zu der **Tools > Optionen** Dialogfeld.
   
- Weitere Informationen zu den Authentifizierungsmodi finden Sie unter [Übersicht über die Windows-Authentifizierung](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
+ Weitere Informationen zu den Authentifizierungsmodi finden Sie unter [Übersicht über die Windows-Authentifizierung](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>Verbindungen werden durch Antivirussoftware blockiert  
  Die Windows-Antivirussoftware lässt Remotedebuggerverbindungen zu, von mancher Drittanbieter-Antivirussoftware werden sie jedoch blockiert. Informieren Sie sich in der Dokumentation Ihrer Antivirussoftware darüber, wie Sie diese Verbindungen zulassen.  
@@ -168,4 +168,4 @@ Mit einer der folgenden Möglichkeiten können Sie dieses Problem beheben:
  Um mehr remote Debugger-Hilfe zu erhalten, öffnen Sie den Remotedebugger-Hilfeseite (**Hilfe > Verwendung** in den Remotedebugger).
   
 ## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

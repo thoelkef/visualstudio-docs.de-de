@@ -1,7 +1,7 @@
 ---
 title: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 04/10/2017
+ms.date: 10/05/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -33,89 +33,97 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea27fdccaadc70f22d9c9c02d75ddef98a11be13
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153097"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073988"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
-Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  
-  
-Die Debugkonfiguration des Programms wird mit vollständigen symbolischen Debuginformationen und ohne Optimierung kompiliert. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.  
-  
-Die Releasekonfiguration des Programms enthält keine symbolischen Debuginformationen und wird vollständig optimiert. Debuggen kann Informationen in PDB-Dateien generiert werden [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien kann sehr nützlich sein, wenn Sie später die Releaseversion debuggen müssen.  
-  
-Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).  
-  
-Sie können die Buildkonfiguration Ändern der **erstellen** im Menü auf der Symbolleiste oder in den Eigenschaftenseiten des Projekts. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen dazu, wie Sie die Buildkonfiguration in Projekten, die in verschiedenen Sprachen zu ändern finden Sie unter "Siehe auch Abschnitt weiter unten".  
-  
-## <a name="change-the-build-configuration"></a>Ändern Sie die Buildkonfiguration  
-  
-1.  Von der **erstellen** , wählen Sie im Menü **Configuration Manager**, und wählen Sie dann **Debuggen** oder **Version**.  
-  
-2.  Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Listenfeld.  
-  
-     ![Symbolleisten-Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
-  
-     Diese Symbolleiste ist in Express-Editionen nicht verfügbar. Können Sie die **erstellen Lösung F6** und **Debuggen F5 starten** Menüelemente, um die Konfiguration auszuwählen.
+
+Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Sie erstellen die Debugversion zum Debuggen und die Releaseversion für die endgültige Version.
+
+In der Debugkonfiguration kompiliert Ihr Programm mit vollständigen symbolischen Debuginformationen und ohne Optimierung. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.
+
+Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Debuggen kann Informationen in PDB-Dateien generiert werden [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
+
+Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
+
+Sie können die Buildkonfiguration Ändern der **erstellen** im Menü auf der Symbolleiste oder in den Eigenschaftenseiten des Projekts. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen dazu, wie Sie die Buildkonfiguration in Projekten, die in verschiedenen Sprachen zu ändern, finden Sie die [Siehe auch](#see-also) Abschnitt weiter unten.
+
+## <a name="change-the-build-configuration"></a>Ändern Sie die Buildkonfiguration
+
+So ändern Sie die Buildkonfiguration, entweder:
+
+* Von der **erstellen** , wählen Sie im Menü **Configuration Manager**, und wählen Sie dann **Debuggen** oder **Version**.
+
+oder
+
+* Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Liste.
+
+  ![Symbolleisten-Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="BKMK_symbols_release"></a>Generieren von Symboldateien (.pdb) für einen build
 
-Für die meisten Projekttypen zur Verfügung die PDB-Dateien werden generiert, wird standardmäßig sowohl für Debug- und Releasebuilds, aber die standardmäßigen Einstellungen unterscheiden sich je nach Ihrer bestimmten Projekttyp und die Version von Visual Studio. Sie können konfigurieren, ob der Compiler die PDB-Dateien generiert und welche Art von Debuginformationen einschließen.
+Sie können auch Symboldateien (.pdb) und was generiert Debuginformationen einschließen. Für die meisten Projekttypen generiert der Compiler Symboldateien standardmäßig zum Debuggen, und Version erstellt wurde, während andere Standardeinstellungen nach Projekttyp und Visual Studio-Version unterscheiden.
 
-> [!IMPORTANT] 
-> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden unter [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> [!IMPORTANT]
+> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden Sie unter [Why Visual Studio require Debugger Symbol-Dateien zu genau den Binärdateien bereitgestellt, die mit der sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 Jeder Projekttyp möglicherweise eine andere Art der Festlegen dieser Optionen.
 
 ### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generieren von Symboldateien für ein C#-, ASP.NET und Visual Basic-Projekt
 
-Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in C# geschrieben, finden Sie unter [Projekteinstellungen für eine C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md). Visual Basic finden Sie unter [in diesem Thema](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in c# oder Visual Basic, finden Sie unter [projekteinstellungen für C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md) oder [projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
-1. Mit der rechten Maustaste in des Projekts im Projektmappen-Explorer, und wählen Sie **Eigenschaften**.
+1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
-2. Wählen Sie eine **Version** oder **Debuggen** erstellen, die von der **Konfiguration** Liste.
+2. Wählen Sie die **Eigenschaften** Symbol (oder drücken Sie **Alt + Eingabe**).
 
-2. Wählen Sie **erstellen** Einstellungen, und klicken Sie dann auf die **erweitert** Schaltfläche.
+3. Wählen Sie im Seitenbereich **erstellen** (oder **Kompilieren** in Visual Basic).
 
-    Wählen Sie in Visual Basic die **Kompilieren** Einstellungen und die **Advanced Compile Options** stattdessen die Schaltfläche.
+4. In der **Konfiguration** wählen **Debuggen** oder **Version**.
 
-3. Wählen Sie **vollständige**, **portable**, oder **Pdb_only** in die **Debuginformationen** Listenfeld (**Debuginfo generieren** in Visual Basic).
+5. Wählen Sie die **erweitert** Schaltfläche (oder die **Advanced Compile Options** -Schaltfläche in Visual Basic).
 
-    Die portable ist das neueste Cross-Platform-Format für .NET Core. Weitere Informationen zu Optionen finden Sie unter [Dialogfeld "Erweiterte Buildeinstellungen" (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+6. In der **Debuginformationen** Liste (oder die **Debuginfo generieren** Liste in Visual Basic), wählen Sie **vollständige**, **Pdb-only**, oder **Portable**.
 
-    ![Generieren von PDB-Dateien für Builds in c#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   Die portable ist das neueste Cross-Platform-Format für .NET Core. Weitere Informationen zu Optionen finden Sie unter [Dialogfeld "Erweiterte Buildeinstellungen" (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-4. Erstellen Sie das Projekt.
+   ![Generieren von PDB-Dateien für Builds in c#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
-    Die Symbol-Dateien werden im gleichen Ordner wie die ausführbare Datei oder Hauptausgabedatei erstellt.
+7. Erstellen Sie das Projekt.
+
+   Der Compiler erstellt die Symbol-Dateien im selben Ordner wie die ausführbare Datei oder Hauptausgabedatei.
 
 ### <a name="generate-symbol-files-for-a-c-project"></a>Generieren von Symboldateien für ein C++-Projekt
 
-1. Mit der rechten Maustaste in des Projekts im Projektmappen-Explorer, und wählen Sie **Eigenschaften**.
+1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
-2. Wählen Sie eine **Version** oder **Debuggen** erstellen, die von der **Konfiguration** Liste.
+2. Wählen Sie die **Eigenschaften** Symbol (oder drücken Sie **Alt + Eingabe**).
 
-2. Klicken Sie unter **Linker > Debugging**, Optionen für das Register **Debuginfo generieren**.
+3. In der **Konfiguration** wählen **Debuggen** oder **Version**.
 
-    Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in C++, finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+4. Wählen Sie im Seitenbereich **Linker > Debugging**, wählen Sie dann auf Optionen für die **Debuginfo generieren**.
 
-4. Konfigurieren der Optionen für Programmdatenbankdateien generieren
+   Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in C++, finden Sie unter [projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-    In den meisten C++-Projekten, der Standardwert ist `$(OutDir)$(TargetName).pdb`, die PDB-Dateien im Ordner "Output" generiert.
+5. Konfigurieren der Optionen für **Programmdatenbankdateien generieren**.
 
-    ![Generieren von PDB-Dateien für Builds in C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus") 
+   In den meisten C++-Projekten, der Standardwert ist `$(OutDir)$(TargetName).pdb`, die PDB-Dateien im Ordner "Output" generiert.
 
-5. Erstellen Sie das Projekt.
+   ![Generieren von PDB-Dateien für Builds in C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
-    Die Symbol-Dateien werden im gleichen Ordner wie die ausführbare Datei oder Hauptausgabedatei erstellt.
-  
-## <a name="see-also"></a>Siehe auch  
- [Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-debugger](../debugger/debugger-settings-and-preparation.md)  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
+6. Erstellen Sie das Projekt.
+
+   Der Compiler erstellt die Symbol-Dateien im selben Ordner wie die ausführbare Datei oder Hauptausgabedatei.
+
+## <a name="see-also"></a>Siehe auch
+ 
+[Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)<br/>
+[Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+[Projekteinstellungen für eine C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+[Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+[Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
