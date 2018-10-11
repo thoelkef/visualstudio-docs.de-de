@@ -15,12 +15,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 628e4128877eb6872dd8d6af6fd0902b4e10bb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511948"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880694"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise
   
 Die Richtlinie Prozessoren * arbeiten, indem Sie Code Hinzufügen der *generierten Transformationsklasse*. Aufrufen einer *Richtlinie* aus einer *Textvorlage*, der Rest des Codes, den Sie in der Textvorlage schreiben, kann die Funktionalität von der Anweisung bereitgestellten abhängig.  
   
- Sie können eigene benutzerdefinierte Anweisungsprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Direktivenprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
+ Sie können eigene benutzerdefinierte Anweisungsprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Anweisungsprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
   
  In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:  
   
@@ -39,7 +39,7 @@ Die Richtlinie Prozessoren * arbeiten, indem Sie Code Hinzufügen der *generiert
   
 -   Testen des Anweisungsprozessors  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
   
 -   Visual Studio 2010  
@@ -53,7 +53,7 @@ Die Richtlinie Prozessoren * arbeiten, indem Sie Code Hinzufügen der *generiert
   
  `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`  
   
- Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Anweisung, die Sie hier erstellen, wird der von der Engine zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom>-Klassen erstellen abhängig von der im [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Parameter der `language`-Direktive angegebenen Sprache Code in Visual C# oder `template`. Die Sprache des Anweisungsprozessors und die Sprache der Textvorlage, die auf den Anweisungsprozessor zugreift, müssen nicht identisch sein.  
+ Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Anweisung, die Sie hier erstellen, wird der von der Engine zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom>-Klassen erstellen abhängig von der im [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Parameter der `language`-Anweisung angegebenen Sprache Code in Visual C# oder `template`. Die Sprache des Anweisungsprozessors und die Sprache der Textvorlage, die auf den Anweisungsprozessor zugreift, müssen nicht identisch sein.  
   
  Der von der Anweisung erstellte Code sieht folgendermaßen aus:  
   
@@ -91,7 +91,7 @@ End Property
 1.  Erstellen Sie in Visual Studio ein Visual C#- oder Visual Basic-Klassenbibliothekprojekt mit dem Namen "CustomDP".  
   
     > [!NOTE]
-    >  Wenn Sie den Direktivenprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsprojekt (VSIX) zu verwenden und eine PKGDEF-Datei in die Erweiterung einzuschließen. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
+    >  Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsprojekt (VSIX) zu verwenden und eine PKGDEF-Datei in die Erweiterung einzuschließen. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
   
 2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
   
@@ -136,7 +136,7 @@ End Property
   
             //These are the errors that occur during processing. The engine passes   
             //the errors to the host, and the host can decide how to display them,  
-            //for example the the host can display the errors in the UI  
+            //for example the host can display the errors in the UI  
             //or write them to a file.  
             //---------------------------------------------------------------------  
             private CompilerErrorCollection errorsValue;  
@@ -396,7 +396,7 @@ End Property
   
             'These are the errors that occur during processing. The engine passes   
             'the errors to the host, and the host can decide how to display them,  
-            'for example the the host can display the errors in the UI  
+            'for example the host can display the errors in the UI  
             'or write them to a file.  
             '---------------------------------------------------------------------  
             Private errorsValue As CompilerErrorCollection  
@@ -624,7 +624,7 @@ End Property
  Bevor Sie eine Richtlinie aus einer Textvorlage in aufrufen können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], müssen Sie einen Registrierungsschlüssel für den anweisungsprozessor hinzufügen.  
   
 > [!NOTE]
->  Wenn Sie den Direktivenprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX) zu definieren, die eine PKGDEF-Datei und die Assembly enthält. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
+>  Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX) zu definieren, die eine PKGDEF-Datei und die Assembly enthält. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
   
  Schlüssel für Anweisungsprozessoren befinden sich unter folgendem Pfad in der Registrierung:  
   
@@ -685,7 +685,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
  In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen eine XML-Datei, die Dokumentation für eine Klassendatei enthält. Weitere Informationen finden Sie unter [XML-Dokumentationskommentare](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
- Anschließend wird in der Textvorlage die von der Direktive erstellte <xref:System.Xml.XmlDocument>-Eigenschaft verwendet, um in der XML-Datei zu navigieren und die Dokumentationskommentare auszugeben.  
+ Anschließend wird in der Textvorlage die von der Anweisung erstellte <xref:System.Xml.XmlDocument>-Eigenschaft verwendet, um in der XML-Datei zu navigieren und die Dokumentationskommentare auszugeben.  
   
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>So erstellen Sie eine XML-Datei zum Testen des Anweisungsprozessors  
   

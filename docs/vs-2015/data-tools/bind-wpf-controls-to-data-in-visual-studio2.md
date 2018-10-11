@@ -25,17 +25,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b6a7e624298ae3766f67a1bd49760b9b5e066bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510751"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880954"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dokumentation zu Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Die neueste Version dieses Themas finden Sie unter [Dokumentation zu Visual Studio 2017](/visualstudio/).  
   
 Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] Steuerelemente mithilfe der **Datenquellen** Fenster. Fügen Sie zunächst eine Datenquelle, die **Datenquellen** Fenster. Ziehen Sie Elemente aus der **Datenquellen** Fenster aus, um die**WPF-Designer**.  
   
@@ -116,7 +116,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
   
     -   Um einem vorhandenen Steuerelement, das mehrere Datenfelder anzeigt, z. B. ein <xref:System.Windows.Controls.DataGrid> oder eine <xref:System.Windows.Controls.ListView>, eine Datenbindung hinzuzufügen, wählen Sie das Element aus, das die Tabelle oder das Objekt darstellt, die bzw. das Sie an das Steuerelement binden möchten.  
   
-    -   Um einem vorhandenen Steuerelement, das ein einzelnes Datenfeld anzeigt, z. B. eine <xref:System.Windows.Controls.ComboBox> oder eine <xref:System.Windows.Controls.TextBox>, eine Datenbindung hinzuzufügen, erweitern Sie das Element, das die Tabelle oder das Objekt mit den Daten darstellt, und wählen Sie dann das Element aus, das die an das Steuerelement zu bindenden Daten darstellt.  
+    -   Um einem vorhandenen Steuerelement, das ein einzelnes Datenfeld anzeigt, z. B. eine <xref:System.Windows.Controls.ComboBox> oder eine <xref:System.Windows.Controls.TextBox>, eine Datenbindung hinzuzufügen, erweitern Sie das Element, das die Tabelle oder das Objekt mit den Daten darstellt, und wählen Sie anschließend das Element aus, das die an das Steuerelement zu bindenden Daten darstellt.  
   
 2.  Ziehen Sie das ausgewählte Element aus der **Datenquellen** Fenster auf ein vorhandenes Steuerelement im Designer. Das Steuerelement muss ein gültiges Ablageziel sein. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   

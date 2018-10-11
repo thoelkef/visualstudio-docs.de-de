@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513112"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879357"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
   
  Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Vier Verweisgruppen sind verfügbar:  
   
--   Implizit (Windows *Version*), für die [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] -apps mit JavaScript. Die in dieser Gruppe enthalten Dateien sind verfügbar für jede im Code-Editor geöffnete JS-Datei für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps mit JavaScript.  
+-   Implizit (Windows- *Version*) für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] -Apps, die JavaScript verwenden. Die in dieser Gruppe enthalten Dateien sind für jede im Code-Editor geöffnete JS-Datei für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps mit JavaScript verfügbar.  
   
 -   Implizit (Internet), für HTML5-Projekte. Die Dateien, die in dieser Gruppe enthalten sind, sind im Bereich für jede JS-Datei, die im Code-Editor für die Projekttypen geöffnet ist.  
   

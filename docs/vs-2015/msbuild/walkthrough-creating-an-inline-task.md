@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d5931d0871b0a240b0702d865787171b9acf759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512092"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880993"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d5433d6b5930304ae7df3a71aadc7f51d231b0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524697"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881045"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerations (Visual Studio Debugging)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ Enumerationen für Es folgen die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.m
  Gibt den Bereich des Datenstroms Disassembly.  
   
  [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)  
- Listet die gültigen Werte, die darstellen, die Arten von Informationen aus einer eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt und dem Benutzer anzuzeigen.  
+ Listet die gültigen Werte, die darstellen, die Arten von Informationen aus einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt und dem Benutzer anzuzeigen.  
   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)  
  Gibt die Kriterien zum Vergleichen von zwei dokumentenkontexte.  

@@ -15,12 +15,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7204f3c44eacf9b27e455502c636fe6d64f570b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521482"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880246"
 ---
 # <a name="creating-an-options-page"></a>Erstellen einer Optionsseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
  Das MPF bietet zwei Klassen zum Erstellen von Optionsseiten im Menü Extras, stehen Ihnen die <xref:Microsoft.VisualStudio.Shell.Package> Klasse und die <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse. Sie erstellen eine VSPackage, um diese Seiten durch Ableitung von Unterklassen der Klasse einen Container bereit. Sie erstellen jedes Optionsseite "Tools" der Klasse von DialogPage abgeleitet.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-tools-options-grid-page"></a>Erstellen eine Rasterseite des Tools-Optionen  
@@ -116,7 +116,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
 2.  Fügen Sie die folgenden using-Anweisung.  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   

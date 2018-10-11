@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515796"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879818"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Fehlende Objekte aufgrund von Vertex-Shading](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
   
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose-Tools zum Untersuchen eines Objekts, die aufgrund eines Fehlers fehlen, die während der Vertexshader-Stufe auftritt.  
+Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:  
   
@@ -50,7 +50,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit der [!
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], laden Sie ein grafikprotokoll, das einen Frame enthält, der das fehlende Objekt aufzeigt. Eine neue grafikprotokoll-Registerkarte wird im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
+1.  Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eine Grafikprotokolldatei, die einen Frame enthält, der das fehlende Objekt aufzeigt. Eine neue Grafikprotokoll-Registerkarte wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
 2.  Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   
@@ -116,7 +116,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit der [!
     > [!TIP]
     >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
   
- Nachdem Sie die Position, an der der Konstantenpuffer gefüllt wird, gefunden und festgestellt haben, dass dessen Werte aus der Variablen `m_marbleConstantBufferData`stammen, müssen Sie im nächsten Schritt herausfinden, wo der `m_marbleConstantBufferData.projection` -Member mit den Nullen gefüllt wird. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
+ Nachdem Sie den Speicherort finden, wo der Konstantenpuffer gefüllt wird ist, und feststellen, dass die Variable die Werte stammen `m_marbleConstantBufferData`, der nächste Schritt besteht darin herauszufinden, wo die `m_marbleConstantBufferData.projection` Members auf lauter Nullen festgelegt ist. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>So ermitteln Sie, wo der Projektionsmember im Quellcode Ihrer App festgelegt wird  
   

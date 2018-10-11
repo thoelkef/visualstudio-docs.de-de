@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511349"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881136"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Steuern der Ausführung einer Store-App in einer Visual Studio-Debugsitzung für Windows Store-Apps (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
  **Debugger-Tastenkombinationen.** Die Navigation im Visual Studio-Debugger wurde sowohl für die Maus als auch für die Tastatur optimiert. Für viele Schritte in diesem Thema werden die Zugriffstasten oder Tastenkombinationen in Klammern angeführt. So weist beispielsweise (Tastatur: F5) darauf hin, dass mit der F5-TASTE die Ausführung des Debuggers gestartet oder fortgesetzt wird.  
   
 > [!NOTE]
->  **Das modulmuster.**  
+>  **Das Modulmuster.**  
 >   
 >  Windows Store-Apps verwenden häufig das JavaScript- *Modulmuster* , um Daten und Funktionen auf einer Seite zu kapseln. Das Modulmuster verwendet einen einzelnen selbstausführenden und anonymen Abschluss, um die Funktionen der Seite vom globalen Namespace zu trennen. Im Rahmen dieses Themas bezeichnen wir diese Funktion als *Modul*.  
   
@@ -301,7 +301,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
   
     -   **Anonyme Funktion** zeigt die Zeile in der `module` -Funktion an, bei der die Ausführung angehalten wird. Dies ist der Anfang der Aufrufliste.  
   
-4.  **Durchlaufen von Funktionen in Einzelschritten zum Erreichen der Funktion "example5_d".** Wählen Sie **Einzelschritt** on the **Debuggen starten** aus (Tastatur: **F11**), um die Aufrufe im Aufrufpfad auszuführen, bis Sie den Einstiegspunkt der example5_d-Funktion erreicht haben. Beachten Sie, dass die Zeilennummer der aufrufenden Funktion bei jedem Aufruf einer Funktion gespeichert wird und dass die aufgerufene Funktion an den Anfang der Liste platziert wird. Die Zeilennummer der aufrufenden Funktion ist der Punkt, an dem die aufrufende Funktion die Ausführung angehalten hat. Ein gelber Pfeil zeigt auf die gerade ausgeführte Funktion.  
+4.  **Durchlaufen von Funktionen in Einzelschritten zum Erreichen der Funktion "example5_d".** Wählen Sie **Einzelschritt** auf die **Debuggen** Menü (Tastatur: **F11**) um die Aufrufe im Aufrufpfad auszuführen, bis zu den Einstiegspunkt der example5_d-Funktion. Beachten Sie, dass die Zeilennummer der aufrufenden Funktion bei jedem Aufruf einer Funktion gespeichert wird und dass die aufgerufene Funktion an den Anfang der Liste platziert wird. Die Zeilennummer der aufrufenden Funktion ist der Punkt, an dem die aufrufende Funktion die Ausführung angehalten hat. Ein gelber Pfeil zeigt auf die gerade ausgeführte Funktion.  
   
      ![Fenster "Aufrufliste"](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524684"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880889"
 ---
 # <a name="troubleshooting-service-references"></a>Problembehandlung bei Dienstverweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Dieses Thema führt häufige Probleme, die auftreten können, bei der Arbeit mit
 ## <a name="error-debugging-service-code"></a>Fehler beim Debuggen der Dienstcode
  Wenn Sie in den Code für einen WCF-Dienst über den Clientcode ausführen, erhalten Sie einen Fehler im Zusammenhang mit der Symbole fehlen. Dies kann auftreten, wenn ein Dienst, der Teil der Projektmappe wurde verschoben oder aus der Projektmappe entfernt wurde.
 
- Wenn Sie zuerst einen Verweis auf einen WCF-Dienst, die Teil der aktuellen Projektmappe ist hinzufügen, wird eine explizite Buildabhängigkeit zwischen dem Dienst und das Dienst-Client-Projekt hinzugefügt. Dadurch wird sichergestellt, die der Client immer auf dem neuesten Stand Dienstbinärdateien zugreift, dies ist besonders wichtig für das Debuggen von Szenarios wie z. B. das schrittweise aus Clientcode Dienstcode.
+ Wenn Sie zuerst einen Verweis auf einen WCF-Dienst, die Teil der aktuellen Projektmappe ist hinzufügen, wird eine explizite Buildabhängigkeit zwischen dem Dienst und das Dienst-Client-Projekt hinzugefügt. Dadurch wird sichergestellt, dass der Client immer auf dem neuesten Stand Dienstbinärdateien zugreift, dies ist besonders wichtig für das Debuggen von Szenarios wie z. B. das schrittweise aus Clientcode Dienstcode.
 
  Wenn das Dienstprojekt aus der Projektmappe entfernt wird, wird diese explizite Buildabhängigkeit ungültig. Visual Studio nicht mehr sicherstellen kann, dass das Service-Projekt neu erstellt, wird nach Bedarf.
 

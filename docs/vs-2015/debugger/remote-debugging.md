@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522279"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880720"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Sie können entweder herunterladen, die die Remoteserver-Verwaltungstools direkt
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools
   
-1.  Auf dem Gerät oder Server-Computer, die Sie (nicht mit dem Computer, die Ausführung von Visual Studio) debuggen möchten, erhalten Sie die richtige Version der Remotetools.
+1.  Erhalten Sie auf dem Gerät oder Server-Computer, die Sie debuggen möchten (statt der Computer mit Visual Studio) die richtige Version der Remotetools.
 
     |Version|Link|Hinweise|
     |-|-|-|
@@ -59,7 +59,7 @@ Sie können entweder herunterladen, die die Remoteserver-Verwaltungstools direkt
     > [!IMPORTANT]
     >  Es wird empfohlen, dass Sie die neueste Version der Remotetools installieren, die Ihrer Version von Visual Studio entspricht. Nicht übereinstimmende Versionen werden nicht empfohlen.  
     >   
-    >  Darüber hinaus müssen Sie die Remotetools installieren, die die gleiche Architektur wie das Betriebssystem auf dem Sie sie installieren möchten. Das heißt, wenn Sie auf eine 32-Bit-Anwendung debuggen möchten eine einem Remotecomputer unter einem 64-Bit-Betriebssystem, müssen Sie die 64-Bit-Version der Remotetools installieren, auf dem Remotecomputer.  
+    >  Darüber hinaus müssen Sie die Remotetools installieren, die die gleiche Architektur wie das Betriebssystem auf dem Sie sie installieren möchten. Das heißt, sollten Sie eine 32-Bit-Anwendung auf einem Remotecomputer unter einem 64-Bit-Betriebssystem zu debuggen, müssen Sie die 64-Bit-Version der Remotetools auf dem Remotecomputer installieren.  
   
 3.  Wenn Sie die ausführbare Datei heruntergeladen haben, folgen Sie den Anweisungen zum Installieren der Anwendung auf dem Remotecomputer. Finden Sie unter [– Anweisungen zur Einrichtung](#bkmk_setup)
 
@@ -286,7 +286,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen  
  Sie sollten Ihren Code mit den auf dem Visual Studio-Computer generierten Symbolen debuggen können. Die Leistung des Remotedebuggers ist viel besser, wenn Sie lokale Symbole verwenden.  Wenn Sie Remotesymbole verwenden müssen, ist es erforderlich, dem Remotedebugmonitor mitzuteilen, dass er auf dem Remotecomputer nach Symbolen suchen soll.  
   
- Ab Visual Studio 2013 Update 2 können können Sie die folgende Msvsmon-Befehlszeilenoption Sie remotesymbole für verwalteten Code verwenden: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ Ab Visual Studio 2013 Update 2 können Sie über die folgende msvsmon-Befehlszeilenoption Remotesymbole für verwalteten Code verwenden: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  Weitere Informationen finden Sie in der Hilfe zum Remotedebugging (drücken Sie die **F1** im Remotedebugger-Fenster, oder klicken Sie auf **Hilfe / Verwendung**). Sie können weitere Informationen finden unter [.NET Remote Symbol Loading Changes in Visual Studio 2012 und 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Konfigurieren der Windows-Firewalls für Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

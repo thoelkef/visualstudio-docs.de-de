@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515824"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880468"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
  Wenn Sie den Emulator ausführen, und noch kein Mitglied der Gruppe der Hyper-V-Administratoren sind, werden Sie aufgefordert, Der Gruppe beizutreten (das Dialogfeld bezieht sich auf den Windows Phone-Emulator). Für den Beitritt zu dieser Gruppe sind Administratorrechte erforderlich.  
   
 > [!IMPORTANT]
->  Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.  
+> Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.  
   
  ![Beitritt zur Hyper&#45;V-Administratorsicherheitsgruppe](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen. Weitere Informationen finden Sie unter [Hinzufügen eines Benutzerkontos zu einer Gruppe](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Dieses Windows 7-Thema gilt auch für Windows 8).  
-  
+ Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen.
+ 
 ##  <a name="BootableVHD"></a> Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt  
  Wenn Sie versuchen, eine App im Visual Studio-Emulator für Android auszuführen, während Sie Windows von einer startbaren virtuellen Festplatte ausführen, dauert es in der Regel einige Minuten, bis der Emulator startet, oder beim Start einen Fehler ausgibt. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: Fehler bei der Bereitstellung der App. Versuchen Sie es erneut.  
   
