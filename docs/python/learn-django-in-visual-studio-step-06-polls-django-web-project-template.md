@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281064"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548230"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“
 
@@ -118,7 +118,7 @@ Wie Sie sehen, hat eine „Umfrage“ eine Beschreibung im Feld `text` und ein V
 
 Die vollständige Liste der Feldtypen ist `CharField` (begrenzter Text) `TextField` (unbegrenzter Text), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` und `ManyToMany`. Jedes Feld hat einige Attribute, wie z.B. `max_length`. Das Attribut `blank=True` bedeutet, dass das Feld optional ist. `null=true` bedeutet, dass ein Wert optional ist. Es gibt auch ein Attribut `choices`, das die Werte auf Werte in einem Array von Datenwert/Anzeigewert-Tupeln beschränkt. (Weitere Informationen finden Sie unter [Model field reference (Modellfeldverweis)](https://docs.djangoproject.com/en/2.0/ref/models/fields/) in der Django-Dokumentation.)
 
-Sie können genau bestätigen, was in der Datenbank gespeichert wird, indem Sie die Datei *db.sqlite3* im Projekt mithilfe eines Tools wie dem [SQLite-Browser](http://sqlitebrowser.org/) untersuchen. In der Datenbank sehen Sie, dass ein Fremdschlüsselfeld wie `poll` im Auswahlmodell als `poll_id` gespeichert ist. Django verarbeitet die Zuordnung automatisch.
+Sie können genau bestätigen, was in der Datenbank gespeichert wird, indem Sie die Datei *db.sqlite3* im Projekt mithilfe eines Tools wie dem [SQLite-Browser](https://sqlitebrowser.org/) untersuchen. In der Datenbank sehen Sie, dass ein Fremdschlüsselfeld wie `poll` im Auswahlmodell als `poll_id` gespeichert ist. Django verarbeitet die Zuordnung automatisch.
 
 Wenn Sie mit Ihrer Datenbank in Django arbeiten, bedeutet dies normalerweise, dass Sie ausschließlich über Ihre Modelle arbeiten, sodass Django die zugrunde liegende Datenbank in Ihrem Namen verwalten kann.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu überzeugen, dass noch keine App vorhanden ist. Besuchen Sie dann die „/seed“-URL. Wenn die App zur Startseite zurückkehrt, sollten Sie feststellen, dass die Umfragen nun verfügbar sind. Sie können hier die unformatierte Datei *db.sqlite3* mit einem Tool wie dem [SQLite-Browser](http://sqlitebrowser.org/) untersuchen.
+Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu überzeugen, dass noch keine App vorhanden ist. Besuchen Sie dann die „/seed“-URL. Wenn die App zur Startseite zurückkehrt, sollten Sie feststellen, dass die Umfragen nun verfügbar sind. Sie können hier die unformatierte Datei *db.sqlite3* mit einem Tool wie dem [SQLite-Browser](https://sqlitebrowser.org/) untersuchen.
 
 ![App „Fragt ein Django-Webprojekt ab“ mit einer per Seeding hinzugefügten Datenbank](media/django/step06-app-with-seeded-database.png)
 

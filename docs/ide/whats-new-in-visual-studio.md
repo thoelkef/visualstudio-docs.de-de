@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384187"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029107"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
-**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) aktualisiert**
+**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) aktualisiert**
 
 Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen Folgendes: beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
@@ -42,7 +42,7 @@ Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorheri
 * **[KI-Entwicklung](#ai-development)** Mit Visual Studio Tools for AI können Sie die Produktivitätsfeatures von Visual Studio verwenden, um KI-Innovationen zu beschleunigen. Erstellen und testen Sie Deep Learning- und KI-Lösungen, die sich nahtlos in Azure Machine Learning integrieren lassen und stabile ML-Experimentieren-Funktionen ermöglichen, und stellen Sie diese Lösungen bereit.
 
 > [!NOTE]
-> Eine vollständige Liste der neuen Features und Funktionen in Visual Studio 2017 finden Sie unter [Aktuelle Versionsanmerkungen](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Weitere Informationen zu zukünftig angebotenen Features finden Sie in den [Anmerkungen zur Vorschauversion](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Eine vollständige Liste der neuen Features und Funktionen in Visual Studio 2017 finden Sie unter [Aktuelle Versionsanmerkungen](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Weitere Informationen zu zukünftig angebotenen Features finden Sie in den [Anmerkungen zur Vorschauversion](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Im Anschluss finden Sie ausführlichere Informationen zu einigen der wichtigsten Verbesserungen und neuen Funktionen in Visual Studio 2017.
 
@@ -50,7 +50,7 @@ Im Anschluss finden Sie ausführlichere Informationen zu einigen der wichtigsten
 
 ### <a name="a-new-setup-experience"></a>Ein neues Setuperlebnis
 
-[Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder [Visual Studio-Systemanforderungen überprüfen](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder [Visual Studio-Systemanforderungen überprüfen](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  In Visual Studio können Sie jetzt einfacher und schneller nur die Funktionen installieren, die Sie benötigen, wenn Sie sie benötigen. Und es lässt sich auch sauber wieder deinstallieren.
 
@@ -381,7 +381,7 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Visual Studio 2017 – Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Visual Studio 2017 – Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Neues in C#](/dotnet/csharp/whats-new)
 * [Neues für Team Foundation Server](/tfs/server/whats-new?view=vsts)

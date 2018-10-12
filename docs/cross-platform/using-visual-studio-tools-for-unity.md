@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283335"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496063"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio-Tools für Unity
 
@@ -94,14 +94,6 @@ So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendef
 - Wählen Sie in Visual Studio im Hauptmenü **Ansicht > Unity-Projektexplorer** aus. Tastenkombination: **ALT**+**UMSCHALT**+**E**
 
      ![Das Fenster für den Unity-Projektexplorer anzeigen](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity-Fehlerliste
-
- Sie können Meldungen in der Unity-Konsole innerhalb von Visual Studio anzeigen, wenn eine Verbindung mit einer Unity-Instanz besteht. Dies schließt Fehler und Warnungen von Unity ein. Die Meldungen werden im Visual Studio-Fenster **Fehlerliste** angezeigt. Fehlermeldungen von Unity werden auf der Registerkarte **Fehler** angezeigt. Warnmeldungen werden auf der Registerkarte **Warnungen** angezeigt. Andere Meldungen, z.B. von der Debug.Log Unity-API gesendete, werden auf der Registerkarte **Meldungen** angezeigt.
-
- Zum Anzeigen der Meldungen muss wie im Abschnitt [Debuggen von Unity](#unity-debugging) beschrieben eine Verbindung Ihres Unity-Projekts mit Visual Studio hergestellt werden.
-
- Wenn Sie keine Fehler, Warnungen und Meldungen von Unity in Visual Studio im Fenster **Fehlerliste** anzeigen möchten, deaktivieren Sie die Anzeige im Menü „Konfiguration“.
 
 ## <a name="unity-debugging"></a>Debuggen von Unity
 

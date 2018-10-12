@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995962"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547931"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -125,7 +125,7 @@ Antwort: In regulären Ausdrücken, die URL-Muster definieren, bedeutet „^“ 
 
 Wenn Sie in einem regulären Ausdruck kein nachgestelltes „$“ verwenden, wie z.B. bei `^home`, stimmt das URL-Muster mit *allen* URLs überein, die mit „home“ beginnen, z.B. „home“, „homework“, „homestead“ und „home192837“.
 
-Zum Experimentieren mit anderen regulären Ausdrücken verwenden Sie Onlinetools, wie z.B. [regex101.com](https://regex101.com) auf [pythex.org](http://www.pythex.org).
+Zum Experimentieren mit anderen regulären Ausdrücken verwenden Sie Onlinetools, wie z.B. [regex101.com](https://regex101.com) auf [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Schritt 2-3: Rendern einer Ansicht mithilfe von HTML
 

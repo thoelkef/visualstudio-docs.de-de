@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612687"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101042"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen Sie zum Debuggen mit Visual Studio
 
@@ -31,7 +31,7 @@ Dieser Artikel enthält die Funktionen von Visual Studio-Debugger in eine schrit
 |---------|---------|
 |  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) zum Debuggen, die ähnliche Schritte zeigt. |
 
-Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben. Um zwischen c# und C++-Beispielcode in diesem Artikel zu wechseln, verwenden Sie den Filter "Language" in der oberen rechten Ecke dieser Seite.
+Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -41,7 +41,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Überprüfen von Variablen in den Datentipps und Debugger-Fenster
 > * Die Aufrufliste überprüfen
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 * Sie müssen Visual Studio 2017 installiert haben und die **.NET Desktopentwicklung** oder **Desktopentwicklung mit C++** arbeitsauslastung.
 
@@ -60,6 +60,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 3. Geben Sie einen Namen wie **Get-gestartet-debugging** , und klicken Sie auf **OK**.
 
     Visual Studio erstellt daraufhin das Projekt.
+
+    > [!NOTE]
+    > Um zwischen c# und C++-Beispielcode in diesem Artikel zu wechseln, verwenden Sie den Filter "Language" in der oberen rechten Ecke dieser Seite.
 
 4. In *"Program.cs"* (c#) oder *Get-gestartet-debugging.cpp* (C++), ersetzen Sie den folgenden Code.
 
