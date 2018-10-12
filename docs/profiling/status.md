@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e39743b8e3e6602961dfec693d5dc92c0ee63
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668751"
 ---
 # <a name="status"></a>Status
-Die VSPerfCmd.exe-Option **Status** zeigt Informationen über den Status des Profilers und aller Prozesse, für die gerade ein Profil erstellt wird.  
+Die *VSPerfCmd.exe-Option* **Status** zeigt Informationen über den Status des Profilers und aller Prozesse, für die gerade ein Profil erstellt wird.  
   
- Die Option **Status** darf als einzige Option in der Befehlszeile angegeben werden. Der Profiler muss mit der VSPerfCmd.exe-Option **Start** initialisiert werden, bevor ein Status angezeigt werden kann.  
+ Die Option **Status** darf als einzige Option in der Befehlszeile angegeben werden. Der Profiler muss mit der *VSPerfCmd.exe-Option* **Start** initialisiert werden, bevor ein Status angezeigt werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -75,4 +76,4 @@ VSPerfCmd.exe /Status
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

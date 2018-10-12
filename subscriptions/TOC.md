@@ -17,7 +17,7 @@
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
 #### [Visual Studio-IDE](vs-ide-benefit.md)
-#### [Azure DevOps Services](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Azure-Guthaben](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [Professionelle Entwicklung](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Hochqualifizieren](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University-Schulung](vs-xamarin.md)
 #### [MSDN Magazine-Abonnement](vs-msdn.md)

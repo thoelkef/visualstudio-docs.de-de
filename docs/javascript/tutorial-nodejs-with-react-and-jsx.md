@@ -2,7 +2,7 @@
 title: Erstellen von Node.js- und Express-Apps
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567141"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125001"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -31,6 +31,30 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > * Hinzufügen von React-Code zur App
 > * Transpilieren von JSX
 > * Fügen Sie den Debugger an.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
+
+In den folgenden häufig gestellten Fragen werden einige wichtige Konzepte vorgestellt.
+
+### <a name="what-is-nodejs"></a>Was ist Node.js?
+
+Node.js ist eine serverseitige JavaScript-Runtime-Umgebung, die JavaScript auf dem Server ausführt.
+
+### <a name="what-is-npm"></a>Was ist NPM?
+
+NPM ist der Standardpaket-Manager für Node.js. Der Paket-Manager vereinfacht das Veröffentlichen und Freigeben von Quellcode von Node.js-Bibliotheken und ist zum Vereinfachen der Installation, Aktualisierung und Deinstallation von Bibliotheken konzipiert.
+
+### <a name="what-is-react"></a>Was ist React?
+
+React ist ein Front-End-Framework zum Erstellen einer Benutzeroberfläche.
+
+### <a name="what-is-jsx"></a>Was ist JSX?
+
+JSX ist eine JavaScript-Syntaxerweiterung, die in der Regel mit React dazu verwendet wird, die Elemente der Benutzeroberfläche zu beschreiben. JSX-Code muss in einfaches JavaScript transpiliert werden, bevor er in einem Browser ausgeführt werden kann.
+
+### <a name="what-is-webpack"></a>Was ist webpack?
+
+Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann aber auch andere Ressourcen und Objekte transformieren oder packen. Mit webpack werden häufig Compiler angegeben, z.B. Babel oder TypeScript, um JSX oder TypeScript-Code in einfaches JavaScript zu transpilieren.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -62,13 +86,15 @@ Erstellen Sie zunächst ein Projekt für die Node.js-Webanwendung.
 
     ![Node.js-Projekt im Projektmappen-Explorer](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * Ihr Projekt wird fettgedruckt dargestellt, mit dem Namen, den Sie im Dialogfeld **Neues Projekt** festgelegt haben. Im Dateisystem wird dieses Projekt durch eine *NJSPROJ*-Datei im Projektordner dargestellt. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus, um Eigenschaften und Umgebungsvariablen festzulegen, die dem Projekt zugeordnet sind. Roundtrips mit anderen Entwicklungstools sind möglich, da die Projektdatei keine benutzerdefinierte Änderungen an der Node.js-Projektquelle vornimmt.
+    (1) Der **fett** hervorgehobene Name ist Ihr Projekt, dem Sie den Namen im Dialogfeld **Neues Projekt** gegeben haben. Im Dateisystem wird dieses Projekt durch eine *NJSPROJ*-Datei im Projektordner dargestellt. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus, um Eigenschaften und Umgebungsvariablen festzulegen, die dem Projekt zugeordnet sind. Roundtrips mit anderen Entwicklungstools sind möglich, da die Projektdatei keine benutzerdefinierte Änderungen an der Node.js-Projektquelle vornimmt.
 
-    * Auf der oberen Ebene finden Sie eine Projektmappe, die standardmäßig denselben Namen hat wie Ihr Projekt. Eine Projektmappe, die auf dem Datenträger durch eine *SLN*-Datei dargestellt wird, ist ein Container für mindestens ein zugehöriges Projekt.
+    (2) Auf der oberen Ebene finden Sie eine Projektmappe, die standardmäßig denselben Namen hat wie Ihr Projekt. Eine Projektmappe, die auf dem Datenträger durch eine *SLN*-Datei dargestellt wird, ist ein Container für mindestens ein zugehöriges Projekt.
 
-    * Der npm-Knoten zeigt alle installierten npm-Pakete. Sie können mit der rechten Maustaste darauf klicken, um über ein Dialogfeld npm-Pakete zu suchen und zu installieren.
+    (3) Der NPM-Knoten zeigt alle installierten NPM-Pakete an. Sie können mit der rechten Maustaste auf den NPM-Knoten klicken, um mithilfe eines Dialogfelds nach NPM-Paketen zu suchen und diese zu installieren.Sie können Pakete auch installieren oder aktualisieren, indem Sie die Einstellungen in *package.json* und die Optionen verwenden, die Sie über einen Rechtsklick auf den NPM-Knoten erreichen.
 
-    * Projektdateien wie z.B. *server.js* werden unter dem Projektknoten angezeigt. Die Startdatei des Projekts lautet *server.js*.
+    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen zu dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
+
+    (5) Projektdateien wie z.B. *server.js* werden unter dem Projektknoten angezeigt. *server.js* ist die Projektstartdatei. Deshalb wird Sie **fett** angezeigt. Sie können die Startdatei festlegen, indem Sie mit der rechten Maustaste auf eine Datei im Projekt klicken und **Als Node.js-Startdatei festlegen** auswählen.
 
 ## <a name="add-npm-packages"></a>Hinzufügen von NPM-Paketen
 
@@ -95,26 +121,26 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
     Die *package.json*-Datei des Projekts wird mit den neuen Paketinformationen einschließlich der Paketversion aktualisiert.
 
-1. Verwenden Sie anstelle der Benutzeroberfläche den folgenden Code, und fügen Sie ihn in „package.json“ ein, um nach den restlichen Paketen zu suchen und sie hinzuzufügen. Ersetzen Sie dazu den `dependencies`-Abschnitt durch den folgenden Code:
+1. Verwenden Sie anstelle der Benutzeroberfläche den folgenden Code, und fügen Sie ihn in „package.json“ ein, um nach den restlichen Paketen zu suchen und sie hinzuzufügen. Fügen Sie dazu einen `dependencies`-Abschnitt mit dem folgenden Code hinzu:
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    Wenn Ihre Version der leeren Vorlage keinen `dependencies`-Abschnitt enthält, müssen Sie ihn hinzufügen, statt den vorhandenen Abschnitt zu ersetzen.
+    Wenn bereits ein `dependencies`-Abschnitt in Ihrer Version der leeren Vorlage vorhanden ist, ersetzen Sie ihn einfach durch den obigen JSON-Code. Weitere Informationen zur Verwendung dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
 
 1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **NPM-Pakete aktualisieren** aus.
 
-    Klicken Sie im unteren Bereich auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt. Achten Sie zum Anzeigen der Ausgabe darauf, dass Sie im Feld **Show output from (Ausgabe anzeigen von )** im Fenster **Ausgabe** **Npm** ausgewählt haben.
+    Klicken Sie im unteren Bereich auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt. Achten Sie zum Anzeigen der Ausgabe darauf, dass Sie im Fenster **Ausgabe** im Feld **Ausgabe anzeigen von** die Option **npm** ausgewählt haben.
 
     Die folgenden NPM-Module werden im Projektmappen-Explorer angezeigt, nachdem sie installiert wurden.
 
@@ -270,7 +296,7 @@ In den vorherigen Schritten haben Sie dem Projekt die Datei *webpack-config.js* 
 
     ![Ausführen von Webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    Werden anstatt der vorherigen Ausgabe Fehler angezeigt, müssen Sie diese beheben, damit Ihre App funktioniert. Wenn sich Ihre NPM-Paketversionen von den in diesem Tutorial verwendeten Versionen unterscheiden, kann dies eine der Fehlerursachen darstellen. Sie können die Fehler beheben, indem Sie exakt die in den vorherigen Schritten beschriebenen Versionen verwenden. Zudem müssen Sie möglicherweise zum Beheben der Fehler eine neuere Version installieren, wenn eine oder mehrere der Paketversionen als veraltet markiert wurden und zu einem Fehler führen.
+    Werden anstatt der vorherigen Ausgabe Fehler angezeigt, müssen Sie diese beheben, damit Ihre App funktioniert. Wenn sich Ihre NPM-Paketversionen von den in diesem Tutorial verwendeten Versionen unterscheiden, kann dies eine der Fehlerursachen darstellen. Sie können die Fehler beheben, indem Sie exakt die in den vorherigen Schritten beschriebenen Versionen verwenden. Zudem müssen Sie möglicherweise zum Beheben der Fehler eine neuere Version installieren, wenn eine oder mehrere der Paketversionen als veraltet markiert wurden und zu einem Fehler führen. Informationen zur Verwendung von *package.json* zum Steuern von npm-Paketversionen finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen** > **Vorhandener Ordner** aus. Klicken Sie anschließend auf den *dist*-Ordner und auf **Ordner auswählen**.
 

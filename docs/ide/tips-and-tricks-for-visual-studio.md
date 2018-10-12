@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065064"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321280"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -50,7 +50,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |-|-|
 |Suche in Projektmappen-Explorer|**STRG**+**;**|
 |Platzieren des Fokus in das Suchfeld eines beliebigen Toolfensters|**Alt**+**`** wenn sich der Fokus im Toolfenster befindet|
-|Schnellstart|**STRG**+**Q**|
+|Schnellstart|**Strg**+**Q**|
 |Eingrenzen der Schnellstart-Ergebnisbereiche|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
 |Suchen in den Tooloptionen|**STRG**+**E**|
 
@@ -127,5 +127,5 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 ## <a name="see-also"></a>Siehe auch
 
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
-- [Tastenkombinationen (VSTS und TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Tastenkombinationen (Azure DevOps Services und TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
 - [Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)

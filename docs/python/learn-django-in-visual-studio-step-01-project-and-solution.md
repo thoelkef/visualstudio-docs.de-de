@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626896"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280167"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -100,7 +100,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
     ![„Team Explorer“-Fenster für die Übertragung per Push in ein vorhandenes Remoterepository](media/django/step01-push-to-github.png)
 
-    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Visual Studio Team Services übertragen** direkt in Visual Studio ein Repository erstellen.
+    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Azure DevOps übertragen** direkt in Visual Studio ein Repository erstellen.
 
 1. Machen Sie sich während der Arbeit mit diesem Tutorial mit der Verwendung der Steuerelemente zur Übertragung von Änderungen per Push oder per Commit in Visual Studio vertraut. Daran werden Sie in diesem Tutorial auch zu geeigneter Zeit erinnert.
 

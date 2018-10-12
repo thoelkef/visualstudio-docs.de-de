@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Klonen eines Python-Coderepositorys'
 description: In diesem Schnellstart erstellen Sie ein Python-Projekt in Visual Studio, indem Sie das Python Koans-Repository mithilfe von Visual Studio Team Explorer klonen.
-ms.date: 06/26/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636823"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281688"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -30,9 +30,9 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](install
 
 1. Starten Sie Visual Studio.
 
-1. Klicken Sie auf **Ansicht** > **Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
+1. Klicken Sie auf **Ansicht** > **Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure Repos herstellen oder ein Repository klonen. (Wenn unten die Seite **Verbinden** nicht angezeigt wird, klicken Sie auf das Steckersymbol in der Befehlszeile oben, wodurch Sie direkt auf diese Seite weitergeleitet werden.)
 
-    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media/team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Azure Repos, GitHub und das Klonen eines Repositorys.](media/team-explorer.png)
 
 1. Wählen Sie unter **Lokale Git-Repositorys** den Befehl **Klonen** aus, geben Sie anschließend `https://github.com/gregmalcolm/python_koans` in das URL-Feld ein, geben Sie einen Ordner für die geklonten Dateien ein, und klicken Sie auf **Klonen**.
 

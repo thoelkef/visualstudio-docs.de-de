@@ -1,31 +1,31 @@
 ---
-title: TF-Versionskontrolle
-description: Verbinden zu Team Foundation Server oder Visual Studio Team Services mit der Team Foundation-Versionskontrolle.
+title: Team Foundation-Versionskontrolle (TFVC)
+description: Herstellen einer Verbindung mit Team Foundation Server oder Azure DevOps Services mit der Team Foundation-Versionskontrolle (TFVC)
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224185"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279841"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Verbinden zur Team Foundation-Versionskontrolle 
+# <a name="connecting-to-team-foundation-version-control"></a>Herstellen einer Verbindung mit der Team Foundation-Versionskontrolle 
 
 > [!NOTE]
 > **Hinweis**: Bei der Unterstützung für die Team Foundation-Versionskontrolle handelt es sich derzeit um die Vorschauversion, und einige Funktionen funktionieren noch nicht vollständig. Wir freuen uns auf Ihr Feedback zu Problemen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/spaces/41/index.html). Weitere Änderungen werden folgen!
 
-Visual Studio Team Services (VSTS) und Team Foundation Server (TFS) bieten zwei Modell der Versionskontrolle: Git, eine verteilte Versionskontrolle, sowie die Team Foundation-Versionskontrolle (TFVC), eine zentrale Versionskontrolle. Dieser Artikel enthält eine Übersicht und einen Ausgangspunkt für die Verwendung der Team Foundation-Versionskontrolle mit Visual Studio für Mac.
+Azure Repos stellt zur Versionskontrolle zwei Modelle bereit: die verteilte Versionskontrolle mit Git und die zentralisierte Team Foundation-Versionskontrolle (TFVC). Dieser Artikel enthält eine Übersicht über TFVC mit Visual Studio für Mac und Hinweise zu den ersten Schritten.
 
 ## <a name="requirements"></a>Anforderungen
 
 * Visual Studio Community, Professional oder Enterprise für Mac 7.5 und höher
-* Visual Studio Team Services oder Team Foundation Server 2013 und höher
-* Ein Projekt in Visual Studio Team Services oder Team Foundation Server, das für die Verwendung der Team Foundation-Versionskontrolle konfiguriert ist
+* Azure DevOps Services oder Team Foundation Server 2013 und höher
+* ein Projekt in Azure DevOps Services oder Team Foundation Server, das für die Verwendung der Team Foundation-Versionskontrolle konfiguriert ist
 
 ## <a name="installation"></a>Installation
 
@@ -47,17 +47,19 @@ Informationen zu den Neuigkeiten der einzelnen Releases finden Sie in den [Versi
 
 ## <a name="using-the-add-in"></a>Verwenden des Add-Ins
 
-Nach der Installation der Erweiterung wählen Sie das Menüelement **Versionskontrolle > TFS/VSTS > Öffnen aus Remoterepository** aus. 
+Wählen Sie nach der Installation der Erweiterung das Menüelement **Versionskontrolle > TFS/Azure DevOps > Open from Remote Repository (Öffnen über Remoterepository)** aus.
 
-Wählen Sie zum Starten entweder Visual Studio Team Services oder Team Foundation Server aus, und klicken Sie auf **Weiter**:
+  ![Menüelement zum Öffnen der Erweiterung](media/tfvc-source-control-explorer-devops.png)
 
-  ![Verbinden mit einem Server](media/tfvc-choose-server-type.png)
+Wählen Sie VSTS oder Team Foundation Server aus, und klicken Sie auf **Weiter**:
 
-### <a name="vsts-authentication"></a>VSTS-Authentifizierung
+  ![Verbinden mit einem Server](media/tfvc-choose-server-type-devops.png)
 
-Wenn Sie ein unter VSTS gehostetes Projekt auswählen, werden Sie aufgefordert, Ihre Microsoft-Kontoinformationen einzugeben:
+### <a name="azure-repos-authentication"></a>Azure Repos-Authentifizierung
 
-  ![Verbinden mit einem VSTS-Server](media/tfvc-vsts-login.png)
+Wenn Sie ein unter Azure Repos gehostetes Projekt auswählen, werden Sie aufgefordert, Ihre Microsoft-Kontoinformationen einzugeben:
+
+  ![Herstellen einer Verbindung mit Azure Repos](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS-Authentifizierung
 
@@ -73,10 +75,10 @@ Nach der erfolgreichen Authentifizierung wird im Dialogfeld **Aus Quellcodeverwa
 
 Dieses Dialogfeld ist in die folgenden Knoten unterteilt:
 
-- VSTS-Konto oder Sammlung: Hier werden alle mit dem Microsoft-Konto verbundenen Konten, bei denen Sie angemeldet sind, angezeigt.
-- Teamprojekte: Jeder VSTS kann eine Reihe von Teamprojekten enthalten. Im Teamprojekt werden Quellcode, Arbeitselemente und automatisierte Builds gehostet.
+- Azure DevOps Services-Organisation oder -Sammlung: Hier werden alle Organisationen angezeigt, die mit dem Microsoft-Konto verbunden sind, mit dem Sie sich angemeldet haben.
+- Projekte: Jede Organisation oder Sammlung kann mehrere Projekte enthalten. In einem Projekt werden Quellcode, Arbeitselemente und automatisierte Builds gehostet.
 
-Hier können Sie nach dem Namen eines Projekts oder Kontos suchen und filtern.
+Hier können Sie nach dem Namen eines Projekts oder einer Organisation suchen und filtern.
 
 ### <a name="adding-a-new-server"></a>Hinzufügen eines neuen Servers
 
@@ -86,7 +88,7 @@ Klicken Sie zum Hinzufügen eines neuen Servers zur Liste im Dialogfeld **Aus Qu
 
 Wählen Sie in der Liste den Anbieter aus, und geben Sie Ihre Anmeldeinformationen ein:
 
-![Dialogfeld mit der Option für den Quellcodeverwaltungsanbieter](media/tfvc-add-new-creds.png)
+![Dialogfeld mit der Option für den Quellcodeverwaltungsanbieter](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>Erstellen eines neuen Arbeitsbereichs
 
@@ -102,9 +104,7 @@ Legen Sie für den neuen Arbeitsbereich einen Namen und einen lokalen Pfad fest,
 
 Nachdem Sie einen Arbeitsbereich erstellt und Ihr Projekt zugeordnet haben, können Sie den _Quellcode-Explorer_ verwenden.
 
-Wählen Sie zum Öffnen des Quellcode-Explorers **Versionskontrolle > TFS/VSTS > Quellcodeverwaltungs-Explorer** aus:
-
-![Menüelement zum Öffnen des Quellcode-Explorers](media/tfvc-source-control-explorer.png)
+Wählen Sie zum Öffnen des Quellcode-Explorers **Versionskontrolle > TFS/Azure DevOps > Quellcodeverwaltungs-Explorer** aus.
 
 Mit dem Quellcode-Explorer können Sie durch alle zugeordneten Projekte sowie die dazu gehörenden Dateien und Ordner navigieren. Ferner können Sie damit alle grundlegenden Quellcodeverwaltungsaktionen durchführen. Hierzu zählen folgende:
 
@@ -122,7 +122,7 @@ Viele dieser Aktionen sind über Kontextaktionen für das Projekt verfügbar:
 
 ## <a name="managing-workspaces"></a>Verwalten von Arbeitsbereichen
 
-Wenn Sie noch keinen Arbeitsbereich wie im Abschnitt [Erstellen eines Arbeitsbereichs](#creating-a-new-workspace) erstellt haben, werden Sie feststellen, dass der Quellcode-Explorer leer ist:
+Wenn Sie noch keinen Arbeitsbereich erstellt haben (s. Abschnitt [Erstellen eines Arbeitsbereichs](#creating-a-new-workspace)), ist der Quellcode-Explorer leer:
 
 ![Leerer Quellcode-Explorer](media/tfvc-setup-empty-sce.png) 
 
@@ -134,7 +134,7 @@ Gehen Sie wie folgt vor, um das Remoteprojekt mit einem lokalen Arbeitsbereich e
     
     ![Dialogfeld „Neuen Arbeitsbereich erstellen“ mit Standardoptionen](media/tfvc-workspace1.png) 
 
-1. Wählen Sie den Ordner „$“ aus, um alle Teamprojekte auf Ihrem Server demselben Arbeitsbereich zuzuordnen, oder wählen Sie ein einzelnes Projekt aus, und klicken Sie auf **OK**:
+1. Wählen Sie den Ordner „$“ aus, um alle Projekte auf Ihrem Server demselben Arbeitsbereich zuzuordnen, oder wählen Sie ein einzelnes Projekt aus, und klicken Sie auf **OK**:
     
     ![Suche nach Ordnerdialogfeld mit allen Projekten](media/tfvc-workspace2.png) 
 
@@ -157,10 +157,10 @@ Mithilfe der folgenden Optionen können Sie sich bei einem Server authentifizier
 - Standard
 - Ntlm
 
-Wenn Sie die Standardauthentifizierung verwenden möchten, müssen Sie **Alternative authentication credentials** (Alternative Anmeldeinformationen für die Authentifizierung) in VSTS aktivieren, indem Sie folgende Schritte befolgen:
+Wenn Sie die Standardauthentifizierung verwenden möchten, müssen Sie **Alternative authentication credentials** (Alternative Anmeldeinformationen für die Authentifizierung) in Azure DevOps Services aktivieren, indem Sie folgende Schritte ausführen:
 
-1. Melden Sie sich als Kontobesitzer bei Ihrem VSTS-Konto (https://{IhrKonto}.visualstudio.com) an.
-2. Klicken Sie in der Symbolleiste Ihres Kontos auf das Zahnradsymbol und dann auf **Richtlinie**:
+1. Melden Sie sich bei Ihrer Azure DevOps Services-Organisation als Besitzer an (https://dev.azure.com/{organization}/{project}).
+2. Klicken Sie in der Symbolleiste Ihrer Organisation auf das Zahnradsymbol und dann auf **Richtlinie**:
     
     ![Option „Richtlinieneinstellungen“ ausgewählt](media/tfvc-auth2.png) 
 
@@ -172,7 +172,7 @@ Wenn Sie die Standardauthentifizierung verwenden möchten, müssen Sie **Alterna
 
 Wenn Sie Team Foundation-Versionskontrolle (TFVC) auf Ihrem Entwicklungscomputer einrichten möchten, **müssen** Sie wie im Abschnitt [Verwalten von Arbeitsbereichen](#managing-workspaces) beschrieben einen Arbeitsbereich erstellen.
 
-Klicken Sie im Quellcodeverwaltungs-Explorer auf die Schaltfläche **Arbeitsbereiche verwalten**. Befolgen Sie die Schritte, um das Teamprojekt einem Ordner auf dem Entwicklungscomputer zuzuordnen.
+Klicken Sie im Quellcodeverwaltungs-Explorer auf die Schaltfläche **Arbeitsbereiche verwalten**. Führen Sie die Schritte aus, um das Projekt einem Ordner auf dem Entwicklungscomputer zuzuordnen.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>Projekte werden teilweise oder gar nicht angezeigt
 

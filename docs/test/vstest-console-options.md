@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2821e785d0caf504cd64eb90a6538b1a69e9a26
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978652"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279686"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/Framework: [*Frameworkversion*]**|.NET Framework-Zielversion, in der der Test ausgeführt wird.<br />Gültige Werte sind Framework35, Framework40, Framework45 und FrameworkUap10.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
 |**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Ausdruck\> entspricht dem Format <Eigenschaft\>=<Wert\>[&#124;<Ausdruck\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
-|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Teamprojekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Teamprojektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*Dateiname*]**|Listet gefundene Tests aus dem angegebenen Testcontainer auf.|
 |**/ListDiscoverers**|Listet alle installierten Test-Discoverer auf.|
 |**/ListExecutors**|Listet alle installierten Test-Executors auf.|

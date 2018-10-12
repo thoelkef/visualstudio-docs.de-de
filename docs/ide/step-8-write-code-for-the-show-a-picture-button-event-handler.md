@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9bc3e5b0c3a61e911f7e49395f940ac07e2548
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7f1763f7688dcb74781688e31af856fe531e69c8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748603"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384135"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläche **Bild anzeigen** wie folgt funktioniert:
@@ -27,7 +27,7 @@ In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläc
 
  Die IDE stellt ein leistungsstarkes Tool namens IntelliSense bereit, das Sie beim Schreiben von Code unterstützt. Wenn Sie Code eingeben, öffnet die IDE ein Feld mit Vervollständigungsvorschlägen für teilweise eingegebene Wörter. Die IDE versucht zu bestimmen, was Sie als Nächstes machen möchten, und springt automatisch zum zuletzt in der Liste auswählten Element. Sie können mithilfe der NACH-OBEN- oder NACH-UNTEN-TASTE in der Liste navigieren oder die Eingabe von Buchstaben fortsetzen, um die Optionen einzugrenzen. Wenn Sie die gewünschte Auswahl sehen, verwenden Sie die **Tab**-Taste, um sie auszuwählen. Sie können die Vorschläge aber auch ignorieren, wenn sie nicht benötigt werden.
 
- ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Artikels finden Sie in Video 4 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205215) oder in Video 4 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205203). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Videolink](../data-tools/media/playvideo.gif)Eine Videoversion dieses Artikels finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic - Video 4 (Tutorial 1: Erstellen einer Bildanzeige in Visual Basic – Video 4)](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). In diesem Video wird eine frühere Version von Visual Studio verwendet, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>So schreiben Sie Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 

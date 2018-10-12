@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668922"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Übersicht: Profilerstellung in Visual Studio
 
@@ -25,7 +26,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Informationen zu den verschiedenen Maßnahmen zur Anwendungsleistung finden Sie im [Überblick über das Profilerstellungsfeature](../profiling/profiling-feature-tour.md).
+* Informationen zu den verschiedenen Maßnahmen zur Anwendungsleistung finden Sie in der [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md).
 
 * [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md) für weitere Informationen zum CPU-Auslastungs-Tool
 

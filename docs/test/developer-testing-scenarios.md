@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 83339ebabd3bb8a00f56b90ba9f162084bd43043
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302929"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282847"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testtools, -szenarios und -funktionen für Entwickler
 
@@ -60,7 +60,7 @@ Die Code Coverage-Analyse kann sowohl in verwaltetem als auch in nicht verwaltet
 
 Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
-![Testen mit Visual Studio Team Services und Team Foundation Server](media/devtest-codecoverage.png)
+![Testen mit Azure Test Plans und Team Foundation Server](media/devtest-codecoverage.png)
 
 * [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Unittest, Code Coverage und Codeklonanalyse mit Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

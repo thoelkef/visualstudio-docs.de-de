@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380377"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320539"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten
 
@@ -184,7 +184,7 @@ Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einsch
 
      Die von Ihnen im Editor angegebene Datendatei ist an die Testergebnisse angefügt.
 
- Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data while testing (VSTS) (Sammeln von Diagnosedaten beim Testen (VSTS))](/vsts/manual-test/collect-diagnostic-data) oder unter [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+ Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts) oder unter [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

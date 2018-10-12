@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68565e7c5f3a0b7f4aff09ccc3b3223d562d822
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668568"
 ---
 # <a name="span-class"></a>span-Klasse
 Definiert eine Phase der Anwendung.  
@@ -33,7 +34,7 @@ class span;
   
 ### <a name="public-constructors"></a>Öffentliche Konstruktoren  
   
-|name|description|  
+|name|Beschreibung |  
 |----------|-----------------|  
 |[span::span-Konstruktor](../profiling/span-span-constructor.md)|Initialisiert eine neue Instanz der `span`-Klasse.|  
 |[span::~span-Destruktor](../profiling/span-tilde-span-destructor.md)|Zerstört das `span`-Objekt und gibt seine Ressourcen frei.|  
@@ -42,7 +43,7 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** cvmarkersobj.h  
+ **Header:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic  
   

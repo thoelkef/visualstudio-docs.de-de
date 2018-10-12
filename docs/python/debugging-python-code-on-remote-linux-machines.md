@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code auf Linux-Remotecomputern
 description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remote-Computern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341662"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774688"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -126,6 +126,9 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
     | Visual Studio-Version | Python-Tools/ptvsd-Version |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9 (Legacydebugger: 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (Legacydebugger: 3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477482"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668769"
 ---
 # <a name="understand-performance-collection-methods"></a>Grundlagen zu Leistungsauflistungsmethoden
 
@@ -27,13 +27,13 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
 > [!NOTE]
 > Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Methode|description|
+|Methode|Beschreibung |
 |------------|-----------------|
 |[Sampling](#sampling)|Sammelt statistische Daten zu den von einer Anwendung ausgeführten Aufgaben.|
 |[Instrumentierung](#instrumentation)|Dient zum Sammeln ausführlicher Zeitsteuerungsinformationen zu den einzelnen Funktionsaufrufen.|
 |[Parallelität](#concurrency)|Dient zum Sammeln ausführlicher Informationen zu Multithreadanwendungen.|
-|[.NET-Arbeitsspeicher](#net_memory)|Dient zum Sammeln ausführlicher Informationen zur .NET-Speicherbelegung und zur Garbage Collection.|
-|[Ebeneninteraktion](#tier_interaction)|Sammelt Informationen zu synchronen, an eine SqlServer-Datenbank gerichteten ADO.NET-Funktionsaufrufen.<br /><br /> Profilerstellungsdaten für die Ebeneninteraktion können mit einer beliebigen Visual Studio-Edition erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in Visual Studio Enterprise angezeigt werden.|
+|[.NET-Arbeitsspeicher](#net-memory)|Dient zum Sammeln ausführlicher Informationen zur .NET-Speicherbelegung und zur Garbage Collection.|
+|[Ebeneninteraktion](#tier-interaction)|Sammelt Informationen zu synchronen, an eine SqlServer-Datenbank gerichteten ADO.NET-Funktionsaufrufen.<br /><br /> Profilerstellungsdaten für die Ebeneninteraktion können mit einer beliebigen Visual Studio-Edition erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in Visual Studio Enterprise angezeigt werden.|
 
 Mit einigen Profilerstellungsmethoden können auch weitere Daten gesammelt werden, z. B. Software- und Hardwareleistungsindikatoren. Weitere Informationen finden Sie unter [Sammeln zusätzlicher Leistungsdaten](../profiling/collecting-additional-performance-data.md).
 

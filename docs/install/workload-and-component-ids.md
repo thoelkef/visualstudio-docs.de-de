@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,14 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa29ef14f6fa4c4ff63c0dd697bfa362347e9c9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139192"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284054"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017
+
+**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) aktualisiert**
 
 Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workload- und Komponenten-IDs anzuzeigen, die Sie benötigen, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben.
 
@@ -33,7 +35,7 @@ Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workloa
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Microsoft DevOps-Lösung für die Produktivität und Koordination über Teams jeglicher Größe hinweg. |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Professionelle Entwicklertools und -dienste für kleine Teams. |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Kostenlose, mit allen Funktionen ausgestattete IDE für Studenten, Open Source und einzelne Entwickler |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interaktion mit Team Foundation Server und Visual Studio Team Services ohne ein Visual Studio-Toolset für Entwickler |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interaktion mit Team Foundation Server und Azure DevOps Services ohne ein Visual Studio-Toolset für Entwickler |
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Erstellen Sie native und verwaltete Anwendungen wie WPF, WinForms und Win32 mit syntaxfähiger Codebearbeitung, Quellcodeverwaltung und Arbeitselementverwaltung. Bietet Unterstützung für C#, Visual Basic und Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Die Visual Studio-Buildtools ermöglichen das Erstellen nativer und verwalteter auf MSBuild basierenden Anwendungen, ohne dass die Visual Studio IDE erforderlich ist. Möglich ist auch die Installation der Visual C++-Compiler und -Bibliotheken, von ATL, MFC und der C++/CLI-Unterstützung. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Unterstützt die Remoteausführung von automatisierten Tests und Auslastungstests. |

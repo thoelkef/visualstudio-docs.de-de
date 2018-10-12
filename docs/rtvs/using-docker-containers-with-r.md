@@ -11,19 +11,20 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667131"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>Verwenden von Docker-Containern mit R Tools für Visual Studio
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Verwenden von Docker-Containern mit R Tools für Visual Studio
 
 Ab Version 1.3 unterstützen die R Tools für Visual Studio (RTVS) im Zusammenspiel mit einer Installation von [Docker für Windows](https://www.docker.com/docker-windows) das Arbeiten mit Docker-Containern.
 
-## <a name="creating-a-container"></a>Erstellen eines Containers
+## <a name="create-a-container"></a>Erstellen eines Containers
 
-1. Klicken Sie in der rechten Ecke des Fensters **Workspaces** (**R Tools > Windows > Arbeitsbereiche**) auf die Schaltfläche **Container...**. Das Fenster informiert Sie, wenn Sie Docker für Windows nicht installiert haben, und stellt einen Link zum Download bereit. Die Installation von Docker kann einen Neustart des Computers erforderlich machen.
+1. Klicken Sie in der rechten Ecke des Fensters **Arbeitsbereiche** (**R Tools** > **Windows** > **Arbeitsbereiche**) auf die Schaltfläche **Container**. Das Fenster informiert Sie, wenn Sie Docker für Windows nicht installiert haben, und stellt einen Link zum Download bereit. Die Installation von Docker kann einen Neustart des Computers erforderlich machen.
 
     ![Fenster „Arbeitsbereiche“ in R Tools für Visual Studio (VS 2017) mit dem Befehl „Container“](media/container-workspaces-window.png)
 
@@ -39,7 +40,7 @@ Ab Version 1.3 unterstützen die R Tools für Visual Studio (RTVS) im Zusammensp
 
     ![Containerfenster mit einem vervollständigten Container](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>Herstellen einer Verbindung mit einem Container
+## <a name="connect-to-a-container"></a>Herstellen einer Verbindung mit einem Container
 
 1. Im Abschnitt  **Lokal ausgeführte Container** des Fensters **Arbeitsbereiche** werden Container angezeigt, die den RTVS-Daemon an Port 5444 ausführen. (Unter [Remote R Server für Linux](setting-up-remote-r-service-on-linux.md) finden Sie Einzelheiten zur Konfiguration des Daemons.)
 
@@ -49,7 +50,7 @@ Ab Version 1.3 unterstützen die R Tools für Visual Studio (RTVS) im Zusammensp
 
     ![Fenster „Arbeitsbereiche“ und das Fenster „REPL“, das für einen Container geöffnet ist](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>Verwenden benutzerdefiniert erstellter Images
+## <a name="use-custom-built-images"></a>Verwenden benutzerdefinierter Images
 
 RTVS erkennt und erlaubt die Verwaltung von Containern, die mithilfe benutzerdefinierter Images erstellt wurden, wie z.B. dem Image „microsoft/rtvs“, das in der nachfolgenden Docker-Datei beschrieben ist. Im hier verwendeten Basisimage sind rtvs-daemon, R 3.4.2 und gängige R-Pakete vorinstalliert. **Hinweis**: Ändern Sie den hier gezeigten Benutzernamen und das Kennwort nach Bedarf.
 

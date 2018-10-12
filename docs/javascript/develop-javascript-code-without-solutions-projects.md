@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924740"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774600"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
@@ -58,3 +58,27 @@ Wenn im Ordner die Datei *tsconfig.json* vorhanden ist, können Sie mit der rech
 
 > [!NOTE]
 > Weitere Informationen zu *tsconfig.json* finden Sie auf der Seite [tsconfig.json TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Komponententests
+Sie können die Integration von Komponententests in Visual Studio aktivieren, indem Sie ein Teststammverzeichnis in der Datei *package.json* angeben:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Der Test Runner listet die lokal installierten Pakete auf, um zu bestimmen, welches Testframework verwendet werden soll.
+Wenn keine der unterstützten Frameworks erkannt werden, wird als Test Runner standardmäßig *ExportRunner* verwendet. Folgende weitere Frameworks werden unterstützt:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+Nach dem Öffnen des Test-Explorers (wählen Sie **Test** > **Windows** > **Test-Explorer** aus), erkennt Visual Studio Tests und zeigt diese an.
+
+> [!NOTE]
+> Der Test Runner listet die JavaScript-Dateien im Teststammverzeichnis nur auf. Wenn Ihre Anwendung in TypeScript geschrieben ist, müssen Sie diese Dateien daher zuerst kompilieren.

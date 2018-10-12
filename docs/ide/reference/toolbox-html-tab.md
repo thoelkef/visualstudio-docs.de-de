@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177005"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384161"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
 
@@ -117,7 +117,7 @@ Wenn Sie **Input (Password)** auf die Entwurfsoberfläche ziehen, wird ein HTML-
 ```
 
 > [!IMPORTANT]
-> Wenn Ihre Anwendung Benutzernamen und Kennwörter überträgt, sollten Sie Ihre Webseite so konfigurieren, dass sie Secure Sockets Layer (SSL) verwendet, um die Übertragung zu verschlüsseln. Weitere Informationen finden Sie unter „Securing Connections with SSL“ („Sichern von Verbindungen mit SSL“) im [IIS Operations Guide (IIS-Benutzerhandbuch)](http://go.microsoft.com/fwlink/?linkid=47856). Es wird außerdem empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Wenn Ihre Anwendung Benutzernamen und Kennwörter überträgt, sollten Sie Ihre Webseite so konfigurieren, dass sie Secure Sockets Layer (SSL) verwendet, um die Übertragung zu verschlüsseln. Weitere Informationen finden Sie unter [Sichern von Verbindungen](/previous-versions/tn-archive/bb418917(v=technet.10)). Es wird außerdem empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Input (Check box)**
 
