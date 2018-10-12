@@ -1,7 +1,7 @@
 ---
 title: Buildreihenfolge für Ziele |Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178955"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774944"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
@@ -114,7 +114,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
 
     Ziele, die das bedingte Ziel in `BeforeTargets` oder `AfterTargets` auflisten, werden dennoch in der vorgeschriebenen Reihenfolge ausgeführt.
   
-4.  Bevor ein Ziel ausgeführt wird, werden dessen `DependsOnTargets`-Ziele ausgeführt.  
+4.  Wenn das `Condition`-Attribut nicht vorhanden war oder nicht mit `false` ausgewertet wurde, werden dessen `DependsOnTargets`-Ziele ausgeführt, bevor ein Ziel ausgeführt oder übersprungen werden kann.  
   
 5.  Bevor ein Ziel ausgeführt oder übersprungen wurde, wird jedes beliebige Ziel ausgeführt, das es in einem `BeforeTargets`-Attribut auflistet.  
   

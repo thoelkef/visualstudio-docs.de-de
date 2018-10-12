@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380357"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320903"
 ---
 # <a name="unit-test-your-code"></a>Ausführen von Komponententests für Code
 
@@ -49,8 +49,8 @@ Lesen Sie folgende Themen, um Komponententests besser zu verstehen und sie zu er
 |**Komponententests von C++-Code**|-   [Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententestframework für C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Isolation von Komponententests**|-   [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Verwenden Sie Code Coverage, um zu identifizieren, welcher Teil des Projektcodes getestet wird:** Erfahren Sie mehr über das Code Coverage-Feature der Visual Studio-Testtools.|-   [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Führen Sie die Belastungs- und Leistungsanalyse mithilfe von Auslastungstests aus:** Sie können einen Auslastungstest erstellen und diesem die Komponententests hinzufügen, um die Leistungs- und Auslastungsprobleme in der Anwendung isolieren zu können.|-   [Load testing (VSTS and TFS) (Auslastungstest (VSTS und TFS))](/vsts/load-test/)|
-|**Festlegen von Quality Gates:** Sie können Quality Gates erstellen, um zu erzwingen, dass vor dem Einchecken von Code Tests ausgeführt werden. Auf diese Weise können Sie die Qualität des Codes sicherstellen.|-   [Eincheckrichtlinien (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Führen Sie die Belastungs- und Leistungsanalyse mithilfe von Auslastungstests aus:** Sie können einen Auslastungstest erstellen und diesem die Komponententests hinzufügen, um die Leistungs- und Auslastungsprobleme in der Anwendung isolieren zu können.|-   [Load testing (Azure Test Plans and TFS) (Auslastungstest (Azure Test Plans und TFS))](/azure/devops/test/load-test/index?view=vsts)|
+|**Festlegen von Quality Gates:** Sie können Quality Gates erstellen, um zu erzwingen, dass vor dem Einchecken oder Merge von Code Tests ausgeführt werden. Auf diese Weise können Sie die Qualität des Codes sicherstellen.|-   [Check-In-Richtlinien (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Festlegen von Testoptionen:** Sie können beispielsweise angeben, an welchem Ort die Testergebnisse gespeichert werden.|[Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API-Referenzdokumentation

@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von Python-Code
 description: Beim Bearbeiten von Python in Visual Studio stehen IntelliSense, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627156"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774764"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
-Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
+Da Sie einen Großteil Ihrer Entwicklungszeit im Code-Editor verbringen, bietet [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
 
 Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 

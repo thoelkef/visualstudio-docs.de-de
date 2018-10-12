@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924790"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776092"
 ---
 # <a name="unit-testing-in-nodejs"></a>Unittests in Node.js
 
@@ -137,7 +137,7 @@ Sie können die Unterstützung für weitere Testframeworks hinzufügen, indem Si
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-Dieser Ordner enthält eine JavaScript-Datei mit demselben Namen, mit der die folgenden beiden Funktionen exportiert werden:
+Dieser Ordner muss eine JavaScript-Datei mit demselben Namen enthalten, die die folgenden beiden Funktionen exportiert:
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ Ein gutes Beispiel für die Implementierungen von `find_tests` und `run_tests` f
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 Verfügbare Testframeworks werden beim Start von Visual Studio ermittelt. Wenn ein Framework hinzugefügt wird, während Visual Studio ausgeführt wird, muss Visual Studio neu gestartet werden, damit das Framework erkannt wird. Wenn Sie an der Implementierung Änderungen vornehmen, müssen Sie jedoch keinen Neustart durchführen.
+
+## <a name="unit-tests-in-other-project-types"></a>Komponententests in anderen Projekttypen
+Beim Schreiben von Komponententests sind Sie nicht nur auf Ihre Node.js-Projekte beschränkt. Wenn Sie die Eigenschaften „TestFramework“ und „TestRoot“ zu einem C#- oder VB-Projekt hinzufügen, werden die Tests aufgelistet, und Sie können sie über das Fenster „Test-Explorer“ ausführen.
+
+Klicken Sie dazu im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, klicken Sie auf **Projekt entladen**, und wählen Sie dann **Edit Project** (Projekt bearbeiten) aus. Fügen Sie anschließend in der Projektdatei die folgenden zwei Elemente zu einer Eigenschaftengruppe hinzu.
+
+> [!NOTE]
+> Stellen Sie sicher, dass für die Eigenschaftengruppe, zu der Sie die Elemente hinzufügen, keine Bedingung angegeben ist.
+> Dies kann zu unerwartetem Verhalten führen.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Als Nächstes fügen Sie die Tests in den Teststammordner ein, den Sie angegeben haben, woraufhin sie im Fenster „Test-Explorer“ ausgeführt werden. Sollten sie anfänglich nicht angezeigt werden, müssen Sie das Projekt neu erstellen.
+
+> [!NOTE]
+> Dies funktioniert derzeit nicht für .NET Standard- und .NET Core-Projekte.

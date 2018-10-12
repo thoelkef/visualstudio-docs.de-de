@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666513"
 ---
 # <a name="package-manager"></a>Paket-Manager
 
-Der Paket-Manager von R Tools für Visual Studio (RTVS) ist eine Benutzeroberfläche für die Verwaltung der R-Pakete. Wählen Sie zum Öffnen **R Tools > Windows > Pakete** aus, oder drücken Sie STRG+7.
+Der Paket-Manager von R Tools für Visual Studio (RTVS) ist eine Benutzeroberfläche für die Verwaltung der R-Pakete. Wählen Sie zum Öffnen **R Tools** > **Windows** > **Pakete** aus, oder drücken Sie **STRG**+**7**.
 
 Der Paket-Manager enthält drei Registerkarten. Jede Registerkarte zeigt auf der linken Seite eine Liste von relevanten Paketen und auf der rechten Seite spezifische Details zu dem ausgewählten Paket an, einschließlich Paketversion, -beschreibung, -lizenz und -speicherort sowie Links zu anderen relevanten Informationen. Mit dem Suchfeld oben rechts lässt sich die Liste filtern.
 
@@ -41,5 +42,5 @@ Der Paket-Manager enthält drei Registerkarten. Jede Registerkarte zeigt auf der
 
 Paketen werden an den folgenden Speicherorten installiert:
 
-- Core-Pakete, die in RTVS enthalten sind, werden unter `C:\Program Files\Microsoft\R Client\R_SERVER\library` installiert.
-- Zusätzliche Pakete werden unter `%userprofile%\Documents\R\win-library\3.3` installiert.
+- Core-Pakete, die in RTVS enthalten sind, werden unter *C:\Programme\Microsoft\R Client\R_SERVER\Bibliothek* installiert.
+- Zusätzliche Pakete werden unter *%userprofile%\Dokumente\R\win-library\3.3* installiert.

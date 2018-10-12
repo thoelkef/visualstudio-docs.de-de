@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176468"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321111"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
 Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physischen oder virtuellen Computern generieren. Diese Computer müssen als einzelne Testcontroller und Test-Agents eingerichtet werden. Mithilfe des Testcontrollers und der Test-Agents können Sie eine größere Auslastung generieren als mit nur einem Computer.
 
 > [!NOTE]
-> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using VSTS (Ausführen von Auslastungstests mithilfe von VSTS)](/vsts/load-test/get-started-simple-cloud-load-test).
+> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 ## <a name="load-simulation-architecture"></a>Architektur der Auslastungssimulation
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668955"
 ---
 # <a name="start"></a>Starten
-Die **Start**-Option ist eine VSPerfCmd.exe-Option, die den Profiler mit der angegebenen Profilerstellungsmethode initialisiert.  
+Die **Start**-Option ist eine *VSPerfCmd.exe*-Option, die den Profiler mit der angegebenen Profilerstellungsmethode initialisiert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,7 +44,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Ausgabe:**`filename`  
  Gibt den Ausgabedateinamen an.  
   
-## <a name="exclusive-options"></a>Ausschließliche Optionen  
+## <a name="exclusive-options"></a>Ausschließende Optionen  
  Die folgenden Optionen können nur mit der Option **Start** in einer Befehlszeile verwendet werden.  
   
  **CrossSession**&#124;**CS**  
@@ -65,7 +66,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  Deaktiviert den Profiler.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht, wie die Option **Start** von VSPerfCmd.exe den Profiler initialisiert.  
+ Das folgende Beispiel veranschaulicht, wie die Option **Start** von *VSPerfCmd.exe* den Profiler initialisiert.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -76,4 +77,4 @@ VSPerfCmd.exe /Launch:TestApp.exe
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

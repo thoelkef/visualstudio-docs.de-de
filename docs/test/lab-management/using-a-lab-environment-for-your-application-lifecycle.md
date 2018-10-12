@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321176"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -40,9 +40,9 @@ Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 |---|---|
 |  ![Kamerasymbol für Video](../../install/media/video-icon.png)  |    [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Build-und-Release in Team Services oder Team Foundation Server
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Azure Pipelines oder Build und Release in Team Foundation Server
 
-Sie können automatisierte Tests und Automatisierung von Erstellen, Bereitstellen und Testen mit den [Build-und-Release](/vsts/build-release/)-Features von Team Foundation Server (TFS) und Visual Studio Team Services (TS) durchführen. Vorteile sind unter anderem:
+Sie können automatisierte Tests und das automatisierte Erstellen, Bereitstellen und Testen mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features von Team Foundation Server (TFS) und Azure Test Plans durchführen. Vorteile sind unter anderem:
 
 * Sie benötigen keinen Buildcontroller oder Testcontroller.
 * Der Test-Agent wird über einen Task als Teil des Builds oder des Releases installiert.
@@ -85,12 +85,12 @@ Es gibt zwei Lab-Umgebungstypen, die Sie mit Visual Studio Lab Management erstel
 
 - **Vorlagen für virtuelle Computer**: Eine Vorlage für virtuelle Computer ist ein virtueller Computer, bei dem der Name und andere IDs entfernt wurden. Wenn eine Vorlage für virtuelle Computer in einer SCVMM-Umgebung bereitgestellt wird, generiert neue IDs. Dadurch können Sie mehrere Kopien eines virtuellen Computers in derselben Umgebung oder in mehrere Umgebungen bereitstellen und die virtuellen Computer anschließend gleichzeitig ausführen.
 
-- **Gespeicherte virtuelle Computer**: Ein in Ihrer Teamprojektbibliothek gespeicherter virtueller Computer, der eindeutige Bezeichner umfasst.
+- **Gespeicherte virtuelle Computer:** ein in Ihrer Projektbibliothek gespeicherter virtueller Computer, der eindeutige Bezeichner umfasst.
 
 > [!NOTE]
 > Lab Management unterstützt SCVMM 2016 nicht.
 
-Informationen zu SCVMM finden Sie unter [Virutal Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Informationen zu SCVMM finden Sie unter [Virutal Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müssen jedoch wichtige Unterschiede berücksichtigt werden. In der folgenden Tabelle werden die Features verglichen, die für Standard- und SCVMM-Umgebungen verfügbar sind.
 
@@ -119,9 +119,9 @@ Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut s
 |Begriff|Beschreibung |
 |----------|-----------------|
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|
-|Teamprojekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|
-|Teamprojektbibliothek|Ein Archiv von gespeicherten virtuellen Computern, Vorlagen und gespeicherten Lab-Umgebungen, die in die Hostgruppe Ihres Teamprojekts importiert wurden. Sie können die Elemente in Ihrer Bibliothek mit SCVMM-Umgebungen verwenden. Sie können sie jedoch nicht direkt zu einer Standardumgebung hinzufügen. Sie können die Elemente in Ihrer Bibliothek nicht ausführen, Sie verwenden sie vielmehr dafür, um eine neue Umgebung bereitzustellen.|
-|Bereitgestellte Umgebung|Eine Lab-Umgebung, die in Ihrer Teamprojekt-Lab bereitgestellt wurde, sodass Sie eine Verbindung dazu herstellen und ihre Computer ausführen können.|
+|Azure DevOps-Projekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|
+|Azure DevOps-Projektbibliothek|Ein Archiv mit gespeicherten virtuellen Computern, Vorlagen und gespeicherten Laborumgebungen, die in die Hostgruppe Ihres Projekts importiert wurden. Sie können die Elemente in Ihrer Bibliothek mit SCVMM-Umgebungen verwenden. Sie können sie jedoch nicht direkt zu einer Standardumgebung hinzufügen. Sie können die Elemente in Ihrer Bibliothek nicht ausführen, Sie verwenden sie vielmehr dafür, um eine neue Umgebung bereitzustellen.|
+|Bereitgestellte Umgebung|Eine Laborumgebung, die in Ihrem Projekt-Lab bereitgestellt wurde, sodass Sie eine Verbindung damit herstellen und ihre Computer ausführen können.|
 
 Weitere Informationen zu Lab Management finden Sie unter:
 
@@ -134,7 +134,7 @@ Weitere Informationen zu Lab Management finden Sie unter:
 
 Weitere Informationen zur Einrichtung von Umgebungen finden Sie unter:
 
-* [Build-und-Release-Cloudumgebungen](use-build-or-rm-instead-of-lab-management.md)
+* [Build und Release-Cloudumgebungen](use-build-or-rm-instead-of-lab-management.md)
 * [Standardmäßige Lab-Umgebungen](https://msdn.microsoft.com/library/ee390842.aspx)
 * [(Virtuelle) SCVMM-Umgebungen](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Erstellen und Verwenden einer netzwerkisolierten Umgebung](https://msdn.microsoft.com/library/ee518924.aspx)

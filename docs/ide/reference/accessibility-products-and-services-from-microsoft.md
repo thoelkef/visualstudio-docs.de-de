@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948742"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384252"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
@@ -65,15 +65,15 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 
 ##  <a name="altfortmats"></a> Dokumentation in alternativen Formaten
 
- Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](http://go.microsoft.com/fwlink/?LinkId=8431).
+Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- Weitere Microsoft-Veröffentlichungen erhalten Sie bei Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D verteilt diese Dokumente an registrierte, berechtigte Mitglieder ihres Vertriebsdienstes. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
+Darüber hinaus erhalten Sie weitere Microsoft-Veröffentlichungen von Learning Ally. Learning Ally verteilt diese Dokumente an registrierte und berechtigte Mitglieder ihres Vertriebsdiensts. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
 
-|Recording for the Blind & Dyslexic, Inc.|
+|Lernhilfe|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Telefonnummer, wenn Sie innerhalb der USA anrufen: (800) 221-4792<br /><br /> Telefonnummer, wenn Sie von außerhalb der USA und Kanada anrufen: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Recording for the Blind & Dyslexic-Website: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
 
- Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
+Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
 
 ##  <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
 

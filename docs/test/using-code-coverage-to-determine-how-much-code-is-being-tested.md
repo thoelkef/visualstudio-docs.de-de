@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381715"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279946"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -249,9 +249,9 @@ Die Code Coverage-Analyse wird nur in Assemblys durchgeführt, die geladen wurde
 
 Sie können besser steuern, welche Assemblys und Elemente für die Code Coverage-Analyse ausgewählt werden, indem Sie eine *RUNSETTINGS*-Datei schreiben. Beispielsweise können Sie Assemblys bestimmter Arten ausschließen, ohne deren Klassen Attribute hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
-## <a name="analyze-code-coverage-in-the-build-service"></a>Analysieren von Code Coverage im Builddienst
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analysieren von Code Coverage in Azure Pipelines
 
-Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von anderen Teammitgliedern auf dem Buildserver ausgeführt. (Wenn Sie dies noch nicht eingerichtet haben, finden Sie unter [Ausführen von Tests im Buildprozess](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38) Informationen hierzu.) Es ist hilfreich, die Code Coverage für den Builddienst zu analysieren, da Sie dadurch das aktuellste und umfassendste Bild der Code Coverage für das gesamte Projekt erhalten. Dazu gehören auch automatisierte Systemtests und andere codierte Tests, die Sie normalerweise nicht auf Entwicklungscomputern ausführen.
+Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von anderen Teammitgliedern auf dem Buildserver ausgeführt. (Wenn Sie dies noch nicht eingerichtet haben, finden Sie unter [Ausführen von Tests im Buildprozess](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38) Informationen hierzu.) Es ist hilfreich, die Code Coverage in Azure Pipelines zu analysieren, da Sie dadurch das aktuellste und umfassendste Bild der Code Coverage für das gesamte Projekt erhalten. Dazu gehören auch automatisierte Systemtests und andere codierte Tests, die Sie normalerweise nicht auf Entwicklungscomputern ausführen.
 
 1. Öffnen Sie im **Team Explorer** die Option **Builds**, und fügen Sie anschließend eine Builddefinition hinzu oder bearbeiten Sie diese.
 

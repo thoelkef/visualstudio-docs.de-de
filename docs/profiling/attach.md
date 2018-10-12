@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7d54d31a1a4478f114e997df39bcbeeb95d5cda5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690626"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668781"
 ---
 # <a name="attach"></a>Anfügen
 Die *VSPerfCmd.exe*-Option **Attach** beginnt mit der Samplingprofilerstellung für den ausgeführten Prozesses, der durch die Prozess-ID (PID) angegeben wird.  
@@ -79,4 +79,4 @@ VSPerfCmd.exe /Attach:12345
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

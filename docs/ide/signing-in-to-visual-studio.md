@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282227"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284184"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -36,9 +36,9 @@ Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 - **Verlängerung des Visual Studio-Testzeitraums:** Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.
 
-- **Entsperrung von Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder Visual Studio Team Services-Abonnement verknüpft ist.** Weitere Informationen finden Sie unter [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Entsperrung von Visual Studio, wenn Sie ein Konto verwenden, das mit einem Visual Studio-Abonnement oder mit einer Azure DevOps Services-Organisation verknüpft ist**. Weitere Informationen finden Sie unter [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-- **Stellt eine automatische Verbindung mit Diensten wie Azure und Visual Studio Team Services in der IDE her**, ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
+- **Automatische Verbindung mit Diensten wie Azure und Azure DevOps Services** über die IDE, ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
 

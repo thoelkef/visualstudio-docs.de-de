@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381545"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282221"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -23,7 +23,7 @@ Visual Studio-Abonnements bietet die umfassendste Sammlung von Ressourcen zum Er
 Die Vorteile werden in drei Kategorien unterteilt:
 
 ## <a name="tools"></a>Tools
-Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](vs-ide-benefit.md), auf [Visual Studio Team Services](vs-vsts.md) und [Azure](vs-azure.md).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
+Die Kategorie der Tools bietet zahlreiche Vorteile, darunter etwa der Zugriff auf die führende [Visual Studio-IDE](vs-ide-benefit.md), auf [Azure DevOps Services](vs-azure-devops.md) und [Azure](vs-azure.md).  Je nach Abonnementebene profitieren Sie außerdem von Windows- und Office 365-Entwicklerkonten, Visual Studio App Center und können Vorteile von Partnern wie z.B. WhiteSource Bolt und ModernRequirements nutzen.
 
 ## <a name="professional-development"></a>Berufliche Entwicklung
 Wir bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Branchenführern angeboten werden, um Ihnen dabei zu helfen, Ihre Fähigkeiten kontinuierlich zu verbessern und mit den neuesten Technologien Schritt zu halten. Hier einige Beispiele für die angebotenen Inhalte:

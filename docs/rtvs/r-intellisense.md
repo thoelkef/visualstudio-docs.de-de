@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5209cda81ab42f1beba8cd3afaca3aa38624c82c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a9efdae5623c00abe4626d1bbb21af4a790fa487
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666864"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Visual Studio IntelliSense stellt Informationen über Funktionen, die Sie aufrufen können, Member von Objekten, Funktionsargumenten und [Codeausschnitte](code-snippets-for-r.md) direkt in Ihrem Blickfeld dar, wenn Sie Code schreiben. Das Feature zeigt auch mögliche Vervollständigungen an, während Sie tippen, und wird beendet, wenn Sie die TAB- oder EINGABETASTE drücken (siehe [Editor-Optionen](editing-r-code-in-visual-studio.md#editor-options) für die Registerkarte **Erweitert**). IntelliSense steht sowohl im Editor als auch im [interaktiven Fenster](interactive-repl-for-r-in-visual-studio.md) zur Verfügung.
+Visual Studio IntelliSense stellt Informationen über Funktionen, die Sie aufrufen können, Member von Objekten, Funktionsargumenten und [Codeausschnitte](code-snippets-for-r.md) direkt in Ihrem Blickfeld dar, wenn Sie Code schreiben. Das Feature zeigt auch mögliche Vervollständigungen an, während Sie tippen, und schließt den Vorgang ab, wenn Sie die **TAB-TASTE** oder **EINGABETASTE** drücken (siehe [Editor-Optionen](editing-r-code-in-visual-studio.md#editor-options) für die Registerkarte **Erweitert**). IntelliSense steht sowohl im Editor als auch im [interaktiven Fenster](interactive-repl-for-r-in-visual-studio.md) zur Verfügung.
 
 ![IntelliSense, das eine Funktionssignatur zeigt](media/intellisense-function-signature.png)
 
@@ -26,22 +27,22 @@ Wenn Sie eine Funktion oder eine andere Anweisung eingeben, stellt IntelliSense 
 
 ![IntelliSense-Menü für automatische Vervollständigung](media/intellisense-auto-complete-menu.png)
 
-Das Drücken der TAB-Taste (oder der EINGABETASTE bzw. der Leertaste, je nachdem wie Optionen festgelegt sind) fügt das im Dropdownfeld ausgewählte Element ein. Sie können die Auswahl mit den Pfeiltasten ändern.
+Das Drücken der **TAB-Taste** (oder je nach festgelegten Optionen auch der **EINGABETASTE** bzw. der **LEERTASTE**) wird das in der Dropdownliste ausgewählte Element eingefügt. Sie können die Auswahl mit den Pfeiltasten ändern.
 
 IntelliSense bietet auch Vorschläge für Member von R-Objekten:
 
 ![IntelliSense-Vorschläge für Objektmember](media/intellisense-auto-complete-r-objects.png)
 
-Durch Drücken der ESC-TASTE wird das gesamte Menü geschlossen. Sie können es mit der Tastenkombination STRG+Leertaste wieder öffnen.
+Durch Drücken der **ESC-TASTE** wird das gesamte Menü geschlossen. Sie können es mit der Tastenkombination **STRG**+**LEERTASTE** wieder öffnen.
 
 Wenn Sie die öffnende `(` für einen Funktionsaufruf eintippen, wird die schließende `)` eingefügt, und die Signaturhilfe wird wie zuvor gezeigt aufgerufen:
 
 ![IntelliSense-Signaturhilfe für eine Funktion](media/intellisense-function-signature.png)
 
-Über die ESC-TASTE wird das Popup-Fenster erneut geschlossen; Sie können es für Funktionsignaturen erneut mit der Tastenkombination STRG+Shift+Leertaste öffnen.
+Auch hier wird über die **ESC-TASTE** das Popup geschlossen. Sie können es für Funktionssignaturen erneut mit der Tastenkombination **STRG**+**UMSCHALTTASTE**+**LEERTASTE** öffnen.
 
 > [!Tip]
-> Wenn die Parameterhilfe den darunterliegenden Text verdeckt, drücken Sie die STRG-TASTE, und halten Sie sie gedrückt. Dann wird der Text der Parameterhilfe transparent.
+> Wenn die Parameterhilfe den darunterliegenden Text verdeckt, drücken Sie die **STRG-TASTE**, und halten Sie sie gedrückt. Dann wird der Text der Parameterhilfe transparent.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense für benutzerdefinierte Funktionen und Variablen
 

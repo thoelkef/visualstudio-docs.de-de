@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d96f8fcd1e89fa43b3fe06d6dda1ad310da59f00
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668571"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen oder Objekte in einem Profilerstellungslauf an. In dieser Ansicht wird anhand der Leistungsmetriken der Profilerstellungsmethode ein Zeitachsendiagramm und mindestens zwei Listen mit den leistungsintensivsten Funktionen oder Objekten dargestellt. Die Daten in dieser Ansicht sind von der verwendeten Profilerstellungsmethode abhängig (Sampling, Instrumentierung oder Parallelität) und davon, ob die .NET-Speicherreservierung erfasst wurde.  
   
  Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt für alle Zusammenfassungsansichten, außer der der Parallelitätsdaten, die Auslastung des Prozessors (CPU) während der Profilerstellung durch die profilierte Anwendung an.  
   
--   Wenn Sie im Diagramm einen Zeitabschnitt angeben, können Sie die Daten für diesen Abschnitt erneut analysieren oder die Zeitachsenanzeige für diesen Abschnitt vergrößern. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht.](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   Wenn Sie im Diagramm einen Zeitabschnitt angeben, können Sie die Daten für diesen Abschnitt erneut analysieren oder die Zeitachsenanzeige für diesen Abschnitt vergrößern. Weitere Informationen finden Sie unter [How to: Filter report views from the Summary Timeline (Vorgehensweise: Filtern von Berichtsansichten über die Zeitachsenübersicht)](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 -   Sie können in einer Zusammenfassungsansichtsliste auf eine Funktion klicken, um die Ansicht „Funktionsdetails“ für die Funktion anzuzeigen. Sie können ebenfalls mit der rechten Maustaste auf die Funktion für andere Ansichtsoptionen klicken.  
   
@@ -39,8 +40,8 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
   
 |||  
 |-|-|  
-|**Show Non-User Code** (Nicht benutzerseitigen Code anzeigen)<br /><br /> **Nur eigenen Code anzeigen**|Nicht verfügbar für nativen Code oder Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Schaltet zwischen dem Anzeigen von Daten aus dem Benutzercode (**Nur eigenen Code anzeigen**) und dem Anzeigen von Daten aus dem gesamten Code um, einschließlich des Systemcodes (**Show Non-User Code** (Nicht benutzerseitigen Code anzeigen)). Standardmäßig sind die Daten auf den Benutzercode beschränkt. Informationen zum Ändern der Einstellungen finden Sie unter [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
-|**Leitfaden anzeigen**|Zeigt Warnungen für Leistungsregeln im Fenster **Fehlerliste** an. Weitere Informationen finden Sie unter [Verwenden von Leistungsregeln zur Analyse von Daten.](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Show Non-User Code** (Nicht benutzerseitigen Code anzeigen)<br /><br /> **Nur eigenen Code anzeigen**|Nicht verfügbar für nativen Code oder Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Schaltet zwischen dem Anzeigen von Daten aus dem Benutzercode (**Nur eigenen Code anzeigen**) und dem Anzeigen von Daten aus dem gesamten Code um, einschließlich des Systemcodes (**Show Non-User Code** (Nicht benutzerseitigen Code anzeigen)). Standardmäßig sind die Daten auf den Benutzercode beschränkt. Informationen zum Ändern der Einstellungen finden Sie unter [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um „Nur eigenen Code“ anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
+|**Leitfaden anzeigen**|Zeigt Warnungen für Leistungsregeln im Fenster **Fehlerliste** an. Weitere Informationen finden Sie unter [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md).|  
   
 ## <a name="report"></a>Bericht  
  Sie können auf Links in der Berichtsliste klicken, um verschiedene Ansichten zu öffnen und den Bericht zu vergleichen, speichern oder zu filtern. Sie finden die Liste rechts neben dem Zeitachsendiagramm.  
@@ -49,13 +50,13 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 |-|-|  
 |**Gekürzte Aufrufstruktur anzeigen**|Zeigt die leistungsintensivsten Ausführungspfade in der Aufrufstrukturansicht an. Weitere Informationen finden Sie unter [Aufrufstrukturansicht](../profiling/call-tree-view.md).|  
 |**Langsamste Zeile anzeigen**|Nicht verfügbar für Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Zeigt die leistungsintensivsten Quellcodezeilen in der Zeilenansicht an. Weitere Informationen finden Sie unter [Zeilenansicht](../profiling/lines-view.md).|  
-|**Berichte vergleichen**|Zeigt das Dialogfeld **Analysedateien für Vergleich auswählen** an, in dem Sie eine andere Profilerstellungs-Datendatei angeben können, um einen Vergleich mit der aktuellen Datei zu ziehen. Weitere Informationen finden Sie unter [Vergleichen von Leistungsdatendateien](../profiling/comparing-performance-data-files.md).|  
-|**Berichtsdaten exportieren**|Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [How to: Export Profiling Tools Reports (Vorgehensweise: Exportieren von Berichten von Profilerstellungstools).](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)|  
-|**Analysierten Bericht speichern**|Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [How to: Save Analyzed Profiling Data Files (Vorgehensweise: Speichern von analysierten Profilerstellungsdatendateien)](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Berichte vergleichen**|Zeigt das Dialogfeld **Analysedateien für Vergleich auswählen** an, in dem Sie eine andere Profilerstellungs-Datendatei angeben können, um einen Vergleich mit der aktuellen Datei zu ziehen. Weitere Informationen finden Sie unter [Compare performance data files (Vergleichen von Leistungsdatendateien)](../profiling/comparing-performance-data-files.md).|  
+|**Berichtsdaten exportieren**|Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [How to: Export profiling tools reports (Vorgehensweise: Exportieren von Berichten von Profilerstellungstools).](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)|  
+|**Analysierten Bericht speichern**|Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [How to: Save analyzed profiling data files (Vorgehensweise: Speichern von analysierten Profilerstellungs-Datendateien)](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Berichtsdaten filtern**|Zeigt den Filterbereich des Profilerstellungsberichts an, in dem Sie Kriterien für die Einschränkung der Daten in der Berichtsansicht bestimmen können. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtsansicht](../profiling/performance-report-view-filter.md).|  
 |**Vollbild umschalten**|Schaltet den Vollbildmodus für die Berichtsansicht ein bzw. aus.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zusammenfassungsansicht](../profiling/summary-view-sampling-data.md)   
- [Zusammenfassungsansicht](../profiling/summary-view-instrumentation-data.md)   
- [Zusammenfassungsansicht](../profiling/summary-view-dotnet-memory-data.md)
+ [Summary view - sampling data (Zusammenfassungsansicht – Samplingdaten)](../profiling/summary-view-sampling-data.md)   
+ [Summary view - instrumentation data (Zusammenfassungsansicht – Instrumentationsdaten)](../profiling/summary-view-instrumentation-data.md)   
+ [Summary view - .NET memory data (Zusammenfassungsansicht – .NET-Arbeitsspeicherdaten)](../profiling/summary-view-dotnet-memory-data.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 1'
 description: Eine exemplarische Vorgehensweise zu Grundlagen von Flask im Kontext von Visual Studio-Projekten.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586403"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283417"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -95,7 +95,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
     ![„Team Explorer“-Fenster für die Übertragung per Push in ein vorhandenes Remoterepository](media/flask/step01-push-to-github.png)
 
-    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Visual Studio Team Services übertragen** direkt in Visual Studio ein Repository erstellen.
+    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Azure DevOps übertragen** direkt in Visual Studio ein Repository erstellen.
 
 1. Machen Sie sich während der Arbeit mit diesem Tutorial mit der Verwendung der Steuerelemente zur Übertragung von Änderungen per Push oder per Commit in Visual Studio vertraut. Daran werden Sie in diesem Tutorial auch zu geeigneter Zeit erinnert.
 

@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5d6afa4cfdf3891089461eec97e1af764329362e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447735"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668565"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-Mit dem Befehlszeilentool **VSPerfASPNetCmd.exe** können Sie ASP.NET-Websites profilen, ohne dass Sie Umgebungsvariablen festlegen und ohne dass Sie Ihren Computer neu starten müssen. Verwenden Sie statt [VSPerfCmd](../profiling/vsperfcmd.md) **VSPerfASPNetCmd.exe**, wenn Sie eine ASP.NET-Website profilen. Dann benötigen Sie nicht die zusätzlichen Funktionen, die **VSPerfCmd** bereitstellt. Weitere Informationen zu **VSPerfASPNETCmd** finden Sie unter [Schnelle Website-Profilerstellung mit VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). VSPerfASPNETCmd ist das bevorzugte Tool, wenn mit dem eigenständigen Profiler ein Profil für ASP.NET-Websites erstellt wird.  
+Mit dem Befehlszeilentool **VSPerfASPNetCmd.exe** können Sie ein Profil für ASP.NET-Websites erstellen, ohne dass Sie Umgebungsvariablen festlegen und ohne dass Sie Ihren Computer neu starten müssen. Verwenden Sie statt [VSPerfCmd](../profiling/vsperfcmd.md) **VSPerfASPNetCmd.exe**, wenn Sie eine ASP.NET-Website profilen. Dann benötigen Sie nicht die zusätzlichen Funktionen, die **VSPerfCmd** bereitstellt. Weitere Informationen zu **VSPerfASPNETCmd** finden Sie unter [Schnelle Website-Profilerstellung mit VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNETCmd** ist das bevorzugte Befehlszeilentool, wenn mit dem eigenständigen Profiler ein Profil für ASP.NET-Websites erstellt wird.  
   
 ## <a name="syntax"></a>Syntax  
  **vsperfaspnetcmd** [/*Optionen*] *Website*  
   
 ## <a name="options"></a>Optionen  
   
-|Option|description|  
+|Option|Beschreibung |  
 |------------|-----------------|  
 |**/Sample** oder **/s**|Erstellt Profile für Websites mit der Samplingmethode. **/Sample** ist die Standardmethode. /Sample kann nicht mit **/Trace** verwendet werden.|  
 |**/Trace** oder **/t**|Erstellt Profile für Websites mit der Instrumentationsmethode. /Trace kann nicht mit **/Sample** verwendet werden.|  
 |**/Memory**[**:**`Type`] oder **/m**[**:**{**a**&#124;**l**}]|Erstellt ein Profil für die Arbeitsspeicherzuweisung und erstellt optional Profile für Objektlebensdauern (automatische Speicherbereinigung). **/Memory** kann weder mit der Sampling- noch mit der Instrumentationsmethode verwendet werden.<br /><br /> Als *Type* kann eines der folgenden Elemente verwendet werden:<br /><br /> -   **allocation** (oder **a**) erfasst nur Daten zur Arbeitsspeicherzuweisung<br />-   **lifetime** (oder **l**) erfasst Daten zur Speicherbelegung und zur Objektlebensdauer.<br /><br /> Der Standard-`Type` ist **allocation**.|  
 |**/Tip** oder **/i**|Fügt eine ausführliche ASP.NET-Anforderung und einen ADO.NET-Aufrufinformationen zu den Profilerstellungsdaten hinzu **/Tip** kann mit der Sampling- oder der Instrumentationsmethode verwendet werden und mit der Option **/Memory**.|  
-|**/Output:** `File` oder **/o:**`File`|Gibt den Namen und den Speicherort der Profilerstellungs-Datendatei (VSP-Datei) an|  
+|**/Output:** `File` oder **/o:**`File`|Gibt den Namen und den Speicherort der Profilerstellungs-Datendatei (*VSP-Datei*) an|  
 |**/NoWait** oder **/n**|Gibt die Eingabeaufforderung sofort wieder zurück, damit zusätzliche Befehle im Eingabeaufforderungsfenster verwendet werden können. Sie müssen **VSPerfASPNETCmd /Shutdown** in eine Befehlszeile eingeben, um die Profilerstellung zu deaktivieren|  
-|**/PackSymbols**[:{**on**&#124;**off**} oder **/p**[:{**on**&#124;**off**}|Bettet Symbole (Funktions- und Parameternamen usw.) in Profilerstellungs-Datendateien ein (.vsp)|  
+|**/PackSymbols**[:{**on**&#124;**off**} oder **/p**[:{**on**&#124;**off**}|Bettet Symbole (Funktions- und Parameternamen usw.) in Profilerstellungs-Datendateien ein (*.vsp*)|  
 |**/Shutdown:** `Website`oder **/d:**`Website`|Deaktiviert die Profilerstellung Verwenden Sie diese Option in einer Befehlszeile nachdem Sie die Option **/NoWait** verwendet haben, um die Profilerstellung zu starten, oder wenn der Profiler unerwartet beendet wurde. Geben Sie die gleiche URL an, die Sie im ursprünglichen **VSPerfASPNETCmd**-Befehl verwendet haben.|  
 |`Website`|Die URL der Website, für die ein Profil erstellt werden soll|  
   

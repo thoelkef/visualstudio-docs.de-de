@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573140"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320981"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Das Tool *VSPerfCmd.exe* wird zum Starten und Beenden der Sammlung von Leistungsdaten verwendet. Es verwendet die folgende Syntax:  
@@ -32,7 +32,7 @@ VSPerfCmd [/U] [/options]
   
  In den folgenden Tabellen werden die Optionen des Tools *VSPerfCmd.exe* beschrieben:  
   
-|Option|description|  
+|Option|Beschreibung |  
 |------------|-----------------|  
 |**U**|Die umgeleitete Konsolenausgabe wird als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
 |[Start](../profiling/start.md) **:** `mode`|Startet den Profilerstellungsdienst im angegebenen Modus.|  
@@ -53,37 +53,37 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Beendet die Datensammlung für den angegebenen Prozess.|  
 |[ThreadOn und ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Setzt Profilerstellung für den angegebenen Prozess fort, nachdem die Profilerstellung durch einen Aufruf von **VSPerfCmdThreadOff** angehalten wurde. Verwenden Sie **ThreadOn** nur, wenn Sie Profile mit der Instrumentationsmethode erstellen.|  
 |[ThreadOn und ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Hält die Profilerstellung für den angegebenen Thread an. Verwenden Sie **ThreadOff** nur, wenn Sie Profile mit der Instrumentationsmethode erstellen.|  
-|[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Fügt eine Markierung mit einem optionalen Text in die Profilerstellungs-Datendatei ein.|  
+|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Fügt eine Markierung mit einem optionalen Text in die Profilerstellungs-Datendatei ein.|  
   
 ## <a name="sample-method-options"></a>Optionen der Samplingmethode  
  Die folgenden Optionen sind nur beim Verwenden der Samplingmethode für die Profilerstellung verfügbar.  
   
-|Option|description|  
+|Option|Beschreibung |  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|Startet die angegebene Anwendung und beginnt mit der Profilerstellung.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Gibt Befehlszeilenargumente an, die an die Anwendung übergeben werden sollen.|  
 |[Konsole](../profiling/console.md)|Startet den angegebenen Befehl in einem neuen Eingabeaufforderungsfenster.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Startet die Profilerstellung für die angegebenen Prozesse Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Beendet die Profilerstellung für die angegebenen Prozesse Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden. Wenn kein Prozess angegeben wird, wird die Profilerstellung für alle Prozesse angehalten.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Startet die Profilerstellung für die angegebenen Prozesse Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden.|  
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Beendet die Profilerstellung für die angegebenen Prozesse Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden. Wenn kein Prozess angegeben wird, wird die Profilerstellung für alle Prozesse angehalten.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Sammelt .NET-Speicherbelegungsinformationen und Daten zur Objektlebensdauer. Nur zusammen mit der **VSPerfCmdLaunch**-Option verwenden.|  
   
 ### <a name="sample-interval-options"></a>Samplingintervalloptionen  
  Die folgenden Optionen geben den Typ und die Dauer von Samplingintervallen an. Die Standardeinstellung ist **Timer**. Mit der **Counter**-Option können Sie auch einen CPU-Leistungsindikator als Intervall angeben. Diese Optionen können nur mit **Launch** oder dem ersten **Attach** einer Profilerstellungssitzung angegeben werden.  
   
-|Option|description|  
+|Option|Beschreibung |  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**:***n*]|Führt ein Sampling bei jedem n-ten Seitenfehler durch (Standard=10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Führt ein Sampling bei jedem n-ten Systemaufruf durch (Standard=10).|  
-|[Timer](../profiling/timer.md)[**:***n*]|Führt ein Sampling bei jedem n-ten Prozessorzyklus durch (Standard=10000000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Führt ein Sampling bei jedem n-ten Seitenfehler durch (Standard=10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Führt ein Sampling bei jedem n-ten Systemaufruf durch (Standard=10).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Führt ein Sampling bei jedem n-ten Prozessorzyklus durch (Standard=10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Optionen der Dienstkomponente und Gerätetreiber für den Kernelmodus  
  Die folgenden Administratoroptionen unterstützen Komponenten für Profilerstellungsdienste oder Gerätetreiber für den Kernelmodus. Die Administratoroptionen legen Profilerstellungsberechtigungen fest und steuern den Dienst für die Profilerstellung oder den Gerätetreiber.  
   
  Administratoroptionen müssen an einer Eingabeaufforderung ausgeführt werden, die mit Administratorrechten ausgeführt wird.  
   
-|Option|description|  
+|Option|Beschreibung |  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW|DENY**> *Right*[ *Right*] \<*User*|*Group*>|Gewährt oder verweigert dem angegebenen Benutzer oder der angegebenen Gruppe den Zugriff auf die Profilerstellungsdienste.<br /><br /> `Right` kann Folgendes sein:<br /><br /> CrossSession: Gewährt dem Benutzer Zugriff auf den Dienst für die sitzungsübergreifende Profilerstellung.<br /><br /> SampleProfiling: Gewährt dem Benutzer Zugriff auf den Treiber für die Sampling-Profilerstellung. Wird auch für den Zugriff auf Kernelübergangsinformationen während der Erstellung von Ablaufverfolgungsprofilen verwendet.<br /><br /> FullAccess: Gewährt dem Benutzer Zugriff sowohl auf CrossSession als auch auf SampleProfiling.|  
+|**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|Gewährt oder verweigert dem angegebenen Benutzer oder der angegebenen Gruppe den Zugriff auf die Profilerstellungsdienste.<br /><br /> `Right` kann Folgendes sein:<br /><br /> CrossSession: Gewährt dem Benutzer Zugriff auf den Dienst für die sitzungsübergreifende Profilerstellung.<br /><br /> SampleProfiling: Gewährt dem Benutzer Zugriff auf den Treiber für die Sampling-Profilerstellung. Wird auch für den Zugriff auf Kernelübergangsinformationen während der Erstellung von Ablaufverfolgungsprofilen verwendet.<br /><br /> FullAccess: Gewährt dem Benutzer Zugriff sowohl auf CrossSession als auch auf SampleProfiling.|  
 |**Admin:Security, List**|Listet den aktuellen Zustand von Profilerstellungsdiensten und Benutzerberechtigungen auf.|  
 |**Admin:** \<*Service*|*Driver*>\<**START**|**STOP**|**INSTALL**|**UNINSTALL**>|Startet, beendet, installiert oder deinstalliert die Komponente (Dienst) für den Profilerstellungsdienst oder den Gerätetreiber (Treiber) für den Kernelmodus.|  
 |**Admin:** \<*Service*|*Driver*>**AutoStart**\<**ON**|**OFF**>|Aktiviert oder deaktiviert den automatischen Start des Profilerstellungsdienstes (Dienst) oder des Gerätetreibers (Treiber) für den Kernelmodus nach einem Neustart.|  

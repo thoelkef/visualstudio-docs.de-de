@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138390"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281090"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -73,7 +73,7 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Fehler; „Die zugrunde liegende Verbindung wurde geschlossen“
 
-Wenn Sie Visual Studio in einem privaten Netzwerk mit einer Firewall verwenden, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Dies kann auch Visual Studio Team Services (VSTS) für Anmeldung und Lizenzierung, NuGet und Azure-Dienste betreffen. Falls Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird möglicherweise die folgende Fehlermeldung angezeigt:
+Wenn Sie Visual Studio in einem privaten Netzwerk mit einer Firewall verwenden, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Dies kann auch Azure DevOps Services für Anmeldung und Lizenzierung, NuGet und Azure-Dienste betreffen. Falls Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird möglicherweise die folgende Fehlermeldung angezeigt:
 
   **The underlying connection was closed: An unexpected error occurred on send** (Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.)
 
@@ -103,7 +103,7 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 
 - cdn.vsassets.io (Hosting von CDN-Inhalten (Content Delivery Network))
 
-- &#42;.gallerycdn.vsassets.io (Hosting von VSTS-Erweiterungen)
+- &#42;.gallerycdn.vsassets.io (hostet Azure DevOps Services-Erweiterungen)
 
 - static2.sharepointonline.com (Hosting von Ressourcen wie beispielsweise Schriftarten, die Visual Studio im Office Fabric UI-Kit verwendet)
 

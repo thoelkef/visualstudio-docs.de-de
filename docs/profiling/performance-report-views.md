@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 553a2a53543f25d3794cf07ef760e42a010197f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16082a3d04a27355033fd96f3387652063f00cce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668913"
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.  
@@ -27,10 +28,10 @@ Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten d
  [Allgemeine Datenansichten](../profiling/common-data-views.md)  
  Referenzinformationen über die Ansichten und Berichte von Profilerstellungs-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
   
- [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Samplingmethode generiert wurden.  
   
- [Datenansichten der Instrumentierungsmethoden](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentation Method Data views (Datenansichten der Instrumentierungsmethode)](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Instrumentierungsmethode generiert werden.  
   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
