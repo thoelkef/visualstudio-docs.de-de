@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283417"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029065"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -36,7 +36,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 Im Zuge dieser Tutorialschritte erstellen Sie eine Visual Studio-Projektmappe, die drei unterschiedliche Projekte enthält. Sie erstellen das Projekt mithilfe verschiedener Flask-Projektvorlagen, die in Visual Studio enthalten sind. Da sich die Projekte in derselben Projektmappe befinden, können Sie einfach zwischen den unterschiedlichen Dateien hin- und herwechseln, um sie zu vergleichen.
 
 > [!Note]
-> Dieses Tutorial unterscheidet sich vom [Flask-Schnellstart](../ide/quickstart-python.md?context=visualstudio/python/default), in dem Sie einen tieferen Einblick in Flask erhalten sowie in die Verwendung der unterschiedlichen Flask-Projektvorlagen, die einen umfangreicheren Startpunkt für Ihre eigenen Projekte bereitstellen. Beispielsweise installieren die Projektvorlagen automatisch das Flask-Paket, wenn ein Projekt erstellt wird. Sie selbst müssen das Paket also nicht selbst installieren, so wie im Schnellstart gezeigt wird.
+> Dieses Tutorial unterscheidet sich vom [Flask-Schnellstart](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json), in dem Sie einen tieferen Einblick in Flask erhalten sowie in die Verwendung der unterschiedlichen Flask-Projektvorlagen, die einen umfangreicheren Startpunkt für Ihre eigenen Projekte bereitstellen. Beispielsweise installieren die Projektvorlagen automatisch das Flask-Paket, wenn ein Projekt erstellt wird. Sie selbst müssen das Paket also nicht selbst installieren, so wie im Schnellstart gezeigt wird.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 

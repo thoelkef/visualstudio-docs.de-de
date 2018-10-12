@@ -17,16 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1538a3c93088cf02bcfb040cfa8a349ef7756eb5
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284054"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028909"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017
 
-**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) aktualisiert**
+**Für [Release 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) aktualisiert**
 
 Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workload- und Komponenten-IDs anzuzeigen, die Sie benötigen, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben.
 
